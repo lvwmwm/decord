@@ -1,10 +1,10 @@
-// Module ID: 14297
-// Function ID: 14298
+// Module ID: 14296
+// Function ID: 14297
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 7082, 21, 4285, 712, 14269, 10374, 7103, 3898, 10501, 4281, 1236, 14292, 2]
+// Dependencies: [19, 17, 7082, 21, 4285, 712, 14268, 10374, 7103, 3898, 10501, 4281, 1236, 14291, 2]
 // Exports: default
 
-// Module 14297 (VideoQuestModalHeader)
+// Module 14296 (VideoQuestModalHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useVideoQuestUIStore } from "_toPropertyKey";
@@ -37,7 +37,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = createCacheKey();
-  let obj = quest(14269);
+  let obj = quest(14268);
   quest = obj.useVideoQuestModalContext().quest;
   let obj1 = quest(10374);
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
@@ -89,7 +89,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   obj3[4] = gamePublisher;
   items1[1] = closure_5(quest(4281).Text, obj3);
   obj[1] = items1;
-  const items3 = [closure_6(View, obj), closure_5(questTaskDetails(14292), { iconColor: closeButtonIconColor, onClose })];
+  const items3 = [closure_6(View, obj), closure_5(questTaskDetails(14291), { iconColor: closeButtonIconColor, onClose })];
   obj[1] = items3;
   return closure_6(View, obj);
 };

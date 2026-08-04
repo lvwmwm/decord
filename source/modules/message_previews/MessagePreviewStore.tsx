@@ -1,9 +1,9 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12884
+// Function ID: 12885
 // Name: initialize
-// Dependencies: [32, 1372, 4502, 3, 589, 709, 12886, 4959, 2]
+// Dependencies: [32, 1372, 4502, 3, 589, 709, 12885, 4959, 2]
 
-// Module 12885 (initialize)
+// Module 12884 (initialize)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -111,7 +111,7 @@ prototype["data"] = function data(guildId, items, arg2) {
   const guilds = this.guilds;
   if (!guilds.has(guildId)) {
     const guilds2 = self.guilds;
-    const previewData = new object(12886).PreviewData();
+    const previewData = new object(12885).PreviewData();
     const result = guilds2.set(guildId, previewData);
   }
   const guilds3 = self.guilds;

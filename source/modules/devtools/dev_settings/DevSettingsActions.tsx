@@ -1,17 +1,17 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14907
+// Function ID: 14908
 // Name: toggle
 // Dependencies: [4284, 709, 2]
 // Exports: clearAll, toggle
 
-// Module 14908 (toggle)
+// Module 14907 (toggle)
 import getUserAgnosticState from "getUserAgnosticState";
 
 const result = require("set").fileFinishedImporting("modules/devtools/dev_settings/DevSettingsActions.tsx");
 
-export const toggle = function toggle(toggle) {
-  let tmp = arg1;
-  if (typeof arg1 !== "T") {
+export const toggle = function toggle(toggle, flag) {
+  let tmp = flag;
+  if (typeof flag !== "boolean") {
     tmp = !store.get(toggle);
   }
   let obj = importDefault(709);
@@ -22,7 +22,7 @@ export const clearAll = function clearAll() {
   for (const key10005 in getUserAgnosticState.enabled()) {
     let tmp4 = key10005;
     let flag = false;
-    if (typeof false !== "T") {
+    if (typeof false !== "boolean") {
       let tmp5 = store;
       flag = !store.get(key10005);
     }

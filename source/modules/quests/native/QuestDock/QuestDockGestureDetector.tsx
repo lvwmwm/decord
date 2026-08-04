@@ -1,9 +1,9 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14326
+// Function ID: 14327
 // Name: useQuestDockSwipeGesture
-// Dependencies: [19, 5128, 14241, 21, 14242, 10243, 14245, 14323, 4146, 14246, 14243, 5368, 14240, 4254, 2]
+// Dependencies: [19, 5128, 14240, 21, 14241, 10243, 14244, 14322, 4146, 14245, 14242, 5368, 14239, 4254, 2]
 
-// Module 14327 (useQuestDockSwipeGesture)
+// Module 14326 (useQuestDockSwipeGesture)
 import importAllResult from "noop";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";

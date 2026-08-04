@@ -1,10 +1,10 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 15054
+// Function ID: 15055
 // Name: withEqualityFn
 // Dependencies: [676, 700, 4146, 3898, 2]
 // Exports: computeMaxX
 
-// Module 15055 (withEqualityFn)
+// Module 15054 (withEqualityFn)
 import { DM_WIDTH } from "ME";
 import identity from "identity";
 

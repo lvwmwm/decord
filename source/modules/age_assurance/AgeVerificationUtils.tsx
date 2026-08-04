@@ -1,7 +1,7 @@
 // Module ID: 4500
 // Function ID: 4501
 // Name: useAgeVerificationRunner
-// Dependencies: [5, 32, 19, 4501, 3965, 1218, 4502, 1874, 7753, 7721, 676, 1221, 7702, 7722, 5108, 3964, 1906, 589, 11247, 709, 7720, 7707, 7726, 8775, 1236, 2803, 12937, 2]
+// Dependencies: [5, 32, 19, 4501, 3965, 1218, 4502, 1874, 7753, 7721, 676, 1221, 7702, 7722, 5108, 3964, 1906, 589, 11247, 709, 7720, 7707, 7726, 8775, 1236, 2803, 12936, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useInitiateAgeVerificationV2, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
 // Module 4500 (useAgeVerificationRunner)

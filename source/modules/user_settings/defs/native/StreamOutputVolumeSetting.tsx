@@ -1,9 +1,9 @@
-// Module ID: 14389
-// Function ID: 14390
+// Module ID: 14388
+// Function ID: 14389
 // Name: volumeSlider
 // Dependencies: [4304, 1218, 4332, 7892, 589, 4381, 38, 9077, 10743, 10361, 1236, 2]
 
-// Module 14389 (volumeSlider)
+// Module 14388 (volumeSlider)
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

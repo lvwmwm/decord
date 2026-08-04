@@ -1,10 +1,10 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 13250
+// Function ID: 13251
 // Name: HelpMessage
 // Dependencies: [19, 17, 21, 4285, 712, 688, 7716, 4241, 5905, 4246, 4281, 2]
 // Exports: default
 
-// Module 13251 (HelpMessage)
+// Module 13250 (HelpMessage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

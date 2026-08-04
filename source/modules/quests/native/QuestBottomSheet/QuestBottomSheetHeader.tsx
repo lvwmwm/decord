@@ -1,10 +1,10 @@
-// Module ID: 14264
-// Function ID: 14265
+// Module ID: 14263
+// Function ID: 14264
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1874, 21, 4285, 712, 10374, 7103, 14237, 589, 10391, 7101, 1236, 14263, 5131, 14238, 4681, 4691, 4281, 4812, 8414, 2]
+// Dependencies: [32, 19, 17, 1874, 21, 4285, 712, 10374, 7103, 14236, 589, 10391, 7101, 1236, 14262, 5131, 14237, 4681, 4691, 4281, 4812, 8414, 2]
 // Exports: default
 
-// Module 14264 (QuestBottomSheetHeader)
+// Module 14263 (QuestBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import { View } from "SCREEN_READER_ENABLED_GETTER";
@@ -38,7 +38,7 @@ export default function QuestBottomSheetHeader(arg0) {
   let isScreenReaderEnabled;
   let ref;
   let tmp = hasWatchVideoOnMobileTasks();
-  let obj = isScreenReaderEnabled(14238);
+  let obj = isScreenReaderEnabled(14237);
   isScreenReaderEnabled = quest;
   ref = step;
   let dependencyMap;
@@ -76,8 +76,8 @@ export default function QuestBottomSheetHeader(arg0) {
     return obj.hasStreamOnDesktopTask(obj);
   }, items);
   const tmp2Result2 = isScreenReaderEnabled(10374);
-  hasWatchVideoOnMobileTasks = isScreenReaderEnabled(14237).useHasWatchVideoOnMobileTasks(quest.config);
-  const tmp2Result3 = isScreenReaderEnabled(14237);
+  hasWatchVideoOnMobileTasks = isScreenReaderEnabled(14236).useHasWatchVideoOnMobileTasks(quest.config);
+  const tmp2Result3 = isScreenReaderEnabled(14236);
   const items1 = [first];
   const stateFromStores = isScreenReaderEnabled(589).useStateFromStores(items1, () => first.getCurrentUser());
   const tmp2Result4 = isScreenReaderEnabled(589);

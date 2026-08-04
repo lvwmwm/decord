@@ -1,10 +1,10 @@
-// Module ID: 13753
-// Function ID: 13754
+// Module ID: 13752
+// Function ID: 13753
 // Name: CommonProperty
-// Dependencies: [32, 19, 17, 1874, 13579, 676, 21, 4285, 712, 4281, 5315, 9869, 3867, 9052, 4812, 5638, 4233, 589, 7666, 4693, 5649, 5650, 11451, 4244, 13754, 5901, 2]
+// Dependencies: [32, 19, 17, 1874, 13578, 676, 21, 4285, 712, 4281, 5315, 9869, 3867, 9052, 4812, 5638, 4233, 589, 7666, 4693, 5649, 5650, 11451, 4244, 13753, 5901, 2]
 // Exports: default
 
-// Module 13753 (CommonProperty)
+// Module 13752 (CommonProperty)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import { View } from "initialize";
@@ -211,7 +211,7 @@ export default function DevToolsAnalyticsScreen() {
   const items2 = [callback2(trimmed(5650).TableSwitchRow, obj1), ];
   const obj2 = { arrow: true, variant: "danger", icon: null, label: "Clear Analytics Log", onPress: null };
   obj2[2] = callback2(trimmed(4244).TrashIcon, { color: "text-feedback-critical" });
-  obj2[4] = trimmed(13754).clearAnalyticsLog;
+  obj2[4] = trimmed(13753).clearAnalyticsLog;
   items2[1] = callback2(trimmed(5315).TableRow, obj2);
   obj[2] = items2;
   const items3 = [callback3(trimmed(5649).TableRowGroup, obj), , ];

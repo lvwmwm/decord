@@ -1,10 +1,10 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 15978
+// Function ID: 15979
 // Name: contextMenuButton
-// Dependencies: [5, 19, 17, 7080, 5128, 9674, 21, 4285, 712, 589, 11090, 5131, 7672, 8415, 1236, 4815, 5616, 7103, 10643, 10374, 11087, 14265, 10510, 4253, 11080, 8845, 10396, 5338, 5236, 4706, 691, 11083, 9015, 14295, 4693, 4281, 4695, 2]
+// Dependencies: [5, 19, 17, 7080, 5128, 9674, 21, 4285, 712, 589, 11090, 5131, 7672, 8415, 1236, 4815, 5616, 7103, 10643, 10374, 11087, 14264, 10510, 4253, 11080, 8845, 10396, 5338, 5236, 4706, 691, 11083, 9015, 14294, 4693, 4281, 4695, 2]
 // Exports: default
 
-// Module 15979 (contextMenuButton)
+// Module 15978 (contextMenuButton)
 import ActivityPanelModes from "ActivityPanelModes";
 import useQuests from "useQuests";
 import get_ActivityIndicator from "getApplicationIdsByTaskTypes";
@@ -71,7 +71,7 @@ function QuestProgressBottomSheet(quest) {
   const formatToPlainStringResult = intl.formatToPlainString(quest(1236).t.EAYZAr, obj);
   const tmp11 = QuestsExperimentLocations;
   obj1 = { quest, questContent: tmp(5131).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(5131).QuestContent.RUNNING_ACTIVITY };
-  const questRewardClaimHandler = quest(14265).useQuestRewardClaimHandler(obj1);
+  const questRewardClaimHandler = quest(14264).useQuestRewardClaimHandler(obj1);
   ({ isClaiming, claim } = questRewardClaimHandler);
   const items = [claim];
   const items1 = [quest.id];
@@ -192,10 +192,10 @@ function QuestProgressBottomSheet(quest) {
   obj9[4] = intl2.string(quest(1236).t.RDE0Sc);
   const items5 = [callback2(quest(7672).IconButton, obj9), ];
   const obj10 = { quest, showShareLink: true, location: tmp11.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: null, children: null };
-  const tmpResult1 = quest(14265);
+  const tmpResult1 = quest(14264);
   obj10[3] = quest(5131).QuestContent.RUNNING_ACTIVITY;
   obj10[4] = contextMenuButton;
-  items5[1] = callback2(claim(14295), obj10);
+  items5[1] = callback2(claim(14294), obj10);
   obj8[1] = items5;
   items3[3] = closure_11(closure_5, obj8);
   obj2[1] = items3;

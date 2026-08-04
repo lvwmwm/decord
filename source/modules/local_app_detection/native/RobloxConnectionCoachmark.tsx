@@ -1,10 +1,10 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15873
+// Function ID: 15874
 // Name: RobloxIcon
-// Dependencies: [32, 19, 17, 4964, 1874, 12878, 676, 1369, 21, 4285, 712, 3997, 1581, 4253, 5338, 5337, 5647, 4693, 4281, 1236, 4695, 12144, 10406, 5925, 3995, 4966, 1416, 1297, 8437, 589, 12879, 5090, 4101, 1358, 2]
+// Dependencies: [32, 19, 17, 4964, 1874, 12877, 676, 1369, 21, 4285, 712, 3997, 1581, 4253, 5338, 5337, 5647, 4693, 4281, 1236, 4695, 12143, 10406, 5925, 3995, 4966, 1416, 1297, 8437, 589, 12878, 5090, 4101, 1358, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 15874 (RobloxIcon)
+// Module 15873 (RobloxIcon)
 import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed";
 import getSystemLocale from "getSystemLocale";
 import { View } from "Stack";
@@ -76,7 +76,7 @@ function UserIcon() {
   obj = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [callback(View, obj), ];
-  const obj1 = { size: null, user: null, guildId: "Array" };
+  const obj1 = { size: null, user: null, guildId: "disabled" };
   obj1[0] = require(1297) /* Button */.AvatarSizes.NORMAL;
   obj1[1] = stateFromStores;
   items1[1] = callback(require(1297) /* Button */.Avatar, obj1);
@@ -137,7 +137,7 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
   obj7[0] = intl3.string(markAsDismissed(1236).t.ItuabN);
   const obj8 = { size: "sm", color: null };
   obj8[1] = importDefault(712).colors.WHITE;
-  obj7[1] = callback(markAsDismissed(12144).WindowLaunchIcon, obj8);
+  obj7[1] = callback(markAsDismissed(12143).WindowLaunchIcon, obj8);
   obj7[4] = function onPress() {
     let obj = outer1_1(outer1_2[13]);
     obj.hideActionSheet();
@@ -166,7 +166,7 @@ export const useShouldShowRobloxConnectionCoachmark = function useShouldShowRobl
   let fetchingAccounts;
   let hasRoloxAccount;
   const items = [initialize];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(12879).DetectableAppNames.ROBLOX));
+  stateFromStores = stateFromStores(589).useStateFromStores(items, () => appInstalled.isAppInstalled(stateFromStores(12878).DetectableAppNames.ROBLOX));
   const tmp2 = hasRoloxAccount(React.useState(false), 2);
   const first = tmp2[0];
   const dependencyMap = tmp2[1];

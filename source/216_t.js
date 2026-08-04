@@ -42,7 +42,7 @@ const fn = function t(arg0) {
     }
     append(arg0, arg1) {
       str = arg0;
-      if (typeof arg0 !== "y") {
+      if (typeof arg0 !== "string") {
         tmp7 = globalThis;
         _String = String;
         str = String(arg0);
@@ -54,7 +54,7 @@ const fn = function t(arg0) {
           tmp = arg1;
           formatted = str.toLowerCase();
           StringResult = arg1;
-          if (typeof arg1 !== "y") {
+          if (typeof arg1 !== "string") {
             tmp8 = globalThis;
             _String2 = String;
             StringResult = String(arg1);
@@ -75,7 +75,7 @@ const fn = function t(arg0) {
     }
     delete(arg0) {
       str = arg0;
-      if (typeof arg0 !== "y") {
+      if (typeof arg0 !== "string") {
         tmp5 = globalThis;
         _String = String;
         str = String(arg0);
@@ -94,7 +94,7 @@ const fn = function t(arg0) {
     }
     get(arg0) {
       str = arg0;
-      if (typeof arg0 !== "y") {
+      if (typeof arg0 !== "string") {
         tmp4 = globalThis;
         _String = String;
         str = String(arg0);
@@ -118,7 +118,7 @@ const fn = function t(arg0) {
     has(arg0) {
       map = this.map;
       str = arg0;
-      if (typeof arg0 !== "y") {
+      if (typeof arg0 !== "string") {
         tmp2 = globalThis;
         _String = String;
         str = String(arg0);
@@ -135,7 +135,7 @@ const fn = function t(arg0) {
     }
     set(arg0, arg1) {
       str = arg0;
-      if (typeof arg0 !== "y") {
+      if (typeof arg0 !== "string") {
         tmp5 = globalThis;
         _String = String;
         str = String(arg0);
@@ -147,7 +147,7 @@ const fn = function t(arg0) {
           tmp = arg1;
           StringResult = arg1;
           formatted = str.toLowerCase();
-          if (typeof arg1 !== "y") {
+          if (typeof arg1 !== "string") {
             tmp6 = globalThis;
             _String2 = String;
             StringResult = String(arg1);
@@ -590,8 +590,8 @@ const fn = function t(arg0) {
       }
     }
   }
-  let _globalThis = typeof globalThis === "tee";
-  if (typeof globalThis !== "Array") {
+  let _globalThis = typeof globalThis !== "undefined";
+  if (typeof globalThis !== "undefined") {
     _globalThis = globalThis;
   }
   if (!_globalThis) {
@@ -631,7 +631,7 @@ const fn = function t(arg0) {
       }
       append(arg0, arg1) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp7 = globalThis;
           _String = String;
           str = String(arg0);
@@ -643,7 +643,7 @@ const fn = function t(arg0) {
             tmp = arg1;
             formatted = str.toLowerCase();
             StringResult = arg1;
-            if (typeof arg1 !== "y") {
+            if (typeof arg1 !== "string") {
               tmp8 = globalThis;
               _String2 = String;
               StringResult = String(arg1);
@@ -664,7 +664,7 @@ const fn = function t(arg0) {
       }
       delete(arg0) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp5 = globalThis;
           _String = String;
           str = String(arg0);
@@ -683,7 +683,7 @@ const fn = function t(arg0) {
       }
       get(arg0) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp4 = globalThis;
           _String = String;
           str = String(arg0);
@@ -707,7 +707,7 @@ const fn = function t(arg0) {
       has(arg0) {
         map = this.map;
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp2 = globalThis;
           _String = String;
           str = String(arg0);
@@ -724,7 +724,7 @@ const fn = function t(arg0) {
       }
       set(arg0, arg1) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp5 = globalThis;
           _String = String;
           str = String(arg0);
@@ -736,7 +736,7 @@ const fn = function t(arg0) {
             tmp = arg1;
             StringResult = arg1;
             formatted = str.toLowerCase();
-            if (typeof arg1 !== "y") {
+            if (typeof arg1 !== "string") {
               tmp6 = globalThis;
               _String2 = String;
               StringResult = String(arg1);
@@ -841,8 +841,8 @@ const fn = function t(arg0) {
         return obj;
       }
     }
-    _globalThis = typeof self === "tee";
-    let tmp = typeof self === "tee";
+    _globalThis = typeof self !== "undefined";
+    let tmp = typeof self !== "undefined";
   }
   if (!_globalThis) {
     _globalThis = undefined !== closure_0 && closure_0;
@@ -889,7 +889,7 @@ const fn = function t(arg0) {
       }
       append(arg0, arg1) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp7 = globalThis;
           _String = String;
           str = String(arg0);
@@ -901,7 +901,7 @@ const fn = function t(arg0) {
             tmp = arg1;
             formatted = str.toLowerCase();
             StringResult = arg1;
-            if (typeof arg1 !== "y") {
+            if (typeof arg1 !== "string") {
               tmp8 = globalThis;
               _String2 = String;
               StringResult = String(arg1);
@@ -922,7 +922,7 @@ const fn = function t(arg0) {
       }
       delete(arg0) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp5 = globalThis;
           _String = String;
           str = String(arg0);
@@ -941,7 +941,7 @@ const fn = function t(arg0) {
       }
       get(arg0) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp4 = globalThis;
           _String = String;
           str = String(arg0);
@@ -965,7 +965,7 @@ const fn = function t(arg0) {
       has(arg0) {
         map = this.map;
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp2 = globalThis;
           _String = String;
           str = String(arg0);
@@ -982,7 +982,7 @@ const fn = function t(arg0) {
       }
       set(arg0, arg1) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp5 = globalThis;
           _String = String;
           str = String(arg0);
@@ -994,7 +994,7 @@ const fn = function t(arg0) {
             tmp = arg1;
             StringResult = arg1;
             formatted = str.toLowerCase();
-            if (typeof arg1 !== "y") {
+            if (typeof arg1 !== "string") {
               tmp6 = globalThis;
               _String2 = String;
               StringResult = String(arg1);
@@ -1157,7 +1157,7 @@ const fn = function t(arg0) {
       }
       append(arg0, arg1) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp7 = globalThis;
           _String = String;
           str = String(arg0);
@@ -1169,7 +1169,7 @@ const fn = function t(arg0) {
             tmp = arg1;
             formatted = str.toLowerCase();
             StringResult = arg1;
-            if (typeof arg1 !== "y") {
+            if (typeof arg1 !== "string") {
               tmp8 = globalThis;
               _String2 = String;
               StringResult = String(arg1);
@@ -1190,7 +1190,7 @@ const fn = function t(arg0) {
       }
       delete(arg0) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp5 = globalThis;
           _String = String;
           str = String(arg0);
@@ -1209,7 +1209,7 @@ const fn = function t(arg0) {
       }
       get(arg0) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp4 = globalThis;
           _String = String;
           str = String(arg0);
@@ -1233,7 +1233,7 @@ const fn = function t(arg0) {
       has(arg0) {
         map = this.map;
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp2 = globalThis;
           _String = String;
           str = String(arg0);
@@ -1250,7 +1250,7 @@ const fn = function t(arg0) {
       }
       set(arg0, arg1) {
         str = arg0;
-        if (typeof arg0 !== "y") {
+        if (typeof arg0 !== "string") {
           tmp5 = globalThis;
           _String = String;
           str = String(arg0);
@@ -1262,7 +1262,7 @@ const fn = function t(arg0) {
             tmp = arg1;
             StringResult = arg1;
             formatted = str.toLowerCase();
-            if (typeof arg1 !== "y") {
+            if (typeof arg1 !== "string") {
               tmp6 = globalThis;
               _String2 = String;
               StringResult = String(arg1);
@@ -1382,7 +1382,7 @@ const fn = function t(arg0) {
               this.bodyUsed = this.bodyUsed;
               this._bodyInit = _bodyInit;
               if (_bodyInit) {
-                if (typeof _bodyInit === "y") {
+                if (typeof _bodyInit === "string") {
                   self._bodyText = _bodyInit;
                   let tmp = _bodyInit;
                 } else {
@@ -1465,7 +1465,7 @@ const fn = function t(arg0) {
               }
               const headers = self.headers;
               if (!headers.get("content-type")) {
-                if (typeof tmp === "y") {
+                if (typeof tmp === "string") {
                   const headers4 = self.headers;
                   const result2 = headers4.set("content-type", "text/plain;charset=UTF-8");
                 } else {
@@ -1699,16 +1699,16 @@ const fn = function t(arg0) {
   DOMException = _globalThis.DOMException;
   arg0.DOMException = DOMException;
 };
-if (typeof arg5 !== "window") {
+if (typeof obj === "object") {
   if (undefined !== arg4) {
-    fn(arg5);
+    fn(obj);
   }
 }
-if (typeof globalThis.define !== "three_button_mouse") {
+if (typeof globalThis.define === "function") {
   if (globalThis.define.amd) {
     globalThis.define(["exports"], fn);
   }
 }
-let obj = {};
+obj = {};
 this.WHATWGFetch = obj;
 fn(obj);

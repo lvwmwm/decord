@@ -1,10 +1,10 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 12053
+// Function ID: 12054
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8712, 6797, 676, 1876, 505, 21, 4285, 712, 5310, 9496, 589, 8708, 5610, 10017, 12055, 709, 4490, 4624, 12056, 1959, 500, 698, 9963, 4281, 1236, 4695, 7333, 9354, 3944, 9359, 9494, 9489, 7334, 2]
+// Dependencies: [5, 32, 19, 17, 8712, 6797, 676, 1876, 505, 21, 4285, 712, 5310, 9496, 589, 8708, 5610, 10017, 12054, 709, 4490, 4624, 12055, 1959, 500, 698, 9963, 4281, 1236, 4695, 7333, 9354, 3944, 9359, 9494, 9489, 7334, 2]
 // Exports: default
 
-// Module 12054 (CollectiblesShopGiftPurchaseSection)
+// Module 12053 (CollectiblesShopGiftPurchaseSection)
 import context from "context";
 import isPremiumGiftingSupported from "isPremiumGiftingSupported";
 import dispatcher from "dispatcher";
@@ -142,7 +142,7 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
     }
   }
   const items1 = [tmp16Result, , ];
-  let obj2 = { variant: "text-xs/normal", style: tmp3.disclaimer, children: null };
+  const obj2 = { variant: "text-xs/normal", style: tmp3.disclaimer, children: null };
   const intl = tmp4(tmp2[28]).intl;
   let obj3 = { buyButtonLabel: null, paidServiceTermURL: null, virtualGoodsURL: null };
   const intl2 = tmp4(tmp2[28]).intl;
@@ -150,95 +150,32 @@ function CollectiblesShopGiftPurchaseSection(disabled) {
   ({ PAID_TERMS: obj7[1], PAID_TERMS_VIRTUAL_GOODS: obj7[2] } = closure_10);
   obj2[2] = intl.format(require(baseAnalyticsFields[28]).t.rsEdd2, obj3);
   items1[1] = callback2(require(baseAnalyticsFields[27]).Text, obj2);
-  let obj4 = { disabled: disabled.isPurchaseDisabled, loading: first === constants.PURCHASING, variant: "active", text: null, onPress: null };
+  const obj4 = { disabled: disabled.isPurchaseDisabled, loading: first === constants.PURCHASING, variant: "active", text: null, onPress: null };
   const intl3 = tmp4(tmp2[28]).intl;
   obj4[3] = intl3.string(require(baseAnalyticsFields[28]).t.ouo4FK);
   obj4[4] = giftingOrigin(function*() {
-    if (c3 === 2) {
-      c3 = 3;
-      HermesBuiltin.throwTypeError();
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw arg1;
-      } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
-        obj[0] = arg1;
-        return obj;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c3 = 2;
-        if (0 === v0) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            let closure_0 = tmp3;
-            outer1_6(outer1_17.PURCHASING);
-            v0 = 1;
-            c3 = 1;
-            let obj1 = { value: null, done: false };
-            obj1[0] = outer1_7();
-            return obj1;
-          }
-        } else if (1 === tmp7) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj2 = { value: null, done: true };
-            obj2[0] = arg1;
-            return obj2;
-          } else if (arg1) {
-            let table = 1;
-            v0 = 3;
-            c3 = 1;
-            const obj3 = { value: null, done: false };
-            obj3[0] = outer1_8();
-            return obj3;
-          } else {
-            outer1_6(outer1_17.FAILED);
-            obj1 = v0(table[25]);
-            obj1.track(outer1_9.PAYMENT_FLOW_FAILED, table);
-            c3 = 3;
-            const obj4 = { value: null, done: true };
-            obj4[0] = undefined;
-            return obj4;
-          }
-        } else {
-          if (2 === tmp7) {
-            table = 0;
-            callback(outer1_17.FAILED);
-            c3 = 3;
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw arg1;
-          } else if (arg0 !== 2) {
-            table = 0;
-          }
-          table = 0;
-          c3 = 3;
-          obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        }
-      } catch (tmp25) {
-        if (tmp4 === table) {
-          c3 = tmp2;
-          throw tmp25;
-        } else {
-          v0 = tmp;
-        }
-      }
+    let closure_0 = tmp3;
+    outer1_6(outer1_17.PURCHASING);
+    yield outer1_7();
+    if (!arg1) {
+      outer1_6(outer1_17.FAILED);
+      const obj1 = v0(table[25]);
+      obj1.track(outer1_9.PAYMENT_FLOW_FAILED, table);
     }
+    table = 1;
+    yield outer1_8();
+    if (2 === tmp7) {
+      table = 0;
+      callback(outer1_17.FAILED);
+      let c3 = 3;
+    } else if (arg0 === 1) {
+      c3 = 3;
+      throw arg1;
+    } else if (arg0 !== 2) {
+      table = 0;
+    }
+    table = 0;
+    return arg1;
   });
   items1[2] = callback2(require(baseAnalyticsFields[29]).Button, obj4);
   obj[1] = items1;

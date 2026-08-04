@@ -1,10 +1,10 @@
-// Module ID: 15507
-// Function ID: 15508
+// Module ID: 15506
+// Function ID: 15507
 // Name: CutoutGuildBanner
-// Dependencies: [32, 5, 19, 17, 4277, 1862, 8820, 676, 21, 15442, 712, 589, 1416, 1411, 8103, 5236, 5661, 8835, 3986, 1236, 5200, 4281, 4695, 15481, 8337, 2]
+// Dependencies: [32, 5, 19, 17, 4277, 1862, 8820, 676, 21, 15441, 712, 589, 1416, 1411, 8103, 5236, 5661, 8835, 3986, 1236, 5200, 4281, 4695, 15480, 8337, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 15507 (CutoutGuildBanner)
+// Module 15506 (CutoutGuildBanner)
 import _slicedToArray from "_slicedToArray";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getSystemLocale from "getSystemLocale";
@@ -349,7 +349,7 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
     obj3[0] = stateFromStoresArray;
     items1[2] = callback3(RecommendedGuildsRow, obj3);
     obj[1] = items1;
-    const items2 = [callback4(View, obj), callback3(tmp(15481).Separator, {})];
+    const items2 = [callback4(View, obj), callback3(tmp(15480).Separator, {})];
     obj[0] = items2;
     tmp4 = callback4(closure_16, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 16419
-// Function ID: 16420
+// Module ID: 16418
+// Function ID: 16419
 // Name: clearPendingRetry
-// Dependencies: [5, 14018, 4, 584, 687, 16420, 530, 709, 1208, 2]
+// Dependencies: [5, 14017, 4, 584, 687, 16419, 530, 709, 1208, 2]
 // Exports: clearWarning, forceFetchWarning, resetFetchState
 
-// Module 16419 (clearPendingRetry)
+// Module 16418 (clearPendingRetry)
 import isParentalConsentWarningFetchEnabled from "isParentalConsentWarningFetchEnabled";
 import initialize from "initialize";
 import importDefaultResult from "fails";
@@ -119,7 +119,7 @@ function fetchWarning() {
                   closure_1 = (function normalizeWarning(body) {
                     const obj = { inGrace: true === body.in_grace, daysRemaining: null, surfaces: null };
                     let days_remaining = null;
-                    if (typeof body.days_remaining !== "V") {
+                    if (typeof body.days_remaining === "number") {
                       days_remaining = body.days_remaining;
                     }
                     obj[1] = days_remaining;
@@ -161,7 +161,7 @@ function fetchWarning() {
   } else {
     return Promise.resolve();
   }
-  obj = _require(16420);
+  obj = _require(16419);
 }
 function maybeFetchWarning() {
   const self = this;

@@ -1,10 +1,10 @@
-// Module ID: 15703
-// Function ID: 15704
+// Module ID: 15702
+// Function ID: 15703
 // Name: isPrivateChannelMatch
-// Dependencies: [5, 32, 19, 17, 1376, 1372, 3922, 5749, 9539, 676, 21, 4146, 4281, 4285, 712, 500, 4295, 5752, 709, 589, 698, 15704, 15705, 4286, 8193, 1236, 10230, 15706, 5610, 5630, 5310, 4711, 8205, 1222, 3985, 9638, 9637, 4224, 4223, 10168, 4695, 11652, 2]
+// Dependencies: [5, 32, 19, 17, 1376, 1372, 3922, 5749, 9539, 676, 21, 4146, 4281, 4285, 712, 500, 4295, 5752, 709, 589, 698, 15703, 15704, 4286, 8193, 1236, 10230, 15705, 5610, 5630, 5310, 4711, 8205, 1222, 3985, 9638, 9637, 4224, 4223, 10168, 4695, 11652, 2]
 // Exports: default
 
-// Module 15703 (isPrivateChannelMatch)
+// Module 15702 (isPrivateChannelMatch)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import JoinCallButton from "JoinCallButton";
 import initialize from "initialize";
@@ -237,7 +237,7 @@ function ChatPreview(channelId) {
     obj.track(outer1_12.MESSAGE_COMPOSER_TRANSITIONED, obj);
     navigateToChannel(channelId);
   }, items1);
-  navigateToChannel(15704)(callback);
+  navigateToChannel(15703)(callback);
   let obj = { style: tmp.background, children: null };
   obj = { style: tmp.container, children: null };
   obj = { guildId: closure_15, channelId, chatInputRef: React.useRef(null), HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: channelId.tagListInputRef };
@@ -245,7 +245,7 @@ function ChatPreview(channelId) {
   const obj1 = { portal: null };
   const ref = React.useRef(null);
   obj1[0] = channelId(500).isAndroid();
-  items2[1] = callback3(channelId(15706).PortalKeyboardRenderer, obj1);
+  items2[1] = callback3(channelId(15705).PortalKeyboardRenderer, obj1);
   obj[1] = items2;
   obj[1] = callback4(View, obj);
   return callback3(View, obj);
@@ -488,7 +488,7 @@ export default function NewMessageScreen(navigation) {
         return () => {
           let obj = callback2(709);
           obj = { type: "CHANNEL_DELETE", channel: null };
-          obj = { id: callback(5752).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "ti" };
+          obj = { id: callback(5752).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" };
           obj[1] = obj;
           obj.dispatch(obj);
         };
@@ -584,7 +584,7 @@ export default function NewMessageScreen(navigation) {
                 const items = [];
                 HermesBuiltin.arraySpread(c4, 0);
                 if (-1 === index) {
-                  if (arr.length >= FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(15705)() - 1) {
+                  if (arr.length >= FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(15704)() - 1) {
                     let obj5 = callback(3985);
                     obj5.showMaxGroupMembers();
                     FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698).track(outer2_12.MESSAGE_COMPOSER_MAX_USERS_ADDED);

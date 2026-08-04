@@ -1,10 +1,10 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15145
+// Function ID: 15146
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4285, 4514, 9158, 4281, 4124, 1236, 15147, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 4514, 9158, 4281, 4124, 1236, 15146, 2]
 // Exports: default
 
-// Module 15146 (VoiceUserNameItem)
+// Module 15145 (VoiceUserNameItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -106,7 +106,7 @@ export default function VoiceUserNameItem(arg0) {
     obj3[1] = tmp.tag;
     const obj4 = { userId: null };
     obj4[0] = user.id;
-    obj3[2] = callback2(tmp2(15147), obj4);
+    obj3[2] = callback2(tmp2(15146), obj4);
     tmp12 = callback2(tmp19, obj3);
   }
   items3[1] = tmp12;

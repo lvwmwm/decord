@@ -1,10 +1,10 @@
-// Module ID: 14009
-// Function ID: 14010
+// Module ID: 14008
+// Function ID: 14009
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [17, 1874, 7892, 676, 21, 700, 8321, 705, 589, 3898, 14010, 1236, 3867, 10361, 14012, 2]
+// Dependencies: [17, 1874, 7892, 676, 21, 700, 8321, 705, 589, 3898, 14009, 1236, 3867, 10361, 14011, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 14009 (useIsHarvestRequestDisabled)
+// Module 14008 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -23,8 +23,8 @@ function useIsHarvestRequestDisabled() {
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = tmp(14010).harvestDisabled(tmp4, stateFromStores);
-      const tmpResult = tmp(14010);
+      harvestDisabledResult = tmp(14009).harvestDisabled(tmp4, stateFromStores);
+      const tmpResult = tmp(14009);
     }
     tmp6 = harvestDisabledResult;
   }
@@ -77,8 +77,8 @@ obj = {
     let tmp6 = null == stateFromStores;
     if (!tmp6) {
       if (!harvestDisabledResult) {
-        harvestDisabledResult = tmp(14010).harvestDisabled(tmp4, stateFromStores);
-        const tmpResult = tmp(14010);
+        harvestDisabledResult = tmp(14009).harvestDisabled(tmp4, stateFromStores);
+        const tmpResult = tmp(14009);
       }
       tmp6 = harvestDisabledResult;
     }
@@ -97,7 +97,7 @@ obj = {
 obj = {
   route: UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(14012).default;
+    return require(14011).default;
   }
 };
 const route = createToggle.createRoute(obj);

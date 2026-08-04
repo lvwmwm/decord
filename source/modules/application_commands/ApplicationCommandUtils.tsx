@@ -514,7 +514,7 @@ export const buildApplicationCommands = function buildApplicationCommands(applic
   let closure_0 = arg1;
   return importDefault(12).flatMap(application_commands, (id) => {
     outer1_1(outer1_3[10])(null != id.id, "Missing command id");
-    const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions: false };
+    const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions: 0 };
     obj[4] = closure_0;
     return outer1_12(obj);
   });
@@ -628,13 +628,13 @@ export const hasAccess = function hasAccess(arg0) {
       const id = guild.id;
       if (null != commandLevelPermissions) {
         const tmp4 = hasAccessGivenPerms(selfMember, id, commandLevelPermissions);
-        if (typeof tmp4 === "T") {
+        if (typeof tmp4 === "boolean") {
           return tmp4;
         }
       }
       const tmp6 = hasAccessGivenPerms(selfMember, id, tmp);
-      let tmp7 = typeof tmp6 === "T";
-      if (typeof tmp6 !== "los") {
+      let tmp7 = typeof tmp6 === "boolean";
+      if (typeof tmp6 === "boolean") {
         tmp7 = !tmp6;
       }
       let tmp8 = !tmp7;

@@ -1,10 +1,10 @@
-// Module ID: 12619
-// Function ID: 12620
+// Module ID: 12618
+// Function ID: 12619
 // Name: trackIfScrolledToBottom
 // Dependencies: [676, 698, 2]
 // Exports: trackIfScrolledToBottom
 
-// Module 12619 (trackIfScrolledToBottom)
+// Module 12618 (trackIfScrolledToBottom)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/premium/native/utils/PremiumNitroHomeUtils.tsx");

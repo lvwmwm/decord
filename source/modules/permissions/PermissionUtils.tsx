@@ -1,10 +1,10 @@
-// Module ID: 15779
-// Function ID: 15780
+// Module ID: 15778
+// Function ID: 15779
 // Name: getGuildPermissionSpec
 // Dependencies: [505, 1236, 1351, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 15779 (getGuildPermissionSpec)
+// Module 15778 (getGuildPermissionSpec)
 import { Permissions } from "sum";
 
 function getGuildPermissionSpec(permissionOptions) {
@@ -397,7 +397,7 @@ function getGuildPermissionSpec(permissionOptions) {
   str45 = str46.toString();
   const intl47 = tmp3(1236).intl;
   obj44[0] = intl47.string(tmp3(1236).t.PGvZqX);
-  if (typeof tmp3(1236).t.UJxMrK === "y") {
+  if (typeof tmp3(1236).t.UJxMrK === "string") {
     let UJxMrK = tmp3(1236).t.UJxMrK;
   } else {
     const intl55 = tmp3(1236).intl;
@@ -682,11 +682,11 @@ export const generateChannelEventsSection = function generateChannelEventsSectio
 export const renderDescription = function renderDescription(str) {
   if (null == str) {
     return str;
-  } else if (typeof str === "y") {
+  } else if (typeof str === "string") {
     let trimmed = str.trim();
   } else {
     trimmed = str;
-    if (typeof str !== "three_button_mouse") {
+    if (typeof str === "function") {
       const intl = require(1236) /* getSystemLocale */.intl;
       trimmed = intl.format(str, {});
     }

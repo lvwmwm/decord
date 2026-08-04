@@ -1,10 +1,10 @@
-// Module ID: 13669
-// Function ID: 13670
+// Module ID: 13668
+// Function ID: 13669
 // Name: validateTransportType
 // Dependencies: [4188, 676, 10543, 2]
 // Exports: validateTransportType
 
-// Module 13669 (validateTransportType)
+// Module 13668 (validateTransportType)
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCErrors } from "ME";
 

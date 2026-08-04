@@ -1,9 +1,9 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16268
+// Function ID: 16269
 // Name: handleChannelSelect
-// Dependencies: [1372, 1931, 10260, 10293, 16270, 5229, 2]
+// Dependencies: [1372, 1931, 10260, 10293, 16269, 5229, 2]
 
-// Module 16269 (handleChannelSelect)
+// Module 16268 (handleChannelSelect)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import "initialize";
@@ -28,9 +28,9 @@ function handleChannelSelect(channelId) {
               ({ id: obj5[0], type: obj5[1] } = inappropriateConversationTakeoverForChannel);
               obj[2] = channel.getRecipientId();
               obj[3] = channelId;
-              tmp4(16270).showTakeoverModal(obj);
+              tmp4(16269).showTakeoverModal(obj);
               flag3 = true;
-              const tmp4Result1 = tmp4(16270);
+              const tmp4Result1 = tmp4(16269);
             }
             return flag3;
           }
@@ -69,9 +69,9 @@ function handleChannelUpdates(channels) {
             ({ id: obj4[0], type: obj4[1] } = inappropriateConversationTakeoverForChannel);
             obj[2] = found.getRecipientId();
             obj[3] = found.id;
-            tmp(16270).showTakeoverModal(obj);
+            tmp(16269).showTakeoverModal(obj);
             flag3 = true;
-            const tmpResult1 = tmp(16270);
+            const tmpResult1 = tmp(16269);
           }
           return flag3;
         }

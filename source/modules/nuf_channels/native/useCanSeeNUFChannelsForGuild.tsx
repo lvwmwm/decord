@@ -1,10 +1,10 @@
-// Module ID: 15255
-// Function ID: 15256
+// Module ID: 15254
+// Function ID: 15255
 // Name: useCanSeeNUFChannelsForGuild
 // Dependencies: [1942, 1862, 1874, 676, 3901, 589, 4124, 1384, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 15255 (useCanSeeNUFChannelsForGuild)
+// Module 15254 (useCanSeeNUFChannelsForGuild)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";

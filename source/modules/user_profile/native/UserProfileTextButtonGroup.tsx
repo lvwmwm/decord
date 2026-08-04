@@ -1,10 +1,10 @@
-// Module ID: 12182
-// Function ID: 12183
+// Module ID: 12181
+// Function ID: 12182
 // Name: UserProfileTextButtonGroup
 // Dependencies: [19, 17, 5658, 21, 4285, 1474, 2]
 // Exports: default
 
-// Module 12182 (UserProfileTextButtonGroup)
+// Module 12181 (UserProfileTextButtonGroup)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";

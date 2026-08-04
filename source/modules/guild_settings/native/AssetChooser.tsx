@@ -1,9 +1,9 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 16486
+// Function ID: 16487
 // Name: getSource
-// Dependencies: [5, 19, 17, 676, 21, 4285, 712, 3997, 4826, 4812, 1236, 16488, 16489, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4285, 712, 3997, 4826, 4812, 1236, 16487, 16488, 1297, 2]
 
-// Module 16487 (getSource)
+// Module 16486 (getSource)
 import closure_3 from "createCacheKey";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
@@ -67,7 +67,7 @@ class AssetChooser extends PureComponent {
               obj2 = undefined;
               base64 = undefined;
               ({ size, onChooseAsset: obj2 } = outer1_0.props);
-              if (typeof size === "Object") {
+              if (typeof size === "number") {
                 const obj1 = { size: null };
                 obj1[0] = size;
                 let tmp15 = obj1;
@@ -142,7 +142,7 @@ prototype["render"] = function render() {
   obj[4] = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = importDefault(16488);
+    tmp9 = importDefault(16487);
   }
   obj = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
@@ -151,7 +151,7 @@ prototype["render"] = function render() {
     obj[0] = tmp.uploadIconWrapper;
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(16489);
+    obj1[1] = importDefault(16488);
     obj[1] = tmp5(closure_5, obj1);
     tmp5Result = tmp5(closure_4, obj);
   }

@@ -1,9 +1,9 @@
-// Module ID: 15612
-// Function ID: 15613
+// Module ID: 15611
+// Function ID: 15612
 // Name: SearchHistoryRemoveIcon
-// Dependencies: [5, 19, 17, 1372, 4297, 1874, 8208, 21, 4285, 712, 11647, 4812, 5270, 15600, 11644, 15610, 4281, 5915, 647, 15611, 8119, 4295, 15609, 15613, 15621, 1236, 2]
+// Dependencies: [5, 19, 17, 1372, 4297, 1874, 8208, 21, 4285, 712, 11647, 4812, 5270, 15599, 11644, 15609, 4281, 5915, 647, 15610, 8119, 4295, 15608, 15612, 15620, 1236, 2]
 
-// Module 15612 (SearchHistoryRemoveIcon)
+// Module 15611 (SearchHistoryRemoveIcon)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importAllResult from "GroupDMRow";
 import { View } from "MagnifyingGlassIcon";
@@ -35,7 +35,7 @@ function SearchHistoryTextRow(searchContext) {
   let onPressSearchHistoryText;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = searchContext(15600);
+  let obj = searchContext(15599);
   onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -63,7 +63,7 @@ function SearchHistoryTextRow(searchContext) {
   obj[2] = closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj[3] = tmp.textIconContainer;
   obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(5915).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return closure_10(searchContext(15610).SearchListRow, obj);
+  return closure_10(searchContext(15609).SearchListRow, obj);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;

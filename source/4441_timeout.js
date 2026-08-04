@@ -6,7 +6,7 @@
 // Module 4441 (timeout)
 exports.exports.timeout = (arg0, arg1) => {
   let closure_0 = arg1;
-  if (typeof closure_0 !== "find") {
+  if (typeof closure_0 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const _Error = Error;

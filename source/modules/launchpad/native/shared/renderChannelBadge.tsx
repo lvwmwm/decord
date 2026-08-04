@@ -1,10 +1,10 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 15928
+// Function ID: 15929
 // Name: renderChannelBadge
 // Dependencies: [19, 21, 1297, 11580, 4281, 1236, 1851, 2]
 // Exports: default
 
-// Module 15929 (renderChannelBadge)
+// Module 15928 (renderChannelBadge)
 import "noop";
 import { jsx } from "jsxProd";
 

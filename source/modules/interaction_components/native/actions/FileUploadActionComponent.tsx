@@ -1,10 +1,10 @@
-// Module ID: 16342
-// Function ID: 16343
+// Module ID: 16341
+// Function ID: 16342
 // Name: MainAreaCanUpload
-// Dependencies: [5, 19, 17, 1372, 4621, 676, 21, 4285, 4180, 5315, 13790, 1236, 4506, 4246, 9794, 7672, 5270, 8026, 38, 589, 11458, 4863, 4822, 16343, 1906, 4623, 4826, 11300, 8168, 9925, 1844, 9924, 4824, 4693, 712, 5649, 2]
+// Dependencies: [5, 19, 17, 1372, 4621, 676, 21, 4285, 4180, 5315, 13789, 1236, 4506, 4246, 9794, 7672, 5270, 8026, 38, 589, 11458, 4863, 4822, 16342, 1906, 4623, 4826, 11300, 8168, 9925, 1844, 9924, 4824, 4693, 712, 5649, 2]
 // Exports: default
 
-// Module 16342 (MainAreaCanUpload)
+// Module 16341 (MainAreaCanUpload)
 import ME from "ME";
 import initialize from "initialize";
 import { View } from "isInteractionComponent";
@@ -28,7 +28,7 @@ function MainAreaCanUpload(arg0) {
   let obj = require(4180) /* formatSize */;
   obj = { onPress: openFilePicker, icon: null, label: null, subLabel: null, start: true, end: true, arrow: true };
   obj = { IconComponent: null };
-  obj[0] = require(13790) /* FileUpIcon */.FileUpIcon;
+  obj[0] = require(13789) /* FileUpIcon */.FileUpIcon;
   obj[1] = callback(require(5315) /* TableRowInner */.TableRow.Icon, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t["/2JwTv"], { maxValues });

@@ -1,9 +1,9 @@
-// Module ID: 15408
-// Function ID: 15409
+// Module ID: 15407
+// Function ID: 15408
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4277, 4322, 1372, 1862, 1874, 15402, 676, 5739, 21, 4285, 4281, 712, 4714, 15407, 1236, 1384, 7959, 7140, 10102, 9905, 7816, 589, 8011, 1297, 11898, 15409, 1480, 4266, 13105, 7021, 698, 8145, 15410, 10998, 3986, 11021, 1959, 4253, 15412, 4244, 15404, 5643, 15413, 15414, 11, 4812, 15415, 7022, 12424, 1481, 3958, 3963, 15425, 15426, 15427, 15428, 15429, 15435, 810, 15436, 15437, 1351, 15406, 7666, 15438, 2]
+// Dependencies: [5, 32, 19, 17, 4277, 4322, 1372, 1862, 1874, 15401, 676, 5739, 21, 4285, 4281, 712, 4714, 15406, 1236, 1384, 7959, 7140, 10102, 9905, 7816, 589, 8011, 1297, 11897, 15408, 1480, 4266, 13104, 7021, 698, 8145, 15409, 10998, 3986, 11021, 1959, 4253, 15411, 4244, 15403, 5643, 15412, 15413, 11, 4812, 15414, 7022, 12423, 1481, 3958, 3963, 15424, 15425, 15426, 15427, 15428, 15434, 810, 15435, 15436, 1351, 15405, 7666, 15437, 2]
 
-// Module 15408 (ForYouFooter)
+// Module 15407 (ForYouFooter)
 import addApplication from "addApplication";
 import handleSupportedURL from "handleSupportedURL";
 import importAllResult from "hasFlag";
@@ -37,7 +37,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15407) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15406) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -280,7 +280,7 @@ function ApplicationName(applicationId) {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(11898), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11897), obj, stateFromStores.id);
   }
   return tmp5;
 }
@@ -508,71 +508,25 @@ let closure_35 = importAllResult.memo((item) => {
       obj[1] = tmp6(tmp3[42]);
       obj[2] = tmp2(tmp3[43]).TrashIcon;
       item = navigation(function*() {
-        if (c4 === 2) {
+        const callback = tmp3;
+        let c3 = 1;
+        yield callback(outer2_3[44]).deleteNotificationCenterItem(outer1_0);
+        if (1 === tmp7) {
+          c3 = 0;
+          const obj1 = outer2_1(outer2_3[38]);
+          const obj2 = { key: "REMOVE_NOTIFICATION_ERROR", content: null };
+          const intl = callback(outer2_3[18]).intl;
+          obj2[1] = intl.string(callback(outer2_3[18]).t.WDxhvB);
+          obj1.open(obj2);
+          let c4 = 3;
+        } else if (arg0 === 1) {
           c4 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp6 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c4 = 2;
-            if (0 === c1) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                const callback = tmp3;
-                let c3 = 1;
-                c1 = 2;
-                c4 = 1;
-                let obj1 = { value: null, done: false };
-                obj1[0] = callback(outer2_3[44]).deleteNotificationCenterItem(outer1_0);
-                return obj1;
-              }
-            } else {
-              if (1 === tmp7) {
-                c3 = 0;
-                obj1 = outer2_1(outer2_3[38]);
-                const obj2 = { key: "REMOVE_NOTIFICATION_ERROR", content: null };
-                const intl = callback(outer2_3[18]).intl;
-                obj2[1] = intl.string(callback(outer2_3[18]).t.WDxhvB);
-                obj1.open(obj2);
-                c4 = 3;
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw arg1;
-              } else if (arg0 !== 2) {
-                c3 = 0;
-              }
-              c3 = 0;
-              c4 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            }
-          } catch (tmp20) {
-            let closure_2 = tmp20;
-            if (tmp4 === c3) {
-              c4 = tmp2;
-              throw tmp20;
-            } else {
-              c1 = tmp;
-            }
-          }
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c3 = 0;
         }
+        c3 = 0;
+        return arg1;
       });
       obj[3] = function() {
         const self = this;
@@ -674,7 +628,7 @@ let closure_35 = importAllResult.memo((item) => {
   }
   items7[2] = rowBodyAcked;
   obj7[1] = items7;
-  if (typeof tmp10 === "_iter") {
+  if (typeof tmp10 !== "string") {
     obj7[3] = tmp10;
     const items8 = [tmp25(tmp2(tmp3[14]).Text, obj7), ];
     const items9 = [, , ];

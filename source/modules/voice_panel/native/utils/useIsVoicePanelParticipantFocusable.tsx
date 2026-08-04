@@ -1,10 +1,10 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16025
+// Function ID: 16026
 // Name: isVoicePanelParticipantFocusable
 // Dependencies: [1371, 4298, 4304, 4332, 4303, 10618, 1351, 589, 2]
 // Exports: default
 
-// Module 16026 (isVoicePanelParticipantFocusable)
+// Module 16025 (isVoicePanelParticipantFocusable)
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
 import reset from "reset";

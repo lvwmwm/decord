@@ -1,10 +1,10 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15151
+// Function ID: 15152
 // Name: GuildInfoHeader
-// Dependencies: [19, 17, 4277, 3978, 9710, 676, 21, 8203, 4221, 4131, 4701, 15153, 1865, 9370, 3989, 712, 4699, 10167, 4285, 4146, 4147, 4814, 15154, 1474, 589, 1481, 4694, 4698, 13162, 1416, 5236, 2]
+// Dependencies: [19, 17, 4277, 3978, 9710, 676, 21, 8203, 4221, 4131, 4701, 15152, 1865, 9370, 3989, 712, 4699, 10167, 4285, 4146, 4147, 4814, 15153, 1474, 589, 1481, 4694, 4698, 13161, 1416, 5236, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 15152 (GuildInfoHeader)
+// Module 15151 (GuildInfoHeader)
 import importAllResult from "module_4146";
 import get_ActivityIndicator from "t";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -64,7 +64,7 @@ function GuildInfoHeader(bannerHeight) {
   const tmp5 = bannerHeight(4147);
   obj[1] = callback(bannerHeight(4814), { absolute: true, tall: true });
   const items1 = [callback(bannerHeight(4147), obj), ];
-  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15154), obj2) };
+  obj1 = { style: tmp.headerWrapper, children: callback(bannerHeight(15153), obj2) };
   obj2 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
   items1[1] = callback(closure_5, obj1);
   obj[1] = items1;
@@ -243,7 +243,7 @@ export const useRedesignGuildHeaderHeight = function useRedesignGuildHeaderHeigh
   }
   const fontScale = require(4701) /* getFontScale */.useFontScale();
   const obj2 = require(4701) /* getFontScale */;
-  const tmp8 = null != importDefault(15153)(id);
+  const tmp8 = null != importDefault(15152)(id);
   const isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id.id);
   const obj3 = require(1865) /* getFavoritesAwareGuildName */;
   const scaleTextLineHeightResult = require(9370) /* map */.scaleTextLineHeight("redesign/heading-18/bold", fontScale);

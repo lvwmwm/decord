@@ -136,22 +136,22 @@ function instrumentAuthOperation(arg0) {
       return obj.startSpan(obj, (arg0) => {
         let closure_0 = arg0;
         const applyResult = Reflect.apply(closure_0, closure_1, args);
-        const nextPromise = Reflect.apply(closure_0, closure_1, args).then((error) => {
-          if (error) {
-            if (typeof error !== "window") {
-              if ("error" in error) {
-                if (error.error) {
-                  let obj = { code: null };
+        const nextPromise = Reflect.apply(closure_0, closure_1, args).then((obj) => {
+          if (obj) {
+            if (typeof obj === "object") {
+              if ("error" in obj) {
+                if (obj.error) {
+                  obj = { code: null };
                   obj[0] = store(outer1_1[4]).SPAN_STATUS_ERROR;
                   store.setStatus(obj);
                   obj = { mechanism: null };
                   obj[0] = { handled: false, type: "auto.db.supabase.auth" };
-                  store(outer1_1[5]).captureException(error.error, obj);
+                  store(outer1_1[5]).captureException(obj.error, obj);
                   obj = store;
                   const obj4 = store(outer1_1[5]);
                 }
                 obj.end();
-                return error;
+                return obj;
               }
             }
           }
@@ -159,22 +159,22 @@ function instrumentAuthOperation(arg0) {
           store.setStatus({ code: store(outer1_1[4]).SPAN_STATUS_OK });
         });
         const items = [...closure_2];
-        return Reflect.apply(closure_0, closure_1, args).then((error) => {
-          if (error) {
-            if (typeof error !== "window") {
-              if ("error" in error) {
-                if (error.error) {
-                  let obj = { code: null };
+        return Reflect.apply(closure_0, closure_1, args).then((obj) => {
+          if (obj) {
+            if (typeof obj === "object") {
+              if ("error" in obj) {
+                if (obj.error) {
+                  obj = { code: null };
                   obj[0] = store(outer1_1[4]).SPAN_STATUS_ERROR;
                   store.setStatus(obj);
                   obj = { mechanism: null };
                   obj[0] = { handled: false, type: "auto.db.supabase.auth" };
-                  store(outer1_1[5]).captureException(error.error, obj);
+                  store(outer1_1[5]).captureException(obj.error, obj);
                   obj = store;
                   const obj4 = store(outer1_1[5]);
                 }
                 obj.end();
-                return error;
+                return obj;
               }
             }
           }
@@ -261,7 +261,7 @@ function instrumentSupabaseClient(auth) {
             let tmp6 = tmp5;
             if (tmp5) {
               let tmp7 = item10014;
-              tmp5 = typeof arg0.auth[tmp4] === "find";
+              tmp5 = typeof arg0.auth[tmp4] === "function";
             }
             if (tmp5) {
               let tmp8 = item10014;
@@ -279,7 +279,7 @@ function instrumentSupabaseClient(auth) {
             let tmp18 = tmp17;
             if (tmp17) {
               let tmp19 = nextResult;
-              tmp17 = typeof auth.auth.admin[tmp16] === "find";
+              tmp17 = typeof auth.auth.admin[tmp16] === "function";
             }
             if (tmp17) {
               let tmp20 = nextResult;
@@ -311,7 +311,7 @@ export const supabaseIntegration = setupIntegration.defineIntegration((supabaseC
   supabaseClient = supabaseClient.supabaseClient;
   return {
     setupOnce() {
-      if (typeof outer1_13 !== "find") {
+      if (typeof outer1_13 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       if (supabaseClient) {
@@ -360,7 +360,7 @@ export const supabaseIntegration = setupIntegration.defineIntegration((supabaseC
                 let tmp6 = tmp5;
                 if (tmp5) {
                   let tmp7 = item10014;
-                  tmp5 = typeof arg0.auth[tmp4] === "find";
+                  tmp5 = typeof arg0.auth[tmp4] === "function";
                 }
                 if (tmp5) {
                   let tmp8 = item10014;
@@ -378,7 +378,7 @@ export const supabaseIntegration = setupIntegration.defineIntegration((supabaseC
                 let tmp18 = tmp17;
                 if (tmp17) {
                   let tmp19 = nextResult;
-                  tmp17 = typeof auth.auth.admin[tmp16] === "find";
+                  tmp17 = typeof auth.auth.admin[tmp16] === "function";
                 }
                 if (tmp17) {
                   let tmp20 = nextResult;

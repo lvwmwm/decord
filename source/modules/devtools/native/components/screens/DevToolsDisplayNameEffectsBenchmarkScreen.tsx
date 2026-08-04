@@ -1,10 +1,10 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 14943
+// Function ID: 14944
 // Name: effectName
-// Dependencies: [32, 19, 17, 1874, 1886, 21, 1887, 9395, 1236, 9391, 2643, 4285, 712, 4693, 4281, 4695, 9388, 9389, 589, 14945, 5649, 5315, 10448, 4516, 2]
+// Dependencies: [32, 19, 17, 1874, 1886, 21, 1887, 9395, 1236, 9391, 2643, 4285, 712, 4693, 4281, 4695, 9388, 9389, 589, 14944, 5649, 5315, 10448, 4516, 2]
 // Exports: default
 
-// Module 14944 (effectName)
+// Module 14943 (effectName)
 import _slicedToArray from "_slicedToArray";
 import FRAME_BUDGET_MS from "FRAME_BUDGET_MS";
 import get_ActivityIndicator from "DisplayNameStyleColorPreset";

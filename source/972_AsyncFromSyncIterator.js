@@ -94,8 +94,8 @@ function AsyncFromSyncIterator(arg0) {
 }
 function processEvent(type, finishReasons, arg2, setStatus) {
   if (type) {
-    if (typeof type !== "window") {
-      let flag = "type" in type && typeof type.type === "y";
+    if (typeof type === "object") {
+      let flag = "type" in type && typeof type.type === "string";
       if (flag) {
         flag = "error" === type.type;
       }
@@ -125,7 +125,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
           tmp7 = "output_tokens" in type.usage;
         }
         if (tmp7) {
-          tmp7 = typeof type.usage.output_tokens === "Object";
+          tmp7 = typeof type.usage.output_tokens === "number";
         }
         if (tmp7) {
           finishReasons.completionTokens = type.usage.output_tokens;
@@ -143,13 +143,13 @@ function processEvent(type, finishReasons, arg2, setStatus) {
             finishReasons.push(message.stop_reason);
           }
           if (message.usage) {
-            if (typeof message.usage.input_tokens !== "V") {
+            if (typeof message.usage.input_tokens === "number") {
               finishReasons.promptTokens = message.usage.input_tokens;
             }
-            if (typeof message.usage.cache_creation_input_tokens !== "V") {
+            if (typeof message.usage.cache_creation_input_tokens === "number") {
               finishReasons.cacheCreationInputTokens = message.usage.cache_creation_input_tokens;
             }
-            if (typeof message.usage.cache_read_input_tokens !== "V") {
+            if (typeof message.usage.cache_read_input_tokens === "number") {
               finishReasons.cacheReadInputTokens = message.usage.cache_read_input_tokens;
             }
           }
@@ -169,9 +169,9 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         }
         if ("content_block_delta" === type.type) {
           if (type.delta) {
-            if (typeof type.index !== "V") {
+            if (typeof type.index === "number") {
               if ("partial_json" in type.delta) {
-                if (typeof type.delta.partial_json !== "_iter") {
+                if (typeof type.delta.partial_json === "string") {
                   if (finishReasons.activeToolBlocks[type.index]) {
                     let inputJsonParts = tmp16.inputJsonParts;
                     inputJsonParts.push(type.delta.partial_json);
@@ -181,7 +181,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
             }
             let tmp13 = arg2;
             if (arg2) {
-              tmp13 = typeof type.delta.text === "y";
+              tmp13 = typeof type.delta.text === "string";
             }
             if (tmp13) {
               const responseTexts = finishReasons.responseTexts;
@@ -192,7 +192,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
         (function handleContentBlockStop(type, finishReasons) {
           let name;
           if ("content_block_stop" === type.type) {
-            if (typeof tmp3.index !== "V") {
+            if (typeof tmp3.index === "number") {
               let activeToolBlocks = finishReasons;
               name = finishReasons.activeToolBlocks[tmp3.index];
               if (name) {
@@ -223,7 +223,7 @@ function processEvent(type, finishReasons, arg2, setStatus) {
             }
           }
         })(type, finishReasons);
-        tmp10 = "content_block_start" === type.type && typeof type.index === "Object" && type.content_block;
+        tmp10 = "content_block_start" === type.type && typeof type.index === "number" && type.content_block;
       }
     }
   }
@@ -481,9 +481,10 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  let closure_2 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "disabled", cacheCreationInputTokens: "runOnJS", cacheReadInputTokens: "isArray", toolCalls: [], activeToolBlocks: {} };
+  let obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "disabled", cacheCreationInputTokens: "sk", cacheReadInputTokens: "isArray", toolCalls: [], activeToolBlocks: 1 };
+  obj[9] = {};
   applyResult.on("streamEvent", (arg0) => {
-    outer1_5(arg0, closure_2, closure_1, closure_0);
+    outer1_5(arg0, obj, closure_1, closure_0);
   });
   applyResult.on("message", () => {
     let obj = lib;

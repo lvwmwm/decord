@@ -1,10 +1,10 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12124
+// Function ID: 12125
 // Name: onConnectToConsole
 // Dependencies: [19, 676, 4101, 1358, 10407, 10472, 10772, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 12125 (onConnectToConsole)
+// Module 12124 (onConnectToConsole)
 import noop from "noop";
 import ME from "ME";
 

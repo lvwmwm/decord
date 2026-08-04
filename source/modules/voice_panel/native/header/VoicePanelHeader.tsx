@@ -1,9 +1,9 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16044
+// Function ID: 16045
 // Name: MusicMuteButton
-// Dependencies: [32, 19, 17, 4298, 4199, 10676, 1218, 1372, 4332, 3922, 5104, 1874, 11558, 11561, 11556, 4303, 505, 21, 4285, 712, 4146, 4694, 7819, 4684, 5663, 11557, 10808, 589, 10678, 15980, 1236, 10682, 9569, 10683, 4681, 15982, 16046, 4475, 3989, 11562, 4286, 16047, 16005, 16048, 5244, 16049, 9077, 9150, 9112, 3997, 15518, 16050, 9397, 16052, 12123, 692, 16063, 9638, 16073, 16074, 2]
+// Dependencies: [32, 19, 17, 4298, 4199, 10676, 1218, 1372, 4332, 3922, 5104, 1874, 11558, 11561, 11556, 4303, 505, 21, 4285, 712, 4146, 4694, 7819, 4684, 5663, 11557, 10808, 589, 10678, 15979, 1236, 10682, 9569, 10683, 4681, 15981, 16045, 4475, 3989, 11562, 4286, 16046, 16004, 16047, 5244, 16048, 9077, 9150, 9112, 3997, 15517, 16049, 9397, 16051, 12122, 692, 16062, 9638, 16072, 16073, 2]
 
-// Module 16045 (MusicMuteButton)
+// Module 16044 (MusicMuteButton)
 import registerAsset from "registerAsset";
 import importAllResult from "Themes";
 import get_ActivityIndicator from "jsxProd";
@@ -58,9 +58,9 @@ function MusicMuteButton(channelId) {
       obj[2] = function onPress() {
         return stateFromStores(outer1_2[33]).updateStageMusicMuted(!stateFromStores);
       };
-      closure_23(tmp(15980), obj);
+      closure_23(tmp(15979), obj);
       const tmp7 = closure_23;
-      const tmpResult = tmp(15980);
+      const tmpResult = tmp(15979);
     }
   }
   return tmp6;

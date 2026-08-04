@@ -1,10 +1,10 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16691
+// Function ID: 16692
 // Name: ImagePlusIcon
-// Dependencies: [19, 21, 712, 3988, 16693, 2]
+// Dependencies: [19, 21, 712, 3988, 16692, 2]
 // Exports: ImagePlusIcon
 
-// Module 16692 (ImagePlusIcon)
+// Module 16691 (ImagePlusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ImagePlusIcon = function ImagePlusIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(16693) /* registerAsset */;
+  obj[0] = require(16692) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

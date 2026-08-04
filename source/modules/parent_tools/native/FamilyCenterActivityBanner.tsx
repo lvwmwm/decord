@@ -1,10 +1,10 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14025
+// Function ID: 14026
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [19, 17, 21, 4285, 7259, 7260, 14027, 712, 11239, 1236, 2285, 14034, 14035, 4281, 2]
+// Dependencies: [19, 17, 21, 4285, 7259, 7260, 14026, 712, 11239, 1236, 2285, 14033, 14034, 4281, 2]
 // Exports: default
 
-// Module 14026 (FamilyCenterActivityBannerButton)
+// Module 14025 (FamilyCenterActivityBannerButton)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ function FamilyCenterActivityBannerButton() {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    let tmp7Result = tmp2(14027);
+    let tmp7Result = tmp2(14026);
     tmp7Result = tmp7(tmp5 ? tmp7Result.FamilyCenterParentQRCodeButton : tmp7Result.FamilyCenterTeenQRCodeButton, {});
     obj[1] = tmp7Result;
     tmp7Result = tmp7(closure_3, obj);
@@ -68,7 +68,7 @@ export default function FamilyCenterActivityBanner() {
   obj = { style: tmp4.container, children: null };
   obj = { source: null, style: null };
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2285).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2285).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj[0] = tmp(tmp3 ? 14034 : 14035);
+  obj[0] = tmp(tmp3 ? 14033 : 14034);
   obj[1] = tmp4.art;
   const items = [closure_5(closure_4, obj), , , ];
   obj1 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

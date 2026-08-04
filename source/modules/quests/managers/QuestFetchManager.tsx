@@ -1,9 +1,9 @@
-// Module ID: 16774
-// Function ID: 16775
+// Module ID: 16773
+// Function ID: 16774
 // Name: _fetch
-// Dependencies: [7080, 687, 5229, 10375, 1208, 10376, 500, 10384, 7095, 5131, 16775, 2]
+// Dependencies: [7080, 687, 5229, 10375, 1208, 10376, 500, 10384, 7095, 5131, 16774, 2]
 
-// Module 16774 (_fetch)
+// Module 16773 (_fetch)
 import initializeState from "initializeState";
 import "initialize";
 

@@ -1,9 +1,9 @@
-// Module ID: 14388
-// Function ID: 14389
+// Module ID: 14387
+// Function ID: 14388
 // Name: volumeSlider
 // Dependencies: [4332, 7892, 589, 10361, 1236, 9077, 10743, 2]
 
-// Module 14388 (volumeSlider)
+// Module 14387 (volumeSlider)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 

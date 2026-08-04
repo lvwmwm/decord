@@ -1,10 +1,10 @@
-// Module ID: 11980
-// Function ID: 11981
+// Module ID: 11979
+// Function ID: 11980
 // Name: CreationIntent
-// Dependencies: [19, 17, 8318, 676, 21, 4285, 5235, 712, 1480, 4681, 4691, 11951, 698, 5272, 4281, 1236, 5649, 11608, 5936, 2]
+// Dependencies: [19, 17, 8318, 676, 21, 4285, 5235, 712, 1480, 4681, 4691, 11950, 698, 5272, 4281, 1236, 5649, 11608, 5936, 2]
 // Exports: default
 
-// Module 11980 (CreationIntent)
+// Module 11979 (CreationIntent)
 import set from "set";
 import get_ActivityIndicator from "ListSelectionItem";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";

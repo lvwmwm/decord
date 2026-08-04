@@ -1,7 +1,7 @@
 // Module ID: 13055
 // Function ID: 13056
 // Name: Range
-// Dependencies: [13051, 13022]
+// Dependencies: [13050, 13021]
 
 // Module 13055 (Range)
 
@@ -11,13 +11,13 @@ export default (arr) => {
   let c2 = null;
   let c3 = null;
   try {
-    let tmp9 = new _require(13051)(arg1, arg2);
+    let tmp9 = new _require(13050)(arg1, arg2);
     c3 = tmp9;
     const item = arr.forEach((arg0) => {
       if (_null3.test(arg0)) {
         let tmp = closure_1;
         if (closure_1) {
-          tmp = -1 !== _null2.compare(arg0);
+          tmp = 1 !== _null2.compare(arg0);
         }
         if (!tmp) {
           closure_1 = arg0;

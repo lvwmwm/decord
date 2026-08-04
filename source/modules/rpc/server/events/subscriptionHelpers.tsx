@@ -1,10 +1,10 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13675
+// Function ID: 13676
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1371, 10506, 7080, 676, 4310, 10554, 4815, 13639, 7103, 2]
+// Dependencies: [1371, 10506, 7080, 676, 4310, 10554, 4815, 13638, 7103, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13676 (getInitialSubscriptionPayload)
+// Module 13675 (getInitialSubscriptionPayload)
 import participantFromServer from "participantFromServer";
 import map from "map";
 import initializeState from "initializeState";
@@ -89,7 +89,7 @@ export const getInitialSubscriptionPayload = function getInitialSubscriptionPayl
     obj3[0] = obj3.getIsScreenLandscape() ? closure_7.LANDSCAPE : closure_7.PORTRAIT;
     return obj3;
   } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === participantFromServer) {
-    obj2 = require(13639) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13638) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (tmp.QUEST_ENROLLMENT_STATUS_UPDATE === participantFromServer) {
     const quest_id = c3.quest_id;

@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15116
+// Function ID: 15117
 // Name: useEnsureHydratedUsers
 // Dependencies: [19, 5110, 1874, 5835, 2]
 // Exports: useEnsureHydratedUsers
 
-// Module 15117 (useEnsureHydratedUsers)
+// Module 15116 (useEnsureHydratedUsers)
 import noop from "noop";
 import handleConnectionReset from "handleConnectionReset";
 import mergeGuildAvatar from "mergeGuildAvatar";

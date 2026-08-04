@@ -1,7 +1,7 @@
 // Module ID: 7697
 // Function ID: 7698
 // Name: openStageChannelSettings
-// Dependencies: [7698, 5099, 4253, 7700, 1959, 7774, 7815, 7822, 12568, 4496, 4494, 4490, 10556, 8705, 7817, 2]
+// Dependencies: [7698, 5099, 4253, 7700, 1959, 7774, 7815, 7822, 12567, 4496, 4494, 4490, 10556, 8705, 7817, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 7697 (openStageChannelSettings)
@@ -42,7 +42,7 @@ export const openStageSettingsSheet = function openStageSettingsSheet(closure_0,
 export const openEndStageModal = function openEndStageModal(closure_0) {
   let obj = importDefault(4253);
   obj = { channel: closure_0 };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(12568, dependencyMap.paths), closure_8, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12567, dependencyMap.paths), closure_8, obj);
 };
 export const openStageChannel = function openStageChannel(outer1_0) {
   if (outer1_0.isGuildStageVoice()) {

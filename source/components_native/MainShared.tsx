@@ -1,10 +1,10 @@
-// Module ID: 15853
-// Function ID: 15854
+// Module ID: 15852
+// Function ID: 15853
 // Name: BurstReactionAnimationContainer
-// Dependencies: [19, 17, 1372, 4356, 21, 589, 10571, 4136, 10663, 15854, 500, 13748, 1236, 15856, 13743, 13615, 2, 15857, 15858, 15859, 15860, 15868, 15870, 15899]
+// Dependencies: [19, 17, 1372, 4356, 21, 589, 10571, 4136, 10663, 15853, 500, 13747, 1236, 15855, 13742, 13614, 2, 15856, 15857, 15858, 15859, 15867, 15869, 15898]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
-// Module 15853 (BurstReactionAnimationContainer)
+// Module 15852 (BurstReactionAnimationContainer)
 import ActionSheetPresenter from "ActionSheetPresenter";
 import { NativeModules } from "BurstReactionAnimationContainerInner";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -39,7 +39,7 @@ export const PictureInPictureGlobalContainer = function PictureInPictureGlobalCo
         if (!tmp6) {
           obj = { channel: null };
           obj[0] = stateFromStores;
-          tmp7 = jsx(importDefault(15854), { channel: null });
+          tmp7 = jsx(importDefault(15853), { channel: null });
         }
       }
     }
@@ -64,7 +64,7 @@ export const useAppKeyCommands = function useAppKeyCommands() {
     const items = [obj];
     return items;
   }, []);
-  const keyCommands = require(13743) /* KeyCommandsView */.useKeyCommands(memo);
+  const keyCommands = require(13742) /* KeyCommandsView */.useKeyCommands(memo);
 };
 export const useScreenReaderEnabled = function useScreenReaderEnabled() {
   const effect = React.useEffect(() => {

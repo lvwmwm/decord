@@ -1,10 +1,10 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15557
+// Function ID: 15558
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 1480, 1581, 8943, 5238, 1236, 15559, 11148, 11161, 11163, 5665, 2]
+// Dependencies: [19, 21, 1480, 1581, 8943, 5238, 1236, 15558, 11148, 11161, 11163, 5665, 2]
 // Exports: default
 
-// Module 15558 (StandaloneMembersView)
+// Module 15557 (StandaloneMembersView)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -34,7 +34,7 @@ export default function StandaloneMembersView(guildId) {
     return callback(guildId(5238).NavigatorHeader, obj);
   };
   obj1[2] = function render() {
-    return outer1_4(navigation(15559), { guildId });
+    return outer1_4(navigation(15558), { guildId });
   };
   obj[constants.MAIN] = obj1;
   obj[constants.MEMBER_EDIT] = {

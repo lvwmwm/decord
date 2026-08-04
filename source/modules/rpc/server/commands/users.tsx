@@ -1,9 +1,9 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13676
+// Function ID: 13677
 // Name: RPC_EMBEDDED_APP_SCOPE
-// Dependencies: [1874, 4188, 676, 13651, 10549, 2]
+// Dependencies: [1874, 4188, 676, 13650, 10549, 2]
 
-// Module 13677 (RPC_EMBEDDED_APP_SCOPE)
+// Module 13676 (RPC_EMBEDDED_APP_SCOPE)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import { RPCCommands } from "ME";

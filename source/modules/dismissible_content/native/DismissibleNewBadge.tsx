@@ -1,10 +1,10 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14603
+// Function ID: 14604
 // Name: DismissibleNewTag
 // Dependencies: [19, 6805, 21, 4285, 712, 9916, 500, 1297, 4706, 691, 2]
 // Exports: default
 
-// Module 14604 (DismissibleNewTag)
+// Module 14603 (DismissibleNewTag)
 import "noop";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";

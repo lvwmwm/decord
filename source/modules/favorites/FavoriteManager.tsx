@@ -1,9 +1,9 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16452
+// Function ID: 16453
 // Name: handleChannelDelete
 // Dependencies: [9628, 1865, 5229, 2]
 
-// Module 16453 (handleChannelDelete)
+// Module 16452 (handleChannelDelete)
 import "initialize";
 
 const require = arg1;

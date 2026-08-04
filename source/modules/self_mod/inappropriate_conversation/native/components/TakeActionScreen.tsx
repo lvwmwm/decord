@@ -1,10 +1,10 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 14939
+// Function ID: 14940
 // Name: TakeActionButtons
 // Dependencies: [5, 32, 19, 17, 3922, 1874, 10253, 21, 4285, 712, 589, 10286, 10289, 1480, 9161, 7707, 10266, 7830, 3986, 1236, 4246, 3985, 4695, 10297, 8692, 4764, 7766, 3982, 4281, 2]
 // Exports: default
 
-// Module 14940 (TakeActionButtons)
+// Module 14939 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";

@@ -1,10 +1,10 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13897
+// Function ID: 13898
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 7702, 21, 4285, 712, 13899, 4241, 4281, 1236, 2]
+// Dependencies: [19, 17, 7702, 21, 4285, 712, 13898, 4241, 4281, 1236, 2]
 // Exports: default
 
-// Module 13898 (SafetySettingsNotice)
+// Module 13897 (SafetySettingsNotice)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { SafetySettingsNoticeAction as closure_4 } from "SafetyToastType";

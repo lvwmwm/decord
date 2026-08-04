@@ -1,10 +1,10 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12182
+// Function ID: 12183
 // Name: AddAppButton
 // Dependencies: [5, 32, 19, 8150, 676, 1479, 21, 11445, 10888, 4253, 5638, 11432, 3985, 1467, 7765, 9350, 1236, 4695, 712, 5611, 4295, 4144, 1579, 698, 2]
 // Exports: default
 
-// Module 12183 (AddAppButton)
+// Module 12182 (AddAppButton)
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import _slicedToArray from "_slicedToArray";
 import fetchApplication from "fetchApplication";

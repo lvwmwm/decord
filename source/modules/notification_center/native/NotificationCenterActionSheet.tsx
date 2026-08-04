@@ -1,10 +1,10 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15396
+// Function ID: 15397
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 7018, 676, 21, 589, 15398, 8186, 4253, 8181, 8184, 8190, 5925, 5646, 5337, 1236, 5648, 4799, 10130, 9058, 15399, 10191, 8192, 4249, 5920, 2]
+// Dependencies: [19, 7018, 676, 21, 589, 15397, 8186, 4253, 8181, 8184, 8190, 5925, 5646, 5337, 1236, 5648, 4799, 10130, 9058, 15398, 10191, 8192, 4249, 5920, 2]
 // Exports: default
 
-// Module 15397 (NotificationCenterActionSheet)
+// Module 15396 (NotificationCenterActionSheet)
 import registerAsset from "registerAsset";
 import findOrCreateMessageRecord from "findOrCreateMessageRecord";
 import { UserSettingsSections } from "ME";
@@ -24,7 +24,7 @@ export default function NotificationCenterActionSheet() {
   const everyoneFilter = stateFromStoresObject.everyoneFilter;
   const items1 = [everyoneFilter, roleFilter];
   const dependencyMap = hasForLaterAccess.useCallback((arg0) => {
-    let obj = everyoneFilter(15398);
+    let obj = everyoneFilter(15397);
     obj = { roleFilter, everyoneFilter };
     const merged = Object.assign(arg0);
     obj.setGuildFilter(obj);
@@ -86,7 +86,7 @@ export default function NotificationCenterActionSheet() {
   obj4[3] = intl4.string(roleFilter(1236).t.jYgZa4);
   const obj5 = { IconComponent: null, source: null };
   obj5[0] = roleFilter(9058).BellIcon;
-  obj5[1] = everyoneFilter(15399);
+  obj5[1] = everyoneFilter(15398);
   obj4[4] = callback(roleFilter(5648).ActionSheetRow.Icon, obj5);
   items3[1] = callback(roleFilter(5648).ActionSheetSwitchRow, obj4);
   obj1[1] = items3;

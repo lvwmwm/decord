@@ -1,10 +1,10 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 15971
+// Function ID: 15972
 // Name: Loading
-// Dependencies: [32, 19, 17, 9050, 9001, 676, 7116, 505, 21, 4285, 712, 8997, 5610, 5630, 4253, 8705, 8989, 10365, 589, 9002, 5338, 5337, 1236, 1297, 9004, 5901, 15973, 2]
+// Dependencies: [32, 19, 17, 9050, 9001, 676, 7116, 505, 21, 4285, 712, 8997, 5610, 5630, 4253, 8705, 8989, 10365, 589, 9002, 5338, 5337, 1236, 1297, 9004, 5901, 15972, 2]
 // Exports: default
 
-// Module 15972 (Loading)
+// Module 15971 (Loading)
 import _slicedToArray from "_slicedToArray";
 import loadInviteSuggestions from "loadInviteSuggestions";
 import { View } from "module_10365";
@@ -213,7 +213,7 @@ export default function ActivityInviteSheet(activity) {
       obj7[2] = callback;
       obj7[3] = callback2;
       obj7[4] = callback1;
-      tmp17Result = tmp17(tmp2(15973), obj7);
+      tmp17Result = tmp17(tmp2(15972), obj7);
     }
     const obj8 = { children: null };
     items4[1] = tmp17Result;

@@ -1,10 +1,10 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16715
+// Function ID: 16716
 // Name: ChannelRow
-// Dependencies: [32, 19, 17, 1372, 5222, 3913, 676, 4481, 21, 4285, 712, 5204, 4475, 4253, 15138, 5236, 16653, 589, 5646, 4281, 1236, 5901, 4812, 4490, 8914, 1959, 8916, 8918, 1297, 12784, 5340, 2]
+// Dependencies: [32, 19, 17, 1372, 5222, 3913, 676, 4481, 21, 4285, 712, 5204, 4475, 4253, 15137, 5236, 16652, 589, 5646, 4281, 1236, 5901, 4812, 4490, 8914, 1959, 8916, 8918, 1297, 12783, 5340, 2]
 // Exports: default
 
-// Module 16716 (ChannelRow)
+// Module 16715 (ChannelRow)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import { View } from "initialize";
@@ -39,11 +39,11 @@ function ChannelRow(channel) {
   obj[4] = channel;
   obj[5] = selected;
   obj[7] = UnreadSetting.ONLY_MENTIONS;
-  const children = [closure_11(onChannelSelected(15138), obj), ];
+  const children = [closure_11(onChannelSelected(15137), obj), ];
   if (selected) {
     obj = { style: null, source: null };
     obj[0] = tmp.selectedIcon;
-    obj[1] = tmp2(16653);
+    obj[1] = tmp2(16652);
     selected = tmp8(tmp2(5236), obj);
     const tmp2Result = tmp2(5236);
   }
@@ -170,7 +170,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     const obj4 = { color: null, source: null };
     obj4[0] = str;
-    obj4[1] = importDefault(12784);
+    obj4[1] = importDefault(12783);
     const items3 = [tmp8(tmp5(1297).Icon, obj4), ];
     const obj5 = { style: null, variant: "text-md/medium", color: "text-link", children: null };
     obj5[0] = tmp.createChannelLabel;

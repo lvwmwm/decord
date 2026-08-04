@@ -1,9 +1,9 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16308
+// Function ID: 16309
 // Name: prototype
 // Dependencies: [1942, 1862, 4102, 676, 3901, 5229, 5205, 1384, 2]
 
-// Module 16309 (prototype)
+// Module 16308 (prototype)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";

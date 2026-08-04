@@ -1,10 +1,10 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13159
+// Function ID: 13160
 // Name: ShareScreenFooter
 // Dependencies: [19, 21, 10170, 10171, 4695, 10179, 2]
 // Exports: default
 
-// Module 13160 (ShareScreenFooter)
+// Module 13159 (ShareScreenFooter)
 import "noop";
 import { jsx } from "jsxProd";
 

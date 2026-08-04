@@ -1,10 +1,10 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 13992
+// Function ID: 13993
 // Name: useStaffOrDeveloperSettingPredicate
 // Dependencies: [7099, 589, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 13993 (useStaffOrDeveloperSettingPredicate)
+// Module 13992 (useStaffOrDeveloperSettingPredicate)
 import init from "init";
 
 const require = arg1;

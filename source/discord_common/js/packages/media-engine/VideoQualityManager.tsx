@@ -31,7 +31,7 @@ class WantsVideoQuality {
       capture = global.capture;
       tmp3 = new.target;
       tmp2 = VideoQuality;
-      if (typeof VideoQuality !== "find") {
+      if (typeof VideoQuality !== "function") {
         str2 = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
@@ -47,7 +47,7 @@ class WantsVideoQuality {
       encode = global.encode;
       tmp8 = new.target;
       tmp7 = VideoQuality;
-      if (typeof VideoQuality !== "find") {
+      if (typeof VideoQuality !== "function") {
         str3 = "Trying to call a non-function";
         throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
       }

@@ -18,7 +18,7 @@ function normal(border) {
   return obj;
 }
 function normalVote(border, arg1) {
-  if (typeof normal !== "find") {
+  if (typeof normal !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let obj = {};
@@ -56,7 +56,7 @@ const result = require("NativeShadowType").fileFinishedImporting("modules/polls/
 
 export const pollStyleSets = {
   loserSelected(colors) {
-    if (typeof notVoted !== "find") {
+    if (typeof notVoted !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = {};
@@ -84,7 +84,7 @@ export const pollStyleSets = {
   },
   victorNotSelected,
   victorSelected(colors) {
-    if (typeof victorNotSelected !== "find") {
+    if (typeof victorNotSelected !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = {};

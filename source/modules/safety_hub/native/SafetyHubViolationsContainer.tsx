@@ -1,10 +1,10 @@
-// Module ID: 13906
-// Function ID: 13907
+// Module ID: 13905
+// Function ID: 13906
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 11193, 7728, 676, 21, 4285, 712, 8979, 7772, 4281, 1236, 12752, 9396, 7727, 11, 13907, 7729, 4490, 11190, 1959, 11200, 589, 698, 11198, 2]
+// Dependencies: [32, 19, 17, 11193, 7728, 676, 21, 4285, 712, 8979, 7772, 4281, 1236, 12751, 9396, 7727, 11, 13906, 7729, 4490, 11190, 1959, 11200, 589, 698, 11198, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 13906 (SafetyHubViolationsHeader)
+// Module 13905 (SafetyHubViolationsHeader)
 import _slicedToArray from "_slicedToArray";
 import module_4490 from "module_4490";
 import get_ActivityIndicator from "useIsNewClassification";
@@ -63,7 +63,7 @@ function SafetyHubViolationsHeader(count) {
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(12752).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(12751).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp7(9396).ChevronSmallDownIcon;
   }
@@ -211,7 +211,7 @@ class SafetyHubViolationsContainer {
     c3 = undefined;
     useState = undefined;
     c5 = undefined;
-    f92571 = undefined;
+    f92567 = undefined;
     useMemo = undefined;
     c8 = undefined;
     tmp = Fragment();
@@ -232,7 +232,7 @@ class SafetyHubViolationsContainer {
     items = [];
     items[0] = useMemo;
     stateFromStores = obj2.useStateFromStores(items, () => memo.getIsDsaEligible());
-    f92571 = stateFromStores;
+    f92567 = stateFromStores;
     items1 = [, ];
     items1[0] = classifications;
     items1[1] = first1;
@@ -261,7 +261,7 @@ class SafetyHubViolationsContainer {
     }
     c8 = num;
     tmp11 = jsxs;
-    tmp12 = f92571;
+    tmp12 = f92567;
     obj = { style: items3, children: null };
     items3 = [];
     items3[0] = tmp.container;

@@ -1,10 +1,10 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11934
+// Function ID: 11935
 // Name: ChannelSpoiler
 // Dependencies: [32, 19, 17, 4298, 1372, 1862, 11556, 21, 4285, 712, 589, 4475, 11557, 4478, 5200, 4137, 4745, 4281, 1236, 4693, 4275, 4812, 10857, 7722, 2]
 // Exports: default
 
-// Module 11935 (ChannelSpoiler)
+// Module 11934 (ChannelSpoiler)
 import _slicedToArray from "_slicedToArray";
 import Stack from "Stack";
 import { View } from "Text";

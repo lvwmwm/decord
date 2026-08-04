@@ -1,0 +1,15 @@
+// Module ID: 13052
+// Function ID: 13053
+// Name: Range
+// Dependencies: [13050]
+
+// Module 13052 (Range)
+
+export default (arg0, arg1, arg2) => {
+  try {
+    const tmp7 = new require(13050) /* Range */(arg1, arg2);
+    return tmp7.test(arg0);
+  } catch (err) {
+    return false;
+  }
+};

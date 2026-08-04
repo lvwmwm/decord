@@ -1,10 +1,10 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16031
+// Function ID: 16032
 // Name: PIPReferenceDimensions
-// Dependencies: [4298, 4304, 1218, 11558, 16033, 4303, 11559, 10618, 13240, 712, 2]
+// Dependencies: [4298, 4304, 1218, 11558, 16032, 4303, 11559, 10618, 13239, 712, 2]
 // Exports: calculatePIPPositionFromVelocity, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getVoicePanelPIPBorderRadius
 
-// Module 16032 (PIPReferenceDimensions)
+// Module 16031 (PIPReferenceDimensions)
 import getParticipants from "getParticipants";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -49,7 +49,7 @@ function pipXYtoAbsoluteXY(arg0) {
   let windowDimensions;
   ({ windowDimensions, safeArea } = arg0);
   ({ pipX, pipY } = arg0);
-  if (typeof getPIPWindowDimensions !== "find") {
+  if (typeof getPIPWindowDimensions !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
@@ -102,7 +102,7 @@ function getClampedPIPPosition(topAvoidanceRegion) {
   } else {
     sum = y - height / 2;
   }
-  if (typeof getPIPWindowDimensions !== "find") {
+  if (typeof getPIPWindowDimensions !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
@@ -112,13 +112,13 @@ function getClampedPIPPosition(topAvoidanceRegion) {
   const diff3 = windowDimensions.height - bound1;
   const diff4 = diff3 - Math.max(safeArea.bottom, PIP_WINDOW_OFFSET);
   const diff5 = bound + diff2 - width;
-  if (typeof clamp !== "find") {
+  if (typeof clamp !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const bound2 = Math.min(Math.max(diff, bound), diff5);
   const sum1 = bound1 + num;
   const diff6 = bound1 + diff4 - bottomAvoidanceRegion - height;
-  if (typeof clamp !== "find") {
+  if (typeof clamp !== "function") {
     HermesBuiltin.throwTypeError();
   }
   obj = { x: bound2 + point.x, y: Math.min(Math.max(sum, sum1), diff6) + point.y };
@@ -136,7 +136,7 @@ function calculatePIPPositionFromVelocity(arg0) {
   let windowDimensions;
   ({ velocityX, velocityY, windowDimensions, safeArea } = arg0);
   ({ absoluteX, absoluteY } = arg0);
-  if (typeof getPIPWindowDimensions !== "find") {
+  if (typeof getPIPWindowDimensions !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const bound = Math.max(safeArea.left, PIP_WINDOW_OFFSET);
@@ -149,7 +149,7 @@ function calculatePIPPositionFromVelocity(arg0) {
   const diff5 = absoluteY - bound1;
   const absolute = Math.abs(velocityY);
   if (Math.max(absolute, Math.abs(velocityX)) < MIN_PIP_TOSS_VELOCITY) {
-    if (typeof clamp !== "find") {
+    if (typeof clamp !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const rect = { left: null, right: null, top: null, bottom: null };
@@ -157,20 +157,20 @@ function calculatePIPPositionFromVelocity(arg0) {
     const _Math2 = Math;
     rect[0] = Math.min(Math.max(diff4, 0), diff1);
     const diff6 = diff1 - diff4;
-    if (typeof clamp !== "find") {
+    if (typeof clamp !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const _Math3 = Math;
     const _Math4 = Math;
     rect[1] = Math.min(Math.max(diff6, 0), diff1);
-    if (typeof clamp !== "find") {
+    if (typeof clamp !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const _Math5 = Math;
     const _Math6 = Math;
     rect[2] = Math.min(Math.max(diff5, 0), diff3);
     const diff7 = diff3 - diff5;
-    if (typeof clamp !== "find") {
+    if (typeof clamp !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const _Math7 = Math;
@@ -232,11 +232,11 @@ function calculatePIPPositionFromVelocity(arg0) {
     num5 = (diff4 + result1 * (num4 - diff5)) / diff1;
     num6 = num4 / diff3;
   }
-  if (typeof clamp !== "find") {
+  if (typeof clamp !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const obj = { pipX: Math.min(Math.max(num5, 0), 1), pipY: null };
-  if (typeof clamp !== "find") {
+  if (typeof clamp !== "function") {
     HermesBuiltin.throwTypeError();
   }
   obj[1] = Math.min(Math.max(num6, 0), 1);
@@ -367,7 +367,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
       for (const item10060 of activityParticipants) {
         let tmp17 = item10060;
         let participants = item10060.participants;
-        if (participants.some((userId) => callback(13240).isActivityParticipantCurrentUserCurrentSession(userId))) {
+        if (participants.some((userId) => callback(13239).isActivityParticipantCurrentUserCurrentSession(userId))) {
           let tmp18 = item10060;
           if (!blockList.has(tmp17.id)) {
             let obj1 = { id: null, type: null };
@@ -426,7 +426,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
         }
       } else if (tmp31.ACTIVITY === type) {
         const participants2 = participant2.participants;
-        if (participants2.some((userId) => callback(13240).isActivityParticipantCurrentUserCurrentSession(userId))) {
+        if (participants2.some((userId) => callback(13239).isActivityParticipantCurrentUserCurrentSession(userId))) {
           const obj5 = { id: null, type: null };
           ({ id: obj9[0], type: obj9[1] } = participant2);
           return obj5;

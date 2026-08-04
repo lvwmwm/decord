@@ -1,9 +1,9 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 13948
+// Function ID: 13949
 // Name: toggle
-// Dependencies: [1874, 7892, 676, 8328, 589, 13945, 1236, 13895, 13947, 4624, 4490, 8327, 1959, 8330, 12, 10361, 13896, 2]
+// Dependencies: [1874, 7892, 676, 8328, 589, 13944, 1236, 13894, 13946, 4624, 4490, 8327, 1959, 8330, 12, 10361, 13895, 2]
 
-// Module 13949 (toggle)
+// Module 13948 (toggle)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserFlags } from "ME";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";
@@ -20,10 +20,10 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
     const str2 = intl2.string(require(1236) /* getSystemLocale */.t["CIGa+7"]);
     let obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     const formatted1 = intl3.string(require(1236) /* getSystemLocale */.t.wlfmlR).toUpperCase();
-    obj[0] = importDefault(13895).disableSMS;
+    obj[0] = importDefault(13894).disableSMS;
     obj[1] = formatted1;
     obj[2] = formatted;
-    importDefault(13947)(obj);
+    importDefault(13946)(obj);
     const str3 = intl3.string(require(1236) /* getSystemLocale */.t.wlfmlR);
   } else {
     if (null != user) {
@@ -61,8 +61,8 @@ apply = {
     const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = require(13945) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-      const tmpResult = require(13945) /* getSMSBackupDisabledMessage */;
+      sMSBackupDisabledMessage = require(13944) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = require(13944) /* getSMSBackupDisabledMessage */;
     }
     return null != sMSBackupDisabledMessage;
   },
@@ -92,8 +92,8 @@ apply = {
     const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = require(13945) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-      const tmpResult = require(13945) /* getSMSBackupDisabledMessage */;
+      sMSBackupDisabledMessage = require(13944) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = require(13944) /* getSMSBackupDisabledMessage */;
     }
     return sMSBackupDisabledMessage;
   },

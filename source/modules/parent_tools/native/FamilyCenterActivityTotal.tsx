@@ -1,10 +1,10 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 14045
+// Function ID: 14046
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 4285, 712, 14045, 6961, 4281, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 14044, 6961, 4281, 2]
 // Exports: default
 
-// Module 14046 (FamilyCenterActivityTotal)
+// Module 14045 (FamilyCenterActivityTotal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,15 +23,15 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterActivityTotal(displayType) {
   displayType = displayType.displayType;
-  let obj = require(14045) /* useActionsForDisplayType */;
+  let obj = require(14044) /* useActionsForDisplayType */;
   const actionTotalsForDisplayType = obj.useActionTotalsForDisplayType(displayType);
   const tmp = createCacheKey();
-  let num = require(14045) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
+  let num = require(14044) /* useActionsForDisplayType */.useFormattedTotalForDisplayType(displayType);
   let str = "text-muted";
   if (actionTotalsForDisplayType > 0) {
     str = "text-brand";
   }
-  const obj2 = require(14045) /* useActionsForDisplayType */;
+  const obj2 = require(14044) /* useActionsForDisplayType */;
   const activityTypeTextConfigs = require(6961) /* getEmptyActivityFormatter */.getActivityTypeTextConfigs();
   const value = activityTypeTextConfigs.get(displayType);
   let tooltipHeaderResult;

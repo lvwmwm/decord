@@ -1,9 +1,9 @@
-// Module ID: 14603
-// Function ID: 14604
+// Module ID: 14602
+// Function ID: 14603
 // Name: route
-// Dependencies: [32, 19, 676, 1369, 21, 14604, 1358, 5931, 10361, 1236, 14605, 7582, 14607, 2]
+// Dependencies: [32, 19, 676, 1369, 21, 14603, 1358, 5931, 10361, 1236, 14604, 7582, 14606, 2]
 
-// Module 14603 (route)
+// Module 14602 (route)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -21,7 +21,7 @@ createToggle = {
   useTrailing: function useAppIconSettingTrailing() {
     const obj = { dismissibleContent: null, newPremiumStyle: true };
     obj[0] = require(1358) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE;
-    return jsx(importDefault(14604), { dismissibleContent: null, newPremiumStyle: true });
+    return jsx(importDefault(14603), { dismissibleContent: null, newPremiumStyle: true });
   },
   usePreNavigationAction: function useAppIconSettingPreNavigationAction() {
     const items = [first(1358).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE];
@@ -44,7 +44,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14607).default;
+    return require(14606).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

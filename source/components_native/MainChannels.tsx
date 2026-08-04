@@ -1,9 +1,9 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15046
+// Function ID: 15047
 // Name: LeftPanelContent
-// Dependencies: [32, 19, 17, 676, 21, 15048, 5273, 4285, 712, 4139, 1581, 15049, 15050, 15051, 15132, 15278, 4146, 15054, 15358, 4142, 10917, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15047, 5273, 4285, 712, 4139, 1581, 15048, 15049, 15050, 15131, 15277, 4146, 15053, 15357, 4142, 10917, 2]
 
-// Module 15047 (LeftPanelContent)
+// Module 15046 (LeftPanelContent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "MobileHomeDrawerExperiment";
 import get_ActivityIndicator from "context";
@@ -96,14 +96,14 @@ function LeftPanelHomeDrawerContainer() {
   let gesture;
   let homeDrawerContext;
   let panelStyles;
-  let obj = require(15054) /* context */;
+  let obj = require(15053) /* context */;
   const homeGesture = obj.useHomeGesture();
   ({ gesture, panelStyles, homeDrawerContext } = homeGesture);
   obj = { value: homeDrawerContext, children: null };
   obj = { gesture, children: null };
   obj[1] = callback2(LeftPanelContent, { panelStyles });
-  obj[1] = callback2(require(15358) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
-  return callback2(require(15054) /* context */.HomeDrawerStateContext.Provider, obj);
+  obj[1] = callback2(require(15357) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
+  return callback2(require(15053) /* context */.HomeDrawerStateContext.Provider, obj);
 }
 let c4 = importAllResult;
 ({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);

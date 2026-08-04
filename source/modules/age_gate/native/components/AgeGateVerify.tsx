@@ -1,10 +1,10 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16248
+// Function ID: 16249
 // Name: AgeGateVerify
 // Dependencies: [19, 17, 21, 4285, 712, 4498, 4500, 5272, 5936, 4281, 4695, 7720, 7722, 2]
 // Exports: default
 
-// Module 16249 (AgeGateVerify)
+// Module 16248 (AgeGateVerify)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

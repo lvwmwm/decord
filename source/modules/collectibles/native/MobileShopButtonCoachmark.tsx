@@ -1,10 +1,10 @@
-// Module ID: 15745
-// Function ID: 15746
+// Module ID: 15744
+// Function ID: 15745
 // Name: MobileShopButtonCoachmark
 // Dependencies: [19, 17, 1369, 21, 4285, 712, 1236, 8575, 2]
 // Exports: default
 
-// Module 15745 (MobileShopButtonCoachmark)
+// Module 15744 (MobileShopButtonCoachmark)
 import noop from "noop";
 import { Image } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

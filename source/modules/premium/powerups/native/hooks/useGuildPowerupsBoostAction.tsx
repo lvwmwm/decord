@@ -1,10 +1,10 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15179
+// Function ID: 15180
 // Name: useGuildPowerupsBoostAction
 // Dependencies: [5, 19, 4178, 4173, 676, 11809, 5610, 6792, 4181, 4177, 5118, 6774, 2]
 // Exports: default
 
-// Module 15180 (useGuildPowerupsBoostAction)
+// Module 15179 (useGuildPowerupsBoostAction)
 import useGuildBoostPurchaseHandler from "useGuildBoostPurchaseHandler";
 import noop from "noop";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";

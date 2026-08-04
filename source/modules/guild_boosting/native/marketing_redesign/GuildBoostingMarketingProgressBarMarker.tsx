@@ -1,10 +1,10 @@
-// Module ID: 12762
-// Function ID: 12763
+// Module ID: 12761
+// Function ID: 12762
 // Name: ProgressBarMarkerInnerContent
-// Dependencies: [19, 17, 676, 21, 12763, 12764, 12765, 4285, 712, 4221, 4146, 4694, 11856, 4129, 4131, 10951, 4281, 4177, 2]
+// Dependencies: [19, 17, 676, 21, 12762, 12763, 12764, 4285, 712, 4221, 4146, 4694, 11855, 4129, 4131, 10951, 4281, 4177, 2]
 // Exports: default
 
-// Module 12762 (ProgressBarMarkerInnerContent)
+// Module 12761 (ProgressBarMarkerInnerContent)
 import noop from "noop";
 import get_ActivityIndicator from "getGuildTierFromGuild";
 import { BoostedGuildTiers } from "ME";
@@ -101,7 +101,7 @@ function ProgressBarMarkerInnerContent(arg0) {
     const tmp14 = closure_4;
     const tmp15 = closure_7;
   } else if (isDisabled) {
-    let tmp18Result = tmp18(tmp3(11856).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+    let tmp18Result = tmp18(tmp3(11855).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
   } else {
     obj1 = { source: null, style: null };
     obj1[0] = obj[tier];

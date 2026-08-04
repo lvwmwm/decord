@@ -1,10 +1,10 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 16815
+// Function ID: 16816
 // Name: StreamFullAlert
-// Dependencies: [19, 17, 21, 9091, 1236, 4713, 4281, 16817, 2]
+// Dependencies: [19, 17, 21, 9091, 1236, 4713, 4281, 16816, 2]
 // Exports: default
 
-// Module 16816 (StreamFullAlert)
+// Module 16815 (StreamFullAlert)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export default function StreamFullAlert(arg0) {
   const items = [callback(require(4281) /* Text */.Text, obj), callback(require(4281) /* Text */.Text, { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult }), ];
   const obj1 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_6.body, children: formatToPlainStringResult };
   const tmp6 = importDefault(4713);
-  items[2] = callback(Image, { source: importDefault(16817), style: closure_6.image });
+  items[2] = callback(Image, { source: importDefault(16816), style: closure_6.image });
   obj.children = items;
   return callback2(tmp6, obj);
 };

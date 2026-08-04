@@ -1,10 +1,10 @@
-// Module ID: 12403
-// Function ID: 12404
+// Module ID: 12402
+// Function ID: 12403
 // Name: _sendGuildInvite
-// Dependencies: [5, 19, 1932, 4206, 1942, 1862, 3913, 5122, 1874, 12404, 7116, 676, 698, 4253, 12405, 1959, 5197, 589, 3998, 1236, 7679, 8989, 9051, 2]
+// Dependencies: [5, 19, 1932, 4206, 1942, 1862, 3913, 5122, 1874, 12403, 7116, 676, 698, 4253, 12404, 1959, 5197, 589, 3998, 1236, 7679, 8989, 9051, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12403 (_sendGuildInvite)
+// Module 12402 (_sendGuildInvite)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getSystemLocale from "getSystemLocale";
 import comparator from "comparator";
@@ -146,7 +146,7 @@ export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id
   obj.track(constants.OPEN_POPOUT, obj);
   const obj3 = importDefault(4253);
   obj = { recipientId: id, source: newestAnalyticsLocation };
-  obj3.openLazy(require(1959) /* asyncRequireImpl */(12405, dependencyMap.paths), "invite-to-guilds-" + id, obj);
+  obj3.openLazy(require(1959) /* asyncRequireImpl */(12404, dependencyMap.paths), "invite-to-guilds-" + id, obj);
 };
 export const useServerInviteRows = function useServerInviteRows(id, query) {
   const _require = id;

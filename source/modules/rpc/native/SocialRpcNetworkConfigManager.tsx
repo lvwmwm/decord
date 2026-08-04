@@ -1,9 +1,9 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 16781
+// Function ID: 16782
 // Name: updateSocialRpcNetworkConfig
 // Dependencies: [17, 1946, 1218, 698, 530, 5229, 500, 2]
 
-// Module 16782 (updateSocialRpcNetworkConfig)
+// Module 16781 (updateSocialRpcNetworkConfig)
 import { NativeModules } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";

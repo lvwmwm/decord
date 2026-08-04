@@ -1,9 +1,9 @@
-// Module ID: 12461
-// Function ID: 12462
+// Module ID: 12460
+// Function ID: 12461
 // Name: GuildChannelMemberCount
-// Dependencies: [32, 19, 17, 12462, 4960, 1376, 5806, 1372, 4206, 1862, 3922, 1874, 676, 1369, 21, 3989, 712, 589, 12456, 5659, 8601, 1236, 4475, 12454, 5931, 1358, 1945, 4745, 8575, 1348, 9822, 12450, 2]
+// Dependencies: [32, 19, 17, 12461, 4960, 1376, 5806, 1372, 4206, 1862, 3922, 1874, 676, 1369, 21, 3989, 712, 589, 12455, 5659, 8601, 1236, 4475, 12453, 5931, 1358, 1945, 4745, 8575, 1348, 9822, 12449, 2]
 
-// Module 12461 (GuildChannelMemberCount)
+// Module 12460 (GuildChannelMemberCount)
 import set from "set";
 import importAllResult from "ICON_SIZE";
 import { View } from "initialize";
@@ -88,7 +88,7 @@ function GuildChannelMemberCount(channel) {
     const count = outer1_6.requestCount(channel.guild_id, channel.id);
   }, items1);
   if (null == total) {
-    const tmpResult = tmp(12456);
+    const tmpResult = tmp(12455);
     return tmpResult.renderMemberCountText(online, total, flag, tmp(5659).ICON_SIZE[token]);
   }
 }

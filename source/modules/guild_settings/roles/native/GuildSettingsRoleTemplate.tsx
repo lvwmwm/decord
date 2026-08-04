@@ -1,10 +1,10 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16573
+// Function ID: 16574
 // Name: width
-// Dependencies: [32, 19, 17, 4277, 1862, 16570, 676, 21, 4285, 712, 7562, 698, 4479, 7799, 4812, 4281, 13340, 1297, 10951, 4695, 1236, 2]
+// Dependencies: [32, 19, 17, 4277, 1862, 16569, 676, 21, 4285, 712, 7562, 698, 4479, 7799, 4812, 4281, 13339, 1297, 10951, 4695, 1236, 2]
 // Exports: default
 
-// Module 16574 (width)
+// Module 16573 (width)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Button";
@@ -273,7 +273,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   obj3[10] = first1;
   obj3[11] = tmp.carousel;
   obj3[12] = !tmp10;
-  items1[1] = tmp14(importDefault(13340), obj3);
+  items1[1] = tmp14(importDefault(13339), obj3);
   obj[2] = items1;
   return tmp12(tmp13, obj);
 };

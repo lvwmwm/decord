@@ -1,10 +1,10 @@
-// Module ID: 12727
-// Function ID: 12728
+// Module ID: 12726
+// Function ID: 12727
 // Name: getViewerProductId
 // Dependencies: [19, 6797, 5767, 1876, 6780, 5770, 500, 5764, 3946, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12727 (getViewerProductId)
+// Module 12726 (getViewerProductId)
 import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 import updateProduct from "updateProduct";

@@ -1,10 +1,10 @@
-// Module ID: 15717
-// Function ID: 15718
+// Module ID: 15716
+// Function ID: 15717
 // Name: handleFindFriends
-// Dependencies: [32, 5, 19, 17, 7039, 3922, 1874, 11967, 676, 11946, 21, 4285, 712, 11944, 7679, 3985, 1236, 7138, 11948, 500, 5610, 5630, 4711, 698, 8705, 647, 12, 4124, 15077, 5616, 4814, 9010, 5732, 9545, 5315, 3987, 4799, 15718, 15719, 15721, 15722, 2]
+// Dependencies: [32, 5, 19, 17, 7039, 3922, 1874, 11966, 676, 11945, 21, 4285, 712, 11943, 7679, 3985, 1236, 7138, 11947, 500, 5610, 5630, 4711, 698, 8705, 647, 12, 4124, 15076, 5616, 4814, 9010, 5732, 9545, 5315, 3987, 4799, 15717, 15718, 15720, 15721, 2]
 // Exports: default
 
-// Module 15717 (handleFindFriends)
+// Module 15716 (handleFindFriends)
 import ActivityIndicator from "ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
 import set from "set";
@@ -28,7 +28,7 @@ let error;
 let map1;
 const require = arg1;
 function handleFindFriends() {
-  require(11944) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
+  require(11943) /* handleNameInputScreenOrSuggestions */.openContactSyncModal({}, constants.FRIENDS_ADD_FRIENDS_MODAL);
 }
 function handleShare() {
   const self = this;

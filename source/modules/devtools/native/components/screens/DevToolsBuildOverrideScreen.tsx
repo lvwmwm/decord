@@ -1,9 +1,9 @@
-// Module ID: 13757
-// Function ID: 13758
+// Module ID: 13756
+// Function ID: 13757
 // Name: jsx
-// Dependencies: [32, 19, 17, 10322, 21, 4285, 712, 7651, 13758, 5310, 589, 11100, 4693, 5649, 5315, 4233, 5638, 3985, 13755, 4244, 7795, 7794, 7713, 4695, 1351, 2]
+// Dependencies: [32, 19, 17, 10322, 21, 4285, 712, 7651, 13757, 5310, 589, 11100, 4693, 5649, 5315, 4233, 5638, 3985, 13754, 4244, 7795, 7794, 7713, 4695, 1351, 2]
 
-// Module 13757 (jsx)
+// Module 13756 (jsx)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TrashIcon";
 import { ScrollView } from "presentAddedFriendToast";
@@ -66,7 +66,7 @@ const memoResult = importAllResult.memo(() => {
     };
     const items1 = [tmp7(tmp3(5315).TableRow, obj1), , ];
     let obj3 = { icon: null, label: "Refresh Override", onPress: null, arrow: true };
-    obj3[0] = tmp7(tmp3(13755).RefreshIcon, {});
+    obj3[0] = tmp7(tmp3(13754).RefreshIcon, {});
     obj3[2] = tmp3(11100).refreshBuildOverride;
     items1[1] = tmp7(tmp3(5315).TableRow, obj3);
     const obj4 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };

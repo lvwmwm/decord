@@ -66,7 +66,7 @@ function _queryCache() {
   return applyArgumentsResult;
 }
 let c6 = 1;
-let closure_8 = { uri: "Array", width: "call", height: "alignItems" };
+let closure_8 = { uri: "Array", width: "call", height: "format" };
 function _BaseImage(arg0) {
   let accessibilityLabel;
   let accessibilityLabelledBy;
@@ -278,14 +278,14 @@ if (null != set) {
   resultResult = set(_BaseImage);
 }
 resultResult.displayName = "Image";
-resultResult.getSize = function getSize(arg0, arg1, arg2) {
+resultResult.getSize = function getSize(arg0, fn) {
   let closure_0 = arg0;
-  const importDefault = arg1;
+  const importDefault = fn;
   const size = importDefault(329).getSize(arg0);
-  if (typeof arg1 === "three_button_mouse") {
+  if (typeof fn !== "function") {
     return size;
   } else {
-    let fn = arg2;
+    fn = arg2;
     if (!arg2) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);
@@ -295,14 +295,14 @@ resultResult.getSize = function getSize(arg0, arg1, arg2) {
   }
   const obj = importDefault(329);
 };
-resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1) {
+resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn) {
   let closure_0 = arg0;
-  const importDefault = arg2;
+  const importDefault = fn;
   const sizeWithHeaders = importDefault(329).getSizeWithHeaders(arg0, arg1);
-  if (typeof arg2 === "three_button_mouse") {
+  if (typeof fn !== "function") {
     return sizeWithHeaders;
   } else {
-    let fn = arg3;
+    fn = arg3;
     if (!arg3) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);

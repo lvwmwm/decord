@@ -1,10 +1,10 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15351
+// Function ID: 15352
 // Name: useIsFavoritesGuildVisible
 // Dependencies: [4102, 1375, 1865, 9636, 9629, 9635, 589, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 15352 (useIsFavoritesGuildVisible)
+// Module 15351 (useIsFavoritesGuildVisible)
 import handleConnectionOpen from "handleConnectionOpen";
 import initializeFromUserSettings from "initializeFromUserSettings";
 

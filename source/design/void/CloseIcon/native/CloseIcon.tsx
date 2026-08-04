@@ -1,10 +1,10 @@
-// Module ID: 13248
-// Function ID: 13249
+// Module ID: 13247
+// Function ID: 13248
 // Name: Close
 // Dependencies: [19, 21, 8437, 2]
 // Exports: default
 
-// Module 13248 (Close)
+// Module 13247 (Close)
 import "noop";
 import { jsx } from "jsxProd";
 

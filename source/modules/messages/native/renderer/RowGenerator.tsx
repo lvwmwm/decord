@@ -1,7 +1,7 @@
 // Module ID: 7851
 // Function ID: 7852
 // Name: setOptions
-// Dependencies: [1302, 7852, 7853, 12, 7854, 7856, 12545, 12546, 1351, 2]
+// Dependencies: [1302, 7852, 7853, 12, 7854, 7856, 12544, 12545, 1351, 2]
 
 // Module 7851 (setOptions)
 import handleThemeChange from "handleThemeChange";
@@ -47,11 +47,11 @@ prototype["generate"] = function generate(rowType) {
                     require(1351) /* isDiscordFrontendDevelopment */.assertNever(rowType);
                   }
                 }
-                return require(12546) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
+                return require(12545) /* generateLoadingRowData */.generateLoadingRowData(rowType, theme);
               }
             }
           }
-          return require(12545) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
+          return require(12544) /* generateSeparatorRowData */.generateSeparatorRowData(rowType, theme);
         }
       }
     }

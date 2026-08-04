@@ -1,10 +1,10 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12661
+// Function ID: 12662
 // Name: BetaPill
-// Dependencies: [17, 6805, 21, 4285, 712, 4281, 1236, 12663, 1297, 4706, 4129, 8436, 2]
+// Dependencies: [17, 6805, 21, 4285, 712, 4281, 1236, 12662, 1297, 4706, 4129, 8436, 2]
 // Exports: default
 
-// Module 12662 (BetaPill)
+// Module 12661 (BetaPill)
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(12663)(premiumGroupRole, false);
+  const tmp4 = importDefault(12662)(premiumGroupRole, false);
   if (null == tmp4) {
     return null;
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 16051
-// Function ID: 16052
+// Module ID: 16050
+// Function ID: 16051
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4356, 4301, 4303, 21, 11557, 9101, 647, 10794, 4381, 10743, 15238, 16002, 3986, 7716, 712, 1236, 2]
+// Dependencies: [19, 4356, 4301, 4303, 21, 11557, 9101, 647, 10794, 4381, 10743, 15237, 16001, 3986, 7716, 712, 1236, 2]
 // Exports: default
 
-// Module 16051 (useVoicePanelCardUserStateIcons)
+// Module 16050 (useVoicePanelCardUserStateIcons)
 import noop from "noop";
 import createRTCConnection from "createRTCConnection";
 import updateVoiceState from "updateVoiceState";
@@ -74,7 +74,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
     showTileVolumeIndicator = arg0 === tmp5.STREAM;
   }
   const tmp4Result1 = _require(647);
-  isRTCDisconnectedUIVisible = _require(15238).useIsRTCDisconnectedUIVisible(tmp, id);
+  isRTCDisconnectedUIVisible = _require(15237).useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {
 

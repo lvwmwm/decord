@@ -1,10 +1,10 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 16559
+// Function ID: 16560
 // Name: getFirstChannelOfType
 // Dependencies: [1376, 676, 11697, 5223, 2]
 // Exports: areTypesInSameSection, getDnDUpdates, getDropData
 
-// Module 16560 (getFirstChannelOfType)
+// Module 16559 (getFirstChannelOfType)
 import createChannelRecord from "createChannelRecord";
 import { ChannelTypes } from "ME";
 

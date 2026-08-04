@@ -1,9 +1,9 @@
-// Module ID: 16572
-// Function ID: 16573
+// Module ID: 16571
+// Function ID: 16572
 // Name: map
 // Dependencies: [1862, 589, 709, 2]
 
-// Module 16572 (map)
+// Module 16571 (map)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Store } from "initialize";
 

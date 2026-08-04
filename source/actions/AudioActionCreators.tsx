@@ -95,10 +95,10 @@ obj = {
         flag2 = true;
       }
       const _location = obj.location;
-      if (typeof isNotSupported !== "find") {
+      if (typeof isNotSupported !== "function") {
         HermesBuiltin.throwTypeError();
       }
-      if (typeof trackToggleSelfMute !== "find") {
+      if (typeof trackToggleSelfMute !== "function") {
         HermesBuiltin.throwTypeError();
       }
       if (flag2) {
@@ -131,7 +131,7 @@ obj = {
     if (arg2 === undefined) {
       flag = true;
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     if (flag) {
@@ -149,7 +149,7 @@ obj = {
     importDefault(709).dispatch(obj);
   },
   setTemporarySelfMute(mute) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const currentUser = authStore.getCurrentUser();
@@ -178,10 +178,10 @@ obj = {
     }
     if (obj.usedKeybind !== undefined) {
       const _location = obj.location;
-      if (typeof isNotSupported !== "find") {
+      if (typeof isNotSupported !== "function") {
         HermesBuiltin.throwTypeError();
       }
-      if (typeof trackToggleSelfDeaf !== "find") {
+      if (typeof trackToggleSelfDeaf !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = { type: "AUDIO_TOGGLE_SELF_DEAF", context: null, syncRemote: null };
@@ -195,7 +195,7 @@ obj = {
     if (closure_1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -223,7 +223,7 @@ obj = {
     if (arg4 === undefined) {
       flag2 = false;
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -250,7 +250,7 @@ obj = {
     obj.dispatch(obj);
   },
   setSpatialAudio(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const audioMixerSettings = store2.getAudioMixerSettings();
@@ -285,7 +285,7 @@ obj = {
       obj = {};
     }
     const analyticsLocations = obj.analyticsLocations;
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj2 = store2;
@@ -363,7 +363,7 @@ obj = {
     }
   },
   setBypassSystemInputProcessing(bypassEnabled, location) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -375,7 +375,7 @@ obj = {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     obj = { type: "AUDIO_SET_INPUT_VOLUME", volume };
@@ -400,7 +400,7 @@ obj = {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     obj = { type: "AUDIO_SET_OUTPUT_VOLUME", volume };
@@ -428,7 +428,7 @@ obj = {
       obj = {};
     }
     ({ location: _location, analyticsLocations } = obj);
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const inputDeviceId = store2.getInputDeviceId();
@@ -449,7 +449,7 @@ obj = {
       obj = {};
     }
     ({ location: _location, analyticsLocations } = obj);
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const outputDeviceId = store2.getOutputDeviceId();
@@ -470,7 +470,7 @@ obj = {
       obj = {};
     }
     ({ location: _location, analyticsLocations } = obj);
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const videoDeviceId = store2.getVideoDeviceId();
@@ -488,7 +488,7 @@ obj = {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const activeInputProfile = store2.getActiveInputProfile();
@@ -499,7 +499,7 @@ obj = {
     importDefault(709).dispatch(obj);
   },
   setEchoCancellation(enabled, location) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -511,7 +511,7 @@ obj = {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("stream_attenuation_enabled", enabled, store2.getSidechainCompression(), obj.analyticsLocations);
@@ -524,7 +524,7 @@ obj = {
     if (arg1 === undefined) {
       obj = {};
     }
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("stream_attenuation_strength", strength, store2.getSidechainCompressionStrength(), obj.analyticsLocations);
@@ -533,7 +533,7 @@ obj = {
     importDefault(709).dispatch(obj);
   },
   setLoopback(loopbackReason, enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -541,7 +541,7 @@ obj = {
     obj.dispatch(obj);
   },
   setNoiseSuppression(enabled, location) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -549,7 +549,7 @@ obj = {
     obj.dispatch(obj);
   },
   setNoiseCancellation(enabled, location) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -559,7 +559,7 @@ obj = {
     importDefault(709).dispatch(obj);
   },
   setAutomaticGainControl(enabled, location) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -567,7 +567,7 @@ obj = {
     obj.dispatch(obj);
   },
   setAttenuation(attenuation, attenuateWhileSpeakingSelf, attenuateWhileSpeakingOthers) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     attenuation = store2.getAttenuation();
@@ -585,7 +585,7 @@ obj = {
     obj.dispatch(obj);
   },
   setQoS(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("quality_of_service_packets_enabled", enabled, store2.getQoS());
@@ -594,13 +594,13 @@ obj = {
     obj.dispatch(obj);
   },
   reset() {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(709).dispatch({ type: "AUDIO_RESET" });
   },
   setSilenceWarning(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("silence_warning_enabled", enabled, store2.getEnableSilenceWarning());
@@ -669,7 +669,7 @@ obj = {
     })();
   },
   setVideoHook(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("video_hook_enabled", enabled, store2.getVideoHook());
@@ -678,7 +678,7 @@ obj = {
     obj.dispatch(obj);
   },
   setExperimentalSoundshare(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("experimental_soundshare_enabled", enabled, store2.getExperimentalSoundshare());
@@ -687,7 +687,7 @@ obj = {
     obj.dispatch(obj);
   },
   setUseSystemScreensharePicker(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("system_screenshare_picker_enabled", enabled, store2.getUseSystemScreensharePicker());
@@ -782,7 +782,7 @@ obj = {
     importDefault(709).dispatch(obj);
   },
   setAecDump(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(9081)("diagnostic_audio_recording_enabled", enabled, store2.getAecDump());
@@ -791,13 +791,13 @@ obj = {
     obj.dispatch(obj);
   },
   interact() {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     importDefault(709).dispatch({ type: "MEDIA_ENGINE_INTERACTION_REQUIRED", required: false });
   },
   setEnableHardwareMuteNotice(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -805,7 +805,7 @@ obj = {
     obj.dispatch(obj);
   },
   setKrispSuppressionLevel(level) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -813,7 +813,7 @@ obj = {
     obj.dispatch(obj);
   },
   setKrispModelOverride(model) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);
@@ -826,12 +826,12 @@ obj = {
     }
   },
   setNoiseCancellationEnableStats(arg0) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
   },
   setOpenH264Enabled(enabled) {
-    if (typeof isNotSupported !== "find") {
+    if (typeof isNotSupported !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = importDefault(709);

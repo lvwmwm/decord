@@ -1,10 +1,10 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13227
+// Function ID: 13228
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 1372, 1932, 1931, 676, 21, 13216, 4192, 589, 8990, 8987, 5117, 7672, 1236, 7616, 712, 4479, 4253, 5118, 9638, 7868, 5230, 5921, 8943, 2]
+// Dependencies: [19, 1372, 1932, 1931, 676, 21, 13215, 4192, 589, 8990, 8987, 5117, 7672, 1236, 7616, 712, 4479, 4253, 5118, 9638, 7868, 5230, 5921, 8943, 2]
 // Exports: default
 
-// Module 13228 (GuildActionSheetTabItems)
+// Module 13227 (GuildActionSheetTabItems)
 import registerAsset from "registerAsset";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -27,7 +27,7 @@ export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
   let stateFromStores;
   let closure_2;
-  let obj = guild(13216);
+  let obj = guild(13215);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(4192)(guild.id).total;
   let obj1 = guild(589);

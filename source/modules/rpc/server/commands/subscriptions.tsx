@@ -1,8 +1,8 @@
-// Module ID: 13674
-// Function ID: 13675
-// Dependencies: [5, 676, 10543, 13675, 698, 13676, 2]
+// Module ID: 13673
+// Function ID: 13674
+// Dependencies: [5, 676, 10543, 13674, 698, 13675, 2]
 
-// Module 13674
+// Module 13673
 import getInitialSubscriptionPayload from "getInitialSubscriptionPayload";
 import ME from "ME";
 
@@ -59,10 +59,10 @@ let obj = {
                 let tmp35 = outer1_1(10543);
                 tmp35 = new tmp35(obj1, "Invalid event: " + dependencyMap);
                 throw tmp35;
-              } else if (outer1_1(13675)(outer1_1.authorization.scopes, tmp67.scope)) {
+              } else if (outer1_1(13674)(outer1_1.authorization.scopes, tmp67.scope)) {
                 const obj2 = { event: null, scope: null, application_id: null, socket_scope: null };
                 obj2[0] = dependencyMap;
-                if (typeof tmp67.scope === "ay") {
+                if (typeof tmp67.scope === "object") {
                   const _JSON = JSON;
                   let scope = JSON.stringify(tmp67.scope);
                 } else {
@@ -110,7 +110,7 @@ let obj = {
           obj6[0] = initialSubscriptionPayload;
           obj6[1] = closure_1;
           closure_2 = c0.handler(obj6);
-          obj5 = outer1_0(13676);
+          obj5 = outer1_0(13675);
           initialSubscriptionPayload = obj5.getInitialSubscriptionPayload(closure_1, closure_2, initialSubscriptionPayload);
           const promise = new Promise((arg0) => {
             setImmediate(() => {

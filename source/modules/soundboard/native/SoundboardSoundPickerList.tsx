@@ -1,9 +1,9 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16014
+// Function ID: 16015
 // Name: getSectionLabel
-// Dependencies: [19, 17, 1874, 16010, 21, 4285, 712, 4737, 1236, 8674, 589, 3931, 8605, 8628, 16016, 4701, 12, 5661, 1297, 16022, 9876, 4249, 8627, 7818, 4281, 2]
+// Dependencies: [19, 17, 1874, 16009, 21, 4285, 712, 4737, 1236, 8674, 589, 3931, 8605, 8628, 16015, 4701, 12, 5661, 1297, 16021, 9876, 4249, 8627, 7818, 4281, 2]
 
-// Module 16015 (getSectionLabel)
+// Module 16014 (getSectionLabel)
 import importAllResult from "registerAsset";
 import { View } from "GuildIconSizes";
 import mergeGuildAvatar from "mergeGuildAvatar";

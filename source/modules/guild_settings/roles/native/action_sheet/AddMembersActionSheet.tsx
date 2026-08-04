@@ -1,10 +1,10 @@
-// Module ID: 16576
-// Function ID: 16577
+// Module ID: 16575
+// Function ID: 16576
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 17, 16570, 21, 4285, 712, 4003, 9614, 7779, 5310, 4273, 1297, 3998, 1236, 7666, 8931, 5199, 16575, 11, 8936, 5835, 5338, 5337, 4695, 8943, 4253, 4281, 2]
+// Dependencies: [109, 32, 19, 17, 16569, 21, 4285, 712, 4003, 9614, 7779, 5310, 4273, 1297, 3998, 1236, 7666, 8931, 5199, 16574, 11, 8936, 5835, 5338, 5337, 4695, 8943, 4253, 4281, 2]
 // Exports: default
 
-// Module 16576 (_toPropertyKey)
+// Module 16575 (_toPropertyKey)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import ADD_MEMBER_QUERY_LIMIT from "ADD_MEMBER_QUERY_LIMIT";
@@ -17,33 +17,33 @@ let c10;
 let c9;
 let metroImportAll;
 const require = arg1;
-function _toPropertyKey(arg0) {
-  let StringResult = arg0;
-  if (typeof arg0 !== "window") {
-    StringResult = arg0;
-    if (arg0) {
+function _toPropertyKey(obj) {
+  let StringResult = obj;
+  if (typeof obj === "object") {
+    StringResult = obj;
+    if (obj) {
       const _Symbol = Symbol;
-      if (undefined !== arg0[Symbol.toPrimitive]) {
+      if (undefined !== obj[Symbol.toPrimitive]) {
         const call = tmp3.call;
         if (typeof call === "unknown") {
           let callResult = tmp3("string");
         } else {
-          callResult = call(arg0, "string");
+          callResult = call(obj, "string");
         }
         StringResult = callResult;
-        if (typeof callResult !== "window") {
+        if (typeof callResult === "object") {
           const _TypeError = TypeError;
           const typeError = new TypeError("@@toPrimitive must return a primitive value.");
           throw typeError;
         }
       } else {
         const _String = String;
-        StringResult = String(arg0);
+        StringResult = String(obj);
       }
     }
   }
   let text = StringResult;
-  if (typeof StringResult !== "e") {
+  if (typeof StringResult !== "symbol") {
     text = `${tmp}`;
   }
   return text;

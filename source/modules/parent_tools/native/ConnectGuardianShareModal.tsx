@@ -1,10 +1,10 @@
-// Module ID: 16418
-// Function ID: 16419
+// Module ID: 16417
+// Function ID: 16418
 // Name: ConnectGuardianShareScreen
-// Dependencies: [19, 17, 6905, 21, 4285, 712, 1236, 2285, 3985, 4490, 11236, 647, 14031, 7757, 7758, 4693, 4281, 14032, 5732, 5238, 11248, 2]
+// Dependencies: [19, 17, 6905, 21, 4285, 712, 1236, 2285, 3985, 4490, 11236, 647, 14030, 7757, 7758, 4693, 4281, 14031, 5732, 5238, 11248, 2]
 // Exports: default
 
-// Module 16418 (ConnectGuardianShareScreen)
+// Module 16417 (ConnectGuardianShareScreen)
 import HeaderBackImage from "HeaderBackImage";
 import { View } from "ConnectGuardianCard";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -35,7 +35,7 @@ function ConnectGuardianShareScreen() {
   const effect = React.useEffect(() => {
     getLinkCode();
   }, []);
-  importDefault(14031)(importDefault(4490).pop);
+  importDefault(14030)(importDefault(4490).pop);
   obj = { spacing: null, children: null };
   obj[0] = importDefault(712).space.PX_40;
   obj = { spacing: null, children: null };
@@ -63,7 +63,7 @@ function ConnectGuardianShareScreen() {
       obj5[1] = stateFromStores;
       obj5[2] = stateFromStores1;
       obj5[3] = getLinkCode;
-      let tmp11Result = tmp11(tmp2(14032).ConnectGuardianCard, obj5);
+      let tmp11Result = tmp11(tmp2(14031).ConnectGuardianCard, obj5);
     }
     const obj6 = { children: null };
     const obj7 = { children: null };
@@ -75,7 +75,7 @@ function ConnectGuardianShareScreen() {
     obj6[0] = tmp11(getLinkCode(7758).ModalContent, obj7);
     return tmp11(getLinkCode(7757).ModalScreen, obj6);
   }
-  const tmp9 = importDefault(14031);
+  const tmp9 = importDefault(14030);
   tmp11Result = tmp11(View, { style: tmp.loading, children: callback(getLinkCode(5732).ActivityIndicator, {}) });
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);

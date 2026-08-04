@@ -1,10 +1,10 @@
-// Module ID: 15750
-// Function ID: 15751
+// Module ID: 15749
+// Function ID: 15750
 // Name: CoachmarkImage
 // Dependencies: [19, 17, 1874, 1369, 21, 4285, 712, 589, 3931, 1236, 2643, 8575, 5936, 1297, 2]
 // Exports: default
 
-// Module 15750 (CoachmarkImage)
+// Module 15749 (CoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

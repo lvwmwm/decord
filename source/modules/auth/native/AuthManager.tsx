@@ -1,9 +1,9 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15028
+// Function ID: 15029
 // Name: _initialize
-// Dependencies: [5, 17, 11690, 676, 4497, 11973, 4463, 709, 1368, 15030, 500, 11693, 8987, 12014, 11972, 5866, 7139, 2]
+// Dependencies: [5, 17, 11690, 676, 4497, 11972, 4463, 709, 1368, 15029, 500, 11693, 8987, 12013, 11971, 5866, 7139, 2]
 
-// Module 15029 (_initialize)
+// Module 15028 (_initialize)
 import NewUserTypes from "NewUserTypes";
 import get_ActivityIndicator from "set";
 import { PermissionStateType } from "set";
@@ -21,15 +21,15 @@ let c11 = null;
 class AuthManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f110841 = applyArgumentsResult;
+    f110837 = applyArgumentsResult;
     applyArgumentsResult.handleRegister = function handleRegister() {
       const REGISTER = constants2.REGISTER;
     };
     applyArgumentsResult.handleLogin = function handleLogin() {
       const LOGIN = constants2.LOGIN;
     };
-    f110841 = undefined;
-    f110841 = NewUserTypes((arg0) => {
+    f110837 = undefined;
+    f110837 = NewUserTypes((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -117,10 +117,10 @@ class AuthManager extends tmp3 {
     };
     applyArgumentsResult.handleRegisterComplete = function handleRegisterComplete() {
       if (!obj.hasDeferredInvite()) {
-        let tmpResult = tmp(12014);
+        let tmpResult = tmp(12013);
         tmpResult.setNewUser(constants.ORGANIC_REGISTERED);
       }
-      tmpResult = tmp(11972);
+      tmpResult = tmp(11971);
       tmpResult.startOnboarding();
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {

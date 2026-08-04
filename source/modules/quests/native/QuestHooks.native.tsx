@@ -1,10 +1,10 @@
-// Module ID: 14237
-// Function ID: 14238
+// Module ID: 14236
+// Function ID: 14237
 // Name: useIsMobileQuestDockRenderedBase
-// Dependencies: [5, 19, 3978, 4322, 7080, 5128, 10379, 505, 14238, 7095, 589, 5131, 7078, 14261, 7108, 9677, 4136, 7562, 10374, 10375, 10386, 7103, 10509, 7101, 10531, 5611, 10510, 10894, 2]
+// Dependencies: [5, 19, 3978, 4322, 7080, 5128, 10379, 505, 14237, 7095, 589, 5131, 7078, 14260, 7108, 9677, 4136, 7562, 10374, 10375, 10386, 7103, 10509, 7101, 10531, 5611, 10510, 10894, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 14237 (useIsMobileQuestDockRenderedBase)
+// Module 14236 (useIsMobileQuestDockRenderedBase)
 import closure_3 from "QuestsExperimentLocations";
 import getIsEligibleForQuests from "getIsEligibleForQuests";
 import setContent from "setContent";

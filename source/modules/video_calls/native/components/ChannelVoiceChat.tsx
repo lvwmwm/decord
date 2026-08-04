@@ -1,6 +1,6 @@
 // Module ID: 9654
 // Function ID: 9655
-// Dependencies: [19, 17, 9655, 21, 4285, 712, 9660, 1581, 9663, 12, 9659, 4221, 4814, 9664, 7669, 10230, 4812, 1236, 1297, 10966, 12038, 2]
+// Dependencies: [19, 17, 9655, 21, 4285, 712, 9660, 1581, 9663, 12, 9659, 4221, 4814, 9664, 7669, 10230, 4812, 1236, 1297, 10966, 12037, 2]
 
 // Module 9654
 import importAllResult from "registerAsset";
@@ -128,7 +128,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj6[4] = callback(id(1297).Icon, obj7);
   const items7 = [callback(id(4812).PressableOpacity, obj6), ];
   const tmp12 = guild_id(4221)();
-  items7[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(12038).ChannelTitle, { guildId: guild_id, channelId: id }) });
+  items7[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(12037).ChannelTitle, { guildId: guild_id, channelId: id }) });
   obj5[1] = items7;
   items3[4] = closure_7(View, obj5);
   obj1[2] = items3;

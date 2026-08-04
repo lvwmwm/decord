@@ -1,10 +1,10 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15085
+// Function ID: 15086
 // Name: HappeningNowItem
-// Dependencies: [19, 17, 14431, 21, 1348, 712, 4285, 3989, 8104, 15087, 2]
+// Dependencies: [19, 17, 14430, 21, 1348, 712, 4285, 3989, 8104, 15086, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 15086 (HappeningNowItem)
+// Module 15085 (HappeningNowItem)
 import { View } from "get ActivityIndicator";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { jsx } from "jsxProd";
@@ -31,7 +31,7 @@ export default require("noop").memo(function MessagesItemHappeningNow(listRef) {
   let obj = require(3989) /* map */;
   obj = { backgroundColor: null, children: null };
   obj = { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null };
-  obj[2] = jsx(importDefault(15087), { cards: set, listRef: listRef.listRef });
+  obj[2] = jsx(importDefault(15086), { cards: set, listRef: listRef.listRef });
   obj[1] = <View style={callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container} collapsable={false}>{null}</View>;
   return jsx(require(8104) /* useCutoutBackgroundColor */.CutoutBackgroundProvider, { style: callback(closure_4 + obj.useToken(importDefault(712).modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });
 });

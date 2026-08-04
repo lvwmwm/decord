@@ -1,10 +1,10 @@
-// Module ID: 16029
-// Function ID: 16030
+// Module ID: 16028
+// Function ID: 16029
 // Name: useControllerPIPState
-// Dependencies: [32, 19, 1371, 4298, 10506, 1372, 5104, 11558, 9674, 15982, 589, 3903, 8148, 8698, 16030, 635, 16031, 16032, 16034, 2]
+// Dependencies: [32, 19, 1371, 4298, 10506, 1372, 5104, 11558, 9674, 15981, 589, 3903, 8148, 8698, 16029, 635, 16030, 16031, 16033, 2]
 // Exports: useControllerPIPState
 
-// Module 16029 (useControllerPIPState)
+// Module 16028 (useControllerPIPState)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import participantFromServer from "participantFromServer";
@@ -38,7 +38,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   let first1;
   c7 = undefined;
   obj = React;
-  ref = React.useRef({ id: "dispatch", mode: "isArray", width: false, height: "Italy", containerHeight: "IT", showSecondaryPIP: "+39" });
+  ref = React.useRef({ id: "dispatch", mode: "isArray", width: false, height: "Liberia", containerHeight: "LR", showSecondaryPIP: "+231" });
   const tmp2 = first(React.useState(undefined), 2);
   first = tmp2[0];
   React = tmp2[1];
@@ -49,7 +49,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   obj = channelId;
   ref = mode;
   dependencyMap = undefined;
-  const tmp7 = ref(15982)(channelId);
+  const tmp7 = ref(15981)(channelId);
   dependencyMap = tmp7;
   let items = [participantFromServer, c7, ensureGuildLoaded];
   const items1 = [channelId, tmp7, mode];
@@ -97,7 +97,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
     }
     obj3 = connectedActivityLocation;
   }, items1);
-  const tmp10 = ref(16030)(channelId);
+  const tmp10 = ref(16029)(channelId);
   first1 = first(React.useState(() => ref(closure_2[15])((arg0) => arg0(), 1000, { leading: true })), 1)[0];
   const items2 = [first1];
   const layoutEffect = React.useLayoutEffect(() => () => getParticipants.cancel(), items2);
@@ -106,7 +106,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   [tmp14, c7] = first(React.useState(() => closure_2.getTargetDimensions(ref)), 2);
   obj = { connected, mode, focusedId, participantTargetDimensions: tmp14, selfHasVideo: tmp10, showSecondaryPIP: stateFromStores };
   const tmp13 = first(React.useState(() => closure_2.getTargetDimensions(ref)), 2);
-  ({ participant, dimensions } = ref(16031)(channelId, layoutManager, focusedId, first, obj));
+  ({ participant, dimensions } = ref(16030)(channelId, layoutManager, focusedId, first, obj));
   obj = {};
   const merged = Object.assign(ref.current);
   const merged1 = Object.assign(dimensions);
@@ -116,7 +116,7 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
   }
   obj.id = id;
   obj.showSecondaryPIP = stateFromStores;
-  let tmp8Result = tmp8(16032);
+  let tmp8Result = tmp8(16031);
   obj.mode = tmp8Result.getPIPMode({ channelId, connected, manuallyFocusedId: focusedId, mode, selfHasVideo: tmp10 });
   dependencyMap = undefined;
   tmp8Result = tmp8(8698);
@@ -184,6 +184,6 @@ export const useControllerPIPState = function useControllerPIPState(channelId) {
       });
     });
   }, items4);
-  tmp5(16034)(channelId, layoutManager, focusedId);
+  tmp5(16033)(channelId, layoutManager, focusedId);
   return obj;
 };

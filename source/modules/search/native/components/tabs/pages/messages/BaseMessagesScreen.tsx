@@ -1,10 +1,10 @@
-// Module ID: 15650
-// Function ID: 15651
+// Module ID: 15649
+// Function ID: 15650
 // Name: BaseMessagesScreen
-// Dependencies: [19, 5808, 11623, 8207, 21, 11644, 589, 11624, 15641, 15651, 11622, 15652, 15653, 15596, 15608, 2]
+// Dependencies: [19, 5808, 11623, 8207, 21, 11644, 589, 11624, 15640, 15650, 11622, 15651, 15652, 15595, 15607, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 15650 (BaseMessagesScreen)
+// Module 15649 (BaseMessagesScreen)
 import noop from "noop";
 import handleReaction from "handleReaction";
 import prototype from "prototype";

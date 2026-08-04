@@ -1,8 +1,8 @@
-// Module ID: 15305
-// Function ID: 15306
-// Dependencies: [19, 4102, 676, 21, 15306, 1348, 15292, 589, 15294, 712, 1236, 15307, 4781, 2]
+// Module ID: 15304
+// Function ID: 15305
+// Dependencies: [19, 4102, 676, 21, 15305, 1348, 15291, 589, 15293, 712, 1236, 15306, 4781, 2]
 
-// Module 15305
+// Module 15304
 import handleConnectionOpen from "handleConnectionOpen";
 import { ME } from "ME";
 import { jsx } from "jsxProd";
@@ -11,14 +11,14 @@ import importAllResult from "noop";
 const require = arg1;
 let closure_6 = {
   onPress() {
-    importDefault(15306)(ME);
+    importDefault(15305)(ME);
   }
 };
 const memoResult = require("noop").memo(function GuildsBarMessages() {
   let badge;
   let cutouts;
   const tmp3 = importDefault(1348)("GuildsBarMessages");
-  let obj = require(15292) /* UnreadIndicator */;
+  let obj = require(15291) /* UnreadIndicator */;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const items = [handleConnectionOpen];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
@@ -30,11 +30,11 @@ const memoResult = require("noop").memo(function GuildsBarMessages() {
     return tmp2;
   });
   const obj2 = require(589) /* initialize */;
-  ({ badge, cutouts } = importDefault(15294)({ mentionCount: 0 }));
+  ({ badge, cutouts } = importDefault(15293)({ mentionCount: 0 }));
   const colors = importDefault(712).colors;
-  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "text-md/normal", externalChildren: true, expandedChildren: "text-muted", children: null };
+  obj = { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "STORE_LISTING_FETCH_SUCCESS", externalChildren: null, expandedChildren: null, children: 0 };
   let tmp11 = !tmp3;
-  const tmp7 = importDefault(15294)({ mentionCount: 0 });
+  const tmp7 = importDefault(15293)({ mentionCount: 0 });
   const tmp8 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
   if (!tmp3) {
     tmp11 = !stateFromStores;
@@ -46,9 +46,9 @@ const memoResult = require("noop").memo(function GuildsBarMessages() {
   const intl = tmp4(1236).intl;
   obj[7] = intl.string(require(1236) /* getSystemLocale */.t.YUU0RF);
   obj[8] = badge;
-  obj[9] = jsx(importDefault(15307), {});
+  obj[9] = jsx(importDefault(15306), {});
   obj[10] = jsx(require(4781) /* ChatIcon */.ChatIcon, { color: tmp8 });
-  return jsx(importDefault(15292), { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "text-md/normal", externalChildren: true, expandedChildren: "text-muted", children: null });
+  return jsx(importDefault(15291), { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "STORE_LISTING_FETCH_SUCCESS", externalChildren: null, expandedChildren: null, children: 0 });
 });
 const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

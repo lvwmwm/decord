@@ -1,10 +1,10 @@
-// Module ID: 14252
-// Function ID: 14253
+// Module ID: 14251
+// Function ID: 14252
 // Name: CloseButton
-// Dependencies: [21, 5917, 7837, 14251, 1236, 5238, 14253, 5665, 2]
+// Dependencies: [21, 5917, 7837, 14250, 1236, 5238, 14252, 5665, 2]
 // Exports: default
 
-// Module 14252 (CloseButton)
+// Module 14251 (CloseButton)
 import { jsx } from "jsxProd";
 
 function CloseButton() {
@@ -28,7 +28,7 @@ export default function QuestDisclosureModal(arg0) {
   let require;
   ({ isTargetedDisclosure: require, gamePublisher: importDefault, gameTitle: dependencyMap, cosponsorName: jsx, isVideoQuest: closure_4 } = arg0);
   function onClose() {
-    return callback2(14251).hideModal();
+    return callback2(14250).hideModal();
   }
   let obj = {
     headerLeft: onClose,

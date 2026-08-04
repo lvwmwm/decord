@@ -1,10 +1,10 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15211
+// Function ID: 15212
 // Name: ProgressBar
 // Dependencies: [19, 17, 1942, 4486, 4487, 1379, 3901, 21, 4285, 712, 4706, 647, 1384, 4812, 1222, 4281, 1236, 1297, 10711, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15212 (ProgressBar)
+// Module 15211 (ProgressBar)
 import set from "set";
 import { View } from "Button";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

@@ -1,10 +1,10 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12225
+// Function ID: 12226
 // Name: VoicePanelStreamPreview
 // Dependencies: [19, 17, 4304, 1218, 21, 4146, 4695, 4285, 712, 10837, 589, 4348, 4286, 7819, 4281, 1236, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 12226 (VoicePanelStreamPreview)
+// Module 12225 (VoicePanelStreamPreview)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import reset from "reset";

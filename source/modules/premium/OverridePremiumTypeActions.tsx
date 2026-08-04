@@ -1,10 +1,10 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 14898
+// Function ID: 14899
 // Name: updateClientPremiumTypeOverride
 // Dependencies: [1874, 709, 7132, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 14899 (updateClientPremiumTypeOverride)
+// Module 14898 (updateClientPremiumTypeOverride)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 13971
+// Function ID: 13972
 // Name: handleSensitiveMediaFilterPress
-// Dependencies: [1874, 6969, 8208, 1306, 1236, 6968, 7720, 7722, 4253, 13973, 1959, 5818, 5823, 2]
+// Dependencies: [1874, 6969, 8208, 1306, 1236, 6968, 7720, 7722, 4253, 13972, 1959, 5818, 5823, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 13972 (handleSensitiveMediaFilterPress)
+// Module 13971 (handleSensitiveMediaFilterPress)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { EXPLICIT_MEDIA_SETTINGS_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY";
 import { SearchMediaTypes } from "MessageEmbedTypes";
@@ -79,7 +79,7 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
     };
     items.push(obj);
   }
-  importDefault(4253).openLazy(require(1959) /* asyncRequireImpl */(13973, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  importDefault(4253).openLazy(require(1959) /* asyncRequireImpl */(13972, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 };
 export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {

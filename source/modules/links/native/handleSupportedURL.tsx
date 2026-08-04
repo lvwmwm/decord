@@ -1,10 +1,10 @@
-// Module ID: 13105
-// Function ID: 13106
+// Module ID: 13104
+// Function ID: 13105
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7680, 6894, 6794, 12594, 1218, 676, 1379, 4349, 4497, 10650, 6906, 4268, 13106, 11191, 7892, 11944, 4490, 4137, 13107, 8705, 5925, 9251, 11105, 1844, 10327, 698, 10329, 5775, 10972, 11233, 13114, 11976, 10852, 1959, 10889, 10888, 13116, 13118, 1577, 4827, 13123, 3982, 13125, 1862, 5866, 8862, 8871, 5840, 4489, 10773, 4136, 5140, 1222, 709, 5090, 1467, 8943, 13128, 13143, 500, 13154, 8987, 13161, 4604, 13162, 6909, 5630, 9135, 7097, 5133, 11080, 9949, 13234, 5118, 10511, 9200, 9194, 4251, 2]
+// Dependencies: [109, 5, 7680, 6894, 6794, 12593, 1218, 676, 1379, 4349, 4497, 10650, 6906, 4268, 13105, 11191, 7892, 11943, 4490, 4137, 13106, 8705, 5925, 9251, 11105, 1844, 10327, 698, 10329, 5775, 10972, 11233, 13113, 11975, 10852, 1959, 10889, 10888, 13115, 13117, 1577, 4827, 13122, 3982, 13124, 1862, 5866, 8862, 8871, 5840, 4489, 10773, 4136, 5140, 1222, 709, 5090, 1467, 8943, 13127, 13142, 500, 13153, 8987, 13160, 4604, 13161, 6909, 5630, 9135, 7097, 5133, 11080, 9949, 13233, 5118, 10511, 9200, 9194, 4251, 2]
 // Exports: default
 
-// Module 13105 (handleSupportedURL)
+// Module 13104 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: false };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

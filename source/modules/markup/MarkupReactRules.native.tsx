@@ -1,7 +1,7 @@
 // Module ID: 4276
 // Function ID: 4277
 // Name: MarkupText
-// Dependencies: [19, 17, 4277, 1372, 1942, 1935, 1862, 676, 1379, 505, 21, 4280, 4281, 4285, 712, 4293, 4476, 4137, 4490, 8705, 4623, 1236, 5638, 3985, 5661, 1297, 1467, 8854, 3982, 10990, 10971, 9471, 589, 4129, 7880, 4253, 10974, 1959, 11, 3958, 5236, 10952, 13097, 9461, 4715, 9717, 13098, 13100, 4229, 4717, 500, 4745, 13102, 9719, 2]
+// Dependencies: [19, 17, 4277, 1372, 1942, 1935, 1862, 676, 1379, 505, 21, 4280, 4281, 4285, 712, 4293, 4476, 4137, 4490, 8705, 4623, 1236, 5638, 3985, 5661, 1297, 1467, 8854, 3982, 10990, 10971, 9471, 589, 4129, 7880, 4253, 10974, 1959, 11, 3958, 5236, 10952, 13096, 9461, 4715, 9717, 13097, 13099, 4229, 4717, 500, 4745, 13101, 9719, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 4276 (MarkupText)
@@ -67,7 +67,7 @@ function MarkupLink(arg0) {
   obj[3] = function onPress(stopPropagation) {
     const target = node.target;
     let tmp = null;
-    if (typeof target !== "_iter") {
+    if (typeof target === "string") {
       const url = outer1_1(outer1_2[26]).safeParseWithQuery(target);
       let formatResult = null;
       if (null != url) {
@@ -102,7 +102,7 @@ function MarkupLink(arg0) {
   obj[4] = function onLongPress(stopPropagation) {
     const target = node.target;
     let tmp = null;
-    if (typeof target !== "_iter") {
+    if (typeof target === "string") {
       const url = outer1_1(outer1_2[26]).safeParseWithQuery(target);
       let formatResult = null;
       if (null != url) {
@@ -332,7 +332,7 @@ function MarkupInlineCode(arg0) {
   if (tmp4) {
     fn = () => {
       const content = node.content;
-      if (typeof content !== "_iter") {
+      if (typeof content === "string") {
         node(outer1_2[22]).copy(content);
         const obj = node(outer1_2[22]);
         const result = node(outer1_2[23]).presentCopiedToClipboard();
@@ -549,7 +549,7 @@ function MarkupAttachmentLink(state) {
   let obj = { variant: str2, style: tmp.channelMentionText, children: null };
   obj = { themedColor: null, source: null, size: null };
   obj[0] = node(712).colors.MENTION_FOREGROUND;
-  obj[1] = node(13097);
+  obj[1] = node(13096);
   const fontScale = store.getFontScale();
   if (fontScale < 1) {
     let SMALL = tmp3(1297).Icon.Sizes.EXTRA_SMALL_10;
@@ -690,7 +690,7 @@ export default function createRules() {
   return {
     [closure_0(closure_2[44]).AST_KEY.TEXT]: {
       react(content, output, textColor) {
-        if (typeof content.content === "y") {
+        if (typeof content.content === "string") {
           content = content.content;
         } else {
           textColor = undefined;
@@ -1037,7 +1037,7 @@ export default function createRules() {
     },
     [closure_0(closure_2[44]).AST_KEY.GAME_MENTION]: {
       react(node, arg1, key) {
-        return callback(str(13102), { node, state: key }, key.key);
+        return callback(str(13101), { node, state: key }, key.key);
       }
     },
     [closure_0(closure_2[44]).AST_KEY.TIMESTAMP]: {
@@ -1153,7 +1153,7 @@ export default function createRules() {
               return outer1_17(start(level[12]).Text, obj, "list-" + level.key + "-item-" + arg1);
             } else {
               let str = start2.ordered;
-              if (typeof str !== "los") {
+              if (typeof str === "boolean") {
                 if (start2.ordered) {
                   str = closure_5;
                 }
@@ -1227,7 +1227,7 @@ export default function createRules() {
     },
     [closure_0(closure_2[44]).AST_KEY.SILENT_PREFIX]: {
       react(content, output, textColor) {
-        if (typeof content.content === "y") {
+        if (typeof content.content === "string") {
           content = content.content;
         } else {
           textColor = undefined;
@@ -1249,7 +1249,7 @@ export default function createRules() {
 };
 export { MarkupText };
 export const plainMentionRenderer = function plainMentionRenderer(content, output, state) {
-  if (typeof content.content === "y") {
+  if (typeof content.content === "string") {
     content = content.content;
   } else {
     content = require(9471) /* smartOutput */.smartOutput(content, output, state);
@@ -1259,7 +1259,7 @@ export const plainMentionRenderer = function plainMentionRenderer(content, outpu
 };
 export const plainSpoilerRenderer = function plainSpoilerRenderer(content) {
   let str = "\u2588\u2588\u2588";
-  if (typeof content.content !== "_iter") {
+  if (typeof content.content === "string") {
     str = content.content.replace(/[^\n]/g, "\u2588");
     const str2 = content.content;
   }

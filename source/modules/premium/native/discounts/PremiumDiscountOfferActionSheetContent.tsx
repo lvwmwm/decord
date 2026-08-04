@@ -1,8 +1,8 @@
-// Module ID: 15880
-// Function ID: 15881
-// Dependencies: [19, 17, 21, 4285, 712, 11136, 1236, 10441, 4784, 5936, 4281, 14907, 4695, 7625, 2]
+// Module ID: 15879
+// Function ID: 15880
+// Dependencies: [19, 17, 21, 4285, 712, 11136, 1236, 10441, 4784, 5936, 4281, 14906, 4695, 7625, 2]
 
-// Module 15880
+// Module 15879
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -49,7 +49,7 @@ const memoResult = require("noop").memo(function PremiumDiscountOfferActionSheet
   const intl7 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t.qowbUk, { percent: amount });
   items1[1] = callback(require(4281) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14907), { perks: items });
+  items1[2] = callback(importDefault(14906), { perks: items });
   const obj4 = { style: tmp.buttonContainer, children: null };
   const obj5 = { size: "lg", text: null, onPress: null, grow: true, icon: null };
   const intl8 = require(1236) /* getSystemLocale */.intl;

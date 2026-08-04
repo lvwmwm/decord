@@ -1,10 +1,10 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15312
+// Function ID: 15313
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 3915, 1376, 1372, 1932, 7017, 1862, 4297, 3922, 4480, 1874, 676, 4481, 21, 4285, 589, 4142, 4139, 12471, 9647, 4281, 15314, 15315, 4475, 11, 15316, 15318, 11323, 15319, 15320, 15321, 15323, 15324, 15303, 2]
+// Dependencies: [19, 17, 3915, 1376, 1372, 1932, 7017, 1862, 4297, 3922, 4480, 1874, 676, 4481, 21, 4285, 589, 4142, 4139, 12470, 9647, 4281, 15313, 15314, 4475, 11, 15315, 15317, 11323, 15318, 15319, 15320, 15322, 15323, 15302, 2]
 // Exports: default
 
-// Module 15313 (GuildRowWrapper)
+// Module 15312 (GuildRowWrapper)
 import BellZIcon from "BellZIcon";
 import { View } from "MobileHomeDrawerExperiment";
 import storeThread from "storeThread";

@@ -1,10 +1,10 @@
-// Module ID: 12476
-// Function ID: 12477
+// Module ID: 12475
+// Function ID: 12476
 // Name: IntroDemo
-// Dependencies: [17, 5339, 21, 4285, 712, 8192, 12477, 4281, 1236, 12478, 10191, 4249, 5660, 2]
+// Dependencies: [17, 5339, 21, 4285, 712, 8192, 12476, 4281, 1236, 12477, 10191, 4249, 5660, 2]
 // Exports: default
 
-// Module 12476 (IntroDemo)
+// Module 12475 (IntroDemo)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ACTION_SHEET_BORDER_RADIUS } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function IntroDemo(isReminder) {
   let obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   obj = { style: tmp.messages, children: null };
   obj = { source: null, style: null };
-  obj[0] = { uri: importDefault(12478) };
+  obj[0] = { uri: importDefault(12477) };
   obj[1] = tmp.avatar;
   const items = [callback(closure_3, obj), ];
   const obj2 = { style: tmp.messageLines, children: null };
@@ -129,7 +129,7 @@ export default function ForLaterIntro(type) {
   const tmp4 = type.type === require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER;
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   obj = { style: tmp.container, children: null };
-  obj = { source: importDefault(12477), style: tmp.upsellImage };
+  obj = { source: importDefault(12476), style: tmp.upsellImage };
   const items = [callback(closure_3, obj), , ];
   const obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };

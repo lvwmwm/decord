@@ -1,10 +1,10 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12651
+// Function ID: 12652
 // Name: PremiumFeaturesCardBackground
 // Dependencies: [32, 19, 17, 676, 6805, 1876, 21, 712, 4285, 4706, 691, 4281, 5236, 1236, 7578, 7581, 7615, 7618, 4681, 1577, 9964, 1297, 5610, 1474, 698, 2]
 // Exports: default
 
-// Module 12652 (PremiumFeaturesCardBackground)
+// Module 12651 (PremiumFeaturesCardBackground)
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";
 import get_ActivityIndicator from "registerAsset";

@@ -1,10 +1,10 @@
-// Module ID: 12529
-// Function ID: 12530
+// Module ID: 12528
+// Function ID: 12529
 // Name: getCanSendInvite
 // Dependencies: [676, 11067, 5837, 11068, 11069, 11070, 2]
 // Exports: getCanSendInvite
 
-// Module 12529 (getCanSendInvite)
+// Module 12528 (getCanSendInvite)
 import ME from "ME";
 
 let c3;

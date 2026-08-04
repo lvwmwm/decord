@@ -1,13 +1,7 @@
 // Module ID: 13482
 // Function ID: 13483
-// Dependencies: []
+// Dependencies: [13483, 13487]
 
 // Module 13482
 
-export default (arg0) => {
-  try {
-    return arg0();
-  } catch (err) {
-    return true;
-  }
-};
+export default (arg0) => require(13483)(require(13487)(arg0));

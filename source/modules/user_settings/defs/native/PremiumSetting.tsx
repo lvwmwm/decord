@@ -1,9 +1,9 @@
-// Module ID: 14131
-// Function ID: 14132
+// Module ID: 14130
+// Function ID: 14131
 // Name: route
-// Dependencies: [19, 1874, 3937, 676, 21, 12595, 3931, 1236, 6790, 7366, 14132, 10361, 7625, 14134, 2]
+// Dependencies: [19, 1874, 3937, 676, 21, 12594, 3931, 1236, 6790, 7366, 14131, 10361, 7625, 14133, 2]
 
-// Module 14131 (route)
+// Module 14130 (route)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -13,8 +13,8 @@ import createToggle from "createToggle";
 const require = arg1;
 createToggle = {
   useTitle: function getPremiumSettingTitle() {
-    const mobileNitroManageSubscriptionsSettingsExperiment = require(12595) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const obj = require(12595) /* apexExperiment */;
+    const mobileNitroManageSubscriptionsSettingsExperiment = require(12594) /* apexExperiment */.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
+    const obj = require(12594) /* apexExperiment */;
     currentUser = currentUser.getCurrentUser();
     const result = require(3931) /* getPremiumPlanItem */.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription.getPremiumTypeSubscription());
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -43,14 +43,14 @@ createToggle = {
     }, []);
   },
   useTrailing: function usePremiumSettingTrailing() {
-    return jsx(importDefault(14132), {});
+    return jsx(importDefault(14131), {});
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(14134) /* PremiumScreen */.default;
+    return require(14133) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

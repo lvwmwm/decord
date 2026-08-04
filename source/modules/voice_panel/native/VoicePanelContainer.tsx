@@ -1,9 +1,9 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 15995
+// Function ID: 15996
 // Name: VoicePanel
-// Dependencies: [19, 1372, 4495, 21, 589, 15997, 16038, 3898, 4629, 2]
+// Dependencies: [19, 1372, 4495, 21, 589, 15996, 16037, 3898, 4629, 2]
 
-// Module 15996 (VoicePanel)
+// Module 15995 (VoicePanel)
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import withEqualityFn from "withEqualityFn";
@@ -26,7 +26,7 @@ function VoicePanel(arg0) {
   const merged = Object.assign(arg0);
   obj.guildId = stateFromStores;
   obj.children = importAllResult.useMemo(() => callback2(callback(table[6]), {}), []);
-  return jsx(importDefault(15997), {});
+  return jsx(importDefault(15996), {});
 }
 function getChannelKey(arg0) {
   return arg0;

@@ -1,7 +1,7 @@
 // Module ID: 3977
 // Function ID: 3978
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 3978, 676, 3, 3979, 3981, 3982, 3983, 3984, 3985, 1236, 4251, 500, 4253, 1469, 4266, 13105, 2]
+// Dependencies: [5, 17, 3978, 676, 3, 3979, 3981, 3982, 3983, 3984, 3985, 1236, 4251, 500, 4253, 1469, 4266, 13104, 2]
 // Exports: default
 
 // Module 3977 (sanitizeURLPart)

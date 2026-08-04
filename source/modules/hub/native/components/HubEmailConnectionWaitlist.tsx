@@ -1,10 +1,10 @@
-// Module ID: 12002
-// Function ID: 12003
+// Module ID: 12001
+// Function ID: 12002
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 676, 21, 4285, 712, 1480, 5917, 1236, 12003, 1297, 4281, 4695, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 1480, 5917, 1236, 12002, 1297, 4281, 4695, 2]
 // Exports: default
 
-// Module 12002 (HubEmailConnectionWaitlist)
+// Module 12001 (HubEmailConnectionWaitlist)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container, children: null };
-  obj = { source: navigation(12003), style: tmp.header };
+  obj = { source: navigation(12002), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", children: null };
   let intl = onClose(1236).intl;

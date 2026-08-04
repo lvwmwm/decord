@@ -1,10 +1,10 @@
-// Module ID: 16542
-// Function ID: 16543
+// Module ID: 16541
+// Function ID: 16542
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4172, 21, 4285, 712, 589, 4176, 11793, 11761, 4706, 4693, 11796, 4281, 1236, 4695, 15219, 2]
+// Dependencies: [19, 17, 4172, 21, 4285, 712, 589, 4176, 11793, 11761, 4706, 4693, 11796, 4281, 1236, 4695, 15218, 2]
 // Exports: default
 
-// Module 16542 (GuildSettingsServerTagUpsellCard)
+// Module 16541 (GuildSettingsServerTagUpsellCard)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -91,7 +91,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj9 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start", onPress: null };
   const intl3 = tmp2(1236).intl;
   obj9[2] = intl3.string(guildId(1236).t.kMRDWs);
-  obj9[3] = callback(guildId(15219).BoostTier2Icon, { color: "white" });
+  obj9[3] = callback(guildId(15218).BoostTier2Icon, { color: "white" });
   obj9[5] = guildId.onUnlockPress;
   items5[2] = callback(guildId(4695).Button, obj9);
   obj3[1] = items5;

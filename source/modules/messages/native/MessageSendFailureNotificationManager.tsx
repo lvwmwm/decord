@@ -1,9 +1,9 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 16776
+// Function ID: 16777
 // Name: handleMessageSendFailure
-// Dependencies: [1931, 4102, 1874, 6785, 676, 12883, 9683, 9685, 10668, 1236, 5229, 2]
+// Dependencies: [1931, 4102, 1874, 6785, 676, 12882, 9683, 9685, 10668, 1236, 5229, 2]
 
-// Module 16777 (handleMessageSendFailure)
+// Module 16776 (handleMessageSendFailure)
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_4 from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";

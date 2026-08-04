@@ -1,10 +1,10 @@
-// Module ID: 13185
-// Function ID: 13186
+// Module ID: 13184
+// Function ID: 13185
 // Name: items
-// Dependencies: [19, 21, 514, 13172, 8437, 2]
+// Dependencies: [19, 21, 514, 13171, 8437, 2]
 // Exports: GuildBadgeForce
 
-// Module 13185 (items)
+// Module 13184 (items)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -36,16 +36,16 @@ export const GuildBadgeForce = function GuildBadgeForce(width) {
   ({ primaryTintColor, secondaryTintColor } = width);
   const merged = Object.assign(width, Object.create(null));
   const memo = React.useMemo(() => "badge-force-gradient-" + callback(table[2]).v4(), []);
-  let obj = require(13172) /* getTransformedBadgeColors */;
+  let obj = require(13171) /* getTransformedBadgeColors */;
   obj = { primaryBaseColors: closure_5, primaryTintColor, primaryTintLuminances: closure_7, primaryLuminanceWeights: items, secondaryBaseColors: closure_6, secondaryTintColor, secondaryTintLuminances: closure_9, secondaryLuminanceWeights: items1 };
   const transformedBadgeColors = obj.getTransformedBadgeColors(obj);
   ({ primaryColorsTransformed, secondaryColorsTransformed } = transformedBadgeColors);
-  let tmp9Result = typeof num === "Object";
-  if (typeof num !== "V") {
+  let tmp9Result = typeof num === "number";
+  if (typeof num === "number") {
     tmp9Result = num > 0;
   }
   if (tmp9Result) {
-    tmp9Result = typeof num2 === "Object";
+    tmp9Result = typeof num2 === "number";
   }
   if (tmp9Result) {
     tmp9Result = num2 > 0;

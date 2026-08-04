@@ -56,7 +56,7 @@ export const useBottomSheetContentContainerStyle = function useBottomSheetConten
       let num = 0;
       if (tmp) {
         num = 0;
-        if (typeof tmp !== "window") {
+        if (typeof tmp === "object") {
           ({ paddingBottom, padding, paddingVertical } = tmp);
           if (undefined === paddingBottom) {
             if (undefined === paddingVertical) {
@@ -64,7 +64,7 @@ export const useBottomSheetContentContainerStyle = function useBottomSheetConten
               if (tmp2) {
                 num = padding;
               }
-              tmp2 = undefined !== padding && typeof padding === "Object";
+              tmp2 = undefined !== padding && typeof padding === "number";
             } else {
               num = paddingVertical;
             }

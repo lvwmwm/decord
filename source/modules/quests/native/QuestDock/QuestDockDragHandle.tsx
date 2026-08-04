@@ -1,9 +1,9 @@
-// Module ID: 14330
-// Function ID: 14331
+// Module ID: 14329
+// Function ID: 14330
 // Name: QuestDockMode
-// Dependencies: [19, 17, 5128, 14241, 21, 4285, 14242, 14243, 4146, 1348, 4694, 7819, 14240, 5594, 1236, 2]
+// Dependencies: [19, 17, 5128, 14240, 21, 4285, 14241, 14242, 4146, 1348, 4694, 7819, 14239, 5594, 1236, 2]
 
-// Module 14330 (QuestDockMode)
+// Module 14329 (QuestDockMode)
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { QuestDockMode } from "QuestsExperimentLocations";
@@ -50,11 +50,11 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(arg0) {
   let variant;
   ({ isExpanded, variant } = arg0);
   const tmp = callback();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14242).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14241).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   const dependencyMap = tmp5;
-  let obj = activeQuestDockMode(14243);
+  let obj = activeQuestDockMode(14242);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
   let obj1 = activeQuestDockMode(4146);
   const fn = function n() {
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(arg0) {
   const fn2 = function u() {
     let obj = activeQuestDockMode;
     const value = activeQuestDockMode.get();
-    if (typeof outer1_10 !== "find") {
+    if (typeof outer1_10 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let num = 0;
@@ -151,7 +151,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(arg0) {
   obj4 = { style: animatedStyle1, layout: null, children: null };
   const tmp13 = windowDimensions(7819);
   const tmp14 = closure_8;
-  obj4[1] = activeQuestDockMode(14240).dimensionsLayoutTransition;
+  obj4[1] = activeQuestDockMode(14239).dimensionsLayoutTransition;
   const obj5 = { style: items1, children: null };
   items1 = [tmp.dragHandleOverlay, animatedStyle3];
   const tmp15 = windowDimensions(7819);

@@ -1,10 +1,10 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12411
+// Function ID: 12412
 // Name: ShopThisLookCard
-// Dependencies: [19, 17, 8738, 5339, 21, 4285, 712, 12413, 589, 9273, 12417, 10020, 8734, 12389, 5610, 5630, 4253, 6909, 9386, 1236, 4281, 2]
+// Dependencies: [19, 17, 8738, 5339, 21, 4285, 712, 12412, 589, 9273, 12416, 10020, 8734, 12388, 5610, 5630, 4253, 6909, 9386, 1236, 4281, 2]
 // Exports: default
 
-// Module 12412 (ShopThisLookCard)
+// Module 12411 (ShopThisLookCard)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "openCollectiblesShop";
 import getFetchState from "getFetchState";
@@ -20,7 +20,7 @@ const require = arg1;
 function ShopThisLookCard(skuId) {
   skuId = skuId.skuId;
   const size = skuId.size;
-  let obj = skuId(12413);
+  let obj = skuId(12412);
   let obj1 = skuId(589);
   const items = [getFetchState];
   const items1 = [skuId];
@@ -58,7 +58,7 @@ function ShopThisLookCard(skuId) {
         obj1[1] = tmp5(importDefault(10020), obj2);
         tmp5Result = tmp5(closure_5, obj1);
       }
-      tmp2Result = skuId(12417);
+      tmp2Result = skuId(12416);
     }
   }
   return tmp13;
@@ -90,8 +90,8 @@ export default function ShopThisLookActionSheet(arg0) {
   let obj = _require(8734);
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12389)(obj));
-  const tmp2 = analyticsLocations(12389)(obj);
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12388)(obj));
+  const tmp2 = analyticsLocations(12388)(obj);
   analyticsLocations = analyticsLocations(5610)(analyticsLocations(5630).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = React.useCallback((initialProductSkuId) => {

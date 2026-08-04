@@ -1,10 +1,10 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15454
+// Function ID: 15455
 // Name: pushICYMIInfoModal
-// Dependencies: [4490, 15456, 1959, 15457, 2]
+// Dependencies: [4490, 15455, 1959, 15456, 2]
 // Exports: pushICYMIInfoModal
 
-// Module 15455 (pushICYMIInfoModal)
+// Module 15454 (pushICYMIInfoModal)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/icymi/native/NativeICYMIUtils.tsx");
 
 export const pushICYMIInfoModal = function pushICYMIInfoModal(arg0) {
@@ -13,5 +13,5 @@ export const pushICYMIInfoModal = function pushICYMIInfoModal(arg0) {
   ({ extendedOnboarding, skipIntro } = arg0);
   let obj = importDefault(4490);
   obj = { extendedOnboarding, skipIntro };
-  obj.pushLazy(require(1959) /* asyncRequireImpl */(15456, dependencyMap.paths), obj, require(15457) /* ICYMI_INFO_MODAL_KEY */.ICYMI_INFO_MODAL_KEY, { presentation: "fullScreenModal" });
+  obj.pushLazy(require(1959) /* asyncRequireImpl */(15455, dependencyMap.paths), obj, require(15456) /* ICYMI_INFO_MODAL_KEY */.ICYMI_INFO_MODAL_KEY, { presentation: "fullScreenModal" });
 };

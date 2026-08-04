@@ -1,10 +1,10 @@
-// Module ID: 14248
-// Function ID: 14249
+// Module ID: 14247
+// Function ID: 14248
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 676, 21, 7101, 10374, 10396, 5646, 5648, 12565, 7777, 10405, 5131, 7107, 4253, 4233, 1236, 14249, 9434, 9435, 9439, 7108, 7097, 11080, 10070, 14251, 5270, 10376, 14254, 7647, 14255, 14257, 14259, 8308, 5925, 5638, 2]
+// Dependencies: [5, 19, 676, 21, 7101, 10374, 10396, 5646, 5648, 12564, 7777, 10405, 5131, 7107, 4253, 4233, 1236, 14248, 9434, 9435, 9439, 7108, 7097, 11080, 10070, 14250, 5270, 10376, 14253, 7647, 14254, 14256, 14258, 8308, 5925, 5638, 2]
 // Exports: default
 
-// Module 14248 (QuestDockContextMenuActionSheet)
+// Module 14247 (QuestDockContextMenuActionSheet)
 import useQuests from "useQuests";
 import "emitClickEventWithCreative";
 import { UserSettingsSections } from "ME";
@@ -36,7 +36,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
   const externalCtaLabel = obj2.getExternalCtaLabel(quest);
   obj = { icon: null, label: null, onPress: null };
   obj = { IconComponent: null };
-  obj[0] = quest(12565).LinkExternalMediumIcon;
+  obj[0] = quest(12564).LinkExternalMediumIcon;
   obj[0] = callback2(quest(5648).ActionSheetRow.Icon, obj);
   obj[1] = callback2(quest(7777).FormLabel, { text: externalCtaLabel });
   obj[2] = function onPress() {
@@ -69,7 +69,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
   const obj4 = { hasIcons: true, children: null };
   const obj5 = { icon: null, label: null, onPress: null };
   const obj6 = { IconComponent: null };
-  obj6[0] = importDefault(14249);
+  obj6[0] = importDefault(14248);
   obj5[0] = callback2(tmp(5648).ActionSheetRow.Icon, obj6);
   const obj7 = { text: null };
   const intl2 = tmp(1236).intl;
@@ -199,7 +199,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
           obj3[0] = arg1;
           return obj3;
         } else {
-          obj = outer1_0(14254);
+          obj = outer1_0(14253);
           const result1 = obj.displayQuestDismissalToast();
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
@@ -233,7 +233,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
     const items3 = [tmp7(tmp(5648).ActionSheetRow, obj15), , , , , , ];
     const obj18 = { icon: null, label: null, onPress: null };
     const obj19 = { IconComponent: null };
-    obj19[0] = tmp(14255).RedoIcon;
+    obj19[0] = tmp(14254).RedoIcon;
     obj18[0] = tmp7(tmp(5648).ActionSheetRow.Icon, obj19);
     const obj20 = { text: null };
     const intl8 = tmp(1236).intl;
@@ -246,7 +246,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
     items3[1] = tmp7(tmp(5648).ActionSheetRow, obj18);
     const obj21 = { icon: null, label: null, onPress: null };
     const obj22 = { IconComponent: null };
-    obj22[0] = tmp(14257).UndoIcon;
+    obj22[0] = tmp(14256).UndoIcon;
     obj21[0] = tmp7(tmp(5648).ActionSheetRow.Icon, obj22);
     const obj23 = { text: null };
     const intl9 = tmp(1236).intl;
@@ -259,7 +259,7 @@ export default function QuestDockContextMenuActionSheet(quest) {
     items3[2] = tmp7(tmp(5648).ActionSheetRow, obj21);
     const obj24 = { icon: null, label: null, onPress: null };
     const obj25 = { IconComponent: null };
-    obj25[0] = tmp(14259).UnsendIcon;
+    obj25[0] = tmp(14258).UnsendIcon;
     obj24[0] = tmp7(tmp(5648).ActionSheetRow.Icon, obj25);
     const obj26 = { text: null };
     const intl10 = tmp(1236).intl;

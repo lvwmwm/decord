@@ -1,10 +1,10 @@
-// Module ID: 12470
-// Function ID: 12471
+// Module ID: 12469
+// Function ID: 12470
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4285, 4253, 10193, 1959, 10187, 1236, 11046, 5270, 12471, 9591, 8408, 7672, 8415, 2]
+// Dependencies: [19, 17, 21, 4285, 4253, 10193, 1959, 10187, 1236, 11046, 5270, 12470, 9591, 8408, 7672, 8415, 2]
 // Exports: default
 
-// Module 12470 (ForLaterCardActionButtons)
+// Module 12469 (ForLaterCardActionButtons)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -85,7 +85,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
     let obj2 = { label: null, IconComponent: null, action: null };
     obj2[0] = intl3.string(savedMessage.throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1);
     if (savedMessage.throttledNow > savedMessage.saveData.dueAt) {
-      let PencilIcon = tmp3(12471).BellZIcon;
+      let PencilIcon = tmp3(12470).BellZIcon;
     } else {
       PencilIcon = tmp3(9591).PencilIcon;
     }

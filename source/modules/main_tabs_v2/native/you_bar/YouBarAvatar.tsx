@@ -1,9 +1,9 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15377
+// Function ID: 15378
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4962, 1874, 14244, 676, 21, 4285, 712, 589, 1297, 4629, 4146, 8735, 8103, 4694, 3989, 8102, 8069, 4254, 5925, 1959, 5368, 2]
+// Dependencies: [5, 32, 19, 17, 4962, 1874, 14243, 676, 21, 4285, 712, 589, 1297, 4629, 4146, 8735, 8103, 4694, 3989, 8102, 8069, 4254, 5925, 1959, 5368, 2]
 
-// Module 15378 (YouBarAvatarLarge)
+// Module 15377 (YouBarAvatarLarge)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "CutoutableAvatarDecoration";

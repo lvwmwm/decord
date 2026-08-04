@@ -1,10 +1,10 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12251
+// Function ID: 12252
 // Name: UserProfileWidgetsBoardEditNotice
 // Dependencies: [19, 17, 1369, 21, 4285, 712, 8757, 1348, 9916, 1358, 4241, 4281, 1236, 4812, 5270, 2]
 // Exports: default
 
-// Module 12252 (UserProfileWidgetsBoardEditNotice)
+// Module 12251 (UserProfileWidgetsBoardEditNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

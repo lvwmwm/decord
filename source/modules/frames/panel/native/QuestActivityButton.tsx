@@ -1,16 +1,16 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 15975
+// Function ID: 15976
 // Name: QuestActivityButtonInner
-// Dependencies: [19, 17, 4277, 7080, 15977, 5128, 21, 4146, 8437, 4285, 712, 10374, 589, 4490, 15978, 1959, 4253, 15979, 4286, 5601, 14275, 15980, 14146, 1236, 10503, 2]
+// Dependencies: [19, 17, 4277, 7080, 15976, 5128, 21, 4146, 8437, 4285, 712, 10374, 589, 4490, 15977, 1959, 4253, 15978, 4286, 5601, 14274, 15979, 14145, 1236, 10503, 2]
 
-// Module 15976 (QuestActivityButtonInner)
+// Module 15975 (QuestActivityButtonInner)
 import importAllResult from "play";
 import { View } from "contextMenuButton";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import initializeState from "initializeState";
 import set from "set";
 import { QuestVariants } from "QuestsExperimentLocations";
-import jsxProd from "module_15980";
+import jsxProd from "module_15979";
 import createCacheKey from "createCacheKey";
 import importDefaultResult from "module_4146";
 
@@ -162,17 +162,17 @@ function QuestActivityButtonInner(quest) {
   obj = { style: memo, pointerEvents: "none", children: null };
   obj1 = { ref, source: null, autoPlay: false, loop: false };
   const tmpResult2 = quest(4146);
-  obj1[1] = quest(14275);
+  obj1[1] = quest(14274);
   obj[2] = callback(stateFromStores(5601), obj1);
   const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp14.buttonWrapper, children: null };
   let obj3 = { icon: null, onPress: null, accessibilityLabel: null };
   const tmp20 = stateFromStores(5601);
-  obj3[0] = stateFromStores(14146);
+  obj3[0] = stateFromStores(14145);
   obj3[1] = callback;
   const intl = tmp(1236).intl;
   obj3[2] = intl.string(quest(1236).t.JALI2K);
-  obj2[1] = callback(stateFromStores(15980), obj3);
+  obj2[1] = callback(stateFromStores(15979), obj3);
   items6[1] = callback(c4, obj2);
   const obj4 = { pointerEvents: "none", style: tmp14.canvas, children: null };
   const obj5 = { height: c11, width: c11, children: null };

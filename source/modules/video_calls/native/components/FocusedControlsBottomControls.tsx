@@ -172,7 +172,7 @@ class FocusedControlsBottomDrawer {
     diff1 = bound - sum;
     if (tmp5) {
       tmp17 = EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y;
-      if (typeof EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y !== "find") {
+      if (typeof EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y !== "function") {
         str2 = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
@@ -181,7 +181,7 @@ class FocusedControlsBottomDrawer {
       diff2 = diff1 - (top + 54 + 12);
     } else {
       tmp13 = EXTENDED_CONTROLS_OFFSET_Y;
-      if (typeof EXTENDED_CONTROLS_OFFSET_Y !== "find") {
+      if (typeof EXTENDED_CONTROLS_OFFSET_Y !== "function") {
         str = "Trying to call a non-function";
         throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
       }
@@ -195,7 +195,7 @@ class FocusedControlsBottomDrawer {
       }
       diff2 = diff1 - (sum1 + num2);
     }
-    if (typeof EXTENDED_CONTROLS_OFFSET_Y !== "find") {
+    if (typeof EXTENDED_CONTROLS_OFFSET_Y !== "function") {
       str3 = "Trying to call a non-function";
       throwTypeErrorResult2 = HermesBuiltin.throwTypeError();
     }
@@ -207,7 +207,7 @@ class FocusedControlsBottomDrawer {
       num5 = 48;
     }
     sum3 = sum2 + num5 + bottom;
-    if (typeof EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y !== "find") {
+    if (typeof EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y !== "function") {
       str4 = "Trying to call a non-function";
       throwTypeErrorResult3 = HermesBuiltin.throwTypeError();
     }
@@ -230,7 +230,7 @@ class FocusedControlsBottomDrawer {
     height = undefined;
     c11 = undefined;
     c12 = undefined;
-    f107862 = undefined;
+    f107858 = undefined;
     handleOpen = function handleOpen() {
       if (!first) {
         if (onDrawerOpen != null) {
@@ -286,7 +286,7 @@ class FocusedControlsBottomDrawer {
     callback = onClose.useCallback(() => {
       const result = reveal(sum3[18]).UNSAFE_markDismissibleContentAsDismissed(reveal(sum3[19]).DismissibleContent.SOUNDBOARD_MOBILE_NEW_BADGE);
     }, []);
-    f107862 = callback;
+    f107858 = callback;
     items = [, , ];
     items[0] = sharedValue;
     items[1] = derivedValue;
@@ -534,7 +534,7 @@ class FocusedControlsBottomDrawer {
     }, items5);
     tmp19Result7 = require("ManaContext");
     theme = tmp19Result7.useThemeContext().theme;
-    tmp40 = f107862;
+    tmp40 = f107858;
     obj3 = { style: animatedStyle, pointerEvents: "box-none", children: null };
     obj4 = { gesture: tmp31[1], children: null };
     tmp41 = handleOpen;

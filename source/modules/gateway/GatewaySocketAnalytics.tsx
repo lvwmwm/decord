@@ -1,10 +1,10 @@
-// Module ID: 12821
-// Function ID: 12822
+// Module ID: 12820
+// Function ID: 12821
 // Name: prettyPrintTrace_
 // Dependencies: [109, 1874, 676, 10, 9, 698, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12821 (prettyPrintTrace_)
+// Module 12820 (prettyPrintTrace_)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -75,7 +75,7 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
         startsWithResult = "" !== tmp4[0];
       }
       if (startsWithResult) {
-        startsWithResult = typeof tmp4[0] === "y";
+        startsWithResult = typeof tmp4[0] === "string";
       }
       if (startsWithResult) {
         const first = tmp4[0];
@@ -83,7 +83,7 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
       }
       if (startsWithResult) {
         let num = 0;
-        if (typeof tmp4[1] !== "window") {
+        if (typeof tmp4[1] === "object") {
           num = 0;
           if ("micros" in tmp4[1]) {
             let _Math = Math;

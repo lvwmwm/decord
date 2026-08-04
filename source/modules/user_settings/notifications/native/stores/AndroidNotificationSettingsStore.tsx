@@ -1,10 +1,10 @@
-// Module ID: 14560
-// Function ID: 14561
+// Module ID: 14559
+// Function ID: 14560
 // Name: _initializeAndroidNotificationSettingsStore
 // Dependencies: [5, 700, 500, 10668, 705, 3898, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 14560 (_initializeAndroidNotificationSettingsStore)
+// Module 14559 (_initializeAndroidNotificationSettingsStore)
 import isIterable from "isIterable";
 import identity from "identity";
 

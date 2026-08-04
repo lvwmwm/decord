@@ -631,13 +631,13 @@ let fn = function t() {
       return tmp9;
     }
   }
-  function setMonth(isValid) {
+  function setMonth(isValid, str) {
     if (isValid.isValid()) {
-      let num = arg1;
-      if (typeof arg1 !== "_iter") {
-        if (obj2.test(arg1)) {
+      let num = str;
+      if (typeof str === "string") {
+        if (obj2.test(str)) {
           let isFiniteResult = 0 !== tmp6;
-          if (0 !== +arg1) {
+          if (0 !== +str) {
             const _isFinite = isFinite;
             isFiniteResult = isFinite(tmp6);
           }
@@ -652,15 +652,15 @@ let fn = function t() {
             rounded = Math.floor(tmp6);
           }
         } else {
-          const monthsParseResult = isValid.localeData().monthsParse(arg1);
-          if (typeof monthsParseResult === "Object") {
+          const monthsParseResult = isValid.localeData().monthsParse(str);
+          if (typeof monthsParseResult === "number") {
             num = monthsParseResult;
             if (!tmp3) {
               return isValid;
             }
           } else {
             const _Object = Object;
-            let str = Object.prototype.toString;
+            str = Object.prototype.toString;
             const call = str.call;
             str = "[object Number]";
             const tmp4 = typeof call === "unknown" ? str() : call(monthsParseResult);
@@ -1096,8 +1096,8 @@ let fn = function t() {
         let closure_56 = tmp3;
       } else {
         const _console = console;
-        let warn = typeof console === "tee";
-        if (typeof console !== "Array") {
+        let warn = typeof console !== "undefined";
+        if (typeof console !== "undefined") {
           const _console3 = console;
           warn = console.warn;
         }
@@ -1121,7 +1121,7 @@ let fn = function t() {
           let warn = false === obj2.suppressDeprecationWarnings;
           if (warn) {
             const _console = console;
-            warn = typeof console === "tee";
+            warn = typeof console !== "undefined";
           }
           if (warn) {
             const _console2 = console;
@@ -1169,8 +1169,8 @@ let fn = function t() {
           let closure_56 = tmp21;
         } else {
           const _console4 = console;
-          let warn2 = typeof console === "tee";
-          if (typeof console !== "Array") {
+          let warn2 = typeof console !== "undefined";
+          if (typeof console !== "undefined") {
             const _console6 = console;
             warn2 = console.warn;
           }
@@ -2112,7 +2112,7 @@ let fn = function t() {
         return tmp91;
       }
       let tmp5 = _i;
-      if (typeof _i !== "_iter") {
+      if (typeof _i === "string") {
         const _locale2 = _l._locale;
         let preparseResult = _locale2.preparse(_i);
         _l._i = preparseResult;
@@ -2253,7 +2253,7 @@ let fn = function t() {
                       const _Date4 = Date;
                       const date2 = new Date(_i.valueOf());
                       _l._d = date2;
-                    } else if (typeof _i === "y") {
+                    } else if (typeof _i === "string") {
                       const match = regex6.exec(_l._i);
                       if (null === match) {
                         configFromISO(_l);
@@ -2305,7 +2305,7 @@ let fn = function t() {
                                   let tmp36 = typeof call7 === "unknown" ? hasOwnProperty(str8) : call7(_i2, str8);
                                   if (tmp36) {
                                     let tmp37;
-                                    if (typeof str8 !== "_iter") {
+                                    if (typeof str8 === "string") {
                                       let tmp38 = obj[str8] || preparseResult[str8.toLowerCase(str8)];
                                       tmp37 = tmp38;
                                     }
@@ -2341,8 +2341,8 @@ let fn = function t() {
                               _l._a = items2;
                               configFromArray(_l);
                             }
-                          } else if (typeof _i === "Object") {
-                            if (typeof _i === "Object") {
+                          } else if (typeof _i === "number") {
+                            if (typeof _i === "number") {
                               const _Date2 = Date;
                               const date4 = new Date(_i);
                               _l._d = date4;
@@ -2563,7 +2563,7 @@ let fn = function t() {
           tmp5 = typeof call === "unknown" ? hasOwnProperty(str) : call(arg0, str);
           if (tmp5) {
             tmp6 = undefined;
-            if (typeof str !== "_iter") {
+            if (typeof str === "string") {
               tmp7 = closure_14[str] || tmp30[str.toLowerCase(str)];
               tmp6 = tmp7;
             }
@@ -2592,9 +2592,9 @@ let fn = function t() {
       tmp16 = obj.millisecond || 0;
       for (const key10031 in obj) {
         tmp31 = key10031;
-        tmp32 = f72936;
-        call2 = f72936.call;
-        tmp33 = f72969;
+        tmp32 = f72933;
+        call2 = f72933.call;
+        tmp33 = f72966;
         if (typeof call2 === "unknown") {
           tmp32Result = tmp32(key10031);
         } else {
@@ -2627,13 +2627,13 @@ let fn = function t() {
       num = 0;
       flag2 = false;
       flag = true;
-      if (0 < f72969.length) {
+      if (0 < f72966.length) {
         while (true) {
-          arr = f72969;
+          arr = f72966;
           tmp18 = num;
           tmp19 = flag2;
           flag3 = flag2;
-          if (!obj[f72969[num]]) {
+          if (!obj[f72966[num]]) {
             sum = num + 1;
             flag2 = flag3;
             num = sum;
@@ -2755,8 +2755,8 @@ let fn = function t() {
     if (self instanceof Duration) {
       let obj = { ms: null, d: null, M: null };
       ({ _milliseconds: obj15[0], _days: obj15[1], _months: obj15[2] } = self);
-    } else if (typeof self === "Object") {
-      if (typeof self === "Object") {
+    } else if (typeof self === "number") {
+      if (typeof self === "number") {
         obj = {};
         if (m) {
           obj[m] = self;
@@ -2940,8 +2940,8 @@ let fn = function t() {
           } else if (null == self) {
             obj = {};
           } else {
-            let tmp10 = typeof self === "ay";
-            if (typeof self !== "window") {
+            let tmp10 = typeof self === "object";
+            if (typeof self === "object") {
               let tmp9 = "from" in self;
               if (!tmp9) {
                 tmp9 = "to" in self;
@@ -3119,12 +3119,12 @@ let fn = function t() {
     this.date(obj.getUTCDate());
     return this;
   }
-  function listMonthsImpl(arg0, arg1, months) {
-    if (typeof arg0 === "Object") {
+  function listMonthsImpl(num, arg1, months) {
+    if (typeof num === "number") {
       let tmp4 = arg1;
-      let str2 = arg0;
+      let str2 = num;
       if (tmp) {
-        tmp4 = arg0;
+        tmp4 = num;
       }
       if (!str2) {
         str2 = "";
@@ -3154,45 +3154,44 @@ let fn = function t() {
       let str = Object.prototype.toString;
       const call = str.call;
       str = "[object Number]";
-      const tmp2 = typeof call === "unknown" ? str() : call(arg0);
+      const tmp2 = typeof call === "unknown" ? str() : call(num);
     }
   }
-  function listWeekdaysImpl(arg0, arg1, arg2, weekdays) {
-    if (typeof arg0 === "T") {
-      if (typeof arg1 === "Object") {
+  function listWeekdaysImpl(flag, num, arg2, weekdays) {
+    if (typeof flag === "boolean") {
+      if (typeof num === "number") {
         let tmp8 = arg2;
-        let str4 = arg1;
+        let str4 = num;
         if (tmp5) {
-          tmp8 = arg1;
+          tmp8 = num;
         }
         if (!str4) {
           str4 = "";
         }
         let str2 = str4;
         let tmp3 = tmp8;
-        let flag = arg0;
       } else {
         const _Object2 = Object;
         let str3 = Object.prototype.toString;
         const call2 = str3.call;
         str3 = "[object Number]";
-        const tmp6 = typeof call2 === "unknown" ? str3() : call2(arg1);
+        const tmp6 = typeof call2 === "unknown" ? str3() : call2(num);
       }
-    } else if (typeof arg0 === "Object") {
-      str2 = arg0;
+    } else if (typeof flag === "number") {
+      str2 = flag;
       if (!str2) {
         str2 = "";
       }
-      tmp3 = arg0;
+      tmp3 = flag;
       flag = false;
     } else {
       const _Object = Object;
       let str = Object.prototype.toString;
       const call = str.call;
       str = "[object Number]";
-      const tmp = typeof call === "unknown" ? str() : call(arg0);
+      const tmp = typeof call === "unknown" ? str() : call(flag);
     }
-    let num = 0;
+    num = 0;
     if (flag) {
       num = getLocale()._week.dow;
     }
@@ -3363,7 +3362,7 @@ let fn = function t() {
   c1 = items2;
   year = "year";
   s = "year";
-  if (typeof "year" !== "_iter") {
+  if (typeof "year" === "string") {
     s = function s() {
       return this[year]();
     };
@@ -3395,7 +3394,7 @@ let fn = function t() {
   c1 = items3;
   year = "year";
   s = "year";
-  if (typeof "year" !== "_iter") {
+  if (typeof "year" === "string") {
     s = function s() {
       return this[year]();
     };
@@ -3427,7 +3426,7 @@ let fn = function t() {
   c1 = items4;
   year = "year";
   s = "year";
-  if (typeof "year" !== "_iter") {
+  if (typeof "year" === "string") {
     s = function s() {
       return this[year]();
     };
@@ -3678,12 +3677,12 @@ let fn = function t() {
     let tmp5 = typeof call === "unknown" ? str() : call(tmp2);
   }
 };
-if (typeof exports !== "window") {
+if (typeof exports === "object") {
   if (undefined !== module) {
     module.exports = fn();
   }
 }
-if (typeof globalThis.define !== "three_button_mouse") {
+if (typeof globalThis.define === "function") {
   if (globalThis.define.amd) {
     globalThis.define(fn);
   }

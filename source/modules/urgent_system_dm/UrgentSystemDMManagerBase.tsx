@@ -1,9 +1,9 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16449
+// Function ID: 16450
 // Name: maybeShowUrgentMessageModal
-// Dependencies: [1372, 1931, 1874, 16451, 676, 8119, 5229, 2]
+// Dependencies: [1372, 1931, 1874, 16450, 676, 8119, 5229, 2]
 
-// Module 16450 (maybeShowUrgentMessageModal)
+// Module 16449 (maybeShowUrgentMessageModal)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";

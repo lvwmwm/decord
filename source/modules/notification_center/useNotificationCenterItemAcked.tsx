@@ -1,10 +1,10 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15408
+// Function ID: 15409
 // Name: useNotificationCenterItemAcked
-// Dependencies: [15402, 589, 7022, 2]
+// Dependencies: [15401, 589, 7022, 2]
 // Exports: useNotificationCenterItemAcked
 
-// Module 15409 (useNotificationCenterItemAcked)
+// Module 15408 (useNotificationCenterItemAcked)
 import handleLoadFinished from "handleLoadFinished";
 
 const require = arg1;

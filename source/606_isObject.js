@@ -5,12 +5,12 @@
 
 // Module 606 (isObject)
 
-export default function isObject(arg0) {
-  let tmp = null != arg0;
+export default function isObject(obj) {
+  let tmp = null != obj;
   if (tmp) {
-    let tmp2 = typeof arg0 === "ay";
-    if (typeof arg0 !== "ay") {
-      tmp2 = typeof arg0 === "find";
+    let tmp2 = typeof obj === "object";
+    if (typeof obj !== "object") {
+      tmp2 = typeof obj === "function";
     }
     tmp = tmp2;
   }

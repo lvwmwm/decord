@@ -109,7 +109,7 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
     function matchUser() {
       const arr = outer1_11;
       let obj = closure_1;
-      if (typeof outer1_14 !== "find") {
+      if (typeof outer1_14 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let firstResult = null;
@@ -132,7 +132,7 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
         obj[1] = firstResult.id;
         let tmp6 = obj;
       } else {
-        if (typeof outer1_14 !== "find") {
+        if (typeof outer1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult1 = null;
@@ -179,7 +179,7 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
     function matchRole() {
       const arr = outer1_11;
       let obj = closure_2;
-      if (typeof outer1_14 !== "find") {
+      if (typeof outer1_14 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let firstResult = null;
@@ -213,7 +213,7 @@ const prototype = function ApplicationCommandOptionValueParser(channel) {
     }
     if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.CHANNEL) {
       arr6 = outer1_12;
-      if (typeof outer1_14 !== "find") {
+      if (typeof outer1_14 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let firstResult = null;
@@ -328,7 +328,7 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
   channel = channel.channel;
   const items = [channel];
   return React.useMemo(() => {
-    if (typeof outer1_17 !== "find") {
+    if (typeof outer1_17 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(outer1_17.prototype);
@@ -353,7 +353,7 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
       function matchUser() {
         const arr = outer1_11;
         let obj = closure_1;
-        if (typeof outer1_14 !== "find") {
+        if (typeof outer1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult = null;
@@ -376,7 +376,7 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
           obj[1] = firstResult.id;
           let tmp6 = obj;
         } else {
-          if (typeof outer1_14 !== "find") {
+          if (typeof outer1_14 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           let firstResult1 = null;
@@ -423,7 +423,7 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
       function matchRole() {
         const arr = outer1_11;
         let obj = closure_2;
-        if (typeof outer1_14 !== "find") {
+        if (typeof outer1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult = null;
@@ -457,7 +457,7 @@ export const useApplicationCommandOptionValueParser = function useApplicationCom
       }
       if (type.type === obj(outer1_2[13]).ApplicationCommandOptionType.CHANNEL) {
         arr6 = outer1_12;
-        if (typeof outer1_14 !== "find") {
+        if (typeof outer1_14 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let firstResult = null;

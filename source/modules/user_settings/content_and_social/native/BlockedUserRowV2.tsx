@@ -1,10 +1,10 @@
-// Module ID: 13957
-// Function ID: 13958
+// Module ID: 13956
+// Function ID: 13957
 // Name: BlockedUserRow
 // Dependencies: [19, 1874, 21, 9161, 5610, 5315, 1297, 1236, 8705, 4695, 589, 2]
 // Exports: default
 
-// Module 13957 (BlockedUserRow)
+// Module 13956 (BlockedUserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -15,9 +15,9 @@ function BlockedUserRow(userRecord) {
   let analyticsLocations;
   analyticsLocations = analyticsLocations(5610)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  obj = { user: userRecord, guildId: "Array", size: true };
+  obj = { user: userRecord, guildId: "Array", size: 8 };
   obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: true });
+  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: 8 });
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;

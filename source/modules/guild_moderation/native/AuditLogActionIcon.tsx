@@ -1,10 +1,10 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16502
+// Function ID: 16503
 // Name: AuditIcons
-// Dependencies: [19, 17, 16493, 676, 21, 4285, 712, 16504, 16477, 7576, 4241, 14105, 4229, 8691, 4798, 15681, 4806, 8966, 4783, 7627, 9462, 7630, 16506, 10070, 4781, 10456, 16508, 16509, 16510, 1297, 2]
+// Dependencies: [19, 17, 16492, 676, 21, 4285, 712, 16503, 16476, 7576, 4241, 14104, 4229, 8691, 4798, 15680, 4806, 8966, 4783, 7627, 9462, 7630, 16505, 10070, 4781, 10456, 16507, 16508, 16509, 1297, 2]
 // Exports: default
 
-// Module 16503 (AuditIcons)
+// Module 16502 (AuditIcons)
 import "StickerIcon";
 import { View } from "CalendarIcon";
 import getTargetType from "getTargetType";
@@ -51,13 +51,13 @@ function AuditIcons(action) {
   const tmp = createCacheKey();
   const tmp2 = callback(action);
   if (constants.CREATE === tmp2) {
-    let tmp4 = importDefault(16508);
+    let tmp4 = importDefault(16507);
   } else if (tmp3.UPDATE === tmp2) {
-    tmp4 = importDefault(16509);
+    tmp4 = importDefault(16508);
   } else {
     tmp4 = null;
     if (tmp3.DELETE === tmp2) {
-      tmp4 = importDefault(16510);
+      tmp4 = importDefault(16509);
     }
   }
   if (action === constants2.MESSAGE_DELETE) {

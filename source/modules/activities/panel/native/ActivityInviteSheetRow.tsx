@@ -1,8 +1,8 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 15973
+// Function ID: 15974
 // Dependencies: [19, 17, 1372, 1862, 1874, 7116, 21, 4285, 712, 589, 4475, 8989, 4812, 1297, 9052, 4124, 1236, 1416, 1856, 4281, 5315, 9055, 2]
 
-// Module 15974
+// Module 15973
 import { View } from "getAvatarURL";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

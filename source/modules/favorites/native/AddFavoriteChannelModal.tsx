@@ -1,10 +1,10 @@
-// Module ID: 12048
-// Function ID: 12049
+// Module ID: 12047
+// Function ID: 12048
 // Name: AddFavoriteChannelModal
-// Dependencies: [5, 32, 19, 17, 1410, 9539, 21, 4285, 712, 9629, 12049, 9633, 7226, 1351, 9628, 1474, 500, 10160, 1236, 3031, 4814, 10161, 10180, 12050, 10152, 4490, 2]
+// Dependencies: [5, 32, 19, 17, 1410, 9539, 21, 4285, 712, 9629, 12048, 9633, 7226, 1351, 9628, 1474, 500, 10160, 1236, 3031, 4814, 10161, 10180, 12049, 10152, 4490, 2]
 // Exports: openAddFavoriteChannelModal
 
-// Module 12048 (AddFavoriteChannelModal)
+// Module 12047 (AddFavoriteChannelModal)
 import UserRowModes from "UserRowModes";
 import _slicedToArray from "_slicedToArray";
 import messagesProxy from "messagesProxy";

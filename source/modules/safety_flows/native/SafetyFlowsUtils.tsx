@@ -1,10 +1,10 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 16829
+// Function ID: 16830
 // Name: fetchAndUpdateTask
-// Dependencies: [5, 19, 1874, 16824, 16826, 4490, 16825, 3986, 9793, 1236, 2547, 1480, 16829, 2]
+// Dependencies: [5, 19, 1874, 16823, 16825, 4490, 16824, 3986, 9793, 1236, 2547, 1480, 16828, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 16830 (fetchAndUpdateTask)
+// Module 16829 (fetchAndUpdateTask)
 import module_4490 from "module_4490";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -27,64 +27,13 @@ function _fetchAndUpdateTask() {
     let c2 = 0;
     let c3 = 0;
     return (function*(arg0) {
-      if (c3 === 2) {
-        c3 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === table) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_1 = tmp2;
-              closure_1 = undefined;
-              let obj2 = callback(table[4]);
-              table = 1;
-              c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = obj2.getCurrentTask();
-              return obj1;
-            }
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            obj2 = { value: null, done: true };
-            obj2[0] = arg1;
-            return obj2;
-          } else {
-            closure_1 = arg1;
-            if (null != closure_1) {
-              callback(closure_1);
-            }
-            c3 = 3;
-            obj = { value: null, done: true };
-            obj[0] = closure_1;
-            return obj;
-          }
-        } catch (tmp17) {
-          c3 = tmp;
-          throw tmp17;
-        }
+      let closure_1 = tmp2;
+      const obj2 = callback(table[4]);
+      closure_1 = yield obj2.getCurrentTask();
+      if (null != closure_1) {
+        callback(closure_1);
       }
+      return closure_1;
     })();
   });
   const _fetchAndUpdateTask = tmp;
@@ -99,7 +48,7 @@ function _fetchAndUpdateTask() {
 function navigateToScreenForTask(closure_1, closure_0) {
   if (null == closure_0) {
     let obj = importDefault(4490);
-    obj.popWithKey(require(16825) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    obj.popWithKey(require(16824) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
     obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: null, content: null };
     obj[1] = importDefault(9793);
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -107,11 +56,11 @@ function navigateToScreenForTask(closure_1, closure_0) {
     importDefault(3986).open(obj);
   } else {
     const task_type = closure_0.task_type;
-    const tmp16 = require(16824) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+    const tmp16 = require(16823) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(16824).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(16823).TaskType.EMAIL_VERIFICATION) {
         const currentUser = authStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -119,7 +68,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(16824).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(16823).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -128,18 +77,18 @@ function navigateToScreenForTask(closure_1, closure_0) {
     if (null != tmp5) {
       closure_1.push(tmp5[0]);
     } else {
-      closure_1.push(tmp14(16824).SafetyFlowScreens.UPDATE_APP);
+      closure_1.push(tmp14(16823).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
 
 export const getScreensForTaskType = function getScreensForTaskType(task_type) {
-  const tmp3 = require(16824) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+  const tmp3 = require(16823) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(16824).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(16823).TaskType.EMAIL_VERIFICATION) {
       const currentUser = authStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -147,7 +96,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(16824).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(16823).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12520
+// Function ID: 12521
 // Name: createActivityInstanceEmbed
-// Dependencies: [1371, 4322, 1218, 1372, 4371, 1874, 10906, 11260, 1236, 11261, 12512, 12522, 11262, 11263, 5611, 11432, 2]
+// Dependencies: [1371, 4322, 1218, 1372, 4371, 1874, 10906, 11260, 1236, 11261, 12511, 12521, 11262, 11263, 5611, 11432, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 12521 (createActivityInstanceEmbed)
+// Module 12520 (createActivityInstanceEmbed)
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
 import fetchFingerprint from "fetchFingerprint";
@@ -51,7 +51,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
           embeddedActivitiesForChannelIncludingHidden = embeddedActivitiesForChannelIncludingHidden.getEmbeddedActivitiesForChannelIncludingHidden(str);
           const found = embeddedActivitiesForChannelIncludingHidden.find((applicationId) => applicationId.applicationId === id.id);
           const currentEmbeddedActivity = obj4.getCurrentEmbeddedActivity();
-          let tmp5Result = tmp5(12512);
+          let tmp5Result = tmp5(12511);
           let obj = { activity: null, applicationId: null, guildId: null, channelId: null };
           obj[0] = found;
           obj[1] = application.id;
@@ -74,7 +74,7 @@ export const createActivityInstanceEmbed = function createActivityInstanceEmbed(
             }
             stringResult = details;
           }
-          tmp5Result = tmp5(12522);
+          tmp5Result = tmp5(12521);
           obj = { embeddedActivity: null, currentEmbeddedActivity: null, channel: null };
           obj[0] = found;
           obj[1] = currentEmbeddedActivity;

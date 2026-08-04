@@ -1,10 +1,10 @@
-// Module ID: 14638
-// Function ID: 14639
+// Module ID: 14637
+// Function ID: 14638
 // Name: getClientInfo
 // Dependencies: [10322, 21, 1578, 4253, 11100, 5638, 3985, 5646, 5337, 1236, 5648, 4149, 4233, 4265, 10361, 8235, 3958, 2]
 // Exports: getClientInfoString
 
-// Module 14638 (getClientInfo)
+// Module 14637 (getClientInfo)
 import getCurrentBuildOverride from "getCurrentBuildOverride";
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";

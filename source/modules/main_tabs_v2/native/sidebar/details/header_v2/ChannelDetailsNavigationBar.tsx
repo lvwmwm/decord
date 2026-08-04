@@ -1,9 +1,9 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15682
+// Function ID: 15683
 // Name: MuteButton
-// Dependencies: [19, 17, 3914, 3915, 1372, 4480, 8206, 9588, 676, 8207, 21, 4285, 11656, 712, 3989, 589, 1480, 7672, 1236, 9648, 7868, 11583, 11644, 4498, 5916, 9585, 7826, 5921, 15684, 4629, 4146, 4286, 15582, 4289, 10988, 4812, 5242, 2]
+// Dependencies: [19, 17, 3914, 3915, 1372, 4480, 8206, 9588, 676, 8207, 21, 4285, 11656, 712, 3989, 589, 1480, 7672, 1236, 9648, 7868, 11583, 11644, 4498, 5916, 9585, 7826, 5921, 15683, 4629, 4146, 4286, 15581, 4289, 10988, 4812, 5242, 2]
 
-// Module 15683 (MuteButton)
+// Module 15682 (MuteButton)
 import importAllResult from "registerAsset";
 import { View } from "IconButton";
 import initialize from "initialize";
@@ -282,12 +282,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
       obj = { duration: 200, easing: null };
       Easing = tmp2(tmp3[30]).Easing;
       obj[1] = Easing.bezier(0.25, 0.1, 0.25, 1);
-      fn = function n(arg0) {
-        if (arg0) {
-          outer1_0(outer1_2[30]).runOnJS(closure_1)();
-          const obj = outer1_0(outer1_2[30]);
-        }
-      };
+      fn = function n() { ... };
       obj1 = { runOnJS: tmp2(tmp3[30]).runOnJS, cleanUp };
       fn.__closure = obj1;
       fn.__workletHash = 10411737901360;
@@ -304,7 +299,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items, children: null };
   items = [callback4().searchHeader, animatedStyle];
-  obj[1] = callback2(cleanUp(15582), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
+  obj[1] = callback2(cleanUp(15581), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
   return callback2(cleanUp(4146).View, obj);
 });
 let closure_25 = { code: "function ChannelDetailsNavigationBarTsx3(){const{isActive,withTiming,timingFast,runOnJS,cleanUp,width}=this.__closure;return{pointerEvents:isActive?'auto':'none',opacity:withTiming(isActive?1:0,timingFast,'animate-always',function(finished){if(finished)runOnJS(cleanUp)();}),width:width};}" };

@@ -1,10 +1,10 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14443
+// Function ID: 14444
 // Name: SettingsAppearanceDarkModeThemePickerScreen
-// Dependencies: [19, 1305, 21, 14403, 1236, 2]
+// Dependencies: [19, 1305, 21, 14402, 1236, 2]
 // Exports: default
 
-// Module 14444 (SettingsAppearanceDarkModeThemePickerScreen)
+// Module 14443 (SettingsAppearanceDarkModeThemePickerScreen)
 import "noop";
 import { SystemTheme } from "SystemThemeState";
 import { jsx } from "jsxProd";
@@ -16,5 +16,5 @@ export default function SettingsAppearanceDarkModeThemePickerScreen() {
   const obj = { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["EgvHH/"]);
-  return jsx(importDefault(14403), { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null });
+  return jsx(importDefault(14402), { mode: SystemTheme.DARK, themeSelector: "nitro", headerTitle: null });
 };

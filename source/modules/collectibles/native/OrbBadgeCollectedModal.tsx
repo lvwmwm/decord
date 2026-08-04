@@ -1,10 +1,10 @@
-// Module ID: 12073
-// Function ID: 12074
+// Module ID: 12072
+// Function ID: 12073
 // Name: OrbBadgeCollectedRootScreen
 // Dependencies: [19, 17, 4277, 21, 4285, 712, 5238, 4490, 9340, 10054, 589, 5236, 11092, 8792, 11093, 5272, 9334, 4281, 1236, 4695, 8078, 9337, 5665, 2]
 // Exports: default
 
-// Module 12073 (OrbBadgeCollectedRootScreen)
+// Module 12072 (OrbBadgeCollectedRootScreen)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

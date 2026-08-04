@@ -1,7 +1,7 @@
 // Module ID: 8193
 // Function ID: 8194
 // Name: GenericHeaderTitle
-// Dependencies: [19, 17, 8194, 21, 4285, 712, 4281, 3989, 5239, 5245, 8195, 500, 8200, 1581, 1481, 8202, 5312, 643, 8205, 12450, 4812, 1297, 2]
+// Dependencies: [19, 17, 8194, 21, 4285, 712, 4281, 3989, 5239, 5245, 8195, 500, 8200, 1581, 1481, 8202, 5312, 643, 8205, 12449, 4812, 1297, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
 // Module 8193 (GenericHeaderTitle)
@@ -193,7 +193,7 @@ const memoResult = importAllResult.memo(function HeaderInner(style) {
     const items = [_undefined.headerWrapper, gradientTop, { paddingTop: num, minHeight: num + outer1_5 }, navigation];
     return items;
   }, items);
-  if (typeof headerTitle === "y") {
+  if (typeof headerTitle === "string") {
     let tmp6 = renderGenericTitle;
   } else {
     tmp6 = headerTitle;
@@ -213,7 +213,7 @@ const memoResult = importAllResult.memo(function HeaderInner(style) {
   obj[1] = navigation.isFocused() && navigation.canGoBack();
   obj[2] = text;
   const items1 = [fn(obj), , , ];
-  if (typeof headerTitle !== "y") {
+  if (typeof headerTitle !== "string") {
     let name = options.title;
     if (name == null) {
       name = style.route.name;

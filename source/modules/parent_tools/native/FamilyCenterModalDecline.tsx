@@ -1,10 +1,10 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14076
+// Function ID: 14077
 // Name: FamilyCenterModalDeclineScreen
-// Dependencies: [19, 17, 21, 4285, 712, 7260, 4490, 3985, 1236, 11236, 38, 7757, 7758, 14073, 7837, 4281, 2285, 14043, 11246, 5117, 4695, 5238, 11248, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 7260, 4490, 3985, 1236, 11236, 38, 7757, 7758, 14072, 7837, 4281, 2285, 14042, 11246, 5117, 4695, 5238, 11248, 2]
 // Exports: default
 
-// Module 14077 (FamilyCenterModalDeclineScreen)
+// Module 14076 (FamilyCenterModalDeclineScreen)
 import ButtonGroup from "ButtonGroup";
 import { View } from "FamilyCenterUsernameHeader";
 import jsxProd from "HeaderBackImage";
@@ -40,12 +40,12 @@ function FamilyCenterModalDeclineScreen(otherUser) {
   const obj2 = { otherUser, iconSrc: null };
   const tmp2 = declineLinkRequest(7260)();
   obj2[1] = declineLinkRequest(7837);
-  const items1 = [callback(declineLinkRequest(14073), obj2), , ];
+  const items1 = [callback(declineLinkRequest(14072), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold", children: null };
   let intl = otherUser(1236).intl;
   obj3[2] = intl.string(declineLinkRequest(2285).teIRCR);
   items1[1] = callback(otherUser(4281).Text, obj3);
-  items1[2] = callback(declineLinkRequest(14043), { user: otherUser });
+  items1[2] = callback(declineLinkRequest(14042), { user: otherUser });
   obj1[1] = items1;
   const items2 = [callback2(View, obj1), ];
   const obj4 = { style: tmp.body, children: null };

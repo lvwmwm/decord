@@ -1,10 +1,10 @@
-// Module ID: 15798
-// Function ID: 15799
+// Module ID: 15797
+// Function ID: 15798
 // Name: shouldComponentUpdate
 // Dependencies: [32, 853, 19, 1372, 5222, 1862, 3913, 3922, 1874, 676, 21, 4285, 712, 3997, 5223, 11697, 3918, 5200, 4623, 1236, 4475, 5315, 5649, 7777, 4693, 4281, 589, 1480, 38, 2]
 // Exports: default
 
-// Module 15798 (shouldComponentUpdate)
+// Module 15797 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12588
+// Function ID: 12589
 // Name: BuyNitroMarketingFooter
 // Dependencies: [19, 17, 21, 4285, 712, 5368, 7658, 5630, 2]
 // Exports: default
 
-// Module 12589 (BuyNitroMarketingFooter)
+// Module 12588 (BuyNitroMarketingFooter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

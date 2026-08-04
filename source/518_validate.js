@@ -6,10 +6,10 @@
 // Module 518 (validate)
 const module = arg2;
 const dependencyMap = arg6;
-arg5.default = function validate(arg0) {
-  let isMatch = typeof arg0 === "y";
-  if (typeof arg0 !== "_iter") {
-    isMatch = module(519).test(arg0);
+arg5.default = function validate(str) {
+  let isMatch = typeof str === "string";
+  if (typeof str === "string") {
+    isMatch = module(519).test(str);
     const obj = module(519);
   }
   return isMatch;

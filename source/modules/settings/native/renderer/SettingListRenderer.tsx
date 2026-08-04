@@ -1,9 +1,9 @@
-// Module ID: 13795
-// Function ID: 13796
+// Module ID: 13794
+// Function ID: 13795
 // Name: SearchListSectionLabel
-// Dependencies: [19, 17, 13796, 13797, 10362, 21, 4285, 712, 5649, 4281, 13798, 1581, 13799, 14826, 7666, 14827, 14830, 14831, 1844, 2]
+// Dependencies: [19, 17, 13795, 13796, 10362, 21, 4285, 712, 5649, 4281, 13797, 1581, 13798, 14825, 7666, 14826, 14829, 14830, 1844, 2]
 
-// Module 13795 (SearchListSectionLabel)
+// Module 13794 (SearchListSectionLabel)
 import importAllResult from "set";
 import { View } from "SettingSearchBar";
 import zustandStore from "zustandStore";
@@ -17,7 +17,7 @@ function SearchListSectionLabel(label) {
   label = label.label;
   let obj = { style: callback().spacer, children: null };
   let tmpResult = label;
-  if (typeof label !== "_iter") {
+  if (typeof label === "string") {
     obj = { title: null };
     obj[0] = label;
     tmpResult = tmp(require(5649) /* TableRowGroupTitle */.TableRowGroupTitle, obj);
@@ -28,7 +28,7 @@ function SearchListSectionLabel(label) {
 function SearchListSectionSubLabel(subLabel) {
   subLabel = subLabel.subLabel;
   let obj = { style: callback().subLabel, children: null };
-  if (typeof subLabel === "y") {
+  if (typeof subLabel === "string") {
     obj = { variant: "text-xs/normal", color: "text-muted", children: null };
     obj[2] = subLabel;
     let tmpResult = tmp(require(4281) /* Text */.Text, obj);
@@ -66,11 +66,11 @@ function renderItem(item) {
     obj[0] = item.label;
     return <SearchListSectionSubLabel subLabel={null} />;
   } else if (tmp.SETTING_SEARCH_RESULT === type) {
-    return require(13798) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
+    return require(13797) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
   } else if (tmp.SECTION_ROW === type) {
-    return require(13798) /* GuildSelectDefaultIcon */.renderSettingItem(item);
+    return require(13797) /* GuildSelectDefaultIcon */.renderSettingItem(item);
   } else if (tmp.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13798) /* GuildSelectDefaultIcon */;
+    obj = require(13797) /* GuildSelectDefaultIcon */;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -91,7 +91,7 @@ function keyExtractor(type) {
     }
   }
   let label = arg1;
-  if (typeof type.label !== "_iter") {
+  if (typeof type.label === "string") {
     label = type.label;
   }
   return "" + type.type + "-" + label;
@@ -113,7 +113,7 @@ const memoResult = importAllResult.memo((node) => {
   const items = [field, node];
   const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(14826);
+  let obj = node(14825);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container, children: null };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };

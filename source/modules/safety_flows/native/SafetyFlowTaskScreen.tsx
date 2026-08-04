@@ -1,10 +1,10 @@
-// Module ID: 16833
-// Function ID: 16834
+// Module ID: 16832
+// Function ID: 16833
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4285, 7757, 7758, 4693, 4281, 11246, 16831, 10181, 2]
+// Dependencies: [19, 21, 4285, 7757, 7758, 4693, 4281, 11246, 16830, 10181, 2]
 // Exports: default
 
-// Module 16833 (SafetyFlowTaskScreen)
+// Module 16832 (SafetyFlowTaskScreen)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -60,7 +60,7 @@ export default function SafetyFlowTaskScreen(action) {
   children = [closure_4(require(7758) /* ModalContent */.ModalContent, obj), ];
   if (undefined === footer) {
     if (withLogout) {
-      withLogout = tmp7(importDefault(16831), {});
+      withLogout = tmp7(importDefault(16830), {});
     }
     const items3 = [withLogout, ];
     tmp7Result = null != action;

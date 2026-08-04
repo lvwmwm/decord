@@ -1,10 +1,10 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 16750
+// Function ID: 16751
 // Name: MessagePreview
-// Dependencies: [32, 19, 17, 4277, 1862, 8944, 5277, 4278, 505, 21, 4285, 712, 1236, 14404, 10120, 14406, 4285, 1480, 589, 8943, 5238, 5917, 4253, 15289, 1959, 8878, 4146, 5315, 13813, 688, 4281, 9063, 3955, 5796, 689, 1297, 14419, 2]
+// Dependencies: [32, 19, 17, 4277, 1862, 8944, 5277, 4278, 505, 21, 4285, 712, 1236, 14403, 10120, 14405, 4285, 1480, 589, 8943, 5238, 5917, 4253, 15288, 1959, 8878, 4146, 5315, 13812, 688, 4281, 9063, 3955, 5796, 689, 1297, 14418, 2]
 // Exports: default
 
-// Module 16751 (MessagePreview)
+// Module 16750 (MessagePreview)
 import resetCache from "resetCache";
 import module_8943 from "module_8943";
 import get_ActivityIndicator from "useNavigation";
@@ -53,7 +53,7 @@ function MessagePreview(theme) {
   obj = { style: items1, children: null };
   items1 = [tmp.chatContainerInner, { backgroundColor: obj2.alpha(closure_10).hex() }];
   const obj1 = { source: null };
-  obj1[0] = importDefault(14419);
+  obj1[0] = importDefault(14418);
   const items2 = [callback(require(1297) /* Button */.Avatar, obj1), ];
   obj2 = { style: tmp.chatContent, children: null };
   const obj3 = { style: tmp.chatHeader, children: null };

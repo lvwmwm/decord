@@ -1,7 +1,7 @@
 // Module ID: 5119
 // Function ID: 5120
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1302, 5120, 676, 21, 5121, 5238, 5118, 5917, 4131, 5918, 5919, 5920, 1236, 5922, 5925, 1297, 5927, 12785, 5598, 4692, 5665, 2]
+// Dependencies: [32, 19, 1302, 5120, 676, 21, 5121, 5238, 5118, 5917, 4131, 5918, 5919, 5920, 1236, 5922, 5925, 1297, 5927, 12784, 5598, 4692, 5665, 2]
 // Exports: default
 
 // Module 5119 (PremiumGuildSubscribeModal)
@@ -99,7 +99,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
         obj5[1] = intl.string(outer1_0(outer1_2[14]).t.VJEVbu);
         obj5[2] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(12785), {});
+          return callback3(callback2(12784), {});
         };
         obj2[outer1_6.CONFIRMATION] = obj5;
         obj1[1] = obj2;

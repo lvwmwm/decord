@@ -1,10 +1,10 @@
-// Module ID: 15054
-// Function ID: 15055
+// Module ID: 15053
+// Function ID: 15054
 // Name: context
-// Dependencies: [32, 19, 15055, 15056, 676, 4142, 4146, 1481, 698, 4254, 1474, 1581, 4139, 15057, 4136, 4694, 5368, 7820, 2]
+// Dependencies: [32, 19, 15054, 15055, 676, 4142, 4146, 1481, 698, 4254, 1474, 1581, 4139, 15056, 4136, 4694, 5368, 7820, 2]
 // Exports: useHomeDrawerState, useHomeGesture, useIsHomeDrawerEnabled
 
-// Module 15054 (context)
+// Module 15053 (context)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import withEqualityFn from "withEqualityFn";
@@ -522,7 +522,7 @@ export const useHomeGesture = function useHomeGesture() {
             const runOnJSResult = enableHome(gestureState[6]).runOnJS(enableHome(gestureState[9]).triggerHapticFeedback);
           }
         }
-        if (typeof settleDrawer !== "find") {
+        if (typeof settleDrawer !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let num5 = 0;
@@ -552,7 +552,7 @@ export const useHomeGesture = function useHomeGesture() {
           const runOnJSResult1 = enableHome(gestureState[6]).runOnJS(enableHome(gestureState[9]).triggerHapticFeedback);
         }
       }
-      if (typeof shouldOpenFromPosition !== "find") {
+      if (typeof shouldOpenFromPosition !== "function") {
         HermesBuiltin.throwTypeError();
       }
       flag = 0 !== shouldOpenFromPosition.get();
@@ -579,7 +579,7 @@ export const useHomeGesture = function useHomeGesture() {
         tmp = obj.get() < outer1_4;
       }
       if (tmp) {
-        if (typeof shouldOpenFromPosition !== "find") {
+        if (typeof shouldOpenFromPosition !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let tmp5 = 0 !== obj.get();
@@ -594,7 +594,7 @@ export const useHomeGesture = function useHomeGesture() {
           }
           tmp5 = tmp7;
         }
-        if (typeof tmp3 !== "find") {
+        if (typeof tmp3 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let num2 = 0;

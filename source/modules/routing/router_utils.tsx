@@ -13,8 +13,8 @@ let closure_6;
 let error;
 function transitionTo(ME, closure_1) {
   let closure_0 = ME;
-  let tmp = typeof ME === "_iter";
-  if (typeof ME !== "_iter") {
+  let tmp = typeof ME !== "string";
+  if (typeof ME === "string") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;
@@ -86,8 +86,8 @@ export const currentRouteHasBackNavigation = function currentRouteHasBackNavigat
 };
 export const replaceWith = function replaceWith(ME, state) {
   let closure_0 = ME;
-  let tmp = typeof ME === "_iter";
-  if (typeof ME !== "_iter") {
+  let tmp = typeof ME !== "string";
+  if (typeof ME === "string") {
     tmp = !items.some((arg0) => ME.startsWith(arg0));
   }
   let flag = !tmp;
@@ -106,7 +106,7 @@ export const replaceWith = function replaceWith(ME, state) {
   if (!flag) {
     const _HermesInternal2 = HermesInternal;
     tmp3.log("Replacing route with " + ME);
-    if (typeof ME === "y") {
+    if (typeof ME === "string") {
       const replaced1 = _extends.replace(ME, state);
     } else {
       const replaced2 = _extends.replace(ME);

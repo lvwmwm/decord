@@ -1,9 +1,9 @@
-// Module ID: 14230
-// Function ID: 14231
+// Module ID: 14229
+// Function ID: 14230
 // Name: BountiesCtaDescription
-// Dependencies: [19, 17, 4277, 14231, 5128, 21, 4285, 712, 1236, 4281, 14212, 589, 7108, 10895, 5131, 7097, 7107, 14153, 14232, 14233, 1297, 4695, 14226, 11086, 3997, 7668, 11090, 2]
+// Dependencies: [19, 17, 4277, 14230, 5128, 21, 4285, 712, 1236, 4281, 14211, 589, 7108, 10895, 5131, 7097, 7107, 14152, 14231, 14232, 1297, 4695, 14225, 11086, 3997, 7668, 11090, 2]
 
-// Module 14230 (BountiesCtaDescription)
+// Module 14229 (BountiesCtaDescription)
 import importAllResult from "metadata";
 import get_ActivityIndicator from "BOUNTIES_MODAL_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -36,7 +36,7 @@ function BountiesCtaDescription(isEmptyOrCompleted) {
   const tmp7 = callback(tmp5(4281).Text, obj);
   const intl2 = tmp5(1236).intl;
   obj = { onClick: null };
-  obj[0] = importDefault(14212);
+  obj[0] = importDefault(14211);
   const formatResult = intl2.format(tmp5(1236).t.fjSvsC, obj);
   if (isEmptyOrCompleted) {
     obj = { variant: "text-sm/medium", children: null };
@@ -84,7 +84,7 @@ function BountiesCtaHeaderInner(bounties) {
     _undefined(outer1_2[17]).showModal(obj);
   }, items3);
   obj = { uri: null, style: null, children: null };
-  obj[0] = importDefault(14233);
+  obj[0] = importDefault(14232);
   const items4 = [, ];
   ({ header: arr5[0], headerRoundedBottom: arr5[1] } = tmp);
   obj[1] = items4;
@@ -112,7 +112,7 @@ function BountiesCtaHeaderInner(bounties) {
   obj2[1] = items6;
   items5[1] = closure_11(closure_4, obj2);
   obj[2] = items5;
-  const items7 = [closure_11(importDefault(14232), obj), false];
+  const items7 = [closure_11(importDefault(14231), obj), false];
   obj[2] = items7;
   return closure_11(closure_4, obj);
 }
@@ -144,7 +144,7 @@ let closure_12 = createCacheKey.createStyles(() => {
 });
 const memoResult = importAllResult.memo(function BountiesCtaHeader(isEmptyOrCompleted) {
   const _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(14226)();
+  const tmp2 = containerRef(14225)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;

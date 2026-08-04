@@ -1,9 +1,9 @@
-// Module ID: 13887
-// Function ID: 13888
+// Module ID: 13886
+// Function ID: 13887
 // Name: handleInit
 // Dependencies: [589, 709, 2]
 
-// Module 13887 (handleInit)
+// Module 13886 (handleInit)
 import { Store } from "initialize";
 
 function handleInit() {

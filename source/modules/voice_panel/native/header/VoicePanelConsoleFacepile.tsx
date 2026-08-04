@@ -1,10 +1,10 @@
-// Module ID: 16070
-// Function ID: 16071
+// Module ID: 16069
+// Function ID: 16070
 // Name: getConsoleInfo
-// Dependencies: [19, 676, 21, 4285, 712, 12126, 1236, 10770, 1351, 5663, 1297, 2]
+// Dependencies: [19, 676, 21, 4285, 712, 12125, 1236, 10770, 1351, 5663, 1297, 2]
 // Exports: default
 
-// Module 16070 (getConsoleInfo)
+// Module 16069 (getConsoleInfo)
 import noop from "noop";
 import { PlatformTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ function getConsoleInfo(type) {
   type = type.type;
   if (PlatformTypes.XBOX === type) {
     let obj = { icon: null, color: null, connectLabel: null, connectSublabel: null };
-    obj[0] = importDefault(12126)(type.type);
+    obj[0] = importDefault(12125)(type.type);
     obj[1] = importDefault(712).unsafe_rawColors.PLATFORM_XBOX;
     const intl3 = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.QN7HXV);
@@ -24,7 +24,7 @@ function getConsoleInfo(type) {
     return obj;
   } else if (tmp.PLAYSTATION === type) {
     obj = { icon: null, color: null, connectLabel: null, connectSublabel: null };
-    obj[0] = importDefault(12126)(type.type);
+    obj[0] = importDefault(12125)(type.type);
     obj[1] = importDefault(712).unsafe_rawColors.PLATFORM_PLAYSTATION;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(require(1236) /* getSystemLocale */.t["3qLlTS"]);

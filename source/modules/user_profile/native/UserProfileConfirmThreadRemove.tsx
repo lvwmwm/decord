@@ -1,10 +1,10 @@
-// Module ID: 11896
-// Function ID: 11897
+// Module ID: 11895
+// Function ID: 11896
 // Name: UserProfileConfirmThreadRemove
 // Dependencies: [19, 21, 4124, 4628, 1236, 4628, 2]
 // Exports: default
 
-// Module 11896 (UserProfileConfirmThreadRemove)
+// Module 11895 (UserProfileConfirmThreadRemove)
 import "noop";
 import jsxProd from "jsxProd";
 

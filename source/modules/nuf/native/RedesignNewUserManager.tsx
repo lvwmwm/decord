@@ -1,9 +1,9 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16390
+// Function ID: 16391
 // Name: prototype
-// Dependencies: [11945, 7681, 5229, 8987, 16392, 4490, 16394, 1959, 16393, 500, 4136, 2]
+// Dependencies: [11944, 7681, 5229, 8987, 16391, 4490, 16393, 1959, 16392, 500, 4136, 2]
 
-// Module 16391 (prototype)
+// Module 16390 (prototype)
 import ContactSyncModes from "ContactSyncModes";
 import initialize from "initialize";
 import "initialize";

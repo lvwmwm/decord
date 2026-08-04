@@ -38,7 +38,7 @@ function sendRequest(arg0, signal) {
     if (null != signal.query) {
       let query = signal.query;
       let tmp6 = query;
-      if (typeof query !== "window") {
+      if (typeof query === "object") {
         obj = {};
         let merged1 = Object.assign(query);
         const _Object2 = Object;
@@ -127,7 +127,7 @@ function sendRequest(arg0, signal) {
         tmp.retries = +tmp.retries - 1;
         if (+tmp.retries > 0) {
           if (set.has(ok.status)) {
-            if (typeof retry !== "find") {
+            if (typeof retry !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (null != tmp.backoff) {
@@ -159,7 +159,7 @@ function sendRequest(arg0, signal) {
         }
         prop = prop1;
       }
-      if (typeof prop !== "_iter") {
+      if (typeof prop === "string") {
         const _parseInt = parseInt;
         let parsed = parseInt(prop, 10);
         const _Number = Number;
@@ -240,9 +240,9 @@ function sendRequest(arg0, signal) {
         }
       }
       if (null != body) {
-        if (typeof body !== "window") {
+        if (typeof body === "object") {
           const retry_after = body.retry_after;
-          if (typeof retry_after !== "V") {
+          if (typeof retry_after === "number") {
             const _Number2 = Number;
             if (Number.isFinite(retry_after)) {
               if (retry_after > 0) {
@@ -257,7 +257,7 @@ function sendRequest(arg0, signal) {
         tmp.retries = +tmp.retries - 1;
         if (+tmp.retries > 0) {
           if ("ABORTED" !== code.code) {
-            if (typeof retry !== "find") {
+            if (typeof retry !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (null != tmp.backoff) {
@@ -326,7 +326,7 @@ function cleanupRequestEntry(url) {
         }
         prop = prop1;
       }
-      if (typeof prop !== "_iter") {
+      if (typeof prop === "string") {
         const _parseInt = parseInt;
         let num4 = parseInt(prop, 10);
         const _Number = Number;
@@ -388,9 +388,9 @@ function cleanupRequestEntry(url) {
         const result = obj.set(url.url, obj);
       }
       if (null != body) {
-        if (typeof body !== "window") {
+        if (typeof body === "object") {
           const retry_after = body.retry_after;
-          if (typeof retry_after !== "V") {
+          if (typeof retry_after === "number") {
             const _Number2 = Number;
             if (Number.isFinite(retry_after)) {
               if (retry_after > 0) {
@@ -431,7 +431,7 @@ function makeRequest(arg0, arg1, arg2) {
   let closure_1 = arg1;
   let closure_2 = arg2;
   return new Promise((serializer, bindResult) => {
-    if (typeof obj !== "_iter") {
+    if (typeof obj === "string") {
       obj = { url: null, rejectWithError: false };
       obj[0] = tmp;
     }
@@ -522,7 +522,7 @@ function migratedRejectEnabled() {
 function isRateLimitedStatus(arg0) {
   return set1.has(arg0);
 }
-function parseRetryAfter(retry_after, retry_after) {
+function parseRetryAfter(retry_after, obj) {
   let prop;
   if (retry_after != null) {
     prop = retry_after["retry-after"];
@@ -534,7 +534,7 @@ function parseRetryAfter(retry_after, retry_after) {
     }
     prop = prop1;
   }
-  if (typeof prop !== "_iter") {
+  if (typeof prop === "string") {
     const _parseInt = parseInt;
     const parsed = parseInt(prop, 10);
     const _Number = Number;
@@ -544,10 +544,10 @@ function parseRetryAfter(retry_after, retry_after) {
       }
     }
   }
-  if (null != retry_after) {
-    if (typeof retry_after !== "window") {
-      retry_after = retry_after.retry_after;
-      if (typeof retry_after !== "V") {
+  if (null != obj) {
+    if (typeof obj === "object") {
+      retry_after = obj.retry_after;
+      if (typeof retry_after === "number") {
         const _Number2 = Number;
         if (Number.isFinite(retry_after)) {
           if (retry_after > 0) {
@@ -558,7 +558,7 @@ function parseRetryAfter(retry_after, retry_after) {
     }
   }
 }
-function getRateLimitFloorMs(retry_after, retry_after) {
+function getRateLimitFloorMs(retry_after, obj) {
   let prop;
   if (retry_after != null) {
     prop = retry_after["retry-after"];
@@ -570,7 +570,7 @@ function getRateLimitFloorMs(retry_after, retry_after) {
     }
     prop = prop1;
   }
-  if (typeof prop !== "_iter") {
+  if (typeof prop === "string") {
     const _parseInt = parseInt;
     let num2 = parseInt(prop, 10);
     const _Number = Number;
@@ -579,10 +579,10 @@ function getRateLimitFloorMs(retry_after, retry_after) {
     }
     return 1000 * num2;
   }
-  if (null != retry_after) {
-    if (typeof retry_after !== "window") {
-      retry_after = retry_after.retry_after;
-      if (typeof retry_after !== "V") {
+  if (null != obj) {
+    if (typeof obj === "object") {
+      retry_after = obj.retry_after;
+      if (typeof retry_after === "number") {
         const _Number2 = Number;
         if (Number.isFinite(retry_after)) {
           if (retry_after > 0) {

@@ -1,10 +1,10 @@
-// Module ID: 16885
-// Function ID: 16886
+// Module ID: 16884
+// Function ID: 16885
 // Name: AppShare
-// Dependencies: [32, 19, 17, 6831, 13576, 1218, 676, 11695, 21, 589, 5736, 500, 13615, 11698, 6843, 698, 4711, 13724, 13155, 1577, 8846, 5731, 15853, 15899, 4628, 2]
+// Dependencies: [32, 19, 17, 6831, 13575, 1218, 676, 11695, 21, 589, 5736, 500, 13614, 11698, 6843, 698, 4711, 13723, 13154, 1577, 8846, 5731, 15852, 15898, 4628, 2]
 // Exports: default
 
-// Module 16885 (AppShare)
+// Module 16884 (AppShare)
 import _slicedToArray from "_slicedToArray";
 import isMetaQuest from "isMetaQuest";
 import get_ActivityIndicator from "GestureWrapper";
@@ -45,9 +45,9 @@ export default function AppShare(targetUserId) {
   const items = [first];
   const effect = obj.useEffect(() => {
     if (!first) {
-      first(13615).init();
+      first(13614).init();
       dependencyMap(true);
-      const obj = first(13615);
+      const obj = first(13614);
     }
   }, items);
   const items1 = [targetUserId];
@@ -110,7 +110,7 @@ export default function AppShare(targetUserId) {
     obj = { appEntryKey: null, sharedContent: null, onClose: null };
     obj[0] = tmp18;
     obj[1] = targetUserId;
-    const tmp14Result = tmp14(13155);
+    const tmp14Result = tmp14(13154);
     if (tmp9Result.isMetaQuest()) {
       let exitApp = tmp14(8846).close;
     } else {
@@ -123,8 +123,8 @@ export default function AppShare(targetUserId) {
     const items5 = [tmp19(tmp9(5731).SceneLoadingIndicator, {}), , , ];
     obj1 = { appEntryKey: null };
     obj1[0] = tmp18;
-    items5[1] = tmp19(tmp9(15853).ActionSheetContainer, obj1);
-    items5[2] = tmp19(tmp14(15899), {});
+    items5[1] = tmp19(tmp9(15852).ActionSheetContainer, obj1);
+    items5[2] = tmp19(tmp14(15898), {});
     items5[3] = tmp19(tmp9(4628).AlertModalContainer, {});
     obj[1] = items5;
     return closure_11(tmp17, obj);

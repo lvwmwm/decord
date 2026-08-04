@@ -1,10 +1,10 @@
-// Module ID: 13838
-// Function ID: 13839
+// Module ID: 13837
+// Function ID: 13838
 // Name: HideBadgesSheet
 // Dependencies: [19, 21, 5338, 1236, 5337, 2]
 // Exports: default
 
-// Module 13838 (HideBadgesSheet)
+// Module 13837 (HideBadgesSheet)
 import "noop";
 import { jsx } from "jsxProd";
 

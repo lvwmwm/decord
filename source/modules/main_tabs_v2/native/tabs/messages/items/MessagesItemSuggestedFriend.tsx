@@ -1,10 +1,10 @@
-// Module ID: 15073
-// Function ID: 15074
+// Module ID: 15072
+// Function ID: 15073
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 3922, 676, 21, 4285, 712, 9370, 8705, 1959, 647, 1236, 4124, 15074, 15075, 698, 4812, 1297, 4281, 4695, 4231, 7666, 15072, 2]
+// Dependencies: [32, 19, 17, 3922, 676, 21, 4285, 712, 9370, 8705, 1959, 647, 1236, 4124, 15073, 15074, 698, 4812, 1297, 4281, 4695, 4231, 7666, 15071, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15073 (getMessagesItemSuggestedFriendHeight)
+// Module 15072 (getMessagesItemSuggestedFriendHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Text";
 import { View } from "PressableBase";
@@ -105,7 +105,7 @@ let closure_12 = importAllResult.memo(function MessagesItemSuggestedFriendView(h
     setAddedPressed(true);
   }, items4);
   obj = { accessibilityRole: "button", style: memo, onPress: callback, collapsable: false, children: null };
-  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: false };
+  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: true };
   obj[3] = height(suggestedFriend[18]).AvatarSizes.REFRESH_MEDIUM_32;
   const items5 = [callback2(height(suggestedFriend[18]).Avatar, obj), , ];
   obj1 = { style: tmp.textContainer, children: null };
@@ -158,7 +158,7 @@ const memoResult1 = importAllResult.memo((suggestedFriend) => {
 const memoResult2 = importAllResult.memo((arg0) => {
   let tmp2;
   let tmp3;
-  let obj = require(15072) /* toNativeHorizontalOffset */;
+  let obj = require(15071) /* toNativeHorizontalOffset */;
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);

@@ -1,10 +1,10 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 16751
+// Function ID: 16752
 // Name: ConnectedNotificationSettings
-// Dependencies: [109, 19, 17, 1376, 1372, 5222, 4206, 1862, 16460, 3922, 4480, 1874, 676, 21, 4285, 712, 3997, 4479, 4253, 9734, 1959, 5230, 5225, 9744, 9748, 9755, 7795, 1236, 7794, 5649, 5650, 4281, 1297, 3982, 1945, 9743, 5315, 9738, 5321, 12021, 3916, 4483, 4745, 4475, 7777, 4693, 9739, 1480, 589, 5223, 5596, 5238, 16753, 9733, 5665, 2]
+// Dependencies: [109, 19, 17, 1376, 1372, 5222, 4206, 1862, 16459, 3922, 4480, 1874, 676, 21, 4285, 712, 3997, 4479, 4253, 9734, 1959, 5230, 5225, 9744, 9748, 9755, 7795, 1236, 7794, 5649, 5650, 4281, 1297, 3982, 1945, 9743, 5315, 9738, 5321, 12020, 3916, 4483, 4745, 4475, 7777, 4693, 9739, 1480, 589, 5223, 5596, 5238, 16752, 9733, 5665, 2]
 // Exports: default
 
-// Module 16752 (ConnectedNotificationSettings)
+// Module 16751 (ConnectedNotificationSettings)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "MuteSettings";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -370,7 +370,7 @@ prototype["renderChannels"] = function renderChannels() {
   obj[0] = intl.string(self(1236).t.O4TIvi);
   obj = { icon: null, label: null, onPress: null };
   obj = { IconComponent: null };
-  obj[0] = self(12021).PlusMediumIcon;
+  obj[0] = self(12020).PlusMediumIcon;
   obj[0] = callback2(self(5321).TableRowIcon, obj);
   const intl2 = self(1236).intl;
   obj[1] = intl2.string(self(1236).t.quib7R);
@@ -509,7 +509,7 @@ export default function NotificationSettingsModal() {
     const obj3 = callback(5238);
     obj[1] = callback(5238).getHeaderBackButton();
     obj[2] = function render(guildId, navigation) {
-      return callback2(callback(16753), { guildId: guildId.guildId, navigation });
+      return callback2(callback(16752), { guildId: guildId.guildId, navigation });
     };
     obj[constants.ADD_OVERRIDE] = obj;
     const obj1 = { headerLeft: null, title: null, render: null };

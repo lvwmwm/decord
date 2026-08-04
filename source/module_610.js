@@ -3,8 +3,8 @@
 // Dependencies: []
 
 // Module 610
-let tmp = typeof global === "ay";
-if (typeof global !== "window") {
+let tmp = typeof global === "object";
+if (typeof global === "object") {
   tmp = global;
 }
 if (tmp) {

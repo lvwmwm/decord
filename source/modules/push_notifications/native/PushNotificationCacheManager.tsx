@@ -1,9 +1,9 @@
-// Module ID: 16427
-// Function ID: 16428
+// Module ID: 16426
+// Function ID: 16427
 // Name: prototype
 // Dependencies: [11694, 1874, 4124, 5229, 10668, 2]
 
-// Module 16427 (prototype)
+// Module 16426 (prototype)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import "initialize";

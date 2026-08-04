@@ -1,10 +1,10 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15738
+// Function ID: 15739
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1874, 1369, 1876, 21, 4285, 501, 712, 1348, 12645, 6822, 4101, 1358, 589, 8117, 8745, 8754, 4131, 689, 3931, 15740, 10375, 15741, 15742, 11080, 5131, 15743, 14145, 1236, 15744, 15746, 7625, 5920, 4706, 2]
+// Dependencies: [19, 17, 1874, 1369, 1876, 21, 4285, 501, 712, 1348, 12644, 6822, 4101, 1358, 589, 8117, 8745, 8754, 4131, 689, 3931, 15739, 10375, 15740, 15741, 11080, 5131, 15742, 14144, 1236, 15743, 15745, 7625, 5920, 4706, 2]
 // Exports: useHasSettingsBadge
 
-// Module 15739 (useHasSettingsBadge)
+// Module 15738 (useHasSettingsBadge)
 import importAllResult from "n";
 import get_ActivityIndicator from "useUserProfileColors";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -268,8 +268,8 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tab
 
 export default memoResult;
 export const useHasSettingsBadge = function useHasSettingsBadge() {
-  let tmp = require(12645) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
-  const obj = require(12645) /* useEligibleActiveOutboundPromotions */;
+  let tmp = require(12644) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
+  const obj = require(12644) /* useEligibleActiveOutboundPromotions */;
   const obj2 = require(6822) /* hasUserTrialOfferExpired */;
   const tmp2 = null != require(6822) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
   const result = require(4101) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);

@@ -1,10 +1,10 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15146
+// Function ID: 15147
 // Name: VoiceGuildTagChiplet
 // Dependencies: [19, 17, 1874, 7862, 21, 500, 4285, 712, 589, 8076, 9169, 4281, 2]
 // Exports: default
 
-// Module 15147 (VoiceGuildTagChiplet)
+// Module 15146 (VoiceGuildTagChiplet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,10 +1,10 @@
-// Module ID: 14468
-// Function ID: 14469
+// Module ID: 14467
+// Function ID: 14468
 // Name: useOfficialMessageStyleSettingValue
-// Dependencies: [19, 4277, 7892, 589, 13618, 1236, 10361, 2]
+// Dependencies: [19, 4277, 7892, 589, 13617, 1236, 10361, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 14468 (useOfficialMessageStyleSettingValue)
+// Module 14467 (useOfficialMessageStyleSettingValue)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
@@ -15,7 +15,7 @@ function useOfficialMessageStyleSettingValue() {
   return require(589) /* initialize */.useStateFromStores(items, () => officialMessageStyle.officialMessageStyle);
 }
 function onOfficialMessageStyleSettingValueChange(officialMessageStyle) {
-  const result = require(13618) /* setFontSize */.setOfficialMessageStyle(officialMessageStyle);
+  const result = require(13617) /* setFontSize */.setOfficialMessageStyle(officialMessageStyle);
 }
 function useOfficialMessageStyleSettingOptions() {
   return React.useMemo(() => {

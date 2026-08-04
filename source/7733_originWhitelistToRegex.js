@@ -239,7 +239,7 @@ export const useWebWiewLogic = (onNavigationStateChange) => {
     }
   }, items7);
   obj[0] = onLoadProgress(() => {
-    if (typeof closure_14 !== "find") {
+    if (typeof closure_14 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const onNavigationStateChange = onShouldStartLoadWithRequestCallback;

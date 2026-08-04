@@ -1,9 +1,9 @@
-// Module ID: 16814
-// Function ID: 16815
+// Module ID: 16813
+// Function ID: 16814
 // Name: platformShowStreamFull
-// Dependencies: [19, 4374, 4340, 4345, 21, 3, 16815, 4624, 16816, 1959, 10726, 9077, 2]
+// Dependencies: [19, 4374, 4340, 4345, 21, 3, 16814, 4624, 16815, 1959, 10726, 9077, 2]
 
-// Module 16814 (platformShowStreamFull)
+// Module 16813 (platformShowStreamFull)
 import "noop";
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import { ApplicationStreamPresets } from "RESOLUTION_720";

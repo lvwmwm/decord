@@ -1,9 +1,9 @@
-// Module ID: 13698
-// Function ID: 13699
+// Module ID: 13697
+// Function ID: 13698
 // Name: importDefaultResult1
-// Dependencies: [1372, 1932, 1862, 4332, 3913, 4356, 3922, 5104, 1874, 4301, 10741, 676, 13699, 13700, 13701, 13702, 7837, 12960, 13703, 13704, 7824, 1236, 4149, 39, 13705, 10752, 7136, 4475, 5126, 698, 4479, 4463, 2]
+// Dependencies: [1372, 1932, 1862, 4332, 3913, 4356, 3922, 5104, 1874, 4301, 10741, 676, 13698, 13699, 13700, 13701, 7837, 12959, 13702, 13703, 7824, 1236, 4149, 39, 13704, 10752, 7136, 4475, 5126, 698, 4479, 4463, 2]
 
-// Module 13698 (importDefaultResult1)
+// Module 13697 (importDefaultResult1)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -429,7 +429,7 @@ prototype["initialize"] = function initialize() {
   const self = this;
   let obj = require(4149) /* isFabric */;
   if (!tmp2) {
-    if (typeof NativeCallableInterface !== "find") {
+    if (typeof NativeCallableInterface !== "function") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(NativeCallableInterface.prototype);

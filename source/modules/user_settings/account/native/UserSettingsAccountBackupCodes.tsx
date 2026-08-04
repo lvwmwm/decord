@@ -1,10 +1,10 @@
-// Module ID: 13894
-// Function ID: 13895
+// Module ID: 13893
+// Function ID: 13894
 // Name: CodeRow
-// Dependencies: [19, 17, 12915, 21, 4285, 712, 5638, 3985, 5315, 5304, 1236, 3989, 589, 13895, 4693, 4281, 5649, 2]
+// Dependencies: [19, 17, 12914, 21, 4285, 712, 5638, 3985, 5315, 5304, 1236, 3989, 589, 13894, 4693, 4281, 5649, 2]
 // Exports: default
 
-// Module 13894 (CodeRow)
+// Module 13893 (CodeRow)
 import noop from "noop";
 import { ScrollView } from "set";
 import getVerificationKey from "getVerificationKey";
@@ -110,7 +110,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     obj4[0] = tmp10(tmp3(4281).Text, obj5);
     obj4[1] = function onPress() {
       const verificationKey = store.getVerificationKey();
-      const result = callback(13895).confirmViewBackupCodes(verificationKey, true);
+      const result = callback(13894).confirmViewBackupCodes(verificationKey, true);
     };
     obj3[1] = tmp10(tmp3(5315).TableRow, obj4);
     tmp10Result1 = tmp10(tmp3(5649).TableRowGroup, obj3);

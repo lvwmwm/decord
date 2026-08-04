@@ -1,8 +1,8 @@
-// Module ID: 13147
-// Function ID: 13148
-// Dependencies: [4199, 3913, 676, 1236, 589, 13148, 2]
+// Module ID: 13146
+// Function ID: 13147
+// Dependencies: [4199, 3913, 676, 1236, 589, 13147, 2]
 
-// Module 13147
+// Module 13146
 import getHash from "getHash";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";

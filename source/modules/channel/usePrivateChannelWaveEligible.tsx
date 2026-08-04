@@ -1,10 +1,10 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 15068
+// Function ID: 15069
 // Name: usePrivateChannelWaveEligible
 // Dependencies: [4502, 3922, 1379, 676, 589, 11, 3955, 3867, 10254, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 15069 (usePrivateChannelWaveEligible)
+// Module 15068 (usePrivateChannelWaveEligible)
 import reinjectEphemerals from "reinjectEphemerals";
 import upsertRelationship from "upsertRelationship";
 import { ChannelFlags } from "set";

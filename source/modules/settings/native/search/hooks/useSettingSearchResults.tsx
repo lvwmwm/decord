@@ -1,10 +1,10 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 14826
+// Function ID: 14827
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 13796, 13797, 14823, 13801, 14828, 13799, 636, 2]
+// Dependencies: [32, 19, 13795, 13796, 14822, 13800, 14827, 13798, 636, 2]
 // Exports: useSettingSearchResults
 
-// Module 14827 (useSettingSearchResults)
+// Module 14826 (useSettingSearchResults)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import zustandStore from "zustandStore";
@@ -16,8 +16,8 @@ const result = require("zustandStore").fileFinishedImporting("modules/settings/n
 
 export const useSettingSearchResults = function useSettingSearchResults() {
   const memo = memo1.useMemo(() => {
-    let tmp = callback(14828);
-    tmp = new tmp(memo(13799).getSettingSearchableTitles());
+    let tmp = callback(14827);
+    tmp = new tmp(memo(13798).getSettingSearchableTitles());
     return tmp;
   }, []);
   const settings = callback(memo1.useState(closure_7), 2);

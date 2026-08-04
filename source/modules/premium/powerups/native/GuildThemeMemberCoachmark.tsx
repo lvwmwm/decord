@@ -1,10 +1,10 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15175
+// Function ID: 15176
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 4277, 4172, 4173, 1369, 21, 4285, 712, 589, 4176, 11793, 15177, 4192, 5118, 1236, 2317, 11796, 8575, 2]
+// Dependencies: [19, 4277, 4172, 4173, 1369, 21, 4285, 712, 589, 4176, 11793, 15176, 4192, 5118, 1236, 2317, 11796, 8575, 2]
 // Exports: default
 
-// Module 15176 (GuildThemeMemberCoachmark)
+// Module 15175 (GuildThemeMemberCoachmark)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -48,7 +48,7 @@ export default function GuildThemeMemberCoachmark(guildId) {
   const obj2 = guildId(589);
   guildPowerupBannerImage = guildId(11793).getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(15177);
+    guildPowerupBannerImage = markAsDismissed(15176);
   }
   const diff = callback - markAsDismissed(4192)(guildId).available;
   c5 = diff;

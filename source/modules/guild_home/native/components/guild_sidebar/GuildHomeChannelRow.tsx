@@ -1,10 +1,10 @@
-// Module ID: 15209
-// Function ID: 15210
+// Module ID: 15208
+// Function ID: 15209
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 676, 1379, 9710, 21, 4285, 712, 1222, 11665, 1236, 13098, 2]
+// Dependencies: [19, 676, 1379, 9710, 21, 4285, 712, 1222, 11665, 1236, 13097, 2]
 // Exports: default
 
-// Module 15209 (GuildHomeChannelRow)
+// Module 15208 (GuildHomeChannelRow)
 import noop from "noop";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
@@ -46,7 +46,7 @@ export default function GuildHomeChannelRow(selected) {
   obj[1] = DEFAULT;
   obj[6] = jsx(tmp5(11665).BaseChannelName, { name: null, mode: null });
   obj = { mode: DEFAULT, IconComponent: null };
-  obj[1] = tmp5(13098).SignPostIcon;
+  obj[1] = tmp5(13097).SignPostIcon;
   obj[7] = jsx(tmp5(11665).BaseChannelIcon, { mode: DEFAULT, IconComponent: null });
   return jsx(importDefault(11665), { mode: DEFAULT, IconComponent: null });
 };

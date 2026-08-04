@@ -1,9 +1,9 @@
-// Module ID: 15658
-// Function ID: 15659
+// Module ID: 15657
+// Function ID: 15658
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 1372, 676, 1235, 21, 4285, 712, 5798, 5310, 10079, 4293, 15659, 647, 1481, 2]
+// Dependencies: [19, 17, 1372, 676, 1235, 21, 4285, 712, 5798, 5310, 10079, 4293, 15658, 647, 1481, 2]
 
-// Module 15658 (ThreadsScreen)
+// Module 15657 (ThreadsScreen)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -42,7 +42,7 @@ function ThreadsScreen(channel) {
   }
   obj[1] = tmp10;
   obj[2] = callback1;
-  const tmp9 = importDefault(15659);
+  const tmp9 = importDefault(15658);
   obj[3] = { paddingBottom: importDefault(5310)({ includeKeyboardHeight: true }).insets.bottom + tmp4(712).space.PX_16, paddingHorizontal: 16 };
   obj[1] = <tmp9 channel={channel} onCreateThreadPress={null} onThreadPress={null} contentContainerStyle={null} />;
   return <tmp8 channel={channel} onCreateThreadPress={null} onThreadPress={null} contentContainerStyle={null} />;

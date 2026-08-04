@@ -1,10 +1,10 @@
-// Module ID: 14643
-// Function ID: 14644
+// Module ID: 14642
+// Function ID: 14643
 // Name: WrenchIcon
-// Dependencies: [19, 21, 712, 3988, 14644, 2]
+// Dependencies: [19, 21, 712, 3988, 14643, 2]
 // Exports: WrenchIcon
 
-// Module 14643 (WrenchIcon)
+// Module 14642 (WrenchIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const WrenchIcon = function WrenchIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14644) /* registerAsset */;
+  obj[0] = require(14643) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13573
+// Function ID: 13574
 // Name: App
-// Dependencies: [19, 17, 13575, 1218, 9074, 12856, 12865, 12882, 7266, 4354, 13576, 13577, 13578, 7025, 3937, 4277, 13579, 8282, 13580, 13581, 21, 13582, 1959, 13615, 4680, 13621, 13622, 13623, 13624, 7136, 13633, 7139, 13634, 13637, 7298, 13698, 10538, 10516, 8774, 13706, 13708, 13712, 13714, 13715, 13716, 13717, 4462, 13718, 500, 4848, 10859, 589, 5736, 13720, 9, 12845, 502, 13722, 10917, 13724, 14973, 2]
+// Dependencies: [19, 17, 13574, 1218, 9074, 12855, 12864, 12881, 7266, 4354, 13575, 13576, 13577, 7025, 3937, 4277, 13578, 8282, 13579, 13580, 21, 13581, 1959, 13614, 4680, 13620, 13621, 13622, 13623, 7136, 13632, 7139, 13633, 13636, 7298, 13697, 10538, 10516, 8774, 13705, 13707, 13711, 13713, 13714, 13715, 13716, 4462, 13717, 500, 4848, 10859, 589, 5736, 13719, 9, 12844, 502, 13721, 10917, 13723, 14972, 2]
 // Exports: default
 
-// Module 13574 (App)
+// Module 13573 (App)
 import closure_3 from "ApexExperiment";
 import { NativeModules } from "handleSetLocationMetadata";
 import checkForNewerBuild from "checkForNewerBuild";
@@ -38,58 +38,58 @@ export default function App() {
   const renderApp = importDefault(9).renderApp;
   renderApp.record();
   const effect = React.useEffect(() => {
-    callback(13615).init();
-    let obj = callback(13615);
+    callback(13614).init();
+    let obj = callback(13614);
     const tmp = callback;
     callback(4680).initialize();
     let obj2 = callback(4680);
+    callback(13620).initialize();
+    let obj3 = callback(13620);
     callback(13621).initialize();
-    let obj3 = callback(13621);
+    let obj4 = callback(13621);
     callback(13622).initialize();
-    let obj4 = callback(13622);
+    let obj5 = callback(13622);
     callback(13623).initialize();
-    let obj5 = callback(13623);
-    callback(13624).initialize();
-    let obj6 = callback(13624);
+    let obj6 = callback(13623);
     callback(7136).initialize();
     let obj7 = callback(7136);
-    callback(13633).initialize();
-    let obj8 = callback(13633);
+    callback(13632).initialize();
+    let obj8 = callback(13632);
     callback(7139).init();
     let obj9 = callback(7139);
-    callback(13634).init();
-    let obj10 = callback(13634);
-    callback(13637).init();
-    let obj11 = callback(13637);
+    callback(13633).init();
+    let obj10 = callback(13633);
+    callback(13636).init();
+    let obj11 = callback(13636);
     callback(7298).initialize();
     let obj12 = callback(7298);
-    callback(13698).initialize();
-    let obj13 = callback(13698);
+    callback(13697).initialize();
+    let obj13 = callback(13697);
     callback(10538).initialize();
     let obj14 = callback(10538);
     callback(10516).initialize();
     let obj15 = callback(10516);
     callback(8774).initialize();
     const obj16 = callback(8774);
-    callback(13706).initialize();
-    const obj17 = callback(13706);
-    callback(13708).initialize();
-    const obj18 = callback(13708);
-    callback(13712).initialize();
+    callback(13705).initialize();
+    const obj17 = callback(13705);
+    callback(13707).initialize();
+    const obj18 = callback(13707);
+    callback(13711).initialize();
     checkForNewerBuild.ensureInitialized();
-    const obj19 = callback(13712);
+    const obj19 = callback(13711);
+    callback(13713).initialize();
+    const obj20 = callback(13713);
     callback(13714).initialize();
-    const obj20 = callback(13714);
+    const obj21 = callback(13714);
     callback(13715).initialize();
-    const obj21 = callback(13715);
+    const obj22 = callback(13715);
     callback(13716).initialize();
-    const obj22 = callback(13716);
-    callback(13717).initialize();
-    const obj23 = callback(13717);
+    const obj23 = callback(13716);
     callback(4462).initialize();
     const obj24 = callback(4462);
-    callback(13718).initialize();
-    const obj25 = callback(13718);
+    callback(13717).initialize();
+    const obj25 = callback(13717);
     const tmp29 = shouldUseAltGateway;
     if (obj26.isIOS()) {
       tmp(4848).initialize();
@@ -98,37 +98,37 @@ export default function App() {
     obj26 = shouldUseAltGateway(500);
     const result = tmp29(10859).initializeRouteManagerIfNeeded();
     return () => {
-      callback2(13623).terminate();
-      const obj = callback2(13623);
+      callback2(13622).terminate();
+      const obj = callback2(13622);
       callback2(4680).terminate();
       const obj2 = callback2(4680);
       callback2(7298).terminate();
       const obj3 = callback2(7298);
-      callback2(13698).terminate();
-      const obj4 = callback2(13698);
+      callback2(13697).terminate();
+      const obj4 = callback2(13697);
       callback(10859).cleanupRouteManager();
       const obj5 = callback(10859);
-      callback2(13718).terminate();
-      const obj6 = callback2(13718);
-      callback2(13706).terminate();
-      const obj7 = callback2(13706);
+      callback2(13717).terminate();
+      const obj6 = callback2(13717);
+      callback2(13705).terminate();
+      const obj7 = callback2(13705);
       callback2(8774).terminate();
       const obj8 = callback2(8774);
-      callback2(13637).terminate();
-      const obj9 = callback2(13637);
-      callback2(13621).terminate();
-      const obj10 = callback2(13621);
-      callback2(13712).terminate();
-      const obj11 = callback2(13712);
+      callback2(13636).terminate();
+      const obj9 = callback2(13636);
+      callback2(13620).terminate();
+      const obj10 = callback2(13620);
+      callback2(13711).terminate();
+      const obj11 = callback2(13711);
+      callback2(13713).terminate();
+      const obj12 = callback2(13713);
       callback2(13714).terminate();
-      const obj12 = callback2(13714);
-      callback2(13715).terminate();
-      const obj13 = callback2(13715);
-      callback2(13717).terminate();
-      const obj14 = callback2(13717);
+      const obj13 = callback2(13714);
+      callback2(13716).terminate();
+      const obj14 = callback2(13716);
       callback2(4462).terminate();
       const obj15 = callback2(4462);
-      callback2(13633).terminate();
+      callback2(13632).terminate();
     };
   }, []);
   let shouldUseAltGateway;
@@ -163,7 +163,7 @@ export default function App() {
     callback(9).wasAuthenticated = fetchFingerprint.isAuthenticated();
   }, []);
   shouldUseAltGateway = undefined;
-  const isChannelMetadataObfuscationEnabled = shouldUseAltGateway(12845).useIsChannelMetadataObfuscationEnabled("App");
+  const isChannelMetadataObfuscationEnabled = shouldUseAltGateway(12844).useIsChannelMetadataObfuscationEnabled("App");
   shouldUseAltGateway = isChannelMetadataObfuscationEnabled;
   const items2 = [isChannelMetadataObfuscationEnabled];
   const effect3 = React.useEffect(() => {
@@ -176,8 +176,8 @@ export default function App() {
     }
   }, items2);
   shouldUseAltGateway = undefined;
-  let obj2 = shouldUseAltGateway(12845);
-  shouldUseAltGateway = shouldUseAltGateway(13722).useShouldUseAltGateway("App");
+  let obj2 = shouldUseAltGateway(12844);
+  shouldUseAltGateway = shouldUseAltGateway(13721).useShouldUseAltGateway("App");
   const items3 = [shouldUseAltGateway];
   const effect4 = React.useEffect(() => {
     if (obj.isAndroid()) {
@@ -193,11 +193,11 @@ export default function App() {
     return renderAppEffect.record();
   }, []);
   obj = { profile: null, children: null };
-  let obj3 = shouldUseAltGateway(13722);
+  let obj3 = shouldUseAltGateway(13721);
   obj[0] = shouldUseAltGateway(10917).Profiles.App;
   obj = { appEntryKey: "main", children: null };
   const tmp11 = importDefault(10917);
-  obj[1] = jsx(importDefault(14973), {});
-  obj[1] = jsx(importDefault(13724), { appEntryKey: "main", children: null });
+  obj[1] = jsx(importDefault(14972), {});
+  obj[1] = jsx(importDefault(13723), { appEntryKey: "main", children: null });
   return <tmp11 appEntryKey="main">{null}</tmp11>;
 };

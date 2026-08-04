@@ -1,10 +1,10 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14071
+// Function ID: 14072
 // Name: FamilyCenterModalDisconnectScreen
-// Dependencies: [32, 19, 17, 21, 4285, 712, 4490, 4124, 7259, 3985, 1236, 11236, 11239, 2285, 7757, 7758, 14073, 7837, 4281, 14025, 4693, 10448, 11246, 5117, 4695, 5238, 11248, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4490, 4124, 7259, 3985, 1236, 11236, 11239, 2285, 7757, 7758, 14072, 7837, 4281, 14024, 4693, 10448, 11246, 5117, 4695, 5238, 11248, 2]
 // Exports: default
 
-// Module 14072 (FamilyCenterModalDisconnectScreen)
+// Module 14071 (FamilyCenterModalDisconnectScreen)
 import _slicedToArray from "_slicedToArray";
 import FamilyCenterInlineWarningNotice from "FamilyCenterInlineWarningNotice";
 import { View } from "registerAsset";
@@ -91,7 +91,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   obj = { otherUser, iconSrc: null };
   const stringResult2 = intl9.string(importDefault(2285).sCbKs4);
   obj[1] = importDefault(7837);
-  const items3 = [callback(importDefault(14073), obj), , ];
+  const items3 = [callback(importDefault(14072), obj), , ];
   obj1 = { style: tmp.title, variant: "text-lg/bold", children: null };
   const intl11 = otherUser(1236).intl;
   obj1[2] = intl11.format(importDefault(2285).o0JXuK, { username: name });
@@ -105,7 +105,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
     obj3 = { style: null, text: null };
     obj3[0] = tmp.warning;
     obj3[1] = ageSpecificText1;
-    tmp28Result = tmp28(tmp3(14025), obj3);
+    tmp28Result = tmp28(tmp3(14024), obj3);
   }
   obj4 = { children: null };
   items4[1] = tmp28Result;

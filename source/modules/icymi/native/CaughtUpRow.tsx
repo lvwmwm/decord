@@ -1,10 +1,10 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15504
+// Function ID: 15505
 // Name: ExploreServersRow
-// Dependencies: [5, 32, 19, 17, 21, 4146, 4281, 15442, 712, 8835, 15459, 15455, 4137, 4286, 3989, 12199, 1236, 4695, 15481, 4706, 691, 689, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4146, 4281, 15441, 712, 8835, 15458, 15454, 4137, 4286, 3989, 12198, 1236, 4695, 15480, 4706, 691, 689, 2]
 // Exports: default
 
-// Module 15505 (ExploreServersRow)
+// Module 15504 (ExploreServersRow)
 import module_4146 from "module_4146";
 import _slicedToArray from "_slicedToArray";
 import LinearGradient from "LinearGradient";
@@ -101,7 +101,7 @@ export default function ExploreServersRow(visible) {
             v0 = 1;
             dependencyMap = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = outer1_0(15459).maybeFetchGuildDiscoveryCategories();
+            obj2[0] = outer1_0(15458).maybeFetchGuildDiscoveryCategories();
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -252,7 +252,7 @@ export default function ExploreServersRow(visible) {
   const obj4 = { style: tmp.textContainer, children: null };
   obj5 = { style: items1, children: null };
   items1 = [tmp.iconWrapper, animatedStyle];
-  obj5[1] = callback3(visible(12199).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" });
+  obj5[1] = callback3(visible(12198).FlashIcon, { size: "custom", style: tmp.icon, color: "background-brand" });
   const items2 = [callback3(sharedValue(4146).View, obj5), , ];
   obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: null };
   items3 = [tmp.headerText, animatedStyle1];
@@ -281,7 +281,7 @@ export default function ExploreServersRow(visible) {
   obj9[1] = items6;
   items5[1] = callback4(View, obj9);
   obj3[1] = items5;
-  const items7 = [callback4(View, obj3), callback3(visible(15481).Separator, {}), ];
+  const items7 = [callback4(View, obj3), callback3(visible(15480).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: null, end: null, colors: null, pointerEvents: "none" };
   obj12[1] = visible(691).VerticalGradient.START;
   obj12[2] = visible(691).VerticalGradient.END;

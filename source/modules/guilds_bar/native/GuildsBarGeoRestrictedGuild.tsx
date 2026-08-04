@@ -1,9 +1,9 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15341
+// Function ID: 15342
 // Name: items
-// Dependencies: [19, 15282, 21, 4285, 712, 15295, 1348, 15292, 1416, 5661, 4623, 1236, 8943, 15343, 15313, 5236, 2]
+// Dependencies: [19, 15281, 21, 4285, 712, 15294, 1348, 15291, 1416, 5661, 4623, 1236, 8943, 15342, 15312, 5236, 2]
 
-// Module 15342 (items)
+// Module 15341 (items)
 import importAllResult from "noop";
 import { GUILD_ITEM_BADGE_SIZE } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ let items = [require("computeGuildsBarCutout")({ position: "bottom-right" })];
 const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(restrictedGuild) {
   restrictedGuild = restrictedGuild.restrictedGuild;
   const tmp4 = callback();
-  let obj = restrictedGuild(15292);
+  let obj = restrictedGuild(15291);
   let animatableSourceWithFallback = null;
   const tmp3 = importDefault(1348)("GuildsBarGeoRestrictedGuild");
   const tmp5 = restrictedGuild;
@@ -55,10 +55,10 @@ const memoResult = importAllResult.memo(function GuildsBarGeoRestrictedGuild(res
     }
   }), items);
   obj = { selected: false, unread: false, circle: !tmp3, styles: obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true }), label: restrictedGuild.name, isDragTarget: false, config: memo, cutouts: items, overState: "a", externalChildren: 1, expandedChildren: 2, children: 4 };
-  tmpResult = tmp(15292);
+  tmpResult = tmp(15291);
   obj = { style: tmp4.geoRestrictedBadge };
-  obj[9] = jsx(importDefault(15343), { style: tmp4.geoRestrictedBadge });
-  obj[10] = jsx(importDefault(15313), { guildId: restrictedGuild.id });
+  obj[9] = jsx(importDefault(15342), { style: tmp4.geoRestrictedBadge });
+  obj[10] = jsx(importDefault(15312), { guildId: restrictedGuild.id });
   if (null != animatableSourceWithFallback) {
     const obj2 = { source: null, style: null, fadeDuration: 0 };
     obj2[0] = animatableSourceWithFallback;

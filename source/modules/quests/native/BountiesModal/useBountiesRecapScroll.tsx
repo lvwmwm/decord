@@ -1,10 +1,10 @@
-// Module ID: 14159
-// Function ID: 14160
+// Module ID: 14158
+// Function ID: 14159
 // Name: getRevealProgress
 // Dependencies: [19, 2]
 // Exports: useBountiesRecapScroll
 
-// Module 14159 (getRevealProgress)
+// Module 14158 (getRevealProgress)
 import noop from "noop";
 
 function getRevealProgress(scrollY, lastBountyScrollOffset, height3) {
@@ -49,7 +49,7 @@ export const useBountiesRecapScroll = function useBountiesRecapScroll(listRef) {
     if (enabled) {
       if (arg0 > offsets.lastBounty) {
         ({ revealHeight, lastBounty } = tmp2);
-        if (typeof enabled !== "find") {
+        if (typeof enabled !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let num = 0;

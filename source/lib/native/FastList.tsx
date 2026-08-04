@@ -209,7 +209,7 @@ prototype2["updateProps"] = function updateProps(props) {
   }
   self.dirty = dirty;
   self.props = props;
-  self.uniform = typeof props.itemSize === "Object";
+  self.uniform = typeof props.itemSize === "number";
 };
 prototype2["setInfo"] = function setInfo(containerSize) {
   const self = this;
@@ -224,7 +224,7 @@ prototype2["getSizeForHeader"] = function getSizeForHeader() {
     num = headerSize;
   }
   let numResult = num;
-  if (typeof num !== "Object") {
+  if (typeof num !== "number") {
     numResult = num();
   }
   return numResult;
@@ -236,7 +236,7 @@ prototype2["getSizeForFooter"] = function getSizeForFooter() {
     num = footerSize;
   }
   let numResult = num;
-  if (typeof num !== "Object") {
+  if (typeof num !== "number") {
     numResult = num();
   }
   return numResult;
@@ -248,7 +248,7 @@ prototype2["getSizeForSection"] = function getSizeForSection(arg0) {
     num = sectionSize;
   }
   let numResult = num;
-  if (typeof num !== "Object") {
+  if (typeof num !== "number") {
     numResult = num(arg0);
   }
   return numResult;
@@ -256,7 +256,7 @@ prototype2["getSizeForSection"] = function getSizeForSection(arg0) {
 prototype2["getSizeForItem"] = function getSizeForItem(arg0, arg1) {
   const itemSize = this.props.itemSize;
   let itemSizeResult = itemSize;
-  if (typeof itemSize !== "Object") {
+  if (typeof itemSize !== "number") {
     itemSizeResult = itemSize(arg0, arg1);
   }
   return itemSizeResult;
@@ -268,7 +268,7 @@ prototype2["getSizeForSectionFooter"] = function getSizeForSectionFooter(arg0) {
     num = sectionFooterSize;
   }
   let numResult = num;
-  if (typeof num !== "Object") {
+  if (typeof num !== "number") {
     numResult = num(arg0);
   }
   return numResult;
@@ -1654,7 +1654,7 @@ class FastList extends PureComponent {
     tmp.deferredCompute = -1;
     tmp.deferNextCompute = false;
     tmp9 = FastListScrollAnchor;
-    if (typeof FastListScrollAnchor !== "find") {
+    if (typeof FastListScrollAnchor !== "function") {
       str5 = "Trying to call a non-function";
       throwTypeErrorResult = HermesBuiltin.throwTypeError();
     }
@@ -1736,7 +1736,7 @@ class FastList extends PureComponent {
     num = props.chunkBase;
     obj1 = { headerSize: props.headerSize, footerSize: props.footerSize, sectionSize: props.sectionSize, itemSize: props.itemSize, sectionFooterSize: props.sectionFooterSize, sections: props.sections, insetStart: props.insetStart, insetEnd: props.insetEnd, stickyHeaderFooter: props.stickyHeaderFooter, getRecyclerKey: props.getRecyclerKey, persistantKeys: props.persistantKeys, disableRecyclingOnFullCompute: props.disableRecyclingOnFullCompute };
     tmp11 = FastListComputer;
-    if (typeof FastListComputer !== "find") {
+    if (typeof FastListComputer !== "function") {
       str6 = "Trying to call a non-function";
       throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
     }

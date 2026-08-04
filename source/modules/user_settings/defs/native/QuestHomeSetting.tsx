@@ -1,9 +1,9 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14143
+// Function ID: 14144
 // Name: route
-// Dependencies: [676, 10361, 1236, 10375, 14145, 14147, 7101, 5133, 2]
+// Dependencies: [676, 10361, 1236, 10375, 14144, 14146, 7101, 5133, 2]
 
-// Module 14144 (route)
+// Module 14143 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -29,7 +29,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.QUESTS,
   getComponent() {
-    return require(14147) /* QuestHomeSetting */.default;
+    return require(14146) /* QuestHomeSetting */.default;
   }
 };
 const route = createToggle.createRoute(obj);

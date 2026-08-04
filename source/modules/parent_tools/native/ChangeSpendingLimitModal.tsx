@@ -1,10 +1,10 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 14057
+// Function ID: 14058
 // Name: ChangeSpendingLimitScreen
-// Dependencies: [5, 19, 17, 21, 4285, 712, 7772, 4281, 1236, 2285, 14059, 3986, 4246, 4490, 3985, 5764, 7757, 7758, 4693, 7713, 11246, 5117, 4695, 5238, 11248, 2]
+// Dependencies: [5, 19, 17, 21, 4285, 712, 7772, 4281, 1236, 2285, 14058, 3986, 4246, 4490, 3985, 5764, 7757, 7758, 4693, 7713, 11246, 5117, 4695, 5238, 11248, 2]
 // Exports: default
 
-// Module 14058 (ChangeSpendingLimitScreen)
+// Module 14057 (ChangeSpendingLimitScreen)
 import Themes from "Themes";
 import TextInput from "TextInput";
 import get_ActivityIndicator from "ModalContent";
@@ -32,76 +32,31 @@ function ChangeSpendingLimitScreen(teenId) {
   function _handleSave(arg0) {
     const self = this;
     const tmp = outer1_3(function*() {
-      if (c3 === 2) {
+      let closure_0 = tmp3;
+      let dependencyMap = 1;
+      yield outer1_0();
+      if (1 === tmp7) {
+        dependencyMap = 0;
+        const obj1 = outer1_0(3985);
+        const intl = outer1_0(1236).intl;
+        obj1.presentFailedToast(intl.string(v0(2285).Wu8BK2));
+        let c3 = 3;
+      } else if (arg0 === 1) {
         c3 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === v0) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_0 = tmp3;
-              let dependencyMap = 1;
-              v0 = 2;
-              c3 = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = outer1_0();
-              return obj1;
-            }
-          } else {
-            if (1 === tmp7) {
-              dependencyMap = 0;
-              obj1 = outer1_0(3985);
-              const intl = outer1_0(1236).intl;
-              obj1.presentFailedToast(intl.string(v0(2285).Wu8BK2));
-              c3 = 3;
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              const obj2 = { key: "SPENDING_CONTROLS_CHANGED", content: null, IconComponent: null, iconColor: "status-positive" };
-              const intl2 = outer1_0(1236).intl;
-              obj2[1] = intl2.string(v0(2285)["2WKfG1"]);
-              obj2[2] = outer1_0(4246).CircleCheckIcon;
-              v0(3986).open(obj2);
-              let arr = v0(4490);
-              arr = arr.pop();
-              dependencyMap = 0;
-              const obj6 = v0(3986);
-            }
-            dependencyMap = 0;
-            c3 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          }
-        } catch (tmp17) {
-          if (tmp4 === dependencyMap) {
-            c3 = tmp2;
-            throw tmp17;
-          } else {
-            v0 = tmp;
-          }
-        }
+        throw arg1;
+      } else if (arg0 !== 2) {
+        const obj2 = { key: "SPENDING_CONTROLS_CHANGED", content: null, IconComponent: null, iconColor: "status-positive" };
+        const intl2 = outer1_0(1236).intl;
+        obj2[1] = intl2.string(v0(2285)["2WKfG1"]);
+        obj2[2] = outer1_0(4246).CircleCheckIcon;
+        v0(3986).open(obj2);
+        let arr = v0(4490);
+        arr = arr.pop();
+        dependencyMap = 0;
+        const obj6 = v0(3986);
       }
+      dependencyMap = 0;
+      return arg1;
     });
     const _handleSave = tmp;
     const apply = tmp.apply;
@@ -113,7 +68,7 @@ function ChangeSpendingLimitScreen(teenId) {
     return applyArgumentsResult;
   }
   let formatToPlainStringResult = createCacheKey();
-  let obj = _require(14059);
+  let obj = _require(14058);
   const changeSpendingLimitFormState = obj.useChangeSpendingLimitFormState(teenId.teenId);
   ({ amountInput, isOverspending, canSave, isSubmitting, monthlySpend, save: c0 } = changeSpendingLimitFormState);
   let formatPriceResult = null;

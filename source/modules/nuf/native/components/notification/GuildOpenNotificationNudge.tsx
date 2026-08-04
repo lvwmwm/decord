@@ -1,10 +1,10 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15513
+// Function ID: 15514
 // Name: GuildOpenNotificationNudge
-// Dependencies: [32, 19, 1942, 1862, 4102, 4480, 11690, 11691, 676, 21, 589, 15515, 1236, 14561, 11692, 5217, 4120, 5931, 1358, 11693, 4253, 15514, 1959, 2]
+// Dependencies: [32, 19, 1942, 1862, 4102, 4480, 11690, 11691, 676, 21, 589, 15514, 1236, 14560, 11692, 5217, 4120, 5931, 1358, 11693, 4253, 15513, 1959, 2]
 // Exports: default, useGuildOpenNudge
 
-// Module 15514 (GuildOpenNotificationNudge)
+// Module 15513 (GuildOpenNotificationNudge)
 import _slicedToArray from "_slicedToArray";
 import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -55,7 +55,7 @@ export default function GuildOpenNotificationNudge(guildId) {
   obj[3] = constants2.GUILD_OPEN_BOTTOM_SHEET;
   obj[4] = markAsDismissed;
   obj[5] = onHide;
-  return jsx(importDefault(15515), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
+  return jsx(importDefault(15514), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
 };
 export const GUILD_OPEN_NOTIFICATION_NUDGE_KEY = "guild-open-notification-nudge-key";
 export const useGuildOpenNudge = function useGuildOpenNudge() {
@@ -68,7 +68,7 @@ export const useGuildOpenNudge = function useGuildOpenNudge() {
     return guildId;
   });
   let obj = stateFromStores(589);
-  let obj2 = stateFromStores3(14561);
+  let obj2 = stateFromStores3(14560);
   const canSeePushNotificationNudge = stateFromStores(11692).useCanSeePushNotificationNudge();
   const obj3 = stateFromStores(11692);
   const items1 = [updateUserGuildSettingsInternal];

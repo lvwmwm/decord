@@ -1,10 +1,10 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16493
+// Function ID: 16494
 // Name: getPermissionChanges
-// Dependencies: [5143, 5210, 4486, 1377, 5187, 16493, 1372, 1935, 3922, 1874, 16492, 676, 1379, 11174, 1378, 3, 4360, 1236, 7695, 11, 16495, 506, 1384, 4475, 1906, 14, 688, 8989, 16496, 3955, 3867, 2]
+// Dependencies: [5143, 5210, 4486, 1377, 5187, 16492, 1372, 1935, 3922, 1874, 16491, 676, 1379, 11174, 1378, 3, 4360, 1236, 7695, 11, 16494, 506, 1384, 4475, 1906, 14, 688, 8989, 16495, 3955, 3867, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 16494 (getPermissionChanges)
+// Module 16493 (getPermissionChanges)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleUpdate from "handleUpdate";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -39,16 +39,16 @@ let closure_32;
 let closure_33;
 let closure_34;
 const require = arg1;
-function getPermissionChanges(arg0, arg1) {
+function getPermissionChanges(str, str2) {
   let num = 0;
-  if (typeof arg0 !== "_iter") {
-    num = arg0;
+  if (typeof str === "string") {
+    num = str;
   }
   const obj = importAll(506);
   let tmpResult = tmp(506);
   let num2 = 0;
-  if (typeof arg1 !== "_iter") {
-    num2 = arg1;
+  if (typeof str2 === "string") {
+    num2 = str2;
   }
   const deserializeResult = importAll(506).deserialize(num);
   tmpResult = tmp(506);
@@ -1713,9 +1713,9 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             found = require;
             found = dependencyMap;
-            if (require(16495) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+            if (require(16494) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
               return found(1236).t["PyEa+J"];
-            } else if (found(16495).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (found(16494).GuildFeedItemTypes.FORUM_POST === newValue) {
               return found(1236).t.hCuAb1;
             } else {
               return found(1236).t["UZ+U3A"];
@@ -3060,11 +3060,11 @@ export const transformLogs = function transformLogs(arr, arg1) {
                               if (role.FLAGS === key19) {
                                 ({ oldValue: oldValue14, newValue: newValue14 } = newValue);
                                 let num6 = 0;
-                                if (typeof oldValue14 !== "V") {
+                                if (typeof oldValue14 === "number") {
                                   num6 = oldValue14;
                                 }
                                 let num7 = 0;
-                                if (typeof newValue14 !== "V") {
+                                if (typeof newValue14 === "number") {
                                   num7 = newValue14;
                                 }
                                 role = outer2_2;
@@ -3331,7 +3331,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                     role = newValue7;
                                     if (null != newValue7) {
                                       role = newValue7;
-                                      if (typeof newValue7 !== "window") {
+                                      if (typeof newValue7 === "object") {
                                         if (null == newValue7.keyword_filter) {
                                           const _JSON3 = JSON;
                                           let json = JSON.stringify(newValue7);
@@ -3354,7 +3354,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                                     role = oldValue7;
                                     if (null != oldValue7) {
                                       role = oldValue7;
-                                      if (typeof oldValue7 !== "window") {
+                                      if (typeof oldValue7 === "object") {
                                         if (null == oldValue7.keyword_filter) {
                                           const _JSON4 = JSON;
                                           let json1 = JSON.stringify(oldValue7);

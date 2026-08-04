@@ -1,10 +1,10 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16380
+// Function ID: 16381
 // Name: DefaultAvatarButton
-// Dependencies: [19, 17, 21, 16382, 16383, 16384, 16385, 16386, 16387, 16388, 16389, 1236, 4285, 712, 4281, 4812, 5236, 2]
+// Dependencies: [19, 17, 21, 16381, 16382, 16383, 16384, 16385, 16386, 16387, 16388, 1236, 4285, 712, 4281, 4812, 5236, 2]
 // Exports: default
 
-// Module 16381 (DefaultAvatarButton)
+// Module 16380 (DefaultAvatarButton)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";

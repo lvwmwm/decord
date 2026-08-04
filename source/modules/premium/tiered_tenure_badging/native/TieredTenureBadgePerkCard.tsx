@@ -1,10 +1,10 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12619
+// Function ID: 12620
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1874, 676, 21, 4285, 9428, 12621, 589, 9402, 698, 4253, 9401, 1959, 9401, 1236, 12623, 4281, 9427, 12597, 5236, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 4285, 9428, 12620, 589, 9402, 698, 4253, 9401, 1959, 9401, 1236, 12622, 4281, 9427, 12596, 5236, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 12620 (TieredTenureBadgePerkCard)
+// Module 12619 (TieredTenureBadgePerkCard)
 import frozen from "frozen";
 import { View } from "Text";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -24,7 +24,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
   tieredTenureBadgeData = obj.useTieredTenureBadgeData();
   let obj1 = tieredTenureBadgeData(9428);
   const premiumSince = obj1.usePremiumSince();
-  let obj2 = tieredTenureBadgeData(12621);
+  let obj2 = tieredTenureBadgeData(12620);
   const timeUntilNextBadge = obj2.useTimeUntilNextBadge();
   const tmp6 = callback3();
   let obj3 = tieredTenureBadgeData(589);
@@ -84,7 +84,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
             const date1 = new Date(premiumSince);
             obj[1] = date1;
             formatResult = intl3.format(tmp(1236).t.vwLvec, obj);
-            tmp14 = stateFromStores(12623);
+            tmp14 = stateFromStores(12622);
           }
         }
       }
@@ -124,7 +124,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     const obj8 = { style: null, children: null };
     obj8[0] = tmp6.imageContainer;
     const items4 = [tmp6.image, ];
-    const tmp34 = stateFromStores(12597);
+    const tmp34 = stateFromStores(12596);
     const tmp35 = stateFromStores(5236);
     const obj9 = { resizeMode: "contain", style: null, source: null };
     items4[1] = tieredTenureBadgeData.status === tmp(9428).TieredTenureBadgeStatus.UPCOMING && tmp6.upcomingBadge;

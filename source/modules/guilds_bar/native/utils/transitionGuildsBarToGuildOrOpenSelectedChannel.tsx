@@ -1,10 +1,10 @@
-// Module ID: 15306
-// Function ID: 15307
+// Module ID: 15305
+// Function ID: 15306
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
 // Dependencies: [1931, 4102, 676, 4137, 4136, 4293, 5866, 2]
 // Exports: default
 
-// Module 15306 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 15305 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_3 from "handleConnectionOpen";
 import { ME } from "ME";

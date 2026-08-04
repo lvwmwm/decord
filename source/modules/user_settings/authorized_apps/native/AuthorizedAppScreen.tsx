@@ -1,10 +1,10 @@
-// Module ID: 14091
-// Function ID: 14092
+// Module ID: 14090
+// Function ID: 14091
 // Name: AuthorizedAppScreen
-// Dependencies: [19, 21, 6787, 1480, 14092, 2]
+// Dependencies: [19, 21, 6787, 1480, 14091, 2]
 // Exports: default
 
-// Module 14091 (AuthorizedAppScreen)
+// Module 14090 (AuthorizedAppScreen)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -20,5 +20,5 @@ export default function AuthorizedAppScreen() {
     stackNavigation.setOptions({ title: settingNavigationRoute.params.oauth2Token.application.name, headerShown: true });
   }, items);
   obj = { oauth2Token: settingNavigationRoute.params.oauth2Token };
-  return jsx(stackNavigation(14092), { oauth2Token: settingNavigationRoute.params.oauth2Token });
+  return jsx(stackNavigation(14091), { oauth2Token: settingNavigationRoute.params.oauth2Token });
 };

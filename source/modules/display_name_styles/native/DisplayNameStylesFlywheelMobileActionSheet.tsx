@@ -1,10 +1,10 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 15880
+// Function ID: 15881
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1874, 676, 1369, 21, 4004, 4131, 4221, 589, 3931, 1236, 2643, 5925, 5730, 4101, 1358, 5338, 5272, 5594, 5936, 500, 5236, 15882, 9304, 1297, 4281, 4695, 4285, 712, 2]
+// Dependencies: [19, 17, 1874, 676, 1369, 21, 4004, 4131, 4221, 589, 3931, 1236, 2643, 5925, 5730, 4101, 1358, 5338, 5272, 5594, 5936, 500, 5236, 15881, 9304, 1297, 4281, 4695, 4285, 712, 2]
 // Exports: default
 
-// Module 15881 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 15880 (DisplayNameStylesFlywheelMobileActionSheet)
 import ActionSheetHeaderBar from "ActionSheetHeaderBar";
 import { View } from "Background";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -151,7 +151,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     if (tmp2Result.isIOS()) {
       const obj10 = { source: null, style: null, resizeMode: "contain", enableAnimation: null };
       const obj11 = { uri: null };
-      obj11[0] = tmp4(15882);
+      obj11[0] = tmp4(15881);
       obj10[0] = obj11;
       obj10[1] = tmp6.image;
       obj10[3] = !enabled;
@@ -159,7 +159,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       const tmp4Result = tmp4(5236);
     } else {
       const obj12 = { url: null, style: null, autoplay: true };
-      obj12[0] = tmp4(15882);
+      obj12[0] = tmp4(15881);
       obj12[1] = tmp6.image;
       tmp14Result = tmp14(tmp2(9304).APNGPlayer, obj12);
     }

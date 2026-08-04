@@ -1,10 +1,10 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12221
+// Function ID: 12222
 // Name: getActivityJoinability
-// Dependencies: [676, 11074, 11071, 10533, 10530, 5837, 12223, 500, 11068, 11069, 11070, 2]
+// Dependencies: [676, 11074, 11071, 10533, 10530, 5837, 12222, 500, 11068, 11069, 11070, 2]
 // Exports: default
 
-// Module 12222 (getActivityJoinability)
+// Module 12221 (getActivityJoinability)
 import ME from "ME";
 
 let c3;
@@ -73,7 +73,7 @@ export default function getActivityJoinability(arg0) {
         }
       }
       if (!isEmbedded) {
-        if (importDefault(12223)(activity)) {
+        if (importDefault(12222)(activity)) {
           const obj2 = require(500) /* set */;
         }
         return obj.CANNOT_JOIN;

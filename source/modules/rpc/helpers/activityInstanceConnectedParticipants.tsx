@@ -1,10 +1,10 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13638
+// Function ID: 13639
 // Name: activityInstanceConnectedParticipants
 // Dependencies: [1371, 1874, 4188, 3903, 4474, 10549, 1351, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 13639 (activityInstanceConnectedParticipants)
+// Module 13638 (activityInstanceConnectedParticipants)
 import participantFromServer from "participantFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";

@@ -1,10 +1,10 @@
-// Module ID: 13810
-// Function ID: 13811
+// Module ID: 13809
+// Function ID: 13810
 // Name: UserProfileUpsellButton
 // Dependencies: [19, 676, 1876, 21, 4285, 5610, 6819, 698, 4695, 8173, 1236, 7625, 2]
 // Exports: default
 
-// Module 13810 (UserProfileUpsellButton)
+// Module 13809 (UserProfileUpsellButton)
 import noop from "noop";
 import ME from "ME";
 import { PremiumUpsellTypes } from "GuildFeatures";

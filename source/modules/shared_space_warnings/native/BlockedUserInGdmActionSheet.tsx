@@ -1,10 +1,10 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 12904
+// Function ID: 12905
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1372, 1874, 12906, 676, 21, 4285, 712, 4281, 4474, 1236, 589, 1351, 1297, 11136, 9582, 4246, 4241, 698, 5646, 10270, 5649, 5315, 4695, 4253, 12907, 4295, 2]
+// Dependencies: [19, 17, 1372, 1874, 12905, 676, 21, 4285, 712, 4281, 4474, 1236, 589, 1351, 1297, 11136, 9582, 4246, 4241, 698, 5646, 10270, 5649, 5315, 4695, 4253, 12906, 4295, 2]
 // Exports: default
 
-// Module 12905 (getUserCalloutRowText)
+// Module 12904 (getUserCalloutRowText)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "CircleCheckIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";

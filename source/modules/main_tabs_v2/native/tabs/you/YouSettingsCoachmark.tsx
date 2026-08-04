@@ -1,10 +1,10 @@
-// Module ID: 15735
-// Function ID: 15736
+// Module ID: 15734
+// Function ID: 15735
 // Name: YouSettingsCoachmark
-// Dependencies: [15736, 8575, 2]
+// Dependencies: [15735, 8575, 2]
 // Exports: default, useYouSettingsCoachmark
 
-// Module 15735 (YouSettingsCoachmark)
+// Module 15734 (YouSettingsCoachmark)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");
 
 export default function YouSettingsCoachmark(buttonRef) {
@@ -13,7 +13,7 @@ export default function YouSettingsCoachmark(buttonRef) {
   return null;
 };
 export const useYouSettingsCoachmark = function useYouSettingsCoachmark(disabled) {
-  let referralProgramCoachmark = require(15736) /* ReferralProgramCoachmarkImg */.useReferralProgramCoachmark({ disabled: disabled.disabled });
+  let referralProgramCoachmark = require(15735) /* ReferralProgramCoachmarkImg */.useReferralProgramCoachmark({ disabled: disabled.disabled });
   if (referralProgramCoachmark == null) {
     referralProgramCoachmark = null;
   }

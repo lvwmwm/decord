@@ -60,7 +60,7 @@ export const createZustandStore = function createZustandStore(arg0) {
     setState,
     resetState() {
       const initialState = store.getInitialState();
-      if (typeof setState !== "find") {
+      if (typeof setState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       callback(store[2]).batchUpdates(() => outer1_1.setState(initialState));

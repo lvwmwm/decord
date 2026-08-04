@@ -1,9 +1,9 @@
-// Module ID: 16257
-// Function ID: 16258
+// Module ID: 16256
+// Function ID: 16257
 // Name: handleConnectionOpen
-// Dependencies: [32, 4299, 4730, 1218, 4332, 4345, 9080, 11, 1306, 595, 1355, 9079, 12, 13077, 10773, 5229, 2]
+// Dependencies: [32, 4299, 4730, 1218, 4332, 4345, 9080, 11, 1306, 595, 1355, 9079, 12, 13076, 10773, 5229, 2]
 
-// Module 16257 (handleConnectionOpen)
+// Module 16256 (handleConnectionOpen)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -18,7 +18,7 @@ const require = arg1;
 function handleConnectionOpen() {
   let Storage = require(595) /* Storage */.Storage;
   const id = store.getId();
-  if (typeof SETTINGS_MIGRATION_KEY !== "find") {
+  if (typeof SETTINGS_MIGRATION_KEY !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (!Storage.get("AudioContextSettingsMigrated:" + id)) {
@@ -144,9 +144,9 @@ function handleSetLocalVolume(arg0) {
     }
     obj = { volume: null };
     obj[0] = volume;
-    const result = require(13077) /* getPendingAudioSettings */.updatePendingSettings(context, userId, obj);
+    const result = require(13076) /* getPendingAudioSettings */.updatePendingSettings(context, userId, obj);
     lib();
-    const obj2 = require(13077) /* getPendingAudioSettings */;
+    const obj2 = require(13076) /* getPendingAudioSettings */;
   }
 }
 function handleSetLocalMute(arg0) {
@@ -154,7 +154,7 @@ function handleSetLocalMute(arg0) {
   let userId;
   ({ context, userId } = arg0);
   if (userId !== store.getId()) {
-    let obj = require(13077) /* getPendingAudioSettings */;
+    let obj = require(13076) /* getPendingAudioSettings */;
     obj = { muted: null };
     obj[0] = _detectH265HardwareDecode.isLocalMute(userId, context);
     const result = obj.updatePendingSettings(context, userId, obj);
@@ -176,7 +176,7 @@ function handleSetLocalMute(arg0) {
             const _String = String;
             const _Date = Date;
             tmp9[arg1].modifiedAt = String(Date.now());
-            if (typeof outer1_10 !== "find") {
+            if (typeof outer1_10 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (first === outer1_8.STREAM) {
@@ -207,7 +207,7 @@ function handleSetLocalMute(arg0) {
             tmp19 = tmp9[arg1].volume !== USER2 || tmp9[arg1].muted || tmp9[arg1].soundboardMuted;
           } else {
             const AudioContextSetting = tmp5(tmp6[8]).AudioContextSetting;
-            if (typeof outer1_10 !== "find") {
+            if (typeof outer1_10 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (first === outer1_8.STREAM) {
@@ -235,7 +235,7 @@ function handleSetLocalSoundboardMute(userId) {
   userId = userId.userId;
   if (userId !== store.getId()) {
     const result = localSoundboardMuted.isLocalSoundboardMuted(userId);
-    let obj = require(13077) /* getPendingAudioSettings */;
+    let obj = require(13076) /* getPendingAudioSettings */;
     obj = { soundboardMuted: null };
     obj[0] = result;
     const result1 = obj.updatePendingSettings(userId.context, userId, obj);
@@ -257,7 +257,7 @@ function handleSetLocalSoundboardMute(userId) {
             const _String = String;
             const _Date = Date;
             tmp9[arg1].modifiedAt = String(Date.now());
-            if (typeof outer1_10 !== "find") {
+            if (typeof outer1_10 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (first === outer1_8.STREAM) {
@@ -288,7 +288,7 @@ function handleSetLocalSoundboardMute(userId) {
             tmp19 = tmp9[arg1].volume !== USER2 || tmp9[arg1].muted || tmp9[arg1].soundboardMuted;
           } else {
             const AudioContextSetting = tmp5(tmp6[8]).AudioContextSetting;
-            if (typeof outer1_10 !== "find") {
+            if (typeof outer1_10 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (first === outer1_8.STREAM) {
@@ -351,7 +351,7 @@ let closure_12 = require("apply").debounce(() => {
           const _String = String;
           const _Date = Date;
           tmp9[arg1].modifiedAt = String(Date.now());
-          if (typeof outer1_10 !== "find") {
+          if (typeof outer1_10 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           if (first === outer1_8.STREAM) {
@@ -382,7 +382,7 @@ let closure_12 = require("apply").debounce(() => {
           tmp19 = tmp9[arg1].volume !== USER2 || tmp9[arg1].muted || tmp9[arg1].soundboardMuted;
         } else {
           const AudioContextSetting = tmp5(tmp6[8]).AudioContextSetting;
-          if (typeof outer1_10 !== "find") {
+          if (typeof outer1_10 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           if (first === outer1_8.STREAM) {

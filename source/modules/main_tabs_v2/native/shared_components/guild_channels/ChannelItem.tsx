@@ -1,10 +1,10 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15619
+// Function ID: 15620
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1862, 3922, 1874, 4481, 21, 8955, 1236, 4285, 712, 9711, 589, 5661, 11488, 7022, 15431, 9582, 15618, 4475, 2]
+// Dependencies: [19, 17, 1862, 3922, 1874, 4481, 21, 8955, 1236, 4285, 712, 9711, 589, 5661, 11488, 7022, 15430, 9582, 15617, 4475, 2]
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15620 (LaunchpadChannelIcon)
+// Module 15619 (LaunchpadChannelIcon)
 import "computeChannelName";
 import { View } from "FacepileGroupDMAvatar";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -139,7 +139,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   }
   let obj1 = require(9711) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(15431) /* renderChannelWrapper */;
+  let obj2 = require(15430) /* renderChannelWrapper */;
   const children = [unreadBadge, , , ];
   obj = { style: null, children: null };
   obj = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
@@ -159,7 +159,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   }
   obj[1] = tmp10Result;
   children[1] = closure_8(View, obj);
-  let tmp5Result = tmp5(15618);
+  let tmp5Result = tmp5(15617);
   const obj3 = { layout, name: null, subtitle: null, unread: null, resolvedUnreadSetting: null, muted: null, lastMessageTimestampString: null, channel: null, locked: null, connected: null, live: null, mentionCount: null, mentionBadge: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
   if (channelName == null) {
     tmp5Result = tmp5(4475);

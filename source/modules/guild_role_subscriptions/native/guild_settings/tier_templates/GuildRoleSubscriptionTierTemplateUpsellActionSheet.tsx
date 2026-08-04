@@ -1,10 +1,10 @@
-// Module ID: 15254
-// Function ID: 15255
+// Module ID: 15253
+// Function ID: 15254
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: [32, 19, 17, 4277, 676, 1369, 21, 4285, 712, 4815, 647, 5338, 1236, 8792, 4281, 4695, 8943, 4253, 2]
 // Exports: default
 
-// Module 15254 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 15253 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "ACTION_SHEET_HEIGHT_HALF";

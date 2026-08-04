@@ -1,10 +1,10 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15233
+// Function ID: 15234
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [32, 19, 1375, 676, 1369, 21, 9635, 589, 9629, 15235, 1236, 3031, 15236, 8575, 2]
+// Dependencies: [32, 19, 1375, 676, 1369, 21, 9635, 589, 9629, 15234, 1236, 3031, 15235, 8575, 2]
 // Exports: default
 
-// Module 15234 (FavoritesGuildCoachmarkMenuItemContent)
+// Module 15233 (FavoritesGuildCoachmarkMenuItemContent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";

@@ -1,9 +1,9 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15609
+// Function ID: 15610
 // Name: SearchListRow
 // Dependencies: [19, 17, 8208, 21, 4285, 712, 4812, 4281, 2]
 
-// Module 15610 (SearchListRow)
+// Module 15609 (SearchListRow)
 import { View } from "get ActivityIndicator";
 import { SEARCH_ROW_TAP_STATE_PADDING as closure_4 } from "MessageEmbedTypes";
 import jsxProd from "jsxProd";
@@ -64,7 +64,7 @@ const memoResult = require("noop").memo((accessibilityRole) => {
   const items4 = [callback(View, { style: items3, children: icon }), , ];
   obj = { style: tmpResult.labels, children: null };
   let tmp7Result = label;
-  if (typeof label !== "_iter") {
+  if (typeof label === "string") {
     const obj1 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: null, children: null };
     obj1[3] = tmpResult.text;
     obj1[4] = label;

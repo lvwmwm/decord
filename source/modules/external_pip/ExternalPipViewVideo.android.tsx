@@ -1,9 +1,9 @@
-// Module ID: 15948
-// Function ID: 15949
+// Module ID: 15947
+// Function ID: 15948
 // Name: ExternalPipViewVideoUnavailable
-// Dependencies: [32, 19, 17, 1372, 1874, 4303, 21, 4285, 712, 10596, 4241, 4281, 1236, 589, 1297, 10603, 3989, 15949, 10613, 15950, 9681, 2]
+// Dependencies: [32, 19, 17, 1372, 1874, 4303, 21, 4285, 712, 10596, 4241, 4281, 1236, 589, 1297, 10603, 3989, 15948, 10613, 15949, 9681, 2]
 
-// Module 15948 (ExternalPipViewVideoUnavailable)
+// Module 15947 (ExternalPipViewVideoUnavailable)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useExternalPipParticipant";
 import get_ActivityIndicator from "updateVideoSize";
@@ -196,7 +196,7 @@ const memoResult = importAllResult.memo(function ExternalPipViewVideo(onLayout) 
   let selectedParticipantSpeaking;
   let selectedParticipantStreamId;
   let selectedParticipantUserId;
-  const tmp2 = importDefault(15950)();
+  const tmp2 = importDefault(15949)();
   ({ selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType } = tmp2);
   const items = [selectedParticipantStreamId, selectedParticipantUserId, focusedParticipantType];
   ({ channelId, selectedParticipantSpeaking } = tmp2);

@@ -161,7 +161,7 @@ let items = [
     value: function close() {
       const self = this;
       let fn = callback3(callback2(self.prototype), "close", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       return fn([]).then((arg0) => {
@@ -175,7 +175,7 @@ let items = [
     key: "captureUserFeedback",
     value: function captureUserFeedback(arg0) {
       let obj = ReactNativeClient(1178);
-      obj = { metadata: this._options._metadata, dsn: this.getDsn(), tunnel: "Array" };
+      obj = { metadata: this._options._metadata, dsn: this.getDsn(), tunnel: "disabled" };
       this.sendEnvelope(obj.createUserFeedbackEnvelope(arg0, obj));
     }
   },
@@ -223,7 +223,7 @@ let items = [
       let self = this;
       self = this;
       let fn = callback3(callback2(self.prototype), "init", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       fn([]);
@@ -235,7 +235,7 @@ let items = [
     value: function on(arg0, arg1) {
       const self = this;
       let fn = callback3(callback2(self.prototype), "on", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0, arg1];
@@ -249,7 +249,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "emit", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0, ...substr];

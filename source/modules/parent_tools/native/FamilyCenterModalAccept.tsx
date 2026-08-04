@@ -1,10 +1,10 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14075
+// Function ID: 14076
 // Name: FamilyCenterModalAcceptScreen
-// Dependencies: [19, 17, 21, 4285, 712, 4490, 3985, 1236, 11236, 7757, 7758, 14073, 4230, 4281, 2285, 14043, 11238, 11246, 5117, 4695, 5238, 11248, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4490, 3985, 1236, 11236, 7757, 7758, 14072, 4230, 4281, 2285, 14042, 11238, 11246, 5117, 4695, 5238, 11248, 2]
 // Exports: default
 
-// Module 14076 (FamilyCenterModalAcceptScreen)
+// Module 14075 (FamilyCenterModalAcceptScreen)
 import Button from "Button";
 import { View } from "ModalFooter";
 import jsxProd from "Modal";
@@ -39,12 +39,12 @@ function FamilyCenterModalAcceptScreen(otherUser) {
   const obj2 = { otherUser, iconSrc: null, iconStyles: null };
   obj2[1] = acceptLinkRequest(4230);
   obj2[2] = tmp.icon;
-  const items1 = [callback(acceptLinkRequest(14073), obj2), , ];
+  const items1 = [callback(acceptLinkRequest(14072), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold", children: null };
   let intl = otherUser(1236).intl;
   obj3[2] = intl.string(acceptLinkRequest(2285).rlNJwZ);
   items1[1] = callback(otherUser(4281).Text, obj3);
-  items1[2] = callback(acceptLinkRequest(14043), { user: otherUser });
+  items1[2] = callback(acceptLinkRequest(14042), { user: otherUser });
   obj1[1] = items1;
   const items2 = [callback2(View, obj1), callback(acceptLinkRequest(11238), {}), ];
   const obj4 = { style: tmp.disclaimer, variant: "text-xs/normal", color: "text-default", children: null };

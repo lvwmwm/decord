@@ -1,9 +1,9 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16569
+// Function ID: 16570
 // Name: title
-// Dependencies: [16571, 676, 16573, 506, 3918, 711, 1236, 2]
+// Dependencies: [16570, 676, 16572, 506, 3918, 711, 1236, 2]
 
-// Module 16570 (title)
+// Module 16569 (title)
 import { RoleColorsStyle } from "handleSetSection";
 import ME from "ME";
 import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS";

@@ -1,10 +1,10 @@
-// Module ID: 14623
-// Function ID: 14624
+// Module ID: 14622
+// Function ID: 14623
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 676, 1930, 21, 4285, 712, 3997, 698, 8766, 14624, 5236, 8792, 1236, 4812, 8979, 9882, 1297, 8000, 1474, 8001, 1481, 5238, 3867, 8002, 4281, 4490, 5665, 2]
+// Dependencies: [19, 17, 676, 1930, 21, 4285, 712, 3997, 698, 8766, 14623, 5236, 8792, 1236, 4812, 8979, 9882, 1297, 8000, 1474, 8001, 1481, 5238, 3867, 8002, 4281, 4490, 5665, 2]
 // Exports: default
 
-// Module 14623 (ChangeLogScreen)
+// Module 14622 (ChangeLogScreen)
 import importAllResult from "useWindowDimensions";
 import { View } from "Button";
 import { AnalyticEvents } from "ME";
@@ -161,7 +161,7 @@ ListItem.prototype["render"] = function render() {
   const items = [callback(View, obj), ];
   obj = { style: tmp.listText, children: null };
   let childrenResult = children;
-  if (typeof children !== "three_button_mouse") {
+  if (typeof children === "function") {
     const obj1 = { style: null };
     obj1[0] = tmp.listText;
     childrenResult = children(obj1);
@@ -287,7 +287,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(importDefault(14624), obj1), ];
+      const items = [callback(importDefault(14623), obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };

@@ -1,10 +1,10 @@
-// Module ID: 15193
-// Function ID: 15194
+// Module ID: 15192
+// Function ID: 15193
 // Name: UserSummaryRow
-// Dependencies: [19, 17, 5103, 1377, 4304, 3913, 4357, 1378, 505, 21, 712, 1297, 4275, 9718, 9471, 9370, 500, 4699, 4285, 4281, 11801, 9711, 1844, 4494, 7696, 4221, 8203, 4695, 4131, 4475, 589, 1236, 4745, 8966, 8867, 8895, 8871, 5115, 5109, 5102, 8960, 4806, 15192, 9585, 5317, 2]
+// Dependencies: [19, 17, 5103, 1377, 4304, 3913, 4357, 1378, 505, 21, 712, 1297, 4275, 9718, 9471, 9370, 500, 4699, 4285, 4281, 11801, 9711, 1844, 4494, 7696, 4221, 8203, 4695, 4131, 4475, 589, 1236, 4745, 8966, 8867, 8895, 8871, 5115, 5109, 5102, 8960, 4806, 15191, 9585, 5317, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 15193 (UserSummaryRow)
+// Module 15192 (UserSummaryRow)
 import importAllResult from "Text";
 import { View } from "MINIMUM_HIT_AREA";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
@@ -308,7 +308,7 @@ obj.react = require("inlineChannelMentionReact").inlineChannelMentionReact;
 obj.channelMention = obj;
 obj.guild = {
   react(content, output, state) {
-    if (typeof content.content === "y") {
+    if (typeof content.content === "string") {
       content = content.content;
     } else {
       content = require(9471) /* smartOutput */.smartOutput(content, output, state);
@@ -426,7 +426,7 @@ export default importAllResult.memo((guild) => {
   guild = guild.guild;
   let activeEventOrStageInstanceChannel;
   let guildActiveEvent;
-  let obj = activeEventOrStageInstanceChannel(15192);
+  let obj = activeEventOrStageInstanceChannel(15191);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj1 = activeEventOrStageInstanceChannel(8960);
   guildActiveEvent = obj1.useGuildActiveEvent(guild.id);

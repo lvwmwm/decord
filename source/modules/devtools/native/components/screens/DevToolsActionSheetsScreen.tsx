@@ -1,10 +1,10 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14937
+// Function ID: 14938
 // Name: ActionSheetSelector
-// Dependencies: [32, 19, 17, 21, 4285, 712, 12135, 12133, 4490, 14939, 1959, 4253, 5338, 5337, 5649, 5315, 7772, 4237, 4693, 5317, 4281, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 12134, 12132, 4490, 14938, 1959, 4253, 5338, 5337, 5649, 5315, 7772, 4237, 4693, 5317, 4281, 2]
 // Exports: default
 
-// Module 14938 (ActionSheetSelector)
+// Module 14937 (ActionSheetSelector)
 import _slicedToArray from "_slicedToArray";
 import PressableCard from "PressableCard";
 import get_ActivityIndicator from "CheckmarkLargeIcon";
@@ -68,7 +68,7 @@ let items = [
     label: "Blocked Domain",
     description: "Shows a warning for potentially malicious domains",
     show() {
-      return importDefault(12135).show("https://example-phishing-site.com/malicious-page");
+      return importDefault(12134).show("https://example-phishing-site.com/malicious-page");
     }
   },
   {
@@ -76,7 +76,7 @@ let items = [
     label: "Suspicious Download",
     description: "Warns users about potentially dangerous file downloads",
     show() {
-      return importDefault(12133).show("https://suspicious-file.com/dangerous-file.exe");
+      return importDefault(12132).show("https://suspicious-file.com/dangerous-file.exe");
     }
   },
   {
@@ -84,7 +84,7 @@ let items = [
     label: "Inappropriate Conversation",
     description: "Shows safety warning for inappropriate conversations",
     show() {
-      return importDefault(4490).pushLazy(require(1959) /* asyncRequireImpl */(14939, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return importDefault(4490).pushLazy(require(1959) /* asyncRequireImpl */(14938, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];
@@ -94,7 +94,7 @@ let obj2 = {
   label: "Blocked Domain",
   description: "Shows a warning for potentially malicious domains",
   show() {
-    return importDefault(12135).show("https://example-phishing-site.com/malicious-page");
+    return importDefault(12134).show("https://example-phishing-site.com/malicious-page");
   }
 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx");

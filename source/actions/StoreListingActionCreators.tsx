@@ -1,10 +1,10 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 13669
+// Function ID: 13670
 // Name: fetchStoreListingsForApplications
-// Dependencies: [4322, 4330, 13671, 676, 4522, 530, 709, 7508, 2]
+// Dependencies: [4322, 4330, 13670, 676, 4522, 530, 709, 7508, 2]
 // Exports: fetchAllStoreListingsForApplication, fetchStoreListingForSku, fetchStoreListingsForApplications
 
-// Module 13670 (fetchStoreListingsForApplications)
+// Module 13669 (fetchStoreListingsForApplications)
 import addApplication from "addApplication";
 import addSku from "addSku";
 import addRegularStoreListing from "addRegularStoreListing";

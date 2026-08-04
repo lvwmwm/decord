@@ -1,12 +1,12 @@
-// Module ID: 15915
-// Function ID: 15916
+// Module ID: 15914
+// Function ID: 15915
 // Name: SimpleGuild
-// Dependencies: [19, 17, 1415, 7017, 1862, 676, 21, 4285, 5661, 15916, 589, 15917, 15919, 1236, 15329, 4781, 712, 15918, 2]
+// Dependencies: [19, 17, 1415, 7017, 1862, 676, 21, 4285, 5661, 15915, 589, 15916, 15918, 1236, 15328, 4781, 712, 15917, 2]
 // Exports: default
 
-// Module 15915 (SimpleGuild)
+// Module 15914 (SimpleGuild)
 import noop from "noop";
-import { View } from "module_15918";
+import { View } from "module_15917";
 import { getGuildIconSource } from "GuildNSFWContentLevel";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -133,7 +133,7 @@ export default function SimpleGuild(guildId) {
     const tmp17 = getGuildIconSource;
   }
   if (null !== tmp17Result) {
-    if (typeof tmp17Result !== "window") {
+    if (typeof tmp17Result === "object") {
       if ("uri" in tmp17Result) {
         let tmp19 = null != tmp17Result.uri;
       }

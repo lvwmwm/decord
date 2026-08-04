@@ -1,10 +1,10 @@
-// Module ID: 15236
-// Function ID: 15237
+// Module ID: 15235
+// Function ID: 15236
 // Name: FavoritesGuildCoachmarkGraphic
 // Dependencies: [17, 21, 4285, 712, 5936, 1297, 2]
 // Exports: default
 
-// Module 15236 (FavoritesGuildCoachmarkGraphic)
+// Module 15235 (FavoritesGuildCoachmarkGraphic)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

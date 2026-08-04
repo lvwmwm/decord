@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16719
+// Function ID: 16720
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5144, 21, 4285, 712, 16711, 589, 5236, 1416, 16717, 1236, 4623, 4713, 7777, 16707, 4281, 2]
+// Dependencies: [5, 32, 19, 17, 5144, 21, 4285, 712, 16710, 589, 5236, 1416, 16716, 1236, 4623, 4713, 7777, 16706, 4281, 2]
 // Exports: default
 
-// Module 16720 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 16719 (GuildRoleSubscriptionEmojiEditorModal)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -58,67 +58,21 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
   function _handleSave(stateFromStores, arg1) {
     const self = this;
     const tmp = onSave(function*() {
-      if (c4 === 2) {
+      let closure_0 = tmp3;
+      let v0 = 1;
+      yield v0(outer1_7);
+      if (1 === tmp7) {
+        v0 = 0;
+        let c4 = 3;
+      } else if (arg0 === 1) {
         c4 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_0 = tmp3;
-              let v0 = 1;
-              c1 = 2;
-              c4 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = v0(outer1_7);
-              return obj1;
-            }
-          } else {
-            if (1 === tmp7) {
-              v0 = 0;
-              c4 = 3;
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              callback();
-              v0 = 0;
-            }
-            v0 = 0;
-            c4 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          }
-        } catch (tmp14) {
-          callback = tmp14;
-          if (tmp4 === v0) {
-            c4 = tmp2;
-            throw tmp14;
-          } else {
-            c1 = tmp;
-          }
-        }
+        throw arg1;
+      } else if (arg0 !== 2) {
+        callback();
+        v0 = 0;
       }
+      v0 = 0;
+      return arg1;
     });
     const _handleSave = tmp;
     const apply = tmp.apply;

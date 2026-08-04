@@ -1,10 +1,10 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15887
+// Function ID: 15888
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 17, 4277, 676, 21, 589, 14747, 500, 8107, 14748, 5236, 4695, 1236, 12144, 712, 4253, 3982, 1945, 7654, 2931, 2]
+// Dependencies: [19, 17, 4277, 676, 21, 589, 14746, 500, 8107, 14747, 5236, 4695, 1236, 12143, 712, 4253, 3982, 1945, 7654, 2931, 2]
 // Exports: default
 
-// Module 15888 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 15887 (IncentivizedAccountLinkConfirmationBottomSheet)
 import "messagesProxy";
 import { Image } from "combined";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -21,7 +21,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
     obj = { source: null, style: null };
     obj = { uri: null };
-    obj[0] = importDefault(14747);
+    obj[0] = importDefault(14746);
     obj[0] = obj;
     const obj1 = { width: null, height: null };
     obj1[0] = c7;
@@ -34,7 +34,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
     if (tmpResult.isAndroid()) {
       let obj2 = { url: null, style: null };
       let tmp4Result = tmp4(8107);
-      obj2[0] = tmp4(14748);
+      obj2[0] = tmp4(14747);
       const obj3 = { width: null, height: null };
       obj3[0] = c7;
       obj3[1] = c7;
@@ -46,7 +46,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
       const obj4 = { source: null, resizeMode: "contain", style: null };
       const obj5 = { uri: null };
       tmp4Result = tmp4(5236);
-      obj5[0] = tmp4(14748);
+      obj5[0] = tmp4(14747);
       obj4[0] = obj5;
       const obj6 = { width: null, height: null };
       obj6[0] = c7;
@@ -63,7 +63,7 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   obj7[0] = intl.string(require(1236) /* getSystemLocale */.t.aRIFWD);
   const obj8 = { size: "sm", color: null };
   obj8[1] = tmp8(712).colors.WHITE;
-  obj7[1] = tmp9(require(12144) /* WindowLaunchIcon */.WindowLaunchIcon, obj8);
+  obj7[1] = tmp9(require(12143) /* WindowLaunchIcon */.WindowLaunchIcon, obj8);
   obj7[4] = function onPress() {
     callback(4253).hideActionSheet();
     const obj = callback(4253);

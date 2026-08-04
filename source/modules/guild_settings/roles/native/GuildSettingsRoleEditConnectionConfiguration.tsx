@@ -1,10 +1,10 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16596
+// Function ID: 16597
 // Name: Header
-// Dependencies: [32, 19, 17, 676, 5092, 21, 4285, 712, 4221, 10950, 1297, 1416, 4131, 5315, 1236, 4812, 5270, 5650, 16598, 500, 4281, 4966, 5649, 2]
+// Dependencies: [32, 19, 17, 676, 5092, 21, 4285, 712, 4221, 10950, 1297, 1416, 4131, 5315, 1236, 4812, 5270, 5650, 16597, 500, 4281, 4966, 5649, 2]
 // Exports: default
 
-// Module 16597 (Header)
+// Module 16596 (Header)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "TableSwitchRow";
@@ -45,7 +45,7 @@ function Header(arg0) {
     application1 = integration.application;
   }
   if (null != application1) {
-    obj = { size: null, user: null, guildId: "Array" };
+    obj = { size: null, user: null, guildId: "disabled" };
     obj[0] = tmp3(1297).AvatarSizes.XSMALL;
     let bot;
     if (integration != null) {
@@ -68,7 +68,7 @@ function Header(arg0) {
       }
       let tmp11;
       if (null != bot1) {
-        obj = { size: null, user: null, guildId: "Array" };
+        obj = { size: null, user: null, guildId: "disabled" };
         obj[0] = tmp3(1297).AvatarSizes.XSMALL;
         obj[1] = getOrFetchApplicationBatched.bot;
         tmp11 = callback2(tmp3(1297).Avatar, obj);
@@ -214,7 +214,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(16598);
+  let obj = metadataField(16597);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -223,7 +223,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(16598);
+  let tmpResult = tmp(16597);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -271,12 +271,12 @@ function NumericalConfigRule(existingPendingConfiguration) {
     obj[0] = map.metadataRow;
     fieldTextHook = mapped.Children;
     map = fieldTextHook.map;
-    mapped = map(intl.format(fieldTextHook, obj), (arg0, arg1) => {
-      let tmp = arg0;
-      if (typeof arg0 !== "_iter") {
+    mapped = map(intl.format(fieldTextHook, obj), (str) => {
+      let tmp = str;
+      if (typeof str === "string") {
         const obj = { variant: "text-md/semibold", style: null, children: null };
         obj[1] = map.metadataRowText;
-        obj[2] = arg0;
+        obj[2] = str;
         const _HermesInternal = HermesInternal;
         tmp = onInputValueChange(metadataField(outer1_2[20]).Text, obj, "t-" + arg1);
       }
@@ -645,7 +645,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: 131156.94153022772, onRemove: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000720718895621532, locked: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000616429016721421 };
+      obj = { platform: null, integration: "a", applicationId: "t", onRemove: "a", locked: "isArray" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

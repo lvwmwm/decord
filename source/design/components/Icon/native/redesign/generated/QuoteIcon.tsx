@@ -1,10 +1,10 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 12258
+// Function ID: 12259
 // Name: QuoteIcon
-// Dependencies: [19, 21, 712, 3988, 12260, 2]
+// Dependencies: [19, 21, 712, 3988, 12259, 2]
 // Exports: QuoteIcon
 
-// Module 12259 (QuoteIcon)
+// Module 12258 (QuoteIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const QuoteIcon = function QuoteIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12260) /* registerAsset */;
+  obj[0] = require(12259) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

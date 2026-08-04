@@ -1,10 +1,10 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12468
+// Function ID: 12469
 // Name: validateJumpWithAlert
 // Dependencies: [1372, 3913, 3922, 676, 4623, 1236, 6875, 2]
 // Exports: default
 
-// Module 12469 (validateJumpWithAlert)
+// Module 12468 (validateJumpWithAlert)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import upsertRelationship from "upsertRelationship";

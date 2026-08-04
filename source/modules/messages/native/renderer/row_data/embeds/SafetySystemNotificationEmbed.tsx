@@ -1,10 +1,10 @@
-// Module ID: 12542
-// Function ID: 12543
+// Module ID: 12541
+// Function ID: 12542
 // Name: createSafetySystemNotificationEmbed
 // Dependencies: [17, 676, 3867, 7773, 4752, 7727, 7865, 1236, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 12542 (createSafetySystemNotificationEmbed)
+// Module 12541 (createSafetySystemNotificationEmbed)
 import { Image } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 

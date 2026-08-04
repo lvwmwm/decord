@@ -1,9 +1,9 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 15898
+// Function ID: 15899
 // Name: AnimatedToast
-// Dependencies: [19, 4277, 15900, 21, 4285, 5125, 4146, 1474, 14237, 1581, 589, 4681, 14246, 4694, 4629, 3998, 15901, 1297, 3986, 2]
+// Dependencies: [19, 4277, 15899, 21, 4285, 5125, 4146, 1474, 14236, 1581, 589, 4681, 14245, 4694, 4629, 3998, 15900, 1297, 3986, 2]
 
-// Module 15899 (AnimatedToast)
+// Module 15898 (AnimatedToast)
 import importAllResult from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ToastStore from "ToastStore";
@@ -52,7 +52,7 @@ function AnimatedToast(toast) {
   let tmp10 = null != content;
   const isScreenReaderEnabled = merged(cleanUp[11]).useIsScreenReaderEnabled();
   if (tmp10) {
-    tmp10 = typeof content === "y";
+    tmp10 = typeof content === "string";
   }
   c10 = tmp10;
   const position = merged.position;

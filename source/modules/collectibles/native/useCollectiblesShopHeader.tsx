@@ -1,10 +1,10 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14751
+// Function ID: 14752
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1874, 678, 676, 5128, 8707, 21, 4285, 712, 11438, 4281, 1236, 589, 9341, 6909, 5630, 5304, 4253, 10066, 1959, 698, 11080, 5131, 4490, 8705, 10054, 7672, 8689, 8408, 14753, 1480, 2]
+// Dependencies: [19, 17, 1874, 678, 676, 5128, 8707, 21, 4285, 712, 11438, 4281, 1236, 589, 9341, 6909, 5630, 5304, 4253, 10066, 1959, 698, 11080, 5131, 4490, 8705, 10054, 7672, 8689, 8408, 14752, 1480, 2]
 // Exports: default
 
-// Module 14752 (CollectiblesShopHeaderTitle)
+// Module 14751 (CollectiblesShopHeaderTitle)
 import ref from "ref";
 import { View } from "CheckmarkSmallIcon";
 import mergeGuildAvatar from "mergeGuildAvatar";

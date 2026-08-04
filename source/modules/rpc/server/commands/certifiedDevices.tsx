@@ -1,9 +1,9 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13643
+// Function ID: 13644
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4188, 676, 4345, 8824, 10546, 10543, 13645, 2]
+// Dependencies: [4188, 676, 4345, 8824, 10546, 10543, 13644, 2]
 
-// Module 13644 (RPC_LOCAL_SCOPE)
+// Module 13643 (RPC_LOCAL_SCOPE)
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 import { DeviceTypes } from "DesktopSources";
@@ -69,7 +69,7 @@ obj[2] = function handler(socket) {
     const tmp10 = new importDefault(10543)(obj, "No application.");
     throw tmp10;
   } else {
-    obj = devices(13645);
+    obj = devices(13644);
     obj.setCertifiedDevices(socket.application.id, devices.map((type) => {
       const related = type.related;
       return {

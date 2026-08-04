@@ -1,10 +1,10 @@
-// Module ID: 13165
-// Function ID: 13166
+// Module ID: 13164
+// Function ID: 13165
 // Name: HideMutedChannelsOption
-// Dependencies: [19, 17, 6900, 1340, 1415, 7017, 1935, 4297, 4480, 1874, 676, 5207, 7862, 4481, 21, 4285, 712, 589, 5648, 1236, 9652, 5859, 4101, 1358, 6896, 4253, 4490, 10936, 1959, 11575, 4474, 5610, 5630, 10050, 1297, 9052, 13166, 1306, 1355, 8946, 13167, 8076, 9169, 4281, 3958, 5922, 5230, 9739, 5225, 13215, 9734, 13216, 8959, 5091, 8918, 8883, 10956, 13217, 4625, 38, 13164, 9688, 9687, 6903, 10942, 13218, 7830, 7934, 11140, 5637, 5638, 3985, 1416, 2]
+// Dependencies: [19, 17, 6900, 1340, 1415, 7017, 1935, 4297, 4480, 1874, 676, 5207, 7862, 4481, 21, 4285, 712, 589, 5648, 1236, 9652, 5859, 4101, 1358, 6896, 4253, 4490, 10936, 1959, 11575, 4474, 5610, 5630, 10050, 1297, 9052, 13165, 1306, 1355, 8946, 13166, 8076, 9169, 4281, 3958, 5922, 5230, 9739, 5225, 13214, 9734, 13215, 8959, 5091, 8918, 8883, 10956, 13216, 4625, 38, 13163, 9688, 9687, 6903, 10942, 13217, 7830, 7934, 11140, 5637, 5638, 3985, 1416, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
-// Module 13165 (HideMutedChannelsOption)
+// Module 13164 (HideMutedChannelsOption)
 import getSystemLocale from "getSystemLocale";
 import { View } from "initialize";
 import guildHasCommunity from "guildHasCommunity";
@@ -321,7 +321,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13216);
+  let obj = guild(13215);
   let obj1 = guild(589);
   const items = [createGuildRoleRecordFromRust];
   const items1 = [];
@@ -397,7 +397,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
   items.push(callback2(NotificationAction, { guild }));
   items.push(callback2(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
-  let obj = guild(13164);
+  let obj = guild(13163);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -464,7 +464,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   items.push(callback2(RestrictedGuildPrivacyOption, { guild }));
   const tmp12 = constants;
   const tmp2 = callback(guild, currentUser);
-  const messageRequestPrivacyOption = guild(13164).useMessageRequestPrivacyOption({ guild });
+  const messageRequestPrivacyOption = guild(13163).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }

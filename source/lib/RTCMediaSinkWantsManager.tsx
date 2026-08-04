@@ -1,9 +1,9 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 12977
+// Function ID: 12978
 // Name: getDefaultWants
-// Dependencies: [32, 1218, 676, 4345, 687, 4602, 12979, 4384, 4394, 4170, 10607, 11, 12, 500, 643, 4381, 2]
+// Dependencies: [32, 1218, 676, 4345, 687, 4602, 12978, 4384, 4394, 4170, 10607, 11, 12, 500, 643, 4381, 2]
 
-// Module 12978 (getDefaultWants)
+// Module 12977 (getDefaultWants)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import { VideoToggleState } from "ME";
@@ -13,7 +13,7 @@ import num2 from "num2";
 
 let require = arg1;
 function getDefaultWants(arg0) {
-  let obj = require(12979) /* getBrowserInvertedWantsConfig */;
+  let obj = require(12978) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);
@@ -696,7 +696,7 @@ prototype["reset"] = function reset() {
   this.framesReceived = {};
   this.streamIds = {};
   this.streamPixelCounts = {};
-  let obj = require(12979) /* getBrowserInvertedWantsConfig */;
+  let obj = require(12978) /* getBrowserInvertedWantsConfig */;
   if (obj.getBrowserInvertedWantsConfig("RTCMediaSinkWantsManager.getDefaultWants").invertWants) {
     obj = {};
     const merged = Object.assign(obj);

@@ -1,10 +1,10 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 14968
+// Function ID: 14969
 // Name: StopIcon
-// Dependencies: [19, 21, 712, 3988, 14970, 2]
+// Dependencies: [19, 21, 712, 3988, 14969, 2]
 // Exports: StopIcon
 
-// Module 14969 (StopIcon)
+// Module 14968 (StopIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const StopIcon = function StopIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14970) /* registerAsset */;
+  obj[0] = require(14969) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13907
+// Function ID: 13908
 // Name: route
-// Dependencies: [19, 1874, 7892, 676, 21, 589, 4124, 11183, 4281, 10361, 1236, 13909, 2]
+// Dependencies: [19, 1874, 7892, 676, 21, 589, 4124, 11183, 4281, 10361, 1236, 13908, 2]
 
-// Module 13908 (route)
+// Module 13907 (route)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -43,7 +43,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.ACCOUNT_CHANGE_USERNAME,
   getComponent() {
-    return require(13909) /* UsernameStatusMessage */.default;
+    return require(13908) /* UsernameStatusMessage */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

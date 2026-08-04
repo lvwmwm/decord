@@ -1,10 +1,10 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12502
+// Function ID: 12503
 // Name: createActivityMessageEmbed
-// Dependencies: [11259, 12127, 2]
+// Dependencies: [11259, 12126, 2]
 // Exports: createActivityMessageEmbed
 
-// Module 12503 (createActivityMessageEmbed)
+// Module 12502 (createActivityMessageEmbed)
 const result = require("set").fileFinishedImporting("modules/applications/message_embed/native/createActivityMessageEmbed.tsx");
 
 export const createActivityMessageEmbed = function createActivityMessageEmbed(app) {
@@ -23,7 +23,7 @@ export const createActivityMessageEmbed = function createActivityMessageEmbed(ap
     if (null == linkId) {
       return appMessageEmbed;
     } else {
-      const orFetchCustomActivityLink = tmp(12127).getOrFetchCustomActivityLink(app.id, linkId);
+      const orFetchCustomActivityLink = tmp(12126).getOrFetchCustomActivityLink(app.id, linkId);
       let tmp8 = null;
       if (null != orFetchCustomActivityLink) {
         obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16092
+// Function ID: 16093
 // Name: ParticipantsSummary
-// Dependencies: [32, 19, 17, 21, 4285, 712, 4129, 16094, 10829, 1297, 4704, 4281, 4146, 4710, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4129, 16093, 10829, 1297, 4704, 4281, 4146, 4710, 2]
 // Exports: default
 
-// Module 16093 (ParticipantsSummary)
+// Module 16092 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -19,8 +19,8 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(16094)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
-  const tmp = importDefault(16094)(applicationId, channelId);
+  const obj = { users: importDefault(16093)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
+  const tmp = importDefault(16093)(applicationId, channelId);
   obj[2] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[4] = { marginBottom: 8 };
   obj[5] = { inset: -8 };

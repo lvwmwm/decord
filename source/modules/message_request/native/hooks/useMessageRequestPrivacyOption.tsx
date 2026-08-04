@@ -1,10 +1,10 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13163
+// Function ID: 13164
 // Name: MessageRequestRestrictedGuildPrivacyOption
 // Dependencies: [19, 21, 3958, 5922, 5648, 1236, 11718, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 13164 (MessageRequestRestrictedGuildPrivacyOption)
+// Module 13163 (MessageRequestRestrictedGuildPrivacyOption)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

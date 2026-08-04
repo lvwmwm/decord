@@ -1,10 +1,10 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15215
+// Function ID: 15216
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 676, 1379, 9710, 21, 4285, 712, 15217, 8238, 4105, 1222, 11665, 1236, 4798, 1297, 2]
+// Dependencies: [19, 676, 1379, 9710, 21, 4285, 712, 15216, 8238, 4105, 1222, 11665, 1236, 4798, 1297, 2]
 // Exports: default
 
-// Module 15216 (GuildMemberDashChannelRow)
+// Module 15215 (GuildMemberDashChannelRow)
 import noop from "noop";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -33,7 +33,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   const tmp = createCacheKey();
   id = guild.id;
-  let obj = id(15217);
+  let obj = id(15216);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;

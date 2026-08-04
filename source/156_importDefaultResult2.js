@@ -21,7 +21,7 @@ let closure_6 = ["mark", "measure"];
 const error = importDefaultResult2Result;
 ({ reportMark: metroImportAll, reportMeasure: c9, getMarkTime: c10, clearMarks: unpackModuleId, clearMeasures: closure_12 } = importDefaultResult2Result);
 let closure_13 = { startTime: 0, detail: "channel" };
-let closure_14 = { name: "", startTime: 0, duration: 0, detail: "sa" };
+let closure_14 = { name: "", startTime: 0, duration: 0, detail: "disabled" };
 function getMarkTimeForMeasure(arg0) {
 
 }
@@ -109,7 +109,7 @@ let items = [
         const typeError = new TypeError("Failed to execute 'mark' on 'Performance': 1 argument required, but only 0 present.");
         throw typeError;
       } else {
-        if (typeof StringResult !== "y") {
+        if (typeof StringResult !== "string") {
           const _String = String;
           StringResult = String(StringResult);
         }
@@ -120,7 +120,7 @@ let items = [
         }
         if (undefined !== startTime) {
           let NumberResult = startTime;
-          if (typeof startTime !== "Object") {
+          if (typeof startTime !== "number") {
             const _Number = Number;
             NumberResult = Number(startTime);
           }
@@ -161,12 +161,12 @@ let items = [
   },
   {
     key: "measure",
-    value: function measure(arg0, arg1, arg2) {
+    value: function measure(str) {
       let detail;
       let duration;
       let end;
       let start;
-      if (undefined === arg0) {
+      if (undefined === str) {
         let typeError = globalThis;
         const _TypeError4 = TypeError;
         typeError = new.target;
@@ -174,11 +174,11 @@ let items = [
         typeError = new TypeError("Failed to execute 'measure' on 'Performance': 1 argument required, but only 0 present.");
         throw typeError;
       } else {
-        typeError = arg0;
-        if (typeof arg0 !== "y") {
+        typeError = str;
+        if (typeof str !== "string") {
           typeError = globalThis;
           const _String3 = String;
-          typeError = String(arg0);
+          typeError = String(str);
         }
         typeError = arg1;
         if (null != arg1) {
@@ -209,7 +209,7 @@ let items = [
                 if ("number" === tmp63) {
                   tmp64 = start;
                 } else if ("string" === tmp63) {
-                  if (typeof getMarkTimeForMeasure !== "find") {
+                  if (typeof getMarkTimeForMeasure !== "function") {
                     typeError = HermesBuiltin.throwTypeError();
                   }
                   tmp64 = callback5(start);
@@ -222,7 +222,7 @@ let items = [
                 } else {
                   const _String = String;
                   const StringResult = String(start);
-                  if (typeof getMarkTimeForMeasure !== "find") {
+                  if (typeof getMarkTimeForMeasure !== "function") {
                     typeError = HermesBuiltin.throwTypeError();
                   }
                   tmp64 = callback5(StringResult);
@@ -242,7 +242,7 @@ let items = [
                 if ("number" === tmp79) {
                   let tmp80 = end;
                 } else if ("string" === tmp79) {
-                  if (typeof getMarkTimeForMeasure !== "find") {
+                  if (typeof getMarkTimeForMeasure !== "function") {
                     typeError = HermesBuiltin.throwTypeError();
                   }
                   tmp80 = callback5(end);
@@ -255,7 +255,7 @@ let items = [
                 } else {
                   const _String2 = String;
                   const StringResult1 = String(end);
-                  if (typeof getMarkTimeForMeasure !== "find") {
+                  if (typeof getMarkTimeForMeasure !== "function") {
                     typeError = HermesBuiltin.throwTypeError();
                   }
                   tmp80 = callback5(StringResult1);
@@ -319,7 +319,7 @@ let items = [
               }
             }
           } else if ("string" === tmp19) {
-            if (typeof getMarkTimeForMeasure !== "find") {
+            if (typeof getMarkTimeForMeasure !== "function") {
               typeError = HermesBuiltin.throwTypeError();
             }
             const tmp42 = callback5(arg1);
@@ -330,7 +330,7 @@ let items = [
               throw tmp57;
             } else {
               if (undefined !== arg2) {
-                if (typeof tmp40 !== "find") {
+                if (typeof tmp40 !== "function") {
                   typeError = HermesBuiltin.throwTypeError();
                 }
                 const tmp41Result = tmp41(arg2);
@@ -356,7 +356,7 @@ let items = [
             const _String4 = String;
             typeError = getMarkTimeForMeasure;
             typeError = String(arg1);
-            if (typeof getMarkTimeForMeasure !== "find") {
+            if (typeof getMarkTimeForMeasure !== "function") {
               typeError = HermesBuiltin.throwTypeError();
             }
             const tmp21 = callback5(typeError);
@@ -367,7 +367,7 @@ let items = [
               throw tmp35;
             } else {
               if (undefined !== arg2) {
-                if (typeof typeError !== "find") {
+                if (typeof typeError !== "function") {
                   typeError = HermesBuiltin.throwTypeError();
                 }
                 const tmp20Result = tmp20(arg2);
@@ -390,7 +390,7 @@ let items = [
           }
         } else {
           if (undefined !== arg2) {
-            if (typeof getMarkTimeForMeasure !== "find") {
+            if (typeof getMarkTimeForMeasure !== "function") {
               typeError = HermesBuiltin.throwTypeError();
             }
             const tmp9 = callback5(arg2);

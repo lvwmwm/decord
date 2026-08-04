@@ -1,10 +1,10 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 12555
+// Function ID: 12556
 // Name: InAppReportsUpsellsTableRow
 // Dependencies: [19, 21, 5315, 2]
 // Exports: default
 
-// Module 12556 (InAppReportsUpsellsTableRow)
+// Module 12555 (InAppReportsUpsellsTableRow)
 import "noop";
 import { jsx } from "jsxProd";
 

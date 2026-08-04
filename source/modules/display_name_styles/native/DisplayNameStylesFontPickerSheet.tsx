@@ -1,10 +1,10 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14477
+// Function ID: 14478
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1886, 505, 21, 4285, 712, 7325, 14473, 14475, 1888, 1885, 4254, 4253, 5338, 5337, 1236, 2643, 4695, 4693, 13830, 9158, 4281, 4241, 2]
+// Dependencies: [32, 19, 17, 1886, 505, 21, 4285, 712, 7325, 14472, 14474, 1888, 1885, 4254, 4253, 5338, 5337, 1236, 2643, 4695, 4693, 13829, 9158, 4281, 4241, 2]
 // Exports: default
 
-// Module 14478 (DisplayNameStylesFontPickerSheet)
+// Module 14477 (DisplayNameStylesFontPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "getSystemLocale";
@@ -55,9 +55,9 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   let tmp = createCacheKey();
   importDefault = tmp;
   let obj = onSelectFont(7325);
-  let obj1 = onSelectFont(14473);
+  let obj1 = onSelectFont(14472);
   const visibleFontOrder = obj1.useVisibleFontOrder();
-  let obj2 = onSelectFont(14475);
+  let obj2 = onSelectFont(14474);
   const displayNameStylesNewFonts = obj2.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   const tmp5 = callback(first.useState(selectedFontId), 2);

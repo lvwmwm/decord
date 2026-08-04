@@ -1,10 +1,10 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 14918
+// Function ID: 14919
 // Name: setWarningBoosts
-// Dependencies: [5, 19, 17, 1340, 11833, 1862, 4102, 14920, 676, 21, 4285, 712, 530, 3867, 4181, 11761, 14834, 5650, 11767, 1355, 1358, 1581, 589, 4281, 5649, 5315, 2]
+// Dependencies: [5, 19, 17, 1340, 11833, 1862, 4102, 14919, 676, 21, 4285, 712, 530, 3867, 4181, 11761, 14833, 5650, 11767, 1355, 1358, 1581, 589, 4281, 5649, 5315, 2]
 // Exports: default
 
-// Module 14919 (setWarningBoosts)
+// Module 14918 (setWarningBoosts)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateUserGuildSettings from "updateUserGuildSettings";
 import get_ActivityIndicator from "TableSwitchRow";
@@ -199,7 +199,7 @@ function UserDCSwitchRow(dc) {
   let handleToggleDismissState;
   let isDismissed;
   dc = dc.dc;
-  ({ isDismissed, handleToggleDismissState } = importDefault(14834)(dc));
+  ({ isDismissed, handleToggleDismissState } = importDefault(14833)(dc));
   const obj = { label: null, value: null, onValueChange: null };
   obj[0] = callback3(dc);
   obj[1] = isDismissed;

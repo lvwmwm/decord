@@ -1,9 +1,9 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15393
+// Function ID: 15394
 // Name: BadgedIcon
-// Dependencies: [19, 17, 10188, 21, 8103, 15395, 4285, 712, 4221, 3989, 4700, 8192, 4249, 10191, 589, 8186, 8181, 8184, 8190, 7672, 1236, 2]
+// Dependencies: [19, 17, 10188, 21, 8103, 15394, 4285, 712, 4221, 3989, 4700, 8192, 4249, 10191, 589, 8186, 8181, 8184, 8190, 7672, 1236, 2]
 
-// Module 15394 (BadgedIcon)
+// Module 15393 (BadgedIcon)
 import importAllResult from "IconButton";
 import { View } from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";

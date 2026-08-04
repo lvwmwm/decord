@@ -1,10 +1,10 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 15951
+// Function ID: 15952
 // Name: BaseActivityPanelController
-// Dependencies: [32, 19, 4322, 8784, 10649, 1372, 1371, 4310, 9674, 21, 1941, 15953, 4146, 8817, 15954, 1581, 1474, 15955, 15958, 10629, 10663, 15959, 5244, 10631, 4144, 589, 3903, 10320, 5096, 4293, 15960, 10513, 2]
+// Dependencies: [32, 19, 4322, 8784, 10649, 1372, 1371, 4310, 9674, 21, 1941, 15952, 4146, 8817, 15953, 1581, 1474, 15954, 15957, 10629, 10663, 15958, 5244, 10631, 4144, 589, 3903, 10320, 5096, 4293, 15959, 10513, 2]
 // Exports: default
 
-// Module 15952 (BaseActivityPanelController)
+// Module 15951 (BaseActivityPanelController)
 import set from "set";
 import getIsTabletActivitySurface from "getIsTabletActivitySurface";
 import addApplication from "addApplication";
@@ -65,7 +65,7 @@ class BaseActivityPanelController {
       defaultOrientationLockState = tmp5Result.getDefaultOrientationLockState(currentApp);
     }
     c9 = defaultOrientationLockState;
-    tmp12 = f62806(tmp4, tmp3.top, defaultOrientationLockState, isTabletActivitySurface);
+    tmp12 = f62803(tmp4, tmp3.top, defaultOrientationLockState, isTabletActivitySurface);
     c10 = tmp12;
     useRef = obj3.useRef(connectedActivityAppId);
     tmp5Result1 = require("isVoicePanelEnabled");
@@ -205,7 +205,7 @@ class BaseActivityPanelController {
     };
     fn.__closure = { wrapperOffset: sharedValue1 };
     fn.__workletHash = 5299695936442;
-    fn.__initData = f62806;
+    fn.__initData = f62803;
     fn2 = function s(arg0, arg1) {
       if (arg0 !== arg1) {
         sharedValue1(_undefined[12]).runOnJS(_undefined)(arg0);
@@ -215,7 +215,7 @@ class BaseActivityPanelController {
     obj = { runOnJS: require("module_4146").runOnJS, setWrapperGestureInProgress: tmp28 };
     fn2.__closure = obj;
     fn2.__workletHash = 5831467313798;
-    fn2.__initData = f62806;
+    fn2.__initData = f62803;
     animatedReaction = tmp5Result4.useAnimatedReaction(fn, fn2);
     items4 = [, , ];
     items4[0] = isActivityPanelFullscreen;
@@ -358,7 +358,7 @@ export default function ActivityPanelController(children) {
       }
     }
   }, items1);
-  obj = { context: connectedActivityInTextChannelId(15960), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: importAll(10513).updateActivityPanelMode, children: children.children };
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(15960)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={importAll(10513).updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
+  obj = { context: connectedActivityInTextChannelId(15959), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: importAll(10513).updateActivityPanelMode, children: children.children };
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(15959)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={importAll(10513).updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

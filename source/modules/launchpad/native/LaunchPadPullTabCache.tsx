@@ -1,10 +1,10 @@
-// Module ID: 15907
-// Function ID: 15908
+// Module ID: 15906
+// Function ID: 15907
 // Name: setLaunchPadPullTabExclusionRect
 // Dependencies: [10357, 595, 500, 4836, 1474, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 15907 (setLaunchPadPullTabExclusionRect)
+// Module 15906 (setLaunchPadPullTabExclusionRect)
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 
 let c3;

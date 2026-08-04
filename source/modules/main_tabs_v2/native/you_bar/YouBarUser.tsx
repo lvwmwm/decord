@@ -1,8 +1,8 @@
-// Module ID: 15376
-// Function ID: 15377
-// Dependencies: [19, 17, 1874, 14244, 21, 4285, 712, 589, 4146, 4694, 4124, 15377, 15378, 15379, 2]
+// Module ID: 15375
+// Function ID: 15376
+// Dependencies: [19, 17, 1874, 14243, 21, 4285, 712, 589, 4146, 4694, 4124, 15376, 15377, 15378, 2]
 
-// Module 15376
+// Module 15375
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -61,14 +61,14 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
       obj = { isLargeAvatar: null, onPress: null };
       obj[0] = tmp5;
       obj[1] = isQuestRendered.onAvatarPress;
-      const items2 = [callback(tmp9(15378), obj), ];
+      const items2 = [callback(tmp9(15377), obj), ];
       obj1 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj1[0] = items3;
       const obj2 = { userId: null, username: null };
       obj2[0] = stateFromStores.id;
       obj2[1] = name;
-      obj1[1] = callback(tmp9(15379), obj2);
+      obj1[1] = callback(tmp9(15378), obj2);
       items2[1] = callback(tmp9(4146).View, obj1);
       obj[1] = items2;
     }
@@ -76,7 +76,7 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   }
   obj3 = { style: items4, children: null };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(15377), { isLarge: !isQuestRendered }), ];
+  const items5 = [callback(sharedValue(15376), { isLarge: !isQuestRendered }), ];
   const obj4 = { style: items6, children: null };
   items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj4[1] = callback(View, { style: tmp.placeholder });

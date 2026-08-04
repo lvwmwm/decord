@@ -1,10 +1,10 @@
-// Module ID: 12505
-// Function ID: 12506
+// Module ID: 12504
+// Function ID: 12505
 // Name: createResolvingGuildInvite
-// Dependencies: [17, 1415, 4304, 1372, 1942, 1862, 4270, 3922, 1874, 10906, 676, 7116, 7863, 1236, 7855, 712, 4124, 4131, 11119, 11120, 1411, 1945, 7865, 11993, 11992, 10908, 10907, 12506, 1384, 7695, 1416, 1849, 4745, 9181, 4475, 2]
+// Dependencies: [17, 1415, 4304, 1372, 1942, 1862, 4270, 3922, 1874, 10906, 676, 7116, 7863, 1236, 7855, 712, 4124, 4131, 11119, 11120, 1411, 1945, 7865, 11992, 11991, 10908, 10907, 12505, 1384, 7695, 1416, 1849, 4745, 9181, 4475, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 12505 (createResolvingGuildInvite)
+// Module 12504 (createResolvingGuildInvite)
 import { Image } from "AccessibilityAnnouncer";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import reset from "reset";
@@ -140,7 +140,7 @@ export const createDisabledGuildInvite = function createDisabledGuildInvite(invi
   obj.guildIcon = tmp11;
   const tmp16 = tmp11;
   const tmpResult = importDefault(1945);
-  obj.thumbnailUrl = require(7865) /* frozen */.getAssetUriForEmbed(importDefault(11993));
+  obj.thumbnailUrl = require(7865) /* frozen */.getAssetUriForEmbed(importDefault(11992));
   let tmp17;
   if (null == tmp11) {
     let tmp18;
@@ -159,7 +159,7 @@ export const createErroredGuildInvite = function createErroredGuildInvite(code, 
   let colors;
   ({ colors, baseColors } = importDefault(7863)(closure_2));
   inviteError = inviteError.getInviteError(code);
-  let obj = require(11992) /* getDescriptiveInviteError */;
+  let obj = require(11991) /* getDescriptiveInviteError */;
   code = undefined;
   if (inviteError != null) {
     code = inviteError.code;
@@ -248,7 +248,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     guild = obj1.fromInviteGuild(invite.guild);
     flag2 = false;
   }
-  let obj2 = require(12506) /* getHeaderTextForInvite */;
+  let obj2 = require(12505) /* getHeaderTextForInvite */;
   let obj = { isVoiceChannel: tmp7, isOwnInvite, isHubGuild: null, isStream: null, isStage: null, isGuest: null };
   let flag3;
   if (guild != null) {

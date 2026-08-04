@@ -1,9 +1,9 @@
-// Module ID: 14580
-// Function ID: 14581
+// Module ID: 14579
+// Function ID: 14580
 // Name: toggle
 // Dependencies: [7892, 676, 3925, 10361, 1236, 3958, 698, 2]
 
-// Module 14580 (toggle)
+// Module 14579 (toggle)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import createToggle from "createToggle";

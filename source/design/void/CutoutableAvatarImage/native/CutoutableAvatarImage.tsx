@@ -1,9 +1,9 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12215
+// Function ID: 12216
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [19, 17, 12217, 21, 3, 1416, 12218, 12219, 8103, 5236, 4146, 4694, 514, 8437, 643, 2]
+// Dependencies: [19, 17, 12216, 21, 3, 1416, 12217, 12218, 8103, 5236, 4146, 4694, 514, 8437, 643, 2]
 
-// Module 12216 (StaticNativeCutoutAvatarImage)
+// Module 12215 (StaticNativeCutoutAvatarImage)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_SPRING_CONFIG } from "n";
@@ -26,7 +26,7 @@ function StaticNativeCutoutAvatarImage(cutout) {
     return items;
   }, items);
   const obj = { style, cutouts: memo, children: null };
-  const tmp2 = importDefault(12219)(source);
+  const tmp2 = importDefault(12218)(source);
   const items1 = [obj.image, imageStyle];
   obj[2] = callback(importDefault(5236), { style: items1, source: tmp2, usesSmallCache: true });
   return callback(importDefault(8103), obj);
@@ -73,7 +73,7 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
   const animatedProps = obj.useAnimatedProps(fn);
   obj = { style, animatedProps, children: null };
   const items = [obj.image, imageStyle];
-  obj[2] = callback(importDefault(5236), { style: items, source: importDefault(12219)(source), usesSmallCache: true });
+  obj[2] = callback(importDefault(5236), { style: items, source: importDefault(12218)(source), usesSmallCache: true });
   return callback(cutout(8103).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
@@ -134,7 +134,7 @@ function CutoutAvatarImage(arg0) {
       obj1 = { tintColor: null };
       obj1[0] = tintColor;
       obj[0] = obj1;
-      obj[1] = importDefault(12219)(source);
+      obj[1] = importDefault(12218)(source);
       obj[5] = callback(importDefault(5236), obj);
       let tmp8 = callback(Circle(8437).ForeignObject, obj);
       let tmp9 = importDefault;
@@ -201,7 +201,7 @@ function CutoutAvatarImage(arg0) {
     tmp9Result = tmp9(8437);
   }
   const obj10 = { x: "0", y: "0", height: "100%", width: "100%", href: null, mask: null };
-  obj10[4] = importDefault(12219)(source);
+  obj10[4] = importDefault(12218)(source);
   obj10[5] = "url(#" + v4Result + ")";
   tmp8 = callback(Circle(8437).Image, obj10);
   tmp9 = importDefault;
@@ -278,17 +278,17 @@ const memoResult = importAllResult.memo((style) => {
   ({ source, user, channel, animate: animate2, size: size2 } = obj);
   if (null != source) {
     let sourceResult = source;
-    if (typeof source !== "three_button_mouse") {
+    if (typeof source === "function") {
       sourceResult = source(animate2);
     }
     let avatarSource = sourceResult;
   } else if (null != user) {
     avatarSource = user.getAvatarSource(tmp6, animate2, size2);
   } else if (null != channel) {
-    let obj1 = require(12218) /* getChannelIconURL */;
+    let obj1 = require(12217) /* getChannelIconURL */;
     const channelIconURL = obj1.getChannelIconURL(channel, size2);
     let tmp13 = channelIconURL;
-    if (typeof channelIconURL !== "Object") {
+    if (typeof channelIconURL !== "number") {
       tmp13 = channelIconURL;
       if (null != channelIconURL) {
         obj = { uri: null };
@@ -341,7 +341,7 @@ const memoResult = importAllResult.memo((style) => {
       obj2[0] = items1;
       obj2[1] = avatarSource;
       let tmp22;
-      if (typeof source !== "V") {
+      if (typeof source === "number") {
         tmp22 = source;
       }
       obj2[2] = tmp22;
@@ -355,7 +355,7 @@ const memoResult = importAllResult.memo((style) => {
     if (source === source1) {
       return true;
     } else {
-      if (typeof source1 === "V") {
+      if (typeof source1 !== "number") {
         if (typeof source1 === typeof source) {
           const _Array2 = Array;
           if (Array.isArray(source1)) {
@@ -375,9 +375,9 @@ const memoResult = importAllResult.memo((style) => {
               }
             }
           }
-          let tmp3 = typeof source1 === "window";
-          if (typeof source1 !== "window") {
-            tmp3 = typeof source === "window";
+          let tmp3 = typeof source1 !== "object";
+          if (typeof source1 === "object") {
+            tmp3 = typeof source !== "object";
           }
           if (!tmp3) {
             tmp3 = tmp(643)(source1, source);

@@ -1,10 +1,10 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14938
+// Function ID: 14939
 // Name: IntroScreen
-// Dependencies: [32, 19, 17, 1874, 10253, 21, 4285, 712, 589, 4124, 1480, 5936, 4281, 1236, 4695, 10266, 14940, 10272, 5238, 10290, 4490, 10267, 5665, 2]
+// Dependencies: [32, 19, 17, 1874, 10253, 21, 4285, 712, 589, 4124, 1480, 5936, 4281, 1236, 4695, 10266, 14939, 10272, 5238, 10290, 4490, 10267, 5665, 2]
 // Exports: default
 
-// Module 14939 (IntroScreen)
+// Module 14938 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import useSafetyToolsButtonTooltipForChannel from "useSafetyToolsButtonTooltipForChannel";
 import { useState } from "useSafetyToolsButtonTooltipForChannel";
@@ -89,7 +89,7 @@ function TakeActionScreen(arg0) {
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.S0XtKF);
   items[1] = callback2(require(4281) /* Text */.Text, obj1);
   obj[1] = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(14940), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(14939), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj[1] = items1;
   return callback3(closure_7, obj);
 }

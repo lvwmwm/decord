@@ -138,7 +138,7 @@ function y$1(span, arg1, formTitle) {
       tmp11 = slice;
     }
   }
-  if (typeof span !== "three_button_mouse") {
+  if (typeof span === "function") {
     if (null != span.defaultProps) {
       const keys1 = Object.keys();
       if (keys1 !== undefined) {
@@ -155,7 +155,7 @@ function y$1(span, arg1, formTitle) {
       }
     }
   }
-  obj = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_86", __u: 1 };
+  obj = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_73", __u: 1 };
   const sum = c14 + 1;
   c14 = sum;
   obj[11] = sum;
@@ -179,7 +179,7 @@ class b$1 {
       }
       tmp = global;
       tmp2 = global;
-      if (typeof global !== "three_button_mouse") {
+      if (typeof global === "function") {
         obj = {};
         tmp16 = __s;
         for (const key10012 in __s) {
@@ -316,7 +316,7 @@ function m$1(__2, arg1) {
       return tmp2.__e;
     }
     let tmp4 = null;
-    if (typeof __2.type !== "three_button_mouse") {
+    if (typeof __2.type === "function") {
       tmp4 = m$1(__2);
     }
     return tmp4;
@@ -415,7 +415,7 @@ class C$1 {
               }
             }
             tmp17 = null;
-            if (typeof __.type !== "three_button_mouse") {
+            if (typeof __.type === "function") {
               tmp60 = m$1;
               tmp17 = m$1(__);
             }
@@ -619,12 +619,12 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
       let tmp7 = null;
       if (null != vnodeResult2) {
         tmp7 = null;
-        if (typeof vnodeResult2 !== "T") {
+        if (typeof vnodeResult2 !== "boolean") {
           tmp7 = null;
-          if (typeof vnodeResult2 !== "find") {
-            if (typeof vnodeResult2 !== "y") {
-              if (typeof vnodeResult2 !== "Object") {
-                if (typeof vnodeResult2 !== "accessibilityLabel") {
+          if (typeof vnodeResult2 !== "function") {
+            if (typeof vnodeResult2 !== "string") {
+              if (typeof vnodeResult2 !== "number") {
+                if (typeof vnodeResult2 !== "bigint") {
                   let _String = String;
                   if (vnodeResult2.constructor != String) {
                     tmp = isArray;
@@ -632,7 +632,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                       let tmp17 = g$1;
                       let obj = { children: null };
                       obj[0] = vnodeResult2;
-                      obj = { type: null, props: null, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_86", __u: 1 };
+                      obj = { type: null, props: null, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_73", __u: 1 };
                       obj[0] = g$1;
                       obj[1] = obj;
                       let tmp18 = c14;
@@ -656,7 +656,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                             ref = vnodeResult2.ref;
                           }
                           let __v = vnodeResult2.__v;
-                          obj = { type: null, props: null, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_86", __u: 1 };
+                          obj = { type: null, props: null, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_73", __u: 1 };
                           obj[0] = type2;
                           obj[1] = props;
                           obj[2] = key2;
@@ -688,7 +688,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                 }
               }
             }
-            let obj1 = { type: null, props: null, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_86", __u: 1 };
+            let obj1 = { type: null, props: null, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: 0, __i: "NEUTRAL_73", __u: 1 };
             obj1[1] = vnodeResult2;
             let tmp21 = vnodeResult2;
             if (null == vnodeResult2) {
@@ -849,7 +849,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
         }
         tmp28 = diff3;
         diff4 = tmp47;
-        if (typeof tmp7.type !== "find") {
+        if (typeof tmp7.type !== "function") {
           tmp7.__u = tmp7.__u | 65536;
           tmp28 = diff3;
           diff4 = tmp47;
@@ -887,7 +887,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                 }
               }
               let tmp32 = null;
-              if (typeof __.type !== "three_button_mouse") {
+              if (typeof __.type === "function") {
                 tmp = m$1;
                 tmp32 = m$1(__);
               }
@@ -936,7 +936,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
               }
             }
             let tmp57 = null;
-            if (typeof __2.type !== "three_button_mouse") {
+            if (typeof __2.type === "function") {
               tmp = m$1;
               tmp57 = m$1(__2);
             }
@@ -959,10 +959,10 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
       let tmp66 = num7;
       let tmp67 = ___d;
       if (tmp64) {
-        tmp64 = typeof tmp63 === "los";
+        tmp64 = typeof tmp63 !== "boolean";
       }
       if (tmp64) {
-        tmp64 = typeof tmp63 === "three_button_mouse";
+        tmp64 = typeof tmp63 !== "function";
       }
       let tmp68 = tmp65;
       let tmp69 = tmp67;
@@ -999,7 +999,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
     }
     if (!(65536 & tmp63.__u)) {
       if (tmp70.__k !== tmp63.__k) {
-        if (typeof tmp63.type === "three_button_mouse") {
+        if (typeof tmp63.type !== "function") {
           let ___d2 = tmp67;
           if (__e4) {
             ___d2 = __e4.nextSibling;
@@ -1012,7 +1012,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
         ___d2 = tmp63.__d;
       }
     }
-    if (typeof tmp63.type === "find") {
+    if (typeof tmp63.type === "function") {
       const __k1 = tmp63.__k;
       let tmp92 = tmp67;
       if (__k1) {
@@ -1032,7 +1032,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
             continue;
           }
           __k1[num8].__ = tmp63;
-          if (typeof __k1[num8].type === "find") {
+          if (typeof __k1[num8].type === "function") {
             __k2 = tmp97.__k;
             tmp = tmp95;
             if (__k2) {
@@ -1133,7 +1133,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
 }
 function $(type, arg1, insertBefore) {
   let nextSibling;
-  if (typeof type.type === "find") {
+  if (typeof type.type === "function") {
     const __k = type.__k;
     let tmp4 = arg1;
     if (__k) {
@@ -1193,21 +1193,21 @@ function $(type, arg1, insertBefore) {
     return nextSibling;
   }
 }
-function T$1(style, key10064, arg2) {
+function T$1(style, key10064, num) {
   if ("-" === key10064[0]) {
     let str3 = "";
-    if (null != arg2) {
-      str3 = arg2;
+    if (null != num) {
+      str3 = num;
     }
     style.setProperty(key10064, str3);
   } else {
     let str = "";
-    if (null != arg2) {
-      let text = arg2;
-      if (typeof arg2 !== "V") {
-        text = arg2;
+    if (null != num) {
+      let text = num;
+      if (typeof num === "number") {
+        text = num;
         if (!regex.test(key10064)) {
-          text = `${arg2}px`;
+          text = `${num}px`;
         }
       }
       str = text;
@@ -1215,13 +1215,13 @@ function T$1(style, key10064, arg2) {
     style[key10064] = str;
   }
 }
-function A$1(iter, checked, cssText, checked2, flag) {
-  let str = checked2;
+function A$1(iter, checked, str, checked2, flag) {
+  str = checked2;
   if ("style" === checked) {
-    if (typeof cssText === "y") {
-      iter.style.cssText = cssText;
+    if (typeof str === "string") {
+      iter.style.cssText = str;
     } else {
-      if (typeof str !== "_iter") {
+      if (typeof str === "string") {
         iter.style.cssText = "";
         str = "";
       }
@@ -1242,7 +1242,7 @@ function A$1(iter, checked, cssText, checked2, flag) {
           continue;
         }
       }
-      if (cssText) {
+      if (str) {
         for (const key10072 in arg2) {
           let tmp22 = key10072;
           let tmp17 = str;
@@ -1273,13 +1273,13 @@ function A$1(iter, checked, cssText, checked2, flag) {
         if (!iter.l) {
           iter.l = {};
         }
-        iter.l[substr + (checked !== str11)] = cssText;
-        if (cssText) {
+        iter.l[substr + (checked !== str11)] = str;
+        if (str) {
           if (str) {
-            cssText.u = str.u;
+            str.u = str.u;
           } else {
             const _Date = Date;
-            cssText.u = Date.now();
+            str.u = Date.now();
             const listener = iter.addEventListener(substr, tmp8 ? L : D$1, tmp8);
           }
         } else {
@@ -1315,8 +1315,8 @@ function A$1(iter, checked, cssText, checked2, flag) {
                           if (checked in iter) {
                             try {
                               let str5 = "";
-                              if (null != cssText) {
-                                str5 = cssText;
+                              if (null != str) {
+                                str5 = str;
                               }
                               iter[checked] = str5;
                             } catch (err) {
@@ -1334,11 +1334,11 @@ function A$1(iter, checked, cssText, checked2, flag) {
         }
       }
     }
-    if (typeof cssText !== "find") {
-      if (null == cssText) {
+    if (typeof str !== "function") {
+      if (null == str) {
         iter.removeAttribute(replaced);
       } else {
-        const attr = iter.setAttribute(replaced, cssText);
+        const attr = iter.setAttribute(replaced, str);
       }
     }
   }
@@ -1393,7 +1393,7 @@ function M(__P, type, __u, __s2, flag, arg5, arr) {
     if (__b) {
       tmp11(type);
     }
-    if (typeof type === "find") {
+    if (typeof type === "function") {
       try {
         const props = type.props;
         const contextType = type.contextType;
@@ -1817,7 +1817,7 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
                   if (!tmp41) {
                     let tmp42 = tmp4;
                     if (tmp4) {
-                      tmp42 = typeof tmp97 === "three_button_mouse";
+                      tmp42 = typeof tmp97 !== "function";
                     }
                     tmp41 = tmp42;
                   }
@@ -1899,7 +1899,7 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
               }
             }
           }
-          if (typeof props.type !== "three_button_mouse") {
+          if (typeof props.type === "function") {
             let tmp57 = null;
             if (props.__) {
               tmp57 = m$1(props.__, props.__i + 1);
@@ -1971,12 +1971,12 @@ function z$1(__e, type, props, __s2, flag, arg5, arr, arg7, arg8) {
     }
   }
 }
-function N(arg0, current, __v) {
+function N(fn, current, __v) {
   try {
-    if (typeof arg0 === "find") {
-      arg0(current);
+    if (typeof fn === "function") {
+      fn(current);
     } else {
-      arg0.current = current;
+      fn.current = current;
     }
   } catch (tmp4) {
     obj.__e(tmp4, __v);
@@ -2003,7 +2003,7 @@ function O(ref, __v) {
           let tmp12 = tmp9;
           let tmp11 = O;
           if (!tmp9) {
-            tmp12 = typeof ref.type === "three_button_mouse";
+            tmp12 = typeof ref.type !== "function";
           }
           let tmp11Result = tmp11(__k[num], __v, tmp12);
         }
@@ -2034,7 +2034,7 @@ function O(ref, __v) {
 function q$1(arg0, arg1, arg2) {
   return this.constructor(arg0, arg2);
 }
-let fn = function y(arg0) {
+let fn = function y(arg0, fn) {
   let closure_42 = tmp + 1;
   if (obj.__h) {
     let num = c46;
@@ -2063,11 +2063,11 @@ let fn = function y(arg0) {
   __H.__[+closure_42].t = arg0;
   if (!__H.__[+closure_42].__c) {
     if (arg2) {
-      let tmp10 = arg2(arg1);
+      let tmp10 = arg2(fn);
     } else {
-      tmp10 = arg1;
-      if (typeof arg1 !== "three_button_mouse") {
-        tmp10 = arg1(undefined);
+      tmp10 = fn;
+      if (typeof fn === "function") {
+        tmp10 = fn(undefined);
       }
     }
     let items = [
@@ -2090,7 +2090,7 @@ let fn = function y(arg0) {
     tmp7.__ = items;
     tmp7.__c = closure_43;
     if (!closure_43.u) {
-      const fn = function f(arg0, arg1, arg2) {
+      fn = function f(arg0, arg1, arg2) {
         if (tmp7.__c.__H) {
           const self = this;
           const __ = tmp.__c.__H.__;
@@ -2300,7 +2300,7 @@ function w(arg0) {
 }
 function z(__c) {
   __c = __c.__c;
-  if (typeof __c !== "three_button_mouse") {
+  if (typeof __c === "function") {
     __c.__c = undefined;
     __c();
   }
@@ -2308,10 +2308,10 @@ function z(__c) {
 function B(arg0) {
   arg0.__c = arg0.__();
 }
-function D(arg0, arg1) {
-  let tmp = arg1;
-  if (typeof arg1 !== "three_button_mouse") {
-    tmp = arg1(arg0);
+function D(arg0, fn) {
+  let tmp = fn;
+  if (typeof fn === "function") {
+    tmp = fn(arg0);
   }
   return tmp;
 }
@@ -2351,7 +2351,7 @@ function DialogHeader(options) {
 function retrieveStringValue(get) {
   const str = get.get(arg1);
   let str2 = "";
-  if (typeof str !== "_iter") {
+  if (typeof str === "string") {
     str2 = str.trim();
   }
   return str2;
@@ -2367,7 +2367,7 @@ function Form(onSubmitError) {
   let defaultName;
   let emailLabel;
   let emailPlaceholder;
-  let f102095;
+  let f102091;
   let messagePlaceholder;
   let namePlaceholder;
   let onFormClose;
@@ -2380,7 +2380,7 @@ function Form(onSubmitError) {
   let tmp12;
   let tmp5;
   let tmp7;
-  ({ options, defaultEmail, defaultName, onSubmit: f102095, onSubmitSuccess } = onSubmitError);
+  ({ options, defaultEmail, defaultName, onSubmit: f102091, onSubmitSuccess } = onSubmitError);
   onSubmitError = onSubmitError.onSubmitError;
   let screenshotInput = onSubmitError.screenshotInput;
   c4 = undefined;
@@ -2422,13 +2422,13 @@ function Form(onSubmitError) {
   c46 = 1;
   const tmp6 = onSubmitError(fn(D, null), 2);
   [tmp12, c14] = tmp3(tmp(tmp2, null), 2);
-  f102095 = (arg0) => {
+  f102091 = (arg0) => {
     _undefined2(arg0);
     callback(false);
   };
   c46 = 8;
   let items = [emailLabel, isEmailRequired, isNameRequired, messageLabel, nameLabel];
-  f102095 = (name) => {
+  f102091 = (name) => {
     let tmp2 = isEmailRequired;
     let tmp3 = isNameRequired;
     if (isNameRequired) {
@@ -2458,9 +2458,9 @@ function Form(onSubmitError) {
   c46 = 8;
   const tmp13 = fn2;
   const tmp3Result = tmp3(tmp(tmp2, null), 2);
-  closure_15 = fn2(() => f67867, items);
-  f102095 = undefined;
-  f102095 = screenshotInput((arg0) => {
+  closure_15 = fn2(() => f67864, items);
+  f102091 = undefined;
+  f102091 = screenshotInput((arg0) => {
     let closure_0 = arg0;
     let c5 = 0;
     let c6 = 0;
@@ -2577,7 +2577,7 @@ function Form(onSubmitError) {
               c4 = 1;
               c4 = closure_3;
               if (messageLabel) {
-                const debug = f102095(onSubmitSuccess[2]).debug;
+                const debug = f102091(onSubmitSuccess[2]).debug;
                 debug.error(c4);
               }
               outer1_11(c4);
@@ -2618,9 +2618,9 @@ function Form(onSubmitError) {
     screenshotInput = first;
   }
   const items1 = [screenshotInput, onSubmitSuccess, onSubmitError];
-  f102095 = function(arg0) {
+  f102091 = function(arg0) {
     const self = this;
-    const apply = f102095.apply;
+    const apply = f102091.apply;
     if (typeof apply === "unknown") {
       let applyArgumentsResult = HermesBuiltin.applyArguments(self);
     } else {
@@ -2629,7 +2629,7 @@ function Form(onSubmitError) {
     return applyArgumentsResult;
   };
   c46 = 8;
-  let obj = { class: "form", onSubmit: tmp13(() => f67867, items1) };
+  let obj = { class: "form", onSubmit: tmp13(() => f67864, items1) };
   let tmp15Result = null;
   if (input) {
     tmp15Result = null;
@@ -2676,7 +2676,7 @@ function Form(onSubmitError) {
     obj6[1] = defaultEmail;
     tmp15Result4 = tmp15("input", obj6);
   }
-  tmp14 = fn2(() => f67867, []);
+  tmp14 = fn2(() => f67864, []);
   const tmp15Result5 = y$1(LabelText, { label: messageLabel, isRequiredLabel, isRequired: true });
   let tmp15Result9 = null;
   if (input) {
@@ -2711,7 +2711,7 @@ function LabelText(arg0) {
 }
 function Dialog(onFormSubmitted) {
   onFormSubmitted = onFormSubmitted.onFormSubmitted;
-  let f67867 = onFormSubmitted;
+  let f67864 = onFormSubmitted;
   const merged = Object.assign(onFormSubmitted, Object.create(null));
   let first;
   let closure_3;
@@ -2721,17 +2721,17 @@ function Dialog(onFormSubmitted) {
   first = tmp3[0];
   closure_3 = tmp3[1];
   const items = [first];
-  f67867 = () => {
+  f67864 = () => {
     if (first) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp);
       callback(null);
     }
-    f67867();
+    f67864();
   };
   c46 = 8;
   [][0] = onFormSubmitted;
-  f67867 = (arg0, arg1) => {
+  f67864 = (arg0, arg1) => {
     merged.onSubmitSuccess(arg0, arg1);
     callback(setTimeout(() => {
       callback();
@@ -2911,8 +2911,8 @@ function sendFeedback(message) {
     throw error1;
   }
 }
-let __SENTRY_DEBUG__ = typeof globalThis.__SENTRY_DEBUG__ === "Array";
-if (typeof globalThis.__SENTRY_DEBUG__ !== "Array") {
+let __SENTRY_DEBUG__ = typeof globalThis.__SENTRY_DEBUG__ === "undefined";
+if (typeof globalThis.__SENTRY_DEBUG__ !== "undefined") {
   __SENTRY_DEBUG__ = globalThis.__SENTRY_DEBUG__;
 }
 let closure_10 = { foreground: "#2b2233", background: "#ffffff", accentForeground: "white", accentBackground: "rgba(88, 74, 192, 1)", successColor: "#268d75", errorColor: "#df3338", border: "1.5px solid rgba(41, 35, 47, 0.13)", boxShadow: "0px 4px 24px 0px rgba(43, 34, 51, 0.12)", outline: "1px auto var(--accent-background)", interactiveFilter: "brightness(95%)" };
@@ -2970,7 +2970,7 @@ let obj = {
 let c14 = 0;
 b$1.prototype.render = g$1;
 let closure_15 = [];
-if (typeof Promise === "find") {
+if (typeof Promise === "function") {
   let _setTimeout = then.bind(Promise.resolve());
 } else {
   _setTimeout = setTimeout;
@@ -3118,7 +3118,7 @@ obj.unmount = (__c) => {
     }
   }
 };
-let closure_60 = typeof requestAnimationFrame === "find";
+let closure_60 = typeof requestAnimationFrame === "function";
 const fn3 = function p(__getInternalProperties) {
   let c46 = 1;
   return fn(D, __getInternalProperties);
@@ -3126,7 +3126,7 @@ const fn3 = function p(__getInternalProperties) {
 const fn4 = function x(arg0, arg1) {
   let closure_0 = arg0;
   let c46 = 8;
-  return fn2(() => f67867, arg1);
+  return fn2(() => f67864, arg1);
 };
 obj = Object.create(null);
 obj[0] = fn4;
@@ -3339,7 +3339,7 @@ obj[6] = function T(arg0, arg1, arr) {
     combined = arr.concat(arg0);
   }
   closure_57(() => {
-    if (typeof closure_0 === "find") {
+    if (typeof closure_0 === "function") {
       tmp(callback());
       let fn = () => callback(null);
     } else if (tmp) {
@@ -3820,11 +3820,11 @@ export const buildFeedbackIntegration = (arg0) => {
       const merged7 = Object.assign(obj.themeLight);
       obj.themeLight = {};
       closure_0 = obj;
-      if (typeof el === "y") {
+      if (typeof el === "string") {
         element = outer2_4.querySelector(el);
       } else {
         element = null;
-        if (typeof el.addEventListener !== "three_button_mouse") {
+        if (typeof el.addEventListener === "function") {
           element = el;
         }
       }
@@ -4591,7 +4591,7 @@ export () => ({
           outer1_8.display = "block";
           callback(arg0);
         }, []);
-        if (typeof useTakeScreenshot !== "find") {
+        if (typeof useTakeScreenshot !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let obj = callback;
@@ -4950,7 +4950,7 @@ export () => ({
                 const current2 = outer1_6.current;
                 const items = [...getDrawCommand];
                 const point = obj;
-                if (typeof getDrawCommand !== "find") {
+                if (typeof getDrawCommand !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 const result = (clientX.clientX - context1.x) / outer1_8;
@@ -4971,7 +4971,7 @@ export () => ({
               }
               function handleMouseUp(clientX) {
                 const point = obj;
-                if (typeof getDrawCommand !== "find") {
+                if (typeof getDrawCommand !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 const result = (clientX.clientX - obj.x) / outer1_8;

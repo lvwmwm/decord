@@ -1,10 +1,10 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 15961
+// Function ID: 15962
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4277, 10649, 1372, 1371, 4310, 9674, 15963, 676, 11559, 21, 1297, 4285, 712, 1581, 589, 1474, 15958, 10245, 4146, 15964, 4629, 4286, 4694, 15965, 15966, 1236, 3997, 5368, 3903, 15960, 10630, 2]
+// Dependencies: [19, 17, 4277, 10649, 1372, 1371, 4310, 9674, 15962, 676, 11559, 21, 1297, 4285, 712, 1581, 589, 1474, 15957, 10245, 4146, 15963, 4629, 4286, 4694, 15964, 15965, 1236, 3997, 5368, 3903, 15959, 10630, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 15962 (BaseActivityPanelPIPView)
+// Module 15961 (BaseActivityPanelPIPView)
 import importAllResult from "u";
 import { View } from "useWindowDimensions";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

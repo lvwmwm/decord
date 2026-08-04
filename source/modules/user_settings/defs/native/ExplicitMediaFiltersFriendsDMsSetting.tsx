@@ -1,9 +1,9 @@
-// Module ID: 13970
-// Function ID: 13971
+// Module ID: 13969
+// Function ID: 13970
 // Name: pressable
-// Dependencies: [7892, 13971, 6968, 5824, 1236, 13972, 10361, 13974, 2]
+// Dependencies: [7892, 13970, 6968, 5824, 1236, 13971, 10361, 13973, 2]
 
-// Module 13970 (pressable)
+// Module 13969 (pressable)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -16,7 +16,7 @@ const pressable = createToggle.createPressable({
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const obj = require(13971) /* useExplicitContentSettingOrDefault */;
+    const obj = require(13970) /* useExplicitContentSettingOrDefault */;
     return require(6968) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentFriendDm)();
   },
   onPress: function onObscuredContentFriendsDmOnPress() {
@@ -32,7 +32,7 @@ const pressable = createToggle.createPressable({
       return obj.updateExplicitContentSetting(obj);
     };
     obj[3] = obj.getExplicitContentSettingOrDefault().explicitContentFriendDm;
-    const result = require(13972) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13971) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -54,7 +54,7 @@ let obj = {
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentFriendsDmSettingValue() {
-    const obj = require(13971) /* useExplicitContentSettingOrDefault */;
+    const obj = require(13970) /* useExplicitContentSettingOrDefault */;
     return require(6968) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentFriendDm)();
   },
   onPress: function onObscuredContentFriendsDmOnPress() {
@@ -70,7 +70,7 @@ let obj = {
       return obj.updateExplicitContentSetting(obj);
     };
     obj[3] = obj.getExplicitContentSettingOrDefault().explicitContentFriendDm;
-    const result = require(13972) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13971) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;

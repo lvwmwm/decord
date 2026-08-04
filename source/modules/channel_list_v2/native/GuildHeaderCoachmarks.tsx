@@ -1,10 +1,10 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15162
+// Function ID: 15163
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 3913, 676, 1369, 21, 589, 15164, 15165, 15167, 11786, 15174, 11777, 11778, 1358, 5931, 11774, 15175, 15176, 15178, 2]
+// Dependencies: [32, 19, 3913, 676, 1369, 21, 589, 15163, 15164, 15166, 11786, 15173, 11777, 11778, 1358, 5931, 11774, 15174, 15175, 15177, 2]
 // Exports: default
 
-// Module 15163 (GuildHeaderCoachmarks)
+// Module 15162 (GuildHeaderCoachmarks)
 import _slicedToArray from "_slicedToArray";
 import GuildPowerupsBoostToUnlockCoachmark from "GuildPowerupsBoostToUnlockCoachmark";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

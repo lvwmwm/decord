@@ -1,9 +1,9 @@
-// Module ID: 12874
-// Function ID: 12875
+// Module ID: 12873
+// Function ID: 12874
 // Name: map
 // Dependencies: [8945, 4184, 589, 709, 2]
 
-// Module 12874 (map)
+// Module 12873 (map)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 
@@ -153,7 +153,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -174,7 +174,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -196,7 +196,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -263,7 +263,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -284,7 +284,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -306,7 +306,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "find") {
+      if (typeof SearchState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);

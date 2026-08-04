@@ -100,7 +100,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(getOptions, 
         items3 = items1;
       } else {
         if ("name" in name) {
-          if (typeof name.name === "y") {
+          if (typeof name.name === "string") {
             const _HermesInternal5 = HermesInternal;
             const combined = "'" + name.name + "' captured as exception";
             let sum = combined;
@@ -109,7 +109,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(getOptions, 
               sum = combined + " with message '" + name.message + "'";
             }
             let message = sum;
-            tmp21 = "message" in name && typeof name.message === "y";
+            tmp21 = "message" in name && typeof name.message === "string";
           }
           let syntheticException2 = data;
           if (data) {
@@ -124,7 +124,7 @@ export const eventFromUnknownInput = function eventFromUnknownInput(getOptions, 
           items3 = items2;
         }
         if ("message" in name) {
-          if (typeof name.message === "y") {
+          if (typeof name.message === "string") {
             message = name.message;
           }
         }

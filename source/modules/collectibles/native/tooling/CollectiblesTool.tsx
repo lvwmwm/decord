@@ -1,10 +1,10 @@
-// Module ID: 14936
-// Function ID: 14937
+// Module ID: 14935
+// Function ID: 14936
 // Name: FramePreviewOverrideSection
-// Dependencies: [32, 19, 17, 6910, 6926, 8721, 21, 4285, 712, 9262, 4281, 4696, 647, 8090, 14937, 1297, 10040, 2]
+// Dependencies: [32, 19, 17, 6910, 6926, 8721, 21, 4285, 712, 9262, 4281, 4696, 647, 8090, 14936, 1297, 10040, 2]
 // Exports: default
 
-// Module 14936 (FramePreviewOverrideSection)
+// Module 14935 (FramePreviewOverrideSection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";

@@ -1,8 +1,8 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16084
+// Function ID: 16085
 // Dependencies: [32, 19, 1218, 1372, 1874, 21, 4285, 712, 11557, 589, 4474, 5663, 5236, 4281, 1236, 2]
 
-// Module 16085
+// Module 16084
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import fetchFingerprint from "fetchFingerprint";
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo(function VoicePanelCTACardCallerDisconne
     obj1[0] = tmp3.avatarWrapper;
     let tmp19 = tmp9;
     const tmpResult1 = tmp(tmp2[11]);
-    if (typeof tmp9 !== "Object") {
+    if (typeof tmp9 !== "number") {
       const obj2 = { uri: null };
       obj2[0] = tmp9;
       tmp19 = obj2;
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function VoicePanelCTACardCallerDisconne
     obj4[0] = tmp3.avatarWrapper;
     let tmp24 = tmp10;
     const tmpResult3 = tmp(tmp2[11]);
-    if (typeof tmp10 !== "Object") {
+    if (typeof tmp10 !== "number") {
       const obj5 = { uri: null };
       obj5[0] = tmp10;
       tmp24 = obj5;

@@ -1,9 +1,9 @@
-// Module ID: 16146
-// Function ID: 16147
+// Module ID: 16145
+// Function ID: 16146
 // Name: renderChat
-// Dependencies: [32, 19, 17, 11558, 21, 4285, 712, 5273, 4642, 11555, 11557, 4146, 11564, 4694, 8698, 16147, 16158, 2]
+// Dependencies: [32, 19, 17, 11558, 21, 4285, 712, 5273, 4642, 11555, 11557, 4146, 11564, 4694, 8698, 16146, 16157, 2]
 
-// Module 16146 (renderChat)
+// Module 16145 (renderChat)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";

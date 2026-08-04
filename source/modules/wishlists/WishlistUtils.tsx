@@ -1,10 +1,10 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12370
+// Function ID: 12371
 // Name: createNitroSuggestedSku
 // Dependencies: [32, 4324, 9278, 9279, 9280, 676, 1876, 1236, 5761, 3931, 2]
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12371 (createNitroSuggestedSku)
+// Module 12370 (createNitroSuggestedSku)
 import _slicedToArray from "_slicedToArray";
 import createFromServer from "createFromServer";
 import { isCollectiblesWishlistItemRecord as closure_5 } from "createCollectiblesItemFromServerResponse";

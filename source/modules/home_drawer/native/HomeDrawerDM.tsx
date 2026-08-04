@@ -1,10 +1,10 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15337
+// Function ID: 15338
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [19, 17, 1376, 3922, 4480, 1874, 505, 21, 4285, 589, 4475, 15339, 14454, 12471, 9647, 4281, 9705, 3963, 15303, 4142, 4139, 2]
+// Dependencies: [19, 17, 1376, 3922, 4480, 1874, 505, 21, 4285, 589, 4475, 15338, 14453, 12470, 9647, 4281, 9705, 3963, 15302, 4142, 4139, 2]
 // Exports: default
 
-// Module 15338 (HomeDrawerDMExpandedChildren)
+// Module 15337 (HomeDrawerDMExpandedChildren)
 import MobileHomeDrawerExperiment from "MobileHomeDrawerExperiment";
 import { View } from "ChannelListLayoutTypes";
 import { isMultiUserDM } from "createChannelRecord";
@@ -46,9 +46,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp2;
   });
   const obj2 = channel(589);
-  const tmp3 = importDefault(14454)(channel, { unread: channel(15339).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14453)(channel, { unread: channel(15338).useBaseChannelUnreadBadgeState(channel, false).unread });
   c4 = tmp3;
-  const obj3 = channel(15339);
+  const obj3 = channel(15338);
   const items2 = [updateUserGuildSettingsInternal];
   stateFromStores1 = channel(589).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -85,7 +85,7 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
       let tmp5Result = dependencyMap;
       if (isTemporary) {
-        tmp5Result = tmp5(12471);
+        tmp5Result = tmp5(12470);
         let BellSlashIcon = tmp5Result.BellZIcon;
       } else {
         BellSlashIcon = tmp5(9647).BellSlashIcon;
@@ -113,7 +113,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   }, items5);
-  return callback(channel(15303).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(15302).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });

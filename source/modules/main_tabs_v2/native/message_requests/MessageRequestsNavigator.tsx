@@ -1,10 +1,10 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 15817
+// Function ID: 15818
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 8381, 4285, 712, 5665, 6843, 1581, 8193, 1236, 9597, 15819, 15838, 15839, 2]
+// Dependencies: [19, 17, 21, 8381, 4285, 712, 5665, 6843, 1581, 8193, 1236, 9597, 15818, 15837, 15838, 2]
 // Exports: default
 
-// Module 15818 (MessageRequestsNavigator)
+// Module 15817 (MessageRequestsNavigator)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -62,7 +62,7 @@ export default function MessageRequestsNavigator() {
   let merged = Object.assign(importDefault(9597)());
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return tmp(15819).default;
+    return tmp(15818).default;
   };
   const items1 = [callback(Screen, obj1), , ];
   const obj3 = { name: "spam", options: null, getComponent: null };
@@ -72,7 +72,7 @@ export default function MessageRequestsNavigator() {
   let merged1 = Object.assign(importDefault(9597)());
   obj3[1] = obj4;
   obj3[2] = function getComponent() {
-    return tmp(15838).default;
+    return tmp(15837).default;
   };
   items1[1] = callback(createNativeStackNavigator.Screen, obj3);
   const obj5 = { name: "preview", options: null, getComponent: null };
@@ -82,7 +82,7 @@ export default function MessageRequestsNavigator() {
   const merged2 = Object.assign(importDefault(9597)());
   obj5[1] = obj6;
   obj5[2] = function getComponent() {
-    return tmp(15839).default;
+    return tmp(15838).default;
   };
   items1[2] = callback(createNativeStackNavigator.Screen, obj5);
   obj[1] = items1;

@@ -1,9 +1,9 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 12980
+// Function ID: 12981
 // Name: noop
-// Dependencies: [706, 4332, 4345, 687, 4384, 584, 3, 4360, 12982, 500, 38, 2]
+// Dependencies: [706, 4332, 4345, 687, 4384, 584, 3, 4360, 12981, 500, 38, 2]
 
-// Module 12981 (noop)
+// Module 12980 (noop)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import DesktopSources from "DesktopSources";
@@ -79,7 +79,7 @@ prototype["createWebSocket"] = function createWebSocket() {
     self.handleClose(false, 0, "The connection timed out after " + self(outer1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: _detectH265HardwareDecode.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(12982).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(12981).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {
@@ -157,7 +157,7 @@ prototype["createWebSocket"] = function createWebSocket() {
       obj.resumable = true;
     } else if (tmp10.SPEAKING === op) {
       const speaking = d.speaking;
-      if (typeof speaking === "los") {
+      if (typeof speaking !== "boolean") {
         obj.emit(tmp2.Speaking, d.user_id, d.ssrc, tmp61);
       }
     } else if (tmp10.HEARTBEAT === op) {

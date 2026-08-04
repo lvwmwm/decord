@@ -1,10 +1,10 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14137
+// Function ID: 14138
 // Name: SubscriptionIcon
-// Dependencies: [19, 21, 712, 3988, 14139, 2]
+// Dependencies: [19, 21, 712, 3988, 14138, 2]
 // Exports: SubscriptionIcon
 
-// Module 14138 (SubscriptionIcon)
+// Module 14137 (SubscriptionIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const SubscriptionIcon = function SubscriptionIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14139) /* registerAsset */;
+  obj[0] = require(14138) /* registerAsset */;
   obj[1] = ICON_STRONG;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

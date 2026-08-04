@@ -1,10 +1,10 @@
-// Module ID: 16139
-// Function ID: 16140
+// Module ID: 16138
+// Function ID: 16139
 // Name: useSoundboardConfig
-// Dependencies: [19, 1372, 15982, 4101, 1358, 16007, 5899, 2]
+// Dependencies: [19, 1372, 15981, 4101, 1358, 16006, 5899, 2]
 // Exports: default
 
-// Module 16139 (useSoundboardConfig)
+// Module 16138 (useSoundboardConfig)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 
@@ -15,7 +15,7 @@ let result = require("useIsConnectedToVoiceChannel").fileFinishedImporting("modu
 export default function useSoundboardConfig(arg0, arg1) {
   const _require = arg0;
   const importDefault = arg1;
-  const tmp = importDefault(15982)(arg0);
+  const tmp = importDefault(15981)(arg0);
   let obj = _require(4101);
   let tmp3 = tmp;
   if (tmp) {

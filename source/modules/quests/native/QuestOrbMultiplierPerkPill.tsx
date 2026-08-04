@@ -1,10 +1,10 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14306
+// Function ID: 14307
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 21, 4285, 712, 4221, 3995, 3989, 4129, 10374, 10394, 1236, 7625, 4281, 4812, 14308, 4706, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4221, 3995, 3989, 4129, 10374, 10394, 1236, 7625, 4281, 4812, 14307, 4706, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 14307 (QuestOrbMultiplierPerkPill)
+// Module 14306 (QuestOrbMultiplierPerkPill)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";

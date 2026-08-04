@@ -1,9 +1,9 @@
-// Module ID: 15755
-// Function ID: 15756
+// Module ID: 15754
+// Function ID: 15755
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [19, 17, 1372, 9588, 676, 15601, 21, 8381, 647, 5798, 10079, 8193, 1236, 12037, 698, 15756, 5665, 5244, 4137, 1581, 15804, 500, 15805, 15806, 15807, 15808, 15658, 2]
+// Dependencies: [19, 17, 1372, 9588, 676, 15600, 21, 8381, 647, 5798, 10079, 8193, 1236, 12036, 698, 15755, 5665, 5244, 4137, 1581, 15803, 500, 15804, 15805, 15806, 15807, 15657, 2]
 
-// Module 15755 (ConnectedCreateThreadHeaderButton)
+// Module 15754 (ConnectedCreateThreadHeaderButton)
 import importAllResult from "useSafeAreaInsets";
 import { View } from "useNavigatorBackPressHandler";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -40,7 +40,7 @@ function CreateThreadHeaderButton(channel) {
     const intl = tmp(1236).intl;
     obj[0] = intl.string(tmp(1236).t.rBIGBL);
     obj[1] = tmp4;
-    obj[2] = importDefault(12037);
+    obj[2] = importDefault(12036);
     tmp5 = callback(tmp(8193).HeaderIconButton, obj);
   }
   return tmp5;

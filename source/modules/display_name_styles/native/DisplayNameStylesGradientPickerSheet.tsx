@@ -1,10 +1,10 @@
-// Module ID: 14484
-// Function ID: 14485
+// Module ID: 14483
+// Function ID: 14484
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1886, 676, 21, 4285, 712, 9391, 1885, 4254, 698, 4253, 13811, 5338, 5337, 4695, 1236, 4706, 688, 14485, 12, 4812, 2]
+// Dependencies: [32, 19, 17, 1886, 676, 21, 4285, 712, 9391, 1885, 4254, 698, 4253, 13810, 5338, 5337, 4695, 1236, 4706, 688, 14484, 12, 4812, 2]
 // Exports: default
 
-// Module 14484 (DisplayNameStylesColorPickerSheet)
+// Module 14483 (DisplayNameStylesColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import int2hslRaw from "int2hslRaw";
 import get_ActivityIndicator from "getSystemLocale";

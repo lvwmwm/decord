@@ -1,10 +1,10 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15489
+// Function ID: 15490
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 3922, 21, 589, 8044, 15491, 15500, 2]
+// Dependencies: [19, 3922, 21, 589, 8044, 15490, 15499, 2]
 // Exports: default
 
-// Module 15490 (ContentInventoryEntryRow)
+// Module 15489 (ContentInventoryEntryRow)
 import "noop";
 import upsertRelationship from "upsertRelationship";
 import { jsx } from "jsxProd";
@@ -35,7 +35,7 @@ export default function ContentInventoryEntryRow(content) {
             flag2 = false;
           }
           obj[2] = flag2;
-          return jsx(importDefault(15500), { content: null, renderForScreenshot: null, visible: null });
+          return jsx(importDefault(15499), { content: null, renderForScreenshot: null, visible: null });
         } else {
           return null;
         }
@@ -44,6 +44,6 @@ export default function ContentInventoryEntryRow(content) {
     obj = { content: null, renderForScreenshot: null };
     obj[0] = content;
     obj[1] = flag;
-    return jsx(importDefault(15491), { content: null, renderForScreenshot: null });
+    return jsx(importDefault(15490), { content: null, renderForScreenshot: null });
   }
 };

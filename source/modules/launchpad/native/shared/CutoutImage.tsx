@@ -1,8 +1,8 @@
-// Module ID: 15918
-// Function ID: 15919
-// Dependencies: [32, 19, 17, 21, 514, 8437, 12219, 2]
+// Module ID: 15917
+// Function ID: 15918
+// Dependencies: [32, 19, 17, 21, 514, 8437, 12218, 2]
 
-// Module 15918
+// Module 15917
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { Image } from "get ActivityIndicator";
@@ -206,11 +206,11 @@ const memoResult = importAllResult.memo(function CutoutImage(cutoutTopLeftSize) 
         obj[3] = items3;
         return tmp12(tmp14, obj);
       } else {
-        if (typeof imageSource === "V") {
+        if (typeof imageSource !== "number") {
           const obj10 = { height: null, width: null, href: null, mask: null, clipPath: null };
           obj10[0] = imageSize;
           obj10[1] = imageSize;
-          obj10[2] = tmp13(12219)(imageSource);
+          obj10[2] = tmp13(12218)(imageSource);
           obj10[3] = combined;
           obj10[4] = combined1;
           let tmp15Result5 = tmp15(tmp(8437).Image, obj10);

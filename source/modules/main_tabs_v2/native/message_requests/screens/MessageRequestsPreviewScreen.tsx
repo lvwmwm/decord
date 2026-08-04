@@ -1,10 +1,10 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 15838
+// Function ID: 15839
 // Name: MessageRequestsScreen
-// Dependencies: [19, 4297, 676, 21, 11713, 9660, 9664, 15840, 10230, 2]
+// Dependencies: [19, 4297, 676, 21, 11713, 9660, 9664, 15839, 10230, 2]
 // Exports: default
 
-// Module 15839 (MessageRequestsScreen)
+// Module 15838 (MessageRequestsScreen)
 import noop from "noop";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { ME } from "ME";
@@ -27,7 +27,7 @@ export default function MessageRequestsScreen(route) {
   if (isMessageRequestRestrictedViewer) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp5Result = tmp5(tmp7(15840), obj);
+    let tmp5Result = tmp5(tmp7(15839), obj);
   } else {
     const obj1 = { guildId: null, channelId: null, chatInputRef: null, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     obj1[0] = tmp6;

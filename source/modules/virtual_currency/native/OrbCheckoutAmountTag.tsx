@@ -1,10 +1,10 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12052
+// Function ID: 12053
 // Name: OrbCheckoutAmountTag
 // Dependencies: [17, 21, 4285, 712, 9326, 4281, 1236, 2]
 // Exports: default
 
-// Module 12053 (OrbCheckoutAmountTag)
+// Module 12052 (OrbCheckoutAmountTag)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

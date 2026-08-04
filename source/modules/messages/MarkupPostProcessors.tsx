@@ -40057,7 +40057,7 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                         let content = type.content;
                         if (Array.isArray(type.content)) {
                           let item = content.forEach(() => { ... });
-                        } else if (typeof content === "y") {
+                        } else if (typeof content === "string") {
                           type.content = type.content.replace(/\n/g, " ");
                           let str = type.content;
                         } else {
@@ -40069,7 +40069,7 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                         }
                       }
                     });
-                  } else if (typeof content === "y") {
+                  } else if (typeof content === "string") {
                     type.content = type.content.replace(/\n/g, " ");
                     let str = type.content;
                   } else {
@@ -40081,7 +40081,7 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                   }
                 }
               });
-            } else if (typeof content === "y") {
+            } else if (typeof content === "string") {
               type.content = type.content.replace(/\n/g, " ");
               let str = type.content;
             } else {
@@ -40093,7 +40093,7 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
             }
           }
         });
-      } else if (typeof content === "y") {
+      } else if (typeof content === "string") {
         type.content = type.content.replace(/\n/g, " ");
         let str = type.content;
       } else {
@@ -40176,8 +40176,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
         }
         if (tmp) {
           const content = type.content;
-          let tmp2 = typeof content === "_iter";
-          if (typeof content !== "_iter") {
+          let tmp2 = typeof content !== "string";
+          if (typeof content === "string") {
             tmp2 = "" !== type.content.trim();
             const str2 = type.content;
           }
@@ -40220,8 +40220,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
           }
           if (tmp) {
             const content = type.content;
-            let tmp2 = typeof content === "_iter";
-            if (typeof content !== "_iter") {
+            let tmp2 = typeof content !== "string";
+            if (typeof content === "string") {
               tmp2 = "" !== type.content.trim();
               const str2 = type.content;
             }
@@ -40329,7 +40329,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                           let content = type.content;
                           if (Array.isArray(type.content)) {
                             let item = content.forEach(() => { ... });
-                          } else if (typeof content === "y") {
+                          } else if (typeof content === "string") {
                             type.content = type.content.replace(/\n/g, " ");
                             let str = type.content;
                           } else {
@@ -40341,7 +40341,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                           }
                         }
                       });
-                    } else if (typeof content === "y") {
+                    } else if (typeof content === "string") {
                       type.content = type.content.replace(/\n/g, " ");
                       let str = type.content;
                     } else {
@@ -40353,7 +40353,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                     }
                   }
                 });
-              } else if (typeof content === "y") {
+              } else if (typeof content === "string") {
                 type.content = type.content.replace(/\n/g, " ");
                 let str = type.content;
               } else {
@@ -40365,7 +40365,7 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
               }
             }
           });
-        } else if (typeof content === "y") {
+        } else if (typeof content === "string") {
           type.content = type.content.replace(/\n/g, " ");
           let str = type.content;
         } else {

@@ -1,10 +1,10 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12252
+// Function ID: 12253
 // Name: WidgetRenderer
-// Dependencies: [32, 19, 17, 1218, 8707, 21, 4285, 712, 9189, 9200, 8710, 12254, 4281, 12258, 1856, 12259, 589, 1348, 12, 6990, 1236, 5657, 6993, 12261, 7014, 12262, 12366, 2]
+// Dependencies: [32, 19, 17, 1218, 8707, 21, 4285, 712, 9189, 9200, 8710, 12253, 4281, 12257, 1856, 12258, 589, 1348, 12, 6990, 1236, 5657, 6993, 12260, 7014, 12261, 12365, 2]
 // Exports: default
 
-// Module 12253 (WidgetRenderer)
+// Module 12252 (WidgetRenderer)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "WidgetType";
 import get_ActivityIndicator from "useIsMobileVisualRefreshExperimentEnabled";
@@ -31,7 +31,7 @@ function WidgetRenderer(isFirstWidget) {
     obj[1] = widget;
     obj[2] = cardStyle;
     obj[3] = isFirstWidget.isFirstWidget;
-    let tmp2Result = tmp2(importDefault(12262), obj);
+    let tmp2Result = tmp2(importDefault(12261), obj);
   } else {
     obj = { userId: null, widget: null, cardStyle: null };
     obj[0] = userId;
@@ -146,10 +146,10 @@ let closure_17 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ gameName, coverImageUrl } = importDefault(12258)(game.applicationId));
+  ({ gameName, coverImageUrl } = importDefault(12257)(game.applicationId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.applicationId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp2 = importDefault;
-  const tmp4 = importDefault(12258)(game.applicationId);
+  const tmp4 = importDefault(12257)(game.applicationId);
   obj[2] = _require(9200).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp5Result;
@@ -216,7 +216,7 @@ let closure_17 = importAllResult.memo((game) => {
     obj3[0] = tmp.comment;
     const obj4 = { size: "xxs", color: null };
     obj4[1] = tmp2(712).colors.TEXT_MUTED;
-    const items3 = [tmp10(tmp6(12259).QuoteIcon, obj4), ];
+    const items3 = [tmp10(tmp6(12258).QuoteIcon, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: null, children: null };
     obj5[3] = tmp.commentText;
     obj5[4] = game.comment;
@@ -241,9 +241,9 @@ let closure_18 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ gameName, coverImageUrl } = importDefault(12258)(game.applicationId));
+  ({ gameName, coverImageUrl } = importDefault(12257)(game.applicationId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.applicationId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  const tmp3 = importDefault(12258)(game.applicationId);
+  const tmp3 = importDefault(12257)(game.applicationId);
   obj[2] = _require(9200).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp4Result;
@@ -301,9 +301,9 @@ let closure_19 = importAllResult.memo((game) => {
   let _require;
   ({ userId, coverWidth, disableInteraction } = game);
   let tmp = callback4();
-  ({ coverImageUrl, gameName } = importDefault(12258)(game.applicationId));
+  ({ coverImageUrl, gameName } = importDefault(12257)(game.applicationId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.applicationId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
-  const tmp2 = importDefault(12258)(game.applicationId);
+  const tmp2 = importDefault(12257)(game.applicationId);
   obj[2] = _require(9200).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp3Result;

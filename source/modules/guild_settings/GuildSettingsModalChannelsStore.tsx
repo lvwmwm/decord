@@ -1,9 +1,9 @@
-// Module ID: 16474
-// Function ID: 16475
+// Module ID: 16473
+// Function ID: 16474
 // Name: sortCategoryList
 // Dependencies: [109, 1376, 1932, 3913, 676, 5223, 12, 589, 709, 2]
 
-// Module 16474 (sortCategoryList)
+// Module 16473 (sortCategoryList)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import createChannelRecord from "createChannelRecord";
 import comparator from "comparator";

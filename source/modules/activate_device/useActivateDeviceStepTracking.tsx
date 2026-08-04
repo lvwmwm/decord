@@ -1,10 +1,10 @@
-// Module ID: 13131
-// Function ID: 13132
+// Module ID: 13130
+// Function ID: 13131
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 676, 8775, 13132, 698, 2]
+// Dependencies: [19, 676, 8775, 13131, 698, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 13131 (useActivateDeviceStepTracking)
+// Module 13130 (useActivateDeviceStepTracking)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

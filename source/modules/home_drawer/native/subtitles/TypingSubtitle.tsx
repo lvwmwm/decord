@@ -1,10 +1,10 @@
-// Module ID: 15323
-// Function ID: 15324
+// Module ID: 15322
+// Function ID: 15323
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 15322, 4745, 4790, 4281, 2]
+// Dependencies: [19, 17, 21, 15321, 4745, 4790, 4281, 2]
 // Exports: default
 
-// Module 15323 (TypingSubtitle)
+// Module 15322 (TypingSubtitle)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ export default function TypingSubtitle(arg0) {
   let text;
   ({ channel, channelName } = arg0);
   ({ guild, text } = arg0);
-  let obj = require(15322) /* styles */;
+  let obj = require(15321) /* styles */;
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {

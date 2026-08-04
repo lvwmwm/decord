@@ -1,9 +1,9 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16325
+// Function ID: 16326
 // Name: handleMessageCreate
 // Dependencies: [676, 5229, 698, 2]
 
-// Module 16326 (handleMessageCreate)
+// Module 16325 (handleMessageCreate)
 import { AnalyticEvents } from "ME";
 import "initialize";
 

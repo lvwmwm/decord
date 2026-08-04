@@ -1,10 +1,10 @@
-// Module ID: 15286
-// Function ID: 15287
+// Module ID: 15285
+// Function ID: 15286
 // Name: GuildFolderSettingsScene
-// Dependencies: [32, 19, 5122, 15287, 21, 8620, 7777, 1236, 1297, 15288, 5238, 589, 15285, 5665, 2]
+// Dependencies: [32, 19, 5122, 15286, 21, 8620, 7777, 1236, 1297, 15287, 5238, 589, 15284, 5665, 2]
 // Exports: default
 
-// Module 15286 (GuildFolderSettingsScene)
+// Module 15285 (GuildFolderSettingsScene)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
@@ -35,7 +35,7 @@ function GuildFolderSettingsScene(arg0) {
   const obj1 = { title: null, children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.xpurRF);
-  obj1[1] = callback(importDefault(15288), { color, onChange: onColorChange });
+  obj1[1] = callback(importDefault(15287), { color, onChange: onColorChange });
   items[1] = callback(require(7777) /* Form */.FormSection, obj1);
   obj[0] = items;
   return callback2(require(7777) /* Form */.Form, obj);
@@ -100,10 +100,10 @@ export default function GuildFolderSettingsModal(folderId) {
       return tmp;
     }));
     let obj = folderId(8620);
-    const result = folderId(15285).hideGuildsBarFolderModal();
+    const result = folderId(15284).hideGuildsBarFolderModal();
   }, items2);
   callback1 = obj2.useCallback(() => {
-    const result = folderId(15285).hideGuildsBarFolderModal();
+    const result = folderId(15284).hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, first, first !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
   const memo = obj2.useMemo(() => {

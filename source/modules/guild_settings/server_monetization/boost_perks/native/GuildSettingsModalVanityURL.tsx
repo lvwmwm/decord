@@ -1,10 +1,10 @@
-// Module ID: 16603
-// Function ID: 16604
+// Module ID: 16602
+// Function ID: 16603
 // Name: componentDidMount
-// Dependencies: [19, 17, 16604, 1862, 8944, 676, 21, 4285, 712, 5238, 5917, 1236, 16605, 7138, 4281, 16479, 7713, 16606, 1480, 589, 5596, 2]
+// Dependencies: [19, 17, 16603, 1862, 8944, 676, 21, 4285, 712, 5238, 5917, 1236, 16604, 7138, 4281, 16478, 7713, 16605, 1480, 589, 5596, 2]
 // Exports: default
 
-// Module 16603 (componentDidMount)
+// Module 16602 (componentDidMount)
 import get_ActivityIndicator from "registerAsset";
 import FormStates from "FormStates";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -120,7 +120,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
   }
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
-  importDefault(16605).closeModal();
+  importDefault(16604).closeModal();
 };
 prototype["render"] = function render() {
   let errorDetails;
@@ -145,7 +145,7 @@ prototype["render"] = function render() {
   if (isEditing) {
     let errorMessageFromErrorCode;
     if (null != errorDetails) {
-      obj = require(16479) /* getErrorMessageFromErrorCode */;
+      obj = require(16478) /* getErrorMessageFromErrorCode */;
       errorMessageFromErrorCode = obj.getErrorMessageFromErrorCode(errorDetails.code);
     }
     let hasItem;
@@ -203,7 +203,7 @@ prototype["render"] = function render() {
     const obj9 = { style: null, children: null };
     obj9[0] = styles.center;
     const obj10 = { source: null, style: null, resizeMode: "contain" };
-    obj10[0] = importDefault(16606);
+    obj10[0] = importDefault(16605);
     obj10[1] = styles.image;
     obj9[1] = callback(closure_4, obj10);
     items3[1] = callback(closure_3, obj9);

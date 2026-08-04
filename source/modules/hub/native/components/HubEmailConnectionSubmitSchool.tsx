@@ -1,10 +1,10 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 12003
+// Function ID: 12004
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 11987, 676, 21, 4285, 712, 1480, 5310, 12000, 4184, 11995, 1297, 1236, 4281, 8276, 4695, 2]
+// Dependencies: [5, 32, 19, 17, 11986, 676, 21, 4285, 712, 1480, 5310, 11999, 4184, 11994, 1297, 1236, 4281, 8276, 4695, 2]
 // Exports: default
 
-// Module 12004 (HubEmailConnectionSubmitSchool)
+// Module 12003 (HubEmailConnectionSubmitSchool)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -217,5 +217,5 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   items2[2] = callback2(first, obj7);
   obj[2] = items2;
   obj5[0] = closure_10(tmp11, obj);
-  return callback2(require(11995) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
+  return callback2(require(11994) /* HubEmailConnectionModal */.HubEmailConnectionScreen, obj5);
 };

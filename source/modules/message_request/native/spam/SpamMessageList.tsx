@@ -1,10 +1,10 @@
-// Module ID: 15836
-// Function ID: 15837
+// Module ID: 15835
+// Function ID: 15836
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4285, 712, 1236, 11723, 3986, 8256, 4293, 4490, 11715, 698, 4812, 15821, 1297, 9793, 14074, 7777, 1581, 15830, 15837, 15828, 4711, 6970, 6975, 15831, 500, 4281, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 1236, 11723, 3986, 8256, 4293, 4490, 11715, 698, 4812, 15820, 1297, 9793, 14073, 7777, 1581, 15829, 15836, 15827, 4711, 6970, 6975, 15830, 500, 4281, 2]
 // Exports: default
 
-// Module 15836 (PendingSpamMessageRequestRow)
+// Module 15835 (PendingSpamMessageRequestRow)
 import Form from "Form";
 import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
@@ -205,10 +205,10 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = createCacheKey();
   importDefault = tmp;
   const bottom = importDefault(1581)().bottom;
-  let obj = goToMessageRequestPreview(15830);
+  let obj = goToMessageRequestPreview(15829);
   dependencyMap = obj.useSpamMessageRequestCount();
-  arr = importDefault(15837)();
-  let obj1 = goToMessageRequestPreview(15828);
+  arr = importDefault(15836)();
+  let obj1 = goToMessageRequestPreview(15827);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
   importDefault(4711)(() => {
     let obj = _undefined(698);
@@ -221,7 +221,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj = { bodyText: null };
     let intl = tmp4(1236).intl;
     obj[0] = intl.string(tmp4(1236).t.hasFPQ);
-    return callback(tmp2(15831), obj);
+    return callback(tmp2(15830), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);
@@ -241,7 +241,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     obj[2] = obj2;
     obj[3] = function renderItem(item) {
       item = item.item;
-      if (typeof item === "y") {
+      if (typeof item === "string") {
         let obj = { style: null, children: null };
         obj[0] = _undefined.sectionContainer;
         obj = { variant: "eyebrow", color: "text-default", children: null };

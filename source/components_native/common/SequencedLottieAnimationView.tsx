@@ -1,9 +1,9 @@
-// Module ID: 12801
-// Function ID: 12802
+// Module ID: 12800
+// Function ID: 12801
 // Name: componentDidMount
 // Dependencies: [109, 19, 17, 21, 5602, 2]
 
-// Module 12801 (componentDidMount)
+// Module 12800 (componentDidMount)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -61,7 +61,7 @@ prototype["render"] = function render() {
   const props = this.props;
   ({ source, style } = props);
   let json;
-  if (typeof source !== "window") {
+  if (typeof source === "object") {
     if (!source.uri) {
       const _JSON = JSON;
       json = JSON.stringify(source);

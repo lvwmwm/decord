@@ -1,10 +1,10 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12795
+// Function ID: 12796
 // Name: getGuildSubscriptionRemovalSource
-// Dependencies: [19, 17, 21, 7544, 12797, 12798, 12799, 4131, 2]
+// Dependencies: [19, 17, 21, 7544, 12796, 12797, 12798, 4131, 2]
 // Exports: GuildSubscriptionRemoval, getGuildSubscriptionRemovalSource, useGuildSubscriptionRemovalSource
 
-// Module 12796 (getGuildSubscriptionRemovalSource)
+// Module 12795 (getGuildSubscriptionRemovalSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getGuildSubscriptionRemovalSource = function getGuildSubscriptionRe
   let obj = require(7544) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12797);
+      return callback(12796);
     },
     darker() {
-      return callback(12798);
+      return callback(12797);
     },
     light() {
-      return callback(12799);
+      return callback(12798);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useGuildSubscriptionRemovalSource = function useGuildSubscriptionRe
   let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12797);
+      return callback(12796);
     },
     darker() {
-      return callback(12798);
+      return callback(12797);
     },
     light() {
-      return callback(12799);
+      return callback(12798);
     }
   };
   return require(7544) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const GuildSubscriptionRemoval = function GuildSubscriptionRemoval(arg0) 
   let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12797);
+      return callback(12796);
     },
     darker() {
-      return callback(12798);
+      return callback(12797);
     },
     light() {
-      return callback(12799);
+      return callback(12798);
     }
   };
   obj = {};

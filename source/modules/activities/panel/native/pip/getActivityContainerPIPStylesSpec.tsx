@@ -1,10 +1,10 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 15964
+// Function ID: 15965
 // Name: OrientationLockState
 // Dependencies: [4310, 9674, 10167, 2]
 // Exports: default
 
-// Module 15965 (OrientationLockState)
+// Module 15964 (OrientationLockState)
 import { OrientationLockState } from "items3";
 import { LANDSCAPE_ACTIVITY_ASPECT_RATIO } from "ActivityPanelModes";
 

@@ -1,10 +1,10 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14373
+// Function ID: 14374
 // Name: SectionTitle
-// Dependencies: [32, 19, 17, 21, 4285, 712, 4281, 14364, 8676, 1236, 1297, 14375, 14376, 14379, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4281, 14363, 8676, 1236, 1297, 14374, 14375, 14378, 2]
 // Exports: Content
 
-// Module 14374 (SectionTitle)
+// Module 14373 (SectionTitle)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -41,13 +41,13 @@ export const Content = function Content(arg0) {
   let guildId;
   let listingId;
   ({ listingId, guildId } = arg0);
-  let obj = importAll(14364);
+  let obj = importAll(14363);
   const first = callback(obj.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj1 = importAll(14364);
+  let obj1 = importAll(14363);
   const first1 = callback(obj1.useChannelBenefits(listingId), 1)[0];
-  let obj2 = importAll(14364);
+  let obj2 = importAll(14363);
   const first2 = callback(obj2.useIntangibleBenefits(listingId), 1)[0];
-  let obj3 = importAll(14364);
+  let obj3 = importAll(14363);
   const role = obj3.useRole(listingId, guildId);
   obj = {
     renderGap() {
@@ -59,7 +59,7 @@ export const Content = function Content(arg0) {
   obj1 = { children: null };
   const intl = guildId(1236).intl;
   obj1[0] = intl.string(guildId(1236).t["DJ+bGu"]);
-  const items = [callback2(SectionTitle, obj1), callback2(guildId(1297).Spacer, { size: 8 }), callback2(guildId(14375).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const items = [callback2(SectionTitle, obj1), callback2(guildId(1297).Spacer, { size: 8 }), callback2(guildId(14374).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   obj[0] = items;
   const items1 = [callback3(closure_7, obj), , , ];
   let tmp4Result = null;
@@ -76,10 +76,10 @@ export const Content = function Content(arg0) {
     HermesBuiltin.arraySpread(first, 0);
     obj5[0] = items3;
     obj5[1] = guildId;
-    items2[2] = tmp7(importDefault(14376), obj5);
+    items2[2] = tmp7(importDefault(14375), obj5);
     obj2[0] = items2;
     tmp4Result = tmp4(tmp6, obj2);
-    const tmp11 = importDefault(14376);
+    const tmp11 = importDefault(14375);
   }
   items1[1] = tmp4Result;
   tmp4Result = null;

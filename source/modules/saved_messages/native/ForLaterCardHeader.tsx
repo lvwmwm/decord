@@ -1,10 +1,10 @@
-// Module ID: 12474
-// Function ID: 12475
+// Module ID: 12473
+// Function ID: 12474
 // Name: HeaderIcon
 // Dependencies: [17, 1862, 21, 4285, 712, 5660, 589, 5661, 9582, 1297, 4781, 4475, 4745, 1236, 4281, 2]
 // Exports: ForLaterCardHeader
 
-// Module 12474 (HeaderIcon)
+// Module 12473 (HeaderIcon)
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import jsxProd from "jsxProd";

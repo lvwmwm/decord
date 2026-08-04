@@ -1,10 +1,10 @@
-// Module ID: 15751
-// Function ID: 15752
+// Module ID: 15750
+// Function ID: 15751
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [12890, 676, 1876, 687, 647, 6820, 6812, 2]
+// Dependencies: [12889, 676, 1876, 687, 647, 6820, 6812, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 15751 (useShouldShowExpiringTrialOfferCard)
+// Module 15750 (useShouldShowExpiringTrialOfferCard)
 import clearDismissUntil from "clearDismissUntil";
 import { NoticeTypes } from "ME";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";

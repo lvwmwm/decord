@@ -1,10 +1,10 @@
-// Module ID: 15898
-// Function ID: 15899
+// Module ID: 15897
+// Function ID: 15898
 // Name: usePreloadedAsset
 // Dependencies: [32, 19, 17, 4277, 589, 500, 5236, 2]
 // Exports: default
 
-// Module 15898 (usePreloadedAsset)
+// Module 15897 (usePreloadedAsset)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { TurboModuleRegistry } from "get ActivityIndicator";
@@ -72,29 +72,20 @@ export default function usePreloadedAsset(arg0) {
     if (null != c0) {
       if (c3) {
         c0 = false;
-        function complete(arg0) {
-
-        }
         const _setTimeout = setTimeout;
-        const timeout = setTimeout(() => {
-          if (typeof complete !== "find") {
-            HermesBuiltin.throwTypeError();
-          }
+        timeout = setTimeout(() => {
           if (!c0) {
             c0 = true;
             const obj = { key: null, status: "timed-out" };
             obj[0] = outer1_4;
             outer1_5(obj);
           }
-        }, complete);
-        if (timeout) {
+        }, timeout);
+        if (_undefined) {
           if (null != outer1_6) {
             let preloadResult = outer1_6.preload(tmp);
           }
           preloadResult.then(() => {
-            if (typeof complete !== "find") {
-              HermesBuiltin.throwTypeError();
-            }
             if (!c0) {
               c0 = true;
               const obj = { key: null, status: "preloaded" };
@@ -102,9 +93,6 @@ export default function usePreloadedAsset(arg0) {
               outer1_5(obj);
             }
           }, () => {
-            if (typeof complete !== "find") {
-              HermesBuiltin.throwTypeError();
-            }
             if (!c0) {
               c0 = true;
               const obj = { key: null, status: "skipped" };
@@ -114,12 +102,12 @@ export default function usePreloadedAsset(arg0) {
           });
           return () => {
             let c0 = true;
-            clearTimeout(closure_2);
+            clearTimeout(closure_1);
           };
         }
-        preloadResult = num(_undefined[6]).preload(tmp, complete + 1000);
+        preloadResult = num(_undefined[6]).preload(tmp, timeout + 1000);
         const obj2 = num(_undefined[6]);
-        const tmp4 = complete;
+        const tmp4 = timeout;
       }
     }
   }, items1);

@@ -1,9 +1,9 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12806
+// Function ID: 12807
 // Name: handleIdentify
-// Dependencies: [1218, 3, 12808, 12847, 12850, 10384, 698, 675, 500, 3896, 1454, 709, 2]
+// Dependencies: [1218, 3, 12807, 12846, 12849, 10384, 698, 675, 500, 3896, 1454, 709, 2]
 
-// Module 12807 (handleIdentify)
+// Module 12806 (handleIdentify)
 import fetchFingerprint from "fetchFingerprint";
 import set from "set";
 import importDefaultResult from "awaitOnline";

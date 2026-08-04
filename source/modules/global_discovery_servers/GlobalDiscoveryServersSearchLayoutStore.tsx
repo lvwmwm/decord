@@ -1,9 +1,9 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12872
+// Function ID: 12873
 // Name: reset
-// Dependencies: [12872, 12874, 589, 709, 2]
+// Dependencies: [12871, 12873, 589, 709, 2]
 
-// Module 12873 (reset)
+// Module 12872 (reset)
 import map from "map";
 import closure_1 from "map";
 import { Store } from "initialize";

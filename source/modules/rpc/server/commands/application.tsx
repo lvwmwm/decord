@@ -1,8 +1,8 @@
-// Module ID: 13642
-// Function ID: 13643
-// Dependencies: [4322, 4188, 676, 10546, 10548, 13643, 7510, 10543, 10520, 698, 530, 7508, 2]
+// Module ID: 13641
+// Function ID: 13642
+// Dependencies: [4322, 4188, 676, 10546, 10548, 13642, 7510, 10543, 10520, 698, 530, 7508, 2]
 
-// Module 13642
+// Module 13641
 import addApplication from "addApplication";
 import ME from "ME";
 
@@ -32,7 +32,7 @@ let obj = {
     let obj1 = require(10548) /* recurseReplaceContentTree */;
     obj1.validateApplication(socket.application);
     const id = socket.application.id;
-    const obj3 = importDefault(13643)();
+    const obj3 = importDefault(13642)();
     if (obj3 != null) {
       const guildId = obj3.getGuildId();
     }

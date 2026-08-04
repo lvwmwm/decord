@@ -1,10 +1,10 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15153
+// Function ID: 15154
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 21, 4146, 4285, 712, 1348, 1865, 1236, 15155, 13162, 15153, 5320, 3989, 8666, 4281, 9180, 1297, 5660, 15158, 11581, 15163, 2]
+// Dependencies: [19, 17, 21, 4146, 4285, 712, 1348, 1865, 1236, 15154, 13161, 15152, 5320, 3989, 8666, 4281, 9180, 1297, 5660, 15157, 11581, 15162, 2]
 // Exports: default
 
-// Module 15154 (ChannelListStickyHeader)
+// Module 15153 (ChannelListStickyHeader)
 import FavoritesGuildHeaderActionButton from "FavoritesGuildHeaderActionButton";
 import get_ActivityIndicator from "Button";
 import jsxProd from "GuildHeaderCoachmarks";
@@ -104,7 +104,7 @@ export default function ChannelListStickyHeader(guild) {
       _undefined(outer1_2[10])(guild);
     }
   }, items);
-  const tmp10 = importDefault(15153)(guild);
+  const tmp10 = importDefault(15152)(guild);
   let tmp6Result = tmp6(5320);
   const iOSPressEffects = tmp6Result.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
@@ -208,7 +208,7 @@ export default function ChannelListStickyHeader(guild) {
   const items6 = [tmp15Result, ];
   tmp24Result = null;
   if (isFavoritesGuildIdResult) {
-    tmp24Result = tmp24(tmp6(15158).FavoritesGuildHeaderActionButton, {});
+    tmp24Result = tmp24(tmp6(15157).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp24Result;
   obj11[1] = items6;
@@ -232,7 +232,7 @@ export default function ChannelListStickyHeader(guild) {
     const obj14 = { targetRef: null, guild: null };
     obj14[0] = ref;
     obj14[1] = guild;
-    tmp24Result3 = tmp24(tmp(15163), obj14);
+    tmp24Result3 = tmp24(tmp(15162), obj14);
   }
   items7[3] = tmp24Result3;
   obj10[1] = items7;

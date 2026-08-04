@@ -1,7 +1,7 @@
 // Module ID: 5097
 // Function ID: 5098
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1372, 1862, 5098, 3913, 1931, 1874, 4301, 5099, 4467, 5100, 3985, 5101, 5102, 4253, 5114, 1959, 12805, 514, 709, 2]
+// Dependencies: [1372, 1862, 5098, 3913, 1931, 1874, 4301, 5099, 4467, 5100, 3985, 5101, 5102, 4253, 5114, 1959, 12804, 514, 709, 2]
 // Exports: selectVoiceChannelAdditional
 
 // Module 5097 (selectVoiceChannelAdditional)

@@ -1,10 +1,10 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16689
+// Function ID: 16690
 // Name: usePriceTiers
-// Dependencies: [32, 5, 705, 700, 5785, 3898, 4711, 14349, 2]
+// Dependencies: [32, 5, 705, 700, 5785, 3898, 4711, 14348, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16690 (usePriceTiers)
+// Module 16689 (usePriceTiers)
 import _slicedToArray from "_slicedToArray";
 import isIterable from "isIterable";
 import identity from "identity";
@@ -77,74 +77,27 @@ const withEqualityFn = identity.createWithEqualityFn((arg0) => {
   obj.loadPriceTiers = function loadPriceTiers(arg0) {
     let closure_0 = arg0;
     return outer1_5(function*() {
-      if (c4 === 2) {
+      let closure_1 = tmp3;
+      let c2 = 1;
+      callback(outer2_3[2]).batchUpdates(() => callback({ priceTierState: outer1_6.LOADING }));
+      const obj4 = callback(outer2_3[2]);
+      yield outer2_2(outer2_3[4]).getPriceTiers(outer1_0);
+      if (1 === tmp7) {
+        c2 = 0;
+        const obj2 = callback(outer2_3[2]);
+        obj2.batchUpdates(() => callback({ priceTierState: outer1_6.ERROR }));
+        let c4 = 3;
+      } else if (arg0 === 1) {
         c4 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_1 = tmp3;
-              let callback = tmp7;
-              callback = undefined;
-              let c2 = 1;
-              callback(outer2_3[2]).batchUpdates(() => callback({ priceTierState: outer1_6.LOADING }));
-              const obj4 = callback(outer2_3[2]);
-              c3 = 2;
-              c4 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer2_2(outer2_3[4]).getPriceTiers(outer1_0);
-              return obj1;
-            }
-          } else {
-            if (1 === tmp7) {
-              c2 = 0;
-              let obj2 = callback(outer2_3[2]);
-              obj2.batchUpdates(() => callback({ priceTierState: outer1_6.ERROR }));
-              c4 = 3;
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              callback = arg1;
-              obj = callback(outer2_3[2]);
-              obj.batchUpdates(() => callback({ priceTiers: callback, priceTierState: outer2_6.IDLE }));
-              c2 = 0;
-            }
-            c2 = 0;
-            c4 = 3;
-            obj2 = { value: null, done: true };
-            obj2[0] = arg1;
-            return obj2;
-          }
-        } catch (tmp24) {
-          if (tmp4 === c2) {
-            c4 = tmp2;
-            throw tmp24;
-          } else {
-            c3 = tmp;
-          }
-        }
+        throw arg1;
+      } else if (arg0 !== 2) {
+        callback = arg1;
+        const obj = callback(outer2_3[2]);
+        obj.batchUpdates(() => callback({ priceTiers: callback, priceTierState: outer2_6.IDLE }));
+        c2 = 0;
       }
+      c2 = 0;
+      return arg1;
     })();
   };
   obj.reset = function reset() {
@@ -174,7 +127,7 @@ export const usePriceTiersAvailableInGuild = function usePriceTiersAvailableInGu
   const tmp = usePriceTiers(guildId);
   let tiers = tmp.tiers;
   ({ state, onRefresh } = tmp);
-  const subscriptionListingsForGuild = set(14349).useSubscriptionListingsForGuild(guildId);
+  const subscriptionListingsForGuild = set(14348).useSubscriptionListingsForGuild(guildId);
   set = new Set();
   for (const item10022 of subscriptionListingsForGuild) {
     let addResult = set.add(item10022.subscription_plans[0].price);

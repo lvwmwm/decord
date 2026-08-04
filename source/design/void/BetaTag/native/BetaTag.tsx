@@ -1,10 +1,10 @@
-// Module ID: 12480
-// Function ID: 12481
+// Module ID: 12479
+// Function ID: 12480
 // Name: BetaTag
 // Dependencies: [19, 17, 6805, 21, 4285, 712, 4706, 691, 4281, 1236, 2]
 // Exports: default
 
-// Module 12480 (BetaTag)
+// Module 12479 (BetaTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";

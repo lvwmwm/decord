@@ -1,9 +1,9 @@
-// Module ID: 13578
-// Function ID: 13579
+// Module ID: 13577
+// Function ID: 13578
 // Name: getModalState
 // Dependencies: [1906, 38, 8031, 687, 6826, 589, 709, 2]
 
-// Module 13578 (getModalState)
+// Module 13577 (getModalState)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -85,7 +85,7 @@ obj = {
         }, 2 * tmp3(687).Millis.MINUTE);
         preflight.then(() => {
           const result = 10 * startTimeout(outer1_2[3]).Millis.SECOND;
-          if (typeof startTimeout !== "find") {
+          if (typeof startTimeout !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const timerId = setTimeout(() => {
@@ -101,7 +101,7 @@ obj = {
         }).catch(() => nonce(outer1_2[2]).setFailed(nonce));
         const nextPromise = preflight.then(() => {
           const result = 10 * startTimeout(outer1_2[3]).Millis.SECOND;
-          if (typeof startTimeout !== "find") {
+          if (typeof startTimeout !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const timerId = setTimeout(() => {

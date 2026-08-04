@@ -1,10 +1,10 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15037
+// Function ID: 15038
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 10357, 500, 15039, 10358, 1581, 1474, 4146, 4286, 4289, 4694, 15040, 5368, 2]
+// Dependencies: [19, 10357, 500, 15038, 10358, 1581, 1474, 4146, 4286, 4289, 4694, 15039, 5368, 2]
 // Exports: default
 
-// Module 15038 (useMainTabsPanelsGesture)
+// Module 15037 (useMainTabsPanelsGesture)
 import noop from "noop";
 import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG";
 import set from "set";

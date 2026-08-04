@@ -93,7 +93,7 @@ export const autoScroll = function autoScroll(c6, c4, c5, diff, diff1, closure_2
             callback(true);
           }
         }
-        if (typeof closure_9 !== "find") {
+        if (typeof closure_9 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let _requestAnimationFrame = requestAnimationFrame;
@@ -112,7 +112,7 @@ export const autoScroll = function autoScroll(c6, c4, c5, diff, diff1, closure_2
                 callback(true);
               }
             }
-            if (typeof closure_9 !== "find") {
+            if (typeof closure_9 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             let _requestAnimationFrame = requestAnimationFrame;
@@ -131,7 +131,7 @@ export const autoScroll = function autoScroll(c6, c4, c5, diff, diff1, closure_2
                     callback(true);
                   }
                 }
-                if (typeof closure_9 !== "find") {
+                if (typeof closure_9 !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 let _requestAnimationFrame = requestAnimationFrame;

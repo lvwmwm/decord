@@ -1,10 +1,10 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12111
+// Function ID: 12112
 // Name: styles
-// Dependencies: [19, 17, 21, 4285, 712, 1416, 12113, 4812, 12114, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1416, 12112, 4812, 12113, 2]
 // Exports: default
 
-// Module 12112 (styles)
+// Module 12111 (styles)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -70,7 +70,7 @@ export default function GameIcon(arg0) {
         source = closure_4;
         const obj1 = { style: null, children: null };
         obj1[0] = fireIcon.gameIconMask;
-        FireIcon = FireIcon(12114).FireIcon;
+        FireIcon = FireIcon(12113).FireIcon;
         const obj2 = { style: null, color: null };
         fireIcon = fireIcon.fireIcon;
         obj2[0] = fireIcon;
@@ -98,7 +98,7 @@ export default function GameIcon(arg0) {
         const obj6 = { style: null, color: null };
         obj6[0] = fireIcon.fireIcon;
         obj6[1] = onPress(712).unsafe_rawColors.ORANGE_330;
-        obj5[1] = tmp16(FireIcon(12114).FireIcon, obj6);
+        obj5[1] = tmp16(FireIcon(12113).FireIcon, obj6);
         tmp16Result = tmp16(tmp15, obj5);
       }
       items3[1] = tmp16Result;

@@ -1,10 +1,10 @@
-// Module ID: 12630
-// Function ID: 12631
+// Module ID: 12629
+// Function ID: 12630
 // Name: SharedUser
 // Dependencies: [17, 676, 21, 4285, 712, 4124, 6825, 1297, 4281, 1236, 4695, 4781, 4253, 4295, 1945, 5338, 5337, 4693, 5936, 2]
 // Exports: default
 
-// Module 12630 (SharedUser)
+// Module 12629 (SharedUser)
 import { View } from "Stack";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ function SharedUser(user) {
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  obj = { style: items, size: tmp5(1297).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "add" };
+  obj = { style: items, size: tmp5(1297).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
   items[1] = erroredAvatar;
   const items1 = [closure_5(user(1297).Avatar, obj), , ];
   if (tmp6) {

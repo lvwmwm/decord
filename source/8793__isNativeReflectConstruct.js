@@ -68,11 +68,11 @@ const styles = StyleSheet.create({ base: { overflow: "hidden" } });
 class Video {
   constructor(arg0) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, f115692);
+    tmp = _isNativeReflectConstruct(this, f115687);
     items = [];
     items[0] = global;
     tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(f115692);
+    obj = _isNativeReflectConstruct(f115687);
     tmp3 = _isNativeReflectConstruct;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -82,7 +82,7 @@ class Video {
       constructResult = obj.apply(self, items);
     }
     tmp3Result = tmp3(self, constructResult);
-    f115692 = tmp3Result;
+    f115687 = tmp3Result;
     tmp3Result.seek = (arg0) => {
       if (isNaN(arg0)) {
         const _Error = Error;
@@ -100,64 +100,15 @@ class Video {
     tmp3Result.dismissFullscreenPlayer = () => {
       store.setNativeProps({ fullscreen: false });
     };
-    f115692 = undefined;
-    f115692 = _isNativeReflectConstruct((arg0) => {
+    f115687 = undefined;
+    f115687 = _isNativeReflectConstruct((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c1 = 0;
       return (function*(arg0) {
-        if (c1 === 2) {
-          c1 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c1 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c1 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c1 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                const VideoManager = outer2_7.VideoManager;
-                c2 = 1;
-                c1 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = VideoManager.save(_root, outer2_10(_root._root));
-                return obj1;
-              }
-            } else if (arg0 === 1) {
-              c1 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c1 = 3;
-              const obj2 = { value: null, done: true };
-              obj2[0] = arg1;
-              return obj2;
-            } else {
-              c1 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            }
-          } catch (tmp9) {
-            c1 = tmp;
-            throw tmp9;
-          }
-        }
+        const VideoManager = outer2_7.VideoManager;
+        yield VideoManager.save(_root, outer2_10(_root._root));
+        return arg1;
       })();
     });
     tmp3Result.save = function(arg0) {

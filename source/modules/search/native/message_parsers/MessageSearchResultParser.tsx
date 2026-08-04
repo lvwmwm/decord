@@ -1,9 +1,9 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15664
+// Function ID: 15665
 // Name: prototype
-// Dependencies: [3923, 8208, 15666, 11624, 15667, 12, 2]
+// Dependencies: [3923, 8208, 15665, 11624, 15666, 12, 2]
 
-// Module 15665 (prototype)
+// Module 15664 (prototype)
 import hasFlag from "hasFlag";
 import { EMBED_TYPES_WITHOUT_DESCRIPTION as closure_3 } from "MessageEmbedTypes";
 

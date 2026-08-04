@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15467
+// Function ID: 15468
 // Name: ScienceIcon
 // Dependencies: [19, 21, 712, 3988, 11122, 2]
 // Exports: ScienceIcon
 
-// Module 15468 (ScienceIcon)
+// Module 15467 (ScienceIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

@@ -1,8 +1,8 @@
-// Module ID: 15259
-// Function ID: 15260
-// Dependencies: [19, 17, 3913, 676, 21, 4285, 4281, 712, 647, 8943, 8918, 14246, 1865, 5936, 15260, 1236, 3031, 7780, 1297, 15261, 4696, 2]
+// Module ID: 15258
+// Function ID: 15259
+// Dependencies: [19, 17, 3913, 676, 21, 4285, 4281, 712, 647, 8943, 8918, 14245, 1865, 5936, 15259, 1236, 3031, 7780, 1297, 15260, 4696, 2]
 
-// Module 15259
+// Module 15258
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "RowButtonWrapper";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14246);
+  let obj1 = guild(14245);
   const youBarTotalHeight = obj1.useYouBarTotalHeight(16);
   let obj2 = guild(1865);
   const isFavoritesGuildIdResult = obj2.isFavoritesGuildId(guild.id);
@@ -58,7 +58,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     let tmp13 = tmp9;
   } else {
     obj = { source: null };
-    obj[0] = importDefault(15260);
+    obj[0] = importDefault(15259);
     tmp9Result = tmp9(closure_5, obj);
     tmp13 = tmp9;
   }
@@ -83,7 +83,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     obj1[0] = tmp.personalizeButtonWrapper;
     obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
-    obj3[0] = importDefault(15261);
+    obj3[0] = importDefault(15260);
     obj2[0] = tmp13(tmp2(1297).Icon, obj3);
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t["Yhi9/N"]);

@@ -1,9 +1,9 @@
-// Module ID: 16459
-// Function ID: 16460
+// Module ID: 16458
+// Function ID: 16459
 // Name: handlePushedModal
-// Dependencies: [8944, 1218, 8988, 16460, 1366, 676, 4137, 4136, 4492, 8270, 16461, 16462, 16470, 5229, 16471, 16752, 16754, 2]
+// Dependencies: [8944, 1218, 8988, 16459, 1366, 676, 4137, 4136, 4492, 8270, 16460, 16461, 16469, 5229, 16470, 16751, 16753, 2]
 
-// Module 16459 (handlePushedModal)
+// Module 16458 (handlePushedModal)
 import handleFormInit from "handleFormInit";
 import fetchFingerprint from "fetchFingerprint";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -48,7 +48,7 @@ function pushFirstOpenModal(arg0, arg1) {
     if (store != null) {
       getProps = store.getProps;
     }
-    if (typeof getProps === "find") {
+    if (typeof getProps === "function") {
       let tmp7 = key;
       let store2 = key.store;
       let props = store2.getProps();
@@ -90,13 +90,13 @@ let closure_15 = {
       result = null != token.getToken();
     }
     if (result) {
-      result = !require(16461) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
-      const obj2 = require(16461) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16460) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
+      const obj2 = require(16460) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16462) /* PhoneThenEmailInterstitial */.default;
+    return require(16461) /* PhoneThenEmailInterstitial */.default;
   }
 };
 const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
@@ -112,7 +112,7 @@ let closure_17 = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16470) /* handleTouch */.default;
+    return require(16469) /* handleTouch */.default;
   }
 };
 let prototype = function DeprecatedModalManager() {
@@ -155,7 +155,7 @@ let prototype = function DeprecatedModalManager() {
     store: handleFormInit,
     closable: false,
     getComponent() {
-      return callback(16471).default;
+      return callback(16470).default;
     }
   };
   obj = {
@@ -163,7 +163,7 @@ let prototype = function DeprecatedModalManager() {
     store: FormStates,
     closable: false,
     getComponent() {
-      return callback(16752).default;
+      return callback(16751).default;
     }
   };
   applyArgumentsResult.actions = obj;

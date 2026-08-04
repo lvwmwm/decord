@@ -1,10 +1,10 @@
-// Module ID: 15885
-// Function ID: 15886
+// Module ID: 15884
+// Function ID: 15885
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4322, 4964, 1369, 21, 4285, 712, 3997, 1581, 589, 4966, 5613, 5610, 5630, 15886, 4253, 15888, 1959, 5337, 5338, 4693, 15874, 4281, 1236, 2835, 9326, 4695, 12144, 3995, 1416, 4697, 5620, 5616, 2]
+// Dependencies: [19, 17, 4322, 4964, 1369, 21, 4285, 712, 3997, 1581, 589, 4966, 5613, 5610, 5630, 15885, 4253, 15887, 1959, 5337, 5338, 4693, 15873, 4281, 1236, 2835, 9326, 4695, 12143, 3995, 1416, 4697, 5620, 5616, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 15885 (ConnectionIcon)
+// Module 15884 (ConnectionIcon)
 import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
 import { View } from "IncentivizedAccountLinkConfirmationBottomSheet";
 import addApplication from "addApplication";

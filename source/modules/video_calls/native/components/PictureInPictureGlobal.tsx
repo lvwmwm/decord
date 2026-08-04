@@ -1,10 +1,10 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15853
+// Function ID: 15854
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 1371, 4298, 8421, 1218, 4332, 676, 4303, 21, 4285, 1297, 712, 10571, 589, 10560, 10559, 4494, 10570, 4815, 10573, 8817, 10588, 10592, 10602, 10619, 10626, 10555, 10589, 10569, 9677, 4146, 4286, 5235, 15855, 1581, 2]
+// Dependencies: [32, 19, 17, 1371, 4298, 8421, 1218, 4332, 676, 4303, 21, 4285, 1297, 712, 10571, 589, 10560, 10559, 4494, 10570, 4815, 10573, 8817, 10588, 10592, 10602, 10619, 10626, 10555, 10589, 10569, 9677, 4146, 4286, 5235, 15854, 1581, 2]
 // Exports: default
 
-// Module 15854 (PictureInPictureGlobal)
+// Module 15853 (PictureInPictureGlobal)
 import module_4146 from "module_4146";
 import importAllResult from "useShouldForcePipOrientation";
 import get_ActivityIndicator from "useIsActivityFocused";

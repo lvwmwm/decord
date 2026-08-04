@@ -1,9 +1,9 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12849
+// Function ID: 12850
 // Name: guildId
-// Dependencies: [4305, 4304, 1372, 4332, 4377, 676, 12848, 3958, 1384, 4342, 2]
+// Dependencies: [4305, 4304, 1372, 4332, 4377, 676, 12847, 3958, 1384, 4342, 2]
 
-// Module 12850 (guildId)
+// Module 12849 (guildId)
 import initialize from "initialize";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 14700
-// Function ID: 14701
+// Module ID: 14699
+// Function ID: 14700
 // Name: Sample
-// Dependencies: [32, 19, 17, 21, 4285, 712, 5317, 4693, 7713, 4799, 13329, 5338, 5337, 7786, 4281, 4790, 7714, 5901, 7672, 5920, 5902, 4695, 4253, 8304, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 5317, 4693, 7713, 4799, 13328, 5338, 5337, 7786, 4281, 4790, 7714, 5901, 7672, 5920, 5902, 4695, 4253, 8304, 2]
 // Exports: default
 
-// Module 14700 (Sample)
+// Module 14699 (Sample)
 import _slicedToArray from "_slicedToArray";
 import SettingsIcon from "SettingsIcon";
 import { ScrollView } from "SearchField";
@@ -79,7 +79,7 @@ function GhostInputUsername(defaultValue) {
     }
     closure_0(str);
   };
-  return closure_6(require(13329) /* GhostInput */.GhostInput, obj);
+  return closure_6(require(13328) /* GhostInput */.GhostInput, obj);
 }
 function GhostInputActionSheet() {
   let obj = { children: null };

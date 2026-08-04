@@ -1,10 +1,10 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12368
+// Function ID: 12369
 // Name: useIsGameFriends
 // Dependencies: [32, 7039, 676, 589, 5116, 2]
 // Exports: useIsGameFriends
 
-// Module 12369 (useIsGameFriends)
+// Module 12368 (useIsGameFriends)
 import _slicedToArray from "_slicedToArray";
 import recountRelationshipTypes from "recountRelationshipTypes";
 import { RelationshipTypes } from "ME";

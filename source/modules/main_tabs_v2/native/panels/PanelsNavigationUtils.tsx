@@ -1,10 +1,10 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15035
+// Function ID: 15036
 // Name: convertPortraitToLandscapeScreens
 // Dependencies: [4137, 4136, 1485, 514, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 15036 (convertPortraitToLandscapeScreens)
+// Module 15035 (convertPortraitToLandscapeScreens)
 const result = require("CommonActions").fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
 
 export const convertPortraitToLandscapeScreens = function convertPortraitToLandscapeScreens() {

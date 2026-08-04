@@ -1,10 +1,10 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12100
+// Function ID: 12101
 // Name: getGameProfileWebsiteData
-// Dependencies: [21, 9204, 10450, 9200, 1236, 8005, 11642, 8007, 8009, 12102, 12104, 12106, 2]
+// Dependencies: [21, 9204, 10450, 9200, 1236, 8005, 11642, 8007, 8009, 12101, 12103, 12105, 2]
 // Exports: default
 
-// Module 12101 (getGameProfileWebsiteData)
+// Module 12100 (getGameProfileWebsiteData)
 import { jsx } from "jsxProd";
 
 const result = require("GlobeEarthIcon").fileFinishedImporting("modules/game_profile/native/utils/getGameProfileWebsiteData.tsx");
@@ -65,7 +65,7 @@ export default function getGameProfileWebsiteData(category) {
     const obj9 = { icon: null, action: null, title: null, url: null };
     const obj10 = { size: "md", color: null };
     obj10[1] = arg1;
-    obj9[0] = jsx(tmp(12102).BlueskyNeutralIcon, { size: "md", color: null });
+    obj9[0] = jsx(tmp(12101).BlueskyNeutralIcon, { size: "md", color: null });
     obj9[1] = tmp(9200).GameProfileTrackActionActions.BlueskyLink;
     const intl3 = tmp(1236).intl;
     obj9[2] = intl3.string(tmp(1236).t["D/PHq5"]);
@@ -75,7 +75,7 @@ export default function getGameProfileWebsiteData(category) {
     const obj11 = { icon: null, action: null, title: null, url: null };
     const obj12 = { size: "md", color: null };
     obj12[1] = arg1;
-    obj11[0] = jsx(tmp(12104).RedditNeutralIcon, { size: "md", color: null });
+    obj11[0] = jsx(tmp(12103).RedditNeutralIcon, { size: "md", color: null });
     obj11[1] = tmp(9200).GameProfileTrackActionActions.RedditLink;
     const intl2 = tmp(1236).intl;
     obj11[2] = intl2.string(tmp(1236).t["Hgb+fc"]);
@@ -85,7 +85,7 @@ export default function getGameProfileWebsiteData(category) {
     obj = { icon: null, action: null, title: null, url: null };
     const obj13 = { size: "md", color: null };
     obj13[1] = arg1;
-    obj[0] = jsx(tmp(12106).TwitchNeutralIcon, { size: "md", color: null });
+    obj[0] = jsx(tmp(12105).TwitchNeutralIcon, { size: "md", color: null });
     obj[1] = tmp(9200).GameProfileTrackActionActions.TwitchLink;
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["7xtz4G"]);

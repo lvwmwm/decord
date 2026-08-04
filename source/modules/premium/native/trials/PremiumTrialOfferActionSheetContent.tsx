@@ -1,8 +1,8 @@
-// Module ID: 14906
-// Function ID: 14907
-// Dependencies: [19, 17, 21, 4285, 712, 11136, 1236, 10441, 4784, 5936, 4281, 3931, 14907, 4695, 7625, 2]
+// Module ID: 14905
+// Function ID: 14906
+// Dependencies: [19, 17, 21, 4285, 712, 11136, 1236, 10441, 4784, 5936, 4281, 3931, 14906, 4695, 7625, 2]
 
-// Module 14906
+// Module 14905
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -65,7 +65,7 @@ const memoResult = require("noop").memo(function PremiumTrialOfferActionSheetCon
   }
   obj3[3] = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = callback(require(4281) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(14907), { perks: items });
+  items1[2] = callback(importDefault(14906), { perks: items });
   const obj4 = { style: tmp.buttonContainer, children: null };
   const obj5 = { size: "lg", text: null, onPress: null, grow: true, icon: null };
   const intl8 = tmp3(1236).intl;

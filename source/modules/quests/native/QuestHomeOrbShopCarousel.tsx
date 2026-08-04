@@ -1,10 +1,10 @@
-// Module ID: 14227
-// Function ID: 14228
+// Module ID: 14226
+// Function ID: 14227
 // Name: ListEdgeSpacer
-// Dependencies: [32, 19, 17, 7079, 5128, 21, 712, 9262, 14216, 10897, 589, 4281, 1236, 14228, 14229, 7666, 7097, 7107, 9265, 5597, 2]
+// Dependencies: [32, 19, 17, 7079, 5128, 21, 712, 9262, 14215, 10897, 589, 4281, 1236, 14227, 14228, 7666, 7097, 7107, 9265, 5597, 2]
 // Exports: default, useQuestHomeOrbShopCarouselData
 
-// Module 14227 (ListEdgeSpacer)
+// Module 14226 (ListEdgeSpacer)
 import _slicedToArray from "_slicedToArray";
 import Layer from "Layer";
 import { View } from "getQuestContentName";
@@ -36,8 +36,8 @@ function QuestHomeOrbShopCarouselHeading(orbAmount) {
 function QuestHomeOrbShopCarouselPlaceholder() {
   const callback = React.useCallback(() => {
     const obj = { height: null };
-    obj[0] = callback(14229).QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT;
-    return callback3(callback2(14228), obj);
+    obj[0] = callback(14228).QUEST_HOME_ORB_SHOP_REWARD_CARD_HEIGHT;
+    return callback3(callback2(14227), obj);
   }, []);
   const callback1 = React.useCallback((arg0) => "placeholder-" + arg0, []);
   let obj = { horizontal: true, accessibilityRole: "list", accessibilityLabel: null, accessibilityState: null, data: null, keyExtractor: null, renderItem: null, decelerationRate: "fast", snapToInterval: null, showsHorizontalScrollIndicator: false, ListHeaderComponent: null, ListFooterComponent: null, ItemSeparatorComponent: null };
@@ -186,7 +186,7 @@ export const useQuestHomeOrbShopCarouselData = function useQuestHomeOrbShopCarou
     return num;
   });
   const obj2 = orbAmount(589);
-  const popularOrbShopProducts = orbAmount(14216).usePopularOrbShopProducts({ enabled, variation });
+  const popularOrbShopProducts = orbAmount(14215).usePopularOrbShopProducts({ enabled, variation });
   obj = { products: popularOrbShopProducts.products, obtainableOrbRewards: stateFromStores, showPlaceholderCarousel: popularOrbShopProducts.showPlaceholderCarousel };
   return obj;
 };

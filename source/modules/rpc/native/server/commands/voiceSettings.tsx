@@ -1,9 +1,9 @@
-// Module ID: 13688
-// Function ID: 13689
+// Module ID: 13687
+// Function ID: 13688
 // Name: items
 // Dependencies: [4188, 676, 8824, 10547, 2]
 
-// Module 13688 (items)
+// Module 13687 (items)
 let obj = {};
 obj = { scope: null, handler: null };
 obj = {};

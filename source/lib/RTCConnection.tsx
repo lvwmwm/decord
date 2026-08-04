@@ -1,7 +1,7 @@
 // Module ID: 4358
 // Function ID: 4359
 // Name: getEventHistoryString
-// Dependencies: [5, 4359, 4369, 9132, 9071, 1218, 1372, 1862, 4332, 4356, 10813, 4377, 1874, 676, 1876, 12975, 4345, 584, 4360, 4384, 1208, 3, 12976, 514, 12978, 12980, 10607, 10814, 1454, 500, 3896, 1467, 709, 12981, 1384, 4380, 14, 5105, 12983, 12984, 10603, 698, 4279, 7051, 12985, 12987, 12988, 12989, 4381, 12990, 12991, 12993, 7128, 12994, 9091, 6842, 12995, 12996, 10524, 12998, 4623, 1236, 636, 1217, 2]
+// Dependencies: [5, 4359, 4369, 9132, 9071, 1218, 1372, 1862, 4332, 4356, 10813, 4377, 1874, 676, 1876, 12974, 4345, 584, 4360, 4384, 1208, 3, 12975, 514, 12977, 12979, 10607, 10814, 1454, 500, 3896, 1467, 709, 12980, 1384, 4380, 14, 5105, 12982, 12983, 10603, 698, 4279, 7051, 12984, 12986, 12987, 12988, 4381, 12989, 12990, 12992, 7128, 12993, 9091, 6842, 12994, 12995, 10524, 12997, 4623, 1236, 636, 1217, 2]
 
 // Module 4358 (getEventHistoryString)
 import fetchFingerprint from "fetchFingerprint";
@@ -520,66 +520,66 @@ prototype["connect"] = function connect(endpoint, token) {
         self._channelId = self._nextChannelId;
         self._nextChannelId = undefined;
       }
-      const obj5 = new importDefault(12981)(self.endpoint, self.context);
+      const obj5 = new importDefault(12980)(self.endpoint, self.context);
       self._socket = obj5;
       const _handleConnecting = self._handleConnecting;
-      obj5.on(require(12981) /* noop */.SocketEvent.Connecting, _handleConnecting.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Connecting, _handleConnecting.bind(self, obj5));
       const _handleConnect = self._handleConnect;
-      obj5.on(require(12981) /* noop */.SocketEvent.Connect, _handleConnect.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Connect, _handleConnect.bind(self, obj5));
       const _handleDisconnect = self._handleDisconnect;
-      obj5.on(require(12981) /* noop */.SocketEvent.Disconnect, _handleDisconnect.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Disconnect, _handleDisconnect.bind(self, obj5));
       const _handleResuming = self._handleResuming;
-      obj5.on(require(12981) /* noop */.SocketEvent.Resuming, _handleResuming.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Resuming, _handleResuming.bind(self, obj5));
       const _handleReady = self._handleReady;
-      obj5.on(require(12981) /* noop */.SocketEvent.Ready, _handleReady.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Ready, _handleReady.bind(self, obj5));
       const _handleSfuUpdate = self._handleSfuUpdate;
-      obj5.on(require(12981) /* noop */.SocketEvent.SfuUpdate, _handleSfuUpdate.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.SfuUpdate, _handleSfuUpdate.bind(self, obj5));
       const _handleSpeaking = self._handleSpeaking;
-      obj5.on(require(12981) /* noop */.SocketEvent.Speaking, _handleSpeaking.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Speaking, _handleSpeaking.bind(self, obj5));
       const _handleVideo = self._handleVideo;
-      obj5.on(require(12981) /* noop */.SocketEvent.Video, _handleVideo.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.Video, _handleVideo.bind(self, obj5));
       const _handleControlPing = self._handleControlPing;
-      obj5.on(require(12981) /* noop */.SocketEvent.Ping, _handleControlPing.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.Ping, _handleControlPing.bind(self));
       const _handleClientDisconnect = self._handleClientDisconnect;
-      obj5.on(require(12981) /* noop */.SocketEvent.ClientDisconnect, _handleClientDisconnect.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.ClientDisconnect, _handleClientDisconnect.bind(self));
       const _handleClientConnect = self._handleClientConnect;
-      obj5.on(require(12981) /* noop */.SocketEvent.ClientConnect, _handleClientConnect.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.ClientConnect, _handleClientConnect.bind(self));
       const _handleCodecs = self._handleCodecs;
-      obj5.on(require(12981) /* noop */.SocketEvent.Codecs, _handleCodecs.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.Codecs, _handleCodecs.bind(self));
       const _handleMediaSessionId = self._handleMediaSessionId;
-      obj5.on(require(12981) /* noop */.SocketEvent.MediaSessionId, _handleMediaSessionId.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.MediaSessionId, _handleMediaSessionId.bind(self));
       const _handleMediaSinkWants = self._handleMediaSinkWants;
-      obj5.on(require(12981) /* noop */.SocketEvent.MediaSinkWants, _handleMediaSinkWants.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.MediaSinkWants, _handleMediaSinkWants.bind(self));
       const _handleCodeVersion = self._handleCodeVersion;
-      obj5.on(require(12981) /* noop */.SocketEvent.VoiceBackendVersion, _handleCodeVersion.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.VoiceBackendVersion, _handleCodeVersion.bind(self));
       const _handleKeyframeInterval = self._handleKeyframeInterval;
-      obj5.on(require(12981) /* noop */.SocketEvent.KeyframeInterval, _handleKeyframeInterval.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.KeyframeInterval, _handleKeyframeInterval.bind(self));
       const handleFlags = self.handleFlags;
-      obj5.on(require(12981) /* noop */.SocketEvent.Flags, handleFlags.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.Flags, handleFlags.bind(self));
       const handlePlatform = self.handlePlatform;
-      obj5.on(require(12981) /* noop */.SocketEvent.Platform, handlePlatform.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.Platform, handlePlatform.bind(self));
       const _handleBandwidthEstimationExperiment = self._handleBandwidthEstimationExperiment;
-      obj5.on(require(12981) /* noop */.SocketEvent.BandwidthEstimationExperiment, _handleBandwidthEstimationExperiment.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.BandwidthEstimationExperiment, _handleBandwidthEstimationExperiment.bind(self));
       const _handleSecureFramesInit = self._handleSecureFramesInit;
-      obj5.on(require(12981) /* noop */.SocketEvent.SecureFramesInit, _handleSecureFramesInit.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.SecureFramesInit, _handleSecureFramesInit.bind(self));
       const _handleSecureFramesPrepareTransition = self._handleSecureFramesPrepareTransition;
-      obj5.on(require(12981) /* noop */.SocketEvent.SecureFramesPrepareTransition, _handleSecureFramesPrepareTransition.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.SecureFramesPrepareTransition, _handleSecureFramesPrepareTransition.bind(self));
       const _handleSecureFramesPrepareEpoch = self._handleSecureFramesPrepareEpoch;
-      obj5.on(require(12981) /* noop */.SocketEvent.SecureFramesPrepareEpoch, _handleSecureFramesPrepareEpoch.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.SecureFramesPrepareEpoch, _handleSecureFramesPrepareEpoch.bind(self));
       const _handleSecureFramesExecuteTransition = self._handleSecureFramesExecuteTransition;
-      obj5.on(require(12981) /* noop */.SocketEvent.SecureFramesExecuteTransition, _handleSecureFramesExecuteTransition.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.SecureFramesExecuteTransition, _handleSecureFramesExecuteTransition.bind(self));
       const _handleMLSExternalSenderPackage = self._handleMLSExternalSenderPackage;
-      obj5.on(require(12981) /* noop */.SocketEvent.MLSExternalSenderPackage, _handleMLSExternalSenderPackage.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.MLSExternalSenderPackage, _handleMLSExternalSenderPackage.bind(self));
       const _handleMLSProposals = self._handleMLSProposals;
-      obj5.on(require(12981) /* noop */.SocketEvent.MLSProposals, _handleMLSProposals.bind(self, obj5));
+      obj5.on(require(12980) /* noop */.SocketEvent.MLSProposals, _handleMLSProposals.bind(self, obj5));
       const _handleMLSPrepareCommitTransition = self._handleMLSPrepareCommitTransition;
-      obj5.on(require(12981) /* noop */.SocketEvent.MLSPrepareCommitTransition, _handleMLSPrepareCommitTransition.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.MLSPrepareCommitTransition, _handleMLSPrepareCommitTransition.bind(self));
       const _handleMLSWelcome = self._handleMLSWelcome;
-      obj5.on(require(12981) /* noop */.SocketEvent.MLSWelcome, _handleMLSWelcome.bind(self));
+      obj5.on(require(12980) /* noop */.SocketEvent.MLSWelcome, _handleMLSWelcome.bind(self));
       const _recordMessageEvent = self._recordMessageEvent;
-      obj5.on(require(12981) /* noop */.SocketEvent.ReceiveMessage, _recordMessageEvent.bind(self, tmp3.MESSAGE_RECEIVE));
+      obj5.on(require(12980) /* noop */.SocketEvent.ReceiveMessage, _recordMessageEvent.bind(self, tmp3.MESSAGE_RECEIVE));
       const _recordMessageEvent2 = self._recordMessageEvent;
-      obj5.on(require(12981) /* noop */.SocketEvent.SendMessage, _recordMessageEvent2.bind(self, tmp3.MESSAGE_SEND));
+      obj5.on(require(12980) /* noop */.SocketEvent.SendMessage, _recordMessageEvent2.bind(self, tmp3.MESSAGE_SEND));
       self._connectStartTime = require(4360) /* sleep */.now();
       self._connectCount = self._connectCount + 1;
       self._connecting = true;
@@ -1080,7 +1080,7 @@ prototype["_chooseExperiments"] = function _chooseExperiments(items) {
   const tmp3 = importDefault;
   let enabled = require(500) /* set */.isWeb();
   if (enabled) {
-    const BrowserTransceiverPaddingRemovalExperiment = tmp8(12983).BrowserTransceiverPaddingRemovalExperiment;
+    const BrowserTransceiverPaddingRemovalExperiment = tmp8(12982).BrowserTransceiverPaddingRemovalExperiment;
     enabled = BrowserTransceiverPaddingRemovalExperiment.getConfig({ location: "RTCConnection" }).enabled;
   }
   if (enabled) {
@@ -1088,13 +1088,13 @@ prototype["_chooseExperiments"] = function _chooseExperiments(items) {
   }
   let tmp8Result = tmp8(500);
   if (tmp8Result.isIOS()) {
-    const mode = tmp3(12984).getConfig({ location: "_chooseExperiments" }).mode;
+    const mode = tmp3(12983).getConfig({ location: "_chooseExperiments" }).mode;
     if ("standard" === mode) {
       items.push("ios_video_stabilization_standard");
     } else if ("low_latency" === mode) {
       items.push("ios_video_stabilization_low_latency");
     }
-    const tmp3Result = tmp3(12984);
+    const tmp3Result = tmp3(12983);
   }
   tmp8Result = tmp8(500);
   let isAndroidResult = tmp8Result.isAndroid();
@@ -1280,7 +1280,7 @@ prototype["_handleDisconnect"] = function _handleDisconnect(arg0, arg1, code, re
               tmp19 = cameraDurationStats.camera_enabled_duration > 0;
             }
             if (tmp19) {
-              let obj1 = {};
+              const obj1 = {};
               let merged1 = Object.assign(cameraDurationStats);
               obj1.media_session_id = self.getMediaSessionId();
               importDefault(_videoQuality2[41]).track(constants.VIDEO_CALL_ENDED, obj1);
@@ -1510,66 +1510,14 @@ prototype["_handleDisconnect"] = function _handleDisconnect(arg0, arg1, code, re
       _require = undefined;
       infoResult = callback;
       _require = callback(function*() {
-        if (c1 === 2) {
-          c1 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c1 = 2;
-            if (0 === _systemResources) {
-              if (arg0 === 1) {
-                c1 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c1 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                _systemResources = _systemResources._systemResources;
-                let batteryLevelStats;
-                if (_systemResources != null) {
-                  batteryLevelStats = _systemResources.getBatteryLevelStats();
-                }
-                _systemResources = 1;
-                c1 = 1;
-                const obj1 = { value: null, done: false };
-                obj1[0] = batteryLevelStats;
-                return obj1;
-              }
-            } else if (arg0 === 1) {
-              c1 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c1 = 3;
-              const obj2 = { value: null, done: true };
-              obj2[0] = arg1;
-              return obj2;
-            } else {
-              let closure_0 = arg1;
-              if (arg1 == null) {
-                closure_0 = { batteryUsageRounded: null };
-              }
-              c1 = 3;
-              obj = { value: null, done: true };
-              obj[0] = closure_0;
-              return obj;
-            }
-          } catch (tmp9) {
-            c1 = tmp;
-            throw tmp9;
-          }
+        if (_systemResources != null) {
+          const batteryLevelStats = _systemResources.getBatteryLevelStats();
         }
+        let closure_0 = yield batteryLevelStats;
+        if (arg1 == null) {
+          closure_0 = { batteryUsageRounded: null };
+        }
+        return closure_0;
       });
       let items1 = [
         (function() {
@@ -1736,7 +1684,7 @@ prototype["_connectMediaEngineWithEndpoint"] = function _connectMediaEngineWithE
   ({ ssrc, streamParameters } = _readyData);
   this.setState(constants3.RTC_CONNECTING);
   this.port = _sfuEndpoint.port;
-  const ProcessBoostExperiment = _require(12987).ProcessBoostExperiment;
+  const ProcessBoostExperiment = _require(12986).ProcessBoostExperiment;
   const config = ProcessBoostExperiment.getConfig({ location: "media_engine_connect" });
   let obj = store2;
   ({ processPriority, threadPriorityConfiguration } = config);
@@ -2223,22 +2171,22 @@ prototype["getOrCreateVideoQuality"] = function getOrCreateVideoQuality() {
   self = this;
   if (null != this._connection) {
     if (null == self._videoQuality) {
-      const videoQuality = new self(12995).VideoQuality(self._connection);
+      const videoQuality = new self(12994).VideoQuality(self._connection);
       self._videoQuality = videoQuality;
       const _videoQuality2 = self._videoQuality;
       let result = _videoQuality2.updateCallUserIdsCount(self._userIds.size);
       const _videoQuality3 = self._videoQuality;
       _videoQuality3.start();
-      const defaultConfig = self(12996).VideoHealthManager.defaultConfig;
+      const defaultConfig = self(12995).VideoHealthManager.defaultConfig;
       ({ windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec } = defaultConfig);
       if (defaultConfig.featureEnabled) {
-        const videoHealthManager = new tmp10(12996).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
+        const videoHealthManager = new tmp10(12995).VideoHealthManager(windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec);
         self._videoHealthManager = videoHealthManager;
         if (null != self._localMediaSinkWantsManager) {
           self._localMediaSinkWantsManager.videoHealthManager = self._videoHealthManager;
         }
         const _videoQuality = self._videoQuality;
-        _videoQuality.on(tmp10(12995).VideoQualityEvent.FpsUpdate, (arg0, arg1, arg2) => {
+        _videoQuality.on(tmp10(12994).VideoQualityEvent.FpsUpdate, (arg0, arg1, arg2) => {
           const _localMediaSinkWantsManager = self._localMediaSinkWantsManager;
           let result;
           if (_localMediaSinkWantsManager != null) {
@@ -2772,7 +2720,7 @@ prototype["_handleKeyframeInterval"] = function _handleKeyframeInterval(keyframe
 };
 prototype["_handleBandwidthEstimationExperiment"] = function _handleBandwidthEstimationExperiment(_bandwidthEstimationExperiment) {
   this._bandwidthEstimationExperiment = _bandwidthEstimationExperiment;
-  const mediaEngineExperiments = importDefault(12998).getMediaEngineExperiments(_bandwidthEstimationExperiment);
+  const mediaEngineExperiments = importDefault(12997).getMediaEngineExperiments(_bandwidthEstimationExperiment);
   let tmp = null !== mediaEngineExperiments;
   if (tmp) {
     tmp = 0 !== mediaEngineExperiments.length;

@@ -1,10 +1,10 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15845
+// Function ID: 15846
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4285, 15844, 712, 4812, 4281, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 15843, 712, 4812, 4281, 1236, 2]
 // Exports: default
 
-// Module 15846 (RestrictedBlockedMessageGroup)
+// Module 15845 (RestrictedBlockedMessageGroup)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

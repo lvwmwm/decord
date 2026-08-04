@@ -1,9 +1,9 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14272
+// Function ID: 14273
 // Name: importDefaultResult1
-// Dependencies: [32, 19, 17, 5128, 505, 21, 689, 712, 14274, 4285, 500, 10386, 10499, 14276, 14279, 14242, 4146, 4286, 1581, 5272, 3997, 14292, 7819, 14293, 14270, 14294, 4693, 4812, 4281, 14295, 5236, 4695, 10396, 7672, 1236, 9015, 9608, 10374, 10501, 4706, 14297, 9607, 14177, 14175, 12143, 8414, 14269, 4253, 14298, 1959, 10403, 7101, 9434, 9435, 9439, 7108, 7107, 5131, 7097, 8845, 14299, 11080, 14300, 5135, 2]
+// Dependencies: [32, 19, 17, 5128, 505, 21, 689, 712, 14273, 4285, 500, 10386, 10499, 14275, 14278, 14241, 4146, 4286, 1581, 5272, 3997, 14291, 7819, 14292, 14269, 14293, 4693, 4812, 4281, 14294, 5236, 4695, 10396, 7672, 1236, 9015, 9608, 10374, 10501, 4706, 14296, 9607, 14176, 14174, 12142, 8414, 14268, 4253, 14297, 1959, 10403, 7101, 9434, 9435, 9439, 7108, 7107, 5131, 7097, 8845, 14298, 11080, 14299, 5135, 2]
 
-// Module 14273 (importDefaultResult1)
+// Module 14272 (importDefaultResult1)
 import getContextualEntrypointHeading from "getContextualEntrypointHeading";
 import importAllResult from "SafeAreaPaddingView";
 import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE_TIMING";
@@ -462,11 +462,11 @@ let closure_24 = importAllResult.memo((arg0) => {
   const VideoQuestPlayerRefactorExperiment = tmp(10499).VideoQuestPlayerRefactorExperiment;
   obj = { location: QuestsExperimentLocations.VIDEO_MODAL_MOBILE };
   if (VideoQuestPlayerRefactorExperiment.useConfig(obj).enabled) {
-    let VideoQuestPlayer = tmp(14276).VideoQuestPlayer;
+    let VideoQuestPlayer = tmp(14275).VideoQuestPlayer;
   } else {
-    VideoQuestPlayer = tmp(14279).VideoQuestPlayer;
+    VideoQuestPlayer = tmp(14278).VideoQuestPlayer;
   }
-  windowDimensions = importAllResult.useContext(tmp(14242).QuestDockGestureContext).windowDimensions;
+  windowDimensions = importAllResult.useContext(tmp(14241).QuestDockGestureContext).windowDimensions;
   const items = [windowDimensions];
   memo = importAllResult.useMemo(() => Math.floor(windowDimensions.get().width / 0.5625), items);
   const callback = importAllResult.useCallback(() => {
@@ -504,7 +504,7 @@ let closure_24 = importAllResult.memo((arg0) => {
   const obj8 = { closeButtonIconColor: null, onClose: null, showCurrentVideoTime: true, withTextShadow: true };
   obj8[0] = memo(712).colors.WHITE;
   obj8[1] = handleClose;
-  const items6 = [callback2(memo(14297), obj8), ];
+  const items6 = [callback2(memo(14296), obj8), ];
   const obj9 = { direction: "vertical", spacing: null, children: null };
   obj9[1] = memo(712).space.PX_24;
   const obj10 = { direction: "horizontal", justify: "space-between", spacing: null, children: null };
@@ -521,9 +521,9 @@ let closure_24 = importAllResult.memo((arg0) => {
   const obj4 = { captionsEnabled, onLoad: callback, externallyPaused, orientation: "portrait", contentInsets: closure_16, handleOpenTranscript, handleToggleCaptions, isFullscreen, onEnd, sourceQuestContent, hasCaptionAsset, hasTranscriptAsset };
   const obj5 = { start: closure_12, end: closure_13, style: tmp19Result.gradientTop, colors: items };
   const obj6 = { start: closure_12, end: closure_13, style: tmp19Result.gradientBottom, colors: items1 };
-  const tmp10Result = memo(14297);
+  const tmp10Result = memo(14296);
   const tmp7 = QuestsExperimentLocations;
-  items9[1] = callback2(closure_5, { style: tmp19Result.questDetailsSecondary, children: callback2(memo(14274), obj15) });
+  items9[1] = callback2(closure_5, { style: tmp19Result.questDetailsSecondary, children: callback2(memo(14273), obj15) });
   obj10[3] = items9;
   const items10 = [closure_11(windowDimensions(4693).Stack, obj10), ];
   const obj16 = { grow: true, variant: "expressive", onPress: handlePrimaryCtaPress, text: null };
@@ -559,7 +559,7 @@ let closure_24 = importAllResult.memo((arg0) => {
     obj20[1] = handleOpenTranscript;
     const obj21 = { color: null };
     obj21[0] = tmp19Result.iconDisabled.color;
-    obj20[2] = tmp19(tmp(14177).TranscriptOutlineIcon, obj21);
+    obj20[2] = tmp19(tmp(14176).TranscriptOutlineIcon, obj21);
     hasTranscriptAsset = tmp19(closure_26, obj20);
   }
   items12[1] = hasTranscriptAsset;
@@ -572,7 +572,7 @@ let closure_24 = importAllResult.memo((arg0) => {
       obj22[1] = handleShareQuest;
       const obj23 = { color: null };
       obj23[0] = tmp10(712).colors.TEXT_DEFAULT;
-      obj22[2] = tmp19(tmp(12143).ShareIcon, obj23);
+      obj22[2] = tmp19(tmp(12142).ShareIcon, obj23);
       isShareable = tmp19(closure_26, obj22);
     }
     items12[3] = isShareable;
@@ -592,7 +592,7 @@ let closure_24 = importAllResult.memo((arg0) => {
       obj.children = callback2(windowDimensions(_undefined[45]).MoreHorizontalIcon, obj);
       return callback2(closure_26, obj);
     };
-    items12[4] = tmp19(tmp10(14295), obj24);
+    items12[4] = tmp19(tmp10(14294), obj24);
     obj17[6] = items12;
     items11[1] = tmp17(tmp(4693).Stack, obj17);
     obj[2] = items11;
@@ -609,7 +609,7 @@ let closure_24 = importAllResult.memo((arg0) => {
     }
     const obj26 = { color: null };
     obj26[0] = color;
-    tmp19Result = tmp19(tmp(14175).ClosedCaptionsOutlineIcon, obj26);
+    tmp19Result = tmp19(tmp(14174).ClosedCaptionsOutlineIcon, obj26);
     obj25[2] = tmp19Result;
     tmp19(closure_26, obj25);
     const tmp23 = closure_26;
@@ -639,7 +639,7 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
   let tmp6;
   ({ onClose, sourceQuestContent } = arg0);
   ({ isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
-  let obj = sourceQuestContent(14269);
+  let obj = sourceQuestContent(14268);
   const quest = obj.useVideoQuestModalContext().quest;
   const items = [quest];
   const items1 = [quest];
@@ -706,14 +706,14 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
   }, items3);
   const obj3 = sourceQuestContent(7101);
   const items4 = [quest.id];
-  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(14299).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
+  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(14298).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const callback3 = importAllResult.useCallback(() => {
     let obj = sourceQuestContent(outer1_2[61]);
     obj = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj);
   }, items4);
-  const obj4 = sourceQuestContent(14299);
-  const videoExternallyPaused = sourceQuestContent(14300).useVideoExternallyPaused(quest.id, tmp11);
+  const obj4 = sourceQuestContent(14298);
+  const videoExternallyPaused = sourceQuestContent(14299).useVideoExternallyPaused(quest.id, tmp11);
   const tmp17 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5135).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp18 = null == tmp17;
   if (!tmp18) {

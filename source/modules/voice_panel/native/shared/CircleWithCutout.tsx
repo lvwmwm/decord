@@ -1,9 +1,9 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16132
+// Function ID: 16133
 // Name: getBadgeLeft
 // Dependencies: [19, 17, 21, 10579, 8437, 2]
 
-// Module 16133 (getBadgeLeft)
+// Module 16132 (getBadgeLeft)
 import { PixelRatio } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import importAllResult from "noop";

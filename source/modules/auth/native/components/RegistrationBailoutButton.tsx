@@ -1,10 +1,10 @@
-// Module ID: 15007
-// Function ID: 15008
+// Module ID: 15006
+// Function ID: 15007
 // Name: RegistrationBailoutButton
 // Dependencies: [19, 21, 4285, 1297, 1236, 2]
 // Exports: default
 
-// Module 15007 (RegistrationBailoutButton)
+// Module 15006 (RegistrationBailoutButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

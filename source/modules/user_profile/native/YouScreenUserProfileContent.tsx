@@ -1,10 +1,10 @@
-// Module ID: 15749
-// Function ID: 15750
+// Module ID: 15748
+// Function ID: 15749
 // Name: YouAvatar
-// Dependencies: [32, 19, 17, 1364, 4962, 6989, 8707, 5658, 1369, 21, 15742, 15363, 500, 8764, 8757, 12252, 12253, 8710, 9159, 1358, 5931, 12182, 4695, 9591, 712, 1236, 15750, 1481, 8117, 9366, 8758, 589, 1348, 8745, 8754, 12132, 15751, 12366, 12372, 12373, 9375, 15752, 12376, 14913, 12184, 9448, 7330, 12382, 15754, 12239, 12387, 12394, 8878, 4146, 5597, 9368, 9387, 8955, 11886, 9480, 2]
+// Dependencies: [32, 19, 17, 1364, 4962, 6989, 8707, 5658, 1369, 21, 15741, 15362, 500, 8764, 8757, 12251, 12252, 8710, 9159, 1358, 5931, 12181, 4695, 9591, 712, 1236, 15749, 1481, 8117, 9366, 8758, 589, 1348, 8745, 8754, 12131, 15750, 12365, 12371, 12372, 9375, 15751, 12375, 14912, 12183, 9448, 7330, 12381, 15753, 12238, 12386, 12393, 8878, 4146, 5597, 9368, 9387, 8955, 11885, 9480, 2]
 // Exports: default
 
-// Module 15749 (YouAvatar)
+// Module 15748 (YouAvatar)
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled";
 import DismissibleContent from "DismissibleContent";
 import get_ActivityIndicator from "UserProfileAnalyticsProvider";
@@ -24,9 +24,9 @@ let map1;
 const require = arg1;
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
-    const result = callback(15742).trackYouTabAvatarPress();
-    const obj = callback(15742);
-    const result1 = callback(15363).showYouAccountActionSheet();
+    const result = callback(15741).trackYouTabAvatarPress();
+    const obj = callback(15741);
+    const result1 = callback(15362).showYouAccountActionSheet();
   }, []);
   let obj = require(500) /* set */;
   const isAndroidResult = obj.isAndroid();
@@ -60,7 +60,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     tmp4 = items;
   }
   obj = { style: tmp3.profileContent, children: null };
-  const items1 = [callback2(importDefault(12252), {}), callback2(importDefault(12253), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
+  const items1 = [callback2(importDefault(12251), {}), callback2(importDefault(12252), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
   obj[1] = items1;
   return callback3(closure_6, obj);
 }
@@ -106,12 +106,12 @@ function EditSection(navigateToProfileCustomization) {
     obj1[3] = intl.string(tmp4(1236).t.AAjhgi);
     obj1[4] = callback;
     obj[1] = callback2(tmp4(4695).Button, obj1);
-    const items2 = [callback2(tmp(12182), obj), ];
+    const items2 = [callback2(tmp(12181), obj), ];
     const obj3 = { targetRef: null, visible: null, markAsDismissed: null };
     obj3[0] = ref;
     obj3[1] = tmp13;
     obj3[2] = tmp11[1];
-    items2[1] = callback2(tmp(15750), obj3);
+    items2[1] = callback2(tmp(15749), obj3);
     obj[0] = items2;
     return callback3(closure_15, obj);
   }

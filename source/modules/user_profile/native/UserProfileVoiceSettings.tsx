@@ -1,10 +1,10 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12230
+// Function ID: 12231
 // Name: UserVoiceSettings
-// Dependencies: [19, 17, 4730, 4332, 3913, 676, 505, 21, 4285, 8710, 589, 4469, 9150, 10747, 9077, 5657, 1236, 9108, 10766, 12232, 7630, 12234, 7635, 7716, 4281, 11890, 12123, 7777, 4253, 9135, 9131, 2]
+// Dependencies: [19, 17, 4730, 4332, 3913, 676, 505, 21, 4285, 8710, 589, 4469, 9150, 10747, 9077, 5657, 1236, 9108, 10766, 12231, 7630, 12233, 7635, 7716, 4281, 11889, 12122, 7777, 4253, 9135, 9131, 2]
 // Exports: default
 
-// Module 12231 (UserVoiceSettings)
+// Module 12230 (UserVoiceSettings)
 import "SoundboardSlashIcon";
 import { View } from "MicrophoneSlashIcon";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";

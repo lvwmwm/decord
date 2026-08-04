@@ -1,10 +1,10 @@
-// Module ID: 14608
-// Function ID: 14609
+// Module ID: 14607
+// Function ID: 14608
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1874, 21, 4285, 7584, 5649, 1236, 14609, 7582, 589, 1897, 2]
+// Dependencies: [32, 19, 17, 1874, 21, 4285, 7584, 5649, 1236, 14608, 7582, 589, 1897, 2]
 // Exports: default
 
-// Module 14608 (BackwardsCompatibleAppIconRows)
+// Module 14607 (BackwardsCompatibleAppIconRows)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

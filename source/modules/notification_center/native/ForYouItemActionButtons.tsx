@@ -1,10 +1,10 @@
-// Module ID: 15413
-// Function ID: 15414
+// Module ID: 15412
+// Function ID: 15413
 // Name: focusChatInput
-// Dependencies: [5, 19, 17, 1372, 1874, 676, 21, 4285, 1231, 4146, 4286, 4693, 4695, 1236, 4281, 647, 7893, 15075, 4266, 13105, 9551, 7021, 4295, 9161, 3986, 10131, 698, 2]
+// Dependencies: [5, 19, 17, 1372, 1874, 676, 21, 4285, 1231, 4146, 4286, 4693, 4695, 1236, 4281, 647, 7893, 15074, 4266, 13104, 9551, 7021, 4295, 9161, 3986, 10131, 698, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 15413 (focusChatInput)
+// Module 15412 (focusChatInput)
 import closure_3 from "ME";
 import handleSupportedURL from "handleSupportedURL";
 import { View } from "_sendWave";
@@ -368,7 +368,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
   const callback4 = React.useCallback(() => {
     const dMChannel = callback(navigation[22]).getDMChannel(id);
     dMChannel.then((arg0) => {
-      callback(13105)({ payload: callback(4266)("https://discord.com/channels/@me/" + arg0).payload, safe: true, navigationReplace: false });
+      callback(13104)({ payload: callback(4266)("https://discord.com/channels/@me/" + arg0).payload, safe: true, navigationReplace: false });
       let c0;
       let tmp3;
       if (null != arg0) {

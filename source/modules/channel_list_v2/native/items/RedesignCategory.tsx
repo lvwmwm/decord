@@ -1,10 +1,10 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15133
+// Function ID: 15134
 // Name: renderCategoryItem
-// Dependencies: [19, 17, 6899, 5228, 4480, 9710, 21, 4285, 500, 712, 4281, 4812, 12021, 9396, 10945, 9585, 1348, 589, 4475, 12047, 5224, 1236, 5644, 10946, 5905, 2]
+// Dependencies: [19, 17, 6899, 5228, 4480, 9710, 21, 4285, 500, 712, 4281, 4812, 12020, 9396, 10945, 9585, 1348, 589, 4475, 12046, 5224, 1236, 5644, 10946, 5905, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 15134 (renderCategoryItem)
+// Module 15133 (renderCategoryItem)
 import useFavoritesGuildCategoryAddAction from "useFavoritesGuildCategoryAddAction";
 import { View } from "initialize";
 import set from "set";
@@ -57,7 +57,7 @@ function renderCategoryItem(arg0) {
   obj[2] = closure_8;
   items[1] = obj;
   let tmp2 = name;
-  if (typeof name !== "_iter") {
+  if (typeof name === "string") {
     let str = "text-subtle";
     if (muted) {
       str = "text-muted";
@@ -148,7 +148,7 @@ function renderCategoryItem(arg0) {
     let colors = importDefault(712).colors;
     const obj8 = { size: "xxs", color: null };
     obj8[1] = muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
-    colors = tmp6(trailingAction(12021).PlusMediumIcon, obj8);
+    colors = tmp6(trailingAction(12020).PlusMediumIcon, obj8);
     obj7[4] = colors;
     obj7 = tmp6(trailingAction(4812).PressableOpacity, obj7);
     obj6[1] = obj7;
@@ -242,7 +242,7 @@ export const CategoryChannel = function CategoryChannel(channel) {
   obj[5] = channel.withMarginTop;
   obj[6] = styles(tmp2);
   obj[7] = tmp2;
-  obj[8] = collapsed(12047)(channel);
+  obj[8] = collapsed(12046)(channel);
   const collapsed2 = obj.collapsed;
   const merged = Object.assign(obj, Object.create(null));
   const colors = collapsed(712).colors;

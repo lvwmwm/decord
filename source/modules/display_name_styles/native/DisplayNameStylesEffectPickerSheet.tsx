@@ -1,10 +1,10 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14478
+// Function ID: 14479
 // Name: EffectTile
-// Dependencies: [32, 19, 17, 1886, 21, 4285, 712, 7325, 14474, 14475, 4254, 4253, 5338, 5337, 1236, 2643, 4695, 4693, 9391, 9388, 9389, 4281, 2]
+// Dependencies: [32, 19, 17, 1886, 21, 4285, 712, 7325, 14473, 14474, 4254, 4253, 5338, 5337, 1236, 2643, 4695, 4693, 9391, 9388, 9389, 4281, 2]
 // Exports: default
 
-// Module 14479 (EffectTile)
+// Module 14478 (EffectTile)
 import _slicedToArray from "_slicedToArray";
 import AVERAGE_FONT_WIDTH_RATIO from "AVERAGE_FONT_WIDTH_RATIO";
 import get_ActivityIndicator from "Stack";
@@ -108,9 +108,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let closure_7;
   let tmp = createCacheKey();
   let obj = userId(7325);
-  let obj1 = userId(14474);
+  let obj1 = userId(14473);
   const visibleEffectOrder = obj1.useVisibleEffectOrder();
-  let obj2 = userId(14475);
+  let obj2 = userId(14474);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   const tmp5 = callback(first.useState(selectedEffectId), 2);

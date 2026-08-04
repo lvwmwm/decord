@@ -1,10 +1,10 @@
-// Module ID: 12755
-// Function ID: 12756
+// Module ID: 12754
+// Function ID: 12755
 // Name: PerkText
-// Dependencies: [19, 17, 4172, 21, 4285, 712, 689, 4281, 12756, 11761, 11786, 1236, 2317, 12757, 2]
+// Dependencies: [19, 17, 4172, 21, 4285, 712, 689, 4281, 12755, 11761, 11786, 1236, 2317, 12756, 2]
 // Exports: default
 
-// Module 12755 (PerkText)
+// Module 12754 (PerkText)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -32,7 +32,7 @@ const result = require("calculateAppliedBoosts").fileFinishedImporting("modules/
 export default function GuildPowerupsMarketingHeader(guild) {
   guild = guild.guild;
   const tmp = createCacheKey();
-  const arr = importDefault(12756)(guild.id);
+  const arr = importDefault(12755)(guild.id);
   const items = [guild.id];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guild.id)) {
@@ -58,7 +58,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(12757)(arr);
+          let first = tmp2(12756)(arr);
           if (1 === first.length) {
             obj = { powerup: null };
             first = first[0];

@@ -1,10 +1,10 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14037
+// Function ID: 14038
 // Name: ChatCheckIcon
-// Dependencies: [19, 21, 712, 3988, 14039, 2]
+// Dependencies: [19, 21, 712, 3988, 14038, 2]
 // Exports: ChatCheckIcon
 
-// Module 14038 (ChatCheckIcon)
+// Module 14037 (ChatCheckIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChatCheckIcon = function ChatCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14039) /* registerAsset */;
+  obj[0] = require(14038) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

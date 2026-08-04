@@ -1,10 +1,10 @@
-// Module ID: 13730
-// Function ID: 13731
+// Module ID: 13729
+// Function ID: 13730
 // Name: useRequestGatewaySocket
 // Dependencies: [19, 10384, 675, 2]
 // Exports: useRequestGatewaySocket
 
-// Module 13730 (useRequestGatewaySocket)
+// Module 13729 (useRequestGatewaySocket)
 import noop from "noop";
 
 const result = require("setRequestedBy").fileFinishedImporting("modules/gateway/useRequestGatewaySocket.tsx");

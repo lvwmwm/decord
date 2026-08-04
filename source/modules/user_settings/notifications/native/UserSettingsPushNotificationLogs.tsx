@@ -1,10 +1,10 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14648
+// Function ID: 14649
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 676, 21, 4285, 712, 5910, 595, 9787, 1581, 5901, 4812, 1236, 8845, 9789, 12143, 7666, 4281, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4285, 712, 5910, 595, 9787, 1581, 5901, 4812, 1236, 8845, 9789, 12142, 7666, 4281, 2]
 // Exports: default
 
-// Module 14649 (UserSettingsPushNotificationLogs)
+// Module 14648 (UserSettingsPushNotificationLogs)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -228,7 +228,7 @@ export default function UserSettingsPushNotificationLogs() {
       }
     }
   });
-  obj[3] = callback3(first(12143).ShareIcon, {});
+  obj[3] = callback3(first(12142).ShareIcon, {});
   items1[1] = callback3(first(4812).PressableOpacity, obj);
   obj[1] = items1;
   let items2 = [callback4(View, obj), ];

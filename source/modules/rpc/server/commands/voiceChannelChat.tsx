@@ -1,8 +1,8 @@
-// Module ID: 13683
-// Function ID: 13684
-// Dependencies: [4188, 676, 10546, 13684, 10543, 2]
+// Module ID: 13682
+// Function ID: 13683
+// Dependencies: [4188, 676, 10546, 13683, 10543, 2]
 
-// Module 13683
+// Module 13682
 import ME from "ME";
 
 const RPCErrors = ME.RPCErrors;
@@ -14,7 +14,7 @@ let obj = {
     return obj.keys(obj);
   },
   handler(args) {
-    let obj = require(13684) /* toggleVoiceChannelChat */;
+    let obj = require(13683) /* toggleVoiceChannelChat */;
     const result = obj.toggleVoiceChannelChat(args.args.open);
     if (null == result) {
       obj = { errorCode: null };

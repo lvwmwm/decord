@@ -1,9 +1,9 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 16334
+// Function ID: 16335
 // Name: _handleInteractionModalCreate
-// Dependencies: [5, 4322, 7859, 676, 1906, 16336, 1959, 698, 1866, 1208, 16347, 16350, 5229, 2]
+// Dependencies: [5, 4322, 7859, 676, 1906, 16335, 1959, 698, 1866, 1208, 16346, 16349, 5229, 2]
 
-// Module 16335 (_handleInteractionModalCreate)
+// Module 16334 (_handleInteractionModalCreate)
 import onClose from "onClose";
 import addApplication from "addApplication";
 import deleteNonce from "deleteNonce";

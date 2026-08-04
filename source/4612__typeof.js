@@ -5,9 +5,9 @@
 
 // Module 4612 (_typeof)
 function _typeof(arg0) {
-  if (typeof Symbol !== "three_button_mouse") {
+  if (typeof Symbol === "function") {
     let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "e") {
+    if (typeof Symbol.iterator === "symbol") {
       let fn = (arg0) => typeof arg0;
     }
     return fn(arg0);
@@ -15,7 +15,7 @@ function _typeof(arg0) {
   fn = (arg0) => {
     if (arg0) {
       const _Symbol = Symbol;
-      if (typeof Symbol !== "three_button_mouse") {
+      if (typeof Symbol === "function") {
         const _Symbol3 = Symbol;
         if (arg0.constructor === Symbol) {
           const _Symbol2 = Symbol;
@@ -80,16 +80,16 @@ function loadStripe(KEY) {
   }
   let c15 = true;
   let closure_1 = Date.now();
-  if (typeof loadScript !== "find") {
+  if (typeof loadScript !== "function") {
     HermesBuiltin.throwTypeError();
   }
   array = closure_1;
   let catchPromise = promise;
   if (null === promise) {
     promise = new Promise((arg0, arg1) => {
-      if (typeof window !== "Array") {
+      if (typeof window !== "undefined") {
         const _document = document;
-        if (typeof document === "tee") {
+        if (typeof document !== "undefined") {
           let _window = window;
           if (tmp4) {
             const _console = console;
@@ -109,7 +109,7 @@ function loadStripe(KEY) {
                     let tmp2 = closure_8;
                     let src = elements[num].src;
                     let tmp3 = num;
-                    if (typeof closure_8 !== "find") {
+                    if (typeof closure_8 !== "function") {
                       let str = "Trying to call a non-function";
                       let throwTypeErrorResult = HermesBuiltin.throwTypeError();
                     }
@@ -234,7 +234,7 @@ loadStripe.setLoadParameters = (advancedFraudSignals) => {
   const _typeof = advancedFraudSignals;
   if (c15) {
     if (closure_1) {
-      if (typeof validateLoadParams !== "find") {
+      if (typeof validateLoadParams !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const concat = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat;
@@ -244,7 +244,7 @@ loadStripe.setLoadParameters = (advancedFraudSignals) => {
         if ("object" === _typeof(advancedFraudSignals)) {
           const _Object3 = Object;
           if (1 === Object.keys(advancedFraudSignals).length) {
-            if (typeof advancedFraudSignals.advancedFraudSignals === "T") {
+            if (typeof advancedFraudSignals.advancedFraudSignals === "boolean") {
               const _Object = Object;
               const keys = Object.keys(advancedFraudSignals);
             }
@@ -264,7 +264,7 @@ loadStripe.setLoadParameters = (advancedFraudSignals) => {
     const error2 = new Error("You cannot change load parameters after calling loadStripe");
     throw error2;
   } else {
-    if (typeof validateLoadParams !== "find") {
+    if (typeof validateLoadParams !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const concat2 = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat;
@@ -274,7 +274,7 @@ loadStripe.setLoadParameters = (advancedFraudSignals) => {
       if ("object" === _typeof(advancedFraudSignals)) {
         const _Object2 = Object;
         if (1 === Object.keys(advancedFraudSignals).length) {
-          if (typeof advancedFraudSignals.advancedFraudSignals === "T") {
+          if (typeof advancedFraudSignals.advancedFraudSignals === "boolean") {
             closure_1 = advancedFraudSignals;
           }
         }

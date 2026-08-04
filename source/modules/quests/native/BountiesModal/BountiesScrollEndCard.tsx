@@ -1,10 +1,10 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14189
+// Function ID: 14190
 // Name: BountiesScrollEndCardContent
-// Dependencies: [19, 17, 4277, 5128, 21, 4285, 712, 4286, 4289, 10896, 14188, 1236, 4146, 4706, 14191, 14193, 4281, 9777, 14157, 589, 14158, 8581, 2]
+// Dependencies: [19, 17, 4277, 5128, 21, 4285, 712, 4286, 4289, 10896, 14187, 1236, 4146, 4706, 14190, 14192, 4281, 9777, 14156, 589, 14157, 8581, 2]
 // Exports: default
 
-// Module 14190 (BountiesScrollEndCardContent)
+// Module 14189 (BountiesScrollEndCardContent)
 import initialize from "initialize";
 import get_ActivityIndicator from "RetryIcon";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -31,7 +31,7 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
   const tmp = callback2();
   let obj = isActive(10896);
   const isBountiesVerticalScrollExperimentEnabled = obj.useIsBountiesVerticalScrollExperimentEnabled("BountiesScrollEndCard");
-  let obj1 = isActive(14188);
+  let obj1 = isActive(14187);
   const bountyCtaInfo = obj1.getBountyCtaInfo(bounty);
   const intl = isActive(1236).intl;
   const stringResult = intl.string(isActive(1236).t["9UtZAY"]);
@@ -70,7 +70,7 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
     obj4[0] = bounty;
     obj4[1] = sourceQuestContent;
     obj4[2] = !isActive;
-    const items3 = [tmp10(tmp9(14191), obj4), ];
+    const items3 = [tmp10(tmp9(14190), obj4), ];
     const obj5 = { style: null, pointerEvents: "box-none", children: null };
     obj5[0] = tmp.endedCtaButtonsContainer;
     const obj6 = { bounty: null, visible: null, sourceQuestContent: null, onClose: null, showCloseButton: false, disabled: null };
@@ -81,7 +81,7 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
 
     };
     obj6[5] = !isActive;
-    obj5[2] = tmp10(tmp9(14193), obj6);
+    obj5[2] = tmp10(tmp9(14192), obj6);
     items3[1] = tmp10(tmp11, obj5);
     obj3[2] = items3;
     let tmp10Result = tmp8(tmp9(4146).View, obj3);
@@ -175,7 +175,7 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 
 export default function BountiesScrollEndCard(visible) {
   visible = visible.visible;
-  let obj = require(14157) /* apexExperiment */;
+  let obj = require(14156) /* apexExperiment */;
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   let obj1 = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -187,7 +187,7 @@ export default function BountiesScrollEndCard(visible) {
     return callback(closure_15, obj);
   }, []);
   obj = { visible, entranceTiming: require(4289) /* timingNone */.timingStandard, exitTiming: require(4289) /* timingNone */.timingStandard };
-  const visibilityTransition = require(14158) /* useVisibilityTransition */.useVisibilityTransition(obj);
+  const visibilityTransition = require(14157) /* useVisibilityTransition */.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
     obj = { useReducedMotion: null, item: null, entering: null, exiting: null, renderItem: null };

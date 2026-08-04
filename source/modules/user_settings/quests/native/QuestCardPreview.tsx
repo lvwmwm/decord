@@ -1,10 +1,10 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14313
+// Function ID: 14314
 // Name: QuestCardPreview
-// Dependencies: [21, 11090, 5131, 14315, 1236, 14236, 712, 2]
+// Dependencies: [21, 11090, 5131, 14314, 1236, 14235, 712, 2]
 // Exports: QuestCardPreview
 
-// Module 14314 (QuestCardPreview)
+// Module 14313 (QuestCardPreview)
 import { jsx } from "jsxProd";
 
 const result = require("QuestsVisibleMessagesChangedSource").fileFinishedImporting("modules/user_settings/quests/native/QuestCardPreview.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12718
+// Function ID: 12719
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 32, 19, 17, 6797, 1862, 3936, 3937, 5767, 12720, 1876, 676, 6805, 4268, 21, 4285, 5204, 5125, 712, 4693, 5936, 4281, 1236, 3931, 12721, 12722, 12723, 12724, 12725, 12726, 7625, 3989, 589, 12727, 7254, 4221, 1297, 7541, 7542, 5315, 12728, 5732, 5368, 4131, 501, 6780, 7295, 4624, 12729, 1959, 5649, 4706, 6781, 5770, 3946, 4490, 6783, 7300, 5610, 5786, 5598, 4711, 7296, 7255, 1480, 6790, 7553, 5630, 7257, 4604, 7326, 7517, 6775, 698, 7333, 7334, 2]
+// Dependencies: [5, 32, 19, 17, 6797, 1862, 3936, 3937, 5767, 12719, 1876, 676, 6805, 4268, 21, 4285, 5204, 5125, 712, 4693, 5936, 4281, 1236, 3931, 12720, 12721, 12722, 12723, 12724, 12725, 7625, 3989, 589, 12726, 7254, 4221, 1297, 7541, 7542, 5315, 12727, 5732, 5368, 4131, 501, 6780, 7295, 4624, 12728, 1959, 5649, 4706, 6781, 5770, 3946, 4490, 6783, 7300, 5610, 5786, 5598, 4711, 7296, 7255, 1480, 6790, 7553, 5630, 7257, 4604, 7326, 7517, 6775, 698, 7333, 7334, 2]
 // Exports: default
 
-// Module 12719 (BoostPurchaseNitroBanner)
+// Module 12718 (BoostPurchaseNitroBanner)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import initialize from "initialize";
 import importAllResult from "Stack";
@@ -531,8 +531,8 @@ function CurrentPlanRow(subscription) {
                     let obj = {};
                     const merged = Object.assign(arg0);
                     obj.productId = outer1_1;
-                    obj.continueWithUpsell = outer3_3(/* F119401 */ function() { ... });
-                    obj.continueWithDefault = outer3_3(/* F119402 */ function() { ... });
+                    obj.continueWithUpsell = outer3_3(/* F119396 */ function() { ... });
+                    obj.continueWithDefault = outer3_3(/* F119397 */ function() { ... });
                     return outer3_32(closure_0, obj);
                   };
                 });
@@ -792,7 +792,7 @@ obj[23] = { textAlign: "center" };
 let obj5 = { alignItems: "center", paddingTop: require("Themes").space.PX_16, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING };
 obj[24] = { color: require("Themes").unsafe_rawColors.GUILD_BOOSTING_PINK };
 let closure_35 = createCacheKey.createStyles(obj);
-let closure_38 = { [importDefault(12724)]: "imgWumpusNitro", [importDefault(12726)]: "imgWumpusNitroBoost", [importDefault(12723)]: "imgWumpusNitroClassic", [importDefault(12725)]: "imgWumpusNitroClassicBoost", [importDefault(12722)]: "imgWumpusNitroTier0", [importDefault(12721)]: "imgBoost" };
+let closure_38 = { [importDefault(12723)]: "imgWumpusNitro", [importDefault(12725)]: "imgWumpusNitroBoost", [importDefault(12722)]: "imgWumpusNitroClassic", [importDefault(12724)]: "imgWumpusNitroClassicBoost", [importDefault(12721)]: "imgWumpusNitroTier0", [importDefault(12720)]: "imgBoost" };
 items = [
   {
     id: "premium",

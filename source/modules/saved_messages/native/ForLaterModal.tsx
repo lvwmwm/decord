@@ -1,7 +1,7 @@
 // Module ID: 8191
 // Function ID: 8192
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4285, 712, 1236, 8192, 5245, 8193, 500, 5238, 4490, 12465, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1236, 8192, 5245, 8193, 500, 5238, 4490, 12464, 2]
 // Exports: default
 
 // Module 8191 (ForLaterModal)
@@ -55,7 +55,7 @@ export default function ForLaterModal(type) {
   const items = [closure_4(View, obj), ];
   const obj1 = { type, onClose: null };
   obj1[1] = importDefault(4490).pop;
-  items[1] = closure_4(importDefault(12465), obj1, type);
+  items[1] = closure_4(importDefault(12464), obj1, type);
   obj[1] = items;
   return closure_5(View, obj);
 };

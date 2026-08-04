@@ -1,10 +1,10 @@
-// Module ID: 15161
-// Function ID: 15162
+// Module ID: 15160
+// Function ID: 15161
 // Name: AddFavoriteCategoryActionSheet
 // Dependencies: [32, 19, 1410, 21, 4285, 712, 1865, 9628, 4253, 5338, 5337, 1236, 7713, 4695, 2]
 // Exports: openAddFavoriteCategoryActionSheet
 
-// Module 15161 (AddFavoriteCategoryActionSheet)
+// Module 15160 (AddFavoriteCategoryActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_5 } from "date";

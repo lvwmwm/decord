@@ -1,10 +1,10 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15353
+// Function ID: 15354
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4103, 5123, 589, 11104, 15355, 8238, 5124, 1236, 2]
+// Dependencies: [19, 4103, 5123, 589, 11104, 15354, 8238, 5124, 1236, 2]
 // Exports: default
 
-// Module 15354 (useGuildsBarCreatePendingFolderNode)
+// Module 15353 (useGuildsBarCreatePendingFolderNode)
 import noop from "noop";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import set from "set";
@@ -28,7 +28,7 @@ export default function useGuildsBarCreatePendingFolderNode() {
   }, items2);
   if (arr2.length > 0) {
     obj = { folderId: null, folderName: null, expanded: null, guildIds: null };
-    obj[0] = tmp2(15355).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER;
+    obj[0] = tmp2(15354).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER;
     const intl = tmp2(1236).intl;
     obj[1] = intl.string(tmp2(1236).t["scsU+l"]);
     obj[2] = stateFromStores1;

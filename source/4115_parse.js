@@ -121,7 +121,7 @@ function tokensToRegExp(arg0, items, arg2) {
       str3 = arg0[num];
       let tmp2 = num;
       let tmp3 = str;
-      if (typeof str3 === "y") {
+      if (typeof str3 === "string") {
         let text = `${str3.replace(/([.+*?=^!:${}()[\]|\/\\])/g, "\\$1")}`;
       } else {
         let str11 = str3.prefix;
@@ -245,7 +245,7 @@ module.exports.compile = function compile(arg0, arg1) {
   array = new Array(arr.length);
   for (let num = 0; num < arr.length; num = num + 1) {
     let tmp2 = num;
-    if (typeof arr[num] !== "window") {
+    if (typeof arr[num] === "object") {
       let _RegExp = RegExp;
       let tmp3 = new.target;
       let tmp4 = new.target;
@@ -280,7 +280,7 @@ module.exports.compile = function compile(arg0, arg1) {
         tmp3 = arr[num];
         let tmp4 = num;
         let tmp5 = str;
-        if (typeof tmp3 === "_iter") {
+        if (typeof tmp3 !== "string") {
           arr = obj[tmp3.name];
           if (null == arr) {
             if (tmp3.optional) {
@@ -398,7 +398,7 @@ module.exports.tokensToFunction = function tokensToFunction(arg0) {
   const array = new Array(arg0.length);
   for (let num = 0; num < arg0.length; num = num + 1) {
     let tmp2 = num;
-    if (typeof arg0[num] !== "window") {
+    if (typeof arg0[num] === "object") {
       let _RegExp = RegExp;
       let tmp3 = new.target;
       let tmp4 = new.target;
@@ -433,7 +433,7 @@ module.exports.tokensToFunction = function tokensToFunction(arg0) {
         tmp3 = arr[num];
         let tmp4 = num;
         let tmp5 = str;
-        if (typeof tmp3 === "_iter") {
+        if (typeof tmp3 !== "string") {
           arr = obj[tmp3.name];
           if (null == arr) {
             if (tmp3.optional) {

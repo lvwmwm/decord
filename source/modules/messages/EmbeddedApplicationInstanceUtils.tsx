@@ -1,10 +1,10 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12521
+// Function ID: 12522
 // Name: getJoinOrStartButtonState
 // Dependencies: [19, 1236, 8148, 10533, 2]
 // Exports: useJoinOrStartButtonState
 
-// Module 12522 (getJoinOrStartButtonState)
+// Module 12521 (getJoinOrStartButtonState)
 import noop from "noop";
 
 const require = arg1;

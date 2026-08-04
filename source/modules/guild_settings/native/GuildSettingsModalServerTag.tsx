@@ -1,10 +1,10 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16540
+// Function ID: 16541
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 8923, 1862, 8944, 676, 7862, 21, 4285, 712, 1480, 8946, 589, 8924, 8076, 8925, 8943, 3985, 1236, 11752, 4176, 5238, 5917, 1553, 4624, 1297, 5731, 12120, 4281, 5649, 5650, 5315, 4693, 13170, 7777, 13168, 16542, 2]
+// Dependencies: [5, 32, 19, 17, 8923, 1862, 8944, 676, 7862, 21, 4285, 712, 1480, 8946, 589, 8924, 8076, 8925, 8943, 3985, 1236, 11752, 4176, 5238, 5917, 1553, 4624, 1297, 5731, 12119, 4281, 5649, 5650, 5315, 4693, 13169, 7777, 13167, 16541, 2]
 // Exports: default
 
-// Module 16541 (GuildSettingsModalServerTag)
+// Module 16540 (GuildSettingsModalServerTag)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import TableSwitchRow from "TableSwitchRow";
 import presentAddedFriendToast from "presentAddedFriendToast";
@@ -338,7 +338,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         obj[0] = function onRetry() {
           return guildId(_undefined[17]).getGuildProfile(guildId, true);
         };
-        return callback(tmp26(12120), obj);
+        return callback(tmp26(12119), obj);
       } else if (null == stateFromStores1) {
         return callback(tmp2(5731).SceneLoadingIndicator, {});
       } else {
@@ -385,7 +385,7 @@ export default function GuildSettingsModalServerTag(guildId) {
             let badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             obj5[2] = badgeColorSecondary;
             ({ SIZE_16: obj15[3], SIZE_16: obj15[4] } = c12);
-            tmp34Result = tmp34(tmp2(13170).GuildBadge, obj5);
+            tmp34Result = tmp34(tmp2(13169).GuildBadge, obj5);
           }
           const items12 = [tmp34Result, tmp31];
           obj4[3] = items12;
@@ -416,14 +416,14 @@ export default function GuildSettingsModalServerTag(guildId) {
           obj10[0] = guildId;
           ({ tag: obj21[1], badge: obj21[2], badgeColorPrimary: obj21[3], badgeColorSecondary: obj21[4] } = stateFromStores1);
           obj10[5] = result1;
-          items14[3] = tmp34(tmp26(13168), obj10);
+          items14[3] = tmp34(tmp26(13167), obj10);
           obj7[1] = items14;
           let tmp40 = obj7;
         } else {
           const obj11 = { guildId: null, onUnlockPress: null };
           obj11[0] = guildId;
           obj11[1] = callback2;
-          const items15 = [tmp34(tmp26(16542), obj11), tmp33Result];
+          const items15 = [tmp34(tmp26(16541), obj11), tmp33Result];
           obj7[1] = items15;
           tmp40 = obj7;
         }

@@ -228,7 +228,7 @@ export default function usePanGesture(lowerBounds) {
         if (0 !== num) {
           tmp10 = onChange;
           value1 = obj8.get();
-          if (typeof onChange !== "find") {
+          if (typeof onChange !== "function") {
             str2 = "Trying to call a non-function";
             throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }
@@ -244,7 +244,7 @@ export default function usePanGesture(lowerBounds) {
           result1 = obj2.set(obj5.withSpring(tmp4, obj));
         } else {
           tmp5 = onEnd;
-          if (typeof onEnd !== "find") {
+          if (typeof onEnd !== "function") {
             str = "Trying to call a non-function";
             throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
           }

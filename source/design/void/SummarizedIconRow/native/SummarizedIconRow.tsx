@@ -1,10 +1,10 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13255
+// Function ID: 13256
 // Name: OverflowSquircle
 // Dependencies: [19, 17, 21, 4285, 712, 4281, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 13256 (OverflowSquircle)
+// Module 13255 (OverflowSquircle)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

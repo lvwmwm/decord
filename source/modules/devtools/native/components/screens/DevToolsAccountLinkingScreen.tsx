@@ -1,10 +1,10 @@
-// Module ID: 14941
-// Function ID: 14942
+// Module ID: 14940
+// Function ID: 14941
 // Name: DevToolsAccountLinkingScreen
 // Dependencies: [32, 19, 17, 4322, 5218, 1862, 4102, 21, 4285, 712, 589, 5618, 1581, 5616, 5613, 5649, 5315, 4281, 7713, 4695, 2]
 // Exports: default
 
-// Module 14941 (DevToolsAccountLinkingScreen)
+// Module 14940 (DevToolsAccountLinkingScreen)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Text";

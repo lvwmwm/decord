@@ -1,10 +1,10 @@
-// Module ID: 11995
-// Function ID: 11996
+// Module ID: 11994
+// Function ID: 11995
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 11987, 21, 4285, 5235, 5238, 11996, 503, 11999, 12002, 12004, 12005, 12006, 12009, 5272, 1480, 5598, 12011, 5665, 1236, 2]
+// Dependencies: [19, 11986, 21, 4285, 5235, 5238, 11995, 503, 11998, 12001, 12003, 12004, 12005, 12008, 5272, 1480, 5598, 12010, 5665, 1236, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 11995 (HubEmailConnectionModal)
+// Module 11994 (HubEmailConnectionModal)
 import "getSystemLocale";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import { jsx } from "jsxProd";
@@ -81,7 +81,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11996), {});
+        return navigation(callback(11995), {});
       }
     };
     obj2[outer1_3.VERIFY_EMAIL] = {
@@ -96,7 +96,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(11999), {});
+        return navigation(callback(11998), {});
       }
     };
     obj2[outer1_3.EMAIL_WAITLIST] = {
@@ -106,7 +106,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12002), {});
+        return navigation(callback(12001), {});
       }
     };
     obj2[outer1_3.SUBMIT_SCHOOL] = {
@@ -116,7 +116,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12004), {});
+        return navigation(callback(12003), {});
       }
     };
     obj2[outer1_3.SELECT_SCHOOL] = {
@@ -126,7 +126,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12005), {});
+        return navigation(callback(12004), {});
       }
     };
     obj2[outer1_3.VERIFY_PIN] = {
@@ -136,7 +136,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12006), {});
+        return navigation(callback(12005), {});
       }
     };
     obj2[outer1_3.SELECT_SCHOOL_SEARCH] = {
@@ -144,7 +144,7 @@ export default function HubEmailConnectionModal(arg0) {
       headerShown: false,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(callback(12009), {});
+        return navigation(callback(12008), {});
       }
     };
     obj1[0] = obj2;

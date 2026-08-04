@@ -1,9 +1,9 @@
-// Module ID: 16016
-// Function ID: 16017
+// Module ID: 16015
+// Function ID: 16016
 // Name: SoundButtonEmoji
-// Dependencies: [19, 17, 1874, 16010, 21, 4146, 4285, 712, 500, 4812, 4694, 5301, 11254, 16017, 589, 16018, 5610, 5630, 5868, 3931, 8181, 8184, 3986, 10846, 1236, 16020, 4281, 4804, 2]
+// Dependencies: [19, 17, 1874, 16009, 21, 4146, 4285, 712, 500, 4812, 4694, 5301, 11254, 16016, 589, 16017, 5610, 5630, 5868, 3931, 8181, 8184, 3986, 10846, 1236, 16019, 4281, 4804, 2]
 
-// Module 16016 (SoundButtonEmoji)
+// Module 16015 (SoundButtonEmoji)
 import importAllResult from "getPremiumPlanItem";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";

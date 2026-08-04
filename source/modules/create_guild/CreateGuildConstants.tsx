@@ -1,10 +1,10 @@
-// Module ID: 11975
-// Function ID: 11976
+// Module ID: 11974
+// Function ID: 11975
 // Name: GuildTemplateId
 // Dependencies: [676, 1236, 3918, 506, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 11975 (GuildTemplateId)
+// Module 11974 (GuildTemplateId)
 import ME from "ME";
 
 let c3;

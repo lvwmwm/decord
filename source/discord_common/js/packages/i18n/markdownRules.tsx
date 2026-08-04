@@ -1,9 +1,9 @@
-// Module ID: 16214
-// Function ID: 16215
+// Module ID: 16213
+// Function ID: 16214
 // Name: link
 // Dependencies: [3984, 2]
 
-// Module 16214 (link)
+// Module 16213 (link)
 import t from "t";
 import t from "t";
 
@@ -36,7 +36,7 @@ const obj1 = { order: text.order, match: null, parse: null, react: null };
 obj1[1] = t.inlineRegex(/^!!(\d+?)!!/);
 obj1[2] = function parse(arg0, arg1, arg2) {
   let content = str;
-  if (typeof arg2.unsafeContext[arg0[1]] !== "y") {
+  if (typeof arg2.unsafeContext[arg0[1]] !== "string") {
     let str2 = "";
     if (null != str) {
       str2 = str.toString();

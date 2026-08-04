@@ -1,10 +1,10 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12423
+// Function ID: 12424
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 3922, 676, 21, 4285, 712, 3958, 589, 12425, 4281, 4695, 8308, 1236, 2]
+// Dependencies: [32, 19, 17, 3922, 676, 21, 4285, 712, 3958, 589, 12424, 4281, 4695, 8308, 1236, 2]
 // Exports: default
 
-// Module 12424 (FriendRequestNote)
+// Module 12423 (FriendRequestNote)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

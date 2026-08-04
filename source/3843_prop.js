@@ -6,7 +6,7 @@
 // Module 3843 (prop)
 if (Intl.ListFormat) {
   const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "find") {
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
     const _Intl2 = Intl;
     let obj = { data: null, locale: "fi" };
     obj = { conjunction: null, disjunction: null, unit: null };

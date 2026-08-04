@@ -1,10 +1,10 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 15819
+// Function ID: 15820
 // Name: PendingMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4285, 712, 1236, 3986, 8256, 4293, 4490, 11715, 698, 4812, 15821, 1297, 9793, 14074, 7777, 1581, 15826, 15828, 11713, 15831, 500, 4281, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 1236, 3986, 8256, 4293, 4490, 11715, 698, 4812, 15820, 1297, 9793, 14073, 7777, 1581, 15825, 15827, 11713, 15830, 500, 4281, 2]
 // Exports: default
 
-// Module 15820 (PendingMessageRequestRow)
+// Module 15819 (PendingMessageRequestRow)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
@@ -235,7 +235,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
     obj[2] = obj2;
     obj[3] = function renderItem(item) {
       item = item.item;
-      if (typeof item === "y") {
+      if (typeof item === "string") {
         let obj = { style: null, children: null };
         obj[0] = _undefined.sectionContainer;
         obj = { variant: "eyebrow", color: "text-default", children: null };

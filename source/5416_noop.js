@@ -6,8 +6,8 @@
 // Module 5416 (noop)
 import importDefaultResult from "noop";
 
-let tmp3 = typeof window === "Array";
-if (typeof window !== "Array") {
+let tmp3 = typeof window === "undefined";
+if (typeof window !== "undefined") {
   const _window2 = window;
   tmp3 = undefined === window.document;
 }
@@ -15,8 +15,8 @@ if (!tmp3) {
   const _window = window;
   tmp3 = undefined === window.document.createElement;
 }
-let tmp4 = typeof navigator === "tee";
-if (typeof navigator !== "Array") {
+let tmp4 = typeof navigator !== "undefined";
+if (typeof navigator !== "undefined") {
   const _navigator = navigator;
   tmp4 = "ReactNative" === navigator.product;
 }

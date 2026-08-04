@@ -1,10 +1,10 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14942
+// Function ID: 14943
 // Name: handleResetInAppNotificationExpandNux
-// Dependencies: [19, 17, 5187, 1376, 3923, 1372, 1862, 1931, 1874, 676, 21, 4285, 712, 3986, 7772, 9683, 9685, 1355, 1358, 9769, 4951, 11, 1581, 5649, 5315, 13760, 5322, 1297, 2]
+// Dependencies: [19, 17, 5187, 1376, 3923, 1372, 1862, 1931, 1874, 676, 21, 4285, 712, 3986, 7772, 9683, 9685, 1355, 1358, 9769, 4951, 11, 1581, 5649, 5315, 13759, 5322, 1297, 2]
 // Exports: default
 
-// Module 14943 (handleResetInAppNotificationExpandNux)
+// Module 14942 (handleResetInAppNotificationExpandNux)
 import MAX_TIMES_SHOWN from "MAX_TIMES_SHOWN";
 import { ScrollView } from "updateUserGuildSettings";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
@@ -652,7 +652,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
   items = [tmp.content, { paddingBottom: tmp.content.padding + importDefault(1581)().bottom }];
   obj = { title: "Expand NUX", hasIcons: true, children: null };
   obj = { label: "Reset Expand NUX", subLabel: "Resets in app notification expand NUX dismissible content.", onPress: handleResetInAppNotificationExpandNux, icon: null, trailing: null };
-  obj[3] = callback(_require(13760).BeakerIcon, {});
+  obj[3] = callback(_require(13759).BeakerIcon, {});
   obj[4] = callback(_require(5322).TableRowArrow, {});
   obj[2] = callback(_require(5315).TableRow, obj);
   const items1 = [callback(_require(5649).TableRowGroup, obj), , , ];

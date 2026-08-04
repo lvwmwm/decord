@@ -127,7 +127,7 @@ export default function HeaderSegment(headerTitle) {
   if (headerBackTitle) {
     tmp12 = first;
   }
-  if (typeof height !== "V") {
+  if (typeof height === "number") {
     defaultHeaderHeight = height;
   }
   const tmp6Result = tmp6(styleInterpolator, layout, current, next, first1, tmp12, defaultHeaderHeight);
@@ -166,7 +166,7 @@ export default function HeaderSegment(headerTitle) {
   obj = {
     modal,
     layout,
-    headerTitle: typeof headerTitle === "three_button_mouse" ? ((arg0) => {
+    headerTitle: typeof headerTitle !== "function" ? ((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
       obj.onLayout = handleTitleLayout;

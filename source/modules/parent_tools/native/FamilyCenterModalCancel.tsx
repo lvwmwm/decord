@@ -1,10 +1,10 @@
-// Module ID: 14078
-// Function ID: 14079
+// Module ID: 14077
+// Function ID: 14078
 // Name: FamilyCenterModalCancelScreen
-// Dependencies: [19, 17, 21, 4285, 712, 7260, 4490, 3985, 1236, 11236, 38, 7757, 7758, 14073, 7837, 4281, 2285, 14043, 11246, 5117, 4695, 5238, 11248, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 7260, 4490, 3985, 1236, 11236, 38, 7757, 7758, 14072, 7837, 4281, 2285, 14042, 11246, 5117, 4695, 5238, 11248, 2]
 // Exports: default
 
-// Module 14078 (FamilyCenterModalCancelScreen)
+// Module 14077 (FamilyCenterModalCancelScreen)
 import ButtonGroup from "ButtonGroup";
 import { View } from "FamilyCenterUsernameHeader";
 import jsxProd from "HeaderBackImage";
@@ -40,12 +40,12 @@ function FamilyCenterModalCancelScreen(otherUser) {
   const obj2 = { otherUser, iconSrc: null };
   const tmp2 = cancelLinkRequest(7260)();
   obj2[1] = cancelLinkRequest(7837);
-  const items1 = [callback(cancelLinkRequest(14073), obj2), , ];
+  const items1 = [callback(cancelLinkRequest(14072), obj2), , ];
   const obj3 = { style: tmp.headerText, variant: "text-lg/bold", children: null };
   let intl = otherUser(1236).intl;
   obj3[2] = intl.string(cancelLinkRequest(2285).HynllX);
   items1[1] = callback(otherUser(4281).Text, obj3);
-  items1[2] = callback(cancelLinkRequest(14043), { user: otherUser });
+  items1[2] = callback(cancelLinkRequest(14042), { user: otherUser });
   obj1[1] = items1;
   obj[0] = callback2(View, obj1);
   const items2 = [callback(otherUser(7758).ModalContent, obj), ];

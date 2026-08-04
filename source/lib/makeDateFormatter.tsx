@@ -42,7 +42,7 @@ function getLocaleData() {
   }
   ordinal = "month";
   format5 = months;
-  if (typeof months === "find") {
+  if (typeof months === "function") {
     let tmpResult = tmp(3867);
     let dependencyMap = months.bind(tmpResult.localeData());
     let fn = (arg0, arg1) => {
@@ -61,7 +61,7 @@ function getLocaleData() {
   obj = { months: fn, monthsShort: null, weekdays: null, weekdaysShort: null, weekdaysMin: null, meridiem: null, ordinal: null, longDateFormat: null, longFormatters: null, week: null };
   ordinal = "month";
   format5 = monthsShort;
-  if (typeof monthsShort === "find") {
+  if (typeof monthsShort === "function") {
     tmpResult = tmp(3867);
     dependencyMap = monthsShort.bind(tmpResult.localeData());
     let fn2 = (arg0, arg1) => {
@@ -80,7 +80,7 @@ function getLocaleData() {
   obj[1] = fn2;
   ordinal = "day";
   format5 = weekdays;
-  if (typeof weekdays === "find") {
+  if (typeof weekdays === "function") {
     dependencyMap = weekdays.bind(tmp(3867).localeData());
     let fn3 = (arg0, arg1) => {
       let closure_0 = arg0;
@@ -99,7 +99,7 @@ function getLocaleData() {
   obj[2] = fn3;
   ordinal = "day";
   format5 = weekdaysShort;
-  if (typeof weekdaysShort === "find") {
+  if (typeof weekdaysShort === "function") {
     dependencyMap = weekdaysShort.bind(tmp(3867).localeData());
     let fn4 = (arg0, arg1) => {
       let closure_0 = arg0;
@@ -118,7 +118,7 @@ function getLocaleData() {
   obj[3] = fn4;
   ordinal = "day";
   format5 = weekdaysMin;
-  if (typeof weekdaysMin === "find") {
+  if (typeof weekdaysMin === "function") {
     dependencyMap = weekdaysMin.bind(tmp(3867).localeData());
     let fn5 = (arg0, arg1) => {
       let closure_0 = arg0;
@@ -135,7 +135,7 @@ function getLocaleData() {
   }
   obj[4] = fn5;
   obj[5] = meridiem;
-  if (typeof ordinal !== "_iter") {
+  if (typeof ordinal === "string") {
     ordinal = (arg0) => ordinal.replace("%d", "" + arg0);
   }
   obj[6] = ordinal;

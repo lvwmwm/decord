@@ -1,10 +1,10 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15294
+// Function ID: 15295
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 15282, 1297, 8103, 2]
+// Dependencies: [17, 15281, 1297, 8103, 2]
 // Exports: default
 
-// Module 15295 (computeGuildsBarCutout)
+// Module 15294 (computeGuildsBarCutout)
 import { PixelRatio } from "get ActivityIndicator";
 import { GUILD_ITEM_SIZE } from "GUILD_ITEM_SIZE";
 

@@ -1,9 +1,9 @@
-// Module ID: 14114
-// Function ID: 14115
+// Module ID: 14113
+// Function ID: 14114
 // Name: Integration
-// Dependencies: [5, 32, 19, 17, 4964, 1862, 676, 5092, 21, 4285, 1297, 712, 5204, 5090, 589, 4695, 1236, 4281, 5661, 4966, 5650, 3997, 14115, 10340, 4623, 4713, 10406, 14116, 14119, 5091, 10962, 3982, 1945, 4812, 9940, 14121, 2835, 1416, 4131, 4693, 7837, 5315, 5649, 2]
+// Dependencies: [5, 32, 19, 17, 4964, 1862, 676, 5092, 21, 4285, 1297, 712, 5204, 5090, 589, 4695, 1236, 4281, 5661, 4966, 5650, 3997, 14114, 10340, 4623, 4713, 10406, 14115, 14118, 5091, 10962, 3982, 1945, 4812, 9940, 14120, 2835, 1416, 4131, 4693, 7837, 5315, 5649, 2]
 
-// Module 14114 (Integration)
+// Module 14113 (Integration)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import combined from "combined";
 import importAllResult from "getPlatformUserUrl";
@@ -162,7 +162,7 @@ const PureComponent = importAllResult.PureComponent;
 class ConnectedAccount extends PureComponent {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f110115 = applyArgumentsResult;
+    f110111 = applyArgumentsResult;
     obj = { isVisible: 1 === applyArgumentsResult.props.account.visibility, isMetadataVisible: 1 === applyArgumentsResult.props.account.metadataVisibility, inProgressVisibility: null, inProgressMetadataVisibility: null, showActivity: applyArgumentsResult.props.account.showActivity, friendSync: applyArgumentsResult.props.account.friendSync, metadataRefreshing: false, metadataAlreadyRefreshed: false };
     applyArgumentsResult.state = obj;
     applyArgumentsResult.handleDisconnect = function handleDisconnect() {
@@ -209,100 +209,54 @@ class ConnectedAccount extends PureComponent {
       const account = lib.props.account;
       applyArgumentsResult(outer1_2[13]).disconnect(account.type, account.id);
     };
-    f110115 = undefined;
+    f110111 = undefined;
     closure_1 = applyArgumentsResult;
-    f110115 = RowSwitch((arg0) => {
+    f110111 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
       let c3 = 0;
       return (function*(arg0) {
-        if (c5 === 2) {
-          c5 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp6 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                let closure_2 = tmp3;
-                const state = tmp7;
-                const account = outer1_1.props.account;
-                let num5 = 0;
-                if (closure_0) {
-                  num5 = 1;
-                }
-                if (closure_0) {
-                  if (!account.verified) {
-                    const obj1 = { inProgressVisibility: null };
-                    obj1[0] = num5;
-                    outer1_1.setState(obj1);
-                    const obj2 = { platformType: null };
-                    obj2[0] = account.type;
-                    outer1_1(outer1_2[26])(obj2);
-                    c5 = 3;
-                    const obj3 = { value: null, done: true };
-                    obj3[0] = undefined;
-                    return obj3;
-                  }
-                }
-                const obj4 = { isVisible: null };
-                obj4[0] = closure_0;
-                outer1_1.setState(obj4);
-                let c3 = 1;
-                let obj6 = outer1_1(outer1_2[13]);
-                c4 = 2;
-                c5 = 1;
-                const obj5 = { value: null, done: false };
-                obj5[0] = obj6.setVisibility(account.type, account.id, num5);
-                return obj5;
-              }
-            } else {
-              if (1 === tmp7) {
-                c3 = 0;
-                obj6 = { isVisible: null };
-                obj6[0] = !closure_0;
-                state.setState(obj6);
-                c5 = 3;
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 !== 2) {
-                c3 = 0;
-              }
-              c3 = 0;
-              c5 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            }
-          } catch (tmp22) {
-            if (tmp4 === c3) {
-              c5 = tmp2;
-              throw tmp22;
-            } else {
-              c4 = tmp;
-            }
+        let closure_2 = tmp3;
+        const account = outer1_1.props.account;
+        let num5 = 0;
+        if (closure_0) {
+          num5 = 1;
+        }
+        if (closure_0) {
+          if (!account.verified) {
+            const obj1 = { inProgressVisibility: null };
+            obj1[0] = num5;
+            outer1_1.setState(obj1);
+            const obj2 = { platformType: null };
+            obj2[0] = account.type;
+            outer1_1(outer1_2[26])(obj2);
+            let c5 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = undefined;
+            return obj3;
           }
         }
+        const obj4 = { isVisible: null };
+        obj4[0] = closure_0;
+        outer1_1.setState(obj4);
+        let c3 = 1;
+        let obj6 = outer1_1(outer1_2[13]);
+        yield obj6.setVisibility(account.type, account.id, num5);
+        if (1 === tmp7) {
+          c3 = 0;
+          obj6 = { isVisible: null };
+          obj6[0] = !closure_0;
+          state.setState(obj6);
+          c5 = 3;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c3 = 0;
+        }
+        c3 = 0;
+        return arg1;
       })();
     });
     applyArgumentsResult.handleVisibilityChange = function() {
@@ -315,100 +269,54 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f110115 = undefined;
+    f110111 = undefined;
     closure_1 = applyArgumentsResult;
-    f110115 = RowSwitch((arg0) => {
+    f110111 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
       let c3 = 0;
       return (function*(arg0) {
-        if (c5 === 2) {
-          c5 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp6 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                let closure_2 = tmp3;
-                const state = tmp7;
-                const account = outer1_1.props.account;
-                let num5 = 0;
-                if (closure_0) {
-                  num5 = 1;
-                }
-                if (closure_0) {
-                  if (!account.verified) {
-                    const obj1 = { inProgressMetadataVisibility: null };
-                    obj1[0] = num5;
-                    outer1_1.setState(obj1);
-                    const obj2 = { platformType: null };
-                    obj2[0] = account.type;
-                    outer1_1(outer1_2[26])(obj2);
-                    c5 = 3;
-                    const obj3 = { value: null, done: true };
-                    obj3[0] = undefined;
-                    return obj3;
-                  }
-                }
-                const obj4 = { isMetadataVisible: null };
-                obj4[0] = closure_0;
-                outer1_1.setState(obj4);
-                let c3 = 1;
-                let obj6 = outer1_1(outer1_2[13]);
-                c4 = 2;
-                c5 = 1;
-                const obj5 = { value: null, done: false };
-                obj5[0] = obj6.setMetadataVisibility(account.type, account.id, num5);
-                return obj5;
-              }
-            } else {
-              if (1 === tmp7) {
-                c3 = 0;
-                obj6 = { isMetadataVisible: null };
-                obj6[0] = !closure_0;
-                state.setState(obj6);
-                c5 = 3;
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 !== 2) {
-                c3 = 0;
-              }
-              c3 = 0;
-              c5 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            }
-          } catch (tmp22) {
-            if (tmp4 === c3) {
-              c5 = tmp2;
-              throw tmp22;
-            } else {
-              c4 = tmp;
-            }
+        let closure_2 = tmp3;
+        const account = outer1_1.props.account;
+        let num5 = 0;
+        if (closure_0) {
+          num5 = 1;
+        }
+        if (closure_0) {
+          if (!account.verified) {
+            const obj1 = { inProgressMetadataVisibility: null };
+            obj1[0] = num5;
+            outer1_1.setState(obj1);
+            const obj2 = { platformType: null };
+            obj2[0] = account.type;
+            outer1_1(outer1_2[26])(obj2);
+            let c5 = 3;
+            const obj3 = { value: null, done: true };
+            obj3[0] = undefined;
+            return obj3;
           }
         }
+        const obj4 = { isMetadataVisible: null };
+        obj4[0] = closure_0;
+        outer1_1.setState(obj4);
+        let c3 = 1;
+        let obj6 = outer1_1(outer1_2[13]);
+        yield obj6.setMetadataVisibility(account.type, account.id, num5);
+        if (1 === tmp7) {
+          c3 = 0;
+          obj6 = { isMetadataVisible: null };
+          obj6[0] = !closure_0;
+          state.setState(obj6);
+          c5 = 3;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c3 = 0;
+        }
+        c3 = 0;
+        return arg1;
       })();
     });
     applyArgumentsResult.handleMetadataVisibilityChange = function() {
@@ -421,81 +329,35 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f110115 = undefined;
+    f110111 = undefined;
     closure_1 = applyArgumentsResult;
-    f110115 = RowSwitch((arg0) => {
+    f110111 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
       let c3 = 0;
       return (function*(arg0) {
-        if (c5 === 2) {
+        let closure_2 = tmp3;
+        const account = outer1_1.props.account;
+        const obj1 = { friendSync: null };
+        obj1[0] = closure_0;
+        outer1_1.setState(obj1);
+        let c3 = 1;
+        yield outer1_1(outer1_2[13]).setFriendSync(account.type, account.id, closure_0);
+        if (1 === tmp7) {
+          c3 = 0;
+          const obj3 = { friendSync: null };
+          obj3[0] = !closure_0;
+          state.setState(obj3);
+          let c5 = 3;
+        } else if (arg0 === 1) {
           c5 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp6 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                let closure_2 = tmp3;
-                const state = tmp7;
-                const account = outer1_1.props.account;
-                const obj1 = { friendSync: null };
-                obj1[0] = closure_0;
-                outer1_1.setState(obj1);
-                let c3 = 1;
-                c4 = 2;
-                c5 = 1;
-                const obj2 = { value: null, done: false };
-                obj2[0] = outer1_1(outer1_2[13]).setFriendSync(account.type, account.id, closure_0);
-                return obj2;
-              }
-            } else {
-              if (1 === tmp7) {
-                c3 = 0;
-                const obj3 = { friendSync: null };
-                obj3[0] = !closure_0;
-                state.setState(obj3);
-                c5 = 3;
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 !== 2) {
-                c3 = 0;
-              }
-              c3 = 0;
-              c5 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            }
-          } catch (tmp13) {
-            if (tmp4 === c3) {
-              c5 = tmp2;
-              throw tmp13;
-            } else {
-              c4 = tmp;
-            }
-          }
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c3 = 0;
         }
+        c3 = 0;
+        return arg1;
       })();
     });
     applyArgumentsResult.handleFriendSyncChange = function() {
@@ -508,81 +370,35 @@ class ConnectedAccount extends PureComponent {
       }
       return applyArgumentsResult;
     };
-    f110115 = undefined;
+    f110111 = undefined;
     closure_1 = applyArgumentsResult;
-    f110115 = RowSwitch((arg0) => {
+    f110111 = RowSwitch((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
       let c3 = 0;
       return (function*(arg0) {
-        if (c5 === 2) {
+        let closure_2 = tmp3;
+        const account = outer1_1.props.account;
+        const obj1 = { showActivity: null };
+        obj1[0] = closure_0;
+        outer1_1.setState(obj1);
+        let c3 = 1;
+        yield outer1_1(outer1_2[13]).setShowActivity(account.type, account.id, closure_0);
+        if (1 === tmp7) {
+          c3 = 0;
+          const obj3 = { showActivity: null };
+          obj3[0] = !closure_0;
+          state.setState(obj3);
+          let c5 = 3;
+        } else if (arg0 === 1) {
           c5 = 3;
-          HermesBuiltin.throwTypeError();
-        } else if (tmp6 === 3) {
-          if (arg0 === 1) {
-            throw arg1;
-          } else if (arg0 === 2) {
-            let obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            return { value: "HermesInternal", done: null };
-          }
-        } else {
-          try {
-            c5 = 2;
-            if (0 === c4) {
-              if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                obj = { value: null, done: true };
-                obj[0] = arg1;
-                return obj;
-              } else {
-                let closure_2 = tmp3;
-                const state = tmp7;
-                const account = outer1_1.props.account;
-                const obj1 = { showActivity: null };
-                obj1[0] = closure_0;
-                outer1_1.setState(obj1);
-                let c3 = 1;
-                c4 = 2;
-                c5 = 1;
-                const obj2 = { value: null, done: false };
-                obj2[0] = outer1_1(outer1_2[13]).setShowActivity(account.type, account.id, closure_0);
-                return obj2;
-              }
-            } else {
-              if (1 === tmp7) {
-                c3 = 0;
-                const obj3 = { showActivity: null };
-                obj3[0] = !closure_0;
-                state.setState(obj3);
-                c5 = 3;
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 !== 2) {
-                c3 = 0;
-              }
-              c3 = 0;
-              c5 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            }
-          } catch (tmp13) {
-            if (tmp4 === c3) {
-              c5 = tmp2;
-              throw tmp13;
-            } else {
-              c4 = tmp;
-            }
-          }
+          throw arg1;
+        } else if (arg0 !== 2) {
+          c3 = 0;
         }
+        c3 = 0;
+        return arg1;
       })();
     });
     applyArgumentsResult.handleShowActivityChange = function() {
@@ -633,11 +449,11 @@ prototype["renderUpsell"] = function renderUpsell() {
   if (account.twoWayLink) {
     return null;
   } else if (account.type === constants.XBOX) {
-    let tmp2 = callback3(require(14116) /* XboxTwoWayLinkUpsell */.XboxTwoWayLinkUpsell, {});
+    let tmp2 = callback3(require(14115) /* XboxTwoWayLinkUpsell */.XboxTwoWayLinkUpsell, {});
   } else {
     tmp2 = null;
     if (account.type === tmp.PLAYSTATION) {
-      tmp2 = callback3(require(14119) /* PlayStationTwoWayLinkUpsell */.PlayStationTwoWayLinkUpsell, {});
+      tmp2 = callback3(require(14118) /* PlayStationTwoWayLinkUpsell */.PlayStationTwoWayLinkUpsell, {});
     }
   }
 };
@@ -816,7 +632,7 @@ prototype["renderMetadata"] = function renderMetadata() {
     if (self.state.metadataAlreadyRefreshed) {
       let tmp9Result = tmp9(9940);
     } else {
-      tmp9Result = tmp9(14121);
+      tmp9Result = tmp9(14120);
     }
     obj10[2] = tmp9Result;
     obj9[6] = callback3(tmp2(1297).Icon, obj10);

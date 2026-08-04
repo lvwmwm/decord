@@ -1,10 +1,10 @@
-// Module ID: 15021
-// Function ID: 15022
+// Module ID: 15020
+// Function ID: 15021
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 676, 3, 15020, 584, 8302, 12811, 15022, 1231, 530, 5736, 15024, 2]
+// Dependencies: [5, 32, 19, 676, 3, 15019, 584, 8302, 12810, 15021, 1231, 530, 5736, 15023, 2]
 // Exports: useAuthWebsocket
 
-// Module 15021 (useAuthWebsocket)
+// Module 15020 (useAuthWebsocket)
 import RemoteAuthStep from "RemoteAuthStep";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

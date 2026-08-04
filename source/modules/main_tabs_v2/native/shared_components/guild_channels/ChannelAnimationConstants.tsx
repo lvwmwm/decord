@@ -1,10 +1,10 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12216
+// Function ID: 12217
 // Name: n
 // Dependencies: [4694, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 12217 (n)
+// Module 12216 (n)
 let obj = { damping: 35, stiffness: 275, mass: 1, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 const fn = function n() {
   let obj = { initialValues: { transform: items, opacity: 0 }, animations: null };

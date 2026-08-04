@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15202
+// Function ID: 15203
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 1348, 712, 9370, 11747, 11750, 7780, 15204, 1236, 11862, 2]
+// Dependencies: [19, 21, 1348, 712, 9370, 11747, 11750, 7780, 15203, 1236, 11861, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
-// Module 15203 (GuildProgressButton)
+// Module 15202 (GuildProgressButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -37,13 +37,13 @@ export default function GuildProgressButton(guild) {
   }, items1);
   obj = { icon: null, label: null, subLabel: null, onPress: null, trailing: null };
   obj = { source: null };
-  obj[0] = completed(15204);
+  obj[0] = completed(15203);
   obj[0] = jsx(guild(7780).RowButton.Icon, { source: null });
   const intl = guild(1236).intl;
   obj[1] = intl.string(guild(1236).t.o3HK3d);
   obj[2] = subtitle;
   obj[3] = callback;
-  obj[4] = jsx(completed(11862), { percent: percentComplete });
+  obj[4] = jsx(completed(11861), { percent: percentComplete });
   return jsx(guild(7780).RowButton, { source: null });
 };
 export const getScaledGuildProgressButtonHeight = function getScaledGuildProgressButtonHeight(fontScale, isRefreshEnabled) {

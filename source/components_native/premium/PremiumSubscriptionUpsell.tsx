@@ -1,10 +1,10 @@
-// Module ID: 12716
-// Function ID: 12717
+// Module ID: 12715
+// Function ID: 12716
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 1946, 1874, 676, 6805, 1876, 21, 4285, 712, 4237, 1236, 1851, 589, 3931, 4706, 691, 4281, 12717, 12718, 8556, 4695, 2]
+// Dependencies: [19, 17, 1946, 1874, 676, 6805, 1876, 21, 4285, 712, 4237, 1236, 1851, 589, 3931, 4706, 691, 4281, 12716, 12717, 8556, 4695, 2]
 // Exports: default
 
-// Module 12716 (PremiumSubscriptionUpsell)
+// Module 12715 (PremiumSubscriptionUpsell)
 import "registerAsset";
 import get_ActivityIndicator from "Text";
 import _getSystemLocale from "_getSystemLocale";
@@ -95,11 +95,11 @@ export default function PremiumSubscriptionUpsell(arg0) {
     obj6[0] = tmp.upsellFeatures;
     const obj7 = { style: null, source: null };
     obj7[0] = tmp.upsellFeatureSubLogo;
-    obj7[1] = tmp5(12717);
+    obj7[1] = tmp5(12716);
     const items4 = [closure_10(closure_4, obj7), , ];
     const obj8 = { style: null, source: null };
     obj8[0] = tmp.upsellFeatureLogoTier2;
-    obj8[1] = tmp5(12718);
+    obj8[1] = tmp5(12717);
     items4[1] = closure_10(closure_4, obj8);
     const obj9 = { style: null, features: null, labelStyle: null, rowStyle: null };
     obj9[0] = tmp.upsellFeatureList;

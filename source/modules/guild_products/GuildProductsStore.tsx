@@ -1,9 +1,9 @@
-// Module ID: 12876
-// Function ID: 12877
+// Module ID: 12875
+// Function ID: 12876
 // Name: secondaryIndexMap
 // Dependencies: [687, 11, 3909, 589, 709, 2]
 
-// Module 12876 (secondaryIndexMap)
+// Module 12875 (secondaryIndexMap)
 import { Store } from "initialize";
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };

@@ -1,10 +1,10 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15529
+// Function ID: 15530
 // Name: getCoverImageURI
 // Dependencies: [3907, 4522, 2]
 // Exports: getCoverImageURI
 
-// Module 15530 (getCoverImageURI)
+// Module 15529 (getCoverImageURI)
 import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 
 const require = arg1;

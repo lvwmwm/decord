@@ -7,7 +7,7 @@
 class peg$SyntaxError {
   constructor(arg0, arg1, arg2, arg3) {
     obj = { message: global, expected: require, found: importDefault, location: importAll, name: "SyntaxError" };
-    if (typeof Error.captureStackTrace !== "three_button_mouse") {
+    if (typeof Error.captureStackTrace === "function") {
       _Error = Error;
       tmp = peg$SyntaxError;
       captureStackTraceResult = Error.captureStackTrace(obj, peg$SyntaxError);
@@ -232,7 +232,7 @@ obj = {
         if (items !== tmp8) {
           const tmp12 = peg$parsetransforms();
           if (tmp12 !== tmp8) {
-            if (typeof peg$c1 !== "find") {
+            if (typeof peg$c1 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             const first = tmp2[0];
@@ -500,7 +500,7 @@ obj = {
                                       }
                                       if (tmp99 !== tmp84) {
                                         arr10 = peg$c8;
-                                        if (typeof peg$c8 !== "find") {
+                                        if (typeof peg$c8 !== "function") {
                                           arr10 = HermesBuiltin.throwTypeError();
                                         }
                                         const items3 = [tmp68, tmp67Result, tmp67Result2, tmp67Result, tmp67Result1, tmp67Result3];
@@ -797,7 +797,7 @@ obj = {
                             }
                             if (arr10 !== items7) {
                               arr10 = peg$c23;
-                              if (typeof peg$c23 !== "find") {
+                              if (typeof peg$c23 !== "function") {
                                 arr10 = HermesBuiltin.throwTypeError();
                               }
                               arr10 = globalThis;
@@ -1006,7 +1006,7 @@ obj = {
                           }
                           if (arr10 !== str14) {
                             arr10 = peg$c20;
-                            if (typeof peg$c20 !== "find") {
+                            if (typeof peg$c20 !== "function") {
                               arr10 = HermesBuiltin.throwTypeError();
                             }
                             arr10 = globalThis;
@@ -1176,7 +1176,7 @@ obj = {
                             arr10 = arr10();
                             if (arr10 !== arr10) {
                               arr10 = peg$c27;
-                              if (typeof peg$c27 !== "find") {
+                              if (typeof peg$c27 !== "function") {
                                 arr10 = HermesBuiltin.throwTypeError();
                               }
                               const items14 = [arr10, arr10];
@@ -1250,7 +1250,7 @@ obj = {
                                   }
                                   if (arr10 !== str10) {
                                     arr10 = peg$c17;
-                                    if (typeof peg$c17 !== "find") {
+                                    if (typeof peg$c17 !== "function") {
                                       arr10 = HermesBuiltin.throwTypeError();
                                     }
                                     arr10 = globalThis;
@@ -1447,7 +1447,7 @@ obj = {
                       arr10 = arr10();
                       if (arr10 !== arr10) {
                         arr10 = peg$c26;
-                        if (typeof peg$c26 !== "find") {
+                        if (typeof peg$c26 !== "function") {
                           arr10 = HermesBuiltin.throwTypeError();
                         }
                         if (arr10 === arr10) {
@@ -1523,7 +1523,7 @@ obj = {
                             }
                             if (arr10 !== str6) {
                               arr10 = peg$c14;
-                              if (typeof peg$c14 !== "find") {
+                              if (typeof peg$c14 !== "function") {
                                 arr10 = HermesBuiltin.throwTypeError();
                               }
                               const items21 = [arr10, 0, 0, 0, , ];
@@ -1706,7 +1706,7 @@ obj = {
                     if (arr10 !== arr10) {
                       arr10 = peg$c26;
                       let num11 = arr10;
-                      if (typeof peg$c26 !== "find") {
+                      if (typeof peg$c26 !== "function") {
                         arr10 = HermesBuiltin.throwTypeError();
                       }
                       if (num11 === arr10) {
@@ -1778,7 +1778,7 @@ obj = {
                           }
                           if (arr10 !== str2) {
                             arr10 = peg$c11;
-                            if (typeof peg$c11 !== "find") {
+                            if (typeof peg$c11 !== "function") {
                               arr10 = HermesBuiltin.throwTypeError();
                             }
                             const items25 = [1, 0, arr10, 0, 1];
@@ -1873,7 +1873,7 @@ obj = {
           if (tmp19 !== tmp11) {
             let tmp14Result = tmp14();
             if (tmp14Result !== tmp11) {
-              if (typeof peg$c36 !== "find") {
+              if (typeof peg$c36 !== "function") {
                 HermesBuiltin.throwTypeError();
               }
               let joined = null;
@@ -1922,7 +1922,7 @@ obj = {
           }
           let joined2 = obj4;
           if (obj4 !== tmp11) {
-            if (typeof peg$c31 !== "find") {
+            if (typeof peg$c31 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             joined2 = obj4.join("");
@@ -1937,7 +1937,7 @@ obj = {
               }
               let joined3 = obj5;
               if (obj5 !== tmp11) {
-                if (typeof peg$c32 !== "find") {
+                if (typeof peg$c32 !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 joined3 = obj5.join("");
@@ -1977,7 +1977,7 @@ obj = {
             }
           }
           if (tmp30 !== tmp11) {
-            if (typeof peg$c32 !== "find") {
+            if (typeof peg$c32 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             let joined4 = tmp14Result1.join("");
@@ -1992,7 +1992,7 @@ obj = {
       }
       let parsed = obj2;
       if (obj2 !== regex2) {
-        if (typeof peg$c24 !== "find") {
+        if (typeof peg$c24 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const _parseFloat = parseFloat;
@@ -2023,7 +2023,7 @@ obj = {
           const obj7 = peg$parsedigitSequence();
           let joined5 = obj7;
           if (obj7 !== tmp11) {
-            if (typeof peg$c30 !== "find") {
+            if (typeof peg$c30 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             joined5 = obj7.join("");
@@ -2041,7 +2041,7 @@ obj = {
         }
         let parsed1 = obj6;
         if (obj6 !== tmp11) {
-          if (typeof peg$c25 !== "find") {
+          if (typeof peg$c25 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const _parseInt = parseInt;
@@ -2342,7 +2342,7 @@ obj = {
       }
       let joined = tmp12;
       if (tmp12 !== obj) {
-        if (typeof peg$c39 !== "find") {
+        if (typeof peg$c39 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const items1 = [, , ];
@@ -2537,7 +2537,7 @@ obj = {
           }
           if (items1 !== tmp30) {
             let tmp26 = tmp28;
-            if (typeof peg$c0 !== "find") {
+            if (typeof peg$c0 !== "function") {
               HermesBuiltin.throwTypeError();
             }
           } else {
@@ -2758,7 +2758,7 @@ obj = {
     const message = pegSyntaxError.buildMessage(tmp13, charAtResult);
     Object.create(pegSyntaxError.prototype);
     let obj2 = { message, expected: arr, found: charAtResult, location: result1, name: "SyntaxError" };
-    if (typeof Error.captureStackTrace !== "three_button_mouse") {
+    if (typeof Error.captureStackTrace === "function") {
       const _Error2 = Error;
       Error.captureStackTrace(obj2, pegSyntaxError);
     }

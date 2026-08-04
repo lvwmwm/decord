@@ -1,10 +1,10 @@
-// Module ID: 12074
-// Function ID: 12075
+// Module ID: 12073
+// Function ID: 12074
 // Name: NitroAcquiredHeader
-// Dependencies: [19, 17, 676, 1876, 21, 4285, 712, 9335, 5236, 12075, 4221, 6956, 4131, 7315, 7316, 4281, 1236, 1945, 3982, 5338, 6804, 4812, 10070, 4695, 4253, 5594, 2]
+// Dependencies: [19, 17, 676, 1876, 21, 4285, 712, 9335, 5236, 12074, 4221, 6956, 4131, 7315, 7316, 4281, 1236, 1945, 3982, 5338, 6804, 4812, 10070, 4695, 4253, 5594, 2]
 // Exports: default
 
-// Module 12074 (NitroAcquiredHeader)
+// Module 12073 (NitroAcquiredHeader)
 import Background from "Background";
 import get_ActivityIndicator from "combined";
 import { HelpdeskArticles } from "ME";
@@ -24,7 +24,7 @@ function NitroAcquiredHeader(skuId) {
   const tmp = createCacheKey();
   let obj = { style: tmp.header, children: null };
   obj = { source: null };
-  obj[0] = importDefault(12075);
+  obj[0] = importDefault(12074);
   const items = [callback(importDefault(5236), obj), ];
   obj = { style: tmp.fractionNitroIcon, children: null };
   const obj1 = { skuId: skuId.skuId, width: null, height: null };

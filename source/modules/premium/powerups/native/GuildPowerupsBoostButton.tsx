@@ -1,10 +1,10 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 11858
+// Function ID: 11859
 // Name: GuildPowerupsBoostButton
 // Dependencies: [19, 1862, 1874, 4178, 676, 21, 589, 6769, 1892, 5118, 6773, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 11859 (GuildPowerupsBoostButton)
+// Module 11858 (GuildPowerupsBoostButton)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";

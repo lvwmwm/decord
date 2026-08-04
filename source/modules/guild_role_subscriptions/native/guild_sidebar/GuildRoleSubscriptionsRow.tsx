@@ -1,10 +1,10 @@
-// Module ID: 15207
-// Function ID: 15208
+// Module ID: 15206
+// Function ID: 15207
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 676, 1379, 9710, 21, 4285, 712, 1222, 4253, 15208, 1959, 11665, 1236, 12043, 2]
+// Dependencies: [19, 676, 1379, 9710, 21, 4285, 712, 1222, 4253, 15207, 1959, 11665, 1236, 12042, 2]
 // Exports: default
 
-// Module 15207 (GuildRoleSubscriptionsRow)
+// Module 15206 (GuildRoleSubscriptionsRow)
 import noop from "noop";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
@@ -59,7 +59,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
   obj[1] = DEFAULT;
   obj[7] = jsx(tmp6(11665).BaseChannelName, { name: null, mode: null });
   obj = { disableColor: true, mode: DEFAULT, source: null };
-  obj[2] = importDefault(12043);
+  obj[2] = importDefault(12042);
   obj[8] = jsx(tmp6(11665).BaseChannelIcon, { disableColor: true, mode: DEFAULT, source: null });
   return jsx(importDefault(11665), { disableColor: true, mode: DEFAULT, source: null });
 };

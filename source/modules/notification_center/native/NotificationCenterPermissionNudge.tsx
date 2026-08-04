@@ -1,10 +1,10 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15399
+// Function ID: 15400
 // Name: NotificationCenterBannerImpl
-// Dependencies: [32, 19, 17, 676, 1369, 11691, 21, 4285, 712, 698, 9647, 4281, 1236, 4695, 11692, 4812, 5270, 14561, 5931, 1358, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 11691, 21, 4285, 712, 698, 9647, 4281, 1236, 4695, 11692, 4812, 5270, 14560, 5931, 1358, 2]
 // Exports: default
 
-// Module 15400 (NotificationCenterBannerImpl)
+// Module 15399 (NotificationCenterBannerImpl)
 import _slicedToArray from "_slicedToArray";
 import noop from "DismissibleContent";
 import { View } from "apexExperiment";
@@ -100,7 +100,7 @@ let obj2 = { alignSelf: "flex-start", marginTop: require("Themes").space.PX_12 }
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/notification_center/native/NotificationCenterPermissionNudge.tsx");
 
 export default function NotificationCenterPermissionNudge() {
-  let obj = importDefault(14561);
+  let obj = importDefault(14560);
   const canSeePushNotificationNudge = require(11692) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
   const obj2 = require(11692) /* _requestPushNotificationPermission */;
   let prop = null;

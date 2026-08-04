@@ -4,9 +4,9 @@
 // Dependencies: [3867]
 
 // Module 3870 (processRelativeTime)
-if (typeof exports !== "window") {
+if (typeof exports === "object") {
   if (undefined !== module) {
-    if (typeof require === "find") {
+    if (typeof require === "function") {
       const _module = require("t");
       const processRelativeTime2 = function processRelativeTime(arg0, arg1, arg2, arg3) {
         const items = [`${arg0} Tage`, `${arg0} Tagen`];
@@ -44,7 +44,7 @@ if (typeof exports !== "window") {
     }
   }
 }
-if (typeof globalThis.define !== "three_button_mouse") {
+if (typeof globalThis.define === "function") {
   if (globalThis.define.amd) {
     globalThis.define(["../moment"], function t(defineLocale) {
       function processRelativeTime(arg0, arg1, arg2, arg3) {

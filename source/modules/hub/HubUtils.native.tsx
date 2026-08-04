@@ -1,20 +1,20 @@
-// Module ID: 12576
-// Function ID: 12577
-// Dependencies: [4270, 12, 12011, 2]
+// Module ID: 12575
+// Function ID: 12576
+// Dependencies: [4270, 12, 12010, 2]
 
-// Module 12576
+// Module 12575
 import updateInvite from "updateInvite";
 import importDefaultResult from "apply";
 
 let closure_3 = require("apply").throttle((code) => {
   invite = invite.getInvite(code.code);
-  importDefault(12011).open({ invite });
+  importDefault(12010).open({ invite });
 }, 1000, { trailing: false });
 const obj = {
   onOpenHubInvite(invite) {
     callback(invite);
   }
 };
-const result = require("module_12011").fileFinishedImporting("modules/hub/HubUtils.native.tsx");
+const result = require("module_12010").fileFinishedImporting("modules/hub/HubUtils.native.tsx");
 
 export default obj;

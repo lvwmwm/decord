@@ -1,10 +1,10 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16269
+// Function ID: 16270
 // Name: showTakeoverModal
-// Dependencies: [10253, 10260, 4490, 14939, 1959, 2]
+// Dependencies: [10253, 10260, 4490, 14938, 1959, 2]
 // Exports: showTakeoverModal
 
-// Module 16270 (showTakeoverModal)
+// Module 16269 (showTakeoverModal)
 import { TAKEOVER_MODAL_KEY } from "LOCATION_CONTEXT_MOBILE";
 
 const result = require("module_4490").fileFinishedImporting("modules/self_mod/inappropriate_conversation/takeover_modal/showTakeoverModal.native.tsx");
@@ -22,7 +22,7 @@ export const showTakeoverModal = function showTakeoverModal(arg0) {
     obj[1] = warningType;
     obj[2] = senderId;
     obj[3] = channelId;
-    importDefault(4490).pushLazy(require(1959) /* asyncRequireImpl */(14939, dependencyMap.paths), obj, TAKEOVER_MODAL_KEY);
+    importDefault(4490).pushLazy(require(1959) /* asyncRequireImpl */(14938, dependencyMap.paths), obj, TAKEOVER_MODAL_KEY);
     const obj2 = importDefault(4490);
   }
 };

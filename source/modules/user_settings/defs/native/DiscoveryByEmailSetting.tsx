@@ -1,9 +1,9 @@
-// Module ID: 13999
-// Function ID: 14000
+// Module ID: 13998
+// Function ID: 13999
 // Name: toggle
-// Dependencies: [7892, 676, 1236, 3958, 1384, 11952, 10361, 2]
+// Dependencies: [7892, 676, 1236, 3958, 1384, 11951, 10361, 2]
 
-// Module 13999 (toggle)
+// Module 13998 (toggle)
 import { FriendDiscoveryFlags } from "ME";
 import createToggle from "createToggle";
 
@@ -28,7 +28,7 @@ const toggle = createToggle.createToggle({
     let obj = require(1384) /* hasFlag */;
     const hasFlagResult = obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
     obj = { phone: hasFlagResult, email };
-    const result = importDefault(11952).updateDiscoverability(obj);
+    const result = importDefault(11951).updateDiscoverability(obj);
   }
 });
 let obj = {
@@ -52,7 +52,7 @@ let obj = {
     let obj = require(1384) /* hasFlag */;
     const hasFlagResult = obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
     obj = { phone: hasFlagResult, email };
-    const result = importDefault(11952).updateDiscoverability(obj);
+    const result = importDefault(11951).updateDiscoverability(obj);
   }
 };
 let result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/DiscoveryByEmailSetting.tsx");

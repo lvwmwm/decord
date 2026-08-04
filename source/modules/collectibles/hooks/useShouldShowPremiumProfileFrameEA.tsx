@@ -1,10 +1,10 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12078
+// Function ID: 12079
 // Name: useShouldShowPremiumProfileFrameEA
 // Dependencies: [8730, 9322, 2]
 // Exports: default
 
-// Module 12079 (useShouldShowPremiumProfileFrameEA)
+// Module 12078 (useShouldShowPremiumProfileFrameEA)
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameEA.tsx");
 
 export default function useShouldShowPremiumProfileFrameEA(location) {

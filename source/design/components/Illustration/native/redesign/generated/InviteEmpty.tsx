@@ -1,10 +1,10 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16607
+// Function ID: 16608
 // Name: getInviteEmptySource
-// Dependencies: [19, 17, 21, 7544, 9622, 16609, 9621, 4131, 2]
+// Dependencies: [19, 17, 21, 7544, 9622, 16608, 9621, 4131, 2]
 // Exports: InviteEmpty, getInviteEmptySource, useInviteEmptySource
 
-// Module 16608 (getInviteEmptySource)
+// Module 16607 (getInviteEmptySource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export const getInviteEmptySource = function getInviteEmptySource(theme) {
       return callback(9622);
     },
     darker() {
-      return callback(16609);
+      return callback(16608);
     },
     light() {
       return callback(9621);
@@ -34,7 +34,7 @@ export const useInviteEmptySource = function useInviteEmptySource() {
       return callback(9622);
     },
     darker() {
-      return callback(16609);
+      return callback(16608);
     },
     light() {
       return callback(9621);
@@ -49,7 +49,7 @@ export const InviteEmpty = function InviteEmpty(arg0) {
       return callback(9622);
     },
     darker() {
-      return callback(16609);
+      return callback(16608);
     },
     light() {
       return callback(9621);

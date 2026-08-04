@@ -1,8 +1,8 @@
-// Module ID: 15926
-// Function ID: 15927
-// Dependencies: [19, 17, 9710, 4481, 21, 4285, 15922, 4701, 8199, 2]
+// Module ID: 15925
+// Function ID: 15926
+// Dependencies: [19, 17, 9710, 4481, 21, 4285, 15921, 4701, 8199, 2]
 
-// Module 15926
+// Module 15925
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -17,7 +17,7 @@ const memoResult = require("noop").memo(function UnreadBadge(arg0) {
   let resolvedUnreadSetting;
   let unread;
   ({ unread, resolvedUnreadSetting, muted } = arg0);
-  const tmp4 = importDefault(15922)();
+  const tmp4 = importDefault(15921)();
   require(4701) /* getFontScale */;
   let tmp9Result = null;
   if (unread) {

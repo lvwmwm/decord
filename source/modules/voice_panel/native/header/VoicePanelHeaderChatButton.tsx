@@ -1,10 +1,10 @@
-// Module ID: 16074
-// Function ID: 16075
+// Module ID: 16073
+// Function ID: 16074
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 676, 21, 4285, 712, 1231, 16075, 5663, 15980, 4781, 1236, 2]
+// Dependencies: [19, 676, 21, 4285, 712, 1231, 16074, 5663, 15979, 4781, 1236, 2]
 // Exports: default
 
-// Module 16074 (VoicePanelHeaderChatButton)
+// Module 16073 (VoicePanelHeaderChatButton)
 import noop from "noop";
 import { ComponentActions } from "ME";
 import jsxProd from "jsxProd";
@@ -28,7 +28,7 @@ export default function VoicePanelHeaderChatButton(channelId) {
     const ComponentDispatch = callback(table[5]).ComponentDispatch;
     ComponentDispatch.dispatch(constants.VOICE_PANEL_OPEN_CHAT_TAB);
   }, []);
-  const tmp5 = importDefault(16075)(channelId.channelId);
+  const tmp5 = importDefault(16074)(channelId.channelId);
   const tmp6 = closure_6;
   let obj = { icon: null, accessibilityLabel: null, onPress: null };
   const tmp7 = importDefault(5663);
@@ -38,7 +38,7 @@ export default function VoicePanelHeaderChatButton(channelId) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["5KxXrK"]);
   obj[2] = callback;
-  const children = [callback(importDefault(15980), obj), ];
+  const children = [callback(importDefault(15979), obj), ];
   let tmp8Result = null != tmp5;
   if (tmp8Result) {
     obj = { style: null, children: null };

@@ -1,9 +1,9 @@
-// Module ID: 13350
-// Function ID: 13351
+// Module ID: 13349
+// Function ID: 13350
 // Name: Fonts
 // Dependencies: [109, 19, 17, 676, 21, 4285, 712, 5125, 3997, 1297, 4281, 1236, 5905, 4131, 11473, 500, 2]
 
-// Module 13350 (Fonts)
+// Module 13349 (Fonts)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Fonts } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 14678
-// Function ID: 14679
+// Module ID: 14677
+// Function ID: 14678
 // Name: UserSettingsDesignSystemButtonGroup
 // Dependencies: [19, 17, 21, 4285, 4693, 4281, 5117, 4695, 7672, 5921, 2]
 // Exports: default
 
-// Module 14678 (UserSettingsDesignSystemButtonGroup)
+// Module 14677 (UserSettingsDesignSystemButtonGroup)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

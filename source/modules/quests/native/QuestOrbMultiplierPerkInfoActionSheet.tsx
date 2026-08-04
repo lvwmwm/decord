@@ -1,10 +1,10 @@
-// Module ID: 14309
-// Function ID: 14310
+// Module ID: 14308
+// Function ID: 14309
 // Name: Footer
-// Dependencies: [19, 17, 676, 21, 4285, 712, 4253, 5925, 8650, 3982, 1945, 4695, 1236, 1581, 5594, 3997, 4281, 10394, 3159, 5338, 14306, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 4253, 5925, 8650, 3982, 1945, 4695, 1236, 1581, 5594, 3997, 4281, 10394, 3159, 5338, 14305, 2]
 // Exports: default
 
-// Module 14309 (Footer)
+// Module 14308 (Footer)
 import Background from "Background";
 import { View } from "items";
 import ME from "ME";
@@ -155,6 +155,6 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   obj = { visible: orbMultiplierEligibility === multiplier(10394).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10394).QuestOrbMultiplierEligibilityType.UPSELL, children: null };
   const tmp4 = orbMultiplierEligibility === multiplier(10394).QuestOrbMultiplierEligibilityType.NITRO || orbMultiplierEligibility === multiplier(10394).QuestOrbMultiplierEligibilityType.UPSELL;
   obj[1] = callback(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result });
-  obj[4] = callback(orbMultiplierEligibility(14306), obj);
+  obj[4] = callback(orbMultiplierEligibility(14305), obj);
   return callback(multiplier(5338).BottomSheet, obj);
 };

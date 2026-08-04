@@ -1,10 +1,10 @@
-// Module ID: 13088
-// Function ID: 13089
+// Module ID: 13087
+// Function ID: 13088
 // Name: openGuildLimitedAccessInfoModal
-// Dependencies: [19, 17, 21, 4144, 4624, 13089, 1959, 2]
+// Dependencies: [19, 17, 21, 4144, 4624, 13088, 1959, 2]
 // Exports: default
 
-// Module 13088 (openGuildLimitedAccessInfoModal)
+// Module 13087 (openGuildLimitedAccessInfoModal)
 import "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

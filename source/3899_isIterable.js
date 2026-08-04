@@ -54,12 +54,12 @@ export const shallow = function shallow(current, current2) {
   let closure_1 = current2;
   let isResult = Object.is(current, current2);
   if (!isResult) {
-    let tmp2 = typeof current === "ay";
-    if (typeof current !== "window") {
+    let tmp2 = typeof current === "object";
+    if (typeof current === "object") {
       tmp2 = null !== current;
     }
     if (tmp2) {
-      tmp2 = typeof current2 === "ay";
+      tmp2 = typeof current2 === "object";
     }
     if (tmp2) {
       tmp2 = null !== current2;
@@ -72,7 +72,7 @@ export const shallow = function shallow(current, current2) {
       if (!tmp5) {
         tmp2 = tmp5;
       } else {
-        if (typeof closure_1 !== "find") {
+        if (typeof closure_1 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const _Symbol = Symbol;
@@ -87,12 +87,12 @@ export const shallow = function shallow(current, current2) {
           };
           compareEntries(obj, obj);
         } else {
-          if (typeof tmp6 !== "find") {
+          if (typeof tmp6 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const _Symbol2 = Symbol;
         }
-        if (typeof hasIterableEntries !== "find") {
+        if (typeof hasIterableEntries !== "function") {
           HermesBuiltin.throwTypeError();
         }
         if (!("entries" in current)) {
@@ -128,7 +128,7 @@ export const shallow = function shallow(current, current2) {
           }
           flag = iter6.done && iter5.done;
           const tmp9 = iter6.done && iter5.done;
-        } else if (typeof tmp8 !== "find") {
+        } else if (typeof tmp8 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         flag = compareEntries(current, current2);

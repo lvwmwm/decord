@@ -1,10 +1,10 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12090
+// Function ID: 12091
 // Name: GameProfileWebsiteButton
-// Dependencies: [19, 17, 8842, 21, 4285, 712, 3982, 9231, 1236, 1906, 3955, 12092, 12101, 4281, 2]
+// Dependencies: [19, 17, 8842, 21, 4285, 712, 3982, 9231, 1236, 1906, 3955, 12091, 12100, 4281, 2]
 // Exports: default
 
-// Module 12091 (GameProfileWebsiteButton)
+// Module 12090 (GameProfileWebsiteButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey";
@@ -138,7 +138,7 @@ export default function GameProfileDetails(game) {
               if (obj != null) {
                 const websites = obj.websites;
                 if (websites != null) {
-                  const mapped3 = websites.map((arg0) => callback2(12101)(arg0, callback2(712).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((arg0) => callback2(12100)(arg0, callback2(712).colors.ICON_SUBTLE));
                   found = mapped3.filter((arg0) => null != arg0);
                 }
               }
@@ -188,7 +188,7 @@ export default function GameProfileDetails(game) {
               obj5[1] = platforms.map((platform) => {
                 const obj = { platform, size: "md", color: null };
                 obj[2] = callback2(712).colors.ICON_SUBTLE;
-                return callback3(callback(12092).GameUpdatePlatformIcon, obj, platform);
+                return callback3(callback(12091).GameUpdatePlatformIcon, obj, platform);
               });
               obj4[1] = outer1_8(outer1_5, obj5);
               items.push(obj4);
@@ -258,7 +258,7 @@ export default function GameProfileDetails(game) {
       items[1] = prop;
       obj = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: children.label };
       const items1 = [outer1_8(game(memo[13]).Text, obj), ];
-      if (typeof children.value === "y") {
+      if (typeof children.value === "string") {
         obj = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, style: null, children: null };
         obj[3] = tmp3.detailsRowValue;
         obj[4] = children.value;

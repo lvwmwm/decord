@@ -1,10 +1,10 @@
-// Module ID: 14406
-// Function ID: 14407
+// Module ID: 14405
+// Function ID: 14406
 // Name: ThemeMidnightIcon
-// Dependencies: [19, 21, 712, 3988, 14407, 2]
+// Dependencies: [19, 21, 712, 3988, 14406, 2]
 // Exports: ThemeMidnightIcon
 
-// Module 14406 (ThemeMidnightIcon)
+// Module 14405 (ThemeMidnightIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ThemeMidnightIcon = function ThemeMidnightIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14407) /* registerAsset */;
+  obj[0] = require(14406) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

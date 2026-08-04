@@ -1,10 +1,10 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15228
+// Function ID: 15229
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1946, 21, 4285, 647, 15230, 11580, 4281, 1851, 2]
+// Dependencies: [19, 17, 1946, 21, 4285, 647, 15229, 11580, 4281, 1851, 2]
 // Exports: default
 
-// Module 15229 (ChannelBadge)
+// Module 15228 (ChannelBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ export default function ChannelBadge(arg0) {
       obj = { mentionsCount: null, isMentionLowImportance: null };
       obj[0] = mentionCount;
       obj[1] = isMentionLowImportance;
-      obj[1] = jsx(importDefault(15230), { mentionsCount: null, isMentionLowImportance: null });
+      obj[1] = jsx(importDefault(15229), { mentionsCount: null, isMentionLowImportance: null });
       let tmp5 = <View mentionsCount={null} isMentionLowImportance={null} />;
     }
     return tmp5;

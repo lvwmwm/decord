@@ -1,10 +1,10 @@
-// Module ID: 12626
-// Function ID: 12627
+// Module ID: 12625
+// Function ID: 12626
 // Name: mapToUser
-// Dependencies: [5, 32, 19, 17, 1874, 6824, 676, 21, 4285, 712, 589, 12627, 38, 1351, 9542, 12628, 1236, 3998, 12629, 5610, 5630, 698, 6825, 4253, 12630, 1959, 3985, 5337, 4281, 5236, 12631, 12632, 9543, 5732, 4695, 5338, 8931, 9545, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 6824, 676, 21, 4285, 712, 589, 12626, 38, 1351, 9542, 12627, 1236, 3998, 12628, 5610, 5630, 698, 6825, 4253, 12629, 1959, 3985, 5337, 4281, 5236, 12630, 12631, 9543, 5732, 4695, 5338, 8931, 9545, 2]
 // Exports: default
 
-// Module 12626 (mapToUser)
+// Module 12625 (mapToUser)
 import emitChanges from "emitChanges";
 import UserFlashListActions from "UserFlashListActions";
 import context from "context";
@@ -152,83 +152,36 @@ export default function ReferralProgramShareActionSheet() {
     let c5 = 0;
     let c3 = 0;
     return (function*(arg0) {
-      if (c5 === 2) {
+      let closure_2 = tmp3;
+      let c3 = 1;
+      v0(true);
+      let obj1 = { location_stack: null };
+      obj1[0] = outer1_14;
+      stateFromStores(first[21]).track(isFetching.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, obj1);
+      const obj8 = stateFromStores(first[21]);
+      yield lib(first[22]).createReferralTrials(lib.map((id) => id.id));
+      if (1 === tmp7) {
+        c3 = 0;
+        v0(false);
+        obj1 = lib(first[26]);
+        const intl = lib(first[16]).intl;
+        obj1.presentError(intl.string(lib(first[16]).t.R0RpRX));
+        let c5 = 3;
+      } else if (arg0 === 1) {
         c5 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c5 = 2;
-          if (0 === v0) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_2 = tmp3;
-              let closure_1 = tmp7;
-              closure_1 = undefined;
-              let c3 = 1;
-              v0(true);
-              let obj1 = { location_stack: null };
-              obj1[0] = outer1_14;
-              stateFromStores(first[21]).track(isFetching.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, obj1);
-              const obj8 = stateFromStores(first[21]);
-              v0 = 2;
-              c5 = 1;
-              const obj2 = { value: null, done: false };
-              obj2[0] = lib(first[22]).createReferralTrials(lib.map((id) => id.id));
-              return obj2;
-            }
-          } else {
-            if (1 === tmp7) {
-              c3 = 0;
-              v0(false);
-              obj1 = lib(first[26]);
-              const intl = lib(first[16]).intl;
-              obj1.presentError(intl.string(lib(first[16]).t.R0RpRX));
-              c5 = 3;
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              closure_1 = arg1;
-              v0(false);
-              const obj3 = { selectedUsers: null, trialCreationResult: null };
-              obj3[0] = lib;
-              obj3[1] = closure_1;
-              stateFromStores(first[23]).openLazy(lib(first[25])(first[24], first.paths), "referral-program-share-action-sheet", obj3);
-              c3 = 0;
-              const obj6 = stateFromStores(first[23]);
-            }
-            c3 = 0;
-            c5 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          }
-        } catch (tmp18) {
-          if (tmp4 === c3) {
-            c5 = tmp2;
-            throw tmp18;
-          } else {
-            v0 = tmp;
-          }
-        }
+        throw arg1;
+      } else if (arg0 !== 2) {
+        let closure_1 = arg1;
+        v0(false);
+        const obj3 = { selectedUsers: null, trialCreationResult: null };
+        obj3[0] = lib;
+        obj3[1] = closure_1;
+        stateFromStores(first[23]).openLazy(lib(first[25])(first[24], first.paths), "referral-program-share-action-sheet", obj3);
+        c3 = 0;
+        const obj6 = stateFromStores(first[23]);
       }
+      c3 = 0;
+      return arg1;
     })();
   });
   const items9 = [analyticsLocations];

@@ -1,7 +1,7 @@
 // Module ID: 1371
 // Function ID: 1372
 // Name: participantFromServer
-// Dependencies: [32, 1218, 1372, 1931, 1874, 4310, 9674, 676, 10563, 10564, 3903, 10508, 13240, 1231, 10536, 709, 10320, 10522, 500, 1906, 6891, 589, 2]
+// Dependencies: [32, 1218, 1372, 1931, 1874, 4310, 9674, 676, 10563, 10564, 3903, 10508, 13239, 1231, 10536, 709, 10320, 10522, 500, 1906, 6891, 589, 2]
 
 // Module 1371 (participantFromServer)
 import _slicedToArray from "_slicedToArray";
@@ -141,7 +141,7 @@ function updateEmbeddedActivities(content_classification) {
             let id = _location.id;
             let value3 = obj1.get(id);
             if (null == value3) {
-              if (typeof ActivityBucket !== "find") {
+              if (typeof ActivityBucket !== "function") {
                 HermesBuiltin.throwTypeError();
               }
               obj1 = Object.create(ActivityBucket.prototype);
@@ -156,7 +156,7 @@ function updateEmbeddedActivities(content_classification) {
             if (null != embeddedActivityLocationChannelId1) {
               let value4 = map2.get(embeddedActivityLocationChannelId1);
               if (null == value4) {
-                if (typeof ActivityBucket !== "find") {
+                if (typeof ActivityBucket !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 const obj2 = Object.create(ActivityBucket.prototype);
@@ -173,7 +173,7 @@ function updateEmbeddedActivities(content_classification) {
               }
               let value5 = map1.get(str5);
               if (null == value5) {
-                if (typeof ActivityBucket !== "find") {
+                if (typeof ActivityBucket !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 obj3 = Object.create(ActivityBucket.prototype);
@@ -283,7 +283,7 @@ function updateEmbeddedActivities(content_classification) {
       const _HermesInternal3 = HermesInternal;
       obj5.delete("" + application_id + ":" + tmp56);
     }
-    const someResult1 = mapped.some((userId) => application_id(13240).isActivityParticipantCurrentUserCurrentSession(userId));
+    const someResult1 = mapped.some((userId) => application_id(13239).isActivityParticipantCurrentUserCurrentSession(userId));
   }
 }
 ActivityPanelModes = ActivityPanelModes.ActivityPanelModes;

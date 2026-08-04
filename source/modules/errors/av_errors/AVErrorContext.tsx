@@ -1,10 +1,10 @@
-// Module ID: 16795
-// Function ID: 16796
+// Module ID: 16794
+// Function ID: 16795
 // Name: getVoiceChannelErrorContext
 // Dependencies: [4332, 4356, 1931, 4370, 4381, 4348, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 16795 (getVoiceChannelErrorContext)
+// Module 16794 (getVoiceChannelErrorContext)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
 import handleConnectionOpen from "handleConnectionOpen";

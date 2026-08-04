@@ -1,10 +1,10 @@
-// Module ID: 15240
-// Function ID: 15241
+// Module ID: 15239
+// Function ID: 15240
 // Name: transformParticipantToSortedVoiceState
 // Dependencies: [32, 1375, 1372, 4357, 5103, 589, 1865, 11, 1351, 5109, 5116, 2]
 // Exports: default
 
-// Module 15240 (transformParticipantToSortedVoiceState)
+// Module 15239 (transformParticipantToSortedVoiceState)
 import _slicedToArray from "_slicedToArray";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import ensureGuildLoaded from "ensureGuildLoaded";

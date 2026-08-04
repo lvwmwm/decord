@@ -1,10 +1,10 @@
-// Module ID: 14876
-// Function ID: 14877
+// Module ID: 14875
+// Function ID: 14876
 // Name: ClipboardCheckIcon
-// Dependencies: [19, 21, 712, 3988, 14877, 2]
+// Dependencies: [19, 21, 712, 3988, 14876, 2]
 // Exports: ClipboardCheckIcon
 
-// Module 14876 (ClipboardCheckIcon)
+// Module 14875 (ClipboardCheckIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ClipboardCheckIcon = function ClipboardCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14877) /* registerAsset */;
+  obj[0] = require(14876) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

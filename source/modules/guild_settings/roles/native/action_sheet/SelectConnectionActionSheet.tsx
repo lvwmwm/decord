@@ -1,10 +1,10 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16598
+// Function ID: 16599
 // Name: IdentityApplicationRow
 // Dependencies: [32, 19, 17, 21, 10950, 5315, 1297, 4221, 5337, 1236, 6871, 1416, 4131, 4253, 8878, 5646, 9063, 5340, 5272, 5649, 2]
 // Exports: default
 
-// Module 16599 (IdentityApplicationRow)
+// Module 16598 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "BottomSheetModal";
@@ -25,7 +25,7 @@ function IdentityApplicationRow(arg0) {
     const bot = getOrFetchApplicationBatched.bot;
     let tmp6Result = null;
     if (null != bot) {
-      obj = { user: null, size: null, guildId: "Array" };
+      obj = { user: null, size: null, guildId: "disabled" };
       obj[0] = bot;
       obj[1] = tmp(1297).AvatarSizes.XSMALL;
       tmp6Result = tmp6(tmp(1297).Avatar, obj);
@@ -105,7 +105,7 @@ export default function SelectConnectionActionSheet(arg0) {
       let tmp = null;
       if (null != application) {
         let obj = { icon: null, label: null, subLabel: null, onPress: null };
-        obj = { user: null, size: null, guildId: "Array" };
+        obj = { user: null, size: null, guildId: "disabled" };
         obj[0] = application.bot;
         obj[1] = outer1_0(outer1_2[6]).AvatarSizes.XSMALL;
         obj[0] = outer1_6(outer1_0(outer1_2[6]).Avatar, obj);

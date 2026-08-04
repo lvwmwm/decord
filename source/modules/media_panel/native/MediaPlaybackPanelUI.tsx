@@ -1,10 +1,10 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16161
+// Function ID: 16162
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 10649, 13707, 11559, 11558, 21, 4285, 712, 1581, 1474, 16161, 4146, 8698, 10245, 15964, 4286, 4289, 4694, 15966, 5597, 5368, 16163, 2]
+// Dependencies: [32, 19, 10649, 13706, 11559, 11558, 21, 4285, 712, 1581, 1474, 16160, 4146, 8698, 10245, 15963, 4286, 4289, 4694, 15965, 5597, 5368, 16162, 2]
 // Exports: default
 
-// Module 16162 (MediaPlaybackPanelUI)
+// Module 16161 (MediaPlaybackPanelUI)
 import _slicedToArray from "_slicedToArray";
 import MorphablePanelModes from "MorphablePanelModes";
 import { useContext } from "MorphablePanelModes";
@@ -50,7 +50,7 @@ export default function MediaPlaybackPanelUI() {
   wrapperDimensions = tmp;
   const tmp4 = wrapperOffset(1474)();
   wrapperOffset = tmp4;
-  ({ wrapperDimensions, wrapperOffset } = mode(wrapperOffset(16161)));
+  ({ wrapperDimensions, wrapperOffset } = mode(wrapperOffset(16160)));
   let obj = wrapperDimensions(4146);
   const fn = function p() {
     return { position: "absolute", top: 0, left: 0, width: wrapperOffset.width, height: wrapperOffset.height, overflow: "hidden" };
@@ -83,7 +83,7 @@ export default function MediaPlaybackPanelUI() {
   let tmp10 = wrapperOffset(1474)();
   React = tmp10;
   let obj1 = React;
-  const context = React.useContext(wrapperOffset(16161));
+  const context = React.useContext(wrapperOffset(16160));
   mode = context.mode;
   pipState = context.pipState;
   pipAvoidanceSpecs = context.pipAvoidanceSpecs;
@@ -215,7 +215,7 @@ export default function MediaPlaybackPanelUI() {
       return;
     }
   }
-  obj = { cheapWorkletShallowEqual: wrapperDimensions(8698).cheapWorkletShallowEqual, MediaPlaybackPanelModes: canShowPIP, getClampedPIPPosition: wrapperDimensions(15964).getClampedPIPPosition, safeArea: tmp9, disableHorizontalSafeAreas: tmp18, wrapperOpacity: sharedValue2, animateWrapperTranslation: sharedValue3, wrapperTranslationX: sharedValue, wrapperTranslationY: sharedValue1 };
+  obj = { cheapWorkletShallowEqual: wrapperDimensions(8698).cheapWorkletShallowEqual, MediaPlaybackPanelModes: canShowPIP, getClampedPIPPosition: wrapperDimensions(15963).getClampedPIPPosition, safeArea: tmp9, disableHorizontalSafeAreas: tmp18, wrapperOpacity: sharedValue2, animateWrapperTranslation: sharedValue3, wrapperTranslationX: sharedValue, wrapperTranslationY: sharedValue1 };
   C.__closure = obj;
   C.__workletHash = 10793489581273;
   C.__initData = animatedStyle1;
@@ -330,14 +330,14 @@ export default function MediaPlaybackPanelUI() {
       fn4.__workletHash = 8557652955267;
       fn4.__initData = closure_20;
       const animatedStyle3 = tmp6(4146).useAnimatedStyle(fn4);
-      const context1 = obj1.useContext(tmp2(16161));
+      const context1 = obj1.useContext(tmp2(16160));
       ({ wrapperOffset: wrapperOffset2, pipState: pipState2 } = context1);
       obj4 = { panGestureEnabled: true, mode: null, pipState: null, wrapperOffset: null };
       const tmp6Result1 = tmp6(4146);
-      obj4[1] = tmp6(15966).MorphablePanelModes.PIP;
+      obj4[1] = tmp6(15965).MorphablePanelModes.PIP;
       obj4[2] = pipState2;
       obj4[3] = wrapperOffset2;
-      const tmp2Result = tmp2(15966);
+      const tmp2Result = tmp2(15965);
       obj5 = { children: null };
       obj6 = { style: null, pointerEvents: "box-none", children: null };
       obj6[0] = animatedStyle;
@@ -347,11 +347,11 @@ export default function MediaPlaybackPanelUI() {
       obj8 = { style: null, children: null };
       obj8[0] = tmp31;
       const obj9 = { gesture: null, children: null };
-      obj9[0] = tmp2(15966)(obj4);
+      obj9[0] = tmp2(15965)(obj4);
       const obj10 = { style: null, children: null };
       const items3 = [tmp.content, animatedStyle3];
       obj10[0] = items3;
-      obj10[1] = sharedValue2(tmp2(16163), {});
+      obj10[1] = sharedValue2(tmp2(16162), {});
       obj9[1] = sharedValue2(tmp2(4146).View, obj10);
       obj8[1] = sharedValue2(tmp6(5368).GestureDetector, obj9);
       obj7[1] = sharedValue2(tmp2(4146).View, obj8);

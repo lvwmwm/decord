@@ -1,8 +1,8 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 13648
+// Function ID: 13649
 // Dependencies: [1874, 4188, 676, 10546, 1416, 10543, 1471, 2]
 
-// Module 13649
+// Module 13648
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 

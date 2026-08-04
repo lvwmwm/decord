@@ -1,10 +1,10 @@
-// Module ID: 11870
-// Function ID: 11871
+// Module ID: 11869
+// Function ID: 11870
 // Name: isAuthorizedAppTwoWay
 // Dependencies: [10459, 2]
 // Exports: default, useShouldWarnAuthorizedAppTwoWay
 
-// Module 11870 (isAuthorizedAppTwoWay)
+// Module 11869 (isAuthorizedAppTwoWay)
 const result = require("set").fileFinishedImporting("modules/user_settings/authorized_apps/shouldWarnAuthorizedAppTwoWay.tsx");
 
 export default function isAuthorizedAppTwoWay(arg0) {

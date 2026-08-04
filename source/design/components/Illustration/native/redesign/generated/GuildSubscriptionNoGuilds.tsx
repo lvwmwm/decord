@@ -1,10 +1,10 @@
-// Module ID: 12710
-// Function ID: 12711
+// Module ID: 12709
+// Function ID: 12710
 // Name: getGuildSubscriptionNoGuildsSource
-// Dependencies: [19, 17, 21, 7544, 12711, 12712, 12713, 4131, 2]
+// Dependencies: [19, 17, 21, 7544, 12710, 12711, 12712, 4131, 2]
 // Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
 
-// Module 12710 (getGuildSubscriptionNoGuildsSource)
+// Module 12709 (getGuildSubscriptionNoGuildsSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getGuildSubscriptionNoGuildsSource = function getGuildSubscriptionN
   let obj = require(7544) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12711);
+      return callback(12710);
     },
     darker() {
-      return callback(12712);
+      return callback(12711);
     },
     light() {
-      return callback(12713);
+      return callback(12712);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useGuildSubscriptionNoGuildsSource = function useGuildSubscriptionN
   let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12711);
+      return callback(12710);
     },
     darker() {
-      return callback(12712);
+      return callback(12711);
     },
     light() {
-      return callback(12713);
+      return callback(12712);
     }
   };
   return require(7544) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0
   let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12711);
+      return callback(12710);
     },
     darker() {
-      return callback(12712);
+      return callback(12711);
     },
     light() {
-      return callback(12713);
+      return callback(12712);
     }
   };
   obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 15489
-// Function ID: 15490
+// Module ID: 15488
+// Function ID: 15489
 // Name: AddEmojiButton
-// Dependencies: [32, 19, 17, 5831, 1372, 5098, 3913, 676, 1877, 21, 3924, 7143, 4285, 712, 500, 4129, 589, 4295, 6826, 8559, 4812, 1236, 7576, 4281, 10115, 688, 1416, 8420, 9441, 10116, 10157, 10209, 15481, 4781, 7142, 11059, 11037, 8835, 10150, 10131, 3989, 4706, 689, 5660, 2]
+// Dependencies: [32, 19, 17, 5831, 1372, 5098, 3913, 676, 1877, 21, 3924, 7143, 4285, 712, 500, 4129, 589, 4295, 6826, 8559, 4812, 1236, 7576, 4281, 10115, 688, 1416, 8420, 9441, 10116, 10157, 10209, 15480, 4781, 7142, 11059, 11037, 8835, 10150, 10131, 3989, 4706, 689, 5660, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 15489 (AddEmojiButton)
+// Module 15488 (AddEmojiButton)
 import Separator from "Separator";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import get_ActivityIndicator from "module_4295";
@@ -613,7 +613,8 @@ export default function ICYMICardInteractionRow(message) {
         tmp25Result,
         memo.map((reaction) => {
               let obj = { messageId: guild.id, channel: message, reaction, count: reaction.type === guild(flag2[34]).ReactionTypes.BURST ? reaction.burst_count : reaction.count, isBurstReaction: reaction.type === guild(flag2[34]).ReactionTypes.BURST, handleItemInteracted: callback };
-              obj = { children: tmp(outer1_22, obj) };
+              obj = { children: null };
+              obj[0] = outer1_16(outer1_22, obj);
               return outer1_16(id, obj, "reaction-" + arg1);
             }),
 

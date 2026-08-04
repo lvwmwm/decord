@@ -1,10 +1,10 @@
-// Module ID: 12445
-// Function ID: 12446
+// Module ID: 12444
+// Function ID: 12445
 // Name: ButtonBadge
 // Dependencies: [19, 21, 4285, 712, 500, 1297, 1348, 4701, 4812, 4281, 8199, 2]
 // Exports: default
 
-// Module 12445 (ButtonBadge)
+// Module 12444 (ButtonBadge)
 import importAllResult from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,7 +18,7 @@ class ButtonBadge {
     if (str === undefined) {
       str = "left";
     }
-    tmp = f54356(false);
+    tmp = f54353(false);
     tmp2 = jsx;
     obj = { size: null, maskSize: 2, style: null, maskColor: null };
     tmp3 = require("DEFAULT_BADGE_SIZE");

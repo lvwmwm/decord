@@ -1,10 +1,10 @@
-// Module ID: 15710
-// Function ID: 15711
+// Module ID: 15709
+// Function ID: 15710
 // Name: useMediaKeyboardConfig
 // Dependencies: [19, 1576, 676, 7140, 11519, 5798, 8148, 9924, 1906, 2]
 // Exports: default
 
-// Module 15710 (useMediaKeyboardConfig)
+// Module 15709 (useMediaKeyboardConfig)
 import noop from "noop";
 import { MediaKeyboardTarget } from "DRAG_HANDLE";
 import ME from "ME";

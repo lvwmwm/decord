@@ -1,10 +1,10 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16568
+// Function ID: 16569
 // Name: RoleCreateScene
-// Dependencies: [5, 32, 19, 17, 1415, 1935, 1874, 8944, 16570, 676, 21, 4285, 5235, 712, 698, 4479, 4281, 1236, 16568, 589, 38, 3918, 1480, 5913, 5238, 5200, 3985, 16567, 4253, 15289, 1959, 4693, 7713, 5649, 5315, 13813, 688, 4695, 16574, 16575, 8943, 16576, 5310, 4681, 4691, 5731, 4711, 5665, 2]
+// Dependencies: [5, 32, 19, 17, 1415, 1935, 1874, 8944, 16569, 676, 21, 4285, 5235, 712, 698, 4479, 4281, 1236, 16567, 589, 38, 3918, 1480, 5913, 5238, 5200, 3985, 16566, 4253, 15288, 1959, 4693, 7713, 5649, 5315, 13812, 688, 4695, 16573, 16574, 8943, 16575, 5310, 4681, 4691, 5731, 4711, 5665, 2]
 // Exports: default
 
-// Module 16569 (RoleCreateScene)
+// Module 16568 (RoleCreateScene)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import TextInput from "TextInput";
 import importAllResult from "initialize";
@@ -71,125 +71,79 @@ function RoleCreateScene() {
   const items2 = [first, stateFromStores.id, str, navigation];
   const items3 = [first, callback];
   const callback1 = callback.useCallback(callback(function*() {
-    if (c4 === 2) {
-      c4 = 3;
-      HermesBuiltin.throwTypeError();
-    } else if (tmp6 === 3) {
-      if (arg0 === 1) {
-        throw arg1;
-      } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
-        obj[0] = arg1;
-        return obj;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === dependencyMap) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            let closure_1 = tmp3;
-            let closure_0 = tmp3;
-            let c2 = 1;
-            outer1_5(true);
-            let num5 = dependencyMap;
-            if (dependencyMap === outer1_17) {
-              num5 = 0;
-            }
-            dependencyMap = 2;
-            c4 = 1;
-            let obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(5200).createRole(outer1_1.id, c2, num5);
-            return obj1;
-          }
-        } else {
-          if (1 === tmp7) {
-            c2 = 0;
-            callback(false);
-            obj1 = outer1_0(3985);
-            const result = obj1.roleCreateFailedToast();
-            c4 = 3;
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw arg1;
-          } else if (arg0 !== 2) {
-            const result1 = outer1_12.addConditionalChangeListener(() => {
-              let guild;
-              let selectedRoleId;
-              let obj = outer1_12;
-              const props = outer1_12.getProps();
-              ({ guild, selectedRoleId } = props);
-              if (null != guild) {
-                if (null != selectedRoleId) {
-                  const role = outer1_10.getRole(guild.id, selectedRoleId);
-                }
-              }
-              if (null != selectedRoleId) {
-                if (null != role) {
-                  if (null != guild) {
-                    tmp3(3985).roleCreatedToast();
-                    const obj5 = tmp3(3985);
-                    const tmp13 = tmp3;
-                    tmp3(16567).setRoleJustCreated(true);
-                    let STEP_MEMBERS = outer1_25.STEP_PERMISSIONS;
-                    const guild2 = obj.getProps().guild;
-                    tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
-                    const currentUser = outer1_11.getCurrentUser();
-                    const tmp23 = outer1_9(guild2, currentUser);
-                    const obj6 = tmp3(16567);
-                    const tmp18 = tmp32;
-                    obj = { permission: null, user: null, context: null };
-                    obj[0] = outer1_20.ADMINISTRATOR;
-                    obj[1] = currentUser;
-                    obj[2] = guild2;
-                    let tmp4 = !tmp23;
-                    if (!tmp23) {
-                      tmp4 = !obj7.can(obj);
-                    }
-                    if (tmp4) {
-                      STEP_MEMBERS = tmp17.STEP_MEMBERS;
-                    }
-                    tmp3.push(STEP_MEMBERS);
-                    obj7 = v0(3918);
-                    obj = { flow_type: null, from_step: null, to_step: null, skip: false };
-                    obj[0] = outer1_19.GUILD_ROLE_CREATION_MODAL;
-                    obj[1] = outer1_26[outer1_25.STEP_DISPLAY];
-                    obj[2] = outer1_26[STEP_MEMBERS];
-                    const tmp18Result = tmp18(698);
-                    const merged = Object.assign(tmp13(4479).collectGuildAnalyticsMetadata(guild.id));
-                    tmp18Result.track(outer1_18.USER_FLOW_TRANSITION, obj);
-                    return false;
-                  }
-                }
-              }
-              return true;
-            });
-            c2 = 0;
-          }
-          c2 = 0;
-          c4 = 3;
-          obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        }
-      } catch (tmp25) {
-        if (tmp4 === c2) {
-          c4 = tmp2;
-          throw tmp25;
-        } else {
-          dependencyMap = tmp;
-        }
-      }
+    let closure_1 = tmp3;
+    let closure_0 = tmp3;
+    let c2 = 1;
+    outer1_5(true);
+    if (dependencyMap === outer1_17) {
+      const num5 = 0;
     }
+    yield outer1_1(5200).createRole(outer1_1.id, c2, num5);
+    if (1 === tmp7) {
+      c2 = 0;
+      callback(false);
+      const obj1 = outer1_0(3985);
+      const result = obj1.roleCreateFailedToast();
+      let c4 = 3;
+    } else if (arg0 === 1) {
+      c4 = 3;
+      throw arg1;
+    } else if (arg0 !== 2) {
+      const result1 = outer1_12.addConditionalChangeListener(() => {
+        let guild;
+        let selectedRoleId;
+        let obj = outer1_12;
+        const props = outer1_12.getProps();
+        ({ guild, selectedRoleId } = props);
+        if (null != guild) {
+          if (null != selectedRoleId) {
+            const role = outer1_10.getRole(guild.id, selectedRoleId);
+          }
+        }
+        if (null != selectedRoleId) {
+          if (null != role) {
+            if (null != guild) {
+              tmp3(3985).roleCreatedToast();
+              const obj5 = tmp3(3985);
+              const tmp13 = tmp3;
+              tmp3(16566).setRoleJustCreated(true);
+              let STEP_MEMBERS = outer1_25.STEP_PERMISSIONS;
+              const guild2 = obj.getProps().guild;
+              tmp32(38)(null != guild2, "shouldSkipPermissions: Guild cannot be null");
+              const currentUser = outer1_11.getCurrentUser();
+              const tmp23 = outer1_9(guild2, currentUser);
+              const obj6 = tmp3(16566);
+              const tmp18 = tmp32;
+              obj = { permission: null, user: null, context: null };
+              obj[0] = outer1_20.ADMINISTRATOR;
+              obj[1] = currentUser;
+              obj[2] = guild2;
+              let tmp4 = !tmp23;
+              if (!tmp23) {
+                tmp4 = !obj7.can(obj);
+              }
+              if (tmp4) {
+                STEP_MEMBERS = tmp17.STEP_MEMBERS;
+              }
+              tmp3.push(STEP_MEMBERS);
+              obj7 = v0(3918);
+              obj = { flow_type: null, from_step: null, to_step: null, skip: false };
+              obj[0] = outer1_19.GUILD_ROLE_CREATION_MODAL;
+              obj[1] = outer1_26[outer1_25.STEP_DISPLAY];
+              obj[2] = outer1_26[STEP_MEMBERS];
+              const tmp18Result = tmp18(698);
+              const merged = Object.assign(tmp13(4479).collectGuildAnalyticsMetadata(guild.id));
+              tmp18Result.track(outer1_18.USER_FLOW_TRANSITION, obj);
+              return false;
+            }
+          }
+        }
+        return true;
+      });
+      c2 = 0;
+    }
+    c2 = 0;
+    return arg1;
   }), items2);
   obj = { title: null, subtitle: null, children: null };
   callback2 = callback.useCallback(() => {

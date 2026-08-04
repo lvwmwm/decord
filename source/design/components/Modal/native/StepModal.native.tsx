@@ -1,10 +1,10 @@
-// Module ID: 13333
-// Function ID: 13334
+// Module ID: 13332
+// Function ID: 13333
 // Name: StepModal
-// Dependencies: [32, 19, 17, 21, 4285, 5235, 1581, 11248, 13334, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 5235, 1581, 11248, 13333, 2]
 // Exports: StepModal
 
-// Module 13333 (StepModal)
+// Module 13332 (StepModal)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -63,7 +63,7 @@ export const StepModal = function StepModal(steps) {
     num = 0;
   }
   obj2[1] = num;
-  obj1[2] = callback2(steps(13334).ModalStepIndicator, obj2);
+  obj1[2] = callback2(steps(13333).ModalStepIndicator, obj2);
   items1[1] = callback2(View, obj1);
   obj[1] = items1;
   return closure_7(View, obj);

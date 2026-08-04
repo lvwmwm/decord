@@ -1,7 +1,7 @@
 // Module ID: 4266
 // Function ID: 4267
 // Name: parseQuery
-// Dependencies: [32, 676, 678, 4267, 4268, 1464, 3984, 1469, 4269, 4274, 12132, 4519, 13103, 1467, 4476, 10424, 6777, 1577, 500, 9140, 698, 513, 13104, 2]
+// Dependencies: [32, 676, 678, 4267, 4268, 1464, 3984, 1469, 4269, 4274, 12131, 4519, 13102, 1467, 4476, 10424, 6777, 1577, 500, 9140, 698, 513, 13103, 2]
 // Exports: default
 
 // Module 4266 (parseQuery)
@@ -171,7 +171,7 @@ export default function parseURL(arg0) {
                                   if (tmp5(4274).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU !== type) {
                                     if (tmp5(4274).CodedLinkType.APP_OAUTH2_LINK !== type) {
                                       if (tmp5(4274).CodedLinkType.COLLECTIBLES_SHOP === type) {
-                                        let tmp5Result = tmp5(12132);
+                                        let tmp5Result = tmp5(12131);
                                         const tmp10 = callback(findCodedLinkResult.code.split("-"), 2)[1];
                                         if (tmp5Result.isVirtualCurrencyEnabled().enabled) {
                                           if (tmp9 === constants2.ORBS) {
@@ -238,7 +238,7 @@ export default function parseURL(arg0) {
       obj13[3] = obj14;
       return obj13;
     } else {
-      tmp5Result = tmp5(13103);
+      tmp5Result = tmp5(13102);
       const result = tmp5Result.findRemoteAuthFingerprint(host, pathname);
       if (null != result) {
         if (result.length > 0) {
@@ -593,8 +593,8 @@ export default function parseURL(arg0) {
                         const obj59 = { type: null, guildId: null, settingsSection: null, settingsSubsection: null };
                         obj59[0] = closure_7.GUILD_SETTINGS;
                         obj59[1] = tmp41[1];
-                        obj59[2] = uRL(13104)(closure_5, tmp41[2]);
-                        obj59[3] = uRL(13104)(closure_6, tmp41[3]);
+                        obj59[2] = uRL(13103)(closure_5, tmp41[2]);
+                        obj59[3] = uRL(13103)(closure_6, tmp41[3]);
                         obj58[3] = obj59;
                         return obj58;
                       } else {
@@ -612,8 +612,8 @@ export default function parseURL(arg0) {
                           obj60[2] = installationId;
                           const obj61 = { type: null, settingsSection: null, settingsSubsection: null, feature: null };
                           obj61[0] = closure_7.GUILD_SETTINGS_PICKER;
-                          obj61[1] = uRL(13104)(closure_5, tmp36[1]);
-                          obj61[2] = uRL(13104)(closure_6, tmp36[2]);
+                          obj61[1] = uRL(13103)(closure_5, tmp36[1]);
+                          obj61[2] = uRL(13103)(closure_6, tmp36[2]);
                           obj61[3] = tmp87(str7).feature;
                           obj60[3] = obj61;
                           return obj60;

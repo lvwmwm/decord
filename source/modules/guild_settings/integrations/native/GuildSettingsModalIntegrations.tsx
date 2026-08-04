@@ -1,10 +1,10 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 16515
+// Function ID: 16516
 // Name: PlatformTypes
-// Dependencies: [19, 17, 3913, 8944, 676, 21, 4285, 712, 3989, 1480, 589, 4221, 16480, 7777, 4693, 5649, 5315, 1236, 15681, 15784, 13755, 4966, 1416, 4131, 5596, 2]
+// Dependencies: [19, 17, 3913, 8944, 676, 21, 4285, 712, 3989, 1480, 589, 4221, 16479, 7777, 4693, 5649, 5315, 1236, 15680, 15783, 13754, 4966, 1416, 4131, 5596, 2]
 // Exports: default
 
-// Module 16516 (PlatformTypes)
+// Module 16515 (PlatformTypes)
 import "ChannelsFollowedIcon";
 import { Image } from "getSystemLocale";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

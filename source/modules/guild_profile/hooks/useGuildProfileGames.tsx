@@ -1,10 +1,10 @@
-// Module ID: 12116
-// Function ID: 12117
+// Module ID: 12115
+// Function ID: 12116
 // Name: useGuildProfileGames
 // Dependencies: [19, 4307, 4306, 1218, 589, 7002, 1351, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 12116 (useGuildProfileGames)
+// Module 12115 (useGuildProfileGames)
 import noop from "noop";
 import applicationId from "applicationId";
 import handleLoadMessages from "handleLoadMessages";

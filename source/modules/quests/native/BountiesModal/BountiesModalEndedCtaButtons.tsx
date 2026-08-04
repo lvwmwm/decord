@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14192
+// Function ID: 14193
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 4285, 712, 10403, 4146, 4286, 4289, 14188, 4695, 10405, 7108, 5133, 7107, 1236, 2]
+// Dependencies: [21, 4285, 712, 10403, 4146, 4286, 4289, 14187, 4695, 10405, 7108, 5133, 7107, 1236, 2]
 // Exports: default
 
-// Module 14193 (BountiesModalEndedCtaButtons)
+// Module 14192 (BountiesModalEndedCtaButtons)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -51,7 +51,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
   fn.__workletHash = 11417131685254;
   fn.__initData = closure_6;
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  bounty(14188);
+  bounty(14187);
   if (visible) {
     obj = { style: null, children: null };
     const items = [tmp.container, animatedStyle];

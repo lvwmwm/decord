@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12372
+// Function ID: 12373
 // Name: usePageHeights
 // Dependencies: [32, 19, 4146, 1474, 1581, 2]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 12373 (usePageHeights)
+// Module 12372 (usePageHeights)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

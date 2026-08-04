@@ -1,9 +1,9 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 16212
+// Function ID: 16213
 // Name: FORMAT_RE
 // Dependencies: [2]
 
-// Module 16213 (FORMAT_RE)
+// Module 16212 (FORMAT_RE)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/i18n/Constants.tsx");
 
 export const FORMAT_RE = /\{.+?\}/;

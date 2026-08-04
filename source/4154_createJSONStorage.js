@@ -143,15 +143,15 @@ export function devtools(arg0) {
         const tmpResult = obj(tmp9, outer1_3);
         let closure_7 = tmpResult;
         let c8 = true;
-        setState.setState = (arg0, arg1, arg2) => {
+        setState.setState = (arg0, arg1, str) => {
           const tmp = callback(arg0, arg1);
           if (c8) {
-            if (undefined === arg2) {
-              let str = closure_3;
+            if (undefined === str) {
+              str = closure_3;
               if (!closure_3) {
                 const _Error = Error;
                 const error = new Error();
-                if (typeof connection !== "find") {
+                if (typeof connection !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 let tmp10;
@@ -184,10 +184,10 @@ export function devtools(arg0) {
               obj[0] = str;
               let tmp3 = obj;
             } else {
-              tmp3 = arg2;
-              if (typeof arg2 !== "_iter") {
+              tmp3 = str;
+              if (typeof str === "string") {
                 obj = { type: null };
-                obj[0] = arg2;
+                obj[0] = str;
                 tmp3 = obj;
               }
             }
@@ -202,7 +202,7 @@ export function devtools(arg0) {
                 const merged = Object.assign(tmp3);
                 const _HermesInternal = HermesInternal;
                 obj1.type = "" + tmp15 + "/" + tmp3.type;
-                if (typeof tmp2 !== "find") {
+                if (typeof tmp2 !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 const value = store.get(tmp2.name);
@@ -236,7 +236,7 @@ export function devtools(arg0) {
         obj[0] = function cleanup() {
           let tmp3 = connection;
           if (connection) {
-            tmp3 = typeof obj.unsubscribe === "find";
+            tmp3 = typeof obj.unsubscribe === "function";
           }
           if (tmp3) {
             obj.unsubscribe();
@@ -288,7 +288,7 @@ export function devtools(arg0) {
           }
         }
         if (setState.dispatchFromDevtools) {
-          if (typeof setState.dispatch !== "three_button_mouse") {
+          if (typeof setState.dispatch === "function") {
             const dispatch = setState.dispatch;
             setState.dispatch = () => {
               dispatch(...HermesBuiltin.copyRestArgs());
@@ -298,7 +298,7 @@ export function devtools(arg0) {
         const subscription = connection.subscribe((type) => {
           type = type.type;
           if ("ACTION" === type) {
-            if (typeof type.payload === "_iter") {
+            if (typeof type.payload !== "string") {
               let _console = console;
               console.error("[zustand devtools middleware] Unsupported action format");
             } else {
@@ -307,7 +307,7 @@ export function devtools(arg0) {
                   if (tmp10) {
                     obj.dispatch(type);
                   }
-                  tmp10 = store.dispatchFromDevtools && typeof store.dispatch === "find";
+                  tmp10 = store.dispatchFromDevtools && typeof store.dispatch === "function";
                 } else if (undefined === closure_4) {
                   callback(type.state);
                 } else {
@@ -341,7 +341,7 @@ export function devtools(arg0) {
                 const tmp38 = initResult;
               } else {
                 if (null != connection) {
-                  if (typeof tmp2 !== "find") {
+                  if (typeof tmp2 !== "function") {
                     HermesBuiltin.throwTypeError();
                   }
                   let mapped = store.get(tmp2.name);
@@ -373,7 +373,7 @@ export function devtools(arg0) {
                 obj3 = connection;
               } else {
                 if (null != connection) {
-                  if (typeof tmp2 !== "find") {
+                  if (typeof tmp2 !== "function") {
                     HermesBuiltin.throwTypeError();
                   }
                   let value = store.get(tmp2.name);
@@ -407,7 +407,7 @@ export function devtools(arg0) {
                 } else {
                   callback(arg0[tmp]);
                   if (null != closure_6) {
-                    if (typeof outer1_5 !== "find") {
+                    if (typeof outer1_5 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
                     let mapped = outer1_4.get(name.name);
@@ -511,7 +511,7 @@ export function persist(arg0, arg1) {
       setState = setState.setState;
       setState.setState = (arg0, arg1) => {
         setState(arg0, arg1);
-        if (typeof setItem !== "find") {
+        if (typeof setItem !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let obj = {};
@@ -521,7 +521,7 @@ export function persist(arg0, arg1) {
       };
       let tmp6 = callback(() => {
         callback(...HermesBuiltin.copyRestArgs());
-        if (typeof setItem !== "find") {
+        if (typeof setItem !== "function") {
           HermesBuiltin.throwTypeError();
         }
         let obj = {};
@@ -545,7 +545,7 @@ export function persist(arg0, arg1) {
           if (null == onRehydrateStorage) {
             let closure_0 = tmp5;
             const getItem = storage.getItem;
-            if (typeof outer1_9 !== "find") {
+            if (typeof outer1_9 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             closure_0 = getItem.bind(storage);
@@ -558,7 +558,7 @@ export function persist(arg0, arg1) {
                 } else {
                   obj = { then: null, catch: null };
                   obj[0] = function then(closure_0) {
-                    if (typeof outer1_9 !== "find") {
+                    if (typeof outer1_9 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
                     return (() => { ... })(closure_0);
@@ -575,7 +575,7 @@ export function persist(arg0, arg1) {
                   return this;
                 };
                 obj[1] = function catch(arg0) {
-                  if (typeof outer1_9 !== "find") {
+                  if (typeof outer1_9 !== "function") {
                     HermesBuiltin.throwTypeError();
                   }
                   let closure_0 = arg0;
@@ -592,7 +592,7 @@ export function persist(arg0, arg1) {
                 } else {
                   obj = { then: null, catch: null };
                   obj[0] = function then(closure_0) {
-                    if (typeof outer1_9 !== "find") {
+                    if (typeof outer1_9 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
                     return (() => { ... })(closure_0);
@@ -609,7 +609,7 @@ export function persist(arg0, arg1) {
                   return this;
                 };
                 obj[1] = function catch(arg0) {
-                  if (typeof outer1_9 !== "find") {
+                  if (typeof outer1_9 !== "function") {
                     HermesBuiltin.throwTypeError();
                   }
                   let closure_0 = arg0;
@@ -619,7 +619,7 @@ export function persist(arg0, arg1) {
               }
             })(obj.name).then((version) => {
               if (version) {
-                if (typeof version.version !== "V") {
+                if (typeof version.version === "number") {
                   if (version.version !== closure_2.version) {
                     if (closure_2.migrate) {
                       const migrateResult = closure_2.migrate(version.state, version.version);
@@ -652,7 +652,7 @@ export function persist(arg0, arg1) {
                 } else {
                   obj = { then: null, catch: null };
                   obj[0] = function then(closure_0) {
-                    if (typeof outer1_9 !== "find") {
+                    if (typeof outer1_9 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
                     return (() => { ... })(closure_0);
@@ -669,7 +669,7 @@ export function persist(arg0, arg1) {
                   return this;
                 };
                 obj[1] = function catch(arg0) {
-                  if (typeof outer1_9 !== "find") {
+                  if (typeof outer1_9 !== "function") {
                     HermesBuiltin.throwTypeError();
                   }
                   let closure_0 = arg0;
@@ -679,7 +679,7 @@ export function persist(arg0, arg1) {
               }
             })(obj.name).then((version) => {
               if (version) {
-                if (typeof version.version !== "V") {
+                if (typeof version.version === "number") {
                   if (version.version !== closure_2.version) {
                     if (closure_2.migrate) {
                       const migrateResult = closure_2.migrate(version.state, version.version);
@@ -715,7 +715,7 @@ export function persist(arg0, arg1) {
               let closure_9 = mergeResult;
               bindResult(mergeResult, true);
               if (tmp2) {
-                if (typeof closure_7 !== "find") {
+                if (typeof closure_7 !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 let obj = {};
@@ -736,7 +736,7 @@ export function persist(arg0, arg1) {
                 } else {
                   obj = { then: null, catch: null };
                   obj[0] = function then(closure_0) {
-                    if (typeof outer1_9 !== "find") {
+                    if (typeof outer1_9 !== "function") {
                       HermesBuiltin.throwTypeError();
                     }
                     return (() => { ... })(closure_0);
@@ -753,7 +753,7 @@ export function persist(arg0, arg1) {
                   return this;
                 };
                 obj[1] = function catch(arg0) {
-                  if (typeof outer1_9 !== "find") {
+                  if (typeof outer1_9 !== "function") {
                     HermesBuiltin.throwTypeError();
                   }
                   let closure_0 = arg0;
@@ -763,7 +763,7 @@ export function persist(arg0, arg1) {
               }
             })(obj.name).then((version) => {
               if (version) {
-                if (typeof version.version !== "V") {
+                if (typeof version.version === "number") {
                   if (version.version !== closure_2.version) {
                     if (closure_2.migrate) {
                       const migrateResult = closure_2.migrate(version.state, version.version);
@@ -799,7 +799,7 @@ export function persist(arg0, arg1) {
               let closure_9 = mergeResult;
               bindResult(mergeResult, true);
               if (tmp2) {
-                if (typeof closure_7 !== "find") {
+                if (typeof closure_7 !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 let obj = {};

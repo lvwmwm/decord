@@ -1,10 +1,10 @@
-// Module ID: 15351
-// Function ID: 15352
+// Module ID: 15350
+// Function ID: 15351
 // Name: componentWillEnter
 // Dependencies: [19, 17, 4277, 676, 21, 4285, 5204, 712, 4129, 3997, 4254, 4255, 1297, 1236, 589, 10206, 2]
 // Exports: default
 
-// Module 15351 (componentWillEnter)
+// Module 15350 (componentWillEnter)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

@@ -1,10 +1,10 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15554
+// Function ID: 15555
 // Name: ResourceChannelRow
-// Dependencies: [19, 17, 1372, 1932, 4502, 3913, 676, 21, 4285, 712, 589, 8216, 11312, 15556, 6826, 11569, 1416, 4812, 4281, 4275, 15549, 1222, 1236, 15557, 4695, 2]
+// Dependencies: [19, 17, 1372, 1932, 4502, 3913, 676, 21, 4285, 712, 589, 8216, 11312, 15555, 6826, 11569, 1416, 4812, 4281, 4275, 15548, 1222, 1236, 15556, 4695, 2]
 // Exports: default
 
-// Module 15555 (ResourceChannelRow)
+// Module 15554 (ResourceChannelRow)
 import getDefaultRules from "get defaultRules";
 import get_ActivityIndicator from "PressableBase";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -54,7 +54,7 @@ function ResourceChannelRow(channelId) {
   }
   let tmp2Result = tmp2(11312);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(15556)(firstResult);
+  const tmp11 = stateFromStores(15555)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -179,7 +179,7 @@ const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
   const tmp = createCacheKey();
-  const arr = importDefault(15549)(guildId);
+  const arr = importDefault(15548)(guildId);
   if (0 === arr.length) {
     let obj = { style: null, children: null };
     obj[0] = tmp.emptyStateContainer;
@@ -189,7 +189,7 @@ export default function GuildHomeResources(guildId) {
     const items = [callback(guildId(4281).Text, obj), , ];
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.emptyStateImage;
-    obj1[1] = importDefault(15557);
+    obj1[1] = importDefault(15556);
     items[1] = callback(closure_5, obj1);
     const obj2 = { onPress: null, text: null };
     obj2[0] = function onPress() {

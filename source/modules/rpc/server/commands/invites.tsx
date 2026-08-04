@@ -1,9 +1,9 @@
-// Module ID: 13650
-// Function ID: 13651
+// Module ID: 13649
+// Function ID: 13650
 // Name: items
-// Dependencies: [5, 1371, 1372, 4188, 676, 505, 13651, 8824, 10544, 10874, 13654, 692, 10513, 2]
+// Dependencies: [5, 1371, 1372, 4188, 676, 505, 13650, 8824, 10544, 10874, 13653, 692, 10513, 2]
 
-// Module 13650 (items)
+// Module 13649 (items)
 import closure_2 from "sum";
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -110,7 +110,7 @@ obj[1] = function handler(arg0) {
                   obj8[0] = obj5.sendEmbeddedActivityInviteUser(obj6);
                   return obj8;
                 }
-                obj4 = outer1_0(13654);
+                obj4 = outer1_0(13653);
                 channel = obj4.validateOpenInviteDialog().channel;
               }
             }

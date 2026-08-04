@@ -1,10 +1,10 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12778
+// Function ID: 12779
 // Name: items
-// Dependencies: [19, 17, 4277, 21, 4285, 712, 1236, 12780, 5601, 12781, 12782, 4281, 11835, 2]
+// Dependencies: [19, 17, 4277, 21, 4285, 712, 1236, 12779, 5601, 12780, 12781, 4281, 11835, 2]
 // Exports: default
 
-// Module 12779 (items)
+// Module 12778 (items)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -37,7 +37,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12780) });
+      return callback(closure_3, { style, source: importDefault(12779) });
     }
   },
   {
@@ -51,7 +51,7 @@ let items = [
     },
     getGraphic(arg0) {
       const obj = { source: null, autoPlay: null, style: null };
-      obj[0] = require(12781);
+      obj[0] = require(12780);
       obj[1] = !useReducedMotion.useReducedMotion;
       obj[2] = arg0;
       return callback(importDefault(5601), obj);
@@ -67,7 +67,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12782) });
+      return callback(closure_3, { style, source: importDefault(12781) });
     }
   }
 ];
@@ -82,7 +82,7 @@ const obj2 = {
     return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
   },
   getGraphic(style) {
-    return callback(closure_3, { style, source: importDefault(12780) });
+    return callback(closure_3, { style, source: importDefault(12779) });
   }
 };
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");

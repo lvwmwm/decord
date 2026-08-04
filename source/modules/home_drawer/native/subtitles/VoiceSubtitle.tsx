@@ -1,10 +1,10 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15319
+// Function ID: 15320
 // Name: VoiceSubtitle
 // Dependencies: [19, 21, 4281, 1236, 4474, 2]
 // Exports: default
 
-// Module 15320 (VoiceSubtitle)
+// Module 15319 (VoiceSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 

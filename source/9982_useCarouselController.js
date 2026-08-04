@@ -177,14 +177,14 @@ export const useCarouselController = function useCarouselController(size) {
             if (useCallback != null) {
               tmp12 = useCallback();
             }
-            tmp13 = f83831;
-            sum = f83831() + num;
+            tmp13 = f83827;
+            sum = f83827() + num;
             tmp6.value = sum;
             tmp15 = handlerOffset;
             tmp16 = -sum;
             if (tmp) {
-              tmp18 = f83837;
-              tmp15.value = f83837(tmp16 * tmp7, onFinished);
+              tmp18 = f83833;
+              tmp15.value = f83833(tmp16 * tmp7, onFinished);
             } else {
               tmp15.value = tmp16 * tmp7;
               if (onFinished != null) {
@@ -290,7 +290,7 @@ export const useCarouselController = function useCarouselController(size) {
     }
     ({ index, count, animated } = obj);
     const onFinished = obj.onFinished;
-    if (typeof index !== "V") {
+    if (typeof index === "number") {
       if (index > -1) {
         obj = { i: null, animated: null, onFinished: null };
         obj[0] = index;

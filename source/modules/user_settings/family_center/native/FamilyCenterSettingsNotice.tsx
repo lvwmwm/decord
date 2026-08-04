@@ -1,10 +1,10 @@
-// Module ID: 13967
-// Function ID: 13968
+// Module ID: 13966
+// Function ID: 13967
 // Name: FamilyCenterSettingsParentalControlsNotice
-// Dependencies: [19, 7702, 21, 7259, 13898, 2285, 6955, 4295, 2]
+// Dependencies: [19, 7702, 21, 7259, 13897, 2285, 6955, 4295, 2]
 // Exports: default
 
-// Module 13967 (FamilyCenterSettingsParentalControlsNotice)
+// Module 13966 (FamilyCenterSettingsParentalControlsNotice)
 import "noop";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -25,5 +25,5 @@ export default function FamilyCenterSettingsParentalControlsNotice() {
     outer1_1(outer1_2[7]).openPrivateChannel(obj);
   };
   obj[3] = activeLinkUserIds.length;
-  return jsx(importDefault(13898), { label: null, noticeType: null, labelHook: null, count: null });
+  return jsx(importDefault(13897), { label: null, noticeType: null, labelHook: null, count: null });
 };

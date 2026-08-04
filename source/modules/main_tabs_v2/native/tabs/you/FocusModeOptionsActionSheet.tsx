@@ -1,10 +1,10 @@
-// Module ID: 15373
-// Function ID: 15374
+// Module ID: 15372
+// Function ID: 15373
 // Name: label
 // Dependencies: [19, 21, 687, 1236, 9678, 5646, 5649, 5315, 2]
 // Exports: default
 
-// Module 15373 (label)
+// Module 15372 (label)
 import "noop";
 import jsxProd from "jsxProd";
 

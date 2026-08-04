@@ -1,10 +1,10 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 15850
+// Function ID: 15851
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 7892, 21, 1236, 1351, 3931, 10361, 13795, 2]
+// Dependencies: [19, 7892, 21, 1236, 1351, 3931, 10361, 13794, 2]
 // Exports: default
 
-// Module 15851 (SettingsOverviewScreen)
+// Module 15850 (SettingsOverviewScreen)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -87,5 +87,5 @@ export default function SettingsOverviewScreen() {
     obj1[0] = items1;
     return obj.createList(obj1);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(13795).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(13794).SearchableSettingsList, { node });
 };

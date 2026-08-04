@@ -1,10 +1,10 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 15214
+// Function ID: 15215
 // Name: HubSidebarProgressOverview
-// Dependencies: [19, 8999, 21, 11937, 1236, 11747, 13230, 4253, 11941, 1959, 2]
+// Dependencies: [19, 8999, 21, 11936, 1236, 11747, 13229, 4253, 11940, 1959, 2]
 // Exports: default
 
-// Module 15215 (HubSidebarProgressOverview)
+// Module 15214 (HubSidebarProgressOverview)
 import "noop";
 import items from "items";
 import { jsx } from "jsxProd";
@@ -17,14 +17,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/hub/native/comp
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  let obj = guild(11937);
+  let obj = guild(11936);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  const nextHubProgressStep = guild(11937).getNextHubProgressStep(hubProgressBarCompletedSteps);
+  const nextHubProgressStep = guild(11936).getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     const size = hubProgressBarCompletedSteps.size;
-    const hubProgressTitleForStep = tmp(11937).getHubProgressTitleForStep(nextHubProgressStep);
+    const hubProgressTitleForStep = tmp(11936).getHubProgressTitleForStep(nextHubProgressStep);
     if (size < closure_4) {
       const intl2 = tmp(1236).intl;
       obj = { number: null, total: null };
@@ -47,7 +47,7 @@ export default function HubSidebarProgressOverview(guild) {
     obj[1] = hubProgressTitleForStep;
     obj[2] = formatToPlainStringResult;
     obj[3] = bound;
-    return jsx(tmp(13230).GuildProgressOverviewView, { onPress: null, title: null, subtitle: null, percentComplete: null });
+    return jsx(tmp(13229).GuildProgressOverviewView, { onPress: null, title: null, subtitle: null, percentComplete: null });
   }
-  const obj2 = guild(11937);
+  const obj2 = guild(11936);
 };

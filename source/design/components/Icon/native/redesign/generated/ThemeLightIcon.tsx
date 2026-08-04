@@ -1,10 +1,10 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 14403
+// Function ID: 14404
 // Name: ThemeLightIcon
-// Dependencies: [19, 21, 712, 3988, 14405, 2]
+// Dependencies: [19, 21, 712, 3988, 14404, 2]
 // Exports: ThemeLightIcon
 
-// Module 14404 (ThemeLightIcon)
+// Module 14403 (ThemeLightIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ThemeLightIcon = function ThemeLightIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14405) /* registerAsset */;
+  obj[0] = require(14404) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

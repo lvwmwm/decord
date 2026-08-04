@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16585
+// Function ID: 16586
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [19, 17, 1936, 16571, 16570, 676, 16573, 21, 4285, 712, 4723, 589, 5635, 5634, 1297, 16587, 4253, 15289, 1959, 16585, 16588, 16589, 7713, 1236, 16591, 5649, 5315, 4706, 1351, 688, 13813, 4241, 4281, 2317, 5650, 2]
+// Dependencies: [19, 17, 1936, 16570, 16569, 676, 16572, 21, 4285, 712, 4723, 589, 5635, 5634, 1297, 16586, 4253, 15288, 1959, 16584, 16587, 16588, 7713, 1236, 16590, 5649, 5315, 4706, 1351, 688, 13812, 4241, 4281, 2317, 5650, 2]
 // Exports: default
 
-// Module 16586 (GuildSettingsRoleEditDisplay)
+// Module 16585 (GuildSettingsRoleEditDisplay)
 import AsyncFromSyncIterator from "AsyncFromSyncIterator";
 import { View } from "items";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";

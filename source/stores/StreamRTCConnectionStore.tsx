@@ -1,7 +1,7 @@
 // Module ID: 4370
 // Function ID: 4371
 // Name: initialize
-// Dependencies: [4305, 1218, 4332, 4371, 4356, 676, 4349, 38, 4373, 12, 4348, 7118, 709, 4381, 500, 589, 12974, 2]
+// Dependencies: [4305, 1218, 4332, 4371, 4356, 676, 4349, 38, 4373, 12, 4348, 7118, 709, 4381, 500, 589, 12973, 2]
 
 // Module 4370 (initialize)
 import initialize from "initialize";
@@ -42,7 +42,7 @@ prototype["getRTCConnection"] = function getRTCConnection(arg0) {
   return dependencyMap3[arg0];
 };
 prototype["getQuality"] = function getQuality(arg0) {
-  if (importDefault(12974)(closure_6)) {
+  if (importDefault(12973)(closure_6)) {
     if (null != arg0) {
       let quality;
       if (dependencyMap3[arg0] != null) {

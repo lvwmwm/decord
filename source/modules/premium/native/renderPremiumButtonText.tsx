@@ -1,10 +1,10 @@
-// Module ID: 12747
-// Function ID: 12748
+// Module ID: 12746
+// Function ID: 12747
 // Name: PremiumText
 // Dependencies: [19, 17, 1876, 21, 4285, 4129, 712, 3931, 1236, 1297, 2]
 // Exports: default
 
-// Module 12747 (PremiumText)
+// Module 12746 (PremiumText)
 import "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";

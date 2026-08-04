@@ -1,9 +1,9 @@
-// Module ID: 13636
-// Function ID: 13637
+// Module ID: 13635
+// Function ID: 13636
 // Name: readFavoriteGIFs
 // Dependencies: [685, 676, 589, 1341, 12, 1342, 595, 11, 2]
 
-// Module 13636 (readFavoriteGIFs)
+// Module 13635 (readFavoriteGIFs)
 import MAX_FAVORITES from "MAX_FAVORITES";
 import { ID_REGEX } from "ME";
 
@@ -114,12 +114,15 @@ let items = [
           if (null != favorites) {
             const _Object = Object;
             if (0 !== Object.keys(favorites).length) {
+              let obj = favorites;
               if (null == favorites.favorites) {
                 favorites.favorites = [];
+                obj = favorites;
               }
             }
-            return { usageHistory: {}, favorites: [] };
+            return obj;
           }
+          obj = { usageHistory: {}, favorites: [] };
         }
       ];
       const state = PersistedStore.migrateAndReadStoreState("StickersPersistedStore", items).state;

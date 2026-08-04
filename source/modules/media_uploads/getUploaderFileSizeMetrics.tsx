@@ -1,13 +1,10 @@
 // Module ID: 8172
 // Function ID: 8173
-// Name: sum
+// Name: getUploaderChannelId
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 8172 (sum)
-function sum(arg0) {
-
-}
+// Module 8172 (getUploaderChannelId)
 const result = require("set").fileFinishedImporting("modules/media_uploads/getUploaderFileSizeMetrics.tsx");
 
 export const getUploaderChannelId = function getUploaderChannelId(file) {
@@ -41,9 +38,6 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(it
   if (items.totalPreCompressionSize > 0) {
     let totalPreCompressionSize = items.totalPreCompressionSize;
   } else {
-    if (typeof sum !== "find") {
-      HermesBuiltin.throwTypeError();
-    }
     totalPreCompressionSize = mapped.reduce((arg0, arg1) => arg0 + arg1, 0);
   }
   obj[2] = totalPreCompressionSize;
@@ -54,9 +48,6 @@ export const getUploaderFileSizeMetrics = function getUploaderFileSizeMetrics(it
     obj[3] = totalPostCompressionSize;
     obj[4] = items.attachmentsCount > 0 ? items.attachmentsCount : items.length;
     return obj;
-  }
-  if (typeof sum !== "find") {
-    HermesBuiltin.throwTypeError();
   }
   totalPostCompressionSize = mapped1.reduce((arg0, arg1) => arg0 + arg1, 0);
 };

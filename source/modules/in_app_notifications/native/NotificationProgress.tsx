@@ -25,7 +25,7 @@ function Progress(percent) {
   const fn = function n() {
     let obj = percent;
     let value = percent;
-    if (typeof percent !== "Object") {
+    if (typeof percent !== "number") {
       value = obj.get();
     }
     obj = { translateX: first * (value / 100) - first };
@@ -64,7 +64,7 @@ function RedesignProgress(percent) {
   const fn = function n() {
     let obj = percent;
     let value = percent;
-    if (typeof percent !== "Object") {
+    if (typeof percent !== "number") {
       value = obj.get();
     }
     obj = { translateX: first * (value / 100) - first };

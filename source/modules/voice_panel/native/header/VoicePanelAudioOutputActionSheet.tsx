@@ -1,7 +1,7 @@
 // Module ID: 9097
 // Function ID: 9098
 // Name: VoicePanelAudioPhoneOutputSection
-// Dependencies: [19, 17, 4299, 9074, 1372, 4300, 9096, 676, 21, 4285, 4253, 647, 9098, 9099, 1236, 7795, 7794, 5321, 9070, 10770, 10662, 12125, 4101, 1358, 12126, 5338, 5337, 5663, 2]
+// Dependencies: [19, 17, 4299, 9074, 1372, 4300, 9096, 676, 21, 4285, 4253, 647, 9098, 9099, 1236, 7795, 7794, 5321, 9070, 10770, 10662, 12124, 4101, 1358, 12125, 5338, 5337, 5663, 2]
 
 // Module 9097 (VoicePanelAudioPhoneOutputSection)
 import importAllResult from "useGameConsoleAccounts";

@@ -1,10 +1,10 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 15966
+// Function ID: 15967
 // Name: triggerIOSHaptic
 // Dependencies: [11559, 4254, 2]
 // Exports: default
 
-// Module 15967 (triggerIOSHaptic)
+// Module 15966 (triggerIOSHaptic)
 import { IS_IOS } from "MIN_PAN_GESTURE_MOVE";
 
 let result = require("set").fileFinishedImporting("modules/panels/morphable/native/triggerIOSHaptic.tsx");

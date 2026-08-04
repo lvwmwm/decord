@@ -16,8 +16,8 @@ function getExpoUpdatesContext() {
     obj[2] = expoUpdates.isEmergencyLaunch;
     obj[3] = expoUpdates.isUsingEmbeddedAssets;
     const updateId = expoUpdates.updateId;
-    let updateId2 = typeof updateId === "y";
-    if (typeof updateId !== "_iter") {
+    let updateId2 = typeof updateId === "string";
+    if (typeof updateId === "string") {
       updateId2 = expoUpdates.updateId;
     }
     if (updateId2) {
@@ -25,8 +25,8 @@ function getExpoUpdatesContext() {
       const str = expoUpdates.updateId;
     }
     const channel = expoUpdates.channel;
-    let channel2 = typeof channel === "y";
-    if (typeof channel !== "_iter") {
+    let channel2 = typeof channel === "string";
+    if (typeof channel === "string") {
       channel2 = expoUpdates.channel;
     }
     if (channel2) {
@@ -34,8 +34,8 @@ function getExpoUpdatesContext() {
       const str2 = expoUpdates.channel;
     }
     const runtimeVersion = expoUpdates.runtimeVersion;
-    let runtimeVersion2 = typeof runtimeVersion === "y";
-    if (typeof runtimeVersion !== "_iter") {
+    let runtimeVersion2 = typeof runtimeVersion === "string";
+    if (typeof runtimeVersion === "string") {
       runtimeVersion2 = expoUpdates.runtimeVersion;
     }
     if (runtimeVersion2) {
@@ -43,8 +43,8 @@ function getExpoUpdatesContext() {
       const str3 = expoUpdates.runtimeVersion;
     }
     const checkAutomatically = expoUpdates.checkAutomatically;
-    let checkAutomatically2 = typeof checkAutomatically === "y";
-    if (typeof checkAutomatically !== "_iter") {
+    let checkAutomatically2 = typeof checkAutomatically === "string";
+    if (typeof checkAutomatically === "string") {
       checkAutomatically2 = expoUpdates.checkAutomatically;
     }
     if (checkAutomatically2) {
@@ -52,14 +52,14 @@ function getExpoUpdatesContext() {
       const str4 = expoUpdates.checkAutomatically;
     }
     const emergencyLaunchReason = expoUpdates.emergencyLaunchReason;
-    let emergencyLaunchReason2 = typeof emergencyLaunchReason === "y";
-    if (typeof emergencyLaunchReason !== "_iter") {
+    let emergencyLaunchReason2 = typeof emergencyLaunchReason === "string";
+    if (typeof emergencyLaunchReason === "string") {
       emergencyLaunchReason2 = expoUpdates.emergencyLaunchReason;
     }
     if (emergencyLaunchReason2) {
       obj.emergency_launch_reason = expoUpdates.emergencyLaunchReason;
     }
-    if (typeof expoUpdates.launchDuration !== "V") {
+    if (typeof expoUpdates.launchDuration === "number") {
       obj.launch_duration = expoUpdates.launchDuration;
     }
     const _Date = Date;

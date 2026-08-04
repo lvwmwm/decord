@@ -1,9 +1,9 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14456
+// Function ID: 14457
 // Name: FetchStatus
 // Dependencies: [5, 2]
 
-// Module 14457 (FetchStatus)
+// Module 14456 (FetchStatus)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let obj = { Pending: 0, [0]: "Pending", Fetching: 1, [1]: "Fetching" };

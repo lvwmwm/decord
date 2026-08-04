@@ -1,9 +1,9 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 12939
+// Function ID: 12940
 // Name: _initialize
-// Dependencies: [1942, 1862, 4102, 1874, 676, 3901, 595, 4124, 5229, 4137, 4136, 1384, 4253, 12941, 1959, 2]
+// Dependencies: [1942, 1862, 4102, 1874, 676, 3901, 595, 4124, 5229, 4137, 4136, 1384, 4253, 12940, 1959, 2]
 
-// Module 12940 (_initialize)
+// Module 12939 (_initialize)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";

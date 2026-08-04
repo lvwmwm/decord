@@ -1,10 +1,10 @@
-// Module ID: 14733
-// Function ID: 14734
+// Module ID: 14732
+// Function ID: 14733
 // Name: SkeletonLoading
-// Dependencies: [19, 17, 6910, 678, 676, 21, 9262, 4285, 712, 14228, 14734, 1480, 9265, 589, 4221, 12083, 3989, 4129, 14220, 14222, 5610, 5630, 14735, 698, 4131, 14737, 14738, 12086, 4706, 4281, 4695, 1236, 11080, 5133, 4812, 5660, 5597, 14739, 7666, 2]
+// Dependencies: [19, 17, 6910, 678, 676, 21, 9262, 4285, 712, 14227, 14733, 1480, 9265, 589, 4221, 12082, 3989, 4129, 14219, 14221, 5610, 5630, 14734, 698, 4131, 14736, 14737, 12085, 4706, 4281, 4695, 1236, 11080, 5133, 4812, 5660, 5597, 14738, 7666, 2]
 // Exports: default
 
-// Module 14733 (SkeletonLoading)
+// Module 14732 (SkeletonLoading)
 import useFilteredAndSortedProducts from "useFilteredAndSortedProducts";
 import get_ActivityIndicator from "hexToRgba";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -27,7 +27,7 @@ function SkeletonLoading(accessibilityLabel) {
   obj[5] = Array.from({ length: 10 }).map((arg0, arg1) => {
     const obj = { width: null };
     obj[0] = callback(9262).COLLECTIBLES_SHOP_CARD_WIDTH;
-    return callback3(callback2(14228), obj, arg1);
+    return callback3(callback2(14227), obj, arg1);
   });
   return callback(closure_5, obj);
 }
@@ -60,7 +60,7 @@ export default function _default(heroBlock) {
   let stateFromStores;
   let c5;
   let c6;
-  let obj = heroBlock(14734);
+  let obj = heroBlock(14733);
   let obj1 = heroBlock(1480);
   dependencyMap = obj1.useNavigation();
   let obj2 = heroBlock(9265);
@@ -73,7 +73,7 @@ export default function _default(heroBlock) {
   let tmpResult = tmp(589);
   const items = [c6];
   stateFromStores = tmpResult.useStateFromStores(items, () => _undefined2.getCategory(heroBlock.categorySkuId));
-  tmpResult = tmp(12083);
+  tmpResult = tmp(12082);
   const tmp7 = createCacheKey();
   const tmp6 = preferVCPrice(4221)();
   const token = heroBlock(3989).useToken(preferVCPrice(712).colors.BACKGROUND_BASE_LOW);
@@ -82,14 +82,14 @@ export default function _default(heroBlock) {
   const tmpResult3 = heroBlock(4129);
   const hexToRgbaStringResult = tmpResult2.hexToRgbaString(heroBlock(4129).hexWithOpacity(token, 0));
   const token1 = heroBlock(3989).useToken(preferVCPrice(712).colors.BACKGROUND_BASE_LOWEST);
-  const tmp11 = preferVCPrice(14220)();
+  const tmp11 = preferVCPrice(14219)();
   c5 = tmp11;
   const items1 = [heroBlock.rankedSkuIds, tmp11];
   const memo = React.useMemo(() => _undefined(heroBlock.rankedSkuIds), items1);
   const tmpResult4 = heroBlock(3989);
-  const filteredAndSortedProducts = heroBlock(14222).useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
+  const filteredAndSortedProducts = heroBlock(14221).useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
   c6 = tmp13;
-  const tmpResult5 = heroBlock(14222);
+  const tmpResult5 = heroBlock(14221);
   let unpublishedAt;
   if (stateFromStores != null) {
     unpublishedAt = stateFromStores.unpublishedAt;
@@ -111,7 +111,7 @@ export default function _default(heroBlock) {
       obj2 = { style: null, children: null };
       obj2[0] = tmp7.heroBannerContainer;
       let tmp23Result = null != heroBannerUrl;
-      let tmp5Result = tmp5(12086);
+      let tmp5Result = tmp5(12085);
       if (tmp23Result) {
         let tmp21Result = tmp4;
         if (tmp4) {
@@ -246,7 +246,7 @@ export default function _default(heroBlock) {
         const obj23 = { products: null, loadingCardsNum: null, preferVCPrice: null, accessibilityLabel: null };
         obj23[0] = filteredAndSortedProducts;
         let num = 4;
-        tmp5Result = tmp5(14739);
+        tmp5Result = tmp5(14738);
         if (0 !== filteredAndSortedProducts.length) {
           num = filteredAndSortedProducts.length;
         }
@@ -310,9 +310,9 @@ export default function _default(heroBlock) {
       return closure_11(tmp(5610).AnalyticsLocationProvider, obj);
     } else {
       if (tmpResult6.isThemeDark(tmp6)) {
-        let tmp5Result1 = tmp5(14737);
+        let tmp5Result1 = tmp5(14736);
       } else {
-        tmp5Result1 = tmp5(14738);
+        tmp5Result1 = tmp5(14737);
       }
       tmpResult6 = tmp(4131);
     }

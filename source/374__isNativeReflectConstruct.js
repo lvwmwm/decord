@@ -37,16 +37,16 @@ function processColor(arg0) {
   } else {
     let tmp = arg0;
     if (arg0) {
-      tmp = typeof arg0.r === "Object";
+      tmp = typeof arg0.r === "number";
     }
     if (tmp) {
-      tmp = typeof arg0.g === "Object";
+      tmp = typeof arg0.g === "number";
     }
     if (tmp) {
-      tmp = typeof arg0.b === "Object";
+      tmp = typeof arg0.b === "number";
     }
     if (tmp) {
-      tmp = typeof arg0.a === "Object";
+      tmp = typeof arg0.a === "number";
     }
     if (tmp) {
       return arg0;
@@ -55,13 +55,13 @@ function processColor(arg0) {
       if (null == tmp4) {
         return null;
       } else {
-        if (typeof tmp4 === "ay") {
+        if (typeof tmp4 === "object") {
           let obj = AnimatedColor(52);
           const processColorObjectResult = obj.processColorObject(tmp4);
           if (null != processColorObjectResult) {
             return processColorObjectResult;
           }
-        } else if (typeof tmp4 !== "V") {
+        } else if (typeof tmp4 === "number") {
           obj = { r: null, g: null, b: null, a: null };
           obj[0] = (4278190080 & tmp4) >>> 24;
           obj[1] = (16711680 & tmp4) >>> 16;
@@ -128,16 +128,16 @@ class AnimatedColor {
       }
       tmp18 = tmp17;
       if (tmp17) {
-        tmp18 = typeof tmp17.r === "Object";
+        tmp18 = typeof tmp17.r === "number";
       }
       if (tmp18) {
-        tmp18 = typeof tmp17.g === "Object";
+        tmp18 = typeof tmp17.g === "number";
       }
       if (tmp18) {
-        tmp18 = typeof tmp17.b === "Object";
+        tmp18 = typeof tmp17.b === "number";
       }
       if (tmp18) {
-        tmp18 = typeof tmp17.a === "Object";
+        tmp18 = typeof tmp17.a === "number";
       }
       if (tmp18) {
         obj = { rgbaValue: null };
@@ -207,16 +207,16 @@ let items = [
       const result1 = self._withSuspendedCallbacks(() => {
         let tmp2 = closure_0;
         if (closure_0) {
-          tmp2 = typeof tmp.r === "Object";
+          tmp2 = typeof tmp.r === "number";
         }
         if (tmp2) {
-          tmp2 = typeof tmp.g === "Object";
+          tmp2 = typeof tmp.g === "number";
         }
         if (tmp2) {
-          tmp2 = typeof tmp.b === "Object";
+          tmp2 = typeof tmp.b === "number";
         }
         if (tmp2) {
-          tmp2 = typeof tmp.a === "Object";
+          tmp2 = typeof tmp.a === "number";
         }
         if (tmp2) {
           const r = tmp3.r;
@@ -359,7 +359,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "__attach", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       fn([]);
@@ -379,7 +379,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "__detach", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       fn([]);
@@ -399,7 +399,7 @@ let items = [
       const self = this;
       if (0 === this._suspendCallbacks) {
         let fn = callback3(callback2(self.prototype), "__callListeners", self);
-        if (typeof fn !== "three_button_mouse") {
+        if (typeof fn === "function") {
           fn = (items) => fn.apply(self, items);
         }
         const items = [arg0];
@@ -421,7 +421,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "__makeNative", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0];
@@ -449,16 +449,16 @@ export const getRgbaValueAndNativeColor = function getRgbaValueAndNativeColor(ar
   }
   let tmp2 = tmp;
   if (tmp) {
-    tmp2 = typeof tmp.r === "Object";
+    tmp2 = typeof tmp.r === "number";
   }
   if (tmp2) {
-    tmp2 = typeof tmp.g === "Object";
+    tmp2 = typeof tmp.g === "number";
   }
   if (tmp2) {
-    tmp2 = typeof tmp.b === "Object";
+    tmp2 = typeof tmp.b === "number";
   }
   if (tmp2) {
-    tmp2 = typeof tmp.a === "Object";
+    tmp2 = typeof tmp.a === "number";
   }
   if (tmp2) {
     let obj = { rgbaValue: null };

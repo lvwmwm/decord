@@ -1,9 +1,9 @@
-// Module ID: 14662
-// Function ID: 14663
+// Module ID: 14661
+// Function ID: 14662
 // Name: pressable
-// Dependencies: [13575, 21, 13161, 589, 3867, 13993, 4235, 13755, 10361, 2]
+// Dependencies: [13574, 21, 13160, 589, 3867, 13992, 4235, 13754, 10361, 2]
 
-// Module 14662 (pressable)
+// Module 14661 (pressable)
 import checkForNewerBuild from "checkForNewerBuild";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -19,7 +19,7 @@ createToggle = {
     if (obj.useStateFromStores(items, () => null !== checkForNewerBuild.latestFetchedBuild().newBuild)) {
       let RefreshIcon = tmp(4235).DownloadIcon;
     } else {
-      RefreshIcon = tmp(13755).RefreshIcon;
+      RefreshIcon = tmp(13754).RefreshIcon;
     }
     return <RefreshIcon />;
   },
@@ -50,14 +50,14 @@ createToggle = {
     return str;
   },
   usePredicate: function useHasInternalBuildUpdateSetting() {
-    const obj = require(13993) /* useStaffOrDeveloperSettingPredicate */;
-    return checkForNewerBuild.hasUpdatesConfigured && require(13993) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
+    const obj = require(13992) /* useStaffOrDeveloperSettingPredicate */;
+    return checkForNewerBuild.hasUpdatesConfigured && require(13992) /* useStaffOrDeveloperSettingPredicate */.useStaffOrDeveloperSettingPredicate();
   },
   onPress: function handleInstallNativeUpdateSettingPress() {
     const newBuild = checkForNewerBuild.latestFetchedBuild().newBuild;
     if (null !== newBuild) {
-      importAll(13161).openBuildInstaller(newBuild);
-      const obj2 = importAll(13161);
+      importAll(13160).openBuildInstaller(newBuild);
+      const obj2 = importAll(13160);
     } else {
       checkForNewerBuild.checkForNewerBuild();
     }

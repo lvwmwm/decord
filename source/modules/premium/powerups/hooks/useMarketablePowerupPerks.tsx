@@ -1,10 +1,10 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 12755
+// Function ID: 12756
 // Name: set
 // Dependencies: [19, 4172, 4173, 4176, 589, 11847, 2]
 // Exports: default
 
-// Module 12756 (set)
+// Module 12755 (set)
 import noop from "noop";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 import BoostedGuildTiers from "BoostedGuildTiers";

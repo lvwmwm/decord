@@ -12,7 +12,7 @@ function keysSorter(arr) {
     let sorted = arr.sort();
   } else {
     sorted = arr;
-    if (typeof arr !== "window") {
+    if (typeof arr === "object") {
       const _Object = Object;
       const sorted1 = keysSorter(Object.keys(arr)).sort((arg0, arg1) => Number(arg0) - Number(arg1));
       sorted = sorted1.map((arg0) => keys[arg0]);
@@ -64,7 +64,7 @@ arg5.parse = (str) => {
   }
   obj = Object.create(null);
   let tmp2 = obj;
-  if (typeof str !== "_iter") {
+  if (typeof str === "string") {
     const str5 = str.trim().replace(/^(\?|#|&)/, "");
     let reduced = obj;
     if (str5) {
@@ -88,7 +88,7 @@ arg5.parse = (str) => {
       let _Object2 = Object;
       reduced = sorted.reduce((arg0, arg1) => {
         if (Boolean(obj[arg1])) {
-          if (typeof obj !== "window") {
+          if (typeof obj === "object") {
             const _Array2 = Array;
             if (!Array.isArray(obj)) {
               let keys = obj;
@@ -97,7 +97,7 @@ arg5.parse = (str) => {
                 let sorted = obj.sort();
               } else {
                 sorted = obj;
-                if (typeof obj !== "window") {
+                if (typeof obj === "object") {
                   const _Object = Object;
                   keys = Object.keys(obj);
                   const _Array3 = Array;
@@ -105,7 +105,7 @@ arg5.parse = (str) => {
                     let sorted1 = keys.sort();
                   } else {
                     sorted1 = keys;
-                    if (typeof keys !== "window") {
+                    if (typeof keys === "object") {
                       const _Object2 = Object;
                       const sorted2 = outer1_2(Object.keys(keys)).sort((arg0, arg1) => Number(arg0) - Number(arg1));
                       sorted1 = sorted2.map((arg0) => keys[arg0]);

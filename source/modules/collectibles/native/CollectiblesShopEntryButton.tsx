@@ -1,10 +1,10 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15743
+// Function ID: 15744
 // Name: CoachmarkVariant
-// Dependencies: [32, 19, 6953, 1369, 21, 5931, 1358, 15743, 11438, 1236, 15745, 647, 13241, 6934, 9916, 2]
+// Dependencies: [32, 19, 6953, 1369, 21, 5931, 1358, 15742, 11438, 1236, 15744, 647, 13240, 6934, 9916, 2]
 // Exports: default
 
-// Module 15744 (CoachmarkVariant)
+// Module 15743 (CoachmarkVariant)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import getMarketingBySurface from "getMarketingBySurface";
@@ -39,7 +39,7 @@ function CoachmarkVariant(shopButtonRef) {
     navigateToShop();
   };
   obj[4] = tmp3;
-  const items = [callback2(importDefault(15743), obj), callback2(importDefault(15745), { marketing, shopButtonRef, navigateToShop, visible: tmp3, onDismiss: tmp[1] })];
+  const items = [callback2(importDefault(15742), obj), callback2(importDefault(15744), { marketing, shopButtonRef, navigateToShop, visible: tmp3, onDismiss: tmp[1] })];
   obj[0] = items;
   return callback3(closure_7, obj);
 }

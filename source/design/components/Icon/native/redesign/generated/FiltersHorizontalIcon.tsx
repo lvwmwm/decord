@@ -1,10 +1,10 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14149
+// Function ID: 14150
 // Name: FiltersHorizontalIcon
-// Dependencies: [19, 21, 712, 3988, 14151, 2]
+// Dependencies: [19, 21, 712, 3988, 14150, 2]
 // Exports: FiltersHorizontalIcon
 
-// Module 14150 (FiltersHorizontalIcon)
+// Module 14149 (FiltersHorizontalIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FiltersHorizontalIcon = function FiltersHorizontalIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14151) /* registerAsset */;
+  obj[0] = require(14150) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 16277
-// Function ID: 16278
+// Module ID: 16276
+// Function ID: 16277
 // Name: finishRoll
 // Dependencies: [1372, 1931, 11278, 8161, 4278, 5229, 1236, 6826, 7062, 2]
 
-// Module 16277 (finishRoll)
+// Module 16276 (finishRoll)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import INITIAL_STATE from "INITIAL_STATE";

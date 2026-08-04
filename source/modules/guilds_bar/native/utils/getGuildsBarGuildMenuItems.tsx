@@ -1,10 +1,10 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15282
+// Function ID: 15283
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 1862, 4480, 676, 9739, 8359, 1236, 13215, 1959, 9058, 5230, 5920, 13162, 11663, 4253, 9734, 11664, 5225, 2]
+// Dependencies: [5, 1862, 4480, 676, 9739, 8359, 1236, 13214, 1959, 9058, 5230, 5920, 13161, 11663, 4253, 9734, 11664, 5225, 2]
 // Exports: default
 
-// Module 15283 (getGuildsBarGuildMenuItems)
+// Module 15282 (getGuildsBarGuildMenuItems)
 import EnvelopeIcon from "EnvelopeIcon";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";

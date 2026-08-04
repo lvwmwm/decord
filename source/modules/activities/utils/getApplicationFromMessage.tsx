@@ -1,10 +1,10 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12526
+// Function ID: 12527
 // Name: getApplicationFromMessage
-// Dependencies: [4308, 12524, 8825, 2]
+// Dependencies: [4308, 12523, 8825, 2]
 // Exports: getApplicationFromMessage
 
-// Module 12527 (getApplicationFromMessage)
+// Module 12526 (getApplicationFromMessage)
 import createExecutable from "createExecutable";
 import { SpotifyApplication } from "getIconURL";
 import { isSpotifyParty } from "WEB_OPEN";

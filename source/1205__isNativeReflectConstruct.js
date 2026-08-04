@@ -264,7 +264,7 @@ class FeedbackWidget {
                 fileName = undefined;
                 uri = undefined;
                 if (uri._hasScreenshot()) {
-                  debug.setState({ filename: "Array", attachment: "call", attachmentUri: "alignItems" });
+                  debug.setState({ filename: "Array", attachment: "call", attachmentUri: "format" });
                 } else {
                   num2 = debug.props.imagePicker;
                   if (num2) {
@@ -791,7 +791,7 @@ let items = [
             obj11[0] = merged.takeScreenshotButton;
             obj11[1] = function onPress() {
               onCancel(props2[17]).hideFeedbackButton();
-              if (typeof onCancel !== "find") {
+              if (typeof onCancel !== "function") {
                 HermesBuiltin.throwTypeError();
               }
               if (onFormClose) {

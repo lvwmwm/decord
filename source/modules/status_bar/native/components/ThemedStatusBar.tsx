@@ -1,10 +1,10 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 13744
+// Function ID: 13745
 // Name: ThemedStatusBar
 // Dependencies: [19, 1302, 1218, 21, 589, 4136, 4131, 10660, 7669, 2]
 // Exports: default
 
-// Module 13745 (ThemedStatusBar)
+// Module 13744 (ThemedStatusBar)
 import "noop";
 import handleThemeChange from "handleThemeChange";
 import fetchFingerprint from "fetchFingerprint";

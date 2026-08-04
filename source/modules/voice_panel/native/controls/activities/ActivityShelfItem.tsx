@@ -1,10 +1,10 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16094
+// Function ID: 16095
 // Name: ActivityActionOverlay
-// Dependencies: [19, 1301, 21, 4285, 712, 4129, 11441, 11356, 5663, 16093, 1849, 10538, 6891, 10643, 7508, 4812, 3997, 16092, 11384, 1297, 16096, 16094, 4474, 12042, 4281, 11446, 1236, 2]
+// Dependencies: [19, 1301, 21, 4285, 712, 4129, 11441, 11356, 5663, 16092, 1849, 10538, 6891, 10643, 7508, 4812, 3997, 16091, 11384, 1297, 16095, 16093, 4474, 12041, 4281, 11446, 1236, 2]
 // Exports: default
 
-// Module 16095 (ActivityActionOverlay)
+// Module 16094 (ActivityActionOverlay)
 import Button from "Button";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "useActivityUsers";
@@ -47,7 +47,7 @@ function ActivityActionOverlay(arg0) {
     id = context.channel.id;
   }
   obj = { children: null };
-  items[1] = tmp10(importDefault(16093), { channelId: id, applicationId: id, applicationName: name, submitting: importDefault(11441)({ applicationId, context, launchingComponentId }).submitting });
+  items[1] = tmp10(importDefault(16092), { channelId: id, applicationId: id, applicationName: name, submitting: importDefault(11441)({ applicationId, context, launchingComponentId }).submitting });
   obj[0] = items;
   return tmp6(tmp7, obj);
 }
@@ -59,7 +59,7 @@ function ParticipantsText(arg0) {
   ({ activityItem, channelId } = arg0);
   ({ action, guildId } = arg0);
   const tmp = createCacheKey();
-  const arr = importDefault(16094)(activityItem.application.id, channelId);
+  const arr = importDefault(16093)(activityItem.application.id, channelId);
   let obj = importDefault(4474);
   let first;
   if (arr != null) {
@@ -70,7 +70,7 @@ function ParticipantsText(arg0) {
   items = [, ];
   ({ participantsContainer: arr2[0], overlayBubble: arr2[1] } = tmp);
   obj = { source: null, size: null, color: "white" };
-  obj[0] = importDefault(12042);
+  obj[0] = importDefault(12041);
   obj[1] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
   const obj1 = { lineClamp: 1, style: tmp.participantsText, variant: "text-xxs/medium", color: "text-overlay-light", children: null };
@@ -167,7 +167,7 @@ export default function ActivityShelfItem(arg0) {
   const obj1 = { style: tmp.imageOuterContainer, children: null };
   let tmp3Result = tmp3(5663);
   const obj2 = { accessibilityLabel: activityItem.application.name, imageBackground: null, aspectRatio: null };
-  tmp3Result = tmp3(16092);
+  tmp3Result = tmp3(16091);
   if (activityAction === require(11356) /* useActivityAction */.ActivityAction.START) {
     tmp10 = imageBackground;
   }
@@ -191,7 +191,7 @@ export default function ActivityShelfItem(arg0) {
       obj5[0] = tmp.developerIconContainer;
       const obj6 = { size: null, source: null, color: null };
       obj6[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-      obj6[1] = tmp3(16096);
+      obj6[1] = tmp3(16095);
       obj6[2] = tmp.developerIconColor.color;
       obj5[1] = tmp15(tmp8(1297).Icon, obj6);
       tmp15Result = tmp15(tmp3(5663), obj5);

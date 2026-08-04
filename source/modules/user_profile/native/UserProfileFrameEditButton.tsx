@@ -1,10 +1,10 @@
-// Module ID: 13845
-// Function ID: 13846
+// Module ID: 13844
+// Function ID: 13845
 // Name: COLLECTIBLES_PREVIEW_SIZE
-// Dependencies: [32, 19, 17, 5658, 1369, 505, 21, 712, 4285, 9321, 5931, 1358, 8077, 10029, 1901, 4253, 13846, 1959, 1236, 13833, 5732, 1297, 9313, 8098, 2]
+// Dependencies: [32, 19, 17, 5658, 1369, 505, 21, 712, 4285, 9321, 5931, 1358, 8077, 10029, 1901, 4253, 13845, 1959, 1236, 13832, 5732, 1297, 9313, 8098, 2]
 // Exports: default
 
-// Module 13845 (COLLECTIBLES_PREVIEW_SIZE)
+// Module 13844 (COLLECTIBLES_PREVIEW_SIZE)
 import _slicedToArray from "_slicedToArray";
 import FormControlText from "FormControlText";
 import { View } from "asyncRequireImpl";
@@ -152,7 +152,7 @@ export default function UserProfileFrameEditButton(arg0) {
       }
       obj2[5] = tmp19Result;
     }
-    return jsx(tmp2(13833).UserProfileEditFormButton, obj2);
+    return jsx(tmp2(13832).UserProfileEditFormButton, obj2);
   } else {
     return null;
   }

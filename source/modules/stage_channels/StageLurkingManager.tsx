@@ -1,9 +1,9 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 12568
+// Function ID: 12569
 // Name: _initialize
 // Dependencies: [1372, 4102, 4463, 709, 5845, 1351, 2]
 
-// Module 12569 (_initialize)
+// Module 12568 (_initialize)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import "initialize";

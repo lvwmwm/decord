@@ -1,7 +1,7 @@
 // Module ID: 8423
 // Function ID: 8424
 // Name: handleOutOfSuperReactions
-// Dependencies: [1372, 4502, 4102, 1874, 676, 1877, 21, 3924, 4254, 4255, 7143, 3931, 4253, 8424, 1959, 4144, 8559, 7142, 4479, 8702, 12440, 12441, 12442, 7576, 7622, 4623, 1236, 4281, 2]
+// Dependencies: [1372, 4502, 4102, 1874, 676, 1877, 21, 3924, 4254, 4255, 7143, 3931, 4253, 8424, 1959, 4144, 8559, 7142, 4479, 8702, 12439, 12440, 12441, 7576, 7622, 4623, 1236, 4281, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
 // Module 8423 (handleOutOfSuperReactions)
@@ -162,7 +162,7 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
   let obj = importDefault(4253);
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(12440, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12439, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;

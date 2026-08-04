@@ -1,10 +1,10 @@
-// Module ID: 11869
-// Function ID: 11870
+// Module ID: 11868
+// Function ID: 11869
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 10916, 1236, 11870, 10340, 4628, 2]
+// Dependencies: [21, 10916, 1236, 11869, 10340, 4628, 2]
 // Exports: default
 
-// Module 11869 (UserSettingsAuthedAppDeleteWarningModal)
+// Module 11868 (UserSettingsAuthedAppDeleteWarningModal)
 import jsxProd from "jsxProd";
 
 let c3;
@@ -40,7 +40,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
     obj1[0] = application.name;
     formatToPlainStringResult1 = formatToPlainString(t.QWGvxA, obj1);
   }
-  let tmp9 = importDefault(11870)(application.id);
+  let tmp9 = importDefault(11869)(application.id);
   if (tmp9) {
     const obj2 = { children: null };
     let tmp8Result = tmp8(10340);

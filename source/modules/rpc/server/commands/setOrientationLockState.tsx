@@ -1,8 +1,8 @@
-// Module ID: 13666
-// Function ID: 13667
+// Module ID: 13665
+// Function ID: 13666
 // Dependencies: [4310, 505, 10546, 709, 10543, 2]
 
-// Module 13666
+// Module 13665
 import { OrientationLockState } from "items3";
 import sum from "sum";
 

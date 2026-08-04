@@ -97,7 +97,7 @@ arg5.useAnimatedGesture = function useAnimatedGesture(current2, needsToReattachR
           let tmp3 = num;
           if (handlerTag.handlerTag === tmp2.handlerTag) {
             let tmp39 = outer1_5;
-            if (typeof outer1_5 !== "find") {
+            if (typeof outer1_5 !== "function") {
               let str = "Trying to call a non-function";
               let throwTypeErrorResult = HermesBuiltin.throwTypeError();
             }
@@ -157,7 +157,7 @@ arg5.useAnimatedGesture = function useAnimatedGesture(current2, needsToReattachR
               }
             } else {
               let tmp41 = outer1_6;
-              if (typeof outer1_6 !== "find") {
+              if (typeof outer1_6 !== "function") {
                 let str2 = "Trying to call a non-function";
                 let throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
               }

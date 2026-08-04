@@ -1,10 +1,10 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12050
+// Function ID: 12051
 // Name: ProfileEffectAssetPreview
-// Dependencies: [19, 17, 678, 9294, 21, 4285, 712, 8744, 5236, 12052, 8719, 9313, 9292, 9312, 9293, 1898, 9308, 1901, 679, 9335, 9334, 9305, 1236, 4281, 6921, 9337, 12053, 9266, 3931, 9347, 2]
+// Dependencies: [19, 17, 678, 9294, 21, 4285, 712, 8744, 5236, 12051, 8719, 9313, 9292, 9312, 9293, 1898, 9308, 1901, 679, 9335, 9334, 9305, 1236, 4281, 6921, 9337, 12052, 9266, 3931, 9347, 2]
 // Exports: default
 
-// Module 12051 (ProfileEffectAssetPreview)
+// Module 12050 (ProfileEffectAssetPreview)
 import FRACTIONAL_NITRO_COIN_SIZE from "FRACTIONAL_NITRO_COIN_SIZE";
 import { View } from "CollectiblesItemType";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
@@ -29,7 +29,7 @@ function ProfileEffectAssetPreview(item) {
     obj[0] = tmp.profileEffectContainer;
     obj = { source: null, alt: null, style: null, resizeMode: "cover" };
     obj = { uri: null };
-    obj[0] = tmp2(12052);
+    obj[0] = tmp2(12051);
     obj[0] = obj;
     obj[1] = tmp4.accessibilityLabel;
     obj[2] = tmp.profileEffect;
@@ -319,7 +319,7 @@ let closure_10 = createCacheKey.createStyles((arg0) => {
     tmp4 = tmp;
   }
   let obj = { giftProductContainer: null };
-  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(712).space.PX_16, backgroundColor: "call" };
+  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(712).space.PX_16, backgroundColor: "dispatch" };
   obj[0] = obj;
   return obj;
 });

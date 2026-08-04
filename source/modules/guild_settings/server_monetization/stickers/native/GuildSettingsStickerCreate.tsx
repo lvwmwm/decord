@@ -1,8 +1,8 @@
-// Module ID: 16535
-// Function ID: 16536
-// Dependencies: [5, 32, 19, 17, 5143, 5187, 676, 1877, 3961, 21, 4285, 712, 5310, 9380, 5598, 3926, 4826, 16536, 9873, 4619, 4281, 1236, 4180, 1945, 4695, 4693, 4812, 9764, 16537, 8559, 5301, 1416, 7576, 7713, 7786, 2]
+// Module ID: 16534
+// Function ID: 16535
+// Dependencies: [5, 32, 19, 17, 5143, 5187, 676, 1877, 3961, 21, 4285, 712, 5310, 9380, 5598, 3926, 4826, 16535, 9873, 4619, 4281, 1236, 4180, 1945, 4695, 4693, 4812, 9764, 16536, 8559, 5301, 1416, 7576, 7713, 7786, 2]
 
-// Module 16535
+// Module 16534
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import ReactionIcon from "ReactionIcon";
 import importAllResult from "getStickerExtensionFromFormatType";
@@ -543,7 +543,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
     obj12[1] = tmp.stickerPreviewImage;
     tmp32Result = tmp32(c6, obj12);
   } else {
-    tmp32Result = tmp32(tmp31(16537).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(16536).StickerPlusIcon, { size: "lg" });
   }
   obj10[5] = tmp32Result;
   items4[1] = callback(stickerId(4812).PressableHighlight, obj10);

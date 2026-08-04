@@ -1,10 +1,10 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 15953
+// Function ID: 15954
 // Name: applyActivityOrientationLock
 // Dependencies: [4310, 10629, 8817, 2]
 // Exports: default
 
-// Module 15954 (applyActivityOrientationLock)
+// Module 15953 (applyActivityOrientationLock)
 import { OrientationLockState } from "items3";
 
 const result = require("handleOrientationChange").fileFinishedImporting("modules/activities/native/applyActivityOrientationLock.tsx");

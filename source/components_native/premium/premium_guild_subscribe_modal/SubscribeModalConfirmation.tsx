@@ -1,10 +1,10 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12784
+// Function ID: 12785
 // Name: PendingCancellationWarning
-// Dependencies: [5, 19, 17, 11833, 1862, 4178, 3937, 676, 6805, 4173, 21, 4285, 4129, 712, 589, 4177, 8256, 4281, 1236, 12786, 12787, 4695, 12796, 4706, 691, 698, 12753, 38, 4181, 4624, 12800, 1959, 2]
+// Dependencies: [5, 19, 17, 11833, 1862, 4178, 3937, 676, 6805, 4173, 21, 4285, 4129, 712, 589, 4177, 8256, 4281, 1236, 12785, 12786, 4695, 12795, 4706, 691, 698, 12752, 38, 4181, 4624, 12799, 1959, 2]
 // Exports: default
 
-// Module 12785 (PendingCancellationWarning)
+// Module 12784 (PendingCancellationWarning)
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "Text";
@@ -72,13 +72,13 @@ function SubscribeConfirmation(arg0) {
   ({ guild, isModifyingSubscription } = arg0);
   const tmp = createCacheKey();
   let obj = { children: null };
-  obj = { style: tmp.subscribeImage, source: importDefault(12786) };
+  obj = { style: tmp.subscribeImage, source: importDefault(12785) };
   const items = [callback(closure_6, obj), , , , , ];
   obj = { style: tmp.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.yTlZV0);
   items[1] = callback(require(4281) /* Text */.Text, obj);
-  items[2] = callback(importDefault(12787), { style: tmp.guildPreview, guild });
+  items[2] = callback(importDefault(12786), { style: tmp.guildPreview, guild });
   const obj2 = { style: items1, variant: "text-sm/medium", children: null };
   items1 = [, ];
   ({ blurb: arr2[0], warning: arr2[1] } = tmp);
@@ -106,7 +106,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
   const onPremiumGuildSubscribe = previousGuildSubscriptionSlots.onPremiumGuildSubscribe;
   ({ guild, isModifyingSubscription } = previousGuildSubscriptionSlots);
   const tmp = createCacheKey();
-  let obj = prop(12796);
+  let obj = prop(12795);
   const guildSubscriptionRemovalSource = obj.useGuildSubscriptionRemovalSource();
   let obj1 = prop(589);
   const items = [createGuildRecordFromRust];
@@ -153,7 +153,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     const obj7 = { style: null, guild: null };
     obj7[0] = tmp.guildPreview;
     obj7[1] = stateFromStores;
-    items2[1] = callback(onPremiumGuildSubscribe(12787), obj7);
+    items2[1] = callback(onPremiumGuildSubscribe(12786), obj7);
     const obj8 = { style: null, variant: "eyebrow", color: "text-default", children: null };
     obj8[0] = tmp.previewHeader;
     const intl4 = tmp2(1236).intl;
@@ -170,7 +170,7 @@ function TransferConfirmation(previousGuildSubscriptionSlots) {
     obj10[3] = Gradients.PREMIUM_GUILD;
     const obj11 = { guild: null };
     obj11[0] = guild;
-    obj10[4] = callback(onPremiumGuildSubscribe(12787), obj11);
+    obj10[4] = callback(onPremiumGuildSubscribe(12786), obj11);
     items2[3] = callback(onPremiumGuildSubscribe(4706), obj10);
     obj5[1] = items2;
     items1[3] = callback2(closure_7, obj5);

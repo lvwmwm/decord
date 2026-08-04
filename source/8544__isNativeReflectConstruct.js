@@ -48,7 +48,7 @@ class SvgAst {
     ({ ast, override } = global);
     if (ast) {
       tmp2 = SvgFromUri;
-      tmp3 = f81000;
+      tmp3 = f80997;
       ({ props, children } = ast);
       tmp4 = jsx;
       obj = {};
@@ -104,11 +104,11 @@ class SvgXml {
     return;
   }
 }
-function astToReact(Tag) {
+function astToReact(obj) {
   let children;
   let props;
-  if (typeof Tag === "ay") {
-    ({ props, children } = Tag);
+  if (typeof obj === "object") {
+    ({ props, children } = obj);
     let _class;
     if (props != null) {
       _class = props.class;
@@ -117,12 +117,12 @@ function astToReact(Tag) {
       props.className = props.class;
       delete tmp2[tmp];
     }
-    const obj = {};
+    obj = {};
     const merged = Object.assign(props);
     obj.children = children.map(astToReact);
-    return jsx(Tag.Tag, {}, arg1);
+    return jsx(obj.Tag, {}, arg1);
   } else {
-    return Tag;
+    return obj;
   }
 }
 function _parse(closure_0) {
@@ -460,7 +460,7 @@ function _parse(closure_0) {
                 flag = tmp96;
               }
               let tmp97 = outer1_17;
-              if (typeof outer1_17 !== "find") {
+              if (typeof outer1_17 !== "function") {
                 let str24 = "Trying to call a non-function";
                 sum = HermesBuiltin.throwTypeError();
               }
@@ -476,7 +476,7 @@ function _parse(closure_0) {
           obj3 = outer1_22;
           tmp23 = lib;
         }
-        if (typeof obj.style !== "_iter") {
+        if (typeof obj.style === "string") {
           obj.styles = str15;
           obj = {};
           const parts = str15.split(";");
@@ -489,7 +489,7 @@ function _parse(closure_0) {
               [str16, str17] = sum;
               sum = outer1_17;
               let str18 = str16.trim();
-              if (typeof outer1_17 !== "find") {
+              if (typeof outer1_17 !== "function") {
                 let str27 = "Trying to call a non-function";
                 sum = HermesBuiltin.throwTypeError();
               }
@@ -1031,7 +1031,7 @@ export const getStyle = function getStyle(str) {
       [str, str2] = parts1;
       let tmp3 = camelCase;
       let str3 = str.trim();
-      if (typeof camelCase !== "find") {
+      if (typeof camelCase !== "function") {
         let str4 = "Trying to call a non-function";
         let throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }

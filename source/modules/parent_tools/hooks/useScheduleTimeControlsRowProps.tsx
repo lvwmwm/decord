@@ -1,10 +1,10 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14060
+// Function ID: 14061
 // Name: useScheduleTimeControlsRowProps
 // Dependencies: [21, 4281, 1236, 2285, 2]
 // Exports: default
 
-// Module 14061 (useScheduleTimeControlsRowProps)
+// Module 14060 (useScheduleTimeControlsRowProps)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");

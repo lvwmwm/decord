@@ -1,9 +1,9 @@
-// Module ID: 15102
-// Function ID: 15103
+// Module ID: 15101
+// Function ID: 15102
 // Name: IconOrPreview
-// Dependencies: [19, 17, 1377, 1874, 14431, 676, 505, 21, 15103, 15104, 4285, 712, 5610, 589, 5616, 698, 10870, 1959, 8705, 15098, 4474, 15105, 14432, 15099, 1297, 15108, 9573, 15109, 9568, 12188, 9223, 4806, 8684, 1236, 4129, 10834, 5236, 15100, 15111, 10837, 8051, 15113, 8114, 2]
+// Dependencies: [19, 17, 1377, 1874, 14430, 676, 505, 21, 15102, 15103, 4285, 712, 5610, 589, 5616, 698, 10870, 1959, 8705, 15097, 4474, 15104, 14431, 15098, 1297, 15107, 9573, 15108, 9568, 12187, 9223, 4806, 8684, 1236, 4129, 10834, 5236, 15099, 15110, 10837, 8051, 15112, 8114, 2]
 
-// Module 15102 (IconOrPreview)
+// Module 15101 (IconOrPreview)
 import importAllResult from "HappeningNowCardPlaceholder";
 import get_ActivityIndicator from "asyncRequireImpl";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -154,7 +154,7 @@ function IconOrPreview(arg0) {
         if (type === constants.LISTENING) {
           const intl3 = tmp28(1236).intl;
           stringResult = intl3.string(tmp28(1236).t.kUEnxN);
-        } else if (tmp2(12188)(activity)) {
+        } else if (tmp2(12187)(activity)) {
           const intl2 = tmp28(1236).intl;
           stringResult = intl2.string(tmp28(1236).t.T0uYK9);
         } else {
@@ -191,7 +191,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       tmp2Result = items[userId % items.length];
     } else {
-      tmp2Result = tmp2(15113);
+      tmp2Result = tmp2(15112);
     }
   }
 }
@@ -199,7 +199,7 @@ function StageStreamAvatars(stage) {
   let audienceCount;
   let audienceFriends;
   stage = stage.stage;
-  let obj = require(15100) /* useLiveStageData */;
+  let obj = require(15099) /* useLiveStageData */;
   const liveStageData = obj.useLiveStageData(stage);
   obj = { style: callback2().avatarStackContainer, children: null };
   ({ audienceCount, audienceFriends } = liveStageData);
@@ -210,7 +210,7 @@ function StageStreamAvatars(stage) {
   obj[1] = stage.guild_id;
   obj[2] = audienceCount + 1;
   obj[4] = require(1297) /* Button */.AvatarSizes.SIZE_16;
-  obj[1] = callback(require(15111) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
+  obj[1] = callback(require(15110) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
   return callback(closure_4, obj);
 }
 let c3 = importAllResult;
@@ -226,12 +226,12 @@ obj[1] = obj;
 obj[2] = { marginBottom: 2 };
 obj[3] = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" };
 obj[4] = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" };
-createCacheKey = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE };
+createCacheKey = { flex: 1, borderRadius: require("Themes").radii.sm - 1 };
 obj[5] = createCacheKey;
 obj[6] = { height: "100%", backgroundColor: require("Themes").colors.CARD_SECONDARY_BG, borderRadius: require("Themes").radii.sm, shadowOffset: { width: 0, height: 0 }, shadowRadius: 5, shadowOpacity: 0.32, elevation: 10 };
 let obj2 = { height: "100%", backgroundColor: require("Themes").colors.CARD_SECONDARY_BG, borderRadius: require("Themes").radii.sm, shadowOffset: { width: 0, height: 0 }, shadowRadius: 5, shadowOpacity: 0.32, elevation: 10 };
-obj[7] = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: require("Themes").radii.sm };
-let obj3 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: require("Themes").radii.sm };
+obj[7] = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE };
+let obj3 = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: require("Themes").radii.sm, borderWidth: 1, borderColor: require("Themes").colors.BORDER_SUBTLE };
 obj[8] = { borderRadius: require("Themes").radii.sm, overflow: "hidden" };
 obj[9] = { top: 4, left: 4, position: "absolute" };
 obj[10] = { fontSize: 10, lineHeight: 13, fontFamily: require("sum").Fonts.PRIMARY_BOLD };

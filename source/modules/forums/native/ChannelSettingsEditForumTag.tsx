@@ -1,10 +1,10 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 15799
+// Function ID: 15800
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [32, 19, 17, 5143, 1372, 1877, 21, 4285, 712, 1480, 589, 4281, 1236, 8217, 5917, 4693, 5649, 5315, 4812, 8559, 5301, 1416, 7576, 1297, 5905, 5650, 4624, 2]
 // Exports: default
 
-// Module 15800 (ChannelSettingsEditForumTag)
+// Module 15799 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { View } from "TableRowInner";

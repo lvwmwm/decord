@@ -1,10 +1,10 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12426
+// Function ID: 12427
 // Name: FlatFriendButton
-// Dependencies: [19, 17, 3922, 676, 21, 4285, 712, 4695, 5610, 8710, 12251, 589, 4124, 12428, 4223, 1236, 11890, 9161, 9469, 4253, 4490, 4295, 12430, 7672, 4781, 8209, 12431, 2]
+// Dependencies: [19, 17, 3922, 676, 21, 4285, 712, 4695, 5610, 8710, 12250, 589, 4124, 12427, 4223, 1236, 11889, 9161, 9469, 4253, 4490, 4295, 12429, 7672, 4781, 8209, 12430, 2]
 // Exports: default
 
-// Module 12427 (FlatFriendButton)
+// Module 12426 (FlatFriendButton)
 import "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "handleRelationshipAddError";
 import upsertRelationship from "upsertRelationship";
@@ -55,7 +55,7 @@ function FriendRequestButton(user) {
     newestAnalyticsLocation = trackUserProfileAction(5610)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let tmp3Result = tmp3(12251);
+  let tmp3Result = tmp3(12250);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   tmp3Result = tmp3(589);
   const items = [upsertRelationship];
@@ -69,7 +69,7 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(12428).UserClockIcon;
+          let UserPlusIcon = tmp3(12427).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4223).UserPlusIcon;
         }
@@ -101,8 +101,8 @@ function FriendRequestButton(user) {
               callback({ action: "CANCEL_FRIEND_REQUEST" });
               outer1_1(outer1_2[17]).cancelFriendRequest(id.id, closure_2);
             };
-            const result = user(11890).confirmCancelFriendRequest(obj);
-            const obj3 = user(11890);
+            const result = user(11889).confirmCancelFriendRequest(obj);
+            const obj3 = user(11889);
           } else {
             trackUserProfileAction({ action: "SEND_FRIEND_REQUEST" });
             obj = trackUserProfileAction(9161);

@@ -1,7 +1,7 @@
 // Module ID: 8703
 // Function ID: 8704
 // Name: useReactors
-// Dependencies: [32, 19, 17, 4277, 1372, 1942, 7141, 3913, 676, 21, 4146, 4281, 4285, 712, 589, 3924, 659, 7142, 7143, 5598, 12, 5610, 8704, 4474, 4124, 8705, 5308, 1297, 1416, 9052, 500, 5270, 7330, 12435, 1236, 10115, 4129, 3958, 5301, 12436, 4286, 1474, 4244, 4253, 12437, 1959, 5660, 5637, 12438, 4254, 4255, 1581, 8749, 5338, 5340, 595, 5798, 7163, 7204, 12439, 7818, 2]
+// Dependencies: [32, 19, 17, 4277, 1372, 1942, 7141, 3913, 676, 21, 4146, 4281, 4285, 712, 589, 3924, 659, 7142, 7143, 5598, 12, 5610, 8704, 4474, 4124, 8705, 5308, 1297, 1416, 9052, 500, 5270, 7330, 12434, 1236, 10115, 4129, 3958, 5301, 12435, 4286, 1474, 4244, 4253, 12436, 1959, 5660, 5637, 12437, 4254, 4255, 1581, 8749, 5338, 5340, 595, 5798, 7163, 7204, 12438, 7818, 2]
 // Exports: MessageReactionsContent, MessageReactionsEmpty
 
 // Module 8703 (useReactors)
@@ -324,7 +324,7 @@ function EmojiOptionsButton(channelId) {
   const items = [ensureGuildLoaded];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getChannel(channelId), items1);
-  const tmp3 = messageId(12436)(stateFromStores);
+  const tmp3 = messageId(12435)(stateFromStores);
   c2 = tmp3;
   dependencyMap = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3];
@@ -370,11 +370,11 @@ function ReactionTabs(setReactionSelectedIndex) {
     setReactionSelectedIndex(arg0);
   };
   obj[6] = reactionSelectedIndex(3924).MAX_REACTIONS;
-  const items = [callback2(setReactionSelectedIndex(12438), obj), callback2(setReactionSelectedIndex(7330), { outer: true }), ];
+  const items = [callback2(setReactionSelectedIndex(12437), obj), callback2(setReactionSelectedIndex(7330), { outer: true }), ];
   const obj1 = { style: tmp.removeButtonContainer, children: null };
   const obj2 = { style: tmp.emojiTextIdentifier, variant: "eyebrow", color: "text-default", children: null };
   const tmp4 = callback2;
-  const tmp5 = setReactionSelectedIndex(12438);
+  const tmp5 = setReactionSelectedIndex(12437);
   obj2[3] = reactionSelectedIndex(3924).getReactionEmojiName(reactions[reactionSelectedIndex].emoji);
   const items1 = [callback2(reactionSelectedIndex(4281).Text, obj2), ];
   const obj3 = {};

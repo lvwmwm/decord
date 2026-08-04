@@ -177,7 +177,7 @@ function parseFetchArgs(arg0) {
   } else if (2 === arg0.length) {
     [str4, tmp8] = _slicedToArray(arg0, 2);
     let tmp9 = str4;
-    if (typeof str4 !== "y") {
+    if (typeof str4 !== "string") {
       let str5 = "";
       if (!str4) {
         tmp9 = str5;
@@ -187,7 +187,7 @@ function parseFetchArgs(arg0) {
         } else if (str4.toString) {
           str5 = str4.toString();
         }
-        tmp10 = str4 && typeof str4 === "ay" && str4.url;
+        tmp10 = str4 && typeof str4 === "object" && str4.url;
       }
     }
     let obj = { url: null, method: null };
@@ -202,7 +202,7 @@ function parseFetchArgs(arg0) {
     return obj;
   } else {
     let tmp3 = str8;
-    if (typeof arg0[0] !== "y") {
+    if (typeof arg0[0] !== "string") {
       let str = "";
       if (!str8) {
         tmp3 = str;
@@ -212,7 +212,7 @@ function parseFetchArgs(arg0) {
         } else if (str8.toString) {
           str = str8.toString();
         }
-        tmp = str8 && typeof str8 === "ay" && str8.url;
+        tmp = str8 && typeof str8 === "object" && str8.url;
       }
     }
     obj = { url: null, method: null };
@@ -258,7 +258,7 @@ export const addFetchEndInstrumentationHandler = function addFetchEndInstrumenta
           callback = outer2_3((arg0) => {
             let closure_0 = arg0;
             let c1 = 0;
-            return (/* F119285 */ function*() { ... })();
+            return (/* F119280 */ function*() { ... })();
           });
           return callback.apply(outer2_0(outer2_1[5]).GLOBAL_OBJ, items).then(function(arg0) {
             const self = this;
@@ -331,7 +331,7 @@ export const addFetchInstrumentationHandler = function addFetchInstrumentationHa
           callback = outer2_3((arg0) => {
             let closure_0 = arg0;
             let c1 = 0;
-            return (/* F119285 */ function*() { ... })();
+            return (/* F119280 */ function*() { ... })();
           });
           return callback.apply(outer2_0(outer2_1[5]).GLOBAL_OBJ, items).then(function(arg0) {
             const self = this;

@@ -1,10 +1,10 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14562
+// Function ID: 14563
 // Name: NotificationPermissionSettingsHeader
 // Dependencies: [19, 17, 676, 11691, 21, 4285, 712, 11692, 698, 5317, 9647, 4281, 1236, 4695, 2]
 // Exports: default
 
-// Module 14563 (NotificationPermissionSettingsHeader)
+// Module 14562 (NotificationPermissionSettingsHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

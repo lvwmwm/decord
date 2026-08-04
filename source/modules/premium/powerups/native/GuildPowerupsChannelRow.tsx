@@ -1,10 +1,10 @@
-// Module ID: 15218
-// Function ID: 15219
+// Module ID: 15217
+// Function ID: 15218
 // Name: GuildPowerupsChannelRowIndicator
-// Dependencies: [19, 17, 9710, 21, 11768, 7716, 712, 1297, 4285, 15179, 15043, 5599, 11764, 11783, 11665, 11752, 5630, 5597, 1236, 2317, 15219, 11575, 2]
+// Dependencies: [19, 17, 9710, 21, 11768, 7716, 712, 1297, 4285, 15178, 15042, 5599, 11764, 11783, 11665, 11752, 5630, 5597, 1236, 2317, 15218, 11575, 2]
 // Exports: default
 
-// Module 15218 (GuildPowerupsChannelRowIndicator)
+// Module 15217 (GuildPowerupsChannelRowIndicator)
 import messagesProxy from "messagesProxy";
 import { View } from "Layer";
 import jsxProd from "renderChannelBadge";
@@ -37,7 +37,7 @@ function GuildPowerupsCoachmarkHost(arg0) {
   let popout;
   let targetRef;
   ({ targetRef, guildId, popout } = arg0);
-  importDefault(15179)(targetRef, guildId, popout);
+  importDefault(15178)(targetRef, guildId, popout);
   return null;
 }
 function GuildPowerupsCoachmark(arg0) {
@@ -45,7 +45,7 @@ function GuildPowerupsCoachmark(arg0) {
   let popout;
   let targetRef;
   ({ targetRef, guildId, popout } = arg0);
-  const context = React.useContext(require(15043) /* SidebarCoachmarkOverlayLayer */.SidebarCoachmarkOverlayContext);
+  const context = React.useContext(require(15042) /* SidebarCoachmarkOverlayLayer */.SidebarCoachmarkOverlayContext);
   const tmp5 = callback(GuildPowerupsCoachmarkHost, { targetRef, guildId, popout });
   let tmp4Result = tmp5;
   if (null != context) {
@@ -125,7 +125,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   obj2[1] = DEFAULT;
   obj1[7] = closure_5(tmp14(11665).BaseChannelName, obj2);
   const obj3 = { mode: DEFAULT, IconComponent: null };
-  obj3[1] = tmp14(15219).BoostTier2Icon;
+  obj3[1] = tmp14(15218).BoostTier2Icon;
   obj1[8] = closure_5(tmp14(11665).BaseChannelIcon, obj3);
   if (tmp6Result.showNewBadgeOnRow) {
     let tmp16Result = tmp16(tmp14(11575).NewBadge, {});

@@ -1,9 +1,9 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15598
+// Function ID: 15599
 // Name: deserialize
 // Dependencies: [8208, 1385, 12, 589, 709, 2]
 
-// Module 15599 (deserialize)
+// Module 15598 (deserialize)
 import MessageEmbedTypes from "MessageEmbedTypes";
 import { PersistedStore } from "initialize";
 
@@ -88,7 +88,7 @@ prototype2["initialize"] = function initialize(searchHistories) {
   }
   if (null != searchHistories) {
     let closure_4 = require(12) /* apply */.mapValues(searchHistories, (arg0) => {
-      if (typeof closure_3 !== "find") {
+      if (typeof closure_3 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const obj = Object.create(closure_3.prototype);
@@ -102,7 +102,7 @@ prototype2["initialize"] = function initialize(searchHistories) {
 prototype2["getSearchHistory"] = function getSearchHistory(handleChange) {
   let obj = dependencyMap[handleChange];
   if (obj == null) {
-    if (typeof SearchHistory !== "find") {
+    if (typeof SearchHistory !== "function") {
       HermesBuiltin.throwTypeError();
     }
     obj = Object.create(SearchHistory.prototype);
@@ -122,7 +122,7 @@ const searchHistoryStore = new SearchHistoryStore(require("dispatcher"), {
     id = id.id;
     let obj = dependencyMap[id];
     if (obj == null) {
-      if (typeof SearchHistory !== "find") {
+      if (typeof SearchHistory !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchHistory.prototype);
@@ -136,7 +136,7 @@ const searchHistoryStore = new SearchHistoryStore(require("dispatcher"), {
     id = id.id;
     let obj = dependencyMap[id];
     if (obj == null) {
-      if (typeof SearchHistory !== "find") {
+      if (typeof SearchHistory !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchHistory.prototype);

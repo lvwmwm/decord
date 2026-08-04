@@ -72,7 +72,7 @@ export const useRiveList = function useRiveList(arg0, arg1) {
                 constructor() {
                   obj = closure_4;
                   if (closure_4) {
-                    f103931 = obj.addListener(() => {
+                    f103927 = obj.addListener(() => {
                       callback2(outer1_5);
                     });
                     return () => {
@@ -98,7 +98,7 @@ export const useRiveList = function useRiveList(arg0, arg1) {
                 constructor() {
                   obj = closure_4;
                   if (closure_4) {
-                    f103931 = obj.addListener(() => {
+                    f103927 = obj.addListener(() => {
                       callback2(outer1_5);
                     });
                     return () => {
@@ -121,7 +121,7 @@ export const useRiveList = function useRiveList(arg0, arg1) {
                 constructor() {
                   obj = closure_4;
                   if (closure_4) {
-                    f103931 = obj.addListener(() => {
+                    f103927 = obj.addListener(() => {
                       callback2(outer1_5);
                     });
                     return () => {
@@ -142,7 +142,7 @@ export const useRiveList = function useRiveList(arg0, arg1) {
                 constructor() {
                   obj = closure_4;
                   if (closure_4) {
-                    f103931 = obj.addListener(() => {
+                    f103927 = obj.addListener(() => {
                       callback2(outer1_5);
                     });
                     return () => {

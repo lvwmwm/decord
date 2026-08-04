@@ -1,9 +1,9 @@
-// Module ID: 15062
-// Function ID: 15063
+// Module ID: 15061
+// Function ID: 15062
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4371, 4297, 3922, 1931, 4480, 1874, 676, 21, 4285, 712, 589, 1348, 15063, 8736, 500, 4295, 4293, 9585, 4812, 8955, 9308, 15064, 3963, 8104, 15065, 8112, 15066, 2]
+// Dependencies: [19, 17, 4371, 4297, 3922, 1931, 4480, 1874, 676, 21, 4285, 712, 589, 1348, 15062, 8736, 500, 4295, 4293, 9585, 4812, 8955, 9308, 15063, 3963, 8104, 15064, 8112, 15065, 2]
 
-// Module 15062 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15061 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import importAllResult from "openChannelLongPressActionSheet";
 import { View } from "module_4295";
 import sortActivity from "sortActivity";
@@ -99,7 +99,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
       obj[0] = _undefined.getStatus(obj.getRecipientId());
       obj[1] = activities;
     } else {
-      obj = { status: "Array", activities: "HermesInternal" };
+      obj = { status: "body", activities: "useStateFromStores" };
     }
     return obj;
   });

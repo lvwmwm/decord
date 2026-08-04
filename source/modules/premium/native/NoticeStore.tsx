@@ -1,9 +1,9 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12889
+// Function ID: 12890
 // Name: clearDismissUntil
 // Dependencies: [6823, 1876, 676, 595, 3867, 589, 709, 2]
 
-// Module 12890 (clearDismissUntil)
+// Module 12889 (clearDismissUntil)
 import emitChanges from "emitChanges";
 import { PremiumSubscriptionSKUs } from "GuildFeatures";
 import { NoticeTypes } from "ME";

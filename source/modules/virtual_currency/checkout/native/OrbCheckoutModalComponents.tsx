@@ -1,10 +1,10 @@
-// Module ID: 12071
-// Function ID: 12072
+// Module ID: 12070
+// Function ID: 12071
 // Name: OrbCheckoutErrorCard
-// Dependencies: [19, 17, 21, 4285, 712, 4693, 7716, 4281, 12051, 1236, 12053, 12070, 5771, 4221, 12072, 4695, 4131, 9326, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4693, 7716, 4281, 12050, 1236, 12052, 12069, 5771, 4221, 12071, 4695, 4131, 9326, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 12071 (OrbCheckoutErrorCard)
+// Module 12070 (OrbCheckoutErrorCard)
 import noop from "noop";
 import get_ActivityIndicator from "OrbsIcon";
 import jsxProd from "jsxProd";
@@ -53,7 +53,7 @@ export const OrbCheckoutOrderSummary = function OrbCheckoutOrderSummary(product)
   } else {
     obj = { product: null, useOrbPrice: true };
     obj[0] = product;
-    tmp5 = callback(importDefault(12051), obj);
+    tmp5 = callback(importDefault(12050), obj);
     tmp6 = callback;
   }
   obj = { style: tmp.topRowWrapper, children: null };
@@ -77,14 +77,14 @@ export const OrbCheckoutPaymentSourceDetails = function OrbCheckoutPaymentSource
   const obj1 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.y0WGqP);
-  const items2 = [callback(require(4281) /* Text */.Text, obj1), callback(importDefault(12053), { orbAmount: orbAmount.orbBalance })];
+  const items2 = [callback(require(4281) /* Text */.Text, obj1), callback(importDefault(12052), { orbAmount: orbAmount.orbBalance })];
   obj[1] = items2;
   items[1] = callback2(closure_4, obj);
   obj[1] = items;
   return callback2(closure_4, obj);
 };
 export const OrbCheckoutLegalFinePrint = function OrbCheckoutLegalFinePrint() {
-  let obj = skuId(12070);
+  let obj = skuId(12069);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = React.useMemo(() => skuId(outer1_2[12]).getOrbCheckoutDisclaimerMessage(skuId), items);
@@ -95,10 +95,10 @@ export const OrbCheckoutPurchaseButton = function OrbCheckoutPurchaseButton(onPr
   let isRedeeming;
   let orbProductContext;
   const tmp2 = importDefault(4221)();
-  let obj = require(12070) /* useOrbCheckoutModalContextProvider */;
+  let obj = require(12069) /* useOrbCheckoutModalContextProvider */;
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   ({ isRedeeming, orbProductContext } = orbCheckoutModalContext);
-  const virtualCurrencyBalance = require(12072) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
+  const virtualCurrencyBalance = require(12071) /* useVirtualCurrencyBalance */.useVirtualCurrencyBalance();
   if (orbProductContext != null) {
     const orbPriceAmount = orbProductContext.orbPriceAmount;
   }

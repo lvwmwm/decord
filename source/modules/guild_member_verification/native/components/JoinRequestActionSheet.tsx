@@ -1,9 +1,9 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15568
+// Function ID: 15569
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4277, 1882, 1874, 676, 21, 4285, 589, 8117, 7325, 4146, 8745, 4221, 5632, 3989, 712, 688, 8123, 7244, 1929, 8118, 5338, 1297, 8749, 1236, 3997, 5340, 15570, 5594, 2]
+// Dependencies: [19, 17, 4277, 1882, 1874, 676, 21, 4285, 589, 8117, 7325, 4146, 8745, 4221, 5632, 3989, 712, 688, 8123, 7244, 1929, 8118, 5338, 1297, 8749, 1236, 3997, 5340, 15569, 5594, 2]
 
-// Module 15569 (JoinRequestActionSheet)
+// Module 15568 (JoinRequestActionSheet)
 import importAllResult from "trackMemberApplicationViewed";
 import { View } from "int2hslRaw";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

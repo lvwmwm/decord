@@ -1,10 +1,10 @@
-// Module ID: 16308
-// Function ID: 16309
+// Module ID: 16307
+// Function ID: 16308
 // Name: NewMemberActionsCompleted
 // Dependencies: [19, 17, 21, 4285, 712, 4146, 4286, 4490, 11570, 4281, 1236, 2]
 // Exports: default
 
-// Module 16308 (NewMemberActionsCompleted)
+// Module 16307 (NewMemberActionsCompleted)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

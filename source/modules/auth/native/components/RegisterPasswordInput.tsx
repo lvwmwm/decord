@@ -1,9 +1,9 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15004
+// Function ID: 15005
 // Name: PasswordStrength
-// Dependencies: [109, 32, 19, 8282, 14978, 21, 4285, 712, 4146, 15002, 1236, 4281, 14996, 8295, 589, 3968, 7713, 3993, 8306, 8308, 2]
+// Dependencies: [109, 32, 19, 8282, 14977, 21, 4285, 712, 4146, 15001, 1236, 4281, 14995, 8295, 589, 3968, 7713, 3993, 8306, 8308, 2]
 
-// Module 15005 (PasswordStrength)
+// Module 15004 (PasswordStrength)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "EyeIcon";
@@ -33,17 +33,17 @@ function PasswordStrength(passwordScore) {
     if (isPasswordFocused) {
       if (0 !== password.length) {
         if (null == passwordError) {
-          if (passwordScore <= require(15002) /* PasswordScore */.PasswordScore.WEAK) {
+          if (passwordScore <= require(15001) /* PasswordScore */.PasswordScore.WEAK) {
             const intl2 = tmp9(1236).intl;
             let str = intl2.string(tmp9(1236).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15002).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(15001).PasswordScore.MEDIUM) {
             const intl = tmp9(1236).intl;
             str = intl.string(tmp9(1236).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15002).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(15001).PasswordScore.STRONG) {
               const intl4 = tmp9(1236).intl;
               str = intl4.string(tmp9(1236).t.Xraqqc);
               strong = tmp.strong;

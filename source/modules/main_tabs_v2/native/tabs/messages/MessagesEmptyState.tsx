@@ -1,10 +1,10 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15081
+// Function ID: 15082
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4285, 1474, 1480, 9267, 503, 4815, 14246, 15083, 4281, 1236, 4695, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 1474, 1480, 9267, 503, 4815, 14245, 15082, 4281, 1236, 4695, 2]
 // Exports: default
 
-// Module 15082 (MessagesEmptyState)
+// Module 15081 (MessagesEmptyState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -49,7 +49,7 @@ export default function MessagesEmptyState() {
   const result = 0.9 * width;
   let tmp7Result = tmp7(4815);
   const isScreenLandscape = tmp7Result.useIsScreenLandscape();
-  tmp7Result = tmp7(14246);
+  tmp7Result = tmp7(14245);
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp18;
   if (isScreenLandscape) {
@@ -62,7 +62,7 @@ export default function MessagesEmptyState() {
   const obj2 = { style: tmp.container, onLayout: callback, children: null };
   const obj3 = { style: tmp.innerContainer, children: null };
   const obj4 = { style: tmp.imageContainer, children: null };
-  const obj5 = { resizeMode: "contain", source: tmp2(15083), style: null };
+  const obj5 = { resizeMode: "contain", source: tmp2(15082), style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;

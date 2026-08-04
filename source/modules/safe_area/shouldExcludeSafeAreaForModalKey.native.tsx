@@ -1,10 +1,10 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 15816
+// Function ID: 15817
 // Name: OAUTH2_AUTHORIZE_MODAL_KEY
 // Dependencies: [676, 10650, 8848, 4494, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 15817 (OAUTH2_AUTHORIZE_MODAL_KEY)
+// Module 15816 (OAUTH2_AUTHORIZE_MODAL_KEY)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 import set from "SHARE_PREPARING_MODAL_KEY";
 

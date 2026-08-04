@@ -1,10 +1,10 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 15622
+// Function ID: 15623
 // Name: SearchMediaObscurityIcon
 // Dependencies: [32, 19, 17, 5808, 21, 4285, 4221, 4131, 5822, 10098, 4791, 4685, 1473, 11315, 500, 1236, 9255, 9763, 8768, 589, 9722, 9794, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 15623 (SearchMediaObscurityIcon)
+// Module 15622 (SearchMediaObscurityIcon)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "initialize";
 import get_ActivityIndicator from "useEnabledHarmTypesBitmaskForChannelAndAuthorId";

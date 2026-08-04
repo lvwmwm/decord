@@ -1,10 +1,10 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15482
+// Function ID: 15483
 // Name: CutoutGuildIconWithUserCustom
-// Dependencies: [19, 17, 1372, 1942, 1862, 676, 21, 15442, 712, 8103, 5661, 1297, 4701, 589, 4514, 9158, 4474, 4281, 4475, 15484, 1236, 4790, 15482, 4812, 7022, 8414, 2]
+// Dependencies: [19, 17, 1372, 1942, 1862, 676, 21, 15441, 712, 8103, 5661, 1297, 4701, 589, 4514, 9158, 4474, 4281, 4475, 15483, 1236, 4790, 15481, 4812, 7022, 8414, 2]
 // Exports: default
 
-// Module 15483 (CutoutGuildIconWithUserCustom)
+// Module 15482 (CutoutGuildIconWithUserCustom)
 import getIconForChannel from "getIconForChannel";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";

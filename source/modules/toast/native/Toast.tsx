@@ -1,10 +1,10 @@
-// Module ID: 15901
-// Function ID: 15902
+// Module ID: 15900
+// Function ID: 15901
 // Name: ToastIcon
 // Dependencies: [32, 19, 17, 21, 4285, 712, 3989, 1297, 4281, 2]
 // Exports: default
 
-// Module 15901 (ToastIcon)
+// Module 15900 (ToastIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -35,7 +35,7 @@ function ToastIcon(recolorLegacyIcon) {
     const obj1 = { size: "sm", color: null };
     obj1[1] = token;
     let tmp8 = callback2(IconComponent, obj1);
-  } else if (typeof icon === "find") {
+  } else if (typeof icon === "function") {
     const obj2 = { children: null };
     obj2[0] = icon();
     tmp8 = callback2(closure_6, obj2);
@@ -53,7 +53,7 @@ function ToastIcon(recolorLegacyIcon) {
 function ToastContent(content) {
   content = content.content;
   const tmp = createCacheKey();
-  if (typeof content === "find") {
+  if (typeof content === "function") {
     let obj = { style: null, children: null };
     obj[0] = tmp.contentContainer;
     obj[1] = content();

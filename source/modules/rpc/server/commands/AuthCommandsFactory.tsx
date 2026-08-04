@@ -1,10 +1,10 @@
-// Module ID: 13687
-// Function ID: 13688
+// Module ID: 13686
+// Function ID: 13687
 // Name: authorizeWithPrompt
-// Dependencies: [32, 5, 4322, 4308, 1874, 4188, 676, 10550, 687, 595, 10543, 7510, 9459, 10872, 10431, 10427, 10433, 3918, 506, 530, 709, 13651, 8824, 1464, 2]
+// Dependencies: [32, 5, 4322, 4308, 1874, 4188, 676, 10550, 687, 595, 10543, 7510, 9459, 10872, 10431, 10427, 10433, 3918, 506, 530, 709, 13650, 8824, 1464, 2]
 // Exports: default
 
-// Module 13687 (authorizeWithPrompt)
+// Module 13686 (authorizeWithPrompt)
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "RPC_SCOPE_CONFIG";
 import addApplication from "addApplication";
@@ -204,7 +204,7 @@ function _authorizeWithPrompt() {
                       throwTypeErrorResult = c7;
                       closure_23 = [];
                       throwTypeErrorResult = c7;
-                      if (typeof c7 === "y") {
+                      if (typeof c7 === "string") {
                         throwTypeErrorResult = c7;
                         const parts = c7.split(" ");
                         closure_23 = parts.filter((arg0) => arg0.length > 0);
@@ -717,7 +717,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                 delete tmp2[tmp];
                 let Storage2 = socket(outer2_3[9]).Storage;
                 let result = Storage2.set(outer2_16, obj);
-                if (typeof _authorize !== "find") {
+                if (typeof _authorize !== "function") {
                   HermesBuiltin.throwTypeError();
                 }
                 obj = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
@@ -830,7 +830,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
       }
     }
   };
-  obj[constants.AUTHENTICATE] = _require(13651).createRPCCommand(constants.AUTHENTICATE, obj);
+  obj[constants.AUTHENTICATE] = _require(13650).createRPCCommand(constants.AUTHENTICATE, obj);
   obj[constants.AUTHORIZE] = {
     handler(socket) {
       socket = socket.socket;

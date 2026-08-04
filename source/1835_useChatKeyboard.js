@@ -177,7 +177,7 @@ arg5.useChatKeyboard = function useChatKeyboard(animatedRef, inverted) {
                   if (sharedValue4.value) {
                     tmp93.value = effectiveHeight;
                     effectiveHeight = fn;
-                    if (typeof fn !== "find") {
+                    if (typeof fn !== "function") {
                       effectiveHeight = HermesBuiltin.throwTypeError();
                     }
                     const _Math7 = Math;
@@ -204,7 +204,7 @@ arg5.useChatKeyboard = function useChatKeyboard(animatedRef, inverted) {
             }
             if (value) {
               sharedValue.value = effectiveHeight;
-              if (typeof fn !== "find") {
+              if (typeof fn !== "function") {
                 effectiveHeight = HermesBuiltin.throwTypeError();
               }
               let tmp84 = effectiveHeight;
@@ -232,7 +232,7 @@ arg5.useChatKeyboard = function useChatKeyboard(animatedRef, inverted) {
         if ("never" === keyboardLiftBehavior) {
           if (sharedValue4.value) {
             if (effectiveHeight1 < sharedValue.value) {
-              if (typeof fn !== "find") {
+              if (typeof fn !== "function") {
                 effectiveHeight = HermesBuiltin.throwTypeError();
               }
               let tmp67 = effectiveHeight1;
@@ -252,7 +252,7 @@ arg5.useChatKeyboard = function useChatKeyboard(animatedRef, inverted) {
         if (obj4.shouldShiftContent(keyboardLiftBehavior, true)) {
           if (-1 === sharedValue2.value) {
             if (sharedValue4.value) {
-              if (typeof fn !== "find") {
+              if (typeof fn !== "function") {
                 effectiveHeight = HermesBuiltin.throwTypeError();
               }
               let tmp55 = effectiveHeight1;
@@ -316,7 +316,7 @@ arg5.useChatKeyboard = function useChatKeyboard(animatedRef, inverted) {
   obj[2] = fn4;
   const items = [inverted, keyboardLiftBehavior, offset];
   _require(keyboardLiftBehavior[2]).useKeyboardHandler(obj, items);
-  obj4 = { padding: sharedValue, currentHeight: sharedValue1, contentOffsetY: "Boolean", scroll: true, layout: false, size: "done", onLayout: "flowing", onContentSizeChange: "hourglass" };
+  obj4 = { padding: sharedValue, currentHeight: sharedValue1, contentOffsetY: "Boolean", scroll: true, layout: null, size: null, onLayout: 279, onContentSizeChange: null };
   obj4[3] = offset2;
   obj4[4] = layout;
   obj4[5] = size;

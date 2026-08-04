@@ -1,10 +1,10 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 12513
+// Function ID: 12514
 // Name: createGuildTemplateEmbed
-// Dependencies: [17, 6828, 5850, 7116, 7863, 1236, 7855, 712, 4131, 11119, 11120, 12515, 2]
+// Dependencies: [17, 6828, 5850, 7116, 7863, 1236, 7855, 712, 4131, 11119, 11120, 12514, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12514 (createGuildTemplateEmbed)
+// Module 12513 (createGuildTemplateEmbed)
 import { Image } from "get ActivityIndicator";
 import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
@@ -61,7 +61,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj1.titleColor = colors.titleColor;
     obj1.subtitle = formatToPlainStringResult;
     obj1.subtitleColor = colors.subtitleColor;
-    obj1.thumbnailUrl = Image.resolveAssetSource(tmp(12515)).uri;
+    obj1.thumbnailUrl = Image.resolveAssetSource(tmp(12514)).uri;
     ({ acceptLabelGreenColor: obj6.acceptLabelColor, acceptLabelGreenBackgroundColor: obj6.acceptLabelBackgroundColor } = colors);
     const intl6 = require(1236) /* getSystemLocale */.intl;
     obj1.acceptLabelText = intl6.string(require(1236) /* getSystemLocale */.t["a3Gl+e"]);

@@ -1,10 +1,10 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15114
+// Function ID: 15115
 // Name: formatVoiceActivityTitle
-// Dependencies: [19, 17, 7040, 1874, 4301, 14431, 676, 21, 4285, 698, 10870, 1959, 15098, 14432, 4810, 12227, 15108, 7983, 589, 12, 1351, 4474, 1236, 2]
+// Dependencies: [19, 17, 7040, 1874, 4301, 14430, 676, 21, 4285, 698, 10870, 1959, 15097, 14431, 4810, 12226, 15107, 7983, 589, 12, 1351, 4474, 1236, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 15115 (formatVoiceActivityTitle)
+// Module 15114 (formatVoiceActivityTitle)
 import importAllResult from "apply";
 import { View } from "apexExperiment";
 import recomputeAffinities from "recomputeAffinities";

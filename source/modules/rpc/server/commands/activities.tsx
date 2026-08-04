@@ -1,8 +1,8 @@
-// Module ID: 13681
-// Function ID: 13682
-// Dependencies: [5, 676, 13651, 13639, 10548, 7510, 10543, 13643, 10513, 2]
+// Module ID: 13680
+// Function ID: 13681
+// Dependencies: [5, 676, 13650, 13638, 10548, 7510, 10543, 13642, 10513, 2]
 
-// Module 13681
+// Module 13680
 import getApplicationFlags from "getApplicationFlags";
 import ME from "ME";
 import createRPCCommand from "createRPCCommand";
@@ -19,7 +19,7 @@ obj = {
   handler(socket) {
     const result = require(10548) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.socket.transport);
     const obj = require(10548) /* recurseReplaceContentTree */;
-    return require(13639) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
+    return require(13638) /* activityInstanceConnectedParticipants */.activityInstanceConnectedParticipants();
   }
 };
 obj[RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS] = createRPCCommand.createRPCCommand(RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS, obj);

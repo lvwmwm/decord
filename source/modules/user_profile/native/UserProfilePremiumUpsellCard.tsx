@@ -1,10 +1,10 @@
-// Module ID: 13858
-// Function ID: 13859
+// Module ID: 13857
+// Function ID: 13858
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 676, 21, 4285, 1581, 1480, 6819, 5610, 5630, 7514, 8432, 8433, 13859, 1236, 4281, 2]
+// Dependencies: [19, 676, 21, 4285, 1581, 1480, 6819, 5610, 5630, 7514, 8432, 8433, 13858, 1236, 4281, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13858 (UserProfilePremiumUpsellCard)
+// Module 13857 (UserProfilePremiumUpsellCard)
 import noop from "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -73,5 +73,5 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     stringResult1 = string(t.Tii53U);
   }
   obj[4] = jsx(navigation(4281).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
-  return jsx(tmp(13859), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
+  return jsx(tmp(13858), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
 };

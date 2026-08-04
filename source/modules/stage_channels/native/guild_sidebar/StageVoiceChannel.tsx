@@ -1,8 +1,8 @@
-// Module ID: 15239
-// Function ID: 15240
-// Dependencies: [19, 17, 6895, 3913, 4297, 4480, 4357, 1377, 676, 9710, 21, 1236, 4285, 712, 589, 5102, 15240, 5115, 5109, 4771, 8223, 1844, 7696, 9585, 4475, 9659, 15138, 15227, 15143, 2]
+// Module ID: 15238
+// Function ID: 15239
+// Dependencies: [19, 17, 6895, 3913, 4297, 4480, 4357, 1377, 676, 9710, 21, 1236, 4285, 712, 589, 5102, 15239, 5115, 5109, 4771, 8223, 1844, 7696, 9585, 4475, 9659, 15137, 15226, 15142, 2]
 
-// Module 15239
+// Module 15238
 import importAllResult from "shouldShowMembershipVerificationGate";
 import { View } from "useStageParticipants";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo((channel) => {
   }, items1);
   ({ stageInstance, hasUnread, hasMedia, collapsed } = stateFromStoresObject);
   ({ resolvedUnreadSetting, voiceStates, locked } = stateFromStoresObject);
-  let arr3 = importDefault(15240)(channel.guild_id)[channel.id];
+  let arr3 = importDefault(15239)(channel.guild_id)[channel.id];
   if (arr3 == null) {
     arr3 = NO_VOICE_STATES;
   }
@@ -79,7 +79,7 @@ const memoResult = importAllResult.memo((channel) => {
   if (stageInstance != null) {
     const topic = stageInstance.topic;
   }
-  let tmp5Result = tmp5(15138);
+  let tmp5Result = tmp5(15137);
   const intl = tmp2(1236).intl;
   if (null != channel.userLimit) {
     if (channel.userLimit > 0) {
@@ -111,7 +111,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj2[0] = channel;
     obj2[1] = selected;
     obj2[2] = collapsed;
-    tmp5Result = tmp5(15227);
+    tmp5Result = tmp5(15226);
     if (!hasMedia) {
       let tmp20 = channel.userLimit > 0;
       if (tmp20) {
@@ -131,7 +131,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj4[1] = collapsed;
       obj4[2] = arr3;
       obj4[3] = stageParticipantsCount;
-      obj3[1] = tmp12(tmp5(15143), obj4);
+      obj3[1] = tmp12(tmp5(15142), obj4);
       tmp12Result = tmp12(View, obj3);
     }
     obj.children = tmp12Result;

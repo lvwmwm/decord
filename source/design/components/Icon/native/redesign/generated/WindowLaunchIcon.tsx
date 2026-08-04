@@ -1,10 +1,10 @@
-// Module ID: 12144
-// Function ID: 12145
+// Module ID: 12143
+// Function ID: 12144
 // Name: WindowLaunchIcon
-// Dependencies: [19, 21, 712, 3988, 12145, 2]
+// Dependencies: [19, 21, 712, 3988, 12144, 2]
 // Exports: WindowLaunchIcon
 
-// Module 12144 (WindowLaunchIcon)
+// Module 12143 (WindowLaunchIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const WindowLaunchIcon = function WindowLaunchIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12145) /* registerAsset */;
+  obj[0] = require(12144) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

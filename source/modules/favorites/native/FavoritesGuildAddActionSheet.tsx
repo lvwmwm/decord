@@ -1,10 +1,10 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15159
+// Function ID: 15160
 // Name: handleAddToFavorites
-// Dependencies: [19, 21, 4253, 12048, 15161, 5646, 5337, 1236, 5648, 3031, 8668, 15162, 2]
+// Dependencies: [19, 21, 4253, 12047, 15160, 5646, 5337, 1236, 5648, 3031, 8668, 15161, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15160 (handleAddToFavorites)
+// Module 15159 (handleAddToFavorites)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -14,12 +14,12 @@ const require = arg1;
 function handleAddToFavorites() {
   importDefault(4253).hideActionSheet(FavoritesGuildAddActionSheet);
   const obj = importDefault(4253);
-  const result = require(12048) /* AddFavoriteChannelModal */.openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
+  const result = require(12047) /* AddFavoriteChannelModal */.openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
 }
 function handleCreateCategory() {
   importDefault(4253).hideActionSheet(FavoritesGuildAddActionSheet);
   const obj = importDefault(4253);
-  const result = require(15161) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
+  const result = require(15160) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
   let obj = { header: null, children: null };
@@ -42,7 +42,7 @@ function FavoritesGuildAddActionSheet() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[0] = intl3.string(require(1236) /* getSystemLocale */.t["ISN+NM"]);
   const obj5 = { IconComponent: null };
-  obj5[0] = require(15162) /* FolderPlusIcon */.FolderPlusIcon;
+  obj5[0] = require(15161) /* FolderPlusIcon */.FolderPlusIcon;
   obj4[1] = callback(require(5648) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj5);
   obj4[2] = handleCreateCategory;
   obj3[1] = callback(require(5648) /* ActionSheetRowIcon */.ActionSheetRow, obj4);

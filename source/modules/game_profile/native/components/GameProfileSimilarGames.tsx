@@ -1,10 +1,10 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12088
+// Function ID: 12089
 // Name: Spacer
-// Dependencies: [19, 17, 21, 712, 4285, 9190, 9200, 9194, 1236, 4281, 9226, 12090, 1474, 7666, 2]
+// Dependencies: [19, 17, 21, 712, 4285, 9190, 9200, 9194, 1236, 4281, 9226, 12089, 1474, 7666, 2]
 // Exports: default
 
-// Module 12089 (Spacer)
+// Module 12088 (Spacer)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -129,7 +129,7 @@ export default function GameProfileSimilarGames(trackAction) {
   const GameProfileSimilarGamesMobileExperiment = trackAction(9226).GameProfileSimilarGamesMobileExperiment;
   const config = GameProfileSimilarGamesMobileExperiment.useConfig({ location: "GameProfileSimilarGames" });
   ({ enabled, dense } = config);
-  const tmp6 = importDefault(12090)(trackAction.gameId, enabled);
+  const tmp6 = importDefault(12089)(trackAction.gameId, enabled);
   const similarGames = tmp6.similarGames;
   let num = 3;
   if (dense) {

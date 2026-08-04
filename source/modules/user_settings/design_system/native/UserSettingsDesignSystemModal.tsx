@@ -1,10 +1,10 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14709
+// Function ID: 14710
 // Name: DemoModal
-// Dependencies: [32, 19, 17, 21, 4285, 712, 5665, 5238, 4490, 5917, 1236, 7713, 3982, 11248, 13333, 7757, 7758, 4281, 11246, 13335, 10181, 10180, 5649, 5650, 4695, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 5665, 5238, 4490, 5917, 1236, 7713, 3982, 11248, 13332, 7757, 7758, 4281, 11246, 13334, 10181, 10180, 5649, 5650, 4695, 2]
 // Exports: default
 
-// Module 14710 (DemoModal)
+// Module 14709 (DemoModal)
 import _slicedToArray from "_slicedToArray";
 import ModalDisclaimer from "ModalDisclaimer";
 import get_ActivityIndicator from "Text";
@@ -255,7 +255,7 @@ function DemoStepModal() {
     return items;
   }, []);
   obj = { screens: navigatorScreens, steps: memo, initialRouteName: constants.START };
-  return callback2(require(13333) /* StepModal */.StepModal, obj);
+  return callback2(require(13332) /* StepModal */.StepModal, obj);
 }
 function DemoScreen(arg0) {
   let action;
@@ -289,7 +289,7 @@ function DemoScreen(arg0) {
     if (tmp8Result) {
       const obj2 = { children: null };
       obj2[0] = disclaimer;
-      tmp8Result = tmp8(tmp3(13335).ModalDisclaimer, obj2);
+      tmp8Result = tmp8(tmp3(13334).ModalDisclaimer, obj2);
     }
     const items2 = [tmp8Result, , ];
     tmp8Result = null != action;

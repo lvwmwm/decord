@@ -1,10 +1,10 @@
-// Module ID: 13904
-// Function ID: 13905
+// Module ID: 13903
+// Function ID: 13904
 // Name: items
-// Dependencies: [32, 19, 17, 1874, 11193, 7728, 21, 7729, 13905, 4285, 712, 1236, 4246, 7716, 8985, 5905, 8279, 589, 1416, 9306, 1297, 4281, 2]
+// Dependencies: [32, 19, 17, 1874, 11193, 7728, 21, 7729, 13904, 4285, 712, 1236, 4246, 7716, 8985, 5905, 8279, 589, 1416, 9306, 1297, 4281, 2]
 // Exports: default
 
-// Module 13904 (items)
+// Module 13903 (items)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import { View } from "initialize";

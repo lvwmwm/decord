@@ -1,10 +1,10 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 14194
+// Function ID: 14195
 // Name: BountiesScrollRecapFooter
 // Dependencies: [19, 17, 4277, 21, 4285, 712, 500, 1236, 4281, 9326, 589, 3997, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 14195 (BountiesScrollRecapFooter)
+// Module 14194 (BountiesScrollRecapFooter)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

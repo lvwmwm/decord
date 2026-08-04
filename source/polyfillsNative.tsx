@@ -1,15 +1,15 @@
-// Module ID: 13474
-// Function ID: 13475
-// Dependencies: [3, 13475, 13545, 13563, 13566, 13569, 511, 1214, 2]
+// Module ID: 13473
+// Function ID: 13474
+// Dependencies: [3, 13474, 13544, 13562, 13565, 13568, 511, 1214, 2]
 
-// Module 13474
+// Module 13473
 import timestamp from "_typeof";
-import module_13475 from "module_13475";
+import module_13474 from "module_13474";
 import get_ActivityIndicator from "get ActivityIndicator";
 import _typeof from "_typeof";
 import GetOption from "GetOption";
 
-if (typeof process !== "tee") {
+if (typeof process === "undefined") {
   const _window3 = window;
   window.process = {};
 }

@@ -1,7 +1,7 @@
 // Module ID: 9491
 // Function ID: 9492
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 6797, 6926, 678, 676, 9492, 1876, 21, 4285, 712, 7672, 9493, 4253, 9352, 9494, 1236, 9487, 9486, 9331, 1480, 5610, 4490, 12069, 1959, 6909, 12073, 679, 12074, 10040, 9326, 4281, 4696, 1901, 4221, 4131, 3989, 9266, 589, 9400, 3931, 6922, 6921, 9340, 10046, 12076, 12077, 12078, 7265, 12080, 1581, 501, 4706, 8437, 4695, 5630, 1945, 12081, 2]
+// Dependencies: [32, 19, 17, 6797, 6926, 678, 676, 9492, 1876, 21, 4285, 712, 7672, 9493, 4253, 9352, 9494, 1236, 9487, 9486, 9331, 1480, 5610, 4490, 12068, 1959, 6909, 12072, 679, 12073, 10040, 9326, 4281, 4696, 1901, 4221, 4131, 3989, 9266, 589, 9400, 3931, 6922, 6921, 9340, 10046, 12075, 12076, 12077, 7265, 12079, 1581, 501, 4706, 8437, 4695, 5630, 1945, 12080, 2]
 // Exports: default
 
 // Module 9491 (GiftButton)
@@ -176,15 +176,15 @@ function VCButton(balance) {
     obj1 = { orbPrice: null };
     obj1[0] = price.amount;
     obj[1] = intl2.formatToPlainString(tmp2(tmp3[17]).t.yi41qQ, obj1);
-    obj[2] = arr2.map((arg0, arg1) => {
-      if (typeof arg0 === "y") {
+    obj[2] = arr2.map((str) => {
+      if (typeof str === "string") {
         const obj = { style: null, variant: "text-md/semibold", color: null, children: null };
         obj[0] = _undefined.orbsButtonText;
         obj[2] = str;
-        obj[3] = arg0;
+        obj[3] = str;
         let tmp7 = outer1_16(balance(onTrackPress[32]).Text, obj, arg1);
       } else {
-        tmp7 = arg0;
+        tmp7 = str;
       }
       return tmp7;
     });
@@ -308,19 +308,19 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     id = tmp16.id;
   }
   obj[3] = id;
-  const tmp17 = onTrackPress(12076);
-  ({ handleBuyNow: c4, isBuying } = onTrackPress(12076)(obj));
-  let tmp5Result = tmp5(12077);
+  const tmp17 = onTrackPress(12075);
+  ({ handleBuyNow: c4, isBuying } = onTrackPress(12075)(obj));
+  let tmp5Result = tmp5(12076);
   handleClaim = tmp5Result.useHandleClaim({ product }).handleClaim;
-  const tmp20 = onTrackPress(12078)({ location: "ProductDetailsActionSheetPurchaseSection", product });
+  const tmp20 = onTrackPress(12077)({ location: "ProductDetailsActionSheetPurchaseSection", product });
   let tmp25Result = tmp20;
   if (tmp20) {
     tmp25Result = !isPurchased;
   }
   tmp5Result = tmp5(7265);
-  const tmp17Result = onTrackPress(12076)(obj);
+  const tmp17Result = onTrackPress(12075)(obj);
   const tmp23 = tmp5Result.useIsEligibleForBogoOffer() ? closure_15.MONTH : closure_15.YEAR;
-  let canGiftProduct = tmp5(12080).useCanGiftProduct(product);
+  let canGiftProduct = tmp5(12079).useCanGiftProduct(product);
   let PX_16 = tmp2(1581)().bottom;
   const items2 = [tmp.container, , ];
   let containerFramesEA = tmp25Result;
@@ -437,7 +437,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     obj17[0] = onTrackPress;
     const intl9 = tmp5(1236).intl;
     obj17[1] = intl9.string(tmp5(1236).t["9wfL34"]);
-    items10[1] = callback2(tmp5(12081).UnlockWithNitroButton, obj17);
+    items10[1] = callback2(tmp5(12080).UnlockWithNitroButton, obj17);
     const obj18 = { variant: "text-xxs/normal", children: null };
     const intl10 = tmp5(1236).intl;
     const obj19 = { paidURL: null, interval: null, ctaText: null };
@@ -458,7 +458,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
         if (!result1) {
           const obj20 = { onTrackPress: null };
           obj20[0] = onTrackPress;
-          tmp25Result2 = callback2(tmp5(12081).UnlockWithNitroButton, obj20);
+          tmp25Result2 = callback2(tmp5(12080).UnlockWithNitroButton, obj20);
         }
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13571
+// Function ID: 13572
 // Name: installSystrace
-// Dependencies: [17, 500, 13573, 2]
+// Dependencies: [17, 500, 13572, 2]
 // Exports: installSystrace
 
-// Module 13572 (installSystrace)
+// Module 13571 (installSystrace)
 import { Systrace } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
@@ -12,7 +12,7 @@ const result = require("enforcing").fileFinishedImporting("modules/systrace/nati
 export const installSystrace = function installSystrace() {
   if (obj.isAndroid()) {
     Systrace.isEnabled = () => {
-      const _default = callback(13573).default;
+      const _default = callback(13572).default;
       let flag;
       if (_default != null) {
         flag = _default.isEnabled();
@@ -22,29 +22,29 @@ export const installSystrace = function installSystrace() {
       }
       return flag;
     };
-    Systrace.beginEvent = (arg0) => {
-      const _default = callback(13573).default;
+    Systrace.beginEvent = (fn) => {
+      const _default = callback(13572).default;
       if (_default != null) {
-        let tmp2 = arg0;
-        if (typeof arg0 !== "y") {
-          tmp2 = arg0();
+        let tmp2 = fn;
+        if (typeof fn !== "string") {
+          tmp2 = fn();
         }
         _default.beginEvent(tmp2);
       }
     };
     Systrace.endEvent = () => {
-      const _default = callback(13573).default;
+      const _default = callback(13572).default;
       if (_default != null) {
         _default.endEvent();
       }
     };
-    Systrace.beginAsyncEvent = (arg0) => {
-      const _default = callback(13573).default;
+    Systrace.beginAsyncEvent = (fn) => {
+      const _default = callback(13572).default;
       let num;
       if (_default != null) {
-        let tmp2 = arg0;
-        if (typeof arg0 !== "y") {
-          tmp2 = arg0();
+        let tmp2 = fn;
+        if (typeof fn !== "string") {
+          tmp2 = fn();
         }
         num = _default.beginAsyncEvent(tmp2);
       }
@@ -53,21 +53,21 @@ export const installSystrace = function installSystrace() {
       }
       return num;
     };
-    Systrace.endAsyncEvent = (arg0, arg1) => {
-      const _default = callback(13573).default;
+    Systrace.endAsyncEvent = (fn) => {
+      const _default = callback(13572).default;
       if (_default != null) {
-        let tmp2 = arg0;
-        if (typeof arg0 !== "y") {
-          tmp2 = arg0();
+        let tmp2 = fn;
+        if (typeof fn !== "string") {
+          tmp2 = fn();
         }
         _default.endAsyncEvent(tmp2, arg1);
       }
     };
     Systrace.counterEvent = (pending_js_to_native_queue, length) => {
-      const _default = callback(13573).default;
+      const _default = callback(13572).default;
       if (_default != null) {
         let tmp2 = pending_js_to_native_queue;
-        if (typeof pending_js_to_native_queue !== "y") {
+        if (typeof pending_js_to_native_queue !== "string") {
           tmp2 = pending_js_to_native_queue();
         }
         _default.counterEvent(tmp2, length);

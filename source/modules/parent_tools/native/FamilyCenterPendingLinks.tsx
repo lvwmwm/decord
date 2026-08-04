@@ -1,10 +1,10 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14074
+// Function ID: 14075
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [19, 17, 6906, 21, 4285, 712, 7259, 11239, 1236, 2285, 4281, 7260, 4812, 4490, 14076, 1959, 1297, 9793, 14077, 14074, 14078, 14069, 2]
+// Dependencies: [19, 17, 6906, 21, 4285, 712, 7259, 11239, 1236, 2285, 4281, 7260, 4812, 4490, 14075, 1959, 1297, 9793, 14076, 14073, 14077, 14068, 2]
 // Exports: default
 
-// Module 14075 (FamilyCenterPendingLinkRow)
+// Module 14074 (FamilyCenterPendingLinkRow)
 import "registerAsset";
 import { View } from "registerAsset";
 import { UserLinkStatus } from "items";
@@ -41,7 +41,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj[3] = tmp.actionButton;
       const obj1 = { size: null, disableColor: true, source: null };
       obj1[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj1[2] = tmp2(14074);
+      obj1[2] = tmp2(14073);
       obj[4] = closure_5(tmp5(1297).Icon, obj1);
       let tmp8Result = tmp17(tmp5(4812).PressableOpacity, obj);
       let tmp14 = tmp17;
@@ -91,7 +91,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj5[3] = tmp.actionButton;
       const obj7 = { size: null, disableColor: true, source: null };
       obj7[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj7[2] = tmp2(14074);
+      obj7[2] = tmp2(14073);
       obj5[4] = tmp14(tmp5(1297).Icon, obj7);
       items1[1] = tmp14(tmp5(4812).PressableOpacity, obj5);
       obj4[0] = items1;
@@ -102,7 +102,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
     const obj8 = { otherUser: null, actions: null };
     obj8[0] = str;
     obj8[1] = tmp8Result;
-    return tmp14(tmp2(14069), obj8);
+    return tmp14(tmp2(14068), obj8);
   }
   tmp4 = importDefault(7260)();
 }

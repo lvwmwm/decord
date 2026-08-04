@@ -1,10 +1,10 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14047
+// Function ID: 14048
 // Name: UserRow
 // Dependencies: [19, 1874, 21, 4285, 6961, 5315, 4124, 1297, 5646, 4281, 1236, 2285, 5649, 2]
 // Exports: default
 
-// Module 14048 (UserRow)
+// Module 14047 (UserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ function UserRow(userActivity) {
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = importDefault(4124).getName(user);
     obj[1] = topUserOrGuildDescription;
-    obj = { size: null, user: null, guildId: "Array" };
+    obj = { size: null, user: null, guildId: "disabled" };
     obj[0] = require(1297) /* Button */.AvatarSizes.SMALL;
     obj[1] = user;
     obj[2] = callback(require(1297) /* Button */.Avatar, obj);

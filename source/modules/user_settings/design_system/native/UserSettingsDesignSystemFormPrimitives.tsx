@@ -1,10 +1,10 @@
-// Module ID: 14716
-// Function ID: 14717
+// Module ID: 14715
+// Function ID: 14716
 // Name: Radio
-// Dependencies: [32, 19, 17, 676, 21, 4285, 4281, 7795, 7794, 5649, 5650, 10448, 8259, 5315, 13337, 10748, 4810, 4693, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4285, 4281, 7795, 7794, 5649, 5650, 10448, 8259, 5315, 13336, 10748, 4810, 4693, 2]
 // Exports: default
 
-// Module 14716 (Radio)
+// Module 14715 (Radio)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ScrollView } from "Stack";
@@ -131,7 +131,7 @@ function SliderDemo() {
   obj[0] = callback2(require(10748) /* VoiceXIcon */.VoiceXIcon, {});
   obj[1] = callback2(require(4810) /* VoiceNormalIcon */.VoiceNormalIcon, {});
   obj[2] = NOOP;
-  obj[3] = callback2(require(13337) /* Slider */.Slider, obj);
+  obj[3] = callback2(require(13336) /* Slider */.Slider, obj);
   items[1] = callback2(require(5315) /* TableRowInner */.TableRow, obj);
   obj[0] = items;
   return callback3(closure_8, obj);

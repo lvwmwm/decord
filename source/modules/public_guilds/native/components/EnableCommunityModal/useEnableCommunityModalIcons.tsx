@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16626
+// Function ID: 16627
 // Name: safetyCheck
-// Dependencies: [32, 19, 505, 4131, 16628, 16629, 16630, 16634, 16635, 7837, 4221, 2]
+// Dependencies: [32, 19, 505, 4131, 16627, 16628, 16629, 16633, 16634, 7837, 4221, 2]
 // Exports: default
 
-// Module 16627 (safetyCheck)
+// Module 16626 (safetyCheck)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ThemeTypes } from "sum";
@@ -22,9 +22,9 @@ const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(16628);
+      let tmpResult = tmp(16627);
     } else {
-      tmpResult = tmp(16629);
+      tmpResult = tmp(16628);
     }
     return tmpResult;
   },
@@ -32,16 +32,16 @@ Object.defineProperty(prototype, "safetyCheck", {
 });
 Object.defineProperty(prototype, "channelSetup", {
   get: function channelSetup() {
-    return require(16630) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
+    return require(16629) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(16634);
+      let tmpResult = tmp(16633);
     } else {
-      tmpResult = tmp(16635);
+      tmpResult = tmp(16634);
     }
     return tmpResult;
   },
@@ -58,7 +58,7 @@ const result = require("sum").fileFinishedImporting("modules/public_guilds/nativ
 export default function useEnableCommunityModalIcons() {
   let closure_0 = importDefault(4221)();
   return callback(React.useState(() => {
-    if (typeof outer1_6 !== "find") {
+    if (typeof outer1_6 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(outer1_6.prototype);

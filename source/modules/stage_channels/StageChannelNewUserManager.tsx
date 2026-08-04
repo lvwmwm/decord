@@ -1,9 +1,9 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12569
+// Function ID: 12570
 // Name: _initialize
-// Dependencies: [1218, 1931, 5106, 5099, 4463, 709, 595, 12571, 2]
+// Dependencies: [1218, 1931, 5106, 5099, 4463, 709, 595, 12570, 2]
 
-// Module 12570 (_initialize)
+// Module 12569 (_initialize)
 import fetchFingerprint from "fetchFingerprint";
 import handleConnectionOpen from "handleConnectionOpen";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";

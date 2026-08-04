@@ -15,10 +15,10 @@ let closure_6;
 const require = arg1;
 ({ useCallback: c3, useEffect: c4, useRef: c5, useState: closure_6 } = noop);
 
-export const useRiveProperty = function useRiveProperty(instance, FillColor, f28758) {
+export const useRiveProperty = function useRiveProperty(instance, FillColor, f28757) {
   const _require = instance;
   const dependencyMap = FillColor;
-  const callback = f28758;
+  const callback = f28757;
   let tmp = first(undefined);
   const callback2 = tmp;
   const items = [instance, FillColor];
@@ -73,15 +73,15 @@ export const useRiveProperty = function useRiveProperty(instance, FillColor, f28
   const items4 = [disposableMemo, first];
   const items5 = [
     first,
-    callback2((arg0) => {
+    callback2((fn) => {
       const current = tmp.current;
       if (current) {
-        let tmp2 = arg0;
-        if (typeof arg0 !== "three_button_mouse") {
-          tmp2 = arg0(first);
+        let tmp2 = fn;
+        if (typeof fn === "function") {
+          tmp2 = fn(first);
         }
         current.value = tmp2;
-        tmp = arg0;
+        tmp = fn;
       }
     }, items4),
     tmp5[0],

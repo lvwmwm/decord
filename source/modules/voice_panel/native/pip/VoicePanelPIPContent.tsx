@@ -1,9 +1,9 @@
-// Module ID: 16106
-// Function ID: 16107
+// Module ID: 16105
+// Function ID: 16106
 // Name: VideoStream
-// Dependencies: [32, 19, 17, 1371, 4298, 10567, 4304, 1218, 1372, 1874, 11558, 16033, 676, 4310, 4303, 21, 4285, 712, 11557, 16027, 10614, 1231, 4629, 16037, 5663, 16032, 647, 1474, 4146, 10630, 9317, 10603, 10618, 1297, 8985, 11560, 7819, 15949, 9681, 10596, 10599, 2]
+// Dependencies: [32, 19, 17, 1371, 4298, 10567, 4304, 1218, 1372, 1874, 11558, 16032, 676, 4310, 4303, 21, 4285, 712, 11557, 16026, 10614, 1231, 4629, 16036, 5663, 16031, 647, 1474, 4146, 10630, 9317, 10603, 10618, 1297, 8985, 11560, 7819, 15948, 9681, 10596, 10599, 2]
 
-// Module 16106 (VideoStream)
+// Module 16105 (VideoStream)
 import canRenderParticipantVideo from "canRenderParticipantVideo";
 import importAllResult from "cleanUp";
 import get_ActivityIndicator from "Themes";
@@ -35,7 +35,7 @@ let closure_22;
 const require = arg1;
 function VideoStream(streamId) {
   streamId = streamId.streamId;
-  let obj = streamId(16027);
+  let obj = streamId(16026);
   setHasActiveVideoOutputSink = obj.useSetHasActiveVideoOutputSink(importAllResult.useContext(setHasActiveVideoOutputSink(11557)).streamOutputSinkStack);
   const items = [setHasActiveVideoOutputSink, streamId];
   const effect = importAllResult.useEffect(() => {
@@ -566,7 +566,7 @@ function Stream(participantId) {
   let callback2;
   let c9;
   let tmp = callback3();
-  let obj = transitionState(16037);
+  let obj = transitionState(16036);
   const mode = obj.usePIPState().mode;
   transitionCleanUp = mode;
   let obj1 = streamId;

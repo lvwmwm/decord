@@ -1,8 +1,8 @@
-// Module ID: 14399
-// Function ID: 14400
-// Dependencies: [19, 4097, 1303, 1302, 14400, 7892, 21, 1480, 500, 8193, 1236, 9371, 705, 4711, 14401, 647, 10361, 13794, 2]
+// Module ID: 14398
+// Function ID: 14399
+// Dependencies: [19, 4097, 1303, 1302, 14399, 7892, 21, 1480, 500, 8193, 1236, 9371, 705, 4711, 14400, 647, 10361, 13793, 2]
 
-// Module 14399
+// Module 14398
 import importAllResult from "noop";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -21,8 +21,8 @@ const memoResult = importAllResult.memo(() => {
   let theme;
   nativeStackNavigation(4711)(() => {
     if (initialize.shouldSync("appearance")) {
-      const userCustomThemes = _undefined(14401).fetchUserCustomThemes();
-      const obj = _undefined(14401);
+      const userCustomThemes = _undefined(14400).fetchUserCustomThemes();
+      const obj = _undefined(14400);
     }
   });
   let items = [handleThemeChange, isSyncedModeThemesEnabled];
@@ -109,7 +109,7 @@ const memoResult = importAllResult.memo(() => {
     return obj.createList(obj);
   }, []);
   let obj2 = _require(1480);
-  return jsx(nativeStackNavigation(13794), { node }, "" + theme + "-" + gradientPresetId);
+  return jsx(nativeStackNavigation(13793), { node }, "" + theme + "-" + gradientPresetId);
 });
 const result = require("initialize").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
 

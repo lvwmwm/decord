@@ -5,7 +5,7 @@
 
 // Module 4203 (parse)
 arg5.parse = function parse(str) {
-  if (typeof str === "_iter") {
+  if (typeof str !== "string") {
     const _TypeError = TypeError;
     const typeError = new TypeError("argument str must be a string");
     throw typeError;

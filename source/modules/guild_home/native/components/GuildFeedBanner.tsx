@@ -1,9 +1,9 @@
-// Module ID: 15542
-// Function ID: 15543
+// Module ID: 15541
+// Function ID: 15542
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 13223, 1862, 15543, 676, 21, 4285, 712, 4146, 1474, 4221, 13224, 500, 1416, 8249, 4286, 4289, 589, 7562, 10911, 4131, 15544, 15545, 5661, 4281, 1297, 4812, 3986, 1236, 15546, 2]
+// Dependencies: [19, 17, 13222, 1862, 15542, 676, 21, 4285, 712, 4146, 1474, 4221, 13223, 500, 1416, 8249, 4286, 4289, 589, 7562, 10911, 4131, 15543, 15544, 5661, 4281, 1297, 4812, 3986, 1236, 15545, 2]
 
-// Module 15542 (GuildFeedBanner)
+// Module 15541 (GuildFeedBanner)
 import importAllResult from "useIsWindowLarge";
 import get_ActivityIndicator from "timingNone";
 import initialize from "initialize";
@@ -125,9 +125,9 @@ function GuildFeedBanner(guild) {
     const items6 = [obj3, animatedStyle];
     obj2[0] = items6;
     if (tmp2Result2.isThemeDark(tmp8)) {
-      let tmp6Result = tmp6(15544);
+      let tmp6Result = tmp6(15543);
     } else {
-      tmp6Result = tmp6(15545);
+      tmp6Result = tmp6(15544);
     }
     obj2[1] = tmp6Result;
     obj2[2] = handleLoad;
@@ -183,7 +183,7 @@ function GuildFeedBanner(guild) {
       };
       const obj14 = { style: null, source: null };
       obj14[0] = tmp.publicIcon;
-      obj14[1] = tmp6(15546);
+      obj14[1] = tmp6(15545);
       const items12 = [tmp17(tmp2(1297).Icon, obj14), ];
       const obj15 = { variant: "text-xs/medium", color: "text-default", children: null };
       let intl = tmp2(1236).intl;

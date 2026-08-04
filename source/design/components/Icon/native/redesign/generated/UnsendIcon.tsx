@@ -1,10 +1,10 @@
-// Module ID: 14259
-// Function ID: 14260
+// Module ID: 14258
+// Function ID: 14259
 // Name: UnsendIcon
-// Dependencies: [19, 21, 712, 3988, 14260, 2]
+// Dependencies: [19, 21, 712, 3988, 14259, 2]
 // Exports: UnsendIcon
 
-// Module 14259 (UnsendIcon)
+// Module 14258 (UnsendIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const UnsendIcon = function UnsendIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14260) /* registerAsset */;
+  obj[0] = require(14259) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

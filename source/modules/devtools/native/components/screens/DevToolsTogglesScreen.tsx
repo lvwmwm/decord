@@ -1,10 +1,10 @@
-// Module ID: 14924
-// Function ID: 14925
+// Module ID: 14923
+// Function ID: 14924
 // Name: fuzzySearchToggle
-// Dependencies: [32, 19, 17, 5241, 4284, 21, 5197, 4285, 712, 5315, 3986, 5651, 589, 5649, 14908, 5310, 14925, 4693, 14926, 5901, 2]
+// Dependencies: [32, 19, 17, 5241, 4284, 21, 5197, 4285, 712, 5315, 3986, 5651, 589, 5649, 14907, 5310, 14924, 4693, 14925, 5901, 2]
 // Exports: default
 
-// Module 14924 (fuzzySearchToggle)
+// Module 14923 (fuzzySearchToggle)
 import _slicedToArray from "_slicedToArray";
 import SearchField from "SearchField";
 import { ScrollView } from "Stack";
@@ -100,7 +100,7 @@ export default function DevToolsTogglesScreen() {
   let tmp = createCacheKey();
   let tmp3 = callback(React.useState(""), 2);
   const first = tmp3[0];
-  let obj = first(14925);
+  let obj = first(14924);
   const manaTextMigrationHighlightRestartNotice = obj.useManaTextMigrationHighlightRestartNotice();
   let obj1 = first(589);
   const items = [getUserAgnosticState];
@@ -136,9 +136,9 @@ export default function DevToolsTogglesScreen() {
       label: "Clear All",
       variant: "danger",
       onPress() {
-        first(14926).clearAll();
-        const obj = first(14926);
-        first(14908).clearAll();
+        first(14925).clearAll();
+        const obj = first(14925);
+        first(14907).clearAll();
       },
       arrow: true
     }),

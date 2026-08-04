@@ -1,7 +1,7 @@
 // Module ID: 6783
 // Function ID: 6784
 // Name: PremiumModal
-// Dependencies: [19, 676, 21, 1236, 5238, 6784, 12674, 12677, 12719, 12731, 5610, 5665, 2]
+// Dependencies: [19, 676, 21, 1236, 5238, 6784, 12673, 12676, 12718, 12730, 5610, 5665, 2]
 // Exports: default
 
 // Module 6783 (PremiumModal)

@@ -1,9 +1,9 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16304
+// Function ID: 16305
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4332, 4356, 4300, 4301, 4299, 10420, 4345, 3, 38, 9077, 10771, 5229, 4170, 10773, 1351, 4623, 1236, 16306, 10776, 2]
+// Dependencies: [5, 1218, 4332, 4356, 4300, 4301, 4299, 10420, 4345, 3, 38, 9077, 10771, 5229, 4170, 10773, 1351, 4623, 1236, 16305, 10776, 2]
 
-// Module 16305 (syncLocalState)
+// Module 16304 (syncLocalState)
 import updateVoiceState from "updateVoiceState";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

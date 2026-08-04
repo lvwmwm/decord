@@ -1,9 +1,9 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 14173
+// Function ID: 14174
 // Name: hasVideoEnded
-// Dependencies: [32, 19, 17, 6785, 676, 21, 712, 8793, 4285, 689, 14165, 4146, 4694, 4698, 4286, 4289, 1231, 589, 500, 1208, 1581, 1236, 4812, 14175, 14177, 14179, 14180, 9777, 8777, 8779, 14181, 14182, 2]
+// Dependencies: [32, 19, 17, 6785, 676, 21, 712, 8793, 4285, 689, 14164, 4146, 4694, 4698, 4286, 4289, 1231, 589, 500, 1208, 1581, 1236, 4812, 14174, 14176, 14178, 14179, 9777, 8777, 8779, 14180, 14181, 2]
 
-// Module 14174 (hasVideoEnded)
+// Module 14173 (hasVideoEnded)
 import set from "set";
 import importAllResult from "module_1208";
 import get_ActivityIndicator from "initialize";
@@ -35,7 +35,7 @@ hasVideoEnded.__closure = {};
 hasVideoEnded.__workletHash = 8992945176371;
 hasVideoEnded.__initData = { code: "function hasVideoEnded_AdVideoPlayerTsx1(currentTime,videoDuration){return currentTime>=videoDuration-1;}" };
 function canSeekForward(arg0, arg1, arg2, arg3) {
-  if (typeof hasVideoEnded !== "find") {
+  if (typeof hasVideoEnded !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let tmp2 = !tmp;
@@ -254,7 +254,7 @@ const memoResult = importAllResult.memo((initialProgress) => {
   }
   if (tmp15) {
     ({ timestampSec, duration } = first1);
-    if (typeof videoRef !== "find") {
+    if (typeof videoRef !== "function") {
       HermesBuiltin.throwTypeError();
     }
     tmp15 = timestampSec >= duration - 1;
@@ -536,10 +536,10 @@ const memoResult = importAllResult.memo((initialProgress) => {
   let tmp37 = first2 === tmp8(tmp9[10]).PlayerState.ERRORED;
   if (!tmp37) {
     ({ timestampSec: timestampSec2, maxTimestampSec, duration: duration2 } = first1);
-    if (typeof first !== "find") {
+    if (typeof first !== "function") {
       HermesBuiltin.throwTypeError();
     }
-    if (typeof videoRef !== "find") {
+    if (typeof videoRef !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let tmp41 = !tmp40;

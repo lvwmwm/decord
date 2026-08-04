@@ -1,9 +1,9 @@
-// Module ID: 13664
-// Function ID: 13665
+// Module ID: 13663
+// Function ID: 13664
 // Name: items
-// Dependencies: [32, 3922, 1874, 4188, 676, 13651, 8824, 506, 10543, 10548, 2]
+// Dependencies: [32, 3922, 1874, 4188, 676, 13650, 8824, 506, 10543, 10548, 2]
 
-// Module 13664 (items)
+// Module 13663 (items)
 import _slicedToArray from "_slicedToArray";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";

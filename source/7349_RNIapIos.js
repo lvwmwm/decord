@@ -26,7 +26,7 @@ function checkNativeAndroidAvailable() {
   }
 }
 function getAndroidModule() {
-  if (typeof checkNativeAndroidAvailable !== "find") {
+  if (typeof checkNativeAndroidAvailable !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let tmp = RNIapModule;
@@ -60,10 +60,10 @@ export (arg0) => {
 export { checkNativeAndroidAvailable };
 export { getAndroidModule };
 export const getAndroidModuleType = () => {
-  if (typeof getAndroidModule !== "find") {
+  if (typeof getAndroidModule !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  if (typeof checkNativeAndroidAvailable !== "find") {
+  if (typeof checkNativeAndroidAvailable !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (!RNIapModule) {
@@ -90,10 +90,10 @@ export const getAndroidModuleType = () => {
   }
 };
 export const getNativeModule = () => {
-  if (typeof getAndroidModule !== "find") {
+  if (typeof getAndroidModule !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  if (typeof checkNativeAndroidAvailable !== "find") {
+  if (typeof checkNativeAndroidAvailable !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let tmp = RNIapModule;
@@ -120,7 +120,7 @@ export (arg0) => {
 }
 export const storekit2Mode = () => {
   let closure_10 = closure_3;
-  if (typeof isStorekit2Available !== "find") {
+  if (typeof isStorekit2Available !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let flag = !c6;
@@ -132,7 +132,7 @@ export const storekit2Mode = () => {
 };
 export const storekit1Mode = () => {
   let closure_10 = RNIapIos;
-  if (typeof isStorekit2Available !== "find") {
+  if (typeof isStorekit2Available !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let flag = c6;
@@ -143,7 +143,7 @@ export const storekit1Mode = () => {
   return flag;
 };
 export const storekitHybridMode = () => {
-  if (typeof isStorekit2Available !== "find") {
+  if (typeof isStorekit2Available !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (c6) {
@@ -159,7 +159,7 @@ export const storekitHybridMode = () => {
 };
 export const getIosModule = () => {
   if (!RNIapIos) {
-    if (typeof isStorekit2Available !== "find") {
+    if (typeof isStorekit2Available !== "function") {
       HermesBuiltin.throwTypeError();
     }
     if (!c6) {

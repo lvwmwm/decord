@@ -1,10 +1,10 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16495
+// Function ID: 16496
 // Name: getNewAutomodRuleMockId
-// Dependencies: [1218, 16497, 11174, 16499, 16500, 1236, 7245, 6889, 2]
+// Dependencies: [1218, 16496, 11174, 16498, 16499, 1236, 7245, 6889, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, isBackendPersistedRule, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 16496 (getNewAutomodRuleMockId)
+// Module 16495 (getNewAutomodRuleMockId)
 import fetchFingerprint from "fetchFingerprint";
 import { getRuleCountByTriggerType } from "withEqualityFn";
 import AutomodEventType from "AutomodEventType";
@@ -68,9 +68,9 @@ export const isRuleUserProfileFilter = function isRuleUserProfileFilter(triggerT
   return triggerType === constants.USER_PROFILE;
 };
 export const createDefaultRule = function createDefaultRule(arg0, arg1) {
-  let obj = require(16499) /* AutomodTriggerType */.triggerConfigs[arg1];
+  let obj = require(16498) /* AutomodTriggerType */.triggerConfigs[arg1];
   obj = { id: null, name: null, guildId: null, eventType: null, triggerType: null, triggerMetadata: null, enabled: true, creatorId: null, actions: null, position: 0, exemptChannels: null, exemptRoles: null };
-  const defaultTriggerMetadataForTriggerType = require(16499) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(arg1, arg0);
+  const defaultTriggerMetadataForTriggerType = require(16498) /* AutomodTriggerType */.getDefaultTriggerMetadataForTriggerType(arg1, arg0);
   obj[0] = "" + arg0 + "-" + arg1 + "-new-rule";
   obj[1] = obj.getDefaultRuleName();
   obj[2] = arg0;
@@ -78,9 +78,9 @@ export const createDefaultRule = function createDefaultRule(arg0, arg1) {
   obj[4] = arg1;
   obj[5] = defaultTriggerMetadataForTriggerType;
   obj[7] = id.getId();
-  const obj2 = require(16499) /* AutomodTriggerType */;
-  obj[8] = require(16500) /* getRuleDefaultActionsFromConfig */.getRuleDefaultActionsFromConfig(obj);
-  const obj4 = require(16500) /* getRuleDefaultActionsFromConfig */;
+  const obj2 = require(16498) /* AutomodTriggerType */;
+  obj[8] = require(16499) /* getRuleDefaultActionsFromConfig */.getRuleDefaultActionsFromConfig(obj);
+  const obj4 = require(16499) /* getRuleDefaultActionsFromConfig */;
   obj[10] = new Set();
   const set = new Set();
   obj[11] = new Set();

@@ -1,10 +1,10 @@
-// Module ID: 16841
-// Function ID: 16842
+// Module ID: 16840
+// Function ID: 16841
 // Name: AgeUpdateFooter
 // Dependencies: [19, 21, 4285, 4281, 1236, 2547, 7720, 7722, 2]
 // Exports: default
 
-// Module 16841 (AgeUpdateFooter)
+// Module 16840 (AgeUpdateFooter)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

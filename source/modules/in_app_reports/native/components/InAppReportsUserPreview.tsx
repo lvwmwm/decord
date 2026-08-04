@@ -1,10 +1,10 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12546
+// Function ID: 12547
 // Name: UserPreview
 // Dependencies: [19, 17, 21, 4285, 712, 4129, 4281, 1236, 1297, 2]
 // Exports: default
 
-// Module 12547 (UserPreview)
+// Module 12546 (UserPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ export default function UserPreview(user) {
   const items = [callback(require(4281) /* Text */.Text, obj), ];
   const obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj2 = { size: null, user: null, guildId: "Array" };
+  const obj2 = { size: null, user: null, guildId: "disabled" };
   obj2[0] = require(1297) /* Button */.AvatarSizes.LARGE_48;
   obj2[1] = user;
   const items2 = [callback(require(1297) /* Button */.Avatar, obj2), ];

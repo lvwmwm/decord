@@ -1,10 +1,10 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15360
+// Function ID: 15361
 // Name: PrivateProfileCoachmarkImage
 // Dependencies: [19, 17, 676, 1369, 21, 4285, 6555, 1306, 1236, 7846, 3958, 1358, 5925, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15361 (PrivateProfileCoachmarkImage)
+// Module 15360 (PrivateProfileCoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 14066
-// Function ID: 14067
+// Module ID: 14065
+// Function ID: 14066
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [19, 17, 6906, 21, 4285, 712, 7260, 7259, 11239, 1236, 2285, 4281, 14067, 14069, 4812, 4490, 14072, 1959, 1297, 14074, 2]
+// Dependencies: [19, 17, 6906, 21, 4285, 712, 7260, 7259, 11239, 1236, 2285, 4281, 14066, 14068, 4812, 4490, 14071, 1959, 1297, 14073, 2]
 // Exports: default
 
-// Module 14066 (FamilyCenterAcceptedLinkRow)
+// Module 14065 (FamilyCenterAcceptedLinkRow)
 import "registerAsset";
 import { View } from "asyncRequireImpl";
 import items from "items";
@@ -40,12 +40,12 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     obj[3] = tmp.actionButton;
     const obj1 = { size: null, disableColor: true, source: null };
     obj1[0] = str(1297).Icon.Sizes.SMALL;
-    obj1[2] = importDefault(14074);
+    obj1[2] = importDefault(14073);
     obj[4] = closure_6(str(1297).Icon, obj1);
     obj[1] = closure_6(str(4812).PressableOpacity, obj);
-    tmp4Result = tmp4(importDefault(14069), obj);
+    tmp4Result = tmp4(importDefault(14068), obj);
     const tmp5 = importDefault;
-    const tmp7 = importDefault(14069);
+    const tmp7 = importDefault(14068);
   }
   return tmp4Result;
 }
@@ -82,9 +82,9 @@ export default function FamilyCenterAcceptedLinks() {
     const obj4 = { text: null };
     const intl3 = tmp5(1236).intl;
     obj4[0] = intl3.string(tmp2(2285).C4ScLD);
-    obj3[1] = tmp10(tmp2(14067), obj4);
+    obj3[1] = tmp10(tmp2(14066), obj4);
     let mapped = tmp10(tmp9, obj3);
-    const tmp2Result = tmp2(14067);
+    const tmp2Result = tmp2(14066);
   } else {
     mapped = activeLinkUsers.map((id) => callback(closure_10, { otherUser: id }, "accepted-" + id.id));
   }

@@ -1,10 +1,10 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14063
+// Function ID: 14064
 // Name: FamilyCenterLinkingBannerParentContent
-// Dependencies: [19, 17, 21, 4285, 712, 7260, 11239, 1236, 2285, 14065, 4281, 14027, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 7260, 11239, 1236, 2285, 14064, 4281, 14026, 2]
 // Exports: default
 
-// Module 14064 (FamilyCenterLinkingBannerParentContent)
+// Module 14063 (FamilyCenterLinkingBannerParentContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,12 +38,12 @@ function FamilyCenterLinkingBannerParentContent() {
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl6.string(importDefault(2285)["8rLBxD"]);
   items[2] = callback(FamilyCenterLinkingInstructionsRow, obj1);
-  items[3] = callback(require(14027) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
+  items[3] = callback(require(14026) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
   obj[1] = items;
   return callback2(closure_3, obj);
 }
 function FamilyCenterLinkingBannerTeenContent() {
-  return callback(closure_3, { style: createCacheKey().container, children: callback(require(14027) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
+  return callback(closure_3, { style: createCacheKey().container, children: callback(require(14026) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
 }
 function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
@@ -109,7 +109,7 @@ export default function FamilyCenterLinkingBanner() {
   obj = { style: tmp.container, children: null };
   obj = { source: null, style: null, resizeMethod: "resize" };
   const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(2285).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(2285).JsAEDi));
-  obj[0] = importDefault(14065);
+  obj[0] = importDefault(14064);
   obj[1] = tmp.art;
   const items = [callback(closure_4, obj), , ];
   obj1 = { style: tmp.content, children: null };

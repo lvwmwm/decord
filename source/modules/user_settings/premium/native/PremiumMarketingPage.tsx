@@ -1,10 +1,10 @@
-// Module ID: 12641
-// Function ID: 12642
+// Module ID: 12640
+// Function ID: 12641
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 676, 1369, 1876, 21, 4285, 712, 5125, 12591, 12592, 1480, 5610, 7561, 1581, 12642, 4146, 7564, 7568, 4101, 1358, 1360, 12643, 1236, 7674, 3931, 6769, 12644, 8325, 698, 12649, 4281, 12651, 7675, 8433, 12652, 12653, 12670, 12673, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 1876, 21, 4285, 712, 5125, 12590, 12591, 1480, 5610, 7561, 1581, 12641, 4146, 7564, 7568, 4101, 1358, 1360, 12642, 1236, 7674, 3931, 6769, 12643, 8325, 698, 12648, 4281, 12650, 7675, 8433, 12651, 12652, 12669, 12672, 2]
 // Exports: default
 
-// Module 12641 (PremiumMarketingPage)
+// Module 12640 (PremiumMarketingPage)
 import Text from "Text";
 import MarketingComponentType from "MarketingComponentType";
 import get_ActivityIndicator from "module_4146";

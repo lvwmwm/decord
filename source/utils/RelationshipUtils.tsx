@@ -1,17 +1,17 @@
-// Module ID: 16429
-// Function ID: 16430
+// Module ID: 16428
+// Function ID: 16429
 // Name: showPendingNotification
-// Dependencies: [676, 14597, 1416, 1236, 16430, 4295, 2]
+// Dependencies: [676, 14596, 1416, 1236, 16429, 4295, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 16429 (showPendingNotification)
+// Module 16428 (showPendingNotification)
 import { FriendsSections } from "ME";
 
 const result = require("getAvatarURL").fileFinishedImporting("utils/RelationshipUtils.tsx");
 
 export const showPendingNotification = function showPendingNotification(user) {
   const intl = require(1236) /* getSystemLocale */.intl;
-  let obj = importDefault(14597);
+  let obj = importDefault(14596);
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t["t3+Af3"]);
   obj = {
     omitViewTracking: true,
@@ -27,7 +27,7 @@ export const showPendingNotification = function showPendingNotification(user) {
 export const showAcceptedNotification = function showAcceptedNotification(user) {
   const _require = user;
   const intl = _require(1236).intl;
-  let obj = importDefault(14597);
+  let obj = importDefault(14596);
   const stringResult = intl.string(_require(1236).t.MYr3Ka);
   obj = {
     omitViewTracking: true,

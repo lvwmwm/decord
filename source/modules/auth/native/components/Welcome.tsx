@@ -1,10 +1,10 @@
-// Module ID: 14980
-// Function ID: 14981
+// Module ID: 14979
+// Function ID: 14980
 // Name: InviteCard
-// Dependencies: [19, 17, 14981, 4199, 6828, 11694, 1882, 4270, 8992, 676, 5850, 7116, 21, 4285, 712, 11929, 1236, 38, 1297, 4124, 4281, 12515, 7562, 13117, 1480, 1581, 589, 4711, 6843, 698, 595, 5736, 5598, 14982, 14977, 5117, 4695, 3997, 5235, 11207, 2]
+// Dependencies: [19, 17, 14980, 4199, 6828, 11694, 1882, 4270, 8992, 676, 5850, 7116, 21, 4285, 712, 11928, 1236, 38, 1297, 4124, 4281, 12514, 7562, 13116, 1480, 1581, 589, 4711, 6843, 698, 595, 5736, 5598, 14981, 14976, 5117, 4695, 3997, 5235, 11207, 2]
 // Exports: default
 
-// Module 14980 (InviteCard)
+// Module 14979 (InviteCard)
 import nameFromUser from "nameFromUser";
 import get_ActivityIndicator from "module_38";
 import isUnderageAnonymous from "isUnderageAnonymous";
@@ -43,7 +43,7 @@ function InviteCard(invite) {
     if (null != guild) {
       let obj = { guild: null };
       obj[0] = guild;
-      let tmp14 = callback(importDefault(11929), obj);
+      let tmp14 = callback(importDefault(11928), obj);
       const intl2 = require(1236) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["3rE1P8"]);
       let name = guild.name;
@@ -101,7 +101,7 @@ function GuildTemplateCard(arg0) {
   const tmp = createCacheKey();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { source: importDefault(12515) };
+  obj = { source: importDefault(12514) };
   const items1 = [callback(closure_5, obj), ];
   obj = { style: tmp.text, children: null };
   const obj1 = { variant: "text-sm/medium", color: "text-subtle", children: null };
@@ -126,7 +126,7 @@ function Centerpiece(inlineButtons) {
   let obj = { style: items, children: null };
   items = [tmp3.centerpieceContainer];
   obj = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  obj = { style: tmp3.logo, source: require(13117) /* registerAsset */ };
+  obj = { style: tmp3.logo, source: require(13116) /* registerAsset */ };
   const items1 = [callback(closure_5, obj), , ];
   const obj1 = { style: tmp3.header, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   let num = 2;

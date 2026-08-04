@@ -1,10 +1,10 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14668
+// Function ID: 14669
 // Name: UserSettingsDesignSystemText
 // Dependencies: [19, 17, 21, 3989, 712, 4693, 5649, 4282, 5315, 4281, 2]
 // Exports: default
 
-// Module 14669 (UserSettingsDesignSystemText)
+// Module 14668 (UserSettingsDesignSystemText)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

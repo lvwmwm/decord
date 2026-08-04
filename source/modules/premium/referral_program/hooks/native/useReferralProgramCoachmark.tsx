@@ -1,10 +1,10 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15735
+// Function ID: 15736
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [32, 19, 17, 676, 1369, 21, 4285, 5236, 15737, 4101, 1358, 7972, 5931, 1236, 712, 5925, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 21, 4285, 5236, 15736, 4101, 1358, 7972, 5931, 1236, 712, 5925, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 15736 (ReferralProgramCoachmarkImg)
+// Module 15735 (ReferralProgramCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -18,7 +18,7 @@ function ReferralProgramCoachmarkImg() {
   const tmp = callback2();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(15737);
+  obj[0] = importDefault(15736);
   obj[1] = tmp.coachmarkImage;
   obj[1] = jsx(importDefault(5236), { source: null, style: null });
   return <View source={null} style={null} />;

@@ -1,9 +1,9 @@
-// Module ID: 13691
-// Function ID: 13692
+// Module ID: 13690
+// Function ID: 13691
 // Name: messageEventsValidation
-// Dependencies: [4322, 4305, 1415, 4304, 1372, 1942, 1862, 4332, 4356, 1874, 4301, 4188, 676, 10546, 10548, 10543, 4498, 8824, 12, 13639, 506, 643, 10549, 13692, 13693, 2]
+// Dependencies: [4322, 4305, 1415, 4304, 1372, 1942, 1862, 4332, 4356, 1874, 4301, 4188, 676, 10546, 10548, 10543, 4498, 8824, 12, 13638, 506, 643, 10549, 13691, 13692, 2]
 
-// Module 13691 (messageEventsValidation)
+// Module 13690 (messageEventsValidation)
 import addApplication from "addApplication";
 import initialize from "initialize";
 import { getGuildIconURL } from "GuildNSFWContentLevel";
@@ -544,7 +544,7 @@ obj44[1] = function handler() {
     }
     let tmp8 = null;
     if (null != application) {
-      tmp8 = callback(13693)(application);
+      tmp8 = callback(13692)(application);
     }
     if (streamerActiveStreamMetadata != null) {
       const sourceName = streamerActiveStreamMetadata.sourceName;

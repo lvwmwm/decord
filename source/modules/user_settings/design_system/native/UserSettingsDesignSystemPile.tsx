@@ -1,10 +1,10 @@
-// Module ID: 14712
-// Function ID: 14713
+// Module ID: 14711
+// Function ID: 14712
 // Name: SampleCard
-// Dependencies: [19, 17, 21, 4285, 1297, 5661, 4693, 5317, 4281, 12215, 1419, 13336, 11888, 10185, 11889, 8103, 2]
+// Dependencies: [19, 17, 21, 4285, 1297, 5661, 4693, 5317, 4281, 12214, 1419, 13335, 11887, 10185, 11888, 8103, 2]
 // Exports: default
 
-// Module 14712 (SampleCard)
+// Module 14711 (SampleCard)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -56,7 +56,7 @@ export default function UserSettingsDesignSystemPile() {
       obj[2] = callback(1419).DEFAULT_AVATARS.length;
       const DEFAULT_AVATARS = callback(1419).DEFAULT_AVATARS;
       obj[3] = DEFAULT_AVATARS.map((source) => outer1_5(children(outer1_2[4]).Avatar, { source, size: children }, arg1));
-      items[1] = callback2(callback(12215).AvatarPile, obj);
+      items[1] = callback2(callback(12214).AvatarPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -72,7 +72,7 @@ export default function UserSettingsDesignSystemPile() {
       obj = { size: children, names: closure_10, totalCount: 9500, children: null };
       const DEFAULT_AVATARS = callback(1419).DEFAULT_AVATARS;
       obj[3] = DEFAULT_AVATARS.map((source) => outer1_5(children(outer1_2[4]).Avatar, { source, size: children }, arg1));
-      items[1] = callback2(callback(12215).AvatarPile, obj);
+      items[1] = callback2(callback(12214).AvatarPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -87,7 +87,7 @@ export default function UserSettingsDesignSystemPile() {
       obj = { size: children, names: closure_10, totalCount: 9500, children: null };
       const DEFAULT_AVATARS = callback(1419).DEFAULT_AVATARS;
       obj[3] = DEFAULT_AVATARS.map((source) => outer1_5(children(outer1_2[4]).Avatar, { source, size: children }, arg1));
-      items[1] = callback2(callback(12215).AvatarPile, obj);
+      items[1] = callback2(callback(12214).AvatarPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -104,7 +104,7 @@ export default function UserSettingsDesignSystemPile() {
       const DEFAULT_AVATARS = callback(1419).DEFAULT_AVATARS;
       const substr = DEFAULT_AVATARS.slice(0, 2);
       obj[2] = substr.map((source) => outer1_5(children(outer1_2[4]).Avatar, { source, size: children }, arg1));
-      items[1] = callback2(callback(13336).AvatarDuoPile, obj);
+      items[1] = callback2(callback(13335).AvatarDuoPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -121,7 +121,7 @@ export default function UserSettingsDesignSystemPile() {
       const DEFAULT_AVATARS = callback(1419).DEFAULT_AVATARS;
       const substr = DEFAULT_AVATARS.slice(0, 2);
       obj[2] = substr.map((source) => outer1_5(children(outer1_2[4]).Avatar, { source, size: children }, arg1));
-      items[1] = callback2(callback(13336).AvatarDuoPile, obj);
+      items[1] = callback2(callback(13335).AvatarDuoPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -145,7 +145,7 @@ export default function UserSettingsDesignSystemPile() {
       obj2[1] = callback(1297).AvatarSizes.NORMAL;
       items2[1] = callback2(callback(1297).Avatar, obj2);
       obj[2] = items2;
-      items[1] = callback3(callback(13336).AvatarDuoPile, obj);
+      items[1] = callback3(callback(13335).AvatarDuoPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -169,7 +169,7 @@ export default function UserSettingsDesignSystemPile() {
       obj2[1] = callback(1297).AvatarSizes.NORMAL;
       items2[1] = callback2(callback(1297).Avatar, obj2);
       obj[2] = items2;
-      items[1] = callback3(callback(13336).AvatarDuoPile, obj);
+      items[1] = callback3(callback(13335).AvatarDuoPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, children);
     })
@@ -184,7 +184,7 @@ export default function UserSettingsDesignSystemPile() {
       const items = [callback2(callback(4281).Text, obj), ];
       obj = { size, names: closure_11, totalCount: 128, children: null };
       obj[3] = closure_11.map((value) => outer1_5(outer1_1(outer1_2[5]), { value, size: closure_0 }, arg1));
-      items[1] = callback2(callback(11888).GuildIconPile, obj);
+      items[1] = callback2(callback(11887).GuildIconPile, obj);
       obj[0] = items;
       return callback3(callback(4693).Stack, obj, size);
     })
@@ -209,7 +209,7 @@ export default function UserSettingsDesignSystemPile() {
     items[3] = str2;
     const items1 = [closure_6(callback(4281).Text, { variant: "text-md/medium", color: "text-subtle", children: items }), , ];
     obj = { "aria-label": null, shape: null, size: 48, gap: 2, depthX: null, depthY: null, children: null };
-    let tmp4Result = tmp4(11889);
+    let tmp4Result = tmp4(11888);
     obj[0] = tmp4Result.getListSummaryLabel(closure_10, callback(1419).DEFAULT_AVATARS.length);
     obj[1] = callback(8103).CutoutShape.Circle;
     obj[4] = tmp;
@@ -222,7 +222,7 @@ export default function UserSettingsDesignSystemPile() {
     });
     items1[1] = callback2(callback(10185).Pile, obj);
     obj = { "aria-label": null, shape: null, size: 48, gap: 2, depthX: null, depthY: null, children: null };
-    tmp4Result = tmp4(11889);
+    tmp4Result = tmp4(11888);
     obj[0] = tmp4Result.getListSummaryLabel(closure_11, closure_11.length);
     obj[1] = callback(8103).CutoutShape.RoundedRect;
     obj[4] = tmp;

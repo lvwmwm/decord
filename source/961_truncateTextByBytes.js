@@ -7,7 +7,7 @@
 function truncateTextByBytes(content, c0) {
   let diff;
   let sum;
-  if (typeof utf8Bytes !== "find") {
+  if (typeof utf8Bytes !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const textEncoder = new TextEncoder();
@@ -27,7 +27,7 @@ function truncateTextByBytes(content, c0) {
         let tmp4 = str;
         let tmp5 = length;
         sum = num;
-        if (typeof utf8Bytes !== "find") {
+        if (typeof utf8Bytes !== "function") {
           let str4 = "Trying to call a non-function";
           let throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
         }
@@ -52,22 +52,22 @@ function truncateTextByBytes(content, c0) {
     return str2;
   }
 }
-function getPartText(text) {
-  let tmp = text;
-  if (typeof text !== "y") {
-    let str = "";
-    if ("text" in text) {
-      str = text.text;
+function getPartText(str) {
+  let tmp = str;
+  if (typeof str !== "string") {
+    str = "";
+    if ("text" in str) {
+      str = str.text;
     }
     tmp = str;
   }
   return tmp;
 }
-function withPartText(arg0, text) {
+function withPartText(str, text) {
   let tmp = text;
-  if (typeof arg0 !== "y") {
+  if (typeof str !== "string") {
     const obj = {};
-    const merged = Object.assign(arg0);
+    const merged = Object.assign(str);
     obj.text = text;
     tmp = obj;
   }
@@ -76,11 +76,11 @@ function withPartText(arg0, text) {
 function isContentMedia(source) {
   let tmp = !source;
   if (source) {
-    tmp = typeof source === "window";
+    tmp = typeof source !== "object";
   }
   let tmp2 = !tmp;
   if (!tmp) {
-    let tmp3 = "type" in source && typeof source.type === "y";
+    let tmp3 = "type" in source && typeof source.type === "string";
     if (tmp3) {
       tmp3 = "source" in source;
     }
@@ -88,24 +88,24 @@ function isContentMedia(source) {
       tmp3 = isContentMedia(source.source);
     }
     if (!tmp3) {
-      let tmp5 = "inlineData" in source && source.inlineData && typeof source.inlineData === "ay";
+      let tmp5 = "inlineData" in source && source.inlineData && typeof source.inlineData === "object";
       if (tmp5) {
         tmp5 = "data" in source.inlineData;
       }
       if (tmp5) {
-        tmp5 = typeof source.inlineData.data === "y";
+        tmp5 = typeof source.inlineData.data === "string";
       }
       tmp3 = tmp5;
     }
     if (!tmp3) {
-      let tmp6 = "media_type" in source && typeof source.media_type === "y";
+      let tmp6 = "media_type" in source && typeof source.media_type === "string";
       if (tmp6) {
         tmp6 = "data" in source;
       }
       tmp3 = tmp6;
     }
     if (!tmp3) {
-      let startsWithResult = "image_url" in source && typeof source.image_url === "y";
+      let startsWithResult = "image_url" in source && typeof source.image_url === "string";
       if (startsWithResult) {
         const image_url = source.image_url;
         startsWithResult = image_url.startsWith("data:");
@@ -137,7 +137,7 @@ function isContentMedia(source) {
       tmp3 = tmp10;
     }
     if (!tmp3) {
-      let startsWithResult1 = "uri" in source && typeof source.uri === "y";
+      let startsWithResult1 = "uri" in source && typeof source.uri === "string";
       if (startsWithResult1) {
         const uri = source.uri;
         startsWithResult1 = uri.startsWith("data:");
@@ -149,12 +149,12 @@ function isContentMedia(source) {
   return tmp2;
 }
 function hasInlineData(inlineData) {
-  let tmp = "inlineData" in inlineData && inlineData.inlineData && typeof inlineData.inlineData === "ay";
+  let tmp = "inlineData" in inlineData && inlineData.inlineData && typeof inlineData.inlineData === "object";
   if (tmp) {
     tmp = "data" in inlineData.inlineData;
   }
   if (tmp) {
-    tmp = typeof inlineData.inlineData.data === "y";
+    tmp = typeof inlineData.inlineData.data === "string";
   }
   return tmp;
 }
@@ -171,7 +171,7 @@ function stripInlineMediaFromSingleMessage(source) {
     obj.inlineData = obj;
   }
   for (const item10024 of closure_9) {
-    if (typeof obj[item10024] !== "_iter") {
+    if (typeof obj[item10024] === "string") {
       let tmp7 = item10024;
       let tmp8 = c8;
       obj[tmp6] = c8;
@@ -188,7 +188,7 @@ function utf8Bytes(arg0) {
 }
 function jsonBytes(arg0) {
   const json = JSON.stringify(arg0);
-  if (typeof utf8Bytes !== "find") {
+  if (typeof utf8Bytes !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const textEncoder = new TextEncoder();
@@ -202,138 +202,138 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
   if (Array.isArray(items)) {
     tmp2 = items;
     if (0 !== items.length) {
-      let mapped = items.map((content) => {
-        let tmp = content;
-        if (content) {
-          tmp = typeof content === "ay";
+      let mapped = items.map((obj) => {
+        let tmp = obj;
+        if (obj) {
+          tmp = typeof obj === "object";
         }
         if (!tmp) {
           return tmp2;
         } else {
-          let isArray1 = null !== content;
+          let isArray1 = null !== obj;
           let isArray = isArray1;
           if (isArray1) {
-            isArray = typeof content === "ay";
+            isArray = typeof obj === "object";
           }
           if (isArray) {
-            isArray = "content" in content;
+            isArray = "content" in obj;
           }
           if (isArray) {
             let _Array = Array;
-            isArray = Array.isArray(content.content);
+            isArray = Array.isArray(obj.content);
           }
           if (isArray) {
-            let obj = {};
-            let merged = Object.assign(content);
-            content = content.content;
-            obj.content = content.map((content) => {
-              let tmp = content;
-              if (content) {
-                tmp = typeof content === "ay";
+            obj = {};
+            let merged = Object.assign(obj);
+            let content = obj.content;
+            obj.content = content.map((obj) => {
+              let tmp = obj;
+              if (obj) {
+                tmp = typeof obj === "object";
               }
               if (!tmp) {
                 return tmp2;
               } else {
-                let isArray1 = null !== content;
+                let isArray1 = null !== obj;
                 let isArray = isArray1;
                 if (isArray1) {
-                  isArray = typeof content === "ay";
+                  isArray = typeof obj === "object";
                 }
                 if (isArray) {
-                  isArray = "content" in content;
+                  isArray = "content" in obj;
                 }
                 if (isArray) {
                   let _Array = Array;
-                  isArray = Array.isArray(content.content);
+                  isArray = Array.isArray(obj.content);
                 }
                 if (isArray) {
-                  let obj = {};
-                  let merged = Object.assign(content);
-                  content = content.content;
-                  obj.content = content.map((content) => {
-                    let tmp = content;
-                    if (content) {
-                      tmp = typeof content === "ay";
+                  obj = {};
+                  let merged = Object.assign(obj);
+                  let content = obj.content;
+                  obj.content = content.map((obj) => {
+                    let tmp = obj;
+                    if (obj) {
+                      tmp = typeof obj === "object";
                     }
                     if (!tmp) {
                       return tmp2;
                     } else {
-                      let isArray1 = null !== content;
+                      let isArray1 = null !== obj;
                       let isArray = isArray1;
                       if (isArray1) {
-                        isArray = typeof content === "ay";
+                        isArray = typeof obj === "object";
                       }
                       if (isArray) {
-                        isArray = "content" in content;
+                        isArray = "content" in obj;
                       }
                       if (isArray) {
                         let _Array = Array;
-                        isArray = Array.isArray(content.content);
+                        isArray = Array.isArray(obj.content);
                       }
                       if (isArray) {
-                        let obj = {};
-                        let merged = Object.assign(content);
-                        content = content.content;
-                        obj.content = content.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        obj = {};
+                        let merged = Object.assign(obj);
+                        let content = obj.content;
+                        obj.content = content.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -341,8 +341,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -350,99 +350,99 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         });
                         let tmp9 = obj;
                       } else {
-                        let tmp7 = "content" in content;
+                        let tmp7 = "content" in obj;
                         if (tmp7) {
-                          tmp7 = closure_6(content.content);
+                          tmp7 = closure_6(obj.content);
                         }
                         if (tmp7) {
                           obj = {};
-                          let merged1 = Object.assign(content);
-                          obj.content = closure_10(content.content);
+                          let merged1 = Object.assign(obj);
+                          obj.content = closure_10(obj.content);
                           tmp9 = obj;
                         }
                       }
                       if (isArray1) {
-                        isArray1 = typeof content === "ay";
+                        isArray1 = typeof obj === "object";
                       }
                       if (isArray1) {
-                        isArray1 = "parts" in content;
+                        isArray1 = "parts" in obj;
                       }
                       if (isArray1) {
                         let _Array2 = Array;
-                        isArray1 = Array.isArray(content.parts);
+                        isArray1 = Array.isArray(obj.parts);
                       }
                       if (isArray1) {
-                        isArray1 = content.parts.length > 0;
+                        isArray1 = obj.parts.length > 0;
                       }
                       let tmp18 = tmp9;
                       if (isArray1) {
                         let tmp19 = tmp9;
                         if (tmp9 == null) {
-                          tmp19 = content;
+                          tmp19 = obj;
                         }
                         obj = {};
                         let merged2 = Object.assign(tmp19);
-                        let parts = content.parts;
-                        obj.parts = parts.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        let parts = obj.parts;
+                        obj.parts = parts.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -450,8 +450,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -463,8 +463,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         let tmp24 = closure_10(tmp18);
                       } else {
                         tmp24 = tmp18;
-                        if (tmp23(content)) {
-                          tmp24 = closure_10(content);
+                        if (tmp23(obj)) {
+                          tmp24 = closure_10(obj);
                         }
                       }
                       tmp23 = closure_6;
@@ -472,123 +472,123 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                   });
                   let tmp9 = obj;
                 } else {
-                  let tmp7 = "content" in content;
+                  let tmp7 = "content" in obj;
                   if (tmp7) {
-                    tmp7 = closure_6(content.content);
+                    tmp7 = closure_6(obj.content);
                   }
                   if (tmp7) {
                     obj = {};
-                    let merged1 = Object.assign(content);
-                    obj.content = closure_10(content.content);
+                    let merged1 = Object.assign(obj);
+                    obj.content = closure_10(obj.content);
                     tmp9 = obj;
                   }
                 }
                 if (isArray1) {
-                  isArray1 = typeof content === "ay";
+                  isArray1 = typeof obj === "object";
                 }
                 if (isArray1) {
-                  isArray1 = "parts" in content;
+                  isArray1 = "parts" in obj;
                 }
                 if (isArray1) {
                   let _Array2 = Array;
-                  isArray1 = Array.isArray(content.parts);
+                  isArray1 = Array.isArray(obj.parts);
                 }
                 if (isArray1) {
-                  isArray1 = content.parts.length > 0;
+                  isArray1 = obj.parts.length > 0;
                 }
                 let tmp18 = tmp9;
                 if (isArray1) {
                   let tmp19 = tmp9;
                   if (tmp9 == null) {
-                    tmp19 = content;
+                    tmp19 = obj;
                   }
                   obj = {};
                   let merged2 = Object.assign(tmp19);
-                  let parts = content.parts;
-                  obj.parts = parts.map((content) => {
-                    let tmp = content;
-                    if (content) {
-                      tmp = typeof content === "ay";
+                  let parts = obj.parts;
+                  obj.parts = parts.map((obj) => {
+                    let tmp = obj;
+                    if (obj) {
+                      tmp = typeof obj === "object";
                     }
                     if (!tmp) {
                       return tmp2;
                     } else {
-                      let isArray1 = null !== content;
+                      let isArray1 = null !== obj;
                       let isArray = isArray1;
                       if (isArray1) {
-                        isArray = typeof content === "ay";
+                        isArray = typeof obj === "object";
                       }
                       if (isArray) {
-                        isArray = "content" in content;
+                        isArray = "content" in obj;
                       }
                       if (isArray) {
                         let _Array = Array;
-                        isArray = Array.isArray(content.content);
+                        isArray = Array.isArray(obj.content);
                       }
                       if (isArray) {
-                        let obj = {};
-                        let merged = Object.assign(content);
-                        content = content.content;
-                        obj.content = content.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        obj = {};
+                        let merged = Object.assign(obj);
+                        let content = obj.content;
+                        obj.content = content.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -596,8 +596,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -605,99 +605,99 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         });
                         let tmp9 = obj;
                       } else {
-                        let tmp7 = "content" in content;
+                        let tmp7 = "content" in obj;
                         if (tmp7) {
-                          tmp7 = closure_6(content.content);
+                          tmp7 = closure_6(obj.content);
                         }
                         if (tmp7) {
                           obj = {};
-                          let merged1 = Object.assign(content);
-                          obj.content = closure_10(content.content);
+                          let merged1 = Object.assign(obj);
+                          obj.content = closure_10(obj.content);
                           tmp9 = obj;
                         }
                       }
                       if (isArray1) {
-                        isArray1 = typeof content === "ay";
+                        isArray1 = typeof obj === "object";
                       }
                       if (isArray1) {
-                        isArray1 = "parts" in content;
+                        isArray1 = "parts" in obj;
                       }
                       if (isArray1) {
                         let _Array2 = Array;
-                        isArray1 = Array.isArray(content.parts);
+                        isArray1 = Array.isArray(obj.parts);
                       }
                       if (isArray1) {
-                        isArray1 = content.parts.length > 0;
+                        isArray1 = obj.parts.length > 0;
                       }
                       let tmp18 = tmp9;
                       if (isArray1) {
                         let tmp19 = tmp9;
                         if (tmp9 == null) {
-                          tmp19 = content;
+                          tmp19 = obj;
                         }
                         obj = {};
                         let merged2 = Object.assign(tmp19);
-                        let parts = content.parts;
-                        obj.parts = parts.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        let parts = obj.parts;
+                        obj.parts = parts.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -705,8 +705,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -718,8 +718,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         let tmp24 = closure_10(tmp18);
                       } else {
                         tmp24 = tmp18;
-                        if (tmp23(content)) {
-                          tmp24 = closure_10(content);
+                        if (tmp23(obj)) {
+                          tmp24 = closure_10(obj);
                         }
                       }
                       tmp23 = closure_6;
@@ -731,8 +731,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                   let tmp24 = closure_10(tmp18);
                 } else {
                   tmp24 = tmp18;
-                  if (tmp23(content)) {
-                    tmp24 = closure_10(content);
+                  if (tmp23(obj)) {
+                    tmp24 = closure_10(obj);
                   }
                 }
                 tmp23 = closure_6;
@@ -740,147 +740,147 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
             });
             let tmp9 = obj;
           } else {
-            let tmp7 = "content" in content;
+            let tmp7 = "content" in obj;
             if (tmp7) {
-              tmp7 = closure_6(content.content);
+              tmp7 = closure_6(obj.content);
             }
             if (tmp7) {
               obj = {};
-              let merged1 = Object.assign(content);
-              obj.content = closure_10(content.content);
+              let merged1 = Object.assign(obj);
+              obj.content = closure_10(obj.content);
               tmp9 = obj;
             }
           }
           if (isArray1) {
-            isArray1 = typeof content === "ay";
+            isArray1 = typeof obj === "object";
           }
           if (isArray1) {
-            isArray1 = "parts" in content;
+            isArray1 = "parts" in obj;
           }
           if (isArray1) {
             let _Array2 = Array;
-            isArray1 = Array.isArray(content.parts);
+            isArray1 = Array.isArray(obj.parts);
           }
           if (isArray1) {
-            isArray1 = content.parts.length > 0;
+            isArray1 = obj.parts.length > 0;
           }
           let tmp18 = tmp9;
           if (isArray1) {
             let tmp19 = tmp9;
             if (tmp9 == null) {
-              tmp19 = content;
+              tmp19 = obj;
             }
             obj = {};
             let merged2 = Object.assign(tmp19);
-            let parts = content.parts;
-            obj.parts = parts.map((content) => {
-              let tmp = content;
-              if (content) {
-                tmp = typeof content === "ay";
+            let parts = obj.parts;
+            obj.parts = parts.map((obj) => {
+              let tmp = obj;
+              if (obj) {
+                tmp = typeof obj === "object";
               }
               if (!tmp) {
                 return tmp2;
               } else {
-                let isArray1 = null !== content;
+                let isArray1 = null !== obj;
                 let isArray = isArray1;
                 if (isArray1) {
-                  isArray = typeof content === "ay";
+                  isArray = typeof obj === "object";
                 }
                 if (isArray) {
-                  isArray = "content" in content;
+                  isArray = "content" in obj;
                 }
                 if (isArray) {
                   let _Array = Array;
-                  isArray = Array.isArray(content.content);
+                  isArray = Array.isArray(obj.content);
                 }
                 if (isArray) {
-                  let obj = {};
-                  let merged = Object.assign(content);
-                  content = content.content;
-                  obj.content = content.map((content) => {
-                    let tmp = content;
-                    if (content) {
-                      tmp = typeof content === "ay";
+                  obj = {};
+                  let merged = Object.assign(obj);
+                  let content = obj.content;
+                  obj.content = content.map((obj) => {
+                    let tmp = obj;
+                    if (obj) {
+                      tmp = typeof obj === "object";
                     }
                     if (!tmp) {
                       return tmp2;
                     } else {
-                      let isArray1 = null !== content;
+                      let isArray1 = null !== obj;
                       let isArray = isArray1;
                       if (isArray1) {
-                        isArray = typeof content === "ay";
+                        isArray = typeof obj === "object";
                       }
                       if (isArray) {
-                        isArray = "content" in content;
+                        isArray = "content" in obj;
                       }
                       if (isArray) {
                         let _Array = Array;
-                        isArray = Array.isArray(content.content);
+                        isArray = Array.isArray(obj.content);
                       }
                       if (isArray) {
-                        let obj = {};
-                        let merged = Object.assign(content);
-                        content = content.content;
-                        obj.content = content.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        obj = {};
+                        let merged = Object.assign(obj);
+                        let content = obj.content;
+                        obj.content = content.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -888,8 +888,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -897,99 +897,99 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         });
                         let tmp9 = obj;
                       } else {
-                        let tmp7 = "content" in content;
+                        let tmp7 = "content" in obj;
                         if (tmp7) {
-                          tmp7 = closure_6(content.content);
+                          tmp7 = closure_6(obj.content);
                         }
                         if (tmp7) {
                           obj = {};
-                          let merged1 = Object.assign(content);
-                          obj.content = closure_10(content.content);
+                          let merged1 = Object.assign(obj);
+                          obj.content = closure_10(obj.content);
                           tmp9 = obj;
                         }
                       }
                       if (isArray1) {
-                        isArray1 = typeof content === "ay";
+                        isArray1 = typeof obj === "object";
                       }
                       if (isArray1) {
-                        isArray1 = "parts" in content;
+                        isArray1 = "parts" in obj;
                       }
                       if (isArray1) {
                         let _Array2 = Array;
-                        isArray1 = Array.isArray(content.parts);
+                        isArray1 = Array.isArray(obj.parts);
                       }
                       if (isArray1) {
-                        isArray1 = content.parts.length > 0;
+                        isArray1 = obj.parts.length > 0;
                       }
                       let tmp18 = tmp9;
                       if (isArray1) {
                         let tmp19 = tmp9;
                         if (tmp9 == null) {
-                          tmp19 = content;
+                          tmp19 = obj;
                         }
                         obj = {};
                         let merged2 = Object.assign(tmp19);
-                        let parts = content.parts;
-                        obj.parts = parts.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        let parts = obj.parts;
+                        obj.parts = parts.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -997,8 +997,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -1010,8 +1010,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         let tmp24 = closure_10(tmp18);
                       } else {
                         tmp24 = tmp18;
-                        if (tmp23(content)) {
-                          tmp24 = closure_10(content);
+                        if (tmp23(obj)) {
+                          tmp24 = closure_10(obj);
                         }
                       }
                       tmp23 = closure_6;
@@ -1019,123 +1019,123 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                   });
                   let tmp9 = obj;
                 } else {
-                  let tmp7 = "content" in content;
+                  let tmp7 = "content" in obj;
                   if (tmp7) {
-                    tmp7 = closure_6(content.content);
+                    tmp7 = closure_6(obj.content);
                   }
                   if (tmp7) {
                     obj = {};
-                    let merged1 = Object.assign(content);
-                    obj.content = closure_10(content.content);
+                    let merged1 = Object.assign(obj);
+                    obj.content = closure_10(obj.content);
                     tmp9 = obj;
                   }
                 }
                 if (isArray1) {
-                  isArray1 = typeof content === "ay";
+                  isArray1 = typeof obj === "object";
                 }
                 if (isArray1) {
-                  isArray1 = "parts" in content;
+                  isArray1 = "parts" in obj;
                 }
                 if (isArray1) {
                   let _Array2 = Array;
-                  isArray1 = Array.isArray(content.parts);
+                  isArray1 = Array.isArray(obj.parts);
                 }
                 if (isArray1) {
-                  isArray1 = content.parts.length > 0;
+                  isArray1 = obj.parts.length > 0;
                 }
                 let tmp18 = tmp9;
                 if (isArray1) {
                   let tmp19 = tmp9;
                   if (tmp9 == null) {
-                    tmp19 = content;
+                    tmp19 = obj;
                   }
                   obj = {};
                   let merged2 = Object.assign(tmp19);
-                  let parts = content.parts;
-                  obj.parts = parts.map((content) => {
-                    let tmp = content;
-                    if (content) {
-                      tmp = typeof content === "ay";
+                  let parts = obj.parts;
+                  obj.parts = parts.map((obj) => {
+                    let tmp = obj;
+                    if (obj) {
+                      tmp = typeof obj === "object";
                     }
                     if (!tmp) {
                       return tmp2;
                     } else {
-                      let isArray1 = null !== content;
+                      let isArray1 = null !== obj;
                       let isArray = isArray1;
                       if (isArray1) {
-                        isArray = typeof content === "ay";
+                        isArray = typeof obj === "object";
                       }
                       if (isArray) {
-                        isArray = "content" in content;
+                        isArray = "content" in obj;
                       }
                       if (isArray) {
                         let _Array = Array;
-                        isArray = Array.isArray(content.content);
+                        isArray = Array.isArray(obj.content);
                       }
                       if (isArray) {
-                        let obj = {};
-                        let merged = Object.assign(content);
-                        content = content.content;
-                        obj.content = content.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        obj = {};
+                        let merged = Object.assign(obj);
+                        let content = obj.content;
+                        obj.content = content.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -1143,8 +1143,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -1152,99 +1152,99 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         });
                         let tmp9 = obj;
                       } else {
-                        let tmp7 = "content" in content;
+                        let tmp7 = "content" in obj;
                         if (tmp7) {
-                          tmp7 = closure_6(content.content);
+                          tmp7 = closure_6(obj.content);
                         }
                         if (tmp7) {
                           obj = {};
-                          let merged1 = Object.assign(content);
-                          obj.content = closure_10(content.content);
+                          let merged1 = Object.assign(obj);
+                          obj.content = closure_10(obj.content);
                           tmp9 = obj;
                         }
                       }
                       if (isArray1) {
-                        isArray1 = typeof content === "ay";
+                        isArray1 = typeof obj === "object";
                       }
                       if (isArray1) {
-                        isArray1 = "parts" in content;
+                        isArray1 = "parts" in obj;
                       }
                       if (isArray1) {
                         let _Array2 = Array;
-                        isArray1 = Array.isArray(content.parts);
+                        isArray1 = Array.isArray(obj.parts);
                       }
                       if (isArray1) {
-                        isArray1 = content.parts.length > 0;
+                        isArray1 = obj.parts.length > 0;
                       }
                       let tmp18 = tmp9;
                       if (isArray1) {
                         let tmp19 = tmp9;
                         if (tmp9 == null) {
-                          tmp19 = content;
+                          tmp19 = obj;
                         }
                         obj = {};
                         let merged2 = Object.assign(tmp19);
-                        let parts = content.parts;
-                        obj.parts = parts.map((content) => {
-                          let tmp = content;
-                          if (content) {
-                            tmp = typeof content === "ay";
+                        let parts = obj.parts;
+                        obj.parts = parts.map((obj) => {
+                          let tmp = obj;
+                          if (obj) {
+                            tmp = typeof obj === "object";
                           }
                           if (!tmp) {
                             return tmp2;
                           } else {
-                            let isArray1 = null !== content;
+                            let isArray1 = null !== obj;
                             let isArray = isArray1;
                             if (isArray1) {
-                              isArray = typeof content === "ay";
+                              isArray = typeof obj === "object";
                             }
                             if (isArray) {
-                              isArray = "content" in content;
+                              isArray = "content" in obj;
                             }
                             if (isArray) {
                               let _Array = Array;
-                              isArray = Array.isArray(content.content);
+                              isArray = Array.isArray(obj.content);
                             }
                             if (isArray) {
-                              let obj = {};
-                              let merged = Object.assign(content);
-                              content = content.content;
+                              obj = {};
+                              let merged = Object.assign(obj);
+                              let content = obj.content;
                               obj.content = content.map(() => { ... });
                               let tmp9 = obj;
                             } else {
-                              let tmp7 = "content" in content;
+                              let tmp7 = "content" in obj;
                               if (tmp7) {
-                                tmp7 = closure_6(content.content);
+                                tmp7 = closure_6(obj.content);
                               }
                               if (tmp7) {
                                 obj = {};
-                                let merged1 = Object.assign(content);
-                                obj.content = closure_10(content.content);
+                                let merged1 = Object.assign(obj);
+                                obj.content = closure_10(obj.content);
                                 tmp9 = obj;
                               }
                             }
                             if (isArray1) {
-                              isArray1 = typeof content === "ay";
+                              isArray1 = typeof obj === "object";
                             }
                             if (isArray1) {
-                              isArray1 = "parts" in content;
+                              isArray1 = "parts" in obj;
                             }
                             if (isArray1) {
                               let _Array2 = Array;
-                              isArray1 = Array.isArray(content.parts);
+                              isArray1 = Array.isArray(obj.parts);
                             }
                             if (isArray1) {
-                              isArray1 = content.parts.length > 0;
+                              isArray1 = obj.parts.length > 0;
                             }
                             let tmp18 = tmp9;
                             if (isArray1) {
                               let tmp19 = tmp9;
                               if (tmp9 == null) {
-                                tmp19 = content;
+                                tmp19 = obj;
                               }
                               obj = {};
                               let merged2 = Object.assign(tmp19);
-                              let parts = content.parts;
+                              let parts = obj.parts;
                               obj.parts = parts.map(() => { ... });
                               tmp18 = obj;
                             }
@@ -1252,8 +1252,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                               let tmp24 = closure_10(tmp18);
                             } else {
                               tmp24 = tmp18;
-                              if (tmp23(content)) {
-                                tmp24 = closure_10(content);
+                              if (tmp23(obj)) {
+                                tmp24 = closure_10(obj);
                               }
                             }
                             tmp23 = closure_6;
@@ -1265,8 +1265,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                         let tmp24 = closure_10(tmp18);
                       } else {
                         tmp24 = tmp18;
-                        if (tmp23(content)) {
-                          tmp24 = closure_10(content);
+                        if (tmp23(obj)) {
+                          tmp24 = closure_10(obj);
                         }
                       }
                       tmp23 = closure_6;
@@ -1278,8 +1278,8 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
                   let tmp24 = closure_10(tmp18);
                 } else {
                   tmp24 = tmp18;
-                  if (tmp23(content)) {
-                    tmp24 = closure_10(content);
+                  if (tmp23(obj)) {
+                    tmp24 = closure_10(obj);
                   }
                 }
                 tmp23 = closure_6;
@@ -1291,19 +1291,19 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
             let tmp24 = closure_10(tmp18);
           } else {
             tmp24 = tmp18;
-            if (tmp23(content)) {
-              tmp24 = closure_10(content);
+            if (tmp23(obj)) {
+              tmp24 = closure_10(obj);
             }
           }
           tmp23 = closure_6;
         }
       });
-      if (typeof jsonBytes !== "find") {
+      if (typeof jsonBytes !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const _JSON = JSON;
       const json = JSON.stringify(mapped);
-      if (typeof utf8Bytes !== "find") {
+      if (typeof utf8Bytes !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const _TextEncoder = TextEncoder;
@@ -1347,7 +1347,7 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
         if (!mapped[mapped.length - 1]) {
           items = [];
         }
-        let tmp16 = typeof mapped[mapped.length - 1] === "ay";
+        let tmp16 = typeof mapped[mapped.length - 1] === "object";
         let isArray = null !== tmp15;
         let tmp19 = isArray;
         if (isArray) {
@@ -1357,7 +1357,7 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
           tmp19 = "content" in tmp15;
         }
         if (tmp19) {
-          tmp19 = typeof tmp15.content === "y";
+          tmp19 = typeof tmp15.content === "string";
         }
         if (!tmp19) {
           if (isArray) {
@@ -1377,11 +1377,11 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
             let items1 = (function truncatePartsMessage(parts, arg1) {
               parts = parts.parts;
               let obj = {};
-              const mapped = parts.map((arg0) => {
-                let str = "";
-                if (typeof arg0 !== "y") {
+              const mapped = parts.map((str) => {
+                str = "";
+                if (typeof str !== "string") {
                   const obj = {};
-                  const merged = Object.assign(arg0);
+                  const merged = Object.assign(str);
                   obj.text = "";
                   str = obj;
                 }
@@ -1453,12 +1453,12 @@ arg5.truncateGenAiMessages = function truncateGenAiMessages(items) {
         let obj = {};
         let merged = Object.assign(tmp15);
         obj.content = "";
-        if (typeof jsonBytes !== "find") {
+        if (typeof jsonBytes !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const _JSON2 = JSON;
         const json1 = JSON.stringify(obj);
-        if (typeof utf8Bytes !== "find") {
+        if (typeof utf8Bytes !== "function") {
           HermesBuiltin.throwTypeError();
         }
         const _TextEncoder2 = TextEncoder;

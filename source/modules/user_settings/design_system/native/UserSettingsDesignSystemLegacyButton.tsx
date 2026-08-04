@@ -1,10 +1,10 @@
-// Module ID: 14676
-// Function ID: 14677
+// Module ID: 14675
+// Function ID: 14676
 // Name: ComparisonRow
 // Dependencies: [19, 17, 21, 1297, 4281, 4695, 4285, 712, 4693, 7777, 2]
 // Exports: default
 
-// Module 14676 (ComparisonRow)
+// Module 14675 (ComparisonRow)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

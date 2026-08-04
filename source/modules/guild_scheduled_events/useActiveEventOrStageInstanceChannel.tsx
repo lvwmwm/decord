@@ -1,10 +1,10 @@
-// Module ID: 15192
-// Function ID: 15193
+// Module ID: 15191
+// Function ID: 15192
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [1372, 8960, 15191, 2]
+// Dependencies: [1372, 8960, 15190, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15192 (useActiveEventOrStageInstanceChannel)
+// Module 15191 (useActiveEventOrStageInstanceChannel)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("useLiveStageChannels").fileFinishedImporting("modules/gu
 
 export const useActiveEventOrStageInstanceChannel = function useActiveEventOrStageInstanceChannel(id) {
   let firstActiveEventChannel = require(8960) /* useGuildEvents */.useFirstActiveEventChannel(id);
-  const first = importDefault(15191)(id)[0];
+  const first = importDefault(15190)(id)[0];
   if (first != null) {
     id = first.id;
   }

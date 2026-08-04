@@ -1,9 +1,9 @@
-// Module ID: 16077
-// Function ID: 16078
+// Module ID: 16076
+// Function ID: 16077
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4304, 4356, 5104, 11558, 11556, 16033, 11561, 676, 4303, 11559, 21, 4146, 4281, 1297, 4285, 712, 4464, 4348, 5663, 1236, 4695, 11557, 589, 10593, 4381, 12226, 10595, 10592, 16078, 10605, 9317, 1348, 8117, 8122, 8118, 4286, 4694, 7819, 4706, 5236, 3989, 16079, 10167, 8698, 4629, 5610, 16037, 16049, 16032, 16080, 16081, 8705, 5368, 16082, 11560, 16083, 16084, 16085, 16086, 16087, 16097, 2]
+// Dependencies: [32, 19, 17, 4304, 4356, 5104, 11558, 11556, 16032, 11561, 676, 4303, 11559, 21, 4146, 4281, 1297, 4285, 712, 4464, 4348, 5663, 1236, 4695, 11557, 589, 10593, 4381, 12225, 10595, 10592, 16077, 10605, 9317, 1348, 8117, 8122, 8118, 4286, 4694, 7819, 4706, 5236, 3989, 16078, 10167, 8698, 4629, 5610, 16036, 16048, 16031, 16079, 16080, 8705, 5368, 16081, 11560, 16082, 16083, 16084, 16085, 16086, 16096, 2]
 
-// Module 16077 (SelfStreamCard)
+// Module 16076 (SelfStreamCard)
 import map from "map";
 import importAllResult from "watchStream";
 import { StyleSheet } from "createCacheKey";
@@ -1502,7 +1502,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  tmp26Result = callback(closure_37, { isRinging: tmp8, avatarURI: "r", avatarDecoration: "isArray", layout: layoutTransition, layoutPhysics: physics });
+  tmp26Result = callback(closure_37, { isRinging: tmp8, avatarURI: "r", avatarDecoration: "sa", layout: layoutTransition, layoutPhysics: physics });
   tmp25 = callback;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCard.tsx");

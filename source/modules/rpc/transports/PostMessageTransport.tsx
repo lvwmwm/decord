@@ -29,7 +29,7 @@ class PostMessageTransport extends EventEmitter {
   constructor(arg0, arg1, arg2, arg3) {
     tmp4 = new PostMessageTransport(tmp3, tmp2, tmp);
     // ThrowIfThisInitialized (0x7c)
-    f107679 = tmp4;
+    f107675 = tmp4;
     tmp4.disconnectSocket = function disconnectSocket(closure_0, closure_1, arg2) {
       let flag = arg2;
       if (arg2 === undefined) {
@@ -120,7 +120,7 @@ class PostMessageTransport extends EventEmitter {
         }
       }
     };
-    tmp4.handleFrame = function handleFrame(origin, source, arg2) {
+    tmp4.handleFrame = function handleFrame(origin, source, str) {
       if (origin.origin !== source.source.origin) {
         let obj = { closeCode: null };
         obj[0] = outer1_9.INVALID_ORIGIN;
@@ -128,10 +128,10 @@ class PostMessageTransport extends EventEmitter {
         throw tmp24;
       } else {
         try {
-          let parsed = arg2;
-          if (typeof arg2 !== "_iter") {
+          let parsed = str;
+          if (typeof str === "string") {
             const _JSON = JSON;
-            parsed = JSON.parse(arg2);
+            parsed = JSON.parse(str);
           }
           obj = closure_0;
           const onFrameHandled = closure_0.onFrameHandled;
@@ -147,9 +147,9 @@ class PostMessageTransport extends EventEmitter {
         }
       }
     };
-    f107679 = undefined;
+    f107675 = undefined;
     closure_1 = tmp4;
-    f107679 = closure_3((arg0, arg1, arg2) => {
+    f107675 = closure_3((arg0, arg1, arg2) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
       let closure_2 = arg2;
@@ -416,9 +416,9 @@ class PostMessageTransport extends EventEmitter {
       }
       return applyArgumentsResult;
     };
-    f107679 = undefined;
+    f107675 = undefined;
     closure_1 = tmp4;
-    f107679 = closure_3((arg0, arg1) => {
+    f107675 = closure_3((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
       let c6 = 0;

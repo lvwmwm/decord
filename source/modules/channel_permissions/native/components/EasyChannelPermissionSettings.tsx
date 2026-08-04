@@ -1,10 +1,10 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 15767
+// Function ID: 15768
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [32, 5, 19, 17, 15769, 1372, 1942, 1935, 1862, 3913, 3922, 1874, 7704, 676, 21, 4285, 712, 1480, 589, 8919, 8920, 8921, 1236, 4475, 4623, 8927, 3918, 4693, 5649, 5650, 1297, 5315, 9445, 10986, 5244, 4479, 8878, 9063, 15770, 15772, 2]
+// Dependencies: [32, 5, 19, 17, 15768, 1372, 1942, 1935, 1862, 3913, 3922, 1874, 7704, 676, 21, 4285, 712, 1480, 589, 8919, 8920, 8921, 1236, 4475, 4623, 8927, 3918, 4693, 5649, 5650, 1297, 5315, 9445, 10986, 5244, 4479, 8878, 9063, 15769, 15771, 2]
 // Exports: default
 
-// Module 15768 (ChannelPermissionSettingsBasicView)
+// Module 15767 (ChannelPermissionSettingsBasicView)
 import CirclePlusIcon from "CirclePlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getRoleRowData from "getRoleRowData";

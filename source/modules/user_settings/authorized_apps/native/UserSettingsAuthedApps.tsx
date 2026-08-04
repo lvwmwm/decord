@@ -1,10 +1,10 @@
-// Module ID: 14089
-// Function ID: 14090
+// Module ID: 14088
+// Function ID: 14089
 // Name: UserSettingsAuthedApps
 // Dependencies: [19, 17, 5218, 676, 21, 712, 4285, 10428, 10450, 10452, 4241, 1581, 589, 1480, 1481, 5618, 4281, 1236, 5649, 1416, 5315, 11355, 7514, 5922, 2]
 // Exports: DisclosureIcon, default
 
-// Module 14089 (UserSettingsAuthedApps)
+// Module 14088 (UserSettingsAuthedApps)
 import getAvatarURL from "getAvatarURL";
 import get_ActivityIndicator from "getSystemLocale";
 import recomputeFromAppTokens from "recomputeFromAppTokens";

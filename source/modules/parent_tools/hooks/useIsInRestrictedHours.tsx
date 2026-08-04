@@ -1,10 +1,10 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16234
+// Function ID: 16235
 // Name: useIsInRestrictedHours
-// Dependencies: [1874, 6905, 589, 16236, 2]
+// Dependencies: [1874, 6905, 589, 16235, 2]
 // Exports: default
 
-// Module 16235 (useIsInRestrictedHours)
+// Module 16234 (useIsInRestrictedHours)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
@@ -13,5 +13,5 @@ const result = require("initialize").fileFinishedImporting("modules/parent_tools
 
 export default function useIsInRestrictedHours() {
   const items = [mergeGuildAvatar, freshTeenActivityWithMap];
-  return require(589) /* initialize */.useStateFromStores(items, require(16236) /* scheduleUpcomingWarning */.getCurrentRestrictedHoursState);
+  return require(589) /* initialize */.useStateFromStores(items, require(16235) /* scheduleUpcomingWarning */.getCurrentRestrictedHoursState);
 };

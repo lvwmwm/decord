@@ -1,10 +1,10 @@
-// Module ID: 15264
-// Function ID: 15265
+// Module ID: 15263
+// Function ID: 15264
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 11748, 1932, 1862, 1874, 6902, 676, 1369, 15200, 647, 5611, 5613, 15265, 5931, 1358, 4101, 15189, 15266, 2]
+// Dependencies: [32, 19, 11748, 1932, 1862, 1874, 6902, 676, 1369, 15199, 647, 5611, 5613, 15264, 5931, 1358, 4101, 15188, 15265, 2]
 // Exports: default
 
-// Module 15264 (useChannelNoticeRows)
+// Module 15263 (useChannelNoticeRows)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import completeStep from "completeStep";

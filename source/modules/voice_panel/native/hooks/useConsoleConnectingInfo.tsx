@@ -1,10 +1,10 @@
-// Module ID: 16114
-// Function ID: 16115
+// Module ID: 16113
+// Function ID: 16114
 // Name: useConsoleConnectingInfo
-// Dependencies: [4299, 4300, 10662, 647, 16115, 12126, 16116, 16117, 2]
+// Dependencies: [4299, 4300, 10662, 647, 16114, 12125, 16115, 16116, 2]
 // Exports: default
 
-// Module 16114 (useConsoleConnectingInfo)
+// Module 16113 (useConsoleConnectingInfo)
 import set from "set";
 import handleUpdate from "handleUpdate";
 
@@ -58,10 +58,10 @@ export default function useConsoleConnectingInfo(arg0) {
     channelId2 = stateFromStores.channelId;
   }
   obj[1] = channelId2 === arg0 || channelId === arg0;
-  obj[2] = importDefault(12126)(str);
-  const tmp9 = importDefault(16115)(stateFromStores);
-  obj[3] = tmp5(16116).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
-  obj[4] = importDefault(16117)(str);
+  obj[2] = importDefault(12125)(str);
+  const tmp9 = importDefault(16114)(stateFromStores);
+  obj[3] = tmp5(16115).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj[4] = importDefault(16116)(str);
   obj[5] = tmp9;
   return obj;
 };

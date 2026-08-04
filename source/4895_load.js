@@ -11,13 +11,13 @@ function load(response, then) {
     then = {};
   }
   response = then;
-  if (typeof response === "y") {
+  if (typeof response === "string") {
     then.async = true;
     let obj1 = /^\w+:\/\//;
     if (obj1.test(response)) {
       let fn = globalThis;
       const _fetch = fetch;
-      if (typeof fetch === "tee") {
+      if (typeof fetch !== "undefined") {
         if (then === undefined) {
           then = {};
         }
@@ -153,8 +153,8 @@ function load(response, then) {
     }
   } else {
     const _File = File;
-    let tmp24 = typeof File === "tee";
-    if (typeof File !== "Array") {
+    let tmp24 = typeof File !== "undefined";
+    if (typeof File !== "undefined") {
       const _File2 = File;
       tmp24 = response instanceof File;
     }
@@ -238,7 +238,7 @@ function loadView(byteLength, then) {
   let xmpChunks;
   let obj = then;
   if (then === undefined) {
-    obj = { expanded: false, async: false, includeUnknown: false, domParser: "channel" };
+    obj = { expanded: false, async: false, includeUnknown: false, domParser: "call" };
   }
   let flag = obj.expanded;
   if (flag === undefined) {

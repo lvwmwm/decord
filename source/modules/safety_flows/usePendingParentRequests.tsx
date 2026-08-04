@@ -1,10 +1,10 @@
-// Module ID: 16840
-// Function ID: 16841
+// Module ID: 16839
+// Function ID: 16840
 // Name: useDerivedPendingRequests
 // Dependencies: [32, 19, 6905, 1874, 6906, 589, 7259, 11236, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 16840 (useDerivedPendingRequests)
+// Module 16839 (useDerivedPendingRequests)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";

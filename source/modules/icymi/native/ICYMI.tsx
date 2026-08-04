@@ -1,10 +1,10 @@
-// Module ID: 15440
-// Function ID: 15441
+// Module ID: 15439
+// Function ID: 15440
 // Name: SettingsButton
-// Dependencies: [32, 19, 17, 4277, 1218, 1862, 8832, 8820, 15441, 1369, 21, 4285, 712, 15442, 7672, 14150, 8835, 4253, 15444, 1959, 4241, 15455, 4281, 1236, 7562, 5272, 4814, 4096, 4812, 15391, 15393, 5270, 8834, 1474, 1581, 1481, 6843, 589, 15381, 15475, 15478, 5932, 1358, 15465, 1480, 7224, 8190, 8192, 14237, 692, 15479, 15485, 15490, 15503, 15504, 15505, 15506, 15507, 15508, 15509, 15510, 8202, 15511, 7666, 500, 11207, 4132, 15512, 15443, 3997, 2]
+// Dependencies: [32, 19, 17, 4277, 1218, 1862, 8832, 8820, 15440, 1369, 21, 4285, 712, 15441, 7672, 14149, 8835, 4253, 15443, 1959, 4241, 15454, 4281, 1236, 7562, 5272, 4814, 4096, 4812, 15390, 15392, 5270, 8834, 1474, 1581, 1481, 6843, 589, 15380, 15474, 15477, 5932, 1358, 15464, 1480, 7224, 8190, 8192, 14236, 692, 15478, 15484, 15489, 15502, 15503, 15504, 15505, 15506, 15507, 15508, 15509, 8202, 15510, 7666, 500, 11207, 4132, 15511, 15442, 3997, 2]
 // Exports: ICYMITab
 
-// Module 15440 (SettingsButton)
+// Module 15439 (SettingsButton)
 import generateHydrationId from "generateHydrationId";
 import importAllResult from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -27,7 +27,7 @@ let closure_6;
 const require = arg1;
 function SettingsButton() {
   let obj = { accessibilityLabel: "button", variant: "tertiary", size: "sm", icon: null, onPress: null };
-  obj[3] = callback(require(14150) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" });
+  obj[3] = callback(require(14149) /* FiltersHorizontalIcon */.FiltersHorizontalIcon, { size: "sm" });
   obj[4] = function onPress() {
     callback2(paths[16]).itemInteracted("filters_button", "filters_button", "press_info_button");
     const obj = callback2(paths[16]);
@@ -45,7 +45,7 @@ function InfoButton() {
     const obj = callback2(8835);
     callback2(8835).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "info_button", actionIntentType: "open", actionDestinationType: null } });
     const obj2 = callback2(8835);
-    callback(15455).pushICYMIInfoModal({ extendedOnboarding: true });
+    callback(15454).pushICYMIInfoModal({ extendedOnboarding: true });
   };
   return callback(require(7672) /* IconButton */.IconButton, obj);
 }
@@ -390,9 +390,9 @@ let closure_22 = importAllResult.memo((inNestedNavigator) => {
   const obj6 = { style: tmp.headerClose, accessibilityLabel: null, onPress: null, children: null };
   const intl = LeftBackIconWithBadge(1236).intl;
   obj6[1] = intl.string(LeftBackIconWithBadge(1236).t["13/7kX"]);
-  obj6[2] = LeftBackIconWithBadge(15391).goBack;
+  obj6[2] = LeftBackIconWithBadge(15390).goBack;
   if (inNestedNavigator) {
-    LeftBackIconWithBadge = LeftBackIconWithBadge(15393).LeftBackIconWithBadge;
+    LeftBackIconWithBadge = LeftBackIconWithBadge(15392).LeftBackIconWithBadge;
     obj = { includeNotificationsCount: true };
     let tmp4Result = tmp4(LeftBackIconWithBadge, obj);
   } else {
@@ -448,6 +448,6 @@ export const ICYMITab = function ICYMITab(route) {
   items2[1] = closure_14(_require(3997).ThemeContextProvider, obj4);
   obj3.children = items2;
   obj2[0] = closure_16(tmp11, obj3);
-  obj1[0] = closure_14(_require(15443).ICYMIContextProvider, obj2);
-  return closure_14(importDefault(15512), obj1);
+  obj1[0] = closure_14(_require(15442).ICYMIContextProvider, obj2);
+  return closure_14(importDefault(15511), obj1);
 };

@@ -1,10 +1,10 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12435
+// Function ID: 12436
 // Name: useCanRemoveAllReactions
 // Dependencies: [3913, 676, 5798, 589, 2]
 // Exports: default
 
-// Module 12436 (useCanRemoveAllReactions)
+// Module 12435 (useCanRemoveAllReactions)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
 

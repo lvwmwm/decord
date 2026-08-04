@@ -1,8 +1,8 @@
-// Module ID: 14607
-// Function ID: 14608
-// Dependencies: [5, 19, 17, 1874, 676, 7583, 21, 4285, 589, 7582, 1897, 5610, 7584, 8173, 7777, 14608, 9430, 8432, 8433, 1236, 2]
+// Module ID: 14606
+// Function ID: 14607
+// Dependencies: [5, 19, 17, 1874, 676, 7583, 21, 4285, 589, 7582, 1897, 5610, 7584, 8173, 7777, 14607, 9430, 8432, 8433, 1236, 2]
 
-// Module 14607
+// Module 14606
 import items from "items";
 import { View } from "openPremiumModal";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -155,7 +155,7 @@ const memoResult = require("getSystemLocale").memo(() => {
       return applyArgumentsResult;
     }
   };
-  obj1[1] = callback(importDefault(14608), obj2);
+  obj1[1] = callback(importDefault(14607), obj2);
   obj[0] = callback(obj, obj1);
   const children = [callback(stateFromStores(7777).Form, obj), ];
   let tmp9Result = !isPremiumResult;

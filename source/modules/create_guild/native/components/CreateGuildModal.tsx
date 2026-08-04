@@ -1,10 +1,10 @@
-// Module ID: 11977
-// Function ID: 11978
+// Module ID: 11976
+// Function ID: 11977
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 1932, 8318, 676, 21, 11747, 8994, 698, 5200, 11976, 503, 5238, 11978, 11980, 11617, 1236, 11981, 8193, 11983, 11984, 11995, 8221, 5665, 2]
+// Dependencies: [19, 17, 1932, 8318, 676, 21, 11747, 8994, 698, 5200, 11975, 503, 5238, 11977, 11979, 11617, 1236, 11980, 8193, 11982, 11983, 11994, 8221, 5665, 2]
 // Exports: default
 
-// Module 11977 (CreateGuildModal)
+// Module 11976 (CreateGuildModal)
 import JoinServerContainer from "JoinServerContainer";
 import { Keyboard } from "SeeMoreFooter";
 import comparator from "comparator";
@@ -74,7 +74,7 @@ export default function CreateGuildModal(channel) {
     let obj2 = channel(onSuccess[12]);
     obj[4] = obj2.getHeaderCloseButton(initialState(onSuccess[10]).closeCreateGuildModal);
     obj[5] = function render() {
-      return callback3(callback2(11978), { trigger: constants.IN_APP });
+      return callback3(callback2(11977), { trigger: constants.IN_APP });
     };
     obj[outer1_6.GUILD_TEMPLATES] = obj;
     obj = {
@@ -85,7 +85,7 @@ export default function CreateGuildModal(channel) {
         return null;
       },
       render(guildTemplate) {
-        return callback3(callback2(11980), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
+        return callback3(callback2(11979), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
       }
     };
     obj[outer1_6.CREATION_INTENT] = obj;
@@ -232,8 +232,8 @@ export default function CreateGuildModal(channel) {
       },
       render(code) {
         const obj = { code: code.code, onPressClose: null };
-        obj[1] = callback2(11976).closeCreateGuildModal;
-        return callback3(callback2(11984), obj);
+        obj[1] = callback2(11975).closeCreateGuildModal;
+        return callback3(callback2(11983), obj);
       }
     };
     const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: true };
@@ -245,7 +245,7 @@ export default function CreateGuildModal(channel) {
       return null;
     };
     obj5[6] = function render() {
-      return callback3(callback2(11995), { isNestedNavigator: true });
+      return callback3(callback2(11994), { isNestedNavigator: true });
     };
     obj[outer1_6.JOIN_STUDENT_HUB] = obj5;
     return obj;

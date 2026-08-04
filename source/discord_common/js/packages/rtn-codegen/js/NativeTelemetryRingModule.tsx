@@ -1,9 +1,9 @@
-// Module ID: 13368
-// Function ID: 13369
+// Module ID: 13367
+// Function ID: 13368
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 13368 (enforcing)
+// Module 13367 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTelemetryRingModule");

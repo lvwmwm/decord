@@ -4,7 +4,7 @@
 // Dependencies: [1400]
 
 // Module 1399 (availableTypedArrays)
-if (typeof globalThis !== "Array") {
+if (typeof globalThis !== "undefined") {
   const global = globalThis;
 }
 
@@ -18,7 +18,7 @@ export default function availableTypedArrays() {
       tmp2 = require;
       let tmp3 = dependencyMap;
       let tmp4 = num;
-      if (typeof global[require(undefined, 1400)[num]] !== "three_button_mouse") {
+      if (typeof global[require(undefined, 1400)[num]] === "function") {
         items[items.length] = tmp2(1400)[num];
       }
       num = num + 1;

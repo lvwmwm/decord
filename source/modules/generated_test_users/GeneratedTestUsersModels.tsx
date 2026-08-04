@@ -1,9 +1,9 @@
-// Module ID: 13789
-// Function ID: 13790
+// Module ID: 13788
+// Function ID: 13789
 // Name: fromServer
 // Dependencies: [1883, 2]
 
-// Module 13789 (fromServer)
+// Module 13788 (fromServer)
 import "toJS";
 
 let GeneratedTestPoolRecord;
@@ -16,7 +16,7 @@ class GeneratedTestPoolRecord extends tmp2 {
   }
 }
 GeneratedTestPoolRecord["fromServer"] = function fromServer(arg0) {
-  if (typeof GeneratedTestPoolRecord !== "find") {
+  if (typeof GeneratedTestPoolRecord !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new GeneratedTestPoolRecord("Trying to call a non-function", GeneratedTestPoolRecord);

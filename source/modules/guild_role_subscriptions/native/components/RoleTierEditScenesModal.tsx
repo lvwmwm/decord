@@ -1,10 +1,10 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 16702
+// Function ID: 16703
 // Name: orderify
-// Dependencies: [32, 19, 16690, 14342, 21, 4285, 38, 5917, 7837, 1236, 16704, 16689, 16705, 16725, 16728, 16730, 1581, 4490, 5598, 5665, 16732, 2]
+// Dependencies: [32, 19, 16689, 14341, 21, 4285, 38, 5917, 7837, 1236, 16703, 16688, 16704, 16724, 16727, 16729, 1581, 4490, 5598, 5665, 16731, 2]
 // Exports: default
 
-// Module 16703 (orderify)
+// Module 16702 (orderify)
 import _slicedToArray from "_slicedToArray";
 import NavigationStack from "NavigationStack";
 import usePriceTiers from "usePriceTiers";
@@ -18,15 +18,15 @@ let c9;
 let closure_6;
 let metroImportAll;
 const require = arg1;
-function orderify(arg0, arg1) {
+function orderify(str) {
   const sum = arg1 + 1;
-  if (typeof arg0 === "y") {
+  if (typeof str === "string") {
     let obj = { stepNumber: null, scene: null };
     obj[0] = sum;
-    obj[1] = arg0;
+    obj[1] = str;
   } else {
     obj = {};
-    const merged = Object.assign(arg0);
+    const merged = Object.assign(str);
     obj.stepNumber = sum;
   }
   return obj;
@@ -58,9 +58,10 @@ export default function RoleTierEditScenesModal(modalKey) {
     modalKey(steps[17]).popWithKey(modalKey);
   }, items);
   let items1 = [steps];
-  const memo = React.useMemo(() => steps.map((scene) => {
-    if (typeof scene !== "y") {
-      scene = scene.scene;
+  const memo = React.useMemo(() => steps.map((str) => {
+    let scene = str;
+    if (typeof str !== "string") {
+      scene = str.scene;
     }
     return scene;
   }), items1);

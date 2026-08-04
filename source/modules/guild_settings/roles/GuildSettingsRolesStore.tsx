@@ -1,9 +1,9 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16570
+// Function ID: 16571
 // Name: handleSetSection
-// Dependencies: [1412, 16572, 1936, 1935, 8944, 16566, 676, 16573, 11697, 4723, 1351, 506, 3918, 688, 1938, 12, 589, 709, 2]
+// Dependencies: [1412, 16571, 1936, 1935, 8944, 16565, 676, 16572, 11697, 4723, 1351, 506, 3918, 688, 1938, 12, 589, 709, 2]
 
-// Module 16571 (handleSetSection)
+// Module 16570 (handleSetSection)
 import { set } from "isValueEqual";
 import map from "map";
 import { isRoleEqual } from "GuildRoleRecordTypeTag";

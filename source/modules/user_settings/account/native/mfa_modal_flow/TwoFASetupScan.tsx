@@ -1,10 +1,10 @@
-// Module ID: 13939
-// Function ID: 13940
+// Module ID: 13938
+// Function ID: 13939
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 4285, 712, 5638, 13937, 13933, 5272, 1297, 1236, 4281, 4812, 2]
+// Dependencies: [32, 19, 21, 4285, 712, 5638, 13936, 13932, 5272, 1297, 1236, 4281, 4812, 2]
 // Exports: default
 
-// Module 13939 (TwoFASetupScan)
+// Module 13938 (TwoFASetupScan)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ export default function TwoFASetupScan(totpSecret) {
     dependencyMap(true);
     totpSecret(5638).copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(13937);
+  let obj = totpSecret(13936);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: items1, children: null };
@@ -63,5 +63,5 @@ export default function TwoFASetupScan(totpSecret) {
   items2[3] = callback2(totpSecret(4812).PressableOpacity, obj2);
   obj[2] = items2;
   obj4[0] = closure_5(totpSecret(5272).SafeAreaPaddingView, obj);
-  return callback2(totpSecret(13933).TwoFASetupModalScreen, obj4);
+  return callback2(totpSecret(13932).TwoFASetupModalScreen, obj4);
 };

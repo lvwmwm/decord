@@ -1,7 +1,7 @@
 // Module ID: 9173
 // Function ID: 9174
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1862, 676, 21, 3995, 3997, 4285, 712, 589, 1411, 1474, 1416, 9174, 4221, 3989, 9175, 4706, 9176, 4281, 9188, 12119, 2]
+// Dependencies: [19, 17, 1862, 676, 21, 3995, 3997, 4285, 712, 589, 1411, 1474, 1416, 9174, 4221, 3989, 9175, 4706, 9176, 4281, 9188, 12118, 2]
 // Exports: default, getBackgroundForProfile
 
 // Module 9173 (GuildProfileBackground)
@@ -97,7 +97,7 @@ export default function GuildProfileView(guildProfile) {
       ({ id: obj2[0], icon: obj2[1] } = tmp);
       const guildIconSource = obj.getGuildIconSource(obj);
       let uri = null;
-      if (typeof guildIconSource !== "Object") {
+      if (typeof guildIconSource !== "number") {
         uri = guildIconSource.uri;
       }
       return uri;
@@ -115,7 +115,7 @@ export default function GuildProfileView(guildProfile) {
     obj[2] = guildProfile.description;
     tmp5Result = tmp5(guildProfile(4281).Text, obj);
   }
-  const items2 = [tmp5Result, callback(importDefault(9188), { profile: guildProfile }), callback(importDefault(12119), { profile: guildProfile })];
+  const items2 = [tmp5Result, callback(importDefault(9188), { profile: guildProfile }), callback(importDefault(12118), { profile: guildProfile })];
   obj[1] = items2;
   items1[2] = closure_9(closure_4, obj);
   obj[1] = items1;

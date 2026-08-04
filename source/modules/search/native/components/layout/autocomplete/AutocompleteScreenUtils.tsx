@@ -1,10 +1,10 @@
-// Module ID: 15680
-// Function ID: 15681
+// Module ID: 15679
+// Function ID: 15680
 // Name: getSearchQueryChannelIds
-// Dependencies: [1942, 3922, 1874, 11623, 8208, 676, 1236, 10157, 4229, 10452, 9927, 9706, 7635, 4796, 7630, 7627, 11136, 10456, 15681, 11624, 4124, 2]
+// Dependencies: [1942, 3922, 1874, 11623, 8208, 676, 1236, 10157, 4229, 10452, 9927, 9706, 7635, 4796, 7630, 7627, 11136, 10456, 15680, 11624, 4124, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15680 (getSearchQueryChannelIds)
+// Module 15679 (getSearchQueryChannelIds)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -88,7 +88,7 @@ export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeI
     } else {
       const intl2 = tmp(1236).intl;
       if (intl2.string(tmp(1236).t.WjkIKU) === text) {
-        return tmp(15681).WebhookIcon;
+        return tmp(15680).WebhookIcon;
       }
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14369
+// Function ID: 14370
 // Name: getUsedTemplateChannelsForGuild
-// Dependencies: [5, 19, 1372, 3907, 14365, 14371, 676, 1379, 4523, 647, 1384, 709, 8917, 5789, 13148, 2]
+// Dependencies: [5, 19, 1372, 3907, 14364, 14370, 676, 1379, 4523, 647, 1384, 709, 8917, 5789, 13147, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14370 (getUsedTemplateChannelsForGuild)
+// Module 14369 (getUsedTemplateChannelsForGuild)
 import initialize from "initialize";
 import { useMemo } from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -400,8 +400,8 @@ export const isEligibleForNewBadge = function isEligibleForNewBadge(features) {
     result = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
   if (result) {
-    result = require(13148) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
-    const tmpResult = require(13148) /* GuildFeatures */;
+    result = require(13147) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
+    const tmpResult = require(13147) /* GuildFeatures */;
   }
   return result;
 };

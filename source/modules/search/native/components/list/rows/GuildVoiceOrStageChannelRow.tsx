@@ -1,9 +1,9 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15612
+// Function ID: 15613
 // Name: GuildVoiceChannelSubtitle
-// Dependencies: [19, 17, 1377, 8208, 21, 9711, 4124, 1236, 4285, 589, 15614, 5115, 5109, 15615, 15617, 11575, 2]
+// Dependencies: [19, 17, 1377, 8208, 21, 9711, 4124, 1236, 4285, 589, 15613, 5115, 5109, 15614, 15616, 11575, 2]
 
-// Module 15613 (GuildVoiceChannelSubtitle)
+// Module 15612 (GuildVoiceChannelSubtitle)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -292,7 +292,7 @@ function GuildVoiceChannelExtras(arg0) {
     obj[2] = channel.guild_id;
     obj[3] = closure_6;
     obj[4] = tmp4;
-    obj[1] = tmp5(importDefault(15615), obj);
+    obj[1] = tmp5(importDefault(15614), obj);
     tmp5Result = tmp5(tmp6, obj);
   }
   obj[1] = tmp5Result;
@@ -328,7 +328,7 @@ const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
   }
   obj[4] = trailing;
   obj[5] = <GuildVoiceChannelExtras channel={channel} voiceStates={voiceStates} users={mapped} />;
-  return jsx(onPress(15617), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
+  return jsx(onPress(15616), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
 });
 const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 

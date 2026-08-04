@@ -1,10 +1,10 @@
-// Module ID: 12674
-// Function ID: 12675
+// Module ID: 12673
+// Function ID: 12674
 // Name: ManagePlanHeader
-// Dependencies: [5, 32, 19, 17, 3932, 1874, 3933, 3936, 3937, 6770, 6785, 5767, 676, 5277, 4268, 1876, 21, 3, 4285, 712, 1480, 4812, 5242, 4281, 1236, 5125, 1348, 5610, 7553, 5630, 589, 3997, 4131, 691, 4604, 5598, 7295, 6775, 698, 3931, 38, 5764, 12675, 12676, 7528, 7538, 7311, 4695, 7517, 7558, 7557, 4800, 8434, 12596, 1945, 5317, 4706, 1297, 7626, 1581, 7561, 6769, 4711, 5786, 7976, 12638, 12619, 1414, 4684, 7514, 5922, 7559, 12653, 2]
+// Dependencies: [5, 32, 19, 17, 3932, 1874, 3933, 3936, 3937, 6770, 6785, 5767, 676, 5277, 4268, 1876, 21, 3, 4285, 712, 1480, 4812, 5242, 4281, 1236, 5125, 1348, 5610, 7553, 5630, 589, 3997, 4131, 691, 4604, 5598, 7295, 6775, 698, 3931, 38, 5764, 12674, 12675, 7528, 7538, 7311, 4695, 7517, 7558, 7557, 4800, 8434, 12595, 1945, 5317, 4706, 1297, 7626, 1581, 7561, 6769, 4711, 5786, 7976, 12637, 12618, 1414, 4684, 7514, 5922, 7559, 12652, 2]
 // Exports: default
 
-// Module 12674 (ManagePlanHeader)
+// Module 12673 (ManagePlanHeader)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import Themes from "Themes";
@@ -737,7 +737,7 @@ export default function PremiumManagePlan() {
     const items = [reset.getPremiumTypeSubscription(), reset.hasFetchedSubscriptions()];
     return items;
   }), 2);
-  const tmp15 = importDefault(12638);
+  const tmp15 = importDefault(12637);
   let obj8 = navigation(3931);
   const unactivatedFractionalPremiumDurationString = obj8.getUnactivatedFractionalPremiumDurationString(tmp12);
   if (null !== tmp10) {
@@ -885,14 +885,14 @@ export default function PremiumManagePlan() {
   obj9[4] = flag;
   items9[5] = closure_29(tmp2Result, obj9);
   const obj10 = { style: tmp.featuresTable, variant: "nitro_home", titleOverride: null, isFractionalOnly: null, isPremiumGroup: null, premiumGroupRole: null };
-  tmp15Result = importDefault(12638)(tmp12.endsAt, navigation(12638).CountDownMessageTypes.SHORT_TIME);
+  tmp15Result = importDefault(12637)(tmp12.endsAt, navigation(12637).CountDownMessageTypes.SHORT_TIME);
   const tmp31 = closure_9;
   const intl = tmp4(1236).intl;
   obj10[2] = intl.string(navigation(1236).t.QXx2gs);
   obj10[3] = tmp12.fractionalState === constants3.FP_ONLY;
   obj10[4] = result;
   obj10[5] = premiumGroupRole;
-  items9[6] = closure_29(importDefault(12653), obj10);
+  items9[6] = closure_29(importDefault(12652), obj10);
   obj1[1] = items9;
   items8[1] = closure_30(closure_8, obj1);
   obj[4] = items8;

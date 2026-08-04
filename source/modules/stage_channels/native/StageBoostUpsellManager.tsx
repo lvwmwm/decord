@@ -1,9 +1,9 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16438
+// Function ID: 16439
 // Name: handleVoiceChannelSelect
 // Dependencies: [3978, 1372, 3913, 1931, 5099, 5229, 4253, 5102, 9076, 1380, 5114, 1959, 2]
 
-// Module 16439 (handleVoiceChannelSelect)
+// Module 16438 (handleVoiceChannelSelect)
 import setContent from "setContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

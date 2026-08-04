@@ -1,10 +1,10 @@
-// Module ID: 15841
-// Function ID: 15842
+// Module ID: 15840
+// Function ID: 15841
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 11716, 21, 4285, 712, 5610, 4124, 8705, 5638, 3985, 4253, 11873, 1959, 8711, 5866, 4490, 4812, 1236, 1297, 4281, 15824, 5661, 15842, 2]
+// Dependencies: [19, 17, 11716, 21, 4285, 712, 5610, 4124, 8705, 5638, 3985, 4253, 11872, 1959, 8711, 5866, 4490, 4812, 1236, 1297, 4281, 15823, 5661, 15841, 2]
 // Exports: default
 
-// Module 15841 (RestrictedMessagePreviewHeader)
+// Module 15840 (RestrictedMessagePreviewHeader)
 import Button from "Button";
 import { View } from "PressableBase";
 import { MOBILE_MESSAGE_REQUESTS_MODAL_KEY as closure_5 } from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL";

@@ -1,10 +1,10 @@
-// Module ID: 15269
-// Function ID: 15270
+// Module ID: 15268
+// Function ID: 15269
 // Name: getMissingFavoriteThreadIds
 // Dependencies: [32, 19, 1371, 1375, 3912, 4960, 6894, 5191, 3915, 1376, 5228, 1372, 6895, 3913, 4297, 1931, 4480, 1410, 505, 6896, 1306, 5838, 9629, 12, 1351, 2]
 // Exports: useFavoritesGuildChannelList
 
-// Module 15269 (getMissingFavoriteThreadIds)
+// Module 15268 (getMissingFavoriteThreadIds)
 import _slicedToArray from "_slicedToArray";
 import computeSubtitle from "computeSubtitle";
 import importDefaultResult1 from "initializeFromUserSettings";

@@ -224,7 +224,7 @@ obj = {
         return null;
       } else {
         let tmp8 = null;
-        if (typeof currentProps[eventTypePropName] !== "three_button_mouse") {
+        if (typeof currentProps[eventTypePropName] === "function") {
           tmp8 = tmp7;
         }
         return tmp8;

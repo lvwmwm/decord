@@ -6,21 +6,21 @@
 // Module 7380 (spanTimeInputToSeconds)
 const require = arg1;
 const dependencyMap = arg6;
-function spanTimeInputToSeconds(getTime) {
-  if (typeof getTime === "Object") {
-    let result = getTime;
-    if (getTime > 9999999999) {
-      result = getTime / 1000;
+function spanTimeInputToSeconds(num) {
+  if (typeof num === "number") {
+    let result = num;
+    if (num > 9999999999) {
+      result = num / 1000;
     }
     let sum = result;
   } else {
     const _Array = Array;
-    if (Array.isArray(getTime)) {
-      sum = getTime[0] + getTime[1] / 1000000000;
+    if (Array.isArray(num)) {
+      sum = num[0] + num[1] / 1000000000;
     } else {
       const _Date = Date;
-      if (getTime instanceof Date) {
-        const time = getTime.getTime();
+      if (num instanceof Date) {
+        const time = num.getTime();
         let result1 = time;
         if (time > 9999999999) {
           result1 = time / 1000;
@@ -43,7 +43,7 @@ function spanToJSON(getSpanJSON) {
   let status;
   let traceId;
   if ((function spanIsSentrySpan(getSpanJSON) {
-    return typeof getSpanJSON.getSpanJSON === "find";
+    return typeof getSpanJSON.getSpanJSON === "function";
   })(getSpanJSON)) {
     return getSpanJSON.getSpanJSON();
   } else {

@@ -1,9 +1,9 @@
-// Module ID: 13897
-// Function ID: 13898
+// Module ID: 13896
+// Function ID: 13897
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 3922, 1874, 676, 7702, 21, 4285, 712, 13898, 1236, 5925, 589, 8325, 8262, 5315, 4695, 2]
+// Dependencies: [19, 17, 3922, 1874, 676, 7702, 21, 4285, 712, 13897, 1236, 5925, 589, 8325, 8262, 5315, 4695, 2]
 
-// Module 13897 (RestrictedAccountRedirect)
+// Module 13896 (RestrictedAccountRedirect)
 import importAllResult from "noop";
 import { View } from "set";
 import upsertRelationship from "upsertRelationship";
@@ -25,7 +25,7 @@ function RestrictedAccountRedirect() {
     obj.openUserSettings(obj);
   };
   obj[2] = SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE;
-  return callback(importDefault(13898), obj);
+  return callback(importDefault(13897), obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);

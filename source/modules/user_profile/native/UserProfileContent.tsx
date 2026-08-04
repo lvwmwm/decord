@@ -1,9 +1,9 @@
-// Module ID: 12248
-// Function ID: 12249
+// Module ID: 12247
+// Function ID: 12248
 // Name: CustomStatusBubble
-// Dependencies: [32, 19, 17, 9275, 1862, 3922, 1874, 8072, 6989, 8707, 5658, 676, 5339, 1369, 21, 8757, 589, 4253, 9384, 1959, 9375, 9368, 8710, 5610, 9161, 4124, 7672, 12249, 1236, 11890, 12250, 4225, 8758, 4474, 5638, 3985, 9387, 10050, 12182, 4695, 9591, 712, 10511, 12252, 12253, 8747, 8759, 1581, 12251, 12369, 12370, 5835, 9385, 8085, 8745, 8754, 1348, 9274, 8023, 12371, 12366, 12372, 12373, 12374, 12375, 11897, 12376, 12184, 12381, 9448, 5633, 12236, 12382, 12239, 12387, 12394, 8878, 8764, 8760, 12401, 4146, 12402, 12421, 12422, 12426, 12427, 5597, 11886, 9480, 12432, 2]
+// Dependencies: [32, 19, 17, 9275, 1862, 3922, 1874, 8072, 6989, 8707, 5658, 676, 5339, 1369, 21, 8757, 589, 4253, 9384, 1959, 9375, 9368, 8710, 5610, 9161, 4124, 7672, 12248, 1236, 11889, 12249, 4225, 8758, 4474, 5638, 3985, 9387, 10050, 12181, 4695, 9591, 712, 10511, 12251, 12252, 8747, 8759, 1581, 12250, 12368, 12369, 5835, 9385, 8085, 8745, 8754, 1348, 9274, 8023, 12370, 12365, 12371, 12372, 12373, 12374, 11896, 12375, 12183, 12380, 9448, 5633, 12235, 12381, 12238, 12386, 12393, 8878, 8764, 8760, 12400, 4146, 12401, 12420, 12421, 12425, 12426, 5597, 11885, 9480, 12431, 2]
 
-// Module 12248 (CustomStatusBubble)
+// Module 12247 (CustomStatusBubble)
 import useBadges from "useBadges";
 import importAllResult from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -270,7 +270,7 @@ function EditSection(guildId) {
     tmp6Result = tmp6(tmp4(4695).Button, obj2);
   }
   obj[3] = tmp6Result;
-  return callback(trackUserProfileAction(12182), obj);
+  return callback(trackUserProfileAction(12181), obj);
 }
 function UserProfileWidgetsBoardContainer(isCurrentUser) {
   let containerBackground;
@@ -282,9 +282,9 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   const items = [tmp3.card, { backgroundColor: containerBackground }];
   const obj = { style: tmp3.profileContent, children: null };
   if (isCurrentUser) {
-    isCurrentUser = callback(tmp(12252), {});
+    isCurrentUser = callback(tmp(12251), {});
   }
-  const items1 = [isCurrentUser, callback(importDefault(12253), { userId, isVisible, cardStyle: items })];
+  const items1 = [isCurrentUser, callback(importDefault(12252), { userId, isVisible, cardStyle: items })];
   obj[1] = items1;
   return closure_20(closure_6, obj);
 }

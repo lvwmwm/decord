@@ -124,7 +124,7 @@ export default function createHandler(name) {
       tmp3Result.handlerTag = -1;
       tmp3Result.onGestureHandlerEvent = (nativeEvent) => {
         if (nativeEvent.nativeEvent.handlerTag === tmp3Result.handlerTag) {
-          if (typeof tmp.props.onGestureEvent !== "three_button_mouse") {
+          if (typeof tmp.props.onGestureEvent === "function") {
             const props2 = tmp.props;
             const onGestureEvent = props2.onGestureEvent;
             if (onGestureEvent != null) {
@@ -140,7 +140,7 @@ export default function createHandler(name) {
       };
       tmp3Result.onGestureHandlerStateChange = (nativeEvent) => {
         if (nativeEvent.nativeEvent.handlerTag === tmp3Result.handlerTag) {
-          if (typeof tmp.props.onHandlerStateChange !== "three_button_mouse") {
+          if (typeof tmp.props.onHandlerStateChange === "function") {
             const props2 = tmp.props;
             if (props2.onHandlerStateChange != null) {
               onHandlerStateChange(nativeEvent);
@@ -152,7 +152,7 @@ export default function createHandler(name) {
           }
           let tmp8 = tmp7;
           if (tmp7) {
-            tmp8 = typeof tmp7 === "find";
+            tmp8 = typeof tmp7 === "function";
           }
           if (tmp8) {
             tmp7(nativeEvent);
@@ -178,7 +178,7 @@ export default function createHandler(name) {
           ref = onlyResult.ref;
         }
         if (ref) {
-          if (typeof ref === "find") {
+          if (typeof ref === "function") {
             ref(viewNode);
           } else {
             ref.current = viewNode;
@@ -453,7 +453,7 @@ export default function createHandler(name) {
         ({ onGestureHandlerEvent, props } = this);
         ({ onGestureEvent, onGestureHandlerEvent: onGestureHandlerEvent2 } = props);
         if (onGestureEvent) {
-          if (typeof onGestureEvent === "three_button_mouse") {
+          if (typeof onGestureEvent !== "function") {
             let tmp2 = onGestureEvent;
             if (onGestureHandlerEvent2) {
               const _Error3 = Error;
@@ -464,7 +464,7 @@ export default function createHandler(name) {
           ({ onGestureHandlerStateChange, props: props2 } = self);
           ({ onHandlerStateChange, onGestureHandlerStateChange: onGestureHandlerStateChange2 } = props2);
           if (onHandlerStateChange) {
-            if (typeof onHandlerStateChange === "three_button_mouse") {
+            if (typeof onHandlerStateChange !== "function") {
               let tmp3 = onHandlerStateChange;
               if (onGestureHandlerStateChange2) {
                 const _Error2 = Error;
@@ -517,7 +517,7 @@ export default function createHandler(name) {
           tmp3 = onGestureHandlerStateChange;
           if (onGestureHandlerStateChange2) {
             tmp3 = onGestureHandlerStateChange;
-            if (typeof onGestureHandlerStateChange2 !== "find") {
+            if (typeof onGestureHandlerStateChange2 !== "function") {
               const _Error5 = Error;
               const error3 = new Error("Nesting touch handlers with native animated driver is not supported yet");
               throw error3;
@@ -527,7 +527,7 @@ export default function createHandler(name) {
         tmp2 = onGestureHandlerEvent;
         if (onGestureHandlerEvent2) {
           tmp2 = onGestureHandlerEvent;
-          if (typeof onGestureHandlerEvent2 !== "find") {
+          if (typeof onGestureHandlerEvent2 !== "function") {
             const _Error4 = Error;
             const error4 = new Error("Nesting touch handlers with native animated driver is not supported yet");
             throw error4;

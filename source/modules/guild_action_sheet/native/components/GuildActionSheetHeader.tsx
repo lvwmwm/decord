@@ -1,10 +1,10 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13221
+// Function ID: 13222
 // Name: CommunityPill
-// Dependencies: [19, 17, 13223, 1862, 5805, 676, 21, 4285, 712, 501, 1236, 9182, 9178, 10450, 9185, 4812, 3986, 1297, 4281, 7562, 589, 1411, 13224, 13225, 1474, 5661, 1416, 1450, 8202, 3989, 5236, 9180, 12458, 2]
+// Dependencies: [19, 17, 13222, 1862, 5805, 676, 21, 4285, 712, 501, 1236, 9182, 9178, 10450, 9185, 4812, 3986, 1297, 4281, 7562, 589, 1411, 13223, 13224, 1474, 5661, 1416, 1450, 8202, 3989, 5236, 9180, 12457, 2]
 // Exports: default
 
-// Module 13222 (CommunityPill)
+// Module 13221 (CommunityPill)
 import useIsWindowLarge from "useIsWindowLarge";
 import get_ActivityIndicator from "Button";
 import initialize from "initialize";

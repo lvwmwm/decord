@@ -1,10 +1,10 @@
-// Module ID: 14384
-// Function ID: 14385
+// Module ID: 14383
+// Function ID: 14384
 // Name: KrispLogo
-// Dependencies: [19, 17, 4332, 7892, 676, 21, 1945, 4285, 4221, 4131, 10759, 10760, 1236, 5368, 10758, 4281, 10755, 10361, 13794, 2]
+// Dependencies: [19, 17, 4332, 7892, 676, 21, 1945, 4285, 4221, 4131, 10759, 10760, 1236, 5368, 10758, 4281, 10755, 10361, 13793, 2]
 // Exports: default
 
-// Module 14384 (KrispLogo)
+// Module 14383 (KrispLogo)
 import set from "set";
 import get_ActivityIndicator from "createToggle";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -133,5 +133,5 @@ export default function SettingsVoiceScreen() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13794), { node });
+  return callback(importDefault(13793), { node });
 };

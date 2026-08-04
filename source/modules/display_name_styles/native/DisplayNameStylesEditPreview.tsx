@@ -1,10 +1,10 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14487
+// Function ID: 14488
 // Name: ChatPreview
 // Dependencies: [19, 17, 21, 4285, 712, 8077, 1898, 9365, 1236, 2643, 10073, 3955, 1297, 9388, 9389, 4281, 2]
 // Exports: default
 
-// Module 14488 (ChatPreview)
+// Module 14487 (ChatPreview)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

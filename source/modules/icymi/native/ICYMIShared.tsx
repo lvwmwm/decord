@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15480
+// Function ID: 15481
 // Name: Separator
-// Dependencies: [19, 17, 5831, 1372, 1942, 3913, 1874, 676, 21, 7224, 12114, 4796, 9722, 15410, 5221, 5774, 5730, 6826, 4217, 15442, 500, 712, 1297, 8103, 5661, 4701, 4812, 4281, 7022, 15482, 8414, 589, 4474, 8835, 8705, 4803, 8834, 15117, 8966, 1236, 15443, 4221, 3989, 4129, 4146, 4286, 4295, 4781, 5660, 4275, 2]
+// Dependencies: [19, 17, 5831, 1372, 1942, 3913, 1874, 676, 21, 7224, 12113, 4796, 9722, 15409, 5221, 5774, 5730, 6826, 4217, 15441, 500, 712, 1297, 8103, 5661, 4701, 4812, 4281, 7022, 15481, 8414, 589, 4474, 8835, 8705, 4803, 8834, 15116, 8966, 1236, 15442, 4221, 3989, 4129, 4146, 4286, 4295, 4781, 5660, 4275, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 15481 (Separator)
+// Module 15480 (Separator)
 import closure_3 from "createICYMIStyles";
 import { View } from "trackInvite";
 import updateState from "updateState";
@@ -30,7 +30,7 @@ let unpackModuleId;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f61775().separator };
+    obj = { style: f61772().separator };
     return jsx(View, obj);
   }
 }
@@ -69,7 +69,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, hideTimestamp, id, type } = global);
     ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f61775();
+    tmp = f61772();
     tmp2 = guild;
     tmp3 = id;
     obj = require("getFontScale");

@@ -1,10 +1,10 @@
-// Module ID: 15876
-// Function ID: 15877
+// Module ID: 15875
+// Function ID: 15876
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 3937, 15877, 676, 1369, 21, 4285, 712, 589, 3931, 5764, 5338, 4281, 1236, 1945, 4695, 2]
+// Dependencies: [19, 17, 3937, 15876, 676, 1369, 21, 4285, 712, 589, 3931, 5764, 5338, 4281, 1236, 1945, 4695, 2]
 // Exports: default
 
-// Module 15876 (GooglePlayPriceChangeActionSheet)
+// Module 15875 (GooglePlayPriceChangeActionSheet)
 import "noop";
 import { View } from "set";
 import reset from "reset";

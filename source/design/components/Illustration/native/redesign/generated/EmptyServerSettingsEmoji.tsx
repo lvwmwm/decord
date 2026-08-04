@@ -1,10 +1,10 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 16524
+// Function ID: 16525
 // Name: getEmptyServerSettingsEmojiSource
-// Dependencies: [19, 17, 21, 7544, 16526, 16527, 16528, 4131, 2]
+// Dependencies: [19, 17, 21, 7544, 16525, 16526, 16527, 4131, 2]
 // Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 16525 (getEmptyServerSettingsEmojiSource)
+// Module 16524 (getEmptyServerSettingsEmojiSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getEmptyServerSettingsEmojiSource = function getEmptyServerSettings
   let obj = require(7544) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(16526);
+      return callback(16525);
     },
     darker() {
-      return callback(16527);
+      return callback(16526);
     },
     light() {
-      return callback(16528);
+      return callback(16527);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useEmptyServerSettingsEmojiSource = function useEmptyServerSettings
   let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16526);
+      return callback(16525);
     },
     darker() {
-      return callback(16527);
+      return callback(16526);
     },
     light() {
-      return callback(16528);
+      return callback(16527);
     }
   };
   return require(7544) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const EmptyServerSettingsEmoji = function EmptyServerSettingsEmoji(arg0) 
   let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16526);
+      return callback(16525);
     },
     darker() {
-      return callback(16527);
+      return callback(16526);
     },
     light() {
-      return callback(16528);
+      return callback(16527);
     }
   };
   obj = {};

@@ -1,10 +1,10 @@
-// Module ID: 12153
-// Function ID: 12154
+// Module ID: 12152
+// Function ID: 12153
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 8848, 21, 4285, 12150, 8819, 11038, 4136, 4146, 4286, 8852, 8853, 1236, 5270, 1297, 712, 4281, 12154, 8408, 500, 12155, 8414, 2]
+// Dependencies: [19, 17, 8848, 21, 4285, 12149, 8819, 11038, 4136, 4146, 4286, 8852, 8853, 1236, 5270, 1297, 712, 4281, 12153, 8408, 500, 12154, 8414, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 12153 (MediaModalOverlayHeader)
+// Module 12152 (MediaModalOverlayHeader)
 import "ContextMenu";
 import get_ActivityIndicator from "Text";
 import { SHARE_PREPARING_MODAL_KEY } from "SHARE_PREPARING_MODAL_KEY";
@@ -36,7 +36,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   let isModalOpen;
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = callback();
-  let obj = isModalOpen(12150);
+  let obj = isModalOpen(12149);
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
   let obj1 = isModalOpen(8819);
   const mediaShareActions = obj1.useMediaShareActions({ source, disableDownload, shareable });
@@ -113,7 +113,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     obj11[0] = tmp.navbarRight;
     const obj12 = { source: null };
     obj12[0] = source;
-    const items4 = [tmp10(tmp6(12154), obj12), ];
+    const items4 = [tmp10(tmp6(12153), obj12), ];
     let tmp10Result1 = null;
     if (!disableMediaOverlayButton) {
       const obj13 = { items: null, children: null };
@@ -125,7 +125,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
         obj[0] = intl.string(isModalOpen(1236).t.PdRCRg);
         const tmp4 = callback(8853);
         if (obj2.isAndroid()) {
-          let tmp2Result = tmp2(tmp5(12155).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
+          let tmp2Result = tmp2(tmp5(12154).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
         } else {
           tmp2Result = tmp2(tmp5(8414).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
         }

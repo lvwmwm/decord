@@ -1,10 +1,10 @@
-// Module ID: 15757
-// Function ID: 15758
+// Module ID: 15756
+// Function ID: 15757
 // Name: PinImage
-// Dependencies: [5, 19, 17, 3915, 1376, 1415, 7827, 1372, 1932, 1862, 3913, 4297, 15758, 3922, 1874, 15759, 676, 1379, 5833, 1235, 505, 21, 4285, 712, 589, 9639, 3997, 12, 15760, 4479, 1236, 5238, 8193, 7826, 3986, 9793, 8166, 4467, 3926, 1384, 4131, 15761, 8921, 4624, 4281, 8943, 4475, 4713, 4137, 4184, 15762, 7713, 7786, 500, 5649, 5650, 4498, 5317, 13337, 15763, 8167, 7795, 7794, 1381, 1383, 1945, 5315, 5798, 8928, 9058, 10109, 4229, 1382, 15764, 8245, 9605, 14105, 9637, 7144, 4249, 4239, 4804, 9641, 4227, 4244, 4693, 10106, 7672, 9350, 4812, 15162, 7777, 1480, 2]
+// Dependencies: [5, 19, 17, 3915, 1376, 1415, 7827, 1372, 1932, 1862, 3913, 4297, 15757, 3922, 1874, 15758, 676, 1379, 5833, 1235, 505, 21, 4285, 712, 589, 9639, 3997, 12, 15759, 4479, 1236, 5238, 8193, 7826, 3986, 9793, 8166, 4467, 3926, 1384, 4131, 15760, 8921, 4624, 4281, 8943, 4475, 4713, 4137, 4184, 15761, 7713, 7786, 500, 5649, 5650, 4498, 5317, 13336, 15762, 8167, 7795, 7794, 1381, 1383, 1945, 5315, 5798, 8928, 9058, 10109, 4229, 1382, 15763, 8245, 9605, 14104, 9637, 7144, 4249, 4239, 4804, 9641, 4227, 4244, 4693, 10106, 7672, 9350, 4812, 15161, 7777, 1480, 2]
 // Exports: default
 
-// Module 15757 (PinImage)
+// Module 15756 (PinImage)
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import importAllResult from "AbortCodes";
 import { View } from "set";
@@ -523,91 +523,42 @@ class ChannelSettingsOverview extends PureComponent {
     });
     closure_0 = tmp;
     tmp.handleConfirmDeleteChannel = GuildNSFWContentLevel(function*() {
-      if (c6 === 2) {
+      let closure_2 = tmp3;
+      let c4 = 1;
+      yield outer1_1(outer1_2[33]).deleteChannel(outer1_0.props.channel.id);
+      if (1 === tmp7) {
+        c4 = 0;
+        closure_2 = GuildNSFWContentLevel;
+        const aPIError = new outer1_0(outer1_2[49]).APIError(closure_2);
+        const anyErrorMessage = aPIError.getAnyErrorMessage();
+        let navigation = anyErrorMessage;
+        if (anyErrorMessage == null) {
+          const intl = outer1_0(outer1_2[30]).intl;
+          navigation = intl.string(outer1_0(outer1_2[30]).t.CKsXk3);
+        }
+        const obj2 = { key: "CHANNEL_SETTINGS_DELETE_CHANNEL_ERROR", content: null };
+        obj2[1] = navigation;
+        outer1_1(outer1_2[34]).open(obj2);
+        let c6 = 3;
+        const obj5 = outer1_1(outer1_2[34]);
+      } else if (arg0 === 1) {
         c6 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
+        throw arg1;
+      } else if (arg0 !== 2) {
+        const obj = outer1_0(outer1_2[48]);
+        navigation = obj.getRootNavigationRef();
+        const obj1 = navigation;
+        let isReadyResult;
+        if (navigation != null) {
+          isReadyResult = obj1.isReady();
         }
-      } else {
-        try {
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_2 = tmp3;
-              let anyErrorMessage = tmp7;
-              let navigation;
-              anyErrorMessage = undefined;
-              let c4 = 1;
-              c5 = 2;
-              c6 = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = outer1_1(outer1_2[33]).deleteChannel(outer1_0.props.channel.id);
-              return obj1;
-            }
-          } else {
-            if (1 === tmp7) {
-              c4 = 0;
-              closure_2 = GuildNSFWContentLevel;
-              const aPIError = new outer1_0(outer1_2[49]).APIError(closure_2);
-              anyErrorMessage = aPIError.getAnyErrorMessage();
-              navigation = anyErrorMessage;
-              if (anyErrorMessage == null) {
-                const intl = outer1_0(outer1_2[30]).intl;
-                navigation = intl.string(outer1_0(outer1_2[30]).t.CKsXk3);
-              }
-              const obj2 = { key: "CHANNEL_SETTINGS_DELETE_CHANNEL_ERROR", content: null };
-              obj2[1] = navigation;
-              outer1_1(outer1_2[34]).open(obj2);
-              c6 = 3;
-              const obj5 = outer1_1(outer1_2[34]);
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              obj = outer1_0(outer1_2[48]);
-              navigation = obj.getRootNavigationRef();
-              obj1 = navigation;
-              let isReadyResult;
-              if (navigation != null) {
-                isReadyResult = obj1.isReady();
-              }
-              if (isReadyResult) {
-                navigation.goBack();
-              }
-              c4 = 0;
-            }
-            c4 = 0;
-            c6 = 3;
-            const obj3 = { value: null, done: true };
-            obj3[0] = arg1;
-            return obj3;
-          }
-        } catch (tmp39) {
-          GuildNSFWContentLevel = tmp39;
-          if (tmp4 === c4) {
-            c6 = tmp2;
-            throw tmp39;
-          } else {
-            c5 = tmp;
-          }
+        if (isReadyResult) {
+          navigation.goBack();
         }
+        c4 = 0;
       }
+      c4 = 0;
+      return arg1;
     });
     tmp.handlePressTag = function handlePressTag(tag) {
       tmp.pushScreen(outer1_25.EDIT_FORUM_TAG, { tag });
@@ -657,7 +608,7 @@ prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
   this.updateNavigation(undefined, this.state);
   if (tmp2) {
-    let obj = importDefault(15760);
+    let obj = importDefault(15759);
     const regions = obj.fetchRegions(self.props.guild.id);
   }
   obj = { settings_type: "channel", destination_pane: constants6.CHANNEL_SETTINGS };
@@ -734,7 +685,7 @@ prototype["renderChannelInfo"] = function renderChannelInfo() {
     const GUILD_THREADS_ONLY = constants3.GUILD_THREADS_ONLY;
     hasItem = GUILD_THREADS_ONLY.has(channel.type);
   }
-  let obj = require(15762) /* getIsChannelNameSettingEditable */;
+  let obj = require(15761) /* getIsChannelNameSettingEditable */;
   const isChannelNameSettingEditable = obj.getIsChannelNameSettingEditable({ canManageThread, canManageChannels, canSendMessages, isForumPost, isThread, isChannelOwner });
   if (channel.isForumPost()) {
     const intl4 = tmp3(1236).intl;
@@ -840,7 +791,7 @@ prototype["renderSlowmode"] = function renderSlowmode() {
   if (channel.type !== constants2.GUILD_TEXT) {
     return null;
   }
-  let obj = require(15761) /* getSecondsSliderLabel */;
+  let obj = require(15760) /* getSecondsSliderLabel */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const secondsSliderLabel = obj.getSecondsSliderLabel(channel.rateLimitPerUser, false, intl.string(require(1236) /* getSystemLocale */.t.zvDu4h));
   if (channel.isForumLikeChannel()) {
@@ -872,7 +823,7 @@ prototype["renderSlowmode"] = function renderSlowmode() {
   const intl5 = tmp5(1236).intl;
   obj3[5] = intl5.string(require(1236) /* getSystemLocale */.t.piZgKF);
   obj3[6] = { text: secondsSliderLabel };
-  items2[1] = callback3(require(13337) /* Slider */.Slider, obj3);
+  items2[1] = callback3(require(13336) /* Slider */.Slider, obj3);
   obj[1] = items2;
   obj[2] = callback4(require(5317) /* PressableCard */.Card, obj);
   items.push(callback3(require(5649) /* TableRowGroupTitle */.TableRowGroup, obj, "slowmode-section"));
@@ -911,7 +862,7 @@ prototype["renderAutoArchiveDuration"] = function renderAutoArchiveDuration() {
       obj[2] = autoArchiveDuration;
       obj[3] = channel;
       obj[4] = this.handleAutoArchiveDurationChange;
-      return closure_43(tmp5(15763).AutoArchiveDurationOptions, obj);
+      return closure_43(tmp5(15762).AutoArchiveDurationOptions, obj);
     }
   }
   return null;
@@ -962,7 +913,7 @@ prototype["renderDefaultAutoArchiveDuration"] = function renderDefaultAutoArchiv
         stringResult = string(fyXclY.W3Noi9);
       }
       obj[4] = stringResult;
-      tmp2(require(15763) /* AutoArchiveDurationOptions */.AutoArchiveDurationOptions, obj);
+      tmp2(require(15762) /* AutoArchiveDurationOptions */.AutoArchiveDurationOptions, obj);
       isForumLikeChannelResult = channel.isForumLikeChannel();
     }
   }
@@ -1112,7 +1063,7 @@ prototype["renderBitrateSettings"] = function renderBitrateSettings() {
       obj5[2] = closure_24;
       obj5[3] = bitrateLimit;
       obj5[4] = this.handleBitRateChange;
-      items2[1] = callback3(require(13337) /* Slider */.Slider, obj5);
+      items2[1] = callback3(require(13336) /* Slider */.Slider, obj5);
       obj1[0] = items2;
       obj[2] = callback4(require(5317) /* PressableCard */.Card, obj1);
       items.push(callback3(require(5649) /* TableRowGroupTitle */.TableRowGroup, obj, "bitrate-section"));
@@ -1205,7 +1156,7 @@ prototype["renderUserLimitSettings"] = function renderUserLimitSettings() {
       obj4[1] = Math.min(channel.userLimit, tmp10);
       obj4[3] = tmp10;
       obj4[4] = this.handleUserLimitChange;
-      items2[1] = closure_43(tmp7(13337).Slider, obj4);
+      items2[1] = closure_43(tmp7(13336).Slider, obj4);
       obj[0] = items2;
       obj[2] = callback4(tmp7(5317).Card, obj);
       items.push(closure_43(tmp7(5649).TableRowGroup, obj, "channel-user-limit"));
@@ -1401,7 +1352,7 @@ prototype["renderDefaultForumLayout"] = function renderDefaultForumLayout() {
     obj1[0] = stringResult;
     obj[1] = closure_43(self(5315).TableRow.TrailingText, obj1);
     if (channel.defaultForumLayout === GridSquareIcon(1382).ForumLayout.GRID) {
-      GridSquareIcon = GridSquareIcon(15764).GridSquareIcon;
+      GridSquareIcon = GridSquareIcon(15763).GridSquareIcon;
       obj = {};
       let tmpResult = tmp(GridSquareIcon, obj);
     } else {
@@ -1786,7 +1737,7 @@ prototype["renderCategory"] = function renderCategory() {
         tmp7 = self;
       }
       obj = { icon: null, label: null, trailing: null, arrow: null, onPress: null };
-      obj[0] = callback3(tmp7(15162).FolderPlusIcon, {});
+      obj[0] = callback3(tmp7(15161).FolderPlusIcon, {});
       const intl2 = tmp7(1236).intl;
       obj[1] = intl2.string(tmp7(1236).t.vHCZwr);
       obj = { text: null };

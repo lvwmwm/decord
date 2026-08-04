@@ -25,7 +25,7 @@ function computeOffsetIfDataChanged(arg0) {
   if (direction < 0) {
     const result = absolute / size;
     const result1 = result / previousLength;
-    if (typeof omitZero !== "find") {
+    if (typeof omitZero !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let num3 = 0;
@@ -40,7 +40,7 @@ function computeOffsetIfDataChanged(arg0) {
     result2 = (absolute - size) / size;
     tmp4 = omitZero;
     const result3 = result2 / previousLength;
-    if (typeof omitZero !== "find") {
+    if (typeof omitZero !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let num = 0;
@@ -50,7 +50,7 @@ function computeOffsetIfDataChanged(arg0) {
     parsed = Number.parseInt(String(num)) + 1;
   }
   const result4 = result2 % previousLength;
-  if (typeof tmp4 !== "find") {
+  if (typeof tmp4 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let num4 = 0;

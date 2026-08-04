@@ -1,10 +1,10 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13867
+// Function ID: 13868
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 1942, 1874, 676, 1876, 21, 4285, 589, 5610, 5630, 8071, 13824, 8085, 3931, 8077, 8173, 4253, 13825, 1959, 13826, 13826, 8069, 4812, 1236, 8110, 13827, 2]
+// Dependencies: [19, 1942, 1874, 676, 1876, 21, 4285, 589, 5610, 5630, 8071, 13823, 8085, 3931, 8077, 8173, 4253, 13824, 1959, 13825, 13825, 8069, 4812, 1236, 8110, 13826, 2]
 // Exports: default
 
-// Module 13868 (EditGuildIdentityAvatar)
+// Module 13867 (EditGuildIdentityAvatar)
 import ProfileGIFSelectActionSheet from "ProfileGIFSelectActionSheet";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,9 +1,9 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14235
+// Function ID: 14236
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1874, 7080, 5128, 505, 21, 712, 4285, 4100, 4129, 5131, 7086, 11086, 10374, 1474, 10386, 14237, 7666, 6970, 6975, 7107, 589, 10391, 7103, 7078, 10396, 4221, 10029, 3989, 10403, 9434, 9435, 9439, 7108, 10405, 4253, 14263, 1959, 11087, 6920, 1236, 11080, 10502, 14267, 10376, 10393, 10394, 4701, 9370, 9200, 4149, 500, 9326, 4281, 14268, 5317, 14306, 5236, 4706, 691, 14294, 4693, 8250, 14274, 11083, 14307, 4695, 14310, 7672, 9778, 14295, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 7080, 5128, 505, 21, 712, 4285, 4100, 4129, 5131, 7086, 11086, 10374, 1474, 10386, 14236, 7666, 6970, 6975, 7107, 589, 10391, 7103, 7078, 10396, 4221, 10029, 3989, 10403, 9434, 9435, 9439, 7108, 10405, 4253, 14262, 1959, 11087, 6920, 1236, 11080, 10502, 14266, 10376, 10393, 10394, 4701, 9370, 9200, 4149, 500, 9326, 4281, 14267, 5317, 14305, 5236, 4706, 691, 14293, 4693, 8250, 14273, 11083, 14306, 4695, 14309, 7672, 9778, 14294, 2]
 
-// Module 14236 (ESTIMATED_CARD_HEIGHT)
+// Module 14235 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import useAdContentImpressionTrackerProps from "useAdContentImpressionTrackerProps";
 import importAllResult from "useIsMobileQuestDockRenderedBase";
@@ -527,7 +527,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = useAdContentImpressionTrackerProps;
-                  v0(14267)(obj);
+                  v0(14266)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

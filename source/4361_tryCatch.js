@@ -57,7 +57,7 @@ class AsyncIterator {
               let iter = tmp.arg;
               let value = iter.value;
               if (value) {
-                if (typeof value !== "window") {
+                if (typeof value === "object") {
                   let call = outer1_0.call;
                   if (typeof call === "unknown") {
                     let callResult = tmp8("__await");
@@ -72,7 +72,7 @@ class AsyncIterator {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -87,7 +87,7 @@ class AsyncIterator {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -112,7 +112,7 @@ class AsyncIterator {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -146,7 +146,7 @@ class AsyncIterator {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -174,7 +174,7 @@ class AsyncIterator {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -189,7 +189,7 @@ class AsyncIterator {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -214,7 +214,7 @@ class AsyncIterator {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -248,7 +248,7 @@ class AsyncIterator {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -285,7 +285,7 @@ class AsyncIterator {
                   const iter = tmp2.arg;
                   let fn = iter.value;
                   if (fn) {
-                    if (typeof fn !== "window") {
+                    if (typeof fn === "object") {
                       const call = lib.call;
                       if (typeof call === "unknown") {
                         let callResult = tmp9("__await");
@@ -301,7 +301,7 @@ class AsyncIterator {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -327,7 +327,7 @@ class AsyncIterator {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -358,7 +358,7 @@ class AsyncIterator {
                       const iter = tmp2.arg;
                       let fn = iter.value;
                       if (fn) {
-                        if (typeof fn !== "window") {
+                        if (typeof fn === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -396,7 +396,7 @@ class AsyncIterator {
             let iter = tmp.arg;
             let value = iter.value;
             if (value) {
-              if (typeof value !== "window") {
+              if (typeof value === "object") {
                 let call = outer1_0.call;
                 if (typeof call === "unknown") {
                   let callResult = tmp8("__await");
@@ -411,7 +411,7 @@ class AsyncIterator {
                       const iter = tmp2.arg;
                       const value = iter.value;
                       if (value) {
-                        if (typeof value !== "window") {
+                        if (typeof value === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -426,7 +426,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -441,7 +441,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -466,7 +466,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -500,7 +500,7 @@ class AsyncIterator {
                                     const iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
-                                      if (typeof fn !== "window") {
+                                      if (typeof fn === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -528,7 +528,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -543,7 +543,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -568,7 +568,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -602,7 +602,7 @@ class AsyncIterator {
                                     const iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
-                                      if (typeof fn !== "window") {
+                                      if (typeof fn === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -639,7 +639,7 @@ class AsyncIterator {
                           const iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
-                            if (typeof fn !== "window") {
+                            if (typeof fn === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -655,7 +655,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -681,7 +681,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -712,7 +712,7 @@ class AsyncIterator {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -744,7 +744,7 @@ class AsyncIterator {
                       const iter = tmp2.arg;
                       const value = iter.value;
                       if (value) {
-                        if (typeof value !== "window") {
+                        if (typeof value === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -759,7 +759,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -774,7 +774,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -799,7 +799,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -833,7 +833,7 @@ class AsyncIterator {
                                     const iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
-                                      if (typeof fn !== "window") {
+                                      if (typeof fn === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -861,7 +861,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -876,7 +876,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -901,7 +901,7 @@ class AsyncIterator {
                                           const iter = tmp2.arg;
                                           const value = iter.value;
                                           if (value) {
-                                            if (typeof value !== "window") {
+                                            if (typeof value === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -935,7 +935,7 @@ class AsyncIterator {
                                     const iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
-                                      if (typeof fn !== "window") {
+                                      if (typeof fn === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -972,7 +972,7 @@ class AsyncIterator {
                           const iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
-                            if (typeof fn !== "window") {
+                            if (typeof fn === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -988,7 +988,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -1014,7 +1014,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -1045,7 +1045,7 @@ class AsyncIterator {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -1086,7 +1086,7 @@ class AsyncIterator {
                 const iter = tmp2.arg;
                 let fn = iter.value;
                 if (fn) {
-                  if (typeof fn !== "window") {
+                  if (typeof fn === "object") {
                     const call = lib.call;
                     if (typeof call === "unknown") {
                       let callResult = tmp9("__await");
@@ -1102,7 +1102,7 @@ class AsyncIterator {
                       const iter = tmp2.arg;
                       const value = iter.value;
                       if (value) {
-                        if (typeof value !== "window") {
+                        if (typeof value === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -1117,7 +1117,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -1142,7 +1142,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -1176,7 +1176,7 @@ class AsyncIterator {
                           const iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
-                            if (typeof fn !== "window") {
+                            if (typeof fn === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1205,7 +1205,7 @@ class AsyncIterator {
                       const iter = tmp2.arg;
                       const value = iter.value;
                       if (value) {
-                        if (typeof value !== "window") {
+                        if (typeof value === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -1220,7 +1220,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -1245,7 +1245,7 @@ class AsyncIterator {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -1279,7 +1279,7 @@ class AsyncIterator {
                           const iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
-                            if (typeof fn !== "window") {
+                            if (typeof fn === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1313,7 +1313,7 @@ class AsyncIterator {
                     const iter = tmp2.arg;
                     let fn = iter.value;
                     if (fn) {
-                      if (typeof fn !== "window") {
+                      if (typeof fn === "object") {
                         const call = lib.call;
                         if (typeof call === "unknown") {
                           let callResult = tmp9("__await");
@@ -1329,7 +1329,7 @@ class AsyncIterator {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1355,7 +1355,7 @@ class AsyncIterator {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1386,7 +1386,7 @@ class AsyncIterator {
                         const iter = tmp2.arg;
                         let fn = iter.value;
                         if (fn) {
-                          if (typeof fn !== "window") {
+                          if (typeof fn === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -1507,16 +1507,16 @@ function doneResult() {
 }
 const hasOwnProperty = prototype.hasOwnProperty;
 let items2 = hasOwnProperty;
-let tmp2 = typeof Symbol === "find" ? Symbol : {};
+let tmp2 = typeof Symbol === "function" ? Symbol : {};
 let c1 = tmp3;
 let next = tmp5;
 let regeneratorRuntime = tmp.regeneratorRuntime;
 if (regeneratorRuntime) {
-  if (typeof module !== "window") {
+  if (typeof module === "object") {
     module.exports = regeneratorRuntime;
   }
 } else {
-  let tmp6 = typeof module === "ay" ? module.exports : {};
+  let tmp6 = typeof module === "object" ? module.exports : {};
   tmp.regeneratorRuntime = tmp6;
   regeneratorRuntime = tmp6;
   tmp6.wrap = function wrap(arg0, arg1, arg2, arg3) {
@@ -1650,7 +1650,7 @@ if (regeneratorRuntime) {
                 let iter = tmp.arg;
                 let value = iter.value;
                 if (value) {
-                  if (typeof value !== "window") {
+                  if (typeof value === "object") {
                     let call = outer1_0.call;
                     if (typeof call === "unknown") {
                       let callResult = tmp8("__await");
@@ -1665,7 +1665,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1680,7 +1680,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -1705,7 +1705,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -1739,7 +1739,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -1767,7 +1767,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1782,7 +1782,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -1807,7 +1807,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -1841,7 +1841,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -1878,7 +1878,7 @@ if (regeneratorRuntime) {
                     const iter = tmp2.arg;
                     let fn = iter.value;
                     if (fn) {
-                      if (typeof fn !== "window") {
+                      if (typeof fn === "object") {
                         const call = lib.call;
                         if (typeof call === "unknown") {
                           let callResult = tmp9("__await");
@@ -1894,7 +1894,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1920,7 +1920,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -1951,7 +1951,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         let fn = iter.value;
                         if (fn) {
-                          if (typeof fn !== "window") {
+                          if (typeof fn === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -1989,7 +1989,7 @@ if (regeneratorRuntime) {
               let iter = tmp.arg;
               let value = iter.value;
               if (value) {
-                if (typeof value !== "window") {
+                if (typeof value === "object") {
                   let call = outer1_0.call;
                   if (typeof call === "unknown") {
                     let callResult = tmp8("__await");
@@ -2004,7 +2004,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -2019,7 +2019,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2034,7 +2034,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2059,7 +2059,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2093,7 +2093,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       let fn = iter.value;
                                       if (fn) {
-                                        if (typeof fn !== "window") {
+                                        if (typeof fn === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -2121,7 +2121,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2136,7 +2136,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2161,7 +2161,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2195,7 +2195,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       let fn = iter.value;
                                       if (fn) {
-                                        if (typeof fn !== "window") {
+                                        if (typeof fn === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -2232,7 +2232,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -2248,7 +2248,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2274,7 +2274,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2305,7 +2305,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
-                                  if (typeof fn !== "window") {
+                                  if (typeof fn === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -2337,7 +2337,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -2352,7 +2352,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2367,7 +2367,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2392,7 +2392,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2426,7 +2426,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       let fn = iter.value;
                                       if (fn) {
-                                        if (typeof fn !== "window") {
+                                        if (typeof fn === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -2454,7 +2454,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2469,7 +2469,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2494,7 +2494,7 @@ if (regeneratorRuntime) {
                                             const iter = tmp2.arg;
                                             const value = iter.value;
                                             if (value) {
-                                              if (typeof value !== "window") {
+                                              if (typeof value === "object") {
                                                 const call = lib.call;
                                                 if (typeof call === "unknown") {
                                                   let callResult = tmp9("__await");
@@ -2528,7 +2528,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       let fn = iter.value;
                                       if (fn) {
-                                        if (typeof fn !== "window") {
+                                        if (typeof fn === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -2565,7 +2565,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -2581,7 +2581,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2607,7 +2607,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2638,7 +2638,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
-                                  if (typeof fn !== "window") {
+                                  if (typeof fn === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -2679,7 +2679,7 @@ if (regeneratorRuntime) {
                   const iter = tmp2.arg;
                   let fn = iter.value;
                   if (fn) {
-                    if (typeof fn !== "window") {
+                    if (typeof fn === "object") {
                       const call = lib.call;
                       if (typeof call === "unknown") {
                         let callResult = tmp9("__await");
@@ -2695,7 +2695,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -2710,7 +2710,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2735,7 +2735,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2769,7 +2769,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -2798,7 +2798,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         const value = iter.value;
                         if (value) {
-                          if (typeof value !== "window") {
+                          if (typeof value === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -2813,7 +2813,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2838,7 +2838,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   const value = iter.value;
                                   if (value) {
-                                    if (typeof value !== "window") {
+                                    if (typeof value === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -2872,7 +2872,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -2906,7 +2906,7 @@ if (regeneratorRuntime) {
                       const iter = tmp2.arg;
                       let fn = iter.value;
                       if (fn) {
-                        if (typeof fn !== "window") {
+                        if (typeof fn === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -2922,7 +2922,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -2948,7 +2948,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -2979,7 +2979,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
-                            if (typeof fn !== "window") {
+                            if (typeof fn === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -3048,7 +3048,7 @@ if (regeneratorRuntime) {
           if (next[c1]) {
             const call = tmp2.call;
             return typeof call === "unknown" ? tmp2() : call(next);
-          } else if (typeof next.next === "find") {
+          } else if (typeof next.next === "function") {
             return next;
           } else {
             const _isNaN = isNaN;
@@ -3120,7 +3120,7 @@ if (regeneratorRuntime) {
                     let iter = tmp.arg;
                     let value = iter.value;
                     if (value) {
-                      if (typeof value !== "window") {
+                      if (typeof value === "object") {
                         let call = outer1_0.call;
                         if (typeof call === "unknown") {
                           let callResult = tmp8("__await");
@@ -3135,7 +3135,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
-                                if (typeof value !== "window") {
+                                if (typeof value === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -3150,7 +3150,7 @@ if (regeneratorRuntime) {
                                         const iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
-                                          if (typeof value !== "window") {
+                                          if (typeof value === "object") {
                                             const call = lib.call;
                                             if (typeof call === "unknown") {
                                               let callResult = tmp9("__await");
@@ -3175,7 +3175,7 @@ if (regeneratorRuntime) {
                                         const iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
-                                          if (typeof value !== "window") {
+                                          if (typeof value === "object") {
                                             const call = lib.call;
                                             if (typeof call === "unknown") {
                                               let callResult = tmp9("__await");
@@ -3209,7 +3209,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   let fn = iter.value;
                                   if (fn) {
-                                    if (typeof fn !== "window") {
+                                    if (typeof fn === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -3237,7 +3237,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
-                                if (typeof value !== "window") {
+                                if (typeof value === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -3252,7 +3252,7 @@ if (regeneratorRuntime) {
                                         const iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
-                                          if (typeof value !== "window") {
+                                          if (typeof value === "object") {
                                             const call = lib.call;
                                             if (typeof call === "unknown") {
                                               let callResult = tmp9("__await");
@@ -3277,7 +3277,7 @@ if (regeneratorRuntime) {
                                         const iter = tmp2.arg;
                                         const value = iter.value;
                                         if (value) {
-                                          if (typeof value !== "window") {
+                                          if (typeof value === "object") {
                                             const call = lib.call;
                                             if (typeof call === "unknown") {
                                               let callResult = tmp9("__await");
@@ -3311,7 +3311,7 @@ if (regeneratorRuntime) {
                                   const iter = tmp2.arg;
                                   let fn = iter.value;
                                   if (fn) {
-                                    if (typeof fn !== "window") {
+                                    if (typeof fn === "object") {
                                       const call = lib.call;
                                       if (typeof call === "unknown") {
                                         let callResult = tmp9("__await");
@@ -3348,7 +3348,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         let fn = iter.value;
                         if (fn) {
-                          if (typeof fn !== "window") {
+                          if (typeof fn === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -3364,7 +3364,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
-                                if (typeof value !== "window") {
+                                if (typeof value === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -3390,7 +3390,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               const value = iter.value;
                               if (value) {
-                                if (typeof value !== "window") {
+                                if (typeof value === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -3421,7 +3421,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             let fn = iter.value;
                             if (fn) {
-                              if (typeof fn !== "window") {
+                              if (typeof fn === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -3459,7 +3459,7 @@ if (regeneratorRuntime) {
                   let iter = tmp.arg;
                   let value = iter.value;
                   if (value) {
-                    if (typeof value !== "window") {
+                    if (typeof value === "object") {
                       let call = outer1_0.call;
                       if (typeof call === "unknown") {
                         let callResult = tmp8("__await");
@@ -3474,7 +3474,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -3489,7 +3489,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -3504,7 +3504,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3529,7 +3529,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3563,7 +3563,7 @@ if (regeneratorRuntime) {
                                           const iter = tmp2.arg;
                                           let fn = iter.value;
                                           if (fn) {
-                                            if (typeof fn !== "window") {
+                                            if (typeof fn === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -3591,7 +3591,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -3606,7 +3606,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3631,7 +3631,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3665,7 +3665,7 @@ if (regeneratorRuntime) {
                                           const iter = tmp2.arg;
                                           let fn = iter.value;
                                           if (fn) {
-                                            if (typeof fn !== "window") {
+                                            if (typeof fn === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -3702,7 +3702,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
-                                  if (typeof fn !== "window") {
+                                  if (typeof fn === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -3718,7 +3718,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -3744,7 +3744,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -3775,7 +3775,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
-                                      if (typeof fn !== "window") {
+                                      if (typeof fn === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -3807,7 +3807,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -3822,7 +3822,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -3837,7 +3837,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3862,7 +3862,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3896,7 +3896,7 @@ if (regeneratorRuntime) {
                                           const iter = tmp2.arg;
                                           let fn = iter.value;
                                           if (fn) {
-                                            if (typeof fn !== "window") {
+                                            if (typeof fn === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -3924,7 +3924,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -3939,7 +3939,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3964,7 +3964,7 @@ if (regeneratorRuntime) {
                                                 const iter = tmp2.arg;
                                                 const value = iter.value;
                                                 if (value) {
-                                                  if (typeof value !== "window") {
+                                                  if (typeof value === "object") {
                                                     const call = lib.call;
                                                     if (typeof call === "unknown") {
                                                       let callResult = tmp9("__await");
@@ -3998,7 +3998,7 @@ if (regeneratorRuntime) {
                                           const iter = tmp2.arg;
                                           let fn = iter.value;
                                           if (fn) {
-                                            if (typeof fn !== "window") {
+                                            if (typeof fn === "object") {
                                               const call = lib.call;
                                               if (typeof call === "unknown") {
                                                 let callResult = tmp9("__await");
@@ -4035,7 +4035,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
-                                  if (typeof fn !== "window") {
+                                  if (typeof fn === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -4051,7 +4051,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -4077,7 +4077,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -4108,7 +4108,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     let fn = iter.value;
                                     if (fn) {
-                                      if (typeof fn !== "window") {
+                                      if (typeof fn === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -4149,7 +4149,7 @@ if (regeneratorRuntime) {
                       const iter = tmp2.arg;
                       let fn = iter.value;
                       if (fn) {
-                        if (typeof fn !== "window") {
+                        if (typeof fn === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -4165,7 +4165,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -4180,7 +4180,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -4205,7 +4205,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -4239,7 +4239,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
-                                  if (typeof fn !== "window") {
+                                  if (typeof fn === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -4268,7 +4268,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -4283,7 +4283,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -4308,7 +4308,7 @@ if (regeneratorRuntime) {
                                       const iter = tmp2.arg;
                                       const value = iter.value;
                                       if (value) {
-                                        if (typeof value !== "window") {
+                                        if (typeof value === "object") {
                                           const call = lib.call;
                                           if (typeof call === "unknown") {
                                             let callResult = tmp9("__await");
@@ -4342,7 +4342,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 let fn = iter.value;
                                 if (fn) {
-                                  if (typeof fn !== "window") {
+                                  if (typeof fn === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -4376,7 +4376,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           let fn = iter.value;
                           if (fn) {
-                            if (typeof fn !== "window") {
+                            if (typeof fn === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -4392,7 +4392,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -4418,7 +4418,7 @@ if (regeneratorRuntime) {
                                 const iter = tmp2.arg;
                                 const value = iter.value;
                                 if (value) {
-                                  if (typeof value !== "window") {
+                                  if (typeof value === "object") {
                                     const call = lib.call;
                                     if (typeof call === "unknown") {
                                       let callResult = tmp9("__await");
@@ -4449,7 +4449,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -4487,10 +4487,10 @@ if (regeneratorRuntime) {
         }
       }
       GeneratorFunctionPrototype[tmp5] = "GeneratorFunction";
-      tmp6.isGeneratorFunction = (arg0) => {
-        let constructor = typeof arg0 === "find";
-        if (typeof arg0 !== "three_button_mouse") {
-          constructor = arg0.constructor;
+      tmp6.isGeneratorFunction = (fn) => {
+        let constructor = typeof fn === "function";
+        if (typeof fn === "function") {
+          constructor = fn.constructor;
         }
         let tmp = constructor;
         if (tmp) {
@@ -4538,11 +4538,11 @@ if (regeneratorRuntime) {
         return this;
       };
       tmp6.AsyncIterator = AsyncIterator;
-      tmp6.async = (arg0, arg1, arg2, arg3) => {
-        if (!arg1) {
+      tmp6.async = (arg0, fn) => {
+        if (!fn) {
           let tmp3 = Generator;
         } else {
-          tmp3 = arg1;
+          tmp3 = fn;
         }
         let items = arg3;
         let obj = Object.create(tmp3.prototype);
@@ -4653,7 +4653,7 @@ if (regeneratorRuntime) {
                   let iter = tmp.arg;
                   let value = iter.value;
                   if (value) {
-                    if (typeof value !== "window") {
+                    if (typeof value === "object") {
                       let call = outer1_0.call;
                       if (typeof call === "unknown") {
                         let callResult = tmp8("__await");
@@ -4668,7 +4668,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -4693,7 +4693,7 @@ if (regeneratorRuntime) {
                             const iter = tmp2.arg;
                             const value = iter.value;
                             if (value) {
-                              if (typeof value !== "window") {
+                              if (typeof value === "object") {
                                 const call = lib.call;
                                 if (typeof call === "unknown") {
                                   let callResult = tmp9("__await");
@@ -4727,7 +4727,7 @@ if (regeneratorRuntime) {
                       const iter = tmp2.arg;
                       let fn = iter.value;
                       if (fn) {
-                        if (typeof fn !== "window") {
+                        if (typeof fn === "object") {
                           const call = lib.call;
                           if (typeof call === "unknown") {
                             let callResult = tmp9("__await");
@@ -4761,7 +4761,7 @@ if (regeneratorRuntime) {
                 let iter = tmp.arg;
                 let value = iter.value;
                 if (value) {
-                  if (typeof value !== "window") {
+                  if (typeof value === "object") {
                     let call = outer1_0.call;
                     if (typeof call === "unknown") {
                       let callResult = tmp8("__await");
@@ -4776,7 +4776,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -4791,7 +4791,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -4816,7 +4816,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -4850,7 +4850,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -4878,7 +4878,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -4893,7 +4893,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -4918,7 +4918,7 @@ if (regeneratorRuntime) {
                                     const iter = tmp2.arg;
                                     const value = iter.value;
                                     if (value) {
-                                      if (typeof value !== "window") {
+                                      if (typeof value === "object") {
                                         const call = lib.call;
                                         if (typeof call === "unknown") {
                                           let callResult = tmp9("__await");
@@ -4952,7 +4952,7 @@ if (regeneratorRuntime) {
                               const iter = tmp2.arg;
                               let fn = iter.value;
                               if (fn) {
-                                if (typeof fn !== "window") {
+                                if (typeof fn === "object") {
                                   const call = lib.call;
                                   if (typeof call === "unknown") {
                                     let callResult = tmp9("__await");
@@ -4989,7 +4989,7 @@ if (regeneratorRuntime) {
                     const iter = tmp2.arg;
                     let fn = iter.value;
                     if (fn) {
-                      if (typeof fn !== "window") {
+                      if (typeof fn === "object") {
                         const call = lib.call;
                         if (typeof call === "unknown") {
                           let callResult = tmp9("__await");
@@ -5005,7 +5005,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -5031,7 +5031,7 @@ if (regeneratorRuntime) {
                           const iter = tmp2.arg;
                           const value = iter.value;
                           if (value) {
-                            if (typeof value !== "window") {
+                            if (typeof value === "object") {
                               const call = lib.call;
                               if (typeof call === "unknown") {
                                 let callResult = tmp9("__await");
@@ -5062,7 +5062,7 @@ if (regeneratorRuntime) {
                         const iter = tmp2.arg;
                         let fn = iter.value;
                         if (fn) {
-                          if (typeof fn !== "window") {
+                          if (typeof fn === "object") {
                             const call = lib.call;
                             if (typeof call === "unknown") {
                               let callResult = tmp9("__await");
@@ -5093,7 +5093,7 @@ if (regeneratorRuntime) {
           return nextPromise;
         };
         let nextPromise = iter;
-        if (!generatorFunction.isGeneratorFunction(arg1)) {
+        if (!generatorFunction.isGeneratorFunction(fn)) {
           nextPromise = iter.next().then((done) => {
             if (done.done) {
               let nextResult = done.value;
@@ -5392,7 +5392,7 @@ if (regeneratorRuntime) {
           typeof call === "unknown" ? tmp2() : call(next);
         } else {
           tmp3 = next;
-          if (typeof next.next !== "find") {
+          if (typeof next.next !== "function") {
             const _isNaN = isNaN;
             if (!isNaN(next.length)) {
               c1 = -1;
@@ -5444,7 +5444,7 @@ if (regeneratorRuntime) {
       typeof call === "unknown" ? tmp9() : call(items2);
     } else {
       let tmp10 = items2;
-      if (typeof items2.next === "find") {
+      if (typeof items2.next === "function") {
         tmp7(tmp7(tmp10));
       } else {
         let _isNaN = isNaN;

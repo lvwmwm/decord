@@ -1,9 +1,9 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 13666
+// Function ID: 13667
 // Name: getSubscriptionSkusViaListings
-// Dependencies: [5, 4188, 676, 13668, 13669, 10543, 7508, 7506, 13670, 6771, 2]
+// Dependencies: [5, 4188, 676, 13667, 13668, 10543, 7508, 7506, 13669, 6771, 2]
 
-// Module 13667 (getSubscriptionSkusViaListings)
+// Module 13666 (getSubscriptionSkusViaListings)
 import prototype from "prototype";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -34,105 +34,52 @@ function _getSubscriptionSkusViaListings() {
     let c3 = 0;
     let c4 = 0;
     return (function*(arg0, arg1) {
-      if (c4 === 2) {
-        c4 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === closure_3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_2 = tmp2;
-              closure_2 = undefined;
-              closure_3 = undefined;
-              let found = closure_1.filter((type) => type.type === constants.SUBSCRIPTION_GROUP);
-              closure_3 = 1;
-              c4 = 1;
-              let obj1 = { value: null, done: false };
-              obj1[0] = Promise.all(found.map((() => {
-                let closure_0 = v3((arg0) => {
-                  let closure_0 = arg0;
-                  let c2 = 0;
-                  let c1 = 0;
-                  return (/* F119413 */ function*() { ... })();
-                });
-                return function() {
-                  const self = this;
-                  const apply = closure_0.apply;
-                  if (typeof apply === "unknown") {
-                    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-                  } else {
-                    applyArgumentsResult = apply(self, arguments);
-                  }
-                  return applyArgumentsResult;
-                };
-              })()));
-              return obj1;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            let obj2 = { value: null, done: true };
-            obj2[0] = arg1;
-            return obj2;
+      let closure_2 = tmp2;
+      let found = closure_1.filter((type) => type.type === constants.SUBSCRIPTION_GROUP);
+      closure_2 = yield Promise.all(found.map((() => {
+        let closure_0 = v3((arg0) => {
+          let closure_0 = arg0;
+          let c2 = 0;
+          let c1 = 0;
+          return (/* F119408 */ function*() { ... })();
+        });
+        return function() {
+          const self = this;
+          const apply = closure_0.apply;
+          if (typeof apply === "unknown") {
+            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
           } else {
-            closure_2 = arg1;
-            closure_3 = [];
-            let item = closure_2.forEach((subscription_listings) => {
-              if (null == subscription_listings) {
-                return null;
-              } else {
-                const prop = subscription_listings.subscription_listings;
-                if (null == prop) {
-                  return null;
-                } else {
-                  const items = [];
-                  let item = prop.forEach((subscription_plans) => {
-                    let closure_0 = subscription_plans;
-                    subscription_plans = subscription_plans.subscription_plans;
-                    const item = subscription_plans.forEach(() => { ... });
-                  });
-                  let found = items.filter((price) => {
-                    price = undefined;
-                    if (price != null) {
-                      price = price.price;
-                    }
-                    return null != price;
-                  });
-                  const item1 = found.forEach((arg0) => arr.push(arg0));
-                }
-              }
-            });
-            c4 = 3;
-            obj = { value: null, done: true };
-            obj[0] = closure_3;
-            return obj;
+            applyArgumentsResult = apply(self, arguments);
           }
-        } catch (tmp9) {
-          c4 = tmp;
-          throw tmp9;
+          return applyArgumentsResult;
+        };
+      })()));
+      let item = closure_2.forEach((subscription_listings) => {
+        if (null == subscription_listings) {
+          return null;
+        } else {
+          const prop = subscription_listings.subscription_listings;
+          if (null == prop) {
+            return null;
+          } else {
+            const items = [];
+            let item = prop.forEach((subscription_plans) => {
+              let closure_0 = subscription_plans;
+              subscription_plans = subscription_plans.subscription_plans;
+              const item = subscription_plans.forEach(() => { ... });
+            });
+            let found = items.filter((price) => {
+              price = undefined;
+              if (price != null) {
+                price = price.price;
+              }
+              return null != price;
+            });
+            const item1 = found.forEach((arg0) => arr.push(arg0));
+          }
         }
-      }
+      });
+      return closure_3;
     })();
   });
   const _getSubscriptionSkusViaListings = tmp;
@@ -209,7 +156,7 @@ function _getSkusHandler() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              const result = socket(13669).validateTransportType(socket.transport);
+              const result = socket(13668).validateTransportType(socket.transport);
               callback = socket.application.id;
               if (null == callback) {
                 const obj2 = { errorCode: null };
@@ -225,7 +172,7 @@ function _getSkusHandler() {
                   obj3[0] = tmp65Result.fetchTestSKUsForApplication(callback, false);
                   return obj3;
                 } else {
-                  tmp65Result = tmp65(13670);
+                  tmp65Result = tmp65(13669);
                   constants = 3;
                   c7 = 1;
                   const obj4 = { value: null, done: false };
@@ -234,7 +181,7 @@ function _getSkusHandler() {
                 }
                 obj18 = socket(7508);
               }
-              const obj17 = socket(13669);
+              const obj17 = socket(13668);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {
@@ -331,7 +278,7 @@ function _getSkusHandler() {
 }
 function getEntitlementsHandler(socket) {
   socket = socket.socket;
-  let obj = require(13669) /* validateTransportType */;
+  let obj = require(13668) /* validateTransportType */;
   const result = obj.validateTransportType(socket.transport);
   const id = socket.application.id;
   if (null == id) {
@@ -352,59 +299,9 @@ let obj = {
   handler(arg0) {
     let closure_0 = arg0;
     return callback(function*() {
-      if (c2 === 2) {
-        c2 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c2 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_0 = {};
-              c1 = 1;
-              c2 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_10(outer1_0);
-              return obj1;
-            }
-          } else if (arg0 === 1) {
-            c2 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj2 = { value: null, done: true };
-            obj2[0] = arg1;
-            return obj2;
-          } else {
-            closure_0.skus = arg1;
-            c2 = 3;
-            obj = { value: null, done: true };
-            obj[0] = closure_0;
-            return obj;
-          }
-        } catch (tmp9) {
-          c2 = tmp;
-          throw tmp9;
-        }
-      }
+      let closure_0 = {};
+      closure_0.skus = yield outer1_10(outer1_0);
+      return closure_0;
     })();
   }
 };
@@ -414,59 +311,9 @@ obj = {
   handler(arg0) {
     let closure_0 = arg0;
     return callback(function*() {
-      if (c2 === 2) {
-        c2 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c2 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let closure_0 = {};
-              c1 = 1;
-              c2 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_12(outer1_0);
-              return obj1;
-            }
-          } else if (arg0 === 1) {
-            c2 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj2 = { value: null, done: true };
-            obj2[0] = arg1;
-            return obj2;
-          } else {
-            closure_0.entitlements = arg1;
-            c2 = 3;
-            obj = { value: null, done: true };
-            obj[0] = closure_0;
-            return obj;
-          }
-        } catch (tmp9) {
-          c2 = tmp;
-          throw tmp9;
-        }
-      }
+      let closure_0 = {};
+      closure_0.entitlements = yield outer1_12(outer1_0);
+      return closure_0;
     })();
   }
 };

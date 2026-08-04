@@ -1,10 +1,10 @@
-// Module ID: 11872
-// Function ID: 11873
+// Module ID: 11871
+// Function ID: 11872
 // Name: useGetApplicationFromBotUserId
 // Dependencies: [6989, 676, 589, 2]
 // Exports: default
 
-// Module 11872 (useGetApplicationFromBotUserId)
+// Module 11871 (useGetApplicationFromBotUserId)
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 

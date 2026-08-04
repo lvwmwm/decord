@@ -1,10 +1,10 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12655
+// Function ID: 12656
 // Name: PremiumTier0LogoSmall
 // Dependencies: [19, 21, 3989, 712, 8437, 2]
 // Exports: default
 
-// Module 12656 (PremiumTier0LogoSmall)
+// Module 12655 (PremiumTier0LogoSmall)
 import "noop";
 import { jsx } from "jsxProd";
 

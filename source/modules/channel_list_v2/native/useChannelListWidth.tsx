@@ -1,10 +1,10 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 15048
+// Function ID: 15049
 // Name: useChannelListWidth
 // Dependencies: [10911, 4139, 3989, 712, 691, 2]
 // Exports: default
 
-// Module 15049 (useChannelListWidth)
+// Module 15048 (useChannelListWidth)
 const result = require("map").fileFinishedImporting("modules/channel_list_v2/native/useChannelListWidth.tsx");
 
 export default function useChannelListWidth() {

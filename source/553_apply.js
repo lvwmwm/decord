@@ -4,8 +4,8 @@
 // Dependencies: []
 
 // Module 553 (apply)
-let apply = typeof Reflect === "tee";
-if (typeof Reflect !== "Array") {
+let apply = typeof Reflect !== "undefined";
+if (typeof Reflect !== "undefined") {
   apply = Reflect;
 }
 if (apply) {

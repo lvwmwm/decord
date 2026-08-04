@@ -1,10 +1,10 @@
-// Module ID: 12973
-// Function ID: 12974
+// Module ID: 12972
+// Function ID: 12973
 // Name: ProvisionalAccountNoCallAllowed
 // Dependencies: [19, 676, 21, 4285, 4628, 7716, 1236, 1945, 4628, 2]
 // Exports: default
 
-// Module 12973 (ProvisionalAccountNoCallAllowed)
+// Module 12972 (ProvisionalAccountNoCallAllowed)
 import "noop";
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";

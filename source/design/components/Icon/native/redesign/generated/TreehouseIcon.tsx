@@ -1,10 +1,10 @@
-// Module ID: 13768
-// Function ID: 13769
+// Module ID: 13767
+// Function ID: 13768
 // Name: TreehouseIcon
-// Dependencies: [19, 21, 712, 3988, 13769, 2]
+// Dependencies: [19, 21, 712, 3988, 13768, 2]
 // Exports: TreehouseIcon
 
-// Module 13768 (TreehouseIcon)
+// Module 13767 (TreehouseIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TreehouseIcon = function TreehouseIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13769) /* registerAsset */;
+  obj[0] = require(13768) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

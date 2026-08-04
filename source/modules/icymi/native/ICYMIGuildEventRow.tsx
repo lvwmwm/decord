@@ -1,10 +1,10 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15505
+// Function ID: 15506
 // Name: ICYMIGuildEventRow
-// Dependencies: [19, 17, 6894, 1372, 1862, 21, 15442, 712, 8870, 1236, 8864, 4475, 8867, 8954, 8835, 8871, 5866, 8874, 15483, 11, 4281, 8956, 4798, 1297, 589, 2]
+// Dependencies: [19, 17, 6894, 1372, 1862, 21, 15441, 712, 8870, 1236, 8864, 4475, 8867, 8954, 8835, 8871, 5866, 8874, 15482, 11, 4281, 8956, 4798, 1297, 589, 2]
 // Exports: default
 
-// Module 15506 (ICYMIGuildEventRow)
+// Module 15505 (ICYMIGuildEventRow)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import get_ActivityIndicator from "useGuildScheduledEventUserCount";
 import scheduledEventSort from "scheduledEventSort";
@@ -84,7 +84,7 @@ function ICYMIGuildEventRow(event) {
   }
   const tmp8Result1 = event(8864);
   obj = { actionLabel: null, id: null, interactionType: "guild_event", channelId: null, guildId: null, timestamp: null, onHeaderPress: null, onHeaderLongPress: null, children: null };
-  tmp2Result = tmp2(15483);
+  tmp2Result = tmp2(15482);
   let intl = tmp8(1236).intl;
   obj[0] = intl.string(event(1236).t["6pFsLQ"]);
   obj[1] = event.id;

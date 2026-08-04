@@ -1,9 +1,9 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 15137
+// Function ID: 15138
 // Name: getChannelMode
-// Dependencies: [109, 19, 17, 4371, 3922, 1874, 676, 1379, 4481, 21, 4285, 712, 5125, 11665, 1416, 5236, 15139, 4785, 4745, 589, 1297, 4726, 15140, 4475, 1222, 2]
+// Dependencies: [109, 19, 17, 4371, 3922, 1874, 676, 1379, 4481, 21, 4285, 712, 5125, 11665, 1416, 5236, 15138, 4785, 4745, 589, 1297, 4726, 15139, 4475, 1222, 2]
 
-// Module 15138 (getChannelMode)
+// Module 15137 (getChannelMode)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "BookCheckIcon";
 import sortActivity from "sortActivity";
@@ -78,7 +78,7 @@ function ChannelIcon(arg0) {
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = importDefault(15139);
+      let tmp12 = importDefault(15138);
       let BookCheckIcon = require(4785) /* BookCheckIcon */.BookCheckIcon;
       let tmp9 = require;
     } else {
@@ -128,7 +128,7 @@ function DMChannelIcon(userId) {
   const items3 = [userId];
   const stateFromStoresObject = userId(589).useStateFromStoresObject(items2, () => ({ status: outer1_6.getStatus(userId), isMobileOnline: outer1_6.isMobileOnline(userId), isVROnline: outer1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: "o", size: "relevance", style: "desc", status: "timestamp", isMobileOnline: "asc", isVROnline: "3", statusStyle: "channel-row" };
+  obj = { user: stateFromStores, guildId: "o", size: "moyai", style: "moai", status: "statue_of_liberty", isMobileOnline: "tokyo_tower", isVROnline: "icon", statusStyle: "unicodeEmoji" };
   obj[2] = userId(1297).AvatarSizes.XSMALL_20;
   obj[3] = tmp.dmAvatar;
   obj[4] = status;

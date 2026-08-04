@@ -1,10 +1,10 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12222
+// Function ID: 12223
 // Name: isActivityJoinableOnCurrentPlatform
 // Dependencies: [676, 501, 1577, 5837, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 12223 (isActivityJoinableOnCurrentPlatform)
+// Module 12222 (isActivityJoinableOnCurrentPlatform)
 import ME from "ME";
 
 let c3;

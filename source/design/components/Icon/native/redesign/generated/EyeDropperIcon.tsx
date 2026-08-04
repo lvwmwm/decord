@@ -1,10 +1,10 @@
-// Module ID: 14485
-// Function ID: 14486
+// Module ID: 14484
+// Function ID: 14485
 // Name: EyeDropperIcon
-// Dependencies: [19, 21, 712, 3988, 14486, 2]
+// Dependencies: [19, 21, 712, 3988, 14485, 2]
 // Exports: EyeDropperIcon
 
-// Module 14485 (EyeDropperIcon)
+// Module 14484 (EyeDropperIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const EyeDropperIcon = function EyeDropperIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14486) /* registerAsset */;
+  obj[0] = require(14485) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

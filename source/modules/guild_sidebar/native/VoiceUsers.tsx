@@ -1,10 +1,10 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15142
+// Function ID: 15143
 // Name: AudienceItem
-// Dependencies: [19, 17, 1942, 21, 4285, 712, 9711, 8203, 589, 15144, 9370, 1236, 11801, 4281, 15148, 2]
+// Dependencies: [19, 17, 1942, 21, 4285, 712, 9711, 8203, 589, 15143, 9370, 1236, 11801, 4281, 15147, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15143 (AudienceItem)
+// Module 15142 (AudienceItem)
 import { View } from "get ActivityIndicator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
@@ -90,7 +90,7 @@ let closure_9 = require("noop").memo((voiceState) => {
   obj[9] = voiceState2.sessionId;
   obj[10] = channel;
   obj[11] = isGuest;
-  obj[1] = closure_5(channel(15144), obj, user.id);
+  obj[1] = closure_5(channel(15143), obj, user.id);
   return closure_5(tmp6, obj);
 });
 const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
@@ -115,9 +115,9 @@ export default function VoiceUsers(collapsed) {
     }
     items[1] = tmp2;
     obj[1] = items;
-    tmp = closure_6(importDefault(15148), obj);
+    tmp = closure_6(importDefault(15147), obj);
     const tmp5 = closure_6;
-    const tmp8 = importDefault(15148);
+    const tmp8 = importDefault(15147);
   }
   return tmp;
 };

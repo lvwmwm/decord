@@ -1,10 +1,10 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11897
+// Function ID: 11898
 // Name: ApplicationIconAndName
 // Dependencies: [21, 4285, 712, 1297, 4281, 2]
 // Exports: default
 
-// Module 11898 (ApplicationIconAndName)
+// Module 11897 (ApplicationIconAndName)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 

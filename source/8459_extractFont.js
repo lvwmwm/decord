@@ -47,7 +47,7 @@ function extractFont(propsAndStylesResult) {
   obj[13] = fontVariantLigatures;
   obj[14] = fontVariationSettings;
   const pickNotNilResult = obj.pickNotNil(obj);
-  if (typeof font === "_iter") {
+  if (typeof font !== "string") {
     obj = {};
     const merged = Object.assign(tmp6);
     const merged1 = Object.assign(pickNotNilResult);
@@ -91,14 +91,14 @@ function extractFont(propsAndStylesResult) {
     const obj4 = /italic/;
   }
 }
-function getChild(arg0) {
-  if (typeof arg0 === "y") {
+function getChild(str) {
+  if (typeof str === "string") {
     const obj = { children: null };
     const _String = String;
-    obj[0] = String(arg0);
+    obj[0] = String(str);
     let tmp4 = <closure_3>{null}</closure_3>;
   } else {
-    tmp4 = arg0;
+    tmp4 = str;
   }
   return tmp4;
 }
@@ -110,8 +110,8 @@ let closure_10 = {};
 
 export default function extractText(children) {
   children = children.children;
-  if (typeof children !== "y") {
-    if (typeof children !== "Object") {
+  if (typeof children !== "string") {
+    if (typeof children !== "number") {
       if (Children.count(children) > 1) {
         let mapped = arr.map(children, getChild);
       } else {

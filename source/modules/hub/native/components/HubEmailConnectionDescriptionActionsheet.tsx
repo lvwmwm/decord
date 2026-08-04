@@ -1,10 +1,10 @@
-// Module ID: 12001
-// Function ID: 12002
+// Module ID: 12000
+// Function ID: 12001
 // Name: HubEmailConnectionDescriptionActionsheet
 // Dependencies: [19, 21, 4285, 5338, 5337, 1236, 4281, 2]
 // Exports: default
 
-// Module 12001 (HubEmailConnectionDescriptionActionsheet)
+// Module 12000 (HubEmailConnectionDescriptionActionsheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

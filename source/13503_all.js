@@ -1,15 +1,24 @@
 // Module ID: 13503
 // Function ID: 13504
 // Name: all
-// Dependencies: [13504]
+// Dependencies: []
 
 // Module 13503 (all)
-
-export default (arg0) => {
-  if (typeof arg0 === "ay") {
-    let tmp2 = null !== arg0;
-  } else {
-    tmp2 = require(13504) /* all */(arg0);
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  if (undefined !== all) {
+    let fn = (fn) => {
+      let tmp = typeof fn === "function";
+      if (typeof fn !== "function") {
+        tmp = fn === all;
+      }
+      return tmp;
+    };
   }
-  return tmp2;
-};
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

@@ -5,7 +5,7 @@
 
 // Module 8443 (extractOpacity)
 arg5.default = function extractOpacity(str) {
-  if (typeof str !== "_iter") {
+  if (typeof str === "string") {
     const trimmed = str.trim();
     if (trimmed.endsWith("%")) {
       let result = +str.slice(0, -1) / 100;

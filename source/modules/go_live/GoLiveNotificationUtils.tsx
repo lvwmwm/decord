@@ -1,10 +1,10 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14576
+// Function ID: 14577
 // Name: onGoLiveNotificationSettingsChanged
 // Dependencies: [676, 3925, 3958, 698, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 14577 (onGoLiveNotificationSettingsChanged)
+// Module 14576 (onGoLiveNotificationSettingsChanged)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 

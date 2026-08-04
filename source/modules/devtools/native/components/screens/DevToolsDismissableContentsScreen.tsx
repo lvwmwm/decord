@@ -1,10 +1,10 @@
-// Module ID: 14833
-// Function ID: 14834
+// Module ID: 14832
+// Function ID: 14833
 // Name: DismissableContentsEmpty
-// Dependencies: [32, 19, 17, 1362, 21, 4285, 712, 1358, 14834, 5650, 5649, 9634, 5315, 1355, 4244, 5322, 14835, 5901, 4281, 8638, 5197, 1581, 10703, 589, 14161, 14162, 7666, 2]
+// Dependencies: [32, 19, 17, 1362, 21, 4285, 712, 1358, 14833, 5650, 5649, 9634, 5315, 1355, 4244, 5322, 14834, 5901, 4281, 8638, 5197, 1581, 10703, 589, 14160, 14161, 7666, 2]
 // Exports: default
 
-// Module 14833 (DismissableContentsEmpty)
+// Module 14832 (DismissableContentsEmpty)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getSearchEmptySource";
 import { View } from "SearchField";
@@ -48,7 +48,7 @@ let closure_11 = importAllResult.memo((content) => {
   let start;
   const label = content.content;
   ({ start, end } = content);
-  ({ isDismissed, handleToggleDismissState } = importDefault(14834)(require(1358) /* DismissibleContent */.DismissibleContent[label]));
+  ({ isDismissed, handleToggleDismissState } = importDefault(14833)(require(1358) /* DismissibleContent */.DismissibleContent[label]));
   return callback2(require(5650) /* TableSwitchRow */.TableSwitchRow, { start, end, onValueChange, value, label });
 });
 let closure_12 = importAllResult.memo((arg0) => {
@@ -89,7 +89,7 @@ let closure_12 = importAllResult.memo((arg0) => {
   items2[1] = callback2(require(5315) /* TableRowInner */.TableRow, obj6);
   const obj7 = { label: "Dismiss all dismissible contents", onPress: null, icon: null, trailing: null };
   obj7[1] = require(1355) /* updateUserGuildSettings */.checkAllDismissedContents;
-  obj7[2] = callback2(require(14835) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
+  obj7[2] = callback2(require(14834) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
   obj7[3] = callback2(require(5322) /* TableRowArrow */.TableRowArrow, {});
   items2[2] = callback2(require(5315) /* TableRowInner */.TableRow, obj7);
   obj4[2] = items2;
@@ -160,7 +160,7 @@ export default function DevToolsDismissableContentsScreen() {
   const dailyCapOverridden = stateFromStoresObject.dailyCapOverridden;
   const newUserMinAgeRequiredOverridden = stateFromStoresObject.newUserMinAgeRequiredOverridden;
   let tmp4 = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
-  let tmp9 = callback(ref(14161).useForceBountiesSwipeUpNux(), 2);
+  let tmp9 = callback(ref(14160).useForceBountiesSwipeUpNux(), 2);
   const first2 = tmp9[0];
   callback4 = tmp11;
   const items1 = [tmp9[1]];

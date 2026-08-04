@@ -1,10 +1,10 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15154
+// Function ID: 15155
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 21, 15156, 15157, 5646, 5337, 1236, 5648, 5270, 8306, 4253, 4244, 2]
+// Dependencies: [19, 21, 15155, 15156, 5646, 5337, 1236, 5648, 5270, 8306, 4253, 4244, 2]
 // Exports: openFavoritesGuildActionSheet
 
-// Module 15155 (FavoritesGuildActionSheet)
+// Module 15154 (FavoritesGuildActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -12,9 +12,9 @@ let c3;
 let c4;
 let require = arg1;
 function FavoritesGuildActionSheet() {
-  const tmp2 = importDefault(15156)();
+  const tmp2 = importDefault(15155)();
   const require = tmp2;
-  const tmp3 = importDefault(15157)();
+  const tmp3 = importDefault(15156)();
   importDefault = tmp3;
   let obj = { header: null, children: null };
   obj = { title: null };

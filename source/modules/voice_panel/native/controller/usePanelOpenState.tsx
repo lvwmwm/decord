@@ -1,10 +1,10 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16035
+// Function ID: 16036
 // Name: usePanelOpenState
 // Dependencies: [32, 19, 4495, 11558, 676, 4146, 1231, 10866, 4107, 4120, 10859, 10511, 2]
 // Exports: default
 
-// Module 16036 (usePanelOpenState)
+// Module 16035 (usePanelOpenState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withEqualityFn from "withEqualityFn";

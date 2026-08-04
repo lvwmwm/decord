@@ -1,7 +1,7 @@
 // Module ID: 8861
 // Function ID: 8862
 // Name: openInviteModal
-// Dependencies: [32, 5, 4322, 6894, 5759, 1218, 1942, 1862, 4270, 4502, 1931, 4102, 5122, 676, 678, 5760, 709, 4271, 7679, 8862, 1959, 5200, 5774, 8871, 4269, 4274, 7070, 3976, 698, 10537, 11262, 12127, 10513, 4295, 10882, 12131, 10004, 10375, 1467, 11080, 5133, 12132, 6909, 4479, 4476, 8041, 12133, 2]
+// Dependencies: [32, 5, 4322, 6894, 5759, 1218, 1942, 1862, 4270, 4502, 1931, 4102, 5122, 676, 678, 5760, 709, 4271, 7679, 8862, 1959, 5200, 5774, 8871, 4269, 4274, 7070, 3976, 698, 10537, 11262, 12126, 10513, 4295, 10882, 12130, 10004, 10375, 1467, 11080, 5133, 12131, 6909, 4479, 4476, 8041, 12132, 2]
 // Exports: default
 
 // Module 8861 (openInviteModal)
@@ -76,7 +76,7 @@ function _openInviteModal() {
               return obj;
             } else {
               let obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "ti", invite_instance_id: "<string:2835349914>" };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: "iconsContainer" };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -345,7 +345,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "HermesInternal" };
+            result = { applicationId: "body", skuId: "useStateFromStores" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }

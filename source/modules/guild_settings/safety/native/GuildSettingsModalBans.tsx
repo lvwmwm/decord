@@ -1,10 +1,10 @@
-// Module ID: 16611
-// Function ID: 16612
+// Module ID: 16610
+// Function ID: 16611
 // Name: ConnectedGuildSettingsModalBans
-// Dependencies: [32, 19, 17, 1862, 1874, 8944, 21, 4285, 712, 589, 8334, 3958, 5197, 5200, 8943, 5315, 1297, 5322, 1236, 5638, 3985, 5643, 5731, 16612, 5901, 8749, 8337, 5596, 2]
+// Dependencies: [32, 19, 17, 1862, 1874, 8944, 21, 4285, 712, 589, 8334, 3958, 5197, 5200, 8943, 5315, 1297, 5322, 1236, 5638, 3985, 5643, 5731, 16611, 5901, 8749, 8337, 5596, 2]
 // Exports: default
 
-// Module 16611 (ConnectedGuildSettingsModalBans)
+// Module 16610 (ConnectedGuildSettingsModalBans)
 import _slicedToArray from "_slicedToArray";
 import _copy from "_copy";
 import get_ActivityIndicator from "TableRowArrow";
@@ -62,7 +62,7 @@ export default function ConnectedGuildSettingsModalBans(guildId) {
     paddingBottom = flattenResult.paddingBottom;
   }
   let num = 0;
-  if (typeof paddingBottom !== "V") {
+  if (typeof paddingBottom === "number") {
     num = paddingBottom + tmp6(tmp3[8]).space.PX_16;
   }
   const DeveloperMode = tmp2(tmp3[11]).DeveloperMode;

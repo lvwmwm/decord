@@ -26,7 +26,7 @@ const memoResult = require("noop").memo((date) => {
     nativeEvent = nativeEvent.nativeEvent;
     ({ date, id } = nativeEvent);
     if (null === id) {
-      if (typeof outer1_12 !== "find") {
+      if (typeof outer1_12 !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const _Date = Date;
@@ -68,7 +68,7 @@ const memoResult = require("noop").memo((date) => {
   }, items2);
   let obj = {};
   const merged = Object.assign(date);
-  if (typeof toIsoWithTimeZoneOffset !== "find") {
+  if (typeof toIsoWithTimeZoneOffset !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let toISOStringResult;
@@ -78,7 +78,7 @@ const memoResult = require("noop").memo((date) => {
   obj.date = toISOStringResult;
   obj.id = current;
   const minimumDate = date.minimumDate;
-  if (typeof toIsoWithTimeZoneOffset !== "find") {
+  if (typeof toIsoWithTimeZoneOffset !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let toISOStringResult1;
@@ -87,7 +87,7 @@ const memoResult = require("noop").memo((date) => {
   }
   obj.minimumDate = toISOStringResult1;
   const maximumDate = date.maximumDate;
-  if (typeof toIsoWithTimeZoneOffset !== "find") {
+  if (typeof toIsoWithTimeZoneOffset !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let toISOStringResult2;
@@ -95,7 +95,7 @@ const memoResult = require("noop").memo((date) => {
     toISOStringResult2 = maximumDate.toISOString();
   }
   obj.maximumDate = toISOStringResult2;
-  if (typeof getTimezoneOffsetInMinutes !== "find") {
+  if (typeof getTimezoneOffsetInMinutes !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let prop;
@@ -103,7 +103,7 @@ const memoResult = require("noop").memo((date) => {
     prop = date.timeZoneOffsetInMinutes;
   }
   obj.timezoneOffsetInMinutes = prop;
-  if (typeof getStyle !== "find") {
+  if (typeof getStyle !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let num = 310;

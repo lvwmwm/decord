@@ -1,10 +1,10 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 11896
+// Function ID: 11897
 // Name: ChatProvisionalAccountExplainerCard
-// Dependencies: [19, 17, 21, 4285, 712, 11898, 11899, 5317, 4281, 1236, 7716, 5657, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 11897, 11898, 5317, 4281, 1236, 7716, 5657, 2]
 // Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 11897 (ChatProvisionalAccountExplainerCard)
+// Module 11896 (ChatProvisionalAccountExplainerCard)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export const ChatProvisionalAccountExplainerCard = function ChatProvisionalAccou
   let c1 = "text-sm/semibold";
   const items = [iconSize, "text-sm/semibold"];
   const callback = React.useCallback((application) => outer1_5(textmdsemibold(outer1_2[5]), { application, textVariant: textmdsemibold, iconSize }, application.id), items);
-  let obj = iconSize(11899);
+  let obj = iconSize(11898);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
   obj = { style: items1, children: null };
   items1 = [tmp.chatContainer, style];
@@ -55,7 +55,7 @@ export const UserProfileProvisionalAccountExplainerCard = function UserProfilePr
   const items = [iconSize, "text-md/semibold"];
   ({ style, userId } = iconSize);
   const callback = React.useCallback((application) => outer1_5(textmdsemibold(outer1_2[5]), { application, textVariant: textmdsemibold, iconSize }, application.id), items);
-  let obj = iconSize(11899);
+  let obj = iconSize(11898);
   const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
   obj = { style, title: null, titleIcon: null, children: null };
   const intl = iconSize(1236).intl;

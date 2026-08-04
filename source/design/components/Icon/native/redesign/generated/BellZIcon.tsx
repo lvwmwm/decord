@@ -1,10 +1,10 @@
-// Module ID: 12471
-// Function ID: 12472
+// Module ID: 12470
+// Function ID: 12471
 // Name: BellZIcon
-// Dependencies: [19, 21, 712, 3988, 12472, 2]
+// Dependencies: [19, 21, 712, 3988, 12471, 2]
 // Exports: BellZIcon
 
-// Module 12471 (BellZIcon)
+// Module 12470 (BellZIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BellZIcon = function BellZIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12472) /* registerAsset */;
+  obj[0] = require(12471) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

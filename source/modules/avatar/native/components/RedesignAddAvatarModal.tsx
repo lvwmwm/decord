@@ -1,10 +1,10 @@
-// Module ID: 16396
-// Function ID: 16397
+// Module ID: 16395
+// Function ID: 16396
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8072, 676, 21, 4285, 712, 1581, 589, 8085, 16381, 8114, 4826, 8075, 8077, 4281, 1236, 16390, 4695, 16378, 2]
+// Dependencies: [5, 32, 19, 17, 8072, 676, 21, 4285, 712, 1581, 589, 8085, 16380, 8114, 4826, 8075, 8077, 4281, 1236, 16389, 4695, 16377, 2]
 // Exports: default
 
-// Module 16396 (RedesignAddAvatarModal)
+// Module 16395 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import TouchableUploadAvatar from "TouchableUploadAvatar";

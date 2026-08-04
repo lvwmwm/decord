@@ -1,8 +1,8 @@
-// Module ID: 15584
-// Function ID: 15585
-// Dependencies: [19, 17, 1372, 1862, 3922, 1874, 11623, 8208, 8207, 676, 21, 4285, 712, 1236, 4475, 589, 1348, 4701, 11622, 11647, 3998, 11644, 11625, 8931, 15585, 2]
+// Module ID: 15583
+// Function ID: 15584
+// Dependencies: [19, 17, 1372, 1862, 3922, 1874, 11623, 8208, 8207, 676, 21, 4285, 712, 1236, 4475, 589, 1348, 4701, 11622, 11647, 3998, 11644, 11625, 8931, 15584, 2]
 
-// Module 15584
+// Module 15583
 import importAllResult from "module_11647";
 import { View } from "getFontScale";
 import ensureGuildLoaded from "ensureGuildLoaded";

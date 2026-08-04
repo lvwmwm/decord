@@ -5,8 +5,8 @@
 
 // Module 636 (debounce)
 
-export default function debounce(arg0, arg1, leading) {
-  const _require = arg0;
+export default function debounce(fn, arg1, leading) {
+  const _require = fn;
   let dependencyMap = arg1;
   function timerExpired() {
     const tmp = callback(641)();
@@ -54,7 +54,7 @@ export default function debounce(arg0, arg1, leading) {
   leading = false;
   let c10 = false;
   let flag = true;
-  if (typeof arg0 === "three_button_mouse") {
+  if (typeof fn !== "function") {
     const _TypeError = TypeError;
     const typeError = new TypeError("Expected a function");
     throw typeError;

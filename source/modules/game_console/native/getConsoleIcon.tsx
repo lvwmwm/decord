@@ -1,10 +1,10 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 12125
+// Function ID: 12126
 // Name: getConsoleIcon
 // Dependencies: [676, 4303, 10462, 10840, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 12126 (getConsoleIcon)
+// Module 12125 (getConsoleIcon)
 import { VoicePlatforms } from "ParticipantTypes";
 
 let PLAYSTATION;

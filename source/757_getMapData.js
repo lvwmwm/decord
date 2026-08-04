@@ -5,11 +5,11 @@
 
 // Module 757 (getMapData)
 
-export default function getMapData(__data__) {
+export default function getMapData(__data__, str) {
   __data__ = __data__.__data__;
-  if (require(758) /* isKeyable */(arg1)) {
-    let str = "hash";
-    if (typeof arg1 !== "_iter") {
+  if (require(758) /* isKeyable */(str)) {
+    str = "hash";
+    if (typeof str === "string") {
       str = "string";
     }
     let map = __data__[str];

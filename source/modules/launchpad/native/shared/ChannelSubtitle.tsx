@@ -1,10 +1,10 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 15932
+// Function ID: 15933
 // Name: ChannelSubtitle
-// Dependencies: [19, 9710, 21, 15922, 4281, 15226, 9708, 2]
+// Dependencies: [19, 9710, 21, 15921, 4281, 15225, 9708, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15933 (ChannelSubtitle)
+// Module 15932 (ChannelSubtitle)
 import "noop";
 import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, subtitle } = arg0);
-  let obj = require(15226) /* getChannelSubtitleData */;
+  let obj = require(15225) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -55,7 +55,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75, style: null };
-    obj[0] = importDefault(15922)().messagePreview.text.variant;
+    obj[0] = importDefault(15921)().messagePreview.text.variant;
     let num = 1;
     if (!muted) {
       num = SUBTITLE_OPACITY_NORMAL;
@@ -63,7 +63,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     obj = { opacity: null };
     obj[0] = num;
     obj[4] = obj;
-    if (typeof subtitle === "y") {
+    if (typeof subtitle === "string") {
       obj = {};
       const merged = Object.assign(obj);
       obj.children = subtitle;

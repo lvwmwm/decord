@@ -1,10 +1,10 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15018
+// Function ID: 15019
 // Name: CompanionRemoteAuth
-// Dependencies: [19, 17, 676, 21, 4285, 15020, 5732, 4281, 1236, 4695, 1297, 4124, 1480, 4517, 698, 15021, 15025, 8310, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 15019, 5732, 4281, 1236, 4695, 1297, 4124, 1480, 4517, 698, 15020, 15024, 8310, 2]
 // Exports: CompanionRemoteAuth
 
-// Module 15019 (CompanionRemoteAuth)
+// Module 15018 (CompanionRemoteAuth)
 import noop from "noop";
 import { View } from "AuthFormView";
 import ME from "ME";
@@ -38,14 +38,14 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
     obj[4] = tmp;
     obj.track(constants.LOGIN_SUCCESSFUL, obj);
   }, []);
-  let obj2 = navigation(15021);
+  let obj2 = navigation(15020);
   const state = obj2.useAuthWebsocket(callback, true).state;
   const items = [navigation];
   const callback1 = React.useCallback(() => {
     navigation.goBack();
   }, items);
   fingerprint = null;
-  if (state.step === navigation(15020).RemoteAuthStep.PENDING_REMOTE_INIT) {
+  if (state.step === navigation(15019).RemoteAuthStep.PENDING_REMOTE_INIT) {
     fingerprint = state.fingerprint;
   }
   const items1 = [fingerprint];
@@ -66,9 +66,9 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
   obj[0] = intl.string(navigation(1236).t["7fNJgA"]);
   obj = { style: tmp.statusContainer, children: null };
   const step = state.step;
-  if (navigation(15020).RemoteAuthStep.INITIALIZING !== step) {
-    if (tmp2(15020).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
-      if (tmp2(15020).RemoteAuthStep.PENDING_TICKET === step) {
+  if (navigation(15019).RemoteAuthStep.INITIALIZING !== step) {
+    if (tmp2(15019).RemoteAuthStep.PENDING_REMOTE_INIT !== step) {
+      if (tmp2(15019).RemoteAuthStep.PENDING_TICKET === step) {
         const user = state.user;
         obj1 = { children: null };
         obj2 = { style: null, user: null, size: null, guildId: null };
@@ -99,7 +99,7 @@ export const CompanionRemoteAuth = function CompanionRemoteAuth() {
         items2[3] = tmp11(tmp13, obj6);
         obj1[0] = items2;
         let tmp11Result = callback(closure_8, obj1);
-      } else if (tmp2(15020).RemoteAuthStep.PENDING_LOGIN === step) {
+      } else if (tmp2(15019).RemoteAuthStep.PENDING_LOGIN === step) {
         tmp11Result = tmp11(tmp2(5732).ActivityIndicator, {});
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12190
+// Function ID: 12191
 // Name: TimestampBadge
-// Dependencies: [19, 17, 676, 21, 4285, 12192, 7119, 7611, 9563, 9568, 8684, 12194, 12195, 712, 12196, 8048, 4798, 4281, 11030, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 12191, 7119, 7611, 9563, 9568, 8684, 12193, 12194, 712, 12195, 8048, 4798, 4281, 11030, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 12191 (TimestampBadge)
+// Module 12190 (TimestampBadge)
 import "set";
 import { View } from "Text";
 import { ActivityTypes } from "ME";
@@ -21,7 +21,7 @@ const result = require("ME").fileFinishedImporting("modules/user_profile/native/
 export const TimestampBadge = function TimestampBadge(activity) {
   activity = activity.activity;
   const tmp = callback3();
-  let obj = require(12194) /* useTimestampTickedNow */;
+  let obj = require(12193) /* useTimestampTickedNow */;
   const timestamps = activity.timestamps;
   let start;
   if (timestamps != null) {
@@ -31,7 +31,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
     start = activity.created_at;
   }
   if (null != start) {
-    if (!importDefault(12195)(activity)) {
+    if (!importDefault(12194)(activity)) {
       const timestamps2 = activity.timestamps;
       let end;
       if (timestamps2 != null) {
@@ -56,7 +56,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        let GameControllerIcon = tmp2(12192).HourglassIcon;
+        let GameControllerIcon = tmp2(12191).HourglassIcon;
       } else if (tmp10(7119)(activity)) {
         GameControllerIcon = tmp2(7611).AppsIcon;
       } else if (activity.type === ActivityTypes.WATCHING) {
@@ -78,7 +78,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
       obj2[2] = flag;
       obj1[0] = obj2;
       obj1[1] = tmp.bold;
-      items[1] = callback(tmp2(12196).ActiveTimestamp, obj1);
+      items[1] = callback(tmp2(12195).ActiveTimestamp, obj1);
       obj[1] = items;
       return callback2(View, obj);
     }

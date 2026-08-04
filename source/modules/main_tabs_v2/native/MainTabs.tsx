@@ -1,8 +1,8 @@
-// Module ID: 15034
-// Function ID: 15035
-// Dependencies: [19, 17, 21, 4285, 4132, 8204, 1581, 3997, 4814, 15035, 2]
+// Module ID: 15033
+// Function ID: 15034
+// Dependencies: [19, 17, 21, 4285, 4132, 8204, 1581, 3997, 4814, 15034, 2]
 
-// Module 15034
+// Module 15033
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,7 +21,7 @@ const memoResult = require("noop").memo(function MainTabs() {
   obj = { style: items, children: null };
   items = [callback3().container, { marginLeft: rect.left, marginRight: rect.right }];
   obj = { gradient: tmp, children: null };
-  const items1 = [callback(importDefault(4814), { absolute: true, mix: isCustomThemeActive }), callback(importDefault(15035), {})];
+  const items1 = [callback(importDefault(4814), { absolute: true, mix: isCustomThemeActive }), callback(importDefault(15034), {})];
   obj[1] = items1;
   obj[1] = callback2(require(3997) /* ManaContext */.ThemeContextProvider, obj);
   return callback(View, obj);

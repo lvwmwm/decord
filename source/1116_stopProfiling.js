@@ -80,7 +80,7 @@ function addNativeThreadCpuProfileToHermes(profile, profile2, active_thread_id) 
     let frames = profile2.frames;
     for (const item10032 of frames) {
       frames = arg0.frames;
-      let obj = { function: null, instruction_addr: null, platform: "Array" };
+      let obj = { function: null, instruction_addr: null, platform: "disabled" };
       ({ function: obj[0], instruction_addr: obj[1] } = item10032);
       let arr = frames.push(obj);
       continue;
@@ -123,7 +123,7 @@ export const hermesProfilingIntegration = () => {
   _startCurrentProfile = function _startCurrentProfile(activeSpan) {
     if (obj.isRootSpan(activeSpan)) {
       _finishCurrentProfile();
-      if (typeof _shouldStartProfiling !== "find") {
+      if (typeof _shouldStartProfiling !== "function") {
         HermesBuiltin.throwTypeError();
       }
       let tmpResult = tmp(tmp2[2]);
@@ -142,7 +142,7 @@ export const hermesProfilingIntegration = () => {
         }
         let profilesSampleRate;
         if (undefined) {
-          if (typeof tmp11.profilesSampleRate !== "V") {
+          if (typeof tmp11.profilesSampleRate === "number") {
             profilesSampleRate = tmp11.profilesSampleRate;
           }
         }
@@ -194,7 +194,7 @@ export const hermesProfilingIntegration = () => {
     }
   };
   _finishCurrentProfile = function _finishCurrentProfile() {
-    if (typeof _clearCurrentProfileTimeout !== "find") {
+    if (typeof _clearCurrentProfileTimeout !== "function") {
       HermesBuiltin.throwTypeError();
     }
     if (undefined !== c1) {
@@ -240,7 +240,7 @@ export const hermesProfilingIntegration = () => {
         profile_id = data.profile_id;
       }
     }
-    if (typeof profile_id === "_iter") {
+    if (typeof profile_id !== "string") {
       const debug3 = _undefined(_undefined2[2]).debug;
       debug3.log("[Profiling] cannot find profile for a transaction without a profile context");
       return null;
@@ -305,10 +305,10 @@ export const hermesProfilingIntegration = () => {
           const client = obj2.getClient();
           let tmp5 = client;
           if (client) {
-            tmp5 = typeof client.on === "find";
+            tmp5 = typeof client.on === "function";
           }
           if (tmp5) {
-            if (typeof _startCurrentProfileForActiveTransaction !== "find") {
+            if (typeof _startCurrentProfileForActiveTransaction !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (!_undefined) {

@@ -1,10 +1,10 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 14093
+// Function ID: 14094
 // Name: AuthorizedAppPermissionsScreen
-// Dependencies: [19, 21, 6787, 14095, 2]
+// Dependencies: [19, 21, 6787, 14094, 2]
 // Exports: default
 
-// Module 14094 (AuthorizedAppPermissionsScreen)
+// Module 14093 (AuthorizedAppPermissionsScreen)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -15,5 +15,5 @@ export default function AuthorizedAppPermissionsScreen() {
   let obj = require(6787) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   obj = { oauth2Token: settingNavigationRoute.params.oauth2Token };
-  return jsx(importDefault(14095), { oauth2Token: settingNavigationRoute.params.oauth2Token });
+  return jsx(importDefault(14094), { oauth2Token: settingNavigationRoute.params.oauth2Token });
 };

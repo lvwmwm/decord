@@ -1,9 +1,9 @@
-// Module ID: 16103
-// Function ID: 16104
+// Module ID: 16102
+// Function ID: 16103
 // Name: StreamPreview
-// Dependencies: [5, 32, 19, 17, 1371, 4299, 12901, 4304, 1218, 1372, 3913, 4300, 1874, 4301, 4357, 11558, 11561, 676, 12906, 21, 4285, 11562, 712, 11557, 5096, 4464, 4348, 589, 5663, 4281, 1236, 12226, 5616, 3903, 16094, 1474, 4146, 10533, 10532, 10643, 4812, 16092, 4695, 9267, 503, 7716, 9099, 4474, 5315, 10167, 10318, 5610, 5630, 698, 16060, 4694, 4629, 7819, 15982, 16104, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 4299, 12900, 4304, 1218, 1372, 3913, 4300, 1874, 4301, 4357, 11558, 11561, 676, 12905, 21, 4285, 11562, 712, 11557, 5096, 4464, 4348, 589, 5663, 4281, 1236, 12225, 5616, 3903, 16093, 1474, 4146, 10533, 10532, 10643, 4812, 16091, 4695, 9267, 503, 7716, 9099, 4474, 5315, 10167, 10318, 5610, 5630, 698, 16059, 4694, 4629, 7819, 15981, 16103, 2]
 
-// Module 16103 (StreamPreview)
+// Module 16102 (StreamPreview)
 import set from "set";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import importAllResult from "jsxProd";
@@ -696,7 +696,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
   const context = importAllResult.useContext(guildId(11557));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(15982)(channelId);
+  const tmp2 = guildId(15981)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(589);
   let items = [getVoiceStatesForGuild, init, participantFromServer, reset];
@@ -737,7 +737,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(16104).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(16103).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
   return callback(channelId(4629).TransitionItem, obj);
 });

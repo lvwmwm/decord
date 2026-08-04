@@ -20,7 +20,7 @@ function convertToSharedIndex(arg0) {
   let rawDataLength;
   ({ rawDataLength, index } = arg0);
   ({ loop, autoFillData } = arg0);
-  if (typeof isAutoFillData !== "find") {
+  if (typeof isAutoFillData !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (tmp) {
@@ -43,7 +43,7 @@ function computedOffsetXValueWithAutoFillData(arg0) {
   let value;
   ({ rawDataLength, value, size } = arg0);
   ({ loop, autoFillData } = arg0);
-  if (typeof isAutoFillData !== "find") {
+  if (typeof isAutoFillData !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (tmp) {
@@ -68,7 +68,7 @@ export const computedRealIndexWithAutoFillData = function computedRealIndexWithA
   let loop;
   ({ index, dataLength } = arg0);
   ({ loop, autoFillData } = arg0);
-  if (typeof isAutoFillData !== "find") {
+  if (typeof isAutoFillData !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (tmp) {
@@ -87,7 +87,7 @@ export const computedFillDataWithAutoFillData = function computedFillDataWithAut
   let loop;
   ({ data, dataLength } = arg0);
   ({ loop, autoFillData } = arg0);
-  if (typeof isAutoFillData !== "find") {
+  if (typeof isAutoFillData !== "function") {
     HermesBuiltin.throwTypeError();
   }
   if (tmp) {

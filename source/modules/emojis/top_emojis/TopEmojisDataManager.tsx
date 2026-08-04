@@ -1,9 +1,9 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16282
+// Function ID: 16283
 // Name: handleInteraction
 // Dependencies: [4102, 1877, 5229, 8565, 2]
 
-// Module 16283 (handleInteraction)
+// Module 16282 (handleInteraction)
 import handleConnectionOpen from "handleConnectionOpen";
 import { EmojiInteractionPoint } from "set";
 import "initialize";

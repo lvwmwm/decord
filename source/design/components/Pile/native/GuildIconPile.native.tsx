@@ -1,10 +1,10 @@
-// Module ID: 11888
-// Function ID: 11889
+// Module ID: 11887
+// Function ID: 11888
 // Name: GuildIconPile
-// Dependencies: [19, 21, 5661, 10185, 11889, 8103, 10186, 2]
+// Dependencies: [19, 21, 5661, 10185, 11888, 8103, 10186, 2]
 // Exports: GuildIconPile
 
-// Module 11888 (GuildIconPile)
+// Module 11887 (GuildIconPile)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -25,7 +25,7 @@ export const GuildIconPile = function GuildIconPile(arg0) {
   const countResult = Children.count(children);
   const tmp4 = require(5661) /* GuildIconSizes */.ImageSizes[size];
   let obj = { "aria-label": null, shape: null, size: null, gap: null, depthX: 0.25, children: null };
-  obj[0] = require(11889) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount);
+  obj[0] = require(11888) /* getListSummaryLabel */.getListSummaryLabel(names, totalCount);
   obj[1] = require(8103) /* SolidCutout */.CutoutShape.RoundedRect;
   obj[2] = tmp4;
   let num = 3;

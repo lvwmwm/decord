@@ -1,10 +1,10 @@
-// Module ID: 12622
-// Function ID: 12623
+// Module ID: 12621
+// Function ID: 12622
 // Name: useNextTenureBadge
 // Dependencies: [1876, 9428, 2]
 // Exports: useNextTenureBadge
 
-// Module 12622 (useNextTenureBadge)
+// Module 12621 (useNextTenureBadge)
 import GuildFeatures from "GuildFeatures";
 
 let c3;

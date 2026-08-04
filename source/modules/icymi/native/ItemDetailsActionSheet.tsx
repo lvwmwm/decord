@@ -1,10 +1,10 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15447
+// Function ID: 15448
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 1372, 1862, 8820, 21, 4285, 712, 589, 4475, 5240, 5661, 1297, 8834, 5646, 10112, 15449, 5649, 5315, 2]
+// Dependencies: [19, 17, 1372, 1862, 8820, 21, 4285, 712, 589, 4475, 5240, 5661, 1297, 8834, 5646, 10112, 15448, 5649, 5315, 2]
 // Exports: default
 
-// Module 15448 (ItemDetailsActionSheet)
+// Module 15447 (ItemDetailsActionSheet)
 import "set";
 import { View } from "TableRowGroupTitle";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -82,7 +82,7 @@ export default function ItemDetailsActionSheet(arg0) {
     const obj3 = { channel: null, guild: null };
     obj3[0] = stateFromStores;
     obj3[1] = stateFromStores1;
-    tmp16Result = tmp16(tmp(15449).ChannelScoreSettings, obj3);
+    tmp16Result = tmp16(tmp(15448).ChannelScoreSettings, obj3);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -96,7 +96,7 @@ export default function ItemDetailsActionSheet(arg0) {
     const items4 = [result, ];
     const obj6 = { guild: null };
     obj6[0] = stateFromStores1;
-    items4[1] = tmp16(tmp(15449).GuildScoreSettings, obj6);
+    items4[1] = tmp16(tmp(15448).GuildScoreSettings, obj6);
     obj5[0] = items4;
     tmp15Result = tmp15(closure_8, obj5);
     const tmp19 = closure_8;

@@ -1,10 +1,10 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12135
+// Function ID: 12136
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 4285, 712, 5338, 4693, 5936, 4281, 1236, 12137, 4695, 4253, 2]
+// Dependencies: [19, 21, 4285, 712, 5338, 4693, 5936, 4281, 1236, 12136, 4695, 4253, 2]
 // Exports: default
 
-// Module 12136 (BlockedDomainActionSheet)
+// Module 12135 (BlockedDomainActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -36,7 +36,7 @@ export default function BlockedDomainActionSheet(url) {
   obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.jnHyYU, {});
   items[2] = callback(require(4281) /* Text */.Text, obj2);
   obj[3] = items;
-  const items1 = [callback2(require(4693) /* Stack */.Stack, obj), callback(require(12137) /* URLCallout */.URLCallout, { url: url.url }), ];
+  const items1 = [callback2(require(4693) /* Stack */.Stack, obj), callback(require(12136) /* URLCallout */.URLCallout, { url: url.url }), ];
   const obj3 = { grow: true, text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[1] = intl3.string(require(1236) /* getSystemLocale */.t["/g10LC"]);

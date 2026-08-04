@@ -1,9 +1,9 @@
-// Module ID: 13646
-// Function ID: 13647
+// Module ID: 13645
+// Function ID: 13646
 // Name: items
-// Dependencies: [1376, 1372, 1862, 3913, 1931, 4301, 4188, 676, 8824, 10543, 10548, 12, 13643, 10546, 5096, 4467, 1222, 7679, 2]
+// Dependencies: [1376, 1372, 1862, 3913, 1931, 4301, 4188, 676, 8824, 10543, 10548, 12, 13642, 10546, 5096, 4467, 1222, 7679, 2]
 
-// Module 13646 (items)
+// Module 13645 (items)
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -89,7 +89,7 @@ const items1 = [require("set").OAuth2Scopes.GUILDS_MEMBERS_READ, require("set").
 obj3[RPC_SCOPE_CONFIG.ANY] = items1;
 obj2[0] = obj3;
 obj2[1] = function handler() {
-  const tmp3 = importDefault(13643)();
+  const tmp3 = importDefault(13642)();
   if (null == tmp3) {
     let obj = { errorCode: null };
     obj[0] = constants2.INVALID_CHANNEL;

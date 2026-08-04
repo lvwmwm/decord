@@ -1,10 +1,10 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12538
+// Function ID: 12539
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 4284, 1372, 1862, 4102, 1874, 10324, 4470, 4476, 1236, 7879, 7881, 712, 4472, 12540, 6968, 4500, 4471, 2]
+// Dependencies: [17, 4284, 1372, 1862, 4102, 1874, 10324, 4470, 4476, 1236, 7879, 7881, 712, 4472, 12539, 6968, 4500, 4471, 2]
 // Exports: default
 
-// Module 12539 (createMediaPostPreviewEmbedContent)
+// Module 12538 (createMediaPostPreviewEmbedContent)
 import get_ActivityIndicator from "MAX_THUMBNAIL_COUNT";
 import getUserAgnosticState from "getUserAgnosticState";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -100,7 +100,7 @@ export default function createMediaPostPreviewEmbedContent(arg0, arg1, url) {
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
                 const obj2 = {};
                 const merged = Object.assign(mediaPostEmbedCommonData);
-                obj2.blurredCoverImage = closure_3.resolveAssetSource(tmp10(12540)).uri;
+                obj2.blurredCoverImage = closure_3.resolveAssetSource(tmp10(12539)).uri;
                 obj2.footer = formatToPartsResult;
                 obj2.ctaButtonColor = tmp11;
                 return obj2;

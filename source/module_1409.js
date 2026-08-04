@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 1409
-if (typeof Object.create === "find") {
+if (typeof Object.create === "function") {
   module.exports = function inherits(arg0, super_) {
     if (super_) {
       arg0.super_ = super_;

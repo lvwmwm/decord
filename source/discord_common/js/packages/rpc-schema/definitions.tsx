@@ -1,9 +1,9 @@
-// Module ID: 13652
-// Function ID: 13653
+// Module ID: 13651
+// Function ID: 13652
 // Name: response
-// Dependencies: [13653, 8824, 2]
+// Dependencies: [13652, 8824, 2]
 
-// Module 13652 (response)
+// Module 13651 (response)
 let obj = { request: "Array", response: 0 };
 obj[1] = function response(string) {
   const obj = { image_url: null };
@@ -45,8 +45,8 @@ obj = {
     let arrayResult = string.array();
     const stringResult5 = string.string();
     const stringResult6 = string.string();
-    const items = [...require(13653) /* RPCCommands */.joiEnum(require(8824) /* set */.OAuth2Scopes)];
-    const obj12 = require(13653) /* RPCCommands */;
+    const items = [...require(13652) /* RPCCommands */.joiEnum(require(8824) /* set */.OAuth2Scopes)];
+    const obj12 = require(13652) /* RPCCommands */;
     obj[2] = arrayResult.items(stringResult6.valid.apply(items)).required();
     const itemsResult = arrayResult.items(stringResult6.valid.apply(items));
     obj[3] = string.string().required();
@@ -90,7 +90,7 @@ obj4[1] = function response(array) {
   obj = { status: null, activity: null };
   const numberResult = array.number();
   obj[0] = array.string().required();
-  if (typeof Activity !== "find") {
+  if (typeof Activity !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const obj1 = { relationships: null };
@@ -261,11 +261,11 @@ function ButtonComponent(arg0) {
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export const RPCCommandSchemas = {
-  [require(13653).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
-  [require(13653).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
-  [require(13653).RPCCommand.AUTHENTICATE]: obj,
-  [require(13653).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
-  [require(13653).RPCCommand.SHARE_INTERACTION]: {
+  [require(13652).RPCCommand.INITIATE_IMAGE_UPLOAD]: obj,
+  [require(13652).RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj,
+  [require(13652).RPCCommand.AUTHENTICATE]: obj,
+  [require(13652).RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj1,
+  [require(13652).RPCCommand.SHARE_INTERACTION]: {
     request(string) {
       let obj = { command: null, options: null, content: null, require_launch_channel: null, preview_image: null, components: null, pid: null };
       obj[0] = string.string().required();
@@ -288,7 +288,7 @@ export const RPCCommandSchemas = {
       obj[2] = string.number().required();
       obj[4] = string.object(obj);
       arrayResult = string.array();
-      if (typeof ActionRowComponent !== "find") {
+      if (typeof ActionRowComponent !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const obj1 = { type: null, components: null };
@@ -297,7 +297,7 @@ export const RPCCommandSchemas = {
       obj1[0] = validResult.required();
       const numberResult2 = string.number();
       const arrayResult1 = string.array();
-      if (typeof ButtonComponent !== "find") {
+      if (typeof ButtonComponent !== "function") {
         HermesBuiltin.throwTypeError();
       }
       const obj2 = { type: null, style: null, label: null, custom_id: null };
@@ -325,7 +325,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13653).RPCCommand.SHARE_LINK]: {
+  [require(13652).RPCCommand.SHARE_LINK]: {
     request(string) {
       const obj = { custom_id: null, message: null, link_id: null };
       obj[0] = string.string().max(64);
@@ -346,8 +346,8 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13653).RPCCommand.GET_RELATIONSHIPS]: obj4,
-  [require(13653).RPCCommand.INVITE_USER_EMBEDDED]: {
+  [require(13652).RPCCommand.GET_RELATIONSHIPS]: obj4,
+  [require(13652).RPCCommand.INVITE_USER_EMBEDDED]: {
     request(string) {
       const obj = { user_id: null, content: null };
       obj[0] = string.string().required();
@@ -358,7 +358,7 @@ export const RPCCommandSchemas = {
     },
     response: "a"
   },
-  [require(13653).RPCCommand.GET_USER]: {
+  [require(13652).RPCCommand.GET_USER]: {
     request(string) {
       const obj = { id: null };
       const stringResult = string.string();
@@ -369,7 +369,7 @@ export const RPCCommandSchemas = {
       return User(arg0).allow(null);
     }
   },
-  [require(13653).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
+  [require(13652).RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: {
     request(string) {
       const obj = { quest_id: null };
       obj[0] = string.string().required();
@@ -386,7 +386,7 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13653).RPCCommand.QUEST_START_TIMER]: {
+  [require(13652).RPCCommand.QUEST_START_TIMER]: {
     request(string) {
       const obj = { quest_id: null };
       obj[0] = string.string().required();
@@ -398,6 +398,6 @@ export const RPCCommandSchemas = {
       return obj;
     }
   },
-  [require(13653).RPCCommand.GET_QUEST]: obj9,
-  [require(13653).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
+  [require(13652).RPCCommand.GET_QUEST]: obj9,
+  [require(13652).RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj10
 };

@@ -1,10 +1,10 @@
-// Module ID: 12509
-// Function ID: 12510
+// Module ID: 12508
+// Function ID: 12509
 // Name: createGuildScheduledEventEmbed
-// Dependencies: [32, 17, 6894, 1415, 1372, 1862, 3922, 1874, 10906, 1378, 7116, 7863, 7865, 8880, 8870, 8864, 9061, 1236, 7868, 9012, 7855, 712, 9793, 4275, 8867, 4475, 8954, 8875, 12510, 8862, 1411, 2]
+// Dependencies: [32, 17, 6894, 1415, 1372, 1862, 3922, 1874, 10906, 1378, 7116, 7863, 7865, 8880, 8870, 8864, 9061, 1236, 7868, 9012, 7855, 712, 9793, 4275, 8867, 4475, 8954, 8875, 12509, 8862, 1411, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 12509 (createGuildScheduledEventEmbed)
+// Module 12508 (createGuildScheduledEventEmbed)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import scheduledEventSort from "scheduledEventSort";
@@ -159,7 +159,7 @@ function createGuildScheduledEventEmbed(type) {
   }
   obj1.badgeCount = toLocaleStringResult;
   const tmpResult1 = importDefault(8875);
-  obj1.badgeIcon = require(7865) /* frozen */.getAssetUriForEmbed(importDefault(12510));
+  obj1.badgeIcon = require(7865) /* frozen */.getAssetUriForEmbed(importDefault(12509));
   let assetUriForEmbed4;
   if (null != eventLocationIconSource) {
     assetUriForEmbed4 = tmp7(7865).getAssetUriForEmbed(eventLocationIconSource);

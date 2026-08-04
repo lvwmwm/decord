@@ -1,7 +1,7 @@
 // Module ID: 7676
 // Function ID: 7677
 // Name: getButtonActionHandler
-// Dependencies: [7266, 1876, 676, 7274, 7677, 6795, 5770, 12582, 5925, 2]
+// Dependencies: [7266, 1876, 676, 7274, 7677, 6795, 5770, 12581, 5925, 2]
 // Exports: getButtonActionHandler
 
 // Module 7676 (getButtonActionHandler)

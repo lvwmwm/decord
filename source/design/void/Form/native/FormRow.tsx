@@ -87,7 +87,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
   c8 = tmp;
   let obj = trailing;
   if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
-    if (typeof label === "find") {
+    if (typeof label === "function") {
       let tmp15 = null;
       if (null != label) {
         let tmp16 = label;
@@ -100,14 +100,14 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
     } else {
       tmp18 = label;
     }
-    if (typeof subLabel !== "find") {
+    if (typeof subLabel !== "function") {
       if (!obj.isValidElement(subLabel)) {
         let tmp19 = null;
         if (null != subLabel) {
           tmp19 = subLabel;
         }
       }
-      if (typeof leading === "find") {
+      if (typeof leading === "function") {
         let tmp23 = null;
         if (null != leading) {
           let tmp24 = leading;
@@ -120,7 +120,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
       } else {
         tmp26 = leading;
       }
-      if (typeof trailing === "find") {
+      if (typeof trailing === "function") {
         let tmp27 = null;
         if (null != trailing) {
           let tmp28 = trailing;
@@ -167,7 +167,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
     tmp19 = tmp20;
   } else {
     function renderInnerView() {
-      if (typeof label !== "find") {
+      if (typeof label !== "function") {
         if (!trailing.isValidElement(tmp)) {
           let obj = { numberOfLines: null, text: null, style: null };
           obj[0] = numberOfLines;
@@ -175,7 +175,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
           obj[2] = closure_5;
           let tmp7 = outer1_5(leading(subLabel[8]), obj);
         }
-        if (typeof subLabel !== "find") {
+        if (typeof subLabel !== "function") {
           if (!trailing.isValidElement(tmp12)) {
             let tmp13 = null;
             if (null != tmp12) {
@@ -185,7 +185,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
               tmp13 = outer1_5(leading(subLabel[9]), obj);
             }
           }
-          if (typeof leading === "find") {
+          if (typeof leading === "function") {
             let tmp23 = null;
             if (null != tmp22) {
               let tmp25 = tmp22;
@@ -198,7 +198,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((label) => {
           } else {
             tmp27 = tmp22;
           }
-          if (typeof trailing === "find") {
+          if (typeof trailing === "function") {
             let tmp29 = null;
             if (null != tmp28) {
               let tmp31 = tmp28;
@@ -388,7 +388,7 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
   c8 = tmp;
   let obj = trailing;
   if (trailing.useContext(label(subLabel[6]).RedesignCompatContext)) {
-    if (typeof label === "find") {
+    if (typeof label === "function") {
       let tmp15 = null;
       if (null != label) {
         let tmp16 = label;
@@ -401,14 +401,14 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
     } else {
       tmp18 = label;
     }
-    if (typeof subLabel !== "find") {
+    if (typeof subLabel !== "function") {
       if (!obj.isValidElement(subLabel)) {
         let tmp19 = null;
         if (null != subLabel) {
           tmp19 = subLabel;
         }
       }
-      if (typeof leading === "find") {
+      if (typeof leading === "function") {
         let tmp23 = null;
         if (null != leading) {
           let tmp24 = leading;
@@ -421,7 +421,7 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
       } else {
         tmp26 = leading;
       }
-      if (typeof trailing === "find") {
+      if (typeof trailing === "function") {
         let tmp27 = null;
         if (null != trailing) {
           let tmp28 = trailing;
@@ -468,7 +468,7 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
     tmp19 = tmp20;
   } else {
     function renderInnerView() {
-      if (typeof label !== "find") {
+      if (typeof label !== "function") {
         if (!trailing.isValidElement(tmp)) {
           let obj = { numberOfLines: null, text: null, style: null };
           obj[0] = numberOfLines;
@@ -476,7 +476,7 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
           obj[2] = closure_5;
           let tmp7 = outer1_5(leading(subLabel[8]), obj);
         }
-        if (typeof subLabel !== "find") {
+        if (typeof subLabel !== "function") {
           if (!trailing.isValidElement(tmp12)) {
             let tmp13 = null;
             if (null != tmp12) {
@@ -486,7 +486,7 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
               tmp13 = outer1_5(leading(subLabel[9]), obj);
             }
           }
-          if (typeof leading === "find") {
+          if (typeof leading === "function") {
             let tmp23 = null;
             if (null != tmp22) {
               let tmp25 = tmp22;
@@ -499,7 +499,7 @@ const forwardRefResult = importAllResult.forwardRef((label) => {
           } else {
             tmp27 = tmp22;
           }
-          if (typeof trailing === "find") {
+          if (typeof trailing === "function") {
             let tmp29 = null;
             if (null != tmp28) {
               let tmp31 = tmp28;

@@ -1,9 +1,9 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16424
+// Function ID: 16425
 // Name: handleChange
-// Dependencies: [17, 1371, 4304, 4356, 9071, 500, 16426, 9072, 5229, 2]
+// Dependencies: [17, 1371, 4304, 4356, 9071, 500, 16425, 9072, 5229, 2]
 
-// Module 16425 (handleChange)
+// Module 16424 (handleChange)
 import participantFromServer from "participantFromServer";
 import reset from "reset";
 import createRTCConnection from "createRTCConnection";

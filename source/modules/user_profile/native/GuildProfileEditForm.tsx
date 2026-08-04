@@ -1,10 +1,10 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13865
+// Function ID: 13866
 // Name: EditGuildProfileBanner
-// Dependencies: [109, 19, 17, 1942, 6989, 5658, 676, 1876, 21, 3931, 5610, 5630, 13808, 4253, 13809, 1959, 8077, 1236, 8075, 8173, 8757, 13819, 5913, 5310, 712, 9380, 13861, 589, 8117, 9366, 8758, 8085, 13216, 13867, 8745, 8754, 4281, 3997, 13868, 9367, 9368, 9387, 13828, 4124, 13829, 13834, 13840, 13841, 13845, 13849, 13859, 8432, 8433, 2]
+// Dependencies: [109, 19, 17, 1942, 6989, 5658, 676, 1876, 21, 3931, 5610, 5630, 13807, 4253, 13808, 1959, 8077, 1236, 8075, 8173, 8757, 13818, 5913, 5310, 712, 9380, 13860, 589, 8117, 9366, 8758, 8085, 13215, 13866, 8745, 8754, 4281, 3997, 13867, 9367, 9368, 9387, 13827, 4124, 13828, 13833, 13839, 13840, 13844, 13848, 13858, 8432, 8433, 2]
 // Exports: default
 
-// Module 13866 (EditGuildProfileBanner)
+// Module 13865 (EditGuildProfileBanner)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import usePremiumUpsellConfig from "usePremiumUpsellConfig";
 import get_ActivityIndicator from "getSystemLocale";
@@ -92,7 +92,7 @@ function EditGuildProfileBanner(user) {
   let intl = tmp5(1236).intl;
   obj[8] = intl.string(user(1236).t["95hPAe"]);
   obj[9] = disabled;
-  obj[1] = closure_18(importDefault(13808), obj);
+  obj[1] = closure_18(importDefault(13807), obj);
   return closure_18(user(5610).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];

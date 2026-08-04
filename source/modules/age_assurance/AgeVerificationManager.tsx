@@ -1,9 +1,9 @@
-// Module ID: 16250
-// Function ID: 16251
+// Module ID: 16249
+// Function ID: 16250
 // Name: handleMessageCreate
 // Dependencies: [1372, 4502, 1931, 1874, 676, 7702, 3, 6826, 5829, 5229, 1906, 3964, 5108, 4955, 2]
 
-// Module 16250 (handleMessageCreate)
+// Module 16249 (handleMessageCreate)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import handleConnectionOpen from "handleConnectionOpen";

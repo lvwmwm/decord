@@ -1,10 +1,10 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14154
+// Function ID: 14155
 // Name: ItemSeparator
-// Dependencies: [32, 19, 17, 7079, 5128, 676, 1369, 21, 501, 712, 4285, 4146, 1474, 1581, 14156, 10374, 10895, 10896, 589, 14159, 14160, 514, 7107, 7097, 14162, 14163, 10376, 7108, 5133, 10501, 14153, 14164, 14194, 14195, 14196, 11090, 14197, 7666, 4706, 14201, 14202, 4009, 7668, 2]
+// Dependencies: [32, 19, 17, 7079, 5128, 676, 1369, 21, 501, 712, 4285, 4146, 1474, 1581, 14155, 10374, 10895, 10896, 589, 14158, 14159, 514, 7107, 7097, 14161, 14162, 10376, 7108, 5133, 10501, 14152, 14163, 14193, 14194, 14195, 11090, 14196, 7666, 4706, 14200, 14201, 4009, 7668, 2]
 // Exports: default
 
-// Module 14155 (ItemSeparator)
+// Module 14154 (ItemSeparator)
 import BountiesScrollPromptFooter from "BountiesScrollPromptFooter";
 import getRevealProgress from "getRevealProgress";
 import get_ActivityIndicator from "apexExperiment";
@@ -451,7 +451,7 @@ function BountiesModalContentScrollInner(arg0) {
       if (c31.get()) {
         tmp3 = c25;
         tmp2 = c30;
-        if (typeof c25 !== "find") {
+        if (typeof c25 !== "function") {
           str = "Trying to call a non-function";
           throwTypeErrorResult = HermesBuiltin.throwTypeError();
         }
@@ -473,7 +473,7 @@ function BountiesModalContentScrollInner(arg0) {
     constructor(arg0) {
       result = c31.set(true);
       tmp2 = c30;
-      if (typeof c25 !== "find") {
+      if (typeof c25 !== "function") {
         str = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }

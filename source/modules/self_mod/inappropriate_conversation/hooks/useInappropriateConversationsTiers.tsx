@@ -1,10 +1,10 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12045
+// Function ID: 12046
 // Name: useInappropriateConversationsTiers
 // Dependencies: [1874, 9587, 10260, 589, 10259, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 12046 (useInappropriateConversationsTiers)
+// Module 12045 (useInappropriateConversationsTiers)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 

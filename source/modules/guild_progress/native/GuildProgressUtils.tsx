@@ -1,7 +1,7 @@
 // Module ID: 11747
 // Function ID: 11748
 // Name: useIOSCompletionStates
-// Dependencies: [1932, 1862, 3913, 11748, 11742, 676, 4253, 11749, 1959, 11750, 589, 11745, 11860, 1236, 11, 2]
+// Dependencies: [1932, 1862, 3913, 11748, 11742, 676, 4253, 11749, 1959, 11750, 589, 11745, 11859, 1236, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
 // Module 11747 (useIOSCompletionStates)
@@ -68,7 +68,7 @@ function useIOSCompletionStates(guild) {
   const items6 = [tmp8];
   const stateFromStores4 = _require(589).useStateFromStores(items6, () => outer1_6.getProgress(guild.id));
   if (stateFromStores) {
-    const ServerSetupBoostCtaExperiment = tmp(11860).ServerSetupBoostCtaExperiment;
+    const ServerSetupBoostCtaExperiment = tmp(11859).ServerSetupBoostCtaExperiment;
     const enabled = ServerSetupBoostCtaExperiment.getConfig({ location: "GuildProgress" }).enabled;
     const items7 = [guildPopulated, guildPersonalized, stateFromStores2];
     if (enabled) {

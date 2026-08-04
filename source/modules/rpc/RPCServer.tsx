@@ -1,9 +1,9 @@
-// Module ID: 13697
-// Function ID: 13698
+// Module ID: 13696
+// Function ID: 13697
 // Name: registerTransport
-// Dependencies: [5, 4188, 676, 12, 10549, 10543, 13675, 698, 38, 687, 2]
+// Dependencies: [5, 4188, 676, 12, 10549, 10543, 13674, 698, 38, 687, 2]
 
-// Module 13697 (registerTransport)
+// Module 13696 (registerTransport)
 import prototype from "prototype";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -91,7 +91,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
         } else if (self(authorization[6])(authorization.authorization.scopes, tmp25.scope)) {
           obj = { command: null, scope: null, application_id: null, socket_scope: null };
           obj[0] = cmd;
-          if (typeof tmp25.scope === "ay") {
+          if (typeof tmp25.scope === "object") {
             const _JSON = JSON;
             let scope = JSON.stringify(tmp25.scope);
           } else {
@@ -126,7 +126,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
         } else if (self(authorization[6])(authorization.authorization.scopes, tmp25.scope)) {
           obj = { command: null, scope: null, application_id: null, socket_scope: null };
           obj[0] = cmd;
-          if (typeof tmp25.scope === "ay") {
+          if (typeof tmp25.scope === "object") {
             const _JSON = JSON;
             let scope = JSON.stringify(tmp25.scope);
           } else {
@@ -249,7 +249,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
         } else if (self(authorization[6])(authorization.authorization.scopes, tmp25.scope)) {
           obj = { command: null, scope: null, application_id: null, socket_scope: null };
           obj[0] = cmd;
-          if (typeof tmp25.scope === "ay") {
+          if (typeof tmp25.scope === "object") {
             const _JSON = JSON;
             let scope = JSON.stringify(tmp25.scope);
           } else {
@@ -385,7 +385,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
         } else if (self(authorization[6])(authorization.authorization.scopes, tmp25.scope)) {
           obj = { command: null, scope: null, application_id: null, socket_scope: null };
           obj[0] = cmd;
-          if (typeof tmp25.scope === "ay") {
+          if (typeof tmp25.scope === "object") {
             const _JSON = JSON;
             let scope = JSON.stringify(tmp25.scope);
           } else {
@@ -687,13 +687,13 @@ prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATION
     const subscriptions = this.subscriptions;
     const item = subscriptions.forEach((evt) => {
       if (evt.evt === RELATIONSHIP_UPDATE) {
-        let tmp5 = typeof prototype === "find";
-        if (typeof prototype !== "three_button_mouse") {
+        let tmp5 = typeof prototype === "function";
+        if (typeof prototype === "function") {
           tmp5 = !tmp13(evt);
         }
         if (!tmp5) {
-          let tmp = typeof tmp13 === "ay";
-          if (typeof tmp13 !== "window") {
+          let tmp = typeof tmp13 === "object";
+          if (typeof tmp13 === "object") {
             let args = evt.args;
             if (args == null) {
               args = {};
@@ -706,7 +706,7 @@ prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATION
           tmp5 = tmp;
         }
         if (!tmp5) {
-          if (typeof callback !== "three_button_mouse") {
+          if (typeof callback === "function") {
             callback = tmp6(evt);
           }
           self.dispatch(evt.socket, null, outer1_6.DISPATCH, evt.evt, callback);
@@ -739,7 +739,7 @@ prototype["storeWait"] = function storeWait(socket, arg1, timeout) {
         let closure_0 = arg0;
         const socket = closure_1;
         const timeout = setTimeout(() => {
-          if (typeof closure_0 !== "find") {
+          if (typeof closure_0 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           outer1_5.removeSubscription(callback2, outer1_9, { uniqueId: outer1_4 });
@@ -756,7 +756,7 @@ prototype["storeWait"] = function storeWait(socket, arg1, timeout) {
         });
       });
       return promise.then((arg0) => {
-        if (typeof removeSubscription !== "find") {
+        if (typeof removeSubscription !== "function") {
           HermesBuiltin.throwTypeError();
         }
         self.removeSubscription(closure_1, outer1_9, { uniqueId: closure_4 });

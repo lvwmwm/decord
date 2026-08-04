@@ -1,10 +1,10 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 14912
+// Function ID: 14913
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1369, 5128, 21, 1348, 4812, 4281, 1236, 9916, 1358, 698, 11080, 5131, 14914, 9340, 4253, 10066, 1959, 5630, 6909, 10065, 4101, 4710, 4285, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1369, 5128, 21, 1348, 4812, 4281, 1236, 9916, 1358, 698, 11080, 5131, 14913, 9340, 4253, 10066, 1959, 5630, 6909, 10065, 4101, 4710, 4285, 712, 2]
 // Exports: default
 
-// Module 14913 (BalanceWidget)
+// Module 14912 (BalanceWidget)
 import ref from "ref";
 import { View } from "module_9340";
 import { AnalyticEvents } from "ME";

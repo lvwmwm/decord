@@ -1,9 +1,9 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15807
+// Function ID: 15808
 // Name: UnmuteOptions
 // Dependencies: [19, 17, 1372, 1862, 3922, 1874, 676, 21, 4285, 712, 7144, 5230, 5225, 9735, 5315, 1297, 9737, 4281, 1236, 4475, 9738, 1480, 10109, 9734, 1481, 647, 8193, 1581, 2]
 
-// Module 15808 (UnmuteOptions)
+// Module 15807 (UnmuteOptions)
 import importAllResult from "computeChannelName";
 import { View } from "Text";
 import ensureGuildLoaded from "ensureGuildLoaded";

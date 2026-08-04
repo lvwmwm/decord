@@ -1,9 +1,9 @@
-// Module ID: 12906
-// Function ID: 12907
+// Module ID: 12905
+// Function ID: 12906
 // Name: GdmWarningMedium
 // Dependencies: [2]
 
-// Module 12906 (GdmWarningMedium)
+// Module 12905 (GdmWarningMedium)
 const result = require("set").fileFinishedImporting("modules/shared_space_warnings/SharedSpaceWarningConstants.tsx");
 
 export const GdmWarningMedium = { BANNER: "BANNER", MODAL: "MODAL", ACTION_SHEET: "ACTION_SHEET" };

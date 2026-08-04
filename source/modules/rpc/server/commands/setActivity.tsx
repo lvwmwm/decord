@@ -1,9 +1,9 @@
-// Module ID: 13665
-// Function ID: 13666
+// Module ID: 13664
+// Function ID: 13665
 // Name: RPC_LOCAL_SCOPE
 // Dependencies: [4322, 4188, 676, 8824, 10546, 9571, 10543, 709, 10355, 10509, 12, 687, 8051, 698, 2]
 
-// Module 13665 (RPC_LOCAL_SCOPE)
+// Module 13664 (RPC_LOCAL_SCOPE)
 import addApplication from "addApplication";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";

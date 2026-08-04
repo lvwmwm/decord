@@ -1,10 +1,10 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12167
+// Function ID: 12168
 // Name: useMediaViewerPanGestureConfig
 // Dependencies: [19, 4146, 8773, 8769, 4694, 8302, 5368, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 12168 (useMediaViewerPanGestureConfig)
+// Module 12167 (useMediaViewerPanGestureConfig)
 import noop from "noop";
 
 const require = arg1;

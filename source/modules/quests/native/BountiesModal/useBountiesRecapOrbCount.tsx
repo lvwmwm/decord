@@ -1,10 +1,10 @@
-// Module ID: 14163
-// Function ID: 14164
+// Module ID: 14162
+// Function ID: 14163
 // Name: getRecapOrbCountFromPullProgress
-// Dependencies: [32, 19, 4146, 14159, 2]
+// Dependencies: [32, 19, 4146, 14158, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 14163 (getRecapOrbCountFromPullProgress)
+// Module 14162 (getRecapOrbCountFromPullProgress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -62,7 +62,7 @@ export const useBountiesRecapOrbCount = function useBountiesRecapOrbCount(scroll
         if (result <= 0.1) {
           let obj = { count: 0, revealed: false };
         } else {
-          if (typeof enabled !== "find") {
+          if (typeof enabled !== "function") {
             HermesBuiltin.throwTypeError();
           }
           let num2 = 0;

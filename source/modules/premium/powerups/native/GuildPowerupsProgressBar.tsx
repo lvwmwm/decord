@@ -1,10 +1,10 @@
-// Module ID: 15221
-// Function ID: 15222
+// Module ID: 15220
+// Function ID: 15221
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 15222, 1862, 21, 712, 4146, 4706, 4285, 647, 15223, 15224, 4286, 11752, 5630, 1236, 2317, 8585, 4281, 5660, 2]
+// Dependencies: [19, 17, 15221, 1862, 21, 712, 4146, 4706, 4285, 647, 15222, 15223, 4286, 11752, 5630, 1236, 2317, 8585, 4281, 5660, 2]
 // Exports: default
 
-// Module 15221 (GuildPowerupsProgressBar)
+// Module 15220 (GuildPowerupsProgressBar)
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import get_ActivityIndicator from "TwinButtons";
 import initialize from "initialize";

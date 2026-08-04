@@ -1,10 +1,10 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15769
+// Function ID: 15770
 // Name: ViewModerators
-// Dependencies: [5, 19, 1942, 1935, 1862, 676, 7704, 21, 698, 4253, 15771, 1959, 1480, 589, 5100, 8919, 1380, 1906, 4624, 1236, 4295, 8920, 3985, 1297, 8927, 4693, 5649, 5315, 9445, 2]
+// Dependencies: [5, 19, 1942, 1935, 1862, 676, 7704, 21, 698, 4253, 15770, 1959, 1480, 589, 5100, 8919, 1380, 1906, 4624, 1236, 4295, 8920, 3985, 1297, 8927, 4693, 5649, 5315, 9445, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 15770 (ViewModerators)
+// Module 15769 (ViewModerators)
 import ME from "ME";
 import "getSystemLocale";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -224,5 +224,5 @@ export const openAddModeratorsActionSheet = function openAddModeratorsActionShee
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = importDefault(4253);
   obj = { channel, canSkip: flag };
-  obj2.openLazy(require(1959) /* asyncRequireImpl */(15771, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(require(1959) /* asyncRequireImpl */(15770, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 };

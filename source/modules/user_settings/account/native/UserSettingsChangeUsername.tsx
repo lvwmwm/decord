@@ -1,10 +1,10 @@
-// Module ID: 13909
-// Function ID: 13910
+// Module ID: 13908
+// Function ID: 13909
 // Name: UsernameStatusMessage
-// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4285, 712, 4484, 13910, 4281, 1236, 1480, 589, 3931, 13911, 7514, 8321, 530, 1481, 8193, 7713, 8325, 8277, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4285, 712, 4484, 13909, 4281, 1236, 1480, 589, 3931, 13910, 7514, 8321, 530, 1481, 8193, 7713, 8325, 8277, 2]
 // Exports: default
 
-// Module 13909 (UsernameStatusMessage)
+// Module 13908 (UsernameStatusMessage)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import sendRequest from "sendRequest";
@@ -22,11 +22,11 @@ const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
   const match = showHint(4484).match(showHint.usernameStatus);
-  let obj = { type: showHint(13910).NameValidationState.ERROR, message: null };
+  let obj = { type: showHint(13909).NameValidationState.ERROR, message: null };
   const P = showHint(4484).P;
   obj[1] = P.select();
   const str = showHint(4484);
-  obj = { type: showHint(13910).NameValidationState.AVAILABLE, message: null };
+  obj = { type: showHint(13909).NameValidationState.AVAILABLE, message: null };
   const P2 = showHint(4484).P;
   obj[1] = P2.select();
   const withResult = match.with(obj, (children) => callback(showHint(4281).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
@@ -145,87 +145,32 @@ export default function UserSettingsChangeUsername() {
         let c3 = 0;
         let c4 = 0;
         return (function*(arg0) {
-          if (c4 === 2) {
-            c4 = 3;
-            HermesBuiltin.throwTypeError();
-          } else if (tmp4 === 3) {
-            if (arg0 === 1) {
-              throw arg1;
-            } else if (arg0 === 2) {
-              let obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              return { value: "HermesInternal", done: null };
-            }
-          } else {
-            try {
-              c4 = 2;
-              if (0 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw arg1;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  obj = { value: null, done: true };
-                  obj[0] = arg1;
-                  return obj;
-                } else {
-                  let closure_2 = tmp5;
-                  let v6OrEarlierAPIError = tmp2;
-                  let lib;
-                  v6OrEarlierAPIError = undefined;
-                  if (null == outer1_1) {
-                    c4 = 3;
-                    return { value: null, done: true };
-                  } else {
-                    outer1_6(null);
-                    const obj1 = { username: null, password: null, discriminator: null };
-                    obj1[0] = c3;
-                    obj1[1] = tmp45;
-                    let tmp34;
-                    if (outer1_2) {
-                      tmp34 = outer1_5;
-                    }
-                    obj1[2] = tmp34;
-                    let obj4 = outer2_2(outer2_3[18]);
-                    c3 = 1;
-                    c4 = 1;
-                    const obj2 = { value: null, done: false };
-                    obj2[0] = obj4.saveAccountChanges(obj1, { close: false });
-                    return obj2;
-                  }
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                const obj3 = { value: null, done: true };
-                obj3[0] = arg1;
-                return obj3;
-              } else {
-                lib = arg1;
-                if (!lib.ok) {
-                  v6OrEarlierAPIError = new lib(outer2_3[19]).V6OrEarlierAPIError(lib);
-                  const CommonActions = lib(outer2_3[20]).CommonActions;
-                  obj = { name: null };
-                  obj[0] = outer2_10.ACCOUNT_CHANGE_USERNAME;
-                  lib.dispatch(CommonActions.navigate(obj));
-                  outer1_6(v6OrEarlierAPIError);
-                  c4 = 3;
-                  return { value: null, done: true };
-                }
-                c4 = 3;
-                obj4 = { value: null, done: true };
-                obj4[0] = lib;
-                return obj4;
-              }
-            } catch (tmp37) {
-              c4 = tmp;
-              throw tmp37;
-            }
+          let closure_2 = tmp5;
+          let v6OrEarlierAPIError = tmp2;
+          if (null == outer1_1) {
+            return null;
           }
+          outer1_6(null);
+          const obj1 = { username: null, password: null, discriminator: null };
+          obj1[0] = c3;
+          obj1[1] = tmp45;
+          if (outer1_2) {
+            const tmp34 = outer1_5;
+          }
+          obj1[2] = tmp34;
+          const obj4 = outer2_2(outer2_3[18]);
+          const lib = yield obj4.saveAccountChanges(obj1, { close: false });
+          if (!lib.ok) {
+            v6OrEarlierAPIError = new lib(outer2_3[19]).V6OrEarlierAPIError(lib);
+            const CommonActions = lib(outer2_3[20]).CommonActions;
+            const obj = { name: null };
+            obj[0] = outer2_10.ACCOUNT_CHANGE_USERNAME;
+            lib.dispatch(CommonActions.navigate(obj));
+            outer1_6(v6OrEarlierAPIError);
+            let c4 = 3;
+            return { value: null, done: true };
+          }
+          return lib;
         })();
       });
       obj[0] = function() {
@@ -308,7 +253,7 @@ export default function UserSettingsChangeUsername() {
       obj1[1] = tmp.discriminator;
       obj1[2] = `#${tmp13}`;
     }
-    let obj2 = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
+    const obj2 = { style: null, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: null };
     obj2[0] = tmp.background;
     let tmp32Result = tmp32(tmp2(tmp3[22]).TextInput, obj1);
     const items4 = [closure_11(tmp5(tmp3[23]), {}), ];

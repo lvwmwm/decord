@@ -1,10 +1,10 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16720
+// Function ID: 16721
 // Name: BaseBenefitRow
-// Dependencies: [19, 17, 14342, 21, 4285, 14377, 1297, 10711, 4281, 3926, 14370, 4475, 4745, 1236, 2]
+// Dependencies: [19, 17, 14341, 21, 4285, 14376, 1297, 10711, 4281, 3926, 14369, 4475, 4745, 1236, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 16721 (BaseBenefitRow)
+// Module 16720 (BaseBenefitRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildRoleSubscriptionBenefitTypes as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -26,7 +26,7 @@ function BaseBenefitRow(isInteractive) {
   }
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  obj = { style: tmp.emojiContainer, children: callback(importDefault(14377), { guildId, id: emoji }) };
+  obj = { style: tmp.emojiContainer, children: callback(importDefault(14376), { guildId, id: emoji }) };
   const items = [callback(View, obj), , ];
   const items1 = [tmp.benefitColumn, contentStyle];
   items[1] = callback(View, { style: items1, children });
@@ -73,7 +73,7 @@ function ChannelBenefitRow(benefit) {
   benefit = benefit.benefit;
   ({ guildId, isInteractive } = benefit);
   const tmp = callback3();
-  let obj = require(14370) /* getUsedTemplateChannelsForGuild */;
+  let obj = require(14369) /* getUsedTemplateChannelsForGuild */;
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {

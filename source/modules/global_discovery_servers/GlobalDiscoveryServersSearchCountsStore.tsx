@@ -1,9 +1,9 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12871
+// Function ID: 12872
 // Name: map
 // Dependencies: [4184, 589, 709, 2]
 
-// Module 12872 (map)
+// Module 12871 (map)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -62,7 +62,7 @@ const globalDiscoveryServersSearchCountStore = new GlobalDiscoveryServersSearchC
     let obj = map;
     obj = map.get(query);
     if (obj == null) {
-      if (typeof SearchCountState !== "find") {
+      if (typeof SearchCountState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchCountState.prototype);
@@ -76,7 +76,7 @@ const globalDiscoveryServersSearchCountStore = new GlobalDiscoveryServersSearchC
     let obj = map;
     obj = map.get(query);
     if (obj == null) {
-      if (typeof SearchCountState !== "find") {
+      if (typeof SearchCountState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchCountState.prototype);
@@ -90,7 +90,7 @@ const globalDiscoveryServersSearchCountStore = new GlobalDiscoveryServersSearchC
     let obj = map;
     obj = map.get(query);
     if (obj == null) {
-      if (typeof SearchCountState !== "find") {
+      if (typeof SearchCountState !== "function") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchCountState.prototype);

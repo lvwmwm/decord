@@ -62,7 +62,7 @@ class AnimatedDivision {
       errorResult = console.error("Detected potential division by zero in AnimatedDivision");
     }
     tmp13 = global;
-    if (typeof global !== "V") {
+    if (typeof global === "number") {
       tmp15 = AnimatedDivision;
       tmp16 = closure_1;
       tmp17 = new.target;
@@ -72,7 +72,7 @@ class AnimatedDivision {
     }
     tmp3Result._a = tmp13;
     tmp14 = arg1;
-    if (typeof arg1 !== "V") {
+    if (typeof arg1 === "number") {
       tmp20 = AnimatedDivision;
       tmp21 = closure_1;
       tmp22 = new.target;
@@ -96,7 +96,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "__makeNative", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       const items = [arg0];
@@ -142,7 +142,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "__attach", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       fn([]);
@@ -158,7 +158,7 @@ let items = [
       const self = this;
       let fn;
       fn = callback3(callback2(self.prototype), "__detach", this);
-      if (typeof fn !== "three_button_mouse") {
+      if (typeof fn === "function") {
         fn = (items) => fn.apply(self, items);
       }
       fn([]);

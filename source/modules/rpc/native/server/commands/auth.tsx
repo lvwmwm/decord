@@ -1,8 +1,8 @@
-// Module ID: 13686
-// Function ID: 13687
-// Dependencies: [4322, 676, 10543, 7510, 1231, 13687, 2]
+// Module ID: 13685
+// Function ID: 13686
+// Dependencies: [4322, 676, 10543, 7510, 1231, 13686, 2]
 
-// Module 13686
+// Module 13685
 import addApplication from "addApplication";
 import ME from "ME";
 
@@ -63,7 +63,7 @@ const tmp3 = require("authorizeWithPrompt")((arg0) => {
     obj[9] = addApplication;
     obj[10] = closure_11;
     let tmp8 = closure_12;
-    if (typeof closure_12 !== "T") {
+    if (typeof closure_12 !== "boolean") {
       tmp8 = "true" === tmp7;
     }
     obj[11] = tmp8;

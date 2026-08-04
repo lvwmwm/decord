@@ -1,10 +1,10 @@
-// Module ID: 15316
-// Function ID: 15317
+// Module ID: 15315
+// Function ID: 15316
 // Name: VoiceUsers
-// Dependencies: [19, 17, 1932, 3922, 4480, 4357, 676, 21, 4285, 712, 12215, 1297, 4281, 1236, 10837, 5236, 4706, 15315, 589, 12, 15317, 2]
+// Dependencies: [19, 17, 1932, 3922, 4480, 4357, 676, 21, 4285, 712, 12214, 1297, 4281, 1236, 10837, 5236, 4706, 15314, 589, 12, 15316, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 15316 (VoiceUsers)
+// Module 15315 (VoiceUsers)
 import apply from "apply";
 import { View } from "useIsHomeDrawerChannelInChannelList";
 import comparator from "comparator";
@@ -43,7 +43,7 @@ function VoiceUsers(arg0) {
       obj[2] = closure_0;
       return outer1_11(outer1_0(outer1_2[11]).Avatar, obj, id.id);
     });
-    obj[1] = callback(require(12215) /* AvatarPile */.AvatarPile, obj);
+    obj[1] = callback(require(12214) /* AvatarPile */.AvatarPile, obj);
     tmp = callback(View, obj);
   }
   return tmp;

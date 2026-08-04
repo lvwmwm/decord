@@ -1,10 +1,10 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16544
+// Function ID: 16545
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7862, 21, 712, 4285, 16546, 11752, 4693, 4281, 1236, 16547, 16548, 13170, 5660, 2]
+// Dependencies: [19, 17, 7862, 21, 712, 4285, 16545, 11752, 4693, 4281, 1236, 16546, 16547, 13169, 5660, 2]
 // Exports: default
 
-// Module 16545 (GuildSettingsServerTagBadgeGrid)
+// Module 16544 (GuildSettingsServerTagBadgeGrid)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { GuildTagBadgeSize } from "items";
@@ -36,7 +36,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   guildId = guildId.guildId;
   ({ selectedBadge: importDefault, onSelectBadge: dependencyMap, cellSize: noop } = guildId);
   const tmp = createCacheKey();
-  ({ unlockedBadges, lockedBadges } = importDefault(16546)());
+  ({ unlockedBadges, lockedBadges } = importDefault(16545)());
   const items = [guildId];
   const callback = React.useCallback(() => {
     outer1_1(outer1_2[7])({ guildId, autoOpenPerkId: "guildTagsBadgePacks" });

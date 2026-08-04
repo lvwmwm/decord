@@ -1,10 +1,10 @@
-// Module ID: 16395
-// Function ID: 16396
+// Module ID: 16394
+// Function ID: 16395
 // Name: RedesignSkipAvatarUploadAlertModal
 // Dependencies: [19, 21, 4628, 1236, 4628, 2]
 // Exports: default
 
-// Module 16395 (RedesignSkipAvatarUploadAlertModal)
+// Module 16394 (RedesignSkipAvatarUploadAlertModal)
 import "noop";
 import jsxProd from "jsxProd";
 

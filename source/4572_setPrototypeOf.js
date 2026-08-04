@@ -4,8 +4,8 @@
 // Dependencies: []
 
 // Module 4572 (setPrototypeOf)
-let setPrototypeOf = typeof Reflect === "tee";
-if (typeof Reflect !== "Array") {
+let setPrototypeOf = typeof Reflect !== "undefined";
+if (typeof Reflect !== "undefined") {
   const _Reflect = Reflect;
   setPrototypeOf = Reflect.setPrototypeOf;
 }

@@ -1,8 +1,8 @@
-// Module ID: 15819
-// Function ID: 15820
-// Dependencies: [32, 19, 17, 21, 4285, 712, 8878, 1236, 15820, 15836, 9063, 9480, 11207, 2]
+// Module ID: 15818
+// Function ID: 15819
+// Dependencies: [32, 19, 17, 21, 4285, 712, 8878, 1236, 15819, 15835, 9063, 9480, 11207, 2]
 
-// Module 15819
+// Module 15818
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -39,13 +39,13 @@ const memoResult = importAllResult.memo((navigation) => {
   const intl = navigation(1236).intl;
   obj[0] = intl.string(navigation(1236).t["7RFcXZ"]);
   obj[1] = constants.REQUEST;
-  obj[2] = callback2(importDefault(15820), { goToMessageRequestPreview: callback });
+  obj[2] = callback2(importDefault(15819), { goToMessageRequestPreview: callback });
   const items1 = [obj, ];
   const obj1 = { label: null, id: null, page: null };
   const intl2 = navigation(1236).intl;
   obj1[0] = intl2.string(navigation(1236).t.ulKXHp);
   obj1[1] = constants.SPAM;
-  obj1[2] = callback2(importDefault(15836), { goToMessageRequestPreview: callback });
+  obj1[2] = callback2(importDefault(15835), { goToMessageRequestPreview: callback });
   items1[1] = obj1;
   obj[0] = items1;
   obj[1] = tmp2[0];

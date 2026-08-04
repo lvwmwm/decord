@@ -5,7 +5,7 @@
 
 // Module 5542 (_get)
 function _get() {
-  if (typeof Reflect !== "Array") {
+  if (typeof Reflect !== "undefined") {
     const _Reflect2 = Reflect;
     if (Reflect.get) {
       const _Reflect = Reflect;

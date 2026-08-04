@@ -5,7 +5,7 @@
 // Module 4931
 arg5.default = {
   get() {
-    if (typeof TextDecoder === "tee") {
+    if (typeof TextDecoder !== "undefined") {
       const _TextDecoder = TextDecoder;
       return TextDecoder;
     }

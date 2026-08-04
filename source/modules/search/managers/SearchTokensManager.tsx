@@ -1,9 +1,9 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16434
+// Function ID: 16435
 // Name: _initialize
 // Dependencies: [1947, 5229, 11624, 2]
 
-// Module 16435 (_initialize)
+// Module 16434 (_initialize)
 import { subscribeToIntlLoadingSuccess as closure_2 } from "_setAppLocale";
 import "initialize";
 

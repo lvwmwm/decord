@@ -1,15 +1,15 @@
-// Module ID: 12869
-// Function ID: 12870
+// Module ID: 12868
+// Function ID: 12869
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1218, 595, 12870, 4360, 2]
+// Dependencies: [1218, 595, 12869, 4360, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 12869 (getFirstInstallTimeMillis)
+// Module 12868 (getFirstInstallTimeMillis)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
 function getFirstInstallTimeMillis(arg0) {
-  const firstInstallTimeMillis = importDefault(12870).getFirstInstallTimeMillis();
+  const firstInstallTimeMillis = importDefault(12869).getFirstInstallTimeMillis();
   let str = "InstallTimeLaunch";
   if ("authed" === arg0.from) {
     str = "InstallTimeAuthed";

@@ -65,7 +65,7 @@ arg5.default = function createNavigationContainerRef() {
         dependencyMap[first] = dependencyMap[first] || [];
         dependencyMap[first].push(items[1]);
         return () => {
-          if (typeof c1 !== "find") {
+          if (typeof c1 !== "function") {
             HermesBuiltin.throwTypeError();
           }
           const table = c1;
@@ -76,7 +76,7 @@ arg5.default = function createNavigationContainerRef() {
         };
       } else if ("removeListener" === tmp20) {
         const first1 = items[0];
-        if (typeof outer1_1 !== "find") {
+        if (typeof outer1_1 !== "function") {
           HermesBuiltin.throwTypeError();
         }
         dependencyMap = items[1];

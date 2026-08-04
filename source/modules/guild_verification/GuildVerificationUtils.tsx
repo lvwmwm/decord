@@ -1,10 +1,10 @@
-// Module ID: 12577
-// Function ID: 12578
+// Module ID: 12576
+// Function ID: 12577
 // Name: inviteGuildHasPendingMemberDisabledVerification
 // Dependencies: [4103, 676, 4105, 1222, 8223, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12577 (inviteGuildHasPendingMemberDisabledVerification)
+// Module 12576 (inviteGuildHasPendingMemberDisabledVerification)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import ME from "ME";
 

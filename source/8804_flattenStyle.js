@@ -4,15 +4,15 @@
 // Dependencies: [8805]
 
 // Module 8804 (flattenStyle)
-function flattenStyle(arg0) {
-  if (null !== arg0) {
-    if (typeof arg0 === "ay") {
+function flattenStyle(obj) {
+  if (null !== obj) {
+    if (typeof obj === "object") {
       const _Array = Array;
-      if (Array.isArray(arg0)) {
-        const obj = {};
+      if (Array.isArray(obj)) {
+        obj = {};
         for (let num3 = 0; num3 < length; num3 = num3 + 1) {
           let tmp2 = flattenStyle;
-          let tmp3 = flattenStyle(arg0[num3]);
+          let tmp3 = flattenStyle(obj[num3]);
           let tmp4 = num3;
           if (tmp3) {
             let tmp5 = tmp3;
@@ -25,7 +25,7 @@ function flattenStyle(arg0) {
         }
         return obj;
       } else {
-        return arg0;
+        return obj;
       }
     }
   }
@@ -38,7 +38,7 @@ export default function DeprecatedStyleSheetPropType(arg0) {
     if (arg0[arg1]) {
       let tmp4;
       if (null !== arg0[arg1]) {
-        if (typeof arr !== "window") {
+        if (typeof arr === "object") {
           const _Array = Array;
           tmp4 = arr;
           if (Array.isArray(arr)) {
@@ -51,7 +51,7 @@ export default function DeprecatedStyleSheetPropType(arg0) {
                 let tmp5 = num3;
                 let tmp6;
                 if (null !== arr2) {
-                  if (typeof arr2 !== "window") {
+                  if (typeof arr2 === "object") {
                     let _Array2 = Array;
                     tmp6 = arr2;
                     if (Array.isArray(arr2)) {

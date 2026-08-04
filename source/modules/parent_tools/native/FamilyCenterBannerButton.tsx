@@ -1,10 +1,10 @@
-// Module ID: 14027
-// Function ID: 14028
+// Module ID: 14026
+// Function ID: 14027
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [19, 17, 1874, 6905, 6906, 676, 4497, 21, 4285, 712, 7259, 3985, 1236, 11236, 647, 14028, 698, 14029, 4253, 14030, 1959, 4693, 4695, 12143, 2285, 14033, 4490, 1467, 11233, 1577, 4827, 13123, 2]
+// Dependencies: [19, 17, 1874, 6905, 6906, 676, 4497, 21, 4285, 712, 7259, 3985, 1236, 11236, 647, 14027, 698, 14028, 4253, 14029, 1959, 4693, 4695, 12142, 2285, 14032, 4490, 1467, 11233, 1577, 4827, 13122, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 14027 (FamilyCenterTeenQRCodeButtonInner)
+// Module 14026 (FamilyCenterTeenQRCodeButtonInner)
 import ConnectGuardianBottomSheet from "ConnectGuardianBottomSheet";
 import { View } from "shareGuardianConnectLink";
 import mergeGuildAvatar from "mergeGuildAvatar";

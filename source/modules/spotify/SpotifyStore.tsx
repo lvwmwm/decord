@@ -1,7 +1,7 @@
 // Module ID: 4963
 // Function ID: 4964
 // Name: upsertAccount
-// Dependencies: [4305, 1218, 4964, 5095, 4371, 5104, 4301, 8825, 676, 4966, 687, 3, 4170, 709, 584, 11064, 12, 698, 643, 12806, 10562, 1351, 589, 8051, 2]
+// Dependencies: [4305, 1218, 4964, 5095, 4371, 5104, 4301, 8825, 676, 4966, 687, 3, 4170, 709, 584, 11064, 12, 698, 643, 12805, 10562, 1351, 589, 8051, 2]
 
 // Module 4963 (upsertAccount)
 import initialize from "initialize";
@@ -31,7 +31,7 @@ function upsertAccount(accountId, accessToken) {
     const _HermesInternal2 = HermesInternal;
     tmp4.info("Updated account access token: " + accountId);
   } else {
-    if (typeof SpotifySocket !== "find") {
+    if (typeof SpotifySocket !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(SpotifySocket.prototype);
@@ -804,13 +804,13 @@ prototype["handleMessage"] = function handleMessage(data) {
   let payloads;
   let uri;
   data = data.data;
-  if (typeof data !== "_iter") {
+  if (typeof data === "string") {
     const _JSON = JSON;
     const parsed = JSON.parse(data);
     ({ uri, payloads } = parsed);
     if (parsed.type === message) {
       const self = this;
-      if (typeof uri !== "_iter") {
+      if (typeof uri === "string") {
         if (uri.startsWith(c22)) {
           const _decodeURIComponent = decodeURIComponent;
           self.connectionId = decodeURIComponent(uri.split(tmp15)[1]);

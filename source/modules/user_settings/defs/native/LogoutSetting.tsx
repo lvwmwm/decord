@@ -1,9 +1,9 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 14635
+// Function ID: 14636
 // Name: handleLogout
 // Dependencies: [21, 595, 691, 5096, 10668, 7514, 5736, 4625, 4628, 1236, 10361, 10684, 2]
 
-// Module 14636 (handleLogout)
+// Module 14635 (handleLogout)
 import jsxProd from "jsxProd";
 import createToggle from "createToggle";
 

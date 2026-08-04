@@ -1,10 +1,10 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16151
+// Function ID: 16152
 // Name: voiceSettings
-// Dependencies: [19, 4370, 676, 21, 1236, 16153, 5925, 4253, 4478, 4624, 16150, 1959, 16154, 4348, 16155, 8987, 4136, 10762, 7828, 7, 3986, 8845, 2]
+// Dependencies: [19, 4370, 676, 21, 1236, 16152, 5925, 4253, 4478, 4624, 16149, 1959, 16153, 4348, 16154, 8987, 4136, 10762, 7828, 7, 3986, 8845, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 16152 (voiceSettings)
+// Module 16151 (voiceSettings)
 import "report";
 import initialize from "initialize";
 import ME from "ME";
@@ -22,7 +22,7 @@ export const voiceSettings = function voiceSettings() {
   let obj = { label: null, icon: null, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.NiTd0e);
-  obj[1] = importDefault(16153);
+  obj[1] = importDefault(16152);
   obj[2] = function onPress() {
     let obj = callback(5925);
     obj = { screen: constants.VOICE };
@@ -79,7 +79,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
   let obj = { label: null, icon: null, onPress: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.KHGhHf);
-  obj[1] = importDefault(16154);
+  obj[1] = importDefault(16153);
   obj[2] = function onPress() {
     let obj = stream(outer1_2[13]);
     const encodeStreamKeyResult = obj.encodeStreamKey(stream);

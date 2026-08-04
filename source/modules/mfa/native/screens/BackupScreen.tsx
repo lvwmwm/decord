@@ -1,10 +1,10 @@
-// Module ID: 14895
-// Function ID: 14896
+// Module ID: 14894
+// Function ID: 14895
 // Name: isValidClipboardCode
-// Dependencies: [5, 32, 19, 21, 14893, 4281, 1236, 8283, 14888, 14894, 14891, 2]
+// Dependencies: [5, 32, 19, 21, 14892, 4281, 1236, 8283, 14887, 14893, 14890, 2]
 // Exports: default
 
-// Module 14895 (isValidClipboardCode)
+// Module 14894 (isValidClipboardCode)
 import Text from "Text";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -15,9 +15,9 @@ let error;
 let metroImportAll;
 const require = arg1;
 function isValidClipboardCode(arg0) {
-  let tmp3 = arg0.length >= require(14893) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
+  let tmp3 = arg0.length >= require(14892) /* finishMFACheck */.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
-    tmp3 = arg0.length <= require(14893) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
+    tmp3 = arg0.length <= require(14892) /* finishMFACheck */.BACKUP_CODE_MAX_LENGTH;
   }
   return tmp3;
 }
@@ -70,86 +70,39 @@ export default function BackupScreen(finish) {
     let c7 = 0;
     let c5 = 0;
     return (function*(arg0) {
-      if (c7 === 2) {
+      let Text = tmp3;
+      outer1_4(undefined);
+      outer1_1(true);
+      let v0 = 1;
+      const obj1 = { mfaType: "backup", data: null };
+      obj1[1] = lib;
+      yield lib(obj1);
+      if (1 === tmp7) {
+        v0 = 0;
+        lib = _slicedToArray;
+        let message;
+        if (lib != null) {
+          const body = lib.body;
+          if (body != null) {
+            message = body.message;
+          }
+        }
+        if (message == null) {
+          message = lib.message;
+        }
+        outer1_4(message);
+        outer1_1(false);
+        let c7 = 3;
+        const tmp15 = outer1_4;
+      } else if (arg0 === 1) {
         c7 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let Text = tmp3;
-              let closure_2 = tmp7;
-              outer1_4(undefined);
-              outer1_1(true);
-              let v0 = 1;
-              const obj1 = { mfaType: "backup", data: null };
-              obj1[1] = lib;
-              c6 = 2;
-              c7 = 1;
-              const obj2 = { value: null, done: false };
-              obj2[0] = lib(obj1);
-              return obj2;
-            }
-          } else {
-            if (1 === tmp7) {
-              v0 = 0;
-              lib = _slicedToArray;
-              let message;
-              if (lib != null) {
-                const body = lib.body;
-                if (body != null) {
-                  message = body.message;
-                }
-              }
-              if (message == null) {
-                message = lib.message;
-              }
-              outer1_4(message);
-              outer1_1(false);
-              c7 = 3;
-              const tmp15 = outer1_4;
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              v0(true);
-              v0 = 0;
-            }
-            v0 = 0;
-            c7 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          }
-        } catch (tmp30) {
-          _slicedToArray = tmp30;
-          if (tmp4 === v0) {
-            c7 = tmp2;
-            throw tmp30;
-          } else {
-            c6 = tmp;
-          }
-        }
+        throw arg1;
+      } else if (arg0 !== 2) {
+        v0(true);
+        v0 = 0;
       }
+      v0 = 0;
+      return arg1;
     })();
   });
   const items1 = [finish];
@@ -188,7 +141,7 @@ export default function BackupScreen(finish) {
     obj1[1] = items3;
   }
   const items4 = [first1(_require(first[5]).Text, obj1), ];
-  let obj2 = { label: null, placeholder: null, isValidClipboardCode: null, maxLength: null, onChangeCode: null, error: null, isDisabled: null, autoFocus: null };
+  const obj2 = { label: null, placeholder: null, isValidClipboardCode: null, maxLength: null, onChangeCode: null, error: null, isDisabled: null, autoFocus: null };
   let tmpResult = tmp(tmp2[9]);
   const intl5 = tmp16(tmp2[6]).intl;
   obj2[0] = intl5.string(_require(first[6]).t["C/ZAw/"]);

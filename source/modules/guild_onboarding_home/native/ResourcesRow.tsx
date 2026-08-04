@@ -1,10 +1,10 @@
-// Module ID: 15547
-// Function ID: 15548
+// Module ID: 15546
+// Function ID: 15547
 // Name: ResourcesRow
-// Dependencies: [19, 17, 15548, 21, 4285, 712, 15549, 11569, 4253, 15550, 1959, 4812, 4281, 1236, 2]
+// Dependencies: [19, 17, 15547, 21, 4285, 712, 15548, 11569, 4253, 15549, 1959, 4812, 4281, 1236, 2]
 // Exports: default
 
-// Module 15547 (ResourcesRow)
+// Module 15546 (ResourcesRow)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
@@ -26,7 +26,7 @@ export default function ResourcesRow(guildId) {
   let importDefault;
   const tmp = createCacheKey();
   importDefault = tmp;
-  const arr = importDefault(15549)(guildId);
+  const arr = importDefault(15548)(guildId);
   let obj = { horizontal: true, style: tmp.container, children: null };
   const substr = arr.slice(0, 2);
   const items = [

@@ -1,10 +1,10 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12676
+// Function ID: 12677
 // Name: componentDidMount
-// Dependencies: [19, 17, 1874, 3933, 4178, 3936, 3937, 676, 1876, 21, 4285, 5125, 3997, 4181, 5786, 4604, 7514, 5922, 4281, 1236, 1945, 12678, 1892, 12692, 12694, 12696, 12700, 12598, 6769, 7976, 12638, 589, 1480, 6775, 1577, 2]
+// Dependencies: [19, 17, 1874, 3933, 4178, 3936, 3937, 676, 1876, 21, 4285, 5125, 3997, 4181, 5786, 4604, 7514, 5922, 4281, 1236, 1945, 12677, 1892, 12691, 12693, 12695, 12699, 12597, 6769, 7976, 12637, 589, 1480, 6775, 1577, 2]
 // Exports: default
 
-// Module 12677 (componentDidMount)
+// Module 12676 (componentDidMount)
 import importAllResult from "getSystemLocale";
 import get_ActivityIndicator from "getSanitizedRestrictedGuilds";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -108,7 +108,7 @@ prototype["renderPremiumGuildSubscriptions"] = function renderPremiumGuildSubscr
     const obj3 = { children: null };
     items1[2] = tmp6Result;
     obj[1] = items1;
-    const items2 = [closure_15(closure_4, obj), callback(importDefault(12678), {})];
+    const items2 = [closure_15(closure_4, obj), callback(importDefault(12677), {})];
     obj3[0] = items2;
     tmp3Result = tmp3(importAllResult.Fragment, obj3);
     const obj5 = importDefault(1945);
@@ -133,7 +133,7 @@ prototype["render"] = function render() {
   if (premiumGroupRole === require(1892) /* create */.PremiumSubscriptionGroupRole.MEMBER) {
     let obj = { style: null };
     obj[0] = tmp.boostingUnavailablePill;
-    let tmp5 = callback(importDefault(12692), obj);
+    let tmp5 = callback(importDefault(12691), obj);
   } else {
     tmp5 = null;
     if (fractionalState !== FractionalPremiumStates.NONE) {
@@ -141,13 +141,13 @@ prototype["render"] = function render() {
       obj[0] = fpDurationText;
       obj[1] = isInReverseTrial;
       obj[2] = tmp.boostingUnavailablePill;
-      tmp5 = callback(importDefault(12694), obj);
+      tmp5 = callback(importDefault(12693), obj);
     }
   }
   obj = { style: tmp.scroller, children: null };
   const items = [tmp5, self.renderPremiumGuildSubscriptions(), ];
   const obj1 = { style: tmp.upsellSection, children: null };
-  const items1 = [callback(require(12696) /* getTopPatternSource */.TopPattern, { style: tmp.background }), ];
+  const items1 = [callback(require(12695) /* getTopPatternSource */.TopPattern, { style: tmp.background }), ];
   let tmp13Result = null;
   if (hasFetchedSubscriptionPlans) {
     const obj3 = { onLearnMorePremium: null, fractionalState: null, isInReverseTrial: null, hasAvailableSlots: null };
@@ -155,7 +155,7 @@ prototype["render"] = function render() {
     obj3[1] = fractionalState;
     obj3[2] = isInReverseTrial;
     obj3[3] = hasAvailableSlots;
-    tmp13Result = callback(importDefault(12700), obj3);
+    tmp13Result = callback(importDefault(12699), obj3);
   }
   items1[1] = tmp13Result;
   obj1[1] = items1;
@@ -175,7 +175,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   let dependencyMap;
   let closure_3;
   let closure_4;
-  let obj = _require(12598);
+  let obj = _require(12597);
   _require = obj.useSubscriptionPlansLoaded();
   flag = undefined;
   if (route != null) {
@@ -191,7 +191,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   let tmpResult = tmp(7976);
   closure_3 = tmpResult.useIsInReverseTrial();
   const tmp3 = flag(6769)({ forceFetch: true });
-  closure_4 = flag(12638)(endsAt, tmp(12638).CountDownMessageTypes.LONG_TIME_LEFT);
+  closure_4 = flag(12637)(endsAt, tmp(12637).CountDownMessageTypes.LONG_TIME_LEFT);
   tmpResult = tmp(589);
   const items = [handleGuildBoostsUpdate, handlePaymentSourceCreateEnd, addSubscriptionPlan, mergeGuildAvatar];
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(items, () => {
@@ -213,7 +213,7 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
     obj[10] = premiumGroupRole;
     return obj;
   });
-  const tmp4 = flag(12638);
+  const tmp4 = flag(12637);
   const items1 = [reset];
   const stateFromStores = _require(589).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const tmpResult1 = _require(589);

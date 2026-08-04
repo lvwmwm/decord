@@ -1,10 +1,10 @@
-// Module ID: 14305
-// Function ID: 14306
+// Module ID: 14304
+// Function ID: 14305
 // Name: NonInlineConsoleConnection
-// Dependencies: [19, 17, 676, 21, 712, 4285, 10374, 11086, 10403, 10405, 4253, 5925, 14263, 1959, 9434, 9435, 9439, 7108, 7107, 5131, 10406, 5649, 5315, 12095, 1236, 9223, 2]
+// Dependencies: [19, 17, 676, 21, 712, 4285, 10374, 11086, 10403, 10405, 4253, 5925, 14262, 1959, 9434, 9435, 9439, 7108, 7107, 5131, 10406, 5649, 5315, 12094, 1236, 9223, 2]
 // Exports: default
 
-// Module 14305 (NonInlineConsoleConnection)
+// Module 14304 (NonInlineConsoleConnection)
 import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource";
 import { View } from "AdCreativeType";
 import ME from "ME";
@@ -36,7 +36,7 @@ function ConsoleRow(onPress) {
   const type = merged.type;
   if (constants.PLAYSTATION === type) {
     let obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(12095).PlaystationNeutralIcon, {});
+    obj[1] = callback(onPress(12094).PlaystationNeutralIcon, {});
     const intl3 = onPress(1236).intl;
     obj[2] = intl3.string(onPress(1236).t.JafL6p);
     let stringResult;

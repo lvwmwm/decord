@@ -1,10 +1,10 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 16797
+// Function ID: 16798
 // Name: getReportInboundErrors
 // Dependencies: [4369, 687, 10607, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 16798 (getReportInboundErrors)
+// Module 16797 (getReportInboundErrors)
 import updateAveragedStatsHelper from "updateAveragedStatsHelper";
 
 const require = arg1;

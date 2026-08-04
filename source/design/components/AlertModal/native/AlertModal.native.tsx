@@ -63,7 +63,7 @@ function AlertModalBackdrop() {
   });
   let fn = function t() {
     let value = tmp4.get();
-    if (typeof outer1_26 !== "find") {
+    if (typeof outer1_26 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let obj = { opacity: null };
@@ -156,7 +156,7 @@ class AlertModal {
         obj = c7;
         result = 2 * Math.max(top, bottom);
         value = c7.get();
-        if (typeof outer1_26 !== "find") {
+        if (typeof outer1_26 !== "function") {
           str4 = "Trying to call a non-function";
           throwTypeErrorResult = HermesBuiltin.throwTypeError();
         }
@@ -198,7 +198,7 @@ class AlertModal {
             num3 = 0.1;
             num = 1 - 0.1 * obj4.get();
           }
-          if (typeof tmp3 !== "find") {
+          if (typeof tmp3 !== "function") {
             str5 = "Trying to call a non-function";
             throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
           }
@@ -223,7 +223,7 @@ class AlertModal {
             num4 = 50;
             diff1 = 50 - 50 * obj4.get();
           }
-          if (typeof tmp3 !== "find") {
+          if (typeof tmp3 !== "function") {
             str6 = "Trying to call a non-function";
             throwTypeErrorResult2 = HermesBuiltin.throwTypeError();
           }
@@ -383,7 +383,7 @@ class AlertActions {
 }
 class AlertActionButton {
   constructor(arg0) {
-    ({ onPress: f104420, loading } = global);
+    ({ onPress: f104416, loading } = global);
     merged = Object.assign(global, Object.create(null));
     useState = undefined;
     useState = undefined;
@@ -398,8 +398,8 @@ class AlertActionButton {
       loading = tmp2[0];
     }
     obj.loading = loading;
-    f104420 = undefined;
-    f104420 = sum((arg0) => {
+    f104416 = undefined;
+    f104416 = sum((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c4 = 0;

@@ -1,9 +1,9 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15584
+// Function ID: 15585
 // Name: items
 // Dependencies: [19, 17, 5808, 11623, 8208, 21, 4285, 712, 647, 11624, 4146, 4286, 5915, 500, 2]
 
-// Module 15585 (items)
+// Module 15584 (items)
 import importAllResult from "noop";
 import { ActivityIndicator } from "get ActivityIndicator";
 import handleReaction from "handleReaction";

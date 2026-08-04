@@ -1,10 +1,10 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16590
+// Function ID: 16591
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 676, 21, 4285, 712, 1384, 16592, 1297, 8985, 4281, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 1384, 16591, 1297, 8985, 4281, 1236, 2]
 // Exports: default
 
-// Module 16591 (InRolePromptNotice)
+// Module 16590 (InRolePromptNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
@@ -34,7 +34,7 @@ export default function InRolePromptNotice(role) {
   } else {
     obj = { style: null, children: null };
     obj[0] = string.promptRow;
-    const tmpResult = tmp(16592);
+    const tmpResult = tmp(16591);
     let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
       obj = { style: null, source: null, color: null };
@@ -65,6 +65,6 @@ export default function InRolePromptNotice(role) {
       obj[1] = items1;
       tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = tmp(16592).isRolePowerful(role);
+    isRolePowerfulResult = tmp(16591).isRolePowerful(role);
   }
 };

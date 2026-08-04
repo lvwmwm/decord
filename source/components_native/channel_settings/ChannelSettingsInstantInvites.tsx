@@ -1,10 +1,10 @@
-// Module ID: 15766
-// Function ID: 15767
+// Module ID: 15765
+// Function ID: 15766
 // Name: ConnectedChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 7827, 1372, 676, 21, 4285, 712, 1581, 589, 7826, 9604, 1297, 9621, 9622, 1236, 5731, 15767, 8337, 2]
+// Dependencies: [32, 19, 17, 7827, 1372, 676, 21, 4285, 712, 1581, 589, 7826, 9604, 1297, 9621, 9622, 1236, 5731, 15766, 8337, 2]
 // Exports: default
 
-// Module 15766 (ConnectedChannelSettingsInstantInvites)
+// Module 15765 (ConnectedChannelSettingsInstantInvites)
 import _slicedToArray from "_slicedToArray";
 import module_8337 from "module_8337";
 import { View } from "SceneLoadingIndicator";
@@ -135,7 +135,7 @@ export default function ConnectedChannelSettingsInstantInvites() {
   const items8 = [callback(tmpResult(5731).SceneLoadingIndicator, {}), ];
   tmpResult = null;
   if (memo1.length > 0) {
-    tmp2 = tmp2(15767);
+    tmp2 = tmp2(15766);
     obj = { item: null, onMeasured: null };
     memo1 = memo1[0];
     obj[0] = memo1;

@@ -1,10 +1,10 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12020
+// Function ID: 12021
 // Name: PlusMediumIcon
 // Dependencies: [19, 21, 712, 3988, 11496, 2]
 // Exports: PlusMediumIcon
 
-// Module 12021 (PlusMediumIcon)
+// Module 12020 (PlusMediumIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

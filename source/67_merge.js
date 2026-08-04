@@ -19,9 +19,9 @@ function merge(arg0, obj) {
           let tmp3 = tmp2;
           if (arg0.hasOwnProperty(key10005)) {
             let tmp4 = arg0[key10005];
-            let tmp5 = typeof tmp2 === "ay";
-            if (typeof tmp2 !== "window") {
-              tmp5 = typeof tmp4 === "ay";
+            let tmp5 = typeof tmp2 === "object";
+            if (typeof tmp2 === "object") {
+              tmp5 = typeof tmp4 === "object";
             }
             tmp3 = tmp2;
             if (tmp5) {
@@ -359,9 +359,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
                         let tmp67 = tmp66;
                         if (obj10.hasOwnProperty(tmp65)) {
                           let tmp68 = obj10[tmp65];
-                          let tmp69 = typeof tmp66 === "ay";
-                          if (typeof tmp66 !== "window") {
-                            tmp69 = typeof tmp68 === "ay";
+                          let tmp69 = typeof tmp66 === "object";
+                          if (typeof tmp66 === "object") {
+                            tmp69 = typeof tmp68 === "object";
                           }
                           tmp67 = tmp66;
                           if (tmp69) {
@@ -390,9 +390,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
                 obj2 = prop[key10058];
                 str4 = obj2;
                 if (bubblingEventTypes.hasOwnProperty(key10058)) {
-                  let tmp61 = typeof obj2 === "ay";
-                  if (typeof obj2 !== "window") {
-                    tmp61 = typeof bubblingEventTypes[key10058] === "ay";
+                  let tmp61 = typeof obj2 === "object";
+                  if (typeof obj2 === "object") {
+                    tmp61 = typeof bubblingEventTypes[key10058] === "object";
                   }
                   str4 = obj2;
                 }
@@ -422,9 +422,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
                       let tmp75 = obj11;
                       if (directEventTypes2.hasOwnProperty(tmp74)) {
                         let obj12 = directEventTypes2[tmp74];
-                        let tmp76 = typeof obj11 === "ay";
-                        if (typeof obj11 !== "window") {
-                          tmp76 = typeof obj12 === "ay";
+                        let tmp76 = typeof obj11 === "object";
+                        if (typeof obj11 === "object") {
+                          tmp76 = typeof obj12 === "object";
                         }
                         tmp75 = obj11;
                         if (tmp76) {
@@ -447,9 +447,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
                                     let tmp82 = tmp81;
                                     if (obj12.hasOwnProperty(tmp80)) {
                                       let tmp83 = obj12[tmp80];
-                                      let tmp84 = typeof tmp81 === "ay";
-                                      if (typeof tmp81 !== "window") {
-                                        tmp84 = typeof tmp83 === "ay";
+                                      let tmp84 = typeof tmp81 === "object";
+                                      if (typeof tmp81 === "object") {
+                                        tmp84 = typeof tmp83 === "object";
                                       }
                                       tmp82 = tmp81;
                                       if (tmp84) {
@@ -965,82 +965,82 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "$ZodCheckGreaterThan":
           break;
-          case "ToIntlMathematicalValue":
+          case "fetchMediaPostEmbed":
             obj2 = require;
             tmp48 = dependencyMap;
             tmp49 = require(81) /* resolveAssetSource */;
             _default1 = tmp49.default;
+          break;
+          case "ToIntlMathematicalValue":
           break;
           case "th":
+            obj2 = require;
+            tmp48 = dependencyMap;
+            tmp49 = require(81) /* resolveAssetSource */;
+            _default1 = tmp49.default;
           break;
           case "ValueSetter":
-            obj2 = require;
-            tmp48 = dependencyMap;
-            tmp49 = require(81) /* resolveAssetSource */;
-            _default1 = tmp49.default;
           break;
           case "$ZodCheckNumberFormat":
-          break;
-          case "N":
             obj2 = require;
             tmp48 = dependencyMap;
             tmp49 = require(81) /* resolveAssetSource */;
             _default1 = tmp49.default;
           break;
-          case "NumberFormat":
+          case "N":
           break;
-          case "um":
+          case "NumberFormat":
             obj2 = module;
             let tmp47 = dependencyMap;
             _default1 = module(55);
           break;
-          case "b":
+          case "um":
           break;
-          case "be":
+          case "b":
             obj2 = module;
             tmp47 = dependencyMap;
             _default1 = module(55);
           break;
-          case "$ZodObject":
+          case "be":
           break;
-          case "$ZodObjectJIT":
+          case "$ZodObject":
             obj2 = require;
             let tmp45 = dependencyMap;
             let tmp46 = require(54) /* _getFilterAmount */;
             _default1 = tmp46.default;
           break;
-          case "ZodObject":
+          case "$ZodObjectJIT":
           break;
-          case "O":
+          case "ZodObject":
             obj2 = require;
             tmp45 = dependencyMap;
             tmp46 = require(54) /* _getFilterAmount */;
             _default1 = tmp46.default;
           break;
-          case "j":
+          case "O":
           break;
-          case "je":
+          case "j":
             obj2 = require;
             let tmp44 = dependencyMap;
             _default1 = require(56) /* processColorStops */.default;
           break;
-          case "IT":
+          case "je":
           break;
-          case "MEDIA_PICKER_SEND_BUTTON_SPRING":
+          case "IT":
             obj2 = require;
             let tmp43 = dependencyMap;
             _default1 = require(58) /* getPositionFromCSSValue */.default;
           break;
-          case "marginHorizontal":
+          case "MEDIA_PICKER_SEND_BUTTON_SPRING":
           break;
-          case "Direction":
+          case "marginHorizontal":
             obj2 = require;
             let tmp42 = dependencyMap;
             _default1 = require(59) /* isBackgroundRepeatKeyword */.default;
           break;
-          case "rect":
+          case "Direction":
           break;
-          case "REGISTER_IDENTITY":
+          case "rect":
             obj2 = require;
             tmp40 = dependencyMap;
             tmp41 = require(57) /* getValidLengthPercentageSizeOrNull */;
@@ -1064,35 +1064,13 @@ arg5.default = function getNativeComponentAttributes(arg0) {
             obj2[0] = _default;
             obj1 = obj2;
           break;
+          case "REGISTER_IDENTITY":
+          break;
           case "PX_80":
           break;
           case "_":
           break;
-          case "3AS4UM":
-          break;
-          case "UM":
-          break;
-          case "UMAX":
-          break;
-          case "MAX_AUDIENCE_ROW_LIMIT":
-          break;
-          case "AUD":
-          break;
-          case "AUDIENCE":
-          break;
-          case "mouse_three_button":
-          break;
-          case "three":
-          break;
-          case "three_button_mouse":
-          break;
-          case "mouse":
-          break;
-          case "mouse2":
-          break;
-          case "use2FARemoveDisableReason":
-          break;
-          case "useHasReachedEnd":
+          case "useICYMIEnabled":
           break;
           case "INVALID_PIN_MESSAGE_CHANNEL":
           break;
@@ -1506,15 +1484,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "bel":
           break;
-          case "removeToken":
+          case "fetchClaimedQuests":
           break;
-          case "enableImagePrefetchingAndroid":
-          break;
-          case "fetching":
-          break;
-          case "toAST":
-          break;
-          case "STEAM_ITEM_COUNT_DOTA2":
+          case "SPACE_32":
           break;
           case "Role":
           break;
@@ -1752,12 +1724,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "iu":
           break;
-          case "AgeVerificationModalVersion":
-          break;
-          case "allowEmpty":
-          break;
-          case "allowEmptyArrays":
-          break;
           case "overflow_bottom":
           break;
           case "_bottom":
@@ -1962,11 +1928,11 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "maximumValue":
           break;
-          case "gru":
+          case "_isBackgrounded":
           break;
-          case "kangaroo":
+          case "isBackground":
           break;
-          case "rootProvider":
+          case "roundedNumber":
           break;
           case "_$esjava$cursor":
           break;
@@ -2128,10 +2094,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "flag_et":
           break;
-          case "isCleaning":
-          break;
-          case "getIncrementalStickerCountForTier":
-          break;
           case "useFetchSocialLayerStorefrontProductDetailsEmbedData":
           break;
           case "div":
@@ -2156,13 +2118,7 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "doneButtonContainer":
           break;
-          case "fetchGuildJoinRequests":
-          break;
-          case "fetchGuildJoinRequestsForUser":
-          break;
-          case "giftCount":
-          break;
-          case "trackedType":
+          case "unreadByType":
           break;
           case "__duration":
           break;
@@ -2376,6 +2332,8 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "constraints":
           break;
+          case "USER_SAFETY_TOOLS_BLOCK_CANCEL":
+          break;
           case "_getGuildState":
           break;
           case "getGuildState":
@@ -2411,16 +2369,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "DefaultGuildsRestricted":
           break;
           case "DefaultGuildsRestrictedV2":
-          break;
-          case "collectionId":
-          break;
-          case "collectionIds":
-          break;
-          case "spanToTransactionTraceContext":
-          break;
-          case "glow":
-          break;
-          case "glowColor":
           break;
           case "avatar_hash":
           break;
@@ -2483,12 +2431,6 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "icons":
           break;
           case "iconsContainer":
-          break;
-          case "computeActivityFlags":
-          break;
-          case "ActivityFlags":
-          break;
-          case "subscribeTextInputValue":
           break;
           case "_include":
           break;
@@ -2565,6 +2507,12 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "activeUnjoinedThreads":
           break;
           case "jo":
+          break;
+          case "setFocusMode":
+          break;
+          case "getMessageGiftIntentLastShownMap":
+          break;
+          case "applyFunctionToChildren":
           break;
           case "js":
           break;
@@ -2697,6 +2645,8 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           case "__memo":
           break;
           case "mo":
+          break;
+          case "promotionType":
           break;
           case "effective_connection_speed":
           break;
@@ -2914,6 +2864,56 @@ arg5.default = function getNativeComponentAttributes(arg0) {
           break;
           case "updateMLSExternalSenderTimestamp":
           break;
+          case "parseStackFrames":
+          break;
+          case "getSelectionScope":
+          break;
+          case "openForwardModal":
+          break;
+          case "_pushCells":
+          break;
+          case "pus":
+          break;
+          case "enableMuteWarning":
+          break;
+          case "DOMParser":
+          break;
+          case "rad":
+          break;
+          case "ii":
+          break;
+          case "animateDrawer":
+          break;
+          case "DrawerActions":
+          break;
+          case "aw":
+          break;
+          case "awe":
+          break;
+          case "verifiedBot":
+          break;
+          case "$ZodPrefault":
+          break;
+          case "ZodPrefault":
+          break;
+          case "reg":
+          break;
+          case "register":
+          break;
+          case "recipients":
+          break;
+          case "reject":
+          break;
+          case "eject":
+          break;
+          case "ErrorNumber":
+          break;
+          case "showUnread":
+          break;
+          case "__replaceAnimatedNodeWithValues":
+          break;
+          case "place":
+          break;
         }
       }
       prop.style = require(26) /* result */.default;
@@ -2952,9 +2952,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
               let tmp88 = obj14;
               if (viewManagerConfig.hasOwnProperty(key10171)) {
                 let obj15 = viewManagerConfig[key10171];
-                let tmp89 = typeof obj14 === "ay";
-                if (typeof obj14 !== "window") {
-                  tmp89 = typeof obj15 === "ay";
+                let tmp89 = typeof obj14 === "object";
+                if (typeof obj14 === "object") {
+                  tmp89 = typeof obj15 === "object";
                 }
                 tmp88 = obj14;
                 if (tmp89) {
@@ -2977,9 +2977,9 @@ arg5.default = function getNativeComponentAttributes(arg0) {
                             let tmp95 = tmp94;
                             if (obj15.hasOwnProperty(tmp93)) {
                               let tmp96 = obj15[tmp93];
-                              let tmp97 = typeof tmp94 === "ay";
-                              if (typeof tmp94 !== "window") {
-                                tmp97 = typeof tmp96 === "ay";
+                              let tmp97 = typeof tmp94 === "object";
+                              if (typeof tmp94 === "object") {
+                                tmp97 = typeof tmp96 === "object";
                               }
                               tmp95 = tmp94;
                               if (tmp97) {

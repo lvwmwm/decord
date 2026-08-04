@@ -1,10 +1,10 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 15660
+// Function ID: 15661
 // Name: MessageContent
 // Dependencies: [19, 17, 4277, 1942, 1874, 5831, 676, 505, 21, 4285, 712, 589, 7160, 4723, 5200, 4281, 1236, 4124, 5835, 4513, 11, 1297, 8011, 7880, 4149, 2]
 // Exports: ThreadSubtext
 
-// Module 15661 (MessageContent)
+// Module 15660 (MessageContent)
 import importAllResult from "useNullableMessageAuthor";
 import { View } from "nameFromUser";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

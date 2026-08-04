@@ -1,10 +1,10 @@
-// Module ID: 13654
-// Function ID: 13655
+// Module ID: 13653
+// Function ID: 13654
 // Name: validateOpenInviteDialog
-// Dependencies: [10506, 1862, 3913, 676, 13643, 10543, 8881, 2]
+// Dependencies: [10506, 1862, 3913, 676, 13642, 10543, 8881, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 13654 (validateOpenInviteDialog)
+// Module 13653 (validateOpenInviteDialog)
 import map from "map";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -16,11 +16,11 @@ const result = require("getUncachedChannelPermissions").fileFinishedImporting("m
 export const validateOpenInviteDialog = function validateOpenInviteDialog() {
   connectedFrame = connectedFrame.getConnectedFrame();
   if (null != connectedFrame) {
-    let obj = { frame: null, channel: "Array", guild: "ti" };
+    let obj = { frame: null, channel: "Array", guild: "isArray" };
     obj[0] = connectedFrame;
     return obj;
   } else {
-    const obj6 = importDefault(13643)();
+    const obj6 = importDefault(13642)();
     if (null == obj6) {
       obj = { errorCode: null };
       obj[0] = RPCErrors.INVALID_CHANNEL;

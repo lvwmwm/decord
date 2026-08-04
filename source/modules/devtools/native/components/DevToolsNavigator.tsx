@@ -1,10 +1,10 @@
-// Module ID: 13749
-// Function ID: 13750
+// Module ID: 13748
+// Function ID: 13749
 // Name: navigateToDevTools
-// Dependencies: [19, 17, 21, 8381, 5665, 8193, 13750, 10454, 4281, 712, 13752, 4253, 4490, 2]
+// Dependencies: [19, 17, 21, 8381, 5665, 8193, 13749, 10454, 4281, 712, 13751, 4253, 4490, 2]
 // Exports: navigateToDevTools
 
-// Module 13749 (navigateToDevTools)
+// Module 13748 (navigateToDevTools)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -43,7 +43,7 @@ let closure_7 = require("noop").memo((screenKey) => {
   };
   obj = {
     name: "home",
-    component: importDefault(13750),
+    component: importDefault(13749),
     options() {
       return {
         headerTitle() {
@@ -62,8 +62,8 @@ let closure_7 = require("noop").memo((screenKey) => {
     }
   };
   let items = [callback(createNativeStackNavigator.Screen, obj), ];
-  let merged = Object.assign(tmp(13752).DevToolsScreens);
-  let merged1 = Object.assign(tmp(13752).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(13751).DevToolsScreens);
+  let merged1 = Object.assign(tmp(13751).PerformanceTestingScreens);
   const entries = Object.entries({});
   items[1] = entries.map((arg0) => {
     let tmp;

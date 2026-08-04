@@ -1,9 +1,9 @@
-// Module ID: 16848
-// Function ID: 16849
+// Module ID: 16847
+// Function ID: 16848
 // Name: isQuestProgressable
-// Dependencies: [5, 32, 1371, 10506, 4305, 4304, 4317, 4357, 7080, 15977, 5128, 687, 7086, 7078, 10503, 5129, 10376, 5131, 7107, 4456, 4455, 5229, 5135, 7103, 4348, 1351, 4454, 7101, 2]
+// Dependencies: [5, 32, 1371, 10506, 4305, 4304, 4317, 4357, 7080, 15976, 5128, 687, 7086, 7078, 10503, 5129, 10376, 5131, 7107, 4456, 4455, 5229, 5135, 7103, 4348, 1351, 4454, 7101, 2]
 
-// Module 16848 (isQuestProgressable)
+// Module 16847 (isQuestProgressable)
 import reset from "reset";
 import "_slicedToArray";
 import participantFromServer from "participantFromServer";
@@ -83,7 +83,7 @@ getQuestLogger = getQuestLogger.getQuestLogger(getQuestLogger);
 class QuestProgressManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f113708 = applyArgumentsResult;
+    f113703 = applyArgumentsResult;
     obj = {};
     map = new Map();
     obj[require("set").FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP] = map;
@@ -315,9 +315,9 @@ class QuestProgressManager extends tmp4 {
       EMBEDDED_ACTIVITY_UPDATE_V2: null,
       QUEST_APPLICATION_START_TIMER: null
     };
-    f113708 = undefined;
+    f113703 = undefined;
     closure_1 = applyArgumentsResult;
-    f113708 = isQuestRobloxRelated((arg0) => {
+    f113703 = isQuestRobloxRelated((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;

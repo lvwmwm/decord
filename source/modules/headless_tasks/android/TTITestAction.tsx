@@ -1,9 +1,9 @@
-// Module ID: 16888
-// Function ID: 16889
+// Module ID: 16887
+// Function ID: 16888
 // Name: sendReply
-// Dependencies: [5, 16166, 4199, 7680, 1218, 1372, 1862, 3, 4143, 9791, 16356, 709, 7055, 1578, 698, 5736, 7679, 4293, 14651, 1307, 2]
+// Dependencies: [5, 16165, 4199, 7680, 1218, 1372, 1862, 3, 4143, 9791, 16355, 709, 7055, 1578, 698, 5736, 7679, 4293, 14650, 1307, 2]
 
-// Module 16888 (sendReply)
+// Module 16887 (sendReply)
 import importDefaultResult from "ensureGuildLoaded";
 import { applicationReady } from "linkFromAppsFlyer";
 import getHash from "getHash";
@@ -24,7 +24,7 @@ function sendStatus(message) {
 }
 function getErrorDetails(headers) {
   if (null != headers) {
-    if (typeof headers !== "window") {
+    if (typeof headers === "object") {
       const _Set = Set;
       const set = new Set();
       let prototypeOf = headers;
@@ -318,7 +318,7 @@ function _apiLogin() {
               let obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f119484 = () => { ... };
+              const f119479 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -359,7 +359,7 @@ function subscribeOnce(subscribe) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f119484(arg0);
+    return f119479(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -406,7 +406,7 @@ let obj = {
     importDefault(4143).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16356);
+    let obj = importDefault(16355);
     let report;
     if (obj != null) {
       report = obj.requestReport();
@@ -418,7 +418,7 @@ let obj = {
     importDefault(4143).logToDevice(json);
   },
   (multiplier) => {
-    let obj = importDefault(16356);
+    let obj = importDefault(16355);
     if (obj != null) {
       const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
     }
@@ -428,7 +428,7 @@ let obj = {
     importDefault(4143).logToDevice(json);
   },
   () => {
-    let obj = importDefault(16356);
+    let obj = importDefault(16355);
     if (obj != null) {
       obj.startTracking();
     }
@@ -618,7 +618,7 @@ let closure_3 = importDefaultResult((arg0) => {
             if (1 === tmp9) {
               let getHash = createGuildRecordFromRust;
               c9 = 0;
-              if (typeof lib === "y") {
+              if (typeof lib === "string") {
                 const _fetch3 = fetch;
                 const obj8 = { method: "PUT", body: null, headers: null };
                 const _JSON3 = JSON;
@@ -648,7 +648,7 @@ let closure_3 = importDefaultResult((arg0) => {
                     let closure_4 = result;
                     if (arg0 === 2) {
                       c9 = 0;
-                      if (typeof lib === "y") {
+                      if (typeof lib === "string") {
                         const _fetch = fetch;
                         const obj11 = { method: "PUT", body: null, headers: null };
                         const _JSON = JSON;
@@ -725,7 +725,7 @@ let closure_3 = importDefaultResult((arg0) => {
                 callback("success", "Backchannel reply sent");
               }
               c9 = 0;
-              if (typeof lib === "y") {
+              if (typeof lib === "string") {
                 const _fetch2 = fetch;
                 const obj18 = { method: "PUT", body: null, headers: null };
                 const _JSON2 = JSON;
@@ -770,69 +770,19 @@ closure_0 = importDefaultResult((arg0) => {
   let c3 = 0;
   let c4 = 0;
   return (function*(arg0) {
-    if (c4 === 2) {
-      c4 = 3;
-      HermesBuiltin.throwTypeError();
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw arg1;
-      } else if (arg0 === 2) {
-        let obj = { value: null, done: true };
-        obj[0] = arg1;
-        return obj;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            let closure_2 = tmp5;
-            let closure_1 = tmp2;
-            let parsed;
-            const _TextDecoder = TextDecoder;
-            const textDecoder = new TextDecoder("utf-8");
-            const _JSON = JSON;
-            parsed = JSON.parse(textDecoder.decode(callback(outer1_2[19]).base64decode(parsed.actionData)));
-            const obj1 = {};
-            const merged = Object.assign(parsed);
-            obj1.user = "redacted";
-            outer1_11.log("Received TTI Test Action", obj1);
-            c3 = 1;
-            c4 = 1;
-            const obj2 = { value: null, done: false };
-            obj2[0] = outer1_5.promise;
-            return obj2;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw arg1;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj3 = { value: null, done: true };
-          obj3[0] = arg1;
-          return obj3;
-        } else {
-          outer1_12[parsed.type](parsed);
-          c4 = 3;
-          obj = { value: null, done: true };
-          obj[0] = Promise.resolve();
-          return obj;
-        }
-      } catch (tmp15) {
-        c4 = tmp;
-        throw tmp15;
-      }
-    }
+    let closure_2 = tmp5;
+    let closure_1 = tmp2;
+    const _TextDecoder = TextDecoder;
+    const textDecoder = new TextDecoder("utf-8");
+    const _JSON = JSON;
+    parsed = JSON.parse(textDecoder.decode(callback(outer1_2[19]).base64decode(parsed.actionData)));
+    const obj1 = {};
+    const merged = Object.assign(parsed);
+    obj1.user = "redacted";
+    outer1_11.log("Received TTI Test Action", obj1);
+    yield outer1_5.promise;
+    outer1_12[parsed.type](parsed);
+    return Promise.resolve();
   })();
 });
 const tmp2 = new require("processCallbacks")("TTITestAction");

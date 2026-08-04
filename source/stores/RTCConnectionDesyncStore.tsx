@@ -1,9 +1,9 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 12924
+// Function ID: 12925
 // Name: retryFailedUsers
 // Dependencies: [4302, 1372, 4356, 1874, 4301, 4357, 676, 4303, 4318, 4474, 8735, 4381, 589, 709, 2]
 
-// Module 12925 (retryFailedUsers)
+// Module 12924 (retryFailedUsers)
 import isVoiceMuted from "isVoiceMuted";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";

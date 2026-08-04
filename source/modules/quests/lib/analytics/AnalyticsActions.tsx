@@ -199,112 +199,40 @@ function _getCommonClickEventProperties() {
       let c4;
       let c5;
       let closure_1;
-      if (c5 === 2) {
-        c5 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              c3 = tmp5;
-              let dependencyMap = tmp2;
-              let callback;
-              let callback2;
-              dependencyMap = undefined;
-              c3 = undefined;
-              c4 = undefined;
-              c5 = undefined;
-              ({ questContent: c0, questContentPosition: closure_1, questContentRowIndex: c2, questContentCTA: c3, impressionId: c4, clickId: c5 } = callback);
-              let initializeState;
-              c4 = 1;
-              c5 = 1;
-              return { value: "ct", done: "Array" };
-            }
-          } else if (1 === tmp5) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              let obj1 = { value: null, done: true };
-              obj1[0] = arg1;
-              return obj1;
-            } else {
-              let obj5 = callback(7109);
-              c4 = 2;
-              c5 = 1;
-              let obj2 = { value: null, done: false };
-              obj2[0] = obj5.getAdUser(callback(7107).getQuestContentName(callback));
-              return obj2;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value: null, done: true };
-            obj3[0] = arg1;
-            return obj3;
-          } else {
-            initializeState = arg1;
-            const obj4 = {};
-            const merged = Object.assign(callback(7107).getContentProperties(callback, callback2, dependencyMap));
-            const merged1 = Object.assign(callback2(7057)());
-            obj4.cta_name = c3;
-            obj4.impression_id = c4;
-            let advertisingId = null;
-            if (null != initializeState) {
-              obj = callback(500);
-              advertisingId = null;
-              if (obj.isIOS()) {
-                advertisingId = initializeState.advertisingId;
-              }
-            }
-            obj4.apple_advertising_id = advertisingId;
-            let advertisingId1 = null;
-            if (null != initializeState) {
-              obj1 = callback(500);
-              advertisingId1 = null;
-              if (obj1.isAndroid()) {
-                advertisingId1 = initializeState.advertisingId;
-              }
-            }
-            obj4.android_advertising_id = advertisingId1;
-            callback2 = c5;
-            if (c5 == null) {
-              obj2 = callback(514);
-              callback2 = obj2.v4();
-            }
-            obj4.click_id = callback2;
-            c5 = 3;
-            obj5 = { value: null, done: true };
-            obj5[0] = obj4;
-            return obj5;
-          }
-        } catch (tmp33) {
-          c5 = tmp;
-          throw tmp33;
+      const dependencyMap = tmp2;
+      ({ questContent: c0, questContentPosition: closure_1, questContentRowIndex: c2, questContentCTA: c3, impressionId: c4, clickId: c5 } = callback);
+      yield "ct";
+      const obj5 = callback(7109);
+      let initializeState = yield obj5.getAdUser(callback(7107).getQuestContentName(callback));
+      const obj4 = {};
+      const merged = Object.assign(callback(7107).getContentProperties(callback, callback2, dependencyMap));
+      const merged1 = Object.assign(callback2(7057)());
+      obj4.cta_name = c3;
+      obj4.impression_id = c4;
+      let advertisingId = null;
+      if (null != initializeState) {
+        const obj = callback(500);
+        advertisingId = null;
+        if (obj.isIOS()) {
+          advertisingId = initializeState.advertisingId;
         }
       }
+      obj4.apple_advertising_id = advertisingId;
+      let advertisingId1 = null;
+      if (null != initializeState) {
+        const obj1 = callback(500);
+        advertisingId1 = null;
+        if (obj1.isAndroid()) {
+          advertisingId1 = initializeState.advertisingId;
+        }
+      }
+      obj4.android_advertising_id = advertisingId1;
+      if (c5 == null) {
+        const obj2 = callback(514);
+        callback2 = obj2.v4();
+      }
+      obj4.click_id = callback2;
+      return obj4;
     })();
     iter.next();
     return iter;
@@ -592,7 +520,7 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsActions.tsx");
 
 export { trackQuestEvent };
-export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(f84917, closure_1, arg2, event, time_spent_ms) {
+export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(f84913, closure_1, arg2, event, time_spent_ms) {
   let obj = { content_name: null, cta_name: null, impression_id: null, source_content_name: null, app_id: null, content_position: null };
   obj[0] = require(7107) /* getQuestContentName */.getQuestContentName(closure_1.content);
   ({ ctaContent: obj[1], impressionId: obj[2] } = closure_1);
@@ -604,7 +532,7 @@ export const trackAppStoreOverlayEvent = function trackAppStoreOverlayEvent(f849
   if (tmp) {
     tmp = undefined !== time_spent_ms;
   }
-  obj = { questId: f84917.id, event, properties: null, sourceQuestContent: null };
+  obj = { questId: f84913.id, event, properties: null, sourceQuestContent: null };
   let tmp3 = obj;
   if (tmp) {
     obj = {};

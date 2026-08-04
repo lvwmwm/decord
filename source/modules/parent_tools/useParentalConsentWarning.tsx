@@ -1,10 +1,10 @@
-// Module ID: 14017
-// Function ID: 14018
+// Module ID: 14016
+// Function ID: 14017
 // Name: useParentalConsentWarning
-// Dependencies: [14018, 589, 2]
+// Dependencies: [14017, 589, 2]
 // Exports: useParentalConsentWarning
 
-// Module 14017 (useParentalConsentWarning)
+// Module 14016 (useParentalConsentWarning)
 import initialize from "initialize";
 
 const require = arg1;

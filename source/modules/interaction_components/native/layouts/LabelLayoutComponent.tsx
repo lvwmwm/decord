@@ -1,10 +1,10 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16340
+// Function ID: 16341
 // Name: LabelLayoutComponent
 // Dependencies: [19, 17, 21, 8026, 1906, 7714, 2]
 // Exports: default
 
-// Module 16341 (LabelLayoutComponent)
+// Module 16340 (LabelLayoutComponent)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

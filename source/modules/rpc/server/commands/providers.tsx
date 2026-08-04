@@ -1,9 +1,9 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 13662
+// Function ID: 13663
 // Name: AM_HARMONY_PRD_APPLICATION_ID
 // Dependencies: [5, 4964, 4188, 676, 4310, 505, 10546, 10548, 4966, 10543, 709, 1231, 10406, 5090, 2]
 
-// Module 13663 (AM_HARMONY_PRD_APPLICATION_ID)
+// Module 13662 (AM_HARMONY_PRD_APPLICATION_ID)
 import importDefaultResult from "sum";
 import closure_5 from "set";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";

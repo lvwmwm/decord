@@ -1,10 +1,10 @@
-// Module ID: 11978
-// Function ID: 11979
+// Module ID: 11977
+// Function ID: 11978
 // Name: GuildTemplatesHeader
-// Dependencies: [32, 19, 17, 11975, 8318, 676, 21, 4285, 5235, 712, 4281, 1236, 1480, 1581, 4695, 11951, 698, 11608, 11979, 5272, 5649, 2]
+// Dependencies: [32, 19, 17, 11974, 8318, 676, 21, 4285, 5235, 712, 4281, 1236, 1480, 1581, 4695, 11950, 698, 11608, 11978, 5272, 5649, 2]
 // Exports: default
 
-// Module 11978 (GuildTemplatesHeader)
+// Module 11977 (GuildTemplatesHeader)
 import _slicedToArray from "_slicedToArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "ListSelectionItem";
@@ -97,7 +97,7 @@ function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = { Icon: null, message: null, onPress: null };
-  obj[0] = guildTemplate(11979).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
+  obj[0] = guildTemplate(11978).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
   obj[1] = guildTemplate.label;
   obj[2] = function onPress() {
     return onGuildTemplatePress(guildTemplate);

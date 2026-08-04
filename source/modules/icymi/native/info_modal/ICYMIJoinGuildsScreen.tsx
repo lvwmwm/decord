@@ -1,10 +1,10 @@
-// Module ID: 15474
-// Function ID: 15475
+// Module ID: 15473
+// Function ID: 15474
 // Name: SelectedServerIcon
-// Dependencies: [5, 32, 19, 17, 4277, 1862, 15473, 676, 21, 15442, 712, 5661, 9623, 4146, 4286, 8337, 589, 1416, 8103, 5236, 4812, 4281, 4695, 4246, 1236, 1581, 8843, 8835, 3986, 4490, 15457, 7666, 2]
+// Dependencies: [5, 32, 19, 17, 4277, 1862, 15472, 676, 21, 15441, 712, 5661, 9623, 4146, 4286, 8337, 589, 1416, 8103, 5236, 4812, 4281, 4695, 4246, 1236, 1581, 8843, 8835, 3986, 4490, 15456, 7666, 2]
 // Exports: default
 
-// Module 15474 (SelectedServerIcon)
+// Module 15473 (SelectedServerIcon)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import set from "set";
 import preload from "preload";
@@ -392,7 +392,7 @@ export default function ICYMIJoinGuildsScreen() {
             const guildChannelScores = obj7.getGuildChannelScores();
             const recommendedGuilds = v0(8835).getRecommendedGuilds();
             const obj9 = v0(8835);
-            v0(4490).popWithKey(outer1_0(15457).ICYMI_INFO_MODAL_KEY);
+            v0(4490).popWithKey(outer1_0(15456).ICYMI_INFO_MODAL_KEY);
             dependencyMap = 3;
             const obj5 = { value: null, done: true };
             obj5[0] = undefined;
@@ -428,7 +428,7 @@ export default function ICYMIJoinGuildsScreen() {
           const obj19 = v0(8835);
           const recommendedGuilds1 = v0(8835).getRecommendedGuilds();
           const obj20 = v0(8835);
-          v0(4490).popWithKey(outer1_0(15457).ICYMI_INFO_MODAL_KEY);
+          v0(4490).popWithKey(outer1_0(15456).ICYMI_INFO_MODAL_KEY);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
         }

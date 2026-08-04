@@ -1,10 +1,10 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15301
+// Function ID: 15302
 // Name: Wrapper
-// Dependencies: [19, 17, 7017, 1862, 5122, 4480, 4301, 676, 21, 4285, 589, 9647, 4281, 1236, 15303, 4142, 4139, 2]
+// Dependencies: [19, 17, 7017, 1862, 5122, 4480, 4301, 676, 21, 4285, 589, 9647, 4281, 1236, 15302, 4142, 4139, 2]
 // Exports: default
 
-// Module 15302 (Wrapper)
+// Module 15301 (Wrapper)
 import noop from "noop";
 import { View } from "set";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";

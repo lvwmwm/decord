@@ -1,10 +1,10 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13132
+// Function ID: 13133
 // Name: _createTwoWayLink
-// Dependencies: [5, 19, 13132, 5090, 10418, 38, 5091, 10431, 2]
+// Dependencies: [5, 19, 13131, 5090, 10418, 38, 5091, 10431, 2]
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 13133 (_createTwoWayLink)
+// Module 13132 (_createTwoWayLink)
 import module_38 from "module_38";
 import noop from "noop";
 
@@ -53,7 +53,7 @@ function _createTwoWayLink() {
               let url;
               let c4;
               state = undefined;
-              const result = callback(13132).clientIdToActivateDevicePlatform(callback);
+              const result = callback(13131).clientIdToActivateDevicePlatform(callback);
               dependencyMap = result;
               if (null == result) {
                 c9 = 1;
@@ -74,7 +74,7 @@ function _createTwoWayLink() {
                 obj3[0] = obj10.authorize(result, obj2);
                 return obj3;
               }
-              const obj20 = callback(13132);
+              const obj20 = callback(13131);
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -263,66 +263,20 @@ function _silentlyFinishTwoWayLinkError() {
     let c3 = 0;
     let c6 = 0;
     return (function*(arg0, arg1, arg2) {
-      if (c3 === 2) {
+      let c6 = 1;
+      const obj1 = callback(table[7]);
+      yield obj1.finishUserCodeTwoWayLinkError(callback, closure_1, table);
+      if (1 === tmp6) {
+        c6 = 0;
+        let c3 = 3;
+      } else if (arg0 === 1) {
         c3 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp5 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let c6 = 1;
-              let obj1 = callback(table[7]);
-              c4 = 2;
-              c3 = 1;
-              obj1 = { value: null, done: false };
-              obj1[0] = obj1.finishUserCodeTwoWayLinkError(callback, closure_1, table);
-              return obj1;
-            }
-          } else {
-            if (1 === tmp6) {
-              c6 = 0;
-              c3 = 3;
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw arg1;
-            } else if (arg0 !== 2) {
-              c6 = 0;
-            }
-            c6 = 0;
-            c3 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          }
-        } catch (tmp13) {
-          let closure_5 = tmp13;
-          if (tmp3 === c6) {
-            c3 = tmp2;
-            throw tmp13;
-          } else {
-            c4 = tmp;
-          }
-        }
+        throw arg1;
+      } else if (arg0 !== 2) {
+        c6 = 0;
       }
+      c6 = 0;
+      return arg1;
     })();
   });
   const _silentlyFinishTwoWayLinkError = tmp;

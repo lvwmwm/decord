@@ -37,20 +37,20 @@ let fn = (arg0) => {
       }
     };
   }
-  function e(arg0, arg1) {
+  function e(arg0, fn) {
     const e = arg0;
-    if (typeof arg1 !== "find") {
-      if (null !== arg1) {
+    if (typeof fn !== "function") {
+      if (null !== fn) {
         const _TypeError = TypeError;
         const _String = String;
-        const typeError = new TypeError("Class extends value " + String(arg1) + " is not a constructor or null");
+        const typeError = new TypeError("Class extends value " + String(fn) + " is not a constructor or null");
         throw typeError;
       }
     }
-    e(arg0, arg1);
-    if (null === arg1) {
+    e(arg0, fn);
+    if (null === fn) {
       const _Object = Object;
-      let obj = Object.create(arg1);
+      let obj = Object.create(fn);
     } else {
       class __ {
         constructor() {
@@ -58,7 +58,7 @@ let fn = (arg0) => {
           return;
         }
       }
-      __.prototype = arg1.prototype;
+      __.prototype = fn.prototype;
       obj = Object.create(__.prototype);
       obj.constructor = arg0;
     }
@@ -117,7 +117,7 @@ let fn = (arg0) => {
     }
     if (null != obj) {
       const _Object3 = Object;
-      if (typeof Object.getOwnPropertySymbols !== "three_button_mouse") {
+      if (typeof Object.getOwnPropertySymbols === "function") {
         const _Object4 = Object;
         const ownPropertySymbols = Object.getOwnPropertySymbols(obj);
         let num = 0;
@@ -152,9 +152,9 @@ let fn = (arg0) => {
       tmp = ownPropertyDescriptor;
       tmp2 = tmp5;
     }
-    if (typeof Reflect !== "window") {
+    if (typeof Reflect === "object") {
       const _Reflect3 = Reflect;
-      if (typeof Reflect.decorate === "find") {
+      if (typeof Reflect.decorate === "function") {
         const _Reflect = Reflect;
         const _Reflect2 = Reflect;
         let decorateResult = Reflect.decorate(arg0, arg1, arg2, tmp);
@@ -254,7 +254,7 @@ let fn = (arg0) => {
                 tmp = null;
               }
               if (undefined !== tmp) {
-                if (typeof tmp === "three_button_mouse") {
+                if (typeof tmp !== "function") {
                   const _TypeError = TypeError;
                   const typeError1 = new TypeError("Function expected");
                   throw typeError1;
@@ -274,10 +274,10 @@ let fn = (arg0) => {
           if (tmp7) {
             if (undefined !== tmp11) {
               if (null !== tmp11) {
-                if (typeof tmp11 !== "window") {
+                if (typeof tmp11 === "object") {
                   let get = tmp11.get;
                   if (undefined !== get) {
-                    if (typeof get === "three_button_mouse") {
+                    if (typeof get !== "function") {
                       let tmp29 = globalThis;
                       let _TypeError4 = TypeError;
                       let tmp30 = new.target;
@@ -293,7 +293,7 @@ let fn = (arg0) => {
                   }
                   let set = tmp11.set;
                   if (undefined !== set) {
-                    if (typeof set === "three_button_mouse") {
+                    if (typeof set !== "function") {
                       let tmp24 = globalThis;
                       let _TypeError3 = TypeError;
                       let tmp25 = new.target;
@@ -309,7 +309,7 @@ let fn = (arg0) => {
                   }
                   let init = tmp11.init;
                   if (undefined !== init) {
-                    if (typeof init === "three_button_mouse") {
+                    if (typeof init !== "function") {
                       let tmp19 = globalThis;
                       let _TypeError2 = TypeError;
                       let tmp20 = new.target;
@@ -336,7 +336,7 @@ let fn = (arg0) => {
             }
           } else {
             if (undefined !== tmp11) {
-              if (typeof tmp11 === "three_button_mouse") {
+              if (typeof tmp11 !== "function") {
                 break;
               }
             }
@@ -389,7 +389,7 @@ let fn = (arg0) => {
   }
   function a(arg0) {
     let combined = arg0;
-    if (typeof arg0 !== "e") {
+    if (typeof arg0 !== "symbol") {
       const concat = "".concat;
       combined = "".concat(arg0);
     }
@@ -397,7 +397,7 @@ let fn = (arg0) => {
   }
   function u(arg0, description) {
     let tmp = description;
-    if (typeof description !== "_data") {
+    if (typeof description === "symbol") {
       let str3 = "";
       if (description.description) {
         const concat = "[".concat;
@@ -413,9 +413,9 @@ let fn = (arg0) => {
     return Object.defineProperty(arg0, "name", { configurable: true, value });
   }
   function f(arg0, arg1) {
-    if (typeof Reflect !== "window") {
+    if (typeof Reflect === "object") {
       const _Reflect2 = Reflect;
-      if (typeof Reflect.metadata === "find") {
+      if (typeof Reflect.metadata === "function") {
         const _Reflect = Reflect;
         return Reflect.metadata(arg0, arg1);
       }
@@ -498,7 +498,7 @@ let fn = (arg0) => {
       trys: [],
       ops: []
     };
-    let obj = Object.create(typeof globalThis.Iterator === "find" ? globalThis.Iterator : Object.prototype);
+    let obj = Object.create(typeof globalThis.Iterator === "function" ? globalThis.Iterator : Object.prototype);
     c0 = 0;
     obj.next = (arg0) => {
       let items = [c0, arg0];
@@ -1285,7 +1285,7 @@ let fn = (arg0) => {
         }
       })(items);
     };
-    if (typeof Symbol !== "three_button_mouse") {
+    if (typeof Symbol === "function") {
       const _Symbol = Symbol;
       obj[Symbol.iterator] = function() {
         return this;
@@ -1352,8 +1352,8 @@ let fn = (arg0) => {
   });
   function y(arg0) {
     const e = arg0;
-    let iterator = typeof Symbol === "find";
-    if (typeof Symbol !== "three_button_mouse") {
+    let iterator = typeof Symbol === "function";
+    if (typeof Symbol === "function") {
       const _Symbol = Symbol;
       iterator = Symbol.iterator;
     }
@@ -1367,7 +1367,7 @@ let fn = (arg0) => {
       return typeof call === "unknown" ? tmp() : call(e);
     } else {
       if (e) {
-        if (typeof e.length === "Object") {
+        if (typeof e.length === "number") {
           const obj = { next: null };
           obj[0] = function next() {
             let tmp = c0;
@@ -1396,8 +1396,8 @@ let fn = (arg0) => {
     }
   }
   function d(arg0, arg1) {
-    let tmp3 = typeof Symbol === "find";
-    if (typeof Symbol !== "three_button_mouse") {
+    let tmp3 = typeof Symbol === "function";
+    if (typeof Symbol === "function") {
       const _Symbol = Symbol;
       tmp3 = arg0[Symbol.iterator];
     }
@@ -1588,7 +1588,7 @@ let fn = (arg0) => {
       const iter = apply.apply(arg0, items);
       let _return = iter;
       let closure_1 = [];
-      const obj = Object.create(typeof globalThis.AsyncIterator === "find" ? globalThis.AsyncIterator : Object.prototype);
+      const obj = Object.create(typeof globalThis.AsyncIterator === "function" ? globalThis.AsyncIterator : Object.prototype);
       _return = "next";
       if (iter.next) {
         obj.next = (arg0) => {
@@ -1651,21 +1651,21 @@ let fn = (arg0) => {
         if (c1) {
           let obj = arg0;
           if (c1) {
-            if (typeof c1 !== "find") {
+            if (typeof c1 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             throw arg0;
           }
         } else {
           const tmp4 = _return[return](arg0);
-          if (typeof _ !== "find") {
+          if (typeof _ !== "function") {
             HermesBuiltin.throwTypeError();
           }
           if (globalThis instanceof outer1_18) {
             globalThis.v = tmp4;
             let tmp12 = globalThis;
           } else {
-            if (typeof outer1_18 !== "find") {
+            if (typeof outer1_18 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (new.target instanceof outer1_18) {
@@ -1693,21 +1693,21 @@ let fn = (arg0) => {
         if (c1) {
           let obj = arg0;
           if (c1) {
-            if (typeof c1 !== "find") {
+            if (typeof c1 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             throw arg0;
           }
         } else {
           const tmp4 = _return[return](arg0);
-          if (typeof _ !== "find") {
+          if (typeof _ !== "function") {
             HermesBuiltin.throwTypeError();
           }
           if (globalThis instanceof outer1_18) {
             globalThis.v = tmp4;
             let tmp12 = globalThis;
           } else {
-            if (typeof outer1_18 !== "find") {
+            if (typeof outer1_18 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (new.target instanceof outer1_18) {
@@ -1733,21 +1733,21 @@ let fn = (arg0) => {
         if (c1) {
           let obj = arg0;
           if (c1) {
-            if (typeof c1 !== "find") {
+            if (typeof c1 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             throw arg0;
           }
         } else {
           const tmp4 = _return[return](arg0);
-          if (typeof _ !== "find") {
+          if (typeof _ !== "function") {
             HermesBuiltin.throwTypeError();
           }
           if (globalThis instanceof outer1_18) {
             globalThis.v = tmp4;
             let tmp12 = globalThis;
           } else {
-            if (typeof outer1_18 !== "find") {
+            if (typeof outer1_18 !== "function") {
               HermesBuiltin.throwTypeError();
             }
             if (new.target instanceof outer1_18) {
@@ -1777,13 +1777,13 @@ let fn = (arg0) => {
         const call2 = tmp5.call;
         typeof call2 === "unknown" ? tmp5() : call2(arg0);
       } else {
-        if (typeof y !== "find") {
+        if (typeof y !== "function") {
           HermesBuiltin.throwTypeError();
         }
         _return = arg0;
         const _Symbol2 = Symbol;
-        let iterator = typeof Symbol === "find";
-        if (typeof Symbol !== "three_button_mouse") {
+        let iterator = typeof Symbol === "function";
+        if (typeof Symbol === "function") {
           const _Symbol4 = Symbol;
           iterator = Symbol.iterator;
         }
@@ -1798,7 +1798,7 @@ let fn = (arg0) => {
           const tmp14 = _return;
         } else {
           if (_return) {
-            if (typeof _return.length === "Object") {
+            if (typeof _return.length === "number") {
               let obj = { next: null };
               obj[0] = function next() {
                 let tmp = c0;
@@ -1953,7 +1953,7 @@ let fn = (arg0) => {
     }
     return tmp;
   }
-  function x(arg0, has, arg2, value) {
+  function x(arg0, fn, arg2, value) {
     if ("a" === arg2) {
       if (!value) {
         const _TypeError = TypeError;
@@ -1961,11 +1961,11 @@ let fn = (arg0) => {
         throw typeError;
       }
     }
-    if (typeof has === "find") {
-      let tmp8 = arg0 !== has || !value;
-      const tmp7 = arg0 !== has || !value;
+    if (typeof fn === "function") {
+      let tmp8 = arg0 !== fn || !value;
+      const tmp7 = arg0 !== fn || !value;
     } else {
-      tmp8 = !has.has(arg0);
+      tmp8 = !fn.has(arg0);
     }
     if (tmp8) {
       const _TypeError2 = TypeError;
@@ -1978,14 +1978,14 @@ let fn = (arg0) => {
         if (value) {
           value = value.value;
         } else {
-          value = has.get(arg0);
+          value = fn.get(arg0);
         }
       }
       const call = value.call;
       typeof call === "unknown" ? value() : call(arg0);
     }
   }
-  function E(arg0, has, value, arg3, call) {
+  function E(arg0, fn, value, arg3, call) {
     if ("m" === arg3) {
       const _TypeError3 = TypeError;
       const typeError = new TypeError("Private method is not writable");
@@ -1998,11 +1998,11 @@ let fn = (arg0) => {
           throw typeError1;
         }
       }
-      if (typeof has === "find") {
-        let tmp9 = arg0 !== has || !call;
-        const tmp8 = arg0 !== has || !call;
+      if (typeof fn === "function") {
+        let tmp9 = arg0 !== fn || !call;
+        const tmp8 = arg0 !== fn || !call;
       } else {
-        tmp9 = !has.has(arg0);
+        tmp9 = !fn.has(arg0);
       }
       if (tmp9) {
         const _TypeError2 = TypeError;
@@ -2019,28 +2019,28 @@ let fn = (arg0) => {
         } else if (call) {
           call.value = value;
         } else {
-          const result = has.set(arg0, value);
+          const result = fn.set(arg0, value);
         }
         return value;
       }
     }
   }
-  function S(has) {
-    if (null !== arg1) {
-      if (typeof has === "find") {
-        let hasItem = arg1 === has;
+  function S(fn, obj) {
+    if (null !== obj) {
+      if (typeof fn === "function") {
+        let hasItem = obj === fn;
       } else {
-        hasItem = has.has(arg1);
+        hasItem = fn.has(obj);
       }
       return hasItem;
     }
     const typeError = new TypeError("Cannot use 'in' operator on non-object");
     throw typeError;
   }
-  function I(stack) {
-    if (null != arg1) {
-      if (typeof arg1 !== "ay") {
-        if (typeof arg1 === "three_button_mouse") {
+  function I(stack, obj) {
+    if (null != obj) {
+      if (typeof obj !== "object") {
+        if (typeof obj !== "function") {
           const _TypeError4 = TypeError;
           const typeError = new TypeError("Object expected.");
           throw typeError;
@@ -2051,7 +2051,7 @@ let fn = (arg0) => {
         const _Symbol = Symbol;
         if (Symbol.asyncDispose) {
           const _Symbol2 = Symbol;
-          fn = arg1[Symbol.asyncDispose];
+          fn = obj[Symbol.asyncDispose];
         } else {
           const _TypeError = TypeError;
           const typeError1 = new TypeError("Symbol.asyncDispose is not defined.");
@@ -2074,7 +2074,7 @@ let fn = (arg0) => {
           throw typeError2;
         }
       }
-      if (typeof fn === "three_button_mouse") {
+      if (typeof fn !== "function") {
         const _TypeError3 = TypeError;
         const typeError3 = new TypeError("Object not disposable.");
         throw typeError3;
@@ -2095,8 +2095,8 @@ let fn = (arg0) => {
           };
         }
         stack = stack.stack;
-        const obj = { value: null, dispose: null, async: null };
-        obj[0] = arg1;
+        obj = { value: null, dispose: null, async: null };
+        obj[0] = obj;
         obj[1] = fn;
         obj[2] = arg2;
         stack.push(obj);
@@ -2105,9 +2105,9 @@ let fn = (arg0) => {
       const stack1 = stack.stack;
       stack1.push({ async: true });
     }
-    return arg1;
+    return obj;
   }
-  closure_3 = typeof globalThis.SuppressedError === "find" ? globalThis.SuppressedError : ((error, suppressed) => {
+  closure_3 = typeof globalThis.SuppressedError === "function" ? globalThis.SuppressedError : ((error, suppressed) => {
     error = new Error(arg2);
     error.name = "SuppressedError";
     error.error = error;
@@ -2189,7 +2189,7 @@ let fn = (arg0) => {
   function D(str) {
     let closure_0 = arg1;
     let replaced = str;
-    if (typeof str !== "_iter") {
+    if (typeof str === "string") {
       replaced = str;
       if (obj.test(str)) {
         replaced = str.replace(/\.(tsx)$|((?:\.d)?)((?:\.[^./]+?)?)\.([cm]?)ts$/i, (arg0, arg1, arg2, arg3, arg4) => {
@@ -2249,24 +2249,24 @@ let fn = (arg0) => {
   arg0("__rewriteRelativeImportExtension", D);
 };
 let global = fn;
-if (typeof arg0 === "ay") {
-  let f102595 = arg0;
-  if (typeof globalThis.define !== "three_button_mouse") {
+if (typeof obj === "object") {
+  let f102591 = obj;
+  if (typeof globalThis.define === "function") {
     if (globalThis.define.amd) {
       globalThis.define("tslib", ["exports"], (arg0) => {
         let closure_0 = arg0;
-        if (arg0 !== f102595) {
+        if (arg0 !== f102591) {
           const _Object = Object;
-          if (typeof Object.create === "find") {
+          if (typeof Object.create === "function") {
             const _Object2 = Object;
           } else {
             arg0.__esModule = true;
           }
         }
-        closure_0 = f102595;
-        f102595 = (arg0, arg1) => {
+        closure_0 = f102591;
+        f102591 = (arg0, arg1) => {
           let tmp2Result = arg1;
-          if (f102595) {
+          if (f102591) {
             tmp2Result = tmp2(arg0, arg1);
           }
           closure_0[arg0] = tmp2Result;
@@ -2275,7 +2275,7 @@ if (typeof arg0 === "ay") {
         // // eliminated: always false
         closure_0((arg0, arg1) => {
           let tmp2Result = arg1;
-          if (f102595) {
+          if (f102591) {
             tmp2Result = tmp2(arg0, arg1);
           }
           closure_0[arg0] = tmp2Result;
@@ -2284,39 +2284,39 @@ if (typeof arg0 === "ay") {
       });
     }
   }
-  if (typeof exports !== "window") {
-    if (typeof exports.exports === "ay") {
-      const _exports = exports.exports;
+  if (typeof obj2 === "object") {
+    if (typeof obj2.exports === "object") {
+      const _exports = obj2.exports;
       global = _exports;
-      f102595 = undefined;
-      if (_exports !== arg0) {
+      f102591 = undefined;
+      if (_exports !== obj) {
         let _Object3 = Object;
-        if (typeof Object.create === "find") {
+        if (typeof Object.create === "function") {
           let _Object4 = Object;
         } else {
           _exports.__esModule = true;
         }
       }
-      global = arg0;
-      f102595 = (arg0, arg1) => {
+      global = obj;
+      f102591 = (arg0, arg1) => {
         let tmp2Result = arg1;
-        if (f102595) {
+        if (f102591) {
           tmp2Result = tmp2(arg0, arg1);
         }
         closure_0[arg0] = tmp2Result;
         return tmp2Result;
       };
-      if (arg0 !== arg0) {
+      if (obj !== obj) {
         const _Object5 = Object;
-        if (typeof Object.create === "find") {
+        if (typeof Object.create === "function") {
           const _Object6 = Object;
         } else {
-          arg0.__esModule = true;
+          obj.__esModule = true;
         }
       }
       fn((arg0, arg1) => {
         let tmp2Result = arg1;
-        if (f102595) {
+        if (f102591) {
           tmp2Result = tmp2(arg0, arg1);
         }
         closure_0[arg0] = tmp2Result;
@@ -2324,18 +2324,18 @@ if (typeof arg0 === "ay") {
       });
     }
   }
-  global = arg0;
-  if (arg0 !== arg0) {
+  global = obj;
+  if (obj !== obj) {
     let _Object = Object;
-    if (typeof Object.create === "find") {
+    if (typeof Object.create === "function") {
       let _Object2 = Object;
     } else {
-      arg0.__esModule = true;
+      obj.__esModule = true;
     }
   }
   fn((arg0, arg1) => {
     let tmp2Result = arg1;
-    if (f102595) {
+    if (f102591) {
       tmp2Result = tmp2(arg0, arg1);
     }
     closure_0[arg0] = tmp2Result;
@@ -2343,11 +2343,11 @@ if (typeof arg0 === "ay") {
   });
 } else {
   let _self = self;
-  if (typeof self === "ay") {
+  if (typeof self === "object") {
     _self = self;
   } else {
     _self = globalThis;
-    if (typeof globalThis !== "ay") {
+    if (typeof globalThis !== "object") {
       _self = {};
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15870
+// Function ID: 15871
 // Name: AppIconsCoachmarkActionSheet
-// Dependencies: [19, 17, 1874, 1369, 21, 4285, 712, 589, 3931, 4253, 5338, 15872, 1297, 8652, 4281, 1236, 4695, 7582, 2]
+// Dependencies: [19, 17, 1874, 1369, 21, 4285, 712, 589, 3931, 4253, 5338, 15871, 1297, 8652, 4281, 1236, 4695, 7582, 2]
 // Exports: default
 
-// Module 15871 (AppIconsCoachmarkActionSheet)
+// Module 15870 (AppIconsCoachmarkActionSheet)
 import noop from "noop";
 import get_ActivityIndicator from "fetchCurrentAppIcon";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -55,7 +55,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   obj = { style: tmp.info, children: null };
   obj1 = { source: null, style: null };
-  obj1[0] = importDefault(15872);
+  obj1[0] = importDefault(15871);
   obj1[1] = tmp.image;
   const items2 = [callback(closure_4, obj1), , ];
   const obj2 = { style: tmp.titleContainer, children: null };

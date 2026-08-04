@@ -1,9 +1,9 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15126
+// Function ID: 15127
 // Name: getFriendInviteCode
-// Dependencies: [5, 19, 17, 676, 21, 12445, 712, 4285, 7679, 3985, 1236, 8987, 7138, 4137, 4812, 4281, 13109, 15128, 2]
+// Dependencies: [5, 19, 17, 676, 21, 12444, 712, 4285, 7679, 3985, 1236, 8987, 7138, 4137, 4812, 4281, 13108, 15127, 2]
 
-// Module 15127 (getFriendInviteCode)
+// Module 15126 (getFriendInviteCode)
 import ButtonBadge from "ButtonBadge";
 import importAllResult from "noop";
 import { View } from "registerAsset";
@@ -308,18 +308,18 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
   const items = [callback2(require(4812) /* PressableBase */.PressableHighlight, obj), ];
   const obj1 = { style: tmp.actions, children: null };
   const obj2 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  obj2[2] = importDefault(13109);
+  obj2[2] = importDefault(13108);
   obj2[3] = handleShare;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[4] = intl3.string(require(1236) /* getSystemLocale */.t.Ej3B3Y);
-  const items1 = [callback2(importDefault(12445), obj2), ];
+  const items1 = [callback2(importDefault(12444), obj2), ];
   const obj3 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  const tmp3 = importDefault(12445);
-  obj3[2] = importDefault(15128);
+  const tmp3 = importDefault(12444);
+  obj3[2] = importDefault(15127);
   obj3[3] = handleLink;
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj3[4] = intl4.string(require(1236) /* getSystemLocale */.t.WqhZss);
-  items1[1] = callback2(importDefault(12445), obj3);
+  items1[1] = callback2(importDefault(12444), obj3);
   obj1[1] = items1;
   items[1] = callback3(View, obj1);
   obj[2] = items;

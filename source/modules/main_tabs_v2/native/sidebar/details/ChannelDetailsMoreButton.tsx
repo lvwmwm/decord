@@ -1,10 +1,10 @@
-// Module ID: 15684
-// Function ID: 15685
+// Module ID: 15683
+// Function ID: 15684
 // Name: MoreButton
 // Dependencies: [19, 21, 9585, 8196, 8193, 1236, 8973, 2]
 // Exports: default
 
-// Module 15684 (MoreButton)
+// Module 15683 (MoreButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

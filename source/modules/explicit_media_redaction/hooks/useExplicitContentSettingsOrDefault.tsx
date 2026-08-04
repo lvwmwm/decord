@@ -1,10 +1,10 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 13970
+// Function ID: 13971
 // Name: useExplicitContentSettingOrDefault
 // Dependencies: [1340, 647, 5824, 5826, 2]
 // Exports: useExplicitContentSettingOrDefault, useGoreContentSettingOrDefault
 
-// Module 13971 (useExplicitContentSettingOrDefault)
+// Module 13970 (useExplicitContentSettingOrDefault)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 
 const require = arg1;

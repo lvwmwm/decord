@@ -1,10 +1,10 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15000
+// Function ID: 15001
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 14978, 8295, 15002, 1236, 14989, 2]
+// Dependencies: [5, 32, 19, 14977, 8295, 15001, 1236, 14988, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 15001 (usePasswordRegistrationStep)
+// Module 15000 (usePasswordRegistrationStep)
 import PasswordScore from "PasswordScore";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

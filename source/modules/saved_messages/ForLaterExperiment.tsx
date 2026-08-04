@@ -37,7 +37,7 @@ const obj2 = {
   1: null,
   2: (arg0) => {
     const parsed = JSON.parse(arg0);
-    if (typeof ForLaterFreemiumConfig !== "find") {
+    if (typeof ForLaterFreemiumConfig !== "function") {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(ForLaterFreemiumConfig.prototype);
@@ -50,7 +50,7 @@ const obj2 = {
 };
 obj2[2] = (arg0) => {
   const parsed = JSON.parse(arg0);
-  if (typeof ForLaterFreemiumConfig !== "find") {
+  if (typeof ForLaterFreemiumConfig !== "function") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(ForLaterFreemiumConfig.prototype);

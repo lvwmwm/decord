@@ -212,8 +212,8 @@ const items = [
     get() {
       return FileReader(205).getEventHandlerAttribute(this, "abort");
     },
-    set(arg0) {
-      const result = FileReader(205).setEventHandlerAttribute(this, "abort", arg0);
+    set(fn) {
+      const result = FileReader(205).setEventHandlerAttribute(this, "abort", fn);
     }
   },
   {
@@ -221,8 +221,8 @@ const items = [
     get() {
       return FileReader(205).getEventHandlerAttribute(this, "error");
     },
-    set(arg0) {
-      const result = FileReader(205).setEventHandlerAttribute(this, "error", arg0);
+    set(fn) {
+      const result = FileReader(205).setEventHandlerAttribute(this, "error", fn);
     }
   },
   {
@@ -230,8 +230,8 @@ const items = [
     get() {
       return FileReader(205).getEventHandlerAttribute(this, "load");
     },
-    set(arg0) {
-      const result = FileReader(205).setEventHandlerAttribute(this, "load", arg0);
+    set(fn) {
+      const result = FileReader(205).setEventHandlerAttribute(this, "load", fn);
     }
   },
   {
@@ -239,8 +239,8 @@ const items = [
     get() {
       return FileReader(205).getEventHandlerAttribute(this, "loadstart");
     },
-    set(arg0) {
-      const result = FileReader(205).setEventHandlerAttribute(this, "loadstart", arg0);
+    set(fn) {
+      const result = FileReader(205).setEventHandlerAttribute(this, "loadstart", fn);
     }
   },
   {
@@ -248,8 +248,8 @@ const items = [
     get() {
       return FileReader(205).getEventHandlerAttribute(this, "loadend");
     },
-    set(arg0) {
-      const result = FileReader(205).setEventHandlerAttribute(this, "loadend", arg0);
+    set(fn) {
+      const result = FileReader(205).setEventHandlerAttribute(this, "loadend", fn);
     }
   },
   {
@@ -257,8 +257,8 @@ const items = [
     get() {
       return FileReader(205).getEventHandlerAttribute(this, "progress");
     },
-    set(arg0) {
-      const result = FileReader(205).setEventHandlerAttribute(this, "progress", arg0);
+    set(fn) {
+      const result = FileReader(205).setEventHandlerAttribute(this, "progress", fn);
     }
   }
 ];

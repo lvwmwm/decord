@@ -1,10 +1,10 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13280
+// Function ID: 13281
 // Name: LiveTag
 // Dependencies: [19, 17, 21, 4285, 712, 500, 4281, 1236, 2]
 // Exports: default
 
-// Module 13281 (LiveTag)
+// Module 13280 (LiveTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 16516
+// Function ID: 16517
 // Name: computeEmojiItem
-// Dependencies: [32, 19, 17, 1862, 16518, 21, 12, 8662, 4285, 712, 1236, 5148, 4177, 589, 8908, 4281, 16520, 16524, 1297, 16525, 5732, 5596, 1480, 5238, 2]
+// Dependencies: [32, 19, 17, 1862, 16517, 21, 12, 8662, 4285, 712, 1236, 5148, 4177, 589, 8908, 4281, 16519, 16523, 1297, 16524, 5732, 5596, 1480, 5238, 2]
 // Exports: computeSectionItem, default
 
-// Module 16517 (computeEmojiItem)
+// Module 16516 (computeEmojiItem)
 import _slicedToArray from "_slicedToArray";
 import getEmptyServerSettingsEmojiSource from "getEmptyServerSettingsEmojiSource";
 import get_ActivityIndicator from "HeaderRow";

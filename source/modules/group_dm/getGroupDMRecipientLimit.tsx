@@ -1,10 +1,10 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15704
+// Function ID: 15705
 // Name: getGroupDMRecipientLimit
 // Dependencies: [1874, 676, 2]
 // Exports: default
 
-// Module 15705 (getGroupDMRecipientLimit)
+// Module 15704 (getGroupDMRecipientLimit)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 

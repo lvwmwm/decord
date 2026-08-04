@@ -1,10 +1,10 @@
-// Module ID: 13353
-// Function ID: 13354
+// Module ID: 13352
+// Function ID: 13353
 // Name: IntlLink
 // Dependencies: [19, 21, 4285, 712, 4004, 3982, 3984, 1297, 2]
 // Exports: IntlLink
 
-// Module 13353 (IntlLink)
+// Module 13352 (IntlLink)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,14 +23,14 @@ const result = require("createCacheKey").fileFinishedImporting("intl/native/migr
 
 export const IntlLink = function IntlLink(children) {
   const target = children.target;
-  if (typeof target === "y") {
+  if (typeof target === "string") {
     let fn = () => {
       const obj = outer1_1(outer1_2[5]);
       return obj.openURL(outer1_1(outer1_2[6]).sanitizeUrl(target));
     };
   } else {
     fn = target;
-    if (typeof target !== "window") {
+    if (typeof target === "object") {
       fn = target;
       if (null != target.onClick) {
         fn = target.onClick;

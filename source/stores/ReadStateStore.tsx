@@ -1,7 +1,7 @@
 // Module ID: 4297
 // Function ID: 4298
 // Name: generateOldThreadCutoff
-// Dependencies: [5, 32, 1371, 4298, 1933, 4199, 6894, 5750, 5751, 7020, 5192, 3915, 1340, 1376, 1218, 5807, 1372, 4954, 4622, 1862, 5095, 4502, 3913, 3922, 1931, 4480, 1874, 13091, 676, 9674, 1379, 1378, 4481, 1235, 3, 13092, 13093, 11, 687, 709, 4518, 13094, 530, 4170, 10384, 9677, 3921, 13095, 6903, 7017, 13096, 1959, 1384, 3867, 12, 1351, 4958, 4137, 9676, 3920, 1385, 589, 6785, 8858, 2]
+// Dependencies: [5, 32, 1371, 4298, 1933, 4199, 6894, 5750, 5751, 7020, 5192, 3915, 1340, 1376, 1218, 5807, 1372, 4954, 4622, 1862, 5095, 4502, 3913, 3922, 1931, 4480, 1874, 13090, 676, 9674, 1379, 1378, 4481, 1235, 3, 13091, 13092, 11, 687, 709, 4518, 13093, 530, 4170, 10384, 9677, 3921, 13094, 6903, 7017, 13095, 1959, 1384, 3867, 12, 1351, 4958, 4137, 9676, 3920, 1385, 589, 6785, 8858, 2]
 
 // Module 4297 (generateOldThreadCutoff)
 import getHash from "getHash";
@@ -658,8 +658,8 @@ function getThreadAckMessageTimestamp(guildId, channelId) {
           const _isNaN = isNaN;
           now = isNaN(_Date);
           let joinedAt = _Date;
-        } else if (typeof joinedAt2 !== "y") {
-          if (typeof _Date.joinedAt !== "V") {
+        } else if (typeof joinedAt2 !== "string") {
+          if (typeof _Date.joinedAt === "number") {
             const _isNaN6 = isNaN;
             if (!isNaN(_Date.joinedAt)) {
               joinedAt = _Date.joinedAt;
@@ -1089,7 +1089,7 @@ ReadState["get"] = function get(channelId) {
     value = value.get(channelId);
   }
   if (null == value) {
-    if (typeof tmp2 !== "find") {
+    if (typeof tmp2 !== "function") {
       HermesBuiltin.throwTypeError();
     }
     let CHANNEL2 = CHANNEL;
@@ -1755,7 +1755,7 @@ prototype2["canBeUnread"] = function canBeUnread() {
     }
     return self.canTrackUnreads();
   }
-  obj = require(13095) /* filterOutMessageRequestsAndSpam */;
+  obj = require(13094) /* filterOutMessageRequestsAndSpam */;
   tmp = require;
 };
 prototype2["canHaveMentions"] = function canHaveMentions() {
@@ -1765,7 +1765,7 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
     let tmp3 = !tmp2;
     if (!(self._isThread && !self._isJoinedThread)) {
       const items = [processChannel, closure_12];
-      const result = require(13095) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
+      const result = require(13094) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
       let tmp9 = !result;
       if (!result) {
         let result1 = tmp4(6903).isOptInEnabledForGuild(self._guildId);
@@ -1780,7 +1780,7 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
         const tmp4Result = tmp4(6903);
       }
       tmp3 = tmp9;
-      const obj = require(13095) /* filterOutMessageRequestsAndSpam */;
+      const obj = require(13094) /* filterOutMessageRequestsAndSpam */;
       tmp4 = require;
     }
     tmp = tmp3;
@@ -1868,7 +1868,7 @@ prototype2["ackPins"] = function ackPins() {
         return false;
       } else {
         self._persisted = true;
-        importDefault(13094)(() => {
+        importDefault(13093)(() => {
           const HTTP = self(outer1_2[42]).HTTP;
           return HTTP.post({ url: outer1_39.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true });
         });
@@ -2083,7 +2083,7 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
       tmp4 = recalculateFlagsResult;
     }
     const require = tmp4;
-    importDefault(13094)(() => {
+    importDefault(13093)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2099,20 +2099,20 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
         }
         callback(709).dispatch({ type: "MESSAGE_ACKED" });
         if (dependencyMap) {
-          tmp4(1959)(13096, tmp5.paths).then((arg0) => {
+          tmp4(1959)(13095, tmp5.paths).then((arg0) => {
             let obj = closure_1;
             if (closure_1 == null) {
               obj = {};
             }
             arg0.default(channelId.channelId, obj);
           });
-          const promise = tmp4(1959)(13096, tmp5.paths);
+          const promise = tmp4(1959)(13095, tmp5.paths);
         }
         let obj = callback(709);
         tmp5 = dependencyMap;
       }
     });
-    let promise = importDefault(13094)(() => {
+    let promise = importDefault(13093)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2149,7 +2149,7 @@ prototype2["_nonChannelAck"] = function _nonChannelAck() {
         }
         self._persisted = true;
         self = importDefault;
-        importDefault(13094)(() => {
+        importDefault(13093)(() => {
           const HTTP = callback(outer1_2[42]).HTTP;
           return HTTP.post({ url: callback, body: {}, oldFormErrors: true, rejectWithError: true });
         });
@@ -2380,13 +2380,13 @@ prototype2["getAckTimestamp"] = function getAckTimestamp() {
               const time = joinedAt2.getTime();
               const _isNaN3 = isNaN;
               let joinedAt = time;
-            } else if (typeof joinedAt2 === "y") {
+            } else if (typeof joinedAt2 === "string") {
               const _Date = Date;
               const date = new Date(guild.joinedAt);
               const time1 = date.getTime();
               const _isNaN2 = isNaN;
               joinedAt = time1;
-            } else if (typeof guild.joinedAt !== "V") {
+            } else if (typeof guild.joinedAt === "number") {
               const _isNaN5 = isNaN;
               if (!isNaN(guild.joinedAt)) {
                 joinedAt = guild.joinedAt;
@@ -2681,13 +2681,13 @@ prototype3["isNewForumThread"] = function isNewForumThread(id, parent_id, guild)
               const time = joinedAt2.getTime();
               const _isNaN2 = isNaN;
               let joinedAt = time;
-            } else if (typeof joinedAt2 === "y") {
+            } else if (typeof joinedAt2 === "string") {
               const _Date = Date;
               const date = new Date(guild.joinedAt);
               const time1 = date.getTime();
               const _isNaN = isNaN;
               joinedAt = time1;
-            } else if (typeof guild.joinedAt !== "V") {
+            } else if (typeof guild.joinedAt === "number") {
               const _isNaN3 = isNaN;
               if (!isNaN(guild.joinedAt)) {
                 joinedAt = guild.joinedAt;
@@ -3792,7 +3792,7 @@ obj = {
     });
     const item = found.forEach((messageId) => {
       const value = closure_81.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId: messageId.messageId, local: true, immediate: "HermesInternal", force: "ct", isExplicitUserAction: true, trackAnalytics: false });
+      value.ack({ messageId: messageId.messageId, local: true, immediate: "HermesInternal", force: "ct", isExplicitUserAction: null, trackAnalytics: null });
     });
     if (context === closure_41) {
       const push = navigation.push;

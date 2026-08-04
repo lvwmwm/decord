@@ -1,10 +1,10 @@
-// Module ID: 12513
-// Function ID: 12514
+// Module ID: 12512
+// Function ID: 12513
 // Name: createGuildProfileInvite
 // Dependencies: [32, 1946, 10906, 676, 7116, 7863, 5279, 4131, 712, 1411, 9175, 9173, 1416, 1857, 1849, 1236, 11103, 9181, 7117, 11, 1939, 5635, 688, 7855, 7865, 2]
 // Exports: createGuildProfileInvite
 
-// Module 12513 (createGuildProfileInvite)
+// Module 12512 (createGuildProfileInvite)
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
 import { CodedLinkExtendedType } from "CodedLinkExtendedType";

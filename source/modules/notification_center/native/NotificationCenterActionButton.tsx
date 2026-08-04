@@ -1,10 +1,10 @@
-// Module ID: 15396
-// Function ID: 15397
+// Module ID: 15395
+// Function ID: 15396
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 7672, 8415, 4253, 15397, 1959, 1236, 2]
+// Dependencies: [19, 21, 7672, 8415, 4253, 15396, 1959, 1236, 2]
 // Exports: default
 
-// Module 15396 (NotificationCenterActionButton)
+// Module 15395 (NotificationCenterActionButton)
 import "noop";
 import { jsx } from "jsxProd";
 

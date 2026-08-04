@@ -1,10 +1,10 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 14774
+// Function ID: 14775
 // Name: DataAndPrivacySettings
-// Dependencies: [19, 5738, 7892, 676, 21, 1236, 1945, 9131, 1480, 14006, 14009, 10361, 13966, 13794, 2]
+// Dependencies: [19, 5738, 7892, 676, 21, 1236, 1945, 9131, 1480, 14005, 14008, 10361, 13965, 13793, 2]
 // Exports: default
 
-// Module 14775 (DataAndPrivacySettings)
+// Module 14774 (DataAndPrivacySettings)
 import noop from "noop";
 import hasConsented from "hasConsented";
 import { MobileSetting } from "MobileSetting";
@@ -79,10 +79,10 @@ export default function DataAndPrivacySettings() {
   items1.push({ settings: items7 });
   const effect = React.useEffect(() => {
     if (!fetchedConsents.fetchedConsents) {
-      const consents = stackNavigation(14006).fetchConsents();
-      const obj = stackNavigation(14006);
+      const consents = stackNavigation(14005).fetchConsents();
+      const obj = stackNavigation(14005);
     }
-    const harvestStatus = stackNavigation(14009).fetchHarvestStatus();
+    const harvestStatus = stackNavigation(14008).fetchHarvestStatus();
   }, []);
   const items8 = [stackNavigation, items1];
   const obj11 = { children: null };
@@ -125,8 +125,8 @@ export default function DataAndPrivacySettings() {
     }
   };
   const obj16 = items1(1945);
-  obj12[0] = stackNavigation(13966).SettingsScreen.DATA_AND_PRIVACY;
-  const items9 = [callback(items1(13966), obj12), callback(items1(13794), { node: memo })];
+  obj12[0] = stackNavigation(13965).SettingsScreen.DATA_AND_PRIVACY;
+  const items9 = [callback(items1(13965), obj12), callback(items1(13793), { node: memo })];
   obj11[0] = items9;
   return callback2(closure_9, obj11);
 };

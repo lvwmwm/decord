@@ -1,10 +1,10 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12390
+// Function ID: 12391
 // Name: useTrackUserProfileWishlistView
 // Dependencies: [19, 9275, 589, 2]
 // Exports: default
 
-// Module 12391 (useTrackUserProfileWishlistView)
+// Module 12390 (useTrackUserProfileWishlistView)
 import noop from "noop";
 import get from "get";
 

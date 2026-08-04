@@ -1,10 +1,10 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12586
+// Function ID: 12587
 // Name: items
 // Dependencies: [32, 19, 17, 6805, 1876, 21, 4285, 712, 4146, 4286, 4289, 4288, 4706, 691, 7570, 4254, 4255, 4281, 1236, 2]
 // Exports: default
 
-// Module 12587 (items)
+// Module 12586 (items)
 import importDefaultResult from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "Text";

@@ -1,10 +1,10 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15234
+// Function ID: 15235
 // Name: useCanShowFavoritesGuildCoachmark
 // Dependencies: [3978, 1931, 589, 4136, 2]
 // Exports: default
 
-// Module 15235 (useCanShowFavoritesGuildCoachmark)
+// Module 15234 (useCanShowFavoritesGuildCoachmark)
 import setContent from "setContent";
 import handleConnectionOpen from "handleConnectionOpen";
 

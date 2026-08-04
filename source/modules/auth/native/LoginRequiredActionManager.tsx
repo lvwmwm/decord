@@ -1,9 +1,9 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16358
+// Function ID: 16359
 // Name: handleConnectionOpen
 // Dependencies: [1874, 1365, 676, 5229, 5925, 5736, 2]
 
-// Module 16359 (handleConnectionOpen)
+// Module 16358 (handleConnectionOpen)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleUpdateUser from "handleUpdateUser";
 import ME from "ME";

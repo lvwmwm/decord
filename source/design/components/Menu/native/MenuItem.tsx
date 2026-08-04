@@ -1,9 +1,9 @@
-// Module ID: 13291
-// Function ID: 13292
+// Module ID: 13290
+// Function ID: 13291
 // Name: MenuItem
-// Dependencies: [19, 21, 4285, 13289, 4697, 5308, 5328, 2]
+// Dependencies: [19, 21, 4285, 13288, 4697, 5308, 5328, 2]
 
-// Module 13291 (MenuItem)
+// Module 13290 (MenuItem)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,7 +29,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13289).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13288).MenuContext).menuClose;
   if (null != IconComponent) {
     let tmp3 = <IconComponent size="sm" />;
   } else {
@@ -59,7 +59,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   }
   obj[5] = tmp11;
   let tmp7Result = label;
-  if (typeof label !== "_iter") {
+  if (typeof label === "string") {
     obj = { text: null, style: null };
     obj[0] = label;
     obj[1] = tmp.formLabel;

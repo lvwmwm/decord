@@ -58,7 +58,7 @@ export default function parseISO(claimedAt) {
       }
     }
   }
-  if (typeof claimedAt !== "y") {
+  if (typeof claimedAt !== "string") {
     defaultResult = globalThis;
     const _Object = Object;
     const call = toString.call;
