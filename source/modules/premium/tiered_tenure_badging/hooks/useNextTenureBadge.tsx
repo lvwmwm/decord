@@ -1,10 +1,10 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 12622
+// Function ID: 12623
 // Name: useNextTenureBadge
-// Dependencies: [1876, 8739, 2]
+// Dependencies: [1876, 9428, 2]
 // Exports: useNextTenureBadge
 
-// Module 12588 (useNextTenureBadge)
+// Module 12622 (useNextTenureBadge)
 import GuildFeatures from "GuildFeatures";
 
 let c3;
@@ -13,10 +13,10 @@ let obj1;
 const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useNextTenureBadge.tsx");
 
 export const useNextTenureBadge = function useNextTenureBadge() {
-  const tieredTenureBadgeData = require(8739) /* usePremiumSince */.useTieredTenureBadgeData();
+  const tieredTenureBadgeData = require(9428) /* usePremiumSince */.useTieredTenureBadgeData();
   if (null == tieredTenureBadgeData) {
     return null;
-  } else if (tieredTenureBadgeData.status === tmp(8739).TieredTenureBadgeStatus.UPCOMING) {
+  } else if (tieredTenureBadgeData.status === tmp(9428).TieredTenureBadgeStatus.UPCOMING) {
     return tieredTenureBadgeData;
   } else {
     const index = closure_2.indexOf(tieredTenureBadgeData.id);
@@ -29,6 +29,6 @@ export const useNextTenureBadge = function useNextTenureBadge() {
     }
     return tmp7;
   }
-  const obj = require(8739) /* usePremiumSince */;
+  const obj = require(9428) /* usePremiumSince */;
   tmp = require;
 };

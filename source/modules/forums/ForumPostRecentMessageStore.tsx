@@ -1,9 +1,9 @@
-// Module ID: 5805
-// Function ID: 5806
+// Module ID: 5834
+// Function ID: 5835
 // Name: handleLoadThreadsSuccess
-// Dependencies: [1372, 1874, 11, 4475, 1351, 589, 709, 2]
+// Dependencies: [1372, 1874, 11, 4504, 1351, 589, 709, 2]
 
-// Module 5805 (handleLoadThreadsSuccess)
+// Module 5834 (handleLoadThreadsSuccess)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
@@ -83,8 +83,8 @@ const forumPostRecentMessageStore = new ForumPostRecentMessageStore(require("dis
           const message3 = tmp.message;
           let messageRecord = null;
           if (null != message3) {
-            messageRecord = require(4475) /* createMinimalMessageRecord */.createMessageRecord(message3);
-            const obj4 = require(4475) /* createMinimalMessageRecord */;
+            messageRecord = require(4504) /* createMinimalMessageRecord */.createMessageRecord(message3);
+            const obj4 = require(4504) /* createMinimalMessageRecord */;
           }
           let obj = { loaded: true, message: null };
           obj[1] = messageRecord;
@@ -135,9 +135,9 @@ const forumPostRecentMessageStore = new ForumPostRecentMessageStore(require("dis
         if (tmp16) {
           const obj = {};
           const merged = Object.assign(tmp12);
-          obj.message = require(4475) /* createMinimalMessageRecord */.updateMessageRecord(message, message.message);
+          obj.message = require(4504) /* createMinimalMessageRecord */.updateMessageRecord(message, message.message);
           dependencyMap[channel_id] = obj;
-          const obj4 = require(4475) /* createMinimalMessageRecord */;
+          const obj4 = require(4504) /* createMinimalMessageRecord */;
         }
         tmp16 = null != dependencyMap[channel_id] && null != message;
       }
@@ -170,7 +170,7 @@ const forumPostRecentMessageStore = new ForumPostRecentMessageStore(require("dis
       if (null != most_recent_message) {
         let tmp = require;
         let tmp2 = dependencyMap;
-        let obj = require(4475) /* createMinimalMessageRecord */;
+        let obj = require(4504) /* createMinimalMessageRecord */;
         messageRecord = obj.createMessageRecord(most_recent_message);
       }
       let tmp4 = closure_5;

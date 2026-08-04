@@ -1,7 +1,7 @@
 // Module ID: 11312
 // Function ID: 11313
 // Name: ForumPostMediaAndroid
-// Dependencies: [32, 19, 17, 1302, 1301, 21, 4255, 712, 5207, 4656, 11313, 6956, 11314, 500, 5793, 4783, 7708, 7710, 11315, 4101, 3928, 10516, 1473, 2]
+// Dependencies: [32, 19, 17, 1302, 1301, 21, 4285, 712, 5236, 4685, 11313, 6968, 11314, 500, 5822, 4812, 7720, 7722, 11315, 4131, 3958, 9815, 1473, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
 // Module 11312 (ForumPostMediaAndroid)
@@ -39,7 +39,7 @@ function ForumPostMediaIOS(arg0) {
   let source;
   const obj = { children: null };
   ({ shouldSpoiler, blurTheme, source, iosStyle } = arg0);
-  const items = [callback2(importDefault(5207), { style: iosStyle, source, resizeMode: "cover" }), callback2(ForumPostMediaSpoiler, { shouldSpoiler, blurTheme })];
+  const items = [callback2(importDefault(5236), { style: iosStyle, source, resizeMode: "cover" }), callback2(ForumPostMediaSpoiler, { shouldSpoiler, blurTheme })];
   obj[0] = items;
   return callback3(closure_11, obj);
 }
@@ -78,7 +78,7 @@ function ForumPostMedia(obscureReason) {
   const _require = obscureReason;
   const tmp = createCacheKey();
   const ref = React.useRef(null);
-  let obj = _require(6956);
+  let obj = _require(6968);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
@@ -101,7 +101,7 @@ function ForumPostMedia(obscureReason) {
     tmp3Result = tmp3(500);
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(5793).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(5822).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj2 = { style: null, ref: null, children: null };
@@ -111,12 +111,12 @@ function ForumPostMedia(obscureReason) {
         const obj3 = { androidRippleConfig: null, activeOpacity: 0, onPress: null, children: null };
         obj3[0] = ANDROID_FOREGROUND_RIPPLE;
         obj3[2] = function onPress() {
-          let obj = ref(7708);
-          obj = { entryPoint: obscureReason(7710).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
+          let obj = ref(7720);
+          obj = { entryPoint: obscureReason(7722).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
           const result = obj.showAgeVerificationGetStartedModal(obj);
         };
         obj3[3] = tmp6Result;
-        obj2[2] = tmp12(tmp3(4783).PressableOpacity, obj3);
+        obj2[2] = tmp12(tmp3(4812).PressableOpacity, obj3);
         let tmp12Result = tmp12(closure_5, obj2);
       }
       return tmp12Result;
@@ -138,7 +138,7 @@ function ForumPostMedia(obscureReason) {
       return onPressResult;
     };
     obj5[3] = tmp6Result;
-    obj4[2] = tmp12(tmp3(4783).PressableOpacity, obj5);
+    obj4[2] = tmp12(tmp3(4812).PressableOpacity, obj5);
     tmp12Result = tmp12(closure_5, obj4);
   } else {
     const obj6 = { style: null, ref: null, children: null };
@@ -177,7 +177,7 @@ export const useSharedMediaProps = function useSharedMediaProps(arg0) {
     str = "dark";
   }
   obj[2] = str;
-  const GifAutoPlay = require(3928) /* explicitContentFromProto */.GifAutoPlay;
+  const GifAutoPlay = require(3958) /* explicitContentFromProto */.GifAutoPlay;
   let tmp4 = "png";
   if (GifAutoPlay.useSetting()) {
     tmp4 = null;

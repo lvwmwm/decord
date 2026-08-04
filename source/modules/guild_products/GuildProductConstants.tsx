@@ -1,9 +1,9 @@
-// Module ID: 4831
-// Function ID: 4832
+// Module ID: 4860
+// Function ID: 4861
 // Name: GUILD_PRODUCT_EDIT_MODAL_KEY
 // Dependencies: [2]
 
-// Module 4831 (GUILD_PRODUCT_EDIT_MODAL_KEY)
+// Module 4860 (GUILD_PRODUCT_EDIT_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");
 
 export const GUILD_PRODUCT_EDIT_MODAL_KEY = "guild-product-edit-modal";

@@ -1,14 +1,14 @@
-// Module ID: 13973
-// Function ID: 13974
+// Module ID: 14007
+// Function ID: 14008
 // Name: showDataPrivacyRateLimitAlert
-// Dependencies: [4594, 1236, 2]
+// Dependencies: [4623, 1236, 2]
 // Exports: showDataPrivacyRateLimitAlert
 
-// Module 13973 (showDataPrivacyRateLimitAlert)
+// Module 14007 (showDataPrivacyRateLimitAlert)
 const result = require("set").fileFinishedImporting("modules/user_settings/privacy_and_safety/native/showDataPrivacyRateLimitAlert.tsx");
 
 export const showDataPrivacyRateLimitAlert = function showDataPrivacyRateLimitAlert(message) {
-  let obj = importDefault(4594);
+  let obj = importDefault(4623);
   obj = { title: null, body: null, confirmText: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["43LbVL"]);

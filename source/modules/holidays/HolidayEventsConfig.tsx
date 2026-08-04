@@ -1,9 +1,9 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16328
+// Function ID: 16329
 // Name: HolidayEmojiAnimationType
-// Dependencies: [10426, 1236, 16296, 16297, 1358, 2]
+// Dependencies: [9696, 1236, 16329, 16330, 1358, 2]
 
-// Module 16295 (HolidayEmojiAnimationType)
+// Module 16328 (HolidayEmojiAnimationType)
 let obj = {
   experiment: null,
   useIsExperimentEligible() {

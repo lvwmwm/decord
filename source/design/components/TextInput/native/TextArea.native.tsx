@@ -1,9 +1,9 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7786
+// Function ID: 7787
 // Name: TextArea
-// Dependencies: [19, 21, 7702, 7775, 2]
+// Dependencies: [19, 21, 7714, 7787, 2]
 
-// Module 7774 (TextArea)
+// Module 7786 (TextArea)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -13,8 +13,8 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
   obj = { ref };
   const merged1 = Object.assign(arg0);
-  obj.children = jsx(require(7775) /* TextAreaField */.TextAreaField, { ref });
-  return jsx(require(7702) /* Input */.Input, { ref });
+  obj.children = jsx(require(7787) /* TextAreaField */.TextAreaField, { ref });
+  return jsx(require(7714) /* Input */.Input, { ref });
 });
 const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextArea.native.tsx");
 

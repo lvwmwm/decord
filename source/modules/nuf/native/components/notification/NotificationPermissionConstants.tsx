@@ -1,9 +1,9 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11691
+// Function ID: 11692
 // Name: EventActionType
 // Dependencies: [2]
 
-// Module 11628 (EventActionType)
+// Module 11691 (EventActionType)
 const result = require("set").fileFinishedImporting("modules/nuf/native/components/notification/NotificationPermissionConstants.tsx");
 
 export const EventActionType = { SKIP_STEP: "skip_step", ALLOW_TO_REQUEST: "allow_to_request", REQUEST: "request", TO_SETTINGS: "to_settings", REQUEST_PROVISIONAL: "request_provisional", DISMISS: "dismiss" };

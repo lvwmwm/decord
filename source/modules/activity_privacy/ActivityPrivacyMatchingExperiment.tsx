@@ -1,17 +1,17 @@
-// Module ID: 14783
-// Function ID: 14784
+// Module ID: 14817
+// Function ID: 14818
 // Name: useIsInActivityPrivacyCopyExperiment
-// Dependencies: [1452, 12291, 2]
+// Dependencies: [1452, 12378, 2]
 // Exports: getIsInActivityPrivacyUpsellExperiment, useIsInActivityPrivacyCopyExperiment
 
-// Module 14783 (useIsInActivityPrivacyCopyExperiment)
+// Module 14817 (useIsInActivityPrivacyCopyExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-02-activity-privacy-matching", kind: "user", defaultConfig: { copyChanges: false, upsell: false }, variations: { 0: { copyChanges: false, upsell: false }, 1: { copyChanges: true, upsell: false }, 2: { copyChanges: true, upsell: true } } });
 const result = require("set").fileFinishedImporting("modules/activity_privacy/ActivityPrivacyMatchingExperiment.tsx");
 
 export const useIsInActivityPrivacyCopyExperiment = function useIsInActivityPrivacyCopyExperiment(ActivityPrivacyDefaultSharingSetting) {
-  let obj = require(12291) /* apexExperiment */;
+  let obj = require(12378) /* apexExperiment */;
   let copyChanges = obj.useIsInPrivateProfilesExperiment(ActivityPrivacyDefaultSharingSetting);
   obj = { location: ActivityPrivacyDefaultSharingSetting };
   if (!copyChanges) {
@@ -20,7 +20,7 @@ export const useIsInActivityPrivacyCopyExperiment = function useIsInActivityPriv
   return copyChanges;
 };
 export const getIsInActivityPrivacyUpsellExperiment = function getIsInActivityPrivacyUpsellExperiment(ActivityPrivacyDefaultSharingSetting) {
-  let obj = require(12291) /* apexExperiment */;
+  let obj = require(12378) /* apexExperiment */;
   let upsell = obj.getIsInPrivateProfilesExperiment(ActivityPrivacyDefaultSharingSetting);
   if (!upsell) {
     obj = { location: null };

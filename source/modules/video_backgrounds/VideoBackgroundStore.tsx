@@ -1,9 +1,9 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9083
+// Function ID: 9084
 // Name: handleSyncedStoresUpdate
-// Dependencies: [1340, 4302, 1931, 1874, 9031, 4352, 589, 709, 2]
+// Dependencies: [1340, 4332, 1931, 1874, 9084, 4381, 589, 709, 2]
 
-// Module 9030 (handleSyncedStoresUpdate)
+// Module 9083 (handleSyncedStoresUpdate)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -25,7 +25,7 @@ function handleSyncedStoresUpdate() {
     if (voiceAndVideo != null) {
       prop = voiceAndVideo.videoBackgroundFilterDesktop;
     }
-    const videoBackgroundOptionFromProto = require(9031) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+    const videoBackgroundOptionFromProto = require(9084) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
     let isVideoEnabledResult = null != obj.getVoiceChannelId();
     if (isVideoEnabledResult) {
       isVideoEnabledResult = _detectH265HardwareDecode.isVideoEnabled();
@@ -34,7 +34,7 @@ function handleSyncedStoresUpdate() {
       isVideoEnabledResult = null != videoBackgroundOptionFromProto;
     }
     flag2 = isVideoEnabledResult;
-    const obj2 = require(9031) /* isAnimatedBackgroundOption */;
+    const obj2 = require(9084) /* isAnimatedBackgroundOption */;
   }
   if (flag2) {
     c8 = true;
@@ -118,8 +118,8 @@ const videoBackgroundStore = new VideoBackgroundStore(require("dispatcher"), {
         if (voiceAndVideo != null) {
           prop = voiceAndVideo.videoBackgroundFilterDesktop;
         }
-        backgroundOption = require(9031) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
-        const obj = require(9031) /* isAnimatedBackgroundOption */;
+        backgroundOption = require(9084) /* isAnimatedBackgroundOption */.getVideoBackgroundOptionFromProto(prop, currentUser.id);
+        const obj = require(9084) /* isAnimatedBackgroundOption */;
       }
       let isVideoEnabledResult = null != store.getVoiceChannelId();
       if (isVideoEnabledResult) {
@@ -136,11 +136,11 @@ const videoBackgroundStore = new VideoBackgroundStore(require("dispatcher"), {
   },
   MEDIA_ENGINE_APPLY_MEDIA_FILTER_SETTINGS: function handleApplyMediaFilterSettings(settings) {
     settings = settings.settings;
-    if (require(4352) /* BaseConnectionEvent */.FilterSettingsKey.CAMERA_BACKGROUND_LIVE in settings) {
+    if (require(4381) /* BaseConnectionEvent */.FilterSettingsKey.CAMERA_BACKGROUND_LIVE in settings) {
       let c6 = true;
       let c10 = false;
     }
-    if (require(4352) /* BaseConnectionEvent */.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
+    if (require(4381) /* BaseConnectionEvent */.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
       let c11 = false;
     }
   },

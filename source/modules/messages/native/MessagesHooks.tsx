@@ -1,10 +1,10 @@
-// Module ID: 10636
-// Function ID: 10637
+// Module ID: 10367
+// Function ID: 10368
 // Name: useMessageAuthorActivities
-// Dependencies: [32, 19, 17, 9657, 9493, 4593, 1862, 4342, 589, 12, 643, 5582, 1351, 7103, 10637, 9492, 10638, 2]
+// Dependencies: [32, 19, 17, 10323, 8421, 4622, 1862, 4371, 589, 12, 643, 5611, 1351, 7115, 10368, 8420, 10369, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 10636 (useMessageAuthorActivities)
+// Module 10367 (useMessageAuthorActivities)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { findNodeHandle } from "set";

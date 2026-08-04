@@ -1,8 +1,8 @@
-// Module ID: 13627
-// Function ID: 13628
-// Dependencies: [676, 3, 10696, 10698, 2]
+// Module ID: 13661
+// Function ID: 13662
+// Dependencies: [676, 3, 10546, 10548, 2]
 
-// Module 13627
+// Module 13661
 import ME from "ME";
 
 let RPCCommands;
@@ -11,7 +11,7 @@ let RPC_APPLICATION_LOGGING_CATEGORY;
 let c3 = new require("recurseReplaceContentTree")(RPC_APPLICATION_LOGGING_CATEGORY);
 let obj = {
   validation(string) {
-    let obj = importDefault(10696)(string);
+    let obj = importDefault(10546)(string);
     obj = { level: null, message: null };
     const requiredResult = obj.required();
     const stringResult = string.string();
@@ -26,7 +26,7 @@ let obj = {
     let socket;
     ({ socket, args } = arg0);
     const level = args.level;
-    const result = require(10698) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.transport);
+    const result = require(10548) /* recurseReplaceContentTree */.validatePostMessageTransport(socket.transport);
     const combined = "" + socket.application.id + " - " + args.message;
     if ("log" === level) {
       tmp3.log(combined);

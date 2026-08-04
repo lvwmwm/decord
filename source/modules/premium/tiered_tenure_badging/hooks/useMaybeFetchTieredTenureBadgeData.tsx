@@ -1,10 +1,10 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12637
+// Function ID: 12638
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1874, 1876, 589, 8711, 4682, 8106, 2]
+// Dependencies: [1874, 1876, 589, 9400, 4711, 8118, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 12603 (useMaybeFetchTieredTenureBadgeData)
+// Module 12637 (useMaybeFetchTieredTenureBadgeData)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -15,8 +15,8 @@ export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTe
   const items = [mergeGuildAvatar];
   _require = _require(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = _require(589);
-  const importDefault = _require(8711).useIsPremiumSubscriber(PremiumTypes.TIER_2);
-  importDefault(4682)(() => {
+  const importDefault = _require(9400).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  importDefault(4711)(() => {
     let id;
     if (closure_0 != null) {
       id = tmp.id;

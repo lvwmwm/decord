@@ -1,10 +1,10 @@
-// Module ID: 13297
-// Function ID: 13298
+// Module ID: 13331
+// Function ID: 13332
 // Name: useAccessibilityNativeStackFocusTracking
-// Dependencies: [19, 4598, 4597, 2]
+// Dependencies: [19, 4627, 4626, 2]
 // Exports: useAccessibilityNativeStackFocusTracking
 
-// Module 13297 (useAccessibilityNativeStackFocusTracking)
+// Module 13331 (useAccessibilityNativeStackFocusTracking)
 import noop from "noop";
 
 const result = require("setAccessibilityFocusPrevious").fileFinishedImporting("design/components/Navigator/native/useAccessibilityNativeStackFocusTracking.tsx");

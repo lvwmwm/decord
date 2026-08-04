@@ -1,10 +1,10 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 16854
+// Function ID: 16855
 // Name: installWebsocketTelemetryHook
 // Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 16822 (installWebsocketTelemetryHook)
+// Module 16854 (installWebsocketTelemetryHook)
 const result = require("set").fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");
 
 export const installWebsocketTelemetryHook = function installWebsocketTelemetryHook(arg0) {
@@ -45,7 +45,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
       obj.url = tmp;
     }
     let flag = false;
-    if (typeof arg1 !== "ge") {
+    if (typeof arg1 !== "_iter") {
       if (arg1.length > 0) {
         if ("{" === arg1[0]) {
           try {
@@ -95,7 +95,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
     } catch (err) {
     }
   }
-  if (typeof globalThis === "as") {
+  if (typeof globalThis === "tee") {
     let _globalThis = globalThis;
   } else {
     _globalThis = closure_0;
@@ -129,7 +129,7 @@ export const installWebsocketTelemetryHook = function installWebsocketTelemetryH
             }
           }
           c0 = str;
-          if (typeof obj.addEventListener !== "HAS_APPLICATION") {
+          if (typeof obj.addEventListener !== "three_button_mouse") {
             str2 = "message";
             listener = obj.addEventListener("message", (data) => {
               data = undefined;

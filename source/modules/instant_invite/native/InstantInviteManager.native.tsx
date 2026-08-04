@@ -1,9 +1,9 @@
-// Module ID: 16321
-// Function ID: 16322
+// Module ID: 16354
+// Function ID: 16355
 // Name: prototype
-// Dependencies: [5200, 3956, 1236, 2]
+// Dependencies: [5229, 3986, 1236, 2]
 
-// Module 16321 (prototype)
+// Module 16354 (prototype)
 import "initialize";
 
 let require = arg1;
@@ -16,7 +16,7 @@ let prototype = function InstantInviteManager() {
     }
   };
   applyArgumentsResult.shareInviteFailed = function shareInviteFailed() {
-    let obj = callback(3956);
+    let obj = callback(3986);
     obj = { key: "GROUP_DM_ADD_ERROR", content: null };
     const intl = applyArgumentsResult(1236).intl;
     obj[1] = intl.string(applyArgumentsResult(1236).t["N/9OFy"]);

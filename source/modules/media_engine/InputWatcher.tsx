@@ -1,9 +1,9 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13082
+// Function ID: 13083
 // Name: logger
-// Dependencies: [32, 5, 4320, 4, 4140, 4352, 501, 12986, 3866, 5263, 709, 2]
+// Dependencies: [32, 5, 4349, 4, 4170, 4381, 501, 13020, 3896, 5292, 709, 2]
 
-// Module 13048 (logger)
+// Module 13082 (logger)
 import _slicedToArray from "_slicedToArray";
 import BaseConnectionEvent from "BaseConnectionEvent";
 import { WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER as closure_5 } from "StreamIssueReportReasons";

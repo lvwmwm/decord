@@ -1,10 +1,10 @@
-// Module ID: 14314
-// Function ID: 14315
+// Module ID: 14348
+// Function ID: 14349
 // Name: useActiveGuildSubscriptions
-// Dependencies: [19, 3907, 14308, 14309, 589, 4575, 2]
+// Dependencies: [19, 3937, 14342, 14343, 589, 4604, 2]
 // Exports: default
 
-// Module 14314 (useActiveGuildSubscriptions)
+// Module 14348 (useActiveGuildSubscriptions)
 import noop from "noop";
 import reset from "reset";
 import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS";
@@ -24,7 +24,7 @@ export default function useActiveGuildSubscriptions() {
   }
   let importDefault;
   let closure_2;
-  const tmp = importDefault(14309)() === constants.SUBSCRIBED;
+  const tmp = importDefault(14343)() === constants.SUBSCRIBED;
   importDefault = tmp;
   const items = [reset];
   let stateFromStores = flag(589).useStateFromStores(items, () => activeGuildSubscriptions.getActiveGuildSubscriptions());

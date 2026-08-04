@@ -1,10 +1,10 @@
-// Module ID: 15290
-// Function ID: 15291
+// Module ID: 15321
+// Function ID: 15322
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 15291, 4716, 4761, 4251, 1236, 2]
+// Dependencies: [19, 17, 21, 15322, 4745, 4790, 4281, 1236, 2]
 // Exports: default
 
-// Module 15290 (MentionSubtitle)
+// Module 15321 (MentionSubtitle)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,15 +21,15 @@ export default function MentionSubtitle(channel) {
   let guild;
   channel = channel.channel;
   ({ guild, channelName, count } = channel);
-  let obj = require(15291) /* styles */;
+  let obj = require(15322) /* styles */;
   const subtitleStyles = obj.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(4716).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(4716);
+    channelIconComponentWithGuild = tmp(4745).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(4745);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(4761).TextIcon;
+    channelIconComponentWithGuild = tmp(4790).TextIcon;
   }
   obj = { style: subtitleStyles.subtitleRow, children: null };
   obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
@@ -43,7 +43,7 @@ export default function MentionSubtitle(channel) {
       return callback2(callback(table[6]).Text, { variant: "text-xs/medium", children }, arg1);
     }
   });
-  items[1] = callback(require(4251) /* Text */.Text, obj1);
+  items[1] = callback(require(4281) /* Text */.Text, obj1);
   obj[1] = items;
   return callback2(View, obj);
 };

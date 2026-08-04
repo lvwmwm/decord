@@ -1,14 +1,14 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10241
+// Function ID: 10242
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 4116, 4259, 10573, 4256, 5284, 10577, 10579, 5568, 10580, 2]
+// Dependencies: [19, 17, 21, 4146, 4289, 10242, 4286, 5313, 10247, 10249, 5597, 10250, 2]
 // Exports: default
 
-// Module 10572 (ChatViewWrapperAnimatedKeyboard)
+// Module 10241 (ChatViewWrapperAnimatedKeyboard)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import { Easing } from "module_4116";
+import { Easing } from "module_4146";
 
 let c5;
 let closure_6;
@@ -24,11 +24,11 @@ let closure_10 = { code: "function ChatViewWrapperAnimatedKeyboardTsx3(){const{a
 let closure_11 = { code: "function ChatViewWrapperAnimatedKeyboardTsx4(finished){const{animatedAdjustedMarginPending,animatedAdjustedMargin}=this.__closure;if(!finished){return;}if(animatedAdjustedMarginPending.get()!==-1){animatedAdjustedMargin.set(animatedAdjustedMarginPending.get());animatedAdjustedMarginPending.set(-1);}}" };
 let closure_12 = importAllResult.memo((channelId) => {
   let c0;
-  const tmp = importDefault(5284)();
+  const tmp = importDefault(5313)();
   c0 = tmp;
   const items = [tmp];
   const obj = { style: null };
-  const items1 = [importDefault(10577)(channelId.channelId), importAllResult.useMemo(() => ({ position: "absolute", bottom: -c0, height: c0, right: 0, left: 0 }), items)];
+  const items1 = [importDefault(10247)(channelId.channelId), importAllResult.useMemo(() => ({ position: "absolute", bottom: -c0, height: c0, right: 0, left: 0 }), items)];
   obj[0] = items1;
   return callback(View, obj);
 });

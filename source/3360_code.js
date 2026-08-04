@@ -1,14 +1,14 @@
 // Module ID: 3360
 // Function ID: 3361
 // Name: code
-// Dependencies: [3361, 3362, 3363, 3364, 3365]
+// Dependencies: [3361, 3362, 3363, 3370, 3371]
 
 // Module 3360 (code)
 import formatDistance from "formatDistance";
 import buildFormatLongFn from "buildFormatLongFn";
 import formatRelative from "formatRelative";
 import buildLocalizeFn from "buildLocalizeFn";
-import module_3365 from "module_3365";
+import module_3371 from "module_3371";
 
 if (!formatDistance) {
   let obj = { default: null };
@@ -38,13 +38,13 @@ if (!buildLocalizeFn) {
 } else {
   tmp9 = buildLocalizeFn;
 }
-if (!module_3365) {
+if (!module_3371) {
   const obj2 = { default: null };
-  obj2[0] = module_3365;
+  obj2[0] = module_3371;
   let tmp11 = obj2;
 } else {
-  tmp11 = module_3365;
+  tmp11 = module_3371;
 }
 
-export default { code: "el", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
+export default { code: "bg", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

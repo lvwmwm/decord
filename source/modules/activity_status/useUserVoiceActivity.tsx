@@ -1,10 +1,10 @@
-// Module ID: 9247
-// Function ID: 9248
+// Module ID: 9560
+// Function ID: 9561
 // Name: getVisibleUserVoiceActivity
-// Dependencies: [1372, 3883, 4271, 505, 589, 2]
+// Dependencies: [1372, 3913, 4301, 505, 589, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 9247 (getVisibleUserVoiceActivity)
+// Module 9560 (getVisibleUserVoiceActivity)
 import importDefaultResult from "ensureGuildLoaded";
 import importDefaultResult1 from "getUncachedChannelPermissions";
 import importDefaultResult2 from "updateVoiceState";
@@ -71,7 +71,7 @@ function getVisibleUserVoiceActivity(arg0) {
   }
 }
 let closure_6 = { ChannelStore: importDefaultResult, PermissionStore: importDefaultResult1, VoiceStateStore: importDefaultResult2 };
-let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "ct" });
+let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "HermesInternal" });
 const result = require("updateVoiceState").fileFinishedImporting("modules/activity_status/useUserVoiceActivity.tsx");
 
 export default function useUserVoiceActivity(userId) {

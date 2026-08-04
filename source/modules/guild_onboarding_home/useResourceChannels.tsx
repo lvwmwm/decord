@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15549
+// Function ID: 15550
 // Name: useResourceChannels
-// Dependencies: [1372, 4457, 647, 2]
+// Dependencies: [1372, 4486, 647, 2]
 // Exports: default
 
-// Module 15518 (useResourceChannels)
+// Module 15549 (useResourceChannels)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
 

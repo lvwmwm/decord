@@ -1,9 +1,9 @@
-// Module ID: 16736
-// Function ID: 16737
+// Module ID: 16768
+// Function ID: 16769
 // Name: _reportSessionMeaningfullyOnline
-// Dependencies: [5, 4933, 16737, 676, 505, 687, 530, 1208, 709, 5200, 3928, 2]
+// Dependencies: [5, 4962, 16769, 676, 505, 687, 530, 1208, 709, 5229, 3958, 2]
 
-// Module 16736 (_reportSessionMeaningfullyOnline)
+// Module 16768 (_reportSessionMeaningfullyOnline)
 import set from "set";
 import filterPlayingActivities from "filterPlayingActivities";
 import initialize from "initialize";

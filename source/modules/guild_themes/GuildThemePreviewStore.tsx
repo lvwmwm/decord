@@ -1,9 +1,9 @@
-// Module ID: 4138
-// Function ID: 4139
+// Module ID: 4168
+// Function ID: 4169
 // Name: handleEnd
-// Dependencies: [1218, 4139, 4140, 709, 1861, 12, 589, 2]
+// Dependencies: [1218, 4169, 4170, 709, 1861, 12, 589, 2]
 
-// Module 4138 (handleEnd)
+// Module 4168 (handleEnd)
 import fetchFingerprint from "fetchFingerprint";
 import GuildThemePreviewOrigin from "GuildThemePreviewOrigin";
 import { Store } from "initialize";
@@ -139,7 +139,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: null, customUserThemeSettings: "Array" };
+      obj = { presetId: null, customUserThemeSettings: "a" };
       obj[0] = tmp;
       const isEqualResult = require(12) /* apply */.isEqual(obj.draft, obj);
       let flag = !isEqualResult;
@@ -164,7 +164,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: "Array", customUserThemeSettings: true };
+      obj = { presetId: "Array", customUserThemeSettings: 0 };
       obj = { colors: null, gradientColorStops: null, gradientAngle: null, baseMix: null };
       const items = [];
       HermesBuiltin.arraySpread(colors, 0);

@@ -1,9 +1,9 @@
-// Module ID: 9569
-// Function ID: 9570
+// Module ID: 8658
+// Function ID: 8659
 // Name: styles
-// Dependencies: [4255, 712, 2]
+// Dependencies: [4285, 712, 2]
 
-// Module 9569 (styles)
+// Module 8658 (styles)
 import createCacheKey from "createCacheKey";
 
 let obj = { emojiContainer: { flexDirection: "row", alignItems: "center" }, emojiDescriptionWrapper: { flexDirection: "column", flex: 1 }, emojiWrapper: { marginLeft: -8, marginRight: 8 }, emojiIcon: null, divider: null, ctaButton: null };

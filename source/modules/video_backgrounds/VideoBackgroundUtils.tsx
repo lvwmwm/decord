@@ -1,10 +1,10 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 9084
+// Function ID: 9085
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1372, 4327, 8070, 676, 1416, 4450, 698, 2]
+// Dependencies: [1372, 4356, 8082, 676, 1416, 4479, 698, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9031 (isAnimatedBackgroundOption)
+// Module 9084 (isAnimatedBackgroundOption)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import VideoFilterType from "VideoFilterType";
@@ -16,7 +16,7 @@ let error;
 const require = arg1;
 function isAnimatedBackgroundOption(type) {
   let tmp = typeof type === "Object";
-  if (typeof type !== "SENTRY_RELEASE") {
+  if (typeof type !== "V") {
     tmp = type in closure_5;
   }
   if (tmp) {
@@ -120,7 +120,7 @@ export const isCustomBackgroundOption = function isCustomBackgroundOption(videoB
 };
 export const isDefaultBackgroundOption = function isDefaultBackgroundOption(videoBackgroundOptionFromProto) {
   let tmp = typeof videoBackgroundOptionFromProto === "Object";
-  if (typeof videoBackgroundOptionFromProto !== "SENTRY_RELEASE") {
+  if (typeof videoBackgroundOptionFromProto !== "V") {
     tmp = videoBackgroundOptionFromProto in closure_5;
   }
   return tmp;
@@ -139,8 +139,8 @@ export const trackBackgroundOptionUpdated = function trackBackgroundOptionUpdate
   const guildId = store.getGuildId();
   const channelId = store.getChannelId();
   channel = channel.getChannel(channelId);
-  const voiceStateMetadata = require(4450) /* collectGuildAnalyticsMetadata */.getVoiceStateMetadata(guildId, channelId, true);
-  const obj2 = require(4450) /* collectGuildAnalyticsMetadata */;
+  const voiceStateMetadata = require(4479) /* collectGuildAnalyticsMetadata */.getVoiceStateMetadata(guildId, channelId, true);
+  const obj2 = require(4479) /* collectGuildAnalyticsMetadata */;
   obj = { location, effect_type: null, effect_detail: null, effect_state: null, channel_id: null, channel_type: null, guild_id: null, voice_state_count: null, video_stream_count: null, media_session_id: null, rtc_connection_id: null, is_animated: null };
   let str = "None";
   if (null != closure_0) {

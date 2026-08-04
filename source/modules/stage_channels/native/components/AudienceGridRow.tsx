@@ -1,9 +1,9 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 10843
+// Function ID: 10844
 // Name: BlankAudience
-// Dependencies: [19, 17, 5070, 21, 4255, 10973, 10974, 2]
+// Dependencies: [19, 17, 5099, 21, 4285, 10844, 10845, 2]
 
-// Module 10972 (BlankAudience)
+// Module 10843 (BlankAudience)
 import { View } from "get ActivityIndicator";
 import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
 import jsxProd from "jsxProd";
@@ -20,7 +20,7 @@ class BlankAudience {
       tmp = jsx;
       tmp2 = closure_0;
       tmp3 = closure_1;
-      arr = items.push(jsx(require("module_10973"), {}, num));
+      arr = items.push(jsx(require("module_10844"), {}, num));
     }
     return items;
   }

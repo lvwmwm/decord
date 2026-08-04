@@ -1,9 +1,9 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 11036
+// Function ID: 11037
 // Name: handleSelectedGuildChange
-// Dependencies: [4072, 589, 709, 2]
+// Dependencies: [4102, 589, 709, 2]
 
-// Module 9710 (handleSelectedGuildChange)
+// Module 11036 (handleSelectedGuildChange)
 import handleConnectionOpen from "handleConnectionOpen";
 import { PersistedStore } from "initialize";
 

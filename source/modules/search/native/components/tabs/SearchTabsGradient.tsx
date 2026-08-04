@@ -1,10 +1,10 @@
-// Module ID: 15643
-// Function ID: 15644
+// Module ID: 15674
+// Function ID: 15675
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 3959, 712, 4099, 11972, 2]
+// Dependencies: [19, 21, 3989, 712, 4129, 12027, 2]
 // Exports: default
 
-// Module 15643 (SearchTabsGradient)
+// Module 15674 (SearchTabsGradient)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -13,11 +13,11 @@ const result = require("map").fileFinishedImporting("modules/search/native/compo
 
 export default function SearchTabsGradient(state) {
   let token;
-  token = token(3959).useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
+  token = token(3989).useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
   let items = [token];
   const colors = React.useMemo(() => {
     const items = [token, token(outer1_2[4]).hexWithOpacity(token, 0)];
     return items;
   }, items);
-  return jsx(importDefault(11972), { state: state.state, colors });
+  return jsx(importDefault(12027), { state: state.state, colors });
 };

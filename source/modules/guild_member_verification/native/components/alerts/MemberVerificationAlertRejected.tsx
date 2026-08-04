@@ -1,10 +1,10 @@
-// Module ID: 9339
-// Function ID: 9340
+// Module ID: 8239
+// Function ID: 8240
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 19, 1942, 1874, 4073, 21, 9340, 589, 9341, 9338, 9323, 1236, 9334, 5241, 4666, 2]
+// Dependencies: [5, 19, 1942, 1874, 4103, 21, 8240, 589, 8241, 8238, 8223, 1236, 8234, 5270, 4695, 2]
 // Exports: default
 
-// Module 9339 (MemberVerificationAlertRejected)
+// Module 8239 (MemberVerificationAlertRejected)
 import closure_3 from "jsxProd";
 import noop from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -100,7 +100,7 @@ export default function MemberVerificationAlertRejected(guildId) {
             if (outer1_3 != null) {
               isPending = outer1_3.isPending;
             }
-            let obj3 = v0(9338);
+            let obj3 = v0(8238);
             if (isPending) {
               v0 = 2;
               dependencyMap = 1;
@@ -138,7 +138,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           if (v0 != null) {
             tmp6();
           }
-          obj1 = outer1_0(9323);
+          obj1 = outer1_0(8223);
           const result = obj1.openMemberVerificationModal(closure_0);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
@@ -203,7 +203,7 @@ export default function MemberVerificationAlertRejected(guildId) {
             if (outer1_3 != null) {
               isPending = outer1_3.isPending;
             }
-            let obj3 = v0(9338);
+            let obj3 = v0(8238);
             if (isPending) {
               v0 = 2;
               dependencyMap = 1;
@@ -241,7 +241,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           if (v0 != null) {
             tmp6();
           }
-          obj1 = outer1_0(9323);
+          obj1 = outer1_0(8223);
           const result = obj1.openMemberVerificationModal(closure_0);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };

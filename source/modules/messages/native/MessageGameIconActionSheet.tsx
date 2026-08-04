@@ -1,10 +1,10 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11129
+// Function ID: 11130
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 4292, 676, 21, 4255, 500, 712, 589, 5309, 1297, 4251, 1236, 1945, 2]
+// Dependencies: [19, 17, 4322, 676, 21, 4285, 500, 712, 589, 5338, 1297, 4281, 1236, 1945, 2]
 // Exports: default
 
-// Module 11139 (MessageGameIconActionSheet)
+// Module 11129 (MessageGameIconActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addApplication from "addApplication";
@@ -61,7 +61,7 @@ export default function MessageGameIconActionSheet(applicationId) {
     const obj5 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj5[0] = tmp.timestamp;
     obj5[3] = applicationId.messageTimestamp;
-    const items2 = [closure_6(tmp2(4251).Text, obj5), ];
+    const items2 = [closure_6(tmp2(4281).Text, obj5), ];
     const obj6 = { variant: "text-sm/medium", children: null };
     const intl = tmp2(1236).intl;
     const obj7 = { applicationName: null };
@@ -72,13 +72,13 @@ export default function MessageGameIconActionSheet(applicationId) {
     obj8[0] = importDefault(1945).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     items3[2] = intl2.format(tmp2(1236).t.BPDKoA, obj8);
     obj6[1] = items3;
-    items2[1] = closure_7(tmp2(4251).Text, obj6);
+    items2[1] = closure_7(tmp2(4281).Text, obj6);
     obj4[1] = items2;
     items1[1] = closure_7(View, obj4);
     obj[1] = items1;
     obj[1] = closure_7(View, obj);
     obj2[1] = closure_6(View, obj);
-    tmp5Result = tmp5(tmp2(5309).BottomSheet, obj2);
+    tmp5Result = tmp5(tmp2(5338).BottomSheet, obj2);
     const obj13 = importDefault(1945);
   }
   return tmp5Result;

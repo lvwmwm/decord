@@ -1,10 +1,10 @@
-// Module ID: 9945
-// Function ID: 9946
+// Module ID: 10036
+// Function ID: 10037
 // Name: useGiftingPromotionConfig
 // Dependencies: [2]
 // Exports: default
 
-// Module 9945 (useGiftingPromotionConfig)
+// Module 10036 (useGiftingPromotionConfig)
 const result = require("set").fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionConfig.tsx");
 
 export default function useGiftingPromotionConfig() {

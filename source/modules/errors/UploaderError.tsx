@@ -1,7 +1,7 @@
 // Module ID: 11302
 // Function ID: 11303
 // Name: prototype
-// Dependencies: [4155, 2]
+// Dependencies: [4185, 2]
 
 // Module 11302 (prototype)
 import "prototype";

@@ -1,7 +1,7 @@
 // Module ID: 11382
 // Function ID: 11383
 // Name: HeroMedia
-// Dependencies: [19, 4247, 1479, 5310, 21, 4255, 11061, 10792, 589, 5587, 11357, 8477, 1236, 2]
+// Dependencies: [19, 4277, 1479, 5339, 21, 4285, 9468, 10643, 589, 5616, 11357, 8792, 1236, 2]
 // Exports: default, useHeroMediaDimensions
 
 // Module 11382 (HeroMedia)
@@ -22,7 +22,7 @@ export default function HeroMedia(width) {
   ({ applicationId, containerHeight } = width);
   const tmp = callback();
   width = { width: width.width }.width;
-  require(11061) /* useDefaultAppLauncherWidth */;
+  require(9468) /* useDefaultAppLauncherWidth */;
   let bound = width;
   if (width == null) {
     let tmp8 = width;
@@ -33,11 +33,11 @@ export default function HeroMedia(width) {
   }
   const diff = bound - 2 * DEFAULT_CONTENT_PADDING;
   const rounded = Math.floor(9 * diff / 16);
-  const tmp13 = importDefault(10792)({ applicationId, size: diff, names: ["embedded_cover"] });
+  const tmp13 = importDefault(10643)({ applicationId, size: diff, names: ["embedded_cover"] });
   let tmp2Result = tmp2(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  tmp2Result = tmp2(5587);
+  tmp2Result = tmp2(5616);
   const getOrFetchApplication = tmp2Result.useGetOrFetchApplication(applicationId);
   let prop;
   if (getOrFetchApplication != null) {
@@ -113,7 +113,7 @@ export const useHeroMediaDimensions = function useHeroMediaDimensions(arg0) {
     obj = {};
   }
   const width = obj.width;
-  require(11061) /* useDefaultAppLauncherWidth */;
+  require(9468) /* useDefaultAppLauncherWidth */;
   let bound = width;
   if (width == null) {
     let tmp5 = width;

@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15276
+// Function ID: 15277
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 1942, 1862, 1874, 9530, 676, 21, 4255, 712, 589, 698, 8144, 15120, 1297, 5175, 15243, 1236, 1945, 2]
+// Dependencies: [19, 17, 1942, 1862, 1874, 8603, 676, 21, 4285, 712, 589, 698, 8156, 15154, 1297, 5204, 15277, 1236, 1945, 2]
 // Exports: default
 
-// Module 15242 (NsfwGateGuildSidebar)
+// Module 15276 (NsfwGateGuildSidebar)
 import set from "set";
 import { View } from "getSystemLocale";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

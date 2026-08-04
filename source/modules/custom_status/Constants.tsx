@@ -1,16 +1,16 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 9374
+// Function ID: 9375
 // Name: StatusTypes
-// Dependencies: [505, 4094, 1236, 2]
+// Dependencies: [505, 4124, 1236, 2]
 
-// Module 12080 (StatusTypes)
+// Module 9374 (StatusTypes)
 import { StatusTypes } from "sum";
 
 const frozen = Object.freeze({ MINUTES_30: 1800000, HOURS_1: 3600000, HOURS_4: 14400000, TODAY: "TODAY", DONT_CLEAR: "DONT_CLEAR" });
 let obj = {
   value: StatusTypes.ONLINE,
   label() {
-    return require(4094) /* nameFromUser */.humanizeStatus(StatusTypes.ONLINE);
+    return require(4124) /* nameFromUser */.humanizeStatus(StatusTypes.ONLINE);
   }
 };
 const items = [
@@ -18,19 +18,19 @@ const items = [
   {
     value: StatusTypes.IDLE,
     label() {
-      return require(4094) /* nameFromUser */.humanizeStatus(StatusTypes.IDLE);
+      return require(4124) /* nameFromUser */.humanizeStatus(StatusTypes.IDLE);
     }
   },
   {
     value: StatusTypes.DND,
     label() {
-      return require(4094) /* nameFromUser */.humanizeStatus(StatusTypes.DND);
+      return require(4124) /* nameFromUser */.humanizeStatus(StatusTypes.DND);
     }
   },
   {
     value: StatusTypes.INVISIBLE,
     label() {
-      return require(4094) /* nameFromUser */.humanizeStatus(StatusTypes.INVISIBLE);
+      return require(4124) /* nameFromUser */.humanizeStatus(StatusTypes.INVISIBLE);
     }
   }
 ];

@@ -1,12 +1,12 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13279
+// Function ID: 13280
 // Name: STANDARD_EASING
-// Dependencies: [4116, 2]
+// Dependencies: [4146, 2]
 
-// Module 13245 (STANDARD_EASING)
-import { Easing } from "module_4116";
-import { Easing as Easing2 } from "module_4116";
-import bezierResult1 from "module_4116";
+// Module 13279 (STANDARD_EASING)
+import { Easing } from "module_4146";
+import { Easing as Easing2 } from "module_4146";
+import bezierResult1 from "module_4146";
 
 const bezierResult = Easing.bezier(0.4, 0, 0.2, 1);
 const result = require("set").fileFinishedImporting("design/void/Easing/native/Easing.tsx");

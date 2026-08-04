@@ -1,10 +1,10 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10313
+// Function ID: 10314
 // Name: UnreadSettingNoticeConnected
-// Dependencies: [19, 17, 685, 21, 4255, 712, 10611, 4251, 1236, 4783, 10612, 2]
+// Dependencies: [19, 17, 685, 21, 4285, 712, 10314, 4281, 1236, 4812, 10315, 2]
 // Exports: default
 
-// Module 10610 (UnreadSettingNoticeConnected)
+// Module 10313 (UnreadSettingNoticeConnected)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ChannelNotificationSettingsFlags as closure_4 } from "MAX_FAVORITES";
@@ -30,12 +30,12 @@ export default function UnreadSettingNoticeConnected(channel) {
   const tmp = createCacheKey();
   let obj = { style: tmp.content, children: null };
   obj = { id: channel.channel.id };
-  const items = [callback(importDefault(10611), obj), , ];
+  const items = [callback(importDefault(10314), obj), , ];
   obj = { style: tmp.informations, children: null };
   const obj1 = { variant: "text-md/semibold", children: null };
   const intl = _require(1236).intl;
   obj1[1] = intl.string(_require(1236).t.i4xQ5o);
-  obj[1] = callback(_require(4251).Text, obj1);
+  obj[1] = callback(_require(4281).Text, obj1);
   items[1] = callback(View, obj);
   const obj2 = { style: tmp.actions, children: null };
   const obj3 = {
@@ -50,8 +50,8 @@ export default function UnreadSettingNoticeConnected(channel) {
   const obj4 = { variant: "text-xs/medium", color: "text-link", children: null };
   const intl2 = _require(1236).intl;
   obj4[2] = intl2.string(_require(1236).t.KyUKhT);
-  obj3[3] = callback(_require(4251).Text, obj4);
-  obj2[1] = callback(_require(4783).PressableOpacity, obj3);
+  obj3[3] = callback(_require(4281).Text, obj4);
+  obj2[1] = callback(_require(4812).PressableOpacity, obj3);
   items[2] = callback(View, obj2);
   obj[1] = items;
   return callback2(View, obj);

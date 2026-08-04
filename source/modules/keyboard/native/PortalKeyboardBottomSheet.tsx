@@ -1,7 +1,7 @@
 // Module ID: 11378
 // Function ID: 11379
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [32, 19, 17, 9727, 21, 500, 4255, 712, 8547, 4652, 4116, 1348, 11379, 4600, 5564, 589, 5311, 4224, 10407, 1844, 4682, 3959, 1581, 1474, 4126, 4102, 3967, 4649, 9522, 5567, 2]
+// Dependencies: [32, 19, 17, 9700, 21, 500, 4285, 712, 8585, 4681, 4146, 1348, 11379, 4629, 5593, 589, 5340, 4254, 9677, 1844, 4711, 3989, 1581, 1474, 4156, 4132, 3997, 4678, 8595, 5596, 2]
 
 // Module 11378 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
@@ -23,13 +23,13 @@ function PortalKeyboardBottomSheetHeader(arg0) {
   let style;
   ({ style, handleCollapse } = arg0);
   const tmp = callback2();
-  let obj = require(4652) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj = require(4681) /* SCREEN_READER_ENABLED_GETTER */;
   const items = [tmp.headerContainer, , ];
   let prop;
   if (obj.useIsScreenReaderEnabled()) {
     prop = tmp.headerContainerScreenReaderEnabled;
   }
-  obj = { style: items, children: tmp4(require(8547) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
+  obj = { style: items, children: tmp4(require(8585) /* TwinButtons */.ActionSheetDragHandle, { onPress: handleCollapse }) };
   items[1] = prop;
   items[2] = style;
   return closure_7(closure_5, obj);
@@ -43,7 +43,7 @@ function PortalKeyboardBackground(arg0) {
   style[0] = style;
   style[1] = callback2().background;
   style[2] = roundingStyle;
-  return callback(importDefault(4116).View, { pointerEvents, style });
+  return callback(importDefault(4146).View, { pointerEvents, style });
 }
 let c4 = importAllResult;
 ({ Platform, View: c5 } = get_ActivityIndicator);

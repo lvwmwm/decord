@@ -1,10 +1,10 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15106
+// Function ID: 15107
 // Name: _getEmojiSource
-// Dependencies: [5, 17, 3900, 1416, 2]
+// Dependencies: [5, 17, 3930, 1416, 2]
 // Exports: getEmojiSource
 
-// Module 15072 (_getEmojiSource)
+// Module 15106 (_getEmojiSource)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 

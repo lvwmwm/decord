@@ -1,10 +1,10 @@
-// Module ID: 7063
-// Function ID: 7064
+// Module ID: 7075
+// Function ID: 7076
 // Name: items
-// Dependencies: [19, 7064, 7065, 2]
+// Dependencies: [19, 7076, 7077, 2]
 // Exports: useIntersectionObserver, useIsVisible
 
-// Module 7063 (items)
+// Module 7075 (items)
 import noop from "noop";
 
 let c3;
@@ -33,7 +33,7 @@ export const useIntersectionObserver = function useIntersectionObserver(arg0, ar
   if (arg1 == null) {
     tmp4 = closure_7;
   }
-  const tmp3Result = flag(7064)(tmp4);
+  const tmp3Result = flag(7076)(tmp4);
   callback = tmp3Result;
   closure_4 = callback3(null);
   const items = [flag, arg0, tmp3Result];
@@ -91,7 +91,7 @@ export const useIsVisible = function useIsVisible(arg0, arg1) {
     }
     return value;
   }, items);
-  current = flag(7064)((isIntersecting) => {
+  current = flag(7076)((isIntersecting) => {
     current(isIntersecting.isIntersecting);
   }).current;
   flag = undefined;
@@ -105,14 +105,14 @@ export const useIsVisible = function useIsVisible(arg0, arg1) {
   dependencyMap = tmp6;
   let tmp8 = tmp4;
   const tmp = flag;
-  const tmp3 = flag(7064)((isIntersecting) => {
+  const tmp3 = flag(7076)((isIntersecting) => {
     current(isIntersecting.isIntersecting);
   });
   const tmp5 = callback3;
   if (tmp4 == null) {
     tmp8 = closure_7;
   }
-  const tmpResultResult = flag(7064)(tmp8);
+  const tmpResultResult = flag(7076)(tmp8);
   callback = tmpResultResult;
   callback2 = tmp5(null);
   const items1 = [flag, current, tmpResultResult];

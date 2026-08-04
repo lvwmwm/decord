@@ -1,9 +1,9 @@
-// Module ID: 13542
-// Function ID: 13543
+// Module ID: 13576
+// Function ID: 13577
 // Name: handleTokenUpdated
-// Dependencies: [1218, 1372, 1862, 1931, 4072, 1874, 676, 1351, 8508, 503, 698, 589, 709, 2]
+// Dependencies: [1218, 1372, 1862, 1931, 4102, 1874, 676, 1351, 8846, 503, 698, 589, 709, 2]
 
-// Module 13542 (handleTokenUpdated)
+// Module 13576 (handleTokenUpdated)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -32,9 +32,9 @@ const shareStore = new ShareStore(require("dispatcher"), {
     return false;
   },
   LOGOUT: function handleLogout() {
-    importDefault(8508).setSelectedChannel(null, null);
-    const obj = importDefault(8508);
-    const obj2 = importDefault(8508);
+    importDefault(8846).setSelectedChannel(null, null);
+    const obj = importDefault(8846);
+    const obj2 = importDefault(8846);
     const result = obj2.setAuthenticationToken(null, importDefault(698).getSuperPropertiesBase64());
     let c5 = null;
     return false;
@@ -69,10 +69,10 @@ const shareStore = new ShareStore(require("dispatcher"), {
           obj.recipients = mapped.filter(require(1351) /* isDiscordFrontendDevelopment */.isNotNullish);
           json1 = JSON.stringify(obj);
         }
-        importDefault(8508).setSelectedChannel(json1, json);
+        importDefault(8846).setSelectedChannel(json1, json);
         c3 = null;
         c4 = null;
-        const obj3 = importDefault(8508);
+        const obj3 = importDefault(8846);
       }
     }
     if (null != c5) {
@@ -80,7 +80,7 @@ const shareStore = new ShareStore(require("dispatcher"), {
       obj[0] = state;
       const result = require(503) /* encodeProperties */.extendSuperProperties(obj);
       const obj4 = require(503) /* encodeProperties */;
-      const obj6 = importDefault(8508);
+      const obj6 = importDefault(8846);
       const result1 = obj6.setAuthenticationToken(c5, importDefault(698).getSuperPropertiesBase64());
       if (state === AppStates.INACTIVE) {
         c5 = null;

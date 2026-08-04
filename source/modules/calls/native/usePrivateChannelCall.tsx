@@ -1,10 +1,10 @@
-// Module ID: 12343
-// Function ID: 12344
+// Module ID: 12430
+// Function ID: 12431
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 1372, 589, 1236, 9016, 4265, 2]
+// Dependencies: [5, 19, 1372, 589, 1236, 9550, 4295, 2]
 // Exports: default
 
-// Module 12343 (usePrivateChannelCall)
+// Module 12430 (usePrivateChannelCall)
 import getPrivateChannelCall from "getPrivateChannelCall";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -24,7 +24,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
     if (null != channel) {
       if (channel.isPrivate()) {
         let obj = { text: null, accessibilityHint: null, inCall: null };
-        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(9016)(channel, callback2));
+        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(9550)(channel, callback2));
         return obj;
       }
     }
@@ -90,7 +90,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
                 dependencyMap = 1;
                 c3 = 1;
                 let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(4265).ensurePrivateChannel(tmp33);
+                obj1[0] = outer1_1(4295).ensurePrivateChannel(tmp33);
                 return obj1;
               }
               tmp33 = outer1_0;
@@ -113,8 +113,8 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             isPrivateResult = obj1.isPrivate();
           }
           if (isPrivateResult) {
-            outer1_1(9016)(channel, closure_1).onPress();
-            const obj3 = outer1_1(9016)(channel, closure_1);
+            outer1_1(9550)(channel, closure_1).onPress();
+            const obj3 = outer1_1(9550)(channel, closure_1);
           }
           if (dependencyMap != null) {
             dependencyMap();

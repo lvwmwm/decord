@@ -1,9 +1,9 @@
-// Module ID: 5102
-// Function ID: 5103
+// Module ID: 5131
+// Function ID: 5132
 // Name: QuestsVisibleMessagesChangedSource
-// Dependencies: [5103, 2, 5104, 5105]
+// Dependencies: [5132, 2, 5133, 5134]
 
-// Module 5102 (QuestsVisibleMessagesChangedSource)
+// Module 5131 (QuestsVisibleMessagesChangedSource)
 import set from "set";
 
 const values = Object.values(require("QuestRewardCodePlatforms").QuestRewardCodePlatforms);

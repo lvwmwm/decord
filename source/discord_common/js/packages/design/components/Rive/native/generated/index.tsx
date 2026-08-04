@@ -1,8 +1,8 @@
-// Module ID: 3982
-// Function ID: 3983
-// Dependencies: [2, 3983, 4036, 4038, 4040, 4042, 4044, 4046, 4048, 4050, 4052, 4054, 4056, 4058, 4060, 4062]
+// Module ID: 4012
+// Function ID: 4013
+// Dependencies: [2, 4013, 4066, 4068, 4070, 4072, 4074, 4076, 4078, 4080, 4082, 4084, 4086, 4088, 4090, 4092]
 
-// Module 3982
+// Module 4012
 const result = require("BountiesScrollGradientRive").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/index.tsx");
 for (const key10018 in require("BoostThisServerRive")) {
   let tmp3 = key10018;

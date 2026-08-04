@@ -1,10 +1,10 @@
-// Module ID: 9811
-// Function ID: 9812
+// Module ID: 9901
+// Function ID: 9902
 // Name: useStickerPickerListData
-// Dependencies: [19, 9782, 9748, 1338, 9781, 12, 1236, 4922, 9528, 2]
+// Dependencies: [19, 9875, 9842, 1338, 9874, 12, 1236, 4951, 8601, 2]
 // Exports: default
 
-// Module 9811 (useStickerPickerListData)
+// Module 9901 (useStickerPickerListData)
 import noop from "noop";
 import { useStickerPickerStore } from "useStickerPickerStore";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";

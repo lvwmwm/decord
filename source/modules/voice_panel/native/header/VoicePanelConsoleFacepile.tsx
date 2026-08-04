@@ -1,10 +1,10 @@
-// Module ID: 16037
-// Function ID: 16038
+// Module ID: 16070
+// Function ID: 16071
 // Name: getConsoleInfo
-// Dependencies: [19, 676, 21, 4255, 712, 9235, 1236, 9114, 1351, 5634, 1297, 2]
+// Dependencies: [19, 676, 21, 4285, 712, 12126, 1236, 10770, 1351, 5663, 1297, 2]
 // Exports: default
 
-// Module 16037 (getConsoleInfo)
+// Module 16070 (getConsoleInfo)
 import noop from "noop";
 import { PlatformTypes } from "ME";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ function getConsoleInfo(type) {
   type = type.type;
   if (PlatformTypes.XBOX === type) {
     let obj = { icon: null, color: null, connectLabel: null, connectSublabel: null };
-    obj[0] = importDefault(9235)(type.type);
+    obj[0] = importDefault(12126)(type.type);
     obj[1] = importDefault(712).unsafe_rawColors.PLATFORM_XBOX;
     const intl3 = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl3.string(require(1236) /* getSystemLocale */.t.QN7HXV);
@@ -24,7 +24,7 @@ function getConsoleInfo(type) {
     return obj;
   } else if (tmp.PLAYSTATION === type) {
     obj = { icon: null, color: null, connectLabel: null, connectSublabel: null };
-    obj[0] = importDefault(9235)(type.type);
+    obj[0] = importDefault(12126)(type.type);
     obj[1] = importDefault(712).unsafe_rawColors.PLATFORM_PLAYSTATION;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(require(1236) /* getSystemLocale */.t["3qLlTS"]);
@@ -46,7 +46,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/voice_panel/nat
 export default function VoicePanelConsoleFacepile() {
   let tmp = createCacheKey();
   const require = tmp;
-  const tmp2 = importDefault(9114)();
+  const tmp2 = importDefault(10770)();
   importDefault = tmp2;
   let items = [tmp2];
   const items1 = [tmp];

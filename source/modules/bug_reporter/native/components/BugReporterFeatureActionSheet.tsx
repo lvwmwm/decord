@@ -1,10 +1,10 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 9809
+// Function ID: 9810
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4255, 712, 4251, 10500, 5286, 4223, 7784, 5281, 12, 5168, 9013, 9014, 5309, 5308, 1236, 5891, 9422, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4281, 9784, 5315, 4253, 7796, 5310, 12, 5197, 8334, 9548, 5338, 5337, 1236, 5901, 8337, 2]
 // Exports: default
 
-// Module 10510 (BugReporterFeatureActionSheet)
+// Module 9809 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchField";
 import { View } from "RedesignBottomSheetTitleHeaderBase";
@@ -30,7 +30,7 @@ let closure_9 = importAllResult.memo((arg0) => {
   const obj = { style: null, children: null };
   const items = [callback3().sectionHeader, { height }];
   obj[0] = items;
-  obj[1] = callback(require(4251) /* Text */.Text, { variant: "text-sm/bold", color: "text-muted", children: title });
+  obj[1] = callback(require(4281) /* Text */.Text, { variant: "text-sm/bold", color: "text-muted", children: title });
   return callback(View, obj);
 });
 let closure_10 = importAllResult.memo((item) => {
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10500);
+  let obj = item(9784);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10500).getFeatureId(feature);
+  const featureId1 = item(9784).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -54,8 +54,8 @@ let closure_10 = importAllResult.memo((item) => {
     trailing: null
   };
   obj = { selected: featureId === featureId1 };
-  obj[4] = callback(item(7784).FormRadio, obj);
-  return callback(item(5286).TableRow, obj);
+  obj[4] = callback(item(7796).FormRadio, obj);
+  return callback(item(5315).TableRow, obj);
 });
 const obj2 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

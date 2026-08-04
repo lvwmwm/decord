@@ -1,9 +1,9 @@
-// Module ID: 4660
-// Function ID: 4661
+// Module ID: 4689
+// Function ID: 4690
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 4660 (__INTERNAL_VIEW_CONFIG)
+// Module 4689 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDVisualEffectView", validAttributes: { blurAmount: true, blurEffectName: true, blurTintIOSParityCompensationRgba: true, blurTintRgba: true, blurTargetViewNativeId: true } };

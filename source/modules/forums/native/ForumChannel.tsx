@@ -1,10 +1,10 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 12028
+// Function ID: 12029
 // Name: forumKeyExtractor
-// Dependencies: [19, 17, 3884, 5163, 1372, 4592, 5069, 11304, 676, 1301, 505, 21, 4255, 712, 5175, 500, 9010, 4251, 1236, 9315, 5800, 589, 11974, 9, 4223, 11976, 1959, 1348, 4666, 11452, 4783, 8707, 11977, 7639, 9319, 11978, 4446, 11330, 11303, 11979, 7654, 7134, 4785, 3956, 7544, 5769, 5581, 5601, 4742, 10615, 9317, 7144, 9725, 9744, 4224, 4225, 9742, 9323, 5281, 10613, 8554, 11982, 11564, 2]
+// Dependencies: [19, 17, 3914, 5192, 1372, 4621, 5098, 11304, 676, 1301, 505, 21, 4285, 712, 5204, 500, 8202, 4281, 1236, 8214, 5829, 589, 12029, 9, 4253, 12031, 1959, 1348, 4695, 11451, 4812, 9396, 12032, 7651, 8219, 12033, 4475, 11330, 11303, 12034, 7666, 7146, 4814, 3986, 7556, 5798, 5610, 5630, 4771, 10318, 8217, 7156, 9820, 9838, 4254, 4255, 9836, 8223, 5310, 10316, 8592, 12037, 11571, 2]
 // Exports: default
 
-// Module 11973 (forumKeyExtractor)
+// Module 12028 (forumKeyExtractor)
 import useLoadForumUnreadCounts from "useLoadForumUnreadCounts";
 import { View } from "Text";
 import initialize from "initialize";
@@ -40,14 +40,14 @@ function forumKeyExtractor(arg0, arg1) {
 }
 function ArchivedSection() {
   const tmp = createCacheKey();
-  let obj = require(9010) /* useGradientBottom */;
+  let obj = require(8202) /* useGradientBottom */;
   obj = { style: null, children: null };
   const items = [tmp.section, obj.useClientThemesOverride()];
   obj[0] = items;
   obj = { style: tmp.divider, variant: "text-xs/bold", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["3+LO1w"]);
-  obj[1] = callback(require(4251) /* Text */.Text, obj);
+  obj[1] = callback(require(4281) /* Text */.Text, obj);
   return callback(View, obj);
 }
 function SearchSection(numPosts) {
@@ -66,7 +66,7 @@ function SearchSection(numPosts) {
     stringResult = intl.formatToPlainString(tmp4(1236).t["tBz/8b"], obj);
   }
   obj[3] = stringResult;
-  obj[1] = closure_15(require(4251) /* Text */.Text, obj);
+  obj[1] = closure_15(require(4281) /* Text */.Text, obj);
   return closure_15(View, obj);
 }
 function ArchivedMissingReadHistoryPermission(channelName) {
@@ -75,7 +75,7 @@ function ArchivedMissingReadHistoryPermission(channelName) {
   obj = { style: tmp.missingPermissionText, variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t.TycmzM, { channelName: channelName.channelName });
-  obj[1] = callback(require(4251) /* Text */.Text, obj);
+  obj[1] = callback(require(4281) /* Text */.Text, obj);
   return callback(View, obj);
 }
 function SearchMissingReadHistoryPermission(channelName) {
@@ -84,7 +84,7 @@ function SearchMissingReadHistoryPermission(channelName) {
   obj = { style: tmp.missingPermissionText, variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t.OWZJdS, { channelName: channelName.channelName });
-  obj[1] = callback(require(4251) /* Text */.Text, obj);
+  obj[1] = callback(require(4281) /* Text */.Text, obj);
   return callback(View, obj);
 }
 function SortAndViewOptions(channel) {
@@ -119,10 +119,10 @@ function SortAndViewOptions(channel) {
     t = { variant: "secondary", text: null, onPress: null, size: "sm", icon: null };
     t[1] = string3Result;
     t[2] = callback;
-    ArrowsUpDownIcon = ArrowsUpDownIcon(11452).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = ArrowsUpDownIcon(11451).ArrowsUpDownIcon;
     tmp5Result = tmp5(ArrowsUpDownIcon, { size: "xxs" });
     t[4] = tmp5Result;
-    tmp5Result = tmp5(ArrowsUpDownIcon(4666).Button, t);
+    tmp5Result = tmp5(ArrowsUpDownIcon(4695).Button, t);
   } else {
     const intl = ArrowsUpDownIcon(1236).intl;
     const string = intl.string;
@@ -141,7 +141,7 @@ function SortAndViewOptions(channel) {
     obj[0] = tmp.optionsPill;
     obj = { size: "xs", style: null };
     obj[1] = tmp.sortOptionsIcon;
-    const items1 = [tmp5(ArrowsUpDownIcon(11452).ArrowsUpDownIcon, obj), , ];
+    const items1 = [tmp5(ArrowsUpDownIcon(11451).ArrowsUpDownIcon, obj), , ];
     const obj1 = { variant: "text-sm/medium", color: "interactive-text-default", style: null, children: null };
     obj1[2] = tmp.sortOptionsText;
     const intl2 = ArrowsUpDownIcon(1236).intl;
@@ -153,11 +153,11 @@ function SortAndViewOptions(channel) {
       string2Result = string2(t2.xyYt8A);
     }
     obj1[3] = string2Result;
-    items1[1] = tmp5(ArrowsUpDownIcon(4251).Text, obj1);
-    items1[2] = tmp5(ArrowsUpDownIcon(8707).ChevronSmallDownIcon, { size: "xs" });
+    items1[1] = tmp5(ArrowsUpDownIcon(4281).Text, obj1);
+    items1[2] = tmp5(ArrowsUpDownIcon(9396).ChevronSmallDownIcon, { size: "xs" });
     obj[1] = items1;
     obj[6] = closure_16(View, obj);
-    return tmp5(ArrowsUpDownIcon(4783).PressableOpacity, obj);
+    return tmp5(ArrowsUpDownIcon(4812).PressableOpacity, obj);
   }
 }
 function TagFilter(channel) {
@@ -174,8 +174,8 @@ function TagFilter(channel) {
     const intl3 = tmp4(1236).intl;
     obj[1] = intl3.string(tmp4(1236).t["112vVE"]);
     obj[2] = handlePress;
-    obj[4] = tmp3(tmp4(7639).TagIcon, { size: "xxs" });
-    let tmp3Result = tmp3(tmp4(4666).Button, obj);
+    obj[4] = tmp3(tmp4(7651).TagIcon, { size: "xxs" });
+    let tmp3Result = tmp3(tmp4(4695).Button, obj);
   } else {
     obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.8, style: null, onPress: null, children: null };
     const intl = tmp4(1236).intl;
@@ -191,7 +191,7 @@ function TagFilter(channel) {
       const obj2 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
       obj2[2] = tmp.countText;
       obj2[3] = tagFilter.size;
-      obj1[1] = tmp3(tmp4(4251).Text, obj2);
+      obj1[1] = tmp3(tmp4(4281).Text, obj2);
       tmp3Result = tmp3(tmp6, obj1);
     }
     const items = [tmp3Result, , ];
@@ -199,11 +199,11 @@ function TagFilter(channel) {
     obj3[2] = tmp.sortOptionsText;
     const intl2 = tmp4(1236).intl;
     obj3[3] = intl2.string(tmp4(1236).t["112vVE"]);
-    items[1] = tmp3(tmp4(4251).Text, obj3);
-    items[2] = tmp3(tmp4(8707).ChevronSmallDownIcon, { size: "xs" });
+    items[1] = tmp3(tmp4(4281).Text, obj3);
+    items[2] = tmp3(tmp4(9396).ChevronSmallDownIcon, { size: "xs" });
     obj[1] = items;
     obj[5] = closure_16(View, obj);
-    tmp3Result = tmp3(tmp4(4783).PressableOpacity, obj);
+    tmp3Result = tmp3(tmp4(4812).PressableOpacity, obj);
     const tmp5 = closure_16;
   }
   return tmp3Result;
@@ -478,11 +478,11 @@ function ForumChannelContent(channel) {
   const tmp8Result1 = channel(joined[16]);
 }
 function onCreatePostWithoutPermission() {
-  let obj = importDefault(3956);
+  let obj = importDefault(3986);
   obj = { key: "FORUM_NO_POST_PERMISSION_HELP", content: null, icon: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.iyzwnD);
-  obj[2] = importDefault(7544);
+  obj[2] = importDefault(7556);
   obj.open(obj);
 }
 ({ AnalyticsObjects: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1 } = ME);

@@ -1,9 +1,9 @@
-// Module ID: 9320
-// Function ID: 9321
+// Module ID: 8220
+// Function ID: 8221
 // Name: maybeMarkSeen
 // Dependencies: [5, 38, 709, 2]
 
-// Module 9320 (maybeMarkSeen)
+// Module 8220 (maybeMarkSeen)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let obj = { IMMEDIATE: 0, [0]: "IMMEDIATE", IMMEDIATE_WITH_COOLDOWN: 1, [1]: "IMMEDIATE_WITH_COOLDOWN", IMMEDIATE_WITH_DELAY: 2, [2]: "IMMEDIATE_WITH_DELAY" };
@@ -160,7 +160,7 @@ class AnalyticsFeedItemSeenManager {
     };
     obj.getTrackedFeedItem = function getTrackedFeedItem(feedItemId) {
       if (null == obj.trackedFeedItems[feedItemId]) {
-        if (typeof outer1_4 !== "error") {
+        if (typeof outer1_4 !== "find") {
           HermesBuiltin.throwTypeError();
         }
         obj = Object.create(outer1_4.prototype);

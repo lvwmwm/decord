@@ -1,10 +1,10 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 11972
+// Function ID: 11973
 // Name: _startContactSyncForDiscoverability
-// Dependencies: [5, 11884, 4935, 1874, 11912, 676, 9405, 709, 4461, 11913, 1959, 11956, 11959, 11960, 691, 11887, 11891, 2]
+// Dependencies: [5, 11945, 4964, 1874, 11973, 676, 8318, 709, 4490, 11974, 1959, 12011, 12014, 12015, 691, 11948, 11952, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 11911 (_startContactSyncForDiscoverability)
+// Module 11972 (_startContactSyncForDiscoverability)
 import ME from "ME";
 import ContactSyncModes from "ContactSyncModes";
 import set from "set";
@@ -58,14 +58,14 @@ function _startContactSyncForDiscoverability() {
                 phone = currentUser.phone;
               }
               const localAccount = outer1_8.getLocalAccount(outer1_11.CONTACTS);
-              callback(11887);
+              callback(11948);
               if (null == phone) {
                 const _Error = Error;
                 const error = new Error("Cannot start contact sync without a phone number");
                 throw error;
               } else {
                 outer1_6(tmp31);
-                let obj4 = outer1_1(11891);
+                let obj4 = outer1_1(11952);
                 let obj1 = { enabled: null, name: null };
                 obj1[0] = tmp15;
                 obj1[1] = tmp31;
@@ -86,7 +86,7 @@ function _startContactSyncForDiscoverability() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(11887);
+              obj1 = callback(11948);
               dependencyMap = 2;
               c3 = 1;
               obj4 = { value: null, done: false };
@@ -143,7 +143,7 @@ export const previousOnboardingStep = function previousOnboardingStep() {
 };
 export const transitionToNUFGuildTemplatesModal = function transitionToNUFGuildTemplatesModal(SLIDE_IN) {
   let closure_0 = SLIDE_IN;
-  importDefault(4461).pushLazy(callback(function*() {
+  importDefault(4490).pushLazy(callback(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -209,12 +209,12 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(11956);
+  let obj = importDefault(12011);
   obj = {
     onCloseExtra(arg0) {
       if (arg0) {
-        const result = callback(11959).setNewUserFlowCompleted();
-        const obj2 = callback(11959);
+        const result = callback(12014).setNewUserFlowCompleted();
+        const obj2 = callback(12014);
       } else {
         callback2(709).dispatch({ type: "ONBOARDING_STEP" });
         const obj = callback2(709);
@@ -225,7 +225,7 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
   obj.open(obj, SLIDE_IN);
 };
 export const openDiscoverabilityModal = function openDiscoverabilityModal() {
-  importDefault(4461).pushLazy(callback(function*() {
+  importDefault(4490).pushLazy(callback(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -287,7 +287,7 @@ export const openDiscoverabilityModal = function openDiscoverabilityModal() {
   }), {}, closure_10);
 };
 export const closeDiscoverabilityModal = function closeDiscoverabilityModal(skip) {
-  let obj = importDefault(4461);
+  let obj = importDefault(4490);
   obj.popWithKey(closure_10);
   obj = { type: "ONBOARDING_STEP", skip };
   importDefault(709).dispatch(obj);

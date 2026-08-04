@@ -1,10 +1,10 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15373
+// Function ID: 15374
 // Name: label
-// Dependencies: [19, 21, 687, 1236, 10408, 5617, 5620, 5286, 2]
+// Dependencies: [19, 21, 687, 1236, 9678, 5646, 5649, 5315, 2]
 // Exports: default
 
-// Module 15342 (label)
+// Module 15373 (label)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -57,7 +57,7 @@ items[4] = {
     return intl.string(require(1236) /* getSystemLocale */.t["755t4q"]);
   }
 };
-const obj3 = { duration: "Array", label: true };
+const obj3 = { duration: "Array", label: 0 };
 obj3[1] = function label() {
   const intl = require(1236) /* getSystemLocale */.intl;
   return intl.string(require(1236) /* getSystemLocale */.t["46dqJY"]);
@@ -74,7 +74,7 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 
 export default function FocusModeOptionsActionSheet(onSelect) {
   onSelect = onSelect.onSelect;
-  let obj = onSelect(10408);
+  let obj = onSelect(9678);
   const focusModeEnabled = obj.useFocusModeEnabled();
   obj = { title: null, hasIcons: false, children: null };
   const intl = onSelect(1236).intl;
@@ -91,7 +91,7 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     };
     const intl4 = tmp(1236).intl;
     obj[4] = intl4.string(tmp(1236).t.rk35Gm);
-    tmp4Result = tmp4(tmp(5286).TableRow, obj);
+    tmp4Result = tmp4(tmp(5315).TableRow, obj);
   }
   const obj1 = { children: null };
   const items = [tmp4Result, ];
@@ -108,6 +108,6 @@ export default function FocusModeOptionsActionSheet(onSelect) {
     return outer1_2(onSelect(outer1_1[7]).TableRow, obj, "" + duration);
   });
   obj[2] = items;
-  obj1[0] = closure_3(onSelect(5620).TableRowGroup, obj);
-  return closure_2(onSelect(5617).ActionSheet, obj1);
+  obj1[0] = closure_3(onSelect(5649).TableRowGroup, obj);
+  return closure_2(onSelect(5646).ActionSheet, obj1);
 };

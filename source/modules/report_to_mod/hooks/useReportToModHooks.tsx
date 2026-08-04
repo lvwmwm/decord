@@ -1,10 +1,10 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 11042
+// Function ID: 11043
 // Name: useIsReportToModEnabled
-// Dependencies: [19, 1862, 4473, 589, 5766, 5787, 5774, 6814, 8107, 2]
+// Dependencies: [19, 1862, 4502, 589, 5795, 5816, 5803, 6826, 8119, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 9721 (useIsReportToModEnabled)
+// Module 11042 (useIsReportToModEnabled)
 import { useEffect } from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -50,10 +50,10 @@ export const useReportToModChannelId = function useReportToModChannelId(arg0) {
   });
 };
 export const useIsModeratorReportOrPostChannel = function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
-  return require(5774) /* canReportMessageToMods */.isModeratorReportOrPostChannel(isModeratorReportChannel);
+  return require(5803) /* canReportMessageToMods */.isModeratorReportOrPostChannel(isModeratorReportChannel);
 };
 export const useIsModeratorReportPostChannel = function useIsModeratorReportPostChannel(isModeratorReportChannel) {
-  return require(5774) /* canReportMessageToMods */.isModeratorReportPostChannel(isModeratorReportChannel);
+  return require(5803) /* canReportMessageToMods */.isModeratorReportPostChannel(isModeratorReportChannel);
 };
 export const useLoadReportedMessage = function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
@@ -94,7 +94,7 @@ export const loadOriginalAuthorFromSnapshot = function loadOriginalAuthorFromSna
     }
   }
   if (null != reported_user_id) {
-    const user = require(8107) /* _fetchProfile */.getUser(reported_user_id);
-    const obj = require(8107) /* _fetchProfile */;
+    const user = require(8119) /* _fetchProfile */.getUser(reported_user_id);
+    const obj = require(8119) /* _fetchProfile */;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 8115
-// Function ID: 8116
+// Module ID: 8127
+// Function ID: 8128
 // Name: createUploaderAttachments
-// Dependencies: [7840, 4443, 8027, 1236, 4787, 2]
+// Dependencies: [7852, 4472, 8039, 1236, 4816, 2]
 // Exports: default
 
-// Module 8115 (createUploaderAttachments)
+// Module 8127 (createUploaderAttachments)
 import { AttachmentType } from "Changeset";
 
 const result = require("getAttachmentObscurityProps").fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");

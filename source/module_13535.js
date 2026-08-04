@@ -1,0 +1,49 @@
+// Module ID: 13535
+// Function ID: 13536
+// Dependencies: [13504, 13536, 13479, 13532]
+
+// Module 13535
+
+export default (arg0, arg1, arg2, arg3) => {
+  let obj = arg3;
+  if (!arg3) {
+    obj = {};
+  }
+  let flag = obj.enumerable;
+  let name = arg1;
+  if (undefined !== obj.name) {
+    name = obj.name;
+  }
+  if (require(13504) /* all */(arg2)) {
+    tmp3(13536)(arg2, name, obj);
+  }
+  if (obj.global) {
+    if (flag) {
+      arg0[arg1] = arg2;
+    } else {
+      tmp3(13479)(arg1, arg2);
+    }
+  } else {
+    try {
+      if (obj.unsafe) {
+        if (arg0[arg1]) {
+          flag = true;
+        }
+      } else {
+        delete tmp[tmp2];
+      }
+      if (flag) {
+        arg0[arg1] = arg2;
+      } else {
+        obj = { value: null, enumerable: false, configurable: null, writable: null };
+        obj[0] = arg2;
+        obj[2] = !obj.nonConfigurable;
+        obj[3] = !obj.nonWritable;
+        tmp3(13532).f(arg0, arg1, obj);
+        const tmp3Result = tmp3(13532);
+      }
+    } catch (err) {
+    }
+  }
+  return arg0;
+};

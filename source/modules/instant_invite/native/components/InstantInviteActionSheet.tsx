@@ -1,11 +1,11 @@
-// Module ID: 8666
-// Function ID: 8667
+// Module ID: 8996
+// Function ID: 8997
 // Name: Loading
-// Dependencies: [32, 19, 17, 1377, 8658, 1862, 3883, 7104, 676, 21, 4255, 712, 8667, 1581, 5581, 5601, 5587, 589, 4241, 7126, 8657, 4223, 8668, 5832, 1306, 12347, 5309, 5308, 1236, 1297, 12348, 12352, 12354, 5891, 10241, 11926, 12386, 2]
+// Dependencies: [32, 19, 17, 1377, 8988, 1862, 3913, 7116, 676, 21, 4285, 712, 8997, 1581, 5610, 5630, 5616, 589, 4271, 7138, 8987, 4253, 8705, 8998, 1306, 9000, 5338, 5337, 1236, 1297, 9004, 9008, 9010, 5901, 9002, 9047, 9048, 2]
 // Exports: default
 
-// Module 8666 (Loading)
-import module_12354 from "module_12354";
+// Module 8996 (Loading)
+import module_9010 from "module_9010";
 import getInviteURL from "getInviteURL";
 import get_ActivityIndicator from "initialize";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -34,7 +34,7 @@ function Loading() {
     let tmp4 = dependencyMap;
     let obj = { row: null };
     obj[0] = num;
-    let arr = items.push(callback2(importDefault(8667), obj, num));
+    let arr = items.push(callback2(importDefault(8997), obj, num));
     num = num + 1;
   } while (num < 10);
   obj = { children: null };
@@ -60,7 +60,7 @@ let obj3 = { paddingBottom: require("Themes").space.PX_8, paddingHorizontal: req
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteActionSheet.tsx");
 
 export default function InstantInviteActionSheet(channel) {
-  let module_12354;
+  let module_9010;
   let code;
   let isFetchingRows;
   let rows;
@@ -68,7 +68,7 @@ export default function InstantInviteActionSheet(channel) {
   channel = channel.channel;
   const source = channel.source;
   const vanityURLCode = channel.vanityURLCode;
-  ({ guildScheduledEventId: module_12354, targetApplicationId, code } = channel);
+  ({ guildScheduledEventId: module_9010, targetApplicationId, code } = channel);
   let analyticsLocations;
   let stateFromStores;
   let str;
@@ -102,7 +102,7 @@ export default function InstantInviteActionSheet(channel) {
       }
       if (null != vanityURLCode) {
         let inviteKeyFromExtraData = tmp6;
-        if (null != module_12354) {
+        if (null != module_9010) {
           let obj = { baseCode: null, guildScheduledEventId: null };
           obj[0] = tmp6;
           obj[1] = tmp12;
@@ -113,7 +113,7 @@ export default function InstantInviteActionSheet(channel) {
       } else {
         code = outer1_8.getInvite();
         if (null != code) {
-          if (null != module_12354) {
+          if (null != module_9010) {
             obj = channel(vanityURLCode[18]);
             obj = { baseCode: null, guildScheduledEventId: null };
             code = code.code;

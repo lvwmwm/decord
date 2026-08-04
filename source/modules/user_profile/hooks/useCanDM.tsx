@@ -1,10 +1,10 @@
-// Module ID: 12322
-// Function ID: 12323
+// Module ID: 12409
+// Function ID: 12410
 // Name: useCanDM
-// Dependencies: [7027, 3884, 1218, 1942, 3892, 3928, 589, 2]
+// Dependencies: [7039, 3914, 1218, 1942, 3922, 3958, 589, 2]
 // Exports: canDm, default
 
-// Module 12322 (useCanDM)
+// Module 12409 (useCanDM)
 import recountRelationshipTypes from "recountRelationshipTypes";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -28,7 +28,7 @@ export default function useCanDM(arg0, arg1) {
     }
     return isLurkingResult;
   });
-  const RestrictedGuildIds = _require(3928).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3958).RestrictedGuildIds;
   fetchFingerprint = RestrictedGuildIds.useSetting();
   const obj2 = _require(589);
   const items2 = [upsertRelationship, trackCommunicationDisabled, recountRelationshipTypes];
@@ -63,7 +63,7 @@ export const canDm = function canDm(userId, guildId) {
   if (isLurkingResult) {
     isLurkingResult = lurking.isLurking(guildId);
   }
-  const RestrictedGuildIds = _require(3928).RestrictedGuildIds;
+  const RestrictedGuildIds = _require(3958).RestrictedGuildIds;
   _require = RestrictedGuildIds.getSetting();
   let isFriendResult = friend.isFriend(userId);
   let tmp8 = !tmp4;
@@ -80,7 +80,7 @@ export const canDm = function canDm(userId, guildId) {
   if (!tmp8) {
     let setting = gameFriendsForUser.getGameFriendsForUser(userId).length > 0;
     if (setting) {
-      const AllowGameFriendDmsInDiscord = _require(3928).AllowGameFriendDmsInDiscord;
+      const AllowGameFriendDmsInDiscord = _require(3958).AllowGameFriendDmsInDiscord;
       setting = AllowGameFriendDmsInDiscord.getSetting();
     }
     tmp8 = setting;

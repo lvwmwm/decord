@@ -1,9 +1,9 @@
-// Module ID: 6951
-// Function ID: 6952
+// Module ID: 6963
+// Function ID: 6964
 // Name: processMessage
-// Dependencies: [32, 6952, 1372, 4473, 676, 1386, 4475, 6956, 589, 709, 2]
+// Dependencies: [32, 6964, 1372, 4502, 676, 1386, 4504, 6968, 589, 709, 2]
 
-// Module 6951 (processMessage)
+// Module 6963 (processMessage)
 import _slicedToArray from "_slicedToArray";
 import removePendingListFetch from "removePendingListFetch";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -37,14 +37,14 @@ function processMessage(message) {
           obj = { state: null, message: null };
           obj[0] = obj.LOADED;
           ({ channel_id, id } = referenced_message);
-          obj[1] = require(4475) /* createMinimalMessageRecord */.createMessageRecord(referenced_message);
+          obj[1] = require(4504) /* createMinimalMessageRecord */.createMessageRecord(referenced_message);
           const result = obj.set(channel_id, id, obj);
           flag2 = true;
           if (message.type === constants.THREAD_STARTER_MESSAGE) {
             processMessage(referenced_message);
             flag2 = true;
           }
-          const obj5 = require(4475) /* createMinimalMessageRecord */;
+          const obj5 = require(4504) /* createMinimalMessageRecord */;
         } else {
           obj = { state: null };
           obj[0] = obj.DELETED;
@@ -193,7 +193,7 @@ prototype2["set"] = function set(arg0, arg1, arg2) {
   const _channelCaches = this._channelCaches;
   let value = _channelCaches.get(arg0);
   if (null == value) {
-    if (typeof ChannelReferencedMessageCache !== "error") {
+    if (typeof ChannelReferencedMessageCache !== "find") {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(ChannelReferencedMessageCache.prototype);
@@ -222,10 +222,10 @@ prototype2["updateExistingMessageIfCached"] = function updateExistingMessageIfCa
     if (flag) {
       const obj = { state: null, message: null };
       obj[0] = obj.LOADED;
-      obj[1] = require(4475) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
+      obj[1] = require(4504) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
       const result = value.set(channel_id.id, obj);
       flag = true;
-      const obj3 = require(4475) /* createMinimalMessageRecord */;
+      const obj3 = require(4504) /* createMinimalMessageRecord */;
     }
     tmp = flag;
   }
@@ -337,7 +337,7 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
         if (value.state === obj.LOADED) {
           obj = { state: null, message: null };
           obj[0] = tmp3.LOADED;
-          obj[1] = require(6956) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
+          obj[1] = require(6968) /* redactionSettingToRenderedString */.handleExplicitMediaScanTimeoutForMessage(value.message);
           const result = obj.set(channelId, messageId, obj);
         }
       }
@@ -375,7 +375,7 @@ const referencedMessageStore = new ReferencedMessageStore(require("dispatcher"),
         if (value.state === obj.LOADED) {
           obj = { state: null, message: null };
           obj[0] = tmp3.LOADED;
-          obj[1] = require(4475) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
+          obj[1] = require(4504) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
           const result = obj.set(channel_id, id, obj);
         }
       }

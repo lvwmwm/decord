@@ -1,10 +1,10 @@
-// Module ID: 5744
-// Function ID: 5745
+// Module ID: 5773
+// Function ID: 5774
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 3923, 530, 3916, 2]
+// Dependencies: [5, 676, 3, 3953, 530, 3946, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
-// Module 5744 (_signOrder)
+// Module 5773 (_signOrder)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { Endpoints } from "ME";
 import "set";

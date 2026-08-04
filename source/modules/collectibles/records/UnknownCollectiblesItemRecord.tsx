@@ -1,10 +1,10 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6918
+// Function ID: 6919
 // Name: fromServer
 // Dependencies: [1900, 1901, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 6906 (fromServer)
+// Module 6918 (fromServer)
 import "fromServer";
 
 const require = arg1;
@@ -23,7 +23,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   const fromServerResult = super.fromServer(arg0);
   const merged = Object.assign(fromServerResult);
   obj.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.NONE;
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     HermesBuiltin.throwTypeError();
   }
   tmp2 = new tmp2(obj, fromServerResult, this, prototype, obj);

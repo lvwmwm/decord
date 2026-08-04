@@ -1,10 +1,10 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 15739
+// Function ID: 15740
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1874, 1369, 1876, 21, 4255, 501, 712, 1348, 12611, 6810, 4071, 1358, 589, 8105, 8412, 8416, 4101, 689, 3901, 15709, 10644, 15710, 15711, 11095, 5102, 15712, 14111, 1236, 15713, 15715, 7613, 5910, 4677, 2]
+// Dependencies: [19, 17, 1874, 1369, 1876, 21, 4285, 501, 712, 1348, 12645, 6822, 4101, 1358, 589, 8117, 8745, 8754, 4131, 689, 3931, 15740, 10375, 15741, 15742, 11080, 5131, 15743, 14145, 1236, 15744, 15746, 7625, 5920, 4706, 2]
 // Exports: useHasSettingsBadge
 
-// Module 15708 (useHasSettingsBadge)
+// Module 15739 (useHasSettingsBadge)
 import importAllResult from "n";
 import get_ActivityIndicator from "useUserProfileColors";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -268,11 +268,11 @@ let result = require("mergeGuildAvatar").fileFinishedImporting("modules/main_tab
 
 export default memoResult;
 export const useHasSettingsBadge = function useHasSettingsBadge() {
-  let tmp = require(12611) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
-  const obj = require(12611) /* useEligibleActiveOutboundPromotions */;
-  const obj2 = require(6810) /* hasUserTrialOfferExpired */;
-  const tmp2 = null != require(6810) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
-  const result = require(4071) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+  let tmp = require(12645) /* useEligibleActiveOutboundPromotions */.useUnseenOutboundPromotions().length > 0;
+  const obj = require(12645) /* useEligibleActiveOutboundPromotions */;
+  const obj2 = require(6822) /* hasUserTrialOfferExpired */;
+  const tmp2 = null != require(6822) /* hasUserTrialOfferExpired */.useTrialOffer(closure_9);
+  const result = require(4101) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
   let tmp4 = !result;
   if (!result) {
     tmp4 = tmp2;

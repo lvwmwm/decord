@@ -1,10 +1,10 @@
-// Module ID: 9573
-// Function ID: 9574
+// Module ID: 8662
+// Function ID: 8663
 // Name: _updateEmoji
-// Dependencies: [5, 5114, 4931, 4593, 676, 685, 1355, 1337, 709, 530, 8071, 4101, 1236, 4155, 3896, 1351, 5121, 12, 4594, 2]
+// Dependencies: [5, 5143, 4960, 4622, 676, 685, 1355, 1337, 709, 530, 8083, 4131, 1236, 4185, 3926, 1351, 5150, 12, 4623, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 9573 (_updateEmoji)
+// Module 8662 (_updateEmoji)
 import closure_3 from "MAX_FAVORITES";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -91,7 +91,7 @@ function _updateEmoji() {
           } else if (2 === tmp8) {
             c4 = 0;
             c4 = c3;
-            const tmp18 = new callback2(4155)(c4);
+            const tmp18 = new callback2(4185)(c4);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -174,13 +174,13 @@ export const uploadEmoji = function uploadEmoji(guildId) {
   obj.dispatch({ type: "EMOJI_UPLOAD_START", guildId });
   const HTTP = guildId(530).HTTP;
   obj = { url: Endpoints.GUILD_EMOJIS(guildId), body: { image, name, roles }, headers: null, context: null, oldFormErrors: true, rejectWithError: null };
-  obj[2] = importDefault(8071).buildHeadersForMd5(originalMd5);
+  obj[2] = importDefault(8083).buildHeadersForMd5(originalMd5);
   let page;
   if (analyticsLocation != null) {
     page = analyticsLocation.page;
   }
   obj[3] = { client_event_source: page };
-  const obj3 = importDefault(8071);
+  const obj3 = importDefault(8083);
   const tmp3 = guildId;
   obj[5] = guildId(530).rejectWithMigratedError();
   const tmp3Result = guildId(530);
@@ -213,7 +213,7 @@ export const deleteEmoji = function deleteEmoji(c0, id) {
   const tmp3 = require;
   const tmp3Result = require(530) /* sendRequest */;
   return HTTP.del(obj).then(() => {
-    const AccessibilityAnnouncer = callback(4101).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = callback(4131).AccessibilityAnnouncer;
     const intl = callback(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.L3UUha));
   });
@@ -233,12 +233,12 @@ export const favoriteEmoji = function favoriteEmoji(customEmojiFromJoinedGuild) 
   if (null != customEmojiFromJoinedGuild) {
     let name = customEmojiFromJoinedGuild.id;
     if (name == null) {
-      const result = importDefault(3896).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
+      const result = importDefault(3926).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
       name = undefined;
       if (result != null) {
         name = result.name;
       }
-      let obj = importDefault(3896);
+      let obj = importDefault(3926);
     }
     if (name == null) {
       name = customEmojiFromJoinedGuild.name;
@@ -300,12 +300,12 @@ export const unfavoriteEmoji = function unfavoriteEmoji(customEmojiFromJoinedGui
   if (null != customEmojiFromJoinedGuild) {
     let name = customEmojiFromJoinedGuild.id;
     if (name == null) {
-      const result = importDefault(3896).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
+      const result = importDefault(3926).convertSurrogateToBase(customEmojiFromJoinedGuild.surrogates);
       name = undefined;
       if (result != null) {
         name = result.name;
       }
-      let obj = importDefault(3896);
+      let obj = importDefault(3926);
     }
     if (name == null) {
       name = customEmojiFromJoinedGuild.name;

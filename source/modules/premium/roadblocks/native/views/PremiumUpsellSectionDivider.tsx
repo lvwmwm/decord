@@ -1,10 +1,10 @@
-// Module ID: 9540
-// Function ID: 9541
+// Module ID: 8627
+// Function ID: 8628
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 6793, 21, 4255, 712, 9541, 4677, 691, 4775, 2]
+// Dependencies: [19, 17, 6805, 21, 4285, 712, 8628, 4706, 691, 4804, 2]
 // Exports: default
 
-// Module 9540 (PremiumUpsellSectionDivider)
+// Module 8627 (PremiumUpsellSectionDivider)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -58,7 +58,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
   ({ useTier0UpsellContent, position } = arg0);
   let lock = callback2(position);
   let obj = { style: lock.container, children: null };
-  obj = { style: lock.gradient, children: callback(require(9541) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
+  obj = { style: lock.gradient, children: callback(require(8628) /* PremiumUpsellGradientBackground */.PremiumUpsellGradientBackground, { useTier0UpsellContent }) };
   let LockIcon = require;
   let WHITE = dependencyMap;
   const items = [callback(closure_4, obj), , ];
@@ -73,7 +73,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
   obj[3] = PREMIUM_TIER_2_TRI_COLOR;
-  items[1] = callback(importDefault(4677), obj);
+  items[1] = callback(importDefault(4706), obj);
   if (position !== createCacheKey.START) {
     items[2] = tmp8;
     obj[1] = items;
@@ -86,17 +86,17 @@ export default function PremiumUpsellSectionDivider(arg0) {
     obj2[1] = LockIcon(691).HorizontalGradient.START;
     obj2[2] = LockIcon(691).HorizontalGradient.END;
     obj2[3] = useTier0UpsellContent ? tmp6.PREMIUM_TIER_0 : tmp6.PREMIUM_TIER_2_TRI_COLOR;
-    LockIcon = LockIcon(4775).LockIcon;
+    LockIcon = LockIcon(4804).LockIcon;
     const obj3 = { color: null, style: null };
     WHITE = tmp4(712).colors.WHITE;
     obj3[0] = WHITE;
     lock = lock.lock;
     obj3[1] = lock;
     obj2[4] = tmp3(LockIcon, obj3);
-    obj2 = tmp3(tmp4(4677), obj2);
+    obj2 = tmp3(tmp4(4706), obj2);
     obj1[1] = obj2;
     tmp3(tmp2, obj1);
-    const tmp4Result = tmp4(4677);
+    const tmp4Result = tmp4(4706);
   }
 };
 export const PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT = 28;

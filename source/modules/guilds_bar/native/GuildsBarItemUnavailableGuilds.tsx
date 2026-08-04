@@ -1,8 +1,8 @@
-// Module ID: 15314
-// Function ID: 15315
-// Dependencies: [19, 17, 4593, 21, 4255, 712, 4594, 1236, 589, 15305, 2]
+// Module ID: 15345
+// Function ID: 15346
+// Dependencies: [19, 17, 4622, 21, 4285, 712, 4623, 1236, 589, 15336, 2]
 
-// Module 15314
+// Module 15345
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleConnectionOpen from "handleConnectionOpen";
 import { jsx } from "jsxProd";
@@ -44,7 +44,7 @@ const memoResult = require("noop").memo(function GuildsBarItemUnavailableGuilds(
     obj[3] = tmp.unavailableGuilds;
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.unavailableGuildsIcon;
-    obj1[1] = importDefault(15305);
+    obj1[1] = importDefault(15336);
     obj[4] = <closure_3 style={null} source={null} />;
     tmp5 = <closure_4 count={null} />;
   }

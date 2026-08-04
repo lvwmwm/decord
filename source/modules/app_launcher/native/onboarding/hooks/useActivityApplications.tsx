@@ -1,7 +1,7 @@
 // Module ID: 11337
 // Function ID: 11338
 // Name: useActivityApplications
-// Dependencies: [19, 11338, 10664, 2]
+// Dependencies: [19, 11338, 10513, 2]
 // Exports: useActivityApplications
 
 // Module 11337 (useActivityApplications)

@@ -1,9 +1,9 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 8016
+// Function ID: 8017
 // Name: create
-// Dependencies: [32, 1307, 1336, 1337, 8005, 2]
+// Dependencies: [32, 1307, 1336, 1337, 8017, 2]
 
-// Module 8004 (create)
+// Module 8016 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 import { MessageType as MessageType2 } from "module_1307";
@@ -92,7 +92,7 @@ class Experiment$Type extends MessageType {
       kind: "message",
       repeat: 1,
       T() {
-            return callback(8005).Rule;
+            return callback(8017).Rule;
           }
     };
     items[16] = {
@@ -350,7 +350,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(id, tag, writeUn
     do {
       let tmp47 = require;
       let tmp48 = dependencyMap;
-      let Rule = require(8005) /* defineProperty */.Rule;
+      let Rule = require(8017) /* defineProperty */.Rule;
       let tagResult15 = tag.tag(16, require(1307).WireType.LengthDelimited);
       let internalBinaryWriteResult5 = Rule.internalBinaryWrite(id.rules[num16], tagResult15.fork(), writeUnknownFields);
       let joined5 = internalBinaryWriteResult5.join();

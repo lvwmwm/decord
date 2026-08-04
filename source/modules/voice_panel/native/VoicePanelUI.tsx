@@ -1,14 +1,14 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16038
+// Function ID: 16039
 // Name: NOOP
-// Dependencies: [32, 19, 17, 4268, 8469, 4466, 10193, 10191, 4273, 10194, 21, 3, 4665, 4255, 712, 4116, 1577, 10192, 1581, 5339, 9605, 10197, 16006, 4224, 15999, 3959, 10199, 10809, 16004, 15992, 10070, 10411, 6959, 7807, 5581, 5601, 705, 16007, 5568, 16008, 16009, 10662, 16010, 16012, 16043, 16070, 16072, 16077, 2]
+// Dependencies: [32, 19, 17, 4298, 8784, 4495, 11558, 11556, 4303, 11559, 21, 3, 4694, 4285, 712, 4146, 1577, 11557, 1581, 5368, 8698, 10245, 16039, 4254, 16032, 3989, 11562, 10660, 16037, 16025, 10167, 9681, 6971, 7819, 5610, 5630, 705, 16040, 5597, 16041, 16042, 10511, 16043, 16045, 16076, 16103, 16105, 16110, 2]
 
-// Module 16005 (NOOP)
+// Module 16038 (NOOP)
 import isStable from "isStable";
 import importAllResult from "Directions";
 import get_ActivityIndicator from "dismissPanel";
 import getParticipants from "getParticipants";
-import module_8469 from "module_8469";
+import module_8784 from "module_8784";
 import withEqualityFn from "withEqualityFn";
 import VoicePanelModes from "VoicePanelModes";
 import { VoicePanelControlsModes } from "VoicePanelControlsModes";
@@ -17,7 +17,7 @@ import { POP_RESISTANCE } from "MIN_PAN_GESTURE_MOVE";
 import jsxProd from "u";
 import createCacheKey from "createCacheKey";
 import isMetaQuest from "isMetaQuest";
-import importDefaultResult from "module_4116";
+import importDefaultResult from "module_4146";
 
 let DEFAULT_BORDER_RADIUS;
 let DRAWER_SPRING_PHYSICS;
@@ -57,12 +57,12 @@ function AnimatedWrapper(children) {
   let pIPState;
   let animatedStyle;
   let animatedStyle1;
-  let obj = wrapperOffset(10809);
+  let obj = wrapperOffset(10660);
   height = obj.useGlobalStatusIndicatorState().height;
   const tmp3 = callback2();
   dependencyMap = tmp3;
   let obj1 = connected;
-  const context = connected.useContext(height(10192));
+  const context = connected.useContext(height(11557));
   wrapperDimensions = context.wrapperDimensions;
   connected = context.connected;
   controlsSpecs = context.controlsSpecs;
@@ -72,7 +72,7 @@ function AnimatedWrapper(children) {
   safeArea = context.safeArea;
   windowDimensions = context.windowDimensions;
   useReducedMotion = context.useReducedMotion;
-  let obj2 = wrapperOffset(4116);
+  let obj2 = wrapperOffset(4146);
   const fn = function o() {
     return controlsSpecs.get().height;
   };
@@ -80,9 +80,9 @@ function AnimatedWrapper(children) {
   fn.__workletHash = 6243014585347;
   fn.__initData = closure_55;
   derivedValue = obj2.useDerivedValue(fn);
-  let obj3 = wrapperOffset(16004);
+  let obj3 = wrapperOffset(16037);
   pIPState = obj3.usePIPState();
-  let obj4 = wrapperOffset(4116);
+  let obj4 = wrapperOffset(4146);
   const fn2 = function l() {
     return { modeToSet: mode.get(), connected: connected.get(), windowWidth: windowDimensions.get().width, windowHeight: windowDimensions.get().height, safeArea: safeArea.get(), focused: focused.get(), pipState: pIPState, controlsHeight: derivedValue.get(), preJoinContentSize: preJoinContentSize.get(), globalStatusIndicatorHeight: height };
   };
@@ -154,12 +154,12 @@ function AnimatedWrapper(children) {
       }
     }
   };
-  obj = { cheapWorkletShallowEqual: wrapperOffset(9605).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10197), wrapperOffset, getMaxPanelWidth: wrapperOffset(15992).getMaxPanelWidth, getPanelX: wrapperOffset(15992).getPanelX, roundToNearestPixel: height(10070), windowDimensions };
+  obj = { cheapWorkletShallowEqual: wrapperOffset(8698).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10245), wrapperOffset, getMaxPanelWidth: wrapperOffset(16025).getMaxPanelWidth, getPanelX: wrapperOffset(16025).getPanelX, roundToNearestPixel: height(10167), windowDimensions };
   fn3.__closure = obj;
   fn3.__workletHash = 3683279660781;
   fn3.__initData = closure_57;
   const animatedReaction = obj4.useAnimatedReaction(fn2, fn3);
-  let obj6 = wrapperOffset(4116);
+  let obj6 = wrapperOffset(4146);
   class C {
     constructor() {
       value = useReducedMotion.get();
@@ -235,19 +235,19 @@ function AnimatedWrapper(children) {
       return obj2;
     }
   }
-  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4116).runOnJS, updateSourceTrackingView: height(10411).updateSourceTrackingView, withSpring: wrapperOffset(4665).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
+  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4146).runOnJS, updateSourceTrackingView: height(9681).updateSourceTrackingView, withSpring: wrapperOffset(4694).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
   C.__closure = obj;
   C.__workletHash = 16361132737159;
   C.__initData = closure_58;
   animatedStyle = obj6.useAnimatedStyle(C);
-  let obj8 = wrapperOffset(4116);
+  let obj8 = wrapperOffset(4146);
   class M {
     constructor() {
       obj = mode;
       obj2 = connected;
       value = mode.get();
       value1 = connected.get();
-      if (typeof outer1_54 !== "error") {
+      if (typeof outer1_54 !== "find") {
         str3 = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
@@ -277,13 +277,13 @@ function AnimatedWrapper(children) {
       return obj;
     }
   }
-  obj1 = { computeBorderRadii, mode, connected, wrapperDimensions, withSpring: wrapperOffset(4665).withSpring, BORDER_RADIUS_PHYSICS: windowDimensions, VoicePanelModes: animatedStyle1, styles: tmp3 };
+  obj1 = { computeBorderRadii, mode, connected, wrapperDimensions, withSpring: wrapperOffset(4694).withSpring, BORDER_RADIUS_PHYSICS: windowDimensions, VoicePanelModes: animatedStyle1, styles: tmp3 };
   M.__closure = obj1;
   M.__workletHash = 1768699814221;
   M.__initData = closure_60;
   animatedStyle1 = obj8.useAnimatedStyle(M);
-  if (!wrapperOffset(6959).isStable) {
-    let tmpResult = tmp(4116);
+  if (!wrapperOffset(6971).isStable) {
+    let tmpResult = tmp(4146);
     class Y {
       constructor() {
         return windowDimensions.get();
@@ -299,13 +299,13 @@ function AnimatedWrapper(children) {
       wrapperOffset(_undefined[15]).runOnJS(closure_25)("Window dimensions changed:", JSON.stringify(arg0));
     };
     obj3 = { runOnJS: null, log: null };
-    obj3[0] = tmp(4116).runOnJS;
+    obj3[0] = tmp(4146).runOnJS;
     obj3[1] = log;
     fn4.__closure = obj3;
     fn4.__workletHash = 13929796154212;
     fn4.__initData = closure_62;
     const animatedReaction1 = tmpResult.useAnimatedReaction(Y, fn4);
-    tmpResult = tmp(4116);
+    tmpResult = tmp(4146);
     class H {
       constructor() {
         return wrapperDimensions.get();
@@ -325,7 +325,7 @@ function AnimatedWrapper(children) {
       }
     }
     const obj5 = { runOnJS: null, log: null };
-    obj5[0] = tmp(4116).runOnJS;
+    obj5[0] = tmp(4146).runOnJS;
     obj5[1] = log;
     T.__closure = obj5;
     T.__workletHash = 1850762619613;
@@ -336,11 +336,11 @@ function AnimatedWrapper(children) {
   const memo = obj1.useMemo(() => ({ wrapperRootStyles: _undefined.wrapper, wrapperTransformStyles: animatedStyle, wrapperSurfaceStyles: animatedStyle1 }), items);
   ({ wrapperRootStyles, wrapperTransformStyles, wrapperSurfaceStyles } = memo);
   obj6 = { style: wrapperRootStyles, pointerEvents: "box-none", children: null };
-  let tmp4Result = tmp4(7807);
+  let tmp4Result = tmp4(7819);
   const obj7 = { style: wrapperTransformStyles, pointerEvents: "box-none", children: null };
-  tmp4Result = tmp4(7807);
+  tmp4Result = tmp4(7819);
   obj8 = { style: wrapperSurfaceStyles, layout: layoutTransition, children: children.children };
-  obj7[2] = callback(height(7807), obj8);
+  obj7[2] = callback(height(7819), obj8);
   obj6[2] = callback(tmp4Result, obj7);
   return callback(tmp4Result, obj6);
 }
@@ -358,13 +358,13 @@ let closure_24 = new require("getParticipants")("VoicePanelUI");
 function layoutTransition(originX) {
   let obj = { animations: null, initialValues: null };
   obj = { originX: null, originY: null, width: null, height: null };
-  obj[0] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
-  const obj3 = require(4665) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
-  const obj4 = require(4665) /* CONFIG_NEVER_ANIMATE */;
-  obj[2] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, LAYOUT_PHYSICS, "animate-always");
-  const obj5 = require(4665) /* CONFIG_NEVER_ANIMATE */;
-  obj[3] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, LAYOUT_PHYSICS, "animate-always");
+  obj[0] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
+  const obj3 = require(4694) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
+  const obj4 = require(4694) /* CONFIG_NEVER_ANIMATE */;
+  obj[2] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, LAYOUT_PHYSICS, "animate-always");
+  const obj5 = require(4694) /* CONFIG_NEVER_ANIMATE */;
+  obj[3] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, LAYOUT_PHYSICS, "animate-always");
   obj[0] = obj;
   obj[1] = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
@@ -379,13 +379,13 @@ obj.damping = 0;
 function scrollViewLayoutTransition(originX) {
   let obj = { animations: null, initialValues: null };
   obj = { originX: null, originY: null, width: null, height: null };
-  obj[0] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
-  const obj3 = require(4665) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
-  const obj4 = require(4665) /* CONFIG_NEVER_ANIMATE */;
-  obj[2] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, obj, "animate-always");
-  const obj5 = require(4665) /* CONFIG_NEVER_ANIMATE */;
-  obj[3] = require(4665) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, obj, "animate-always");
+  obj[0] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginX, LAYOUT_PHYSICS, "animate-always");
+  const obj3 = require(4694) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetOriginY, LAYOUT_PHYSICS, "animate-always");
+  const obj4 = require(4694) /* CONFIG_NEVER_ANIMATE */;
+  obj[2] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetWidth, obj, "animate-always");
+  const obj5 = require(4694) /* CONFIG_NEVER_ANIMATE */;
+  obj[3] = require(4694) /* CONFIG_NEVER_ANIMATE */.withSpring(originX.targetHeight, obj, "animate-always");
   obj[0] = obj;
   obj[1] = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
@@ -438,7 +438,7 @@ obj4[5] = { backgroundColor: require("Themes").colors.MOBILE_VOICE_PANEL_BACKGRO
 obj4[6] = { flexGrow: 1 };
 let closure_31 = createCacheKey.createStyles(obj4);
 let obj9 = { backgroundColor: require("Themes").colors.MOBILE_VOICE_PANEL_BACKGROUND, zIndex: 0 };
-let closure_32 = require("module_4116").createAnimatedComponent(ScrollView);
+let closure_32 = require("module_4146").createAnimatedComponent(ScrollView);
 isMetaQuest = isMetaQuest.isMetaQuest();
 let closure_34 = { code: "function VoicePanelUITsx4(){const{gestureState,connected,mode}=this.__closure;return{gestureActive:gestureState.get().active,connected:connected.get(),mode:mode.get()};}" };
 let closure_35 = { code: "function VoicePanelUITsx5(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,runOnJS,setPanelFullscreen,setPanelOpen,setPanelPIP}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{gestureActive:gestureActive,connected:connected,mode:mode}=props;if(!connected||gestureActive||mode!==VoicePanelModes.PANEL){runOnJS(setPanelFullscreen)(false);}else{runOnJS(setPanelFullscreen)(true);}if(mode===VoicePanelModes.PANEL){runOnJS(setPanelOpen)(true);}else{runOnJS(setPanelOpen)(false);}if(mode===VoicePanelModes.PIP){runOnJS(setPanelPIP)(true);}else{runOnJS(setPanelPIP)(false);}}" };
@@ -489,7 +489,7 @@ let closure_67 = { code: "function VoicePanelUITsx35(){const{withSpring,opacity,
 let closure_68 = importAllResult.memo((onPress) => {
   const opacity = onPress.opacity;
   const tmp = callback2();
-  let obj = opacity(4116);
+  let obj = opacity(4146);
   const fn = function o() {
     const obj = { opacity: null, pointerEvents: null };
     obj[0] = opacity(outer1_2[12]).withSpring(opacity.get(), outer1_66);
@@ -500,7 +500,7 @@ let closure_68 = importAllResult.memo((onPress) => {
     obj[1] = str;
     return obj;
   };
-  obj = { withSpring: opacity(4665).withSpring, opacity, DrawerShadeOpacityPhysics: closure_66 };
+  obj = { withSpring: opacity(4694).withSpring, opacity, DrawerShadeOpacityPhysics: closure_66 };
   fn.__closure = obj;
   fn.__workletHash = 3656047169284;
   fn.__initData = closure_67;
@@ -508,7 +508,7 @@ let closure_68 = importAllResult.memo((onPress) => {
   obj = { style: items, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: null };
   items = [StyleSheet.absoluteFill, tmp.shade, animatedStyle];
   obj[3] = callback(closure_6, { style: tmp.shadePressable, onPress: onPress.onPress });
-  return callback(importDefault(4116).View, obj);
+  return callback(importDefault(4146).View, obj);
 });
 const memoResult = importAllResult.memo(function VoicePanelUI() {
   let channelId;
@@ -1009,7 +1009,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
               const diff = store7.get().drawerHeight - store7.get().drawerY;
               if (closure_19.get().y > 0.2 * diff) {
                 outer1_1(outer1_2[21])(tmp12, { gestureActive: false });
-                outer1_0(outer1_2[15]).runOnJS(module_8469)();
+                outer1_0(outer1_2[15]).runOnJS(module_8784)();
                 const obj3 = outer1_0(outer1_2[15]);
               } else {
                 outer1_1(outer1_2[21])(tmp12, { gestureActive: false, x: 0, y: 0 });
@@ -1111,7 +1111,7 @@ const memoResult = importAllResult.memo(function VoicePanelUI() {
           value1 = obj.get();
           tmp23 = useSharedValue;
           value2 = useSharedValue.get();
-          if (typeof c30 !== "error") {
+          if (typeof c30 !== "find") {
             str = "Trying to call a non-function";
             throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }

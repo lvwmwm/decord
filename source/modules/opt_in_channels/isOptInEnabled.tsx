@@ -1,10 +1,10 @@
-// Module ID: 6891
-// Function ID: 6892
+// Module ID: 6903
+// Function ID: 6904
 // Name: useOptInEnabledForGuild
-// Dependencies: [1862, 3883, 4451, 1874, 676, 589, 2]
+// Dependencies: [1862, 3913, 4480, 1874, 676, 589, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild
 
-// Module 6891 (useOptInEnabledForGuild)
+// Module 6903 (useOptInEnabledForGuild)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";

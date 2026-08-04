@@ -1,9 +1,9 @@
-// Module ID: 5165
-// Function ID: 5166
+// Module ID: 5194
+// Function ID: 5195
 // Name: handleChannelSelect
-// Dependencies: [1340, 1372, 1862, 1931, 4072, 676, 685, 4339, 12, 589, 709, 2]
+// Dependencies: [1340, 1372, 1862, 1931, 4102, 676, 685, 4368, 12, 589, 709, 2]
 
-// Module 5165 (handleChannelSelect)
+// Module 5194 (handleChannelSelect)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

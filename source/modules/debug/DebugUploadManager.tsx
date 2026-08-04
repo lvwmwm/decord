@@ -1,10 +1,10 @@
-// Module ID: 10501
-// Function ID: 10502
+// Module ID: 9785
+// Function ID: 9786
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1372, 676, 3, 17, 4154, 9038, 10502, 7, 10503, 10505, 1869, 4113, 10506, 10507, 10508, 530, 2]
+// Dependencies: [5, 1372, 676, 3, 17, 4184, 9091, 9786, 7, 9787, 9789, 1869, 4143, 9790, 9791, 9792, 530, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 10501 (_uploadDebugLogFiles)
+// Module 9785 (_uploadDebugLogFiles)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Endpoints } from "ME";
@@ -59,7 +59,7 @@ function _uploadDebugLogFiles() {
           } else if (1 === tmp7) {
             c5 = 0;
             closure_2 = V6OrEarlierAPIError;
-            if (closure_2 instanceof callback(4154).UploadVoiceDebugLogsError) {
+            if (closure_2 instanceof callback(4184).UploadVoiceDebugLogsError) {
               closure_1 = (function uploadErrorToAVUnderlyingError(closure_2) {
                 const code = closure_2.code;
                 if (callback(tmp3[5]).UploadErrorCodes.GENERAL === code) {
@@ -75,9 +75,9 @@ function _uploadDebugLogFiles() {
                 }
               })(closure_2);
             }
-            let obj4 = callback(9038);
+            let obj4 = callback(9091);
             const obj2 = { type: null, underlyingError: null, errorMessage: null };
-            obj2[0] = callback(9038).AVError.DEBUG_LOG_UPLOAD_FAILED;
+            obj2[0] = callback(9091).AVError.DEBUG_LOG_UPLOAD_FAILED;
             obj2[1] = closure_1;
             obj2[2] = outer1_2.message;
             obj4.reportAVError(obj2);
@@ -93,7 +93,7 @@ function _uploadDebugLogFiles() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(10502);
+              obj1 = callback(9786);
               c6 = 3;
               c7 = 1;
               obj4 = { value: null, done: false };

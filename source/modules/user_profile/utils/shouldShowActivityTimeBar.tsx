@@ -1,10 +1,10 @@
-// Module ID: 12108
-// Function ID: 12109
+// Module ID: 12195
+// Function ID: 12196
 // Name: shouldShowActivityTimeBar
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 12108 (shouldShowActivityTimeBar)
+// Module 12195 (shouldShowActivityTimeBar)
 import { ActivityTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/utils/shouldShowActivityTimeBar.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 9720
+// Function ID: 9721
 // Name: items
-// Dependencies: [32, 19, 687, 6801, 3837, 4710, 2]
+// Dependencies: [32, 19, 687, 6813, 3867, 4739, 2]
 // Exports: default
 
-// Module 10447 (items)
+// Module 9720 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -22,7 +22,7 @@ let result = require("set").fileFinishedImporting("modules/markup/useFormattedTi
 
 export default function useFormattedTimestamp(format) {
   const _require = format;
-  const forceUpdate = _require(6801).useForceUpdate();
+  const forceUpdate = _require(6813).useForceUpdate();
   const items = [forceUpdate, , ];
   ({ format: arr[1], parsed: arr[2] } = format);
   const effect = React.useEffect(() => {
@@ -52,7 +52,7 @@ export default function useFormattedTimestamp(format) {
     }
   }, items);
   if ("R" === format.format) {
-    const TIMESTAMP_FORMATS = _require(4710).TIMESTAMP_FORMATS;
+    const TIMESTAMP_FORMATS = _require(4739).TIMESTAMP_FORMATS;
     let formatted = TIMESTAMP_FORMATS.R(format.parsed);
   } else {
     formatted = format.formatted;

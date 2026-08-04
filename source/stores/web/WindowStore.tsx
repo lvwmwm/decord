@@ -1,9 +1,9 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13091
+// Function ID: 13092
 // Name: map
-// Dependencies: [38, 589, 5256, 709, 698, 1959, 2]
+// Dependencies: [38, 589, 5285, 709, 698, 1959, 2]
 
-// Module 13057 (map)
+// Module 13091 (map)
 import { Store } from "initialize";
 import set from "getWindowId";
 
@@ -17,7 +17,7 @@ const prototype = WindowStore.prototype;
 prototype["isFocused"] = function isFocused() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(5256) /* getWindowId */;
+    let obj = require(5285) /* getWindowId */;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -35,7 +35,7 @@ prototype["isAppFocused"] = function isAppFocused() {
 prototype["isVisible"] = function isVisible() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(5256) /* getWindowId */;
+    let obj = require(5285) /* getWindowId */;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -62,7 +62,7 @@ prototype["getLastFocusedWindowId"] = function getLastFocusedWindowId() {
 prototype["isElementFullScreen"] = function isElementFullScreen() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(5256) /* getWindowId */;
+    let obj = require(5285) /* getWindowId */;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);
@@ -77,7 +77,7 @@ prototype["isElementFullScreen"] = function isElementFullScreen() {
 prototype["windowSize"] = function windowSize() {
   let mainWindowId = arg0;
   if (arg0 === undefined) {
-    let obj = require(5256) /* getWindowId */;
+    let obj = require(5285) /* getWindowId */;
     mainWindowId = obj.getMainWindowId();
   }
   let value = map.get(mainWindowId);

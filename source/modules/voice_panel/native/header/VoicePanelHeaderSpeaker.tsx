@@ -1,8 +1,8 @@
-// Module ID: 16030
-// Function ID: 16031
-// Dependencies: [109, 19, 17, 16031, 4269, 16032, 9018, 1372, 4270, 676, 21, 16034, 16007, 9017, 9237, 9115, 647, 9235, 9114, 16038, 500, 9042, 9019, 1236, 9039, 9041, 16039, 9116, 4071, 1358, 5634, 15947, 13258, 2]
+// Module ID: 16063
+// Function ID: 16064
+// Dependencies: [109, 19, 17, 16064, 4299, 16065, 9071, 1372, 4300, 676, 21, 16067, 16040, 9070, 10738, 10662, 647, 12126, 10770, 16071, 500, 9095, 9072, 1236, 9092, 9094, 16072, 12125, 4101, 1358, 5663, 15980, 13292, 2]
 
-// Module 16030
+// Module 16063
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "useCanConnect";
 import { NativeModules } from "getConsoleIcon";
@@ -27,7 +27,7 @@ let closure_18 = importAllResult.memo((arg0) => {
   let canShowTooltip;
   let targetRef;
   ({ targetRef, canShowTooltip } = arg0);
-  importDefault(16034)(targetRef, canShowTooltip);
+  importDefault(16067)(targetRef, canShowTooltip);
   return null;
 });
 const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConnectedToVoiceChannel) {
@@ -223,7 +223,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderSpeaker(isConne
     function renderButton(arg0) {
       let tmp = arg0;
       if (arg0 == null) {
-        let obj = { onPress: null, ref: "Array" };
+        let obj = { onPress: null, ref: "a" };
         obj[0] = closure_15;
         tmp = obj;
       }

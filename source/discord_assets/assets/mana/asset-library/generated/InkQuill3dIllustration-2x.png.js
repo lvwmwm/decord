@@ -1,9 +1,9 @@
-// Module ID: 6388
-// Function ID: 6389
+// Module ID: 6398
+// Function ID: 6399
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6388 (metadata)
+// Module 6398 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/InkQuill3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/19e1096b2137f85a4c37849b853a8c45282de12e0ef315b264fc7225c6548959.png";

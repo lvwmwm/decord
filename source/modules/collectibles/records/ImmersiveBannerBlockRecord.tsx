@@ -1,13 +1,13 @@
-// Module ID: 6936
-// Function ID: 6937
+// Module ID: 6948
+// Function ID: 6949
 // Name: fromServer
-// Dependencies: [6929, 2]
+// Dependencies: [6941, 2]
 
-// Module 6936 (fromServer)
+// Module 6948 (fromServer)
 let prototype;
 prototype = function ImmersiveBannerBlockRecord(end_time) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(6929) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
+  obj.type = require(6941) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
   ({ title: tmp.title, body: tmp.body, help_center_url: tmp.helpCenterUrl, text_color: tmp.textColor } = end_time);
   let date;
   if (null != end_time.end_time) {
@@ -19,11 +19,11 @@ prototype = function ImmersiveBannerBlockRecord(end_time) {
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(end_time) {
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(6929) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
+  obj.type = require(6941) /* ShopBlockType */.ShopBlockType.IMMERSIVE_BANNER;
   ({ title: tmp2.title, body: tmp2.body, help_center_url: tmp2.helpCenterUrl, text_color: tmp2.textColor } = end_time);
   let date;
   if (null != end_time.end_time) {

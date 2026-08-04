@@ -1,10 +1,10 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 10386
+// Function ID: 10387
 // Name: resolveAsset
-// Dependencies: [5099, 676, 9638, 9639, 9640, 9641, 9642, 7073, 9649, 9650, 5106, 1467, 1849, 2]
+// Dependencies: [5128, 676, 10387, 10388, 10389, 10390, 10391, 7085, 10398, 10399, 5135, 1467, 1849, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9637 (resolveAsset)
+// Module 10386 (resolveAsset)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "ME";
 
@@ -206,10 +206,6 @@ function getMimetype(questBarHeroVideo) {
       break;
       case "ti":
       break;
-      case "ks":
-      break;
-      case "space":
-      break;
       case "apply":
       break;
       case "backgroundColor":
@@ -247,10 +243,6 @@ function getMimetype(questBarHeroVideo) {
       case "color":
       break;
       case "colors":
-      break;
-      case "substring_i":
-      break;
-      case "string":
       break;
       case "concat":
       break;
@@ -384,6 +376,14 @@ function getMimetype(questBarHeroVideo) {
       break;
       case "keys":
       break;
+      case "kind":
+      break;
+      case "ks":
+      break;
+      case "space":
+      break;
+      case "label":
+      break;
       default:
         return null;
     }
@@ -505,9 +505,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
     flag = false;
     flag2 = false;
   } else if (tmp.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
-    let obj1 = require(9642) /* _getDefaultRewardName */;
+    let obj1 = require(10391) /* _getDefaultRewardName */;
     const questPrimaryReward = obj1.getQuestPrimaryReward(quest);
-    if (questPrimaryReward.type === require(7073) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward.type === require(7085) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       let tmp25;
       if (null != arg4) {
         tmp25 = obj8[arg4];
@@ -518,11 +518,11 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
         obj1 = obj;
       } else if (flag) {
         obj = { url: null, mimetype: "video/mp4", isAnimated: true };
-        obj[0] = importDefault(9649);
+        obj[0] = importDefault(10398);
         obj1 = obj;
       } else {
         obj1 = { url: null, mimetype: "video/webm", isAnimated: true };
-        obj1[0] = importDefault(9650);
+        obj1[0] = importDefault(10399);
       }
       return obj1;
     } else {
@@ -531,9 +531,9 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       flag2 = false;
     }
   } else if (tmp.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    obj = require(9642) /* _getDefaultRewardName */;
+    obj = require(10391) /* _getDefaultRewardName */;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
-    if (questPrimaryReward1.type === require(7073) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+    if (questPrimaryReward1.type === require(7085) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       return null;
     } else {
       asset = questPrimaryReward1.asset;
@@ -612,7 +612,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       }
     }
     if ("taskConfigV2" in quest.config) {
-      const FirstPartyQuestTaskTypes = require(5106) /* set */.FirstPartyQuestTaskTypes;
+      const FirstPartyQuestTaskTypes = require(5135) /* set */.FirstPartyQuestTaskTypes;
       const tmp5 = quest.config.taskConfigV2.tasks[flag ? FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE : FirstPartyQuestTaskTypes.WATCH_VIDEO];
       let tmp9;
       if (tmp5 != null) {

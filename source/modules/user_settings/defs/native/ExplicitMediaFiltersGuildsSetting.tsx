@@ -1,9 +1,9 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 13981
+// Function ID: 13982
 // Name: pressable
-// Dependencies: [7880, 7834, 13941, 13937, 6956, 5795, 1236, 13938, 1306, 10272, 2]
+// Dependencies: [7892, 7846, 13975, 13971, 6968, 5824, 1236, 13972, 1306, 10361, 2]
 
-// Module 13947 (pressable)
+// Module 13981 (pressable)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -16,11 +16,11 @@ const pressable = createToggle.createPressable({
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentGuildsSettingValue() {
-    const obj = require(13937) /* useExplicitContentSettingOrDefault */;
-    return require(6956) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
+    const obj = require(13971) /* useExplicitContentSettingOrDefault */;
+    return require(6968) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
   },
   onPress: function onObscuredContentGuildsOnPress() {
-    let obj = require(5795) /* resolveExplicitContentSettingWithDefaults */;
+    let obj = require(5824) /* resolveExplicitContentSettingWithDefaults */;
     const intl = require(1236) /* getSystemLocale */.intl;
     const stringResult = intl.string(require(1236) /* getSystemLocale */.t.GYpoAq);
     obj = { title: stringResult, subtitle: null, handlePress: null, excluded: null, currentValue: null };
@@ -34,7 +34,7 @@ const pressable = createToggle.createPressable({
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
-    const result = require(13938) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13972) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -46,8 +46,8 @@ const pressable = createToggle.createPressable({
     return items;
   },
   useIsDisabled() {
-    let userIsTeen = require(7834) /* useUserIsTeen */.useUserIsTeen();
-    const obj = require(7834) /* useUserIsTeen */;
+    let userIsTeen = require(7846) /* useUserIsTeen */.useUserIsTeen();
+    const obj = require(7846) /* useUserIsTeen */;
     if (!userIsTeen) {
       userIsTeen = obj2.useIsParentallyControlled();
     }

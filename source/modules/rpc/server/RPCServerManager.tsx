@@ -1,9 +1,9 @@
-// Module ID: 13604
-// Function ID: 13605
+// Module ID: 13638
+// Function ID: 13639
 // Name: loadServer
-// Dependencies: [32, 7068, 1372, 1942, 1862, 4302, 4342, 4327, 3892, 1931, 1874, 4271, 676, 4280, 10658, 4316, 500, 709, 698, 589, 1351, 10698, 10704, 13605, 10699, 7091, 2]
+// Dependencies: [32, 7080, 1372, 1942, 1862, 4332, 4371, 4356, 3922, 1931, 1874, 4301, 676, 4310, 10507, 4345, 500, 709, 698, 589, 1351, 10548, 10554, 13639, 10549, 7103, 2]
 
-// Module 13604 (loadServer)
+// Module 13638 (loadServer)
 import _slicedToArray from "_slicedToArray";
 import initializeState from "initializeState";
 import ensureGuildLoaded from "ensureGuildLoaded";

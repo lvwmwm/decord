@@ -1,10 +1,10 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12385
+// Function ID: 12386
 // Name: useUserProfileConnections
-// Dependencies: [19, 6977, 6859, 589, 4937, 2]
+// Dependencies: [19, 6989, 6871, 589, 4966, 2]
 // Exports: default
 
-// Module 12298 (useUserProfileConnections)
+// Module 12385 (useUserProfileConnections)
 import { useMemo } from "noop";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 

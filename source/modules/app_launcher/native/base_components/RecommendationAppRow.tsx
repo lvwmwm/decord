@@ -1,10 +1,10 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 11392
+// Function ID: 11393
 // Name: RecommendationAppRow
 // Dependencies: [19, 21, 1416, 11381, 2]
 // Exports: default
 
-// Module 11391 (RecommendationAppRow)
+// Module 11392 (RecommendationAppRow)
 import "noop";
 import { jsx } from "jsxProd";
 

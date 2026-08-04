@@ -1,9 +1,9 @@
-// Module ID: 6916
-// Function ID: 6917
+// Module ID: 6928
+// Function ID: 6929
 // Name: fromServer
-// Dependencies: [6917, 6899, 2]
+// Dependencies: [6929, 6911, 2]
 
-// Module 6916 (fromServer)
+// Module 6928 (fromServer)
 import fromServer from "fromServer";
 import closure_1 from "fromServer";
 
@@ -17,7 +17,7 @@ prototype = function CollectiblesCategoriesRecord(categories) {
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(categories) {
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);

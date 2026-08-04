@@ -1,10 +1,10 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 10659
+// Function ID: 10660
 // Name: useIsInvitedToSpeak
-// Dependencies: [1218, 1931, 589, 4440, 2]
+// Dependencies: [1218, 1931, 589, 4469, 2]
 // Exports: default
 
-// Module 10808 (useIsInvitedToSpeak)
+// Module 10659 (useIsInvitedToSpeak)
 import fetchFingerprint from "fetchFingerprint";
 import handleConnectionOpen from "handleConnectionOpen";
 
@@ -18,5 +18,5 @@ export default function useIsInvitedToSpeak() {
   const items1 = [fetchFingerprint];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => id.getId());
   const obj2 = require(589) /* initialize */;
-  return importDefault(4440)(stateFromStores1, stateFromStores) === require(4440) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  return importDefault(4469)(stateFromStores1, stateFromStores) === require(4469) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 };

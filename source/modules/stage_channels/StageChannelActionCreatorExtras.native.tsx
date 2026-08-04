@@ -1,10 +1,10 @@
-// Module ID: 7685
-// Function ID: 7686
+// Module ID: 7697
+// Function ID: 7698
 // Name: openStageChannelSettings
-// Dependencies: [7686, 5070, 4223, 7688, 1959, 7762, 7803, 7810, 12534, 4467, 4465, 4461, 10706, 8668, 7805, 2]
+// Dependencies: [7698, 5099, 4253, 7700, 1959, 7774, 7815, 7822, 12568, 4496, 4494, 4490, 10556, 8705, 7817, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelAudienceNoticeModal, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
-// Module 7685 (openStageChannelSettings)
+// Module 7697 (openStageChannelSettings)
 import { setIsOnStartStageScreen } from "setIsOnStartStageScreen";
 import MAX_STAGE_TOPIC_LENGTH from "MAX_STAGE_TOPIC_LENGTH";
 
@@ -17,46 +17,46 @@ let metroImportAll;
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/stage_channels/StageChannelActionCreatorExtras.native.tsx");
 
 export const openStageChannelSettings = function openStageChannelSettings(closure_0) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channel: closure_0 };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(7688, dependencyMap.paths), closure_5, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(7700, dependencyMap.paths), closure_5, obj);
 };
 export function openEndGuildEventConfirmationModal() {
 
 }
 export const openStageChannelAudienceNoticeModal = function openStageChannelAudienceNoticeModal(channelId) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channelId };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(7762, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(7774, dependencyMap.paths), closure_4, obj);
 };
 export const openStageBlockedUsersSheet = function openStageBlockedUsersSheet(channel, onAccept) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channel, onAccept };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(7803, dependencyMap.paths), closure_6, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(7815, dependencyMap.paths), closure_6, obj);
 };
 export const openStageSettingsSheet = function openStageSettingsSheet(closure_0, closure_1) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channelId: closure_0, onOpenRTCDebugOverlay: closure_1 };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(7810, dependencyMap.paths), closure_7, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(7822, dependencyMap.paths), closure_7, obj);
 };
 export const openEndStageModal = function openEndStageModal(closure_0) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channel: closure_0 };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(12534, dependencyMap.paths), closure_8, obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(12568, dependencyMap.paths), closure_8, obj);
 };
 export const openStageChannel = function openStageChannel(outer1_0) {
   if (outer1_0.isGuildStageVoice()) {
-    let obj = require(4467) /* useIsStageVoicePanelEnabled */;
+    let obj = require(4496) /* useIsStageVoicePanelEnabled */;
     if (obj.isStageVoicePanelEnabled("stage_channel_action_creator_extras")) {
-      let tmpResult = tmp(4465);
+      let tmpResult = tmp(4494);
       tmpResult.openGuildVoiceModal(outer1_0);
     } else {
       obj = { channel: null };
       obj[0] = outer1_0;
-      const obj2 = importDefault(4461);
-      tmpResult = tmp(4465);
-      obj2.pushLazy(tmp(1959)(10706, tmp2.paths), obj, tmpResult.getVoiceChannelKey(outer1_0.id));
-      const tmp4 = tmp(1959)(10706, tmp2.paths);
+      const obj2 = importDefault(4490);
+      tmpResult = tmp(4494);
+      obj2.pushLazy(tmp(1959)(10556, tmp2.paths), obj, tmpResult.getVoiceChannelKey(outer1_0.id));
+      const tmp4 = tmp(1959)(10556, tmp2.paths);
     }
     tmp2 = dependencyMap;
   }
@@ -65,30 +65,30 @@ export const showPlatformUserProfile = function showPlatformUserProfile(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   obj.isVoiceContext = true;
-  importDefault(8668)(obj);
+  importDefault(8705)(obj);
 };
 export const shouldShowBlockedUsers = function shouldShowBlockedUsers(id) {
-  const stageBlockedUsersCount = require(7805) /* useStageBlockedUsersCount */.getStageBlockedUsersCount(id);
-  const obj = require(7805) /* useStageBlockedUsersCount */;
-  const obj2 = require(7805) /* useStageBlockedUsersCount */;
-  return stageBlockedUsersCount > 0 || require(7805) /* useStageBlockedUsersCount */.getStageIgnoredUsersCount(id) > 0;
+  const stageBlockedUsersCount = require(7817) /* useStageBlockedUsersCount */.getStageBlockedUsersCount(id);
+  const obj = require(7817) /* useStageBlockedUsersCount */;
+  const obj2 = require(7817) /* useStageBlockedUsersCount */;
+  return stageBlockedUsersCount > 0 || require(7817) /* useStageBlockedUsersCount */.getStageIgnoredUsersCount(id) > 0;
 };
 export const navigateToStage = function navigateToStage(id) {
   if (arg1 !== id.id) {
     setIsOnStartStageScreen(true);
   }
   if (id.isGuildStageVoice()) {
-    let obj = require(4467) /* useIsStageVoicePanelEnabled */;
+    let obj = require(4496) /* useIsStageVoicePanelEnabled */;
     if (obj.isStageVoicePanelEnabled("stage_channel_action_creator_extras")) {
-      let tmp3Result = tmp3(4465);
+      let tmp3Result = tmp3(4494);
       tmp3Result.openGuildVoiceModal(id);
     } else {
       obj = { channel: null };
       obj[0] = id;
-      const obj2 = importDefault(4461);
-      tmp3Result = tmp3(4465);
-      obj2.pushLazy(tmp3(1959)(10706, tmp4.paths), obj, tmp3Result.getVoiceChannelKey(id.id));
-      const tmp6 = tmp3(1959)(10706, tmp4.paths);
+      const obj2 = importDefault(4490);
+      tmp3Result = tmp3(4494);
+      obj2.pushLazy(tmp3(1959)(10556, tmp4.paths), obj, tmp3Result.getVoiceChannelKey(id.id));
+      const tmp6 = tmp3(1959)(10556, tmp4.paths);
     }
     tmp4 = dependencyMap;
   }

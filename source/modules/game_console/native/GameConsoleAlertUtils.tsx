@@ -1,8 +1,8 @@
-// Module ID: 9225
-// Function ID: 9226
-// Dependencies: [19, 4302, 9131, 676, 21, 4071, 1358, 1236, 4595, 9226, 9151, 2]
+// Module ID: 10777
+// Function ID: 10778
+// Dependencies: [19, 4332, 10420, 676, 21, 4101, 1358, 1236, 4624, 10778, 10406, 2]
 
-// Module 9225
+// Module 10777
 import "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { GAME_CONSOLE_ALERT_MODAL_LOCATION as closure_4 } from "XBOX_URL_BASE";
@@ -44,7 +44,7 @@ export default {
         }
         return resolved;
       }
-      obj2 = require(4071) /* UNSAFE_isDismissibleContentDismissed */;
+      obj2 = require(4101) /* UNSAFE_isDismissibleContentDismissed */;
     }
     return Promise.resolve();
   },
@@ -54,11 +54,11 @@ export default {
     let title;
     reconnectPlatformType = reconnectPlatformType.reconnectPlatformType;
     ({ title, body, errorCodeMessage } = reconnectPlatformType);
-    let obj = importDefault(4595);
+    let obj = importDefault(4624);
     obj = { title, body: null, onConfirm: null };
     obj = { body, errorCodeMessage, dismissCallback: null };
-    obj[2] = importDefault(4595).close;
-    obj[1] = jsx(reconnectPlatformType(9226).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: null });
+    obj[2] = importDefault(4624).close;
+    obj[1] = jsx(reconnectPlatformType(10778).SelfDismissibleAlertBody, { body, errorCodeMessage, dismissCallback: null });
     obj[2] = function onConfirm() {
       if (null != reconnectPlatformType) {
         const obj = { platformType: null, location: null };

@@ -1,10 +1,10 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 9195
+// Function ID: 9196
 // Name: GetButton
-// Dependencies: [32, 19, 17, 8781, 21, 4255, 712, 4666, 1236, 7313, 8782, 3952, 8785, 6990, 8786, 4116, 8787, 4256, 8788, 8793, 4223, 8810, 8811, 5309, 5311, 8812, 8814, 12054, 5565, 2]
+// Dependencies: [32, 19, 17, 9196, 21, 4285, 712, 4695, 1236, 7325, 9197, 3982, 9200, 7002, 9201, 4146, 9202, 4286, 9203, 9208, 4253, 9225, 9226, 5338, 5340, 9227, 9229, 12111, 5594, 2]
 // Exports: default
 
-// Module 8780 (GetButton)
+// Module 9195 (GetButton)
 import _slicedToArray from "_slicedToArray";
 import getGameProfileStoreWebsiteData from "getGameProfileStoreWebsiteData";
 import get_ActivityIndicator from "CONFIG_NEVER_ANIMATE_TIMING";
@@ -24,7 +24,7 @@ function GetButton(onPress) {
   obj[3] = onPress.onPress;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl2.string(require(1236) /* getSystemLocale */.t.Vsxqmz);
-  return callback(require(4666) /* Button */.Button, obj);
+  return callback(require(4695) /* Button */.Button, obj);
 }
 ({ View: c5, ActivityIndicator: closure_6 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9 } = jsxProd);

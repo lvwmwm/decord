@@ -1,10 +1,10 @@
-// Module ID: 9486
-// Function ID: 9487
+// Module ID: 8412
+// Function ID: 8413
 // Name: __measureInWindowForFWO
-// Dependencies: [9487, 2]
+// Dependencies: [8413, 2]
 // Exports: measureInWindowForFWO
 
-// Module 9486 (__measureInWindowForFWO)
+// Module 8412 (__measureInWindowForFWO)
 import NativeFWOMeasureModule from "NativeFWOMeasureModule";
 
 const __measureInWindowForFWO = global.__measureInWindowForFWO;

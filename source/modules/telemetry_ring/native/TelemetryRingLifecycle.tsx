@@ -1,7 +1,7 @@
 // Module ID: 1211
 // Function ID: 1212
 // Name: _updateZoomedInExport
-// Dependencies: [1212, 1874, 6773, 676, 4434, 13329, 7043, 709, 13333, 2]
+// Dependencies: [1212, 1874, 6785, 676, 4463, 13363, 7055, 709, 13367, 2]
 
 // Module 1211 (_updateZoomedInExport)
 import initialize from "initialize";
@@ -20,9 +20,9 @@ class TelemetryRingLifecycleImpl extends tmp2 {
       const result = applyArgumentsResult._updateZoomedInExport();
     };
     applyArgumentsResult._handleLogout = function _handleLogout() {
-      applyArgumentsResult(13333).clear();
-      const obj = applyArgumentsResult(13333);
-      applyArgumentsResult(13329).reset();
+      applyArgumentsResult(13367).clear();
+      const obj = applyArgumentsResult(13367);
+      applyArgumentsResult(13363).reset();
     };
     return applyArgumentsResult;
   }
@@ -32,15 +32,15 @@ prototype["_updateZoomedInExport"] = function _updateZoomedInExport() {
   const state = getState.getState();
   let shouldRunResult = state === AppStates.ACTIVE;
   if (shouldRunResult) {
-    shouldRunResult = importDefault(13329).shouldRun();
-    const obj = importDefault(13329);
+    shouldRunResult = importDefault(13363).shouldRun();
+    const obj = importDefault(13363);
   }
-  const result = importDefault(7043).setShouldCollectHermesInstrumentedStats(shouldRunResult);
+  const result = importDefault(7055).setShouldCollectHermesInstrumentedStats(shouldRunResult);
   if (state === AppStates.ACTIVE) {
-    let tmp6Result = tmp6(13329);
+    let tmp6Result = tmp6(13363);
     tmp6Result.start();
   } else {
-    tmp6Result = tmp6(13329);
+    tmp6Result = tmp6(13363);
     tmp6Result.stop();
   }
 };
@@ -57,9 +57,9 @@ prototype["_initialize"] = function _initialize() {
       outer1_2.removeChangeListener(self._handleEligibilityChange);
     };
     const obj = self(709);
-    self(13329).initialize();
+    self(13363).initialize();
     const result = self._updateZoomedInExport();
-    const obj2 = self(13329);
+    const obj2 = self(13363);
   }
 };
 prototype["_terminate"] = function _terminate() {
@@ -71,9 +71,9 @@ prototype["_terminate"] = function _terminate() {
     const result = self._experimentUnsubscribe();
     self._experimentUnsubscribe = null;
   }
-  let tmpResult = tmp(13329);
+  let tmpResult = tmp(13363);
   tmpResult.stop();
-  tmpResult = tmp(7043);
+  tmpResult = tmp(7055);
   const result1 = tmpResult.setShouldCollectHermesInstrumentedStats(false);
   self._initialized = false;
 };

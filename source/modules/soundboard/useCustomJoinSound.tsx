@@ -1,10 +1,10 @@
-// Module ID: 5888
-// Function ID: 5889
+// Module ID: 5898
+// Function ID: 5899
 // Name: CustomSoundType
-// Dependencies: [1340, 4702, 589, 2]
+// Dependencies: [1340, 4731, 589, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 5888 (CustomSoundType)
+// Module 5898 (CustomSoundType)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME";
 

@@ -1,10 +1,10 @@
-// Module ID: 7075
-// Function ID: 7076
+// Module ID: 7087
+// Function ID: 7088
 // Name: progressFromServer
-// Dependencies: [32, 4455, 7076, 7073, 2]
+// Dependencies: [32, 4484, 7088, 7085, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questConfigFromServer, questUserStatusFromServer, questWithUserStatusFromServer, questsEntitlementsFromServer, questsRewardCodeFromServer
 
-// Module 7075 (progressFromServer)
+// Module 7087 (progressFromServer)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -32,7 +32,7 @@ function progressFromServer(progress) {
   return obj;
 }
 function getSimpleRewardFromServer(type) {
-  if (type.type === require(7073) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
+  if (type.type === require(7085) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
     let obj = { skuId: null, type: null, name: null, nameWithArticle: null, collectibleProduct: null, orbQuantity: null };
     ({ sku_id: obj2[0], type: obj2[1], name: obj2[2], name_with_article: obj2[3], collectible_product: obj2[4], orb_quantity: obj2[5] } = type);
   } else {
@@ -53,7 +53,7 @@ function _questsEntitlementFromServer(skuId) {
   if (null != quest_rewards) {
     quest_rewards = tenant_metadata.quest_rewards;
     const tag = quest_rewards.reward.tag;
-    if (require(7073) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === tag) {
+    if (require(7085) /* QuestRewardTypes */.QuestRewardTypes.IN_GAME === tag) {
       obj = { questRewards: null };
       obj = { reward: null };
       const obj1 = { tag: null };
@@ -61,7 +61,7 @@ function _questsEntitlementFromServer(skuId) {
       obj[0] = obj1;
       obj[0] = obj;
       tmp2 = obj;
-    } else if (tmp3(7073).QuestRewardTypes.REWARD_CODE === tag) {
+    } else if (tmp3(7085).QuestRewardTypes.REWARD_CODE === tag) {
       const obj2 = { tag: null, rewardCode: null };
       obj2[0] = quest_rewards.reward.tag;
       const obj3 = { userId: null, questId: null, code: null, platform: null, claimedAt: null, tier: null };
@@ -87,16 +87,16 @@ const result = require("questFromServerV2").fileFinishedImporting("modules/quest
 
 export const isQuestWithKnownConfigVersion = function isQuestWithKnownConfigVersion(config) {
   try {
-    const match = require(4455) /* t */.match(config.config);
-    const str = require(4455) /* t */;
+    const match = require(4484) /* t */.match(config.config);
+    const str = require(4484) /* t */;
     return match.with({ config_version: 2 }, () => true).exhaustive();
   } catch (err) {
     return false;
   }
 };
 export const questConfigFromServer = function questConfigFromServer(body) {
-  const match = require(4455) /* t */.match(body);
-  const str = require(4455) /* t */;
+  const match = require(4484) /* t */.match(body);
+  const str = require(4484) /* t */;
   return match.with({ config_version: 2 }, (id) => callback(table[2]).questFromServerV2(id)).exhaustive();
 };
 export const questUserStatusFromServer = function questUserStatusFromServer(body) {
@@ -118,8 +118,8 @@ export const questUserStatusFromServer = function questUserStatusFromServer(body
 export const questWithUserStatusFromServer = function questWithUserStatusFromServer(body) {
   let claimed_tier;
   let obj = { id: body.id, preview: body.preview, config: null, userStatus: null, targetedContent: null, trafficMetadataSealed: null };
-  const match = require(4455) /* t */.match(body.config);
-  const str = require(4455) /* t */;
+  const match = require(4484) /* t */.match(body.config);
+  const str = require(4484) /* t */;
   obj[2] = match.with({ config_version: 2 }, (id) => callback(table[2]).questFromServerV2(id)).exhaustive();
   let tmp = null;
   if (null != body.user_status) {
@@ -153,7 +153,7 @@ export const getClaimedQuestWithUserStatusFromServer = function getClaimedQuestW
   obj = { id: config.id, startsAt: config.starts_at, expiresAt: config.expires_at, features: config.features, messages: obj, assets: obj1, colors: obj2, rewards: rewards.map(getSimpleRewardFromServer), cosponsorMetadata: null };
   obj = { questName: config.messages.quest_name, gamePublisher: config.messages.game_publisher, gameTitle: config.messages.game_title };
   rewards = config.rewards;
-  obj[8] = require(7076) /* questFromServerV2 */.questCosponsorMetadataFromServer(config.cosponsor_metadata);
+  obj[8] = require(7088) /* questFromServerV2 */.questCosponsorMetadataFromServer(config.cosponsor_metadata);
   obj[1] = obj;
   let tmp = null;
   if (null != id.user_status) {

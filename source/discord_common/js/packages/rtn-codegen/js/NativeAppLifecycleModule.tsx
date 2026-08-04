@@ -1,9 +1,9 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10517
+// Function ID: 10518
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 10668 (enforcing)
+// Module 10517 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppLifecycleModule");

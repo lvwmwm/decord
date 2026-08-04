@@ -1,10 +1,10 @@
-// Module ID: 6747
-// Function ID: 6748
+// Module ID: 6759
+// Function ID: 6760
 // Name: WordBalloonIllocon
-// Dependencies: [21, 5207, 6748, 2]
+// Dependencies: [21, 5236, 6760, 2]
 // Exports: WordBalloonIllocon
 
-// Module 6747 (WordBalloonIllocon)
+// Module 6759 (WordBalloonIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WordBalloonIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const WordBalloonIllocon = function WordBalloonIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6748);
+  obj[0] = importDefault(6760);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { uri: null });
+  return jsx(importDefault(5236), { uri: null });
 };

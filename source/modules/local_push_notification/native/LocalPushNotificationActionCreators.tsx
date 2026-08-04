@@ -1,10 +1,10 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 16858
+// Function ID: 16859
 // Name: receiveLocalNotification
-// Dependencies: [12849, 676, 6831, 709, 1208, 698, 5171, 10993, 1959, 4263, 4187, 2]
+// Dependencies: [12883, 676, 6843, 709, 1208, 698, 5200, 10870, 1959, 4293, 4217, 2]
 // Exports: receiveLocalNotification
 
-// Module 16826 (receiveLocalNotification)
+// Module 16858 (receiveLocalNotification)
 import { LocalNotificationTypes } from "LocalNotificationTypes";
 import { AnalyticEvents } from "ME";
 
@@ -12,7 +12,7 @@ let result = require("getDeviceMetadata").fileFinishedImporting("modules/local_p
 
 export const receiveLocalNotification = function receiveLocalNotification(getData) {
   if (null != getData.getData) {
-    data(6831).trackAppOpened("notification");
+    data(6843).trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;
     function dispatch() {
@@ -46,7 +46,7 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
         const promise = data(tmp2[8])(tmp2[9], tmp2.paths);
       }
     }
-    let obj2 = data(6831);
+    let obj2 = data(6843);
     if (obj.isDispatching()) {
       const _setImmediate = setImmediate;
       setImmediate(dispatch);

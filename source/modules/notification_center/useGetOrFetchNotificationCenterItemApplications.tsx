@@ -1,10 +1,10 @@
-// Module ID: 15374
-// Function ID: 15375
+// Module ID: 15405
+// Function ID: 15406
 // Name: set
-// Dependencies: [19, 7009, 5587, 2]
+// Dependencies: [19, 7021, 5616, 2]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 15374 (set)
+// Module 15405 (set)
 import noop from "noop";
 import set from "useGetOrFetchApplications";
 
@@ -33,5 +33,5 @@ export const useGetOrFetchNotificationCenterItemsApplications = function useGetO
     });
     return items;
   }, items);
-  return importDefault(5587)(memo);
+  return importDefault(5616)(memo);
 };

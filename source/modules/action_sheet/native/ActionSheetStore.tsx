@@ -1,9 +1,9 @@
-// Module ID: 3948
-// Function ID: 3949
+// Module ID: 3978
+// Function ID: 3979
 // Name: setContent
 // Dependencies: [589, 709, 2]
 
-// Module 3948 (setContent)
+// Module 3978 (setContent)
 import { Store } from "initialize";
 
 let array = new Array();
@@ -85,7 +85,7 @@ const actionSheetStore = new ActionSheetStore(require("dispatcher"), {
     let impressionName;
     let impressionProperties;
     let key;
-    if (typeof setContent !== "error") {
+    if (typeof setContent !== "find") {
       HermesBuiltin.throwTypeError();
     }
     let str = stackingBehavior.stackingBehavior;
@@ -121,7 +121,7 @@ const actionSheetStore = new ActionSheetStore(require("dispatcher"), {
     let key;
     let obj = { key: QuickSwitcher };
     const merged = Object.assign(arg0);
-    if (typeof setContent !== "error") {
+    if (typeof setContent !== "find") {
       HermesBuiltin.throwTypeError();
     }
     let str = obj.stackingBehavior;

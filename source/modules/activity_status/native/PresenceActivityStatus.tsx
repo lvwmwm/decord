@@ -1,10 +1,10 @@
-// Module ID: 9255
-// Function ID: 9256
+// Module ID: 9567
+// Function ID: 9568
 // Name: PresenceActivityStatus
-// Dependencies: [19, 676, 21, 7107, 9121, 7599, 9256, 9251, 9258, 9250, 9253, 2]
+// Dependencies: [19, 676, 21, 7119, 8684, 7611, 9568, 9563, 9570, 9562, 9565, 2]
 // Exports: default
 
-// Module 9255 (PresenceActivityStatus)
+// Module 9567 (PresenceActivityStatus)
 import "noop";
 import { ActivityTypes } from "ME";
 import jsxProd from "jsxProd";
@@ -36,22 +36,22 @@ export default function PresenceActivityStatus(hideText) {
       return null;
     }
   }
-  if (importDefault(7107)(activity)) {
-    let AppsIcon = require(7599) /* AppsIcon */.AppsIcon;
+  if (importDefault(7119)(activity)) {
+    let AppsIcon = require(7611) /* AppsIcon */.AppsIcon;
   } else if (activity.type === ActivityTypes.PLAYING) {
-    AppsIcon = require(9121) /* GameControllerIcon */.GameControllerIcon;
+    AppsIcon = require(8684) /* GameControllerIcon */.GameControllerIcon;
   } else if (activity.type === tmp3.LISTENING) {
-    AppsIcon = require(9256) /* MusicIcon */.MusicIcon;
+    AppsIcon = require(9568) /* MusicIcon */.MusicIcon;
   } else {
     if (activity.type !== tmp3.WATCHING) {
       if (activity.type !== tmp3.STREAMING) {
         AppsIcon = null;
         if (activity.type === tmp3.COMPETING) {
-          AppsIcon = require(9121) /* GameControllerIcon */.GameControllerIcon;
+          AppsIcon = require(8684) /* GameControllerIcon */.GameControllerIcon;
         }
       }
     }
-    AppsIcon = require(9251) /* TvIcon */.TvIcon;
+    AppsIcon = require(9563) /* TvIcon */.TvIcon;
   }
   let tmp12 = !hideIcon;
   if (!hideIcon) {
@@ -61,7 +61,7 @@ export default function PresenceActivityStatus(hideText) {
     let obj = { icon: null, style: null };
     obj[0] = AppsIcon;
     obj[1] = iconStyle;
-    tmp12 = callback(tmp(9250), obj);
+    tmp12 = callback(tmp(9562), obj);
   }
   const children = [tmp12, ];
   let tmp15 = !flag;
@@ -69,8 +69,8 @@ export default function PresenceActivityStatus(hideText) {
     obj = { style: null, maxFontSizeMultiplier: null, children: null };
     obj[0] = textStyle;
     obj[1] = maxFontSizeMultiplier;
-    obj[2] = importDefault(9258)(activity, true).text;
-    tmp15 = callback(tmp(9253), obj);
+    obj[2] = importDefault(9570)(activity, true).text;
+    tmp15 = callback(tmp(9565), obj);
   }
   children[1] = tmp15;
   return closure_6(closure_5, { children });

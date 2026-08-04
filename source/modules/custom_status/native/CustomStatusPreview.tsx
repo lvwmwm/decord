@@ -1,10 +1,10 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 9383
+// Function ID: 9384
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 5629, 21, 4255, 712, 8105, 8430, 8412, 8414, 8416, 4114, 4223, 12087, 1959, 3967, 8436, 8439, 12088, 12077, 8694, 8394, 2]
+// Dependencies: [19, 17, 5658, 21, 4285, 712, 8117, 8758, 8745, 8757, 8754, 4144, 4253, 9384, 1959, 3997, 8761, 8764, 9367, 9368, 9387, 9297, 2]
 // Exports: default
 
-// Module 12086 (CustomStatusPreview)
+// Module 9383 (CustomStatusPreview)
 import EmojiImage from "EmojiImage";
 import { View } from "OpenableUserProfileAvatar";
 import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET";

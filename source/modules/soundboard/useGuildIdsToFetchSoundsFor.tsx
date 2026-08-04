@@ -1,10 +1,10 @@
-// Module ID: 5854
-// Function ID: 5855
+// Module ID: 5864
+// Function ID: 5865
 // Name: useGuildIdsToFetchSoundsFor
-// Dependencies: [19, 1862, 4701, 647, 2]
+// Dependencies: [19, 1862, 4730, 647, 2]
 // Exports: getGuildIdsToFetchSoundsFor, useGuildIdsToFetchSoundsFor
 
-// Module 5854 (useGuildIdsToFetchSoundsFor)
+// Module 5864 (useGuildIdsToFetchSoundsFor)
 import { useMemo } from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";

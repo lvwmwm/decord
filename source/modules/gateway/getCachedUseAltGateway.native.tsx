@@ -1,10 +1,10 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 12815
+// Function ID: 12816
 // Name: getCachedUseAltGateway
 // Dependencies: [17, 500, 502, 2]
 // Exports: default
 
-// Module 12781 (getCachedUseAltGateway)
+// Module 12815 (getCachedUseAltGateway)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/gateway/getCachedUseAltGateway.native.tsx");

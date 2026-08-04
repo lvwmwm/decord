@@ -1,10 +1,10 @@
-// Module ID: 9355
-// Function ID: 9356
+// Module ID: 8257
+// Function ID: 8258
 // Name: MemberVerificationFormRenderer
-// Dependencies: [19, 17, 21, 4255, 4075, 9356, 9357, 9445, 9446, 9447, 2]
+// Dependencies: [19, 17, 21, 4285, 4105, 8258, 8260, 8361, 8362, 8363, 2]
 // Exports: default
 
-// Module 9355 (MemberVerificationFormRenderer)
+// Module 8257 (MemberVerificationFormRenderer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

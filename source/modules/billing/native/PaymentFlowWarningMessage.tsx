@@ -1,10 +1,10 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 7332
+// Function ID: 7333
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 4255, 712, 5096, 1297, 4251, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 5125, 1297, 4281, 2]
 // Exports: default
 
-// Module 7320 (PaymentFlowWarningMessage)
+// Module 7332 (PaymentFlowWarningMessage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function PaymentFlowWarningMessage(children) {
   obj[1] = importDefault(712).unsafe_rawColors.YELLOW_300;
   const items = [callback(require(1297) /* Button */.WarningCircle, obj), ];
   obj = { variant: "text-sm/medium", style: tmp.text, children: children.message };
-  items[1] = callback(require(4251) /* Text */.Text, obj);
+  items[1] = callback(require(4281) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 };

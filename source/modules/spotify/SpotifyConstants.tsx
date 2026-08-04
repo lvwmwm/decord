@@ -1,10 +1,10 @@
-// Module ID: 8486
-// Function ID: 8487
+// Module ID: 8825
+// Function ID: 8826
 // Name: WEB_OPEN
-// Dependencies: [676, 4937, 500, 2]
+// Dependencies: [676, 4966, 500, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8486 (WEB_OPEN)
+// Module 8825 (WEB_OPEN)
 import set from "set";
 import set from "set";
 
@@ -79,7 +79,7 @@ export const SpotifyActionTypes = { USER_ACTIVITY_PLAY: "user_activity_play", US
 export const SPOTIFY_HOSTNAMES = ["open.spotify.com", "www.spotify.com"];
 export const SpotifyEndpoints = frozen;
 export const getSpotifyResourceType = function getSpotifyResourceType(arg0) {
-  if (typeof arg0 === "ge") {
+  if (typeof arg0 === "_iter") {
     return null;
   } else if ("track" === arg0) {
     return obj.TRACK;

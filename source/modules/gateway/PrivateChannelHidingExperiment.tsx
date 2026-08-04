@@ -1,10 +1,10 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12845
+// Function ID: 12846
 // Name: getCachedPrivateChannelObfuscation
-// Dependencies: [1452, 2, 12812]
+// Dependencies: [1452, 2, 12846]
 // Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 12811 (getCachedPrivateChannelObfuscation)
+// Module 12845 (getCachedPrivateChannelObfuscation)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enableObfuscation: true, enableIntegrityCheck: false }, 3: { enableObfuscation: true, enableIntegrityCheck: true } };

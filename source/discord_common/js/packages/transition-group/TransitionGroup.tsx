@@ -1,9 +1,9 @@
-// Module ID: 10544
-// Function ID: 10545
+// Module ID: 10206
+// Function ID: 10207
 // Name: _toPropertyKey
-// Dependencies: [109, 19, 10545, 2]
+// Dependencies: [109, 19, 10207, 2]
 
-// Module 10544 (_toPropertyKey)
+// Module 10206 (_toPropertyKey)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 
@@ -67,11 +67,11 @@ const prototype = TransitionGroup.prototype;
 TransitionGroup["getDerivedStateFromProps"] = function getDerivedStateFromProps(children) {
   let firstRender;
   ({ children, firstRender } = arg1);
-  const childMapping = require(10545) /* getChildMapping */.getChildMapping(children.children);
+  const childMapping = require(10207) /* getChildMapping */.getChildMapping(children.children);
   children = childMapping;
   if (!firstRender) {
-    children = require(10545) /* getChildMapping */.mergeChildMappings(children, childMapping);
-    const tmpResult = require(10545) /* getChildMapping */;
+    children = require(10207) /* getChildMapping */.mergeChildMappings(children, childMapping);
+    const tmpResult = require(10207) /* getChildMapping */;
   }
   return { children, firstRender: false };
 };
@@ -111,7 +111,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(children, children
       const item1 = _keysToLeave.forEach(self.performLeave, self);
     }
   }
-  let obj = require(10545) /* getChildMapping */;
+  let obj = require(10207) /* getChildMapping */;
   const childMapping = obj.getChildMapping(self.props.children);
   children = children2.children;
   if (self.props.transitionEnter) {
@@ -126,7 +126,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(children, children
     const items = [];
     _enqueueTransitions(children, childMapping, items);
     let num4 = 0;
-    const tmp3Result = require(10545) /* getChildMapping */;
+    const tmp3Result = require(10207) /* getChildMapping */;
     if (0 < items.length) {
       do {
         let tmp9 = items[num4];
@@ -142,7 +142,7 @@ prototype["componentDidUpdate"] = function componentDidUpdate(children, children
     if (self._keysToLeave.length > 0) {
       self._keysToLeave = [];
     }
-    mergeChildMappingsResult = require(10545) /* getChildMapping */.mergeChildMappings(children, childMapping);
+    mergeChildMappingsResult = require(10207) /* getChildMapping */.mergeChildMappings(children, childMapping);
   }
 };
 prototype["_enqueueTransitions"] = function _enqueueTransitions(children, childMapping, _keysToEnter) {
@@ -200,7 +200,7 @@ prototype["_handleDonePerform"] = function _handleDonePerform(closure_1, _object
   }
   const _currentlyTransitioningKeys = self._currentlyTransitioningKeys;
   _currentlyTransitioningKeys.delete(closure_1);
-  const childMapping = _require(10545).getChildMapping(self.props.children);
+  const childMapping = _require(10207).getChildMapping(self.props.children);
   if (flag) {
     if (null != childMapping) {
       if (childMapping.hasOwnProperty(closure_1)) {

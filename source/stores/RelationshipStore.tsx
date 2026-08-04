@@ -1,9 +1,9 @@
-// Module ID: 3892
-// Function ID: 3893
+// Module ID: 3922
+// Function ID: 3923
 // Name: upsertRelationship
-// Dependencies: [32, 3893, 1874, 676, 709, 589, 2]
+// Dependencies: [32, 3923, 1874, 676, 709, 589, 2]
 
-// Module 3892 (upsertRelationship)
+// Module 3922 (upsertRelationship)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";

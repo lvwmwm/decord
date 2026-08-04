@@ -1,9 +1,9 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16437
+// Function ID: 16438
 // Name: handleChange
-// Dependencies: [4933, 5200, 709, 2]
+// Dependencies: [4962, 5229, 709, 2]
 
-// Module 16404 (handleChange)
+// Module 16437 (handleChange)
 import filterPlayingActivities from "filterPlayingActivities";
 import "initialize";
 

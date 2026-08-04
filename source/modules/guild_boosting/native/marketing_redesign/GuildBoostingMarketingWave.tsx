@@ -1,10 +1,10 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12759
+// Function ID: 12760
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 3959, 712, 8196, 2]
+// Dependencies: [19, 21, 3989, 712, 8437, 2]
 // Exports: default
 
-// Module 12725 (GuildBoostingMarketingWave)
+// Module 12759 (GuildBoostingMarketingWave)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -12,10 +12,10 @@ const require = arg1;
 const result = require("map").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingWave.tsx");
 
 export default function GuildBoostingMarketingWave(arg0) {
-  let obj = require(3959) /* map */;
+  let obj = require(3989) /* map */;
   const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
   obj = { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" };
   const merged = Object.assign(arg0);
-  obj.children = jsx(require(8196) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
-  return jsx(importDefault(8196), { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
+  obj.children = jsx(require(8437) /* inlineStyles */.Path, { d: "M1512,25.1c-294.3-135.3-565.2,319.2-855,322.2c-232,2.4-279-101.8-415.5-100.5C149.9,247.7,49.8,311.3,0,355.4 v154.4h1512V25.1z", fill: token });
+  return jsx(importDefault(8437), { fill: "none", viewBox: "0 0 1512 510", preserveAspectRatio: "none" });
 };

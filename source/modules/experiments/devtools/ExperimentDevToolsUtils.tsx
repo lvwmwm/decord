@@ -1,15 +1,15 @@
-// Module ID: 8003
-// Function ID: 8004
+// Module ID: 8015
+// Function ID: 8016
 // Name: getExperimentVariantsForDevTools
-// Dependencies: [8004, 4177, 2]
+// Dependencies: [8016, 4207, 2]
 // Exports: getExperimentVariantsForDevTools
 
-// Module 8003 (getExperimentVariantsForDevTools)
+// Module 8015 (getExperimentVariantsForDevTools)
 const obj = { id: -1, label: "Not Eligible", shortLabel: "Not Eligible", type: require("create").Variation_Type.OVERRIDE };
 const result = require("set").fileFinishedImporting("modules/experiments/devtools/ExperimentDevToolsUtils.tsx");
 
 export const getExperimentVariantsForDevTools = function getExperimentVariantsForDevTools(experiment) {
-  if (experiment.system !== require(4177) /* trackExposureToExperiment */.ExperimentSystem.APEX) {
+  if (experiment.system !== require(4207) /* trackExposureToExperiment */.ExperimentSystem.APEX) {
     let variants = experiment.variants;
   } else {
     const items = [obj];

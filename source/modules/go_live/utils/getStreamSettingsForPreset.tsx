@@ -1,17 +1,17 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10721
+// Function ID: 10722
 // Name: getApplicationStreamPresetValues
-// Dependencies: [4310, 10870, 10871, 2]
+// Dependencies: [4340, 10722, 10723, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10869 (getApplicationStreamPresetValues)
+// Module 10721 (getApplicationStreamPresetValues)
 import RESOLUTION_720 from "RESOLUTION_720";
 
 let c3;
 let c4;
 let obj1;
 function getApplicationStreamPresetValues() {
-  let obj = importDefault(10870);
+  let obj = importDefault(10722);
   obj = { [closure_3.PRESET_DOCUMENTS]: items };
   obj = { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_15 };
   items = [obj, { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_5 }];
@@ -39,7 +39,7 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier) {
       let tmp7 = arg0;
       let tmp8 = arg1;
       let tmp9 = arg2;
-      if (importDefault(10871)(arg0, item10012.resolution, item10012.fps, arg1, arg2)) {
+      if (importDefault(10723)(arg0, item10012.resolution, item10012.fps, arg1, arg2)) {
         let tmp10 = item10012;
         let items = [, ];
         ({ resolution: arr[0], fps: arr[1] } = tmp4);

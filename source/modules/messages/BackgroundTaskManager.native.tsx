@@ -1,10 +1,10 @@
-// Module ID: 7123
-// Function ID: 7124
+// Module ID: 7135
+// Function ID: 7136
 // Name: startBackgroundTask
-// Dependencies: [5, 17, 500, 7124, 7125, 2]
+// Dependencies: [5, 17, 500, 7136, 7137, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7123 (startBackgroundTask)
+// Module 7135 (startBackgroundTask)
 import closure_3 from "set";
 import { NativeModules } from "get ActivityIndicator";
 import set from "set";
@@ -24,9 +24,9 @@ function startBackgroundTask(arg0) {
       obj = { title: null, content: null, priority: null, type: null, usesGateway: false };
       obj[0] = title;
       obj[1] = content;
-      obj[2] = tmp(7125).ServiceNotificationPriority.MEDIUM;
-      obj[3] = tmp(7125).ServiceNotificationType.FILE_UPLOAD;
-      return importDefault(7124).addServiceHandler(obj);
+      obj[2] = tmp(7137).ServiceNotificationPriority.MEDIUM;
+      obj[3] = tmp(7137).ServiceNotificationType.FILE_UPLOAD;
+      return importDefault(7136).addServiceHandler(obj);
     }
   } else {
     const DCDBackgroundTaskManager = NativeModules.DCDBackgroundTaskManager;
@@ -40,8 +40,8 @@ if (!set.isAndroid()) {
 function endBackgroundTask(c7) {
   if (c7 !== num) {
     if (obj.isAndroid()) {
-      importDefault(7124).removeServiceHandler(c7);
-      const obj2 = importDefault(7124);
+      importDefault(7136).removeServiceHandler(c7);
+      const obj2 = importDefault(7136);
     } else {
       const DCDBackgroundTaskManager = NativeModules.DCDBackgroundTaskManager;
       DCDBackgroundTaskManager.endBackgroundTask(c7);

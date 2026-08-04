@@ -1,7 +1,7 @@
 // Module ID: 11336
 // Function ID: 11337
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 8139, 1372, 1369, 4071, 1358, 589, 11337, 11342, 5921, 2]
+// Dependencies: [32, 8151, 1372, 1369, 4101, 1358, 589, 11337, 11342, 5931, 2]
 // Exports: default
 
 // Module 11336 (useAppLauncherOnboardingContent)
@@ -28,10 +28,10 @@ export default function useAppLauncherOnboardingContent(channelId) {
     const DismissibleContent = tmp(1358).DismissibleContent;
     if ((function useHasUsedActivities(channel) {
       channel = channel.channel;
-      let obj = channelId(4071);
+      let obj = channelId(4101);
       let result = obj.useIsDismissibleContentDismissed_UNSAFE(channelId(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
-      const result1 = channelId(4071).useIsDismissibleContentDismissed_UNSAFE(channelId(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-      const obj2 = channelId(4071);
+      const result1 = channelId(4101).useIsDismissibleContentDismissed_UNSAFE(channelId(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+      const obj2 = channelId(4101);
       const tmp = channelId;
       const items = [handleUserSettingsProtoStoreChange];
       const stateFromStores = channelId(589).useStateFromStores(items, () => applicationFrecencyWithoutLoadingLatest.getApplicationFrecencyWithoutLoadingLatest());
@@ -65,7 +65,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
     }
   }
   let obj2 = channelId(589);
-  let tmp7 = callback(channelId(5921).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
+  let tmp7 = callback(channelId(5931).useSelectedDismissibleContent(items, constants.APP_LAUNCHER_ONBOARDING), 2);
   obj = { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };
   return obj;
 };

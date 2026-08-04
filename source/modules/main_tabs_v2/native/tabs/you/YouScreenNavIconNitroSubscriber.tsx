@@ -1,8 +1,8 @@
-// Module ID: 15715
-// Function ID: 15716
-// Dependencies: [32, 19, 6812, 12560, 1369, 21, 7960, 589, 5921, 1358, 15710, 15712, 7613, 1236, 2]
+// Module ID: 15746
+// Function ID: 15747
+// Dependencies: [32, 19, 6824, 12594, 1369, 21, 7972, 589, 5931, 1358, 15741, 15743, 7625, 1236, 2]
 
-// Module 15715
+// Module 15746
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import emitChanges from "emitChanges";
@@ -19,7 +19,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   showReferralNotificationDot = undefined;
   let dependencyMap;
   let callback;
-  let obj = onPress(7960);
+  let obj = onPress(7972);
   if (showReferralNotificationDot) {
     showReferralNotificationDot = obj.useIsEligibleSenderForReferralProgram(!showReferralNotificationDot);
   }
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
   const items = [emitChanges];
   const items1 = [showReferralNotificationDot];
   const stateFromStores = tmpResult.useStateFromStores(items, () => outer1_5.getReferralsRemaining({ bypassFetch: !showReferralNotificationDot }), items1);
-  tmpResult = tmp(5921);
+  tmpResult = tmp(5931);
   let prop = null;
   if (showReferralNotificationDot) {
     prop = null;
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
       }
     }
   }
-  obj = { cooldownDurationMs: tmp(15710).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
+  obj = { cooldownDurationMs: tmp(15741).REFERRAL_NITRO_BUTTON_RED_DOT_COOLDOWN_MS };
   const tmp5 = callback(tmpResult.useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   dependencyMap = tmp6;
   const tmp7 = tmp5[0] === onPress(1358).DismissibleContent.REFERRAL_PROGRAM_ENTRYPOINT_NITRO_BUTTON_NOTIFICATION;
@@ -54,12 +54,12 @@ const memoResult = importAllResult.memo(function SubscriberNitroIcon(onPress) {
     onPress();
   }, items2);
   obj = { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null };
-  obj[0] = onPress(7613).NitroWheelIcon;
+  obj[0] = onPress(7625).NitroWheelIcon;
   const intl = tmp(1236).intl;
   obj[1] = intl.string(onPress(1236).t.Ipxkog);
   obj[2] = callback;
   obj[3] = tmp7;
-  return jsx(showReferralNotificationDot(15712), { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null });
+  return jsx(showReferralNotificationDot(15743), { IconComponent: null, accessibilityLabel: null, onPress: null, showRedDot: null });
 });
 const result = require("emitChanges").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenNavIconNitroSubscriber.tsx");
 

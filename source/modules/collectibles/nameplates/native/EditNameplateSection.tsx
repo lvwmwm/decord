@@ -1,9 +1,9 @@
-// Module ID: 13819
-// Function ID: 13820
+// Module ID: 13853
+// Function ID: 13854
 // Name: memoResult1
-// Dependencies: [19, 17, 1899, 21, 4255, 8084, 13818, 8085, 5601, 1898, 8405, 2]
+// Dependencies: [19, 17, 1899, 21, 4285, 8096, 13852, 8097, 5630, 1898, 9308, 2]
 
-// Module 13819 (memoResult1)
+// Module 13853 (memoResult1)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { isNameplateRecord } from "fromServer";
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let obj = { children: null };
   obj = { style: tmp.row, children: null };
   const items1 = [...items, null, null];
-  const substr = items1.slice(0, require(8084) /* useCollectibleListLayout */.ROW_SIZE);
+  const substr = items1.slice(0, require(8096) /* useCollectibleListLayout */.ROW_SIZE);
   obj[1] = substr.map((skuId) => {
     if (skuId === outer1_0(outer1_2[6]).NONE_ITEM) {
       let obj = { size: null, onPress: null, isSelected: null, asDefault: null };
@@ -91,8 +91,8 @@ const memoResult1 = importAllResult.memo((nameplate) => {
   }, items1);
   const obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label, children: null };
   const items2 = [callback3().nameplate, { borderRadius: 6 }];
-  obj[5] = callback(setSelectedNameplate(8405), { nameplate: memo, fullOpacity: true, isSquarePreview: true, style: items2 });
-  return callback(nameplate(8085).EditCollectiblesListItemProduct, obj);
+  obj[5] = callback(setSelectedNameplate(9308), { nameplate: memo, fullOpacity: true, isSquarePreview: true, style: items2 });
+  return callback(nameplate(8097).EditCollectiblesListItemProduct, obj);
 });
 memoResult1.displayName = "EditNameplateItem";
 const result = require("fromServer").fileFinishedImporting("modules/collectibles/nameplates/native/EditNameplateSection.tsx");

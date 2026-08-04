@@ -1,9 +1,9 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6084
+// Function ID: 6085
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6074 (metadata)
+// Module 6084 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeHeadsetSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/e091863a96aef17ce08128bbc4956cd1529a13c2862a64f4f09af2eb1487a913.png";

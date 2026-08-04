@@ -1,10 +1,10 @@
-// Module ID: 16663
-// Function ID: 16664
+// Module ID: 16695
+// Function ID: 16696
 // Name: ApplicationRejectedNotice
-// Dependencies: [19, 17, 1862, 676, 21, 4255, 589, 16639, 11507, 16612, 1236, 14316, 16653, 2]
+// Dependencies: [19, 17, 1862, 676, 21, 4285, 589, 16671, 11506, 16644, 1236, 14350, 16685, 2]
 // Exports: default
 
-// Module 16663 (ApplicationRejectedNotice)
+// Module 16695 (ApplicationRejectedNotice)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -34,19 +34,19 @@ function ApplicationRejectedNotice(guildId) {
     const hasItem1 = features2.has(GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   }
   const tmp = callback3();
-  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(16639)(stateFromStores));
+  ({ resubmissionError, requestRejectedNoticeText, reapplyNoticeText } = importDefault(16671)(stateFromStores));
   if (null != resubmissionError) {
     obj = { children: null };
-    let tmp9Result = tmp9(11507);
+    let tmp9Result = tmp9(11506);
     obj[0] = resubmissionError.getAnyErrorMessage();
     let tmp14 = callback(tmp9Result, obj);
   } else if (null != requestRejectedNoticeText) {
     obj = { notice: null };
     obj[0] = requestRejectedNoticeText;
-    tmp14 = callback(tmp9(16612), obj);
+    tmp14 = callback(tmp9(16644), obj);
   } else if (tmp13) {
     const obj1 = { notice: null };
-    tmp9Result = tmp9(16612);
+    tmp9Result = tmp9(16644);
     const intl3 = tmp2(1236).intl;
     obj1[0] = intl3.string(tmp2(1236).t.MyJpJT);
     tmp14 = callback(tmp9Result, obj1);
@@ -57,22 +57,22 @@ function ApplicationRejectedNotice(guildId) {
     obj2[1] = intl2.string(tmp2(1236).t["YKw/NQ"]);
     obj2[2] = tmp12;
     obj2[3] = tmp11;
-    tmp14 = callback(tmp9(16612), obj2);
-    const tmp9Result1 = tmp9(16612);
+    tmp14 = callback(tmp9(16644), obj2);
+    const tmp9Result1 = tmp9(16644);
   } else if (true === hasItem1) {
     const obj3 = { notice: null };
     const intl = tmp2(1236).intl;
     obj3[0] = intl.string(tmp2(1236).t.e2g9sW);
-    tmp14 = callback(tmp9(16612), obj3);
-    const tmp9Result2 = tmp9(16612);
+    tmp14 = callback(tmp9(16644), obj3);
+    const tmp9Result2 = tmp9(16644);
   } else {
     tmp14 = null;
     if (true === hasItem) {
       const obj4 = { notice: null };
       const intl4 = tmp2(1236).intl;
       obj4[0] = intl4.string(tmp2(1236).t.rxI9sl);
-      tmp14 = callback(tmp9(16612), obj4);
-      const tmp9Result3 = tmp9(16612);
+      tmp14 = callback(tmp9(16644), obj4);
+      const tmp9Result3 = tmp9(16644);
     }
   }
   let tmp24 = null;
@@ -89,7 +89,7 @@ function GuildSettingsRoleSubscription(arg0) {
   let guildId;
   ({ guildId, children } = arg0);
   const tmp = callback3();
-  let obj = require(14316) /* useGroupListingsFetchContext */;
+  let obj = require(14350) /* useGroupListingsFetchContext */;
   if (obj.useGroupListingsFetchContext()) {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
@@ -117,6 +117,6 @@ export default function GuildSettingsRoleSubscriptionContainer(guildId) {
   obj = {};
   const merged = Object.assign(guildId);
   obj[1] = callback(GuildSettingsRoleSubscription, obj);
-  obj[2] = callback(require(16653) /* useRoleSubscriptionSettingsDisabled */.RoleSubscriptionSettingsDisabledContextProvider, obj);
-  return callback(require(14316) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
+  obj[2] = callback(require(16685) /* useRoleSubscriptionSettingsDisabled */.RoleSubscriptionSettingsDisabledContextProvider, obj);
+  return callback(require(14350) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, obj);
 };

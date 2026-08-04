@@ -1,7 +1,7 @@
 // Module ID: 11283
 // Function ID: 11284
 // Name: useTypingUserIds
-// Dependencies: [3892, 11284, 1874, 589, 2]
+// Dependencies: [3922, 11284, 1874, 589, 2]
 // Exports: useTypingUserIds
 
 // Module 11283 (useTypingUserIds)

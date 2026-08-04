@@ -1,10 +1,10 @@
-// Module ID: 5898
-// Function ID: 5899
+// Module ID: 5908
+// Function ID: 5909
 // Name: InputAttachmentContainer
-// Dependencies: [32, 19, 17, 21, 5630, 4251, 1348, 5899, 2]
+// Dependencies: [32, 19, 17, 21, 5659, 4281, 1348, 5909, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 5898 (InputAttachmentContainer)
+// Module 5908 (InputAttachmentContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -65,7 +65,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("design/co
 export const estimateAttachmentWidth = function estimateAttachmentWidth(arg0, arg1) {
   let num = 0;
   if (null != arg0) {
-    num = require(5630) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
+    num = require(5659) /* ICON_SIZE */.ICON_SIZE.xs + arg1;
   }
   return num;
 };
@@ -78,7 +78,7 @@ export const renderInputAttachment = function renderInputAttachment(arg0, leadin
       const obj = { variant: "text-md/normal", style: null, children: null };
       obj[1] = text;
       obj[2] = leadingText;
-      tmp2 = jsx(require(4251) /* Text */.Text, { variant: "text-md/normal", style: null, children: null });
+      tmp2 = jsx(require(4281) /* Text */.Text, { variant: "text-md/normal", style: null, children: null });
     }
   }
   return tmp2;

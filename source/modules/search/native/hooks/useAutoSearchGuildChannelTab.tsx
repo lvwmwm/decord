@@ -1,10 +1,10 @@
-// Module ID: 15644
-// Function ID: 15645
+// Module ID: 15675
+// Function ID: 15676
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 11577, 10255, 11584, 12, 11576, 2]
+// Dependencies: [19, 11637, 11624, 11647, 12, 11622, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 15644 (useAutoSearchGuildChannelTab)
+// Module 15675 (useAutoSearchGuildChannelTab)
 import noop from "noop";
 import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_4 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 

@@ -1,9 +1,9 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 13951
+// Function ID: 13952
 // Name: route
-// Dependencies: [3892, 7880, 676, 589, 1236, 10272, 9471, 13918, 2]
+// Dependencies: [3922, 7892, 676, 589, 1236, 10361, 8396, 13952, 2]
 
-// Module 13917 (route)
+// Module 13951 (route)
 import upsertRelationship from "upsertRelationship";
 import createToggle from "createToggle";
 
@@ -26,7 +26,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.BLOCKED_USERS_V2,
   getComponent() {
-    return require(13918) /* BlockedUsersList */.default;
+    return require(13952) /* BlockedUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

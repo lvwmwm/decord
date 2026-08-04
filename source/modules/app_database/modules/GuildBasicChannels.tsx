@@ -1,9 +1,9 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7029
+// Function ID: 7030
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 4931, 1376, 1218, 1372, 1935, 1862, 3883, 1373, 3, 1907, 7018, 506, 3891, 2]
+// Dependencies: [32, 5, 4960, 1376, 1218, 1372, 1935, 1862, 3913, 1373, 3, 1907, 7030, 506, 3921, 2]
 
-// Module 7017 (hasBasicChannelChanged)
+// Module 7029 (hasBasicChannelChanged)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";

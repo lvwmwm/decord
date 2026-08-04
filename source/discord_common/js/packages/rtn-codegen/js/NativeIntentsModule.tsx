@@ -1,9 +1,9 @@
-// Module ID: 4430
-// Function ID: 4431
+// Module ID: 4459
+// Function ID: 4460
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 4430 (enforcing)
+// Module 4459 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeIntentsModule");

@@ -1,10 +1,10 @@
-// Module ID: 15798
-// Function ID: 15799
+// Module ID: 15829
+// Function ID: 15830
 // Name: useMessageRequestsCount
-// Dependencies: [5721, 589, 2]
+// Dependencies: [5750, 589, 2]
 // Exports: useMessageRequestsCount
 
-// Module 15798 (useMessageRequestsCount)
+// Module 15829 (useMessageRequestsCount)
 import processChannel from "processChannel";
 
 const require = arg1;

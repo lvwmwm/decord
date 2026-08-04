@@ -1,10 +1,10 @@
-// Module ID: 6159
-// Function ID: 6160
+// Module ID: 6169
+// Function ID: 6170
 // Name: ExperimentalDiscordShopLockupExperiementLogo
-// Dependencies: [17, 21, 712, 3959, 6160, 2]
+// Dependencies: [17, 21, 712, 3989, 6170, 2]
 // Exports: ExperimentalDiscordShopLockupExperiementLogo
 
-// Module 6159 (ExperimentalDiscordShopLockupExperiementLogo)
+// Module 6169 (ExperimentalDiscordShopLockupExperiementLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const ExperimentalDiscordShopLockupExperiementLogo = function Experimenta
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(3959) /* map */;
+  let obj = require(3989) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -46,7 +46,7 @@ export const ExperimentalDiscordShopLockupExperiementLogo = function Experimenta
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "y";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(6160) };
+  obj1[1] = { uri: importDefault(6170) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

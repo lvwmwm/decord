@@ -1,10 +1,10 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 9734
+// Function ID: 9735
 // Name: MuteSettings
-// Dependencies: [19, 1372, 1862, 3892, 1874, 676, 21, 4251, 1236, 10459, 4223, 5620, 5286, 1297, 10461, 4446, 10462, 5617, 5308, 2]
+// Dependencies: [19, 1372, 1862, 3922, 1874, 676, 21, 4281, 1236, 9735, 4253, 5649, 5315, 1297, 9737, 4475, 9738, 5646, 5337, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 10458 (MuteSettings)
+// Module 9734 (MuteSettings)
 import set from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -109,25 +109,25 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     let obj = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl5 = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl5.string(require(1236) /* getSystemLocale */.t.t0mEt2);
-    let tmp3 = callback(require(4251) /* Text */.Text, obj);
+    let tmp3 = callback(require(4281) /* Text */.Text, obj);
   } else if (tmp) {
     obj = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl4 = require(1236) /* getSystemLocale */.intl;
     const obj1 = { mutedHook: null };
     obj1[0] = function mutedHook(children) {
-      return callback2(callback(4251).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
+      return callback2(callback(4281).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
     };
     obj[2] = intl4.format(require(1236) /* getSystemLocale */.t.O34r15, obj1);
-    tmp3 = callback(require(4251) /* Text */.Text, obj);
+    tmp3 = callback(require(4281) /* Text */.Text, obj);
   } else if (guildMessageNotifications === UserNotificationSettings.NO_MESSAGES) {
     const obj2 = { variant: "text-sm/medium", color: "text-default", children: null };
     const intl3 = require(1236) /* getSystemLocale */.intl;
     const obj3 = { notificationHook: null };
     obj3[0] = function notificationHook(children) {
-      return callback2(callback(4251).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
+      return callback2(callback(4281).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
     };
     obj2[2] = intl3.format(require(1236) /* getSystemLocale */.t.nRwUIL, obj3);
-    tmp3 = callback(require(4251) /* Text */.Text, obj2);
+    tmp3 = callback(require(4281) /* Text */.Text, obj2);
   } else {
     if (guildMessageNotifications !== tmp2.ALL_MESSAGES) {
       tmp3 = null;
@@ -142,7 +142,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     }
     obj = { variant: "text-sm/medium", color: "text-default", children: null };
     obj[2] = stringResult;
-    callback(require(4251) /* Text */.Text, obj);
+    callback(require(4281) /* Text */.Text, obj);
     const tmp4 = callback;
   }
   return tmp3;

@@ -1,10 +1,10 @@
-// Module ID: 4833
-// Function ID: 4834
+// Module ID: 4862
+// Function ID: 4863
 // Name: _getDetectedFileSize
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 4833 (_getDetectedFileSize)
+// Module 4862 (_getDetectedFileSize)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _getDetectedFileSize() {

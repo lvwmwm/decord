@@ -1,10 +1,10 @@
-// Module ID: 11674
-// Function ID: 11675
+// Module ID: 11735
+// Function ID: 11736
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [19, 6800, 11675, 2]
+// Dependencies: [19, 6812, 11736, 2]
 // Exports: useCommunicationDisabledCountdownCleanup
 
-// Module 11674 (useCommunicationDisabledCountdownCleanup)
+// Module 11735 (useCommunicationDisabledCountdownCleanup)
 import noop from "noop";
 
 let c3;

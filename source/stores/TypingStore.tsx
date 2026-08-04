@@ -1,7 +1,7 @@
 // Module ID: 11284
 // Function ID: 11285
 // Name: handleTypingStart
-// Dependencies: [1218, 1372, 7054, 676, 687, 5723, 530, 709, 589, 2]
+// Dependencies: [1218, 1372, 7066, 676, 687, 5752, 530, 709, 589, 2]
 
 // Module 11284 (handleTypingStart)
 import fetchFingerprint from "fetchFingerprint";
@@ -139,7 +139,7 @@ const typingStore = new TypingStore(require("dispatcher"), {
     id = store.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(5723).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(5752).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;

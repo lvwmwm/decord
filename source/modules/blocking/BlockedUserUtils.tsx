@@ -1,10 +1,10 @@
-// Module ID: 15286
-// Function ID: 15287
+// Module ID: 15317
+// Function ID: 15318
 // Name: filterOutBlockedOrIgnoredUsers
-// Dependencies: [3892, 1351, 12, 2]
+// Dependencies: [3922, 1351, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 15286 (filterOutBlockedOrIgnoredUsers)
+// Module 15317 (filterOutBlockedOrIgnoredUsers)
 import upsertRelationship from "upsertRelationship";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 8408
+// Function ID: 8409
 // Name: ContextMenu
-// Dependencies: [19, 21, 4119, 500, 4116, 1474, 9483, 4672, 9484, 4662, 9485, 4101, 1236, 9486, 5339, 4224, 4652, 2]
+// Dependencies: [19, 21, 4149, 500, 4146, 1474, 8409, 4701, 8410, 4691, 8411, 4131, 1236, 8412, 5368, 4254, 4681, 2]
 // Exports: ContextMenu
 
-// Module 9482 (ContextMenu)
+// Module 8408 (ContextMenu)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import isFabric from "isFabric";

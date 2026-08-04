@@ -1,7 +1,7 @@
 // Module ID: 11339
 // Function ID: 11340
 // Name: useActivityShelfData
-// Dependencies: [19, 1874, 7499, 1371, 589, 5587, 1351, 8359, 500, 8354, 2]
+// Dependencies: [19, 1874, 7511, 1371, 589, 5616, 1351, 10522, 500, 9457, 2]
 // Exports: useActivityShelfData
 
 // Module 11339 (useActivityShelfData)
@@ -79,7 +79,7 @@ export const useActivityShelfData = function useActivityShelfData(guildId) {
       if (supported_platforms == null) {
         supported_platforms = [];
       }
-      const tmp = lib(8359);
+      const tmp = lib(10522);
       return supported_platforms.includes(tmp(callback(500).getOS()));
     });
     const found1 = found.filter((activity) => {

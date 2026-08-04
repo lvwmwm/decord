@@ -1,9 +1,9 @@
-// Module ID: 6885
-// Function ID: 6886
+// Module ID: 6897
+// Function ID: 6898
 // Name: handleConnectionReset
-// Dependencies: [4931, 589, 692, 709, 2]
+// Dependencies: [4960, 589, 692, 709, 2]
 
-// Module 6885 (handleConnectionReset)
+// Module 6897 (handleConnectionReset)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import { Store } from "initialize";
 import set from "set";

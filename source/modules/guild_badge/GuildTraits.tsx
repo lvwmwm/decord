@@ -1,10 +1,10 @@
-// Module ID: 5823
-// Function ID: 5824
+// Module ID: 9178
+// Function ID: 9179
 // Name: GuildVisibility
 // Dependencies: [676, 1411, 2]
 // Exports: getGuildTraits, isDiscoverableGuild, isPremiumGuild
 
-// Module 5823 (GuildVisibility)
+// Module 9178 (GuildVisibility)
 import ME from "ME";
 
 let c3;

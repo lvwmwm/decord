@@ -1,9 +1,9 @@
-// Module ID: 15430
-// Function ID: 15431
+// Module ID: 15461
+// Function ID: 15462
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15430 (metadata)
+// Module 15461 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/icymi/bg-fade-3x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/38cd0af8a78dd092219226fef0e977db3ce849198df4154e46398e0955fe8297.png";

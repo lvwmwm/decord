@@ -1,10 +1,10 @@
-// Module ID: 6897
-// Function ID: 6898
+// Module ID: 6909
+// Function ID: 6910
 // Name: openCollectiblesShop
-// Dependencies: [5, 4254, 1946, 6898, 6913, 6914, 6915, 6916, 6920, 6900, 6926, 6927, 678, 676, 6941, 6942, 4107, 709, 6943, 6944, 6946, 530, 4154, 5853, 6945, 6910, 6947, 6948, 2]
+// Dependencies: [5, 4284, 1946, 6910, 6925, 6926, 6927, 6928, 6932, 6912, 6938, 6939, 678, 676, 6953, 6954, 4137, 709, 6955, 6956, 6958, 530, 4184, 5863, 6957, 6922, 6959, 6960, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 6897 (openCollectiblesShop)
+// Module 6909 (openCollectiblesShop)
 import map from "map";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ function openCollectiblesShopMobile(screen) {
   obj = { type: "COLLECTIBLES_SHOP_OPEN" };
   const merged = Object.assign(screen);
   obj.dispatch(obj);
-  let obj2 = require(4107) /* getRootNavigationRef */;
+  let obj2 = require(4137) /* getRootNavigationRef */;
   const rootNavigationRef = obj2.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -71,7 +71,7 @@ function openCollectiblesShopMobile(screen) {
 function closeCollectiblesShop() {
   importDefault(709).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(709);
-  require(6943) /* pushLayer */.popLayer();
+  require(6955) /* pushLayer */.popLayer();
 }
 function _fetchCollectiblesCategories() {
   const self = this;
@@ -794,8 +794,8 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5853);
-            const aPIError = new callback(4154).APIError(callback);
+            obj2 = callback(5863);
+            const aPIError = new callback(4184).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
@@ -890,8 +890,8 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5853);
-            const aPIError = new callback(4154).APIError(callback);
+            obj2 = callback(5863);
+            const aPIError = new callback(4184).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             const obj4 = { value: null, done: true };
@@ -1490,7 +1490,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4107).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4137).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -1689,7 +1689,7 @@ export const maybeFetchCollectiblesProduct = function maybeFetchCollectiblesProd
 };
 export const seedCollectiblesProductFromStandaloneLoad = function seedCollectiblesProductFromStandaloneLoad(memo) {
   const timestamp = Date.now();
-  let obj = require(6910) /* getItemRecordsFromPurchases */;
+  let obj = require(6922) /* getItemRecordsFromPurchases */;
   const items = [memo];
   const result = obj.extendVariantsProducts(items);
   const iter = result[Symbol.iterator]();

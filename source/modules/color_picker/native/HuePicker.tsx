@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 13784
+// Module ID: 13817
+// Function ID: 13818
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 4255, 712, 13780, 4116, 5339, 4677, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 13814, 4146, 5368, 4706, 2]
 // Exports: default
 
-// Module 13783 (HuePicker)
+// Module 13817 (HuePicker)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

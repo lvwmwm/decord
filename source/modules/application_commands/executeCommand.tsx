@@ -1,10 +1,10 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 9910
+// Function ID: 9911
 // Name: _executeCommand
-// Dependencies: [5, 5114, 1946, 1862, 4591, 1874, 7147, 676, 4248, 6879, 709, 7132, 6877, 1906, 8361, 8363, 38, 8364, 4450, 7145, 8156, 3896, 1351, 7121, 8019, 7201, 8018, 8365, 8107, 7120, 6814, 4793, 1236, 4789, 7209, 2]
+// Dependencies: [5, 5143, 1946, 1862, 4620, 1874, 7159, 676, 4278, 6891, 709, 7144, 6889, 1906, 9911, 9913, 38, 9914, 4479, 7157, 8168, 3926, 1351, 7133, 8031, 7213, 8030, 9455, 8119, 7132, 6826, 4822, 1236, 4818, 7221, 2]
 // Exports: default, retryCommandMessage
 
-// Module 8360 (_executeCommand)
+// Module 9910 (_executeCommand)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _getSystemLocale from "_getSystemLocale";
@@ -1332,7 +1332,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[3] = tmp;
     let nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      let obj1 = obj(7121);
+      let obj1 = obj(7133);
       nonce = obj1.createNonce();
     }
     obj[4] = nonce;
@@ -1349,7 +1349,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[1] = applicationId;
     obj[2] = id;
     obj[4] = obj;
-    importAll(8019).addQueued(obj.nonce, obj);
+    importAll(8031).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
         (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
@@ -1401,12 +1401,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         })(attachments, obj.nonce, id, maxSizeCallback);
       }
     }
-    const obj3 = importAll(8019);
+    const obj3 = importAll(8031);
     const tmp10 = obj;
     obj1 = { type: null, message: null };
-    obj1[0] = tmp10(7201).MessageDataType.COMMAND;
+    obj1[0] = tmp10(7213).MessageDataType.COMMAND;
     obj1[1] = obj;
-    onMessageSuccess(7201).enqueue(obj1, (ok) => {
+    onMessageSuccess(7213).enqueue(obj1, (ok) => {
       let applicationId;
       let channelId;
       let guildId;
@@ -1424,7 +1424,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         callback2();
       }
     });
-    const obj6 = onMessageSuccess(7201);
+    const obj6 = onMessageSuccess(7213);
   }
 }
 function displayInteractionLifecycleInChat() {
@@ -1618,26 +1618,26 @@ function _displayInteractionLifecycleInChat() {
   return applyArgumentsResult;
 }
 function getAnalyticsLocationFromCommandOrigin(arg0) {
-  if (require(6879) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (tmp(6879).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (tmp(6879).CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (tmp(6879).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (tmp(6879).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (tmp(6879).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (tmp(6879).CommandOrigin.MINI_SHELF === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (tmp(6879).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (tmp(6879).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return tmp(6879).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+  if (require(6891) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (tmp(6891).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (tmp(6891).CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (tmp(6891).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (tmp(6891).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (tmp(6891).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (tmp(6891).CommandOrigin.MINI_SHELF === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (tmp(6891).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (tmp(6891).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return tmp(6891).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return tmp(6879).ApplicationCommandTriggerLocations.SLASH_UI;
+    return tmp(6891).ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {
@@ -1839,13 +1839,13 @@ function _stageAttachments() {
                 if (callback2 != null) {
                   tmp(dependencyMap, arg0);
                 }
-                let obj = callback2(8019);
+                let obj = callback2(8031);
                 const intl = callback(1236).intl;
                 obj = { maxSize: null };
-                obj[0] = callback(4793).sizeString(dependencyMap);
+                obj[0] = callback(4822).sizeString(dependencyMap);
                 obj.setFailed(closure_1, outer1_11.ENTITY_TOO_LARGE, intl.formatToPlainString(callback(1236).t.fxEKdS, obj));
               };
-              dependencyMap = lib(4793).maxFileSize(callback2);
+              dependencyMap = lib(4822).maxFileSize(callback2);
               largestUploadedFileSize = 1;
               c8 = 1;
               const obj1 = { value: null, done: false };
@@ -1867,12 +1867,12 @@ function _stageAttachments() {
               largestUploadedFileSize = getEmojiToGroupId.largestUploadedFileSize;
               const _Math = Math;
               if (largestUploadedFileSize <= Math.max(dependencyMap, outer1_15)) {
-                if (totalSize <= lib(4789).MAX_TOTAL_ATTACHMENT_SIZE) {
+                if (totalSize <= lib(4818).MAX_TOTAL_ATTACHMENT_SIZE) {
                   totalSize = 1;
                   largestUploadedFileSize = 4;
                   c8 = 1;
                   let obj3 = { value: null, done: false };
-                  obj3[0] = callback(7209)(lib);
+                  obj3[0] = callback(7221)(lib);
                   return obj3;
                 }
               }
@@ -1883,7 +1883,7 @@ function _stageAttachments() {
           } else {
             if (2 === tmp8) {
               totalSize = 0;
-              obj3 = callback2(8019);
+              obj3 = callback2(8031);
               let intl = lib(1236).intl;
               const obj4 = { count: null };
               obj4[0] = lib.length;
@@ -1906,7 +1906,7 @@ function _stageAttachments() {
                 largestUploadedFileSize = c8.largestUploadedFileSize;
                 let someResult = lib.some((error) => error.error === constants.ENTITY_TOO_LARGE);
                 if (!someResult) {
-                  someResult = totalSize > lib(4789).MAX_TOTAL_ATTACHMENT_SIZE;
+                  someResult = totalSize > lib(4818).MAX_TOTAL_ATTACHMENT_SIZE;
                 }
                 let flag = !someResult;
                 if (someResult) {

@@ -1,10 +1,10 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14690
+// Function ID: 14691
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4255, 712, 4251, 8535, 4664, 8941, 8939, 4666, 3968, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4281, 8878, 4693, 9063, 9480, 4695, 3998, 2]
 // Exports: default
 
-// Module 14656 (UserSettingsDesignSystemSegmentedControl)
+// Module 14690 (UserSettingsDesignSystemSegmentedControl)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -67,7 +67,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     }
     return items;
   }, items);
-  let obj = first(8535);
+  let obj = first(8878);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp[0], defaultIndex: 1 });
   obj = { children: null };
   obj = {
@@ -78,10 +78,10 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     children: null
   };
   const obj1 = { spacing: 24, children: null };
-  let items1 = [callback3(first(8941).SegmentedControl, { state: segmentedControlState }), callback3(first(8939).SegmentedControlPages, { state: segmentedControlState }), ];
+  let items1 = [callback3(first(9063).SegmentedControl, { state: segmentedControlState }), callback3(first(9480).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj2 = { spacing: 8, direction: "horizontal", children: null };
   const items2 = [
-    callback3(first(4666).Button, {
+    callback3(first(4695).Button, {
       text: "Add Tab",
       variant: "active",
       size: "sm",
@@ -93,7 +93,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
         AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
       }
     }),
-    callback3(first(4666).Button, {
+    callback3(first(4695).Button, {
       text: "Remove Tab",
       variant: "destructive",
       size: "sm",
@@ -107,9 +107,9 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     })
   ];
   obj2[2] = items2;
-  items1[2] = callback2(first(4664).Stack, obj2);
+  items1[2] = callback2(first(4693).Stack, obj2);
   obj1[1] = items1;
-  obj[2] = callback2(first(4664).Stack, obj1);
+  obj[2] = callback2(first(4693).Stack, obj1);
   obj[0] = callback3(closure_4, obj);
   return callback3(closure_5, obj);
 };

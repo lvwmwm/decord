@@ -1,10 +1,10 @@
-// Module ID: 15378
-// Function ID: 15379
+// Module ID: 15409
+// Function ID: 15410
 // Name: useNotificationCenterItemAcked
-// Dependencies: [15371, 589, 7010, 2]
+// Dependencies: [15402, 589, 7022, 2]
 // Exports: useNotificationCenterItemAcked
 
-// Module 15378 (useNotificationCenterItemAcked)
+// Module 15409 (useNotificationCenterItemAcked)
 import handleLoadFinished from "handleLoadFinished";
 
 const require = arg1;
@@ -18,8 +18,8 @@ export const useNotificationCenterItemAcked = function useNotificationCenterItem
   let tmp4 = !forceUnacked;
   if (!forceUnacked) {
     if (!stateFromStores) {
-      stateFromStores = _require(7010).isRemoteAcked(item, ackedBeforeId);
-      const tmpResult = _require(7010);
+      stateFromStores = _require(7022).isRemoteAcked(item, ackedBeforeId);
+      const tmpResult = _require(7022);
     }
     tmp4 = stateFromStores;
   }

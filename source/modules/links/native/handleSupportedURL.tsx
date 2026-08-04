@@ -1,10 +1,10 @@
-// Module ID: 13071
-// Function ID: 13072
+// Module ID: 13105
+// Function ID: 13106
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7668, 6882, 6782, 12560, 1218, 676, 1379, 4320, 4468, 10799, 6894, 4238, 13072, 11200, 7880, 11883, 4461, 4107, 13073, 8668, 5915, 8836, 11120, 1844, 8371, 698, 8373, 5746, 9705, 11234, 13080, 11915, 10173, 1959, 11011, 11010, 13082, 13084, 1577, 4798, 13089, 3952, 13091, 1862, 5856, 8519, 8528, 5811, 4460, 9221, 4106, 5111, 1222, 709, 5061, 1467, 8613, 13094, 13109, 500, 13120, 8657, 13127, 4575, 13128, 6897, 5601, 9082, 7085, 5104, 11095, 9858, 13200, 5089, 10662, 8785, 8779, 4221, 2]
+// Dependencies: [109, 5, 7680, 6894, 6794, 12594, 1218, 676, 1379, 4349, 4497, 10650, 6906, 4268, 13106, 11191, 7892, 11944, 4490, 4137, 13107, 8705, 5925, 9251, 11105, 1844, 10327, 698, 10329, 5775, 10972, 11233, 13114, 11976, 10852, 1959, 10889, 10888, 13116, 13118, 1577, 4827, 13123, 3982, 13125, 1862, 5866, 8862, 8871, 5840, 4489, 10773, 4136, 5140, 1222, 709, 5090, 1467, 8943, 13128, 13143, 500, 13154, 8987, 13161, 4604, 13162, 6909, 5630, 9135, 7097, 5133, 11080, 9949, 13234, 5118, 10511, 9200, 9194, 4251, 2]
 // Exports: default
 
-// Module 13071 (handleSupportedURL)
+// Module 13105 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -154,7 +154,7 @@ export default function handleSupportedURL(payload) {
       if (null != inviteCode) {
         result = payload;
         result = inviteCode;
-        let obj2 = { deeplinkAttemptId: null, fromDeeplink: true, location: "Deep Link" };
+        let obj2 = { deeplinkAttemptId: null, location: "Deep Link" };
         obj2[0] = deeplinkAttemptId;
         result = payload(inviteCode[23]).showInvite(inviteCode, username, obj2);
         flag = true;
@@ -168,7 +168,7 @@ export default function handleSupportedURL(payload) {
       if (null != inviteCode) {
         const result = payload(tmp[25]).dismissGlobalKeyboard();
         const obj2 = payload(tmp[25]);
-        obj = { deeplinkAttemptId: null, fromDeeplink: true, location: "Deep Link" };
+        obj = { deeplinkAttemptId: null, location: "Deep Link" };
         obj[0] = deeplinkAttemptId;
         payload(tmp[23]).showInvite(tmp3, username, obj);
         const obj3 = payload(tmp[23]);

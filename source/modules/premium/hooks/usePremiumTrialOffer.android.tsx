@@ -1,12 +1,12 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 6820
+// Function ID: 6821
 // Name: usePremiumTrialOffer
-// Dependencies: [6809, 2]
+// Dependencies: [6821, 2]
 // Exports: usePremiumTrialOffer
 
-// Module 6808 (usePremiumTrialOffer)
+// Module 6820 (usePremiumTrialOffer)
 const result = require("set").fileFinishedImporting("modules/premium/hooks/usePremiumTrialOffer.android.tsx");
 
 export const usePremiumTrialOffer = function usePremiumTrialOffer(arg0) {
-  return require(6809) /* useAndroidAndLegacyIOSPremiumTrialOfferCandidates */.useAndroidAndLegacyIOSPremiumTrialOfferCandidates(arg0);
+  return require(6821) /* useAndroidAndLegacyIOSPremiumTrialOfferCandidates */.useAndroidAndLegacyIOSPremiumTrialOfferCandidates(arg0);
 };

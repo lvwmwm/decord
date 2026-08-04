@@ -1,10 +1,10 @@
-// Module ID: 10159
-// Function ID: 10160
+// Module ID: 10947
+// Function ID: 10948
 // Name: _bulkClearRecents
 // Dependencies: [5, 676, 1355, 1336, 709, 698, 2]
 // Exports: bulkClearRecents
 
-// Module 10159 (_bulkClearRecents)
+// Module 10947 (_bulkClearRecents)
 import expandEventProperties from "expandEventProperties";
 import { AnalyticEvents } from "ME";
 

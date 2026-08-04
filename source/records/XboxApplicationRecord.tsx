@@ -1,9 +1,9 @@
-// Module ID: 12885
-// Function ID: 12886
+// Module ID: 12919
+// Function ID: 12920
 // Name: getIconURL
-// Dependencies: [4278, 4937, 2]
+// Dependencies: [4308, 4966, 2]
 
-// Module 12885 (getIconURL)
+// Module 12919 (getIconURL)
 import "createExecutable";
 
 let c2 = "xbox:";
@@ -18,7 +18,7 @@ class XboxApplicationRecord extends tmp2 {
   }
 }
 XboxApplicationRecord.prototype["getIconURL"] = function getIconURL() {
-  return importDefault(4937).get("xbox").icon.lightPNG;
+  return importDefault(4966).get("xbox").icon.lightPNG;
 };
 
 export default XboxApplicationRecord;

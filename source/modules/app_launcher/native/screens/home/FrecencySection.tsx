@@ -1,7 +1,7 @@
 // Module ID: 11351
 // Function ID: 11352
 // Name: Placeholder
-// Dependencies: [32, 19, 17, 1371, 11352, 676, 21, 4255, 712, 8137, 1351, 5587, 1348, 11353, 11060, 589, 8358, 4450, 4116, 4256, 1236, 8706, 11354, 11350, 1906, 8547, 11355, 4251, 9482, 8707, 4783, 11356, 6879, 5207, 11359, 2]
+// Dependencies: [32, 19, 17, 1371, 11352, 676, 21, 4285, 712, 8149, 1351, 5616, 1348, 11353, 9466, 589, 9467, 4479, 4146, 4286, 1236, 9054, 11354, 11350, 1906, 8585, 11355, 4281, 8408, 9396, 4812, 11356, 6891, 5236, 11359, 2]
 // Exports: default
 
 // Module 11351 (Placeholder)
@@ -144,7 +144,7 @@ function FrecentApp(app) {
       obj = { style: null, source: null };
       obj[0] = tmp.appIcon;
       obj[1] = appLauncherIconSource;
-      tmp3 = callback2(onAppSelected(5207), obj);
+      tmp3 = callback2(onAppSelected(5236), obj);
     }
     const items = [tmp3, ];
     obj = { submitting: null, style: null };
@@ -152,7 +152,7 @@ function FrecentApp(app) {
     obj[1] = tmp.submittingOverlay;
     items[1] = callback2(app(11359).SubmittingOverlay, obj);
     obj[6] = items;
-    return closure_12(app(4783).PressableOpacity, obj, app.applicationId);
+    return closure_12(app(4812).PressableOpacity, obj, app.applicationId);
   }
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);

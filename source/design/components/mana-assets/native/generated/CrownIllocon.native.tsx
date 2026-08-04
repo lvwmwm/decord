@@ -1,10 +1,10 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 6107
+// Function ID: 6108
 // Name: CrownIllocon
-// Dependencies: [21, 5207, 6098, 2]
+// Dependencies: [21, 5236, 6108, 2]
 // Exports: CrownIllocon
 
-// Module 6097 (CrownIllocon)
+// Module 6107 (CrownIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CrownIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const CrownIllocon = function CrownIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6098);
+  obj[0] = importDefault(6108);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { uri: null });
+  return jsx(importDefault(5236), { uri: null });
 };

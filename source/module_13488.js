@@ -1,0 +1,14 @@
+// Module ID: 13488
+// Function ID: 13489
+// Dependencies: [13489]
+
+// Module 13488
+
+export default (arg0) => {
+  if (require(13489)(arg0)) {
+    const tmp4 = new TypeError("Can't call method on " + arg0);
+    throw tmp4;
+  } else {
+    return arg0;
+  }
+};

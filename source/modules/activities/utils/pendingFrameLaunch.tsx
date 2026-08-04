@@ -1,10 +1,10 @@
-// Module ID: 10677
-// Function ID: 10678
+// Module ID: 10527
+// Function ID: 10528
 // Name: stashPendingFrameLaunch
 // Dependencies: [2]
 // Exports: consumePendingFrameLaunch, discardPendingFrameLaunch, stashPendingFrameLaunch
 
-// Module 10677 (stashPendingFrameLaunch)
+// Module 10527 (stashPendingFrameLaunch)
 let closure_0 = {};
 const result = require("set").fileFinishedImporting("modules/activities/utils/pendingFrameLaunch.tsx");
 

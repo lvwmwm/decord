@@ -1,9 +1,9 @@
-// Module ID: 16545
-// Function ID: 16546
+// Module ID: 16578
+// Function ID: 16579
 // Name: updateGuildRole
-// Dependencies: [5, 676, 530, 5836, 709, 2]
+// Dependencies: [5, 676, 530, 5847, 709, 2]
 
-// Module 16545 (updateGuildRole)
+// Module 16578 (updateGuildRole)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -115,7 +115,7 @@ function _updateGuildRole() {
             return obj5;
           } else {
             closure_7 = arg1;
-            obj = callback2(5836);
+            obj = callback2(5847);
             const result = obj.checkGuildTemplateDirty(callback);
             c5 = 3;
             const obj6 = { value: null, done: true };

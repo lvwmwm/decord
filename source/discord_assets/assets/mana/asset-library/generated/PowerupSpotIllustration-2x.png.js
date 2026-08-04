@@ -1,9 +1,9 @@
-// Module ID: 6538
-// Function ID: 6539
+// Module ID: 6548
+// Function ID: 6549
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6538 (metadata)
+// Module 6548 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PowerupSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/9d8497da1024d2e08ed1844e3c3964d3346d8495fdf682b40f91a5d13588b606.png";

@@ -1,9 +1,9 @@
-// Module ID: 7236
-// Function ID: 7237
+// Module ID: 7248
+// Function ID: 7249
 // Name: createFromServer
 // Dependencies: [1883, 1876, 2]
 
-// Module 7236 (createFromServer)
+// Module 7248 (createFromServer)
 import "toJS";
 import GuildFeatures from "GuildFeatures";
 
@@ -58,7 +58,7 @@ UserDiscountOfferRecord["createFromServer"] = function createFromServer(discount
     _Date = new.target;
     date2 = new Date(discount.expires_at);
   }
-  if (typeof UserDiscountOfferRecord !== "error") {
+  if (typeof UserDiscountOfferRecord !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const tmp12 = new UserDiscountOfferRecord(str, _Date2, _Date, UserDiscountOfferRecord, new.target, id, discount_id, obj, user_id, date);

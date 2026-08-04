@@ -1,7 +1,7 @@
 // Module ID: 11332
 // Function ID: 11333
 // Name: openCustomKeyboard
-// Dependencies: [1478, 5701, 4122, 11290, 2]
+// Dependencies: [1478, 5730, 4152, 11290, 2]
 // Exports: default
 
 // Module 11332 (openCustomKeyboard)
@@ -16,7 +16,7 @@ export default function openCustomKeyboard(secondaryTextFieldRef) {
   secondaryTextFieldRef = secondaryTextFieldRef.secondaryTextFieldRef;
   require(1478) /* computeEntryState */.setKeyboardType(keyboardParams);
   let obj = require(1478) /* computeEntryState */;
-  require(5701) /* runAfterInteractions */.runAfterInteractions(() => {
+  require(5730) /* runAfterInteractions */.runAfterInteractions(() => {
     const current = ref.current;
     current.blur();
     if (secondaryTextFieldRef != null) {

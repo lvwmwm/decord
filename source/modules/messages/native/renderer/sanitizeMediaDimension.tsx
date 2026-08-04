@@ -1,14 +1,14 @@
-// Module ID: 8008
-// Function ID: 8009
+// Module ID: 8020
+// Function ID: 8021
 // Name: sanitizeMediaDimension
 // Dependencies: [2]
 // Exports: sanitizeMediaDimension
 
-// Module 8008 (sanitizeMediaDimension)
+// Module 8020 (sanitizeMediaDimension)
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/sanitizeMediaDimension.tsx");
 
 export const sanitizeMediaDimension = function sanitizeMediaDimension(height) {
-  if (typeof height === "SENTRY_RELEASE") {
+  if (typeof height === "V") {
     let num = height;
   } else {
     const _Number = Number;

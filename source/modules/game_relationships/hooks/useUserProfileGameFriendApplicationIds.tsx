@@ -1,10 +1,10 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12370
+// Function ID: 12371
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 3892, 1874, 589, 12164, 2]
+// Dependencies: [19, 3922, 1874, 589, 12251, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 12283 (useUserProfileGameFriendApplicationIds)
+// Module 12370 (useUserProfileGameFriendApplicationIds)
 import noop from "noop";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";

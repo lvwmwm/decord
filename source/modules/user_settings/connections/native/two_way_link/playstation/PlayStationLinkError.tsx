@@ -1,10 +1,10 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 10482
+// Function ID: 10483
 // Name: PlayStationLinkError
-// Dependencies: [19, 9154, 676, 21, 1480, 9165, 1236, 9166, 2]
+// Dependencies: [19, 10474, 676, 21, 1480, 10468, 1236, 10469, 2]
 // Exports: PlayStationLinkError
 
-// Module 9164 (PlayStationLinkError)
+// Module 10482 (PlayStationLinkError)
 import "noop";
 import { PlayStationLinkModalScenes as closure_2 } from "PlayStationLinkModalScenes";
 import { AbortCodes } from "ME";
@@ -19,7 +19,7 @@ export const PlayStationLinkError = function PlayStationLinkError(arg0) {
   ({ onClose, errorCode } = arg0);
   let obj = require(1480) /* useNavigation */;
   const navigation = obj.useNavigation();
-  const connectRetry = require(9165) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
+  const connectRetry = require(10468) /* useConnectRetry */.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
     const intl2 = tmp(1236).intl;
     let stringResult = intl2.string(tmp(1236).t["3dIn2A"]);
@@ -33,5 +33,5 @@ export const PlayStationLinkError = function PlayStationLinkError(arg0) {
   obj[1] = stringResult;
   obj[2] = onClose;
   obj[3] = connectRetry;
-  return jsx(require(9166) /* TwoWayLinkError */.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
+  return jsx(require(10469) /* TwoWayLinkError */.TwoWayLinkError, { title: null, body: null, onClose: null, onRetry: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 8363
-// Function ID: 8364
+// Module ID: 9913
+// Function ID: 9914
 // Name: toChoiceBooleanValue
-// Dependencies: [7146, 4689, 2]
+// Dependencies: [7158, 4718, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 8363 (toChoiceBooleanValue)
+// Module 9913 (toChoiceBooleanValue)
 import handleInit from "handleInit";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 
@@ -52,7 +52,7 @@ export const findAutocompleteChoiceStringValue = function findAutocompleteChoice
     }
   }
   let tmp2;
-  if (typeof value !== "ge") {
+  if (typeof value !== "_iter") {
     tmp2 = value;
   }
   return tmp2;
@@ -68,7 +68,7 @@ export const findAutocompleteChoiceNumberValue = function findAutocompleteChoice
     }
   }
   let tmp2;
-  if (typeof value !== "SENTRY_RELEASE") {
+  if (typeof value !== "V") {
     tmp2 = value;
   }
   return tmp2;

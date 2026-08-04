@@ -1,10 +1,10 @@
-// Module ID: 8865
-// Function ID: 8866
+// Module ID: 9279
+// Function ID: 9280
 // Name: fromServer
-// Dependencies: [4294, 8863, 676, 2]
+// Dependencies: [4324, 9277, 676, 2]
 // Exports: isPremiumWishlistItemRecord
 
-// Module 8865 (fromServer)
+// Module 9279 (fromServer)
 import createFromServer from "createFromServer";
 import "fromServer";
 import { SKUProductLines } from "ME";
@@ -29,7 +29,7 @@ prototype["fromServer"] = function fromServer(sku) {
     const obj = {};
     const merged = Object.assign(sku);
     obj.sku = fromServer;
-    if (typeof prototype !== "error") {
+    if (typeof prototype !== "find") {
       HermesBuiltin.throwTypeError();
     }
     const tmp11 = new prototype(obj, sku, prototype, new.target);
@@ -48,7 +48,7 @@ prototype["fromSKU"] = function fromSKU(id) {
     const name = id.name;
     obj[2] = name;
     obj[3] = id;
-    if (typeof prototype !== "error") {
+    if (typeof prototype !== "find") {
       HermesBuiltin.throwTypeError();
     }
     const tmp9 = new prototype(obj, name, prototype, new.target, SKUProductLines);

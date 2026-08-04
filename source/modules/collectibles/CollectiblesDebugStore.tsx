@@ -1,10 +1,10 @@
-// Module ID: 6913
-// Function ID: 6914
+// Module ID: 6925
+// Function ID: 6926
 // Name: useCollectiblesDebugStore
 // Dependencies: [644, 2]
 // Exports: addDebugLog
 
-// Module 6913 (useCollectiblesDebugStore)
+// Module 6925 (useCollectiblesDebugStore)
 import keys from "keys";
 
 let obj = keys.create((arg0) => {

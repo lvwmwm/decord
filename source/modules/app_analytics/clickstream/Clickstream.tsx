@@ -1,10 +1,10 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6835
+// Function ID: 6836
 // Name: isClickstreamEnabled
-// Dependencies: [32, 1218, 4327, 11, 6824, 698, 6825, 2]
+// Dependencies: [32, 1218, 4356, 11, 6836, 698, 6837, 2]
 // Exports: trackClickstream
 
-// Module 6823 (isClickstreamEnabled)
+// Module 6835 (isClickstreamEnabled)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
@@ -21,8 +21,8 @@ function isClickstreamEnabled(flag) {
       c7 = extractTimestampResult;
     }
     const obj = importDefault(11);
-    let closure_8 = require(6824) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
-    const obj2 = require(6824) /* clickstreamExperimentEnabled */;
+    let closure_8 = require(6836) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
+    const obj2 = require(6836) /* clickstreamExperimentEnabled */;
   }
   return closure_8;
 }
@@ -40,7 +40,7 @@ function drainClickstream(flag) {
       let tmp11 = dependencyMap;
       let obj2 = importDefault(698);
       let tmp12 = require;
-      let obj3 = require(6825) /* getClickstreamDrainEvent */;
+      let obj3 = require(6837) /* getClickstreamDrainEvent */;
       let trackResult = obj2.track(first, obj3.getClickstreamDrainEvent(first, tmp8[1]));
       continue;
     }
@@ -61,7 +61,7 @@ export const trackClickstream = function trackClickstream(GUILD_VIEWED_CLICKSTRE
     drainClickstream(false);
     c7 = extractTimestampResult;
   }
-  const result = require(6824) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
+  const result = require(6836) /* clickstreamExperimentEnabled */.clickstreamExperimentEnabled();
   let c8 = result;
   if (result) {
     if (!map.has(GUILD_VIEWED_CLICKSTREAM)) {

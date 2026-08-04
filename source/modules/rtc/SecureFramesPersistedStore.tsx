@@ -1,9 +1,9 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 9132
+// Function ID: 9133
 // Name: items
 // Dependencies: [589, 709, 2]
 
-// Module 9079 (items)
+// Module 9132 (items)
 import { PersistedStore } from "initialize";
 
 let items = [];

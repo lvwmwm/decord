@@ -1,10 +1,10 @@
-// Module ID: 16659
-// Function ID: 16660
+// Module ID: 16691
+// Function ID: 16692
 // Name: pickImage
-// Dependencies: [5, 19, 17, 21, 4255, 712, 4797, 1450, 8649, 1236, 5207, 16660, 9284, 4251, 4666, 2]
+// Dependencies: [5, 19, 17, 21, 4285, 712, 4826, 1450, 8979, 1236, 5236, 16692, 9591, 4281, 4695, 2]
 // Exports: default
 
-// Module 16659 (pickImage)
+// Module 16691 (pickImage)
 import Themes from "Themes";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -240,8 +240,8 @@ export default function FormImagePicker(children) {
   obj = { style: tmp2.buttonColumn, children: null };
   obj = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description };
   const items = [
-    callback2(tmp6(4251).Text, obj),
-    callback2(tmp6(4666).Button, {
+    callback2(tmp6(4281).Text, obj),
+    callback2(tmp6(4695).Button, {
       text: stringResult,
       variant: "secondary",
       onPress() {

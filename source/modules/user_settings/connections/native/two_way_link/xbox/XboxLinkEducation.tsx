@@ -1,10 +1,10 @@
-// Module ID: 9218
-// Function ID: 9219
+// Module ID: 10465
+// Function ID: 10466
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 676, 21, 4255, 9124, 1945, 9163, 4251, 1236, 5243, 4666, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 10413, 1945, 10466, 4281, 1236, 5272, 4695, 2]
 // Exports: default
 
-// Module 9218 (XboxLinkEducation)
+// Module 10465 (XboxLinkEducation)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -22,7 +22,7 @@ let closure_9 = createCacheKey.createStyles({ image: { width: 124, height: 160, 
 const result = require("ME").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
 
 export default function XboxLinkEducation(onClose) {
-  let obj = require(9124) /* styles */;
+  let obj = require(10413) /* styles */;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   let obj1 = importDefault(1945);
   const articleURL = obj1.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
@@ -33,11 +33,11 @@ export default function XboxLinkEducation(onClose) {
   const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl.string(require(1236) /* getSystemLocale */.t.jHytat);
-  items[1] = callback(require(4251) /* Text */.Text, obj2);
+  items[1] = callback(require(4281) /* Text */.Text, obj2);
   const obj3 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.format(require(1236) /* getSystemLocale */.t.yhozpz, { helpdeskArticleUrl: articleURL });
-  items[2] = callback(require(4251) /* Text */.Text, obj3);
+  items[2] = callback(require(4281) /* Text */.Text, obj3);
   obj[1] = items;
   const items1 = [callback2(closure_5, obj), ];
   const obj4 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: null };
@@ -46,9 +46,9 @@ export default function XboxLinkEducation(onClose) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj6[2] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj6[3] = onClose.onClose;
-  obj5[1] = callback(require(4666) /* Button */.Button, obj6);
+  obj5[1] = callback(require(4695) /* Button */.Button, obj6);
   obj4[2] = callback(closure_5, obj5);
-  items1[1] = callback(require(5243) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback(require(5272) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
   obj[1] = items1;
   return callback2(closure_5, obj);
 };

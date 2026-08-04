@@ -1,10 +1,10 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14111
+// Function ID: 14112
 // Name: trackEmptyStateCardClicked
 // Dependencies: [676, 698, 2]
 // Exports: trackEmptyStateCardClicked
 
-// Module 14077 (trackEmptyStateCardClicked)
+// Module 14111 (trackEmptyStateCardClicked)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsTracking.tsx");

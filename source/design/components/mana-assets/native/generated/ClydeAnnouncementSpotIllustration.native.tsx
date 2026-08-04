@@ -1,10 +1,10 @@
-// Module ID: 6069
-// Function ID: 6070
+// Module ID: 6079
+// Function ID: 6080
 // Name: ClydeAnnouncementSpotIllustration
-// Dependencies: [21, 5207, 6070, 2]
+// Dependencies: [21, 5236, 6080, 2]
 // Exports: ClydeAnnouncementSpotIllustration
 
-// Module 6069 (ClydeAnnouncementSpotIllustration)
+// Module 6079 (ClydeAnnouncementSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAnnouncementSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ClydeAnnouncementSpotIllustration = function ClydeAnnouncementSpotI
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6070);
+  obj[0] = importDefault(6080);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ClydeAnnouncementSpotIllustration = function ClydeAnnouncementSpotI
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

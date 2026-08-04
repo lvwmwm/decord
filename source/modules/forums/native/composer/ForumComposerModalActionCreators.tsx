@@ -1,24 +1,24 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 9820
+// Function ID: 9821
 // Name: openCreateForumPostModal
-// Dependencies: [7134, 4461, 9726, 1959, 2]
+// Dependencies: [7146, 4490, 9821, 1959, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 9725 (openCreateForumPostModal)
+// Module 9820 (openCreateForumPostModal)
 let c3 = "create-forum-post";
 let result = require("ForumComposerModal").fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
 
 export const openCreateForumPostModal = function openCreateForumPostModal(guildId) {
-  let obj = require(7134) /* trackForumChannelSeenBatch */;
+  let obj = require(7146) /* trackForumChannelSeenBatch */;
   obj = { guildId: guildId.guildId, channelId: guildId.parentChannelId, location: guildId.analyticsLocationObject };
   const result = obj.trackMobileForumComposerOpened(obj);
   if (!tmp4) {
     obj = { guildId: null, channelId: null };
     ({ guildId: obj4[0], parentChannelId: obj4[1] } = guildId);
-    const result1 = tmp(7134).trackForumCreateNewPostStarted(obj);
-    const tmpResult = tmp(7134);
+    const result1 = tmp(7146).trackForumCreateNewPostStarted(obj);
+    const tmpResult = tmp(7146);
   }
-  importDefault(4461).pushLazy(require(1959) /* asyncRequireImpl */(9726, dependencyMap.paths), guildId, c3);
+  importDefault(4490).pushLazy(require(1959) /* asyncRequireImpl */(9821, dependencyMap.paths), guildId, c3);
 };
 export const closeCreateForumPostModal = function closeCreateForumPostModal() {
   let flag = arg0;
@@ -26,8 +26,8 @@ export const closeCreateForumPostModal = function closeCreateForumPostModal() {
     flag = false;
   }
   if (!flag) {
-    const result = require(7134) /* trackForumChannelSeenBatch */.trackMobileForumComposerDismissed();
-    const obj = require(7134) /* trackForumChannelSeenBatch */;
+    const result = require(7146) /* trackForumChannelSeenBatch */.trackMobileForumComposerDismissed();
+    const obj = require(7146) /* trackForumChannelSeenBatch */;
   }
-  importDefault(4461).popWithKey(c3);
+  importDefault(4490).popWithKey(c3);
 };

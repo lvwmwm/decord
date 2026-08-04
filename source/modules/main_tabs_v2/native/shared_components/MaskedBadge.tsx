@@ -1,16 +1,16 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 8198
+// Function ID: 8199
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4255, 712, 1297, 9306, 2]
+// Dependencies: [19, 21, 4285, 712, 1297, 8199, 2]
 // Exports: default
 
-// Module 9305 (MaskedBadge)
+// Module 8198 (MaskedBadge)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 
 const require = arg1;
-createCacheKey = { maskStyle: { position: "relative", right: "accessibilityRole" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };
+createCacheKey = { maskStyle: { position: "relative", right: "channel" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };
 createCacheKey = { backgroundColor: require("Themes").unsafe_rawColors.PRIMARY_400 };
 createCacheKey[4] = createCacheKey;
 createCacheKey = createCacheKey.createStyles(createCacheKey);
@@ -51,7 +51,7 @@ export default function MaskedBadge(backgroundColor) {
       obj[0] = size;
       obj[1] = backgroundColor;
       obj[2] = tmp.unreadBadge;
-      tmp7Result = jsx(importDefault(9306), { size: null, maskColor: null, style: null });
+      tmp7Result = jsx(importDefault(8199), { size: null, maskColor: null, style: null });
     }
   }
   return tmp7Result;

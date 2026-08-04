@@ -1,10 +1,10 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11443
+// Function ID: 11444
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [4278, 3883, 505, 589, 11014, 11356, 8136, 8359, 500, 1236, 2]
+// Dependencies: [4308, 3913, 505, 589, 10892, 11356, 8148, 10522, 500, 1236, 2]
 // Exports: default
 
-// Module 11444 (useIsPrimaryEntryPointDisabled)
+// Module 11443 (useIsPrimaryEntryPointDisabled)
 import createExecutable from "createExecutable";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
@@ -29,7 +29,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   if (channel != null) {
     id = channel.id;
   }
-  const embeddedActivityLaunchability = channel(11014).useEmbeddedActivityLaunchability(id);
+  const embeddedActivityLaunchability = channel(10892).useEmbeddedActivityLaunchability(id);
   let flag = false;
   if (channel(11356).ActivityAction.LEAVE !== activityAction) {
     if (tmp2(11356).ActivityAction.START === activityAction) {
@@ -41,11 +41,11 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== tmp2(11014).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== tmp2(10892).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
-          let tmp2Result = tmp2(8136);
+          let tmp2Result = tmp2(8148);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -62,7 +62,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         if (isGuildVoiceResult1) {
           flag = !stateFromStores;
         } else {
-          tmp2Result = tmp2(8136);
+          tmp2Result = tmp2(8148);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -75,7 +75,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   let reason;
   if (activityAction !== channel(11356).ActivityAction.LEAVE) {
     const tmp10 = application instanceof createExecutable ? application.embeddedActivityConfig : application.embedded_activity_config;
-    importDefault(8359);
+    importDefault(10522);
     tmp2(500);
     if (null != tmp10) {
       const supported_platforms = tmp10.supported_platforms;

@@ -1,9 +1,9 @@
-// Module ID: 8048
-// Function ID: 8049
+// Module ID: 8060
+// Function ID: 8061
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8048 (metadata)
+// Module 8060 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/checkpoint/card-origami.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/885205a22b61b7423bf5d9539a2499897b226a224577b6daa5918376d57c3289.png";

@@ -1,17 +1,17 @@
-// Module ID: 14855
-// Function ID: 14856
-// Dependencies: [4255, 5206, 712, 2]
+// Module ID: 14889
+// Function ID: 14890
+// Dependencies: [4285, 5235, 712, 2]
 
-// Module 14855
+// Module 14889
 import createCacheKey from "createCacheKey";
 
 let obj = { useScreenStyles: null };
 obj[0] = createCacheKey.createStyles((arg0) => {
-  const NAV_BAR_HEIGHT = require(5206) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
+  const NAV_BAR_HEIGHT = require(5235) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
   if (arg0) {
     let diff = NAV_BAR_HEIGHT;
   } else {
-    diff = NAV_BAR_HEIGHT - tmp(5206).STATUS_BAR_HEIGHT;
+    diff = NAV_BAR_HEIGHT - tmp(5235).STATUS_BAR_HEIGHT;
   }
   let obj = { marginTop: diff, marginLeft: null, marginRight: null, paddingBottom: null, flex: 1, flexDirection: "column", justifyContent: "space-between", alignItems: "stretch" };
   const space = importDefault(712).space;

@@ -1,10 +1,10 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 10931
+// Function ID: 10932
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [3948, 9670, 4596, 2]
+// Dependencies: [3978, 10932, 4625, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 9669 (isAlertOrActionSheetOpen)
+// Module 10931 (isAlertOrActionSheetOpen)
 import setContent from "setContent";
 import getAlert from "getAlert";
 
@@ -21,7 +21,7 @@ export const isAlertOrActionSheetOpen = function isAlertOrActionSheetOpen(select
     obj2 = getAlert;
   }
   let tmp = null != obj.getContent();
-  const useAlertStore = require(4596) /* useAlertStore */.useAlertStore;
+  const useAlertStore = require(4625) /* useAlertStore */.useAlertStore;
   const tmp2 = null != obj2.getAlert();
   if (!tmp) {
     tmp = tmp2;

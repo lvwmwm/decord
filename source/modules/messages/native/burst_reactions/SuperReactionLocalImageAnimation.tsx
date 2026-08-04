@@ -1,10 +1,10 @@
-// Module ID: 9504
-// Function ID: 9505
+// Module ID: 8557
+// Function ID: 8558
 // Name: SuperReactionLocalImageAnimation
-// Dependencies: [19, 21, 7151, 7194, 2]
+// Dependencies: [19, 21, 7163, 7206, 2]
 // Exports: default
 
-// Module 9504 (SuperReactionLocalImageAnimation)
+// Module 8557 (SuperReactionLocalImageAnimation)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -17,14 +17,14 @@ export default function SuperReactionLocalImageAnimation(arg0) {
   let tmp = null;
   ({ localImageSource, animationSource } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(7151) /* _generateAnimationSource */;
+  let obj = require(7163) /* _generateAnimationSource */;
   const superReactionAnimationSourceFromLocalImage = obj.useSuperReactionAnimationSourceFromLocalImage({ animationSource, localImageSource });
   if (null != superReactionAnimationSourceFromLocalImage) {
     obj = { loop: true, source: null };
     obj[1] = superReactionAnimationSourceFromLocalImage;
     const merged1 = Object.assign(merged);
-    tmp = jsx(importDefault(7194), { loop: true, source: null });
-    const tmp7 = importDefault(7194);
+    tmp = jsx(importDefault(7206), { loop: true, source: null });
+    const tmp7 = importDefault(7206);
   }
   return tmp;
 };

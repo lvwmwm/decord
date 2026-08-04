@@ -1,9 +1,9 @@
-// Module ID: 9417
-// Function ID: 9418
+// Module ID: 8330
+// Function ID: 8331
 // Name: ChangePhoneReason
-// Dependencies: [5, 1218, 9415, 676, 709, 530, 5065, 503, 2]
+// Dependencies: [5, 1218, 8328, 676, 709, 530, 5094, 503, 2]
 
-// Module 9417 (ChangePhoneReason)
+// Module 8330 (ChangePhoneReason)
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";
@@ -136,7 +136,7 @@ export default {
               if (c3) {
                 obj1.authorization = "";
               }
-              let obj5 = outer1_1(5065);
+              let obj5 = outer1_1(5094);
               const obj2 = { url: null, headers: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
               obj2[0] = outer1_6.VERIFY_PHONE;
               obj2[1] = obj1;

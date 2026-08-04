@@ -1,9 +1,9 @@
-// Module ID: 8592
-// Function ID: 8593
+// Module ID: 8923
+// Function ID: 8924
 // Name: handleUpdateStart
-// Dependencies: [676, 584, 5250, 589, 709, 2]
+// Dependencies: [676, 584, 5279, 589, 709, 2]
 
-// Module 8592 (handleUpdateStart)
+// Module 8923 (handleUpdateStart)
 import { ChannelTypes } from "ME";
 import { Store } from "initialize";
 
@@ -46,7 +46,7 @@ function handleInviteResolveOrCreate(invite) {
   const profile = invite.invite.profile;
   if (null != profile) {
     const value = map.get(profile.id);
-    const guildProfileFromServer = require(5250) /* getEmoji */.buildGuildProfileFromServer(profile);
+    const guildProfileFromServer = require(5279) /* getEmoji */.buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
       const merged = Object.assign(closure_7);
@@ -64,7 +64,7 @@ function handleInviteResolveOrCreate(invite) {
       obj.fetchStatus = obj.FETCHED;
       const result1 = obj3.set(profile.id, obj);
     }
-    const obj4 = require(5250) /* getEmoji */;
+    const obj4 = require(5279) /* getEmoji */;
   }
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
@@ -149,10 +149,10 @@ prototype["getIsUpdating"] = function getIsUpdating(outer1_0) {
   }
   return tmp;
 };
-prototype["getErrorCode"] = function getErrorCode(enabled) {
+prototype["getErrorCode"] = function getErrorCode(guildId) {
   let tmp = null;
-  if (null != enabled) {
-    const value = map.get(enabled);
+  if (null != guildId) {
+    const value = map.get(guildId);
     let code;
     if (value != null) {
       const error = value.error;

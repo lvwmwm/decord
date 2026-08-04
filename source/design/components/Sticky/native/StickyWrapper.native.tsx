@@ -1,10 +1,10 @@
-// Module ID: 10580
-// Function ID: 10581
+// Module ID: 10250
+// Function ID: 10251
 // Name: StickyWrapper
 // Dependencies: [19, 17, 21, 501, 2]
 // Exports: StickyWrapper
 
-// Module 10580 (StickyWrapper)
+// Module 10250 (StickyWrapper)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

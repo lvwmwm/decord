@@ -1,10 +1,10 @@
-// Module ID: 13049
-// Function ID: 13050
+// Module ID: 13083
+// Function ID: 13084
 // Name: getNvencReconstructedFrameExperimentConfig
 // Dependencies: [1349, 2]
 // Exports: getNvencReconstructedFrameExperimentConfig
 
-// Module 13049 (getNvencReconstructedFrameExperimentConfig)
+// Module 13083 (getNvencReconstructedFrameExperimentConfig)
 let obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = require("getUnitId")({ kind: "user", name: "2026-07-nvenc-reconstructed-frames", defaultConfig: { enabled: false }, variations: obj });

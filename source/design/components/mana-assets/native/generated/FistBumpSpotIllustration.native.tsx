@@ -1,10 +1,10 @@
-// Module ID: 6179
-// Function ID: 6180
+// Module ID: 6189
+// Function ID: 6190
 // Name: FistBumpSpotIllustration
-// Dependencies: [21, 5207, 6180, 2]
+// Dependencies: [21, 5236, 6190, 2]
 // Exports: FistBumpSpotIllustration
 
-// Module 6179 (FistBumpSpotIllustration)
+// Module 6189 (FistBumpSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FistBumpSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const FistBumpSpotIllustration = function FistBumpSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6180);
+  obj[0] = importDefault(6190);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const FistBumpSpotIllustration = function FistBumpSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

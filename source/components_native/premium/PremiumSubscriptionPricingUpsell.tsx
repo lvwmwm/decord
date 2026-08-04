@@ -1,10 +1,10 @@
-// Module ID: 12680
-// Function ID: 12681
+// Module ID: 12714
+// Function ID: 12715
 // Name: PricingSubheadingCopy
-// Dependencies: [32, 19, 17, 1946, 1874, 3906, 3907, 5738, 676, 1876, 21, 4255, 589, 3901, 12564, 709, 6780, 5741, 4251, 500, 5736, 5735, 1236, 1851, 2]
+// Dependencies: [32, 19, 17, 1946, 1874, 3936, 3937, 5767, 676, 1876, 21, 4285, 589, 3931, 12598, 709, 6792, 5770, 4281, 500, 5765, 5764, 1236, 1851, 2]
 // Exports: default
 
-// Module 12680 (PricingSubheadingCopy)
+// Module 12714 (PricingSubheadingCopy)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "SubscriptionPlans";
@@ -233,13 +233,13 @@ let result = require("get ActivityIndicator").fileFinishedImporting("components_
 
 export default function PremiumSubscriptionPricingUpsell() {
   const tmp = callback3();
-  let obj = require(12564) /* getSubscriptionPlansLoaded */;
+  let obj = require(12598) /* getSubscriptionPlansLoaded */;
   obj = { style: tmp.pricingSection, children: null };
   const subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["3x1PFE"]);
-  const items = [callback(require(4251) /* Text */.Text, obj), ];
+  const items = [callback(require(4281) /* Text */.Text, obj), ];
   let tmp5Result = null;
   if (subscriptionPlansLoaded) {
     tmp5Result = callback(PricingSubheadingCopy, {});

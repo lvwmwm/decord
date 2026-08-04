@@ -11,7 +11,7 @@ import _createClass from "_createClass";
 class State {
   constructor(arg0) {
     self = this;
-    f102593 = this;
+    f102691 = this;
     tmp = _classCallCheck(this, State);
     this._nativeEventSubscription = null;
     set = new Set();
@@ -36,8 +36,8 @@ class State {
         const item = _subscriptions.forEach((arg0) => arg0(obj));
       }
     };
-    f102593 = undefined;
-    f102593 = module_1462((arg0) => {
+    f102691 = undefined;
+    f102691 = module_1462((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;

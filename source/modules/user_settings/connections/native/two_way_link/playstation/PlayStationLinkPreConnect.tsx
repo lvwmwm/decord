@@ -1,10 +1,10 @@
-// Module ID: 9157
-// Function ID: 9158
+// Module ID: 10477
+// Function ID: 10478
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 9154, 21, 4255, 1480, 9158, 9128, 1236, 2]
+// Dependencies: [19, 10474, 21, 4285, 1480, 10478, 10417, 1236, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 9157 (PlayStationLinkPreConnect)
+// Module 10477 (PlayStationLinkPreConnect)
 import noop from "noop";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { jsx } from "jsxProd";
@@ -32,5 +32,5 @@ export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(plat
   obj[5] = intl.string(navigation(1236).t["6n+UPR"]);
   const intl2 = navigation(1236).intl;
   obj[6] = intl2.string(navigation(1236).t.JaaqIf);
-  return jsx(navigation(9128).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
+  return jsx(navigation(10417).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
 };

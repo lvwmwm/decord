@@ -1,8 +1,8 @@
-// Module ID: 13615
-// Function ID: 13616
-// Dependencies: [1874, 4158, 676, 10696, 1416, 10693, 1471, 2]
+// Module ID: 13649
+// Function ID: 13650
+// Dependencies: [1874, 4188, 676, 10546, 1416, 10543, 1471, 2]
 
-// Module 13615
+// Module 13649
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -11,7 +11,7 @@ const RPCErrors = ME.RPCErrors;
 let obj = {
   scope: require("RPC_SCOPE_CONFIG").RPC_LOCAL_SCOPE,
   validation(string) {
-    let obj = importDefault(10696)(string);
+    let obj = importDefault(10546)(string);
     obj = { type: null, id: null, format: null, size: null };
     const requiredResult = obj.required();
     const stringResult = string.string();
@@ -45,7 +45,7 @@ let obj = {
         let obj = { errorCode: null };
         obj[0] = RPCErrors.INVALID_USER;
         const _HermesInternal = HermesInternal;
-        let tmp14 = importDefault(10693);
+        let tmp14 = importDefault(10543);
         tmp14 = new tmp14(obj, "Invalid user id: " + id);
         throw tmp14;
       } else {
@@ -65,7 +65,7 @@ let obj = {
     if (null == text) {
       obj = { errorCode: null };
       obj[0] = RPCErrors.INVALID_COMMAND;
-      const tmp10 = new importDefault(10693)(obj, "No valid type.");
+      const tmp10 = new importDefault(10543)(obj, "No valid type.");
       throw tmp10;
     } else {
       const _fetch = fetch;

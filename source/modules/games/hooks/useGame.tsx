@@ -1,12 +1,12 @@
-// Module ID: 6990
-// Function ID: 6991
+// Module ID: 7002
+// Function ID: 7003
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4276, 676, 589, 687, 6991, 2]
+// Dependencies: [5, 19, 4306, 676, 589, 687, 7003, 2]
 // Exports: useGames
 
-// Module 6990 (importDefaultResult1)
+// Module 7002 (importDefaultResult1)
 import noop from "noop";
-import importDefaultResult1 from "map";
+import importDefaultResult1 from "handleLoadMessages";
 import initialize from "initialize";
 import importDefaultResult from "set";
 
@@ -119,7 +119,7 @@ initialize[5] = function getError(gameId) {
   return error;
 };
 const fetchStore = initialize.createFetchStore(importDefaultResult1, initialize);
-const result = require("map").fileFinishedImporting("modules/games/hooks/useGame.tsx");
+const result = require("handleLoadMessages").fileFinishedImporting("modules/games/hooks/useGame.tsx");
 
 export const useGame = fetchStore;
 export const useGames = function useGames(memo) {

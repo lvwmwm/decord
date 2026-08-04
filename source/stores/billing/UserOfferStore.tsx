@@ -1,9 +1,9 @@
-// Module ID: 6811
-// Function ID: 6812
+// Module ID: 6823
+// Function ID: 6824
 // Name: emitChanges
-// Dependencies: [6812, 7236, 1874, 6758, 3907, 1876, 589, 7237, 3901, 709, 2]
+// Dependencies: [6824, 7248, 1874, 6770, 3937, 1876, 589, 7249, 3931, 709, 2]
 
-// Module 6811 (emitChanges)
+// Module 6823 (emitChanges)
 import emitChanges from "emitChanges";
 import createFromServer from "createFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -174,8 +174,8 @@ prototype["shouldShowTrialOfferReminder"] = function shouldShowTrialOfferReminde
   const hasItem = closure_13.includes(trial_id.trial_id);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7237) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7237) /* apexExperiment */;
+    result = require(7249) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(7249) /* apexExperiment */;
   }
   return result;
 };
@@ -186,7 +186,7 @@ prototype["getAlmostExpiringTrialOffersForReminder"] = function getAlmostExpirin
   let values = Object.values(closure_12);
   const _require = values.map((id) => id.id);
   const currentUser = authStore.getCurrentUser();
-  let obj = _require(3901);
+  let obj = _require(3931);
   if (obj.isPremium(currentUser)) {
     if (!self.canFractionalPremiumUserUseOffer()) {
       items = [];
@@ -223,8 +223,8 @@ prototype["shouldShowDiscountOfferReminder"] = function shouldShowDiscountOfferR
   const hasItem = closure_8.includes(discountId.discountId);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7237) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7237) /* apexExperiment */;
+    result = require(7249) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(7249) /* apexExperiment */;
   }
   return result;
 };
@@ -264,7 +264,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
 prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  const obj = _require(3901);
+  const obj = _require(3931);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -283,7 +283,7 @@ prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
 };
 prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscountOffers() {
   const currentUser = authStore.getCurrentUser();
-  const obj = require(3901) /* getPremiumPlanItem */;
+  const obj = require(3931) /* getPremiumPlanItem */;
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -308,7 +308,7 @@ prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscoun
 prototype["getUnacknowledgedOffers"] = function getUnacknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  const obj = _require(3901);
+  const obj = _require(3931);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {

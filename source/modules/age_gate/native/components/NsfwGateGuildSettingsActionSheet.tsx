@@ -1,10 +1,10 @@
-// Module ID: 13129
-// Function ID: 13130
+// Module ID: 13163
+// Function ID: 13164
 // Name: NsfwGateGuildSettingsActionSheet
-// Dependencies: [19, 21, 13130, 5617, 5308, 5619, 1236, 4223, 5201, 13131, 2]
+// Dependencies: [19, 21, 13164, 5646, 5337, 5648, 1236, 4253, 5230, 13165, 2]
 // Exports: default
 
-// Module 13129 (NsfwGateGuildSettingsActionSheet)
+// Module 13163 (NsfwGateGuildSettingsActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -16,11 +16,11 @@ const result = require("MessageRequestRestrictedGuildPrivacyOption").fileFinishe
 
 export default function NsfwGateGuildSettingsActionSheet(guild) {
   guild = guild.guild;
-  let obj = guild(13130);
+  let obj = guild(13164);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   obj = { header: null, children: null };
   obj = { title: guild.name };
-  obj[0] = callback(guild(5308).BottomSheetTitleHeader, obj);
+  obj[0] = callback(guild(5337).BottomSheetTitleHeader, obj);
   const obj1 = { hasIcons: false, children: null };
   const obj2 = { label: null, onPress: null };
   const intl = guild(1236).intl;
@@ -30,15 +30,15 @@ export default function NsfwGateGuildSettingsActionSheet(guild) {
     const obj = outer1_1(outer1_2[7]);
     outer1_1(outer1_2[8]).open(guild.id);
   };
-  const items = [callback(guild(5619).ActionSheetRow, obj2), callback(guild(13131).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
+  const items = [callback(guild(5648).ActionSheetRow, obj2), callback(guild(13165).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
   const obj3 = { variant: "danger", label: null, onPress: null };
   const intl2 = guild(1236).intl;
   obj3[1] = intl2.string(guild(1236).t.J2TBi3);
   obj3[2] = function onPress() {
     return guild(outer1_2[9]).handleLeaveServer(guild);
   };
-  items[3] = callback(guild(5619).ActionSheetRow, obj3);
+  items[3] = callback(guild(5648).ActionSheetRow, obj3);
   obj1[1] = items;
-  obj[1] = callback2(guild(5619).ActionSheetRow.Group, obj1);
-  return callback(guild(5617).ActionSheet, obj);
+  obj[1] = callback2(guild(5648).ActionSheetRow.Group, obj1);
+  return callback(guild(5646).ActionSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9274
-// Function ID: 9275
+// Module ID: 9582
+// Function ID: 9583
 // Name: FacepileGroupDMAvatar
-// Dependencies: [19, 17, 1874, 21, 1297, 4255, 8091, 589, 1351, 2]
+// Dependencies: [19, 17, 1874, 21, 1297, 4285, 8103, 589, 1351, 2]
 // Exports: default
 
-// Module 9274 (FacepileGroupDMAvatar)
+// Module 9582 (FacepileGroupDMAvatar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -73,7 +73,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj3);
     items3 = [, ];
     items3[0] = tmp11(require("Button").Avatar, obj1);
-    obj4 = { status, statusSizeOverride: null, autoStatusCutout: true, style: null, size: null, guildId: "Array", animate: "button" };
+    obj4 = { status, statusSizeOverride: null, autoStatusCutout: true, style: null, size: null, guildId: "Array", animate: "" };
     obj4[1] = require("Button").StatusSizes.REFRESH_MEDIUM_10;
     obj4[3] = tmp.secondFace;
     obj4[4] = pileSizeOverride;

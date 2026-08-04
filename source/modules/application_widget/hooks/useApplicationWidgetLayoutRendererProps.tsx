@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12358
+// Function ID: 12359
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 12272, 12273, 1946, 12274, 589, 12275, 12178, 1351, 12278, 2]
+// Dependencies: [32, 19, 12359, 12360, 1946, 12361, 589, 12362, 12265, 1351, 12365, 2]
 // Exports: default
 
-// Module 12271 (useApplicationWidgetLayoutRendererProps)
+// Module 12358 (useApplicationWidgetLayoutRendererProps)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleFeaturedOrDeveloperFetchSuccess from "handleFeaturedOrDeveloperFetchSuccess";

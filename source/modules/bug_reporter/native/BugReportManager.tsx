@@ -1,9 +1,9 @@
-// Module ID: 10511
-// Function ID: 10512
+// Module ID: 9810
+// Function ID: 9811
 // Name: showNotification
-// Dependencies: [5, 17, 706, 676, 4468, 500, 10413, 10415, 514, 5200, 10512, 2]
+// Dependencies: [5, 17, 706, 676, 4497, 500, 9683, 9685, 514, 5229, 9811, 2]
 
-// Module 10511 (showNotification)
+// Module 9810 (showNotification)
 import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
@@ -152,12 +152,12 @@ function showNotification(uri) {
             }
             outer1_0 = tmp7;
             outer1_1 = outer1_7.BUG_REPORTER;
-            dependencyMap = outer1_0(10413).getNotificationDuration(outer1_1);
-            const obj5 = outer1_0(10413);
+            dependencyMap = outer1_0(9683).getNotificationDuration(outer1_1);
+            const obj5 = outer1_0(9683);
             const obj3 = { type: null, duration: null, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
             obj3[0] = outer1_1;
             obj3[1] = dependencyMap;
-            const obj6 = outer1_1(10415);
+            const obj6 = outer1_1(9685);
             obj3[2] = outer1_0(514).v4();
             obj3[3] = outer1_0;
             let uri;

@@ -1,10 +1,10 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10366
+// Function ID: 10367
 // Name: subscribe
 // Dependencies: [709, 2]
 // Exports: subscribe
 
-// Module 10635 (subscribe)
+// Module 10366 (subscribe)
 const result = require("set").fileFinishedImporting("modules/presence_subscriptions/PresenceSubscriptionsActionCreators.tsx");
 
 export const subscribe = function subscribe(subscription) {

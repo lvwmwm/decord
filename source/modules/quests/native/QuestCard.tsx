@@ -1,9 +1,9 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14236
+// Function ID: 14237
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1874, 7068, 5099, 505, 21, 712, 4255, 4070, 4099, 5102, 7074, 11101, 10643, 1474, 9637, 14203, 7654, 6958, 6963, 7095, 589, 9642, 7091, 7066, 9647, 4191, 8381, 3959, 10646, 8756, 8757, 8761, 7096, 10648, 4223, 14229, 1959, 11102, 6908, 1236, 11095, 10653, 14233, 9627, 9644, 9645, 4672, 10068, 8785, 4119, 500, 8891, 4251, 14234, 5288, 14272, 5207, 4677, 691, 14260, 4664, 5824, 14240, 11098, 14273, 4666, 14276, 7660, 10128, 14261, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 7080, 5128, 505, 21, 712, 4285, 4100, 4129, 5131, 7086, 11086, 10374, 1474, 10386, 14237, 7666, 6970, 6975, 7107, 589, 10391, 7103, 7078, 10396, 4221, 10029, 3989, 10403, 9434, 9435, 9439, 7108, 10405, 4253, 14263, 1959, 11087, 6920, 1236, 11080, 10502, 14267, 10376, 10393, 10394, 4701, 9370, 9200, 4149, 500, 9326, 4281, 14268, 5317, 14306, 5236, 4706, 691, 14294, 4693, 8250, 14274, 11083, 14307, 4695, 14310, 7672, 9778, 14295, 2]
 
-// Module 14202 (ESTIMATED_CARD_HEIGHT)
+// Module 14236 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import useAdContentImpressionTrackerProps from "useAdContentImpressionTrackerProps";
 import importAllResult from "useIsMobileQuestDockRenderedBase";
@@ -31,32 +31,32 @@ let c5 = importAllResult;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let result = createCacheKey.experimental_createToken((theme) => {
   theme = theme.theme;
-  const obj = require(4070);
+  const obj = require(4100);
   const tmp = require;
   const internal = importDefault(712).internal;
   const colors = importDefault(712).colors;
-  const semanticColor = internal.resolveSemanticColor(theme, require(4070).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const isThemeDarkResult = require(4070).isThemeDark(theme);
-  return tmp(4099).hexOpacityToRgba(semanticColor, 0);
+  const semanticColor = internal.resolveSemanticColor(theme, require(4100).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
+  const isThemeDarkResult = require(4100).isThemeDark(theme);
+  return tmp(4129).hexOpacityToRgba(semanticColor, 0);
 });
 let result1 = createCacheKey.experimental_createToken((theme) => {
   theme = theme.theme;
-  const isThemeDarkResult = require(4070).isThemeDark(theme);
+  const isThemeDarkResult = require(4100).isThemeDark(theme);
   const internal = importDefault(712).internal;
   const colors = importDefault(712).colors;
   const semanticColor = internal.resolveSemanticColor(theme, isThemeDarkResult ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const obj = require(4070);
+  const obj = require(4100);
   const tmp = require;
   let num = 0.5;
   if (isThemeDarkResult) {
     num = 0.8;
   }
-  return require(4099) /* hexToRgba */.hexOpacityToRgba(semanticColor, num);
+  return require(4129) /* hexToRgba */.hexOpacityToRgba(semanticColor, num);
 });
 let result2 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4070);
+  const obj = require(4100);
   const colors = importDefault(712).colors;
-  return require(4070).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
+  return require(4100).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
 });
 const PX_16 = require("Themes").space.PX_16;
 let obj = { container: null, heroContainer: null, heroImg: null, heroLinearGradientOverlay: null, previewBadge: null, rewardImgContainer: null, heroFooterContainer: null, heroFooterLeftContainer: null, detailsWrapper: null, detailsContainer: null, questName: null, bodyContainer: null, subtitleRow: null, orbWithAmountRow: null, detailsTextContainer: null, buttonContainers: null, equalWidthContainer: null };
@@ -498,12 +498,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 let closure_0 = tmp2;
                 outer1_5.log("Enrolling in quest");
-                outer1_0(9627);
+                outer1_0(10376);
                 let obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
                   if (!outer1_14) {
-                    let START_QUEST = tmp31(7095).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7107).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = outer1_4;
@@ -511,7 +511,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7095).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7107).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -527,7 +527,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = useAdContentImpressionTrackerProps;
-                  v0(14233)(obj);
+                  v0(14267)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

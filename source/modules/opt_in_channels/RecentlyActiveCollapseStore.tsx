@@ -1,9 +1,9 @@
-// Module ID: 6887
-// Function ID: 6888
+// Module ID: 6899
+// Function ID: 6900
 // Name: set
 // Dependencies: [589, 709, 2]
 
-// Module 6887 (set)
+// Module 6899 (set)
 import { PersistedStore } from "initialize";
 import set from "set";
 

@@ -1,18 +1,18 @@
-// Module ID: 9152
-// Function ID: 9153
-// Dependencies: [4461, 9153, 1959, 2]
+// Module ID: 10472
+// Function ID: 10473
+// Dependencies: [4490, 10473, 1959, 2]
 
-// Module 9152
+// Module 10472
 let c3 = "USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkModalActionCreators.tsx");
 
 export default {
   showModal(locationStack, platformType) {
-    let obj = importDefault(4461);
+    let obj = importDefault(4490);
     obj = { locationStack, platformType };
-    obj.pushLazy(require(1959) /* asyncRequireImpl */(9153, dependencyMap.paths), obj, c3);
+    obj.pushLazy(require(1959) /* asyncRequireImpl */(10473, dependencyMap.paths), obj, c3);
   },
   hideModal() {
-    importDefault(4461).popWithKey(c3);
+    importDefault(4490).popWithKey(c3);
   }
 };

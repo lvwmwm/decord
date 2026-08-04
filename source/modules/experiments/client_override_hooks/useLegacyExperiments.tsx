@@ -1,10 +1,10 @@
-// Module ID: 10640
-// Function ID: 10641
+// Module ID: 10371
+// Function ID: 10372
 // Name: parseRegisteredExperiments
-// Dependencies: [32, 19, 4169, 4170, 8004, 4177, 8002, 589, 2]
+// Dependencies: [32, 19, 4199, 4200, 8016, 4207, 8014, 589, 2]
 // Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 10640 (parseRegisteredExperiments)
+// Module 10371 (parseRegisteredExperiments)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "noop";
 import getHash from "getHash";

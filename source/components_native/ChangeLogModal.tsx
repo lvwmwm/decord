@@ -1,10 +1,10 @@
-// Module ID: 14589
-// Function ID: 14590
+// Module ID: 14623
+// Function ID: 14624
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 676, 1930, 21, 4255, 712, 3967, 698, 8450, 14590, 5207, 8477, 1236, 4783, 8649, 9789, 1297, 7988, 1474, 7989, 1481, 5209, 3837, 7990, 4251, 4461, 5636, 2]
+// Dependencies: [19, 17, 676, 1930, 21, 4285, 712, 3997, 698, 8766, 14624, 5236, 8792, 1236, 4812, 8979, 9882, 1297, 8000, 1474, 8001, 1481, 5238, 3867, 8002, 4281, 4490, 5665, 2]
 // Exports: default
 
-// Module 14589 (ChangeLogScreen)
+// Module 14623 (ChangeLogScreen)
 import importAllResult from "useWindowDimensions";
 import { View } from "Button";
 import { AnalyticEvents } from "ME";
@@ -129,7 +129,7 @@ class ChangeLogScreen {
   }
 }
 function hideChangeLog() {
-  importDefault(4461).popWithKey(CHANGELOG_MODAL_KEY);
+  importDefault(4490).popWithKey(CHANGELOG_MODAL_KEY);
 }
 let c3 = importAllResult;
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -161,7 +161,7 @@ ListItem.prototype["render"] = function render() {
   const items = [callback(View, obj), ];
   obj = { style: tmp.listText, children: null };
   let childrenResult = children;
-  if (typeof children !== "HAS_APPLICATION") {
+  if (typeof children !== "three_button_mouse") {
     const obj1 = { style: null };
     obj1[0] = tmp.listText;
     childrenResult = children(obj1);
@@ -287,7 +287,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(importDefault(14590), obj1), ];
+      const items = [callback(importDefault(14624), obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };
@@ -296,8 +296,8 @@ prototype["renderVideo"] = function renderVideo() {
         const _HermesInternal = HermesInternal;
         obj3[0] = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
         obj2[1] = obj3;
-        tmp6Result = tmp6(tmp7(5207), obj2);
-        const tmp7Result = tmp7(5207);
+        tmp6Result = tmp6(tmp7(5236), obj2);
+        const tmp7Result = tmp7(5236);
       }
       items[1] = tmp6Result;
       obj[2] = items;
@@ -320,21 +320,21 @@ prototype["renderVideo"] = function renderVideo() {
   obj6[8] = function onPress() {
     self.track(outer1_5.CHANGE_LOG_VIDEO_INTERACTED);
   };
-  const items1 = [callback(importDefault(8477), obj6), ];
+  const items1 = [callback(importDefault(8792), obj6), ];
   let tmp12Result = null;
   if (null != video) {
     const obj7 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: null, onPress: null, children: null };
     obj7[2] = tmp.videoOverlay;
     obj7[3] = self.playVideo;
     const obj8 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: null, onPress: null, style: null, iconSize: null, iconStyle: null };
-    obj8[2] = tmp15(9789);
+    obj8[2] = tmp15(9882);
     obj8[3] = self.playVideo;
     obj8[4] = tmp.playButton;
     obj8[5] = tmp18(1297).IconSizes.CUSTOM;
     obj8[6] = tmp.playIcon;
-    obj7[4] = tmp12(tmp15(8649), obj8);
-    tmp12Result = tmp12(tmp18(4783).PressableOpacity, obj7);
-    const tmp15Result = tmp15(8649);
+    obj7[4] = tmp12(tmp15(8979), obj8);
+    tmp12Result = tmp12(tmp18(4812).PressableOpacity, obj7);
+    const tmp15Result = tmp15(8979);
   }
   items1[1] = tmp12Result;
   obj5[2] = items1;
@@ -346,7 +346,7 @@ prototype["render"] = function render() {
   const merged = Object.assign(this.props);
   obj.video = this.renderVideo();
   obj.onScroll = this.handleScroll;
-  return callback(importDefault(7988), obj);
+  return callback(importDefault(8000), obj);
 };
 ChangeLog.contextType = require("ManaContext").ThemeContext;
 let obj3 = { width: 7, height: 7, borderRadius: 3.5, marginRight: 13, marginTop: 7, backgroundColor: require("Themes").colors.BACKGROUND_MOD_STRONG };
@@ -363,7 +363,7 @@ export default function ChangelogModal() {
     obj[0] = obj;
     return obj;
   }, []);
-  return callback(require(5636) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
+  return callback(require(5665) /* NavigationStack */.Navigator, { screens, initialRouteName: "CHANGELOG" });
 };
 export { ListItem };
 export { ChangeLogScreen };

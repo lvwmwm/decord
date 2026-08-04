@@ -1,10 +1,10 @@
-// Module ID: 10894
-// Function ID: 10895
+// Module ID: 10747
+// Function ID: 10748
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4316, 21, 500, 4255, 712, 3959, 10895, 7787, 4703, 1236, 4781, 2]
+// Dependencies: [19, 17, 4345, 21, 500, 4285, 712, 3989, 10748, 7799, 4732, 1236, 4810, 2]
 // Exports: default
 
-// Module 10894 (VolumeSlider)
+// Module 10747 (VolumeSlider)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources";
@@ -40,7 +40,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   ({ onValueChange: require, onResponderGrant } = maxTrackTintColor);
   const merged = Object.assign(maxTrackTintColor, Object.create(null));
   const tmp4 = callback2();
-  let obj = require(3959) /* map */;
+  let obj = require(3989) /* map */;
   let minTrackColor = merged.minTrackColor;
   if (minTrackColor == null) {
     minTrackColor = obj.useToken(importDefault(712).colors.BACKGROUND_BRAND);
@@ -48,9 +48,9 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: items, children: null };
   items = [tmp4.volumerSlider, maxTrackTintColor.style];
   obj = { style: tmp4.leftIcon };
-  const items1 = [callback(require(10895) /* VoiceXIcon */.VoiceXIcon, obj), , ];
+  const items1 = [callback(require(10748) /* VoiceXIcon */.VoiceXIcon, obj), , ];
   const obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
-  let tmp5Result = tmp5(4703);
+  let tmp5Result = tmp5(4732);
   obj1[1] = tmp5Result.amplitudeToPerceptual(value);
   obj1[3] = maxVolume;
   obj1[4] = minTrackColor;
@@ -69,8 +69,8 @@ export default function VolumeSlider(maxTrackTintColor) {
     onResponderGrant = fn;
   }
   obj1[8] = onResponderGrant;
-  items1[1] = callback(importDefault(7787), obj1);
-  items1[2] = callback(require(4781) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp4.rightIcon });
+  items1[1] = callback(importDefault(7799), obj1);
+  items1[2] = callback(require(4810) /* VoiceNormalIcon */.VoiceNormalIcon, { style: tmp4.rightIcon });
   obj[1] = items1;
   return closure_6(View, obj);
 };

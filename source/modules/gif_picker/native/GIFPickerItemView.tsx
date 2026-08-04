@@ -1,10 +1,10 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 9864
+// Function ID: 9865
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4255, 9760, 712, 1844, 4223, 9772, 1959, 1236, 4783, 5207, 2]
+// Dependencies: [19, 17, 21, 4285, 9853, 712, 1844, 4253, 9865, 1959, 1236, 4812, 5236, 2]
 // Exports: default
 
-// Module 9771 (GIFPickerItemView)
+// Module 9864 (GIFPickerItemView)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,7 +14,7 @@ const require = arg1;
 let c3 = importAllResult;
 let closure_6 = createCacheKey.createStyles((height) => {
   let obj = { container: null, gifImage: null, gifImageSelected: null };
-  obj = { paddingBottom: require(9760) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(9760) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(712).radii.xs, width: "100%", height, flex: 1 };
+  obj = { paddingBottom: require(9853) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingHorizontal: require(9853) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING / 2, borderRadius: importDefault(712).radii.xs, width: "100%", height, flex: 1 };
   obj[0] = obj;
   obj = { backgroundColor: importDefault(712).colors.BORDER_SUBTLE, borderRadius: importDefault(712).radii.xs, flex: 1 };
   obj[1] = obj;

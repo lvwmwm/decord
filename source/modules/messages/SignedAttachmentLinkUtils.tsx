@@ -1,10 +1,10 @@
-// Module ID: 9759
-// Function ID: 9760
+// Module ID: 9661
+// Function ID: 9662
 // Name: shouldRefreshAttachmentUrl
-// Dependencies: [5, 676, 687, 4286, 1467, 530, 2]
+// Dependencies: [5, 676, 687, 4316, 1467, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9759 (shouldRefreshAttachmentUrl)
+// Module 9661 (shouldRefreshAttachmentUrl)
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 import set from "set";
@@ -334,7 +334,7 @@ let result = set.fileFinishedImporting("modules/messages/SignedAttachmentLinkUti
 
 export { isAttachmentUrl };
 export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachmentUrl(toURLSafeResult) {
-  return require(4286) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
+  return require(4316) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
   toURLSafeResult = importDefault(1467).toURLSafe(toURLSafeResult);

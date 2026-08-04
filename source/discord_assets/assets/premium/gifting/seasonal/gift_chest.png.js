@@ -1,9 +1,9 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12065
+// Function ID: 12066
 // Name: metadata
 // Dependencies: [2]
 
-// Module 12008 (metadata)
+// Module 12065 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_chest.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/8eaca45c6e2ef4ab42d58f5b73f4855f5dbd119f6525381774fa6c2ffd0aba30.png";

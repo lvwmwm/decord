@@ -1,9 +1,9 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 9051
+// Function ID: 9052
 // Name: sum
-// Dependencies: [1372, 687, 7202, 3, 6814, 4265, 2]
+// Dependencies: [1372, 687, 7214, 3, 6826, 4295, 2]
 
-// Module 11923 (sum)
+// Module 9051 (sum)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import "enqueue";
 
@@ -22,8 +22,8 @@ class InviteQueue extends tmp4 {
 const prototype = InviteQueue.prototype;
 prototype["_sendInvite"] = function _sendInvite(channel, inviteKey, _location, inviteAnalyticsMetadata, ensureGuildLoaded) {
   const importDefault = ensureGuildLoaded;
-  const obj = importDefault(6814);
-  importDefault(6814).sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata).then(() => callback(null, true), () => callback(null, false));
+  const obj = importDefault(6826);
+  importDefault(6826).sendInvite(channel.id, inviteKey, _location, inviteAnalyticsMetadata).then(() => callback(null, true), () => callback(null, false));
 };
 function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, dependencyMap, arg8) {
   let self = this;
@@ -36,8 +36,8 @@ function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, depende
   if (self.GROUP_DM !== type) {
     if (tmp.CHANNEL !== type) {
       if (tmp.USER === type) {
-        const obj = inviteAnalyticsMetadata(4265);
-        inviteAnalyticsMetadata(4265).ensurePrivateChannel(location.user.id).then((arg0) => {
+        const obj = inviteAnalyticsMetadata(4295);
+        inviteAnalyticsMetadata(4295).ensurePrivateChannel(location.user.id).then((arg0) => {
           const channel = sum.getChannel(arg0);
           if (null != channel) {
             self._sendInvite(channel, _location.inviteKey, _location, inviteAnalyticsMetadata, sum);
@@ -45,7 +45,7 @@ function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, depende
             sum(null, false);
           }
         }, () => sum(null, false));
-        const ensurePrivateChannelResult = inviteAnalyticsMetadata(4265).ensurePrivateChannel(location.user.id);
+        const ensurePrivateChannelResult = inviteAnalyticsMetadata(4295).ensurePrivateChannel(location.user.id);
       }
     }
   }

@@ -1,9 +1,9 @@
-// Module ID: 13591
-// Function ID: 13592
+// Module ID: 13625
+// Function ID: 13626
 // Name: items2
-// Dependencies: [2549, 13592, 13593, 2]
+// Dependencies: [2579, 13626, 13627, 2]
 
-// Module 13591 (items2)
+// Module 13625 (items2)
 let obj = { badge: true, visibility: "popup", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: false, sound: false };
@@ -81,12 +81,14 @@ const items8 = [require("NotifSettings").NotifSettings.GAMING_LOW, require("Noti
 obj30[require("NotifTypes").NotifTypes.FRIEND_GAMING_ACTIVITY_PUSH] = items8;
 const items9 = [require("NotifSettings").NotifSettings.GAMING_LOW, require("NotifSettings").NotifSettings.GAMING_DEFAULT];
 obj30[require("NotifTypes").NotifTypes.FRIENDS_PLAYING_GAME] = items9;
-const items10 = [require("NotifSettings").NotifSettings.SYSTEM];
-obj30[require("NotifTypes").NotifTypes.PARENTAL_CONSENT_FINAL_WARNING] = items10;
-const items11 = [require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT];
-obj30[require("NotifTypes").NotifTypes.CUSTOM_STATUS_UPDATE] = items11;
+const items10 = [require("NotifSettings").NotifSettings.GAMING_LOW, require("NotifSettings").NotifSettings.GAMING_DEFAULT];
+obj30[require("NotifTypes").NotifTypes.FRIENDS_PLAYING_TRENDING_GAME] = items10;
+const items11 = [require("NotifSettings").NotifSettings.SYSTEM];
+obj30[require("NotifTypes").NotifTypes.PARENTAL_CONSENT_FINAL_WARNING] = items11;
 const items12 = [require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT];
-obj30[require("NotifTypes").NotifTypes.PROFILE_UPDATES_NOTIFICATION] = items12;
+obj30[require("NotifTypes").NotifTypes.CUSTOM_STATUS_UPDATE] = items12;
+const items13 = [require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_LOW, require("NotifSettings").NotifSettings.FRIEND_ACTIVITY_DEFAULT];
+obj30[require("NotifTypes").NotifTypes.PROFILE_UPDATES_NOTIFICATION] = items13;
 const obj29 = { title: require("messagesProxy").zJlwvV, id: require("NotifSettings").NotifSettings.SYSTEM, string_id: "systemMessages", category: "444_other", behavior: obj, systemOnly: true };
 const result = require("NotifTypes").fileFinishedImporting("modules/notifications/NotificationSettingsConstants.tsx");
 

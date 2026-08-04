@@ -1,7 +1,7 @@
 // Module ID: 11306
 // Function ID: 11307
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4255, 712, 1297, 11307, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1297, 11307, 2]
 // Exports: default
 
 // Module 11306 (ForumPostPinIcon)

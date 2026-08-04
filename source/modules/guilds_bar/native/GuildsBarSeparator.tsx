@@ -1,9 +1,9 @@
-// Module ID: 15309
-// Function ID: 15310
+// Module ID: 15340
+// Function ID: 15341
 // Name: GuildsBarHomeDrawerSeparator
-// Dependencies: [19, 21, 4255, 712, 15020, 4116, 4665, 7807, 3959, 5634, 2]
+// Dependencies: [19, 21, 4285, 712, 15054, 4146, 4694, 7819, 3989, 5663, 2]
 
-// Module 15309 (GuildsBarHomeDrawerSeparator)
+// Module 15340 (GuildsBarHomeDrawerSeparator)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ const require = arg1;
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
   let panelX;
-  let obj = guildItemSize(15020);
+  let obj = guildItemSize(15054);
   panelX = obj.useHomeDrawerState().panelX;
   const tmp = callback(guildItemSize);
   const fn = function n() {
@@ -21,13 +21,13 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
     obj[0] = guildItemSize(outer1_2[6]).withSpring(bound, guildItemSize(outer1_2[4]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: guildItemSize(4665).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15020).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: guildItemSize(4694).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15054).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_5;
-  const animatedStyle = guildItemSize(4116).useAnimatedStyle(fn);
+  const animatedStyle = guildItemSize(4146).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelX(7807), { style });
+  return jsx(panelX(7819), { style });
 }
 let closure_4 = createCacheKey.createStyles((maxWidth) => {
   let obj = { separator: null };
@@ -37,7 +37,7 @@ let closure_4 = createCacheKey.createStyles((maxWidth) => {
 });
 let closure_5 = { code: "function GuildsBarSeparatorTsx1(){const{withSpring,guildItemSize,panelX,HOME_DRAWER_FLING_PHYSICS}=this.__closure;return{maxWidth:withSpring(Math.max(guildItemSize,panelX.get()+guildItemSize),HOME_DRAWER_FLING_PHYSICS)};}" };
 const memoResult = require("noop").memo(function GuildsBarSeparator() {
-  let obj = require(3959) /* map */;
+  let obj = require(3989) /* map */;
   const token = obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp2 = importDefault;
   const tmp4 = callback(token);
@@ -48,7 +48,7 @@ const memoResult = require("noop").memo(function GuildsBarSeparator() {
   } else {
     obj = { style: null };
     obj[0] = tmp4.separator;
-    tmp5Result = tmp5(tmp2(5634), obj);
+    tmp5Result = tmp5(tmp2(5663), obj);
   }
   return tmp5Result;
 });

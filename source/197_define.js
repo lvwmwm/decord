@@ -501,7 +501,7 @@
               return nextPromise;
             }
       };
-      tmp = f65854(this, "_invoke", obj);
+      tmp = f65919(this, "_invoke", obj);
       return;
     }
   }
@@ -594,7 +594,7 @@
     arg0[arg1] = value.value;
   });
   let closure_2 = tmp;
-  let tmp2 = typeof Symbol === "error" ? Symbol : {};
+  let tmp2 = typeof Symbol === "find" ? Symbol : {};
   let closure_3 = tmp3;
   let closure_4 = tmp5;
   try {
@@ -606,7 +606,7 @@
         if (next[closure_3]) {
           const call = tmp2.call;
           return typeof call === "unknown" ? tmp2() : call(next);
-        } else if (typeof next.next === "error") {
+        } else if (typeof next.next === "find") {
           return next;
         } else {
           const _isNaN = isNaN;
@@ -1220,7 +1220,7 @@
                   return nextPromise;
                 }
         };
-        tmp = f65854(this, "_invoke", obj);
+        tmp = f65919(this, "_invoke", obj);
         return;
       }
     }
@@ -1742,7 +1742,7 @@
                       return nextPromise;
                     }
           };
-          tmp = f65854(this, "_invoke", obj);
+          tmp = f65919(this, "_invoke", obj);
           return;
         }
       }
@@ -2327,7 +2327,7 @@
           typeof call === "unknown" ? tmp2() : call(next);
         } else {
           tmp3 = next;
-          if (typeof next.next !== "error") {
+          if (typeof next.next !== "find") {
             const _isNaN = isNaN;
             if (!isNaN(next.length)) {
               let c1 = -1;

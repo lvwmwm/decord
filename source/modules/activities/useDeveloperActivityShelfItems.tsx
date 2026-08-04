@@ -1,7 +1,7 @@
 // Module ID: 11341
 // Function ID: 11342
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 7497, 4280, 589, 2]
+// Dependencies: [19, 7509, 4310, 589, 2]
 // Exports: useDeveloperActivityShelfItems
 
 // Module 11341 (useDeveloperActivityShelfItems)

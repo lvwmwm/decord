@@ -1,10 +1,10 @@
-// Module ID: 11989
-// Function ID: 11990
+// Module ID: 12046
+// Function ID: 12047
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1874, 9279, 10282, 589, 10587, 2]
+// Dependencies: [1874, 9587, 10260, 589, 10259, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 11989 (useInappropriateConversationsTiers)
+// Module 12046 (useInappropriateConversationsTiers)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 
@@ -12,12 +12,12 @@ const require = arg1;
 const result = require("InappropriateConversationExperiment").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
 
 export const useInappropriateConversationsTiers = function useInappropriateConversationsTiers(channel) {
-  let obj = require(10282) /* InappropriateConversationExperiment */;
+  let obj = require(10260) /* InappropriateConversationExperiment */;
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning({ location: "context-menu-item" });
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj2 = require(589) /* initialize */;
-  const inappropriateConversationBannerForChannel = require(10587) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
+  const inappropriateConversationBannerForChannel = require(10259) /* useInappropriateConversationBannerForChannel */.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
   let isStaffResult;
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();

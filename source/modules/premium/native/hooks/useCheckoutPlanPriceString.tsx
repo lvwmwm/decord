@@ -1,10 +1,10 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7254
+// Function ID: 7255
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 6785, 6768, 500, 2]
+// Dependencies: [19, 6797, 6780, 500, 2]
 // Exports: useCheckoutPlanPriceString
 
-// Module 7242 (useCheckoutPlanPriceString)
+// Module 7254 (useCheckoutPlanPriceString)
 import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 

@@ -1,9 +1,9 @@
-// Module ID: 14405
-// Function ID: 14406
+// Module ID: 14439
+// Function ID: 14440
 // Name: toggle
-// Dependencies: [1302, 7880, 589, 14285, 10272, 1236, 1348, 2]
+// Dependencies: [1302, 7892, 589, 14319, 10361, 1236, 1348, 2]
 
-// Module 14405 (toggle)
+// Module 14439 (toggle)
 import handleThemeChange from "handleThemeChange";
 import createToggle from "createToggle";
 
@@ -22,7 +22,7 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   onValueChange: function onSameAsDeviceThemeValueChange(arg0) {
-    const obj = require(14285) /* handleSaveTheme */;
+    const obj = require(14319) /* handleSaveTheme */;
     if (arg0) {
       const result = obj.enableSameAsDeviceTheme();
     } else {

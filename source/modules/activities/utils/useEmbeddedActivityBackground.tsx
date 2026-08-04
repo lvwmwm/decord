@@ -1,10 +1,10 @@
-// Module ID: 10792
-// Function ID: 10793
+// Module ID: 10643
+// Function ID: 10644
 // Name: useEmbeddedActivityBackground
-// Dependencies: [32, 19, 8039, 2]
+// Dependencies: [32, 19, 8051, 2]
 // Exports: default
 
-// Module 10792 (useEmbeddedActivityBackground)
+// Module 10643 (useEmbeddedActivityBackground)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

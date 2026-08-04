@@ -1,10 +1,10 @@
-// Module ID: 10925
-// Function ID: 10926
+// Module ID: 10794
+// Function ID: 10795
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 4302, 589, 9024, 2]
+// Dependencies: [19, 4332, 589, 9077, 2]
 // Exports: default
 
-// Module 10925 (useMuteAwareLocalVolume)
+// Module 10794 (useMuteAwareLocalVolume)
 import noop from "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 

@@ -1,10 +1,10 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 15027
+// Function ID: 15028
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: [19, 14944, 14945, 14942, 4107, 4106, 2]
+// Dependencies: [19, 14978, 14979, 14976, 4137, 4136, 2]
 // Exports: useIsHCaptchaModalOpenTracking
 
-// Module 14993 (useIsHCaptchaModalOpenTracking)
+// Module 15027 (useIsHCaptchaModalOpenTracking)
 import noop from "noop";
 import { doesRegistrationHaveIdentityType as closure_3 } from "useRegistrationUIStore";
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
@@ -16,7 +16,7 @@ const require = arg1;
 const result = require("RegistrationTransitionActionTypes").fileFinishedImporting("modules/auth/native/components/utils/useIsHCaptchaModalOpenTracking.tsx");
 
 export const useIsHCaptchaModalOpenTracking = function useIsHCaptchaModalOpenTracking() {
-  context = React.useContext(context(14942).TrackRegistrationContext);
+  context = React.useContext(context(14976).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = React.useLayoutEffect(() => {
     const rootNavigationRef = context(outer1_1[4]).getRootNavigationRef();

@@ -1,10 +1,10 @@
-// Module ID: 9195
-// Function ID: 9196
+// Module ID: 10441
+// Function ID: 10442
 // Name: ChatSmileIcon
-// Dependencies: [19, 21, 712, 3958, 9196, 2]
+// Dependencies: [19, 21, 712, 3988, 10442, 2]
 // Exports: ChatSmileIcon
 
-// Module 9195 (ChatSmileIcon)
+// Module 10441 (ChatSmileIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ChatSmileIcon = function ChatSmileIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9196) /* registerAsset */;
+  obj[0] = require(10442) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

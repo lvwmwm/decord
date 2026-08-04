@@ -1,10 +1,10 @@
-// Module ID: 5920
-// Function ID: 5921
+// Module ID: 5930
+// Function ID: 5931
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 5920 (apexExperiment)
+// Module 5930 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

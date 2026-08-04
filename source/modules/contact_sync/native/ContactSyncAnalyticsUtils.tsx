@@ -1,10 +1,10 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 11950
+// Function ID: 11951
 // Name: Steps
-// Dependencies: [1874, 11884, 11885, 676, 11887, 698, 11890, 2]
+// Dependencies: [1874, 11945, 11946, 676, 11948, 698, 11951, 2]
 // Exports: trackFlowEnd, trackFlowStart, trackFlowStep
 
-// Module 11889 (Steps)
+// Module 11950 (Steps)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { getIsOnboarding } from "ContactSyncModes";
 import { ContactPermissions } from "ContactSyncLandingPage";
@@ -29,7 +29,7 @@ export const trackFlowStart = function trackFlowStart(arg0) {
     phone = currentUser.phone;
   }
   let closure_1 = null != phone;
-  obj = _require(11887);
+  obj = _require(11948);
   const result = obj.checkContactPermissions();
   result.then((arg0) => {
     let tmp = null;
@@ -76,8 +76,8 @@ export const trackFlowStep = function trackFlowStep(LANDING, skip, back, locatio
   if (tmp) {
     obj = { skip: null };
     obj[0] = skip;
-    require(11890) /* trackNUFStep */.trackNUFStep(closure_8, LANDING, obj);
-    const obj3 = require(11890) /* trackNUFStep */;
+    require(11951) /* trackNUFStep */.trackNUFStep(closure_8, LANDING, obj);
+    const obj3 = require(11951) /* trackNUFStep */;
   }
   closure_8 = LANDING;
 };

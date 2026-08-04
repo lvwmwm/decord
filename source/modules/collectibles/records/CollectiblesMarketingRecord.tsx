@@ -1,9 +1,9 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6932
+// Function ID: 6933
 // Name: fromServer
-// Dependencies: [6921, 6923, 6924, 6925, 6922, 2]
+// Dependencies: [6933, 6935, 6936, 6937, 6934, 2]
 
-// Module 6920 (fromServer)
+// Module 6932 (fromServer)
 import { CollectiblesMarketingBadgeRecord as closure_2 } from "fromServer";
 import { CollectiblesMarketingBannerRecord as closure_3 } from "fromServer";
 import { CollectiblesMarketingCoachmarkRecord as closure_4 } from "fromServer";
@@ -24,7 +24,7 @@ prototype["fromServer"] = function fromServer(marketings) {
     marketings = {};
   }
   const entries = Object.entries(marketings);
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);

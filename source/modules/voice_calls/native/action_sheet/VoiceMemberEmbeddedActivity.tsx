@@ -1,10 +1,10 @@
-// Module ID: 12924
-// Function ID: 12925
+// Module ID: 12958
+// Function ID: 12959
 // Name: XSMALL
-// Dependencies: [32, 19, 17, 1371, 1372, 1874, 1301, 5310, 21, 1297, 4255, 712, 5587, 1351, 589, 3873, 10683, 1474, 7600, 10682, 4783, 1236, 4251, 10791, 4667, 2]
+// Dependencies: [32, 19, 17, 1371, 1372, 1874, 1301, 5339, 21, 1297, 4285, 712, 5616, 1351, 589, 3903, 10533, 1474, 7612, 10532, 4812, 1236, 4281, 10642, 4696, 2]
 // Exports: calculateActivityRowHeight, default
 
-// Module 12924 (XSMALL)
+// Module 12958 (XSMALL)
 import _slicedToArray from "_slicedToArray";
 import "handlePressJoinActivity";
 import get_ActivityIndicator from "useWindowDimensions";

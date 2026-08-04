@@ -1,10 +1,10 @@
-// Module ID: 10943
-// Function ID: 10944
+// Module ID: 10812
+// Function ID: 10813
 // Name: Text
-// Dependencies: [19, 17, 1372, 1862, 4327, 10944, 4341, 1874, 4316, 21, 4255, 4099, 712, 1297, 589, 4446, 10946, 10945, 709, 5243, 4666, 1236, 2]
+// Dependencies: [19, 17, 1372, 1862, 4356, 10813, 4370, 1874, 4345, 21, 4285, 4129, 712, 1297, 589, 4475, 10815, 10814, 709, 5272, 4695, 1236, 2]
 // Exports: default
 
-// Module 10943 (Text)
+// Module 10812 (Text)
 import importAllResult from "SafeAreaPaddingView";
 import get_ActivityIndicator from "open";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -59,7 +59,7 @@ function ObjectKV(obj) {
         value = iter.value;
       }
       value = obj;
-      if (typeof value !== "SENTRY_RELEASE") {
+      if (typeof value !== "V") {
         value = obj.at(-1).value;
       }
     }
@@ -76,7 +76,7 @@ function ObjectKV(obj) {
     }
     const obj1 = { style: row.row, children: null };
     const items = [tmp, ": ", ];
-    if (typeof outer1_17 !== "error") {
+    if (typeof outer1_17 !== "find") {
       HermesBuiltin.throwTypeError();
     }
     items[2] = "" + value;
@@ -103,7 +103,7 @@ function RTCDebugGeneral() {
   if (null != stateFromStores) {
     name = stateFromStores.name;
   }
-  obj = { title: "general", children: tmp5(ObjectKV, { obj: { guild: obj, channel: { id: channelId, name: channelId(4446)(stateFromStores1) } } }) };
+  obj = { title: "general", children: tmp5(ObjectKV, { obj: { guild: obj, channel: { id: channelId, name: channelId(4475)(stateFromStores1) } } }) };
   obj[1] = name;
   return closure_14(Section, obj);
 }
@@ -228,7 +228,7 @@ export default function RTCDebugOverlay(arg0) {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
     callback(table[17]).open();
-    return () => callback(709).wait(callback2(10945).close);
+    return () => callback(709).wait(callback2(10814).close);
   }, []);
   let obj = { top: true, left: true, right: true, bottom: true, style: items, children: null };
   items = [tmp.container, style];
@@ -243,8 +243,8 @@ export default function RTCDebugOverlay(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj1[1] = onClose;
-  obj[1] = callback(require(4666) /* Button */.Button, obj1);
+  obj[1] = callback(require(4695) /* Button */.Button, obj1);
   items2[1] = callback(closure_5, obj);
   obj[5] = items2;
-  return callback2(require(5243) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(5272) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

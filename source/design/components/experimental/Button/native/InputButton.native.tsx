@@ -1,9 +1,9 @@
-// Module ID: 8551
-// Function ID: 8552
+// Module ID: 8589
+// Function ID: 8590
 // Name: InputButton
-// Dependencies: [109, 19, 17, 21, 4255, 712, 4670, 5899, 4667, 2]
+// Dependencies: [109, 19, 17, 21, 4285, 712, 4699, 5909, 4696, 2]
 
-// Module 8551 (InputButton)
+// Module 8589 (InputButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { Text } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -39,10 +39,10 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
   }
   ({ accessibilityLabel, accessibilityValue, maxFontSizeMultiplier } = size);
   if (undefined === maxFontSizeMultiplier) {
-    maxFontSizeMultiplier = require(4670) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    maxFontSizeMultiplier = require(4699) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmp4 = callback(size, closure_2);
-  let obj = require(5899) /* useInputStyles */;
+  let obj = require(5909) /* useInputStyles */;
   const inputStyles = obj.useInputStyles({ size: str, isRound: undefined !== isRound && isRound, hasLeadingIcon: tmp7 });
   const tmp9 = callback2();
   if (null != icon) {
@@ -89,7 +89,7 @@ const forwardRefResult = require("noop").forwardRef((size, ref) => {
     }
     obj4[3] = value;
     obj2.textElement = <Text style={null} numberOfLines={1} maxFontSizeMultiplier={null}>{null}</Text>;
-    return jsx(require(4667) /* CollapsingText */.BaseTextButton, {});
+    return jsx(require(4696) /* CollapsingText */.BaseTextButton, {});
   }
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("design/components/experimental/Button/native/InputButton.native.tsx");

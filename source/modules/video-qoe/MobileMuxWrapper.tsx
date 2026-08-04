@@ -1,9 +1,9 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14285
+// Function ID: 14286
 // Name: logger
-// Dependencies: [4, 14252, 2]
+// Dependencies: [4, 14286, 2]
 
-// Module 14251 (logger)
+// Module 14285 (logger)
 const logger = new require("log").Logger("MobileMuxWrapper");
 let result = require("set").fileFinishedImporting("modules/video-qoe/MobileMuxWrapper.tsx");
 class MobileMuxWrapper {
@@ -17,7 +17,7 @@ const prototype = MobileMuxWrapper.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
   try {
-    const mobileCustomMuxIntegration = new require(14252) /* logger */.MobileCustomMuxIntegration(self.config);
+    const mobileCustomMuxIntegration = new require(14286) /* logger */.MobileCustomMuxIntegration(self.config);
     self.muxIntegration = mobileCustomMuxIntegration;
     const muxIntegration = self.muxIntegration;
     muxIntegration.initialize();

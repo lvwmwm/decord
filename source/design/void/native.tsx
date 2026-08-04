@@ -1,7 +1,7 @@
 // Module ID: 1297
 // Function ID: 1298
 // Name: Button
-// Dependencies: [1298, 1299, 2, 1300, 13210, 8179, 13211, 13214, 13215, 13216, 13217, 13218, 13219, 4601, 13220, 13222, 8602, 13223, 13224, 13226, 13227, 13228, 13229, 13230, 4668, 12129, 13239, 13241, 13221, 13243, 13245, 13246, 13247, 13248, 13249, 13250, 13251, 7797, 13252, 13304, 13305, 13316, 13317, 13318, 7796, 7765, 4783, 12609, 8649, 9745]
+// Dependencies: [1298, 1299, 2, 1300, 13244, 12480, 13245, 13248, 13249, 13250, 13251, 13252, 13253, 4630, 13254, 13256, 8933, 13257, 13258, 13260, 13261, 13262, 13263, 13264, 4697, 12216, 13273, 13275, 13255, 13277, 13279, 13280, 13281, 13282, 13283, 13284, 13285, 7809, 13286, 13338, 13339, 13350, 13351, 13352, 7808, 7777, 4812, 12643, 8979, 9839]
 
 // Module 1297 (Button)
 const result = require("set").fileFinishedImporting("design/void/native.tsx");
@@ -84,7 +84,7 @@ export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = require("generateBoxSha
 export const NO_ELEVATION_SHADOW_PARAMS = require("generateBoxShadowStyle").NO_ELEVATION_SHADOW_PARAMS;
 export const NitroWheel = require("NitroWheel");
 export const EmptyState = require("EmptyState");
-export const LegacyText = require("module_7797");
+export const LegacyText = require("module_7809");
 export const RNTextInput = require("RNTextInput").RNTextInput;
 export const Badge = require("Badge");
 export const MaskedBadge = require("Badge").MaskedBadge;

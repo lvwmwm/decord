@@ -1,10 +1,10 @@
-// Module ID: 6785
-// Function ID: 6786
+// Module ID: 6797
+// Function ID: 6798
 // Name: context
-// Dependencies: [5, 32, 19, 6786, 6789, 3868, 700, 6790, 12, 3916, 6791, 2]
+// Dependencies: [5, 32, 19, 6798, 6801, 3898, 700, 6802, 12, 3946, 6803, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 6785 (context)
+// Module 6797 (context)
 import isIterable from "isIterable";
 import importAllResult from "noop";
 import createFromOrder from "createFromOrder";
@@ -21,14 +21,14 @@ export const NativeCheckoutStoreContextOrNull = context;
 export const useNativeCheckoutStore = function useNativeCheckoutStore(arg0) {
   let shallow = arg1;
   if (arg1 === undefined) {
-    shallow = require(3868) /* isIterable */.shallow;
+    shallow = require(3898) /* isIterable */.shallow;
   }
   return callback()(arg0, shallow);
 };
 export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNull(arg0) {
   let shallow = arg1;
   if (arg1 === undefined) {
-    shallow = require(3868) /* isIterable */.shallow;
+    shallow = require(3898) /* isIterable */.shallow;
   }
   context = importAllResult.useContext(context);
   let contextResult = null;
@@ -560,6 +560,6 @@ export const createNativeStore = function createNativeStore(arg0) {
     };
     obj[12] = _runRecreateOrder;
     return obj;
-  }, require(3868) /* isIterable */.shallow);
+  }, require(3898) /* isIterable */.shallow);
 };
 export const NativeCheckoutStoreContext = importDefaultResultResult[0];

@@ -1,10 +1,10 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 10892
+// Function ID: 10893
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [1372, 1862, 3883, 4271, 4280, 676, 10680, 589, 1236, 2]
+// Dependencies: [1372, 1862, 3913, 4301, 4310, 676, 10530, 589, 1236, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 11014 (getEmbeddedActivityLaunchability)
+// Module 10892 (getEmbeddedActivityLaunchability)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -60,7 +60,7 @@ function getEmbeddedActivityLaunchability(arg0) {
     } else {
       return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS;
     }
-    obj2 = require(10680) /* useIsActivitiesEnabledForCurrentPlatform */;
+    obj2 = require(10530) /* useIsActivitiesEnabledForCurrentPlatform */;
   } else {
     return obj.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_CHANNEL;
   }

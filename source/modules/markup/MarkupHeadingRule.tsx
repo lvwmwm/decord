@@ -1,9 +1,9 @@
-// Module ID: 4712
-// Function ID: 4713
+// Module ID: 4741
+// Function ID: 4742
 // Name: match
-// Dependencies: [3954, 2]
+// Dependencies: [3984, 2]
 
-// Module 4712 (match)
+// Module 4741 (match)
 const require = arg1;
 const re2 = /\n$/;
 let obj = {};
@@ -17,8 +17,8 @@ obj.match = function match(arg0, allowHeading, str) {
         tmp = null;
       }
     }
-    tmp = require(3954) /* t */.anyScopeRegex(/^ *(#{1,3})(?:\s+)([^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
-    const obj = require(3954) /* t */;
+    tmp = require(3984) /* t */.anyScopeRegex(/^ *(#{1,3})(?:\s+)([^\n]+?)#*\s*(?:\n|$)/)(arg0, allowHeading, str);
+    const obj = require(3984) /* t */;
   }
   return tmp;
 };

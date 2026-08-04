@@ -1,9 +1,9 @@
-// Module ID: 5082
-// Function ID: 5083
+// Module ID: 5111
+// Function ID: 5112
 // Name: acknowledge
-// Dependencies: [4140, 12, 2]
+// Dependencies: [4170, 12, 2]
 
-// Module 5082 (acknowledge)
+// Module 5111 (acknowledge)
 class GuildMemberRequestState {
   constructor(arg0, arg1) {
     closure_0 = global;
@@ -125,7 +125,7 @@ prototype2["_getGuildState"] = function _getGuildState(_guildId) {
   const self = this;
   let tmp = this._guildStates[_guildId];
   if (null == tmp) {
-    if (typeof GuildMemberRequestState !== "error") {
+    if (typeof GuildMemberRequestState !== "find") {
       HermesBuiltin.throwTypeError();
     }
     let closure_0 = _guildId;

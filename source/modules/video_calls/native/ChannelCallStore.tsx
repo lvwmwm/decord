@@ -1,10 +1,10 @@
-// Module ID: 10388
-// Function ID: 10389
+// Module ID: 9655
+// Function ID: 9656
 // Name: VoiceChatDrawerState
-// Dependencies: [19, 1371, 10389, 4280, 4273, 4140, 8478, 644, 705, 709, 4449, 12, 10390, 10391, 10392, 589, 4235, 2]
+// Dependencies: [19, 1371, 9656, 4310, 4303, 4170, 8817, 644, 705, 709, 4478, 12, 9657, 9658, 9659, 589, 4265, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 10388 (VoiceChatDrawerState)
+// Module 9655 (VoiceChatDrawerState)
 import noop from "noop";
 import participantFromServer from "participantFromServer";
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
@@ -77,9 +77,9 @@ export const useIsVoiceChatFocused = function useIsVoiceChatFocused() {
   return voiceChatDrawerState === VoiceChatDrawerState.OPEN || voiceChatDrawerState === VoiceChatDrawerState.CLOSING;
 };
 export const useChannelCallOrientationHandlers = function useChannelCallOrientationHandlers(isGuildStageVoice) {
-  const tmp2 = importDefault(10390)(isGuildStageVoice);
+  const tmp2 = importDefault(9657)(isGuildStageVoice);
   const require = tmp2;
-  const tmp3 = importDefault(10391)(isGuildStageVoice);
+  const tmp3 = importDefault(9658)(isGuildStageVoice);
   importDefault = tmp3;
   let isGuildStageVoiceResult = isGuildStageVoice.isGuildStageVoice();
   if (isGuildStageVoiceResult) {
@@ -97,7 +97,7 @@ export const useChannelCallOrientationHandlers = function useChannelCallOrientat
   if (currentEmbeddedActivity != null) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  obj = require(10392) /* useIsConnectedToVoiceChannel */;
+  obj = require(9659) /* useIsConnectedToVoiceChannel */;
   const tmp7 = require;
   const tmp8 = applicationId;
   const items = [tmp8];

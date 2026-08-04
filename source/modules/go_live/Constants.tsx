@@ -1,9 +1,9 @@
-// Module ID: 4320
-// Function ID: 4321
+// Module ID: 4349
+// Function ID: 4350
 // Name: StreamIssueReportReasons
-// Dependencies: [4321, 2]
+// Dependencies: [4350, 2]
 
-// Module 4320 (StreamIssueReportReasons)
+// Module 4349 (StreamIssueReportReasons)
 import set from "set";
 
 let set = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"]);

@@ -1,10 +1,10 @@
-// Module ID: 6967
-// Function ID: 6968
+// Module ID: 6979
+// Function ID: 6980
 // Name: hasAttachmentsEmbedsComponentsOrSnapshots
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 6967 (hasAttachmentsEmbedsComponentsOrSnapshots)
+// Module 6979 (hasAttachmentsEmbedsComponentsOrSnapshots)
 const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");
 
 export const hasAttachmentsEmbedsComponentsOrSnapshots = function hasAttachmentsEmbedsComponentsOrSnapshots(message) {

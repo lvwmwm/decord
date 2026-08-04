@@ -1,10 +1,10 @@
-// Module ID: 4586
-// Function ID: 4587
+// Module ID: 4615
+// Function ID: 4616
 // Name: getAnalyticsDataForSKU
-// Dependencies: [4292, 676, 2]
+// Dependencies: [4322, 676, 2]
 // Exports: default
 
-// Module 4586 (getAnalyticsDataForSKU)
+// Module 4615 (getAnalyticsDataForSKU)
 import addApplication from "addApplication";
 import { SKUFeatureTypes } from "ME";
 

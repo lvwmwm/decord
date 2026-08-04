@@ -20,7 +20,7 @@ function addCompilerSafeGetAndSet(prototype) {
   };
   obj = {
     value(__isAnimationDefinition) {
-      if (typeof __isAnimationDefinition !== "HAS_APPLICATION") {
+      if (typeof __isAnimationDefinition !== "three_button_mouse") {
         if (!__isAnimationDefinition.__isAnimationDefinition) {
           obj.value = __isAnimationDefinition(obj.value);
         }
@@ -81,11 +81,11 @@ function makeMutableUI(initialValues) {
   };
   obj._animation = null;
   obj._isReanimatedSharedValue = true;
-  if (typeof hideInternalValueProp !== "error") {
+  if (typeof hideInternalValueProp !== "find") {
     HermesBuiltin.throwTypeError();
   }
   Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-  if (typeof addCompilerSafeGetAndSet !== "error") {
+  if (typeof addCompilerSafeGetAndSet !== "find") {
     HermesBuiltin.throwTypeError();
   }
   obj = {
@@ -97,7 +97,7 @@ function makeMutableUI(initialValues) {
   };
   obj = {
     value(__isAnimationDefinition) {
-      if (typeof __isAnimationDefinition !== "HAS_APPLICATION") {
+      if (typeof __isAnimationDefinition !== "three_button_mouse") {
         if (!__isAnimationDefinition.__isAnimationDefinition) {
           obj.value = __isAnimationDefinition(obj.value);
         }
@@ -158,11 +158,11 @@ export const makeMutable = isJest ? (function makeMutableWeb(prototype) {
     map.delete(arg0);
   };
   obj._isReanimatedSharedValue = true;
-  if (typeof hideInternalValueProp !== "error") {
+  if (typeof hideInternalValueProp !== "find") {
     HermesBuiltin.throwTypeError();
   }
   Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-  if (typeof addCompilerSafeGetAndSet !== "error") {
+  if (typeof addCompilerSafeGetAndSet !== "find") {
     HermesBuiltin.throwTypeError();
   }
   obj = {
@@ -174,7 +174,7 @@ export const makeMutable = isJest ? (function makeMutableWeb(prototype) {
   };
   obj = {
     value(__isAnimationDefinition) {
-      if (typeof __isAnimationDefinition !== "HAS_APPLICATION") {
+      if (typeof __isAnimationDefinition !== "three_button_mouse") {
         if (!__isAnimationDefinition.__isAnimationDefinition) {
           obj.value = __isAnimationDefinition(obj.value);
         }
@@ -260,11 +260,11 @@ export const makeMutable = isJest ? (function makeMutableWeb(prototype) {
     throw reanimatedError;
   };
   obj._isReanimatedSharedValue = true;
-  if (typeof hideInternalValueProp !== "error") {
+  if (typeof hideInternalValueProp !== "find") {
     HermesBuiltin.throwTypeError();
   }
   Object.defineProperty(obj, "_value", { configurable: false, enumerable: false });
-  if (typeof addCompilerSafeGetAndSet !== "error") {
+  if (typeof addCompilerSafeGetAndSet !== "find") {
     HermesBuiltin.throwTypeError();
   }
   Object.defineProperties(obj, {
@@ -277,7 +277,7 @@ export const makeMutable = isJest ? (function makeMutableWeb(prototype) {
     },
     set: {
       value(__isAnimationDefinition) {
-        if (typeof __isAnimationDefinition !== "HAS_APPLICATION") {
+        if (typeof __isAnimationDefinition !== "three_button_mouse") {
           if (!__isAnimationDefinition.__isAnimationDefinition) {
             obj.value = __isAnimationDefinition(obj.value);
           }

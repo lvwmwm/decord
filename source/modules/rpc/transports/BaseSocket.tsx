@@ -1,9 +1,9 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 10553
+// Function ID: 10554
 // Name: checkRpcVersion
-// Dependencies: [676, 12, 10693, 2]
+// Dependencies: [676, 12, 10543, 2]
 
-// Module 10703 (checkRpcVersion)
+// Module 10553 (checkRpcVersion)
 import ME from "ME";
 
 let c3;
@@ -30,7 +30,7 @@ class BaseSocket {
   }
 }
 BaseSocket.prototype["checkRpcVersion"] = function checkRpcVersion(version) {
-  let tmp2 = importDefault(10693);
+  let tmp2 = importDefault(10543);
   tmp2 = new tmp2({ closeCode: constants.INVALID_VERSION }, "Invalid Version: " + version);
   throw tmp2;
 };

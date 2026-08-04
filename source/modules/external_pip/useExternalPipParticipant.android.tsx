@@ -1,10 +1,10 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15950
+// Function ID: 15951
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4268, 1218, 4302, 4327, 4273, 589, 2]
+// Dependencies: [32, 19, 4298, 1218, 4332, 4356, 4303, 589, 2]
 // Exports: default
 
-// Module 15917 (useExternalPipParticipant)
+// Module 15950 (useExternalPipParticipant)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";
@@ -62,7 +62,7 @@ export default function useExternalPipParticipant() {
       id1 = tmp4.id;
     }
     if (focusedParticipantStreamId.current !== id1) {
-      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "ct", focusedParticipantType: null };
+      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "HermesInternal", focusedParticipantType: null };
       obj[2] = stateFromStores1.current;
     } else {
       let type1;
@@ -256,7 +256,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "bottom" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "call" };
   }, items4);
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {

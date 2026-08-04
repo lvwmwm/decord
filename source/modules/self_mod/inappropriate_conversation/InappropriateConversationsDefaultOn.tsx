@@ -1,10 +1,10 @@
-// Module ID: 10284
-// Function ID: 10285
+// Module ID: 10262
+// Function ID: 10263
 // Name: InappropriateConversationsDefaultOn
 // Dependencies: [1349, 2]
 // Exports: isEligibleForInappropriateConversationDefaultOn, useIsEligibleForInappropriateConversationDefaultOn
 
-// Module 10284 (InappropriateConversationsDefaultOn)
+// Module 10262 (InappropriateConversationsDefaultOn)
 const tmp2 = require("getUnitId")({ name: "2026-04-inappropriate-conversations-default-on", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let c0 = tmp2;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsDefaultOn.tsx");

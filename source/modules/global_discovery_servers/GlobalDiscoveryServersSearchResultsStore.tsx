@@ -1,9 +1,9 @@
-// Module ID: 12840
-// Function ID: 12841
+// Module ID: 12874
+// Function ID: 12875
 // Name: map
-// Dependencies: [8615, 4154, 589, 709, 2]
+// Dependencies: [8945, 4184, 589, 709, 2]
 
-// Module 12840 (map)
+// Module 12874 (map)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 
@@ -29,7 +29,7 @@ prototype["handleSearchStart"] = function handleSearchStart() {
 prototype["handleSearchFailure"] = function handleSearchFailure(arg0) {
   this.isFetching = false;
   this.isInitialFetchComplete = true;
-  const aPIError = new require(4154) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4184) /* V6OrEarlierAPIError */.APIError(arg0);
   this.error = aPIError;
 };
 prototype["handleSearchSuccess"] = function handleSearchSuccess(arg0) {
@@ -153,7 +153,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "error") {
+      if (typeof SearchState !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -174,7 +174,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "error") {
+      if (typeof SearchState !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -196,7 +196,7 @@ const globalDiscoveryServersSearchResultsStore = new GlobalDiscoveryServersSearc
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "error") {
+      if (typeof SearchState !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -263,7 +263,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "error") {
+      if (typeof SearchState !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -284,7 +284,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "error") {
+      if (typeof SearchState !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);
@@ -306,7 +306,7 @@ let obj = {
     let obj = map;
     let value = map.get(joined);
     if (value == null) {
-      if (typeof SearchState !== "error") {
+      if (typeof SearchState !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(SearchState.prototype);

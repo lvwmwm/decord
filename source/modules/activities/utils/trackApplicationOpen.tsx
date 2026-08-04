@@ -1,10 +1,10 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 10884
+// Function ID: 10885
 // Name: trackApplicationOpen
 // Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 11007 (trackApplicationOpen)
+// Module 10884 (trackApplicationOpen)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/trackApplicationOpen.tsx");

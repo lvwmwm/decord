@@ -1,10 +1,10 @@
-// Module ID: 6739
-// Function ID: 6740
+// Module ID: 6751
+// Function ID: 6752
 // Name: WhiteboardAbstractUI
-// Dependencies: [21, 5207, 6740, 2]
+// Dependencies: [21, 5236, 6752, 2]
 // Exports: WhiteboardAbstractUI
 
-// Module 6739 (WhiteboardAbstractUI)
+// Module 6751 (WhiteboardAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WhiteboardAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const WhiteboardAbstractUI = function WhiteboardAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6740);
+  obj[0] = importDefault(6752);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const WhiteboardAbstractUI = function WhiteboardAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

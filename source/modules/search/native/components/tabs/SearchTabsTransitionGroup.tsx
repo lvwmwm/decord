@@ -1,10 +1,10 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 15673
+// Function ID: 15674
 // Name: getItemKey
-// Dependencies: [19, 21, 3928, 11826, 4116, 4600, 4665, 4669, 15548, 11826, 2]
+// Dependencies: [19, 21, 3958, 11886, 4146, 4629, 4694, 4698, 15579, 11886, 2]
 // Exports: default
 
-// Module 15642 (getItemKey)
+// Module 15673 (getItemKey)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -144,5 +144,5 @@ let result = require("explicitContentFromProto").fileFinishedImporting("modules/
 
 export default function SearchTabsTransitionGroup(state) {
   const items = [state.state];
-  return jsx(require(4600) /* wrapChildrenDefault */.TransitionGroup, { items, getItemKey, renderItem });
+  return jsx(require(4629) /* wrapChildrenDefault */.TransitionGroup, { items, getItemKey, renderItem });
 };

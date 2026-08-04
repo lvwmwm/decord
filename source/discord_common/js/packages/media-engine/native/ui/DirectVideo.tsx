@@ -1,10 +1,10 @@
-// Module ID: 4357
-// Function ID: 4358
+// Module ID: 4386
+// Function ID: 4387
 // Name: logger
-// Dependencies: [19, 21, 4, 4304, 4358, 2]
+// Dependencies: [19, 21, 4, 4334, 4387, 2]
 // Exports: default
 
-// Module 4357 (logger)
+// Module 4386 (logger)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -178,7 +178,7 @@ export default function DirectVideo(streamId, onContainerResized) {
         ref.info("attaching srcObject for " + current);
         value = store.get(current);
         if (null == value) {
-          if (typeof ref !== "error") {
+          if (typeof ref !== "find") {
             HermesBuiltin.throwTypeError();
           }
           const obj = Object.create(ref.prototype);

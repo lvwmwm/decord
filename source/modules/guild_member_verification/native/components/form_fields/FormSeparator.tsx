@@ -1,10 +1,10 @@
-// Module ID: 9352
-// Function ID: 9353
+// Module ID: 8254
+// Function ID: 8255
 // Name: FormSeparator
-// Dependencies: [19, 17, 21, 4255, 712, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 2]
 // Exports: default
 
-// Module 9352 (FormSeparator)
+// Module 8254 (FormSeparator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

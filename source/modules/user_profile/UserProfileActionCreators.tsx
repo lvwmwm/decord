@@ -1,10 +1,10 @@
-// Module ID: 8066
-// Function ID: 8067
+// Module ID: 8078
+// Function ID: 8079
 // Name: _saveProfileChanges
-// Dependencies: [5, 1874, 676, 1876, 1231, 4101, 1236, 698, 8067, 7050, 709, 8068, 530, 8071, 4154, 2]
+// Dependencies: [5, 1874, 676, 1876, 1231, 4131, 1236, 698, 8079, 7062, 709, 8080, 530, 8083, 4184, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8066 (_saveProfileChanges)
+// Module 8078 (_saveProfileChanges)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -189,7 +189,7 @@ export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUser
   ComponentDispatch.dispatch(constants.SHAKE_PROFILE_MODAL);
   const ComponentDispatch2 = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch2.dispatch(constants.EMPHASIZE_NOTICE);
-  const AccessibilityAnnouncer = require(4101) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(4131) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1236) /* getSystemLocale */.intl;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce("" + intl.string(require(1236) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1236) /* getSystemLocale */.t.gKoO1D));

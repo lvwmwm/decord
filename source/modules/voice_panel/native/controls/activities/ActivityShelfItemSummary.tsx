@@ -1,10 +1,10 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16093
+// Function ID: 16094
 // Name: ParticipantsSummary
-// Dependencies: [32, 19, 17, 21, 4255, 712, 4099, 16061, 10172, 1297, 4675, 4251, 4116, 4681, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4129, 16094, 10829, 1297, 4704, 4281, 4146, 4710, 2]
 // Exports: default
 
-// Module 16060 (ParticipantsSummary)
+// Module 16093 (ParticipantsSummary)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -19,12 +19,12 @@ function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
-  const obj = { users: importDefault(16061)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
-  const tmp = importDefault(16061)(applicationId, channelId);
+  const obj = { users: importDefault(16094)(applicationId, channelId), max: 5, avatarSize: null, withPlusCount: true, style: null, cutout: null };
+  const tmp = importDefault(16094)(applicationId, channelId);
   obj[2] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[4] = { marginBottom: 8 };
   obj[5] = { inset: -8 };
-  return callback2(importDefault(10172), obj);
+  return callback2(importDefault(10829), obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { ongoingActivityContainer: { position: "absolute", width: "100%", height: "100%", backgroundColor: "rgba(0,0,0,0.4)", alignItems: "center", justifyContent: "center" }, overlayActivityName: null, overlayActivityNameText: null, loadingTextColor: null, ellipsis: null };
@@ -48,18 +48,18 @@ export default function ActivityShelfItemSummary(submitting) {
     flag = false;
   }
   const tmp = createCacheKey();
-  let obj = require(4675) /* PillWrapper */;
+  let obj = require(4704) /* PillWrapper */;
   obj = { style: tmp.ongoingActivityContainer, children: null };
   obj = { style: tmp.overlayActivityName, children: null };
   let tmp7Result = flag;
-  const items = [closure_5(require(4251) /* Text */.Text, { variant: "text-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName }), ];
+  const items = [closure_5(require(4281) /* Text */.Text, { variant: "text-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName }), ];
   const obj2 = { style: items1, children: null };
   items1 = [tmp.ellipsis, callback(obj.useLoadingStyles(flag, "md"), 2)[1]];
   if (tmp7Result) {
-    tmp7Result = tmp7(require(4681) /* EllipsisCircle */.Ellipsis, { variant: "active", size: "md" });
+    tmp7Result = tmp7(require(4710) /* EllipsisCircle */.Ellipsis, { variant: "active", size: "md" });
   }
   obj2[1] = tmp7Result;
-  items[1] = closure_5(importDefault(4116).View, obj2);
+  items[1] = closure_5(importDefault(4146).View, obj2);
   obj[1] = items;
   const items2 = [closure_6(View, obj), closure_5(ParticipantsSummary, { channelId, applicationId })];
   obj[1] = items2;

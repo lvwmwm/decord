@@ -1,10 +1,10 @@
-// Module ID: 10317
-// Function ID: 10318
+// Module ID: 10294
+// Function ID: 10295
 // Name: SafetyToolsCrisisTextLineActionSheet
-// Dependencies: [19, 17, 10311, 21, 4255, 712, 10318, 1236, 4251, 4666, 3952, 10308, 2]
+// Dependencies: [19, 17, 10253, 21, 4285, 712, 10295, 1236, 4281, 4695, 3982, 10266, 2]
 // Exports: default
 
-// Module 10317 (SafetyToolsCrisisTextLineActionSheet)
+// Module 10294 (SafetyToolsCrisisTextLineActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE";
@@ -44,7 +44,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
   obj = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: null };
   const intl2 = trackAnalyticsEvent(1236).intl;
   obj[3] = intl2.string(trackAnalyticsEvent(1236).t.uicS5l);
-  const items = [callback(trackAnalyticsEvent(4251).Text, obj), , ];
+  const items = [callback(trackAnalyticsEvent(4281).Text, obj), , ];
   const obj1 = { variant: "secondary", size: "lg", text: null, grow: true, onPress: null };
   const intl3 = trackAnalyticsEvent(1236).intl;
   obj1[2] = intl3.string(trackAnalyticsEvent(1236).t.lkUb4S);
@@ -52,7 +52,7 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
     outer1_1(outer1_2[10]).openURL(outer1_4);
     trackAnalyticsEvent(trackAnalyticsEvent(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL_SMS);
   };
-  items[1] = callback(trackAnalyticsEvent(4666).Button, obj1);
+  items[1] = callback(trackAnalyticsEvent(4695).Button, obj1);
   const obj2 = { variant: "secondary", size: "lg", text: null, grow: true, onPress: null };
   const intl4 = trackAnalyticsEvent(1236).intl;
   obj2[2] = intl4.string(trackAnalyticsEvent(1236).t.ogLlvy);
@@ -60,8 +60,8 @@ export default function SafetyToolsCrisisTextLineActionSheet(trackAnalyticsEvent
     outer1_1(outer1_2[10]).openURL(outer1_5);
     trackAnalyticsEvent(trackAnalyticsEvent(outer1_2[11]).CtaEventTypes.USER_SAFETY_TOOLS_CTL_WEB);
   };
-  items[2] = callback(trackAnalyticsEvent(4666).Button, obj2);
+  items[2] = callback(trackAnalyticsEvent(4695).Button, obj2);
   obj[1] = items;
   obj[7] = callback2(View, obj);
-  return callback(importDefault(10318), obj);
+  return callback(importDefault(10295), obj);
 };

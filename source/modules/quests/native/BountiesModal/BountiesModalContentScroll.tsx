@@ -1,10 +1,10 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14155
+// Function ID: 14156
 // Name: ItemSeparator
-// Dependencies: [32, 19, 17, 7067, 5099, 676, 1369, 21, 501, 712, 4255, 4116, 1474, 1581, 14122, 10643, 11017, 11018, 589, 14125, 14126, 514, 7095, 7085, 14128, 14129, 9627, 7096, 5104, 10652, 14119, 14130, 14160, 14161, 14162, 11105, 14163, 7654, 4677, 14167, 14168, 3979, 7656, 2]
+// Dependencies: [32, 19, 17, 7079, 5128, 676, 1369, 21, 501, 712, 4285, 4146, 1474, 1581, 14156, 10374, 10895, 10896, 589, 14159, 14160, 514, 7107, 7097, 14162, 14163, 10376, 7108, 5133, 10501, 14153, 14164, 14194, 14195, 14196, 11090, 14197, 7666, 4706, 14201, 14202, 4009, 7668, 2]
 // Exports: default
 
-// Module 14121 (ItemSeparator)
+// Module 14155 (ItemSeparator)
 import BountiesScrollPromptFooter from "BountiesScrollPromptFooter";
 import getRevealProgress from "getRevealProgress";
 import get_ActivityIndicator from "apexExperiment";
@@ -451,7 +451,7 @@ function BountiesModalContentScrollInner(arg0) {
       if (c31.get()) {
         tmp3 = c25;
         tmp2 = c30;
-        if (typeof c25 !== "error") {
+        if (typeof c25 !== "find") {
           str = "Trying to call a non-function";
           throwTypeErrorResult = HermesBuiltin.throwTypeError();
         }
@@ -473,7 +473,7 @@ function BountiesModalContentScrollInner(arg0) {
     constructor(arg0) {
       result = c31.set(true);
       tmp2 = c30;
-      if (typeof c25 !== "error") {
+      if (typeof c25 !== "find") {
         str = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
@@ -1040,7 +1040,7 @@ export default function BountiesModalContentScroll(arg0) {
   let sourceQuestContent;
   ({ bountyId, sourceQuestContent } = arg0);
   const obj = { theme: null, children: null };
-  obj[0] = require(7656) /* items */.ThemeTypes.DARKER;
+  obj[0] = require(7668) /* items */.ThemeTypes.DARKER;
   obj[1] = callback2(BountiesModalContentScrollInner, { initialBountyId: bountyId, sourceQuestContent });
-  return callback2(require(3979) /* ThemeContextProvider */.ThemeContextProvider, obj);
+  return callback2(require(4009) /* ThemeContextProvider */.ThemeContextProvider, obj);
 };

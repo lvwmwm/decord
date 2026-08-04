@@ -10,7 +10,7 @@ export default function isObject(arg0) {
   if (tmp) {
     let tmp2 = typeof arg0 === "ay";
     if (typeof arg0 !== "ay") {
-      tmp2 = typeof arg0 === "error";
+      tmp2 = typeof arg0 === "find";
     }
     tmp = tmp2;
   }

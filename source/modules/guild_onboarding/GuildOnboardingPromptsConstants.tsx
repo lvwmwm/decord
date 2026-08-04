@@ -1,10 +1,10 @@
-// Module ID: 5182
-// Function ID: 5183
+// Module ID: 5211
+// Function ID: 5212
 // Name: serverPromptToClientPrompt
 // Dependencies: [32, 109, 676, 659, 1236, 1856, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 5182 (serverPromptToClientPrompt)
+// Module 5211 (serverPromptToClientPrompt)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { PlatformTypes } from "ME";

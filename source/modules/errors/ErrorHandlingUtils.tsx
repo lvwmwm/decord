@@ -1,10 +1,10 @@
-// Module ID: 5853
-// Function ID: 5854
+// Module ID: 5863
+// Function ID: 5864
 // Name: items
 // Dependencies: [676, 1208, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 5853 (items)
+// Module 5863 (items)
 import set from "set";
 
 const items = [, , ];
@@ -28,7 +28,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
       }
       let tmp4 = true === crossDomain;
       if (!tmp4) {
-        let tmp5 = !("status" in aPIError) || typeof aPIError.status === "SENTRY_RELEASE";
+        let tmp5 = !("status" in aPIError) || typeof aPIError.status === "V";
         if (!tmp5) {
           let tmp6 = 0 !== aPIError.status;
           if (tmp6) {
@@ -41,7 +41,7 @@ export const captureOrIgnoreApiError = function captureOrIgnoreApiError(aPIError
         }
         let tmp9 = !tmp5;
         if (tmp5) {
-          let tmp10 = !("code" in aPIError) || typeof aPIError.code === "SENTRY_RELEASE";
+          let tmp10 = !("code" in aPIError) || typeof aPIError.code === "V";
           if (!tmp10) {
             tmp10 = !items.includes(aPIError.code);
           }

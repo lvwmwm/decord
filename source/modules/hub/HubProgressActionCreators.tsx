@@ -1,10 +1,10 @@
-// Module ID: 5832
-// Function ID: 5833
+// Module ID: 8998
+// Function ID: 8999
 // Name: setHubProgressActionComplete
-// Dependencies: [1862, 5833, 676, 1355, 1384, 2]
+// Dependencies: [1862, 8999, 676, 1355, 1384, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 5832 (setHubProgressActionComplete)
+// Module 8998 (setHubProgressActionComplete)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { HUB_PROGRESS_STEP_ORDER } from "items";
 import { GuildFeatures } from "ME";
@@ -12,7 +12,7 @@ import { GuildFeatures } from "ME";
 const require = arg1;
 let result = require("ME").fileFinishedImporting("modules/hub/HubProgressActionCreators.tsx");
 
-export const setHubProgressActionComplete = function setHubProgressActionComplete(guildId, JOIN_GUILD) {
+export const setHubProgressActionComplete = function setHubProgressActionComplete(guildId, INVITE_USER) {
   if (null != guildId) {
     guild = guild.getGuild(guildId);
     let hasItem = null != guild;
@@ -21,7 +21,7 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
       hasItem = features.has(GuildFeatures.HUB);
     }
     if (hasItem) {
-      const items = [JOIN_GUILD];
+      const items = [INVITE_USER];
       const result = items(1355).updateUserGuildSettings(guildId, (hubProgress) => {
         let flag = false;
         for (const item10008 of closure_0) {

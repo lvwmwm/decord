@@ -1,10 +1,10 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14201
+// Function ID: 14202
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4255, 712, 4783, 1236, 5241, 2]
+// Dependencies: [19, 21, 4285, 712, 4812, 1236, 5270, 2]
 // Exports: default
 
-// Module 14167 (BountiesModalCloseButton)
+// Module 14201 (BountiesModalCloseButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,6 +26,6 @@ export default function BountiesModalCloseButton(onPress) {
   obj[4] = callback().closeButton;
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
-  obj[5] = jsx(require(5241) /* XSmallIcon */.XSmallIcon, { size: "sm", color: null });
-  return jsx(require(4783) /* PressableBase */.PressableOpacity, { size: "sm", color: null });
+  obj[5] = jsx(require(5270) /* XSmallIcon */.XSmallIcon, { size: "sm", color: null });
+  return jsx(require(4812) /* PressableBase */.PressableOpacity, { size: "sm", color: null });
 };

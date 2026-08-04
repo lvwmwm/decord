@@ -1,10 +1,10 @@
-// Module ID: 9227
-// Function ID: 9228
+// Module ID: 10779
+// Function ID: 10780
 // Name: trackVoiceCallTransfer
-// Dependencies: [1372, 4327, 4270, 676, 698, 2]
+// Dependencies: [1372, 4356, 4300, 676, 698, 2]
 // Exports: default
 
-// Module 9227 (trackVoiceCallTransfer)
+// Module 10779 (trackVoiceCallTransfer)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import handleUpdate from "handleUpdate";

@@ -1,10 +1,10 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14886
+// Function ID: 14887
 // Name: SelectScreen
-// Dependencies: [19, 17, 14849, 21, 4255, 5206, 7768, 9375, 1480, 5243, 4251, 1236, 2]
+// Dependencies: [19, 17, 14883, 21, 4285, 5235, 7780, 8283, 1480, 5272, 4281, 1236, 2]
 // Exports: default
 
-// Module 14852 (SelectScreen)
+// Module 14886 (SelectScreen)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SELECT_NAMES } from "get webauthn";
@@ -17,11 +17,11 @@ const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let closure_7 = createCacheKey.createStyles((arg0) => {
   const obj = { container: { marginLeft: 16, marginRight: 16 }, selectContainer: null };
-  const NAV_BAR_HEIGHT = require(5206) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
+  const NAV_BAR_HEIGHT = require(5235) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT;
   if (arg0) {
     let diff = NAV_BAR_HEIGHT;
   } else {
-    diff = NAV_BAR_HEIGHT - require(5206) /* NAV_BAR_HEIGHT */.STATUS_BAR_HEIGHT;
+    diff = NAV_BAR_HEIGHT - require(5235) /* NAV_BAR_HEIGHT */.STATUS_BAR_HEIGHT;
   }
   obj[1] = { marginTop: diff, marginLeft: 16, marginRight: 16, display: "flex", alignItems: "center" };
   return obj;
@@ -30,7 +30,7 @@ const result = require("get webauthn").fileFinishedImporting("modules/mfa/native
 
 export default function SelectScreen(mfaChallenge) {
   const _require = mfaChallenge;
-  const tmp = importDefault(9375)();
+  const tmp = importDefault(8283)();
   const tmp2 = callback3(tmp);
   let obj = _require(1480);
   importDefault = obj.useNavigation();
@@ -39,11 +39,11 @@ export default function SelectScreen(mfaChallenge) {
   const obj1 = { variant: "heading-xl/extrabold", children: null };
   const intl = _require(1236).intl;
   obj1[1] = intl.string(_require(1236).t.S9b9bX);
-  const items = [callback(_require(4251).Text, obj1), ];
+  const items = [callback(_require(4281).Text, obj1), ];
   const obj2 = { variant: "text-sm/medium", children: null };
   const intl2 = _require(1236).intl;
   obj2[1] = intl2.string(_require(1236).t.Jz1lXO);
-  items[1] = callback(_require(4251).Text, obj2);
+  items[1] = callback(_require(4281).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const methods = mfaChallenge.mfaChallenge.methods;
@@ -61,5 +61,5 @@ export default function SelectScreen(mfaChallenge) {
     })
   });
   obj[2] = items1;
-  return callback2(_require(5243).SafeAreaPaddingView, obj);
+  return callback2(_require(5272).SafeAreaPaddingView, obj);
 };

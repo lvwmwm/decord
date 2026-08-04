@@ -1,10 +1,10 @@
-// Module ID: 11550
-// Function ID: 11551
+// Module ID: 11549
+// Function ID: 11550
 // Name: MAX_MESSAGES_ALLOWED_FOR_GREETING
-// Dependencies: [19, 5721, 4473, 3892, 1874, 676, 1379, 10583, 589, 2]
+// Dependencies: [19, 5750, 4502, 3922, 1874, 676, 1379, 10254, 589, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 11550 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
+// Module 11549 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
 import { useRef } from "noop";
 import processChannel from "processChannel";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -33,9 +33,9 @@ export const useShowConvoStarterInDM = function useShowConvoStarterInDM(channel)
   if (tmp) {
     recipientId = channel.getRecipientId();
   }
-  const strangerDangerWarning = _require(10583).useStrangerDangerWarning(channel.id);
+  const strangerDangerWarning = _require(10254).useStrangerDangerWarning(channel.id);
   const hasFlagResult = channel.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-  const obj = _require(10583);
+  const obj = _require(10254);
   const items = [recipientId, processChannel, strangerDangerWarning, hasFlagResult];
   const items1 = [strangerDangerWarning, tmp, channel.id, recipientId, hasFlagResult];
   return _require(589).useStateFromStores(items, () => {

@@ -1,10 +1,10 @@
-// Module ID: 7234
-// Function ID: 7235
+// Module ID: 7246
+// Function ID: 7247
 // Name: fetchAndReconcileGiftIntentDismissals
-// Dependencies: [7028, 1218, 4473, 1876, 676, 530, 709, 1208, 698, 7235, 2]
+// Dependencies: [7040, 1218, 4502, 1876, 676, 530, 709, 1208, 698, 7247, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 7234 (fetchAndReconcileGiftIntentDismissals)
+// Module 7246 (fetchAndReconcileGiftIntentDismissals)
 import recomputeAffinities from "recomputeAffinities";
 import fetchFingerprint from "fetchFingerprint";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -63,7 +63,7 @@ export const logMessageGiftIntentShown = function logMessageGiftIntentShown(reci
   }
   obj[2] = dmProbability;
   obj2.track(constants.GIFT_INTENT_DISMISSED, obj);
-  let result = require(7235) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
+  let result = require(7247) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
   if (result) {
     result = FRIEND_ANNIVERSARY !== GiftIntentType.UNSPECIFIED;
   }
@@ -100,7 +100,7 @@ export const logGiftIntentMessageDismissed = function logGiftIntentMessageDismis
     }
     obj[2] = dmProbability;
     importDefault(698).track(constants.GIFT_INTENT_DISMISSED, obj);
-    obj = require(7235) /* apexExperiment */;
+    obj = require(7247) /* apexExperiment */;
     let result = obj.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
     if (result) {
       result = giftIntentType !== GiftIntentType.UNSPECIFIED;
@@ -139,7 +139,7 @@ export const logGiftIntentFlowPurchasedGift = function logGiftIntentFlowPurchase
   }
   obj[2] = dmProbability;
   obj2.track(constants.GIFT_INTENT_DISMISSED, obj);
-  let result = require(7235) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
+  let result = require(7247) /* apexExperiment */.isFriendshipAnniversaryBackendPersistenceEnabled("dismissGiftIntent");
   if (result) {
     result = FRIEND_ANNIVERSARY !== GiftIntentType.UNSPECIFIED;
   }

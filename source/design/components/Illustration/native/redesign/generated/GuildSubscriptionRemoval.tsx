@@ -1,10 +1,10 @@
-// Module ID: 12762
-// Function ID: 12763
+// Module ID: 12796
+// Function ID: 12797
 // Name: getGuildSubscriptionRemovalSource
-// Dependencies: [19, 17, 21, 7532, 12763, 12764, 12765, 4101, 2]
+// Dependencies: [19, 17, 21, 7544, 12797, 12798, 12799, 4131, 2]
 // Exports: GuildSubscriptionRemoval, getGuildSubscriptionRemovalSource, useGuildSubscriptionRemovalSource
 
-// Module 12762 (getGuildSubscriptionRemovalSource)
+// Module 12796 (getGuildSubscriptionRemovalSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,50 +13,50 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("design/components/Illustration/native/redesign/generated/GuildSubscriptionRemoval.tsx");
 
 export const getGuildSubscriptionRemovalSource = function getGuildSubscriptionRemovalSource(theme) {
-  let obj = require(7532) /* getIllustrationSource */;
+  let obj = require(7544) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(12763);
+      return callback(12797);
     },
     darker() {
-      return callback(12764);
+      return callback(12798);
     },
     light() {
-      return callback(12765);
+      return callback(12799);
     }
   };
   return obj.getIllustrationSource(theme, obj);
 };
 export const useGuildSubscriptionRemovalSource = function useGuildSubscriptionRemovalSource() {
-  let obj = require(4101) /* AccessibilityAnnouncer */;
+  let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12763);
+      return callback(12797);
     },
     darker() {
-      return callback(12764);
+      return callback(12798);
     },
     light() {
-      return callback(12765);
+      return callback(12799);
     }
   };
-  return require(7532) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  return require(7544) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
 };
 export const GuildSubscriptionRemoval = function GuildSubscriptionRemoval(arg0) {
-  let obj = require(4101) /* AccessibilityAnnouncer */;
+  let obj = require(4131) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(12763);
+      return callback(12797);
     },
     darker() {
-      return callback(12764);
+      return callback(12798);
     },
     light() {
-      return callback(12765);
+      return callback(12799);
     }
   };
   obj = {};
-  const illustrationSource = require(7532) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
+  const illustrationSource = require(7544) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
   const merged = Object.assign(arg0);
   obj.source = illustrationSource;
   return <Image />;

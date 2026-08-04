@@ -1,10 +1,10 @@
-// Module ID: 9493
-// Function ID: 9494
+// Module ID: 8421
+// Function ID: 8422
 // Name: updateChatInputContainerHeight
-// Dependencies: [595, 644, 4114, 2]
+// Dependencies: [595, 644, 4144, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 9493 (updateChatInputContainerHeight)
+// Module 8421 (updateChatInputContainerHeight)
 import keys from "keys";
 
 let chatInputContainerHeight = "chatInputContainerHeight";
@@ -25,7 +25,7 @@ export default obj;
 export const updateChatInputContainerHeight = function updateChatInputContainerHeight(arg0, arg1) {
   const _require = arg0;
   const dependencyMap = arg1;
-  if (typeof arg0 !== "SENTRY_RELEASE") {
+  if (typeof arg0 !== "V") {
     const Storage = _require(595).Storage;
     let result = Storage.set(chatInputContainerHeight, arg1);
   }

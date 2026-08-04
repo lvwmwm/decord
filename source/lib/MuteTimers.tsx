@@ -1,10 +1,10 @@
-// Module ID: 3886
-// Function ID: 3887
+// Module ID: 3916
+// Function ID: 3917
 // Name: reset
 // Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 3886 (reset)
+// Module 3916 (reset)
 const result = require("set").fileFinishedImporting("lib/MuteTimers.tsx");
 class MuteTimers {
   constructor() {

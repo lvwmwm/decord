@@ -1,10 +1,10 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 13653
+// Function ID: 13654
 // Name: RPCCommands
 // Dependencies: [505, 2]
 // Exports: joiEnum, joiReqObj
 
-// Module 13619 (RPCCommands)
+// Module 13653 (RPCCommands)
 import sum from "sum";
 
 let RPCCommands;

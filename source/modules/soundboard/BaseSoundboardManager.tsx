@@ -1,9 +1,9 @@
-// Module ID: 13675
-// Function ID: 13676
+// Module ID: 13709
+// Function ID: 13710
 // Name: _initialize
-// Dependencies: [1218, 4302, 4434, 709, 2]
+// Dependencies: [1218, 4332, 4463, 709, 2]
 
-// Module 13675 (_initialize)
+// Module 13709 (_initialize)
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import "initialize";

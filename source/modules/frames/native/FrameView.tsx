@@ -1,9 +1,9 @@
-// Module ID: 15956
-// Function ID: 15957
+// Module ID: 15989
+// Function ID: 15990
 // Name: FrameView
-// Dependencies: [32, 19, 10657, 10658, 4280, 21, 589, 5582, 709, 10667, 10779, 15957, 15958, 10790, 2]
+// Dependencies: [32, 19, 10506, 10507, 4310, 21, 589, 5611, 709, 10516, 10630, 15990, 15991, 10641, 2]
 
-// Module 15956 (FrameView)
+// Module 15989 (FrameView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import map from "map";

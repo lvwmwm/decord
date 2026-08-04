@@ -1,9 +1,9 @@
-// Module ID: 15326
-// Function ID: 15327
+// Module ID: 15357
+// Function ID: 15358
 // Name: PreviewItem
-// Dependencies: [19, 5093, 15247, 21, 4255, 15020, 4116, 4665, 7807, 4600, 15257, 15279, 3868, 2]
+// Dependencies: [19, 5122, 15281, 21, 4285, 15054, 4146, 4694, 7819, 4629, 15291, 15312, 3898, 2]
 
-// Module 15326 (PreviewItem)
+// Module 15357 (PreviewItem)
 import importAllResult from "noop";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import withEqualityFn from "withEqualityFn";
@@ -130,7 +130,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "padding", expanded: false, children: false };
+        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "paddingHorizontal", expanded: "getChannel", children: "r" };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -340,7 +340,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "text-sm/semibold", scrollPosition: "text-default", dragRegion: 2, windowSize: null, dropComplete: "eyebrow", listInsets: null };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "HIDE_NATIVE_MENU", scrollPosition: null, dragRegion: "header", windowSize: "text-sm/medium", dropComplete: null, listInsets: "not_enough_content" };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;
@@ -359,7 +359,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       }
       return null;
     }
-  }, require(3868) /* isIterable */.shallow);
+  }, require(3898) /* isIterable */.shallow);
   let tmp2 = null;
   if (null != tmp) {
     let obj = {};

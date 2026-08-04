@@ -1,10 +1,10 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16088
+// Function ID: 16089
 // Name: useActivityShelfItemData
 // Dependencies: [19, 11338, 2]
 // Exports: useActivityShelfItemData
 
-// Module 16055 (useActivityShelfItemData)
+// Module 16088 (useActivityShelfItemData)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/activities/useActivityShelfItemData.tsx");

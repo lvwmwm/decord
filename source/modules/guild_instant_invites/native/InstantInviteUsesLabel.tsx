@@ -1,10 +1,10 @@
-// Module ID: 10360
-// Function ID: 10361
+// Module ID: 9620
+// Function ID: 9621
 // Name: InstantInviteUsesLabel
-// Dependencies: [19, 21, 4251, 2]
+// Dependencies: [19, 21, 4281, 2]
 // Exports: default
 
-// Module 10360 (InstantInviteUsesLabel)
+// Module 9620 (InstantInviteUsesLabel)
 import "noop";
 import { jsxs } from "jsxProd";
 
@@ -21,5 +21,5 @@ export default function InstantInviteUsesLabel(style) {
     combined = "" + uses + "/" + maxUses;
   }
   const children = ["Uses: ", combined];
-  return jsxs(require(4251) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", style: style.style, children });
+  return jsxs(require(4281) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", style: style.style, children });
 };

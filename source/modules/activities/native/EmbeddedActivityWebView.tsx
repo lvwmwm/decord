@@ -1,10 +1,10 @@
-// Module ID: 10784
-// Function ID: 10785
+// Module ID: 10635
+// Function ID: 10636
 // Name: getSafeArea
-// Dependencies: [5, 32, 19, 17, 7497, 4280, 676, 21, 4255, 3, 500, 10785, 514, 7719, 1231, 10786, 1578, 10787, 10788, 698, 647, 4594, 1236, 530, 10789, 1467, 10669, 10689, 8460, 4449, 10688, 2]
+// Dependencies: [5, 32, 19, 17, 7509, 4310, 676, 21, 4285, 3, 500, 10636, 514, 7731, 1231, 10637, 1578, 10638, 10639, 698, 647, 4623, 1236, 530, 10640, 1467, 10518, 10539, 8775, 4478, 10538, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 10784 (getSafeArea)
+// Module 10635 (getSafeArea)
 import closure_4 from "items3";
 import _slicedToArray from "_slicedToArray";
 import expandEventProperties from "expandEventProperties";
@@ -44,7 +44,7 @@ function getSafeArea(arg0, arg1) {
 }
 class BaseActivityWebView {
   constructor(arg0) {
-    ({ hasFrameId, getOrCreateFrameId, releaseFrameId } = global);
+    ({ hasIframeId, getOrCreateIframeId, releaseIframeId } = global);
     hasInvalidUrlError = global.hasInvalidUrlError;
     setHasInvalidUrlError = global.setHasInvalidUrlError;
     hadInvalidUrlError = global.hadInvalidUrlError;
@@ -66,13 +66,13 @@ class BaseActivityWebView {
     channelId = global.channelId;
     guildId = global.guildId;
     activitySessionId = global.activitySessionId;
-    f85729 = undefined;
+    f85348 = undefined;
     c17 = undefined;
     c18 = undefined;
     useState = undefined;
     c20 = undefined;
     useState = undefined;
-    f85733 = undefined;
+    f85352 = undefined;
     queryParams = undefined;
     concat = undefined;
     useRef = undefined;
@@ -86,13 +86,13 @@ class BaseActivityWebView {
     useCallback = undefined;
     concat = undefined;
     obj2 = applicationId;
-    tmp2 = hasFrameId;
+    tmp2 = hasIframeId;
     tmp3 = hasInvalidUrlError;
     tmp = guildId();
     context = applicationId.useContext(require("context").WebViewContext);
     tmp5 = hadInvalidUrlError;
     first = hadInvalidUrlError(applicationId.useState(() => callback()), 1)[0];
-    f85729 = first;
+    f85348 = first;
     first1 = hadInvalidUrlError(applicationId.useState(() => {
       if (null != webViewKey) {
         let v4Result = callback2();
@@ -148,7 +148,7 @@ class BaseActivityWebView {
       }
     }, items2);
     rect = require("useStableSafeAreaInsets")();
-    f85733 = rect;
+    f85352 = rect;
     obj3 = require("getConstants");
     obj = {};
     constants = obj3.getConstants();
@@ -330,7 +330,7 @@ class BaseActivityWebView {
     items6[2] = guildId;
     items6[3] = activitySessionId;
     items6[4] = first1;
-    items6[5] = releaseFrameId;
+    items6[5] = releaseIframeId;
     items6[6] = memo;
     items6[7] = onActivityCrash;
     callback1 = applicationId.useCallback((nativeEvent) => {
@@ -344,7 +344,7 @@ class BaseActivityWebView {
       const ComponentDispatch = outer1_0(hasInvalidUrlError[14]).ComponentDispatch;
       obj = { id: first1 };
       ComponentDispatch.dispatch(webViewKey.IFRAME_UNMOUNT, obj);
-      releaseFrameId();
+      releaseIframeId();
       if (null != memo) {
         memo.releaseWebView();
       }
@@ -394,8 +394,8 @@ class BaseActivityWebView {
     }, items9);
     HermesInternal = null;
     if (null == url) {
-      tmp30 = f85729;
-      closure_28 = f85729;
+      tmp30 = f85348;
+      closure_28 = f85348;
       flag = false;
       tmp5Result = tmp5(obj2.useState(false), 2);
       [tmp32, useState] = tmp5Result;
@@ -405,7 +405,7 @@ class BaseActivityWebView {
       c31 = tmp5Result1[1];
       items10 = [, ];
       items10[0] = applicationId;
-      items10[1] = f85729;
+      items10[1] = f85348;
       effect5 = obj2.useEffect(() => {
         if (closure_28) {
           function parseCsp(arg0, str) {
@@ -570,14 +570,15 @@ class BaseActivityWebView {
         }
       }, []);
       concat = callback4;
-      items12 = [, , ];
+      items12 = [, , , ];
       items12[0] = webViewKey;
       origin = undefined;
       if (url != null) {
         origin = url.origin;
       }
       items12[1] = origin;
-      items12[2] = callback4;
+      items12[2] = first1;
+      items12[3] = callback4;
       items13 = [, , , , , ];
       items13[0] = rect;
       items13[1] = isPipOrGridMode;
@@ -589,21 +590,19 @@ class BaseActivityWebView {
         if (null == webViewKey) {
           const _JSON = JSON;
           const parsed = JSON.parse(nativeEvent.nativeEvent.data);
-          let tmp2 = typeof parsed === "ay";
-          if (typeof parsed !== "window") {
-            let origin;
-            if (url != null) {
-              origin = url.origin;
-            }
-            tmp2 = null != origin;
+          if (url != null) {
+            const origin = url.origin;
           }
-          if (tmp2) {
-            let origin1;
-            if (url != null) {
-              origin1 = url.origin;
-            }
-            outer1_1(hasInvalidUrlError[27]).handleMessage(parsed, origin1, callback4);
-            const obj = outer1_1(hasInvalidUrlError[27]);
+          let tmp = typeof parsed === "ay";
+          if (typeof parsed !== "window") {
+            tmp = null != origin;
+          }
+          if (tmp) {
+            let obj = outer1_1(hasInvalidUrlError[27]);
+            obj = { origin: null, iframeId: null };
+            obj[0] = origin;
+            obj[1] = first1;
+            obj.handleMessage(parsed, obj, callback4);
           }
         }
       }, items12);
@@ -961,8 +960,8 @@ class BaseActivityWebView {
       }
       return null;
     } else {
-      tmp26 = f85729;
-      if (f85729) {
+      tmp26 = f85348;
+      if (f85348) {
         _HermesInternal2 = HermesInternal;
         str5 = "file://";
         combined1 = "file://" + str;
@@ -1031,14 +1030,14 @@ export default function EmbeddedActivityWebView(channelId) {
     }
   }, items);
   obj = {
-    hasFrameId() {
-      return currentEmbeddedActivity(first[30]).hasFrameId();
+    hasIframeId() {
+      return currentEmbeddedActivity(first[30]).hasIframeId();
     },
-    getOrCreateFrameId() {
-      return currentEmbeddedActivity(first[30]).getOrCreateFrameId();
+    getOrCreateIframeId() {
+      return currentEmbeddedActivity(first[30]).getOrCreateIframeId();
     },
-    releaseFrameId() {
-      return currentEmbeddedActivity(first[30]).releaseFrameId();
+    releaseIframeId() {
+      return currentEmbeddedActivity(first[30]).releaseIframeId();
     },
     hasInvalidUrlError: first,
     setHasInvalidUrlError: tmp2[1],
@@ -1048,17 +1047,17 @@ export default function EmbeddedActivityWebView(channelId) {
     channelId
   };
   const merged1 = Object.assign(merged);
-  return <BaseActivityWebView hasFrameId={function hasFrameId() {
-    return currentEmbeddedActivity(first[30]).hasFrameId();
-  }} getOrCreateFrameId={function getOrCreateFrameId() {
-    return currentEmbeddedActivity(first[30]).getOrCreateFrameId();
-  }} releaseFrameId={function releaseFrameId() {
-    return currentEmbeddedActivity(first[30]).releaseFrameId();
+  return <BaseActivityWebView hasIframeId={function hasIframeId() {
+    return currentEmbeddedActivity(first[30]).hasIframeId();
+  }} getOrCreateIframeId={function getOrCreateIframeId() {
+    return currentEmbeddedActivity(first[30]).getOrCreateIframeId();
+  }} releaseIframeId={function releaseIframeId() {
+    return currentEmbeddedActivity(first[30]).releaseIframeId();
   }} hasInvalidUrlError={first} setHasInvalidUrlError={tmp2[1]} hadInvalidUrlError={tmp4} deepLinkQueryParams={obj} applicationId={applicationId} channelId={channelId} />;
 };
 export { BaseActivityWebView };
 export const useHasInvalidUrlErrorState = function useHasInvalidUrlErrorState() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
-  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8460)(first) };
+  return { hasInvalidUrlError: first, setHasInvalidUrlError: tmp[1], hadInvalidUrlError: importDefault(8775)(first) };
 };

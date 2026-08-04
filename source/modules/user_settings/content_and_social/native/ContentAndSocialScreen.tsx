@@ -1,10 +1,10 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 14777
+// Function ID: 14778
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 7880, 676, 21, 4255, 712, 1236, 1945, 14744, 11887, 14747, 5797, 10272, 13932, 13760, 14748, 4251, 2]
+// Dependencies: [32, 19, 17, 7892, 676, 21, 4285, 712, 1236, 1945, 14778, 11948, 14781, 5826, 10361, 13966, 13794, 14782, 4281, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14743 (ContentAndSocialSettings)
+// Module 14777 (ContentAndSocialSettings)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "useAuthorizedSlayerApplications";
@@ -191,7 +191,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   let showLoadingIndicator;
   let slayerSdkApplications;
   const tmp = createCacheKey();
-  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14748)());
+  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14782)());
   if (showLoadingIndicator) {
     let obj = { style: null };
     obj[0] = tmp.loadingIndicator;
@@ -202,20 +202,20 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
     let obj1 = { variant: "text-md/semibold", color: "text-strong", children: null };
     let intl = require(1236) /* getSystemLocale */.intl;
     obj1[2] = intl.string(require(1236) /* getSystemLocale */.t["+0U77d"]);
-    let items = [callback2(require(4251) /* Text */.Text, obj1), ];
+    let items = [callback2(require(4281) /* Text */.Text, obj1), ];
     let obj2 = { variant: "text-sm/normal", color: "text-muted", children: null };
     let intl2 = require(1236) /* getSystemLocale */.intl;
     const obj3 = { helpdeskArticle: null };
     obj3[0] = tmp2(1945).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj2[2] = intl2.format(require(1236) /* getSystemLocale */.t.V8wClM, obj3);
-    items[1] = callback2(require(4251) /* Text */.Text, obj2);
+    items[1] = callback2(require(4281) /* Text */.Text, obj2);
     obj[1] = items;
     tmp7 = callback3(closure_6, obj);
     const tmp2Result = tmp2(1945);
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(13760), obj);
+    tmp7 = callback2(tmp2(13794), obj);
   }
   return tmp7;
 };

@@ -1,9 +1,9 @@
-// Module ID: 6881
-// Function ID: 6882
+// Module ID: 6893
+// Function ID: 6894
 // Name: handleReset
-// Dependencies: [1371, 1933, 6882, 5162, 3885, 1340, 1218, 5199, 1372, 6883, 3883, 4267, 1931, 4451, 685, 6884, 12, 1351, 3873, 11, 589, 709, 2]
+// Dependencies: [1371, 1933, 6894, 5191, 3915, 1340, 1218, 5228, 1372, 6895, 3913, 4297, 1931, 4480, 685, 6896, 12, 1351, 3903, 11, 589, 709, 2]
 
-// Module 6881 (handleReset)
+// Module 6893 (handleReset)
 import participantFromServer from "participantFromServer";
 import isSubscriptionGated from "isSubscriptionGated";
 import scheduledEventSort from "scheduledEventSort";
@@ -199,9 +199,9 @@ const channelListStore = new ChannelListStore(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3873) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3873) /* getEmbeddedActivityLocationChannelId */;
-    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3873) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3903) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3903) /* getEmbeddedActivityLocationChannelId */;
+    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3903) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     tmp2.updateSubtitles();
@@ -435,9 +435,9 @@ let obj = {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    const embeddedActivityLocationGuildId = require(3873) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
-    const obj = require(3873) /* getEmbeddedActivityLocationChannelId */;
-    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3873) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
+    const embeddedActivityLocationGuildId = require(3903) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationGuildId(instance.location);
+    const obj = require(3903) /* getEmbeddedActivityLocationChannelId */;
+    return tmp2.updateSubtitles(embeddedActivityLocationGuildId, require(3903) /* getEmbeddedActivityLocationChannelId */.getEmbeddedActivityLocationChannelId(instance.location));
   },
   EMBEDDED_ACTIVITY_LAUNCH_START: function handleEmbeddedActivityLaunchStart() {
     tmp2.updateSubtitles();

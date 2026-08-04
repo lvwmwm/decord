@@ -1,15 +1,6 @@
 // Module ID: 13471
 // Function ID: 13472
-// Dependencies: [13462, 13472, 13470, 13473]
+// Dependencies: []
 
 // Module 13471
-
-export default require("prop") ? ((arg0) => typeof arg0 === "e") : ((arg0) => {
-  const tmp3 = require(13472) /* all */("Symbol");
-  let tmpResultResult = require(13470) /* all */(tmp3);
-  if (tmpResultResult) {
-    tmpResultResult = require(13473) /* call */(tmp3.prototype, Object(arg0));
-    const tmpResult = require(13473) /* call */;
-  }
-  return tmpResultResult;
-});
+arg5.units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

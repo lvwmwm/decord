@@ -1,10 +1,10 @@
-// Module ID: 10482
-// Function ID: 10483
+// Module ID: 9758
+// Function ID: 9759
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 4451, 676, 4452, 685, 21, 10471, 10483, 1236, 5201, 10466, 5196, 2]
+// Dependencies: [19, 4480, 676, 4481, 685, 21, 9747, 9759, 1236, 5230, 9742, 5225, 2]
 // Exports: default
 
-// Module 10482 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 9758 (NotificationSettingsMessageUnreadGuildActionSheet)
 import "noop";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
@@ -19,7 +19,7 @@ export default function NotificationSettingsMessageUnreadGuildActionSheet(guildI
   let notification;
   let unread;
   const _require = guildId;
-  let obj = _require(10471);
+  let obj = _require(9747);
   const guildPresetSettings = obj.useGuildPresetSettings(guildId.guildId);
   ({ unread, notification } = guildPresetSettings);
   let stringResult;
@@ -43,7 +43,7 @@ export default function NotificationSettingsMessageUnreadGuildActionSheet(guildI
       const result = obj.updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.unreads(ONLY_MENTIONS));
     }
   };
-  return jsx(importDefault(10483), {
+  return jsx(importDefault(9759), {
     disabledMentionOnlyWithReason: stringResult,
     value: unread,
     onChange(ONLY_MENTIONS) {

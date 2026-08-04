@@ -1,10 +1,10 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8115
+// Function ID: 8116
 // Name: useGetIsMounted
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 8103 (useGetIsMounted)
+// Module 8115 (useGetIsMounted)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("hooks/useGetIsMounted.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10195
-// Function ID: 10196
+// Module ID: 11560
+// Function ID: 11561
 // Name: getTargetCardSize
-// Dependencies: [32, 19, 17, 4268, 10193, 10196, 4273, 4116, 10197, 643, 10198, 10199, 10200, 705, 2]
+// Dependencies: [32, 19, 17, 4298, 11558, 11561, 4303, 4146, 10245, 643, 10618, 11562, 11563, 705, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10195 (getTargetCardSize)
+// Module 11560 (getTargetCardSize)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { PixelRatio } from "get ActivityIndicator";
@@ -486,7 +486,7 @@ prototype["computeCardsLayout"] = function computeCardsLayout() {
               ({ item, dimensions } = obj);
               let num7 = dimensions.height;
               const id = item.id;
-              if (typeof closure_20 !== "error") {
+              if (typeof closure_20 !== "find") {
                 HermesBuiltin.throwTypeError();
               }
               let arr = closure_14;

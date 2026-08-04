@@ -1,10 +1,10 @@
-// Module ID: 8397
-// Function ID: 8398
+// Module ID: 9300
+// Function ID: 9301
 // Name: shouldAnimate
-// Dependencies: [8398, 2]
+// Dependencies: [9301, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 8397 (shouldAnimate)
+// Module 9300 (shouldAnimate)
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");
 
 export const shouldAnimate = function shouldAnimate(start, current) {
@@ -33,5 +33,5 @@ export const shouldAnimate = function shouldAnimate(start, current) {
   }
 };
 export const calculateProfileEffectHeight = function calculateProfileEffectHeight(layerConfig, width) {
-  return width / require(8398) /* DEFAULT_PROFILE_EFFECT_WH_RATIO */.getAssetWHRatio(layerConfig);
+  return width / require(9301) /* DEFAULT_PROFILE_EFFECT_WH_RATIO */.getAssetWHRatio(layerConfig);
 };

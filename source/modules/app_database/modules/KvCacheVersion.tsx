@@ -1,9 +1,9 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 7035
+// Function ID: 7036
 // Name: okAsync
 // Dependencies: [5, 499, 3, 1907, 2]
 
-// Module 7023 (okAsync)
+// Module 7035 (okAsync)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import HELLO_KEY from "HELLO_KEY";
 import set from "timestamp";

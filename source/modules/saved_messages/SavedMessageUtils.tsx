@@ -1,10 +1,10 @@
-// Module ID: 10098
-// Function ID: 10099
+// Module ID: 10194
+// Function ID: 10195
 // Name: _savedMessageJumpToMessage
-// Dependencies: [5, 19, 1376, 1372, 676, 1236, 3837, 589, 4265, 5745, 2]
+// Dependencies: [5, 19, 1376, 1372, 676, 1236, 3867, 589, 4295, 5774, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 10098 (_savedMessageJumpToMessage)
+// Module 10194 (_savedMessageJumpToMessage)
 import getSystemLocale from "getSystemLocale";
 import noop from "noop";
 import { UnknownChannelRecord } from "createChannelRecord";
@@ -171,9 +171,9 @@ export const useDueInString = function useDueInString(arg0) {
     const intl = tmp(1236).intl;
     obj = { duration: null };
     const time = dueAt.getTime();
-    const obj3 = importDefault(3837);
+    const obj3 = importDefault(3867);
     tmp8 = obj;
-    obj[0] = importDefault(3837).duration(time - now.getTime(), "millisecond").humanize();
+    obj[0] = importDefault(3867).duration(time - now.getTime(), "millisecond").humanize();
     obj[0] = intl.formatToPlainString(H4gnX9, obj);
     obj[1] = now > dueAt;
     return obj;

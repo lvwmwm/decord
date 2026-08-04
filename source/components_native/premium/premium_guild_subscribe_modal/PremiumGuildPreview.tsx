@@ -1,10 +1,10 @@
-// Module ID: 12753
-// Function ID: 12754
+// Module ID: 12787
+// Function ID: 12788
 // Name: PremiumGuildTierPill
-// Dependencies: [19, 17, 1302, 676, 21, 4255, 712, 5096, 4101, 12754, 12755, 12756, 12757, 12758, 12759, 12760, 12761, 1297, 4147, 589, 5632, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 4285, 712, 5125, 4131, 12788, 12789, 12790, 12791, 12792, 12793, 12794, 12795, 1297, 4177, 589, 5661, 2]
 // Exports: default
 
-// Module 12753 (PremiumGuildTierPill)
+// Module 12787 (PremiumGuildTierPill)
 import "initialize";
 import get_ActivityIndicator from "Button";
 import handleThemeChange from "handleThemeChange";
@@ -25,42 +25,42 @@ function PremiumGuildTierPill(arg0) {
   let obj = { style: tmp.tierPill, children: null };
   obj = { style: tmp.tierPillImage, source: null };
   if (BoostedGuildTiers.NONE === tier) {
-    let tmp22 = importDefault(12755);
-    const tmp21 = importDefault(12754);
+    let tmp22 = importDefault(12789);
+    const tmp21 = importDefault(12788);
     if (obj5.isThemeDark(theme)) {
       tmp22 = tmp21;
     }
     let tmp7 = tmp22;
-    obj5 = require(4101) /* AccessibilityAnnouncer */;
+    obj5 = require(4131) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_1 === tier) {
-    let tmp17 = importDefault(12757);
-    const tmp16 = importDefault(12756);
+    let tmp17 = importDefault(12791);
+    const tmp16 = importDefault(12790);
     if (obj4.isThemeDark(theme)) {
       tmp17 = tmp16;
     }
     tmp7 = tmp17;
-    obj4 = require(4101) /* AccessibilityAnnouncer */;
+    obj4 = require(4131) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_2 === tier) {
-    let tmp12 = importDefault(12759);
-    const tmp11 = importDefault(12758);
+    let tmp12 = importDefault(12793);
+    const tmp11 = importDefault(12792);
     if (obj3.isThemeDark(theme)) {
       tmp12 = tmp11;
     }
     tmp7 = tmp12;
-    obj3 = require(4101) /* AccessibilityAnnouncer */;
+    obj3 = require(4131) /* AccessibilityAnnouncer */;
   } else if (tmp6.TIER_3 === tier) {
-    let tmp8 = importDefault(12761);
-    const tmp26 = importDefault(12760);
+    let tmp8 = importDefault(12795);
+    const tmp26 = importDefault(12794);
     if (obj8.isThemeDark(theme)) {
       tmp8 = tmp26;
     }
     tmp7 = tmp8;
-    obj8 = require(4101) /* AccessibilityAnnouncer */;
+    obj8 = require(4131) /* AccessibilityAnnouncer */;
   }
   obj[1] = tmp7;
   const items = [closure_7(closure_4, obj), ];
   obj = { style: tmp.tierPillText, children: null };
-  obj[1] = require(4147) /* getGuildTierFromGuild */.getTierName(tier);
+  obj[1] = require(4177) /* getGuildTierFromGuild */.getTierName(tier);
   items[1] = closure_7(require(1297) /* Button */.LegacyText, obj);
   obj[1] = items;
   return closure_8(closure_3, obj);
@@ -90,8 +90,8 @@ export default function PremiumGuildPreview(guild) {
   items1 = [tmp.guild, guild.style];
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   obj = { guild, size: null, selected: false };
-  obj[1] = require(5632) /* GuildIconSizes */.GuildIconSizes.LARGE;
-  const items2 = [callback(importDefault(5632), obj), ];
+  obj[1] = require(5661) /* GuildIconSizes */.GuildIconSizes.LARGE;
+  const items2 = [callback(importDefault(5661), obj), ];
   const obj1 = { style: tmp.guildInfo, children: null };
   const items3 = [callback(require(1297) /* Button */.LegacyText, { style: tmp.guildName, children: guild.name }), callback(PremiumGuildTierPill, { tier: guild.premiumTier, theme: stateFromStores })];
   obj1[1] = items3;

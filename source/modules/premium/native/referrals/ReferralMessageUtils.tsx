@@ -1,10 +1,10 @@
-// Module ID: 11135
-// Function ID: 11136
+// Module ID: 11125
+// Function ID: 11126
 // Name: canOpenPremiumPlanDirectlyForReferralTrial
-// Dependencies: [3907, 6811, 2]
+// Dependencies: [3937, 6823, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 11135 (canOpenPremiumPlanDirectlyForReferralTrial)
+// Module 11125 (canOpenPremiumPlanDirectlyForReferralTrial)
 import reset from "reset";
 import emitChanges from "emitChanges";
 

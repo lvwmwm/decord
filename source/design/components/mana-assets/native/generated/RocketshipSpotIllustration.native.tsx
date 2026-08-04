@@ -1,10 +1,10 @@
-// Module ID: 6561
-// Function ID: 6562
+// Module ID: 6573
+// Function ID: 6574
 // Name: RocketshipSpotIllustration
-// Dependencies: [21, 5207, 6562, 2]
+// Dependencies: [21, 5236, 6574, 2]
 // Exports: RocketshipSpotIllustration
 
-// Module 6561 (RocketshipSpotIllustration)
+// Module 6573 (RocketshipSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/RocketshipSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const RocketshipSpotIllustration = function RocketshipSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6562);
+  obj[0] = importDefault(6574);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const RocketshipSpotIllustration = function RocketshipSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

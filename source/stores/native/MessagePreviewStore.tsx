@@ -1,9 +1,9 @@
-// Module ID: 8506
-// Function ID: 8507
+// Module ID: 8844
+// Function ID: 8845
 // Name: messages
-// Dependencies: [4475, 589, 12, 709, 2]
+// Dependencies: [4504, 589, 12, 709, 2]
 
-// Module 8506 (messages)
+// Module 8844 (messages)
 import { Store } from "initialize";
 
 const require = arg1;

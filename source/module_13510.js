@@ -1,7 +1,13 @@
 // Module ID: 13510
 // Function ID: 13511
-// Dependencies: [13444]
+// Dependencies: []
 
 // Module 13510
 
-export { default } from "module_13444";
+export default (arg0) => {
+  try {
+    return String(arg0);
+  } catch (err) {
+    return "Object";
+  }
+};

@@ -1,10 +1,10 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 16520
+// Function ID: 16521
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 1862, 21, 4255, 712, 500, 589, 8577, 9573, 3900, 16488, 4652, 4251, 1297, 5286, 3956, 1236, 1416, 4445, 4094, 4783, 16490, 2]
+// Dependencies: [32, 19, 17, 1862, 21, 4285, 712, 500, 589, 8908, 8662, 3930, 16521, 4681, 4281, 1297, 5315, 3986, 1236, 1416, 4474, 4124, 4812, 16523, 2]
 // Exports: EmojiRow
 
-// Module 16487 (EmojiRow)
+// Module 16520 (EmojiRow)
 import _slicedToArray from "_slicedToArray";
 import getAvatarURL from "getAvatarURL";
 import get_ActivityIndicator from "dispatcher";

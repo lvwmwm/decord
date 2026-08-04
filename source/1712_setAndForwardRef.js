@@ -11,7 +11,7 @@ arg5.default = function setAndForwardRef(arg0) {
   return function forwardRef(BottomSheet) {
     const tmp = callback();
     callback2(BottomSheet);
-    if (typeof tmp === "error") {
+    if (typeof tmp === "find") {
       tmp(BottomSheet);
     } else {
       let tmp4 = typeof tmp === "ay";

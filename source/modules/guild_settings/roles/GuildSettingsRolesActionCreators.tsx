@@ -1,10 +1,10 @@
-// Module ID: 16552
-// Function ID: 16553
+// Module ID: 16585
+// Function ID: 16586
 // Name: AsyncFromSyncIterator
-// Dependencies: [5, 676, 709, 5171, 10177, 1231, 2]
+// Dependencies: [5, 676, 709, 5200, 10960, 1231, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 16552 (AsyncFromSyncIterator)
+// Module 16585 (AsyncFromSyncIterator)
 import ComponentDispatcher from "ComponentDispatcher";
 import { ComponentActions } from "ME";
 

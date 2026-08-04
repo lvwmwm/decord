@@ -1,10 +1,10 @@
-// Module ID: 5835
-// Function ID: 5836
+// Module ID: 5846
+// Function ID: 5847
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useBulkBanPubSubExperimentConfig
 
-// Module 5835 (apexExperiment)
+// Module 5846 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

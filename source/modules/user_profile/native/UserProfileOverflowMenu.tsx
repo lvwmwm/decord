@@ -1,11 +1,11 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12402
+// Function ID: 12403
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4268, 1372, 3892, 1931, 676, 4273, 10600, 21, 589, 12316, 12322, 12074, 8442, 5581, 5601, 8105, 8676, 8677, 12323, 12324, 9101, 9102, 5608, 8741, 503, 8668, 1236, 4265, 4223, 4461, 12332, 1959, 9104, 10602, 7695, 10601, 7818, 500, 11830, 698, 9103, 4465, 3928, 5609, 4094, 3955, 5615, 12076, 9482, 7660, 9149, 712, 12333, 2]
+// Dependencies: [32, 19, 17, 4298, 1372, 3922, 1931, 676, 4303, 10278, 21, 589, 12403, 12409, 12176, 8710, 5610, 5630, 8117, 8733, 8734, 12410, 12411, 9156, 9157, 5637, 9267, 503, 8705, 1236, 4295, 4253, 4490, 12419, 1959, 9161, 10280, 7707, 10279, 7830, 500, 11890, 698, 9160, 4494, 3958, 5638, 4124, 3985, 5644, 12178, 8408, 7672, 8414, 712, 12420, 2]
 // Exports: default
 
-// Module 12315 (UserProfileOverflowMenu)
-import module_4461 from "module_4461";
+// Module 12402 (UserProfileOverflowMenu)
+import module_4490 from "module_4490";
 import apexExperiment from "apexExperiment";
 import { View } from "QUICK_SWITCHER";
 import getParticipants from "getParticipants";

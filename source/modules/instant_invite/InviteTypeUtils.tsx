@@ -1,10 +1,10 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7115
+// Function ID: 7116
 // Name: InviteTypes
-// Dependencies: [6882, 1376, 7104, 7105, 2]
+// Dependencies: [6894, 1376, 7116, 7117, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 7103 (InviteTypes)
+// Module 7115 (InviteTypes)
 import { isEventUpcoming } from "scheduledEventSort";
 import createChannelRecord from "createChannelRecord";
 import InviteSendStates from "InviteSendStates";
@@ -38,8 +38,8 @@ export const isGuildScheduledEventInviteEmbed = function isGuildScheduledEventIn
   }
   return tmp;
 };
-export const isRoleSubscriptionInvite = function isRoleSubscriptionInvite(invite) {
-  return invite.target_type === constants.ROLE_SUBSCRIPTIONS_PURCHASE;
+export const isRoleSubscriptionInvite = function isRoleSubscriptionInvite(target_type) {
+  return target_type.target_type === constants.ROLE_SUBSCRIPTIONS_PURCHASE;
 };
 export const isStreamInvite = function isStreamInvite(invite) {
   let tmp = invite.target_type === constants.STREAM;
@@ -103,7 +103,7 @@ export const getGuildInviteExtendedType = function getGuildInviteExtendedType(in
   } else if (invite.target_type === constants.EMBEDDED_APPLICATION) {
     PROFILE = obj.APPLICATION;
   } else {
-    obj = require(7105) /* getEstablishedDate */;
+    obj = require(7117) /* getEstablishedDate */;
     if (obj.guildInviteCanEmbedProfile(invite)) {
       PROFILE = obj.PROFILE;
     } else {

@@ -1,9 +1,9 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 9549
+// Function ID: 9550
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4247, 4292, 7031, 1372, 4342, 3892, 8999, 676, 21, 4255, 712, 4265, 38, 9016, 9238, 3955, 9239, 9104, 7032, 589, 1297, 4251, 4094, 9244, 5581, 8678, 1236, 9268, 4209, 4207, 4666, 1857, 9265, 4752, 8668, 1959, 8679, 9269, 7604, 4694, 7868, 4485, 8698, 8695, 8705, 9271, 8763, 9272, 8934, 5286, 2]
+// Dependencies: [19, 17, 4277, 4322, 7043, 1372, 4371, 3922, 9539, 676, 21, 4285, 712, 4295, 38, 9550, 9551, 3985, 9552, 9161, 7044, 589, 1297, 4281, 4124, 9557, 5610, 8735, 1236, 9577, 4239, 4237, 4695, 1857, 8209, 4781, 8705, 1959, 8736, 9578, 7616, 4723, 7880, 4514, 9158, 9388, 9053, 9580, 9169, 8259, 9475, 5315, 2]
 
-// Module 9015 (UserRowSubLabel)
+// Module 9549 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,15 +45,15 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9244), obj);
+        return callback(importDefault(9557), obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4094).getUserTag(user);
-    callback(tmp(4251).Text, obj);
-    const tmpResult = tmp(4094);
+    obj[3] = tmp(4124).getUserTag(user);
+    callback(tmp(4281).Text, obj);
+    const tmpResult = tmp(4124);
   }
   if (null == stateFromStores) {
     const obj1 = { style: null };
@@ -75,7 +75,7 @@ function UserRowSubLabel(arg0) {
     const items1 = [callback(tmp(1297).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4251).Text, obj5);
+    items1[1] = callback(tmp(4281).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "Array" };
+      let obj = { accessibilityActions: null, actions: "a" };
       obj[0] = items;
       return obj;
     } else {
@@ -650,7 +650,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const displayNameStylesFont = tmp6Result.useDisplayNameStylesFont({ displayNameStyles: tmp26 });
   const humanizeStatusResult = type(NONE[24]).humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
   let combined;
-  if (typeof memo3 !== "ge") {
+  if (typeof memo3 !== "_iter") {
     if (null != humanizeStatusResult) {
       const _HermesInternal = HermesInternal;
       combined = "" + memo3 + ", " + humanizeStatusResult;

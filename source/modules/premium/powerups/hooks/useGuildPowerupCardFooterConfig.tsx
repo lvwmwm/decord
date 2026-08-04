@@ -1,10 +1,10 @@
-// Module ID: 11743
-// Function ID: 11744
+// Module ID: 11804
+// Function ID: 11805
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1862, 4143, 676, 11711, 589, 4146, 11708, 2]
+// Dependencies: [1862, 4173, 676, 11772, 589, 4176, 11769, 2]
 // Exports: default
 
-// Module 11743 (useGuildPowerupCardFooterConfig)
+// Module 11804 (useGuildPowerupCardFooterConfig)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import BoostedGuildTiers from "BoostedGuildTiers";
 import { GuildFeatures } from "ME";
@@ -18,7 +18,7 @@ const result = require("ME").fileFinishedImporting("modules/premium/powerups/hoo
 
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   const _require = arg0;
-  const tmp3 = importDefault(11711)(arg0, skuId);
+  const tmp3 = importDefault(11772)(arg0, skuId);
   let obj = _require(589);
   const items = [createGuildRecordFromRust];
   const items1 = [arg0];
@@ -33,12 +33,12 @@ export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   }, items1);
   let tmp6 = tmp3.type !== constants.INACTIVE;
   if (!tmp6) {
-    tmp6 = skuId.skuId === _require(4146).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
-    const tmp7 = skuId.skuId === _require(4146).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    tmp6 = skuId.skuId === _require(4176).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
+    const tmp7 = skuId.skuId === _require(4176).GUILD_POWERUP_GUILD_THEME_SKU_ID && stateFromStores;
   }
   let tmp8 = tmp6;
   if (!tmp6) {
-    tmp8 = !importDefault(11708)(arg0, skuId, "GuildPowerupCardFooterAdmin");
+    tmp8 = !importDefault(11769)(arg0, skuId, "GuildPowerupCardFooterAdmin");
   }
   if (tmp8) {
     tmp8 = tmp3.type !== constants.TIER_OVERRIDE_ACTIVATED;

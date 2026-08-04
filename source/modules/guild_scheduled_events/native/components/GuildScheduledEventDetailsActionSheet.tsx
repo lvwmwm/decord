@@ -1,10 +1,10 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8873
+// Function ID: 8874
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 1862, 6882, 1378, 21, 4255, 712, 1236, 5581, 5601, 589, 8531, 8533, 8534, 8532, 1581, 8535, 8536, 8941, 5309, 5311, 12393, 12394, 2]
+// Dependencies: [32, 19, 17, 1862, 6894, 1378, 21, 4285, 712, 1236, 5610, 5630, 589, 8874, 8876, 8877, 8875, 1581, 8878, 8879, 9063, 5338, 5340, 9065, 9066, 2]
 // Exports: default
 
-// Module 8530 (GuildScheduledEventDetailsActionSheet)
+// Module 8873 (GuildScheduledEventDetailsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import usePrimaryActionButtonType from "usePrimaryActionButtonType";
 import { View } from "useSafeAreaInsets";
@@ -22,7 +22,7 @@ const require = arg1;
 ({ EventDetailSections: metroImportAll, MAX_RSVP_USER_DISPLAY_COUNT: c9 } = GUILD_EVENT_MAX_NAME_LENGTH);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 createCacheKey = { segmentedControl: null, header: null };
-createCacheKey = { paddingHorizontal: require("Themes").space.PX_12 };
+createCacheKey = { paddingTop: require("Themes").space.PX_8, paddingHorizontal: require("Themes").space.PX_12 };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexDirection: "column" };
 createCacheKey = createCacheKey.createStyles(createCacheKey);

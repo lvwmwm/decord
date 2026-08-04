@@ -1,23 +1,23 @@
-// Module ID: 13291
-// Function ID: 13292
+// Module ID: 13325
+// Function ID: 13326
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4116, 4255, 9484, 712, 1348, 9483, 4665, 4669, 4668, 4251, 2]
+// Dependencies: [19, 17, 21, 4146, 4285, 8410, 712, 1348, 8409, 4694, 4698, 4697, 4281, 2]
 // Exports: ContextMenuItem
 
-// Module 13291 (ContextMenuItem)
+// Module 13325 (ContextMenuItem)
 import noop from "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4116";
+import importDefaultResult from "module_4146";
 
 let c4;
 let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-let closure_6 = require("module_4116").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_6 = require("module_4146").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 let closure_7 = createCacheKey.createStyles((arg0) => {
   let obj = { container: null, containerRefresh: null, roundedTop: null, roundedBottom: null, border: null, pressed: null, icon: null, label: null, trailingIndicator: null };
-  obj = { padding: require(9484) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_PADDING, minHeight: require(9484) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
+  obj = { padding: require(8410) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_PADDING, minHeight: require(8410) /* CONTEXT_MENU_LONG_PRESS_DURATION_MS */.CONTEXT_MENU_ITEM_BASE_HEIGHT, flexDirection: "row", justifyContent: "space-between", alignItems: "center", gap: 8 };
   obj[0] = obj;
   obj[1] = { justifyContent: "flex-start" };
   obj = { borderTopLeftRadius: importDefault(712).radii.lg, borderTopRightRadius: importDefault(712).radii.lg };

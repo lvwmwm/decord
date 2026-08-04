@@ -1,10 +1,10 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16501
+// Function ID: 16502
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1874, 16459, 676, 21, 4255, 712, 1236, 4094, 16461, 1581, 1480, 5168, 16469, 10354, 7784, 5286, 1297, 10937, 16470, 5891, 8684, 7654, 5567, 2]
+// Dependencies: [32, 19, 17, 1874, 16492, 676, 21, 4285, 712, 1236, 4124, 16494, 1581, 1480, 5197, 16502, 9614, 7796, 5315, 1297, 10806, 16503, 5901, 8749, 7666, 5596, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 16468 (GuildSettingsModalAuditLogFilter)
+// Module 16501 (GuildSettingsModalAuditLogFilter)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import { View } from "FormRadio";
@@ -237,8 +237,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
 };
 export const createAuditLogFilterActionData = function createAuditLogFilterActionData(Button) {
   const _require = Button;
-  const obj = _require(16461);
-  const mapped = _require(16461).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
+  const obj = _require(16494);
+  const mapped = _require(16494).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

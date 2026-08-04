@@ -1,10 +1,10 @@
-// Module ID: 5568
-// Function ID: 5569
+// Module ID: 5597
+// Function ID: 5598
 // Name: Layer
-// Dependencies: [32, 19, 17, 676, 21, 5569, 5570, 2]
+// Dependencies: [32, 19, 17, 676, 21, 5598, 5599, 2]
 // Exports: LayerScope
 
-// Module 5568 (Layer)
+// Module 5597 (Layer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -21,7 +21,7 @@ function Layer(zIndex) {
   let context;
   let dependencyMap;
   let callback;
-  context = React.useContext(zIndex(5570).LayerContext);
+  context = React.useContext(zIndex(5599).LayerContext);
   dependencyMap = callback(React.useState({}), 2)[1];
   callback = React.useRef(null);
   const items = [context];
@@ -58,7 +58,7 @@ export const LayerScope = function LayerScope(arg0) {
   let zIndex;
   ({ children, zIndex } = arg0);
   const obj = {
-    value: importDefault(5569)(() => {
+    value: importDefault(5598)(() => {
       const layerContextManager = new callback(table[6]).LayerContextManager();
       return layerContextManager;
     }),
@@ -66,5 +66,5 @@ export const LayerScope = function LayerScope(arg0) {
   };
   const items = [children, callback2(Layer, { zIndex })];
   obj[1] = items;
-  return callback3(require(5570) /* add */.LayerContext.Provider, obj);
+  return callback3(require(5599) /* add */.LayerContext.Provider, obj);
 };

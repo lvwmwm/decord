@@ -1,9 +1,9 @@
-// Module ID: 6941
-// Function ID: 6942
+// Module ID: 6953
+// Function ID: 6954
 // Name: getMarketingBySurface
 // Dependencies: [589, 709, 2]
 
-// Module 6941 (getMarketingBySurface)
+// Module 6953 (getMarketingBySurface)
 import { Store } from "initialize";
 
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };

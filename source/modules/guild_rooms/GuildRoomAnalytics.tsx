@@ -1,10 +1,10 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16316
+// Function ID: 16317
 // Name: trackGuildRoomObjectInteracted
-// Dependencies: [1218, 1372, 4327, 4271, 16279, 16284, 676, 4450, 2]
+// Dependencies: [1218, 1372, 4356, 4301, 16312, 16317, 676, 4479, 2]
 // Exports: trackGuildRoomInteracted, trackGuildRoomLayoutToggled, trackGuildRoomObjectInteracted, trackGuildRoomOpened, trackGuildRoomSeatSelected, trackGuildRoomUserConnected, trackGuildRoomUserDisconnected, trackGuildRoomUserInteracted, trackGuildRoomUserUpdated
 
-// Module 16283 (trackGuildRoomObjectInteracted)
+// Module 16316 (trackGuildRoomObjectInteracted)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -513,7 +513,7 @@ export const trackGuildRoomUserConnected = function trackGuildRoomUserConnected(
 export const trackGuildRoomUserDisconnected = function trackGuildRoomUserDisconnected(channelId) {
   let guildId;
   let userId;
-  let obj = importDefault(4450);
+  let obj = importDefault(4479);
   ({ userId, guildId, channelId } = channelId);
   if (userId == null) {
     userId = id.getId();

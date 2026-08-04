@@ -1,12 +1,12 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9369
+// Function ID: 9370
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 4276, 1874, 4690, 6990, 589, 1856, 8786, 1236, 2]
+// Dependencies: [19, 4306, 1874, 4719, 7002, 589, 1856, 9201, 1236, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9248 (useGameMentionsAsPlainText)
+// Module 9369 (useGameMentionsAsPlainText)
 import noop from "noop";
-import map from "map";
+import handleLoadMessages from "handleLoadMessages";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import regExp from "regExp";
 
@@ -28,7 +28,7 @@ export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(st
   }, items);
   const games = _require(memo[4]).useGames(memo);
   const obj = _require(memo[4]);
-  const items1 = [map, mergeGuildAvatar];
+  const items1 = [handleLoadMessages, mergeGuildAvatar];
   const items2 = [state, memo];
   return _require(memo[5]).useStateFromStores(items1, () => {
     if (!obj.isNullOrEmpty(nsfwAllowed)) {

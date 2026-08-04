@@ -1,9 +1,9 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 12446
+// Function ID: 12447
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [19, 17, 7135, 21, 4255, 1481, 10279, 9300, 4666, 1236, 9317, 589, 5891, 7134, 2]
+// Dependencies: [19, 17, 7147, 21, 4285, 1481, 12447, 8193, 4695, 1236, 8217, 589, 5901, 7146, 2]
 
-// Module 10278 (ForumChannelCloseSearchButton)
+// Module 12446 (ForumChannelCloseSearchButton)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import initialize from "initialize";
@@ -53,7 +53,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
   let placeholder;
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(10279);
+  let obj = channelId(12447);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   const tmp = callback();
   const items = [initialize];
@@ -102,7 +102,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
           const obj3 = outer1_1(outer1_2[10]);
         }
       };
-      obj[1] = jsx(tmp2(5891).SearchField, { size: "sm", defaultValue: null, onChange: null, placeholder: null, autoFocus: null, onClear: null, grow: false });
+      obj[1] = jsx(tmp2(5901).SearchField, { size: "sm", defaultValue: null, onChange: null, placeholder: null, autoFocus: null, onClear: null, grow: false });
       tmp6Result = tmp6(View, obj);
       const tmp7 = View;
     }

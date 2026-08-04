@@ -1,10 +1,10 @@
-// Module ID: 7707
-// Function ID: 7708
+// Module ID: 7719
+// Function ID: 7720
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [19, 17, 676, 21, 4255, 712, 4471, 1236, 4251, 3946, 1945, 7708, 7710, 4211, 7760, 1297, 5078, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 4500, 1236, 4281, 3976, 1945, 7720, 7722, 4241, 7772, 1297, 5107, 2]
 // Exports: default
 
-// Module 7707 (StageChannelAgeVerificationNoticeContent)
+// Module 7719 (StageChannelAgeVerificationNoticeContent)
 import "noop";
 import { View } from "set";
 import { HelpdeskArticles } from "ME";
@@ -19,7 +19,7 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   let closure_1;
   closure_1 = createCacheKey();
-  let obj = onConfirmPress(4471);
+  let obj = onConfirmPress(4500);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1236).intl;
   const format = intl.format;
@@ -69,21 +69,21 @@ function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   let tmp = createCacheKey();
   let Text = require;
   let tmp8Result = dependencyMap;
-  let obj = require(4471) /* useAgeVerificationRunner */;
+  let obj = require(4500) /* useAgeVerificationRunner */;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   if (onConfirmPress.noBackground) {
     obj = { style: null, children: null };
     obj[0] = tmp.noticeContainer;
     if (isVerifiedTeen) {
-      let WarningIcon = Text(4211).CircleInformationIcon;
+      let WarningIcon = Text(4241).CircleInformationIcon;
     } else {
-      WarningIcon = Text(7760).WarningIcon;
+      WarningIcon = Text(7772).WarningIcon;
     }
     obj = { size: "refresh_sm", color: null, style: null };
     obj[1] = importDefault(712).colors.TEXT_DEFAULT;
     obj[2] = tmp.icon;
     const items = [closure_5(WarningIcon, obj), ];
-    Text = Text(4251).Text;
+    Text = Text(4281).Text;
     const obj1 = { variant: "text-sm/medium", color: "text-subtle", style: null, children: null };
     obj1[2] = tmp.contentText;
     tmp = StageChannelAgeVerificationNoticeContent;
@@ -132,7 +132,7 @@ export default function StageChannelAgeVerificationNotice(arg0) {
   ({ divider, channelId } = arg0);
   ({ noBackground, onConfirmPress, style } = arg0);
   const tmp = createCacheKey();
-  let obj = require(5078) /* useIsStageSpeakingDisabledForCurrentUser */;
+  let obj = require(5107) /* useIsStageSpeakingDisabledForCurrentUser */;
   if (obj.useShouldAgeVerifyToSpeakForCurrentUser(channelId)) {
     const _Array = Array;
     if (Array.isArray(divider)) {

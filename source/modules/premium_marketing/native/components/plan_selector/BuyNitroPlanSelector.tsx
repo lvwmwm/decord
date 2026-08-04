@@ -1,10 +1,10 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12584
+// Function ID: 12585
 // Name: BuyNitroPlanSelector
-// Dependencies: [19, 17, 5738, 4238, 505, 21, 4255, 712, 5096, 589, 7557, 12551, 12552, 7651, 1236, 12553, 7783, 7782, 7320, 5735, 500, 2]
+// Dependencies: [19, 17, 5767, 4268, 505, 21, 4285, 712, 5125, 589, 7569, 12585, 12586, 7663, 1236, 12587, 7795, 7794, 7332, 5764, 500, 2]
 // Exports: default
 
-// Module 12550 (BuyNitroPlanSelector)
+// Module 12584 (BuyNitroPlanSelector)
 import "formatSingleCurrencyPrice";
 import { View } from "TableRadioRow";
 import updateProduct from "updateProduct";
@@ -46,19 +46,19 @@ export default function BuyNitroPlanSelector(planSelection) {
     }
     return product;
   });
-  let obj1 = planSelection(7557);
+  let obj1 = planSelection(7569);
   isBuyNitroPurchaseBlocked = obj1.useIsBuyNitroPurchaseBlocked();
-  let obj2 = planSelection(12551);
+  let obj2 = planSelection(12585);
   updateProduct = obj2.useBuyNitroPlanLabelRenderer();
-  let obj3 = planSelection(12552);
+  let obj3 = planSelection(12586);
   closure_5 = obj3.useBuyNitroPlanSubLabelRenderer();
   obj = { style: tmp.header, children: null };
   obj = { title: null };
   const intl = planSelection(1236).intl;
   obj[0] = intl.string(planSelection(1236).t.u95Dt4);
-  const items1 = [callback(selection(7651), obj), ];
+  const items1 = [callback(selection(7663), obj), ];
   obj1 = { selectedTier: selection.tier, setSelectedTier: selection.setTier, disabled: isBuyNitroPurchaseBlocked };
-  items1[1] = callback(selection(12553), obj1);
+  items1[1] = callback(selection(12587), obj1);
   obj[1] = items1;
   const children = [callback2(isBuyNitroPurchaseBlocked, obj), , ];
   let tmp8Result = null != selection.productId;
@@ -73,7 +73,7 @@ export default function BuyNitroPlanSelector(planSelection) {
       obj[3] = isBuyNitroPurchaseBlocked;
       return outer1_7(planSelection(_undefined[17]).TableRadioRow, obj, productId.productId);
     });
-    tmp8Result = tmp8(tmp2(7783).TableRadioGroup, obj2);
+    tmp8Result = tmp8(tmp2(7795).TableRadioGroup, obj2);
   }
   children[1] = tmp8Result;
   tmp8Result = null != stateFromStores;
@@ -90,16 +90,16 @@ export default function BuyNitroPlanSelector(planSelection) {
     const obj4 = { message: null };
     const intl2 = tmp2(1236).intl;
     const obj5 = { kunaPriceWithCurrency: null };
-    let tmp2Result = tmp2(5735);
+    let tmp2Result = tmp2(5764);
     const obj6 = { convertToMajorUnits: null };
     const result = stateFromStores.price * closure_5;
     tmp2Result = tmp2(500);
     obj6[0] = tmp2Result.isAndroid();
     obj5[0] = tmp2Result.formatPrice(result, CurrencyCodes.HRK, obj6);
     obj4[0] = intl2.formatToPlainString(tmp2(1236).t["9hnZoK"], obj5);
-    obj3[1] = tmp8(selection(7320), obj4);
+    obj3[1] = tmp8(selection(7332), obj4);
     tmp8Result = tmp8(tmp7, obj3);
-    const tmp9Result = selection(7320);
+    const tmp9Result = selection(7332);
   }
   children[2] = tmp8Result;
   return callback2(isBuyNitroPurchaseBlocked, { children });

@@ -1,10 +1,10 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 6842
+// Function ID: 6843
 // Name: create
 // Dependencies: [12, 2]
 // Exports: getRTCTotalBytes
 
-// Module 6830 (create)
+// Module 6842 (create)
 let closure_2 = [];
 let RTCBandwidthMonitor;
 class RTCBandwidthMonitor {
@@ -65,7 +65,7 @@ class RTCBandwidthMonitor {
   }
 }
 RTCBandwidthMonitor["create"] = function create() {
-  if (typeof RTCBandwidthMonitor !== "error") {
+  if (typeof RTCBandwidthMonitor !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(RTCBandwidthMonitor.prototype);

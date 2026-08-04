@@ -1,10 +1,10 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16248
+// Function ID: 16249
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 676, 21, 4255, 1480, 5243, 4251, 1236, 1945, 4666, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4285, 1480, 5272, 4281, 1236, 1945, 4695, 2]
 // Exports: default
 
-// Module 16215 (ExistingUserAgeGateConfirm)
+// Module 16248 (ExistingUserAgeGateConfirm)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -113,14 +113,14 @@ export default function ExistingUserAgeGateConfirm(age) {
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = onConfirm(1236).intl;
   obj[3] = intl.format(onConfirm(1236).t.wumolR, { age: age.age });
-  const items = [callback2(onConfirm(4251).Text, obj), , ];
+  const items = [callback2(onConfirm(4281).Text, obj), , ];
   let obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const intl2 = onConfirm(1236).intl;
   const obj2 = { helpURL: null };
   const tmp2 = callback(React.useState(false), 2);
   obj2[0] = importDefault(1945).getArticleURL(HelpdeskArticles.AGE_GATE);
   obj1[3] = intl2.format(onConfirm(1236).t.n3QjDE, obj2);
-  items[1] = callback2(onConfirm(4251).Text, obj1);
+  items[1] = callback2(onConfirm(4281).Text, obj1);
   const obj3 = { style: tmp.buttonWrapper, children: null };
   const obj4 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
   const intl3 = onConfirm(1236).intl;
@@ -135,8 +135,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj3[1] = callback2(onConfirm(4666).Button, obj4);
+  obj3[1] = callback2(onConfirm(4695).Button, obj4);
   items[2] = callback2(View, obj3);
   obj[2] = items;
-  return callback3(onConfirm(5243).SafeAreaPaddingView, obj);
+  return callback3(onConfirm(5272).SafeAreaPaddingView, obj);
 };

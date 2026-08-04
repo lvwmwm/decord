@@ -1,7 +1,7 @@
 // Module ID: 11303
 // Function ID: 11304
 // Name: ForumPostGrid
-// Dependencies: [19, 1372, 3892, 11304, 21, 11305, 11309, 11320, 589, 38, 5800, 9315, 11324, 11325, 8503, 11330, 1382, 2]
+// Dependencies: [19, 1372, 3922, 11304, 21, 11305, 11309, 11320, 589, 38, 5829, 8214, 11324, 11325, 8216, 11330, 1382, 2]
 // Exports: ForumPostListDisabled
 
 // Module 11303 (ForumPostGrid)
@@ -173,9 +173,9 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
   const obj2 = threadId(589);
   const tmp = threadId;
   const tmp4 = stateFromStores;
-  const firstForumPostMessage = threadId(5800).useFirstForumPostMessage(stateFromStores);
+  const firstForumPostMessage = threadId(5829).useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(9315);
+  threadId(8214);
   if (loaded) {
     obj = { style: null, children: null };
     obj[0] = style;

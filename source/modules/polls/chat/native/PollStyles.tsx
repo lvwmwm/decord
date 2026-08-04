@@ -1,35 +1,35 @@
-// Module ID: 8123
-// Function ID: 8124
+// Module ID: 8135
+// Function ID: 8136
 // Name: normal
-// Dependencies: [4455, 8124, 8125, 2]
+// Dependencies: [4484, 8136, 8137, 2]
 
-// Module 8123 (normal)
+// Module 8135 (normal)
 function normal(border) {
   const _require = border;
   const obj = { border: border.colors.BORDER_SUBTLE, borderWidth: 1, fill: border.colors.CARD_SECONDARY_BG, label: null, opacity: 1, answerBackground: null, answerFill: null, radioStyle: null, radioBackground: null, radioForeground: null };
-  const match = _require(4455).match(arg1);
-  const str = _require(4455);
-  obj[3] = match.with(_require(8124).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
+  const match = _require(4484).match(arg1);
+  const str = _require(4484);
+  obj[3] = match.with(_require(8136).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
   obj[5] = border.colors.BACKGROUND_MOD_MUTED;
   obj[6] = border.colors.BACKGROUND_MOD_SUBTLE;
-  obj[7] = _require(8125).PollRadioStyle.HOLLOW;
+  obj[7] = _require(8137).PollRadioStyle.HOLLOW;
   obj[8] = border.colors.INTERACTIVE_TEXT_ACTIVE;
   obj[9] = border.colors.WHITE;
   return obj;
 }
 function normalVote(border, arg1) {
-  if (typeof normal !== "error") {
+  if (typeof normal !== "find") {
     HermesBuiltin.throwTypeError();
   }
   let obj = {};
   const _require = border;
   obj = { border: border.colors.BORDER_SUBTLE, borderWidth: 1, fill: border.colors.CARD_SECONDARY_BG, label: null, opacity: 1, answerBackground: null, answerFill: null, radioStyle: null, radioBackground: null, radioForeground: null };
-  const match = _require(4455).match(arg1);
-  const str = _require(4455);
-  obj[3] = match.with(_require(8124).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
+  const match = _require(4484).match(arg1);
+  const str = _require(4484);
+  obj[3] = match.with(_require(8136).PollLayoutTypes.IMAGE_ONLY_ANSWERS, () => border.colors.WHITE).otherwise(() => border.colors.TEXT_DEFAULT);
   obj[5] = border.colors.BACKGROUND_MOD_MUTED;
   obj[6] = border.colors.BACKGROUND_MOD_SUBTLE;
-  obj[7] = _require(8125).PollRadioStyle.HOLLOW;
+  obj[7] = _require(8137).PollRadioStyle.HOLLOW;
   obj[8] = border.colors.INTERACTIVE_TEXT_ACTIVE;
   obj[9] = border.colors.WHITE;
   const merged = Object.assign(obj);
@@ -40,7 +40,7 @@ function notVoted(colors) {
   const obj = {};
   const merged = Object.assign(normalVote(colors, arg1));
   obj.answerFill = colors.colors.INTERACTIVE_BACKGROUND_ACTIVE;
-  obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.NONE;
+  obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.NONE;
   return obj;
 }
 function victorNotSelected(colors) {
@@ -49,42 +49,42 @@ function victorNotSelected(colors) {
   obj.border = colors.colors.STATUS_POSITIVE;
   obj.borderWidth = 1;
   obj.answerFill = colors.colors.POLLS_VICTOR_FILL;
-  obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.NONE;
+  obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.NONE;
   return obj;
 }
 const result = require("NativeShadowType").fileFinishedImporting("modules/polls/chat/native/PollStyles.tsx");
 
 export const pollStyleSets = {
   loserSelected(colors) {
-    if (typeof notVoted !== "error") {
+    if (typeof notVoted !== "find") {
       HermesBuiltin.throwTypeError();
     }
     let obj = {};
     obj = {};
     const merged = Object.assign(normalVote(colors, arg1));
     obj.answerFill = colors.colors.INTERACTIVE_BACKGROUND_ACTIVE;
-    obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.NONE;
+    obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.NONE;
     const merged1 = Object.assign(obj);
-    obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.CHECKMARK;
+    obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.CHECKMARK;
     obj.radioBackground = colors.colors.INTERACTIVE_TEXT_ACTIVE;
     obj.radioForeground = colors.colors.BACKGROUND_BASE_LOW;
     return obj;
   },
   normal,
   notVoted,
-  selected(colors) {
+  selected(guild, arg1, selected) {
     const obj = {};
-    const merged = Object.assign(normalVote(colors, arg1));
-    obj.border = colors.colors.BACKGROUND_BRAND;
+    const merged = Object.assign(normalVote(guild, arg1));
+    obj.border = guild.colors.BACKGROUND_BRAND;
     obj.borderWidth = 1;
-    obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.FILLED;
-    obj.radioBackground = colors.colors.REDESIGN_INPUT_CONTROL_SELECTED;
-    obj.radioForeground = colors.colors.STATUS_POSITIVE_TEXT;
+    obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.FILLED;
+    obj.radioBackground = guild.colors.REDESIGN_INPUT_CONTROL_SELECTED;
+    obj.radioForeground = guild.colors.STATUS_POSITIVE_TEXT;
     return obj;
   },
   victorNotSelected,
   victorSelected(colors) {
-    if (typeof victorNotSelected !== "error") {
+    if (typeof victorNotSelected !== "find") {
       HermesBuiltin.throwTypeError();
     }
     let obj = {};
@@ -93,9 +93,9 @@ export const pollStyleSets = {
     obj.border = colors.colors.STATUS_POSITIVE;
     obj.borderWidth = 1;
     obj.answerFill = colors.colors.POLLS_VICTOR_FILL;
-    obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.NONE;
+    obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.NONE;
     const merged1 = Object.assign(obj);
-    obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.CHECKMARK;
+    obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.CHECKMARK;
     obj.radioBackground = colors.colors.STATUS_POSITIVE;
     obj.radioForeground = colors.colors.STATUS_POSITIVE_TEXT;
     return obj;
@@ -106,7 +106,7 @@ export const pollStyleSets = {
     obj.border = colors.colors.BACKGROUND_BRAND;
     obj.borderWidth = 1;
     obj.answerFill = colors.colors.POLLS_VOTED_FILL;
-    obj.radioStyle = require(8125) /* NativeShadowType */.PollRadioStyle.CHECKMARK;
+    obj.radioStyle = require(8137) /* NativeShadowType */.PollRadioStyle.CHECKMARK;
     obj.radioBackground = colors.colors.REDESIGN_INPUT_CONTROL_SELECTED;
     obj.radioForeground = colors.colors.STATUS_POSITIVE_TEXT;
     return obj;

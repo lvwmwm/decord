@@ -1,9 +1,9 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16788
+// Function ID: 16789
 // Name: prototype
-// Dependencies: [5, 12840, 8615, 676, 5200, 16757, 709, 530, 1464, 16758, 5855, 2]
+// Dependencies: [5, 12874, 8945, 676, 5229, 16789, 709, 530, 1464, 16790, 5865, 2]
 
-// Module 16756 (prototype)
+// Module 16788 (prototype)
 import _navigateToGuild from "_navigateToGuild";
 import map from "map";
 import { DISCOVERY_ALL_CATEGORIES_ID as closure_6 } from "DEFAULT_DISCOVERY_CATEGORY_ID";

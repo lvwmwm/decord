@@ -1,9 +1,9 @@
-// Module ID: 6284
-// Function ID: 6285
+// Module ID: 6294
+// Function ID: 6295
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6284 (metadata)
+// Module 6294 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLeftForward3dIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/101ee5ea01dccf123cc8695c1159dc41925b321a49872bc65b0d7ca6057ce169.png";

@@ -1,9 +1,9 @@
-// Module ID: 6927
-// Function ID: 6928
+// Module ID: 6939
+// Function ID: 6940
 // Name: fromServer
-// Dependencies: [6899, 6928, 6930, 6933, 6934, 6935, 6936, 6937, 6938, 6939, 6940, 6929, 2]
+// Dependencies: [6911, 6940, 6942, 6945, 6946, 6947, 6948, 6949, 6950, 6951, 6952, 6941, 2]
 
-// Module 6927 (fromServer)
+// Module 6939 (fromServer)
 import fromServer from "fromServer";
 import { CountdownTimerBlockRecord } from "fromServer";
 import { FeaturedBlockRecord } from "fromServer";
@@ -51,7 +51,7 @@ prototype = function CollectiblesShopHomeRecord(shop_blocks) {
   return obj;
 }.prototype;
 prototype["fromServer"] = function fromServer(shop_blocks) {
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);

@@ -1,10 +1,10 @@
-// Module ID: 10371
-// Function ID: 10372
+// Module ID: 9633
+// Function ID: 9634
 // Name: setNextFavoritesGuildViewSource
-// Dependencies: [4072, 676, 1865, 698, 2]
+// Dependencies: [4102, 676, 1865, 698, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddModalOpened, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildUpsellModalOpened, trackFavoritesGuildViewed, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 10371 (setNextFavoritesGuildViewSource)
+// Module 9633 (setNextFavoritesGuildViewSource)
 import handleConnectionOpen from "handleConnectionOpen";
 import { AnalyticEvents } from "ME";
 

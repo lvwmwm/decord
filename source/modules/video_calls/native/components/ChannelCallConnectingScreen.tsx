@@ -1,10 +1,10 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 10739
+// Function ID: 10740
 // Name: VoiceSettingsActionSheet
-// Dependencies: [19, 17, 4269, 4302, 3883, 4270, 10388, 676, 505, 21, 4255, 10726, 4223, 5309, 5311, 10887, 4446, 10857, 8657, 10908, 10909, 1236, 9024, 5067, 4191, 10910, 9115, 589, 9114, 5859, 10917, 9220, 10918, 712, 10771, 10919, 2]
+// Dependencies: [19, 17, 4299, 4332, 3913, 4300, 9655, 676, 505, 21, 4285, 10576, 4253, 5338, 5340, 10740, 4475, 10709, 8987, 10761, 10762, 1236, 9077, 5096, 4221, 10763, 10662, 589, 10770, 5869, 10771, 10772, 10787, 712, 10622, 10788, 2]
 // Exports: CallConnectingActionBar, ChannelCallConnectingHeader, showVoiceSettingsActionSheet
 
-// Module 10886 (VoiceSettingsActionSheet)
+// Module 10739 (VoiceSettingsActionSheet)
 import VoiceChatCallScreenHeaderIconInner from "VoiceChatCallScreenHeaderIconInner";
 import { View } from "useIsVoiceChannelFull";
 import set from "set";
@@ -24,13 +24,13 @@ const require = arg1;
 function VoiceSettingsActionSheet() {
   let obj = { scrollable: true, children: null };
   obj = { children: null };
-  obj[0] = callback(importDefault(10887), {});
-  obj[1] = callback(require(5311) /* BottomSheetModal */.BottomSheetScrollView, obj);
-  return callback(require(5309) /* Background */.BottomSheet, obj);
+  obj[0] = callback(importDefault(10740), {});
+  obj[1] = callback(require(5340) /* BottomSheetModal */.BottomSheetScrollView, obj);
+  return callback(require(5338) /* Background */.BottomSheet, obj);
 }
 function JoinMutedButton(channel) {
-  const tmp = importDefault(4191)();
-  return callback(require(10910) /* ChannelCallMicButton */.ChannelCallMicButton, { channel: channel.channel, disableTint: "light" === importDefault(4191)(), isSmallSize: false });
+  const tmp = importDefault(4221)();
+  return callback(require(10763) /* ChannelCallMicButton */.ChannelCallMicButton, { channel: channel.channel, disableTint: "light" === importDefault(4221)(), isSmallSize: false });
 }
 function JoinVoiceButton(channel) {
   channel = channel.channel;
@@ -134,14 +134,14 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 let result = require("set").fileFinishedImporting("modules/video_calls/native/components/ChannelCallConnectingScreen.tsx");
 
 export const showVoiceSettingsActionSheet = function showVoiceSettingsActionSheet(guildId) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { guildId };
   obj.openLazy(() => Promise.resolve(closure_16), "voice settings", obj);
 };
 export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  let obj = channel(10857);
+  let obj = channel(10709);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (getUncachedChannelPermissions.can(Permissions.CREATE_INSTANT_INVITE, channel)) {
@@ -158,14 +158,14 @@ export const ChannelCallConnectingHeader = function ChannelCallConnectingHeader(
   let tmp9Result = null;
   if (null != fn) {
     obj = { source: null, onPress: null, accessibilityLabel: null };
-    obj[0] = tmp2(10909);
+    obj[0] = tmp2(10762);
     obj[1] = fn;
     const intl = tmp5(1236).intl;
     obj = { channelName: null };
     obj[0] = tmp4;
     obj[2] = intl.formatToPlainString(tmp5(1236).t["dHHb/2"], obj);
-    tmp9Result = tmp9(tmp2(10908), obj);
-    const tmp2Result = tmp2(10908);
+    tmp9Result = tmp9(tmp2(10761), obj);
+    const tmp2Result = tmp2(10761);
   }
   const obj1 = { children: null };
   items[1] = tmp9Result;

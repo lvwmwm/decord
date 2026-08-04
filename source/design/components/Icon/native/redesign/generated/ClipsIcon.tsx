@@ -1,10 +1,10 @@
-// Module ID: 14089
-// Function ID: 14090
+// Module ID: 14123
+// Function ID: 14124
 // Name: ClipsIcon
-// Dependencies: [19, 21, 712, 3958, 14090, 2]
+// Dependencies: [19, 21, 712, 3988, 14124, 2]
 // Exports: ClipsIcon
 
-// Module 14089 (ClipsIcon)
+// Module 14123 (ClipsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ClipsIcon = function ClipsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14090) /* registerAsset */;
+  obj[0] = require(14124) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

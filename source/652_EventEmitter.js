@@ -18,7 +18,7 @@ class EventEmitter {
   }
 }
 function _addListener(_events, type, listener, arg3) {
-  if (typeof listener === "HAS_APPLICATION") {
+  if (typeof listener === "three_button_mouse") {
     const _TypeError = TypeError;
     const typeError = new TypeError("The \"listener\" argument must be of type Function. Received type " + typeof listener);
     throw typeError;
@@ -43,7 +43,7 @@ function _addListener(_events, type, listener, arg3) {
     if (undefined === arr) {
       _events[type] = listener;
       _events._eventsCount = _events._eventsCount + 1;
-    } else if (typeof arr === "error") {
+    } else if (typeof arr === "find") {
       const items = [, ];
       if (arg3) {
         items[0] = listener;
@@ -121,7 +121,7 @@ function _listeners(_events, arg1, arg2) {
     let items1 = _events[arg1];
     if (undefined === items1) {
       let items = [];
-    } else if (typeof items1 === "error") {
+    } else if (typeof items1 === "find") {
       if (arg2) {
         items1 = [];
         items1[0] = items1.listener || items1;
@@ -166,7 +166,7 @@ function _listeners(_events, arg1, arg2) {
 function listenerCount(arg0) {
   const _events = this._events;
   if (undefined !== _events) {
-    if (typeof _events[arg0] === "error") {
+    if (typeof _events[arg0] === "find") {
       return 1;
     } else if (undefined !== arr) {
       return arr.length;
@@ -236,7 +236,7 @@ if (null) {
         return;
       }
       setMaxListeners(arg0) {
-        if (typeof global !== "SENTRY_RELEASE") {
+        if (typeof global !== "V") {
           num = 0;
           if (global >= 0) {
             tmp = NumberIsNaN;
@@ -316,7 +316,7 @@ if (null) {
             flag3 = false;
             return false;
           } else {
-            if (typeof arr2 === "error") {
+            if (typeof arr2 === "find") {
               tmp7 = apply;
               tmp8 = apply(arr2, self, items);
             } else {
@@ -351,7 +351,7 @@ if (null) {
         return this;
       }
       once(arg0, arg1) {
-        if (typeof require === "HAS_APPLICATION") {
+        if (typeof require === "three_button_mouse") {
           tmp = globalThis;
           _TypeError = TypeError;
           tmp2 = new.target;
@@ -363,7 +363,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: null, type: null, listener: null };
+          obj = { fired: false, wrapFn: "a", target: "a", type: "isArray", listener: "slice" };
           obj[2] = this;
           obj[3] = global;
           obj[4] = require;
@@ -376,7 +376,7 @@ if (null) {
         }
       }
       prependOnceListener(arg0, arg1) {
-        if (typeof require === "HAS_APPLICATION") {
+        if (typeof require === "three_button_mouse") {
           tmp = globalThis;
           _TypeError = TypeError;
           tmp2 = new.target;
@@ -388,7 +388,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: null, type: null, listener: null };
+          obj = { fired: false, wrapFn: "a", target: "a", type: "isArray", listener: "slice" };
           obj[2] = this;
           obj[3] = global;
           obj[4] = require;
@@ -401,7 +401,7 @@ if (null) {
         }
       }
       removeListener(arg0, arg1) {
-        if (typeof require === "HAS_APPLICATION") {
+        if (typeof require === "three_button_mouse") {
           tmp14 = globalThis;
           _TypeError = TypeError;
           tmp15 = new.target;
@@ -423,7 +423,7 @@ if (null) {
             } else {
               if (arr !== require) {
                 if (arr.listener !== require) {
-                  if (typeof arr !== "error") {
+                  if (typeof arr !== "find") {
                     num3 = 1;
                     diff = arr.length - 1;
                     num4 = 0;
@@ -549,7 +549,7 @@ if (null) {
               return self;
             } else {
               arr = _events[global];
-              if (typeof arr === "error") {
+              if (typeof arr === "find") {
                 removeListenerResult = self.removeListener(global, arr);
               } else if (undefined !== arr) {
                 num = 1;
@@ -573,7 +573,7 @@ if (null) {
         return _listeners(this, global, false);
       }
       static listenerCount(arg0, arg1) {
-        if (typeof global.listenerCount === "error") {
+        if (typeof global.listenerCount === "find") {
           listenerCountResult = global.listenerCount(require);
         } else {
           call = listenerCount.call;
@@ -583,7 +583,7 @@ if (null) {
             if (undefined !== _events) {
               arr = _events[require];
               num = 1;
-              if (typeof arr !== "error") {
+              if (typeof arr !== "find") {
                 num = 0;
                 if (undefined !== arr) {
                   num = arr.length;
@@ -621,7 +621,7 @@ if (null) {
           error(arg0);
         }
         function resolver() {
-          if (typeof obj.removeListener !== "HAS_APPLICATION") {
+          if (typeof obj.removeListener !== "three_button_mouse") {
             obj.removeListener("error", errorListener);
           }
           const slice = [].slice;
@@ -636,13 +636,13 @@ if (null) {
         obj = resolver;
         obj = { once: true };
         errorListener = resolver;
-        if (typeof obj.on === "error") {
+        if (typeof obj.on === "find") {
           if (obj.once) {
             obj.once(tmp, resolver);
           } else {
             obj.on(tmp, resolver);
           }
-        } else if (typeof obj.addEventListener === "HAS_APPLICATION") {
+        } else if (typeof obj.addEventListener === "three_button_mouse") {
           const _TypeError = TypeError;
           const typeError = new TypeError("The \"emitter\" argument must be of type EventEmitter. Received type " + typeof obj);
           throw typeError;
@@ -657,16 +657,16 @@ if (null) {
           const listener = obj.addEventListener(tmp, wrapListener);
         }
         if ("error" !== error) {
-          if (typeof obj.on !== "HAS_APPLICATION") {
+          if (typeof obj.on !== "three_button_mouse") {
             obj = { once: true };
             error = "error";
-            if (typeof obj.on === "error") {
+            if (typeof obj.on === "find") {
               if (obj.once) {
                 obj.once("error", errorListener);
               } else {
                 obj.on("error", errorListener);
               }
-            } else if (typeof obj.addEventListener === "HAS_APPLICATION") {
+            } else if (typeof obj.addEventListener === "three_button_mouse") {
               const _TypeError2 = TypeError;
               const typeError1 = new TypeError("The \"emitter\" argument must be of type EventEmitter. Received type " + typeof obj);
               throw typeError1;
@@ -701,7 +701,7 @@ if (null) {
       return c4;
     };
     obj[2] = function set(arg0) {
-      if (typeof arg0 !== "SENTRY_RELEASE") {
+      if (typeof arg0 !== "V") {
         if (arg0 >= 0) {
           if (!tmp3(arg0)) {
             let closure_4 = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 10685
-// Function ID: 10686
+// Module ID: 10535
+// Function ID: 10536
 // Name: _handleJoinEmbeddedActivityInternal
-// Dependencies: [5, 4292, 1372, 1931, 1874, 1371, 4280, 10686, 10687, 3873, 10705, 10994, 10996, 10617, 11003, 8136, 11004, 10664, 2]
+// Dependencies: [5, 4322, 1372, 1931, 1874, 1371, 4310, 10536, 10537, 3903, 10555, 10871, 10873, 10320, 10880, 8148, 10881, 10513, 2]
 // Exports: default
 
-// Module 10685 (_handleJoinEmbeddedActivityInternal)
+// Module 10535 (_handleJoinEmbeddedActivityInternal)
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -102,7 +102,7 @@ function _handleJoinEmbeddedActivityInternal() {
                 throwTypeErrorResult = dependencyMap;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                closure_10 = callback2(10687)();
+                closure_10 = callback2(10537)();
                 throwTypeErrorResult = channel;
                 throwTypeErrorResult = callback2;
                 _private = channel.getChannel(callback2);
@@ -141,7 +141,7 @@ function _handleJoinEmbeddedActivityInternal() {
                       if (store.getVoiceChannelId() === callback2) {
                         if (null != currentEmbeddedActivity2) {
                           if (currentEmbeddedActivity2.applicationId === callback) {
-                            let obj13 = callback(3873);
+                            let obj13 = callback(3903);
                             const embeddedActivityLocationChannelId = obj13.getEmbeddedActivityLocationChannelId(currentEmbeddedActivity2.location);
                             if (embeddedActivityLocationChannelId === store.getVoiceChannelId()) {
                               throwTypeErrorResult = callback2;
@@ -150,7 +150,7 @@ function _handleJoinEmbeddedActivityInternal() {
                               throwTypeErrorResult = dependencyMap;
                               throwTypeErrorResult = guildId;
                               throwTypeErrorResult = currentEmbeddedActivity2;
-                              throwTypeErrorResult = callback2(10705)(guildId, currentEmbeddedActivity2.location);
+                              throwTypeErrorResult = callback2(10555)(guildId, currentEmbeddedActivity2.location);
                               throwTypeErrorResult = globalThis;
                               application = 3;
                               const obj2 = { value: null, done: true };
@@ -164,7 +164,7 @@ function _handleJoinEmbeddedActivityInternal() {
                       c3 = 2;
                       application = 1;
                       let obj3 = { value: null, done: false };
-                      obj3[0] = callback2(10994)(callback, callback2);
+                      obj3[0] = callback2(10871)(callback, callback2);
                       return obj3;
                     }
                   }
@@ -207,7 +207,7 @@ function _handleJoinEmbeddedActivityInternal() {
                 c3 = 3;
                 application = 1;
                 const obj7 = { value: null, done: false };
-                obj7[0] = callback(10996).confirmActivityLaunchChecks(obj6);
+                obj7[0] = callback(10873).confirmActivityLaunchChecks(obj6);
                 return obj7;
               }
             } else {
@@ -222,7 +222,7 @@ function _handleJoinEmbeddedActivityInternal() {
                   return obj8;
                 } else if (arg1) {
                   if (null != _private) {
-                    closure_17 = callback2(10617)(_private.id);
+                    closure_17 = callback2(10320)(_private.id);
                     closure_18 = c9.includes(_private.type);
                     if (closure_17) {
                       const obj9 = { channelId: null, bypassChangeModal: null };
@@ -231,10 +231,10 @@ function _handleJoinEmbeddedActivityInternal() {
                       c3 = 4;
                       application = 1;
                       const obj10 = { value: null, done: false };
-                      obj10[0] = callback2(11003)(obj9);
+                      obj10[0] = callback2(10880)(obj9);
                       return obj10;
                     } else {
-                      obj3 = callback(8136);
+                      obj3 = callback(8148);
                       application = 3;
                       return { value: false, done: true };
                     }
@@ -274,13 +274,13 @@ function _handleJoinEmbeddedActivityInternal() {
                 return obj;
               }
               if (null != callback2) {
-                callback2(11004)(callback2);
+                callback2(10881)(callback2);
               }
               if (null != currentEmbeddedActivity2) {
-                obj4 = callback(10664);
+                obj4 = callback(10513);
                 const result = obj4.maybeDisconnectFromCurrentActivity(currentEmbeddedActivity2.location);
               }
-              obj5 = callback(10664);
+              obj5 = callback(10513);
               obj13 = { channelId: null, applicationId: null, isStart: false, embeddedActivitiesManager: null, analyticsLocations: null, locationObject: null, componentId: null, sectionName: null, source: null, inviterUserId: null, customId: null, referrerId: null };
               obj13[0] = callback2;
               obj13[1] = callback;
@@ -322,8 +322,8 @@ let result = require("ensureGuildLoaded").fileFinishedImporting("modules/activit
 
 export default function handleJoinEmbeddedActivity(arg0) {
   const _require = arg0;
-  const obj = _require(10686);
-  return obj.wrapPreemptiveActivityPopout(_require(10686).shouldOpenActivityInPopoutWindow(), () => (function handleJoinEmbeddedActivityInternal(closure_0) {
+  const obj = _require(10536);
+  return obj.wrapPreemptiveActivityPopout(_require(10536).shouldOpenActivityInPopoutWindow(), () => (function handleJoinEmbeddedActivityInternal(closure_0) {
     const self = this;
     const apply = closure_10.apply;
     if (typeof apply === "unknown") {

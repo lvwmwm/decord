@@ -1,10 +1,10 @@
-// Module ID: 8594
-// Function ID: 8595
+// Module ID: 8925
+// Function ID: 8926
 // Name: _fetchGuildTopGames
-// Dependencies: [5, 4073, 1942, 8592, 676, 709, 530, 5250, 4154, 698, 2]
+// Dependencies: [5, 4103, 1942, 8923, 676, 709, 530, 5279, 4184, 698, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 8594 (_fetchGuildTopGames)
+// Module 8925 (_fetchGuildTopGames)
 import dispatcher from "dispatcher";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -186,8 +186,8 @@ export const saveGuildProfile = function saveGuildProfile(outer1_0, name) {
     const HTTP = _require(530).HTTP;
     obj = { url: null, body: null, rejectWithError: null };
     obj[0] = closure_9.GUILD_PROFILE(outer1_0);
-    obj[1] = _require(5250).buildGuildProfileUpdateForServer(name);
-    const obj4 = _require(5250);
+    obj[1] = _require(5279).buildGuildProfileUpdateForServer(name);
+    const obj4 = _require(5279);
     obj[2] = _require(530).rejectWithMigratedError();
     const obj5 = _require(530);
     const patchResult = HTTP.patch(obj);
@@ -266,9 +266,9 @@ export const fetchGuildTopGames = function fetchGuildTopGames() {
   }
   return applyArgumentsResult;
 };
-export const trackGuildProfileViewed = function trackGuildProfileViewed(enabled, bottomSheetRef) {
-  const tmp = null != selfMember.getSelfMember(enabled);
+export const trackGuildProfileViewed = function trackGuildProfileViewed(guildId, analyticsLocations) {
+  const tmp = null != selfMember.getSelfMember(guildId);
   let obj = importDefault(698);
-  obj = { guild_id: enabled, location_stack: bottomSheetRef, is_member: tmp, has_join_request: null != request.getRequest(enabled) };
+  obj = { guild_id: guildId, location_stack: analyticsLocations, is_member: tmp, has_join_request: null != request.getRequest(guildId) };
   obj.track(constants.GUILD_PROFILE_VIEWED, obj);
 };

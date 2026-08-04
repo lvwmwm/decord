@@ -1,9 +1,9 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8129
+// Function ID: 8130
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 8117 (apexExperiment)
+// Module 8129 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-02-android-exoplayer-http-engine", kind: "user", defaultConfig: { httpEngine: "default" }, variations: { 0: { httpEngine: "default" }, 1: { httpEngine: "okhttp" }, 2: { httpEngine: "cronet" } } });

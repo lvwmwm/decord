@@ -1,10 +1,10 @@
-// Module ID: 5815
-// Function ID: 5816
+// Module ID: 5844
+// Function ID: 5845
 // Name: LoginHandoffSource
-// Dependencies: [1379, 685, 4447, 5108, 2]
+// Dependencies: [1379, 685, 4476, 5137, 2]
 // Exports: getLoginHandoffSourceFromRedirectTo
 
-// Module 5815 (LoginHandoffSource)
+// Module 5844 (LoginHandoffSource)
 import { StaticChannelRoute } from "set";
 import { UserSettingsPath } from "MAX_FAVORITES";
 
@@ -14,7 +14,7 @@ const result = require("ME").fileFinishedImporting("modules/auth/LoginHandoffSou
 export const LoginHandoffSource = obj;
 export const getLoginHandoffSourceFromRedirectTo = function getLoginHandoffSourceFromRedirectTo(closure_0) {
   const str = decodeURIComponent(closure_0);
-  const obj = require(4447) /* ME */;
+  const obj = require(4476) /* ME */;
   const tryParseChannelPathResult = obj.tryParseChannelPath(str);
   if (null != tryParseChannelPathResult) {
     if (tryParseChannelPathResult.channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {

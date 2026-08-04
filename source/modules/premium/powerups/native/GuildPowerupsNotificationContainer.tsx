@@ -1,10 +1,10 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 11826
+// Function ID: 11827
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4255, 712, 4251, 11766, 11767, 1236, 2287, 11770, 2]
+// Dependencies: [17, 21, 4285, 712, 4281, 11827, 11828, 1236, 2317, 11831, 2]
 // Exports: default
 
-// Module 11765 (Tier3OverrideNotice)
+// Module 11826 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -12,7 +12,7 @@ import createCacheKey from "createCacheKey";
 let c4;
 let c5;
 function Tier3OverrideNotice(children) {
-  return callback(View, { style: callback2().staffContainer, children: callback(require(4251) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
+  return callback(View, { style: callback2().staffContainer, children: callback(require(4281) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { container: null, staffContainer: null };
@@ -25,15 +25,15 @@ const result = require("createCacheKey").fileFinishedImporting("modules/premium/
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11766)(guildId);
-  const tmp5 = importDefault(11767)(guildId);
+  const tmp4 = importDefault(11827)(guildId);
+  const tmp5 = importDefault(11828)(guildId);
   if (tmp4.shouldShow) {
     let obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj = { variant: "eyebrow", color: "text-subtle", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
-    obj[2] = intl.string(tmp2(2287)["3FRirU"]);
-    const items = [callback(require(4251) /* Text */.Text, obj), , ];
+    obj[2] = intl.string(tmp2(2317)["3FRirU"]);
+    const items = [callback(require(4281) /* Text */.Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       obj = { text: null };
@@ -46,7 +46,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj1 = { guildId: null, powerupNames: null, warnings: null };
       obj1[0] = guildId;
       ({ expiringPowerupNames: obj4[1], warnings: obj4[2] } = tmp5);
-      shouldShow2 = tmp9(tmp2(11770), obj1);
+      shouldShow2 = tmp9(tmp2(11831), obj1);
     }
     items[2] = shouldShow2;
     obj[1] = items;

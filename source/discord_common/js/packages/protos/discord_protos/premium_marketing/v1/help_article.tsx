@@ -1,9 +1,9 @@
-// Module ID: 7261
-// Function ID: 7262
+// Module ID: 7273
+// Function ID: 7274
 // Name: create
-// Dependencies: [32, 1307, 7260, 2]
+// Dependencies: [32, 1307, 7272, 2]
 
-// Module 7261 (create)
+// Module 7273 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
@@ -59,7 +59,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (3 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let LocalizedString = require(7260) /* create */.LocalizedString;
+        let LocalizedString = require(7272) /* create */.LocalizedString;
         let tmp24 = LocalizedString;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
@@ -110,7 +110,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(id, tag, writeUn
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
   }
   if (id.linkTextLocalized) {
-    const LocalizedString = require(7260) /* create */.LocalizedString;
+    const LocalizedString = require(7272) /* create */.LocalizedString;
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
     const joined = LocalizedString.internalBinaryWrite(id.linkTextLocalized, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(id.linkTextLocalized, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);

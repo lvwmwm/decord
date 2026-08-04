@@ -1,9 +1,9 @@
-// Module ID: 4366
-// Function ID: 4367
+// Module ID: 4395
+// Function ID: 4396
 // Name: logger
-// Dependencies: [4316, 4, 4352, 2]
+// Dependencies: [4345, 4, 4381, 2]
 
-// Module 4366 (logger)
+// Module 4395 (logger)
 import DesktopSources from "DesktopSources";
 
 let c3;
@@ -66,7 +66,7 @@ prototype["userSpeakingChange"] = function userSpeakingChange(arg0) {
 };
 prototype["destroyFramerateScaleFactorTimers"] = function destroyFramerateScaleFactorTimers() {
   const self = this;
-  if (typeof this.framerateReductionTimeout !== "SENTRY_RELEASE") {
+  if (typeof this.framerateReductionTimeout !== "V") {
     const _clearTimeout = clearTimeout;
     clearTimeout(self.framerateReductionTimeout);
     self.framerateReductionTimeout = undefined;

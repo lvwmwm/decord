@@ -1,10 +1,10 @@
-// Module ID: 5997
-// Function ID: 5998
+// Module ID: 6007
+// Function ID: 6008
 // Name: AvatarLokyExample
-// Dependencies: [21, 5207, 5998, 2]
+// Dependencies: [21, 5236, 6008, 2]
 // Exports: AvatarLokyExample
 
-// Module 5997 (AvatarLokyExample)
+// Module 6007 (AvatarLokyExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarLokyExample = function AvatarLokyExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(5998);
+  obj[0] = importDefault(6008);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarLokyExample = function AvatarLokyExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

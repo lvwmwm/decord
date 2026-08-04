@@ -1,10 +1,10 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 8601
+// Function ID: 8602
 // Name: GuildNSFWContentLevel
-// Dependencies: [1862, 3883, 1874, 676, 500, 4461, 9529, 1959, 8144, 2]
+// Dependencies: [1862, 3913, 1874, 676, 500, 4490, 8602, 1959, 8156, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite, shouldNSFWGateGuild
 
-// Module 9528 (GuildNSFWContentLevel)
+// Module 8601 (GuildNSFWContentLevel)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -59,7 +59,7 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
     let flag2 = !tmp10;
     if (!tmp10) {
       id = undefined;
-      const obj2 = importDefault(4461);
+      const obj2 = importDefault(4490);
       if (invite != null) {
         const guild3 = invite.guild;
         if (guild3 != null) {
@@ -68,9 +68,9 @@ export const handleNSFWGuildInvite = function handleNSFWGuildInvite(invite) {
       }
       obj = { guildId: null };
       obj[0] = id;
-      obj2.pushLazy(tmp(1959)(9529, tmp2.paths), obj);
+      obj2.pushLazy(tmp(1959)(8602, tmp2.paths), obj);
       flag2 = true;
-      const tmp12 = tmp(1959)(9529, tmp2.paths);
+      const tmp12 = tmp(1959)(8602, tmp2.paths);
     }
     return flag2;
   } else {
@@ -88,8 +88,8 @@ export const shouldNSFWGateGuild = function shouldNSFWGateGuild(guildId) {
         const tmp9 = getUncachedChannelPermissions.can(Permissions.ADMINISTRATOR, guild) || getUncachedChannelPermissions.can(Permissions.MANAGE_GUILD, guild) || getUncachedChannelPermissions.can(Permissions.KICK_MEMBERS, guild) || getUncachedChannelPermissions.can(Permissions.BAN_MEMBERS, guild);
         let nsfwAllowed = currentUser.nsfwAllowed;
         if (nsfwAllowed) {
-          nsfwAllowed = tmp(8144).getViewNsfwGuildsOrDefault();
-          const tmpResult = tmp(8144);
+          nsfwAllowed = tmp(8156).getViewNsfwGuildsOrDefault();
+          const tmpResult = tmp(8156);
         }
         let tmp11 = !tmp9;
         if (!tmp9) {

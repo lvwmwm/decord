@@ -1,9 +1,9 @@
-// Module ID: 6052
-// Function ID: 6053
+// Module ID: 6062
+// Function ID: 6063
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6052 (metadata)
+// Module 6062 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CandyIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/7c8fb50aaecef8f3ebe23952390e60a4e143dc139e5dcea263bd45830b7ccb12.png";

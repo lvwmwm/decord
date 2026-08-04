@@ -1,17 +1,17 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15033
+// Function ID: 15034
 // Name: usePortraitOrientationOnly
-// Dependencies: [19, 4235, 1577, 9375, 8478, 2]
+// Dependencies: [19, 4265, 1577, 8283, 8817, 2]
 // Exports: default
 
-// Module 14999 (usePortraitOrientationOnly)
+// Module 15033 (usePortraitOrientationOnly)
 import noop from "noop";
 
 let require = arg1;
 const result = require("isMetaQuest").fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
 
 export default function usePortraitOrientationOnly() {
-  let tmp = importDefault(9375)();
+  let tmp = importDefault(8283)();
   const require = tmp;
   const items = [tmp];
   const effect = React.useEffect(() => {

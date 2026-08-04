@@ -1,10 +1,10 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11171
+// Function ID: 11172
 // Name: MemberRolesList
-// Dependencies: [19, 17, 1935, 21, 4255, 589, 10359, 2]
+// Dependencies: [19, 17, 1935, 21, 4285, 589, 9619, 2]
 // Exports: default
 
-// Module 11180 (MemberRolesList)
+// Module 11171 (MemberRolesList)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

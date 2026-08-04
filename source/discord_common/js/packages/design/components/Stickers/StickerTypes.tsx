@@ -1,9 +1,9 @@
-// Module ID: 4923
-// Function ID: 4924
+// Module ID: 4952
+// Function ID: 4953
 // Name: MetaStickerType
 // Dependencies: [2]
 
-// Module 4923 (MetaStickerType)
+// Module 4952 (MetaStickerType)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Stickers/StickerTypes.tsx");
 
 export const MetaStickerType = { STANDARD: 1, [1]: "STANDARD", GUILD: 2, [2]: "GUILD" };

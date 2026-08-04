@@ -337,7 +337,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
       const _setTimeout = setTimeout;
       obj[1] = setTimeout(() => {
         outer1_12();
-        if (typeof scheduleNextHeartbeat !== "error") {
+        if (typeof scheduleNextHeartbeat !== "find") {
           HermesBuiltin.throwTypeError();
         }
         const result = 0.1 * scheduleDrain;
@@ -345,7 +345,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
           type: "timeout",
           id: setTimeout(() => {
             outer1_12();
-            if (typeof closure_0 !== "error") {
+            if (typeof closure_0 !== "find") {
               HermesBuiltin.throwTypeError();
             }
             let result = 0.1 * outer2_8;
@@ -353,7 +353,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
               type: "timeout",
               id: setTimeout(() => {
                 outer1_12();
-                if (typeof closure_0 !== "error") {
+                if (typeof closure_0 !== "find") {
                   HermesBuiltin.throwTypeError();
                 }
                 let result = 0.1 * outer2_8;

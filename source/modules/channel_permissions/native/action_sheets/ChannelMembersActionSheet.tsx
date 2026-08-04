@@ -1,10 +1,10 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 10987
+// Function ID: 10988
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1372, 1942, 1935, 1862, 3883, 676, 21, 4255, 712, 1581, 589, 1480, 4446, 8588, 1236, 5309, 5308, 4783, 4223, 7814, 11056, 5910, 7768, 11054, 10375, 1297, 5311, 8596, 4251, 2]
+// Dependencies: [19, 17, 1372, 1942, 1935, 1862, 3913, 676, 21, 4285, 712, 1581, 589, 1480, 4475, 8919, 1236, 5338, 5337, 4812, 4253, 7826, 10988, 5920, 7780, 10986, 9637, 1297, 5340, 8927, 4281, 2]
 // Exports: default
 
-// Module 11055 (ChannelMembersActionSheet)
+// Module 10987 (ChannelMembersActionSheet)
 import "PressableBase";
 import { View } from "Background";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -81,9 +81,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = getUncachedChannelPermissions.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        let tmp5Result = tmp5(8588);
+        let tmp5Result = tmp5(8919);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        tmp5Result = tmp5(8588);
+        tmp5Result = tmp5(8919);
         const items5 = [];
         obj = { title: null, data: null };
         const existingMembersRows = tmp5Result.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
@@ -113,12 +113,12 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = tmp5(1236).intl;
           obj2[2] = intl.string(tmp5(1236).t.XPDhcc);
-          obj2[3] = tmp29(tmp5(5910).SettingsIcon, {});
-          tmp29Result = tmp29(tmp5(4783).PressableOpacity, obj2);
+          obj2[3] = tmp29(tmp5(5920).SettingsIcon, {});
+          tmp29Result = tmp29(tmp5(4812).PressableOpacity, obj2);
         }
         obj3 = { scrollable: true, header: null, startExpanded: true, children: null };
         obj1[2] = tmp29Result;
-        obj3[1] = closure_11(tmp5(5308).BottomSheetTitleHeader, obj1);
+        obj3[1] = closure_11(tmp5(5337).BottomSheetTitleHeader, obj1);
         const obj4 = { style: null, children: null };
         obj4[0] = tmp.container;
         if (canResult) {
@@ -128,8 +128,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5[1] = function onPress() {
             return outer1_0(_undefined[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5[2] = tmp29(tmp5(10375).GroupPlusIcon, {});
-          tmp29Result = tmp29(tmp5(7768).RowButton, obj5);
+          obj5[2] = tmp29(tmp5(9637).GroupPlusIcon, {});
+          tmp29Result = tmp29(tmp5(7780).RowButton, obj5);
         } else {
           const obj6 = { style: null, children: null };
           obj6[0] = tmp.warning;
@@ -163,10 +163,10 @@ export default function ChannelMembersActionSheet(arg0) {
           return outer1_11(outer1_0(_undefined[30]).Text, obj);
         };
         obj8[3] = items5;
-        items6[1] = closure_11(tmp5(5311).BottomSheetSectionList, obj8);
+        items6[1] = closure_11(tmp5(5340).BottomSheetSectionList, obj8);
         obj4[1] = items6;
         obj3[3] = closure_12(stateFromStores, obj4);
-        return closure_11(tmp5(5309).BottomSheet, obj3);
+        return closure_11(tmp5(5338).BottomSheet, obj3);
       }
     }
   }

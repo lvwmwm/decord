@@ -1,7 +1,7 @@
 // Module ID: 1218
 // Function ID: 1219
 // Name: fetchFingerprint
-// Dependencies: [1219, 1220, 676, 1221, 3, 707, 595, 1222, 698, 13325, 709, 13326, 9378, 4155, 513, 13327, 1208, 11633, 589, 10642, 13328, 1352, 1906, 2]
+// Dependencies: [1219, 1220, 676, 1221, 3, 707, 595, 1222, 698, 13359, 709, 13360, 8286, 4185, 513, 13361, 1208, 11696, 589, 10373, 13362, 1352, 1906, 2]
 
 // Module 1218 (fetchFingerprint)
 import initialize from "initialize";
@@ -67,7 +67,7 @@ function fetchFingerprint(arg0) {
           if (null != c23) {
             obj["X-Installation-ID"] = c23;
           }
-          tmpResult = tmp(13325);
+          tmpResult = tmp(13359);
           obj = { withGuildExperiments: null, headers: null, context: null };
           obj[0] = true;
           obj[1] = obj;
@@ -103,7 +103,7 @@ function fetchFingerprint(arg0) {
             callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
             let c33 = null;
             const obj5 = callback2(709);
-            callback(13326).onExperimentsLoaded();
+            callback(13360).onExperimentsLoaded();
           }, () => {
             let c33 = null;
             callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -245,13 +245,13 @@ prototype["initialize"] = function initialize() {
     }
     if (tmp7) {
       function fireApex() {
-        const installationExperiments = callback(10642).fetchInstallationExperiments(null);
+        const installationExperiments = callback(10373).fetchInstallationExperiments(null);
       }
       promise.then(fireApex, fireApex);
     }
     promise = fetchFingerprint();
   }
-  this.addChangeListener(() => callback(13328).setClientState(closure_17));
+  this.addChangeListener(() => callback(13362).setClientState(closure_17));
 };
 prototype["getLoginStatus"] = function getLoginStatus() {
   return NONE;
@@ -348,7 +348,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     const tmp = importAll;
     const tmp3 = null != obj.getToken();
     ({ id, username, email } = user);
-    importDefault(1208).setUser(id, username, email, importDefault(11633)(user));
+    importDefault(1208).setUser(id, username, email, importDefault(11696)(user));
     const obj3 = importDefault(1208);
     tmp(707).setAnalyticsToken(analyticsToken);
     id = user.id;
@@ -364,7 +364,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(13327);
+        let tmp6Result = tmp6(13361);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(595).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -393,7 +393,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     ({ sessionId, token } = arg0);
     let obj = importDefault(1208);
     ({ id, username, email } = user);
-    obj.setUser(id, username, email, importDefault(11633)(user));
+    obj.setUser(id, username, email, importDefault(11696)(user));
     const id2 = user.id;
     const obj2 = importAll(707);
     const tmp = importDefault;
@@ -709,7 +709,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     const obj2 = importDefault(698);
     obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj, context: null };
     obj = { location: null };
-    let obj3 = require(13325) /* fetchExperiments */;
+    let obj3 = require(13359) /* fetchExperiments */;
     obj[0] = require(1222) /* transitionTo */.getFingerprintLocation();
     obj[2] = obj;
     const experiments = obj3.fetchExperiments(obj);
@@ -740,7 +740,7 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
       let c33 = null;
       const obj5 = callback2(709);
-      callback(13326).onExperimentsLoaded();
+      callback(13360).onExperimentsLoaded();
     }, () => {
       let c33 = null;
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -775,13 +775,13 @@ const authenticationStore = new AuthenticationStore(require("dispatcher"), {
     let c30 = null;
     let c35 = false;
     let c5 = null;
-    if (error instanceof importDefault(4155)) {
+    if (error instanceof importDefault(4185)) {
       if (null != obj.getAuthenticationErrorsFromAPIError(error).date_of_birth) {
         let NONE = LoginStates.LOGIN_AGE_GATE;
       } else {
         NONE = LoginStates.NONE;
       }
-      obj = require(9378) /* getAuthenticationErrorsFromAPIError */;
+      obj = require(8286) /* getAuthenticationErrorsFromAPIError */;
     } else {
       NONE = LoginStates.NONE;
     }
@@ -811,7 +811,7 @@ let obj = {
     const tmp = importAll;
     const tmp3 = null != obj.getToken();
     ({ id, username, email } = user);
-    importDefault(1208).setUser(id, username, email, importDefault(11633)(user));
+    importDefault(1208).setUser(id, username, email, importDefault(11696)(user));
     const obj3 = importDefault(1208);
     tmp(707).setAnalyticsToken(analyticsToken);
     id = user.id;
@@ -827,7 +827,7 @@ let obj = {
     if (null != installation) {
       installation = apexExperiments.installation;
       if (null == installation) {
-        let tmp6Result = tmp6(13327);
+        let tmp6Result = tmp6(13361);
         if (tmp6Result.canUseInstallationId()) {
           const Storage3 = tmp4(595).Storage;
           const result1 = Storage3.set(analytics_installation, installation);
@@ -856,7 +856,7 @@ let obj = {
     ({ sessionId, token } = arg0);
     let obj = importDefault(1208);
     ({ id, username, email } = user);
-    obj.setUser(id, username, email, importDefault(11633)(user));
+    obj.setUser(id, username, email, importDefault(11696)(user));
     const id2 = user.id;
     const obj2 = importAll(707);
     const tmp = importDefault;
@@ -1172,7 +1172,7 @@ let obj = {
     const obj2 = importDefault(698);
     obj = { withGuildExperiments: withGuildExperiments.withGuildExperiments, headers: obj, context: null };
     obj = { location: null };
-    let obj3 = require(13325) /* fetchExperiments */;
+    let obj3 = require(13359) /* fetchExperiments */;
     obj[0] = require(1222) /* transitionTo */.getFingerprintLocation();
     obj[2] = obj;
     const experiments = obj3.fetchExperiments(obj);
@@ -1203,7 +1203,7 @@ let obj = {
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_SUCCESS", fingerprint, experiments: assignments, guildExperiments: guild_experiments });
       let c33 = null;
       const obj5 = callback2(709);
-      callback(13326).onExperimentsLoaded();
+      callback(13360).onExperimentsLoaded();
     }, () => {
       let c33 = null;
       callback2(709).dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
@@ -1238,13 +1238,13 @@ let obj = {
     let c30 = null;
     let c35 = false;
     let c5 = null;
-    if (error instanceof importDefault(4155)) {
+    if (error instanceof importDefault(4185)) {
       if (null != obj.getAuthenticationErrorsFromAPIError(error).date_of_birth) {
         let NONE = LoginStates.LOGIN_AGE_GATE;
       } else {
         NONE = LoginStates.NONE;
       }
-      obj = require(9378) /* getAuthenticationErrorsFromAPIError */;
+      obj = require(8286) /* getAuthenticationErrorsFromAPIError */;
     } else {
       NONE = LoginStates.NONE;
     }

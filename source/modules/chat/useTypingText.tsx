@@ -1,7 +1,7 @@
 // Module ID: 11323
 // Function ID: 11324
 // Name: useTypingText
-// Dependencies: [32, 1874, 589, 4445, 1236, 2]
+// Dependencies: [32, 1874, 589, 4474, 1236, 2]
 // Exports: default
 
 // Module 11323 (useTypingText)

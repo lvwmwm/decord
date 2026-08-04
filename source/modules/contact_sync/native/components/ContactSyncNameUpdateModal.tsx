@@ -1,10 +1,10 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 13996
+// Function ID: 13997
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 11885, 21, 4461, 4255, 712, 5206, 11887, 11891, 3956, 1236, 9354, 11904, 5209, 5636, 2]
+// Dependencies: [5, 32, 19, 17, 11946, 21, 4490, 4285, 712, 5235, 11948, 11952, 3986, 1236, 8256, 11965, 5238, 5665, 2]
 // Exports: default
 
-// Module 13962 (onClose)
+// Module 13996 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -16,7 +16,7 @@ import HeaderBackImage from "HeaderBackImage";
 
 const require = arg1;
 function onClose() {
-  let arr = importDefault(4461);
+  let arr = importDefault(4490);
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
@@ -70,17 +70,17 @@ function ContactSyncNameInputScreen() {
                 dependencyMap = 2;
                 c4 = 1;
                 let obj1 = { value: null, done: false };
-                obj1[0] = outer1_1(11891).updateName(callback);
+                obj1[0] = outer1_1(11952).updateName(callback);
                 return obj1;
               }
             } else {
               if (1 === tmp7) {
                 c3 = 0;
-                obj1 = outer1_1(3956);
+                obj1 = outer1_1(3986);
                 const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
                 const intl = callback(1236).intl;
                 obj2[1] = intl.string(callback(1236).t.R0RpRX);
-                obj2[2] = outer1_1(9354);
+                obj2[2] = outer1_1(8256);
                 obj1.open(obj2);
                 callback(false);
                 c4 = 3;
@@ -172,5 +172,5 @@ obj1[ContactSyncScenes.NAME_INPUT] = obj2;
 const result = require("noop").fileFinishedImporting("modules/contact_sync/native/components/ContactSyncNameUpdateModal.tsx");
 
 export default function ContactSyncNameUpdateModal() {
-  return jsx(require(5636) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
+  return jsx(require(5665) /* NavigationStack */.Navigator, { initialRouteName: ContactSyncScenes.NAME_INPUT, screens: obj1 });
 };

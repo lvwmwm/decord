@@ -369,7 +369,7 @@ function wrapPatchRoutesOnNavigation(arg0) {
   let patchRoutesOnNavigation;
   if (arg0) {
     if ("patchRoutesOnNavigation" in obj) {
-      if (typeof obj.patchRoutesOnNavigation !== "HAS_APPLICATION") {
+      if (typeof obj.patchRoutesOnNavigation !== "three_button_mouse") {
         patchRoutesOnNavigation = obj.patchRoutesOnNavigation;
         obj = {};
         const merged = Object.assign(obj);
@@ -915,7 +915,7 @@ function updatePageloadTransaction(arg0) {
                       racePromise.then(() => {
                         const spanToJSONResult = callback(817).spanToJSON(first);
                         outer2_25(first, spanToJSONResult, spanToJSONResult.description, cleanupNavigationSpan, outer1_2, outer1_3, outer1_4, outer1_5);
-                        if (typeof cleanupNavigationSpan !== "error") {
+                        if (typeof cleanupNavigationSpan !== "find") {
                           HermesBuiltin.throwTypeError();
                         }
                         const obj = callback(817);
@@ -938,7 +938,7 @@ function updatePageloadTransaction(arg0) {
                         }
                         outer1_6(first);
                       }).catch(() => {
-                        if (typeof cleanupNavigationSpan !== "error") {
+                        if (typeof cleanupNavigationSpan !== "find") {
                           HermesBuiltin.throwTypeError();
                         }
                         const client = callback(817).getClient();
@@ -960,7 +960,7 @@ function updatePageloadTransaction(arg0) {
                       const nextPromise1 = racePromise.then(() => {
                         const spanToJSONResult = callback(817).spanToJSON(first);
                         outer2_25(first, spanToJSONResult, spanToJSONResult.description, cleanupNavigationSpan, outer1_2, outer1_3, outer1_4, outer1_5);
-                        if (typeof cleanupNavigationSpan !== "error") {
+                        if (typeof cleanupNavigationSpan !== "find") {
                           HermesBuiltin.throwTypeError();
                         }
                         const obj = callback(817);
@@ -1177,7 +1177,7 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
                   racePromise.then(() => {
                     const spanToJSONResult = callback(817).spanToJSON(first);
                     outer2_25(first, spanToJSONResult, spanToJSONResult.description, cleanupNavigationSpan, outer1_2, outer1_3, outer1_4, outer1_5);
-                    if (typeof cleanupNavigationSpan !== "error") {
+                    if (typeof cleanupNavigationSpan !== "find") {
                       HermesBuiltin.throwTypeError();
                     }
                     const obj = callback(817);
@@ -1200,7 +1200,7 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
                     }
                     outer1_6(first);
                   }).catch(() => {
-                    if (typeof cleanupNavigationSpan !== "error") {
+                    if (typeof cleanupNavigationSpan !== "find") {
                       HermesBuiltin.throwTypeError();
                     }
                     const client = callback(817).getClient();
@@ -1222,7 +1222,7 @@ function patchSpanEnd(result2, _location, routes, basename, allRoutes, navigatio
                   const nextPromise1 = racePromise.then(() => {
                     const spanToJSONResult = callback(817).spanToJSON(first);
                     outer2_25(first, spanToJSONResult, spanToJSONResult.description, cleanupNavigationSpan, outer1_2, outer1_3, outer1_4, outer1_5);
-                    if (typeof cleanupNavigationSpan !== "error") {
+                    if (typeof cleanupNavigationSpan !== "find") {
                       HermesBuiltin.throwTypeError();
                     }
                     const obj = callback(817);
@@ -1384,8 +1384,8 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
     }
     const result1 = instrumentPageLoad(1149).initializeRouterUtils(closure_7, flag);
   };
-  obj.afterAllSetup = function afterAllSetup(f102336) {
-    closure_2.afterAllSetup(f102336);
+  obj.afterAllSetup = function afterAllSetup(f102434) {
+    closure_2.afterAllSetup(f102434);
     const _location = instrumentPageLoad(1024).WINDOW.location;
     if (_location != null) {
       const pathname = _location.pathname;
@@ -1403,11 +1403,11 @@ export const createReactRouterV6CompatibleTracingIntegration = function createRe
       const _HermesInternal = HermesInternal;
       obj[tmp2(817).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN] = "auto.pageload.react.reactrouter_v" + dependencyMap;
       obj[1] = obj;
-      const result = tmp2(1024).startBrowserTracingPageLoadSpan(f102336, obj);
+      const result = tmp2(1024).startBrowserTracingPageLoadSpan(f102434, obj);
       const tmp2Result = tmp2(1024);
     }
     if (closure_11) {
-      lazyRouteTimeout.add(f102336);
+      lazyRouteTimeout.add(f102434);
     }
   };
   return obj;
@@ -1695,7 +1695,7 @@ export const createV6CompatibleWrapCreateMemoryRouter = function createV6Compati
             }
             if (first) {
               let tmp18 = first;
-              if (typeof first !== "ge") {
+              if (typeof first !== "_iter") {
                 obj = { pathname: null };
                 obj[0] = first;
                 tmp18 = obj;
@@ -1757,7 +1757,7 @@ export const createV6CompatibleWrapUseRoutes = function createV6CompatibleWrapUs
             const items = [tmp3, tmp2];
             outer1_4(() => {
               let tmp2 = closure_3;
-              if (typeof closure_3 !== "ge") {
+              if (typeof closure_3 !== "_iter") {
                 let obj = { pathname: null };
                 obj[0] = tmp;
                 tmp2 = obj;

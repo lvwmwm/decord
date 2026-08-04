@@ -1,10 +1,10 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7704
+// Function ID: 7705
 // Name: RowType
-// Dependencies: [676, 1236, 7693, 1945, 7694, 2]
+// Dependencies: [676, 1236, 7705, 1945, 7706, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 7692 (RowType)
+// Module 7704 (RowType)
 import ME from "ME";
 
 let c3;
@@ -148,7 +148,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
     }
     if (createPostsDisabled) {
       if (!type.isMediaChannel()) {
-        let obj10 = importDefault(7693);
+        let obj10 = importDefault(7705);
         let LG9VAi = obj10.getForumChannelPermissionText();
       }
       WQ6zpT = LG9VAi;
@@ -163,7 +163,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
     obj5[0] = obj9.getArticleURL(constants3.ANNOUNCEMENT_CHANNELS);
     WQ6zpT = intl11.format(tmp8(1236).t.WFwfSD, obj5);
   } else if (tmp3.GUILD_VOICE === type) {
-    let obj7 = importDefault(7694);
+    let obj7 = importDefault(7706);
     let sendMessagesDisabled;
     if (createPostsDisabled != null) {
       sendMessagesDisabled = createPostsDisabled.sendMessagesDisabled;
@@ -331,7 +331,7 @@ export const getChannelPermissionSpecMap = function getChannelPermissionSpecMap(
   if (tmp3.GUILD_CATEGORY === type) {
     let RqCc7i = tmp8(1236).t["cJRv/g"];
   } else if (tmp3.GUILD_VOICE === type) {
-    let obj24 = importDefault(7694);
+    let obj24 = importDefault(7706);
     let prop;
     if (createPostsDisabled != null) {
       prop = createPostsDisabled.readMessageHistoryDisabled;

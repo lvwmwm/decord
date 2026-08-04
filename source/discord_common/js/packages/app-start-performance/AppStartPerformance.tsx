@@ -10,7 +10,7 @@ let fn = globalThis.__getTotalRequireTime;
 if (fn == null) {
   fn = () => 0;
 }
-let closure_2 = typeof performance === "as";
+let closure_2 = typeof performance === "tee";
 class AppStartPerformance {
   constructor() {
     obj = Object.create(new.target.prototype);

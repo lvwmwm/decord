@@ -1,10 +1,10 @@
-// Module ID: 10463
-// Function ID: 10464
+// Module ID: 9739
+// Function ID: 9740
 // Name: getMuteTimeOptions
-// Dependencies: [4451, 676, 685, 1236, 11, 1384, 3886, 589, 2]
+// Dependencies: [4480, 676, 685, 1236, 11, 1384, 3916, 589, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem, useShouldUseNewNotificationSystem
 
-// Module 10463 (getMuteTimeOptions)
+// Module 9739 (getMuteTimeOptions)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { UserNotificationSettings } from "ME";
 import MAX_FAVORITES from "MAX_FAVORITES";

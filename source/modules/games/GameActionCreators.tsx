@@ -1,12 +1,12 @@
-// Module ID: 6991
-// Function ID: 6992
+// Module ID: 7003
+// Function ID: 7004
 // Name: requestGames
-// Dependencies: [5, 4276, 676, 530, 709, 4140, 12, 2]
+// Dependencies: [5, 4306, 676, 530, 709, 4170, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6991 (requestGames)
+// Module 7003 (requestGames)
 import importDefaultResult from "start";
-import map from "map";
+import handleLoadMessages from "handleLoadMessages";
 import { Endpoints } from "ME";
 
 let closure_0 = arg1;
@@ -252,7 +252,7 @@ const batchInvocationManager = new require("start").BatchInvocationManager(funct
   return applyArgumentsResult;
 }, {
   predicate(gameId) {
-    return !map.hasNoData(gameId);
+    return !handleLoadMessages.hasNoData(gameId);
   },
   onQueued(gameIds) {
     let obj = importDefault(709);

@@ -1,10 +1,10 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 9000
+// Function ID: 9001
 // Name: rows
-// Dependencies: [32, 19, 1942, 1862, 10242, 7104, 676, 505, 589, 698, 10241, 2]
+// Dependencies: [32, 19, 1942, 1862, 9001, 7116, 676, 505, 589, 698, 9002, 2]
 // Exports: default
 
-// Module 12347 (rows)
+// Module 9000 (rows)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -49,7 +49,7 @@ export default function _default(arg0, arg1, arg2, arg3) {
     } else {
       items = isFetchingRows.getMemberIds(lib.guild_id);
     }
-    let obj = lib(10241);
+    let obj = lib(9002);
     obj = { omitUserIds: null, guild: null, channel: null, inviteTargetType: null };
     obj[0] = new Set(items);
     obj[1] = guild.getGuild(lib.guild_id);

@@ -1,8 +1,8 @@
-// Module ID: 11651
-// Function ID: 11652
-// Dependencies: [5, 19, 1874, 21, 1480, 11652, 589, 11654, 3956, 1236, 9354, 4263, 11660, 2]
+// Module ID: 11712
+// Function ID: 11713
+// Dependencies: [5, 19, 1874, 21, 1480, 11713, 589, 11715, 3986, 1236, 8256, 4293, 11721, 2]
 
-// Module 11651
+// Module 11712
 import useIsMessageRequestRestrictedViewer from "useIsMessageRequestRestrictedViewer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -71,7 +71,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = lib(4263);
+              obj = lib(4293);
               obj.transitionToChannel(lib.id, { navigationReplace: true });
               c3 = 3;
               return { value: "HermesInternal", done: null };
@@ -162,8 +162,8 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
   }
   let obj = channel(1480);
   importDefault = obj.useNavigation();
-  const isMessageRequestRestrictedViewer = channel(11652).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
-  let obj2 = channel(11652);
+  const isMessageRequestRestrictedViewer = channel(11713).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(11713);
   const items = [_onAcceptClick];
   const stateFromStores = channel(589).useStateFromStores(items, () => _onAcceptClick.getUser(channel.getRecipientId()));
   const obj3 = channel(589);
@@ -181,7 +181,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
 
     }
   };
-  const messageRequestActions = channel(11654).useMessageRequestActions(obj);
+  const messageRequestActions = channel(11715).useMessageRequestActions(obj);
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   let tmp6 = isAcceptLoading;
   if (!isAcceptLoading) {
@@ -197,7 +197,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
     tmp6 = isOptimisticRejected;
   }
   obj = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(11654);
+  const obj4 = channel(11715);
   const tmp7 = _onRejectClick;
   let intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["e/eQVB"]);
@@ -242,7 +242,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
     isRejectLoading = isOptimisticRejected;
   }
   obj[10] = isRejectLoading;
-  return tmp7(importDefault(11660), obj);
+  return tmp7(importDefault(11721), obj);
 });
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardMessageRequest.tsx");
 

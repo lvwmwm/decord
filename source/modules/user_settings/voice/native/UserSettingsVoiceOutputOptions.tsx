@@ -1,10 +1,10 @@
-// Module ID: 10893
-// Function ID: 10894
+// Module ID: 10746
+// Function ID: 10747
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4274, 1218, 4302, 4316, 21, 4255, 589, 38, 9024, 10887, 1236, 5286, 10894, 2]
+// Dependencies: [19, 17, 4304, 1218, 4332, 4345, 21, 4285, 589, 38, 9077, 10740, 1236, 5315, 10747, 2]
 // Exports: default
 
-// Module 10893 (UserSettingsVoiceOutputOptions)
+// Module 10746 (UserSettingsVoiceOutputOptions)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import reset from "reset";
@@ -59,7 +59,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj = { label: null, subLabel: null };
   const intl2 = stateFromStores1(1236).intl;
   obj[0] = intl2.string(stateFromStores1(1236).t.xPHVBs);
-  obj1 = { style: tmp.slider, children: callback(importDefault(10894), obj2) };
+  obj1 = { style: tmp.slider, children: callback(importDefault(10747), obj2) };
   obj2 = {
     style: tmp.slider,
     value: stateFromStores,
@@ -68,7 +68,7 @@ export default function UserSettingsVoiceOutputOptions() {
     }
   };
   obj[1] = callback(View, obj1);
-  const items4 = [callback(stateFromStores1(5286).TableRow, obj), ];
+  const items4 = [callback(stateFromStores1(5315).TableRow, obj), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj3 = { label: null, subLabel: null };
@@ -79,11 +79,11 @@ export default function UserSettingsVoiceOutputOptions() {
     const obj5 = { value: null, onValueChange: null };
     obj5[0] = stateFromStores2;
     obj5[1] = callback;
-    obj4[1] = tmp9(importDefault(10894), obj5);
+    obj4[1] = tmp9(importDefault(10747), obj5);
     obj3[1] = tmp9(View, obj4);
-    tmp9Result = tmp9(tmp2(5286).TableRow, obj3);
+    tmp9Result = tmp9(tmp2(5315).TableRow, obj3);
   }
   items4[1] = tmp9Result;
   obj[2] = items4;
-  return closure_10(stateFromStores1(10887).UserSettingsTableRowGroup, obj);
+  return closure_10(stateFromStores1(10740).UserSettingsTableRowGroup, obj);
 };

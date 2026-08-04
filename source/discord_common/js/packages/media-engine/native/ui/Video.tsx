@@ -1,9 +1,9 @@
-// Module ID: 4356
-// Function ID: 4357
+// Module ID: 4385
+// Function ID: 4386
 // Name: Video
-// Dependencies: [4357, 2]
+// Dependencies: [4386, 2]
 
-// Module 4356 (Video)
+// Module 4385 (Video)
 class Video {
   constructor(arg0) {
     return require("logger")(global, Video.onContainerResized);

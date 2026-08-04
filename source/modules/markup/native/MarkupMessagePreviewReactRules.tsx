@@ -1,10 +1,10 @@
-// Module ID: 10436
-// Function ID: 10437
+// Module ID: 9709
+// Function ID: 9710
 // Name: defaultReactFn
-// Dependencies: [19, 10437, 21, 4250, 10147, 10438, 5630, 4686, 4688, 10443, 5207, 501, 10444, 10445, 1297, 4119, 9836, 4735, 10446, 2]
+// Dependencies: [19, 9710, 21, 4280, 9471, 9711, 5659, 4715, 4717, 9716, 5236, 501, 9717, 9718, 1297, 4149, 9706, 4764, 9719, 2]
 // Exports: default
 
-// Module 10436 (defaultReactFn)
+// Module 9709 (defaultReactFn)
 import "set";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
@@ -16,8 +16,8 @@ function defaultReactFn(content, output, state) {
   if (typeof content.content === "y") {
     content = content.content;
   } else {
-    content = require(10147) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(10147) /* smartOutput */;
+    content = require(9471) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(9471) /* smartOutput */;
   }
   return content;
 }
@@ -235,7 +235,7 @@ const regExp = new RegExp(require("regExp").ANSI_CONTROL_SEQUENCE_RE, "g");
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(10438) /* getLayoutStyles */;
+  let obj = require(9711) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {
@@ -243,7 +243,7 @@ export default function createChannelListMessagePreviewReactRules(layout, iconCo
     bound = Math.min(arg2, arg3);
   }
   obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize, customEmojiSize: null };
-  let num = require(5630) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
+  let num = require(5659) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
   if (num == null) {
     num = 0;
   }

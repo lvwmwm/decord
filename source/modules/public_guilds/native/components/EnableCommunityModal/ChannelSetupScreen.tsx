@@ -1,10 +1,10 @@
-// Module ID: 16605
-// Function ID: 16606
+// Module ID: 16637
+// Function ID: 16638
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8614, 1372, 1932, 3892, 1874, 7940, 676, 21, 3959, 712, 16594, 589, 4446, 1236, 16595, 4223, 8557, 1959, 8613, 16592, 4251, 4664, 5620, 5286, 2]
+// Dependencies: [19, 17, 8944, 1372, 1932, 3922, 1874, 7952, 676, 21, 3989, 712, 16626, 589, 4475, 1236, 16627, 4253, 8890, 1959, 8943, 16624, 4281, 4693, 5649, 5315, 2]
 // Exports: default
 
-// Module 16605 (ChannelSetupScreen)
+// Module 16637 (ChannelSetupScreen)
 import asyncRequireImpl from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
 import handleFormInit from "handleFormInit";
@@ -101,10 +101,10 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.Yr6nGx);
     obj[1] = callback();
     obj[2] = function onItemSelect(rulesChannelId) {
-      let obj = callback(8613);
+      let obj = callback(8943);
       obj = { rulesChannelId };
       obj.updateGuild(obj);
-      callback(4223).hideActionSheet();
+      callback(4253).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -123,10 +123,10 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.VqhxxN);
     obj[1] = callback();
     obj[2] = function onItemSelect(publicUpdatesChannelId) {
-      let obj = callback(8613);
+      let obj = callback(8943);
       obj = { publicUpdatesChannelId };
       obj.updateGuild(obj);
-      callback(4223).hideActionSheet();
+      callback(4253).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {

@@ -1,8 +1,8 @@
-// Module ID: 15736
-// Function ID: 15737
-// Dependencies: [19, 17, 21, 4255, 10343, 2]
+// Module ID: 15767
+// Function ID: 15768
+// Dependencies: [19, 17, 21, 4285, 9604, 2]
 
-// Module 15736
+// Module 15767
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -36,11 +36,11 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
   if ("invite" === item.type) {
     obj = { invite: null };
     obj[0] = item.data;
-    let tmp2Result = tmp2(str(10343), obj);
+    let tmp2Result = tmp2(str(9604), obj);
   } else {
     obj = { channel: null };
     obj[0] = item.data;
-    tmp2Result = tmp2(onMeasured(10343).LinkedChannelInvite, obj);
+    tmp2Result = tmp2(onMeasured(9604).LinkedChannelInvite, obj);
   }
   obj[6] = tmp2Result;
   return <View style={items1} onLayout={importAllResult.useCallback((nativeEvent) => {

@@ -1,10 +1,10 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 10486
+// Function ID: 10487
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 9171, 676, 21, 4255, 1236, 8462, 1480, 9123, 9173, 1945, 2]
+// Dependencies: [19, 10485, 676, 21, 4285, 1236, 8777, 1480, 10412, 10487, 1945, 2]
 // Exports: default
 
-// Module 9172 (CrunchyrollLinkLanding)
+// Module 10486 (CrunchyrollLinkLanding)
 import noop from "noop";
 import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes";
 import ME from "ME";
@@ -26,7 +26,7 @@ export default function CrunchyrollLinkLanding() {
     const obj = { label: null, icon: null };
     const intl = navigation(1236).intl;
     obj[0] = intl.string(navigation(1236).t["2TXHQd"]);
-    obj[1] = navigation(8462).PlayIcon;
+    obj[1] = navigation(8777).PlayIcon;
     const items = [obj];
     return items;
   }, []);
@@ -34,7 +34,7 @@ export default function CrunchyrollLinkLanding() {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
   obj = { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null };
-  obj[1] = importDefault(9173);
+  obj[1] = importDefault(10487);
   obj[2] = callback().image;
   let intl = navigation(1236).intl;
   obj[3] = intl.string(navigation(1236).t["Da+3NJ"]);
@@ -44,5 +44,5 @@ export default function CrunchyrollLinkLanding() {
   obj[5] = importDefault(1945).getArticleURL(constants.CRUNCHYROLL_CONNECTION);
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(9123).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
+  return jsx(navigation(10412).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: null, imgStyle: null, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 4111
-// Function ID: 4112
+// Module ID: 4141
+// Function ID: 4142
 // Name: useBaseAppContainerDimensions
 // Dependencies: [19, 1474, 1581, 2]
 // Exports: default, getBaseAppContainerDimensions
 
-// Module 4111 (useBaseAppContainerDimensions)
+// Module 4141 (useBaseAppContainerDimensions)
 import noop from "noop";
 
 const require = arg1;

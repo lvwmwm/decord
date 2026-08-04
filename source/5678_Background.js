@@ -1,0 +1,23 @@
+// Module ID: 5678
+// Function ID: 5679
+// Name: Background
+// Dependencies: [19, 17, 21, 1481]
+// Exports: default
+
+// Module 5678 (Background)
+import "noop";
+import { View } from "get ActivityIndicator";
+import { jsx } from "jsxProd";
+
+const require = arg1;
+
+export default function Background(style) {
+  const merged = Object.assign(style, Object.create(null));
+  let obj = require(1481) /* Link */;
+  obj = {};
+  const merged1 = Object.assign(merged);
+  obj = { flex: 1, backgroundColor: obj.useTheme().colors.background };
+  const items = [obj, style.style];
+  obj.style = items;
+  return <View flex={1} backgroundColor={obj.useTheme().colors.background} />;
+};

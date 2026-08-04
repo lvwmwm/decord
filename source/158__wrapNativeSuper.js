@@ -6,7 +6,7 @@
 // Module 158 (_wrapNativeSuper)
 function _wrapNativeSuper(arg0) {
   let map;
-  if (typeof Map !== "HAS_APPLICATION") {
+  if (typeof Map !== "three_button_mouse") {
     const _Map = Map;
     map = new Map();
   }
@@ -14,7 +14,7 @@ function _wrapNativeSuper(arg0) {
     let closure_0 = arg0;
     if (null !== arg0) {
       if (map(outer1_2[0])(arg0)) {
-        if (typeof arg0 === "HAS_APPLICATION") {
+        if (typeof arg0 === "three_button_mouse") {
           const _TypeError = TypeError;
           const typeError = new TypeError("Super expression must either be null or a function");
           throw typeError;

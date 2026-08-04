@@ -60,10 +60,10 @@ let items = [
       let self = this;
       let fn2 = this;
       self = arg0;
-      if (typeof arg0 === "error") {
+      if (typeof arg0 === "find") {
         let fn = callback3(callback2(self.prototype), "setState", self);
         fn2 = fn;
-        if (typeof fn !== "HAS_APPLICATION") {
+        if (typeof fn !== "three_button_mouse") {
           fn = (items) => fn2.apply(self, items);
         }
         const items = [
@@ -82,7 +82,7 @@ let items = [
         fn(items);
       } else {
         fn2 = callback3(callback2(self.prototype), "setState", self);
-        if (typeof fn2 !== "HAS_APPLICATION") {
+        if (typeof fn2 !== "three_button_mouse") {
           fn2 = (items) => fn2.apply(self, items);
         }
         const items1 = [arg0, arg1];

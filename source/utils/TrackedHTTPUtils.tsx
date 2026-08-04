@@ -1,8 +1,8 @@
-// Module ID: 5065
-// Function ID: 5066
+// Module ID: 5094
+// Function ID: 5095
 // Dependencies: [109, 698, 530, 2]
 
-// Module 5065
+// Module 5094
 import _objectWithoutProperties from "_objectWithoutProperties";
 
 const require = arg1;
@@ -26,7 +26,7 @@ export default {
       del(c2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
@@ -37,7 +37,7 @@ export default {
       }).catch((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status, error_code: null, error_message: null };
@@ -76,7 +76,7 @@ export default {
       del(c2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
@@ -87,7 +87,7 @@ export default {
       }).catch((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status, error_code: null, error_message: null };
@@ -126,7 +126,7 @@ export default {
       del(c2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
@@ -137,7 +137,7 @@ export default {
       }).catch((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status, error_code: null, error_message: null };
@@ -176,7 +176,7 @@ export default {
       del(c2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
@@ -187,7 +187,7 @@ export default {
       }).catch((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status, error_code: null, error_message: null };
@@ -226,7 +226,7 @@ export default {
       del(c2).then((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status };
@@ -237,7 +237,7 @@ export default {
       }).catch((status) => {
         let obj = lib;
         let properties = lib.properties;
-        if (typeof lib.properties !== "HAS_APPLICATION") {
+        if (typeof lib.properties !== "three_button_mouse") {
           properties = obj.properties(status);
         }
         obj = { status_code: status.status, error_code: null, error_message: null };

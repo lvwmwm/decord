@@ -1,9 +1,9 @@
-// Module ID: 6982
-// Function ID: 6983
+// Module ID: 6994
+// Function ID: 6995
 // Name: initialize
-// Dependencies: [32, 1874, 6977, 589, 12, 709, 2]
+// Dependencies: [32, 1874, 6989, 589, 12, 709, 2]
 
-// Module 6982 (initialize)
+// Module 6994 (initialize)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createUserWidgetFromServer from "createUserWidgetFromServer";

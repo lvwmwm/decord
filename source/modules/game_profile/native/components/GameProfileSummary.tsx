@@ -1,10 +1,10 @@
-// Module ID: 8830
-// Function ID: 8831
+// Module ID: 9245
+// Function ID: 9246
 // Name: GameProfileSummary
-// Dependencies: [32, 19, 17, 21, 4255, 8785, 1236, 4251, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 9200, 1236, 4281, 2]
 // Exports: default
 
-// Module 8830 (GameProfileSummary)
+// Module 9245 (GameProfileSummary)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

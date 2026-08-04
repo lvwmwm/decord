@@ -1,10 +1,10 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 6967
+// Function ID: 6968
 // Name: mapConversation
 // Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 6955 (mapConversation)
+// Module 6967 (mapConversation)
 const result = require("set").fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
 
 export const mapConversation = function mapConversation(summary_map) {
@@ -29,13 +29,13 @@ export const mapConversation = function mapConversation(summary_map) {
           title = parsed.title;
         }
         let tmp6 = null;
-        if (typeof title !== "ge") {
+        if (typeof title !== "_iter") {
           let brief_summary;
           if (filter != null) {
             brief_summary = filter.brief_summary;
           }
           tmp6 = null;
-          if (typeof brief_summary !== "ge") {
+          if (typeof brief_summary !== "_iter") {
             const obj = { title: null, brief_summary: null, key_points: null };
             obj[0] = callback(table[0]).upperFirst(filter.title);
             obj[1] = filter.brief_summary;

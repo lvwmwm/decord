@@ -1,7 +1,7 @@
 // Module ID: 11370
 // Function ID: 11371
 // Name: _getEmbedApplication
-// Dependencies: [5, 4254, 1946, 706, 5583, 11371, 11372, 11367, 11373, 11374, 676, 709, 584, 530, 11368, 500, 11375, 11376, 11377, 2]
+// Dependencies: [5, 4284, 1946, 706, 5612, 11371, 11372, 11367, 11373, 11374, 676, 709, 584, 530, 11368, 500, 11375, 11376, 11377, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
 // Module 11370 (_getEmbedApplication)

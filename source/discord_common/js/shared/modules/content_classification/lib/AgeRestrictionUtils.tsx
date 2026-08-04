@@ -1,15 +1,15 @@
-// Module ID: 7001
-// Function ID: 7002
+// Module ID: 7013
+// Function ID: 7014
 // Name: compare
-// Dependencies: [6995, 2]
+// Dependencies: [7007, 2]
 // Exports: compare
 
-// Module 7001 (compare)
+// Module 7013 (compare)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/modules/content_classification/lib/AgeRestrictionUtils.tsx");
 
 export const compare = function compare(arg0, arg1) {
-  const prop = require(6995) /* AgeRestrictionStatus */.AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING;
+  const prop = require(7007) /* AgeRestrictionStatus */.AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING;
   const index = prop.indexOf(arg0);
-  const prop1 = require(6995) /* AgeRestrictionStatus */.AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING;
+  const prop1 = require(7007) /* AgeRestrictionStatus */.AGE_RESTRICTION_STATUS_RESTRICTIVENESS_ORDERING;
   return index - prop1.indexOf(arg1);
 };

@@ -1,8 +1,8 @@
-// Module ID: 15528
-// Function ID: 15529
-// Dependencies: [19, 17, 1862, 3883, 1874, 21, 4255, 712, 1474, 15183, 589, 5765, 1236, 15529, 15530, 15536, 4075, 1480, 9482, 15531, 5907, 8643, 8535, 11826, 11826, 8939, 2]
+// Module ID: 15559
+// Function ID: 15560
+// Dependencies: [19, 17, 1862, 3913, 1874, 21, 4285, 712, 1474, 15217, 589, 5794, 1236, 15560, 15561, 15567, 4105, 1480, 8408, 15562, 5917, 8973, 8878, 11886, 11886, 9480, 2]
 
-// Module 15528
+// Module 15559
 import importAllResult from "showMembersManagementActionSheet";
 import { View } from "useNavigation";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -111,12 +111,12 @@ const memoResult = importAllResult.memo((guildId) => {
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
         const obj = { source: null, accessibilityLabel: null, ref: null };
-        obj[0] = callback2(8643);
+        obj[0] = callback2(8973);
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.ogxXGq);
         obj[2] = ref.ref;
         const merged1 = Object.assign(merged);
-        return callback3(callback(5907).HeaderActionButton, obj);
+        return callback3(callback(5917).HeaderActionButton, obj);
       }
     };
     return outer1_8(guildId(stateFromStores[18]).ContextMenu, obj);

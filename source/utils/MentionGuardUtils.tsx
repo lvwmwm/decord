@@ -1,9 +1,9 @@
-// Module ID: 9733
-// Function ID: 9734
+// Module ID: 9827
+// Function ID: 9828
 // Name: parsedItemUsesEveryoneRole
-// Dependencies: [32, 5777, 3883, 676, 38, 7050, 2]
+// Dependencies: [32, 5806, 3913, 676, 38, 7062, 2]
 
-// Module 9733 (parsedItemUsesEveryoneRole)
+// Module 9827 (parsedItemUsesEveryoneRole)
 import _slicedToArray from "_slicedToArray";
 import getMemberListId from "getMemberListId";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -105,8 +105,8 @@ export default {
     return tmp3;
   },
   extractEveryoneRole(arg0, getGuildId) {
-    const obj = importDefault(7050);
-    const obj2 = importDefault(7050).parsePreprocessor(getGuildId, arg0)[Symbol.iterator]();
+    const obj = importDefault(7062);
+    const obj2 = importDefault(7062).parsePreprocessor(getGuildId, arg0)[Symbol.iterator]();
     while (obj2 !== undefined) {
       let tmp3 = parsedItemUsesEveryoneRole;
       let tmp4 = parsedItemUsesEveryoneRole(tmp2);

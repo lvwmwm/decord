@@ -1,9 +1,9 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 9336
+// Function ID: 9337
 // Name: memoResult1
-// Dependencies: [19, 17, 5738, 676, 21, 4255, 712, 8848, 6909, 8902, 6910, 8905, 8911, 4251, 1236, 8891, 500, 7639, 7613, 8851, 8886, 1901, 3901, 3959, 4099, 8912, 589, 4677, 8913, 2]
+// Dependencies: [19, 17, 5767, 676, 21, 4285, 712, 9263, 6921, 9337, 6922, 9340, 9346, 4281, 1236, 9326, 500, 7651, 7625, 9266, 9321, 1901, 3931, 3989, 4129, 9347, 589, 4706, 9348, 2]
 
-// Module 8901 (memoResult1)
+// Module 9336 (memoResult1)
 import importAllResult from "useCurrentUser";
 import { View } from "TagIcon";
 import updateProduct from "updateProduct";
@@ -234,29 +234,29 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
   ({ product, hidePrice } = arg0);
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = callback2();
-  let obj = require(8851) /* useCurrentUser */;
+  let obj = require(9266) /* useCurrentUser */;
   const currentUser = obj.useCurrentUser();
-  let obj1 = require(8886) /* useCanPurchaseFrames */;
+  let obj1 = require(9321) /* useCanPurchaseFrames */;
   let isProfileFramesEarlyAccessPhase = obj1.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
   if (isProfileFramesEarlyAccessPhase) {
-    let tmp2Result = tmp2(6909);
+    let tmp2Result = tmp2(6921);
     const productType = tmp2Result.getProductType(product);
     isProfileFramesEarlyAccessPhase = productType === tmp2(1901).CollectiblesItemType.PROFILE_FRAME;
   }
-  let obj3 = importDefault(3901);
-  tmp2Result = tmp2(6910);
+  let obj3 = importDefault(3931);
+  tmp2Result = tmp2(6922);
   const shopDiscountSource = tmp2Result.getShopDiscountSource(currentUser);
   const tmp8 = obj3.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
-  const token = require(3959) /* map */.useToken(tmp7(712).colors.BACKGROUND_BASE_LOW);
-  const tmp2Result1 = require(3959) /* map */;
-  const tmp2Result2 = require(4099) /* hexToRgba */;
-  const tmp2Result3 = require(4099) /* hexToRgba */;
-  const hexToRgbaStringResult = tmp2Result2.hexToRgbaString(require(4099) /* hexToRgba */.hexWithOpacity(token, 0.9));
-  const tmp2Result4 = require(4099) /* hexToRgba */;
-  const tmp2Result5 = require(4099) /* hexToRgba */;
-  const hexToRgbaStringResult1 = tmp2Result4.hexToRgbaString(require(4099) /* hexToRgba */.hexWithOpacity(token, 0));
-  const productName = require(8912) /* getProductName */.getProductName(product);
-  const tmp2Result6 = require(8912) /* getProductName */;
+  const token = require(3989) /* map */.useToken(tmp7(712).colors.BACKGROUND_BASE_LOW);
+  const tmp2Result1 = require(3989) /* map */;
+  const tmp2Result2 = require(4129) /* hexToRgba */;
+  const tmp2Result3 = require(4129) /* hexToRgba */;
+  const hexToRgbaStringResult = tmp2Result2.hexToRgbaString(require(4129) /* hexToRgba */.hexWithOpacity(token, 0.9));
+  const tmp2Result4 = require(4129) /* hexToRgba */;
+  const tmp2Result5 = require(4129) /* hexToRgba */;
+  const hexToRgbaStringResult1 = tmp2Result4.hexToRgbaString(require(4129) /* hexToRgba */.hexWithOpacity(token, 0));
+  const productName = require(9347) /* getProductName */.getProductName(product);
+  const tmp2Result6 = require(9347) /* getProductName */;
   const items = [updateProduct];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
   obj = { style: items1, colors: items2, locations: [0, 0.4, 1], start: constants.START, end: constants.END, children: null };
@@ -264,7 +264,7 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
   items2 = [hexToRgbaStringResult1, hexToRgbaStringResult, token];
   const tmp2Result7 = require(589) /* initialize */;
   obj = { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: productName };
-  const items3 = [callback(require(4251) /* Text */.Text, obj), ];
+  const items3 = [callback(require(4281) /* Text */.Text, obj), ];
   let tmp15Result = !hidePrice;
   if (!hidePrice) {
     obj1 = { style: null, children: null };
@@ -281,13 +281,13 @@ const memoResult1 = importAllResult.memo(function CardDetailsV2(arg0) {
     const items4 = [tmp17(closure_11, obj2), ];
     obj3 = { product: null };
     obj3[0] = product;
-    items4[1] = tmp17(tmp7(8913), obj3);
+    items4[1] = tmp17(tmp7(9348), obj3);
     obj1[1] = items4;
     tmp15Result = tmp15(View, obj1);
   }
   items3[1] = tmp15Result;
   obj[5] = items3;
-  return closure_9(importDefault(4677), obj);
+  return closure_9(importDefault(4706), obj);
 });
 const result = require("updateProduct").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardCardDetailsV2.tsx");
 

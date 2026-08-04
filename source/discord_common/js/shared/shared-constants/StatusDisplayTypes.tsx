@@ -1,9 +1,9 @@
-// Module ID: 9259
-// Function ID: 9260
+// Module ID: 9571
+// Function ID: 9572
 // Name: StatusDisplayTypes
 // Dependencies: [2]
 
-// Module 9259 (StatusDisplayTypes)
+// Module 9571 (StatusDisplayTypes)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/StatusDisplayTypes.tsx");
 
 export const StatusDisplayTypes = { NAME: 0, [0]: "NAME", STATE: 1, [1]: "STATE", DETAILS: 2, [2]: "DETAILS" };

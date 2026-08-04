@@ -1,10 +1,10 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 14994
+// Function ID: 14995
 // Name: useAuthFlowBackHandler
-// Dependencies: [19, 14945, 14942, 5215, 2]
+// Dependencies: [19, 14979, 14976, 5244, 2]
 // Exports: default
 
-// Module 14960 (useAuthFlowBackHandler)
+// Module 14994 (useAuthFlowBackHandler)
 import noop from "noop";
 import { RegistrationTransitionActionTypes as closure_3 } from "RegistrationTransitionActionTypes";
 
@@ -13,8 +13,8 @@ const result = require("NavigatorWithCaptchaHook").fileFinishedImporting("module
 
 export default function useAuthFlowBackHandler(arg0) {
   const _require = arg0;
-  const dependencyMap = React.useContext(_require(14942).TrackRegistrationContext);
-  _require(5215).useNavigatorBackPressHandler(() => {
+  const dependencyMap = React.useContext(_require(14976).TrackRegistrationContext);
+  _require(5244).useNavigatorBackPressHandler(() => {
     callback({ step: closure_0, actionType: outer1_3.VIEWED });
     return false;
   });

@@ -1,7 +1,7 @@
 // Module ID: 11338
 // Function ID: 11339
 // Name: useActivityShelfItems
-// Dependencies: [19, 7497, 589, 11339, 11340, 11341, 2]
+// Dependencies: [19, 7509, 589, 11339, 11340, 11341, 2]
 // Exports: default
 
 // Module 11338 (useActivityShelfItems)

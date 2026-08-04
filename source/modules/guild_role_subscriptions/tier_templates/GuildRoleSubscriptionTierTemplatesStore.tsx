@@ -1,9 +1,9 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14371
+// Function ID: 14372
 // Name: initialize
 // Dependencies: [1376, 1372, 589, 709, 2]
 
-// Module 14337 (initialize)
+// Module 14371 (initialize)
 import { createChannelRecord } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Store } from "initialize";

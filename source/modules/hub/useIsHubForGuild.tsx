@@ -1,10 +1,10 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11659
+// Function ID: 11660
 // Name: useIsHubForGuild
 // Dependencies: [1862, 676, 589, 2]
 // Exports: default
 
-// Module 11596 (useIsHubForGuild)
+// Module 11659 (useIsHubForGuild)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 

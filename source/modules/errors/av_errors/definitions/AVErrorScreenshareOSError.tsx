@@ -1,9 +1,9 @@
-// Module ID: 16774
-// Function ID: 16775
+// Module ID: 16806
+// Function ID: 16807
 // Name: AVErrorScreenshareOSErrorDefinition
-// Dependencies: [500, 9038, 16763, 4319, 2]
+// Dependencies: [500, 9091, 16795, 4348, 2]
 
-// Module 16774 (AVErrorScreenshareOSErrorDefinition)
+// Module 16806 (AVErrorScreenshareOSErrorDefinition)
 import module_4294963475 from "module_4294963475";
 
 const result = require("getVoiceChannelErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorScreenshareOSError.tsx");
@@ -13,15 +13,15 @@ export const AVErrorScreenshareOSErrorDefinition = {
     activeStreams = activeStreams.activeStreams;
     const found = activeStreams.filter((errorCode) => null != errorCode.errorCode);
     return found.map((errorCode) => {
-      const obj = { type: callback(9038).AVError.SCREENSHARE_OS_ERROR, errorMessage: null };
+      const obj = { type: callback(9091).AVError.SCREENSHARE_OS_ERROR, errorMessage: null };
       if (obj2.isMac()) {
         if (str === module_4294963475) {
           const _HermesInternal = HermesInternal;
           let combined = "" + str + " - your Mac may be low on disk space";
         }
         obj[1] = combined;
-        let tmpResult = tmp(16763);
-        tmpResult = tmp(4319);
+        let tmpResult = tmp(16795);
+        tmpResult = tmp(4348);
         const merged = Object.assign(tmpResult.getStreamErrorContext(tmpResult.encodeStreamKey(errorCode)));
         return obj;
       }

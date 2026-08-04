@@ -1,10 +1,10 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 9375
+// Function ID: 9376
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [12080, 1236, 2]
+// Dependencies: [9374, 1236, 2]
 // Exports: default
 
-// Module 12081 (getRandomCustomStatusPrompt)
+// Module 9375 (getRandomCustomStatusPrompt)
 import StatusTypes from "StatusTypes";
 
 let c3;

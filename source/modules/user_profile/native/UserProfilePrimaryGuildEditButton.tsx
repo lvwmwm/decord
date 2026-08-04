@@ -1,10 +1,10 @@
-// Module ID: 13820
-// Function ID: 13821
+// Module ID: 13854
+// Function ID: 13855
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 1862, 7850, 21, 4255, 712, 589, 13821, 8063, 8064, 1236, 500, 4251, 13799, 4223, 13822, 1959, 5632, 8763, 2]
+// Dependencies: [19, 1862, 7862, 21, 4285, 712, 589, 13855, 8075, 8076, 1236, 500, 4281, 13833, 4253, 13856, 1959, 5661, 9169, 2]
 // Exports: default
 
-// Module 13820 (UserProfilePrimaryGuildEditButton)
+// Module 13854 (UserProfilePrimaryGuildEditButton)
 import "set";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildTagBadgeSize } from "items";

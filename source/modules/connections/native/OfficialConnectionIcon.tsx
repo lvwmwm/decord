@@ -1,10 +1,10 @@
-// Module ID: 10165
-// Function ID: 10166
+// Module ID: 10953
+// Function ID: 10954
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 676, 21, 4255, 5605, 712, 688, 1297, 10166, 10167, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 5634, 712, 688, 1297, 10954, 10955, 2]
 // Exports: default
 
-// Module 10165 (OfficialConnectionIcon)
+// Module 10953 (OfficialConnectionIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -33,7 +33,7 @@ export default function OfficialConnectionIcon(arg0) {
   ({ guildId, displayRoleIcon } = arg0);
   const tmp = callback3();
   let obj = { width: size, height: size };
-  let obj1 = require(5605) /* useRoleIcon */;
+  let obj1 = require(5634) /* useRoleIcon */;
   obj = { guildId, roleId: null, size: null };
   if (roleId == null) {
     let id;
@@ -78,13 +78,13 @@ export default function OfficialConnectionIcon(arg0) {
   const obj2 = { style: items2, size: null, source: null, color: null };
   items2 = [tmp.verifiedCheck, obj];
   obj2[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
-  obj2[2] = importDefault(10166);
+  obj2[2] = importDefault(10954);
   obj2[3] = roleColor;
   const items3 = [callback(require(1297) /* Button */.Icon, obj2), ];
   const obj3 = { style: items4, size: null, source: null, color: null };
   items4 = [tmp.verifiedCheck, obj];
   obj3[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
-  obj3[2] = importDefault(10167);
+  obj3[2] = importDefault(10955);
   obj3[3] = PRIMARY_630;
   items3[1] = callback(require(1297) /* Button */.Icon, obj3);
   obj1[1] = items3;

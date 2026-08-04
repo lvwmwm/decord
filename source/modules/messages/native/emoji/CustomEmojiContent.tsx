@@ -1,10 +1,10 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 8664
+// Function ID: 8665
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 5115, 4072, 1874, 676, 21, 4255, 712, 3901, 698, 8316, 4223, 9569, 589, 5581, 5119, 3899, 3876, 9510, 5608, 3928, 9576, 5915, 9570, 9577, 9579, 4251, 1236, 9573, 3956, 9581, 1959, 9149, 1297, 4666, 5207, 9582, 7765, 9583, 9584, 2]
+// Dependencies: [19, 17, 5144, 4102, 1874, 676, 21, 4285, 712, 3931, 698, 8432, 4253, 8658, 589, 5610, 5148, 3929, 3906, 8563, 5637, 3958, 8665, 5925, 8659, 8666, 8668, 4281, 1236, 8662, 3986, 8670, 1959, 8414, 1297, 4695, 5236, 8671, 7777, 8672, 8673, 2]
 // Exports: default
 
-// Module 9575 (CustomEmojiContent)
+// Module 8664 (CustomEmojiContent)
 import initializeSearch from "initializeSearch";
 import get_ActivityIndicator from "EmojiTypes";
 import computeRolesForGuild from "computeRolesForGuild";

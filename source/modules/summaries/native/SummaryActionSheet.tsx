@@ -1,10 +1,10 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 11029
+// Function ID: 11030
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 1372, 4473, 9663, 676, 21, 4223, 11068, 1959, 4255, 712, 5769, 9678, 3955, 1236, 4438, 8507, 7132, 7144, 4106, 11, 1222, 5309, 5243, 11069, 4251, 11071, 11072, 10274, 7856, 2]
+// Dependencies: [19, 17, 1372, 4502, 10235, 676, 21, 4253, 11029, 1959, 4285, 712, 5798, 11000, 3985, 1236, 4467, 8845, 7144, 7156, 4136, 11, 1222, 5338, 5272, 11030, 4281, 11032, 9012, 11033, 7868, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 11068 (SummaryActionSheet)
+// Module 11029 (SummaryActionSheet)
 import dispatcher from "dispatcher";
 import { View } from "showShareActionSheet";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -191,11 +191,11 @@ export default function SummaryActionSheet(summary) {
 export const openSummaryDividerActionSheet = function openSummaryDividerActionSheet(channelId, summaryId) {
   const findSummaryResult = handleQuickSwitcherUpdate.findSummary(channelId, summaryId);
   if (null != findSummaryResult) {
-    let obj = importDefault(4223);
+    let obj = importDefault(4253);
     const _HermesInternal = HermesInternal;
     obj = { summary: null };
     obj[0] = findSummaryResult;
-    obj.openLazy(require(1959) /* asyncRequireImpl */(11068, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
-    const tmp5 = require(1959) /* asyncRequireImpl */(11068, dependencyMap.paths);
+    obj.openLazy(require(1959) /* asyncRequireImpl */(11029, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
+    const tmp5 = require(1959) /* asyncRequireImpl */(11029, dependencyMap.paths);
   }
 };

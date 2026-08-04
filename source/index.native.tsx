@@ -1,7 +1,7 @@
 // Module ID: 0
 // Function ID: 1
 // Name: Discord
-// Dependencies: [1, 15, 13343, 16, 9, 1208, 13537, 13538, 17, 13540, 16132, 16853, 16854, 16855, 16856, 16857, 16859, 16860, 16861, 16862, 16863, 16864, 16865, 16866, 2]
+// Dependencies: [1, 15, 13377, 16, 9, 1208, 13571, 13572, 17, 13574, 16165, 16885, 16886, 16887, 16888, 16889, 16891, 16892, 16893, 16894, 16895, 16896, 16897, 16898, 2]
 
 // Module 0 (Discord)
 import module_1 from "createFastConnectSocket";
@@ -12,7 +12,7 @@ import module_1208 from "module_1208";
 import { AppRegistry } from "promise";
 
 let GenerateInvite = require;
-let f16912 = dependencyMap;
+let f16944 = dependencyMap;
 const polyfillsEnd = require("App").default.imports.polyfillsEnd;
 polyfillsEnd.record();
 const sentryEnd = require("App").default.imports.sentryEnd;
@@ -20,84 +20,84 @@ sentryEnd.record();
 if (require("isTTITest").isTTITest) {
   require("installSystrace").installSystrace();
 }
-AppRegistry.registerComponent("Discord", () => GenerateInvite(f16912[9]).default);
+AppRegistry.registerComponent("Discord", () => GenerateInvite(f16944[9]).default);
 const runnable = AppRegistry.getRunnable("Discord");
 AppRegistry.registerRunnable("Discord", () => {
   const GenerateInvite = [...arguments];
-  return GenerateInvite(f16912[10]).default("Main", () => {
+  return GenerateInvite(f16944[10]).default("Main", () => {
     outer1_2(...closure_0);
   });
 });
-AppRegistry.registerComponent("Share", () => GenerateInvite(f16912[11]).default);
+AppRegistry.registerComponent("Share", () => GenerateInvite(f16944[11]).default);
 const runnable2 = AppRegistry.getRunnable("Share");
 AppRegistry.registerRunnable("Share", () => {
   const GenerateInvite = [...arguments];
-  return GenerateInvite(f16912[10]).default("Share", () => outer1_3(...closure_0));
+  return GenerateInvite(f16944[10]).default("Share", () => outer1_3(...closure_0));
 });
 GenerateInvite = "BackgroundSync";
-f16912 = () => GenerateInvite(f16912[13]);
+f16944 = () => GenerateInvite(f16944[13]);
 AppRegistry.registerHeadlessTask("BackgroundSync", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "TTITestAction";
-f16912 = () => GenerateInvite(f16912[14]);
+f16944 = () => GenerateInvite(f16944[14]);
 AppRegistry.registerHeadlessTask("TTITestAction", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "Disconnect";
-f16912 = () => GenerateInvite(f16912[15]);
+f16944 = () => GenerateInvite(f16944[15]);
 AppRegistry.registerHeadlessTask("Disconnect", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "MarkAsRead";
-f16912 = () => GenerateInvite(f16912[16]);
+f16944 = () => GenerateInvite(f16944[16]);
 AppRegistry.registerHeadlessTask("MarkAsRead", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "MuteAction";
-f16912 = () => GenerateInvite(f16912[17]);
+f16944 = () => GenerateInvite(f16944[17]);
 AppRegistry.registerHeadlessTask("MuteAction", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "ToggleDeafen";
-f16912 = () => GenerateInvite(f16912[18]);
+f16944 = () => GenerateInvite(f16944[18]);
 AppRegistry.registerHeadlessTask("ToggleDeafen", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "ToggleSelfMute";
-f16912 = () => GenerateInvite(f16912[19]);
+f16944 = () => GenerateInvite(f16944[19]);
 AppRegistry.registerHeadlessTask("ToggleSelfMute", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "DismissCallAction";
-f16912 = () => GenerateInvite(f16912[20]);
+f16944 = () => GenerateInvite(f16944[20]);
 AppRegistry.registerHeadlessTask("DismissCallAction", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "DirectReply";
-f16912 = () => GenerateInvite(f16912[21]);
+f16944 = () => GenerateInvite(f16944[21]);
 AppRegistry.registerHeadlessTask("DirectReply", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "SelectVoiceChannel";
-f16912 = () => GenerateInvite(f16912[22]);
+f16944 = () => GenerateInvite(f16944[22]);
 AppRegistry.registerHeadlessTask("SelectVoiceChannel", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 GenerateInvite = "GenerateInvite";
-f16912 = () => GenerateInvite(f16912[23]);
+f16944 = () => GenerateInvite(f16944[23]);
 AppRegistry.registerHeadlessTask("GenerateInvite", () => {
-  let closure_0 = GenerateInvite(f16912[12]).default;
+  let closure_0 = GenerateInvite(f16944[12]).default;
   return (arg0) => callback(callback, outer1_1, arg0);
 });
 const result = require("toLocaleLowerCase").fileFinishedImporting("index.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15527
+// Function ID: 15528
 // Name: useActiveSubscriptionListingForGroup
-// Dependencies: [19, 3906, 3907, 3877, 676, 589, 14317, 5757, 2]
+// Dependencies: [19, 3936, 3937, 3907, 676, 589, 14351, 5786, 2]
 // Exports: default
 
-// Module 15496 (useActiveSubscriptionListingForGroup)
+// Module 15527 (useActiveSubscriptionListingForGroup)
 import noop from "noop";
 import addSubscriptionPlan from "addSubscriptionPlan";
 import reset from "reset";

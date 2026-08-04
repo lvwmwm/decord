@@ -1,10 +1,10 @@
-// Module ID: 13746
-// Function ID: 13747
+// Module ID: 13780
+// Function ID: 13781
 // Name: BurgerIcon
-// Dependencies: [19, 21, 712, 3958, 13747, 2]
+// Dependencies: [19, 21, 712, 3988, 13781, 2]
 // Exports: BurgerIcon
 
-// Module 13746 (BurgerIcon)
+// Module 13780 (BurgerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const BurgerIcon = function BurgerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13747) /* registerAsset */;
+  obj[0] = require(13781) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

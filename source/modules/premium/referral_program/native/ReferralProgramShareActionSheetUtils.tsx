@@ -1,10 +1,10 @@
-// Module ID: 12595
-// Function ID: 12596
+// Module ID: 12629
+// Function ID: 12630
 // Name: buildReferralUserRow
-// Dependencies: [3892, 8999, 2]
+// Dependencies: [3922, 9539, 2]
 // Exports: buildReferralUserRow
 
-// Module 12595 (buildReferralUserRow)
+// Module 12629 (buildReferralUserRow)
 import upsertRelationship from "upsertRelationship";
 import { UserRowModes } from "UserRowModes";
 

@@ -1,9 +1,9 @@
-// Module ID: 16250
-// Function ID: 16251
+// Module ID: 16283
+// Function ID: 16284
 // Name: handleInteraction
-// Dependencies: [4072, 1877, 5200, 9512, 2]
+// Dependencies: [4102, 1877, 5229, 8565, 2]
 
-// Module 16250 (handleInteraction)
+// Module 16283 (handleInteraction)
 import handleConnectionOpen from "handleConnectionOpen";
 import { EmojiInteractionPoint } from "set";
 import "initialize";
@@ -20,8 +20,8 @@ TopEmojisDataManager.prototype["handleInteraction"] = function handleInteraction
   const items = [EmojiInteractionPoint.EmojiButtonMouseEntered];
   if (items.includes(interaction.interaction)) {
     guildId = guildId.getGuildId();
-    const result = require(9512) /* maybeFetchTopEmojisByGuild */.maybeFetchTopEmojisByGuild(guildId);
-    const obj = require(9512) /* maybeFetchTopEmojisByGuild */;
+    const result = require(8565) /* maybeFetchTopEmojisByGuild */.maybeFetchTopEmojisByGuild(guildId);
+    const obj = require(8565) /* maybeFetchTopEmojisByGuild */;
   }
 };
 const topEmojisDataManager = new TopEmojisDataManager();

@@ -1,27 +1,27 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14300
+// Function ID: 14301
 // Name: useVideoExternallyPaused
-// Dependencies: [3948, 9483, 4106, 10652, 589, 4596, 500, 2]
+// Dependencies: [3978, 8409, 4136, 10501, 589, 4625, 500, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 14266 (useVideoExternallyPaused)
+// Module 14300 (useVideoExternallyPaused)
 import setContent from "setContent";
 
 const require = arg1;
 const result = require("navigationToRootTabHelper").fileFinishedImporting("modules/quests/native/VideoQuestModal/hooks/useVideoExternallyPaused.tsx");
 
 export const useVideoExternallyPaused = function useVideoExternallyPaused(id, arg1) {
-  const activeContextMenu = require(9483) /* updateContextMenuState */.useActiveContextMenu();
-  const obj = require(9483) /* updateContextMenuState */;
-  const openModalKey = require(4106) /* navigationToRootTabHelper */.useOpenModalKey();
-  const obj2 = require(4106) /* navigationToRootTabHelper */;
-  const videoQuestModalKey = require(10652) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
-  const obj3 = require(10652) /* getVideoQuestWatchCtaText */;
+  const activeContextMenu = require(8409) /* updateContextMenuState */.useActiveContextMenu();
+  const obj = require(8409) /* updateContextMenuState */;
+  const openModalKey = require(4136) /* navigationToRootTabHelper */.useOpenModalKey();
+  const obj2 = require(4136) /* navigationToRootTabHelper */;
+  const videoQuestModalKey = require(10501) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
+  const obj3 = require(10501) /* getVideoQuestWatchCtaText */;
   const items = [setContent];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => key.getKey());
   const obj4 = require(589) /* initialize */;
-  const obj5 = require(4596) /* useAlertStore */;
-  const tmp5 = require(4596) /* useAlertStore */.useAlertStore((alerts) => alerts.alerts).length > 0;
+  const obj5 = require(4625) /* useAlertStore */;
+  const tmp5 = require(4625) /* useAlertStore */.useAlertStore((alerts) => alerts.alerts).length > 0;
   let tmp6 = require(500) /* set */.isIOS() && arg1;
   if (!tmp6) {
     tmp6 = null != stateFromStores;

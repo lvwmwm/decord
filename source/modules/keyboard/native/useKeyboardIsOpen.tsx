@@ -1,10 +1,10 @@
-// Module ID: 5903
-// Function ID: 5904
+// Module ID: 5913
+// Function ID: 5914
 // Name: useKeyboardIsOpen
 // Dependencies: [1476, 1477, 1478, 1579, 2]
 // Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 5903 (useKeyboardIsOpen)
+// Module 5913 (useKeyboardIsOpen)
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 
 const require = arg1;

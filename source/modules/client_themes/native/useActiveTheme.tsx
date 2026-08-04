@@ -1,10 +1,10 @@
-// Module ID: 9012
-// Function ID: 9013
+// Module ID: 8204
+// Function ID: 8205
 // Name: useActiveThemeType
-// Dependencies: [1304, 4067, 1346, 1305, 589, 4105, 2]
+// Dependencies: [1304, 4097, 1346, 1305, 589, 4135, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 9012 (useActiveThemeType)
+// Module 8204 (useActiveThemeType)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import reset from "reset";
@@ -19,7 +19,7 @@ function useActiveThemeType() {
   const obj = require(589) /* initialize */;
   const items1 = [isSyncedModeThemesEnabled];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => null != gradientPreset.gradientPreset);
-  const tmp3 = importDefault(4105)();
+  const tmp3 = importDefault(4135)();
   const obj2 = require(589) /* initialize */;
   const items2 = [CHANNEL_SIDEBAR_WIDTH];
   let type;

@@ -1,10 +1,10 @@
-// Module ID: 8535
-// Function ID: 8536
+// Module ID: 8878
+// Function ID: 8879
 // Name: useSegmentedControlState
-// Dependencies: [19, 712, 3974, 4116, 4224, 4652, 2]
+// Dependencies: [19, 712, 4004, 4146, 4254, 4681, 2]
 // Exports: useSegmentedControlState
 
-// Module 8535 (useSegmentedControlState)
+// Module 8878 (useSegmentedControlState)
 import noop from "noop";
 
 const require = arg1;

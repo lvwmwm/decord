@@ -1,10 +1,10 @@
-// Module ID: 10091
-// Function ID: 10092
+// Module ID: 10189
+// Function ID: 10190
 // Name: _upsertSavedMessage
-// Dependencies: [5, 9711, 676, 530, 9712, 709, 4475, 2]
+// Dependencies: [5, 10188, 676, 530, 8192, 709, 4504, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, upsertSavedMessage
 
-// Module 10091 (_upsertSavedMessage)
+// Module 10189 (_upsertSavedMessage)
 import dispatcher from "dispatcher";
 import getTimeSafe from "getTimeSafe";
 import { Endpoints } from "ME";
@@ -232,11 +232,11 @@ function _fetchAndUpdateSavedMessages() {
             callback = results.map((message) => {
               let messageRecord = null;
               if (null != message.message) {
-                let obj = callback(4475);
+                let obj = callback(4504);
                 messageRecord = obj.createMessageRecord(message.message);
               }
               obj = { message: messageRecord, saveData: null };
-              obj[1] = callback(9712).savedMessageDataToClient(message.save_data);
+              obj[1] = callback(8192).savedMessageDataToClient(message.save_data);
               return obj;
             });
             obj2 = callback(709);

@@ -1,10 +1,10 @@
-// Module ID: 13068
-// Function ID: 13069
+// Module ID: 13102
+// Function ID: 13103
 // Name: MarkupGameMention
-// Dependencies: [19, 21, 4255, 712, 1236, 4246, 7738, 5207, 8779, 8785, 4251, 2]
+// Dependencies: [19, 21, 4285, 712, 1236, 4276, 7750, 5236, 9194, 9200, 4281, 2]
 // Exports: default
 
-// Module 13068 (MarkupGameMention)
+// Module 13102 (MarkupGameMention)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -50,14 +50,14 @@ export default function MarkupGameMention(arg0) {
     if (tmp11) {
       tmp11 = "" !== icon;
     }
-    let tmp9Result = callback(tmp2(7738).UnknownGameIcon, obj);
+    let tmp9Result = callback(tmp2(7750).UnknownGameIcon, obj);
     if (tmp11) {
       obj = { style: null, source: null };
       obj[0] = tmp.icon;
       const obj1 = { uri: null };
       obj1[0] = icon;
       obj[1] = obj1;
-      tmp9Result = tmp9(importDefault(5207), obj);
+      tmp9Result = tmp9(importDefault(5236), obj);
     }
     let str3 = "button";
     if (state.noStyleAndInteraction) {
@@ -85,9 +85,9 @@ export default function MarkupGameMention(arg0) {
     const obj3 = { variant: "text-sm/medium", style: null, children: null };
     obj3[1] = tmp.chipText;
     obj3[2] = tmp6;
-    items[1] = callback(tmp2(4251).Text, obj3);
+    items[1] = callback(tmp2(4281).Text, obj3);
     obj2[4] = items;
-    return closure_3(tmp2(4246).MarkupText, obj2, state.key);
+    return closure_3(tmp2(4276).MarkupText, obj2, state.key);
   } else {
     let textColor1;
     if (state != null) {
@@ -97,6 +97,6 @@ export default function MarkupGameMention(arg0) {
     obj[0] = textColor1;
     const items1 = ["@", stringResult];
     obj[1] = items1;
-    return closure_3(tmp2(4246).MarkupText, obj, state.key);
+    return closure_3(tmp2(4276).MarkupText, obj, state.key);
   }
 };

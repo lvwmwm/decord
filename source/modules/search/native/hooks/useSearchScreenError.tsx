@@ -1,10 +1,10 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15641
+// Function ID: 15642
 // Name: useMessageSearchErrorScreen
-// Dependencies: [19, 5779, 10254, 9281, 589, 10255, 1236, 3956, 8655, 2]
+// Dependencies: [19, 5808, 11623, 8208, 589, 11624, 1236, 3986, 8985, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 15610 (useMessageSearchErrorScreen)
+// Module 15641 (useMessageSearchErrorScreen)
 import noop from "noop";
 import handleReaction from "handleReaction";
 import prototype from "prototype";

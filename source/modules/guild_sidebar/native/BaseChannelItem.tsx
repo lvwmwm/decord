@@ -1,10 +1,10 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11665
+// Function ID: 11666
 // Name: BaseChannelSubtitle
-// Dependencies: [19, 17, 10437, 4452, 21, 4255, 712, 4251, 501, 1297, 10481, 8547, 11603, 2]
+// Dependencies: [19, 17, 9710, 4481, 21, 4285, 712, 4281, 501, 1297, 9757, 8585, 11666, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 11602 (BaseChannelSubtitle)
+// Module 11665 (BaseChannelSubtitle)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { CHANNEL_TITLE_LINE_HEIGHT } from "hairlineWidth";
@@ -18,8 +18,8 @@ const require = arg1;
 class BaseChannelSubtitle {
   constructor(arg0) {
     ({ mode, subtitle } = global);
-    tmp = f51773;
-    if (mode !== f51773.UNREAD_IMPORTANT) {
+    tmp = f51929;
+    if (mode !== f51929.UNREAD_IMPORTANT) {
       if (mode !== tmp.RELEVANT) {
         if (mode !== tmp.SELECTED) {
           MUTED = tmp.MUTED;
@@ -128,9 +128,9 @@ export default function BaseChannelItem(mode) {
     items1[3] = channelInfo;
     obj[1] = items1;
     if (flag) {
-      let AnimatedPressableHighlight = hideIcon(11603);
+      let AnimatedPressableHighlight = hideIcon(11666);
     } else {
-      AnimatedPressableHighlight = mode(8547).AnimatedPressableHighlight;
+      AnimatedPressableHighlight = mode(8585).AnimatedPressableHighlight;
     }
     obj = {};
     const merged1 = Object.assign(merged);
@@ -147,9 +147,9 @@ export default function BaseChannelItem(mode) {
       ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
     }
     obj[2] = ALL_MESSAGES;
-    closure_7(hideIcon(10481), obj);
+    closure_7(hideIcon(9757), obj);
     const tmp6 = closure_7;
-    const tmp9 = hideIcon(10481);
+    const tmp9 = hideIcon(9757);
   }
 };
 export const ChannelModes = createCacheKey;

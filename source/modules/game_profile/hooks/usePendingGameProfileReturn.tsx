@@ -1,12 +1,12 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 11708
+// Function ID: 11709
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 4276, 8781, 676, 589, 8779, 8785, 2]
+// Dependencies: [19, 4306, 9196, 676, 589, 9194, 9200, 2]
 // Exports: default
 
-// Module 11645 (usePendingGameProfileReturn)
+// Module 11708 (usePendingGameProfileReturn)
 import noop from "noop";
-import map from "map";
+import handleLoadMessages from "handleLoadMessages";
 import getSimilarGames from "getSimilarGames";
 import { AVATAR_SIZE } from "ME";
 
@@ -41,7 +41,7 @@ export default function usePendingGameProfileReturn(channelId) {
       obj.returnToGameProfile(obj);
     }
   }, items1);
-  const items2 = [map];
+  const items2 = [handleLoadMessages];
   stateFromStores1 = channelId(stateFromStores1[4]).useStateFromStores(items2, () => {
     let gameId;
     if (stateFromStores != null) {

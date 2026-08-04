@@ -1,7 +1,7 @@
 // Module ID: 11291
 // Function ID: 11292
 // Name: useShouldUseFabricChatInput
-// Dependencies: [500, 4119, 11292, 2]
+// Dependencies: [500, 4149, 11292, 2]
 // Exports: shouldUseFabricChatInput, useShouldUseFabricChatInput
 
 // Module 11291 (useShouldUseFabricChatInput)
@@ -15,9 +15,9 @@ export const useShouldUseFabricChatInput = function useShouldUseFabricChatInput(
   } else {
     isAndroidResult = require(500) /* set */.isAndroid();
     if (!isAndroidResult) {
-      const tmp4Result = tmp4(4119);
-      isAndroidResult = tmp4(4119).isIosFabric() && tmp3;
-      const tmp6 = tmp4(4119).isIosFabric() && tmp3;
+      const tmp4Result = tmp4(4149);
+      isAndroidResult = tmp4(4149).isIosFabric() && tmp3;
+      const tmp6 = tmp4(4149).isIosFabric() && tmp3;
     }
     closure_3 = isAndroidResult;
     const obj = require(500) /* set */;
@@ -43,7 +43,7 @@ export const shouldUseFabricChatInput = function shouldUseFabricChatInput() {
       let tmp6Result = tmp6(500);
       isAndroidResult = tmp6Result.isAndroid();
       if (!isAndroidResult) {
-        tmp6Result = tmp6(4119);
+        tmp6Result = tmp6(4149);
         isAndroidResult = tmp6Result.isIosFabric() && enabled;
         const tmp5 = tmp6Result.isIosFabric() && enabled;
       }

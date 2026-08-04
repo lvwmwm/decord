@@ -1,7 +1,7 @@
 // Module ID: 11358
 // Function ID: 11359
 // Name: useEmbeddedApps
-// Dependencies: [19, 4342, 1874, 1371, 589, 3873, 5587, 1351, 2]
+// Dependencies: [19, 4371, 1874, 1371, 589, 3903, 5616, 1351, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
 // Module 11358 (useEmbeddedApps)
@@ -16,7 +16,7 @@ function useEmbeddedApps(arr, arg1) {
   const _require = arr;
   const importDefault = arg1;
   let mapped = arr.map((applicationId) => applicationId.applicationId);
-  const tmp2 = importDefault(5587)(mapped);
+  const tmp2 = importDefault(5616)(mapped);
   const dependencyMap = tmp2;
   const set = new Set([]);
   const iter = arr[Symbol.iterator]();

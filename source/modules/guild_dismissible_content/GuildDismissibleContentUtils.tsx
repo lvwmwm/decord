@@ -1,10 +1,10 @@
-// Module ID: 11706
-// Function ID: 11707
+// Module ID: 11767
+// Function ID: 11768
 // Name: isContentDismissed
 // Dependencies: [1340, 676, 1369, 685, 1357, 589, 1355, 698, 1358, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 11706 (isContentDismissed)
+// Module 11767 (isContentDismissed)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { AnalyticEvents } from "ME";
 import { ContentDismissActionType } from "ContentDismissActionType";

@@ -1,9 +1,9 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 9674
+// Function ID: 9675
 // Name: ActivityPanelModes
 // Dependencies: [2]
 
-// Module 10404 (ActivityPanelModes)
+// Module 9674 (ActivityPanelModes)
 const result = require("set").fileFinishedImporting("modules/activities/panel/ActivityPanelConstants.tsx");
 
 export const ActivityPanelModes = { DISCONNECTED: "disconnected", LAUNCHING_WITH_ORIENTATION_CHANGE: "launching_with_orientation_change", PANEL: "panel", PIP: "pip", ACTIVITY_POPOUT_WINDOW: "activity_popout_window" };

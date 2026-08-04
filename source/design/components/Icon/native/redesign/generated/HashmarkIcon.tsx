@@ -1,10 +1,10 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13758
+// Function ID: 13759
 // Name: HashmarkIcon
-// Dependencies: [19, 21, 712, 3958, 13725, 2]
+// Dependencies: [19, 21, 712, 3988, 13759, 2]
 // Exports: HashmarkIcon
 
-// Module 13724 (HashmarkIcon)
+// Module 13758 (HashmarkIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const HashmarkIcon = function HashmarkIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13725) /* registerAsset */;
+  obj[0] = require(13759) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

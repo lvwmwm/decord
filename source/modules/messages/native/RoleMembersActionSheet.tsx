@@ -1,10 +1,10 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 10974
+// Function ID: 10975
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 4247, 5777, 1935, 21, 4255, 712, 11, 5271, 589, 5269, 1297, 4251, 5309, 11043, 2]
+// Dependencies: [19, 17, 4277, 5806, 1935, 21, 4285, 712, 11, 5300, 589, 5298, 1297, 4281, 5338, 10975, 2]
 // Exports: default
 
-// Module 11042 (RoleMembersActionSheet)
+// Module 10974 (RoleMembersActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -62,7 +62,7 @@ export default function RoleMembersActionSheet(guildId) {
   const tmp3 = guildId;
   const tmp9 = roleId;
   const result = roleId(11).castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp11 = roleId(5269)(guildId);
+  const tmp11 = roleId(5298)(guildId);
   let tmp12 = null;
   if (roleId !== result) {
     let tmp13;
@@ -87,9 +87,9 @@ export default function RoleMembersActionSheet(guildId) {
     }
     obj[1] = channelId;
     obj[2] = roleId;
-    obj[2] = closure_8(tmp9(11043), obj);
-    tmp16Result = tmp16(tmp3(5309).BottomSheet, obj);
-    let tmp9Result = tmp9(11043);
+    obj[2] = closure_8(tmp9(10975), obj);
+    tmp16Result = tmp16(tmp3(5338).BottomSheet, obj);
+    let tmp9Result = tmp9(10975);
   }
   return tmp16Result;
 };

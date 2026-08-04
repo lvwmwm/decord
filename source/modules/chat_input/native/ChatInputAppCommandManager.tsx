@@ -1,14 +1,14 @@
-// Module ID: 11639
-// Function ID: 11640
+// Module ID: 11702
+// Function ID: 11703
 // Name: areResolvedGamesEqual
-// Dependencies: [32, 19, 7146, 7147, 4276, 7216, 7049, 1874, 4690, 4255, 712, 11296, 12, 6990, 589, 8786, 11297, 11295, 8365, 1906, 11640, 2]
+// Dependencies: [32, 19, 7158, 7159, 4306, 7228, 7061, 1874, 4719, 4285, 712, 11296, 12, 7002, 589, 9201, 11297, 11295, 9455, 1906, 11703, 2]
 
-// Module 11639 (areResolvedGamesEqual)
+// Module 11702 (areResolvedGamesEqual)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PermissionOverwriteType";
 import handleInit from "handleInit";
 import closure_7 from "handleInit";
-import map from "map";
+import handleLoadMessages from "handleLoadMessages";
 import set from "set";
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";

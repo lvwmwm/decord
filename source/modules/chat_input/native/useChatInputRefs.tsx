@@ -1,7 +1,7 @@
 // Module ID: 11289
 // Function ID: 11290
 // Name: useChatInputRefs
-// Dependencies: [19, 5158, 4592, 7049, 7054, 1874, 9493, 676, 4690, 4248, 5569, 4114, 12, 11290, 11294, 11295, 11298, 8152, 7144, 4121, 1579, 1478, 500, 4122, 1844, 698, 9722, 6814, 9724, 11299, 7050, 11300, 4590, 11332, 5903, 2]
+// Dependencies: [19, 5187, 4621, 7061, 7066, 1874, 8421, 676, 4719, 4278, 5598, 4144, 12, 11290, 11294, 11295, 11298, 8164, 7156, 4151, 1579, 1478, 500, 4152, 1844, 698, 10132, 6826, 10131, 11299, 7062, 11300, 4619, 11332, 5913, 2]
 // Exports: default
 
 // Module 11289 (useChatInputRefs)
@@ -46,7 +46,7 @@ export default function useChatInputRefs(chatInputProps) {
   mergeGuildAvatar = React.useRef(null);
   closure_9 = React.useRef(null);
   closure_10 = React.useRef(new Map());
-  const tmp2 = chatInputTextFieldHeight(5569)(() => chatInputProps(4114).createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex));
+  const tmp2 = chatInputTextFieldHeight(5598)(() => chatInputProps(4144).createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex));
   c11 = tmp2;
   closure_12 = React.useRef(chatInputProps);
   closure_13 = React.useRef(chatInputProps);
@@ -72,7 +72,7 @@ export default function useChatInputRefs(chatInputProps) {
       closure_11.handleRef(null, channel.channel.id);
     };
   }, items2);
-  closure_14 = React.useRef(chatInputTextFieldHeight(5569)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
+  closure_14 = React.useRef(chatInputTextFieldHeight(5598)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
   closure_15 = React.useRef({ handledHereMention: false, sending: false });
   const items3 = [tmp2];
   const memo = React.useMemo(() => {
@@ -367,7 +367,7 @@ export default function useChatInputRefs(chatInputProps) {
                   obj[1] = obj;
                   const result = obj.chatInputHandleSendText(obj);
                 }
-                const keyboardType = threadCreationCallback(4121).getKeyboardType();
+                const keyboardType = threadCreationCallback(4151).getKeyboardType();
                 if (keyboardType === threadCreationCallback(1579).KeyboardTypes.SYSTEM) {
                   const current2 = tmp8.current;
                   current2.focus();
@@ -408,7 +408,7 @@ export default function useChatInputRefs(chatInputProps) {
           closure_16.current.dismissKeyboard();
         }
       },
-      handleSelectSticker(sticker, arg1) {
+      handleSelectSticker(sticker, tokenStart) {
         let channel;
         let threadCreationCallback;
         const current = outer1_13.current;
@@ -419,8 +419,8 @@ export default function useChatInputRefs(chatInputProps) {
             if (!obj4.isStandardSticker(current2)) {
               const text = outer1_14.current.text;
               let sum = text;
-              if (null != arg1) {
-                const substr = text.slice(0, arg1);
+              if (null != tokenStart) {
+                const substr = text.slice(0, tokenStart);
                 sum = substr + text.slice(tmp6);
               }
               let tmp16Result = tmp16(tmp17[31]);
@@ -480,16 +480,20 @@ export default function useChatInputRefs(chatInputProps) {
       handleTextChanged(text) {
         lib(text);
       },
-      insertText(autocompleteResultText, arg1, flag, arg3) {
-        let selectionStart = arg1;
-        if (null == arg1) {
+      insertText(focused, tokenStart, flag, arg3, arg4) {
+        let selectionStart = tokenStart;
+        if (null == tokenStart) {
           selectionStart = closure_14.current.selectionStart;
         }
+        let selectionEnd = arg4;
+        if (arg4 == null) {
+          selectionEnd = closure_14.current.selectionEnd;
+        }
         const current = closure_16.current;
-        const obj = { location: selectionStart, length: closure_14.current.selectionEnd - selectionStart, text: null, nodes: null, editId: null };
-        let text = autocompleteResultText;
+        const obj = { location: selectionStart, length: Math.max(0, selectionEnd - selectionStart), text: null, nodes: null, editId: null };
+        let text = focused;
         if (flag) {
-          text = `${autocompleteResultText} `;
+          text = `${focused} `;
         }
         obj[2] = text;
         obj[3] = arg3;

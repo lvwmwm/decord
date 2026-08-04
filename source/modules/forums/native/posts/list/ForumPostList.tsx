@@ -1,7 +1,7 @@
 // Module ID: 11325
 // Function ID: 11326
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 1379, 21, 4255, 5773, 11306, 11316, 11326, 11329, 2]
+// Dependencies: [32, 19, 17, 1379, 21, 4285, 5802, 11306, 11316, 11326, 11329, 2]
 // Exports: default
 
 // Module 11325 (ForumPostList)
@@ -35,7 +35,7 @@ export default function ForumPostList(arg0) {
   ({ firstMessage, hasUnreads, thread } = arg0);
   ({ messageContent, firstMessageLoaded, isNew, media, isEmbed, isLocalDeviceMedia, parentChannel, senderModifier } = arg0);
   const tmp = callback3();
-  let obj = require(5773) /* useAvailableTags */;
+  let obj = require(5802) /* useAvailableTags */;
   const tmp4 = callback(obj.useSomeAppliedTags(thread, 2), 2);
   const first = tmp4[0];
   const hasFlagResult = thread.hasFlag(ChannelFlags.PINNED);

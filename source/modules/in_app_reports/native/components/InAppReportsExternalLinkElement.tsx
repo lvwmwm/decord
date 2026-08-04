@@ -1,10 +1,10 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12564
+// Function ID: 12565
 // Name: ExternalLinkItem
-// Dependencies: [17, 21, 4255, 4251, 1236, 7768, 5292, 12531, 3952, 2]
+// Dependencies: [17, 21, 4285, 4281, 1236, 7780, 5321, 12565, 3982, 2]
 // Exports: default
 
-// Module 12530 (ExternalLinkItem)
+// Module 12564 (ExternalLinkItem)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,12 +20,12 @@ function ExternalLinkItem(data) {
     obj[0] = tmp;
     obj[1] = tmp2;
     obj = { IconComponent: null };
-    obj[0] = url(12531).LinkExternalMediumIcon;
-    obj[2] = callback(url(5292).TableRowIcon, obj);
+    obj[0] = url(12565).LinkExternalMediumIcon;
+    obj[2] = callback(url(5321).TableRowIcon, obj);
     obj[3] = function onPress() {
       outer1_1(outer1_2[8]).openURL(url);
     };
-    tmp3 = callback(url(7768).RowButton, obj);
+    tmp3 = callback(url(7780).RowButton, obj);
   }
   return tmp3;
 }
@@ -48,7 +48,7 @@ export default function ExternalLinksElement(elements) {
           obj[0] = tmp.headerText;
           const intl = require(1236) /* getSystemLocale */.intl;
           obj[4] = intl.string(require(1236) /* getSystemLocale */.t.hvVgAZ).toUpperCase();
-          tmp5 = callback(require(4251) /* Text */.Text, obj);
+          tmp5 = callback(require(4281) /* Text */.Text, obj);
           const str = intl.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
         }
         const items = [tmp5, elements.map((data) => callback(closure_7, { data: data.data }, "external-link-" + arg1))];

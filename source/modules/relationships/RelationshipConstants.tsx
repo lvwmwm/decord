@@ -1,9 +1,9 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9162
+// Function ID: 9163
 // Name: ClearFriendRequestFilters
 // Dependencies: [2]
 
-// Module 9105 (ClearFriendRequestFilters)
+// Module 9162 (ClearFriendRequestFilters)
 const result = require("set").fileFinishedImporting("modules/relationships/RelationshipConstants.tsx");
 
 export const ClearFriendRequestFilters = { SPAM: 1, [1]: "SPAM", IGNORED: 2, [2]: "IGNORED" };

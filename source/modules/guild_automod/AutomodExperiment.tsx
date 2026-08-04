@@ -1,9 +1,9 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 9690
+// Function ID: 9691
 // Name: experiment
-// Dependencies: [4167, 2]
+// Dependencies: [4197, 2]
 
-// Module 10420 (experiment)
+// Module 9690 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Automod Mention Raid Limit", config: { enabled: true } }];

@@ -1,10 +1,10 @@
-// Module ID: 15396
-// Function ID: 15397
+// Module ID: 15427
+// Function ID: 15428
 // Name: ForYouHoistedItemsHeader
-// Dependencies: [19, 17, 21, 4255, 712, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 2]
 // Exports: ForYouHoistedItemsHeader
 
-// Module 15396 (ForYouHoistedItemsHeader)
+// Module 15427 (ForYouHoistedItemsHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

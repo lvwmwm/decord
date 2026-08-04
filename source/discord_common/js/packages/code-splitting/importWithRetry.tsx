@@ -1,10 +1,10 @@
-// Module ID: 3921
-// Function ID: 3922
+// Module ID: 3951
+// Function ID: 3952
 // Name: _importWithRetry
 // Dependencies: [5, 2]
 // Exports: awaitOnline, importWithRetry, setAwaitOnline
 
-// Module 3921 (_importWithRetry)
+// Module 3951 (_importWithRetry)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

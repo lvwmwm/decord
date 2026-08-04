@@ -1,9 +1,9 @@
-// Module ID: 13981
-// Function ID: 13982
+// Module ID: 14015
+// Function ID: 14016
 // Name: route
-// Dependencies: [19, 676, 21, 13982, 13983, 7760, 712, 1236, 2255, 10272, 4769, 13986, 2]
+// Dependencies: [19, 676, 21, 14016, 14017, 7772, 712, 1236, 2285, 10361, 4798, 14020, 2]
 
-// Module 13981 (route)
+// Module 14015 (route)
 import "noop";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -12,14 +12,14 @@ const require = arg1;
 createToggle = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2255).RZqaJn);
+    return intl.string(importDefault(2285).RZqaJn);
   },
   parent: null,
   IconComponent: require("GroupIcon").GroupIcon,
   useTrailing: function useFamilyCenterTrailing() {
-    let obj = require(13982) /* useIsParentalConsentBannerActive */;
+    let obj = require(14016) /* useIsParentalConsentBannerActive */;
     const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-    const parentalConsentWarning = require(13983) /* useParentalConsentWarning */.useParentalConsentWarning();
+    const parentalConsentWarning = require(14017) /* useParentalConsentWarning */.useParentalConsentWarning();
     let daysRemaining;
     if (parentalConsentWarning != null) {
       daysRemaining = parentalConsentWarning.daysRemaining;
@@ -36,8 +36,8 @@ createToggle = {
           obj = { size: "sm", color: null, accessible: true, accessibilityLabel: null };
           obj[1] = importDefault(712).colors.ICON_FEEDBACK_WARNING;
           const intl = tmp(1236).intl;
-          obj[3] = intl.string(importDefault(2255).wucWfE);
-          tmp6 = jsx(tmp(7760).WarningIcon, { size: "sm", color: null, accessible: true, accessibilityLabel: null });
+          obj[3] = intl.string(importDefault(2285).wucWfE);
+          tmp6 = jsx(tmp(7772).WarningIcon, { size: "sm", color: null, accessible: true, accessibilityLabel: null });
         }
       }
     }
@@ -48,7 +48,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
-    return require(13986) /* FamilyCenterLoading */.default;
+    return require(14020) /* FamilyCenterLoading */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

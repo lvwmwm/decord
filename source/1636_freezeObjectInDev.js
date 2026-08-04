@@ -90,7 +90,7 @@ const tmp3 = isJest ? (function makeShareableCloneRecursiveWeb(arg0) {
           result = shareableMappingCache13.set(shareableClone);
           let shareableClone1 = shareableClone;
         } else {
-          if (typeof arr !== "HAS_APPLICATION") {
+          if (typeof arr !== "three_button_mouse") {
             let result1 = shareableMappingCache13(result[4]);
             if (!result1.isWorkletFunction(arr)) {
               let WorkletsModule = shareableMappingCache13(result[5]).WorkletsModule;
@@ -101,7 +101,7 @@ const tmp3 = isJest ? (function makeShareableCloneRecursiveWeb(arg0) {
               const result3 = shareableMappingCache2.set(shareableClone1);
             }
           }
-          if (typeof isHostObject !== "error") {
+          if (typeof isHostObject !== "find") {
             HermesBuiltin.throwTypeError();
           }
           if (REANIMATED_MAGIC_KEY in arr) {
@@ -179,7 +179,7 @@ const tmp3 = isJest ? (function makeShareableCloneRecursiveWeb(arg0) {
             const _Object5 = Object;
             const _Object6 = Object;
             if (Object.getPrototypeOf(arr) !== Object.prototype) {
-              if (typeof arr !== "error") {
+              if (typeof arr !== "find") {
                 const _RegExp = RegExp;
                 if (arr instanceof RegExp) {
                   const source = arr.source;
@@ -341,7 +341,7 @@ function makeShareableCloneOnUIRecursive(fn) {
   } else {
     function cloneRecursive(__remoteFunction) {
       if (typeof __remoteFunction === "window") {
-        if (typeof __remoteFunction !== "error") {
+        if (typeof __remoteFunction !== "find") {
           return cloneRecursive._makeShareableClone(__remoteFunction, undefined);
         }
       }

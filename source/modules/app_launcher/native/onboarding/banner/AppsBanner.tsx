@@ -1,7 +1,7 @@
 // Module ID: 11362
 // Function ID: 11363
 // Name: AppsBaner
-// Dependencies: [19, 17, 21, 4255, 11363, 11360, 1236, 2]
+// Dependencies: [19, 17, 21, 4285, 11363, 11360, 1236, 2]
 // Exports: default
 
 // Module 11362 (AppsBaner)

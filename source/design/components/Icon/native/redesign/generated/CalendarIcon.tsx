@@ -1,10 +1,10 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8966
+// Function ID: 8967
 // Name: CalendarIcon
-// Dependencies: [19, 21, 712, 3958, 8637, 2]
+// Dependencies: [19, 21, 712, 3988, 8967, 2]
 // Exports: CalendarIcon
 
-// Module 8636 (CalendarIcon)
+// Module 8966 (CalendarIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const CalendarIcon = function CalendarIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8637) /* registerAsset */;
+  obj[0] = require(8967) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

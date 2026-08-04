@@ -1,10 +1,10 @@
-// Module ID: 12974
-// Function ID: 12975
+// Module ID: 13008
+// Function ID: 13009
 // Name: getAGC2ExperimentConfig
 // Dependencies: [1452, 2]
 // Exports: getAGC2ExperimentConfig
 
-// Module 12974 (getAGC2ExperimentConfig)
+// Module 13008 (getAGC2ExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { useAGC2: true, enableAnalog: false, enableDigital: true, headroom_db: 5, max_gain_db: 50, initial_gain_db: 15, max_gain_change_db_per_second: 6, max_output_noise_level_dbfs: -50, fixed_gain_db: 0 };

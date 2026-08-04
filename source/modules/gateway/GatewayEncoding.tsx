@@ -1,9 +1,9 @@
-// Module ID: 12775
-// Function ID: 12776
+// Module ID: 12809
+// Function ID: 12810
 // Name: pack
-// Dependencies: [12776, 4800, 2]
+// Dependencies: [12810, 4829, 2]
 
-// Module 12775 (pack)
+// Module 12809 (pack)
 import getErlpackEncoding from "getErlpackEncoding";
 import { ProcessArgs } from "get";
 
@@ -15,7 +15,7 @@ prototype["pack"] = function pack(arg0) {
   return JSON.stringify(arg0);
 };
 prototype["unpack"] = function unpack(arg0) {
-  if (typeof arg0 === "ge") {
+  if (typeof arg0 === "_iter") {
     let tmp2 = null;
     if (null != arg0) {
       tmp2 = typeof arg0;

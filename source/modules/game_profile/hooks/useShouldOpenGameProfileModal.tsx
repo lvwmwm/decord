@@ -1,12 +1,12 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 9190
+// Function ID: 9191
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4276, 676, 698, 1384, 8776, 6992, 8777, 38, 2]
+// Dependencies: [19, 4306, 676, 698, 1384, 9191, 7004, 9192, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable
 
-// Module 8775 (useShouldOpenGameProfileModal)
+// Module 9190 (useShouldOpenGameProfileModal)
 import noop from "noop";
-import map from "map";
+import handleLoadMessages from "handleLoadMessages";
 import { AnalyticEvents } from "ME";
 
 const require = arg1;
@@ -102,7 +102,7 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(gameFlags.gameFlags, require(8776) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(gameFlags.gameFlags, require(9191) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1384);
@@ -112,7 +112,7 @@ export const gameIsAcceptable = function gameIsAcceptable(gameFlags) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp8Result = require(6992) /* isAgeRestrictedContentClassification */;
+    tmp8Result = require(7004) /* isAgeRestrictedContentClassification */;
   }
   return 0 === arr.length;
 };
@@ -123,7 +123,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
     let arr = items;
   } else {
     const items1 = [];
-    if (obj2.hasFlag(game.gameFlags, require(8776) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
+    if (obj2.hasFlag(game.gameFlags, require(9191) /* GameFlags */.GameFlags.GAME_PROFILE_DISABLED)) {
       arr = items1.push(closure_7.Disabled);
     }
     obj2 = importAll(1384);
@@ -133,7 +133,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
       arr = items1.push(closure_7.NSFW);
       arr = items1;
     }
-    tmp9Result = require(6992) /* isAgeRestrictedContentClassification */;
+    tmp9Result = require(7004) /* isAgeRestrictedContentClassification */;
   }
   return 0 === arr.length;
 };

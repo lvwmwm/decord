@@ -1,10 +1,10 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 16002
+// Function ID: 16003
 // Name: useFloatingCTAProps
-// Dependencies: [32, 19, 17, 4268, 15970, 6882, 1372, 1378, 21, 4191, 10192, 15949, 8630, 647, 8577, 8521, 8531, 4223, 8540, 15971, 12391, 7768, 8636, 1236, 5241, 15972, 10375, 15973, 5922, 8453, 4071, 7704, 1358, 15974, 7618, 7191, 2]
+// Dependencies: [32, 19, 17, 4298, 16003, 6894, 1372, 1378, 21, 4221, 11557, 15982, 8960, 647, 8908, 8864, 8874, 4253, 8883, 16004, 9061, 7780, 8966, 1236, 5270, 16005, 9637, 16006, 5932, 8654, 4101, 7716, 1358, 16007, 7630, 7203, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 15969 (useFloatingCTAProps)
+// Module 16002 (useFloatingCTAProps)
 import DismissibleContent from "DismissibleContent";
 import hideLiveChannelNotice from "hideLiveChannelNotice";
 import { Pressable } from "ACTION_SHEET_HEIGHT_HALF";
@@ -168,8 +168,8 @@ function getBadConnectionCTAProps(arg0) {
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t["gQ14+g"]);
   obj = { IconComponent: null, variant: "translucent" };
-  obj[0] = _require(7704).CircleErrorIcon;
-  obj[2] = jsx(_require(7768).RowButton.Icon, { IconComponent: null, variant: "translucent" });
+  obj[0] = _require(7716).CircleErrorIcon;
+  obj[2] = jsx(_require(7780).RowButton.Icon, { IconComponent: null, variant: "translucent" });
   obj[3] = function onPress() {
     let tmp;
     if (callback != null) {
@@ -186,19 +186,19 @@ function getBadConnectionCTAProps(arg0) {
       callback();
     }
   };
-  obj[4] = jsx(_require(5241).XSmallIcon, { color: "interactive-icon-default" });
+  obj[4] = jsx(_require(5270).XSmallIcon, { color: "interactive-icon-default" });
   obj[4] = <Pressable accessibilityRole="button" accessibilityLabel={null} hitSlop={4} onPress={null}>{null}</Pressable>;
   return obj;
 }
 function handleSoundboardMobileFloatingCtaClose() {
-  const result = require(4071) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
+  const result = require(4101) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA);
 }
 function CloseSoundboardMobileFloatingCtaIcon() {
   const obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[2] = handleSoundboardMobileFloatingCtaClose;
-  obj[3] = jsx(require(5241) /* XSmallIcon */.XSmallIcon, { color: "interactive-icon-default" });
+  obj[3] = jsx(require(5270) /* XSmallIcon */.XSmallIcon, { color: "interactive-icon-default" });
   return <Pressable accessibilityRole="button" accessibilityLabel={null} onPress={null}>{null}</Pressable>;
 }
 function getDismissableCTAProps(arg0) {
@@ -209,7 +209,7 @@ function getDismissableCTAProps(arg0) {
     return getBadConnectionCTAProps();
   } else if (tmp(1358).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA === dismissableContent) {
     let obj = { icon: null, onPress: null, label: null, trailing: null };
-    obj[0] = jsx(tmp(7618).SoundboardIcon, { color: "interactive-icon-default" });
+    obj[0] = jsx(tmp(7630).SoundboardIcon, { color: "interactive-icon-default" });
     obj[1] = function onPress() {
       if (null != closure_0) {
         let obj = outer1_0(outer1_2[33]);
@@ -221,7 +221,7 @@ function getDismissableCTAProps(arg0) {
     };
     obj = { quest: null };
     obj[0] = tmp(1236).t.XLlWUe;
-    obj[2] = tmp(7191).getDeviceSpecificString(obj, tmp(1236).t.IJgkPX);
+    obj[2] = tmp(7203).getDeviceSpecificString(obj, tmp(1236).t.IJgkPX);
     obj[3] = <CloseSoundboardMobileFloatingCtaIcon />;
     return obj;
   } else {

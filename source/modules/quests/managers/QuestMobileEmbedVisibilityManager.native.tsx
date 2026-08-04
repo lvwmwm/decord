@@ -1,9 +1,9 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16776
+// Function ID: 16777
 // Name: log
-// Dependencies: [32, 3948, 4268, 9310, 4466, 1376, 1372, 1931, 9670, 6773, 7068, 8760, 676, 7074, 5200, 1386, 4244, 5102, 7096, 10647, 10407, 4106, 691, 692, 4596, 7095, 4107, 2]
+// Dependencies: [32, 3978, 4298, 8206, 4495, 1376, 1372, 1931, 10932, 6785, 7080, 9438, 676, 7086, 5229, 1386, 4274, 5131, 7108, 10404, 9677, 4136, 691, 692, 4625, 7107, 4137, 2]
 
-// Module 16744 (log)
+// Module 16776 (log)
 import _slicedToArray from "_slicedToArray";
 import setContent from "setContent";
 import getParticipants from "getParticipants";
@@ -25,8 +25,8 @@ let require = arg1;
 ({ useChannelDetailsStore: error, getIsChannelDetailsSearchActive: metroImportAll } = useChannelDetailsStore);
 function log() {
   if (questLogger == null) {
-    questLogger = require(7074) /* getQuestLogger */.getQuestLogger({ location: "QuestMobileEmbedVisibilityManager" });
-    const obj = require(7074) /* getQuestLogger */;
+    questLogger = require(7086) /* getQuestLogger */.getQuestLogger({ location: "QuestMobileEmbedVisibilityManager" });
+    const obj = require(7086) /* getQuestLogger */;
   }
 }
 class QuestMobileEmbedVisibilityManager extends tmp3 {
@@ -239,8 +239,8 @@ class QuestMobileEmbedVisibilityManager extends tmp3 {
       return { channelId: tmp[0], messageId: tmp[1], questId: tmp[2] };
     };
     applyArgumentsResult.isOnChannelNavigationRoute = function isOnChannelNavigationRoute() {
-      let isChannelFocusedResult = applyArgumentsResult(10407).isChannelFocused();
-      applyArgumentsResult(4106);
+      let isChannelFocusedResult = applyArgumentsResult(9677).isChannelFocused();
+      applyArgumentsResult(4136);
       if (isChannelFocusedResult) {
         isChannelFocusedResult = "channel" === tmp3;
       }

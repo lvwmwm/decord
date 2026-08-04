@@ -1,7 +1,7 @@
 // Module ID: 11365
 // Function ID: 11366
 // Name: useBannerBots
-// Dependencies: [19, 1862, 11344, 589, 8147, 11366, 11337, 2]
+// Dependencies: [19, 1862, 11344, 589, 8159, 11366, 11337, 2]
 // Exports: useBannerBots
 
 // Module 11365 (useBannerBots)
@@ -59,7 +59,7 @@ export const useBannerBots = function useBannerBots(context) {
         return outer1_3.getGuild(guild_id);
       })
     };
-    return context(8147).useTopCommands(obj);
+    return context(8159).useTopCommands(obj);
   })({ context });
   let channel = context.channel;
   let guild_id;

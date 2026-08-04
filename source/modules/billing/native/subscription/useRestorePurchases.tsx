@@ -1,10 +1,10 @@
-// Module ID: 14313
-// Function ID: 14314
+// Module ID: 14347
+// Function ID: 14348
 // Name: useRestorePurchases
-// Dependencies: [5, 32, 19, 3, 6780, 2]
+// Dependencies: [5, 32, 19, 3, 6792, 2]
 // Exports: default
 
-// Module 14313 (useRestorePurchases)
+// Module 14347 (useRestorePurchases)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

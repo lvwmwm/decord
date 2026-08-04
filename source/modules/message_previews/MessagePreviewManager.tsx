@@ -1,9 +1,9 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14456
+// Function ID: 14457
 // Name: addWant
-// Dependencies: [32, 5, 4931, 1376, 1218, 1372, 12851, 676, 3, 5200, 12, 1907, 709, 530, 14423, 2]
+// Dependencies: [32, 5, 4960, 1376, 1218, 1372, 12885, 676, 3, 5229, 12, 1907, 709, 530, 14457, 2]
 
-// Module 14422 (addWant)
+// Module 14456 (addWant)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -495,7 +495,7 @@ prototype["getOrCreate"] = function getOrCreate(arg0) {
   const remote = this.remote;
   if (!remote.has(arg0)) {
     const remote2 = self.remote;
-    const remoteFetchData = new require(14423) /* FetchStatus */.RemoteFetchData();
+    const remoteFetchData = new require(14457) /* FetchStatus */.RemoteFetchData();
     const result = remote2.set(arg0, remoteFetchData);
   }
   const remote3 = self.remote;

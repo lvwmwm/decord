@@ -1,10 +1,10 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 8263
+// Function ID: 8264
 // Name: closeModal
-// Dependencies: [32, 19, 1874, 9361, 676, 21, 9359, 503, 5209, 9362, 9365, 9366, 9368, 9371, 9406, 9411, 9413, 589, 5569, 5636, 1236, 2]
+// Dependencies: [32, 19, 1874, 8264, 676, 21, 8262, 503, 5238, 8265, 8268, 8269, 8271, 8274, 8319, 8324, 8326, 589, 5598, 5665, 1236, 2]
 // Exports: default
 
-// Module 9360 (closeModal)
+// Module 8263 (closeModal)
 import _slicedToArray from "_slicedToArray";
 import NavigationStack from "NavigationStack";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -15,7 +15,7 @@ import { jsx } from "set";
 const require = arg1;
 function closeModal() {
   resetChangeEmailStore();
-  importDefault(9359).close();
+  importDefault(8262).close();
 }
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
 

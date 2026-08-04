@@ -1,10 +1,10 @@
-// Module ID: 9436
-// Function ID: 9437
+// Module ID: 8352
+// Function ID: 8353
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4255, 2]
+// Dependencies: [19, 17, 21, 4285, 2]
 // Exports: default
 
-// Module 9436 (PortalToNativeView)
+// Module 8352 (PortalToNativeView)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

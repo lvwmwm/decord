@@ -1,7 +1,7 @@
 // Module ID: 11344
 // Function ID: 11345
 // Name: initialize
-// Dependencies: [1874, 11, 11342, 6879, 589, 709, 2]
+// Dependencies: [1874, 11, 11342, 6891, 589, 709, 2]
 
 // Module 11344 (initialize)
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -27,7 +27,7 @@ const appLauncherOnboardingStore = new AppLauncherOnboardingStore(require("dispa
     let commandOrigin;
     context = context.context;
     ({ command, commandOrigin } = context);
-    let tmp = commandOrigin !== require(6879) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
+    let tmp = commandOrigin !== require(6891) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER;
     if (tmp) {
       tmp = null != context.channel;
     }

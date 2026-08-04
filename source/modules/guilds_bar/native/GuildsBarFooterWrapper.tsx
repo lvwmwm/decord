@@ -1,10 +1,10 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15344
+// Function ID: 15345
 // Name: GuildsBarFooterWrapper
-// Dependencies: [15248, 21, 4255, 712, 3959, 15020, 5634, 2]
+// Dependencies: [15282, 21, 4285, 712, 3989, 15054, 5663, 2]
 // Exports: default
 
-// Module 15313 (GuildsBarFooterWrapper)
+// Module 15344 (GuildsBarFooterWrapper)
 import { GUILD_ITEM_HIT_SLOP } from "GUILD_ITEM_SIZE";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,13 +16,13 @@ let closure_5 = createCacheKey.createStyles(obj);
 const result = require("createCacheKey").fileFinishedImporting("modules/guilds_bar/native/GuildsBarFooterWrapper.tsx");
 
 export default function GuildsBarFooterWrapper(children) {
-  let obj = require(3959) /* map */;
+  let obj = require(3989) /* map */;
   const token = obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp2 = callback();
-  const isHomeDrawerEnabled = require(15020) /* context */.useIsHomeDrawerEnabled();
+  const isHomeDrawerEnabled = require(15054) /* context */.useIsHomeDrawerEnabled();
   const style = [tmp2.footerWrapper, ];
   let tmp6 = null;
-  const obj2 = require(15020) /* context */;
+  const obj2 = require(15054) /* context */;
   const tmp4 = jsx;
   if (!isHomeDrawerEnabled) {
     obj = { width: null };
@@ -30,5 +30,5 @@ export default function GuildsBarFooterWrapper(children) {
     tmp6 = obj;
   }
   style[1] = tmp6;
-  return tmp4(importDefault(5634), { style, children: children.children });
+  return tmp4(importDefault(5663), { style, children: children.children });
 };

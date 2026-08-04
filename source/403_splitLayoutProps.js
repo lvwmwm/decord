@@ -151,13 +151,6 @@ arg5.default = function splitLayoutProps(arg0) {
         break;
         case "ti":
         break;
-        case "ks":
-          tmp8 = item10015;
-          obj[tmp7] = arg0[tmp7];
-          continue;
-        break;
-        case "space":
-        break;
         case "apply":
           tmp8 = item10015;
           obj[tmp7] = arg0[tmp7];
@@ -226,16 +219,23 @@ arg5.default = function splitLayoutProps(arg0) {
           obj[tmp7] = arg0[tmp7];
           continue;
         break;
-        case "substring_i":
+        case "concat":
         break;
-        case "string":
+        case "constructor":
           tmp8 = item10015;
           obj[tmp7] = arg0[tmp7];
           continue;
         break;
-        case "concat":
+        case "container":
         break;
-        case "constructor":
+        case "content":
+          tmp8 = item10015;
+          obj[tmp7] = arg0[tmp7];
+          continue;
+        break;
+        case "context":
+        break;
+        case "text":
           tmp8 = item10015;
           obj[tmp7] = arg0[tmp7];
           continue;

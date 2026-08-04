@@ -1,9 +1,9 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 16784
+// Function ID: 16785
 // Name: prototype
-// Dependencies: [17, 1340, 5200, 500, 2]
+// Dependencies: [17, 1340, 5229, 500, 2]
 
-// Module 16752 (prototype)
+// Module 16784 (prototype)
 import { NativeModules } from "get ActivityIndicator";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import "initialize";

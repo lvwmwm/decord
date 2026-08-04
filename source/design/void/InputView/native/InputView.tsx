@@ -1,9 +1,9 @@
-// Module ID: 13316
-// Function ID: 13317
+// Module ID: 13350
+// Function ID: 13351
 // Name: Fonts
-// Dependencies: [109, 19, 17, 676, 21, 4255, 712, 5096, 3967, 1297, 4251, 1236, 5895, 4101, 11474, 500, 2]
+// Dependencies: [109, 19, 17, 676, 21, 4285, 712, 5125, 3997, 1297, 4281, 1236, 5905, 4131, 11473, 500, 2]
 
-// Module 13316 (Fonts)
+// Module 13350 (Fonts)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { Fonts } from "ME";
@@ -219,7 +219,7 @@ prototype["renderTopContainer"] = function renderTopContainer() {
     const items2 = [tmp.inputViewTitle];
     obj[2] = items2;
     obj[3] = title;
-    tmp12Result = callback2(require(4251) /* Text */.Text, obj);
+    tmp12Result = callback2(require(4281) /* Text */.Text, obj);
     const tmp12 = callback2;
   }
   let tmp15 = null != helpText;
@@ -230,7 +230,7 @@ prototype["renderTopContainer"] = function renderTopContainer() {
   if (tmp15) {
     obj = { variant: "text-xs/medium", children: null };
     obj[1] = helpText;
-    tmp16 = callback2(require(4251) /* Text */.Text, obj);
+    tmp16 = callback2(require(4281) /* Text */.Text, obj);
   }
   const obj1 = { style: tmp.topContainer, children: null };
   const items3 = [tmp12Result, tmp16, , ];
@@ -288,7 +288,7 @@ prototype["renderTrailingButton"] = function renderTrailingButton() {
         clearButtonAccessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.VkKicb);
       }
       obj[5] = clearButtonAccessibilityLabel;
-      obj[6] = closure_9(require(5895) /* CircleXIcon */.CircleXIcon, { size: "sm" });
+      obj[6] = closure_9(require(5905) /* CircleXIcon */.CircleXIcon, { size: "sm" });
       let tmp3Result = tmp3(closure_6, obj);
       const tmp4 = closure_6;
     } else {
@@ -372,7 +372,7 @@ prototype["renderTextView"] = function renderTextView() {
     const found = items1.filter(Boolean);
     const joined = found.join(",");
     if (inActionSheet) {
-      let TextInput = importDefault(11474);
+      let TextInput = importDefault(11473);
     } else {
       TextInput = require(1297) /* Button */.TextInput;
     }
@@ -391,7 +391,7 @@ prototype["renderTextView"] = function renderTextView() {
     const merged = Object.assign(tmp2);
     return closure_9(TextInput, obj5);
   } else {
-    obj6 = require(4101) /* AccessibilityAnnouncer */;
+    obj6 = require(4131) /* AccessibilityAnnouncer */;
     const unsafe_rawColors = importDefault(712).unsafe_rawColors;
     const isThemeDarkResult = obj6.isThemeDark(self.context.theme);
   }

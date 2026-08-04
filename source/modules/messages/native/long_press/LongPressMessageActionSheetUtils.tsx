@@ -1,10 +1,10 @@
-// Module ID: 9722
-// Function ID: 9723
+// Module ID: 10132
+// Function ID: 10133
 // Name: handleEdit
-// Dependencies: [19, 7048, 3893, 7049, 7205, 1874, 9723, 676, 1379, 6957, 21, 4094, 11, 9724, 9725, 5601, 698, 6814, 4594, 1236, 10036, 10040, 10041, 3968, 7201, 10043, 7132, 4106, 1222, 4477, 5609, 3955, 4438, 4265, 10044, 4443, 1467, 9759, 8452, 8511, 8514, 5789, 4223, 10045, 1959, 5786, 7818, 2355, 5774, 4263, 8668, 4450, 9495, 10048, 1231, 10049, 1906, 10090, 10101, 10113, 10120, 2]
+// Dependencies: [19, 7060, 3923, 7061, 7217, 1874, 10133, 676, 1379, 6969, 21, 4124, 11, 10131, 9820, 5630, 698, 6826, 4623, 1236, 10134, 10138, 10139, 3998, 7213, 10141, 7144, 4136, 1222, 4506, 5638, 3985, 4467, 4295, 10142, 4472, 1467, 9661, 8768, 8854, 8857, 5818, 4253, 10143, 1959, 5815, 7830, 2385, 5803, 4293, 8705, 4479, 8423, 10149, 1231, 10150, 1906, 10187, 10193, 10197, 10204, 2]
 // Exports: getContextBarCancelReason, handleCopyId, handleCopyMessageLink, handleCreateThread, longPressMessageOptionHandler
 
-// Module 9722 (handleEdit)
+// Module 10132 (handleEdit)
 import "getSystemLocale";
 import getState from "getState";
 import { isMessageComponentsV2 } from "hasFlag";
@@ -36,20 +36,20 @@ function handleEdit(id, isForumPost, current, source) {
     let obj = importDefault(11);
     if (isForumPost.id === obj.castMessageIdAsChannelId(id.id)) {
       if (null != isForumPost.parent_id) {
-        require(9724) /* createPendingReply */.deletePendingReply(isForumPost.id);
-        const obj7 = require(9724) /* createPendingReply */;
+        require(10131) /* createPendingReply */.deletePendingReply(isForumPost.id);
+        const obj7 = require(10131) /* createPendingReply */;
         obj = { guildId: null, parentChannelId: null, threadId: null, messageId: null, isEdit: true, analyticsLocations: null, analyticsLocationObject: null };
         ({ guild_id: obj9[0], parent_id: obj9[1], id: obj9[2] } = isForumPost);
         obj[3] = id.id;
-        const items = [tmp(5601).FORUM_CHANNEL, tmp(5601).GUILD_CHANNEL];
+        const items = [tmp(5630).FORUM_CHANNEL, tmp(5630).GUILD_CHANNEL];
         obj[5] = items;
         obj = { page: null, section: null, object: null };
         obj[0] = constants3.GUILD_CHANNEL;
         obj[1] = constants4.FORUM_POST_HEADER;
         obj[2] = constants2.CONTEXT_MENU;
         obj[6] = obj;
-        const result = require(9725) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
-        const obj8 = require(9725) /* openCreateForumPostModal */;
+        const result = require(9820) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
+        const obj8 = require(9820) /* openCreateForumPostModal */;
       }
     }
   }
@@ -68,14 +68,14 @@ function handleEdit(id, isForumPost, current, source) {
         importDefault(698).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj1);
         const obj4 = importDefault(698);
         const tmp11 = importDefault;
-        importDefault(6814).endEditMessage(isForumPost.id);
+        importDefault(6826).endEditMessage(isForumPost.id);
         if (current != null) {
           const current2 = current.current;
           if (current2 != null) {
             current2.dismissKeyboard();
           }
         }
-        const tmp11Result = importDefault(6814);
+        const tmp11Result = importDefault(6826);
       }
     }
   }
@@ -97,9 +97,9 @@ function handleEdit(id, isForumPost, current, source) {
     importDefault(698).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj2);
     const obj11 = importDefault(698);
   }
-  obj1 = require(9724) /* createPendingReply */;
+  obj1 = require(10131) /* createPendingReply */;
   obj1.deletePendingReply(isForumPost.id);
-  obj2 = importDefault(6814);
+  obj2 = importDefault(6826);
   const result1 = obj2.startEditMessageRecord(isForumPost.id, id, source);
   if (current != null) {
     current = current.current;
@@ -138,12 +138,12 @@ export const handleCreateThread = function handleCreateThread(guild_id, id, Mess
   if (id != null) {
     id = id.id;
   }
-  const result = importDefault(7132).openThreadCreationForMobile(guild_id, id, str);
+  const result = importDefault(7144).openThreadCreationForMobile(guild_id, id, str);
   let result1 = null == id;
   if (!result1) {
     let tmpResult = tmp(11);
-    result1 = require(4106) /* navigationToRootTabHelper */.navigateToCreateThread(guild_id.guild_id, tmpResult.castMessageIdAsChannelId(id.id));
-    const obj2 = require(4106) /* navigationToRootTabHelper */;
+    result1 = require(4136) /* navigationToRootTabHelper */.navigateToCreateThread(guild_id.guild_id, tmpResult.castMessageIdAsChannelId(id.id));
+    const obj2 = require(4136) /* navigationToRootTabHelper */;
   }
   if (!result1) {
     tmpResult = tmp(11);
@@ -155,18 +155,18 @@ export const handleCopyMessageLink = function handleCopyMessageLink(channel, mes
   let obj = importDefault(698);
   obj = { message_id, channel: channel.id };
   obj.track(constants.MESSAGE_LINK_COPIED, obj);
-  const channelPermalink = require(4438) /* allowChannelAccess */.getChannelPermalink(channel.guild_id, channel.id, message_id);
+  const channelPermalink = require(4467) /* allowChannelAccess */.getChannelPermalink(channel.guild_id, channel.id, message_id);
   if (null != channelPermalink) {
-    let tmp3Result = tmp3(5609);
+    let tmp3Result = tmp3(5638);
     tmp3Result.copy(channelPermalink);
-    tmp3Result = tmp3(3955);
+    tmp3Result = tmp3(3985);
     tmp3Result.presentLinkCopied();
   }
 };
 export const handleCopyId = function handleCopyId(arg0) {
-  require(5609) /* _copy */.copy(arg0);
-  const obj = require(5609) /* _copy */;
-  const result = require(3955) /* presentAddedFriendToast */.presentMessageIdCopied();
+  require(5638) /* _copy */.copy(arg0);
+  const obj = require(5638) /* _copy */;
+  const result = require(3985) /* presentAddedFriendToast */.presentMessageIdCopied();
 };
 export const longPressMessageOptionHandler = function longPressMessageOptionHandler(analyticsLocations) {
   let actionSheetSource;

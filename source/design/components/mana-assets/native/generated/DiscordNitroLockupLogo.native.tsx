@@ -1,10 +1,10 @@
-// Module ID: 6121
-// Function ID: 6122
+// Module ID: 6131
+// Function ID: 6132
 // Name: DiscordNitroLockupLogo
-// Dependencies: [17, 21, 712, 3959, 6122, 2]
+// Dependencies: [17, 21, 712, 3989, 6132, 2]
 // Exports: DiscordNitroLockupLogo
 
-// Module 6121 (DiscordNitroLockupLogo)
+// Module 6131 (DiscordNitroLockupLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const DiscordNitroLockupLogo = function DiscordNitroLockupLogo(color) {
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(3959) /* map */;
+  let obj = require(3989) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -46,7 +46,7 @@ export const DiscordNitroLockupLogo = function DiscordNitroLockupLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "y";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(6122) };
+  obj1[1] = { uri: importDefault(6132) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

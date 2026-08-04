@@ -1,8 +1,8 @@
-// Module ID: 10979
-// Function ID: 10980
-// Dependencies: [32, 19, 17, 4268, 10951, 676, 21, 4255, 712, 589, 5087, 4783, 10172, 4251, 1236, 2]
+// Module ID: 10850
+// Function ID: 10851
+// Dependencies: [32, 19, 17, 4298, 10820, 676, 21, 4285, 712, 589, 5116, 4812, 10829, 4281, 1236, 2]
 
-// Module 10979
+// Module 10850
 import _slicedToArray from "_slicedToArray";
 import { View } from "get ActivityIndicator";
 import getParticipants from "getParticipants";
@@ -38,7 +38,7 @@ const memoResult = importAllResult.memo((channel) => {
     const speakingParticipants = outer1_5.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), outer1_5.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(5087).isVersionEqual), 1)[0];
+  }, items1, channel(5116).isVersionEqual), 1)[0];
   let tmp5 = null;
   if (0 !== first.length) {
     tmp5 = null;
@@ -55,7 +55,7 @@ const memoResult = importAllResult.memo((channel) => {
       obj2[1] = first;
       obj2[3] = channel.id;
       obj2[4] = channel.getGuildId();
-      obj1[1] = callback3(importDefault(10172), obj2);
+      obj1[1] = callback3(importDefault(10829), obj2);
       const items2 = [callback3(View, obj1), ];
       const obj3 = { style: null, children: null };
       obj3[0] = tmp.participantNameplateContainer;
@@ -65,12 +65,12 @@ const memoResult = importAllResult.memo((channel) => {
       const obj5 = { count: null };
       obj5[0] = first.length;
       obj4[3] = intl.format(tmp2(1236).t["+dia6l"], obj5);
-      obj3[1] = callback3(tmp2(4251).Text, obj4);
+      obj3[1] = callback3(tmp2(4281).Text, obj4);
       items2[1] = callback3(View, obj3);
       obj[1] = items2;
       obj[3] = callback4(View, obj);
-      tmp5 = callback3(tmp2(4783).PressableOpacity, obj);
-      const tmp10 = importDefault(10172);
+      tmp5 = callback3(tmp2(4812).PressableOpacity, obj);
+      const tmp10 = importDefault(10829);
     }
   }
   return tmp5;

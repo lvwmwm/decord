@@ -1,10 +1,10 @@
-// Module ID: 5850
-// Function ID: 5851
+// Module ID: 5860
+// Function ID: 5861
 // Name: compareChannelsByScoreAndPosition
 // Dependencies: [1372, 676, 2]
 // Exports: default
 
-// Module 5850 (compareChannelsByScoreAndPosition)
+// Module 5860 (compareChannelsByScoreAndPosition)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelTypes } from "ME";
 

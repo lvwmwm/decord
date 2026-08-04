@@ -1,14 +1,14 @@
-// Module ID: 15987
-// Function ID: 15988
+// Module ID: 16020
+// Function ID: 16021
 // Name: openSoundboardSoundPreviewActionSheet
-// Dependencies: [4223, 15988, 1959, 2]
+// Dependencies: [4253, 16021, 1959, 2]
 // Exports: default
 
-// Module 15987 (openSoundboardSoundPreviewActionSheet)
+// Module 16020 (openSoundboardSoundPreviewActionSheet)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/soundboard/native/utils/openSoundboardSoundPreviewActionSheet.tsx");
 
 export default function openSoundboardSoundPreviewActionSheet(channelId, sound) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channelId, sound };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(15988, dependencyMap.paths), "SoundboardSoundPreviewActionSheet", obj);
+  obj.openLazy(require(1959) /* asyncRequireImpl */(16021, dependencyMap.paths), "SoundboardSoundPreviewActionSheet", obj);
 };

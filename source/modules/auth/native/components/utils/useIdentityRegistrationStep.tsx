@@ -1,10 +1,10 @@
-// Module ID: 14954
-// Function ID: 14955
+// Module ID: 14988
+// Function ID: 14989
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 14944, 14945, 676, 1480, 14942, 1236, 14955, 9628, 9378, 14952, 691, 14943, 9393, 9387, 8517, 2]
+// Dependencies: [5, 32, 19, 14978, 14979, 676, 1480, 14976, 1236, 14989, 10377, 8286, 14986, 691, 14977, 8301, 8295, 8860, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 14954 (useIdentityRegistrationStep)
+// Module 14988 (useIdentityRegistrationStep)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -87,7 +87,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
               let c4;
               const sum = ref.current + c6;
               closure_1 = sum;
-              let obj1 = { email: "Array", phone: true };
+              let obj1 = { email: "Array", phone: 0 };
               obj1[1] = sum;
               v0(obj1);
               closure_2 = callback2(callback);

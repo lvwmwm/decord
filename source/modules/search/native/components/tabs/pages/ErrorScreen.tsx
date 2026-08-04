@@ -1,8 +1,8 @@
-// Module ID: 15565
-// Function ID: 15566
-// Dependencies: [19, 17, 21, 4255, 5281, 3968, 4251, 2]
+// Module ID: 15596
+// Function ID: 15597
+// Dependencies: [19, 17, 21, 4285, 5310, 3998, 4281, 2]
 
-// Module 15565
+// Module 15596
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,8 +20,8 @@ const memoResult = importAllResult.memo((text) => {
     const AccessibilityAnnouncer = text(outer1_2[5]).AccessibilityAnnouncer;
     AccessibilityAnnouncer.announce(closure_0, "polite");
   }, items);
-  obj = { style: items1, children: jsx(require(4251) /* Text */.Text, obj) };
-  items1 = [tmp.container, { paddingBottom: importDefault(5281)({ includeKeyboardHeight: true }).insets.bottom }];
+  obj = { style: items1, children: jsx(require(4281) /* Text */.Text, obj) };
+  items1 = [tmp.container, { paddingBottom: importDefault(5310)({ includeKeyboardHeight: true }).insets.bottom }];
   obj = { variant: "text-sm/medium", color: "text-muted", style: tmp.text, children: text };
   return <View variant="text-sm/medium" color="text-muted" style={tmp.text}>{text}</View>;
 });

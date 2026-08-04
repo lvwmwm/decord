@@ -1,7 +1,7 @@
 // Module ID: 1947
 // Function ID: 1948
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1948, 1236, 1958, 1274, 3329, 3804, 3835, 3837, 1208, 2]
+// Dependencies: [5, 700, 1948, 1236, 1958, 1274, 3359, 3834, 3865, 3867, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 1947 (_setAppLocale)
@@ -433,27 +433,30 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "bottom", localeData: false, setLoadingStarted: false, setLoadingSucceeded: false, setLoadingFailed: null, setLocaleData: null };
-  obj[3] = importDefault(1948);
-  obj[4] = function setLoadingStarted(closure_0) {
-    return callback({ isLoading: true, inProgressLocale: closure_0 });
-  };
-  obj[5] = function setLoadingSucceeded(closure_0) {
-    if (callback2().inProgressLocale === closure_0) {
-      callback({ isLoading: false, inProgressLocale: "Boolean", error: "bottom" });
+  return {
+    isLoading: false,
+    inProgressLocale: "Boolean",
+    error: "call",
+    localeData: importDefault(1948),
+    setLoadingStarted(closure_0) {
+      return callback({ isLoading: true, inProgressLocale: closure_0 });
+    },
+    setLoadingSucceeded(closure_0) {
+      if (callback2().inProgressLocale === closure_0) {
+        callback({ isLoading: false, inProgressLocale: "Boolean", error: "call" });
+      }
+    },
+    setLoadingFailed(arg0, closure_0) {
+      if (callback2().inProgressLocale === closure_0) {
+        const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+        obj[2] = arg0;
+        callback(obj);
+      }
+    },
+    setLocaleData(closure_1) {
+      callback({ localeData: closure_1 });
     }
   };
-  obj[6] = function setLoadingFailed(arg0, closure_0) {
-    if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
-      obj[2] = arg0;
-      callback(obj);
-    }
-  };
-  obj[7] = function setLocaleData(closure_1) {
-    callback({ localeData: closure_1 });
-  };
-  return obj;
 });
 const result = require("code").fileFinishedImporting("intl/IntlLoaderStore.tsx");
 

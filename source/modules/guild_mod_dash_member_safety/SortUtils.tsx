@@ -1,26 +1,26 @@
-// Module ID: 6856
-// Function ID: 6857
+// Module ID: 6868
+// Function ID: 6869
 // Name: getSortValueForMember
-// Dependencies: [6854, 6853, 2]
+// Dependencies: [6866, 6865, 2]
 // Exports: getSortValueForMember
 
-// Module 6856 (getSortValueForMember)
+// Module 6868 (getSortValueForMember)
 const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/SortUtils.tsx");
 
 export const getSortValueForMember = function getSortValueForMember(joinedAt, ORDER_BY_UNSPECIFIED) {
-  const joinedAtTimestamp = require(6854) /* getJoinedAtDateFormatter */.getJoinedAtTimestamp(joinedAt.joinedAt);
-  if (require(6853) /* result */.OrderBy.ORDER_BY_GUILD_JOINED_AT_ASC === ORDER_BY_UNSPECIFIED) {
+  const joinedAtTimestamp = require(6866) /* getJoinedAtDateFormatter */.getJoinedAtTimestamp(joinedAt.joinedAt);
+  if (require(6865) /* result */.OrderBy.ORDER_BY_GUILD_JOINED_AT_ASC === ORDER_BY_UNSPECIFIED) {
     return joinedAtTimestamp;
-  } else if (tmp(6853).OrderBy.ORDER_BY_GUILD_JOINED_AT_DESC === ORDER_BY_UNSPECIFIED) {
+  } else if (tmp(6865).OrderBy.ORDER_BY_GUILD_JOINED_AT_DESC === ORDER_BY_UNSPECIFIED) {
     return -joinedAtTimestamp;
-  } else if (tmp(6853).OrderBy.ORDER_BY_USER_ID_ASC === ORDER_BY_UNSPECIFIED) {
+  } else if (tmp(6865).OrderBy.ORDER_BY_USER_ID_ASC === ORDER_BY_UNSPECIFIED) {
     const _parseInt2 = parseInt;
     return parseInt(joinedAt.userId);
-  } else if (tmp(6853).OrderBy.ORDER_BY_USER_ID_DESC === ORDER_BY_UNSPECIFIED) {
+  } else if (tmp(6865).OrderBy.ORDER_BY_USER_ID_DESC === ORDER_BY_UNSPECIFIED) {
     const _parseInt = parseInt;
     return -parseInt(joinedAt.userId);
   } else {
     return -joinedAtTimestamp;
   }
-  const obj = require(6854) /* getJoinedAtDateFormatter */;
+  const obj = require(6866) /* getJoinedAtDateFormatter */;
 };

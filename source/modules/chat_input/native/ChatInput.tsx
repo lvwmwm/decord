@@ -1,7 +1,7 @@
 // Module ID: 11277
 // Function ID: 11278
 // Name: ChatInput
-// Dependencies: [5, 32, 19, 17, 7147, 11278, 9727, 7048, 11279, 4592, 7049, 3883, 4591, 9493, 11281, 676, 1479, 1877, 1576, 21, 4255, 712, 500, 1348, 4066, 3959, 11282, 11283, 589, 5769, 5581, 7128, 11285, 4116, 4121, 8136, 11287, 11288, 11289, 5723, 1231, 1580, 4797, 8156, 4788, 514, 4224, 698, 1579, 4450, 10664, 11333, 11494, 9831, 4114, 1843, 11495, 9507, 9483, 11515, 9848, 8152, 11518, 11519, 3914, 11535, 11536, 11537, 11538, 11544, 11545, 688, 11546, 11547, 11551, 11553, 11560, 11564, 11567, 11606, 11608, 11626, 10542, 11639, 11641, 11642, 11475, 11643, 2]
+// Dependencies: [5, 32, 19, 17, 7159, 11278, 9700, 7060, 11279, 4621, 7061, 3913, 4620, 8421, 11281, 676, 1479, 1877, 1576, 21, 4285, 712, 500, 1348, 4096, 3989, 11282, 11283, 589, 5798, 5610, 7140, 11285, 4146, 4151, 8148, 11287, 11288, 11289, 5752, 1231, 1580, 4826, 8168, 4817, 514, 4254, 698, 1579, 4479, 10513, 11333, 11493, 9924, 4144, 1843, 11494, 8560, 8409, 11514, 9939, 8164, 11517, 11518, 3944, 11534, 11535, 11536, 11537, 11543, 11544, 688, 11545, 11546, 11550, 11552, 11567, 11571, 11574, 11669, 11671, 11689, 10129, 11702, 11704, 11705, 11474, 11706, 2]
 
 // Module 11277 (ChatInput)
 import INITIAL_STATE from "INITIAL_STATE";
@@ -737,7 +737,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
           obj6[0] = getState.props.current.channel;
           obj6[1] = outer1_28;
           obj6[2] = function onDismissKeyboard() {
-            return callback(4114).dismissKeyboard();
+            return callback(4144).dismissKeyboard();
           };
           obj6[3] = function onRestoreKeyboard() {
             return closure_12.handleToggleKeyboard({ type: outer1_0(outer1_3[48]).KeyboardTypes.SYSTEM });
@@ -756,7 +756,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
           obj7[0] = getState.props.current.channel;
           obj7[1] = outer1_32.CAMERA_BUTTON;
           obj7[2] = function onDismissKeyboard() {
-            return callback(4114).dismissKeyboard();
+            return callback(4144).dismissKeyboard();
           };
           obj7[3] = function onRestoreKeyboard() {
             return closure_12.handleToggleKeyboard({ type: outer1_0(outer1_3[48]).KeyboardTypes.SYSTEM });

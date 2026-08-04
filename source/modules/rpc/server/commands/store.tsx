@@ -1,9 +1,9 @@
-// Module ID: 13633
-// Function ID: 13634
+// Module ID: 13667
+// Function ID: 13668
 // Name: getSubscriptionSkusViaListings
-// Dependencies: [5, 4158, 676, 13634, 13635, 10693, 7496, 7494, 13636, 6759, 2]
+// Dependencies: [5, 4188, 676, 13668, 13669, 10543, 7508, 7506, 13670, 6771, 2]
 
-// Module 13633 (getSubscriptionSkusViaListings)
+// Module 13667 (getSubscriptionSkusViaListings)
 import prototype from "prototype";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -72,7 +72,7 @@ function _getSubscriptionSkusViaListings() {
                   let closure_0 = arg0;
                   let c2 = 0;
                   let c1 = 0;
-                  return (/* F119326 */ function*() { ... })();
+                  return (/* F119413 */ function*() { ... })();
                 });
                 return function() {
                   const self = this;
@@ -209,32 +209,32 @@ function _getSkusHandler() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              const result = socket(13635).validateTransportType(socket.transport);
+              const result = socket(13669).validateTransportType(socket.transport);
               callback = socket.application.id;
               if (null == callback) {
                 const obj2 = { errorCode: null };
                 obj2[0] = constants.INVALID_COMMAND;
-                const tmp32 = new callback(10693)(obj2, "No application.");
+                const tmp32 = new callback(10543)(obj2, "No application.");
                 throw tmp32;
               } else {
                 if (obj18.isTestModeForApplication(callback)) {
-                  let tmp65Result = tmp65(7494);
+                  let tmp65Result = tmp65(7506);
                   constants = 2;
                   c7 = 1;
                   const obj3 = { value: null, done: false };
                   obj3[0] = tmp65Result.fetchTestSKUsForApplication(callback, false);
                   return obj3;
                 } else {
-                  tmp65Result = tmp65(13636);
+                  tmp65Result = tmp65(13670);
                   constants = 3;
                   c7 = 1;
                   const obj4 = { value: null, done: false };
                   obj4[0] = tmp65Result.fetchAllStoreListingsForApplication(callback);
                   return obj4;
                 }
-                obj18 = socket(7496);
+                obj18 = socket(7508);
               }
-              const obj17 = socket(13635);
+              const obj17 = socket(13669);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {
@@ -331,16 +331,16 @@ function _getSkusHandler() {
 }
 function getEntitlementsHandler(socket) {
   socket = socket.socket;
-  let obj = require(13635) /* validateTransportType */;
+  let obj = require(13669) /* validateTransportType */;
   const result = obj.validateTransportType(socket.transport);
   const id = socket.application.id;
   if (null == id) {
     obj = { errorCode: null };
     obj[0] = constants.INVALID_COMMAND;
-    const tmp9 = new importDefault(10693)(obj, "No application.");
+    const tmp9 = new importDefault(10543)(obj, "No application.");
     throw tmp9;
   } else {
-    return importAll(6759).fetchUserEntitlementsForApplication(id);
+    return importAll(6771).fetchUserEntitlementsForApplication(id);
   }
 }
 ({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);

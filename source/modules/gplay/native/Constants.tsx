@@ -1,9 +1,9 @@
-// Module ID: 5739
-// Function ID: 5740
+// Module ID: 5768
+// Function ID: 5769
 // Name: GPlayConnectionState
 // Dependencies: [2]
 
-// Module 5739 (GPlayConnectionState)
+// Module 5768 (GPlayConnectionState)
 const result = require("set").fileFinishedImporting("modules/gplay/native/Constants.tsx");
 
 export const GPlayConnectionState = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", CONNECTED: 2, [2]: "CONNECTED", ERROR: 3, [3]: "ERROR" };

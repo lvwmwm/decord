@@ -1,9 +1,9 @@
-// Module ID: 13544
-// Function ID: 13545
+// Module ID: 13578
+// Function ID: 13579
 // Name: getModalState
-// Dependencies: [1906, 38, 8019, 687, 6814, 589, 709, 2]
+// Dependencies: [1906, 38, 8031, 687, 6826, 589, 709, 2]
 
-// Module 13544 (getModalState)
+// Module 13578 (getModalState)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -29,21 +29,21 @@ obj = {
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      importDefault(6814).deleteMessage(c6, c5, true);
+      importDefault(6826).deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
-      const obj = importDefault(6814);
+      const obj = importDefault(6826);
     }
     return false;
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      importDefault(6814).deleteMessage(c6, c5, true);
+      importDefault(6826).deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
-      const obj = importDefault(6814);
+      const obj = importDefault(6826);
     }
     return false;
   },
@@ -85,7 +85,7 @@ obj = {
         }, 2 * tmp3(687).Millis.MINUTE);
         preflight.then(() => {
           const result = 10 * startTimeout(outer1_2[3]).Millis.SECOND;
-          if (typeof startTimeout !== "error") {
+          if (typeof startTimeout !== "find") {
             HermesBuiltin.throwTypeError();
           }
           const timerId = setTimeout(() => {
@@ -101,7 +101,7 @@ obj = {
         }).catch(() => nonce(outer1_2[2]).setFailed(nonce));
         const nextPromise = preflight.then(() => {
           const result = 10 * startTimeout(outer1_2[3]).Millis.SECOND;
-          if (typeof startTimeout !== "error") {
+          if (typeof startTimeout !== "find") {
             HermesBuiltin.throwTypeError();
           }
           const timerId = setTimeout(() => {

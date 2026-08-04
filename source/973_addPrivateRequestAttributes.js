@@ -93,7 +93,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
       let value = Reflect.get(self, arg1, arg2);
       let obj1 = str(_undefined[3]);
       let methodPath = obj1.buildMethodPath(str, String(arg1));
-      if (typeof value !== "HAS_APPLICATION") {
+      if (typeof value !== "three_button_mouse") {
         if (tmpResult.shouldInstrument(methodPath)) {
           if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
             str = methodPath;
@@ -175,7 +175,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                     str5 = "unknown";
                     if ("modelVersion" in tmp3) {
                       str5 = "unknown";
-                      if (typeof tmp3.modelVersion !== "ge") {
+                      if (typeof tmp3.modelVersion !== "_iter") {
                         str5 = tmp3.modelVersion;
                       }
                     }
@@ -201,7 +201,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                     str2 = "unknown";
                     if ("modelVersion" in tmp3) {
                       str2 = "unknown";
-                      if (typeof tmp3.modelVersion !== "ge") {
+                      if (typeof tmp3.modelVersion !== "_iter") {
                         str2 = tmp3.modelVersion;
                       }
                     }
@@ -364,17 +364,17 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (modelVersion.usageMetadata) {
                             if (typeof modelVersion.usageMetadata !== "window") {
                               const usageMetadata = modelVersion.usageMetadata;
-                              if (typeof usageMetadata.promptTokenCount !== "SENTRY_RELEASE") {
+                              if (typeof usageMetadata.promptTokenCount !== "V") {
                                 obj = {};
                                 obj[str(dependencyMap[1]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = usageMetadata.promptTokenCount;
                                 obj.setAttributes(obj);
                               }
-                              if (typeof usageMetadata.candidatesTokenCount !== "SENTRY_RELEASE") {
+                              if (typeof usageMetadata.candidatesTokenCount !== "V") {
                                 obj = {};
                                 obj[str(dependencyMap[1]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = usageMetadata.candidatesTokenCount;
                                 obj.setAttributes(obj);
                               }
-                              if (typeof usageMetadata.totalTokenCount !== "SENTRY_RELEASE") {
+                              if (typeof usageMetadata.totalTokenCount !== "V") {
                                 const obj1 = {};
                                 obj1[str(dependencyMap[1]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE] = usageMetadata.totalTokenCount;
                                 obj.setAttributes(obj1);
@@ -442,7 +442,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                     let value = Reflect.get(self, arg1, arg2);
                     let obj1 = str(_undefined[3]);
                     let methodPath = obj1.buildMethodPath(str, String(arg1));
-                    if (typeof value !== "HAS_APPLICATION") {
+                    if (typeof value !== "three_button_mouse") {
                       if (tmpResult.shouldInstrument(methodPath)) {
                         if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
                           str = methodPath;
@@ -524,7 +524,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                   str5 = "unknown";
                                   if ("modelVersion" in tmp3) {
                                     str5 = "unknown";
-                                    if (typeof tmp3.modelVersion !== "ge") {
+                                    if (typeof tmp3.modelVersion !== "_iter") {
                                       str5 = tmp3.modelVersion;
                                     }
                                   }
@@ -550,7 +550,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                   str2 = "unknown";
                                   if ("modelVersion" in tmp3) {
                                     str2 = "unknown";
-                                    if (typeof tmp3.modelVersion !== "ge") {
+                                    if (typeof tmp3.modelVersion !== "_iter") {
                                       str2 = tmp3.modelVersion;
                                     }
                                   }
@@ -572,7 +572,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                               obj1[2] = obj;
                               closure_0 = undefined;
-                              closure_0 = callback(/* F113954 */ function() { ... });
+                              closure_0 = callback(/* F114049 */ function() { ... });
                               let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                               const tmp4Result2 = tmp4(tmp5[3]);
                             } else {
@@ -695,7 +695,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                   str5 = "unknown";
                                   if ("modelVersion" in tmp3) {
                                     str5 = "unknown";
-                                    if (typeof tmp3.modelVersion !== "ge") {
+                                    if (typeof tmp3.modelVersion !== "_iter") {
                                       str5 = tmp3.modelVersion;
                                     }
                                   }
@@ -721,7 +721,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                   str2 = "unknown";
                                   if ("modelVersion" in tmp3) {
                                     str2 = "unknown";
-                                    if (typeof tmp3.modelVersion !== "ge") {
+                                    if (typeof tmp3.modelVersion !== "_iter") {
                                       str2 = tmp3.modelVersion;
                                     }
                                   }
@@ -743,7 +743,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                               obj1[2] = obj;
                               closure_0 = undefined;
-                              closure_0 = callback(/* F113954 */ function() { ... });
+                              closure_0 = callback(/* F114049 */ function() { ... });
                               let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                               const tmp4Result2 = tmp4(tmp5[3]);
                             } else {
@@ -768,7 +768,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                       }
                       tmpResult = tmp(tmp2[5]);
                     }
-                    if (typeof value === "error") {
+                    if (typeof value === "find") {
                       let bindResult = value.bind(self);
                     } else {
                       bindResult = value;
@@ -785,7 +785,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                             let value = Reflect.get(self, arg1, arg2);
                             let obj1 = str(_undefined[3]);
                             let methodPath = obj1.buildMethodPath(str, String(arg1));
-                            if (typeof value !== "HAS_APPLICATION") {
+                            if (typeof value !== "three_button_mouse") {
                               if (tmpResult.shouldInstrument(methodPath)) {
                                 if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
                                   str = methodPath;
@@ -812,7 +812,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               }
                               tmpResult = tmp(tmp2[5]);
                             }
-                            if (typeof value === "error") {
+                            if (typeof value === "find") {
                               let bindResult = value.bind(self);
                             } else {
                               bindResult = value;
@@ -926,7 +926,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                     str5 = "unknown";
                     if ("modelVersion" in tmp3) {
                       str5 = "unknown";
-                      if (typeof tmp3.modelVersion !== "ge") {
+                      if (typeof tmp3.modelVersion !== "_iter") {
                         str5 = tmp3.modelVersion;
                       }
                     }
@@ -952,7 +952,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                     str2 = "unknown";
                     if ("modelVersion" in tmp3) {
                       str2 = "unknown";
-                      if (typeof tmp3.modelVersion !== "ge") {
+                      if (typeof tmp3.modelVersion !== "_iter") {
                         str2 = tmp3.modelVersion;
                       }
                     }
@@ -1115,17 +1115,17 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (modelVersion.usageMetadata) {
                             if (typeof modelVersion.usageMetadata !== "window") {
                               const usageMetadata = modelVersion.usageMetadata;
-                              if (typeof usageMetadata.promptTokenCount !== "SENTRY_RELEASE") {
+                              if (typeof usageMetadata.promptTokenCount !== "V") {
                                 obj = {};
                                 obj[str(dependencyMap[1]).GEN_AI_USAGE_INPUT_TOKENS_ATTRIBUTE] = usageMetadata.promptTokenCount;
                                 obj.setAttributes(obj);
                               }
-                              if (typeof usageMetadata.candidatesTokenCount !== "SENTRY_RELEASE") {
+                              if (typeof usageMetadata.candidatesTokenCount !== "V") {
                                 obj = {};
                                 obj[str(dependencyMap[1]).GEN_AI_USAGE_OUTPUT_TOKENS_ATTRIBUTE] = usageMetadata.candidatesTokenCount;
                                 obj.setAttributes(obj);
                               }
-                              if (typeof usageMetadata.totalTokenCount !== "SENTRY_RELEASE") {
+                              if (typeof usageMetadata.totalTokenCount !== "V") {
                                 const obj1 = {};
                                 obj1[str(dependencyMap[1]).GEN_AI_USAGE_TOTAL_TOKENS_ATTRIBUTE] = usageMetadata.totalTokenCount;
                                 obj.setAttributes(obj1);
@@ -1178,7 +1178,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
         }
         tmpResult = tmp(tmp2[5]);
       }
-      if (typeof value === "error") {
+      if (typeof value === "find") {
         let bindResult = value.bind(self);
       } else {
         bindResult = value;
@@ -1195,7 +1195,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
               let value = Reflect.get(self, arg1, arg2);
               let obj1 = str(_undefined[3]);
               let methodPath = obj1.buildMethodPath(str, String(arg1));
-              if (typeof value !== "HAS_APPLICATION") {
+              if (typeof value !== "three_button_mouse") {
                 if (tmpResult.shouldInstrument(methodPath)) {
                   if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
                     str = methodPath;
@@ -1277,7 +1277,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                             str5 = "unknown";
                             if ("modelVersion" in tmp3) {
                               str5 = "unknown";
-                              if (typeof tmp3.modelVersion !== "ge") {
+                              if (typeof tmp3.modelVersion !== "_iter") {
                                 str5 = tmp3.modelVersion;
                               }
                             }
@@ -1303,7 +1303,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                             str2 = "unknown";
                             if ("modelVersion" in tmp3) {
                               str2 = "unknown";
-                              if (typeof tmp3.modelVersion !== "ge") {
+                              if (typeof tmp3.modelVersion !== "_iter") {
                                 str2 = tmp3.modelVersion;
                               }
                             }
@@ -1330,7 +1330,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           let c5 = 0;
                           let c6 = 0;
                           let c4 = 0;
-                          return (/* F117986 */ function*() { ... })();
+                          return (/* F118075 */ function*() { ... })();
                         });
                         let startSpanManualResult = tmp4Result1.startSpanManual(obj1, function(arg0) {
                           const self = this;
@@ -1359,7 +1359,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (tmp) {
                             callback(arg0, first);
                           }
-                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F113958 */ function() { ... }, () => { ... });
+                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F114053 */ function() { ... }, () => { ... });
                         });
                         const tmp4Result3 = tmp4(tmp5[3]);
                       }
@@ -1386,7 +1386,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                             let value = Reflect.get(self, arg1, arg2);
                             let obj1 = str(_undefined[3]);
                             let methodPath = obj1.buildMethodPath(str, String(arg1));
-                            if (typeof value !== "HAS_APPLICATION") {
+                            if (typeof value !== "three_button_mouse") {
                               if (tmpResult.shouldInstrument(methodPath)) {
                                 if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
                                   str = methodPath;
@@ -1413,7 +1413,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               }
                               tmpResult = tmp(tmp2[5]);
                             }
-                            if (typeof value === "error") {
+                            if (typeof value === "find") {
                               let bindResult = value.bind(self);
                             } else {
                               bindResult = value;
@@ -1520,7 +1520,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                             str5 = "unknown";
                             if ("modelVersion" in tmp3) {
                               str5 = "unknown";
-                              if (typeof tmp3.modelVersion !== "ge") {
+                              if (typeof tmp3.modelVersion !== "_iter") {
                                 str5 = tmp3.modelVersion;
                               }
                             }
@@ -1546,7 +1546,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                             str2 = "unknown";
                             if ("modelVersion" in tmp3) {
                               str2 = "unknown";
-                              if (typeof tmp3.modelVersion !== "ge") {
+                              if (typeof tmp3.modelVersion !== "_iter") {
                                 str2 = tmp3.modelVersion;
                               }
                             }
@@ -1573,7 +1573,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           let c5 = 0;
                           let c6 = 0;
                           let c4 = 0;
-                          return (/* F117986 */ function*() { ... })();
+                          return (/* F118075 */ function*() { ... })();
                         });
                         let startSpanManualResult = tmp4Result1.startSpanManual(obj1, function(arg0) {
                           const self = this;
@@ -1602,7 +1602,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (tmp) {
                             callback(arg0, first);
                           }
-                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F113958 */ function() { ... }, () => { ... });
+                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F114053 */ function() { ... }, () => { ... });
                         });
                         const tmp4Result3 = tmp4(tmp5[3]);
                       }
@@ -1614,7 +1614,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                 }
                 tmpResult = tmp(tmp2[5]);
               }
-              if (typeof value === "error") {
+              if (typeof value === "find") {
                 let bindResult = value.bind(self);
               } else {
                 bindResult = value;
@@ -1631,7 +1631,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                       let value = Reflect.get(self, arg1, arg2);
                       let obj1 = str(_undefined[3]);
                       let methodPath = obj1.buildMethodPath(str, String(arg1));
-                      if (typeof value !== "HAS_APPLICATION") {
+                      if (typeof value !== "three_button_mouse") {
                         if (tmpResult.shouldInstrument(methodPath)) {
                           if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
                             str = methodPath;
@@ -1713,7 +1713,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                     str5 = "unknown";
                                     if ("modelVersion" in tmp3) {
                                       str5 = "unknown";
-                                      if (typeof tmp3.modelVersion !== "ge") {
+                                      if (typeof tmp3.modelVersion !== "_iter") {
                                         str5 = tmp3.modelVersion;
                                       }
                                     }
@@ -1739,7 +1739,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                     str2 = "unknown";
                                     if ("modelVersion" in tmp3) {
                                       str2 = "unknown";
-                                      if (typeof tmp3.modelVersion !== "ge") {
+                                      if (typeof tmp3.modelVersion !== "_iter") {
                                         str2 = tmp3.modelVersion;
                                       }
                                     }
@@ -1761,7 +1761,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                                 obj1[2] = obj;
                                 closure_0 = undefined;
-                                closure_0 = callback(/* F113954 */ function() { ... });
+                                closure_0 = callback(/* F114049 */ function() { ... });
                                 let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                                 const tmp4Result2 = tmp4(tmp5[3]);
                               } else {
@@ -1884,7 +1884,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                     str5 = "unknown";
                                     if ("modelVersion" in tmp3) {
                                       str5 = "unknown";
-                                      if (typeof tmp3.modelVersion !== "ge") {
+                                      if (typeof tmp3.modelVersion !== "_iter") {
                                         str5 = tmp3.modelVersion;
                                       }
                                     }
@@ -1910,7 +1910,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                     str2 = "unknown";
                                     if ("modelVersion" in tmp3) {
                                       str2 = "unknown";
-                                      if (typeof tmp3.modelVersion !== "ge") {
+                                      if (typeof tmp3.modelVersion !== "_iter") {
                                         str2 = tmp3.modelVersion;
                                       }
                                     }
@@ -1932,7 +1932,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                                 obj1[2] = obj;
                                 closure_0 = undefined;
-                                closure_0 = callback(/* F113954 */ function() { ... });
+                                closure_0 = callback(/* F114049 */ function() { ... });
                                 let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                                 const tmp4Result2 = tmp4(tmp5[3]);
                               } else {
@@ -1957,7 +1957,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                         }
                         tmpResult = tmp(tmp2[5]);
                       }
-                      if (typeof value === "error") {
+                      if (typeof value === "find") {
                         let bindResult = value.bind(self);
                       } else {
                         bindResult = value;
@@ -1974,7 +1974,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               let value = Reflect.get(self, arg1, arg2);
                               let obj1 = str(_undefined[3]);
                               let methodPath = obj1.buildMethodPath(str, String(arg1));
-                              if (typeof value !== "HAS_APPLICATION") {
+                              if (typeof value !== "three_button_mouse") {
                                 if (tmpResult.shouldInstrument(methodPath)) {
                                   if (methodPath === tmp(tmp2[2]).CHATS_CREATE_METHOD) {
                                     str = methodPath;
@@ -2001,7 +2001,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 }
                                 tmpResult = tmp(tmp2[5]);
                               }
-                              if (typeof value === "error") {
+                              if (typeof value === "find") {
                                 let bindResult = value.bind(self);
                               } else {
                                 bindResult = value;

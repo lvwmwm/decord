@@ -1,10 +1,10 @@
-// Module ID: 10212
-// Function ID: 10213
+// Module ID: 11589
+// Function ID: 11590
 // Name: DirectoryEntryTypes
-// Dependencies: [676, 1236, 3888, 506, 2]
+// Dependencies: [676, 1236, 3918, 506, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 10212 (DirectoryEntryTypes)
+// Module 11589 (DirectoryEntryTypes)
 import ME from "ME";
 
 let c3;
@@ -138,10 +138,10 @@ export const getHubGuildTemplatesMap = function getHubGuildTemplatesMap() {
   obj12[3] = constants.GUILD_VOICE;
   items[11] = obj12;
   obj[3] = items;
-  const items1 = [{ id: "00", name: "@everyone", permissions: importAll(3888).DEFAULT }, ];
+  const items1 = [{ id: "00", name: "@everyone", permissions: importAll(3918).DEFAULT }, ];
   const obj14 = { id: "01", name: "officers (example)", mentionable: true, hoist: true, permissions: null, color: 3066993 };
   let obj17 = importAll(506);
-  obj14[4] = obj17.combine(importAll(3888).DEFAULT, constants2.MANAGE_ROLES, constants2.MANAGE_CHANNELS, constants2.KICK_MEMBERS, constants2.BAN_MEMBERS, constants2.MANAGE_NICKNAMES, constants2.MANAGE_GUILD_EXPRESSIONS, constants2.MANAGE_MESSAGES, constants2.SEND_TTS_MESSAGES);
+  obj14[4] = obj17.combine(importAll(3918).DEFAULT, constants2.MANAGE_ROLES, constants2.MANAGE_CHANNELS, constants2.KICK_MEMBERS, constants2.BAN_MEMBERS, constants2.MANAGE_NICKNAMES, constants2.MANAGE_GUILD_EXPRESSIONS, constants2.MANAGE_MESSAGES, constants2.SEND_TTS_MESSAGES);
   items1[1] = obj14;
   obj[4] = items1;
   obj[obj.HUB_SCHOOL_CLUB] = obj;

@@ -1,10 +1,10 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 9276
+// Function ID: 9277
 // Name: fromServer
-// Dependencies: [1883, 4278, 8863, 8864, 8865, 8866, 676, 2]
+// Dependencies: [1883, 4308, 9277, 9278, 9279, 9280, 676, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 8862 (fromServer)
+// Module 9276 (fromServer)
 import "toJS";
 import createExecutable from "createExecutable";
 import fromServer from "fromServer";
@@ -54,7 +54,7 @@ prototype["fromServer"] = function fromServer(arg0) {
     mapped1 = applications.map((arg0) => createExecutable.createFromServer(arg0));
   }
   obj.applications = mapped1;
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }

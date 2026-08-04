@@ -1,9 +1,9 @@
-// Module ID: 4804
-// Function ID: 4805
+// Module ID: 4833
+// Function ID: 4834
 // Name: setPermission
 // Dependencies: [709, 2]
 
-// Module 4804 (setPermission)
+// Module 4833 (setPermission)
 const prototype = function NativePermissionActionCreators() {
   return Object.create(new.target.prototype);
 }.prototype;

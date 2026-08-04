@@ -1,9 +1,9 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 11906
+// Function ID: 11907
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 11846 (__INTERNAL_VIEW_CONFIG)
+// Module 11906 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDNonRecycledView", validAttributes: {} };

@@ -1,9 +1,9 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6012
+// Function ID: 6013
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6002 (metadata)
+// Module 6012 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarMoatmonsturrExample-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/bb106a3d124baeebfd08d48f9ff6550bd911475197dc926fa628778f4fa83ee4.png";

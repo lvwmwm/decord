@@ -1,10 +1,10 @@
-// Module ID: 11793
-// Function ID: 11794
+// Module ID: 11854
+// Function ID: 11855
 // Name: BoostTier1Icon
-// Dependencies: [19, 21, 712, 3958, 11794, 2]
+// Dependencies: [19, 21, 712, 3988, 11855, 2]
 // Exports: BoostTier1Icon
 
-// Module 11793 (BoostTier1Icon)
+// Module 11854 (BoostTier1Icon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const BoostTier1Icon = function BoostTier1Icon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11794) /* registerAsset */;
+  obj[0] = require(11855) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

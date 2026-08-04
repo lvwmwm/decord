@@ -1,10 +1,10 @@
-// Module ID: 10223
-// Function ID: 10224
+// Module ID: 11600
+// Function ID: 11601
 // Name: _addDirectoryGuildEntry
-// Dependencies: [5, 10210, 10212, 676, 636, 709, 530, 5065, 503, 2]
+// Dependencies: [5, 11587, 11589, 676, 636, 709, 530, 5094, 503, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 10223 (_addDirectoryGuildEntry)
+// Module 11600 (_addDirectoryGuildEntry)
 import importDefaultResult from "dispatcher";
 import getSearchState from "getSearchState";
 import { DirectoryEntryCategories } from "DirectoryEntryTypes";
@@ -71,7 +71,7 @@ function _addDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback2(5065);
+              let obj7 = callback2(5094);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: null };
               obj2[0] = c6.DIRECTORY_CHANNEL_ENTRY(callback, callback2);
               const obj3 = { description: null, primary_category_id: null };
@@ -643,7 +643,7 @@ export const addDirectoryGuildEntry = function addDirectoryGuildEntry(c0, id, c3
   return applyArgumentsResult;
 };
 export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(channelId, guildId) {
-  let obj = importDefault(5065);
+  let obj = importDefault(5094);
   obj = { url: Endpoints.DIRECTORY_CHANNEL_ENTRY(channelId, guildId), trackedActionData: null, rejectWithError: true };
   obj = { event: callback(503).NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
   obj[1] = obj;

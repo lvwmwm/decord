@@ -1,10 +1,10 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13089
+// Function ID: 13090
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 1862, 13056, 676, 21, 4255, 5175, 712, 1236, 4684, 1297, 4251, 2]
+// Dependencies: [19, 1862, 13090, 676, 21, 4285, 5204, 712, 1236, 4713, 1297, 4281, 2]
 // Exports: default
 
-// Module 13055 (GuildLimitedAccessInfoAlert)
+// Module 13089 (GuildLimitedAccessInfoAlert)
 import "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GUILD_LIMITED_ACCESS_HC_LINK as closure_4 } from "GUILD_LIMITED_ACCESS_HC_LINK";
@@ -48,7 +48,7 @@ export default function GuildLimitedAccessInfoAlert(arg0) {
   const obj1 = { style: tmp.header, children: null };
   const intl3 = tmp2(1236).intl;
   obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.kJwpBW);
-  const items = [callback(require(1297) /* Button */.LegacyText, obj1), callback(require(4251) /* Text */.Text, { style: tmp.text, variant: "text-md/medium", children: formatResult1 })];
+  const items = [callback(require(1297) /* Button */.LegacyText, obj1), callback(require(4281) /* Text */.Text, { style: tmp.text, variant: "text-md/medium", children: formatResult1 })];
   obj[1] = items;
-  return callback2(importDefault(4684), obj);
+  return callback2(importDefault(4713), obj);
 };

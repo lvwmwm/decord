@@ -1,18 +1,18 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 8353
+// Function ID: 8354
 // Name: noop
-// Dependencies: [19, 17, 21, 9432, 9427, 7806, 9430, 2]
+// Dependencies: [19, 17, 21, 8348, 8342, 7818, 8346, 2]
 
-// Module 9437 (noop)
+// Module 8353 (noop)
 import importAllResult from "noop";
 import { RefreshControl } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let c3 = importAllResult;
 function noop() {
 
 }
+let c3 = importAllResult;
 const forwardRefResult = importAllResult.forwardRef((inActionSheet) => {
   let accessibilityLabel;
   let enabled;

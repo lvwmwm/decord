@@ -1,7 +1,7 @@
 // Module ID: 11334
 // Function ID: 11335
 // Name: KEYBOARD_ANIMATION_DURATION
-// Dependencies: [5311, 2]
+// Dependencies: [5340, 2]
 
 // Module 11334 (KEYBOARD_ANIMATION_DURATION)
 import BottomSheetModal from "BottomSheetModal";

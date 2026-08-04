@@ -1,9 +1,9 @@
-// Module ID: 4593
-// Function ID: 4594
+// Module ID: 4622
+// Function ID: 4623
 // Name: handleConnectionOpen
 // Dependencies: [1862, 3, 589, 709, 2]
 
-// Module 4593 (handleConnectionOpen)
+// Module 4622 (handleConnectionOpen)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Store } from "initialize";
 import set from "initialize";
@@ -32,7 +32,7 @@ const prototype = GuildAvailabilityStore.prototype;
 prototype["initialize"] = function initialize() {
   this.waitFor(createGuildRecordFromRust);
 };
-prototype["isUnavailable"] = function isUnavailable(guildId, arg1, selected) {
+prototype["isUnavailable"] = function isUnavailable(guildId, token, selected) {
   let hasItem = null != guildId;
   if (hasItem) {
     hasItem = set.has(guildId);

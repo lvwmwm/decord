@@ -1,10 +1,10 @@
-// Module ID: 5708
-// Function ID: 5709
+// Module ID: 5737
+// Function ID: 5738
 // Name: setPromoEmailConsentState
 // Dependencies: [644, 705, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState
 
-// Module 5708 (setPromoEmailConsentState)
+// Module 5737 (setPromoEmailConsentState)
 import keys from "keys";
 
 const obj = keys.create(() => ({ required: false, checked: false, preChecked: false }));

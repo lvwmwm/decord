@@ -1,10 +1,10 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 9850
+// Function ID: 9851
 // Name: doSearchRequest
-// Dependencies: [1946, 9755, 676, 685, 4450, 9757, 9758, 530, 709, 12, 514, 1467, 9759, 1355, 1341, 4594, 1236, 698, 2]
+// Dependencies: [1946, 9849, 676, 685, 4479, 9851, 9852, 530, 709, 12, 514, 1467, 9661, 1355, 1341, 4623, 1236, 698, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 9756 (doSearchRequest)
+// Module 9850 (doSearchRequest)
 import _getSystemLocale from "_getSystemLocale";
 import getFormatFromUrl from "getFormatFromUrl";
 import ME from "ME";
@@ -29,8 +29,8 @@ function doSearchRequest(q, arg1, limit) {
   } else {
     obj = {};
   }
-  let obj2 = importDefault(4450);
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(9757).GIF_PROVIDER };
+  let obj2 = importDefault(4479);
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(9851).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   let obj1 = { url: constants2.GIFS_SEARCH, query: null, oldFormErrors: true, rejectWithError: true };
@@ -85,8 +85,8 @@ export const trackSearchStart = function trackSearchStart(arg0) {
   } else {
     obj = {};
   }
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: require(9757) /* GIF_PROVIDER */.GIF_PROVIDER };
-  importDefault(4450).trackWithMetadata(constants.SEARCH_STARTED, obj);
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: require(9851) /* GIF_PROVIDER */.GIF_PROVIDER };
+  importDefault(4479).trackWithMetadata(constants.SEARCH_STARTED, obj);
 };
 export const trackSearchResultViewed = function trackSearchResultViewed(totalResults, TRENDING_GIFS) {
   let obj = arg2;
@@ -96,7 +96,7 @@ export const trackSearchResultViewed = function trackSearchResultViewed(totalRes
   const startTime = obj.startTime;
   const merged = Object.assign(obj, Object.create(null));
   obj = { offset: 0, limit: null, totalResults: totalResults.length };
-  let obj2 = require(9758) /* isKlipyProvider */;
+  let obj2 = require(9852) /* isKlipyProvider */;
   obj = {};
   const analyticsID = store.getAnalyticsID();
   const merged1 = Object.assign(obj);
@@ -113,8 +113,8 @@ export const trackSearchResultViewed = function trackSearchResultViewed(totalRes
   obj2 = {};
   const merged3 = Object.assign(result);
   const merged4 = Object.assign(obj1);
-  obj2.gif_provider = require(9757) /* GIF_PROVIDER */.GIF_PROVIDER;
-  importDefault(4450).trackWithMetadata(constants.SEARCH_RESULT_VIEWED, obj2);
+  obj2.gif_provider = require(9851) /* GIF_PROVIDER */.GIF_PROVIDER;
+  importDefault(4479).trackWithMetadata(constants.SEARCH_RESULT_VIEWED, obj2);
 };
 export const search = function search(q, arg1, arg2, limit) {
   let flag = arg2;
@@ -172,9 +172,9 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
   let type;
   ({ query, gifId } = arg0);
   ({ type, index, offset, limit, results, totalResults } = arg0);
-  let obj = require(9758) /* isKlipyProvider */;
+  let obj = require(9852) /* isKlipyProvider */;
   const result = obj.calculateAnalyticsMetadata(store.getAnalyticsID(), type, { offset, limit, results, totalResults });
-  let obj1 = importDefault(4450);
+  let obj1 = importDefault(4479);
   obj = {};
   const merged = Object.assign(result);
   obj.index_num = index;
@@ -197,8 +197,8 @@ export const initializeSearch = function initializeSearch() {
   replaced = obj.v4().replace(closure_11, "");
   const str = obj.v4();
   obj = { search_type: constants3.GIF, load_id: replaced };
-  importDefault(4450).trackWithMetadata(constants.SEARCH_OPENED, obj);
-  const obj2 = importDefault(4450);
+  importDefault(4479).trackWithMetadata(constants.SEARCH_OPENED, obj);
+  const obj2 = importDefault(4479);
   importDefault(709).wait(() => {
     let obj = outer1_1(outer1_2[8]);
     obj = { type: "GIF_PICKER_INITIALIZE", analyticsID: replaced };
@@ -230,8 +230,8 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
   } else {
     obj = {};
   }
-  let obj2 = importDefault(4450);
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(9757).GIF_PROVIDER };
+  let obj2 = importDefault(4479);
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(9851).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   let obj1 = { url: constants2.GIFS_TRENDING_GIFS, query: null, oldFormErrors: true, rejectWithError: true };
@@ -276,12 +276,12 @@ export const gifUrlKey = function gifUrlKey(uri) {
   let tmp4 = uri;
   if (null != toURLSafeResult) {
     if (obj2.isAttachmentUrl(toURLSafeResult)) {
-      str = tmp5(9759).removeSignedUrlParameters(toURLSafeResult);
+      str = tmp5(9661).removeSignedUrlParameters(toURLSafeResult);
       str = str.toString();
-      const tmp5Result = tmp5(9759);
+      const tmp5Result = tmp5(9661);
     }
     tmp4 = str;
-    obj2 = require(9759) /* shouldRefreshAttachmentUrl */;
+    obj2 = require(9661) /* shouldRefreshAttachmentUrl */;
     tmp5 = require;
   }
   return tmp4;

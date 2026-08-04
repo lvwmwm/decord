@@ -1,10 +1,10 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15073
+// Function ID: 15074
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 3892, 676, 21, 4255, 712, 10068, 8668, 1959, 647, 1236, 4094, 15040, 15041, 698, 4783, 1297, 4251, 4666, 4201, 7654, 15038, 2]
+// Dependencies: [32, 19, 17, 3922, 676, 21, 4285, 712, 9370, 8705, 1959, 647, 1236, 4124, 15074, 15075, 698, 4812, 1297, 4281, 4695, 4231, 7666, 15072, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15039 (getMessagesItemSuggestedFriendHeight)
+// Module 15073 (getMessagesItemSuggestedFriendHeight)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Text";
 import { View } from "PressableBase";
@@ -146,7 +146,7 @@ const memoResult = importAllResult.memo((arg0) => {
 const memoResult1 = importAllResult.memo((suggestedFriend) => {
   let tmp2;
   let tmp3;
-  let obj = require(7654) /* noop */;
+  let obj = require(7666) /* noop */;
   const items = [suggestedFriend.suggestedFriend.user.id];
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false, items), 2);
@@ -158,7 +158,7 @@ const memoResult1 = importAllResult.memo((suggestedFriend) => {
 const memoResult2 = importAllResult.memo((arg0) => {
   let tmp2;
   let tmp3;
-  let obj = require(15038) /* toNativeHorizontalOffset */;
+  let obj = require(15072) /* toNativeHorizontalOffset */;
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
@@ -169,9 +169,9 @@ const memoResult2 = importAllResult.memo((arg0) => {
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriend.tsx");
 
 export const getMessagesItemSuggestedFriendHeight = function getMessagesItemSuggestedFriendHeight(fontScale) {
-  const obj = require(10068) /* map */;
-  const scaleTextLineHeightResult = require(10068) /* map */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const sum = scaleTextLineHeightResult + require(10068) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
+  const obj = require(9370) /* map */;
+  const scaleTextLineHeightResult = require(9370) /* map */.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const sum = scaleTextLineHeightResult + require(9370) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
   return sum + importDefault(712).space.PX_16;
 };
 export const MessagesItemSuggestedFriendFast = memoResult;

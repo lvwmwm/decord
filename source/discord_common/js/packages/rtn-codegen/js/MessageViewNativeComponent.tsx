@@ -1,9 +1,9 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 8400
+// Function ID: 8401
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 9474 (__INTERNAL_VIEW_CONFIG)
+// Module 8400 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDMessageView", validAttributes: { row: true } };

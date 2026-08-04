@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11258
+// Function ID: 11259
 // Name: onTapCheckpointCard
-// Dependencies: [1372, 676, 698, 4450, 2]
+// Dependencies: [1372, 676, 698, 4479, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11259 (onTapCheckpointCard)
+// Module 11258 (onTapCheckpointCard)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 
@@ -15,12 +15,12 @@ export const onTapCheckpointCard = function onTapCheckpointCard(message) {
   channel = channel.getChannel(message.message.channel_id);
   let obj = importDefault(698);
   obj = { other_user_id: message.authorId };
-  const merged = Object.assign(require(4450) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel));
-  const obj3 = require(4450) /* collectGuildAnalyticsMetadata */;
+  const merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel));
+  const obj3 = require(4479) /* collectGuildAnalyticsMetadata */;
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
   }
-  const merged1 = Object.assign(require(4450) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id));
+  const merged1 = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guild_id));
   obj.track(AnalyticEvents.CHECKPOINT_CARD_CLICKED, obj);
 };

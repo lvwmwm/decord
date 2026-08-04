@@ -1,9 +1,9 @@
-// Module ID: 13041
-// Function ID: 13042
+// Module ID: 13075
+// Function ID: 13076
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 13041 (apexExperiment)
+// Module 13075 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { probeAudioEffects: false };

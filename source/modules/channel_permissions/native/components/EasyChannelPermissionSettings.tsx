@@ -1,10 +1,10 @@
-// Module ID: 15737
-// Function ID: 15738
+// Module ID: 15768
+// Function ID: 15769
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [32, 5, 19, 17, 15738, 1372, 1942, 1935, 1862, 3883, 3892, 1874, 7692, 676, 21, 4255, 712, 1480, 589, 8588, 8589, 8590, 1236, 4446, 4594, 8596, 3888, 4664, 5620, 5621, 1297, 5286, 11432, 11054, 5215, 4450, 8535, 8941, 15739, 15741, 2]
+// Dependencies: [32, 5, 19, 17, 15769, 1372, 1942, 1935, 1862, 3913, 3922, 1874, 7704, 676, 21, 4285, 712, 1480, 589, 8919, 8920, 8921, 1236, 4475, 4623, 8927, 3918, 4693, 5649, 5650, 1297, 5315, 9445, 10986, 5244, 4479, 8878, 9063, 15770, 15772, 2]
 // Exports: default
 
-// Module 15737 (ChannelPermissionSettingsBasicView)
+// Module 15768 (ChannelPermissionSettingsBasicView)
 import CirclePlusIcon from "CirclePlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getRoleRowData from "getRoleRowData";
@@ -83,13 +83,13 @@ function ChannelPermissionSettingsBasicView(channel) {
               let closure_0 = tmp2;
               closure_0 = undefined;
               const accessPermissions = outer1_0.accessPermissions;
-              const result = v0(8588).isPrivateGuildChannel(outer1_0);
-              const obj9 = v0(8588);
+              const result = v0(8919).isPrivateGuildChannel(outer1_0);
+              const obj9 = v0(8919);
               const tmp22 = v0;
-              closure_0 = v0(8588).flipEveryonePermission(outer1_0, accessPermissions, result);
+              closure_0 = v0(8919).flipEveryonePermission(outer1_0, accessPermissions, result);
               const currentUser = outer1_16.getCurrentUser();
               let tmp7 = outer1_9;
-              const obj10 = v0(8588);
+              const obj10 = v0(8919);
               if (!outer1_9) {
                 tmp7 = null == currentUser;
               }
@@ -100,7 +100,7 @@ function ChannelPermissionSettingsBasicView(channel) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj1 = { value: null, done: false };
-                obj1[0] = tmp22(8588).grantUserChannelAccess(outer1_0, accessPermissions);
+                obj1[0] = tmp22(8919).grantUserChannelAccess(outer1_0, accessPermissions);
                 return obj1;
               }
               canResult = outer1_14.can(outer1_19.ADMINISTRATOR, outer1_4);
@@ -131,7 +131,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           v0 = 2;
           dependencyMap = 1;
           const obj3 = { value: null, done: false };
-          obj3[0] = outer1_0(8589).savePermissionUpdates(outer1_0.id, items);
+          obj3[0] = outer1_0(8920).savePermissionUpdates(outer1_0.id, items);
           return obj3;
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -184,7 +184,7 @@ function ChannelPermissionSettingsBasicView(channel) {
               v0 = undefined;
               if (null != outer1_0.guild_id) {
                 if (!outer1_1) {
-                  let obj1 = outer1_0(8590);
+                  let obj1 = outer1_0(8921);
                   v0 = 1;
                   dependencyMap = 1;
                   obj1 = { value: null, done: false };
@@ -214,7 +214,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             stringResult = string(t["47gQYL"]);
           }
           outer1_0 = stringResult;
-          let obj3 = outer1_0(4446);
+          let obj3 = outer1_0(4475);
           outer1_1 = obj3.computeChannelName(outer1_0, outer1_16, outer1_15);
           let intl2 = outer1_0(1236).intl;
           let onCancel = intl2.format;
@@ -230,7 +230,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           }
           v0 = onCancelResult;
           v0(!c1);
-          show = outer1_1(4594).show;
+          show = outer1_1(4623).show;
           const obj4 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false, onCancel: null };
           obj4[0] = c0;
           obj4[1] = v0;
@@ -246,7 +246,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj4[6] = onCancel;
           show(obj4);
           dependencyMap = 3;
-          const tmp42 = outer1_1(4594);
+          const tmp42 = outer1_1(4623);
         } catch (tmp54) {
           dependencyMap = tmp;
           throw tmp54;
@@ -409,7 +409,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   return null;
 }
 function onBack() {
-  importDefault(4594).close();
+  importDefault(4623).close();
   return false;
 }
 ({ View: error, ScrollView: metroImportAll } = get_ActivityIndicator);

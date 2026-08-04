@@ -1,9 +1,9 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13726
+// Function ID: 13727
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 13692 (__INTERNAL_VIEW_CONFIG)
+// Module 13726 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DiscordGestureHandlerRootView", validAttributes: {} };

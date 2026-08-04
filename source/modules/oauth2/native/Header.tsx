@@ -1,10 +1,10 @@
-// Module ID: 9212
-// Function ID: 9213
+// Module ID: 10458
+// Function ID: 10459
 // Name: Header
-// Dependencies: [19, 17, 676, 21, 4255, 712, 1416, 1297, 4251, 8705, 1384, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 1416, 1297, 4281, 9053, 1384, 1236, 2]
 // Exports: default
 
-// Module 9212 (Header)
+// Module 10458 (Header)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UserFlags } from "ME";
@@ -56,13 +56,13 @@ export default function Header(accountScopes) {
   obj1[1] = items;
   const items2 = [callback2(View, obj1), , ];
   const obj8 = { style: tmp.applicationNameWrapper, children: null };
-  const items3 = [callback(require(4251) /* Text */.Text, { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: application.name }), ];
+  const items3 = [callback(require(4281) /* Text */.Text, { variant: "text-lg/bold", color: "mobile-text-heading-primary", children: application.name }), ];
   let tmp8Result = null;
   if (null != bot) {
     const obj10 = { style: null, verified: null };
     obj10[0] = tmp.botTag;
     let hasFlagResult = null != bot.public_flags;
-    tmp2Result = tmp2(8705);
+    tmp2Result = tmp2(9053);
     if (hasFlagResult) {
       hasFlagResult = tmp9(1384).hasFlag(bot.public_flags, UserFlags.VERIFIED_BOT);
       const tmp9Result = tmp9(1384);
@@ -80,7 +80,7 @@ export default function Header(accountScopes) {
     const intl = tmp9(1236).intl;
     stringResult = intl.string(tmp9(1236).t["X+Fdpo"]);
   }
-  items2[2] = callback(require(4251) /* Text */.Text, { variant: "heading-md/normal", color: "text-default", children: stringResult });
+  items2[2] = callback(require(4281) /* Text */.Text, { variant: "heading-md/normal", color: "text-default", children: stringResult });
   obj[1] = items2;
   return callback2(View, obj);
 };

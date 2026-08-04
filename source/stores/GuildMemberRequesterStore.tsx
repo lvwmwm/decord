@@ -1,9 +1,9 @@
-// Module ID: 5081
-// Function ID: 5082
+// Module ID: 5110
+// Function ID: 5111
 // Name: handleConnectionReset
-// Dependencies: [1372, 1942, 5082, 709, 589, 2]
+// Dependencies: [1372, 1942, 5111, 709, 589, 2]
 
-// Module 5081 (handleConnectionReset)
+// Module 5110 (handleConnectionReset)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import importDefaultResult from "trackCommunicationDisabled";
 import { Store } from "initialize";

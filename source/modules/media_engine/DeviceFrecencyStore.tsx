@@ -1,9 +1,9 @@
-// Module ID: 4330
-// Function ID: 4331
+// Module ID: 4359
+// Function ID: 4360
 // Name: DeviceTypes
-// Dependencies: [4302, 1874, 4316, 4331, 4339, 589, 12, 709, 2]
+// Dependencies: [4332, 1874, 4345, 4360, 4368, 589, 12, 709, 2]
 
-// Module 4330 (DeviceTypes)
+// Module 4359 (DeviceTypes)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import DesktopSources from "DesktopSources";

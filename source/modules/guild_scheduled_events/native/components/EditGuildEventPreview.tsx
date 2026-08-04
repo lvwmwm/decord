@@ -1,10 +1,10 @@
-// Module ID: 8623
-// Function ID: 8624
+// Module ID: 8953
+// Function ID: 8954
 // Name: PreviewBody
-// Dependencies: [19, 17, 1372, 676, 21, 4255, 712, 500, 589, 4446, 8524, 8624, 4251, 1236, 8625, 1297, 8626, 8520, 5243, 8536, 4666, 8521, 4595, 8627, 1959, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 4285, 712, 500, 589, 4475, 8867, 8954, 4281, 1236, 8955, 1297, 8956, 8863, 5272, 8879, 4695, 8864, 4624, 8957, 1959, 2]
 // Exports: default
 
-// Module 8623 (PreviewBody)
+// Module 8953 (PreviewBody)
 import usePrimaryActionButtonType from "usePrimaryActionButtonType";
 import { View } from "EditGuildEventScreens";
 import ensureGuildLoaded from "ensureGuildLoaded";

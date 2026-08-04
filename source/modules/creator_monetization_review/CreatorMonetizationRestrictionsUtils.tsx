@@ -1,10 +1,10 @@
-// Module ID: 3876
-// Function ID: 3877
+// Module ID: 3906
+// Function ID: 3907
 // Name: isRestrictedFromShowingGuildPurchaseEntryPoints
-// Dependencies: [3877, 1862, 3878, 676, 2]
+// Dependencies: [3907, 1862, 3908, 676, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 3876 (isRestrictedFromShowingGuildPurchaseEntryPoints)
+// Module 3906 (isRestrictedFromShowingGuildPurchaseEntryPoints)
 import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

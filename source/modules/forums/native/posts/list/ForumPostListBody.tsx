@@ -1,7 +1,7 @@
 // Module ID: 11326
 // Function ID: 11327
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 5804, 21, 4255, 11318, 11308, 11317, 11319, 11327, 11312, 2]
+// Dependencies: [19, 17, 5833, 21, 4285, 11318, 11308, 11317, 11319, 11327, 11312, 2]
 // Exports: default
 
 // Module 11326 (ForumPostListBody)

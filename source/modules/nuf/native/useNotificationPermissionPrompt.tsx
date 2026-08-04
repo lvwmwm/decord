@@ -1,10 +1,10 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15513
+// Function ID: 15514
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 1365, 4931, 1366, 11627, 589, 1368, 11636, 15483, 15485, 2]
+// Dependencies: [19, 1365, 4960, 1366, 11690, 589, 1368, 11699, 15514, 15516, 2]
 // Exports: default
 
-// Module 15482 (useNotificationPermissionPrompt)
+// Module 15513 (useNotificationPermissionPrompt)
 import noop from "noop";
 import handleUpdateUser from "handleUpdateUser";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -34,7 +34,7 @@ export default function useNotificationPermissionPrompt() {
     }
   }, items2);
   const obj2 = stateFromStores(589);
-  const guildOpenNudge = stateFromStores(15483).useGuildOpenNudge();
-  const obj3 = stateFromStores(15483);
-  const postCallDisconnectNudge = stateFromStores(15485).usePostCallDisconnectNudge();
+  const guildOpenNudge = stateFromStores(15514).useGuildOpenNudge();
+  const obj3 = stateFromStores(15514);
+  const postCallDisconnectNudge = stateFromStores(15516).usePostCallDisconnectNudge();
 };

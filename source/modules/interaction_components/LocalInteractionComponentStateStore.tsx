@@ -1,9 +1,9 @@
-// Module ID: 8015
-// Function ID: 8016
+// Module ID: 8027
+// Function ID: 8028
 // Name: getInteractionComponentStates
-// Dependencies: [8016, 589, 709, 2]
+// Dependencies: [8028, 589, 709, 2]
 
-// Module 8015 (getInteractionComponentStates)
+// Module 8027 (getInteractionComponentStates)
 import { Store } from "initialize";
 
 let c0 = new require("LimitedMap")(196606);

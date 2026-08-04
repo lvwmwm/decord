@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10573
+// Function ID: 10574
 // Name: usePipDimensions
-// Dependencies: [19, 10724, 1474, 8478, 2]
+// Dependencies: [19, 10574, 1474, 8817, 2]
 // Exports: default
 
-// Module 10723 (usePipDimensions)
+// Module 10573 (usePipDimensions)
 import noop from "noop";
 
 const require = arg1;

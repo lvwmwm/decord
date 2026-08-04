@@ -1,10 +1,10 @@
-// Module ID: 5806
-// Function ID: 5807
+// Module ID: 5835
+// Function ID: 5836
 // Name: subscribeGuildMembers
-// Dependencies: [109, 19, 21, 12, 5807, 643, 1208, 2]
+// Dependencies: [109, 19, 21, 12, 5836, 643, 1208, 2]
 // Exports: default, useSubscribeGuildMembers
 
-// Module 5806 (subscribeGuildMembers)
+// Module 5835 (subscribeGuildMembers)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -51,9 +51,9 @@ export default function subscribeGuildMembers(arg0) {
         if (!isEqualResult) {
           if (null != self._subscriptions) {
             tmpResult = tmp(tmp2[3]);
-            const item = tmpResult.forEach(self._subscriptions, (userIds, guildId) => callback(5807).unsubscribeMembers(guildId, userIds));
+            const item = tmpResult.forEach(self._subscriptions, (userIds, guildId) => callback(5836).unsubscribeMembers(guildId, userIds));
           }
-          const item1 = tmp(tmp2[3]).forEach(tmp4, (userIds, guildId) => callback(5807).subscribeMembers(guildId, userIds));
+          const item1 = tmp(tmp2[3]).forEach(tmp4, (userIds, guildId) => callback(5836).subscribeMembers(guildId, userIds));
           self._subscriptions = tmp4;
           const tmpResult1 = tmp(tmp2[3]);
         }

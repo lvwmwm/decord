@@ -1,10 +1,10 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 9449
+// Function ID: 9450
 // Name: LinkButton
-// Dependencies: [19, 17, 676, 1930, 21, 4255, 3952, 698, 4251, 9193, 500, 1929, 1236, 2]
+// Dependencies: [19, 17, 676, 1930, 21, 4285, 3982, 698, 4281, 9450, 500, 1929, 1236, 2]
 // Exports: default
 
-// Module 12067 (LinkButton)
+// Module 9449 (LinkButton)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -23,13 +23,13 @@ function LinkButton(arg0) {
   const tmp = callback3();
   obj = {
     onPress() {
-      let obj = callback(3952);
+      let obj = callback(3982);
       obj.openURL(closure_6);
       obj = { cta_type: "profile_bio", target: closure_6 };
       callback(698).track(constants.CHANGE_LOG_CTA_CLICKED, obj);
     },
     style: tmp.link,
-    children: callback(require(4251) /* Text */.Text, obj)
+    children: callback(require(4281) /* Text */.Text, obj)
   };
   obj = { variant: "text-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
   items = ["\n", text];

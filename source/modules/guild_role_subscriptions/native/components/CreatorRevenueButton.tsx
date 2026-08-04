@@ -1,10 +1,10 @@
-// Module ID: 9534
-// Function ID: 9535
+// Module ID: 8608
+// Function ID: 8609
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4255, 9535, 2]
+// Dependencies: [19, 21, 4285, 8609, 2]
 // Exports: CreatorRevenueButton
 
-// Module 9534 (CreatorRevenueButton)
+// Module 8608 (CreatorRevenueButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,5 +21,5 @@ export const CreatorRevenueButton = function CreatorRevenueButton(arg0) {
   ({ disabled, text, onPress, style, loading } = arg0);
   style = [callback().container, ];
   style[1] = style;
-  return jsx(importDefault(9535), { style, loading, disabled, onPress, text });
+  return jsx(importDefault(8609), { style, loading, disabled, onPress, text });
 };

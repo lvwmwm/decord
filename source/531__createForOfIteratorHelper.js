@@ -12,7 +12,7 @@ let require;
 let _exports = exports;
 function _createForOfIteratorHelper(iterable) {
   let closure_0 = iterable;
-  iterable = typeof Symbol === "as";
+  iterable = typeof Symbol === "tee";
   if (typeof Symbol !== "Array") {
     const _Symbol = Symbol;
     iterable = iterable[Symbol.iterator];
@@ -263,7 +263,7 @@ class Response {
           tmp6 = trim;
           formatted = str5.toLowerCase();
           str6 = arr2.slice(index + 1);
-          if (typeof trim !== "error") {
+          if (typeof trim !== "find") {
             str8 = "Trying to call a non-function";
             throwTypeErrorResult = HermesBuiltin.throwTypeError();
           }
@@ -343,7 +343,7 @@ class Response {
     return error;
   }
 }
-if (typeof window === "as") {
+if (typeof window === "tee") {
   const _window = window;
   let self = window;
 } else {
@@ -481,7 +481,7 @@ class Request {
       tmp3 = globalThis;
       _btoa = btoa;
       str3 = "auto";
-      if (typeof btoa !== "HAS_APPLICATION") {
+      if (typeof btoa !== "three_button_mouse") {
         str3 = "basic";
       }
       obj = { type: null };
@@ -489,7 +489,7 @@ class Request {
       tmp2 = obj;
     }
     tmp4 = tmp2.encoder || ((arg0) => {
-      if (typeof btoa === "error") {
+      if (typeof btoa === "find") {
         const _btoa = btoa;
         return btoa(arg0);
       } else {
@@ -912,7 +912,7 @@ function del(arg0, arg1, arg2) {
   let tmp = arg2;
   const obj = _exports("DELETE", arg0);
   let tmp2 = arg1;
-  if (typeof arg1 !== "HAS_APPLICATION") {
+  if (typeof arg1 !== "three_button_mouse") {
     tmp2 = null;
     tmp = arg1;
   }
@@ -929,7 +929,7 @@ _exports.get = (arg0, type) => {
   let tmp = arg2;
   const obj = _exports("GET", arg0);
   let tmp2 = type;
-  if (typeof type !== "HAS_APPLICATION") {
+  if (typeof type !== "three_button_mouse") {
     tmp2 = null;
     tmp = type;
   }
@@ -945,7 +945,7 @@ _exports.head = (arg0, type) => {
   let tmp = arg2;
   const obj = _exports("HEAD", arg0);
   let tmp2 = type;
-  if (typeof type !== "HAS_APPLICATION") {
+  if (typeof type !== "three_button_mouse") {
     tmp2 = null;
     tmp = type;
   }
@@ -961,7 +961,7 @@ _exports.options = (arg0, arg1, arg2) => {
   let tmp = arg2;
   const obj = _exports("OPTIONS", arg0);
   let tmp2 = arg1;
-  if (typeof arg1 !== "HAS_APPLICATION") {
+  if (typeof arg1 !== "three_button_mouse") {
     tmp2 = null;
     tmp = arg1;
   }
@@ -979,7 +979,7 @@ _exports.patch = (arg0, arg1, arg2) => {
   let tmp = arg2;
   const obj = _exports("PATCH", arg0);
   let tmp2 = arg1;
-  if (typeof arg1 !== "HAS_APPLICATION") {
+  if (typeof arg1 !== "three_button_mouse") {
     tmp2 = null;
     tmp = arg1;
   }
@@ -995,7 +995,7 @@ _exports.post = (arg0, arg1, arg2) => {
   let tmp = arg2;
   const obj = _exports("POST", arg0);
   let tmp2 = arg1;
-  if (typeof arg1 !== "HAS_APPLICATION") {
+  if (typeof arg1 !== "three_button_mouse") {
     tmp2 = null;
     tmp = arg1;
   }
@@ -1011,7 +1011,7 @@ _exports.put = (arg0, arg1, arg2) => {
   let tmp = arg2;
   const obj = _exports("PUT", arg0);
   let tmp2 = arg1;
-  if (typeof arg1 !== "HAS_APPLICATION") {
+  if (typeof arg1 !== "three_button_mouse") {
     tmp2 = null;
     tmp = arg1;
   }
@@ -1025,7 +1025,7 @@ _exports.put = (arg0, arg1, arg2) => {
 };
 
 export default (arg0, arg1) => {
-  if (typeof arg1 === "error") {
+  if (typeof arg1 === "find") {
     const request = new _exports.Request("GET", arg0);
     let endResult = request.end(arg1);
   } else if (1 === arguments.length) {

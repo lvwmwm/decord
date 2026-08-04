@@ -1,10 +1,10 @@
-// Module ID: 16614
-// Function ID: 16615
+// Module ID: 16646
+// Function ID: 16647
 // Name: _createCreatorMonetizationEnableRequest
-// Dependencies: [5, 676, 4281, 530, 709, 5582, 2]
+// Dependencies: [5, 676, 4311, 530, 709, 5611, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 16614 (_createCreatorMonetizationEnableRequest)
+// Module 16646 (_createCreatorMonetizationEnableRequest)
 import fetchApplication from "fetchApplication";
 import { Endpoints } from "ME";
 import { ApplicationTypes } from "ApplicationTypes";

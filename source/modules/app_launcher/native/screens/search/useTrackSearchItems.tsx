@@ -1,10 +1,10 @@
-// Module ID: 11404
-// Function ID: 11405
+// Module ID: 11405
+// Function ID: 11406
 // Name: useTrackSearchItems
-// Dependencies: [19, 11060, 8741, 503, 6879, 2]
+// Dependencies: [19, 9466, 9267, 503, 6891, 2]
 // Exports: useTrackSearchItems
 
-// Module 11404 (useTrackSearchItems)
+// Module 11405 (useTrackSearchItems)
 import noop from "noop";
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useTrackSearchItems = function useTrackSearchItems(callback3, memo1
   const _require = callback3;
   const dependencyMap = memo1;
   const React = first;
-  let obj = _require(11060);
+  let obj = _require(9466);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   let closure_4 = React.useRef({});
   let closure_5 = React.useRef(first);

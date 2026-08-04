@@ -1,9 +1,9 @@
-// Module ID: 7129
-// Function ID: 7130
+// Module ID: 7141
+// Function ID: 7142
 // Name: reactionKey
-// Dependencies: [3884, 1882, 1372, 1874, 7130, 589, 7131, 709, 2]
+// Dependencies: [3914, 1882, 1372, 1874, 7142, 589, 7143, 709, 2]
 
-// Module 7129 (reactionKey)
+// Module 7141 (reactionKey)
 import initialize from "initialize";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -52,7 +52,7 @@ prototype["ensure"] = function ensure(messageId, emoji, reactionType) {
   const combined = "" + messageId + ":" + name + ":" + id + ":" + reactionType;
   let tmp3 = dependencyMap[combined];
   if (tmp3 == null) {
-    if (typeof prototype !== "error") {
+    if (typeof prototype !== "find") {
       HermesBuiltin.throwTypeError();
     }
     const obj = Object.create(prototype.prototype);
@@ -114,9 +114,9 @@ prototype2["getReactions"] = function getReactions(channelId, messageId, emoji, 
     obj[2] = emoji;
     obj[3] = closure_9;
     obj[4] = VOTE;
-    const reactors = importAll(7131).getReactors(obj);
+    const reactors = importAll(7143).getReactors(obj);
     ensureResult.fetched = true;
-    const obj2 = importAll(7131);
+    const obj2 = importAll(7143);
   }
   return ensureResult.users;
 };

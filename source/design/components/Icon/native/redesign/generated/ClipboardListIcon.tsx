@@ -1,10 +1,10 @@
-// Module ID: 9335
-// Function ID: 9336
+// Module ID: 8235
+// Function ID: 8236
 // Name: ClipboardListIcon
-// Dependencies: [19, 21, 712, 3958, 9336, 2]
+// Dependencies: [19, 21, 712, 3988, 8236, 2]
 // Exports: ClipboardListIcon
 
-// Module 9335 (ClipboardListIcon)
+// Module 8235 (ClipboardListIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ClipboardListIcon = function ClipboardListIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9336) /* registerAsset */;
+  obj[0] = require(8236) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

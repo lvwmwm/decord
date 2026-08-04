@@ -1,10 +1,10 @@
-// Module ID: 10046
-// Function ID: 10047
+// Module ID: 10144
+// Function ID: 10145
 // Name: useRedactableMediaAttachmentsForMessage
-// Dependencies: [4473, 647, 10047, 5789, 5794, 2]
+// Dependencies: [4502, 647, 9763, 5818, 5823, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 10046 (useRedactableMediaAttachmentsForMessage)
+// Module 10144 (useRedactableMediaAttachmentsForMessage)
 import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
   const items = [reinjectEphemerals];
   const stateFromStores = _require(647).useStateFromStores(items, () => attachmentId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  let closure_3 = _require(10047).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let closure_3 = _require(9763).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -33,7 +33,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = _require(10047);
+  const obj2 = _require(9763);
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
   const _require = channelId;
@@ -42,7 +42,7 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
   const items = [reinjectEphemerals];
   const stateFromStores = _require(647).useStateFromStores(items, () => embedId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  let closure_3 = _require(10047).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  let closure_3 = _require(9763).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -58,5 +58,5 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = _require(10047);
+  const obj2 = _require(9763);
 };

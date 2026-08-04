@@ -1,9 +1,9 @@
-// Module ID: 4667
-// Function ID: 4668
+// Module ID: 4696
+// Function ID: 4697
 // Name: CollapsingText
-// Dependencies: [32, 19, 17, 21, 4255, 712, 4116, 4668, 4665, 4669, 4670, 4671, 1348, 4251, 3974, 4224, 4673, 3961, 4675, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 4146, 4697, 4694, 4698, 4699, 4700, 1348, 4281, 4004, 4254, 4702, 3991, 4704, 2]
 
-// Module 4667 (CollapsingText)
+// Module 4696 (CollapsingText)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "getNodeText";
@@ -15,7 +15,7 @@ import IconSizes from "IconSizes";
 import createCacheKey from "createCacheKey";
 import { LARGE_BUTTON_HEIGHT } from "MINIMUM_HIT_AREA";
 import { LARGE_BUTTON_HEIGHT as LARGE_BUTTON_HEIGHT2 } from "MINIMUM_HIT_AREA";
-import importDefaultResult from "module_4116";
+import importDefaultResult from "module_4146";
 
 let Platform;
 let c5;
@@ -96,7 +96,7 @@ function BaseTextButtonIcon(arg0) {
   let size;
   let style;
   ({ icon, size, iconPosition, iconOpticalOffsetMargin, style } = arg0);
-  let obj = require(4671) /* styleProperties */;
+  let obj = require(4700) /* styleProperties */;
   const iconSizeStyles = obj.useIconSizeStyles(size);
   obj = { source: icon, style: null };
   const items = [style, iconSizeStyles, callback5(iconPosition, iconOpticalOffsetMargin).offset];
@@ -108,7 +108,7 @@ let c4 = importAllResult;
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles((arg0, arg1) => {
   let obj = { grow: { flexGrow: 1, alignSelf: "stretch" }, shrink: { flexShrink: 1 }, buttonText: null, icon: null, iconLeft: null, iconRight: null, expressiveButtonContainer: null };
-  if (typeof getTextPlatformLineHeight !== "error") {
+  if (typeof getTextPlatformLineHeight !== "find") {
     HermesBuiltin.throwTypeError();
   }
   let tmp;
@@ -160,15 +160,15 @@ let closure_18 = createCacheKey.createStyles((arg0, arg1) => {
 });
 createCacheKey = { sm: null, md: null, lg: null };
 const bound = Math.max((require("MINIMUM_HIT_AREA").MINIMUM_HIT_AREA - require("MINIMUM_HIT_AREA").SMALL_BUTTON_HEIGHT) / 2, 0);
-createCacheKey = { top: bound, left: "Array", right: "isArray", bottom: "message" };
+createCacheKey = { top: bound, left: "Array", right: "ti", bottom: "<string:2835349914>" };
 createCacheKey[3] = bound;
 createCacheKey[0] = createCacheKey;
 const bound1 = Math.max((require("MINIMUM_HIT_AREA").MINIMUM_HIT_AREA - require("MINIMUM_HIT_AREA").MEDIUM_BUTTON_HEIGHT) / 2, 0);
-createCacheKey = { top: bound1, left: "Array", right: "isArray", bottom: "message" };
+createCacheKey = { top: bound1, left: "Array", right: "ti", bottom: "<string:2835349914>" };
 createCacheKey[3] = bound1;
 createCacheKey[1] = createCacheKey;
 const bound2 = Math.max((require("MINIMUM_HIT_AREA").MINIMUM_HIT_AREA - require("MINIMUM_HIT_AREA").LARGE_BUTTON_HEIGHT) / 2, 0);
-let obj4 = { top: bound2, left: "Array", right: "isArray", bottom: "message" };
+let obj4 = { top: bound2, left: "Array", right: "ti", bottom: "<string:2835349914>" };
 obj4[3] = bound2;
 createCacheKey[2] = obj4;
 function getTextPlatformLineHeight(arg0, arg1) {
@@ -410,7 +410,7 @@ let merged = Object.assign({}, importAllResult.forwardRef((iconOpticalOffsetMarg
       flag = true;
     }
     const context = importAllResult.useContext(closure_13);
-    let obj = require(4671) /* styleProperties */;
+    let obj = require(4700) /* styleProperties */;
     obj = { source: source.source, disableColor: flag, style: obj.useIconSizeStyles(context) };
     const tmp4 = callback(IconSizes, obj);
     let tmp3Result = tmp4;
@@ -434,7 +434,7 @@ let obj5 = {
       flag = true;
     }
     const context = importAllResult.useContext(closure_13);
-    let obj = require(4671) /* styleProperties */;
+    let obj = require(4700) /* styleProperties */;
     obj = { source: source.source, disableColor: flag, style: obj.useIconSizeStyles(context) };
     const tmp4 = callback(IconSizes, obj);
     let tmp3Result = tmp4;

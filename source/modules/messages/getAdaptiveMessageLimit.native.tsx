@@ -1,10 +1,10 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 9662
+// Function ID: 9663
 // Name: getMessageLimit
 // Dependencies: [676, 2]
 // Exports: getMessageLimit, useMessageLimit
 
-// Module 10057 (getMessageLimit)
+// Module 9662 (getMessageLimit)
 import { MAX_MESSAGES_PER_CHANNEL } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/messages/getAdaptiveMessageLimit.native.tsx");

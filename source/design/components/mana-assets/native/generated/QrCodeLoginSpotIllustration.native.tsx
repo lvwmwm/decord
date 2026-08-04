@@ -1,10 +1,10 @@
-// Module ID: 6553
-// Function ID: 6554
+// Module ID: 6565
+// Function ID: 6566
 // Name: QrCodeLoginSpotIllustration
-// Dependencies: [21, 5207, 6554, 2]
+// Dependencies: [21, 5236, 6566, 2]
 // Exports: QrCodeLoginSpotIllustration
 
-// Module 6553 (QrCodeLoginSpotIllustration)
+// Module 6565 (QrCodeLoginSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeLoginSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6554);
+  obj[0] = importDefault(6566);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const QrCodeLoginSpotIllustration = function QrCodeLoginSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

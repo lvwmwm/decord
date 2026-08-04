@@ -1,10 +1,10 @@
-// Module ID: 6771
-// Function ID: 6772
+// Module ID: 6783
+// Function ID: 6784
 // Name: PremiumModal
-// Dependencies: [19, 676, 21, 1236, 5209, 6772, 12640, 12643, 12685, 12697, 5581, 5636, 2]
+// Dependencies: [19, 676, 21, 1236, 5238, 6784, 12674, 12677, 12719, 12731, 5610, 5665, 2]
 // Exports: default
 
-// Module 6771 (PremiumModal)
+// Module 6783 (PremiumModal)
 import "noop";
 import { UserSettingsSections } from "ME";
 import { jsx } from "jsxProd";

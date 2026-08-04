@@ -1,10 +1,10 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6915
+// Function ID: 6916
 // Name: fromServer
 // Dependencies: [1900, 1901, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 6903 (fromServer)
+// Module 6915 (fromServer)
 import "fromServer";
 
 const require = arg1;
@@ -23,7 +23,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   let tmp = prototype;
   const merged = Object.assign(super.fromServer(arg0));
   const merged1 = Object.assign(arg0);
-  if (typeof prototype !== "error") {
+  if (typeof prototype !== "find") {
     HermesBuiltin.throwTypeError();
   }
   tmp = new tmp(obj, arg0, this, merged);

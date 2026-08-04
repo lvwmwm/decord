@@ -1,10 +1,10 @@
-// Module ID: 8851
-// Function ID: 8852
+// Module ID: 9266
+// Function ID: 9267
 // Name: useCurrentUser
 // Dependencies: [1874, 589, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
-// Module 8851 (useCurrentUser)
+// Module 9266 (useCurrentUser)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

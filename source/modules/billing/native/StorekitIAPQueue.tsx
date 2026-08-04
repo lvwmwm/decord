@@ -1,9 +1,9 @@
-// Module ID: 7350
-// Function ID: 7351
+// Module ID: 7362
+// Function ID: 7363
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 17, 3936, 5736, 7331, 2]
+// Dependencies: [5, 17, 3966, 5765, 7343, 2]
 
-// Module 7350 (productSK2ToIAPProduct)
+// Module 7362 (productSK2ToIAPProduct)
 import closure_2 from "set";
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import set from "DEFAULT_COUNTRY_CODE_NAME";
@@ -31,7 +31,7 @@ function productSK2ToIAPProduct(subscription) {
   if (null == subscription.subscription.introductoryOffer) {
     const _Number = Number;
     const price = subscription.price;
-    const NumberResult = Number(price.toFixed(require(5736) /* CurrencyCodes */.CurrencyExponents[subscription.currency.toLowerCase(subscription.currency)]));
+    const NumberResult = Number(price.toFixed(require(5765) /* CurrencyCodes */.CurrencyExponents[subscription.currency.toLowerCase(subscription.currency)]));
     let obj = { identifier: null, price: null, currencySymbol: null, currencyCode: null, priceString: null, countryCode: "", downloadable: false, description: null, title: null, discounts: null };
     const _String = String;
     obj[0] = String(subscription.id);
@@ -195,7 +195,7 @@ prototype["fetchProducts"] = function fetchProducts(arg0) {
               let callback = tmp7;
               callback = undefined;
               let c3 = 1;
-              let obj1 = callback(7331);
+              let obj1 = callback(7343);
               obj1 = { skus: null };
               obj1[0] = outer1_0;
               const products = obj1.getProducts(obj1);

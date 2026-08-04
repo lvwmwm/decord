@@ -1,10 +1,10 @@
-// Module ID: 12398
-// Function ID: 12399
+// Module ID: 12127
+// Function ID: 12128
 // Name: fetchCustomActivityLink
-// Dependencies: [5, 12399, 676, 12401, 530, 709, 2]
+// Dependencies: [5, 12128, 676, 12130, 530, 709, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12398 (fetchCustomActivityLink)
+// Module 12127 (fetchCustomActivityLink)
 import dispatcher from "dispatcher";
 import getOne from "getOne";
 import { Endpoints } from "ME";

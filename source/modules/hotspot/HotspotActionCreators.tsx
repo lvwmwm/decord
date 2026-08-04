@@ -1,10 +1,10 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 5747
+// Function ID: 5748
 // Name: hideHotspot
 // Dependencies: [676, 698, 709, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 5718 (hideHotspot)
+// Module 5747 (hideHotspot)
 import { AnalyticEvents } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("modules/hotspot/HotspotActionCreators.tsx");

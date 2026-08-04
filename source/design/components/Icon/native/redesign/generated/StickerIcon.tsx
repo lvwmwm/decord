@@ -1,10 +1,10 @@
-// Module ID: 7615
-// Function ID: 7616
+// Module ID: 7627
+// Function ID: 7628
 // Name: StickerIcon
-// Dependencies: [19, 21, 712, 3958, 7616, 2]
+// Dependencies: [19, 21, 712, 3988, 7628, 2]
 // Exports: StickerIcon
 
-// Module 7615 (StickerIcon)
+// Module 7627 (StickerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const StickerIcon = function StickerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7616) /* registerAsset */;
+  obj[0] = require(7628) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

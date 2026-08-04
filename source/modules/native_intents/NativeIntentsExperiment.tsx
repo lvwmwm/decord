@@ -1,9 +1,9 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16820
+// Function ID: 16821
 // Name: experiment
-// Dependencies: [4167, 2]
+// Dependencies: [4197, 2]
 
-// Module 16788 (experiment)
+// Module 16820 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "All enabled", config: { searchEnabled: true, clearEnabled: true, activityEnabled: true } }, { id: 2, label: "Clear Only", config: { searchEnabled: false, clearEnabled: true, activityEnabled: false } }, { id: 3, label: "Activities Only", config: { searchEnabled: false, clearEnabled: false, activityEnabled: true } }, { id: 4, label: "Activities and Clear", config: { searchEnabled: false, clearEnabled: true, activityEnabled: true } }];

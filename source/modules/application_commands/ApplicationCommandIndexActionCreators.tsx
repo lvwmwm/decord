@@ -1,10 +1,10 @@
-// Module ID: 8142
-// Function ID: 8143
+// Module ID: 8154
+// Function ID: 8155
 // Name: _fetchApplicationCommandIndex
 // Dependencies: [5, 676, 709, 530, 687, 698, 1351, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 8142 (_fetchApplicationCommandIndex)
+// Module 8154 (_fetchApplicationCommandIndex)
 import expandEventProperties from "expandEventProperties";
 import ME from "ME";
 
@@ -61,7 +61,7 @@ function _fetchApplicationCommandIndex() {
                   let closure_0 = arg0;
                   let c2 = 0;
                   let c3 = 0;
-                  return (/* F119200 */ function*() { ... })();
+                  return (/* F119287 */ function*() { ... })();
                 });
                 const _retry = tmp;
                 const apply = tmp.apply;

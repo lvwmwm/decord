@@ -1,9 +1,9 @@
-// Module ID: 5809
-// Function ID: 5810
+// Module ID: 5838
+// Function ID: 5839
 // Name: initialize
-// Dependencies: [4931, 1376, 1372, 1931, 676, 1379, 709, 5723, 4077, 4090, 530, 2]
+// Dependencies: [4960, 1376, 1372, 1931, 676, 1379, 709, 5752, 4107, 4120, 530, 2]
 
-// Module 5809 (initialize)
+// Module 5838 (initialize)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -37,7 +37,7 @@ function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(5723).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(5752).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -64,11 +64,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let tmp13Result = tmp13(4077);
+        let tmp13Result = tmp13(4107);
         const _location = location;
         obj = { path: null, exact: true };
-        const RouteParam = tmp13(4090).RouteParam;
-        const RouteParam2 = tmp13(4090).RouteParam;
+        const RouteParam = tmp13(4120).RouteParam;
+        const RouteParam2 = tmp13(4120).RouteParam;
         obj[0] = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj);
         const HTTP = tmp13(530).HTTP;
@@ -146,7 +146,7 @@ export default {
         let tmp9 = nextResult;
         let tmp10 = items1;
         let tmp11 = dependencyMap;
-        if (nextResult !== items1(5723).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(5752).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           let tmp12 = isStaticChannelRoute;
           let tmp13 = nextResult;
           if (!isStaticChannelRoute(tmp9)) {

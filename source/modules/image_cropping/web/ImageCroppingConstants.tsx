@@ -1,9 +1,9 @@
-// Module ID: 8069
-// Function ID: 8070
+// Module ID: 8081
+// Function ID: 8082
 // Name: UploadTypes
-// Dependencies: [8070, 2]
+// Dependencies: [8082, 2]
 
-// Module 8069 (UploadTypes)
+// Module 8081 (UploadTypes)
 import { BACKGROUND_REPLACEMENT_SIZE } from "VideoFilterType";
 
 const result = BACKGROUND_REPLACEMENT_SIZE.width / BACKGROUND_REPLACEMENT_SIZE.height;

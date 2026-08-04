@@ -1,9 +1,9 @@
-// Module ID: 5207
-// Function ID: 5208
+// Module ID: 5236
+// Function ID: 5237
 // Name: preload
-// Dependencies: [19, 17, 21, 4255, 5208, 500, 2]
+// Dependencies: [19, 17, 21, 4285, 5237, 500, 2]
 
-// Module 5207 (preload)
+// Module 5236 (preload)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -66,26 +66,41 @@ let merged = Object.assign(require("noop").memo((fade) => {
     obj.manualPlayback = manualPlayback;
     obj.fade = tmp3;
     obj.usesSmallCache = tmp4;
-    return jsx(importDefault(5208), {});
+    return jsx(importDefault(5237), {});
   }
   tmp = callback();
   tmp4 = undefined !== usesSmallCache && usesSmallCache;
 }), {
   preload(arg0) {
     let closure_0 = arg0;
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 2000;
+    }
     let promise = new Promise((arg0) => {
       const ImageManager = outer1_3.ImageManager;
       ImageManager.preload(closure_0, arg0);
     });
     const items = [promise, ];
-    promise = new Promise((arg0) => setTimeout(arg0, 2000));
+    promise = new Promise((arg0) => setTimeout(arg0, num));
     items[1] = promise;
     return Promise.race(items);
   }
 });
-FastImageAndroid.preload = (closure_0) => closure_2.prefetch(closure_0).catch(() => {
+FastImageAndroid.preload = (closure_0) => {
+  closure_0 = arg1;
+  const catchPromise = closure_2.prefetch(closure_0).catch(() => {
 
-});
+  });
+  let racePromise = catchPromise;
+  if (null != arg1) {
+    const items = [catchPromise, ];
+    const promise = new Promise((arg0) => setTimeout(arg0, closure_0));
+    items[1] = promise;
+    racePromise = Promise.race(items);
+  }
+  return racePromise;
+};
 if (set.isAndroid()) {
   merged = FastImageAndroid;
 }

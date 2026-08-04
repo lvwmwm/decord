@@ -1,31 +1,31 @@
-// Module ID: 14776
-// Function ID: 14777
+// Module ID: 14810
+// Function ID: 14811
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [6893, 7880, 13941, 6956, 13945, 13938, 1236, 1306, 10272, 2]
+// Dependencies: [6905, 7892, 13975, 6968, 13979, 13972, 1236, 1306, 10361, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 14776 (useGoreContentNonFriendsDmSettingValue)
+// Module 14810 (useGoreContentNonFriendsDmSettingValue)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useGoreContentNonFriendsDmSettingValue() {
-  const parentalControlledGoreContentSettings = require(13941) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+  const parentalControlledGoreContentSettings = require(13975) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
   let prop;
   if (parentalControlledGoreContentSettings != null) {
     prop = parentalControlledGoreContentSettings.goreContentNonFriendDm;
   }
   let tmp5 = null;
   if (null != prop) {
-    tmp5 = require(6956) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(prop)();
-    const tmpResult = require(6956) /* redactionSettingToRenderedString */;
+    tmp5 = require(6968) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(prop)();
+    const tmpResult = require(6968) /* redactionSettingToRenderedString */;
   }
   return tmp5;
 }
 function onGoreContentNonFriendsDmOnPress() {
   selectedTeenId = selectedTeenId.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(13945);
+    let obj = selectedTeenId(13979);
     obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
     const intl = selectedTeenId(1236).intl;
     obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
@@ -39,8 +39,8 @@ function onGoreContentNonFriendsDmOnPress() {
     obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
     obj[4] = items;
-    const result = selectedTeenId(13938).handleSensitiveMediaFilterPress(obj);
-    const obj2 = selectedTeenId(13938);
+    const result = selectedTeenId(13972).handleSensitiveMediaFilterPress(obj);
+    const obj2 = selectedTeenId(13972);
   }
 }
 createToggle = {

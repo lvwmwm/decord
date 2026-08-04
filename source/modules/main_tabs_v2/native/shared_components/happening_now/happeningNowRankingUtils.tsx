@@ -1,10 +1,10 @@
-// Module ID: 15062
-// Function ID: 15063
+// Module ID: 15096
+// Function ID: 15097
 // Name: cardSize
-// Dependencies: [3892, 4271, 14397, 1351, 12, 2]
+// Dependencies: [3922, 4301, 14431, 1351, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 15062 (cardSize)
+// Module 15096 (cardSize)
 import upsertRelationship from "upsertRelationship";
 import updateVoiceState from "updateVoiceState";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

@@ -1,10 +1,10 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14238
+// Function ID: 14239
 // Name: useQuestDockModeAnimatedReaction
-// Dependencies: [32, 19, 14205, 5099, 14207, 14208, 14211, 10574, 14209, 14212, 4116, 9605, 14206, 589, 687, 11101, 10646, 8756, 8757, 8761, 7096, 7095, 5102, 4223, 14214, 1959, 2]
+// Dependencies: [32, 19, 14239, 5128, 14241, 14242, 14245, 10243, 14243, 14246, 4146, 8698, 14240, 589, 687, 11086, 10403, 9434, 9435, 9439, 7108, 7107, 5131, 4253, 14248, 1959, 2]
 // Exports: useActionSheetPressHandler, useQuestDockDismissalReset, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
-// Module 14204 (useQuestDockModeAnimatedReaction)
+// Module 14238 (useQuestDockModeAnimatedReaction)
 import _slicedToArray from "_slicedToArray";
 import AdUserActionType from "AdUserActionType";
 import QuestDockMode from "QuestDockMode";
@@ -154,8 +154,8 @@ export const useQuestDockExternalOffset = function useQuestDockExternalOffset() 
   }, items1);
 };
 export const useQuestDockDismissalReset = function useQuestDockDismissalReset() {
-  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14211).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(14208).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14245).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(14242).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = React.useEffect(() => {
     let isSoftDismissedResult = activeQuestDockMode.get() !== outer1_6.SOFT_DISMISSED;

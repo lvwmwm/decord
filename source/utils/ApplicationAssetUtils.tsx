@@ -1,10 +1,10 @@
-// Module ID: 8039
-// Function ID: 8040
+// Module ID: 8051
+// Function ID: 8052
 // Name: updateAssets
-// Dependencies: [32, 5, 8040, 676, 38, 3, 530, 709, 1450, 2]
+// Dependencies: [32, 5, 8052, 676, 38, 3, 530, 709, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8039 (updateAssets)
+// Module 8051 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -736,7 +736,7 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
         applyResult = HermesBuiltin.apply(items, Math);
       }
       let str4 = "";
-      if (typeof applyResult !== "SENTRY_RELEASE") {
+      if (typeof applyResult !== "V") {
         const _HermesInternal3 = HermesInternal;
         str4 = "?size=" + require(1450) /* handleImageLoad */.getBestMediaProxySize(applyResult);
         const obj4 = require(1450) /* handleImageLoad */;

@@ -1,10 +1,10 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14055
+// Function ID: 14056
 // Name: getGiftRowDisplayInfo
-// Dependencies: [1236, 3480, 5735, 2255, 2]
+// Dependencies: [1236, 3510, 5764, 2285, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 14021 (getGiftRowDisplayInfo)
+// Module 14055 (getGiftRowDisplayInfo)
 const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
 
 export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {
@@ -12,7 +12,7 @@ export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {
 };
 export const formatGiftDate = function formatGiftDate(claimedAt) {
   const dateTimeFormat = new Intl.DateTimeFormat(require(1236) /* getSystemLocale */.intl.currentLocale, { month: "short", day: "numeric" });
-  return dateTimeFormat.format(require(3480).parseISO(claimedAt));
+  return dateTimeFormat.format(require(3510).parseISO(claimedAt));
 };
 export const getGiftSubtext = function getGiftSubtext(claimed) {
   let claimedAt;
@@ -22,7 +22,7 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
   ({ price, gifterName, offeredAt, claimedAt } = claimed);
   let formatPriceResult = null;
   if (null != price) {
-    let obj = require(5735) /* formatSingleCurrencyPrice */;
+    let obj = require(5764) /* formatSingleCurrencyPrice */;
     formatPriceResult = obj.formatPrice(price.amount, price.currency);
   }
   if (null != formatPriceResult) {
@@ -31,12 +31,12 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
       obj = { price: null, username: null };
       obj[0] = formatPriceResult;
       obj[1] = gifterName;
-      let formatToPlainStringResult = intl.formatToPlainString(importDefault(2255)["o44n/1"], obj);
+      let formatToPlainStringResult = intl.formatToPlainString(importDefault(2285)["o44n/1"], obj);
     }
     const items = [formatToPlainStringResult, ];
     const intl2 = require(1236) /* getSystemLocale */.intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp11 = importDefault(2255);
+    const tmp11 = importDefault(2285);
     if (claimed.claimed) {
       if (claimedAt == null) {
         claimedAt = offeredAt;
@@ -44,14 +44,14 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
       obj = { date: null };
       const _Intl2 = Intl;
       const dateTimeFormat = new Intl.DateTimeFormat(tmp8(1236).intl.currentLocale, { month: "short", day: "numeric" });
-      let tmp8Result = tmp8(3480);
+      let tmp8Result = tmp8(3510);
       obj[0] = dateTimeFormat.format(tmp8Result.parseISO(claimedAt));
       let formatToPlainStringResult1 = formatToPlainString(tmp11.kDyllq, obj);
     } else {
       const obj1 = { date: null };
       const _Intl = Intl;
       const dateTimeFormat1 = new Intl.DateTimeFormat(tmp8(1236).intl.currentLocale, { month: "short", day: "numeric" });
-      tmp8Result = tmp8(3480);
+      tmp8Result = tmp8(3510);
       obj1[0] = dateTimeFormat1.format(tmp8Result.parseISO(offeredAt));
       formatToPlainStringResult1 = formatToPlainString(tmp11.gAG45y, obj1);
     }

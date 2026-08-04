@@ -1,10 +1,10 @@
-// Module ID: 3872
-// Function ID: 3873
+// Module ID: 3902
+// Function ID: 3903
 // Name: isCommunicationDisabled
 // Dependencies: [2]
 // Exports: isCommunicationDisabled, isMemberCommunicationDisabled
 
-// Module 3872 (isCommunicationDisabled)
+// Module 3902 (isCommunicationDisabled)
 const result = require("set").fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledUtils.tsx");
 
 export const isCommunicationDisabled = function isCommunicationDisabled(arg0) {

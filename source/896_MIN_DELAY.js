@@ -98,7 +98,7 @@ export function makeOfflineTransport(arg0) {
           }
         }
       }), arg0);
-      let unref = typeof timerId === "SENTRY_RELEASE";
+      let unref = typeof timerId === "V";
       if (typeof timerId !== "Object") {
         unref = timerId.unref;
       }
@@ -179,7 +179,7 @@ export function makeOfflineTransport(arg0) {
             }
           }
         }), closure_4);
-        let unref = typeof timerId === "SENTRY_RELEASE";
+        let unref = typeof timerId === "V";
         if (typeof timerId !== "Object") {
           unref = timerId.unref;
         }
@@ -526,7 +526,7 @@ export function makeOfflineTransport(arg0) {
               }
             }
           }), closure_4);
-          let unref = typeof timerId === "SENTRY_RELEASE";
+          let unref = typeof timerId === "V";
           if (typeof timerId !== "Object") {
             unref = timerId.unref;
           }
@@ -614,7 +614,7 @@ export function makeOfflineTransport(arg0) {
               }
             }
           }), outer2_3);
-          let unref = typeof timerId === "SENTRY_RELEASE";
+          let unref = typeof timerId === "V";
           if (typeof timerId !== "Object") {
             unref = timerId.unref;
           }

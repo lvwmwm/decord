@@ -1,9 +1,9 @@
-// Module ID: 4167
-// Function ID: 4168
+// Module ID: 4197
+// Function ID: 4198
 // Name: createExperiment
-// Dependencies: [4168, 2]
+// Dependencies: [4198, 2]
 
-// Module 4167 (createExperiment)
+// Module 4197 (createExperiment)
 import importDefaultResult from "createExperiment";
 
 const result = require("set").fileFinishedImporting("modules/experiments/index.tsx");

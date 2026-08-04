@@ -1,10 +1,10 @@
-// Module ID: 8387
-// Function ID: 8388
+// Module ID: 9316
+// Function ID: 9317
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4255, 712, 5728, 8388, 6908, 5207, 4677, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 5757, 9317, 6920, 5236, 4706, 2]
 // Exports: default
 
-// Module 8387 (SlayerStorefrontItemCard)
+// Module 9316 (SlayerStorefrontItemCard)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

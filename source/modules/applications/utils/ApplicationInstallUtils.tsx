@@ -1,10 +1,10 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 10887
+// Function ID: 10888
 // Name: canInstallApplication
-// Dependencies: [8138, 4689, 8356, 2]
+// Dependencies: [8150, 4718, 9459, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8367 (canInstallApplication)
+// Module 10887 (canInstallApplication)
 import getIndexKey from "getIndexKey";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
 
@@ -69,7 +69,7 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     tmp = null != integrationTypesConfig;
   }
   if (tmp) {
-    tmp = require(8356) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
+    tmp = require(9459) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL in integrationTypesConfig;
   }
   return tmp;
 };
@@ -80,7 +80,7 @@ export const shouldInstallApplicationOnDemand = function shouldInstallApplicatio
   ({ applicationId, channel, commandIntegrationTypes } = arg0);
   let tmp = null != commandIntegrationTypes;
   if (tmp) {
-    tmp = !commandIntegrationTypes.includes(require(8356) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+    tmp = !commandIntegrationTypes.includes(require(9459) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
   }
   let tmp4 = !tmp;
   if (!tmp) {

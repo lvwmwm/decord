@@ -1,10 +1,10 @@
-// Module ID: 16810
-// Function ID: 16811
+// Module ID: 16842
+// Function ID: 16843
 // Name: PendingRequestRow
-// Dependencies: [19, 17, 1874, 21, 4255, 712, 1297, 589, 16808, 16811, 1416, 4251, 1236, 2517, 4783, 2255, 8878, 14040, 13994, 3956, 4664, 5926, 12414, 13999, 2]
+// Dependencies: [19, 17, 1874, 21, 4285, 712, 1297, 589, 16840, 16843, 1416, 4281, 1236, 2547, 4812, 2285, 9151, 14074, 14028, 3986, 4693, 5936, 12143, 14033, 2]
 // Exports: default
 
-// Module 16810 (PendingRequestRow)
+// Module 16842 (PendingRequestRow)
 import dispatcher from "dispatcher";
 import get_ActivityIndicator from "registerAsset";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -228,8 +228,8 @@ export default function PendingRequestList(arg0) {
   ({ pendingRequests, linkedUsersProcessed, expiresAt, onRefreshLinkCode, onInviteAnotherGuardian, onShare } = arg0);
   const tmp = createCacheKey();
   _require = tmp;
-  importDefault(13994)(expiresAt, onRefreshLinkCode);
-  let obj = _require(16808);
+  importDefault(14028)(expiresAt, onRefreshLinkCode);
+  let obj = _require(16840);
   obj = {
     pendingRequests,
     linkedUsersProcessed,
@@ -283,24 +283,24 @@ export default function PendingRequestList(arg0) {
   const items1 = [callback(c5, { style: tmp.dividerLine }), , ];
   const obj4 = { style: tmp.dividerLabel, variant: "text-sm/medium", color: "text-muted", children: null };
   let intl = tmp5(1236).intl;
-  obj4[3] = intl.string(importDefault(2517)["/SbB94"]);
-  items1[1] = callback(_require(4251).Text, obj4);
+  obj4[3] = intl.string(importDefault(2547)["/SbB94"]);
+  items1[1] = callback(_require(4281).Text, obj4);
   items1[2] = callback(c5, { style: tmp.dividerLine });
   obj2[1] = items1;
   items[1] = closure_8(c5, obj2);
   const obj6 = { style: items2, children: null };
   items2 = [, ];
   ({ card: arr3[0], row: arr3[1] } = tmp);
-  const items3 = [callback(c5, { style: tmp.inviteIconContainer, children: callback(_require(5926).PlaneIllocon, { size: 32 }) }), , ];
+  const items3 = [callback(c5, { style: tmp.inviteIconContainer, children: callback(_require(5936).PlaneIllocon, { size: 32 }) }), , ];
   const obj8 = { style: tmp.details, children: null };
   const obj9 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp5(1236).intl;
-  obj9[2] = intl2.string(importDefault(2517).z9gkwZ);
-  const items4 = [callback(_require(4251).Text, obj9), ];
+  obj9[2] = intl2.string(importDefault(2547).z9gkwZ);
+  const items4 = [callback(_require(4281).Text, obj9), ];
   const obj10 = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl3 = tmp5(1236).intl;
-  obj10[2] = intl3.string(importDefault(2517)["9t4+vC"]);
-  items4[1] = callback(_require(4251).Text, obj10);
+  obj10[2] = intl3.string(importDefault(2547)["9t4+vC"]);
+  items4[1] = callback(_require(4281).Text, obj10);
   obj8[1] = items4;
   items3[1] = closure_8(c5, obj8);
   const obj11 = { style: tmp.actions, children: null };
@@ -311,22 +311,22 @@ export default function PendingRequestList(arg0) {
   const items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj12[3] = items5;
-  obj12[4] = callback(_require(12414).ShareIcon, { size: "sm", color: tmp.declineIcon.color });
-  const items6 = [callback(_require(4783).PressableOpacity, obj12), ];
+  obj12[4] = callback(_require(12143).ShareIcon, { size: "sm", color: tmp.declineIcon.color });
+  const items6 = [callback(_require(4812).PressableOpacity, obj12), ];
   const obj14 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
   const intl5 = tmp5(1236).intl;
-  obj14[1] = intl5.string(importDefault(2517).z9gkwZ);
+  obj14[1] = intl5.string(importDefault(2547).z9gkwZ);
   obj14[2] = onInviteAnotherGuardian;
   const items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);
   obj14[3] = items7;
-  obj14[4] = callback(_require(13999).QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
-  items6[1] = callback(_require(4783).PressableOpacity, obj14);
+  obj14[4] = callback(_require(14033).QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
+  items6[1] = callback(_require(4812).PressableOpacity, obj14);
   obj11[1] = items6;
   items3[2] = closure_8(c5, obj11);
   obj6[1] = items3;
   items[2] = closure_8(c5, obj6);
   obj[1] = items;
-  return closure_8(_require(4664).Stack, obj);
+  return closure_8(_require(4693).Stack, obj);
 };
 export { PendingRequestRow };

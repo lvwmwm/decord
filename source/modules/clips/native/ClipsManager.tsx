@@ -1,9 +1,9 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16763
+// Function ID: 16764
 // Name: showClipsToast
-// Dependencies: [4309, 16732, 3956, 1236, 2]
+// Dependencies: [4339, 16764, 3986, 1236, 2]
 
-// Module 16731 (showClipsToast)
+// Module 16763 (showClipsToast)
 import { CLIPS_TOAST_DURATION } from "result";
 import "handleRTCConnectionState";
 
@@ -11,7 +11,7 @@ class ClipsManager extends tmp2 {
 }
 const prototype = ClipsManager.prototype;
 prototype["showClipsToast"] = function showClipsToast() {
-  let obj = importDefault(3956);
+  let obj = importDefault(3986);
   obj = { key: "CLIPS_IN_CALL_WARNING", content: null, toastDurationMs: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["d+41qJ"]);

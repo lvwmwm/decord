@@ -1,7 +1,7 @@
 // Module ID: 11272
 // Function ID: 11273
 // Name: map
-// Dependencies: [1218, 676, 7120, 4475, 1384, 11273, 11274, 2]
+// Dependencies: [1218, 676, 7132, 4504, 1384, 11273, 11274, 2]
 // Exports: tryCreateInjectedMessage
 
 // Module 11272 (map)
@@ -25,11 +25,11 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
     obj[3] = id.author;
     obj[4] = constants.EPHEMERAL;
     obj[5] = constants2.SENT;
-    const tmp19 = importDefault(7120)(obj);
-    const messageRecord = require(4475) /* createMinimalMessageRecord */.createMessageRecord(tmp19);
+    const tmp19 = importDefault(7132)(obj);
+    const messageRecord = require(4504) /* createMinimalMessageRecord */.createMessageRecord(tmp19);
     ({ applicationId: tmp21.applicationId, timestamp: tmp21.timestamp } = id);
     let tmp4 = messageRecord;
-    const obj9 = require(4475) /* createMinimalMessageRecord */;
+    const obj9 = require(4504) /* createMinimalMessageRecord */;
   } else {
     tmp4 = null;
     if (null != id.applicationId) {
@@ -57,12 +57,12 @@ export const tryCreateInjectedMessage = function tryCreateInjectedMessage(id, cl
                   obj[3] = id.author;
                   obj[4] = tmp3.EPHEMERAL;
                   obj[5] = constants2.SENT;
-                  tmpResult = tmp(4475);
-                  const messageRecord1 = tmpResult.createMessageRecord(importDefault(7120)(obj));
+                  tmpResult = tmp(4504);
+                  const messageRecord1 = tmpResult.createMessageRecord(importDefault(7132)(obj));
                   ({ applicationId: tmp10.applicationId, timestamp: tmp10.timestamp } = id);
                   const result = obj.set(closure_0.id, id.id);
                   const tmp6 = importDefault;
-                  const tmp9 = importDefault(7120)(obj);
+                  const tmp9 = importDefault(7132)(obj);
                   let num2 = closure_0.recipientFlags;
                   if (num2 == null) {
                     num2 = 0;

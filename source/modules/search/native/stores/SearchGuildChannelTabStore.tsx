@@ -1,9 +1,9 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 11649
+// Function ID: 11650
 // Name: search
-// Dependencies: [1932, 4267, 5166, 5097, 12, 11, 589, 709, 2]
+// Dependencies: [1932, 4297, 5195, 5126, 12, 11, 589, 709, 2]
 
-// Module 11586 (search)
+// Module 11649 (search)
 import comparator from "comparator";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { Store } from "initialize";
@@ -25,9 +25,9 @@ class GuildChannelSearchManager {
 const prototype = GuildChannelSearchManager.prototype;
 prototype["search"] = function search(query, guildId) {
   const self = this;
-  let obj = require(5097) /* NOOP */;
+  let obj = require(5126) /* NOOP */;
   const boosterMap = obj.getBoosterMap(AutocompleterResultTypes.TEXT_CHANNEL);
-  let obj1 = require(5097) /* NOOP */;
+  let obj1 = require(5126) /* NOOP */;
   obj = {
     query,
     guildId,
@@ -44,15 +44,15 @@ prototype["search"] = function search(query, guildId) {
   const merged = Object.assign(obj);
   obj.type = closure_4;
   obj.boosters = boosterMap;
-  const obj4 = importDefault(5097);
-  const queryChannelsResult = importDefault(5097).queryChannels(obj);
+  const obj4 = importDefault(5126);
+  const queryChannelsResult = importDefault(5126).queryChannels(obj);
   obj1 = {};
   const merged1 = Object.assign(obj);
   obj1.type = closure_3;
   obj1.boosters = boosterMap1;
-  const obj6 = importDefault(5097);
-  this.voiceChannels = importDefault(5097).queryChannels(obj1).map((channel) => ({ channel: channel.record }));
-  const queryChannelsResult1 = importDefault(5097).queryChannels(obj1);
+  const obj6 = importDefault(5126);
+  this.voiceChannels = importDefault(5126).queryChannels(obj1).map((channel) => ({ channel: channel.record }));
+  const queryChannelsResult1 = importDefault(5126).queryChannels(obj1);
   const obj8 = require(12) /* apply */;
   const mapped = require(12) /* apply */.chain(queryChannelsResult).map((channel) => {
     const obj = { channel: channel.record, lastMessageId: null };
@@ -130,7 +130,7 @@ const searchGuildChannelTabStore = new SearchGuildChannelTabStore(require("dispa
     ({ guildId, searchQueryString } = id);
     let value = map.get(id);
     if (value == null) {
-      if (typeof GuildChannelSearchManager !== "error") {
+      if (typeof GuildChannelSearchManager !== "find") {
         HermesBuiltin.throwTypeError();
       }
       obj = Object.create(GuildChannelSearchManager.prototype);

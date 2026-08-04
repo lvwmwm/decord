@@ -1,9 +1,9 @@
-// Module ID: 16755
-// Function ID: 16756
+// Module ID: 16787
+// Function ID: 16788
 // Name: handleAuthenticatorDelete
-// Dependencies: [5, 1218, 5200, 5712, 2]
+// Dependencies: [5, 1218, 5229, 5741, 2]
 
-// Module 16755 (handleAuthenticatorDelete)
+// Module 16787 (handleAuthenticatorDelete)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import fetchFingerprint from "fetchFingerprint";
 import "initialize";

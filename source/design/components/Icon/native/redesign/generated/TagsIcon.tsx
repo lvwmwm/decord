@@ -1,10 +1,10 @@
-// Module ID: 10521
-// Function ID: 10522
+// Module ID: 10107
+// Function ID: 10108
 // Name: TagsIcon
-// Dependencies: [19, 21, 712, 3958, 10522, 2]
+// Dependencies: [19, 21, 712, 3988, 10108, 2]
 // Exports: TagsIcon
 
-// Module 10521 (TagsIcon)
+// Module 10107 (TagsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const TagsIcon = function TagsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10522) /* registerAsset */;
+  obj[0] = require(10108) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

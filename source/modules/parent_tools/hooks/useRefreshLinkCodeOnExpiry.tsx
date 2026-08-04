@@ -1,17 +1,17 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14028
+// Function ID: 14029
 // Name: useRefreshLinkCodeOnExpiry
-// Dependencies: [19, 8566, 2]
+// Dependencies: [19, 8302, 2]
 // Exports: default
 
-// Module 13994 (useRefreshLinkCodeOnExpiry)
+// Module 14028 (useRefreshLinkCodeOnExpiry)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useRefreshLinkCodeOnExpiry.tsx");
 
 export default function useRefreshLinkCodeOnExpiry(arg0, arg1) {
   const importDefault = arg0;
-  const tmp = importDefault(8566)(arg1);
+  const tmp = importDefault(8302)(arg1);
   const dependencyMap = tmp;
   const items = [arg0, tmp];
   const effect = React.useEffect(() => {

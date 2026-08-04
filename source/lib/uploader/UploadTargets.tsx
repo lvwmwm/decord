@@ -1,10 +1,10 @@
-// Module ID: 4829
-// Function ID: 4830
+// Module ID: 4858
+// Function ID: 4859
 // Name: getCreateAttachmentURL
-// Dependencies: [1372, 676, 4793, 4789, 4830, 4832, 2]
+// Dependencies: [1372, 676, 4822, 4818, 4859, 4861, 2]
 // Exports: getUploadTarget
 
-// Module 4829 (getCreateAttachmentURL)
+// Module 4858 (getCreateAttachmentURL)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 
@@ -27,13 +27,13 @@ prototype["getMaxFileSize"] = function getMaxFileSize(arg0) {
   if (basicChannel != null) {
     guild_id = basicChannel.guild_id;
   }
-  return importAll(4793).maxFileSize(guild_id);
+  return importAll(4822).maxFileSize(guild_id);
 };
 prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
   return closure_6;
 };
 prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return require(4789) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
+  return require(4818) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
 };
 Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {
@@ -47,14 +47,14 @@ const result = require("getUploadFileSizeSum").fileFinishedImporting("lib/upload
 export const UploadTargets = obj;
 export const getUploadTarget = function getUploadTarget(target) {
   if (obj.GUILD_PRODUCT_ATTACHMENT === target) {
-    const tmp14 = new importDefault(4830)();
+    const tmp14 = new importDefault(4859)();
     return tmp14;
   } else if (tmp.GRAVITY_ATTACHMENT === target) {
-    const tmp8 = new importDefault(4832)();
+    const tmp8 = new importDefault(4861)();
     return tmp8;
   } else {
     const MESSAGE_ATTACHMENT = tmp.MESSAGE_ATTACHMENT;
-    if (typeof MessageAttachmentUploadTarget !== "error") {
+    if (typeof MessageAttachmentUploadTarget !== "find") {
       HermesBuiltin.throwTypeError();
     }
     return Object.create(MessageAttachmentUploadTarget.prototype);

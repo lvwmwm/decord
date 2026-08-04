@@ -1,10 +1,10 @@
-// Module ID: 5917
-// Function ID: 5918
+// Module ID: 5927
+// Function ID: 5928
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 1862, 1874, 676, 21, 4255, 5918, 589, 1480, 5581, 5569, 6757, 1892, 698, 709, 5757, 4575, 6760, 12720, 12727, 12732, 12740, 12745, 12749, 2]
+// Dependencies: [32, 19, 17, 1862, 1874, 676, 21, 4285, 5928, 589, 1480, 5610, 5598, 6769, 1892, 698, 709, 5786, 4604, 6772, 12754, 12761, 12766, 12774, 12779, 12783, 2]
 // Exports: default
 
-// Module 5917 (GuildBoostingMarketingOverview)
+// Module 5927 (GuildBoostingMarketingOverview)
 import _slicedToArray from "_slicedToArray";
 import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta";
 import { ScrollView } from "fetchSubscriptionPlansForSKU";
@@ -90,9 +90,9 @@ export default function GuildBoostingMarketingOverview(guildId) {
   }, items3);
   const effect1 = obj3.useEffect(() => {
     guildBoostSlots(stateFromStores[16]).wait(() => {
-      const premiumSubscriptionPlans = callback(5757).fetchPremiumSubscriptionPlans();
-      const obj = callback(5757);
-      const paymentSources = callback(4575).fetchPaymentSources();
+      const premiumSubscriptionPlans = callback(5786).fetchPremiumSubscriptionPlans();
+      const obj = callback(5786);
+      const paymentSources = callback(4604).fetchPaymentSources();
     });
   }, []);
   let tmp18 = null;

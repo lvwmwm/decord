@@ -1,9 +1,9 @@
-// Module ID: 14569
-// Function ID: 14570
+// Module ID: 14603
+// Function ID: 14604
 // Name: route
-// Dependencies: [32, 19, 676, 1369, 21, 14570, 1358, 5921, 10272, 1236, 14571, 7570, 14573, 2]
+// Dependencies: [32, 19, 676, 1369, 21, 14604, 1358, 5931, 10361, 1236, 14605, 7582, 14607, 2]
 
-// Module 14569 (route)
+// Module 14603 (route)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -21,11 +21,11 @@ createToggle = {
   useTrailing: function useAppIconSettingTrailing() {
     const obj = { dismissibleContent: null, newPremiumStyle: true };
     obj[0] = require(1358) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE;
-    return jsx(importDefault(14570), { dismissibleContent: null, newPremiumStyle: true });
+    return jsx(importDefault(14604), { dismissibleContent: null, newPremiumStyle: true });
   },
   usePreNavigationAction: function useAppIconSettingPreNavigationAction() {
     const items = [first(1358).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE];
-    const tmp = callback(first(5921).useSelectedDismissibleContent(items), 2);
+    const tmp = callback(first(5931).useSelectedDismissibleContent(items), 2);
     first = tmp[0];
     const importDefault = tmp3;
     const items1 = [first, tmp[1]];
@@ -37,14 +37,14 @@ createToggle = {
     }, items1);
   },
   usePredicate() {
-    return require(7570) /* fetchCurrentAppIcon */.isAppIconsSupported();
+    return require(7582) /* fetchCurrentAppIcon */.isAppIconsSupported();
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14573).default;
+    return require(14607).default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

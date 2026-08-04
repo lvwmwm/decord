@@ -1,10 +1,10 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8735
+// Function ID: 8736
 // Name: useAvatarDecoration
 // Dependencies: [32, 1942, 647, 2]
 // Exports: getAvatarDecoration, useAvatarDecoration
 
-// Module 8678 (useAvatarDecoration)
+// Module 8735 (useAvatarDecoration)
 import _slicedToArray from "_slicedToArray";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 

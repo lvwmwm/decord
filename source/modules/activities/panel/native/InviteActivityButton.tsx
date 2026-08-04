@@ -1,8 +1,8 @@
-// Module ID: 15938
-// Function ID: 15939
-// Dependencies: [19, 10623, 4933, 21, 4223, 15939, 1959, 589, 11089, 4666, 10376, 1236, 2]
+// Module ID: 15971
+// Function ID: 15972
+// Dependencies: [19, 10350, 4962, 21, 4253, 15972, 1959, 589, 11074, 4695, 9638, 1236, 2]
 
-// Module 15938
+// Module 15971
 import updateActivities from "updateActivities";
 import filterPlayingActivities from "filterPlayingActivities";
 import { jsx } from "jsxProd";
@@ -24,12 +24,12 @@ const memoResult = require("noop").memo(function InviteActivityButton(applicatio
       obj = { activity: stateFromStores };
       obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
     };
-    obj[1] = stateFromStores(10376);
+    obj[1] = stateFromStores(9638);
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["OzOM/q"]);
     const intl2 = tmp(1236).intl;
     obj[3] = intl2.string(tmp(1236).t["OzOM/q"]);
-    tmp4 = jsx(tmp(4666).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
+    tmp4 = jsx(tmp(4695).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
   }
   return tmp4;
 });

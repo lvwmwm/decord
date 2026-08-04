@@ -1,10 +1,10 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 12012
+// Function ID: 12013
 // Name: showInstantInviteModal
-// Dependencies: [1932, 676, 8657, 2]
+// Dependencies: [1932, 676, 8987, 2]
 // Exports: showInstantInviteModal
 
-// Module 11957 (showInstantInviteModal)
+// Module 12012 (showInstantInviteModal)
 import comparator from "comparator";
 import { InstantInviteSources } from "ME";
 

@@ -1,9 +1,9 @@
-// Module ID: 12261
-// Function ID: 12262
+// Module ID: 12348
+// Function ID: 12349
 // Name: ApplicationWidgetConfigSurface
 // Dependencies: [2]
 
-// Module 12261 (ApplicationWidgetConfigSurface)
+// Module 12348 (ApplicationWidgetConfigSurface)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetConfigSurface.tsx");
 
 export const ApplicationWidgetConfigSurface = { WIDGET_TOP: "widget_top", WIDGET_BOTTOM: "widget_bottom", ADD_WIDGET_PREVIEW: "add_widget_preview", MINI_PROFILE: "mini_profile", ACTIVITY_ACCESSORY: "activity_accessory" };

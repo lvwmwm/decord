@@ -1,9 +1,12 @@
-// Module ID: 5167
-// Function ID: 5168
+// Module ID: 5196
+// Function ID: 5197
+// Name: map
 // Dependencies: [676, 1236, 2]
 
-// Module 5167
+// Module 5196 (map)
 require("ME").AutoCompleteResultTypes;
+const items = [["game", "gameMentionInput"]];
+const map = new Map(items);
 const result = require("set").fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
 
 export default {
@@ -27,5 +30,8 @@ export default {
   },
   LAUNCHABLE_APPLICATIONS() {
     return [];
+  },
+  findAutoInsertOnSpaceMentionInlineAutocompleteType(trigger) {
+    return map.get(trigger.toLowerCase());
   }
 };

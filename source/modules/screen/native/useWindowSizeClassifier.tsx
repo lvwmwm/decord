@@ -1,15 +1,15 @@
-// Module ID: 4110
-// Function ID: 4111
+// Module ID: 4140
+// Function ID: 4141
 // Name: useWindowSizeClassifier
-// Dependencies: [4111, 2]
+// Dependencies: [4141, 2]
 // Exports: default, getWindowSizeClassifier
 
-// Module 4110 (useWindowSizeClassifier)
+// Module 4140 (useWindowSizeClassifier)
 let obj = { SMALL: 0, [0]: "SMALL", NORMAL: 1, [1]: "NORMAL", LARGE: 2, [2]: "LARGE", XLARGE: 3, [3]: "XLARGE" };
 const result = require("set").fileFinishedImporting("modules/screen/native/useWindowSizeClassifier.tsx");
 
 export default function useWindowSizeClassifier() {
-  const width = importDefault(4111)().width;
+  const width = importDefault(4141)().width;
   if (width <= 360) {
     let XLARGE = obj.SMALL;
   } else if (width <= 600) {
@@ -23,7 +23,7 @@ export default function useWindowSizeClassifier() {
 };
 export const WindowSizeClassifier = obj;
 export const getWindowSizeClassifier = function getWindowSizeClassifier() {
-  const obj = require(4111) /* useBaseAppContainerDimensions */;
+  const obj = require(4141) /* useBaseAppContainerDimensions */;
   const width = obj.getBaseAppContainerDimensions().width;
   if (width <= 360) {
     let XLARGE = obj.SMALL;

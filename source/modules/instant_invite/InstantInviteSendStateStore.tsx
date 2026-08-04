@@ -1,10 +1,10 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 9050
+// Function ID: 9051
 // Name: setSendState
 // Dependencies: [644, 705, 2]
 // Exports: setSendState
 
-// Module 11921 (setSendState)
+// Module 9050 (setSendState)
 import keys from "keys";
 
 let obj = keys.create(() => ({}));

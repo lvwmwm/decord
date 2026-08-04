@@ -1,9 +1,9 @@
-// Module ID: 6098
-// Function ID: 6099
+// Module ID: 6108
+// Function ID: 6109
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6098 (metadata)
+// Module 6108 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CrownIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/dbb0f9d6fd9152e026896b2d9550e467ab5098e100e4d37293e69f6c14a22885.png";

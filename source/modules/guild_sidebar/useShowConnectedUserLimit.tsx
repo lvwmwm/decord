@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11578
+// Function ID: 11579
 // Name: useShowConnectedUserLimit
-// Dependencies: [676, 9023, 2]
+// Dependencies: [676, 9076, 2]
 // Exports: default, useConnectedUserLimit, useConnectedUserLimitFormatted
 
-// Module 11571 (useShowConnectedUserLimit)
+// Module 11578 (useShowConnectedUserLimit)
 import { MAX_STAGE_VOICE_USER_LIMIT as closure_2 } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");
@@ -19,7 +19,7 @@ export default function useShowConnectedUserLimit(channel) {
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(9023)(channel).limit;
+  const limit = importDefault(9076)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -51,7 +51,7 @@ export const useConnectedUserLimit = function useConnectedUserLimit(arg0) {
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(9023)(channel).limit;
+  const limit = importDefault(9076)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;
@@ -83,7 +83,7 @@ export const useConnectedUserLimitFormatted = function useConnectedUserLimitForm
   if (considerMaxStageVoiceUserLimit === undefined) {
     considerMaxStageVoiceUserLimit = true;
   }
-  const limit = importDefault(9023)(channel).limit;
+  const limit = importDefault(9076)(channel).limit;
   let num = -1;
   if (channel.userLimit > 0) {
     num = channel.userLimit;

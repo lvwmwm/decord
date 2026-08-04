@@ -1,10 +1,10 @@
-// Module ID: 10590
-// Function ID: 10591
+// Module ID: 10265
+// Function ID: 10266
 // Name: LIKELY_ATO_MORE_TIPS_MODAL_KEY
 // Dependencies: [1236, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 10590 (LIKELY_ATO_MORE_TIPS_MODAL_KEY)
+// Module 10265 (LIKELY_ATO_MORE_TIPS_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/ato_alerts/Constants.tsx");
 
 export const LIKELY_ATO_MORE_TIPS_MODAL_KEY = "LIKELY_ATO_MORE_TIPS_MODAL";

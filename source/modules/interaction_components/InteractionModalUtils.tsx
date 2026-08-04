@@ -1,10 +1,10 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16337
+// Function ID: 16338
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1372, 4592, 1942, 4072, 4591, 13544, 8015, 676, 8014, 1906, 1416, 10659, 5754, 589, 5569, 11, 709, 8156, 1236, 38, 4477, 7209, 8019, 4789, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1372, 4621, 1942, 4102, 4620, 13578, 8027, 676, 8026, 1906, 1416, 10508, 5783, 589, 5598, 11, 709, 8168, 1236, 38, 4506, 7221, 8031, 4818, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16304 (getData)
+// Module 16337 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -2127,7 +2127,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4789).getAttachmentPayload(closure_0, closure_1));
+            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4818).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);
@@ -2194,7 +2194,7 @@ function _submitModal() {
 let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(8014) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(8026) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (componentStateContext != null) {
     const modal = componentStateContext.modal;
@@ -2206,9 +2206,14 @@ export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === require(1906) /* PermissionOverwriteType */.ComponentType.ACTION_ROW;
-  if (tmp6) {
-    tmp6 = first.components[0].id === id;
+  let tmp6 = type === tmp(1906).ComponentType.ACTION_ROW && first.components[0].id === id;
+  if (!tmp6) {
+    let type1;
+    if (first != null) {
+      type1 = first.type;
+    }
+    tmp6 = type1 === tmp(1906).ComponentType.LABEL && first.component.id === id;
+    const tmp8 = type1 === tmp(1906).ComponentType.LABEL && first.component.id === id;
   }
   return tmp6;
 };

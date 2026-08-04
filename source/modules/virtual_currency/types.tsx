@@ -1,9 +1,9 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 9338
+// Function ID: 9339
 // Name: BalanceWidgetMode
 // Dependencies: [2]
 
-// Module 8903 (BalanceWidgetMode)
+// Module 9338 (BalanceWidgetMode)
 const result = require("set").fileFinishedImporting("modules/virtual_currency/types.tsx");
 
 export const BalanceWidgetMode = { DEFAULT: "DEFAULT", HIGHLIGHTED: "HIGHLIGHTED", SELECTED: "SELECTED" };

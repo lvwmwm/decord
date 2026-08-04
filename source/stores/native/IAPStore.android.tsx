@@ -1,9 +1,9 @@
-// Module ID: 5738
-// Function ID: 5739
+// Module ID: 5767
+// Function ID: 5768
 // Name: updateProduct
-// Dependencies: [5739, 505, 5735, 3916, 589, 709, 2]
+// Dependencies: [5768, 505, 5764, 3946, 589, 709, 2]
 
-// Module 5738 (updateProduct)
+// Module 5767 (updateProduct)
 import GPlayConnectionState from "GPlayConnectionState";
 import { CurrencyCodes } from "sum";
 import { Store } from "initialize";
@@ -14,8 +14,8 @@ function updateProduct(currencyCode) {
   const result = currencyCode.price / 100;
   if ("BG" === c14) {
     if (formatted === CurrencyCodes.EUR) {
-      let formatDualPriceForBGResult = require(5735) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, { convertToMajorUnits: false });
-      const obj2 = require(5735) /* formatSingleCurrencyPrice */;
+      let formatDualPriceForBGResult = require(5764) /* formatSingleCurrencyPrice */.formatDualPriceForBG(result, { convertToMajorUnits: false });
+      const obj2 = require(5764) /* formatSingleCurrencyPrice */;
     }
     let obj = {};
     const merged = Object.assign(currencyCode);
@@ -24,7 +24,7 @@ function updateProduct(currencyCode) {
     obj.priceString = formatDualPriceForBGResult;
     return obj;
   }
-  obj = require(5735) /* formatSingleCurrencyPrice */;
+  obj = require(5764) /* formatSingleCurrencyPrice */;
   formatDualPriceForBGResult = obj.formatSingleCurrencyPrice(result, formatted, { convertToMajorUnits: false });
 }
 function skusLoaded(arg0) {
@@ -67,8 +67,8 @@ function skusLoaded(arg0) {
       let c13 = false;
     }
   } catch (tmp7) {
-    let result = require(3916) /* _createGatewayCheckoutContext */.captureBillingException(tmp7);
-    const obj = require(3916) /* _createGatewayCheckoutContext */;
+    let result = require(3946) /* _createGatewayCheckoutContext */.captureBillingException(tmp7);
+    const obj = require(3946) /* _createGatewayCheckoutContext */;
   }
 }
 GPlayConnectionState = GPlayConnectionState.GPlayConnectionState;

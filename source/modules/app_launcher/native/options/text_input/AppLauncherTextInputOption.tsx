@@ -1,10 +1,10 @@
-// Module ID: 11473
-// Function ID: 11474
+// Module ID: 11472
+// Function ID: 11473
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1877, 21, 4255, 712, 11060, 1906, 9512, 11470, 8358, 1297, 11474, 500, 11475, 1844, 9506, 2]
+// Dependencies: [32, 19, 17, 1877, 21, 4285, 712, 9466, 1906, 8565, 11469, 9467, 1297, 11473, 500, 11474, 1844, 8559, 2]
 // Exports: default
 
-// Module 11473 (AppLauncherTextInputOption)
+// Module 11472 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
@@ -61,7 +61,7 @@ export default function AppLauncherTextInputOption(guildId) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(11060);
+  let obj = onChangeText(9466);
   closure_5 = React.useRef({ start: 0, end: 0 });
   ref = React.useRef(null);
   let tmp14Result = option.type === onChangeText(1906).ApplicationCommandOptionType.STRING;
@@ -117,17 +117,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11470);
+  let obj1 = onChangeText(11469);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(8358).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(9467).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1297).TextInput;
   } else {
-    TextInput = guildId(11474);
+    TextInput = guildId(11473);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -170,7 +170,7 @@ export default function AppLauncherTextInputOption(guildId) {
       obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
       const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
     };
-    tmp14Result = tmp14(guildId(11475), obj1);
+    tmp14Result = tmp14(guildId(11474), obj1);
   }
   items4[1] = tmp14Result;
   obj[1] = items4;

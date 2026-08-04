@@ -1,25 +1,25 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 13640
+// Function ID: 13641
 // Name: items
-// Dependencies: [13607, 13651, 13652, 13654, 13655, 13657, 13660, 13662, 10689, 2]
+// Dependencies: [13641, 13685, 13686, 13688, 13689, 13691, 13694, 13696, 10539, 2]
 
-// Module 13606 (items)
+// Module 13640 (items)
 import merged1 from "RPC_LOCAL_SCOPE";
-import merged2 from "module_13652";
+import merged2 from "module_13686";
 import merged3 from "items";
-import merged4 from "module_13655";
+import merged4 from "module_13689";
 import merged5 from "messageEventsValidation";
 
 let obj = {};
 const merged = Object.assign(require("crossPlatformCommands").crossPlatformCommands);
 obj = {};
 const merged6 = Object.assign(require("voiceSettingsEventHandlers").voiceSettingsEventHandlers);
-obj = { server: require("module_13662"), commands: obj, events: obj, stores: [], transports: null, registerTransportsForEmbeddedPlatform: null };
-const items = [require("module_10689")];
+obj = { server: require("module_13696"), commands: obj, events: obj, stores: [], transports: null, registerTransportsForEmbeddedPlatform: null };
+const items = [require("module_10539")];
 obj[4] = items;
 obj[5] = function registerTransportsForEmbeddedPlatform() {
 
 };
-const result = require("module_13652").fileFinishedImporting("modules/rpc/native/NativeRPCImplementation.tsx");
+const result = require("module_13686").fileFinishedImporting("modules/rpc/native/NativeRPCImplementation.tsx");
 
 export default obj;

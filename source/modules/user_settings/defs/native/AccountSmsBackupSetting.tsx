@@ -1,9 +1,9 @@
-// Module ID: 13915
-// Function ID: 13916
+// Module ID: 13949
+// Function ID: 13950
 // Name: toggle
-// Dependencies: [1874, 7880, 676, 9415, 589, 13911, 1236, 13861, 13913, 4595, 4461, 9414, 1959, 9417, 12, 10272, 13862, 2]
+// Dependencies: [1874, 7892, 676, 8328, 589, 13945, 1236, 13895, 13947, 4624, 4490, 8327, 1959, 8330, 12, 10361, 13896, 2]
 
-// Module 13915 (toggle)
+// Module 13949 (toggle)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { UserFlags } from "ME";
 import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY";
@@ -20,10 +20,10 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
     const str2 = intl2.string(require(1236) /* getSystemLocale */.t["CIGa+7"]);
     let obj = { onSubmit: null, title: null, placeholder: null, closeOnSuccess: true };
     const formatted1 = intl3.string(require(1236) /* getSystemLocale */.t.wlfmlR).toUpperCase();
-    obj[0] = importDefault(13861).disableSMS;
+    obj[0] = importDefault(13895).disableSMS;
     obj[1] = formatted1;
     obj[2] = formatted;
-    importDefault(13913)(obj);
+    importDefault(13947)(obj);
     const str3 = intl3.string(require(1236) /* getSystemLocale */.t.wlfmlR);
   } else {
     if (null != user) {
@@ -33,21 +33,21 @@ let closure_6 = apply.debounce(function toggleSMS(user) {
         const str = intl.string(require(1236) /* getSystemLocale */.t.DZQe23);
         obj = { title: null };
         obj[0] = formatted2;
-        const obj3 = importDefault(4595);
-        importDefault(4595).confirm(obj).then((arg0) => {
+        const obj3 = importDefault(4624);
+        importDefault(4624).confirm(obj).then((arg0) => {
           if (arg0) {
             callback(table[7]).enableSMS();
             const obj = callback(table[7]);
           }
         });
-        const confirmResult = importDefault(4595).confirm(obj);
+        const confirmResult = importDefault(4624).confirm(obj);
       }
     }
-    obj = importDefault(4461);
+    obj = importDefault(4490);
     const obj1 = { reason: null };
-    obj1[0] = require(9417) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE;
-    obj.pushLazy(require(1959) /* asyncRequireImpl */(9414, dependencyMap.paths), obj1, closure_5);
-    const tmp5 = require(1959) /* asyncRequireImpl */(9414, dependencyMap.paths);
+    obj1[0] = require(8330) /* ChangePhoneReason */.ChangePhoneReason.USER_SETTINGS_UPDATE;
+    obj.pushLazy(require(1959) /* asyncRequireImpl */(8327, dependencyMap.paths), obj1, closure_5);
+    const tmp5 = require(1959) /* asyncRequireImpl */(8327, dependencyMap.paths);
   }
 }, 200);
 apply = {
@@ -61,8 +61,8 @@ apply = {
     const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = require(13911) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-      const tmpResult = require(13911) /* getSMSBackupDisabledMessage */;
+      sMSBackupDisabledMessage = require(13945) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = require(13945) /* getSMSBackupDisabledMessage */;
     }
     return null != sMSBackupDisabledMessage;
   },
@@ -92,8 +92,8 @@ apply = {
     const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
     let sMSBackupDisabledMessage = null;
     if (null != stateFromStores) {
-      sMSBackupDisabledMessage = require(13911) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
-      const tmpResult = require(13911) /* getSMSBackupDisabledMessage */;
+      sMSBackupDisabledMessage = require(13945) /* getSMSBackupDisabledMessage */.getSMSBackupDisabledMessage(stateFromStores);
+      const tmpResult = require(13945) /* getSMSBackupDisabledMessage */;
     }
     return sMSBackupDisabledMessage;
   },

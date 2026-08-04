@@ -1,9 +1,9 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12668
+// Function ID: 12669
 // Name: createFromServer
 // Dependencies: [1883, 1882, 2]
 
-// Module 12634 (createFromServer)
+// Module 12668 (createFromServer)
 import "toJS";
 import createdAt from "createdAt";
 
@@ -21,7 +21,7 @@ class SubscriptionGroupMemberRecord extends tmp2 {
 }
 const prototype = SubscriptionGroupMemberRecord.prototype;
 SubscriptionGroupMemberRecord["createFromServer"] = function createFromServer(user) {
-  if (typeof SubscriptionGroupMemberRecord !== "error") {
+  if (typeof SubscriptionGroupMemberRecord !== "find") {
     HermesBuiltin.throwTypeError();
   }
   const tmp2 = new SubscriptionGroupMemberRecord("Trying to call a non-function", SubscriptionGroupMemberRecord, new.target);

@@ -1,10 +1,10 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15846
+// Function ID: 15847
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4255, 15813, 712, 4783, 4251, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 15844, 712, 4812, 4281, 1236, 2]
 // Exports: default
 
-// Module 15815 (RestrictedBlockedMessageGroup)
+// Module 15846 (RestrictedBlockedMessageGroup)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -38,8 +38,8 @@ export default function RestrictedBlockedMessageGroup(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { count: messages.length };
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t["+FcYM/"], obj);
-  obj[4] = callback2(require(4251) /* Text */.Text, obj);
-  const children = [callback2(require(4783) /* PressableBase */.PressableOpacity, obj), ];
+  obj[4] = callback2(require(4281) /* Text */.Text, obj);
+  const children = [callback2(require(4812) /* PressableBase */.PressableOpacity, obj), ];
   if (mapped) {
     mapped = messages.map((id) => outer1_5(outer1_4, { children: callback(id) }, id.id));
   }

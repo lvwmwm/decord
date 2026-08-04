@@ -1,10 +1,10 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11774
+// Function ID: 11775
 // Name: usePerksCoachmarkDCF
-// Dependencies: [5921, 1358, 11707, 11714, 2]
+// Dependencies: [5931, 1358, 11768, 11775, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 11713 (usePerksCoachmarkDCF)
+// Module 11774 (usePerksCoachmarkDCF)
 const result = require("GUILD_POWERUP_NOTIFICATION_COOLDOWN").fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
 
 export const usePerksCoachmarkDCF = function usePerksCoachmarkDCF(arg0) {
@@ -14,7 +14,7 @@ export const usePerksCoachmarkDCF = function usePerksCoachmarkDCF(arg0) {
   } else {
     items1 = [];
   }
-  return require(5921) /* useSelectedDismissibleContent */.useSelectedDismissibleContent(items1);
+  return require(5931) /* useSelectedDismissibleContent */.useSelectedDismissibleContent(items1);
 };
 export const useNewPerkAvailableCoachmarkDCF = function useNewPerkAvailableCoachmarkDCF(arg0, latestVersion) {
   let prop = null;
@@ -24,15 +24,15 @@ export const useNewPerkAvailableCoachmarkDCF = function useNewPerkAvailableCoach
       prop = require(1358) /* DismissibleContent */.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK;
     }
   }
-  return require(5921) /* useSelectedDismissibleContent */.useSelectedVersionedDismissibleContent(prop, latestVersion);
+  return require(5931) /* useSelectedDismissibleContent */.useSelectedVersionedDismissibleContent(prop, latestVersion);
 };
 export const useGuildPowerupNotificationDCF = function useGuildPowerupNotificationDCF(arg0) {
-  let obj = require(5921) /* useSelectedDismissibleContent */;
+  let obj = require(5931) /* useSelectedDismissibleContent */;
   let prop = null;
   if (arg0) {
     prop = tmp(1358).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
   }
-  obj = { cooldownDurationMs: tmp(11707).GUILD_POWERUP_NOTIFICATION_COOLDOWN };
+  obj = { cooldownDurationMs: tmp(11768).GUILD_POWERUP_NOTIFICATION_COOLDOWN };
   return obj.useSelectedTimeRecurringDismissibleContent(prop, obj);
 };
 export function useNewGamesCoachmarkDC(arg0) {
@@ -54,7 +54,7 @@ export function useGameServerPricingCoachmarkDCF(arg0) {
   return items;
 }
 export const useBoostToUnlockCoachmarkDCF = function useBoostToUnlockCoachmarkDCF(arg0, id, GUILD_HEADER_TOOLTIPS) {
-  let obj = importDefault(11714);
+  let obj = importDefault(11775);
   let prop = null;
   if (arg0) {
     prop = null;
@@ -62,8 +62,8 @@ export const useBoostToUnlockCoachmarkDCF = function useBoostToUnlockCoachmarkDC
       prop = tmp2(1358).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }
-  obj = { cooldownDurationMs: tmp2(11707).BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: tmp2(11707).BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };
-  return require(5921) /* useSelectedDismissibleContent */.useSelectedTimeRecurringGuildDismissibleContent(prop, id, obj, GUILD_HEADER_TOOLTIPS);
+  obj = { cooldownDurationMs: tmp2(11768).BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: tmp2(11768).BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };
+  return require(5931) /* useSelectedDismissibleContent */.useSelectedTimeRecurringGuildDismissibleContent(prop, id, obj, GUILD_HEADER_TOOLTIPS);
 };
 export function useExpiringPowerupCoachmarkDCF(arg0, c0) {
   const items = [

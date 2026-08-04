@@ -1,10 +1,10 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 7265
+// Function ID: 7266
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 3907, 7254, 1876, 589, 6808, 7250, 6778, 6801, 2]
+// Dependencies: [19, 3937, 7266, 1876, 589, 6820, 7262, 6790, 6813, 2]
 // Exports: useIsEligibleForBogoOffer
 
-// Module 7253 (useIsEligibleForBogoOffer)
+// Module 7265 (useIsEligibleForBogoOffer)
 import noop from "noop";
 import reset from "reset";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
@@ -20,13 +20,13 @@ export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   const items1 = [reset];
   const stateFromStores1 = forceUpdate(589).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const obj2 = forceUpdate(589);
-  const premiumTrialOffer = forceUpdate(6808).usePremiumTrialOffer();
-  const obj4 = forceUpdate(6808);
-  const premiumDiscountOffer = forceUpdate(7250).usePremiumDiscountOffer();
-  const obj5 = forceUpdate(7250);
-  const isPaymentsBlocked = forceUpdate(6778).useIsPaymentsBlocked();
-  const obj6 = forceUpdate(6778);
-  forceUpdate = forceUpdate(6801).useForceUpdate();
+  const premiumTrialOffer = forceUpdate(6820).usePremiumTrialOffer();
+  const obj4 = forceUpdate(6820);
+  const premiumDiscountOffer = forceUpdate(7262).usePremiumDiscountOffer();
+  const obj5 = forceUpdate(7262);
+  const isPaymentsBlocked = forceUpdate(6790).useIsPaymentsBlocked();
+  const obj6 = forceUpdate(6790);
+  forceUpdate = forceUpdate(6813).useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {
     const endDate = stateFromStores.endDate;

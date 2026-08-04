@@ -1,10 +1,10 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 8659
+// Function ID: 8660
 // Name: useTrackOpenPopout
-// Dependencies: [19, 1372, 1931, 1877, 676, 4450, 4682, 9507, 698, 2]
+// Dependencies: [19, 1372, 1931, 1877, 676, 4479, 4711, 8560, 698, 2]
 // Exports: useTrackOpenPopout
 
-// Module 9570 (useTrackOpenPopout)
+// Module 8659 (useTrackOpenPopout)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -21,9 +21,9 @@ export const useTrackOpenPopout = (emojiId) => {
   let require;
   ({ currentGuildId, popoutData: require, nonce: importDefault, demoMode: dependencyMap } = emojiId);
   let current;
-  let merged = Object.assign(require(4450) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel.getChannel(channelId.getChannelId(currentGuildId))));
+  let merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel.getChannel(channelId.getChannelId(currentGuildId))));
   current = current.useRef({ guild_id: currentGuildId, emoji_id: emojiId.emojiId }).current;
-  importDefault(4682)(() => {
+  importDefault(4711)(() => {
     let obj = outer1_0(outer1_2[7]);
     const result = obj.initiateEmojiInteraction(outer1_6.TrackOpenPopoutUsed);
     if (!closure_2) {

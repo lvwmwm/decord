@@ -1,17 +1,17 @@
-// Module ID: 12059
-// Function ID: 12060
+// Module ID: 12116
+// Function ID: 12117
 // Name: useGuildProfileGames
-// Dependencies: [19, 4277, 4276, 1218, 589, 6990, 1351, 2]
+// Dependencies: [19, 4307, 4306, 1218, 589, 7002, 1351, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 12059 (useGuildProfileGames)
+// Module 12116 (useGuildProfileGames)
 import noop from "noop";
 import applicationId from "applicationId";
-import map from "map";
+import handleLoadMessages from "handleLoadMessages";
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
-let result = require("map").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
+let result = require("handleLoadMessages").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
 
 export default function useGuildProfileGames(games) {
   let stateFromStoresArray;
@@ -44,7 +44,7 @@ export default function useGuildProfileGames(games) {
         return map;
       }
     }, items2);
-    const items3 = [map];
+    const items3 = [handleLoadMessages];
     stateFromStoresArray = games(stateFromStoresArray[4]).useStateFromStoresArray(items3, () => {
       const gameApplicationIds = games.gameApplicationIds;
       const mapped = gameApplicationIds.map((gameId) => {
@@ -103,7 +103,7 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
   games = profile.games;
   const items = [fetchFingerprint];
   const stateFromStores = games(589).useStateFromStores(items, () => authenticated.isAuthenticated());
-  games(6990);
+  games(7002);
   if (null != games) {
     if (!stateFromStores) {
       let items1 = [];
@@ -128,7 +128,7 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
         return map;
       }
     }, items2);
-    const items3 = [map];
+    const items3 = [handleLoadMessages];
     return games(589).useStateFromStoresArray(items3, () => {
       const gameApplicationIds = games.gameApplicationIds;
       const mapped = gameApplicationIds.map((gameId) => {

@@ -1,10 +1,10 @@
-// Module ID: 10002
-// Function ID: 10003
+// Module ID: 10093
+// Function ID: 10094
 // Name: useSetMediaPostThumbnail
-// Dependencies: [19, 4592, 4591, 647, 4788, 8156, 4223, 2]
+// Dependencies: [19, 4621, 4620, 647, 4817, 8168, 4253, 2]
 // Exports: default
 
-// Module 10002 (useSetMediaPostThumbnail)
+// Module 10093 (useSetMediaPostThumbnail)
 import noop from "noop";
 import { DraftType } from "handleChanged";
 import map from "map";

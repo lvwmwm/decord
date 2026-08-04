@@ -1,10 +1,10 @@
-// Module ID: 7088
-// Function ID: 7089
+// Module ID: 7100
+// Function ID: 7101
 // Name: getOrRefreshAdSession
-// Dependencies: [687, 514, 6828, 709, 1208, 2]
+// Dependencies: [687, 514, 6840, 709, 1208, 2]
 // Exports: clearAdSession, getCurrentAdSession, getOrRefreshAdSession, isAdSessionExpired
 
-// Module 7088 (getOrRefreshAdSession)
+// Module 7100 (getOrRefreshAdSession)
 const require = arg1;
 let closure_3 = 12 * require("set").Millis.HOUR;
 let c4 = null;
@@ -28,7 +28,7 @@ export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtend
       let flag2 = true;
     } else {
       const diff = timestamp1 - tmp11.lastUsedTimestamp;
-      flag2 = diff > require(6828) /* result */.SESSION_IDLE_TIMEOUT_MILLIS || timestamp1 - tmp11.createdAtTimestamp > closure_3;
+      flag2 = diff > require(6840) /* result */.SESSION_IDLE_TIMEOUT_MILLIS || timestamp1 - tmp11.createdAtTimestamp > closure_3;
     }
     if (!flag2) {
       if (flag) {
@@ -42,7 +42,7 @@ export const getOrRefreshAdSession = function getOrRefreshAdSession(shouldExtend
   obj[0] = require(514) /* v1 */.v4();
   obj[1] = timestamp;
   obj[2] = timestamp;
-  obj[3] = require(6828) /* result */.CLIENT_SESSION_STORAGE_VERSION;
+  obj[3] = require(6840) /* result */.CLIENT_SESSION_STORAGE_VERSION;
   const obj4 = require(514) /* v1 */;
   importDefault(709).dispatch({ type: "AD_SESSION_RESET" });
   tmp9 = obj;
@@ -64,6 +64,6 @@ export const isAdSessionExpired = function isAdSessionExpired(createdAtTimestamp
     return true;
   } else {
     const diff = timestamp - createdAtTimestamp.lastUsedTimestamp;
-    return diff > require(6828) /* result */.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
+    return diff > require(6840) /* result */.SESSION_IDLE_TIMEOUT_MILLIS || timestamp - createdAtTimestamp.createdAtTimestamp > closure_3;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 9814
-// Function ID: 9815
+// Module ID: 9904
+// Function ID: 9905
 // Name: CATEGORY_ICON_SIZE
-// Dependencies: [32, 19, 17, 1862, 9782, 676, 1338, 21, 4255, 712, 3928, 4590, 4922, 698, 4783, 1297, 1416, 5632, 9794, 4224, 4225, 9601, 9602, 9422, 1236, 9815, 2]
+// Dependencies: [32, 19, 17, 1862, 9875, 676, 1338, 21, 4285, 712, 3958, 4619, 4951, 698, 4812, 1297, 1416, 5661, 9764, 4254, 4255, 8693, 8694, 8337, 1236, 9905, 2]
 // Exports: default
 
-// Module 9814 (CATEGORY_ICON_SIZE)
+// Module 9904 (CATEGORY_ICON_SIZE)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "HapticFeedbackTypes";
 import { View } from "GuildIconSizes";
@@ -224,10 +224,10 @@ export default function _default(categories) {
   const callback5 = first.useCallback((arg0, index) => outer1_14(outer1_17, { category: categories[index], index, isActive: index === categoryIndex, onPressCategory: callback2 }), items8);
   let obj = { portalHostName: "expression-footer", style: categories.style, children: null };
   const tmp17 = categoryIndex;
-  const tmp19 = categoryIndex(9601)();
+  const tmp19 = categoryIndex(8693)();
   const tmp20 = closure_15;
   obj = { estimatedListSize: "windowSize", horizontal: true, itemSize: EXPRESSION_FOOTER_HEIGHT, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.STICKER, onLayout: callback4, onScroll: callback1, placeholderConfig: tmp19, ref, scrollReporting: "callbacks", sections: memo, renderItem: callback5, showsHorizontalScrollIndicator: false, style: tmp.list };
-  const items9 = [callback(categoryIndex(9422), obj), ];
+  const items9 = [callback(categoryIndex(8337), obj), ];
   let tmp22Result = null != first && first1;
   if (tmp22Result) {
     obj = { onPress: null, accessibilityRole: "button", accessibilityLabel: null, children: null };
@@ -240,12 +240,12 @@ export default function _default(categories) {
     obj1[0] = items10;
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.guildIcon;
-    obj2[1] = tmp17(9815);
+    obj2[1] = tmp17(9905);
     obj1[1] = tmp22(categories(1297).Icon, obj2);
     obj[3] = tmp22(closure_5, obj1);
-    tmp22Result = tmp22(categories(4783).PressableOpacity, obj);
+    tmp22Result = tmp22(categories(4812).PressableOpacity, obj);
   }
   items9[1] = tmp22Result;
   obj[2] = items9;
-  return tmp20(categoryIndex(9602), obj);
+  return tmp20(categoryIndex(8694), obj);
 };

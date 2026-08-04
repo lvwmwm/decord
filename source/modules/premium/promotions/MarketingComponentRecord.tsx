@@ -1,9 +1,9 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7269
+// Function ID: 7270
 // Name: createFromServer
-// Dependencies: [1883, 7258, 1307, 2]
+// Dependencies: [1883, 7270, 1307, 2]
 
-// Module 7257 (createFromServer)
+// Module 7269 (createFromServer)
 import "toJS";
 
 const require = arg1;
@@ -51,7 +51,7 @@ MarketingComponentRecord["createFromServer"] = function createFromServer(start_d
     date3 = new Date(start_date2.end_date);
   }
   ({ id, component_type } = start_date);
-  const PremiumMarketingComponentProperties = textDecoder(7258).PremiumMarketingComponentProperties;
+  const PremiumMarketingComponentProperties = textDecoder(7270).PremiumMarketingComponentProperties;
   const fromBinary = PremiumMarketingComponentProperties.fromBinary;
   const obj2 = textDecoder(1307);
   function readerFactory(buf) {
@@ -68,7 +68,7 @@ MarketingComponentRecord["createFromServer"] = function createFromServer(start_d
   if (date1 == null) {
     tmp19 = date3;
   }
-  if (typeof MarketingComponentRecord !== "error") {
+  if (typeof MarketingComponentRecord !== "find") {
     str = "Trying to call a non-function";
     HermesBuiltin.throwTypeError();
   }

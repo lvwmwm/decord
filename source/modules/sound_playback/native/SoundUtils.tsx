@@ -1,10 +1,10 @@
-// Module ID: 10428
-// Function ID: 10429
+// Module ID: 9698
+// Function ID: 9699
 // Name: _createSound
 // Dependencies: [17, 1577, 500, 2]
 // Exports: MobileAudioSound
 
-// Module 10428 (_createSound)
+// Module 9698 (_createSound)
 import { NativeModules } from "get ActivityIndicator";
 import isMetaQuest from "isMetaQuest";
 import isMetaQuest from "isMetaQuest";
@@ -209,7 +209,7 @@ prototype2["ensureSound"] = function ensureSound() {
       let closure_0 = arg0;
       let closure_1 = arg1;
       ({ name, usage, _volume } = closure_0);
-      if (typeof outer1_4 !== "error") {
+      if (typeof outer1_4 !== "find") {
         HermesBuiltin.throwTypeError();
       }
       const fn = (arg0) => {

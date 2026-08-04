@@ -1,9 +1,9 @@
-// Module ID: 16254
-// Function ID: 16255
+// Module ID: 16287
+// Function ID: 16288
 // Name: optOutEligibilityCheck
-// Dependencies: [5716, 4327, 16255, 9679, 5715, 3928, 595, 12, 16256, 5200, 2]
+// Dependencies: [5745, 4356, 16288, 11001, 5744, 3958, 595, 12, 16289, 5229, 2]
 
-// Module 16254 (optOutEligibilityCheck)
+// Module 16287 (optOutEligibilityCheck)
 import set from "set";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -17,7 +17,7 @@ let closure_6;
 let require = arg1;
 function optOutEligibilityCheck(hotspot) {
   const _require = hotspot;
-  const InAppFeedbackStates = _require(3928).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(3958).InAppFeedbackStates;
   const tmp3 = InAppFeedbackStates.getSetting()[hotspot.feedbackType];
   let optOutExpiryTime;
   if (tmp3 != null) {
@@ -38,7 +38,7 @@ function optOutEligibilityCheck(hotspot) {
     tmp10 = !tmp5;
   }
   if (tmp10) {
-    const InAppFeedbackStates2 = _require(3928).InAppFeedbackStates;
+    const InAppFeedbackStates2 = _require(3958).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       let obj = {};
       const merged = Object.assign(arg0);
@@ -60,7 +60,7 @@ function triggerRateEligibilityCheck(chance) {
 }
 function recencyEligibilityCheck(cooldown, storageKey) {
   const _require = storageKey;
-  const InAppFeedbackStates = _require(3928).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(3958).InAppFeedbackStates;
   const tmp3 = InAppFeedbackStates.getSetting()[storageKey.feedbackType];
   let lastImpressionTime;
   if (tmp3 != null) {
@@ -88,7 +88,7 @@ function recencyEligibilityCheck(cooldown, storageKey) {
     isNaNResult = Number.isNaN(tmp7);
   }
   if (!isNaNResult) {
-    const InAppFeedbackStates2 = tmp(3928).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(3958).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       let obj = {};
       const merged = Object.assign(arg0);
@@ -171,7 +171,7 @@ obj5.storageKey = "searchResultsFeedback";
 obj5.feedbackType = FeedbackType.SEARCH_RESULTS;
 const items1 = [
   function searchResultsEligibilityCheck() {
-    return require(16256) /* useIsSearchResultsFeedbackExperimentEnabled */.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
+    return require(16289) /* useIsSearchResultsFeedbackExperimentEnabled */.getIsSearchResultsFeedbackExperimentEnabled({ location: "FeedbackManager" });
   }
 ];
 obj5.eligibilityChecks = items1;

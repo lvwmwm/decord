@@ -1,10 +1,10 @@
-// Module ID: 6275
-// Function ID: 6276
+// Module ID: 6285
+// Function ID: 6286
 // Name: GameplayAbstractUI
-// Dependencies: [21, 5207, 6276, 2]
+// Dependencies: [21, 5236, 6286, 2]
 // Exports: GameplayAbstractUI
 
-// Module 6275 (GameplayAbstractUI)
+// Module 6285 (GameplayAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameplayAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const GameplayAbstractUI = function GameplayAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6276);
+  obj[0] = importDefault(6286);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameplayAbstractUI = function GameplayAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5207), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
 };

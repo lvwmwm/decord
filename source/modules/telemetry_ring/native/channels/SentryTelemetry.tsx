@@ -1,9 +1,9 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13370
+// Function ID: 13371
 // Name: snapshotForBreadcrumbs
-// Dependencies: [13332, 13333, 2]
+// Dependencies: [13366, 13367, 2]
 
-// Module 13336 (snapshotForBreadcrumbs)
+// Module 13370 (snapshotForBreadcrumbs)
 import "append";
 import importDefaultResult1 from "TelemetryChannel";
 

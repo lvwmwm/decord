@@ -1,10 +1,10 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11061
+// Function ID: 11062
 // Name: render
-// Dependencies: [19, 17, 8486, 21, 1578, 530, 3952, 11077, 4666, 8042, 1236, 1297, 2]
+// Dependencies: [19, 17, 8825, 21, 1578, 530, 3982, 11062, 4695, 8054, 1236, 1297, 2]
 // Exports: SpotifyPlayButton, attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 11076 (render)
+// Module 11061 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import WEB_OPEN from "WEB_OPEN";
@@ -182,8 +182,8 @@ export const openUrl = function openUrl(arg0, ALBUM, album_id) {
     });
     const openURLResult = closure_4.openURL(closure_7.PLAYER_OPEN(ALBUM, album_id, true, "mobile"));
   } else {
-    catchPromise = importDefault(3952).openURL(closure_7.WEB_OPEN(ALBUM, album_id, "mobile"));
-    const obj = importDefault(3952);
+    catchPromise = importDefault(3982).openURL(closure_7.WEB_OPEN(ALBUM, album_id, "mobile"));
+    const obj = importDefault(3982);
   }
   return catchPromise;
 };
@@ -259,8 +259,8 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
   let obj = { style: activity.style, children: null };
   obj = { icon: null, text: null, size: "sm", onPress: null, grow: true };
   obj = { source: null };
-  obj[0] = importDefault(8042);
-  obj[0] = callback(activity(4666).Button.Icon, obj);
+  obj[0] = importDefault(8054);
+  obj[0] = callback(activity(4695).Button.Icon, obj);
   const intl = activity(1236).intl;
   obj[1] = intl.formatToPlainString(activity(1236).t.LEgD7t, { platform: activity.name });
   obj[3] = function onPress() {
@@ -286,7 +286,7 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
 
     });
   };
-  obj[1] = callback(activity(4666).Button, obj);
+  obj[1] = callback(activity(4695).Button, obj);
   return callback(closure_5, obj);
 };
 export { SpotifyTrack };

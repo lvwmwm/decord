@@ -1,13 +1,13 @@
-// Module ID: 11958
-// Function ID: 11959
+// Module ID: 12013
+// Function ID: 12014
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 1932, 1862, 21, 4255, 5206, 589, 1480, 5209, 1236, 4265, 4154, 5243, 5632, 1416, 4251, 9181, 4666, 9185, 2]
+// Dependencies: [5, 32, 19, 17, 1932, 1862, 21, 4285, 5235, 589, 1480, 5238, 1236, 4295, 4184, 5272, 5661, 1416, 4281, 8276, 4695, 8280, 2]
 // Exports: default
 
-// Module 11958 (ChannelPrompt)
+// Module 12013 (ChannelPrompt)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
-import module_9181 from "module_9181";
+import module_8276 from "module_8276";
 import get_ActivityIndicator from "getAvatarURL";
 import comparator from "comparator";
 import closure_9 from "createGuildRecordFromRust";

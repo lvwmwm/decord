@@ -1,10 +1,10 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 10377
+// Function ID: 10378
 // Name: prototype
-// Dependencies: [9629, 9630, 2]
+// Dependencies: [10378, 10379, 2]
 // Exports: emitCaptchaDistributionMetric, extractCaptchaPropsFromResponse
 
-// Module 9628 (prototype)
+// Module 10377 (prototype)
 import useCaptchaStore from "useCaptchaStore";
 import { CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS as closure_3 } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS";
 

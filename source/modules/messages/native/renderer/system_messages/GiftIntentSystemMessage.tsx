@@ -1,10 +1,10 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 7986
+// Function ID: 7987
 // Name: createGiftIntentSystemMessage
-// Dependencies: [4255, 712, 7975, 7870, 7983, 7853, 7856, 2]
+// Dependencies: [4285, 712, 7987, 7882, 7995, 7865, 7868, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 7974 (createGiftIntentSystemMessage)
+// Module 7986 (createGiftIntentSystemMessage)
 import createCacheKey from "createCacheKey";
 
 let closure_3 = createCacheKey.createNativeStyleProperties({ iconTintColor: require("Themes").colors.BACKGROUND_BRAND, iconDividerColor: require("Themes").colors.ICON_STRONG });
@@ -14,18 +14,18 @@ const result = require("createGiftIntentEmbed").fileFinishedImporting("modules/m
 export const createGiftIntentSystemMessage = function createGiftIntentSystemMessage(message) {
   let theme;
   ({ message, theme } = message);
-  let obj = require(7975) /* createGiftIntentEmbed */;
+  let obj = require(7987) /* createGiftIntentEmbed */;
   const giftIntentEmbed = obj.createGiftIntentEmbed(message, theme);
   if (null == giftIntentEmbed) {
     return null;
   } else {
     obj = {};
-    const merged = Object.assign(importDefault(7870)(message));
+    const merged = Object.assign(importDefault(7882)(message));
     obj.giftIntentInfo = giftIntentEmbed;
-    let tmpResult = tmp(7983);
+    let tmpResult = tmp(7995);
     obj.ephemeralIndication = tmpResult.createEphemeralIndication(message);
-    tmpResult = tmp(7853);
-    obj.iconUrl = tmpResult.getAssetUriForEmbed(importDefault(7856));
+    tmpResult = tmp(7865);
+    obj.iconUrl = tmpResult.getAssetUriForEmbed(importDefault(7868));
     ({ iconTintColor: obj2.iconTintColor, iconDividerColor: obj2.iconDividerColor } = callback(theme));
     return obj;
   }

@@ -1,10 +1,10 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14965
+// Function ID: 14966
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 14930, 4594, 14932, 14933, 4223, 14934, 1959, 10500, 4788, 8421, 10499, 1474, 2]
+// Dependencies: [5, 17, 14964, 4623, 14966, 14967, 4253, 14968, 1959, 9784, 4817, 8723, 9783, 1474, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 14931 (_getLatestVideo)
+// Module 14965 (_getLatestVideo)
 import SURVEY_CONFIGS from "SURVEY_CONFIGS";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";
@@ -152,7 +152,7 @@ function _checkAndRequestPermissions() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj3 = callback(4594);
+          let obj3 = callback(4623);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to check permissions, error: " + callback;
@@ -173,12 +173,12 @@ function _checkAndRequestPermissions() {
           if (closure_0.photosGranted) {
             let flag2 = closure_0.microphoneGranted;
             if (!flag2) {
-              obj1 = callback(4594);
+              obj1 = callback(4623);
               obj1.show({ title: "Error", body: "Microphone permission is required to record audio" });
               flag2 = false;
             }
           } else {
-            obj = callback(4594);
+            obj = callback(4623);
             obj.show({ title: "Error", body: "Photos permission is required to save recordings" });
           }
           c3 = 0;
@@ -363,7 +363,7 @@ function _stopRecordingProcess() {
         } else if (1 === tmp7) {
           c3 = 0;
           closure_0 = dependencyMap;
-          let obj3 = callback(4594);
+          let obj3 = callback(4623);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to stop screen recording, error: " + closure_0;
@@ -384,7 +384,7 @@ function _stopRecordingProcess() {
         } else {
           let flag = arg1.success;
           if (!flag) {
-            obj = callback(4594);
+            obj = callback(4623);
             obj.show({ title: "Error", body: "Failed to stop screen recording, but not error" });
             flag = false;
           }

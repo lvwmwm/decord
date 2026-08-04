@@ -1,9 +1,9 @@
-// Module ID: 4364
-// Function ID: 4365
+// Module ID: 4393
+// Function ID: 4394
 // Name: WantsVideoQuality
-// Dependencies: [4316, 4365, 2]
+// Dependencies: [4345, 4394, 2]
 
-// Module 4364 (WantsVideoQuality)
+// Module 4393 (WantsVideoQuality)
 import DesktopSources from "DesktopSources";
 
 let VideoQualityMode;
@@ -31,7 +31,7 @@ class WantsVideoQuality {
       capture = global.capture;
       tmp3 = new.target;
       tmp2 = VideoQuality;
-      if (typeof VideoQuality !== "error") {
+      if (typeof VideoQuality !== "find") {
         str2 = "Trying to call a non-function";
         throwTypeErrorResult = HermesBuiltin.throwTypeError();
       }
@@ -47,7 +47,7 @@ class WantsVideoQuality {
       encode = global.encode;
       tmp8 = new.target;
       tmp7 = VideoQuality;
-      if (typeof VideoQuality !== "error") {
+      if (typeof VideoQuality !== "find") {
         str3 = "Trying to call a non-function";
         throwTypeErrorResult1 = HermesBuiltin.throwTypeError();
       }

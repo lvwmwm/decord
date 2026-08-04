@@ -1,10 +1,10 @@
-// Module ID: 8853
-// Function ID: 8854
+// Module ID: 9269
+// Function ID: 9270
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsProfileFrameGiftingEnabled, useIsProfileFrameGiftingEnabled
 
-// Module 8853 (apexExperiment)
+// Module 9269 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-profile-frame-gifting", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

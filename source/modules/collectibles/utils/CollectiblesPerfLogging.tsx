@@ -1,10 +1,10 @@
-// Module ID: 6946
-// Function ID: 6947
+// Module ID: 6958
+// Function ID: 6959
 // Name: CollectiblesShopPerfCheckpoint
 // Dependencies: [676, 698, 2]
 // Exports: trackShopPerf
 
-// Module 6946 (CollectiblesShopPerfCheckpoint)
+// Module 6958 (CollectiblesShopPerfCheckpoint)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/collectibles/utils/CollectiblesPerfLogging.tsx");

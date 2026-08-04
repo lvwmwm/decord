@@ -1,9 +1,9 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5819
+// Function ID: 5820
 // Name: getFpMessageInfo
-// Dependencies: [687, 589, 11, 5791, 709, 2]
+// Dependencies: [687, 589, 11, 5820, 709, 2]
 
-// Module 5790 (getFpMessageInfo)
+// Module 5819 (getFpMessageInfo)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -54,7 +54,7 @@ Object.defineProperty(prototype, "validContentScanVersion", {
       const _Math = Math;
       return Math.min(num2, 4);
     }
-    obj = require(5791) /* apexExperiment */;
+    obj = require(5820) /* apexExperiment */;
   },
   set: undefined
 });

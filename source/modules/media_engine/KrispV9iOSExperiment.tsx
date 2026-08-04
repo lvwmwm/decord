@@ -1,10 +1,10 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 13080
+// Function ID: 13081
 // Name: getKrispV9iOSModels
 // Dependencies: [1452, 2]
 // Exports: getKrispV9iOSModels
 
-// Module 13046 (getKrispV9iOSModels)
+// Module 13080 (getKrispV9iOSModels)
 import ApexExperiment from "ApexExperiment";
 
 const items = [{ name: "small_NC_8k", maxSampleRate: 8000, filename: "krisp-nc-o-nb-v2.kef" }, { name: "small_NC", maxSampleRate: 16000, filename: "krisp-nc-o-lite-v1.kef" }, { name: "full_NC", maxSampleRate: 96000, filename: "krisp-nc-o-med-v7-fp16.kef" }];

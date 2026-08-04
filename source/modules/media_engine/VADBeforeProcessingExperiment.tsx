@@ -1,10 +1,10 @@
-// Module ID: 12973
-// Function ID: 12974
+// Module ID: 13007
+// Function ID: 13008
 // Name: getVADBeforeProcessingExperimentConfig
 // Dependencies: [1349, 2]
 // Exports: getVADBeforeProcessingExperimentConfig
 
-// Module 12973 (getVADBeforeProcessingExperimentConfig)
+// Module 13007 (getVADBeforeProcessingExperimentConfig)
 let obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = require("getUnitId")({ kind: "user", name: "2025-10-vad-before-processing", defaultConfig: { enabled: false }, variations: obj });

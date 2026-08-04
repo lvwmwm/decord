@@ -1,10 +1,10 @@
-// Module ID: 10178
-// Function ID: 10179
+// Module ID: 10961
+// Function ID: 10962
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 1946, 1882, 4095, 6977, 676, 1301, 5063, 21, 4255, 712, 5062, 10179, 4937, 1416, 4101, 1297, 10182, 10183, 3959, 10184, 10185, 4224, 5609, 3955, 1236, 8511, 4450, 3952, 4783, 4251, 3967, 589, 6859, 10186, 2]
+// Dependencies: [19, 17, 1946, 1882, 4125, 6989, 676, 1301, 5092, 21, 4285, 712, 5091, 10962, 4966, 1416, 4131, 1297, 10965, 10966, 3989, 10967, 10968, 4254, 5638, 3985, 1236, 8854, 4479, 3982, 4812, 4281, 3997, 589, 6871, 10969, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 10178 (LegacyUserProfileConnections)
+// Module 10961 (LegacyUserProfileConnections)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "Button";
 import _getSystemLocale from "_getSystemLocale";
@@ -365,7 +365,7 @@ class ConnectedApplicationUserRoleAccount {
             let obj = { style: _undefined.connectedAccountPoweredByText, children: null };
             let tmp5 = null;
             if (null != applicationRoleConnection.application.bot) {
-              obj = { style: null, user: null, size: null, guildId: "Array" };
+              obj = { style: null, user: null, size: null, guildId: "add" };
               obj[0] = tmp3.connectedAccountPoweredByAvatar;
               const tmp12 = new outer1_7(tmp4.application.bot);
               obj[1] = tmp12;
@@ -532,8 +532,8 @@ export { ConnectedUserAccount };
 export { ConnectedApplicationUserRoleAccount };
 export const useAppplicationRoleConnectionItems = function useAppplicationRoleConnectionItems(arr) {
   const _require = arg1;
-  const theme = _require(3967).useThemeContext().theme;
-  const obj = _require(3967);
+  const theme = _require(3997).useThemeContext().theme;
+  const obj = _require(3997);
   const items = [_getSystemLocale];
   const dependencyMap = _require(589).useStateFromStores(items, () => _getSystemLocale.locale);
   return arr.map((applicationRoleConnection) => {

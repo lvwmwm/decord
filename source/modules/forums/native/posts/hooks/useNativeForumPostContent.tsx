@@ -1,7 +1,7 @@
 // Module ID: 11328
 // Function ID: 11329
 // Name: useNativeForumPostContent
-// Dependencies: [676, 4255, 1236, 5770, 4590, 2]
+// Dependencies: [676, 4285, 1236, 5799, 4619, 2]
 // Exports: default
 
 // Module 11328 (useNativeForumPostContent)
@@ -28,7 +28,7 @@ export default function useNativeForumPostContent(arg0) {
     return obj;
   } else {
     if (null != message) {
-      if (importDefault(5770)(message)) {
+      if (importDefault(5799)(message)) {
         obj = { content: null, style: null, variant: "text-sm/normal" };
         obj[0] = messageContent;
         obj[1] = tmp.italics;
@@ -103,7 +103,7 @@ export default function useNativeForumPostContent(arg0) {
                 }
                 tmp14 = MessageFlags;
               }
-              obj5 = require(4590) /* getStickerExtensionFromFormatType */;
+              obj5 = require(4619) /* getStickerExtensionFromFormatType */;
             }
           }
         }

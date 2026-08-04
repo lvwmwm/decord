@@ -1,10 +1,10 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15085
+// Function ID: 15086
 // Name: useMessagesFlatData
-// Dependencies: [19, 15042, 15052, 15090, 15091, 2]
+// Dependencies: [19, 15076, 15086, 15124, 15125, 2]
 // Exports: default
 
-// Module 15051 (useMessagesFlatData)
+// Module 15085 (useMessagesFlatData)
 import noop from "noop";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 10339
+// Function ID: 10340
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4255, 8387, 4251, 1236, 8389, 3193, 2]
+// Dependencies: [19, 17, 21, 4285, 9316, 4281, 1236, 10340, 3223, 2]
 // Exports: default
 
-// Module 8386 (WarningBox)
+// Module 10339 (WarningBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,11 +27,11 @@ function WarningBox(application) {
     let name = importDefault;
     let BMMo2K = dependencyMap;
     let obj = { look: null, style: null, children: null };
-    obj[0] = require(8389) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj[0] = require(10340) /* InfoBox */.InfoBoxLooks.WARNING;
     obj[1] = tmp.warningBox;
     const intl = require(1236) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3193).BMMo2K;
+      BMMo2K = name(3223).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {
@@ -56,9 +56,9 @@ function WarningBox(application) {
       obj[2] = intl.format(tmp6(1236).t["3T0cpx"], {});
       tmp7 = obj;
     }
-    closure_4(importDefault(8389), tmp7);
+    closure_4(importDefault(10340), tmp7);
     const tmp3 = closure_4;
-    const tmp5 = importDefault(8389);
+    const tmp5 = importDefault(10340);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -84,7 +84,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     obj[0] = tmp.container;
     obj = { sku: null };
     obj[0] = sku;
-    const items = [callback(importDefault(8387), obj), , ];
+    const items = [callback(importDefault(9316), obj), , ];
     obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: null, children: null };
     obj[2] = tmp.text;
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -97,7 +97,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     }
     obj1[2] = name;
     obj[3] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["2tBYtA"], obj1);
-    items[1] = callback(require(4251) /* Text */.Text, obj);
+    items[1] = callback(require(4281) /* Text */.Text, obj);
     const obj2 = { canStartAuthorization: null, hasAccountLinked: null, mobileAccountLinkingDisabled: null, sku: null, application: null };
     obj2[0] = canStartAuthorization;
     obj2[1] = hasAccountLinked;

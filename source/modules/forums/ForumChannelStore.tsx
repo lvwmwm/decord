@@ -1,7 +1,7 @@
 // Module ID: 11304
 // Function ID: 11305
 // Name: set
-// Dependencies: [1372, 1382, 1381, 1383, 705, 38, 7139, 644, 589, 2]
+// Dependencies: [1372, 1382, 1381, 1383, 705, 38, 7151, 644, 589, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
 // Module 11304 (set)
@@ -81,7 +81,7 @@ let closure_6 = function ForumChannelStoreState(set, get) {
   return obj;
 }.prototype;
 let closure_7 = keys.create((set, get) => {
-  if (typeof closure_6 !== "error") {
+  if (typeof closure_6 !== "find") {
     HermesBuiltin.throwTypeError();
   }
   let obj = Object.create(closure_6.prototype);

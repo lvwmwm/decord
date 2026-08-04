@@ -1,9 +1,9 @@
-// Module ID: 11605
-// Function ID: 11606
+// Module ID: 11668
+// Function ID: 11669
 // Name: num2
-// Dependencies: [19, 17, 4247, 5310, 1877, 21, 4255, 500, 712, 589, 4783, 5272, 1416, 9510, 1474, 3900, 7874, 9506, 7130, 7564, 2]
+// Dependencies: [19, 17, 4277, 5339, 1877, 21, 4285, 500, 712, 589, 4812, 5301, 1416, 8563, 1474, 3930, 7886, 8559, 7142, 7576, 2]
 
-// Module 11605 (num2)
+// Module 11668 (num2)
 import importAllResult from "ReactionIcon";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -106,9 +106,9 @@ let closure_13 = importAllResult.memo((emoji) => {
     url = emoji.url;
   }
   obj1[4] = url;
-  obj[1] = closure_9(importDefault(5272), obj1);
+  obj[1] = closure_9(importDefault(5301), obj1);
   obj[4] = closure_9(View, obj);
-  return closure_9(emoji(4783).PressableOpacity, obj);
+  return closure_9(emoji(4812).PressableOpacity, obj);
 });
 const obj8 = { height: 12, width: 12, color: require("Themes").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 let result = set.fileFinishedImporting("modules/double_tap_to_react/native/SelectDoubleTapEmojiRow.tsx");

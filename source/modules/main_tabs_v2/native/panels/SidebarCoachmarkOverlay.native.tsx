@@ -1,10 +1,10 @@
-// Module ID: 15009
-// Function ID: 15010
+// Module ID: 15043
+// Function ID: 15044
 // Name: SidebarCoachmarkOverlayLayer
-// Dependencies: [32, 19, 17, 676, 21, 5569, 5570, 2]
+// Dependencies: [32, 19, 17, 676, 21, 5598, 5599, 2]
 // Exports: SidebarCoachmarkOverlay
 
-// Module 15009 (SidebarCoachmarkOverlayLayer)
+// Module 15043 (SidebarCoachmarkOverlayLayer)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -53,7 +53,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/m
 export const SidebarCoachmarkOverlayContext = context;
 export const SidebarCoachmarkOverlay = function SidebarCoachmarkOverlay(enabled) {
   enabled = enabled.enabled;
-  const tmp = importDefault(5569)(() => {
+  const tmp = importDefault(5598)(() => {
     const layerContextManager = new callback(table[6]).LayerContextManager();
     return layerContextManager;
   });

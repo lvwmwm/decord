@@ -1,10 +1,10 @@
-// Module ID: 8872
-// Function ID: 8873
+// Module ID: 9286
+// Function ID: 9287
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 5730, 8105, 8873, 589, 6979, 7002, 12, 2]
+// Dependencies: [19, 5759, 8117, 9287, 589, 6991, 7014, 12, 2]
 // Exports: default
 
-// Module 8872 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 9286 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import noop from "noop";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 

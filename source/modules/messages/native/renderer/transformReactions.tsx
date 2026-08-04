@@ -1,10 +1,10 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7875
+// Function ID: 7876
 // Name: transformReactions
-// Dependencies: [7859, 3900, 1416, 3894, 7864, 500, 1208, 2]
+// Dependencies: [7871, 3930, 1416, 3924, 7876, 500, 1208, 2]
 // Exports: default
 
-// Module 7863 (transformReactions)
+// Module 7875 (transformReactions)
 const result = require("getAvatarURL").fileFinishedImporting("modules/messages/native/renderer/transformReactions.tsx");
 
 export default function transformReactions(arg0) {
@@ -12,8 +12,8 @@ export default function transformReactions(arg0) {
   let require;
   ({ reactions, animateEmoji: require } = arg0);
   let closure_1;
-  closure_1 = require(7859) /* apexExperiment */.shouldSkipAccessibilityLabels();
-  let obj = require(7859) /* apexExperiment */;
+  closure_1 = require(7871) /* apexExperiment */.shouldSkipAccessibilityLabels();
+  let obj = require(7871) /* apexExperiment */;
   return reactions.flatMap((emoji) => {
     emoji = emoji.emoji;
     const merged = Object.assign(emoji, Object.create(null));

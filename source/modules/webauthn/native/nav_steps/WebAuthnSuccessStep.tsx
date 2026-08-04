@@ -1,10 +1,10 @@
-// Module ID: 13859
-// Function ID: 13860
+// Module ID: 13893
+// Function ID: 13894
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 1480, 5209, 13844, 13860, 1236, 2]
+// Dependencies: [19, 21, 1480, 5238, 13878, 13894, 1236, 2]
 // Exports: default
 
-// Module 13859 (WebAuthnSuccessStep)
+// Module 13893 (WebAuthnSuccessStep)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function WebAuthnSuccessStep() {
   obj = { onGenerate: null, headerLabel: null };
   const intl = navigation(1236).intl;
   obj[1] = intl.format(navigation(1236).t.iVTs6i, {});
-  return jsx(importDefault(13860), { onGenerate: null, headerLabel: null });
+  return jsx(importDefault(13894), { onGenerate: null, headerLabel: null });
 };

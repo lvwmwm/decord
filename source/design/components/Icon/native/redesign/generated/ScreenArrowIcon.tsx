@@ -1,10 +1,10 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11803
+// Function ID: 11804
 // Name: ScreenArrowIcon
-// Dependencies: [19, 21, 712, 3958, 10880, 2]
+// Dependencies: [19, 21, 712, 3988, 10732, 2]
 // Exports: ScreenArrowIcon
 
-// Module 11742 (ScreenArrowIcon)
+// Module 11803 (ScreenArrowIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ScreenArrowIcon = function ScreenArrowIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10880) /* registerAsset */;
+  obj[0] = require(10732) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

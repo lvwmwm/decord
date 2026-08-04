@@ -1,9 +1,9 @@
-// Module ID: 13637
-// Function ID: 13638
+// Module ID: 13671
+// Function ID: 13672
 // Name: addRegularStoreListing
-// Dependencies: [1946, 13638, 589, 1351, 709, 2]
+// Dependencies: [1946, 13672, 589, 1351, 709, 2]
 
-// Module 13637 (addRegularStoreListing)
+// Module 13671 (addRegularStoreListing)
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
 import { Store } from "initialize";

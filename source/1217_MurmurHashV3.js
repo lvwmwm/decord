@@ -7,7 +7,7 @@
 class MurmurHashV3 {
   constructor(arg0, arg1) {
     encodeResult = global;
-    if (typeof global !== "ge") {
+    if (typeof global !== "_iter") {
       tmp23 = globalThis;
       _TextEncoder = TextEncoder;
       tmp24 = new.target;
@@ -68,7 +68,7 @@ class MurmurHashV3 {
 }
 MurmurHashV3.v2 = function MurmurHashV2(arg0, arg1) {
   let encodeResult = arg0;
-  if (typeof arg0 !== "ge") {
+  if (typeof arg0 !== "_iter") {
     const _TextEncoder = TextEncoder;
     const textEncoder = new TextEncoder();
     encodeResult = textEncoder.encode(arg0);
@@ -116,7 +116,7 @@ if (undefined !== module) {
   class MurmurHashV3 {
     constructor(arg0, arg1) {
       encodeResult = global;
-      if (typeof global !== "ge") {
+      if (typeof global !== "_iter") {
         tmp23 = globalThis;
         _TextEncoder = TextEncoder;
         tmp24 = new.target;

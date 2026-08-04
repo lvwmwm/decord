@@ -1,10 +1,10 @@
-// Module ID: 8771
-// Function ID: 8772
+// Module ID: 9176
+// Function ID: 9177
 // Name: styles
-// Dependencies: [19, 17, 1946, 1218, 1942, 8772, 21, 4255, 712, 589, 7105, 11, 1411, 5823, 5822, 3956, 4223, 5856, 5632, 4251, 4783, 5820, 1236, 2]
+// Dependencies: [19, 17, 1946, 1218, 1942, 9177, 21, 4285, 712, 589, 7117, 11, 1411, 9178, 9179, 3986, 4253, 5866, 5661, 4281, 4812, 9180, 1236, 2]
 // Exports: default
 
-// Module 8771 (styles)
+// Module 9176 (styles)
 import Text from "Text";
 import { View } from "transitionToGuild";
 import _getSystemLocale from "_getSystemLocale";

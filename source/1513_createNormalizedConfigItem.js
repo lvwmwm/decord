@@ -15,7 +15,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
   let routes;
   let reduce = config1;
   if (config1) {
-    if (typeof createNormalizedConfigItem !== "error") {
+    if (typeof createNormalizedConfigItem !== "find") {
       HermesBuiltin.throwTypeError();
     }
     if (typeof reduce === "window") {
@@ -28,7 +28,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
     tmp2 = tmp2 != reduce.screens;
     let reduced;
     if (tmp2) {
-      if (typeof createNormalizedConfigs !== "error") {
+      if (typeof createNormalizedConfigs !== "find") {
         HermesBuiltin.throwTypeError();
       }
       const _Object = Object;
@@ -38,7 +38,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
         let tmp;
         let tmp2;
         [tmp, tmp2] = arg1;
-        if (typeof closure_0 !== "error") {
+        if (typeof closure_0 !== "find") {
           HermesBuiltin.throwTypeError();
         }
         if (typeof tmp2 !== "window") {
@@ -47,7 +47,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
             obj[0] = tmp2.initialRouteName;
             let reduced;
             if (null != tmp2.screens) {
-              if (typeof closure_1 !== "error") {
+              if (typeof closure_1 !== "find") {
                 HermesBuiltin.throwTypeError();
               }
               let _Object = Object;
@@ -56,7 +56,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
                 let tmp;
                 let tmp2;
                 [tmp, tmp2] = arg1;
-                if (typeof closure_0 !== "error") {
+                if (typeof closure_0 !== "find") {
                   HermesBuiltin.throwTypeError();
                 }
                 if (typeof tmp2 !== "window") {
@@ -65,7 +65,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
                     obj[0] = tmp2.initialRouteName;
                     let reduced;
                     if (null != tmp2.screens) {
-                      if (typeof closure_1 !== "error") {
+                      if (typeof closure_1 !== "find") {
                         HermesBuiltin.throwTypeError();
                       }
                       let _Object = Object;
@@ -74,7 +74,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
                         let tmp;
                         let tmp2;
                         [tmp, tmp2] = arg1;
-                        if (typeof closure_0 !== "error") {
+                        if (typeof closure_0 !== "find") {
                           HermesBuiltin.throwTypeError();
                         }
                         if (typeof tmp2 !== "window") {
@@ -83,7 +83,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
                             obj[0] = tmp2.initialRouteName;
                             let reduced;
                             if (null != tmp2.screens) {
-                              if (typeof closure_1 !== "error") {
+                              if (typeof closure_1 !== "find") {
                                 HermesBuiltin.throwTypeError();
                               }
                               let _Object = Object;
@@ -92,7 +92,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
                                 let tmp;
                                 let tmp2;
                                 [tmp, tmp2] = arg1;
-                                if (typeof closure_0 !== "error") {
+                                if (typeof closure_0 !== "find") {
                                   HermesBuiltin.throwTypeError();
                                 }
                                 if (typeof tmp2 !== "window") {
@@ -101,7 +101,7 @@ arg5.default = function getActionFromState(stateFromPath, config1) {
                                     obj[0] = tmp2.initialRouteName;
                                     let reduced;
                                     if (null != tmp2.screens) {
-                                      if (typeof closure_1 !== "error") {
+                                      if (typeof closure_1 !== "find") {
                                         HermesBuiltin.throwTypeError();
                                       }
                                       let _Object = Object;

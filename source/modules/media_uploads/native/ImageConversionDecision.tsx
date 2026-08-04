@@ -1,10 +1,10 @@
-// Module ID: 4818
-// Function ID: 4819
+// Module ID: 4847
+// Function ID: 4848
 // Name: isPhotoKitAsset
-// Dependencies: [500, 4819, 2]
+// Dependencies: [500, 4848, 2]
 // Exports: isHeicUTI, isPhotoKitAsset, shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 4818 (isPhotoKitAsset)
+// Module 4847 (isPhotoKitAsset)
 const result = require("set").fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
 
 export const isPhotoKitAsset = function isPhotoKitAsset(closure_0, outer1_1) {
@@ -88,15 +88,15 @@ export const shouldConvertToJPG = function shouldConvertToJPG(closure_0, outer1_
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const supportedExtensions = tmp14(4819).getSupportedExtensions();
+              const supportedExtensions = tmp14(4848).getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
                   return true;
                 }
               }
-              const tmp14Result = tmp14(4819);
+              const tmp14Result = tmp14(4848);
             }
-            obj2 = importDefault(4819);
+            obj2 = importDefault(4848);
             tmp14 = importDefault;
           }
           return false;

@@ -1,9 +1,9 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16733
+// Function ID: 16734
 // Name: _createGroupFromStore
-// Dependencies: [32, 5, 19, 16658, 14308, 676, 21, 14315, 14330, 3955, 1236, 503, 4450, 16670, 16653, 16671, 2]
+// Dependencies: [32, 5, 19, 16690, 14342, 676, 21, 14349, 14364, 3985, 1236, 503, 4479, 16702, 16685, 16703, 2]
 
-// Module 16701 (_createGroupFromStore)
+// Module 16733 (_createGroupFromStore)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
 import noop from "noop";

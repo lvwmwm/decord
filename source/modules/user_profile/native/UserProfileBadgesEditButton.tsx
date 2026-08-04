@@ -1,10 +1,10 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13836
+// Function ID: 13837
 // Name: UserProfileBadgesEditButton
-// Dependencies: [19, 17, 8440, 21, 4255, 712, 13803, 4223, 13804, 1959, 13805, 1236, 13799, 4251, 2]
+// Dependencies: [19, 17, 8707, 21, 4285, 712, 13837, 4253, 13838, 1959, 13839, 1236, 13833, 4281, 2]
 // Exports: default
 
-// Module 13802 (UserProfileBadgesEditButton)
+// Module 13836 (UserProfileBadgesEditButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getBadgeAssetFromCDN } from "USER_PROFILE_TOOLTIP_DELAY";
@@ -31,7 +31,7 @@ export default function UserProfileBadgesEditButton(badges) {
   let _require;
   const tmp = createCacheKey();
   _require = tmp;
-  let obj = _require(13803);
+  let obj = _require(13837);
   const isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "UserProfileBadgesEditButton" });
   const callback = React.useCallback(() => {
     callback(closure_2[7]).openLazy(_undefined(closure_2[9])(closure_2[8], closure_2.paths), "Hide Badges", {});
@@ -53,7 +53,7 @@ export default function UserProfileBadgesEditButton(badges) {
       obj1[4] = callback;
       const intl3 = tmp2(1236).intl;
       obj1[5] = intl3.string(tmp2(1236).t.XMDvpN);
-      obj[1] = callback(tmp2(4251).Text, obj1);
+      obj[1] = callback(tmp2(4281).Text, obj1);
       const obj2 = { style: null, "aria-hidden": true, children: null };
       obj2[0] = tmp.content;
       const items = [
@@ -73,7 +73,7 @@ export default function UserProfileBadgesEditButton(badges) {
         const obj3 = { variant: "text-md/normal", children: null };
         const _HermesInternal = HermesInternal;
         obj3[1] = "+" + diff;
-        tmp11Result = tmp11(tmp2(4251).Text, obj3);
+        tmp11Result = tmp11(tmp2(4281).Text, obj3);
       }
       items[1] = tmp11Result;
       obj2[2] = items;
@@ -82,7 +82,7 @@ export default function UserProfileBadgesEditButton(badges) {
       obj4[0] = intl.formatToPlainString(tmp2(1236).t.AdyOTw, obj);
       obj[3] = obj4;
       obj[4] = tmp6;
-      return callback(tmp2(13799).UserProfileEditFormButton, obj);
+      return callback(tmp2(13833).UserProfileEditFormButton, obj);
     }
   }
   return null;

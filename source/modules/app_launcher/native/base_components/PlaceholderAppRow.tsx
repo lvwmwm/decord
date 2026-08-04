@@ -1,10 +1,10 @@
-// Module ID: 11388
-// Function ID: 11389
+// Module ID: 11389
+// Function ID: 11390
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 4255, 712, 11353, 5286, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 11353, 5315, 2]
 // Exports: default
 
-// Module 11388 (PlaceholderAppRow)
+// Module 11389 (PlaceholderAppRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -53,5 +53,5 @@ export default function PlaceholderAppRow(isFirstRow) {
   obj[6] = function onPress() {
 
   };
-  return jsx(require(5286) /* TableRowInner */.TableRow, { style: tmp.loadingAppIcon });
+  return jsx(require(5315) /* TableRowInner */.TableRow, { style: tmp.loadingAppIcon });
 };

@@ -1,9 +1,9 @@
-// Module ID: 8074
-// Function ID: 8075
+// Module ID: 8086
+// Function ID: 8087
 // Name: AssetOriginTypes
 // Dependencies: [2]
 
-// Module 8074 (AssetOriginTypes)
+// Module 8086 (AssetOriginTypes)
 const result = require("set").fileFinishedImporting("modules/recent_avatars/RecentAvatarsTypes.tsx");
 
 export const AssetOriginTypes = { NEW_ASSET: "NEW_ASSET", EDITED_ARCHIVED_ASSET: "EDITED_ARCHIVED_ASSET", ARCHIVED_ASSET: "ARCHIVED_ASSET" };

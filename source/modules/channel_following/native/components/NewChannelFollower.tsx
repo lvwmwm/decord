@@ -1,10 +1,10 @@
-// Module ID: 10551
-// Function ID: 10552
-// Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 1372, 1932, 1862, 3883, 5093, 676, 21, 4255, 712, 7313, 4191, 589, 4446, 4682, 4101, 10552, 10553, 5309, 5311, 5632, 1297, 4716, 4251, 1236, 4664, 5620, 5286, 4223, 8557, 1959, 10554, 7765, 5088, 4666, 10039, 5565, 2]
+// Module ID: 10215
+// Function ID: 10216
+// Name: canFollowIntoChannel
+// Dependencies: [32, 19, 17, 1372, 1932, 1862, 3913, 5122, 676, 21, 4285, 712, 7325, 4221, 589, 4475, 4711, 4131, 10216, 10217, 5338, 5340, 5661, 1297, 4745, 4281, 1236, 4693, 5649, 5315, 4253, 8890, 1959, 10218, 7777, 5117, 4695, 10137, 5594, 2]
 // Exports: default
 
-// Module 10551 (NewChannelFollower)
+// Module 10215 (canFollowIntoChannel)
 import asyncRequireImpl from "asyncRequireImpl";
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
@@ -38,6 +38,14 @@ createCacheKey[6] = { flex: 1, textAlign: "center", marginBottom: 8 };
 createCacheKey[7] = { flex: 1, textAlign: "center", marginBottom: 8 };
 createCacheKey[8] = { height: 16, width: 16, opacity: 0.6 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
+function canFollowIntoChannel(channel) {
+  channel = channel.channel;
+  let canResult = channel.type === constants.GUILD_TEXT;
+  if (canResult) {
+    canResult = getUncachedChannelPermissions.can(constants2.MANAGE_WEBHOOKS, channel);
+  }
+  return canResult;
+}
 let obj1 = { flex: 1, flexDirection: "row", minWidth: 160, paddingHorizontal: 8, paddingVertical: 6, borderRadius: require("Themes").radii.xs, backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_SELECTED };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/channel_following/native/components/NewChannelFollower.tsx");
 
@@ -166,13 +174,13 @@ export default function NewChannelFollower(targetChannelId) {
       return arr;
     }, array);
     obj[2] = targetGuildId;
-    obj[3] = function onItemSelect(id) {
-      const defaultChannel = outer1_8.getDefaultChannel(id);
-      id = undefined;
-      if (defaultChannel != null) {
-        id = defaultChannel.id;
+    obj[3] = function onItemSelect(arg0) {
+      const firstChannelOfType = outer1_8.getFirstChannelOfType(arg0, outer1_19, outer1_9);
+      let id;
+      if (firstChannelOfType != null) {
+        id = firstChannelOfType.id;
       }
-      registerAsset(id, id);
+      registerAsset(arg0, id);
     };
     obj[4] = function onClose() {
       callback(closure_2, asyncRequireImpl);
@@ -211,14 +219,7 @@ export default function NewChannelFollower(targetChannelId) {
       }
       obj[1] = tmp5;
       obj[2] = targetChannel;
-      obj[3] = function filterFn(channel) {
-        channel = channel.channel;
-        let canResult = channel.type === constants.GUILD_TEXT;
-        if (canResult) {
-          canResult = getUncachedChannelPermissions.can(constants2.MANAGE_WEBHOOKS, channel);
-        }
-        return canResult;
-      };
+      obj[3] = outer1_19;
       obj[4] = function onSelect(id) {
         callback(closure_2, id.id);
       };

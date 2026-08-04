@@ -1,10 +1,10 @@
-// Module ID: 14290
-// Function ID: 14291
+// Module ID: 14324
+// Function ID: 14325
 // Name: getDeliveredQuest
-// Dependencies: [19, 21, 7096, 2]
+// Dependencies: [19, 21, 7108, 2]
 // Exports: QuestDockQuestProvider, getDeliveredQuest, useQuestCreative
 
-// Module 14290 (getDeliveredQuest)
+// Module 14324 (getDeliveredQuest)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("AdCreativeType").fileFinishedImporting("modules/quests/n
 
 export const getDeliveredQuest = function getDeliveredQuest(mobileQuestDock) {
   let quest = null;
-  if (mobileQuestDock.type === require(7096) /* AdCreativeType */.AdCreativeType.QUEST) {
+  if (mobileQuestDock.type === require(7108) /* AdCreativeType */.AdCreativeType.QUEST) {
     quest = mobileQuestDock.quest;
   }
   return quest;

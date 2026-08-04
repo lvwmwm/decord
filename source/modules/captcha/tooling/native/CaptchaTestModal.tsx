@@ -1,10 +1,10 @@
-// Module ID: 14867
-// Function ID: 14868
+// Module ID: 14901
+// Function ID: 14902
 // Name: CaptchaTestScreen
-// Dependencies: [5, 32, 19, 17, 21, 4255, 712, 14868, 14869, 3956, 4251, 1297, 5243, 4666, 4461, 5209, 5636, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4285, 712, 14902, 14903, 3986, 4281, 1297, 5272, 4695, 4490, 5238, 5665, 1236, 2]
 // Exports: default
 
-// Module 14867 (CaptchaTestScreen)
+// Module 14901 (CaptchaTestScreen)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -231,5 +231,5 @@ export default function CaptchaTestModal() {
   let obj = { screens: memo, initialRouteName: constants.TEST_CAPTCHA, headerBackTitle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-  return callback(require(5636) /* NavigationStack */.Navigator, obj);
+  return callback(require(5665) /* NavigationStack */.Navigator, obj);
 };

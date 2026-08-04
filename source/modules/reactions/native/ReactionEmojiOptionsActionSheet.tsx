@@ -1,10 +1,10 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 12437
+// Function ID: 12438
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4247, 5114, 4072, 21, 4255, 712, 3928, 5608, 589, 9510, 1416, 4223, 9577, 9579, 4251, 1236, 9573, 3956, 5609, 3955, 7131, 5617, 5272, 5620, 5286, 2]
+// Dependencies: [19, 17, 4277, 5143, 4102, 21, 4285, 712, 3958, 5637, 589, 8563, 1416, 4253, 8666, 8668, 4281, 1236, 8662, 3986, 5638, 3985, 7143, 5646, 5301, 5649, 5315, 2]
 // Exports: default
 
-// Module 9616 (ReactionEmojiOptionsActionSheet)
+// Module 12437 (ReactionEmojiOptionsActionSheet)
 import dispatcher from "dispatcher";
 import { View } from "getSystemLocale";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

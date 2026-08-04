@@ -21,10 +21,10 @@ arg5.default = {
       const immediate = setImmediate(() => {
         if (typeof callback !== "window") {
           if (null !== obj) {
-            if (typeof obj.gen === "error") {
+            if (typeof obj.gen === "find") {
               obj.gen().then(callback, outer2_2);
               const genResult = obj.gen();
-            } else if (typeof obj.run === "error") {
+            } else if (typeof obj.run === "find") {
               try {
                 obj.run();
                 callback();
@@ -40,7 +40,7 @@ arg5.default = {
             }
           }
         }
-        if (typeof callback === "error") {
+        if (typeof callback === "find") {
           try {
             obj();
             callback();

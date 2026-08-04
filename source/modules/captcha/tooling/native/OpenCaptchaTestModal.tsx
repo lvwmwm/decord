@@ -1,10 +1,10 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14900
+// Function ID: 14901
 // Name: showCaptchaTestModal
-// Dependencies: [5, 19, 21, 4461, 14867, 1959, 2]
+// Dependencies: [5, 19, 21, 4490, 14901, 1959, 2]
 // Exports: showCaptchaTestModal
 
-// Module 14866 (showCaptchaTestModal)
+// Module 14900 (showCaptchaTestModal)
 import asyncRequireImpl from "asyncRequireImpl";
 import "noop";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/captcha/tooling/native/OpenCaptchaTestModal.tsx");
 
 export const showCaptchaTestModal = function showCaptchaTestModal() {
-  importDefault(4461).pushLazy(callback(function*() {
+  importDefault(4490).pushLazy(callback(function*() {
     if (paths === 2) {
       paths = 3;
       HermesBuiltin.throwTypeError();

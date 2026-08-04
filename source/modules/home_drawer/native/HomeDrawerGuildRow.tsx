@@ -1,10 +1,10 @@
-// Module ID: 15280
-// Function ID: 15281
+// Module ID: 15313
+// Function ID: 15314
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 3885, 1376, 1372, 1932, 7005, 1862, 4267, 3892, 4451, 1874, 676, 4452, 21, 4255, 589, 4112, 4109, 15281, 10380, 4251, 15283, 15284, 4446, 11, 15285, 15287, 11323, 15288, 15289, 15290, 15292, 15293, 15270, 2]
+// Dependencies: [19, 17, 3915, 1376, 1372, 1932, 7017, 1862, 4297, 3922, 4480, 1874, 676, 4481, 21, 4285, 589, 4142, 4139, 12471, 9647, 4281, 15314, 15315, 4475, 11, 15316, 15318, 11323, 15319, 15320, 15321, 15323, 15324, 15303, 2]
 // Exports: default
 
-// Module 15280 (GuildRowWrapper)
+// Module 15313 (GuildRowWrapper)
 import BellZIcon from "BellZIcon";
 import { View } from "MobileHomeDrawerExperiment";
 import storeThread from "storeThread";
@@ -166,7 +166,7 @@ function GuildRowWrapper(guild) {
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "op", mentionChannelName: "isArray", mentionChannelCount: null };
+      return { mentionChannel: "disabled", mentionChannelName: "isArray", mentionChannelCount: null };
     } else {
       const keys = disableSubtitle(onActiveHookChange[25]).keys(tmp.mentionCounts);
       const found = keys.filter((id) => {
@@ -351,7 +351,7 @@ export default function HomeDrawerGuildRow(guildId) {
   let obj = guildId(589);
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4112).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4142).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

@@ -1,10 +1,10 @@
-// Module ID: 13933
-// Function ID: 13934
+// Module ID: 13967
+// Function ID: 13968
 // Name: FamilyCenterSettingsParentalControlsNotice
-// Dependencies: [19, 7690, 21, 7247, 13864, 2255, 6943, 4265, 2]
+// Dependencies: [19, 7702, 21, 7259, 13898, 2285, 6955, 4295, 2]
 // Exports: default
 
-// Module 13933 (FamilyCenterSettingsParentalControlsNotice)
+// Module 13967 (FamilyCenterSettingsParentalControlsNotice)
 import "noop";
 import { SafetySettingsNoticeType } from "SafetyToastType";
 import { jsx } from "jsxProd";
@@ -13,10 +13,10 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/family_center/native/FamilyCenterSettingsNotice.tsx");
 
 export default function FamilyCenterSettingsParentalControlsNotice() {
-  let obj = activeLinkUserIds(7247);
+  let obj = activeLinkUserIds(7259);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = { label: null, noticeType: null, labelHook: null, count: null };
-  obj[0] = importDefault(2255).i284fU;
+  obj[0] = importDefault(2285).i284fU;
   obj[1] = SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE;
   obj[2] = function labelHook() {
     let obj = activeLinkUserIds(outer1_2[6]);
@@ -25,5 +25,5 @@ export default function FamilyCenterSettingsParentalControlsNotice() {
     outer1_1(outer1_2[7]).openPrivateChannel(obj);
   };
   obj[3] = activeLinkUserIds.length;
-  return jsx(importDefault(13864), { label: null, noticeType: null, labelHook: null, count: null });
+  return jsx(importDefault(13898), { label: null, noticeType: null, labelHook: null, count: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 5791
-// Function ID: 5792
+// Module ID: 5820
+// Function ID: 5821
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 5791 (apexExperiment)
+// Module 5820 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

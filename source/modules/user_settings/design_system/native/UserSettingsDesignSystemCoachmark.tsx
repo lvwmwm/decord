@@ -1,10 +1,10 @@
-// Module ID: 14670
-// Function ID: 14671
+// Module ID: 14704
+// Function ID: 14705
 // Name: Content
-// Dependencies: [32, 19, 17, 21, 4255, 14668, 5984, 8745, 4666, 1348, 4677, 5620, 5621, 7783, 7782, 5243, 5568, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 14702, 5994, 8575, 4695, 1348, 4706, 5649, 5650, 7795, 7794, 5272, 5597, 2]
 // Exports: default
 
-// Module 14670 (Content)
+// Module 14704 (Content)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -177,7 +177,7 @@ export default function UserSettingsDesignSystemCoachmark() {
   obj = { children: null };
   obj = { children: null };
   obj[0] = callback(Content, {});
-  obj[0] = callback(require(5568) /* Layer */.LayerScope, obj);
+  obj[0] = callback(require(5597) /* Layer */.LayerScope, obj);
   obj[2] = callback(closure_6, obj);
-  return callback(require(5243) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5272) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16785
+// Function ID: 16786
 // Name: fetchForwardReferencedGuilds
-// Dependencies: [676, 16754, 5200, 16335, 2]
+// Dependencies: [676, 16786, 5229, 16368, 2]
 
-// Module 16753 (fetchForwardReferencedGuilds)
+// Module 16785 (fetchForwardReferencedGuilds)
 import { MessageReferenceTypes } from "ME";
 import "initialize";
 
@@ -16,8 +16,8 @@ function fetchForwardReferencedGuilds(message_reference) {
   if (type === MessageReferenceTypes.FORWARD) {
     const guild_id = message_reference.message_reference.guild_id;
     if (null != guild_id) {
-      const basicGuild = require(16754) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
-      const obj = require(16754) /* _fetchBasicGuild */;
+      const basicGuild = require(16786) /* _fetchBasicGuild */.fetchBasicGuild(guild_id);
+      const obj = require(16786) /* _fetchBasicGuild */;
     }
   }
 }

@@ -1,9 +1,9 @@
-// Module ID: 5566
-// Function ID: 5567
+// Module ID: 5595
+// Function ID: 5596
 // Name: BottomSheetBackdrop
-// Dependencies: [19, 21, 4255, 5311, 5339, 4116, 4654, 2]
+// Dependencies: [19, 21, 4285, 5340, 5368, 4146, 4683, 2]
 
-// Module 5566 (BottomSheetBackdrop)
+// Module 5595 (BottomSheetBackdrop)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -52,7 +52,7 @@ const memoResult = importAllResult.memo((animatedIndex) => {
       close();
     } else if ("collapse" === tmp3) {
       snapToIndex(num3);
-    } else if (typeof tmp3 !== "SENTRY_RELEASE") {
+    } else if (typeof tmp3 !== "V") {
       snapToIndex(tmp3);
     }
   }, items);

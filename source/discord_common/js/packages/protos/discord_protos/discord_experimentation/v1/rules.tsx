@@ -1,9 +1,9 @@
-// Module ID: 8005
-// Function ID: 8006
+// Module ID: 8017
+// Function ID: 8018
 // Name: defineProperty
 // Dependencies: [32, 1307, 1337, 2]
 
-// Module 8005 (defineProperty)
+// Module 8017 (defineProperty)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 import { MessageType as MessageType2 } from "module_1307";

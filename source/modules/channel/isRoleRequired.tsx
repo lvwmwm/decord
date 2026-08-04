@@ -1,10 +1,10 @@
-// Module ID: 4746
-// Function ID: 4747
+// Module ID: 4775
+// Function ID: 4776
 // Name: isRoleRequired
-// Dependencies: [1376, 505, 3888, 506, 2]
+// Dependencies: [1376, 505, 3918, 506, 2]
 // Exports: default
 
-// Module 4746 (isRoleRequired)
+// Module 4775 (isRoleRequired)
 import { GUILD_NON_CATEGORY_CHANNEL_TYPES as closure_2 } from "createChannelRecord";
 import { Permissions } from "sum";
 
@@ -20,7 +20,7 @@ export default function isRoleRequired(guild_id) {
           if (!obj.canEveryoneRole(Permissions.CONNECT, guild_id)) {
             return true;
           }
-          obj = importAll(3888);
+          obj = importAll(3918);
         }
         let hasItem = null != tmp4;
         if (hasItem) {

@@ -1,9 +1,9 @@
-// Module ID: 5617
-// Function ID: 5618
+// Module ID: 5646
+// Function ID: 5647
 // Name: ActionSheet
-// Dependencies: [19, 21, 4255, 712, 5309, 2]
+// Dependencies: [19, 21, 4285, 712, 5338, 2]
 
-// Module 5617 (ActionSheet)
+// Module 5646 (ActionSheet)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -18,7 +18,7 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   const obj = { ref };
   const merged = Object.assign(arg0);
   ({ content: obj.contentStyles, body: obj.bodyStyles } = callback());
-  return jsx(require(5309) /* Background */.BottomSheet, { ref });
+  return jsx(require(5338) /* Background */.BottomSheet, { ref });
 });
 const result = require("createCacheKey").fileFinishedImporting("design/components/Sheet/native/ActionSheet.native.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16767
+// Function ID: 16768
 // Name: shouldClearChannelNotificationsOnAppForeground
 // Dependencies: [1452, 2]
 // Exports: shouldClearChannelNotificationsOnAppForeground
 
-// Module 16735 (shouldClearChannelNotificationsOnAppForeground)
+// Module 16767 (shouldClearChannelNotificationsOnAppForeground)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

@@ -1,10 +1,10 @@
-// Module ID: 11630
-// Function ID: 11631
+// Module ID: 11693
+// Function ID: 11694
 // Name: getOrRefreshPushSyncToken
-// Dependencies: [5, 11631, 1218, 676, 5710, 3, 707, 530, 1208, 11635, 595, 5065, 500, 503, 1351, 709, 2]
+// Dependencies: [5, 11694, 1218, 676, 5739, 3, 707, 530, 1208, 11698, 595, 5094, 500, 503, 1351, 709, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 11630 (getOrRefreshPushSyncToken)
+// Module 11693 (getOrRefreshPushSyncToken)
 import timestamp from "timestamp";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -112,7 +112,7 @@ function _getOrRefreshPushSyncToken() {
           } else {
             token = body.body.token;
             c4 = 0;
-            obj = callback(11635);
+            obj = callback(11698);
             obj.updatePushSyncToken(lib.id, token);
             c6 = 3;
             const obj6 = { value: null, done: true };
@@ -156,7 +156,7 @@ let obj = {
       const self = this;
       let syncDeviceResult = this.syncDevice(token, flag);
     } else {
-      obj = importDefault(5065);
+      obj = importDefault(5094);
       obj = { url: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: false };
       obj[0] = constants.DEVICES;
       if (flag) {
@@ -287,8 +287,8 @@ let obj = {
             } else if (arg0 !== 2) {
               v0 = arg1;
               if (v0.body.invalid_push_sync_tokens.length > 0) {
-                const result = v0(11635).invalidatePushSyncTokens(v0.body.invalid_push_sync_tokens);
-                const obj9 = v0(11635);
+                const result = v0(11698).invalidatePushSyncTokens(v0.body.invalid_push_sync_tokens);
+                const obj9 = v0(11698);
               }
             }
             dependencyMap = 3;
@@ -305,7 +305,7 @@ let obj = {
   },
   unregisterDevice(token) {
     tmp4.log("Unregistering push notification token: " + token);
-    let obj = importDefault(5065);
+    let obj = importDefault(5094);
     obj = { url: constants.DEVICES, body: null, trackedActionData: null, rejectWithError: false };
     obj = { provider: callback2(), token };
     obj[1] = obj;

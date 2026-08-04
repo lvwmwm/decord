@@ -1,10 +1,10 @@
-// Module ID: 12528
-// Function ID: 12529
+// Module ID: 12562
+// Function ID: 12563
 // Name: SettingsUpsellsTableRow
-// Dependencies: [32, 19, 17, 1372, 676, 21, 4255, 712, 4682, 7822, 12522, 5910, 589, 7830, 5620, 1236, 4251, 5915, 4450, 2]
+// Dependencies: [32, 19, 17, 1372, 676, 21, 4285, 712, 4711, 7834, 12556, 5920, 589, 7842, 5649, 1236, 4281, 5925, 4479, 2]
 // Exports: default
 
-// Module 12528 (SettingsUpsellsTableRow)
+// Module 12562 (SettingsUpsellsTableRow)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "openUserSettings";
@@ -29,8 +29,8 @@ function SettingsUpsellsTableRow(arg0) {
   ({ title, disabledTitle, description } = arg0);
   const tmp = callback(React.useState(false), 2);
   dependencyMap = tmp[1];
-  importDefault(4682)(() => {
-    callback2(outer1_0(7822).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
+  importDefault(4711)(() => {
+    callback2(outer1_0(7834).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
   const obj = {
     title,
@@ -40,12 +40,12 @@ function SettingsUpsellsTableRow(arg0) {
     onPress() {
       callback();
       dependencyMap(true);
-      callback2(outer1_0(7822).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
+      callback2(outer1_0(7834).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
     icon: null
   };
-  obj[5] = callback2(require(5910) /* SettingsIcon */.SettingsIcon, {});
-  return callback2(importDefault(12522), obj);
+  obj[5] = callback2(require(5920) /* SettingsIcon */.SettingsIcon, {});
+  return callback2(importDefault(12556), obj);
 }
 ({ AnalyticEvents: error, UserSettingsSections: metroImportAll } = ME);
 ({ jsx: c9, jsxs: c10 } = jsxProd);

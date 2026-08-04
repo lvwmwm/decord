@@ -1,10 +1,10 @@
-// Module ID: 13054
-// Function ID: 13055
+// Module ID: 13088
+// Function ID: 13089
 // Name: openGuildLimitedAccessInfoModal
-// Dependencies: [19, 17, 21, 4114, 4595, 13055, 1959, 2]
+// Dependencies: [19, 17, 21, 4144, 4624, 13089, 1959, 2]
 // Exports: default
 
-// Module 13054 (openGuildLimitedAccessInfoModal)
+// Module 13088 (openGuildLimitedAccessInfoModal)
 import "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_limited_a
 export default function openGuildLimitedAccessInfoModal(arg0) {
   const _require = arg0;
   Keyboard.dismiss();
-  let obj = _require(4114);
+  let obj = _require(4144);
   const bestActiveInput = obj.getBestActiveInput();
   if (bestActiveInput != null) {
     bestActiveInput.blur();
@@ -33,5 +33,5 @@ export default function openGuildLimitedAccessInfoModal(arg0) {
       });
     }
   };
-  importDefault(4595).openLazy(obj);
+  importDefault(4624).openLazy(obj);
 };

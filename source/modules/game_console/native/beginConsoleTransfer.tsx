@@ -1,10 +1,10 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 10772
+// Function ID: 10773
 // Name: _beginConsoleTransfer
-// Dependencies: [5, 676, 9221, 9228, 4223, 9229, 1959, 503, 9232, 2]
+// Dependencies: [5, 676, 10773, 10780, 4253, 10781, 1959, 503, 10784, 2]
 // Exports: beginConsoleTransfer
 
-// Module 9220 (_beginConsoleTransfer)
+// Module 10772 (_beginConsoleTransfer)
 import TransferFooter from "TransferFooter";
 import set from "disconnectRemote";
 

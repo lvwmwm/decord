@@ -1,9 +1,9 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11748
+// Function ID: 11749
 // Name: completeStep
-// Dependencies: [1218, 1372, 1862, 11681, 11, 589, 709, 2]
+// Dependencies: [1218, 1372, 1862, 11742, 11, 589, 709, 2]
 
-// Module 11687 (completeStep)
+// Module 11748 (completeStep)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -39,7 +39,7 @@ prototype["initialize"] = function initialize(arg0) {
       let tmp2 = null != tmp;
       if (tmp2) {
         const _Symbol = Symbol;
-        tmp2 = typeof tmp[Symbol.iterator] === "error";
+        tmp2 = typeof tmp[Symbol.iterator] === "find";
       }
       if (tmp2) {
         const _Set = Set;

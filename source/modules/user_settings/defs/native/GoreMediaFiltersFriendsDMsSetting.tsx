@@ -1,9 +1,9 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 13982
+// Function ID: 13983
 // Name: pressable
-// Dependencies: [7880, 13937, 6956, 5797, 13938, 1236, 10272, 13940, 2]
+// Dependencies: [7892, 13971, 6968, 5826, 13972, 1236, 10361, 13974, 2]
 
-// Module 13948 (pressable)
+// Module 13982 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,11 +13,11 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const obj = require(13937) /* useExplicitContentSettingOrDefault */;
-    return require(6956) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
+    const obj = require(13971) /* useExplicitContentSettingOrDefault */;
+    return require(6968) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
   },
   onPress: function onGoreContentFriendsDmOnPress() {
-    let obj = require(5797) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5826) /* resolveGoreSettingWithDefaults */;
     obj = { title: null, subtitle: null, handlePress: null, currentValue: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -29,7 +29,7 @@ const pressable = createToggle.createPressable({
       return obj.updateGoreContentSetting(obj);
     };
     obj[3] = obj.getGoreContentSettingOrDefault().goreContentFriendDm;
-    const result = require(13938) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13972) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -49,11 +49,11 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const obj = require(13937) /* useExplicitContentSettingOrDefault */;
-    return require(6956) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
+    const obj = require(13971) /* useExplicitContentSettingOrDefault */;
+    return require(6968) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
   },
   onPress: function onGoreContentFriendsDmOnPress() {
-    let obj = require(5797) /* resolveGoreSettingWithDefaults */;
+    let obj = require(5826) /* resolveGoreSettingWithDefaults */;
     obj = { title: null, subtitle: null, handlePress: null, currentValue: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -65,7 +65,7 @@ let obj = {
       return obj.updateGoreContentSetting(obj);
     };
     obj[3] = obj.getGoreContentSettingOrDefault().goreContentFriendDm;
-    const result = require(13938) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(13972) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;

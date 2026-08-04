@@ -1,10 +1,10 @@
-// Module ID: 8364
-// Function ID: 8365
+// Module ID: 9914
+// Function ID: 9915
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5114, 5162, 1372, 1932, 1942, 1935, 1862, 3883, 3892, 1874, 676, 1877, 7053, 4446, 11, 5097, 3896, 3900, 2]
+// Dependencies: [32, 5143, 5191, 1372, 1932, 1942, 1935, 1862, 3913, 3922, 1874, 676, 1877, 7065, 4475, 11, 5126, 3926, 3930, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8364 (resolvePlaintextInlineVoid)
+// Module 9914 (resolvePlaintextInlineVoid)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import rebuild from "rebuild";
@@ -115,7 +115,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
       return null;
     })(text, throwTypeErrorResult, id, tmp, tmp2);
   } else if (":" === first) {
-    const EMOJI_NAME_RE = importDefault(3896).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3926).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(text);
     let tmp7 = null;
     if (null != match) {
@@ -149,7 +149,7 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
           const _HermesInternal = HermesInternal;
           const combined = ":" + obj2.name + ":";
         }
-        tmp4Result = importDefault(3900);
+        tmp4Result = importDefault(3930);
       }
     }
     return tmp7;
@@ -166,8 +166,8 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
             num[Symbol.iterator]();
             const obj2 = callback2(11);
           }
-          callback(4446).unescapeChannelName(arr.slice(2, arr.length - num));
-          const obj = callback(4446);
+          callback(4475).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4475);
         }
         const substr = arr.slice(1);
       }
@@ -207,8 +207,8 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
   const tmp = resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(7053) /* createEmptyState */.voidToOptionValue(tmp);
-    const obj = require(7053) /* createEmptyState */;
+    voidToOptionValueResult = require(7065) /* createEmptyState */.voidToOptionValue(tmp);
+    const obj = require(7065) /* createEmptyState */;
   }
   return voidToOptionValueResult;
 };

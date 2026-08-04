@@ -1,10 +1,10 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11818
+// Function ID: 11819
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [17, 21, 4255, 712, 689, 3965, 4191, 11725, 11711, 11708, 11731, 11758, 11732, 11744, 11745, 11749, 11735, 1297, 1236, 4251, 11736, 4666, 2287, 1581, 11759, 5309, 5311, 11762, 11755, 2]
+// Dependencies: [17, 21, 4285, 712, 689, 3995, 4221, 11786, 11772, 11769, 11792, 11819, 11793, 11805, 11806, 11810, 11796, 1297, 1236, 4281, 11797, 4695, 2317, 1581, 11820, 5338, 5340, 11823, 11816, 2]
 // Exports: default
 
-// Module 11757 (GuildPowerupsMultiPerkCard)
+// Module 11818 (GuildPowerupsMultiPerkCard)
 import { View } from "Button";
 import jsxProd from "Button";
 import createCacheKey from "createCacheKey";
@@ -23,20 +23,20 @@ function GuildPowerupsMultiPerkCard(arg0) {
   let _require;
   let importDefault;
   let dependencyMap;
-  let obj = _require(3965);
-  const tmp4 = callback2(obj.isThemeLight(importDefault(4191)()));
-  const tmp5 = importDefault(11725)(guildId);
-  const tmp6 = importDefault(11711)(guildId, powerup);
-  let obj1 = _require(11731);
-  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, importDefault(11708)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet"));
-  let obj2 = _require(11711);
+  let obj = _require(3995);
+  const tmp4 = callback2(obj.isThemeLight(importDefault(4221)()));
+  const tmp5 = importDefault(11786)(guildId);
+  const tmp6 = importDefault(11772)(guildId, powerup);
+  let obj1 = _require(11792);
+  const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, importDefault(11769)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet"));
+  let obj2 = _require(11772);
   const result = obj2.isPowerupActiveStatusActive(tmp6);
   _require = result;
-  const tmp10 = importDefault(11732)(powerup, true, forceStaticImage);
-  const disabled = importDefault(11744)(guildId, powerup, result).disabled;
-  const tmp7 = importDefault(11708)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
-  ({ onActivate: c1, isLoading } = importDefault(11745)(guildId, powerup));
-  dependencyMap = importDefault(11749)(guildId, powerup);
+  const tmp10 = importDefault(11793)(powerup, true, forceStaticImage);
+  const disabled = importDefault(11805)(guildId, powerup, result).disabled;
+  const tmp7 = importDefault(11769)(guildId, powerup, "GuildPowerupsMultiPerkBottomSheet");
+  ({ onActivate: c1, isLoading } = importDefault(11806)(guildId, powerup));
+  dependencyMap = importDefault(11810)(guildId, powerup);
   const items = [tmp4.container, ];
   let disabled2 = disabled;
   if (disabled) {
@@ -65,7 +65,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
   obj = { style: items1, children: null };
   items1[3] = "removing" === type2 && tmp4.imageContainerRemoving;
   let str = tmp10;
-  let tmp3Result = tmp3(11735);
+  let tmp3Result = tmp3(11796);
   if (tmp10 == null) {
     str = "";
   }
@@ -83,17 +83,17 @@ function GuildPowerupsMultiPerkCard(arg0) {
   const items3 = [closure_5(View, obj), ];
   const obj3 = { style: tmp4.bodyContainer, children: null };
   const obj4 = { style: tmp4.titleContainer, children: null };
-  const tmp11 = importDefault(11745)(guildId, powerup);
+  const tmp11 = importDefault(11806)(guildId, powerup);
   const tmp17 = "removing" === type2 && tmp4.imageContainerRemoving;
-  const items4 = [closure_4(_require(4251).Text, { variant: "heading-md/semibold", color: importDefault(11758)(result).textColor, children: powerup.title }), ];
+  const items4 = [closure_4(_require(4281).Text, { variant: "heading-md/semibold", color: importDefault(11819)(result).textColor, children: powerup.title }), ];
   if (null != calculatePowerupCardStatus) {
     const obj6 = { status: null };
     obj6[0] = calculatePowerupCardStatus;
-    let tmp18Result = tmp18(tmp(11736).GuildPowerupCardFooterStatus, obj6);
+    let tmp18Result = tmp18(tmp(11797).GuildPowerupCardFooterStatus, obj6);
   } else {
     const obj7 = { cost: null };
     obj7[0] = powerup.cost;
-    tmp18Result = tmp18(tmp(11736).GuildPowerupCardFooterCost, obj7);
+    tmp18Result = tmp18(tmp(11797).GuildPowerupCardFooterCost, obj7);
   }
   items4[1] = tmp18Result;
   obj4[1] = items4;
@@ -114,7 +114,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
     }
     obj8[2] = str2;
     const intl2 = tmp(1236).intl;
-    tmp3Result = tmp3(2287);
+    tmp3Result = tmp3(2317);
     obj8[3] = intl2.string(result ? tmp3Result.TZsu1U : tmp3Result.gSxlHf);
     obj8[4] = function onPress() {
       if (c0) {
@@ -123,7 +123,7 @@ function GuildPowerupsMultiPerkCard(arg0) {
         _undefined();
       }
     };
-    tmp18Result = tmp18(tmp(4666).Button, obj8);
+    tmp18Result = tmp18(tmp(4695).Button, obj8);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -181,7 +181,7 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
   const listing = guildId.listing;
   let importDefault;
   const tmp = callback3();
-  const tmp4 = importDefault(11759)(guildId, listing);
+  const tmp4 = importDefault(11820)(guildId, listing);
   importDefault = tmp4;
   let tmp6Result = null;
   if (null != tmp4) {
@@ -192,14 +192,14 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
     obj[0] = importDefault(1581)().bottom;
     obj[0] = obj;
     ({ title: obj4[0], description: obj4[1] } = tmp4);
-    const items = [callback(tmp2(11762), { title: null, description: null }), , ];
+    const items = [callback(tmp2(11823), { title: null, description: null }), , ];
     tmp6Result = null != tmp4.disabledReason;
     if (tmp6Result) {
       const obj2 = { style: null, children: null };
       obj2[0] = tmp.disabledReasonContainer;
       const obj3 = { text: null };
       obj3[0] = tmp4.disabledReason;
-      obj2[1] = tmp6(tmp2(11755), obj3);
+      obj2[1] = tmp6(tmp2(11816), obj3);
       tmp6Result = tmp6(View, obj2);
     }
     items[1] = tmp6Result;
@@ -209,8 +209,8 @@ export default function GuildPowerupsMultiPerkBottomSheet(guildId) {
     obj4[1] = powerups.map((powerup) => outer1_4(outer1_8, { guildId, powerup, forceStaticImage: _undefined.forceStaticImages }, powerup.skuId));
     items[2] = callback(View, obj4);
     obj[1] = items;
-    obj[3] = closure_5(guildId(5311).BottomSheetScrollView, obj);
-    tmp6Result = tmp6(guildId(5309).BottomSheet, obj);
+    obj[3] = closure_5(guildId(5340).BottomSheetScrollView, obj);
+    tmp6Result = tmp6(guildId(5338).BottomSheet, obj);
     const obj1 = { title: null, description: null };
     const tmp8 = closure_5;
   }

@@ -1,10 +1,10 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 9679
+// Function ID: 9680
 // Name: _setUserStatus
-// Dependencies: [5, 5197, 4933, 676, 4094, 1236, 10410, 1355, 1337, 4070, 698, 2]
+// Dependencies: [5, 5226, 4962, 676, 4124, 1236, 9680, 1355, 1337, 4100, 698, 2]
 // Exports: default
 
-// Module 10409 (_setUserStatus)
+// Module 9679 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import initialize from "initialize";
 import filterPlayingActivities from "filterPlayingActivities";
@@ -145,7 +145,7 @@ function _setUserStatus() {
                 return formatToPlainStringResult;
               }
             })(callback, str);
-            const AccessibilityAnnouncer = callback(4070).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = callback(4100).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(constants);
             if (!globalStats) {
               obj = { next_status: null, prev_status: null };

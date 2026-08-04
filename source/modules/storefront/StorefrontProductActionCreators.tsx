@@ -1,10 +1,10 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8737
+// Function ID: 8738
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1946, 8681, 6919, 676, 687, 709, 4493, 4155, 2]
+// Dependencies: [5, 1946, 8738, 6931, 676, 687, 709, 4522, 4185, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8680 (_maybeFetchProductsWithSkus)
+// Module 8737 (_maybeFetchProductsWithSkus)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";
