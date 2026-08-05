@@ -1,10 +1,10 @@
-// Module ID: 5748
-// Function ID: 5749
+// Module ID: 5733
+// Function ID: 5734
 // Name: getChannelIdForGuildTransition
-// Dependencies: [5206, 1372, 1932, 1862, 1931, 5749, 676, 1379, 5753, 5755, 5757, 2]
+// Dependencies: [5191, 1372, 1932, 1862, 1931, 5734, 676, 1379, 5738, 5740, 5742, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 5748 (getChannelIdForGuildTransition)
+// Module 5733 (getChannelIdForGuildTransition)
 import shouldShowOnboarding from "shouldShowOnboarding";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -45,7 +45,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
     if (!obj.canSeeOnboardingHome(id)) {
       return id;
     }
-    obj = require(5753) /* useCanSeeOnboardingHome */;
+    obj = require(5738) /* useCanSeeOnboardingHome */;
   }
   if (channelId === StaticChannelRoute.GUILD_SPACE) {
     if (obj4.canUseGuildSpace(guild.getGuild(id), "getChannelIdForGuildTransition")) {
@@ -57,7 +57,7 @@ export const getChannelIdForGuildTransition = function getChannelIdForGuildTrans
       if (obj2.canSeeGameShop(id)) {
         return channelId;
       }
-      obj2 = require(5757) /* getPrice */;
+      obj2 = require(5742) /* getPrice */;
     }
     channel = channel.getChannel(channelId);
     if (null == channel) {

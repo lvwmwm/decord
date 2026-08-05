@@ -1,15 +1,15 @@
-// Module ID: 9899
-// Function ID: 9900
-// Dependencies: [32, 19, 17, 5187, 9875, 9842, 21, 4285, 712, 1297, 9900, 4281, 1236, 4951, 8643, 8597, 589, 9901, 9886, 12, 8344, 9902, 8337, 5313, 2]
+// Module ID: 9870
+// Function ID: 9871
+// Dependencies: [32, 19, 17, 5172, 9846, 9813, 21, 4255, 712, 1297, 9871, 4251, 1236, 4936, 8615, 8569, 589, 9872, 9857, 12, 8316, 9873, 8309, 5298, 2]
 
-// Module 9899
+// Module 9870
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "apply";
 import { View } from "useStickerPickerListData";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { useStickerPickerStore } from "useStickerPickerStore";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
-import jsxProd from "module_9902";
+import jsxProd from "module_9873";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -36,13 +36,13 @@ let closure_14 = importAllResult.memo((height) => {
   let obj = { style: items, children: null };
   items = [tmp.nsfwContainer, { height: height.height }];
   obj = { source: null, size: null };
-  obj[0] = importDefault(9900);
+  obj[0] = importDefault(9871);
   obj[1] = require(1297) /* Button */.Icon.Sizes.SMALL;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { style: tmp.nsfwText, variant: "text-sm/normal", color: "interactive-text-active", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.uy25Qz);
-  items1[1] = callback(require(4281) /* Text */.Text, obj);
+  items1[1] = callback(require(4251) /* Text */.Text, obj);
   obj[1] = items1;
   return callback2(View, obj);
 });
@@ -54,7 +54,7 @@ let closure_15 = importAllResult.memo((arg0) => {
   const obj = { style: null, children: null };
   const items = [callback3().section, sectionStyle, { height }];
   obj[0] = items;
-  obj[1] = callback(require(4281) /* Text */.Text, { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label });
+  obj[1] = callback(require(4251) /* Text */.Text, { lineClamp: 1, color: "interactive-text-default", variant: "heading-sm/semibold", children: label });
   return callback(View, obj);
 });
 let closure_16 = importAllResult.memo((height) => {

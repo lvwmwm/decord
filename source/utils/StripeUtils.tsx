@@ -1,10 +1,10 @@
-// Module ID: 4610
-// Function ID: 4611
+// Module ID: 4580
+// Function ID: 4581
 // Name: getStripe
-// Dependencies: [5, 32, 1946, 676, 3, 4611, 530, 589, 2]
+// Dependencies: [5, 32, 1946, 676, 3, 4581, 530, 589, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 4610 (getStripe)
+// Module 4580 (getStripe)
 import _typeof from "_typeof";
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
@@ -17,12 +17,12 @@ function getStripe() {
   if (null != closure_2) {
     let resolved = Promise.resolve(closure_2);
   } else {
-    const stripe = require(4611) /* _typeof */.loadStripe(constants.STRIPE.KEY);
+    const stripe = require(4581) /* _typeof */.loadStripe(constants.STRIPE.KEY);
     resolved = stripe.then((arg0) => {
       let closure_2 = arg0;
       return arg0;
     });
-    const obj = require(4611) /* _typeof */;
+    const obj = require(4581) /* _typeof */;
   }
   return resolved;
 }
@@ -45,7 +45,7 @@ function _authenticatePaymentIntentForPaymentId() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

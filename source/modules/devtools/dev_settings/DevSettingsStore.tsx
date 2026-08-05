@@ -1,9 +1,9 @@
-// Module ID: 4284
-// Function ID: 4285
+// Module ID: 4254
+// Function ID: 4255
 // Name: getUserAgnosticState
 // Dependencies: [589, 709, 2]
 
-// Module 4284 (getUserAgnosticState)
+// Module 4254 (getUserAgnosticState)
 import { DeviceSettingsStore } from "initialize";
 
 let obj = { MESSAGING: 0, [0]: "MESSAGING", OVERLAYS: 1, [1]: "OVERLAYS", PREMIUM: 2, [2]: "PREMIUM", REPORTING: 3, [3]: "REPORTING", APP_COLLECTIONS: 4, [4]: "APP_COLLECTIONS", SHOP: 5, [5]: "SHOP", LIBDISCORE: 6, [6]: "LIBDISCORE" };

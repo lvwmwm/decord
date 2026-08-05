@@ -1,10 +1,10 @@
-// Module ID: 14833
-// Function ID: 14834
+// Module ID: 14813
+// Function ID: 14814
 // Name: useToggleDismissibleContentDismissState
-// Dependencies: [19, 4102, 9634, 1370, 1360, 1355, 11, 589, 4101, 687, 1359, 2]
+// Dependencies: [19, 4072, 9605, 1370, 1360, 1355, 11, 589, 4071, 687, 1359, 2]
 // Exports: default
 
-// Module 14833 (useToggleDismissibleContentDismissState)
+// Module 14813 (useToggleDismissibleContentDismissState)
 import handleConnectionOpen from "handleConnectionOpen";
 
 require("noop").useCallback;
@@ -16,7 +16,7 @@ export default function useToggleDismissibleContentDismissState(APP_LAUNCHER_ONB
   const items = [handleConnectionOpen];
   const stateFromStores = obj.useStateFromStores(items, () => guildId.getGuildId());
   obj = { cooldownDurationMs: stateFromStores(687).Millis.WEEK, guildId: stateFromStores };
-  let result = _require(4101).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
+  let result = _require(4071).useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj);
   const dependencyMap = result;
   const items1 = [APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, stateFromStores, result];
   obj = {

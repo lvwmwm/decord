@@ -1,10 +1,10 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12360
+// Function ID: 12361
 // Name: useCardGridLayout
-// Dependencies: [5658, 1474, 2]
+// Dependencies: [5643, 1474, 2]
 // Exports: default
 
-// Module 12388 (useCardGridLayout)
+// Module 12360 (useCardGridLayout)
 import { PROFILE_SIDE_PADDING } from "ARBITRARY_LARGE_OFFSET";
 
 let result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useCardGridLayout.tsx");
@@ -66,7 +66,7 @@ export default function useCardGridLayout() {
   const bound1 = Math.min(Math.max(tmp4, num), num2);
   const diff2 = num4 - 1;
   if (diff < bound1 * num4 + num3 * diff2) {
-    obj = { columns: 1, cardWidth: "Array", rowWidth: "call", gap: 7 };
+    obj = { columns: 1, cardWidth: "Array", rowWidth: "padding", gap: false };
     obj[3] = num3;
   } else {
     obj = { columns: null, cardWidth: null, rowWidth: null, gap: null };

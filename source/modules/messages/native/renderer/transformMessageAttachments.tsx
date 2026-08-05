@@ -1,10 +1,10 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8100
+// Function ID: 8101
 // Name: transformMessageAttachments
-// Dependencies: [7852, 676, 1384, 4472, 8021, 500, 8129, 8020, 1236, 8041, 8130, 4823, 8039, 2]
+// Dependencies: [7824, 676, 1384, 4442, 7993, 500, 8101, 7992, 1236, 8013, 8102, 4808, 8011, 2]
 // Exports: default
 
-// Module 8128 (transformMessageAttachments)
+// Module 8100 (transformMessageAttachments)
 import { AttachmentType } from "Changeset";
 import { MessageAttachmentFlags } from "ME";
 

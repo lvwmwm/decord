@@ -1,10 +1,10 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16380
+// Function ID: 16381
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 6905, 589, 6907, 4711, 2]
+// Dependencies: [32, 19, 6890, 589, 6892, 4681, 2]
 // Exports: useConnectGuardianGate
 
-// Module 16399 (useConnectGuardianGate)
+// Module 16380 (useConnectGuardianGate)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -60,7 +60,7 @@ export const useConnectGuardianGate = function useConnectGuardianGate() {
       }
     });
   }, []);
-  importDefault(4711)(callback);
+  importDefault(4681)(callback);
   if (tmp3) {
     obj = { state: "error" };
   } else if (tmp4[0]) {

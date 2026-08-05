@@ -1,10 +1,10 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12566
+// Function ID: 12567
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment, useMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 12594 (apexExperiment)
+// Module 12566 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

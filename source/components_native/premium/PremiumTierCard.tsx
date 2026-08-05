@@ -1,10 +1,10 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12714
+// Function ID: 12715
 // Name: textLogoTier2
-// Dependencies: [19, 17, 6805, 1876, 21, 4285, 712, 5125, 1348, 4706, 691, 3931, 12743, 12744, 7311, 7251, 7252, 7306, 5317, 2]
+// Dependencies: [19, 17, 6790, 1876, 21, 4255, 712, 5110, 1348, 4676, 691, 3901, 12715, 12716, 7283, 7223, 7224, 7278, 5302, 2]
 // Exports: default
 
-// Module 12742 (textLogoTier2)
+// Module 12714 (textLogoTier2)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import { getPremiumGradientColor } from "items";
@@ -39,7 +39,7 @@ export default function _default(children) {
   obj[2] = require(691) /* keys */.HorizontalGradient.END;
   obj[3] = getPremiumGradientColor(premiumType);
   obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, source: null };
-  let obj2 = require(3931) /* getPremiumPlanItem */;
+  let obj2 = require(3901) /* getPremiumPlanItem */;
   obj[1] = obj2.getPremiumTypeDisplayName(premiumType);
   if (PremiumTypes.TIER_0 === premiumType) {
     let textLogoTier2 = tmp.textLogoTier0;
@@ -50,15 +50,15 @@ export default function _default(children) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp2Result = tmp2(12743);
+    let tmp2Result = tmp2(12715);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(12744);
+    tmp2Result = tmp2(12716);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7311);
+    tmp2Result = tmp2(7283);
   }
   obj[4] = tmp2Result;
   obj[4] = closure_7(closure_4, obj);
-  const items = [closure_7(importDefault(4706), obj), , ];
+  const items = [closure_7(importDefault(4676), obj), , ];
   const items1 = [tmp.wumpusLogo, ];
   if (PremiumTypes.TIER_0 === premiumType) {
     let wumpusLogoTier2 = tmp.wumpusLogoTier0;
@@ -70,11 +70,11 @@ export default function _default(children) {
   obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp2Result = tmp2(7251);
+    tmp2Result = tmp2(7223);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(7252);
+    tmp2Result = tmp2(7224);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7306);
+    tmp2Result = tmp2(7278);
   }
   obj[3] = tmp2Result;
   items[1] = closure_7(closure_4, obj);
@@ -92,7 +92,7 @@ export default function _default(children) {
     obj2 = { variant: "surface-high", style: null, children: null };
     obj2[1] = style;
     obj2[2] = tmp5Result;
-    let tmp7Result = tmp7(require(5317) /* PressableCard */.Card, obj2);
+    let tmp7Result = tmp7(require(5302) /* PressableCard */.Card, obj2);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = style;

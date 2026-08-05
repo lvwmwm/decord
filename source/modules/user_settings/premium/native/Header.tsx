@@ -1,10 +1,10 @@
-// Module ID: 12648
-// Function ID: 12649
+// Module ID: 12620
+// Function ID: 12621
 // Name: Header
-// Dependencies: [19, 17, 21, 4285, 4221, 5236, 1236, 4131, 7671, 12649, 4281, 2]
+// Dependencies: [19, 17, 21, 4255, 4191, 5221, 1236, 4101, 7643, 12621, 4251, 2]
 // Exports: default
 
-// Module 12648 (Header)
+// Module 12620 (Header)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,23 +22,23 @@ export default function Header(style) {
   let obj = { style: items, children: null };
   items = [tmp.container, style.style];
   obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", source: null };
-  const tmp4 = importDefault(4221)();
+  const tmp4 = importDefault(4191)();
   const tmp5 = closure_5;
   const tmp6 = View;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lpNrPu);
-  const tmp8 = importDefault(5236);
+  const tmp8 = importDefault(5221);
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(7671);
+    let tmp2Result = tmp2(7643);
   } else {
-    tmp2Result = tmp2(12649);
+    tmp2Result = tmp2(12621);
   }
   obj[3] = tmp2Result;
   const items1 = [closure_4(tmp8, obj), ];
   obj = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp9(1236).intl;
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.SD5MJW);
-  items1[1] = closure_4(require(4281) /* Text */.Text, obj);
+  items1[1] = closure_4(require(4251) /* Text */.Text, obj);
   obj[1] = items1;
   return tmp5(tmp6, obj);
 };

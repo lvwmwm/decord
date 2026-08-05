@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 10195
+// Module ID: 10166
+// Function ID: 10167
 // Name: _savedMessageJumpToMessage
-// Dependencies: [5, 19, 1376, 1372, 676, 1236, 3867, 589, 4295, 5774, 2]
+// Dependencies: [5, 19, 1376, 1372, 676, 1236, 3837, 589, 4265, 5759, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 10194 (_savedMessageJumpToMessage)
+// Module 10166 (_savedMessageJumpToMessage)
 import getSystemLocale from "getSystemLocale";
 import noop from "noop";
 import { UnknownChannelRecord } from "createChannelRecord";
@@ -34,7 +34,7 @@ function _savedMessageJumpToMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -84,11 +84,11 @@ function _savedMessageJumpToMessage() {
               if (null == closure_2.recipients) {
                 c5 = 0;
                 constants = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               } else if (closure_2.recipients.length > 1) {
                 c5 = 0;
                 constants = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               } else {
                 obj1 = lib(closure_2[8]);
                 const recipients = closure_2.recipients;
@@ -117,7 +117,7 @@ function _savedMessageJumpToMessage() {
           }
           lib(closure_2[9])(closure_8.CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId), { openChannel: true });
           constants = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp30) {
           let noop = tmp30;
           if (tmp4 === c5) {
@@ -171,9 +171,9 @@ export const useDueInString = function useDueInString(arg0) {
     const intl = tmp(1236).intl;
     obj = { duration: null };
     const time = dueAt.getTime();
-    const obj3 = importDefault(3867);
+    const obj3 = importDefault(3837);
     tmp8 = obj;
-    obj[0] = importDefault(3867).duration(time - now.getTime(), "millisecond").humanize();
+    obj[0] = importDefault(3837).duration(time - now.getTime(), "millisecond").humanize();
     obj[0] = intl.formatToPlainString(H4gnX9, obj);
     obj[1] = now > dueAt;
     return obj;

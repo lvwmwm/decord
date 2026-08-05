@@ -1,10 +1,10 @@
-// Module ID: 5816
-// Function ID: 5817
+// Module ID: 5801
+// Function ID: 5802
 // Name: getGuildModeratorReportChannelId
 // Dependencies: [2]
 // Exports: default
 
-// Module 5816 (getGuildModeratorReportChannelId)
+// Module 5801 (getGuildModeratorReportChannelId)
 const result = require("set").fileFinishedImporting("modules/report_to_mod/getGuildModeratorReportChannelId.tsx");
 
 export default function getGuildModeratorReportChannelId(moderatorReporting) {

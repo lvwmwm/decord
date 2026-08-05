@@ -1,10 +1,10 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12064
+// Function ID: 12065
 // Name: ScreenIcon
-// Dependencies: [19, 21, 712, 3988, 12093, 2]
+// Dependencies: [19, 21, 712, 3958, 12065, 2]
 // Exports: ScreenIcon
 
-// Module 12092 (ScreenIcon)
+// Module 12064 (ScreenIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ScreenIcon = function ScreenIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12093) /* registerAsset */;
+  obj[0] = require(12065) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

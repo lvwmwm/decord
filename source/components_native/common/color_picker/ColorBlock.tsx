@@ -1,9 +1,9 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13784
+// Function ID: 13785
 // Name: styles
-// Dependencies: [19, 17, 21, 4285, 712, 688, 4812, 4129, 1297, 10951, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 688, 4797, 4099, 1297, 10923, 2]
 
-// Module 13812 (styles)
+// Module 13784 (styles)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,7 +29,7 @@ const memoResult = require("noop").memo((color) => {
   const v = obj.int2hsv(color).v;
   if (null != onSelect) {
     obj = { accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, onPress: null, style: null, children: null };
-    let tmp2Result = tmp2(4129);
+    let tmp2Result = tmp2(4099);
     tmp2Result = tmp2(688);
     obj[1] = tmp2Result.hexToColorName(tmp2Result.int2hex(color), true);
     obj = { selected: null };
@@ -45,10 +45,10 @@ const memoResult = require("noop").memo((color) => {
     obj[4] = items;
     if (!selected) {
       obj[5] = null;
-      let tmp10Result = tmp6(tmp2(4812).PressableOpacity, obj);
+      let tmp10Result = tmp6(tmp2(4797).PressableOpacity, obj);
     } else {
       const obj2 = { source: null, color: null };
-      obj2[0] = onSelect(10951);
+      obj2[0] = onSelect(10923);
       if (v < 0.5) {
         unsafe_rawColors = tmp8(712).unsafe_rawColors;
         let BLACK2 = unsafe_rawColors.WHITE;
@@ -71,7 +71,7 @@ const memoResult = require("noop").memo((color) => {
       tmp10Result = tmp10(tmp11, obj3);
     } else {
       const obj5 = { source: null, color: null };
-      obj5[0] = onSelect(10951);
+      obj5[0] = onSelect(10923);
       if (v < 0.5) {
         let BLACK = tmp3(712).unsafe_rawColors.WHITE;
       } else {

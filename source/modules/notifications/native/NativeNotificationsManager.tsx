@@ -1,9 +1,9 @@
-// Module ID: 16765
-// Function ID: 16766
+// Module ID: 16746
+// Function ID: 16747
 // Name: getDeliveredNotifications
-// Dependencies: [5, 17, 7017, 4297, 676, 3, 16766, 10668, 11, 5229, 500, 8723, 698, 2]
+// Dependencies: [5, 17, 6991, 4267, 676, 3, 16747, 10640, 11, 5214, 500, 8695, 698, 2]
 
-// Module 16765 (getDeliveredNotifications)
+// Module 16746 (getDeliveredNotifications)
 import timestamp from "timestamp";
 import { NativeModules } from "get ActivityIndicator";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
@@ -36,7 +36,7 @@ function _getDeliveredNotifications() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ function _updateAndClearStaleNotifications() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -192,7 +192,7 @@ function _updateAndClearStaleNotifications() {
             }
           })();
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp8) {
         c2 = tmp;
@@ -216,8 +216,8 @@ let prototype = function NativeNotificationsManager() {
   applyArgumentsResult.handleAck = function handleAck(channelId) {
     channelId = channelId.channelId;
     if (obj.isIOS()) {
-      const result = callback(10668).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
-      const obj2 = callback(10668);
+      const result = callback(10640).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+      const obj2 = callback(10640);
     }
     if (null != channelId) {
       const DCDNotificationManager = closure_4.DCDNotificationManager;
@@ -239,7 +239,7 @@ let prototype = function NativeNotificationsManager() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -385,7 +385,7 @@ let prototype = function NativeNotificationsManager() {
                 if (null == outer1_3) {
                   dependencyMap = 0;
                   logger = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 } else {
                   const _Map = Map;
                   map = new Map();

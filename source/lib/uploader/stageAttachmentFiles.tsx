@@ -1,10 +1,10 @@
-// Module ID: 7221
-// Function ID: 7222
+// Module ID: 7195
+// Function ID: 7196
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 676, 4816, 2]
+// Dependencies: [5, 676, 4801, 2]
 // Exports: default
 
-// Module 7221 (_stageAttachmentFiles)
+// Module 7195 (_stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { AbortCodes } from "ME";
 
@@ -29,7 +29,7 @@ function _stageAttachmentFiles() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ function _stageAttachmentFiles() {
               closure_3 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -114,7 +114,7 @@ function _stageAttachmentFiles() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp12) {
           c5 = tmp;

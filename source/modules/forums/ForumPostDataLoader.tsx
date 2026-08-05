@@ -1,10 +1,10 @@
-// Module ID: 5829
-// Function ID: 5830
+// Module ID: 5814
+// Function ID: 5815
 // Name: loadForumPostData
-// Dependencies: [5, 1372, 5830, 5804, 5834, 676, 12, 11, 589, 530, 709, 2]
+// Dependencies: [5, 1372, 5815, 5789, 5819, 676, 12, 11, 589, 530, 709, 2]
 // Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 5829 (loadForumPostData)
+// Module 5814 (loadForumPostData)
 import ME from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { computeThreadIdsSnapshot } from "maybeRebuildState";
@@ -38,7 +38,7 @@ function _loadForumPostData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ function _loadForumPostDataForChannelId() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -156,7 +156,7 @@ function _loadForumPostDataForChannelId() {
                 channel = 0;
                 outer1_10.finishRequesting(tmp55, nextBatch);
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               } else {
                 channel = channel.getChannel(tmp55);
                 guild_id = undefined;
@@ -167,7 +167,7 @@ function _loadForumPostDataForChannelId() {
                   channel = 0;
                   outer1_10.finishRequesting(tmp55, nextBatch);
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 } else {
                   const HTTP = callback(outer1_2[9]).HTTP;
                   const obj1 = { url: null, body: null, rejectWithError: true };

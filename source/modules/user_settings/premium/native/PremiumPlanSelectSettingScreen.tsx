@@ -1,10 +1,10 @@
-// Module ID: 14140
-// Function ID: 14141
+// Module ID: 14114
+// Function ID: 14115
 // Name: PremiumPlanSelectSettingScreen
-// Dependencies: [19, 21, 6787, 12718, 2]
+// Dependencies: [19, 21, 6772, 12690, 2]
 // Exports: default
 
-// Module 14140 (PremiumPlanSelectSettingScreen)
+// Module 14114 (PremiumPlanSelectSettingScreen)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -12,9 +12,9 @@ const require = arg1;
 const result = require("useSettingNavigationRoute").fileFinishedImporting("modules/user_settings/premium/native/PremiumPlanSelectSettingScreen.tsx");
 
 export default function PremiumPlanSelectSettingScreen() {
-  let obj = require(6787) /* useSettingNavigationRoute */;
+  let obj = require(6772) /* useSettingNavigationRoute */;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   obj = {};
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(12718), {});
+  return jsx(importDefault(12690), {});
 };

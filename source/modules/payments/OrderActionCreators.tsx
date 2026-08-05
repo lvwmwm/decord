@@ -1,10 +1,10 @@
-// Module ID: 5773
-// Function ID: 5774
+// Module ID: 5758
+// Function ID: 5759
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 3953, 530, 3946, 2]
+// Dependencies: [5, 676, 3, 3923, 530, 3916, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
-// Module 5773 (_signOrder)
+// Module 5758 (_signOrder)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { Endpoints } from "ME";
 import "set";
@@ -33,7 +33,7 @@ function _signOrder() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ function _signOrder() {
               let c4;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -179,7 +179,7 @@ function _getOrder() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -282,7 +282,7 @@ function _fetchOrderEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

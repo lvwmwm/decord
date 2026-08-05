@@ -1,10 +1,10 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 15948
+// Function ID: 15949
 // Name: BaseActivityPanelFocusedView
-// Dependencies: [19, 17, 4277, 1372, 1371, 4310, 9674, 15962, 676, 11558, 21, 4285, 712, 1581, 589, 1474, 15957, 10124, 4146, 4629, 4286, 4694, 3997, 4678, 3903, 15959, 15968, 10513, 10630, 2]
+// Dependencies: [19, 17, 4247, 1372, 1371, 4280, 9645, 15943, 676, 11530, 21, 4255, 712, 1581, 589, 1474, 15938, 10095, 4116, 4599, 4256, 4664, 3967, 4648, 3873, 15940, 15949, 10485, 10602, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 15967 (BaseActivityPanelFocusedView)
+// Module 15948 (BaseActivityPanelFocusedView)
 import importAllResult from "wrapChildrenDefault";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -64,7 +64,7 @@ class BaseActivityPanelFocusedView {
     tmp7 = require("useAnimatedKeyboardHeight")();
     c10 = tmp7;
     lg = require("Themes").radii.lg;
-    obj3 = require("module_4146");
+    obj3 = require("module_4116");
     fn = function _() {
       let num = 0;
       if (!wrapperDimensions.isWindowLandscape) {
@@ -147,13 +147,13 @@ class BaseActivityPanelFocusedView {
         tmp21 = wrapperOffset;
       }
     };
-    obj = { wrapperDimensions, lg, IS_IOS, animatedKeyboardHeight: tmp7, windowDimensions: tmp3, safeArea: tmp4, shown, wrapperOffset, transitionState, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4146").runOnJS, transitionCleanUp, reduceMotion: stateFromStores, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: jsxs, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: wrapperOffset, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: shown };
+    obj = { wrapperDimensions, lg, IS_IOS, animatedKeyboardHeight: tmp7, windowDimensions: tmp3, safeArea: tmp4, shown, wrapperOffset, transitionState, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4116").runOnJS, transitionCleanUp, reduceMotion: stateFromStores, withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, REDUCED_MOTION_TIMING: jsxs, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, ACTIVITY_LAYOUT_PHYSICS_GESTURE: wrapperOffset, ACTIVITY_LAYOUT_PHYSICS_DEFAULT: shown };
     fn.__closure = obj;
     fn.__workletHash = 3642447648301;
     fn.__initData = jsxs;
     animatedStyle = obj3.useAnimatedStyle(fn);
     _ = animatedStyle;
-    obj5 = require("module_4146");
+    obj5 = require("module_4116");
     class T {
       constructor() {
         obj = wrapperOffset;
@@ -186,7 +186,7 @@ class BaseActivityPanelFocusedView {
       const items = [_undefined.wrapper, animatedStyle];
       return items;
     }, items1);
-    obj7 = require("module_4146");
+    obj7 = require("module_4116");
     class A {
       constructor() {
         num = 0;
@@ -214,7 +214,7 @@ class BaseActivityPanelFocusedView {
     items3[0] = tmp2.shade;
     items3[1] = animatedStyle1;
     items4 = [, ];
-    items4[0] = jsx(require("module_4146").View, { style: items3, pointerEvents: "none" });
+    items4[0] = jsx(require("module_4116").View, { style: items3, pointerEvents: "none" });
     obj3 = { style: memo, nativeID: "activity-panel-focused-view", accessibilityViewIsModal: true, onAccessibilityEscape: callback, children: null };
     obj4 = { style: animatedStyle2, children: null };
     tmp15 = null;
@@ -226,7 +226,7 @@ class BaseActivityPanelFocusedView {
     }
     obj4[1] = tmp15;
     items5 = [, ];
-    items5[0] = tmp14(require("module_4146").View, obj4);
+    items5[0] = tmp14(require("module_4116").View, obj4);
     items5[1] = header;
     obj3[4] = items5;
     items4[1] = tmp13(require("AccessibilityView").AccessibilityViewAnimated, obj3);

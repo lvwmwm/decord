@@ -1,9 +1,9 @@
-// Module ID: 16077
-// Function ID: 16078
+// Module ID: 16058
+// Function ID: 16059
 // Name: VoicePanelModes
-// Dependencies: [32, 19, 17, 11558, 11556, 16032, 11559, 21, 4146, 10613, 4285, 11557, 4694, 8698, 4254, 5368, 10603, 16036, 10606, 10604, 16026, 10245, 15948, 9681, 3989, 712, 4286, 7819, 10610, 2]
+// Dependencies: [32, 19, 17, 11530, 11528, 16013, 11531, 21, 4116, 10585, 4255, 11529, 4664, 8670, 4224, 5353, 10575, 16017, 10578, 10576, 16007, 10217, 15929, 9652, 3959, 712, 4256, 7791, 10582, 2]
 
-// Module 16077 (VoicePanelModes)
+// Module 16058 (VoicePanelModes)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "useVideoSpinnerTimer";
 import { PixelRatio } from "context";
@@ -12,9 +12,9 @@ import { VoicePanelControlsModes } from "VoicePanelControlsModes";
 import { VoicePanelPIPModes } from "VoicePanelPIPModes";
 import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE";
 import jsxProd from "u";
-import module_10613 from "module_10613";
+import module_10585 from "module_10585";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4146";
+import importDefaultResult from "module_4116";
 
 let closure_12;
 let unpackModuleId;
@@ -1056,8 +1056,8 @@ const memoResult = importAllResult.memo(function VideoRenderer(streamKey) {
         tmp4 = streamKey;
         if (!obj.cheapWorkletShallowEqual(streamKey, tmp)) {
           tmp2Result = tmp2(tmp3[8]);
-          tmp5 = f98800;
-          tmp6 = tmp2Result.runOnJS(f98800)();
+          tmp5 = f98740;
+          tmp6 = tmp2Result.runOnJS(f98740)();
         }
       }
       return;

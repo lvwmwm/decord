@@ -1,10 +1,10 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 9933
+// Function ID: 9934
 // Name: PremiumFeaturesPromotionalLogo
-// Dependencies: [32, 19, 4277, 21, 589, 9304, 500, 7336, 5236, 2]
+// Dependencies: [32, 19, 4247, 21, 589, 9275, 500, 7308, 5221, 2]
 // Exports: default
 
-// Module 9962 (PremiumFeaturesPromotionalLogo)
+// Module 9933 (PremiumFeaturesPromotionalLogo)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

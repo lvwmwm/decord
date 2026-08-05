@@ -1,18 +1,18 @@
-// Module ID: 11127
-// Function ID: 11128
+// Module ID: 11099
+// Function ID: 11100
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1372, 676, 4278, 21, 4285, 712, 6826, 7062, 698, 5630, 5310, 589, 7786, 1236, 11128, 9848, 4695, 4490, 5598, 5238, 5665, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 676, 4248, 21, 4255, 712, 6811, 7036, 698, 5615, 5295, 589, 7758, 1236, 11100, 9819, 4665, 4460, 5583, 5223, 5650, 2]
 // Exports: default
 
-// Module 11127 (_sendGiftIntentGif)
+// Module 11099 (_sendGiftIntentGif)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
-import module_9848 from "module_9848";
+import module_9819 from "module_9819";
 import { View } from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
-import jsxProd from "module_4490";
+import jsxProd from "module_4460";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -40,7 +40,7 @@ function _sendGiftIntentGif() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -65,7 +65,7 @@ function _sendGiftIntentGif() {
               c4 = undefined;
               url = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -118,7 +118,7 @@ function _sendGiftIntentGif() {
               obj5[2] = items;
               callback(c2[12]).track(constants.GIFT_INTENT_MESSAGE_SENT, obj5);
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
             obj2 = callback(c2[10]);
             const id = user.id;

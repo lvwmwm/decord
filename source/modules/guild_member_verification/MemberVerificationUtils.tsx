@@ -1,10 +1,10 @@
-// Module ID: 4772
-// Function ID: 4773
+// Module ID: 4742
+// Function ID: 4743
 // Name: isValidFormResponse
-// Dependencies: [4773, 676, 4105, 1351, 2]
+// Dependencies: [4743, 676, 4075, 1351, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 4772 (isValidFormResponse)
+// Module 4742 (isValidFormResponse)
 import items from "items";
 import { GuildFeatures } from "ME";
 
@@ -21,11 +21,11 @@ export const isValidFormResponse = function isValidFormResponse(required) {
     if (null == response) {
       return false;
     } else {
-      if (require(4105) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS !== field_type) {
-        if (tmp4(4105).VerificationFormFieldTypes.VERIFICATION !== field_type) {
-          if (tmp4(4105).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
-            if (tmp4(4105).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
-              if (tmp4(4105).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
+      if (require(4075) /* MAX_RESULTS_PER_PAGE */.VerificationFormFieldTypes.TERMS !== field_type) {
+        if (tmp4(4075).VerificationFormFieldTypes.VERIFICATION !== field_type) {
+          if (tmp4(4075).VerificationFormFieldTypes.TEXT_INPUT !== field_type) {
+            if (tmp4(4075).VerificationFormFieldTypes.PARAGRAPH !== field_type) {
+              if (tmp4(4075).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
                 return tmp4(1351).assertNever(field_type);

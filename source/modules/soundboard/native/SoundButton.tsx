@@ -1,17 +1,17 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 15996
+// Function ID: 15997
 // Name: SoundButtonEmoji
-// Dependencies: [19, 17, 1874, 16009, 21, 4146, 4285, 712, 500, 4812, 4694, 5301, 11254, 16016, 589, 16017, 5610, 5630, 5868, 3931, 8181, 8184, 3986, 10846, 1236, 16019, 4281, 4804, 2]
+// Dependencies: [19, 17, 1874, 15990, 21, 4116, 4255, 712, 500, 4797, 4664, 5286, 11226, 15997, 589, 15998, 5595, 5615, 5853, 3901, 8153, 8156, 3956, 10818, 1236, 16000, 4251, 4774, 2]
 
-// Module 16015 (SoundButtonEmoji)
+// Module 15996 (SoundButtonEmoji)
 import importAllResult from "getPremiumPlanItem";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "EntitlementFeatureNames";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4146";
+import importDefaultResult from "module_4116";
 import set from "set";
-import importDefaultResult1 from "module_4146";
+import importDefaultResult1 from "module_4116";
 import set from "mergeGuildAvatar";
 
 let closure_6;
@@ -23,7 +23,7 @@ function SoundButtonEmoji(arg0) {
   ({ sound, sharedValues } = arg0);
   const tmp = callback2();
   let obj = { sharedValues, scaleFactors: { pressed: 0.8, playing: 1.2 } };
-  let obj1 = obj(4146);
+  let obj1 = obj(4116);
   const fn = function t() {
     const pressed = obj.sharedValues.pressed;
     const playing = obj.sharedValues.playing;
@@ -65,13 +65,13 @@ function SoundButtonEmoji(arg0) {
     obj[0] = items2;
     return obj;
   };
-  obj = { animationConfig: obj, withDelay: obj(4146).withDelay, withSpring: obj(4694).withSpring, interpolate: obj(4146).interpolate, SPRING_CONFIG: closure_9 };
+  obj = { animationConfig: obj, withDelay: obj(4116).withDelay, withSpring: obj(4664).withSpring, interpolate: obj(4116).interpolate, SPRING_CONFIG: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 13932429225740;
   fn.__initData = closure_12;
   obj = { sharedValues, scaleFactors: { pressed: 0.7200000000000001, playing: 1.08 }, playingAnimationDelay: 100, pressedRotationDegrees: -15 };
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  let obj4 = obj(4146);
+  let obj4 = obj(4116);
   const fn2 = function t() {
     const pressed = obj.sharedValues.pressed;
     const playing = obj.sharedValues.playing;
@@ -113,7 +113,7 @@ function SoundButtonEmoji(arg0) {
     obj[0] = items2;
     return obj;
   };
-  obj1 = { animationConfig: obj, withDelay: obj(4146).withDelay, withSpring: obj(4694).withSpring, interpolate: obj(4146).interpolate, SPRING_CONFIG: closure_9 };
+  obj1 = { animationConfig: obj, withDelay: obj(4116).withDelay, withSpring: obj(4664).withSpring, interpolate: obj(4116).interpolate, SPRING_CONFIG: closure_9 };
   fn2.__closure = obj1;
   fn2.__workletHash = 13932429225740;
   fn2.__initData = closure_12;
@@ -121,19 +121,19 @@ function SoundButtonEmoji(arg0) {
   items = [tmp.emojiWrapper, animatedStyle];
   const obj3 = { style: obj4.useAnimatedStyle(fn2), children: null };
   obj4 = { fastImageStyle: tmp.emoji, textEmojiStyle: tmp.emoji, src: null, name: null };
-  obj4[2] = importDefault(11254)(sound, 24);
+  obj4[2] = importDefault(11226)(sound, 24);
   let str = sound.emojiName;
   if (str == null) {
     str = "";
   }
   obj4[3] = str;
-  obj3[1] = closure_6(importDefault(5301), obj4);
+  obj3[1] = closure_6(importDefault(5286), obj4);
   obj2[1] = closure_6(closure_8, obj3);
   return closure_6(closure_8, obj2);
 }
 let c3 = importAllResult;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-let closure_8 = require("module_4146").createAnimatedComponent(View);
+let closure_8 = require("module_4116").createAnimatedComponent(View);
 let closure_9 = { damping: 10, stiffness: 300, mass: 1 };
 let obj = { button: null, buttonPressed: null, buttonDisabled: null, buttonPlaying: null, playingBackground: null, emoji: null, emojiWrapper: null, text: null, textPlaying: null, lock: null };
 obj = { marginTop: 4, height: require("SOUND_BUTTON_HEIGHT").SOUND_BUTTON_HEIGHT, backgroundColor: require("Themes").colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: require("Themes").radii.lg, borderWidth: 1, borderColor: require("Themes").colors.BORDER_MUTED };
@@ -158,7 +158,7 @@ let obj4 = { display: "flex", alignItems: "center", justifyContent: "center", he
 obj[9] = { position: "absolute", top: require("Themes").space.PX_12, end: require("Themes").space.PX_12, width: 12, height: 12, tintColor: require("Themes").colors.WHITE };
 let closure_10 = createCacheKey.createStyles(obj);
 const obj5 = { position: "absolute", top: require("Themes").space.PX_12, end: require("Themes").space.PX_12, width: 12, height: 12, tintColor: require("Themes").colors.WHITE };
-let closure_11 = require("module_4146").createAnimatedComponent(require("PressableBase").PressableOpacity);
+let closure_11 = require("module_4116").createAnimatedComponent(require("PressableBase").PressableOpacity);
 let closure_12 = { code: "function SoundButtonTsx1(){const{animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG}=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+\"deg\"}]};}" };
 let result = set.fileFinishedImporting("modules/soundboard/native/SoundButton.tsx");
 

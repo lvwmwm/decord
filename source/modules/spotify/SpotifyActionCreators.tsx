@@ -1,10 +1,10 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 11036
+// Function ID: 11037
 // Name: apiRequest
-// Dependencies: [11063, 8825, 676, 4170, 530, 709, 687, 500, 9198, 2]
+// Dependencies: [11035, 8797, 676, 4140, 530, 709, 687, 500, 9170, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
-// Module 11064 (apiRequest)
+// Module 11036 (apiRequest)
 import isProtocolRegistered from "isProtocolRegistered";
 import WEB_OPEN from "WEB_OPEN";
 import ME from "ME";
@@ -556,13 +556,13 @@ export const pause = function pause(arg0, arg1) {
 export const fetchIsSpotifyProtocolRegistered = function fetchIsSpotifyProtocolRegistered() {
   if (!protocolRegistered.isProtocolRegistered()) {
     if (obj.isDesktop()) {
-      const obj2 = importDefault(9198);
-      importDefault(9198).isProtocolRegistered(closure_4).then((isRegistered) => {
+      const obj2 = importDefault(9170);
+      importDefault(9170).isProtocolRegistered(closure_4).then((isRegistered) => {
         let obj = callback(table[5]);
         obj = { type: "SPOTIFY_SET_PROTOCOL_REGISTERED", isRegistered };
         obj.dispatch(obj);
       });
-      const isProtocolRegisteredResult = importDefault(9198).isProtocolRegistered(closure_4);
+      const isProtocolRegisteredResult = importDefault(9170).isProtocolRegistered(closure_4);
     }
     obj = require(500) /* set */;
   }

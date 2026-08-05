@@ -1,10 +1,10 @@
-// Module ID: 15780
-// Function ID: 15781
+// Module ID: 15761
+// Function ID: 15762
 // Name: SlashIcon
-// Dependencies: [19, 21, 712, 3988, 15781, 2]
+// Dependencies: [19, 21, 712, 3958, 15762, 2]
 // Exports: SlashIcon
 
-// Module 15780 (SlashIcon)
+// Module 15761 (SlashIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const SlashIcon = function SlashIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15781) /* registerAsset */;
+  obj[0] = require(15762) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

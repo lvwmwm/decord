@@ -1,10 +1,10 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 9789
+// Function ID: 9790
 // Name: LockUnlockedIcon
-// Dependencies: [19, 21, 712, 3988, 9819, 2]
+// Dependencies: [19, 21, 712, 3958, 9790, 2]
 // Exports: LockUnlockedIcon
 
-// Module 9818 (LockUnlockedIcon)
+// Module 9789 (LockUnlockedIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const LockUnlockedIcon = function LockUnlockedIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9819) /* registerAsset */;
+  obj[0] = require(9790) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

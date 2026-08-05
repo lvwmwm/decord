@@ -1,9 +1,9 @@
-// Module ID: 4964
-// Function ID: 4965
+// Module ID: 4949
+// Function ID: 4950
 // Name: set
-// Dependencies: [4965, 676, 4966, 1411, 5090, 589, 709, 2]
+// Dependencies: [4950, 676, 4951, 1411, 5075, 589, 709, 2]
 
-// Module 4964 (set)
+// Module 4949 (set)
 import toString from "toString";
 import { Store } from "initialize";
 import set from "getPlatformUserUrl";
@@ -112,7 +112,7 @@ const connectedAccountsStore = new ConnectedAccountsStore(require("dispatcher"),
         let c5 = false;
       }
     }
-    const response = importDefault(5090).fetch();
+    const response = importDefault(5075).fetch();
   },
   USER_CONNECTIONS_INTEGRATION_JOINING: function handleJoining(integrationId) {
     closure_8[integrationId.integrationId] = integrationId.joining;
@@ -154,7 +154,7 @@ const connectedAccountsStore = new ConnectedAccountsStore(require("dispatcher"),
     let provider;
     let state;
     ({ code, state, openid_params, provider } = arg0);
-    importDefault(5090).callback(provider, { code, state, openid_params });
+    importDefault(5075).callback(provider, { code, state, openid_params });
   }
 });
 const result = set.fileFinishedImporting("stores/ConnectedAccountsStore.tsx");

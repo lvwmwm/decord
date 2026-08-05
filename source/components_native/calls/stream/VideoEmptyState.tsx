@@ -1,10 +1,10 @@
-// Module ID: 10595
-// Function ID: 10596
+// Module ID: 10567
+// Function ID: 10568
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 1372, 676, 21, 4285, 712, 10596, 1297, 1236, 10599, 9091, 589, 4711, 4464, 4348, 4281, 4696, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 4255, 712, 10568, 1297, 1236, 10571, 9063, 589, 4681, 4434, 4318, 4251, 4666, 2]
 // Exports: default
 
-// Module 10595 (VideoEmptyState)
+// Module 10567 (VideoEmptyState)
 import "noop";
 import { View } from "CollapsingText";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -44,7 +44,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp16 = callback(stream(10596).StreamEnded, obj);
+      tmp16 = callback(stream(10568).StreamEnded, obj);
     }
     obj = { children: null };
     const items = [tmp16, ];
@@ -62,7 +62,7 @@ export default function VideoEmptyState(style) {
     if (!removeSplashImage) {
       obj = { style: null };
       obj[0] = tmp2.placeholderImage;
-      tmp7 = callback(stream(10599).StreamFailed, obj);
+      tmp7 = callback(stream(10571).StreamFailed, obj);
     }
     let obj2 = { children: null };
     const items1 = [tmp7, ];
@@ -79,20 +79,20 @@ export default function VideoEmptyState(style) {
     tmp5Result = null;
   }
   if (null != avError) {
-    let obj7 = stream(9091);
+    let obj7 = stream(9063);
     let errorCode = obj7.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === tmp3.STREAM_FAILED) {
-      let obj6 = stream(9091);
-      errorCode = obj6.getErrorInfo(stream(9091).AVError.STREAM_FAILED_TO_START).errorCode;
+      let obj6 = stream(9063);
+      errorCode = obj6.getErrorInfo(stream(9063).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   let obj8 = stream(589);
   const items2 = [ensureGuildLoaded];
   const items3 = [stream.channelId];
   importDefault = obj8.useStateFromStores(items2, () => outer1_4.getChannel(stream.channelId), items3);
-  importDefault(4711)(() => {
+  importDefault(4681)(() => {
     let isGuildStageVoiceResult;
     if (closure_1 != null) {
       isGuildStageVoiceResult = closure_1.isGuildStageVoice();
@@ -115,7 +115,7 @@ export default function VideoEmptyState(style) {
     obj6 = { errorCode: null };
     obj6[0] = errorCode;
     obj5[3] = intl3.formatToPlainString(tmp28(1236).t.ejOT95, obj6);
-    tmp34 = callback(tmp28(4281).Text, obj5);
+    tmp34 = callback(tmp28(4251).Text, obj5);
   }
   items5[1] = tmp34;
   let tmp36 = !removeCloseButton;
@@ -130,7 +130,7 @@ export default function VideoEmptyState(style) {
       const obj = stream(outer1_2[14]);
       obj.stopStream(stream(outer1_2[15]).encodeStreamKey(stream));
     };
-    obj7[1] = callback(tmp28(4696).BaseTextButton, obj8);
+    obj7[1] = callback(tmp28(4666).BaseTextButton, obj8);
     tmp36 = callback(tmp32, obj7);
   }
   items5[2] = tmp36;

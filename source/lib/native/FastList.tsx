@@ -1,16 +1,16 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 7790
+// Function ID: 7791
 // Name: renderDefaultEmpty
-// Dependencies: [109, 32, 19, 17, 21, 12, 643, 5663, 4281, 500, 4146, 7819, 7820, 5340, 7821, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 643, 5648, 4251, 500, 4116, 7791, 7792, 5325, 7793, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7818 (renderDefaultEmpty)
+// Module 7790 (renderDefaultEmpty)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import importDefaultResult from "module_4146";
+import importDefaultResult from "module_4116";
 
 let StyleSheet;
 let c10;
@@ -1436,7 +1436,7 @@ let closure_21 = importAllResult.memo(function _FastListSectionRenderer(disableW
   fastListInstance = children(section, fastListInstance);
   section = [fastListInstance, false];
   obj1[3] = section;
-  closure_10(importDefault(5663), obj1);
+  closure_10(importDefault(5648), obj1);
 });
 let closure_22 = importAllResult.memo(function _FastListSectionFooterRenderer(disableWrapper) {
   let children;
@@ -1464,7 +1464,7 @@ let closure_22 = importAllResult.memo(function _FastListSectionFooterRenderer(di
   children = children(section, fastListInstance);
   section = [children, false];
   obj1[2] = section;
-  closure_10(importDefault(5663), obj1);
+  closure_10(importDefault(5648), obj1);
 });
 let closure_23 = importAllResult.memo(function _FastListItemRenderer(disableWrapper) {
   let children;
@@ -1497,7 +1497,7 @@ let closure_23 = importAllResult.memo(function _FastListItemRenderer(disableWrap
   }
   const items = [childrenResult1, false];
   obj[2] = items;
-  childrenResult = closure_10(importDefault(5663), obj);
+  childrenResult = closure_10(importDefault(5648), obj);
 });
 let closure_24 = importAllResult.memo(function _FastListHeaderFooterRenderer(disableWrapper) {
   let children;
@@ -1524,7 +1524,7 @@ let closure_24 = importAllResult.memo(function _FastListHeaderFooterRenderer(dis
   children = children(fastListInstance);
   fastListInstance = [children, false];
   obj1[3] = fastListInstance;
-  closure_10(importDefault(5663), obj1);
+  closure_10(importDefault(5648), obj1);
 });
 let closure_25 = importAllResult.memo(function _FastListSpacer(layoutSize) {
   layoutSize = layoutSize.layoutSize;
@@ -1536,7 +1536,7 @@ let closure_25 = importAllResult.memo(function _FastListSpacer(layoutSize) {
     style = { height: null };
     style[0] = layoutSize;
   }
-  return closure_11(importDefault(5663), { collapsable: false, style });
+  return closure_11(importDefault(5648), { collapsable: false, style });
 });
 let c26 = 1000;
 let c27 = 0.5;
@@ -2243,8 +2243,8 @@ prototype4["getInitialState"] = function getInitialState(result, setInfo, isFirs
     const result2 = scrollPosValue.set(tmp10);
     self.scrollPosValue = scrollPosValue;
   } else {
-    self.scrollPosValue = require(4146).makeMutable(tmp10);
-    const obj3 = require(4146);
+    self.scrollPosValue = require(4116).makeMutable(tmp10);
+    const obj3 = require(4116);
   }
   if (result > 0) {
     let computeResult = setInfo.compute(tmp3, sum, items, true);
@@ -2758,14 +2758,14 @@ prototype4["render"] = function render() {
     removeClippedSubviews = obj.isAndroid();
   }
   if (props.inActionSheet) {
-    let BottomSheetScrollView = require(5340) /* BottomSheetModal */.BottomSheetScrollView;
+    let BottomSheetScrollView = require(5325) /* BottomSheetModal */.BottomSheetScrollView;
   } else {
     BottomSheetScrollView = closure_8;
   }
   obj = {};
   const merged = Object.assign(callback(props, closure_3));
   obj.accessibilityRole = "list";
-  obj.ref = importDefault(7821)(self.scrollView);
+  obj.ref = importDefault(7793)(self.scrollView);
   obj.scrollEventThrottle = 16;
   obj.contentOffset = self.state.initialContentOffset;
   ({ handleScroll: obj2.onScroll, handleLayout: obj2.onLayout, handleMomentumScrollEnd: obj2.onMomentumScrollEnd, handleScrollBeginDrag: obj2.onScrollBeginDrag } = self);
@@ -2789,7 +2789,7 @@ prototype4["render"] = function render() {
 };
 FastList.defaultProps = { batchesToRender: 12, contentInset: { top: 0, right: 0, left: 0, bottom: 0 }, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false };
 let closure_29 = { code: "function FastListTsx2(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
-const animatedComponent = require("module_4146").createAnimatedComponent(FastList);
+const animatedComponent = require("module_4116").createAnimatedComponent(FastList);
 let result = require("noop").fileFinishedImporting("lib/native/FastList.tsx");
 
 export default FastList;

@@ -1,9 +1,9 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 12962
+// Function ID: 12963
 // Name: start
-// Dependencies: [32, 7122, 4384, 12991, 7128, 4381, 12, 4360, 2]
+// Dependencies: [32, 7096, 4354, 12963, 7102, 4351, 12, 4330, 2]
 
-// Module 12990 (start)
+// Module 12962 (start)
 import _slicedToArray from "_slicedToArray";
 import "on";
 
@@ -471,11 +471,11 @@ class VoiceQuality extends tmp2 {
 const prototype = VoiceQuality.prototype;
 prototype["start"] = function start() {
   const connection = this.connection;
-  connection.on(require(4381) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.on(require(4351) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["stop"] = function stop() {
   const connection = this.connection;
-  connection.off(require(4381) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.off(require(4351) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["getMosStats"] = function getMosStats() {
   const reduced = importDefault(12).reduce(this.inboundStats, (mosSum, mosSum2) => {
@@ -597,7 +597,7 @@ prototype["getBufferStats"] = function getBufferStats() {
           let obj4 = obj[key10055];
           let tmp29 = require;
           let tmp30 = dependencyMap;
-          if (obj4 instanceof require(7122) /* getSamples */.Histogram) {
+          if (obj4 instanceof require(7096) /* getSamples */.Histogram) {
             let report = obj4.getReport([75, 95, 99]);
             let _Math = Math;
             let text = `${key10055}_mean`;

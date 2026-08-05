@@ -1,9 +1,9 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15106
+// Function ID: 15107
 // Name: getFriendInviteCode
-// Dependencies: [5, 19, 17, 676, 21, 12444, 712, 4285, 7679, 3985, 1236, 8987, 7138, 4137, 4812, 4281, 13108, 15127, 2]
+// Dependencies: [5, 19, 17, 676, 21, 12416, 712, 4255, 7651, 3955, 1236, 8959, 7112, 4107, 4797, 4251, 13080, 15107, 2]
 
-// Module 15126 (getFriendInviteCode)
+// Module 15106 (getFriendInviteCode)
 import ButtonBadge from "ButtonBadge";
 import importAllResult from "noop";
 import { View } from "registerAsset";
@@ -38,7 +38,7 @@ function _getFriendInviteCode() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ function _getFriendInviteCode() {
           }
         } else if (1 === tmp7) {
           c3 = 0;
-          let obj2 = code(3985);
+          let obj2 = code(3955);
           const intl = code(1236).intl;
           obj2.presentError(intl.string(code(1236).t.R0RpRX));
           c5 = 3;
@@ -133,7 +133,7 @@ function _handleShare() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -167,13 +167,13 @@ function _handleShare() {
           return obj;
         } else {
           callback = arg1;
-          const obj5 = callback(8987);
+          const obj5 = callback(8959);
           const intl = callback(1236).intl;
           const obj2 = { link: null };
-          obj2[0] = callback2(7138)(callback);
+          obj2[0] = callback2(7112)(callback);
           obj5.handleOpenShareSheet(callback, null, intl.formatToPlainString(callback(1236).t.PJf9P9, obj2), constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp7) {
         c3 = tmp;
@@ -214,7 +214,7 @@ function _handleLink() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -251,7 +251,7 @@ function _handleLink() {
           obj = callback(table[11]);
           obj.handleCopy(callback, null, constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp15) {
         c3 = tmp;
@@ -304,22 +304,22 @@ const memoResult = importAllResult.memo(function MessagesItemAddFriendsWidget() 
   obj = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl2.string(require(1236) /* getSystemLocale */.t.afcl67);
-  obj[4] = callback2(require(4281) /* Text */.Text, obj);
-  const items = [callback2(require(4812) /* PressableBase */.PressableHighlight, obj), ];
+  obj[4] = callback2(require(4251) /* Text */.Text, obj);
+  const items = [callback2(require(4797) /* PressableBase */.PressableHighlight, obj), ];
   const obj1 = { style: tmp.actions, children: null };
   const obj2 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  obj2[2] = importDefault(13108);
+  obj2[2] = importDefault(13080);
   obj2[3] = handleShare;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[4] = intl3.string(require(1236) /* getSystemLocale */.t.Ej3B3Y);
-  const items1 = [callback2(importDefault(12444), obj2), ];
+  const items1 = [callback2(importDefault(12416), obj2), ];
   const obj3 = { style: tmp.actionIcon, variant: "filled", source: null, onPress: null, accessibilityLabel: null };
-  const tmp3 = importDefault(12444);
-  obj3[2] = importDefault(15127);
+  const tmp3 = importDefault(12416);
+  obj3[2] = importDefault(15107);
   obj3[3] = handleLink;
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj3[4] = intl4.string(require(1236) /* getSystemLocale */.t.WqhZss);
-  items1[1] = callback2(importDefault(12444), obj3);
+  items1[1] = callback2(importDefault(12416), obj3);
   obj1[1] = items1;
   items[1] = callback3(View, obj1);
   obj[2] = items;

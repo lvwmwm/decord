@@ -1,10 +1,10 @@
-// Module ID: 15446
-// Function ID: 15447
+// Module ID: 15427
+// Function ID: 15428
 // Name: ICYMICustomScoreChannelRow
-// Dependencies: [32, 19, 17, 6893, 1372, 1862, 4480, 8820, 21, 4285, 712, 589, 4475, 8834, 1236, 4253, 15447, 1959, 4745, 5315, 1297, 9737, 4281, 6896, 1581, 15448, 9396, 7666, 2]
+// Dependencies: [32, 19, 17, 6878, 1372, 1862, 4450, 8792, 21, 4255, 712, 589, 4445, 8806, 1236, 4223, 15428, 1959, 4715, 5300, 1297, 9708, 4251, 6881, 1581, 15429, 9367, 7638, 2]
 // Exports: default
 
-// Module 15446 (ICYMICustomScoreChannelRow)
+// Module 15427 (ICYMICustomScoreChannelRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowInner from "TableRowInner";
 import { View } from "asyncRequireImpl";
@@ -170,7 +170,7 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   let tmp2Result = tmp2(589);
   const items2 = [filterStaffGuild];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => outer1_10.getCustomGuildScore(guildId));
-  tmp2Result = tmp2(8834);
+  tmp2Result = tmp2(8806);
   const numberToCustomScoreResult = tmp2Result.numberToCustomScore(stateFromStores1);
   React = numberToCustomScoreResult;
   const items3 = [handleReset];
@@ -324,6 +324,6 @@ export default function ICYMICustomScoresGuildScreen(navigation) {
   obj[2] = callback;
   obj[3] = memo;
   obj[4] = keyExtractor;
-  obj[1] = callback(navigation(7666).AnimatedFlashList, obj);
+  obj[1] = callback(navigation(7638).AnimatedFlashList, obj);
   return callback(guildChannels, obj);
 };

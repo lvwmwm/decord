@@ -1,10 +1,10 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14039
+// Function ID: 14040
 // Name: FamilyCenterAcceptedLinkRow
-// Dependencies: [19, 17, 6906, 21, 4285, 712, 7260, 7259, 11239, 1236, 2285, 4281, 14066, 14068, 4812, 4490, 14071, 1959, 1297, 14073, 2]
+// Dependencies: [19, 17, 6891, 21, 4255, 712, 7232, 7231, 11211, 1236, 2255, 4251, 14040, 14042, 4797, 4460, 14045, 1959, 1297, 14047, 2]
 // Exports: default
 
-// Module 14065 (FamilyCenterAcceptedLinkRow)
+// Module 14039 (FamilyCenterAcceptedLinkRow)
 import "registerAsset";
 import { View } from "asyncRequireImpl";
 import items from "items";
@@ -31,7 +31,7 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
     obj = { name: null };
     obj[0] = str;
-    obj[1] = intl.formatToPlainString(importDefault(2285).T7DUoU, obj);
+    obj[1] = intl.formatToPlainString(importDefault(2255).T7DUoU, obj);
     obj[2] = function onPress() {
       let obj = outer1_1(outer1_2[15]);
       obj = { otherUser: str };
@@ -40,12 +40,12 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
     obj[3] = tmp.actionButton;
     const obj1 = { size: null, disableColor: true, source: null };
     obj1[0] = str(1297).Icon.Sizes.SMALL;
-    obj1[2] = importDefault(14073);
+    obj1[2] = importDefault(14047);
     obj[4] = closure_6(str(1297).Icon, obj1);
-    obj[1] = closure_6(str(4812).PressableOpacity, obj);
-    tmp4Result = tmp4(importDefault(14068), obj);
+    obj[1] = closure_6(str(4797).PressableOpacity, obj);
+    tmp4Result = tmp4(importDefault(14042), obj);
     const tmp5 = importDefault;
-    const tmp7 = importDefault(14068);
+    const tmp7 = importDefault(14042);
   }
   return tmp4Result;
 }
@@ -65,26 +65,26 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterAcceptedLinks() {
   const tmp = createCacheKey();
-  let obj = require(7259) /* useUserIdsForLinkStatus */;
+  let obj = require(7231) /* useUserIdsForLinkStatus */;
   const activeLinkUsers = obj.useActiveLinkUsers();
-  obj = { count: activeLinkUsers.length, max: importDefault(7260)() ? closure_4 : closure_5 };
-  const tmp4 = importDefault(7260)();
+  obj = { count: activeLinkUsers.length, max: importDefault(7232)() ? closure_4 : closure_5 };
+  const tmp4 = importDefault(7232)();
   const intl = tmp5(1236).intl;
-  const tmp5Result = require(11239) /* useAgeSpecificText */;
+  const tmp5Result = require(11211) /* useAgeSpecificText */;
   const intl2 = tmp5(1236).intl;
   obj = { style: tmp.container, children: null };
-  const ageSpecificText = tmp5Result.useAgeSpecificText(intl.formatToPlainString(importDefault(2285)["+tnO34"], obj), intl2.formatToPlainString(tmp2(2285)["pu6/U0"], obj));
-  const items = [callback(require(4281) /* Text */.Text, { style: tmp.header, variant: "eyebrow", color: "text-default", children: ageSpecificText }), ];
+  const ageSpecificText = tmp5Result.useAgeSpecificText(intl.formatToPlainString(importDefault(2255)["+tnO34"], obj), intl2.formatToPlainString(tmp2(2255)["pu6/U0"], obj));
+  const items = [callback(require(4251) /* Text */.Text, { style: tmp.header, variant: "eyebrow", color: "text-default", children: ageSpecificText }), ];
   const obj2 = { style: tmp.content, children: null };
   if (0 === activeLinkUsers.length) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.empty;
     const obj4 = { text: null };
     const intl3 = tmp5(1236).intl;
-    obj4[0] = intl3.string(tmp2(2285).C4ScLD);
-    obj3[1] = tmp10(tmp2(14066), obj4);
+    obj4[0] = intl3.string(tmp2(2255).C4ScLD);
+    obj3[1] = tmp10(tmp2(14040), obj4);
     let mapped = tmp10(tmp9, obj3);
-    const tmp2Result = tmp2(14066);
+    const tmp2Result = tmp2(14040);
   } else {
     mapped = activeLinkUsers.map((id) => callback(closure_10, { otherUser: id }, "accepted-" + id.id));
   }

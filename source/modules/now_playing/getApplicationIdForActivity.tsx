@@ -1,10 +1,10 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 12888
+// Function ID: 12889
 // Name: getApplicationIdForActivity
-// Dependencies: [12523, 12917, 12918, 4310, 9573, 8112, 12187, 2]
+// Dependencies: [12495, 12889, 12890, 4280, 9544, 8084, 12159, 2]
 // Exports: default
 
-// Module 12916 (getApplicationIdForActivity)
+// Module 12888 (getApplicationIdForActivity)
 import { SpotifyApplication } from "getIconURL";
 import { TWITCH_APPLICATION_ID_PREFIX as closure_3 } from "getIconURL";
 import { XBOX_APPLICATION_ID_PREFIX as closure_4 } from "getIconURL";
@@ -13,7 +13,7 @@ import { XBOX_ACTIVITY_APPLICATION_ID as closure_5 } from "items3";
 const result = require("getIconURL").fileFinishedImporting("modules/now_playing/getApplicationIdForActivity.tsx");
 
 export default function getApplicationIdForActivity(party) {
-  if (importDefault(9573)(party)) {
+  if (importDefault(9544)(party)) {
     if (null != party.party) {
       if (null != party.party.id) {
         let id = SpotifyApplication.id;
@@ -21,7 +21,7 @@ export default function getApplicationIdForActivity(party) {
       return id;
     }
   }
-  if (importDefault(8112)(party)) {
+  if (importDefault(8084)(party)) {
     if (null != party.url) {
       id = closure_3 + party.url;
     }
@@ -32,7 +32,7 @@ export default function getApplicationIdForActivity(party) {
     }
   }
   id = null;
-  if (importDefault(12187)(party)) {
+  if (importDefault(12159)(party)) {
     id = closure_4 + party.name;
   }
 };

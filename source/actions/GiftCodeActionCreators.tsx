@@ -1,10 +1,10 @@
-// Module ID: 10327
-// Function ID: 10328
+// Module ID: 10299
+// Function ID: 10300
 // Name: resolveGiftCode
-// Dependencies: [5, 4322, 6910, 6918, 676, 1876, 709, 4519, 5611, 6909, 4184, 530, 10328, 10329, 2]
+// Dependencies: [5, 4292, 6895, 6903, 676, 1876, 709, 4489, 5596, 6894, 4154, 530, 10300, 10301, 2]
 // Exports: resolveGiftCode
 
-// Module 10327 (resolveGiftCode)
+// Module 10299 (resolveGiftCode)
 import GuildFeatures from "GuildFeatures";
 import addApplication from "addApplication";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -47,7 +47,7 @@ function _resolveGiftCode() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ function _resolveGiftCode() {
               application = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -304,7 +304,7 @@ export default {
       obj5[1] = closure_0;
       obj5[2] = closure_1;
       obj4.dispatch(obj5);
-      closure_0 = yield "HermesInternal";
+      closure_0 = yield "T";
       const obj = outer1_1(outer1_2[6]);
       const obj7 = { type: "GIFT_CODE_CREATE_SUCCESS", giftCode: null };
       obj7[1] = closure_0.body;
@@ -347,7 +347,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    importDefault(10328).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    importDefault(10300).openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

@@ -1,10 +1,10 @@
-// Module ID: 8281
-// Function ID: 8282
+// Module ID: 8253
+// Function ID: 8254
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 8282, 1218, 676, 21, 4285, 4812, 4281, 4624, 1236, 500, 4836, 8283, 1480, 589, 1483, 5736, 8284, 4625, 8285, 8286, 8287, 4184, 8288, 8292, 8293, 8295, 8289, 4695, 8296, 1577, 8298, 8300, 7713, 8306, 8308, 8310, 4693, 8317, 8280, 2]
+// Dependencies: [5, 32, 19, 17, 8254, 1218, 676, 21, 4255, 4797, 4251, 4594, 1236, 500, 4821, 8255, 1480, 589, 1483, 5721, 8256, 4595, 8257, 8258, 8259, 4154, 8260, 8264, 8265, 8267, 8261, 4665, 8268, 1577, 8270, 8272, 7685, 8278, 8280, 8282, 4663, 8289, 8252, 2]
 // Exports: default
 
-// Module 8281 (LinkButton)
+// Module 8253 (LinkButton)
 import fetchFingerprint from "fetchFingerprint";
 import KeyIcon from "KeyIcon";
 import handleLogout from "handleLogout";
@@ -37,7 +37,7 @@ class LinkButton {
   }
 }
 function handlePressPasswordManagerHint() {
-  let obj = importDefault(4624);
+  let obj = importDefault(4594);
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.lzsy7t);
@@ -149,7 +149,7 @@ export default function Login(isMultiAccount) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -225,7 +225,7 @@ export default function Login(isMultiAccount) {
           c3 = 0;
           v0(false);
           v02 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp47) {
         closure_2 = tmp47;
@@ -253,7 +253,7 @@ export default function Login(isMultiAccount) {
       if (flag === undefined) {
         flag = false;
       }
-      yield "ct";
+      yield "PX_8";
       outer1_4(true);
       outer1_5({});
       let c6 = 1;
@@ -307,7 +307,7 @@ export default function Login(isMultiAccount) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

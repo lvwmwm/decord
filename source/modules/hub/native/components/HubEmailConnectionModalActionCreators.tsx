@@ -1,8 +1,8 @@
-// Module ID: 12010
-// Function ID: 12011
-// Dependencies: [5, 4490, 11994, 1959, 2]
+// Module ID: 11982
+// Function ID: 11983
+// Dependencies: [5, 4460, 11966, 1959, 2]
 
-// Module 12010
+// Module 11982
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("HubEmailConnectionModal").fileFinishedImporting("modules
 export default {
   open(closure_0) {
     closure_0 = arg1;
-    importDefault(4490).pushLazy(callback(function*() {
+    importDefault(4460).pushLazy(callback(function*() {
       let closure_1 = tmp5;
       let closure_0 = tmp2;
       yield outer1_0(paths[3])(paths[2], paths.paths);
@@ -26,6 +26,6 @@ export default {
     }), closure_0, HUB_EMAIL_CONNECTION_MODAL_KEY);
   },
   close() {
-    importDefault(4490).popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
+    importDefault(4460).popWithKey(HUB_EMAIL_CONNECTION_MODAL_KEY);
   }
 };

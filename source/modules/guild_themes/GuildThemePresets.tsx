@@ -1,10 +1,10 @@
-// Module ID: 4133
-// Function ID: 4134
+// Module ID: 4103
+// Function ID: 4104
 // Name: set
-// Dependencies: [505, 689, 4134, 2]
+// Dependencies: [505, 689, 4104, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 4133 (set)
+// Module 4103 (set)
 import { ThemeTypes } from "sum";
 import set from "items";
 
@@ -57,7 +57,7 @@ export const getGuildThemePreset = function getGuildThemePreset(presetId) {
   return tmp;
 };
 export const getDefaultGuildThemePresetSettings = function getDefaultGuildThemePresetSettings() {
-  return { presetId: mapped[0].id, customUserThemeSettings: "a" };
+  return { presetId: mapped[0].id, customUserThemeSettings: "Array" };
 };
 export const getGuildThemePresetAppearance = function getGuildThemePresetAppearance(preset, arg1) {
   return arg1 === ThemeTypes.LIGHT ? preset.lightAppearance : preset.darkAppearance;
@@ -85,8 +85,8 @@ export const getSingleColorGuildThemeGradientColors = function getSingleColorGui
   return items;
 };
 export const getRandomSingleColorGuildTheme = function getRandomSingleColorGuildTheme() {
-  const diff = require(4134) /* items */.COLOR_PALETTE.length - 1;
-  const tmp2 = require(4134) /* items */.COLOR_PALETTE[Math.floor(Math, Math.random(Math) * (diff + 1))];
+  const diff = require(4104) /* items */.COLOR_PALETTE.length - 1;
+  const tmp2 = require(4104) /* items */.COLOR_PALETTE[Math.floor(Math, Math.random(Math) * (diff + 1))];
   const obj = { color: null, baseMix: null };
   const bound = Math.min(45, Math.round(100 * importDefault(689)(tmp2).get("hsl.l")));
   const obj2 = importDefault(689)(tmp2);

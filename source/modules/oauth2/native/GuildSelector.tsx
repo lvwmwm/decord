@@ -1,10 +1,10 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10417
+// Function ID: 10418
 // Name: styles
-// Dependencies: [19, 17, 676, 21, 4285, 712, 4253, 8890, 1959, 1236, 506, 4281, 1297, 7777, 2]
+// Dependencies: [19, 17, 676, 21, 4255, 712, 4223, 8862, 1959, 1236, 506, 4251, 1297, 7749, 2]
 // Exports: default
 
-// Module 10445 (styles)
+// Module 10417 (styles)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { Permissions } from "ME";
@@ -53,7 +53,7 @@ export default function GuildSelector(disabled) {
   obj = { variant: "eyebrow", color: "text-default", children: null };
   let intl = selectedGuildId(1236).intl;
   obj[2] = intl.string(selectedGuildId(1236).t["1DXFFd"]);
-  const items1 = [callback(selectedGuildId(4281).Text, obj), , , ];
+  const items1 = [callback(selectedGuildId(4251).Text, obj), , , ];
   let tmp6Result = null;
   if (null != error) {
     tmp6Result = null;
@@ -73,7 +73,7 @@ export default function GuildSelector(disabled) {
     const intl2 = tmp7(1236).intl;
     name = intl2.string(tmp7(1236).t.oM4E1A);
   }
-  items1[2] = callback(selectedGuildId(7777).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(7777).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
+  items1[2] = callback(selectedGuildId(7749).FormRow, { label: name, disabled: disabled.disabled, trailing: callback(selectedGuildId(7749).FormRow.Arrow, {}), DEPRECATED_style: tmp.select, onPress: callback });
   const obj2 = { style: tmp.label, children: null };
   const intl3 = tmp7(1236).intl;
   obj2[1] = intl3.format(selectedGuildId(1236).t.t9Jm9o, {});

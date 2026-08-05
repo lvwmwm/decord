@@ -1,9 +1,9 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16745
+// Function ID: 16746
 // Name: handleChannelCreate
-// Dependencies: [5, 13114, 676, 5229, 13113, 5774, 2]
+// Dependencies: [5, 13086, 676, 5214, 13085, 5759, 2]
 
-// Module 16764 (handleChannelCreate)
+// Module 16745 (handleChannelCreate)
 import _safeTransitionTo from "_safeTransitionTo";
 import { MIDJOURNEY_GUILD_ID } from "MIDJOURNEY_GUILD_ID";
 import { Routes } from "ME";
@@ -31,7 +31,7 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -51,20 +51,20 @@ MidjourneyOnboardingManager.prototype["handleChannelCreate"] = function handleCh
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = tmp22(13113).hasRedirectedToGuild(outer1_4);
+              obj1[0] = tmp22(13085).hasRedirectedToGuild(outer1_4);
               return obj1;
             } else {
               dependencyMap = 3;
             }
-            obj6 = outer1_0(13113);
+            obj6 = outer1_0(13085);
             tmp22 = outer1_0;
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;
           throw arg1;
         } else if (arg0 !== 2) {
-          v0(5774)(outer1_5.CHANNEL(null, id.id));
-          const tmp9 = v0(5774);
+          v0(5759)(outer1_5.CHANNEL(null, id.id));
+          const tmp9 = v0(5759);
         }
         dependencyMap = 3;
         obj = { value: null, done: true };

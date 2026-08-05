@@ -1,10 +1,10 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12040
+// Function ID: 12041
 // Name: OrbCheckoutModalContent
-// Dependencies: [19, 676, 505, 21, 12069, 10029, 4693, 12070, 10380, 7296, 698, 12071, 4490, 7757, 7758, 11246, 38, 514, 1236, 5238, 11248, 2]
+// Dependencies: [19, 676, 505, 21, 12041, 10000, 4663, 12042, 10352, 7268, 698, 12043, 4460, 7729, 7730, 11218, 38, 514, 1236, 5223, 11220, 2]
 // Exports: default
 
-// Module 12068 (OrbCheckoutModalContent)
+// Module 12040 (OrbCheckoutModalContent)
 import HeaderBackImage from "HeaderBackImage";
 import noop from "HeaderBackImage";
 import ME from "ME";
@@ -23,31 +23,31 @@ const require = arg1;
 function OrbCheckoutModalContent(orbBalance) {
   let orbRedemptionError;
   let skuId;
-  let obj = require(12069) /* useOrbCheckoutModalContextProvider */;
+  let obj = require(12041) /* useOrbCheckoutModalContextProvider */;
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   ({ orbRedemptionError, skuId } = orbCheckoutModalContext);
-  let product = require(10029) /* useFetchCollectiblesProduct */.useFetchCollectiblesProduct(skuId).product;
+  let product = require(10000) /* useFetchCollectiblesProduct */.useFetchCollectiblesProduct(skuId).product;
   let tmp6 = null != orbRedemptionError;
   if (tmp6) {
     obj = { error: null };
     obj[0] = orbRedemptionError.message;
-    tmp6 = callback4(tmp(12070).OrbCheckoutErrorCard, obj);
+    tmp6 = callback4(tmp(12042).OrbCheckoutErrorCard, obj);
   }
   const items = [tmp6, , ];
   if (product == null) {
     product = null;
   }
   obj = { children: null };
-  items[1] = callback4(require(12070) /* OrbCheckoutErrorCard */.OrbCheckoutOrderSummary, { product });
-  items[2] = callback4(require(12070) /* OrbCheckoutErrorCard */.OrbCheckoutPaymentSourceDetails, { orbBalance: orbBalance.orbBalance });
+  items[1] = callback4(require(12042) /* OrbCheckoutErrorCard */.OrbCheckoutOrderSummary, { product });
+  items[2] = callback4(require(12042) /* OrbCheckoutErrorCard */.OrbCheckoutPaymentSourceDetails, { orbBalance: orbBalance.orbBalance });
   obj[0] = items;
-  return closure_12(require(4693) /* Stack */.Stack, obj);
+  return closure_12(require(4663) /* Stack */.Stack, obj);
 }
 function OrbCheckoutModalFooter(onPress) {
   const obj = { children: null };
-  const items = [callback4(require(12070) /* OrbCheckoutErrorCard */.OrbCheckoutLegalFinePrint, {}), callback4(require(12070) /* OrbCheckoutErrorCard */.OrbCheckoutPurchaseButton, { onPress: onPress.onPress })];
+  const items = [callback4(require(12042) /* OrbCheckoutErrorCard */.OrbCheckoutLegalFinePrint, {}), callback4(require(12042) /* OrbCheckoutErrorCard */.OrbCheckoutPurchaseButton, { onPress: onPress.onPress })];
   obj[0] = items;
-  return callback5(require(4693) /* Stack */.Stack, obj);
+  return callback5(require(4663) /* Stack */.Stack, obj);
 }
 ({ useRef: c4, useEffect: c5, useCallback: closure_6, useMemo: error } = noop);
 ({ AnalyticEvents: metroImportAll, CurrencyCodes: c9 } = ME);

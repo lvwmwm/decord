@@ -1,10 +1,10 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16631
+// Function ID: 16632
 // Name: formatDurationFromDays
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 16650 (formatDurationFromDays)
+// Module 16631 (formatDurationFromDays)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/formatDurationFromDays.tsx");
 
 export default function formatDurationFromDays(days) {

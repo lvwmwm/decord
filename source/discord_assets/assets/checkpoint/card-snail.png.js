@@ -1,9 +1,9 @@
-// Module ID: 8061
-// Function ID: 8062
+// Module ID: 8033
+// Function ID: 8034
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8061 (metadata)
+// Module 8033 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/checkpoint/card-snail.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2ccab1029478c8ca37ea278aea6c260f89d0abfab3e3171c5dde1badb3cb61e3.png";

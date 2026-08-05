@@ -1,10 +1,10 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 11955
+// Function ID: 11956
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 1942, 1862, 4270, 3901, 21, 4285, 712, 1480, 589, 5238, 1384, 5205, 1959, 7115, 8883, 5839, 7679, 8601, 11984, 5272, 3997, 2]
+// Dependencies: [5, 19, 1942, 1862, 4240, 3871, 21, 4255, 712, 1480, 589, 5223, 1384, 5190, 1959, 7089, 8855, 5824, 7651, 8573, 11956, 5257, 3967, 2]
 // Exports: default
 
-// Module 11983 (AcceptInviteContainer)
+// Module 11955 (AcceptInviteContainer)
 import GuildMemberFlags from "GuildMemberFlags";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -108,7 +108,7 @@ export default function AcceptInviteContainer(code) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -176,7 +176,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       } catch (tmp14) {
         c3 = tmp;
         throw tmp14;
@@ -196,7 +196,7 @@ export default function AcceptInviteContainer(code) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ export default function AcceptInviteContainer(code) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     }
                   } else {
                     try {
@@ -268,7 +268,7 @@ export default function AcceptInviteContainer(code) {
                               }
                               if (null == prop) {
                                 c6 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "T", done: null };
                               } else {
                                 outer1_1();
                                 let tmp11Result = tmp11(tmp12[16]);

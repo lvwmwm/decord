@@ -1,18 +1,151 @@
-// Module ID: 7164
-// Function ID: 7165
+// Module ID: 7138
+// Function ID: 7139
 // Name: items
-// Dependencies: [5, 7165, 7166, 7167, 7168, 7169, 7170, 7171, 7172, 7173, 7174, 7175, 7176, 7177, 7178, 7179, 7180, 7181, 7182, 7183, 7184, 7185, 7186, 7187, 7188, 7189, 7190, 7191, 7192, 7193, 7194, 7195, 7196, 7197, 7198, 7199, 7200, 7201, 2]
+// Dependencies: [5, 7139, 7140, 7141, 7142, 7143, 7144, 7145, 7146, 7147, 7148, 7149, 7150, 7151, 7152, 7153, 7154, 7155, 7156, 7157, 7158, 7159, 7160, 7161, 7162, 7163, 7164, 7165, 7166, 7167, 7168, 7169, 7170, 7171, 7172, 7173, 7174, 7175, 2]
 // Exports: getBurstAnimation
 
-// Module 7164 (items)
+// Module 7138 (items)
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7165);
+    return callback(7139);
   }
 };
 const items = [
   obj,
+  {
+    load() {
+      return callback(7140);
+    }
+  },
+  {
+    load() {
+      return callback(7141);
+    }
+  },
+  {
+    load() {
+      return callback(7142);
+    }
+  },
+  {
+    load() {
+      return callback(7143);
+    }
+  },
+  {
+    load() {
+      return callback(7144);
+    }
+  },
+  {
+    load() {
+      return callback(7145);
+    }
+  },
+  {
+    load() {
+      return callback(7146);
+    }
+  },
+  {
+    load() {
+      return callback(7147);
+    }
+  },
+  {
+    load() {
+      return callback(7148);
+    }
+  },
+  {
+    load() {
+      return callback(7149);
+    }
+  },
+  {
+    load() {
+      return callback(7150);
+    }
+  },
+  {
+    load() {
+      return callback(7151);
+    }
+  },
+  {
+    load() {
+      return callback(7152);
+    }
+  },
+  {
+    load() {
+      return callback(7153);
+    }
+  },
+  {
+    load() {
+      return callback(7154);
+    }
+  },
+  {
+    load() {
+      return callback(7155);
+    }
+  },
+  {
+    load() {
+      return callback(7156);
+    }
+  }
+];
+obj = {
+  load() {
+    return callback(7157);
+  }
+};
+const items1 = [
+  obj,
+  {
+    load() {
+      return callback(7158);
+    }
+  },
+  {
+    load() {
+      return callback(7159);
+    }
+  },
+  {
+    load() {
+      return callback(7160);
+    }
+  },
+  {
+    load() {
+      return callback(7161);
+    }
+  },
+  {
+    load() {
+      return callback(7162);
+    }
+  },
+  {
+    load() {
+      return callback(7163);
+    }
+  },
+  {
+    load() {
+      return callback(7164);
+    }
+  },
+  {
+    load() {
+      return callback(7165);
+    }
+  },
   {
     load() {
       return callback(7166);
@@ -57,142 +190,9 @@ const items = [
     load() {
       return callback(7174);
     }
-  },
-  {
-    load() {
-      return callback(7175);
-    }
-  },
-  {
-    load() {
-      return callback(7176);
-    }
-  },
-  {
-    load() {
-      return callback(7177);
-    }
-  },
-  {
-    load() {
-      return callback(7178);
-    }
-  },
-  {
-    load() {
-      return callback(7179);
-    }
-  },
-  {
-    load() {
-      return callback(7180);
-    }
-  },
-  {
-    load() {
-      return callback(7181);
-    }
-  },
-  {
-    load() {
-      return callback(7182);
-    }
   }
 ];
-obj = {
-  load() {
-    return callback(7183);
-  }
-};
-const items1 = [
-  obj,
-  {
-    load() {
-      return callback(7184);
-    }
-  },
-  {
-    load() {
-      return callback(7185);
-    }
-  },
-  {
-    load() {
-      return callback(7186);
-    }
-  },
-  {
-    load() {
-      return callback(7187);
-    }
-  },
-  {
-    load() {
-      return callback(7188);
-    }
-  },
-  {
-    load() {
-      return callback(7189);
-    }
-  },
-  {
-    load() {
-      return callback(7190);
-    }
-  },
-  {
-    load() {
-      return callback(7191);
-    }
-  },
-  {
-    load() {
-      return callback(7192);
-    }
-  },
-  {
-    load() {
-      return callback(7193);
-    }
-  },
-  {
-    load() {
-      return callback(7194);
-    }
-  },
-  {
-    load() {
-      return callback(7195);
-    }
-  },
-  {
-    load() {
-      return callback(7196);
-    }
-  },
-  {
-    load() {
-      return callback(7197);
-    }
-  },
-  {
-    load() {
-      return callback(7198);
-    }
-  },
-  {
-    load() {
-      return callback(7199);
-    }
-  },
-  {
-    load() {
-      return callback(7200);
-    }
-  }
-];
-closure_0 = require("module_7169")((arg0, arg1, arg2) => {
+closure_0 = require("module_7143")((arg0, arg1, arg2) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
@@ -211,7 +211,7 @@ closure_0 = require("module_7169")((arg0, arg1, arg2) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -235,7 +235,7 @@ closure_0 = require("module_7169")((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "ct", done: "Array" };
+            return { value: "PX_8", done: "Array" };
           }
         } else if (arg0 === 1) {
           c7 = 3;
@@ -269,7 +269,7 @@ closure_0 = require("module_7169")((arg0, arg1, arg2) => {
   iter.next();
   return iter;
 });
-const result = require("module_7166").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
+const result = require("module_7140").fileFinishedImporting("modules/messages/getBurstAnimation.native.tsx");
 
 export const getBurstAnimation = function() {
   const self = this;

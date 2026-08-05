@@ -1,10 +1,10 @@
-// Module ID: 10421
-// Function ID: 10422
+// Module ID: 10393
+// Function ID: 10394
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 4285, 10413, 5090, 10422, 38, 5733, 5272, 4695, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 4255, 10385, 5075, 10394, 38, 5718, 5257, 4665, 1236, 2]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 10421 (TwoWayLinkDiscordConsent)
+// Module 10393 (TwoWayLinkDiscordConsent)
 import timestamp from "timestamp";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -63,7 +63,7 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

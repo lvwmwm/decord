@@ -1,10 +1,10 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8017
+// Function ID: 8018
 // Name: hasFetchedColors
-// Dependencies: [32, 5, 19, 4277, 644, 705, 1471, 4129, 589, 6920, 2]
+// Dependencies: [32, 5, 19, 4247, 644, 705, 1471, 4099, 589, 6905, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8045 (hasFetchedColors)
+// Module 8017 (hasFetchedColors)
 import _slicedToArray from "_slicedToArray";
 import batchUpdates from "batchUpdates";
 import noop from "noop";
@@ -33,7 +33,7 @@ function _maybeFetchColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ function _maybeFetchColors() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp8) {
           c1 = tmp;
           throw tmp8;
@@ -113,7 +113,7 @@ function _fetchColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -168,7 +168,7 @@ function _fetchColors() {
               throw arg1;
             } else if (arg0 !== 2) {
               table = arg1;
-              obj = callback(4129);
+              obj = callback(4099);
               dependencyMap = obj.getComplimentaryPaletteForColor(table[0]);
               obj1 = callback(705);
               obj1.batchUpdates(() => {

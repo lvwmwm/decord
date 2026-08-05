@@ -1,10 +1,10 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11450
+// Function ID: 11451
 // Name: MentionableIcon
-// Dependencies: [32, 19, 4277, 1935, 1874, 505, 21, 4285, 712, 589, 11479, 9589, 11480, 1297, 11481, 11482, 11476, 4253, 11480, 1959, 2]
+// Dependencies: [32, 19, 4247, 1935, 1874, 505, 21, 4255, 712, 589, 11451, 9560, 11452, 1297, 11453, 11454, 11448, 4223, 11452, 1959, 2]
 // Exports: default
 
-// Module 11478 (MentionableIcon)
+// Module 11450 (MentionableIcon)
 import _slicedToArray from "_slicedToArray";
 import asyncRequireImpl from "asyncRequireImpl";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -22,30 +22,30 @@ function MentionableIcon(mentionable) {
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   obj = { icon: null, wrapperStyle: null };
   const tmp = createCacheKey();
-  obj[0] = jsx(require(9589) /* UserCircleIcon */.UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+  obj[0] = jsx(require(9560) /* UserCircleIcon */.UserCircleIcon, { size: "sm", color: "interactive-text-default" });
   obj[1] = tmp.iconWrapper;
-  const tmp7 = jsx(importDefault(11479), { icon: null, wrapperStyle: null });
+  const tmp7 = jsx(importDefault(11451), { icon: null, wrapperStyle: null });
   if (null == mentionable) {
     return tmp7;
   } else {
     const type = mentionable.type;
-    if (tmp2(11480).MentionableItemTypes.USER === type) {
+    if (tmp2(11452).MentionableItemTypes.USER === type) {
       obj = { user: null, guildId: null, animate: null, size: null };
       obj[0] = mentionable.result.user;
       obj[1] = mentionable.guildId;
       obj[2] = !stateFromStores;
       obj[3] = tmp2(1297).AvatarSizes.REFRESH_MEDIUM_32;
       return tmp5(tmp2(1297).Avatar, obj);
-    } else if (tmp2(11480).MentionableItemTypes.ROLE === type) {
+    } else if (tmp2(11452).MentionableItemTypes.ROLE === type) {
       const obj1 = { role: null };
       obj1[0] = mentionable.result;
-      return tmp5(tmp2(11481).RoleIcon, obj1);
+      return tmp5(tmp2(11453).RoleIcon, obj1);
     } else {
-      const GLOBAL = tmp2(11480).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11452).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }
-  const tmp6 = importDefault(11479);
+  const tmp6 = importDefault(11451);
 }
 createCacheKey = { iconWrapper: null };
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE };

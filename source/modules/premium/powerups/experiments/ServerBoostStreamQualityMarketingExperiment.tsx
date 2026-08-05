@@ -1,10 +1,10 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12738
+// Function ID: 12739
 // Name: CONTROL_RESOLUTION
 // Dependencies: [1349, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 12766 (CONTROL_RESOLUTION)
+// Module 12738 (CONTROL_RESOLUTION)
 const obj = { 1: null };
 obj[1] = { streamQualityMarketingResolution: "1440p" };
 const tmp2 = require("getUnitId")({ name: "2026-04-server-boost-copy-1440p", kind: "user", defaultConfig: { streamQualityMarketingResolution: "1080p" }, variations: obj });

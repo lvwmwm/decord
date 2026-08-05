@@ -1,9 +1,9 @@
-// Module ID: 14401
-// Function ID: 14402
+// Module ID: 14376
+// Function ID: 14377
 // Name: route
-// Dependencies: [1302, 7892, 676, 1348, 589, 10361, 1236, 14397, 14402, 2]
+// Dependencies: [1302, 7864, 676, 1348, 589, 10333, 1236, 14372, 14377, 2]
 
-// Module 14401 (route)
+// Module 14376 (route)
 import handleThemeChange from "handleThemeChange";
 import createToggle from "createToggle";
 
@@ -29,7 +29,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_THEME_PICKER,
   getComponent() {
-    return require(14402) /* ThemeTypes */.default;
+    return require(14377) /* ThemeTypes */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

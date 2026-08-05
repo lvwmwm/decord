@@ -1,10 +1,10 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16394
+// Function ID: 16395
 // Name: buildRequestHashPayload
-// Dependencies: [5, 500, 16414, 2]
+// Dependencies: [5, 500, 16395, 2]
 // Exports: getAgeSignalIntegrityToken
 
-// Module 16413 (buildRequestHashPayload)
+// Module 16394 (buildRequestHashPayload)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -47,7 +47,7 @@ function _getAgeSignalIntegrityToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -113,7 +113,7 @@ function _getAgeSignalIntegrityToken() {
             return obj;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp8) {
           c4 = tmp;
           throw tmp8;

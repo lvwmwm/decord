@@ -1,9 +1,9 @@
-// Module ID: 5106
-// Function ID: 5107
+// Module ID: 5091
+// Function ID: 5092
 // Name: buildStageChannelUserRoles
-// Dependencies: [1372, 1942, 1935, 1862, 1874, 4301, 4469, 3918, 1380, 12, 589, 5107, 709, 2]
+// Dependencies: [1372, 1942, 1935, 1862, 1874, 4271, 4439, 3888, 1380, 12, 589, 5092, 709, 2]
 
-// Module 5106 (buildStageChannelUserRoles)
+// Module 5091 (buildStageChannelUserRoles)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
@@ -34,8 +34,8 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
       if (channel.isGuildStageVoice()) {
         let obj = {};
         voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(closure_0, id);
-        const audienceRequestToSpeakState = require(4469) /* useAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
-        obj[obj.SPEAKER] = audienceRequestToSpeakState === require(4469) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+        const audienceRequestToSpeakState = require(4439) /* useAudienceRequestToSpeakState */.getAudienceRequestToSpeakState(voiceStateForChannel);
+        obj[obj.SPEAKER] = audienceRequestToSpeakState === require(4439) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
         let canResult = null;
         if (flag) {
           obj = { permission: null, user: null, context: null, overwrites: null, roles: null };
@@ -44,12 +44,12 @@ function buildStageChannelUserRoles(id, closure_0, flag) {
           obj[2] = guild;
           obj[3] = channel.permissionOverwrites;
           obj[4] = unsafeMutableRoles.getUnsafeMutableRoles(guild.id);
-          canResult = importAll(3918).can(obj);
-          const obj4 = importAll(3918);
+          canResult = importAll(3888).can(obj);
+          const obj4 = importAll(3888);
         }
         obj[obj.MODERATOR] = canResult;
         let tmp4 = obj;
-        const obj3 = require(4469) /* useAudienceRequestToSpeakState */;
+        const obj3 = require(4439) /* useAudienceRequestToSpeakState */;
         tmp8 = require;
       }
       dependencyMap[closure_0][id] = tmp4;
@@ -157,7 +157,7 @@ prototype["getPermissionsForUser"] = function getPermissionsForUser(id, closure_
         id = currentUser.id;
       }
       if (id === id) {
-        const obj = require(5107) /* useIsStageSpeakingDisabledForCurrentUser */;
+        const obj = require(5092) /* useIsStageSpeakingDisabledForCurrentUser */;
         if (obj.isStageSpeakingDisabledForCurrentUser()) {
           return obj;
         }

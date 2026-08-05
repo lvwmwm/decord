@@ -1,9 +1,9 @@
-// Module ID: 14379
-// Function ID: 14380
+// Module ID: 14354
+// Function ID: 14355
 // Name: pressable
-// Dependencies: [1874, 21, 6792, 4624, 1236, 14380, 1959, 589, 500, 10361, 7625, 2]
+// Dependencies: [1874, 21, 6777, 4594, 1236, 14355, 1959, 589, 500, 10333, 7597, 2]
 
-// Module 14379 (pressable)
+// Module 14354 (pressable)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
@@ -17,7 +17,7 @@ createToggle = {
   parent: null,
   IconComponent: require("NitroWheelIcon").NitroWheelIcon,
   onPress: function handleNitroRestoreSettingPress() {
-    let obj = importDefault(6792);
+    let obj = importDefault(6777);
     const result = obj.restoreAndApplyPurchases(true);
     result.then((arg0) => {
       if (arg0.length > 0) {
@@ -55,7 +55,7 @@ createToggle = {
         });
       }
     };
-    importDefault(4624).openLazy(obj);
+    importDefault(4594).openLazy(obj);
   },
   withArrow: true,
   usePredicate: function useHasPremiumRestoreSubscriptionSetting() {

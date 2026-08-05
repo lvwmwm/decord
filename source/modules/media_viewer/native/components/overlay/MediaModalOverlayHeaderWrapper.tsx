@@ -1,10 +1,10 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8824
+// Function ID: 8825
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4285, 5235, 1581, 2]
+// Dependencies: [19, 17, 21, 4255, 5220, 1581, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 8852 (MediaModalOverlayHeaderWrapper)
+// Module 8824 (MediaModalOverlayHeaderWrapper)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 const require = arg1;
 let closure_5 = createCacheKey.createStyles((paddingTop) => {
   let obj = { bar: null };
-  obj = { flexDirection: "row", alignItems: "center", height: require(5235) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 };
+  obj = { flexDirection: "row", alignItems: "center", height: require(5220) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 };
   obj[0] = obj;
   return obj;
 });

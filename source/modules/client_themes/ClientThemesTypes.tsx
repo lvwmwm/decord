@@ -1,15 +1,15 @@
-// Module ID: 4099
-// Function ID: 4100
+// Module ID: 4069
+// Function ID: 4070
 // Name: ClientThemeType
-// Dependencies: [1305, 1208, 1306, 2, 4100]
+// Dependencies: [1305, 1208, 1306, 2, 4070]
 // Exports: getProtoThemeFromBaseTheme
 
-// Module 4099 (ClientThemeType)
+// Module 4069 (ClientThemeType)
 import { PROTO_THEME_MAP_WEB_REFRESH as closure_3 } from "SystemThemeState";
 
 const result = require("create").fileFinishedImporting("modules/client_themes/ClientThemesTypes.tsx");
 
-export const ClientThemeType = require("module_4100").ClientThemeType;
+export const ClientThemeType = require("module_4070").ClientThemeType;
 export const getProtoThemeFromBaseTheme = function getProtoThemeFromBaseTheme(arg0) {
   const _require = arg0;
   const entries = Object.entries(closure_3);

@@ -1,9 +1,9 @@
-// Module ID: 4183
-// Function ID: 4184
+// Module ID: 4153
+// Function ID: 4154
 // Name: createFromServer
 // Dependencies: [1883, 2]
 
-// Module 4183 (createFromServer)
+// Module 4153 (createFromServer)
 import "toJS";
 
 let GuildBoostSlotRecord;

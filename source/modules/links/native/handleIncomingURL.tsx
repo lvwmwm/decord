@@ -1,10 +1,10 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 16832
+// Function ID: 16833
 // Name: _handleIncomingURL
-// Dependencies: [5, 1372, 4356, 6785, 676, 3, 6843, 16850, 4494, 698, 13104, 4266, 4271, 513, 7679, 16852, 2]
+// Dependencies: [5, 1372, 4326, 6770, 676, 3, 6828, 16831, 4464, 698, 13076, 4236, 4241, 513, 7651, 16833, 2]
 // Exports: default
 
-// Module 16851 (_handleIncomingURL)
+// Module 16832 (_handleIncomingURL)
 import timestamp from "timestamp";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -43,7 +43,7 @@ function _handleIncomingURL() {
             obj[0] = url;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -197,18 +197,18 @@ function _handleIncomingURL() {
                         const obj30 = lib(outer1_2[8]);
                       }
                       fingerprint = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     } else {
                       throwTypeErrorResult = url;
                       const parts = url.split("voice/");
                       if (2 !== parts.length) {
                         fingerprint = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "T", done: null };
                       } else {
                         const parts1 = parts[1].split("/");
                         if (0 === parts1.length) {
                           fingerprint = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "T", done: null };
                         } else if ("user" !== parts1[0]) {
                           if ("invite" === parts1[0]) {
                             throwTypeErrorResult = callback;

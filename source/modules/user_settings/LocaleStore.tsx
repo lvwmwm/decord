@@ -1,7 +1,7 @@
 // Module ID: 1946
 // Function ID: 1947
 // Name: _getSystemLocale
-// Dependencies: [5, 1947, 1340, 3896, 1236, 589, 709, 2]
+// Dependencies: [5, 1947, 1340, 3866, 1236, 589, 709, 2]
 
 // Module 1946 (_getSystemLocale)
 import initialize from "initialize";
@@ -25,7 +25,7 @@ function _getSystemLocale() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -43,7 +43,7 @@ function _getSystemLocale() {
             let closure_1 = tmp2;
             let callback = tmp3;
             callback = undefined;
-            const tmp25 = outer1_1(3896);
+            const tmp25 = outer1_1(3866);
             let prop;
             if (tmp25 != null) {
               const app = tmp25.app;
@@ -52,7 +52,7 @@ function _getSystemLocale() {
               }
             }
             if (null != prop) {
-              const app2 = tmp23(3896).app;
+              const app2 = tmp23(3866).app;
               const preferredSystemLanguages = app2.getPreferredSystemLanguages();
               dependencyMap = 1;
               c3 = 1;

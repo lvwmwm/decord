@@ -1,11 +1,11 @@
-// Module ID: 4128
-// Function ID: 4129
+// Module ID: 4098
+// Function ID: 4099
 // Name: getThemeForColor
-// Dependencies: [4098, 1305, 505, 711, 2]
+// Dependencies: [4068, 1305, 505, 711, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
 
-// Module 4128 (getThemeForColor)
-import items1 from "items1";
+// Module 4098 (getThemeForColor)
+import ThemeTypes from "ThemeTypes";
 import SystemThemeState from "SystemThemeState";
 import { ThemeTypes } from "sum";
 
@@ -13,7 +13,7 @@ let PROTO_THEME_MAP_WEB_REFRESH;
 let c3;
 let c4;
 let obj1;
-({ LEGACY_STANDARD_BACKGROUND_THEMES: obj1, REFRESH_STANDARD_BACKGROUND_THEMES: c3 } = items1);
+({ LEGACY_STANDARD_BACKGROUND_THEMES: obj1, REFRESH_STANDARD_BACKGROUND_THEMES: c3 } = ThemeTypes);
 ({ PROTO_THEME_MAP_MOBILE: c4, PROTO_THEME_MAP_WEB_REFRESH } = SystemThemeState);
 const result = require("sum").fileFinishedImporting("modules/client_themes/ClientThemesUtils.tsx");
 

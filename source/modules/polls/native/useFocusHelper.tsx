@@ -1,10 +1,10 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11477
+// Function ID: 11478
 // Name: restartState
-// Dependencies: [19, 38, 5598, 2]
+// Dependencies: [19, 38, 5583, 2]
 // Exports: default
 
-// Module 11505 (restartState)
+// Module 11477 (restartState)
 import noop from "noop";
 
 let closure_3 = function FocusHelperState() {

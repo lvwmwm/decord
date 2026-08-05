@@ -1,9 +1,9 @@
-// Module ID: 15137
-// Function ID: 15138
+// Module ID: 15117
+// Function ID: 15118
 // Name: getChannelMode
-// Dependencies: [109, 19, 17, 4371, 3922, 1874, 676, 1379, 4481, 21, 4285, 712, 5125, 11665, 1416, 5236, 15138, 4785, 4745, 589, 1297, 4726, 15139, 4475, 1222, 2]
+// Dependencies: [109, 19, 17, 4341, 3892, 1874, 676, 1379, 4451, 21, 4255, 712, 5110, 11637, 1416, 5221, 15118, 4755, 4715, 589, 1297, 4696, 15119, 4445, 1222, 2]
 
-// Module 15137 (getChannelMode)
+// Module 15117 (getChannelMode)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "BookCheckIcon";
 import sortActivity from "sortActivity";
@@ -25,24 +25,24 @@ function getChannelMode(selected) {
   let unread;
   ({ unread, channel } = selected);
   if (selected.selected) {
-    const ChannelModes = require(11665) /* BaseChannelSubtitle */.ChannelModes;
+    const ChannelModes = require(11637) /* BaseChannelSubtitle */.ChannelModes;
     if (!isGuildVocalResult) {
       const SELECTED = ChannelModes.SELECTED;
     }
     isGuildVocalResult = channel.isGuildVocal();
   } else {
     if (tmp2) {
-      let DEFAULT = require(11665) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
+      let DEFAULT = require(11637) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
     } else if (tmp) {
-      DEFAULT = require(11665) /* BaseChannelSubtitle */.ChannelModes.MUTED;
+      DEFAULT = require(11637) /* BaseChannelSubtitle */.ChannelModes.MUTED;
     } else if (unread) {
       if (selected.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-        let UNREAD_LESS_IMPORTANT = require(11665) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
+        let UNREAD_LESS_IMPORTANT = require(11637) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
       } else {
-        UNREAD_LESS_IMPORTANT = require(11665) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
+        UNREAD_LESS_IMPORTANT = require(11637) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
       }
     } else {
-      DEFAULT = require(11665) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
+      DEFAULT = require(11637) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
     }
     return DEFAULT;
   }
@@ -73,21 +73,21 @@ function ChannelIcon(arg0) {
         const obj1 = { style: null, source: null };
         obj1[0] = tmp.groupDmAvatar;
         obj1[1] = channelIconSource;
-        return callback2(tmp5(5236), obj1);
+        return callback2(tmp5(5221), obj1);
       }
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = importDefault(15138);
-      let BookCheckIcon = require(4785) /* BookCheckIcon */.BookCheckIcon;
+      let tmp12 = importDefault(15118);
+      let BookCheckIcon = require(4755) /* BookCheckIcon */.BookCheckIcon;
       let tmp9 = require;
     } else {
       tmp9 = require;
-      let obj2 = require(4745) /* getChannelIcon */;
+      let obj2 = require(4715) /* getChannelIcon */;
       obj2 = { isRulesChannel: false, locked: null };
       obj2[1] = locked;
       const channelIcon = obj2.getChannelIcon(channel, obj2);
-      let obj4 = require(4745) /* getChannelIcon */;
+      let obj4 = require(4715) /* getChannelIcon */;
       const obj3 = { isRulesChannel: false, locked: null };
       obj3[1] = locked;
       BookCheckIcon = obj4.getChannelIconComponent(channel, obj3);
@@ -110,7 +110,7 @@ function ChannelIcon(arg0) {
       obj6 = {};
     }
     const merged = Object.assign(obj6);
-    return callback2(tmp9(11665).BaseChannelIcon, obj4);
+    return callback2(tmp9(11637).BaseChannelIcon, obj4);
   }
 }
 function DMChannelIcon(userId) {
@@ -128,7 +128,7 @@ function DMChannelIcon(userId) {
   const items3 = [userId];
   const stateFromStoresObject = userId(589).useStateFromStoresObject(items2, () => ({ status: outer1_6.getStatus(userId), isMobileOnline: outer1_6.isMobileOnline(userId), isVROnline: outer1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: "o", size: "moyai", style: "moai", status: "statue_of_liberty", isMobileOnline: "tokyo_tower", isVROnline: "icon", statusStyle: "unicodeEmoji" };
+  obj = { user: stateFromStores, guildId: "o", size: "text-xxs/bold", style: null, status: null, isMobileOnline: null, isVROnline: "tertiary", statusStyle: null };
   obj[2] = userId(1297).AvatarSizes.XSMALL_20;
   obj[3] = tmp.dmAvatar;
   obj[4] = status;

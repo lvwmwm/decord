@@ -1,10 +1,10 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 9687
+// Function ID: 9688
 // Name: HighlightText
-// Dependencies: [19, 676, 21, 4285, 4129, 712, 1297, 2]
+// Dependencies: [19, 676, 21, 4255, 4099, 712, 1297, 2]
 // Exports: default
 
-// Module 9716 (HighlightText)
+// Module 9687 (HighlightText)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

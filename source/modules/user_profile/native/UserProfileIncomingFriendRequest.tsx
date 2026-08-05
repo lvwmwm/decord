@@ -1,10 +1,10 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 12393
+// Function ID: 12394
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4285, 712, 8757, 8710, 5610, 12422, 4474, 5616, 4281, 1236, 1297, 1416, 12423, 4695, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 8729, 8682, 5595, 12394, 4444, 5601, 4251, 1236, 1297, 1416, 12395, 4665, 2]
 // Exports: default
 
-// Module 12421 (UserProfileIncomingFriendRequest)
+// Module 12393 (UserProfileIncomingFriendRequest)
 import noop from "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";

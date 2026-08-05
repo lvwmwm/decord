@@ -1,9 +1,9 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16287
+// Function ID: 16288
 // Name: prototype
-// Dependencies: [32, 5, 1934, 1218, 1372, 1942, 1862, 4102, 4486, 4487, 3901, 5229, 1384, 4490, 16307, 1959, 11570, 691, 11569, 5753, 5754, 2]
+// Dependencies: [32, 5, 1934, 1218, 1372, 1942, 1862, 4072, 4456, 4457, 3871, 5214, 1384, 4460, 16288, 1959, 11542, 691, 11541, 5738, 5739, 2]
 
-// Module 16306 (prototype)
+// Module 16287 (prototype)
 import _slicedToArray from "_slicedToArray";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import initialize from "initialize";
@@ -126,7 +126,7 @@ let prototype = function GuildOnboardingHomeManager() {
       let c1;
       c1 = tmp2;
       ({ guildId: c0, channelId: c1 } = c0);
-      yield "ct";
+      yield "PX_8";
       if (1 === tmp5) {
         if (arg0 === 1) {
           let completedActions = 3;
@@ -264,7 +264,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -324,7 +324,7 @@ let prototype = function GuildOnboardingHomeManager() {
               const result = obj.completeNewMemberAction(callback, closure_1);
             }
             actionType = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp31) {
           actionType = tmp;
@@ -361,7 +361,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -460,7 +460,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -550,7 +550,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

@@ -1,9 +1,9 @@
-// Module ID: 4388
-// Function ID: 4389
+// Module ID: 4358
+// Function ID: 4359
 // Name: Camera
-// Dependencies: [19, 21, 4385, 2]
+// Dependencies: [19, 21, 4355, 2]
 
-// Module 4388 (Camera)
+// Module 4358 (Camera)
 import "noop";
 import { jsx } from "jsxProd";
 

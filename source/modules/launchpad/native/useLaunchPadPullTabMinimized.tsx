@@ -1,10 +1,10 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 15892
+// Function ID: 15893
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 4146, 10663, 2]
+// Dependencies: [19, 17, 4116, 10635, 2]
 // Exports: default
 
-// Module 15911 (useLaunchPadPullTabMinimized)
+// Module 15892 (useLaunchPadPullTabMinimized)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 
@@ -16,7 +16,7 @@ if (DCDScrollTracker) {
 }
 let c3 = tmp3;
 let closure_4 = { code: "function useLaunchPadPullTabMinimizedTsx1(){const{launchPadPullTabState,isVoicePanelOpen,launchPadSharedState,isMinimizedDuringScroll}=this.__closure;const isMinimized=(launchPadPullTabState.get().minimized||isVoicePanelOpen)&&launchPadSharedState.get()<=0;return isMinimized||isMinimizedDuringScroll.get();}" };
-let result = require("module_4146").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
+let result = require("module_4116").fileFinishedImporting("modules/launchpad/native/useLaunchPadPullTabMinimized.tsx");
 
 export default function useLaunchPadPullTabMinimized(launchPadSharedState) {
   launchPadSharedState = launchPadSharedState.launchPadSharedState;

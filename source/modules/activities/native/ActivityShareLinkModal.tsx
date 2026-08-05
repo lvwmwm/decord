@@ -1,10 +1,10 @@
-// Module ID: 13658
-// Function ID: 13659
+// Module ID: 13630
+// Function ID: 13631
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 1372, 1874, 1371, 9539, 4278, 21, 4285, 712, 589, 7226, 11432, 13657, 5616, 1351, 13659, 6826, 7062, 3986, 1236, 5638, 3985, 1474, 500, 5245, 8193, 5238, 5917, 4229, 4814, 10161, 10180, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1874, 1371, 9510, 4248, 21, 4255, 712, 589, 7200, 11404, 13629, 5601, 1351, 13631, 6811, 7036, 3956, 1236, 5623, 3955, 1474, 500, 5230, 8165, 5223, 5902, 4199, 4799, 10132, 10151, 2]
 // Exports: default
 
-// Module 13658 (ActivityShareLinkModal)
+// Module 13630 (ActivityShareLinkModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getMixedGradientColor from "getMixedGradientColor";
 import trackInvite from "trackInvite";
@@ -113,7 +113,7 @@ export default function ActivityShareLinkModal(applicationId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -136,7 +136,7 @@ export default function ActivityShareLinkModal(applicationId) {
               dependencyMap = 1;
               c3 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = Promise.all(outer1_9.map(outer1_0(7226).getOrResolveChannelIdFromDestinationId));
+              obj1[0] = Promise.all(outer1_9.map(outer1_0(7200).getOrResolveChannelIdFromDestinationId));
               return obj1;
             } else {
               c3 = 3;
@@ -147,7 +147,7 @@ export default function ActivityShareLinkModal(applicationId) {
           throw arg1;
         } else if (arg0 !== 2) {
           closure_0 = arg1.filter(outer1_0(1351).isNotNullish);
-          closure_1 = outer1_0(13659).resolveActivityShareMessageContent(c3, name, closure_12);
+          closure_1 = outer1_0(13631).resolveActivityShareMessageContent(c3, name, closure_12);
           callback2(true);
           const item = closure_0.forEach((() => {
             let closure_0 = v3((arg0) => {
@@ -166,7 +166,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "T", done: null };
                   }
                 } else {
                   try {
@@ -204,7 +204,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "T", done: null };
                   } catch (tmp12) {
                     c1 = tmp;
                     throw tmp12;
@@ -223,17 +223,17 @@ export default function ActivityShareLinkModal(applicationId) {
               return applyArgumentsResult;
             };
           })());
-          const obj5 = outer1_0(13659);
+          const obj5 = outer1_0(13631);
           let obj2 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: null };
           const intl = outer1_0(1236).intl;
           const obj3 = { applicationName: null };
           obj3[0] = name.name;
           obj2[1] = intl.formatToPlainString(outer1_0(1236).t.jQULqL, obj3);
-          outer1_1(3986).open(obj2);
+          outer1_1(3956).open(obj2);
           callback(true, ensureGuildLoaded);
-          const obj6 = outer1_1(3986);
-          const result = outer1_0(13657).closeActivityShareLinkModal();
-          const obj9 = outer1_0(13657);
+          const obj6 = outer1_1(3956);
+          const result = outer1_0(13629).closeActivityShareLinkModal();
+          const obj9 = outer1_0(13629);
         }
         c3 = 3;
         obj = { value: null, done: true };

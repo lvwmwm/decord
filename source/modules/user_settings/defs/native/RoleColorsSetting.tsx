@@ -1,10 +1,10 @@
-// Module ID: 14466
-// Function ID: 14467
+// Module ID: 14441
+// Function ID: 14442
 // Name: useRoleColorSettingValue
-// Dependencies: [19, 4277, 7892, 589, 13617, 1236, 10361, 2]
+// Dependencies: [19, 4247, 7864, 589, 13589, 1236, 10333, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14466 (useRoleColorSettingValue)
+// Module 14441 (useRoleColorSettingValue)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
@@ -15,7 +15,7 @@ function useRoleColorSettingValue() {
   return require(589) /* initialize */.useStateFromStores(items, () => roleStyle.roleStyle);
 }
 function onRoleColorSettingValueChange(roleStyle) {
-  require(13617) /* setFontSize */.setRoleStyle(roleStyle);
+  require(13589) /* setFontSize */.setRoleStyle(roleStyle);
 }
 function useRoleColorSettingOptions() {
   return React.useMemo(() => {

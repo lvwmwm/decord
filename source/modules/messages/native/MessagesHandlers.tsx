@@ -1,9 +1,9 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 10902
+// Function ID: 10903
 // Name: items
-// Dependencies: [109, 5, 32, 7753, 4322, 5612, 9667, 6894, 7988, 7080, 6963, 10235, 3915, 7040, 1218, 1372, 10326, 1942, 1862, 4270, 10350, 4502, 3913, 4371, 1931, 4102, 4962, 7217, 1874, 7852, 676, 7116, 1876, 7728, 1235, 5630, 10931, 10933, 1959, 10934, 10935, 10970, 10973, 7898, 4494, 5643, 1236, 8209, 7635, 9461, 4253, 9469, 6891, 10989, 10990, 4266, 7115, 10991, 10992, 8420, 8423, 9888, 500, 7953, 5798, 9831, 7951, 11026, 9170, 8705, 11, 11028, 11029, 10234, 4512, 11034, 11059, 4254, 4255, 10149, 1222, 10132, 11058, 5118, 4479, 6876, 7886, 11060, 11061, 1384, 11066, 11074, 11075, 11076, 11077, 11078, 10884, 3982, 11079, 10719, 10365, 4271, 8883, 7138, 1577, 7078, 11080, 5133, 10376, 7107, 4274, 10904, 10905, 7679, 11100, 10004, 5866, 11103, 11105, 8013, 11117, 10888, 698, 4498, 5853, 7696, 5096, 8601, 5743, 8173, 8262, 7366, 4490, 10330, 11125, 6795, 5925, 11126, 9949, 11127, 9267, 503, 3986, 11129, 8422, 11130, 6826, 4506, 1906, 4623, 8030, 11132, 11134, 11138, 7918, 11139, 7701, 7934, 7932, 11140, 11144, 11172, 11173, 4293, 5638, 3985, 11184, 11185, 11186, 4476, 5865, 11187, 11188, 6968, 4500, 7720, 7722, 11190, 10197, 8768, 8766, 11228, 11230, 11233, 7885, 9592, 10993, 11249, 11250, 11251, 10150, 11252, 11255, 11258, 11259, 11265, 11268, 2]
+// Dependencies: [109, 5, 32, 7725, 4292, 5597, 9638, 6879, 7960, 7054, 6948, 10207, 3885, 7014, 1218, 1372, 10298, 1942, 1862, 4240, 10322, 4472, 3883, 4341, 1931, 4072, 4947, 7191, 1874, 7824, 676, 7090, 1876, 7700, 1235, 5615, 10903, 10905, 1959, 10906, 10907, 10942, 10945, 7870, 4464, 5628, 1236, 8181, 7607, 9432, 4223, 9440, 6876, 10961, 10962, 4236, 7089, 10963, 10964, 8392, 8395, 9859, 500, 7925, 5783, 9802, 7923, 10998, 9142, 8677, 11, 11000, 11001, 10206, 4482, 11006, 11031, 4224, 4225, 10120, 1222, 10103, 11030, 5103, 4449, 6861, 7858, 11032, 11033, 1384, 11038, 11046, 11047, 11048, 11049, 11050, 10856, 3952, 11051, 10691, 10337, 4241, 8855, 7112, 1577, 7052, 11052, 5118, 10348, 7081, 4244, 10876, 10877, 7651, 11072, 9975, 5851, 11075, 11077, 7985, 11089, 10860, 698, 4468, 5838, 7668, 5081, 8573, 5728, 8145, 8234, 7338, 4460, 10302, 11097, 6780, 5910, 11098, 9920, 11099, 9238, 503, 3956, 11101, 8394, 11102, 6811, 4476, 1906, 4593, 8002, 11104, 11106, 11110, 7890, 11111, 7673, 7906, 7904, 11112, 11116, 11144, 11145, 4263, 5623, 3955, 11156, 11157, 11158, 4446, 5850, 11159, 11160, 6953, 4470, 7692, 7694, 11162, 10169, 8740, 8738, 11200, 11202, 11205, 7857, 9563, 10965, 11221, 11222, 11223, 10121, 11224, 11227, 11230, 11231, 11237, 11240, 2]
 
-// Module 10930 (items)
+// Module 10902 (items)
 import getQuestContentName from "getQuestContentName";
 import set from "set";
 import closure_8 from "GuildFeatures";
@@ -74,7 +74,7 @@ let result = require("_slicedToArray").fileFinishedImporting("modules/messages/n
 class MessagesHandlers {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
-    f107996 = obj;
+    f107936 = obj;
     obj.getMessageData = function getMessageData(messageId) {
       if (null == messageId) {
         return null;
@@ -2262,8 +2262,8 @@ class MessagesHandlers {
       obj[2] = callback(closure_3[144]);
       callback(closure_3[142]).open(obj);
     };
-    f107996 = undefined;
-    f107996 = set((arg0) => {
+    f107936 = undefined;
+    f107936 = set((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c1 = 0;
@@ -2283,7 +2283,7 @@ class MessagesHandlers {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -2385,7 +2385,7 @@ class MessagesHandlers {
       const obj = uiStore(closure_3[39]);
       callback(closure_3[50]).openLazy(uiStore(closure_3[38])(closure_3[172], closure_3.paths), "ExplicitMediaLearnMore", { messageId, channelId, attachmentId, embedId });
     };
-    f107996 = set((arg0) => {
+    f107936 = set((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -2406,7 +2406,7 @@ class MessagesHandlers {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -2425,25 +2425,25 @@ class MessagesHandlers {
                 let closure_1 = tmp2;
                 isReveal = undefined;
                 closure_1 = undefined;
-                const nativeSyntheticEventData = callback(10934).getNativeSyntheticEventData(isReveal);
+                const nativeSyntheticEventData = callback(10906).getNativeSyntheticEventData(isReveal);
                 ({ messageId, channelId, isReveal } = nativeSyntheticEventData);
                 ({ attachmentId, embedId } = nativeSyntheticEventData);
-                const obj10 = callback(10934);
+                const obj10 = callback(10906);
                 if (isReveal) {
                   if (obj11.shouldAgeVerifyForExplicitMedia()) {
                     dependencyMap = 1;
                     c4 = 1;
                     const obj1 = { value: null, done: false };
-                    obj1[0] = callback(4500).maybePerformReactiveCheck();
+                    obj1[0] = callback(4470).maybePerformReactiveCheck();
                     return obj1;
                   }
                 }
-                let obj3 = callback(6968);
+                let obj3 = callback(6953);
                 const obj2 = { obscure: null };
                 obj2[0] = isReveal;
                 const result = obj3.trackToggleMediaObscurityV2(obj2);
                 c4 = 3;
-                obj11 = callback(6968);
+                obj11 = callback(6953);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -2456,9 +2456,9 @@ class MessagesHandlers {
                 reactiveCheckPassed = outer1_9.getReactiveCheckPassed();
               }
               if (!reactiveCheckPassed) {
-                obj = outer1_1(7720);
+                obj = outer1_1(7692);
                 obj3 = { entryPoint: null };
-                obj3[0] = callback(7722).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
+                obj3[0] = callback(7694).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
                 const result1 = obj.showAgeVerificationGetStartedModal(obj3);
               }
             }

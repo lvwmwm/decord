@@ -1,10 +1,10 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 8854
+// Function ID: 8855
 // Name: SHARE_EVENT_DETAILS_LINK
 // Dependencies: [2]
 // Exports: SHARE_EVENT_DETAILS_LINK, canUseInviteModal
 
-// Module 8882 (SHARE_EVENT_DETAILS_LINK)
+// Module 8854 (SHARE_EVENT_DETAILS_LINK)
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/utils/ShareEventUtils.tsx");
 
 export const SHARE_EVENT_DETAILS_LINK = (guildId) => "https://discord.com/events/" + guildId.guildId + "/" + guildId.guildEventId;

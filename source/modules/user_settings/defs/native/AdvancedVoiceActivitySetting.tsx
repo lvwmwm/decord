@@ -1,9 +1,9 @@
-// Module ID: 14396
-// Function ID: 14397
+// Module ID: 14371
+// Function ID: 14372
 // Name: toggle
-// Dependencies: [4332, 7892, 589, 9077, 1236, 10361, 2]
+// Dependencies: [4302, 7864, 589, 9049, 1236, 10333, 2]
 
-// Module 14396 (toggle)
+// Module 14371 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createToggle from "createToggle";
 
@@ -20,7 +20,7 @@ createToggle = {
   },
   onValueChange: function onAdvancedVoiceActivitySettingValueChange(vadUseKrisp) {
     mode = mode.getMode();
-    let obj = importDefault(9077);
+    let obj = importDefault(9049);
     obj = { vadUseKrisp };
     obj.setMode(mode, obj);
   },

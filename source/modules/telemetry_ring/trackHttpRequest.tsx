@@ -1,10 +1,10 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16201
+// Function ID: 16202
 // Name: trackHttpRequest
-// Dependencies: [676, 16221, 16222, 698, 2]
+// Dependencies: [676, 16202, 16203, 698, 2]
 // Exports: default
 
-// Module 16220 (trackHttpRequest)
+// Module 16201 (trackHttpRequest)
 import { AnalyticEvents } from "ME";
 
 const result = require("trackZoomedInHttpRequest").fileFinishedImporting("modules/telemetry_ring/trackHttpRequest.tsx");
@@ -18,7 +18,7 @@ export default function trackHttpRequest(url) {
     const str2 = str.split(/[?#]/)[0];
   }
   obj.url = replaced;
-  importDefault(16222)(obj);
+  importDefault(16203)(obj);
   const random = Math.random();
   if (random < obj2.getHttpRequestSampleRate()) {
     obj = {};

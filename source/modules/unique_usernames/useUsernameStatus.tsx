@@ -1,10 +1,10 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13884
+// Function ID: 13885
 // Name: useUsernameStatus
-// Dependencies: [32, 19, 13911, 2]
+// Dependencies: [32, 19, 13885, 2]
 // Exports: useUsernameStatus
 
-// Module 13910 (useUsernameStatus)
+// Module 13884 (useUsernameStatus)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -22,7 +22,7 @@ export const useUsernameStatus = (arg0, flag, flag2) => {
   const dependencyMap = tmp;
   let usernameLiveCheck;
   let React;
-  usernameLiveCheck = _require(13911).useUsernameLiveCheck(arg0, flag, flag2);
+  usernameLiveCheck = _require(13885).useUsernameLiveCheck(arg0, flag, flag2);
   const tmp3 = usernameLiveCheck(React.useState(undefined), 2);
   React = tmp3[1];
   const items = [usernameLiveCheck, arg0, arg3];

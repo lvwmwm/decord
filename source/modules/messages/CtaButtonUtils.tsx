@@ -1,10 +1,10 @@
-// Module ID: 11228
-// Function ID: 11229
+// Module ID: 11200
+// Function ID: 11201
 // Name: CtaButtonType
-// Dependencies: [4501, 11229, 4500, 589, 2]
+// Dependencies: [4471, 11201, 4470, 589, 2]
 // Exports: getCtaButtonType, useCtaButtonType
 
-// Module 11228 (CtaButtonType)
+// Module 11200 (CtaButtonType)
 import initialize from "initialize";
 
 const require = arg1;
@@ -13,15 +13,15 @@ let result = require("useAgeVerificationRunner").fileFinishedImporting("modules/
 
 export const CtaButtonType = obj;
 export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
-  const obj = require(11229) /* shouldRenderReportFalsePositiveButton */;
+  const obj = require(11201) /* shouldRenderReportFalsePositiveButton */;
   if (obj.shouldRenderReportFalsePositiveButton(id)) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;
   } else {
-    let tmpResult = tmp(4500);
+    let tmpResult = tmp(4470);
     if (tmpResult.isAgeVerificationMessageWithRetryCta(channel_id, id)) {
       CONNECT_TO_TEEN = obj.AGE_VERIFICATION_RETRY;
     } else {
-      tmpResult = tmp(4500);
+      tmpResult = tmp(4470);
       if (tmpResult.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id)) {
         CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
       }
@@ -30,16 +30,16 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
   return CONNECT_TO_TEEN;
 };
 export const useCtaButtonType = function useCtaButtonType(id, channel_id) {
-  const obj = require(11229) /* shouldRenderReportFalsePositiveButton */;
+  const obj = require(11201) /* shouldRenderReportFalsePositiveButton */;
   const shouldRenderReportFalsePositiveButton = obj.useShouldRenderReportFalsePositiveButton(id);
-  const result = require(4500) /* useAgeVerificationRunner */.isAgeVerificationMessageWithRetryCta(channel_id, id);
-  const obj2 = require(4500) /* useAgeVerificationRunner */;
+  const result = require(4470) /* useAgeVerificationRunner */.isAgeVerificationMessageWithRetryCta(channel_id, id);
+  const obj2 = require(4470) /* useAgeVerificationRunner */;
   const tmp = require;
   const items = [initialize];
   let result1 = null != require(589) /* initialize */.useStateFromStores(items, () => pendingConnection.getPendingConnection());
   if (result1) {
-    result1 = tmp(4500).isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
-    const tmpResult = tmp(4500);
+    result1 = tmp(4470).isAgeVerificationMessageWithConnectToTeenCta(channel_id, id);
+    const tmpResult = tmp(4470);
   }
   if (shouldRenderReportFalsePositiveButton) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;

@@ -1,9 +1,9 @@
-// Module ID: 8116
-// Function ID: 8117
+// Module ID: 8088
+// Function ID: 8089
 // Name: prototype
-// Dependencies: [1931, 5229, 2]
+// Dependencies: [1931, 5214, 2]
 
-// Module 8116 (prototype)
+// Module 8088 (prototype)
 import handleConnectionOpen from "handleConnectionOpen";
 import "initialize";
 

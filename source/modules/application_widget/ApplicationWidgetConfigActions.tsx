@@ -1,10 +1,10 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12335
+// Function ID: 12336
 // Name: getApplicationsFromConfigs
-// Dependencies: [5, 12362, 676, 10914, 584, 687, 709, 530, 1208, 2]
+// Dependencies: [5, 12334, 676, 10886, 584, 687, 709, 530, 1208, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 12363 (getApplicationsFromConfigs)
+// Module 12335 (getApplicationsFromConfigs)
 import set from "set";
 import updateApplicationConfigs from "updateApplicationConfigs";
 import { FetchState } from "updateApplicationConfigs";
@@ -51,7 +51,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ function _fetchFeaturedWidgetConfigsFromApi() {
           closure_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp27) {
         dependencyMap = tmp27;
@@ -159,7 +159,7 @@ function _fetchDeveloperWidgetConfigsFromApi() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -214,7 +214,7 @@ function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj4);
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp27) {
         dependencyMap = tmp27;
@@ -255,7 +255,7 @@ function _fetchWidgetConfigsFromApi() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -315,7 +315,7 @@ function _fetchWidgetConfigsFromApi() {
             obj.dispatch(obj6);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp30) {
           set = tmp30;

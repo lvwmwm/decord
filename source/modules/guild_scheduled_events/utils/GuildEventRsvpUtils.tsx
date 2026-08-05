@@ -1,10 +1,10 @@
-// Module ID: 8868
-// Function ID: 8869
+// Module ID: 8840
+// Function ID: 8841
 // Name: getExistingRsvp
-// Dependencies: [1218, 6894, 1378, 1236, 8869, 8870, 8864, 2]
+// Dependencies: [1218, 6879, 1378, 1236, 8841, 8842, 8836, 2]
 // Exports: getExistingRsvp, getResponseOptions, handleRsvp
 
-// Module 8868 (getExistingRsvp)
+// Module 8840 (getExistingRsvp)
 import fetchFingerprint from "fetchFingerprint";
 import scheduledEventSort from "scheduledEventSort";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -42,15 +42,15 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
   ({ eventId, recurrenceId, guildId, updateRsvp, onRsvp } = openRsvpPicker);
   const guildScheduledEvent = store2.getGuildScheduledEvent(eventId);
   if (null != guildScheduledEvent) {
-    const eventException = require(8869) /* useEventException */.getEventException(recurrenceId, eventId);
-    const obj4 = require(8869) /* useEventException */;
+    const eventException = require(8841) /* useEventException */.getEventException(recurrenceId, eventId);
+    const obj4 = require(8841) /* useEventException */;
     let scheduled_start_time;
     if (guildScheduledEvent != null) {
       scheduled_start_time = guildScheduledEvent.scheduled_start_time;
     }
     let recurrenceStatus = null;
     if (null != scheduled_start_time) {
-      let tmp33Result = tmp33(8864);
+      let tmp33Result = tmp33(8836);
       let scheduled_start_time1;
       if (guildScheduledEvent != null) {
         scheduled_start_time1 = guildScheduledEvent.scheduled_start_time;
@@ -60,7 +60,7 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
     }
     if (null == recurrenceStatus) {
       if (recurrenceId == null) {
-        tmp33Result = tmp33(8864);
+        tmp33Result = tmp33(8836);
         recurrenceId = tmp33Result.getNextRecurrenceIdInEvent(guildScheduledEvent);
       }
       let tmp12 = recurrenceId;
@@ -92,6 +92,6 @@ export const handleRsvp = function handleRsvp(openRsvpPicker) {
     } else {
       openRsvpPicker.openRsvpPicker(guildScheduledEvent, tmp12);
     }
-    obj5 = require(8870) /* useEventSchedule */;
+    obj5 = require(8842) /* useEventSchedule */;
   }
 };

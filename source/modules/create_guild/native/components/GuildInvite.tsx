@@ -1,10 +1,10 @@
-// Module ID: 11980
-// Function ID: 11981
+// Module ID: 11952
+// Function ID: 11953
 // Name: SeeMoreFooter
-// Dependencies: [32, 19, 17, 9050, 1372, 8988, 1932, 9001, 8318, 676, 21, 4285, 5235, 712, 698, 5315, 4798, 1236, 9049, 1480, 4681, 589, 4691, 4711, 9002, 5238, 4131, 7138, 11975, 8987, 4479, 5272, 4281, 11981, 4812, 1297, 9016, 9047, 4695, 2]
+// Dependencies: [32, 19, 17, 9022, 1372, 8960, 1932, 8973, 8290, 676, 21, 4255, 5220, 712, 698, 5300, 4768, 1236, 9021, 1480, 4651, 589, 4661, 4681, 8974, 5223, 4101, 7112, 11947, 8959, 4449, 5257, 4251, 11953, 4797, 1297, 8988, 9019, 4665, 2]
 // Exports: default
 
-// Module 11980 (SeeMoreFooter)
+// Module 11952 (SeeMoreFooter)
 import Text from "Text";
 import useNavigation from "useNavigation";
 import get_ActivityIndicator from "getSystemLocale";
@@ -33,12 +33,12 @@ const require = arg1;
 function SeeMoreFooter(openInviteSheet) {
   let obj = { icon: null, onPress: null, label: null, end: true };
   obj = { style: createCacheKey().friendIcon, children: null };
-  obj[1] = callback(require(4798) /* GroupIcon */.GroupIcon, { size: "sm" });
+  obj[1] = callback(require(4768) /* GroupIcon */.GroupIcon, { size: "sm" });
   obj[0] = callback(closure_6, obj);
   obj[1] = openInviteSheet.openInviteSheet;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.zrLIIz);
-  return callback(require(5315) /* TableRowInner */.TableRow, obj);
+  return callback(require(5300) /* TableRowInner */.TableRow, obj);
 }
 function GuildInviteSuggestionRows(openInviteSheet) {
   let require;

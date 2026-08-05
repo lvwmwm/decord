@@ -1,10 +1,10 @@
-// Module ID: 8392
-// Function ID: 8393
+// Module ID: 8364
+// Function ID: 8365
 // Name: renderItem
-// Dependencies: [5, 32, 19, 17, 6964, 6966, 21, 4285, 712, 8393, 4281, 1236, 1483, 1581, 8366, 589, 11, 8367, 8369, 7666, 2]
+// Dependencies: [5, 32, 19, 17, 6949, 6951, 21, 4255, 712, 8365, 4251, 1236, 1483, 1581, 8338, 589, 11, 8339, 8341, 7638, 2]
 // Exports: default
 
-// Module 8392 (renderItem)
+// Module 8364 (renderItem)
 import closure_3 from "CONVERSATION_COLORS";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
@@ -23,7 +23,7 @@ let unpackModuleId;
 const require = arg1;
 function renderItem(item) {
   item = item.item;
-  return jsx(importDefault(8393), { channelId: item.channelId, conversationId: item.conversationId });
+  return jsx(importDefault(8365), { channelId: item.channelId, conversationId: item.conversationId });
 }
 function keyExtractor(conversationId) {
   return conversationId.conversationId;
@@ -48,7 +48,7 @@ let closure_18 = importAllResult.memo(() => {
   obj = { variant: "text-md/normal", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.LJuFRG);
-  obj[1] = jsx(require(4281) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: null });
+  obj[1] = jsx(require(4251) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: null });
   return <closure_7 variant="text-md/normal" color="text-muted">{null}</closure_7>;
 });
 let obj4 = { paddingVertical: require("Themes").space.PX_24, paddingHorizontal: require("Themes").space.PX_16 };
@@ -114,7 +114,7 @@ export default function ConversationListScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

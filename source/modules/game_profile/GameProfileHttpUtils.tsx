@@ -1,10 +1,10 @@
-// Module ID: 9258
-// Function ID: 9259
+// Module ID: 9229
+// Function ID: 9230
 // Name: _getShopCollection
-// Dependencies: [5, 1946, 9196, 676, 9259, 709, 4522, 530, 589, 584, 687, 9253, 2]
+// Dependencies: [5, 1946, 9168, 676, 9230, 709, 4492, 530, 589, 584, 687, 9224, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9258 (_getShopCollection)
+// Module 9229 (_getShopCollection)
 import dispatcher from "dispatcher";
 import _getSystemLocale from "_getSystemLocale";
 import importDefaultResult from "getSimilarGames";
@@ -84,7 +84,7 @@ function _fetchSimilarGames() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -138,7 +138,7 @@ function _fetchSimilarGames() {
             obj4[2] = lib;
             obj.dispatch(obj4);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp18) {
           c5 = tmp;
@@ -198,7 +198,7 @@ function _getGameAnnouncements() {
         const obj6 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS", gameId: null, messages: null, channelId: null, guildId: null };
         obj6[1] = callback;
         const obj9 = body(709);
-        obj6[2] = callback(9253).toAnnouncementMessages(body.messages);
+        obj6[2] = callback(9224).toAnnouncementMessages(body.messages);
         const channel_id = body.channel_id;
         let dependencyMap = channel_id;
         if (channel_id == null) {
@@ -213,7 +213,7 @@ function _getGameAnnouncements() {
         obj6[4] = c3;
         obj9.dispatch(obj6);
         c7 = 0;
-        const obj11 = callback(9253);
+        const obj11 = callback(9224);
       }
       c7 = 0;
       return body;

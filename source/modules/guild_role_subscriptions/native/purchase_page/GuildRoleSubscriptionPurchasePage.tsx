@@ -1,10 +1,10 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15505
+// Function ID: 15506
 // Name: Separator
-// Dependencies: [19, 17, 1302, 1372, 1862, 676, 21, 4285, 712, 4281, 1236, 1297, 10711, 14346, 14348, 14349, 647, 15525, 4475, 15527, 15528, 15529, 4745, 5236, 5661, 15530, 8676, 15532, 15533, 3982, 15534, 2]
+// Dependencies: [19, 17, 1302, 1372, 1862, 676, 21, 4255, 712, 4251, 1236, 1297, 10683, 14321, 14323, 14324, 647, 15506, 4445, 15508, 15509, 15510, 4715, 5221, 5646, 15511, 8648, 15513, 15514, 3952, 15515, 2]
 // Exports: default
 
-// Module 15524 (Separator)
+// Module 15505 (Separator)
 import "registerAsset";
 import get_ActivityIndicator from "useTrackRoleSubscriptionUpsellAnalytics";
 import handleThemeChange from "handleThemeChange";
@@ -33,7 +33,7 @@ function LegalDisclaimer() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { termsURL: constants3.TERMS, paidURL: constants3.PAID_TERMS };
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t.FSPTDI, obj);
-  return callback(require(4281) /* Text */.Text, obj);
+  return callback(require(4251) /* Text */.Text, obj);
 }
 function SocialBadge(onPress) {
   let iconSource;
@@ -50,10 +50,10 @@ function SocialBadge(onPress) {
   obj[1] = num;
   obj[2] = onPress;
   obj = { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true };
-  const items = [callback(require(1297) /* Button */.Icon, obj), callback(require(4281) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
+  const items = [callback(require(1297) /* Button */.Icon, obj), callback(require(4251) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: text }), ];
   if (tmp5Result) {
     obj = { source: null, style: null };
-    obj[0] = importDefault(10711);
+    obj[0] = importDefault(10683);
     obj[1] = tmp.socialBadgeArrow;
     tmp5Result = callback(require(1297) /* Button */.Icon, obj);
   }

@@ -1,13 +1,13 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 15093
+// Function ID: 15094
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1874, 14430, 676, 21, 4285, 712, 647, 15114, 5616, 698, 5630, 10870, 1959, 15086, 4146, 9267, 503, 15097, 14431, 7611, 5236, 15110, 2]
+// Dependencies: [32, 19, 17, 1874, 14405, 676, 21, 4255, 712, 647, 15094, 5601, 698, 5615, 10842, 1959, 15066, 4116, 9238, 503, 15077, 14406, 7583, 5221, 15090, 2]
 // Exports: default
 
-// Module 15113 (HappeningNowCardEmbeddedActivity)
+// Module 15093 (HappeningNowCardEmbeddedActivity)
 import _slicedToArray from "_slicedToArray";
 import encodeProperties from "encodeProperties";
-import { View } from "module_4146";
+import { View } from "module_4116";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
 import { AnalyticEvents } from "ME";

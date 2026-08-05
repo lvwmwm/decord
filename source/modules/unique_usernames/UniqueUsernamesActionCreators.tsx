@@ -1,8 +1,8 @@
-// Module ID: 13913
-// Function ID: 13914
-// Dependencies: [5, 676, 1236, 709, 530, 698, 5094, 503, 4184, 2]
+// Module ID: 13887
+// Function ID: 13888
+// Dependencies: [5, 676, 1236, 709, 530, 698, 5079, 503, 4154, 2]
 
-// Module 13913
+// Module 13887
 import expandEventProperties from "expandEventProperties";
 import ME from "ME";
 
@@ -34,7 +34,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

@@ -1,9 +1,9 @@
-// Module ID: 7108
-// Function ID: 7109
+// Module ID: 7082
+// Function ID: 7083
 // Name: AdCreativeType
 // Dependencies: [2]
 
-// Module 7108 (AdCreativeType)
+// Module 7082 (AdCreativeType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AdCreativeType.tsx");
 
 export const AdCreativeType = { INVALID: 0, [0]: "INVALID", QUEST: 1, [1]: "QUEST", QUEST_HOME_HERO: 2, [2]: "QUEST_HOME_HERO", BOUNTY: 3, [3]: "BOUNTY", NO_FILL: 4, [4]: "NO_FILL" };

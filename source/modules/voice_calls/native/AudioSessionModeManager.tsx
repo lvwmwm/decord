@@ -1,9 +1,9 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16234
+// Function ID: 16235
 // Name: handleAVAudioSessionMode
-// Dependencies: [17, 1371, 5106, 4304, 1218, 1372, 4332, 1931, 4301, 6785, 676, 500, 16254, 5229, 2]
+// Dependencies: [17, 1371, 5091, 4274, 1218, 1372, 4302, 1931, 4271, 6770, 676, 500, 16235, 5214, 2]
 
-// Module 16253 (handleAVAudioSessionMode)
+// Module 16234 (handleAVAudioSessionMode)
 import participantFromServer from "participantFromServer";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 import reset from "reset";
@@ -42,7 +42,7 @@ function handleAVAudioSessionMode() {
           VIDEO = AVAudioSessionMode.LISTEN;
           obj2 = tmp9;
         }
-        obj = require(16254) /* handleVoiceChannelSelect */;
+        obj = require(16235) /* handleVoiceChannelSelect */;
       }
     }
     VIDEO = VoiceEngine.AVAudioSessionMode.VIDEO;

@@ -1,10 +1,10 @@
-// Module ID: 6853
-// Function ID: 6854
+// Module ID: 6838
+// Function ID: 6839
 // Name: LIMITED_GUILD_MEMBER_THRESHOLD
-// Dependencies: [1372, 4206, 676, 2]
+// Dependencies: [1372, 4176, 676, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 6853 (LIMITED_GUILD_MEMBER_THRESHOLD)
+// Module 6838 (LIMITED_GUILD_MEMBER_THRESHOLD)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
 import { ChannelTypes } from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 10335
-// Function ID: 10336
+// Module ID: 10307
+// Function ID: 10308
 // Name: prototype
 // Dependencies: [2]
 
-// Module 10335 (prototype)
+// Module 10307 (prototype)
 const prototype = function RevenueError(errorHandlingBehavior) {
   let extraSentryInformation;
   let message;

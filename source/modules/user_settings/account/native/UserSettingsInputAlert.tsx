@@ -1,9 +1,9 @@
-// Module ID: 13947
-// Function ID: 13948
+// Module ID: 13921
+// Function ID: 13922
 // Name: renderContent
-// Dependencies: [19, 21, 530, 4693, 4281, 7713, 4713, 5733, 2]
+// Dependencies: [19, 21, 530, 4663, 4251, 7685, 4683, 5718, 2]
 
-// Module 13947 (renderContent)
+// Module 13921 (renderContent)
 import jsxProd from "jsxProd";
 import { PureComponent } from "noop";
 import importAllResult from "noop";
@@ -85,7 +85,7 @@ prototype["renderContent"] = function renderContent() {
     if (tmp7) {
       let obj = { variant: "text-md/normal", children: null };
       obj[1] = helpText;
-      tmp7 = callback(tmp5(4281).Text, obj);
+      tmp7 = callback(tmp5(4251).Text, obj);
     }
     const items = [tmp7, ];
     obj = { label: null, placeholder: null, secureTextEntry: null, returnKeyType: "done", autoFocus: true, status: null, errorMessage: null, onSubmitEditing: null, onChange: null };
@@ -103,9 +103,9 @@ prototype["renderContent"] = function renderContent() {
     obj[8] = function onChange(input) {
       return self.setState({ input });
     };
-    items[1] = callback(self(7713).TextInput, obj);
+    items[1] = callback(self(7685).TextInput, obj);
     obj[1] = items;
-    return closure_4(self(4693).Stack, obj);
+    return closure_4(self(4663).Stack, obj);
   }
   error = self.state.error;
 };
@@ -118,12 +118,12 @@ prototype["render"] = function render() {
   ({ title, actionText, cancelText, confirmColor, useKeyboardAwareWrapper } = this.props);
   let obj = { title, confirmText: actionText, confirmColor, onConfirm: this.handleSubmit, cancelText, onCancel: this.close, children: null };
   obj[6] = this.renderContent();
-  const tmp5 = callback(importDefault(4713), obj);
+  const tmp5 = callback(importDefault(4683), obj);
   let tmpResult = tmp5;
   if (useKeyboardAwareWrapper) {
     obj = { children: null };
     obj[0] = tmp5;
-    tmpResult = callback(importDefault(5733), obj);
+    tmpResult = callback(importDefault(5718), obj);
   }
   return tmpResult;
 };

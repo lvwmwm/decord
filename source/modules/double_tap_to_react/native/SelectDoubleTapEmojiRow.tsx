@@ -1,9 +1,9 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11640
+// Function ID: 11641
 // Name: num2
-// Dependencies: [19, 17, 4277, 5339, 1877, 21, 4285, 500, 712, 589, 4812, 5301, 1416, 8563, 1474, 3930, 7886, 8559, 7142, 7576, 2]
+// Dependencies: [19, 17, 4247, 5324, 1877, 21, 4255, 500, 712, 589, 4797, 5286, 1416, 8535, 1474, 3900, 7858, 8531, 7116, 7548, 2]
 
-// Module 11668 (num2)
+// Module 11640 (num2)
 import importAllResult from "ReactionIcon";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -106,9 +106,9 @@ let closure_13 = importAllResult.memo((emoji) => {
     url = emoji.url;
   }
   obj1[4] = url;
-  obj[1] = closure_9(importDefault(5301), obj1);
+  obj[1] = closure_9(importDefault(5286), obj1);
   obj[4] = closure_9(View, obj);
-  return closure_9(emoji(4812).PressableOpacity, obj);
+  return closure_9(emoji(4797).PressableOpacity, obj);
 });
 const obj8 = { height: 12, width: 12, color: require("Themes").colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 let result = set.fileFinishedImporting("modules/double_tap_to_react/native/SelectDoubleTapEmojiRow.tsx");
@@ -132,7 +132,7 @@ export default importAllResult.memo((selectedEmoji) => {
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
     let obj = onPressEmoji(substr[15]);
-    obj = { emoji, channel: "Array", intention: 8 };
+    obj = { emoji, channel: "Array", intention: true };
     obj[2] = constants.DEFAULT_REACT_EMOJI;
     return !obj.isEmojiFilteredOrLocked(obj);
   });
@@ -167,7 +167,7 @@ export default importAllResult.memo((selectedEmoji) => {
     accessibilityRole: "button",
     onPress() {
       let obj = selectedEmoji(substr[17]);
-      obj = { onPressEmoji: maybeApplyNoTextColorForLightCustomTheme, channel: "r", pickerIntention: true, reactionType: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", startExpanded: null };
+      obj = { onPressEmoji: maybeApplyNoTextColorForLightCustomTheme, channel: "r", pickerIntention: true, reactionType: "/assets/.cache/intl/bW9kdWxlcy9jaGVja291dC9tZXNzYWdlcw==", startExpanded: null };
       obj[2] = outer1_8.DEFAULT_REACT_EMOJI;
       obj[3] = selectedEmoji(substr[18]).ReactionTypes.NORMAL;
       const result = obj.openEmojiPickerActionSheet(obj, "stack");

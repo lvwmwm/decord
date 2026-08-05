@@ -1,9 +1,9 @@
-// Module ID: 4698
-// Function ID: 4699
+// Module ID: 4668
+// Function ID: 4669
 // Name: SUBTLE_SPRING
 // Dependencies: [2]
 
-// Module 4698 (SUBTLE_SPRING)
+// Module 4668 (SUBTLE_SPRING)
 const result = require("set").fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");
 
 export const SUBTLE_SPRING = { mass: 1, damping: 27, stiffness: 300 };

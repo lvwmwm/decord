@@ -1,10 +1,10 @@
-// Module ID: 14987
-// Function ID: 14988
+// Module ID: 14967
+// Function ID: 14968
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 14977, 14978, 676, 1480, 14975, 1236, 14988, 10377, 8286, 14985, 691, 14976, 8301, 8295, 8860, 2]
+// Dependencies: [5, 32, 19, 14957, 14958, 676, 1480, 14955, 1236, 14968, 10349, 8258, 14965, 691, 14956, 8273, 8267, 8832, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 14987 (useIdentityRegistrationStep)
+// Module 14967 (useIdentityRegistrationStep)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -64,7 +64,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -105,7 +105,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             ref = c4;
             if (ref instanceof callback(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } else {
               obj1 = callback(navigation[11]);
               const context = obj1.getAuthenticationErrorsFromAPIError(noop);
@@ -170,7 +170,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             obj7[2] = closure_1;
             obj7[3] = callback;
             obj7[4] = function onPhoneTokenReceived(arg0) {
-              let obj = { email: "r", phone: "PX_16", phoneToken: "TRANSPARENT" };
+              let obj = { email: "r", phone: "Path", phoneToken: "TRANSPARENT" };
               obj[1] = closure_1;
               obj[2] = arg0;
               v3(obj);
@@ -187,7 +187,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             };
             outer1_2.push(callback(navigation[13]).AuthStates.VERIFY_PHONE, obj7);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp55) {
           c4 = tmp55;

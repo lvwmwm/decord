@@ -1,10 +1,10 @@
-// Module ID: 5634
-// Function ID: 5635
+// Module ID: 5619
+// Function ID: 5620
 // Name: useRoleIcon
-// Dependencies: [19, 1935, 1862, 21, 589, 5635, 5636, 1236, 2]
+// Dependencies: [19, 1935, 1862, 21, 589, 5620, 5621, 1236, 2]
 // Exports: getRoleIcon, useRoleIcon
 
-// Module 5634 (useRoleIcon)
+// Module 5619 (useRoleIcon)
 import noop from "noop";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -86,9 +86,9 @@ export const getRoleIcon = function getRoleIcon(roleId) {
     if (null != roleId) {
       role = role.getRole(guild.id, roleId);
       if (null != role) {
-        let obj = require(5635) /* getRoleIconData */;
+        let obj = require(5620) /* getRoleIconData */;
         if (obj.canGuildUseRoleIcons(guild, role)) {
-          let roleIconData = tmp4(5635).getRoleIconData(role);
+          let roleIconData = tmp4(5620).getRoleIconData(role);
           if (roleIconData == null) {
             roleIconData = {};
           }

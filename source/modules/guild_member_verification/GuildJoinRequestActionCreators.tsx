@@ -1,9 +1,9 @@
-// Module ID: 8238
-// Function ID: 8239
+// Module ID: 8210
+// Function ID: 8211
 // Name: _fetchGuildJoinRequests
-// Dependencies: [5, 1376, 6827, 4103, 676, 4105, 709, 530, 7244, 4623, 1236, 5096, 2]
+// Dependencies: [5, 1376, 6812, 4073, 676, 4075, 709, 530, 7216, 4593, 1236, 5081, 2]
 
-// Module 8238 (_fetchGuildJoinRequests)
+// Module 8210 (_fetchGuildJoinRequests)
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -37,7 +37,7 @@ function _fetchGuildJoinRequests() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ function _fetchGuildJoinRequests() {
               let closure_9;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -120,7 +120,7 @@ function _fetchGuildJoinRequests() {
                 }
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else if (2 === tmp7) {
             c5 = 0;
@@ -241,7 +241,7 @@ function _removeGuildJoinRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -335,7 +335,7 @@ function _ackUserGuildJoinRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -379,7 +379,7 @@ function _ackUserGuildJoinRequest() {
             obj4[2] = callback;
             obj6.dispatch(obj4);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw arg1;
@@ -451,7 +451,7 @@ function _updateGuildJoinRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -471,12 +471,12 @@ function _updateGuildJoinRequest() {
               let APPROVED;
               let closure_4;
               if (APPROVED === undefined) {
-                APPROVED = callback(4105).GuildJoinRequestApplicationStatuses.APPROVED;
+                APPROVED = callback(4075).GuildJoinRequestApplicationStatuses.APPROVED;
               }
               updateSubmittedGuildJoinRequestTotal = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -488,7 +488,7 @@ function _updateGuildJoinRequest() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback(7244);
+              let obj7 = callback(7216);
               const obj2 = { guildId: null, actionType: null, applicationUserId: null };
               obj2[0] = callback;
               obj2[1] = APPROVED;
@@ -514,7 +514,7 @@ function _updateGuildJoinRequest() {
                   body = body.body.code === constants.REQUEST_TO_JOIN_USER_INELIGIBLE;
                 }
                 if (body) {
-                  let obj = callback2(4623);
+                  let obj = callback2(4593);
                   obj = { title: null, body: null };
                   const intl = callback(1236).intl;
                   obj[0] = intl.string(callback(1236).t.DxJj4e);
@@ -543,7 +543,7 @@ function _updateGuildJoinRequest() {
             obj7[3] = updateSubmittedGuildJoinRequestTotal.body;
             obj.dispatch(obj7);
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp18) {
           c8 = tmp;
@@ -582,7 +582,7 @@ function _resetGuildJoinRequest() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -671,7 +671,7 @@ function _fetchRequestToJoinGuilds() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -714,7 +714,7 @@ function _fetchRequestToJoinGuilds() {
           obj4[1] = body.body;
           obj.dispatch(obj4);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -774,7 +774,7 @@ function _createOrEnterJoinRequestInterview() {
       if (flag === undefined) {
         flag = true;
       }
-      yield "ct";
+      yield "PX_8";
       const HTTP = callback(body[7]).HTTP;
       const obj2 = { url: null, rejectWithError: null };
       obj2[0] = closure_8.JOIN_REQUEST_INTERVIEW(callback);
@@ -888,7 +888,7 @@ export default {
   },
   setSelectedGuildJoinRequest(guildId, request) {
     if (null != request) {
-      let obj = require(7244) /* trackMemberApplicationViewed */;
+      let obj = require(7216) /* trackMemberApplicationViewed */;
       obj = { guildId: null, applicationStatus: null, applicationUserId: null };
       obj[0] = guildId;
       ({ applicationStatus: obj2[1], userId: obj2[2] } = request);

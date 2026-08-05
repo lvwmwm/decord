@@ -1,8 +1,8 @@
-// Module ID: 15974
-// Function ID: 15975
-// Dependencies: [19, 17, 9674, 21, 4285, 4695, 9397, 1236, 7672, 2]
+// Module ID: 15955
+// Function ID: 15956
+// Dependencies: [19, 17, 9645, 21, 4255, 4665, 9368, 1236, 7644, 2]
 
-// Module 15974
+// Module 15955
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { ActivityPanelModes } from "ActivityPanelModes";
@@ -25,22 +25,22 @@ const memoResult = importAllResult.memo(function MinimizeActivityButton(arg0) {
       let obj = { style: null, children: null };
       obj[0] = tmp2.buttonParent;
       obj = { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true };
-      obj[0] = importDefault(9397);
+      obj[0] = importDefault(9368);
       const intl2 = setMode(1236).intl;
       obj[1] = intl2.string(setMode(1236).t.brPQ5U);
       obj[2] = callback;
       obj[3] = activityName;
-      obj[1] = jsx(setMode(4695).Button, { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
+      obj[1] = jsx(setMode(4665).Button, { icon: null, accessibilityLabel: null, onPress: null, text: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
       let tmp3 = <View icon={null} accessibilityLabel={null} onPress={null} text={null} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} shrink />;
     }
     return tmp3;
   }
   obj = { icon: null, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 };
-  obj[0] = importDefault(9397);
+  obj[0] = importDefault(9368);
   const intl = setMode(1236).intl;
   obj[1] = intl.string(setMode(1236).t.brPQ5U);
   obj[2] = callback;
-  tmp3 = jsx(setMode(7672).IconButton, { icon: null, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
+  tmp3 = jsx(setMode(7644).IconButton, { icon: null, accessibilityLabel: null, onPress: null, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1 });
 });
 const result = require("ActivityPanelModes").fileFinishedImporting("modules/activities/panel/native/MinimizeActivityButton.tsx");
 

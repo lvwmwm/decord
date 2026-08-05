@@ -41,11 +41,11 @@ closure_1 = undefined;
 class KeyboardAvoidingView {
   constructor(arg0) {
     self = this;
-    tmp = _isNativeReflectConstruct(this, f113906);
+    tmp = _isNativeReflectConstruct(this, f113847);
     items = [];
     items[0] = global;
     tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(f113906);
+    obj = _isNativeReflectConstruct(f113847);
     tmp3 = _isNativeReflectConstruct;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
@@ -55,7 +55,7 @@ class KeyboardAvoidingView {
       constructResult = obj.apply(self, items);
     }
     tmp3Result = tmp3(self, constructResult);
-    f113906 = tmp3Result;
+    f113847 = tmp3Result;
     tmp3Result._frame = null;
     tmp3Result._keyboardEvent = null;
     tmp3Result._subscriptions = [];
@@ -69,8 +69,8 @@ class KeyboardAvoidingView {
       closure_0._keyboardEvent = null;
       const result = closure_0._updateBottomIfNecessary();
     };
-    f113906 = undefined;
-    f113906 = defineProperty((arg0) => {
+    f113847 = undefined;
+    f113847 = defineProperty((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -86,7 +86,7 @@ class KeyboardAvoidingView {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -135,7 +135,7 @@ class KeyboardAvoidingView {
               props.onLayout(closure_0);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           } catch (tmp18) {
             c4 = tmp;
             throw tmp18;
@@ -180,7 +180,7 @@ class KeyboardAvoidingView {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ closure_1 = importDefaultResult(function(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

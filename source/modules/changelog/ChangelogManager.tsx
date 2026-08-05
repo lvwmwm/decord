@@ -1,9 +1,9 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16243
+// Function ID: 16244
 // Name: prototype
-// Dependencies: [5, 32, 1946, 4296, 5229, 8002, 16263, 709, 11, 16265, 2]
+// Dependencies: [5, 32, 1946, 4266, 5214, 7974, 16244, 709, 11, 16246, 2]
 
-// Module 16262 (prototype)
+// Module 16243 (prototype)
 import cacheBustParam from "cacheBustParam";
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
@@ -32,7 +32,7 @@ let prototype = function ChangelogManager() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ let prototype = function ChangelogManager() {
               c3 = 0;
               outer1_1(outer1_2[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } else {
               dispatchResult2 = c0;
               dispatchResult2 = outer1_1;
@@ -131,7 +131,7 @@ let prototype = function ChangelogManager() {
                 c3 = 0;
                 outer1_1(outer1_2[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               } else {
                 dispatchResult2 = c0;
                 dispatchResult2 = c1;
@@ -145,7 +145,7 @@ let prototype = function ChangelogManager() {
                     c3 = 0;
                     outer1_1(outer1_2[7]).dispatch({ type: "CHANGE_LOG_RESOLVED" });
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "T", done: null };
                   }
                   obj10 = outer1_1(outer1_2[8]);
                 }
@@ -175,7 +175,7 @@ let prototype = function ChangelogManager() {
             let obj6 = outer1_1(outer1_2[7]);
             obj6.dispatch({ type: "CHANGE_LOG_RESOLVED" });
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           } else {
             if (null != dispatchResult2) {
               dispatchResult2 = c1;
@@ -188,7 +188,7 @@ let prototype = function ChangelogManager() {
                   obj2 = outer1_1(outer1_2[7]);
                   obj2.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 } else {
                   const _Date = Date;
                   const date = new Date(c5.date);
@@ -202,7 +202,7 @@ let prototype = function ChangelogManager() {
                   obj1 = outer1_1(outer1_2[7]);
                   obj1.dispatch({ type: "CHANGE_LOG_RESOLVED" });
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               }
             }

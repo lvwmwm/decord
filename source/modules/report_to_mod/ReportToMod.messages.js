@@ -1,15 +1,15 @@
-// Module ID: 2385
-// Function ID: 2386
+// Module ID: 2355
+// Function ID: 2356
 // Name: messagesProxy
-// Dependencies: [1239, 2386, 1274, 2]
+// Dependencies: [1239, 2356, 1274, 2]
 
-// Module 2385 (messagesProxy)
+// Module 2355 (messagesProxy)
 import module_1274 from "module_1274";
 import module_1274 from "module_1274";
 
 const loader = module_1274.createLoader({
   () => {
-    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(2386) /* registerAsset */);
+    const jsonAsset = require(1239) /* loadJsonAsset */.loadJsonAsset(require(2356) /* registerAsset */);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");

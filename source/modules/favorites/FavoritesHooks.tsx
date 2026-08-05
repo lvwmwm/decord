@@ -1,10 +1,10 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9600
+// Function ID: 9601
 // Name: useFavoritesAccess
-// Dependencies: [4102, 1874, 1375, 9630, 1410, 1876, 9631, 9632, 589, 1897, 11, 1306, 1865, 2]
+// Dependencies: [4072, 1874, 1375, 9601, 1410, 1876, 9602, 9603, 589, 1897, 11, 1306, 1865, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesCategories, useIsFavoritesGuildSelected
 
-// Module 9629 (useFavoritesAccess)
+// Module 9600 (useFavoritesAccess)
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -20,7 +20,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   if (FavoritesGuildChannelList === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9603) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -52,7 +52,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   } else {
     num = 0;
     if (tmp4) {
-      num = tmp(9631).FREE_FAVORITE_LIMIT;
+      num = tmp(9602).FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -62,7 +62,7 @@ export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
   let enabled;
   let isFreemium;
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9603) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -91,7 +91,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
   } else {
     num = 0;
     if (tmp4) {
-      num = require(9631) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(9602) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 };

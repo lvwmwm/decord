@@ -1,19 +1,19 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15028
+// Function ID: 15029
 // Name: useChannelListWidth
-// Dependencies: [10911, 4139, 3989, 712, 691, 2]
+// Dependencies: [10883, 4109, 3959, 712, 691, 2]
 // Exports: default
 
-// Module 15048 (useChannelListWidth)
+// Module 15028 (useChannelListWidth)
 const result = require("map").fileFinishedImporting("modules/channel_list_v2/native/useChannelListWidth.tsx");
 
 export default function useChannelListWidth() {
-  const drawerWidth = require(10911) /* sum */.useDrawerWidth();
-  const obj = require(10911) /* sum */;
-  const token = require(3989) /* map */.useToken(importDefault(712).modules.mobile.CHANNEL_DRAWER_SPACING);
+  const drawerWidth = require(10883) /* sum */.useDrawerWidth();
+  const obj = require(10883) /* sum */;
+  const token = require(3959) /* map */.useToken(importDefault(712).modules.mobile.CHANNEL_DRAWER_SPACING);
   let num = 0;
   const diff = drawerWidth - require(691) /* keys */.DM_WIDTH;
-  if (importDefault(4139)().isChatBesideChannelList) {
+  if (importDefault(4109)().isChatBesideChannelList) {
     num = token;
   }
   return diff - num;

@@ -1,9 +1,9 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16381
+// Function ID: 16382
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 3915, 1218, 1372, 4480, 11690, 11691, 676, 4497, 4253, 16401, 1959, 503, 3867, 11693, 9672, 698, 500, 5229, 14560, 691, 2]
+// Dependencies: [5, 17, 3885, 1218, 1372, 4450, 11662, 11663, 676, 4467, 4223, 16382, 1959, 503, 3837, 11665, 9643, 698, 500, 5214, 14541, 691, 2]
 
-// Module 16400 (haveNotSeenPromptSince)
+// Module 16381 (haveNotSeenPromptSince)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { NativeModules } from "expandEventProperties";
 import storeThread from "storeThread";
@@ -29,8 +29,8 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      tmp4 = importDefault(3867)().diff(tmp, "days") >= 1;
-      const obj = importDefault(3867)();
+      tmp4 = importDefault(3837)().diff(tmp, "days") >= 1;
+      const obj = importDefault(3837)();
     }
     tmp2 = tmp4;
   }
@@ -155,7 +155,7 @@ function _logNotificationPermissionStatus2() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -191,8 +191,8 @@ function _logNotificationPermissionStatus2() {
           return obj;
         } else {
           callback = arg1;
-          callback2 = callback(9672).allowInAppNotifications();
-          const obj5 = callback(9672);
+          callback2 = callback(9643).allowInAppNotifications();
+          const obj5 = callback(9643);
           const obj2 = { os_enabled: null, foreground_app_enabled: null, background_app_enabled: null, notification_authorization_status: null };
           obj2[0] = callback === constants2.AUTHORIZED;
           obj2[1] = callback2;
@@ -205,7 +205,7 @@ function _logNotificationPermissionStatus2() {
           obj2[3] = tmp7;
           obj6.track(constants.NOTIFICATION_PERMISSION_STATUS, obj2);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp10) {
         c3 = tmp;
@@ -230,7 +230,7 @@ let c23 = null;
 class NotificationPermissionManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f113240 = applyArgumentsResult;
+    f113181 = applyArgumentsResult;
     applyArgumentsResult.previousAppState = null;
     applyArgumentsResult.actions = {
       MESSAGE_CREATE(message) {
@@ -253,7 +253,7 @@ class NotificationPermissionManager extends tmp4 {
             closure_0.handleAppStateUpdate(arg0);
           }
     };
-    f113240 = applyArgumentsResult;
+    f113181 = applyArgumentsResult;
     applyArgumentsResult.handleConnectionOpen = _logNotificationPermissionStatus2(function*() {
       if (c2 === 2) {
         c2 = 3;
@@ -266,7 +266,7 @@ class NotificationPermissionManager extends tmp4 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -314,7 +314,7 @@ class NotificationPermissionManager extends tmp4 {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp8) {
           c2 = tmp;
@@ -322,7 +322,7 @@ class NotificationPermissionManager extends tmp4 {
         }
       }
     });
-    f113240 = _logNotificationPermissionStatus2((arg0) => {
+    f113181 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -342,7 +342,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -366,7 +366,7 @@ class NotificationPermissionManager extends tmp4 {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = author);
                 c3 = 1;
                 c4 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp5) {
@@ -439,7 +439,7 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f113240 = _logNotificationPermissionStatus2((arg0) => {
+    f113181 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -455,7 +455,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -476,7 +476,7 @@ class NotificationPermissionManager extends tmp4 {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp5) {
@@ -563,7 +563,7 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f113240 = _logNotificationPermissionStatus2((arg0) => {
+    f113181 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -579,7 +579,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -600,7 +600,7 @@ class NotificationPermissionManager extends tmp4 {
                 relationship = relationship.relationship;
                 c3 = 1;
                 c4 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp5) {
@@ -657,7 +657,7 @@ class NotificationPermissionManager extends tmp4 {
                 outer1_24(outer1_10.FRIEND_REQUEST_SENT, outer1_12.FRIEND_REQUEST_SENT, 100);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (tmp19) {
             c4 = tmp;
@@ -678,9 +678,9 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f113240 = undefined;
+    f113181 = undefined;
     closure_1 = applyArgumentsResult;
-    f113240 = _logNotificationPermissionStatus2((arg0) => {
+    f113181 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -696,7 +696,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -719,7 +719,7 @@ class NotificationPermissionManager extends tmp4 {
                 closure_2 = undefined;
                 c3 = 1;
                 c4 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp5) {
@@ -768,7 +768,7 @@ class NotificationPermissionManager extends tmp4 {
                 }
                 previousAppState.previousAppState = callback;
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
               if (callback === callback(outer1_2[21]).AppStates.ACTIVE) {
                 c3 = 3;
@@ -809,7 +809,7 @@ class NotificationPermissionManager extends tmp4 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -847,7 +847,7 @@ class NotificationPermissionManager extends tmp4 {
             obj = outer1_0(table[15]);
             const result = obj.updateNotificationAuthorizationStatus(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp13) {
           c3 = tmp;
@@ -881,8 +881,8 @@ prototype["handleMessageCreateForNudge"] = function handleMessageCreateForNudge(
               isMutedResult = closure_8.isChannelMuted(guildId, channel.id);
             }
             if (!isMutedResult) {
-              const result = require(11693) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.CHANNEL_BANNER);
-              const obj = require(11693) /* getOrRefreshPushSyncToken */;
+              const result = require(11665) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.CHANNEL_BANNER);
+              const obj = require(11665) /* getOrRefreshPushSyncToken */;
             }
           }
         }
@@ -902,8 +902,8 @@ prototype["handleReactionAddForNudge"] = function handleReactionAddForNudge(opti
           isMutedResult = closure_8.isChannelMuted(guildId, channel.id);
         }
         if (!isMutedResult) {
-          const result = require(11693) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.POST_REACTION_BANNER);
-          const obj = require(11693) /* getOrRefreshPushSyncToken */;
+          const result = require(11665) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.POST_REACTION_BANNER);
+          const obj = require(11665) /* getOrRefreshPushSyncToken */;
         }
       }
     }

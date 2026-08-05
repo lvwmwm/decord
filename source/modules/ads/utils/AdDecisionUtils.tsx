@@ -1,10 +1,10 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7070
+// Function ID: 7071
 // Name: result
 // Dependencies: [687, 2]
 // Exports: questAdDecisionFromAdDecision, resolveResponseTtl
 
-// Module 7096 (result)
+// Module 7070 (result)
 let result = 6 * require("set").Millis.HOUR;
 let c0 = result;
 const result1 = require("set").fileFinishedImporting("modules/ads/utils/AdDecisionUtils.tsx");

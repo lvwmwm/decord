@@ -1,10 +1,10 @@
-// Module ID: 10434
-// Function ID: 10435
+// Module ID: 10406
+// Function ID: 10407
 // Name: Permissions
 // Dependencies: [676, 506, 1236, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 10434 (Permissions)
+// Module 10406 (Permissions)
 import { Permissions } from "ME";
 
 let ADD_REACTIONS;

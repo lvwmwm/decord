@@ -1,9 +1,9 @@
-// Module ID: 13362
-// Function ID: 13363
+// Module ID: 13334
+// Function ID: 13335
 // Name: shouldRun
-// Dependencies: [5, 13363, 13364, 13366, 13368, 698, 2]
+// Dependencies: [5, 13335, 13336, 13338, 13340, 698, 2]
 
-// Module 13362 (shouldRun)
+// Module 13334 (shouldRun)
 import expandEventProperties from "expandEventProperties";
 import "getIntervalMs";
 import importDefaultResult1 from "TelemetryChannel";
@@ -23,7 +23,7 @@ class ZoomedInTelemetryImpl extends tmp3 {
 }
 const prototype = ZoomedInTelemetryImpl.prototype;
 prototype["shouldRun"] = function shouldRun() {
-  return require(13363) /* apexExperiment */.isZoomedExperimentEnabled();
+  return require(13335) /* apexExperiment */.isZoomedExperimentEnabled();
 };
 prototype["getBudget"] = function getBudget(mode) {
   return "backlog" === mode ? closure_5 : closure_4;
@@ -49,7 +49,7 @@ prototype["exportEntries"] = function exportEntries(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       while (true) {

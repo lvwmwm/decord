@@ -1,10 +1,10 @@
-// Module ID: 5904
-// Function ID: 5905
+// Module ID: 5889
+// Function ID: 5890
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 5905, 1236, 2]
+// Dependencies: [19, 17, 21, 5890, 1236, 2]
 // Exports: useInputClearButton, useInputClearButtonConfig
 
-// Module 5904 (useInputClearButton)
+// Module 5889 (useInputClearButton)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,7 +17,7 @@ export const useInputClearButton = function useInputClearButton(clearProps, clea
   if (clearProps.isClearable) {
     if (clearState.hasValue) {
       let obj = { content: null, pressableProps: null };
-      obj[0] = jsx(require(5905) /* CircleXIcon */.CircleXIcon, { size: "xs" });
+      obj[0] = jsx(require(5890) /* CircleXIcon */.CircleXIcon, { size: "xs" });
       obj = { onPress: null, accessibilityLabel: null, accessibilityRole: "button", hitSlop: 4 };
       obj[0] = clearState.clear;
       const intl = require(1236) /* getSystemLocale */.intl;
@@ -39,7 +39,7 @@ export const useInputClearButtonConfig = function useInputClearButtonConfig(isCl
   if (isClearable.isClearable) {
     if (state.hasValue) {
       let obj = { content: null, pressableProps: null };
-      obj[0] = jsx(require(5905) /* CircleXIcon */.CircleXIcon, { size: "xs" });
+      obj[0] = jsx(require(5890) /* CircleXIcon */.CircleXIcon, { size: "xs" });
       obj = { onPress: null, accessibilityLabel: null, accessibilityRole: "button", hitSlop: 4 };
       obj[0] = state.clear;
       const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 11301
+// Function ID: 11302
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 676, 21, 4285, 712, 11283, 11321, 11322, 10310, 2]
+// Dependencies: [19, 17, 676, 21, 4255, 712, 11255, 11293, 11294, 10282, 2]
 // Exports: default
 
-// Module 11329 (ForumPostListFooter)
+// Module 11301 (ForumPostListFooter)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { AnalyticsObjects } from "ME";
@@ -28,11 +28,11 @@ export default function ForumPostListFooter(parentChannel) {
   let thread;
   ({ thread, firstMessage, hasUnreads } = parentChannel);
   const tmp = createCacheKey();
-  let obj = require(11283) /* useTypingUserIds */;
+  let obj = require(11255) /* useTypingUserIds */;
   const typingUserIds = obj.useTypingUserIds(thread.id);
   let tmp5Result = typingUserIds.length > 0;
   obj = { style: tmp.footer, children: null };
-  const items = [callback(importDefault(11321), { thread, hasUnreads }), , ];
+  const items = [callback(importDefault(11293), { thread, hasUnreads }), , ];
   if (tmp5Result) {
     obj = { children: null };
     const obj1 = { style: null };
@@ -42,7 +42,7 @@ export default function ForumPostListFooter(parentChannel) {
     obj2[0] = thread;
     obj2[1] = typingUserIds;
     obj2[2] = hasUnreads;
-    items1[1] = tmp7(importDefault(11322), obj2);
+    items1[1] = tmp7(importDefault(11294), obj2);
     obj[0] = items1;
     tmp5Result = tmp5(closure_6, obj);
   }
@@ -54,7 +54,7 @@ export default function ForumPostListFooter(parentChannel) {
     obj3[1] = firstMessage;
     obj3[2] = parentChannel.parentChannel;
     obj3[3] = AnalyticsObjects.FORUM_LIST_ITEM_FOOTER;
-    tmp7Result = tmp7(require(10310) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
+    tmp7Result = tmp7(require(10282) /* MaxForumPostReactions */.MostCommonForumPostReaction, obj3);
   }
   items[2] = tmp7Result;
   obj[1] = items;

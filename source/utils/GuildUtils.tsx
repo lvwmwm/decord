@@ -1,10 +1,10 @@
-// Module ID: 5199
-// Function ID: 5200
+// Module ID: 5184
+// Function ID: 5185
 // Name: getGuildNameSuggestion
-// Dependencies: [1862, 1874, 1386, 687, 5200, 4124, 1236, 2]
+// Dependencies: [1862, 1874, 1386, 687, 5185, 4094, 1236, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5199 (getGuildNameSuggestion)
+// Module 5184 (getGuildNameSuggestion)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importDefaultResult from "priv";
@@ -12,7 +12,7 @@ import importDefaultResult from "priv";
 const require = arg1;
 function getGuildNameSuggestion(truncateUsername) {
   currentUser = currentUser.getCurrentUser();
-  let obj = importAll(4124);
+  let obj = importAll(4094);
   const name = obj.getName(currentUser);
   let str = "";
   if (null != name) {

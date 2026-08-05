@@ -1,10 +1,10 @@
-// Module ID: 8424
-// Function ID: 8425
+// Module ID: 8396
+// Function ID: 8397
 // Name: items
-// Dependencies: [19, 17, 1874, 676, 21, 1358, 8425, 8426, 8427, 8428, 8429, 8430, 8431, 4285, 712, 5610, 589, 3931, 8432, 8433, 12, 8557, 7174, 8558, 1236, 7163, 1297, 4253, 2]
+// Dependencies: [19, 17, 1874, 676, 21, 1358, 8397, 8398, 8399, 8400, 8401, 8402, 8403, 4255, 712, 5595, 589, 3901, 8404, 8405, 12, 8529, 7148, 8530, 1236, 7137, 1297, 4223, 2]
 // Exports: default
 
-// Module 8424 (items)
+// Module 8396 (items)
 import PremiumFeaturesCards from "PremiumFeaturesCards";
 import get_ActivityIndicator from "getPremiumPlanItem";
 import mergeGuildAvatar from "mergeGuildAvatar";

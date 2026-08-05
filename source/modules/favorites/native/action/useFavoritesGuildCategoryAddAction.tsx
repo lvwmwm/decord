@@ -1,10 +1,10 @@
-// Module ID: 12046
-// Function ID: 12047
+// Module ID: 12018
+// Function ID: 12019
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [5, 19, 676, 12047, 1959, 1865, 1236, 3031, 2]
+// Dependencies: [5, 19, 676, 12019, 1959, 1865, 1236, 3001, 2]
 // Exports: default
 
-// Module 12046 (useFavoritesGuildCategoryAddAction)
+// Module 12018 (useFavoritesGuildCategoryAddAction)
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName";
 import noop from "noop";
 import { ChannelTypes } from "ME";
@@ -27,7 +27,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
           obj[0] = id.id;
           const result = arg1.openAddFavoriteChannelModal(obj);
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp10) {
         paths = tmp;
@@ -77,7 +77,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
       obj = { label: null, perform: null };
       const intl = _require(1236).intl;
-      obj[0] = intl.string(importDefault(3031)["1QJmIL"]);
+      obj[0] = intl.string(importDefault(3001)["1QJmIL"]);
       obj[1] = callback;
       tmp4 = obj;
     }

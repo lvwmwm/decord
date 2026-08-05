@@ -1,10 +1,10 @@
-// Module ID: 10018
-// Function ID: 10019
+// Module ID: 9989
+// Function ID: 9990
 // Name: PurchaseSuccessModalBase
-// Dependencies: [853, 19, 17, 4277, 4330, 5760, 676, 21, 4285, 712, 4146, 4694, 4286, 4254, 1474, 589, 5757, 8817, 4706, 5272, 5245, 5270, 1236, 9316, 4281, 4695, 5616, 5613, 10019, 5630, 698, 4711, 10004, 3223, 9247, 4124, 2]
+// Dependencies: [853, 19, 17, 4247, 4300, 5745, 676, 21, 4255, 712, 4116, 4664, 4256, 4224, 1474, 589, 5742, 8789, 4676, 5257, 5230, 5255, 1236, 9287, 4251, 4665, 5601, 5598, 9990, 5615, 698, 4681, 9975, 3193, 9218, 4094, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 10018 (PurchaseSuccessModalBase)
+// Module 9989 (PurchaseSuccessModalBase)
 import _toArray from "_toArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "handleOrientationChange";

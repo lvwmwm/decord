@@ -1,8 +1,8 @@
-// Module ID: 9598
-// Function ID: 9599
-// Dependencies: [5, 32, 19, 17, 1372, 21, 4285, 712, 5310, 589, 4475, 5598, 1416, 9599, 4295, 1236, 3986, 7716, 9600, 4812, 4281, 7713, 4695, 9602, 2]
+// Module ID: 9569
+// Function ID: 9570
+// Dependencies: [5, 32, 19, 17, 1372, 21, 4255, 712, 5295, 589, 4445, 5583, 1416, 9570, 4265, 1236, 3956, 7688, 9571, 4797, 4251, 7685, 4665, 9573, 2]
 
-// Module 9598
+// Module 9569
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PressableBase";
@@ -149,7 +149,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, r
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

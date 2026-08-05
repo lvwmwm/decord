@@ -1,10 +1,10 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 11866
+// Function ID: 11867
 // Name: UserProfileAlertUserReported
-// Dependencies: [19, 21, 4628, 1236, 4628, 2]
+// Dependencies: [19, 21, 4598, 1236, 4598, 2]
 // Exports: default
 
-// Module 11894 (UserProfileAlertUserReported)
+// Module 11866 (UserProfileAlertUserReported)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -21,7 +21,7 @@ export default function UserProfileAlertUserReported() {
   obj = { text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.BddRzS);
-  obj[0] = jsx(require(4628) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
-  obj[2] = jsx(require(4628) /* getAlertModalItemKey */.AlertActions, { text: null });
-  return jsx(require(4628) /* getAlertModalItemKey */.AlertModal, { text: null });
+  obj[0] = jsx(require(4598) /* getAlertModalItemKey */.AlertActionButton, { text: null }, "okay");
+  obj[2] = jsx(require(4598) /* getAlertModalItemKey */.AlertActions, { text: null });
+  return jsx(require(4598) /* getAlertModalItemKey */.AlertModal, { text: null });
 };

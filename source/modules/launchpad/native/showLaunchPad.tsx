@@ -1,10 +1,10 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15836
+// Function ID: 15837
 // Name: showLaunchPad
 // Dependencies: [676, 1231, 2]
 // Exports: default
 
-// Module 15855 (showLaunchPad)
+// Module 15836 (showLaunchPad)
 import { ComponentActions } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/launchpad/native/showLaunchPad.tsx");

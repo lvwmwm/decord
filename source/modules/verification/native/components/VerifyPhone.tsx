@@ -1,10 +1,10 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8328
+// Function ID: 8329
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 21, 8330, 8357, 8358, 1236, 2]
+// Dependencies: [5, 32, 19, 21, 8302, 8329, 8330, 1236, 2]
 // Exports: default
 
-// Module 8356 (VerifyPhone)
+// Module 8328 (VerifyPhone)
 import SmsAutofillManager from "SmsAutofillManager";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -52,7 +52,7 @@ export default function VerifyPhone(phone) {
           obj[0] = token;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ export default function VerifyPhone(phone) {
             } else if (token) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
             c4 = 0;
             c6 = 3;
@@ -165,7 +165,7 @@ export default function VerifyPhone(phone) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ export default function VerifyPhone(phone) {
           } else {
             outer1_4(false);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

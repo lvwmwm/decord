@@ -1,12 +1,12 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14415
+// Function ID: 14416
 // Name: useSyncedModeThemeName
-// Dependencies: [1302, 4098, 1348, 589, 4128, 1236, 2483, 2]
+// Dependencies: [1302, 4068, 1348, 589, 4098, 1236, 2453, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14440 (useSyncedModeThemeName)
+// Module 14415 (useSyncedModeThemeName)
 import handleThemeChange from "handleThemeChange";
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "items1";
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes";
 
 const require = arg1;
 const result = require("useIsMobileVisualRefreshExperimentEnabled").fileFinishedImporting("modules/user_settings/defs/native/useSyncedModeThemeName.tsx");

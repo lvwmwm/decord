@@ -1,10 +1,10 @@
-// Module ID: 9341
-// Function ID: 9342
+// Module ID: 9312
+// Function ID: 9313
 // Name: useFetchVirtualCurrencyBalance
-// Dependencies: [19, 9342, 589, 9343, 2]
+// Dependencies: [19, 9313, 589, 9314, 2]
 // Exports: useFetchVirtualCurrencyBalance
 
-// Module 9341 (useFetchVirtualCurrencyBalance)
+// Module 9312 (useFetchVirtualCurrencyBalance)
 import { useEffect } from "noop";
 import redeemError from "redeemError";
 

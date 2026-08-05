@@ -1,10 +1,10 @@
-// Module ID: 12085
-// Function ID: 12086
+// Module ID: 12057
+// Function ID: 12058
 // Name: onChange
 // Dependencies: [19, 17, 21, 1474, 2]
 // Exports: default
 
-// Module 12085 (onChange)
+// Module 12057 (onChange)
 import noop from "noop";
 import closure_4 from "noop";
 import { View } from "get ActivityIndicator";

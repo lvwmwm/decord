@@ -1,8 +1,8 @@
-// Module ID: 8835
-// Function ID: 8836
-// Dependencies: [5, 676, 530, 709, 1208, 8834, 3958, 2]
+// Module ID: 8807
+// Function ID: 8808
+// Dependencies: [5, 676, 530, 709, 1208, 8806, 3928, 2]
 
-// Module 8835
+// Module 8807
 import generateHydrationId from "generateHydrationId";
 import { Endpoints } from "ME";
 
@@ -25,7 +25,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -265,7 +265,7 @@ export default {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else if (1 === tmp7) {
             c3 = 0;
@@ -315,7 +315,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -382,7 +382,7 @@ export default {
             }
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
           c5 = 3;
         } catch (tmp26) {
@@ -398,7 +398,7 @@ export default {
     })();
   },
   fetchForStatusNotification(arg0) {
-    let obj = require(8834) /* generateHydrationId */;
+    let obj = require(8806) /* generateHydrationId */;
     if (obj.icymiEnabled("fetchInitialStatus")) {
       obj = { type: "LOAD_ICYMI_FROM_NOTIFICATION", customStatusItem: null };
       obj[1] = arg0;
@@ -422,7 +422,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -535,7 +535,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -616,7 +616,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -697,7 +697,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

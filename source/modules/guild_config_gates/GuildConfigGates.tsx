@@ -1,10 +1,10 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16580
+// Function ID: 16581
 // Name: importDefaultResult1
-// Dependencies: [5, 16600, 676, 589, 530, 709, 2]
+// Dependencies: [5, 16581, 676, 589, 530, 709, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 16599 (importDefaultResult1)
+// Module 16580 (importDefaultResult1)
 import importDefaultResult1 from "hasLoaded";
 import { Endpoints } from "ME";
 import initialize from "initialize";
@@ -49,7 +49,7 @@ let closure_3 = require("dispatcher")((arg0) => {
         obj[0] = body;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

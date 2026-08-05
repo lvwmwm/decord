@@ -1,15 +1,17 @@
 // Module ID: 8502
 // Function ID: 8503
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8453, 8476]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8503, 8424, 8433]
 
 // Module 8502 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeTile = arg1;
+const Rect = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeTile {
+class Rect {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeTile);
+    tmp = _isNativeReflectConstruct(this, Rect);
     tmp2 = __esModule;
-    obj = __esModule(FeTile);
+    obj = __esModule(Rect);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +51,30 @@ class FeTile {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeTile, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeTile(8453).warnUnimplementedFilter();
-    return null;
+require("_inherits")(Rect, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let obj = { x: props.x, y: props.y, width: props.width, height: props.height, rx: props.rx, ry: props.ry };
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const tmp = importDefault(8503);
+      const merged = Object.assign(self(8424).withoutXY(this, props));
+      const merged1 = Object.assign(obj);
+      return <tmp ref={function ref(arg0) {
+        return self.refMethod(arg0);
+      }} />;
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeTile, items);
-importDefaultResultResult.displayName = "FeTile";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(Rect, items);
+importDefaultResultResult.displayName = "Rect";
+importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
 
 export default importDefaultResultResult;

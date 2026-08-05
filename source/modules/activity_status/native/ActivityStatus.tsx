@@ -1,10 +1,10 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9528
+// Function ID: 9529
 // Name: ActivityStatus
-// Dependencies: [19, 17, 4371, 3922, 1874, 9558, 676, 21, 4285, 589, 9559, 9560, 9369, 9561, 9566, 9567, 9575, 9441, 9565, 2]
+// Dependencies: [19, 17, 4341, 3892, 1874, 9529, 676, 21, 4255, 589, 9530, 9531, 9340, 9532, 9537, 9538, 9546, 9412, 9536, 2]
 // Exports: default
 
-// Module 9557 (ActivityStatus)
+// Module 9528 (ActivityStatus)
 import set from "set";
 import { View } from "ActivityEmoji";
 import sortActivity from "sortActivity";
@@ -50,7 +50,7 @@ export default function ActivityStatus(guildId) {
   let obj1 = userId(589);
   const items1 = [sortActivity];
   stateFromStores1 = obj1.useStateFromStores(items1, () => outer1_5.getActivities(userId));
-  const voiceChannel = stateFromStores1(9560)({ userId, guildId: guildId.guildId }).voiceChannel;
+  const voiceChannel = stateFromStores1(9531)({ userId, guildId: guildId.guildId }).voiceChannel;
   const items2 = [stateFromStores1];
   const memo = React.useMemo(() => {
     let found;
@@ -80,14 +80,14 @@ export default function ActivityStatus(guildId) {
     }
     arr = stateFromStores1;
   }, items2);
-  let obj2 = userId(9369);
+  let obj2 = userId(9340);
   let state;
   if (memo != null) {
     state = memo.state;
   }
   const gameMentionsAsPlainText = obj2.useGameMentionsAsPlainText(state);
   const tmp2 = userId;
-  const tmp6 = stateFromStores1(9559)(userId);
+  const tmp6 = stateFromStores1(9530)(userId);
   const items3 = [upsertRelationship];
   if (tmp2Result.useStateFromStores(items3, () => outer1_6.isBlockedOrIgnored(userId))) {
     return null;
@@ -103,7 +103,7 @@ export default function ActivityStatus(guildId) {
     if (null != tmp6) {
       let found;
       if (stateFromStores1 != null) {
-        found = stateFromStores1.find(tmp5(9566));
+        found = stateFromStores1.find(tmp5(9537));
       }
       obj = { game: null, iconStyle: null, textStyle: null, maxFontSizeMultiplier: null, hideIcon: null, hideText: null };
       obj[0] = found;
@@ -113,9 +113,9 @@ export default function ActivityStatus(guildId) {
       obj[3] = maxFontSizeMultiplier;
       obj[4] = tmp12;
       obj[5] = tmp13;
-      let tmp18Result = callback(tmp5(9561), obj);
+      let tmp18Result = callback(tmp5(9532), obj);
       const tmp18 = callback;
-      const tmp5Result = tmp5(9561);
+      const tmp5Result = tmp5(9532);
     } else {
       let found1;
       if (stateFromStores1 != null) {
@@ -133,7 +133,7 @@ export default function ActivityStatus(guildId) {
         obj[3] = maxFontSizeMultiplier;
         obj[4] = tmp12;
         obj[5] = tmp13;
-        tmp18Result = callback(tmp5(9567), obj);
+        tmp18Result = callback(tmp5(9538), obj);
       } else {
         tmp18Result = null;
         if (null != voiceChannel) {
@@ -145,7 +145,7 @@ export default function ActivityStatus(guildId) {
           obj1[3] = maxFontSizeMultiplier;
           obj1[4] = tmp12;
           obj1[5] = tmp13;
-          tmp18Result = callback(tmp5(9575), obj1);
+          tmp18Result = callback(tmp5(9546), obj1);
         }
       }
     }
@@ -163,7 +163,7 @@ export default function ActivityStatus(guildId) {
           obj2[1] = emojiSize;
           obj2[2] = animate;
           obj2[3] = tmp.emoji;
-          tmp25 = callback(tmp5(9441), obj2);
+          tmp25 = callback(tmp5(9412), obj2);
         }
         const items7 = [tmp25, ];
         let tmp27 = null != memo.state;
@@ -172,7 +172,7 @@ export default function ActivityStatus(guildId) {
           obj3[1] = textStyle;
           obj3[2] = maxFontSizeMultiplier;
           obj3[3] = gameMentionsAsPlainText;
-          tmp27 = callback(tmp5(9565), obj3);
+          tmp27 = callback(tmp5(9536), obj3);
         }
         const obj4 = { children: null };
         items7[1] = tmp27;
@@ -195,7 +195,7 @@ export default function ActivityStatus(guildId) {
       obj6[1] = textStyle;
       obj6[2] = maxFontSizeMultiplier;
       obj6[5] = DOT_UNICODE;
-      tmp31 = callback(tmp5(9565), obj6);
+      tmp31 = callback(tmp5(9536), obj6);
     }
     items8[1] = tmp31;
     items8[2] = tmp21;

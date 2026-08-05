@@ -1,10 +1,10 @@
-// Module ID: 6059
-// Function ID: 6060
+// Module ID: 6044
+// Function ID: 6045
 // Name: CampfireSpotIllustration
-// Dependencies: [21, 5236, 6060, 2]
+// Dependencies: [21, 5221, 6045, 2]
 // Exports: CampfireSpotIllustration
 
-// Module 6059 (CampfireSpotIllustration)
+// Module 6044 (CampfireSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/CampfireSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const CampfireSpotIllustration = function CampfireSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6060);
+  obj[0] = importDefault(6045);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const CampfireSpotIllustration = function CampfireSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

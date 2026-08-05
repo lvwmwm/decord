@@ -1,10 +1,10 @@
-// Module ID: 9775
-// Function ID: 9776
+// Module ID: 9746
+// Function ID: 9747
 // Name: EmojiPickerRowButton
-// Dependencies: [19, 17, 1877, 21, 4285, 712, 4131, 4812, 1236, 7576, 1348, 5301, 1416, 3929, 2]
+// Dependencies: [19, 17, 1877, 21, 4255, 712, 4101, 4797, 1236, 7548, 1348, 5286, 1416, 3899, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 9775 (EmojiPickerRowButton)
+// Module 9746 (EmojiPickerRowButton)
 import noop from "noop";
 import { Platform } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";
@@ -38,24 +38,24 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
   let styles;
   let str = iconSize.iconSize;
   ({ onPress, styles } = iconSize);
-  let obj = require(4131) /* AccessibilityAnnouncer */;
+  let obj = require(4101) /* AccessibilityAnnouncer */;
   const tmp = callback(iconSize.emojiContainerSize);
-  const obj2 = require(4131) /* AccessibilityAnnouncer */;
+  const obj2 = require(4101) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  const isThemeLightResult = require(4131) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme);
+  const isThemeLightResult = require(4101) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme);
   obj = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 4, onPress: null, style: null, children: null };
   const intl = tmp2(1236).intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.lfIHs4);
   obj[4] = onPress;
   const items = [tmp.emojiContainer, styles];
   obj[5] = items;
-  obj = { color: require(4131) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null };
+  obj = { color: require(4101) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null };
   if (str == null) {
     str = "md";
   }
   obj[1] = str;
-  obj[6] = jsx(require(7576) /* ReactionIcon */.ReactionIcon, { color: require(4131) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
-  return jsx(require(4812) /* PressableBase */.PressableOpacity, { color: require(4131) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
+  obj[6] = jsx(require(7548) /* ReactionIcon */.ReactionIcon, { color: require(4101) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
+  return jsx(require(4797) /* PressableBase */.PressableOpacity, { color: require(4101) /* AccessibilityAnnouncer */.isThemeLight(obj.useThemeContext().theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_300, size: null });
 };
 export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiContainerSize) {
   let animated;
@@ -83,12 +83,12 @@ export const EmojiReactionRowButton = function EmojiReactionRowButton(emojiConta
   obj[7] = items;
   if (null == animated) {
     obj[8] = null;
-    return tmp4(require(4812) /* PressableBase */.PressableOpacity, obj);
+    return tmp4(require(4797) /* PressableBase */.PressableOpacity, obj);
   } else {
     obj = { textEmojiStyle: null, fastImageStyle: null, name: null, src: null };
     ({ emojiText: obj3[0], emojiImage: obj3[1] } = tmp2);
     let str = "";
-    const emojiURL = getEmojiURL(5301);
+    const emojiURL = getEmojiURL(5286);
     if (null == animated.id) {
       str = animated.surrogates;
     }
@@ -112,6 +112,6 @@ export const getEmojiKey = function getEmojiKey(type, arg1) {
   if (null == type) {
     return arg1;
   } else {
-    type.type === require(3929) /* EmojiTypes */.EmojiTypes.UNICODE ? type.surrogates : type.id;
+    type.type === require(3899) /* EmojiTypes */.EmojiTypes.UNICODE ? type.surrogates : type.id;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 6850
-// Function ID: 6851
+// Module ID: 6835
+// Function ID: 6836
 // Name: next
 // Dependencies: [2]
 // Exports: chain
 
-// Module 6850 (next)
+// Module 6835 (next)
 class Chained {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);

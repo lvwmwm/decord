@@ -1,10 +1,10 @@
-// Module ID: 9326
-// Function ID: 9327
+// Module ID: 9297
+// Function ID: 9298
 // Name: OrbsIcon
-// Dependencies: [19, 21, 712, 3988, 9327, 2]
+// Dependencies: [19, 21, 712, 3958, 9298, 2]
 // Exports: OrbsIcon
 
-// Module 9326 (OrbsIcon)
+// Module 9297 (OrbsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const OrbsIcon = function OrbsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9327) /* registerAsset */;
+  obj[0] = require(9298) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

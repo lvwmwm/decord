@@ -1,9 +1,9 @@
-// Module ID: 6900
-// Function ID: 6901
+// Module ID: 6885
+// Function ID: 6886
 // Name: guildHasCommunity
-// Dependencies: [1340, 1218, 1372, 1932, 1942, 1862, 4297, 4480, 676, 687, 5809, 709, 5221, 11, 589, 2]
+// Dependencies: [1340, 1218, 1372, 1932, 1942, 1862, 4267, 4450, 676, 687, 5794, 709, 5206, 11, 589, 2]
 
-// Module 6900 (guildHasCommunity)
+// Module 6885 (guildHasCommunity)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -232,7 +232,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     ({ guildId, channelId } = arg0);
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = tmp !== channelId(5809).SidebarType.VIEW_CHANNEL;
+      tmp2 = tmp !== channelId(5794).SidebarType.VIEW_CHANNEL;
     }
     if (!tmp2) {
       let isOptInEnabledResult = null != obj && null != channelId && obj.has(channelId);

@@ -1,53 +1,37 @@
-// Module ID: 14602
-// Function ID: 14603
-// Name: route
-// Dependencies: [32, 19, 676, 1369, 21, 14603, 1358, 5931, 10361, 1236, 14604, 7582, 14606, 2]
+// Module ID: 14583
+// Function ID: 14584
+// Name: dismissiblePremiumNewBadgeRouteProps
+// Dependencies: [676, 14464, 1358, 10333, 1236, 14584, 7554, 14586, 2]
 
-// Module 14602 (route)
-import _slicedToArray from "_slicedToArray";
-import noop from "noop";
-import { ContentDismissActionType } from "ContentDismissActionType";
-import { jsx } from "jsxProd";
+// Module 14583 (dismissiblePremiumNewBadgeRouteProps)
+import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps";
 import createToggle from "createToggle";
 
-const require = arg1;
-createToggle = {
+let usePreNavigationAction;
+let useTrailing;
+const dismissiblePremiumNewBadgeRouteProps = createDismissiblePremiumNewBadgeRouteProps.createDismissiblePremiumNewBadgeRouteProps(require("DismissibleContent").DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE);
+({ useTrailing, usePreNavigationAction } = dismissiblePremiumNewBadgeRouteProps);
+obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.N4YDao);
   },
   parent: null,
   IconComponent: require("SettingsItemAppIcon"),
-  useTrailing: function useAppIconSettingTrailing() {
-    const obj = { dismissibleContent: null, newPremiumStyle: true };
-    obj[0] = require(1358) /* DismissibleContent */.DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE;
-    return jsx(importDefault(14603), { dismissibleContent: null, newPremiumStyle: true });
-  },
-  usePreNavigationAction: function useAppIconSettingPreNavigationAction() {
-    const items = [first(1358).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE];
-    const tmp = callback(first(5931).useSelectedDismissibleContent(items), 2);
-    first = tmp[0];
-    const importDefault = tmp3;
-    const items1 = [first, tmp[1]];
-    return React.useCallback(() => {
-      if (first === first(outer1_2[6]).DismissibleContent.CUSTOM_APP_ICONS_NEW_BADGE) {
-        tmp3 = tmp3(outer1_5.TAKE_ACTION);
-      }
-      return true;
-    }, items1);
-  },
+  useTrailing,
+  usePreNavigationAction,
   usePredicate() {
-    return require(7582) /* fetchCurrentAppIcon */.isAppIconsSupported();
+    return require(7554) /* fetchCurrentAppIcon */.isAppIconsSupported();
   },
-  screen: createToggle
+  screen: obj
 };
-createToggle = {
+obj = {
   route: require("ME").UserSettingsSections.APP_ICONS,
   getComponent() {
-    return require(14606).default;
+    return require(14586).default;
   }
 };
-createToggle = createToggle.createRoute(createToggle);
-const result = require("ME").fileFinishedImporting("modules/user_settings/defs/native/AppIconsSetting.tsx");
+const route = createToggle.createRoute(obj);
+const result = require("DismissibleContent").fileFinishedImporting("modules/user_settings/defs/native/AppIconsSetting.tsx");
 
-export default createToggle;
+export default route;

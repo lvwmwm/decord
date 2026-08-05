@@ -1,9 +1,9 @@
-// Module ID: 14813
-// Function ID: 14814
+// Module ID: 14793
+// Function ID: 14794
 // Name: toggle
-// Dependencies: [6905, 7892, 7261, 13975, 10361, 1236, 2]
+// Dependencies: [6890, 7864, 7233, 13949, 10333, 1236, 2]
 
-// Module 14813 (toggle)
+// Module 14793 (toggle)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -15,18 +15,18 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuests3PSettingValue() {
-    const selectedTeenId = require(7261) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = require(13975) /* result */.ParentalControlledQuests3PDataOptedOut;
+    const selectedTeenId = require(7233) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledQuests3PDataOptedOut = require(13949) /* result */.ParentalControlledQuests3PDataOptedOut;
     return !ParentalControlledQuests3PDataOptedOut.useControlledSetting(selectedTeenId);
   },
   onValueChange: function onDataToSupportQuests3PSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
-    const ParentalControlledQuests3PDataOptedOut = require(13975) /* result */.ParentalControlledQuests3PDataOptedOut;
+    const ParentalControlledQuests3PDataOptedOut = require(13949) /* result */.ParentalControlledQuests3PDataOptedOut;
     const result = ParentalControlledQuests3PDataOptedOut.updateControlledSetting(selectedTeenId, !arg0);
   },
   useIsDisabled: function useDataToSupportQuests3PSettingIsDisabled() {
-    const selectedTeenId = require(7261) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledDropsOptedOut = require(13975) /* result */.ParentalControlledDropsOptedOut;
+    const selectedTeenId = require(7233) /* useSelectedTeen */.useSelectedTeenId();
+    const ParentalControlledDropsOptedOut = require(13949) /* result */.ParentalControlledDropsOptedOut;
     return ParentalControlledDropsOptedOut.useControlledSetting(selectedTeenId);
   },
   unsearchable: true

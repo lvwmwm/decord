@@ -1,10 +1,10 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 9596
+// Function ID: 9597
 // Name: PlusLargeIcon
-// Dependencies: [19, 21, 712, 3988, 9626, 2]
+// Dependencies: [19, 21, 712, 3958, 9597, 2]
 // Exports: PlusLargeIcon
 
-// Module 9625 (PlusLargeIcon)
+// Module 9596 (PlusLargeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const PlusLargeIcon = function PlusLargeIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9626) /* registerAsset */;
+  obj[0] = require(9597) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

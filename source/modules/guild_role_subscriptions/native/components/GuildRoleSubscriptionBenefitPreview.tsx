@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16701
+// Function ID: 16702
 // Name: BaseBenefitRow
-// Dependencies: [19, 17, 14341, 21, 4285, 14376, 1297, 10711, 4281, 3926, 14369, 4475, 4745, 1236, 2]
+// Dependencies: [19, 17, 14316, 21, 4255, 14351, 1297, 10683, 4251, 3896, 14344, 4445, 4715, 1236, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 16720 (BaseBenefitRow)
+// Module 16701 (BaseBenefitRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { GuildRoleSubscriptionBenefitTypes as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -26,14 +26,14 @@ function BaseBenefitRow(isInteractive) {
   }
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  obj = { style: tmp.emojiContainer, children: callback(importDefault(14376), { guildId, id: emoji }) };
+  obj = { style: tmp.emojiContainer, children: callback(importDefault(14351), { guildId, id: emoji }) };
   const items = [callback(View, obj), , ];
   const items1 = [tmp.benefitColumn, contentStyle];
   items[1] = callback(View, { style: items1, children });
   let tmp4Result = true === flag;
   if (tmp4Result) {
     obj = { source: null };
-    obj[0] = importDefault(10711);
+    obj[0] = importDefault(10683);
     tmp4Result = callback(require(1297) /* Button */.Icon, obj);
   }
   items[2] = tmp4Result;
@@ -51,14 +51,14 @@ function DescriptiveBenefitRow(benefit) {
     const obj = { style: null, variant: "text-sm/medium", color: "interactive-text-default", children: null };
     obj[0] = tmp.benefitDescription;
     obj[3] = benefit.description;
-    tmp2 = callback(require(4281) /* Text */.Text, obj);
+    tmp2 = callback(require(4251) /* Text */.Text, obj);
   }
   let emoji = benefit.emoji_id;
   if (emoji == null) {
     let str = "";
     if (null != benefit.emoji_name) {
-      str = importDefault(3926).convertSurrogateToName(benefit.emoji_name, false);
-      const obj2 = importDefault(3926);
+      str = importDefault(3896).convertSurrogateToName(benefit.emoji_name, false);
+      const obj2 = importDefault(3896);
     }
     emoji = str;
   }
@@ -73,19 +73,19 @@ function ChannelBenefitRow(benefit) {
   benefit = benefit.benefit;
   ({ guildId, isInteractive } = benefit);
   const tmp = callback3();
-  let obj = require(14369) /* getUsedTemplateChannelsForGuild */;
+  let obj = require(14344) /* getUsedTemplateChannelsForGuild */;
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {
-    channelIcon = tmp2(4745).getChannelIcon(channelWithTemplateFallback);
-    const tmp2Result = tmp2(4745);
+    channelIcon = tmp2(4715).getChannelIcon(channelWithTemplateFallback);
+    const tmp2Result = tmp2(4715);
   }
   if (null == channelWithTemplateFallback) {
     obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1236).intl;
     const _HermesInternal = HermesInternal;
     obj[2] = "[" + intl.string(tmp2(1236).t.bz1PZX) + "]";
-    let tmp9 = callback(tmp2(4281).Text, obj);
+    let tmp9 = callback(tmp2(4251).Text, obj);
   } else {
     obj = { benefit: null, guildId: null, isInteractive: null, children: null };
     obj[0] = benefit;
@@ -100,7 +100,7 @@ function ChannelBenefitRow(benefit) {
     const items = [callback(tmp2(1297).Icon, obj2), ];
     const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj3[2] = tmp5;
-    items[1] = callback(tmp2(4281).Text, obj3);
+    items[1] = callback(tmp2(4251).Text, obj3);
     obj1[1] = items;
     obj[3] = callback2(View, obj1);
     tmp9 = callback(DescriptiveBenefitRow, obj);
@@ -109,7 +109,7 @@ function ChannelBenefitRow(benefit) {
 }
 function IntangibleBenefitRow(benefit) {
   benefit = benefit.benefit;
-  obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: callback(require(4281) /* Text */.Text, obj) };
+  obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: callback(require(4251) /* Text */.Text, obj) };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
   return callback(DescriptiveBenefitRow, obj);
 }
@@ -121,10 +121,10 @@ function EmojiBenefitRow(benefit) {
   const tmp = callback3();
   let obj = { emoji: benefit.id, guildId, contentStyle: tmp.emojiRow, isInteractive, children: null };
   obj = { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" };
-  const items = [callback(require(4281) /* Text */.Text, obj), , ];
+  const items = [callback(require(4251) /* Text */.Text, obj), , ];
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
-  items[1] = callback(require(4281) /* Text */.Text, obj);
-  items[2] = callback(require(4281) /* Text */.Text, { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" });
+  items[1] = callback(require(4251) /* Text */.Text, obj);
+  items[2] = callback(require(4251) /* Text */.Text, { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" });
   obj[4] = items;
   return callback2(BaseBenefitRow, obj);
 }

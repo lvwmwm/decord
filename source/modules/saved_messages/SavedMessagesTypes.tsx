@@ -1,10 +1,10 @@
-// Module ID: 8192
-// Function ID: 8193
+// Module ID: 8164
+// Function ID: 8165
 // Name: SavedMessageSortTypes
-// Dependencies: [4504, 2]
+// Dependencies: [4474, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 8192 (SavedMessageSortTypes)
+// Module 8164 (SavedMessageSortTypes)
 const result = require("set").fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
 
 export const SavedMessageSortTypes = { ALL: "ALL", REMINDER: "REMINDER", BOOKMARK: "BOOKMARK" };
@@ -34,7 +34,7 @@ export const savedMessageDataToClient = function savedMessageDataToClient(save_d
 export const savedMessageCreateObjectToClient = function savedMessageCreateObjectToClient(body) {
   let messageRecord = null;
   if (null != body.message) {
-    let obj = require(4504) /* createMinimalMessageRecord */;
+    let obj = require(4474) /* createMinimalMessageRecord */;
     messageRecord = obj.createMessageRecord(body.message);
   }
   obj = { message: messageRecord, saveData: null };

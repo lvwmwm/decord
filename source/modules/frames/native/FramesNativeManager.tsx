@@ -1,9 +1,9 @@
-// Module ID: 10516
-// Function ID: 10517
+// Module ID: 10488
+// Function ID: 10489
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 10506, 676, 4310, 7731, 501, 10517, 10518, 1208, 10519, 10539, 4624, 1236, 1351, 10510, 709, 1231, 514, 2]
+// Dependencies: [5, 17, 10478, 676, 4280, 7703, 501, 10489, 10490, 1208, 10491, 10511, 4594, 1236, 1351, 10482, 709, 1231, 514, 2]
 
-// Module 10516 (postMessageToWebView)
+// Module 10488 (postMessageToWebView)
 import closure_3 from "WebView";
 import map from "map";
 import { ComponentActions } from "ME";
@@ -161,7 +161,7 @@ prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason
   let code;
   let message;
   ({ code, message } = reason);
-  let obj = importDefault(4624);
+  let obj = importDefault(4594);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.hbiAO6, { code });
@@ -181,8 +181,8 @@ prototype["leaveFrame"] = function leaveFrame(applicationId) {
 };
 prototype["clearFrameState"] = function clearFrameState(applicationId) {
   applicationId = applicationId.applicationId;
-  importDefault(10510).stopFrame({ applicationId });
-  const obj = importDefault(10510);
+  importDefault(10482).stopFrame({ applicationId });
+  const obj = importDefault(10482);
   importDefault(709).dispatch({ type: "FRAME_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null });
 };
 prototype["releaseWebView"] = function releaseWebView() {

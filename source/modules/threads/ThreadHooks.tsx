@@ -1,10 +1,10 @@
-// Module ID: 5798
-// Function ID: 5799
+// Module ID: 5783
+// Function ID: 5784
 // Name: useCanUnarchiveThread
-// Dependencies: [32, 4198, 1376, 1218, 1372, 3913, 5191, 676, 589, 506, 5799, 11, 12, 5800, 5801, 4498, 2]
+// Dependencies: [32, 4168, 1376, 1218, 1372, 3883, 5176, 676, 589, 506, 5784, 11, 12, 5785, 5786, 4468, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPrivateThread, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadModerator
 
-// Module 5798 (useCanUnarchiveThread)
+// Module 5783 (useCanUnarchiveThread)
 import _slicedToArray from "_slicedToArray";
 import { THREADED_CHANNEL_TYPES } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
@@ -142,7 +142,7 @@ export const useCanStartPublicThread = function useCanStartPublicThread(type) {
         flag = false;
         if (!arg1.hasFlag(constants2.HAS_THREAD)) {
           flag = true;
-          if (importDefault(5799)(arg1)) {
+          if (importDefault(5784)(arg1)) {
             flag = false;
           }
         }
@@ -167,7 +167,7 @@ export const computeCanStartPublicThread = function computeCanStartPublicThread(
         flag = false;
         if (!message.hasFlag(constants2.HAS_THREAD)) {
           flag = true;
-          if (importDefault(5799)(message)) {
+          if (importDefault(5784)(message)) {
             flag = false;
           }
         }
@@ -203,7 +203,7 @@ export const computeCanStartPrivateThread = function computeCanStartPrivateThrea
         flag = false;
         if (!hasFlag.hasFlag(constants2.HAS_THREAD)) {
           flag = true;
-          if (importDefault(5799)(hasFlag)) {
+          if (importDefault(5784)(hasFlag)) {
             flag = false;
           }
         }
@@ -490,7 +490,7 @@ export const useHasPermissionToJoinThreadVoice = function useHasPermissionToJoin
   return stateFromStores;
 };
 export const useCanJoinThreadVoice = function useCanJoinThreadVoice(channel) {
-  const tmp2 = importDefault(5800)();
+  const tmp2 = importDefault(5785)();
   const _require = channel;
   let obj = _require(589);
   const items = [getUncachedChannelPermissions];
@@ -524,13 +524,13 @@ export const useCanJoinThreadVoice = function useCanJoinThreadVoice(channel) {
   }
   obj = { guildId: channel.guild_id, location: "e791ea_1" };
   let enabled = importDefaultResultResult.useExperiment(obj, { autoTrackExposure: false }).enabled;
-  let tmp3Result = tmp3(5801);
+  let tmp3Result = tmp3(5786);
   const isGameInvitesPost = tmp3Result.useIsGameInvitesPost(channel);
-  tmp3Result = tmp3(4498);
+  tmp3Result = tmp3(4468);
   let shouldAgeVerifyForAgeGate = tmp3Result.useShouldAgeVerifyForAgeGate();
   if (shouldAgeVerifyForAgeGate) {
-    shouldAgeVerifyForAgeGate = tmp3(4498).shouldShowAgeGateForChannelId(channel.id);
-    const tmp3Result1 = tmp3(4498);
+    shouldAgeVerifyForAgeGate = tmp3(4468).shouldShowAgeGateForChannelId(channel.id);
+    const tmp3Result1 = tmp3(4468);
   }
   let isVocalThreadResult = !tmp2;
   if (!tmp2) {

@@ -1,11 +1,11 @@
-// Module ID: 3977
-// Function ID: 3978
+// Module ID: 3947
+// Function ID: 3948
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 3978, 676, 3, 3979, 3981, 3982, 3983, 3984, 3985, 1236, 4251, 500, 4253, 1469, 4266, 13104, 2]
+// Dependencies: [5, 17, 3948, 676, 3, 3949, 3951, 3952, 3953, 3954, 3955, 1236, 4221, 500, 4223, 1469, 4236, 13076, 2]
 // Exports: default
 
-// Module 3977 (sanitizeURLPart)
-import module_3979 from "module_3979";
+// Module 3947 (sanitizeURLPart)
+import module_3949 from "module_3949";
 import { Linking } from "handleSupportedURL";
 import setContent from "setContent";
 import { WebBrowserType } from "ME";
@@ -39,7 +39,7 @@ function _handleURL() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ function _handleURL() {
               };
               c7 = 1;
               v0 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else {
             if (1 === tmp8) {
@@ -189,7 +189,7 @@ function _handleURL() {
             } else if (2 === tmp8) {
               payload = 0;
               v0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } else {
               if (3 === tmp8) {
                 if (arg0 === 1) {

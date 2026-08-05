@@ -1,10 +1,10 @@
-// Module ID: 11467
-// Function ID: 11468
+// Module ID: 11439
+// Function ID: 11440
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4285, 1581, 11401, 1297, 11468, 1236, 5901, 2]
+// Dependencies: [19, 17, 21, 4255, 1581, 11373, 1297, 11440, 1236, 5886, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11467 (AppLauncherList)
+// Module 11439 (AppLauncherList)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,7 +14,7 @@ const require = arg1;
 let closure_5 = createCacheKey.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
 const forwardRefResult = require("noop").forwardRef((contentContainerStyle) => {
   const bottom = importDefault(1581)().bottom;
-  let obj = require(11401) /* useAppLauncherFlashListProps */;
+  let obj = require(11373) /* useAppLauncherFlashListProps */;
   const appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   obj = { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null };
   items = [{ paddingBottom: bottom }, contentContainerStyle.contentContainerStyle];
@@ -25,7 +25,7 @@ const forwardRefResult = require("noop").forwardRef((contentContainerStyle) => {
   obj[2] = scrollerRef;
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
-  return jsx(importDefault(11401), { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null });
+  return jsx(importDefault(11373), { contentContainerStyle: items, scrollIndicatorInsets: { bottom }, ref: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
 
@@ -33,8 +33,8 @@ export const AppLauncherList = forwardRefResult;
 export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = callback();
   const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: null, darkSource: null, title: null, body: null };
-  obj[2] = importDefault(11468);
-  obj[3] = importDefault(11468);
+  obj[2] = importDefault(11440);
+  obj[3] = importDefault(11440);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.vYocDz);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -45,6 +45,6 @@ export const AppLauncherListSearchBar = function AppLauncherListSearchBar(arg0) 
   let obj = { style: callback().searchBarContainer, children: null };
   obj = { size: "md" };
   const merged = Object.assign(arg0);
-  obj[1] = jsx(require(5901) /* SearchField */.SearchField, { size: "md" });
+  obj[1] = jsx(require(5886) /* SearchField */.SearchField, { size: "md" });
   return <View size="md" />;
 };

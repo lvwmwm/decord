@@ -1,9 +1,9 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9860
+// Function ID: 9861
 // Name: StandardStickerDetail
-// Dependencies: [5, 32, 19, 17, 1862, 1874, 5187, 9842, 676, 5339, 21, 4285, 500, 712, 9872, 8666, 8668, 4253, 4281, 1236, 9873, 3986, 589, 1474, 698, 9886, 4695, 9888, 9874, 9879, 3931, 5637, 3958, 4619, 9890, 1959, 4479, 5200, 9891, 5925, 9764, 8414, 9430, 9892, 7777, 8672, 5338, 2]
+// Dependencies: [5, 32, 19, 17, 1862, 1874, 5172, 9813, 676, 5324, 21, 4255, 500, 712, 9843, 8638, 8640, 4223, 4251, 1236, 9844, 3956, 589, 1474, 698, 9857, 4665, 9859, 9845, 9850, 3901, 5622, 3928, 4589, 9861, 1959, 4449, 5185, 9862, 5910, 9735, 8386, 9401, 9863, 7749, 8644, 5323, 2]
 
-// Module 9889 (StandardStickerDetail)
+// Module 9860 (StandardStickerDetail)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import explicitContentFromProto from "explicitContentFromProto";
 import importAllResult from "getSystemLocale";
@@ -117,20 +117,20 @@ function StandardStickerDetail(chatInputRef) {
       const intl = tmp2(tmp3[19]).intl;
       obj6[1] = intl.string(tmp2(tmp3[19]).t.GPy3Ar);
       obj6[2] = function onPress() {
-        let obj = require(9888) /* hideStickerDetailActionSheet */;
+        let obj = require(9859) /* hideStickerDetailActionSheet */;
         const result = obj.hideStickerDetailActionSheet();
         if (null != stateFromStores) {
           if (stateFromStores1) {
             if (null != chatInputRef) {
-              const result1 = tmp(9874).openStickerPickerToPackId(tmp6, pack_id);
-              const tmpResult = tmp(9874);
+              const result1 = tmp(9845).openStickerPickerToPackId(tmp6, pack_id);
+              const tmpResult = tmp(9845);
             }
           }
         }
         obj = { analyticsLocation: memo, analyticsPopoutType: null, stickerPack: null };
-        obj[1] = require(9879) /* openStickerPackDetailActionSheet */.AnalyticsPopoutType.STICKER_PACK_UPSELL;
+        obj[1] = require(9850) /* openStickerPackDetailActionSheet */.AnalyticsPopoutType.STICKER_PACK_UPSELL;
         obj[2] = stateFromStores;
-        importDefault(9879)(obj);
+        importDefault(9850)(obj);
       };
       tmp15Result = tmp15(tmp2(tmp3[26]).Button, obj6);
     }
@@ -391,7 +391,7 @@ function GuildStickerDetail(sticker) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -428,7 +428,7 @@ function GuildStickerDetail(sticker) {
               v0(closure_0);
               outer1_5(true);
               v0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (tmp16) {
             v0 = tmp;
@@ -696,7 +696,7 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
   let channel;
   let renderableSticker;
   ({ renderableSticker, channel } = chatInputRef);
-  let obj = require(9872) /* useStickerPackCategories */;
+  let obj = require(9843) /* useStickerPackCategories */;
   const tmp4 = callback(obj.useStickerForRenderableSticker(renderableSticker, true), 2);
   const first = tmp4[0];
   let tmp6Result = callback2(closure_7, { size: "large" });
@@ -712,10 +712,10 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
     obj1[0] = tmp.content;
     obj1[1] = tmp6Result;
     obj[1] = tmp6(closure_6, obj1);
-    return tmp6(tmp2(5338).BottomSheet, obj);
+    return tmp6(tmp2(5323).BottomSheet, obj);
   }
   if (null != first) {
-    let tmp2Result = tmp2(4619);
+    let tmp2Result = tmp2(4589);
     if (tmp2Result.isStandardSticker(first)) {
       const obj2 = { sticker: null, channel: null, chatInputRef: null };
       obj2[0] = first;
@@ -723,7 +723,7 @@ export default importAllResult.memo(function StickerDetailActionSheet(chatInputR
       obj2[2] = chatInputRef.chatInputRef;
       tmp6Result = tmp6(StandardStickerDetail, obj2);
     } else {
-      tmp2Result = tmp2(4619);
+      tmp2Result = tmp2(4589);
       if (tmp2Result.isGuildSticker(first)) {
         const obj3 = { sticker: null, channel: null };
         obj3[0] = first;

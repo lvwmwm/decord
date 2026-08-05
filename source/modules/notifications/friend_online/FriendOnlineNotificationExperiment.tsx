@@ -1,10 +1,10 @@
-// Module ID: 14581
-// Function ID: 14582
+// Module ID: 14562
+// Function ID: 14563
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: isEligibleForFriendOnlineNotifications, useFriendOnlineNotificationExperiment
 
-// Module 14581 (apexExperiment)
+// Module 14562 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { showSettingsToggle: true } };

@@ -1,10 +1,10 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16566
+// Function ID: 16567
 // Name: GuildSettingsRoleEditDisplay
-// Dependencies: [19, 17, 1936, 16570, 16569, 676, 16572, 21, 4285, 712, 4723, 589, 5635, 5634, 1297, 16586, 4253, 15288, 1959, 16584, 16587, 16588, 7713, 1236, 16590, 5649, 5315, 4706, 1351, 688, 13812, 4241, 4281, 2317, 5650, 2]
+// Dependencies: [19, 17, 1936, 16551, 16550, 676, 16553, 21, 4255, 712, 4693, 589, 5620, 5619, 1297, 16567, 4223, 15269, 1959, 16565, 16568, 16569, 7685, 1236, 16571, 5634, 5300, 4676, 1351, 688, 13784, 4211, 4251, 2287, 5635, 2]
 // Exports: default
 
-// Module 16585 (GuildSettingsRoleEditDisplay)
+// Module 16566 (GuildSettingsRoleEditDisplay)
 import AsyncFromSyncIterator from "AsyncFromSyncIterator";
 import { View } from "items";
 import { isEveryoneRole } from "GuildRoleRecordTypeTag";
@@ -98,15 +98,15 @@ export default function GuildSettingsRoleEditDisplay(guild) {
       obj[1] = tmp4(tmp5[14]).IconSizes.MEDIUM;
       roleIcon = callback(tmp4(tmp5[14]).Icon, obj);
     }
-    const items1 = [id, concat, primary_color, SOLID];
+    const items1 = [role, id, concat, primary_color, SOLID];
     const items2 = [guild.id, role, id, SOLID];
     callback = SOLID.useCallback(() => {
       if (SOLID === outer1_7.SOLID) {
         let obj = role(id[16]);
         obj = { color: null, onSelect: null };
         obj[0] = primary_color;
-        obj[1] = function onSelect(color) {
-          outer1_0(outer1_2[19]).updateRoleColor(closure_2, color);
+        obj[1] = function onSelect(arg0) {
+          outer1_0(outer1_2[19]).updateRoleColor(closure_1, arg0);
         };
         obj.openLazy(guild(id[18])(id[17], id.paths), "RoleColorPicker", obj);
       } else if (tmp === tmp2.GRADIENT) {

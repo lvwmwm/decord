@@ -1,10 +1,10 @@
-// Module ID: 9497
-// Function ID: 9498
+// Module ID: 9468
+// Function ID: 9469
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 5665, 5238, 4490, 4281, 1236, 2]
+// Dependencies: [19, 17, 21, 5650, 5223, 4460, 4251, 1236, 2]
 // Exports: default
 
-// Module 9497 (UnsupportedFeatureModal)
+// Module 9468 (UnsupportedFeatureModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,7 +17,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   let obj = { initialRouteName: "Unsupported", screens: null };
   obj = { Unsupported: null };
   obj = { title: onDismiss.title, headerLeft: null, render: null };
-  obj[1] = onDismiss(5238).getHeaderCloseButton(() => {
+  obj[1] = onDismiss(5223).getHeaderCloseButton(() => {
     let arr = outer1_1(outer1_2[5]);
     arr = arr.pop();
     if (onDismiss != null) {
@@ -29,10 +29,10 @@ export default function UnsupportedFeatureModal(onDismiss) {
     obj = { variant: "text-lg/normal", color: "text-default", children: null };
     const intl = onDismiss(1236).intl;
     obj[2] = intl.string(onDismiss(1236).t.I22zuX);
-    obj[1] = callback(onDismiss(4281).Text, obj);
+    obj[1] = callback(onDismiss(4251).Text, obj);
     return callback(closure_3, obj);
   };
   obj[0] = obj;
   obj[1] = obj;
-  return jsx(onDismiss(5665).Navigator, { title: onDismiss.title, headerLeft: null, render: null });
+  return jsx(onDismiss(5650).Navigator, { title: onDismiss.title, headerLeft: null, render: null });
 };

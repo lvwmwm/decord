@@ -1,10 +1,10 @@
-// Module ID: 8847
-// Function ID: 8848
+// Module ID: 8819
+// Function ID: 8820
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [676, 8848, 698, 8849, 1467, 500, 5295, 2]
+// Dependencies: [676, 8820, 698, 8821, 1467, 500, 5280, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 8847 (trackAppClickInNativeShareSheet)
+// Module 8819 (trackAppClickInNativeShareSheet)
 import { AnalyticEvents } from "ME";
 import { SHARE_SHEET_PRESENT_DELAY_MS as closure_4 } from "SHARE_PREPARING_MODAL_KEY";
 
@@ -22,7 +22,7 @@ export const trackAppClickInNativeShareSheet = function trackAppClickInNativeSha
 export const getMediaShareParams = function getMediaShareParams(source) {
   let contentType;
   let videoURI;
-  let obj = require(8849) /* apexExperiment */;
+  let obj = require(8821) /* apexExperiment */;
   if (obj.getMobileMediaViewerShareExperimentEnabled("shareMediaSource")) {
     if (true !== source.disableDownload) {
       if (null != source.shareURI) {
@@ -34,7 +34,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           }
           ({ videoURI, contentType } = source);
           if (null != videoURI) {
-            tmpResult = tmp(5295);
+            tmpResult = tmp(5280);
             const decideFileExtensionResult = tmpResult.decideFileExtension(videoURI, contentType, true);
             obj = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj[0] = videoURI;
@@ -49,7 +49,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
             obj[1] = tmp11;
             return obj;
           } else {
-            const decideFileExtensionResult1 = tmp(5295).decideFileExtension(source.uri, contentType, true);
+            const decideFileExtensionResult1 = tmp(5280).decideFileExtension(source.uri, contentType, true);
             const obj2 = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj2[0] = source.shareURI;
             let tmp6;
@@ -82,5 +82,5 @@ export const getMediaShareParams = function getMediaShareParams(source) {
   return { mediaFallbackUrl };
 };
 export const resolveShareFileExtension = function resolveShareFileExtension(closure_0, contentType) {
-  return require(5295) /* decideFileExtension */.decideFileExtension(closure_0, contentType, true);
+  return require(5280) /* decideFileExtension */.decideFileExtension(closure_0, contentType, true);
 };

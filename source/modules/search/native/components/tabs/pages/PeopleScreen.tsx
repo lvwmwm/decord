@@ -1,8 +1,8 @@
-// Module ID: 15639
-// Function ID: 15640
-// Dependencies: [5, 19, 11651, 11623, 8208, 8207, 21, 11624, 589, 15603, 15599, 4295, 11644, 15640, 15595, 15607, 2]
+// Module ID: 15620
+// Function ID: 15621
+// Dependencies: [5, 19, 11623, 11595, 8180, 8179, 21, 11596, 589, 15584, 15580, 4265, 11616, 15621, 15576, 15588, 2]
 
-// Module 15639
+// Module 15620
 import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations";
 import importAllResult from "noop";
 import teardown from "teardown";
@@ -59,7 +59,7 @@ const memoResult = importAllResult.memo(function PeopleScreen(searchContext) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ const memoResult = importAllResult.memo(function PeopleScreen(searchContext) {
             const result = callback(stateFromStores[12]).trackSearchResultClicked(obj2);
             outer1_6(closure_0, closure_2);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp10) {
           c5 = tmp;

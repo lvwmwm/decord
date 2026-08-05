@@ -1,9 +1,9 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11340
+// Function ID: 11341
 // Name: SearchAppsRequestSource
 // Dependencies: [2]
 
-// Module 11368 (SearchAppsRequestSource)
+// Module 11340 (SearchAppsRequestSource)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/SearchAppsRequestSource.tsx");
 
 export const SearchAppsRequestSource = { APP_DIRECTORY: 0, [0]: "APP_DIRECTORY", APP_LAUNCHER: 1, [1]: "APP_LAUNCHER" };

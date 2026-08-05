@@ -1,10 +1,10 @@
-// Module ID: 15173
-// Function ID: 15174
+// Module ID: 15153
+// Function ID: 15154
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [1942, 5122, 1874, 4178, 1876, 1897, 589, 2]
+// Dependencies: [1942, 5107, 1874, 4148, 1876, 1897, 589, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 15173 (useIsCurrentUserEligibleForPowerupUpsells)
+// Module 15153 (useIsCurrentUserEligibleForPowerupUpsells)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import mergeGuildAvatar from "mergeGuildAvatar";

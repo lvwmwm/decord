@@ -1,9 +1,9 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8693
+// Function ID: 8694
 // Name: measure
-// Dependencies: [5, 17, 8722, 3, 8723, 1271, 8724, 8728, 644, 2]
+// Dependencies: [5, 17, 8694, 3, 8695, 1271, 8696, 8700, 644, 2]
 
-// Module 8721 (measure)
+// Module 8693 (measure)
 import enforcing from "enforcing";
 import { Image } from "get ActivityIndicator";
 import OVERRIDE_DIR from "OVERRIDE_DIR";
@@ -69,7 +69,7 @@ function _buildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         while (true) {
@@ -356,7 +356,7 @@ keys = keys.create((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -404,7 +404,7 @@ keys = keys.create((arg0) => {
           message = closure_2;
           if (outer1_1()) {
             message = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           } else {
             const _Error = Error;
             if (message instanceof Error) {
@@ -434,7 +434,7 @@ keys = keys.create((arg0) => {
             if (isStale()) {
               c3 = 0;
               message = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } else if (null == closure_2) {
               outer1_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
               c3 = 0;
@@ -479,7 +479,7 @@ keys = keys.create((arg0) => {
           }
           c3 = 0;
           message = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp44) {
         closure_2 = tmp44;

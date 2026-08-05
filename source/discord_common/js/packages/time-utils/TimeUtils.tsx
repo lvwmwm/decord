@@ -1,10 +1,10 @@
-// Module ID: 4360
-// Function ID: 4361
+// Module ID: 4330
+// Function ID: 4331
 // Name: sleep
-// Dependencies: [5, 4361, 653, 4362, 2]
+// Dependencies: [5, 4331, 653, 4332, 2]
 // Exports: convertMinutesToGivenTimeUnit, getTimeAndUnit, getTimeUnit
 
-// Module 4360 (sleep)
+// Module 4330 (sleep)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import tryCatch from "tryCatch";
 
@@ -377,7 +377,7 @@ TimeOut["waitFor"] = function waitFor(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -561,7 +561,7 @@ export const TimeUnitMax = items;
 export const getTimeUnit = function getTimeUnit(arg0, arg1) {
   let closure_0 = arg0;
   const importDefault = arg1;
-  const tmp2 = importDefault(4362)(items, (unit) => f74561(unit.unit), items.findIndex((max) => {
+  const tmp2 = importDefault(4332)(items, (unit) => f74498(unit.unit), items.findIndex((max) => {
     max = max.max;
     let tmp = max.unit === outer1_10.NONE;
     if (tmp) {
@@ -575,7 +575,7 @@ export const getTimeUnit = function getTimeUnit(arg0, arg1) {
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f74561(unit.unit));
+    const found = arr.find((unit) => f74498(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -603,8 +603,8 @@ export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
     return obj;
   } else {
     closure_0 = rounded;
-    const f74561 = (arg0) => closure_0.includes(arg0);
-    const tmp12 = f74561(4362)(items, (unit) => f74561(unit.unit), items.findIndex((max) => {
+    const f74498 = (arg0) => closure_0.includes(arg0);
+    const tmp12 = f74498(4332)(items, (unit) => f74498(unit.unit), items.findIndex((max) => {
       max = max.max;
       let tmp = max.unit === outer1_10.NONE;
       if (tmp) {
@@ -618,7 +618,7 @@ export const getTimeAndUnit = function getTimeAndUnit(rounded, items) {
     if (null != tmp12) {
       let unit = tmp12.unit;
     } else {
-      const found = arr.find((unit) => f74561(unit.unit));
+      const found = arr.find((unit) => f74498(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;

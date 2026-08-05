@@ -1,9 +1,9 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14483
+// Function ID: 14484
 // Name: handleLanguageChange
-// Dependencies: [5, 19, 17, 1947, 1946, 21, 4285, 712, 8620, 589, 5272, 7795, 1236, 7794, 14503, 2]
+// Dependencies: [5, 19, 17, 1947, 1946, 21, 4255, 712, 8592, 589, 5257, 7767, 1236, 7766, 14484, 2]
 
-// Module 14502 (handleLanguageChange)
+// Module 14483 (handleLanguageChange)
 import jsxProd from "jsxProd";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { setAppLocale } from "_setAppLocale";
@@ -43,7 +43,7 @@ function _handleLanguageChange() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ function _handleLanguageChange() {
             obj = callback(table[8]);
             obj.updateLocale(closure_0);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp14) {
           c4 = tmp;
@@ -123,8 +123,8 @@ const memoResult = require("noop").memo(function UserSettingsLocale() {
     obj[3] = outer1_8(outer1_4, obj);
     return outer1_8(tmp(outer1_2[13]).TableRadioRow, obj, name);
   });
-  obj[1] = jsx(require(7795) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
-  obj[1] = jsx(require(5272) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, children: null });
+  obj[1] = jsx(require(7767) /* context */.TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
+  obj[1] = jsx(require(5257) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, children: null });
   return <closure_5 bottom>{null}</closure_5>;
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");

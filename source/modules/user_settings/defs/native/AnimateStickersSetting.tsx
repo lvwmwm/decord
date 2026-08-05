@@ -1,9 +1,9 @@
-// Module ID: 14498
-// Function ID: 14499
+// Module ID: 14479
+// Function ID: 14480
 // Name: radio
-// Dependencies: [19, 7892, 3961, 3958, 1236, 10361, 2]
+// Dependencies: [19, 7864, 3931, 3928, 1236, 10333, 2]
 
-// Module 14498 (radio)
+// Module 14479 (radio)
 import noop from "noop";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
 import createToggle from "createToggle";
@@ -17,7 +17,7 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.ACCESSIBILITY,
   useValue: require("explicitContentFromProto").AnimateStickers.useSetting,
   onValueChange: function onAnimateStickerSettingValueChange(arg0) {
-    const AnimateStickers = require(3958) /* explicitContentFromProto */.AnimateStickers;
+    const AnimateStickers = require(3928) /* explicitContentFromProto */.AnimateStickers;
     AnimateStickers.updateSetting(Number(arg0));
   },
   useOptions: function useAnimateStickerSettingOptions() {

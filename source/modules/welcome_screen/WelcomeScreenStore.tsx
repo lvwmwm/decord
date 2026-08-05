@@ -1,9 +1,9 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11895
+// Function ID: 11896
 // Name: handleInviteData
 // Dependencies: [589, 709, 2]
 
-// Module 11923 (handleInviteData)
+// Module 11895 (handleInviteData)
 import { Store } from "initialize";
 
 function handleInviteData(invite) {

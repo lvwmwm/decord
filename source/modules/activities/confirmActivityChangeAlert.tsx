@@ -1,10 +1,10 @@
-// Module ID: 10875
-// Function ID: 10876
+// Module ID: 10847
+// Function ID: 10848
 // Name: confirmActivityChangeModal
-// Dependencies: [3922, 1874, 4475, 4623, 1236, 1856, 2]
+// Dependencies: [3892, 1874, 4445, 4593, 1236, 1856, 2]
 // Exports: default
 
-// Module 10875 (confirmActivityChangeModal)
+// Module 10847 (confirmActivityChangeModal)
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -14,7 +14,7 @@ const result = require("computeChannelName").fileFinishedImporting("modules/acti
 export default function confirmActivityChangeModal(name, channel) {
   let str = "";
   if (null != channel) {
-    let obj = require(4475) /* computeChannelName */;
+    let obj = require(4445) /* computeChannelName */;
     str = obj.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
   }
   obj = { title: null, cancelText: null, confirmText: null, onConfirm: null, onCancel: null, body: null };
@@ -36,7 +36,7 @@ export default function confirmActivityChangeModal(name, channel) {
     name = intl5.string(tmp6(1236).t.G99XFs);
   }
   obj = { currentApplicationName: name, currentApplicationChannelName: null };
-  const obj2 = importDefault(4623);
+  const obj2 = importDefault(4593);
   if (tmp6Result.isNullOrEmpty(str)) {
     const intl6 = tmp6(1236).intl;
     str = intl6.string(tmp6(1236).t.OGUjmt);

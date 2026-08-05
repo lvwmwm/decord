@@ -1,10 +1,10 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 14735
+// Function ID: 14736
 // Name: onRenderFirstOrbsItem
-// Dependencies: [19, 17, 6910, 678, 21, 4285, 5610, 9265, 14727, 4253, 9352, 14731, 1297, 8749, 1236, 14754, 2]
+// Dependencies: [19, 17, 6895, 678, 21, 4255, 5595, 9236, 14707, 4223, 9323, 14711, 1297, 8721, 1236, 14734, 2]
 // Exports: default
 
-// Module 14755 (onRenderFirstOrbsItem)
+// Module 14735 (onRenderFirstOrbsItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

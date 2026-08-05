@@ -1,9 +1,9 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16340
+// Function ID: 16341
 // Name: resolveMessageCodedLinks
-// Dependencies: [5, 6828, 4270, 4269, 4274, 16360, 7679, 5848, 11370, 5229, 16367, 2]
+// Dependencies: [5, 6813, 4240, 4239, 4244, 16341, 7651, 5833, 11342, 5214, 16348, 2]
 
-// Module 16359 (resolveMessageCodedLinks)
+// Module 16340 (resolveMessageCodedLinks)
 import queueMessageLinkFetch from "queueMessageLinkFetch";
 import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import updateInvite from "updateInvite";
@@ -11,7 +11,7 @@ import "initialize";
 
 const require = arg1;
 function resolveMessageCodedLinks(content) {
-  const arr = importDefault(4269)(content.content);
+  const arr = importDefault(4239)(content.content);
   let tmp = null != arr;
   if (tmp) {
     tmp = 0 !== arr.length;
@@ -35,7 +35,7 @@ function resolveMessageCodedLinks(content) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -70,7 +70,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } catch (tmp10) {
               c0 = tmp;
               throw tmp10;
@@ -91,7 +91,7 @@ function resolveMessageCodedLinks(content) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -126,7 +126,7 @@ function resolveMessageCodedLinks(content) {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } catch (tmp10) {
               c0 = tmp;
               throw tmp10;

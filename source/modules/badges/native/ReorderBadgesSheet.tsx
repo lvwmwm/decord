@@ -1,10 +1,10 @@
-// Module ID: 13838
-// Function ID: 13839
+// Module ID: 13811
+// Function ID: 13812
 // Name: ReorderBadgesSheet
-// Dependencies: [19, 21, 5338, 1236, 5337, 2]
+// Dependencies: [19, 21, 5323, 1236, 5322, 2]
 // Exports: default
 
-// Module 13838 (ReorderBadgesSheet)
+// Module 13811 (ReorderBadgesSheet)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,6 +18,6 @@ export default function ReorderBadgesSheet() {
   obj = { title: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.opzPIQ);
-  obj[1] = jsx(require(5337) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
-  return jsx(require(5338) /* Background */.BottomSheet, { title: null });
+  obj[1] = jsx(require(5322) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
+  return jsx(require(5323) /* Background */.BottomSheet, { title: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10249
-// Function ID: 10250
+// Module ID: 10221
+// Function ID: 10222
 // Name: useChatViewPointerEventsAndroid
 // Dependencies: [2]
 // Exports: default
 
-// Module 10249 (useChatViewPointerEventsAndroid)
+// Module 10221 (useChatViewPointerEventsAndroid)
 const result = require("set").fileFinishedImporting("modules/chat/native/useChatViewPointerEvents.android.tsx");
 
 export default function useChatViewPointerEventsAndroid() {

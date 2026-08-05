@@ -1,10 +1,10 @@
-// Module ID: 13865
-// Function ID: 13866
+// Module ID: 13839
+// Function ID: 13840
 // Name: EditGuildProfileBanner
-// Dependencies: [109, 19, 17, 1942, 6989, 5658, 676, 1876, 21, 3931, 5610, 5630, 13807, 4253, 13808, 1959, 8077, 1236, 8075, 8173, 8757, 13818, 5913, 5310, 712, 9380, 13860, 589, 8117, 9366, 8758, 8085, 13215, 13866, 8745, 8754, 4281, 3997, 13867, 9367, 9368, 9387, 13827, 4124, 13828, 13833, 13839, 13840, 13844, 13848, 13858, 8432, 8433, 2]
+// Dependencies: [109, 19, 17, 1942, 6974, 5643, 676, 1876, 21, 3901, 5595, 5615, 13779, 4223, 13780, 1959, 8049, 1236, 8047, 8145, 8729, 13790, 5898, 5295, 712, 9351, 13834, 589, 8089, 9337, 8730, 8057, 13187, 13840, 8717, 8726, 4251, 3967, 13841, 9338, 9339, 9358, 13800, 4094, 13801, 13806, 13812, 13813, 13817, 13821, 13832, 8404, 8405, 2]
 // Exports: default
 
-// Module 13865 (EditGuildProfileBanner)
+// Module 13839 (EditGuildProfileBanner)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import usePremiumUpsellConfig from "usePremiumUpsellConfig";
 import get_ActivityIndicator from "getSystemLocale";
@@ -41,13 +41,13 @@ function EditGuildProfileBanner(user) {
   let c4;
   let analyticsLocations;
   ({ displayProfile, guildMember, pendingAvatarSrc, pendingThemeColors, disabled } = user);
-  let obj = importDefault(3931);
+  let obj = importDefault(3901);
   let result = obj.canUsePremiumGuildMemberProfile(user);
   c4 = result;
-  analyticsLocations = importDefault(5610)(importDefault(5630).EDIT_BANNER).analyticsLocations;
+  analyticsLocations = importDefault(5595)(importDefault(5615).EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations, children: null };
   obj = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, showProfilePreviewButton: false, showEditButton: null, onPressEdit: null, editButtonAccessibilityLabel: null, editDisabled: null };
-  const tmp3 = importDefault(5610);
+  const tmp3 = importDefault(5595);
   if (result) {
     result = null != guildMember;
   }
@@ -92,8 +92,8 @@ function EditGuildProfileBanner(user) {
   let intl = tmp5(1236).intl;
   obj[8] = intl.string(user(1236).t["95hPAe"]);
   obj[9] = disabled;
-  obj[1] = closure_18(importDefault(13807), obj);
-  return closure_18(user(5610).AnalyticsLocationProvider, obj);
+  obj[1] = closure_18(importDefault(13779), obj);
+  return closure_18(user(5595).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);

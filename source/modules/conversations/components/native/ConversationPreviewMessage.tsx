@@ -1,10 +1,10 @@
-// Module ID: 8398
-// Function ID: 8399
+// Module ID: 8370
+// Function ID: 8371
 // Name: modifyRow
-// Dependencies: [19, 17, 4277, 1942, 21, 7851, 8040, 4285, 712, 589, 4474, 7880, 3958, 3955, 1297, 4281, 8399, 2]
+// Dependencies: [19, 17, 4247, 1942, 21, 7823, 8012, 4255, 712, 589, 4444, 7852, 3928, 3925, 1297, 4251, 8371, 2]
 // Exports: default
 
-// Module 8398 (modifyRow)
+// Module 8370 (modifyRow)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -16,7 +16,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function modifyRow(arg0) {
-  arg0.contextType = require(8040) /* MediaGalleryItemType */.MessageContextType.SEARCH;
+  arg0.contextType = require(8012) /* MediaGalleryItemType */.MessageContextType.SEARCH;
   arg0.renderContentOnly = true;
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);

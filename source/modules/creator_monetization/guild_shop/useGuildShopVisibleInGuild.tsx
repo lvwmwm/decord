@@ -1,10 +1,10 @@
-// Module ID: 5791
-// Function ID: 5792
+// Module ID: 5776
+// Function ID: 5777
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [676, 5787, 5779, 5792, 5782, 2]
+// Dependencies: [676, 5772, 5764, 5777, 5767, 2]
 // Exports: isGuildShopVisibleInGuild, useGuildShopVisibleInGuild
 
-// Module 5791 (useGuildShopVisibleInGuild)
+// Module 5776 (useGuildShopVisibleInGuild)
 import { GuildFeatures } from "ME";
 
 let result = require("computeCanEveryoneInGuildSeeRoleSubscriptions").fileFinishedImporting("modules/creator_monetization/guild_shop/useGuildShopVisibleInGuild.tsx");
@@ -14,21 +14,21 @@ export const useGuildShopVisibleInGuild = function useGuildShopVisibleInGuild(id
   if (id != null) {
     id = id.id;
   }
-  const guildEligibleForGuildProducts = require(5787) /* useGuildEligibleForGuildProducts */.useGuildEligibleForGuildProducts(id);
-  let tmpResult = tmp(5779);
+  const guildEligibleForGuildProducts = require(5772) /* useGuildEligibleForGuildProducts */.useGuildEligibleForGuildProducts(id);
+  let tmpResult = tmp(5764);
   let id1;
   if (id != null) {
     id1 = id.id;
   }
   const roleSubscriptionsVisibleInGuild = tmpResult.useRoleSubscriptionsVisibleInGuild(id1);
-  tmpResult = tmp(5792);
+  tmpResult = tmp(5777);
   const guildShopPreviewVisible = tmpResult.useGuildShopPreviewVisible(id);
-  const obj = require(5787) /* useGuildEligibleForGuildProducts */;
+  const obj = require(5772) /* useGuildEligibleForGuildProducts */;
   let id2;
   if (id != null) {
     id2 = id.id;
   }
-  const shouldHideGuildPurchaseEntryPoints = require(5782) /* useShouldHideGuildPurchaseEntryPoints */.useShouldHideGuildPurchaseEntryPoints(id2).shouldHideGuildPurchaseEntryPoints;
+  const shouldHideGuildPurchaseEntryPoints = require(5767) /* useShouldHideGuildPurchaseEntryPoints */.useShouldHideGuildPurchaseEntryPoints(id2).shouldHideGuildPurchaseEntryPoints;
   return false;
 };
 export const isGuildShopVisibleInGuild = function isGuildShopVisibleInGuild(closure_2, closure_3) {
@@ -36,13 +36,13 @@ export const isGuildShopVisibleInGuild = function isGuildShopVisibleInGuild(clos
   if (closure_2 != null) {
     id = closure_2.id;
   }
-  const result = require(5787) /* useGuildEligibleForGuildProducts */.isGuildEligibleForGuildProducts(id);
-  const obj = require(5787) /* useGuildEligibleForGuildProducts */;
+  const result = require(5772) /* useGuildEligibleForGuildProducts */.isGuildEligibleForGuildProducts(id);
+  const obj = require(5772) /* useGuildEligibleForGuildProducts */;
   const tmp = require;
   let id1;
   if (closure_2 != null) {
     id1 = closure_2.id;
   }
-  const result1 = require(5779) /* computeCanEveryoneInGuildSeeRoleSubscriptions */.areRoleSubscriptionsVisibleInGuild(id1, closure_3);
+  const result1 = require(5764) /* computeCanEveryoneInGuildSeeRoleSubscriptions */.areRoleSubscriptionsVisibleInGuild(id1, closure_3);
   return false;
 };

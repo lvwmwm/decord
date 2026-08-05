@@ -1,10 +1,10 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15797
+// Function ID: 15798
 // Name: OAUTH2_AUTHORIZE_MODAL_KEY
-// Dependencies: [676, 10650, 8848, 4494, 2]
+// Dependencies: [676, 10622, 8820, 4464, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 15816 (OAUTH2_AUTHORIZE_MODAL_KEY)
+// Module 15797 (OAUTH2_AUTHORIZE_MODAL_KEY)
 import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY";
 import set from "SHARE_PREPARING_MODAL_KEY";
 
@@ -19,12 +19,12 @@ const result = set.fileFinishedImporting("modules/safe_area/shouldExcludeSafeAre
 export const shouldExcludeSafeAreaForModalKey = function shouldExcludeSafeAreaForModalKey(key) {
   let tmp = null != key;
   if (tmp) {
-    let hasItem = require(4494) /* openChannelCallModal */.isVoiceChannelModalKey(key);
+    let hasItem = require(4464) /* openChannelCallModal */.isVoiceChannelModalKey(key);
     if (!hasItem) {
       hasItem = set.has(key);
     }
     tmp = hasItem;
-    const obj = require(4494) /* openChannelCallModal */;
+    const obj = require(4464) /* openChannelCallModal */;
   }
   return tmp;
 };

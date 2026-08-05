@@ -1,17 +1,15 @@
 // Module ID: 8471
 // Function ID: 8472
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8452, 8472, 8461]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8425]
 
 // Module 8471 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const Ellipse = arg1;
+const FePointLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Ellipse {
+class FePointLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Ellipse);
+    tmp = _isNativeReflectConstruct(this, FePointLight);
     tmp2 = __esModule;
-    obj = __esModule(Ellipse);
+    obj = __esModule(FePointLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,41 +49,18 @@ class Ellipse {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Ellipse, require("_isNativeReflectConstruct"));
+require("_inherits")(FePointLight, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      let cx;
-      let cy;
-      let rx;
-      let ry;
-      const self = this;
-      const props = this.props;
-      let obj = {};
-      ({ cx, cy, rx, ry } = props);
-      const merged = Object.assign(self(8452).extract(this, props));
-      obj.cx = cx;
-      obj.cy = cy;
-      obj.rx = rx;
-      obj.ry = ry;
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const obj2 = self(8452);
-      const merged1 = Object.assign(obj);
-      return jsx(importDefault(8472), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const result = FePointLight(8425).warnUnimplementedFilter();
+      return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Ellipse, items);
-importDefaultResultResult.displayName = "Ellipse";
-importDefaultResultResult.defaultProps = { cx: 0, cy: 0, rx: 0, ry: 0 };
+const importDefaultResultResult = importDefaultResult(FePointLight, items);
+importDefaultResultResult.displayName = "FePointLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

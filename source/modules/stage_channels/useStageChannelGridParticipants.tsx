@@ -1,10 +1,10 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 10819
+// Function ID: 10820
 // Name: useStageChannelParticipantsList
-// Dependencies: [32, 19, 4298, 5103, 589, 5116, 5109, 12, 5115, 10848, 2]
+// Dependencies: [32, 19, 4268, 5088, 589, 5101, 5094, 12, 5100, 10820, 2]
 // Exports: useStageChannelParticipantsList, useStageChannelParticipantsListThrottled, useThrottleDurationForChannel
 
-// Module 10847 (useStageChannelParticipantsList)
+// Module 10819 (useStageChannelParticipantsList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";
@@ -23,7 +23,7 @@ export const useStageChannelParticipantsList = function useStageChannelParticipa
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     const items = [closure_0, outer1_5.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(5116).isVersionEqual);
+  }, items1, _require(5101).isVersionEqual);
   const obj = _require(589);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
@@ -107,7 +107,7 @@ export const useStageChannelParticipantsList = function useStageChannelParticipa
   }, items4);
 };
 export const useThrottleDurationForChannel = function useThrottleDurationForChannel(id) {
-  stageParticipantsCount = stageParticipantsCount(5115).useStageParticipantsCount(id, stageParticipantsCount(5109).StageChannelParticipantNamedIndex.AUDIENCE);
+  stageParticipantsCount = stageParticipantsCount(5100).useStageParticipantsCount(id, stageParticipantsCount(5094).StageChannelParticipantNamedIndex.AUDIENCE);
   const tmp2 = callback(React.useState(false), 2);
   const dependencyMap = tmp2[1];
   const items = [stageParticipantsCount];
@@ -140,7 +140,7 @@ export const useStageChannelParticipantsListThrottled = function useStageChannel
   const stateFromStores = _require(589).useStateFromStores(items, () => {
     const items = [closure_0, outer1_5.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(5116).isVersionEqual);
+  }, items1, _require(5101).isVersionEqual);
   const obj = _require(589);
   let items2 = [stateFromStores1];
   let items3 = [id];
@@ -225,9 +225,9 @@ export const useStageChannelParticipantsListThrottled = function useStageChannel
   const obj2 = _require(589);
   [tmp5, tmp6] = flag(memo, 2);
   const tmp4 = flag(memo, 2);
-  let items5 = [memo[_require(undefined, 5109).StageChannelParticipantNamedIndex.AUDIENCE]];
-  const obj3 = _require(10848);
-  [tmp8, tmp9] = flag(_require(10848).useThrottledState(memo, throttleDurationForChannel, items5), 2);
+  let items5 = [memo[_require(undefined, 5094).StageChannelParticipantNamedIndex.AUDIENCE]];
+  const obj3 = _require(10820);
+  [tmp8, tmp9] = flag(_require(10820).useThrottledState(memo, throttleDurationForChannel, items5), 2);
   if (flag) {
     let SELECTED = tmp10.MEDIA;
     let tmp11 = tmp10;

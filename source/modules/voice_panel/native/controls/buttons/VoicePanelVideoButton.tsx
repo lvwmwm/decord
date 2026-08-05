@@ -1,10 +1,10 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16116
+// Function ID: 16117
 // Name: VideoButtonRive
-// Dependencies: [19, 17, 10567, 1372, 1862, 4332, 3913, 21, 11557, 16123, 589, 7105, 4625, 16136, 9070, 10584, 16124, 1236, 3997, 7635, 12233, 2]
+// Dependencies: [19, 17, 10539, 1372, 1862, 4302, 3883, 21, 11529, 16104, 589, 7079, 4595, 16117, 9042, 10556, 16105, 1236, 3967, 7607, 12205, 2]
 // Exports: default
 
-// Module 16135 (VideoButtonRive)
+// Module 16116 (VideoButtonRive)
 import VideoIcon from "VideoIcon";
 import { View } from "getSystemLocale";
 import initialize from "initialize";
@@ -27,12 +27,12 @@ function VideoButtonRive(arg0) {
   }
   obj[1] = str;
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(7635).VideoIcon;
+    let VideoSlashIcon = tmp3(7607).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(12233).VideoSlashIcon;
+    VideoSlashIcon = tmp3(12205).VideoSlashIcon;
   }
   obj[2] = <VideoSlashIcon color={color} />;
-  obj[1] = jsx(require(3997) /* ManaContext */.CameraRive, { dataBinding: { fill: color, on: isVideoEnabled }, defaultViewModelInstance: null, fallback: null });
+  obj[1] = jsx(require(3967) /* ManaContext */.CameraRive, { dataBinding: { fill: color, on: isVideoEnabled }, defaultViewModelInstance: null, fallback: null });
   return <View dataBinding={{ fill: color, on: isVideoEnabled }} defaultViewModelInstance={null} fallback={null} />;
 }
 let result = require("initialize").fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelVideoButton.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12437
+// Function ID: 12438
 // Name: getSavedMessagesForType
-// Dependencies: [32, 19, 10188, 8192, 12466, 589, 1351, 2]
+// Dependencies: [32, 19, 10159, 8164, 12438, 589, 1351, 2]
 // Exports: default
 
-// Module 12465 (getSavedMessagesForType)
+// Module 12437 (getSavedMessagesForType)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getTimeSafe from "getTimeSafe";
 
 const require = arg1;
 function getSavedMessagesForType(arg0) {
-  if (require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK === arg0) {
+  if (require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK === arg0) {
     return store.getMessageBookmarks();
-  } else if (tmp(8192).SavedMessageSortTypes.REMINDER === arg0) {
+  } else if (tmp(8164).SavedMessageSortTypes.REMINDER === arg0) {
     return store.getMessageReminders();
   } else {
     return store.getSavedMessages();
@@ -27,7 +27,7 @@ export default function useSavedMessagesForPage() {
   let c2;
   let ALL = arg0;
   if (arg0 === undefined) {
-    ALL = ALL(8192).SavedMessageSortTypes.ALL;
+    ALL = ALL(8164).SavedMessageSortTypes.ALL;
   }
   let importDefault;
   let dependencyMap;
@@ -95,7 +95,7 @@ export default function useSavedMessagesForPage() {
       outer2_5.removeChangeListener(handleChange);
     };
   }, items);
-  importDefault(12466)();
+  importDefault(12438)();
   let tmp3 = callback(React.useState(() => {
     if (ALL(_undefined2[3]).SavedMessageSortTypes.BOOKMARK === ALL) {
       let messageBookmarks = outer1_5.getMessageBookmarks();

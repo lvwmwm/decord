@@ -1,10 +1,10 @@
-// Module ID: 9387
-// Function ID: 9388
+// Module ID: 9358
+// Function ID: 9359
 // Name: DisplayName
-// Dependencies: [19, 17, 8707, 5658, 676, 7862, 21, 4285, 712, 9388, 9389, 9053, 4812, 9396, 4281, 9398, 7109, 4137, 9431, 1236, 9433, 8708, 5925, 3986, 8758, 9434, 9435, 9439, 5131, 698, 7107, 500, 9440, 1474, 8076, 9169, 4124, 2]
+// Dependencies: [19, 17, 8679, 5643, 676, 7834, 21, 4255, 712, 9359, 9360, 9025, 4797, 9367, 4251, 9369, 7083, 4107, 9402, 1236, 9404, 8680, 5910, 3956, 8730, 9405, 9406, 9410, 5116, 698, 7081, 500, 9411, 1474, 8048, 9141, 4094, 2]
 // Exports: default
 
-// Module 9387 (DisplayName)
+// Module 9358 (DisplayName)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "getRootNavigationRef";
 import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY";
@@ -482,7 +482,7 @@ function GuildTag(style) {
     showToastOnPress = false;
   }
   const tmp = createCacheKey();
-  let obj = require(8076) /* guildHasTag */;
+  let obj = require(8048) /* guildHasTag */;
   let primaryGuild;
   if (user != null) {
     primaryGuild = user.primaryGuild;
@@ -518,7 +518,7 @@ function GuildTag(style) {
       obj1[3] = obj2;
       obj1[4] = guildTagBadgeSize;
       obj1[5] = guildTagTextVariant;
-      obj[1] = callback(importDefault(9169), obj1);
+      obj[1] = callback(importDefault(9141), obj1);
       tmp9 = callback(closure_5, obj);
     }
   }
@@ -566,9 +566,9 @@ export default function UserProfilePrimaryInfo(arg0) {
   ({ guildId, pronouns, style, badges, badgeContainerBackground, onPressDisplayName, displayNameAccessibilityHint, displayNameAccessibilityRole, onPressUserTag, userTagAccessibilityHint, onPressPronouns, pronounsAccessibilityHint, showChevron, pendingDisplayNameStyles } = arg0);
   const tmp = createCacheKey();
   let obj = { backgroundColor: badgeContainerBackground };
-  let obj1 = importDefault(4124);
+  let obj1 = importDefault(4094);
   const name = obj1.useName(user);
-  let obj2 = importDefault(4124);
+  let obj2 = importDefault(4094);
   obj = { style: items, children: null };
   items = [tmp.container, style];
   obj = { user, guildId, name: null, themeType: null, onPress: null, accessibilityHint: null, displayNameAccessibilityRole: null, showChevron: null, pendingDisplayNameStyles: null };

@@ -1,8 +1,8 @@
-// Module ID: 12457
-// Function ID: 12458
-// Dependencies: [19, 17, 21, 4285, 712, 501, 1348, 1236, 4281, 2]
+// Module ID: 12429
+// Function ID: 12430
+// Dependencies: [19, 17, 21, 4255, 712, 501, 1348, 1236, 4251, 2]
 
-// Module 12457
+// Module 12429
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -86,7 +86,7 @@ const memoResult = importAllResult.memo(function MemberCount(arg0) {
     obj3[1] = color;
     obj3[3] = tmp2 ? tmp10.refreshText : tmp10.text;
     obj3[4] = intl.format(etqpUG, obj);
-    items2[1] = closure_4(require(4281) /* Text */.Text, obj3);
+    items2[1] = closure_4(require(4251) /* Text */.Text, obj3);
     obj[1] = items2;
     return closure_5(View, obj);
   }

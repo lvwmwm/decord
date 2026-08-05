@@ -1,9 +1,9 @@
-// Module ID: 15377
-// Function ID: 15378
+// Module ID: 15358
+// Function ID: 15359
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4962, 1874, 14243, 676, 21, 4285, 712, 589, 1297, 4629, 4146, 8735, 8103, 4694, 3989, 8102, 8069, 4254, 5925, 1959, 5368, 2]
+// Dependencies: [5, 32, 19, 17, 4947, 1874, 14217, 676, 21, 4255, 712, 589, 1297, 4599, 4116, 8707, 8075, 4664, 3959, 8074, 8041, 4224, 5910, 1959, 5353, 2]
 
-// Module 15377 (YouBarAvatarLarge)
+// Module 15358 (YouBarAvatarLarge)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "CutoutableAvatarDecoration";
@@ -192,7 +192,7 @@ function YouBarAvatarLarge(transitionState) {
     obj4[0] = obj5;
     obj2[2] = closure_21(sharedValue1, obj4);
     const items5 = [closure_21(tmp22Result, obj2), , , ];
-    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "done" };
+    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: false };
     obj6[0] = stateFromStores;
     obj6[2] = closure_10;
     if (OFFLINE === StatusTypes.UNKNOWN) {
@@ -401,7 +401,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -437,7 +437,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
           arg1.openUserSettings();
           callback(false);
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp12) {
         paths = tmp;

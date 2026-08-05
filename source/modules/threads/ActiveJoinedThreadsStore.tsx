@@ -1,9 +1,9 @@
-// Module ID: 5191
-// Function ID: 5192
+// Module ID: 5176
+// Function ID: 5177
 // Name: rebuild
-// Dependencies: [1376, 1372, 1862, 4297, 1931, 5192, 3915, 1379, 11, 4498, 5193, 709, 12, 589, 2]
+// Dependencies: [1376, 1372, 1862, 4267, 1931, 5177, 3885, 1379, 11, 4468, 5178, 709, 12, 589, 2]
 
-// Module 5191 (rebuild)
+// Module 5176 (rebuild)
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -136,7 +136,7 @@ function rebuildGuild_(guildId) {
               let tmp49 = importDefault;
               let tmp50 = dependencyMap;
               let _Date = Date;
-              let tmp51 = importDefault(5193)(channel);
+              let tmp51 = importDefault(5178)(channel);
               dependencyMap7[channel.id] = setTimeout(() => {
                 channel = outer1_5.getChannel(channel.id);
                 if (null != channel) {
@@ -303,7 +303,7 @@ function updateThread(guild_id, parent_id, id) {
             const _setTimeout = setTimeout;
             clearTimeoutResult = importDefault;
             clearTimeoutResult = dependencyMap;
-            clearTimeoutResult = importDefault(5193)(_Date);
+            clearTimeoutResult = importDefault(5178)(_Date);
             _Date = Date;
             dependencyMap7[_Date.id] = setTimeout(() => {
               channel = outer1_5.getChannel(channel.id);
@@ -465,7 +465,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
         let tmp10 = key10006;
         let tmp11 = require;
         let tmp12 = dependencyMap;
-        let obj = require(4498) /* shouldShowAgeGateForVoiceChannel */;
+        let obj = require(4468) /* shouldShowAgeGateForVoiceChannel */;
         if (!obj.isChannelContentGated(tmp[key10006].channel)) {
           continue;
         } else {
@@ -483,7 +483,7 @@ function anyThreadsNSFW(guild_id, parent_id) {
         let tmp13 = key10015;
         let tmp14 = require;
         let tmp15 = dependencyMap;
-        let obj2 = require(4498) /* shouldShowAgeGateForVoiceChannel */;
+        let obj2 = require(4468) /* shouldShowAgeGateForVoiceChannel */;
         if (!obj2.isChannelContentGated(tmp5[key10015])) {
           continue;
         } else {
@@ -557,8 +557,8 @@ function handleReadStateChannelAction(channelId) {
                 obj[1] = channel;
                 obj.dispatch(obj);
               }
-            }, importDefault(5193)(channel) - Date.now() + 1);
-            const tmp33 = importDefault(5193)(channel);
+            }, importDefault(5178)(channel) - Date.now() + 1);
+            const tmp33 = importDefault(5178)(channel);
           }
           ({ guild_id: guild_id2, parent_id: parent_id2 } = channel);
           let tmp35 = guild_id2 in closure_13;
@@ -691,7 +691,7 @@ function rebuildReadStates() {
               let tmp20 = importDefault;
               let tmp21 = dependencyMap;
               let _Date = Date;
-              let tmp22 = importDefault(5193)(channel);
+              let tmp22 = importDefault(5178)(channel);
               dependencyMap7[channel.id] = setTimeout(() => {
                 channel = outer1_5.getChannel(channel.id);
                 if (null != channel) {
@@ -807,8 +807,8 @@ function parseThreadState(channel) {
   let tmp6 = isActiveThreadResult;
   if (isActiveThreadResult) {
     const _Date = Date;
-    tmp6 = importDefault(5193)(channel) > Date.now();
-    const tmp9 = importDefault(5193)(channel);
+    tmp6 = importDefault(5178)(channel) > Date.now();
+    const tmp9 = importDefault(5178)(channel);
   }
   let tmp12 = isActiveThreadResult;
   const voiceChannelId = store3.getVoiceChannelId();
@@ -1122,7 +1122,7 @@ obj = {
     while (iter !== undefined) {
       let tmp2 = require;
       let tmp3 = dependencyMap;
-      let obj = require(4498) /* shouldShowAgeGateForVoiceChannel */;
+      let obj = require(4468) /* shouldShowAgeGateForVoiceChannel */;
       let tmp5 = anyThreadsNSFW;
       let result = obj.isChannelContentGated(nextResult);
       if (result !== anyThreadsNSFW(nextResult.guild_id, nextResult.parent_id)) {

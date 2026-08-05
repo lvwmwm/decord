@@ -1,9 +1,9 @@
-// Module ID: 5752
-// Function ID: 5753
+// Module ID: 5737
+// Function ID: 5738
 // Name: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID
 // Dependencies: [1376, 676, 2]
 
-// Module 5752 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
+// Module 5737 (FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID)
 const obj = { id: "131", type: null, name: "Placeholder Channel" };
 obj[1] = require("ME").ChannelTypes.DM;
 const channelRecord = require("createChannelRecord").createChannelRecord(obj);

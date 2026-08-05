@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15170
+// Function ID: 15171
 // Name: useLiveStageChannels
-// Dependencies: [1372, 3913, 1377, 1380, 589, 1351, 11, 2]
+// Dependencies: [1372, 3883, 1377, 1380, 589, 1351, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 15190 (useLiveStageChannels)
+// Module 15170 (useLiveStageChannels)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";

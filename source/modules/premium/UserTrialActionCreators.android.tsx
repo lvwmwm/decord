@@ -1,8 +1,8 @@
-// Module ID: 7512
-// Function ID: 7513
+// Module ID: 7484
+// Function ID: 7485
 // Dependencies: [5, 676, 530, 709, 2]
 
-// Module 7512
+// Module 7484
 import asyncGeneratorStep from "asyncGeneratorStep";
 import ME from "ME";
 
@@ -27,7 +27,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

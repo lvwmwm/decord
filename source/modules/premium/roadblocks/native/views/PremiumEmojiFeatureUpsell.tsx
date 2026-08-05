@@ -1,10 +1,10 @@
-// Module ID: 8648
-// Function ID: 8649
+// Module ID: 8620
+// Function ID: 8621
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [19, 17, 21, 4285, 712, 1581, 5913, 691, 4146, 8649, 8184, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 1581, 5898, 691, 4116, 8621, 8156, 2]
 // Exports: default
 
-// Module 8648 (PremiumEmojiFeatureUpsell)
+// Module 8620 (PremiumEmojiFeatureUpsell)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

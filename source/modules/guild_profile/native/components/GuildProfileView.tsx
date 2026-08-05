@@ -1,10 +1,10 @@
-// Module ID: 9173
-// Function ID: 9174
+// Module ID: 9145
+// Function ID: 9146
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1862, 676, 21, 3995, 3997, 4285, 712, 589, 1411, 1474, 1416, 9174, 4221, 3989, 9175, 4706, 9176, 4281, 9188, 12118, 2]
+// Dependencies: [19, 17, 1862, 676, 21, 3965, 3967, 4255, 712, 589, 1411, 1474, 1416, 9146, 4191, 3959, 9147, 4676, 9148, 4251, 9160, 12090, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 9173 (GuildProfileBackground)
+// Module 9145 (GuildProfileBackground)
 import Text from "Text";
 import get_ActivityIndicator from "LinearGradient";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -34,7 +34,7 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       obj = { id: null, splash: null, size: null };
       ({ id: obj3[0], customBanner: obj3[1] } = guildProfile);
-      obj[2] = tmp3(9174)() * importDefault(1474)().width;
+      obj[2] = tmp3(9146)() * importDefault(1474)().width;
       obj = { style: null, source: null };
       obj[0] = tmp4.imageBanner;
       obj[1] = tmp3(1416).getGuildDiscoverySplashSource(obj);
@@ -45,17 +45,17 @@ function GuildProfileBackground(guildProfile) {
 }
 function GuildProfileGradient(guildProfile) {
   const tmp = createCacheKey();
-  let obj = require(3989) /* map */;
+  let obj = require(3959) /* map */;
   const token = obj.useToken(importDefault(712).colors.BACKGROUND_BASE_LOWEST);
-  const tmp2 = importDefault(4221)();
-  const profilePrimaryColor = require(9175) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
+  const tmp2 = importDefault(4191)();
+  const profilePrimaryColor = require(9147) /* useProfilePrimaryColor */.useProfilePrimaryColor(guildProfile.guildProfile, token);
   obj = { style: tmp.colorBanner, start: frozen.START, end: frozen.END, colors: null };
   const items = [profilePrimaryColor, ];
-  const obj2 = require(9175) /* useProfilePrimaryColor */;
+  const obj2 = require(9147) /* useProfilePrimaryColor */;
   const tmp5 = closure_8;
-  const tmp6 = importDefault(4706);
-  const obj4 = require(3995) /* isThemeLight */;
-  const obj5 = require(3997) /* ManaContext */;
+  const tmp6 = importDefault(4676);
+  const obj4 = require(3965) /* isThemeLight */;
+  const obj5 = require(3967) /* ManaContext */;
   if (isThemeDarkResult) {
     let brightenColorResult = obj5.brightenColor(profilePrimaryColor, 0.8);
   } else {
@@ -104,7 +104,7 @@ export default function GuildProfileView(guildProfile) {
     }
     tmp = guildProfile;
   }, items);
-  const items1 = [callback(GuildProfileBackground, { guildProfile }), callback(importDefault(9176), { profile: guildProfile, guildIconSource: memo }), ];
+  const items1 = [callback(GuildProfileBackground, { guildProfile }), callback(importDefault(9148), { profile: guildProfile, guildIconSource: memo }), ];
   obj = { style: tmp.body, children: null };
   let tmp5Result = null != guildProfile.description;
   if (tmp5Result) {
@@ -113,9 +113,9 @@ export default function GuildProfileView(guildProfile) {
   if (tmp5Result) {
     obj = { variant: "text-md/medium", color: "text-subtle", children: null };
     obj[2] = guildProfile.description;
-    tmp5Result = tmp5(guildProfile(4281).Text, obj);
+    tmp5Result = tmp5(guildProfile(4251).Text, obj);
   }
-  const items2 = [tmp5Result, callback(importDefault(9188), { profile: guildProfile }), callback(importDefault(12118), { profile: guildProfile })];
+  const items2 = [tmp5Result, callback(importDefault(9160), { profile: guildProfile }), callback(importDefault(12090), { profile: guildProfile })];
   obj[1] = items2;
   items1[2] = closure_9(closure_4, obj);
   obj[1] = items1;
@@ -123,8 +123,8 @@ export default function GuildProfileView(guildProfile) {
 };
 export const getBackgroundForProfile = function getBackgroundForProfile(closure_2, token) {
   const items = [token, ];
-  const obj = require(3995) /* isThemeLight */;
-  const obj2 = require(3997) /* ManaContext */;
+  const obj = require(3965) /* isThemeLight */;
+  const obj2 = require(3967) /* ManaContext */;
   if (isThemeDarkResult) {
     let brightenColorResult = obj2.brightenColor(token, 0.8);
   } else {

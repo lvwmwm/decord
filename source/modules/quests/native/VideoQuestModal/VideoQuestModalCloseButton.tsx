@@ -1,10 +1,10 @@
-// Module ID: 14291
-// Function ID: 14292
+// Module ID: 14265
+// Function ID: 14266
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 712, 4812, 1236, 5270, 2]
+// Dependencies: [21, 712, 4797, 1236, 5255, 2]
 // Exports: default
 
-// Module 14291 (VideoQuestModalCloseButton)
+// Module 14265 (VideoQuestModalCloseButton)
 import { jsx } from "jsxProd";
 
 const result = require("PressableBase").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModalCloseButton.tsx");
@@ -20,6 +20,6 @@ export default function VideoQuestModalCloseButton(iconColor) {
   obj[3] = iconColor.onClose;
   const items = [{ flexShrink: 0, minWidth: 24, minHeight: 24 }, iconColor.style];
   obj[4] = items;
-  obj[5] = jsx(require(5270) /* XSmallIcon */.XSmallIcon, { color: MOBILE_TEXT_HEADING_PRIMARY });
-  return jsx(require(4812) /* PressableBase */.PressableOpacity, { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null });
+  obj[5] = jsx(require(5255) /* XSmallIcon */.XSmallIcon, { color: MOBILE_TEXT_HEADING_PRIMARY });
+  return jsx(require(4797) /* PressableBase */.PressableOpacity, { accessibilityLabel: null, accessibilityRole: "button", hitSlop: 12, onPress: null, style: null, children: null });
 };

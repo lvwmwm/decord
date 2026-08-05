@@ -1,9 +1,9 @@
-// Module ID: 16376
-// Function ID: 16377
+// Module ID: 16357
+// Function ID: 16358
 // Name: items
-// Dependencies: [5, 8282, 4964, 1874, 7681, 11972, 676, 11986, 16377, 11943, 11971, 691, 8987, 709, 5229, 11950, 12013, 2]
+// Dependencies: [5, 8254, 4949, 1874, 7653, 11944, 676, 11958, 16358, 11915, 11943, 691, 8959, 709, 5214, 11922, 11985, 2]
 
-// Module 16376 (items)
+// Module 16357 (items)
 import NewUserTypes from "NewUserTypes";
 import handleSetLocationMetadata from "handleSetLocationMetadata";
 import set from "set";
@@ -74,7 +74,7 @@ const items = [
       }
     },
     transitionToStep() {
-      const result = require(11971) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(691) /* keys */.ModalAnimation.SLIDE_IN, true);
+      const result = require(11943) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(691) /* keys */.ModalAnimation.SLIDE_IN, true);
     }
   },
   {
@@ -83,7 +83,7 @@ const items = [
       return store2.getType() === NewUserTypes.ORGANIC_REGISTERED;
     },
     transitionToStep() {
-      return require(11971) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(691) /* keys */.ModalAnimation.SLIDE_IN);
+      return require(11943) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(691) /* keys */.ModalAnimation.SLIDE_IN);
     }
   },
 
@@ -130,7 +130,7 @@ let prototype = function NewUserManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -174,7 +174,7 @@ let prototype = function NewUserManager() {
               let callback2;
               key2 = 1;
               v0 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

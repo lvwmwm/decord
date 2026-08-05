@@ -1,10 +1,10 @@
-// Module ID: 4955
-// Function ID: 4956
+// Module ID: 4940
+// Function ID: 4941
 // Name: mergeMessage
-// Dependencies: [676, 3, 4504, 12, 4217, 11, 4956, 4957, 4958, 4959, 2]
+// Dependencies: [676, 3, 4474, 12, 4187, 11, 4941, 4942, 4943, 4944, 2]
 // Exports: flatMapChannelMessages
 
-// Module 4955 (mergeMessage)
+// Module 4940 (mergeMessage)
 import ME from "ME";
 
 let c4;
@@ -42,7 +42,7 @@ function mergeMessage(self, id) {
     }
     return messageRecord;
   }
-  messageRecord = require(4504) /* createMinimalMessageRecord */.createMessageRecord(id);
+  messageRecord = require(4474) /* createMinimalMessageRecord */.createMessageRecord(id);
 }
 ({ MAX_MESSAGES_PER_CHANNEL: c4, MAX_LOADED_MESSAGES: c5, MAX_MESSAGE_CACHE_SIZE: closure_6, TRUNCATED_MESSAGE_VIEW_SIZE: error, MessageStates: metroImportAll } = ME);
 let c9 = new require("apply")("ChannelMessages");
@@ -276,7 +276,7 @@ ChannelMessages["getOrCreate"] = function getOrCreate(channelId) {
       HermesBuiltin.throwTypeError();
     }
     let obj = Object.create(tmp.prototype);
-    obj[2] = require(4217) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
+    obj[2] = require(4187) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
     obj[21] = [];
     if (typeof MessageCache !== "function") {
       HermesBuiltin.throwTypeError();
@@ -328,7 +328,7 @@ prototype2["mutate"] = function mutate(obj, flag) {
     HermesBuiltin.throwTypeError();
   }
   obj = Object.create(ChannelMessages.prototype);
-  obj[2] = require(4217) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
+  obj[2] = require(4187) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
   obj[21] = [];
   if (typeof MessageCache !== "function") {
     HermesBuiltin.throwTypeError();
@@ -944,8 +944,8 @@ prototype2["mergeDelta"] = function mergeDelta(new_messages, modified_messages, 
     const item1 = items1.forEach((id) => set.add(id.id));
     const _array = _before._array;
     const found = _array.filter((id) => !set.has(id.id));
-    const mapped = set.map((message) => set(4504).createMessageRecord(message));
-    const combined = found.concat(mapped, items1.map((message) => set(4504).createMessageRecord(message)));
+    const mapped = set.map((message) => set(4474).createMessageRecord(message));
+    const combined = found.concat(mapped, items1.map((message) => set(4474).createMessageRecord(message)));
     _before._array = combined.sort((id, id2) => callback(11).compare(id.id, id2.id));
   });
 };
@@ -1140,7 +1140,7 @@ prototype2["receiveMessage"] = function receiveMessage(nonce) {
     if (id === id1) {
       if (null != nonce.nonce) {
         if (value.id === nonce.nonce) {
-          const messageRecord = messageRecord1(4504).createMessageRecord(nonce);
+          const messageRecord = messageRecord1(4474).createMessageRecord(nonce);
           if (null != value.interactionData) {
             messageRecord.interactionData = value.interactionData;
           }
@@ -1155,7 +1155,7 @@ prototype2["receiveMessage"] = function receiveMessage(nonce) {
     }
     return self;
   } else {
-    messageRecord1 = messageRecord1(4504).createMessageRecord(nonce);
+    messageRecord1 = messageRecord1(4474).createMessageRecord(nonce);
     const lastResult = self.last();
     if (null != lastResult) {
       if (obj2.compare(nonce.id, lastResult.id) < 0) {
@@ -1188,7 +1188,7 @@ prototype2["receiveMessage"] = function receiveMessage(nonce) {
     }
     const items = [messageRecord1];
     mutation = self.merge(items);
-    let obj = messageRecord1(4504);
+    let obj = messageRecord1(4474);
   }
 };
 prototype2["receivePushNotification"] = function receivePushNotification(closure_1, closure_2) {
@@ -1202,7 +1202,7 @@ prototype2["receivePushNotification"] = function receivePushNotification(closure
   } else if (null != self.get(closure_1.id, true)) {
     return self;
   } else {
-    let obj = require(4958) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
+    let obj = require(4943) /* isIOSPushNotificationRawPayloadFixExperimentEnabled */;
     const result = obj.isIOSPushNotificationRawPayloadFixExperimentEnabled();
     let tmp5 = !result;
     if (result) {
@@ -1326,7 +1326,7 @@ prototype2["loadComplete"] = function loadComplete(newMessages) {
         jumpType = jump.jumpType;
       }
       if (jumpType == null) {
-        jumpType = require(4217) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
+        jumpType = require(4187) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
       }
       obj = { ready: true, loadingMore: false, jumpType: null, jumpFlash: null, jumped: null, jumpedToPresent: null, jumpTargetId: null, jumpTargetOffset: null, jumpSequenceId: null, jumpReturnTargetId: null, onJumpComplete: null, hasMoreBefore: null, hasMoreAfter: null, cached: null, hasFetched: null, error: false, initialScrollSequenceId: null, suppressRowAnimationSequenceId: null };
       obj[2] = jumpType;
@@ -1465,7 +1465,7 @@ prototype2["loadComplete"] = function loadComplete(newMessages) {
 prototype2["addCachedMessages"] = function addCachedMessages(messages, stale) {
   let self = this;
   self = this;
-  let obj = reversed(4959);
+  let obj = reversed(4944);
   const result = obj.requireSortedDescending(messages);
   const mapped = messages.map((arg0) => outer1_10(self, arg0));
   reversed = mapped.reverse();

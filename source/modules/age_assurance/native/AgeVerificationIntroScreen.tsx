@@ -1,10 +1,10 @@
-// Module ID: 7762
-// Function ID: 7763
+// Module ID: 7734
+// Function ID: 7735
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 7721, 676, 7728, 21, 4285, 712, 1581, 4500, 7763, 5936, 4281, 5649, 7764, 1236, 7720, 1945, 7722, 4695, 7765, 2]
+// Dependencies: [5, 19, 17, 7693, 676, 7700, 21, 4255, 712, 1581, 4470, 7735, 5921, 4251, 5634, 7736, 1236, 7692, 1945, 7694, 4665, 7737, 2]
 // Exports: default
 
-// Module 7762 (GetStartedScreen)
+// Module 7734 (GetStartedScreen)
 import SafetyHubView from "SafetyHubView";
 import "AgeVerificationModalEntryPoint";
 import get_ActivityIndicator from "openIncodeAgeVerificationModal";
@@ -47,40 +47,40 @@ export default function GetStartedScreen(onComplete) {
   const entryPoint = onComplete.entryPoint;
   let importDefault;
   const tmp = createCacheKey();
-  let obj = modalSessionId(4500);
+  let obj = modalSessionId(4470);
   const initiateAgeVerification = obj.useInitiateAgeVerification({ onComplete: onComplete.onClose, entryPoint });
   ({ initiateAgeVerification: c1, loading } = initiateAgeVerification);
-  let obj1 = modalSessionId(7763);
+  let obj1 = modalSessionId(7735);
   const isManualAgeVerificationHidden = obj1.useIsManualAgeVerificationHidden("age_verification_get_started_modal");
   obj = { children: null };
   obj = { style: tmp.getStartedContainer, children: null };
   obj1 = { style: tmp.getStartedHeaderContainer, children: null };
-  const items = [callback3(modalSessionId(5936).ShieldSpotIllustration, {}), , ];
+  const items = [callback3(modalSessionId(5921).ShieldSpotIllustration, {}), , ];
   let obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: null };
-  let obj6 = modalSessionId(4500);
+  let obj6 = modalSessionId(4470);
   obj2[3] = obj6.getAgeVerificationGetStartedTitle(entryPoint);
-  items[1] = callback3(modalSessionId(4281).Text, obj2);
+  items[1] = callback3(modalSessionId(4251).Text, obj2);
   const obj3 = { variant: "heading-md/medium", color: "text-default", style: tmp.getStartedHeaderText, children: null };
-  let obj8 = modalSessionId(4500);
+  let obj8 = modalSessionId(4470);
   obj3[3] = obj8.getAgeVerificationGetStartedSubtitle(entryPoint);
-  items[2] = callback3(modalSessionId(4281).Text, obj3);
+  items[2] = callback3(modalSessionId(4251).Text, obj3);
   obj1[1] = items;
   const items1 = [callback4(closure_5, obj1), , ];
   const obj4 = { hasIcons: true, children: null };
   obj4[1] = callback2(modalSessionId).map((children) => {
     const description = children.description;
     let obj = { index: arg1 + 1, tip: null, description: null };
-    obj[1] = callback(modalSessionId(4281).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title });
+    obj[1] = callback(modalSessionId(4251).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title });
     let tmpResult = null;
     if (null != description) {
       obj = { variant: "text-xs/medium", color: "text-subtle", children: null };
       obj[2] = description;
-      tmpResult = tmp(modalSessionId(4281).Text, obj);
+      tmpResult = tmp(modalSessionId(4251).Text, obj);
     }
     obj[2] = tmpResult;
-    return callback(_undefined(7764), obj, arg1);
+    return callback(_undefined(7736), obj, arg1);
   });
-  items1[1] = callback3(modalSessionId(5649).TableRowGroup, obj4);
+  items1[1] = callback3(modalSessionId(5634).TableRowGroup, obj4);
   const obj5 = { style: tmp.ageGroupLearnMoreContainer, children: null };
   obj6 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl = modalSessionId(1236).intl;
@@ -92,7 +92,7 @@ export default function GetStartedScreen(onComplete) {
       const result = modalSessionId(outer1_2[19]).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(outer1_2[19]).AgeVerificationModalVersion.PRIMARY, modalSessionId(outer1_2[19]).AgeVerificationModalCta.LEARN_MORE);
     }
   });
-  obj5[1] = callback3(modalSessionId(4281).Text, obj6);
+  obj5[1] = callback3(modalSessionId(4251).Text, obj6);
   items1[2] = callback3(closure_5, obj5);
   obj[1] = items1;
   obj[0] = callback4(closure_5, obj);
@@ -113,7 +113,7 @@ export default function GetStartedScreen(onComplete) {
       const result = modalSessionId(outer1_2[19]).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(outer1_2[19]).AgeVerificationModalVersion.PRIMARY, modalSessionId(outer1_2[19]).AgeVerificationModalCta.MANUAL_REVIEW_REQUEST);
     };
     obj10[3] = intl2.format(tmp4(1236).t.pJAxgQ, obj11);
-    obj9[1] = tmp9(tmp4(4281).Text, obj10);
+    obj9[1] = tmp9(tmp4(4251).Text, obj10);
     tmp9Result = tmp9(tmp10, obj9);
   }
   const obj12 = { children: null };
@@ -134,7 +134,7 @@ export default function GetStartedScreen(onComplete) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ export default function GetStartedScreen(onComplete) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;
@@ -177,9 +177,9 @@ export default function GetStartedScreen(onComplete) {
   });
   const obj15 = { color: null };
   obj15[0] = importDefault(712).colors.WHITE;
-  obj14[4] = callback3(modalSessionId(7765).LinkExternalSmallIcon, obj15);
+  obj14[4] = callback3(modalSessionId(7737).LinkExternalSmallIcon, obj15);
   obj14[5] = loading;
-  obj13[1] = callback3(modalSessionId(4695).Button, obj14);
+  obj13[1] = callback3(modalSessionId(4665).Button, obj14);
   items4[1] = callback3(closure_5, obj13);
   obj8[1] = items4;
   items2[1] = callback4(closure_5, obj8);

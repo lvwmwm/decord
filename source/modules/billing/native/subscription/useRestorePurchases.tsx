@@ -1,10 +1,10 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 14321
+// Function ID: 14322
 // Name: useRestorePurchases
-// Dependencies: [5, 32, 19, 3, 6792, 2]
+// Dependencies: [5, 32, 19, 3, 6777, 2]
 // Exports: default
 
-// Module 14346 (useRestorePurchases)
+// Module 14321 (useRestorePurchases)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -38,7 +38,7 @@ export default function useRestorePurchases() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

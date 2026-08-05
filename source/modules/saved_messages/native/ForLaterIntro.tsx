@@ -1,10 +1,10 @@
-// Module ID: 12475
-// Function ID: 12476
+// Module ID: 12447
+// Function ID: 12448
 // Name: IntroDemo
-// Dependencies: [17, 5339, 21, 4285, 712, 8192, 12476, 4281, 1236, 12477, 10191, 4249, 5660, 2]
+// Dependencies: [17, 5324, 21, 4255, 712, 8164, 12448, 4251, 1236, 12449, 10162, 4219, 5645, 2]
 // Exports: default
 
-// Module 12475 (IntroDemo)
+// Module 12447 (IntroDemo)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ACTION_SHEET_BORDER_RADIUS } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import jsxProd from "jsxProd";
@@ -21,38 +21,38 @@ function IntroDemo(isReminder) {
   let obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   obj = { style: tmp.messages, children: null };
   obj = { source: null, style: null };
-  obj[0] = { uri: importDefault(12477) };
+  obj[0] = { uri: importDefault(12449) };
   obj[1] = tmp.avatar;
   const items = [callback(closure_3, obj), ];
   const obj2 = { style: tmp.messageLines, children: null };
   const obj3 = { variant: "text-sm/semibold", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl.string(require(1236) /* getSystemLocale */.t.cqpybK);
-  const items1 = [callback(require(4281) /* Text */.Text, obj3), , , ];
+  const items1 = [callback(require(4251) /* Text */.Text, obj3), , , ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl2.string(require(1236) /* getSystemLocale */.t["h+KPxy"]);
-  items1[1] = callback(require(4281) /* Text */.Text, obj4);
+  items1[1] = callback(require(4251) /* Text */.Text, obj4);
   const obj5 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[2] = intl3.string(require(1236) /* getSystemLocale */.t["63EVpI"]);
-  items1[2] = callback(require(4281) /* Text */.Text, obj5);
+  items1[2] = callback(require(4251) /* Text */.Text, obj5);
   const obj6 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj6[2] = intl4.string(require(1236) /* getSystemLocale */.t["KT/TDX"]);
-  items1[3] = callback(require(4281) /* Text */.Text, obj6);
+  items1[3] = callback(require(4251) /* Text */.Text, obj6);
   obj2[1] = items1;
   items[1] = callback2(closure_5, obj2);
   obj[1] = items;
   const items2 = [callback2(closure_5, obj), ];
   const obj7 = { style: tmp.sheet, children: null };
   const items3 = [callback(closure_5, { style: tmp.grabber }), , ];
-  const obj9 = { icon: require(10191) /* BookmarkIcon */.BookmarkIcon, label: null, highlighted: null };
+  const obj9 = { icon: require(10162) /* BookmarkIcon */.BookmarkIcon, label: null, highlighted: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj9[1] = intl5.string(require(1236) /* getSystemLocale */.t.tpxJto);
   obj9[2] = !isReminder;
   items3[1] = callback(SheetRow, obj9);
-  const obj10 = { icon: require(4249) /* ClockIcon */.ClockIcon, label: null, highlighted: null, hasArrow: true };
+  const obj10 = { icon: require(4219) /* ClockIcon */.ClockIcon, label: null, highlighted: null, hasArrow: true };
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj10[1] = intl6.string(require(1236) /* getSystemLocale */.t.mJ3P0N);
   obj10[2] = isReminder;
@@ -82,12 +82,12 @@ function SheetRow(hasArrow) {
   obj = { size: "sm", color: importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT };
   const items1 = [callback(icon, obj), , ];
   obj = { variant: "text-sm/medium", color: "text-default", style: tmp.sheetRowLabel, children: label };
-  items1[1] = callback(require(4281) /* Text */.Text, obj);
+  items1[1] = callback(require(4251) /* Text */.Text, obj);
   let tmp5Result = null;
   if (flag) {
     const obj1 = { size: "sm", color: null };
     obj1[1] = importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT;
-    tmp5Result = callback(require(5660) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj1);
+    tmp5Result = callback(require(5645) /* ChevronSmallRightIcon */.ChevronSmallRightIcon, obj1);
   }
   items1[2] = tmp5Result;
   obj[1] = items1;
@@ -126,24 +126,24 @@ const result = require("jsxProd").fileFinishedImporting("modules/saved_messages/
 
 export default function ForLaterIntro(type) {
   const tmp = callback3();
-  const tmp4 = type.type === require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER;
+  const tmp4 = type.type === require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER;
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   obj = { style: tmp.container, children: null };
-  obj = { source: importDefault(12476), style: tmp.upsellImage };
+  obj = { source: importDefault(12448), style: tmp.upsellImage };
   const items = [callback(closure_3, obj), , ];
   const obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const t = require(1236) /* getSystemLocale */.t;
   obj2[3] = intl.string(tmp4 ? t["5Iw19e"] : t["93WOd1"]);
-  const items1 = [callback(require(4281) /* Text */.Heading, obj2), ];
+  const items1 = [callback(require(4251) /* Text */.Heading, obj2), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: null };
   const intl2 = tmp2(1236).intl;
   const t2 = tmp2(1236).t;
   const intl3 = tmp2(1236).intl;
   const t3 = tmp2(1236).t;
   obj3[4] = intl2.format(tmp4 ? t2.YI4UjI : t2["5TSj/g"], { itemName: intl3.string(tmp4 ? t3.mJ3P0N : t3.tpxJto) });
-  items1[1] = callback(require(4281) /* Text */.Text, obj3);
+  items1[1] = callback(require(4251) /* Text */.Text, obj3);
   obj1[1] = items1;
   items[1] = closure_7(closure_5, obj1);
   items[2] = callback(IntroDemo, { isReminder: tmp4 });

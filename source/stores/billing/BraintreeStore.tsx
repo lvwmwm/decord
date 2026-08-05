@@ -1,9 +1,9 @@
-// Module ID: 3948
-// Function ID: 3949
+// Module ID: 3918
+// Function ID: 3919
 // Name: getClient
 // Dependencies: [676, 500, 530, 589, 709, 2]
 
-// Module 3948 (getClient)
+// Module 3918 (getClient)
 import ME from "ME";
 import set from "set";
 import { Store } from "initialize";

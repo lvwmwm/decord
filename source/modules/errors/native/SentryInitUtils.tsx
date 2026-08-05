@@ -1,7 +1,7 @@
 // Module ID: 1209
 // Function ID: 1210
 // Name: _maybeBackfillMissingBreadcrumbsFromTelemetryRing
-// Dependencies: [5, 17, 676, 505, 810, 3, 1210, 1222, 698, 13371, 6970, 6975, 13372, 1208, 1578, 6971, 500, 4265, 1577, 7055, 673, 4149, 2]
+// Dependencies: [5, 17, 676, 505, 810, 3, 1210, 1222, 698, 13343, 6955, 6960, 13344, 1208, 1578, 6956, 500, 4235, 1577, 7029, 673, 4119, 2]
 // Exports: initSentry
 
 // Module 1209 (_maybeBackfillMissingBreadcrumbsFromTelemetryRing)
@@ -33,7 +33,7 @@ function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -564,17 +564,17 @@ function trackCrash(event, hint, arg2) {
     tmp25(1208).markCrashHandled(event_id2);
     const tmp25Result = tmp25(1208);
   }
-  const AppCrashedReasons = tmp11(13371).AppCrashedReasons;
+  const AppCrashedReasons = tmp11(13343).AppCrashedReasons;
   const tmp19 = importDefault(698);
   const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  obj1 = { name: tmp11(6975).MetricEvents.APP_CRASHED, tags: null };
+  obj1 = { name: tmp11(6960).MetricEvents.APP_CRASHED, tags: null };
   const items = ["reason:" + tmp41, ];
   if (level == null) {
     level = "unknown";
   }
   items[1] = "level:" + level;
   obj1[1] = items;
-  tmp26(6970).increment(obj1, true);
+  tmp26(6955).increment(obj1, true);
 }
 ({ AnalyticEvents: closure_6, Endpoints } = ME);
 addBreadcrumb = addBreadcrumb.reactNavigationIntegration();
@@ -653,7 +653,7 @@ export const initSentry = function initSentry() {
           if (tmp16Result2.isAndroid()) {
             str2 = "android";
           }
-          obj = { tunnel: null, autoInitializeNativeSdk: false, beforeSend: null, dist: "6151", dsn: null, environment: null, tracesSampleRate: 0, sampleRate: 1, ignoreErrors: null, release: "discord_android@342.2.0-2+342202", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          obj = { tunnel: null, autoInitializeNativeSdk: false, beforeSend: null, dist: "6157", dsn: null, environment: null, tracesSampleRate: 0, sampleRate: 1, ignoreErrors: null, release: "discord_android@342.3.0-2+342203", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           obj[0] = `/error-reporting-proxy/${str2}`;
           obj[2] = closure_16;
           obj[4] = SentryStaffDsn;
@@ -691,7 +691,7 @@ export const initSentry = function initSentry() {
           };
           tmp16Result1.init(obj);
           const tmp16Result4 = callback(tmp[4]);
-          callback(tmp[4]).setTag("buildNumber", "6151");
+          callback(tmp[4]).setTag("buildNumber", "6157");
           const tmp16Result5 = callback(tmp[4]);
           callback(tmp[4]).setTag("appVersion", constants.Version);
           const tmp16Result6 = callback(tmp[4]);

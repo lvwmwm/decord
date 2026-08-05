@@ -1,9 +1,9 @@
-// Module ID: 4520
-// Function ID: 4521
+// Module ID: 4490
+// Function ID: 4491
 // Name: handleSubscribeFailure
-// Dependencies: [4184, 589, 709, 2]
+// Dependencies: [4154, 589, 709, 2]
 
-// Module 4520 (handleSubscribeFailure)
+// Module 4490 (handleSubscribeFailure)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -42,10 +42,10 @@ const premiumPaymentModalStore = new PremiumPaymentModalStore(require("dispatche
   PREMIUM_PAYMENT_UPDATE_SUCCESS: handleClearError,
   PREMIUM_PAYMENT_ERROR_CLEAR: handleClearError,
   BRAINTREE_TOKENIZE_PAYPAL_FAIL: function handlePayPalTokenizeFailure(message) {
-    const billingError = new require(4184) /* V6OrEarlierAPIError */.BillingError(message.message);
+    const billingError = new require(4154) /* V6OrEarlierAPIError */.BillingError(message.message);
   },
   BRAINTREE_TOKENIZE_VENMO_FAIL: function handleVenmoTokenizeFailure(message) {
-    const billingError = new require(4184) /* V6OrEarlierAPIError */.BillingError(message.message);
+    const billingError = new require(4154) /* V6OrEarlierAPIError */.BillingError(message.message);
   },
   SKU_PURCHASE_SUCCESS: function handleSKUPurchaseSuccess(arg0) {
     let c3;

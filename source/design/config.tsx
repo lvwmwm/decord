@@ -1,10 +1,10 @@
-// Module ID: 5728
-// Function ID: 5729
+// Module ID: 5713
+// Function ID: 5714
 // Name: designConfig
 // Dependencies: [2]
 // Exports: setDesignConfig
 
-// Module 5728 (designConfig)
+// Module 5713 (designConfig)
 const obj = {
   getDefaultLinkInterceptor() {
 

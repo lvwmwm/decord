@@ -1,10 +1,10 @@
-// Module ID: 9886
-// Function ID: 9887
+// Module ID: 9857
+// Function ID: 9858
 // Name: STICKER_SIZE
-// Dependencies: [32, 19, 17, 1874, 3961, 9842, 1338, 21, 4285, 500, 3958, 4254, 4255, 4619, 5861, 4951, 9764, 9887, 1208, 4812, 2]
+// Dependencies: [32, 19, 17, 1874, 3931, 9813, 1338, 21, 4255, 500, 3928, 4224, 4225, 4589, 5846, 4936, 9735, 9858, 1208, 4797, 2]
 // Exports: default
 
-// Module 9886 (STICKER_SIZE)
+// Module 9857 (STICKER_SIZE)
 import _slicedToArray from "_slicedToArray";
 import "PressableBase";
 import { View } from "__INTERNAL_VIEW_CONFIG";
@@ -72,7 +72,7 @@ export default function StickerPickerListRow(stickers) {
   }
   const tmp6 = callback2();
   c6 = tmp6;
-  let AnimateStickers = stickers(3958).AnimateStickers;
+  let AnimateStickers = stickers(3928).AnimateStickers;
   closure_7 = AnimateStickers.useSetting();
   items = [];
   if (nativeRow) {
@@ -89,7 +89,7 @@ export default function StickerPickerListRow(stickers) {
           ({ id: obj4[0], name: obj4[1], format_type: obj4[2] } = tmp12);
           let tmp20 = stickers;
           let tmp21 = dependencyMap;
-          let obj4 = stickers(9764);
+          let obj4 = stickers(9735);
           let tmp22 = closure_7;
           obj[3] = obj4.getStickerAssetUrl(tmp12, closure_7, first);
           obj[4] = first;
@@ -101,7 +101,7 @@ export default function StickerPickerListRow(stickers) {
           obj = { stickerId: null, stickerName: "", stickerType: null, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false };
           let tmp14 = stickers;
           tmp15 = dependencyMap;
-          obj[2] = stickers(4951).StickerFormat.PNG;
+          obj[2] = stickers(4936).StickerFormat.PNG;
           arr = items.push(obj);
         }
         num5 = num5 + 1;
@@ -135,7 +135,7 @@ export default function StickerPickerListRow(stickers) {
           handleOnLongPressSticker(found);
         }
       };
-      return items(importDefault(9887), obj1);
+      return items(importDefault(9858), obj1);
     } catch (tmp28) {
       const obj3 = { message: "Error in StickerPickerListRowNativeComponent", category: "sticker", data: null };
       obj4 = { itemLength: null, items: null };

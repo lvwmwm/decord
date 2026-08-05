@@ -1,10 +1,10 @@
-// Module ID: 4683
-// Function ID: 4684
+// Module ID: 4653
+// Function ID: 4654
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4285, 712, 1236, 3997, 1581, 4129, 4146, 4684, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 1236, 3967, 1581, 4099, 4116, 4654, 2]
 // Exports: Backdrop
 
-// Module 4683 (Backdrop)
+// Module 4653 (Backdrop)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -52,7 +52,7 @@ export const Backdrop = function Backdrop(animatedProps) {
   }
   backgroundColor2 = undefined;
   let backgroundColor = createCacheKey();
-  let obj = backgroundColor2(3997);
+  let obj = backgroundColor2(3967);
   backgroundColor2 = backgroundColor.backdrop.backgroundColor;
   const items = [backgroundColor2];
   obj = { onPress: onDismiss, "aria-hidden": true };
@@ -99,6 +99,6 @@ export const Backdrop = function Backdrop(animatedProps) {
     obj5.style = items4;
     items3[1] = tmp8(tmp9, obj5);
     obj[3] = items3;
-    return closure_6(importDefault(4146).View, obj);
+    return closure_6(importDefault(4116).View, obj);
   }
 };

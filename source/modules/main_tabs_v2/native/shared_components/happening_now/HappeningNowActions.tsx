@@ -1,10 +1,10 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15099
+// Function ID: 15100
 // Name: HappeningNowCardCreateChannel
-// Dependencies: [19, 17, 1932, 1862, 1931, 14430, 676, 21, 4285, 712, 698, 8918, 15120, 1236, 8943, 15121, 8987, 15122, 11592, 12036, 14431, 4281, 2]
+// Dependencies: [19, 17, 1932, 1862, 1931, 14405, 676, 21, 4255, 712, 698, 8890, 15100, 1236, 8915, 15101, 8959, 15102, 11564, 12008, 14406, 4251, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 15119 (HappeningNowCardCreateChannel)
+// Module 15099 (HappeningNowCardCreateChannel)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import comparator from "comparator";
@@ -48,9 +48,9 @@ let closure_15 = importAllResult.memo((panelVariant) => {
   let obj = { onPress, style: tmp.actionCard, width: "medium", panelVariant: flag, children: null };
   obj = { style: tmp.actionCardImage, children: null };
   obj[1] = callback(closure_5, { source: imageSource });
-  const items = [callback(closure_4, obj), callback(require(4281) /* Text */.Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2, children: text })];
+  const items = [callback(closure_4, obj), callback(require(4251) /* Text */.Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2, children: text })];
   obj[4] = items;
-  return callback2(importDefault(14431), obj);
+  return callback2(importDefault(14406), obj);
 });
 let result = require("comparator").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowActions.tsx");
 
@@ -68,7 +68,7 @@ export const HappeningNowCardCreateChannel = function HappeningNowCardCreateChan
     obj.track(outer1_10.ACTIVITY_CARD_CLICKED, obj);
     outer1_1(outer1_2[11]).open(null, guildId, null, null);
   }, items);
-  obj[0] = importDefault(15120);
+  obj[0] = importDefault(15100);
   obj[1] = callback;
   const intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t["fUYU+j"]);
@@ -89,7 +89,7 @@ export const HappeningNowCardCustomizeGuild = function HappeningNowCardCustomize
     obj.track(outer1_10.ACTIVITY_CARD_CLICKED, obj);
     outer1_1(outer1_2[14]).open(guildId);
   }, items);
-  obj[1] = importDefault(15121);
+  obj[1] = importDefault(15101);
   obj[2] = callback;
   obj[3] = flag;
   return callback(closure_15, obj);
@@ -116,7 +116,7 @@ export const HappeningNowCardInvite = function HappeningNowCardInvite(guildId) {
       const result = obj3.handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.SERVER_PROFILE);
     }
   }, items);
-  obj[0] = importDefault(15122);
+  obj[0] = importDefault(15102);
   obj[1] = callback;
   const intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t.VINpSK);
@@ -147,7 +147,7 @@ export const HappeningNowStudentHubAddServer = function HappeningNowStudentHubAd
       const obj3 = outer1_1(outer1_2[18]);
     }
   }, items);
-  obj[0] = importDefault(12036);
+  obj[0] = importDefault(12008);
   obj[1] = callback;
   const intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t.emRpdS);

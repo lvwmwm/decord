@@ -1,9 +1,9 @@
-// Module ID: 16217
-// Function ID: 16218
+// Module ID: 16198
+// Function ID: 16199
 // Name: IdGenerator
 // Dependencies: [2, 510]
 
-// Module 16217 (IdGenerator)
+// Module 16198 (IdGenerator)
 const result = require("set").fileFinishedImporting("lib/IdGenerator.tsx");
 
 export const IdGenerator = require("generate").IdGenerator;

@@ -1,10 +1,10 @@
-// Module ID: 12220
-// Function ID: 12221
+// Module ID: 12192
+// Function ID: 12193
 // Name: getActivityChannelId
-// Dependencies: [1376, 1372, 4301, 2]
+// Dependencies: [1376, 1372, 4271, 2]
 // Exports: default
 
-// Module 12220 (getActivityChannelId)
+// Module 12192 (getActivityChannelId)
 import { isTextChannel } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateVoiceState from "updateVoiceState";

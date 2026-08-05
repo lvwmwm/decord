@@ -1,10 +1,10 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9869
+// Function ID: 9870
 // Name: EmptyStateSticker
-// Dependencies: [32, 19, 17, 5187, 3961, 676, 1876, 21, 4285, 9872, 9764, 5610, 5630, 589, 698, 4281, 1236, 4812, 4254, 4255, 4695, 5236, 8622, 9892, 2]
+// Dependencies: [32, 19, 17, 5172, 3931, 676, 1876, 21, 4255, 9843, 9735, 5595, 5615, 589, 698, 4251, 1236, 4797, 4224, 4225, 4665, 5221, 8594, 9863, 2]
 // Exports: default
 
-// Module 9898 (EmptyStateSticker)
+// Module 9869 (EmptyStateSticker)
 import _slicedToArray from "_slicedToArray";
 import IMPACT_LIGHT from "IMPACT_LIGHT";
 import { View } from "PressableBase";
@@ -22,14 +22,14 @@ let unpackModuleId;
 let require = arg1;
 function EmptyStateSticker(sticker) {
   sticker = sticker.sticker;
-  const animated = require(9872) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
+  const animated = require(9843) /* useStickerPackCategories */.useShouldAnimateSticker(sticker.isFocused);
   let id;
-  const obj = require(9872) /* useStickerPackCategories */;
+  const obj = require(9843) /* useStickerPackCategories */;
   const tmp2 = closure_11;
   if (sticker != null) {
     id = sticker.id;
   }
-  return tmp2(importDefault(9764), { sticker, size: 60, animated }, id);
+  return tmp2(importDefault(9735), { sticker, size: 60, animated }, id);
 }
 ({ AnalyticEvents: metroImportAll, AnalyticsSections: c9 } = ME);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -41,16 +41,16 @@ export default function _default() {
   let dependencyMap;
   let tmp = callback4();
   const require = tmp;
-  let obj = require(9872) /* useStickerPackCategories */;
+  let obj = require(9843) /* useStickerPackCategories */;
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5610)(analyticsLocations(5630).EMPTY_STATE).analyticsLocations;
+  analyticsLocations = analyticsLocations(5595)(analyticsLocations(5615).EMPTY_STATE).analyticsLocations;
   let obj1 = require(589) /* initialize */;
   const items = [loadSavedGuildStickers];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
     const mapped = closure_7.map((arg0) => stickerById.getStickerById(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
-  const tmp3 = analyticsLocations(5610);
+  const tmp3 = analyticsLocations(5595);
   [dependencyMap, _slicedToArray] = callback(React.useState(null), 2);
   const items1 = [analyticsLocations];
   const effect = React.useEffect(() => {
@@ -63,11 +63,11 @@ export default function _default() {
   obj = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.HEm04J);
-  const items2 = [callback2(require(4281) /* Text */.Text, obj), , , ];
+  const items2 = [callback2(require(4251) /* Text */.Text, obj), , , ];
   obj1 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.FnNud4);
-  items2[1] = callback2(require(4281) /* Text */.Text, obj1);
+  items2[1] = callback2(require(4251) /* Text */.Text, obj1);
   const tmp4 = callback(React.useState(null), 2);
   items2[2] = callback2(View, {
     style: tmp.stickersRow,
@@ -118,15 +118,15 @@ export default function _default() {
       return tmp(tmp(outer1_2[17]).PressableOpacity, obj, id);
     })
   };
-  obj5[0] = analyticsLocations(8622);
+  obj5[0] = analyticsLocations(8594);
   obj5[1] = tmp.nitroWheel;
-  obj4[0] = callback2(analyticsLocations(5236), obj5);
+  obj4[0] = callback2(analyticsLocations(5221), obj5);
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj4[1] = intl3.string(require(1236) /* getSystemLocale */.t.pj0XBN);
   obj4[4] = function onPress() {
     return analyticsLocations(table[23])({ section: constants.EXPRESSION_PICKER });
   };
-  obj3[1] = callback2(require(4695) /* Button */.Button, obj4);
+  obj3[1] = callback2(require(4665) /* Button */.Button, obj4);
   items2[3] = callback2(View, obj3);
   obj[0] = items2;
   return callback3(View, obj);

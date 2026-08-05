@@ -1,10 +1,10 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 6986
+// Function ID: 6987
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4306, 676, 589, 687, 7003, 2]
+// Dependencies: [5, 19, 4276, 676, 589, 687, 6987, 2]
 // Exports: useGames
 
-// Module 7002 (importDefaultResult1)
+// Module 6986 (importDefaultResult1)
 import noop from "noop";
 import importDefaultResult1 from "handleLoadMessages";
 import initialize from "initialize";
@@ -14,14 +14,14 @@ const require = arg1;
 initialize = {
   getQueryId: require("ME").QueryIds.GAME,
   failureStaleAfter: 15 * require("set").Seconds.SECOND,
-  get(gameId) {
-    if (null == gameId) {
+  get(closure_0) {
+    if (null == closure_0) {
       return null;
     } else {
-      if (importDefaultResult1.hasNoData(gameId)) {
+      if (importDefaultResult1.hasNoData(closure_0)) {
         let NO_DATA = require(589) /* initialize */.NO_DATA;
       } else {
-        NO_DATA = obj.getGame(gameId);
+        NO_DATA = obj.getGame(closure_0);
         if (NO_DATA == null) {
           NO_DATA = null;
         }
@@ -49,7 +49,7 @@ let closure_2 = require("set")((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let closure_2 = require("set")((arg0) => {
           return obj;
         }
         table = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       } catch (tmp9) {
         table = tmp;
         throw tmp9;
@@ -107,11 +107,11 @@ initialize[4] = function getIsLoading(arg0) {
   }
   return isFetchingResult;
 };
-initialize[5] = function getError(gameId) {
+initialize[5] = function getError(closure_0) {
   let error = null;
-  if (null != gameId) {
+  if (null != closure_0) {
     error = null;
-    if (importDefaultResult1.didFetchingFail(gameId)) {
+    if (importDefaultResult1.didFetchingFail(closure_0)) {
       const _Error = Error;
       error = new Error("Failed to fetch game data");
     }

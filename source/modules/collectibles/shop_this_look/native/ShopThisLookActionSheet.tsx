@@ -1,10 +1,10 @@
-// Module ID: 12411
-// Function ID: 12412
+// Module ID: 12383
+// Function ID: 12384
 // Name: ShopThisLookCard
-// Dependencies: [19, 17, 8738, 5339, 21, 4285, 712, 12412, 589, 9273, 12416, 10020, 8734, 12388, 5610, 5630, 4253, 6909, 9386, 1236, 4281, 2]
+// Dependencies: [19, 17, 8710, 5324, 21, 4255, 712, 12384, 589, 9244, 12388, 9991, 8706, 12360, 5595, 5615, 4223, 6894, 9357, 1236, 4251, 2]
 // Exports: default
 
-// Module 12411 (ShopThisLookCard)
+// Module 12383 (ShopThisLookCard)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "openCollectiblesShop";
 import getFetchState from "getFetchState";
@@ -20,7 +20,7 @@ const require = arg1;
 function ShopThisLookCard(skuId) {
   skuId = skuId.skuId;
   const size = skuId.size;
-  let obj = skuId(12412);
+  let obj = skuId(12384);
   let obj1 = skuId(589);
   const items = [getFetchState];
   const items1 = [skuId];
@@ -39,7 +39,7 @@ function ShopThisLookCard(skuId) {
     obj[1] = function renderPreview() {
       return callback(closure_4, {});
     };
-    let tmp13 = callback(importDefault(9273), obj);
+    let tmp13 = callback(importDefault(9244), obj);
   } else {
     tmp13 = null;
     if (null != stateFromStores) {
@@ -48,17 +48,17 @@ function ShopThisLookCard(skuId) {
         obj[0] = stateFromStores;
         obj[1] = size;
         obj[2] = skuId.onPress;
-        let tmp5Result = tmp5(importDefault(10020), obj);
+        let tmp5Result = tmp5(importDefault(9991), obj);
       } else {
         obj1 = { style: null, children: null };
         obj1[0] = tmp.disabledCard;
         const obj2 = { sku: null, size: null };
         obj2[0] = stateFromStores;
         obj2[1] = size;
-        obj1[1] = tmp5(importDefault(10020), obj2);
+        obj1[1] = tmp5(importDefault(9991), obj2);
         tmp5Result = tmp5(closure_5, obj1);
       }
-      tmp2Result = skuId(12416);
+      tmp2Result = skuId(12388);
     }
   }
   return tmp13;
@@ -87,29 +87,29 @@ export default function ShopThisLookActionSheet(arg0) {
   let dependencyMap;
   ({ userId, guildId } = arg0);
   const tmp = createCacheKey();
-  let obj = _require(8734);
+  let obj = _require(8706);
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12388)(obj));
-  const tmp2 = analyticsLocations(12388)(obj);
-  analyticsLocations = analyticsLocations(5610)(analyticsLocations(5630).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12360)(obj));
+  const tmp2 = analyticsLocations(12360)(obj);
+  analyticsLocations = analyticsLocations(5595)(analyticsLocations(5615).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = React.useCallback((initialProductSkuId) => {
-    let obj = analyticsLocations(4253);
+    let obj = analyticsLocations(4223);
     obj.hideActionSheet();
-    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(5630).USER_PROFILE_OVERFLOW_MENU };
-    const result = _undefined(6909).openCollectiblesShopMobile(obj);
+    obj = { initialProductSkuId, analyticsLocations, analyticsSource: analyticsLocations(5615).USER_PROFILE_OVERFLOW_MENU };
+    const result = _undefined(6894).openCollectiblesShopMobile(obj);
   }, items);
   obj = { startExpanded: true, title: null, children: null };
-  const tmp3 = analyticsLocations(5610);
+  const tmp3 = analyticsLocations(5595);
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.xNdRDO);
   const obj1 = { style: tmp.container, children: null };
   const obj2 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: null };
   const intl2 = _require(1236).intl;
   obj2[3] = intl2.string(_require(1236).t["ws+0Lr"]);
-  const items1 = [callback(_require(4281).Text, obj2), ];
-  const tmp4 = analyticsLocations(9386);
+  const items1 = [callback(_require(4251).Text, obj2), ];
+  const tmp4 = analyticsLocations(9357);
   const items2 = [tmp.itemsContainer, { gap, width: rowWidth }];
   items1[1] = callback(closure_5, {
     style: items2,

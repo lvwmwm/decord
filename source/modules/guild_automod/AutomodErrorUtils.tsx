@@ -1,10 +1,10 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7217
+// Function ID: 7218
 // Name: getAutomodErrorMessageFromErrorResponse
-// Dependencies: [1372, 676, 1236, 7213, 2]
+// Dependencies: [1372, 676, 1236, 7187, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 7245 (getAutomodErrorMessageFromErrorResponse)
+// Module 7217 (getAutomodErrorMessageFromErrorResponse)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AbortCodes } from "ME";
 import set from "getSystemLocale";

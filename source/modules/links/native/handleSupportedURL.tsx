@@ -1,10 +1,10 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13076
+// Function ID: 13077
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7680, 6894, 6794, 12593, 1218, 676, 1379, 4349, 4497, 10650, 6906, 4268, 13105, 11191, 7892, 11943, 4490, 4137, 13106, 8705, 5925, 9251, 11105, 1844, 10327, 698, 10329, 5775, 10972, 11233, 13113, 11975, 10852, 1959, 10889, 10888, 13115, 13117, 1577, 4827, 13122, 3982, 13124, 1862, 5866, 8862, 8871, 5840, 4489, 10773, 4136, 5140, 1222, 709, 5090, 1467, 8943, 13127, 13142, 500, 13153, 8987, 13160, 4604, 13161, 6909, 5630, 9135, 7097, 5133, 11080, 9949, 13233, 5118, 10511, 9200, 9194, 4251, 2]
+// Dependencies: [109, 5, 7652, 6879, 6779, 12565, 1218, 676, 1379, 4319, 4467, 10622, 6891, 4238, 13077, 11163, 7864, 11915, 4460, 4107, 13078, 8677, 5910, 9222, 11077, 1844, 10299, 698, 10301, 5760, 10944, 11205, 13085, 11947, 10824, 1959, 10861, 10860, 13087, 13089, 1577, 4812, 13094, 3952, 13096, 1862, 5851, 8834, 8843, 5825, 4459, 10745, 4106, 5125, 1222, 709, 5075, 1467, 8915, 13099, 13114, 500, 13125, 8959, 13132, 4574, 13133, 6894, 5615, 9107, 7071, 5118, 11052, 9920, 13205, 5103, 10483, 9172, 9166, 4221, 2]
 // Exports: default
 
-// Module 13104 (handleSupportedURL)
+// Module 13076 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "\u{1F9DB}\u{1F3FE}" };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };
@@ -386,7 +386,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } else {
               try {
@@ -461,7 +461,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj2.openGuildEventDetails(obj4);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               } catch (tmp35) {
                 c4 = tmp;
@@ -493,7 +493,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } else {
               try {
@@ -555,7 +555,7 @@ export default function handleSupportedURL(payload) {
                   obj3.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               } catch (tmp37) {
                 c2 = tmp;
                 throw tmp37;
@@ -615,7 +615,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } else {
               try {
@@ -801,7 +801,7 @@ export default function handleSupportedURL(payload) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     }
                   } else {
                     try {

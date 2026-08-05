@@ -1,10 +1,10 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11480
+// Function ID: 11481
 // Name: ImageInput
-// Dependencies: [19, 17, 1372, 4621, 7208, 1877, 21, 4285, 712, 11509, 1236, 7140, 4812, 1297, 8559, 8168, 4253, 11510, 1959, 7577, 7777, 4245, 11513, 2]
+// Dependencies: [19, 17, 1372, 4591, 7182, 1877, 21, 4255, 712, 11481, 1236, 7114, 4797, 1297, 8531, 8140, 4223, 11482, 1959, 7549, 7749, 4215, 11485, 2]
 // Exports: default
 
-// Module 11508 (ImageInput)
+// Module 11480 (ImageInput)
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "ImageInputAnswerActionSheet";
 import ensureGuildLoaded from "ensureGuildLoaded";

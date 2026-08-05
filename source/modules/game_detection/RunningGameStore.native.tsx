@@ -1,10 +1,10 @@
-// Module ID: 4305
-// Function ID: 4306
+// Module ID: 4275
+// Function ID: 4276
 // Name: initialize
-// Dependencies: [4306, 4317, 4320, 4331, 589, 709, 2]
+// Dependencies: [4276, 4287, 4290, 4301, 589, 709, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
-// Module 4305 (initialize)
+// Module 4275 (initialize)
 import handleLoadMessages from "handleLoadMessages";
 import gameFromServer from "gameFromServer";
 import setLibraryApplications from "setLibraryApplications";
@@ -134,7 +134,7 @@ export const getRawOverlayGameStatus = function getRawOverlayGameStatus() {
   if (arg1 === undefined) {
     const items = [gameFromServer, setLibraryApplications, handleLoadMessages];
   }
-  return { source: require(4331) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4331) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
+  return { source: require(4301) /* DevToolsFocusedPidsTrackMode */.OverlayGameStatusSource.UNKNOWN, enabledOOP: false, enabledLegacy: false, overlayMethod: require(4301) /* DevToolsFocusedPidsTrackMode */.OverlayMethod.Disabled, reason: "Dummy implementation" };
 };
 export function isDetectionEnabled() {
   return false;

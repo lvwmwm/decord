@@ -1,9 +1,9 @@
-// Module ID: 8302
-// Function ID: 8303
+// Module ID: 8274
+// Function ID: 8275
 // Name: set
-// Dependencies: [2, 8303]
+// Dependencies: [2, 8275]
 
-// Module 8302 (set)
+// Module 8274 (set)
 const result = require("set").fileFinishedImporting("hooks/useStableCallback.tsx");
 
 export { default } from "useStableCallback";

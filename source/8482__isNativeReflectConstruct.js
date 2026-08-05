@@ -1,15 +1,17 @@
 // Module ID: 8482
 // Function ID: 8483
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8453, 8476]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8424, 8483, 8433]
 
 // Module 8482 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeConvolveMatrix = arg1;
+const Line = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeConvolveMatrix {
+class Line {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeConvolveMatrix);
+    tmp = _isNativeReflectConstruct(this, Line);
     tmp2 = __esModule;
-    obj = __esModule(FeConvolveMatrix);
+    obj = __esModule(Line);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +51,41 @@ class FeConvolveMatrix {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeConvolveMatrix, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeConvolveMatrix(8453).warnUnimplementedFilter();
-    return null;
+require("_inherits")(Line, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      let x1;
+      let x2;
+      let y1;
+      let y2;
+      const self = this;
+      const props = this.props;
+      let obj = {};
+      ({ x1, y1, x2, y2 } = props);
+      const merged = Object.assign(self(8424).extract(this, props));
+      obj.x1 = x1;
+      obj.y1 = y1;
+      obj.x2 = x2;
+      obj.y2 = y2;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const obj2 = self(8424);
+      const merged1 = Object.assign(obj);
+      return jsx(importDefault(8483), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeConvolveMatrix, items);
-importDefaultResultResult.displayName = "FeConvolveMatrix";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(Line, items);
+importDefaultResultResult.displayName = "Line";
+importDefaultResultResult.defaultProps = { x1: 0, y1: 0, x2: 0, y2: 0 };
 
 export default importDefaultResultResult;

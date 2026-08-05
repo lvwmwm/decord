@@ -1,10 +1,10 @@
-// Module ID: 8946
-// Function ID: 8947
+// Module ID: 8918
+// Function ID: 8919
 // Name: canUseMobileServerTagSettings
-// Dependencies: [1862, 3913, 676, 8947, 8076, 2]
+// Dependencies: [1862, 3883, 676, 8919, 8048, 2]
 // Exports: canUseMobileServerTagSettings, canViewMobileServerTag, isServerTagDraftDirty
 
-// Module 8946 (canUseMobileServerTagSettings)
+// Module 8918 (canUseMobileServerTagSettings)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "ME";
@@ -20,7 +20,7 @@ export const canUseMobileServerTagSettings = function canUseMobileServerTagSetti
     enabled = getUncachedChannelPermissions.can(Permissions.MANAGE_GUILD, guild);
   }
   if (enabled) {
-    let obj = importDefault(8947);
+    let obj = importDefault(8919);
     obj = { location: null };
     obj[0] = GuildSettingsServerTag;
     enabled = obj.getConfig(obj).enabled;
@@ -31,18 +31,18 @@ export const canViewMobileServerTag = function canViewMobileServerTag(id) {
   const guild = store.getGuild(id);
   let enabled = null != guild;
   if (enabled) {
-    let obj = require(8076) /* guildHasTag */;
+    let obj = require(8048) /* guildHasTag */;
     enabled = obj.guildSupportsTags(guild);
   }
   if (enabled) {
-    enabled = require(8076) /* guildHasTag */.guildHasTag(guild);
-    const obj2 = require(8076) /* guildHasTag */;
+    enabled = require(8048) /* guildHasTag */.guildHasTag(guild);
+    const obj2 = require(8048) /* guildHasTag */;
   }
   if (enabled) {
     obj = { location: null };
     obj[0] = GuildSettingsServerTag;
-    enabled = importDefault(8947).getConfig(obj).enabled;
-    const obj3 = importDefault(8947);
+    enabled = importDefault(8919).getConfig(obj).enabled;
+    const obj3 = importDefault(8919);
   }
   return enabled;
 };

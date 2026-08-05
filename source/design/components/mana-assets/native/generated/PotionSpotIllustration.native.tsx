@@ -1,10 +1,10 @@
-// Module ID: 6543
-// Function ID: 6544
+// Module ID: 6528
+// Function ID: 6529
 // Name: PotionSpotIllustration
-// Dependencies: [21, 5236, 6544, 2]
+// Dependencies: [21, 5221, 6529, 2]
 // Exports: PotionSpotIllustration
 
-// Module 6543 (PotionSpotIllustration)
+// Module 6528 (PotionSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PotionSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const PotionSpotIllustration = function PotionSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6544);
+  obj[0] = importDefault(6529);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PotionSpotIllustration = function PotionSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

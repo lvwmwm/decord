@@ -1,9 +1,9 @@
-// Module ID: 16403
-// Function ID: 16404
+// Module ID: 16384
+// Function ID: 16385
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1874, 676, 1577, 4265, 500, 5229, 16404, 16405, 3964, 16406, 16409, 530, 698, 1208, 16413, 16414, 2]
+// Dependencies: [5, 1874, 676, 1577, 4235, 500, 5214, 16385, 16386, 3934, 16387, 16390, 530, 698, 1208, 16394, 16395, 2]
 
-// Module 16403 (onPostConnectionOpen)
+// Module 16384 (onPostConnectionOpen)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticEvents } from "ME";
@@ -39,7 +39,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -138,7 +138,7 @@ prototype["performAgeCheck"] = function performAgeCheck() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -172,7 +172,7 @@ prototype["performAgeCheck"] = function performAgeCheck() {
               } else {
                 should_block = 0;
                 constants = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } else {
               tmp58Result = tmp58(tmp59[11]);

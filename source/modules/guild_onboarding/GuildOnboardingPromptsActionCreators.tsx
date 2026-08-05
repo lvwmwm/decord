@@ -1,10 +1,10 @@
-// Module ID: 5209
-// Function ID: 5210
+// Module ID: 5194
+// Function ID: 5195
 // Name: fetchOnboardingPrompts
-// Dependencies: [5, 1218, 1942, 1862, 5210, 5211, 676, 3901, 698, 4479, 709, 530, 1384, 2]
+// Dependencies: [5, 1218, 1942, 1862, 5195, 5196, 676, 3871, 698, 4449, 709, 530, 1384, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 5209 (fetchOnboardingPrompts)
+// Module 5194 (fetchOnboardingPrompts)
 import serverPromptToClientPrompt from "serverPromptToClientPrompt";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -59,7 +59,7 @@ function _maybeFetchOnboardingPrompts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -166,14 +166,14 @@ function startOnboarding(guildId) {
 function _trackOnboardingDirectJoin(guildId) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
   obj.step = c16;
   obj.required = true;
   obj.track(constants.GUILD_ONBOARDING_STEP_VIEWED, obj);
-  const obj3 = require(4479) /* collectGuildAnalyticsMetadata */;
+  const obj3 = require(4449) /* collectGuildAnalyticsMetadata */;
   obj = {};
   const obj4 = importDefault(698);
-  const merged1 = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const merged1 = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
   obj.step = c16;
   obj.skipped = false;
   obj.is_final_step = true;
@@ -187,7 +187,7 @@ const result = require("trackCommunicationDisabled").fileFinishedImporting("modu
 export const loadOnboardingPrompts = function loadOnboardingPrompts(guildId) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  const merged = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
   obj.has_new_prompts = false;
   obj.number_of_prompts = 0;
   obj.track(constants.GUILD_ONBOARDING_LOADED, obj);

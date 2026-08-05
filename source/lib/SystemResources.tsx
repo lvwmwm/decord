@@ -1,9 +1,9 @@
-// Module ID: 7128
-// Function ID: 7129
+// Module ID: 7102
+// Function ID: 7103
 // Name: getStats
-// Dependencies: [5, 7122, 7055, 7129, 2]
+// Dependencies: [5, 7096, 7029, 7103, 2]
 
-// Module 7128 (getStats)
+// Module 7102 (getStats)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -29,7 +29,7 @@ prototype["getStats"] = function getStats() {
   const report = cpuHistogram.getReport();
   const memoryHistogram = this.memoryHistogram;
   const report1 = memoryHistogram.getReport();
-  let obj = importDefault(7055);
+  let obj = importDefault(7029);
   const cumulativeCPUUsage = obj.getCumulativeCPUUsage();
   let result;
   if (null != this.startCPU) {
@@ -52,10 +52,10 @@ prototype["getStats"] = function getStats() {
 };
 prototype["takeSample"] = function takeSample() {
   const self = this;
-  const cumulativeCPUUsage = importDefault(7055).getCumulativeCPUUsage();
-  const obj = importDefault(7055);
+  const cumulativeCPUUsage = importDefault(7029).getCumulativeCPUUsage();
+  const obj = importDefault(7029);
   const tmp = importDefault;
-  const currentMemoryUsageKB = importDefault(7055).getCurrentMemoryUsageKB();
+  const currentMemoryUsageKB = importDefault(7029).getCurrentMemoryUsageKB();
   if (null != cumulativeCPUUsage) {
     let flag = true;
     if (null != self.lastCPU) {
@@ -71,12 +71,12 @@ prototype["takeSample"] = function takeSample() {
       self.lastCPU = cumulativeCPUUsage;
     }
   } else {
-    const currentCPUUsagePercent = tmp(7055).getCurrentCPUUsagePercent();
+    const currentCPUUsagePercent = tmp(7029).getCurrentCPUUsagePercent();
     if (null != currentCPUUsagePercent) {
       const cpuHistogram2 = self.cpuHistogram;
       cpuHistogram2.addSample(currentCPUUsagePercent);
     }
-    const tmpResult = tmp(7055);
+    const tmpResult = tmp(7029);
   }
   if (null != currentMemoryUsageKB) {
     const memoryHistogram = self.memoryHistogram;
@@ -96,7 +96,7 @@ prototype["getCurrentBattery"] = function getCurrentBattery() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ prototype["setLastBattery"] = function setLastBattery() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -198,7 +198,7 @@ prototype["setLastBattery"] = function setLastBattery() {
         } else {
           closure_0.lastBattery = arg1;
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp7) {
         c2 = tmp;
@@ -221,7 +221,7 @@ prototype["getBatteryLevelStats"] = function getBatteryLevelStats() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

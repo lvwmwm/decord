@@ -1,10 +1,10 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 11897
+// Function ID: 11898
 // Name: _fetchWelcomeScreen
 // Dependencies: [5, 676, 709, 530, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 11925 (_fetchWelcomeScreen)
+// Module 11897 (_fetchWelcomeScreen)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -27,7 +27,7 @@ function _fetchWelcomeScreen() {
       c4 = 0;
       let obj4 = lib(709);
       obj4.dispatch({ type: "WELCOME_SCREEN_FETCH_FAIL" });
-      lib = yield "HermesInternal";
+      lib = yield "T";
       const obj = lib(709);
       obj4 = { type: "WELCOME_SCREEN_FETCH_SUCCESS", guildId: null, welcomeScreen: null };
       obj4[1] = callback;

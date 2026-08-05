@@ -1,8 +1,8 @@
-// Module ID: 15336
-// Function ID: 15337
-// Dependencies: [19, 1218, 4961, 1372, 7017, 3922, 1874, 676, 21, 4285, 712, 15291, 589, 8955, 1236, 15293, 4293, 9585, 15337, 9582, 1297, 5236, 2]
+// Module ID: 15317
+// Function ID: 15318
+// Dependencies: [19, 1218, 4946, 1372, 6991, 3892, 1874, 676, 21, 4255, 712, 15272, 589, 8927, 1236, 15274, 4263, 9556, 15318, 9553, 1297, 5221, 2]
 
-// Module 15336
+// Module 15317
 import importAllResult from "FacepileGroupDMAvatar";
 import fetchFingerprint from "fetchFingerprint";
 import callConnect from "callConnect";
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   if (channel != null) {
     isMultiUserDMResult = channel.isMultiUserDM();
   }
-  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: null, externalChildren: null, expandedChildren: 279, children: null };
+  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "flowing", children: "hourglass" };
   obj[6] = memo1;
   obj[7] = cutouts;
   obj[8] = badge;
@@ -140,7 +140,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
     }
   }
   obj[10] = tmp11Result;
-  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: null, externalChildren: null, expandedChildren: 279, children: null });
+  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "flowing", children: "hourglass" });
 });
 let result = require("callConnect").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
 

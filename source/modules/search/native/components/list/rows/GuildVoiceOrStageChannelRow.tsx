@@ -1,9 +1,9 @@
-// Module ID: 15612
-// Function ID: 15613
+// Module ID: 15593
+// Function ID: 15594
 // Name: GuildVoiceChannelSubtitle
-// Dependencies: [19, 17, 1377, 8208, 21, 9711, 4124, 1236, 4285, 589, 15613, 5115, 5109, 15614, 15616, 11575, 2]
+// Dependencies: [19, 17, 1377, 8180, 21, 9682, 4094, 1236, 4255, 589, 15594, 5100, 5094, 15595, 15597, 11547, 2]
 
-// Module 15612 (GuildVoiceChannelSubtitle)
+// Module 15593 (GuildVoiceChannelSubtitle)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -281,7 +281,7 @@ function GuildVoiceChannelExtras(arg0) {
   let users;
   ({ channel, users } = arg0);
   const tmp = callback();
-  require(5115) /* useStageParticipants */;
+  require(5100) /* useStageParticipants */;
   let obj = { style: tmp.subtitle, children: null };
   let tmp5Result = 0 !== users.length;
   if (tmp5Result) {
@@ -292,7 +292,7 @@ function GuildVoiceChannelExtras(arg0) {
     obj[2] = channel.guild_id;
     obj[3] = closure_6;
     obj[4] = tmp4;
-    obj[1] = tmp5(importDefault(15614), obj);
+    obj[1] = tmp5(importDefault(15595), obj);
     tmp5Result = tmp5(tmp6, obj);
   }
   obj[1] = tmp5Result;
@@ -323,12 +323,12 @@ const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
     obj = { channel: null, voiceStates: null };
     obj[0] = channel;
     obj[1] = voiceStates;
-    obj[1] = tmp4(channel(11575).VocalChannelJoinButton, obj);
+    obj[1] = tmp4(channel(11547).VocalChannelJoinButton, obj);
     trailing = tmp4(View, obj);
   }
   obj[4] = trailing;
   obj[5] = <GuildVoiceChannelExtras channel={channel} voiceStates={voiceStates} users={mapped} />;
-  return jsx(onPress(15616), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
+  return jsx(onPress(15597), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
 });
 const result = require("handleStageInstanceCreateOrUpdate").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11171
+// Function ID: 11172
 // Name: _getSafetyHubData
-// Dependencies: [5, 1218, 11193, 7728, 676, 709, 530, 4472, 7727, 2]
+// Dependencies: [5, 1218, 11165, 7700, 676, 709, 530, 4442, 7699, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11199 (_getSafetyHubData)
+// Module 11171 (_getSafetyHubData)
 import dispatcher from "dispatcher";
 import fetchFingerprint from "fetchFingerprint";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
@@ -28,7 +28,7 @@ function _getSafetyHubData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -184,7 +184,7 @@ function _getSafetyHubData() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp11) {
         v0 = tmp;
@@ -219,7 +219,7 @@ function _getSafetyHubDataForClassification() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -292,7 +292,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(7727);
+                      obj3 = callback(7699);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };
@@ -354,7 +354,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(7727);
+                      obj3 = callback(7699);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };
@@ -383,7 +383,7 @@ function _getSafetyHubDataForClassification() {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp11) {
           v0 = tmp;
@@ -421,7 +421,7 @@ function _requestReview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -505,7 +505,7 @@ function _requestReview() {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp15) {
           c3 = tmp;
@@ -541,7 +541,7 @@ function _requestSuspendedUserAgeVerification() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -602,7 +602,7 @@ function _requestSuspendedUserAgeVerification() {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp5) {
           v0 = tmp;
@@ -644,7 +644,7 @@ function _checkSuspendedUserAgeVerification() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -711,7 +711,7 @@ function _checkSuspendedUserAgeVerification() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp5) {
         v0 = tmp;

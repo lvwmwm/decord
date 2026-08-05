@@ -1,10 +1,10 @@
-// Module ID: 8033
-// Function ID: 8034
+// Module ID: 8005
+// Function ID: 8006
 // Name: getInitialStringSelectOptions
-// Dependencies: [8027, 1906, 2]
+// Dependencies: [7999, 1906, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 8033 (getInitialStringSelectOptions)
+// Module 8005 (getInitialStringSelectOptions)
 import getInteractionComponentStates from "getInteractionComponentStates";
 
 const require = arg1;

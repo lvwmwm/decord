@@ -1,10 +1,10 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 11654
+// Function ID: 11655
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 1302, 1942, 11679, 21, 4285, 712, 589, 11514, 5236, 4812, 1236, 1348, 4254, 4255, 4685, 4131, 2]
+// Dependencies: [19, 17, 1302, 1942, 11651, 21, 4255, 712, 589, 11486, 5221, 4797, 1236, 1348, 4224, 4225, 4655, 4101, 2]
 // Exports: default
 
-// Module 11682 (ApplicationCommandsCategories)
+// Module 11654 (ApplicationCommandsCategories)
 import importAllResult from "noop";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
 import handleThemeChange from "handleThemeChange";
@@ -65,7 +65,7 @@ let closure_13 = importAllResult.memo((section) => {
     obj = { style: null, source: null };
     obj[0] = tmp.categoryImage;
     obj[1] = memo;
-    tmp6 = callback(importDefault(5236), obj);
+    tmp6 = callback(importDefault(5221), obj);
   }
   obj = {
     onPress() {
@@ -90,7 +90,7 @@ let closure_13 = importAllResult.memo((section) => {
   obj[2] = formatToPlainStringResult;
   const items2 = [tmp.item, active ? tmp.activeItem : tmp.fadedItem];
   obj[3] = callback(stateFromStores, { style: items2, children: tmp6 });
-  return callback(section(4812).PressableOpacity, obj, section.name);
+  return callback(section(4797).PressableOpacity, obj, section.name);
 });
 let obj2 = { opacity: 1, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWER };
 let result = require("handleThemeChange").fileFinishedImporting("modules/application_commands/native/ApplicationCommandsCategories.tsx");

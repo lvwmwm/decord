@@ -1,9 +1,9 @@
-// Module ID: 4085
-// Function ID: 4086
+// Module ID: 4055
+// Function ID: 4056
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4085 (metadata)
+// Module 4055 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/Microphone.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/818bb06d7022850d954c2e172aa62febbe92fe9eb927d92a4bfa25c2c6fa65f1.riv";

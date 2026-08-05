@@ -1,10 +1,10 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9882
+// Function ID: 9883
 // Name: getString
-// Dependencies: [4718, 38, 9912, 4273, 1906, 2]
+// Dependencies: [4688, 38, 9883, 4243, 1906, 2]
 // Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 9911 (getString)
+// Module 9882 (getString)
 import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
 
 function getString(arg0, arg1) {
@@ -341,18 +341,18 @@ export const normalizeNumericString = function normalizeNumericString(locale, tr
   let group;
   if (locale !== closure_5) {
     closure_5 = locale;
-    en_US = require(9912) /* numberParts */.numberParts[locale];
+    en_US = require(9883) /* numberParts */.numberParts[locale];
     if (en_US == null) {
-      en_US = tmp11(9912).numberParts["en-US"];
+      en_US = tmp11(9883).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);
-    const regExp = new RegExp(importDefault(4273).escape(group), "g");
+    const regExp = new RegExp(importDefault(4243).escape(group), "g");
     const _RegExp2 = RegExp;
-    const obj = importDefault(4273);
+    const obj = importDefault(4243);
     tmp11 = require;
-    const regExp1 = new RegExp(importDefault(4273).escape(decimal), "g");
-    const obj2 = importDefault(4273);
+    const regExp1 = new RegExp(importDefault(4243).escape(decimal), "g");
+    const obj2 = importDefault(4243);
   }
   return trimmed.replace(regExp, "").replace(regExp1, ".");
 };

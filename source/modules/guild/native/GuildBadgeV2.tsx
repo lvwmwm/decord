@@ -1,10 +1,10 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9152
+// Function ID: 9153
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 4285, 1297, 4131, 9181, 9178, 9179, 2]
+// Dependencies: [19, 21, 4255, 1297, 4101, 9153, 9150, 9151, 2]
 // Exports: default, hasGuildBadge
 
-// Module 9180 (GuildBadgeV2)
+// Module 9152 (GuildBadgeV2)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,11 +21,11 @@ export default function GuildBadgeV2(arg0) {
     size = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   }
   const merged = Object.assign(arg0, Object.create(null));
-  require(4131) /* AccessibilityAnnouncer */;
+  require(4101) /* AccessibilityAnnouncer */;
   if (null == guild) {
     return null;
   } else {
-    const guildBadgeImageSource = tmp5(9181).getGuildBadgeImageSource(guild, tmp8);
+    const guildBadgeImageSource = tmp5(9153).getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
       const obj = { size: null, source: null, style: null, disableColor: true };
@@ -40,15 +40,15 @@ export default function GuildBadgeV2(arg0) {
   tmp4 = callback();
 };
 export const hasGuildBadge = function hasGuildBadge(fromGuildProfileResult) {
-  const guildTraits = require(9178) /* GuildVisibility */.getGuildTraits(fromGuildProfileResult);
-  const obj = require(9178) /* GuildVisibility */;
+  const guildTraits = require(9150) /* GuildVisibility */.getGuildTraits(fromGuildProfileResult);
+  const obj = require(9150) /* GuildVisibility */;
   const tmp = require;
-  const badgeCategory = require(9179) /* BadgeCategory */.getBadgeCategory(guildTraits);
-  const tmp5 = require(9181) /* badgeVariants */.badgeVariants[badgeCategory];
+  const badgeCategory = require(9151) /* BadgeCategory */.getBadgeCategory(guildTraits);
+  const tmp5 = require(9153) /* badgeVariants */.badgeVariants[badgeCategory];
   let tmp6 = null != tmp5;
   if (tmp6) {
-    tmp6 = null != tmp(9181).resolveImageSource(tmp5, guildTraits, arg1);
-    const tmpResult = tmp(9181);
+    tmp6 = null != tmp(9153).resolveImageSource(tmp5, guildTraits, arg1);
+    const tmpResult = tmp(9153);
   }
   return tmp6;
 };

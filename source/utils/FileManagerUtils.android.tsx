@@ -1,10 +1,10 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 8695
+// Function ID: 8696
 // Name: _readFile
 // Dependencies: [5, 3, 1271, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8723 (_readFile)
+// Module 8695 (_readFile)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _readFile() {
@@ -28,7 +28,7 @@ function _readFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

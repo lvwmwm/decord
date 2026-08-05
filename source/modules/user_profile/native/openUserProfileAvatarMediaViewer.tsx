@@ -1,10 +1,10 @@
-// Module ID: 8765
-// Function ID: 8766
+// Module ID: 8737
+// Function ID: 8738
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [4277, 676, 8766, 2]
+// Dependencies: [4247, 676, 8738, 2]
 // Exports: default
 
-// Module 8765 (openUserProfileAvatarMediaViewer)
+// Module 8737 (openUserProfileAvatarMediaViewer)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { AVATAR_MAX_SIZE } from "ME";
 
@@ -23,7 +23,7 @@ export default function openUserProfileAvatarMediaViewer(user) {
   }
   const avatarURL = user.getAvatarURL(guildId, tmp, animate);
   if (typeof avatarURL === "string") {
-    let obj = require(8766) /* _openMediaModal */;
+    let obj = require(8738) /* _openMediaModal */;
     obj = { initialSources: null, originViewOrOriginLayout: null, analyticsSource: "user_profile_avatar", openAs: "action-sheet", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
     obj = { uri: null, mediaIndex: 0, height: null, width: null, accessoryType: "embed" };
     obj[0] = avatarURL;

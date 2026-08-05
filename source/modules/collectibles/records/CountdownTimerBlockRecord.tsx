@@ -1,13 +1,13 @@
-// Module ID: 6940
-// Function ID: 6941
+// Module ID: 6925
+// Function ID: 6926
 // Name: fromServer
-// Dependencies: [6941, 2]
+// Dependencies: [6926, 2]
 
-// Module 6940 (fromServer)
+// Module 6925 (fromServer)
 let prototype;
 prototype = function CountdownTimerBlockRecord(end_time) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(6941) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
+  obj.type = require(6926) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
   ({ title: tmp.title, body: tmp.body, banner_url: tmp.bannerUrl } = end_time);
   obj.endTime = new Date(end_time.end_time);
   obj.textColor = end_time.text_color;
@@ -18,7 +18,7 @@ prototype["fromServer"] = function fromServer(end_time) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(6941) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
+  obj.type = require(6926) /* ShopBlockType */.ShopBlockType.COUNTDOWN_TIMER;
   ({ title: tmp2.title, body: tmp2.body, banner_url: tmp2.bannerUrl } = end_time);
   obj.endTime = new Date(end_time.end_time);
   obj.textColor = end_time.text_color;

@@ -1,10 +1,10 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13132
+// Function ID: 13133
 // Name: _checkForNewerBuild
-// Dependencies: [5, 4267, 3, 530, 3982, 500, 691, 2]
+// Dependencies: [5, 4237, 3, 530, 3952, 500, 691, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13160 (_checkForNewerBuild)
+// Module 13132 (_checkForNewerBuild)
 import set from "set";
 import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL";
 
@@ -23,7 +23,7 @@ function _checkForNewerBuild() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -115,7 +115,7 @@ function openBuildInstallerUrl(install) {
       const _HermesInternal = HermesInternal;
       tmp2.error("Attempted to follow invalid install URL " + str);
     } else {
-      const openURLExternally = require(3982).default.openURLExternally;
+      const openURLExternally = require(3952).default.openURLExternally;
       if (obj.isIOS()) {
         openURLExternally(str.toString(), require(691) /* keys */.WebBrowserType.SAFARI);
       } else {

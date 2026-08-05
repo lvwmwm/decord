@@ -1,10 +1,10 @@
-// Module ID: 13798
-// Function ID: 13799
+// Module ID: 13770
+// Function ID: 13771
 // Name: onRouteSettingOnPress
-// Dependencies: [10362, 676, 7514, 5922, 5913, 500, 1844, 13799, 38, 13800, 14822, 12, 2]
+// Dependencies: [10334, 676, 7486, 5907, 5898, 500, 1844, 13771, 38, 13772, 14802, 12, 2]
 // Exports: getInitialScrollIndex, getScoredSettingListSearchResultItems, getSettingListSearchResultItems, getSettingScreens, getSettingSearchableTitles, getSettingTitle, onRouteSettingOnPress, toSettingListItems
 
-// Module 13798 (onRouteSettingOnPress)
+// Module 13770 (onRouteSettingOnPress)
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { AnalyticsPages } from "ME";
 
@@ -53,13 +53,13 @@ export const onRouteSettingOnPress = function onRouteSettingOnPress(arg0) {
   }
 };
 export const getSettingTitle = function getSettingTitle(closure_0) {
-  const cachedSettingTitle = require(13799) /* map */.getCachedSettingTitle(closure_0);
-  const obj = require(13799) /* map */;
+  const cachedSettingTitle = require(13771) /* map */.getCachedSettingTitle(closure_0);
+  const obj = require(13771) /* map */;
   importDefault(38)(null != cachedSettingTitle, "Setting " + closure_0 + " is missing a title.");
   return cachedSettingTitle;
 };
 export const getSettingSearchableTitles = function getSettingSearchableTitles() {
-  const entries = Object.entries(items(13800).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(13772).SETTING_RENDERER_CONFIG);
   items = [];
   const item = entries.forEach((arg0) => {
     let tmp;
@@ -85,7 +85,7 @@ export const getSettingSearchableTitles = function getSettingSearchableTitles() 
 export const getSettingScreens = function getSettingScreens() {
   let items = [];
   const set = new Set();
-  const entries = Object.entries(items(13800).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(13772).SETTING_RENDERER_CONFIG);
   const item = entries.forEach((arg0) => {
     let tmp;
     let tmp2;

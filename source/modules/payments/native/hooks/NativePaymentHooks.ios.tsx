@@ -1,10 +1,10 @@
-// Module ID: 7335
-// Function ID: 7336
+// Module ID: 7307
+// Function ID: 7308
 // Name: useNativeIAPPayments
-// Dependencies: [5, 32, 19, 5769, 3936, 3937, 5767, 676, 3, 589, 6792, 7336, 3946, 7337, 5598, 698, 7296, 5770, 38, 4604, 7339, 7340, 2]
+// Dependencies: [5, 32, 19, 5754, 3906, 3907, 5752, 676, 3, 589, 6777, 7308, 3916, 7309, 5583, 698, 7268, 5755, 38, 4574, 7311, 7312, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 7335 (useNativeIAPPayments)
+// Module 7307 (useNativeIAPPayments)
 import reset from "reset";
 import _slicedToArray from "_slicedToArray";
 import _deletePaymentSource from "_deletePaymentSource";
@@ -111,7 +111,7 @@ function useCreateSubscription(planId) {
       const obj = first(tmp6[10]);
     }
   }, items1);
-  importDefault(7336)(() => {
+  importDefault(7308)(() => {
     let tmp = memo;
     if (!memo) {
       tmp = outer1_15;
@@ -141,9 +141,9 @@ function useCreateSubscription(planId) {
   const items2 = [callback];
   const items3 = [planId];
   const stateFromStores = first(589).useStateFromStores(items2, () => callback.get(first), items3);
-  const tmp11 = importDefault(7337)(stateFromStores, tmp3[2]);
+  const tmp11 = importDefault(7309)(stateFromStores, tmp3[2]);
   React = tmp11;
-  const tmp12 = importDefault(5598)(() => first(_undefined[15]).getNewAnalyticsLoadId());
+  const tmp12 = importDefault(5583)(() => first(_undefined[15]).getNewAnalyticsLoadId());
   c6 = tmp12;
   const items4 = [tmp12, analyticsLocation, applicationId, planId, skuId];
   callback = React.useCallback(() => {
@@ -200,7 +200,7 @@ function useCreateSubscription(planId) {
         return obj;
       } else {
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
       c3 = 0;
       return arg1;
@@ -287,8 +287,8 @@ function useCancelSubscription(arg0, arg1) {
       outer1_1(38)(outer1_5, "Cannot update subscription");
       outer1_1(38)(dependencyMap, "Cannot connect to IAP API");
       outer1_1(38)(null != outer1_6, "Subscription not found");
-      closure_0 = yield outer1_0(6792).cancelGenericSubscription(outer1_6.requestIdentifier, outer1_6.subscriptionId, outer1_1);
-      const obj2 = outer1_0(4604);
+      closure_0 = yield outer1_0(6777).cancelGenericSubscription(outer1_6.requestIdentifier, outer1_6.subscriptionId, outer1_1);
+      const obj2 = outer1_0(4574);
       yield obj2.fetchSubscriptions();
       return closure_0;
     }), items5),
@@ -323,7 +323,7 @@ function useResubscribeSubscription(arg0) {
       const obj = first(tmp6[10]);
     }
   }, items1);
-  first(7336)(() => {
+  first(7308)(() => {
     let tmp = memo;
     if (!memo) {
       tmp = outer1_15;
@@ -365,7 +365,7 @@ function useResubscribeSubscription(arg0) {
     }
     return tmp3;
   }, items4);
-  const tmp12 = first(7340)(arg0);
+  const tmp12 = first(7312)(arg0);
   React = tmp12;
   obj = {
     resubscribeSubscription: React.useCallback(stateFromStores(function*() {
@@ -374,8 +374,8 @@ function useResubscribeSubscription(arg0) {
       outer1_1(38)(outer1_1, "Cannot connect to IAP API");
       outer1_1(38)(null != outer1_5, "Subscription not found");
       outer1_1(38)(null != isACOM, "Subscription not found");
-      closure_0 = yield outer1_0(6792).resubscribeGenericSubscription(outer1_5, isACOM.isACOM);
-      const obj2 = outer1_0(4604);
+      closure_0 = yield outer1_0(6777).resubscribeGenericSubscription(outer1_5, isACOM.isACOM);
+      const obj2 = outer1_0(4574);
       yield obj2.fetchSubscriptions();
       return closure_0;
     }), items5),

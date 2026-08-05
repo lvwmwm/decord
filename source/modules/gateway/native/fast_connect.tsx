@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: createFastConnectSocket
-// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 12843, 7030, 12825, 12814, 12810, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 502, 503, 675, 12815, 7004, 12797, 12786, 12782, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (createFastConnectSocket)
@@ -15,8 +15,8 @@ function createFastConnectSocket() {
   if (null != window.WebSocket) {
     let obj = _require(500);
     if (obj.isAndroid()) {
-      let supportsZstd = obj(12825).getConstants().supportsZstd;
-      const obj2 = obj(12825);
+      let supportsZstd = obj(12797).getConstants().supportsZstd;
+      const obj2 = obj(12797);
     } else {
       supportsZstd = closure_4.DCDCompressionManager.supportsZstd;
     }
@@ -26,7 +26,7 @@ function createFastConnectSocket() {
     }
     const _window = window;
     let GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ALT_ENDPOINT;
-    if (!obj(12814)()) {
+    if (!obj(12786)()) {
       const _window2 = window;
       GATEWAY_ENDPOINT = window.GLOBAL_ENV.GATEWAY_ENDPOINT;
     }
@@ -36,7 +36,7 @@ function createFastConnectSocket() {
     obj.log(`[FAST CONNECT] ${tmp10}`);
     const _Date = Date;
     _require = Date.now();
-    const tmp12 = obj(12810)(combined);
+    const tmp12 = obj(12782)(combined);
     const _parseFloat = parseFloat;
     const parsed = parseFloat(tmp12._socketId);
     const _isNaN = isNaN;
@@ -46,14 +46,14 @@ function createFastConnectSocket() {
       const isAndroidResult = tmp3(500).isAndroid();
       if (supportsZstd) {
         if (isAndroidResult) {
-          let tmp7Result = tmp7(12825);
+          let tmp7Result = tmp7(12797);
           const result = tmp7Result.enableZstdStreamSupport(parsed);
         } else {
           const DCDCompressionManager2 = closure_4.DCDCompressionManager;
           const result1 = DCDCompressionManager2.enableZstdStreamSupport(parsed, 0);
         }
       } else if (isAndroidResult) {
-        tmp7Result = tmp7(12825);
+        tmp7Result = tmp7(12797);
         const result2 = tmp7Result.enableZlibStreamSupport(parsed);
       } else {
         const DCDCompressionManager = closure_4.DCDCompressionManager;

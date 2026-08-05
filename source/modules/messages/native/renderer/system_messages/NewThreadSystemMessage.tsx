@@ -1,10 +1,10 @@
-// Module ID: 7928
-// Function ID: 7929
+// Module ID: 7900
+// Function ID: 7901
 // Name: createNewThreadSystemMessage
-// Dependencies: [1372, 3922, 1874, 7879, 1236, 7881, 4475, 7882, 2]
+// Dependencies: [1372, 3892, 1874, 7851, 1236, 7853, 4445, 7854, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 7928 (createNewThreadSystemMessage)
+// Module 7900 (createNewThreadSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -14,7 +14,7 @@ const result = require("mergeGuildAvatar").fileFinishedImporting("modules/messag
 
 export const createNewThreadSystemMessage = function createNewThreadSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7879) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7851) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const messageReference = message.messageReference;
   let channel_id;
@@ -24,10 +24,10 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   channel = channel.getChannel(channel_id);
   const intl = tmp(1236).intl;
   obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: null, threadName: null, threadOnClick: null };
-  obj[1] = importDefault(7881)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  obj[1] = importDefault(7853)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
   if (null != channel) {
-    let content = tmp(4475).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-    const tmpResult = tmp(4475);
+    let content = tmp(4445).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    const tmpResult = tmp(4445);
   } else {
     content = message.content;
   }
@@ -39,6 +39,6 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   }
   obj = { content: intl.formatToParts(tmp(1236).t.veX9jq, obj) };
   obj[3] = { action: "bindOpenThreadChannel", threadId: channel_id1, medium: true };
-  const merged = Object.assign(importDefault(7882)(roleStyle));
+  const merged = Object.assign(importDefault(7854)(roleStyle));
   return obj;
 };

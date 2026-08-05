@@ -1,9 +1,9 @@
-// Module ID: 6844
-// Function ID: 6845
+// Module ID: 6829
+// Function ID: 6830
 // Name: handleClearCaches
-// Dependencies: [32, 5, 4960, 1218, 1931, 4102, 676, 3, 595, 1928, 6845, 6856, 9, 10, 1927, 6857, 6858, 6859, 6860, 6861, 7025, 7046, 589, 709, 1926, 7031, 7037, 7035, 7029, 1866, 7047, 500, 1352, 7049, 1923, 2]
+// Dependencies: [32, 5, 4945, 1218, 1931, 4072, 676, 3, 595, 1928, 6830, 6841, 9, 10, 1927, 6842, 6843, 6844, 6845, 6846, 6999, 7020, 589, 709, 1926, 7005, 7011, 7009, 7003, 1866, 7021, 500, 1352, 7023, 1923, 2]
 
-// Module 6844 (handleClearCaches)
+// Module 6829 (handleClearCaches)
 import getToken from "getToken";
 import handleConnectionOpen from "handleConnectionOpen";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -52,7 +52,7 @@ function _loadChannelHistory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ function _loadChannelHistory() {
               dependencyMap = nowResult;
               if (null != callback) {
                 if (null != tmp52) {
-                  let obj4 = callback2(6845);
+                  let obj4 = callback2(6830);
                   c5 = 1;
                   c6 = 1;
                   const obj1 = { value: null, done: false };
@@ -119,8 +119,8 @@ function _loadChannelHistory() {
             obj5[2] = getToken.users;
             obj5[3] = getToken.members;
             obj5[4] = getToken.messages;
-            const obj10 = callback2(6856);
-            const result = obj10.recordChannelFetchedLocal(callback2, callback(6856).INITIAL_MESSAGE_FETCH_KEY, null, null, closure_9, getToken.messages);
+            const obj10 = callback2(6841);
+            const result = obj10.recordChannelFetchedLocal(callback2, callback(6841).INITIAL_MESSAGE_FETCH_KEY, null, null, closure_9, getToken.messages);
             const _performance2 = performance;
             const items1 = [performance.now() - dependencyMap, obj5];
             c6 = 3;
@@ -168,7 +168,7 @@ function _loadEarlyCache() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -262,24 +262,24 @@ function _loadEarlyCache() {
                 if (null == verboseResult) {
                   let resolved = Promise.resolve({});
                 } else {
-                  resolved = callback(10).timeAsync("\u{1F4BE}", "cache: user_settings", () => callback2(6857).getAll(closure_0));
+                  resolved = callback(10).timeAsync("\u{1F4BE}", "cache: user_settings", () => callback2(6842).getAll(closure_0));
                   const obj9 = callback(10);
                 }
                 if (null == verboseResult) {
                   let resolved1 = Promise.resolve([]);
                 } else {
-                  resolved1 = callback(10).timeAsync("\u{1F4BE}", "cache: read_states", () => callback2(6858).getAll(closure_0));
+                  resolved1 = callback(10).timeAsync("\u{1F4BE}", "cache: read_states", () => callback2(6843).getAll(closure_0));
                   const obj10 = callback(10);
                 }
                 if (null == verboseResult) {
                   let resolveResult = allResult.Promise.resolve([]);
                   const _Promise5 = allResult.Promise;
                 } else {
-                  resolveResult = callback(10).timeAsync("\u{1F4BE}", "cache: user_guild_settings", () => callback2(6859).getAll(closure_0));
+                  resolveResult = callback(10).timeAsync("\u{1F4BE}", "cache: user_guild_settings", () => callback2(6844).getAll(closure_0));
                   const obj11 = callback(10);
                 }
-                callback(6860)("AllCacheStores", () => callback(6861));
-                callback(6860)("MobileAppDatabaseManager", () => callback(7025));
+                callback(6845)("AllCacheStores", () => callback(6846));
+                callback(6845)("MobileAppDatabaseManager", () => callback(6999));
                 let items = [
                   result,
                   measureAsyncResult,
@@ -359,7 +359,7 @@ function _loadEarlyCache() {
                 verboseResult = closure_11;
                 verboseResult = null;
                 if (null == closure_11) {
-                  callback(7046)("database:history_cache_null");
+                  callback(7020)("database:history_cache_null");
                   closure_13.verbose("finished without dispatching CACHE_LOADED");
                   const items1 = [false, null, 0];
                   dependencyMap2 = 3;
@@ -495,7 +495,7 @@ function _loadInitialGuilds() {
           obj[0] = initial_guild_id;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -588,7 +588,7 @@ function _loadInitialGuilds() {
                   c6 = 3;
                   c7 = 1;
                   obj7 = { value: null, done: false };
-                  obj7[0] = obj1.tryLoadAsync(() => callback(7031).getOneAsync(closure_0, dependencyMap));
+                  obj7[0] = obj1.tryLoadAsync(() => callback(7005).getOneAsync(closure_0, dependencyMap));
                   return obj7;
                 }
               }
@@ -649,7 +649,7 @@ function _loadInitialGuildChannels() {
           obj[0] = initial_guild_id;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -772,7 +772,7 @@ function _loadLateLazyCache() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -899,7 +899,7 @@ function _loadLateLazyCache() {
                   verbose("loadLateLazyCache: not yielding to react");
                 } else {
                   verbose("loadLateLazyCache: yielding to react");
-                  obj1 = callback(7047);
+                  obj1 = callback(7021);
                   obj2 = callback(500);
                   let num4;
                   if (obj2.isIOS()) {
@@ -926,7 +926,7 @@ function _loadLateLazyCache() {
             socket2 = socket.getSocket();
             callback4(() => {
               if (false === c6) {
-                callback2(7046)("database:not_ok");
+                callback2(7020)("database:not_ok");
                 callback2(709).dispatch({ type: "CLEAR_CACHES", reason: "database:not_ok" });
                 const obj10 = callback2(709);
                 callback2(709).dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
@@ -935,14 +935,14 @@ function _loadLateLazyCache() {
                   if (null != closure_8) {
                     if (null != closure_9) {
                       if (null == c6) {
-                        callback2(7046)("database:versionless");
+                        callback2(7020)("database:versionless");
                         outer1_13.log("kv_cache was not ok (null version with values)");
                         callback2(709).dispatch({ type: "CLEAR_CACHES", reason: "database:versionless" });
                         const obj6 = callback2(709);
                         callback2(709).dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
                       }
                       if (outer1_18) {
-                        callback2(7046)("already_connected");
+                        callback2(7020)("already_connected");
                         outer1_13.log("Skipping lazy cache; already connected.");
                         callback2(709).dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
                       } else {
@@ -1016,7 +1016,7 @@ function _loadLateLazyCache() {
                     }
                   }
                 }
-                callback2(7046)("database:load_failed");
+                callback2(7020)("database:load_failed");
                 const _HermesInternal4 = HermesInternal;
                 outer1_13.log("couldn't load database item (\n          database: " + null != obj + "\n          basic_channels: " + null != closure_8 + "\n          guild_channels: " + null != closure_9 + "\n          guilds: " + null != c7 + "\n        )");
                 callback2(709).dispatch({ type: "CLEAR_CACHES", reason: "database:load_failed" });
@@ -1025,7 +1025,7 @@ function _loadLateLazyCache() {
               }
             });
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp20) {
           c7 = tmp;
@@ -1050,7 +1050,7 @@ function resumeFluxAndSocket(arg0) {
   const Emitter = importDefault(589).Emitter;
   Emitter.batched(() => {
     try {
-      f118452();
+      f118393();
       let dispatcher = lib.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         const dependencyMap = true;
@@ -1149,7 +1149,7 @@ prototype["loadCacheAsync"] = function loadCacheAsync(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -1258,7 +1258,7 @@ prototype["loadCacheAsync"] = function loadCacheAsync(arg0, arg1) {
               dependencyMap = v0(v0, 3);
               c5 = 32;
               fetchFingerprint = 5;
-              closure_7 = 4960;
+              closure_7 = 4945;
               outer1_0();
               if (c5) {
                 dependencyMap = 4;
@@ -1280,12 +1280,12 @@ prototype["loadCacheAsync"] = function loadCacheAsync(arg0, arg1) {
                 c5 = 1;
                 const obj7 = { value: null, done: false };
                 obj7[0] = (function dontLoadLateLazyCache() {
-                  const f118452 = () => lib(709).dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
+                  const f118393 = () => lib(709).dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
                   const id = store.getSocket();
                   const Emitter = id(tmp38[22]).Emitter;
                   Emitter.batched(() => {
                     try {
-                      f118452();
+                      f118393();
                       let dispatcher = lib.dispatcher;
                       if (dispatcher.hasStuffToDispatchNow()) {
                         const dependencyMap = true;

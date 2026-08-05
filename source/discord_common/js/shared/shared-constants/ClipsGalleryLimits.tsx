@@ -1,9 +1,9 @@
-// Module ID: 6998
-// Function ID: 6999
+// Module ID: 6982
+// Function ID: 6983
 // Name: USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH
 // Dependencies: [2]
 
-// Module 6998 (USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH)
+// Module 6982 (USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ClipsGalleryLimits.tsx");
 
 export const USER_WIDGET_CLIPS_GALLERY_MAX_LENGTH = 4;

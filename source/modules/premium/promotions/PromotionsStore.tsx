@@ -1,9 +1,9 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7238
+// Function ID: 7239
 // Name: createEmptyPromotionsByType
-// Dependencies: [1340, 7267, 7269, 7268, 589, 709, 2]
+// Dependencies: [1340, 7239, 7241, 7240, 589, 709, 2]
 
-// Module 7266 (createEmptyPromotionsByType)
+// Module 7238 (createEmptyPromotionsByType)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";
@@ -15,7 +15,7 @@ function createEmptyPromotionsByType() {
 }
 function getLatestActiveOutboundPromotionStartDate() {
   let startDate = null;
-  const values = Object.values(dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  const values = Object.values(dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
   for (const item10019 of values) {
     let tmp3 = item10019;
     let tmp4 = startDate;
@@ -78,13 +78,13 @@ prototype["initialize"] = function initialize(arg0) {
 };
 Object.defineProperty(prototype, "outboundPromotions", {
   get: function outboundPromotions() {
-    return Object.values(dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
+    return Object.values(dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "outboundRecurringPromotions", {
   get: function outboundRecurringPromotions() {
-    return Object.values(dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+    return Object.values(dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
   },
   set: undefined
 });
@@ -186,14 +186,14 @@ prototype["hasPromotion"] = function hasPromotion(closure_0) {
 prototype["getPromotionsByPartner"] = function getPromotionsByPartner(arg0) {
   const _require = arg0;
   const obj = { oneTime: null, recurring: null };
-  let values = Object.values(dependencyMap[_require(undefined, 7268).PromotionTypes.THIRD_PARTY_OUTBOUND]);
+  let values = Object.values(dependencyMap[_require(undefined, 7240).PromotionTypes.THIRD_PARTY_OUTBOUND]);
   obj[0] = values.filter((partnerId) => partnerId.partnerId === closure_0);
-  values = Object.values(dependencyMap[_require(undefined, 7268).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
+  values = Object.values(dependencyMap[_require(undefined, 7240).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]);
   obj[1] = values.filter((partnerId) => partnerId.partnerId === closure_0);
   return obj;
 };
 prototype["getGiftPromotion"] = function getGiftPromotion() {
-  const tmp = dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.GIFT_PROMOTION];
+  const tmp = dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.GIFT_PROMOTION];
   const keys = Object.keys(tmp);
   let tmp2 = null;
   if (0 !== keys.length) {
@@ -213,7 +213,7 @@ prototype["getGiftPromotionRewardSkuIds"] = function getGiftPromotionRewardSkuId
   return rewardSkuIds;
 };
 prototype["getMarketingMomentPromotion"] = function getMarketingMomentPromotion() {
-  const tmp = dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT];
+  const tmp = dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.MARKETING_MOMENT];
   const keys = Object.keys(tmp);
   if (0 === keys.length) {
     return null;
@@ -240,7 +240,7 @@ prototype["getMarketingMomentRewardSkuIds"] = function getMarketingMomentRewardS
 };
 prototype["getActiveBogoRewardPromotion"] = function getActiveBogoRewardPromotion() {
   const date = new Date();
-  const values = Object.values(dependencyMap[date(undefined, 7268).PromotionTypes.MARKETING_MOMENT]);
+  const values = Object.values(dependencyMap[date(undefined, 7240).PromotionTypes.MARKETING_MOMENT]);
   let found = values.find((hasBogoReward) => {
     hasBogoReward = hasBogoReward.hasBogoReward;
     if (hasBogoReward) {
@@ -332,7 +332,7 @@ const promotionsStore = new PromotionsStore(require("dispatcher"), {
     let c8 = false;
   },
   OUTBOUND_PROMOTION_NOTICE_DISMISS: function handleDismissOutboundPromotionNotice() {
-    if (0 === Object.values(dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();
@@ -342,7 +342,7 @@ const promotionsStore = new PromotionsStore(require("dispatcher"), {
     }
   },
   OUTBOUND_PROMOTIONS_SEEN: function handleOutboundPromotionsSeen() {
-    if (0 === Object.values(dependencyMap[require(undefined, 7268) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
+    if (0 === Object.values(dependencyMap[require(undefined, 7240) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND]).length) {
       return false;
     } else {
       const tmp2 = getLatestActiveOutboundPromotionStartDate();

@@ -1,9 +1,9 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14369
+// Function ID: 14370
 // Name: toggle
-// Dependencies: [4332, 7892, 4345, 589, 10361, 1236, 9077, 2]
+// Dependencies: [4302, 7864, 4315, 589, 10333, 1236, 9049, 2]
 
-// Module 14394 (toggle)
+// Module 14369 (toggle)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { Features } from "DesktopSources";
 import createToggle from "createToggle";
@@ -23,7 +23,7 @@ createToggle = {
     return require(589) /* initialize */.useStateFromStores(items, () => sidechainCompression.getSidechainCompression());
   },
   onValueChange(arg0) {
-    return importDefault(9077).setSidechainCompression(arg0);
+    return importDefault(9049).setSidechainCompression(arg0);
   },
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;

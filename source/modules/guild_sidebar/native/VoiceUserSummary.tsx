@@ -1,9 +1,9 @@
-// Module ID: 15148
-// Function ID: 15149
+// Module ID: 15128
+// Function ID: 15129
 // Name: VOICE_USER_SUMMARY_HEIGHT
-// Dependencies: [19, 17, 21, 1297, 4285, 8203, 8202, 4806, 4810, 2]
+// Dependencies: [19, 17, 21, 1297, 4255, 8175, 8174, 4776, 4780, 2]
 
-// Module 15148 (VOICE_USER_SUMMARY_HEIGHT)
+// Module 15128 (VOICE_USER_SUMMARY_HEIGHT)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import importAllResult from "noop";
@@ -26,16 +26,16 @@ const memoResult = importAllResult.memo((guildId) => {
   ({ users, max, renderIcon, noPadding, stageIcon } = guildId);
   const tmp = callback();
   let transparentBorder = null;
-  if (importDefault(8203)()) {
+  if (importDefault(8175)()) {
     transparentBorder = tmp.transparentBorder;
   }
-  let obj = guildId(8202);
+  let obj = guildId(8174);
   obj = { style: null, children: null };
   const items = [noPadding ? tmp.containerNoPadding : tmp.container, obj.useClientThemesOverride()];
   obj[0] = items;
   if (renderIcon) {
     if (stageIcon) {
-      let VoiceNormalIcon = tmp4(4806).StageIcon;
+      let VoiceNormalIcon = tmp4(4776).StageIcon;
     }
     obj = { size: "sm", color: "channel-icon", style: null };
     obj[2] = tmp.redesignChannelIcon;
@@ -61,7 +61,7 @@ const memoResult = importAllResult.memo((guildId) => {
     obj[1] = items1;
     return tmp5(tmp6, obj);
   }
-  VoiceNormalIcon = tmp4(4810).VoiceNormalIcon;
+  VoiceNormalIcon = tmp4(4780).VoiceNormalIcon;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/guild_sidebar/native/VoiceUserSummary.tsx");
 

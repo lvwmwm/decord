@@ -1,10 +1,10 @@
-// Module ID: 10188
-// Function ID: 10189
+// Module ID: 10159
+// Function ID: 10160
 // Name: getTimeSafe
-// Dependencies: [1874, 3909, 8192, 4504, 589, 709, 2]
+// Dependencies: [1874, 3879, 8164, 4474, 589, 709, 2]
 // Exports: getComparator
 
-// Module 10188 (getTimeSafe)
+// Module 10159 (getTimeSafe)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 import set from "SavedMessageSortTypes";
@@ -94,11 +94,11 @@ function handleGuild() {
 }
 let c3 = 10000000000000;
 const secondaryIndexMap = new require("version").SecondaryIndexMap((saveData) => {
-  const items = [require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.ALL, ];
+  const items = [require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.ALL, ];
   if (null != saveData.saveData.dueAt) {
-    let BOOKMARK = tmp(8192).SavedMessageSortTypes.REMINDER;
+    let BOOKMARK = tmp(8164).SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = tmp(8192).SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = tmp(8164).SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;
@@ -123,16 +123,16 @@ prototype["initialize"] = function initialize() {
   this.waitFor(mergeGuildAvatar);
 };
 prototype["getSavedMessages"] = function getSavedMessages() {
-  return secondaryIndexMap.values(require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.ALL);
+  return secondaryIndexMap.values(require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.ALL);
 };
 prototype["getSavedMessage"] = function getSavedMessage(channelId, messageId) {
   return secondaryIndexMap.get("" + channelId + "-" + messageId);
 };
 prototype["getMessageBookmarks"] = function getMessageBookmarks() {
-  return secondaryIndexMap.values(require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK);
+  return secondaryIndexMap.values(require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.BOOKMARK);
 };
 prototype["getMessageReminders"] = function getMessageReminders() {
-  return secondaryIndexMap.values(require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER);
+  return secondaryIndexMap.values(require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER);
 };
 prototype["getOverdueMessageReminderCount"] = function getOverdueMessageReminderCount() {
   return set.size;
@@ -143,7 +143,7 @@ prototype["hasOverdueReminder"] = function hasOverdueReminder() {
 prototype["getMostRecentOverdueDueAt"] = function getMostRecentOverdueDueAt() {
   let num = 0;
   const timestamp = Date.now();
-  const values = secondaryIndexMap.values(require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER);
+  const values = secondaryIndexMap.values(require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER);
   for (const item10021 of values) {
     let tmp3 = getTimeSafe;
     let tmp4 = getTimeSafe(item10021.saveData.dueAt);
@@ -263,7 +263,7 @@ const savedMessagesStore = new SavedMessagesStore(require("dispatcher"), {
         } else {
           const obj = {};
           const merged = Object.assign(value);
-          obj.message = require(4504) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
+          obj.message = require(4474) /* createMinimalMessageRecord */.updateMessageRecord(value.message, message);
           const result = obj3.set(combined, obj);
         }
         obj3 = secondaryIndexMap;

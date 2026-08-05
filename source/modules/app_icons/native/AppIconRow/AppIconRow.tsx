@@ -1,10 +1,10 @@
-// Module ID: 14608
-// Function ID: 14609
+// Module ID: 14588
+// Function ID: 14589
 // Name: items
-// Dependencies: [32, 19, 21, 1236, 4285, 712, 7584, 12, 4003, 5315, 14605, 7796, 2]
+// Dependencies: [32, 19, 21, 1236, 4255, 712, 7556, 12, 3973, 5300, 14585, 7768, 2]
 // Exports: default
 
-// Module 14608 (items)
+// Module 14588 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";

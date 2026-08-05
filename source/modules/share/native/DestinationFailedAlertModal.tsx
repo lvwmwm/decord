@@ -1,10 +1,10 @@
-// Module ID: 10183
-// Function ID: 10184
+// Module ID: 10154
+// Function ID: 10155
 // Name: FailedGroupDMRow
-// Dependencies: [19, 17, 1372, 1862, 4371, 3922, 1874, 505, 21, 4285, 712, 4475, 9582, 1297, 4281, 589, 4124, 10184, 4628, 4628, 1236, 2]
+// Dependencies: [19, 17, 1372, 1862, 4341, 3892, 1874, 505, 21, 4255, 712, 4445, 9553, 1297, 4251, 589, 4094, 10155, 4598, 4598, 1236, 2]
 // Exports: default
 
-// Module 10183 (FailedGroupDMRow)
+// Module 10154 (FailedGroupDMRow)
 import "getAlertModalItemKey";
 import { View } from "GuildIconWithChannelTypeSizes";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -25,12 +25,12 @@ function FailedGroupDMRow(channel) {
   const tmp = createCacheKey();
   let obj = { style: tmp.row, children: null };
   obj = { size: null, channel: null };
-  const tmp2 = importDefault(4475)(channel);
+  const tmp2 = importDefault(4445)(channel);
   obj[0] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   obj[1] = channel;
-  const items = [callback(importDefault(9582), obj), ];
+  const items = [callback(importDefault(9553), obj), ];
   obj = { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp2 };
-  items[1] = callback(require(4281) /* Text */.Text, obj);
+  items[1] = callback(require(4251) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -48,7 +48,7 @@ function FailedUserRow(user) {
   if (null != user) {
     obj = { style: null, children: null };
     obj[0] = tmp.row;
-    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: null, isVROnline: false, size: "none", avatarDecoration: null, autoStatusCutout: null };
+    obj = { user: null, guildId: "Boolean", status: true, isMobileOnline: null, isVROnline: null, size: null, avatarDecoration: null, autoStatusCutout: "%d\u00BA" };
     obj[0] = user;
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
@@ -63,11 +63,11 @@ function FailedUserRow(user) {
     obj1 = { style: null, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: null };
     obj1[0] = tmp.label;
     if (stateFromStores == null) {
-      stateFromStores = importDefault(4124).getName(user);
-      const obj6 = importDefault(4124);
+      stateFromStores = importDefault(4094).getName(user);
+      const obj6 = importDefault(4094);
     }
     obj1[4] = stateFromStores;
-    items2[1] = closure_10(tmp2(4281).Text, obj1);
+    items2[1] = closure_10(tmp2(4251).Text, obj1);
     obj[1] = items2;
     tmp9Result = closure_11(View, obj);
     const tmp10 = View;
@@ -89,10 +89,10 @@ function FailedChannelRow(channel) {
   });
   obj = { style: tmp.row, children: null };
   obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
-  obj[3] = channel(10184).GuildIconWithChannelTypeSizes.SMALL_32;
-  const items1 = [callback(channel(10184).GuildIconWithChannelType, obj), ];
-  const tmp3 = importDefault(4475)(channel);
-  items1[1] = callback(channel(4281).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4475)(channel) });
+  obj[3] = channel(10155).GuildIconWithChannelTypeSizes.SMALL_32;
+  const items1 = [callback(channel(10155).GuildIconWithChannelType, obj), ];
+  const tmp3 = importDefault(4445)(channel);
+  items1[1] = callback(channel(4251).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4445)(channel) });
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -165,19 +165,19 @@ export default function DestinationFailedAlertModal(arg0) {
     obj1[1] = onRetry;
     const intl2 = tmp3(1236).intl;
     obj1[2] = intl2.string(tmp3(1236).t["5911Lb"]);
-    const items = [tmp2(tmp3(4628).AlertActionButton, obj1, "confirm"), ];
+    const items = [tmp2(tmp3(4598).AlertActionButton, obj1, "confirm"), ];
     const obj2 = { variant: "secondary", text: null };
     const intl3 = tmp3(1236).intl;
     obj2[1] = intl3.string(tmp3(1236).t.WAI6xu);
-    items[1] = tmp2(tmp3(4628).AlertActionButton, obj2, "cancel");
+    items[1] = tmp2(tmp3(4598).AlertActionButton, obj2, "cancel");
     obj[0] = items;
     let tmp2Result = callback2(closure_12, obj);
   } else {
     const obj3 = { variant: "primary", text: null };
     const intl = tmp3(1236).intl;
     obj3[1] = intl.string(tmp3(1236).t.BddRzS);
-    tmp2Result = tmp2(tmp3(4628).AlertActionButton, obj3, "confirm");
+    tmp2Result = tmp2(tmp3(4598).AlertActionButton, obj3, "confirm");
   }
-  obj[3] = callback(require(4628) /* getAlertModalItemKey */.AlertActions, { children: tmp2Result });
-  return callback(require(4628) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[3] = callback(require(4598) /* getAlertModalItemKey */.AlertActions, { children: tmp2Result });
+  return callback(require(4598) /* getAlertModalItemKey */.AlertModal, obj);
 };

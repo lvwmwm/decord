@@ -1,16 +1,16 @@
-// Module ID: 8219
-// Function ID: 8220
+// Module ID: 8191
+// Function ID: 8192
 // Name: prototype
-// Dependencies: [8220, 8218, 7146, 7148, 2]
+// Dependencies: [8192, 8190, 7120, 7122, 2]
 // Exports: getForumPostSeenManagerId, markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 8219 (prototype)
+// Module 8191 (prototype)
 import { AnalyticsFeedItemSeenManager } from "maybeMarkSeen";
 
 const prototype = function ForumChannelSeenManager(channelId) {
   channelId = channelId.channelId;
   let obj = { windowId: channelId.windowId, isPaused: channelId.isPaused, id: null };
-  const FORUM_CHANNEL = require(8220) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL;
+  const FORUM_CHANNEL = require(8192) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL;
   obj[2] = concat(FORUM_CHANNEL, "_", channelId);
   tmp = new tmp(obj, tmp3, tmp2, FORUM_CHANNEL, concat, "_", new.target);
   // ThrowIfThisInitialized (0x7c)
@@ -57,7 +57,7 @@ const prototype = function ForumChannelSeenManager(channelId) {
   };
   tmp.guildId = channelId.guildId;
   tmp.channelId = channelId;
-  tmp.sessionId = require(7148) /* collectForumAnalyticsMetadata */.getForumChannelSessionId(channelId);
+  tmp.sessionId = require(7122) /* collectForumAnalyticsMetadata */.getForumChannelSessionId(channelId);
   return tmp;
 }.prototype;
 class prototype extends AnalyticsFeedItemSeenManager {
@@ -66,11 +66,11 @@ let result = require("trackForumChannelSeenBatch").fileFinishedImporting("module
 
 export default prototype;
 export const getForumPostSeenManagerId = function getForumPostSeenManagerId(arg0) {
-  return "" + require(8220) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + arg0;
+  return "" + require(8192) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + arg0;
 };
 export const markForumPostItemAsSeen = function markForumPostItemAsSeen(parent_id, item, timestampMillis) {
-  const result = require(8218) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemSeen("" + require(8220) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
+  const result = require(8190) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemSeen("" + require(8192) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
 };
 export const markForumPostItemAsUnseen = function markForumPostItemAsUnseen(parent_id, item, timestampMillis) {
-  const result = require(8218) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemUnseen("" + require(8220) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
+  const result = require(8190) /* markAnalyticsFeedItemSeen */.markAnalyticsFeedItemUnseen("" + require(8192) /* maybeMarkSeen */.AnalyticsFeedTypes.FORUM_CHANNEL + "_" + parent_id, item, timestampMillis);
 };

@@ -1,10 +1,10 @@
-// Module ID: 9953
-// Function ID: 9954
+// Module ID: 9924
+// Function ID: 9925
 // Name: useCreateOrReuseGiftOrder
-// Dependencies: [5, 19, 4268, 1876, 505, 3, 9354, 6802, 500, 3867, 3946, 2]
+// Dependencies: [5, 19, 4238, 1876, 505, 3, 9325, 6787, 500, 3837, 3916, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 9953 (useCreateOrReuseGiftOrder)
+// Module 9924 (useCreateOrReuseGiftOrder)
 import timestamp from "timestamp";
 import noop from "noop";
 import { ItemPurchaseType } from "CustomCheckoutFlow";
@@ -18,7 +18,7 @@ let result = require("CustomCheckoutFlow").fileFinishedImporting("modules/paymen
 
 export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   let _require = GiftPurchaseButton;
-  let obj = _require(9354);
+  let obj = _require(9325);
   obj = { location: GiftPurchaseButton };
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled(obj);
   _require = undefined;
@@ -42,7 +42,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(Gift
               c5 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

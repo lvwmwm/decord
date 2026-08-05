@@ -1,10 +1,10 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 8754
+// Function ID: 8755
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 676, 21, 5592, 4253, 8783, 2]
+// Dependencies: [19, 676, 21, 5577, 4223, 8755, 2]
 // Exports: default
 
-// Module 8782 (MediaModalSheetWrapper)
+// Module 8754 (MediaModalSheetWrapper)
 import noop from "noop";
 import { MEDIA_MODAL_KEY } from "ME";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 15729
-// Function ID: 15730
+// Module ID: 15710
+// Function ID: 15711
 // Name: SpamRequestsScreen
-// Dependencies: [19, 3922, 1874, 9539, 676, 21, 5610, 5630, 589, 15728, 9267, 503, 8705, 9545, 2]
+// Dependencies: [19, 3892, 1874, 9510, 676, 21, 5595, 5615, 589, 15709, 9238, 503, 8677, 9516, 2]
 // Exports: default
 
-// Module 15729 (SpamRequestsScreen)
+// Module 15710 (SpamRequestsScreen)
 import noop from "noop";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";

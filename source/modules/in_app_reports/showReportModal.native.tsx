@@ -1,10 +1,10 @@
-// Module ID: 7832
-// Function ID: 7833
+// Module ID: 7804
+// Function ID: 7805
 // Name: _showReportModal
-// Dependencies: [5, 7833, 7834, 4490, 7835, 1959, 2]
+// Dependencies: [5, 7805, 7806, 4460, 7807, 1959, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 7832 (_showReportModal)
+// Module 7804 (_showReportModal)
 import asyncRequireImpl from "asyncRequireImpl";
 
 const require = arg1;
@@ -31,7 +31,7 @@ function _showReportModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ function _showReportModal() {
               closure_4 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -159,5 +159,5 @@ export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   return applyArgumentsResult;
 };
 export const hideReportModal = function hideReportModal() {
-  importDefault(4490).popWithKey(IN_APP_REPORT_MODAL_KEY);
+  importDefault(4460).popWithKey(IN_APP_REPORT_MODAL_KEY);
 };

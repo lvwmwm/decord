@@ -1,10 +1,10 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8687
+// Function ID: 8688
 // Name: urlUserId
-// Dependencies: [5, 1874, 676, 709, 530, 6970, 6975, 1208, 2]
+// Dependencies: [5, 1874, 676, 709, 530, 6955, 6960, 1208, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8715 (urlUserId)
+// Module 8687 (urlUserId)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -44,7 +44,7 @@ function _fetchBadgeDirectory() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ function _fetchBadgeDirectory() {
               c8 = undefined;
               body = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -136,9 +136,9 @@ function _fetchBadgeDirectory() {
               if (2 === tmp7) {
                 c6 = 0;
                 let closure_9 = closure_5;
-                obj5 = obj1(6970);
+                obj5 = obj1(6955);
                 const obj6 = { name: null, tags: null };
-                obj6[0] = callback(6975).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
+                obj6[0] = callback(6960).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
                 const items = [authStore, "result:failure", "catalog_state:unknown", closure_5];
                 obj6[1] = items;
                 const _Date2 = Date;
@@ -162,9 +162,9 @@ function _fetchBadgeDirectory() {
                 items1[2] = "catalog_state:" + str;
                 items1[3] = closure_5;
                 c8 = items1;
-                obj = obj1(6970);
+                obj = obj1(6955);
                 const obj8 = { name: null, tags: null };
-                obj8[0] = callback(6975).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
+                obj8[0] = callback(6960).MetricEvents.BADGE_DIRECTORY_CATALOG_FETCH;
                 obj8[1] = c8;
                 const _Date = Date;
                 obj.distribution(obj8, Date.now() - c6);
@@ -226,7 +226,7 @@ function _fetchBadge() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

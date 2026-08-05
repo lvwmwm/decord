@@ -1,10 +1,10 @@
-// Module ID: 15198
-// Function ID: 15199
+// Module ID: 15178
+// Function ID: 15179
 // Name: AccountLinkLargeBanner
-// Dependencies: [19, 17, 1874, 1369, 21, 712, 5620, 15199, 9370, 4699, 4285, 647, 5610, 5630, 5317, 4812, 5270, 1297, 4281, 1236, 4695, 9247, 2]
+// Dependencies: [19, 17, 1874, 1369, 21, 712, 5605, 15179, 9341, 4669, 4255, 647, 5595, 5615, 5302, 4797, 5255, 1297, 4251, 1236, 4665, 9218, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15198 (AccountLinkLargeBanner)
+// Module 15178 (AccountLinkLargeBanner)
 import get_ActivityIndicator from "Button";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -65,7 +65,7 @@ function AccountLinkLargeBanner(arg0) {
     items3[2] = callback(closure_4, obj6);
     obj3[1] = items3;
     items2[1] = callback2(closure_4, obj3);
-    const obj7 = { user: null, size: null, guildId: "disabled" };
+    const obj7 = { user: null, size: null, guildId: "Array" };
     obj7[0] = stateFromStores;
     obj7[1] = tmp2(tmp3[17]).AvatarSizes.LARGE_48;
     items2[2] = callback(tmp2(tmp3[17]).Avatar, obj7);
@@ -201,19 +201,19 @@ obj3[5] = { marginTop: PX_122, width: "100%" };
 let closure_23 = createCacheKey.createStyles(obj3);
 let obj4 = { flexDirection: "row", gap: require("Themes").space.PX_12 };
 const memoResult = importAllResult.memo((arg0) => {
-  let obj = importDefault(15199);
+  let obj = importDefault(15179);
   const config = obj.useConfig({ location: "AccountLinkBanner" });
   const bannerSize = config.bannerSize;
   let tmp5Result = null;
   if (config.enabled) {
-    let tmp8 = bannerSize === require(15199) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE;
+    let tmp8 = bannerSize === require(15179) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE;
     if (tmp8) {
       obj = {};
       const merged = Object.assign(arg0);
       tmp8 = callback(AccountLinkLargeBanner, obj);
     }
     const items = [tmp8, ];
-    let tmp14 = bannerSize === require(15199) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM;
+    let tmp14 = bannerSize === require(15179) /* apexExperiment */.MobileAccountLinkingBannerSize.MEDIUM;
     if (tmp14) {
       obj = {};
       const merged1 = Object.assign(arg0);
@@ -236,23 +236,23 @@ export const ACCOUNT_LINK_BANNER_MARGIN_TOP = PX_8;
 export const ACCOUNT_LINK_BANNER_MARGIN_BOTTOM = PX_82;
 export const getScaledAccountLinkBannerHeight = function getScaledAccountLinkBannerHeight(fontScale) {
   let sum3 = dependencyMap;
-  const config = importDefault(15199).getConfig({ location: "getScaledAccountLinkBannerHeight" });
+  const config = importDefault(15179).getConfig({ location: "getScaledAccountLinkBannerHeight" });
   const bannerSize = config.bannerSize;
   if (!config.enabled) {
     return 0;
-  } else if (bannerSize === require(15199) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE) {
+  } else if (bannerSize === require(15179) /* apexExperiment */.MobileAccountLinkingBannerSize.LARGE) {
     const sum = PX_8 + PX_12 + closure_16 + PX_16;
-    let tmp3Result = tmp3(9370);
+    let tmp3Result = tmp3(9341);
     const sum1 = sum + tmp3Result.scaleTextLineHeight(c17, fontScale) + PX_4;
-    tmp3Result = tmp3(9370);
+    tmp3Result = tmp3(9341);
     const sum2 = sum1 + 2 * tmp3Result.scaleTextLineHeight(c18, fontScale) + PX_162;
-    sum3 = sum2 + tmp3(4699).MEDIUM_BUTTON_HEIGHT + PX_12;
+    sum3 = sum2 + tmp3(4669).MEDIUM_BUTTON_HEIGHT + PX_12;
     let num = sum3 + PX_82;
   } else {
     num = 0;
-    if (bannerSize === tmp3(15199).MobileAccountLinkingBannerSize.MEDIUM) {
+    if (bannerSize === tmp3(15179).MobileAccountLinkingBannerSize.MEDIUM) {
       const sum4 = PX_8 + PX_12 + 48 + PX_122;
-      num = sum4 + tmp3(4699).SMALL_BUTTON_HEIGHT + PX_12 + PX_82;
+      num = sum4 + tmp3(4669).SMALL_BUTTON_HEIGHT + PX_12 + PX_82;
     }
   }
 };

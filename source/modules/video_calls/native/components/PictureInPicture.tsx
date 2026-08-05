@@ -1,9 +1,9 @@
-// Module ID: 10569
-// Function ID: 10570
+// Module ID: 10541
+// Function ID: 10542
 // Name: PictureInPicturePositions
-// Dependencies: [32, 19, 17, 9655, 676, 21, 4285, 1297, 10570, 1474, 5310, 10573, 4146, 4694, 10574, 10575, 5368, 500, 2]
+// Dependencies: [32, 19, 17, 9626, 676, 21, 4255, 1297, 10542, 1474, 5295, 10545, 4116, 4664, 10546, 10547, 5353, 500, 2]
 
-// Module 10569 (PictureInPicturePositions)
+// Module 10541 (PictureInPicturePositions)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";

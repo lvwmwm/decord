@@ -1,10 +1,10 @@
-// Module ID: 5788
-// Function ID: 5789
+// Module ID: 5773
+// Function ID: 5774
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1874, 5789, 5790, 3906, 2]
+// Dependencies: [1874, 5774, 5775, 3876, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 5788 (canUserSeeMonetizationOnboarding)
+// Module 5773 (canUserSeeMonetizationOnboarding)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -16,12 +16,12 @@ export const canUserSeeMonetizationOnboarding = function canUserSeeMonetizationO
   if (currentUser != null) {
     id = currentUser.id;
   }
-  let obj = require(5789) /* computeGuildRoleSubscriptionSettingsVisibility */;
+  let obj = require(5774) /* computeGuildRoleSubscriptionSettingsVisibility */;
   obj = { guild: mergeGuildAvatar, isOwner: mergeGuildAvatar.ownerId === id, canManageGuildRoleSubscriptions: null, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
-  obj[2] = require(5789) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(mergeGuildAvatar);
-  const obj3 = require(5789) /* computeGuildRoleSubscriptionSettingsVisibility */;
-  obj[3] = require(5790) /* set */.isUserInCreatorMonetizationEligibleCountry();
-  const obj4 = require(5790) /* set */;
-  obj[4] = require(3906) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(mergeGuildAvatar.id);
+  obj[2] = require(5774) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(mergeGuildAvatar);
+  const obj3 = require(5774) /* computeGuildRoleSubscriptionSettingsVisibility */;
+  obj[3] = require(5775) /* set */.isUserInCreatorMonetizationEligibleCountry();
+  const obj4 = require(5775) /* set */;
+  obj[4] = require(3876) /* isRestrictedFromShowingGuildPurchaseEntryPoints */.shouldRestrictUpdatingCreatorMonetizationSettings(mergeGuildAvatar.id);
   return obj.canSeeGuildRoleSubscriptionSettings(obj);
 };

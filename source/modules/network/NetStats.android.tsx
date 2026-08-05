@@ -1,10 +1,10 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 6815
+// Function ID: 6816
 // Name: receiveNetworkInfoformation
-// Dependencies: [5, 17, 4960, 6831, 1862, 676, 3, 1456, 1455, 6842, 687, 595, 709, 4143, 6832, 6843, 9, 2]
+// Dependencies: [5, 17, 4945, 6816, 1862, 676, 3, 1456, 1455, 6827, 687, 595, 709, 4113, 6817, 6828, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 6830 (receiveNetworkInfoformation)
+// Module 6815 (receiveNetworkInfoformation)
 import ME from "ME";
 import get_ActivityIndicator from "set";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -163,7 +163,7 @@ prototype["writeExistingEventStorage"] = function writeExistingEventStorage() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -235,7 +235,7 @@ prototype["track"] = function track() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -307,19 +307,19 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     outer1_19();
     const obj7 = outer1_1(outer1_2[13]);
     let callback = yield obj7.getAppFirstVisibleTimestamp();
-    const obj4 = callback(6832);
+    const obj4 = callback(6817);
     let lib = yield obj4.getSession();
     const obj5 = { type: null, properties: null };
     obj5[0] = constants.APP_NETWORK_USAGE;
     const obj6 = {};
-    const merged = Object.assign(callback(6843).getDeviceMetadata());
+    const merged = Object.assign(callback(6828).getDeviceMetadata());
     const _Date = Date;
     obj6.client_track_timestamp = Date.now();
     if (lib != null) {
       const uuid = lib.uuid;
     }
     obj6.client_heartbeat_session_id = uuid;
-    const obj = callback(6843);
+    const obj = callback(6828);
     obj6.load_id = obj.currentLoadId();
     obj6.num_guilds = guildCount.getGuildCount();
     obj6.was_authenticated = lib(9).wasAuthenticated;
@@ -376,7 +376,7 @@ prototype["getQueuedEvent"] = function getQueuedEvent() {
     obj6.download_bytes_received = closure_10.downloadBytesReceived;
     obj6.download_num_requests = closure_10.downloadNumRequests;
     obj6.media_player_bytes_received = closure_10.mediaPlayerBytesReceived;
-    const obj1 = callback(6842);
+    const obj1 = callback(6827);
     obj6.rtc_bytes = obj1.getRTCTotalBytes();
     obj6.num_message_sends = closure_15;
     if (0 !== closure_15) {

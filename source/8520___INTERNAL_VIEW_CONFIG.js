@@ -1,16 +1,14 @@
 // Module ID: 8520
 // Function ID: 8521
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [26, 106, 65]
+// Dependencies: [26, 65]
 
 // Module 8520 (__INTERNAL_VIEW_CONFIG)
-import weakSet from "weakSet";
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "RNSVGMask", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: null };
-obj = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: require("result").colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, x: true, y: true, height: true, width: true, maskUnits: true, maskContentUnits: true, maskType: true };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
-obj[2] = obj;
+let obj = { uiViewClassName: "RNSVGSvgView", validAttributes: null };
+obj = { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: require("result").colorAttribute, pointerEvents: true, hitSlop: true };
+obj[1] = obj;
 
-export default setRuntimeConfigProvider.get("RNSVGMask", () => obj);
+export default setRuntimeConfigProvider.get("RNSVGSvgView", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

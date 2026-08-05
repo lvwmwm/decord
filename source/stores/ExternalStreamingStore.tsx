@@ -1,9 +1,9 @@
-// Module ID: 10353
-// Function ID: 10354
+// Module ID: 10325
+// Function ID: 10326
 // Name: makeTwitchRequest
-// Dependencies: [5, 4964, 4125, 676, 687, 530, 5090, 709, 8051, 4966, 659, 589, 2]
+// Dependencies: [5, 4949, 4095, 676, 687, 530, 5075, 709, 8023, 4951, 659, 589, 2]
 
-// Module 10353 (makeTwitchRequest)
+// Module 10325 (makeTwitchRequest)
 import sendRequest from "sendRequest";
 import closure_4 from "set";
 import initialize from "initialize";
@@ -81,8 +81,8 @@ prototype["start"] = function start() {
   if (!this._started) {
     self._started = true;
     if (closure_4.isFetching()) {
-      const response = importDefault(5090).fetch();
-      const obj = importDefault(5090);
+      const response = importDefault(5075).fetch();
+      const obj = importDefault(5075);
     } else {
       self._check();
     }
@@ -118,7 +118,7 @@ prototype["_checkTwitch"] = function _checkTwitch(accessToken, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -326,7 +326,7 @@ prototype["_checkYouTube"] = function _checkYouTube(c0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

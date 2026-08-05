@@ -1,9 +1,9 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13546
+// Function ID: 13547
 // Name: checkForNewerBuild
-// Dependencies: [4267, 3, 589, 709, 13160, 2]
+// Dependencies: [4237, 3, 589, 709, 13132, 2]
 
-// Module 13574 (checkForNewerBuild)
+// Module 13546 (checkForNewerBuild)
 import UPDATE_CHECK_INTERVAL from "UPDATE_CHECK_INTERVAL";
 import { Store } from "initialize";
 
@@ -25,15 +25,15 @@ prototype["checkForNewerBuild"] = function checkForNewerBuild() {
   if (true !== checking.checking) {
     importDefault(709).dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_STARTED" });
     let obj = importDefault(709);
-    const obj2 = require(13160) /* _checkForNewerBuild */;
-    require(13160) /* _checkForNewerBuild */.checkForNewerBuild().then((newBuild) => {
+    const obj2 = require(13132) /* _checkForNewerBuild */;
+    require(13132) /* _checkForNewerBuild */.checkForNewerBuild().then((newBuild) => {
       let obj = callback(709);
       obj = { type: "MOBILE_NATIVE_UPDATE_CHECK_FINISHED", newBuild };
       obj.dispatch(obj);
     }, () => {
       callback(709).dispatch({ type: "MOBILE_NATIVE_UPDATE_CHECK_FAILED" });
     });
-    const checkForNewerBuildResult = require(13160) /* _checkForNewerBuild */.checkForNewerBuild();
+    const checkForNewerBuildResult = require(13132) /* _checkForNewerBuild */.checkForNewerBuild();
   }
 };
 prototype["ensureInitialized"] = function ensureInitialized() {

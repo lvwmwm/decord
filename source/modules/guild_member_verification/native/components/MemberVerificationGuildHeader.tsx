@@ -1,10 +1,10 @@
-// Module ID: 8247
-// Function ID: 8248
+// Module ID: 8219
+// Function ID: 8220
 // Name: AVATAR_SIZE
-// Dependencies: [19, 17, 8226, 21, 4285, 712, 1416, 8248, 1581, 4146, 4706, 5661, 8249, 4281, 1236, 2]
+// Dependencies: [19, 17, 8198, 21, 4255, 712, 1416, 8220, 1581, 4116, 4676, 5646, 8221, 4251, 1236, 2]
 // Exports: default
 
-// Module 8247 (AVATAR_SIZE)
+// Module 8219 (AVATAR_SIZE)
 import "noop";
 import { View } from "get ActivityIndicator";
 import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9";
@@ -122,7 +122,7 @@ export default function MemberVerificationGuildHeader(hasManualFormFields) {
   obj1 = { style: tmp.header, children: null };
   const animatedStyle1 = obj4.useAnimatedStyle(fn);
   obj2 = { style: animatedStyle, children: null };
-  let items = [callback(tmp5(tmp3[9]).Image, { style: { width: "100%", height: tmp8 }, source: guildBannerSource }), callback(tmp5(tmp3[10]), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] })];
+  let items = [callback(tmp5(tmp3[9]).Image, { style: { width: "100%", height: tmp8 }, resizeMode: "cover", source: guildBannerSource }), callback(tmp5(tmp3[10]), { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.linearGradient, colors: ["rgba(0,0,0,0.7)", "transparent"] })];
   obj2[1] = items;
   let items1 = [callback2(tmp5(tmp3[9]).View, obj2), ];
   obj4 = { style: tmp.headerContent, children: null };

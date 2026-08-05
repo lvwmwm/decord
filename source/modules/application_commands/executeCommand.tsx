@@ -1,10 +1,10 @@
-// Module ID: 9910
-// Function ID: 9911
+// Module ID: 9881
+// Function ID: 9882
 // Name: _executeCommand
-// Dependencies: [5, 5143, 1946, 1862, 4620, 1874, 7159, 676, 4278, 6891, 709, 7144, 6889, 1906, 9911, 9913, 38, 9914, 4479, 7157, 8168, 3926, 1351, 7133, 8031, 7213, 8030, 9455, 8119, 7132, 6826, 4822, 1236, 4818, 7221, 2]
+// Dependencies: [5, 5128, 1946, 1862, 4590, 1874, 7133, 676, 4248, 6876, 709, 7118, 6874, 1906, 9882, 9884, 38, 9885, 4449, 7131, 8140, 3896, 1351, 7107, 8003, 7187, 8002, 9426, 8091, 7106, 6811, 4807, 1236, 4803, 7195, 2]
 // Exports: default, retryCommandMessage
 
-// Module 9910 (_executeCommand)
+// Module 9881 (_executeCommand)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _getSystemLocale from "_getSystemLocale";
@@ -53,7 +53,7 @@ function _executeCommand() {
             obj[0] = interactionLifecycleOptions;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           while (true) {
@@ -123,7 +123,7 @@ function _executeCommand() {
                 c15 = 1;
                 let num11 = 1;
                 channelId = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp4) {
@@ -1244,7 +1244,7 @@ function _retryCommandMessage() {
           obj[0] = interactionLifecycleOptions;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -1332,7 +1332,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[3] = tmp;
     let nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      let obj1 = obj(7133);
+      let obj1 = obj(7107);
       nonce = obj1.createNonce();
     }
     obj[4] = nonce;
@@ -1349,7 +1349,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     obj[1] = applicationId;
     obj[2] = id;
     obj[4] = obj;
-    importAll(8031).addQueued(obj.nonce, obj);
+    importAll(8003).addQueued(obj.nonce, obj);
     if (null != attachments) {
       if (attachments.length > 0) {
         (function stageAttachments(attachments, nonce, id, maxSizeCallback) {
@@ -1401,12 +1401,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         })(attachments, obj.nonce, id, maxSizeCallback);
       }
     }
-    const obj3 = importAll(8031);
+    const obj3 = importAll(8003);
     const tmp10 = obj;
     obj1 = { type: null, message: null };
-    obj1[0] = tmp10(7213).MessageDataType.COMMAND;
+    obj1[0] = tmp10(7187).MessageDataType.COMMAND;
     obj1[1] = obj;
-    onMessageSuccess(7213).enqueue(obj1, (ok) => {
+    onMessageSuccess(7187).enqueue(obj1, (ok) => {
       let applicationId;
       let channelId;
       let guildId;
@@ -1424,7 +1424,7 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         callback2();
       }
     });
-    const obj6 = onMessageSuccess(7213);
+    const obj6 = onMessageSuccess(7187);
   }
 }
 function displayInteractionLifecycleInChat() {
@@ -1458,7 +1458,7 @@ function _displayInteractionLifecycleInChat() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -1618,26 +1618,26 @@ function _displayInteractionLifecycleInChat() {
   return applyArgumentsResult;
 }
 function getAnalyticsLocationFromCommandOrigin(arg0) {
-  if (require(6891) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.APP_LAUNCHER;
-  } else if (tmp(6891).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
-  } else if (tmp(6891).CommandOrigin.IMAGE_RECS_MENU === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
-  } else if (tmp(6891).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
-  } else if (tmp(6891).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
-  } else if (tmp(6891).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
-  } else if (tmp(6891).CommandOrigin.MINI_SHELF === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
-  } else if (tmp(6891).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
-  } else if (tmp(6891).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
-    return tmp(6891).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
+  if (require(6876) /* ApplicationCommandSectionType */.CommandOrigin.APPLICATION_LAUNCHER === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.APP_LAUNCHER;
+  } else if (tmp(6876).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW;
+  } else if (tmp(6876).CommandOrigin.IMAGE_RECS_MENU === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.IMAGE_RECS_MENU;
+  } else if (tmp(6876).CommandOrigin.IMAGE_RECS_SUBMENU === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.IMAGE_RECS_SUBMENU;
+  } else if (tmp(6876).CommandOrigin.ACTIVITY_INSTANCE_EMBED === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.ACTIVITY_INSTANCE_EMBED;
+  } else if (tmp(6876).CommandOrigin.ACTIVITY_BOOKMARK_EMBED === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.ACTIVITY_BOOKMARK_EMBED;
+  } else if (tmp(6876).CommandOrigin.MINI_SHELF === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.ACTIVITIES_MINI_SHELF;
+  } else if (tmp(6876).CommandOrigin.VOICE_TILE_ACTIVITY_SUGGESTIONS === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.VC_TILE_ACTIVITY_SUGGESTION;
+  } else if (tmp(6876).CommandOrigin.APP_DMS_ENTRY_POINT_COMMAND_BUTTON === arg0) {
+    return tmp(6876).ApplicationCommandTriggerLocations.APP_DMS_ENTRY_POINT_COMMAND_BUTTON;
   } else {
-    return tmp(6891).ApplicationCommandTriggerLocations.SLASH_UI;
+    return tmp(6876).ApplicationCommandTriggerLocations.SLASH_UI;
   }
 }
 function getMaxAndTotalFileSize() {
@@ -1670,7 +1670,7 @@ function _getMaxAndTotalFileSize() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         while (true) {
@@ -1812,7 +1812,7 @@ function _stageAttachments() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -1839,13 +1839,13 @@ function _stageAttachments() {
                 if (callback2 != null) {
                   tmp(dependencyMap, arg0);
                 }
-                let obj = callback2(8031);
+                let obj = callback2(8003);
                 const intl = callback(1236).intl;
                 obj = { maxSize: null };
-                obj[0] = callback(4822).sizeString(dependencyMap);
+                obj[0] = callback(4807).sizeString(dependencyMap);
                 obj.setFailed(closure_1, outer1_11.ENTITY_TOO_LARGE, intl.formatToPlainString(callback(1236).t.fxEKdS, obj));
               };
-              dependencyMap = lib(4822).maxFileSize(callback2);
+              dependencyMap = lib(4807).maxFileSize(callback2);
               largestUploadedFileSize = 1;
               c8 = 1;
               const obj1 = { value: null, done: false };
@@ -1867,12 +1867,12 @@ function _stageAttachments() {
               largestUploadedFileSize = getEmojiToGroupId.largestUploadedFileSize;
               const _Math = Math;
               if (largestUploadedFileSize <= Math.max(dependencyMap, outer1_15)) {
-                if (totalSize <= lib(4818).MAX_TOTAL_ATTACHMENT_SIZE) {
+                if (totalSize <= lib(4803).MAX_TOTAL_ATTACHMENT_SIZE) {
                   totalSize = 1;
                   largestUploadedFileSize = 4;
                   c8 = 1;
                   let obj3 = { value: null, done: false };
-                  obj3[0] = callback(7221)(lib);
+                  obj3[0] = callback(7195)(lib);
                   return obj3;
                 }
               }
@@ -1883,7 +1883,7 @@ function _stageAttachments() {
           } else {
             if (2 === tmp8) {
               totalSize = 0;
-              obj3 = callback2(8031);
+              obj3 = callback2(8003);
               let intl = lib(1236).intl;
               const obj4 = { count: null };
               obj4[0] = lib.length;
@@ -1906,7 +1906,7 @@ function _stageAttachments() {
                 largestUploadedFileSize = c8.largestUploadedFileSize;
                 let someResult = lib.some((error) => error.error === constants.ENTITY_TOO_LARGE);
                 if (!someResult) {
-                  someResult = totalSize > lib(4818).MAX_TOTAL_ATTACHMENT_SIZE;
+                  someResult = totalSize > lib(4803).MAX_TOTAL_ATTACHMENT_SIZE;
                 }
                 let flag = !someResult;
                 if (someResult) {

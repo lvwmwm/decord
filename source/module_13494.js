@@ -4,4 +4,4 @@
 
 // Module 13494
 
-export default false;
+export default {};

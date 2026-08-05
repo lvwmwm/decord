@@ -1,10 +1,10 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16650
+// Function ID: 16651
 // Name: useFetchHighlightedCreatorGuildDetails
-// Dependencies: [5, 32, 19, 5785, 2]
+// Dependencies: [5, 32, 19, 5770, 2]
 // Exports: default
 
-// Module 16669 (useFetchHighlightedCreatorGuildDetails)
+// Module 16650 (useFetchHighlightedCreatorGuildDetails)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -40,7 +40,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

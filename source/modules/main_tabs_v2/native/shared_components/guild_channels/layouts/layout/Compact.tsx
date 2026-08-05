@@ -1,10 +1,10 @@
-// Module ID: 9714
-// Function ID: 9715
+// Module ID: 9685
+// Function ID: 9686
 // Name: CHANNEL_LIST_STYLES_COMPACT
-// Dependencies: [712, 1297, 5661, 5620, 9713, 2]
+// Dependencies: [712, 1297, 5646, 5605, 9684, 2]
 // Exports: getCompactStyles
 
-// Module 9714 (CHANNEL_LIST_STYLES_COMPACT)
+// Module 9685 (CHANNEL_LIST_STYLES_COMPACT)
 let obj = { layout: { margin: { marginLeft: 4, marginRight: 4, marginVertical: 0 }, marginPanels: { marginLeft: 8, marginRight: 8, marginVertical: 0 }, marginThread: { marginLeft: 56, marginRight: 4, marginVertical: 0 } }, container: null, voiceUsers: null, voiceOrStageSummaryRow: null, channelName: null, messagePreview: null, timestamp: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, category: null, typing: null, activeThreadCount: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, separator: null, searchButton: null };
 obj = { borderRadius: require("Themes").radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };
 obj[1] = obj;
@@ -46,7 +46,7 @@ export const getCompactStyles = function getCompactStyles(arg0) {
     obj = { text: null };
     obj[0] = { variant: "text-xs/semibold" };
     obj[1] = obj;
-    let tmp = importDefault(9713)(obj, obj);
+    let tmp = importDefault(9684)(obj, obj);
   } else {
     tmp = obj;
   }

@@ -1,10 +1,10 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 15384
+// Function ID: 15385
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 7020, 676, 709, 5094, 503, 1385, 7022, 530, 3958, 2]
+// Dependencies: [5, 6994, 676, 709, 5079, 503, 1385, 6996, 530, 3928, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15403 (_fetchNotificationCenterItems)
+// Module 15384 (_fetchNotificationCenterItems)
 import encodeProperties from "encodeProperties";
 import _validate from "_validate";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ function _fetchNotificationCenterItems() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ function _fetchNotificationCenterItems() {
               c6 = 3;
               c7 = 1;
               let obj6 = { value: null, done: false };
-              obj6[0] = callback(5094).get(obj3);
+              obj6[0] = callback(5079).get(obj3);
               return obj6;
             }
           } else if (2 === tmp7) {
@@ -310,7 +310,7 @@ function _deleteNotificationCenterItem() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -379,7 +379,7 @@ function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp19) {
           encodeProperties = tmp19;
@@ -435,7 +435,7 @@ export const markNotificationCenterItemAcked = function markNotificationCenterIt
     importDefault(709).dispatch(obj);
     const obj4 = importDefault(709);
   } else {
-    obj = require(7022) /* getRelativeTimestamp */;
+    obj = require(6996) /* getRelativeTimestamp */;
     if (obj.isMentionItem(local_id)) {
       obj = { type: "NOTIFICATION_CENTER_ITEMS_ACK", optimistic: true, ids: null };
       const items1 = [local_id.id];

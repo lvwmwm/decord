@@ -1,10 +1,10 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 8293
+// Function ID: 8294
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 676, 5739, 709, 530, 5736, 1222, 595, 8083, 8080, 8322, 7514, 2]
+// Dependencies: [5, 676, 5724, 709, 530, 5721, 1222, 595, 8055, 8052, 8294, 7486, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 8321 (saveProfileAndAccountRequest)
+// Module 8293 (saveProfileAndAccountRequest)
 import handleLogout from "handleLogout";
 import ME from "ME";
 import str2 from "str2";
@@ -38,7 +38,7 @@ function _saveProfileAndAccountRequest() {
       if (obj1 === undefined) {
         obj1 = {};
       }
-      yield "ct";
+      yield "PX_8";
       const HTTP = lib(body[4]).HTTP;
       const obj3 = { url: null, oldFormErrors: true, body: null, headers: null, rejectWithError: null };
       obj3[0] = token.ME;
@@ -110,8 +110,8 @@ export const disableAccount = function disableAccount(password, arg1) {
   const obj3 = require(530) /* sendRequest */;
   const tmp2 = arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT;
   return HTTP.post(obj).then(() => {
-    callback2(5736).logoutInternal();
-    const obj = callback2(5736);
+    callback2(5721).logoutInternal();
+    const obj = callback2(5721);
     callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT);
   });
 };
@@ -186,11 +186,11 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.push_voip_token = value;
   }
   obj = { headers: null };
-  obj[0] = avatarId(8083).buildHeadersForMd5({ [avatar(8080).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
+  obj[0] = avatarId(8055).buildHeadersForMd5({ [avatar(8052).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 });
   const tmp = avatarId;
   tmp11 = null != tmp10 && null != value;
   tmp13 = closure_8;
-  let tmpResult = avatarId(8083);
+  let tmpResult = avatarId(8055);
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {
     avatarId(outer1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;

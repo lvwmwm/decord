@@ -1,10 +1,10 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12096
+// Function ID: 12097
 // Name: onConnectToConsole
-// Dependencies: [19, 676, 4101, 1358, 10407, 10472, 10772, 2]
+// Dependencies: [19, 676, 4071, 1358, 10379, 10444, 10744, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 12124 (onConnectToConsole)
+// Module 12096 (onConnectToConsole)
 import noop from "noop";
 import ME from "ME";
 
@@ -15,21 +15,21 @@ const require = arg1;
 let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/video_calls/native/useOnConnectToConsole.tsx");
 
 export const onConnectToConsole = function onConnectToConsole(channel, closure_0) {
-  const result = require(4101) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.DONUT_MOBILE_NUX);
+  const result = require(4071) /* UNSAFE_isDismissibleContentDismissed */.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.DONUT_MOBILE_NUX);
   if (closure_0.twoWayLink) {
     if (!closure_0.revoked) {
-      tmp(10772).beginConsoleTransfer(channel, closure_0.type);
+      tmp(10744).beginConsoleTransfer(channel, closure_0.type);
     }
   }
   const type = closure_0.type;
   if (constants2.XBOX === type) {
     const items = [constants.CHANNEL_CALL];
-    return importDefault(10407).showModal(items);
+    return importDefault(10379).showModal(items);
   } else {
     const items1 = [constants.CHANNEL_CALL];
-    return importDefault(10472).showModal(items1, closure_0.type);
+    return importDefault(10444).showModal(items1, closure_0.type);
   }
-  const obj = require(4101) /* UNSAFE_isDismissibleContentDismissed */;
+  const obj = require(4071) /* UNSAFE_isDismissibleContentDismissed */;
   tmp = require;
 };
 export const useOnConnectToConsole = function useOnConnectToConsole(channel, account) {

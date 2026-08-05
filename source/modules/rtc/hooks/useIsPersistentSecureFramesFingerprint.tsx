@@ -1,10 +1,10 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9111
+// Function ID: 9112
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 4356, 9133, 589, 9131, 2]
+// Dependencies: [5, 32, 19, 4326, 9105, 589, 9103, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9139 (useIsPersistentSecureFramesFingerprint)
+// Module 9111 (useIsPersistentSecureFramesFingerprint)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -51,7 +51,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

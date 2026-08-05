@@ -21,7 +21,7 @@ function _diagnoseSdkConnectivity() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -78,7 +78,7 @@ function _diagnoseSdkConnectivity() {
         } else {
           c2 = 0;
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp7) {
         if (tmp3 === c2) {

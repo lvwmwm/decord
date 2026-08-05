@@ -1,9 +1,9 @@
-// Module ID: 6857
-// Function ID: 6858
+// Module ID: 6842
+// Function ID: 6843
 // Name: getAll
 // Dependencies: [5, 1340, 1218, 3, 1907, 1923, 12, 2]
 
-// Module 6857 (getAll)
+// Module 6842 (getAll)
 import databaseName from "databaseName";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
@@ -80,7 +80,7 @@ prototype["getAll"] = function getAll(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       while (true) {

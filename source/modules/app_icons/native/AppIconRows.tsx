@@ -1,10 +1,10 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 14587
+// Function ID: 14588
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1874, 21, 4285, 7584, 5649, 1236, 14608, 7582, 589, 1897, 2]
+// Dependencies: [32, 19, 17, 1874, 21, 4255, 7556, 5634, 1236, 14588, 7554, 589, 1897, 2]
 // Exports: default
 
-// Module 14607 (BackwardsCompatibleAppIconRows)
+// Module 14587 (BackwardsCompatibleAppIconRows)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -51,7 +51,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return outer1_7(_undefined(_undefined2[9]), obj);
     });
-    obj[1] = callback(merged(5649).TableRowGroup, obj);
+    obj[1] = callback(merged(5634).TableRowGroup, obj);
     return callback(View, obj);
   }
 }
@@ -64,7 +64,7 @@ export default function AppIconRows(onSelect) {
   let limitedTimeAppIcons;
   let officialAppIcons;
   onSelect = onSelect.onSelect;
-  let obj = require(7582) /* fetchCurrentAppIcon */;
+  let obj = require(7554) /* fetchCurrentAppIcon */;
   const appIcons = obj.useAppIcons();
   ({ limitedTimeAppIcons, currentAppIcon, officialAppIcons } = appIcons);
   let obj1 = require(589) /* initialize */;

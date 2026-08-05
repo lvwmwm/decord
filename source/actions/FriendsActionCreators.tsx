@@ -1,8 +1,8 @@
-// Module ID: 16429
-// Function ID: 16430
-// Dependencies: [676, 709, 1222, 15701, 2]
+// Module ID: 16410
+// Function ID: 16411
+// Dependencies: [676, 709, 1222, 15682, 2]
 
-// Module 16429
+// Module 16410
 import { Routes } from "ME";
 
 const result = require("transitionTo").fileFinishedImporting("actions/FriendsActionCreators.tsx");
@@ -29,7 +29,7 @@ export default {
     if (flag) {
       obj = { tab_opened: null };
       obj[0] = PENDING;
-      tmp5(15701)(obj);
+      tmp5(15682)(obj);
     }
   },
   setSection(section) {

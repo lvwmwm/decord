@@ -1,9 +1,9 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7124
+// Function ID: 7125
 // Name: getForumChannelSessionId
 // Dependencies: [514, 2]
 
-// Module 7150 (getForumChannelSessionId)
+// Module 7124 (getForumChannelSessionId)
 class ForumSessionAnalyticsManager {
 }
 ForumSessionAnalyticsManager.prototype["getForumChannelSessionId"] = function getForumChannelSessionId(arg0) {

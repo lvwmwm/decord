@@ -1,10 +1,10 @@
-// Module ID: 11809
-// Function ID: 11810
+// Module ID: 11781
+// Function ID: 11782
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 676, 3, 6777, 7295, 6776, 698, 4624, 1236, 5118, 2]
+// Dependencies: [5, 19, 676, 3, 6762, 7267, 6761, 698, 4594, 1236, 5103, 2]
 // Exports: default
 
-// Module 11809 (useGuildBoostPurchaseHandler)
+// Module 11781 (useGuildBoostPurchaseHandler)
 import PaymentFlowStep from "PaymentFlowStep";
 import noop from "noop";
 import { AnalyticEvents } from "ME";
@@ -16,7 +16,7 @@ let result = require("ME").fileFinishedImporting("modules/guild_boosting/native/
 
 export default function useGuildBoostPurchaseHandler(arg0) {
   let _require = arg0;
-  let obj = _require(6777);
+  let obj = _require(6762);
   _require = undefined;
   const result = obj.isMobileWebRedirectCheckoutEnabled();
   _require = callback((arg0, arg1) => {
@@ -36,7 +36,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
             obj = callback(outer2_2[10]);
             obj.closeApplyBoostModal();
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp10) {
           c4 = tmp;

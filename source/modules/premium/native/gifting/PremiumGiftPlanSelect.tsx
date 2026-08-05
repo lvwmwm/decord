@@ -1,10 +1,10 @@
-// Module ID: 9951
-// Function ID: 9952
+// Module ID: 9922
+// Function ID: 9923
 // Name: items
-// Dependencies: [32, 19, 17, 8712, 7266, 1876, 676, 21, 4285, 712, 689, 1480, 1581, 1474, 9529, 4681, 5244, 589, 9952, 9496, 8708, 9950, 9954, 9957, 8221, 4146, 1297, 4286, 9963, 5630, 9964, 9998, 7669, 1236, 5270, 5236, 10026, 4706, 5235, 4281, 2]
+// Dependencies: [32, 19, 17, 8684, 7238, 1876, 676, 21, 4255, 712, 689, 1480, 1581, 1474, 9500, 4651, 5229, 589, 9923, 9467, 8680, 9921, 9925, 9928, 8193, 4116, 1297, 4256, 9934, 5615, 9935, 9969, 7641, 1236, 5255, 5221, 9997, 4676, 5220, 4251, 2]
 // Exports: default
 
-// Module 9951 (items)
+// Module 9922 (items)
 import componentDidMount from "componentDidMount";
 import apexExperiment from "apexExperiment";
 import get_ActivityIndicator from "initialize";
@@ -548,7 +548,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result3 = tmp4(tmp2[30]);
       }
     } else {
-      const obj34 = { style: null, guildId: "r", size: "ct", user: null };
+      const obj34 = { style: null, guildId: "r", size: "PX_8", user: null };
       obj34[0] = tmp13.avatar;
       const AvatarSizes = tmp(tmp2[26]).AvatarSizes;
       obj34[2] = tmp64Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;

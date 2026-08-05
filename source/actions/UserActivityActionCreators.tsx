@@ -1,10 +1,10 @@
-// Module ID: 11065
-// Function ID: 11066
+// Module ID: 11037
+// Function ID: 11038
 // Name: _getMetadata
-// Dependencies: [5, 4371, 676, 709, 11062, 530, 2]
+// Dependencies: [5, 4341, 676, 709, 11034, 530, 2]
 // Exports: getMetadata, play, sync
 
-// Module 11065 (_getMetadata)
+// Module 11037 (_getMetadata)
 import sendRequest from "sendRequest";
 import sortActivity from "sortActivity";
 import { Endpoints } from "ME";
@@ -71,8 +71,8 @@ export const sync = function sync(activity, userId) {
 };
 export const play = function play(closure_0, closure_1) {
   const _require = closure_0;
-  const spotifyMetadataFromActivity = _require(11062).getSpotifyMetadataFromActivity(closure_0, closure_1);
-  let obj = _require(11062);
+  const spotifyMetadataFromActivity = _require(11034).getSpotifyMetadataFromActivity(closure_0, closure_1);
+  let obj = _require(11034);
   spotifyMetadataFromActivity.then((metadata) => {
     let obj = callback(outer1_2[3]);
     obj = { type: "ACTIVITY_PLAY", activity: closure_0, userId: callback, metadata };

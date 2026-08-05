@@ -1,9 +1,9 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 12780
+// Function ID: 12781
 // Name: pack
-// Dependencies: [12809, 4829, 2]
+// Dependencies: [12781, 4814, 2]
 
-// Module 12808 (pack)
+// Module 12780 (pack)
 import getErlpackEncoding from "getErlpackEncoding";
 import { ProcessArgs } from "get";
 

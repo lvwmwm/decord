@@ -1,10 +1,10 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 12342
+// Function ID: 12343
 // Name: createNitroSuggestedSku
-// Dependencies: [32, 4324, 9278, 9279, 9280, 676, 1876, 1236, 5761, 3931, 2]
+// Dependencies: [32, 4294, 9249, 9250, 9251, 676, 1876, 1236, 5746, 3901, 2]
 // Exports: buildReorderedNitroFirstWishlistItems, buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12370 (createNitroSuggestedSku)
+// Module 12342 (createNitroSuggestedSku)
 import _slicedToArray from "_slicedToArray";
 import createFromServer from "createFromServer";
 import { isCollectiblesWishlistItemRecord as closure_5 } from "createCollectiblesItemFromServerResponse";
@@ -40,8 +40,8 @@ export const isEligibleWishlistItemOnMobile = function isEligibleWishlistItemOnM
       let prop = isWishlistOwner.isSocialLayerStorefrontMobilePurchasingEnabled;
       if (prop) {
         if (!isWishlistOwner) {
-          isWishlistOwner = require(5761) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
-          const obj = require(5761) /* useSKUPrice */;
+          isWishlistOwner = require(5746) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(sku.sku);
+          const obj = require(5746) /* useSKUPrice */;
         }
         prop = isWishlistOwner;
       }

@@ -1,10 +1,10 @@
-// Module ID: 6741
-// Function ID: 6742
+// Module ID: 6726
+// Function ID: 6727
 // Name: VideoCameraSpotIllustration
-// Dependencies: [21, 5236, 6742, 2]
+// Dependencies: [21, 5221, 6727, 2]
 // Exports: VideoCameraSpotIllustration
 
-// Module 6741 (VideoCameraSpotIllustration)
+// Module 6726 (VideoCameraSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/VideoCameraSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const VideoCameraSpotIllustration = function VideoCameraSpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6742);
+  obj[0] = importDefault(6727);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const VideoCameraSpotIllustration = function VideoCameraSpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

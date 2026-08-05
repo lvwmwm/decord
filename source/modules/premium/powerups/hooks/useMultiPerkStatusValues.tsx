@@ -1,17 +1,17 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11816
+// Function ID: 11817
 // Name: useMultiPerkStatusValues
-// Dependencies: [4173, 11772, 1236, 2317, 2]
+// Dependencies: [4143, 11744, 1236, 2287, 2]
 // Exports: default
 
-// Module 11844 (useMultiPerkStatusValues)
+// Module 11816 (useMultiPerkStatusValues)
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");
 
 export default function useMultiPerkStatusValues(powerups) {
   powerups = powerups.powerups;
-  let obj = require(11772) /* usePowerupActiveStatus */;
+  let obj = require(11744) /* usePowerupActiveStatus */;
   const powerupsActiveStatuses = obj.usePowerupsActiveStatuses(powerups.guildId, powerups);
   const someResult = powerupsActiveStatuses.some((type) => type.type !== constants.INACTIVE);
   if (powerups.length <= 0) {
@@ -41,7 +41,7 @@ export default function useMultiPerkStatusValues(powerups) {
     } else if (someResult) {
       obj = { type: "active", statusText: null };
       const intl = tmp(1236).intl;
-      obj[1] = intl.string(importDefault(2317).FFLkmx);
+      obj[1] = intl.string(importDefault(2287).FFLkmx);
       tmp4 = obj;
     }
     const reduced1 = powerupsActiveStatuses.reduce((arg0, type) => {

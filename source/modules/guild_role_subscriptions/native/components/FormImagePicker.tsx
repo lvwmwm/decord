@@ -1,10 +1,10 @@
-// Module ID: 16690
-// Function ID: 16691
+// Module ID: 16671
+// Function ID: 16672
 // Name: pickImage
-// Dependencies: [5, 19, 17, 21, 4285, 712, 4826, 1450, 8979, 1236, 5236, 16691, 9591, 4281, 4695, 2]
+// Dependencies: [5, 19, 17, 21, 4255, 712, 4811, 1450, 8951, 1236, 5221, 16672, 9562, 4251, 4665, 2]
 // Exports: default
 
-// Module 16690 (pickImage)
+// Module 16671 (pickImage)
 import Themes from "Themes";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -43,7 +43,7 @@ function _pickImage() {
           obj[0] = base64;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ function _pickImage() {
               callback(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp17) {
           c4 = tmp;
@@ -240,8 +240,8 @@ export default function FormImagePicker(children) {
   obj = { style: tmp2.buttonColumn, children: null };
   obj = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description };
   const items = [
-    callback2(tmp6(4281).Text, obj),
-    callback2(tmp6(4695).Button, {
+    callback2(tmp6(4251).Text, obj),
+    callback2(tmp6(4665).Button, {
       text: stringResult,
       variant: "secondary",
       onPress() {

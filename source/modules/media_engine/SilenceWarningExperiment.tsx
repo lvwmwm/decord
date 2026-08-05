@@ -1,12 +1,12 @@
-// Module ID: 13080
-// Function ID: 13081
+// Module ID: 13052
+// Function ID: 13053
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 13080 (apexExperiment)
+// Module 13052 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
-let obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: "ct", enableHardwareSilenceWarning: "Array" };
+let obj = { resetSilenceWarningOnDeviceChange: false, resetSilenceWarningAfterNMinutes: "PX_8", enableHardwareSilenceWarning: "Array" };
 obj = { name: "2026-02-silence-warning-aggression", kind: "user", defaultConfig: obj, variations: null };
 obj = { 1: null, 2: null, 3: null };
 const obj1 = {};

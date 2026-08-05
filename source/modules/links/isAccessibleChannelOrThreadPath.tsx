@@ -1,10 +1,10 @@
-// Module ID: 5776
-// Function ID: 5777
+// Module ID: 5761
+// Function ID: 5762
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1933, 5206, 1372, 1935, 1862, 676, 1379, 5777, 5779, 5788, 5757, 5791, 5793, 5753, 5794, 5795, 4196, 5796, 5755, 1351, 5838, 4295, 4476, 2]
+// Dependencies: [5, 1933, 5191, 1372, 1935, 1862, 676, 1379, 5762, 5764, 5773, 5742, 5776, 5778, 5738, 5779, 5780, 4166, 5781, 5740, 1351, 5823, 4265, 4446, 2]
 // Exports: default
 
-// Module 5776 (_isAccessibleChannelOrThreadPath)
+// Module 5761 (_isAccessibleChannelOrThreadPath)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import isSubscriptionGated from "isSubscriptionGated";
 import shouldShowOnboarding from "shouldShowOnboarding";
@@ -32,7 +32,7 @@ function _isAccessibleChannelOrThreadPath() {
       let guild2 = tmp2;
       let throwTypeErrorResult = callback;
       ({ guildId: c0, channelId: obj5 } = callback);
-      yield "ct";
+      yield "PX_8";
       if (1 === tmp5) {
         if (arg0 === 1) {
           let c5 = 3;

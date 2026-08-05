@@ -1,10 +1,10 @@
-// Module ID: 11500
-// Function ID: 11501
+// Module ID: 11472
+// Function ID: 11473
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1236, 4185, 2]
+// Dependencies: [5, 32, 19, 1236, 4155, 2]
 // Exports: default
 
-// Module 11500 (useRequest)
+// Module 11472 (useRequest)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -37,7 +37,7 @@ export default function useRequest(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -56,7 +56,7 @@ export default function useRequest(arg0) {
                 let lib = tmp6;
                 c5 = 1;
                 c6 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else if (1 === tmp9) {
               if (arg0 === 1) {
@@ -91,7 +91,7 @@ export default function useRequest(arg0) {
                 c4 = 0;
                 outer1_1(false);
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               } else {
                 if (lib instanceof outer1_1(outer1_2[4])) {
                   let tmp37 = lib;

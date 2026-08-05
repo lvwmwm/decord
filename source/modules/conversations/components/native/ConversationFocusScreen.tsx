@@ -1,10 +1,10 @@
-// Module ID: 8416
-// Function ID: 8417
+// Module ID: 8388
+// Function ID: 8389
 // Name: ConversationFocusScreen
-// Dependencies: [19, 17, 6964, 21, 4285, 712, 1483, 589, 8369, 8390, 1236, 4281, 4695, 8417, 2]
+// Dependencies: [19, 17, 6949, 21, 4255, 712, 1483, 589, 8341, 8362, 1236, 4251, 4665, 8389, 2]
 // Exports: default
 
-// Module 8416 (ConversationFocusScreen)
+// Module 8388 (ConversationFocusScreen)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import removePendingListFetch from "removePendingListFetch";

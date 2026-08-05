@@ -1,10 +1,10 @@
-// Module ID: 8886
-// Function ID: 8887
+// Module ID: 8858
+// Function ID: 8859
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4285, 8863, 1351, 5272, 4281, 1236, 5917, 7837, 2]
+// Dependencies: [32, 19, 17, 21, 4255, 8835, 1351, 5257, 4251, 1236, 5902, 7809, 2]
 // Exports: default
 
-// Module 8886 (EditGuildEventModalNavbar)
+// Module 8858 (EditGuildEventModalNavbar)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -23,11 +23,11 @@ export default function EditGuildEventModalNavbar(screen) {
   let tmp7;
   screen = screen.screen;
   const tmp = callback4();
-  if (require(8863) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
+  if (require(8835) /* EditGuildEventScreens */.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(8863).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(8835).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(8863).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(8835).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
     tmp2(1351).assertNever(screen);
@@ -40,16 +40,16 @@ export default function EditGuildEventModalNavbar(screen) {
   const obj1 = { style: tmp.headerTitle, variant: "text-xs/bold", color: "text-default", children: null };
   const intl = tmp2(1236).intl;
   obj1[3] = intl.format(require(1236) /* getSystemLocale */.t["42HaFY"], { step: tmp6, total: tmp7 });
-  items1[1] = callback2(require(4281) /* Text */.Text, obj1);
+  items1[1] = callback2(require(4251) /* Text */.Text, obj1);
   const obj2 = { style: tmp.buttonContainer, children: null };
   const obj3 = { accessibilityLabel: null, onPress: null, source: null, style: null };
   const intl2 = tmp2(1236).intl;
   obj3[0] = intl2.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj3[1] = screen.onClose;
-  obj3[2] = importDefault(7837);
+  obj3[2] = importDefault(7809);
   obj3[3] = tmp.rightButton;
-  obj2[1] = callback2(require(5917) /* HeaderActionButton */.HeaderActionButton, obj3);
+  obj2[1] = callback2(require(5902) /* HeaderActionButton */.HeaderActionButton, obj3);
   items1[2] = callback2(View, obj2);
   obj[2] = items1;
-  return callback3(require(5272) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback3(require(5257) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15348
-// Function ID: 15349
+// Module ID: 15329
+// Function ID: 15330
 // Name: HomeDrawerAddServerRowExpandedChildren
-// Dependencies: [19, 21, 15302, 4281, 1236, 2]
+// Dependencies: [19, 21, 15283, 4251, 1236, 2]
 // Exports: HomeDrawerAddServerRowExpandedChildren
 
-// Module 15348 (HomeDrawerAddServerRowExpandedChildren)
+// Module 15329 (HomeDrawerAddServerRowExpandedChildren)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,6 +16,6 @@ export const HomeDrawerAddServerRowExpandedChildren = function HomeDrawerAddServ
   obj = { variant: "text-md/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.l5WIbf);
-  obj[0] = jsx(require(4281) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: null });
-  return jsx(require(15302) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", children: null });
+  obj[0] = jsx(require(4251) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: null });
+  return jsx(require(15283) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", children: null });
 };

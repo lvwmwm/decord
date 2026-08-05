@@ -1,10 +1,10 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14168
+// Function ID: 14169
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 4277, 21, 4285, 712, 500, 1236, 4281, 9326, 589, 3997, 2]
+// Dependencies: [19, 17, 4247, 21, 4255, 712, 500, 1236, 4251, 9297, 589, 3967, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 14194 (BountiesScrollRecapFooter)
+// Module 14168 (BountiesScrollRecapFooter)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -39,12 +39,12 @@ export const BountiesScrollRecapFooter = function BountiesScrollRecapFooter(orbA
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t.d6Rrn6);
   let obj = { style: tmp.container, pointerEvents: "none", accessible: true, accessibilityRole: "text", accessibilityLabel: "" + stringResult + ", +" + orbAmount, children: null };
   obj = { variant: "text-xs/bold", color: "text-brand", style: tmp.headerLabel, accessible: false, children: stringResult };
-  const items = [callback(require(4281) /* Text */.Text, obj), ];
+  const items = [callback(require(4251) /* Text */.Text, obj), ];
   obj = { style: tmp.orbRow, accessible: false, importantForAccessibility: "no-hide-descendants", children: null };
-  const items1 = [callback(require(9326) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
+  const items1 = [callback(require(9297) /* OrbsIcon */.OrbsIcon, { size: "sm", color: "icon-strong", accessible: false }), ];
   const obj1 = { variant: "display-sm", color: "text-strong", accessible: false, style: tmp.orbAmount, children: null };
   obj1[4] = "+" + orbAmount;
-  items1[1] = callback(require(4281) /* Text */.Text, obj1);
+  items1[1] = callback(require(4251) /* Text */.Text, obj1);
   obj[3] = items1;
   items[1] = callback2(View, obj);
   obj[5] = items;
@@ -59,6 +59,6 @@ export const BountiesScrollRecapFooterGradient = function BountiesScrollRecapFoo
   if (stateFromStores) {
     str = "halt";
   }
-  obj[1] = closure_5(require(3997) /* ManaContext */.BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
+  obj[1] = closure_5(require(3967) /* ManaContext */.BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
   return closure_5(View, obj);
 };

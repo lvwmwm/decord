@@ -1,10 +1,10 @@
-// Module ID: 13740
-// Function ID: 13741
+// Module ID: 13712
+// Function ID: 13713
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4277, 21, 589, 4004, 2]
+// Dependencies: [19, 4247, 21, 589, 3974, 2]
 // Exports: default
 
-// Module 13740 (AccessibilityPreferencesContextProvider)
+// Module 13712 (AccessibilityPreferencesContextProvider)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";

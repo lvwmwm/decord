@@ -1,8 +1,8 @@
-// Module ID: 15064
-// Function ID: 15065
-// Dependencies: [19, 4277, 1218, 4371, 11284, 1874, 9710, 21, 4285, 712, 1297, 589, 9582, 2]
+// Module ID: 15044
+// Function ID: 15045
+// Dependencies: [19, 4247, 1218, 4341, 11256, 1874, 9681, 21, 4255, 712, 1297, 589, 9553, 2]
 
-// Module 15064
+// Module 15044
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";
@@ -112,11 +112,11 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
     obj[2] = channel;
     obj[3] = stateFromStores1;
     obj[4] = tmpResult.avatar;
-    let tmp11Result = jsx(importDefault(9582), { status: null, size: null, channel: null, animate: null, style: null });
+    let tmp11Result = jsx(importDefault(9553), { status: null, size: null, channel: null, animate: null, style: null });
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: 10, status: true, streaming: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", style: null, size: "ec17384f93aac564d379768572045c1a", animate: "pt-BR.messages.ec17384f93aac564d379768572045c1a.compiled.messages", typing: "jsona", autoStatusCutout: 200 };
+      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: null, status: false, streaming: false, style: null, size: null, animate: null, typing: null, autoStatusCutout: null };
       obj[0] = stateFromStores2;
       obj[1] = stateFromStores2.avatarDecoration;
       obj[3] = stateFromStores3;
@@ -131,7 +131,7 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
       obj[8] = REFRESH_MEDIUM_32;
       obj[9] = stateFromStores1;
       obj[10] = stateFromStores;
-      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: 10, status: true, streaming: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", style: null, size: "ec17384f93aac564d379768572045c1a", animate: "pt-BR.messages.ec17384f93aac564d379768572045c1a.compiled.messages", typing: "jsona", autoStatusCutout: 200 });
+      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: null, status: false, streaming: false, style: null, size: null, animate: null, typing: null, autoStatusCutout: null });
       const tmp11 = jsx;
     }
   }

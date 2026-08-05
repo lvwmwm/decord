@@ -1,10 +1,10 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14170
+// Function ID: 14171
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [19, 17, 4277, 21, 712, 4285, 500, 9304, 14197, 8792, 14198, 1581, 589, 14199, 4281, 1236, 9326, 4695, 2]
+// Dependencies: [19, 17, 4247, 21, 712, 4255, 500, 9275, 14171, 8764, 14172, 1581, 589, 14173, 4251, 1236, 9297, 4665, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14196 (BountiesRecapOrbsBackground)
+// Module 14170 (BountiesRecapOrbsBackground)
 import "noop";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -25,19 +25,19 @@ function BountiesRecapOrbsBackground(arg0) {
     obj = { style: null, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: null };
     obj[0] = style;
     obj = { url: null, style: null, autoplay: null };
-    obj[0] = importDefault(14197);
+    obj[0] = importDefault(14171);
     obj[1] = closure_3.absoluteFillObject;
     obj[2] = !reducedMotion;
-    obj[4] = tmp3(tmp(9304).APNGPlayer, obj);
+    obj[4] = tmp3(tmp(9275).APNGPlayer, obj);
     let tmp3Result = tmp3(closure_4, obj);
   } else {
     const obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
     const obj2 = { uri: null };
-    obj2[0] = importDefault(14198);
+    obj2[0] = importDefault(14172);
     obj1[0] = obj2;
     obj1[1] = style;
     obj1[3] = reducedMotion;
-    tmp3Result = tmp3(tmp(8792).VideoComponent, obj1);
+    tmp3Result = tmp3(tmp(8764).VideoComponent, obj1);
   }
   return tmp3Result;
 }
@@ -81,11 +81,11 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none", children: null };
   const obj1 = { source: null, style: null, resizeMode: "cover", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(14199);
+  obj2[0] = importDefault(14173);
   obj1[0] = obj2;
   obj1[1] = closure_3.absoluteFillObject;
   obj1[3] = stateFromStores;
-  const items2 = [callback(require(8792) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
+  const items2 = [callback(require(8764) /* VideoComponent */.VideoComponent, obj1), callback(BountiesRecapOrbsBackground, { style: tmp.orbsBackground, reducedMotion: stateFromStores })];
   obj[2] = items2;
   const items3 = [callback2(closure_4, obj), ];
   const obj4 = { style: tmp.content, pointerEvents: "box-none", children: null };
@@ -93,20 +93,20 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const obj6 = { variant: "text-xs/bold", color: "text-brand", style: tmp.headerLabel, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj6[3] = intl.string(require(1236) /* getSystemLocale */.t.d6Rrn6);
-  const items4 = [callback(require(4281) /* Text */.Text, obj6), , ];
+  const items4 = [callback(require(4251) /* Text */.Text, obj6), , ];
   const obj7 = { accessible: true, accessibilityRole: "text", accessibilityLabel: "+" + orbAmount, children: null };
   const obj8 = { style: tmp.titleRow, children: null };
-  const items5 = [callback(require(9326) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
+  const items5 = [callback(require(9297) /* OrbsIcon */.OrbsIcon, { size: "lg", color: "icon-strong", accessible: false }), ];
   const obj9 = { variant: "display-lg", color: "text-strong", accessible: false, style: tmp.orbAmount, children: null };
   obj9[4] = "+" + orbAmount;
-  items5[1] = callback(require(4281) /* Text */.Text, obj9);
+  items5[1] = callback(require(4251) /* Text */.Text, obj9);
   obj8[1] = items5;
   obj7[3] = callback2(closure_4, obj8);
   items4[1] = callback(closure_4, obj7);
   const obj10 = { variant: "text-md/medium", color: "text-muted", style: { textAlign: "center" }, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj10[3] = intl2.string(require(1236) /* getSystemLocale */.t.x0Ffz3);
-  items4[2] = callback(require(4281) /* Text */.Text, obj10);
+  items4[2] = callback(require(4251) /* Text */.Text, obj10);
   obj5[2] = items4;
   const items6 = [callback2(closure_4, obj5), ];
   const obj11 = { style: null, children: null };
@@ -119,7 +119,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj13[2] = intl3.string(require(1236) /* getSystemLocale */.t.i4jeWR);
   obj13[4] = onClose;
-  obj11[1] = callback(require(4695) /* Button */.Button, obj13);
+  obj11[1] = callback(require(4665) /* Button */.Button, obj13);
   items6[1] = callback(closure_4, obj11);
   obj4[2] = items6;
   items3[1] = callback2(closure_4, obj4);

@@ -1,10 +1,10 @@
-// Module ID: 6838
-// Function ID: 6839
+// Module ID: 6823
+// Function ID: 6824
 // Name: getClientHeartbeatPiggybackProperties
-// Dependencies: [4305, 2]
+// Dependencies: [4275, 2]
 // Exports: getClientHeartbeatPiggybackProperties
 
-// Module 6838 (getClientHeartbeatPiggybackProperties)
+// Module 6823 (getClientHeartbeatPiggybackProperties)
 import "initialize";
 
 const result = require("set").fileFinishedImporting("modules/analytics_sessions/ClientHeartbeatPiggyback.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 12965
+// Function ID: 12966
 // Name: start
-// Dependencies: [4360, 4396, 2]
+// Dependencies: [4330, 4366, 2]
 
-// Module 12993 (start)
+// Module 12965 (start)
 let closure_2 = [1, 100, 1000, 10000];
 let closure_3 = [100, 500, 1000, 5000];
 let result = require("set").fileFinishedImporting("lib/VoiceDuration.tsx");
@@ -84,7 +84,7 @@ prototype["start"] = function start(flag, flag2) {
   const connected2 = self.connected;
   connected2.start();
   const connection = self.connection;
-  connection.on(self(4396).BaseConnectionEvent.Speaking, (arg0, arg1) => {
+  connection.on(self(4366).BaseConnectionEvent.Speaking, (arg0, arg1) => {
     if (self.userId === arg0) {
       obj.onSpeaking(0 !== arg1);
     } else {
@@ -94,11 +94,11 @@ prototype["start"] = function start(flag, flag2) {
   self.onMuted(flag);
   self.onDeafened(flag2);
   const connection2 = self.connection;
-  connection2.on(self(4396).BaseConnectionEvent.Mute, (flag) => {
+  connection2.on(self(4366).BaseConnectionEvent.Mute, (flag) => {
     self.onMuted(flag);
   });
   const connection3 = self.connection;
-  connection3.on(self(4396).BaseConnectionEvent.Deafen, (flag2) => {
+  connection3.on(self(4366).BaseConnectionEvent.Deafen, (flag2) => {
     self.onDeafened(flag2);
   });
 };

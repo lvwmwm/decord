@@ -1,10 +1,10 @@
-// Module ID: 5771
-// Function ID: 5772
+// Module ID: 5756
+// Function ID: 5757
 // Name: getOrbPriceFromPrices
-// Dependencies: [676, 678, 5772, 1236, 5773, 3953, 2]
+// Dependencies: [676, 678, 5757, 1236, 5758, 3923, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 5771 (getOrbPriceFromPrices)
+// Module 5756 (getOrbPriceFromPrices)
 import ME from "ME";
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items";
 import { ConstraintReasonCode } from "ConstraintReasonCode";
@@ -64,18 +64,18 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
     return null;
   } else {
     let keFvXM = dependencyMap;
-    let OrderSigningFailedWithConstraintsError = require(5773) /* _signOrder */.OrderSigningFailedWithConstraintsError;
+    let OrderSigningFailedWithConstraintsError = require(5758) /* _signOrder */.OrderSigningFailedWithConstraintsError;
     if (!(code instanceof OrderSigningFailedWithConstraintsError)) {
-      if (code instanceof tmp(5773).OrderProcessingPendingError) {
+      if (code instanceof tmp(5758).OrderProcessingPendingError) {
         const intl5 = tmp(1236).intl;
         let stringResult = intl5.string(tmp(1236).t["2BmwgV"]);
-      } else if (code.code === tmp(3953).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+      } else if (code.code === tmp(3923).ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
         const intl4 = tmp(1236).intl;
         stringResult = intl4.string(tmp(1236).t.keFvXM);
-      } else if (code.code === tmp(3953).ErrorCodes.ALREADY_PURCHASED) {
+      } else if (code.code === tmp(3923).ErrorCodes.ALREADY_PURCHASED) {
         const intl3 = tmp(1236).intl;
         stringResult = intl3.string(tmp(1236).t.m371Mx);
-      } else if (code.code === tmp(3953).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+      } else if (code.code === tmp(3923).ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
         const intl2 = tmp(1236).intl;
         stringResult = intl2.string(tmp(1236).t.ZHgEG7);
       } else {

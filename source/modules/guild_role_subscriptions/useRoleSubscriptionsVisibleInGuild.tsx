@@ -1,10 +1,10 @@
-// Module ID: 5779
-// Function ID: 5780
+// Module ID: 5764
+// Function ID: 5765
 // Name: computeCanEveryoneInGuildSeeRoleSubscriptions
-// Dependencies: [1934, 1862, 676, 5780, 5781, 589, 5782, 5787, 2]
+// Dependencies: [1934, 1862, 676, 5765, 5766, 589, 5767, 5772, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild, useRoleSubscriptionsVisibleInGuild, useShowRoleSubscriptionsInChannelList
 
-// Module 5779 (computeCanEveryoneInGuildSeeRoleSubscriptions)
+// Module 5764 (computeCanEveryoneInGuildSeeRoleSubscriptions)
 import initialize from "initialize";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
@@ -23,7 +23,7 @@ function computeCanEveryoneInGuildSeeRoleSubscriptions(c0) {
   if (null == guild) {
     return false;
   } else {
-    const result = require(5780) /* useIsCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
+    const result = require(5765) /* useIsCreatorMonetizationEnabledGuild */.isCreatorMonetizationEnabledGuild(guild);
     const features = guild.features;
     let tmp9 = !result;
     if (result) {
@@ -41,14 +41,14 @@ let result = require("ME").fileFinishedImporting("modules/guild_role_subscriptio
 export const areRoleSubscriptionsVisibleInGuild = function areRoleSubscriptionsVisibleInGuild(c0, initialize) {
   let hasRoleSubscriptionsInGuild = computeCanEveryoneInGuildSeeRoleSubscriptions(c0);
   if (!hasRoleSubscriptionsInGuild) {
-    hasRoleSubscriptionsInGuild = require(5781) /* computeHasRoleSubscriptionsInGuild */.computeHasRoleSubscriptionsInGuild(c0, initialize);
-    const obj = require(5781) /* computeHasRoleSubscriptionsInGuild */;
+    hasRoleSubscriptionsInGuild = require(5766) /* computeHasRoleSubscriptionsInGuild */.computeHasRoleSubscriptionsInGuild(c0, initialize);
+    const obj = require(5766) /* computeHasRoleSubscriptionsInGuild */;
   }
   return hasRoleSubscriptionsInGuild;
 };
 export const useRoleSubscriptionsVisibleInGuild = function useRoleSubscriptionsVisibleInGuild(id1) {
   const _require = id1;
-  const tmp = importDefault(5781)(id1);
+  const tmp = importDefault(5766)(id1);
   const items = [createGuildRecordFromRust, initialize];
   const items1 = [id1];
   let stateFromStores = _require(589).useStateFromStores(items, () => {
@@ -56,7 +56,7 @@ export const useRoleSubscriptionsVisibleInGuild = function useRoleSubscriptionsV
     return outer1_6(closure_0, items);
   }, items1);
   const obj = _require(589);
-  const shouldHideGuildPurchaseEntryPoints = _require(5782).useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
+  const shouldHideGuildPurchaseEntryPoints = _require(5767).useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
   let tmp3 = !shouldHideGuildPurchaseEntryPoints;
   if (!shouldHideGuildPurchaseEntryPoints) {
     if (!stateFromStores) {
@@ -68,7 +68,7 @@ export const useRoleSubscriptionsVisibleInGuild = function useRoleSubscriptionsV
 };
 export const useShowRoleSubscriptionsInChannelList = function useShowRoleSubscriptionsInChannelList(id) {
   const _require = id;
-  const tmp2 = importDefault(5781)(id);
+  const tmp2 = importDefault(5766)(id);
   const tmp3 = _require;
   let items = [createGuildRecordFromRust, initialize];
   const items1 = [id];
@@ -77,7 +77,7 @@ export const useShowRoleSubscriptionsInChannelList = function useShowRoleSubscri
     return outer1_6(closure_0, items);
   }, items1);
   const obj = _require(589);
-  const shouldHideGuildPurchaseEntryPoints = _require(5782).useShouldHideGuildPurchaseEntryPoints(id).shouldHideGuildPurchaseEntryPoints;
+  const shouldHideGuildPurchaseEntryPoints = _require(5767).useShouldHideGuildPurchaseEntryPoints(id).shouldHideGuildPurchaseEntryPoints;
   let tmp5 = !shouldHideGuildPurchaseEntryPoints;
   if (!shouldHideGuildPurchaseEntryPoints) {
     if (!stateFromStores) {
@@ -85,8 +85,8 @@ export const useShowRoleSubscriptionsInChannelList = function useShowRoleSubscri
     }
     tmp5 = stateFromStores;
   }
-  const obj2 = _require(5782);
-  const guildEligibleForGuildProducts = tmp3(5787).useGuildEligibleForGuildProducts(id);
+  const obj2 = _require(5767);
+  const guildEligibleForGuildProducts = tmp3(5772).useGuildEligibleForGuildProducts(id);
   if (tmp5) {
     let flag = !guildEligibleForGuildProducts;
     if (guildEligibleForGuildProducts) {

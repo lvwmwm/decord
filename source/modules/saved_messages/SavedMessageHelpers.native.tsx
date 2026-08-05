@@ -1,10 +1,10 @@
-// Module ID: 10187
-// Function ID: 10188
+// Module ID: 10158
+// Function ID: 10159
 // Name: _addOrUpdateSavedMessage
-// Dependencies: [5, 10188, 676, 8186, 8181, 8184, 10189, 10190, 4623, 1236, 8190, 8192, 3986, 7716, 4249, 10191, 2]
+// Dependencies: [5, 10159, 676, 8158, 8153, 8156, 5615, 10160, 10161, 4593, 1236, 8162, 8164, 3956, 7688, 4219, 10162, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 10187 (_addOrUpdateSavedMessage)
+// Module 10158 (_addOrUpdateSavedMessage)
 import EntitlementFeatureNames from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";
 import { AbortCodes } from "ME";
@@ -20,7 +20,7 @@ function _addOrUpdateSavedMessage() {
       let lib = tmp2;
       displayToast = displayToast.displayToast;
       lib = Object.assign(displayToast, Object.create(null));
-      yield "ct";
+      yield "PX_8";
       if (1 === tmp5) {
         if (arg0 === 1) {
           let savedMessage = 3;
@@ -32,18 +32,19 @@ function _addOrUpdateSavedMessage() {
           return obj2;
         } else {
           if (null == savedMessage.getSavedMessage(lib.channelId, lib.messageId)) {
-            let obj3 = displayToast(8186);
-            if (!obj3.hasForLaterAccess("addOrUpdateSavedMessage")) {
-              lib(8181)(displayToast(8184).EntitlementFeatureNames.SAVED_MESSAGES);
+            if (!obj10.hasForLaterAccess("addOrUpdateSavedMessage")) {
+              let items = [lib(5615).FOR_LATER_ROADBLOCK];
+              lib(8153)(displayToast(8156).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
               savedMessage = 3;
-              const tmp39 = lib(8181);
+              const tmp36 = lib(8153);
             }
+            obj10 = displayToast(8158);
           }
-          let obj4 = displayToast(10189);
+          let obj3 = displayToast(10160);
           let BookmarkIcon = 2;
           savedMessage = 1;
           obj3 = { value: null, done: false };
-          obj3[0] = obj4.upsertSavedMessage(lib).catch((body) => {
+          obj3[0] = obj3.upsertSavedMessage(lib).catch((body) => {
             let code;
             if (body != null) {
               body = body.body;
@@ -55,33 +56,35 @@ function _addOrUpdateSavedMessage() {
               const displayToast = tmp5;
               let obj = displayToast(_undefined[3]);
               if (obj.isForLaterLimitUpgradable("addOrUpdateSavedMessage")) {
-                tmp8(tmp7[7])(tmp5);
+                let tmp8Result = tmp8(tmp7[8]);
+                const items = [tmp8(tmp7[6]).FOR_LATER_ROADBLOCK];
+                tmp8Result(tmp5, items);
               } else {
+                tmp8Result = tmp8(tmp7[9]);
                 obj = { title: null, body: null, confirmText: null, cancelText: null, onCancel: null };
-                const intl2 = tmp6(tmp7[9]).intl;
-                obj[0] = intl2.string(tmp6(tmp7[9]).t.mlbiZW);
-                const intl3 = tmp6(tmp7[9]).intl;
-                const t = tmp6(tmp7[9]).t;
+                const intl2 = tmp6(tmp7[10]).intl;
+                obj[0] = intl2.string(tmp6(tmp7[10]).t.mlbiZW);
+                const intl3 = tmp6(tmp7[10]).intl;
+                const t = tmp6(tmp7[10]).t;
                 obj = { max: null };
-                const tmp8Result = tmp8(tmp7[8]);
-                const tmp9 = tmp5 ? t.Anr1Dg : t["1zVbEG"];
                 obj[0] = tmp6(tmp7[3]).getForLaterLimit("addOrUpdateSavedMessage", tmp5);
-                obj[1] = intl3.formatToPlainString(tmp9, obj);
-                const intl4 = tmp6(tmp7[9]).intl;
-                obj[2] = intl4.string(tmp6(tmp7[9]).t.BddRzS);
-                const intl5 = tmp6(tmp7[9]).intl;
-                obj[3] = intl5.string(tmp6(tmp7[9]).t.ZGbTcy);
+                obj[1] = intl3.formatToPlainString(tmp5 ? t.Anr1Dg : t["1zVbEG"], obj);
+                const intl4 = tmp6(tmp7[10]).intl;
+                obj[2] = intl4.string(tmp6(tmp7[10]).t.BddRzS);
+                const intl5 = tmp6(tmp7[10]).intl;
+                obj[3] = intl5.string(tmp6(tmp7[10]).t.ZGbTcy);
                 obj[4] = function onCancel() {
-                  const SavedMessageSortTypes = tmp5(outer1_2[11]).SavedMessageSortTypes;
-                  return tmp5(outer1_2[10]).showForLaterModal(tmp5 ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
+                  const SavedMessageSortTypes = tmp5(outer1_2[12]).SavedMessageSortTypes;
+                  return tmp5(outer1_2[11]).showForLaterModal(tmp5 ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
                 };
                 tmp8Result.show(obj);
                 const tmp6Result = tmp6(tmp7[3]);
+                const tmp9 = tmp5 ? t.Anr1Dg : t["1zVbEG"];
               }
               return null;
             } else {
               const obj1 = { key: "SAVED_MESSAGE_CREATE_ERROR", IconComponent: null, content: null };
-              obj1[1] = displayToast(_undefined[13]).CircleErrorIcon;
+              obj1[1] = displayToast(_undefined[14]).CircleErrorIcon;
               let message;
               if (body != null) {
                 const body2 = body.body;
@@ -90,11 +93,11 @@ function _addOrUpdateSavedMessage() {
                 }
               }
               if (message == null) {
-                const intl = tmp14(tmp13[9]).intl;
-                message = intl.string(tmp14(tmp13[9]).t.R0RpRX);
+                const intl = tmp15(tmp14[10]).intl;
+                message = intl.string(tmp15(tmp14[10]).t.R0RpRX);
               }
               obj1[2] = message;
-              lib(_undefined[12]).open(obj1);
+              lib(_undefined[13]).open(obj1);
               return null;
             }
           });
@@ -115,12 +118,12 @@ function _addOrUpdateSavedMessage() {
             }
             const dependencyMap = stringResult;
             if (null != lib.dueAt) {
-              BookmarkIcon = displayToast(4249).ClockIcon;
+              BookmarkIcon = displayToast(4219).ClockIcon;
             } else {
-              BookmarkIcon = displayToast(10191).BookmarkIcon;
+              BookmarkIcon = displayToast(10162).BookmarkIcon;
             }
-            let obj = lib(3986);
-            obj4 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: null, content: null };
+            let obj = lib(3956);
+            const obj4 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: null, content: null };
             obj4[1] = BookmarkIcon;
             obj4[2] = dependencyMap;
             obj.open(obj4);
@@ -161,7 +164,7 @@ function _removeSavedMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -187,7 +190,7 @@ function _removeSavedMessage() {
               c4 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -199,13 +202,13 @@ function _removeSavedMessage() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              let obj3 = callback(closure_2[6]);
+              let obj3 = callback(closure_2[7]);
               c3 = 2;
               c4 = 1;
               obj3 = { value: null, done: false };
               obj3[0] = obj3.deleteSavedMessage(closure_2).catch((body) => {
-                let obj = _undefined2(3986);
-                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(7716).CircleErrorIcon, content: null };
+                let obj = _undefined2(3956);
+                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(7688).CircleErrorIcon, content: null };
                 let message;
                 if (body != null) {
                   body = body.body;
@@ -236,29 +239,29 @@ function _removeSavedMessage() {
               if (callback) {
                 if (null == closure_2.dueAt) {
                   if (!callback2) {
-                    let intl = callback(closure_2[9]).intl;
-                    let stringResult = intl.string(callback(closure_2[9]).t["5KOMiV"]);
+                    let intl = callback(closure_2[10]).intl;
+                    let stringResult = intl.string(callback(closure_2[10]).t["5KOMiV"]);
                   }
                   c3 = stringResult;
                   if (null == closure_2.dueAt) {
                     if (!callback2) {
-                      let ClockIcon = callback(closure_2[15]).BookmarkIcon;
+                      let ClockIcon = callback(closure_2[16]).BookmarkIcon;
                     }
                     c4 = ClockIcon;
-                    obj = callback2(closure_2[12]);
+                    obj = callback2(closure_2[13]);
                     const obj5 = { key: "SAVED_MESSAGE_REMOVE_SUCCESS", IconComponent: null, content: null };
                     obj5[1] = c4;
                     obj5[2] = c3;
                     obj.open(obj5);
                   }
-                  ClockIcon = callback(closure_2[14]).ClockIcon;
+                  ClockIcon = callback(closure_2[15]).ClockIcon;
                 }
-                const intl2 = callback(closure_2[9]).intl;
-                stringResult = intl2.string(callback(closure_2[9]).t.D0tS02);
+                const intl2 = callback(closure_2[10]).intl;
+                stringResult = intl2.string(callback(closure_2[10]).t.D0tS02);
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp45) {
           c4 = tmp;

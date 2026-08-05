@@ -1,9 +1,9 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16337
+// Function ID: 16338
 // Name: handleAppStateUpdate
-// Dependencies: [5, 676, 3, 687, 5229, 16357, 1208, 698, 6843, 6840, 6832, 2]
+// Dependencies: [5, 676, 3, 687, 5214, 16338, 1208, 698, 6828, 6825, 6817, 2]
 
-// Module 16356 (handleAppStateUpdate)
+// Module 16337 (handleAppStateUpdate)
 import enforcing from "enforcing";
 import ME from "ME";
 import "initialize";
@@ -68,7 +68,7 @@ prototype["ping"] = function ping() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ prototype["startWatchdog"] = function startWatchdog() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -237,7 +237,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_0 = undefined;
             c1 = undefined;
             if (null == outer1_0._timeoutId) {
-              if (null != outer1_1(16357)) {
+              if (null != outer1_1(16338)) {
                 dependencyMap = 1;
                 c3 = 1;
                 const obj1 = { value: null, done: false };
@@ -258,7 +258,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_0._enabled = true;
               if (closure_0._pingCompleted) {
                 let checkForStallReportResult;
-                obj = outer1_1(16357);
+                obj = outer1_1(16338);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }
@@ -291,7 +291,7 @@ prototype["stopWatchdog"] = function stopWatchdog() {
 prototype["reportStall"] = function reportStall(c1, c0, is_previous, _analyticsReportsRemaining) {
   let obj = importDefault(698);
   obj = {};
-  const merged = Object.assign(require(6843) /* getDeviceMetadata */.getDeviceMetadata());
+  const merged = Object.assign(require(6828) /* getDeviceMetadata */.getDeviceMetadata());
   obj.version = 1;
   obj.stall_time = c1.stallTime;
   obj.is_previous = is_previous;
@@ -318,7 +318,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -337,7 +337,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             let closure_0 = tmp2;
             closure_0 = undefined;
             if (null != outer1_0._cachedSession) {
-              let obj1 = outer1_0(6840);
+              let obj1 = outer1_0(6825);
               if (!obj1.isSessionExpired(outer1_0._cachedSession)) {
                 const uuid = outer1_0._cachedSession.uuid;
                 c3 = 3;
@@ -346,7 +346,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(6832).getSession();
+            obj1[0] = outer1_0(6817).getSession();
             return obj1;
           }
         } else if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11610
+// Function ID: 11611
 // Name: TiktokNeutralIcon
-// Dependencies: [19, 21, 712, 3988, 11639, 2]
+// Dependencies: [19, 21, 712, 3958, 11611, 2]
 // Exports: TiktokNeutralIcon
 
-// Module 11638 (TiktokNeutralIcon)
+// Module 11610 (TiktokNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const TiktokNeutralIcon = function TiktokNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11639) /* registerAsset */;
+  obj[0] = require(11611) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

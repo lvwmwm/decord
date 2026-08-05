@@ -1,9 +1,9 @@
-// Module ID: 5338
-// Function ID: 5339
+// Module ID: 5323
+// Function ID: 5324
 // Name: Background
-// Dependencies: [32, 19, 17, 5339, 21, 4285, 712, 4149, 1581, 4681, 5340, 5235, 4706, 691, 4146, 5592, 4004, 5593, 4711, 5594, 5595, 5596, 1474, 4132, 500, 5597, 3997, 2]
+// Dependencies: [32, 19, 17, 5324, 21, 4255, 712, 4119, 1581, 4651, 5325, 5220, 4676, 691, 4116, 5577, 3974, 5578, 4681, 5579, 5580, 5581, 1474, 4102, 500, 5582, 3967, 2]
 
-// Module 5338 (Background)
+// Module 5323 (Background)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ActionSheetHeaderBar";
 import get_ActivityIndicator from "useBottomSheetImperativeHandle";
@@ -77,7 +77,7 @@ let closure_18 = createCacheKey.createStyles((arg0) => {
   }
   obj1[3] = num2;
   obj[3] = obj1;
-  let obj4 = require(4149) /* isFabric */;
+  let obj4 = require(4119) /* isFabric */;
   let str2;
   if (obj4.isIosFabric()) {
     str2 = "hidden";

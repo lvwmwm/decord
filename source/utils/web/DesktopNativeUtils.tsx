@@ -1,9 +1,9 @@
-// Module ID: 5292
-// Function ID: 5293
+// Module ID: 5277
+// Function ID: 5278
 // Name: sanitizeFilename
-// Dependencies: [32, 5, 676, 38, 4217, 500, 595, 5293, 4319, 4, 5294, 5295, 1467, 530, 4346, 2]
+// Dependencies: [32, 5, 676, 38, 4187, 500, 595, 5278, 4289, 4, 5279, 5280, 1467, 530, 4316, 2]
 
-// Module 5292 (sanitizeFilename)
+// Module 5277 (sanitizeFilename)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import { NativeFeatures } from "ME";
@@ -106,7 +106,7 @@ function normalizeRunningGame(id) {
   obj[17] = windowHandle;
   let UNKNOWN = id.fullscreenType;
   if (UNKNOWN == null) {
-    UNKNOWN = require(4217) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
+    UNKNOWN = require(4187) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   obj[18] = UNKNOWN;
   let flag = id.isLauncher;
@@ -225,7 +225,7 @@ obj.beforeUnload = function beforeUnload() {
     let supportsFeatureResult = window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
     if (supportsFeatureResult) {
       const Storage = require(595) /* Storage */.Storage;
-      supportsFeatureResult = true !== Storage.get(require(5293) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
+      supportsFeatureResult = true !== Storage.get(require(5278) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
     }
     if (supportsFeatureResult) {
       supportsFeatureResult = self.supportsFeature(NativeFeatures.USER_DATA_CACHE);
@@ -399,7 +399,7 @@ obj.setObserverDebugCallback = function setObserverDebugCallback(arg0, NONE, arg
 };
 obj.clearObserverDebugCallback = function clearObserverDebugCallback() {
   const discordUtils = this.getDiscordUtils();
-  const result = discordUtils.setObserverDebugCallback(null, require(4319) /* GameTheme */.GameDetectionDebugLevel.NONE, 0);
+  const result = discordUtils.setObserverDebugCallback(null, require(4289) /* GameTheme */.GameDetectionDebugLevel.NONE, 0);
 };
 obj.shouldDisplayNotifications = function shouldDisplayNotifications() {
   const discordUtils = this.getDiscordUtils();
@@ -486,7 +486,7 @@ obj.setBadge = function setBadge(arg0) {
     let tmpResult = tmp(500);
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(5294).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(5279).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       tmpResult = tmp(500);
       if ("linux" === tmpResult.getPlatformName()) {
@@ -503,7 +503,7 @@ obj.setBadge = function setBadge(arg0) {
 obj.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
   if (require(500) /* set */.isPlatformEmbedded) {
     const self = this;
-    this.sendIPC(require(5294) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
+    this.sendIPC(require(5279) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
   }
 };
 obj.setThumbarButtons = function setThumbarButtons(arg0, arg1) {
@@ -536,7 +536,7 @@ obj.bounceDock = function bounceDock(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -573,7 +573,7 @@ obj.bounceDock = function bounceDock(arg0) {
               dock = dock.dock;
               dock.cancelBounce(dock);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (tmp11) {
             c3 = tmp;
@@ -587,7 +587,7 @@ obj.bounceDock = function bounceDock(arg0) {
 obj.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
   if (require(500) /* set */.isPlatformEmbedded) {
     const self = this;
-    this.sendIPC(require(5294) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
+    this.sendIPC(require(5279) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
   }
 };
 Object.defineProperty(obj, "architecture", {
@@ -647,7 +647,7 @@ obj.copyImage = function copyImage(arg0, closure_1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -685,7 +685,7 @@ obj.copyImage = function copyImage(arg0, closure_1) {
           return obj;
         } else {
           closure_0 = arg1;
-          closure_1 = outer1_0(5295).decideFileExtension(closure_0, closure_1);
+          closure_1 = outer1_0(5280).decideFileExtension(closure_0, closure_1);
           if (null == closure_1) {
             combined = closure_0;
             const clipboard = outer1_6.clipboard;
@@ -695,7 +695,7 @@ obj.copyImage = function copyImage(arg0, closure_1) {
           }
           const _HermesInternal = HermesInternal;
           combined = "image." + closure_1;
-          const obj5 = outer1_0(5295);
+          const obj5 = outer1_0(5280);
         }
       } catch (tmp22) {
         c3 = tmp;
@@ -719,7 +719,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -757,7 +757,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
           const _Buffer = Buffer;
           clipboard.copyImage(Buffer.from(closure_0), closure_1);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp14) {
         c3 = tmp;
@@ -769,7 +769,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj.canSaveImage = function canSaveImage(closure_0, contentType) {
   if (null != closure_0) {
     if (require(500) /* set */.isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(5295).decideFileExtension(closure_0, contentType);
+      const decideFileExtensionResult = tmp(5280).decideFileExtension(closure_0, contentType);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set1.has(decideFileExtensionResult);
@@ -796,7 +796,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -992,7 +992,7 @@ obj.saveFile = function saveFile(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -1208,13 +1208,13 @@ obj.canCopyImage = function canCopyImage(closure_0) {
       return false;
     } else {
       if (null != tmp) {
-        const decideFileExtensionResult = tmp2(5295).decideFileExtension(tmp, undefined);
+        const decideFileExtensionResult = tmp2(5280).decideFileExtension(tmp, undefined);
         if (null != decideFileExtensionResult) {
           if (!set.has(decideFileExtensionResult)) {
             return false;
           }
         }
-        const tmp2Result = tmp2(5295);
+        const tmp2Result = tmp2(5280);
       }
       return true;
     }
@@ -1328,7 +1328,7 @@ obj.waitForIPCReady = function waitForIPCReady() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -1451,7 +1451,7 @@ obj.close = function close(arg0) {
   _window.close(arg0);
 };
 obj.clearNavigationHistory = function clearNavigationHistory() {
-  backwardCompatSend(require(5294) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
+  backwardCompatSend(require(5279) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
 };
 obj.setAlwaysOnTop = function setAlwaysOnTop(arg0, arg1) {
   if (typeof DiscordNative.window.setAlwaysOnTop === "function") {
@@ -1473,7 +1473,7 @@ obj.isAlwaysOnTop = function isAlwaysOnTop(outer1_0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -1547,7 +1547,7 @@ obj.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5294).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(5279).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }
@@ -1899,7 +1899,7 @@ obj.stopCPUProfiling = function stopCPUProfiling() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -2169,7 +2169,7 @@ obj.crash = function crash(arg0) {
   return flag;
 };
 obj.setApplicationBackgroundColor = function setApplicationBackgroundColor(arg0) {
-  this.sendIPC(require(5294) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
+  this.sendIPC(require(5279) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
 };
 obj.initializeExitHook = function initializeExitHook() {
   const initializeExitHook = this.getDiscordUtils().initializeExitHook;
@@ -2233,7 +2233,7 @@ obj.GetWindowFullscreenTypeByPid = function GetWindowFullscreenTypeByPid(arg0, a
     windowFullscreenTypeByPid = arg2;
   }
   if (windowFullscreenTypeByPid == null) {
-    windowFullscreenTypeByPid = require(4217) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
+    windowFullscreenTypeByPid = require(4187) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   return windowFullscreenTypeByPid;
 };
@@ -2245,7 +2245,7 @@ obj.GetWindowFullscreenTypeExtraByPid = function GetWindowFullscreenTypeExtraByP
     }
     return windowFullscreenTypeExtraByPid;
   }
-  windowFullscreenTypeExtraByPid = { quns: require(4217) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
+  windowFullscreenTypeExtraByPid = { quns: require(4187) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
 };
 obj.SetGPUBoostEnabledByPid = function SetGPUBoostEnabledByPid(arg0, arg1) {
   const setGPUBoostEnabledByPid = this.getDiscordUtils().setGPUBoostEnabledByPid;
@@ -2539,7 +2539,7 @@ obj.appViewed = function appViewed() {
     const self = this;
     const _performance = performance;
     performance.mark("app_viewed");
-    this.sendIPC(require(5294) /* IPCEvents */.IPCEvents.APP_VIEWED);
+    this.sendIPC(require(5279) /* IPCEvents */.IPCEvents.APP_VIEWED);
   }
 };
 obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(arg0) {
@@ -2547,14 +2547,14 @@ obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(a
     const self = this;
     const _performance = performance;
     performance.mark("app_first_render_after_ready_payload");
-    this.sendIPC(require(5294) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
+    this.sendIPC(require(5279) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
   }
 };
 obj.appLoaded = function appLoaded() {
-  backwardCompatSend(require(5294) /* IPCEvents */.IPCEvents.APP_LOADED);
+  backwardCompatSend(require(5279) /* IPCEvents */.IPCEvents.APP_LOADED);
 };
 obj.indexLoadedAsync = function indexLoadedAsync() {
-  backwardCompatSend(require(5294) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
+  backwardCompatSend(require(5279) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
 };
 obj.setUseRequireModuleCache = function setUseRequireModuleCache(arg0) {
   let closure_13 = arg0;
@@ -2574,7 +2574,7 @@ obj.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

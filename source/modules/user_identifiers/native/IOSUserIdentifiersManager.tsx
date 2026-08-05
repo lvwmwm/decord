@@ -1,9 +1,9 @@
-// Module ID: 16350
-// Function ID: 16351
+// Module ID: 16331
+// Function ID: 16332
 // Name: onPostConnectionOpen
-// Dependencies: [5, 17, 1874, 676, 5229, 500, 16351, 530, 698, 1208, 2]
+// Dependencies: [5, 17, 1874, 676, 5214, 500, 16332, 530, 698, 1208, 2]
 
-// Module 16350 (onPostConnectionOpen)
+// Module 16331 (onPostConnectionOpen)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -38,7 +38,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -127,7 +127,7 @@ prototype["syncAppTransactionId"] = function syncAppTransactionId(currentUser) {
             if (hasItem) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } else {
               const HTTP = outer1_0(outer1_2[7]).HTTP;
               const obj4 = { url: "/users/@me/app-transaction-ids", body: null, rejectWithError: true };
@@ -144,7 +144,7 @@ prototype["syncAppTransactionId"] = function syncAppTransactionId(currentUser) {
         }
         c3 = 0;
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else if (arg0 === 1) {
       c5 = 3;

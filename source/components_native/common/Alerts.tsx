@@ -1,11 +1,11 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15840
+// Function ID: 15841
 // Name: StyleSheet
-// Dependencies: [19, 17, 4277, 12919, 13576, 8371, 10932, 21, 15860, 15861, 15865, 15866, 4285, 712, 3997, 4624, 4677, 5733, 589, 643, 4692, 10206, 1297, 2]
+// Dependencies: [19, 17, 4247, 12891, 13548, 8343, 10904, 21, 15841, 15842, 15846, 15847, 4255, 712, 3967, 4594, 4647, 5718, 589, 643, 4662, 10178, 1297, 2]
 
-// Module 15859 (StyleSheet)
+// Module 15840 (StyleSheet)
 import importAllResult from "shallowEqual";
-import get_ActivityIndicator from "module_5733";
+import get_ActivityIndicator from "module_5718";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import importDefaultResult from "initialize";
 import importDefaultResult1 from "handleUpdateVADPermission";
@@ -32,7 +32,7 @@ let obj = {
     return importDefaultResult.shouldShowWarning();
   },
   getComponent() {
-    return require(15861) /* render */.default;
+    return require(15842) /* render */.default;
   }
 };
 items = [importDefaultResult];
@@ -44,7 +44,7 @@ obj = {
     return importDefaultResult1.shouldShowWarning();
   },
   getComponent() {
-    return require(15865) /* render */.default;
+    return require(15846) /* render */.default;
   }
 };
 items2 = [importDefaultResult1];
@@ -57,7 +57,7 @@ items1[2] = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15866) /* MobileSurvey */.default;
+    return require(15847) /* MobileSurvey */.default;
   }
 };
 let closure_15 = new require("getStores")(items1);
@@ -130,7 +130,7 @@ AlertWrapper.prototype["render"] = function render() {
     str = "alerts-component";
   }
   const props = self.props;
-  let obj = { onClose: importDefault(4624).close };
+  let obj = { onClose: importDefault(4594).close };
   ({ opacity, scale } = self.state);
   obj = { dialogKey: str, onDismiss: self.handleRequestClose, children: null };
   obj = { style: items, children: null };
@@ -143,11 +143,11 @@ AlertWrapper.prototype["render"] = function render() {
   const items3 = [{ scale }];
   items2[1] = callback(RN.View, { style: { transform: items3 }, children: renderAlertResult });
   obj[1] = items2;
-  obj[2] = callback2(importDefault(5733), obj);
-  return callback(require(4677) /* Dialog */.Dialog, obj);
+  obj[2] = callback2(importDefault(5718), obj);
+  return callback(require(4647) /* Dialog */.Dialog, obj);
 };
 AlertWrapper.contextType = require("ManaContext").ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "call", props: "format" });
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "channel", props: "d" });
 let obj1 = {
   stores: items3,
   center: true,
@@ -155,7 +155,7 @@ let obj1 = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(15866) /* MobileSurvey */.default;
+    return require(15847) /* MobileSurvey */.default;
   }
 };
 const tmp7 = new require("getStores")(items1);
@@ -193,7 +193,7 @@ const memoResult = importAllResult.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "call", props: "format" };
+        return { renderAlert: "Array", renderKey: "channel", props: "d" };
       }
     }
   });

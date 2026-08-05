@@ -1,10 +1,10 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 8949
+// Function ID: 8950
 // Name: _navigateToEvent
-// Dependencies: [5, 1372, 4356, 4102, 1378, 676, 38, 7696, 7701, 5096, 1222, 2]
+// Dependencies: [5, 1372, 4326, 4072, 1378, 676, 38, 7668, 7673, 5081, 1222, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 8977 (_navigateToEvent)
+// Module 8949 (_navigateToEvent)
 import ME from "ME";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -34,7 +34,7 @@ function _navigateToEvent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ function _navigateToEvent() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(7701);
+              obj1 = callback(7673);
               c4 = 3;
               store = 1;
               const obj4 = { value: null, done: false };
@@ -133,7 +133,7 @@ function _navigateToEvent() {
           c4 = 2;
           store = 1;
           obj5 = { value: null, done: false };
-          obj5[0] = callback3(7696).navigateToStage(channel, null);
+          obj5[0] = callback3(7668).navigateToStage(channel, null);
           return obj5;
         } catch (tmp47) {
           store = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9443
+// Function ID: 9444
 // Name: ProfileFrameUserPreview
-// Dependencies: [19, 21, 9365, 1236, 2]
+// Dependencies: [19, 21, 9336, 1236, 2]
 // Exports: default
 
-// Module 9472 (ProfileFrameUserPreview)
+// Module 9443 (ProfileFrameUserPreview)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function ProfileFrameUserPreview(profileFrame) {
   }
   obj[1] = formatToPlainStringResult;
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(9365), { profileFrameOverride: profileFrame, accessibilityLabel: null });
+  return jsx(importDefault(9336), { profileFrameOverride: profileFrame, accessibilityLabel: null });
 };

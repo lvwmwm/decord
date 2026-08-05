@@ -1,10 +1,10 @@
-// Module ID: 7957
-// Function ID: 7958
+// Module ID: 7929
+// Function ID: 7930
 // Name: createGuildReportFalseAlarmSystemMessage
-// Dependencies: [1372, 7872, 7879, 7949, 7881, 7950, 7882, 1236, 1419, 1416, 2]
+// Dependencies: [1372, 7844, 7851, 7921, 7853, 7922, 7854, 1236, 1419, 1416, 2]
 // Exports: createGuildReportFalseAlarmSystemMessage
 
-// Module 7957 (createGuildReportFalseAlarmSystemMessage)
+// Module 7929 (createGuildReportFalseAlarmSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
@@ -15,14 +15,14 @@ export const createGuildReportFalseAlarmSystemMessage = function createGuildRepo
   let theme;
   ({ message, theme } = roleStyle);
   channel = channel.getChannel(message.channel_id);
-  let obj = require(7879) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7851) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp2 = importDefault(7872)(theme);
-  let automodUsernameColor = require(7949) /* nativeStyleProperties */.resolveAlertModeColors(theme).automodUsernameColor;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7881)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
-  const obj2 = require(7949) /* nativeStyleProperties */;
+  const tmp2 = importDefault(7844)(theme);
+  let automodUsernameColor = require(7921) /* nativeStyleProperties */.resolveAlertModeColors(theme).automodUsernameColor;
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7853)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }) };
+  const obj2 = require(7921) /* nativeStyleProperties */;
   obj = {};
-  const merged = Object.assign(importDefault(7882)(roleStyle));
+  const merged = Object.assign(importDefault(7854)(roleStyle));
   const intl = require(1236) /* getSystemLocale */.intl;
   obj.content = intl.formatToParts(require(1236) /* getSystemLocale */.t["21+uW4"], obj);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -33,7 +33,7 @@ export const createGuildReportFalseAlarmSystemMessage = function createGuildRepo
   obj.usernameColor = automodUsernameColor;
   let tmp4Result = tmp4(1419);
   tmp4Result = tmp4(1416);
-  const tmp7 = importDefault(7950)({ message, channel, isSystemDM: true, colors: tmp2 });
+  const tmp7 = importDefault(7922)({ message, channel, isSystemDM: true, colors: tmp2 });
   obj.avatarURL = tmp4Result.ensureAvatarSource(tmp4Result.makeSource(require(1419) /* ensureAvatarSource */.getAutomodAvatarURL())).uri;
   const merged1 = Object.assign(tmp7);
   return obj;

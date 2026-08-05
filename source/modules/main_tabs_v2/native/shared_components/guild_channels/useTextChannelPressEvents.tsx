@@ -1,15 +1,15 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 15914
+// Function ID: 15915
 // Name: useTextChannelPressEvents
-// Dependencies: [19, 1372, 4295, 4293, 9816, 15135, 9585, 2]
+// Dependencies: [19, 1372, 4265, 4263, 9787, 15115, 9556, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 15933 (useTextChannelPressEvents)
+// Module 15914 (useTextChannelPressEvents)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
-let result = require("module_4295").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx");
+let result = require("module_4265").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx");
 
 export const useTextChannelPressEvents = function useTextChannelPressEvents(channel, flag2) {
   let closure_0 = channel;

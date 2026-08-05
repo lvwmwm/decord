@@ -1,9 +1,9 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14599
+// Function ID: 14600
 // Name: _serializeIntlData
-// Dependencies: [5, 17, 676, 21, 644, 705, 1578, 1239, 1273, 1236, 500, 530, 3986, 4241, 10361, 13789, 13992, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 1578, 1239, 1273, 1236, 500, 530, 3956, 4211, 10333, 13761, 13966, 2]
 
-// Module 14619 (_serializeIntlData)
+// Module 14599 (_serializeIntlData)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "set";
 import ME from "ME";
@@ -28,7 +28,7 @@ function _serializeIntlData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ function _handleUploadIntlDataSettingPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -220,9 +220,9 @@ function _handleUploadIntlDataSettingPress() {
         } else {
           if (2 === tmp9) {
             dependencyMap = 1;
-            let obj5 = callback(3986);
+            let obj5 = callback(3956);
             const obj1 = { key: "USER_SETTINGS_INTL_DATA_UPLOAD_FAILED", IconComponent: null, content: "Failed to upload internationalization data." };
-            obj1[1] = ANDROID_APP(4241).CircleInformationIcon;
+            obj1[1] = ANDROID_APP(4211).CircleInformationIcon;
             obj5.open(obj1);
             dependencyMap = 0;
             (function onUploadIntlDataRequestFinish() {
@@ -262,9 +262,9 @@ function _handleUploadIntlDataSettingPress() {
             c5 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = callback(3986);
+            obj = callback(3956);
             obj5 = { key: "USER_SETTINGS_INTL_DATA_UPLOADED", IconComponent: null, content: "Internationalization data uploaded successfully." };
-            obj5[1] = ANDROID_APP(4241).CircleInformationIcon;
+            obj5[1] = ANDROID_APP(4211).CircleInformationIcon;
             obj.open(obj5);
             dependencyMap = 1;
           }

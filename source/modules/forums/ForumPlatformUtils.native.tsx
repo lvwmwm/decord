@@ -1,9 +1,9 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7677
+// Function ID: 7678
 // Name: getSystemLocale
 // Dependencies: [1236, 2]
 
-// Module 7705 (getSystemLocale)
+// Module 7677 (getSystemLocale)
 const result = require("set").fileFinishedImporting("modules/forums/ForumPlatformUtils.native.tsx");
 
 export default {

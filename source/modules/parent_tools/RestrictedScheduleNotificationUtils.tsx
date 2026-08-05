@@ -1,10 +1,10 @@
-// Module ID: 9669
-// Function ID: 9670
+// Module ID: 9640
+// Function ID: 9641
 // Name: isOnlyDayLoss
-// Dependencies: [12, 2285, 1236, 9670, 2]
+// Dependencies: [12, 2255, 1236, 9641, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 9669 (isOnlyDayLoss)
+// Module 9640 (isOnlyDayLoss)
 let Created;
 let Disabled;
 let Enabled;
@@ -260,12 +260,12 @@ export const getRestrictedScheduleNotificationTitle = function getRestrictedSche
 export const getRestrictedScheduleNotificationSubtitle = function getRestrictedScheduleNotificationSubtitle(rule) {
   let result = null;
   if (null != rule) {
-    result = require(9670) /* setsEqual */.formatRestrictedScheduleInAppSubtitle(rule);
-    const obj = require(9670) /* setsEqual */;
+    result = require(9641) /* setsEqual */.formatRestrictedScheduleInAppSubtitle(rule);
+    const obj = require(9641) /* setsEqual */;
   }
   if (result == null) {
     const intl = require(1236) /* getSystemLocale */.intl;
-    result = intl.string(importDefault(2285)["8OlpoY"]);
+    result = intl.string(importDefault(2255)["8OlpoY"]);
   }
   return result;
 };

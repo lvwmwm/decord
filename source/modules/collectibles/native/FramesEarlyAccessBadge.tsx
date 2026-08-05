@@ -1,10 +1,10 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 9328
+// Function ID: 9329
 // Name: BadgeWithTooltip
-// Dependencies: [32, 19, 17, 21, 4285, 712, 4221, 1236, 8576, 4131, 7625, 4281, 9321, 5597, 2]
+// Dependencies: [32, 19, 17, 21, 4255, 712, 4191, 1236, 8548, 4101, 7597, 4251, 9292, 5582, 2]
 // Exports: default
 
-// Module 9357 (BadgeWithTooltip)
+// Module 9328 (BadgeWithTooltip)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -47,7 +47,7 @@ function BadgeWithTooltip(tooltipPosition) {
   }, []);
   const items = [tooltipPosition, stringResult, first, callback];
   const memo = callback.useMemo(() => ({ position: tooltipPosition, label: c3, visible: first, onPress: callback }), items);
-  let obj = tooltipPosition(8576);
+  let obj = tooltipPosition(8548);
   const tooltip = obj.useTooltip(ref, memo);
   const items1 = [first];
   const effect = callback.useEffect(() => {
@@ -62,8 +62,8 @@ function BadgeWithTooltip(tooltipPosition) {
   const callback1 = callback.useCallback(() => {
     callback((arg0) => !arg0);
   }, []);
-  const tmp2 = first(4221)();
-  const isThemeDarkResult = tooltipPosition(4131).isThemeDark(tmp2);
+  const tmp2 = first(4191)();
+  const isThemeDarkResult = tooltipPosition(4101).isThemeDark(tmp2);
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
     str = "control-overlay-primary-text-default";
@@ -72,16 +72,16 @@ function BadgeWithTooltip(tooltipPosition) {
   const stringResult1 = intl2.string(tooltipPosition(1236).t["1m6qcO"]);
   obj = { ref, onPress: callback1, hitSlop: closure_9, accessibilityRole: "button", accessibilityLabel: stringResult1, accessibilityHint: stringResult, style: items2, children: null };
   items2 = [tmp3.pillBase, isThemeDarkResult ? tmp3.pillDark : tmp3.pillLight];
-  const items3 = [callback2(tooltipPosition(7625).NitroWheelIcon, { size: "xs", color: str }), ];
+  const items3 = [callback2(tooltipPosition(7597).NitroWheelIcon, { size: "xs", color: str }), ];
   obj = { variant: "text-sm/bold", color: str, style: tmp3.text, children: stringResult1 };
-  items3[1] = callback2(tooltipPosition(4281).Text, obj);
+  items3[1] = callback2(tooltipPosition(4251).Text, obj);
   obj[7] = items3;
   return callback3(closure_5, obj);
 }
 function StaticBadge() {
   const tmp3 = createCacheKey();
-  let obj = require(4131) /* AccessibilityAnnouncer */;
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4221)());
+  let obj = require(4101) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4191)());
   let str = "text-overlay-light";
   if (isThemeDarkResult) {
     str = "control-overlay-primary-text-default";
@@ -90,9 +90,9 @@ function StaticBadge() {
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t["1m6qcO"]);
   obj = { accessibilityLabel: stringResult, style: items, children: null };
   items = [tmp3.pillBase, isThemeDarkResult ? tmp3.pillDark : tmp3.pillLight];
-  const items1 = [callback2(require(7625) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs", color: str }), ];
+  const items1 = [callback2(require(7597) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs", color: str }), ];
   obj = { variant: "text-sm/bold", color: str, style: tmp3.text, children: stringResult };
-  items1[1] = callback2(require(4281) /* Text */.Text, obj);
+  items1[1] = callback2(require(4251) /* Text */.Text, obj);
   obj[2] = items1;
   return callback3(closure_6, obj);
 }
@@ -112,7 +112,7 @@ export default function _default(tooltipPosition) {
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = require(9321) /* useCanPurchaseFrames */;
+  let obj = require(9292) /* useCanPurchaseFrames */;
   if (!obj.useIsProfileFramesEarlyAccessPhase(tooltipPosition.location)) {
     return null;
   } else if (flag2) {
@@ -126,6 +126,6 @@ export default function _default(tooltipPosition) {
     const obj1 = { tooltipPosition: null };
     obj1[0] = str;
     obj[1] = tmp3(BadgeWithTooltip, obj1);
-    tmp3Result = tmp3(require(5597) /* Layer */.LayerScope, obj);
+    tmp3Result = tmp3(require(5582) /* Layer */.LayerScope, obj);
   }
 };

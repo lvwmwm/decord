@@ -119,7 +119,7 @@ function takeScreenshot() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -148,7 +148,7 @@ function takeScreenshot() {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } else {
               try {
@@ -193,7 +193,7 @@ function takeScreenshot() {
                   obj = lib(table[7]);
                   obj.showFeedbackWidget();
                   c3 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               } catch (tmp18) {
                 c3 = tmp;
@@ -202,7 +202,7 @@ function takeScreenshot() {
             }
           }), 100);
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp9) {
         v0 = tmp;

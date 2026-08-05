@@ -1,10 +1,10 @@
-// Module ID: 9267
-// Function ID: 9268
+// Module ID: 9238
+// Function ID: 9239
 // Name: trackImpression
-// Dependencies: [19, 1372, 1931, 4102, 699, 503, 698, 709, 4479, 659, 4491, 4711, 2]
+// Dependencies: [19, 1372, 1931, 4072, 699, 503, 698, 709, 4449, 659, 4461, 4681, 2]
 // Exports: default
 
-// Module 9267 (trackImpression)
+// Module 9238 (trackImpression)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -54,9 +54,9 @@ function trackImpression(type, arg1, arg2) {
   }
   let tmpResult = tmp(698);
   obj = { impression_type: type, location: callback3() };
-  tmpResult = tmp(4479);
+  tmpResult = tmp(4449);
   const merged = Object.assign(tmpResult.collectGuildAnalyticsMetadata(guild_id));
-  const merged1 = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
+  const merged1 = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
   const merged2 = Object.assign(properties);
   const result = tmpResult.expandEventProperties(obj);
   if (flag) {
@@ -87,7 +87,7 @@ export default function useTrackImpression(arg0) {
   let ensureGuildLoaded;
   React = React.useRef(undefined);
   ensureGuildLoaded = React.useRef(undefined);
-  obj(4711)(() => {
+  obj(4681)(() => {
     if (obj.trackOnInitialLoad) {
       const tmp6 = obj(659)(ref.current, obj);
       if (!tmp6) {
@@ -100,7 +100,7 @@ export default function useTrackImpression(arg0) {
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(4491)("impression_");
+        obj.sequenceId = tmp2(4461)("impression_");
         outer1_13(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {
@@ -124,7 +124,7 @@ export default function useTrackImpression(arg0) {
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(4491)("impression_");
+        obj.sequenceId = tmp2(4461)("impression_");
         outer1_13(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {

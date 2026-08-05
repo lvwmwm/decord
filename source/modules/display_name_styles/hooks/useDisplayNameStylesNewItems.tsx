@@ -1,10 +1,10 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14449
+// Function ID: 14450
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [19, 14475, 1886, 589, 14476, 2]
+// Dependencies: [19, 14450, 1886, 589, 14451, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14474 (useDisplayNameStylesNewFonts)
+// Module 14449 (useDisplayNameStylesNewFonts)
 import noop from "noop";
 import set from "set";
 import items3 from "items3";

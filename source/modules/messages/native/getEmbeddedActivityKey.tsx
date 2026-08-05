@@ -1,10 +1,10 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8391
+// Function ID: 8392
 // Name: getEmbeddedActivityKey
 // Dependencies: [2]
 // Exports: default, parseEmbeddedActivityKey
 
-// Module 8419 (getEmbeddedActivityKey)
+// Module 8391 (getEmbeddedActivityKey)
 const result = require("set").fileFinishedImporting("modules/messages/native/getEmbeddedActivityKey.tsx");
 
 export default function getEmbeddedActivityKey(location) {

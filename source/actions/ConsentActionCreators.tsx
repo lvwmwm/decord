@@ -1,10 +1,10 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 13979
+// Function ID: 13980
 // Name: handleRequestSuccess
 // Dependencies: [676, 709, 1236, 530, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 14005 (handleRequestSuccess)
+// Module 13979 (handleRequestSuccess)
 import { Endpoints } from "ME";
 
 function handleRequestSuccess(body) {

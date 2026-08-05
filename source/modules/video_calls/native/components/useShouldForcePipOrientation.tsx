@@ -1,10 +1,10 @@
-// Module ID: 10570
-// Function ID: 10571
+// Module ID: 10542
+// Function ID: 10543
 // Name: useShouldForcePipOrientation
-// Dependencies: [1371, 4298, 1218, 4310, 4303, 10571, 589, 10560, 8817, 2]
+// Dependencies: [1371, 4268, 1218, 4280, 4273, 10543, 589, 10532, 8789, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10570 (useShouldForcePipOrientation)
+// Module 10542 (useShouldForcePipOrientation)
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
@@ -22,7 +22,7 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   let focusedEmbeddedActivityParticipant;
   channel = channel.channel;
   let OrientationType = dependencyMap;
-  const tmp = importDefault(10571)(channel.id);
+  const tmp = importDefault(10543)(channel.id);
   const items = [getParticipants, fetchFingerprint];
   const stateFromStores = channel(589).useStateFromStores(items, () => {
     const participant = outer1_4.getParticipant(channel.id, outer1_5.getId());
@@ -85,17 +85,17 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != focusedEmbeddedActivityParticipant) {
     if (callback(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return tmp2(8817).OrientationType.LANDSCAPE;
+        return tmp2(8789).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    OrientationType = tmp2(8817).OrientationType;
+    OrientationType = tmp2(8789).OrientationType;
     let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === tmp8.PORTRAIT) {
-      LANDSCAPE = tmp2(8817).OrientationType.PORTRAIT;
+      LANDSCAPE = tmp2(8789).OrientationType.PORTRAIT;
     }
   }
 };

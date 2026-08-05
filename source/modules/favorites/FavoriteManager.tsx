@@ -1,31 +1,31 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16433
+// Function ID: 16434
 // Name: handleChannelDelete
-// Dependencies: [9628, 1865, 5229, 2]
+// Dependencies: [9599, 1865, 5214, 2]
 
-// Module 16452 (handleChannelDelete)
+// Module 16433 (handleChannelDelete)
 import "initialize";
 
 const require = arg1;
 function handleChannelDelete(channel) {
-  const result = require(9628) /* getNextPositionFromChannels */.removeFavoriteChannel(channel.channel.id, { trackAnalytics: false });
+  const result = require(9599) /* getNextPositionFromChannels */.removeFavoriteChannel(channel.channel.id, { trackAnalytics: false });
 }
 function handleCategoryCollapse(id) {
-  const result = require(9628) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, true);
+  const result = require(9599) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, true);
 }
 function handleCategoryExpand(id) {
-  const result = require(9628) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, false);
+  const result = require(9599) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, false);
 }
 function handleCategoryCollapseAll(guildId) {
   if (obj.isFavoritesGuildId(guildId.guildId)) {
-    const result = require(9628) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(true);
-    const tmpResult = require(9628) /* getNextPositionFromChannels */;
+    const result = require(9599) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(true);
+    const tmpResult = require(9599) /* getNextPositionFromChannels */;
   }
 }
 function handleCategoryExpandAll(guildId) {
   if (obj.isFavoritesGuildId(guildId.guildId)) {
-    const result = require(9628) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(false);
-    const tmpResult = require(9628) /* getNextPositionFromChannels */;
+    const result = require(9599) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(false);
+    const tmpResult = require(9599) /* getNextPositionFromChannels */;
   }
 }
 let prototype = function FavoriteManager() {

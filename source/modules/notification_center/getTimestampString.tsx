@@ -1,10 +1,10 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 6997
+// Function ID: 6998
 // Name: getDurationString
-// Dependencies: [1236, 3867, 2]
+// Dependencies: [1236, 3837, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 7023 (getDurationString)
+// Module 6997 (getDurationString)
 function getDurationString(seconds) {
   seconds = seconds.seconds;
   const formatter = seconds.getFormatter();
@@ -53,7 +53,7 @@ export default function getTimestampString(arg0) {
   let since;
   const obj = { seconds: null, getFormatter: null };
   ({ since, getFormatter } = arg0);
-  obj[0] = importDefault(3867)().diff(importDefault(3867)(since), "s");
+  obj[0] = importDefault(3837)().diff(importDefault(3837)(since), "s");
   obj[1] = getFormatter;
   return getDurationString(obj);
 };

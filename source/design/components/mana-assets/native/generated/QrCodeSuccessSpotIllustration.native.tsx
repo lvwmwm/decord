@@ -1,10 +1,10 @@
-// Module ID: 6567
-// Function ID: 6568
+// Module ID: 6552
+// Function ID: 6553
 // Name: QrCodeSuccessSpotIllustration
-// Dependencies: [21, 5236, 6568, 2]
+// Dependencies: [21, 5221, 6553, 2]
 // Exports: QrCodeSuccessSpotIllustration
 
-// Module 6567 (QrCodeSuccessSpotIllustration)
+// Module 6552 (QrCodeSuccessSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/QrCodeSuccessSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const QrCodeSuccessSpotIllustration = function QrCodeSuccessSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6568);
+  obj[0] = importDefault(6553);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const QrCodeSuccessSpotIllustration = function QrCodeSuccessSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

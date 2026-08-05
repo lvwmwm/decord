@@ -1,24 +1,24 @@
-// Module ID: 13923
-// Function ID: 13924
+// Module ID: 13897
+// Function ID: 13898
 // Name: pressable
-// Dependencies: [7892, 21, 10361, 1236, 2803, 13924, 4625, 4500, 2]
+// Dependencies: [7864, 21, 10333, 1236, 2773, 13898, 4595, 4470, 2]
 
-// Module 13923 (pressable)
+// Module 13897 (pressable)
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2803)["bD//cU"]);
+    return intl.string(importDefault(2773)["bD//cU"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2803).Gn0SAj);
+    return intl.string(importDefault(2773).Gn0SAj);
   },
   onPress() {
-    require(4625) /* useAlertStore */.openAlert(require(13924) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13924) /* SettingsAgeGroupResetAlert */.default, {}));
+    require(4595) /* useAlertStore */.openAlert(require(13898) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13898) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
   usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings
@@ -26,15 +26,15 @@ const pressable = createToggle.createPressable({
 const obj = {
   useTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2803)["bD//cU"]);
+    return intl.string(importDefault(2773)["bD//cU"]);
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT_AGE_GROUP_ASSIGNED_ADULT,
   useDescription() {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2803).Gn0SAj);
+    return intl.string(importDefault(2773).Gn0SAj);
   },
   onPress() {
-    require(4625) /* useAlertStore */.openAlert(require(13924) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13924) /* SettingsAgeGroupResetAlert */.default, {}));
+    require(4595) /* useAlertStore */.openAlert(require(13898) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13898) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
   usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings

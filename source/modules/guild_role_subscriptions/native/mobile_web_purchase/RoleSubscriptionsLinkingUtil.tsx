@@ -1,9 +1,9 @@
-// Module ID: 5839
-// Function ID: 5840
+// Module ID: 5824
+// Function ID: 5825
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 676, 1379, 5840, 1959, 3, 2]
+// Dependencies: [5, 676, 1379, 5825, 1959, 3, 2]
 
-// Module 5839 (performRoleSubscriptionUpsellRedirect)
+// Module 5824 (performRoleSubscriptionUpsellRedirect)
 import timestamp from "timestamp";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -40,7 +40,7 @@ function _performRoleSubscriptionUpsellRedirect() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -172,7 +172,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -207,7 +207,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -238,7 +238,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp8) {
           c1 = tmp;
@@ -285,7 +285,7 @@ function _performDeveloperPortalRedirectWithTokenHandoff() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

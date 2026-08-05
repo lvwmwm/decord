@@ -1,10 +1,10 @@
-// Module ID: 5654
-// Function ID: 5655
+// Module ID: 5639
+// Function ID: 5640
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 676, 21, 712, 4285, 5655, 5634, 4229, 2]
+// Dependencies: [19, 17, 676, 21, 712, 4255, 5640, 5619, 4199, 2]
 // Exports: default
 
-// Module 5654 (VerifiedRoleIcon)
+// Module 5639 (VerifiedRoleIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -43,11 +43,11 @@ export default function VerifiedRoleIcon(arg0) {
   if (roleColor == null) {
     roleColor = closure_3;
   }
-  let obj = require(5655) /* getHigherContrastColor */;
+  let obj = require(5640) /* getHigherContrastColor */;
   const items = [WHITE, PRIMARY_630];
   const diff = size - size / 8 * 2;
   const higherContrastColor = obj.getHigherContrastColor({ backgroundColor: roleColor, colors: items });
-  let obj1 = require(5634) /* useRoleIcon */;
+  let obj1 = require(5619) /* useRoleIcon */;
   obj = { guildId, roleId: null, size: null };
   if (roleId == null) {
     let id;
@@ -71,7 +71,7 @@ export default function VerifiedRoleIcon(arg0) {
     obj2[1] = diff;
     obj1[0] = obj2;
     obj1[2] = higherContrastColor;
-    roleIcon = tmp9(require(4229) /* LinkIcon */.LinkIcon, obj1);
+    roleIcon = tmp9(require(4199) /* LinkIcon */.LinkIcon, obj1);
   }
   obj[1] = roleIcon;
   return <View style={items1}>{null}</View>;

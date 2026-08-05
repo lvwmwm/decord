@@ -1,10 +1,10 @@
-// Module ID: 6788
-// Function ID: 6789
+// Module ID: 6773
+// Function ID: 6774
 // Name: SubscriptionPlans
-// Dependencies: [1876, 6789, 2]
+// Dependencies: [1876, 6774, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 6788 (SubscriptionPlans)
+// Module 6773 (SubscriptionPlans)
 import GuildFeatures from "GuildFeatures";
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;

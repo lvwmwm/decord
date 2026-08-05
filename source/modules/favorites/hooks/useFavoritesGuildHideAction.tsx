@@ -1,10 +1,10 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15135
+// Function ID: 15136
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4102, 676, 9629, 9628, 1865, 1222, 1236, 3031, 2]
+// Dependencies: [19, 4072, 676, 9600, 9599, 1865, 1222, 1236, 3001, 2]
 // Exports: default
 
-// Module 15155 (useFavoritesGuildHideAction)
+// Module 15135 (useFavoritesGuildHideAction)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { Routes } from "ME";
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("ME").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHideAction.tsx");
 
 export default function useFavoritesGuildHideAction() {
-  let obj = hasAccess(9629);
+  let obj = hasAccess(9600);
   hasAccess = obj.useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   obj = { isPreview: !hasAccess, label: null, subLabel: null, perform: null };
@@ -29,7 +29,7 @@ export default function useFavoritesGuildHideAction() {
   }, items);
   const intl = hasAccess(1236).intl;
   if (hasAccess) {
-    let ojM1xJ = importDefault(3031)["8FO0y9"];
+    let ojM1xJ = importDefault(3001)["8FO0y9"];
   } else {
     ojM1xJ = tmp(1236).t.ojM1xJ;
   }
@@ -37,7 +37,7 @@ export default function useFavoritesGuildHideAction() {
   let stringResult;
   if (hasAccess) {
     const intl2 = tmp(1236).intl;
-    stringResult = intl2.string(importDefault(3031).FaHxWl);
+    stringResult = intl2.string(importDefault(3001).FaHxWl);
   }
   obj[2] = stringResult;
   obj[3] = callback;

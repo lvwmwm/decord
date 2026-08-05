@@ -1,10 +1,10 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11453
+// Function ID: 11454
 // Name: RoleIcon
-// Dependencies: [32, 19, 5299, 1936, 1935, 676, 21, 11479, 8928, 589, 5300, 5315, 4281, 4798, 5197, 4253, 11466, 11467, 2]
+// Dependencies: [32, 19, 5284, 1936, 1935, 676, 21, 11451, 8900, 589, 5285, 5300, 4251, 4768, 5182, 4223, 11438, 11439, 2]
 // Exports: default
 
-// Module 11481 (RoleIcon)
+// Module 11453 (RoleIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getRoleMemberCount from "getRoleMemberCount";

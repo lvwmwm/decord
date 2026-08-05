@@ -1,9 +1,9 @@
-// Module ID: 14568
-// Function ID: 14569
+// Module ID: 14549
+// Function ID: 14550
 // Name: toggle
-// Dependencies: [7892, 10361, 1236, 3958, 14569, 500, 2]
+// Dependencies: [7864, 10333, 1236, 3928, 14550, 500, 2]
 
-// Module 14568 (toggle)
+// Module 14549 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -15,7 +15,7 @@ const toggle = createToggle.createToggle({
   useValue: require("explicitContentFromProto").NativePhoneIntegrationEnabled.useSetting,
   onValueChange: require("explicitContentFromProto").NativePhoneIntegrationEnabled.updateSetting,
   usePredicate() {
-    let enabled = importDefault(14569).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+    let enabled = importDefault(14550).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
     if (enabled) {
       enabled = require(500) /* set */.isIOS();
       const obj2 = require(500) /* set */;
@@ -32,7 +32,7 @@ const obj = {
   useValue: require("explicitContentFromProto").NativePhoneIntegrationEnabled.useSetting,
   onValueChange: require("explicitContentFromProto").NativePhoneIntegrationEnabled.updateSetting,
   usePredicate() {
-    let enabled = importDefault(14569).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
+    let enabled = importDefault(14550).useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
     if (enabled) {
       enabled = require(500) /* set */.isIOS();
       const obj2 = require(500) /* set */;

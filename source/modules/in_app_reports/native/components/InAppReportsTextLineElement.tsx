@@ -1,10 +1,10 @@
-// Module ID: 7848
-// Function ID: 7849
+// Module ID: 7820
+// Function ID: 7821
 // Name: TextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4285, 712, 5598, 4714, 500, 4265, 3982, 4281, 4695, 1236, 5638, 3985, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4255, 712, 5583, 4684, 500, 4235, 3952, 4251, 4665, 1236, 5623, 3955, 2]
 // Exports: default
 
-// Module 7848 (TextLineElement)
+// Module 7820 (TextLineElement)
 import closure_4 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -52,7 +52,7 @@ export default function TextLineElement(element) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ export default function TextLineElement(element) {
               obj.openURL(c0);
             }
             table = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp17) {
           table = tmp;

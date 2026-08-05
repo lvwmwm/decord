@@ -1,10 +1,10 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9041
+// Function ID: 9042
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 1378, 676, 21, 4285, 712, 8960, 4253, 9070, 7775, 1297, 1236, 4281, 4695, 8862, 2]
+// Dependencies: [19, 17, 1378, 676, 21, 4255, 712, 8932, 4223, 9042, 7747, 1297, 1236, 4251, 4665, 8834, 2]
 // Exports: default
 
-// Module 9069 (EndEventActionSheet)
+// Module 9041 (EndEventActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
@@ -28,7 +28,7 @@ export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   let activeEvent;
   const tmp = createCacheKey();
-  let obj = channel(8960);
+  let obj = channel(8932);
   activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -50,14 +50,14 @@ export default function EndEventActionSheet(channel) {
     obj2[0] = tmp.subtitle;
     const intl2 = tmp2(1236).intl;
     obj2[3] = intl2.string(tmp2(1236).t["0I0B8f"]);
-    items[1] = callback(tmp2(4281).Text, obj2);
+    items[1] = callback(tmp2(4251).Text, obj2);
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.cancelButtonContainer;
     const obj4 = { text: null, grow: true, onPress: null };
     const intl3 = tmp2(1236).intl;
     obj4[0] = intl3.string(tmp2(1236).t.P60OAX);
     obj4[2] = handleClose;
-    obj3[1] = callback(tmp2(4695).Button, obj4);
+    obj3[1] = callback(tmp2(4665).Button, obj4);
     items[2] = callback(View, obj3);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.confirmButtonContainer;
@@ -74,10 +74,10 @@ export default function EndEventActionSheet(channel) {
         const obj3 = channel(outer1_2[9]);
       }
     };
-    obj5[1] = callback(tmp2(4695).Button, obj6);
+    obj5[1] = callback(tmp2(4665).Button, obj6);
     items[3] = callback(View, obj5);
     obj[1] = items;
     obj[0] = callback2(View, obj);
-    return callback(activeEvent(7775), obj);
+    return callback(activeEvent(7747), obj);
   }
 };

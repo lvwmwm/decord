@@ -1,10 +1,10 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8006
+// Function ID: 8007
 // Name: MIN_REREQUEST_TIME
-// Dependencies: [1372, 1942, 1935, 1862, 3922, 1874, 8027, 1906, 5126, 4474, 4512, 4475, 8035, 1351, 2]
+// Dependencies: [1372, 1942, 1935, 1862, 3892, 1874, 7999, 1906, 5111, 4444, 4482, 4445, 8007, 1351, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 8034 (MIN_REREQUEST_TIME)
+// Module 8006 (MIN_REREQUEST_TIME)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
@@ -26,7 +26,7 @@ export const queryMentionables = function queryMentionables(type, arg1, channelI
     return [];
   } else {
     const tmp2 = type === _require(1906).ComponentType.USER_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
-    let obj = channel(5126);
+    let obj = channel(5111);
     obj = { query: null, channel: null, canMentionEveryone: false, canMentionHere: false, canMentionUsers: null, canMentionRoles: null, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     obj[0] = arg1;
     obj[1] = channel;
@@ -57,15 +57,15 @@ export const queryChannels = function queryChannels(arg0, arg1, arg2) {
   if (null == channel) {
     let items = [];
   } else {
-    let obj = importDefault(5126);
+    let obj = importDefault(5111);
     obj = { query: null, channel: null, channelTypes: null, limit: 15 };
     obj[0] = arg0;
     obj[1] = channel;
     obj[2] = arg2;
     const channels = obj.queryApplicationCommandChannelResults(obj).channels;
     items = channels.map((id) => {
-      const obj = { type: callback(4512).SelectOptionType.CHANNEL, value: id.id, label: null };
-      obj[2] = callback(4475).computeChannelName(id, mergeGuildAvatar, upsertRelationship);
+      const obj = { type: callback(4482).SelectOptionType.CHANNEL, value: id.id, label: null };
+      obj[2] = callback(4445).computeChannelName(id, mergeGuildAvatar, upsertRelationship);
       return obj;
     });
   }

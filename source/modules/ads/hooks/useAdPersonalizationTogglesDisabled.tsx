@@ -1,10 +1,10 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14750
+// Function ID: 14751
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [12853, 589, 2]
+// Dependencies: [12825, 589, 2]
 // Exports: useAdPersonalizationTogglesDisabled
 
-// Module 14770 (useAdPersonalizationTogglesDisabled)
+// Module 14750 (useAdPersonalizationTogglesDisabled)
 import reset from "reset";
 
 const require = arg1;

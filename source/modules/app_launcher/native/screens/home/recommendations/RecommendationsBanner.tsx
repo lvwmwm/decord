@@ -1,8 +1,8 @@
-// Module ID: 11391
-// Function ID: 11392
-// Dependencies: [19, 17, 1882, 676, 21, 4285, 9466, 11382, 10643, 5236, 8117, 8761, 1416, 8045, 2]
+// Module ID: 11363
+// Function ID: 11364
+// Dependencies: [19, 17, 1882, 676, 21, 4255, 9437, 11354, 10615, 5221, 8089, 8733, 1416, 8017, 2]
 
-// Module 11391
+// Module 11363
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import createdAt from "createdAt";
@@ -21,11 +21,11 @@ let closure_10 = importAllResult.memo((applicationId) => {
   let imageStyle;
   let heroMediaDimensions;
   let importDefault;
-  let obj = heroMediaDimensions(9466);
-  let obj1 = heroMediaDimensions(11382);
+  let obj = heroMediaDimensions(9437);
+  let obj1 = heroMediaDimensions(11354);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
-  const tmp4 = importDefault(10643)(obj);
+  const tmp4 = importDefault(10615)(obj);
   importDefault = tmp4;
   let items = [heroMediaDimensions, tmp4];
   const memo = importAllResult.useMemo(() => {
@@ -47,7 +47,7 @@ let closure_10 = importAllResult.memo((applicationId) => {
     obj = { style: null, source: null, resizeMode: "cover" };
     obj[0] = imageStyle;
     obj[1] = imageSource;
-    let tmp8 = jsx(importDefault(5236), { style: null, source: null, resizeMode: "cover" });
+    let tmp8 = jsx(importDefault(5221), { style: null, source: null, resizeMode: "cover" });
   } else {
     obj1 = { style: null };
     obj1[0] = imageStyle;
@@ -65,12 +65,12 @@ let closure_11 = importAllResult.memo((applicationBot) => {
     id = closure_7;
   }
   const tmp = importDefault;
-  const tmp3 = importDefault(8117);
-  const obj = { displayProfile: importDefault(8117)(id), user: null };
-  const tmp3Result = importDefault(8117)(id);
-  const tmpResult = tmp(8761);
+  const tmp3 = importDefault(8089);
+  const obj = { displayProfile: importDefault(8089)(id), user: null };
+  const tmp3Result = importDefault(8089)(id);
+  const tmpResult = tmp(8733);
   obj[1] = new createdAt(applicationBot);
-  return <tmpResult displayProfile={importDefault(8117)(id)} user={null} />;
+  return <tmpResult displayProfile={importDefault(8089)(id)} user={null} />;
 });
 const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   let applicationBot;
@@ -83,7 +83,7 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
   const tmp = callback();
   let obj = importDefault(1416);
   const applicationIconSource = obj.getApplicationIconSource({ id: applicationId, icon: applicationIcon, bot: applicationBot, botIconFirst: true });
-  importDefault(8045);
+  importDefault(8017);
   if (typeof applicationIconSource !== "number") {
     let uri;
     if (applicationIconSource != null) {
@@ -98,7 +98,7 @@ const memoResult = importAllResult.memo(function RecommendationBanner(arg0) {
     const obj1 = { uri: null };
     obj1[0] = overrideImageUrl;
     obj[1] = obj1;
-    obj[1] = jsx(importDefault(5236), { style: null, source: null, resizeMode: "cover" });
+    obj[1] = jsx(importDefault(5221), { style: null, source: null, resizeMode: "cover" });
     let tmp11 = <View style={null} source={null} resizeMode="cover" />;
   } else if (applicationEmbedded) {
     const obj2 = { applicationId: null };

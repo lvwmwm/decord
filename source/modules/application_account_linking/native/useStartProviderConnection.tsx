@@ -1,10 +1,10 @@
-// Module ID: 5628
-// Function ID: 5629
+// Module ID: 5613
+// Function ID: 5614
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 5629, 3982, 2]
+// Dependencies: [5, 19, 5614, 3952, 2]
 // Exports: useStartProviderConnection
 
-// Module 5628 (useStartProviderConnection)
+// Module 5613 (useStartProviderConnection)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import noop from "noop";
 
@@ -16,7 +16,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
   let canConnect;
   let hasConnection;
   let loading;
-  let obj = _require(5629);
+  let obj = _require(5614);
   const providerConnection = obj.useProviderConnection(provider_id);
   const startConnection = providerConnection.startConnection;
   _require = startConnection;
@@ -39,7 +39,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

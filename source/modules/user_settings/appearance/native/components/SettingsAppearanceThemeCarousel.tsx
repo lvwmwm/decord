@@ -1,16 +1,16 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14382
+// Function ID: 14383
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 14408, 21, 4146, 1297, 4285, 712, 4681, 12, 14409, 4286, 4289, 4099, 8622, 4281, 1577, 9964, 4254, 1236, 14412, 2]
+// Dependencies: [19, 17, 14383, 21, 4116, 1297, 4255, 712, 4651, 12, 14384, 4256, 4259, 4069, 8594, 4251, 1577, 9935, 4224, 1236, 14387, 2]
 // Exports: default
 
-// Module 14407 (SettingsAppearanceThemeCarousel)
+// Module 14382 (SettingsAppearanceThemeCarousel)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "Pagination";
 import importDefaultResult from "THEME_ITEM_WIDTH";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
-import importDefaultResult1 from "module_4146";
+import importDefaultResult1 from "module_4116";
 
 let c4;
 let c5;
@@ -20,8 +20,8 @@ let metroImportAll;
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
-let closure_10 = require("module_4146").createAnimatedComponent(require("Button").Icon);
-let obj = { container: null, textCentered: null, labelGroup: null, titleContainer: null, floatingNuxContainer: null, floatingNux: null, arrowLeft: null, selectionBorder: null, a11yThemeList: null, a11yThemeListScroll: null };
+let closure_10 = require("module_4116").createAnimatedComponent(require("Button").Icon);
+let obj = { container: null, textCentered: null, labelGroup: null, titleContainer: null, floatingNuxContainer: null, floatingNux: null, arrowLeft: null, uppercase: null, selectionBorder: null, a11yThemeList: null, a11yThemeListScroll: null };
 obj = { gap: require("Themes").space.PX_24, alignItems: "center" };
 obj[0] = obj;
 obj[1] = { textAlign: "center" };
@@ -36,10 +36,11 @@ obj4.shadowColor = "#000000";
 obj[5] = obj4;
 let items = [{ rotate: "90deg" }];
 obj[6] = { transform: items };
+obj[7] = { textTransform: "uppercase" };
 let obj3 = { position: "absolute", left: require("Themes").space.PX_24 };
-obj[7] = { position: "absolute", alignSelf: "center", width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: require("Themes").radii.md, borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
-obj[8] = { flexDirection: "row" };
-obj[9] = { flexGrow: 0 };
+obj[8] = { position: "absolute", alignSelf: "center", width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: require("Themes").radii.md, borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
+obj[9] = { flexDirection: "row" };
+obj[10] = { flexGrow: 0 };
 let closure_11 = createCacheKey.createStyles(obj);
 let closure_12 = { code: "function SettingsAppearanceThemeCarouselTsx1(){const{withTiming,isMidnightNuxVisible,timingStandard}=this.__closure;return{opacity:withTiming(isMidnightNuxVisible.get()?1:0,timingStandard),pointerEvents:isMidnightNuxVisible.get()?'auto':'none'};}" };
 let obj5 = { position: "absolute", alignSelf: "center", width: importDefaultResult.THEME_ITEM_WIDTH, height: importDefaultResult.THEME_ITEM_HEIGHT, borderRadius: require("Themes").radii.md, borderColor: require("Themes").colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT, borderWidth: 2 };
@@ -257,14 +258,15 @@ export default function SettingsAppearanceThemeCarousel(themes) {
       obj14[2] = tmp2(tmp3[5]).IconSizes.REFRESH_SMALL_16;
       const items12 = [tmp17(sharedValue1, obj14), ];
       const obj15 = { animated: true, style: null, variant: "eyebrow", maxFontSizeMultiplier: 1.5, children: null };
-      obj15[1] = animatedStyles.textNormal;
+      const items13 = [animatedStyles.textNormal, tmp.uppercase];
+      obj15[1] = items13;
       const intl3 = tmp2(tmp3[19]).intl;
       obj15[4] = intl3.string(tmp2(tmp3[19]).t.y2b7CA);
       items12[1] = tmp17(tmp2(tmp3[15]).Text, obj15);
       obj13[1] = items12;
       obj12[1] = tmp11(currentThemeIndex(tmp3[4]).View, obj13);
-      const items13 = [tmp17(tmp12, obj12), tmp11(sharedValue, tmp28)];
-      obj11[1] = items13;
+      const items14 = [tmp17(tmp12, obj12), tmp11(sharedValue, tmp28)];
+      obj11[1] = items14;
       return tmp11(tmp12, obj11);
     }
     const intl = tmp2(tmp3[19]).intl;

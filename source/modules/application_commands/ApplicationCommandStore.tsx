@@ -1,9 +1,9 @@
-// Module ID: 7159
-// Function ID: 7160
+// Module ID: 7133
+// Function ID: 7134
 // Name: handleInit
-// Dependencies: [32, 5807, 1931, 6889, 589, 709, 2]
+// Dependencies: [32, 5792, 1931, 6874, 589, 709, 2]
 
-// Module 7159 (handleInit)
+// Module 7133 (handleInit)
 import _slicedToArray from "_slicedToArray";
 import handlePermissionsChange from "handlePermissionsChange";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -92,8 +92,8 @@ function handleSetActiveCommand(arg0) {
       obj[5] = query;
       obj[6] = searchResultsPosition;
       obj[7] = source;
-      obj(6889).trackCommandSelected(obj);
-      const obj3 = obj(6889);
+      obj(6874).trackCommandSelected(obj);
+      const obj3 = obj(6874);
     }
     return true;
   }
@@ -188,7 +188,7 @@ function handleUpdateOptionStates(channelId) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "HermesInternal" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "T" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }

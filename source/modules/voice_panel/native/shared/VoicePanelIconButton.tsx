@@ -1,8 +1,8 @@
-// Module ID: 15979
-// Function ID: 15980
-// Dependencies: [19, 21, 7819, 7672, 2]
+// Module ID: 15960
+// Function ID: 15961
+// Dependencies: [19, 21, 7791, 7644, 2]
 
-// Module 15979
+// Module 15960
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -22,9 +22,9 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((overrideVari
   }
   obj.variant = str;
   obj.maxFontSizeMultiplier = 2;
-  obj[3] = jsx(require(7672) /* IconButton */.IconButton, {});
-  return jsx(importDefault(7819), {});
+  obj[3] = jsx(require(7644) /* IconButton */.IconButton, {});
+  return jsx(importDefault(7791), {});
 }));
-const result = require("module_7819").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
+const result = require("module_7791").fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelIconButton.tsx");
 
 export default memoResult;

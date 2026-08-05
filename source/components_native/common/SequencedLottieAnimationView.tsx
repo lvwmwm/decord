@@ -1,9 +1,9 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12772
+// Function ID: 12773
 // Name: componentDidMount
-// Dependencies: [109, 19, 17, 21, 5602, 2]
+// Dependencies: [109, 19, 17, 21, 5587, 2]
 
-// Module 12800 (componentDidMount)
+// Module 12772 (componentDidMount)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -80,7 +80,7 @@ prototype["render"] = function render() {
   const tmp = callback(props, closure_2);
   const merged = Object.assign(tmp);
   ({ handleSetRef: obj3.ref, handleComplete: obj3.onAnimationFinish } = this);
-  obj[1] = jsx(importDefault(5602), { source, style: items1 });
+  obj[1] = jsx(importDefault(5587), { source, style: items1 });
   return <View source={source} style={items1} />;
 };
 SequencedLottieAnimationView.defaultProps = { autoPlay: true };

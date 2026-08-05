@@ -1,9 +1,9 @@
-// Module ID: 6052
-// Function ID: 6053
+// Module ID: 6037
+// Function ID: 6038
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6052 (metadata)
+// Module 6037 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BumpingFistsSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/0830976830e01b68a35cf6d066964d973d8102bda6d683d0d2e9c012fe8c5f4e.png";

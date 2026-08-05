@@ -1,10 +1,10 @@
-// Module ID: 6119
-// Function ID: 6120
+// Module ID: 6104
+// Function ID: 6105
 // Name: DevQuestsTallAbstractUI
-// Dependencies: [21, 5236, 6120, 2]
+// Dependencies: [21, 5221, 6105, 2]
 // Exports: DevQuestsTallAbstractUI
 
-// Module 6119 (DevQuestsTallAbstractUI)
+// Module 6104 (DevQuestsTallAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/DevQuestsTallAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const DevQuestsTallAbstractUI = function DevQuestsTallAbstractUI(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6120);
+  obj[0] = importDefault(6105);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const DevQuestsTallAbstractUI = function DevQuestsTallAbstractUI(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

@@ -1,9 +1,9 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 16804
+// Function ID: 16805
 // Name: TaskType
-// Dependencies: [1236, 2547, 2]
+// Dependencies: [1236, 2517, 2]
 
-// Module 16823 (TaskType)
+// Module 16804 (TaskType)
 import { intl } from "getSystemLocale";
 import { intl as intl2 } from "getSystemLocale";
 import { intl as intl3 } from "getSystemLocale";

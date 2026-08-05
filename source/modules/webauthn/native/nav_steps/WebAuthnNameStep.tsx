@@ -1,10 +1,10 @@
-// Module ID: 13891
-// Function ID: 13892
+// Module ID: 13865
+// Function ID: 13866
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 13871, 21, 4285, 1480, 5740, 3986, 1236, 9940, 4246, 7777, 1297, 4695, 2]
+// Dependencies: [5, 32, 19, 17, 13845, 21, 4255, 1480, 5725, 3956, 1236, 9911, 4216, 7749, 1297, 4665, 2]
 // Exports: default
 
-// Module 13891 (WebAuthnNameStep)
+// Module 13865 (WebAuthnNameStep)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -45,7 +45,7 @@ export default function WebAuthnNameStep(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ export default function WebAuthnNameStep(arg0) {
             v0(outer1_2[9]).open(obj3);
             arr = arr.push(outer1_7.SUCCESS, {});
             v03 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp32) {
           arr = tmp32;
@@ -147,7 +147,7 @@ export default function WebAuthnNameStep(arg0) {
   obj[6] = intl2.string(require(1236) /* getSystemLocale */.t["I/sJtJ"]);
   obj[7] = tmp6[0];
   obj[8] = require(1297) /* Button */.ClearButtonVisibility.WITH_CONTENT;
-  const items = [callback2(require(7777) /* Form */.FormInput, obj), callback2(require(7777) /* Form */.FormDivider, {}), ];
+  const items = [callback2(require(7749) /* Form */.FormInput, obj), callback2(require(7749) /* Form */.FormDivider, {}), ];
   let obj1 = { style: tmp.margin, children: null };
   let obj2 = {
     onPress() {
@@ -167,8 +167,8 @@ export default function WebAuthnNameStep(arg0) {
   const intl3 = tmp2(1236).intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t["5dyZ1S"]);
   obj2[2] = "" === first;
-  obj1[1] = callback2(require(4695) /* Button */.Button, obj2);
+  obj1[1] = callback2(require(4665) /* Button */.Button, obj2);
   items[2] = callback2(_onPress, obj1);
   obj[0] = items;
-  return callback3(require(7777) /* Form */.Form, obj);
+  return callback3(require(7749) /* Form */.Form, obj);
 };

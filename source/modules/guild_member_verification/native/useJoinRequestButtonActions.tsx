@@ -1,10 +1,10 @@
-// Module ID: 11902
-// Function ID: 11903
+// Module ID: 11874
+// Function ID: 11875
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 1372, 676, 21, 3986, 1236, 5774, 4253, 8238, 4105, 4246, 712, 11903, 1959, 2]
+// Dependencies: [5, 32, 19, 1372, 676, 21, 3956, 1236, 5759, 4223, 8210, 4075, 4216, 712, 11875, 1959, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 11902 (useJoinRequestButtonActions)
+// Module 11874 (useJoinRequestButtonActions)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -50,7 +50,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

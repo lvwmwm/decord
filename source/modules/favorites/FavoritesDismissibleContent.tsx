@@ -1,10 +1,10 @@
-// Module ID: 9635
-// Function ID: 9636
+// Module ID: 9606
+// Function ID: 9607
 // Name: items1
-// Dependencies: [32, 1364, 1369, 1358, 5932, 9632, 5931, 2]
+// Dependencies: [32, 1364, 1369, 1358, 5917, 9603, 5916, 2]
 // Exports: isFavoritesIntroPopoverShown, useFavoritesBetaTagDismissibleContent, useFavoritesIntroPopoverDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useIsFavoritesIntroPopoverShown, useIsFavoritesMenuItemPopoverPending
 
-// Module 9635 (items1)
+// Module 9606 (items1)
 import _slicedToArray from "_slicedToArray";
 import withContent from "withContent";
 import closure_5 from "withContent";
@@ -27,16 +27,16 @@ export const useFavoritesIntroPopoverDismissibleContent = function useFavoritesI
   if (arg0 === undefined) {
     flag = true;
   }
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9603) /* useFavoritesGuildConfig */;
   const isFreemium = obj.useFavoritesGuildConfig({ location: "FavoritesDismissibleContent" }).isFreemium;
-  let tmpResult = tmp(5931);
+  let tmpResult = tmp(5916);
   if (tmp3) {
     if (flag) {
       if (tmp4) {
         const items = [tmp(1358).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
       }
       [tmp10, tmp11] = callback(tmp6([]), 2);
-      tmpResult = tmp(5931);
+      tmpResult = tmp(5916);
       if (tmp10 === tmp(1358).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
         const items1 = [tmp(1358).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
         let items2 = items1;
@@ -53,14 +53,14 @@ export const useFavoritesIntroPopoverDismissibleContent = function useFavoritesI
 export const useFavoritesMenuItemPopoverDismissibleContent = function useFavoritesMenuItemPopoverDismissibleContent(hasItem) {
   let tmp11;
   let tmp12;
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9603) /* useFavoritesGuildConfig */;
   const isFreemium = obj.useFavoritesGuildConfig({ location: "FavoritesDismissibleContent" }).isFreemium;
-  let tmpResult = tmp(5932);
+  let tmpResult = tmp(5917);
   let first = callback(tmpResult.useDangerouslyPeekDismissibleContents(items1), 1)[0];
   if (first == null) {
     first = null;
   }
-  tmpResult = tmp(5931);
+  tmpResult = tmp(5916);
   if (tmp3) {
     if (hasItem) {
       if (first === tmp(1358).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM) {
@@ -75,7 +75,7 @@ export const useFavoritesMenuItemPopoverDismissibleContent = function useFavorit
   }
 };
 export const useIsFavoritesMenuItemPopoverPending = function useIsFavoritesMenuItemPopoverPending() {
-  return callback(require(5932) /* canShowTimeRecurringContent */.useDangerouslyPeekDismissibleContents(items2), 1)[0] === require(1358) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+  return callback(require(5917) /* canShowTimeRecurringContent */.useDangerouslyPeekDismissibleContents(items2), 1)[0] === require(1358) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
 };
 export const isFavoritesIntroPopoverShown = function isFavoritesIntroPopoverShown() {
   return callback2(require(1358) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) && callback2(require(1358) /* DismissibleContent */.DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM);
@@ -86,9 +86,9 @@ export const useIsFavoritesIntroPopoverShown = function useIsFavoritesIntroPopov
 export const useFavoritesBetaTagDismissibleContent = function useFavoritesBetaTagDismissibleContent(arg0) {
   let require;
   let tmp10;
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9603) /* useFavoritesGuildConfig */;
   const isFreemium = obj.useFavoritesGuildConfig({ location: "FavoritesDismissibleContent" }).isFreemium;
-  require(5931) /* useSelectedDismissibleContent */;
+  require(5916) /* useSelectedDismissibleContent */;
   if (tmp3) {
     if (arg0) {
       const items = [tmp(1358).DismissibleContent.FAVORITES_GUILD_NEW_BADGE];

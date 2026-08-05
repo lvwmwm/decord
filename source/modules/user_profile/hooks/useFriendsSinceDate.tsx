@@ -1,10 +1,10 @@
-// Module ID: 9453
-// Function ID: 9454
+// Module ID: 9424
+// Function ID: 9425
 // Name: useFriendsSinceDate
-// Dependencies: [1946, 3922, 676, 647, 5091, 2]
+// Dependencies: [1946, 3892, 676, 647, 5076, 2]
 // Exports: useFriendsSinceDate
 
-// Module 9453 (useFriendsSinceDate)
+// Module 9424 (useFriendsSinceDate)
 import _getSystemLocale from "_getSystemLocale";
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
@@ -27,5 +27,5 @@ export const useFriendsSinceDate = function useFriendsSinceDate(userId) {
     return since;
   }, items2);
   const obj2 = _require(647);
-  return _require(5091).getCreatedAtDate(stateFromStores1, stateFromStores);
+  return _require(5076).getCreatedAtDate(stateFromStores1, stateFromStores);
 };

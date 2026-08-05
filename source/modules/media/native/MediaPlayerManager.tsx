@@ -1,10 +1,10 @@
-// Module ID: 13705
-// Function ID: 13706
+// Module ID: 13677
+// Function ID: 13678
 // Name: _initialize
-// Dependencies: [17, 1371, 4495, 1372, 4502, 3913, 6785, 676, 9674, 13706, 505, 3, 644, 705, 4463, 4137, 709, 500, 643, 6826, 9677, 2]
+// Dependencies: [17, 1371, 4465, 1372, 4472, 3883, 6770, 676, 9645, 13678, 505, 3, 644, 705, 4433, 4107, 709, 500, 643, 6811, 9648, 2]
 // Exports: isPlaybackComplete
 
-// Module 13705 (_initialize)
+// Module 13677 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -28,9 +28,20 @@ let map1;
 let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  const obj = { activeMediaPlayerSource: "HermesInternal", mediaSourceMessage: "PX_16", canAccessMedia: "disabled", isPlaying: false, wasPipClosedByUser: null, progress: null, rate: "ct", showPip: "Instance", closePip: "function determine_Pnpm_installWorkletsSupportTs1(value){const{boxedNitroProxy}=this.__closure;const nitroProxy=boxedNitroProxy.unbox();return nitroProxy.isHybridObject(value);}", displayedMediaItemIdsPerChannel: "function pack_Pnpm_installWorkletsSupportTs2(value){const{boxedNitroProxy}=this.__closure;const nitroProxy=boxedNitroProxy.unbox();return nitroProxy.box(value);}", currentlyDisplayedChannelId: "function unpack_Pnpm_installWorkletsSupportTs3(value){return value.unbox();}" };
-  obj[8] = function closePip() {
-    callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
+  const obj = {
+    activeMediaPlayerSource: "T",
+    mediaSourceMessage: "Path",
+    canAccessMedia: "sa",
+    isPlaying: false,
+    wasPipClosedByUser: null,
+    progress: null,
+    rate: "PX_8",
+    showPip: "flex",
+    closePip() {
+      callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
+    },
+    displayedMediaItemIdsPerChannel: "column",
+    currentlyDisplayedChannelId: null
   };
   obj[9] = {};
   return obj;
@@ -71,7 +82,7 @@ prototype["_initialize"] = function _initialize() {
   this.subscriptions = items;
   let MediaPlayerManager = closure_4.MediaPlayerManager;
   const result = MediaPlayerManager.subscribeToPlaybackEvents();
-  const rootNavigationRef = require(4137) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4107) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.addListener("state", self.updateDisplayState);
   }
@@ -79,7 +90,7 @@ prototype["_initialize"] = function _initialize() {
   participantFromServer.addChangeListener(self.handleEmbeddedActivitiesUpdated);
   ensureGuildLoaded.addChangeListener(self.updateMediaPermissions);
   getUncachedChannelPermissions.addChangeListener(self.updateMediaPermissions);
-  const obj2 = require(4137) /* getRootNavigationRef */;
+  const obj2 = require(4107) /* getRootNavigationRef */;
   const tmp2 = require;
   const subscription = importDefault(709).subscribe("LOGOUT", self.userDidClosePip);
   const obj4 = importDefault(709);
@@ -131,7 +142,7 @@ prototype["_terminate"] = function _terminate() {
   const subscriptions = this.subscriptions;
   const item = subscriptions.forEach((remove) => remove.remove());
   this.subscriptions = [];
-  const rootNavigationRef = require(4137) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4107) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.removeListener("state", self.updateDisplayState);
   }
@@ -146,7 +157,7 @@ prototype["_terminate"] = function _terminate() {
   participantFromServer.removeChangeListener(self.handleEmbeddedActivitiesUpdated);
   ensureGuildLoaded.removeChangeListener(self.updateMediaPermissions);
   getUncachedChannelPermissions.removeChangeListener(self.updateMediaPermissions);
-  const obj = require(4137) /* getRootNavigationRef */;
+  const obj = require(4107) /* getRootNavigationRef */;
   importDefault(709).unsubscribe("LOGOUT", self.userDidClosePip);
 };
 prototype["pauseCurrentPlayer"] = function pauseCurrentPlayer(arg0) {
@@ -293,7 +304,7 @@ prototype["handleMediaPlayerPlaybackSourceChanged"] = function handleMediaPlayer
     outer1_16.verbose("Playback source changed: " + id);
     const activeMediaPlayerSource = state.activeMediaPlayerSource;
     if (!tmp6(activeMediaPlayerSource, source)) {
-      obj = { activeMediaPlayerSource: null, mediaSourceMessage: null, progress: "disabled", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
+      obj = { activeMediaPlayerSource: null, mediaSourceMessage: null, progress: "sa", rate: false, isPlaying: false, wasPipClosedByUser: 0 };
       obj[0] = tmp3;
       let orFetchMediaSourceMessage;
       if (null != tmp3) {
@@ -340,13 +351,13 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
         const obj = { channelId: null, messageId: null };
         obj[0] = channelId;
         obj[1] = messageId;
-        const message1 = self(6826).fetchMessage(obj);
+        const message1 = self(6811).fetchMessage(obj);
         message1.then((arg0) => {
           if (null != arg0) {
             const result = self.handleMediaSourceMessageUpdated(arg0);
           }
         });
-        const obj2 = self(6826);
+        const obj2 = self(6811);
       }
       obj4 = message;
     }

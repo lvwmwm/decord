@@ -1,9 +1,9 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15873
+// Function ID: 15874
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15892 (metadata)
+// Module 15873 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/collectibles/frames/ea/announcement_key_1.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/2c67362cb5834dffecbfce5e2b725245d0120a869b0d5245f2d8d71f6a4f5be9.png";

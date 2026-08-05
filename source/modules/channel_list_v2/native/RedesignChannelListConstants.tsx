@@ -1,10 +1,10 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9681
+// Function ID: 9682
 // Name: hairlineWidth
-// Dependencies: [17, 501, 9370, 2]
+// Dependencies: [17, 501, 9341, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 9710 (hairlineWidth)
+// Module 9681 (hairlineWidth)
 import PlatformTypes from "PlatformTypes";
 
 let c2 = "text-xs/medium";
@@ -45,16 +45,16 @@ export const CATEGORY_MARGIN_TOP = 12;
 export const CATEGORY_MARGIN_BOTTOM = 4;
 export const CATEGORY_VERTICAL_PADDING = 4;
 export const getScaledChannelSubtitleHeight = function getScaledChannelSubtitleHeight(fontScale) {
-  return require(9370) /* map */.scaleTextLineHeight(c2, fontScale);
+  return require(9341) /* map */.scaleTextLineHeight(c2, fontScale);
 };
 export const getScaledCategoryRowHeight = function getScaledCategoryRowHeight(fontScale) {
-  return require(9370) /* map */.scaleTextLineHeight(c5, fontScale) + 8 + 4;
+  return require(9341) /* map */.scaleTextLineHeight(c5, fontScale) + 8 + 4;
 };
 export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0) {
   const sum = 8 + hairlineWidth;
-  return 2 * sum + require(9370) /* map */.scaleLineHeight(num, arg0);
+  return 2 * sum + require(9341) /* map */.scaleLineHeight(num, arg0);
 };
 export const getScaledSearchBarHeight = function getScaledSearchBarHeight(fontScale) {
-  return 24 + require(9370) /* map */.scaleTextLineHeight(c4, fontScale);
+  return 24 + require(9341) /* map */.scaleTextLineHeight(c4, fontScale);
 };
 export const VIEWABILITY_CONFIG = frozen;

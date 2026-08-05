@@ -1,9 +1,9 @@
-// Module ID: 14773
-// Function ID: 14774
+// Module ID: 14753
+// Function ID: 14754
 // Name: route
-// Dependencies: [19, 676, 14005, 14008, 10361, 1236, 12122, 14774, 2]
+// Dependencies: [19, 676, 13979, 13982, 10333, 1236, 12094, 14754, 2]
 
-// Module 14773 (route)
+// Module 14753 (route)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -18,9 +18,9 @@ createToggle = {
   screen: createToggle,
   usePreNavigationAction() {
     return React.useCallback(() => {
-      const consents = callback(14005).fetchConsents();
-      const obj = callback(14005);
-      const harvestStatus = callback(14008).fetchHarvestStatus();
+      const consents = callback(13979).fetchConsents();
+      const obj = callback(13979);
+      const harvestStatus = callback(13982).fetchHarvestStatus();
       return true;
     }, []);
   }
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.DATA_AND_PRIVACY,
   getComponent() {
-    return require(14774) /* DataAndPrivacySettings */.default;
+    return require(14754) /* DataAndPrivacySettings */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

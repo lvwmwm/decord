@@ -1,9 +1,9 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14434
+// Function ID: 14435
 // Name: toggle
-// Dependencies: [7892, 10361, 1236, 5858, 3958, 2]
+// Dependencies: [7864, 10333, 1236, 5843, 3928, 2]
 
-// Module 14459 (toggle)
+// Module 14434 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,7 +13,7 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    const GameMentionsMobileExperiment = require(5858) /* apexExperiment */.GameMentionsMobileExperiment;
+    const GameMentionsMobileExperiment = require(5843) /* apexExperiment */.GameMentionsMobileExperiment;
     return GameMentionsMobileExperiment.useConfig({ location: "GameMentionsInAutocomplete" }).enabled;
   },
   useValue: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.useSetting,
@@ -26,7 +26,7 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    const GameMentionsMobileExperiment = require(5858) /* apexExperiment */.GameMentionsMobileExperiment;
+    const GameMentionsMobileExperiment = require(5843) /* apexExperiment */.GameMentionsMobileExperiment;
     return GameMentionsMobileExperiment.useConfig({ location: "GameMentionsInAutocomplete" }).enabled;
   },
   useValue: require("explicitContentFromProto").IncludeGameMentionsInAutocomplete.useSetting,

@@ -1,10 +1,10 @@
-// Module ID: 4129
-// Function ID: 4130
+// Module ID: 4099
+// Function ID: 4100
 // Name: hexToRgba
-// Dependencies: [32, 689, 1236, 3, 4130, 2]
+// Dependencies: [32, 689, 1236, 3, 4100, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 4129 (hexToRgba)
+// Module 4099 (hexToRgba)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -164,7 +164,7 @@ function rawHslToRgb(hue, saturation, lightness) {
   const result = hue / 360;
   if (0 === saturation) {
     const _Math = Math;
-    let tmp23 = importDefault(4130);
+    let tmp23 = importDefault(4100);
     const rounded = Math.round(255 * lightness);
     const _Math2 = Math;
     const _Math3 = Math;
@@ -479,7 +479,7 @@ export const mixColors = function mixColors(mixColorOverride, red) {
   const sum1 = (1 - alpha) * red.green + alpha * mixColorOverride.green;
   const sum2 = (1 - alpha) * red.blue + alpha * mixColorOverride.blue;
   const sum3 = mixColorOverride.alpha + red.alpha * (1 - mixColorOverride.alpha);
-  return new importDefault(4130)(sum, sum1, sum2, sum3);
+  return new importDefault(4100)(sum, sum1, sum2, sum3);
 };
 export { hex2rgb2hsv };
 export const getComplimentaryPaletteForColor = function getComplimentaryPaletteForColor(items, arg1) {

@@ -1,9 +1,9 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11505
+// Function ID: 11506
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4277, 21, 4285, 4699, 1348, 3989, 712, 589, 1856, 500, 9304, 5236, 2]
+// Dependencies: [19, 17, 4247, 21, 4255, 4669, 1348, 3959, 712, 589, 1856, 500, 9275, 5221, 2]
 
-// Module 11533 (GiftIconTrinketsAnimation)
+// Module 11505 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
@@ -12,7 +12,7 @@ import importAllResult from "noop";
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles((width) => {
-  width = require(4699) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + require(4699) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING + 2;
+  width = require(4669) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + require(4669) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_PADDING + 2;
   const containerRefresh = { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 0, zIndex: 0 };
   return { container: { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 4, zIndex: 0 }, containerRefresh, trinkets: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "100%", height: "100%", top: 0, left: 0 }, trinketsRefresh: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-37.5%", left: "-37.5%" } };
 });
@@ -22,8 +22,8 @@ const memoResult = require("noop").memo((trinketsAnimationUrl) => {
   let obj = dependencyMap;
   let obj1 = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
   const enabled = obj1.useMobileVisualRefreshConfig({ location: "GiftIconTrinketsAnimation" }).enabled;
-  const tmp2 = callback(require(3989) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
-  const obj3 = require(3989) /* map */;
+  const tmp2 = callback(require(3959) /* map */.useToken(importDefault(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE));
+  const obj3 = require(3959) /* map */;
   const tmp = importDefault;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
@@ -35,7 +35,7 @@ const memoResult = require("noop").memo((trinketsAnimationUrl) => {
     obj = { style: null, pointerEvents: "none", children: null };
     obj[0] = enabled ? tmp2.containerRefresh : tmp2.container;
     if (APNGPlayerResult1.isAndroid()) {
-      APNGPlayer = APNGPlayer(9304).APNGPlayer;
+      APNGPlayer = APNGPlayer(9275).APNGPlayer;
       obj = { url: null, autoplay: null, style: null };
       obj[0] = trinketsAnimationUrl;
       obj[1] = !stateFromStores;
@@ -48,7 +48,7 @@ const memoResult = require("noop").memo((trinketsAnimationUrl) => {
       obj[0] = obj1;
       obj[1] = tmp4;
       obj[3] = !stateFromStores;
-      tmp5Result = tmp5(tmp(5236), obj);
+      tmp5Result = tmp5(tmp(5221), obj);
     }
     obj[2] = tmp5Result;
     tmp5Result = tmp5(View, obj);

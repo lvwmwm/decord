@@ -1,10 +1,10 @@
-// Module ID: 9675
-// Function ID: 9676
+// Module ID: 9646
+// Function ID: 9647
 // Name: isChannelCurrentlyVisible
-// Dependencies: [5807, 1931, 4102, 2]
+// Dependencies: [5792, 1931, 4072, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 9675 (isChannelCurrentlyVisible)
+// Module 9646 (isChannelCurrentlyVisible)
 import handlePermissionsChange from "handlePermissionsChange";
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_2 from "handleConnectionOpen";

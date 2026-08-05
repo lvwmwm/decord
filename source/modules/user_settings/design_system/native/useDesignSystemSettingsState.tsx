@@ -1,9 +1,9 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14651
+// Function ID: 14652
 // Name: keys
 // Dependencies: [644, 2]
 
-// Module 14671 (keys)
+// Module 14651 (keys)
 import keys from "keys";
 
 const obj = keys.create(() => ({ buttonSize: "md", buttonScale: 8, enableLoadingState: false, iconPosition: "start", showIcon: false, showDisabled: false }));

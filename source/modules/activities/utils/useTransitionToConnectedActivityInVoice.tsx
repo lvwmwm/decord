@@ -1,10 +1,10 @@
-// Module ID: 15997
-// Function ID: 15998
+// Module ID: 15978
+// Function ID: 15979
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1372, 1931, 676, 3903, 10320, 10880, 10555, 1231, 2]
+// Dependencies: [5, 19, 1372, 1931, 676, 3873, 10292, 10852, 10527, 1231, 2]
 // Exports: default
 
-// Module 15997 (useTransitionToConnectedActivityInVoice)
+// Module 15978 (useTransitionToConnectedActivityInVoice)
 import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -46,7 +46,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -70,7 +70,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   guild_id = undefined;
                   guild_id = 1;
                   c4 = 1;
-                  return { value: "ct", done: "Array" };
+                  return { value: "PX_8", done: "Array" };
                 }
               } else {
                 if (1 === tmp5) {
@@ -98,7 +98,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "T", done: null };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

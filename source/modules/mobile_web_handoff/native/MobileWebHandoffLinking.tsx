@@ -1,9 +1,9 @@
-// Module ID: 5840
-// Function ID: 5841
+// Module ID: 5825
+// Function ID: 5826
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4490, 5841, 5843, 698, 513, 5844, 1467, 3982, 2]
+// Dependencies: [5, 1218, 676, 4460, 5826, 5828, 698, 513, 5829, 1467, 3952, 2]
 
-// Module 5840 (createHandoffTokenWithLoadingModal)
+// Module 5825 (createHandoffTokenWithLoadingModal)
 import _createHandoffToken from "_createHandoffToken";
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
@@ -70,7 +70,7 @@ function _redirectWithHandoffToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -103,7 +103,7 @@ function _redirectWithHandoffToken() {
               uRL = undefined;
               uRL = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -207,7 +207,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
               uRL = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -277,7 +277,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
             uRL = new URL("" + location.protocol + c6.DEVELOPER_PORTAL_LOGIN_HANDOFF(obj3.nonce, _createHandoffToken, callback));
             obj1(obj3[10]).performURLNavigation(uRL.href);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp17) {
           c6 = tmp;

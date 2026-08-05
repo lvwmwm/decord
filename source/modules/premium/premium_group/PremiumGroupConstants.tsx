@@ -1,10 +1,10 @@
-// Module ID: 3945
-// Function ID: 3946
+// Module ID: 3915
+// Function ID: 3916
 // Name: SubscriptionStatusTypes
-// Dependencies: [676, 687, 1945, 1236, 2867, 2]
+// Dependencies: [676, 687, 1945, 1236, 2837, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 3945 (SubscriptionStatusTypes)
+// Module 3915 (SubscriptionStatusTypes)
 import ME from "ME";
 import importDefaultResult from "combined";
 
@@ -26,7 +26,7 @@ export const HELP_CENTER_LINK = articleURL;
 export const CANNOT_INVITE_STATUSES = items;
 export const getPremiumGroupProductName = function getPremiumGroupProductName() {
   const intl = require(1236) /* getSystemLocale */.intl;
-  return intl.string(importDefault(2867).aFBQ3d);
+  return intl.string(importDefault(2837).aFBQ3d);
 };
 export const getPremiumGroupCountryName = function getPremiumGroupCountryName() {
   const intl = require(1236) /* getSystemLocale */.intl;

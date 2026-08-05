@@ -1,9 +1,9 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16413
+// Function ID: 16414
 // Name: prototype
-// Dependencies: [8186, 10189, 5229, 2]
+// Dependencies: [8158, 10160, 5214, 2]
 
-// Module 16432 (prototype)
+// Module 16413 (prototype)
 import "initialize";
 
 let require = arg1;

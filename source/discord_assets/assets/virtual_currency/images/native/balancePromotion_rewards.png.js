@@ -1,9 +1,9 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 10040
+// Function ID: 10041
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10069 (metadata)
+// Module 10040 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/virtual_currency/images/native/balancePromotion_rewards.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/ceab4c9a5362f7edab9b43346ebde520fa728c332cf2a8177ebdf6e89341ae61.png";

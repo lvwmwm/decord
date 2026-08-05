@@ -1,9 +1,9 @@
-// Module ID: 5762
-// Function ID: 5763
+// Module ID: 5747
+// Function ID: 5748
 // Name: resetStoreState
 // Dependencies: [1946, 589, 1351, 709, 2]
 
-// Module 5762 (resetStoreState)
+// Module 5747 (resetStoreState)
 import _getSystemLocale from "_getSystemLocale";
 import { Store } from "initialize";
 

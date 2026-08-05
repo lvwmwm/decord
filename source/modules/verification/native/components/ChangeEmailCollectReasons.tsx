@@ -1,10 +1,10 @@
-// Module ID: 8265
-// Function ID: 8266
+// Module ID: 8237
+// Function ID: 8238
 // Name: ChangeEmailCollectReasons
-// Dependencies: [19, 17, 1874, 8266, 676, 21, 4285, 712, 589, 1480, 698, 691, 7795, 7794, 8267, 4281, 1236, 4695, 2]
+// Dependencies: [19, 17, 1874, 8238, 676, 21, 4255, 712, 589, 1480, 698, 691, 7767, 7766, 8239, 4251, 1236, 4665, 2]
 // Exports: default
 
-// Module 8265 (ChangeEmailCollectReasons)
+// Module 8237 (ChangeEmailCollectReasons)
 import noop from "noop";
 import get_ActivityIndicator from "Button";
 import mergeGuildAvatar from "mergeGuildAvatar";

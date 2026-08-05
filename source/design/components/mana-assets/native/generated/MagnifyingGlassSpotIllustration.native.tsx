@@ -1,10 +1,10 @@
-// Module ID: 6413
-// Function ID: 6414
+// Module ID: 6398
+// Function ID: 6399
 // Name: MagnifyingGlassSpotIllustration
-// Dependencies: [21, 5236, 6414, 2]
+// Dependencies: [21, 5221, 6399, 2]
 // Exports: MagnifyingGlassSpotIllustration
 
-// Module 6413 (MagnifyingGlassSpotIllustration)
+// Module 6398 (MagnifyingGlassSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MagnifyingGlassSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const MagnifyingGlassSpotIllustration = function MagnifyingGlassSpotIllus
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6414);
+  obj[0] = importDefault(6399);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const MagnifyingGlassSpotIllustration = function MagnifyingGlassSpotIllus
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

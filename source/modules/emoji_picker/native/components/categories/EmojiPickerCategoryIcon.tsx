@@ -1,8 +1,8 @@
-// Module ID: 8679
-// Function ID: 8680
-// Dependencies: [19, 5147, 21, 7647, 8666, 4249, 7576, 8680, 8682, 8684, 8685, 8687, 8689, 8691, 7625, 2]
+// Module ID: 8651
+// Function ID: 8652
+// Dependencies: [19, 5132, 21, 7619, 8638, 4219, 7548, 8652, 8654, 8656, 8657, 8659, 8661, 8663, 7597, 2]
 
-// Module 8679
+// Module 8651
 import { EmojiCategories } from "EmojiCategoryTypes";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -11,32 +11,32 @@ const require = arg1;
 const memoResult = require("noop").memo(function EmojiPickerCategoryIcon(id) {
   id = id.id;
   if (EmojiCategories.TOP_GUILD_EMOJI === id) {
-    return jsx(require(7647) /* TrophyIcon */.TrophyIcon, {});
+    return jsx(require(7619) /* TrophyIcon */.TrophyIcon, {});
   } else if (tmp.FAVORITES === id) {
-    return jsx(require(8666) /* StarIcon */.StarIcon, {});
+    return jsx(require(8638) /* StarIcon */.StarIcon, {});
   } else if (tmp.RECENT === id) {
-    return jsx(require(4249) /* ClockIcon */.ClockIcon, {});
+    return jsx(require(4219) /* ClockIcon */.ClockIcon, {});
   } else if (tmp.PEOPLE === id) {
-    return jsx(require(7576) /* ReactionIcon */.ReactionIcon, {});
+    return jsx(require(7548) /* ReactionIcon */.ReactionIcon, {});
   } else if (tmp.NATURE === id) {
-    return jsx(require(8680) /* NatureIcon */.NatureIcon, {});
+    return jsx(require(8652) /* NatureIcon */.NatureIcon, {});
   } else if (tmp.FOOD === id) {
-    return jsx(require(8682) /* FoodIcon */.FoodIcon, {});
+    return jsx(require(8654) /* FoodIcon */.FoodIcon, {});
   } else if (tmp.ACTIVITY === id) {
-    return jsx(require(8684) /* GameControllerIcon */.GameControllerIcon, {});
+    return jsx(require(8656) /* GameControllerIcon */.GameControllerIcon, {});
   } else if (tmp.TRAVEL === id) {
-    return jsx(require(8685) /* BicycleIcon */.BicycleIcon, {});
+    return jsx(require(8657) /* BicycleIcon */.BicycleIcon, {});
   } else if (tmp.OBJECTS === id) {
-    return jsx(require(8687) /* ObjectIcon */.ObjectIcon, {});
+    return jsx(require(8659) /* ObjectIcon */.ObjectIcon, {});
   } else if (tmp.SYMBOLS === id) {
-    return jsx(require(8689) /* HeartIcon */.HeartIcon, {});
+    return jsx(require(8661) /* HeartIcon */.HeartIcon, {});
   } else if (tmp.FLAGS === id) {
-    return jsx(require(8691) /* FlagIcon */.FlagIcon, {});
+    return jsx(require(8663) /* FlagIcon */.FlagIcon, {});
   } else {
     if (tmp.CUSTOM !== id) {
       const PREMIUM_UPSELL = tmp.PREMIUM_UPSELL;
     }
-    return jsx(require(7625) /* NitroWheelIcon */.NitroWheelIcon, {});
+    return jsx(require(7597) /* NitroWheelIcon */.NitroWheelIcon, {});
   }
 });
 const result = require("jsxProd").fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoryIcon.tsx");

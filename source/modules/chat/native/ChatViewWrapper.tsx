@@ -1,8 +1,8 @@
-// Module ID: 10239
-// Function ID: 10240
-// Dependencies: [10240, 10241, 10251, 2]
+// Module ID: 10211
+// Function ID: 10212
+// Dependencies: [10212, 10213, 10223, 2]
 
-// Module 10239
+// Module 10211
 import apexExperiment from "apexExperiment";
 
 if (apexExperiment.isAnimatedAndroidKeyboard()) {

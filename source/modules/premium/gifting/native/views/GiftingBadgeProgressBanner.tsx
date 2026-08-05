@@ -1,10 +1,10 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 9934
+// Function ID: 9935
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4285, 712, 5610, 9267, 503, 9956, 4281, 1236, 2381, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 5595, 9238, 503, 9927, 4251, 1236, 2351, 2]
 // Exports: default
 
-// Module 9963 (GiftingBadgeProgressBanner)
+// Module 9934 (GiftingBadgeProgressBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,25 +37,25 @@ export default function GiftingBadgeProgressBanner(arg0) {
     items1 = [];
   }
   let obj = { name: null, type: null, properties: null };
-  const tmp4 = importDefault(5610);
+  const tmp4 = importDefault(5595);
   obj[0] = require(503) /* encodeProperties */.ImpressionNames.GIFTING_BADGE_PROGRESS_BANNER;
   obj[1] = require(503) /* encodeProperties */.ImpressionTypes.VIEW;
   obj[2] = { gifts_to_next_tier: giftsToNextTier, next_tier: nextTierName, location_stack: tmp4(...items1).analyticsLocations };
-  importDefault(9267)(obj, { trackOnInitialLoad: true });
+  importDefault(9238)(obj, { trackOnInitialLoad: true });
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.iconContainer, children: null };
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
     const obj1 = { icon: null, size: 24 };
     obj1[0] = nextTierIcon;
-    tmp10Result = tmp10(tmp2(9956), obj1);
+    tmp10Result = tmp10(tmp2(9927), obj1);
   }
   obj[1] = tmp10Result;
   const items2 = [closure_4(View, obj), ];
   const obj2 = { variant: "text-md/semibold", children: null };
   const intl = tmp6(1236).intl;
-  obj2[1] = intl.formatToPlainString(importDefault(2381)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
-  items2[1] = closure_4(require(4281) /* Text */.Text, obj2);
+  obj2[1] = intl.formatToPlainString(importDefault(2351)["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName });
+  items2[1] = closure_4(require(4251) /* Text */.Text, obj2);
   obj[1] = items2;
   return closure_5(View, obj);
 };

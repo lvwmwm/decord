@@ -1,9 +1,9 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13904
+// Function ID: 13905
 // Name: pressable
-// Dependencies: [1874, 7892, 13895, 13931, 4623, 1236, 10361, 2]
+// Dependencies: [1874, 7864, 13869, 13905, 4593, 1236, 10333, 2]
 
-// Module 13930 (pressable)
+// Module 13904 (pressable)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
@@ -22,7 +22,7 @@ createToggle = {
     }
     if (verified != null) {
       if (verified) {
-        let obj = importDefault(13931);
+        let obj = importDefault(13905);
         obj.open();
       }
     }
@@ -31,11 +31,11 @@ createToggle = {
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t.v740sh);
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.uggF7o);
-    importDefault(4623).show(obj);
+    importDefault(4593).show(obj);
   },
   withArrow: true,
   usePredicate: function useHasAccountEnable2FASetting() {
-    return !require(13895) /* useIs2FAEnabled */.useIsTOTPEnabled();
+    return !require(13869) /* useIs2FAEnabled */.useIsTOTPEnabled();
   }
 };
 createToggle = createToggle.createPressable(createToggle);

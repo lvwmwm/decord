@@ -1,10 +1,10 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15878
+// Function ID: 15879
 // Name: usePreloadedAsset
-// Dependencies: [32, 19, 17, 4277, 589, 500, 5236, 2]
+// Dependencies: [32, 19, 17, 4247, 589, 500, 5221, 2]
 // Exports: default
 
-// Module 15897 (usePreloadedAsset)
+// Module 15878 (usePreloadedAsset)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { TurboModuleRegistry } from "get ActivityIndicator";

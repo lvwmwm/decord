@@ -1,10 +1,10 @@
-// Module ID: 5638
-// Function ID: 5639
+// Module ID: 5623
+// Function ID: 5624
 // Name: _copy
-// Dependencies: [5, 5639, 2]
+// Dependencies: [5, 5624, 2]
 // Exports: copy, getString
 
-// Module 5638 (_copy)
+// Module 5623 (_copy)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _copy() {
@@ -26,7 +26,7 @@ function _copy() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ function _copy() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp13) {
           c2 = tmp;
@@ -94,5 +94,5 @@ export const copy = function copy() {
   return applyArgumentsResult;
 };
 export const getString = function getString() {
-  return importDefault(5639).getString();
+  return importDefault(5624).getString();
 };

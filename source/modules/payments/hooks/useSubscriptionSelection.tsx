@@ -1,10 +1,10 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 9461
+// Function ID: 9462
 // Name: useSubscriptionSelection
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 9490 (useSubscriptionSelection)
+// Module 9461 (useSubscriptionSelection)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

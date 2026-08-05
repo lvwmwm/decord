@@ -1,10 +1,10 @@
-// Module ID: 13155
-// Function ID: 13156
+// Module ID: 13127
+// Function ID: 13128
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1467, 11187, 705, 2]
+// Dependencies: [5, 32, 19, 1467, 11159, 705, 2]
 // Exports: default
 
-// Module 13155 (useFetchShareEmbed)
+// Module 13127 (useFetchShareEmbed)
 import batchUpdates from "batchUpdates";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -39,7 +39,7 @@ export default function useFetchShareEmbed(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -64,7 +64,7 @@ export default function useFetchShareEmbed(arg0) {
                   c4 = 3;
                   c5 = 1;
                   let obj1 = { value: null, done: false };
-                  obj1[0] = outer2_0(11187).unfurlEmbedUrl(items);
+                  obj1[0] = outer2_0(11159).unfurlEmbedUrl(items);
                   return obj1;
                 } else {
                   c5 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 7130
-// Function ID: 7131
+// Module ID: 7104
+// Function ID: 7105
 // Name: _getDeviceState
-// Dependencies: [5, 17, 3, 7131, 2]
+// Dependencies: [5, 17, 3, 7105, 2]
 // Exports: getDeviceState
 
-// Module 7130 (_getDeviceState)
+// Module 7104 (_getDeviceState)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -28,7 +28,7 @@ function _getDeviceState() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ function _getDeviceState() {
               fallback = obj1.fallback;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 11492
-// Function ID: 11493
+// Module ID: 11464
+// Function ID: 11465
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [19, 17, 1479, 21, 4285, 712, 11431, 1581, 9466, 11350, 6891, 4812, 1236, 5242, 4281, 1297, 11392, 11355, 11429, 11397, 11400, 11401, 11351, 9467, 2]
+// Dependencies: [19, 17, 1479, 21, 4255, 712, 11403, 1581, 9437, 11322, 6876, 4797, 1236, 5227, 4251, 1297, 11364, 11327, 11401, 11369, 11372, 11373, 11323, 9438, 2]
 // Exports: default
 
-// Module 11492 (DEFAULT_CONTENT_PADDING)
+// Module 11464 (DEFAULT_CONTENT_PADDING)
 import useBottomSheetFlashListBottomViewabilityInset from "useBottomSheetFlashListBottomViewabilityInset";
 import { View } from "EntityBorderAppIcon";
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -117,7 +117,7 @@ export default function AppLauncherViewAllScreen(route) {
     obj = { color: null };
     obj[0] = analyticsLocation(sectionOverallPosition[5]).colors.INTERACTIVE_TEXT_DEFAULT;
     obj[4] = promotedApplicationIds(context(sectionOverallPosition[13]).ArrowLargeLeftIcon, obj);
-    const items = [promotedApplicationIds(context(sectionOverallPosition[11]).PressableOpacity, obj), promotedApplicationIds(context(sectionOverallPosition[14]).Text, { lineClamp: 1, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: title }), ];
+    const items = [promotedApplicationIds(context(sectionOverallPosition[11]).PressableOpacity, obj), promotedApplicationIds(context(sectionOverallPosition[14]).Text, { accessibilityRole: "header", lineClamp: 1, variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: title }), ];
     const obj2 = { size: null };
     obj2[0] = context(sectionOverallPosition[6]).BACK_BUTTON_SIZE;
     items[2] = promotedApplicationIds(context(sectionOverallPosition[15]).Spacer, obj2);

@@ -1,8 +1,8 @@
-// Module ID: 14250
-// Function ID: 14251
-// Dependencies: [7103, 9434, 9435, 9439, 7108, 7097, 4490, 14251, 1959, 2]
+// Module ID: 14224
+// Function ID: 14225
+// Dependencies: [7077, 9405, 9406, 9410, 7082, 7071, 4460, 14225, 1959, 2]
 
-// Module 14250
+// Module 14224
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
 let result = require("emitClickEventWithCreative").fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
 
@@ -14,18 +14,18 @@ export default {
     let trackingCtx;
     ({ quest, trackingCtx } = isTargetedDisclosure);
     ({ gamePublisher, gameTitle } = quest.config.messages);
-    let obj = require(7103) /* getApplicationIdsByTaskTypes */;
-    let obj1 = require(9434) /* apexExperiment */;
-    if (obj1.shouldMigrateToAdAnalyticsInterface(require(9434) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_disclosure_modal")) {
-      let tmpResult = tmp(9435);
+    let obj = require(7077) /* getApplicationIdsByTaskTypes */;
+    let obj1 = require(9405) /* apexExperiment */;
+    if (obj1.shouldMigrateToAdAnalyticsInterface(require(9405) /* apexExperiment */.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_disclosure_modal")) {
+      let tmpResult = tmp(9406);
       obj = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null };
-      obj[0] = tmp(9439).AdUserActionType.CLICK_INTERNAL;
-      obj[1] = tmp(7108).AdCreativeType.QUEST;
+      obj[0] = tmp(9410).AdUserActionType.CLICK_INTERNAL;
+      obj[1] = tmp(7082).AdCreativeType.QUEST;
       obj[2] = quest.id;
       ({ ctaContent: obj6[3], content: obj6[4], sourceQuestContent: obj6[5], position: obj6[6] } = trackingCtx);
       tmpResult.captureAdUserAction(obj);
     } else {
-      tmpResult = tmp(7097);
+      tmpResult = tmp(7071);
       obj = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, sourceQuestContent: null };
       obj[0] = quest.id;
       ({ content: obj4[1], ctaContent: obj4[2], position: obj4[3], sourceQuestContent: obj4[4] } = trackingCtx);
@@ -36,15 +36,15 @@ export default {
     obj1 = { gamePublisher, gameTitle, isTargetedDisclosure: isTargetedDisclosure.isTargetedDisclosure, cosponsorName: null, isVideoQuest: null };
     const cosponsorMetadata = quest.config.cosponsorMetadata;
     let name;
-    const obj7 = importDefault(4490);
+    const obj7 = importDefault(4460);
     if (cosponsorMetadata != null) {
       name = cosponsorMetadata.name;
     }
     obj1[3] = name;
     obj1[4] = hasWatchVideoTasksResult;
-    obj7.pushLazy(require(1959) /* asyncRequireImpl */(14251, tmp2.paths), obj1, QUEST_DISCLOSURE_MODAL);
+    obj7.pushLazy(require(1959) /* asyncRequireImpl */(14225, tmp2.paths), obj1, QUEST_DISCLOSURE_MODAL);
   },
   hideModal() {
-    importDefault(4490).popWithKey(QUEST_DISCLOSURE_MODAL);
+    importDefault(4460).popWithKey(QUEST_DISCLOSURE_MODAL);
   }
 };

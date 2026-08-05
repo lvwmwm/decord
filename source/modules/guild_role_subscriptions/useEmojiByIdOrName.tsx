@@ -1,10 +1,10 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14352
+// Function ID: 14353
 // Name: useEmojiByIdOrName
-// Dependencies: [5143, 589, 2]
+// Dependencies: [5128, 589, 2]
 // Exports: default, useEmojiByIdOrName
 
-// Module 14377 (useEmojiByIdOrName)
+// Module 14352 (useEmojiByIdOrName)
 import getEmojiToGroupId from "getEmojiToGroupId";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 9380
-// Function ID: 9381
+// Module ID: 9351
+// Function ID: 9352
 // Name: _calculateScrollOffset
-// Dependencies: [5, 19, 1474, 712, 9381, 5311, 2]
+// Dependencies: [5, 19, 1474, 712, 9352, 5296, 2]
 // Exports: default
 
-// Module 9380 (_calculateScrollOffset)
+// Module 9351 (_calculateScrollOffset)
 import getKeyboardDuration from "getKeyboardDuration";
 import noop from "noop";
 
@@ -28,7 +28,7 @@ function _calculateScrollOffset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ function _calculateScrollOffset() {
                   return obj4;
                 } else {
                   c6 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               }
             }
@@ -143,7 +143,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

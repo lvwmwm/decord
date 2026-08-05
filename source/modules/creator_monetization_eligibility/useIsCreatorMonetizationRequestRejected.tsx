@@ -1,10 +1,10 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 16654
+// Function ID: 16655
 // Name: useIsCreatorMonetizationRequestRejected
-// Dependencies: [16642, 1236, 2]
+// Dependencies: [16623, 1236, 2]
 // Exports: default
 
-// Module 16673 (useIsCreatorMonetizationRequestRejected)
+// Module 16654 (useIsCreatorMonetizationRequestRejected)
 import { CreatorMonetizationApplicationState as closure_2 } from "CreatorMonetizationApplicationState";
 
 const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationRequestRejected.tsx");

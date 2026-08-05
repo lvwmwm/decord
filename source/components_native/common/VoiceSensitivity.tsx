@@ -1,10 +1,10 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 10717
+// Function ID: 10718
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 4332, 5104, 6785, 676, 4497, 21, 4285, 712, 4129, 1474, 589, 4827, 4381, 3998, 1236, 1297, 7777, 7799, 500, 2]
+// Dependencies: [5, 32, 19, 17, 4302, 5089, 6770, 676, 4467, 21, 4255, 712, 4099, 1474, 589, 4812, 4351, 3968, 1236, 1297, 7749, 7771, 500, 2]
 // Exports: default
 
-// Module 10745 (VoiceSensitivity)
+// Module 10717 (VoiceSensitivity)
 import anyoneHasFlagInContext from "anyoneHasFlagInContext";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -115,7 +115,7 @@ export default function VoiceSensitivity(auto) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -156,7 +156,7 @@ export default function VoiceSensitivity(auto) {
                 mediaEngine.on(outer2_0(outer2_2[16]).MediaEngineEvent.VoiceActivity, outer1_12);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (tmp17) {
             c2 = tmp;

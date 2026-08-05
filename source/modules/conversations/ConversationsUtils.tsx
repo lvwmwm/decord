@@ -1,10 +1,10 @@
-// Module ID: 6967
-// Function ID: 6968
+// Module ID: 6952
+// Function ID: 6953
 // Name: mapConversation
 // Dependencies: [12, 2]
 // Exports: mapConversation
 
-// Module 6967 (mapConversation)
+// Module 6952 (mapConversation)
 const result = require("set").fileFinishedImporting("modules/conversations/ConversationsUtils.tsx");
 
 export const mapConversation = function mapConversation(summary_map) {

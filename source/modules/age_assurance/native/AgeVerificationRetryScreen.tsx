@@ -1,10 +1,10 @@
-// Module ID: 7767
-// Function ID: 7768
+// Module ID: 7739
+// Function ID: 7740
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 676, 7728, 21, 4285, 712, 4500, 7722, 7763, 1236, 7720, 500, 5936, 4281, 5649, 5315, 1945, 2]
+// Dependencies: [5, 19, 17, 676, 7700, 21, 4255, 712, 4470, 7694, 7735, 1236, 7692, 500, 5921, 4251, 5634, 5300, 1945, 2]
 // Exports: default
 
-// Module 7767 (GetStartedScreen)
+// Module 7739 (GetStartedScreen)
 import closure_3 from "jsxProd";
 import set from "set";
 import get_ActivityIndicator from "TableRowInner";
@@ -69,7 +69,7 @@ export default function GetStartedScreen(modalSessionId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -101,7 +101,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp5) {
           c0 = tmp;

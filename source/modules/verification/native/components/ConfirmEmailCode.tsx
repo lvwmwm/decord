@@ -1,10 +1,10 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8247
+// Function ID: 8248
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1874, 8264, 21, 4285, 712, 589, 4185, 4281, 1236, 8276, 8281, 3986, 4695, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 8236, 21, 4255, 712, 589, 4155, 4251, 1236, 8248, 8253, 3956, 4665, 2]
 // Exports: default
 
-// Module 8275 (ConfirmEmailCode)
+// Module 8247 (ConfirmEmailCode)
 import closure_3 from "ChangeEmailFields";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -70,7 +70,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 5920
-// Function ID: 5921
+// Module ID: 5905
+// Function ID: 5906
 // Name: SettingsIcon
-// Dependencies: [19, 21, 712, 3988, 5921, 2]
+// Dependencies: [19, 21, 712, 3958, 5906, 2]
 // Exports: SettingsIcon
 
-// Module 5920 (SettingsIcon)
+// Module 5905 (SettingsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const SettingsIcon = function SettingsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(5921) /* registerAsset */;
+  obj[0] = require(5906) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

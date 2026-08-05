@@ -1,9 +1,9 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 8044
+// Function ID: 8045
 // Name: handleFormOpen
-// Dependencies: [676, 1410, 8073, 677, 589, 709, 2]
+// Dependencies: [676, 1410, 8045, 677, 589, 709, 2]
 
-// Module 8072 (handleFormOpen)
+// Module 8044 (handleFormOpen)
 import ME from "ME";
 import { Store } from "initialize";
 import set from "ANALYTICS_NAME";

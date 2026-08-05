@@ -1,9 +1,9 @@
-// Module ID: 13081
-// Function ID: 13082
+// Module ID: 13053
+// Function ID: 13054
 // Name: logger
-// Dependencies: [32, 5, 4349, 4, 4170, 4381, 501, 13019, 3896, 5292, 709, 2]
+// Dependencies: [32, 5, 4319, 4, 4140, 4351, 501, 12991, 3866, 5277, 709, 2]
 
-// Module 13081 (logger)
+// Module 13053 (logger)
 import _slicedToArray from "_slicedToArray";
 import BaseConnectionEvent from "BaseConnectionEvent";
 import { WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER as closure_5 } from "StreamIssueReportReasons";
@@ -32,7 +32,7 @@ class InputWatcher {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ class InputWatcher {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -207,7 +207,7 @@ class InputWatcher {
             obj2[2] = v0.lastUpdateTime;
             obj1.dispatch(obj2);
             table = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           } catch (tmp12) {
             table = tmp;
             throw tmp12;

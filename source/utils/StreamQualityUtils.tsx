@@ -1,10 +1,10 @@
-// Module ID: 9090
-// Function ID: 9091
+// Module ID: 9062
+// Function ID: 9063
 // Name: isPremiumResolution
-// Dependencies: [19, 4374, 1218, 1862, 4356, 1874, 676, 4340, 1876, 4345, 1236, 589, 698, 2]
+// Dependencies: [19, 4344, 1218, 1862, 4326, 1874, 676, 4310, 1876, 4315, 1236, 589, 698, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9090 (isPremiumResolution)
+// Module 9062 (isPremiumResolution)
 import noop from "noop";
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import fetchFingerprint from "fetchFingerprint";

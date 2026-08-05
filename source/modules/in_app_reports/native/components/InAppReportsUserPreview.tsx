@@ -1,10 +1,10 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12518
+// Function ID: 12519
 // Name: UserPreview
-// Dependencies: [19, 17, 21, 4285, 712, 4129, 4281, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4099, 4251, 1236, 1297, 2]
 // Exports: default
 
-// Module 12546 (UserPreview)
+// Module 12518 (UserPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,16 +27,16 @@ const result = require("jsxProd").fileFinishedImporting("modules/in_app_reports/
 export default function UserPreview(user) {
   user = user.user;
   const tmp = createCacheKey();
-  let obj = require(4129) /* hexToRgba */;
+  let obj = require(4099) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.Rsth7z).toUpperCase();
-  const items = [callback(require(4281) /* Text */.Text, obj), ];
+  const items = [callback(require(4251) /* Text */.Text, obj), ];
   const obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj2 = { size: null, user: null, guildId: "disabled" };
+  const obj2 = { size: null, user: null, guildId: "Array" };
   obj2[0] = require(1297) /* Button */.AvatarSizes.LARGE_48;
   obj2[1] = user;
   const items2 = [callback(require(1297) /* Button */.Avatar, obj2), ];
@@ -45,9 +45,9 @@ export default function UserPreview(user) {
   if (tmp7Result) {
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = user.globalName;
-    tmp7Result = tmp7(tmp2(4281).Text, obj4);
+    tmp7Result = tmp7(tmp2(4251).Text, obj4);
   }
-  const items3 = [tmp7Result, callback(require(4281) /* Text */.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
+  const items3 = [tmp7Result, callback(require(4251) /* Text */.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
   obj3[1] = items3;
   items2[1] = closure_4(View, obj3);
   obj1[1] = items2;

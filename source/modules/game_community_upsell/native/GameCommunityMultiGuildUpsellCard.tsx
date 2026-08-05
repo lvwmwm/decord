@@ -1,10 +1,10 @@
-// Module ID: 15274
-// Function ID: 15275
+// Module ID: 15255
+// Function ID: 15256
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4277, 1862, 676, 21, 1474, 4285, 712, 589, 1416, 1450, 698, 5200, 5866, 1236, 8103, 9180, 1297, 4281, 4695, 8408, 7672, 8414, 2]
+// Dependencies: [5, 32, 19, 17, 4247, 1862, 676, 21, 1474, 4255, 712, 589, 1416, 1450, 698, 5185, 5851, 1236, 8075, 9152, 1297, 4251, 4665, 8380, 7644, 8386, 2]
 // Exports: default
 
-// Module 15274 (GameCommunityMultiGuildUpsellCard)
+// Module 15255 (GameCommunityMultiGuildUpsellCard)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import GuildBadgeV2 from "GuildBadgeV2";
@@ -183,7 +183,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16317
+// Function ID: 16318
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1372, 4621, 1942, 4102, 4620, 13577, 8027, 676, 8026, 1906, 1416, 10508, 5783, 589, 5598, 11, 709, 8168, 1236, 38, 4506, 7221, 8031, 4818, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1372, 4591, 1942, 4072, 4590, 13549, 7999, 676, 7998, 1906, 1416, 10480, 5768, 589, 5583, 11, 709, 8140, 1236, 38, 4476, 7195, 8003, 4803, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16336 (getData)
+// Module 16317 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -2075,7 +2075,7 @@ function _submitModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -2127,7 +2127,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4818).getAttachmentPayload(closure_0, closure_1));
+            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4803).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);
@@ -2173,7 +2173,7 @@ function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp10) {
           c6 = tmp;
@@ -2194,7 +2194,7 @@ function _submitModal() {
 let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(8026) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(7998) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (componentStateContext != null) {
     const modal = componentStateContext.modal;
@@ -2255,7 +2255,7 @@ export const useModalState = function useModalState(channelId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -2303,7 +2303,7 @@ export const useModalState = function useModalState(channelId) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       } catch (tmp13) {
         c0 = tmp;
         throw tmp13;

@@ -1,10 +1,10 @@
-// Module ID: 12400
-// Function ID: 12401
+// Module ID: 12372
+// Function ID: 12373
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 5658, 21, 4285, 712, 688, 4804, 4281, 1236, 2]
+// Dependencies: [19, 17, 5643, 21, 4255, 712, 688, 4774, 4251, 1236, 2]
 // Exports: default
 
-// Module 12400 (UserProfilePrivateBanner)
+// Module 12372 (UserProfilePrivateBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,11 +34,11 @@ export default function UserProfilePrivateBanner(primaryColor) {
   items[1] = tmp3;
   obj = { size: "xs", color: null };
   obj[1] = importDefault(712).colors.TEXT_DEFAULT;
-  const items1 = [callback(require(4804) /* LockIcon */.LockIcon, obj), ];
+  const items1 = [callback(require(4774) /* LockIcon */.LockIcon, obj), ];
   obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.KPnd2O);
-  items1[1] = callback(require(4281) /* Text */.Text, obj1);
+  items1[1] = callback(require(4251) /* Text */.Text, obj1);
   obj[1] = items1;
   return closure_5(View, obj);
 };

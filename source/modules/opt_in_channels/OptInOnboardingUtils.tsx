@@ -1,10 +1,10 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 10914
+// Function ID: 10915
 // Name: optIntoAllChannelsForExistingMember
-// Dependencies: [1340, 1932, 1942, 4480, 3901, 6903, 1384, 5224, 5215, 1306, 2]
+// Dependencies: [1340, 1932, 1942, 4450, 3871, 6888, 1384, 5209, 5200, 1306, 2]
 // Exports: hasClearedGuildOnboardingNotice, hasNotSetUpChannelOptIn, toggleShowAllChannels
 
-// Module 10942 (optIntoAllChannelsForExistingMember)
+// Module 10914 (optIntoAllChannelsForExistingMember)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import comparator from "comparator";
 import closure_6 from "comparator";
@@ -44,14 +44,14 @@ function optIntoAllChannelsForExistingMember(id, arg1) {
   });
   mapped = found.map((channel) => channel.channel.id);
   const item = include.forEach((arg0) => mapped.push(arg0));
-  const obj2 = mapped(5215);
+  const obj2 = mapped(5200);
   const result = obj2.onboardExistingMember(id, new Set(mapped));
 }
 ({ GUILD_SELECTABLE_CHANNELS_KEY: c4, GUILD_VOCAL_CHANNELS_KEY: c5 } = comparator);
 let result = require("trackCommunicationDisabled").fileFinishedImporting("modules/opt_in_channels/OptInOnboardingUtils.tsx");
 
 export const hasNotSetUpChannelOptIn = function hasNotSetUpChannelOptIn(guildId) {
-  const result = require(6903) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(guildId);
+  const result = require(6888) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(guildId);
   const selfMember = store.getSelfMember(guildId);
   let num;
   if (selfMember != null) {
@@ -60,7 +60,7 @@ export const hasNotSetUpChannelOptIn = function hasNotSetUpChannelOptIn(guildId)
   if (num == null) {
     num = 0;
   }
-  const obj = require(6903) /* useOptInEnabledForGuild */;
+  const obj = require(6888) /* useOptInEnabledForGuild */;
   const tmp = require;
   const tmpResult = require(1384) /* hasFlag */;
   let tmp7 = !result;
@@ -74,7 +74,7 @@ export const hasNotSetUpChannelOptIn = function hasNotSetUpChannelOptIn(guildId)
   return tmp7;
 };
 export const toggleShowAllChannels = function toggleShowAllChannels(id) {
-  const result = require(6903) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(id);
+  const result = require(6888) /* useOptInEnabledForGuild */.isOptInEnabledForGuild(id);
   const selfMember = store.getSelfMember(id);
   let num;
   if (selfMember != null) {
@@ -84,7 +84,7 @@ export const toggleShowAllChannels = function toggleShowAllChannels(id) {
     num = 0;
   }
   let tmpResult = tmp(1384);
-  const obj = require(6903) /* useOptInEnabledForGuild */;
+  const obj = require(6888) /* useOptInEnabledForGuild */;
   let tmp7 = !result;
   const hasFlagResult = tmpResult.hasFlag(num, GuildMemberFlags.COMPLETED_ONBOARDING);
   if (!result) {
@@ -96,10 +96,10 @@ export const toggleShowAllChannels = function toggleShowAllChannels(id) {
   if (tmp7) {
     optIntoAllChannelsForExistingMember(id);
   } else {
-    tmpResult = tmp(6903);
+    tmpResult = tmp(6888);
     const result1 = tmpResult.isOptInEnabledForGuild(id);
-    tmp(5224).setGuildOptIn(id, !result1);
-    const tmpResult1 = tmp(5224);
+    tmp(5209).setGuildOptIn(id, !result1);
+    const tmpResult1 = tmp(5209);
   }
 };
 export { optIntoAllChannelsForExistingMember };

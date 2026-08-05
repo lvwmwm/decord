@@ -1,9 +1,9 @@
-// Module ID: 11092
-// Function ID: 11093
+// Module ID: 11064
+// Function ID: 11065
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11092 (metadata)
+// Module 11064 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_bg_static.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/acf156f4cb00739343b00f0e14eb5551f0cfcc4267f34344cb491ec7299042b8.png";

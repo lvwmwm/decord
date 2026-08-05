@@ -1,10 +1,10 @@
-// Module ID: 9642
-// Function ID: 9643
+// Module ID: 9613
+// Function ID: 9614
 // Name: playVibingWumpusMusic
 // Dependencies: [676, 709, 530, 530, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 9642 (playVibingWumpusMusic)
+// Module 9613 (playVibingWumpusMusic)
 import { Endpoints } from "ME";
 
 const result = require("sendRequest").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsActionCreators.tsx");

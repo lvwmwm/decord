@@ -1,10 +1,10 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16297
+// Function ID: 16298
 // Name: getName
-// Dependencies: [16317, 1236, 2157, 16318, 16319, 16320, 2]
+// Dependencies: [16298, 1236, 2157, 16299, 16300, 16301, 2]
 // Exports: getBlurredBackgroundScale, getSeatName
 
-// Module 16316 (getName)
+// Module 16297 (getName)
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
@@ -310,7 +310,7 @@ export const BACKGROUND_BLUR_WIDTH_FACTOR = 0.0228310502283105;
 export const getSeatName = function getSeatName(arg0, arg1) {
   const IE3e0y = arg0;
   let closure_1 = arg1;
-  const seats = obj[IE3e0y(undefined, 16317).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = obj[IE3e0y(undefined, 16298).GuildRoomBackgrounds.DEFAULT].seats;
   const found = seats.find((position) => {
     let tmp = position.position.x === closure_0;
     if (tmp) {

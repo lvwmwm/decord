@@ -1,10 +1,10 @@
-// Module ID: 6009
-// Function ID: 6010
+// Module ID: 5994
+// Function ID: 5995
 // Name: AvatarMallowExample
-// Dependencies: [21, 5236, 6010, 2]
+// Dependencies: [21, 5221, 5995, 2]
 // Exports: AvatarMallowExample
 
-// Module 6009 (AvatarMallowExample)
+// Module 5994 (AvatarMallowExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMallowExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarMallowExample = function AvatarMallowExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6010);
+  obj[0] = importDefault(5995);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarMallowExample = function AvatarMallowExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

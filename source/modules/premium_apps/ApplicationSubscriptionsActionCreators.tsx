@@ -1,10 +1,10 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 13639
+// Function ID: 13640
 // Name: transformSubscriptionListingToSku
-// Dependencies: [5, 676, 709, 10872, 5786, 2]
+// Dependencies: [5, 676, 709, 10844, 5771, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 13667 (transformSubscriptionListingToSku)
+// Module 13639 (transformSubscriptionListingToSku)
 import set from "set";
 import ME from "ME";
 
@@ -64,7 +64,7 @@ function _fetchAllSubscriptionListingsDataForApplication() {
       const obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE", applicationId: null };
       obj3[1] = callback;
       obj2.dispatch(obj3);
-      lib = yield "HermesInternal";
+      lib = yield "T";
       const obj5 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS", applicationId: null, groupListing: null };
       obj5[1] = callback;
       obj5[2] = lib;
@@ -165,7 +165,7 @@ function _fetchSubscriptionListingForPlan() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -190,7 +190,7 @@ function _fetchSubscriptionListingForPlan() {
               set = undefined;
               c7 = 1;
               v0 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -287,7 +287,7 @@ function _fetchSubscriptionListingForPlan() {
               return obj;
             }
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp33) {
           closure_5 = tmp33;

@@ -1,10 +1,10 @@
-// Module ID: 16414
-// Function ID: 16415
+// Module ID: 16395
+// Function ID: 16396
 // Name: _requestAgeSignalChallenge
 // Dependencies: [5, 676, 530, 2]
 // Exports: requestAgeSignalChallenge, submitAgeSignal
 
-// Module 16414 (_requestAgeSignalChallenge)
+// Module 16395 (_requestAgeSignalChallenge)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -57,7 +57,7 @@ function _submitAgeSignal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -95,7 +95,7 @@ function _submitAgeSignal() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp5) {
           c2 = tmp;

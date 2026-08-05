@@ -1,10 +1,10 @@
-// Module ID: 5865
-// Function ID: 5866
+// Module ID: 5850
+// Function ID: 5851
 // Name: _startLurking
-// Dependencies: [5, 3914, 4206, 1862, 676, 1222, 5866, 5774, 5200, 698, 530, 1464, 2]
+// Dependencies: [5, 3884, 4176, 1862, 676, 1222, 5851, 5759, 5185, 698, 530, 1464, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 5865 (_startLurking)
+// Module 5850 (_startLurking)
 import transitionTo from "transitionTo";
 import initialize from "initialize";
 import handleInviteData from "handleInviteData";
@@ -41,7 +41,7 @@ function _startLurking() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -78,7 +78,7 @@ function _startLurking() {
                 let closure_13;
                 loadId = 1;
                 shouldNavigate = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp5) {
@@ -227,7 +227,7 @@ function _startLurking() {
                 throwTypeErrorResult = throwTypeErrorResult();
               }
               shouldNavigate = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (throwTypeErrorResult) {
             shouldNavigate = throwTypeErrorResult;
@@ -273,7 +273,7 @@ function _getDiscoverableGuild() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ function _fetchPublicDiscoveryGuild() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

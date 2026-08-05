@@ -1,13 +1,13 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 11976
+// Function ID: 11977
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 11986, 21, 4285, 712, 7777, 5661, 1411, 4281, 1236, 1581, 4695, 1297, 1480, 5917, 5915, 11999, 4184, 11994, 2]
+// Dependencies: [5, 32, 19, 17, 11958, 21, 4255, 712, 7749, 5646, 1411, 4251, 1236, 1581, 4665, 1297, 1480, 5902, 5900, 11971, 4154, 11966, 2]
 // Exports: default
 
-// Module 12004 (HubEmailConnectionGuildSelectRow)
+// Module 11976 (HubEmailConnectionGuildSelectRow)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import module_11999 from "module_11999";
+import module_11971 from "module_11971";
 import get_ActivityIndicator from "HeaderActionButton";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "HubEmailConnectionModal";
@@ -42,7 +42,7 @@ function HubEmailConnectionGuildSelectHeader() {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.mOMeiR);
-  obj[1] = callback(require(4281) /* Text */.Text, obj);
+  obj[1] = callback(require(4251) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
 function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
@@ -60,7 +60,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t.G3Zk7V);
   obj1[5] = onFooterButtonPressed.onFooterButtonPressed;
-  const items1 = [callback(require(4695) /* Button */.Button, obj1), ];
+  const items1 = [callback(require(4665) /* Button */.Button, obj1), ];
   let tmp3Result = null != errors;
   if (tmp3Result) {
     const obj2 = { style: null, children: null };
@@ -155,7 +155,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {

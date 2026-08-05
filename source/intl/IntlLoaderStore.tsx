@@ -1,7 +1,7 @@
 // Module ID: 1947
 // Function ID: 1948
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1948, 1236, 1958, 1274, 3359, 3834, 3865, 3867, 1208, 2]
+// Dependencies: [5, 700, 1948, 1236, 1958, 1274, 3329, 3804, 3835, 3837, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 1947 (_setAppLocale)
@@ -27,7 +27,7 @@ function _setAppLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ function _setAppLocale() {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "T", done: null };
                   }
                 } else {
                   try {
@@ -111,7 +111,7 @@ function _setAppLocale() {
                       return obj;
                     } else {
                       dependencyMap = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     }
                   } catch (tmp11) {
                     dependencyMap = tmp;
@@ -170,7 +170,7 @@ function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(callback);
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp10) {
           v0 = tmp;
@@ -206,7 +206,7 @@ function _loadDateFnsLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -283,7 +283,7 @@ function _loadFormatJsLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -317,7 +317,7 @@ function _loadFormatJsLocale() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp10) {
           c1 = tmp;
           throw tmp10;
@@ -353,7 +353,7 @@ function _setMomentLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -413,7 +413,7 @@ function _setMomentLocale() {
           obj1 = callback(arr2[9]);
           obj1.locale(arr);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp26) {
           c4 = tmp;
           throw tmp26;
@@ -433,19 +433,19 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "displayName", localeData: true, setLoadingStarted: true, setLoadingSucceeded: true, setLoadingFailed: true, setLocaleData: true };
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "accessible", localeData: "$ZodUnknown", setLoadingStarted: "MENTION_SENTINEL", setLoadingSucceeded: "fr", setLoadingFailed: "CustomIcon", setLocaleData: "isCurrentUserPrioritySpeaker" };
   obj[3] = importDefault(1948);
   obj[4] = function setLoadingStarted(closure_0) {
     return callback({ isLoading: true, inProgressLocale: closure_0 });
   };
   obj[5] = function setLoadingSucceeded(closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      callback({ isLoading: false, inProgressLocale: "Boolean", error: "displayName" });
+      callback({ isLoading: false, inProgressLocale: "Boolean", error: "accessible" });
     }
   };
   obj[6] = function setLoadingFailed(arg0, closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      const obj = { isLoading: false, inProgressLocale: "Array", error: "__initData" };
       obj[2] = arg0;
       callback(obj);
     }

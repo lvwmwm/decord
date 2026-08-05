@@ -1,10 +1,10 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 10009
+// Function ID: 10010
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [19, 17, 21, 4285, 712, 9529, 1480, 9496, 9950, 4695, 1236, 2349, 9503, 4281, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 9500, 1480, 9467, 9921, 4665, 1236, 2319, 9474, 4251, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 10038 (PremiumGiftDMSuccessBody)
+// Module 10009 (PremiumGiftDMSuccessBody)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,19 +25,19 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/native/
 
 export default function PremiumGiftDMSuccessBody() {
   const tmp = createCacheKey();
-  let obj = require(9529) /* NativeGiftContextProvider */;
+  let obj = require(9500) /* NativeGiftContextProvider */;
   obj = { children: null };
   obj = { children: null };
-  obj[0] = callback(importDefault(9503), { giftStyle: obj.useNativeGiftContext().giftStyle });
+  obj[0] = callback(importDefault(9474), { giftStyle: obj.useNativeGiftContext().giftStyle });
   const items = [callback(View, obj), , ];
   const obj1 = { style: tmp.title, variant: "heading-lg/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.MqZXbv);
-  items[1] = callback(require(4281) /* Text */.Text, obj1);
+  items[1] = callback(require(4251) /* Text */.Text, obj1);
   const obj2 = { style: tmp.description, variant: "text-md/medium", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl2.string(require(1236) /* getSystemLocale */.t.Y1keV0);
-  items[2] = callback(require(4281) /* Text */.Text, obj2);
+  items[2] = callback(require(4251) /* Text */.Text, obj2);
   obj[0] = items;
   return callback2(closure_6, obj);
 };

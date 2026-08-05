@@ -1,10 +1,10 @@
-// Module ID: 13358
-// Function ID: 13359
+// Module ID: 13330
+// Function ID: 13331
 // Name: fetchExperiments
 // Dependencies: [676, 530, 2]
 // Exports: fetchExperiments
 
-// Module 13358 (fetchExperiments)
+// Module 13330 (fetchExperiments)
 import { Endpoints } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/experiments/fetchExperiments.tsx");

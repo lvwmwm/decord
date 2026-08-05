@@ -1,35 +1,16 @@
 // Module ID: 13490
 // Function ID: 13491
-// Dependencies: [13491, 13502, 13504, 13507, 13510, 13511]
+// Dependencies: [13456, 13477, 13491, 13501, 13502]
 
 // Module 13490
-let closure_3 = require("withoutSetter")("toPrimitive");
+let closure_2 = require("call")([].concat);
 
-export default (arg0, arg1) => {
-  if (require(13502) /* all */(arg0)) {
-    if (!tmp(13504)(arg0)) {
-      let str = arg1;
-      const tmp4 = tmp(13507)(arg0, closure_3);
-      if (tmp4) {
-        if (undefined === str) {
-          str = "default";
-        }
-        const tmp5 = tmp(13510)(tmp4, arg0, str);
-        if (tmp(13502)(tmp5)) {
-          if (!tmp(13504)(tmp5)) {
-            const tmp9 = new TypeError("Can't convert object to primitive value");
-            throw tmp9;
-          }
-        }
-        return tmp5;
-      } else {
-        let str2 = str;
-        if (undefined === str) {
-          str2 = "number";
-        }
-        return tmp(13511)(arg0, str2);
-      }
-    }
+export default require("all")("Reflect", "ownKeys") || (function ownKeys(arg0) {
+  const fResult = require(13491) /* f */.f(require(13501) /* all */(arg0));
+  const f = require(13502).f;
+  let tmp2 = fResult;
+  if (f) {
+    tmp2 = callback(fResult, f(arg0));
   }
-  return arg0;
-};
+  return tmp2;
+});

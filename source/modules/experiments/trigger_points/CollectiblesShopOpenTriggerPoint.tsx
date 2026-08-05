@@ -1,9 +1,9 @@
-// Module ID: 14724
-// Function ID: 14725
+// Module ID: 14704
+// Function ID: 14705
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4200, 7297, 2]
+// Dependencies: [4170, 7269, 2]
 
-// Module 14724 (commonTriggerPointConfiguration)
+// Module 14704 (commonTriggerPointConfiguration)
 const commonTriggerPointConfiguration = new require("registeredExperimentIds").CommonTriggerPointConfiguration([], require("ExperimentBuckets").CommonTriggerPoints.COLLECTIBLES_SHOP_OPEN, { location: "collectibles shop open" });
 const result = require("set").fileFinishedImporting("modules/experiments/trigger_points/CollectiblesShopOpenTriggerPoint.tsx");
 

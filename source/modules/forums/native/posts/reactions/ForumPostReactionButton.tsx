@@ -1,10 +1,10 @@
-// Module ID: 9814
-// Function ID: 9815
+// Module ID: 9785
+// Function ID: 9786
 // Name: BurstReactionButton
-// Dependencies: [19, 17, 21, 4285, 712, 9815, 4812, 1236, 4281, 7142, 8423, 10113, 3958, 10115, 688, 1416, 3924, 5301, 10116, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 9786, 4797, 1236, 4251, 7116, 8395, 10084, 3928, 10086, 688, 1416, 3894, 5286, 10087, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 9814 (BurstReactionButton)
+// Module 9785 (BurstReactionButton)
 import set from "set";
 import { View } from "Emoji";
 import jsxProd from "jsxProd";
@@ -160,10 +160,10 @@ export const AdditionalReactionCount = function AdditionalReactionCount(arg0) {
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.N8hbZB);
   const items = [createCacheKey().container, containerStyle];
   obj[2] = items;
-  obj[3] = importDefault(9815)({ threadId }).onTapReactionCount;
+  obj[3] = importDefault(9786)({ threadId }).onTapReactionCount;
   const items1 = ["+", count];
-  obj[4] = callback(require(4281) /* Text */.Text, { variant: "heading-sm/medium", color: "interactive-text-default", children: items1 });
-  return callback2(require(4812) /* PressableBase */.PressableOpacity, obj);
+  obj[4] = callback(require(4251) /* Text */.Text, { variant: "heading-sm/medium", color: "interactive-text-default", children: items1 });
+  return callback2(require(4797) /* PressableBase */.PressableOpacity, obj);
 };
 export const AddReactionButton = function AddReactionButton(reactionType) {
   let containerStyle;
@@ -171,15 +171,15 @@ export const AddReactionButton = function AddReactionButton(reactionType) {
   let NORMAL = reactionType.reactionType;
   ({ threadId, containerStyle } = reactionType);
   if (NORMAL === undefined) {
-    NORMAL = require(7142) /* ReactionTypes */.ReactionTypes.NORMAL;
+    NORMAL = require(7116) /* ReactionTypes */.ReactionTypes.NORMAL;
   }
   const obj = { style: items, accessible: true, accessibilityLabel: null, onPress: null, children: null };
   items = [createCacheKey().container, containerStyle];
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.lfIHs4);
-  obj[3] = importDefault(9815)({ threadId, reactionType: NORMAL }).onTapAddReaction;
-  obj[4] = callback2(require(8423) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
-  return callback2(require(4812) /* PressableBase */.PressableOpacity, obj);
+  obj[3] = importDefault(9786)({ threadId, reactionType: NORMAL }).onTapAddReaction;
+  obj[4] = callback2(require(8395) /* handleOutOfSuperReactions */.ADD_REACTION_ICON_COMPONENTS[NORMAL], { size: "xs" });
+  return callback2(require(4797) /* PressableBase */.PressableOpacity, obj);
 };
 export const ForumPostReactionButton = function ForumPostReactionButton(emojiSize) {
   let animateCount;

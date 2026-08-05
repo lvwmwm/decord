@@ -1,9 +1,9 @@
-// Module ID: 6538
-// Function ID: 6539
+// Module ID: 6523
+// Function ID: 6524
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6538 (metadata)
+// Module 6523 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PlaneIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/556354a93fff4b40ee219032a4406e2179e0011c33306df17b9dce7f66273111.png";

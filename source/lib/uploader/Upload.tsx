@@ -1,10 +1,10 @@
-// Module ID: 4817
-// Function ID: 4818
+// Module ID: 4802
+// Function ID: 4803
 // Name: cancel
-// Dependencies: [652, 4818, 12, 4822, 514, 2]
+// Dependencies: [652, 4803, 12, 4807, 514, 2]
 // Exports: isResolvedUpload
 
-// Module 4817 (cancel)
+// Module 4802 (cancel)
 import { EventEmitter } from "EventEmitter";
 
 let obj = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };

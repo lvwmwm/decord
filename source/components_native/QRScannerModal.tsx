@@ -1,12 +1,12 @@
-// Module ID: 13122
-// Function ID: 13123
+// Module ID: 13094
+// Function ID: 13095
 // Name: DCDQRScanner
-// Dependencies: [32, 19, 17, 676, 6906, 21, 500, 13123, 712, 5730, 1581, 1467, 13102, 4490, 13117, 1959, 5925, 11233, 3982, 4624, 1236, 8979, 7870, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 6891, 21, 500, 13095, 712, 5715, 1581, 1467, 13074, 4460, 13089, 1959, 5910, 11205, 3952, 4594, 1236, 8951, 7842, 1297, 2]
 // Exports: default
 
-// Module 13122 (DCDQRScanner)
+// Module 13094 (DCDQRScanner)
 import _slicedToArray from "_slicedToArray";
-import module_4624 from "module_4624";
+import module_4594 from "module_4594";
 import get_ActivityIndicator from "FAMILY_CENTER_REQUEST_MODAL_KEY";
 import { UserSettingsSections } from "ME";
 import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items";
@@ -136,11 +136,11 @@ export default function QRScannerModal(showHelp) {
   let tmp8 = closure_9;
   let intl = onScanSuccess(1236).intl;
   obj1[1] = intl.string(onScanSuccess(1236).t.cpT0Cq);
-  obj1[2] = importDefault(7870);
+  obj1[2] = importDefault(7842);
   const items2 = [tmp12.closeButton, { marginTop: top }];
   obj1[3] = items2;
-  obj1[4] = importDefault(4490).pop;
-  items1[1] = tmp14(importDefault(8979), obj1);
+  obj1[4] = importDefault(4460).pop;
+  items1[1] = tmp14(importDefault(8951), obj1);
   let tmp14Result = null;
   if (tmp) {
     tmp14Result = null;

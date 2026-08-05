@@ -5,4 +5,4 @@
 
 // Module 5700 (noop)
 
-export default require("noop").createContext(false);
+export default require("noop").createContext(undefined);

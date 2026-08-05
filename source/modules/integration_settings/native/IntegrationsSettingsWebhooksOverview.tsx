@@ -1,10 +1,10 @@
-// Module ID: 15785
-// Function ID: 15786
+// Module ID: 15766
+// Function ID: 15767
 // Name: WebhookItem
-// Dependencies: [5, 19, 1372, 1932, 1862, 3913, 1874, 15786, 676, 21, 4285, 712, 1480, 1416, 5315, 1297, 1236, 11, 4124, 589, 15787, 7780, 15788, 3997, 1945, 4281, 15790, 5649, 7777, 4693, 5596, 2]
+// Dependencies: [5, 19, 1372, 1932, 1862, 3883, 1874, 15767, 676, 21, 4255, 712, 1480, 1416, 5300, 1297, 1236, 11, 4094, 589, 15768, 7752, 15769, 3967, 1945, 4251, 15771, 5634, 7749, 4663, 5581, 2]
 // Exports: default
 
-// Module 15785 (WebhookItem)
+// Module 15766 (WebhookItem)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importAllResult from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -132,7 +132,7 @@ function CreateWebhookButton(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -245,7 +245,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [callback(webhookType(4281).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [callback(webhookType(4251).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants2.INCOMING;
   if (tmp4Result) {
     let obj = { guild: null, channel: null };
@@ -256,7 +256,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(15790).WebhookEmpty;
+    obj[0] = tmp5(15771).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -289,7 +289,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       return closure_18(closure_23, obj, id);
     });
     const obj1 = { children: null };
-    items[2] = tmp4(tmp5(5649).TableRowGroup, obj);
+    items[2] = tmp4(tmp5(5634).TableRowGroup, obj);
     obj1[0] = items;
     return closure_20(closure_19, obj1);
   }
@@ -302,8 +302,8 @@ prototype["render"] = function render() {
   obj[0] = importDefault(712).space.PX_24;
   obj[1] = tmp.content;
   obj[2] = this.renderWebhooks();
-  obj[2] = callback(require(4693) /* Stack */.Stack, obj);
-  const items = [callback(require(7777) /* Form */.Form, obj), callback(require(5596) /* NavScrim */.NavScrim, {})];
+  obj[2] = callback(require(4663) /* Stack */.Stack, obj);
+  const items = [callback(require(7749) /* Form */.Form, obj), callback(require(5581) /* NavScrim */.NavScrim, {})];
   obj[0] = items;
   return callback2(closure_19, obj);
 };

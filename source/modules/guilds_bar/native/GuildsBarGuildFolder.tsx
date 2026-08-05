@@ -1,10 +1,10 @@
-// Module ID: 15290
-// Function ID: 15291
+// Module ID: 15271
+// Function ID: 15272
 // Name: MiniGuildIcon
-// Dependencies: [19, 7017, 1862, 4102, 5122, 15280, 15286, 15281, 21, 4285, 712, 3989, 589, 5661, 1348, 4694, 4129, 688, 7819, 4146, 4629, 4748, 8038, 5236, 15291, 15293, 11888, 15300, 4254, 5200, 5663, 15283, 15301, 2]
+// Dependencies: [19, 6991, 1862, 4072, 5107, 15261, 15267, 15262, 21, 4255, 712, 3959, 589, 5646, 1348, 4664, 4099, 688, 7791, 4116, 4599, 4718, 8010, 5221, 15272, 15274, 11860, 15281, 4224, 5185, 5648, 15264, 15282, 2]
 
-// Module 15290 (MiniGuildIcon)
-import importAllResult from "module_4146";
+// Module 15271 (MiniGuildIcon)
+import importAllResult from "module_4116";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -28,7 +28,7 @@ function MiniGuildIcon(arg0) {
   let require;
   let selected;
   ({ guildId: require, position, selected } = arg0);
-  let obj = require(3989) /* map */;
+  let obj = require(3959) /* map */;
   const tmp4 = callback3(false, obj.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE));
   const items = [createGuildRecordFromRust];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => outer1_5.getGuild(closure_0));
@@ -50,10 +50,10 @@ function MiniGuildIcon(arg0) {
   if (!selected) {
     prop = tmp4.guildPreviewIconUnselected;
   }
-  obj = { style: items1, guild: stateFromStores, size: tmp(5661).GuildIconSizes.XXSMALL, selected };
+  obj = { style: items1, guild: stateFromStores, size: tmp(5646).GuildIconSizes.XXSMALL, selected };
   items1[1] = prop;
   items1[2] = guildPreview3;
-  return tmp6(importDefault(5661), obj, "" + selected);
+  return tmp6(importDefault(5646), obj, "" + selected);
 }
 function TransitionWrapper(children) {
   let flag = children.fromTop;
@@ -139,7 +139,7 @@ function GuildFolderIcon(item) {
     const obj = { source: null, style: null };
     obj[0] = tmp3;
     obj[1] = item.tintStyle;
-    tmp4 = callback2(importDefault(5236), obj);
+    tmp4 = callback2(importDefault(5221), obj);
   }
   return tmp4;
 }

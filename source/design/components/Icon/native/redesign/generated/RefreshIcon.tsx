@@ -1,10 +1,10 @@
-// Module ID: 13754
-// Function ID: 13755
+// Module ID: 13726
+// Function ID: 13727
 // Name: RefreshIcon
-// Dependencies: [19, 21, 712, 3988, 13755, 2]
+// Dependencies: [19, 21, 712, 3958, 13727, 2]
 // Exports: RefreshIcon
 
-// Module 13754 (RefreshIcon)
+// Module 13726 (RefreshIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const RefreshIcon = function RefreshIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13755) /* registerAsset */;
+  obj[0] = require(13727) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

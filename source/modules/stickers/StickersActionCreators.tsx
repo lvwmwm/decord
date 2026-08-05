@@ -1,10 +1,10 @@
-// Module ID: 9873
-// Function ID: 9874
+// Module ID: 9844
+// Function ID: 9845
 // Name: _fetchStickerPack
-// Dependencies: [5, 4960, 1946, 4622, 1874, 5187, 676, 685, 4522, 530, 709, 4619, 8083, 1355, 12, 4623, 1236, 2]
+// Dependencies: [5, 4945, 1946, 4592, 1874, 5172, 676, 685, 4492, 530, 709, 4589, 8055, 1355, 12, 4593, 1236, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9873 (_fetchStickerPack)
+// Module 9844 (_fetchStickerPack)
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import _getSystemLocale from "_getSystemLocale";
@@ -68,7 +68,7 @@ function _fetchStickerPacks() {
       if (locale === undefined) {
         locale = outer1_5.locale;
       }
-      yield "ct";
+      yield "PX_8";
       if (1 === tmp6) {
         if (arg0 === 1) {
           let c4 = 3;
@@ -144,7 +144,7 @@ function _fetchSticker() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -188,7 +188,7 @@ function _fetchSticker() {
               obj4[1] = body;
               obj3.dispatch(obj4);
             } else {
-              obj = body(4619);
+              obj = body(4589);
               if (obj.isStandardSticker(body)) {
                 obj1 = callback2(709);
                 const obj5 = { type: "PACK_STICKER_FETCH_SUCCESS", sticker: null };
@@ -201,7 +201,7 @@ function _fetchSticker() {
               }
             }
             c4 = 3;
-            obj10 = body(4619);
+            obj10 = body(4589);
           }
         } catch (tmp24) {
           c4 = tmp;
@@ -238,7 +238,7 @@ function _fetchGuildStickersWithCreator() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -293,7 +293,7 @@ function _fetchGuildStickersWithCreator() {
             });
             obj.dispatch(obj4);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp13) {
           c5 = tmp;
@@ -329,7 +329,7 @@ function _deleteGuildSticker() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -364,7 +364,7 @@ function _deleteGuildSticker() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 6825
-// Function ID: 6826
+// Module ID: 6810
+// Function ID: 6811
 // Name: _fetchReferralEligibleUsers
-// Dependencies: [5, 1882, 1931, 676, 530, 709, 1208, 6826, 2]
+// Dependencies: [5, 1882, 1931, 676, 530, 709, 1208, 6811, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 6825 (_fetchReferralEligibleUsers)
+// Module 6810 (_fetchReferralEligibleUsers)
 import dispatcher from "dispatcher";
 import createdAt from "createdAt";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -33,7 +33,7 @@ function _fetchReferralEligibleUsers() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ function _createReferralTrials() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         while (true) {
@@ -316,7 +316,7 @@ function _createReferralTrial() {
           obj6.sendClydeError(callback2, closure_2.body.code);
         }
       }
-      yield "HermesInternal";
+      yield "T";
       body = body.body;
       callback2 = body;
       if (body == null) {
@@ -361,7 +361,7 @@ function _resolveReferralTrialOffer() {
       const obj3 = { type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId: null };
       obj3[1] = callback;
       obj5.dispatch(obj3);
-      yield "HermesInternal";
+      yield "T";
       body = body.body;
       callback2 = body;
       if (body == null) {

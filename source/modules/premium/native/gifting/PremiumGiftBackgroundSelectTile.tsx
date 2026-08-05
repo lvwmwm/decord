@@ -1,10 +1,10 @@
-// Module ID: 12056
-// Function ID: 12057
+// Module ID: 12028
+// Function ID: 12029
 // Name: PremiumGiftStyles
-// Dependencies: [19, 17, 1876, 12057, 21, 12058, 12059, 12060, 12061, 12062, 12063, 12064, 12065, 12066, 4285, 712, 1236, 2349, 5236, 2]
+// Dependencies: [19, 17, 1876, 12029, 21, 12030, 12031, 12032, 12033, 12034, 12035, 12036, 12037, 12038, 4255, 712, 1236, 2319, 5221, 2]
 // Exports: default
 
-// Module 12056 (PremiumGiftStyles)
+// Module 12028 (PremiumGiftStyles)
 import "set";
 import get_ActivityIndicator from "messagesProxy";
 import { PremiumGiftStyles } from "GuildFeatures";
@@ -65,7 +65,7 @@ export default function GiftBackgroundSelectTile(index) {
     obj = { giftStyle: null };
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl2.string(GIFT_STYLE_DESCRIPTIONS[giftStyle]);
-    obj[0] = intl.formatToPlainString(importDefault(2349)["+utqaz"], obj);
+    obj[0] = intl.formatToPlainString(importDefault(2319)["+utqaz"], obj);
     obj[1] = selected;
     obj[2] = tmp.container;
     obj[3] = index.onPress;
@@ -78,7 +78,7 @@ export default function GiftBackgroundSelectTile(index) {
     const obj1 = { resizeMode: "contain", style: null, source: null };
     obj1[1] = tmp.image;
     obj1[2] = tmp2;
-    items[1] = callback(importDefault(5236), obj1);
+    items[1] = callback(importDefault(5221), obj1);
     obj[4] = items;
     tmp4Result = closure_7(closure_4, obj);
     const tmp4 = closure_7;

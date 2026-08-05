@@ -1,10 +1,10 @@
-// Module ID: 7959
-// Function ID: 7960
+// Module ID: 7931
+// Function ID: 7932
 // Name: parsePollResultSystemMessageEmbed
 // Dependencies: [2]
 // Exports: default
 
-// Module 7959 (parsePollResultSystemMessageEmbed)
+// Module 7931 (parsePollResultSystemMessageEmbed)
 const result = require("set").fileFinishedImporting("modules/polls/parsePollResultSystemMessageEmbed.tsx");
 
 export default function parsePollResultSystemMessageEmbed(fields) {

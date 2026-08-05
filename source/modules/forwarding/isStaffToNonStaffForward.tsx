@@ -1,10 +1,10 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10126
+// Function ID: 10127
 // Name: isStaffToNonStaffForward
 // Dependencies: [1372, 1862, 1874, 676, 2]
 // Exports: default
 
-// Module 10155 (isStaffToNonStaffForward)
+// Module 10126 (isStaffToNonStaffForward)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,9 +1,9 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15382
+// Function ID: 15383
 // Name: handleLoadFinished
-// Dependencies: [32, 7018, 687, 589, 7021, 11, 709, 2]
+// Dependencies: [32, 6992, 687, 589, 6995, 11, 709, 2]
 
-// Module 15401 (handleLoadFinished)
+// Module 15382 (handleLoadFinished)
 import _slicedToArray from "_slicedToArray";
 import findOrCreateMessageRecord from "findOrCreateMessageRecord";
 import { PersistedStore } from "initialize";
@@ -57,7 +57,7 @@ prototype["getState"] = function getState() {
 prototype["getTab"] = function getTab() {
   let ForYou = closure_6.tab;
   if (ForYou == null) {
-    ForYou = require(7021) /* NotificationCenterScenes */.NotificationCenterTabs.ForYou;
+    ForYou = require(6995) /* NotificationCenterScenes */.NotificationCenterTabs.ForYou;
   }
   return ForYou;
 };

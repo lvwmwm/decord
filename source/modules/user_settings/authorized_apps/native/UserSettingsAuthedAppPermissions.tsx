@@ -1,10 +1,10 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 14068
+// Function ID: 14069
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 4285, 10425, 8824, 1236, 4281, 4246, 712, 10427, 14088, 2]
+// Dependencies: [19, 17, 21, 4255, 10397, 8796, 1236, 4251, 4216, 712, 10399, 14062, 2]
 // Exports: default
 
-// Module 14094 (UserSettingsAuthedAppPermissions)
+// Module 14068 (UserSettingsAuthedAppPermissions)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 6821
-// Function ID: 6822
+// Module ID: 6806
+// Function ID: 6807
 // Name: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
-// Dependencies: [5767, 1876, 6822, 5770, 647, 2]
+// Dependencies: [5752, 1876, 6807, 5755, 647, 2]
 // Exports: useAndroidAndLegacyIOSPremiumTrialOfferCandidates
 
-// Module 6821 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
+// Module 6806 (useAndroidAndLegacyIOSPremiumTrialOfferCandidates)
 import updateProduct from "updateProduct";
 import GuildFeatures from "GuildFeatures";
 
@@ -22,44 +22,44 @@ export const useAndroidAndLegacyIOSPremiumTrialOfferCandidates = function useAnd
   const items = [updateProduct];
   offerIds = offerIds(647).useStateFromStoresObject(items, () => ({ isFetchingProducts: updateProduct.isFetchingProducts(), offerIds: updateProduct.getOfferIds() })).offerIds;
   const obj = offerIds(647);
-  const trialOffer = offerIds(6822).useTrialOffer(closure_6);
-  let values = Object.values(offerIds(5770).TrialIdToProductOfferId[closure_6]);
+  const trialOffer = offerIds(6807).useTrialOffer(closure_6);
+  let values = Object.values(offerIds(5755).TrialIdToProductOfferId[closure_6]);
   let tmp4 = null;
   if (values.every((arg0) => offerIds.has(arg0))) {
     tmp4 = trialOffer;
   }
-  let tmpResult = tmp(6822);
+  let tmpResult = tmp(6807);
   const trialOffer1 = tmpResult.useTrialOffer(closure_3);
-  values = Object.values(tmp(5770).TrialIdToProductOfferId[closure_3]);
+  values = Object.values(tmp(5755).TrialIdToProductOfferId[closure_3]);
   let tmp6 = null;
   if (values.every((arg0) => offerIds.has(arg0))) {
     tmp6 = trialOffer1;
   }
-  tmpResult = tmp(6822);
+  tmpResult = tmp(6807);
   const trialOffer2 = tmpResult.useTrialOffer(closure_4);
-  const values1 = Object.values(tmp(5770).TrialIdToProductOfferId[closure_4]);
+  const values1 = Object.values(tmp(5755).TrialIdToProductOfferId[closure_4]);
   let tmp8 = null;
   if (values1.every((arg0) => offerIds.has(arg0))) {
     tmp8 = trialOffer2;
   }
-  const obj2 = offerIds(6822);
-  const trialOffer3 = offerIds(6822).useTrialOffer(closure_5);
-  const values2 = Object.values(tmp(5770).TrialIdToProductOfferId[closure_5]);
+  const obj2 = offerIds(6807);
+  const trialOffer3 = offerIds(6807).useTrialOffer(closure_5);
+  const values2 = Object.values(tmp(5755).TrialIdToProductOfferId[closure_5]);
   let tmp10 = null;
   if (values2.every((arg0) => offerIds.has(arg0))) {
     tmp10 = trialOffer3;
   }
-  const tmpResult1 = offerIds(6822);
-  const trialOffer4 = offerIds(6822).useTrialOffer(closure_7);
-  const values3 = Object.values(tmp(5770).TrialIdToProductOfferId[closure_7]);
+  const tmpResult1 = offerIds(6807);
+  const trialOffer4 = offerIds(6807).useTrialOffer(closure_7);
+  const values3 = Object.values(tmp(5755).TrialIdToProductOfferId[closure_7]);
   let tmp12 = null;
   if (values3.every((arg0) => offerIds.has(arg0))) {
     tmp12 = trialOffer4;
   }
   const items1 = [tmp12, tmp4, tmp6, tmp8, , ];
-  const tmpResult2 = offerIds(6822);
-  const trialOffer5 = offerIds(6822).useTrialOffer(closure_8);
-  const values4 = Object.values(tmp(5770).TrialIdToProductOfferId[closure_8]);
+  const tmpResult2 = offerIds(6807);
+  const trialOffer5 = offerIds(6807).useTrialOffer(closure_8);
+  const values4 = Object.values(tmp(5755).TrialIdToProductOfferId[closure_8]);
   let tmp14 = null;
   if (values4.every((arg0) => offerIds.has(arg0))) {
     tmp14 = trialOffer5;

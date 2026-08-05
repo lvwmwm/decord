@@ -1,10 +1,10 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12724
+// Function ID: 12725
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4178, 6785, 589, 691, 6792, 4181, 2]
+// Dependencies: [5, 32, 19, 4148, 6770, 589, 691, 6777, 4151, 2]
 // Exports: default
 
-// Module 12752 (useFetchGuildBoostSlots)
+// Module 12724 (useFetchGuildBoostSlots)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -41,7 +41,7 @@ export default function useFetchGuildBoostSlots() {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -88,7 +88,7 @@ export default function useFetchGuildBoostSlots() {
               } else {
                 v0(false);
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } catch (tmp13) {
               c2 = tmp;

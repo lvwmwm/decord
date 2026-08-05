@@ -1,10 +1,10 @@
-// Module ID: 14351
-// Function ID: 14352
+// Module ID: 14326
+// Function ID: 14327
 // Name: LoadingIndicator
-// Dependencies: [19, 17, 21, 4285, 2]
+// Dependencies: [19, 17, 21, 4255, 2]
 // Exports: default
 
-// Module 14351 (LoadingIndicator)
+// Module 14326 (LoadingIndicator)
 import "noop";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

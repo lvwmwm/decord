@@ -1,10 +1,10 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 11271
+// Function ID: 11272
 // Name: action
-// Dependencies: [32, 5143, 4502, 676, 3958, 8163, 3984, 7143, 3924, 6826, 4479, 2]
+// Dependencies: [32, 5128, 4472, 676, 3928, 8135, 3954, 7117, 3894, 6811, 4449, 2]
 // Exports: handleLegacyCommands
 
-// Module 11299 (action)
+// Module 11271 (action)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -22,7 +22,7 @@ obj = { tts: obj, me: obj, tableflip: obj1, unflip: obj2, shrug: obj3, nick: obj
 obj = {
   action() {
     const obj = { tts: null };
-    const EnableTTSCommand = require(3958) /* explicitContentFromProto */.EnableTTSCommand;
+    const EnableTTSCommand = require(3928) /* explicitContentFromProto */.EnableTTSCommand;
     obj[0] = EnableTTSCommand.getSetting();
     return obj;
   }
@@ -46,8 +46,8 @@ obj5[1] = function action(str, channel) {
           const trimmed = str.trim();
           const byName = disambiguatedEmojiContext.getByName(trimmed.slice(2, -1));
           if (null != byName) {
-            const obj3 = require(7143) /* checkReactionResponse */;
-            obj3.addReaction(channel.id, lastResult.id, require(3924) /* MAX_REACTIONS */.toReactionEmoji(byName));
+            const obj3 = require(7117) /* checkReactionResponse */;
+            obj3.addReaction(channel.id, lastResult.id, require(3894) /* MAX_REACTIONS */.toReactionEmoji(byName));
             return { content: "" };
           }
         }
@@ -83,7 +83,7 @@ obj4 = {
   action(arg0, channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      const obj = importDefault(8163);
+      const obj = importDefault(8135);
       obj.changeNickname(channel.guild_id, channel.id, closure_8, arg0);
       return { content: "" };
     }
@@ -120,7 +120,7 @@ obj6[1] = function action(str, channel) {
         }
         if (null == str7) {
           if (0 === lastEditableMessage.attachments.length) {
-            let obj = importDefault(6826);
+            let obj = importDefault(6811);
             obj.deleteMessage(channel.id, lastEditableMessage.id);
           }
           return { content: "" };
@@ -128,8 +128,8 @@ obj6[1] = function action(str, channel) {
         if (str7 !== lastEditableMessage.content) {
           obj = { content: null };
           obj[0] = str7;
-          importDefault(6826).editMessage(channel.id, lastEditableMessage.id, obj);
-          const obj2 = importDefault(6826);
+          importDefault(6811).editMessage(channel.id, lastEditableMessage.id, obj);
+          const obj2 = importDefault(6811);
         }
         const tmp5 = callback(Array.from(match), 4);
       }
@@ -168,7 +168,7 @@ export const handleLegacyCommands = function handleLegacyCommands(text, arg1) {
         let tmp2 = arg1;
         let tmp3 = importDefault;
         let tmp4 = dependencyMap;
-        let obj = importDefault(4479);
+        let obj = importDefault(4449);
         let tmp5 = constants;
         obj = { command: null };
         obj[0] = key10005;

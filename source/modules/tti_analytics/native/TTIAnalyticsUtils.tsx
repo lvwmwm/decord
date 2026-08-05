@@ -1,10 +1,10 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6828
+// Function ID: 6829
 // Name: getDeviceMetadata
-// Dependencies: [5, 6844, 4199, 1302, 1218, 1372, 706, 676, 7050, 1379, 21, 4265, 7051, 514, 1578, 4137, 4136, 10, 1208, 698, 7052, 4143, 7054, 9, 687, 7055, 4624, 4713, 1959, 2]
+// Dependencies: [5, 6829, 4169, 1302, 1218, 1372, 706, 676, 7024, 1379, 21, 4235, 7025, 514, 1578, 4107, 4106, 10, 1208, 698, 7026, 4113, 7028, 9, 687, 7029, 4594, 4683, 1959, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 6843 (getDeviceMetadata)
+// Module 6828 (getDeviceMetadata)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleClearCaches from "handleClearCaches";
 import getHash from "getHash";
@@ -23,30 +23,30 @@ const require = arg1;
 function getDeviceMetadata() {
   if (null == obj) {
     obj = { device_model: null, device_brand: null, device_product: null, device_manufacturer: null, smallest_screen_width_dp: null, device_performance_class: null, soc_name: null, ram_size: null, max_cpu_freq: null };
-    obj[0] = require(4265) /* DCDDeviceManager */.getDeviceModel();
-    const obj2 = require(4265) /* DCDDeviceManager */;
-    obj[1] = require(4265) /* DCDDeviceManager */.getDeviceBrand();
-    const obj3 = require(4265) /* DCDDeviceManager */;
-    obj[2] = require(4265) /* DCDDeviceManager */.getDeviceProduct();
-    const obj4 = require(4265) /* DCDDeviceManager */;
-    obj[3] = require(4265) /* DCDDeviceManager */.getDeviceManufacturer();
-    const obj5 = require(4265) /* DCDDeviceManager */;
-    obj[4] = require(4265) /* DCDDeviceManager */.getSmallestScreenWidthDp();
-    obj[5] = importDefault(7051)();
-    const obj6 = require(4265) /* DCDDeviceManager */;
-    obj[6] = require(4265) /* DCDDeviceManager */.getSocName();
-    const obj7 = require(4265) /* DCDDeviceManager */;
-    obj[7] = require(4265) /* DCDDeviceManager */.getRamSize();
-    const obj8 = require(4265) /* DCDDeviceManager */;
-    obj[8] = require(4265) /* DCDDeviceManager */.getMaxCpuFreq();
-    const obj9 = require(4265) /* DCDDeviceManager */;
+    obj[0] = require(4235) /* DCDDeviceManager */.getDeviceModel();
+    const obj2 = require(4235) /* DCDDeviceManager */;
+    obj[1] = require(4235) /* DCDDeviceManager */.getDeviceBrand();
+    const obj3 = require(4235) /* DCDDeviceManager */;
+    obj[2] = require(4235) /* DCDDeviceManager */.getDeviceProduct();
+    const obj4 = require(4235) /* DCDDeviceManager */;
+    obj[3] = require(4235) /* DCDDeviceManager */.getDeviceManufacturer();
+    const obj5 = require(4235) /* DCDDeviceManager */;
+    obj[4] = require(4235) /* DCDDeviceManager */.getSmallestScreenWidthDp();
+    obj[5] = importDefault(7025)();
+    const obj6 = require(4235) /* DCDDeviceManager */;
+    obj[6] = require(4235) /* DCDDeviceManager */.getSocName();
+    const obj7 = require(4235) /* DCDDeviceManager */;
+    obj[7] = require(4235) /* DCDDeviceManager */.getRamSize();
+    const obj8 = require(4235) /* DCDDeviceManager */;
+    obj[8] = require(4235) /* DCDDeviceManager */.getMaxCpuFreq();
+    const obj9 = require(4235) /* DCDDeviceManager */;
   }
   return obj;
 }
 function getRedesignScreenName() {
   let name;
   let params;
-  const rootNavigationRef = require(4137) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4107) /* getRootNavigationRef */.getRootNavigationRef();
   let currentRoute;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -100,9 +100,9 @@ function getRedesignScreenName() {
       const _HermesInternal = HermesInternal;
       return "redesign-" + name;
     }
-    tmpResult = tmp(4136);
+    tmpResult = tmp(4106);
   }
-  const obj = require(4137) /* getRootNavigationRef */;
+  const obj = require(4107) /* getRootNavigationRef */;
   tmp = require;
 }
 function sharedProperties(screen_name, has_cached_data) {
@@ -134,7 +134,7 @@ function _trackAppUIViewedAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ function _trackAppUIViewedAsync() {
               getHash = 1;
               c6 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback2(4143).getAppFirstVisibleTimestamp();
+              obj1[0] = callback2(4113).getAppFirstVisibleTimestamp();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -173,15 +173,15 @@ function _trackAppUIViewedAsync() {
           } else {
             handleClearCaches = arg1;
             getHash = ensureGuildLoaded - handleClearCaches;
-            callback2(4143).reportFullyDrawn();
-            const obj5 = callback2(4143);
+            callback2(4113).reportFullyDrawn();
+            const obj5 = callback2(4113);
             callback2(10).mark("\u2757", "Track app_ui_viewed");
             const obj6 = callback2(10);
             callback2(10).addDetail("TTI", getHash);
             const obj7 = callback2(10);
             callback2(10).markAt("\u{1F3C3}", "app_opened", handleClearCaches);
             const obj8 = callback2(10);
-            callback(7054).ttiRecorded(getHash);
+            callback(7028).ttiRecorded(getHash);
             let _setTimeout = setTimeout;
             let timerId = setTimeout(() => {
               let str = closure_0;
@@ -203,7 +203,7 @@ function _trackAppUIViewedAsync() {
               if (null == timeout) {
                 let _setTimeout = setTimeout;
                 timeout = setTimeout(() => {
-                  callback(9).setTTICallback(/* F119244 */ function() { ... });
+                  callback(9).setTTICallback(/* F119185 */ function() { ... });
                   callback3();
                   let c25 = null;
                 }, 15 * callback(687).Millis.SECOND);
@@ -246,7 +246,7 @@ function _trackAppUIViewedAsync() {
               }
             })();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp6) {
           c6 = tmp;
@@ -286,7 +286,7 @@ function _logLegacyAppUiViewed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -313,7 +313,7 @@ function _logLegacyAppUiViewed() {
               c7 = 1;
               c8 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback(4143).getJSBundleTimestamps();
+              obj1[0] = callback(4113).getJSBundleTimestamps();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -346,7 +346,7 @@ function _logLegacyAppUiViewed() {
             const merged2 = Object.assign(closure_0);
             callback(698).track(constants.APP_UI_VIEWED, obj2, { logEventProperties: true });
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp7) {
           c8 = tmp;
@@ -388,7 +388,7 @@ function _trackAppUIViewed() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -438,7 +438,7 @@ function _trackAppUIViewed() {
             outer1_2 = outer1_1.appCreatedTime;
             const outer1_3 = outer1_1.appFirstVisibleTime;
             const outer1_4 = outer1_1.extraProperties;
-            const allNativeTimestamps = callback(4143).getAllNativeTimestamps();
+            const allNativeTimestamps = callback(4113).getAllNativeTimestamps();
             getHash = 2;
             theme = 1;
             let obj3 = { value: null, done: false };
@@ -457,7 +457,7 @@ function _trackAppUIViewed() {
           obj4[0] = arg1;
           return obj4;
         } else {
-          const cumulativeCPUUsage = callback(7055).getCumulativeCPUUsage();
+          const cumulativeCPUUsage = callback(7029).getCumulativeCPUUsage();
           let usage;
           if (cumulativeCPUUsage != null) {
             usage = cumulativeCPUUsage.usage;
@@ -488,7 +488,7 @@ function _trackAppUIViewed() {
           obj3.track(APP_UI_VIEWED2.APP_UI_VIEWED2, theme, { logEventProperties: true });
           let closure_26 = theme;
           if (alertStartupMetrics.alertStartupMetrics) {
-            obj4 = callback(4624);
+            obj4 = callback(4594);
             const obj5 = { importer: null };
             obj5[0] = function importer() {
               return callback(paths[28])(paths[27], paths.paths).then((arg0) => {
@@ -508,7 +508,7 @@ function _trackAppUIViewed() {
             };
             obj4.openLazy(obj5);
           }
-          const obj14 = callback(7055);
+          const obj14 = callback(7029);
           if (obj7.runningTTIAutomation()) {
             (function logToDevice(json) {
               let obj = {};
@@ -543,7 +543,7 @@ function _trackAppUIViewed() {
             })(theme);
           }
           theme = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp53) {
         theme = tmp;
@@ -602,7 +602,7 @@ function _trackAppLaunchCompletedAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -643,7 +643,7 @@ function _trackAppLaunchCompletedAsync() {
             obj = callback(table[19]);
             obj.track(constants.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp21) {
           c8 = tmp;
@@ -700,7 +700,7 @@ export const trackAppUIViewed = function trackAppUIViewed(ModalScreen, arg1, has
   if (hasCacheResult === undefined) {
     hasCacheResult = handleClearCaches.hasCache();
   }
-  const AppStartInfo = require(7052) /* AppStartInfo */.AppStartInfo;
+  const AppStartInfo = require(7026) /* AppStartInfo */.AppStartInfo;
   if (!AppStartInfo.getAppUIViewed()) {
     (function trackAppUIViewedAsync(ModalScreen, arg1, hasCacheResult) {
       const self = this;

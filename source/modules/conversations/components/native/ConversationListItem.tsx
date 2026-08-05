@@ -1,9 +1,9 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8365
+// Function ID: 8366
 // Name: ConversationListItemBase
-// Dependencies: [19, 17, 6964, 6966, 676, 21, 4285, 712, 1480, 3989, 689, 589, 8367, 8390, 8369, 5317, 4281, 1236, 8394, 8395, 8398, 4706, 2]
+// Dependencies: [19, 17, 6949, 6951, 676, 21, 4255, 712, 1480, 3959, 689, 589, 8339, 8362, 8341, 5302, 4251, 1236, 8366, 8367, 8370, 4676, 2]
 
-// Module 8393 (ConversationListItemBase)
+// Module 8365 (ConversationListItemBase)
 import importAllResult from "ConversationPreviewBlockedMessage";
 import { View } from "getSystemLocale";
 import removePendingListFetch from "removePendingListFetch";

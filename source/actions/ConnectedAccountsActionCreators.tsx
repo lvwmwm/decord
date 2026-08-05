@@ -1,9 +1,9 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5075
+// Function ID: 5076
 // Name: callback
-// Dependencies: [5, 4964, 676, 3, 530, 709, 698, 5091, 5094, 503, 2]
+// Dependencies: [5, 4949, 676, 3, 530, 709, 698, 5076, 5079, 503, 2]
 
-// Module 5090 (callback)
+// Module 5075 (callback)
 import dispatcher from "dispatcher";
 import set from "set";
 import ME from "ME";
@@ -101,7 +101,7 @@ let obj = {
   },
   callback,
   connect(arg0, arg1, name, location, friend_sync) {
-    let obj = importDefault(5094);
+    let obj = importDefault(5079);
     obj = { url: closure_6.CONNECTION(arg0, arg1), body: null, context: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { name, friend_sync: null };
     friend_sync = undefined;
@@ -146,7 +146,7 @@ let obj = {
     return this.update(type, id, { show_activity: closure_0 });
   },
   update(arg0, arg1, body) {
-    let obj = importDefault(5094);
+    let obj = importDefault(5079);
     obj = { url: closure_6.CONNECTION(arg0, arg1), body, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE, properties: null };
     const merged = Object.assign(body);
@@ -199,7 +199,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -301,7 +301,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

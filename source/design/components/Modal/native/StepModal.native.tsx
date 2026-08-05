@@ -1,10 +1,10 @@
-// Module ID: 13332
-// Function ID: 13333
+// Module ID: 13304
+// Function ID: 13305
 // Name: StepModal
-// Dependencies: [32, 19, 17, 21, 4285, 5235, 1581, 11248, 13333, 2]
+// Dependencies: [32, 19, 17, 21, 4255, 5220, 1581, 11220, 13305, 2]
 // Exports: StepModal
 
-// Module 13332 (StepModal)
+// Module 13304 (StepModal)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -48,10 +48,10 @@ export const StepModal = function StepModal(steps) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj.onWillFocus = callback;
-  obj = { height: steps(5235).NAV_BAR_HEIGHT + tmp3.top };
+  obj = { height: steps(5220).NAV_BAR_HEIGHT + tmp3.top };
   obj.headerStyle = obj;
   obj.hideTitle = true;
-  const items1 = [callback2(steps(11248).Modal, obj), ];
+  const items1 = [callback2(steps(11220).Modal, obj), ];
   const obj1 = { style: items2, pointerEvents: "box-none", children: null };
   items2 = [tmp2.stepContainer, { marginTop: tmp3.top }];
   const obj2 = { currentStep: tmp4[0], totalSteps: null };
@@ -63,7 +63,7 @@ export const StepModal = function StepModal(steps) {
     num = 0;
   }
   obj2[1] = num;
-  obj1[2] = callback2(steps(13333).ModalStepIndicator, obj2);
+  obj1[2] = callback2(steps(13305).ModalStepIndicator, obj2);
   items1[1] = callback2(View, obj1);
   obj[1] = items1;
   return closure_7(View, obj);

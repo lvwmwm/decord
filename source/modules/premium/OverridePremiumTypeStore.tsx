@@ -8,7 +8,13 @@ import GuildFeatures from "GuildFeatures";
 import { PersistedStore } from "initialize";
 
 function setPremiumTypeActual(user) {
-  closure_4.premiumTypeActual = require(1880) /* validatePremiumType */.getPremiumTypeFromRawValue(user.user.premium_type);
+  user = user.user;
+  if ("CURRENT_USER_UPDATE" === user.type) {
+    if (undefined === user.premium_type) {
+      return false;
+    }
+  }
+  closure_4.premiumTypeActual = require(1880) /* validatePremiumType */.getPremiumTypeFromRawValue(user.premium_type);
 }
 const UNSELECTED_CREATED_AT_DATE = GuildFeatures.UNSELECTED_CREATED_AT_DATE;
 const UNSELECTED_PREMIUM_TYPE_OVERRIDE = GuildFeatures.UNSELECTED_PREMIUM_TYPE_OVERRIDE;

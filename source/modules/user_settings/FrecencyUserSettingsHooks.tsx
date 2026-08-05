@@ -1,10 +1,10 @@
-// Module ID: 9855
-// Function ID: 9856
+// Module ID: 9826
+// Function ID: 9827
 // Name: useFrecencySettings
 // Dependencies: [19, 1340, 1355, 589, 2]
 // Exports: useFrecencySettings
 
-// Module 9855 (useFrecencySettings)
+// Module 9826 (useFrecencySettings)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 

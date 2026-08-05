@@ -1,10 +1,10 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12061
+// Function ID: 12062
 // Name: useSimilarGames
-// Dependencies: [4306, 1874, 9259, 9258, 7002, 589, 9190, 9201, 2]
+// Dependencies: [4276, 1874, 9230, 9229, 6986, 589, 9162, 4786, 2]
 // Exports: default
 
-// Module 12089 (useSimilarGames)
+// Module 12061 (useSimilarGames)
 import handleLoadMessages from "handleLoadMessages";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set";
@@ -22,7 +22,7 @@ export default function useSimilarGames(arg0, arg1) {
   if (arg1) {
     tmp = !set.has(arg0);
   }
-  let obj = require(9258) /* _getShopCollection */;
+  let obj = require(9229) /* _getShopCollection */;
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp);
   ({ data, isLoading, error } = similarGameIds);
   if (!tmp) {
@@ -31,12 +31,12 @@ export default function useSimilarGames(arg0, arg1) {
     tmp7 = data;
   }
   require = tmp7;
-  let tmp3Result = tmp3(7002);
+  let tmp3Result = tmp3(6986);
   const games = tmp3Result.useGames(tmp7);
   tmp3Result = tmp3(589);
   const items = [handleLoadMessages];
   const items1 = [tmp7];
-  const stateFromStores = tmp3Result.useStateFromStores(items, () => tmp7.some((gameId) => null == game.getGame(gameId) && !game.hasNoData(gameId) && !game.didFetchingFail(gameId)), items1);
+  const stateFromStores = tmp3Result.useStateFromStores(items, () => tmp7.some((closure_0) => null == game.getGame(closure_0) && !game.hasNoData(closure_0) && !game.didFetchingFail(closure_0)), items1);
   require(589) /* initialize */;
   const items2 = [handleLoadMessages, mergeGuildAvatar];
   [][0] = tmp7;

@@ -1,10 +1,10 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 9680
+// Function ID: 9681
 // Name: defaultReactFn
-// Dependencies: [19, 9710, 21, 4280, 9471, 9711, 5659, 4715, 4717, 9716, 5236, 501, 9717, 9718, 1297, 4149, 9706, 4764, 9719, 2]
+// Dependencies: [19, 9681, 21, 4250, 9442, 9682, 5644, 4685, 4687, 9687, 5221, 501, 9688, 9689, 1297, 4119, 9677, 4734, 9690, 2]
 // Exports: default
 
-// Module 9709 (defaultReactFn)
+// Module 9680 (defaultReactFn)
 import "set";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import jsxProd from "jsxProd";
@@ -16,8 +16,8 @@ function defaultReactFn(content, output, state) {
   if (typeof content.content === "string") {
     content = content.content;
   } else {
-    content = require(9471) /* smartOutput */.smartOutput(content, output, state);
-    const obj = require(9471) /* smartOutput */;
+    content = require(9442) /* smartOutput */.smartOutput(content, output, state);
+    const obj = require(9442) /* smartOutput */;
   }
   return content;
 }
@@ -235,7 +235,7 @@ const regExp = new RegExp(require("regExp").ANSI_CONTROL_SEQUENCE_RE, "g");
 const result = require("jsxProd").fileFinishedImporting("modules/markup/native/MarkupMessagePreviewReactRules.tsx");
 
 export default function createChannelListMessagePreviewReactRules(layout, iconColor) {
-  let obj = require(9711) /* getLayoutStyles */;
+  let obj = require(9682) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout);
   let bound = arg2;
   if (null != arg3) {
@@ -243,7 +243,7 @@ export default function createChannelListMessagePreviewReactRules(layout, iconCo
     bound = Math.min(arg2, arg3);
   }
   obj = { iconColor, iconSize: layoutStyles.messagePreview.messageTypeIconSizeNew, channelIconSize: layoutStyles.messagePreview.messageTypeIconSize, customEmojiSize: null };
-  let num = require(5659) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
+  let num = require(5644) /* ICON_SIZE */.ICON_SIZE[layoutStyles.messagePreview.messageTypeIconSizeNew];
   if (num == null) {
     num = 0;
   }

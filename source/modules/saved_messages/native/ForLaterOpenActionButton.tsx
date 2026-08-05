@@ -1,13 +1,13 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15374
+// Function ID: 15375
 // Name: BadgedIcon
-// Dependencies: [19, 17, 10188, 21, 8103, 15394, 4285, 712, 4221, 3989, 4700, 8192, 4249, 10191, 589, 8186, 8181, 8184, 8190, 7672, 1236, 2]
+// Dependencies: [19, 17, 10159, 21, 8075, 15375, 4255, 712, 4191, 3959, 4670, 8164, 4219, 10162, 589, 8158, 8153, 8156, 5615, 8162, 7644, 1236, 2]
 
-// Module 15393 (BadgedIcon)
-import importAllResult from "IconButton";
+// Module 15374 (BadgedIcon)
+import importAllResult from "showForLaterModal";
 import { View } from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";
-import jsxProd from "set";
+import jsxProd from "getSystemLocale";
 import createCacheKey from "createCacheKey";
 
 let closure_6;
@@ -17,15 +17,15 @@ function BadgedIcon(arg0) {
   let showRedDot;
   let type;
   ({ type, showRedDot } = arg0);
-  let obj = require(3989) /* map */;
-  const token = obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4221)());
+  let obj = require(3959) /* map */;
+  const token = obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4191)());
   const tmp6 = callback2();
-  let obj1 = require(4700) /* styleProperties */;
+  let obj1 = require(4670) /* styleProperties */;
   const iconSizeStyles = obj1.useIconSizeStyles("sm", true, 2);
-  if (type === require(8192) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp4(4249).ClockIcon;
+  if (type === require(8164) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
+    let BookmarkIcon = tmp4(4219).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(10191).BookmarkIcon;
+    BookmarkIcon = tmp4(10162).BookmarkIcon;
   }
   obj = { style: items, children: null };
   items = [tmp6.container, iconSizeStyles];
@@ -38,13 +38,13 @@ function BadgedIcon(arg0) {
     const obj2 = { size: "sm", color: null };
     obj2[1] = token;
     obj1[1] = tmp8(BookmarkIcon, obj2);
-    const items2 = [tmp8(importDefault(8103), obj1), ];
+    const items2 = [tmp8(importDefault(8075), obj1), ];
     const obj3 = { style: null };
     obj3[0] = tmp6.dot;
     items2[1] = tmp8(tmp9, obj3);
     obj[1] = items2;
     let tmp8Result = callback(tmp9, obj);
-    const tmpResult = importDefault(8103);
+    const tmpResult = importDefault(8075);
   } else {
     const obj4 = { size: "sm", color: null };
     obj4[1] = token;
@@ -68,7 +68,7 @@ const forwardRefResult = importAllResult.forwardRef((type, ref) => {
   let stateFromStores1;
   let hasForLaterAccess;
   let obj = type(stateFromStores1[14]);
-  const items = [getTimeSafe];
+  let items = [getTimeSafe];
   const stateFromStores = obj.useStateFromStores(items, () => getTimeSafe.hasOverdueReminder(), []);
   let obj1 = type(stateFromStores1[14]);
   const items1 = [getTimeSafe];
@@ -80,11 +80,12 @@ const forwardRefResult = importAllResult.forwardRef((type, ref) => {
     onOpen();
     if (0 === stateFromStores1) {
       if (!hasForLaterAccess) {
-        onOpen(stateFromStores1[16])(type(stateFromStores1[17]).EntitlementFeatureNames.SAVED_MESSAGES);
+        const items = [onOpen(stateFromStores1[18]).FOR_LATER_ROADBLOCK];
+        onOpen(stateFromStores1[16])(type(stateFromStores1[17]).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
         const tmp5 = onOpen(stateFromStores1[16]);
       }
     }
-    type(stateFromStores1[18]).showForLaterModal(type);
+    type(stateFromStores1[19]).showForLaterModal(type);
   }, items2);
   obj = { type, showRedDot: null };
   const obj3 = type(stateFromStores1[15]);
@@ -92,12 +93,12 @@ const forwardRefResult = importAllResult.forwardRef((type, ref) => {
   const tmp9 = BadgedIcon;
   obj1 = { variant: "tertiary", size: "sm", icon: tmp7(tmp9, obj), onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 2 };
   obj[1] = type === type(stateFromStores1[11]).SavedMessageSortTypes.REMINDER && stateFromStores;
-  const intl = tmp(tmp2[20]).intl;
+  const intl = tmp(tmp2[21]).intl;
   if (type === type(stateFromStores1[11]).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   obj1[4] = intl.string(_2pAkDA);
-  obj[1] = closure_6(type(stateFromStores1[19]).IconButton, obj1);
+  obj[1] = closure_6(type(stateFromStores1[20]).IconButton, obj1);
   return closure_6(tmp8, obj);
 });
 const result = require("getTimeSafe").fileFinishedImporting("modules/saved_messages/native/ForLaterOpenActionButton.tsx");

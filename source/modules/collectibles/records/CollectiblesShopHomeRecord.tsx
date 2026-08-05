@@ -1,9 +1,9 @@
-// Module ID: 6939
-// Function ID: 6940
+// Module ID: 6924
+// Function ID: 6925
 // Name: fromServer
-// Dependencies: [6911, 6940, 6942, 6945, 6946, 6947, 6948, 6949, 6950, 6951, 6952, 6941, 2]
+// Dependencies: [6896, 6925, 6927, 6930, 6931, 6932, 6933, 6934, 6935, 6936, 6937, 6926, 2]
 
-// Module 6939 (fromServer)
+// Module 6924 (fromServer)
 import fromServer from "fromServer";
 import { CountdownTimerBlockRecord } from "fromServer";
 import { FeaturedBlockRecord } from "fromServer";

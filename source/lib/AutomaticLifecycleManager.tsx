@@ -1,9 +1,9 @@
-// Module ID: 5229
-// Function ID: 5230
+// Module ID: 5214
+// Function ID: 5215
 // Name: initialize
 // Dependencies: [709, 2]
 
-// Module 5229 (initialize)
+// Module 5214 (initialize)
 const result = require("set").fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");
 class AutomaticLifecycleManager {
   constructor() {

@@ -1,9 +1,9 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14209
+// Function ID: 14210
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1874, 7080, 5128, 505, 21, 712, 4285, 4100, 4129, 5131, 7086, 11086, 10374, 1474, 10386, 14236, 7666, 6970, 6975, 7107, 589, 10391, 7103, 7078, 10396, 4221, 10029, 3989, 10403, 9434, 9435, 9439, 7108, 10405, 4253, 14262, 1959, 11087, 6920, 1236, 11080, 10502, 14266, 10376, 10393, 10394, 4701, 9370, 9200, 4149, 500, 9326, 4281, 14267, 5317, 14305, 5236, 4706, 691, 14293, 4693, 8250, 14273, 11083, 14306, 4695, 14309, 7672, 9778, 14294, 2]
+// Dependencies: [5, 32, 19, 17, 1874, 7054, 5113, 505, 21, 712, 4255, 4070, 4099, 5116, 7060, 11058, 10346, 1474, 10358, 14210, 7638, 6955, 6960, 7081, 589, 10363, 7077, 7052, 10368, 4191, 10000, 3959, 10375, 9405, 9406, 9410, 7082, 10377, 4223, 14236, 1959, 11059, 6905, 1236, 11052, 10474, 14240, 10348, 10365, 10366, 4671, 9341, 9172, 4119, 500, 9297, 4251, 14241, 5302, 14279, 5221, 4676, 691, 14267, 4663, 8222, 14247, 11055, 14280, 4665, 14283, 7644, 9749, 14268, 2]
 
-// Module 14235 (ESTIMATED_CARD_HEIGHT)
+// Module 14209 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import useAdContentImpressionTrackerProps from "useAdContentImpressionTrackerProps";
 import importAllResult from "useIsMobileQuestDockRenderedBase";
@@ -31,35 +31,35 @@ let c5 = importAllResult;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let result = createCacheKey.experimental_createToken((theme) => {
   theme = theme.theme;
-  const obj = require(4100);
+  const obj = require(4070);
   const tmp = require;
   const internal = importDefault(712).internal;
   const colors = importDefault(712).colors;
-  const semanticColor = internal.resolveSemanticColor(theme, require(4100).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const isThemeDarkResult = require(4100).isThemeDark(theme);
-  return tmp(4129).hexOpacityToRgba(semanticColor, 0);
+  const semanticColor = internal.resolveSemanticColor(theme, require(4070).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
+  const isThemeDarkResult = require(4070).isThemeDark(theme);
+  return tmp(4099).hexOpacityToRgba(semanticColor, 0);
 });
 let result1 = createCacheKey.experimental_createToken((theme) => {
   theme = theme.theme;
-  const isThemeDarkResult = require(4100).isThemeDark(theme);
+  const isThemeDarkResult = require(4070).isThemeDark(theme);
   const internal = importDefault(712).internal;
   const colors = importDefault(712).colors;
   const semanticColor = internal.resolveSemanticColor(theme, isThemeDarkResult ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const obj = require(4100);
+  const obj = require(4070);
   const tmp = require;
   let num = 0.5;
   if (isThemeDarkResult) {
     num = 0.8;
   }
-  return require(4129) /* hexToRgba */.hexOpacityToRgba(semanticColor, num);
+  return require(4099) /* hexToRgba */.hexOpacityToRgba(semanticColor, num);
 });
 let result2 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4100);
+  const obj = require(4070);
   const colors = importDefault(712).colors;
-  return require(4100).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
+  return require(4070).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
 });
 const PX_16 = require("Themes").space.PX_16;
-let obj = { container: null, heroContainer: null, heroImg: null, heroLinearGradientOverlay: null, previewBadge: null, rewardImgContainer: null, heroFooterContainer: null, heroFooterLeftContainer: null, detailsWrapper: null, detailsContainer: null, questName: null, bodyContainer: null, subtitleRow: null, orbWithAmountRow: null, detailsTextContainer: null, buttonContainers: null, equalWidthContainer: null };
+let obj = { container: null, heroContainer: null, heroImg: null, heroLinearGradientOverlay: null, previewBadge: null, previewBadgeText: null, rewardImgContainer: null, heroFooterContainer: null, heroFooterLeftContainer: null, detailsWrapper: null, detailsContainer: null, questName: null, bodyContainer: null, subtitleRow: null, orbWithAmountRow: null, detailsTextContainer: null, buttonContainers: null, equalWidthContainer: null };
 obj = { position: "relative", padding: 0, borderRadius: require("Themes").radii.sm, backgroundColor: require("Themes").colors.BACKGROUND_SURFACE_HIGH, marginBottom: require("Themes").space.PX_16, overflow: "hidden" };
 obj[0] = obj;
 createCacheKey = { display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: require("Themes").space.PX_12 };
@@ -71,23 +71,24 @@ obj[3] = StyleSheet.absoluteFillObject;
 createCacheKey = { position: "absolute", top: require("Themes").space.PX_8, right: require("Themes").space.PX_8, backgroundColor: require("Themes").colors.BACKGROUND_BRAND, padding: require("Themes").space.PX_4, borderRadius: require("Themes").radii.sm };
 let merged1 = Object.assign(require("Themes").shadows.SHADOW_LOW);
 obj[4] = createCacheKey;
+obj[5] = { textTransform: "uppercase" };
 createCacheKey = { height: 64, width: 64, marginRight: require("Themes").space.PX_12 };
-obj[5] = createCacheKey;
-obj[6] = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end" };
-obj[7] = { display: "flex", flexDirection: "column", alignItems: "flex-start" };
-obj[8] = { display: "flex", padding: require("Themes").space.PX_12 };
-obj[9] = { display: "flex", flexDirection: "row" };
+obj[6] = createCacheKey;
+obj[7] = { display: "flex", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", alignItems: "flex-end" };
+obj[8] = { display: "flex", flexDirection: "column", alignItems: "flex-start" };
+obj[9] = { display: "flex", padding: require("Themes").space.PX_12 };
+obj[10] = { display: "flex", flexDirection: "row" };
 let obj5 = { display: "flex", padding: require("Themes").space.PX_12 };
-obj[10] = { marginBottom: require("Themes").space.PX_4 };
+obj[11] = { marginBottom: require("Themes").space.PX_4 };
 let obj6 = { marginBottom: require("Themes").space.PX_4 };
-obj[11] = { display: "flex", flexDirection: "column", gap: require("Themes").space.PX_4 };
+obj[12] = { display: "flex", flexDirection: "column", gap: require("Themes").space.PX_4 };
 let obj7 = { display: "flex", flexDirection: "column", gap: require("Themes").space.PX_4 };
-obj[12] = { flexDirection: "row", alignItems: "center", rowGap: require("Themes").space.PX_4, columnGap: require("Themes").space.PX_8, flexWrap: "wrap" };
-obj[13] = { flexDirection: "row", alignItems: "center" };
-obj[14] = { flex: 1, justifyContent: "center" };
+obj[13] = { flexDirection: "row", alignItems: "center", rowGap: require("Themes").space.PX_4, columnGap: require("Themes").space.PX_8, flexWrap: "wrap" };
+obj[14] = { flexDirection: "row", alignItems: "center" };
+obj[15] = { flex: 1, justifyContent: "center" };
 let obj8 = { flexDirection: "row", alignItems: "center", rowGap: require("Themes").space.PX_4, columnGap: require("Themes").space.PX_8, flexWrap: "wrap" };
-obj[15] = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, display: "flex", flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12 };
-obj[16] = { flexBasis: 0, flexGrow: 1, flexShrink: 1 };
+obj[16] = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, display: "flex", flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12 };
+obj[17] = { flexBasis: 0, flexGrow: 1, flexShrink: 1 };
 let closure_16 = createCacheKey.createStyles(obj);
 let closure_17 = createCacheKey.createStyleProperties({ gradientStart: result, gradientMid: result1, gradientEnd: result2 });
 let obj9 = { borderTopWidth: 1, borderTopColor: require("Themes").colors.BORDER_SUBTLE, display: "flex", flexDirection: "row", alignItems: "center", padding: require("Themes").space.PX_12 };
@@ -481,7 +482,7 @@ const memoResult = importAllResult.memo((questContent) => {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -498,12 +499,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 let closure_0 = tmp2;
                 outer1_5.log("Enrolling in quest");
-                outer1_0(10376);
+                outer1_0(10348);
                 let obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
                   if (!outer1_14) {
-                    let START_QUEST = tmp31(7107).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7081).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = outer1_4;
@@ -511,7 +512,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7107).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7081).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -527,7 +528,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = useAdContentImpressionTrackerProps;
-                  v0(14266)(obj);
+                  v0(14240)(obj);
                   dependencyMap = 3;
                 }
                 callback2();
@@ -737,7 +738,7 @@ const memoResult = importAllResult.memo((questContent) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -770,7 +771,7 @@ const memoResult = importAllResult.memo((questContent) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp9) {
         v0 = tmp;
@@ -804,9 +805,10 @@ const memoResult = importAllResult.memo((questContent) => {
   if (preview) {
     let obj17 = { style: null, children: null };
     obj17[0] = tmp9.previewBadge;
-    let obj18 = { variant: "eyebrow", color: "text-overlay-light", children: null };
+    let obj18 = { variant: "eyebrow", color: "text-overlay-light", style: null, children: null };
+    obj18[2] = tmp9.previewBadgeText;
     const intl7 = tmp3(tmp4[43]).intl;
-    obj18[2] = intl7.string(tmp3(tmp4[43]).t.SKNnqq);
+    obj18[3] = intl7.string(tmp3(tmp4[43]).t.SKNnqq);
     obj17[1] = tmp75(tmp3(tmp4[56]).Text, obj18);
     preview = tmp75(tmp78, obj17);
   }

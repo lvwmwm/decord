@@ -1,9 +1,9 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15581
+// Function ID: 15582
 // Name: SearchNavigatorScreens
 // Dependencies: [2]
 
-// Module 15600 (SearchNavigatorScreens)
+// Module 15581 (SearchNavigatorScreens)
 const result = require("set").fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorConstants.tsx");
 
 export const SearchNavigatorScreens = { SEARCH_TABS: "search_tabs", SEARCH_CHAT_PREVIEW: "search_chat_preview" };

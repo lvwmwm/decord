@@ -1,9 +1,9 @@
-// Module ID: 7218
-// Function ID: 7219
+// Module ID: 7192
+// Function ID: 7193
 // Name: nativeEventEmitter
-// Dependencies: [5, 17, 676, 4278, 3, 7219, 7135, 1236, 4863, 4826, 4858, 7220, 500, 7221, 4816, 4817, 12, 2]
+// Dependencies: [5, 17, 676, 4248, 3, 7193, 7109, 1236, 4848, 4811, 4843, 7194, 500, 7195, 4801, 4802, 12, 2]
 
-// Module 7218 (nativeEventEmitter)
+// Module 7192 (nativeEventEmitter)
 import _fileSize from "_fileSize";
 import get_ActivityIndicator from "set";
 import ME from "ME";
@@ -53,7 +53,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -95,7 +95,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               } else {
                 try {
@@ -120,7 +120,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                       obj1[1] = intl2.formatToPlainString(callback(1236).t.D0noUt, obj2);
                       dependencyMap = 1;
                       const obj3 = { value: null, done: false };
-                      obj3[0] = files(7135).startBackgroundTask(obj1);
+                      obj3[0] = files(7109).startBackgroundTask(obj1);
                       return obj3;
                     }
                   } else if (arg0 === 1) {
@@ -134,11 +134,11 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                   } else {
                     callback = arg1;
                     if (outer1_0._aborted) {
-                      obj = files(7135);
+                      obj = files(7109);
                       obj.endBackgroundTask(outer1_0);
                     }
                     dependencyMap = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "T", done: null };
                   }
                 } catch (tmp13) {
                   dependencyMap = tmp;
@@ -346,7 +346,7 @@ prototype["startUpload"] = function startUpload() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -438,7 +438,7 @@ prototype["startUpload"] = function startUpload() {
           } else {
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
           const _HermesInternal2 = HermesInternal;
           outer1_8.log("All uploads cancelled for " + outer1_0.id);

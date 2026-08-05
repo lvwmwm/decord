@@ -1,10 +1,10 @@
-// Module ID: 8767
-// Function ID: 8768
+// Module ID: 8739
+// Function ID: 8740
 // Name: zustandStore
-// Dependencies: [4153, 8768, 2]
+// Dependencies: [4123, 8740, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler
 
-// Module 8767 (zustandStore)
+// Module 8739 (zustandStore)
 const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => {
   const obj = { sources: [], spoilerIndexes: null };
   obj[1] = new Set();

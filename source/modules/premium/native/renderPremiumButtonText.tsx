@@ -1,10 +1,10 @@
-// Module ID: 12746
-// Function ID: 12747
+// Module ID: 12718
+// Function ID: 12719
 // Name: PremiumText
-// Dependencies: [19, 17, 1876, 21, 4285, 4129, 712, 3931, 1236, 1297, 2]
+// Dependencies: [19, 17, 1876, 21, 4255, 4099, 712, 3901, 1236, 1297, 2]
 // Exports: default
 
-// Module 12746 (PremiumText)
+// Module 12718 (PremiumText)
 import "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -26,7 +26,7 @@ function PremiumText(basePlanId) {
   let text;
   ({ style, isCurrentPlan, isGift, product, text } = basePlanId);
   const tmp = createCacheKey();
-  let obj = importDefault(3931);
+  let obj = importDefault(3901);
   const intervalType = obj.getInterval(basePlanId.basePlanId).intervalType;
   let combined = null;
   if (intervalType === constants.YEAR) {

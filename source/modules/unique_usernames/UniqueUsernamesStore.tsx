@@ -1,15 +1,15 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13886
+// Function ID: 13887
 // Name: isRateLimited
 // Dependencies: [1386, 687, 589, 709, 2]
 
-// Module 13912 (isRateLimited)
+// Module 13886 (isRateLimited)
 import { Store } from "initialize";
 
-let closure_2 = { taken: null, error: "HermesInternal", rateLimited: null };
+let closure_2 = { taken: null, error: "T", rateLimited: null };
 let obj = { validations: null, currentUsernameInvalid: false, retryAfterTime: null, suggestions: null };
 obj[0] = new require("priv")({ max: 100, maxAge: 60000 });
-obj[3] = { migration: { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "r" }, source: "ct", fetched: null } };
+obj[3] = { migration: { suggestion: { username: "Array" }, fetched: false, usernameSuggestionLoading: false }, registration: { suggestion: { username: "Array" }, source: "PX_8", fetched: "locomotief" } };
 class UniqueUsernamesStore extends Store {
 }
 const prototype = UniqueUsernamesStore.prototype;
@@ -87,8 +87,8 @@ obj = {
     }
   },
   UNIQUE_USERNAME_SUGGESTIONS_RESET: function handleUniqueUsernameSuggestionsReset() {
-    obj.suggestions.migration = { suggestion: { username: "r" }, fetched: false, usernameSuggestionLoading: false };
-    obj.suggestions.registration = { suggestion: { username: "r" }, source: "ct", fetched: null };
+    obj.suggestions.migration = { suggestion: { username: "Array" }, fetched: false, usernameSuggestionLoading: false };
+    obj.suggestions.registration = { suggestion: { username: "Array" }, source: "PX_8", fetched: "locomotief" };
   },
   UNIQUE_USERNAME_SUGGESTIONS_SUCCESS: function handleUniqueUsernameSuggestionsSuccess(suggestion) {
     suggestion = suggestion.suggestion;

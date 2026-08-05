@@ -1,9 +1,9 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16307
+// Function ID: 16308
 // Name: updateSoundpack
-// Dependencies: [1212, 9695, 9696, 5229, 16327, 16330, 16331, 16332, 9697, 2]
+// Dependencies: [1212, 9666, 9667, 5214, 16308, 16311, 16312, 16313, 9668, 2]
 
-// Module 16326 (updateSoundpack)
+// Module 16307 (updateSoundpack)
 import initialize from "initialize";
 import Soundpacks from "Soundpacks";
 import { Soundpacks } from "Soundpacks";
@@ -30,41 +30,41 @@ const prototype = HolidayEventsManager.prototype;
 prototype["updateSoundpack"] = function updateSoundpack() {
   const soundpack = store.getSoundpack();
   const lastSoundpackExperimentId = store.getLastSoundpackExperimentId();
-  const experiment = importDefault(16327).experiment;
+  const experiment = importDefault(16308).experiment;
   if (experiment != null) {
     const name = experiment.definition.name;
   }
-  let isEligibleResult = importDefault(16330).isEligible();
+  let isEligibleResult = importDefault(16311).isEligible();
   if (isEligibleResult) {
     if (isEligibleResult) {
-      isEligibleResult = null != tmp3(16327).soundpack;
+      isEligibleResult = null != tmp3(16308).soundpack;
     }
     if (isEligibleResult) {
       isEligibleResult = name !== lastSoundpackExperimentId;
     }
     if (isEligibleResult) {
-      isEligibleResult = soundpack !== tmp3(16327).soundpack;
+      isEligibleResult = soundpack !== tmp3(16308).soundpack;
     }
     if (isEligibleResult) {
-      require(16331) /* setSoundpack */.setSoundpack(tmp3(16327).soundpack, name);
-      const obj3 = require(16331) /* setSoundpack */;
+      require(16312) /* setSoundpack */.setSoundpack(tmp3(16308).soundpack, name);
+      const obj3 = require(16312) /* setSoundpack */;
     }
   } else {
-    require(16331) /* setSoundpack */.setSoundpack(Soundpacks.CLASSIC, null);
-    const obj2 = require(16331) /* setSoundpack */;
+    require(16312) /* setSoundpack */.setSoundpack(Soundpacks.CLASSIC, null);
+    const obj2 = require(16312) /* setSoundpack */;
   }
 };
 prototype["updateRingtone"] = function updateRingtone() {
   if (obj.isEligible()) {
-    const tmpResult = importDefault(9697);
+    const tmpResult = importDefault(9668);
     if (null != tmpResultResult.call_ringing) {
-      require(16332) /* setIncomingRingtone */.setIncomingRingtone("call_ringing", `${tmp7.call_ringing}.mp3`);
-      const obj3 = require(16332) /* setIncomingRingtone */;
+      require(16313) /* setIncomingRingtone */.setIncomingRingtone("call_ringing", `${tmp7.call_ringing}.mp3`);
+      const obj3 = require(16313) /* setIncomingRingtone */;
     }
-    tmpResultResult = importDefault(9697)(store.getSoundpack());
+    tmpResultResult = importDefault(9668)(store.getSoundpack());
   } else {
-    require(16332) /* setIncomingRingtone */.setIncomingRingtone("call_ringing", "call_ringing.mp3");
-    const obj2 = require(16332) /* setIncomingRingtone */;
+    require(16313) /* setIncomingRingtone */.setIncomingRingtone("call_ringing", "call_ringing.mp3");
+    const obj2 = require(16313) /* setIncomingRingtone */;
   }
 };
 const holidayEventsManager = new HolidayEventsManager();

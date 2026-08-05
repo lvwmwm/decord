@@ -1,10 +1,10 @@
-// Module ID: 15577
-// Function ID: 15578
+// Module ID: 15558
+// Function ID: 15559
 // Name: ThreadChannelStarterMessage
-// Dependencies: [19, 6963, 4502, 21, 7851, 589, 4812, 1222, 8399, 2]
+// Dependencies: [19, 6948, 4472, 21, 7823, 589, 4797, 1222, 8371, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15577 (ThreadChannelStarterMessage)
+// Module 15558 (ThreadChannelStarterMessage)
 import "noop";
 import processMessage from "processMessage";
 import { ReferencedMessageState } from "processMessage";
@@ -37,8 +37,8 @@ export const ThreadChannelStarterMessage = function ThreadChannelStarterMessage(
     obj = { rowGenerator: null, message: null };
     obj[0] = obj;
     obj[1] = stateFromStores.message;
-    obj[2] = jsx(importDefault(8399), { rowGenerator: null, message: null });
-    tmp5 = jsx(require(4812) /* PressableBase */.PressableOpacity, { rowGenerator: null, message: null });
+    obj[2] = jsx(importDefault(8371), { rowGenerator: null, message: null });
+    tmp5 = jsx(require(4797) /* PressableBase */.PressableOpacity, { rowGenerator: null, message: null });
   }
   return tmp5;
 };
@@ -54,7 +54,7 @@ export const ThreadCreationStarterMessage = function ThreadCreationStarterMessag
     obj = { rowGenerator: null, message: null };
     obj[0] = obj;
     obj[1] = stateFromStores;
-    tmp3 = jsx(importDefault(8399), { rowGenerator: null, message: null });
+    tmp3 = jsx(importDefault(8371), { rowGenerator: null, message: null });
   }
   return tmp3;
 };

@@ -1,10 +1,10 @@
-// Module ID: 10505
-// Function ID: 10506
+// Module ID: 10477
+// Function ID: 10478
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 10506, 1371, 10507, 5611, 589, 10509, 10510, 10555, 10894, 2]
+// Dependencies: [5, 19, 10478, 1371, 10479, 5596, 589, 10481, 10482, 10527, 10866, 2]
 // Exports: default
 
-// Module 10505 (useRefocusOrLaunchActivity)
+// Module 10477 (useRefocusOrLaunchActivity)
 import fetchApplication from "fetchApplication";
 import noop from "noop";
 import map from "map";
@@ -46,7 +46,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -73,8 +73,8 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     const obj1 = { applicationId: null, layoutMode: null };
                     obj1[0] = tmp10.applicationId;
                     obj1[1] = outer1_7.FOCUSED;
-                    const result = outer1_1(10510).updateFrameLayoutMode(obj1);
-                    const obj9 = outer1_1(10510);
+                    const result = outer1_1(10482).updateFrameLayoutMode(obj1);
+                    const obj9 = outer1_1(10482);
                   }
                 }
                 if (tmp9) {
@@ -83,15 +83,15 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                   if ("guild_id" in _location) {
                     guild_id = _location.guild_id;
                   }
-                  outer1_1(10555)(guild_id, _location);
-                  const tmp24 = outer1_1(10555);
+                  outer1_1(10527)(guild_id, _location);
+                  const tmp24 = outer1_1(10527);
                 } else {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
                   c4 = 1;
                   if (outer1_7) {
-                    let obj5 = outer1_1(10510);
+                    let obj5 = outer1_1(10482);
                     let obj2 = { applicationId: null };
                     obj2[0] = tmp40;
                     dependencyMap = 2;
@@ -112,7 +112,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     }
                   }
                 }
-                obj2 = outer1_0(10894);
+                obj2 = outer1_0(10866);
                 const obj4 = { appId: null, botId: null, analyticsLocations: null };
                 obj4[0] = tmp40;
                 let id1;

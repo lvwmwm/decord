@@ -1,10 +1,10 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 15885
+// Function ID: 15886
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 10357, 21, 4285, 10358, 15905, 15907, 14956, 4146, 4694, 4142, 15039, 5368, 15908, 2]
+// Dependencies: [19, 17, 10329, 21, 4255, 10330, 15886, 15888, 14936, 4116, 4664, 4112, 15019, 5353, 15889, 2]
 // Exports: default
 
-// Module 15904 (LaunchPadContainer)
+// Module 15885 (LaunchPadContainer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
@@ -47,14 +47,14 @@ export default function LaunchPadContainer(children) {
   updaters = undefined;
   let dependencyMap;
   const tmp = createCacheKey();
-  const tmp4 = updaters(10358)();
-  const tmp5 = updaters(15905)();
+  const tmp4 = updaters(10330)();
+  const tmp5 = updaters(15886)();
   launchPadSharedState = tmp5.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp5);
-  ({ gesture, gestureRef } = updaters(15907)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
-  const tmp7 = updaters(14956)();
+  ({ gesture, gestureRef } = updaters(15888)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
+  const tmp7 = updaters(14936)();
   dependencyMap = tmp7;
-  let obj = launchPadSharedState(4146);
+  let obj = launchPadSharedState(4116);
   const fn = function o() {
     return _undefined.get().height;
   };
@@ -72,7 +72,7 @@ export default function LaunchPadContainer(children) {
   fn2.__workletHash = 418963589215;
   fn2.__initData = closure_10;
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
-  let obj1 = launchPadSharedState(4146);
+  let obj1 = launchPadSharedState(4116);
   const fn3 = function v() {
     let obj = { borderRadius: null, transform: null };
     obj[0] = launchPadSharedState(_undefined[9]).interpolate(launchPadSharedState.get(), [0, 1], [0, 16]);
@@ -92,17 +92,17 @@ export default function LaunchPadContainer(children) {
     obj[1] = items1;
     return obj;
   };
-  obj = { interpolate: launchPadSharedState(4146).interpolate, launchPadSharedState, withSpring: launchPadSharedState(4694).withSpring, windowDimensions: tmp7, LAUNCH_PAD_SPRING_CONFIG: closure_4 };
+  obj = { interpolate: launchPadSharedState(4116).interpolate, launchPadSharedState, withSpring: launchPadSharedState(4664).withSpring, windowDimensions: tmp7, LAUNCH_PAD_SPRING_CONFIG: closure_4 };
   fn3.__closure = obj;
   fn3.__workletHash = 13886247172712;
   fn3.__initData = closure_11;
   const animatedStyle = obj1.useAnimatedStyle(fn3);
-  const MobileHomeDrawerExperiment = launchPadSharedState(4142).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = launchPadSharedState(4112).MobileHomeDrawerExperiment;
   obj = { value: gestureRef, children: null };
   obj1 = { gesture, children: null };
   let obj2 = { style: tmp.wrapper, children: null };
   let items = [tmp.container, animatedStyle];
-  let items1 = [callback(updaters(4146).View, { style: items, children: children.children }), ];
+  let items1 = [callback(updaters(4116).View, { style: items, children: children.children }), ];
   if (tmp4 !== constants.DISABLED) {
     const obj3 = { launchPadType: null, gestureState: null, launchPadShown: null, launchPadSharedState: null, launchPadPullTabState: null, updaters: null };
     obj3[0] = tmp4;
@@ -111,11 +111,11 @@ export default function LaunchPadContainer(children) {
     obj3[3] = launchPadSharedState;
     obj3[4] = launchPadPullTabState;
     obj3[5] = updaters;
-    const tmp10Result = tmp10(updaters(15908), obj3);
+    const tmp10Result = tmp10(updaters(15889), obj3);
   }
   items1[1] = tmp10Result;
   obj2[1] = items1;
   obj1[1] = closure_7(closure_3, obj2);
-  obj[1] = callback(launchPadSharedState(5368).GestureDetector, obj1);
-  return callback(updaters(15039).Provider, obj);
+  obj[1] = callback(launchPadSharedState(5353).GestureDetector, obj1);
+  return callback(updaters(15019).Provider, obj);
 };

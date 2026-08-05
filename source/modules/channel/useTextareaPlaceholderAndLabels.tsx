@@ -1,10 +1,10 @@
-// Module ID: 11287
-// Function ID: 11288
+// Module ID: 11259
+// Function ID: 11260
 // Name: useTextareaPlaceholderAndLabels
-// Dependencies: [676, 4475, 1236, 2]
+// Dependencies: [676, 4445, 1236, 2]
 // Exports: default
 
-// Module 11287 (useTextareaPlaceholderAndLabels)
+// Module 11259 (useTextareaPlaceholderAndLabels)
 import ME from "ME";
 
 let c3;
@@ -23,8 +23,8 @@ export default function useTextareaPlaceholderAndLabels(isCreatingThread) {
   if (flag === undefined) {
     flag = false;
   }
-  const tmp2 = importDefault(4475)(channel, true);
-  const tmp3 = importDefault(4475)(channel, false);
+  const tmp2 = importDefault(4445)(channel, true);
+  const tmp3 = importDefault(4445)(channel, false);
   if (null != channel) {
     if (null != tmp2) {
       if (flag) {

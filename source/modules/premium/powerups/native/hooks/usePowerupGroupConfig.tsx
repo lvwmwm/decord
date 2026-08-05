@@ -1,10 +1,10 @@
-// Module ID: 11820
-// Function ID: 11821
+// Module ID: 11792
+// Function ID: 11793
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 1862, 589, 8076, 1236, 2317, 11821, 11822, 1351, 2]
+// Dependencies: [19, 1862, 589, 8048, 1236, 2287, 11793, 11794, 1351, 2]
 // Exports: default
 
-// Module 11820 (usePowerupGroupConfig)
+// Module 11792 (usePowerupGroupConfig)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
@@ -27,7 +27,7 @@ export default function usePowerupGroupConfig(arg0, arg1) {
   const items1 = [arg1, stateFromStores];
   return React.useMemo(() => {
     if ("guildTagsBadgePacks" === lib.group) {
-      let obj = { title: null, description: null, image: null, disabledReason: null, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
+      let obj = { title: null, description: null, image: null, disabledReason: null, badge: "T", forceStaticImages: "T" };
       const intl = callback(stateFromStores[4]).intl;
       obj[0] = intl.string(lib(stateFromStores[5]).KC9HRW);
       const intl2 = callback(stateFromStores[4]).intl;

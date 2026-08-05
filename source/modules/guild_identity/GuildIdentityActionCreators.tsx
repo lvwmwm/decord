@@ -1,10 +1,10 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 10024
+// Function ID: 10025
 // Name: _saveGuildIdentityChanges
-// Dependencies: [5, 676, 709, 530, 8083, 8080, 2]
+// Dependencies: [5, 676, 709, 530, 8055, 8052, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 10053 (_saveGuildIdentityChanges)
+// Module 10024 (_saveGuildIdentityChanges)
 import SafetyScannedUploadSurface from "SafetyScannedUploadSurface";
 import { Endpoints } from "ME";
 
@@ -37,7 +37,7 @@ function _saveGuildIdentityChanges() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ function _saveGuildIdentityChanges() {
               body = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -165,9 +165,9 @@ function _saveGuildIdentityChanges() {
                 const obj6 = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
                 obj6[0] = c4.SET_GUILD_MEMBER(callback);
                 obj6[1] = obj3;
-                let obj9 = callback2(8083);
+                let obj9 = callback2(8055);
                 const obj7 = {};
-                obj7[callback(8080).SafetyScannedUploadSurface.USER_GUILD_PROFILE_AVATAR] = c8;
+                obj7[callback(8052).SafetyScannedUploadSurface.USER_GUILD_PROFILE_AVATAR] = c8;
                 obj6[2] = obj9.buildHeadersForMd5(obj7);
                 c7 = 3;
                 c8 = 1;

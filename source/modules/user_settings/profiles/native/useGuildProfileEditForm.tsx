@@ -1,10 +1,10 @@
-// Module ID: 13860
-// Function ID: 13861
+// Module ID: 13834
+// Function ID: 13835
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8072, 6989, 1862, 5122, 1874, 676, 589, 11183, 4170, 709, 10053, 13861, 10048, 8322, 13820, 8078, 4184, 1236, 2]
+// Dependencies: [109, 5, 19, 8044, 6974, 1862, 5107, 1874, 676, 589, 11155, 4140, 709, 10024, 13835, 10019, 8294, 13792, 8050, 4154, 1236, 2]
 // Exports: default
 
-// Module 13860 (useGuildProfileEditForm)
+// Module 13834 (useGuildProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
@@ -68,7 +68,7 @@ export default function useGuildProfileEditForm() {
   const merged1 = Object.assign(stateFromStoresObject.errors);
   const memo = pendingThemeColors.useMemo(() => {
     const delayedCall = new stateFromStores(pendingNickname[11]).DelayedCall(200, () => {
-      callback2(709).wait(callback(10053).resetAllPending);
+      callback2(709).wait(callback(10024).resetAllPending);
     });
     return delayedCall;
   }, []);
@@ -164,7 +164,7 @@ export default function useGuildProfileEditForm() {
           const obj18 = outer1_0(outer1_2[15]);
         }
       }
-      yield "HermesInternal";
+      yield "T";
       if (1 === tmp6) {
         if (arg0 === 1) {
           guildMemberChangesForUpdateRequest = 3;

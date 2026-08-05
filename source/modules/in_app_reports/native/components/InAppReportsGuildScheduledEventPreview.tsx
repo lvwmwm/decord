@@ -1,10 +1,10 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12522
+// Function ID: 12523
 // Name: GuildScheduledEventPreview
-// Dependencies: [19, 17, 1862, 21, 4285, 712, 589, 4129, 4281, 1236, 5661, 2]
+// Dependencies: [19, 17, 1862, 21, 4255, 712, 589, 4099, 4251, 1236, 5646, 2]
 // Exports: default
 
-// Module 12550 (GuildScheduledEventPreview)
+// Module 12522 (GuildScheduledEventPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -38,35 +38,35 @@ export default function GuildScheduledEventPreview(event) {
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const tmp2Result = tmp2(4129);
+    const tmp2Result = tmp2(4099);
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
     obj[0] = tmp.title;
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t.SDTOL7);
-    const items1 = [callback(tmp2(4281).Text, obj), ];
+    const items1 = [callback(tmp2(4251).Text, obj), ];
     const obj1 = { style: null, children: null };
     const items2 = [tmp.itemContainer, ];
     const obj2 = { borderColor: null };
-    obj2[0] = tmp2(4129).hexWithOpacity(tmp.borderColor.color, 0.08);
+    obj2[0] = tmp2(4099).hexWithOpacity(tmp.borderColor.color, 0.08);
     items2[1] = obj2;
     obj1[0] = items2;
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.guildInfo;
     const obj4 = { guild: null, size: null, selected: false };
     obj4[0] = stateFromStores;
-    const hexWithOpacityResult = tmp2(4129).hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj4[1] = tmp2(5661).GuildIconSizes.XXSMALL;
-    const items3 = [callback(importDefault(5661), obj4), ];
+    const hexWithOpacityResult = tmp2(4099).hexWithOpacity(tmp.borderColor.color, 0.08);
+    obj4[1] = tmp2(5646).GuildIconSizes.XXSMALL;
+    const items3 = [callback(importDefault(5646), obj4), ];
     const obj5 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj5[0] = tmp.guildName;
     obj5[3] = stateFromStores.name;
-    items3[1] = callback(tmp2(4281).Text, obj5);
+    items3[1] = callback(tmp2(4251).Text, obj5);
     obj3[1] = items3;
     const items4 = [callback2(View, obj3), ];
     const obj6 = { style: null, variant: "text-md/bold", color: "mobile-text-heading-primary", children: null };
     obj6[0] = tmp.eventName;
     obj6[3] = event.name;
-    items4[1] = callback(tmp2(4281).Text, obj6);
+    items4[1] = callback(tmp2(4251).Text, obj6);
     obj1[1] = items4;
     items1[1] = callback2(View, obj1);
     obj[1] = items1;

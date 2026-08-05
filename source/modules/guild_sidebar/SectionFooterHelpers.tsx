@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15222
+// Function ID: 15223
 // Name: getSectionFooterConfig
-// Dependencies: [5228, 3913, 6902, 676, 6896, 1865, 2]
+// Dependencies: [5213, 3883, 6887, 676, 6881, 1865, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 15242 (getSectionFooterConfig)
+// Module 15222 (getSectionFooterConfig)
 import incrementVersion from "incrementVersion";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { ChannelListGuildActionRow } from "ChannelListGuildActionRow";
@@ -14,7 +14,7 @@ const require = arg1;
 const result = require("ChannelListGuildActionRow").fileFinishedImporting("modules/guild_sidebar/SectionFooterHelpers.tsx");
 
 export const getSectionFooterConfig = function getSectionFooterConfig(guildChannels, optInChannelsEnabled, section) {
-  if (section === require(6896) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS) {
+  if (section === require(6881) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS) {
     const guildActionSection = guildChannels.getGuildActionSection();
     const rows = guildActionSection.getRows();
     let isEmptyResult = 1 === rows.length;
@@ -31,18 +31,18 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
   }
   let tmp6 = !tmp3;
   if (!tmp3) {
-    const tmp7 = section === tmp(6896).SECTION_INDEX_GUILD_ACTIONS;
+    const tmp7 = section === tmp(6881).SECTION_INDEX_GUILD_ACTIONS;
     if (tmp7) {
       tmp6 = tmp7;
     } else {
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         let tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(6896).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(6881).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(6896).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(6881).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {
@@ -60,7 +60,7 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
     }
   }
   const obj = { hasDivider: tmp6, canHaveVoiceSummary: null };
-  obj[1] = !(section === require(6896) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS || section === require(6896) /* computeSubtitle */.SECTION_INDEX_FAVORITES || section === require(6896) /* computeSubtitle */.SECTION_INDEX_UNCATEGORIZED_CHANNELS || section === guildChannels.recentsSectionNumber || section === guildChannels.voiceChannelsSectionNumber);
+  obj[1] = !(section === require(6881) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS || section === require(6881) /* computeSubtitle */.SECTION_INDEX_FAVORITES || section === require(6881) /* computeSubtitle */.SECTION_INDEX_UNCATEGORIZED_CHANNELS || section === guildChannels.recentsSectionNumber || section === guildChannels.voiceChannelsSectionNumber);
   return obj;
 };
 export const getSectionFooterActiveVoiceChannels = function getSectionFooterActiveVoiceChannels(arg0) {

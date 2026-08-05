@@ -22,7 +22,7 @@ class Logger {
       str = "default";
     }
     obj = Object.create(new.target.prototype);
-    f100971 = obj;
+    f100911 = obj;
     obj.logDangerously = function logDangerously(arg0) {
       const substr = [...arguments].slice();
       outer1_3("log", arg0, ...substr);
@@ -134,9 +134,9 @@ class Logger {
       logger.log(arg0, Date.now() - timestamp);
       return arg1();
     };
-    f100971 = undefined;
+    f100911 = undefined;
     closure_1 = obj;
-    f100971 = asyncGeneratorStep((arg0, arg1) => {
+    f100911 = asyncGeneratorStep((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
       let c4 = 0;

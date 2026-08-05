@@ -1,10 +1,10 @@
-// Module ID: 11107
-// Function ID: 11108
+// Module ID: 11079
+// Function ID: 11080
 // Name: useTrackCreateGuildViewed
-// Dependencies: [19, 5850, 676, 698, 2]
+// Dependencies: [19, 5835, 676, 698, 2]
 // Exports: default
 
-// Module 11107 (useTrackCreateGuildViewed)
+// Module 11079 (useTrackCreateGuildViewed)
 import noop from "noop";
 import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD";
 import { AnalyticEvents } from "ME";

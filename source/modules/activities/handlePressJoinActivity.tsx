@@ -1,10 +1,10 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10504
+// Function ID: 10505
 // Name: handlePressJoinActivity
-// Dependencies: [5, 4308, 1372, 1862, 3913, 1874, 4301, 1371, 10533, 10534, 4623, 1236, 5611, 10530, 10535, 2]
+// Dependencies: [5, 4278, 1372, 1862, 3883, 1874, 4271, 1371, 10505, 10506, 4593, 1236, 5596, 10502, 10507, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10532 (handlePressJoinActivity)
+// Module 10504 (handlePressJoinActivity)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createExecutable from "createExecutable";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -19,31 +19,31 @@ function handlePressJoinActivity(arg0) {
   let embeddedActivityJoinability;
   let handleCanJoin;
   ({ embeddedActivityJoinability, handleCanJoin } = arg0);
-  if (require(10533) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
+  if (require(10505) /* getEmbeddedActivityJoinability */.EmbeddedActivityJoinability.CAN_JOIN === embeddedActivityJoinability) {
     if (handleCanJoin != null) {
       handleCanJoin();
     }
-  } else if (tmp(10533).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
-    const result = tmp(10534).showActivitiesInvalidPermissionsAlert();
-    const tmpResult = tmp(10534);
-  } else if (tmp(10533).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
+  } else if (tmp(10505).EmbeddedActivityJoinability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION === embeddedActivityJoinability) {
+    const result = tmp(10506).showActivitiesInvalidPermissionsAlert();
+    const tmpResult = tmp(10506);
+  } else if (tmp(10505).EmbeddedActivityJoinability.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS === embeddedActivityJoinability) {
     let obj = { title: null, body: null, hideActionSheet: false };
     const intl7 = tmp(1236).intl;
     obj[0] = intl7.string(tmp(1236).t.PtobXW);
     const intl8 = tmp(1236).intl;
     obj[1] = intl8.string(tmp(1236).t.UXoQTp);
-    importDefault(4623).show(obj);
-    const obj7 = importDefault(4623);
-  } else if (tmp(10533).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
+    importDefault(4593).show(obj);
+    const obj7 = importDefault(4593);
+  } else if (tmp(10505).EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     obj = { title: null, body: null, hideActionSheet: false };
     const intl5 = tmp(1236).intl;
     obj[0] = intl5.string(tmp(1236).t.PtobXW);
     const intl6 = tmp(1236).intl;
     obj[1] = intl6.string(tmp(1236).t.uGDCcw);
-    importDefault(4623).show(obj);
-    const obj5 = importDefault(4623);
-  } else if (tmp(10533).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
-    let obj2 = importDefault(4623);
+    importDefault(4593).show(obj);
+    const obj5 = importDefault(4593);
+  } else if (tmp(10505).EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
+    let obj2 = importDefault(4593);
     const obj1 = { title: null, body: null, hideActionSheet: false };
     const intl3 = tmp(1236).intl;
     obj1[0] = intl3.string(tmp(1236).t.PtobXW);
@@ -51,7 +51,7 @@ function handlePressJoinActivity(arg0) {
     obj1[1] = intl4.string(tmp(1236).t["4WuFRE"]);
     obj2.show(obj1);
   } else {
-    obj = importDefault(4623);
+    obj = importDefault(4593);
     obj2 = { title: null, body: null, hideActionSheet: false };
     const intl = tmp(1236).intl;
     obj2[0] = intl.string(tmp(1236).t.PtobXW);
@@ -86,7 +86,7 @@ function _maybeJoinEmbeddedActivity() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -130,7 +130,7 @@ function _maybeJoinEmbeddedActivity() {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     }
                   } else {
                     try {
@@ -169,7 +169,7 @@ function _maybeJoinEmbeddedActivity() {
                         return obj;
                       }
                       c0 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     } catch (tmp13) {
                       c0 = tmp;
                       throw tmp13;
@@ -187,7 +187,7 @@ function _maybeJoinEmbeddedActivity() {
               }
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -211,7 +211,7 @@ function _maybeJoinEmbeddedActivity() {
                 });
                 updateVoiceState = c3;
                 if (null == updateVoiceState) {
-                  let obj4 = callback2(5611);
+                  let obj4 = callback2(5596);
                   c3 = 2;
                   c4 = 1;
                   let obj2 = { value: null, done: false };
@@ -244,13 +244,13 @@ function _maybeJoinEmbeddedActivity() {
                 obj4[1] = updateVoiceState;
                 obj4[2] = callback;
                 obj4[3] = id;
-                obj3 = callback(10530);
+                obj3 = callback(10502);
                 obj4[4] = obj3.getIsActivitiesEnabledForCurrentPlatform();
                 obj4[5] = c5;
                 obj4[6] = updateVoiceState;
                 obj4[7] = c7;
                 obj4[8] = c6;
-                obj3[0] = callback2(10533)(obj4);
+                obj3[0] = callback2(10505)(obj4);
                 obj3[1] = function handleCanJoin() {
                   const self = this;
                   const apply = _handleCanJoin.apply;
@@ -263,11 +263,11 @@ function _maybeJoinEmbeddedActivity() {
                 };
                 id(obj3);
                 const tmp49 = id;
-                const tmp52 = callback2(10533);
+                const tmp52 = callback2(10505);
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp31) {
           c4 = tmp;

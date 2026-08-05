@@ -1,10 +1,10 @@
-// Module ID: 13881
-// Function ID: 13882
+// Module ID: 13855
+// Function ID: 13856
 // Name: PasskeyUpsellPromoModal
-// Dependencies: [19, 13871, 21, 13874, 1236, 11248, 2]
+// Dependencies: [19, 13845, 21, 13848, 1236, 11220, 2]
 // Exports: default
 
-// Module 13881 (PasskeyUpsellPromoModal)
+// Module 13855 (PasskeyUpsellPromoModal)
 import "noop";
 import { WebAuthnScreens } from "WebAuthnScreens";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/webauthn/native/PasskeyUpsellPromoModal.tsx");
 
 export default function PasskeyUpsellPromoModal(arg0) {
-  let obj = require(13874) /* getScreens */;
+  let obj = require(13848) /* getScreens */;
   obj = { name: WebAuthnScreens.NAME, params: null };
   obj = {};
   const screens = obj.getScreens({ isModal: true });
@@ -22,5 +22,5 @@ export default function PasskeyUpsellPromoModal(arg0) {
   obj.name = intl.string(require(1236) /* getSystemLocale */.t["8H5RmH"]);
   obj[1] = obj;
   const initialRouteStack = [obj];
-  return jsx(require(11248) /* Modal */.Modal, { screens, initialRouteStack });
+  return jsx(require(11220) /* Modal */.Modal, { screens, initialRouteStack });
 };

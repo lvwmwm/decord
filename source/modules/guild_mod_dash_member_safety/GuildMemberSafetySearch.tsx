@@ -1,10 +1,10 @@
-// Module ID: 6887
-// Function ID: 6888
+// Module ID: 6872
+// Function ID: 6873
 // Name: hasStringMatch
-// Dependencies: [32, 6888, 4444, 11, 3902, 3919, 2]
+// Dependencies: [32, 6873, 4414, 11, 3872, 3889, 2]
 // Exports: getDefaultSearchState
 
-// Module 6887 (hasStringMatch)
+// Module 6872 (hasStringMatch)
 import _slicedToArray from "_slicedToArray";
 import set from "isEqual";
 
@@ -17,7 +17,7 @@ function hasStringMatch(str, str2) {
   }
   return hasItem;
 }
-let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "call", selectedSourceInviteCode: "httpServerLocation", selectedSort: "op" };
+let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "methodobject", selectedSort: "st" };
 let set = new Set();
 obj[5] = set;
 obj[6] = { optionId: 0, afterDate: null, beforeDate: null };
@@ -28,7 +28,7 @@ class GuildMemberSafetySearch {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
     obj.guildId = global;
-    obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "call", selectedSourceInviteCode: "httpServerLocation", selectedSort: "op" };
+    obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "methodobject", selectedSort: "st" };
     set = new Set();
     obj[5] = set;
     obj[6] = { optionId: 0, afterDate: null, beforeDate: null };
@@ -46,7 +46,7 @@ Object.defineProperty(prototype, "requiresUsernameMatch", {
   set: undefined
 });
 prototype["reset"] = function reset() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "call", selectedSourceInviteCode: "httpServerLocation", selectedSort: "op" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "methodobject", selectedSort: "st" };
   obj[5] = new Set();
   obj[6] = { optionId: 0, afterDate: null, beforeDate: null };
   obj[7] = { optionId: 0, afterDate: null, beforeDate: null };
@@ -57,7 +57,7 @@ prototype["updateSearchState"] = function updateSearchState(arg0) {
   const merged = Object.assign(this._searchState);
   const merged1 = Object.assign(arg0);
   this._searchState = {};
-  this.hasDefaultQuery = importDefault(4444)(this._searchState, closure_4);
+  this.hasDefaultQuery = importDefault(4414)(this._searchState, closure_4);
   return true;
 };
 prototype["resetSearchState"] = function resetSearchState() {
@@ -65,7 +65,7 @@ prototype["resetSearchState"] = function resetSearchState() {
   const hasDefaultQuery = this.hasDefaultQuery;
   let flag = !hasDefaultQuery;
   if (!hasDefaultQuery) {
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "call", selectedSourceInviteCode: "httpServerLocation", selectedSort: "op" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "methodobject", selectedSort: "st" };
     const _Set = Set;
     const set = new Set();
     obj[5] = set;
@@ -204,8 +204,8 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
                     if (tmp24) {
                       let tmp26 = !requireCommunicationDisabled;
                       if (requireCommunicationDisabled) {
-                        tmp26 = !_require(3902).isMemberCommunicationDisabled(joinedAtTimestamp);
-                        const obj4 = _require(3902);
+                        tmp26 = !_require(3872).isMemberCommunicationDisabled(joinedAtTimestamp);
+                        const obj4 = _require(3872);
                       }
                       let tmp29 = !tmp26;
                       if (tmp26) {
@@ -217,8 +217,8 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
                         if (tmp30) {
                           let tmp32 = !requireUsernameQuarantined;
                           if (requireUsernameQuarantined) {
-                            tmp32 = !_require(3919).hasAutomodQuarantinedProfile(joinedAtTimestamp);
-                            const obj5 = _require(3919);
+                            tmp32 = !_require(3889).hasAutomodQuarantinedProfile(joinedAtTimestamp);
+                            const obj5 = _require(3889);
                           }
                           tmp31 = !tmp32;
                         }
@@ -248,7 +248,7 @@ prototype["isMemberIncludedInSearchResults"] = function isMemberIncludedInSearch
 };
 
 export const getDefaultSearchState = function getDefaultSearchState() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "call", selectedSourceInviteCode: "httpServerLocation", selectedSort: "op" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: null, selectedJoinDateOption: null, selectedAccountAgeOption: null, selectedJoinSourceType: "channel", selectedSourceInviteCode: "methodobject", selectedSort: "st" };
   obj[5] = new Set();
   obj[6] = { optionId: 0, afterDate: null, beforeDate: null };
   obj[7] = { optionId: 0, afterDate: null, beforeDate: null };

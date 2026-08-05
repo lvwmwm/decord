@@ -1,9 +1,9 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10482
+// Function ID: 10483
 // Name: _launchFrameOnNative
-// Dependencies: [5, 4301, 10511, 10512, 2]
+// Dependencies: [5, 4271, 10483, 10484, 2]
 
-// Module 10510 (_launchFrameOnNative)
+// Module 10482 (_launchFrameOnNative)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import updateVoiceState from "updateVoiceState";
 import merged from "_launchFrame";
@@ -26,7 +26,7 @@ function _launchFrameOnNative() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _launchFrameOnNative() {
               }
             })();
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp10) {
           c3 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7026
+// Function ID: 7027
 // Name: AppStartInfo
-// Dependencies: [32, 5, 7053, 4143, 2]
+// Dependencies: [32, 5, 7027, 4113, 2]
 
-// Module 7052 (AppStartInfo)
+// Module 7026 (AppStartInfo)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 
@@ -12,7 +12,7 @@ const result = require("enforcing").fileFinishedImporting("modules/tti_analytics
 
 export const AppStartInfo = {
   getAppUIViewed() {
-    const mainActivityCreationTime = importDefault(7053).getMainActivityCreationTime();
+    const mainActivityCreationTime = importDefault(7027).getMainActivityCreationTime();
     let tmp2 = null != mainActivityCreationTime;
     if (tmp2) {
       let flag = table[mainActivityCreationTime];
@@ -34,18 +34,18 @@ export const AppStartInfo = {
         const error = new Error("NativeTTIManager.getAppStartedTimestamp() returned an invalid timestamp. That's unexpected!");
         throw error;
       }
-      const items = [callback(4143).getAppStartType(), , ];
-      const obj12 = callback(4143);
-      items[1] = callback(4143).getLaunchScenario();
-      const obj13 = callback(4143);
-      items[2] = callback(4143).getAppFirstVisibleTimestamp();
+      const items = [callback(4113).getAppStartType(), , ];
+      const obj12 = callback(4113);
+      items[1] = callback(4113).getLaunchScenario();
+      const obj13 = callback(4113);
+      items[2] = callback(4113).getAppFirstVisibleTimestamp();
       const dependencyMap = yield Promise.all(items);
       let closure_4 = 5;
-      let closure_5 = 7053;
+      let closure_5 = 7027;
       obj5 = { app_start_type: null, app_launch_scenario: null };
       obj5[0] = c3;
       obj5[1] = closure_4;
-      const mainActivityCreationTime = callback(7053).getMainActivityCreationTime();
+      const mainActivityCreationTime = callback(7027).getMainActivityCreationTime();
       if (null != mainActivityCreationTime) {
         obj5.android_time_creation_to_create_main_activity = mainActivityCreationTime - callback;
       }

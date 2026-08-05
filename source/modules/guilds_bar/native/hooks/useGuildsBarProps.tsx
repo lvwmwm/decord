@@ -1,11 +1,11 @@
-// Module ID: 15289
-// Function ID: 15290
+// Module ID: 15270
+// Function ID: 15271
 // Name: findGuildSectionIndex
-// Dependencies: [19, 4960, 3914, 5750, 5751, 12913, 4622, 1942, 1862, 12921, 4102, 5122, 15280, 15281, 21, 15290, 15303, 15304, 15307, 15311, 15336, 15339, 15340, 15341, 15343, 15344, 15345, 15347, 15349, 3989, 712, 1581, 14236, 14245, 15351, 589, 13094, 15352, 15353, 1474, 15355, 7818, 2]
+// Dependencies: [19, 4945, 3884, 5735, 5736, 12885, 4592, 1942, 1862, 12893, 4072, 5107, 15261, 15262, 21, 15271, 15284, 15285, 15288, 15292, 15317, 15320, 15321, 15322, 15324, 15325, 15326, 15328, 15330, 3959, 712, 1581, 14210, 14219, 15332, 589, 13066, 15333, 15334, 1474, 15336, 7790, 2]
 // Exports: default
 
-// Module 15289 (findGuildSectionIndex)
-import module_15311 from "module_15311";
+// Module 15270 (findGuildSectionIndex)
+import module_15292 from "module_15292";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import initialize from "initialize";
 import processChannel from "processChannel";
@@ -472,11 +472,11 @@ export default function useGuildsBarProps(arg0) {
         const obj = { children: null };
         obj[0] = items1.map((arg0) => {
           if ("unavailable-guilds" === arg0) {
-            return callback2(callback(15344), {}, arg0);
+            return callback2(callback(15325), {}, arg0);
           } else if ("empty-nux" === arg0) {
-            return callback2(callback(15345), {}, arg0);
+            return callback2(callback(15326), {}, arg0);
           } else if ("create-join-guild" === arg0) {
-            return callback2(callback(15347), {}, arg0);
+            return callback2(callback(15328), {}, arg0);
           }
         });
         return memo1(callback(token[24]), obj);

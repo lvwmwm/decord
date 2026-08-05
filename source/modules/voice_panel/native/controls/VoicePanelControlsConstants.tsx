@@ -1,9 +1,9 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11528
+// Function ID: 11529
 // Name: VoicePanelControlsModes
 // Dependencies: [2]
 
-// Module 11556 (VoicePanelControlsModes)
+// Module 11528 (VoicePanelControlsModes)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsConstants.tsx");
 
 export const VoicePanelControlsModes = { FLOATING_DEFAULT: "floating-default", DRAWER: "drawer", HIDDEN: "hidden", RESET: "reset" };

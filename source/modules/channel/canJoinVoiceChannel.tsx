@@ -1,10 +1,10 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5086
+// Function ID: 5087
 // Name: canJoinVoiceChannel
 // Dependencies: [1376, 676, 2]
 // Exports: default
 
-// Module 5101 (canJoinVoiceChannel)
+// Module 5086 (canJoinVoiceChannel)
 import { isPrivate } from "createChannelRecord";
 import { BasicPermissions } from "ME";
 

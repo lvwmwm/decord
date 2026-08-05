@@ -1,10 +1,10 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15264
+// Function ID: 15265
 // Name: getGuildFolderMenuItems
-// Dependencies: [5, 5122, 676, 8359, 1236, 13214, 1959, 5920, 15284, 2]
+// Dependencies: [5, 5107, 676, 8331, 1236, 13186, 1959, 5905, 15265, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 15283 (getGuildFolderMenuItems)
+// Module 15264 (getGuildFolderMenuItems)
 import markGuildsAsRead from "markGuildsAsRead";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { AnalyticsSections } from "ME";
@@ -14,7 +14,7 @@ let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/Guil
 
 export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFolderMenuItems) {
   const _require = guildFolderMenuItems;
-  let obj = { IconComponent: _require(8359).EnvelopeIcon, label: null, action: null };
+  let obj = { IconComponent: _require(8331).EnvelopeIcon, label: null, action: null };
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.e6RscS);
   obj[2] = function action() {
@@ -30,7 +30,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFol
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFol
     })();
   };
   const items = [obj, ];
-  obj = { IconComponent: _require(5920).SettingsIcon, label: null, action: null };
+  obj = { IconComponent: _require(5905).SettingsIcon, label: null, action: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.Dx7im5);
   obj[2] = function action() {
@@ -93,7 +93,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFol
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ export const getGuildFolderMenuItems = function getGuildFolderMenuItems(guildFol
           } else {
             const result = arg1.showGuildsBarFolderModal(closure_0);
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp10) {
           c2 = tmp;

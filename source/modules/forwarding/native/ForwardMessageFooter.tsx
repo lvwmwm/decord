@@ -1,10 +1,10 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10140
+// Function ID: 10141
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 4621, 21, 10151, 7225, 589, 7156, 10170, 1236, 10171, 10172, 4695, 10179, 2]
+// Dependencies: [32, 19, 4591, 21, 10122, 7199, 589, 7130, 10141, 1236, 10142, 10143, 4665, 10150, 2]
 // Exports: ForwardMessageFooter
 
-// Module 10169 (ForwardMessageFooter)
+// Module 10140 (ForwardMessageFooter)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleChanged from "handleChanged";

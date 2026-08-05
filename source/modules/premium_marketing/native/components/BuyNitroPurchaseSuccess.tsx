@@ -1,10 +1,10 @@
-// Module ID: 7662
-// Function ID: 7663
+// Module ID: 7634
+// Function ID: 7635
 // Name: presentBuyNitroPurchaseSuccess
-// Dependencies: [19, 6794, 1876, 21, 1236, 4625, 4628, 2]
+// Dependencies: [19, 6779, 1876, 21, 1236, 4595, 4598, 2]
 // Exports: presentBuyNitroPurchaseSuccess
 
-// Module 7662 (presentBuyNitroPurchaseSuccess)
+// Module 7634 (presentBuyNitroPurchaseSuccess)
 import "noop";
 import { reset } from "usePremiumPlanPurchasedStore";
 import { PremiumTypes } from "GuildFeatures";
@@ -14,7 +14,7 @@ const require = arg1;
 const result = require("GuildFeatures").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroPurchaseSuccess.tsx");
 
 export const presentBuyNitroPurchaseSuccess = function presentBuyNitroPurchaseSuccess(premiumTier) {
-  let obj = require(4625) /* useAlertStore */;
+  let obj = require(4595) /* useAlertStore */;
   obj = { title: null, content: null, actions: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["Q+BB2w"]);
@@ -32,6 +32,6 @@ export const presentBuyNitroPurchaseSuccess = function presentBuyNitroPurchaseSu
   obj = { variant: "primary", text: null };
   const intl5 = tmp(1236).intl;
   obj[1] = intl5.string(require(1236) /* getSystemLocale */.t.TkTvBz);
-  obj[2] = jsx(require(4628) /* getAlertModalItemKey */.AlertActionButton, { variant: "primary", text: null });
-  obj.openAlert("BuyNitroPurchaseSuccess", jsx(require(4628) /* getAlertModalItemKey */.AlertModal, { variant: "primary", text: null }), reset);
+  obj[2] = jsx(require(4598) /* getAlertModalItemKey */.AlertActionButton, { variant: "primary", text: null });
+  obj.openAlert("BuyNitroPurchaseSuccess", jsx(require(4598) /* getAlertModalItemKey */.AlertModal, { variant: "primary", text: null }), reset);
 };

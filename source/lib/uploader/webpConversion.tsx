@@ -1,10 +1,10 @@
-// Module ID: 4865
-// Function ID: 4866
+// Module ID: 4850
+// Function ID: 4851
 // Name: _shouldConvertToWebP
-// Dependencies: [5, 3, 4866, 1217, 2]
+// Dependencies: [5, 3, 4851, 1217, 2]
 // Exports: maybeConvertToWebP
 
-// Module 4865 (_shouldConvertToWebP)
+// Module 4850 (_shouldConvertToWebP)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -37,7 +37,7 @@ function _shouldConvertToWebP2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ function _performWebPConversion() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -522,7 +522,7 @@ function _maybeConvertToWebP() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

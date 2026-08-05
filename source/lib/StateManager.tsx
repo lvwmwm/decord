@@ -1,9 +1,9 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 12819
+// Function ID: 12820
 // Name: shouldCommit
 // Dependencies: [659, 2]
 
-// Module 12847 (shouldCommit)
+// Module 12819 (shouldCommit)
 const result = require("set").fileFinishedImporting("lib/StateManager.tsx");
 class StateManager {
   constructor() {

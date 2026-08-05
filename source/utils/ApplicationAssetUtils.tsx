@@ -1,10 +1,10 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8023
+// Function ID: 8024
 // Name: updateAssets
-// Dependencies: [32, 5, 8052, 676, 38, 3, 530, 709, 1450, 2]
+// Dependencies: [32, 5, 8024, 676, 38, 3, 530, 709, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8051 (updateAssets)
+// Module 8023 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -119,7 +119,7 @@ function _resolveExternalAssets() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         while (true) {
@@ -219,7 +219,7 @@ function _resolveExternalAssets() {
           }
           let num4 = 3;
           c9 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       }
     })();
@@ -348,7 +348,7 @@ function _fetchAssetIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ function _fetchAssetIds() {
               c5 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else {
             if (1 === tmp5) {

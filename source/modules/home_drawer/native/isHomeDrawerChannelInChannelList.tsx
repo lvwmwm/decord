@@ -1,10 +1,10 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15295
+// Function ID: 15296
 // Name: useIsHomeDrawerChannelInChannelList
-// Dependencies: [4480, 589, 6903, 2]
+// Dependencies: [4450, 589, 6888, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 15314 (useIsHomeDrawerChannelInChannelList)
+// Module 15295 (useIsHomeDrawerChannelInChannelList)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 16678
-// Function ID: 16679
+// Module ID: 16659
+// Function ID: 16660
 // Name: GuildSubscriptionEnableMonetization
-// Dependencies: [19, 1862, 21, 589, 16640, 15523, 1236, 2]
+// Dependencies: [19, 1862, 21, 589, 16621, 15504, 1236, 2]
 // Exports: default
 
-// Module 16678 (GuildSubscriptionEnableMonetization)
+// Module 16659 (GuildSubscriptionEnableMonetization)
 import "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { jsx } from "jsxProd";
@@ -17,15 +17,15 @@ export default function GuildSubscriptionEnableMonetization(guildId) {
   let obj = guildId(589);
   const items = [createGuildRecordFromRust];
   if (null == obj.useStateFromStores(items, () => outer1_3.getGuild(guildId))) {
-    let tmp5 = jsx(importDefault(16640), {});
+    let tmp5 = jsx(importDefault(16621), {});
   } else {
     obj = { brightTitle: true, title: null, description: null };
     const intl = tmp(1236).intl;
     obj[1] = intl.string(tmp(1236).t.KeeWp0);
     const intl2 = tmp(1236).intl;
     obj[2] = intl2.string(tmp(1236).t["tJLG+L"]);
-    tmp5 = jsx(importDefault(15523), { brightTitle: true, title: null, description: null });
-    const tmp8 = importDefault(15523);
+    tmp5 = jsx(importDefault(15504), { brightTitle: true, title: null, description: null });
+    const tmp8 = importDefault(15504);
   }
   return tmp5;
 };

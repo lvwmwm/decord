@@ -1,10 +1,10 @@
-// Module ID: 7663
-// Function ID: 7664
+// Module ID: 7635
+// Function ID: 7636
 // Name: BuyNitroSectionHeader
-// Dependencies: [21, 4281, 2]
+// Dependencies: [21, 4251, 2]
 // Exports: default
 
-// Module 7663 (BuyNitroSectionHeader)
+// Module 7635 (BuyNitroSectionHeader)
 import jsxProd from "jsxProd";
 
 let c3;
@@ -35,7 +35,7 @@ export default function BuyNitroSectionHeader(arg0) {
       obj = { variant: "text-sm/semibold", color: "text-link", accessibilityRole: "link", onPress: null, children: null };
       obj[3] = onPress;
       obj[4] = tmp5;
-      items[1] = tmp(require(4281) /* Text */.Text, obj);
+      items[1] = tmp(require(4251) /* Text */.Text, obj);
       items[2] = title.slice(index + 5);
       obj[0] = items;
       tmp7 = callback(closure_3, obj);
@@ -44,5 +44,5 @@ export default function BuyNitroSectionHeader(arg0) {
     tmp5 = Nitro;
   }
   obj[4] = tmp4;
-  return closure_2(require(4281) /* Text */.Text, obj);
+  return closure_2(require(4251) /* Text */.Text, obj);
 };

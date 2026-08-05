@@ -1,9 +1,9 @@
-// Module ID: 8833
-// Function ID: 8834
+// Module ID: 8805
+// Function ID: 8806
 // Name: initialize
-// Dependencies: [687, 7224, 8834, 589, 709, 2]
+// Dependencies: [687, 7198, 8806, 589, 709, 2]
 
-// Module 8833 (initialize)
+// Module 8805 (initialize)
 import { DeviceSettingsStore } from "initialize";
 
 const require = arg1;
@@ -60,7 +60,7 @@ const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
       let tmp2 = nextResult;
       let tmp3 = require;
       let tmp4 = dependencyMap;
-      if (nextResult.type === require(7224) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
+      if (nextResult.type === require(7198) /* MessageEmbedTypes */.ICYMIItemTypes.MESSAGE) {
         let tmp11 = closure_3;
         let tmp12 = nextResult;
         let result = null != closure_3.readIdToTimestampMap[tmp2.id];
@@ -74,7 +74,7 @@ const iCYMIUnreadStateStore = new ICYMIUnreadStateStore(require("dispatcher"), {
           result = null != prop;
         }
         if (!result) {
-          let tmp3Result = tmp3(8834);
+          let tmp3Result = tmp3(8806);
           let tmp8 = nextResult;
           result = tmp3Result.isItemUnreadInChannel(tmp2.data.channel_id, tmp2.data.message_id);
         }

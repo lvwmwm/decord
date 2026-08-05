@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "flex", right: "y", bottom: "HermesInternal" };
+let closure_0 = { top: "PX_8", left: "accessible", right: "Boolean", bottom: "Symbol" };
 arg5.default = function insetsDiffer(arg0, arg1) {
   let rect = arg0;
   if (!arg0) {

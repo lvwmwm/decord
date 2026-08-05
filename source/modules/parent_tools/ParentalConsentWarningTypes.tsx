@@ -1,9 +1,9 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 13992
+// Function ID: 13993
 // Name: frozen
 // Dependencies: [2]
 
-// Module 14018 (frozen)
+// Module 13992 (frozen)
 const frozen = Object.freeze({ BANNER: "banner", MODAL: "modal" });
 const result = require("set").fileFinishedImporting("modules/parent_tools/ParentalConsentWarningTypes.tsx");
 

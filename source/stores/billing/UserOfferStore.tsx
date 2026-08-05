@@ -1,9 +1,9 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6808
+// Function ID: 6809
 // Name: emitChanges
-// Dependencies: [6824, 7248, 1874, 6770, 3937, 1876, 589, 7249, 3931, 709, 2]
+// Dependencies: [6809, 7220, 1874, 6755, 3907, 1876, 589, 7221, 3901, 709, 2]
 
-// Module 6823 (emitChanges)
+// Module 6808 (emitChanges)
 import emitChanges from "emitChanges";
 import createFromServer from "createFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -48,7 +48,7 @@ function handleReferralTrialStoreUpdate() {
   return false;
 }
 ({ ANNUAL_DISCOUNT_IDS: error, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: metroImportAll, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c9, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: c10, SubscriptionPlanInfo: unpackModuleId, SubscriptionTrials: closure_12, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: map1 } = GuildFeatures);
-let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "PX_16", userDiscountOffers: "TRANSPARENT", userDiscounts: 0, isFetching: "19.2.3", lastFetchSuccessful: "react-native-renderer" };
+let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "Path", userDiscountOffers: "TRANSPARENT", userDiscounts: 0, isFetching: "19.2.3", lastFetchSuccessful: "react-native-renderer" };
 obj[1] = {};
 obj[2] = {};
 class UserOfferStore extends PersistedStore {
@@ -174,8 +174,8 @@ prototype["shouldShowTrialOfferReminder"] = function shouldShowTrialOfferReminde
   const hasItem = closure_13.includes(trial_id.trial_id);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7249) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7249) /* apexExperiment */;
+    result = require(7221) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(7221) /* apexExperiment */;
   }
   return result;
 };
@@ -186,7 +186,7 @@ prototype["getAlmostExpiringTrialOffersForReminder"] = function getAlmostExpirin
   let values = Object.values(closure_12);
   const _require = values.map((id) => id.id);
   const currentUser = authStore.getCurrentUser();
-  let obj = _require(3931);
+  let obj = _require(3901);
   if (obj.isPremium(currentUser)) {
     if (!self.canFractionalPremiumUserUseOffer()) {
       items = [];
@@ -223,8 +223,8 @@ prototype["shouldShowDiscountOfferReminder"] = function shouldShowDiscountOfferR
   const hasItem = closure_8.includes(discountId.discountId);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7249) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7249) /* apexExperiment */;
+    result = require(7221) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(7221) /* apexExperiment */;
   }
   return result;
 };
@@ -264,7 +264,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
 prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  const obj = _require(3931);
+  const obj = _require(3901);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -283,7 +283,7 @@ prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
 };
 prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscountOffers() {
   const currentUser = authStore.getCurrentUser();
-  const obj = require(3931) /* getPremiumPlanItem */;
+  const obj = require(3901) /* getPremiumPlanItem */;
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -308,7 +308,7 @@ prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscoun
 prototype["getUnacknowledgedOffers"] = function getUnacknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  const obj = _require(3931);
+  const obj = _require(3901);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {

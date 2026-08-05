@@ -1,86 +1,15 @@
 // Module ID: 13476
 // Function ID: 13477
-// Dependencies: [13477, 13478, 13479, 13516, 13517, 13533, 13534]
+// Dependencies: [13467, 13477, 13475, 13478]
 
 // Module 13476
 
-export default (dontCallGetSet, obj) => {
-  let _global;
-  let stat;
-  let target;
-  ({ target, global: _global, stat } = dontCallGetSet);
-  const tmp3 = require(13477);
-  if (_global) {
-    let prototype = tmp3;
-  } else {
-    let tmp4 = tmp3[target];
-    if (stat) {
-      if (!tmp4) {
-        tmp4 = tmp(13478)(target, {});
-      }
-      prototype = tmp4;
-    } else {
-      prototype = tmp4;
-      if (tmp4) {
-        prototype = tmp(13477)[target].prototype;
-      }
-    }
+export default require("prop") ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
+  const tmp3 = require(13477) /* all */("Symbol");
+  let tmpResultResult = require(13475) /* all */(tmp3);
+  if (tmpResultResult) {
+    tmpResultResult = require(13478) /* call */(tmp3.prototype, Object(arg0));
+    const tmpResult = require(13478) /* call */;
   }
-  if (prototype) {
-    for (const key10024 in arg1) {
-      let tmp21 = arg1[key10024];
-      let tmp20 = key10024;
-      if (arg0.dontCallGetSet) {
-        let tmp8 = require;
-        let tmp9 = dependencyMap;
-        obj = require(13479) /* getOwnPropertyDescriptor */;
-        let iter = obj.f(prototype, key10024);
-        let value = iter;
-        if (iter) {
-          value = iter.value;
-        }
-        let tmp7 = value;
-      } else {
-        tmp7 = prototype[key10024];
-      }
-      let tmp10 = require;
-      let tmp11 = dependencyMap;
-      let sum = key10024;
-      let tmp12 = require(13516) /* isForced */;
-      if (!_global) {
-        let str4 = "#";
-        if (stat) {
-          str4 = ".";
-        }
-        sum = target + str4 + key10024;
-      }
-      if (!tmp12(sum, arg0.forced)) {
-        if (undefined !== tmp7) {
-          if (typeof tmp21 === typeof tmp7) {
-            continue;
-          } else {
-            let tmp22 = tmp10(13517)(tmp21, tmp7);
-          }
-        }
-        continue;
-      }
-      let sham = arg0.sham;
-      if (!sham) {
-        let sham2 = tmp7;
-        if (tmp7) {
-          sham2 = tmp7.sham;
-        }
-        sham = sham2;
-      }
-      if (sham) {
-        let tmp14 = tmp10(13533)(tmp21, "sham", true);
-      }
-      let tmp15 = prototype;
-      let tmp16 = key10024;
-      let tmp17 = tmp21;
-      let tmp18 = arg0;
-      let tmp19 = tmp10(13534)(prototype, tmp20, tmp21, arg0);
-      continue;
-    }
-  }
-};
+  return tmpResultResult;
+});

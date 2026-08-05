@@ -1,10 +1,10 @@
-// Module ID: 10960
-// Function ID: 10961
+// Module ID: 10932
+// Function ID: 10933
 // Name: _putRoleConnectionsConfigurations
-// Dependencies: [5, 676, 530, 709, 5300, 2]
+// Dependencies: [5, 676, 530, 709, 5285, 2]
 // Exports: fetchRoleConnectionsConfiguration, fetchUserApplicationRoleConnections, putRoleConnectionsConfigurations
 
-// Module 10960 (_putRoleConnectionsConfigurations)
+// Module 10932 (_putRoleConnectionsConfigurations)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -29,7 +29,7 @@ function _putRoleConnectionsConfigurations() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ function _putRoleConnectionsConfigurations() {
             obj7[2] = closure_2;
             obj2.dispatch(obj7);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp28) {
           c6 = tmp;

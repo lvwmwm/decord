@@ -1,10 +1,10 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6845
+// Function ID: 6846
 // Name: timeRequire
 // Dependencies: [10, 2]
 // Exports: default
 
-// Module 6860 (timeRequire)
+// Module 6845 (timeRequire)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/timeRequire.native.tsx");
 
 export default function timeRequire(arg0, arg1) {

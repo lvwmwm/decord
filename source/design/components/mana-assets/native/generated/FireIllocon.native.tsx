@@ -1,10 +1,10 @@
-// Module ID: 6187
-// Function ID: 6188
+// Module ID: 6172
+// Function ID: 6173
 // Name: FireIllocon
-// Dependencies: [21, 5236, 6188, 2]
+// Dependencies: [21, 5221, 6173, 2]
 // Exports: FireIllocon
 
-// Module 6187 (FireIllocon)
+// Module 6172 (FireIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FireIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const FireIllocon = function FireIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6188);
+  obj[0] = importDefault(6173);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { uri: null });
+  return jsx(importDefault(5221), { uri: null });
 };

@@ -1,8 +1,8 @@
-// Module ID: 15452
-// Function ID: 15453
-// Dependencies: [5, 676, 8834, 530, 709, 3986, 1236, 2]
+// Module ID: 15433
+// Function ID: 15434
+// Dependencies: [5, 676, 8806, 530, 709, 3956, 1236, 2]
 
-// Module 15452
+// Module 15433
 import dispatcher from "dispatcher";
 import { Endpoints } from "ME";
 
@@ -27,7 +27,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

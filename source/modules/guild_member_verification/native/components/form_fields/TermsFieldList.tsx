@@ -1,10 +1,10 @@
-// Module ID: 5275
-// Function ID: 5276
+// Module ID: 5260
+// Function ID: 5261
 // Name: TermsFieldListItem
-// Dependencies: [19, 17, 21, 4285, 712, 4281, 4275, 1236, 5276, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4251, 4245, 1236, 5261, 2]
 // Exports: default
 
-// Module 5275 (TermsFieldListItem)
+// Module 5260 (TermsFieldListItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,10 +23,10 @@ function TermsFieldListItem(arg0) {
   let obj = { style: tmp.termsRow, children: null };
   obj = { style: tmp.termsRowNumber, variant: "text-sm/medium", color: "text-muted", children: null };
   obj[3] = "" + rowNumber + ".";
-  const items = [callback(require(4281) /* Text */.Text, obj), ];
+  const items = [callback(require(4251) /* Text */.Text, obj), ];
   obj = { style: tmp.termsRowContent, variant: "text-md/medium", children: null };
-  obj[2] = importDefault(4275).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId });
-  items[1] = callback(require(4281) /* Text */.Text, obj);
+  obj[2] = importDefault(4245).parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId });
+  items[1] = callback(require(4251) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -56,7 +56,7 @@ export default function TermsFieldList(rules) {
   const intl = rules(1236).intl;
   obj[4] = intl.string(rules(1236).t.prJqwT);
   let items = [
-    callback(rules(4281).Text, obj),
+    callback(rules(4251).Text, obj),
     rules.map((rule) => {
       const items = [_undefined.termsContainer, , ];
       let firstItem = null;

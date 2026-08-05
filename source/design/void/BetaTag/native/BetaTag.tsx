@@ -1,10 +1,10 @@
-// Module ID: 12479
-// Function ID: 12480
+// Module ID: 12451
+// Function ID: 12452
 // Name: BetaTag
-// Dependencies: [19, 17, 6805, 21, 4285, 712, 4706, 691, 4281, 1236, 2]
+// Dependencies: [19, 17, 6790, 21, 4255, 712, 4676, 691, 4251, 1236, 2]
 // Exports: default
 
-// Module 12479 (BetaTag)
+// Module 12451 (BetaTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
@@ -52,9 +52,9 @@ export default function BetaTag(gradient) {
     obj[2] = items1;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.oW0eUd);
-    obj[4] = tmp3(require(4281) /* Text */.Text, obj);
-    let tmp3Result = tmp3(importDefault(4706), obj);
-    const tmp10 = importDefault(4706);
+    obj[4] = tmp3(require(4251) /* Text */.Text, obj);
+    let tmp3Result = tmp3(importDefault(4676), obj);
+    const tmp10 = importDefault(4676);
   } else {
     obj = { style: null, children: null };
     const items2 = [tmp2.container, style];
@@ -65,7 +65,7 @@ export default function BetaTag(gradient) {
     obj1[2] = items3;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj1[3] = intl.string(require(1236) /* getSystemLocale */.t.oW0eUd);
-    obj[1] = tmp3(require(4281) /* Text */.Text, obj1);
+    obj[1] = tmp3(require(4251) /* Text */.Text, obj1);
     tmp3Result = tmp3(View, obj);
   }
   return tmp3Result;

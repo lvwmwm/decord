@@ -1,10 +1,10 @@
-// Module ID: 7255
-// Function ID: 7256
+// Module ID: 7227
+// Function ID: 7228
 // Name: validatePurchase
-// Dependencies: [109, 5, 19, 7256, 1218, 3937, 5767, 676, 505, 530, 7257, 4184, 7258, 1236, 3953, 4623, 5770, 589, 6820, 7262, 7265, 7295, 7296, 7298, 5765, 3946, 7299, 698, 2]
+// Dependencies: [109, 5, 19, 7228, 1218, 3907, 5752, 676, 505, 530, 7229, 4154, 7230, 1236, 3923, 4593, 5755, 589, 6805, 7234, 7237, 7267, 7268, 7270, 5750, 3916, 7271, 698, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 7255 (validatePurchase)
+// Module 7227 (validatePurchase)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import reset from "reset";
 import set from "set";
@@ -53,7 +53,7 @@ function _validatePurchase() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ function _validatePurchase() {
               ({ productId: c0, premiumSubscription: c1, offerId: c2, currency: c3, price: c4, isGift: c5 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -116,7 +116,7 @@ function _validatePurchase() {
           } else if (2 === tmp8) {
             c4 = 0;
             c6 = c3;
-            const tmp18 = new lib(7257)(c6);
+            const tmp18 = new lib(7229)(c6);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -130,7 +130,7 @@ function _validatePurchase() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp25) {
           c3 = tmp25;
@@ -216,7 +216,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -273,7 +273,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
                 let c21;
                 c6 = 1;
                 c7 = 1;
-                return { value: "ct", done: "Array" };
+                return { value: "PX_8", done: "Array" };
               }
             } else {
               if (1 === tmp10) {
@@ -636,7 +636,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
                 return obj;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (throwTypeErrorResult) {
             c4 = throwTypeErrorResult;

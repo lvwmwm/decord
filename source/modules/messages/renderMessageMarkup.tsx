@@ -1,10 +1,10 @@
-// Module ID: 8011
-// Function ID: 8012
+// Module ID: 7983
+// Function ID: 7984
 // Name: getInitialParserState
-// Dependencies: [8012, 4275, 2]
+// Dependencies: [7984, 4245, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 8011 (getInitialParserState)
+// Module 7983 (getInitialParserState)
 function getInitialParserState(channelId) {
   const renderOptions = channelId.renderOptions;
   const obj = { channelId: channelId.channelId, messageId: channelId.messageId, authorId: channelId.authorId, allowLinks: Boolean(renderOptions.allowLinks), allowDevLinks: Boolean(renderOptions.allowDevLinks), allowGameMentions: Boolean(renderOptions.allowGameMentions), allowTimeMentionInput: Boolean(renderOptions.allowTimeMentionInput), formatInline: Boolean(renderOptions.formatInline), noStyleAndInteraction: Boolean(renderOptions.noStyleAndInteraction), allowHeading: Boolean(renderOptions.allowHeading), allowList: Boolean(renderOptions.allowList), previewLinkTarget: Boolean(renderOptions.previewLinkTarget), disableAnimatedEmoji: Boolean(renderOptions.disableAnimatedEmoji), allowEmojiLinks: false, disableAutoBlockNewlines: true, mentionChannels: [], mentionGames: null, soundboardSounds: null, muted: false, unknownUserMentionPlaceholder: true, viewingChannelId: null, forceWhite: null, textColor: null, disablePressableChannelMention: null };
@@ -91,7 +91,7 @@ export default function renderMessageMarkup(arg0) {
   if (arg1 === undefined) {
     obj = {};
   }
-  const tmp2 = importDefault(4275);
+  const tmp2 = importDefault(4245);
   return render(obj.formatInline ? tmp2.parseInlineReply : tmp2.parse, arg0, obj);
 };
 export const getInitialParserStateFromMessage = function getInitialParserStateFromMessage(message, closure_7) {
@@ -139,7 +139,7 @@ export const renderMessageMarkupToAST = function renderMessageMarkupToAST(messag
   if (result === undefined) {
     obj = {};
   }
-  const tmp2 = importDefault(4275);
+  const tmp2 = importDefault(4245);
   obj = {};
   const merged = Object.assign(obj);
   obj.toAST = true;
@@ -182,7 +182,7 @@ export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(ar
   obj[6] = [];
   obj[12] = arg1;
   obj[14] = arg2;
-  return importDefault(4275).parseAutoModerationSystemMessage(arg0, true, obj, (arg0) => {
+  return importDefault(4245).parseAutoModerationSystemMessage(arg0, true, obj, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
       const items = [arg0];
@@ -197,7 +197,7 @@ export const renderAutomodMessageMarkupToAST = function renderAutomodMessageMark
   obj[6] = [];
   obj[12] = arg1;
   obj[14] = arg2;
-  return importDefault(4275).parseAutoModerationSystemMessageToAST(arg0, true, obj, (arg0) => {
+  return importDefault(4245).parseAutoModerationSystemMessageToAST(arg0, true, obj, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
       const items = [arg0];

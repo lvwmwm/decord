@@ -1,10 +1,10 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8619
+// Function ID: 8620
 // Name: useEmojiPickerViewableItemsChanged
-// Dependencies: [19, 1874, 589, 3931, 12, 2]
+// Dependencies: [19, 1874, 589, 3901, 12, 2]
 // Exports: default
 
-// Module 8647 (useEmojiPickerViewableItemsChanged)
+// Module 8619 (useEmojiPickerViewableItemsChanged)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

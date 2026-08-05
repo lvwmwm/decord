@@ -1,9 +1,9 @@
-// Module ID: 16433
-// Function ID: 16434
+// Module ID: 16414
+// Function ID: 16415
 // Name: scheduleNextNotification
-// Dependencies: [10188, 8186, 709, 687, 5229, 2]
+// Dependencies: [10159, 8158, 709, 687, 5214, 2]
 
-// Module 16433 (scheduleNextNotification)
+// Module 16414 (scheduleNextNotification)
 import getTimeSafe from "getTimeSafe";
 import "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14731
+// Function ID: 14732
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1874, 678, 676, 5128, 8707, 21, 4285, 712, 11438, 4281, 1236, 589, 9341, 6909, 5630, 5304, 4253, 10066, 1959, 698, 11080, 5131, 4490, 8705, 10054, 7672, 8689, 8408, 14752, 1480, 2]
+// Dependencies: [19, 17, 1874, 678, 676, 5113, 8679, 21, 4255, 712, 11410, 4251, 1236, 589, 9312, 6894, 5615, 5289, 4223, 10037, 1959, 698, 11052, 5116, 4460, 8677, 10025, 7644, 8661, 8380, 14732, 1480, 2]
 // Exports: default
 
-// Module 14751 (CollectiblesShopHeaderTitle)
+// Module 14731 (CollectiblesShopHeaderTitle)
 import ref from "ref";
 import { View } from "CheckmarkSmallIcon";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,7 +21,7 @@ const require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(11438) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(11410) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = tmp5(1236).intl;
@@ -31,7 +31,7 @@ function CollectiblesShopHeaderTitle(currentScreen) {
     stringResult = intl.string(tmp5(1236).t.pWG4ze);
   }
   obj[5] = stringResult;
-  items[1] = callback(require(4281) /* Text */.Heading, obj);
+  items[1] = callback(require(4251) /* Text */.Heading, obj);
   obj[1] = items;
   return closure_11(View, obj);
 }
@@ -51,11 +51,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t["xNiB/O"]);
     obj[1] = function action() {
-      let obj = callback(6909);
+      let obj = callback(6894);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5630).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
+      const items = [callback2(5615).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5630).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
+      obj[1] = callback2(5615).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
       obj[2] = constants.FEATURED_PAGE;
       const result = obj.openCollectiblesShopMobile(obj);
     };
@@ -69,11 +69,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl2 = tmp(tmp2[12]).intl;
     obj[0] = intl2.string(currentScreen(balance[12]).t.RSyoZu);
     obj[1] = function action() {
-      let obj = callback(6909);
+      let obj = callback(6894);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5630).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
+      const items = [callback2(5615).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5630).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
+      obj[1] = callback2(5615).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
       obj[2] = constants.SHOP_ALL;
       const result = obj.openCollectiblesShopMobile(obj);
     };
@@ -87,11 +87,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl3 = tmp(tmp2[12]).intl;
     obj[0] = intl3.string(currentScreen(balance[12]).t.EBYkzk);
     obj[1] = function action() {
-      let obj = callback(6909);
+      let obj = callback(6894);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5630).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
+      const items = [callback2(5615).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5630).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
+      obj[1] = callback2(5615).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
       obj[2] = constants.ORBS;
       const result = obj.openCollectiblesShopMobile(obj);
     };

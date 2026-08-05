@@ -1,10 +1,10 @@
-// Module ID: 7790
-// Function ID: 7791
+// Module ID: 7762
+// Function ID: 7763
 // Name: FormSwitch
-// Dependencies: [19, 17, 21, 4285, 712, 4221, 4131, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 4191, 4101, 2]
 // Exports: default
 
-// Module 7790 (FormSwitch)
+// Module 7762 (FormSwitch)
 import "noop";
 import { Switch } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -39,7 +39,7 @@ export default function FormSwitch(value) {
     color = tmp4.track.color;
   }
   if (null == borderColor) {
-    let obj = require(4131) /* AccessibilityAnnouncer */;
+    let obj = require(4101) /* AccessibilityAnnouncer */;
     if (obj.isThemeDark(tmp7)) {
       borderColor = importDefault(712).unsafe_rawColors.PRIMARY_400;
     }

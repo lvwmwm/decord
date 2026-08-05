@@ -1,8 +1,8 @@
-// Module ID: 15731
-// Function ID: 15732
-// Dependencies: [19, 17, 9492, 21, 4285, 712, 1581, 15045, 1474, 4139, 15732, 501, 2]
+// Module ID: 15712
+// Function ID: 15713
+// Dependencies: [19, 17, 9463, 21, 4255, 712, 1581, 15025, 1474, 4109, 15713, 501, 2]
 
-// Module 15731
+// Module 15712
 import { View } from "get ActivityIndicator";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
   let items1 = callback();
   let tmp = importDefault;
   let tmp5Result = dependencyMap;
-  let obj = require(15045) /* trackTabPressed */;
+  let obj = require(15025) /* trackTabPressed */;
   const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
   if (route != null) {
     const params = route.params;
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
       const initialTab = params.initialTab;
     }
   }
-  if (tmp(4139)().isChatBesideChannelList) {
+  if (tmp(4109)().isChatBesideChannelList) {
     const items = [items1.container, ];
     let tmp3Result = tmp3(501);
     let tmp7;
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
       obj2[0] = 0.6 * tmp(1474)().width;
       items1[1] = obj2;
       obj1[0] = items1;
-      tmp = tmp(15732);
+      tmp = tmp(15713);
       const obj3 = { initialTab: null };
       obj3[0] = initialTab;
       tmp5Result = tmp5(tmp, obj3);
@@ -62,14 +62,14 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
     } else {
       const obj4 = { initialTab: null };
       obj4[0] = initialTab;
-      tmp5Result = tmp5(tmp(15732), obj4);
+      tmp5Result = tmp5(tmp(15713), obj4);
     }
     obj[1] = tmp5Result;
     tmp5(View, obj);
   } else {
     const obj5 = { initialTab: null };
     obj5[0] = initialTab;
-    return tmp5(tmp(15732), obj5);
+    return tmp5(tmp(15713), obj5);
   }
 });
 const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");

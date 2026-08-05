@@ -1,10 +1,10 @@
-// Module ID: 9892
-// Function ID: 9893
+// Module ID: 9863
+// Function ID: 9864
 // Name: _openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 676, 21, 698, 5786, 4604, 4624, 9893, 1959, 2]
+// Dependencies: [5, 19, 676, 21, 698, 5771, 4574, 4594, 9864, 1959, 2]
 // Exports: default
 
-// Module 9892 (_openStickersPremiumUpsellAlert)
+// Module 9863 (_openStickersPremiumUpsellAlert)
 import fetchSubscriptionPlansForSKU from "fetchSubscriptionPlansForSKU";
 import "noop";
 import ME from "ME";
@@ -31,7 +31,7 @@ function _openStickersPremiumUpsellAlert() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ function _openStickersPremiumUpsellAlert() {
             };
             obj.openLazy(obj4);
             constants = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp11) {
           constants = tmp;

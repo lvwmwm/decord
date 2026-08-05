@@ -1,10 +1,10 @@
-// Module ID: 15106
-// Function ID: 15107
+// Module ID: 15086
+// Function ID: 15087
 // Name: _getEmojiCacheKey
 // Dependencies: [5, 17, 1386, 2]
 // Exports: getEmojiDominantColors
 
-// Module 15106 (_getEmojiCacheKey)
+// Module 15086 (_getEmojiCacheKey)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -34,7 +34,7 @@ function _getFromCacheOrFallback2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ function _getFromCacheOrFallback2() {
               let closure_5;
               c2 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -143,7 +143,7 @@ function _getEmojiDominantColors() {
       let closure_1;
       let closure_2 = tmp2;
       ({ emoji: c0, emojiSource: closure_1 } = c0);
-      yield "ct";
+      yield "PX_8";
       const obj2 = { cache: null, cacheKey: null, fallbackParam: null, fallbackFunc: null };
       obj2[0] = closure_2;
       obj2[1] = callback(c0);

@@ -1,10 +1,10 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10375
+// Function ID: 10376
 // Name: useAdContentImpressionTrackerProps
-// Dependencies: [19, 7080, 7108, 589, 7107, 8775, 10404, 2]
+// Dependencies: [19, 7054, 7082, 589, 7081, 8747, 10376, 2]
 // Exports: useAdContentImpressionTrackerProps, useGetQuestImpressionId, useQuestImpression, useQuestImpressionId, useQuestImpressionRef, useQuestStatusChanged
 
-// Module 10403 (useAdContentImpressionTrackerProps)
+// Module 10375 (useAdContentImpressionTrackerProps)
 import noop from "noop";
 import initializeState from "initializeState";
 
@@ -79,10 +79,10 @@ export const useQuestStatusChanged = function useQuestStatusChanged(adContentIds
   return memo !== adCreativeType(stateFromStores[5])(memo);
 };
 export const useQuestImpressionRef = function useQuestImpressionRef() {
-  return React.useContext(require(10404) /* set */.QuestImpressionContext);
+  return React.useContext(require(10376) /* set */.QuestImpressionContext);
 };
 export const useQuestImpression = function useQuestImpression() {
-  const context = React.useContext(require(10404) /* set */.QuestImpressionContext);
+  const context = React.useContext(require(10376) /* set */.QuestImpressionContext);
   let current;
   if (context != null) {
     current = context.current;
@@ -90,7 +90,7 @@ export const useQuestImpression = function useQuestImpression() {
   return current;
 };
 export const useQuestImpressionId = function useQuestImpressionId() {
-  const context = React.useContext(require(10404) /* set */.QuestImpressionContext);
+  const context = React.useContext(require(10376) /* set */.QuestImpressionContext);
   let current;
   if (context != null) {
     current = context.current;
@@ -102,7 +102,7 @@ export const useQuestImpressionId = function useQuestImpressionId() {
   return id;
 };
 export const useGetQuestImpressionId = function useGetQuestImpressionId() {
-  context = React.useContext(context(10404).QuestImpressionContext);
+  context = React.useContext(context(10376).QuestImpressionContext);
   const items = [context];
   return React.useCallback(() => {
     let id;

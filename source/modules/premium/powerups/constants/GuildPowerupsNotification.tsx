@@ -1,9 +1,9 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11740
+// Function ID: 11741
 // Name: GUILD_POWERUP_NOTIFICATION_COOLDOWN
 // Dependencies: [2]
 
-// Module 11768 (GUILD_POWERUP_NOTIFICATION_COOLDOWN)
+// Module 11740 (GUILD_POWERUP_NOTIFICATION_COOLDOWN)
 const result = require("set").fileFinishedImporting("modules/premium/powerups/constants/GuildPowerupsNotification.tsx");
 
 export const GUILD_POWERUP_NOTIFICATION_COOLDOWN = 21600000;

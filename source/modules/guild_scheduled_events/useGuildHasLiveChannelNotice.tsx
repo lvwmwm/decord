@@ -1,10 +1,10 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15168
+// Function ID: 15169
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 5103, 1377, 4304, 1372, 3913, 4357, 15189, 1378, 505, 15190, 589, 8960, 15191, 5115, 5109, 2]
+// Dependencies: [19, 5088, 1377, 4274, 1372, 3883, 4327, 15169, 1378, 505, 15170, 589, 8932, 15171, 5100, 5094, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 15188 (useGuildHasLiveChannelNotice)
+// Module 15168 (useGuildHasLiveChannelNotice)
 import noop from "noop";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";

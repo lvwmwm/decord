@@ -1,10 +1,10 @@
-// Module ID: 7835
-// Function ID: 7836
+// Module ID: 7807
+// Function ID: 7808
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 7836, 21, 5917, 7837, 1236, 7838, 4711, 6961, 7834, 7832, 5665, 2]
+// Dependencies: [5, 32, 19, 7808, 21, 5902, 7809, 1236, 7810, 4681, 6946, 7806, 7804, 5650, 2]
 // Exports: default
 
-// Module 7835 (InAppReportModal)
+// Module 7807 (InAppReportModal)
 import HeaderActionButton from "HeaderActionButton";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -76,7 +76,7 @@ export default function InAppReportModal(arg0) {
   [c12, c13] = callback(React.useState([]), 2);
   let tmp4 = callback(React.useState([]), 2);
   [c14, c15] = callback(React.useState([]), 2);
-  menu(4711)(() => {
+  menu(4681)(() => {
     const orFetchLinkedUsers = callback(table[10]).getOrFetchLinkedUsers();
   });
   let items = [closeModal, first];
@@ -99,7 +99,7 @@ export default function InAppReportModal(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -152,7 +152,7 @@ export default function InAppReportModal(arg0) {
                   outer1_2();
                 }
                 table = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } catch (tmp28) {
               table = tmp;
@@ -221,11 +221,11 @@ export default function InAppReportModal(arg0) {
       const obj3 = { headerRight: null, headerTitle: null, fullscreen: true, render: null };
       obj3[0] = function headerRight() {
         const obj = { source: null, onPress: null, accessibilityLabel: null };
-        obj[0] = callback(7837);
+        obj[0] = callback(7809);
         obj[1] = closure_6;
         const intl = _onSubmit(1236).intl;
         obj[2] = intl.string(_onSubmit(1236).t.cpT0Cq);
-        return callback2(_onSubmit(5917).HeaderActionButton, obj);
+        return callback2(_onSubmit(5902).HeaderActionButton, obj);
       };
       obj3[1] = function headerTitle() {
         return null;
@@ -248,7 +248,7 @@ export default function InAppReportModal(arg0) {
         obj.addOnCloseCallback = callback2;
         obj.reportId = noop;
         obj.onNavigate = onNavigate;
-        return callback2(callback(7838), obj);
+        return callback2(callback(7810), obj);
       };
       obj2[c6] = obj3;
       obj[1] = obj2;
@@ -265,7 +265,7 @@ export default function InAppReportModal(arg0) {
       obj[1] = initialStack;
       let intl = require(1236) /* getSystemLocale */.intl;
       obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-      tmp9 = jsx(require(5665) /* NavigationStack */.Navigator, { screens: null, initialRouteStack: null, headerBackTitle: null });
+      tmp9 = jsx(require(5650) /* NavigationStack */.Navigator, { screens: null, initialRouteStack: null, headerBackTitle: null });
     }
   }
   return tmp9;

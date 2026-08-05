@@ -1,8 +1,8 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10621
+// Function ID: 10622
 // Dependencies: [644, 705, 2]
 
-// Module 10649
+// Module 10621
 import keys from "keys";
 
 let obj = keys.create((arg0, arg1) => {

@@ -1,10 +1,10 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16474
+// Function ID: 16475
 // Name: getPermissionChanges
-// Dependencies: [5143, 5210, 4486, 1377, 5187, 16492, 1372, 1935, 3922, 1874, 16491, 676, 1379, 11174, 1378, 3, 4360, 1236, 7695, 11, 16494, 506, 1384, 4475, 1906, 14, 688, 8989, 16495, 3955, 3867, 2]
+// Dependencies: [5128, 5195, 4456, 1377, 5172, 16473, 1372, 1935, 3892, 1874, 16472, 676, 1379, 11146, 1378, 3, 4330, 1236, 7667, 11, 16475, 506, 1384, 4445, 1906, 14, 688, 8961, 16476, 3925, 3837, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 16493 (getPermissionChanges)
+// Module 16474 (getPermissionChanges)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleUpdate from "handleUpdate";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -585,19 +585,19 @@ class ACTION_FILTER_ITEMS {
   }
 }
 let obj = {
-  [arg1(4360).TimeUnits.SECONDS]: (seconds) => {
+  [arg1(4330).TimeUnits.SECONDS]: (seconds) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.geSp4K, { seconds });
   },
-  [arg1(4360).TimeUnits.MINUTES]: (minutes) => {
+  [arg1(4330).TimeUnits.MINUTES]: (minutes) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iXLF9W, { minutes });
   },
-  [arg1(4360).TimeUnits.HOURS]: (hours) => {
+  [arg1(4330).TimeUnits.HOURS]: (hours) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.xCjYxK, { hours });
   },
-  [arg1(4360).TimeUnits.DAYS]: (days) => {
+  [arg1(4330).TimeUnits.DAYS]: (days) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["k2UNz+"], { days });
   }
@@ -842,7 +842,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           __3TkD = __3TkD(1236).t.MWp6H7;
           obj16[AuditLogChangeKeys.TEMPORARY] = (newValue) => newValue.newValue ? __3TkD : _5kDYS3;
           const obj19 = {};
-          obj19[__3TkD(7695).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
+          obj19[__3TkD(7667).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
           __3TkD = obj19;
           obj16[AuditLogChangeKeys.FLAGS] = (arg0) => __3TkD[arg0.newValue];
           obj16[AuditLogChangeKeys.ROLE_IDS] = () => __3TkD(1236).t.gb1Owj;
@@ -1313,12 +1313,12 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
       const rounded = Math.round(diff / 1000 / 60);
       const obj2 = importDefault(11);
       const tmp25 = ROLES_REMOVE;
-      const timeAndUnit = ROLES_REMOVE(4360).getTimeAndUnit(rounded, items);
+      const timeAndUnit = ROLES_REMOVE(4330).getTimeAndUnit(rounded, items);
       if (null != timeAndUnit.unit) {
         if (null != timeAndUnit.time) {
           if (timeAndUnit.unit in obj) {
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === tmp25(4360).TimeUnits.SECONDS) {
+            if (unit2 === tmp25(4330).TimeUnits.SECONDS) {
               const _Math2 = Math;
               time = Math.round(diff / 1000);
             } else {
@@ -1713,9 +1713,9 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             found = require;
             found = dependencyMap;
-            if (require(16494) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+            if (require(16475) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
               return found(1236).t["PyEa+J"];
-            } else if (found(16494).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (found(16475).GuildFeedItemTypes.FORUM_POST === newValue) {
               return found(1236).t.hCuAb1;
             } else {
               return found(1236).t["UZ+U3A"];
@@ -2525,7 +2525,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                             let tmp7 = ((targetId) => store.getChannel(targetId))(targetId);
                             let tmp10 = null;
                             if (tmp9) {
-                              tmp10 = ((channel) => found(4475).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true))(tmp7);
+                              tmp10 = ((channel) => found(4445).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true))(tmp7);
                             }
                             let tmp11 = tmp10;
                             if (null == tmp10) {
@@ -2610,7 +2610,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
           found = null != found && true;
           found = null;
           if (found) {
-            found = ((found) => found(4475).computeChannelName(found, mergeGuildAvatar, upsertRelationship, true))(found);
+            found = ((found) => found(4445).computeChannelName(found, mergeGuildAvatar, upsertRelationship, true))(found);
           }
           if (null == found) {
             found = outer1_14;

@@ -1,10 +1,10 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16564
+// Function ID: 16565
 // Name: componentDidMount
-// Dependencies: [109, 5, 19, 17, 1936, 1218, 1942, 1935, 1862, 8944, 16570, 16565, 676, 16572, 21, 4285, 712, 3997, 5238, 5917, 1236, 4479, 16574, 12, 698, 8919, 16584, 3986, 9793, 8256, 5200, 10960, 4623, 1297, 5649, 5315, 16585, 16592, 16594, 16595, 4693, 7777, 1480, 589, 3918, 5596, 2]
+// Dependencies: [109, 5, 19, 17, 1936, 1218, 1942, 1935, 1862, 8916, 16551, 16546, 676, 16553, 21, 4255, 712, 3967, 5223, 5902, 1236, 4449, 16555, 12, 698, 8891, 16565, 3956, 9764, 8228, 5185, 10932, 4593, 1297, 5634, 5300, 16566, 16573, 16575, 16576, 4663, 7749, 1480, 589, 3888, 5581, 2]
 // Exports: default
 
-// Module 16583 (componentDidMount)
+// Module 16564 (componentDidMount)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import fetchFingerprint from "fetchFingerprint";
 import importAllResult from "HeaderActionButton";
@@ -256,7 +256,7 @@ class GuildSettingsRoleEdit extends PureComponent {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -298,7 +298,7 @@ class GuildSettingsRoleEdit extends PureComponent {
             obj1.deleteRole(v0.id, user.id);
             arr = arr.pop();
             user = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           } catch (tmp18) {
             user = tmp;
             throw tmp18;
@@ -392,7 +392,7 @@ prototype["updateNavigation"] = function updateNavigation(role, submitting) {
   submitting = this.state.submitting;
   let setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
   const sectionChanges = self.getSectionChanges();
-  setOptionsResult[0] = role(5238).getHeaderConditionalBackButton(self.handleBack);
+  setOptionsResult[0] = role(5223).getHeaderConditionalBackButton(self.handleBack);
   if (submitting) {
     let fn = () => callback(role(table[18]).HeaderSubmittingIndicator, {});
   } else if (sectionChanges) {
@@ -421,23 +421,23 @@ prototype["renderSubScreenButtons"] = function renderSubScreenButtons() {
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(outer1_17.PERMISSIONS);
   };
-  const items = [callback2(self(5315).TableRow, obj), , ];
+  const items = [callback2(self(5300).TableRow, obj), , ];
   obj = { label: null, onPress: null, arrow: true };
   const intl2 = self(1236).intl;
   obj[0] = intl2.string(self(1236).t["5//Muu"]);
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(outer1_17.VERIFICATIONS);
   };
-  items[1] = callback2(self(5315).TableRow, obj);
+  items[1] = callback2(self(5300).TableRow, obj);
   const obj1 = { label: null, onPress: null, arrow: true };
   const intl3 = self(1236).intl;
   obj1[0] = intl3.string(self(1236).t.J4ZtH1);
   obj1[1] = function onPress() {
     return self.onSubScreenValueChange(outer1_17.MEMBERS);
   };
-  items[2] = callback2(self(5315).TableRow, obj1);
+  items[2] = callback2(self(5300).TableRow, obj1);
   obj[1] = items;
-  return callback3(self(5649).TableRowGroup, obj);
+  return callback3(self(5634).TableRowGroup, obj);
 };
 prototype["renderDeleteButton"] = function renderDeleteButton() {
   let obj = { hasIcons: false, children: null };
@@ -445,8 +445,8 @@ prototype["renderDeleteButton"] = function renderDeleteButton() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.c9ej8n);
   obj[2] = this.handleDeleteRole;
-  obj[1] = callback2(require(5315) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5649) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[1] = callback2(require(5300) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5634) /* TableRowGroupTitle */.TableRowGroup, obj);
 };
 prototype["renderManagedRoleWarningText"] = function renderManagedRoleWarningText() {
   let obj = { style: createCacheKey(this.context).managedRolesWarningContainer, children: null };
@@ -504,7 +504,7 @@ prototype["render"] = function render() {
     ({ handleNameChanged: obj3[6], handleMentionableChanged: obj3[7], handleHoistChanged: obj3[8] } = self);
     obj[9] = locked;
     obj[10] = newRole;
-    let tmp11Result = callback2(importDefault(16585), obj);
+    let tmp11Result = callback2(importDefault(16566), obj);
   } else if (tmp9.PERMISSIONS === effectiveSection) {
     obj = { guild: null, role: null, permissions: null, onPermissionsChanged: null, contentContainerStyle: null };
     obj[0] = guild;
@@ -512,7 +512,7 @@ prototype["render"] = function render() {
     obj[2] = permissions;
     obj[3] = self.handlePermissionsChanged;
     obj[4] = self.props.contentContainerStyle;
-    tmp11Result = callback2(importDefault(16592), obj);
+    tmp11Result = callback2(importDefault(16573), obj);
   } else if (tmp9.MEMBERS === effectiveSection) {
     obj = { guild: null, role: null, locked: null, contentContainerStyle: null };
     obj[0] = guild;
@@ -523,16 +523,16 @@ prototype["render"] = function render() {
     }
     obj[2] = tmp15;
     obj[3] = self.props.contentContainerStyle;
-    tmp11Result = callback2(importDefault(16594), obj);
+    tmp11Result = callback2(importDefault(16575), obj);
     const tmp11 = callback2;
-    const tmp14 = importDefault(16594);
+    const tmp14 = importDefault(16575);
   } else if (tmp9.VERIFICATIONS === effectiveSection) {
     const obj1 = { guild: null, role: null, locked: null, integrations: null };
     obj1[0] = guild;
     obj1[1] = role;
     obj1[2] = locked;
     obj1[3] = integrations;
-    tmp11Result = callback2(importDefault(16595), obj1);
+    tmp11Result = callback2(importDefault(16576), obj1);
   }
   const obj2 = { style: tmp.container, children: null };
   if (tmp2) {
@@ -542,7 +542,7 @@ prototype["render"] = function render() {
     obj4[1] = importDefault(712).space.PX_16;
     obj3[1] = obj4;
     obj3[2] = tmp11Result;
-    let tmp22Result = tmp22(tmp24(4693).Stack, obj3);
+    let tmp22Result = tmp22(tmp24(4663).Stack, obj3);
   } else {
     const obj5 = { contentContainerStyle: null, children: null };
     obj5[0] = tmp.form;
@@ -570,8 +570,8 @@ prototype["render"] = function render() {
     }
     items[3] = renderDeleteButtonResult;
     obj6[1] = items;
-    obj5[1] = closure_23(tmp24(4693).Stack, obj6);
-    tmp22Result = tmp22(tmp24(7777).Form, obj5);
+    obj5[1] = closure_23(tmp24(4663).Stack, obj6);
+    tmp22Result = tmp22(tmp24(7749).Form, obj5);
     const tmp26 = closure_23;
   }
   obj2[1] = tmp22Result;

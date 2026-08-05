@@ -1,10 +1,10 @@
-// Module ID: 7003
-// Function ID: 7004
+// Module ID: 6987
+// Function ID: 6988
 // Name: requestGames
-// Dependencies: [5, 4306, 676, 530, 709, 4170, 12, 2]
+// Dependencies: [5, 4276, 676, 530, 709, 4140, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7003 (requestGames)
+// Module 6987 (requestGames)
 import importDefaultResult from "start";
 import handleLoadMessages from "handleLoadMessages";
 import { Endpoints } from "ME";
@@ -87,7 +87,7 @@ function _fetchGamesWithSupplementalData() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ function _fetchGamesWithSupplementalData() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -153,7 +153,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -185,7 +185,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;
@@ -204,8 +204,8 @@ const batchInvocationManager = new require("start").BatchInvocationManager(funct
   }
   return applyArgumentsResult;
 }, {
-  predicate(gameId) {
-    return !handleLoadMessages.hasNoData(gameId);
+  predicate(closure_0) {
+    return !handleLoadMessages.hasNoData(closure_0);
   },
   onQueued(gameIds) {
     let obj = importDefault(709);

@@ -1,15 +1,17 @@
 // Module ID: 8484
 // Function ID: 8485
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8453, 8476]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8485, 8486, 8433]
 
 // Module 8484 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeDisplacementMap = arg1;
+const LinearGradient = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeDisplacementMap {
+class LinearGradient {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeDisplacementMap);
+    tmp = _isNativeReflectConstruct(this, LinearGradient);
     tmp2 = __esModule;
-    obj = __esModule(FeDisplacementMap);
+    obj = __esModule(LinearGradient);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +51,31 @@ class FeDisplacementMap {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeDisplacementMap, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeDisplacementMap(8453).warnUnimplementedFilter();
-    return null;
+require("_inherits")(LinearGradient, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const props = this.props;
+      let obj = { x1: props.x1, y1: props.y1, x2: props.x2, y2: props.y2 };
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(self(8486)(props, this));
+      return jsx(self(8485), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeDisplacementMap, items);
-importDefaultResultResult.displayName = "FeDisplacementMap";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(LinearGradient, items);
+importDefaultResultResult.displayName = "LinearGradient";
+importDefaultResultResult.defaultProps = { x1: "0%", y1: "0%", x2: "100%", y2: "0%" };
 
 export default importDefaultResultResult;

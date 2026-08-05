@@ -1,9 +1,9 @@
-// Module ID: 4323
-// Function ID: 4324
+// Module ID: 4293
+// Function ID: 4294
 // Name: createFromServer
-// Dependencies: [1883, 4324, 1882, 676, 3931, 4328, 2]
+// Dependencies: [1883, 4294, 1882, 676, 3901, 4298, 2]
 
-// Module 4323 (createFromServer)
+// Module 4293 (createFromServer)
 import "toJS";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -135,7 +135,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
         if (!obj.canInstallPremiumApplications(isPremiumWithFractionalPremiumOnly)) {
           return false;
         }
-        obj = importDefault(3931);
+        obj = importDefault(3901);
       }
       const _Date = Date;
       const date = new Date();
@@ -167,7 +167,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
   return false;
 };
 prototype["isFulfilled"] = function isFulfilled() {
-  return this.fulfillmentStatus === require(4328) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
+  return this.fulfillmentStatus === require(4298) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
 };
 const result = require("createdAt").fileFinishedImporting("records/EntitlementRecord.tsx");
 

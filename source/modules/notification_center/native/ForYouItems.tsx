@@ -1,9 +1,9 @@
-// Module ID: 15407
-// Function ID: 15408
+// Module ID: 15388
+// Function ID: 15389
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4277, 4322, 1372, 1862, 1874, 15401, 676, 5739, 21, 4285, 4281, 712, 4714, 15406, 1236, 1384, 7959, 7140, 10102, 9905, 7816, 589, 8011, 1297, 11897, 15408, 1480, 4266, 13104, 7021, 698, 8145, 15409, 10998, 3986, 11021, 1959, 4253, 15411, 4244, 15403, 5643, 15412, 15413, 11, 4812, 15414, 7022, 12423, 1481, 3958, 3963, 15424, 15425, 15426, 15427, 15428, 15434, 810, 15435, 15436, 1351, 15405, 7666, 15437, 2]
+// Dependencies: [5, 32, 19, 17, 4247, 4292, 1372, 1862, 1874, 15382, 676, 5724, 21, 4255, 4251, 712, 4684, 15387, 1236, 1384, 7931, 7114, 10073, 9876, 7788, 589, 7983, 1297, 11869, 15389, 1480, 4236, 13076, 6995, 698, 8117, 15390, 10970, 3956, 10993, 1959, 4223, 15392, 4214, 15384, 5628, 15393, 15394, 11, 4797, 15395, 6996, 12395, 1481, 3928, 3933, 15405, 15406, 15407, 15408, 15409, 15415, 810, 15416, 15417, 1351, 15386, 7638, 15418, 2]
 
-// Module 15407 (ForYouFooter)
+// Module 15388 (ForYouFooter)
 import addApplication from "addApplication";
 import handleSupportedURL from "handleSupportedURL";
 import importAllResult from "hasFlag";
@@ -37,7 +37,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15406) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15387) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -47,7 +47,7 @@ function Callout(arg0) {
   let item;
   ({ item, acked, compactMode } = arg0);
   const tmp = createCacheKey();
-  let obj = importAll(4714);
+  let obj = importAll(4684);
   obj = { style: tmp.calloutContainer, pointerEvents: "none", children: null };
   obj = { style: tmp.messagePreviewBarV2 };
   const parser = obj.getParser(callback3());
@@ -60,7 +60,7 @@ function Callout(arg0) {
   }
   obj1[2] = num;
   obj1[3] = parser(item.callout);
-  items[1] = callback(require(4281) /* Text */.Text, obj1);
+  items[1] = callback(require(4251) /* Text */.Text, obj1);
   obj[2] = items;
   return closure_22(closure_7, obj);
 }
@@ -74,7 +74,7 @@ function ForYouMessagePreviewV2(item) {
   ({ compactMode, roleStyle } = item);
   let messagePreviewIconV2 = createCacheKey();
   let SMALL = dependencyMap;
-  let obj = message_channel_id(4714);
+  let obj = message_channel_id(4684);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback4(), closure_28, roleStyle);
   const intl = item(1236).intl;
   const stringResult = intl.string(item(1236).t.BOi07B);
@@ -129,10 +129,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp15 = guild_id(7959)(first);
+    const tmp15 = guild_id(7931)(first);
     let result = stringResult;
     if (null != tmp15) {
-      let tmp2Result = tmp2(7140);
+      let tmp2Result = tmp2(7114);
       result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
@@ -240,18 +240,18 @@ function ForYouMessagePreviewV2(item) {
   if (acked) {
     str2 = "text-muted";
   }
-  const items5 = [item(8011).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
+  const items5 = [item(7983).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
   if (null == ATTACHMENT) {
     items5[1] = tmp26;
     obj1[3] = items5;
-    items3[1] = tmp21(tmp2(4281).Text, obj1);
+    items3[1] = tmp21(tmp2(4251).Text, obj1);
     obj[2] = items3;
     return tmp21(tmp22, obj);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(10102);
+      let tmp29 = guild_id(10073);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1297).IconSizes.SMALL;
@@ -263,10 +263,10 @@ function ForYouMessagePreviewV2(item) {
     } else if (tmp28.STICKER !== ATTACHMENT) {
       tmp29 = null;
       if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
-        tmp29 = guild_id(7816);
+        tmp29 = guild_id(7788);
       }
     }
-    tmp29 = guild_id(9905);
+    tmp29 = guild_id(9876);
   }
 }
 function ApplicationName(applicationId) {
@@ -280,7 +280,7 @@ function ApplicationName(applicationId) {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(11897), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11869), obj, stateFromStores.id);
   }
   return tmp5;
 }

@@ -1,10 +1,10 @@
-// Module ID: 14099
-// Function ID: 14100
+// Module ID: 14073
+// Function ID: 14074
 // Name: _fetchAuthSessions
 // Dependencies: [5, 676, 530, 709, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 14099 (_fetchAuthSessions)
+// Module 14073 (_fetchAuthSessions)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -64,7 +64,7 @@ function _logOutSessions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ function _logOutSessions() {
                 items = arr2;
                 if (num2 === arr2.length) {
                   constants = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               } else {
                 items = [arr2];

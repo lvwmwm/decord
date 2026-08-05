@@ -1,8 +1,8 @@
-// Module ID: 10815
-// Function ID: 10816
+// Module ID: 10787
+// Function ID: 10788
 // Dependencies: [676, 1236, 2]
 
-// Module 10815
+// Module 10787
 import ME from "ME";
 
 let c3;

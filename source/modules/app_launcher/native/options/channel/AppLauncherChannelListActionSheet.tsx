@@ -1,10 +1,10 @@
-// Module ID: 11488
-// Function ID: 11489
+// Module ID: 11460
+// Function ID: 11461
 // Name: ChannelIcon
-// Dependencies: [32, 19, 1862, 21, 4285, 712, 4790, 4745, 11479, 5126, 4253, 11466, 11467, 4475, 5315, 4281, 2]
+// Dependencies: [32, 19, 1862, 21, 4255, 712, 4760, 4715, 11451, 5111, 4223, 11438, 11439, 4445, 5300, 4251, 2]
 // Exports: default
 
-// Module 11488 (ChannelIcon)
+// Module 11460 (ChannelIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -54,11 +54,11 @@ function ChannelListItem(arg0) {
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
   const obj = { onPress, label: null, icon: null, start: null, end: null };
-  obj[1] = callback(require(4281) /* Text */.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4475)(channel) });
+  obj[1] = callback(require(4251) /* Text */.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: importDefault(4445)(channel) });
   obj[2] = callback(ChannelIcon, { channel });
   obj[3] = 0 === index;
   obj[4] = index === totalCount - 1;
-  return callback(require(5315) /* TableRowInner */.TableRow, obj, channel.id);
+  return callback(require(5300) /* TableRowInner */.TableRow, obj, channel.id);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 const AppLauncherChannelListActionSheet = "AppLauncherChannelListActionSheet";

@@ -1,10 +1,10 @@
-// Module ID: 16108
-// Function ID: 16109
+// Module ID: 16089
+// Function ID: 16090
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 1371, 10506, 1372, 4310, 9674, 10507, 21, 4285, 11557, 16036, 589, 3903, 10167, 10320, 4146, 15964, 5663, 7819, 15988, 10630, 2]
+// Dependencies: [19, 1371, 10478, 1372, 4280, 9645, 10479, 21, 4255, 11529, 16017, 589, 3873, 10138, 10292, 4116, 15945, 5648, 7791, 15969, 10602, 2]
 // Exports: default
 
-// Module 16108 (VoicePanelSecondaryPIPContent)
+// Module 16089 (VoicePanelSecondaryPIPContent)
 import FrameView from "FrameView";
 import participantFromServer from "participantFromServer";
 import map from "map";

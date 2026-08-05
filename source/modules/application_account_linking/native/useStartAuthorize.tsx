@@ -1,10 +1,10 @@
-// Module ID: 5613
-// Function ID: 5614
+// Module ID: 5598
+// Function ID: 5599
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 5614, 676, 5615, 5617, 3982, 698, 5619, 2]
+// Dependencies: [5, 19, 5599, 676, 5600, 5602, 3952, 698, 5604, 2]
 // Exports: default
 
-// Module 5613 (useStartAuthorize)
+// Module 5598 (useStartAuthorize)
 import useAuthorizedAppsTokens from "useAuthorizedAppsTokens";
 import noop from "noop";
 import { AuthorizeFlow } from "AuthorizeFlow";
@@ -22,7 +22,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   }
   let _require;
   const debug = obj.debug;
-  const authorizationApp = _require(5615).useAuthorizationApp(getOfficialApplicationId);
+  const authorizationApp = _require(5600).useAuthorizationApp(getOfficialApplicationId);
   _require = authorizationApp;
   let prop;
   if (authorizationApp != null) {
@@ -32,7 +32,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   if (null != prop) {
     WEB = AuthorizeFlow.WEB;
   }
-  let obj2 = _require(5615);
+  let obj2 = _require(5600);
   const tmp = undefined !== debug && debug;
   const tmp2 = _require;
   let parentId;
@@ -46,7 +46,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     }
     parentId = id;
   }
-  const authorizedAppsToken = _require(5617).useAuthorizedAppsToken(parentId);
+  const authorizedAppsToken = _require(5602).useAuthorizedAppsToken(parentId);
   ({ token, fetched } = authorizedAppsToken);
   _require = undefined;
   _require = callback((arg0) => {
@@ -66,7 +66,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

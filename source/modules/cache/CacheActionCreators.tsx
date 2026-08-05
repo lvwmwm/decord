@@ -1,10 +1,10 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 14630
+// Function ID: 14631
 // Name: _writeCaches
-// Dependencies: [5, 1372, 6844, 709, 2]
+// Dependencies: [5, 1372, 6829, 709, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 14650 (_writeCaches)
+// Module 14630 (_writeCaches)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { ChannelLoader } from "ensureGuildLoaded";
 import handleClearCaches from "handleClearCaches";
@@ -27,7 +27,7 @@ function _writeCaches() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -51,7 +51,7 @@ function _writeCaches() {
               table = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -101,7 +101,7 @@ function _writeCaches() {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp20) {
           c4 = tmp;

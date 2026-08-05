@@ -1,9 +1,9 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15156
+// Function ID: 15157
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15176 (metadata)
+// Module 15156 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/powerups/server-theme-powerup-static.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/a43712d53d007cf7433bb7934419b46aa86e2edaa3fabe5486e92f1d8cf23a83.png";

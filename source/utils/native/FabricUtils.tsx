@@ -1,14 +1,14 @@
-// Module ID: 4149
-// Function ID: 4150
+// Module ID: 4119
+// Function ID: 4120
 // Name: isFabric
-// Dependencies: [4150, 500, 2]
+// Dependencies: [4120, 500, 2]
 // Exports: isFabric, isIosFabric
 
-// Module 4149 (isFabric)
+// Module 4119 (isFabric)
 const result = require("set").fileFinishedImporting("utils/native/FabricUtils.tsx");
 
 export const isFabric = function isFabric() {
-  const obj = importDefault(4150);
+  const obj = importDefault(4120);
   let flag;
   if (obj != null) {
     flag = obj.isFabric();
@@ -21,7 +21,7 @@ export const isFabric = function isFabric() {
 export const isIosFabric = function isIosFabric() {
   let isIOSResult = require(500) /* set */.isIOS();
   if (isIOSResult) {
-    const obj2 = importDefault(4150);
+    const obj2 = importDefault(4120);
     let flag;
     if (obj2 != null) {
       flag = obj2.isFabric();

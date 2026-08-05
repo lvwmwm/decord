@@ -1,9 +1,9 @@
-// Module ID: 6923
-// Function ID: 6924
+// Module ID: 6908
+// Function ID: 6909
 // Name: fromServer
 // Dependencies: [2]
 
-// Module 6923 (fromServer)
+// Module 6908 (fromServer)
 let AssetDisplayConfigRecord;
 class AssetDisplayConfigRecord {
   constructor(arg0) {

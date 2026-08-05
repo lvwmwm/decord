@@ -1,10 +1,10 @@
-// Module ID: 10583
-// Function ID: 10584
+// Module ID: 10555
+// Function ID: 10556
 // Name: MIN_MARGIN_BETWEEN_OVERLAYS
-// Dependencies: [9656, 709, 2]
+// Dependencies: [9627, 709, 2]
 // Exports: doesTargetPositionIntersectOtherOverlaysWorklet, setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 10583 (MIN_MARGIN_BETWEEN_OVERLAYS)
+// Module 10555 (MIN_MARGIN_BETWEEN_OVERLAYS)
 import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH";
 
 const MIN_MARGIN_BETWEEN_OVERLAYS = BOX_MODE_ACTIONSHEET_WIDTH.MIN_MARGIN_BETWEEN_OVERLAYS;

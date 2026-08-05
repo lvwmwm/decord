@@ -1,9 +1,9 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15111
+// Function ID: 15112
 // Name: GuildChannels
-// Dependencies: [32, 19, 17, 4277, 6893, 15054, 1862, 1931, 4357, 676, 21, 1483, 4136, 9470, 1348, 15132, 15150, 15184, 14244, 15053, 15185, 15151, 15187, 6904, 589, 6903, 15188, 15192, 6896, 15193, 10167, 15039, 14245, 10917, 5597, 15243, 15245, 15258, 7818, 15261, 15263, 15267, 15268, 15153, 15269, 15271, 1865, 8601, 15275, 11207, 2]
+// Dependencies: [32, 19, 17, 4247, 6878, 15034, 1862, 1931, 4327, 676, 21, 1483, 4106, 9441, 1348, 15112, 15130, 15164, 14218, 15033, 15165, 15131, 15167, 6889, 589, 6888, 15168, 15172, 6881, 15173, 10138, 15019, 14219, 10889, 5582, 15223, 15225, 15238, 7790, 15241, 15243, 15247, 15248, 15133, 15249, 15250, 15252, 1865, 8573, 15256, 11179, 2]
 
-// Module 15131 (GuildChannels)
+// Module 15111 (GuildChannels)
 import useYouBarTotalHeight from "useYouBarTotalHeight";
 import importAllResult from "context";
 import { View } from "registerGuildVisibilityMethod";
@@ -54,36 +54,42 @@ function GuildChannels(guild) {
 }
 function FavoriteChannels(arg0) {
   let guildChannels;
+  let hasNoChannels;
   let shouldShowEmptyState;
-  let tmp = dependencyMap;
-  let obj = require(15268) /* getMissingFavoriteThreadIds */;
-  const favoritesGuildChannelList = obj.useFavoritesGuildChannelList();
-  ({ guildChannels, shouldShowEmptyState } = favoritesGuildChannelList);
-  let obj1 = require(15267) /* useShouldRenderChannelList */;
-  if (!obj1.useShouldRenderChannelList()) {
+  let obj = dependencyMap;
+  let obj1 = require(15248) /* getMissingFavoriteThreadIds */;
+  const favoritesGuildChannelList = obj1.useFavoritesGuildChannelList();
+  ({ guildChannels, shouldShowEmptyState, hasNoChannels } = favoritesGuildChannelList);
+  if (!obj3.useShouldRenderChannelList()) {
     return null;
   } else {
     let guild = arg0;
-    if (shouldShowEmptyState) {
+    if (hasNoChannels) {
       obj = { style: null, contentInset: null, children: null };
-      ({ style: obj4[0], contentInset: obj4[1] } = guild);
+      ({ style: obj5[0], contentInset: obj5[1] } = guild);
       obj = { guild: null, showExtraButtons: false, canOpenGuildActionSheet: false };
-      obj[0] = guild.guild;
-      const items = [callback(importDefault(15153), obj), ];
-      obj1 = { guild: null };
       guild = guild.guild;
-      obj1[0] = guild;
-      tmp = callback(importDefault(15258), obj1);
-      items[1] = tmp;
+      obj[0] = guild;
+      const items = [callback(importDefault(15133), obj), ];
+      let tmp11Result = null;
+      if (shouldShowEmptyState) {
+        obj = {};
+        tmp11Result = tmp11(tmp9(15249), obj);
+        const tmp9Result = tmp9(15249);
+      }
+      items[1] = tmp11Result;
       obj[2] = items;
-      let tmp8 = callback2(importDefault(15243), obj);
-      const tmp11 = importDefault(15243);
+      let tmp8Result = closure_15(importDefault(15223), obj);
+      const tmp10 = importDefault(15223);
+      tmp11 = callback;
+      const tmp8 = closure_15;
+      tmp9 = importDefault;
     } else {
-      const obj2 = {};
+      obj1 = {};
       const merged = Object.assign(guild);
-      obj2.guildChannels = guildChannels;
-      obj2.guildChannelsVersion = 0;
-      tmp8 = callback(closure_17, obj2);
+      obj1.guildChannels = guildChannels;
+      obj1.guildChannelsVersion = 0;
+      tmp8Result = callback(closure_17, obj1);
     }
   }
 }
@@ -100,7 +106,7 @@ function ChannelsWrapper(selectedGuildId) {
   if (selectedGuildId === closure_13) {
     obj = { style: null };
     obj[0] = merged.style;
-    let tmp6Result = callback(importDefault(15269), obj);
+    let tmp6Result = callback(importDefault(15250), obj);
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_12) {
@@ -113,12 +119,12 @@ function ChannelsWrapper(selectedGuildId) {
           obj.selectedVoiceChannelId = stateFromStores1;
           tmp6Result = callback(FavoriteChannels, obj);
         } else {
-          tmp2Result = tmp2(8601);
+          tmp2Result = tmp2(8573);
           if (tmp2Result.shouldNSFWGateGuild(selectedGuildId)) {
             obj1 = { style: null, guildId: null };
             obj1[0] = merged.style;
             obj1[1] = selectedGuildId;
-            tmp6Result = tmp6(importDefault(15275), obj1);
+            tmp6Result = tmp6(importDefault(15256), obj1);
           } else {
             const obj2 = {};
             const merged2 = Object.assign(merged);
@@ -133,7 +139,7 @@ function ChannelsWrapper(selectedGuildId) {
     const obj3 = { style: null, selectedGuildId: null };
     obj3[0] = merged.style;
     obj3[1] = selectedGuildId;
-    tmp6Result = callback(importDefault(15271), obj3);
+    tmp6Result = callback(importDefault(15252), obj3);
   }
   return tmp6Result;
 }
@@ -413,7 +419,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let obj = { children: null };
   obj = {};
   const merged = Object.assign(arg0);
-  const items = [callback(ChannelsWrapper, obj), callback(require(11207) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
+  const items = [callback(ChannelsWrapper, obj), callback(require(11179) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
   obj[0] = items;
   return callback2(closure_16, obj);
 });

@@ -1,10 +1,10 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16571
+// Function ID: 16572
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 676, 21, 4285, 712, 1384, 16591, 1297, 8985, 4281, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4255, 712, 1384, 16572, 1297, 8957, 4251, 1236, 2]
 // Exports: default
 
-// Module 16590 (InRolePromptNotice)
+// Module 16571 (InRolePromptNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { RoleFlags } from "ME";
@@ -34,12 +34,12 @@ export default function InRolePromptNotice(role) {
   } else {
     obj = { style: null, children: null };
     obj[0] = string.promptRow;
-    const tmpResult = tmp(16591);
+    const tmpResult = tmp(16572);
     let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
       obj = { style: null, source: null, color: null };
       obj[0] = string.icon;
-      obj[1] = importDefault(8985);
+      obj[1] = importDefault(8957);
       obj[2] = importDefault(712).unsafe_rawColors.YELLOW_300;
       const items = [tmp6(Icon, obj), ];
       const obj1 = { style: null, variant: "text-sm/medium", children: null };
@@ -48,23 +48,23 @@ export default function InRolePromptNotice(role) {
       string = intl2.string;
       stringResult = string(tmp(1236).t.YRbgXz);
       obj1[2] = stringResult;
-      Icon = tmp6(tmp(4281).Text, obj1);
+      Icon = tmp6(tmp(4251).Text, obj1);
       items[1] = Icon;
       obj[1] = items;
       let tmp4Result = tmp4(tmp5, obj);
     } else {
       const obj2 = { style: null, source: null };
       obj2[0] = string.icon;
-      obj2[1] = importDefault(8985);
+      obj2[1] = importDefault(8957);
       const items1 = [tmp6(Icon, obj2), ];
       const obj3 = { style: null, variant: "text-sm/medium", children: null };
       obj3[0] = string.promptText;
       const intl = tmp(1236).intl;
       obj3[2] = intl.string(tmp(1236).t.mqeO2v);
-      items1[1] = tmp6(tmp(4281).Text, obj3);
+      items1[1] = tmp6(tmp(4251).Text, obj3);
       obj[1] = items1;
       tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = tmp(16591).isRolePowerful(role);
+    isRolePowerfulResult = tmp(16572).isRolePowerful(role);
   }
 };

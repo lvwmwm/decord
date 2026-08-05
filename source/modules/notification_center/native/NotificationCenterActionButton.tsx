@@ -1,10 +1,10 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15376
+// Function ID: 15377
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 7672, 8415, 4253, 15396, 1959, 1236, 2]
+// Dependencies: [19, 21, 7644, 8387, 4223, 15377, 1959, 1236, 2]
 // Exports: default
 
-// Module 15395 (NotificationCenterActionButton)
+// Module 15376 (NotificationCenterActionButton)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -13,11 +13,11 @@ const result = require("IconButton").fileFinishedImporting("modules/notification
 
 export default function NotificationCenterActionButton() {
   const obj = { variant: "tertiary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 2 };
-  obj[2] = importDefault(8415);
+  obj[2] = importDefault(8387);
   obj[3] = function onPress() {
     return callback2(paths[4]).openLazy(callback(paths[6])(paths[5], paths.paths), "NotificationCenterActionSheet");
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["UKOtz+"]);
-  return jsx(require(7672) /* IconButton */.IconButton, { variant: "tertiary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 2 });
+  return jsx(require(7644) /* IconButton */.IconButton, { variant: "tertiary", size: "sm", icon: null, onPress: null, accessibilityLabel: null, maxFontSizeMultiplier: 2 });
 };

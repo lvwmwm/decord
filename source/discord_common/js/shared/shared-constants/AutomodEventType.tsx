@@ -1,9 +1,9 @@
-// Module ID: 11176
-// Function ID: 11177
+// Module ID: 11148
+// Function ID: 11149
 // Name: AutomodEventType
 // Dependencies: [2]
 
-// Module 11176 (AutomodEventType)
+// Module 11148 (AutomodEventType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodEventType.tsx");
 
 export const AutomodEventType = { UNKNOWN: 0, [0]: "UNKNOWN", MESSAGE_SEND: 1, [1]: "MESSAGE_SEND", GUILD_MEMBER_JOIN_OR_UPDATE: 2, [2]: "GUILD_MEMBER_JOIN_OR_UPDATE" };

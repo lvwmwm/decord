@@ -1,10 +1,10 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 15989
+// Function ID: 15990
 // Name: withEqualityFn
-// Dependencies: [1338, 4491, 700, 4154, 705, 2]
+// Dependencies: [1338, 4461, 700, 4124, 705, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 16008 (withEqualityFn)
+// Module 15989 (withEqualityFn)
 import { ExpressionPickerViewType } from "ExpressionPickerViewType";
 import identity from "identity";
 import createJSONStorage from "createJSONStorage";

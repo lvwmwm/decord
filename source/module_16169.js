@@ -1,11 +1,24 @@
 // Module ID: 16169
 // Function ID: 16170
-// Dependencies: [576, 16170]
+// Dependencies: []
 
 // Module 16169
-import module_576 from "module_576";
-import { default as _default } from "MessageFormat";
-
-_default.default = _default;
-
-export default _default;
+globalThis.IntlMessageFormat.__addLocaleData({
+  locale: "hu",
+  pluralRuleFunction(arg0, arg1) {
+    if (arg1) {
+      if (1 == arg0) {
+        let str2 = "one";
+      } else {
+        str2 = "other";
+      }
+      let str = str2;
+    } else {
+      str = "other";
+      if (1 == arg0) {
+        str = "one";
+      }
+    }
+    return str;
+  }
+});

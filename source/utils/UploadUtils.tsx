@@ -1,10 +1,10 @@
-// Module ID: 4818
-// Function ID: 4819
+// Module ID: 4803
+// Function ID: 4804
 // Name: items
-// Dependencies: [4819, 4817, 2]
+// Dependencies: [4804, 4802, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 4818 (items)
+// Module 4803 (items)
 const items = [
   {
     reName: /\.jpe?g$/i,
@@ -151,17 +151,17 @@ export const getAttachmentPayload = function getAttachmentPayload(closure_0, clo
     obj.is_clip = true;
     obj.title = closure_0.clip.name;
     obj.application_id = closure_0.clip.applicationId;
-    obj.clip_created_at = require(4819) /* getClipCreatedAt */.getClipCreatedAt(closure_0.clip.createdAt);
-    const obj2 = require(4819) /* getClipCreatedAt */;
-    obj.clip_participant_ids = require(4819) /* getClipCreatedAt */.getClipParticipantIds(closure_0.clip.users);
+    obj.clip_created_at = require(4804) /* getClipCreatedAt */.getClipCreatedAt(closure_0.clip.createdAt);
+    const obj2 = require(4804) /* getClipCreatedAt */;
+    obj.clip_participant_ids = require(4804) /* getClipCreatedAt */.getClipParticipantIds(closure_0.clip.users);
     obj.clip_remote_id = closure_0.clip.remoteClipId;
-    const obj3 = require(4819) /* getClipCreatedAt */;
-    obj.clip_events_timeline = require(4819) /* getClipCreatedAt */.getClipEventsTimeline(closure_0.clip);
-    const obj4 = require(4819) /* getClipCreatedAt */;
+    const obj3 = require(4804) /* getClipCreatedAt */;
+    obj.clip_events_timeline = require(4804) /* getClipCreatedAt */.getClipEventsTimeline(closure_0.clip);
+    const obj4 = require(4804) /* getClipCreatedAt */;
   }
   let tmp9 = "item" in closure_0 && null != closure_0.item;
   if (tmp9) {
-    tmp9 = closure_0.item.platform === require(4817) /* cancel */.UploadPlatform.WEB;
+    tmp9 = closure_0.item.platform === require(4802) /* cancel */.UploadPlatform.WEB;
   }
   if (tmp9) {
     str = "mimeType";

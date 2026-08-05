@@ -1,10 +1,10 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11297
+// Function ID: 11298
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 1379, 21, 4285, 5802, 11306, 11316, 11326, 11329, 2]
+// Dependencies: [32, 19, 17, 1379, 21, 4255, 5787, 11278, 11288, 11298, 11301, 2]
 // Exports: default
 
-// Module 11325 (ForumPostList)
+// Module 11297 (ForumPostList)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -35,7 +35,7 @@ export default function ForumPostList(arg0) {
   ({ firstMessage, hasUnreads, thread } = arg0);
   ({ messageContent, firstMessageLoaded, isNew, media, isEmbed, isLocalDeviceMedia, parentChannel, senderModifier } = arg0);
   const tmp = callback3();
-  let obj = require(5802) /* useAvailableTags */;
+  let obj = require(5787) /* useAvailableTags */;
   const tmp4 = callback(obj.useSomeAppliedTags(thread, 2), 2);
   const first = tmp4[0];
   const hasFlagResult = thread.hasFlag(ChannelFlags.PINNED);
@@ -49,7 +49,7 @@ export default function ForumPostList(arg0) {
     obj[0] = tmp.header;
     let tmp10 = hasFlagResult;
     if (hasFlagResult) {
-      tmp10 = callback2(importDefault(11306), {});
+      tmp10 = callback2(importDefault(11278), {});
     }
     const items = [tmp10, ];
     let tmp13 = 0 !== first.length;
@@ -58,16 +58,16 @@ export default function ForumPostList(arg0) {
       obj1[0] = first;
       obj1[1] = tmp4[1];
       obj1[2] = hasUnreads;
-      tmp13 = callback2(require(11316) /* ForumPostAppliedTagPills */.ForumPostAppliedTagPills, obj1);
+      tmp13 = callback2(require(11288) /* ForumPostAppliedTagPills */.ForumPostAppliedTagPills, obj1);
     }
     items[1] = tmp13;
     obj[1] = items;
     tmp6Result = tmp6(tmp8, obj);
   }
   const obj2 = { children: null };
-  const items1 = [tmp6Result, callback2(importDefault(11326), { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
+  const items1 = [tmp6Result, callback2(importDefault(11298), { thread, firstMessage, hasUnreads, isNew, messageContent, media, isEmbed, isLocalDeviceMedia, firstMessageLoaded, senderModifier })];
   obj[1] = items1;
-  const items2 = [closure_7(View, obj), callback2(importDefault(11329), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items2 = [closure_7(View, obj), callback2(importDefault(11301), { thread, firstMessage, hasUnreads, parentChannel })];
   obj2[0] = items2;
   return closure_7(closure_8, obj2);
 };

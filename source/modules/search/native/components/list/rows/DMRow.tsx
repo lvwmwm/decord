@@ -1,9 +1,9 @@
-// Module ID: 15608
-// Function ID: 15609
+// Module ID: 15589
+// Function ID: 15590
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4277, 4371, 3922, 676, 21, 4285, 712, 4281, 4124, 9557, 589, 9053, 1297, 8929, 12678, 15609, 2]
+// Dependencies: [5, 32, 19, 17, 4247, 4341, 3892, 676, 21, 4255, 712, 4251, 4094, 9528, 589, 9025, 1297, 8901, 12650, 15590, 2]
 
-// Module 15608 (FriendPresence)
+// Module 15589 (FriendPresence)
 import sortActivity from "sortActivity";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchListRow";
@@ -30,16 +30,16 @@ function FriendPresence(user) {
   ({ type, animate, guildId } = user);
   if (type === constants.PENDING_INCOMING) {
     let obj = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: null };
-    obj[3] = require(4124) /* nameFromUser */.getUserTag(user);
-    let tmp5 = callback(require(4281) /* Text */.Text, obj);
-    const obj3 = require(4124) /* nameFromUser */;
+    obj[3] = require(4094) /* nameFromUser */.getUserTag(user);
+    let tmp5 = callback(require(4251) /* Text */.Text, obj);
+    const obj3 = require(4094) /* nameFromUser */;
   } else {
     obj = { userId: null, guildId: null, iconStyle: null, textStyle: null, emojiSize: 16, animate: null };
     obj[0] = user.id;
     obj[1] = guildId;
     ({ activityStatusIcon: obj[2], activityStatusText: obj[3] } = tmp);
     obj[5] = animate;
-    tmp5 = callback(importDefault(9557), obj);
+    tmp5 = callback(importDefault(9528), obj);
   }
   return tmp5;
 }
@@ -110,7 +110,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -152,7 +152,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
           c3 = 0;
           callback(false);
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp23) {
         closure_2 = tmp23;

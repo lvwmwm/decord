@@ -1,9 +1,9 @@
-// Module ID: 15356
-// Function ID: 15357
+// Module ID: 15337
+// Function ID: 15338
 // Name: PreviewItem
-// Dependencies: [19, 5122, 15280, 21, 4285, 15053, 4146, 4694, 7819, 4629, 15290, 15311, 3898, 2]
+// Dependencies: [19, 5107, 15261, 21, 4255, 15033, 4116, 4664, 7791, 4599, 15271, 15292, 3868, 2]
 
-// Module 15356 (PreviewItem)
+// Module 15337 (PreviewItem)
 import importAllResult from "noop";
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import withEqualityFn from "withEqualityFn";
@@ -130,7 +130,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "add", expanded: 409506539142844900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, children: 823258541627570700000000000000000000000000000000000000000000000 };
+        const obj = { type: null, id: -1, parentId: "PX_8", name: "Array", color: "accessible", expanded: -0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002966267703503254, children: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000031163596056912193 };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -340,7 +340,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "contentEncoding", scrollPosition: "contentMediaType", dragRegion: "contentSchema", windowSize: "heading-sm/medium", dropComplete: 2, listInsets: null };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "User Profile Activity Card", scrollPosition: null, dragRegion: null, windowSize: true, dropComplete: null, listInsets: "center" };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;
@@ -359,7 +359,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       }
       return null;
     }
-  }, require(3898) /* isIterable */.shallow);
+  }, require(3868) /* isIterable */.shallow);
   let tmp2 = null;
   if (null != tmp) {
     let obj = {};

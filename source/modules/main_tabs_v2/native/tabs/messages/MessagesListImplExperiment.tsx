@@ -1,9 +1,9 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15057
+// Function ID: 15058
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 15077 (apexExperiment)
+// Module 15057 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { list: "flash", recycleItems: false }, 3: { list: "legend", recycleItems: false } };

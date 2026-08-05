@@ -1,22 +1,22 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 16516
+// Function ID: 16517
 // Name: showGuildSettingsStickerError
-// Dependencies: [3986, 7716, 1236, 4241, 2]
+// Dependencies: [3956, 7688, 1236, 4211, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 16535 (showGuildSettingsStickerError)
+// Module 16516 (showGuildSettingsStickerError)
 const result = require("getSystemLocale").fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 
 export const showGuildSettingsStickerError = function showGuildSettingsStickerError() {
-  let obj = importDefault(3986);
-  obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: require(7716) /* CircleErrorIcon */.CircleErrorIcon, content: null };
+  let obj = importDefault(3956);
+  obj = { key: "GUILD_SETTINGS_STICKER_ERROR", IconComponent: require(7688) /* CircleErrorIcon */.CircleErrorIcon, content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["5NMPSS"]);
   obj.open(obj);
 };
 export const showGuildSettingsStickerSuccess = function showGuildSettingsStickerSuccess() {
-  let obj = importDefault(3986);
-  obj = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: require(4241) /* CircleInformationIcon */.CircleInformationIcon, content: null };
+  let obj = importDefault(3956);
+  obj = { key: "GUILD_SETTINGS_STICKER_SUCCESS", IconComponent: require(4211) /* CircleInformationIcon */.CircleInformationIcon, content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["+c5xtT"]);
   obj.open(obj);

@@ -1,9 +1,9 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13774
+// Function ID: 13775
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 10051, 8072, 685, 676, 21, 4285, 1236, 13803, 13859, 3989, 712, 1480, 6787, 8878, 9382, 8321, 4144, 13819, 13860, 647, 4479, 10053, 5238, 8193, 4170, 1553, 11885, 9480, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10022, 8044, 685, 676, 21, 4255, 1236, 13775, 13833, 3959, 712, 1480, 6772, 8850, 9353, 8293, 4114, 13791, 13834, 647, 4449, 10024, 5223, 8165, 4140, 1553, 11857, 9451, 2]
 
-// Module 13802 (ProfileCustomizationSubsection)
+// Module 13774 (ProfileCustomizationSubsection)
 import zustandStore from "zustandStore";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import SegmentedControlPage from "SegmentedControlPage";
@@ -35,7 +35,7 @@ let items = [
     },
     id: "edit-user-profile",
     renderPage(autoFocusElement) {
-      return callback(importDefault(13803), { autoFocusElement: autoFocusElement.autoFocusElement });
+      return callback(importDefault(13775), { autoFocusElement: autoFocusElement.autoFocusElement });
     },
     subSection: ProfileCustomizationSubsection.USER_PROFILE
   },
@@ -46,7 +46,7 @@ let items = [
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return callback(importDefault(13859), {});
+      return callback(importDefault(13833), {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(() => {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -200,7 +200,7 @@ const memoResult = importAllResult.memo(() => {
                   delayedCall.delay();
                 }
                 navigation = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "T", done: null };
               }
             } catch (tmp14) {
               navigation = tmp;
@@ -244,7 +244,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return callback(importDefault(13803), { autoFocusElement: autoFocusElement.autoFocusElement });
+    return callback(importDefault(13775), { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };

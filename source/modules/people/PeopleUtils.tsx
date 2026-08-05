@@ -1,8 +1,8 @@
-// Module ID: 9551
-// Function ID: 9552
-// Dependencies: [3922, 676, 9552, 9161, 3964, 3971, 9553, 9554, 709, 2]
+// Module ID: 9522
+// Function ID: 9523
+// Dependencies: [3892, 676, 9523, 9133, 3934, 3941, 9524, 9525, 709, 2]
 
-// Module 9551
+// Module 9522
 import upsertRelationship from "upsertRelationship";
 import { AbortCodes } from "ME";
 
@@ -18,10 +18,10 @@ export default {
       let obj = { userId: null, applicationId: null };
       obj[0] = userId;
       obj[1] = applicationId;
-      importDefault(9552).removeGameFriend(obj);
-      const obj3 = importDefault(9552);
+      importDefault(9523).removeGameFriend(obj);
+      const obj3 = importDefault(9523);
     } else {
-      obj = importDefault(9161);
+      obj = importDefault(9133);
       obj = { location: null };
       obj[0] = tmp;
       obj.removeFriend(userId, obj);
@@ -35,10 +35,10 @@ export default {
       let obj = { userId: null, applicationId: null };
       obj[0] = userId;
       obj[1] = applicationId;
-      let result = importDefault(9552).cancelGameFriendRequest(obj);
-      const obj3 = importDefault(9552);
+      let result = importDefault(9523).cancelGameFriendRequest(obj);
+      const obj3 = importDefault(9523);
     } else {
-      obj = importDefault(9161);
+      obj = importDefault(9133);
       obj = { location: null };
       obj[0] = tmp;
       result = obj.cancelFriendRequest(userId, obj);
@@ -57,10 +57,10 @@ export default {
       let obj = { userId: null, applicationId: null };
       obj[0] = userId;
       obj[1] = applicationId;
-      let result = importDefault(9552).acceptGameFriendRequest(obj);
-      const obj4 = importDefault(9552);
+      let result = importDefault(9523).acceptGameFriendRequest(obj);
+      const obj4 = importDefault(9523);
     } else {
-      obj = importDefault(9161);
+      obj = importDefault(9133);
       obj = { userId: null, confirmStrangerRequest: null, context: null };
       obj[0] = userId;
       obj[1] = confirmStrangerRequest;

@@ -1,10 +1,10 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10576
+// Function ID: 10577
 // Name: useVideoSpinnerTimer
-// Dependencies: [32, 19, 10605, 2]
+// Dependencies: [32, 19, 10577, 2]
 // Exports: default
 
-// Module 10604 (useVideoSpinnerTimer)
+// Module 10576 (useVideoSpinnerTimer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

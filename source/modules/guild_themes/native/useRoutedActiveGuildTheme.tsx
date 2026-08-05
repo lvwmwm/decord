@@ -1,10 +1,10 @@
-// Module ID: 4135
-// Function ID: 4136
+// Module ID: 4105
+// Function ID: 4106
 // Name: getGuildIdFromNavigationState
-// Dependencies: [32, 19, 676, 4136, 4137, 4166, 4167, 2]
+// Dependencies: [32, 19, 676, 4106, 4107, 4136, 4137, 2]
 // Exports: default
 
-// Module 4135 (getGuildIdFromNavigationState)
+// Module 4105 (getGuildIdFromNavigationState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ME } from "ME";
@@ -34,7 +34,7 @@ function getGuildIdFromNavigationState(routes) {
   }
 }
 function getActiveGuildThemeGuildIdSnapshot() {
-  const rootNavigationRef = require(4137) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4107) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       const rootState = rootNavigationRef.getRootState();
@@ -86,7 +86,7 @@ function getActiveGuildThemeGuildIdSnapshot() {
         if (rootState != null) {
           routes = rootState.routes;
           if (routes != null) {
-            const mapped = routes.map(require(4136) /* navigationToRootTabHelper */.coerceMainRoute);
+            const mapped = routes.map(require(4106) /* navigationToRootTabHelper */.coerceMainRoute);
             found = mapped.find((arg0) => null != arg0);
           }
         }
@@ -156,7 +156,7 @@ const result = require("ME").fileFinishedImporting("modules/guild_themes/native/
 export default function useRoutedActiveGuildTheme() {
   let require;
   let tmp4;
-  const context = React.useContext(importDefault(4166));
+  const context = React.useContext(importDefault(4136));
   [tmp4, require] = callback(React.useState(getActiveGuildThemeGuildIdSnapshot), 2);
   const effect = React.useEffect(() => {
     const rootNavigationRef = outer1_0(outer1_2[4]).getRootNavigationRef();
@@ -177,5 +177,5 @@ export default function useRoutedActiveGuildTheme() {
     tmp4 = tmp7;
   }
   const tmp3 = callback(React.useState(getActiveGuildThemeGuildIdSnapshot), 2);
-  return require(4167) /* resolveSavedActiveGuildTheme */.useActiveGuildThemeForGuildId(tmp4);
+  return require(4137) /* resolveSavedActiveGuildTheme */.useActiveGuildThemeForGuildId(tmp4);
 };

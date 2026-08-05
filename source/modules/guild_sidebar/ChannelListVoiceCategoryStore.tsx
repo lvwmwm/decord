@@ -1,9 +1,9 @@
-// Module ID: 6901
-// Function ID: 6902
+// Module ID: 6886
+// Function ID: 6887
 // Name: handleChange
 // Dependencies: [589, 709, 2]
 
-// Module 6901 (handleChange)
+// Module 6886 (handleChange)
 import { PersistedStore } from "initialize";
 
 function handleChange(expand) {

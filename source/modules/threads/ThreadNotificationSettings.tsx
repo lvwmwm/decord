@@ -1,10 +1,10 @@
-// Module ID: 9676
-// Function ID: 9677
+// Module ID: 9647
+// Function ID: 9648
 // Name: computeThreadNotificationSetting
-// Dependencies: [1372, 4480, 3915, 1235, 676, 1384, 589, 2]
+// Dependencies: [1372, 4450, 3885, 1235, 676, 1384, 589, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 9676 (computeThreadNotificationSetting)
+// Module 9647 (computeThreadNotificationSetting)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import storeThread from "storeThread";

@@ -1,9 +1,9 @@
-// Module ID: 7028
-// Function ID: 7029
+// Module ID: 7002
+// Function ID: 7003
 // Name: handleBackgroundSync
 // Dependencies: [1376, 1218, 1372, 1907, 2]
 
-// Module 7028 (handleBackgroundSync)
+// Module 7002 (handleBackgroundSync)
 import { createChannelRecordFromServer as closure_2 } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

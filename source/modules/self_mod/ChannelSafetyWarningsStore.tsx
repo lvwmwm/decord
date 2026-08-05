@@ -1,9 +1,9 @@
-// Module ID: 9587
-// Function ID: 9588
+// Module ID: 9558
+// Function ID: 9559
 // Name: handleConnectionOpen
 // Dependencies: [1372, 687, 589, 709, 2]
 
-// Module 9587 (handleConnectionOpen)
+// Module 9558 (handleConnectionOpen)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Store } from "initialize";
 import set from "initialize";

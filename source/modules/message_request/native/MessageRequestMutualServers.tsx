@@ -1,10 +1,10 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 15804
+// Function ID: 15805
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4285, 5661, 15824, 1236, 11887, 4281, 4812, 2]
+// Dependencies: [19, 17, 21, 4255, 5646, 15805, 1236, 11859, 4251, 4797, 2]
 // Exports: default
 
-// Module 15823 (MessageRequestMutualServers)
+// Module 15804 (MessageRequestMutualServers)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5661).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(5646).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -33,7 +33,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = callback2();
-  let obj = iconSize(15824);
+  let obj = iconSize(15805);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -53,7 +53,7 @@ export default function MessageRequestMutualServers(textVariant) {
     obj1[0] = iconSize;
     obj1[1] = substr.map((name) => name.name);
     obj1[2] = substr.map((guild) => outer1_4(outer1_1(outer1_2[4]), { guild, size: iconSize }, guild.id));
-    tmp9 = callback(tmp4(11887).GuildIconPile, obj1);
+    tmp9 = callback(tmp4(11859).GuildIconPile, obj1);
   }
   const items1 = [tmp9, ];
   const obj2 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: null };
@@ -63,7 +63,7 @@ export default function MessageRequestMutualServers(textVariant) {
     combined = "" + formatResult + " \u00B7 " + suffix;
   }
   obj2[4] = combined;
-  items1[1] = callback(iconSize(4281).Text, obj2);
+  items1[1] = callback(iconSize(4251).Text, obj2);
   obj[1] = items1;
   const tmp7Result = closure_5(View, obj);
   let tmp11Result = tmp7Result;
@@ -73,7 +73,7 @@ export default function MessageRequestMutualServers(textVariant) {
       const obj3 = { accessibilityRole: "button", onPress: null, children: null };
       obj3[1] = onPress;
       obj3[2] = tmp7Result;
-      tmp11Result = tmp11(tmp4(4812).PressableOpacity, obj3);
+      tmp11Result = tmp11(tmp4(4797).PressableOpacity, obj3);
     }
   }
   return tmp11Result;

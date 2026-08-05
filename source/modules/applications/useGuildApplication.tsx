@@ -1,10 +1,10 @@
-// Module ID: 16639
-// Function ID: 16640
+// Module ID: 16620
+// Function ID: 16621
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 4322, 589, 5611, 4184, 2]
+// Dependencies: [5, 32, 19, 4292, 589, 5596, 4154, 2]
 // Exports: default
 
-// Module 16639 (useGuildApplication)
+// Module 16620 (useGuildApplication)
 import fetchApplication from "fetchApplication";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -40,7 +40,7 @@ export default function useGuildApplication(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {

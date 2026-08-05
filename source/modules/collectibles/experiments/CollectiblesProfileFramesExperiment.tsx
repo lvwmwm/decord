@@ -1,10 +1,10 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8702
+// Function ID: 8703
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsProfileFramesEnabled
 
-// Module 8730 (apexExperiment)
+// Module 8702 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-collectibles-profile-frames", kind: "user", defaultConfig: { enableProfileFrames: false }, variations: { 0: { enableProfileFrames: false }, 1: { enableProfileFrames: true } } });

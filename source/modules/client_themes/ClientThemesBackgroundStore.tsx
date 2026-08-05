@@ -1,9 +1,9 @@
-// Module ID: 4097
-// Function ID: 4098
+// Module ID: 4067
+// Function ID: 4068
 // Name: isSyncedModeThemesEnabled
-// Dependencies: [1303, 1302, 1304, 1340, 1376, 1372, 1874, 4098, 1305, 1348, 4101, 1358, 4124, 3931, 3958, 1347, 4127, 589, 4128, 709, 2]
+// Dependencies: [1303, 1302, 1304, 1340, 1376, 1372, 1874, 4068, 1305, 1348, 4071, 1358, 4094, 3901, 3928, 1347, 4097, 589, 4098, 709, 2]
 
-// Module 4097 (isSyncedModeThemesEnabled)
+// Module 4067 (isSyncedModeThemesEnabled)
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
@@ -11,7 +11,7 @@ import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { isGuildTextChannelType } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
-import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_12 } from "items1";
+import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_12 } from "ThemeTypes";
 import { SystemThemeState } from "SystemThemeState";
 import { PersistedStore } from "initialize";
 
@@ -23,20 +23,22 @@ function reset() {
   if (c14) {
     let c3;
   }
+  let c16 = false;
   let c15 = false;
 }
 function handleUserStoreChange() {
-  const tmp = !importDefault(3931).canUseClientThemes(currentUser.getCurrentUser());
+  const tmp = !importDefault(3901).canUseClientThemes(currentUser.getCurrentUser());
   if (tmp === c14) {
     return false;
   } else {
     c14 = tmp;
+    let c16 = false;
   }
-  const obj = importDefault(3931);
+  const obj = importDefault(3901);
 }
 function handleSelectivelySyncedStoreChange() {
   if (initialize.shouldSync("appearance")) {
-    const ClientThemeSettings = require(3958) /* explicitContentFromProto */.ClientThemeSettings;
+    const ClientThemeSettings = require(3928) /* explicitContentFromProto */.ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     if (null == backgroundGradientPresetId) {
       if (null == c3) {
@@ -61,18 +63,19 @@ function handleSameAsDeviceThemeToggle() {
 }
 function handleUserSettingsProtoStoreUpdate() {
   if (initialize.shouldSync("appearance")) {
-    const ClientThemeSettings = require(3958) /* explicitContentFromProto */.ClientThemeSettings;
+    const ClientThemeSettings = require(3928) /* explicitContentFromProto */.ClientThemeSettings;
     const backgroundGradientPresetId = ClientThemeSettings.getSetting().backgroundGradientPresetId;
     let result = useSystemTheme.useSystemTheme !== SystemThemeState.ON;
     if (!result) {
       result = null == backgroundGradientPresetId;
     }
     if (!result) {
-      result = handleThemeChange.isSameAsDeviceThemeEnabled();
+      let tmpResult = tmp(1347);
+      result = tmpResult.isPerModeThemingActive(isSyncedModeThemesEnabled);
     }
     if (!result) {
-      require(4127) /* setSystemTheme */.setUseSystemTheme(SystemThemeState.OFF);
-      const tmpResult = require(4127) /* setSystemTheme */;
+      tmpResult = tmp(4097);
+      tmpResult.setUseSystemTheme(SystemThemeState.OFF);
     }
     if (null != backgroundGradientPresetId) {
       let tmp13 = null == tmp12;
@@ -99,6 +102,7 @@ function handleUserSettingsProtoStoreUpdate() {
 }
 let c14 = true;
 let c15 = false;
+let c16 = false;
 class ClientThemesBackgroundStore extends PersistedStore {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -119,16 +123,14 @@ class ClientThemesBackgroundStore extends PersistedStore {
 }
 const prototype = ClientThemesBackgroundStore.prototype;
 prototype["initialize"] = function initialize(gradientPresetId) {
+  let c16 = false;
   if (null != gradientPresetId) {
-    gradientPresetId = undefined;
-    if (gradientPresetId != null) {
-      gradientPresetId = gradientPresetId.gradientPresetId;
+    let tmp;
+    if (null != gradientPresetId.gradientPresetId) {
+      tmp = dependencyMap[gradientPresetId.gradientPresetId];
     }
-    let tmp2;
-    if (null != gradientPresetId) {
-      tmp2 = dependencyMap[gradientPresetId.gradientPresetId];
-    }
-    let closure_3 = tmp2;
+    let closure_3 = tmp;
+    let closure_14 = true !== gradientPresetId.canUseClientThemes;
   }
   this.waitFor(ensureGuildLoaded, initialize, handleThemeChange, CHANNEL_SIDEBAR_WIDTH, handleConnectionClosedOrResumed, mergeGuildAvatar);
   const items = [mergeGuildAvatar];
@@ -144,7 +146,7 @@ prototype["getState"] = function getState() {
     if (user != null) {
       id = user.id;
     }
-    obj = { gradientPresetId: null };
+    obj = { gradientPresetId: null, canUseClientThemes: true };
     obj[0] = id;
   }
   return obj;
@@ -152,16 +154,24 @@ prototype["getState"] = function getState() {
 Object.defineProperty(prototype, "gradientPreset", {
   get: function gradientPreset() {
     if (obj.isPerModeThemingActive(isSyncedModeThemesEnabled)) {
-      const syncedClientTheme = handleThemeChange.getSyncedClientTheme(handleThemeChange.systemTheme);
-      let prop;
-      if (syncedClientTheme != null) {
-        prop = syncedClientTheme.backgroundGradientPresetId;
+      if (c14) {
+        let tmp10;
+        if (c16) {
+          tmp10 = closure_3;
+        }
+        return tmp10;
+      } else {
+        syncedClientTheme = syncedClientTheme.getSyncedClientTheme(syncedClientTheme.systemTheme);
+        let prop;
+        if (syncedClientTheme != null) {
+          prop = syncedClientTheme.backgroundGradientPresetId;
+        }
+        let tmp7;
+        if (null != prop) {
+          tmp7 = dependencyMap[prop];
+        }
+        return tmp7;
       }
-      let tmp6;
-      if (null != prop) {
-        tmp6 = dependencyMap[prop];
-      }
-      return tmp6;
     } else {
       return closure_3;
     }
@@ -172,8 +182,8 @@ Object.defineProperty(prototype, "gradientPreset", {
 prototype["getLinearGradient"] = function getLinearGradient() {
   let linearGradientForBackgroundGradient = null;
   if (null != this.gradientPreset) {
-    linearGradientForBackgroundGradient = require(4128) /* getThemeForColor */.getLinearGradientForBackgroundGradient(tmp.gradientPreset);
-    const obj = require(4128) /* getThemeForColor */;
+    linearGradientForBackgroundGradient = require(4098) /* getThemeForColor */.getLinearGradientForBackgroundGradient(tmp.gradientPreset);
+    const obj = require(4098) /* getThemeForColor */;
   }
   return linearGradientForBackgroundGradient;
 };
@@ -200,6 +210,7 @@ ClientThemesBackgroundStore.persistKey = "ClientThemesBackgroundStore";
 const clientThemesBackgroundStore = new ClientThemesBackgroundStore(require("dispatcher"), {
   UPDATE_BACKGROUND_GRADIENT_PRESET: function handleUpdateBackgroundGradientPreset(presetId) {
     presetId = presetId.presetId;
+    let closure_16 = c14;
     let tmp;
     if (null != presetId) {
       tmp = dependencyMap[presetId];
@@ -216,6 +227,7 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(require("dis
   },
   RESET_PREVIEW_CLIENT_THEME: function handleResetPreviewClientTheme() {
     let c3;
+    let c16 = false;
   },
   CLIENT_THEMES_EDITOR_CLOSE: reset,
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
@@ -233,9 +245,9 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(require("dis
               let c15 = true;
             }
           }
-          tmp6Result = tmp6(4124);
+          tmp6Result = tmp6(4094);
         }
-        obj2 = require(4101) /* UNSAFE_isDismissibleContentDismissed */;
+        obj2 = require(4071) /* UNSAFE_isDismissibleContentDismissed */;
         tmp6 = require;
       }
     }

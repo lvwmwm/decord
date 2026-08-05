@@ -1,10 +1,10 @@
-// Module ID: 12416
-// Function ID: 12417
+// Module ID: 12388
+// Function ID: 12389
 // Name: isShoppableCollectibleSku
-// Dependencies: [12417, 2]
+// Dependencies: [12389, 2]
 // Exports: isShoppableCollectibleSku
 
-// Module 12416 (isShoppableCollectibleSku)
+// Module 12388 (isShoppableCollectibleSku)
 const result = require("set").fileFinishedImporting("modules/collectibles/shop_this_look/ShopThisLookUtils.tsx");
 
 export const isShoppableCollectibleSku = function isShoppableCollectibleSku(stateFromStores) {
@@ -18,7 +18,7 @@ export const isShoppableCollectibleSku = function isShoppableCollectibleSku(stat
         sourceType = collectibles.sourceType;
       }
     }
-    tmp = sourceType === require(12417) /* CollectiblesSKUSourceType */.CollectiblesSKUSourceType.SHOP;
+    tmp = sourceType === require(12389) /* CollectiblesSKUSourceType */.CollectiblesSKUSourceType.SHOP;
   }
   return tmp;
 };

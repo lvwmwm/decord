@@ -1,10 +1,10 @@
-// Module ID: 15458
-// Function ID: 15459
+// Module ID: 15439
+// Function ID: 15440
 // Name: _maybeFetchGuildDiscoveryCategories
-// Dependencies: [5, 1946, 15459, 676, 530, 709, 2]
+// Dependencies: [5, 1946, 15440, 676, 530, 709, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 15458 (_maybeFetchGuildDiscoveryCategories)
+// Module 15439 (_maybeFetchGuildDiscoveryCategories)
 import dispatcher from "dispatcher";
 import _getSystemLocale from "_getSystemLocale";
 import getPrimaryCategories from "getPrimaryCategories";
@@ -25,7 +25,7 @@ function _maybeFetchGuildDiscoveryCategories() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -110,7 +110,7 @@ function _fetchMetadataForGuild() {
       c4 = 0;
       const obj2 = body(obj4[5]);
       obj2.dispatch({ type: "GUILD_DISCOVERY_METADATA_FETCH_FAIL" });
-      yield "HermesInternal";
+      yield "T";
       body = body.body;
       obj4 = { primaryCategoryId: null, secondaryCategoryIds: null, keywords: null, emojiDiscoverabilityEnabled: null, partnerActionedTimestamp: null, partnerApplicationTimestamp: null, isPublished: null, reasonsToJoin: null, socialLinks: null, about: null };
       obj4[0] = body.primary_category_id;
@@ -214,7 +214,7 @@ function _saveGuildMetadata() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -255,7 +255,7 @@ function _saveGuildMetadata() {
               let about;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -337,7 +337,7 @@ function _saveGuildMetadata() {
             obj7.dispatch(obj6);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp18) {
           c3 = tmp18;

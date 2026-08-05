@@ -1,10 +1,10 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7210
+// Function ID: 7211
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 7228, 676, 7229, 709, 530, 2]
+// Dependencies: [5, 4783, 676, 4784, 709, 530, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 7238 (_fetchGameAutocomplete)
+// Module 7210 (_fetchGameAutocomplete)
 import sendRequest from "sendRequest";
 import set from "set";
 import { Endpoints } from "ME";
@@ -29,7 +29,7 @@ function _fetchGameAutocomplete() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

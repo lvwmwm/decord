@@ -1,9 +1,9 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8818
+// Function ID: 8819
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 8846 (enforcing)
+// Module 8818 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeShareManagerModule");

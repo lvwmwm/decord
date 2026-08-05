@@ -1,29 +1,29 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11829
+// Function ID: 11830
 // Name: getBoostRowMessageText
-// Dependencies: [1236, 2317, 11852, 2]
+// Dependencies: [1236, 2287, 11824, 2]
 // Exports: default
 
-// Module 11857 (getBoostRowMessageText)
+// Module 11829 (getBoostRowMessageText)
 const result = require("BOOST_EXPIRING_DISPLAY_WINDOW_DAYS").fileFinishedImporting("modules/premium/powerups/utils/getBoostRowMessageText.tsx");
 
 export default function getBoostRowMessageText(phase) {
   phase = phase.phase;
   if ("gave" === phase) {
     const intl3 = require(1236) /* getSystemLocale */.intl;
-    return intl3.string(importDefault(2317).plwH8d);
+    return intl3.string(importDefault(2287).plwH8d);
   } else if ("expiring" === phase) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     let endsAt = phase.boost.endsAt;
     if (endsAt == null) {
       const _Date = Date;
-      endsAt = new Date(phase.sortKey + require(11852) /* BOOST_EXPIRING_DISPLAY_WINDOW_DAYS */.BOOST_EXPIRING_DISPLAY_WINDOW_MS);
+      endsAt = new Date(phase.sortKey + require(11824) /* BOOST_EXPIRING_DISPLAY_WINDOW_DAYS */.BOOST_EXPIRING_DISPLAY_WINDOW_MS);
     }
     const obj = { date: null };
     obj[0] = endsAt;
-    return intl2.formatToPlainString(importDefault(2317).vct4l8, obj);
+    return intl2.formatToPlainString(importDefault(2287).vct4l8, obj);
   } else if ("expired" === phase) {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2317).hSXjlI);
+    return intl.string(importDefault(2287).hSXjlI);
   }
 };

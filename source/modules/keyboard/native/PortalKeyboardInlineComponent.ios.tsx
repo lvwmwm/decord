@@ -1,8 +1,8 @@
-// Module ID: 11906
-// Function ID: 11907
-// Dependencies: [19, 17, 4277, 4151, 1847, 5913, 1579, 4711, 4152, 4144, 4155, 11335, 2]
+// Module ID: 11878
+// Function ID: 11879
+// Dependencies: [19, 17, 4247, 4121, 1847, 5898, 1579, 4681, 4122, 4114, 4125, 11307, 2]
 
-// Module 11906
+// Module 11878
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -22,13 +22,13 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
   let field1;
   let closure_7;
   id = importAllResult.useId();
-  const tmp2 = id(4151)();
+  const tmp2 = id(4121)();
   dependencyMap = tmp2;
-  let tmp4 = id(5913)({ includeCustomKeyboard: false });
+  let tmp4 = id(5898)({ includeCustomKeyboard: false });
   importAllResult = tmp4;
   let tmp3 = id(1847)();
-  keyboardContextForType = messagesRef(4151).useKeyboardContextForType(messagesRef(1579).KeyboardTypes.SYSTEM);
-  id(4711)(() => () => {
+  keyboardContextForType = messagesRef(4121).useKeyboardContextForType(messagesRef(1579).KeyboardTypes.SYSTEM);
+  id(4681)(() => () => {
     const PortalKeyboardUIStore = outer1_0(outer1_2[8]).PortalKeyboardUIStore;
     const field = PortalKeyboardUIStore.getField("keyboard");
     let tmp4 = null != field;
@@ -42,9 +42,9 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
       tmpResult.closePortalKeyboard();
     }
   });
-  let PortalKeyboardUIStore = messagesRef(4152).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = messagesRef(4122).PortalKeyboardUIStore;
   field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = messagesRef(4152).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = messagesRef(4122).PortalKeyboardUIStore;
   field1 = PortalKeyboardUIStore2.useField("state");
   closure_7 = importAllResult.useRef(false);
   const items = [messagesRef.channelId, id, field, field1, tmp2, messagesRef, keyboardContextForType, tmp3, tmp4];

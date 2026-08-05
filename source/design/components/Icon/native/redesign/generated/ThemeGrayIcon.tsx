@@ -1,10 +1,10 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15346
+// Function ID: 15347
 // Name: ThemeGrayIcon
-// Dependencies: [19, 21, 712, 3988, 15366, 2]
+// Dependencies: [19, 21, 712, 3958, 15347, 2]
 // Exports: ThemeGrayIcon
 
-// Module 15365 (ThemeGrayIcon)
+// Module 15346 (ThemeGrayIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ThemeGrayIcon = function ThemeGrayIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15366) /* registerAsset */;
+  obj[0] = require(15347) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

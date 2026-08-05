@@ -1,10 +1,10 @@
-// Module ID: 11341
-// Function ID: 11342
+// Module ID: 11313
+// Function ID: 11314
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 7509, 4310, 589, 2]
+// Dependencies: [19, 7481, 4280, 589, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11341 (useDeveloperActivityShelfItems)
+// Module 11313 (useDeveloperActivityShelfItems)
 import noop from "noop";
 import initialize from "initialize";
 import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3";

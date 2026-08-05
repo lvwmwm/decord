@@ -1,9 +1,9 @@
-// Module ID: 16845
-// Function ID: 16846
+// Module ID: 16826
+// Function ID: 16827
 // Name: makeLogLine
-// Dependencies: [676, 6856, 698, 5229, 2]
+// Dependencies: [676, 6841, 698, 5214, 2]
 
-// Module 16845 (makeLogLine)
+// Module 16826 (makeLogLine)
 import ME from "ME";
 import "initialize";
 
@@ -41,13 +41,13 @@ function makeLogLine(channelId) {
 function handleAppStateUpdate(state) {
   if (state.state === constants2.BACKGROUND) {
     const _Array = Array;
-    const fetchLogs = importDefault(6856).fetchLogs;
+    const fetchLogs = importDefault(6841).fetchLogs;
     const mapped = Array.from(fetchLogs.values()).map(makeLogLine);
     let obj = importDefault(698);
     obj = { num_channels_fetch_started: null, num_channels_local_cached: null, num_channels_fetched_network: null, num_times_backgrounded: null, fetch_entries: null };
-    obj[0] = importDefault(6856).channelsFetchStarted.size;
-    obj[1] = importDefault(6856).channelsFetchedWithLocalMessages.size;
-    obj[2] = importDefault(6856).channelsFetchedNetwork.size;
+    obj[0] = importDefault(6841).channelsFetchStarted.size;
+    obj[1] = importDefault(6841).channelsFetchedWithLocalMessages.size;
+    obj[2] = importDefault(6841).channelsFetchedNetwork.size;
     const sum = c4 + 1;
     c4 = sum;
     obj[3] = sum;

@@ -1,10 +1,10 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13775
+// Function ID: 13776
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1874, 21, 5610, 5630, 589, 8118, 13804, 2]
+// Dependencies: [19, 1874, 21, 5595, 5615, 589, 8090, 13776, 2]
 // Exports: default
 
-// Module 13803 (UserSettingsEditUserProfile)
+// Module 13775 (UserSettingsEditUserProfile)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -26,13 +26,13 @@ export default function UserSettingsEditUserProfile(arg0) {
   let tmp7 = null;
   if (null != stateFromStores) {
     obj = { value: null, children: null };
-    obj[0] = tmp3(importDefault(5630).USER_SETTINGS_USER_PROFILE).analyticsLocations;
+    obj[0] = tmp3(importDefault(5615).USER_SETTINGS_USER_PROFILE).analyticsLocations;
     obj = { currentUser: null };
     obj[0] = stateFromStores;
     const merged = Object.assign(arg0);
-    obj[1] = jsx(importDefault(13804), { currentUser: null });
-    tmp7 = jsx(stateFromStores(5610).AnalyticsLocationProvider, { currentUser: null });
-    const tmpResult = importDefault(13804);
+    obj[1] = jsx(importDefault(13776), { currentUser: null });
+    tmp7 = jsx(stateFromStores(5595).AnalyticsLocationProvider, { currentUser: null });
+    const tmpResult = importDefault(13776);
   }
   return tmp7;
 };

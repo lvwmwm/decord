@@ -1,22 +1,22 @@
-// Module ID: 10259
-// Function ID: 10260
+// Module ID: 10231
+// Function ID: 10232
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [9587, 10260, 10261, 10258, 10257, 2]
+// Dependencies: [9558, 10232, 10233, 10230, 10229, 2]
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 10259 (useInappropriateConversationBannerForChannel)
+// Module 10231 (useInappropriateConversationBannerForChannel)
 import { SafetyWarningTypes } from "handleConnectionOpen";
 
 const result = require("useSafetyAlertsSettingOrDefault").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");
 
 export const useInappropriateConversationBannerForChannel = function useInappropriateConversationBannerForChannel(channelId, LOCATION_CONTEXT_MOBILE) {
-  let obj = require(10260) /* InappropriateConversationExperiment */;
+  let obj = require(10232) /* InappropriateConversationExperiment */;
   obj = { location: LOCATION_CONTEXT_MOBILE };
   const isEligibleForInappropriateConversationWarning = obj.useIsEligibleForInappropriateConversationWarning(obj);
-  const safetyAlertsSettingOrDefault = require(10261) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
-  const obj3 = require(10261) /* useSafetyAlertsSettingOrDefault */;
-  const inappropriateConversationWarningsForChannel = require(10258) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
-  require(10257) /* useChannelSafetyWarning */;
+  const safetyAlertsSettingOrDefault = require(10233) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
+  const obj3 = require(10233) /* useSafetyAlertsSettingOrDefault */;
+  const inappropriateConversationWarningsForChannel = require(10230) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
+  require(10229) /* useChannelSafetyWarning */;
   if (isEligibleForInappropriateConversationWarning) {
     if (safetyAlertsSettingOrDefault) {
       if (0 !== inappropriateConversationWarningsForChannel.length) {

@@ -1,10 +1,10 @@
-// Module ID: 9361
-// Function ID: 9362
+// Module ID: 9332
+// Function ID: 9333
 // Name: memo
-// Dependencies: [32, 19, 17, 678, 21, 4285, 712, 9362, 5368, 1236, 6922, 9363, 4281, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4255, 712, 9333, 5353, 1236, 6907, 9334, 4251, 2]
 // Exports: default
 
-// Module 9361 (memo)
+// Module 9332 (memo)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -118,7 +118,7 @@ let closure_16 = memo((arg0) => {
     return outer1_12(outer1_15, obj, item.skuId);
   });
   obj[1] = callback6(closure_9, obj);
-  return callback6(require(5368) /* Directions */.GestureDetector, obj);
+  return callback6(require(5353) /* Directions */.GestureDetector, obj);
 });
 let obj5 = { gap: require("Themes").space.PX_8 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/collectibles/native/BundleProductDetailsActionSheetPreview.tsx");
@@ -164,14 +164,14 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   if (name == null) {
     name = tmp8.skuId;
   }
-  let obj = onActiveItemChange(6922);
+  let obj = onActiveItemChange(6907);
   const collectibleTypeLabel = obj.getCollectibleTypeLabel(tmp8.type);
   const items1 = [items[num]];
   obj = { style: tmp.previewContainer, children: null };
   const tmp12 = onActiveItemChange;
   tmp4 = callback(callback5(product.skuId), 2);
   const items2 = [
-    callback6(onActiveItemChange(9363).IndividualProductPreview, {
+    callback6(onActiveItemChange(9334).IndividualProductPreview, {
       product: callback4(() => {
         const items = [_undefined];
         return { skuId: _undefined.skuId, type: _undefined.type, items };
@@ -184,11 +184,11 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   ];
   obj = { style: tmp.bundleContainer, children: null };
   const obj1 = { style: tmp.bundleInfoContainer, children: null };
-  const items3 = [callback6(onActiveItemChange(4281).Text, { variant: "heading-xl/bold", children: product.name }), ];
+  const items3 = [callback6(onActiveItemChange(4251).Text, { variant: "heading-xl/bold", children: product.name }), ];
   const obj3 = { variant: "text-sm/medium", color: "text-default", children: null };
   const intl = onActiveItemChange(1236).intl;
   obj3[2] = intl.formatToPlainString(onActiveItemChange(1236).t["/0Yndu"], { num: items.length });
-  items3[1] = callback6(onActiveItemChange(4281).Text, obj3);
+  items3[1] = callback6(onActiveItemChange(4251).Text, obj3);
   obj1[1] = items3;
   const items4 = [callback7(closure_10, obj1), ];
   const obj5 = { style: tmp.bundleInfoContainer, children: null };
@@ -199,10 +199,10 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const _HermesInternal = HermesInternal;
     obj6[2] = " - " + collectibleTypeLabel;
-    tmp18Result = callback6(tmp12(4281).Text, obj6);
+    tmp18Result = callback6(tmp12(4251).Text, obj6);
   }
   items6[1] = tmp18Result;
-  items5[1] = callback7(onActiveItemChange(4281).Text, { variant: "text-sm/medium", color: "text-default", children: items6 });
+  items5[1] = callback7(onActiveItemChange(4251).Text, { variant: "text-sm/medium", color: "text-default", children: items6 });
   obj5[1] = items5;
   items4[1] = callback7(closure_10, obj5);
   obj[1] = items4;

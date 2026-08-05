@@ -1,10 +1,10 @@
-// Module ID: 13832
-// Function ID: 13833
+// Module ID: 13805
+// Function ID: 13806
 // Name: FormControlText
-// Dependencies: [32, 19, 17, 21, 4285, 712, 4281, 7714, 4812, 1236, 5322, 500, 5651, 2]
-// Exports: UserProfileEditFormButton, UserProfileEditFormSwitch
+// Dependencies: [32, 19, 17, 21, 4255, 712, 4251, 7597, 1297, 1236, 7686, 4797, 5307, 500, 5636, 2]
+// Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 13832 (FormControlText)
+// Module 13805 (FormControlText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -18,7 +18,7 @@ let error;
 let require = arg1;
 function FormControlText(children) {
   const tmp = createCacheKey();
-  return callback2(require(4281) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", style: createCacheKey().formControlText, children: children.text });
+  return callback2(require(4251) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", style: createCacheKey().formControlText, children: children.text });
 }
 function FormControlSubtext(text) {
   text = text.text;
@@ -27,20 +27,59 @@ function FormControlSubtext(text) {
     const obj = { variant: "text-xs/medium", color: "text-muted", style: null, children: null };
     obj[2] = tmp.formControlText;
     obj[3] = text;
-    tmp2 = callback2(require(4281) /* Text */.Text, obj);
+    tmp2 = callback2(require(4251) /* Text */.Text, obj);
   }
   return tmp2;
 }
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-createCacheKey = { button: null, buttonTextContainer: null, formControlText: null };
+createCacheKey = { button: null, buttonTextContainer: null, formControlText: null, labelTrailing: null, newBadge: null };
 createCacheKey = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: require("Themes").colors.BORDER_STRONG, borderWidth: 1, borderRadius: require("Themes").radii.md };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { flexGrow: 1, flexShrink: 1, flexDirection: "column" };
 createCacheKey[2] = { marginRight: "auto", flexShrink: 1 };
+createCacheKey[3] = { flexDirection: "row", alignItems: "center", marginLeft: require("Themes").space.PX_4, gap: require("Themes").space.PX_4 };
+createCacheKey[4] = { paddingTop: 0 };
 createCacheKey = createCacheKey.createStyles(createCacheKey);
+let obj1 = { flexDirection: "row", alignItems: "center", marginLeft: require("Themes").space.PX_4, gap: require("Themes").space.PX_4 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
 
+export const UserProfileEditFormLabelBadges = function UserProfileEditFormLabelBadges(showPremiumIcon) {
+  let flag = showPremiumIcon.showPremiumIcon;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let flag2 = showPremiumIcon.showNewBadge;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  const tmp = createCacheKey();
+  if (flag) {
+    let obj = { style: null, "aria-hidden": true, children: null };
+    obj[0] = tmp.labelTrailing;
+    let tmp5 = null;
+    if (flag) {
+      tmp5 = callback2(require(7597) /* NitroWheelIcon */.NitroWheelIcon, { size: "xs" });
+    }
+    const items = [tmp5, ];
+    let tmp9 = null;
+    if (flag2) {
+      obj = { text: null, style: null };
+      const intl = require(1236) /* getSystemLocale */.intl;
+      obj[0] = intl.string(require(1236) /* getSystemLocale */.t.y2b7CA);
+      obj[1] = tmp.newBadge;
+      tmp9 = callback2(require(1297) /* Button */.TextBadge, obj);
+    }
+    items[1] = tmp9;
+    obj[2] = items;
+    let tmp3Result = closure_7(closure_5, obj);
+    const tmp3 = closure_7;
+    const tmp4 = closure_5;
+  } else {
+    tmp3Result = null;
+  }
+  return tmp3Result;
+};
 export const UserProfileEditFormButton = function UserProfileEditFormButton(loading) {
   let accessibilityValue;
   let buttonSubtext;
@@ -94,12 +133,12 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items[2] = trailing;
   tmp2Result = !flag2;
   if (!flag2) {
-    tmp2Result = tmp2(require(5322) /* TableRowArrow */.TableRowArrow, {});
+    tmp2Result = tmp2(require(5307) /* TableRowArrow */.TableRowArrow, {});
   }
   items[3] = tmp2Result;
   obj[8] = items;
-  obj[2] = closure_7(require(4812) /* PressableBase */.PressableHighlight, obj);
-  return closure_6(require(7714) /* Input */.Input, obj);
+  obj[2] = closure_7(require(4797) /* PressableBase */.PressableHighlight, obj);
+  return closure_6(require(7686) /* Input */.Input, obj);
 };
 export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0) {
   let accessibilityHint;
@@ -126,7 +165,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     callback(closure_0);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(4812).PressableHighlight;
+    let PressableHighlight = tmp2(4797).PressableHighlight;
   } else {
     PressableHighlight = closure_4;
   }
@@ -167,8 +206,8 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
   obj[5] = accessibilityHint;
   obj[6] = { disabled, checked: tmp5[0] };
   obj[7] = disabled;
-  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5651) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
+  const items1 = [closure_6(FormControlText, { text: subLabel }), closure_6(require(5636) /* FormSwitch */.FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   obj[8] = items1;
   obj[1] = closure_7(PressableHighlight, obj);
-  return closure_6(require(7714) /* Input */.Input, obj);
+  return closure_6(require(7686) /* Input */.Input, obj);
 };

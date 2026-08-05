@@ -1,10 +1,10 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 8841
+// Function ID: 8842
 // Name: useEventException
-// Dependencies: [6894, 589, 2]
+// Dependencies: [6879, 589, 2]
 // Exports: default, getEventException
 
-// Module 8869 (useEventException)
+// Module 8841 (useEventException)
 import scheduledEventSort from "scheduledEventSort";
 
 const require = arg1;

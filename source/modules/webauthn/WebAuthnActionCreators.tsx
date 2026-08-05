@@ -1,10 +1,10 @@
-// Module ID: 5740
-// Function ID: 5741
+// Module ID: 5725
+// Function ID: 5726
 // Name: _fetchWebAuthnConditionalChallenge
-// Dependencies: [5, 676, 530, 709, 5094, 663, 2]
+// Dependencies: [5, 676, 530, 709, 5079, 663, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 5740 (_fetchWebAuthnConditionalChallenge)
+// Module 5725 (_fetchWebAuthnConditionalChallenge)
 import ImpressionNames from "ImpressionNames";
 import { Endpoints } from "ME";
 
@@ -102,7 +102,7 @@ function _editWebAuthnCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ function _editWebAuthnCredential() {
               obj1.dispatch(obj5);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp22) {
           c5 = tmp;
@@ -223,7 +223,7 @@ function _finishRegisterWebAuthnCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -254,7 +254,7 @@ function _finishRegisterWebAuthnCredential() {
               c5 = 1;
               c6 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = callback(5094).post(obj1);
+              obj4[0] = callback(5079).post(obj1);
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -276,7 +276,7 @@ function _finishRegisterWebAuthnCredential() {
             obj6[1] = lib.body.backup_codes;
             obj6.dispatch(obj6);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp6) {
           c6 = tmp;

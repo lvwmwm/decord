@@ -1,10 +1,10 @@
-// Module ID: 15846
-// Function ID: 15847
+// Module ID: 15827
+// Function ID: 15828
 // Name: Settings
-// Dependencies: [19, 17, 21, 4285, 712, 15733, 1581, 7562, 4265, 4146, 15847, 2]
+// Dependencies: [19, 17, 21, 4255, 712, 15714, 1581, 7534, 4235, 4116, 15828, 2]
 // Exports: default
 
-// Module 15846 (Settings)
+// Module 15827 (Settings)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

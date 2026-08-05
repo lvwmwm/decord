@@ -1,9 +1,9 @@
-// Module ID: 12881
-// Function ID: 12882
+// Module ID: 12853
+// Function ID: 12854
 // Name: set
-// Dependencies: [1862, 5098, 12882, 676, 10668, 3867, 1236, 589, 709, 2]
+// Dependencies: [1862, 5083, 12854, 676, 10640, 3837, 1236, 589, 709, 2]
 
-// Module 12881 (set)
+// Module 12853 (set)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import recomputeGuild from "recomputeGuild";
 import LocalNotificationTypes from "LocalNotificationTypes";
@@ -28,7 +28,7 @@ prototype["isScheduled"] = function isScheduled(arg0) {
 LocalPushNotificationStore.displayName = "LocalPushNotificationStore";
 const localPushNotificationStore = new LocalPushNotificationStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleCheckScheduledNotifs() {
-    const scheduledLocalNotifications = importDefault(10668).getScheduledLocalNotifications((arr) => {
+    const scheduledLocalNotifications = importDefault(10640).getScheduledLocalNotifications((arr) => {
       const found = arr.filter((userInfo) => {
         let tmp = null != userInfo.userInfo;
         if (tmp) {
@@ -44,9 +44,9 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
             set.add(userInfo);
           }
         }
-        const result = callback(10668).cancelLocalNotifications(userInfo);
-        const obj = callback(10668);
-        const result1 = callback(10668).cancelLocalNotifications(userInfo);
+        const result = callback(10640).cancelLocalNotifications(userInfo);
+        const obj = callback(10640);
+        const result1 = callback(10640).cancelLocalNotifications(userInfo);
         set.delete(userInfo);
       });
     });
@@ -62,12 +62,12 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
         if (guild.verificationLevel === VerificationLevels.MEDIUM) {
           const verificationLevel = guild.verificationLevel;
           if (tmp2.MEDIUM === verificationLevel) {
-            let obj = importDefault(3867)(check.accountDeadline);
+            let obj = importDefault(3837)(check.accountDeadline);
           } else if (tmp2.HIGH === verificationLevel) {
-            obj = importDefault(3867)(check.memberDeadline);
+            obj = importDefault(3837)(check.memberDeadline);
           }
           if (null != obj) {
-            if (!obj.isSameOrBefore(importDefault(3867)(), "minute")) {
+            if (!obj.isSameOrBefore(importDefault(3837)(), "minute")) {
               obj = { type: null, guildId: null };
               obj[0] = constants.GUILD_VERIFICATION;
               obj[1] = guild.id;
@@ -78,8 +78,8 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
               obj[2] = guild.name;
               const intl = require(1236) /* getSystemLocale */.intl;
               obj[3] = intl.string(require(1236) /* getSystemLocale */.t["hrDBa+"]);
-              const result = tmp15(10668).scheduleLocalNotification(obj);
-              const tmp15Result = tmp15(10668);
+              const result = tmp15(10640).scheduleLocalNotification(obj);
+              const tmp15Result = tmp15(10640);
             }
             tmp15 = importDefault;
           }
@@ -90,14 +90,14 @@ const localPushNotificationStore = new LocalPushNotificationStore(require("dispa
   GUILD_DELETE: function handleGuildDelete(guild) {
     const obj = { type: constants.GUILD_VERIFICATION, guildId: guild.guild.id };
     if (set.has(obj)) {
-      const result = importDefault(10668).cancelLocalNotifications(obj);
+      const result = importDefault(10640).cancelLocalNotifications(obj);
       set.delete(obj);
-      const obj3 = importDefault(10668);
+      const obj3 = importDefault(10640);
     }
   },
   LOGOUT: function handleCancelAll() {
     set.clear();
-    const result = importDefault(10668).cancelAllLocalNotifications();
+    const result = importDefault(10640).cancelAllLocalNotifications();
   }
 });
 let result = set.fileFinishedImporting("modules/local_push_notification/native/LocalPushNotificationStore.tsx");

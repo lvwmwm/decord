@@ -1,10 +1,10 @@
-// Module ID: 14648
-// Function ID: 14649
+// Module ID: 14628
+// Function ID: 14629
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 676, 21, 4285, 712, 5910, 595, 9787, 1581, 5901, 4812, 1236, 8845, 9789, 12142, 7666, 4281, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4255, 712, 5895, 595, 9758, 1581, 5886, 4797, 1236, 8817, 9760, 12114, 7638, 4251, 2]
 // Exports: default
 
-// Module 14648 (UserSettingsPushNotificationLogs)
+// Module 14628 (UserSettingsPushNotificationLogs)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -62,7 +62,7 @@ export default function UserSettingsPushNotificationLogs() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -98,7 +98,7 @@ export default function UserSettingsPushNotificationLogs() {
               closure_0 = arg1;
               v0(closure_0);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } catch (tmp13) {
             c3 = tmp;
@@ -165,7 +165,7 @@ export default function UserSettingsPushNotificationLogs() {
   callback2 = tmp9;
   let obj = { style: tmp9.wrap, children: null };
   obj = { style: tmp9.searchWrap, children: null };
-  let items1 = [callback3(first(5901).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp[1], defaultValue: first }), ];
+  let items1 = [callback3(first(5886).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp[1], defaultValue: first }), ];
   obj = { style: tmp9.shareButton, accessibilityLabel: null, onPress: null, children: null };
   const intl = first(1236).intl;
   obj[1] = intl.string(first(1236).t.leICvh);
@@ -181,7 +181,7 @@ export default function UserSettingsPushNotificationLogs() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -202,7 +202,7 @@ export default function UserSettingsPushNotificationLogs() {
             dependencyMap = 1;
             c3 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(9787)();
+            obj1[0] = outer1_1(9758)();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -215,12 +215,12 @@ export default function UserSettingsPushNotificationLogs() {
           return obj2;
         } else {
           closure_0 = arg1;
-          obj = outer1_0(8845);
+          obj = outer1_0(8817);
           const obj3 = { message: null };
-          obj3[0] = outer1_1(9789)(closure_0, false);
+          obj3[0] = outer1_1(9760)(closure_0, false);
           obj.showShareActionSheet(obj3, "push-notification-logs");
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } catch (tmp16) {
         c3 = tmp;
@@ -228,8 +228,8 @@ export default function UserSettingsPushNotificationLogs() {
       }
     }
   });
-  obj[3] = callback3(first(12142).ShareIcon, {});
-  items1[1] = callback3(first(4812).PressableOpacity, obj);
+  obj[3] = callback3(first(12114).ShareIcon, {});
+  items1[1] = callback3(first(4797).PressableOpacity, obj);
   obj[1] = items1;
   let items2 = [callback4(View, obj), ];
   let obj1 = { contentContainerStyle: null, data: null, renderItem: null };
@@ -247,16 +247,16 @@ export default function UserSettingsPushNotificationLogs() {
     let obj = { style: tmp9.log, children: null };
     obj = { style: tmp9.code, variant: "text-xs/normal", children: null };
     obj[2] = new Date(item.receivedTimestamp).toISOString();
-    const items = [outer1_7(first(4281).Text, obj), ];
+    const items = [outer1_7(first(4251).Text, obj), ];
     obj = { style: tmp9.code, variant: "text-sm/normal", children: null };
     const items1 = [str, "[", item.type, "]", " "];
-    const items2 = [outer1_8(first(4281).Text, { style: tmp9.code, variant: "text-sm/normal", color: "text-brand", children: items1 }), item.title, " - ", item.content];
+    const items2 = [outer1_8(first(4251).Text, { style: tmp9.code, variant: "text-sm/normal", color: "text-brand", children: items1 }), item.title, " - ", item.content];
     obj[2] = items2;
-    items[1] = outer1_8(first(4281).Text, obj);
+    items[1] = outer1_8(first(4251).Text, obj);
     obj[1] = items;
     return outer1_8(outer1_6, obj, item.index);
   };
-  items2[1] = callback3(first(7666).FlashList, obj1);
+  items2[1] = callback3(first(7638).FlashList, obj1);
   obj[1] = items2;
   return callback4(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11865
-// Function ID: 11866
+// Module ID: 11837
+// Function ID: 11838
 // Name: loadMessageRequestData
-// Dependencies: [5, 4502, 4297, 11866, 676, 589, 12, 530, 709, 2]
+// Dependencies: [5, 4472, 4267, 11838, 676, 589, 12, 530, 709, 2]
 // Exports: useMessageRequestPreview
 
-// Module 11865 (loadMessageRequestData)
+// Module 11837 (loadMessageRequestData)
 import initialize from "initialize";
 import reinjectEphemerals from "reinjectEphemerals";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
@@ -37,7 +37,7 @@ function _loadMessageRequestData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ function _loadMessageRequestData() {
               c3 = 0;
               let c9 = null;
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             } else {
               callback();
               v0 = 2;
@@ -126,7 +126,7 @@ function _loadMessageRequestDataHelper() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       while (true) {

@@ -1,10 +1,10 @@
-// Module ID: 4347
-// Function ID: 4348
+// Module ID: 4317
+// Function ID: 4318
 // Name: apexExperiment
-// Dependencies: [4338, 1452, 4342, 589, 2]
+// Dependencies: [4308, 1452, 4312, 589, 2]
 // Exports: isClipsSettingsRedesignEnabled, useDisabledWhenAutoclippingOff, useDisabledWhenClippingOff, useIsClipsSettingsRedesignEnabled
 
-// Module 4347 (apexExperiment)
+// Module 4317 (apexExperiment)
 import _migrateDefaultStorage from "_migrateDefaultStorage";
 import ApexExperiment from "ApexExperiment";
 
@@ -34,7 +34,7 @@ export const useDisabledWhenAutoclippingOff = function useDisabledWhenAutoclippi
   if (enableRedesign2) {
     enableRedesign2 = !obj.useIsClipsEnabled();
   }
-  obj = require(4342) /* isClipsEnabled */;
+  obj = require(4312) /* isClipsEnabled */;
   const tmp = require;
   const items = [_migrateDefaultStorage];
   if (!enableRedesign2) {

@@ -1,10 +1,10 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8065
+// Function ID: 8066
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 4199, 6910, 678, 589, 6957, 6909, 2]
+// Dependencies: [32, 19, 4169, 6895, 678, 589, 6942, 6894, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 8093 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 8065 (useMaybeFetchCollectiblesCategoriesShared)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getHash from "getHash";

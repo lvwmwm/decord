@@ -10,7 +10,7 @@ import set from "Storage";
 
 const require = arg1;
 let closure_3 = ["_state", "_version"];
-let closure_6 = { _state: "body", _version: "useStateFromStores" };
+let closure_6 = { _state: "Array", _version: "PX_8" };
 let c7 = null;
 let PersistedStore;
 class PersistedStore extends r10016 {
@@ -231,7 +231,7 @@ PersistedStore["migrateAndReadStoreState"] = function migrateAndReadStoreState(E
     if (PersistedStore.shouldClear(c7, EmojiStore)) {
       const Storage2 = require(595) /* Storage */.Storage;
       Storage2.remove(EmojiStore);
-      return { state: "ct", requiresPersist: "Array" };
+      return { state: "PX_8", requiresPersist: "Array" };
     }
   }
   let value = null;

@@ -1,10 +1,10 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8629
+// Function ID: 8630
 // Name: Emoji
-// Dependencies: [19, 17, 4102, 21, 4285, 712, 8658, 3930, 5236, 4281, 8659, 3926, 8563, 8660, 1236, 7777, 4695, 8662, 2]
+// Dependencies: [19, 17, 4072, 21, 4255, 712, 8630, 3900, 5221, 4251, 8631, 3896, 8535, 8632, 1236, 7749, 4665, 8634, 2]
 // Exports: default
 
-// Module 8657 (Emoji)
+// Module 8629 (Emoji)
 import noop from "noop";
 import { View } from "_updateEmoji";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -19,9 +19,9 @@ function Emoji(surrogate) {
   surrogate = surrogate.surrogate;
   let obj = {};
   const merged = Object.assign(createCacheKey());
-  let obj1 = require(8658) /* styles */;
+  let obj1 = require(8630) /* styles */;
   const merged1 = Object.assign(obj1.useSharedMessageEmojiStyles());
-  let obj2 = importDefault(3930);
+  let obj2 = importDefault(3900);
   const uRL = obj2.getURL(surrogate);
   obj = { style: obj.emojiWrapper, children: null };
   if ("" !== uRL) {
@@ -30,12 +30,12 @@ function Emoji(surrogate) {
     obj1 = { uri: null };
     obj1[0] = uRL;
     obj[2] = obj1;
-    let tmp7Result = tmp7(importDefault(5236), obj);
+    let tmp7Result = tmp7(importDefault(5221), obj);
   } else {
     obj2 = { style: null, variant: "text-md/medium", children: null };
     obj2[0] = obj.emojiSurrogate;
     obj2[2] = surrogate;
-    tmp7Result = tmp7(require(4281) /* Text */.Text, obj2);
+    tmp7Result = tmp7(require(4251) /* Text */.Text, obj2);
   }
   obj[1] = tmp7Result;
   return closure_6(View, obj);

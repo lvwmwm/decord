@@ -1,10 +1,10 @@
-// Module ID: 8241
-// Function ID: 8242
+// Module ID: 8213
+// Function ID: 8214
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4270, 4103, 676, 589, 5278, 2]
+// Dependencies: [5, 32, 19, 4240, 4073, 676, 589, 5263, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 8241 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 8213 (useCanReapplyToRejectedMemberVerificationApplication)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -45,7 +45,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
           c4 = 0;
           outer1_1(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         } catch (tmp18) {
           ME = tmp18;
           if (tmp4 === c4) {

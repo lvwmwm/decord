@@ -1,10 +1,10 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14343
+// Function ID: 14344
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 14341, 1876, 1236, 14367, 2]
+// Dependencies: [19, 14316, 1876, 1236, 14342, 2]
 // Exports: default
 
-// Module 14368 (useTrialIntervalOptions)
+// Module 14343 (useTrialIntervalOptions)
 import noop from "noop";
 import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -22,9 +22,9 @@ export default function useTrialIntervalOptions(arg0) {
         if (7 === interval.interval_count) {
           const intl = lib(1236).intl;
           obj = { defaultLimit: null };
-          obj[0] = lib(14367).formatPlanIntervalDuration(interval);
+          obj[0] = lib(14342).formatPlanIntervalDuration(interval);
           let formatToPlainStringResult = intl.formatToPlainString(lib(1236).t.XfSsr1, obj);
-          const obj4 = lib(14367);
+          const obj4 = lib(14342);
         }
         obj[1] = formatToPlainStringResult;
         let tmp5 = interval.interval === tmp.DAY;
@@ -34,7 +34,7 @@ export default function useTrialIntervalOptions(arg0) {
         obj[2] = tmp5;
         return obj;
       }
-      formatToPlainStringResult = lib(14367).formatPlanIntervalDuration(interval);
+      formatToPlainStringResult = lib(14342).formatPlanIntervalDuration(interval);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

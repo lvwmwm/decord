@@ -1,10 +1,10 @@
-// Module ID: 12726
-// Function ID: 12727
+// Module ID: 12698
+// Function ID: 12699
 // Name: getViewerProductId
-// Dependencies: [19, 6797, 5767, 1876, 6780, 5770, 500, 5764, 3946, 589, 2]
+// Dependencies: [19, 6782, 5752, 1876, 6765, 5755, 500, 5749, 3916, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12726 (getViewerProductId)
+// Module 12698 (getViewerProductId)
 import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 import updateProduct from "updateProduct";
@@ -16,7 +16,7 @@ function getViewerProductId(subscription) {
     return null;
   } else {
     try {
-      return require(6780) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
+      return require(6765) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
     } catch (err) {
       return tmp;
     }

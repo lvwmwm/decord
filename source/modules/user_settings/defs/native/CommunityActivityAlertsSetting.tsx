@@ -1,9 +1,9 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14579
+// Function ID: 14580
 // Name: route
-// Dependencies: [9667, 7892, 676, 589, 1236, 10361, 14599, 2]
+// Dependencies: [9638, 7864, 676, 589, 1236, 10333, 14580, 2]
 
-// Module 14598 (route)
+// Module 14579 (route)
 import computeAlertSettings from "computeAlertSettings";
 import createToggle from "createToggle";
 
@@ -27,7 +27,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.COMMUNITY_ALERTS,
   getComponent() {
-    return require(14599) /* UserSettingsCommunityNotifications */.default;
+    return require(14580) /* UserSettingsCommunityNotifications */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

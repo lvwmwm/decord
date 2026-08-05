@@ -1,10 +1,10 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15831
+// Function ID: 15832
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 7892, 21, 1236, 1351, 3931, 10361, 13794, 2]
+// Dependencies: [19, 7864, 21, 1236, 1351, 3901, 10333, 13766, 2]
 // Exports: default
 
-// Module 15850 (SettingsOverviewScreen)
+// Module 15831 (SettingsOverviewScreen)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/overview/native/SettingsOverviewScreen.tsx");
 
 export default function SettingsOverviewScreen() {
-  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(3931).useHasPremiumSubscriptionToDisplay();
+  hasPremiumSubscriptionToDisplay = hasPremiumSubscriptionToDisplay(3901).useHasPremiumSubscriptionToDisplay();
   let items = [hasPremiumSubscriptionToDisplay];
   const node = React.useMemo(() => {
     let obj = hasPremiumSubscriptionToDisplay(outer1_1[6]);
@@ -45,8 +45,8 @@ export default function SettingsOverviewScreen() {
     const obj2 = { label: null, settings: null };
     const intl3 = tmp(tmp2[3]).intl;
     obj2[0] = intl3.string(hasPremiumSubscriptionToDisplay(outer1_1[3]).t.f2n1TP);
-    const items3 = [, , , , , , , , ];
-    ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], WEB_BROWSER: arr4[5], NOTIFICATIONS: arr4[6], APP_ICONS: arr4[7], ADVANCED: arr4[8] } = outer1_3);
+    const items3 = [, , , , , , , , , ];
+    ({ VOICE: arr4[0], APPEARANCE: arr4[1], ACCESSIBILITY: arr4[2], LANGUAGE: arr4[3], CHAT: arr4[4], TYPING_INDICATOR: arr4[5], WEB_BROWSER: arr4[6], NOTIFICATIONS: arr4[7], APP_ICONS: arr4[8], ADVANCED: arr4[9] } = outer1_3);
     obj2[1] = items3.filter(hasPremiumSubscriptionToDisplay(outer1_1[4]).isNotNullish);
     items1[2] = obj2;
     const obj3 = { label: null, settings: null };
@@ -87,5 +87,5 @@ export default function SettingsOverviewScreen() {
     obj1[0] = items1;
     return obj.createList(obj1);
   }, items);
-  return jsx(hasPremiumSubscriptionToDisplay(13794).SearchableSettingsList, { node });
+  return jsx(hasPremiumSubscriptionToDisplay(13766).SearchableSettingsList, { node });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15008
-// Function ID: 15009
+// Module ID: 14988
+// Function ID: 14989
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 1218, 676, 21, 4285, 712, 1480, 589, 5736, 8283, 1236, 8310, 15009, 4281, 5117, 4695, 2]
+// Dependencies: [19, 17, 1218, 676, 21, 4255, 712, 1480, 589, 5721, 8255, 1236, 8282, 14989, 4251, 5102, 4665, 2]
 // Exports: default
 
-// Module 15008 (AccountDisabledOrDeletionScheduled)
+// Module 14988 (AccountDisabledOrDeletionScheduled)
 import noop from "noop";
 import { View } from "set";
 import fetchFingerprint from "fetchFingerprint";

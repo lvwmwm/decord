@@ -1,9 +1,9 @@
-// Module ID: 7232
-// Function ID: 7233
+// Module ID: 7204
+// Function ID: 7205
 // Name: handleUserUpdate
-// Dependencies: [32, 1372, 1942, 5805, 4371, 4962, 1874, 676, 12, 11, 3918, 4124, 1351, 589, 709, 2]
+// Dependencies: [32, 1372, 1942, 5790, 4341, 4947, 1874, 676, 12, 11, 3888, 4094, 1351, 589, 709, 2]
 
-// Module 7232 (handleUserUpdate)
+// Module 7204 (handleUserUpdate)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -280,7 +280,7 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
   }
   let canResult = null != user && null != channel;
   if (canResult) {
-    let obj = importAll(3918);
+    let obj = importAll(3888);
     obj = { permission: null, user: null, context: null };
     obj[0] = constants2.VIEW_CHANNEL;
     obj[1] = user;
@@ -306,8 +306,8 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4124).getName(user);
-    const obj3 = importDefault(4124);
+    nick = importDefault(4094).getName(user);
+    const obj3 = importDefault(4094);
   }
   const items = [str, , ];
   let formatted;

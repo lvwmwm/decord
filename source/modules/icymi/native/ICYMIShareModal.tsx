@@ -1,10 +1,10 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15472
+// Function ID: 15473
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1372, 4621, 4620, 676, 9539, 4278, 21, 4285, 712, 8882, 1236, 15492, 3986, 1474, 4132, 8202, 15493, 4814, 4096, 3997, 5310, 10170, 10179, 4695, 4490, 7226, 1351, 7062, 8168, 514, 4817, 6826, 8169, 1581, 500, 5245, 8193, 5238, 10161, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 4591, 4590, 676, 9510, 4248, 21, 4255, 712, 8854, 1236, 15473, 3956, 1474, 4102, 8174, 15474, 4799, 4066, 3967, 5295, 10141, 10150, 4665, 4460, 7200, 1351, 7036, 8140, 514, 4802, 6811, 8141, 1581, 500, 5230, 8165, 5223, 10132, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 15491 (Screenshot)
+// Module 15472 (Screenshot)
 import dispatcher from "dispatcher";
 import handleChanged from "handleChanged";
 import useGradientBottom from "useGradientBottom";
@@ -43,27 +43,27 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(8202);
+  let obj = setUri(8174);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.preview, { width: ref(1474)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
   const obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 }, children: null };
   const obj2 = { style: tmp.base, children: null };
-  const tmp4 = ref(4132)();
+  const tmp4 = ref(4102)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(15493);
-  obj4[0] = setUri(4096).OverlayOpacity.LEVEL_7;
-  obj4[1] = setUri(4096).OverlayOpacity.LEVEL_8;
+  const tmp6 = ref(15474);
+  obj4[0] = setUri(4066).OverlayOpacity.LEVEL_7;
+  obj4[1] = setUri(4066).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
-  const items2 = [callback3(ref(4814), obj3), ];
+  const items2 = [callback3(ref(4799), obj3), ];
   const obj5 = { gradient: tmp4, children: null };
   const obj6 = { style: items3, children: null };
   items3 = [tmp.contentContainer, clientThemesOverride];
   obj6[1] = setUri.render();
   obj5[1] = callback3(View, obj6);
-  items2[1] = callback3(setUri(3997).ThemeContextProvider, obj5);
+  items2[1] = callback3(setUri(3967).ThemeContextProvider, obj5);
   obj2[1] = items2;
   obj1[2] = callback4(View, obj2);
   obj[1] = callback3(tmp6, obj1);
@@ -166,7 +166,7 @@ class ICYMIShareModal {
               obj[0] = arr;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "T", done: null };
             }
           } else {
             try {
@@ -209,7 +209,7 @@ class ICYMIShareModal {
                     let closure_0 = arg0;
                     let c2 = 0;
                     let c1 = 0;
-                    return (/* F119562 */ function*() { ... })();
+                    return (/* F119503 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;
@@ -353,7 +353,7 @@ let result = require("noop").fileFinishedImporting("modules/icymi/native/ICYMISh
 export default ICYMIShareModal;
 export const GuildEventShareModal = function GuildEventShareModal(event) {
   event = event.event;
-  let obj = require(8882) /* SHARE_EVENT_DETAILS_LINK */;
+  let obj = require(8854) /* SHARE_EVENT_DETAILS_LINK */;
   obj = { guildId: event.guild_id, guildEventId: event.id };
   obj = { title: null, originDestinationId: null, linkText: null };
   const result = obj.SHARE_EVENT_DETAILS_LINK(obj);
@@ -392,7 +392,7 @@ export const GameShareModal = function GameShareModal(content) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

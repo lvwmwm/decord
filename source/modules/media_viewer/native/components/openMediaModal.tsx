@@ -1,10 +1,10 @@
-// Module ID: 8766
-// Function ID: 8767
+// Module ID: 8738
+// Function ID: 8739
 // Name: _openMediaModal
-// Dependencies: [32, 5, 3978, 676, 1474, 8767, 1959, 8769, 8773, 38, 4253, 8782, 4490, 8783, 2]
+// Dependencies: [32, 5, 3948, 676, 1474, 8739, 1959, 8741, 8745, 38, 4223, 8754, 4460, 8755, 2]
 // Exports: openMediaModal
 
-// Module 8766 (_openMediaModal)
+// Module 8738 (_openMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
 import setContent from "setContent";
@@ -36,7 +36,7 @@ function _openMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function _openMediaModal() {
               let initVideoStateStore;
               v0 = 1;
               c4 = 1;
-              return { value: "ct", done: "Array" };
+              return { value: "PX_8", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -109,7 +109,7 @@ function _openMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 3978.initVideoStateStore;
+            initVideoStateStore = 3948.initVideoStateStore;
             !(function getMeasureInWindowFunction(c0) {
               let closure_0 = c0;
               if (null != c0) {
@@ -173,7 +173,7 @@ function _openMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp8) {
           c4 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9676
+// Function ID: 9677
 // Name: PreviewIcon
-// Dependencies: [19, 17, 3922, 21, 4796, 7635, 9568, 9706, 4229, 7627, 8209, 8211, 4701, 9708, 1348, 9682, 9711, 9370, 4281, 4221, 4285, 712, 3989, 3958, 7851, 8399, 8040, 7855, 589, 2]
+// Dependencies: [19, 17, 3892, 21, 4766, 7607, 9539, 9677, 4199, 7599, 8181, 8183, 4671, 9679, 1348, 9653, 9682, 9341, 4251, 4191, 4255, 712, 3959, 3928, 7823, 8371, 8012, 7827, 589, 2]
 
-// Module 9705 (PreviewIcon)
+// Module 9676 (PreviewIcon)
 import importAllResult from "useTheme";
 import { View } from "map";
 import upsertRelationship from "upsertRelationship";
@@ -18,35 +18,35 @@ function PreviewIcon(icon) {
   if ("image" === icon) {
     let obj = {};
     const merged1 = Object.assign(merged);
-    return callback(require(4796) /* ImageIcon */.ImageIcon, obj);
+    return callback(require(4766) /* ImageIcon */.ImageIcon, obj);
   } else if ("video" === icon) {
     obj = {};
     const merged2 = Object.assign(merged);
-    return callback(require(7635) /* VideoIcon */.VideoIcon, obj);
+    return callback(require(7607) /* VideoIcon */.VideoIcon, obj);
   } else if ("audio" === icon) {
     const obj1 = {};
     const merged3 = Object.assign(merged);
-    return callback(require(9568) /* MusicIcon */.MusicIcon, obj1);
+    return callback(require(9539) /* MusicIcon */.MusicIcon, obj1);
   } else if ("attachment" === icon) {
     const obj2 = {};
     const merged4 = Object.assign(merged);
-    return callback(require(9706) /* AttachmentIcon */.AttachmentIcon, obj2);
+    return callback(require(9677) /* AttachmentIcon */.AttachmentIcon, obj2);
   } else if ("link" === icon) {
     const obj3 = {};
     const merged5 = Object.assign(merged);
-    return callback(require(4229) /* LinkIcon */.LinkIcon, obj3);
+    return callback(require(4199) /* LinkIcon */.LinkIcon, obj3);
   } else if ("sticker" === icon) {
     const obj4 = {};
     const merged6 = Object.assign(merged);
-    return callback(require(7627) /* StickerIcon */.StickerIcon, obj4);
+    return callback(require(7599) /* StickerIcon */.StickerIcon, obj4);
   } else if ("call-active" === icon) {
     const obj5 = {};
     const merged7 = Object.assign(merged);
-    return callback(require(8209) /* PhoneCallIcon */.PhoneCallIcon, obj5);
+    return callback(require(8181) /* PhoneCallIcon */.PhoneCallIcon, obj5);
   } else if ("call-ended" === icon) {
     obj = {};
     const merged8 = Object.assign(merged);
-    return callback(require(8211) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
+    return callback(require(8183) /* PhoneHangUpIcon */.PhoneHangUpIcon, obj);
   }
 }
 class ChannelRowPreview {
@@ -81,7 +81,7 @@ class ChannelRowPreview {
         str2 = "markup";
         if ("markup" === type) {
           tmp9 = jsx;
-          tmp10 = f47209;
+          tmp10 = f47165;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -234,9 +234,9 @@ let closure_9 = importAllResult.memo((arg0) => {
   let markup;
   let muted;
   ({ markup, channelId, guildId, muted, layout, color } = arg0);
-  const fontScale = require(4701) /* getFontScale */.useFontScale();
-  const obj = require(4701) /* getFontScale */;
-  return require(9708) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
+  const fontScale = require(4671) /* getFontScale */.useFontScale();
+  const obj = require(4671) /* getFontScale */;
+  return require(9679) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;

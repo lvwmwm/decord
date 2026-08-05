@@ -1,12 +1,12 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12215
+// Function ID: 12216
 // Name: openEditNoteModal
-// Dependencies: [4490, 12244, 1959, 2]
+// Dependencies: [4460, 12216, 1959, 2]
 // Exports: default
 
-// Module 12243 (openEditNoteModal)
+// Module 12215 (openEditNoteModal)
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/user_profile/utils/native/openEditNoteModal.tsx");
 
 export default function openEditNoteModal(closure_0) {
-  importDefault(4490).pushLazy(require(1959) /* asyncRequireImpl */(12244, dependencyMap.paths), closure_0, undefined, { presentation: "modal" });
+  importDefault(4460).pushLazy(require(1959) /* asyncRequireImpl */(12216, dependencyMap.paths), closure_0, undefined, { presentation: "modal" });
 };

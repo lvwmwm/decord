@@ -1,10 +1,10 @@
-// Module ID: 10153
-// Function ID: 10154
+// Module ID: 10124
+// Function ID: 10125
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 6964, 8820, 1372, 4502, 8844, 10154, 9539, 21, 4285, 712, 1474, 7226, 589, 10151, 10150, 5244, 7225, 3986, 1236, 1351, 10155, 4625, 10156, 9660, 4293, 7223, 10157, 4467, 4254, 4255, 3985, 5638, 500, 10160, 5917, 4229, 4814, 10161, 10169, 10180, 2]
+// Dependencies: [5, 32, 19, 17, 6949, 8792, 1372, 4472, 8816, 10125, 9510, 21, 4255, 712, 1474, 7200, 589, 10122, 10121, 5229, 7199, 3956, 1236, 1351, 10126, 4595, 10127, 9631, 4263, 7197, 10128, 4437, 4224, 4225, 3955, 5623, 500, 10131, 5902, 4199, 4799, 10132, 10140, 10151, 2]
 // Exports: default
 
-// Module 10153 (ForwardModal)
+// Module 10124 (ForwardModal)
 import filterStaffGuild from "filterStaffGuild";
 import HapticFeedbackTypes from "HapticFeedbackTypes";
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler";
@@ -177,7 +177,7 @@ export default function ForwardModal(message) {
             obj[0] = arr;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {

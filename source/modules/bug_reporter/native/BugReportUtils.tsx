@@ -1,10 +1,10 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9754
+// Function ID: 9755
 // Name: uriScheme
-// Dependencies: [5, 3, 514, 4826, 1208, 2]
+// Dependencies: [5, 3, 514, 4811, 1208, 2]
 // Exports: getAttachments
 
-// Module 9783 (uriScheme)
+// Module 9754 (uriScheme)
 import set from "set";
 
 const require = arg1;
@@ -40,7 +40,7 @@ function _getAttachments() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         while (true) {
@@ -187,7 +187,7 @@ function _getAttachments() {
             let obj6 = arr(514);
             dependencyMap = obj6.v4();
             let tmp55 = dependencyMap;
-            let obj8 = arr(4826);
+            let obj8 = arr(4811);
             let tmp56 = lib;
             c7 = 3;
             let num5 = 1;

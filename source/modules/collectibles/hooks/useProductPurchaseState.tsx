@@ -1,10 +1,10 @@
-// Module ID: 9331
-// Function ID: 9332
+// Module ID: 9302
+// Function ID: 9303
 // Name: getProductPurchaseState
-// Dependencies: [6926, 9332, 1901, 589, 2]
+// Dependencies: [6911, 9303, 1901, 589, 2]
 // Exports: useProductPurchaseState
 
-// Module 9331 (getProductPurchaseState)
+// Module 9302 (getProductPurchaseState)
 import map from "map";
 
 const require = arg1;
@@ -15,7 +15,7 @@ function getProductPurchaseState(outer1_5, skuId) {
   if (items == null) {
     items = [];
   }
-  const tmp3Result = importDefault(9332)(items.map((skuId) => outer1_5.getPurchase(skuId.skuId)));
+  const tmp3Result = importDefault(9303)(items.map((skuId) => outer1_5.getPurchase(skuId.skuId)));
   let type;
   if (skuId != null) {
     type = skuId.type;
@@ -59,7 +59,7 @@ function getProductPurchaseState(outer1_5, skuId) {
     obj[0] = tmp;
     return obj;
   }
-  const tmp3 = importDefault(9332);
+  const tmp3 = importDefault(9303);
   tmp5 = _require;
 }
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");

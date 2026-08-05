@@ -1,9 +1,9 @@
-// Module ID: 10381
-// Function ID: 10382
+// Module ID: 10353
+// Function ID: 10354
 // Name: trackRoundtrip
-// Dependencies: [4376, 7080, 676, 6830, 698, 7057, 6833, 7095, 2]
+// Dependencies: [4346, 7054, 676, 6815, 698, 7031, 6818, 7069, 2]
 
-// Module 10381 (trackRoundtrip)
+// Module 10353 (trackRoundtrip)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import initializeState from "initializeState";
 import { AnalyticEvents } from "ME";
@@ -16,10 +16,10 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (null != apiResponseTimestamp.apiResponseTimestamp) {
       diff = apiResponseTimestamp.apiResponseTimestamp - apiResponseTimestamp.initialSendTimestamp;
     }
-    let obj = require(6830) /* receiveNetworkInfoformation */;
+    let obj = require(6815) /* receiveNetworkInfoformation */;
     const signalStrength = obj.getSignalStrength();
     obj = {};
-    const merged = Object.assign(importDefault(7057)());
+    const merged = Object.assign(importDefault(7031)());
     ({ endpoint: obj3.endpoint, wasSuccessful: obj3.was_successful } = apiResponseTimestamp);
     obj.api_latency_ms = diff;
     obj.mobile_network_type = type.getType();
@@ -56,9 +56,9 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     obj.transition_case = transition_case;
     const obj2 = importDefault(698);
     const tmp2 = require;
-    obj.is_foregrounded = require(6833) /* isForegrounded */.isForegrounded();
+    obj.is_foregrounded = require(6818) /* isForegrounded */.isForegrounded();
     obj2.track(AnalyticEvents.QUEST_DECISION_ROUNDTRIP, obj);
-    const tmp2Result = require(6833) /* isForegrounded */;
+    const tmp2Result = require(6818) /* isForegrounded */;
   }
 }
 class QuestDecisionRoundtripTracker {
@@ -77,7 +77,7 @@ prototype["recordQuestRequestAttempt"] = function recordQuestRequestAttempt(endp
   if (closure_0 === undefined) {
     tmp = null;
   }
-  let obj = self(7095);
+  let obj = self(7069);
   let tmp2 = null;
   if (obj.getConfig({ location: "recordQuestRequestAttempt" }).enableNewRequestBehavior) {
     tmp2 = null;
@@ -182,7 +182,7 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
       }
       combined = str;
     }
-    obj4 = importDefault(7095);
+    obj4 = importDefault(7069);
   }
 };
 let set = Object.create(QuestDecisionRoundtripTracker.prototype);

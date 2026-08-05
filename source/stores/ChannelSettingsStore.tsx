@@ -1,9 +1,9 @@
-// Module ID: 7827
-// Function ID: 7828
+// Module ID: 7799
+// Function ID: 7800
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1376, 7683, 1882, 1372, 676, 1235, 3924, 3926, 1381, 1382, 530, 709, 12, 1411, 3867, 589, 2]
+// Dependencies: [1376, 7655, 1882, 1372, 676, 1235, 3894, 3896, 1381, 1382, 530, 709, 12, 1411, 3837, 589, 2]
 
-// Module 7827 (normalizeChannelPropertyForCompare)
+// Module 7799 (normalizeChannelPropertyForCompare)
 import { createChannelRecordFromInvite as closure_9 } from "createChannelRecord";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -53,7 +53,7 @@ function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
         if ("defaultReactionEmoji" === arg0) {
           let tmp2 = null;
           if (null != str) {
-            let obj = require(3924) /* MAX_REACTIONS */;
+            let obj = require(3894) /* MAX_REACTIONS */;
             if (obj.isCustomReactionEmojiId(str.emojiId)) {
               obj = { emojiId: null };
               obj[0] = str.emojiId;
@@ -65,9 +65,9 @@ function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
                 tmp5 = null;
                 if ("" !== emojiName) {
                   obj = { emojiName: null };
-                  obj[0] = importDefault(3926).translateInlineEmojiToSurrogates(emojiName);
+                  obj[0] = importDefault(3896).translateInlineEmojiToSurrogates(emojiName);
                   tmp5 = obj;
-                  const obj3 = importDefault(3926);
+                  const obj3 = importDefault(3896);
                 }
               }
               tmp2 = tmp5;
@@ -102,7 +102,7 @@ function _createInvite(code) {
   }
   obj[5] = fromInviteGuildResult;
   ({ uses: obj[6], max_uses: obj[7], max_age: obj[8] } = code);
-  obj[9] = importDefault(3867)(code.created_at);
+  obj[9] = importDefault(3837)(code.created_at);
   ({ type: obj[10], roles: obj[11] } = code);
   tmp = new tmp(obj);
   return tmp;

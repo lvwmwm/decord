@@ -1,10 +1,10 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11731
+// Function ID: 11732
 // Name: productToGameServerGame
 // Dependencies: [2]
 // Exports: productToGameServerGame
 
-// Module 11759 (productToGameServerGame)
+// Module 11731 (productToGameServerGame)
 const result = require("set").fileFinishedImporting("modules/game_server/utils/productToGameServerGame.tsx");
 
 export const productToGameServerGame = function productToGameServerGame(id) {

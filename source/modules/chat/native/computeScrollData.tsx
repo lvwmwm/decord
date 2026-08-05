@@ -1,10 +1,10 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 10900
+// Function ID: 10901
 // Name: computeScrollData
-// Dependencies: [4277, 7852, 10922, 4217, 2]
+// Dependencies: [4247, 7824, 10894, 4187, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 10928 (computeScrollData)
+// Module 10900 (computeScrollData)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import Changeset from "Changeset";
 
@@ -38,13 +38,13 @@ export default function computeScrollData(shouldInitialScroll) {
       }
       if (null != tmp3) {
         let obj = { type: null, index: null, animate: null, highlight: false, position: null };
-        obj[0] = focusTargetId(10922).ChatScrollType.SCROLL;
+        obj[0] = focusTargetId(10894).ChatScrollType.SCROLL;
         obj[1] = tmp3;
         if (animated) {
           animated = !maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
         }
         obj[2] = animated;
-        obj[4] = focusTargetId(10922).ChatScrollPosition.TOP;
+        obj[4] = focusTargetId(10894).ChatScrollPosition.TOP;
         return obj;
       }
     }
@@ -65,17 +65,17 @@ export default function computeScrollData(shouldInitialScroll) {
     }
     if (null != tmp6) {
       obj = { type: null, index: null, animate: null, highlight: null, position: null };
-      obj[0] = focusTargetId(10922).ChatScrollType.SCROLL;
+      obj[0] = focusTargetId(10894).ChatScrollType.SCROLL;
       obj[1] = tmp6;
       const useReducedMotion = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
       let tmp10 = !useReducedMotion;
       if (!useReducedMotion) {
-        tmp10 = jumpType !== tmp7(4217).JumpType.INSTANT;
+        tmp10 = jumpType !== tmp7(4187).JumpType.INSTANT;
       }
       obj[2] = tmp10;
       obj[3] = scrollToMessageId === jumpTargetId;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(10922).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(10894).ChatScrollPosition.TOP;
       }
       obj[4] = scrollPosition;
       tmp4 = obj;
@@ -97,7 +97,7 @@ export default function computeScrollData(shouldInitialScroll) {
       }
       if (null != tmp13) {
         obj = { type: null, index: null };
-        obj[0] = focusTargetId(10922).ChatScrollType.FOCUS_ONLY;
+        obj[0] = focusTargetId(10894).ChatScrollType.FOCUS_ONLY;
         obj[1] = tmp13;
         tmp11 = obj;
       }

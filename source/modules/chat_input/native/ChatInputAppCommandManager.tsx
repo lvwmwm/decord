@@ -1,9 +1,9 @@
-// Module ID: 11702
-// Function ID: 11703
+// Module ID: 11674
+// Function ID: 11675
 // Name: areResolvedGamesEqual
-// Dependencies: [32, 19, 7158, 7159, 4306, 7228, 7061, 1874, 4719, 4285, 712, 11296, 12, 7002, 589, 9201, 11297, 11295, 9455, 1906, 11703, 2]
+// Dependencies: [32, 19, 7132, 7133, 4276, 4783, 7035, 1874, 4689, 4255, 712, 11268, 12, 6986, 589, 4786, 11269, 11267, 9426, 1906, 11675, 2]
 
-// Module 11702 (areResolvedGamesEqual)
+// Module 11674 (areResolvedGamesEqual)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PermissionOverwriteType";
 import handleInit from "handleInit";
@@ -110,7 +110,7 @@ const forwardRefResult = importAllResult.forwardRef((chatInputRef, ref) => {
     });
   }, []);
   const items2 = [first];
-  const memo = applicationCommandOptionValueParser.useMemo(() => first.filter((arg0) => null == gameById.getGameById(arg0)), items2);
+  const memo = applicationCommandOptionValueParser.useMemo(() => first.filter((closure_0) => null == gameById.getGameById(closure_0)), items2);
   const obj6 = importAll(commandsDisabled[18]);
   const games = id(commandsDisabled[13]).useGames(memo);
   const obj7 = id(commandsDisabled[13]);

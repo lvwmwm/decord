@@ -1,9 +1,9 @@
-// Module ID: 15028
-// Function ID: 15029
+// Module ID: 15008
+// Function ID: 15009
 // Name: _initialize
-// Dependencies: [5, 17, 11690, 676, 4497, 11972, 4463, 709, 1368, 15029, 500, 11693, 8987, 12013, 11971, 5866, 7139, 2]
+// Dependencies: [5, 17, 11662, 676, 4467, 11944, 4433, 709, 1368, 15009, 500, 11665, 8959, 11985, 11943, 5851, 7113, 2]
 
-// Module 15028 (_initialize)
+// Module 15008 (_initialize)
 import NewUserTypes from "NewUserTypes";
 import get_ActivityIndicator from "set";
 import { PermissionStateType } from "set";
@@ -21,15 +21,15 @@ let c11 = null;
 class AuthManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f110837 = applyArgumentsResult;
+    f110778 = applyArgumentsResult;
     applyArgumentsResult.handleRegister = function handleRegister() {
       const REGISTER = constants2.REGISTER;
     };
     applyArgumentsResult.handleLogin = function handleLogin() {
       const LOGIN = constants2.LOGIN;
     };
-    f110837 = undefined;
-    f110837 = NewUserTypes((arg0) => {
+    f110778 = undefined;
+    f110778 = NewUserTypes((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -45,7 +45,7 @@ class AuthManager extends tmp3 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -117,16 +117,16 @@ class AuthManager extends tmp3 {
     };
     applyArgumentsResult.handleRegisterComplete = function handleRegisterComplete() {
       if (!obj.hasDeferredInvite()) {
-        let tmpResult = tmp(12013);
+        let tmpResult = tmp(11985);
         tmpResult.setNewUser(constants.ORGANIC_REGISTERED);
       }
-      tmpResult = tmp(11971);
+      tmpResult = tmp(11943);
       tmpResult.startOnboarding();
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {
       const result = lib.handlePushNotificationOptIn(() => {
-        callback(5866).transitionToGuild(closure_7);
-        const obj = callback(5866);
+        callback(5851).transitionToGuild(closure_7);
+        const obj = callback(5851);
         callback2(709).dispatch({ type: "DEFERRED_INVITE_SHOW" });
       });
     };
@@ -150,7 +150,7 @@ class AuthManager extends tmp3 {
       outer1_11 = null;
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
-      const result = callback(7139).deleteAllInteractions();
+      const result = callback(7113).deleteAllInteractions();
       DCDShortcutManager = DCDShortcutManager.DCDShortcutManager;
       if (DCDShortcutManager != null) {
         DCDShortcutManager.handleLogout();

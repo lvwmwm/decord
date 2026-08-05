@@ -1,13 +1,13 @@
-// Module ID: 8041
-// Function ID: 8042
+// Module ID: 8013
+// Function ID: 8014
 // Name: set
-// Dependencies: [8042, 1467, 2]
+// Dependencies: [8014, 1467, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8041 (set)
+// Module 8013 (set)
 import set from "set";
 
-let set = new Set(require("module_8042"));
+let set = new Set(require("module_8014"));
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj[0] = regExp;

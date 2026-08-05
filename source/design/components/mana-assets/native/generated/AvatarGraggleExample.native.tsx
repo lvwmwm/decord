@@ -1,10 +1,10 @@
-// Module ID: 6003
-// Function ID: 6004
+// Module ID: 5988
+// Function ID: 5989
 // Name: AvatarGraggleExample
-// Dependencies: [21, 5236, 6004, 2]
+// Dependencies: [21, 5221, 5989, 2]
 // Exports: AvatarGraggleExample
 
-// Module 6003 (AvatarGraggleExample)
+// Module 5988 (AvatarGraggleExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarGraggleExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarGraggleExample = function AvatarGraggleExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6004);
+  obj[0] = importDefault(5989);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarGraggleExample = function AvatarGraggleExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

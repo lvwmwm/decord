@@ -1,10 +1,10 @@
-// Module ID: 7112
-// Function ID: 7113
+// Module ID: 7086
+// Function ID: 7087
 // Name: _fetchAdUser
-// Dependencies: [5, 7110, 676, 698, 709, 7113, 2]
+// Dependencies: [5, 7084, 676, 698, 709, 7087, 2]
 // Exports: fetchAdUser
 
-// Module 7112 (_fetchAdUser)
+// Module 7086 (_fetchAdUser)
 import enforcing from "enforcing";
 import adUser from "adUser";
 import ME from "ME";
@@ -30,7 +30,7 @@ function _fetchAdUser() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 14246
-// Function ID: 14247
+// Module ID: 14220
+// Function ID: 14221
 // Name: useConnectionBannerHeight
-// Dependencies: [12855, 14243, 12856, 589, 2]
+// Dependencies: [12827, 14217, 12828, 589, 2]
 // Exports: useConnectionBannerHeight
 
-// Module 14246 (useConnectionBannerHeight)
+// Module 14220 (useConnectionBannerHeight)
 import updateState from "updateState";
 import { ConnectivityIndicatorState as closure_4 } from "updateState";
 import { CONNECTION_BANNER_HEIGHT } from "CONNECTION_BANNER_HEIGHT";
@@ -15,7 +15,7 @@ const result = require("apexExperiment").fileFinishedImporting("modules/main_tab
 export const useConnectionBannerHeight = function useConnectionBannerHeight() {
   let hidden;
   let timeoutMs;
-  const config = importDefault(12856).useConfig({ location: "useConnectionBannerHeight" });
+  const config = importDefault(12828).useConfig({ location: "useConnectionBannerHeight" });
   ({ timeoutMs, hidden } = config);
   require(589) /* initialize */;
   [][0] = updateState;

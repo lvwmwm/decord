@@ -1,10 +1,10 @@
-// Module ID: 15960
-// Function ID: 15961
+// Module ID: 15941
+// Function ID: 15942
 // Name: renderActivityOrPIP
-// Dependencies: [19, 17, 9674, 21, 15961, 15967, 15981, 5597, 4629, 15982, 15959, 2]
+// Dependencies: [19, 17, 9645, 21, 15942, 15948, 15962, 5582, 4599, 15963, 15940, 2]
 // Exports: default
 
-// Module 15960 (renderActivityOrPIP)
+// Module 15941 (renderActivityOrPIP)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ActivityPanelModes } from "ActivityPanelModes";
@@ -17,9 +17,9 @@ let metroImportAll;
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 15961;
+    let tmp4 = 15942;
   } else {
-    tmp4 = 15967;
+    tmp4 = 15948;
   }
   return closure_7(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }

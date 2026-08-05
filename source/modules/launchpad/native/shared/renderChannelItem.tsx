@@ -1,10 +1,10 @@
-// Module ID: 15934
-// Function ID: 15935
+// Module ID: 15915
+// Function ID: 15916
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1862, 3922, 1874, 4481, 21, 8955, 4285, 712, 15921, 589, 5661, 11488, 7022, 15923, 9582, 15926, 4475, 2]
+// Dependencies: [19, 17, 1862, 3892, 1874, 4451, 21, 8927, 4255, 712, 15902, 589, 5646, 11460, 6996, 15904, 9553, 15907, 4445, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 15934 (LaunchpadChannelIcon)
+// Module 15915 (LaunchpadChannelIcon)
 import "set";
 import { View } from "ChannelContent";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -26,9 +26,9 @@ function LaunchpadChannelIcon(channel) {
   obj = { children: null };
   obj = { style: tmp.guildBadgeIcon, children: null };
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
-  const tmp2 = importDefault(15921)();
-  obj[1] = callback(importDefault(5661), { guild: stateFromStores, size: importDefault(15921)().icon.guildBadgeIconSize });
-  const items1 = [callback(View, obj), callback(channel(11488).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
+  const tmp2 = importDefault(15902)();
+  obj[1] = callback(importDefault(5646), { guild: stateFromStores, size: importDefault(15902)().icon.guildBadgeIconSize });
+  const items1 = [callback(View, obj), callback(channel(11460).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
   obj[0] = items1;
   return callback2(closure_9, obj);
 }
@@ -88,11 +88,11 @@ export default function renderChannelItem(unread) {
   if (null != latestMessageTimestamp) {
     relativeTimestamp = null;
     if (!flag3) {
-      let obj = require(7022) /* getRelativeTimestamp */;
+      let obj = require(6996) /* getRelativeTimestamp */;
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  const tmp7 = importDefault(15921)();
+  const tmp7 = importDefault(15902)();
   const children = [unreadBadge, , , ];
   obj = { style: null, children: null };
   obj = { position: "relative", borderRadius: null, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0, width: null, height: null };
@@ -105,7 +105,7 @@ export default function renderChannelItem(unread) {
     const obj1 = { channel: null, size: null };
     obj1[0] = channel;
     obj1[1] = tmp7.icon.avatarSize;
-    let tmp11Result = tmp11(tmp5(9582), obj1);
+    let tmp11Result = tmp11(tmp5(9553), obj1);
   } else {
     const obj2 = { channel: null };
     obj2[0] = channel;
@@ -114,13 +114,13 @@ export default function renderChannelItem(unread) {
   obj[1] = tmp11Result;
   children[1] = closure_8(View, obj);
   const tmp10 = closure_9;
-  const tmp8 = importDefault(15923);
+  const tmp8 = importDefault(15904);
   const tmp9 = closure_10;
   if (channelName == null) {
-    channelName = require(4475) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-    const obj6 = require(4475) /* computeChannelName */;
+    channelName = require(4445) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    const obj6 = require(4445) /* computeChannelName */;
   }
-  children[2] = importDefault(15926)({ name: channelName, subtitle, unread: flag, resolvedUnreadSetting: ONLY_MENTIONS, muted: flag3, lastMessageTimestampString: relativeTimestamp, channel, channelCategoryName, locked, connected, live: flag2, mentionCount, mentionBadge, isSubscriptionGated, needSubscriptionToAccess: flag4 });
+  children[2] = importDefault(15907)({ name: channelName, subtitle, unread: flag, resolvedUnreadSetting: ONLY_MENTIONS, muted: flag3, lastMessageTimestampString: relativeTimestamp, channel, channelCategoryName, locked, connected, live: flag2, mentionCount, mentionBadge, isSubscriptionGated, needSubscriptionToAccess: flag4 });
   tmp11Result = null;
   if (null != end) {
     const obj3 = { style: null, children: null };
@@ -138,5 +138,5 @@ export const getChannelAccessibilityProps = function getChannelAccessibilityProp
   let unread;
   let voiceStates;
   ({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount } = arg0);
-  return { accessible: true, accessibilityRole: "button", accessibilityLabel: importDefault(8955)({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
+  return { accessible: true, accessibilityRole: "button", accessibilityLabel: importDefault(8927)({ channel, unread, mentionCount, voiceStates, embeddedActivitiesCount }) };
 };

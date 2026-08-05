@@ -1,10 +1,10 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15341
+// Function ID: 15342
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [19, 17, 676, 1369, 21, 4285, 6555, 1306, 1236, 7846, 3958, 1358, 5925, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 4255, 6540, 1306, 1236, 7818, 3928, 1358, 5910, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15360 (PrivateProfileCoachmarkImage)
+// Module 15341 (PrivateProfileCoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
@@ -14,7 +14,7 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function PrivateProfileCoachmarkImage() {
-  return <View style={callback().imageContainer}>{jsx(require(6555) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
+  return <View style={callback().imageContainer}>{jsx(require(6540) /* PrivateProfileAbstractUI */.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
 }
 let closure_7 = createCacheKey.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 const result = require("ME").fileFinishedImporting("modules/user_profile/native/usePrivateProfileCoachmarkProps.tsx");

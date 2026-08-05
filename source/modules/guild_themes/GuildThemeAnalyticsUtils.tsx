@@ -1,10 +1,10 @@
-// Module ID: 15688
-// Function ID: 15689
+// Module ID: 15669
+// Function ID: 15670
 // Name: collectGuildThemeAnalyticsMetadata
 // Dependencies: [1862, 2]
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 15688 (collectGuildThemeAnalyticsMetadata)
+// Module 15669 (collectGuildThemeAnalyticsMetadata)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
 const result = require("set").fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");

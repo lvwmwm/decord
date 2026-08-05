@@ -1,9 +1,9 @@
-// Module ID: 5111
-// Function ID: 5112
+// Module ID: 5096
+// Function ID: 5097
 // Name: acknowledge
-// Dependencies: [4170, 12, 2]
+// Dependencies: [4140, 12, 2]
 
-// Module 5111 (acknowledge)
+// Module 5096 (acknowledge)
 class GuildMemberRequestState {
   constructor(arg0, arg1) {
     closure_0 = global;

@@ -1,25 +1,25 @@
-// Module ID: 10243
-// Function ID: 10244
+// Module ID: 10215
+// Function ID: 10216
 // Name: _loop
-// Dependencies: [4146, 1581, 10244, 10245, 1594, 1477, 2]
+// Dependencies: [4116, 1581, 10216, 10217, 1594, 1477, 2]
 // Exports: default
 
-// Module 10243 (_loop)
-import module_4146 from "module_4146";
+// Module 10215 (_loop)
+import module_4116 from "module_4116";
 import useSafeAreaInsets from "useSafeAreaInsets";
-import module_4146 from "module_4146";
+import module_4116 from "module_4116";
 import useSafeAreaInsets from "useSafeAreaInsets";
 
 let obj = { main: null, share: null };
 obj = {};
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-obj[0] = module_4146.makeMutable(obj);
+obj[0] = module_4116.makeMutable(obj);
 obj = {};
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
-obj[1] = module_4146.makeMutable(obj);
+obj[1] = module_4116.makeMutable(obj);
 function _loop(iter) {
   let closure_0 = iter;
-  importDefault(10244)((arg0) => {
+  importDefault(10216)((arg0) => {
     outer1_1(outer1_2[3])(outer1_3[closure_0], arg0);
   }, iter);
 }

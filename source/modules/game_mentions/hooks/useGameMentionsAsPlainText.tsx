@@ -1,10 +1,10 @@
-// Module ID: 9369
-// Function ID: 9370
+// Module ID: 9340
+// Function ID: 9341
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 4306, 1874, 4719, 7002, 589, 1856, 9201, 1236, 2]
+// Dependencies: [19, 4276, 1874, 4689, 6986, 589, 1856, 4786, 1236, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 9369 (useGameMentionsAsPlainText)
+// Module 9340 (useGameMentionsAsPlainText)
 import noop from "noop";
 import handleLoadMessages from "handleLoadMessages";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -38,8 +38,8 @@ export const useGameMentionsAsPlainText = function useGameMentionsAsPlainText(st
         if (currentUser != null) {
           nsfwAllowed = currentUser.nsfwAllowed;
         }
-        return str.replace(outer1_6, (arg0, gameId) => {
-          const game = outer1_3.getGame(gameId);
+        return str.replace(outer1_6, (arg0, closure_0) => {
+          const game = outer1_3.getGame(closure_0);
           if (obj.isGameProfileObscured(game, nsfwAllowed)) {
             const intl2 = tmp2(tmp3[8]).intl;
             let stringResult = intl2.string(tmp2(tmp3[8]).t["11pdXZ"]);

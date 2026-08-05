@@ -1,9 +1,9 @@
-// Module ID: 5749
-// Function ID: 5750
+// Module ID: 5734
+// Function ID: 5735
 // Name: makeSortedChannel
-// Dependencies: [5750, 5751, 1376, 1372, 1862, 4297, 4480, 1874, 11, 3909, 3867, 5752, 589, 709, 2]
+// Dependencies: [5735, 5736, 1376, 1372, 1862, 4267, 4450, 1874, 11, 3879, 3837, 5737, 589, 709, 2]
 
-// Module 5749 (makeSortedChannel)
+// Module 5734 (makeSortedChannel)
 import processChannel from "processChannel";
 import closure_4 from "processChannel";
 import { isPrivate } from "createChannelRecord";
@@ -28,7 +28,7 @@ function makeSortedChannel(channel, id) {
     const isMessageRequestTimestamp = channel.isMessageRequestTimestamp;
     let tmp2 = id;
     if (null != isMessageRequestTimestamp) {
-      let obj = importDefault(3867)(isMessageRequestTimestamp);
+      let obj = importDefault(3837)(isMessageRequestTimestamp);
       const valueOfResult = obj.valueOf();
       let fromTimestampResult = importDefault(11).fromTimestamp(valueOfResult);
       const obj2 = importDefault(11);
@@ -79,7 +79,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap(function inde
 let closure_15 = [];
 let closure_16 = [];
 let closure_17 = [];
-const f36065 = () => {
+const f36040 = () => {
 
 };
 class PrivateChannelSortStore extends Store {
@@ -91,7 +91,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f36065 !== "function") {
+  if (typeof f36040 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let values = secondaryIndexMap.values(constants.FAVORITE);
@@ -142,7 +142,7 @@ const privateChannelSortStore = new PrivateChannelSortStore(require("dispatcher"
     channel = channel.channel;
     let tmp = isPrivate(channel.type);
     if (tmp) {
-      const tmp4 = channel.id !== require(5752) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      const tmp4 = channel.id !== require(5737) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
       if (tmp4) {
         const result = secondaryIndexMap.set(channel.id, makeSortedChannel(channel));
       }

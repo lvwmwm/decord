@@ -1,10 +1,10 @@
-// Module ID: 12968
-// Function ID: 12969
+// Module ID: 12940
+// Function ID: 12941
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 1218, 4961, 4301, 21, 589, 1236, 12967, 1297, 2]
+// Dependencies: [19, 1218, 4946, 4271, 21, 589, 1236, 12939, 1297, 2]
 // Exports: default
 
-// Module 12968 (OngoingCallStatusLabel)
+// Module 12940 (OngoingCallStatusLabel)
 import "noop";
 import fetchFingerprint from "fetchFingerprint";
 import callConnect from "callConnect";

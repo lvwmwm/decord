@@ -1,7 +1,7 @@
 // Module ID: 13019
 // Function ID: 13020
-// Dependencies: [13020, 13027, 13028, 13029, 13030, 13031, 13032, 13033, 13034, 13035, 13036, 13037, 13038, 13039, 13040, 13041, 13042, 13043, 13044, 13045, 13046, 13047, 13048, 13049, 13050, 13052, 13053, 13054, 13055, 13056, 13057, 13058, 13059, 13060, 13061, 13062, 13063, 13021, 13025, 13023, 13026]
+// Dependencies: [13015, 13016, 13013, 13017, 13014, 13018]
 
 // Module 13019
 
-export default { parse: require("SemVer"), valid: require("version"), clean: require("version"), inc: require("SemVer"), diff: require("SemVer"), major: require("SemVer"), minor: require("SemVer"), patch: require("SemVer"), prerelease: require("prerelease"), compare: require("SemVer"), rcompare: require("SemVer"), compareLoose: require("SemVer"), compareBuild: require("SemVer"), sort: require("SemVer"), rsort: require("SemVer"), gt: require("SemVer"), lt: require("SemVer"), eq: require("SemVer"), neq: require("SemVer"), gte: require("SemVer"), lte: require("SemVer"), cmp: require("module_13047"), coerce: require("module_13048"), Comparator: require("Comparator"), Range: require("Range"), satisfies: require("Range"), toComparators: require("Range"), maxSatisfying: require("Range"), minSatisfying: require("Range"), minVersion: require("module_13056"), validRange: require("Range"), outside: require("module_13058"), gtr: require("module_13059"), ltr: require("module_13060"), intersects: require("Range"), simplifyRange: require("module_13062"), subset: require("items"), SemVer: require("SemVer"), re: require("items").re, src: require("items").src, tokens: require("items").t, SEMVER_SPEC_VERSION: require("module_13023").SEMVER_SPEC_VERSION, RELEASE_TYPES: require("module_13023").RELEASE_TYPES, compareIdentifiers: require("module_13026").compareIdentifiers, rcompareIdentifiers: require("module_13026").rcompareIdentifiers };
+export default (arg0, arg1, arg2, arg3) => require(13018) /* SemVer */(tmp, tmp2, tmp3);

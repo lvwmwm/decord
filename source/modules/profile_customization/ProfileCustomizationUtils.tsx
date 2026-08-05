@@ -1,10 +1,10 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8049
+// Function ID: 8050
 // Name: useAvatarsWithGuilds
-// Dependencies: [19, 8072, 6989, 1942, 589, 4131, 1236, 2]
+// Dependencies: [19, 8044, 6974, 1942, 589, 4101, 1236, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8077 (useAvatarsWithGuilds)
+// Module 8049 (useAvatarsWithGuilds)
 import noop from "noop";
 import handleFormOpen from "handleFormOpen";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -270,15 +270,15 @@ export const showRemoveBanner = function showRemoveBanner(arg0, banner) {
 };
 export const announcePendingAvatarChange = function announcePendingAvatarChange(set) {
   if ("set" === set) {
-    const AccessibilityAnnouncer3 = require(4131) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer3 = require(4101) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl3 = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer3.announce(intl3.string(require(1236) /* getSystemLocale */.t.dyU5c5));
   } else if ("remove" === set) {
-    const AccessibilityAnnouncer2 = require(4131) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer2 = require(4101) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl2 = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer2.announce(intl2.string(require(1236) /* getSystemLocale */.t["f1+oNk"]));
   } else {
-    const AccessibilityAnnouncer = require(4131) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = require(4101) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
     const intl = require(1236) /* getSystemLocale */.intl;
     AccessibilityAnnouncer.announce(intl.string(require(1236) /* getSystemLocale */.t["/b5nqj"]));
   }

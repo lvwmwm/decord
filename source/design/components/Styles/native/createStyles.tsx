@@ -1,10 +1,10 @@
-// Module ID: 4285
-// Function ID: 4286
+// Module ID: 4255
+// Function ID: 4256
 // Name: createCacheKey
-// Dependencies: [32, 17, 4277, 4097, 3997, 500, 712, 3990, 4146, 4286, 4289, 4218, 1348, 2]
+// Dependencies: [32, 17, 4247, 4067, 3967, 500, 712, 3960, 4116, 4256, 4259, 4188, 1348, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow, useLegacyClassComponentStyles
 
-// Module 4285 (createCacheKey)
+// Module 4255 (createCacheKey)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -64,7 +64,7 @@ function parseThemedStyles(obj, enabledExperiments) {
       let internal = importDefault(712).internal;
       if (internal.isSemanticColor(obj2)) {
         let tmp16 = require;
-        let obj3 = require(3990) /* getSemanticColorContextFromThemeContext */;
+        let obj3 = require(3960) /* getSemanticColorContextFromThemeContext */;
         let semanticColorContextFromThemeContext = obj3.getSemanticColorContextFromThemeContext(arg1);
         let internal4 = tmp6(712).internal;
         obj[key10022] = internal4.resolveSemanticColor(theme, obj2, semanticColorContextFromThemeContext);
@@ -221,7 +221,7 @@ export const createLegacyClassComponentStyles = function createLegacyClassCompon
   };
 };
 export const useLegacyClassComponentStyles = function useLegacyClassComponentStyles(createCacheKey) {
-  return createCacheKey(require(3997) /* ManaContext */.useThemeContext());
+  return createCacheKey(require(3967) /* ManaContext */.useThemeContext());
 };
 export const createStyleProperties = function createStyleProperties(createCacheKey) {
   let closure_0 = createCacheKey;

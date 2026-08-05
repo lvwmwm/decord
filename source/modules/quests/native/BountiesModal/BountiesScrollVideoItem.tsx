@@ -1,10 +1,10 @@
-// Module ID: 14163
-// Function ID: 14164
+// Module ID: 14137
+// Function ID: 14138
 // Name: BountiesScrollVideoItemInner
-// Dependencies: [5, 32, 19, 17, 9342, 7079, 5128, 21, 14164, 589, 10895, 14165, 10899, 14166, 14168, 14169, 14171, 11090, 7108, 5133, 14189, 2]
+// Dependencies: [5, 32, 19, 17, 9313, 7053, 5113, 21, 14138, 589, 10867, 14139, 10871, 14140, 14142, 14143, 14145, 11062, 7082, 5118, 14163, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 14163 (BountiesScrollVideoItemInner)
+// Module 14137 (BountiesScrollVideoItemInner)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import closure_5 from "set";
@@ -102,11 +102,11 @@ function BountiesScrollVideoItemInner(bounty) {
       tmp8(true);
     }
   }
-  let tmp2Result = tmp2(10895);
+  let tmp2Result = tmp2(10867);
   const bountiesExperience = tmp2Result.useBountiesExperience(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   ({ loopingEnabled, ownedByVerticalScrollExperiment, orbAmount } = bountiesExperience);
   ({ stage1Enabled, rewardTimerSeconds } = bountiesExperience);
-  const BountyVideoEndMode = tmp2(14165).BountyVideoEndMode;
+  const BountyVideoEndMode = tmp2(14139).BountyVideoEndMode;
   if (loopingEnabled) {
     let LOOP = BountyVideoEndMode.LOOP;
   } else {
@@ -176,7 +176,7 @@ function BountiesScrollVideoItemInner(bounty) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -234,7 +234,7 @@ function BountiesScrollVideoItemInner(bounty) {
               });
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp27) {
           closure_2 = tmp27;
@@ -247,7 +247,7 @@ function BountiesScrollVideoItemInner(bounty) {
         }
       }
     }), items3);
-    tmp2Result = tmp2(14168);
+    tmp2Result = tmp2(14142);
     obj = { bountyId: null, endMode: null };
     obj[0] = bounty.id;
     obj[1] = LOOP;
@@ -269,7 +269,7 @@ function BountiesScrollVideoItemInner(bounty) {
     obj[7] = str;
     obj[8] = index;
     obj[9] = isActive;
-    const bountiesModalVideoAnalytics = tmp2(14169).useBountiesModalVideoAnalytics(obj);
+    const bountiesModalVideoAnalytics = tmp2(14143).useBountiesModalVideoAnalytics(obj);
     handleVideoProgressAnalytics = bountiesModalVideoAnalytics.handleVideoProgressAnalytics;
     onPlaybackTimeChange = undefined;
     ({ handleVideoEndAnalytics, handleVideoLoopedAnalytics, handleVideoPausedAnalytics, handleVideoResumedAnalytics, handleVideoErrorAnalytics, handleLoadStartAnalytics, handleVideoTracksAnalytics, handleReadyForDisplayAnalytics, handleBufferAnalytics } = bountiesModalVideoAnalytics);
@@ -300,7 +300,7 @@ function BountiesScrollVideoItemInner(bounty) {
         tmp3(arg2, arg1, tmp5, arg0, stateFromStores);
       }
     }, items5);
-    const tmp2Result1 = tmp2(14169);
+    const tmp2Result1 = tmp2(14143);
     obj1 = { endMode: null, rewardDurationMs: null, isCompleted: null, onRewardEarned: null, onVideoProgress: null, onVideoEnd: null, onVideoLooped: null, onVideoPaused: null, onVideoResumed: null, playerRef: null, initialProgressSec: null, initialMaxVideoProgressSec: null, initialVideoDurationSec: null };
     obj1[0] = LOOP;
     obj1[1] = result;
@@ -318,7 +318,7 @@ function BountiesScrollVideoItemInner(bounty) {
       duration = initialProgress.duration;
     }
     obj1[12] = duration;
-    const bountiesModalTiming = tmp2(14165).useBountiesModalTiming(obj1);
+    const bountiesModalTiming = tmp2(14139).useBountiesModalTiming(obj1);
     isEndCardVisible = bountiesModalTiming.isEndCardVisible;
     handleVideoPaused = bountiesModalTiming.handleVideoPaused;
     handleVideoResumed = bountiesModalTiming.handleVideoResumed;
@@ -403,7 +403,7 @@ function BountiesScrollVideoItemInner(bounty) {
       };
       return handleProgress(isActive(ref[17]).QuestContentImpressionTrackerNative, obj);
     };
-    obj2[1] = handleProgress(tmp2(14171).BountyVideo, obj3);
+    obj2[1] = handleProgress(tmp2(14145).BountyVideo, obj3);
     return handleProgress(stateFromStores, obj2);
   }
   result = 1000 * rewardTimerSeconds;
@@ -447,12 +447,12 @@ export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) 
     softDownloadCapsEnabled = false;
   }
   const obj = { adContentId: bounty.id, adCreativeType: null, questContent: null, sourceQuestContent: null, overrideVisibility: null, children: null };
-  obj[1] = bounty(7108).AdCreativeType.BOUNTY;
-  obj[2] = bounty(5133).QuestContent.VIDEO_MODAL_MOBILE;
+  obj[1] = bounty(7082).AdCreativeType.BOUNTY;
+  obj[2] = bounty(5118).QuestContent.VIDEO_MODAL_MOBILE;
   obj[3] = sourceQuestContent;
   obj[4] = isActive;
   obj[5] = function children() {
     return flag3(outer1_11, { bounty, sourceQuestContent, width: closure_2, height: set, index: _slicedToArray, isActive, isRecapPageRevealed: flag, isRecapPageOnTop: flag2, isScrollingInBoundsSharedValue: closure_8, isScrollIndicatorOverlayEnabled, shouldLoadHls: flag3, scrollAffordance: closure_11, peekScale: closure_12, softDownloadCapsEnabled });
   };
-  return flag3(bounty(11090).BillableAdPlacementImpressionTrackerNative, obj);
+  return flag3(bounty(11062).BillableAdPlacementImpressionTrackerNative, obj);
 };

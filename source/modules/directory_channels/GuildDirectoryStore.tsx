@@ -1,9 +1,9 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11568
+// Function ID: 11569
 // Name: isFetching
-// Dependencies: [11589, 11588, 589, 709, 2]
+// Dependencies: [11561, 11560, 589, 709, 2]
 
-// Module 11596 (isFetching)
+// Module 11568 (isFetching)
 import { DirectoryEntryCategories } from "DirectoryEntryTypes";
 import { Store } from "initialize";
 
@@ -95,7 +95,7 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
   },
   GUILD_DIRECTORY_ENTRY_CREATE: function handleCreateEntry(channelId) {
     channelId = channelId.channelId;
-    let obj = require(11588) /* guildDirectoryEntryFromServer */;
+    let obj = require(11560) /* guildDirectoryEntryFromServer */;
     const result = obj.guildDirectoryEntryFromServer(channelId.entry);
     if (null != result) {
       let tmp2;
@@ -181,7 +181,7 @@ const guildDirectoryStore = new GuildDirectoryStore(require("dispatcher"), {
   },
   GUILD_DIRECTORY_ENTRY_UPDATE: function handleUpdateEntry(channelId) {
     channelId = channelId.channelId;
-    let obj = require(11588) /* guildDirectoryEntryFromServer */;
+    let obj = require(11560) /* guildDirectoryEntryFromServer */;
     const result = obj.guildDirectoryEntryFromServer(channelId.entry);
     let tmp6;
     if (dependencyMap[channelId] != null) {

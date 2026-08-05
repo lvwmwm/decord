@@ -1,8 +1,8 @@
-// Module ID: 13614
-// Function ID: 13615
-// Dependencies: [5, 17, 4277, 676, 1305, 13615, 709, 698, 13618, 10245, 13616, 4127, 4131, 2]
+// Module ID: 13586
+// Function ID: 13587
+// Dependencies: [5, 17, 4247, 676, 1305, 13587, 709, 698, 13590, 10217, 13588, 4097, 4101, 2]
 
-// Module 13614
+// Module 13586
 import AccessibilityFeatureFlags from "AccessibilityFeatureFlags";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -18,12 +18,12 @@ let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImp
 export default {
   init() {
     const self = this;
-    importDefault(13615).init();
+    importDefault(13587).init();
     this.updateNativeColors();
     this.updateMotionSettings();
     maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.updateNativeColors);
     maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.updateMotionSettings);
-    let obj = importDefault(13615);
+    let obj = importDefault(13587);
     const subscription = importDefault(709).subscribe("CONNECTION_OPEN", this.updateMotionSettings);
     closure_5.addChangeListener(this.updateSystemAppearance);
     const listener = closure_4.addEventListener("screenReaderChanged", (arg0) => {
@@ -38,10 +38,10 @@ export default {
     let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    require(13618) /* updateSaturation */.updateSaturation(maybeApplyNoTextColorForLightCustomTheme.saturation);
+    require(13590) /* updateSaturation */.updateSaturation(maybeApplyNoTextColorForLightCustomTheme.saturation);
   },
   updateMotionSettings() {
-    importDefault(10245)(require(13616) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: maybeApplyNoTextColorForLightCustomTheme.useReducedMotion, prefersCrossfades: maybeApplyNoTextColorForLightCustomTheme.systemPrefersCrossfades });
+    importDefault(10217)(require(13588) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: maybeApplyNoTextColorForLightCustomTheme.useReducedMotion, prefersCrossfades: maybeApplyNoTextColorForLightCustomTheme.systemPrefersCrossfades });
   },
   checkScreenreaderEnabled() {
     const self = this;
@@ -57,7 +57,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -93,7 +93,7 @@ export default {
             closure_0 = arg1;
             const result = closure_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -103,7 +103,7 @@ export default {
     })();
   },
   updateScreenReaderEnabled(screenReaderEnabled) {
-    importDefault(10245)(require(13616) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
+    importDefault(10217)(require(13588) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
   },
   updateSystemAppearance(colorScheme) {
     let DARK = SystemTheme.NO_PREFERENCE;
@@ -113,7 +113,7 @@ export default {
     } else if ("dark" === colorScheme) {
       DARK = tmp.DARK;
     }
-    require(4127) /* setSystemTheme */.setSystemTheme(DARK);
+    require(4097) /* setSystemTheme */.setSystemTheme(DARK);
   },
   startAnnouncementQueue() {
     const set = new Set();

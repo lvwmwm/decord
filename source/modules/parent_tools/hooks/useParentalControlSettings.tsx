@@ -1,10 +1,10 @@
-// Module ID: 13974
-// Function ID: 13975
+// Module ID: 13948
+// Function ID: 13949
 // Name: useParentalControlledExplicitContentSettings
-// Dependencies: [5, 19, 6908, 7702, 7261, 13975, 13978, 1306, 5826, 5922, 7259, 589, 6907, 7707, 2]
+// Dependencies: [5, 19, 6893, 7674, 7233, 13949, 13952, 1306, 5811, 5907, 7231, 589, 6892, 7679, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 13974 (useParentalControlledExplicitContentSettings)
+// Module 13948 (useParentalControlledExplicitContentSettings)
 import result from "result";
 import noop from "noop";
 import getSettings from "getSettings";
@@ -14,9 +14,9 @@ const require = arg1;
 const result = require("getSettings").fileFinishedImporting("modules/parent_tools/hooks/useParentalControlSettings.tsx");
 
 export const useParentalControlledExplicitContentSettings = function useParentalControlledExplicitContentSettings() {
-  let obj = require(7261) /* useSelectedTeen */;
+  let obj = require(7233) /* useSelectedTeen */;
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledExplicitContent = require(13975) /* result */.ParentalControlledExplicitContent;
+  const ParentalControlledExplicitContent = require(13949) /* result */.ParentalControlledExplicitContent;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;
@@ -24,7 +24,7 @@ export const useParentalControlledExplicitContentSettings = function useParental
   const controlledSetting = ParentalControlledExplicitContent.useControlledSetting(id);
   let tmp6 = null;
   if (null != selectedTeen) {
-    let tmpResult = tmp(13978);
+    let tmpResult = tmp(13952);
     let id1;
     if (selectedTeen != null) {
       id1 = selectedTeen.id;
@@ -38,7 +38,7 @@ export const useParentalControlledExplicitContentSettings = function useParental
     obj = { explicitContentNonFriendDm: null, explicitContentFriendDm: null, explicitContentGuilds: null };
     obj[1] = prop;
     obj[0] = tmpResult.resolveExplicitContentSettingWithDefaultsForTeen(obj);
-    tmpResult = tmp(13978);
+    tmpResult = tmp(13952);
     let id2;
     if (selectedTeen != null) {
       id2 = selectedTeen.id;
@@ -59,9 +59,9 @@ export const useParentalControlledExplicitContentSettings = function useParental
 export const useParentalControlledGoreContentSettings = function useParentalControlledGoreContentSettings() {
   let goreContentFriendDm;
   let goreContentNonFriendDm;
-  let obj = require(7261) /* useSelectedTeen */;
+  let obj = require(7233) /* useSelectedTeen */;
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledGoreContent = require(13975) /* result */.ParentalControlledGoreContent;
+  const ParentalControlledGoreContent = require(13949) /* result */.ParentalControlledGoreContent;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;
@@ -74,16 +74,16 @@ export const useParentalControlledGoreContentSettings = function useParentalCont
       controlledSetting = {};
     }
     ({ goreContentNonFriendDm, goreContentFriendDm } = controlledSetting);
-    let tmpResult = tmp(13978);
+    let tmpResult = tmp(13952);
     if (!tmpResult.isSetAndNotDefault(goreContentNonFriendDm)) {
-      tmpResult = tmp(5826);
+      tmpResult = tmp(5811);
       goreContentNonFriendDm = tmpResult.resolveGoreSettingWithDefaultsForTeen({ isDm: true });
     }
     obj = { goreContentNonFriendDm: null, goreContentFriendDm: null, goreContentGuilds: null };
     obj[0] = goreContentNonFriendDm;
     if (!tmpResult1.isSetAndNotDefault(goreContentFriendDm)) {
-      goreContentFriendDm = tmp(5826).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
-      const tmpResult2 = tmp(5826);
+      goreContentFriendDm = tmp(5811).resolveGoreSettingWithDefaultsForTeen({ isDm: true, isFriend: true });
+      const tmpResult2 = tmp(5811);
     }
     obj[1] = goreContentFriendDm;
     obj[2] = tmp(1306).ExplicitContentRedaction.BLUR;
@@ -91,14 +91,14 @@ export const useParentalControlledGoreContentSettings = function useParentalCont
   }
 };
 export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() {
-  const selectedTeen = require(7261) /* useSelectedTeen */.useSelectedTeen();
-  const ParentalControlledDefaultGuildsRestricted = require(13975) /* result */.ParentalControlledDefaultGuildsRestricted;
+  const selectedTeen = require(7233) /* useSelectedTeen */.useSelectedTeen();
+  const ParentalControlledDefaultGuildsRestricted = require(13949) /* result */.ParentalControlledDefaultGuildsRestricted;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;
   }
   const controlledSetting = ParentalControlledDefaultGuildsRestricted.useControlledSetting(id);
-  const ParentalControlledDefaultGuildsRestrictedV2 = require(13975) /* result */.ParentalControlledDefaultGuildsRestrictedV2;
+  const ParentalControlledDefaultGuildsRestrictedV2 = require(13949) /* result */.ParentalControlledDefaultGuildsRestrictedV2;
   let id1;
   if (selectedTeen != null) {
     id1 = selectedTeen.id;
@@ -111,8 +111,8 @@ export const useDefaultGuildsRestricted = function useDefaultGuildsRestricted() 
   return controlledSetting1;
 };
 export const useAllowFriendsFromMutualGuildsOnlyForTeen = function useAllowFriendsFromMutualGuildsOnlyForTeen() {
-  const selectedTeen = controlledSetting(7261).useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(13975).ParentalControlledFriendSourceFlags;
+  const selectedTeen = controlledSetting(7233).useSelectedTeen();
+  const ParentalControlledFriendSourceFlags = controlledSetting(13949).ParentalControlledFriendSourceFlags;
   let id;
   if (selectedTeen != null) {
     id = selectedTeen.id;
@@ -123,18 +123,18 @@ export const useAllowFriendsFromMutualGuildsOnlyForTeen = function useAllowFrien
   return memo.mutualGuilds && !memo.all;
 };
 export const useIsParentallyControlled = function useIsParentallyControlled() {
-  return require(7259) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
+  return require(7231) /* useUserIdsForLinkStatus */.useHasActiveParentLinks();
 };
 export const useParentalControlledConsent = function useParentalControlledConsent(PERSONALIZATION) {
   let _require = PERSONALIZATION;
-  let obj = _require(7261);
+  let obj = _require(7233);
   let selectedTeenId = obj.useSelectedTeenId();
   let items = [getSettings];
   _require = PERSONALIZATION;
   selectedTeenId = undefined;
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.hasConsented(selectedTeenId, closure_0));
   let obj2 = _require(589);
-  selectedTeenId = _require(7261).useSelectedTeenId();
+  selectedTeenId = _require(7233).useSelectedTeenId();
   _require = undefined;
   _require = callback((arg0) => {
     let closure_0 = arg0;
@@ -153,7 +153,7 @@ export const useParentalControlledConsent = function useParentalControlledConsen
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {

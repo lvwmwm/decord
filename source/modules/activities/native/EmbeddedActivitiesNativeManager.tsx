@@ -1,9 +1,9 @@
-// Module ID: 10538
-// Function ID: 10539
+// Module ID: 10510
+// Function ID: 10511
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1372, 4356, 1371, 4310, 676, 7731, 500, 10517, 10518, 1208, 10520, 10539, 4624, 1236, 10524, 3903, 698, 709, 10554, 10513, 3986, 9793, 1231, 1351, 514, 2]
+// Dependencies: [5, 17, 1372, 4326, 1371, 4280, 676, 7703, 500, 10489, 10490, 1208, 10492, 10511, 4594, 1236, 10496, 3873, 698, 709, 10526, 10485, 3956, 9764, 1231, 1351, 514, 2]
 
-// Module 10538 (postMessageToWebView)
+// Module 10510 (postMessageToWebView)
 import items3 from "items3";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -253,7 +253,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   let code;
   let message;
   ({ code, message } = reason);
-  let obj = importDefault(4624);
+  let obj = importDefault(4594);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.hbiAO6, { code });
@@ -261,7 +261,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   obj.show(obj);
 };
 prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
-  let obj = importDefault(4624);
+  let obj = importDefault(4594);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.PtobXW);
@@ -269,11 +269,11 @@ prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
   obj.show(obj);
 };
 prototype["showDevShelfOverrideEnabled"] = function showDevShelfOverrideEnabled() {
-  let obj = importDefault(3986);
+  let obj = importDefault(3956);
   obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: null, icon: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.JfA7IK);
-  obj[2] = importDefault(9793);
+  obj[2] = importDefault(9764);
   obj.open(obj);
 };
 prototype["releaseWebView"] = function releaseWebView() {
@@ -312,7 +312,7 @@ prototype["hidePIPEmbed"] = function hidePIPEmbed(arg0) {
   }
 };
 prototype["clearEmbeddedActivityState"] = function clearEmbeddedActivityState(_location, applicationId, showFeedback) {
-  let obj = require(10513) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
+  let obj = require(10485) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
   obj = { location: _location, applicationId, showFeedback };
   obj.stopEmbeddedActivity(obj);
   obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null };

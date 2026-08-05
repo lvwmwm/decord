@@ -1,9 +1,9 @@
-// Module ID: 13870
-// Function ID: 13871
+// Module ID: 13844
+// Function ID: 13845
 // Name: hasFetchedCredentials
 // Dependencies: [1906, 589, 709, 2]
 
-// Module 13870 (hasFetchedCredentials)
+// Module 13844 (hasFetchedCredentials)
 import { Store } from "initialize";
 
 const require = arg1;

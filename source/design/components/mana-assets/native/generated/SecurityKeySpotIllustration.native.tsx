@@ -1,10 +1,10 @@
-// Module ID: 6593
-// Function ID: 6594
+// Module ID: 6578
+// Function ID: 6579
 // Name: SecurityKeySpotIllustration
-// Dependencies: [21, 5236, 6594, 2]
+// Dependencies: [21, 5221, 6579, 2]
 // Exports: SecurityKeySpotIllustration
 
-// Module 6593 (SecurityKeySpotIllustration)
+// Module 6578 (SecurityKeySpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SecurityKeySpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const SecurityKeySpotIllustration = function SecurityKeySpotIllustration(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6594);
+  obj[0] = importDefault(6579);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SecurityKeySpotIllustration = function SecurityKeySpotIllustration(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
 };

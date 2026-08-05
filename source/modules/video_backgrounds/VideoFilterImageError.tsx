@@ -1,9 +1,9 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9058
+// Function ID: 9059
 // Name: prototype
 // Dependencies: [530, 1236, 2]
 
-// Module 9086 (prototype)
+// Module 9058 (prototype)
 import { V8APIError } from "sendRequest";
 
 let closure_2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };

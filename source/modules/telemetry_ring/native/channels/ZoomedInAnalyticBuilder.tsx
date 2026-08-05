@@ -1,10 +1,10 @@
-// Module ID: 13368
-// Function ID: 13369
+// Module ID: 13340
+// Function ID: 13341
 // Name: buildZoomedInAnalyticsEvent
-// Dependencies: [676, 7055, 12812, 12980, 2]
+// Dependencies: [676, 7029, 12784, 12952, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 13368 (buildZoomedInAnalyticsEvent)
+// Module 13340 (buildZoomedInAnalyticsEvent)
 import { AnalyticEvents } from "ME";
 
 let closure_3 = { Gateway: "gateway", RtcControl: "rtc_control", RemoteAuth: "remote_auth", Spotify: "spotify", Rpc: "rpc", GameServerPing: "game_server_ping" };
@@ -312,7 +312,7 @@ let closure_5 = {
       if (typeof touch_action_type === "string") {
         tmp2 = touch_action_type;
       }
-      let obj = importDefault(7055);
+      let obj = importDefault(7029);
       let currentHermesInstrumentedStatsSummary = obj.getCurrentHermesInstrumentedStatsSummary();
       if (currentHermesInstrumentedStatsSummary == null) {
         currentHermesInstrumentedStatsSummary = null;
@@ -536,7 +536,7 @@ let closure_5 = {
   [AnalyticEvents.WEBSOCKET_MESSAGE_RECEIVED]: (data) => {
     data = data.data;
     if (null == data) {
-      let obj = { message_identity: "unknown", socket_kind: "call" };
+      let obj = { message_identity: "unknown", socket_kind: "Boolean" };
     } else {
       const url = data.url;
       let tmp61 = null;
@@ -655,7 +655,7 @@ let closure_5 = {
             }
             let tmp41 = null;
             if (null != tmp37) {
-              const tmp44 = require(12812) /* Opcode */.Opcode[tmp37];
+              const tmp44 = require(12784) /* Opcode */.Opcode[tmp37];
               let tmp45 = null;
               if (typeof tmp44 === "string") {
                 tmp45 = tmp44;
@@ -744,7 +744,7 @@ let closure_5 = {
           }
           let tmp26 = null;
           if (null != tmp22) {
-            const tmp29 = require(12980) /* noop */.RTCSocketOpcode[tmp22];
+            const tmp29 = require(12952) /* noop */.RTCSocketOpcode[tmp22];
             let tmp30 = null;
             if (typeof tmp29 === "string") {
               tmp30 = tmp29;

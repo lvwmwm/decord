@@ -1,10 +1,10 @@
-// Module ID: 5647
-// Function ID: 5648
+// Module ID: 5632
+// Function ID: 5633
 // Name: ActionSheetCloseButton
-// Dependencies: [19, 21, 4812, 1236, 5270, 712, 2]
+// Dependencies: [19, 21, 4797, 1236, 5255, 712, 2]
 // Exports: ActionSheetCloseButton
 
-// Module 5647 (ActionSheetCloseButton)
+// Module 5632 (ActionSheetCloseButton)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -28,6 +28,6 @@ export const ActionSheetCloseButton = function ActionSheetCloseButton(arg0) {
   } else {
     ICON_STRONG = importDefault(712).colors.ICON_STRONG;
   }
-  obj[5] = jsx(require(5270) /* XSmallIcon */.XSmallIcon, { color: ICON_STRONG });
-  return jsx(require(4812) /* PressableBase */.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, androidRippleConfig: null, onPress: null, children: null });
+  obj[5] = jsx(require(5255) /* XSmallIcon */.XSmallIcon, { color: ICON_STRONG });
+  return jsx(require(4797) /* PressableBase */.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, androidRippleConfig: null, onPress: null, children: null });
 };

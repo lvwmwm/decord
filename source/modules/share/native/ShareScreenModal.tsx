@@ -1,10 +1,10 @@
-// Module ID: 13153
-// Function ID: 13154
+// Module ID: 13125
+// Function ID: 13126
 // Name: onClose
-// Dependencies: [5, 32, 19, 1372, 13105, 21, 3, 4490, 8846, 589, 4295, 692, 13154, 2]
+// Dependencies: [5, 32, 19, 1372, 13077, 21, 3, 4460, 8818, 589, 4265, 692, 13126, 2]
 // Exports: default
 
-// Module 13153 (onClose)
+// Module 13125 (onClose)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -14,7 +14,7 @@ import { jsx } from "jsxProd";
 
 let require = arg1;
 function onClose() {
-  importDefault(4490).popWithKey(SHARE_SCREEN_MODAL_KEY);
+  importDefault(4460).popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
 let c9 = new require("ensureGuildLoaded")("ShareScreenModal");
 const tmp2 = new require("ensureGuildLoaded")("ShareScreenModal");
@@ -51,7 +51,7 @@ export default function ShareScreenModal(text) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {
@@ -152,7 +152,7 @@ export default function ShareScreenModal(text) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "T", done: null };
           }
         } else {
           try {

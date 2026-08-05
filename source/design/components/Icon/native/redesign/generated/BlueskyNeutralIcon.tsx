@@ -1,10 +1,10 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12073
+// Function ID: 12074
 // Name: BlueskyNeutralIcon
-// Dependencies: [19, 21, 712, 3988, 12102, 2]
+// Dependencies: [19, 21, 712, 3958, 12074, 2]
 // Exports: BlueskyNeutralIcon
 
-// Module 12101 (BlueskyNeutralIcon)
+// Module 12073 (BlueskyNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const BlueskyNeutralIcon = function BlueskyNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12102) /* registerAsset */;
+  obj[0] = require(12074) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3988) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

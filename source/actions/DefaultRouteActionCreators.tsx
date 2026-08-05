@@ -1,10 +1,10 @@
-// Module ID: 10865
-// Function ID: 10866
+// Module ID: 10837
+// Function ID: 10838
 // Name: saveLastRoute
-// Dependencies: [3914, 676, 4107, 4120, 709, 2]
+// Dependencies: [3884, 676, 4077, 4090, 709, 2]
 // Exports: saveLastNonVoiceRoute, saveLastRoute
 
-// Module 10865 (saveLastRoute)
+// Module 10837 (saveLastRoute)
 import initialize from "initialize";
 import { Routes } from "ME";
 
@@ -12,9 +12,9 @@ const require = arg1;
 const result = require("matchPath").fileFinishedImporting("actions/DefaultRouteActionCreators.tsx");
 
 export const saveLastRoute = function saveLastRoute(pathname) {
-  let obj = require(4107) /* matchPath */;
+  let obj = require(4077) /* matchPath */;
   obj = { path: null };
-  const RouteParam = require(4120) /* RouteParam */.RouteParam;
+  const RouteParam = require(4090) /* RouteParam */.RouteParam;
   obj[0] = Routes.CHANNEL(RouteParam.guildId());
   const matchPathResult = obj.matchPath(pathname, obj);
   let guildId;
@@ -36,9 +36,9 @@ export const saveLastRoute = function saveLastRoute(pathname) {
   }
 };
 export const saveLastNonVoiceRoute = function saveLastNonVoiceRoute(Routes) {
-  let obj = require(4107) /* matchPath */;
+  let obj = require(4077) /* matchPath */;
   obj = { path: null };
-  const RouteParam = require(4120) /* RouteParam */.RouteParam;
+  const RouteParam = require(4090) /* RouteParam */.RouteParam;
   obj[0] = Routes.CHANNEL(RouteParam.guildId());
   const matchPathResult = obj.matchPath(Routes, obj);
   let guildId;

@@ -1,10 +1,10 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16223
+// Function ID: 16224
 // Name: onClose
-// Dependencies: [19, 4102, 1221, 16243, 676, 21, 500, 3986, 16244, 1236, 5735, 5200, 4490, 698, 503, 5238, 16245, 16247, 16248, 15017, 8602, 4498, 4500, 5665, 2]
+// Dependencies: [19, 4072, 1221, 16224, 676, 21, 500, 3956, 16225, 1236, 5720, 5185, 4460, 698, 503, 5223, 16226, 16228, 16229, 14997, 8574, 4468, 4470, 5650, 2]
 // Exports: default
 
-// Module 16242 (onClose)
+// Module 16223 (onClose)
 import AgeGateUnderage from "AgeGateUnderage";
 import handleConnectionOpen from "handleConnectionOpen";
 import result from "result";
@@ -16,7 +16,7 @@ let c5;
 let closure_6;
 const require = arg1;
 function onClose() {
-  require(5735) /* openAgeGateModal */.closeAgeGateModal();
+  require(5720) /* openAgeGateModal */.closeAgeGateModal();
 }
 function renderHeaderTitle() {
   return null;
@@ -27,11 +27,11 @@ result = require("result").fileFinishedImporting("modules/age_gate/native/compon
 export default function ExistingUserAgeGateModal(source) {
   source = source.source;
   let closure_1;
-  let obj = source(4498);
+  let obj = source(4468);
   const shouldAgeVerifyForAgeGate = obj.useShouldAgeVerifyForAgeGate();
   closure_1 = React.useRef(shouldAgeVerifyForAgeGate);
   const items = [source];
-  const watchAgeVerificationStatusChange = source(4500).useWatchAgeVerificationStatusChange(React.useCallback(() => {
+  const watchAgeVerificationStatusChange = source(4470).useWatchAgeVerificationStatusChange(React.useCallback(() => {
     if (ref.current) {
       source(outer1_2[10]).closeAgeGateModal(source);
       const obj = source(outer1_2[10]);
@@ -115,12 +115,12 @@ export default function ExistingUserAgeGateModal(source) {
           return outer1_9(outer1_1(outer1_2[16]), obj);
         }
         fn = () => {
-          let obj = arr(5735);
+          let obj = arr(5720);
           obj.closeAgeGateModal();
-          obj = { key: "AGE_GATE_AGE_VERIFIED", icon: callback(16244), content: null };
+          obj = { key: "AGE_GATE_AGE_VERIFIED", icon: callback(16225), content: null };
           const intl = arr(1236).intl;
           obj[2] = intl.string(arr(1236).t.gUiIGZ);
-          callback(3986).open(obj);
+          callback(3956).open(obj);
         };
       };
       obj[outer1_7.AgeGate] = obj;
@@ -146,7 +146,7 @@ export default function ExistingUserAgeGateModal(source) {
       obj2[2] = { existing_user: true };
       obj2[3] = function render(arg0) {
         const merged = Object.assign(arg0);
-        return callback3(callback2(15017), {});
+        return callback3(callback2(14997), {});
       };
       obj[outer1_7.Blocked] = obj2;
       const obj3 = { headerTitle: null, headerLeft: null, render: null };
@@ -154,7 +154,7 @@ export default function ExistingUserAgeGateModal(source) {
       const obj6 = source(outer1_2[15]);
       obj3[1] = source(outer1_2[15]).getHeaderBackButton(fn);
       obj3[2] = function render() {
-        return callback3(callback2(8602), { onClose: closure_10 });
+        return callback3(callback2(8574), { onClose: closure_10 });
       };
       obj[outer1_7.NSFWGateGuild] = obj3;
       return obj;
@@ -166,5 +166,5 @@ export default function ExistingUserAgeGateModal(source) {
   obj[1] = shouldAgeVerifyForAgeGate ? closure_7.Pawtect : closure_7.AgeGate;
   let intl = tmp(1236).intl;
   obj[2] = intl.string(source(1236).t["13/7kX"]);
-  return jsx(source(5665).Navigator, { screens: null, initialRouteName: null, headerBackTitle: null });
+  return jsx(source(5650).Navigator, { screens: null, initialRouteName: null, headerBackTitle: null });
 };

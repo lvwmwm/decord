@@ -1,9 +1,9 @@
-// Module ID: 10563
-// Function ID: 10564
+// Module ID: 10535
+// Function ID: 10536
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 10563 (apexExperiment)
+// Module 10535 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-06-content-classification-embedded-activity-filter", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

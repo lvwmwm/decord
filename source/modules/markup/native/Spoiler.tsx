@@ -1,9 +1,9 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 9688
+// Function ID: 9689
 // Name: render
-// Dependencies: [19, 17, 676, 9710, 21, 4285, 500, 712, 3997, 1297, 2]
+// Dependencies: [19, 17, 676, 9681, 21, 4255, 500, 712, 3967, 1297, 2]
 
-// Module 9717 (render)
+// Module 9688 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { EMOJI_CHAT_SIZE } from "ME";
@@ -97,7 +97,7 @@ Spoiler.prototype["render"] = function render() {
                 if (Array.isArray(style)) {
                   flattenResult = outer1_4.flatten(style);
                 }
-                const obj = { children: null, style: null, onPress: "disabled" };
+                const obj = { children: null, style: null, onPress: "Array" };
                 ({ Children, cloneElement } = tmp);
                 obj[0] = Children.map(props.props.children, (props) => {
                   let Children;
@@ -109,7 +109,7 @@ Spoiler.prototype["render"] = function render() {
                     if (Array.isArray(style)) {
                       flattenResult = outer1_4.flatten(style);
                     }
-                    const obj = { children: null, style: null, onPress: "disabled" };
+                    const obj = { children: null, style: null, onPress: "Array" };
                     ({ Children, cloneElement } = tmp);
                     obj[0] = Children.map(props.props.children, (props) => {
                       let Children;
@@ -121,7 +121,7 @@ Spoiler.prototype["render"] = function render() {
                         if (Array.isArray(style)) {
                           flattenResult = outer1_4.flatten(style);
                         }
-                        const obj = { children: null, style: null, onPress: "disabled" };
+                        const obj = { children: null, style: null, onPress: "Array" };
                         ({ Children, cloneElement } = tmp);
                         obj[0] = Children.map(props.props.children, () => { ... });
                         const items = [flattenResult, spoiler.spoiler];

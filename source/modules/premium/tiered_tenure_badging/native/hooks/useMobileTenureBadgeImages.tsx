@@ -1,10 +1,10 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 9373
+// Function ID: 9374
 // Name: useMobileTenureBadgeImages
-// Dependencies: [1876, 9403, 9404, 9405, 9406, 9407, 9408, 9409, 9410, 9411, 9412, 9413, 9414, 9415, 9416, 9417, 9418, 9419, 9420, 9421, 9422, 9423, 9424, 9425, 9426, 2]
+// Dependencies: [1876, 9374, 9375, 9376, 9377, 9378, 9379, 9380, 9381, 9382, 9383, 9384, 9385, 9386, 9387, 9388, 9389, 9390, 9391, 9392, 9393, 9394, 9395, 9396, 9397, 2]
 // Exports: getMobileTenureBadgeImages, useMobileTenureBadgeImages
 
-// Module 9402 (useMobileTenureBadgeImages)
+// Module 9373 (useMobileTenureBadgeImages)
 import { TieredTenureBadge } from "GuildFeatures";
 
 let obj = {};

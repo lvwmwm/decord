@@ -1,9 +1,9 @@
-// Module ID: 13577
-// Function ID: 13578
+// Module ID: 13549
+// Function ID: 13550
 // Name: getModalState
-// Dependencies: [1906, 38, 8031, 687, 6826, 589, 709, 2]
+// Dependencies: [1906, 38, 8003, 687, 6811, 589, 709, 2]
 
-// Module 13577 (getModalState)
+// Module 13549 (getModalState)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -29,21 +29,21 @@ obj = {
   },
   INTERACTION_MODAL_CREATE: function handleInteractionModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      importDefault(6826).deleteMessage(c6, c5, true);
+      importDefault(6811).deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
-      const obj = importDefault(6826);
+      const obj = importDefault(6811);
     }
     return false;
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleInteractionIframeModalCreate(nonce) {
     if (nonce.nonce === c7) {
-      importDefault(6826).deleteMessage(c6, c5, true);
+      importDefault(6811).deleteMessage(c6, c5, true);
       c5 = null;
       c6 = null;
       c7 = null;
-      const obj = importDefault(6826);
+      const obj = importDefault(6811);
     }
     return false;
   },

@@ -1,9 +1,9 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 7989
+// Function ID: 7990
 // Name: defineProperty
 // Dependencies: [32, 1307, 1337, 2]
 
-// Module 8017 (defineProperty)
+// Module 7989 (defineProperty)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 import { MessageType as MessageType2 } from "module_1307";
@@ -622,7 +622,7 @@ class Filter$Type extends MessageType3 {
 }
 const prototype3 = Filter$Type.prototype;
 prototype3["create"] = function create(arr) {
-  let obj = { filter: { oneofKind: "r" }, negate: false };
+  let obj = { filter: { oneofKind: "Array" }, negate: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -1802,7 +1802,7 @@ class ClientLocation_Location$Type extends MessageType13 {
 }
 const prototype13 = ClientLocation_Location$Type.prototype;
 prototype13["create"] = function create(arr) {
-  let obj = { location: { oneofKind: "r" } };
+  let obj = { location: { oneofKind: "Array" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);

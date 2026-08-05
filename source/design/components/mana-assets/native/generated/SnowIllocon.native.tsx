@@ -1,10 +1,10 @@
-// Module ID: 6651
-// Function ID: 6652
+// Module ID: 6636
+// Function ID: 6637
 // Name: SnowIllocon
-// Dependencies: [21, 5236, 6652, 2]
+// Dependencies: [21, 5221, 6637, 2]
 // Exports: SnowIllocon
 
-// Module 6651 (SnowIllocon)
+// Module 6636 (SnowIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SnowIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const SnowIllocon = function SnowIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6652);
+  obj[0] = importDefault(6637);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5236), { uri: null });
+  return jsx(importDefault(5221), { uri: null });
 };

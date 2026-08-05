@@ -1,9 +1,9 @@
-// Module ID: 4816
-// Function ID: 4817
+// Module ID: 4801
+// Function ID: 4802
 // Name: set
-// Dependencies: [109, 5, 32, 4284, 1304, 4376, 676, 3, 530, 4817, 4824, 687, 584, 12, 1454, 4826, 4857, 4858, 4862, 4863, 1208, 4825, 4818, 4864, 4865, 1959, 698, 2]
+// Dependencies: [109, 5, 32, 4254, 1304, 4346, 676, 3, 530, 4802, 4809, 687, 584, 12, 1454, 4811, 4842, 4843, 4847, 4848, 1208, 4810, 4803, 4849, 4850, 1959, 698, 2]
 
-// Module 4816 (set)
+// Module 4801 (set)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import _slicedToArray from "_slicedToArray";
@@ -299,7 +299,7 @@ prototype["parseRangeHeader"] = function parseRangeHeader(str) {
   return tmp2;
 };
 prototype["retryOpts"] = function retryOpts() {
-  if (this.item.platform === require(4817) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (this.item.platform === require(4802) /* cancel */.UploadPlatform.REACT_NATIVE) {
     let obj = { timeout: null, backoff: null, retries: 12 };
     obj[0] = importDefault(687).Millis.HOUR;
     let tmp8 = importDefault(584);
@@ -316,7 +316,7 @@ prototype["retryOpts"] = function retryOpts() {
 };
 prototype["createAttachmentUrlRetryOpts"] = function createAttachmentUrlRetryOpts() {
   const self = this;
-  if (this.item.platform === require(4817) /* cancel */.UploadPlatform.REACT_NATIVE) {
+  if (this.item.platform === require(4802) /* cancel */.UploadPlatform.REACT_NATIVE) {
     let obj = { timeout: null, backoff: null, retries: 8 };
     obj = { response: null, deadline: null };
     obj[0] = 30 * importDefault(687).Millis.SECOND;
@@ -335,7 +335,7 @@ prototype["createAttachmentUrlRetryOpts"] = function createAttachmentUrlRetryOpt
 prototype["supportsResume"] = function supportsResume() {
   let _libdiscoreEnabled = this._libdiscoreEnabled;
   if (!_libdiscoreEnabled) {
-    _libdiscoreEnabled = this.item.platform !== require(4817) /* cancel */.UploadPlatform.REACT_NATIVE;
+    _libdiscoreEnabled = this.item.platform !== require(4802) /* cancel */.UploadPlatform.REACT_NATIVE;
   }
   return _libdiscoreEnabled;
 };
@@ -445,7 +445,7 @@ prototype["startOrResumeUpload"] = function startOrResumeUpload(c3, outer1_4) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -551,7 +551,7 @@ prototype["uploadFileWithResumption"] = function uploadFileWithResumption(respon
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -600,7 +600,7 @@ prototype["uploadFileWithResumption"] = function uploadFileWithResumption(respon
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "T", done: null };
                 }
               } else {
                 try {
@@ -742,7 +742,7 @@ prototype["uploadFileWithResumption"] = function uploadFileWithResumption(respon
                       return obj;
                     } else {
                       c6 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "T", done: null };
                     }
                     c3 = 0;
                     c6 = 3;
@@ -890,7 +890,7 @@ prototype["trackTime"] = function trackTime(compressTimeMs, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -974,7 +974,7 @@ prototype["upload"] = function upload() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -1334,7 +1334,7 @@ prototype["reactNativeCompressAndExtractData"] = function reactNativeCompressAnd
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "T", done: null };
         }
       } else {
         try {
@@ -1657,7 +1657,7 @@ CloudUpload["tryConvertToWebP"] = function tryConvertToWebP(file, arg1, id) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -1887,7 +1887,7 @@ prototype["delete"] = function delete() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
@@ -1902,7 +1902,7 @@ prototype["delete"] = function delete() {
             obj[0] = arg1;
             return obj;
           } else if (null != v0.uploadedFilename) {
-            let obj1 = v0(4858);
+            let obj1 = v0(4843);
             const uploadTarget = obj1.getUploadTarget(tmp18.item.target);
             let dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp18.uploadedFilename);
@@ -1967,7 +1967,7 @@ prototype["ensureFreshResponseUrl"] = function ensureFreshResponseUrl() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "T", done: null };
       }
     } else {
       try {
