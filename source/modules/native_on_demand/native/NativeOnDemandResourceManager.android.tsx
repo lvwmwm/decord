@@ -1,9 +1,9 @@
-// Module ID: 16355
-// Function ID: 16356
+// Module ID: 16395
+// Function ID: 16396
 // Name: prototype
-// Dependencies: [4302, 6770, 676, 5214, 16356, 9049, 2]
+// Dependencies: [4332, 6797, 676, 5244, 16396, 9078, 2]
 
-// Module 16355 (prototype)
+// Module 16395 (prototype)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import getState from "getState";
 import { AppStates } from "ME";

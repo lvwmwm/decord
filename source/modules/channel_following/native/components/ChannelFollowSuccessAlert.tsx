@@ -1,10 +1,10 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10224
+// Function ID: 10225
 // Name: items
-// Dependencies: [19, 17, 21, 10194, 10195, 10196, 10197, 10198, 10199, 1236, 4255, 4191, 4101, 6798, 12, 4683, 4251, 2]
+// Dependencies: [19, 17, 21, 10225, 10226, 10227, 10228, 10229, 10230, 1236, 4285, 4221, 4130, 6825, 12, 4713, 4281, 2]
 // Exports: default
 
-// Module 10193 (items)
+// Module 10224 (items)
 import "noop";
 import { Image } from "set";
 import jsxProd from "jsxProd";
@@ -63,17 +63,17 @@ const result = require("jsxProd").fileFinishedImporting("modules/channel_followi
 
 export default function ChannelFollowSuccessAlert(arg0) {
   const tmp = callback3();
-  let obj = require(4101) /* AccessibilityAnnouncer */;
-  const tmp6 = obj.isThemeDark(importDefault(4191)()) ? items1 : items;
+  let obj = require(4130) /* AccessibilityAnnouncer */;
+  const tmp6 = obj.isThemeDark(importDefault(4221)()) ? items1 : items;
   require = tmp6;
-  let tmp5Result = tmp5(6798);
+  let tmp5Result = tmp5(6825);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => outer1_1(outer1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(6798);
+  tmp5Result = tmp5(6825);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;
-  const tmp4 = importDefault(4191)();
+  const tmp4 = importDefault(4221)();
   const merged = Object.assign(arg0);
   const intl = tmp5(1236).intl;
   obj.confirmText = intl.string(require(1236) /* getSystemLocale */.t["+IrDzN"]);
@@ -81,11 +81,11 @@ export default function ChannelFollowSuccessAlert(arg0) {
   items1 = [callback(Image, obj), , ];
   const obj1 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   obj1[3] = stableMemo1();
-  items1[1] = callback(require(4251) /* Text */.Text, obj1);
+  items1[1] = callback(require(4281) /* Text */.Text, obj1);
   const obj2 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: null };
   const intl2 = tmp5(1236).intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t["2QbSea"]);
-  items1[2] = callback(require(4251) /* Text */.Text, obj2);
+  items1[2] = callback(require(4281) /* Text */.Text, obj2);
   obj.children = items1;
-  return callback2(importDefault(4683), obj);
+  return callback2(importDefault(4713), obj);
 };

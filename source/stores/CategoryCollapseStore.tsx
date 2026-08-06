@@ -1,9 +1,9 @@
-// Module ID: 5213
-// Function ID: 5214
+// Module ID: 5243
+// Function ID: 5244
 // Name: incrementVersion
-// Dependencies: [1340, 1372, 4592, 1932, 676, 1306, 1351, 1865, 589, 709, 2]
+// Dependencies: [1340, 1372, 4622, 1961, 676, 1306, 1351, 1894, 589, 709, 2]
 
-// Module 5213 (incrementVersion)
+// Module 5243 (incrementVersion)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -237,7 +237,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         }
       });
     }
-    obj = require(1865) /* getFavoritesAwareGuildName */;
+    obj = require(1894) /* getFavoritesAwareGuildName */;
   },
   CATEGORY_EXPAND_ALL: function handleCategoryExpandAll(guildId) {
     guildId = guildId.guildId;
@@ -248,7 +248,7 @@ const categoryCollapseStore = new CategoryCollapseStore(require("dispatcher"), {
         delete tmp2[tmp];
       });
     }
-    obj = require(1865) /* getFavoritesAwareGuildName */;
+    obj = require(1894) /* getFavoritesAwareGuildName */;
   },
   CHANNEL_DELETE: function handleChannelDelete(arg0) {
     if (null != dependencyMap[arg0.channel.id]) {

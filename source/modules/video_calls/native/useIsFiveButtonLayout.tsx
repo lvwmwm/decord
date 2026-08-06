@@ -1,10 +1,10 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 10607
+// Function ID: 10608
 // Name: useIsFiveButtonLayout
-// Dependencies: [1372, 1862, 589, 9630, 10553, 10554, 5785, 2]
+// Dependencies: [1372, 1891, 589, 9661, 10608, 10609, 5812, 2]
 // Exports: useIsFiveButtonLayout
 
-// Module 10552 (useIsFiveButtonLayout)
+// Module 10607 (useIsFiveButtonLayout)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
@@ -17,7 +17,7 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_3.getChannel(closure_0));
   const obj = _require(589);
   const tmp = _require;
-  let isConnectedToVoiceChannel = _require(9630).useIsConnectedToVoiceChannel(stateFromStores);
+  let isConnectedToVoiceChannel = _require(9661).useIsConnectedToVoiceChannel(stateFromStores);
   let guild_id;
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
@@ -26,7 +26,7 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
     guild_id = null;
   }
   let guild_id1;
-  const obj3 = _require(9630);
+  const obj3 = _require(9661);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -37,8 +37,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp6 = guild_id(10553);
-  const tmp6Result = guild_id(10553)(guild_id1, id);
+  const tmp6 = guild_id(10608);
+  const tmp6Result = guild_id(10608)(guild_id1, id);
   const items1 = [createGuildRecordFromRust];
   const items2 = [guild_id];
   const stateFromStores1 = tmp(589).useStateFromStores(items1, () => outer1_4.getGuild(guild_id), items2);
@@ -57,8 +57,8 @@ export const useIsFiveButtonLayout = function useIsFiveButtonLayout(id) {
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
-  const tmp5Result = guild_id(10554);
-  const tmp5ResultResult = guild_id(10554)(id1);
+  const tmp5Result = guild_id(10609);
+  const tmp5ResultResult = guild_id(10609)(id1);
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }

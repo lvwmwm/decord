@@ -1,18 +1,20 @@
-// Module ID: 13637
-// Function ID: 13638
-// Dependencies: [4280, 505, 10518, 709, 10515, 2]
+// Module ID: 13674
+// Function ID: 13675
+// Dependencies: [10509, 4188, 4310, 505, 10539, 10536, 709, 2]
 
-// Module 13637
+// Module 13674
+import map from "map";
+import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { OrientationLockState } from "items3";
 import sum from "sum";
 
 const RPCErrors = sum.RPCErrors;
-const result = require("createRpcJoiSchemaObject").fileFinishedImporting("modules/rpc/server/commands/setOrientationLockState.tsx");
+const result = require("items3").fileFinishedImporting("modules/rpc/server/commands/setOrientationLockState.tsx");
 
 export default {
   [sum.RPCCommands.SET_ORIENTATION_LOCK_STATE]: {
     validation(number) {
-      let obj = importDefault(10518)(number);
+      let obj = importDefault(10539)(number);
       obj = { lock_state: null, picture_in_picture_lock_state: null, grid_lock_state: null };
       const requiredResult = obj.required();
       let validResult = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
@@ -27,29 +29,45 @@ export default {
       obj[2] = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE).allow(null).optional();
       return requiredResult.keys(obj);
     },
-    handler(args) {
+    handler(arg0) {
+      let args;
       let lock_state;
       let picture_in_picture_lock_state;
-      ({ lock_state, picture_in_picture_lock_state } = args.args);
-      const id = args.socket.application.id;
-      if (null == id) {
+      let socket;
+      ({ socket, args } = arg0);
+      ({ lock_state, picture_in_picture_lock_state } = args);
+      if (socket.source.type !== TransportTypes.POST_MESSAGE) {
         let obj = { errorCode: null };
         obj[0] = RPCErrors.INVALID_COMMAND;
-        const tmp12 = new importDefault(10515)(obj, "No application.");
-        throw tmp12;
+        const _HermesInternal = HermesInternal;
+        let tmp18 = importDefault(10536);
+        tmp18 = new tmp18(obj, "command not available from \"" + socket.source.type + "\" transport");
+        throw tmp18;
       } else {
-        obj = importDefault(709);
-        obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null, pictureInPictureLockState: null };
-        obj[1] = id;
-        obj[2] = lock_state;
-        obj[3] = picture_in_picture_lock_state;
-        obj.dispatch(obj);
-        const obj1 = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null, pictureInPictureLockState: null, gridLockState: null };
-        obj1[1] = id;
-        obj1[2] = lock_state;
-        obj1[3] = picture_in_picture_lock_state;
-        obj1[4] = tmp;
-        importDefault(709).dispatch(obj1);
+        const id = socket.application.id;
+        if (null == id) {
+          obj = { errorCode: null };
+          obj[0] = RPCErrors.INVALID_COMMAND;
+          const tmp14 = new importDefault(10536)(obj, "No application.");
+          throw tmp14;
+        } else {
+          frameByIframeId = frameByIframeId.getFrameByIframeId(socket.source.iframeId);
+          if (null != frameByIframeId) {
+            obj = importDefault(709);
+            const obj1 = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId: null, lockState: null, pictureInPictureLockState: null };
+            obj1[1] = frameByIframeId.id;
+            obj1[2] = lock_state;
+            obj1[3] = picture_in_picture_lock_state;
+            obj.dispatch(obj1);
+          }
+          let obj2 = importDefault(709);
+          obj2 = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId: null, lockState: null, pictureInPictureLockState: null, gridLockState: null };
+          obj2[1] = id;
+          obj2[2] = lock_state;
+          obj2[3] = picture_in_picture_lock_state;
+          obj2[4] = tmp;
+          obj2.dispatch(obj2);
+        }
       }
     }
   }

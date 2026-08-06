@@ -1,10 +1,10 @@
-// Module ID: 7819
-// Function ID: 7820
+// Module ID: 7960
+// Function ID: 7961
 // Name: ShieldElement
-// Dependencies: [19, 17, 21, 4255, 5921, 2]
+// Dependencies: [19, 17, 21, 4285, 5948, 2]
 // Exports: default
 
-// Module 7819 (ShieldElement)
+// Module 7960 (ShieldElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,7 +22,7 @@ export default function ShieldElement(element) {
     if ("success" === element.type) {
       const obj = { style: null, children: null };
       obj[0] = tmp.container;
-      obj[1] = jsx(require(5921) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 });
+      obj[1] = jsx(require(5948) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, { width: 100, height: 100 });
       tmp2 = <View style={null}>{null}</View>;
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6933
+// Function ID: 6934
 // Name: getProductOrbPrice
-// Dependencies: [32, 6901, 676, 1901, 2]
+// Dependencies: [32, 6928, 676, 1930, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 6906 (getProductOrbPrice)
+// Module 6933 (getProductOrbPrice)
 import _slicedToArray from "_slicedToArray";
 import { isProfileEffectRecord } from "fromServer";
 import ME from "ME";
@@ -147,7 +147,7 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
   if (tmp) {
     let type1 = null;
     if (null != selectedProduct) {
-      if (selectedProduct.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
+      if (selectedProduct.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
         type1 = null;
         if (null != selectedProduct.variants) {
           type1 = null;
@@ -164,7 +164,7 @@ export const isDynamicProduct = function isDynamicProduct(selectedProduct) {
         type1 = selectedProduct.type;
       }
     }
-    let someResult = type1 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+    let someResult = type1 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
     if (someResult) {
       const items = selectedProduct.items;
       someResult = items.some((effects) => {
@@ -230,7 +230,7 @@ export const getProductsWithOrbsPrice = function getProductsWithOrbsPrice(arr) {
   });
 };
 export const getIsVariantProduct = function getIsVariantProduct(product) {
-  let tmp = product.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = product.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != product.variants;
   }
@@ -240,7 +240,7 @@ export const getIsVariantProduct = function getIsVariantProduct(product) {
   return tmp;
 };
 export const getProductSkuIds = function getProductSkuIds(closure_0) {
-  let tmp = closure_0.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = closure_0.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != closure_0.variants;
   }
@@ -256,7 +256,7 @@ export const getProductSkuIds = function getProductSkuIds(closure_0) {
   return mapped;
 };
 export const getSelectedProduct = function getSelectedProduct(product, defaultVariantIndex) {
-  let tmp = product.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
+  let tmp = product.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP;
   if (tmp) {
     tmp = null != product.variants;
   }
@@ -279,7 +279,7 @@ export const getSelectedProduct = function getSelectedProduct(product, defaultVa
 export const getProductType = function getProductType(product) {
   if (null == product) {
     return null;
-  } else if (product.type === require(1901) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
+  } else if (product.type === require(1930) /* CollectiblesItemType */.CollectiblesItemType.VARIANTS_GROUP) {
     if (null != product.variants) {
       if (0 !== product.variants.length) {
         const first = product.variants[0];

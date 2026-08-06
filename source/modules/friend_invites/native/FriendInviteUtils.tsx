@@ -1,10 +1,10 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16261
+// Function ID: 16262
 // Name: DEFAULT_EXPIRATION_DAYS
-// Dependencies: [1372, 3892, 7651, 3956, 1236, 9764, 709, 9440, 2]
+// Dependencies: [1372, 3921, 7679, 3985, 1236, 9795, 709, 9469, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16221 (DEFAULT_EXPIRATION_DAYS)
+// Module 16261 (DEFAULT_EXPIRATION_DAYS)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 
@@ -14,13 +14,13 @@ let result = require("generateAcceptInviteOptions").fileFinishedImporting("modul
 export const DEFAULT_EXPIRATION_DAYS = 7;
 export const DEFAULT_EXPIRATION_USES = 5;
 export const revokeAllFriendInvites = function revokeAllFriendInvites() {
-  let obj = importDefault(7651);
-  importDefault(7651).revokeFriendInvites().then(() => {
-    let obj = callback2(3956);
+  let obj = importDefault(7679);
+  importDefault(7679).revokeFriendInvites().then(() => {
+    let obj = callback2(3985);
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED", content: null, icon: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.jSHEOQ);
-    obj[2] = callback2(9764);
+    obj[2] = callback2(9795);
     obj.open(obj);
   });
 };
@@ -32,12 +32,12 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, arg1) {
       dMFromUserId = dMFromUserId.getDMFromUserId(invite.inviter.id);
     }
     if (null != dMFromUserId) {
-      importDefault(7651).transitionToInvite(invite, { forceTransition: true });
-      const obj3 = importDefault(7651);
+      importDefault(7679).transitionToInvite(invite, { forceTransition: true });
+      const obj3 = importDefault(7679);
       importDefault(709).wait(() => callback(table[7])());
       const obj4 = importDefault(709);
     } else {
-      let obj = importDefault(7651);
+      let obj = importDefault(7679);
       obj = { inviteKey: null, context: null, callback: null };
       obj[0] = invite.code;
       obj[1] = arg1;

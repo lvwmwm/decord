@@ -1,9 +1,9 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7040
+// Function ID: 7041
 // Name: recountRelationshipTypes
-// Dependencies: [3892, 676, 3879, 589, 709, 2]
+// Dependencies: [3921, 676, 3908, 589, 709, 2]
 
-// Module 7013 (recountRelationshipTypes)
+// Module 7040 (recountRelationshipTypes)
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 import { Store } from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 8147
+// Function ID: 8148
 // Name: MIN_REREQUEST_TIME
-// Dependencies: [1372, 1942, 1935, 1862, 3892, 1874, 7999, 1906, 5111, 4444, 4482, 4445, 8007, 1351, 2]
+// Dependencies: [1372, 1971, 1964, 1891, 3921, 1903, 8140, 1935, 5141, 4474, 4512, 4475, 8148, 1351, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 8006 (MIN_REREQUEST_TIME)
+// Module 8147 (MIN_REREQUEST_TIME)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
@@ -25,14 +25,14 @@ export const queryMentionables = function queryMentionables(type, arg1, channelI
   if (null == channel) {
     return [];
   } else {
-    const tmp2 = type === _require(1906).ComponentType.USER_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
-    let obj = channel(5111);
+    const tmp2 = type === _require(1935).ComponentType.USER_SELECT || type === _require(1935).ComponentType.MENTIONABLE_SELECT;
+    let obj = channel(5141);
     obj = { query: null, channel: null, canMentionEveryone: false, canMentionHere: false, canMentionUsers: null, canMentionRoles: null, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     obj[0] = arg1;
     obj[1] = channel;
     obj[4] = tmp2;
-    obj[5] = type === _require(1906).ComponentType.ROLE_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
-    const tmp3 = type === _require(1906).ComponentType.ROLE_SELECT || type === _require(1906).ComponentType.MENTIONABLE_SELECT;
+    obj[5] = type === _require(1935).ComponentType.ROLE_SELECT || type === _require(1935).ComponentType.MENTIONABLE_SELECT;
+    const tmp3 = type === _require(1935).ComponentType.ROLE_SELECT || type === _require(1935).ComponentType.MENTIONABLE_SELECT;
     ({ users, roles } = obj.queryMentionResults(obj));
     const items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(users.map((user) => {
@@ -57,15 +57,15 @@ export const queryChannels = function queryChannels(arg0, arg1, arg2) {
   if (null == channel) {
     let items = [];
   } else {
-    let obj = importDefault(5111);
+    let obj = importDefault(5141);
     obj = { query: null, channel: null, channelTypes: null, limit: 15 };
     obj[0] = arg0;
     obj[1] = channel;
     obj[2] = arg2;
     const channels = obj.queryApplicationCommandChannelResults(obj).channels;
     items = channels.map((id) => {
-      const obj = { type: callback(4482).SelectOptionType.CHANNEL, value: id.id, label: null };
-      obj[2] = callback(4445).computeChannelName(id, mergeGuildAvatar, upsertRelationship);
+      const obj = { type: callback(4512).SelectOptionType.CHANNEL, value: id.id, label: null };
+      obj[2] = callback(4475).computeChannelName(id, mergeGuildAvatar, upsertRelationship);
       return obj;
     });
   }
@@ -75,7 +75,7 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
   interactionComponentState = interactionComponentState.getInteractionComponentState(containerId, selectActionComponent.id);
   const defaultValues = selectActionComponent.defaultValues;
   let channelTypes;
-  if (selectActionComponent.type === channelTypes(1906).ComponentType.CHANNEL_SELECT) {
+  if (selectActionComponent.type === channelTypes(1935).ComponentType.CHANNEL_SELECT) {
     channelTypes = selectActionComponent.channelTypes;
   }
   if (channelTypes === undefined) {
@@ -153,17 +153,17 @@ export const getInitialSnowflakeSelectOptions = function getInitialSnowflakeSele
   if (interactionComponentState != null) {
     type = interactionComponentState.type;
   }
-  if (type !== channelTypes(1906).ComponentType.USER_SELECT) {
+  if (type !== channelTypes(1935).ComponentType.USER_SELECT) {
     let type1;
     if (interactionComponentState != null) {
       type1 = interactionComponentState.type;
     }
-    if (type1 !== tmp2(1906).ComponentType.ROLE_SELECT) {
+    if (type1 !== tmp2(1935).ComponentType.ROLE_SELECT) {
       let type2;
       if (interactionComponentState != null) {
         type2 = interactionComponentState.type;
       }
-      if (type2 !== tmp2(1906).ComponentType.MENTIONABLE_SELECT) {
+      if (type2 !== tmp2(1935).ComponentType.MENTIONABLE_SELECT) {
         let type3;
         if (interactionComponentState != null) {
           type3 = interactionComponentState.type;

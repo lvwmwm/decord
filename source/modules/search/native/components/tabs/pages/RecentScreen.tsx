@@ -1,9 +1,9 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15616
+// Function ID: 15617
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 5793, 11621, 15579, 11595, 8180, 11609, 676, 21, 4797, 11619, 1236, 4251, 9512, 15580, 4265, 11616, 11596, 589, 1481, 15583, 11594, 13945, 7692, 7694, 15584, 15585, 15588, 2]
+// Dependencies: [32, 5, 19, 5820, 11655, 15617, 11629, 8320, 11643, 676, 21, 4827, 11653, 1236, 4281, 9541, 15618, 4295, 11650, 11630, 589, 1481, 15621, 11628, 13982, 7720, 7722, 15622, 15623, 15626, 2]
 
-// Module 15578 (ClearAllHistory)
+// Module 15616 (ClearAllHistory)
 import _slicedToArray from "_slicedToArray";
 import deserialize from "deserialize";
 import importAllResult from "SearchTokenTypes";
@@ -14,7 +14,7 @@ import prototype from "prototype";
 import MessageEmbedTypes from "MessageEmbedTypes";
 import { EMPTY_MEDIA_RESULTS } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";
 import { SearchTypes } from "ME";
-import { jsx } from "Link";
+import { jsx } from "createStandardNavigationFactories";
 
 let c10;
 let closure_12;
@@ -37,8 +37,8 @@ function ClearAllHistory(searchContext) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = searchContext(1236).intl;
   obj[2] = intl2.string(searchContext(1236).t.LFTAUp);
-  obj[4] = jsx(searchContext(4251).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(4797).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(searchContext(4281).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(4827).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null };
@@ -47,8 +47,8 @@ function ViewAll(onJumpToMedia) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.Ofpgwh);
-  obj[4] = jsx(require(4251) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(require(4797) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(require(4281) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(require(4827) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 let c5 = importAllResult;
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: unpackModuleId, SearchListItemTypes: closure_12, SearchTabs: map1 } = MessageEmbedTypes);

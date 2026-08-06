@@ -1,9 +1,9 @@
-// Module ID: 13844
-// Function ID: 13845
+// Module ID: 13881
+// Function ID: 13882
 // Name: hasFetchedCredentials
-// Dependencies: [1906, 589, 709, 2]
+// Dependencies: [1935, 589, 709, 2]
 
-// Module 13844 (hasFetchedCredentials)
+// Module 13881 (hasFetchedCredentials)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -49,7 +49,7 @@ const webAuthnStore = new WebAuthnStore(require("dispatcher"), {
   },
   AUTHENTICATOR_CREATE: function handleAuthenticatorCreate(credential) {
     credential = credential.credential;
-    if (credential.type === credential(1906).AuthenticatorType.WEBAUTHN) {
+    if (credential.type === credential(1935).AuthenticatorType.WEBAUTHN) {
       const tmp2 = undefined === items.find((id) => id.id === credential.id);
       if (tmp2) {
         items = [];
@@ -64,7 +64,7 @@ const webAuthnStore = new WebAuthnStore(require("dispatcher"), {
   },
   AUTHENTICATOR_UPDATE: function handleAuthenticatorUpdate(credential) {
     credential = credential.credential;
-    if (credential.type !== credential(1906).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1935).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {
@@ -79,7 +79,7 @@ const webAuthnStore = new WebAuthnStore(require("dispatcher"), {
   },
   AUTHENTICATOR_DELETE: function handleAuthenticatorDelete(credential) {
     credential = credential.credential;
-    if (credential.type !== credential(1906).AuthenticatorType.WEBAUTHN) {
+    if (credential.type !== credential(1935).AuthenticatorType.WEBAUTHN) {
       const type = credential.type;
       return false;
     } else {

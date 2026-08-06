@@ -1,7 +1,7 @@
 // Module ID: 1416
 // Function ID: 1417
 // Name: getAvatarURL
-// Dependencies: [676, 1417, 1419, 500, 1450, 1464, 1850, 1851, 14, 1852, 1854, 1855, 11, 1469, 2]
+// Dependencies: [676, 1417, 1419, 500, 1450, 1464, 1878, 1879, 14, 1880, 1882, 1883, 11, 1469, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
 // Module 1416 (getAvatarURL)
@@ -141,7 +141,7 @@ function getDefaultAvatarURL(id, discriminator, isProvisional, closure_2) {
       return arr[0];
     }
   }
-  const parseIntegerResult = require(1851) /* shortenAndLocalizeNumber */.parseInteger(discriminator, 0);
+  const parseIntegerResult = require(1879) /* shortenAndLocalizeNumber */.parseInteger(discriminator, 0);
   if (parseIntegerResult > 0) {
     let first = arr[parseIntegerResult % 5];
   } else if (null != id) {
@@ -463,7 +463,7 @@ function getApplicationIconURL(guildMember) {
     }
     let tmp18;
     if (fallbackAvatar) {
-      tmp18 = importDefault(1855);
+      tmp18 = importDefault(1883);
     }
     return tmp18;
   }
@@ -542,7 +542,7 @@ function getEmojiURL(size) {
     const _HermesInternal = HermesInternal;
     const combined = "size=" + obj.getBestMediaProxySize(size.size * require(1450) /* handleImageLoad */.getDevicePixelRatio(), set);
     try {
-      const enabled = tmp5(1850).getForceSdrEmojisStickersConfig({ location: "getEmojiURL" }).enabled;
+      const enabled = tmp5(1878).getForceSdrEmojisStickersConfig({ location: "getEmojiURL" }).enabled;
       let str6 = "";
       if (enabled) {
         str6 = "&force_sdr=true";
@@ -699,7 +699,7 @@ function getAvatarDecorationURL(canAnimate) {
   if (null != avatarDecoration) {
     if (!obj4.isAvatarDecorationExpired(avatarDecoration)) {
       try {
-        let tmp13Result = tmp13(1854);
+        let tmp13Result = tmp13(1882);
         ({ CollectiblesItemAssetFormat, getCollectiblesItemAssetUrl } = tmp13Result);
         if (flag) {
           let STATIC = CollectiblesItemAssetFormat.ANIMATED;
@@ -744,7 +744,7 @@ function getAvatarDecorationURL(canAnimate) {
         return tmp;
       }
     }
-    obj4 = require(1852) /* parseAvatarDecorationData */;
+    obj4 = require(1880) /* parseAvatarDecorationData */;
   }
   return null;
 }

@@ -1,10 +1,10 @@
-// Module ID: 5291
-// Function ID: 5292
+// Module ID: 5345
+// Function ID: 5346
 // Name: DropdownOptionRow
-// Dependencies: [19, 17, 5128, 5195, 1877, 21, 4255, 647, 5286, 1416, 1297, 1236, 4251, 5292, 1581, 4223, 5322, 5323, 5325, 4665, 2]
+// Dependencies: [19, 17, 5158, 5225, 1906, 21, 4285, 647, 5340, 1416, 1297, 1236, 4281, 5346, 1609, 4253, 5376, 5377, 5379, 4695, 2]
 // Exports: default
 
-// Module 5291 (DropdownOptionRow)
+// Module 5345 (DropdownOptionRow)
 import Button from "Button";
 import { View } from "Background";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -130,10 +130,10 @@ export default function DropdownOptionsActionSheet(arg0) {
     const intl = tmp3(1236).intl;
     obj[0] = intl.string(tmp3(1236).t.E2ICbC);
     obj = { scrollable: true, header: null, children: null };
-    obj[1] = callback(tmp3(5322).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp3(5376).BottomSheetTitleHeader, obj);
     obj1 = { contentContainerStyle: null, children: null };
     const obj2 = { paddingBottom: null };
-    obj2[0] = importDefault(1581)().bottom;
+    obj2[0] = importDefault(1609)().bottom;
     obj1[0] = obj2;
     const obj3 = { accessibilityRole: "radiogroup", accessibilityLabel: null, children: null };
     const intl2 = tmp3(1236).intl;
@@ -147,11 +147,11 @@ export default function DropdownOptionsActionSheet(arg0) {
     obj5[0] = tmp5;
     const intl3 = tmp3(1236).intl;
     obj5[1] = intl3.string(tmp3(1236).t.cpT0Cq);
-    obj4[1] = callback(tmp3(4665).Button, obj5);
+    obj4[1] = callback(tmp3(4695).Button, obj5);
     items2[1] = callback(closure_4, obj4);
     obj1[1] = items2;
-    obj[2] = callback2(tmp3(5325).BottomSheetScrollView, obj1);
-    return callback(tmp3(5323).BottomSheet, obj);
+    obj[2] = callback2(tmp3(5379).BottomSheetScrollView, obj1);
+    return callback(tmp3(5377).BottomSheet, obj);
   }
   tmp = callback3();
 };

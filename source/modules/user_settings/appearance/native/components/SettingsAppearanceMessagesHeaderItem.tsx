@@ -1,10 +1,10 @@
-// Module ID: 14402
-// Function ID: 14403
+// Module ID: 14439
+// Function ID: 14440
 // Name: MessagesHeaderItem
-// Dependencies: [19, 17, 21, 4255, 712, 4251, 1236, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4281, 1236, 2]
 // Exports: default
 
-// Module 14402 (MessagesHeaderItem)
+// Module 14439 (MessagesHeaderItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -22,6 +22,6 @@ export default function MessagesHeaderItem(animatedStyles) {
   obj = { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.OIgYlQ);
-  obj[1] = jsx(require(4251) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold", children: null });
+  obj[1] = jsx(require(4281) /* Text */.Text, { animated: true, style: animatedStyles.animatedStyles.textNormal, variant: "text-lg/bold", children: null });
   return <View animated style={arg0.animatedStyles.textNormal} variant="text-lg/bold">{null}</View>;
 };

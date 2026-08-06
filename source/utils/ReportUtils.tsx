@@ -1,10 +1,10 @@
-// Module ID: 5800
-// Function ID: 5801
+// Module ID: 5827
+// Function ID: 5828
 // Name: canReportUser
-// Dependencies: [1372, 4176, 3883, 1874, 676, 2]
+// Dependencies: [1372, 4206, 3912, 1903, 676, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 5800 (canReportUser)
+// Module 5827 (canReportUser)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

@@ -1,10 +1,10 @@
-// Module ID: 14145
-// Function ID: 14146
+// Module ID: 14182
+// Function ID: 14183
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 5113, 21, 501, 10358, 712, 4255, 14146, 10867, 10868, 4116, 3959, 4256, 4259, 14135, 14147, 14157, 5221, 14158, 14160, 14162, 10026, 2]
+// Dependencies: [32, 19, 17, 5143, 21, 501, 10389, 712, 4285, 14183, 10899, 10900, 4145, 3988, 4286, 4289, 14172, 14184, 14194, 5251, 14195, 14197, 14199, 10057, 2]
 // Exports: BountyVideo
 
-// Module 14145 (BountyVideo)
+// Module 14182 (BountyVideo)
 import _slicedToArray from "_slicedToArray";
 import preload from "preload";
 import get_ActivityIndicator from "hasVideoEnded";
@@ -37,7 +37,7 @@ let closure_15 = createCacheKey.createStyles(() => {
   obj[0] = obj;
   obj = { position: "absolute", top: importDefault(712).space.PX_8, left: importDefault(712).space.PX_8, flexDirection: "row", alignItems: "center", gap: importDefault(712).space.PX_8 };
   obj[1] = obj;
-  obj[2] = { position: "absolute", bottom: 0, height: require(14146) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
+  obj[2] = { position: "absolute", bottom: 0, height: require(14183) /* BountiesModalProgress */.PROGRESS_BAR_HEIGHT, left: lg, right: lg };
   const obj2 = {};
   const merged1 = Object.assign(closure_6.absoluteFillObject);
   obj2.backgroundColor = "#000000";

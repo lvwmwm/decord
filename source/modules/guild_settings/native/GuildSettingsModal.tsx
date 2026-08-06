@@ -1,10 +1,10 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16491
+// Function ID: 16492
 // Name: close
-// Dependencies: [32, 19, 1862, 8916, 676, 21, 16452, 8915, 503, 1236, 5223, 16453, 16466, 16470, 16471, 16481, 16496, 16497, 16509, 16521, 16523, 15766, 15775, 16531, 16535, 16537, 15777, 16538, 16543, 16544, 16564, 16583, 16587, 16590, 11120, 11133, 11135, 16591, 16596, 16597, 16619, 16659, 16660, 16676, 16715, 16719, 16720, 16723, 16731, 1581, 5583, 589, 5650, 2]
+// Dependencies: [32, 19, 1891, 8945, 676, 21, 16492, 8944, 503, 1236, 5253, 16493, 16506, 16510, 16511, 16521, 16536, 16537, 16549, 16561, 16563, 15806, 15815, 16571, 16575, 16577, 15817, 16578, 16583, 16584, 16604, 16623, 16627, 16630, 11154, 11167, 11169, 16631, 16636, 16637, 16659, 16699, 16700, 16716, 16755, 16759, 16760, 16763, 16771, 1609, 5637, 589, 5704, 2]
 // Exports: default
 
-// Module 16451 (close)
+// Module 16491 (close)
 import InvitesDisabledRow from "InvitesDisabledRow";
 import GuildSettingsModalServerTag from "GuildSettingsModalServerTag";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -16,9 +16,9 @@ let error;
 let metroImportAll;
 const require = arg1;
 function close() {
-  importDefault(16452).terminate();
-  const obj = importDefault(16452);
-  importDefault(8915).close();
+  importDefault(16492).terminate();
+  const obj = importDefault(16492);
+  importDefault(8944).close();
 }
 ({ GuildSettingsSections: error, WebhookTypes: metroImportAll } = ME);
 const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15076
+// Function ID: 15077
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 5735, 5736, 21, 4255, 589, 15039, 4665, 1236, 7644, 12416, 9011, 2]
+// Dependencies: [19, 17, 5762, 5763, 21, 4285, 589, 15077, 4695, 1236, 7672, 12453, 9040, 2]
 // Exports: default
 
-// Module 15038 (MessageRequestAnimation)
+// Module 15076 (MessageRequestAnimation)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import processChannel from "processChannel";
@@ -35,7 +35,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15039).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15077).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -71,7 +71,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl3 = tmp3(1236).intl;
       obj[4] = intl3.string(tmp3(1236).t.e7GWjQ);
       const merged1 = Object.assign(merged);
-      let tmp21 = callback(tmp3(4665).Button, obj);
+      let tmp21 = callback(tmp3(4695).Button, obj);
       let tmp16 = callback;
     } else {
       tmp16 = callback;
@@ -80,14 +80,14 @@ export default function MessageRequestsButton(alternateVariant) {
       const intl2 = tmp3(1236).intl;
       obj1[3] = intl2.string(tmp3(1236).t.e7GWjQ);
       const merged2 = Object.assign(merged);
-      tmp21 = callback(tmp3(7644).IconButton, obj1);
+      tmp21 = callback(tmp3(7672).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(12416).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(12453).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {
     const obj2 = { source: null, IconComponent: null, accessibilityLabel: null, buttonText: null, badge: null, badgePosition: "right" };
-    obj2[0] = importDefault(9011);
+    obj2[0] = importDefault(9040);
     obj2[1] = MessageRequestAnimation;
     const intl = tmp3(1236).intl;
     obj2[2] = intl.string(tmp3(1236).t.e7GWjQ);
@@ -98,7 +98,7 @@ export default function MessageRequestsButton(alternateVariant) {
     obj2[3] = str1;
     obj2[4] = str > 0;
     const merged3 = Object.assign(merged);
-    return callback(importDefault(12416), obj2);
+    return callback(importDefault(12453), obj2);
   }
   tmp2 = callback2();
 };

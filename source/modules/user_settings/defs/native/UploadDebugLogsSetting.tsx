@@ -1,9 +1,9 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14636
+// Function ID: 14637
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9756, 3956, 4211, 1236, 10333, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9787, 3985, 4241, 1236, 10364, 2]
 
-// Module 14598 (_handleUploadDebugLogSettingPress)
+// Module 14636 (_handleUploadDebugLogSettingPress)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { DebugLogCategory } from "ME";
@@ -70,9 +70,9 @@ function _handleUploadDebugLogSettingPress() {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            let obj1 = callback2(3956);
+            let obj1 = callback2(3985);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj1[1] = callback(4211).CircleInformationIcon;
+            obj1[1] = callback(4241).CircleInformationIcon;
             const intl = callback(1236).intl;
             obj1[2] = intl.string(callback(1236).t.VzHcSm);
             obj1.open(obj1);
@@ -87,12 +87,12 @@ function _handleUploadDebugLogSettingPress() {
             throw arg1;
           } else if (arg0 !== 2) {
             const obj2 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj2[1] = callback(4211).CircleInformationIcon;
+            obj2[1] = callback(4241).CircleInformationIcon;
             const intl2 = callback(1236).intl;
             obj2[2] = intl2.string(callback(1236).t.BvyxE7);
-            callback2(3956).open(obj2);
+            callback2(3985).open(obj2);
             c3 = 1;
-            const obj6 = callback2(3956);
+            const obj6 = callback2(3985);
           }
           c3 = 0;
           (function onUploadDebugLogsRequestFinish() {

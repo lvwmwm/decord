@@ -1,10 +1,10 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12446
+// Function ID: 12447
 // Name: Tab
-// Dependencies: [32, 19, 17, 676, 21, 4255, 712, 5353, 1236, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4285, 712, 5407, 1236, 2]
 // Exports: default
 
-// Module 12409 (Tab)
+// Module 12446 (Tab)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

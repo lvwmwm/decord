@@ -1,9 +1,9 @@
-// Module ID: 15111
-// Function ID: 15112
+// Module ID: 15149
+// Function ID: 15150
 // Name: GuildChannels
-// Dependencies: [32, 19, 17, 4247, 6878, 15034, 1862, 1931, 4327, 676, 21, 1483, 4106, 9441, 1348, 15112, 15130, 15164, 14218, 15033, 15165, 15131, 15167, 6889, 589, 6888, 15168, 15172, 6881, 15173, 10138, 15019, 14219, 10889, 5582, 15223, 15225, 15238, 7790, 15241, 15243, 15247, 15248, 15133, 15249, 15250, 15252, 1865, 8573, 15256, 11179, 2]
+// Dependencies: [32, 19, 17, 4277, 6905, 15072, 1891, 1960, 4357, 676, 21, 1483, 4135, 9470, 1348, 15150, 15168, 15202, 14255, 15071, 15203, 15169, 15205, 6916, 589, 6915, 15206, 15210, 6908, 15211, 10169, 15057, 14256, 10921, 5636, 15262, 15264, 15277, 7931, 15280, 15282, 15286, 15287, 15171, 15224, 15288, 15290, 1894, 8602, 15294, 11213, 2]
 
-// Module 15111 (GuildChannels)
+// Module 15149 (GuildChannels)
 import useYouBarTotalHeight from "useYouBarTotalHeight";
 import importAllResult from "context";
 import { View } from "registerGuildVisibilityMethod";
@@ -57,8 +57,8 @@ function FavoriteChannels(arg0) {
   let hasNoChannels;
   let shouldShowEmptyState;
   let obj = dependencyMap;
-  let obj1 = require(15248) /* getMissingFavoriteThreadIds */;
-  const favoritesGuildChannelList = obj1.useFavoritesGuildChannelList();
+  let obj1 = require(15287) /* getMissingFavoriteThreadIds */;
+  const favoritesGuildChannelList = obj1.useFavoritesGuildChannelList({ withUpsellNotice: true });
   ({ guildChannels, shouldShowEmptyState, hasNoChannels } = favoritesGuildChannelList);
   if (!obj3.useShouldRenderChannelList()) {
     return null;
@@ -70,17 +70,17 @@ function FavoriteChannels(arg0) {
       obj = { guild: null, showExtraButtons: false, canOpenGuildActionSheet: false };
       guild = guild.guild;
       obj[0] = guild;
-      const items = [callback(importDefault(15133), obj), ];
+      const items = [callback(importDefault(15171), obj), ];
       let tmp11Result = null;
       if (shouldShowEmptyState) {
-        obj = {};
-        tmp11Result = tmp11(tmp9(15249), obj);
-        const tmp9Result = tmp9(15249);
+        obj = { variant: "empty" };
+        tmp11Result = tmp11(tmp9(15224), obj);
+        const tmp9Result = tmp9(15224);
       }
       items[1] = tmp11Result;
       obj[2] = items;
-      let tmp8Result = closure_15(importDefault(15223), obj);
-      const tmp10 = importDefault(15223);
+      let tmp8Result = closure_15(importDefault(15262), obj);
+      const tmp10 = importDefault(15262);
       tmp11 = callback;
       const tmp8 = closure_15;
       tmp9 = importDefault;
@@ -106,11 +106,11 @@ function ChannelsWrapper(selectedGuildId) {
   if (selectedGuildId === closure_13) {
     obj = { style: null };
     obj[0] = merged.style;
-    let tmp6Result = callback(importDefault(15250), obj);
+    let tmp6Result = callback(importDefault(15288), obj);
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_12) {
-        let tmp2Result = tmp2(1865);
+        let tmp2Result = tmp2(1894);
         if (tmp2Result.isFavoritesGuildId(selectedGuildId)) {
           obj = {};
           const merged1 = Object.assign(merged);
@@ -119,12 +119,12 @@ function ChannelsWrapper(selectedGuildId) {
           obj.selectedVoiceChannelId = stateFromStores1;
           tmp6Result = callback(FavoriteChannels, obj);
         } else {
-          tmp2Result = tmp2(8573);
+          tmp2Result = tmp2(8602);
           if (tmp2Result.shouldNSFWGateGuild(selectedGuildId)) {
             obj1 = { style: null, guildId: null };
             obj1[0] = merged.style;
             obj1[1] = selectedGuildId;
-            tmp6Result = tmp6(importDefault(15256), obj1);
+            tmp6Result = tmp6(importDefault(15294), obj1);
           } else {
             const obj2 = {};
             const merged2 = Object.assign(merged);
@@ -139,7 +139,7 @@ function ChannelsWrapper(selectedGuildId) {
     const obj3 = { style: null, selectedGuildId: null };
     obj3[0] = merged.style;
     obj3[1] = selectedGuildId;
-    tmp6Result = callback(importDefault(15252), obj3);
+    tmp6Result = callback(importDefault(15290), obj3);
   }
   return tmp6Result;
 }
@@ -419,7 +419,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let obj = { children: null };
   obj = {};
   const merged = Object.assign(arg0);
-  const items = [callback(ChannelsWrapper, obj), callback(require(11179) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
+  const items = [callback(ChannelsWrapper, obj), callback(require(11213) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
   obj[0] = items;
   return callback2(closure_16, obj);
 });

@@ -1,8 +1,8 @@
-// Module ID: 14361
-// Function ID: 14362
-// Dependencies: [17, 4302, 7864, 21, 4255, 589, 10717, 9049, 10333, 1236, 2]
+// Module ID: 14398
+// Function ID: 14399
+// Dependencies: [17, 4332, 8005, 21, 4285, 589, 10772, 9078, 10364, 1236, 2]
 
-// Module 14361
+// Module 14398
 import { View } from "get ActivityIndicator";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ let obj = {
     const items = [_detectH265HardwareDecode];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10717), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(10772), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,
@@ -59,7 +59,7 @@ const createStaticResult = createToggle.createStatic({
     const items = [_detectH265HardwareDecode];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
-    obj = { style: callback().slider, children: jsx(importDefault(10717), obj) };
+    obj = { style: callback().slider, children: jsx(importDefault(10772), obj) };
     ({ vadThreshold, vadAutoThreshold } = stateFromStoresObject);
     obj = {
       auto: vadAutoThreshold,

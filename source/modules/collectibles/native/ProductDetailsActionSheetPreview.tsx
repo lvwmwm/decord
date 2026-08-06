@@ -1,10 +1,10 @@
-// Module ID: 9331
-// Function ID: 9332
+// Module ID: 9360
+// Function ID: 9361
 // Name: BundleProductPreview
-// Dependencies: [32, 19, 17, 678, 21, 4255, 712, 1901, 9283, 9332, 9263, 1236, 9334, 8850, 9451, 9035, 2]
+// Dependencies: [32, 19, 17, 678, 21, 4285, 712, 1930, 9312, 9361, 9292, 1236, 9363, 8879, 9480, 9064, 2]
 // Exports: default
 
-// Module 9331 (BundleProductPreview)
+// Module 9360 (BundleProductPreview)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -26,7 +26,7 @@ function BundleProductPreview(onActiveItemTypeChange) {
   let product;
   let width;
   ({ product, width, handlePreviewPress, onTrackPress, onActiveItemChange } = onActiveItemTypeChange);
-  let obj = require(9283) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(9312) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment("ProductDetailsActionSheetPreview").enabled) {
     obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null };
     obj[0] = product;
@@ -34,7 +34,7 @@ function BundleProductPreview(onActiveItemTypeChange) {
     obj[2] = handlePreviewPress;
     obj[3] = onTrackPress;
     obj[4] = onActiveItemChange;
-    let tmp3Result = tmp3(importDefault(9332), obj);
+    let tmp3Result = tmp3(importDefault(9361), obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.previewDivider;
@@ -215,7 +215,7 @@ export default function ProductDetailsActionSheetPreview(arg0) {
     }, []),
     children: null
   };
-  if (product.type === _require(1901).CollectiblesItemType.BUNDLE) {
+  if (product.type === _require(1930).CollectiblesItemType.BUNDLE) {
     obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null, onActiveItemTypeChange: null };
     obj[0] = product;
     obj[1] = tmp3;
@@ -232,7 +232,7 @@ export default function ProductDetailsActionSheetPreview(arg0) {
     obj1[1] = tmp3;
     obj1[2] = handlePreviewPress;
     obj1[3] = onTrackPress;
-    obj[1] = tmp7(_require(9334).IndividualProductPreview, obj1);
+    obj[1] = tmp7(_require(9363).IndividualProductPreview, obj1);
     tmp7Result = tmp7(tmp8, obj);
   }
   obj[2] = tmp7Result;

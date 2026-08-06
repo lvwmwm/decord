@@ -1,10 +1,10 @@
-// Module ID: 1884
-// Function ID: 1885
+// Module ID: 1913
+// Function ID: 1914
 // Name: isUserPrimaryGuildEqual
 // Dependencies: [2]
 // Exports: ensureUserPrimaryGuild, isUserPrimaryGuildEqual
 
-// Module 1884 (isUserPrimaryGuildEqual)
+// Module 1913 (isUserPrimaryGuildEqual)
 const result = require("set").fileFinishedImporting("modules/guild_tag/PrimaryGuildUtils.tsx");
 
 export const isUserPrimaryGuildEqual = function isUserPrimaryGuildEqual(primaryGuild, primary_guild) {

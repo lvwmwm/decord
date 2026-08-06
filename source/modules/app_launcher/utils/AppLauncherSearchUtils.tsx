@@ -1,10 +1,10 @@
-// Module ID: 11338
-// Function ID: 11339
+// Module ID: 11372
+// Function ID: 11373
 // Name: useApplicationsInContext
-// Dependencies: [32, 19, 8124, 8122, 8123, 11339, 4688, 4689, 8127, 1906, 8121, 9427, 11310, 11341, 12, 9438, 589, 9430, 11340, 11342, 2]
+// Dependencies: [32, 19, 8264, 8262, 8263, 11373, 4718, 4719, 8267, 1935, 8261, 9456, 11344, 11375, 12, 9467, 589, 9459, 11374, 11376, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11338 (useApplicationsInContext)
+// Module 11372 (useApplicationsInContext)
 import _slicedToArray from "_slicedToArray";
 import _getEmbedApplication from "_getEmbedApplication";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
@@ -34,8 +34,8 @@ function useApplicationsInContext(allowFetch) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let obj = onlyWithCommands(8127);
-  const items = [onlyWithCommands(1906).ApplicationCommandType.CHAT];
+  let obj = onlyWithCommands(8267);
+  const items = [onlyWithCommands(1935).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = obj.usePermissionContext(channel, items).hasBaseAccessPermissions;
   const tmp2 = callback2(context, hasBaseAccessPermissions, flag);
   let tmp3 = callback3(hasBaseAccessPermissions, flag);
@@ -118,7 +118,7 @@ function useApplicationsInContext(allowFetch) {
     includeBuiltIn = allowFetch.includeBuiltIn;
   }
   if (includeBuiltIn) {
-    items2.push(onlyWithCommands(8121).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(8261).FAKE_BUILT_IN_APP);
   }
   obj = { apps: items2, loading: null };
   let fetching;
@@ -141,9 +141,9 @@ function sortApplicationFreceny(id, id2) {
   return store.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
 }
 function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP) {
-  const sectionName = require(8121) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP);
-  const obj = require(8121) /* getShelfBadgeTypeIfActive */;
-  return callback(sectionName, require(8121) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP));
+  const sectionName = require(8261) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP);
+  const obj = require(8261) /* getShelfBadgeTypeIfActive */;
+  return callback(sectionName, require(8261) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP));
 }
 function sortCommandsAlpha(displayName, displayName2) {
   return callback(displayName.displayName, displayName2.displayName);
@@ -228,8 +228,8 @@ export const filterApplicationAllowed = function filterApplicationAllowed(type) 
   if ("channel" === type.type) {
     channel = type.channel;
   }
-  const items = [_require(1906).ApplicationCommandType.CHAT, _require(1906).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-  let closure_1 = _require(8127).buildPermissionContext(channel, items);
+  const items = [_require(1935).ApplicationCommandType.CHAT, _require(1935).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+  let closure_1 = _require(8267).buildPermissionContext(channel, items);
   return (id) => {
     let closure_1;
     let closure_2;
@@ -402,8 +402,8 @@ export const filterCommandAllowed = function filterCommandAllowed(type) {
   if ("channel" === type.type) {
     channel = type.channel;
   }
-  const items = [_require(1906).ApplicationCommandType.CHAT];
-  let closure_1 = _require(8127).buildPermissionContext(channel, items);
+  const items = [_require(1935).ApplicationCommandType.CHAT];
+  let closure_1 = _require(8267).buildPermissionContext(channel, items);
   let closure_2 = {};
   return (applicationId) => {
     let applicationAllowedForChannel;
@@ -906,7 +906,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  const tmp8Result = flag4(11310)({ guildId: guild_id });
+  const tmp8Result = flag4(11344)({ guildId: guild_id });
   callback3 = tmp8Result;
   let items1 = [flag, commands, commandLimit, context, tmp];
   memo1 = obj2.useMemo(() => {
@@ -1361,7 +1361,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     substr = query.substring(1);
     tmp = substr;
   }
-  const tmp5 = fetches.entrypoint === substr(9438).AppLauncherEntrypoint.VOICE;
+  const tmp5 = fetches.entrypoint === substr(9467).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {

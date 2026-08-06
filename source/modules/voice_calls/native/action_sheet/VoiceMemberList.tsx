@@ -1,9 +1,9 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 12965
+// Function ID: 12966
 // Name: ItemSeparator
-// Dependencies: [32, 5, 19, 17, 1371, 1882, 4274, 3883, 1874, 4327, 676, 1301, 5324, 505, 21, 4255, 12924, 10681, 589, 7749, 12614, 1236, 9609, 4106, 8959, 4251, 8625, 5595, 1844, 5081, 10507, 4464, 12929, 12930, 1474, 12937, 12, 4223, 8677, 3967, 12938, 7790, 2]
+// Dependencies: [32, 5, 19, 17, 1371, 1911, 4304, 3912, 1903, 4357, 676, 1301, 5378, 505, 21, 4285, 12961, 10736, 589, 7890, 12651, 1236, 9640, 4135, 8988, 4281, 8654, 5649, 1872, 5111, 10585, 4494, 12966, 12967, 1474, 12974, 12, 4253, 8706, 3996, 12975, 7931, 2]
 
-// Module 12928 (ItemSeparator)
+// Module 12965 (ItemSeparator)
 import XSMALL from "XSMALL";
 import createdAt from "createdAt";
 import importAllResult from "Form";
@@ -32,14 +32,14 @@ let metroImportAll;
 const require = arg1;
 function ItemSeparator() {
   const tmp = callback4();
-  return callback2(require(7749) /* Form */.FormDivider, { style: callback4().rowFormDivider });
+  return callback2(require(7890) /* Form */.FormDivider, { style: callback4().rowFormDivider });
 }
 function VoiceMemberListSectionHeader(title) {
   const tmp = callback4();
   let obj = { style: tmp.sectionContainer, children: null };
   obj = { style: tmp.sectionTitle, variant: "text-xs/bold", color: "text-default", children: null };
   obj[3] = title.title.toUpperCase();
-  obj[1] = callback2(require(4251) /* Text */.Text, obj);
+  obj[1] = callback2(require(4281) /* Text */.Text, obj);
   return callback2(closure_8, obj);
 }
 function renderSectionHeader(section) {
@@ -198,7 +198,7 @@ function VoiceSectionRow(arg0) {
 ({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = ME);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
 let closure_24 = createCacheKey.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = importAllResult.memo((channel) => callback2(importDefault(12924), { channel: channel.channel }));
+let closure_25 = importAllResult.memo((channel) => callback2(importDefault(12961), { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
   channel(589);
@@ -213,9 +213,9 @@ let closure_26 = importAllResult.memo((channel) => {
       obj = { accessibilityLabel: null, accessibilityHidden: true, source: null, size: null };
       const intl = tmp4(1236).intl;
       obj[0] = intl.string(tmp4(1236).t["6Qgrev"]);
-      obj[2] = importDefault(9609);
-      obj[3] = tmp4(12614).CircularIconButton.Sizes.MEDIUM_32;
-      obj[0] = callback2(tmp4(12614).CircularIconButton, obj);
+      obj[2] = importDefault(9640);
+      obj[3] = tmp4(12651).CircularIconButton.Sizes.MEDIUM_32;
+      obj[0] = callback2(tmp4(12651).CircularIconButton, obj);
       const intl2 = tmp4(1236).intl;
       obj[1] = intl2.string(tmp4(1236).t["6Qgrev"]);
       obj[2] = function onPress() {
@@ -229,7 +229,7 @@ let closure_26 = importAllResult.memo((channel) => {
           const result = tmp2Result.showInstantInviteActionSheet(tmp, obj);
         }
       };
-      items[1] = callback2(tmp4(7749).FormRow, obj);
+      items[1] = callback2(tmp4(7890).FormRow, obj);
       obj[0] = items;
       tmp7 = callback3(importAllResult.Fragment, obj);
     }

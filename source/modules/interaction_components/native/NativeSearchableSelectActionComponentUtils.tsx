@@ -1,10 +1,10 @@
-// Module ID: 8008
-// Function ID: 8009
+// Module ID: 8149
+// Function ID: 8150
 // Name: transformSearchableSelectOptions
-// Dependencies: [1372, 1935, 1862, 1874, 676, 4482, 1351, 1419, 5620, 8009, 688, 712, 8010, 4715, 2]
+// Dependencies: [1372, 1964, 1891, 1903, 676, 4512, 1351, 1419, 5674, 8150, 688, 712, 8151, 4745, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8008 (transformSearchableSelectOptions)
+// Module 8149 (transformSearchableSelectOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -111,10 +111,10 @@ export const transformSearchableSelectOptions = function transformSearchableSele
 };
 export const getChannelIconData = function getChannelIconData(channel, guild) {
   if (channel.type === constants.GUILD_CATEGORY) {
-    let channelIconWithGuild = importDefault(8010);
+    let channelIconWithGuild = importDefault(8151);
   } else {
-    channelIconWithGuild = require(4715) /* getChannelIcon */.getChannelIconWithGuild(channel, guild);
-    const obj = require(4715) /* getChannelIcon */;
+    channelIconWithGuild = require(4745) /* getChannelIcon */.getChannelIconWithGuild(channel, guild);
+    const obj = require(4745) /* getChannelIcon */;
   }
   return channelIconWithGuild;
 };

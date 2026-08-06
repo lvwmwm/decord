@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 14726
+// Module ID: 14763
+// Function ID: 14764
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 676, 21, 4255, 712, 3952, 1945, 5323, 4251, 1236, 5102, 4665, 7737, 4223, 2]
+// Dependencies: [19, 676, 21, 4285, 712, 3981, 1974, 5377, 4281, 1236, 5132, 4695, 7878, 4253, 2]
 // Exports: default
 
-// Module 14725 (PersonalizationDisclaimerActionSheet)
+// Module 14763 (PersonalizationDisclaimerActionSheet)
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -25,14 +25,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/collectibles/na
 export default function PersonalizationDisclaimerActionSheet() {
   const tmp = createCacheKey();
   const callback = React.useCallback(() => {
-    const obj = callback(3952);
-    obj.openURL(callback(1945).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+    const obj = callback(3981);
+    obj.openURL(callback(1974).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: null };
   obj = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.euks4U);
-  const items = [callback(require(4251) /* Text */.Text, obj), ];
+  const items = [callback(require(4281) /* Text */.Text, obj), ];
   obj = { children: null };
   const obj1 = { size: "lg", text: null, onPress: null, icon: null, iconPosition: "end" };
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -40,17 +40,17 @@ export default function PersonalizationDisclaimerActionSheet() {
   obj1[2] = callback;
   const obj2 = { color: null };
   obj2[0] = importDefault(712).colors.WHITE;
-  obj1[3] = callback(require(7737) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
-  const items1 = [callback(require(4665) /* Button */.Button, obj1), ];
+  obj1[3] = callback(require(7878) /* LinkExternalSmallIcon */.LinkExternalSmallIcon, obj2);
+  const items1 = [callback(require(4695) /* Button */.Button, obj1), ];
   const obj3 = { variant: "tertiary", size: "lg", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t.WAI6xu);
   obj3[3] = function onPress() {
-    return callback(4223).hideActionSheet();
+    return callback(4253).hideActionSheet();
   };
-  items1[1] = callback(require(4665) /* Button */.Button, obj3);
+  items1[1] = callback(require(4695) /* Button */.Button, obj3);
   obj[0] = items1;
-  items[1] = callback2(require(5102) /* ButtonGroup */.ButtonGroup, obj);
+  items[1] = callback2(require(5132) /* ButtonGroup */.ButtonGroup, obj);
   obj[1] = items;
-  return callback2(require(5323) /* Background */.BottomSheet, obj);
+  return callback2(require(5377) /* Background */.BottomSheet, obj);
 };

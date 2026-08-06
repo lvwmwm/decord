@@ -1,9 +1,9 @@
-// Module ID: 4308
-// Function ID: 4309
+// Module ID: 4338
+// Function ID: 4339
 // Name: _migrateDefaultStorage
-// Dependencies: [5, 4275, 1218, 4309, 676, 4310, 3866, 4311, 38, 4312, 4318, 1384, 4321, 4322, 589, 4302, 709, 2]
+// Dependencies: [5, 4305, 1218, 4339, 676, 4340, 3895, 4341, 38, 4342, 4348, 1384, 4351, 4352, 589, 4332, 709, 2]
 
-// Module 4308 (_migrateDefaultStorage)
+// Module 4338 (_migrateDefaultStorage)
 import closure_3 from "RESOLUTION_720";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -78,7 +78,7 @@ function _migrateDefaultStorage() {
         } else if (1 === tmp7) {
           c3 = 0;
           logger.error("Failed to resolve videos path for default storage migration", dependencyMap);
-          const app = callback2(3866).app;
+          const app = callback2(3895).app;
           c4 = 2;
           c5 = 1;
           const obj2 = { value: null, done: false };
@@ -103,7 +103,7 @@ function _migrateDefaultStorage() {
             return obj3;
           } else {
             callback2 = arg1;
-            obj = callback(4311);
+            obj = callback(4341);
             callback = obj.pathJoin(callback2, closure_15);
             c3 = 0;
           }
@@ -168,7 +168,7 @@ function trackSharedRemoteClipId(arg0, arg1, arg2) {
   } else {
     return false;
   }
-  obj = importDefault(4321);
+  obj = importDefault(4351);
 }
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_6, ClipSaveTypes: error, ClipsUserEducationType: metroImportAll, ClipsLogger: c9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: unpackModuleId, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, ClipsViewerConnectivitySettings, DEFAULT_MAX_AUTO_CLIPS, DEFAULT_CLIPS_BITRATE_PERCENT } = result);
 let c14 = "default";
@@ -236,7 +236,7 @@ prototype["getSettings"] = function getSettings() {
 prototype["getEnableAutoclipping"] = function getEnableAutoclipping() {
   let enabled = closure_31.clipsSettings.enableAutoclipping;
   if (enabled == null) {
-    const AutoclippingDefaultOverrideExperiment = require(4322) /* apexExperiment */.AutoclippingDefaultOverrideExperiment;
+    const AutoclippingDefaultOverrideExperiment = require(4352) /* apexExperiment */.AutoclippingDefaultOverrideExperiment;
     enabled = AutoclippingDefaultOverrideExperiment.getConfig({ location: "getAutoclippingDefault" }).enabled;
   }
   return enabled;
@@ -411,7 +411,7 @@ let items = [
     return obj;
   },
   (clipsSettings) => {
-    const _default = require(4302) /* _detectH265HardwareDecode */.default;
+    const _default = require(4332) /* _detectH265HardwareDecode */.default;
     let hardwareEncoding;
     if (_default != null) {
       hardwareEncoding = _default.getHardwareEncoding();
@@ -661,7 +661,7 @@ obj = {
     let pid;
     let sourceName;
     ({ sourceName, pid } = arg0);
-    let obj = require(4312) /* isClipsEnabled */;
+    let obj = require(4342) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       let tmp2 = sourceName;
       if (null != pid) {
@@ -690,7 +690,7 @@ obj = {
   STREAM_STOP: function handleStreamStop(arg0) {
     let tmp2 = null != _null;
     if (tmp2) {
-      let obj = require(4318) /* isStreamKey */;
+      let obj = require(4348) /* isStreamKey */;
       const tmp6 = obj.decodeStreamKey(tmp).ownerId === store.getId();
       if (tmp6) {
         let tmp8 = null;
@@ -825,7 +825,7 @@ obj = {
   },
   CLIPS_INIT: function handleClipsInit(applicationName) {
     let c26 = null;
-    let obj = require(4312) /* isClipsEnabled */;
+    let obj = require(4342) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       obj = { applicationName: null, newClipIds: null, ended: false };
       obj[0] = applicationName.applicationName;

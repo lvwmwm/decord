@@ -1,10 +1,10 @@
-// Module ID: 5217
-// Function ID: 5218
+// Module ID: 5247
+// Function ID: 5248
 // Name: headerTitle
-// Dependencies: [19, 5218, 1372, 1862, 1931, 5195, 5192, 676, 21, 1222, 5219, 5223, 5592, 5202, 5616, 5259, 589, 5200, 5263, 5650, 1236, 2]
+// Dependencies: [19, 5248, 1372, 1891, 1960, 5225, 5222, 676, 21, 1222, 5249, 5253, 5646, 5232, 5670, 5313, 589, 5230, 5317, 5704, 1236, 2]
 // Exports: default
 
-// Module 5217 (headerTitle)
+// Module 5247 (headerTitle)
 import NavigationStack from "NavigationStack";
 import get from "get";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 10692
+// Function ID: 10693
 // Name: nativeEventEmitter
-// Dependencies: [19, 17, 3948, 4268, 9671, 1372, 4326, 21, 10634, 589, 9634, 4464, 1236, 10638, 4116, 10632, 2]
+// Dependencies: [19, 17, 3977, 4298, 9702, 1372, 4356, 21, 10689, 589, 9665, 4494, 1236, 10693, 4145, 10687, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 10637 (nativeEventEmitter)
+// Module 10692 (nativeEventEmitter)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import setContent from "setContent";
@@ -166,7 +166,7 @@ export default function GlobalStatusIndicator(children) {
 };
 export const useGlobalStatusIndicatorHeightSharedValue = function useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState) {
   const _require = globalStatusIndicatorState;
-  const sharedValue = _require(4116).useSharedValue(globalStatusIndicatorState.height);
+  const sharedValue = _require(4145).useSharedValue(globalStatusIndicatorState.height);
   const items = [globalStatusIndicatorState.height, sharedValue];
   const effect = React.useEffect(() => {
     const result = sharedValue.set(globalStatusIndicatorState.height);

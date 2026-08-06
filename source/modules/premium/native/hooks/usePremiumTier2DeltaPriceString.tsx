@@ -1,10 +1,10 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12735
+// Function ID: 12736
 // Name: getViewerProductId
-// Dependencies: [19, 6782, 5752, 1876, 6765, 5755, 500, 5749, 3916, 589, 2]
+// Dependencies: [19, 6809, 5779, 1905, 6792, 5782, 500, 5776, 3945, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 12698 (getViewerProductId)
+// Module 12735 (getViewerProductId)
 import noop from "noop";
 import { useNativeCheckoutStore } from "context";
 import updateProduct from "updateProduct";
@@ -16,7 +16,25 @@ function getViewerProductId(subscription) {
     return null;
   } else {
     try {
-      return require(6765) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
+      const productIdFromSubscription = require(6792) /* getPremiumBundledItemsFromProductId */.getProductIdFromSubscription(subscription, false);
+      try {
+        const productIdFromSubscription1 = tmp3(6792).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(5782).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(5782).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        if (null != tmp8) {
+          if (null != tmp10) {
+            if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
+              let tmp11 = productIdFromSubscription1;
+            }
+            return tmp11;
+          }
+        }
+        tmp11 = productIdFromSubscription;
+        const tmp3Result = tmp3(6792);
+      } catch (err) {
+        return tmp2;
+      }
+      const obj = require(6792) /* getPremiumBundledItemsFromProductId */;
     } catch (err) {
       return tmp;
     }

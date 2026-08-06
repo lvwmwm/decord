@@ -1,10 +1,10 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16011
+// Function ID: 16012
 // Name: FrameWebView
-// Dependencies: [19, 21, 10607, 10488, 2]
+// Dependencies: [19, 21, 10662, 10529, 10513, 2]
 // Exports: default
 
-// Module 15971 (FrameWebView)
+// Module 16011 (FrameWebView)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -12,28 +12,23 @@ const require = arg1;
 const result = require("getSafeArea").fileFinishedImporting("modules/frames/native/FrameWebView.tsx");
 
 export default function FrameWebView(applicationId) {
-  applicationId = applicationId.applicationId;
+  const frameId = applicationId.frameId;
   const merged = Object.assign(applicationId, Object.create(null));
   let hasInvalidUrlError;
   let hadInvalidUrlError;
-  let obj = applicationId(hadInvalidUrlError[2]);
+  let obj = frameId(hadInvalidUrlError[2]);
   const hasInvalidUrlErrorState = obj.useHasInvalidUrlErrorState();
   hasInvalidUrlError = hasInvalidUrlErrorState.hasInvalidUrlError;
   hadInvalidUrlError = hasInvalidUrlErrorState.hadInvalidUrlError;
-  const items = [hasInvalidUrlError, hadInvalidUrlError, applicationId];
+  const items = [hasInvalidUrlError, hadInvalidUrlError, frameId];
   const effect = React.useEffect(() => {
     let tmp = !hadInvalidUrlError;
     if (!hadInvalidUrlError) {
       tmp = hasInvalidUrlError;
     }
     if (tmp) {
-      tmp = null != applicationId;
-    }
-    if (tmp) {
-      let obj = hasInvalidUrlError(hadInvalidUrlError[3]);
-      obj = { applicationId: null };
-      obj[0] = applicationId;
-      obj.leaveFrame(obj);
+      hasInvalidUrlError(hadInvalidUrlError[3]).leaveFrame(frameId);
+      const obj = hasInvalidUrlError(hadInvalidUrlError[3]);
     }
   }, items);
   obj = {
@@ -46,13 +41,19 @@ export default function FrameWebView(applicationId) {
     releaseIframeId() {
       return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
     },
+    onIframeMount(iframeId) {
+      return hasInvalidUrlError(hadInvalidUrlError[4]).attachFrameIframe(frameId, iframeId);
+    },
+    onIframeUnmount(iframeId) {
+      return hasInvalidUrlError(hadInvalidUrlError[4]).detachFrameIframe(frameId, iframeId);
+    },
     hasInvalidUrlError,
     setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
     hadInvalidUrlError,
-    applicationId
+    applicationId: applicationId.applicationId
   };
   const merged1 = Object.assign(merged);
-  return jsx(applicationId(hadInvalidUrlError[2]).BaseActivityWebView, {
+  return jsx(frameId(hadInvalidUrlError[2]).BaseActivityWebView, {
     hasIframeId() {
       return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();
     },
@@ -62,9 +63,15 @@ export default function FrameWebView(applicationId) {
     releaseIframeId() {
       return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
     },
+    onIframeMount(iframeId) {
+      return hasInvalidUrlError(hadInvalidUrlError[4]).attachFrameIframe(frameId, iframeId);
+    },
+    onIframeUnmount(iframeId) {
+      return hasInvalidUrlError(hadInvalidUrlError[4]).detachFrameIframe(frameId, iframeId);
+    },
     hasInvalidUrlError,
     setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
     hadInvalidUrlError,
-    applicationId
+    applicationId: applicationId.applicationId
   });
 };

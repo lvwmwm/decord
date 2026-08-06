@@ -1,10 +1,10 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14495
+// Function ID: 14496
 // Name: AnimatedStripe
-// Dependencies: [32, 19, 21, 4255, 1885, 4116, 13785, 2]
+// Dependencies: [32, 19, 21, 4285, 1914, 4145, 13822, 2]
 // Exports: default
 
-// Module 14457 (AnimatedStripe)
+// Module 14495 (AnimatedStripe)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ let result = require("jsxProd").fileFinishedImporting("modules/display_name_styl
 export default function GummyStripesFromHue(hue) {
   hue = hue.hue;
   const obj = { children: null };
-  const GUMMY_STRIPES = hue(1885).GUMMY_STRIPES;
+  const GUMMY_STRIPES = hue(1914).GUMMY_STRIPES;
   obj[0] = GUMMY_STRIPES.map((hueShift) => outer1_4(outer1_8, { hue, shift: hueShift.hueShift, saturation: hueShift.saturation, lightness: hueShift.lightness, overlap: arg1 > 0 }, arg1));
   return callback(closure_5, obj);
 };

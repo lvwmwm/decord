@@ -1,10 +1,10 @@
-// Module ID: 7726
-// Function ID: 7727
+// Module ID: 7754
+// Function ID: 7755
 // Name: _fetchAgeVerificationMethodsV
 // Dependencies: [5, 676, 530, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 7726 (_fetchAgeVerificationMethodsV)
+// Module 7754 (_fetchAgeVerificationMethodsV)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -19,12 +19,32 @@ function _fetchAgeVerificationMethodsV() {
     yield HTTP.get(obj1);
     const methods = arg1.body.methods;
     return methods.map((method) => {
-      const obj = { method: method.method, vendor: method.vendor, title: method.title, description: method.description, providedBy: null };
+      let obj = { method: method.method, vendor: method.vendor, title: method.title, description: method.description, providedBy: null, icon: null };
       let provided_by = method.provided_by;
       if (provided_by == null) {
         provided_by = null;
       }
       obj[4] = provided_by;
+      let icon = method.icon;
+      if (icon == null) {
+        icon = null;
+      }
+      let tmp3 = null;
+      if (null != icon) {
+        obj = { paths: null };
+        const paths = icon.paths;
+        obj[0] = paths.map((d) => {
+          const obj = { d: d.d, fillRule: null };
+          let str;
+          if ("evenodd" === d.fill_rule) {
+            str = "evenodd";
+          }
+          obj[1] = str;
+          return obj;
+        });
+        tmp3 = obj;
+      }
+      obj[5] = tmp3;
       return obj;
     });
   });

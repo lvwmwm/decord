@@ -1,10 +1,10 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9392
+// Function ID: 9393
 // Name: useDisplayNameStylesEffectDefaultColors
-// Dependencies: [19, 1886, 688, 3959, 712, 1887, 2]
+// Dependencies: [19, 1915, 688, 3988, 712, 1916, 2]
 // Exports: default
 
-// Module 9363 (useDisplayNameStylesEffectDefaultColors)
+// Module 9392 (useDisplayNameStylesEffectDefaultColors)
 import noop from "noop";
 import items3 from "items3";
 
@@ -17,7 +17,7 @@ const result = require("int2hslRaw").fileFinishedImporting("modules/display_name
 
 export default function useDisplayNameStylesEffectDefaultColors() {
   let obj = require(688) /* int2hslRaw */;
-  const hex2intResult = obj.hex2int(require(3959) /* map */.useToken(importDefault(712).colors.TEXT_DEFAULT));
+  const hex2intResult = obj.hex2int(require(3988) /* map */.useToken(importDefault(712).colors.TEXT_DEFAULT));
   require = hex2intResult;
   let items = [hex2intResult];
   return React.useMemo(() => {

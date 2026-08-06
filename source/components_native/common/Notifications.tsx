@@ -1,10 +1,10 @@
-// Module ID: 9636
-// Function ID: 9637
+// Module ID: 9667
+// Function ID: 9668
 // Name: Notifications
-// Dependencies: [19, 9637, 21, 589, 9670, 2]
+// Dependencies: [19, 9668, 21, 589, 9701, 2]
 // Exports: default
 
-// Module 9636 (Notifications)
+// Module 9667 (Notifications)
 import "noop";
 import handleAlertMessage from "handleAlertMessage";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function Notifications() {
   if (null != stateFromStores) {
     obj = { notification: null };
     obj[0] = stateFromStores;
-    tmp3 = jsx(importDefault(9670), { notification: null }, stateFromStores.key);
+    tmp3 = jsx(importDefault(9701), { notification: null }, stateFromStores.key);
   }
   return tmp3;
 };

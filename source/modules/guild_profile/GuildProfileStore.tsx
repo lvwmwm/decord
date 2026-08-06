@@ -1,9 +1,9 @@
-// Module ID: 8895
-// Function ID: 8896
+// Module ID: 8924
+// Function ID: 8925
 // Name: handleUpdateStart
-// Dependencies: [676, 584, 5264, 589, 709, 2]
+// Dependencies: [676, 584, 5318, 589, 709, 2]
 
-// Module 8895 (handleUpdateStart)
+// Module 8924 (handleUpdateStart)
 import { ChannelTypes } from "ME";
 import { Store } from "initialize";
 
@@ -46,7 +46,7 @@ function handleInviteResolveOrCreate(invite) {
   const profile = invite.invite.profile;
   if (null != profile) {
     const value = map.get(profile.id);
-    const guildProfileFromServer = require(5264) /* getEmoji */.buildGuildProfileFromServer(profile);
+    const guildProfileFromServer = require(5318) /* getEmoji */.buildGuildProfileFromServer(profile);
     if (null == value) {
       let obj = {};
       const merged = Object.assign(closure_7);
@@ -64,7 +64,7 @@ function handleInviteResolveOrCreate(invite) {
       obj.fetchStatus = obj.FETCHED;
       const result1 = obj3.set(profile.id, obj);
     }
-    const obj4 = require(5264) /* getEmoji */;
+    const obj4 = require(5318) /* getEmoji */;
   }
 }
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };

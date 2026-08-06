@@ -1,10 +1,10 @@
-// Module ID: 13875
-// Function ID: 13876
+// Module ID: 13912
+// Function ID: 13913
 // Name: useSafetyHubFetchError
-// Dependencies: [11165, 589, 2]
+// Dependencies: [11199, 589, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 13875 (useSafetyHubFetchError)
+// Module 13912 (useSafetyHubFetchError)
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 9501
-// Function ID: 9502
+// Module ID: 9530
+// Function ID: 9531
 // Name: frozen
-// Dependencies: [1883, 7239, 3902, 1876, 3837, 1384, 2]
+// Dependencies: [1912, 7266, 3931, 1905, 3866, 1384, 2]
 
-// Module 9501 (frozen)
+// Module 9530 (frozen)
 import "toJS";
 import createFromServer from "createFromServer";
 import closure_4 from "createFromServer";
@@ -38,7 +38,7 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
   }
   let tmp4 = null;
   if (null != user.expires_at) {
-    tmp4 = importDefault(3837)(user.expires_at);
+    tmp4 = importDefault(3866)(user.expires_at);
   }
   const redeemed = user.redeemed;
   if (null != user.subscription_plan) {
@@ -101,8 +101,8 @@ prototype["isExpired"] = function isExpired() {
   const expiresAt = this.expiresAt;
   let isAfterResult = null != expiresAt;
   if (isAfterResult) {
-    isAfterResult = importDefault(3837)().isAfter(expiresAt);
-    const obj = importDefault(3837)();
+    isAfterResult = importDefault(3866)().isAfter(expiresAt);
+    const obj = importDefault(3866)();
   }
   return isAfterResult;
 };

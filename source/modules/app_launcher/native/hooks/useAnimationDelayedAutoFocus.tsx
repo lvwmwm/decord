@@ -1,10 +1,10 @@
-// Module ID: 11441
-// Function ID: 11442
+// Module ID: 11475
+// Function ID: 11476
 // Name: useAnimationDelayedAutoFocus
-// Dependencies: [19, 11434, 2]
+// Dependencies: [19, 11468, 2]
 // Exports: useAnimationDelayedAutoFocus
 
-// Module 11441 (useAnimationDelayedAutoFocus)
+// Module 11475 (useAnimationDelayedAutoFocus)
 import noop from "noop";
 
 const require = arg1;
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/native
 export const useAnimationDelayedAutoFocus = function useAnimationDelayedAutoFocus(autoFocus, onPress) {
   const _require = autoFocus;
   const dependencyMap = onPress;
-  const awaitAnimationCompletion = _require(11434).useAwaitAnimationCompletion();
+  const awaitAnimationCompletion = _require(11468).useAwaitAnimationCompletion();
   let closure_3 = awaitAnimationCompletion.useRef(false);
   const items = [autoFocus, onPress, awaitAnimationCompletion];
   const effect = awaitAnimationCompletion.useEffect(() => {

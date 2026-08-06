@@ -1,10 +1,10 @@
-// Module ID: 9514
-// Function ID: 9515
+// Module ID: 9543
+// Function ID: 9544
 // Name: UserFlashListActions
-// Dependencies: [19, 17, 21, 9515, 5634, 5300, 2]
+// Dependencies: [19, 17, 21, 9544, 5688, 5354, 2]
 // Exports: useUserListActionsProps
 
-// Module 9514 (UserFlashListActions)
+// Module 9543 (UserFlashListActions)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -32,9 +32,9 @@ class UserFlashListActions {
         let subLabel;
         ({ label, subLabel, icon, IconComponent, iconVariant, onPress } = arg0);
         const obj = { label, subLabel, icon: null, onPress: null, arrow: true };
-        obj[2] = callback2(callback(5300).TableRow.Icon, { source: icon, IconComponent, variant: iconVariant });
+        obj[2] = callback2(callback(5354).TableRow.Icon, { source: icon, IconComponent, variant: iconVariant });
         obj[3] = onPress;
-        return callback2(callback(5300).TableRow, obj, arg1);
+        return callback2(callback(5354).TableRow, obj, arg1);
       });
     }
     obj[1] = tmp(require("TableRowGroupTitle").TableRowGroup, { hasIcons: true, children: mapped });
@@ -48,7 +48,7 @@ export const useUserListActionsProps = function useUserListActionsProps(actions)
   actions = actions.actions;
   const style = actions.style;
   let dependencyMap;
-  const tmp = style(9515)();
+  const tmp = style(9544)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return React.useMemo(() => {

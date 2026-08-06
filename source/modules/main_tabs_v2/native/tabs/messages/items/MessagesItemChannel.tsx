@@ -1,10 +1,10 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15078
+// Function ID: 15079
 // Name: getMessagesItemChannelSizes
-// Dependencies: [32, 19, 1372, 21, 9341, 712, 15041, 589, 15050, 7638, 15051, 2]
+// Dependencies: [32, 19, 1372, 21, 9370, 712, 15079, 589, 15088, 7666, 15089, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 15040 (getMessagesItemChannelSizes)
+// Module 15078 (getMessagesItemChannelSizes)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -33,12 +33,12 @@ let closure_7 = importAllResult.memo(function MessagesItemChannel(arg0) {
     obj[1] = placeholderHeight;
     obj[2] = isPressed;
     obj[3] = setIsPressed;
-    let tmp5 = jsx(importDefault(15041), { channel: null, height: null, isPressed: null, setIsPressed: null });
+    let tmp5 = jsx(importDefault(15079), { channel: null, height: null, isPressed: null, setIsPressed: null });
   } else {
     obj = { height: null, row: null };
     obj[0] = placeholderHeight;
     obj[1] = row;
-    tmp5 = jsx(importDefault(15050), { height: null, row: null });
+    tmp5 = jsx(importDefault(15088), { height: null, row: null });
   }
   return tmp5;
 });
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo((arg0) => {
   return <closure_7 />;
 });
 const memoResult1 = importAllResult.memo((channelId) => {
-  let obj = require(7638) /* noop */;
+  let obj = require(7666) /* noop */;
   const items = [channelId.channelId];
   const tmp = callback(obj.useRecyclingState(false, items), 2);
   require = tmp2;
@@ -68,7 +68,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
 const memoResult2 = importAllResult.memo((arg0) => {
   let tmp2;
   let tmp3;
-  let obj = require(15051) /* toNativeHorizontalOffset */;
+  let obj = require(15089) /* toNativeHorizontalOffset */;
   obj = {};
   [tmp2, tmp3] = callback(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
@@ -79,14 +79,14 @@ const memoResult2 = importAllResult.memo((arg0) => {
 const result = require("ensureGuildLoaded").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemChannel.tsx");
 
 export const getMessagesItemChannelSizes = function getMessagesItemChannelSizes(fontScale) {
-  let obj = require(9341) /* map */;
+  let obj = require(9370) /* map */;
   const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
-  const scaleTextLineHeightResult1 = require(9341) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
+  const scaleTextLineHeightResult1 = require(9370) /* map */.scaleTextLineHeight("text-xs/medium", fontScale);
   const PX_16 = importDefault(712).space.PX_16;
   const PX_32 = importDefault(712).space.PX_32;
   obj = { avatar: PX_32, height: null, label: null, labelSecondary: null, padding: null };
   const sum = Math.max(PX_32, scaleTextLineHeightResult + scaleTextLineHeightResult1) + PX_16;
-  obj[1] = sum + require(15041) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
+  obj[1] = sum + require(15079) /* MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING */.MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING;
   obj[2] = scaleTextLineHeightResult;
   obj[3] = scaleTextLineHeightResult1;
   obj[4] = PX_16;

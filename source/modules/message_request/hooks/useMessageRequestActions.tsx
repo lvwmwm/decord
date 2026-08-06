@@ -1,10 +1,10 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11721
+// Function ID: 11722
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 6974, 11688, 676, 11689, 9616, 4154, 8646, 8090, 698, 11691, 3928, 7802, 2]
+// Dependencies: [5, 32, 19, 7001, 11722, 676, 11723, 9647, 4184, 8675, 8231, 698, 11725, 3957, 7943, 2]
 // Exports: useMessageRequestActions
 
-// Module 11687 (useMessageRequestActions)
+// Module 11721 (useMessageRequestActions)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

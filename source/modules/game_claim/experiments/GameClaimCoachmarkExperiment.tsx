@@ -1,10 +1,10 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15285
+// Function ID: 15286
 // Name: experiment
-// Dependencies: [4167, 2]
+// Dependencies: [4197, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 15246 (experiment)
+// Module 15285 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable Game Claim Coachmark", config: { enabled: true } }];

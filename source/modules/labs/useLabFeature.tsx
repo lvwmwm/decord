@@ -1,10 +1,10 @@
-// Module ID: 8811
-// Function ID: 8812
+// Module ID: 8840
+// Function ID: 8841
 // Name: useLabFeature
-// Dependencies: [8809, 589, 2]
+// Dependencies: [8838, 589, 2]
 // Exports: default
 
-// Module 8811 (useLabFeature)
+// Module 8840 (useLabFeature)
 import getUserAgnosticState from "getUserAgnosticState";
 
 const require = arg1;

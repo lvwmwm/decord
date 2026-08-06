@@ -1,10 +1,10 @@
-// Module ID: 6502
-// Function ID: 6503
+// Module ID: 6529
+// Function ID: 6530
 // Name: NitroWumpusWishlistingSpotIllustration
-// Dependencies: [21, 5221, 6503, 2]
+// Dependencies: [21, 5251, 6530, 2]
 // Exports: NitroWumpusWishlistingSpotIllustration
 
-// Module 6502 (NitroWumpusWishlistingSpotIllustration)
+// Module 6529 (NitroWumpusWishlistingSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusWishlistingSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const NitroWumpusWishlistingSpotIllustration = function NitroWumpusWishli
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6503);
+  obj[0] = importDefault(6530);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroWumpusWishlistingSpotIllustration = function NitroWumpusWishli
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
 };

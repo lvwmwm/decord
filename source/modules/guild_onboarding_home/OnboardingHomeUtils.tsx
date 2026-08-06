@@ -1,10 +1,10 @@
-// Module ID: 5738
-// Function ID: 5739
+// Module ID: 5765
+// Function ID: 5766
 // Name: useCanSeeOnboardingHome
-// Dependencies: [1934, 1372, 1862, 4456, 676, 1379, 5739, 647, 1865, 5202, 4458, 2]
+// Dependencies: [1963, 1372, 1891, 4486, 676, 1379, 5766, 647, 1894, 5232, 4488, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 5738 (useCanSeeOnboardingHome)
+// Module 5765 (useCanSeeOnboardingHome)
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -20,7 +20,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 
 export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id) {
   const _require = guild_id;
-  const tmp = importDefault(5739)(guild_id);
+  const tmp = importDefault(5766)(guild_id);
   importDefault = tmp;
   const items = [ensureGuildLoaded, createGuildRecordFromRust, initialize];
   const items1 = [guild_id, tmp];
@@ -117,7 +117,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          let result = tmp14(5202).isGuildOnboardingSettingsAvailable(id);
+          let result = tmp14(5232).isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);
@@ -142,7 +142,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           return hasItem1;
         }
       }
-      obj3 = require(1865) /* getFavoritesAwareGuildName */;
+      obj3 = require(1894) /* getFavoritesAwareGuildName */;
       tmp14 = require;
     }
     return false;

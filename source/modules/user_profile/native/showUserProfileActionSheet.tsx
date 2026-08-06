@@ -1,22 +1,22 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8706
+// Function ID: 8707
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 7652, 3892, 1874, 1959, 3928, 8678, 4223, 8690, 2]
+// Dependencies: [5, 7680, 3921, 1903, 1988, 3957, 8707, 4253, 8719, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8677 (showUserProfileActionSheet)
+// Module 8706 (showUserProfileActionSheet)
 import explicitContentFromProto from "explicitContentFromProto";
 import upsertRelationship from "upsertRelationship";
 
 const require = arg1;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
   const timestamp = Date.now();
-  const IgnoreProfileSpeedbumpDisabled = require(3928) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
+  const IgnoreProfileSpeedbumpDisabled = require(3957) /* explicitContentFromProto */.IgnoreProfileSpeedbumpDisabled;
   if (!ignoreBlockedSpeedBump.ignoreBlockedSpeedBump) {
     const isBlockedResult = upsertRelationship.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = upsertRelationship.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      let obj = importDefault(4223);
+      let obj = importDefault(4253);
       const _HermesInternal = HermesInternal;
       obj = {};
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -27,15 +27,15 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       }
       obj.speedBumpType = str2;
       obj.openedAt = timestamp;
-      obj.openLazy(tmp2(1959)(8678, tmp3.paths), combined, obj);
+      obj.openLazy(tmp2(1988)(8707, tmp3.paths), combined, obj);
     }
   }
-  const tmp15 = require(1959) /* asyncRequireImpl */(8690, dependencyMap.paths);
+  const tmp15 = require(1988) /* asyncRequireImpl */(8719, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
   obj.openedAt = timestamp;
-  importDefault(4223).openLazy(tmp15, combined1, obj, "replaceAll");
+  importDefault(4253).openLazy(tmp15, combined1, obj, "replaceAll");
 }
 require("processCallbacks").addPostConnectionCallback;
 const result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 13882
-// Function ID: 13883
+// Module ID: 13919
+// Function ID: 13920
 // Name: UsernameStatusMessage
-// Dependencies: [5, 32, 19, 17, 1874, 676, 21, 4255, 712, 4454, 13883, 4251, 1236, 1480, 589, 3901, 13884, 7486, 8293, 530, 1481, 8165, 7685, 8297, 8249, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 676, 21, 4285, 712, 4484, 13920, 4281, 1236, 1480, 589, 3930, 13921, 7514, 8433, 530, 1481, 8305, 7713, 8437, 8389, 2]
 // Exports: default
 
-// Module 13882 (UsernameStatusMessage)
+// Module 13919 (UsernameStatusMessage)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import sendRequest from "sendRequest";
@@ -21,16 +21,16 @@ let unpackModuleId;
 const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
-  const match = showHint(4454).match(showHint.usernameStatus);
-  let obj = { type: showHint(13883).NameValidationState.ERROR, message: null };
-  const P = showHint(4454).P;
+  const match = showHint(4484).match(showHint.usernameStatus);
+  let obj = { type: showHint(13920).NameValidationState.ERROR, message: null };
+  const P = showHint(4484).P;
   obj[1] = P.select();
-  const str = showHint(4454);
-  obj = { type: showHint(13883).NameValidationState.AVAILABLE, message: null };
-  const P2 = showHint(4454).P;
+  const str = showHint(4484);
+  obj = { type: showHint(13920).NameValidationState.AVAILABLE, message: null };
+  const P2 = showHint(4484).P;
   obj[1] = P2.select();
-  const withResult = match.with(obj, (children) => callback(showHint(4251).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
-  return match.with(obj, (children) => callback(showHint(4251).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4251).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
+  const withResult = match.with(obj, (children) => callback(showHint(4281).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
+  return match.with(obj, (children) => callback(showHint(4281).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj, (children) => callback(showHint(4281).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
     let tmp = null;
     if (showHint) {
       const obj = { variant: "text-xs/medium", color: "text-default", children: null };
@@ -158,14 +158,12 @@ export default function UserSettingsChangeUsername() {
             const tmp34 = outer1_5;
           }
           obj1[2] = tmp34;
-          const obj4 = outer2_2(outer2_3[18]);
-          const lib = yield obj4.saveAccountChanges(obj1, { close: false });
+          const obj3 = outer2_2(outer2_3[18]);
+          const lib = yield obj3.saveAccountChanges(obj1, { close: false });
           if (!lib.ok) {
             v6OrEarlierAPIError = new lib(outer2_3[19]).V6OrEarlierAPIError(lib);
             const CommonActions = lib(outer2_3[20]).CommonActions;
-            const obj = { name: null };
-            obj[0] = outer2_10.ACCOUNT_CHANGE_USERNAME;
-            lib.dispatch(CommonActions.navigate(obj));
+            lib.dispatch(CommonActions.navigate(outer2_10.ACCOUNT_CHANGE_USERNAME));
             outer1_6(v6OrEarlierAPIError);
             let c4 = 3;
             return { value: null, done: true };
@@ -185,7 +183,7 @@ export default function UserSettingsChangeUsername() {
       };
       obj[1] = function onSuccess() {
         const CommonActions = lib(outer1_3[20]).CommonActions;
-        lib.dispatch(CommonActions.navigate({ name: outer1_10.ACCOUNT }));
+        lib.dispatch(CommonActions.navigate(outer1_10.ACCOUNT));
       };
       navigation.push(outer1_10.ACCOUNT_CONFIRM_PASSWORD, obj);
     }

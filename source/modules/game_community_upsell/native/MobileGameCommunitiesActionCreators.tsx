@@ -1,10 +1,10 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 15289
+// Function ID: 15290
 // Name: fetchMobileGameCommunities
 // Dependencies: [676, 530, 1464, 709, 2]
 // Exports: dismissGuild, fetchMobileGameCommunities
 
-// Module 15251 (fetchMobileGameCommunities)
+// Module 15289 (fetchMobileGameCommunities)
 import { Endpoints } from "ME";
 
 const result = require("parse").fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesActionCreators.tsx");

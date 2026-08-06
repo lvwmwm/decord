@@ -1,9 +1,9 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16480
+// Function ID: 16481
 // Name: FormStates
-// Dependencies: [1376, 5207, 1932, 4176, 1862, 4450, 676, 589, 5208, 709, 2]
+// Dependencies: [1376, 5237, 1961, 4206, 1891, 4480, 676, 589, 5238, 709, 2]
 
-// Module 16440 (FormStates)
+// Module 16480 (FormStates)
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
 import setIndex from "setIndex";
 import comparator from "comparator";
@@ -42,7 +42,7 @@ prototype["getProps"] = function getProps() {
     muteConfig: store.getMuteConfig(closure_2),
     messageNotifications: store.getMessageNotifications(closure_2),
     channelOverrides: store.getChannelOverrides(closure_2),
-    channels: importDefault(5208)(categories._categories, categories, (channel) => {
+    channels: importDefault(5238)(categories._categories, categories, (channel) => {
       const type = channel.channel.type;
       let tmp = callback(type);
       if (!tmp) {

@@ -1,10 +1,10 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16357
+// Function ID: 16358
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1372, 4591, 1942, 4072, 4590, 13549, 7999, 676, 7998, 1906, 1416, 10480, 5768, 589, 5583, 11, 709, 8140, 1236, 38, 4476, 7195, 8003, 4803, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1372, 4621, 1971, 4101, 4620, 13586, 8140, 676, 8139, 1935, 1416, 10511, 5795, 589, 5637, 11, 709, 8280, 1236, 38, 4506, 7222, 8144, 4833, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16317 (getData)
+// Module 16357 (getData)
 import handleChanged from "handleChanged";
 import _slicedToArray from "_slicedToArray";
 import DISCORD_EPOCH from "DISCORD_EPOCH";
@@ -2127,7 +2127,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4803).getAttachmentPayload(closure_0, closure_1));
+            DISCORD_EPOCH = arr.map((closure_0, closure_1) => lib(4833).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);
@@ -2142,7 +2142,7 @@ function _submitModal() {
                   let obj = { url: null, body: null, signal: null, rejectWithError: false };
                   obj[0] = outer1_15.INTERACTIONS;
                   obj = { type: null, application_id: null, channel_id: null, guild_id: null, data: null, session_id: null, nonce: null };
-                  obj[0] = lib(1906).InteractionTypes.MODAL_SUBMIT;
+                  obj[0] = lib(1935).InteractionTypes.MODAL_SUBMIT;
                   obj[1] = lib.application.id;
                   ({ id: obj2[2], guild_id: obj2[3] } = channel);
                   obj = { id: null, custom_id: null, components: null, attachments: null };
@@ -2194,7 +2194,7 @@ function _submitModal() {
 let result = require("noop").fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");
 
 export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id) {
-  const componentStateContext = require(7998) /* isInteractionComponent */.useComponentStateContext();
+  const componentStateContext = require(8139) /* isInteractionComponent */.useComponentStateContext();
   let first;
   if (componentStateContext != null) {
     const modal = componentStateContext.modal;
@@ -2206,14 +2206,14 @@ export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1906).ComponentType.ACTION_ROW && first.components[0].id === id;
+  let tmp6 = type === tmp(1935).ComponentType.ACTION_ROW && first.components[0].id === id;
   if (!tmp6) {
     let type1;
     if (first != null) {
       type1 = first.type;
     }
-    tmp6 = type1 === tmp(1906).ComponentType.LABEL && first.component.id === id;
-    const tmp8 = type1 === tmp(1906).ComponentType.LABEL && first.component.id === id;
+    tmp6 = type1 === tmp(1935).ComponentType.LABEL && first.component.id === id;
+    const tmp8 = type1 === tmp(1935).ComponentType.LABEL && first.component.id === id;
   }
   return tmp6;
 };

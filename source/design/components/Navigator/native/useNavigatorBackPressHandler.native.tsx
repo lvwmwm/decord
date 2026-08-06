@@ -1,15 +1,15 @@
-// Module ID: 5229
-// Function ID: 5230
+// Module ID: 5259
+// Function ID: 5260
 // Name: useNavigatorBackPressHandler
 // Dependencies: [19, 17, 1481, 500, 2]
 // Exports: useNavigatorBackPressHandler
 
-// Module 5229 (useNavigatorBackPressHandler)
+// Module 5259 (useNavigatorBackPressHandler)
 import noop from "noop";
 
 const require = arg1;
 require("get ActivityIndicator").BackHandler;
-const result = require("Link").fileFinishedImporting("design/components/Navigator/native/useNavigatorBackPressHandler.native.tsx");
+const result = require("createStandardNavigationFactories").fileFinishedImporting("design/components/Navigator/native/useNavigatorBackPressHandler.native.tsx");
 
 export const useNavigatorBackPressHandler = function useNavigatorBackPressHandler(callback) {
   const _require = callback;

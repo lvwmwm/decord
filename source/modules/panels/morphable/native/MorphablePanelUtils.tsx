@@ -1,10 +1,10 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 15984
+// Function ID: 15985
 // Name: MIN_PIP_TOSS_VELOCITY
-// Dependencies: [11531, 2]
+// Dependencies: [11565, 2]
 // Exports: calculatePIPPositionFromVelocity, calculateXYDiff, getClampedPIPPosition
 
-// Module 15944 (MIN_PIP_TOSS_VELOCITY)
+// Module 15984 (MIN_PIP_TOSS_VELOCITY)
 import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE";
 
 const MIN_PIP_TOSS_VELOCITY = MIN_PAN_GESTURE_MOVE.MIN_PIP_TOSS_VELOCITY;

@@ -1,10 +1,10 @@
-// Module ID: 15208
-// Function ID: 15209
+// Module ID: 15247
+// Function ID: 15248
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1946, 21, 4255, 647, 15209, 11552, 4251, 1851, 2]
+// Dependencies: [19, 17, 1975, 21, 4285, 647, 15248, 11586, 4281, 1879, 2]
 // Exports: default
 
-// Module 15208 (ChannelBadge)
+// Module 15247 (ChannelBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ export default function ChannelBadge(arg0) {
       obj = { mentionsCount: null, isMentionLowImportance: null };
       obj[0] = mentionCount;
       obj[1] = isMentionLowImportance;
-      obj[1] = jsx(importDefault(15209), { mentionsCount: null, isMentionLowImportance: null });
+      obj[1] = jsx(importDefault(15248), { mentionsCount: null, isMentionLowImportance: null });
       let tmp5 = <View mentionsCount={null} isMentionLowImportance={null} />;
     }
     return tmp5;
@@ -42,7 +42,7 @@ export default function ChannelBadge(arg0) {
   if (isNewChannel) {
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.channelInfoContainer;
-    obj1[1] = jsx(importDefault(11552), {});
+    obj1[1] = jsx(importDefault(11586), {});
     tmp5 = <View style={null}>{null}</View>;
   } else {
     tmp5 = null;
@@ -56,10 +56,10 @@ export default function ChannelBadge(arg0) {
             const obj2 = { style: null, children: null };
             obj2[0] = tmp.channelInfoContainer;
             const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
-            obj3[2] = tmp2(1851).humanizeValue(postsWithUnreadsCount, stateFromStores);
-            obj2[1] = jsx(tmp2(4251).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
+            obj3[2] = tmp2(1879).humanizeValue(postsWithUnreadsCount, stateFromStores);
+            obj2[1] = jsx(tmp2(4281).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
             tmp5 = <View style={null}>{null}</View>;
-            const tmp2Result = tmp2(1851);
+            const tmp2Result = tmp2(1879);
           }
         }
       }

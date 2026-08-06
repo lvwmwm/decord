@@ -1,9 +1,9 @@
-// Module ID: 5172
-// Function ID: 5173
+// Module ID: 5202
+// Function ID: 5203
 // Name: loadSavedGuildStickers
-// Dependencies: [5, 1374, 1862, 5173, 5174, 1907, 1926, 10, 5175, 709, 589, 2]
+// Dependencies: [5, 1374, 1891, 5203, 5204, 1936, 1955, 10, 5205, 709, 589, 2]
 
-// Module 5172 (loadSavedGuildStickers)
+// Module 5202 (loadSavedGuildStickers)
 import items from "items";
 import allGuildIds from "allGuildIds";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -56,12 +56,12 @@ function _loadSavedGuildStickers() {
             c0 = undefined;
             callback = undefined;
             if (outer1_9 === outer1_8.Unloaded) {
-              let obj1 = outer1_1(1907);
+              let obj1 = outer1_1(1936);
               const databaseResult = obj1.database();
               c0 = databaseResult;
               if (null != databaseResult) {
                 outer1_9 = tmp28.Loaded;
-                let obj2 = outer1_0(1926);
+                let obj2 = outer1_0(1955);
                 dependencyMap = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };

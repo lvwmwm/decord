@@ -1,9 +1,9 @@
-// Module ID: 6883
-// Function ID: 6884
+// Module ID: 6910
+// Function ID: 6911
 // Name: handleChange
-// Dependencies: [1372, 1931, 4450, 589, 709, 2]
+// Dependencies: [1372, 1960, 4480, 589, 709, 2]
 
-// Module 6883 (handleChange)
+// Module 6910 (handleChange)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";

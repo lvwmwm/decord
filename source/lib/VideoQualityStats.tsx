@@ -1,10 +1,10 @@
-// Module ID: 7095
-// Function ID: 7096
+// Module ID: 7122
+// Function ID: 7123
 // Name: parseEncoder
-// Dependencies: [32, 7096, 7102, 4330, 2]
+// Dependencies: [32, 7123, 7129, 4360, 2]
 // Exports: parseCodecType
 
-// Module 7095 (parseEncoder)
+// Module 7122 (parseEncoder)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;

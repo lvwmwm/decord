@@ -1,10 +1,10 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11195
+// Function ID: 11196
 // Name: useUserIsConsideredAdult
-// Dependencies: [1874, 589, 2]
+// Dependencies: [1903, 589, 2]
 // Exports: default
 
-// Module 11161 (useUserIsConsideredAdult)
+// Module 11195 (useUserIsConsideredAdult)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

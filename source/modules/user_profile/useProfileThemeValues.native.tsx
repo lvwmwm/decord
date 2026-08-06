@@ -1,10 +1,10 @@
-// Module ID: 5617
-// Function ID: 5618
+// Module ID: 5671
+// Function ID: 5672
 // Name: useProfileThemeValues
-// Dependencies: [19, 4247, 647, 1348, 712, 711, 2]
+// Dependencies: [19, 4277, 647, 1348, 712, 711, 2]
 // Exports: useProfileThemeValues
 
-// Module 5617 (useProfileThemeValues)
+// Module 5671 (useProfileThemeValues)
 import { useMemo } from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 

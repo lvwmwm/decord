@@ -1,9 +1,9 @@
-// Module ID: 5300
-// Function ID: 5301
+// Module ID: 5354
+// Function ID: 5355
 // Name: TableRowInner
-// Dependencies: [19, 17, 21, 4255, 712, 1348, 5301, 3959, 5302, 5261, 5306, 5307, 5310, 4671, 500, 5311, 4251, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1348, 5355, 3988, 5356, 5315, 5360, 5361, 5364, 4701, 500, 5365, 4281, 2]
 
-// Module 5300 (TableRowInner)
+// Module 5354 (TableRowInner)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -114,7 +114,7 @@ class TableRowInner {
       num = 1.5;
       tmp8 = fontScale > 1.5;
     }
-    tmp9 = f35351(true === disabled, null != tmp4, tmp8, tmp3);
+    tmp9 = f35555(true === disabled, null != tmp4, tmp8, tmp3);
     tmp6Result = require("map");
     token = tmp6Result.useToken(require("Themes").modules.mobile.TABLE_ROW_LABEL_TEXT_STYLE);
     tmp6Result1 = require("map");

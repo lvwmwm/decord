@@ -1,9 +1,9 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9116
+// Function ID: 9117
 // Name: initialize
-// Dependencies: [9088, 589, 11, 709, 2]
+// Dependencies: [9117, 589, 11, 709, 2]
 
-// Module 9087 (initialize)
+// Module 9116 (initialize)
 import { PersistedStore } from "initialize";
 
 const require = arg1;
@@ -24,7 +24,7 @@ prototype["getState"] = function getState() {
   return { users: closure_3 };
 };
 prototype["getKeyTrustedAt"] = function getKeyTrustedAt(arg0, uint8Array) {
-  const obj = require(9088) /* set */;
+  const obj = require(9117) /* set */;
   let tmp2;
   if (dependencyMap[arg0] != null) {
     tmp2 = tmp[obj.serializeKey(obj, uint8Array)];
@@ -53,8 +53,8 @@ const verifiedKeyStore = new VerifiedKeyStore(require("dispatcher"), {
     }
     dependencyMap[userId] = obj;
     const uint8Array = new Uint8Array(key);
-    const obj2 = require(9088) /* set */;
-    obj[require(9088) /* set */.serializeKey(uint8Array)] = Date.now();
+    const obj2 = require(9117) /* set */;
+    obj[require(9117) /* set */.serializeKey(uint8Array)] = Date.now();
   },
   SECURE_FRAMES_VERIFIED_KEY_DELETE: function handleSecureFramesVerifiedKeyDelete(arg0) {
     let tmp6 = null;

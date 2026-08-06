@@ -1,10 +1,10 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16550
+// Function ID: 16551
 // Name: BoostGemOutlineIcon
-// Dependencies: [19, 21, 712, 3958, 16511, 2]
+// Dependencies: [19, 21, 712, 3987, 16551, 2]
 // Exports: BoostGemOutlineIcon
 
-// Module 16510 (BoostGemOutlineIcon)
+// Module 16550 (BoostGemOutlineIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const BoostGemOutlineIcon = function BoostGemOutlineIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(16511) /* registerAsset */;
+  obj[0] = require(16551) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

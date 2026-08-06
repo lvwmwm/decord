@@ -1,10 +1,10 @@
-// Module ID: 14933
-// Function ID: 14934
+// Module ID: 14971
+// Function ID: 14972
 // Name: ArrowSmallDownIcon
-// Dependencies: [19, 21, 712, 3958, 14934, 2]
+// Dependencies: [19, 21, 712, 3987, 14972, 2]
 // Exports: ArrowSmallDownIcon
 
-// Module 14933 (ArrowSmallDownIcon)
+// Module 14971 (ArrowSmallDownIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const ArrowSmallDownIcon = function ArrowSmallDownIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14934) /* registerAsset */;
+  obj[0] = require(14972) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9249
-// Function ID: 9250
+// Module ID: 9278
+// Function ID: 9279
 // Name: createCollectiblesItemFromServerResponse
-// Dependencies: [6900, 6899, 1899, 6901, 6902, 4294, 9248, 676, 1901, 2]
+// Dependencies: [6927, 6926, 1928, 6928, 6929, 4324, 9277, 676, 1930, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 9249 (createCollectiblesItemFromServerResponse)
+// Module 9278 (createCollectiblesItemFromServerResponse)
 import fromServer from "fromServer";
 import { transformSKUToCollectiblesItem as closure_3 } from "createCollectiblesItemsFromServerResponse";
 import closure_4 from "fromServer";
@@ -17,13 +17,13 @@ import { SKUProductLines } from "ME";
 const require = arg1;
 function createCollectiblesItemFromServerResponse(collectibles_item) {
   const type = collectibles_item.type;
-  if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     return fromServer.fromServer(collectibles_item);
-  } else if (tmp(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (tmp(1930).CollectiblesItemType.PROFILE_EFFECT === type) {
     return closure_5.fromServer(collectibles_item);
-  } else if (tmp(1901).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (tmp(1930).CollectiblesItemType.NAMEPLATE === type) {
     return closure_4.fromServer(collectibles_item);
-  } else if (tmp(1901).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (tmp(1930).CollectiblesItemType.PROFILE_FRAME === type) {
     return closure_6.fromServer(collectibles_item);
   } else {
     return null;

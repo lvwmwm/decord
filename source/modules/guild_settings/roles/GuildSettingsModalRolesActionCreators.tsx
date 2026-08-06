@@ -1,9 +1,9 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16598
+// Function ID: 16599
 // Name: updateGuildRole
-// Dependencies: [5, 676, 530, 5832, 709, 2]
+// Dependencies: [5, 676, 530, 5859, 709, 2]
 
-// Module 16558 (updateGuildRole)
+// Module 16598 (updateGuildRole)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -51,7 +51,7 @@ function _updateGuildRole() {
       obj3 = callback(530);
       obj2[3] = obj3.rejectWithMigratedError();
       let closure_7 = yield HTTP.patch(obj2);
-      const obj = callback2(5832);
+      const obj = callback2(5859);
       const result = obj.checkGuildTemplateDirty(callback);
       return closure_7;
     })();

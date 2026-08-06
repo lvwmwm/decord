@@ -1,9 +1,9 @@
-// Module ID: 7032
-// Function ID: 7033
+// Module ID: 7059
+// Function ID: 7060
 // Name: initialize
-// Dependencies: [7033, 12, 589, 709, 2]
+// Dependencies: [7060, 12, 589, 709, 2]
 
-// Module 7032 (initialize)
+// Module 7059 (initialize)
 import ConfettiLocation from "ConfettiLocation";
 import apply from "apply";
 import { DeviceSettingsStore } from "initialize";

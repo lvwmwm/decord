@@ -1,9 +1,9 @@
-// Module ID: 1932
-// Function ID: 1933
+// Module ID: 1961
+// Function ID: 1962
 // Name: comparator
-// Dependencies: [1933, 1375, 3882, 1376, 1218, 1372, 1942, 1862, 3883, 3892, 1874, 676, 1865, 12, 4445, 506, 3888, 589, 709, 2]
+// Dependencies: [1962, 1375, 3911, 1376, 1218, 1372, 1971, 1891, 3912, 3921, 1903, 676, 1894, 12, 4475, 506, 3917, 589, 709, 2]
 
-// Module 1932 (comparator)
+// Module 1961 (comparator)
 import isSubscriptionGated from "isSubscriptionGated";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import { createFavoritesGuildChannelRecord as closure_6 } from "createFavoritesGuildChannelRecord";
@@ -52,7 +52,7 @@ function rebuildGuildChannels(guildId) {
   let importDefault;
   const id = obj.id;
   importDefault = id;
-  let obj1 = obj2(1865);
+  let obj1 = obj2(1894);
   obj = {};
   if (obj1.isFavoritesGuildId(id)) {
     favoriteChannels = favoriteChannels.getFavoriteChannels();
@@ -211,7 +211,7 @@ function handleGuildRoleUpdate(guildId) {
 function hasElevatedPermissions(user, context) {
   let obj = importAll(506);
   obj = { user, context, checkElevated: false };
-  return obj.hasAny(importAll(3888).computePermissions(obj), closure_20);
+  return obj.hasAny(importAll(3917).computePermissions(obj), closure_20);
 }
 function handleFavoritesUpdate() {
   rebuildGuildChannels(closure_17);

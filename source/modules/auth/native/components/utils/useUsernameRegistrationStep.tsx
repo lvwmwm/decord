@@ -1,10 +1,10 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15020
+// Function ID: 15021
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 13886, 14957, 14958, 14955, 1480, 8267, 13884, 13883, 14956, 1236, 2]
+// Dependencies: [32, 19, 13923, 14995, 14996, 14993, 1480, 8407, 13921, 13920, 14994, 1481, 1236, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 14982 (useUsernameRegistrationStep)
+// Module 15020 (useUsernameRegistrationStep)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import isRateLimited from "isRateLimited";
@@ -68,7 +68,9 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
       obj[1] = tmp3Result.getNextRegistrationTransitionStep(REGISTER_ACCOUNT_INFORMATION);
       obj[2] = outer1_8.SUCCESS;
       context(obj);
-      navigation.push(tmp3(tmp4[10]).getNextAuthState(REGISTER_ACCOUNT_INFORMATION));
+      const nextAuthState = tmp3(tmp4[10]).getNextAuthState(REGISTER_ACCOUNT_INFORMATION);
+      const StackActions = tmp3(tmp4[11]).StackActions;
+      navigation.dispatch(StackActions.push(nextAuthState));
       const tmp3Result1 = tmp3(tmp4[10]);
     }
   }, items);
@@ -117,8 +119,8 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
         }
         return message;
       }
-      const intl = REGISTER_ACCOUNT_INFORMATION(navigation[11]).intl;
-      message = intl.string(REGISTER_ACCOUNT_INFORMATION(navigation[11]).t.GPfy3L);
+      const intl = REGISTER_ACCOUNT_INFORMATION(navigation[12]).intl;
+      message = intl.string(REGISTER_ACCOUNT_INFORMATION(navigation[12]).t.GPfy3L);
     }, items2)
   };
   return obj;

@@ -1,9 +1,9 @@
-// Module ID: 1925
-// Function ID: 1926
+// Module ID: 1954
+// Function ID: 1955
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 1925 (enforcing)
+// Module 1954 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeAppDatabaseModule");

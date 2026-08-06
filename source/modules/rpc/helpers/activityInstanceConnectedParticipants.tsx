@@ -1,10 +1,10 @@
-// Module ID: 13610
-// Function ID: 13611
+// Module ID: 13647
+// Function ID: 13648
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [1371, 1874, 4158, 3873, 4444, 10521, 1351, 12, 2]
+// Dependencies: [1371, 1903, 4188, 3902, 4474, 10542, 1351, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 13610 (activityInstanceConnectedParticipants)
+// Module 13647 (activityInstanceConnectedParticipants)
 import participantFromServer from "participantFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
@@ -26,12 +26,12 @@ obj = {
         let obj = { participants: null };
         obj[0] = [];
       } else {
-        callback = callback(3873).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-        const obj4 = callback(3873);
-        callback2 = callback(3873).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+        callback = callback(3902).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+        const obj4 = callback(3902);
+        callback2 = callback(3902).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
         obj = { participants: null };
         const _Array = Array;
-        const obj5 = callback(3873);
+        const obj5 = callback(3902);
         obj[0] = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
           const user = outer1_4.getUser(arg0);
           if (null != user) {
@@ -71,12 +71,12 @@ export const activityInstanceConnectedParticipants = function activityInstanceCo
     obj[0] = [];
     return obj;
   } else {
-    _require = _require(3873).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
-    const obj2 = _require(3873);
-    const embeddedActivityLocationChannelId = _require(3873).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+    _require = _require(3902).getEmbeddedActivityLocationGuildId(currentEmbeddedActivity.location);
+    const obj2 = _require(3902);
+    const embeddedActivityLocationChannelId = _require(3902).getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
     obj = { participants: null };
     const _Array = Array;
-    const obj3 = _require(3873);
+    const obj3 = _require(3902);
     obj[0] = Array.from(currentEmbeddedActivity.userIds, (arg0) => {
       const user = outer1_4.getUser(arg0);
       if (null != user) {

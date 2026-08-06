@@ -1,33 +1,33 @@
-// Module ID: 9051
-// Function ID: 9052
+// Module ID: 9080
+// Function ID: 9081
 // Name: snapVolumeToDefault
-// Dependencies: [685, 4351, 9052, 4702, 2]
+// Dependencies: [685, 4381, 9081, 4732, 2]
 // Exports: coerceAudioContextForProto, snapVolumeToDefault
 
-// Module 9051 (snapVolumeToDefault)
+// Module 9080 (snapVolumeToDefault)
 import { ProtoAudioSettingsContextTypes as closure_2 } from "MAX_FAVORITES";
 
 let result = require("AudioSettingsDefaultVolumes").fileFinishedImporting("modules/user_settings/voice/AudioSettingsUtils.tsx");
 
 export const snapVolumeToDefault = function snapVolumeToDefault(USER, DEFAULT) {
-  if (DEFAULT === require(4351) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM) {
-    USER = tmp(9052).AudioSettingsDefaultVolumes.STREAM;
+  if (DEFAULT === require(4381) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM) {
+    USER = tmp(9081).AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = tmp(9052).AudioSettingsDefaultVolumes.USER;
+    USER = tmp(9081).AudioSettingsDefaultVolumes.USER;
   }
   let tmp3 = USER;
-  let tmpResult = tmp(4702);
+  let tmpResult = tmp(4732);
   const result = tmpResult.amplitudeToPerceptual(USER);
-  tmpResult = tmp(4702);
+  tmpResult = tmp(4732);
   if (Math.abs(result - tmpResult.amplitudeToPerceptual(USER)) < 1) {
     tmp3 = USER;
   }
   return tmp3;
 };
 export const coerceAudioContextForProto = function coerceAudioContextForProto(first) {
-  if (require(4351) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT === first) {
+  if (require(4381) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT === first) {
     return constants.USER;
-  } else if (tmp(4351).MediaEngineContextTypes.STREAM === first) {
+  } else if (tmp(4381).MediaEngineContextTypes.STREAM === first) {
     return constants.STREAM;
   }
   tmp = require;

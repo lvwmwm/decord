@@ -1,10 +1,10 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 14955
+// Function ID: 14956
 // Name: ActionSheetSelector
-// Dependencies: [32, 19, 17, 21, 4255, 712, 12106, 12104, 4460, 14918, 1959, 4223, 5323, 5322, 5634, 5300, 7744, 4207, 4663, 5302, 4251, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 12140, 12138, 4490, 14956, 1988, 4253, 5377, 5376, 5688, 5354, 7885, 4237, 4693, 5356, 4281, 2]
 // Exports: default
 
-// Module 14917 (ActionSheetSelector)
+// Module 14955 (ActionSheetSelector)
 import _slicedToArray from "_slicedToArray";
 import PressableCard from "PressableCard";
 import get_ActivityIndicator from "CheckmarkLargeIcon";
@@ -23,37 +23,37 @@ function ActionSheetSelector(arg0) {
   let dependencyMap;
   const items = [onSelect];
   dependencyMap = React.useCallback((type) => {
-    onSelect(4223).hideActionSheet("action-sheet-selector");
+    onSelect(4253).hideActionSheet("action-sheet-selector");
     onSelect(type.type);
     type.show();
   }, items);
   let obj = { header: null, children: null };
   obj = { title: "Select Action Sheet", subtitle: null };
   obj[1] = "" + items.length + " options";
-  obj[0] = callback2(require(5322) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[0] = callback2(require(5376) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { style: null, children: null };
   obj[0] = { paddingHorizontal: onSelect(712).space.PX_12 };
   const obj2 = { hasIcons: true, children: null };
   obj2[1] = items.map((type) => {
     let closure_0 = type;
     const obj = { icon: null, label: null, subLabel: null, onPress: null, trailing: null, start: null, end: null };
-    obj[0] = outer1_7(outer1_0(7744).WarningIcon, { size: "md" });
+    obj[0] = outer1_7(outer1_0(7885).WarningIcon, { size: "md" });
     ({ label: obj[1], description: obj[2] } = type);
     obj[3] = function onPress() {
       return outer1_2(closure_0);
     };
     let tmpResult;
     if (closure_0 === type.type) {
-      tmpResult = tmp(outer1_0(4207).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
+      tmpResult = tmp(outer1_0(4237).CheckmarkLargeIcon, { size: "md", color: "text-feedback-positive" });
     }
     obj[4] = tmpResult;
     obj[5] = 0 === arg1;
     obj[6] = arg1 === outer1_10.length - 1;
-    return outer1_7(outer1_0(5300).TableRow, obj, type.type);
+    return outer1_7(outer1_0(5354).TableRow, obj, type.type);
   });
-  obj[1] = callback2(require(5634) /* TableRowGroupTitle */.TableRowGroup, obj2);
+  obj[1] = callback2(require(5688) /* TableRowGroupTitle */.TableRowGroup, obj2);
   obj[1] = callback2(closure_5, obj);
-  return callback2(require(5323) /* Background */.BottomSheet, obj);
+  return callback2(require(5377) /* Background */.BottomSheet, obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -68,7 +68,7 @@ let items = [
     label: "Blocked Domain",
     description: "Shows a warning for potentially malicious domains",
     show() {
-      return importDefault(12106).show("https://example-phishing-site.com/malicious-page");
+      return importDefault(12140).show("https://example-phishing-site.com/malicious-page");
     }
   },
   {
@@ -76,7 +76,7 @@ let items = [
     label: "Suspicious Download",
     description: "Warns users about potentially dangerous file downloads",
     show() {
-      return importDefault(12104).show("https://suspicious-file.com/dangerous-file.exe");
+      return importDefault(12138).show("https://suspicious-file.com/dangerous-file.exe");
     }
   },
   {
@@ -84,7 +84,7 @@ let items = [
     label: "Inappropriate Conversation",
     description: "Shows safety warning for inappropriate conversations",
     show() {
-      return importDefault(4460).pushLazy(require(1959) /* asyncRequireImpl */(14918, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return importDefault(4490).pushLazy(require(1988) /* asyncRequireImpl */(14956, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];
@@ -94,7 +94,7 @@ let obj2 = {
   label: "Blocked Domain",
   description: "Shows a warning for potentially malicious domains",
   show() {
-    return importDefault(12106).show("https://example-phishing-site.com/malicious-page");
+    return importDefault(12140).show("https://example-phishing-site.com/malicious-page");
   }
 };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsActionSheetsScreen.tsx");
@@ -115,12 +115,12 @@ export default function DevToolsActionSheetsScreen() {
   }, items);
   obj = { spacing: 16, children: null };
   obj = { children: null };
-  const items1 = [callback2(first(4251).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), ];
+  const items1 = [callback2(first(4281).Text, { variant: "heading-lg/medium", children: "Action Sheets" }), ];
   const obj1 = { description: "Tap an option to launch the action sheet immediately", hasIcons: false, children: null };
-  obj1[2] = callback2(first(5300).TableRow, { label: found.label, subLabel: found.description, arrow: true, onPress: callback });
-  items1[1] = callback2(first(5634).TableRowGroup, obj1);
+  obj1[2] = callback2(first(5354).TableRow, { label: found.label, subLabel: found.description, arrow: true, onPress: callback });
+  items1[1] = callback2(first(5688).TableRowGroup, obj1);
   obj[0] = items1;
-  obj[1] = callback3(first(5302).Card, obj);
-  obj[2] = callback2(first(4663).Stack, obj);
+  obj[1] = callback3(first(5356).Card, obj);
+  obj[2] = callback2(first(4693).Stack, obj);
   return callback2(closure_6, obj);
 };

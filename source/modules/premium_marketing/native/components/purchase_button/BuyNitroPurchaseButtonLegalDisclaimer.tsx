@@ -1,10 +1,10 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7660
+// Function ID: 7661
 // Name: BuyNitroPurchaseButtonLegalDisclaimer
-// Dependencies: [19, 676, 21, 4255, 712, 1236, 500, 3901, 1945, 4251, 2]
+// Dependencies: [19, 676, 21, 4285, 712, 1236, 500, 3930, 1974, 4281, 2]
 // Exports: default
 
-// Module 7632 (BuyNitroPurchaseButtonLegalDisclaimer)
+// Module 7660 (BuyNitroPurchaseButtonLegalDisclaimer)
 import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -40,21 +40,21 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
       if (isDiscounted) {
         let obj = { buttonText: null, interval: null, cancelSubscriptionArticle: null, paidServiceTermsArticle: null };
         obj[0] = ctaText;
-        obj[1] = importDefault(3901).formatInterval(item.interval);
-        const obj5 = importDefault(3901);
-        obj[2] = importDefault(1945).getArticleURL(constants.PREMIUM_DETAILS_CANCEL_SUB);
-        const obj6 = importDefault(1945);
-        obj[3] = importDefault(1945).getArticleURL(constants.PAID_TERMS);
+        obj[1] = importDefault(3930).formatInterval(item.interval);
+        const obj5 = importDefault(3930);
+        obj[2] = importDefault(1974).getArticleURL(constants.PREMIUM_DETAILS_CANCEL_SUB);
+        const obj6 = importDefault(1974);
+        obj[3] = importDefault(1974).getArticleURL(constants.PAID_TERMS);
         let formatResult = format(tmp3(1236).t["3uC7vj"], obj);
         let tmp10 = tmp3;
-        const obj7 = importDefault(1945);
+        const obj7 = importDefault(1974);
       } else {
         let tmp3Result = tmp3(500);
         let t = tmp3(1236).t;
         obj = { paidURL: null, interval: null, ctaText: null };
         obj[0] = constants2.PAID_TERMS;
         const isAndroidResult = tmp3Result.isAndroid();
-        tmp3Result = tmp3(3901);
+        tmp3Result = tmp3(3930);
         obj[1] = tmp3Result.getIntervalStringAsNoun(item.interval);
         obj[2] = ctaText;
         formatResult = format(tmp3Result.isAndroid() ? t.COObWR : t["7wpqfj"], obj);
@@ -64,7 +64,7 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
       const obj1 = { style: null, variant: "text-xxs/medium", children: null };
       obj1[0] = tmp.disclaimer;
       obj1[2] = formatResult;
-      jsx(tmp10(4251).Text, { style: null, variant: "text-xxs/medium", children: null });
+      jsx(tmp10(4281).Text, { style: null, variant: "text-xxs/medium", children: null });
     }
     const tmp3Result1 = require(500) /* set */;
     t = tmp3(1236).t;
@@ -72,11 +72,11 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
     t = { paidURL: null, interval: null, cancelURL: null };
     t[0] = constants2.PAID_TERMS;
     const tmp14 = require(500) /* set */.isAndroid() ? t.tINI9V : t.ZWXtAj;
-    t[1] = require(3901) /* getPremiumPlanItem */.getIntervalStringAsNoun(item.interval);
-    const tmp3Result2 = require(3901) /* getPremiumPlanItem */;
-    item = importDefault(1945).getArticleURL(constants.PREMIUM_DETAILS_CANCEL_SUB);
+    t[1] = require(3930) /* getPremiumPlanItem */.getIntervalStringAsNoun(item.interval);
+    const tmp3Result2 = require(3930) /* getPremiumPlanItem */;
+    item = importDefault(1974).getArticleURL(constants.PREMIUM_DETAILS_CANCEL_SUB);
     t[2] = item;
     format(tmp14, t);
-    const obj11 = importDefault(1945);
+    const obj11 = importDefault(1974);
   }
 };

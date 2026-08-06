@@ -1,9 +1,9 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 12984
+// Function ID: 12985
 // Name: reset
-// Dependencies: [676, 4330, 12, 12948, 2]
+// Dependencies: [676, 4360, 12, 12985, 2]
 
-// Module 12947 (reset)
+// Module 12984 (reset)
 import { RTCConnectionStates } from "ME";
 
 const result = require("apply").fileFinishedImporting("lib/RTCConnectionStats.tsx");
@@ -33,14 +33,14 @@ prototype["update"] = function update(current) {
     const history = self.history;
     const obj = { state: null, startTime: null };
     obj[0] = current;
-    obj[1] = require(4330) /* sleep */.now();
+    obj[1] = require(4360) /* sleep */.now();
     history.push(obj);
-    const obj2 = require(4330) /* sleep */;
+    const obj2 = require(4360) /* sleep */;
   }
 };
 prototype["getVoiceConnectionSuccessStats"] = function getVoiceConnectionSuccessStats(nowResult) {
   if (nowResult === undefined) {
-    let obj = RTC_DISCONNECTED(4330);
+    let obj = RTC_DISCONNECTED(4360);
     nowResult = obj.now();
   }
   const stateDurations = this.getStateDurations(nowResult);
@@ -123,7 +123,7 @@ prototype["getStateDurations"] = function getStateDurations(nowResult) {
   if (0 === this.history.length) {
     return [];
   } else {
-    let arr = importDefault(12948)(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
+    let arr = importDefault(12985)(self.history, (state, startTime) => ({ state: state.state, durationMs: startTime.startTime - state.startTime }));
     let obj = importDefault(12);
     const lastResult = obj.last(self.history);
     obj = { state: null, durationMs: null };

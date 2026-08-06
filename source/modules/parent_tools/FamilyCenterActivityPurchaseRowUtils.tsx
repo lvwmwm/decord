@@ -1,10 +1,10 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14063
+// Function ID: 14064
 // Name: getCollectibleTypeName
-// Dependencies: [6900, 6901, 1876, 1901, 1236, 2255, 1416, 2]
+// Dependencies: [6927, 6928, 1905, 1930, 1236, 2284, 1416, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14026 (getCollectibleTypeName)
+// Module 14063 (getCollectibleTypeName)
 import { isAvatarDecorationRecord } from "fromServer";
 import { isProfileEffectRecord } from "fromServer";
 import GuildFeatures from "GuildFeatures";
@@ -12,21 +12,21 @@ import GuildFeatures from "GuildFeatures";
 let c5;
 let closure_6;
 function getCollectibleTypeName(type) {
-  if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+  if (require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1236).intl;
-    return intl5.string(importDefault(2255).obi47v);
-  } else if (tmp(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
+    return intl5.string(importDefault(2284).obi47v);
+  } else if (tmp(1930).CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1236).intl;
-    return intl4.string(importDefault(2255).RX8BMR);
-  } else if (tmp(1901).CollectiblesItemType.NAMEPLATE === type) {
+    return intl4.string(importDefault(2284).RX8BMR);
+  } else if (tmp(1930).CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1236).intl;
-    return intl3.string(importDefault(2255).nNGEHk);
-  } else if (tmp(1901).CollectiblesItemType.BUNDLE === type) {
+    return intl3.string(importDefault(2284).nNGEHk);
+  } else if (tmp(1930).CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1236).intl;
-    return intl2.string(importDefault(2255).VS1fKo);
-  } else if (tmp(1901).CollectiblesItemType.PROFILE_FRAME === type) {
+    return intl2.string(importDefault(2284).VS1fKo);
+  } else if (tmp(1930).CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1236).intl;
-    return intl.string(importDefault(2255).JiIY1l);
+    return intl.string(importDefault(2284).JiIY1l);
   } else {
     return "";
   }

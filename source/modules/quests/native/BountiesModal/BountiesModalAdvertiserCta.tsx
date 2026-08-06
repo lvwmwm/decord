@@ -1,10 +1,10 @@
-// Module ID: 14160
-// Function ID: 14161
+// Module ID: 14197
+// Function ID: 14198
 // Name: BountiesModalAdvertiserCtaContent
-// Dependencies: [109, 19, 17, 4247, 5113, 21, 4116, 4255, 712, 4256, 4259, 14161, 10358, 4670, 10375, 10377, 7082, 7081, 5118, 7753, 5221, 4251, 4665, 14130, 589, 14131, 8553, 2]
+// Dependencies: [109, 19, 17, 4277, 5143, 21, 4145, 4285, 712, 4286, 4289, 14198, 10389, 4700, 10406, 10408, 7109, 7108, 5148, 7894, 5251, 4281, 4695, 14167, 589, 14168, 8582, 2]
 // Exports: default
 
-// Module 14160 (BountiesModalAdvertiserCtaContent)
+// Module 14197 (BountiesModalAdvertiserCtaContent)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import BackgroundBlurView from "BackgroundBlurView";
 import get_ActivityIndicator from "getQuestContentName";
@@ -12,7 +12,7 @@ import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLi
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "Text";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4116";
+import importDefaultResult from "module_4145";
 
 let Pressable;
 let c10;
@@ -92,7 +92,7 @@ function BountiesModalAdvertiserCtaContent(bounty) {
 let closure_3 = ["style"];
 ({ StyleSheet: closure_6, View: error, Pressable } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
-let closure_12 = require("module_4116").createAnimatedComponent(Pressable);
+let closure_12 = require("module_4145").createAnimatedComponent(Pressable);
 let closure_13 = createCacheKey.createStyles(() => {
   let obj = { outerContainer: null, ctaPressable: null, cta: null, ctaLogoContainer: null, ctaLogo: null, ctaInfo: null };
   obj = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: importDefault(712).space.PX_16, paddingBottom: importDefault(712).space.PX_16, alignItems: "center" };
@@ -115,7 +115,7 @@ let closure_13 = createCacheKey.createStyles(() => {
 });
 let fn = function n(value) {
   const obj = { opacity: null };
-  obj[0] = require(4256) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4259) /* timingNone */.timingStandard, "respect-motion-settings");
+  obj[0] = require(4286) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4289) /* timingNone */.timingStandard, "respect-motion-settings");
   return obj;
 };
 let obj = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, timingStandard: require("timingNone").timingStandard };
@@ -124,7 +124,7 @@ fn.__workletHash = 2981824910249;
 fn.__initData = { code: "function BountiesModalAdvertiserCtaTsx1(visible){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};}" };
 const fn2 = function s(value, fn2) {
   const obj = { opacity: null };
-  obj[0] = require(4256) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4259) /* timingNone */.timingFast, "respect-motion-settings", fn2);
+  obj[0] = require(4286) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4289) /* timingNone */.timingFast, "respect-motion-settings", fn2);
   return obj;
 };
 obj = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, timingFast: require("timingNone").timingFast };

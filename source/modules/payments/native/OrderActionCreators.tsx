@@ -1,10 +1,10 @@
-// Module ID: 6787
-// Function ID: 6788
+// Module ID: 6814
+// Function ID: 6815
 // Name: getOrders
-// Dependencies: [5, 4238, 676, 3, 530, 3916, 709, 5758, 2]
+// Dependencies: [5, 4268, 676, 3, 530, 3945, 709, 5785, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 6787 (getOrders)
+// Module 6814 (getOrders)
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext";
 import { OrderStatus } from "CustomCheckoutFlow";
 import { Endpoints } from "ME";
@@ -556,7 +556,7 @@ function _patchOrderLineItem() {
           } else if (2 === tmp7) {
             c4 = 0;
             logger = c3;
-            let obj5 = callback(3916);
+            let obj5 = callback(3945);
             obj5 = { tags: null, extra: null };
             obj5[0] = { source: "OrderActionCreators_patchOrderLineItem" };
             const obj6 = { orderId: null, orderLineItemId: null, subscriptionPlanId: null };
@@ -742,7 +742,7 @@ function _patchOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             let closure_7 = c3;
-            let obj5 = callback(3916);
+            let obj5 = callback(3945);
             obj5 = { tags: null, extra: null };
             obj5[0] = { source: "OrderActionCreators_patchOrder" };
             const obj6 = { orderId: null, orderLineItems: null };
@@ -939,7 +939,7 @@ function _updateOrder() {
           } else if (2 === tmp7) {
             c4 = 0;
             logger = obj2;
-            obj5 = callback(3916);
+            obj5 = callback(3945);
             const obj6 = { tags: null, extra: null };
             obj6[0] = { source: "OrderActionCreators_updateOrder" };
             const obj7 = { orderId: null, giftInfo: null };

@@ -1,10 +1,10 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11193
+// Function ID: 11194
 // Name: _fetchMediaPostEmbed
-// Dependencies: [5, 676, 709, 530, 4154, 2]
+// Dependencies: [5, 676, 709, 530, 4184, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11159 (_fetchMediaPostEmbed)
+// Module 11193 (_fetchMediaPostEmbed)
 import set from "set";
 import { Endpoints } from "ME";
 

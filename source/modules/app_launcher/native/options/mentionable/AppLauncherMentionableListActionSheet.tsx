@@ -1,10 +1,10 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11486
+// Function ID: 11487
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [32, 19, 676, 21, 6874, 5111, 4223, 11438, 11439, 9520, 4251, 4094, 11453, 5181, 11451, 9560, 5300, 2]
+// Dependencies: [32, 19, 676, 21, 6901, 5141, 4253, 11472, 11473, 9549, 4281, 4123, 11487, 5211, 11485, 9589, 5354, 2]
 // Exports: default
 
-// Module 11452 (AppLauncherMentionableListActionSheet)
+// Module 11486 (AppLauncherMentionableListActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { RelationshipTypes } from "ME";

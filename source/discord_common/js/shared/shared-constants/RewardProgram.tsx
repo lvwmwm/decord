@@ -1,9 +1,9 @@
-// Module ID: 12867
-// Function ID: 12868
+// Module ID: 12904
+// Function ID: 12905
 // Name: RewardProgram
 // Dependencies: [2]
 
-// Module 12867 (RewardProgram)
+// Module 12904 (RewardProgram)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/RewardProgram.tsx");
 
 export const RewardProgram = { NITRO: 0, [0]: "NITRO", XBOX: 1, [1]: "XBOX" };

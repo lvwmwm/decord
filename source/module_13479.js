@@ -1,13 +1,6 @@
 // Module ID: 13479
 // Function ID: 13480
-// Dependencies: [13460, 13480]
+// Dependencies: []
 
 // Module 13479
-
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!require(13460)(arg0[arg1])) {
-    tmp4 = require(13480) /* all */(tmp);
-  }
-  return tmp4;
-};
+arg5.units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

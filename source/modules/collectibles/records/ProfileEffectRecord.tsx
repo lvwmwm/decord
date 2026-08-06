@@ -1,10 +1,10 @@
-// Module ID: 6901
-// Function ID: 6902
+// Module ID: 6928
+// Function ID: 6929
 // Name: fromServer
-// Dependencies: [1900, 1901, 2]
+// Dependencies: [1929, 1930, 2]
 // Exports: isProfileEffectRecord
 
-// Module 6901 (fromServer)
+// Module 6928 (fromServer)
 import "fromServer";
 
 const require = arg1;
@@ -12,7 +12,7 @@ let prototype;
 prototype = function ProfileEffectRecord(arg0) {
   const tmp2 = new prototype(arg0, new.target, new.target, tmp);
   // ThrowIfThisInitialized (0x7c)
-  tmp2.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+  tmp2.type = require(1930) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
   ({ title: tmp2.title, description: tmp2.description, accessibilityLabel: tmp2.accessibilityLabel, reducedMotionSrc: tmp2.reducedMotionSrc, thumbnailPreviewSrc: tmp2.thumbnailPreviewSrc, effects: tmp2.effects, animationType: tmp2.animationType, staticFrameSrc: tmp2.staticFrameSrc } = arg0);
   return tmp2;
 }.prototype;
@@ -28,7 +28,7 @@ prototype["fromServer"] = function fromServer(arg0) {
   }
   tmp = new tmp(obj, arg0, this, merged);
   // ThrowIfThisInitialized (0x7c)
-  tmp.type = require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
+  tmp.type = require(1930) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT;
   ({ title: tmp4.title, description: tmp4.description, accessibilityLabel: tmp4.accessibilityLabel, reducedMotionSrc: tmp4.reducedMotionSrc, thumbnailPreviewSrc: tmp4.thumbnailPreviewSrc, effects: tmp4.effects, animationType: tmp4.animationType, staticFrameSrc: tmp4.staticFrameSrc } = obj);
   return tmp;
 };

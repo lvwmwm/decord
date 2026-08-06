@@ -1,10 +1,10 @@
-// Module ID: 1913
-// Function ID: 1914
+// Module ID: 1942
+// Function ID: 1943
 // Name: combineKey
-// Dependencies: [1914, 2]
+// Dependencies: [1943, 2]
 // Exports: combineKey, combineKeyPrefix
 
-// Module 1913 (combineKey)
+// Module 1942 (combineKey)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/util/Key.tsx");
 
 export const combineKey = function combineKey(prefix, key) {
@@ -17,7 +17,7 @@ export const combineKey = function combineKey(prefix, key) {
     items1[HermesBuiltin.arraySpread(prefix, 0)] = key;
   }
   if (items1.length >= 1) {
-    if (items1.length <= require(1914) /* TableId */.MAXIMUM_KEY_BITS) {
+    if (items1.length <= require(1943) /* TableId */.MAXIMUM_KEY_BITS) {
       return items1;
     }
   }
@@ -33,7 +33,7 @@ export const combineKeyPrefix = function combineKeyPrefix(prefix, items) {
     items1 = [];
     items1[HermesBuiltin.arraySpread(prefix, 0)] = items;
   }
-  if (items1.length <= require(1914) /* TableId */.MAXIMUM_KEY_BITS) {
+  if (items1.length <= require(1943) /* TableId */.MAXIMUM_KEY_BITS) {
     return items1;
   } else {
     const _Error = Error;

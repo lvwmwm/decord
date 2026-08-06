@@ -1,9 +1,9 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5817
+// Function ID: 5818
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4169, 3884, 4948, 1218, 5791, 5792, 1372, 4592, 1942, 1862, 4326, 3892, 1931, 4072, 676, 5795, 709, 12, 1865, 589, 2]
+// Dependencies: [32, 4199, 3913, 4978, 1218, 5818, 5819, 1372, 4622, 1971, 1891, 4356, 3921, 1960, 4101, 676, 5822, 709, 12, 1894, 589, 2]
 
-// Module 5790 (handleConnectionOpenOrResumed)
+// Module 5817 (handleConnectionOpenOrResumed)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import initialize from "initialize";
@@ -89,7 +89,7 @@ function handleConnectionOpenOrResumed(type) {
       }
     }
     tmp3.subscribeToGuild(tmp11);
-    obj5 = obj(1865);
+    obj5 = obj(1894);
   }
   obj = {};
   set = new Set(initialize.lurkingGuildIds());
@@ -135,7 +135,7 @@ function handleChannelSelect(arg0) {
     }
     dependencyMap.subscribeToGuild(tmp4);
     flag = false;
-    obj = require(1865) /* getFavoritesAwareGuildName */;
+    obj = require(1894) /* getFavoritesAwareGuildName */;
   }
   return flag;
 }
@@ -355,7 +355,7 @@ const guildSubscriptionsStore = new GuildSubscriptionsStore(require("dispatcher"
         }
       }
       tmp3.subscribeToGuild(tmp2);
-      obj3 = require(1865) /* getFavoritesAwareGuildName */;
+      obj3 = require(1894) /* getFavoritesAwareGuildName */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -401,8 +401,8 @@ const guildSubscriptionsStore = new GuildSubscriptionsStore(require("dispatcher"
         guildId = parent_id.getGuildId();
         let isFavoritesGuildIdResult = guildId !== guildId;
         if (isFavoritesGuildIdResult) {
-          isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-          const obj = require(1865) /* getFavoritesAwareGuildName */;
+          isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+          const obj = require(1894) /* getFavoritesAwareGuildName */;
         }
         if (isFavoritesGuildIdResult) {
           tmp3.subscribeToGuild(guildId);
@@ -619,7 +619,7 @@ let obj = {
         }
       }
       tmp3.subscribeToGuild(tmp2);
-      obj3 = require(1865) /* getFavoritesAwareGuildName */;
+      obj3 = require(1894) /* getFavoritesAwareGuildName */;
     }
   },
   GUILD_DELETE: function handleGuildDelete(guild) {
@@ -665,8 +665,8 @@ let obj = {
         guildId = parent_id.getGuildId();
         let isFavoritesGuildIdResult = guildId !== guildId;
         if (isFavoritesGuildIdResult) {
-          isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
-          const obj = require(1865) /* getFavoritesAwareGuildName */;
+          isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(guildId);
+          const obj = require(1894) /* getFavoritesAwareGuildName */;
         }
         if (isFavoritesGuildIdResult) {
           tmp3.subscribeToGuild(guildId);

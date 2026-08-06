@@ -1,10 +1,10 @@
-// Module ID: 1847
-// Function ID: 1848
+// Module ID: 1875
+// Function ID: 1876
 // Name: useSystemKeyboardHeight
 // Dependencies: [1477, 1478, 2]
 // Exports: default, getSystemKeyboardHeight
 
-// Module 1847 (useSystemKeyboardHeight)
+// Module 1875 (useSystemKeyboardHeight)
 let closure_3 = { excludeSafeAreaInsets: false };
 const result = require("set").fileFinishedImporting("modules/keyboard/native/useSystemKeyboardHeight.native.tsx");
 

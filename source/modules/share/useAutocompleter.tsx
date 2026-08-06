@@ -1,10 +1,10 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10168
+// Function ID: 10169
 // Name: useAutocompleter
-// Dependencies: [32, 19, 5583, 7202, 2]
+// Dependencies: [32, 19, 5637, 7229, 2]
 // Exports: default
 
-// Module 10137 (useAutocompleter)
+// Module 10168 (useAutocompleter)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -17,7 +17,7 @@ export default function useAutocompleter(searchOptions) {
   let dependencyMap;
   let callback;
   [tmp2, c1] = callback(React.useState({ results: [], query: "" }), 2);
-  const tmp3 = searchOptions(5583)(() => {
+  const tmp3 = searchOptions(5637)(() => {
     const obj = new searchOptions(_undefined[3])((results, query) => {
       callback({ results, query });
     });

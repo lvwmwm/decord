@@ -1,9 +1,9 @@
-// Module ID: 7263
-// Function ID: 7264
+// Module ID: 7290
+// Function ID: 7291
 // Name: create
-// Dependencies: [32, 1307, 7254, 7244, 7245, 2]
+// Dependencies: [32, 1307, 7281, 7271, 7272, 2]
 
-// Module 7263 (create)
+// Module 7290 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
@@ -15,7 +15,7 @@ class PlanSelectCardBanner$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(7254).ThemeAwareAsset;
+            return callback(7281).ThemeAwareAsset;
           }
     };
     items = [, , , ];
@@ -34,7 +34,7 @@ class PlanSelectCardBanner$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(7245).HelpArticle;
+            return callback(7272).HelpArticle;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PlanSelectCardBanner", items, T);
@@ -71,7 +71,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       if (1 === tmp5) {
         let tmp32 = require;
         let tmp33 = dependencyMap;
-        let ThemeAwareAsset = require(7254) /* create */.ThemeAwareAsset;
+        let ThemeAwareAsset = require(7281) /* create */.ThemeAwareAsset;
         let tmp34 = ThemeAwareAsset;
         let tmp35 = pos;
         let tmp36 = readUnknownField;
@@ -81,7 +81,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (3 === tmp5) {
         let tmp27 = require;
         let tmp28 = dependencyMap;
-        let LocalizedString = require(7244) /* create */.LocalizedString;
+        let LocalizedString = require(7271) /* create */.LocalizedString;
         let tmp29 = LocalizedString;
         let tmp30 = pos;
         let tmp31 = readUnknownField;
@@ -89,7 +89,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (4 === tmp5) {
         let tmp22 = require;
         let tmp23 = dependencyMap;
-        let HelpArticle = require(7245) /* create */.HelpArticle;
+        let HelpArticle = require(7272) /* create */.HelpArticle;
         let tmp24 = HelpArticle;
         let tmp25 = pos;
         let tmp26 = readUnknownField;
@@ -132,7 +132,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
 };
 prototype["internalBinaryWrite"] = function internalBinaryWrite(asset, tag, writeUnknownFields) {
   if (asset.asset) {
-    const ThemeAwareAsset = require(7254) /* create */.ThemeAwareAsset;
+    const ThemeAwareAsset = require(7281) /* create */.ThemeAwareAsset;
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
     const joined = ThemeAwareAsset.internalBinaryWrite(asset.asset, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = ThemeAwareAsset.internalBinaryWrite(asset.asset, tag.tag(1, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -142,13 +142,13 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(asset, tag, writ
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
   }
   if (asset.bodyLocalized) {
-    const LocalizedString = require(7244) /* create */.LocalizedString;
+    const LocalizedString = require(7271) /* create */.LocalizedString;
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
     const joined1 = LocalizedString.internalBinaryWrite(asset.bodyLocalized, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(asset.bodyLocalized, tag.tag(3, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (asset.helpArticle) {
-    const HelpArticle = require(7245) /* create */.HelpArticle;
+    const HelpArticle = require(7272) /* create */.HelpArticle;
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
     const joined2 = HelpArticle.internalBinaryWrite(asset.helpArticle, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult2 = HelpArticle.internalBinaryWrite(asset.helpArticle, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -168,7 +168,7 @@ let obj = {
   name: "asset",
   kind: "message",
   T() {
-    return callback(7254).ThemeAwareAsset;
+    return callback(7281).ThemeAwareAsset;
   }
 };
 let items = [obj, { no: 2, name: "body", kind: "scalar", T: 9 }, , ];
@@ -185,7 +185,7 @@ items[3] = {
   name: "help_article",
   kind: "message",
   T() {
-    return callback(7245).HelpArticle;
+    return callback(7272).HelpArticle;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PlanSelectCardBanner", items, tmp, T, PlanSelectCardBanner$Type, prototype, items);

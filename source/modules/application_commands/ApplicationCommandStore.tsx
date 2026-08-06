@@ -1,9 +1,9 @@
-// Module ID: 7133
-// Function ID: 7134
+// Module ID: 7160
+// Function ID: 7161
 // Name: handleInit
-// Dependencies: [32, 5792, 1931, 6874, 589, 709, 2]
+// Dependencies: [32, 5819, 1960, 6901, 589, 709, 2]
 
-// Module 7133 (handleInit)
+// Module 7160 (handleInit)
 import _slicedToArray from "_slicedToArray";
 import handlePermissionsChange from "handlePermissionsChange";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -92,8 +92,8 @@ function handleSetActiveCommand(arg0) {
       obj[5] = query;
       obj[6] = searchResultsPosition;
       obj[7] = source;
-      obj(6874).trackCommandSelected(obj);
-      const obj3 = obj(6874);
+      obj(6901).trackCommandSelected(obj);
+      const obj3 = obj(6901);
     }
     return true;
   }

@@ -1,10 +1,10 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16132
+// Function ID: 16133
 // Name: trackVoicePanelTabOpened
-// Dependencies: [4267, 676, 698, 2]
+// Dependencies: [4297, 676, 698, 2]
 // Exports: default
 
-// Module 16092 (trackVoicePanelTabOpened)
+// Module 16132 (trackVoicePanelTabOpened)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { AnalyticEvents } from "ME";
 

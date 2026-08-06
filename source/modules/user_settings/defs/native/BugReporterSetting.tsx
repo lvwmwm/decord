@@ -1,16 +1,16 @@
-// Module ID: 14637
-// Function ID: 14638
+// Module ID: 14675
+// Function ID: 14676
 // Name: useBugReporterExperimentSettingPredicate
-// Dependencies: [9752, 4460, 9753, 1959, 9782, 10333, 1236, 14638, 2]
+// Dependencies: [9783, 4490, 9784, 1988, 9813, 10364, 1236, 14676, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 14637 (useBugReporterExperimentSettingPredicate)
+// Module 14675 (useBugReporterExperimentSettingPredicate)
 import zustandStore from "zustandStore";
 import createToggle from "createToggle";
 
 const require = arg1;
 function useBugReporterExperimentSettingPredicate() {
-  return importDefault(9782).useConfig({ location: "native-settings" }).hasBugReporterAccess;
+  return importDefault(9813).useConfig({ location: "native-settings" }).hasBugReporterAccess;
 }
 createToggle = {
   useTitle() {
@@ -22,8 +22,8 @@ createToggle = {
   onPress: function handleBugReporterSettingPress() {
     if (!field.getField("isReportOpen")) {
       field.setState({ isReportOpen: true });
-      importDefault(4460).pushLazy(require(1959) /* asyncRequireImpl */(9753, dependencyMap.paths));
-      const obj2 = importDefault(4460);
+      importDefault(4490).pushLazy(require(1988) /* asyncRequireImpl */(9784, dependencyMap.paths));
+      const obj2 = importDefault(4490);
     }
   },
   withArrow: true,

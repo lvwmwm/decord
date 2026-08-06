@@ -1,10 +1,10 @@
-// Module ID: 1944
-// Function ID: 1945
+// Module ID: 1973
+// Function ID: 1974
 // Name: getFriendlyDurationString
-// Dependencies: [676, 1236, 1945, 2]
+// Dependencies: [676, 1236, 1974, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 1944 (getFriendlyDurationString)
+// Module 1973 (getFriendlyDurationString)
 import importDefaultResult from "combined";
 
 const require = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15075
+// Function ID: 15076
 // Name: useDrawerOpen
-// Dependencies: [32, 19, 1481, 4106, 2]
+// Dependencies: [32, 19, 1481, 4135, 2]
 // Exports: useDrawerOpen
 
-// Module 15037 (useDrawerOpen)
+// Module 15075 (useDrawerOpen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
 const require = arg1;
-const result = require("Link").fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
+const result = require("createStandardNavigationFactories").fileFinishedImporting("modules/home_drawer/native/useDrawerState.tsx");
 
 export const useDrawerOpen = function useDrawerOpen(enableHome) {
   let flag = enableHome;

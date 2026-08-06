@@ -1,10 +1,10 @@
-// Module ID: 8074
-// Function ID: 8075
+// Module ID: 8215
+// Function ID: 8216
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4247, 21, 647, 1416, 500, 8075, 8079, 5221, 2]
+// Dependencies: [19, 17, 4277, 21, 647, 1416, 500, 8216, 8220, 5251, 2]
 // Exports: default
 
-// Module 8074 (CutoutableAvatarDecoration)
+// Module 8215 (CutoutableAvatarDecoration)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

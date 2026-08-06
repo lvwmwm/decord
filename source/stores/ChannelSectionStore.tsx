@@ -1,10 +1,10 @@
-// Module ID: 5792
-// Function ID: 5793
+// Module ID: 5819
+// Function ID: 5820
 // Name: handlePermissionsChange
-// Dependencies: [4169, 5793, 1372, 1862, 3883, 1931, 4072, 1874, 676, 1379, 505, 5794, 1231, 11, 4491, 589, 709, 2]
+// Dependencies: [4199, 5820, 1372, 1891, 3912, 1960, 4101, 1903, 676, 1379, 505, 5821, 1231, 11, 4521, 589, 709, 2]
 // Exports: isViewChannelSidebar
 
-// Module 5792 (handlePermissionsChange)
+// Module 5819 (handlePermissionsChange)
 import getHash from "getHash";
 import handleReaction from "handleReaction";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -36,7 +36,7 @@ function handlePermissionsChange() {
       let tmp15 = dependencyMap[tmp6];
       let tmp16 = require;
       let tmp17 = dependencyMap;
-      if (tmp15.type === require(5794) /* SidebarType */.SidebarType.VIEW_THREAD) {
+      if (tmp15.type === require(5821) /* SidebarType */.SidebarType.VIEW_THREAD) {
         let tmp7 = channel;
         channel = channel.getChannel(tmp15.channelId);
         let canResult = null != channel;
@@ -198,8 +198,8 @@ prototype["getCurrentSidebarChannelId"] = function getCurrentSidebarChannelId(ch
   } else {
     let tmp9 = null;
     if (null != dependencyMap[tmp]) {
-      if (tmp8.type !== require(5794) /* SidebarType */.SidebarType.VIEW_THREAD) {
-        if (tmp8.type !== tmp10(5794).SidebarType.VIEW_CHANNEL) {
+      if (tmp8.type !== require(5821) /* SidebarType */.SidebarType.VIEW_THREAD) {
+        if (tmp8.type !== tmp10(5821).SidebarType.VIEW_CHANNEL) {
           channelId = null;
         }
         tmp9 = channelId;
@@ -229,8 +229,8 @@ prototype["getCurrentSidebarMessageId"] = function getCurrentSidebarMessageId(ch
   } else {
     let tmp9 = null;
     if (null != dependencyMap[tmp]) {
-      if (tmp8.type !== require(5794) /* SidebarType */.SidebarType.VIEW_THREAD) {
-        if (tmp8.type !== tmp10(5794).SidebarType.VIEW_CHANNEL) {
+      if (tmp8.type !== require(5821) /* SidebarType */.SidebarType.VIEW_THREAD) {
+        if (tmp8.type !== tmp10(5821).SidebarType.VIEW_CHANNEL) {
           let tmp12 = null;
         }
         tmp9 = tmp12;
@@ -590,7 +590,7 @@ const channelSectionStore = new ChannelSectionStore(require("dispatcher"), {
       obj[1] = channelId;
       obj[2] = details;
       let tmp9 = obj;
-      if (sidebarType === require(5794) /* SidebarType */.SidebarType.VIEW_MOD_REPORT) {
+      if (sidebarType === require(5821) /* SidebarType */.SidebarType.VIEW_MOD_REPORT) {
         obj = {};
         const merged = Object.assign(obj);
         obj.baseChannelId = baseChannelId;
@@ -652,7 +652,7 @@ const channelSectionStore = new ChannelSectionStore(require("dispatcher"), {
     }
     if (null != tmp) {
       const obj = { type: null, parentChannelId: null, parentMessageId: null, location: null };
-      obj[0] = require(5794) /* SidebarType */.SidebarType.CREATE_THREAD;
+      obj[0] = require(5821) /* SidebarType */.SidebarType.CREATE_THREAD;
       obj[1] = parentChannelId;
       obj[2] = parentMessageId;
       obj[3] = _location;
@@ -705,7 +705,7 @@ const channelSectionStore = new ChannelSectionStore(require("dispatcher"), {
           if (tmp14) {
             let tmp12 = require;
             let tmp13 = dependencyMap;
-            tmp14 = tmp18.type === require(5794) /* SidebarType */.SidebarType.VIEW_CHANNEL;
+            tmp14 = tmp18.type === require(5821) /* SidebarType */.SidebarType.VIEW_CHANNEL;
           }
           if (tmp14) {
             tmp14 = tmp18.channelId === channel.id;
@@ -744,7 +744,7 @@ const channelSectionStore = new ChannelSectionStore(require("dispatcher"), {
     } else {
       let tmp5 = null != tmp12;
       if (tmp5) {
-        tmp5 = tmp12.type === require(5794) /* SidebarType */.SidebarType.CREATE_THREAD;
+        tmp5 = tmp12.type === require(5821) /* SidebarType */.SidebarType.CREATE_THREAD;
       }
       if (tmp5) {
         let obj = importDefault(11);
@@ -752,7 +752,7 @@ const channelSectionStore = new ChannelSectionStore(require("dispatcher"), {
       }
       if (tmp5) {
         obj = { type: null, channelId: null };
-        obj[0] = require(5794) /* SidebarType */.SidebarType.VIEW_THREAD;
+        obj[0] = require(5821) /* SidebarType */.SidebarType.VIEW_THREAD;
         obj[1] = channel.id;
         dependencyMap[channel.parent_id] = obj;
       }
@@ -761,7 +761,7 @@ const channelSectionStore = new ChannelSectionStore(require("dispatcher"), {
   THREAD_DELETE: function handleThreadDelete(channel) {
     channel = channel.channel;
     if (null != dependencyMap[channel.parent_id]) {
-      if (tmp3.type === require(5794) /* SidebarType */.SidebarType.VIEW_THREAD) {
+      if (tmp3.type === require(5821) /* SidebarType */.SidebarType.VIEW_THREAD) {
         if (tmp3.channelId === channel.id) {
           const parent_id = channel.parent_id;
           delete tmp2[tmp];
@@ -776,6 +776,6 @@ const result = set.fileFinishedImporting("stores/ChannelSectionStore.tsx");
 export default channelSectionStore;
 export const MESSAGE_REQUESTS_BASE_CHANNEL_ID = "message_requests";
 export const isViewChannelSidebar = function isViewChannelSidebar(type) {
-  const items = [require(5794) /* SidebarType */.SidebarType.VIEW_CHANNEL, require(5794) /* SidebarType */.SidebarType.VIEW_THREAD, require(5794) /* SidebarType */.SidebarType.VIEW_MESSAGE_REQUEST, require(5794) /* SidebarType */.SidebarType.VIEW_MOD_REPORT];
+  const items = [require(5821) /* SidebarType */.SidebarType.VIEW_CHANNEL, require(5821) /* SidebarType */.SidebarType.VIEW_THREAD, require(5821) /* SidebarType */.SidebarType.VIEW_MESSAGE_REQUEST, require(5821) /* SidebarType */.SidebarType.VIEW_MOD_REPORT];
   return items.includes(type.type);
 };

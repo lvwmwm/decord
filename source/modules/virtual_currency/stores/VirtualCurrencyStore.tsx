@@ -1,9 +1,9 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9342
+// Function ID: 9343
 // Name: redeemError
 // Dependencies: [589, 709, 2]
 
-// Module 9313 (redeemError)
+// Module 9342 (redeemError)
 import { Store } from "initialize";
 
 let object = importDefault;

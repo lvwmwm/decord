@@ -1,10 +1,10 @@
-// Module ID: 7991
-// Function ID: 7992
+// Module ID: 8132
+// Function ID: 8133
 // Name: transformEmbeds
-// Dependencies: [17, 676, 7992, 7993, 4587, 7994, 7995, 500, 7837, 4442, 7971, 3925, 5803, 5808, 4470, 1236, 2]
+// Dependencies: [17, 676, 8133, 8134, 4617, 8135, 8136, 500, 7978, 4472, 8112, 3954, 5830, 5835, 4500, 1236, 2]
 // Exports: default
 
-// Module 7991 (transformEmbeds)
+// Module 8132 (transformEmbeds)
 import { processColor } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 

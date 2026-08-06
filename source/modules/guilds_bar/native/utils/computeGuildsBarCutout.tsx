@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15313
+// Function ID: 15314
 // Name: computeGuildsBarCutout
-// Dependencies: [17, 15262, 1297, 8075, 2]
+// Dependencies: [17, 15300, 1297, 8216, 2]
 // Exports: default
 
-// Module 15275 (computeGuildsBarCutout)
+// Module 15313 (computeGuildsBarCutout)
 import { PixelRatio } from "get ActivityIndicator";
 import { GUILD_ITEM_SIZE } from "GUILD_ITEM_SIZE";
 
@@ -30,7 +30,7 @@ export default function computeGuildsBarCutout(containerSize) {
   const roundToNearestPixelResult = PixelRatio.roundToNearestPixel(BADGE_SIZE + 2 * BADGE_PADDING);
   const roundToNearestPixelResult1 = PixelRatio.roundToNearestPixel(BADGE_SIZE2 + 2 * BADGE_PADDING);
   const obj = { shape: null, x: 0, y: 0, width: null, height: null, cornerRadius: null };
-  obj[0] = require(8075) /* SolidCutout */.CutoutShape.RoundedRect;
+  obj[0] = require(8216) /* SolidCutout */.CutoutShape.RoundedRect;
   obj[3] = roundToNearestPixelResult;
   obj[4] = roundToNearestPixelResult1;
   obj[5] = PixelRatio.roundToNearestPixel(Math.min(roundToNearestPixelResult, roundToNearestPixelResult1) / 2);

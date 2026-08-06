@@ -1,9 +1,9 @@
-// Module ID: 15388
-// Function ID: 15389
+// Module ID: 15426
+// Function ID: 15427
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4247, 4292, 1372, 1862, 1874, 15382, 676, 5724, 21, 4255, 4251, 712, 4684, 15387, 1236, 1384, 7931, 7114, 10073, 9876, 7788, 589, 7983, 1297, 11869, 15389, 1480, 4236, 13076, 6995, 698, 8117, 15390, 10970, 3956, 10993, 1959, 4223, 15392, 4214, 15384, 5628, 15393, 15394, 11, 4797, 15395, 6996, 12395, 1481, 3928, 3933, 15405, 15406, 15407, 15408, 15409, 15415, 810, 15416, 15417, 1351, 15386, 7638, 15418, 2]
+// Dependencies: [5, 32, 19, 17, 4277, 4322, 1372, 1891, 1903, 15420, 676, 5751, 21, 4285, 4281, 712, 4714, 15425, 1236, 1384, 8072, 7141, 10104, 9907, 7929, 589, 8124, 1297, 11903, 15427, 1480, 4266, 13113, 7022, 698, 8257, 15428, 11002, 3985, 11025, 1988, 4253, 15430, 4244, 15422, 5682, 15431, 15432, 11, 4827, 15433, 7023, 12432, 1481, 3957, 3962, 15443, 15444, 15445, 15446, 15447, 15453, 810, 15454, 15455, 1351, 15424, 7666, 15456, 2]
 
-// Module 15388 (ForYouFooter)
+// Module 15426 (ForYouFooter)
 import addApplication from "addApplication";
 import handleSupportedURL from "handleSupportedURL";
 import importAllResult from "hasFlag";
@@ -37,7 +37,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15387) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15425) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -47,7 +47,7 @@ function Callout(arg0) {
   let item;
   ({ item, acked, compactMode } = arg0);
   const tmp = createCacheKey();
-  let obj = importAll(4684);
+  let obj = importAll(4714);
   obj = { style: tmp.calloutContainer, pointerEvents: "none", children: null };
   obj = { style: tmp.messagePreviewBarV2 };
   const parser = obj.getParser(callback3());
@@ -60,7 +60,7 @@ function Callout(arg0) {
   }
   obj1[2] = num;
   obj1[3] = parser(item.callout);
-  items[1] = callback(require(4251) /* Text */.Text, obj1);
+  items[1] = callback(require(4281) /* Text */.Text, obj1);
   obj[2] = items;
   return closure_22(closure_7, obj);
 }
@@ -74,7 +74,7 @@ function ForYouMessagePreviewV2(item) {
   ({ compactMode, roleStyle } = item);
   let messagePreviewIconV2 = createCacheKey();
   let SMALL = dependencyMap;
-  let obj = message_channel_id(4684);
+  let obj = message_channel_id(4714);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback4(), closure_28, roleStyle);
   const intl = item(1236).intl;
   const stringResult = intl.string(item(1236).t.BOi07B);
@@ -129,10 +129,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp15 = guild_id(7931)(first);
+    const tmp15 = guild_id(8072)(first);
     let result = stringResult;
     if (null != tmp15) {
-      let tmp2Result = tmp2(7114);
+      let tmp2Result = tmp2(7141);
       result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
@@ -240,18 +240,18 @@ function ForYouMessagePreviewV2(item) {
   if (acked) {
     str2 = "text-muted";
   }
-  const items5 = [item(7983).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
+  const items5 = [item(8124).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
   if (null == ATTACHMENT) {
     items5[1] = tmp26;
     obj1[3] = items5;
-    items3[1] = tmp21(tmp2(4251).Text, obj1);
+    items3[1] = tmp21(tmp2(4281).Text, obj1);
     obj[2] = items3;
     return tmp21(tmp22, obj);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(10073);
+      let tmp29 = guild_id(10104);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1297).IconSizes.SMALL;
@@ -263,10 +263,10 @@ function ForYouMessagePreviewV2(item) {
     } else if (tmp28.STICKER !== ATTACHMENT) {
       tmp29 = null;
       if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
-        tmp29 = guild_id(7788);
+        tmp29 = guild_id(7929);
       }
     }
-    tmp29 = guild_id(9876);
+    tmp29 = guild_id(9907);
   }
 }
 function ApplicationName(applicationId) {
@@ -280,7 +280,7 @@ function ApplicationName(applicationId) {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(11869), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11903), obj, stateFromStores.id);
   }
   return tmp5;
 }
@@ -747,7 +747,9 @@ const memoResult = importAllResult.memo((loadMore) => {
     loadMore(true);
   }, items2);
   const items3 = [tmp.forYouDivider, suggestedFriendAdded, onAddSuggestionAnimationFinish, stateFromStores, setting, isSoftAcked, onSoftAckItem, forceHoistItem, isForceHoisted, tmp8, callback, flag];
-  const callback1 = suggestedFriendAdded.useCallback((arg0) => outer1_21(loadMore(onSoftAckItem[64]).ForYouLoadMore, { onPressLoad: callback }), items3);
+  const callback1 = suggestedFriendAdded.useCallback((arg0) => {
+
+  }, items3);
   ref = suggestedFriendAdded.useRef(null);
   const items4 = [shouldScrollToTop];
   const effect = suggestedFriendAdded.useEffect(() => {

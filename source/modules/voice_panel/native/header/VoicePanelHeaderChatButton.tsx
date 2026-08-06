@@ -1,10 +1,10 @@
-// Module ID: 16054
-// Function ID: 16055
+// Module ID: 16094
+// Function ID: 16095
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 676, 21, 4255, 712, 1231, 16055, 5648, 15960, 4751, 1236, 2]
+// Dependencies: [19, 676, 21, 4285, 712, 1231, 16095, 5702, 16000, 4781, 1236, 2]
 // Exports: default
 
-// Module 16054 (VoicePanelHeaderChatButton)
+// Module 16094 (VoicePanelHeaderChatButton)
 import noop from "noop";
 import { ComponentActions } from "ME";
 import jsxProd from "jsxProd";
@@ -28,17 +28,17 @@ export default function VoicePanelHeaderChatButton(channelId) {
     const ComponentDispatch = callback(table[5]).ComponentDispatch;
     ComponentDispatch.dispatch(constants.VOICE_PANEL_OPEN_CHAT_TAB);
   }, []);
-  const tmp5 = importDefault(16055)(channelId.channelId);
+  const tmp5 = importDefault(16095)(channelId.channelId);
   const tmp6 = closure_6;
   let obj = { icon: null, accessibilityLabel: null, onPress: null };
-  const tmp7 = importDefault(5648);
+  const tmp7 = importDefault(5702);
   obj = { color: null, size: "sm" };
   obj[0] = importDefault(712).colors.WHITE;
-  obj[0] = callback(require(4751) /* ChatIcon */.ChatIcon, obj);
+  obj[0] = callback(require(4781) /* ChatIcon */.ChatIcon, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["5KxXrK"]);
   obj[2] = callback;
-  const children = [callback(importDefault(15960), obj), ];
+  const children = [callback(importDefault(16000), obj), ];
   let tmp8Result = null != tmp5;
   if (tmp8Result) {
     obj = { style: null, children: null };
@@ -47,9 +47,9 @@ export default function VoicePanelHeaderChatButton(channelId) {
     const items1 = [, ];
     ({ badge: arr2[0], notificationBadge: arr2[1] } = tmp);
     obj1[0] = items1;
-    obj[1] = tmp8(tmp3(5648), obj1);
-    tmp8Result = tmp8(tmp3(5648), obj);
-    const tmp3Result = tmp3(5648);
+    obj[1] = tmp8(tmp3(5702), obj1);
+    tmp8Result = tmp8(tmp3(5702), obj);
+    const tmp3Result = tmp3(5702);
   }
   children[1] = tmp8Result;
   return tmp6(tmp7, { children });

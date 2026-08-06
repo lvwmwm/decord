@@ -1,10 +1,10 @@
-// Module ID: 10626
-// Function ID: 10627
+// Module ID: 10681
+// Function ID: 10682
 // Name: useCurrentUserStageRoles
-// Dependencies: [1218, 5091, 589, 2]
+// Dependencies: [1218, 5121, 589, 2]
 // Exports: default
 
-// Module 10626 (useCurrentUserStageRoles)
+// Module 10681 (useCurrentUserStageRoles)
 import fetchFingerprint from "fetchFingerprint";
 import buildStageChannelUserRoles from "buildStageChannelUserRoles";
 

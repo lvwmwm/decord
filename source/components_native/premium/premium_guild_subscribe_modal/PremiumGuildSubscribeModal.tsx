@@ -1,10 +1,10 @@
-// Module ID: 5104
-// Function ID: 5105
+// Module ID: 5134
+// Function ID: 5135
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1302, 5105, 676, 21, 5106, 5223, 5103, 5902, 4101, 5903, 5904, 5905, 1236, 5907, 5910, 1297, 5912, 12756, 5583, 4662, 5650, 2]
+// Dependencies: [32, 19, 1302, 5135, 676, 21, 5136, 5253, 5133, 5929, 4130, 5930, 5931, 5932, 1236, 5934, 5937, 1297, 5939, 12793, 5637, 4692, 5704, 2]
 // Exports: default
 
-// Module 5104 (PremiumGuildSubscribeModal)
+// Module 5134 (PremiumGuildSubscribeModal)
 import _slicedToArray from "_slicedToArray";
 import PendingCancellationWarning from "PendingCancellationWarning";
 import handleThemeChange from "handleThemeChange";
@@ -23,7 +23,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
   ({ guildId: require, guildBoostSlots: importDefault, intent: dependencyMap, onResult: _slicedToArray } = arg0);
   let first;
   let handleThemeChange;
-  let tmp = importDefault(5583)(() => {
+  let tmp = importDefault(5637)(() => {
     const items = [];
     if (null != closure_0) {
       let arr1 = closure_1;
@@ -45,33 +45,33 @@ export default function PremiumGuildSubscribeModal(arg0) {
         let obj3 = { headerShown: false, render: null };
         obj3[1] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(5106), {});
+          return callback3(callback2(5136), {});
         };
         obj2[outer1_6.GUILD_SELECT] = obj3;
         const obj4 = { headerLeft: null, headerRight: null, headerTitle: null, render: null };
         obj4[0] = outer1_0(outer1_2[7]).getHeaderCloseButton(outer1_0(outer1_2[8]).closeApplyBoostModal);
         obj4[1] = function headerRight() {
-          let obj = callback(4101);
+          let obj = callback(4130);
           if (obj.isThemeDark(theme.theme)) {
-            let tmp4Result = tmp4(5903);
+            let tmp4Result = tmp4(5930);
           } else {
-            tmp4Result = tmp4(5904);
+            tmp4Result = tmp4(5931);
           }
-          obj = { source: tmp4Result, IconComponent: tmp2(5905).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
+          obj = { source: tmp4Result, IconComponent: tmp2(5932).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
           const intl = tmp2(1236).intl;
           obj[2] = intl.string(callback(1236).t["3D5yo/"]);
           const intl2 = tmp2(1236).intl;
           obj[3] = intl2.string(callback(1236).t["+CbP2v"]);
           obj[4] = function onPress() {
-            let obj = callback(5907);
+            let obj = callback(5934);
             obj = { destinationPane: constants.GUILD_BOOSTING };
             const result = obj.trackUserSettingsPaneViewed(obj);
-            callback(5103).closeApplyBoostModal();
-            const obj3 = callback(5103);
+            callback(5133).closeApplyBoostModal();
+            const obj3 = callback(5133);
             obj = { screen: constants.GUILD_BOOSTING };
-            callback(5910).openUserSettings(obj);
+            callback(5937).openUserSettings(obj);
           };
-          return closure_8(callback(5902).HeaderActionButton, obj);
+          return closure_8(callback(5929).HeaderActionButton, obj);
         };
         obj4[2] = function headerTitle(children) {
           children = children.children;
@@ -85,11 +85,11 @@ export default function PremiumGuildSubscribeModal(arg0) {
             tmpResult = tmp(callback(1297).LegacyText, obj);
           }
           obj[1] = tmpResult;
-          return closure_8(callback(5223).NavigatorHeader, obj);
+          return closure_8(callback(5253).NavigatorHeader, obj);
         };
         obj4[3] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(5912), {});
+          return callback3(callback2(5939), {});
         };
         obj2[outer1_6.OVERVIEW] = obj4;
         const obj5 = { headerLeft: null, headerTitle: null, render: null };
@@ -99,7 +99,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
         obj5[1] = intl.string(outer1_0(outer1_2[14]).t.VJEVbu);
         obj5[2] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(12756), {});
+          return callback3(callback2(12793), {});
         };
         obj2[outer1_6.CONFIRMATION] = obj5;
         obj1[1] = obj2;
@@ -132,7 +132,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
   first = tmp2[0];
   handleThemeChange = tmp2[1];
   let items = [first];
-  importDefault(4662)(first.useCallback(() => {
+  importDefault(4692)(first.useCallback(() => {
     let flag = first === outer1_6.GUILD_SELECT;
     if (flag) {
       outer1_0(outer1_2[8]).closeApplyBoostModal();
@@ -153,5 +153,5 @@ export default function PremiumGuildSubscribeModal(arg0) {
       callback(tmp.name);
     }
   };
-  return jsx(require(5650) /* NavigationStack */.Navigator, { screens: tmp.screens, initialRouteStack: initialStack, headerBackTitle: null, onStateChange: null });
+  return jsx(require(5704) /* NavigationStack */.Navigator, { screens: tmp.screens, initialRouteStack: initialStack, headerBackTitle: null, onStateChange: null });
 };

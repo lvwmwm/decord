@@ -1,9 +1,9 @@
-// Module ID: 14313
-// Function ID: 14314
+// Module ID: 14350
+// Function ID: 14351
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: [5, 19, 17, 7054, 14212, 5113, 14214, 21, 4255, 712, 14298, 14297, 647, 14210, 10346, 1581, 10365, 10366, 14218, 10348, 7081, 5116, 14240, 11059, 14279, 14276, 11055, 14280, 4251, 1236, 1297, 11052, 2]
+// Dependencies: [5, 19, 17, 7081, 14249, 5143, 14251, 21, 4285, 712, 14335, 14334, 647, 14247, 10377, 1609, 10396, 10397, 14255, 10379, 7108, 5146, 14277, 11091, 14316, 14313, 11087, 14317, 4281, 1236, 1297, 11084, 2]
 
-// Module 14313 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 14350 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 import closure_3 from "QuestsExperimentLocations";
 import importAllResult from "_manuallyStartConsoleQuest";
 import { View } from "items";
@@ -72,10 +72,10 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
   const items2 = [questCreative.id, hasWatchVideoOnMobileTasks, setRestingQuestDockMode, isMobileActivityQuest, launchMobileActivity];
   const callback = obj1.useCallback(launchMobileActivity(function*() {
     const obj1 = { questContentCTA: null, questContent: null, sourceQuestContent: null };
-    obj1[0] = outer1_0(7081).QuestContentCTA.ACCEPT_QUEST;
-    obj1[1] = outer1_0(5116).QuestContent.QUEST_BAR_MOBILE;
-    obj1[2] = outer1_0(5116).QuestContent.QUEST_BAR_MOBILE;
-    yield outer1_0(10348).enrollInQuest(outer1_0.id, obj1);
+    obj1[0] = outer1_0(7108).QuestContentCTA.ACCEPT_QUEST;
+    obj1[1] = outer1_0(5146).QuestContent.QUEST_BAR_MOBILE;
+    obj1[2] = outer1_0(5146).QuestContent.QUEST_BAR_MOBILE;
+    yield outer1_0(10379).enrollInQuest(outer1_0.id, obj1);
     if (1 === tmp4) {
       if (arg0 === 1) {
         let dependencyMap = 3;
@@ -95,10 +95,10 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
         if (v0) {
           const obj5 = { questId: null, sourceQuestContent: null };
           obj5[0] = outer1_0.id;
-          obj5[1] = outer1_0(5116).QuestContent.QUEST_BAR_MOBILE;
-          v0(14240)(obj5);
+          obj5[1] = outer1_0(5146).QuestContent.QUEST_BAR_MOBILE;
+          v0(14277)(obj5);
           outer1_4(outer1_8.COLLAPSED);
-          const tmp12 = v0(14240);
+          const tmp12 = v0(14277);
         }
         dependencyMap = 3;
       }

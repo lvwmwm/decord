@@ -1,10 +1,10 @@
-// Module ID: 11093
-// Function ID: 11094
+// Module ID: 11127
+// Function ID: 11128
 // Name: useExperimentAssignment
-// Dependencies: [32, 4169, 1212, 589, 4177, 2]
+// Dependencies: [32, 4199, 1212, 589, 4207, 2]
 // Exports: getExperimentServerAssignment, useExperimentAssignment, useExperimentServerAssignment
 
-// Module 11093 (useExperimentAssignment)
+// Module 11127 (useExperimentAssignment)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import initialize from "initialize";
@@ -44,7 +44,7 @@ export const getExperimentServerAssignment = function getExperimentServerAssignm
   [obj, obj2] = callback(tmp, 2);
   if (null == name) {
     return null;
-  } else if (name.system === require(4177) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
+  } else if (name.system === require(4207) /* trackExposureToExperiment */.ExperimentSystem.LEGACY) {
     name = name.name;
     let loadedUserExperiment = obj.getLoadedUserExperiment(name);
   } else {

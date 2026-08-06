@@ -1,10 +1,10 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15428
+// Function ID: 15429
 // Name: LightbulbIcon
-// Dependencies: [19, 21, 712, 3958, 15391, 2]
+// Dependencies: [19, 21, 712, 3987, 15429, 2]
 // Exports: LightbulbIcon
 
-// Module 15390 (LightbulbIcon)
+// Module 15428 (LightbulbIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const LightbulbIcon = function LightbulbIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15391) /* registerAsset */;
+  obj[0] = require(15429) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

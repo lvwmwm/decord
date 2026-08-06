@@ -1,10 +1,10 @@
-// Module ID: 1947
-// Function ID: 1948
+// Module ID: 1976
+// Function ID: 1977
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1948, 1236, 1958, 1274, 3329, 3804, 3835, 3837, 1208, 2]
+// Dependencies: [5, 700, 1977, 1236, 1987, 1274, 3358, 3833, 3864, 3866, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 1947 (_setAppLocale)
+// Module 1976 (_setAppLocale)
 import module_1274 from "module_1274";
 import identity from "identity";
 
@@ -81,7 +81,7 @@ function _setAppLocale() {
                         c1 = 1;
                         dependencyMap = 1;
                         let obj1 = { value: null, done: false };
-                        obj1[0] = outer1_0(1958).preloadAllIntlMessageFiles();
+                        obj1[0] = outer1_0(1987).preloadAllIntlMessageFiles();
                         return obj1;
                       }
                     } else if (1 === tmp4) {
@@ -433,27 +433,30 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   const importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "accessible", localeData: "$ZodUnknown", setLoadingStarted: "MENTION_SENTINEL", setLoadingSucceeded: "fr", setLoadingFailed: "CustomIcon", setLocaleData: "isCurrentUserPrioritySpeaker" };
-  obj[3] = importDefault(1948);
-  obj[4] = function setLoadingStarted(closure_0) {
-    return callback({ isLoading: true, inProgressLocale: closure_0 });
-  };
-  obj[5] = function setLoadingSucceeded(closure_0) {
-    if (callback2().inProgressLocale === closure_0) {
-      callback({ isLoading: false, inProgressLocale: "Boolean", error: "accessible" });
+  return {
+    isLoading: false,
+    inProgressLocale: "Boolean",
+    error: "__d",
+    localeData: importDefault(1977),
+    setLoadingStarted(closure_0) {
+      return callback({ isLoading: true, inProgressLocale: closure_0 });
+    },
+    setLoadingSucceeded(closure_0) {
+      if (callback2().inProgressLocale === closure_0) {
+        callback({ isLoading: false, inProgressLocale: "Boolean", error: "__d" });
+      }
+    },
+    setLoadingFailed(arg0, closure_0) {
+      if (callback2().inProgressLocale === closure_0) {
+        const obj = { isLoading: false, inProgressLocale: "Array", error: false };
+        obj[2] = arg0;
+        callback(obj);
+      }
+    },
+    setLocaleData(closure_1) {
+      callback({ localeData: closure_1 });
     }
   };
-  obj[6] = function setLoadingFailed(arg0, closure_0) {
-    if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: "__initData" };
-      obj[2] = arg0;
-      callback(obj);
-    }
-  };
-  obj[7] = function setLocaleData(closure_1) {
-    callback({ localeData: closure_1 });
-  };
-  return obj;
 });
 const result = require("code").fileFinishedImporting("intl/IntlLoaderStore.tsx");
 
@@ -479,7 +482,7 @@ export const setAppLocale = function setAppLocale() {
 export const useLocaleData = function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (tmp == null) {
-    tmp = importDefault(1948);
+    tmp = importDefault(1977);
   }
   return tmp;
 };

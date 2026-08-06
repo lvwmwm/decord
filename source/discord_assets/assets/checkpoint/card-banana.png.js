@@ -1,9 +1,9 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8176
+// Function ID: 8177
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8035 (metadata)
+// Module 8176 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/checkpoint/card-banana.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/b5faf6e2a128b6095a769868d700f10e55c5db3fcca3c29a555bc8514fcd6eaa.png";

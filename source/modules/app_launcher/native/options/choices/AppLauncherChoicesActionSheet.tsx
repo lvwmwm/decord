@@ -1,10 +1,10 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11471
+// Function ID: 11472
 // Name: FlashListWrapper
-// Dependencies: [32, 19, 17, 1479, 21, 4255, 712, 7638, 1581, 500, 5111, 7749, 4223, 7534, 11438, 11439, 2]
+// Dependencies: [32, 19, 17, 1479, 21, 4285, 712, 7666, 1609, 500, 5141, 7890, 4253, 7562, 11472, 11473, 2]
 // Exports: default
 
-// Module 11437 (FlashListWrapper)
+// Module 11471 (FlashListWrapper)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -17,7 +17,7 @@ let metroImportAll;
 const require = arg1;
 function FlashListWrapper(scrollable) {
   const merged = Object.assign(scrollable, Object.create(null));
-  const tmp3 = require(7638) /* noop */;
+  const tmp3 = require(7666) /* noop */;
   if (scrollable.scrollable) {
     let obj = { preserveScrollMomentum: true };
     const merged1 = Object.assign(merged);
@@ -55,7 +55,7 @@ export default function AppLauncherChoicesActionSheet(option) {
   ({ initChoiceIndex, onDismiss } = option);
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  const bottom = onChoiceSelect(1581)().bottom;
+  const bottom = onChoiceSelect(1609)().bottom;
   let obj = option(500);
   let sum = bottom;
   if (!obj.isIOS()) {
@@ -137,11 +137,11 @@ export default function AppLauncherChoicesActionSheet(option) {
   if (tmp13) {
     obj = { onChange: null };
     obj[0] = callback;
-    tmp16 = callback(tmp3(11439).AppLauncherListSearchBar, obj);
+    tmp16 = callback(tmp3(11473).AppLauncherListSearchBar, obj);
   }
   const items3 = [tmp16, ];
   if (0 === first.length) {
-    let tmp20 = callback(tmp3(11439).AppLauncherListEmptyState, {});
+    let tmp20 = callback(tmp3(11473).AppLauncherListEmptyState, {});
   } else {
     const obj1 = { scrollable: null, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, data: null, renderItem: null, ItemSeparatorComponent: null, accessibilityRole: "radiogroup" };
     obj1[0] = tmp13;
@@ -161,5 +161,5 @@ export default function AppLauncherChoicesActionSheet(option) {
   }
   items3[1] = tmp20;
   obj[4] = items3;
-  return closure_8(option(11438).AppLauncherCommandOptionActionSheet, obj);
+  return closure_8(option(11472).AppLauncherCommandOptionActionSheet, obj);
 };

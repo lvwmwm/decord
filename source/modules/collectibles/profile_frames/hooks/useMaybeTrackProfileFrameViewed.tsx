@@ -1,10 +1,10 @@
-// Module ID: 8704
-// Function ID: 8705
+// Module ID: 8733
+// Function ID: 8734
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: [19, 6895, 647, 8683, 2]
+// Dependencies: [19, 6922, 647, 8712, 2]
 // Exports: default
 
-// Module 8704 (useMaybeTrackProfileFrameViewed)
+// Module 8733 (useMaybeTrackProfileFrameViewed)
 import noop from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 

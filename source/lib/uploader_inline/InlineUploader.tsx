@@ -1,9 +1,9 @@
-// Module ID: 8055
-// Function ID: 8056
+// Module ID: 8196
+// Function ID: 8197
 // Name: fromBlob
-// Dependencies: [5, 4830, 8056, 2]
+// Dependencies: [5, 4860, 8197, 2]
 
-// Module 8055 (fromBlob)
+// Module 8196 (fromBlob)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -19,7 +19,7 @@ class InlineUploader {
 }
 const prototype = InlineUploader.prototype;
 InlineUploader["fromBlob"] = function fromBlob(surface) {
-  let obj = importDefault(4830);
+  let obj = importDefault(4860);
   const fromBlobResult = obj.fromBlob(arg1);
   const tmp = InlineUploader;
   if (typeof InlineUploader !== "function") {
@@ -98,7 +98,7 @@ InlineUploader["buildHeadersForMd5"] = function buildHeadersForMd5(originalMd5, 
   if (null != tmp) {
     const obj = {};
     const merged = Object.assign(buildHeadersForMd5);
-    obj[require(8056) /* ORIGINAL_MD5_HEADER */.ORIGINAL_MD5_HEADER] = tmp;
+    obj[require(8197) /* ORIGINAL_MD5_HEADER */.ORIGINAL_MD5_HEADER] = tmp;
     tmp2 = obj;
   }
   return tmp2;

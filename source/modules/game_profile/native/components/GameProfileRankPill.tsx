@@ -1,10 +1,10 @@
-// Module ID: 9203
-// Function ID: 9204
+// Module ID: 9232
+// Function ID: 9233
 // Name: GameProfileRankPill
-// Dependencies: [19, 17, 21, 4255, 712, 7619, 4251, 1236, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 7647, 4281, 1236, 2]
 // Exports: default
 
-// Module 9203 (GameProfileRankPill)
+// Module 9232 (GameProfileRankPill)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function GameProfileRankPill(arg0) {
   obj = { style: tmp.gameRankPill, children: null };
   obj = { size: "xxs", color: null };
   obj[1] = importDefault(712).colors.BLACK;
-  const items = [callback(require(7619) /* TrophyIcon */.TrophyIcon, obj), ];
+  const items = [callback(require(7647) /* TrophyIcon */.TrophyIcon, obj), ];
   const intl = require(1236) /* getSystemLocale */.intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = require(1236) /* getSystemLocale */.t;
@@ -46,7 +46,7 @@ export default function GameProfileRankPill(arg0) {
     obj2[0] = rank;
     str = formatToPlainString(t.ehZXlZ, obj2);
   }
-  items[1] = callback(require(4251) /* Text */.Text, { variant: "text-xs/bold", color: "text-overlay-dark", children: str.toUpperCase() });
+  items[1] = callback(require(4281) /* Text */.Text, { variant: "text-xs/bold", color: "text-overlay-dark", children: str.toUpperCase() });
   obj[1] = items;
   obj[1] = closure_5(View, obj);
   return callback(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 9806
-// Function ID: 9807
+// Module ID: 9837
+// Function ID: 9838
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4255, 712, 4445, 4797, 1236, 5255, 4767, 4251, 4755, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4475, 4827, 1236, 5309, 4797, 4281, 4785, 2]
 // Exports: default
 
-// Module 9806 (ForumComposerHeader)
+// Module 9837 (ForumComposerHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,16 +50,16 @@ export default function ForumComposerHeader(height) {
   obj[4] = function onPress() {
     return callback(false);
   };
-  obj[5] = callback(require(5255) /* XSmallIcon */.XSmallIcon, {});
-  const items = [callback(require(4797) /* PressableBase */.PressableOpacity, obj), , , ];
+  obj[5] = callback(require(5309) /* XSmallIcon */.XSmallIcon, {});
+  const items = [callback(require(4827) /* PressableBase */.PressableOpacity, obj), , , ];
   obj = { style: tmp.headerBarContent, children: null };
-  const items1 = [callback(require(4767) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
+  const items1 = [callback(require(4797) /* ForumIcon */.ForumIcon, { size: "sm" }), ];
   const obj1 = { style: tmp.headerBarText, children: null };
   if ("" === title) {
     const intl2 = tmp7(1236).intl;
     title = intl2.string(tmp7(1236).t["7EjFCk"]);
   }
-  const items2 = [callback(require(4251) /* Text */.Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), callback(require(4251) /* Text */.Text, { variant: "text-xs/medium", color: "text-default", children: importDefault(4445)(channel) })];
+  const items2 = [callback(require(4281) /* Text */.Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), callback(require(4281) /* Text */.Text, { variant: "text-xs/medium", color: "text-default", children: importDefault(4475)(channel) })];
   obj1[1] = items2;
   items1[1] = closure_6(closure_4, obj1);
   obj[1] = items1;
@@ -75,8 +75,8 @@ export default function ForumComposerHeader(height) {
     obj2[1] = intl3.string(tmp7(1236).t.yR6HwZ);
     obj2[2] = tmp.button;
     obj2[3] = onGuidelinesPress;
-    obj2[4] = tmp6(tmp7(4755).BookCheckIcon, {});
-    tmp6Result = tmp6(tmp7(4797).PressableOpacity, obj2);
+    obj2[4] = tmp6(tmp7(4785).BookCheckIcon, {});
+    tmp6Result = tmp6(tmp7(4827).PressableOpacity, obj2);
   }
   items[2] = tmp6Result;
   items[3] = callback(closure_4, { style: tmp.headerBarSeparator });

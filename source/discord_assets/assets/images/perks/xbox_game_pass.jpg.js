@@ -1,9 +1,9 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 12623
+// Function ID: 12624
 // Name: metadata
 // Dependencies: [2]
 
-// Module 12586 (metadata)
+// Module 12623 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/images/perks/xbox_game_pass.jpg.js");
 
 export default "https://cdn.discordapp.com/assets/content/79aac4ff232094e06b30bbb877d1757eb6e98e998c8d6c027f4f2594617a215e.jpg";

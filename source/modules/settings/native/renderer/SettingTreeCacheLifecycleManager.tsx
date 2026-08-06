@@ -1,9 +1,9 @@
-// Module ID: 16418
-// Function ID: 16419
+// Module ID: 16458
+// Function ID: 16459
 // Name: prototype
-// Dependencies: [5214, 14802, 2]
+// Dependencies: [5244, 14840, 2]
 
-// Module 16418 (prototype)
+// Module 16458 (prototype)
 import "initialize";
 
 let prototype = function SettingTreeManagerLifecycleManager() {

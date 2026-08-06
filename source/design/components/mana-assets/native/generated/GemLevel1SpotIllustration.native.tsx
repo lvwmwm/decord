@@ -1,10 +1,10 @@
-// Module ID: 6284
-// Function ID: 6285
+// Module ID: 6311
+// Function ID: 6312
 // Name: GemLevel1SpotIllustration
-// Dependencies: [21, 5221, 6285, 2]
+// Dependencies: [21, 5251, 6312, 2]
 // Exports: GemLevel1SpotIllustration
 
-// Module 6284 (GemLevel1SpotIllustration)
+// Module 6311 (GemLevel1SpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLevel1SpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GemLevel1SpotIllustration = function GemLevel1SpotIllustration(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6285);
+  obj[0] = importDefault(6312);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GemLevel1SpotIllustration = function GemLevel1SpotIllustration(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
 };

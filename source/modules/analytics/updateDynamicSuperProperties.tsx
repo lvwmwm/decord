@@ -1,14 +1,14 @@
-// Module ID: 16199
-// Function ID: 16200
+// Module ID: 16239
+// Function ID: 16240
 // Name: updateDynamicSuperProperties
-// Dependencies: [6817, 503, 10356, 2]
+// Dependencies: [6844, 503, 10387, 2]
 // Exports: updateDynamicSuperProperties
 
-// Module 16199 (updateDynamicSuperProperties)
-let result = require("module_10356").fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");
+// Module 16239 (updateDynamicSuperProperties)
+let result = require("module_10387").fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");
 
 export const updateDynamicSuperProperties = function updateDynamicSuperProperties() {
-  let obj = require(6817) /* trackHeartbeat */;
+  let obj = require(6844) /* trackHeartbeat */;
   const activeSessionUnsafe = obj.getActiveSessionUnsafe();
   const superProperties = require(503) /* encodeProperties */.getSuperProperties();
   let uuid;
@@ -25,7 +25,7 @@ export const updateDynamicSuperProperties = function updateDynamicSuperPropertie
   }
   const obj2 = require(503) /* encodeProperties */;
   const tmp = require;
-  const state = importDefault(10356).getState();
+  const state = importDefault(10387).getState();
   let client_app_state;
   if (superProperties != null) {
     client_app_state = superProperties.client_app_state;

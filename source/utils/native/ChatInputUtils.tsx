@@ -1,10 +1,10 @@
-// Module ID: 4114
-// Function ID: 4115
+// Module ID: 4143
+// Function ID: 4144
 // Name: getBestActiveInput
-// Dependencies: [4115, 1844, 4121, 1579, 1478, 4122, 2]
+// Dependencies: [4144, 1872, 4150, 1607, 1478, 4151, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4114 (getBestActiveInput)
+// Module 4143 (getBestActiveInput)
 function getBestActiveInput() {
   let str;
   if (0 !== map1.size) {
@@ -228,19 +228,19 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
 };
 export { getBestActiveInput };
 export const dismissKeyboard = function dismissKeyboard() {
-  let obj = require(1844) /* dismissGlobalKeyboard */;
+  let obj = require(1872) /* dismissGlobalKeyboard */;
   const result = obj.dismissGlobalKeyboard();
   const obj2 = getBestActiveInput();
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  let tmpResult = tmp(4121);
+  let tmpResult = tmp(4150);
   const keyboardType = tmpResult.getKeyboardType();
-  if (keyboardType !== require(1579) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
+  if (keyboardType !== require(1607) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     tmpResult = tmp(1478);
     obj = { type: null };
-    obj[0] = tmp(1579).KeyboardTypes.SYSTEM;
+    obj[0] = tmp(1607).KeyboardTypes.SYSTEM;
     tmpResult.setKeyboardType(obj);
   }
-  const result1 = require(4122) /* zustandStore */.closePortalKeyboardRequest();
+  const result1 = require(4151) /* zustandStore */.closePortalKeyboardRequest();
 };

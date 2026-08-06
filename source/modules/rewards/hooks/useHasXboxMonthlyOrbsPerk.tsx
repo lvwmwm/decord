@@ -1,10 +1,10 @@
-// Module ID: 12870
-// Function ID: 12871
+// Module ID: 12907
+// Function ID: 12908
 // Name: hasCrepeMonthlyOrbsPerk
-// Dependencies: [1874, 1876, 3901, 1890, 1892, 589, 2]
+// Dependencies: [1903, 1905, 3930, 1919, 1921, 589, 2]
 // Exports: hasCrepeMonthlyOrbsPerk, useHasXboxMonthlyOrbsPerk
 
-// Module 12870 (hasCrepeMonthlyOrbsPerk)
+// Module 12907 (hasCrepeMonthlyOrbsPerk)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -18,14 +18,14 @@ export const hasCrepeMonthlyOrbsPerk = function hasCrepeMonthlyOrbsPerk(currentU
       if (currentUser != null) {
         perks = currentUser.perks;
       }
-      const perkSource = tmp2(1890).getPerkSource(perks, tmp2(1892).Perk.MONTHLY_ORBS);
+      const perkSource = tmp2(1919).getPerkSource(perks, tmp2(1921).Perk.MONTHLY_ORBS);
       let hasItem = null != perkSource;
       if (hasItem) {
-        hasItem = perkSource.includes(tmp2(1892).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+        hasItem = perkSource.includes(tmp2(1921).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       }
       return hasItem;
     }
-    obj2 = require(3901) /* getPremiumPlanItem */;
+    obj2 = require(3930) /* getPremiumPlanItem */;
   }
   return false;
 };
@@ -35,18 +35,18 @@ export const useHasXboxMonthlyOrbsPerk = function useHasXboxMonthlyOrbsPerk() {
   const obj = require(589) /* initialize */;
   let flag = false;
   if (obj2.canUseMonthlyOrbs(stateFromStores)) {
-    let tmpResult = tmp(3901);
+    let tmpResult = tmp(3930);
     flag = false;
     if (!tmpResult.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2)) {
-      tmpResult = tmp(1890);
+      tmpResult = tmp(1919);
       let perks;
       if (stateFromStores != null) {
         perks = stateFromStores.perks;
       }
-      const perkSource = tmpResult.getPerkSource(perks, tmp(1892).Perk.MONTHLY_ORBS);
+      const perkSource = tmpResult.getPerkSource(perks, tmp(1921).Perk.MONTHLY_ORBS);
       let hasItem = null != perkSource;
       if (hasItem) {
-        hasItem = perkSource.includes(tmp(1892).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+        hasItem = perkSource.includes(tmp(1921).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       }
       flag = hasItem;
     }

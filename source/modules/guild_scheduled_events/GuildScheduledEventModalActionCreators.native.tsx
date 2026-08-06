@@ -1,10 +1,10 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8872
+// Function ID: 8873
 // Name: openGuildEventDetails
-// Dependencies: [5, 1378, 8844, 4223, 8845, 1959, 8836, 9041, 2]
+// Dependencies: [5, 1378, 8873, 4253, 8874, 1988, 8865, 9070, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8843 (openGuildEventDetails)
+// Module 8872 (openGuildEventDetails)
 import asyncRequireImpl from "asyncRequireImpl";
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH";
 import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY";
@@ -17,14 +17,14 @@ function openGuildEventDetails(arg0) {
   let recurrenceId;
   ({ event, recurrenceId } = arg0);
   ({ eventId, onClose } = arg0);
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId: null };
   if (recurrenceId == null) {
-    recurrenceId = require(8836) /* getRRule */.getNextRecurrenceIdInEvent(event);
-    const tmp2Result = require(8836) /* getRRule */;
+    recurrenceId = require(8865) /* getRRule */.getNextRecurrenceIdInEvent(event);
+    const tmp2Result = require(8865) /* getRRule */;
   }
   obj[3] = recurrenceId;
-  obj.openLazy(require(1959) /* asyncRequireImpl */(8845, dependencyMap.paths), closure_5, obj, "stack");
+  obj.openLazy(require(1988) /* asyncRequireImpl */(8874, dependencyMap.paths), closure_5, obj, "stack");
 }
 function _transitionToEventDetailsFromInvite() {
   const self = this;
@@ -119,7 +119,7 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
   return applyArgumentsResult;
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { channel };
-  obj.openLazy(require(1959) /* asyncRequireImpl */(9041, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(require(1988) /* asyncRequireImpl */(9070, dependencyMap.paths), closure_4, obj);
 };

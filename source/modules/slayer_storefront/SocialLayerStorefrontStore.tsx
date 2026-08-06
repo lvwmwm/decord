@@ -1,9 +1,9 @@
-// Module ID: 5744
-// Function ID: 5745
+// Module ID: 5771
+// Function ID: 5772
 // Name: handleUserSettingsStoreUpdate
-// Dependencies: [1946, 1218, 589, 709, 2]
+// Dependencies: [1975, 1218, 589, 709, 2]
 
-// Module 5744 (handleUserSettingsStoreUpdate)
+// Module 5771 (handleUserSettingsStoreUpdate)
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
@@ -117,8 +117,8 @@ prototype["getConfig"] = function getConfig() {
 prototype["getConfigForApplicationId"] = function getConfigForApplicationId(id) {
   return table8[id];
 };
-prototype["getApplicationIdFromDetectableId"] = function getApplicationIdFromDetectableId(applicationId) {
-  return table7[applicationId];
+prototype["getApplicationIdFromDetectableId"] = function getApplicationIdFromDetectableId(application_id) {
+  return table7[application_id];
 };
 prototype["getDetectableIdsToApplicationIds"] = function getDetectableIdsToApplicationIds() {
   return closure_19;

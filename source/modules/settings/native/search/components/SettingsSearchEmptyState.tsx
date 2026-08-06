@@ -1,8 +1,8 @@
-// Module ID: 14809
-// Function ID: 14810
-// Dependencies: [19, 17, 21, 4255, 3968, 1236, 8908, 4663, 4251, 2]
+// Module ID: 14847
+// Function ID: 14848
+// Dependencies: [19, 17, 21, 4285, 3997, 1236, 8937, 4693, 4281, 2]
 
-// Module 14809
+// Module 14847
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -16,23 +16,23 @@ let closure_6 = createCacheKey.createStyles({ container: { paddingTop: 24, justi
 const memoResult = importAllResult.memo(function SettingsSearchEmptyState() {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
-    const AccessibilityAnnouncer = callback(3968).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = callback(3997).AccessibilityAnnouncer;
     const intl = callback(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.zihbmv), "polite");
   }, []);
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(8908) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
+  const items = [callback(require(8937) /* getNoResultsAltSource */.NoResultsAlt, { resizeMode: "contain" }), ];
   obj = { style: tmp.textContainer, align: "center", justify: "center", children: null };
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.zihbmv);
-  const items1 = [callback(require(4251) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4281) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.XclvsB);
-  items1[1] = callback(require(4251) /* Text */.Text, obj1);
+  items1[1] = callback(require(4281) /* Text */.Text, obj1);
   obj[3] = items1;
-  items[1] = callback2(require(4663) /* Stack */.Stack, obj);
+  items[1] = callback2(require(4693) /* Stack */.Stack, obj);
   obj[1] = items;
   return callback2(View, obj);
 });

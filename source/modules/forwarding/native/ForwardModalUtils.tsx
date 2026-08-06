@@ -1,10 +1,10 @@
-// Module ID: 10121
-// Function ID: 10122
+// Module ID: 10152
+// Function ID: 10153
 // Name: FORWARD_MODAL_KEY
-// Dependencies: [19, 21, 10122, 10123, 10124, 1959, 4460, 10153, 4595, 2]
+// Dependencies: [19, 21, 10153, 10154, 10155, 1988, 4490, 10184, 4625, 2]
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal
 
-// Module 10121 (FORWARD_MODAL_KEY)
+// Module 10152 (FORWARD_MODAL_KEY)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -24,12 +24,12 @@ export const openForwardModal = function openForwardModal(arg0) {
     initialSelectedDestinations = [];
   }
   ({ forwardOptions, customSendHandler } = arg0);
-  require(10122) /* trackForwardStart */.trackForwardStart(message.channel_id, message.id, source);
-  const obj = require(10122) /* trackForwardStart */;
-  importDefault(10123)(require(1959) /* asyncRequireImpl */(10124, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
+  require(10153) /* trackForwardStart */.trackForwardStart(message.channel_id, message.id, source);
+  const obj = require(10153) /* trackForwardStart */;
+  importDefault(10154)(require(1988) /* asyncRequireImpl */(10155, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
 };
 export const closeForwardModal = function closeForwardModal() {
-  importDefault(4460).popWithKey(c5);
+  importDefault(4490).popWithKey(c5);
 };
 export const showForwardFailedAlertModal = function showForwardFailedAlertModal(arg0) {
   let failedDestinations;
@@ -37,5 +37,5 @@ export const showForwardFailedAlertModal = function showForwardFailedAlertModal(
   let message;
   ({ message, failedDestinations, forwardOptions } = arg0);
   const lazyResult = React.lazy(() => callback(paths[5])(paths[7], paths.paths));
-  require(4595) /* useAlertStore */.openAlert("forward-failed-alert-modal", <lazyResult message={message} failedDestinations={failedDestinations} forwardOptions={forwardOptions} />);
+  require(4625) /* useAlertStore */.openAlert("forward-failed-alert-modal", <lazyResult message={message} failedDestinations={failedDestinations} forwardOptions={forwardOptions} />);
 };

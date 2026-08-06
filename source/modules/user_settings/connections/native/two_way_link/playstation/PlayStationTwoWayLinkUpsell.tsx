@@ -1,10 +1,10 @@
-// Module ID: 14092
-// Function ID: 14093
+// Module ID: 14129
+// Function ID: 14130
 // Name: PlayStationTwoWayLinkUpsell
-// Dependencies: [19, 676, 21, 4255, 1945, 14090, 1236, 5221, 14093, 1358, 10444, 2]
+// Dependencies: [19, 676, 21, 4285, 1974, 14127, 1236, 5251, 14130, 1358, 10475, 2]
 // Exports: PlayStationTwoWayLinkUpsell
 
-// Module 14092 (PlayStationTwoWayLinkUpsell)
+// Module 14129 (PlayStationTwoWayLinkUpsell)
 import "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ let closure_7 = createCacheKey.createStyles({ upsellImage: { alignSelf: "center"
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationTwoWayLinkUpsell.tsx");
 
 export const PlayStationTwoWayLinkUpsell = function PlayStationTwoWayLinkUpsell() {
-  let obj = importDefault(1945);
+  let obj = importDefault(1974);
   const articleURL = obj.getArticleURL(constants.PS_CONNECTION);
   obj = { title: null, body: null, img: null, newIndicatorDismissibleContent: null, onPress: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -28,12 +28,12 @@ export const PlayStationTwoWayLinkUpsell = function PlayStationTwoWayLinkUpsell(
   obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.lTZBit, { help_article: articleURL });
   obj = { style: callback().upsellImage, source: null, resizeMode: "contain" };
   const tmp = callback();
-  obj[1] = importDefault(14093);
-  obj[2] = jsx(importDefault(5221), { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  obj[1] = importDefault(14130);
+  obj[2] = jsx(importDefault(5251), { style: callback().upsellImage, source: null, resizeMode: "contain" });
   obj[3] = require(1358) /* DismissibleContent */.DismissibleContent.PS_ONE_WAY_RECONNECT;
   obj[4] = function onPress() {
     const items = [constants.RELINK_UPSELL];
     return callback(table[10]).showModal(items, constants2.PLAYSTATION);
   };
-  return jsx(require(14090) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
+  return jsx(require(14127) /* OneWayToTwoWayNewTag */.OneWayToTwoWayLinkUpsell, { style: callback().upsellImage, source: null, resizeMode: "contain" });
 };

@@ -1,9 +1,9 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11696
+// Function ID: 11697
 // Name: set
-// Dependencies: [589, 10640, 709, 2]
+// Dependencies: [589, 10695, 709, 2]
 
-// Module 11662 (set)
+// Module 11696 (set)
 import { DeviceSettingsStore } from "initialize";
 import set from "dispatcher";
 
@@ -43,7 +43,7 @@ prototype["initialize"] = function initialize(promptLastSeen) {
   HermesBuiltin.arraySpread(eligiblePromptTypes, tmp8);
   obj.eligiblePromptTypes = new Set(items.filter((arg0) => arg0 !== constants2.POST_REACTION_BANNER));
   const set = new Set(items.filter((arg0) => arg0 !== constants2.POST_REACTION_BANNER));
-  importDefault(10640).checkPermissions((sound) => {
+  importDefault(10695).checkPermissions((sound) => {
     let _alert;
     let badge;
     ({ alert: _alert, badge } = sound);

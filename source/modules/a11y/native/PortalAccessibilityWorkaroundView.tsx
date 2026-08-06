@@ -1,10 +1,10 @@
-// Module ID: 11876
-// Function ID: 11877
+// Module ID: 11910
+// Function ID: 11911
 // Name: PortalAccessibilityWorkaroundView
-// Dependencies: [19, 17, 21, 4119, 11877, 2]
+// Dependencies: [19, 17, 21, 4148, 11911, 2]
 // Exports: default
 
-// Module 11876 (PortalAccessibilityWorkaroundView)
+// Module 11910 (PortalAccessibilityWorkaroundView)
 import "noop";
 import { View as _default } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,7 +17,7 @@ if (isFabric.isIosFabric()) {
 const result = require("jsxProd").fileFinishedImporting("modules/a11y/native/PortalAccessibilityWorkaroundView.tsx");
 
 export default function PortalAccessibilityWorkaroundView(arg0) {
-  let obj = require(4119) /* isFabric */;
+  let obj = require(4148) /* isFabric */;
   obj = null;
   if (obj.isIosFabric()) {
     obj = { accessibilityLabel: " ", accessible: false };

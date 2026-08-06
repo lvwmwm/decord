@@ -1,9 +1,9 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7159
+// Function ID: 7160
 // Name: handleInit
-// Dependencies: [7133, 676, 500, 1906, 4449, 589, 709, 2]
+// Dependencies: [7160, 676, 500, 1935, 4479, 589, 709, 2]
 
-// Module 7132 (handleInit)
+// Module 7159 (handleInit)
 import handleInit from "handleInit";
 import { AnalyticEvents } from "ME";
 import set from "set";
@@ -304,7 +304,7 @@ set = {
         if (activeOption != null) {
           type = activeOption.type;
         }
-        tmp29 = type === _require(1906).ApplicationCommandOptionType.INTEGER;
+        tmp29 = type === _require(1935).ApplicationCommandOptionType.INTEGER;
       }
       _require = tmp29;
       let mapped;
@@ -341,7 +341,7 @@ set = {
       obj = { duration_ms: null, error: false, num_options: null };
       obj[0] = num;
       obj[2] = mapped.length;
-      _require(4449).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+      _require(4479).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
       map2.delete(nonce);
       const optionNameToAutocompleteQueries3 = value.optionNameToAutocompleteQueries;
       const value2 = optionNameToAutocompleteQueries3.get(value.name);
@@ -378,7 +378,7 @@ set = {
         }
         let obj = { duration_ms: null, error: true };
         obj[0] = num;
-        require(4449) /* collectGuildAnalyticsMetadata */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+        require(4479) /* collectGuildAnalyticsMetadata */.trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
         map2.delete(nonce);
         const channelId = value.channelId;
         if (!map1.has(channelId)) {

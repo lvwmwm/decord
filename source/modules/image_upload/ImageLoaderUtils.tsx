@@ -1,7 +1,7 @@
 // Module ID: 1450
 // Function ID: 1451
 // Name: handleImageLoad
-// Dependencies: [32, 5, 676, 1451, 1386, 584, 1454, 1464, 1467, 1471, 1848, 12, 1849, 2]
+// Dependencies: [32, 5, 676, 1451, 1386, 584, 1454, 1464, 1467, 1471, 1876, 12, 1877, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
 // Module 1450 (handleImageLoad)
@@ -104,9 +104,9 @@ function getSrcWithWidthAndHeight(quality) {
           obj[1] = height;
           obj[2] = sourceWidth;
           obj[3] = sourceHeight;
-          obj[4] = tmp15(1848).ATTACHMENT_LADDER_MAX_UPSCALE;
-          let size = tmp15(1848).snapAttachmentDimensions(obj);
-          const tmp15Result = tmp15(1848);
+          obj[4] = tmp15(1876).ATTACHMENT_LADDER_MAX_UPSCALE;
+          let size = tmp15(1876).snapAttachmentDimensions(obj);
+          const tmp15Result = tmp15(1876);
         } else {
           size = { width: null, height: null };
           size[0] = width;
@@ -295,7 +295,7 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = outer1_4(/* F102619 */ function() { ... });
+                            image.onerror = outer1_4(/* F102865 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });
@@ -452,6 +452,6 @@ export const getImageSrc = function getImageSrc(format) {
     const _Math4 = Math;
     bound1 = Math.min(rounded1, maxHeight);
   }
-  const tmp10 = importDefault(1849)();
+  const tmp10 = importDefault(1877)();
   return getSrcWithWidthAndHeight({ src: format.src, sourceWidth: width, sourceHeight: height, targetWidth: bound * tmp10, targetHeight: bound1 * tmp10, format, quality, animated: flag, srcIsAnimated: flag2 });
 };

@@ -1,12 +1,12 @@
-// Module ID: 11919
-// Function ID: 11920
+// Module ID: 11953
+// Function ID: 11954
 // Name: _uploadContacts
-// Dependencies: [5, 17, 4949, 11918, 11917, 676, 501, 5079, 503, 709, 11920, 3928, 1208, 589, 1384, 1945, 3952, 4460, 2]
+// Dependencies: [5, 17, 4979, 11952, 11951, 676, 501, 5109, 503, 709, 11954, 3957, 1208, 589, 1384, 1974, 3981, 4490, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 11919 (_uploadContacts)
+// Module 11953 (_uploadContacts)
 import closure_3 from "ME";
-import { NativeModules } from "module_4460";
+import { NativeModules } from "module_4490";
 import set from "set";
 import setStoredContacts from "setStoredContacts";
 import ContactSyncLandingPage from "ContactSyncLandingPage";
@@ -38,7 +38,7 @@ function _uploadContacts() {
       yield "PX_8";
       const _JSON = JSON;
       dependencyMap = JSON.parse(callback);
-      const obj7 = flag(5079);
+      const obj7 = flag(5109);
       const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
       obj2[0] = constants2.CONNECTION_SYNC_CONTACTS;
       const obj3 = { friend_list_entries: null, background: null, allowed_in_suggestions: null, include_mutual_friends_count: false };
@@ -129,7 +129,7 @@ export const uploadContacts = function uploadContacts(c3, arg1) {
   return applyArgumentsResult;
 };
 export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
-  let obj = importDefault(5079);
+  let obj = importDefault(5109);
   obj = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj, trackedActionData: null, rejectWithError: false };
   obj = { user_ids, token: bulkAddToken };
   obj[2] = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
@@ -139,14 +139,14 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(11920) /* _requestAndSyncContacts */;
+  let obj = require(11954) /* _requestAndSyncContacts */;
   const result = obj.removeLastUserContactsUpload();
-  const ContactSyncEnabled = require(3928) /* explicitContentFromProto */.ContactSyncEnabled;
+  const ContactSyncEnabled = require(3957) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: null, rejectWithError: false };
   obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE };
   obj[2] = obj;
-  return importDefault(5079).delete(obj);
+  return importDefault(5109).delete(obj);
 };
 export const getImageForContactId = function getImageForContactId(closure_0, arg1) {
   let DCDContactSyncManager = NativeModules.DCDContactSyncManager;
@@ -221,7 +221,7 @@ export const useContactSyncEnabled = function useContactSyncEnabled() {
   });
 };
 export const useContactSyncUserIsDiscoverable = function useContactSyncUserIsDiscoverable() {
-  const FriendDiscoverySettings = require(3928) /* explicitContentFromProto */.FriendDiscoverySettings;
+  const FriendDiscoverySettings = require(3957) /* explicitContentFromProto */.FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
   let obj = require(1384) /* hasFlag */;
   let hasFlagResult = obj.hasFlag(setting, constants3.FIND_BY_PHONE);
@@ -241,12 +241,12 @@ export const isContactSyncEnabled = function isContactSyncEnabled(contactSyncAcc
   return tmp;
 };
 export const getOpenLearnMoreUrl = function getOpenLearnMoreUrl() {
-  return importDefault(1945).getArticleURL(constants4.CONTACT_SYNC);
+  return importDefault(1974).getArticleURL(constants4.CONTACT_SYNC);
 };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
-  const obj = importDefault(3952);
-  obj.openURL(importDefault(1945).getArticleURL(constants4.CONTACT_SYNC));
+  const obj = importDefault(3981);
+  obj.openURL(importDefault(1974).getArticleURL(constants4.CONTACT_SYNC));
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
-  importDefault(4460).popWithKey(closure_9);
+  importDefault(4490).popWithKey(closure_9);
 };

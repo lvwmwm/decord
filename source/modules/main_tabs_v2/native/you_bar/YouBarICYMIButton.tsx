@@ -1,8 +1,8 @@
-// Module ID: 15360
-// Function ID: 15361
-// Dependencies: [19, 14217, 21, 4255, 712, 15361, 15362, 12170, 4107, 1236, 2]
+// Module ID: 15398
+// Function ID: 15399
+// Dependencies: [19, 14254, 21, 4285, 712, 15399, 15400, 12204, 4136, 1236, 2]
 
-// Module 15360
+// Module 15398
 import { YOU_BAR_BUTTON_ICON_SIZE } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -23,8 +23,8 @@ const memoResult = require("noop").memo(function YouBarICYMIButton(hasNameplate)
     str = "white";
   }
   obj[2] = str;
-  obj[1] = jsx(require(12170) /* FlashIcon */.FlashIcon, { size: "custom", style: tmp.icon, color: null });
-  obj[2] = importDefault(15361)().showDot;
+  obj[1] = jsx(require(12204) /* FlashIcon */.FlashIcon, { size: "custom", style: tmp.icon, color: null });
+  obj[2] = importDefault(15399)().showDot;
   obj[3] = tmp.badge;
   obj[4] = function onPress() {
     let obj = callback(table[8]);
@@ -37,7 +37,7 @@ const memoResult = require("noop").memo(function YouBarICYMIButton(hasNameplate)
   };
   const intl = tmp5(1236).intl;
   obj[5] = intl.string(require(1236) /* getSystemLocale */.t["jnXV/V"]);
-  return jsx(importDefault(15362), { size: "custom", style: tmp.icon, color: null });
+  return jsx(importDefault(15400), { size: "custom", style: tmp.icon, color: null });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/YouBarICYMIButton.tsx");
 

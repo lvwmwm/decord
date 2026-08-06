@@ -1,10 +1,10 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15227
+// Function ID: 15228
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 676, 1379, 9681, 21, 4255, 712, 1222, 11637, 1236, 13069, 2]
+// Dependencies: [19, 676, 1379, 9712, 21, 4285, 712, 1222, 11671, 1236, 13106, 2]
 // Exports: default
 
-// Module 15188 (GuildHomeChannelRow)
+// Module 15227 (GuildHomeChannelRow)
 import noop from "noop";
 import { Routes } from "ME";
 import { StaticChannelRoute } from "set";
@@ -26,7 +26,7 @@ export default function GuildHomeChannelRow(selected) {
   const callback = React.useCallback(() => {
     id(outer1_2[7]).transitionTo(outer1_4.CHANNEL(id, outer1_5.GUILD_HOME));
   }, items);
-  const ChannelModes = id(11637).ChannelModes;
+  const ChannelModes = id(11671).ChannelModes;
   if (selected) {
     let DEFAULT = ChannelModes.SELECTED;
     let tmp5 = tmp3;
@@ -44,9 +44,9 @@ export default function GuildHomeChannelRow(selected) {
   const intl2 = tmp5(1236).intl;
   obj[0] = intl2.string(tmp5(1236).t.VbpLyU);
   obj[1] = DEFAULT;
-  obj[6] = jsx(tmp5(11637).BaseChannelName, { name: null, mode: null });
+  obj[6] = jsx(tmp5(11671).BaseChannelName, { name: null, mode: null });
   obj = { mode: DEFAULT, IconComponent: null };
-  obj[1] = tmp5(13069).SignPostIcon;
-  obj[7] = jsx(tmp5(11637).BaseChannelIcon, { mode: DEFAULT, IconComponent: null });
-  return jsx(importDefault(11637), { mode: DEFAULT, IconComponent: null });
+  obj[1] = tmp5(13106).SignPostIcon;
+  obj[7] = jsx(tmp5(11671).BaseChannelIcon, { mode: DEFAULT, IconComponent: null });
+  return jsx(importDefault(11671), { mode: DEFAULT, IconComponent: null });
 };

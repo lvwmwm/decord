@@ -1,9 +1,9 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7669
+// Function ID: 7670
 // Name: componentDidMount
-// Dependencies: [17, 7642, 2]
+// Dependencies: [17, 7670, 2]
 
-// Module 7641 (componentDidMount)
+// Module 7669 (componentDidMount)
 import { StatusBar } from "get ActivityIndicator";
 
 class StatusBarAndroid extends StatusBar {
@@ -15,13 +15,13 @@ class StatusBarAndroid extends StatusBar {
 }
 const prototype = StatusBarAndroid.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
-  this._stackEntry = importDefault(7642).pushStackEntry(this.props);
+  this._stackEntry = importDefault(7670).pushStackEntry(this.props);
 };
 prototype["componentDidUpdate"] = function componentDidUpdate() {
-  this._stackEntry = importDefault(7642).replaceStackEntry(this._stackEntry, this.props);
+  this._stackEntry = importDefault(7670).replaceStackEntry(this._stackEntry, this.props);
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
-  importDefault(7642).popStackEntry(this._stackEntry);
+  importDefault(7670).popStackEntry(this._stackEntry);
   this._stackEntry = null;
 };
 prototype["render"] = function render() {

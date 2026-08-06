@@ -1,10 +1,10 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12974
+// Function ID: 12975
 // Name: useSelectedActiveStream
-// Dependencies: [4268, 4274, 589, 2]
+// Dependencies: [4298, 4304, 589, 2]
 // Exports: default
 
-// Module 12937 (useSelectedActiveStream)
+// Module 12974 (useSelectedActiveStream)
 import getParticipants from "getParticipants";
 import reset from "reset";
 

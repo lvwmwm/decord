@@ -1,10 +1,10 @@
-// Module ID: 13069
-// Function ID: 13070
+// Module ID: 13106
+// Function ID: 13107
 // Name: SignPostIcon
-// Dependencies: [19, 21, 712, 3958, 13070, 2]
+// Dependencies: [19, 21, 712, 3987, 13107, 2]
 // Exports: SignPostIcon
 
-// Module 13069 (SignPostIcon)
+// Module 13106 (SignPostIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const SignPostIcon = function SignPostIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13070) /* registerAsset */;
+  obj[0] = require(13107) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

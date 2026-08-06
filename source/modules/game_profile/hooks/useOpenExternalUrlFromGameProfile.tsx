@@ -1,10 +1,10 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9198
+// Function ID: 9199
 // Name: _getDeepLinkUrl
-// Dependencies: [32, 5, 19, 9170, 9171, 3946, 2]
+// Dependencies: [32, 5, 19, 9199, 9200, 3975, 2]
 // Exports: default
 
-// Module 9169 (_getDeepLinkUrl)
+// Module 9198 (_getDeepLinkUrl)
 import _slicedToArray from "_slicedToArray";
 import _openURL from "_openURL";
 import noop from "noop";
@@ -100,7 +100,7 @@ function _getDeepLinkUrl() {
                 const _decodeURIComponent = decodeURIComponent;
                 c4 = 3;
                 obj = { value: null, done: true };
-                obj[0] = lib(9171).buildXboxGamePassStoreDeepLinkUrl(decodeURIComponent(dependencyMap));
+                obj[0] = lib(9200).buildXboxGamePassStoreDeepLinkUrl(decodeURIComponent(dependencyMap));
                 return obj;
               }
               const str = lib.pathname;
@@ -108,12 +108,12 @@ function _getDeepLinkUrl() {
             c4 = 3;
             return { value: null, done: true };
           }
-          if (lib.hostname === lib(9171).XBOX_GAME_PASS_STORE_HOSTNAME) {
-            obj4 = callback(9170);
+          if (lib.hostname === lib(9200).XBOX_GAME_PASS_STORE_HOSTNAME) {
+            obj4 = callback(9199);
             c3 = 2;
             c4 = 1;
             const obj5 = { value: null, done: false };
-            obj5[0] = obj4.isProtocolRegistered(lib(9171).XBOX_GAME_PASS_PROTOCOL);
+            obj5[0] = obj4.isProtocolRegistered(lib(9200).XBOX_GAME_PASS_PROTOCOL);
             return obj5;
           }
         } catch (tmp37) {

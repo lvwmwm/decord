@@ -1,10 +1,10 @@
-// Module ID: 10730
-// Function ID: 10731
+// Module ID: 10785
+// Function ID: 10786
 // Name: handleKrispLinkPressed
-// Dependencies: [19, 17, 1302, 676, 21, 1945, 698, 1236, 3952, 589, 4101, 10731, 10732, 4251, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 1974, 698, 1236, 3981, 589, 4130, 10786, 10787, 4281, 2]
 // Exports: default
 
-// Module 10730 (handleKrispLinkPressed)
+// Module 10785 (handleKrispLinkPressed)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -22,7 +22,7 @@ let metroImportAll;
 let unpackModuleId;
 const require = arg1;
 function handleKrispLinkPressed() {
-  let obj = importDefault(1945);
+  let obj = importDefault(1974);
   const articleURL = obj.getArticleURL(constants4.NOISE_SUPPRESSION);
   obj = { text: null, href: null, location: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -32,7 +32,7 @@ function handleKrispLinkPressed() {
   obj[2] = obj;
   importDefault(698).track(constants.NOISE_CANCELLATION_LINK_CLICKED, obj);
   const obj2 = importDefault(698);
-  importDefault(3952).openURL(articleURL);
+  importDefault(3981).openURL(articleURL);
 }
 ({ Image: c3, View: c4, Pressable: c5 } = get_ActivityIndicator);
 ({ AnalyticEvents: error, AnalyticsPages: metroImportAll, AnalyticsSections: c9, HelpdeskArticles: c10 } = ME);
@@ -44,11 +44,11 @@ export default function KrispLogo() {
   let obj = require(589) /* initialize */;
   const items = [handleThemeChange];
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
-  let obj1 = require(4101) /* AccessibilityAnnouncer */;
+  let obj1 = require(4130) /* AccessibilityAnnouncer */;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10731);
+    let tmp4Result = tmp4(10786);
   } else {
-    tmp4Result = tmp4(10732);
+    tmp4Result = tmp4(10787);
   }
   obj = { style: closure_13.detailsView, children: null };
   obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };
@@ -62,7 +62,7 @@ export default function KrispLogo() {
   const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
   const intl3 = tmp(1236).intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[3] = callback(require(4251) /* Text */.Text, obj2);
+  obj1[3] = callback(require(4281) /* Text */.Text, obj2);
   items1[1] = callback(closure_5, obj1);
   obj[1] = items1;
   return callback2(closure_4, obj);

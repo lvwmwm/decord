@@ -1,10 +1,10 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11482
+// Function ID: 11483
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 4255, 712, 11441, 7749, 4251, 1297, 5309, 2]
+// Dependencies: [19, 21, 4285, 712, 11475, 7890, 4281, 1297, 5363, 2]
 // Exports: default
 
-// Module 11448 (AppLauncherSelectOptionFormRow)
+// Module 11482 (AppLauncherSelectOptionFormRow)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,7 +26,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
   ({ style, option, autoFocus } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(11441) /* useAnimationDelayedAutoFocus */;
+  let obj = require(11475) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
   obj = { start: true, end: true, style: items, label: null, subLabel: null, trailing: null };
   items = [createCacheKey().formRow, style];
@@ -41,7 +41,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   }
   obj[1] = str2;
   obj[3] = option.displayName;
-  obj[3] = jsx(require(4251) /* Text */.Text, { variant: str, color: null, lineClamp: 1, children: null });
+  obj[3] = jsx(require(4281) /* Text */.Text, { variant: str, color: null, lineClamp: 1, children: null });
   if (selected) {
     let fn = () => outer1_3(outer1_0(outer1_2[6]).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: closure_0 });
   } else {
@@ -52,9 +52,9 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   }
   obj[4] = fn;
   const obj1 = { source: null, size: null };
-  obj1[0] = unselectedSubLabel(5309);
+  obj1[0] = unselectedSubLabel(5363);
   obj1[1] = require(1297) /* Button */.IconSizes.SMALL_20;
   obj[5] = jsx(require(1297) /* Button */.Icon, { source: null, size: null });
   const merged1 = Object.assign(merged);
-  return jsx(require(7749) /* Form */.FormRow, { variant: str, color: null, lineClamp: 1, children: null });
+  return jsx(require(7890) /* Form */.FormRow, { variant: str, color: null, lineClamp: 1, children: null });
 };

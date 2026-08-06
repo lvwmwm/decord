@@ -1,10 +1,10 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12367
+// Function ID: 12368
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 12334, 3928, 589, 1351, 12335, 2]
+// Dependencies: [19, 12368, 3957, 589, 1351, 12369, 2]
 // Exports: default
 
-// Module 12333 (useApplicationWidgetConfigs)
+// Module 12367 (useApplicationWidgetConfigs)
 import noop from "noop";
 import updateApplicationConfigs from "updateApplicationConfigs";
 import { FetchState } from "updateApplicationConfigs";

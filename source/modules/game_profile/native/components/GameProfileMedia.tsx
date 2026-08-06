@@ -1,10 +1,10 @@
-// Module ID: 9204
-// Function ID: 9205
+// Module ID: 9233
+// Function ID: 9234
 // Name: ImageItem
-// Dependencies: [32, 19, 17, 505, 21, 4255, 712, 9172, 8738, 8764, 501, 1474, 9199, 1450, 4492, 2]
+// Dependencies: [32, 19, 17, 505, 21, 4285, 712, 9201, 8767, 8793, 501, 1474, 9228, 1450, 4522, 2]
 // Exports: default
 
-// Module 9204 (ImageItem)
+// Module 9233 (ImageItem)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

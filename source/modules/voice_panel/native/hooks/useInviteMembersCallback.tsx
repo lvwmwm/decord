@@ -1,10 +1,10 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16025
+// Function ID: 16026
 // Name: useInviteMembersCallback
-// Dependencies: [19, 1372, 676, 4106, 8959, 2]
+// Dependencies: [19, 1372, 676, 4135, 8988, 2]
 // Exports: useInviteMembersCallback
 
-// Module 15985 (useInviteMembersCallback)
+// Module 16025 (useInviteMembersCallback)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 1918
-// Function ID: 1919
+// Module ID: 1947
+// Function ID: 1948
 // Name: prefix
-// Dependencies: [1912, 1914, 2]
+// Dependencies: [1941, 1943, 2]
 
-// Module 1918 (prefix)
+// Module 1947 (prefix)
 let EntityDao;
 class EntityDao {
   constructor(arg0, arg1, arg2) {
@@ -35,7 +35,7 @@ prototype["withoutLogging"] = function withoutLogging() {
   const obj = Object.create(EntityDao.prototype);
   obj.originalPrefix = originalPrefix;
   const items = [originalPrefix];
-  const table = new require(1912) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  const table = new require(1941) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
   obj.table = table;
   return obj;
 };
@@ -138,7 +138,7 @@ class EntityDaoTransaction {
 }
 const prototype2 = EntityDaoTransaction.prototype;
 EntityDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
-  const tableTransaction = new require(1912) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  const tableTransaction = new require(1941) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
   if (typeof EntityDaoTransaction !== "function") {
     HermesBuiltin.throwTypeError();
   }
@@ -149,7 +149,7 @@ EntityDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransacti
 prototype2["put"] = function put(arg0) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   return transaction.put(EntityDao.cell(arg0, null), Replace);
@@ -157,7 +157,7 @@ prototype2["put"] = function put(arg0) {
 prototype2["putAll"] = function putAll(arr) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   return transaction.putAll(arr.map((arg0) => closure_2.cell(arg0, null)), Replace);

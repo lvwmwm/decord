@@ -1,8 +1,8 @@
-// Module ID: 10096
-// Function ID: 10097
-// Dependencies: [1593, 2, 10097]
+// Module ID: 10127
+// Function ID: 10128
+// Dependencies: [1621, 2, 10128]
 
-// Module 10096
+// Module 10127
 import importDefaultResult from "enforcing";
 
 const result = require("enforcing").setNavigationBarContrastEnforced(false);

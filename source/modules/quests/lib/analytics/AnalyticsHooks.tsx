@@ -1,10 +1,10 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 11090
+// Function ID: 11091
 // Name: useTrackQuestEventWithImpression
-// Dependencies: [19, 676, 10375, 7071, 7052, 7083, 7081, 7031, 514, 500, 7088, 5116, 7082, 698, 2]
+// Dependencies: [19, 676, 10406, 7098, 7079, 7110, 7108, 7058, 514, 500, 7115, 5146, 7109, 698, 2]
 // Exports: useBountyCarouselEmptyStateAnalytics, useQuestHomeEntrypointAnalyticsEvents, useQuestsEmbedFallbackAnalytics, useTrackAdContentClickedWithImpression, useTrackAdContentEventWithImpression, useTrackQuestContentClickedWithImpression, useTrackQuestEventWithImpression
 
-// Module 11058 (useTrackQuestEventWithImpression)
+// Module 11090 (useTrackQuestEventWithImpression)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -12,7 +12,7 @@ const require = arg1;
 let result = require("useAdContentImpressionTrackerProps").fileFinishedImporting("modules/quests/lib/analytics/AnalyticsHooks.tsx");
 
 export const useTrackQuestEventWithImpression = function useTrackQuestEventWithImpression() {
-  questImpression = questImpression(10375).useQuestImpression();
+  questImpression = questImpression(10406).useQuestImpression();
   const items = [questImpression];
   return React.useCallback((properties) => {
     let obj = callback(outer1_2[3]);
@@ -30,7 +30,7 @@ export const useTrackQuestEventWithImpression = function useTrackQuestEventWithI
   }, items);
 };
 export const useTrackQuestContentClickedWithImpression = function useTrackQuestContentClickedWithImpression() {
-  const questImpression = callback(10375).useQuestImpression();
+  const questImpression = callback(10406).useQuestImpression();
   callback = questImpression;
   const items = [questImpression];
   callback = React.useCallback((properties) => {
@@ -123,7 +123,7 @@ export const useTrackQuestContentClickedWithImpression = function useTrackQuestC
   }, items1);
 };
 export const useTrackAdContentEventWithImpression = function useTrackAdContentEventWithImpression() {
-  questImpression = questImpression(10375).useQuestImpression();
+  questImpression = questImpression(10406).useQuestImpression();
   const items = [questImpression];
   return React.useCallback((properties) => {
     let obj = callback(outer1_2[3]);
@@ -141,7 +141,7 @@ export const useTrackAdContentEventWithImpression = function useTrackAdContentEv
   }, items);
 };
 export const useTrackAdContentClickedWithImpression = function useTrackAdContentClickedWithImpression() {
-  const questImpression = callback(10375).useQuestImpression();
+  const questImpression = callback(10406).useQuestImpression();
   callback = questImpression;
   const items = [questImpression];
   callback = React.useCallback((properties) => {
@@ -248,7 +248,7 @@ export const useQuestHomeEntrypointAnalyticsEvents = function useQuestHomeEntryp
   let callback2;
   let callback3;
   let callback4;
-  const QuestContent = questHomeHero(5116).QuestContent;
+  const QuestContent = questHomeHero(5146).QuestContent;
   const tmp = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp;
   const items = [tmp];

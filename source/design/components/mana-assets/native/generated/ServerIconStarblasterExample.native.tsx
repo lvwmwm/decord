@@ -1,10 +1,10 @@
-// Module ID: 6608
-// Function ID: 6609
+// Module ID: 6635
+// Function ID: 6636
 // Name: ServerIconStarblasterExample
-// Dependencies: [21, 5221, 6609, 2]
+// Dependencies: [21, 5251, 6636, 2]
 // Exports: ServerIconStarblasterExample
 
-// Module 6608 (ServerIconStarblasterExample)
+// Module 6635 (ServerIconStarblasterExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconStarblasterExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconStarblasterExample = function ServerIconStarblasterExampl
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6609);
+  obj[0] = importDefault(6636);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerIconStarblasterExample = function ServerIconStarblasterExampl
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
 };

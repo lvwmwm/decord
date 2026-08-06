@@ -1,10 +1,10 @@
-// Module ID: 7887
-// Function ID: 7888
+// Module ID: 8028
+// Function ID: 8029
 // Name: transform
-// Dependencies: [19, 3931, 4589, 7888, 1236, 3928, 7843, 2]
+// Dependencies: [19, 3960, 4619, 8029, 1236, 3957, 7984, 2]
 // Exports: default, transformSticker
 
-// Module 7887 (transform)
+// Module 8028 (transform)
 import noop from "noop";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
 
@@ -18,12 +18,12 @@ function transform(id, isPreview) {
   }
   obj.asset = str;
   obj = { isPreview: !isPreview };
-  let str2 = require(4589) /* getStickerExtensionFromFormatType */.getStickerAssetUrl(id, obj);
+  let str2 = require(4619) /* getStickerExtensionFromFormatType */.getStickerAssetUrl(id, obj);
   if (str2 == null) {
     str2 = "";
   }
   obj.url = str2;
-  const NativeLottieRenderMode = tmp2(7888).NativeLottieRenderMode;
+  const NativeLottieRenderMode = tmp2(8029).NativeLottieRenderMode;
   obj.renderMode = isPreview ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
   const intl = tmp2(1236).intl;
   if (arg2) {
@@ -60,7 +60,7 @@ export default function useTransformedSticker(sticker) {
   }, items);
 };
 export const transformSticker = function transformSticker(tmp5Result1) {
-  const AnimateStickers = require(3928) /* explicitContentFromProto */.AnimateStickers;
+  const AnimateStickers = require(3957) /* explicitContentFromProto */.AnimateStickers;
   const setting = AnimateStickers.getSetting();
-  return transform(tmp5Result1, setting === StickerAnimationSettings.ALWAYS_ANIMATE, require(7843) /* apexExperiment */.shouldSkipAccessibilityLabels());
+  return transform(tmp5Result1, setting === StickerAnimationSettings.ALWAYS_ANIMATE, require(7984) /* apexExperiment */.shouldSkipAccessibilityLabels());
 };

@@ -1,8 +1,8 @@
-// Module ID: 14739
-// Function ID: 14740
-// Dependencies: [19, 17, 678, 676, 21, 4255, 712, 10013, 5595, 5615, 1581, 14195, 4116, 4664, 698, 6943, 9236, 9460, 14740, 14741, 14720, 1236, 2]
+// Module ID: 14777
+// Function ID: 14778
+// Dependencies: [19, 17, 678, 676, 21, 4285, 712, 10044, 5649, 5669, 1609, 14232, 4145, 4694, 698, 6970, 9265, 9489, 14778, 14779, 14758, 1236, 2]
 
-// Module 14739
+// Module 14777
 import importAllResult from "CollectiblesShopViewAllCategoryItemsHeader";
 import get_ActivityIndicator from "NativePaymentContextProvider";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";

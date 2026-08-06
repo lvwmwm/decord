@@ -1,10 +1,10 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 15979
+// Function ID: 15980
 // Name: useHandleOAuthNavigation
-// Dependencies: [19, 676, 10622, 4460, 10824, 1959, 1231, 2]
+// Dependencies: [19, 676, 10557, 4490, 10561, 1988, 1231, 2]
 // Exports: default
 
-// Module 15939 (useHandleOAuthNavigation)
+// Module 15979 (useHandleOAuthNavigation)
 import noop from "noop";
 import { ComponentActions } from "ME";
 import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY";

@@ -1,10 +1,10 @@
-// Module ID: 9127
-// Function ID: 9128
+// Module ID: 9156
+// Function ID: 9157
 // Name: useIsStreamRTCConnectionEmpty
-// Dependencies: [1218, 4326, 4340, 589, 2]
+// Dependencies: [1218, 4356, 4370, 589, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 9127 (useIsStreamRTCConnectionEmpty)
+// Module 9156 (useIsStreamRTCConnectionEmpty)
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";

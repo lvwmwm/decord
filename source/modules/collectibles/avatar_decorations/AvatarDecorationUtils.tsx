@@ -1,16 +1,16 @@
-// Module ID: 1852
-// Function ID: 1853
+// Module ID: 1880
+// Function ID: 1881
 // Name: parseAvatarDecorationData
-// Dependencies: [1853, 12, 2]
+// Dependencies: [1881, 12, 2]
 // Exports: hasGlobalDefaultAvatarDecoration, isAvatarDecorationExpired, isEqualAvatarDecoration, parseAvatarDecorationData
 
-// Module 1852 (parseAvatarDecorationData)
+// Module 1880 (parseAvatarDecorationData)
 let result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationUtils.tsx");
 
 export const parseAvatarDecorationData = function parseAvatarDecorationData(avatar_decoration_data) {
   if (typeof avatar_decoration_data === "object") {
     if (null != avatar_decoration_data) {
-      let obj = require(1853) /* parseSkuIdFromServerData */;
+      let obj = require(1881) /* parseSkuIdFromServerData */;
       const result = obj.parseSkuIdFromServerData(avatar_decoration_data);
       if (null == result) {
         return null;
@@ -52,7 +52,7 @@ export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDe
       if (typeof avatarDecoration === "object") {
         tmp2 = null;
         if (null != avatarDecoration) {
-          let tmp12Result = tmp12(1853);
+          let tmp12Result = tmp12(1881);
           const result = tmp12Result.parseSkuIdFromServerData(avatarDecoration);
           tmp2 = null;
           if (null != result) {
@@ -79,7 +79,7 @@ export const isEqualAvatarDecoration = function isEqualAvatarDecoration(avatarDe
       if (typeof skuId === "object") {
         tmp6 = null;
         if (null != skuId) {
-          tmp12Result = tmp12(1853);
+          tmp12Result = tmp12(1881);
           const result1 = tmp12Result.parseSkuIdFromServerData(skuId);
           tmp6 = null;
           if (null != result1) {

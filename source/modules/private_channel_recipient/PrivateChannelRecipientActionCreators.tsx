@@ -1,8 +1,8 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11280
+// Function ID: 11281
 // Dependencies: [676, 530, 2]
 
-// Module 11246
+// Module 11280
 import { Endpoints } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/private_channel_recipient/PrivateChannelRecipientActionCreators.tsx");

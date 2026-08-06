@@ -1,8 +1,8 @@
-// Module ID: 15644
-// Function ID: 15645
-// Dependencies: [19, 11595, 8180, 21, 15628, 589, 15580, 15630, 15645, 15629, 15634, 15623, 15587, 2]
+// Module ID: 15682
+// Function ID: 15683
+// Dependencies: [19, 11629, 8320, 21, 15666, 589, 15618, 15668, 15683, 15667, 15672, 15661, 15625, 2]
 
-// Module 15644
+// Module 15682
 import importAllResult from "noop";
 import prototype from "prototype";
 import MessageEmbedTypes from "MessageEmbedTypes";

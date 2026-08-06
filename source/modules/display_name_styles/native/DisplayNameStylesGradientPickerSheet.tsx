@@ -1,10 +1,10 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14496
+// Function ID: 14497
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1886, 676, 21, 4255, 712, 9362, 1885, 4224, 698, 4223, 13782, 5323, 5322, 4665, 1236, 4676, 688, 14459, 12, 4797, 2]
+// Dependencies: [32, 19, 17, 1915, 676, 21, 4285, 712, 9391, 1914, 4254, 698, 4253, 13819, 5377, 5376, 4695, 1236, 4706, 688, 14497, 12, 4827, 2]
 // Exports: default
 
-// Module 14458 (DisplayNameStylesColorPickerSheet)
+// Module 14496 (DisplayNameStylesColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import int2hslRaw from "int2hslRaw";
 import get_ActivityIndicator from "getSystemLocale";
@@ -54,9 +54,9 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
   let closure_8;
   let tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = selectedEffectId(9362);
+  let obj = selectedEffectId(9391);
   displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedEffectId);
-  let obj1 = selectedEffectId(1885);
+  let obj1 = selectedEffectId(1914);
   let items = [selectedEffectId];
   const effectColorCount = obj1.getEffectColorCount(selectedEffectId);
   memo = memo.useMemo(() => callback2(selectedEffectId), items);
@@ -93,7 +93,7 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
       color: num,
       onSelect(arg0) {
         let closure_0 = arg0;
-        const result = selectedEffectId(4224).triggerHapticFeedback(selectedEffectId(4224).HapticFeedbackTypes.IMPACT_MEDIUM);
+        const result = selectedEffectId(4254).triggerHapticFeedback(selectedEffectId(4254).HapticFeedbackTypes.IMPACT_MEDIUM);
         outer1_6((arr) => arr.map((arg0, arg1) => {
           let tmp = arg0;
           if (arg1 === outer1_0) {
@@ -115,17 +115,17 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
   let intl = selectedEffectId(1236).intl;
   obj1[2] = intl.string(selectedEffectId(1236).t.XqMe3N);
   obj1[3] = callback;
-  obj[1] = callback(selectedEffectId(4665).Button, obj1);
-  obj[0] = callback(selectedEffectId(5322).BottomSheetTitleHeader, obj);
+  obj[1] = callback(selectedEffectId(4695).Button, obj1);
+  obj[0] = callback(selectedEffectId(5376).BottomSheetTitleHeader, obj);
   let obj2 = { style: tmp.body, children: null };
   const obj3 = { style: tmp.gradientContainer, children: null };
   const obj4 = { style: tmp.gradient, colors: null, start: null, end: null };
   obj4[1] = first.map((color) => selectedEffectId(_undefined[19]).int2hex(color));
   obj4[2] = { x: 0, y: 0 };
   obj4[3] = { x: 1, y: 0 };
-  const items4 = [callback(onSelectColors(4676), obj4), ];
+  const items4 = [callback(onSelectColors(4706), obj4), ];
   const obj5 = { style: tmp.dropperContainer, children: null };
-  const tmp7 = onSelectColors(4676);
+  const tmp7 = onSelectColors(4706);
   obj5[1] = Array.from({ length: effectColorCount }).map((arg0, arg1) => {
     let closure_0 = arg1;
     let obj = {
@@ -179,8 +179,8 @@ export default function DisplayNameStylesColorPickerSheet(selectedEffectId) {
   const intl2 = selectedEffectId(1236).intl;
   obj7[0] = intl2.string(selectedEffectId(1236).t.yBZMsQ);
   obj7[1] = callback1;
-  items5[2] = callback(selectedEffectId(4665).Button, obj7);
+  items5[2] = callback(selectedEffectId(4695).Button, obj7);
   obj2[1] = items5;
   obj[1] = callback2(first, obj2);
-  return callback(selectedEffectId(5323).BottomSheet, obj);
+  return callback(selectedEffectId(5377).BottomSheet, obj);
 };

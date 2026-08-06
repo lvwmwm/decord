@@ -1,9 +1,9 @@
-// Module ID: 3927
-// Function ID: 3928
+// Module ID: 3956
+// Function ID: 3957
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 3927 (enforcing)
+// Module 3956 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeTimezoneHermesFixModule");

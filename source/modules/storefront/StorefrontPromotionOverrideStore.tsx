@@ -1,9 +1,9 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7507
+// Function ID: 7508
 // Name: getPromotionIdOverride
 // Dependencies: [589, 709, 2]
 
-// Module 7479 (getPromotionIdOverride)
+// Module 7507 (getPromotionIdOverride)
 import { Store } from "initialize";
 
 let c0;

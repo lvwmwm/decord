@@ -1,10 +1,10 @@
-// Module ID: 7933
-// Function ID: 7934
+// Module ID: 8074
+// Function ID: 8075
 // Name: createInGameMessageNuxSystemMessage
-// Dependencies: [4292, 676, 7844, 7851, 7853, 1945, 1236, 7854, 2]
+// Dependencies: [4322, 676, 7985, 7992, 7994, 1974, 1236, 7995, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 7933 (createInGameMessageNuxSystemMessage)
+// Module 8074 (createInGameMessageNuxSystemMessage)
 import addApplication from "addApplication";
 import { HelpdeskArticles } from "ME";
 
@@ -24,7 +24,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
   if (null == application) {
     return null;
   } else {
-    let obj = require(7851) /* getMessageAuthorWithProcessedColor */;
+    let obj = require(7992) /* getMessageAuthorWithProcessedColor */;
     const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
     obj = { username: null, usernameOnClick: null, gameName: null, urlOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
@@ -32,17 +32,17 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = roleStyle;
-    obj[1] = tmp(7853)(obj);
+    obj[1] = tmp(7994)(obj);
     obj[2] = application.name;
     const obj1 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
-    obj1[1] = tmp(1945).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj1[1] = tmp(1974).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj1[2] = tmp3.linkColor;
     obj[3] = obj1;
     const obj2 = { content: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj2[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t["92erOB"], obj);
-    const merged = Object.assign(tmp(7854)(message));
+    const merged = Object.assign(tmp(7995)(message));
     return obj2;
   }
-  tmp3 = importDefault(7844)(theme);
+  tmp3 = importDefault(7985)(theme);
 };

@@ -1,10 +1,10 @@
-// Module ID: 1583
-// Function ID: 1584
+// Module ID: 1611
+// Function ID: 1612
 // Name: EMPTY_SAFE_AREA_INSETS
-// Dependencies: [1584, 2]
+// Dependencies: [1612, 2]
 
-// Module 1583 (EMPTY_SAFE_AREA_INSETS)
-import { initialWindowMetrics } from "module_1584";
+// Module 1611 (EMPTY_SAFE_AREA_INSETS)
+import { initialWindowMetrics } from "module_1612";
 
 let insets;
 if (initialWindowMetrics != null) {

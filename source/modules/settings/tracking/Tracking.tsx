@@ -1,10 +1,10 @@
-// Module ID: 5909
-// Function ID: 5910
+// Module ID: 5936
+// Function ID: 5937
 // Name: trackSettingSearchInputFocused
-// Dependencies: [676, 698, 5908, 2]
+// Dependencies: [676, 698, 5935, 2]
 // Exports: trackSettingSearchClosed, trackSettingSearchInputFocused, trackSettingSearchQueryEntered, trackSettingSearchResultPress
 
-// Module 5909 (trackSettingSearchInputFocused)
+// Module 5936 (trackSettingSearchInputFocused)
 import { AnalyticEvents } from "ME";
 
 const result = require("getSearchSessionId").fileFinishedImporting("modules/settings/tracking/Tracking.tsx");
@@ -15,19 +15,19 @@ export const trackSettingSearchInputFocused = function trackSettingSearchInputFo
 export const trackSettingSearchResultPress = function trackSettingSearchResultPress(setting) {
   let obj = importDefault(698);
   obj = { setting: setting.setting, title: setting.title, route: setting.route, search_result_position: setting.searchResultPosition, num_search_results: setting.numSearchResults, search_session_id: null };
-  obj[5] = importDefault(5908).getSearchSessionId();
+  obj[5] = importDefault(5935).getSearchSessionId();
   obj.track(AnalyticEvents.USER_SETTINGS_SEARCH_RESULT_PRESS, obj);
 };
 export const trackSettingSearchQueryEntered = function trackSettingSearchQueryEntered() {
   let obj = importDefault(698);
   obj = { search_session_id: null };
-  obj[0] = importDefault(5908).getSearchSessionId();
+  obj[0] = importDefault(5935).getSearchSessionId();
   obj.track(AnalyticEvents.USER_SETTINGS_SEARCH_QUERY_ENTERED, obj);
 };
 export const trackSettingSearchClosed = function trackSettingSearchClosed(searchSessionDuration) {
   let obj = importDefault(698);
   obj = { search_session_id: null, search_session_duration_ms: null };
-  obj[0] = importDefault(5908).getSearchSessionId();
+  obj[0] = importDefault(5935).getSearchSessionId();
   obj[1] = searchSessionDuration.searchSessionDuration;
   obj.track(AnalyticEvents.USER_SETTINGS_SEARCH_CLOSED, obj);
 };

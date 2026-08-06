@@ -1,10 +1,10 @@
-// Module ID: 12402
-// Function ID: 12403
+// Module ID: 12439
+// Function ID: 12440
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 4598, 1236, 4598, 4595, 2]
+// Dependencies: [19, 21, 4628, 1236, 4628, 4625, 2]
 // Exports: confirmStartCall
 
-// Module 12402 (ConfirmStartCall)
+// Module 12439 (ConfirmStartCall)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -22,20 +22,20 @@ function ConfirmStartCall(onConfirm) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.rimG2R);
   obj[2] = onConfirm.onConfirm;
-  const items = [callback(require(4598) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback(require(4628) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary", text: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  items[1] = callback(require(4598) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  items[1] = callback(require(4628) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
   obj[0] = items;
-  obj[2] = callback2(require(4598) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4598) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback2(require(4628) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4628) /* getAlertModalItemKey */.AlertModal, obj);
 }
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
 const result = require("getAlertModalItemKey").fileFinishedImporting("modules/voice_calls/native/ConfirmStartCall.tsx");
 
 export const confirmStartCall = function confirmStartCall(fn) {
-  let obj = require(4595) /* useAlertStore */;
+  let obj = require(4625) /* useAlertStore */;
   obj = { onConfirm: fn };
   obj.openAlert("start-voice-call", callback(ConfirmStartCall, obj));
 };

@@ -1,10 +1,10 @@
-// Module ID: 11541
-// Function ID: 11542
+// Module ID: 11575
+// Function ID: 11576
 // Name: _fetchGuildHomeSettings
-// Dependencies: [5, 1934, 1372, 4456, 4457, 676, 709, 530, 11542, 698, 4263, 11, 2]
+// Dependencies: [5, 1963, 1372, 4486, 4487, 676, 709, 530, 11576, 698, 4293, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 11541 (_fetchGuildHomeSettings)
+// Module 11575 (_fetchGuildHomeSettings)
 import closure_3 from "ME";
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -38,8 +38,8 @@ function _fetchGuildHomeSettings() {
       obj4[1] = callback;
       obj2.dispatch(obj4);
       lib = yield "T";
-      dependencyMap = callback(11542).settingsFromServer(lib.body);
-      const obj8 = callback(11542);
+      dependencyMap = callback(11576).settingsFromServer(lib.body);
+      const obj8 = callback(11576);
       const obj6 = { type: "GUILD_HOME_SETTINGS_FETCH_SUCCESS", guildId: null, homeSettings: null };
       obj6[1] = callback;
       obj6[2] = dependencyMap;
@@ -130,8 +130,8 @@ function _fetchNewMemberActions() {
             return obj5;
           } else {
             lib = arg1;
-            dependencyMap = callback(11542).actionsFromServer(lib.body);
-            const obj11 = callback(11542);
+            dependencyMap = callback(11576).actionsFromServer(lib.body);
+            const obj11 = callback(11576);
             const obj6 = { type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS", guildId: null, memberActions: null };
             obj6[1] = callback;
             obj6[2] = dependencyMap;
@@ -270,8 +270,8 @@ export const selectHomeResourceChannel = function selectHomeResourceChannel(clos
       obj.track(constants.SERVER_GUIDE_CHANNEL_SELECTED, obj);
     }
     if (flag) {
-      require(4263) /* transitionToChannel */.transitionToChannel(channelId, { navigationReplace: false });
-      const obj3 = require(4263) /* transitionToChannel */;
+      require(4293) /* transitionToChannel */.transitionToChannel(channelId, { navigationReplace: false });
+      const obj3 = require(4293) /* transitionToChannel */;
     }
   }
 };
@@ -296,7 +296,7 @@ export const selectNewMemberActionChannel = function selectNewMemberActionChanne
     obj[3] = actionForChannel.actionType;
     obj.track(constants.SERVER_GUIDE_CHANNEL_SELECTED, obj);
   }
-  require(4263) /* transitionToChannel */.transitionToChannel(id);
+  require(4293) /* transitionToChannel */.transitionToChannel(id);
 };
 export const completeNewMemberAction = function completeNewMemberAction(c0, c1) {
   let obj = importDefault(709);

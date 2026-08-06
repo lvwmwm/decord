@@ -1,10 +1,10 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11402
+// Function ID: 11403
 // Name: usePinnedSearchBarBottomBorder
-// Dependencies: [19, 21, 4255, 712, 4116, 4664, 4668, 2]
+// Dependencies: [19, 21, 4285, 712, 4145, 4694, 4698, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 11368 (usePinnedSearchBarBottomBorder)
+// Module 11402 (usePinnedSearchBarBottomBorder)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,7 +25,7 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
     triggerScrollHeight = 1;
   }
   let sharedValue;
-  let obj = triggerScrollHeight(4116);
+  let obj = triggerScrollHeight(4145);
   sharedValue = obj.useSharedValue(0);
   const items = [key, sharedValue];
   const effect = React.useEffect(() => {
@@ -45,13 +45,13 @@ export const usePinnedSearchBarBottomBorder = function usePinnedSearchBarBottomB
     obj = { opacity: obj.withSpring(num, triggerScrollHeight(outer1_2[6]).springStandard) };
     return obj;
   };
-  obj = { withSpring: triggerScrollHeight(4664).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4668).springStandard };
+  obj = { withSpring: triggerScrollHeight(4694).withSpring, scrollPosition: sharedValue, triggerScrollHeight, springStandard: triggerScrollHeight(4698).springStandard };
   fn.__closure = obj;
   fn.__workletHash = 5466161440826;
   fn.__initData = closure_6;
   obj = { scrollHandler: callback, bottomBorderComponent: null };
-  const animatedStyle = triggerScrollHeight(4116).useAnimatedStyle(fn);
+  const animatedStyle = triggerScrollHeight(4145).useAnimatedStyle(fn);
   const items2 = [tmp.border, animatedStyle];
-  obj[1] = jsx(sharedValue(4116).View, { style: items2 }, key);
+  obj[1] = jsx(sharedValue(4145).View, { style: items2 }, key);
   return obj;
 };

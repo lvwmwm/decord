@@ -1,0 +1,8 @@
+// Module ID: 13054
+// Function ID: 13055
+// Name: SemVer
+// Dependencies: [13044]
+
+// Module 13054 (SemVer)
+
+export default (arg0, arg1, arg2) => require(13044) /* SemVer */(arg0, arg1, arg2) >= 0;

@@ -1,10 +1,10 @@
-// Module ID: 5259
-// Function ID: 5260
+// Module ID: 5313
+// Function ID: 5314
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 5128, 5218, 1862, 5195, 5192, 1877, 21, 4255, 5220, 712, 1480, 589, 1581, 3959, 689, 5257, 5260, 4251, 1236, 4665, 5263, 4676, 691, 5202, 5281, 5282, 5286, 1416, 4223, 5291, 1959, 4797, 5585, 2]
+// Dependencies: [32, 19, 17, 5158, 5248, 1891, 5225, 5222, 1906, 21, 4285, 5250, 712, 1480, 589, 1609, 3988, 689, 5311, 5314, 4281, 1236, 4695, 5317, 4706, 691, 5232, 5335, 5336, 5340, 1416, 4253, 5345, 1988, 4827, 5639, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5259 (PromptHeader)
+// Module 5313 (PromptHeader)
 import DropdownOptionRow from "DropdownOptionRow";
 import TermsFieldListItem from "TermsFieldListItem";
 import get_ActivityIndicator from "n";
@@ -36,7 +36,7 @@ function PromptHeader(currentPrompt) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts };
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t.isV0NW, obj);
-  const items = [callback2(require(4251) /* Text */.Text, obj), ];
+  const items = [callback2(require(4281) /* Text */.Text, obj), ];
   let required;
   if (currentPrompt != null) {
     required = currentPrompt.required;
@@ -50,14 +50,14 @@ function PromptHeader(currentPrompt) {
     const obj3 = { variant: "text-sm/medium", color: "text-brand", children: null };
     const intl2 = tmp6(1236).intl;
     obj3[2] = intl2.string(tmp6(1236).t.Ur8Vrt);
-    items1[1] = tmp5(tmp6(4251).Text, obj3);
+    items1[1] = tmp5(tmp6(4281).Text, obj3);
     obj1[0] = items1;
     tmp2Result = tmp2(tmp3, obj1);
   }
   const obj4 = { children: null };
   items[1] = tmp2Result;
   obj[1] = items;
-  const items2 = [closure_16(closure_6, obj), callback2(require(4251) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: currentPrompt.title })];
+  const items2 = [closure_16(closure_6, obj), callback2(require(4281) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: currentPrompt.title })];
   obj4[0] = items2;
   return closure_16(closure_17, obj4);
 }
@@ -182,7 +182,7 @@ function PromptFooter(onPress) {
   return closure_16(closure_6, obj);
 }
 function formattedNameHighlight(children) {
-  return callback2(require(4251) /* Text */.Text, { variant: "text-xs/medium", color: "mobile-text-heading-primary", children }, arg1);
+  return callback2(require(4281) /* Text */.Text, { variant: "text-xs/medium", color: "mobile-text-heading-primary", children }, arg1);
 }
 function DropdownOption(option) {
   option = option.option;
@@ -227,8 +227,8 @@ function DropdownOption(option) {
     str = "";
   }
   obj1[3] = str;
-  obj[1] = closure_15(importDefault(5286), obj1);
-  const items1 = [closure_15(closure_6, obj), closure_15(option(4251).Text, { variant: "text-md/semibold", children: option.title })];
+  obj[1] = closure_15(importDefault(5340), obj1);
+  const items1 = [closure_15(closure_6, obj), closure_15(option(4281).Text, { variant: "text-md/semibold", children: option.title })];
   obj[1] = items1;
   return closure_16(closure_6, obj);
 }

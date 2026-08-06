@@ -1,17 +1,17 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16637
+// Function ID: 16638
 // Name: FeatureCard
-// Dependencies: [19, 17, 1862, 3883, 8916, 676, 21, 4255, 712, 9840, 1236, 4251, 15390, 4211, 1480, 589, 709, 8915, 16598, 1945, 4665, 16602, 3955, 5581, 2]
+// Dependencies: [19, 17, 1891, 3912, 8945, 676, 21, 4285, 712, 9871, 1236, 4281, 15428, 4241, 1480, 589, 709, 8944, 16638, 1974, 4695, 16642, 3984, 5635, 2]
 // Exports: default
 
-// Module 16597 (FeatureCard)
+// Module 16637 (FeatureCard)
 import combined from "combined";
-import get_ActivityIndicator from "module_8915";
+import get_ActivityIndicator from "module_8944";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleFormInit from "handleFormInit";
 import ME from "ME";
-import jsxProd from "module_16602";
+import jsxProd from "module_16642";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -35,7 +35,7 @@ function FeatureCard(arg0) {
   obj = { style: tmp.featureIcon, children: icon() };
   const items = [callback(closure_4, obj), ];
   obj = { style: tmp.featureDescription, children: null };
-  const items1 = [callback(require(4251) /* Text */.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), callback(require(4251) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
+  const items1 = [callback(require(4281) /* Text */.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), callback(require(4281) /* Text */.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
   obj[1] = items1;
   items[1] = callback2(closure_4, obj);
   obj[1] = items;

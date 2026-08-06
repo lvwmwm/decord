@@ -1,10 +1,10 @@
-// Module ID: 6875
-// Function ID: 6876
+// Module ID: 6902
+// Function ID: 6903
 // Name: commandPermissions
-// Dependencies: [32, 1906, 6876, 2]
+// Dependencies: [32, 1935, 6903, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 6875 (commandPermissions)
+// Module 6902 (commandPermissions)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -31,17 +31,17 @@ const result = require("ApplicationCommandSectionType").fileFinishedImporting("m
 
 export const commandName = function commandName(arg0) {
   let text = arg1;
-  if (arg0 === require(1906) /* PermissionOverwriteType */.ApplicationCommandType.CHAT) {
+  if (arg0 === require(1935) /* PermissionOverwriteType */.ApplicationCommandType.CHAT) {
     text = `/${arg1}`;
   }
   return text;
 };
 export const commandPermissionChannels = function commandPermissionChannels(arg0) {
-  const items = [require(6876) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
+  const items = [require(6903) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.CHANNEL];
   return commandPermissions(arg0, items);
 };
 export const commandPermissionMembersRoles = function commandPermissionMembersRoles(arg0) {
-  const items = [require(6876) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(6876) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
+  const items = [require(6903) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.ROLE, require(6903) /* ApplicationCommandSectionType */.ApplicationCommandPermissionType.USER];
   return commandPermissions(arg0, items);
 };
 export const toPermissionKey = function toPermissionKey(allChannelsSentinelResult, CHANNEL) {

@@ -1,10 +1,10 @@
-// Module ID: 4311
-// Function ID: 4312
+// Module ID: 4341
+// Function ID: 4342
 // Name: pathJoin
 // Dependencies: [500, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 4311 (pathJoin)
+// Module 4341 (pathJoin)
 const result = require("set").fileFinishedImporting("utils/PathUtils.tsx");
 
 export const pathJoin = function pathJoin(closure_1, closure_15) {

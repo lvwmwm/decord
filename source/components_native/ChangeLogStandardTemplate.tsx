@@ -1,10 +1,10 @@
-// Module ID: 7972
-// Function ID: 7973
+// Module ID: 8113
+// Function ID: 8114
 // Name: LHeading
-// Dependencies: [19, 17, 1946, 676, 21, 712, 4255, 1297, 647, 7973, 698, 3952, 3954, 7975, 4245, 5257, 7644, 7977, 1236, 3867, 7979, 7981, 2]
+// Dependencies: [19, 17, 1975, 676, 21, 712, 4285, 1297, 647, 8114, 698, 3981, 3983, 8116, 4275, 5311, 7672, 8118, 1236, 3896, 8120, 8122, 2]
 // Exports: changelogRules, getRenderChangelog
 
-// Module 7972 (LHeading)
+// Module 8113 (LHeading)
 import importAllResult from "getLocalizedLink";
 import get_ActivityIndicator from "XNeutralIcon";
 import _getSystemLocale from "_getSystemLocale";
@@ -75,7 +75,7 @@ function LinkInner(target) {
   let obj = target(647);
   const items = [_getSystemLocale];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  changelog = target(7973).useChangelog(changelogId, stateFromStores).changelog;
+  changelog = target(8114).useChangelog(changelogId, stateFromStores).changelog;
   obj = {
     accessibilityRole: "link",
     style: className,
@@ -163,9 +163,9 @@ const memoResult1 = importAllResult.memo((video) => {
     children: null
   };
   const items1 = [video.video, ];
-  let obj2 = importDefault(4245);
+  let obj2 = importDefault(4275);
   id = changeLog.id;
-  let obj3 = importDefault(7975);
+  let obj3 = importDefault(8116);
   {
     obj = { components: null };
     const obj1 = { Link: null, ListItem: null, LHeading: null, Heading: null };
@@ -186,31 +186,31 @@ const memoResult1 = importAllResult.memo((video) => {
   const items2 = [closure_11(closure_5, obj), ];
   obj2 = { bottom: true, style: tmp.footer, children: null };
   obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: null, accessibilityLabel: null, onPress: null };
-  obj3[3] = callback(id(7977).XNeutralIcon, { size: "sm", color: "interactive-icon-default" });
+  obj3[3] = callback(id(8118).XNeutralIcon, { size: "sm", color: "interactive-icon-default" });
   const intl = id(1236).intl;
   obj3[4] = intl.string(id(1236).t["/lXfom"]);
   obj3[5] = function onPress() {
-    callback(3952).openURL(callback(3867)(constants.TWITTER));
+    callback(3981).openURL(callback(3896)(constants.TWITTER));
   };
-  const items3 = [callback(id(7644).IconButton, obj3), , ];
+  const items3 = [callback(id(7672).IconButton, obj3), , ];
   const obj4 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: null, accessibilityLabel: null, onPress: null };
-  obj4[3] = callback(id(7979).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" });
+  obj4[3] = callback(id(8120).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" });
   const intl2 = id(1236).intl;
   obj4[4] = intl2.string(id(1236).t["h0or/l"]);
   obj4[5] = function onPress() {
-    callback(3952).openURL(constants2.FACEBOOK_URL);
+    callback(3981).openURL(constants2.FACEBOOK_URL);
   };
-  items3[1] = callback(id(7644).IconButton, obj4);
+  items3[1] = callback(id(7672).IconButton, obj4);
   const obj5 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: null, accessibilityLabel: null, onPress: null };
-  obj5[3] = callback(id(7981).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" });
+  obj5[3] = callback(id(8122).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" });
   const intl3 = id(1236).intl;
   obj5[4] = intl3.string(id(1236).t["5uVPyf"]);
   obj5[5] = function onPress() {
-    callback(3952).openURL(constants2.INSTAGRAM_URL);
+    callback(3981).openURL(constants2.INSTAGRAM_URL);
   };
-  items3[2] = callback(id(7644).IconButton, obj5);
+  items3[2] = callback(id(7672).IconButton, obj5);
   obj2[2] = items3;
-  items2[1] = closure_11(id(5257).SafeAreaPaddingView, obj2);
+  items2[1] = closure_11(id(5311).SafeAreaPaddingView, obj2);
   obj[1] = items2;
   return closure_11(closure_4, obj);
 });
@@ -223,7 +223,7 @@ export const changelogRules = function changelogRules(changelogId, arg1) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(7975);
+  let obj = importDefault(8116);
   if (flag) {
     obj = { components: null };
     obj = { Link: null, ListItem: null, LHeading: null, Heading: null };
@@ -258,7 +258,7 @@ export const changelogRules = function changelogRules(changelogId, arg1) {
   return messageRules;
 };
 export const getRenderChangelog = function getRenderChangelog(id) {
-  let obj = importDefault(4245);
+  let obj = importDefault(4275);
   id = id.id;
   {
     obj = { components: null };

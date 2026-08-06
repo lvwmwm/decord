@@ -1,9 +1,9 @@
-// Module ID: 16859
-// Function ID: 16860
+// Module ID: 16899
+// Function ID: 16900
 // Name: importDefaultResult2
-// Dependencies: [4254, 5130, 5173, 12212, 1218, 1935, 1862, 676, 3, 1868, 1866, 698, 709, 6770, 1208, 2]
+// Dependencies: [4284, 5160, 5203, 12246, 1218, 1964, 1891, 676, 3, 1897, 1895, 698, 709, 6797, 1208, 2]
 
-// Module 16859 (importDefaultResult2)
+// Module 16899 (importDefaultResult2)
 import getUserAgnosticState from "getUserAgnosticState";
 import importDefaultResult from "fromServer";
 import importDefaultResult1 from "parseServerGuildSticker";
@@ -247,7 +247,7 @@ class DispatcherBridge {
 
           }, require("dispatcher").DispatchBand.Database);
           _default = require("getState").default;
-          f100876 = _default;
+          f101122 = _default;
           addChangeListenerResult = _default.addChangeListener(() => {
             if ("active" !== _default.getState()) {
               let _Date = Date;
@@ -288,7 +288,7 @@ prototype["handleFatalError"] = function handleFatalError(error, type) {
   obj = { actionType: type, hasAuthoritativeStore: result };
   importDefault(1208).captureException(error, { extra: obj, tags: { source: "libdiscore", errorKind: "fatal_dispatch" } });
   if (result) {
-    const result1 = require(1866) /* items */.clearLibdiscoreExperimentCache();
+    const result1 = require(1895) /* items */.clearLibdiscoreExperimentCache();
     throw error;
   } else {
     obj.warn("Disabling DispatcherBridge until restart");
@@ -326,9 +326,9 @@ prototype["handleStoreError"] = function handleStoreError(storeToken, type) {
   importDefault(1208).captureException(error, { extra: { actionType: type, storeName: name, storeMode: mode }, tags: { source: "libdiscore", errorKind: "store_dispatch" } });
   if ("typescript-libdiscore-dual-read" !== mode) {
     if ("libdiscore" === mode) {
-      const result = require(1866) /* items */.clearLibdiscoreExperimentCache();
+      const result = require(1895) /* items */.clearLibdiscoreExperimentCache();
       let error1 = error;
-      const obj5 = require(1866) /* items */;
+      const obj5 = require(1895) /* items */;
     } else {
       const _Error = Error;
       const _HermesInternal3 = HermesInternal;

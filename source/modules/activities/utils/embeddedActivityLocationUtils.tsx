@@ -1,10 +1,10 @@
-// Module ID: 3873
-// Function ID: 3874
+// Module ID: 3902
+// Function ID: 3903
 // Name: getEmbeddedActivityLocationChannelId
 // Dependencies: [2]
 // Exports: getEmbeddedActivityLocationChannelId, getEmbeddedActivityLocationGuildId
 
-// Module 3873 (getEmbeddedActivityLocationChannelId)
+// Module 3902 (getEmbeddedActivityLocationChannelId)
 const result = require("set").fileFinishedImporting("modules/activities/utils/embeddedActivityLocationUtils.tsx");
 
 export const getEmbeddedActivityLocationChannelId = function getEmbeddedActivityLocationChannelId(_location) {

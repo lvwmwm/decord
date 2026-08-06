@@ -1,10 +1,10 @@
-// Module ID: 16216
-// Function ID: 16217
+// Module ID: 16256
+// Function ID: 16257
 // Name: scheduleUpcomingWarning
-// Dependencies: [9639, 1874, 6890, 1236, 2255, 1895, 9641, 709, 6947, 16211, 5214, 2]
+// Dependencies: [9670, 1903, 6917, 1236, 2284, 1924, 9672, 709, 6974, 16251, 5244, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 16216 (scheduleUpcomingWarning)
+// Module 16256 (scheduleUpcomingWarning)
 import DesktopNotificationTypes from "DesktopNotificationTypes";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -20,7 +20,7 @@ function scheduleUpcomingWarning() {
     timeout = null;
   }
   const date = new Date();
-  let obj = require(6947) /* apexExperiment */;
+  let obj = require(6974) /* apexExperiment */;
   let tmp7 = null;
   if (obj.getIsFamilyCenterV3Enabled({ location: "RestrictedHoursManager" })) {
     tmp7 = null;
@@ -57,10 +57,10 @@ function scheduleUpcomingWarning() {
         const intl = tmp5(1236).intl;
         const _Date2 = Date;
         const date2 = new Date(startAtMs);
-        let tmp5Result = tmp5(9641);
-        const items = [tmp5(1895).JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];
-        const stringResult = intl.string(importDefault(2255)["0JlDg0"]);
-        tmp5Result = tmp5(9641);
+        let tmp5Result = tmp5(9672);
+        const items = [tmp5(1924).JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];
+        const stringResult = intl.string(importDefault(2284)["0JlDg0"]);
+        tmp5Result = tmp5(9672);
         const _HermesInternal2 = HermesInternal;
         const formatDaysResult = tmp5Result.formatDays(items);
         const trimmed = "" + tmp5Result.formatDays(items) + " " + tmp5Result.getScheduleRuleDateRange(rule).trim();
@@ -94,7 +94,7 @@ function checkAndUpdateModal() {
     obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: null };
     obj[1] = c6;
     obj.dispatch(obj);
-    const obj3 = require(16211) /* closeRestrictedHoursModal */;
+    const obj3 = require(16251) /* closeRestrictedHoursModal */;
     if (c6) {
       const result1 = obj3.openRestrictedHoursModal();
     } else {
@@ -123,7 +123,7 @@ function handleScheduleUpdate() {
     obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: null };
     obj[1] = c6;
     obj.dispatch(obj);
-    const obj3 = require(16211) /* closeRestrictedHoursModal */;
+    const obj3 = require(16251) /* closeRestrictedHoursModal */;
     if (c6) {
       const result1 = obj3.openRestrictedHoursModal();
     } else {
@@ -157,8 +157,8 @@ prototype["_initialize"] = function _initialize() {
   obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: closure_6 };
   obj.dispatch(obj);
   if (closure_6) {
-    const result = require(16211) /* closeRestrictedHoursModal */.openRestrictedHoursModal();
-    const obj3 = require(16211) /* closeRestrictedHoursModal */;
+    const result = require(16251) /* closeRestrictedHoursModal */.openRestrictedHoursModal();
+    const obj3 = require(16251) /* closeRestrictedHoursModal */;
   }
   const interval = setInterval(checkAndUpdateModal, 60000);
   scheduleUpcomingWarning();
@@ -175,7 +175,7 @@ prototype["_terminate"] = function _terminate() {
     c8 = null;
   }
   let c9 = null;
-  const result = require(16211) /* closeRestrictedHoursModal */.closeRestrictedHoursModal();
+  const result = require(16251) /* closeRestrictedHoursModal */.closeRestrictedHoursModal();
   let c6 = false;
 };
 const restrictedHoursManager = new RestrictedHoursManager();

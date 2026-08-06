@@ -1,9 +1,9 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 13705
+// Function ID: 13706
 // Name: registerTransport
-// Dependencies: [5, 4158, 676, 12, 10521, 10515, 13646, 698, 38, 687, 2]
+// Dependencies: [5, 4188, 676, 12, 10542, 10536, 13683, 698, 38, 687, 2]
 
-// Module 13668 (registerTransport)
+// Module 13705 (registerTransport)
 import prototype from "prototype";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -59,7 +59,7 @@ prototype["handleConnect"] = function handleConnect(v) {
     if (null == currentUser) {
       v.close(constants2.CLOSE_NORMAL, "User logged out");
     } else {
-      obj.user = importDefault(10521)(currentUser);
+      obj.user = importDefault(10542)(currentUser);
     }
   }
   self.dispatch(v, null, constants3.DISPATCH, constants5.READY, obj);
@@ -664,10 +664,10 @@ prototype["removeSubscriptions"] = function removeSubscriptions(abortController)
   importDefault(12).remove(this.subscriptions, (socket) => socket.socket === closure_0);
   const result = this.dispatchIsSubscribedUpdate();
 };
-prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATIONSHIP_UPDATE, arg1, closure_3, combined) {
+prototype["dispatchToSubscriptions"] = function dispatchToSubscriptions(RELATIONSHIP_UPDATE, targetsFrame, closure_3, combined) {
   const self = this;
   let closure_1 = RELATIONSHIP_UPDATE;
-  let prototype = arg1;
+  let prototype = targetsFrame;
   let closure_0 = closure_3;
   let tmp = null != combined;
   if (tmp) {

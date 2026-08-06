@@ -1,10 +1,10 @@
-// Module ID: 1905
-// Function ID: 1906
+// Module ID: 1934
+// Function ID: 1935
 // Name: isActivityParticipantValidGuildMember
 // Dependencies: [2]
 // Exports: default
 
-// Module 1905 (isActivityParticipantValidGuildMember)
+// Module 1934 (isActivityParticipantValidGuildMember)
 const result = require("set").fileFinishedImporting("modules/activities/isActivityParticipantValidGuildMember.tsx");
 
 export default function isActivityParticipantValidGuildMember(member) {

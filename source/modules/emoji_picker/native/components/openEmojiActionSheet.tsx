@@ -1,10 +1,10 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 8656
+// Function ID: 8657
 // Name: openEmojiActionSheet
-// Dependencies: [1877, 1416, 1844, 4223, 8628, 1959, 2]
+// Dependencies: [1906, 1416, 1872, 4253, 8657, 1988, 2]
 // Exports: openEmojiActionSheet
 
-// Module 8627 (openEmojiActionSheet)
+// Module 8656 (openEmojiActionSheet)
 import { EMOJI_URL_BASE_SIZE } from "set";
 
 let result = require("dismissGlobalKeyboard").fileFinishedImporting("modules/emoji_picker/native/components/openEmojiActionSheet.tsx");
@@ -21,11 +21,11 @@ export const openEmojiActionSheet = function openEmojiActionSheet(uniqueName) {
         const _HermesInternal = HermesInternal;
         obj[1] = ":" + name + ":";
       }
-      const result = require(1844) /* dismissGlobalKeyboard */.dismissGlobalKeyboard();
-      const obj6 = importDefault(4223);
+      const result = require(1872) /* dismissGlobalKeyboard */.dismissGlobalKeyboard();
+      const obj6 = importDefault(4253);
       obj = { emojiNode: null };
       obj[0] = obj;
-      obj6.openLazy(require(1959) /* asyncRequireImpl */(8628, dependencyMap.paths), "MessageEmojiActionSheet", obj, "stack");
+      obj6.openLazy(require(1988) /* asyncRequireImpl */(8657, dependencyMap.paths), "MessageEmojiActionSheet", obj, "stack");
     }
     obj = { id: null, alt: null, src: null };
     obj[0] = uniqueName.id;

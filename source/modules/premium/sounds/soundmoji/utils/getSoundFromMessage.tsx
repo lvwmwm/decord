@@ -1,10 +1,10 @@
-// Module ID: 4706
-// Function ID: 4707
+// Module ID: 4736
+// Function ID: 4737
 // Name: getSoundFromSounds
-// Dependencies: [4472, 4701, 4707, 694, 2]
+// Dependencies: [4502, 4731, 4737, 694, 2]
 // Exports: default
 
-// Module 4706 (getSoundFromSounds)
+// Module 4736 (getSoundFromSounds)
 import reinjectEphemerals from "reinjectEphemerals";
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME";
 
@@ -30,7 +30,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
     if (guild_id2 == null) {
       guild_id2 = DEFAULT_SOUND_GUILD_ID;
     }
-    return _require(4707).soundboardSoundFromAPI(found, guild_id2);
+    return _require(4737).soundboardSoundFromAPI(found, guild_id2);
   } else {
     message = message.getMessage(arg0, arg1);
     if (null != message) {
@@ -84,7 +84,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         if (guild_id == null) {
           guild_id = DEFAULT_SOUND_GUILD_ID;
         }
-        return tmp3(4707).soundboardSoundFromAPI(found1, guild_id);
+        return tmp3(4737).soundboardSoundFromAPI(found1, guild_id);
       }
       tmp3 = _require;
     }

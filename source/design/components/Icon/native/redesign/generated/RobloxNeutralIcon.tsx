@@ -1,10 +1,10 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 9213
+// Function ID: 9214
 // Name: RobloxNeutralIcon
-// Dependencies: [19, 21, 712, 3958, 9185, 2]
+// Dependencies: [19, 21, 712, 3987, 9214, 2]
 // Exports: RobloxNeutralIcon
 
-// Module 9184 (RobloxNeutralIcon)
+// Module 9213 (RobloxNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const RobloxNeutralIcon = function RobloxNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9185) /* registerAsset */;
+  obj[0] = require(9214) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10127
-// Function ID: 10128
+// Module ID: 10158
+// Function ID: 10159
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 4598, 1236, 2]
+// Dependencies: [21, 4628, 1236, 2]
 // Exports: default
 
-// Module 10127 (ForwardStaffToNonStaffWarningModal)
+// Module 10158 (ForwardStaffToNonStaffWarningModal)
 import jsxProd from "jsxProd";
 
 let c3;
@@ -27,13 +27,13 @@ export default function ForwardStaffToNonStaffWarningModal(arg0) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.X7eUJq);
   obj[1] = onConfirm;
-  const items = [callback(require(4598) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback(require(4628) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary", text: null, onPress: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
   obj1[2] = onBack;
-  items[1] = callback(require(4598) /* getAlertModalItemKey */.AlertActionButton, obj1, "back");
+  items[1] = callback(require(4628) /* getAlertModalItemKey */.AlertActionButton, obj1, "back");
   obj[0] = items;
   obj[2] = callback2(closure_3, obj);
-  return callback(require(4598) /* getAlertModalItemKey */.AlertModal, obj);
+  return callback(require(4628) /* getAlertModalItemKey */.AlertModal, obj);
 };

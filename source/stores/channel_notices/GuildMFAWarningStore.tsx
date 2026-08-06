@@ -1,9 +1,9 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 12935
+// Function ID: 12936
 // Name: handleUserStoreUpdates
-// Dependencies: [1932, 1874, 676, 589, 709, 2]
+// Dependencies: [1961, 1903, 676, 589, 709, 2]
 
-// Module 12898 (handleUserStoreUpdates)
+// Module 12935 (handleUserStoreUpdates)
 import comparator from "comparator";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { MFALevels } from "ME";

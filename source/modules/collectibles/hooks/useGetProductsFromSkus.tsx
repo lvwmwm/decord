@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14230
+// Function ID: 14231
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 6895, 589, 14194, 2]
+// Dependencies: [19, 6922, 589, 14231, 2]
 // Exports: default
 
-// Module 14193 (useGetProductsFromSkus)
+// Module 14230 (useGetProductsFromSkus)
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 
 require("noop").useCallback;

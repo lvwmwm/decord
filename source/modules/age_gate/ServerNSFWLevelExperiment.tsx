@@ -1,10 +1,10 @@
-// Module ID: 1860
-// Function ID: 1861
+// Module ID: 1888
+// Function ID: 1889
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 1860 (apexExperiment)
+// Module 1888 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

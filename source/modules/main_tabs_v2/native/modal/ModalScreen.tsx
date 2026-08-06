@@ -1,10 +1,10 @@
-// Module ID: 15796
-// Function ID: 15797
+// Module ID: 15836
+// Function ID: 15837
 // Name: Modal
-// Dependencies: [109, 19, 17, 676, 21, 4255, 712, 4460, 9238, 503, 6828, 1581, 15797, 500, 15686, 2]
+// Dependencies: [109, 19, 17, 676, 21, 4285, 712, 4490, 9267, 503, 6855, 1609, 15837, 500, 15726, 2]
 // Exports: default
 
-// Module 15796 (Modal)
+// Module 15836 (Modal)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -41,7 +41,7 @@ export default function Modal(route) {
   const tmp = createCacheKey();
   let obj1 = React;
   const callback = React.useCallback(() => {
-    let arr = callback(4460);
+    let arr = callback(4490);
     arr = arr.pop();
   }, []);
   let obj = { type: null, name: null, properties: null };
@@ -49,7 +49,7 @@ export default function Modal(route) {
   obj[0] = modal(503).ImpressionTypes.MODAL;
   obj[1] = impressionName;
   obj[2] = impressionProperties;
-  importDefault(9238)(obj);
+  importDefault(9267)(obj);
   let callbacks = modal.callbacks;
   let onExited;
   if (callbacks != null) {
@@ -72,10 +72,10 @@ export default function Modal(route) {
     }
     return currentResult;
   }, []);
-  const layoutEffect = obj1.useLayoutEffect(() => modal(6828).trackAppUIViewed("ModalScreen"), []);
-  const tmp6 = importDefault(9238);
-  ({ left, right } = importDefault(1581)());
-  let tmp7Result = tmp7(15797);
+  const layoutEffect = obj1.useLayoutEffect(() => modal(6855).trackAppUIViewed("ModalScreen"), []);
+  const tmp6 = importDefault(9267);
+  ({ left, right } = importDefault(1609)());
+  let tmp7Result = tmp7(15837);
   const items = [absoluteFillObject.absoluteFillObject, ];
   let tmp16;
   if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
@@ -89,7 +89,7 @@ export default function Modal(route) {
   obj1 = { style: items, onAccessibilityEscape: null, children: null };
   items[1] = tmp16;
   if (modal.closable) {
-    let pop = tmp4(4460).pop;
+    let pop = tmp4(4490).pop;
   } else {
     pop = NOOP;
   }
@@ -103,7 +103,7 @@ export default function Modal(route) {
   tmp7Result = tmp7(500);
   let isIOSResult = tmp7Result.isIOS();
   if (isIOSResult) {
-    isIOSResult = callback2(tmp7(15686).PortalKeyboardRenderer, { portal: false });
+    isIOSResult = callback2(tmp7(15726).PortalKeyboardRenderer, { portal: false });
   }
   items2[1] = isIOSResult;
   obj1[2] = items2;

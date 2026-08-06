@@ -1,10 +1,10 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11424
+// Function ID: 11425
 // Name: useFrecentApps
-// Dependencies: [19, 5203, 1874, 11391, 4280, 4688, 1906, 9426, 589, 5603, 8796, 11392, 9428, 8121, 10857, 2]
+// Dependencies: [19, 5233, 1903, 11425, 4310, 4718, 1935, 9455, 589, 5657, 8825, 11426, 9457, 8261, 10553, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11390 (useFrecentApps)
+// Module 11424 (useFrecentApps)
 import noop from "noop";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
@@ -171,7 +171,7 @@ export const useAppLauncherFrecentApps = function useAppLauncherFrecentApps(cont
   let onlyActivityApps;
   context = context.context;
   ({ onlyActivityApps, allowCommandFetch, includeAuthorizedAppsAndFetch } = context);
-  let obj = importAll(9426);
+  let obj = importAll(9455);
   obj = { context, filters: obj, options: closure_12, allowFetch: allowCommandFetch };
   const discovery = obj.useDiscovery(obj);
   obj = { loading: discovery.loading, frecentApps: useFrecentApps(obj1) };

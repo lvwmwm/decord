@@ -1,9 +1,9 @@
-// Module ID: 4341
-// Function ID: 4342
+// Module ID: 4371
+// Function ID: 4372
 // Name: sortActivity
-// Dependencies: [1218, 1874, 676, 4342, 12, 659, 11, 589, 709, 2]
+// Dependencies: [1218, 1903, 676, 4372, 12, 659, 11, 589, 709, 2]
 
-// Module 4341 (sortActivity)
+// Module 4371 (sortActivity)
 import fetchFingerprint from "fetchFingerprint";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -46,11 +46,11 @@ function sortActivity(type, type2) {
   let diff = num2 - num;
   if (!diff) {
     let num3 = 0;
-    if (importDefault(4342)(type2)) {
+    if (importDefault(4372)(type2)) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4342)(type)) {
+    if (tmp3(4372)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;

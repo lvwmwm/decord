@@ -1,10 +1,10 @@
-// Module ID: 7485
-// Function ID: 7486
+// Module ID: 7513
+// Function ID: 7514
 // Name: _fetchUserOffer
-// Dependencies: [5, 7220, 1876, 676, 500, 709, 698, 530, 7222, 1208, 4071, 1358, 1355, 2]
+// Dependencies: [5, 7247, 1905, 676, 500, 709, 698, 530, 7249, 1208, 4100, 1358, 1355, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 7485 (_fetchUserOffer)
+// Module 7513 (_fetchUserOffer)
 import dispatcher from "dispatcher";
 import createFromServer from "createFromServer";
 import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_5 } from "GuildFeatures";

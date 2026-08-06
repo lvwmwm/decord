@@ -6,15 +6,15 @@
 
 // Module 1480 (useNavigation)
 function useNavigation() {
-  return require(1481) /* Link */.useNavigation();
+  return require(1481) /* createStandardNavigationFactories */.useNavigation();
 }
 const result = require("set").fileFinishedImporting("design/components/Navigator/native/useNavigation.native.tsx");
 
 export { useNavigation };
 export const useNativeStackNavigation = function useNativeStackNavigation() {
-  return require(1481) /* Link */.useNavigation();
+  return require(1481) /* createStandardNavigationFactories */.useNavigation();
 };
 export const useStackNavigation = useNavigation;
 export const useTabNavigation = function useTabNavigation() {
-  return require(1481) /* Link */.useNavigation();
+  return require(1481) /* createStandardNavigationFactories */.useNavigation();
 };

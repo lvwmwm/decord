@@ -1,113 +1,106 @@
-// Module ID: 13647
-// Function ID: 13648
+// Module ID: 13684
+// Function ID: 13685
 // Name: getInitialSubscriptionPayload
-// Dependencies: [1371, 10478, 7054, 676, 4280, 10526, 4800, 13610, 7077, 2]
+// Dependencies: [1371, 10509, 7081, 4188, 676, 4310, 10510, 10897, 4830, 13647, 7104, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 13647 (getInitialSubscriptionPayload)
+// Module 13684 (getInitialSubscriptionPayload)
 import participantFromServer from "participantFromServer";
 import map from "map";
 import initializeState from "initializeState";
+import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCEvents } from "ME";
 import items3 from "items3";
+import { asLaunched } from "FrameLayoutModes";
 
-let closure_6;
 let error;
+let metroImportAll;
 const require = arg1;
-({ ActivityLayoutMode: closure_6, ActivityScreenOrientation: error } = items3);
+({ ActivityLayoutMode: error, ActivityScreenOrientation: metroImportAll } = items3);
 const result = require("initializeState").fileFinishedImporting("modules/rpc/server/events/subscriptionHelpers.tsx");
 
 export const getInitialSubscriptionPayload = function getInitialSubscriptionPayload(closure_1, participantFromServer, c3) {
   if (RPCEvents.ACTIVITY_PIP_MODE_UPDATE === participantFromServer) {
-    const application4 = closure_1.application;
+    const application3 = closure_1.application;
     let id;
-    if (application4 != null) {
-      id = application4.id;
+    if (application3 != null) {
+      id = application3.id;
     }
     let layoutModeForApp = null;
     if (null != id) {
       layoutModeForApp = store.getLayoutModeForApp(id);
     }
-    let tmp40 = null;
+    let tmp39 = null;
     if (null != layoutModeForApp) {
       let obj = { is_pip_mode: null };
       obj[0] = layoutModeForApp !== constants.FOCUSED;
-      tmp40 = obj;
+      tmp39 = obj;
     }
-    return tmp40;
+    return tmp39;
   } else if (tmp.ACTIVITY_LAYOUT_MODE_UPDATE === participantFromServer) {
-    const application3 = closure_1.application;
+    const application2 = closure_1.application;
     let id1;
-    if (application3 != null) {
-      id1 = application3.id;
+    if (application2 != null) {
+      id1 = application2.id;
     }
     let layoutModeForApp1 = null;
     if (null != id1) {
       layoutModeForApp1 = store.getLayoutModeForApp(id1);
     }
-    let tmp35 = null;
+    let tmp34 = null;
     if (null != layoutModeForApp1) {
       obj = { layout_mode: null };
       obj[0] = layoutModeForApp1;
-      tmp35 = obj;
+      tmp34 = obj;
     }
-    return tmp35;
+    return tmp34;
   } else if (tmp.FRAME_LAYOUT_MODE_UPDATE === participantFromServer) {
-    const application2 = closure_1.application;
-    let id2;
-    if (application2 != null) {
-      id2 = application2.id;
-    }
-    let tmp26 = null;
-    if (null != id2) {
-      connectedFrame = connectedFrame.getConnectedFrame();
-      let layoutMode;
-      if (connectedFrame != null) {
-        layoutMode = connectedFrame.layoutMode;
+    if (closure_1.source.type !== TransportTypes.POST_MESSAGE) {
+      return null;
+    } else {
+      const tmp27 = asLaunched(frameByIframeId.getFrameByIframeId(closure_1.source.iframeId));
+      let tmp28 = null;
+      if (null != tmp27) {
+        const obj1 = { layout_mode: null };
+        obj1[0] = tmp27.data.layoutMode;
+        tmp28 = obj1;
       }
-      tmp26 = layoutMode;
+      return tmp28;
     }
-    let tmp30 = null;
-    if (null != tmp26) {
-      const obj1 = { layout_mode: null };
-      obj1[0] = tmp26;
-      tmp30 = obj1;
-    }
-    return tmp30;
   } else if (tmp.THERMAL_STATE_UPDATE === participantFromServer) {
-    const thermalState = require(10526) /* useThermalState */.getThermalState();
+    const thermalState = require(10897) /* useThermalState */.getThermalState();
     let tmp23 = null;
-    if (thermalState !== require(10526) /* useThermalState */.ThermalStates.UNHANDLED) {
+    if (thermalState !== require(10897) /* useThermalState */.ThermalStates.UNHANDLED) {
       let obj2 = { thermal_state: null };
       obj2[0] = thermalState;
       tmp23 = obj2;
     }
     return tmp23;
   } else if (tmp.ORIENTATION_UPDATE === participantFromServer) {
-    let obj3 = require(4800) /* getIsScreenLandscape */;
+    let obj3 = require(4830) /* getIsScreenLandscape */;
     obj3 = { screen_orientation: null };
-    obj3[0] = obj3.getIsScreenLandscape() ? closure_7.LANDSCAPE : closure_7.PORTRAIT;
+    obj3[0] = obj3.getIsScreenLandscape() ? closure_8.LANDSCAPE : closure_8.PORTRAIT;
     return obj3;
   } else if (tmp.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE === participantFromServer) {
-    obj2 = require(13610) /* activityInstanceConnectedParticipants */;
+    obj2 = require(13647) /* activityInstanceConnectedParticipants */;
     return obj2.activityInstanceConnectedParticipants();
   } else if (tmp.QUEST_ENROLLMENT_STATUS_UPDATE === participantFromServer) {
     const quest_id = c3.quest_id;
     if (quest_id) {
       quest = quest.getQuest(quest_id);
-      obj = require(7077) /* getApplicationIdsByTaskTypes */;
+      obj = require(7104) /* getApplicationIdsByTaskTypes */;
       const activityApplicationId = obj.getActivityApplicationId(quest);
       let tmp11 = null;
       if (null != quest) {
         tmp11 = null;
         if (null != activityApplicationId) {
           const application = closure_1.application;
-          let id3;
+          let id2;
           if (application != null) {
-            id3 = application.id;
+            id2 = application.id;
           }
           tmp11 = null;
-          if (activityApplicationId === id3) {
+          if (activityApplicationId === id2) {
             const obj4 = { quest_id: null, is_enrolled: null, enrolled_at: null };
             obj4[0] = quest_id;
             const userStatus = quest.userStatus;

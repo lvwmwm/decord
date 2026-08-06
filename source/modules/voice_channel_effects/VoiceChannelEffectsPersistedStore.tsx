@@ -1,9 +1,9 @@
-// Module ID: 5856
-// Function ID: 5857
+// Module ID: 5883
+// Function ID: 5884
 // Name: initialize
-// Dependencies: [5857, 589, 709, 2]
+// Dependencies: [5884, 589, 709, 2]
 
-// Module 5856 (initialize)
+// Module 5883 (initialize)
 import { VoiceChannelEffectAnimationType as closure_1 } from "VoiceChannelEffectAnimationType";
 import { PersistedStore } from "initialize";
 

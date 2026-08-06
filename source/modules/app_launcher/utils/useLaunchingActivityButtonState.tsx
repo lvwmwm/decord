@@ -1,10 +1,10 @@
-// Module ID: 11413
-// Function ID: 11414
+// Module ID: 11447
+// Function ID: 11448
 // Name: useLaunchingActivityButtonState
-// Dependencies: [19, 1371, 10478, 5601, 589, 10481, 8747, 2]
+// Dependencies: [19, 1371, 10509, 5655, 589, 10512, 8776, 2]
 // Exports: default
 
-// Module 11413 (useLaunchingActivityButtonState)
+// Module 11447 (useLaunchingActivityButtonState)
 import noop from "noop";
 import participantFromServer from "participantFromServer";
 import map from "map";
@@ -32,7 +32,18 @@ export default function useLaunchingActivityButtonState(applicationId) {
   const obj2 = applicationId(onSubmissionComplete[4]);
   let tmp = applicationId;
   const items1 = [map];
-  stateFromStores1 = applicationId(onSubmissionComplete[4]).useStateFromStores(items1, () => outer1_5.isLaunchingFrame(applicationId));
+  stateFromStores1 = applicationId(onSubmissionComplete[4]).useStateFromStores(items1, () => {
+    const mainFrame = outer1_5.getMainFrame();
+    let state;
+    if (mainFrame != null) {
+      state = mainFrame.state;
+    }
+    let tmp3 = "loading" === state;
+    if (tmp3) {
+      tmp3 = mainFrame.applicationId === applicationId;
+    }
+    return tmp3;
+  });
   if (null == getOrFetchApplication) {
     stateFromStores1 = null != stateFromStores && stateFromStores.isLaunching && stateFromStores.componentId === applicationId.launchingComponentId;
     const tmp6 = null != stateFromStores && stateFromStores.isLaunching && stateFromStores.componentId === applicationId.launchingComponentId;

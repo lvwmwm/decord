@@ -1,10 +1,10 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15792
+// Function ID: 15793
 // Name: ChannelPermissionSyncModule
-// Dependencies: [32, 5, 19, 17, 1936, 1372, 1935, 1862, 3892, 1874, 676, 21, 4255, 712, 4593, 1236, 4445, 3888, 8893, 7798, 12, 5634, 5300, 13726, 1480, 11992, 9810, 14423, 589, 1906, 9585, 1351, 5297, 8165, 4265, 2]
+// Dependencies: [32, 5, 19, 17, 1965, 1372, 1964, 1891, 3921, 1903, 676, 21, 4285, 712, 4623, 1236, 4475, 3917, 8922, 7939, 12, 5688, 5354, 13763, 1480, 12026, 9841, 14460, 589, 1935, 9614, 1351, 5351, 8305, 4295, 2]
 // Exports: default
 
-// Module 15752 (ChannelPermissionSyncModule)
+// Module 15792 (ChannelPermissionSyncModule)
 import LayoutAnimation from "LayoutAnimation";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import init from "init";
@@ -127,7 +127,7 @@ function ChannelPermissionSyncModule(channel) {
     };
     obj.show(obj);
   }, items);
-  let obj = channel(4445);
+  let obj = channel(4475);
   const channelName = obj.computeChannelName(category, mergeGuildAvatar, upsertRelationship);
   obj = { style: createCacheKey().tableRowGroupContainer, children: null };
   let intl = channel(1236).intl;
@@ -144,12 +144,12 @@ function ChannelPermissionSyncModule(channel) {
   }
   let obj2 = { title: formatToPlainStringResult, hasIcons: true, children: null };
   let obj3 = { icon: null, label: null, onPress: null };
-  obj3[0] = closure_16(channel(13726).RefreshIcon, {});
+  obj3[0] = closure_16(channel(13763).RefreshIcon, {});
   let intl2 = tmp3(1236).intl;
   obj3[1] = intl2.string(channel(1236).t.NVwuHq);
   obj3[2] = callback;
-  obj2[2] = closure_16(channel(5300).TableRow, obj3);
-  obj[1] = closure_16(channel(5634).TableRowGroup, obj2);
+  obj2[2] = closure_16(channel(5354).TableRow, obj3);
+  obj[1] = closure_16(channel(5688).TableRowGroup, obj2);
   return closure_16(View, obj);
 }
 function CategorySync(category) {
@@ -180,23 +180,23 @@ function AddPermission(isEditing) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t.vPHdP5);
     const obj1 = { icon: null, label: null, onPress: null };
-    obj1[0] = callback(tmp2(11992).PlusMediumIcon, {});
+    obj1[0] = callback(tmp2(12026).PlusMediumIcon, {});
     const intl2 = tmp2(1236).intl;
     obj1[1] = intl2.string(tmp2(1236).t.fVWxvT);
     obj1[2] = function onPress() {
 
     };
-    const items = [callback(tmp2(5300).TableRow, obj1), ];
+    const items = [callback(tmp2(5354).TableRow, obj1), ];
     const obj2 = { icon: null, label: null, onPress: null };
-    obj2[0] = callback(tmp2(11992).PlusMediumIcon, {});
+    obj2[0] = callback(tmp2(12026).PlusMediumIcon, {});
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t.riesLt);
     obj2[2] = function onPress() {
 
     };
-    items[1] = callback(tmp2(5300).TableRow, obj2);
+    items[1] = callback(tmp2(5354).TableRow, obj2);
     obj[2] = items;
-    obj[1] = callback2(tmp2(5634).TableRowGroup, obj);
+    obj[1] = callback2(tmp2(5688).TableRowGroup, obj);
     return callback(View, obj);
   }
   tmp = createCacheKey();
@@ -212,7 +212,7 @@ function RoleRow(onDelete) {
   ({ name, colorString, colorStrings } = role);
   const tmp = isEveryoneRole(role);
   let obj = { label: null, arrow: null, icon: null, onPress: null };
-  obj[0] = callback(require(9810) /* RoleLabel */.RoleLabel, { name, color: colorString, colors: colorStrings });
+  obj[0] = callback(require(9841) /* RoleLabel */.RoleLabel, { name, color: colorString, colors: colorStrings });
   obj[1] = !isEditing;
   let tmp2Result = null;
   if (isEditing) {
@@ -222,7 +222,7 @@ function RoleRow(onDelete) {
       obj[0] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
       const intl = tmp3(1236).intl;
       obj[1] = intl.string(tmp3(1236).t.N86XcP);
-      tmp2Result = tmp2(tmp3(14423).CircleMinusIcon, obj);
+      tmp2Result = tmp2(tmp3(14460).CircleMinusIcon, obj);
     }
   }
   obj[2] = tmp2Result;
@@ -234,7 +234,7 @@ function RoleRow(onDelete) {
     }
   }
   obj[3] = onDelete;
-  return callback(require(5300) /* TableRowInner */.TableRow, obj);
+  return callback(require(5354) /* TableRowInner */.TableRow, obj);
 }
 function RoleOverwrites(guild) {
   let dependencyMap;
@@ -249,8 +249,8 @@ function RoleOverwrites(guild) {
   obj = {};
   const merged = Object.assign(guild.channel.permissionOverwrites);
   if (null == obj[guild.id]) {
-    obj[guild.id] = importAll(3888).makeEveryoneOverwrite(guild.id);
-    const obj3 = importAll(3888);
+    obj[guild.id] = importAll(3917).makeEveryoneOverwrite(guild.id);
+    const obj3 = importAll(3917);
   }
   const found = stateFromStores.filter((arg0) => {
     let type;
@@ -276,7 +276,7 @@ function RoleOverwrites(guild) {
       }
     }, id.id);
   });
-  obj[1] = callback(guild(5634).TableRowGroup, obj1);
+  obj[1] = callback(guild(5688).TableRowGroup, obj1);
   return callback(View, obj);
 }
 function MemberRow(arg0) {
@@ -299,10 +299,10 @@ function MemberRow(arg0) {
     obj[0] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.N86XcP);
-    tmpResult = tmp(require(14423) /* CircleMinusIcon */.CircleMinusIcon, obj);
+    tmpResult = tmp(require(14460) /* CircleMinusIcon */.CircleMinusIcon, obj);
   }
   obj[4] = tmpResult;
-  return closure_16(importDefault(9585), obj);
+  return closure_16(importDefault(9614), obj);
 }
 function MemberOverwrites(channel) {
   let dependencyMap;
@@ -338,7 +338,7 @@ function MemberOverwrites(channel) {
         }
       }, id.id);
     });
-    obj[1] = callback(tmp3(5634).TableRowGroup, obj);
+    obj[1] = callback(tmp3(5688).TableRowGroup, obj);
     tmp4 = callback(View, obj);
   }
   return tmp4;

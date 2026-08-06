@@ -1,10 +1,10 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11831
+// Function ID: 11832
 // Name: getGuildPowerupsBoostInfoText
-// Dependencies: [4143, 1236, 2287, 2]
+// Dependencies: [4173, 1236, 2316, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 11797 (getGuildPowerupsBoostInfoText)
+// Module 11831 (getGuildPowerupsBoostInfoText)
 import { BoostInfoType } from "BoostedGuildTiers";
 
 const result = require("messagesProxy").fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx");
@@ -14,14 +14,14 @@ export const getGuildPowerupsBoostInfoText = function getGuildPowerupsBoostInfoT
     const intl3 = require(1236) /* getSystemLocale */.intl;
     let obj = { boostCount: null };
     obj[0] = count;
-    return intl3.formatToPlainString(importDefault(2287).BdRXZA, obj);
+    return intl3.formatToPlainString(importDefault(2316).BdRXZA, obj);
   } else if (tmp.SPENT === type) {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj = { boostCount: null };
     obj[0] = count;
-    return intl2.formatToPlainString(importDefault(2287).xvgIVG, obj);
+    return intl2.formatToPlainString(importDefault(2316).xvgIVG, obj);
   } else if (tmp.TOTAL === type) {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(importDefault(2287)["/F7Z2y"]);
+    return intl.string(importDefault(2316)["/F7Z2y"]);
   }
 };

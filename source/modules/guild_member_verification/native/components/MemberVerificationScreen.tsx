@@ -1,9 +1,9 @@
-// Module ID: 15673
-// Function ID: 15674
+// Module ID: 15713
+// Function ID: 15714
 // Name: Loading
-// Dependencies: [19, 17, 1932, 1862, 4073, 676, 21, 4255, 712, 5717, 8197, 589, 5583, 4075, 8202, 1222, 4106, 1581, 5718, 15674, 2]
+// Dependencies: [19, 17, 1961, 1891, 4102, 676, 21, 4285, 712, 5744, 8337, 589, 5637, 4104, 8342, 1222, 4135, 1609, 5745, 15714, 2]
 
-// Module 15673 (Loading)
+// Module 15713 (Loading)
 import closure_4 from "makeAuthenticated";
 import { View } from "useSafeAreaInsets";
 import comparator from "comparator";
@@ -16,11 +16,11 @@ import makeAuthenticated from "makeAuthenticated";
 
 const require = arg1;
 function Loading() {
-  return <View style={createCacheKey().flexLoading}>{jsx(require(5717) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
+  return <View style={createCacheKey().flexLoading}>{jsx(require(5744) /* ActivityIndicator */.ActivityIndicator, {})}</View>;
 }
 function MemberVerificationRouteView(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(8197), {});
+  return jsx(importDefault(8337), {});
 }
 function ExistingJoinRequestHandler(guildId) {
   guildId = guildId.guildId;
@@ -143,7 +143,7 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
       const obj2 = navigation(outer1_3[16]);
     }
   }, items);
-  importDefault(1581)();
+  importDefault(1609)();
   if (null == guildId) {
     let tmp10 = <Loading />;
   } else {
@@ -161,9 +161,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj1[0] = guildId;
     obj1[1] = callback;
     obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
-    obj[2] = jsx(importDefault(5718), { marginLeft: null, marginRight: null });
+    obj[2] = jsx(importDefault(5745), { marginLeft: null, marginRight: null });
     tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
-    const tmp3Result = importDefault(5718);
+    const tmp3Result = importDefault(5745);
   }
   return tmp10;
 });

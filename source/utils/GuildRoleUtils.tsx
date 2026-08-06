@@ -1,10 +1,10 @@
-// Module ID: 1939
-// Function ID: 1940
+// Module ID: 1968
+// Function ID: 1969
 // Name: compareGuildRoles
-// Dependencies: [11, 688, 1938, 1937, 2]
+// Dependencies: [11, 688, 1967, 1966, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
-// Module 1939 (compareGuildRoles)
+// Module 1968 (compareGuildRoles)
 function compareGuildRoles(guildId, id) {
   guildId = guildId.guildId;
   if (guildId.id === guildId) {
@@ -75,8 +75,8 @@ export const inviteRoleToDisplayData = function inviteRoleToDisplayData(id, id) 
   obj[3] = int2hexResult;
   let result = null;
   if (null != id.colors) {
-    result = require(1938) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj3 = require(1938) /* extractColorStringsFromServerColors */;
+    result = require(1967) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj3 = require(1967) /* extractColorStringsFromServerColors */;
   }
   obj[4] = result;
   let icon = id.icon;
@@ -114,7 +114,7 @@ export const filterRoleDeletes = function filterRoleDeletes(id, unsafeMutableRol
     for (const item10018 of items) {
       let tmp7 = importAll;
       let tmp8 = dependencyMap;
-      obj = importAll(1937);
+      obj = importAll(1966);
       obj[item10018.id] = obj.fromServer(arg0, item10018);
       continue;
     }

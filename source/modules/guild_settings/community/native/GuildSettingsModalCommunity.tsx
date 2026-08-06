@@ -1,10 +1,10 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16636
+// Function ID: 16637
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 1372, 1932, 3883, 3892, 1874, 8916, 15447, 676, 21, 4255, 712, 3959, 1480, 589, 8915, 1236, 5902, 5223, 4445, 4223, 8862, 1959, 7749, 4663, 5634, 5300, 2]
+// Dependencies: [19, 1372, 1961, 3912, 3921, 1903, 8945, 15485, 676, 21, 4285, 712, 3988, 1480, 589, 8944, 1236, 5929, 5253, 4475, 4253, 8891, 1988, 7890, 4693, 5688, 5354, 2]
 // Exports: default
 
-// Module 16596 (GuildSettingsModalCommunity)
+// Module 16636 (GuildSettingsModalCommunity)
 import computeChannelName from "computeChannelName";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -207,10 +207,10 @@ export default function GuildSettingsModalCommunity(guildId) {
     obj[0] = intl.string(preferredLocale(navigation[16]).t.Yr6nGx);
     obj[1] = callback1();
     obj[2] = function onItemSelect(rulesChannelId) {
-      let obj = callback(8915);
+      let obj = callback(8944);
       obj = { rulesChannelId };
       obj.updateGuild(obj);
-      callback(4223).hideActionSheet();
+      callback(4253).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -227,10 +227,10 @@ export default function GuildSettingsModalCommunity(guildId) {
     obj[0] = intl.string(preferredLocale(navigation[16]).t.VqhxxN);
     obj[1] = callback1();
     obj[2] = function onItemSelect(publicUpdatesChannelId) {
-      let obj = callback(8915);
+      let obj = callback(8944);
       obj = { publicUpdatesChannelId };
       obj.updateGuild(obj);
-      callback(4223).hideActionSheet();
+      callback(4253).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {

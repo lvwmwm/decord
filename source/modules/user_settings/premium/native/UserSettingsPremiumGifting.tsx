@@ -1,9 +1,9 @@
-// Module ID: 12702
-// Function ID: 12703
+// Module ID: 12739
+// Function ID: 12740
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8684, 6755, 676, 1876, 21, 4255, 712, 1348, 5634, 4251, 6771, 1480, 1581, 589, 12, 4489, 6775, 12616, 9467, 8680, 12569, 709, 6756, 6777, 8687, 7486, 5907, 8405, 12703, 1236, 12704, 12710, 12714, 12717, 12719, 7298, 8297, 2351, 12720, 5717, 2]
+// Dependencies: [32, 19, 17, 8713, 6782, 676, 1905, 21, 4285, 712, 1348, 5688, 4281, 6798, 1480, 1609, 589, 12, 4519, 6802, 12653, 9496, 8709, 12606, 709, 6783, 6804, 8716, 7514, 5934, 8546, 12740, 1236, 12741, 12747, 12751, 12754, 12756, 7326, 8437, 2380, 12757, 5744, 2]
 
-// Module 12702 (GiftingSectionTitle)
+// Module 12739 (GiftingSectionTitle)
 import getSystemLocale from "getSystemLocale";
 import importAllResult from "useBlockedPaymentsConfig";
 import get_ActivityIndicator from "apply";
@@ -32,12 +32,12 @@ function GiftingSectionTitle(title) {
   if (importDefault(1348)("UserSettingsPremiumGifting")) {
     let obj = { title: null };
     obj[0] = title;
-    let tmp3Result = tmp3(tmp4(5634).TableRowGroupTitle, obj);
+    let tmp3Result = tmp3(tmp4(5688).TableRowGroupTitle, obj);
   } else {
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: null };
     obj[0] = tmp.title;
     obj[4] = title;
-    tmp3Result = tmp3(tmp4(4251).Text, obj);
+    tmp3Result = tmp3(tmp4(4281).Text, obj);
   }
   return tmp3Result;
 }

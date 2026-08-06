@@ -1,9 +1,9 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 13723
+// Function ID: 13724
 // Name: _initialize
-// Dependencies: [7013, 676, 4433, 709, 5596, 2]
+// Dependencies: [7040, 676, 4463, 709, 5650, 2]
 
-// Module 13686 (_initialize)
+// Module 13723 (_initialize)
 import recountRelationshipTypes from "recountRelationshipTypes";
 import { RelationshipTypes } from "ME";
 import "initialize";

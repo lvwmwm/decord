@@ -1,10 +1,10 @@
-// Module ID: 1937
-// Function ID: 1938
+// Module ID: 1966
+// Function ID: 1967
 // Name: fromServerArray
-// Dependencies: [1412, 1936, 506, 688, 1938, 2]
+// Dependencies: [1412, 1965, 506, 688, 1967, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 1937 (fromServerArray)
+// Module 1966 (fromServerArray)
 import isValueEqual from "isValueEqual";
 import { GuildRoleRecordTypeTag } from "GuildRoleRecordTypeTag";
 
@@ -40,8 +40,8 @@ function fromServer(guildId, id) {
   obj[8] = colors;
   let result = null;
   if (null != id.colors) {
-    result = require(1938) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(1938) /* extractColorStringsFromServerColors */;
+    result = require(1967) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj4 = require(1967) /* extractColorStringsFromServerColors */;
   }
   obj[9] = result;
   ({ hoist: obj[10], managed } = id);
@@ -89,8 +89,8 @@ function fromSerialized(guildId, id) {
   obj[8] = colors;
   let result = null;
   if (null != id.colors) {
-    result = require(1938) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
-    const obj4 = require(1938) /* extractColorStringsFromServerColors */;
+    result = require(1967) /* extractColorStringsFromServerColors */.extractColorStringsFromServerColors(id.colors);
+    const obj4 = require(1967) /* extractColorStringsFromServerColors */;
   }
   obj[9] = result;
   ({ hoist: obj[10], managed } = id);

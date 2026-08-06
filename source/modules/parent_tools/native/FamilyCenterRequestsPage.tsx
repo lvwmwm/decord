@@ -1,10 +1,10 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14073
+// Function ID: 14074
 // Name: FamilyCenterMaxConnectionsBlurb
-// Dependencies: [19, 17, 6891, 10225, 21, 4255, 712, 7231, 7232, 11211, 1236, 2255, 4251, 10261, 5257, 13997, 14037, 14039, 14048, 2]
+// Dependencies: [19, 17, 6918, 10256, 21, 4285, 712, 7258, 7259, 11245, 1236, 2284, 4281, 10292, 5311, 14034, 14074, 14076, 14085, 2]
 // Exports: default
 
-// Module 14036 (FamilyCenterMaxConnectionsBlurb)
+// Module 14073 (FamilyCenterMaxConnectionsBlurb)
 import "set";
 import get_ActivityIndicator from "FamilyCenterAcceptedLinkRow";
 import items from "items";
@@ -22,13 +22,13 @@ let closure_6;
 let metroImportAll;
 const require = arg1;
 function FamilyCenterMaxConnectionsBlurb() {
-  let obj = require(7231) /* useUserIdsForLinkStatus */;
+  let obj = require(7258) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  require(11211) /* useAgeSpecificText */;
+  require(11245) /* useAgeSpecificText */;
   const intl = tmp2(1236).intl;
-  intl.formatToPlainString(tmp5(2255)["1/PzIj"], { maxConnections: importDefault(7232)() ? closure_5 : closure_6 });
+  intl.formatToPlainString(tmp5(2284)["1/PzIj"], { maxConnections: importDefault(7259)() ? closure_5 : closure_6 });
   const intl2 = tmp2(1236).intl;
   let tmp10 = null;
   if (hasMaxConnections) {
@@ -36,26 +36,26 @@ function FamilyCenterMaxConnectionsBlurb() {
     obj[0] = tmp.container;
     obj = { variant: "text-xxs/medium", color: "text-muted", children: null };
     obj[2] = tmp9;
-    obj[1] = callback(tmp2(4251).Text, obj);
+    obj[1] = callback(tmp2(4281).Text, obj);
     tmp10 = callback(closure_3, obj);
   }
   return tmp10;
 }
 function FamilyCenterHelpLineInfo() {
   const tmp = callback3();
-  let obj = require(10261) /* set */;
+  let obj = require(10292) /* set */;
   const shouldShowHelplineLink = obj.useShouldShowHelplineLink();
-  require(10261) /* set */;
+  require(10292) /* set */;
   if (shouldShowHelplineLink) {
     const intl2 = tmp2(1236).intl;
-    let formatResult = intl2.format(importDefault(2255)["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
+    let formatResult = intl2.format(importDefault(2284)["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
   } else {
     formatResult = null;
     if (tmp6) {
       const intl = tmp2(1236).intl;
       obj = { helpLink: null };
       obj[0] = THROUGHLINE_URL;
-      formatResult = intl.format(importDefault(2255)["6tsC8u"], obj);
+      formatResult = intl.format(importDefault(2284)["6tsC8u"], obj);
     }
   }
   let tmp11 = null;
@@ -65,11 +65,11 @@ function FamilyCenterHelpLineInfo() {
     const obj1 = { style: null, variant: "heading-sm/semibold", children: null };
     obj1[0] = tmp.supportHeader;
     const intl3 = tmp2(1236).intl;
-    obj1[2] = intl3.string(importDefault(2255)["7/tVhv"]);
-    const items = [callback(tmp2(4251).Text, obj1), ];
+    obj1[2] = intl3.string(importDefault(2284)["7/tVhv"]);
+    const items = [callback(tmp2(4281).Text, obj1), ];
     const obj2 = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj2[2] = formatResult;
-    items[1] = callback(tmp2(4251).Text, obj2);
+    items[1] = callback(tmp2(4281).Text, obj2);
     obj[1] = items;
     tmp11 = callback2(closure_3, obj);
   }
@@ -99,9 +99,9 @@ export default function FamilyCenterRequestsPage() {
   let obj = { style: tmp.scrollView, children: null };
   obj = { bottom: true, children: null };
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(13997), {}), callback(importDefault(14037), {}), callback(importDefault(14039), {}), callback(importDefault(14048), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
+  const items = [callback(importDefault(14034), {}), callback(importDefault(14074), {}), callback(importDefault(14076), {}), callback(importDefault(14085), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
-  obj[1] = callback(require(5257) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[1] = callback(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
   return callback(closure_4, obj);
 };

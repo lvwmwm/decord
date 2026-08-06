@@ -1,10 +1,10 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14475
+// Function ID: 14476
 // Name: AccessibilityIcon
-// Dependencies: [19, 21, 712, 3958, 14438, 2]
+// Dependencies: [19, 21, 712, 3987, 14476, 2]
 // Exports: AccessibilityIcon
 
-// Module 14437 (AccessibilityIcon)
+// Module 14475 (AccessibilityIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const AccessibilityIcon = function AccessibilityIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14438) /* registerAsset */;
+  obj[0] = require(14476) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11870
+// Function ID: 11871
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [3892, 676, 589, 2]
+// Dependencies: [3921, 676, 589, 2]
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 11836 (useIsRelationshipTypeSpamReportable)
+// Module 11870 (useIsRelationshipTypeSpamReportable)
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";
 

@@ -1,9 +1,9 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10901
+// Function ID: 10902
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 10869 (apexExperiment)
+// Module 10901 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, verticalScrollEnabled: false, loopingEnabled: false, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 15, orbAmount: 50 }, 3: { enabled: true, verticalScrollEnabled: false, loopingEnabled: true, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 15, orbAmount: 50 }, 4: { enabled: true, verticalScrollEnabled: false, loopingEnabled: false, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 15, orbAmount: 30 }, 5: { enabled: true, verticalScrollEnabled: false, loopingEnabled: false, ctaTimerMilliSeconds: 0, rewardTimerSeconds: 15, orbAmount: 50 }, 6: { enabled: true, verticalScrollEnabled: false, loopingEnabled: false, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 25, orbAmount: 50 }, 7: { enabled: true, verticalScrollEnabled: true, loopingEnabled: false, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 15, orbAmount: 50 }, 8: { enabled: true, verticalScrollEnabled: true, loopingEnabled: true, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 15, orbAmount: 50 }, 9: { enabled: true, verticalScrollEnabled: true, loopingEnabled: false, ctaTimerMilliSeconds: 3000, rewardTimerSeconds: 15, orbAmount: 30 }, 10: { enabled: true, verticalScrollEnabled: true, loopingEnabled: false, ctaTimerMilliSeconds: 0, rewardTimerSeconds: 15, orbAmount: 50 } };

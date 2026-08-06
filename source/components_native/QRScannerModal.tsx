@@ -1,12 +1,12 @@
-// Module ID: 13094
-// Function ID: 13095
+// Module ID: 13131
+// Function ID: 13132
 // Name: DCDQRScanner
-// Dependencies: [32, 19, 17, 676, 6891, 21, 500, 13095, 712, 5715, 1581, 1467, 13074, 4460, 13089, 1959, 5910, 11205, 3952, 4594, 1236, 8951, 7842, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 6918, 21, 500, 13132, 712, 5742, 1609, 1467, 13111, 4490, 13126, 1988, 5937, 11239, 3981, 4624, 1236, 8980, 7983, 1297, 2]
 // Exports: default
 
-// Module 13094 (DCDQRScanner)
+// Module 13131 (DCDQRScanner)
 import _slicedToArray from "_slicedToArray";
-import module_4594 from "module_4594";
+import module_4624 from "module_4624";
 import get_ActivityIndicator from "FAMILY_CENTER_REQUEST_MODAL_KEY";
 import { UserSettingsSections } from "ME";
 import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items";
@@ -59,7 +59,7 @@ export default function QRScannerModal(showHelp) {
   const tmp = undefined !== showHelp && showHelp;
   const tmp2 = callback(React.useState(true), 2);
   let obj = { style: { flex: 1 }, children: null };
-  ({ bottom, top } = importDefault(1581)());
+  ({ bottom, top } = importDefault(1609)());
   if (tmp3) {
     obj = { style: null };
     const items = [, ];
@@ -132,15 +132,15 @@ export default function QRScannerModal(showHelp) {
   }
   const items1 = [tmp10Result, , ];
   let obj1 = { accessibilityRole: "button", accessibilityLabel: null, source: null, style: null, onPress: null };
-  const tmp7 = importDefault(1581)();
+  const tmp7 = importDefault(1609)();
   let tmp8 = closure_9;
   let intl = onScanSuccess(1236).intl;
   obj1[1] = intl.string(onScanSuccess(1236).t.cpT0Cq);
-  obj1[2] = importDefault(7842);
+  obj1[2] = importDefault(7983);
   const items2 = [tmp12.closeButton, { marginTop: top }];
   obj1[3] = items2;
-  obj1[4] = importDefault(4460).pop;
-  items1[1] = tmp14(importDefault(8951), obj1);
+  obj1[4] = importDefault(4490).pop;
+  items1[1] = tmp14(importDefault(8980), obj1);
   let tmp14Result = null;
   if (tmp) {
     tmp14Result = null;

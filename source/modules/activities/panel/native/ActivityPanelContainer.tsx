@@ -1,8 +1,8 @@
-// Module ID: 15931
-// Function ID: 15932
-// Dependencies: [19, 1372, 1931, 1371, 21, 589, 3873, 692, 15932, 15941, 2]
+// Module ID: 15971
+// Function ID: 15972
+// Dependencies: [19, 1372, 1960, 1371, 21, 589, 3902, 692, 15972, 15981, 2]
 
-// Module 15931
+// Module 15971
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import participantFromServer from "participantFromServer";
@@ -48,9 +48,9 @@ const memoResult = require("noop").memo(function ActivityPanelContainer() {
     }
   }, [])) {
     obj = { children: null };
-    obj[0] = jsx(importDefault(15941), {});
-    tmp2 = jsx(importDefault(15932), { children: null });
-    const tmp5 = importDefault(15932);
+    obj[0] = jsx(importDefault(15981), {});
+    tmp2 = jsx(importDefault(15972), { children: null });
+    const tmp5 = importDefault(15972);
   }
   return tmp2;
 });

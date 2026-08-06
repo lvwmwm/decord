@@ -1,10 +1,10 @@
-// Module ID: 7904
-// Function ID: 7905
+// Module ID: 8045
+// Function ID: 8046
 // Name: DATE_CONFIG
-// Dependencies: [7905, 3837, 7906, 1236, 2]
+// Dependencies: [8046, 3866, 8047, 1236, 2]
 // Exports: getDisabledInterventions, getEnabledInterventions, getIncidentAlertType, getSecurityActionDetailsString, hasDMsDisabled, hasDetectedActivity, hasDetectedDMRaid, hasDetectedRaid, hasInvitesDisabled, initialLockdownDurationHours, isUnderLockdown
 
-// Module 7904 (DATE_CONFIG)
+// Module 8045 (DATE_CONFIG)
 import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY";
 
 let c3;
@@ -15,19 +15,19 @@ let obj = { month: "numeric", day: "numeric", hour: "numeric", minute: "2-digit"
 const result = require("GuildIncidentActionSources").fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidUtils.tsx");
 
 export const DATE_CONFIG = obj;
-export const hasDetectedActivity = function hasDetectedActivity(stateFromStores1) {
-  let tmp = null != stateFromStores1.dmSpamDetectedAt;
+export const hasDetectedActivity = function hasDetectedActivity(incidentsData) {
+  let tmp = null != incidentsData.dmSpamDetectedAt;
   if (tmp) {
-    const obj = importDefault(3837)(stateFromStores1.dmSpamDetectedAt);
-    tmp = importDefault(3837)(stateFromStores1.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3837)();
-    const addResult = importDefault(3837)(stateFromStores1.dmSpamDetectedAt).add(closure_3, "hours");
+    const obj = importDefault(3866)(incidentsData.dmSpamDetectedAt);
+    tmp = importDefault(3866)(incidentsData.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3866)();
+    const addResult = importDefault(3866)(incidentsData.dmSpamDetectedAt).add(closure_3, "hours");
   }
   if (!tmp) {
-    let tmp6 = null != stateFromStores1.raidDetectedAt;
+    let tmp6 = null != incidentsData.raidDetectedAt;
     if (tmp6) {
-      const obj2 = importDefault(3837)(stateFromStores1.raidDetectedAt);
-      tmp6 = importDefault(3837)(stateFromStores1.raidDetectedAt).add(closure_3, "hours") > importDefault(3837)();
-      const addResult1 = importDefault(3837)(stateFromStores1.raidDetectedAt).add(closure_3, "hours");
+      const obj2 = importDefault(3866)(incidentsData.raidDetectedAt);
+      tmp6 = importDefault(3866)(incidentsData.raidDetectedAt).add(closure_3, "hours") > importDefault(3866)();
+      const addResult1 = importDefault(3866)(incidentsData.raidDetectedAt).add(closure_3, "hours");
     }
     tmp = tmp6;
   }
@@ -36,18 +36,18 @@ export const hasDetectedActivity = function hasDetectedActivity(stateFromStores1
 export const hasDetectedRaid = function hasDetectedRaid(raidDetectedAt) {
   let tmp = null != raidDetectedAt.raidDetectedAt;
   if (tmp) {
-    const obj = importDefault(3837)(raidDetectedAt.raidDetectedAt);
-    tmp = importDefault(3837)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours") > importDefault(3837)();
-    const addResult = importDefault(3837)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours");
+    const obj = importDefault(3866)(raidDetectedAt.raidDetectedAt);
+    tmp = importDefault(3866)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours") > importDefault(3866)();
+    const addResult = importDefault(3866)(raidDetectedAt.raidDetectedAt).add(closure_3, "hours");
   }
   return tmp;
 };
 export const hasDetectedDMRaid = function hasDetectedDMRaid(dmSpamDetectedAt) {
   let tmp = null != dmSpamDetectedAt.dmSpamDetectedAt;
   if (tmp) {
-    const obj = importDefault(3837)(dmSpamDetectedAt.dmSpamDetectedAt);
-    tmp = importDefault(3837)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3837)();
-    const addResult = importDefault(3837)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours");
+    const obj = importDefault(3866)(dmSpamDetectedAt.dmSpamDetectedAt);
+    tmp = importDefault(3866)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours") > importDefault(3866)();
+    const addResult = importDefault(3866)(dmSpamDetectedAt.dmSpamDetectedAt).add(closure_3, "hours");
   }
   return tmp;
 };
@@ -55,47 +55,47 @@ export const getIncidentAlertType = function getIncidentAlertType(guildIncident)
   if (null != guildIncident) {
     let tmp = null != guildIncident.raidDetectedAt;
     if (tmp) {
-      const obj = importDefault(3837)(guildIncident.raidDetectedAt);
-      tmp = importDefault(3837)(guildIncident.raidDetectedAt).add(closure_3, "hours") > importDefault(3837)();
-      const addResult = importDefault(3837)(guildIncident.raidDetectedAt).add(closure_3, "hours");
+      const obj = importDefault(3866)(guildIncident.raidDetectedAt);
+      tmp = importDefault(3866)(guildIncident.raidDetectedAt).add(closure_3, "hours") > importDefault(3866)();
+      const addResult = importDefault(3866)(guildIncident.raidDetectedAt).add(closure_3, "hours");
     }
-    const GuildIncidentAlertTypes = require(7906) /* GuildIncidentActionSources */.GuildIncidentAlertTypes;
+    const GuildIncidentAlertTypes = require(8047) /* GuildIncidentActionSources */.GuildIncidentAlertTypes;
   }
 };
 export const getEnabledInterventions = function getEnabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (pauseInvites) {
-    items.push(require(7906) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(require(8047) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (pauseDms) {
-    items.push(require(7906) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(require(8047) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
 export const getDisabledInterventions = function getDisabledInterventions(pauseInvites, pauseDms) {
   const items = [];
   if (!pauseInvites) {
-    items.push(require(7906) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
+    items.push(require(8047) /* GuildIncidentActionSources */.GuildIncidentActionTypes.INVITES_DISABLED);
   }
   if (!pauseDms) {
-    items.push(require(7906) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
+    items.push(require(8047) /* GuildIncidentActionSources */.GuildIncidentActionTypes.DMS_DISABLED);
   }
   return items;
 };
-export const isUnderLockdown = function isUnderLockdown(guildIncident) {
-  let tmp = null != guildIncident.dmsDisabledUntil;
+export const isUnderLockdown = function isUnderLockdown(incidentsData) {
+  let tmp = null != incidentsData.dmsDisabledUntil;
   if (tmp) {
     const _Date = Date;
-    const date = new Date(guildIncident.dmsDisabledUntil);
+    const date = new Date(incidentsData.dmsDisabledUntil);
     const _Date2 = Date;
     const date1 = new Date();
     tmp = date > date1;
   }
   if (!tmp) {
-    let tmp11 = null != guildIncident.invitesDisabledUntil;
+    let tmp11 = null != incidentsData.invitesDisabledUntil;
     if (tmp11) {
       const _Date3 = Date;
-      const date2 = new Date(guildIncident.invitesDisabledUntil);
+      const date2 = new Date(incidentsData.invitesDisabledUntil);
       const _Date4 = Date;
       const date3 = new Date();
       tmp11 = date2 > date3;

@@ -1,9 +1,9 @@
-// Module ID: 10559
-// Function ID: 10560
+// Module ID: 10614
+// Function ID: 10615
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1371, 4268, 1218, 4302, 1931, 5089, 10539, 9626, 4273, 21, 4255, 1297, 712, 9634, 12, 10531, 10560, 589, 4448, 10561, 10564, 10574, 10590, 10591, 10598, 10527, 10616, 3959, 8017, 8957, 10546, 10542, 10545, 1474, 500, 8789, 2]
+// Dependencies: [32, 19, 17, 1371, 4298, 1218, 4332, 1960, 5119, 10594, 9657, 4303, 21, 4285, 1297, 712, 9665, 12, 10591, 10615, 589, 4478, 10616, 10619, 10629, 10645, 10646, 10653, 10587, 10672, 3988, 8158, 8986, 10601, 10597, 10600, 1474, 500, 8818, 2]
 
-// Module 10559 (areParticipantsEqual)
+// Module 10614 (areParticipantsEqual)
 import registerAsset from "registerAsset";
 import importAllResult from "isWatchTogetherApplication";
 import get_ActivityIndicator from "apply";
@@ -16,7 +16,7 @@ import anyoneHasFlagInContext from "anyoneHasFlagInContext";
 import initialize from "initialize";
 import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { ParticipantTypes } from "ParticipantTypes";
-import jsxProd from "module_4448";
+import jsxProd from "module_4478";
 import createCacheKey from "createCacheKey";
 import Button from "Button";
 
@@ -348,13 +348,13 @@ const memoResult = importAllResult.memo((arg0) => {
   let width;
   ({ channel, pipParticipant, selfParticipant } = arg0);
   const tmp = callback4();
-  let obj = require(10546) /* useIsViewingActivity */;
+  let obj = require(10601) /* useIsViewingActivity */;
   obj = { channelId: channel.id };
   const isViewingActivity = obj.useIsViewingActivity(obj);
-  let obj2 = require(10542) /* useShouldForcePipOrientation */;
+  let obj2 = require(10597) /* useShouldForcePipOrientation */;
   const shouldForcePipOrientation = obj2.useShouldForcePipOrientation({ channel });
   obj = { channelId: channel.id, forcedOrientation: shouldForcePipOrientation };
-  const tmp6 = importDefault(10545)(obj);
+  const tmp6 = importDefault(10600)(obj);
   const obj1 = { style: isViewingActivity ? tmp.backgroundPipFab : tmp.background, children: null };
   const items = [isViewingActivity ? tmp.pipFab : tmp.pip, , , ];
   ({ width, height } = importDefault(1474)());

@@ -1,10 +1,10 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10665
+// Function ID: 10666
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1477, 500, 1593, 1581, 10216, 2]
+// Dependencies: [32, 19, 1477, 500, 1621, 1609, 10247, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 10609 (useStableSafeAreaInsets)
+// Module 10665 (useStableSafeAreaInsets)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -50,11 +50,11 @@ export const getStableSafeAreaInsets = function getStableSafeAreaInsets(DEFAULT_
     DEFAULT_APP_ENTRY_KEY = require(1477) /* context */.DEFAULT_APP_ENTRY_KEY;
   }
   if (obj.isAndroid()) {
-    let stableSafeAreaInsets = importDefault(1593).getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
-    const obj3 = importDefault(1593);
+    let stableSafeAreaInsets = importDefault(1621).getStableSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
+    const obj3 = importDefault(1621);
   } else {
-    stableSafeAreaInsets = require(1581) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
-    const tmp3Result = require(1581) /* useSafeAreaInsets */;
+    stableSafeAreaInsets = require(1609) /* useSafeAreaInsets */.getSafeAreaInsets(DEFAULT_APP_ENTRY_KEY);
+    const tmp3Result = require(1609) /* useSafeAreaInsets */;
   }
   return stableSafeAreaInsets;
 };

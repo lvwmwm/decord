@@ -1,10 +1,10 @@
-// Module ID: 15058
-// Function ID: 15059
+// Module ID: 15096
+// Function ID: 15097
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 4247, 4106, 9441, 1481, 2]
+// Dependencies: [19, 4277, 4135, 9470, 1481, 2]
 // Exports: default
 
-// Module 15058 (useMessagesScrollToTop)
+// Module 15096 (useMessagesScrollToTop)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 

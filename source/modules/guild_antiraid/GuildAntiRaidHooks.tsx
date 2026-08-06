@@ -1,10 +1,10 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9689
+// Function ID: 9690
 // Name: getFirstGuildIncidentId
-// Dependencies: [1340, 1862, 3883, 4072, 1874, 9638, 7905, 676, 647, 11, 7904, 506, 3888, 9659, 2]
+// Dependencies: [1340, 1891, 3912, 4101, 1903, 9669, 8046, 676, 647, 11, 8045, 506, 3917, 9690, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 9658 (getFirstGuildIncidentId)
+// Module 9689 (getFirstGuildIncidentId)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -35,17 +35,17 @@ function getFirstGuildIncidentId(guildId) {
         let tmp19 = require;
         let tmp20 = dependencyMap;
         let tmp21 = dependencyMap;
-        let obj7 = require(7904) /* DATE_CONFIG */;
+        let obj7 = require(8045) /* DATE_CONFIG */;
         let tmp22 = tmp17;
         if (obj7.hasDetectedActivity(tmp18)) {
           let tmp8 = tmp20;
-          let tmp19Result = tmp19(7904);
+          let tmp19Result = tmp19(8045);
           let tmp9 = tmp17;
           if (!tmp19Result.isUnderLockdown(tmp18)) {
             let tmp11 = importAll;
             let tmp12 = tmp20;
             let obj4 = importAll(506);
-            let obj5 = importAll(3888);
+            let obj5 = importAll(3917);
             obj = { user: null, context: null, checkElevated: false };
             obj[0] = currentUser;
             let tmp13 = nextResult;
@@ -61,7 +61,7 @@ function getFirstGuildIncidentId(guildId) {
           }
         } else {
           let tmp6 = tmp20;
-          tmp19Result = tmp19(7904);
+          tmp19Result = tmp19(8045);
           let tmp7 = tmp17;
         }
       }
@@ -98,13 +98,13 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         let tmp20 = dependencyMap;
         let tmp17 = stateFromStores1;
         let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(7904);
+        let obj8 = stateFromStores1(8045);
         let tmp21 = tmp15;
         if (obj8.hasDetectedActivity(tmp16)) {
           let tmp9 = importAll;
           let tmp10 = tmp19;
           let obj5 = importAll(506);
-          let obj6 = importAll(3888);
+          let obj6 = importAll(3917);
           obj = { user: null, context: null, checkElevated: false };
           obj[0] = stateFromStores;
           let tmp11 = nextResult;
@@ -118,7 +118,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         } else {
           let tmp6 = tmp17;
           let tmp7 = tmp19;
-          let tmp18Result = tmp18(7904);
+          let tmp18Result = tmp18(8045);
           let tmp8 = tmp15;
         }
       }
@@ -156,8 +156,8 @@ export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = _require(7904).isUnderLockdown(stateFromStores1);
-    const tmpResult = _require(7904);
+    isUnderLockdownResult = _require(8045).isUnderLockdown(stateFromStores1);
+    const tmpResult = _require(8045);
   }
   obj[2] = isUnderLockdownResult;
   return obj;
@@ -191,8 +191,8 @@ export const shouldShowRaidInAppNotification = function shouldShowRaidInAppNotif
   }
   let isUnderLockdownResult = null != guildIncident;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = require(7904) /* DATE_CONFIG */.isUnderLockdown(guildIncident);
-    const obj2 = require(7904) /* DATE_CONFIG */;
+    isUnderLockdownResult = require(8045) /* DATE_CONFIG */.isUnderLockdown(guildIncident);
+    const obj2 = require(8045) /* DATE_CONFIG */;
   }
   const show = null != guildId && !isUnderLockdownResult && !(null != tmp2 && tmp2.disableRaidAlertNag);
   return { show, guildId };

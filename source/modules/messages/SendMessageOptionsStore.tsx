@@ -1,9 +1,9 @@
-// Module ID: 10104
-// Function ID: 10105
+// Module ID: 10135
+// Function ID: 10136
 // Name: getOptions
-// Dependencies: [4248, 589, 709, 2]
+// Dependencies: [4278, 589, 709, 2]
 
-// Module 10104 (getOptions)
+// Module 10135 (getOptions)
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 import { Store } from "initialize";
 

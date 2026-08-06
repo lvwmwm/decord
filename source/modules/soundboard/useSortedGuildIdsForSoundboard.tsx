@@ -1,10 +1,10 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 16033
+// Function ID: 16034
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 3883, 5107, 1874, 676, 505, 647, 3901, 2]
+// Dependencies: [19, 3912, 5137, 1903, 676, 505, 647, 3930, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 15993 (useSortedGuildIdsForSoundboard)
+// Module 16033 (useSortedGuildIdsForSoundboard)
 import noop from "noop";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import insertUnsortedGuilds from "insertUnsortedGuilds";

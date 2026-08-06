@@ -1,10 +1,10 @@
-// Module ID: 7804
-// Function ID: 7805
+// Module ID: 7945
+// Function ID: 7946
 // Name: _showReportModal
-// Dependencies: [5, 7805, 7806, 4460, 7807, 1959, 2]
+// Dependencies: [5, 7946, 7947, 4490, 7948, 1988, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 7804 (_showReportModal)
+// Module 7945 (_showReportModal)
 import asyncRequireImpl from "asyncRequireImpl";
 
 const require = arg1;
@@ -159,5 +159,5 @@ export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   return applyArgumentsResult;
 };
 export const hideReportModal = function hideReportModal() {
-  importDefault(4460).popWithKey(IN_APP_REPORT_MODAL_KEY);
+  importDefault(4490).popWithKey(IN_APP_REPORT_MODAL_KEY);
 };

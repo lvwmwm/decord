@@ -1,9 +1,9 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9081
+// Function ID: 9082
 // Name: AudioSettingsDefaultVolumes
 // Dependencies: [2]
 
-// Module 9052 (AudioSettingsDefaultVolumes)
+// Module 9081 (AudioSettingsDefaultVolumes)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/AudioSettingsDefaultVolumes.tsx");
 
 export const AudioSettingsDefaultVolumes = { USER: 100, [100]: "USER", STREAM: 18, [18]: "STREAM" };

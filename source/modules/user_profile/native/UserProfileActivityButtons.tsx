@@ -1,10 +1,10 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12225
+// Function ID: 12226
 // Name: JoinActivityButton
-// Dependencies: [5, 19, 1371, 1372, 4949, 4176, 1862, 10322, 3883, 3892, 1931, 4947, 4271, 676, 8797, 21, 4255, 712, 5595, 3873, 647, 12192, 12193, 7093, 4665, 1236, 7583, 10507, 4223, 11050, 9544, 1297, 8026, 11033, 3952, 12195, 8084, 4460, 4107, 7668, 4464, 4951, 1416, 10378, 5910, 8801, 11037, 1467, 8826, 2]
+// Dependencies: [5, 19, 1371, 1372, 4979, 4206, 1891, 10353, 3912, 3921, 1960, 4977, 4301, 676, 8826, 21, 4285, 712, 5649, 3902, 647, 12226, 12227, 7120, 4695, 1236, 7611, 10585, 4253, 11082, 9573, 1297, 8167, 11065, 3981, 12229, 8225, 4490, 4136, 7696, 4494, 4981, 1416, 10409, 5937, 8830, 11069, 1467, 8855, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 12191 (JoinActivityButton)
+// Module 12225 (JoinActivityButton)
 import handleInviteData from "handleInviteData";
 import "getEmbeddedActivityLocationChannelId";
 import participantFromServer from "participantFromServer";
@@ -103,7 +103,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let analyticsLocations;
   let set;
   let JOINED = dependencyMap;
-  analyticsLocations = importDefault(5595)().analyticsLocations;
+  analyticsLocations = importDefault(5649)().analyticsLocations;
   set = { id: application.id, deeplink_uri: application.deepLinkUri };
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [analyticsLocations, createGuildRecordFromRust, closure_7, upsertRelationship, handleConnectionOpen, updateVoiceState, getUncachedChannelPermissions, updateActivities, filterPlayingActivities, onAction];
@@ -111,8 +111,8 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let tmp3 = null;
   if (null != application) {
     tmp3 = null;
-    if (stateFromStores !== tmp(12193).ActivityJoinability.CANNOT_JOIN) {
-      if (stateFromStores === tmp(12193).ActivityJoinability.JOINED) {
+    if (stateFromStores !== tmp(12227).ActivityJoinability.CANNOT_JOIN) {
+      if (stateFromStores === tmp(12227).ActivityJoinability.JOINED) {
         const intl2 = tmp(1236).intl;
         let stringResult = intl2.string(tmp(1236).t.DPfdsq);
       } else {
@@ -121,7 +121,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
       }
       obj = { text: null, variant: "active", disabled: null, onPress: null };
       obj[0] = stringResult;
-      JOINED = tmp(12193).ActivityJoinability.JOINED;
+      JOINED = tmp(12227).ActivityJoinability.JOINED;
       obj[2] = stateFromStores === JOINED;
       obj[3] = function onPress() {
         onAction({ action: "PRESS_JOIN_BUTTON" });
@@ -130,7 +130,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
         const joined = obj.join(obj);
         outer1_1(outer1_2[28]).hideActionSheet();
       };
-      jsx(tmp(4665).Button, { text: null, variant: "active", disabled: null, onPress: null });
+      jsx(tmp(4695).Button, { text: null, variant: "active", disabled: null, onPress: null });
       const tmp6 = jsx;
     }
   }
@@ -143,7 +143,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
   let sync_id;
   sync_id = activity.sync_id;
   let tmp4 = null;
-  if (sync_id(9544)(activity)) {
+  if (sync_id(9573)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       let obj = { text: null, icon: null, variant: "secondary", onPress: null };
@@ -153,7 +153,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
       obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.LEgD7t, obj);
       obj = { size: null, source: null, disableColor: true, style: null };
       obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-      obj[1] = sync_id(8026);
+      obj[1] = sync_id(8167);
       obj[3] = tmp.icon;
       obj[1] = jsx(require(1297) /* Button */.Icon, { size: null, source: null, disableColor: true, style: null });
       obj[3] = callback(function*() {
@@ -232,7 +232,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
           }
         }
       });
-      tmp4 = jsx(require(4665) /* Button */.Button, { size: null, source: null, disableColor: true, style: null });
+      tmp4 = jsx(require(4695) /* Button */.Button, { size: null, source: null, disableColor: true, style: null });
     }
   }
   return tmp4;
@@ -242,10 +242,10 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
   let require;
   ({ activity, onAction: require } = arg0);
   let importDefault;
-  const tmp2 = importDefault(12195)(activity);
+  const tmp2 = importDefault(12229)(activity);
   importDefault = tmp2;
   let tmp3 = null;
-  if (importDefault(8084)(activity)) {
+  if (importDefault(8225)(activity)) {
     tmp3 = null;
     if (null != tmp2) {
       const obj = { text: null, variant: "secondary", onPress: null };
@@ -255,7 +255,7 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
         callback({ action: "PRESS_WATCH_BUTTON" });
         _undefined(outer1_2[34]).openURL(_undefined);
       };
-      tmp3 = jsx(require(4665) /* Button */.Button, { text: null, variant: "secondary", onPress: null });
+      tmp3 = jsx(require(4695) /* Button */.Button, { text: null, variant: "secondary", onPress: null });
     }
   }
   return tmp3;

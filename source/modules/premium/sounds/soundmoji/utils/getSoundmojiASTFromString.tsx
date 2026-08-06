@@ -1,10 +1,10 @@
-// Module ID: 4699
-// Function ID: 4700
+// Module ID: 4729
+// Function ID: 4730
 // Name: getSoundmojiASTFromString
-// Dependencies: [4700, 4472, 676, 4704, 4705, 4706, 4708, 1416, 2]
+// Dependencies: [4730, 4502, 676, 4734, 4735, 4736, 4738, 1416, 2]
 // Exports: default, getSoundmojiFromMessage
 
-// Module 4699 (getSoundmojiASTFromString)
+// Module 4729 (getSoundmojiASTFromString)
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import reinjectEphemerals from "reinjectEphemerals";
 import { MessageStates } from "ME";
@@ -17,14 +17,14 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
   let messageId;
   let soundboardSounds;
   ({ channelId, messageId, soundboardSounds } = guildId);
-  let obj = require(4704) /* getSoundmojiRenderingExperiment */;
+  let obj = require(4734) /* getSoundmojiRenderingExperiment */;
   let tmp5;
   if (obj.getSoundmojiRenderingExperiment({ location: "getSoundmojiASTFromString" })) {
     const soundById = store.getSoundById(tmp2);
-    const tmp9 = importDefault(4705)(soundById, guildId.guildId, channelId);
+    const tmp9 = importDefault(4735)(soundById, guildId.guildId, channelId);
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(4706)(channelId, messageId, tmp2, soundboardSounds);
+        const tmp16 = tmp8(4736)(channelId, messageId, tmp2, soundboardSounds);
         tmp5 = tmp16;
         if (tmp9) {
           tmp5 = tmp16;
@@ -53,7 +53,7 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
   }
   if (null == tmp5) {
     obj = { type: "text", content: null };
-    obj[1] = importDefault(4708)(tmp, tmp2);
+    obj[1] = importDefault(4738)(tmp, tmp2);
     return obj;
   } else {
     let name;
@@ -102,10 +102,10 @@ export const soundmojiRawFormatRegex = /^<sound:(\d+):(\d+)>/;
 export const getSoundmojiFromMessage = function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, arg4) {
   if (obj.getSoundmojiRenderingExperiment({ location: "getSoundmojiASTFromString" })) {
     const soundById = store.getSoundById(soundId);
-    const tmp9 = importDefault(4705)(soundById, guildId, channelId);
+    const tmp9 = importDefault(4735)(soundById, guildId, channelId);
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(4706)(channelId, messageId, soundId, arg4);
+        const tmp16 = tmp8(4736)(channelId, messageId, soundId, arg4);
         if (tmp9) {
           if (null == tmp16) {
             const message = store2.getMessage(channelId, messageId);

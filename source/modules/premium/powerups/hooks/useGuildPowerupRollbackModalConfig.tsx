@@ -1,10 +1,10 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11791
+// Function ID: 11792
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 1862, 4142, 589, 11758, 4146, 11743, 11745, 1358, 1236, 2287, 2]
+// Dependencies: [19, 1891, 4172, 589, 11792, 4176, 11777, 11779, 1358, 1236, 2316, 2]
 // Exports: default
 
-// Module 11757 (useGuildPowerupRollbackModalConfig)
+// Module 11791 (useGuildPowerupRollbackModalConfig)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import calculateAppliedBoosts from "calculateAppliedBoosts";

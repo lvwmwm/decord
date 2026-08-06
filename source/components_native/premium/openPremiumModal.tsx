@@ -1,12 +1,12 @@
-// Module ID: 8404
-// Function ID: 8405
+// Module ID: 8545
+// Function ID: 8546
 // Name: openPremiumModal
-// Dependencies: [4460, 6768, 1959, 2]
+// Dependencies: [4490, 6795, 1988, 2]
 // Exports: default
 
-// Module 8404 (openPremiumModal)
+// Module 8545 (openPremiumModal)
 const result = require("asyncRequireImpl").fileFinishedImporting("components_native/premium/openPremiumModal.tsx");
 
 export default function openPremiumModal(closure_0) {
-  return importDefault(4460).pushLazy(require(1959) /* asyncRequireImpl */(6768, dependencyMap.paths), closure_0, "PREMIUM_KEY", { presentation: "modal" });
+  return importDefault(4490).pushLazy(require(1988) /* asyncRequireImpl */(6795, dependencyMap.paths), closure_0, "PREMIUM_KEY", { presentation: "modal" });
 };

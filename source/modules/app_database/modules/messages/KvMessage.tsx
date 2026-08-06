@@ -1,9 +1,9 @@
-// Module ID: 6840
-// Function ID: 6841
+// Module ID: 6867
+// Function ID: 6868
 // Name: fromMessage
-// Dependencies: [32, 1942, 1874, 676, 2]
+// Dependencies: [32, 1971, 1903, 676, 2]
 
-// Module 6840 (fromMessage)
+// Module 6867 (fromMessage)
 import _slicedToArray from "_slicedToArray";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";

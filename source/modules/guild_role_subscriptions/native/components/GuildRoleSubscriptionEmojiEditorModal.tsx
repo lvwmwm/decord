@@ -1,10 +1,10 @@
-// Module ID: 16700
-// Function ID: 16701
+// Module ID: 16740
+// Function ID: 16741
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5129, 21, 4255, 712, 16691, 589, 5221, 1416, 16697, 1236, 4593, 4683, 7749, 16687, 4251, 2]
+// Dependencies: [5, 32, 19, 17, 5159, 21, 4285, 712, 16731, 589, 5251, 1416, 16737, 1236, 4623, 4713, 7890, 16727, 4281, 2]
 // Exports: default
 
-// Module 16700 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 16740 (GuildRoleSubscriptionEmojiEditorModal)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import set from "set";

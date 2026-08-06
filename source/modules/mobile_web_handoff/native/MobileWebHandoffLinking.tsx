@@ -1,9 +1,9 @@
-// Module ID: 5825
-// Function ID: 5826
+// Module ID: 5852
+// Function ID: 5853
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4460, 5826, 5828, 698, 513, 5829, 1467, 3952, 2]
+// Dependencies: [5, 1218, 676, 4490, 5853, 5855, 698, 513, 5856, 1467, 3981, 2]
 
-// Module 5825 (createHandoffTokenWithLoadingModal)
+// Module 5852 (createHandoffTokenWithLoadingModal)
 import _createHandoffToken from "_createHandoffToken";
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";

@@ -1,9 +1,9 @@
-// Module ID: 8973
-// Function ID: 8974
+// Module ID: 9002
+// Function ID: 9003
 // Name: _computeRows
-// Dependencies: [7201, 7014, 1372, 3883, 3892, 676, 7090, 8961, 1351, 589, 709, 2]
+// Dependencies: [7228, 7041, 1372, 3912, 3921, 676, 7117, 8990, 1351, 589, 709, 2]
 
-// Module 8973 (_computeRows)
+// Module 9002 (_computeRows)
 import handleConnectionOpen from "handleConnectionOpen";
 import recomputeAffinities from "recomputeAffinities";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -33,7 +33,7 @@ function _computeRows(query) {
   if (!tmp) {
     id = id.id;
   }
-  const mostRecentDMedUser = set1(8961).getMostRecentDMedUser(set, id);
+  const mostRecentDMedUser = set1(8990).getMostRecentDMedUser(set, id);
   let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
   if (!isBlockedOrIgnoredResult) {
     isBlockedOrIgnoredResult = upsertRelationship.isBlockedOrIgnored(mostRecentDMedUser.id);
@@ -56,8 +56,8 @@ function _computeRows(query) {
     const substr = found2.slice(0, 3);
     const item = substr.forEach((id) => set1.add(id.id));
   }
-  const obj2 = set1(8961);
-  return set1(8961).generateRowsForQuery({ query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType: closure_7 });
+  const obj2 = set1(8990);
+  return set1(8990).generateRowsForQuery({ query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType: closure_7 });
 }
 ({ ChannelTypes: map1, Permissions: closure_14 } = ME);
 let set = new Set();
@@ -105,7 +105,7 @@ const inviteSuggestionsStore = new InviteSuggestionsStore(require("dispatcher"),
     }
     const applicationId = guild.applicationId;
     const blockedOrIgnoredIDs = upsertRelationship.getBlockedOrIgnoredIDs();
-    let obj = require(8961) /* isGuildMember */;
+    let obj = require(8990) /* isGuildMember */;
     obj = { channel, applicationId, inviteTargetType };
     const usersAlreadyJoined = obj.getUsersAlreadyJoined(obj);
     const items = [...usersAlreadyJoined];

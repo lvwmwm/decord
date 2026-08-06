@@ -1,9 +1,9 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13295
+// Function ID: 13296
 // Name: AccessibilityAnnouncer
-// Dependencies: [3975, 4673, 5262, 13259, 2, 3968, 3969, 3973, 3974, 3962, 3963, 3964, 3965, 3967, 4031, 4664, 4668, 4256, 4259, 4258, 10823, 4255, 4648, 13260, 13261, 13262, 13263, 4251, 4599, 3959, 3960, 8553, 5323, 5578, 7626, 5631, 5632, 8870, 5322, 10083, 13264, 5579, 8904, 5630, 5629, 5633, 4647, 13265, 13267, 13269, 13271, 13273, 10688, 13275, 13277, 13279, 13281, 13283, 13285, 13287, 13289, 13291, 13293, 4665, 7644, 9018, 8564, 13295, 5102, 10420, 13204, 5300, 5635, 5634, 5306, 7767, 8231, 7766, 7752, 4598, 4595, 5302, 9035, 9451, 8850, 10222, 11857, 13296, 8380, 13297, 8381, 13299, 7686, 5894, 5895, 5886, 5887, 13300, 7759, 7758, 7685, 8276, 8548, 8552, 8547, 13301, 7627, 5584, 5582, 4663, 4653, 5650, 13302, 5651, 13303, 5220, 5223, 5712, 5902, 1480, 5719, 5229, 5581, 5716, 11220, 13304, 10152, 7730, 13306, 11218, 10151, 7729, 13305, 5299, 12186, 13307, 11859, 10156, 10157, 13308, 5717]
+// Dependencies: [4004, 4703, 5316, 13296, 2, 3997, 3998, 4002, 4003, 3991, 3992, 3993, 3994, 3996, 4060, 4694, 4698, 4286, 4289, 4288, 10878, 4285, 4678, 13297, 13298, 13299, 13300, 4281, 4629, 3988, 3989, 8582, 5377, 5632, 7654, 5685, 5686, 8899, 5376, 10114, 13301, 5633, 8933, 5684, 5683, 5687, 4677, 13302, 13304, 13306, 13308, 13310, 10743, 13312, 13314, 13316, 13318, 13320, 13322, 13324, 13326, 13328, 13330, 4695, 7672, 9047, 8593, 13332, 5132, 10451, 13241, 5354, 5689, 5688, 5360, 7908, 8371, 7907, 7893, 4628, 4625, 5356, 9064, 9480, 8879, 10253, 11891, 13333, 8521, 13334, 8522, 13336, 7714, 5921, 5922, 5913, 5914, 13337, 7900, 7899, 7713, 8416, 8577, 8581, 8576, 13338, 7655, 5638, 5636, 4693, 4683, 5704, 13339, 5705, 13340, 5250, 5253, 5739, 5929, 1480, 5746, 5259, 5635, 5743, 11254, 13341, 10183, 7731, 13343, 11252, 10182, 7730, 13342, 5353, 12220, 13344, 11893, 10187, 10188, 13345, 5744]
 
-// Module 13258 (AccessibilityAnnouncer)
+// Module 13295 (AccessibilityAnnouncer)
 const result = require("TABLE_ROW_HEIGHT").fileFinishedImporting("design/native.tsx");
 
 export const AccessibilityAnnouncer = require("AccessibilityAnnouncer").AccessibilityAnnouncer;
@@ -250,8 +250,8 @@ export const useNavigatorScreens = require("NavigationStack").useNavigatorScreen
 export const useAccessibilityNativeStackOptions = require("NavigationStack").useAccessibilityNativeStackOptions;
 export const useAccessibilityNativeStackFocusTracking = require("useAccessibilityNativeStackFocusTracking").useAccessibilityNativeStackFocusTracking;
 export const useNavigatorShouldCrossfade = require("useNavigatorShouldCrossfade").useNavigatorShouldCrossfade;
-export const createAccessibleNativeStackNavigator = require("navigatorFactory");
-export const useAccessibilityPatchedDescriptors = require("navigatorFactory").useAccessibilityPatchedDescriptors;
+export const createAccessibleNativeStackNavigator = require("AccessibleNativeStackNavigator");
+export const useAccessibilityPatchedDescriptors = require("AccessibleNativeStackNavigator").useAccessibilityPatchedDescriptors;
 export const NAV_BAR_HEIGHT = require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT;
 export const NAV_BAR_HEIGHT_MULTILINE = require("NAV_BAR_HEIGHT").NAV_BAR_HEIGHT_MULTILINE;
 export const STATUS_BAR_HEIGHT = require("NAV_BAR_HEIGHT").STATUS_BAR_HEIGHT;
@@ -273,7 +273,6 @@ export const useTabNavigation = require("useNavigation").useTabNavigation;
 export const NavigationRoute = require("useNavigation").NavigationRoute;
 export const StackNavigationProp = require("useNavigation").StackNavigationProp;
 export const useNavigationTheme = require("useNavigationTheme").useNavigationTheme;
-export const NavigationTheme = require("useNavigationTheme").NavigationTheme;
 export const useNavigatorBackPressHandler = require("useNavigatorBackPressHandler").useNavigatorBackPressHandler;
 export const NavScrim = require("NavScrim").NavScrim;
 export const SceneLoadingIndicator = require("SceneLoadingIndicator").SceneLoadingIndicator;

@@ -1,9 +1,10 @@
-// Module ID: 15964
-// Function ID: 15965
-// Dependencies: [19, 10478, 21, 589, 15965, 15967, 2]
+// Module ID: 16004
+// Function ID: 16005
+// Dependencies: [19, 10509, 10510, 21, 589, 16005, 16007, 2]
 
-// Module 15964
+// Module 16004
 import map from "map";
+import { isLaunched } from "FrameLayoutModes";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -12,14 +13,14 @@ const memoResult = require("noop").memo(function FramePanelContainer() {
   let obj = require(589) /* initialize */;
   const items = [map];
   let tmp2 = null;
-  if (obj.useStateFromStores(items, () => null != connectedFrame.getConnectedFrame())) {
+  if (obj.useStateFromStores(items, () => callback(mainFrame.getMainFrame()))) {
     obj = { children: null };
-    obj[0] = jsx(importDefault(15967), {});
-    tmp2 = jsx(importDefault(15965), { children: null });
-    const tmp5 = importDefault(15965);
+    obj[0] = jsx(importDefault(16007), {});
+    tmp2 = jsx(importDefault(16005), { children: null });
+    const tmp5 = importDefault(16005);
   }
   return tmp2;
 });
-const result = require("jsxProd").fileFinishedImporting("modules/frames/panel/native/FramePanelContainer.tsx");
+const result = require("FrameLayoutModes").fileFinishedImporting("modules/frames/panel/native/FramePanelContainer.tsx");
 
 export default memoResult;

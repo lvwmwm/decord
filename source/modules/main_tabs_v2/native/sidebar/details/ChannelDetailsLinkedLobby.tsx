@@ -1,10 +1,10 @@
-// Module ID: 15666
-// Function ID: 15667
+// Module ID: 15704
+// Function ID: 15705
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 676, 21, 4255, 712, 5601, 4251, 1236, 1945, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 5655, 4281, 1236, 1974, 2]
 // Exports: default
 
-// Module 15666 (ChannelDetailsLinkedLobby)
+// Module 15704 (ChannelDetailsLinkedLobby)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -27,7 +27,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
   let divider = createCacheKey();
   let BPDKoA = require;
   let getArticleURL = dependencyMap;
-  let obj = require(5601) /* useGetOrFetchApplications */;
+  let obj = require(5655) /* useGetOrFetchApplications */;
   const linkedLobby = channel.linkedLobby;
   let application_id;
   if (linkedLobby != null) {
@@ -40,7 +40,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj = { style: null, children: null };
     const items = [divider.container, channel.containerStyle];
     obj[0] = items;
-    let Text = BPDKoA(4251).Text;
+    let Text = BPDKoA(4281).Text;
     if (null != intl) {
       const intl3 = BPDKoA(1236).intl;
       obj = { applicationName: null };
@@ -56,7 +56,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     intl = BPDKoA(1236).intl;
     BPDKoA = BPDKoA(1236).t.BPDKoA;
     const obj3 = { helpdeskArticle: null };
-    getArticleURL = importDefault(1945).getArticleURL;
+    getArticleURL = importDefault(1974).getArticleURL;
     obj3[0] = getArticleURL(HelpdeskArticles.LINKED_LOBBIES);
     items1[2] = intl.format(BPDKoA, obj3);
     obj2[0] = items1;
@@ -70,6 +70,6 @@ export default function ChannelDetailsLinkedLobby(channel) {
     obj[1] = items2;
     closure_6(View, obj);
     const tmp5 = closure_5;
-    const tmp8 = importDefault(1945);
+    const tmp8 = importDefault(1974);
   }
 };

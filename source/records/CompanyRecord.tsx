@@ -1,9 +1,9 @@
-// Module ID: 4279
-// Function ID: 4280
+// Module ID: 4309
+// Function ID: 4310
 // Name: createFromServer
-// Dependencies: [1883, 2]
+// Dependencies: [1912, 2]
 
-// Module 4279 (createFromServer)
+// Module 4309 (createFromServer)
 import "toJS";
 
 let prototype;

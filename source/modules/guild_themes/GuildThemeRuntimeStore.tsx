@@ -1,9 +1,9 @@
-// Module ID: 4141
-// Function ID: 4142
+// Module ID: 4171
+// Function ID: 4172
 // Name: snapshotSelectedGuildId
-// Dependencies: [4142, 1862, 4072, 676, 4146, 1861, 12, 589, 709, 2]
+// Dependencies: [4172, 1891, 4101, 676, 4176, 1890, 12, 589, 709, 2]
 
-// Module 4141 (snapshotSelectedGuildId)
+// Module 4171 (snapshotSelectedGuildId)
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -25,7 +25,7 @@ function snapshotSelectedGuildId(guildId) {
     if (guild != null) {
       guildTheme = guild.guildTheme;
     }
-    const cloneGuildThemeResult = require(1861) /* cloneGuildThemeSettings */.cloneGuildTheme(guildTheme);
+    const cloneGuildThemeResult = require(1890) /* cloneGuildThemeSettings */.cloneGuildTheme(guildTheme);
     const guild1 = store.getGuild(guildId);
     let hasItem;
     if (guild1 != null) {
@@ -51,7 +51,7 @@ function snapshotSelectedGuildId(guildId) {
       obj[2] = tmp8;
       flag = true;
     }
-    const obj3 = require(1861) /* cloneGuildThemeSettings */;
+    const obj3 = require(1890) /* cloneGuildThemeSettings */;
     const obj4 = store;
     tmp11 = require;
   }
@@ -64,7 +64,7 @@ function handleSavedGuildTheme(guildId) {
   guildId = guildId.guildId;
   let tmp = guildId === store2.getGuildId();
   if (tmp) {
-    let obj = require(1861) /* cloneGuildThemeSettings */;
+    let obj = require(1890) /* cloneGuildThemeSettings */;
     const cloneGuildThemeResult = obj.cloneGuildTheme(guildId.guildTheme);
     const guild = store.getGuild(guildId);
     let hasItem;
@@ -216,7 +216,7 @@ const guildThemeRuntimeStore = new GuildThemeRuntimeStore(require("dispatcher"),
             if (stateForGuild != null) {
               const unlockedPowerups = stateForGuild.unlockedPowerups;
               if (unlockedPowerups != null) {
-                tmp14 = unlockedPowerups[require(undefined, 4146) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
+                tmp14 = unlockedPowerups[require(undefined, 4176) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
               }
             }
             let tmp17 = null != tmp14;
@@ -231,7 +231,7 @@ const guildThemeRuntimeStore = new GuildThemeRuntimeStore(require("dispatcher"),
             tmp19 = tmp17;
           }
           if (tmp19) {
-            obj = require(1861) /* cloneGuildThemeSettings */;
+            obj = require(1890) /* cloneGuildThemeSettings */;
             const guild2 = obj4.getGuild(id);
             guildTheme = undefined;
             if (guild2 != null) {

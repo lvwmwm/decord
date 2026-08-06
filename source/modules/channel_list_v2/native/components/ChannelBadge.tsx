@@ -1,10 +1,10 @@
-// Module ID: 11548
-// Function ID: 11549
+// Module ID: 11582
+// Function ID: 11583
 // Name: renderChannelBadge
-// Dependencies: [19, 21, 1297, 11547, 4251, 1236, 1851, 2]
+// Dependencies: [19, 21, 1297, 11581, 4281, 1236, 1879, 2]
 // Exports: renderChannelBadge
 
-// Module 11548 (renderChannelBadge)
+// Module 11582 (renderChannelBadge)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -34,24 +34,24 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(require(11547) /* renderChannelBadge */.NewBadge, {});
+    tmp2 = jsx(require(11581) /* renderChannelBadge */.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
         obj = { variant: "text-xs/bold", color: "text-brand", children: null };
         const intl = require(1236) /* getSystemLocale */.intl;
         const obj1 = { count: null };
-        obj1[0] = require(1851) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale);
+        obj1[0] = require(1879) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale);
         obj[2] = intl.format(require(1236) /* getSystemLocale */.t.GkAbqY, obj1);
-        tmp2 = jsx(require(4251) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
-        const obj5 = require(1851) /* shortenAndLocalizeNumber */;
+        tmp2 = jsx(require(4281) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
+        const obj5 = require(1879) /* shortenAndLocalizeNumber */;
       }
     }
     if (null != postsWithUnreadsCount) {
       if (postsWithUnreadsCount > 0) {
         const obj2 = { variant: "text-xs/bold", color: "text-muted", children: null };
         obj2[2] = postsWithUnreadsCount;
-        tmp2 = jsx(require(4251) /* Text */.Text, { variant: "text-xs/bold", color: "text-muted", children: null });
+        tmp2 = jsx(require(4281) /* Text */.Text, { variant: "text-xs/bold", color: "text-muted", children: null });
       }
     }
     tmp2 = null;

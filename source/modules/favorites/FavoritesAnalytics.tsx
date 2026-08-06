@@ -1,10 +1,10 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9635
+// Function ID: 9636
 // Name: setNextFavoritesGuildViewSource
-// Dependencies: [4072, 676, 1865, 698, 2]
+// Dependencies: [4101, 676, 1894, 698, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddModalOpened, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildUpsellModalOpened, trackFavoritesGuildViewed, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 9604 (setNextFavoritesGuildViewSource)
+// Module 9635 (setNextFavoritesGuildViewSource)
 import handleConnectionOpen from "handleConnectionOpen";
 import { AnalyticEvents } from "ME";
 
@@ -34,9 +34,9 @@ export const trackFavoritesGuildRemoveFromFavorites = function trackFavoritesGui
 export const trackFavoritesGuildOrderUpdated = function trackFavoritesGuildOrderUpdated() {
   importDefault(698).track(AnalyticEvents.FAVORITES_GUILD_ORDER_UPDATED);
 };
-export const trackFavoritesGuildVisibilitySettingToggled = function trackFavoritesGuildVisibilitySettingToggled(source, closure_0) {
+export const trackFavoritesGuildVisibilitySettingToggled = function trackFavoritesGuildVisibilitySettingToggled(settings_page, closure_0) {
   let obj = importDefault(698);
-  obj = { source, is_visible: closure_0 };
+  obj = { source: settings_page, is_visible: closure_0 };
   obj.track(AnalyticEvents.FAVORITES_GUILD_SETTING_TOGGLED, obj);
 };
 export const trackFavoritesGuildUpsellModalOpened = function trackFavoritesGuildUpsellModalOpened(source) {

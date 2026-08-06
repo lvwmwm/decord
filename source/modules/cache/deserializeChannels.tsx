@@ -1,10 +1,10 @@
-// Module ID: 1928
-// Function ID: 1929
+// Module ID: 1957
+// Function ID: 1958
 // Name: deserializeChannels
 // Dependencies: [32, 506, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 1928 (deserializeChannels)
+// Module 1957 (deserializeChannels)
 import _slicedToArray from "_slicedToArray";
 
 function deserializeChannels(arg0) {

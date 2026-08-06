@@ -1,18 +1,18 @@
-// Module ID: 12381
-// Function ID: 12382
+// Module ID: 12418
+// Function ID: 12419
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 8706, 5916, 1358, 2]
+// Dependencies: [32, 8735, 5943, 1358, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 12381 (useShopThisLookMarketing)
+// Module 12418 (useShopThisLookMarketing)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
 const result = require("useSelectedDismissibleContent").fileFinishedImporting("modules/collectibles/shop_this_look/useShopThisLookMarketing.tsx");
 
 export const useShopThisLookMarketing = function useShopThisLookMarketing(id, guildId, isShopThisLookMobileEnabled) {
-  let obj = require(8706) /* useEquippedCollectibleSkuIds */;
-  require(5916) /* useSelectedDismissibleContent */;
+  let obj = require(8735) /* useEquippedCollectibleSkuIds */;
+  require(5943) /* useSelectedDismissibleContent */;
   if (isShopThisLookMobileEnabled) {
     if (tmp3) {
       const items = [require(1358) /* DismissibleContent */.DismissibleContent.SHOP_THIS_LOOK_WEB_MARKETING];

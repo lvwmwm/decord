@@ -1,9 +1,9 @@
-// Module ID: 16665
-// Function ID: 16666
+// Module ID: 16705
+// Function ID: 16706
 // Name: useRoleSubscriptionSettingsDisabled
-// Dependencies: [2, 16666]
+// Dependencies: [2, 16706]
 
-// Module 16665 (useRoleSubscriptionSettingsDisabled)
+// Module 16705 (useRoleSubscriptionSettingsDisabled)
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/RoleSubscriptionSettingsDisabledContext.tsx");
 
 export { default } from "context";

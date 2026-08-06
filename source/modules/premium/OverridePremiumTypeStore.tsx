@@ -1,9 +1,9 @@
-// Module ID: 1875
-// Function ID: 1876
+// Module ID: 1904
+// Function ID: 1905
 // Name: setPremiumTypeActual
-// Dependencies: [1876, 1880, 589, 709, 2]
+// Dependencies: [1905, 1909, 589, 709, 2]
 
-// Module 1875 (setPremiumTypeActual)
+// Module 1904 (setPremiumTypeActual)
 import GuildFeatures from "GuildFeatures";
 import { PersistedStore } from "initialize";
 
@@ -14,7 +14,7 @@ function setPremiumTypeActual(user) {
       return false;
     }
   }
-  closure_4.premiumTypeActual = require(1880) /* validatePremiumType */.getPremiumTypeFromRawValue(user.premium_type);
+  closure_4.premiumTypeActual = require(1909) /* validatePremiumType */.getPremiumTypeFromRawValue(user.premium_type);
 }
 const UNSELECTED_CREATED_AT_DATE = GuildFeatures.UNSELECTED_CREATED_AT_DATE;
 const UNSELECTED_PREMIUM_TYPE_OVERRIDE = GuildFeatures.UNSELECTED_PREMIUM_TYPE_OVERRIDE;

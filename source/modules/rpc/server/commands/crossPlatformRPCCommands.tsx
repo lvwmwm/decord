@@ -1,32 +1,32 @@
-// Module ID: 13612
-// Function ID: 13613
+// Module ID: 13649
+// Function ID: 13650
 // Name: crossPlatformCommands
-// Dependencies: [13613, 13615, 13617, 13618, 13619, 13620, 13621, 13626, 13632, 13633, 13634, 13635, 13636, 13637, 13638, 13645, 13648, 13649, 13650, 13651, 13652, 13653, 13654, 2]
+// Dependencies: [13650, 13652, 13654, 13655, 13656, 13657, 13658, 13663, 13669, 13670, 13671, 13672, 13673, 13674, 13675, 13682, 13685, 13686, 13687, 13688, 13689, 13690, 13691, 2]
 
-// Module 13612 (crossPlatformCommands)
-import merged from "module_13613";
+// Module 13649 (crossPlatformCommands)
+import merged from "module_13650";
 import merged1 from "RPC_LOCAL_SCOPE";
 import merged2 from "items";
-import merged3 from "module_13618";
-import merged4 from "module_13619";
-import merged5 from "module_13620";
+import merged3 from "module_13655";
+import merged4 from "module_13656";
+import merged5 from "module_13657";
 import merged6 from "items";
 import merged7 from "set";
-import merged8 from "module_13632";
-import merged9 from "module_13633";
+import merged8 from "module_13669";
+import merged9 from "module_13670";
 import merged10 from "AM_HARMONY_PRD_APPLICATION_ID";
 import merged11 from "items";
 import merged12 from "RPC_LOCAL_SCOPE";
-import merged13 from "module_13637";
+import merged13 from "module_13674";
 import merged14 from "getSubscriptionSkusViaListings";
-import merged15 from "module_13645";
+import merged15 from "module_13682";
 import merged16 from "RPC_EMBEDDED_APP_SCOPE";
 import merged17 from "handler";
 import merged18 from "sum";
 import merged19 from "RPC_LOCAL_SCOPE";
-import merged20 from "module_13652";
-import merged21 from "module_13653";
-import merged22 from "module_13654";
+import merged20 from "module_13689";
+import merged21 from "module_13690";
+import merged22 from "module_13691";
 
 const result = require("items").fileFinishedImporting("modules/rpc/server/commands/crossPlatformRPCCommands.tsx");
 

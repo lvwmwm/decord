@@ -1,19 +1,19 @@
-// Module ID: 1921
-// Function ID: 1922
+// Module ID: 1950
+// Function ID: 1951
 // Name: databases
-// Dependencies: [1916, 2]
+// Dependencies: [1945, 2]
 
-// Module 1921 (databases)
+// Module 1950 (databases)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
 const prototype = function Kv() {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["databases"] = function databases() {
-  const Host = require(1916) /* open */.Host;
+  const Host = require(1945) /* open */.Host;
   return Host.list();
 };
 prototype["optimize"] = function optimize(arg0) {
-  const Host = require(1916) /* open */.Host;
+  const Host = require(1945) /* open */.Host;
   return Host.optimize(arg0);
 };
 

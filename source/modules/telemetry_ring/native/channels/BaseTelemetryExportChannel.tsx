@@ -1,9 +1,9 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13373
+// Function ID: 13374
 // Name: getIntervalMs
-// Dependencies: [5, 13337, 3, 595, 2]
+// Dependencies: [5, 13374, 3, 595, 2]
 
-// Module 13336 (getIntervalMs)
+// Module 13373 (getIntervalMs)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import "append";
 

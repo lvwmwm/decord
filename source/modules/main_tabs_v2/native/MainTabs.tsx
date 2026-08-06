@@ -1,8 +1,8 @@
-// Module ID: 15013
-// Function ID: 15014
-// Dependencies: [19, 17, 21, 4255, 4102, 8176, 1581, 3967, 4799, 15014, 2]
+// Module ID: 15051
+// Function ID: 15052
+// Dependencies: [19, 17, 21, 4285, 4131, 8316, 1609, 3996, 4829, 15052, 2]
 
-// Module 15013
+// Module 15051
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,16 +14,16 @@ const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles({ container: { flex: 1 } });
 const memoResult = require("noop").memo(function MainTabs() {
-  let obj = require(8176) /* useActiveThemeType */;
+  let obj = require(8316) /* useActiveThemeType */;
   const isCustomThemeActive = obj.useIsCustomThemeActive();
-  const tmp = importDefault(4102)();
-  const rect = importDefault(1581)();
+  const tmp = importDefault(4131)();
+  const rect = importDefault(1609)();
   obj = { style: items, children: null };
   items = [callback3().container, { marginLeft: rect.left, marginRight: rect.right }];
   obj = { gradient: tmp, children: null };
-  const items1 = [callback(importDefault(4799), { absolute: true, mix: isCustomThemeActive }), callback(importDefault(15014), {})];
+  const items1 = [callback(importDefault(4829), { absolute: true, mix: isCustomThemeActive }), callback(importDefault(15052), {})];
   obj[1] = items1;
-  obj[1] = callback2(require(3967) /* ManaContext */.ThemeContextProvider, obj);
+  obj[1] = callback2(require(3996) /* ManaContext */.ThemeContextProvider, obj);
   return callback(View, obj);
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/MainTabs.tsx");

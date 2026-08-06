@@ -1,10 +1,10 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12591
+// Function ID: 12592
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3906, 1876, 589, 3901, 5749, 1236, 1945, 2]
+// Dependencies: [3935, 1905, 589, 3930, 5776, 1236, 1974, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12554 (useFormatStringWithCommonPremiumParams)
+// Module 12591 (useFormatStringWithCommonPremiumParams)
 import addSubscriptionPlan from "addSubscriptionPlan";
 import GuildFeatures from "GuildFeatures";
 
@@ -21,10 +21,10 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
   if (-1 !== body.indexOf("{price}")) {
     if (stateFromStores) {
       try {
-        const defaultPrice = importDefault(3901).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
-        const obj2 = importDefault(3901);
-        str = require(5749) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-        const tmpResult = require(5749) /* formatSingleCurrencyPrice */;
+        const defaultPrice = importDefault(3930).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+        const obj2 = importDefault(3930);
+        str = require(5776) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const tmpResult = require(5776) /* formatSingleCurrencyPrice */;
       } catch (err) {
       }
     }
@@ -55,7 +55,7 @@ export const getHelpArticleLinkProps = function getHelpArticleLinkProps(helpArti
         linkText = helpArticle.linkText;
       }
       const obj = { url: null, linkText: null };
-      obj[0] = importDefault(1945).getArticleURL(id);
+      obj[0] = importDefault(1974).getArticleURL(id);
       obj[1] = linkText;
       return obj;
     }

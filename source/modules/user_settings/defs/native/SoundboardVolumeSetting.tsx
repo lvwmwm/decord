@@ -1,9 +1,9 @@
-// Module ID: 14364
-// Function ID: 14365
+// Module ID: 14401
+// Function ID: 14402
 // Name: volumeSlider
-// Dependencies: [7864, 10333, 1236, 5853, 5847, 5615, 2]
+// Dependencies: [8005, 10364, 1236, 5880, 5874, 5669, 2]
 
-// Module 14364 (volumeSlider)
+// Module 14401 (volumeSlider)
 import createToggle from "createToggle";
 
 const volumeSlider = createToggle.createVolumeSlider({
@@ -15,8 +15,8 @@ const volumeSlider = createToggle.createVolumeSlider({
   maximum: 100,
   useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(5615).USER_SETTINGS];
-    return require(5847) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
+    const items = [importDefault(5669).USER_SETTINGS];
+    return require(5874) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
   }
 });
 const obj = {
@@ -28,8 +28,8 @@ const obj = {
   maximum: 100,
   useValue: require("hasPermissionToPlaySound").getAmplitudinalSoundboardVolume,
   onValueChange(volume) {
-    const items = [importDefault(5615).USER_SETTINGS];
-    return require(5847) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
+    const items = [importDefault(5669).USER_SETTINGS];
+    return require(5874) /* _fetchDefaultSoundsFromApi2 */.updateUserSoundboardVolume(volume, items);
   }
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/user_settings/defs/native/SoundboardVolumeSetting.tsx");

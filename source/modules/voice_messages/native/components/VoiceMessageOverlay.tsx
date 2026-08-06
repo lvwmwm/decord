@@ -1,9 +1,9 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11920
+// Function ID: 11921
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4247, 1372, 11251, 11252, 676, 1301, 11253, 21, 4116, 1297, 4797, 4251, 12, 8409, 4255, 712, 5110, 589, 3959, 1348, 5258, 1236, 4256, 4750, 9790, 11887, 5295, 1581, 11254, 4651, 4661, 1231, 11157, 1474, 10604, 11516, 11888, 7644, 4215, 11511, 11494, 4201, 10738, 4202, 10739, 2]
+// Dependencies: [32, 19, 17, 4277, 1372, 11285, 11286, 676, 1301, 11287, 21, 4145, 1297, 4827, 4281, 12, 7758, 4285, 712, 5140, 589, 3988, 1348, 5312, 1236, 4286, 4780, 9821, 11921, 5349, 1609, 11288, 4681, 4691, 1231, 11191, 1474, 10659, 11550, 11922, 7672, 4245, 11545, 11528, 4231, 10793, 4232, 10794, 2]
 
-// Module 11886 (LockPill)
+// Module 11920 (LockPill)
 import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER";
 import importAllResult from "result";
 import get_ActivityIndicator from "createCacheKey";
@@ -15,9 +15,9 @@ import { ComponentActionsKeyed } from "ME";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import { CHAT_INPUT_HEIGHT } from "TextAreaCta";
 import jsxProd from "map";
-import importDefaultResult from "module_4116";
-import importDefaultResult1 from "module_4116";
-import importDefaultResult2 from "module_4116";
+import importDefaultResult from "module_4145";
+import importDefaultResult1 from "module_4145";
+import importDefaultResult2 from "module_4145";
 import createCacheKey from "createCacheKey";
 import importDefaultResult3 from "Button";
 
@@ -250,10 +250,10 @@ function LockPill(safeAreaBottom) {
 let c4 = importAllResult;
 ({ View: c5, StyleSheet: closure_6, AppState: error } = get_ActivityIndicator);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-let closure_18 = require("module_4116").createAnimatedComponent(require("Button").Icon);
-let closure_19 = require("module_4116").createAnimatedComponent(require("PressableBase").PressableOpacity);
-let closure_20 = require("module_4116").createAnimatedComponent(require("Text").Text);
-let closure_21 = require("Button").memoize(() => importDefault(4116).createAnimatedComponent(require(8409) /* inlineStyles */.Ellipse));
+let closure_18 = require("module_4145").createAnimatedComponent(require("Button").Icon);
+let closure_19 = require("module_4145").createAnimatedComponent(require("PressableBase").PressableOpacity);
+let closure_20 = require("module_4145").createAnimatedComponent(require("Text").Text);
+let closure_21 = require("Button").memoize(() => importDefault(4145).createAnimatedComponent(require(7758) /* inlineStyles */.Ellipse));
 let c22 = 68;
 let c23 = 56;
 let closure_24 = createCacheKey.createStyles((width) => {
@@ -278,8 +278,8 @@ let closure_24 = createCacheKey.createStyles((width) => {
   const obj5 = { tintColor: importDefault(712).colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
   obj[9] = { flex: 1, height: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
   const obj6 = { flex: 1, height: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_HEIGHT, marginRight: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_CHAT_CONTAINER_MARGIN_RIGHT, alignItems: "flex-end" };
-  obj[10] = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5110) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
-  const obj7 = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5110) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  obj[10] = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5140) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
+  const obj7 = { height: c22, width: c23, borderRadius: importDefault(712).modules.button.BORDER_RADIUS, display: "flex", alignItems: "center", flexDirection: "column", elevation: 12, shadowColor: importDefault(712).colors.BLACK, shadowOffset: { width: 0, height: 12 }, shadowOpacity: 0.12, shadowRadius: 36, borderWidth: require(5140) /* result */.DARK_0_LIGHT_1, borderStyle: "solid", borderColor: "rgba(0, 0, 0, 0.08)" };
   obj[11] = { position: "absolute", right: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH };
   const obj8 = { position: "absolute", right: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_OFFSET_RIGHT, width: importDefault(712).modules.mobile.VOICE_MESSAGE_RECORDING_LOCK_PILL_WIDTH };
   obj[12] = { height: 16, width: 16, marginTop: 8, tintColor: importDefault(712).colors.ICON_SUBTLE };

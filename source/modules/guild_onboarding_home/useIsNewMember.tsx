@@ -1,10 +1,10 @@
-// Module ID: 5739
-// Function ID: 5740
+// Module ID: 5766
+// Function ID: 5767
 // Name: useIsNewMember
-// Dependencies: [1934, 1942, 3871, 1384, 687, 589, 2]
+// Dependencies: [1963, 1971, 3900, 1384, 687, 589, 2]
 // Exports: default, getIsNewMember
 
-// Module 5739 (useIsNewMember)
+// Module 5766 (useIsNewMember)
 import initialize from "initialize";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import { GuildMemberFlags } from "GuildMemberFlags";

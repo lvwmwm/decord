@@ -1,9 +1,9 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7292
+// Function ID: 7293
 // Name: create
-// Dependencies: [32, 1307, 7246, 7245, 7244, 1337, 2]
+// Dependencies: [32, 1307, 7273, 7272, 7271, 1337, 2]
 
-// Module 7265 (create)
+// Module 7292 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
@@ -18,7 +18,7 @@ class ShopNagbar$Type extends MessageType {
       name: "cta_action",
       kind: "enum",
       T() {
-            const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7246).ButtonAction, "BUTTON_ACTION_"];
+            const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7273).ButtonAction, "BUTTON_ACTION_"];
             return items;
           }
     };
@@ -28,7 +28,7 @@ class ShopNagbar$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(7245).HelpArticle;
+            return callback(7272).HelpArticle;
           }
     };
     items[5] = {
@@ -36,7 +36,7 @@ class ShopNagbar$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(7244).LocalizedString;
+            return callback(7271).LocalizedString;
           }
     };
     obj = { no: 7, name: "cta_label_localized", kind: "message", T: null };
@@ -97,7 +97,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (5 === tmp5) {
         let tmp37 = require;
         let tmp38 = dependencyMap;
-        let HelpArticle = require(7245) /* create */.HelpArticle;
+        let HelpArticle = require(7272) /* create */.HelpArticle;
         let tmp39 = HelpArticle;
         let tmp40 = pos;
         let tmp41 = readUnknownField;
@@ -105,7 +105,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (6 === tmp5) {
         let tmp32 = require;
         let tmp33 = dependencyMap;
-        let LocalizedString2 = require(7244) /* create */.LocalizedString;
+        let LocalizedString2 = require(7271) /* create */.LocalizedString;
         let tmp34 = LocalizedString2;
         let tmp35 = pos;
         let tmp36 = readUnknownField;
@@ -113,7 +113,7 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       } else if (7 === tmp5) {
         let tmp27 = require;
         let tmp28 = dependencyMap;
-        let LocalizedString = require(7244) /* create */.LocalizedString;
+        let LocalizedString = require(7271) /* create */.LocalizedString;
         let tmp29 = LocalizedString;
         let tmp30 = pos;
         let tmp31 = readUnknownField;
@@ -180,19 +180,19 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(body, tag, write
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
   }
   if (body.helpArticle) {
-    const HelpArticle = require(7245) /* create */.HelpArticle;
+    const HelpArticle = require(7272) /* create */.HelpArticle;
     const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
     const joined = HelpArticle.internalBinaryWrite(body.helpArticle, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = HelpArticle.internalBinaryWrite(body.helpArticle, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (body.bodyLocalized) {
-    const LocalizedString = require(7244) /* create */.LocalizedString;
+    const LocalizedString = require(7271) /* create */.LocalizedString;
     const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
     const joined1 = LocalizedString.internalBinaryWrite(body.bodyLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = LocalizedString.internalBinaryWrite(body.bodyLocalized, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (body.ctaLabelLocalized) {
-    const LocalizedString2 = require(7244) /* create */.LocalizedString;
+    const LocalizedString2 = require(7271) /* create */.LocalizedString;
     const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
     const joined2 = LocalizedString2.internalBinaryWrite(body.ctaLabelLocalized, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult2 = LocalizedString2.internalBinaryWrite(body.ctaLabelLocalized, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -221,7 +221,7 @@ let items = [
     name: "cta_action",
     kind: "enum",
     T() {
-      const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7246).ButtonAction, "BUTTON_ACTION_"];
+      const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7273).ButtonAction, "BUTTON_ACTION_"];
       return items;
     }
   },
@@ -231,7 +231,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(7245).HelpArticle;
+      return callback(7272).HelpArticle;
     }
   },
   {
@@ -239,7 +239,7 @@ let items = [
     name: "body_localized",
     kind: "message",
     T() {
-      return callback(7244).LocalizedString;
+      return callback(7271).LocalizedString;
     }
   },
 ,

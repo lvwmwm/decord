@@ -1,9 +1,9 @@
-// Module ID: 4033
-// Function ID: 4034
+// Module ID: 4062
+// Function ID: 4063
 // Name: FIT_MAP
-// Dependencies: [3985, 2]
+// Dependencies: [4014, 2]
 
-// Module 4033 (FIT_MAP)
+// Module 4062 (FIT_MAP)
 let obj = { fill: require("DataBindByName").Fit.Fill, contain: require("DataBindByName").Fit.Contain, cover: require("DataBindByName").Fit.Cover, "fit-width": require("DataBindByName").Fit.FitWidth, "fit-height": require("DataBindByName").Fit.FitHeight, none: require("DataBindByName").Fit.None, "scale-down": require("DataBindByName").Fit.ScaleDown, layout: require("DataBindByName").Fit.Layout };
 obj = { "top-left": require("DataBindByName").Alignment.TopLeft, "top-center": require("DataBindByName").Alignment.TopCenter, "top-right": require("DataBindByName").Alignment.TopRight, "center-left": require("DataBindByName").Alignment.CenterLeft, center: require("DataBindByName").Alignment.Center, "center-right": require("DataBindByName").Alignment.CenterRight, "bottom-left": require("DataBindByName").Alignment.BottomLeft, "bottom-center": require("DataBindByName").Alignment.BottomCenter, "bottom-right": require("DataBindByName").Alignment.BottomRight };
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/RiveTypes.tsx");

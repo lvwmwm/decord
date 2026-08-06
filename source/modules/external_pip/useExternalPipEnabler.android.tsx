@@ -1,10 +1,10 @@
-// Module ID: 15926
-// Function ID: 15927
+// Module ID: 15966
+// Function ID: 15967
 // Name: useExternalPIPEnabler
-// Dependencies: [4268, 1218, 4326, 589, 15927, 2]
+// Dependencies: [4298, 1218, 4356, 589, 15967, 2]
 // Exports: default
 
-// Module 15926 (useExternalPIPEnabler)
+// Module 15966 (useExternalPIPEnabler)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";

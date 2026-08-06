@@ -1,9 +1,9 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11656
+// Function ID: 11657
 // Name: setAutocompleteOptions
-// Dependencies: [1372, 676, 7202, 3888, 5184, 589, 709, 2]
+// Dependencies: [1372, 676, 7229, 3917, 5214, 589, 709, 2]
 
-// Module 11622 (setAutocompleteOptions)
+// Module 11656 (setAutocompleteOptions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Permissions } from "ME";
 import { Store } from "initialize";
@@ -71,7 +71,7 @@ prototype["search"] = function search(arg0, targetChannelId, str) {
   const trimmed = str.toLowerCase().trim();
   this.searchQueryString = trimmed;
   str = str.toLowerCase();
-  const members = importDefault(5184).requestMembers(arg0, trimmed, 50);
+  const members = importDefault(5214).requestMembers(arg0, trimmed, 50);
   const autocompleter = this.autocompleter;
   autocompleter.search(trimmed);
 };
@@ -173,8 +173,8 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(require(
           outer1_9.emitChange();
         }
       };
-      let tmp4 = importDefault(7202);
-      let items = [obj(7202).AutocompleterResultTypes.USER];
+      let tmp4 = importDefault(7229);
+      let items = [obj(7229).AutocompleterResultTypes.USER];
       tmp4 = new tmp4(onAutocompleterResultsChange, items, 50);
       obj.autocompleter = tmp4;
       const autocompleter = obj.autocompleter;

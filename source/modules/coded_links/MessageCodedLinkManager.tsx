@@ -1,9 +1,9 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16380
+// Function ID: 16381
 // Name: resolveMessageCodedLinks
-// Dependencies: [5, 6813, 4240, 4239, 4244, 16341, 7651, 5833, 11342, 5214, 16348, 2]
+// Dependencies: [5, 6840, 4270, 4269, 4274, 16381, 7679, 5860, 11376, 5244, 16388, 2]
 
-// Module 16340 (resolveMessageCodedLinks)
+// Module 16380 (resolveMessageCodedLinks)
 import queueMessageLinkFetch from "queueMessageLinkFetch";
 import handleGuildTemplateResolveSuccess from "handleGuildTemplateResolveSuccess";
 import updateInvite from "updateInvite";
@@ -11,7 +11,7 @@ import "initialize";
 
 const require = arg1;
 function resolveMessageCodedLinks(content) {
-  const arr = importDefault(4239)(content.content);
+  const arr = importDefault(4269)(content.content);
   let tmp = null != arr;
   if (tmp) {
     tmp = 0 !== arr.length;

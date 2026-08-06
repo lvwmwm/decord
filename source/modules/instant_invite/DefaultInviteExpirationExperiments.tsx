@@ -1,10 +1,10 @@
-// Module ID: 8963
-// Function ID: 8964
+// Module ID: 8992
+// Function ID: 8993
 // Name: getDefaultInviteExpiration
-// Dependencies: [1862, 676, 8961, 4167, 647, 2]
+// Dependencies: [1891, 676, 8990, 4197, 647, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 8963 (getDefaultInviteExpiration)
+// Module 8992 (getDefaultInviteExpiration)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
 import createExperiment from "createExperiment";
@@ -23,7 +23,7 @@ function getDefaultInviteExpiration(arg0) {
     hasItem = features.has(constants.HUB);
   }
   if (hasItem) {
-    return importDefault(8961).INVITE_OPTIONS_FOREVER.value;
+    return importDefault(8990).INVITE_OPTIONS_FOREVER.value;
   } else if (null != experimentConfig) {
     let defaultMaxAge2 = experimentConfig.defaultMaxAge;
     if (defaultMaxAge2 == null) {
@@ -114,5 +114,5 @@ export const useMaxAgeOptions = function useMaxAgeOptions(arg0) {
     defaultMaxAge1 = experiment1.defaultMaxAge;
   }
   const includeExperimentalValues = [defaultMaxAge1];
-  return importDefault(8961).getMaxAgeOptions({ includeExperimentalValues });
+  return importDefault(8990).getMaxAgeOptions({ includeExperimentalValues });
 };

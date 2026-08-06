@@ -1,10 +1,10 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8881
+// Function ID: 8882
 // Name: canEveryoneRoleViewEvent
-// Dependencies: [1377, 1372, 1932, 1862, 3883, 6879, 1378, 676, 3888, 8853, 589, 2]
+// Dependencies: [1377, 1372, 1961, 1891, 3912, 6906, 1378, 676, 3917, 8882, 589, 2]
 // Exports: default
 
-// Module 8852 (canEveryoneRoleViewEvent)
+// Module 8881 (canEveryoneRoleViewEvent)
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -35,8 +35,8 @@ function canEveryoneRoleViewEvent(guildEvent, items1) {
     const channel = obj.getChannel(tmp4);
     let canEveryoneRoleResult = null != channel;
     if (canEveryoneRoleResult) {
-      canEveryoneRoleResult = importAll(3888).canEveryoneRole(Permissions.VIEW_CHANNEL, channel);
-      const obj3 = importAll(3888);
+      canEveryoneRoleResult = importAll(3917).canEveryoneRole(Permissions.VIEW_CHANNEL, channel);
+      const obj3 = importAll(3917);
     }
     return canEveryoneRoleResult;
   }
@@ -63,7 +63,7 @@ function isGuildEventInvitable(guildEvent) {
     }
     const guild = obj3.getGuild(guildEvent.guild_id);
     const stageInstanceByChannel = obj4.getStageInstanceByChannel(channel_id);
-    const obj5 = require(8853) /* canViewInviteModal */;
+    const obj5 = require(8882) /* canViewInviteModal */;
     let canViewInviteModalResult = obj5.canViewInviteModal(getUncachedChannelPermissions, guild, defaultChannel, stageInstanceByChannel);
     if (canViewInviteModalResult) {
       let tmp17 = null != defaultChannel;

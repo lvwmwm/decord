@@ -1,9 +1,9 @@
-// Module ID: 15735
-// Function ID: 15736
+// Module ID: 15775
+// Function ID: 15776
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [19, 17, 1372, 9559, 676, 15581, 21, 8353, 647, 5783, 10050, 8165, 1236, 12008, 698, 15736, 5650, 5229, 4107, 1581, 15784, 500, 15785, 15786, 15787, 15788, 15638, 2]
+// Dependencies: [19, 17, 1372, 9588, 676, 15619, 21, 8493, 647, 5810, 10081, 8305, 1236, 12042, 698, 15776, 5704, 5259, 4136, 1609, 15824, 500, 15825, 15826, 15827, 15828, 15676, 2]
 
-// Module 15735 (ConnectedCreateThreadHeaderButton)
+// Module 15775 (ConnectedCreateThreadHeaderButton)
 import importAllResult from "useSafeAreaInsets";
 import { View } from "useNavigatorBackPressHandler";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -31,7 +31,7 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 }
 function CreateThreadHeaderButton(channel) {
   channel = channel.channel;
-  let obj = channel(5783);
+  let obj = channel(5810);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
@@ -40,8 +40,8 @@ function CreateThreadHeaderButton(channel) {
     const intl = tmp(1236).intl;
     obj[0] = intl.string(tmp(1236).t.rBIGBL);
     obj[1] = tmp4;
-    obj[2] = importDefault(12008);
-    tmp5 = callback(tmp(8165).HeaderIconButton, obj);
+    obj[2] = importDefault(12042);
+    tmp5 = callback(tmp(8305).HeaderIconButton, obj);
   }
   return tmp5;
 }
@@ -120,7 +120,7 @@ const memoResult = importAllResult.memo((route) => {
   obj = { style: items3, children: null };
   items3 = [channelSettingsScreensStyles.container, { paddingLeft: rect.left, paddingRight: rect.right }];
   obj = { id: "channel-details-navigator", screenOptions: null, initialRouteName: null, children: null };
-  obj1 = { headerTitle: tmp3(tmp4[11]).renderGenericTitle };
+  obj1 = { headerTitle: tmp3(tmp4[11]).renderGenericTitle, headerTitleAlign: "center" };
   let merged = Object.assign(accessibilityNativeStackOptions);
   obj[1] = obj1;
   obj[2] = DETAILS;
@@ -140,7 +140,7 @@ const memoResult = importAllResult.memo((route) => {
         route = route.route;
         let obj = {
           header(arg0) {
-            let obj = route(8165);
+            let obj = route(8305);
             obj = {};
             const merged = Object.assign(arg0);
             obj.shouldHandleSafeArea = route(500).isAndroid();

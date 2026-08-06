@@ -1,10 +1,10 @@
-// Module ID: 11106
-// Function ID: 11107
+// Module ID: 11140
+// Function ID: 11141
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 17, 1935, 1862, 4341, 1874, 676, 21, 4255, 712, 5283, 8006, 11107, 4482, 1297, 5620, 5621, 8900, 11105, 9024, 4251, 11108, 1236, 2]
+// Dependencies: [19, 17, 1964, 1891, 4371, 1903, 676, 21, 4285, 712, 5337, 8147, 11141, 4512, 1297, 5674, 5675, 8929, 11139, 9053, 4281, 11142, 1236, 2]
 // Exports: default
 
-// Module 11106 (MentionableSelectComponentActionSheet)
+// Module 11140 (MentionableSelectComponentActionSheet)
 import DiscordTag from "DiscordTag";
 import { View } from "ShieldUserIcon";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

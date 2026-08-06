@@ -1,10 +1,10 @@
-// Module ID: 13753
-// Function ID: 13754
+// Module ID: 13790
+// Function ID: 13791
 // Name: MagicDoorIcon
-// Dependencies: [19, 21, 712, 3958, 13754, 2]
+// Dependencies: [19, 21, 712, 3987, 13791, 2]
 // Exports: MagicDoorIcon
 
-// Module 13753 (MagicDoorIcon)
+// Module 13790 (MagicDoorIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const MagicDoorIcon = function MagicDoorIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13754) /* registerAsset */;
+  obj[0] = require(13791) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 5736
-// Function ID: 5737
+// Module ID: 5763
+// Function ID: 5764
 // Name: processChannel
 // Dependencies: [1372, 1220, 2]
 
-// Module 5736 (processChannel)
+// Module 5763 (processChannel)
 import prototype from "ensureGuildLoaded";
 import "clearAll";
 import set from "set";

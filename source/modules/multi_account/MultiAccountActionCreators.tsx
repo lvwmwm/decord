@@ -1,10 +1,10 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11704
+// Function ID: 11705
 // Name: validateMultiAccountTokens
-// Dependencies: [5, 1218, 11666, 676, 3, 707, 709, 530, 698, 5721, 2]
+// Dependencies: [5, 1218, 11700, 676, 3, 707, 709, 530, 698, 5748, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11670 (validateMultiAccountTokens)
+// Module 11704 (validateMultiAccountTokens)
 import setSecondaryToken from "setSecondaryToken";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
@@ -180,8 +180,8 @@ export const switchAccount = function switchAccount(id, switchSynchronously, CHO
     importDefault(709).dispatch(obj1);
     const obj4 = importDefault(709);
     const tmp5 = importDefault;
-    resolved = importDefault(5721).switchAccountToken(token, switchSynchronously);
-    const tmp5Result = importDefault(5721);
+    resolved = importDefault(5748).switchAccountToken(token, switchSynchronously);
+    const tmp5Result = importDefault(5748);
   }
   return resolved;
 };

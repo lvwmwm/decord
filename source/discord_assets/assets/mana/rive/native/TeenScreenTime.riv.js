@@ -1,9 +1,9 @@
-// Module ID: 4061
-// Function ID: 4062
+// Module ID: 4090
+// Function ID: 4091
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4061 (metadata)
+// Module 4090 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/rive/native/TeenScreenTime.riv.js");
 
 export default "https://cdn.discordapp.com/assets/content/0e8095ebdbf89e1289f83a859a892a5790e8a76949d9bf9bb02e4dfc16190d10.riv";

@@ -1,10 +1,10 @@
-// Module ID: 13101
-// Function ID: 13102
+// Module ID: 13138
+// Function ID: 13139
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4255, 712, 13102, 13104, 10860, 10431, 13105, 10397, 13106, 5221, 13107, 13111, 13112, 1416, 13113, 5257, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 13139, 13141, 10556, 10462, 13142, 10428, 13143, 5251, 13144, 13148, 13149, 1416, 13150, 5311, 2]
 // Exports: ActivateDevice
 
-// Module 13101 (ActivateDevice)
+// Module 13138 (ActivateDevice)
 import _slicedToArray from "_slicedToArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "getAvatarURL";

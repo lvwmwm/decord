@@ -1,10 +1,10 @@
-// Module ID: 6704
-// Function ID: 6705
+// Module ID: 6731
+// Function ID: 6732
 // Name: SwordIllocon
-// Dependencies: [21, 5221, 6705, 2]
+// Dependencies: [21, 5251, 6732, 2]
 // Exports: SwordIllocon
 
-// Module 6704 (SwordIllocon)
+// Module 6731 (SwordIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SwordIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const SwordIllocon = function SwordIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6705);
+  obj[0] = importDefault(6732);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { uri: null });
+  return jsx(importDefault(5251), { uri: null });
 };

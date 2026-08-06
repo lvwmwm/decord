@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8424
+// Function ID: 8425
 // Name: AuthHeader
-// Dependencies: [19, 676, 21, 4255, 5189, 712, 1297, 2]
+// Dependencies: [19, 676, 21, 4285, 5219, 712, 1297, 2]
 // Exports: default
 
-// Module 8284 (AuthHeader)
+// Module 8424 (AuthHeader)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

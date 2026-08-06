@@ -1,10 +1,10 @@
-// Module ID: 10190
-// Function ID: 10191
+// Module ID: 10221
+// Function ID: 10222
 // Name: openChannelPicker
-// Dependencies: [1932, 1862, 4223, 10191, 1959, 1236, 2]
+// Dependencies: [1961, 1891, 4253, 10222, 1988, 1236, 2]
 // Exports: default
 
-// Module 10190 (openChannelPicker)
+// Module 10221 (openChannelPicker)
 import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 
@@ -29,7 +29,7 @@ export default function openChannelPicker(onClose) {
   if (items == null) {
     items = [];
   }
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = { header: null, guild: null, channels: null, selectedChannel: null };
   obj = { title: null, onClose: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -41,5 +41,5 @@ export default function openChannelPicker(onClose) {
   obj[2] = found.map((channel) => channel.channel);
   obj[3] = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj.openLazy(require(1959) /* asyncRequireImpl */(10191, dependencyMap.paths), "ChannelPicker", obj);
+  obj.openLazy(require(1988) /* asyncRequireImpl */(10222, dependencyMap.paths), "ChannelPicker", obj);
 };

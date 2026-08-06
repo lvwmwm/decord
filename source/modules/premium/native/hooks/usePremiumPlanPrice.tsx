@@ -1,10 +1,10 @@
-// Module ID: 7543
-// Function ID: 7544
+// Module ID: 7571
+// Function ID: 7572
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 3906, 3907, 5752, 505, 589, 7305, 7544, 7545, 5755, 500, 5583, 584, 5771, 5749, 2]
+// Dependencies: [19, 3935, 3936, 5779, 505, 589, 7333, 7572, 7573, 5782, 500, 5637, 584, 5798, 5776, 2]
 // Exports: default
 
-// Module 7543 (usePremiumPlanPrice)
+// Module 7571 (usePremiumPlanPrice)
 import noop from "noop";
 import addSubscriptionPlan from "addSubscriptionPlan";
 import reset from "reset";

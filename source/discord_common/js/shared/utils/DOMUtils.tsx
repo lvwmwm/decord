@@ -1,10 +1,10 @@
-// Module ID: 1859
-// Function ID: 1860
+// Module ID: 1887
+// Function ID: 1888
 // Name: set
 // Dependencies: [2]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
-// Module 1859 (set)
+// Module 1887 (set)
 import set from "set";
 
 const re0 = /input/i;

@@ -1,10 +1,10 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13081
+// Function ID: 13082
 // Name: normalizeKey
-// Dependencies: [32, 5, 706, 6857, 3, 500, 13043, 595, 2]
+// Dependencies: [32, 5, 706, 6884, 3, 500, 13080, 595, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 13044 (normalizeKey)
+// Module 13081 (normalizeKey)
 import _slicedToArray from "_slicedToArray";
 import closure_3 from "set";
 import refreshSourceMapCookie from "refreshSourceMapCookie";

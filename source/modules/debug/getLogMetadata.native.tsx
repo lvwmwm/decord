@@ -1,10 +1,10 @@
-// Module ID: 9763
-// Function ID: 9764
+// Module ID: 9794
+// Function ID: 9795
 // Name: getLogMetadata
-// Dependencies: [1578, 4235, 2]
+// Dependencies: [1606, 4265, 2]
 // Exports: default
 
-// Module 9763 (getLogMetadata)
+// Module 9794 (getLogMetadata)
 const result = require("set").fileFinishedImporting("modules/debug/getLogMetadata.native.tsx");
 
 export default function getLogMetadata() {
@@ -14,7 +14,7 @@ export default function getLogMetadata() {
   let Manifest;
   let ReleaseChannel;
   let Version;
-  let obj = importAll(1578);
+  let obj = importAll(1606);
   const constants = obj.getConstants();
   obj = { logsUploaded: null, Identifier: null, Version: null, Manifest: null, ReleaseChannel: null, Build: null, JSBuildNumber: null, DeviceVendorID: null, DeviceInfo: null, systemVersion: null };
   ({ Identifier, Version, Manifest, ReleaseChannel, Build, DeviceVendorID } = constants);
@@ -25,11 +25,11 @@ export default function getLogMetadata() {
   obj[4] = ReleaseChannel;
   obj[5] = Build;
   const date = new Date();
-  obj[6] = importAll(1578).getBuildNumberLabel();
+  obj[6] = importAll(1606).getBuildNumberLabel();
   obj[7] = DeviceVendorID;
-  const obj4 = importAll(1578);
-  obj[8] = require(4235) /* DCDDeviceManager */.getDeviceInfo();
-  const obj5 = require(4235) /* DCDDeviceManager */;
-  obj[9] = require(4235) /* DCDDeviceManager */.getSystemVersion();
+  const obj4 = importAll(1606);
+  obj[8] = require(4265) /* DCDDeviceManager */.getDeviceInfo();
+  const obj5 = require(4265) /* DCDDeviceManager */;
+  obj[9] = require(4265) /* DCDDeviceManager */.getSystemVersion();
   return obj;
 };

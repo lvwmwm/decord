@@ -1,10 +1,10 @@
-// Module ID: 12820
-// Function ID: 12821
+// Module ID: 12857
+// Function ID: 12858
 // Name: rateLimit
 // Dependencies: [2]
 // Exports: default
 
-// Module 12820 (rateLimit)
+// Module 12857 (rateLimit)
 const result = require("set").fileFinishedImporting("lib/rateLimit.tsx");
 
 export default function rateLimit(arg0, arg1, arg2) {

@@ -1,8 +1,8 @@
-// Module ID: 9901
-// Function ID: 9902
-// Dependencies: [19, 17, 1576, 21, 4255, 712, 8174, 1348, 8626, 1236, 8557, 2]
+// Module ID: 9932
+// Function ID: 9933
+// Dependencies: [19, 17, 1604, 21, 4285, 712, 8314, 1348, 8655, 1236, 8586, 2]
 
-// Module 9901
+// Module 9932
 import get_ActivityIndicator from "get ActivityIndicator";
 import { DRAG_HANDLE } from "DRAG_HANDLE";
 import { jsx } from "jsxProd";
@@ -28,9 +28,9 @@ let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(function MediaKeyboardBottomSheetHandle(onPress) {
   onPress = onPress.onPress;
   const tmp = callback();
-  let obj = require(8174) /* useGradientBottom */;
+  let obj = require(8314) /* useGradientBottom */;
   const gradientBottom = obj.useGradientBottom();
-  let obj1 = require(8626) /* map */;
+  let obj1 = require(8655) /* map */;
   const derivedStateFromSharedValue = obj1.useDerivedStateFromSharedValue(onPress.animatedIndex, (arg0) => arg0 > 0);
   const intl = require(1236) /* getSystemLocale */.intl;
   const string = intl.string;
@@ -45,7 +45,7 @@ const memoResult = require("noop").memo(function MediaKeyboardBottomSheetHandle(
     obj[0] = onPress;
     obj[1] = stringResult;
     obj[2] = null == onPress;
-    let tmp8Result = tmp8(require(8557) /* TwinButtons */.ActionSheetDragHandle, obj);
+    let tmp8Result = tmp8(require(8586) /* TwinButtons */.ActionSheetDragHandle, obj);
   } else {
     obj = { accessibilityLabel: null, accessibilityRole: "button", "aria-hidden": null, style: null, onPress: null, children: null };
     obj[0] = stringResult;

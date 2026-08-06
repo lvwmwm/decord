@@ -1,10 +1,10 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10433
+// Function ID: 10434
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 676, 7482, 2]
+// Dependencies: [19, 676, 7510, 2]
 // Exports: default, getIsSocialLayerParentApplication
 
-// Module 10402 (useIsSocialLayerParentApplication)
+// Module 10433 (useIsSocialLayerParentApplication)
 import noop from "noop";
 import { ApplicationFlags } from "ME";
 
@@ -17,5 +17,5 @@ export default function useIsSocialLayerParentApplication(arg0) {
   return React.useMemo(() => callback(outer1_1[2]).hasApplicationFlag(callback, outer1_3.PARENT), items);
 };
 export const getIsSocialLayerParentApplication = function getIsSocialLayerParentApplication(application) {
-  return require(7482) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARENT);
+  return require(7510) /* getApplicationFlags */.hasApplicationFlag(application, ApplicationFlags.PARENT);
 };

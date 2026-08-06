@@ -1,10 +1,10 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 15962
+// Function ID: 15963
 // Name: StyleSheet
-// Dependencies: [19, 17, 6891, 676, 21, 712, 4255, 1581, 13990, 13989, 15923, 10632, 3959, 6905, 698, 6892, 5910, 4251, 4676, 1236, 2255, 2]
+// Dependencies: [19, 17, 6918, 676, 21, 712, 4285, 1609, 14027, 14026, 15963, 10687, 3988, 6932, 698, 6919, 5937, 4281, 4706, 1236, 2284, 2]
 // Exports: default
 
-// Module 15922 (StyleSheet)
+// Module 15962 (StyleSheet)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "Text";
 import { FamilyCenterSubPages } from "items";

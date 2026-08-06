@@ -1,9 +1,9 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10337
+// Function ID: 10338
 // Name: prototype
-// Dependencies: [10307, 2]
+// Dependencies: [10338, 2]
 
-// Module 10306 (prototype)
+// Module 10337 (prototype)
 import { RevenueError } from "prototype";
 
 const prototype = function CheckoutError(arg0) {

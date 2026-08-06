@@ -1,9 +1,9 @@
-// Module ID: 9809
-// Function ID: 9810
+// Module ID: 9840
+// Function ID: 9841
 // Name: _initialize
-// Dependencies: [5214, 595, 2]
+// Dependencies: [5244, 595, 2]
 
-// Module 9809 (_initialize)
+// Module 9840 (_initialize)
 import "initialize";
 
 const require = arg1;

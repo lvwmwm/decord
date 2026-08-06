@@ -1,10 +1,10 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 9600
+// Function ID: 9601
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 676, 21, 4255, 4811, 5646, 1416, 9572, 4797, 1236, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4285, 4841, 5700, 1416, 9601, 4827, 1236, 2]
 // Exports: default
 
-// Module 9571 (IconUploader)
+// Module 9600 (IconUploader)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -138,9 +138,9 @@ export default function IconUploader(disabled) {
       obj[0] = iconStyle;
       obj[1] = fnResult;
       obj[2] = name;
-      obj[3] = require(5646) /* GuildIconSizes */.GuildIconSizes.XLARGE;
-      let tmp7 = callback(importDefault(5646), obj);
-      const tmp12 = importDefault(5646);
+      obj[3] = require(5700) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+      let tmp7 = callback(importDefault(5700), obj);
+      const tmp12 = importDefault(5700);
     }
     tmp8 = null == icon && null == name;
   } else {
@@ -156,7 +156,7 @@ export default function IconUploader(disabled) {
   if (!flag) {
     obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(9572);
+    obj1[1] = importDefault(9601);
     tmp16 = callback(closure_6, obj1);
   }
   items1[1] = tmp16;
@@ -179,7 +179,7 @@ export default function IconUploader(disabled) {
       return applyArgumentsResult;
     };
     obj3[3] = tmp14Result;
-    obj2[1] = callback(require(4797) /* PressableBase */.PressableOpacity, obj3);
+    obj2[1] = callback(require(4827) /* PressableBase */.PressableOpacity, obj3);
     tmp22 = callback(closure_5, obj2);
   }
   return tmp22;

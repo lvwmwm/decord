@@ -1,16 +1,16 @@
-// Module ID: 9983
-// Function ID: 9984
+// Module ID: 10014
+// Function ID: 10015
 // Name: items
-// Dependencies: [1946, 5744, 676, 9984, 1236, 3193, 2]
+// Dependencies: [1975, 5771, 676, 10015, 1236, 3222, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
-// Module 9983 (items)
+// Module 10014 (items)
 import _getSystemLocale from "_getSystemLocale";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 import { MarketingURLs } from "ME";
 
 const require = arg1;
-let closure_6 = { [arg1(9984).StorefrontPlatform.DESKTOP]: "PC", [arg1(9984).StorefrontPlatform.XBOX]: "Xbox", [arg1(9984).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(9984).StorefrontPlatform.SWITCH]: "Switch", [arg1(9984).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(9984).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(9984).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
+let closure_6 = { [arg1(10015).StorefrontPlatform.DESKTOP]: "PC", [arg1(10015).StorefrontPlatform.XBOX]: "Xbox", [arg1(10015).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(10015).StorefrontPlatform.SWITCH]: "Switch", [arg1(10015).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(10015).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(10015).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [require("StorefrontPlatform").StorefrontPlatform.PLAYSTATION];
 const result = require("ME").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
 
@@ -29,7 +29,7 @@ export const getNotSupportedSentence = function getNotSupportedSentence(id) {
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl.formatToPlainString(importDefault(3193)["5h8p5P"], obj);
+    str = intl.formatToPlainString(importDefault(3222)["5h8p5P"], obj);
   }
   return str;
 };
@@ -53,9 +53,9 @@ export const getCheckoutDisclaimerMessageForApplication = function getCheckoutDi
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    platforms_info = intl2.formatToPlainString(importDefault(3193)["5h8p5P"], obj);
+    platforms_info = intl2.formatToPlainString(importDefault(3222)["5h8p5P"], obj);
   }
-  return intl.format(importDefault(3193).Q0dHYO, { platforms_info });
+  return intl.format(importDefault(3222).Q0dHYO, { platforms_info });
 };
 export const getFinePrintMessageForApplication = function getFinePrintMessageForApplication(name, shouldAppendDisclaimer) {
   let str;
@@ -89,12 +89,12 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
       const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
       obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
       obj[1] = arr.length;
-      str2 = intl3.formatToPlainString(tmp4(3193)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp4(3222)["5h8p5P"], obj);
     }
     const obj1 = { platforms_info: null };
     obj1[0] = str2;
-    obj[1] = intl2.format(importDefault(3193).Q0dHYO, obj1);
-    let formatResult = format(importDefault(3193)["3ah/a2"], obj);
+    obj[1] = intl2.format(importDefault(3222).Q0dHYO, obj1);
+    let formatResult = format(importDefault(3222)["3ah/a2"], obj);
     tmp4 = importDefault;
   } else {
     obj = { applicationName: null };
@@ -114,7 +114,7 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
   let obj = { buyButtonLabel: stringResult, paidServiceTermURL: MarketingURLs.PAID_TERMS, applicationName: str };
   const intl = require(1236) /* getSystemLocale */.intl;
   const format = intl.format;
-  const tmp4 = importDefault(3193);
+  const tmp4 = importDefault(3222);
   if (shouldAppendDisclaimer.shouldAppendDisclaimer) {
     let id;
     if (name != null) {
@@ -134,13 +134,13 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
       const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
       obj[0] = listFormat.format(arr2.map((arg0) => table[arg0]));
       obj[1] = arr2.length;
-      str2 = intl3.formatToPlainString(tmp3(3193)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp3(3222)["5h8p5P"], obj);
     }
     obj = { platforms_info: null };
     obj[0] = str2;
     items = [format(tmp4.Q0dHYO, obj), ];
     const intl2 = tmp(1236).intl;
-    items[1] = intl2.format(tmp3(3193).Ufm9XX, obj);
+    items[1] = intl2.format(tmp3(3222).Ufm9XX, obj);
     let items1 = items;
   } else {
     items1 = [format(tmp4.Ufm9XX, obj)];
@@ -165,13 +165,13 @@ export const getRedeemPurchaseDescriptionForApplication = function getRedeemPurc
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(importDefault(3193)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(importDefault(3222)["5h8p5P"], obj);
   }
   obj[1] = str;
-  return intl.format(importDefault(3193).fO4b1C, obj);
+  return intl.format(importDefault(3222).fO4b1C, obj);
 };
 export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkAccountDescriptionForApplication(applicationName, hasAlreadyLinked) {
-  const tmp3 = importDefault(3193);
+  const tmp3 = importDefault(3222);
   if (hasAlreadyLinked.hasAlreadyLinked) {
     let vyAtfo = tmp3.yqAKVO;
     let tmp4 = tmp;
@@ -196,7 +196,7 @@ export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkA
     const listFormat = new Intl.ListFormat(_getSystemLocale.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(tmp4(3193)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(tmp4(3222)["5h8p5P"], obj);
   }
   obj[1] = str;
   return intl.format(vyAtfo, obj);

@@ -1,10 +1,10 @@
-// Module ID: 4421
-// Function ID: 4422
+// Module ID: 4451
+// Function ID: 4452
 // Name: sanitizeDevices
-// Dependencies: [4353, 669, 4304, 2]
+// Dependencies: [4383, 669, 4334, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
-// Module 4421 (sanitizeDevices)
+// Module 4451 (sanitizeDevices)
 import AudioSubsystems from "AudioSubsystems";
 
 let c3;

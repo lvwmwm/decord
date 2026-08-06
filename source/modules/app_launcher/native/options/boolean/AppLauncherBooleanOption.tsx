@@ -1,10 +1,10 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11483
+// Function ID: 11484
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4255, 712, 7749, 2]
+// Dependencies: [32, 19, 21, 4285, 712, 7890, 2]
 // Exports: default
 
-// Module 11449 (AppLauncherBooleanOption)
+// Module 11483 (AppLauncherBooleanOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -40,7 +40,7 @@ export default function AppLauncherBooleanOption(arg0) {
   first = tmp2[0];
   React = tmp2[1];
   const items = [createCacheKey().container, style];
-  return jsx(require(7749) /* Form */.FormCheckboxRow, {
+  return jsx(require(7890) /* Form */.FormCheckboxRow, {
     start: true,
     end: true,
     style: items,

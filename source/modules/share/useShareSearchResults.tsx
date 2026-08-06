@@ -1,10 +1,10 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 10164
+// Function ID: 10165
 // Name: makeAutocompleterSearchParams
-// Dependencies: [32, 19, 4945, 1218, 5179, 7215, 10134, 589, 10137, 9826, 7200, 2]
+// Dependencies: [32, 19, 4975, 1218, 5209, 7242, 10165, 589, 10168, 9857, 7227, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 10133 (makeAutocompleterSearchParams)
+// Module 10164 (makeAutocompleterSearchParams)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -16,7 +16,7 @@ const require = arg1;
 const result = require("_handleConnectionOpen").fileFinishedImporting("modules/share/useShareSearchResults.tsx");
 
 export const makeAutocompleterSearchParams = function makeAutocompleterSearchParams(arg0) {
-  const query = require(10134) /* trackClose */.getQuickSwitcherOptions(arg0);
+  const query = require(10165) /* trackClose */.getQuickSwitcherOptions(arg0);
   let queryMode = query.queryMode;
   let resultTypes = ALLOWED_TYPES;
   let hasItem = null != queryMode;

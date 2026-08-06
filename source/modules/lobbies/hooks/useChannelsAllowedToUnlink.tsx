@@ -1,10 +1,10 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16500
+// Function ID: 16501
 // Name: getChannelsAllowedToUnlink
-// Dependencies: [1932, 3883, 9576, 589, 2]
+// Dependencies: [1961, 3912, 9605, 589, 2]
 // Exports: getChannelsAllowedToUnlink, useChannelsAllowedToUnlink
 
-// Module 16460 (getChannelsAllowedToUnlink)
+// Module 16500 (getChannelsAllowedToUnlink)
 import comparator from "comparator";
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

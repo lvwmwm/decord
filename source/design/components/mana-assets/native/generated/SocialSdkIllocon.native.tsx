@@ -1,10 +1,10 @@
-// Module ID: 6640
-// Function ID: 6641
+// Module ID: 6667
+// Function ID: 6668
 // Name: SocialSdkIllocon
-// Dependencies: [21, 5221, 6641, 2]
+// Dependencies: [21, 5251, 6668, 2]
 // Exports: SocialSdkIllocon
 
-// Module 6640 (SocialSdkIllocon)
+// Module 6667 (SocialSdkIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SocialSdkIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const SocialSdkIllocon = function SocialSdkIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6641);
+  obj[0] = importDefault(6668);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { uri: null });
+  return jsx(importDefault(5251), { uri: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 15993
+// Function ID: 15994
 // Name: keyExtractor
-// Dependencies: [19, 676, 21, 4255, 5189, 712, 1297, 1236, 4797, 4223, 4107, 4251, 15954, 5295, 5325, 2]
+// Dependencies: [19, 676, 21, 4285, 5219, 712, 1297, 1236, 4827, 4253, 4136, 4281, 15994, 5349, 5379, 2]
 // Exports: default
 
-// Module 15953 (keyExtractor)
+// Module 15993 (keyExtractor)
 import noop from "noop";
 import { Fonts } from "ME";
 import jsxProd from "jsxProd";
@@ -31,9 +31,9 @@ function FriendsEmptyComponent() {
   const items = [callback(require(1297) /* Button */.RefreshEmptyState, obj), ];
   obj = {
     onPress() {
-      let obj = callback2(4223);
+      let obj = callback2(4253);
       obj.hideActionSheet();
-      const rootNavigationRef = callback(4107).getRootNavigationRef();
+      const rootNavigationRef = callback(4136).getRootNavigationRef();
       if (null != rootNavigationRef) {
         obj = { screen: "add-friends", params: null };
         obj[1] = { sourcePage: "Instant Invite Empty State" };
@@ -52,8 +52,8 @@ function FriendsEmptyComponent() {
   items1 = [tmp.goToFriendsLink];
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl4.string(require(1236) /* getSystemLocale */.t.a7FVbE);
-  obj[4] = callback(require(4251) /* Text */.Text, obj1);
-  items[1] = callback(require(4797) /* PressableBase */.PressableOpacity, obj);
+  obj[4] = callback(require(4281) /* Text */.Text, obj1);
+  items[1] = callback(require(4827) /* PressableBase */.PressableOpacity, obj);
   obj[0] = items;
   return callback2(closure_5, obj);
 }

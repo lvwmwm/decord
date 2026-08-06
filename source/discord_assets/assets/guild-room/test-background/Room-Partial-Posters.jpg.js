@@ -1,9 +1,9 @@
-// Module ID: 16299
-// Function ID: 16300
+// Module ID: 16339
+// Function ID: 16340
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16299 (metadata)
+// Module 16339 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/guild-room/test-background/Room-Partial-Posters.jpg.js");
 
 export default "https://cdn.discordapp.com/assets/content/953fe0f3c32fb58ba28de77c49726e4cf1c7d4b34d3f6e6c17b95195469a58cb.jpg";

@@ -1,10 +1,10 @@
-// Module ID: 5201
-// Function ID: 5202
+// Module ID: 5231
+// Function ID: 5232
 // Name: updateImpersonating
-// Dependencies: [1372, 1932, 1942, 1935, 3883, 1931, 4450, 1934, 676, 1379, 698, 4449, 1940, 709, 1222, 2]
+// Dependencies: [1372, 1961, 1971, 1964, 3912, 1960, 4480, 1963, 676, 1379, 698, 4479, 1969, 709, 1222, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5201 (updateImpersonating)
+// Module 5231 (updateImpersonating)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -27,10 +27,10 @@ function updateImpersonating(closure_0, type) {
     obj = { num_roles: null };
     const _Object = Object;
     obj[0] = Object.keys(data.roles).length;
-    const merged = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(closure_0));
-    obj.is_viewing_as_member = data.type === require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+    const merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(closure_0));
+    obj.is_viewing_as_member = data.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
     obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-    const obj3 = require(4449) /* collectGuildAnalyticsMetadata */;
+    const obj3 = require(4479) /* collectGuildAnalyticsMetadata */;
     const tmp7 = require;
     obj = { type: "IMPERSONATE_UPDATE", guildId: null, data: null };
     obj[1] = closure_0;
@@ -58,10 +58,10 @@ let result = require("trackCommunicationDisabled").fileFinishedImporting("module
 export const startImpersonating = function startImpersonating(guildId, data) {
   let obj = importDefault(698);
   obj = { num_roles: Object.keys(data.roles).length };
-  const merged = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
-  obj.is_viewing_as_member = data.type === require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
+  const merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(guildId));
+  obj.is_viewing_as_member = data.type === require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER;
   obj.track(constants2.VIEW_AS_ROLES_SELECTED, obj);
-  const obj3 = require(4449) /* collectGuildAnalyticsMetadata */;
+  const obj3 = require(4479) /* collectGuildAnalyticsMetadata */;
   const tmp2 = require;
   obj = { type: "IMPERSONATE_UPDATE", guildId, data };
   importDefault(709).dispatch(obj);
@@ -86,7 +86,7 @@ export const updateImpersonatedChannels = function updateImpersonatedChannels(gu
   const set = new Set(optedInChannels.getOptedInChannels(guildId1));
   const item = items1.forEach((arg0) => set.add(arg0));
   const item1 = items2.forEach((arg0) => set.delete(arg0));
-  updateImpersonating(guildId1, { type: set(1940).ImpersonateType.NEW_MEMBER, optInChannels: set });
+  updateImpersonating(guildId1, { type: set(1969).ImpersonateType.NEW_MEMBER, optInChannels: set });
 };
 export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId, c2) {
   (function optIntoPrivateChannelsForGrantedRolesForPreview(guildId, c2) {
@@ -129,10 +129,10 @@ export const updateImpersonatedRoles = function updateImpersonatedRoles(guildId,
     obj[item10013.id] = item10013;
     continue;
   }
-  obj = { type: require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
+  obj = { type: require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER, roles: obj };
   updateImpersonating(guildId, obj);
 };
 export const updateImpersonatedData = function updateImpersonatedData(closure_0, arg1) {
   const merged = Object.assign(arg1);
-  updateImpersonating(closure_0, { type: require(1940) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
+  updateImpersonating(closure_0, { type: require(1969) /* ImpersonateType */.ImpersonateType.NEW_MEMBER });
 };

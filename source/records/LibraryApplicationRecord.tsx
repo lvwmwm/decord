@@ -1,9 +1,9 @@
-// Module ID: 4291
-// Function ID: 4292
+// Module ID: 4321
+// Function ID: 4322
 // Name: createFromServer
-// Dependencies: [1883, 4292, 4293, 676, 3837, 1384, 2]
+// Dependencies: [1912, 4322, 4323, 676, 3866, 1384, 2]
 
-// Module 4291 (createFromServer)
+// Module 4321 (createFromServer)
 import "toJS";
 import addApplication from "addApplication";
 import createFromServer from "createFromServer";
@@ -37,7 +37,7 @@ LibraryApplicationRecord["createFromServer"] = function createFromServer(id) {
   obj = { id: id.sku.id, type: id.sku.type, premium: id.sku.premium, preorderReleaseAt: null, preorderApproximateReleaseDate: null };
   let entitlementsResult = null;
   if (null != id.sku.preorder_release_at) {
-    entitlements = importDefault(3837);
+    entitlements = importDefault(3866);
     entitlementsResult = entitlements(id.sku.preorder_release_at);
   }
   obj[3] = entitlementsResult;

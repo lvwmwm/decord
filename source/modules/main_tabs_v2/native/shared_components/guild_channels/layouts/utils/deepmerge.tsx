@@ -1,9 +1,9 @@
-// Module ID: 9684
-// Function ID: 9685
+// Module ID: 9715
+// Function ID: 9716
 // Name: merge
 // Dependencies: [2]
 
-// Module 9684 (merge)
+// Module 9715 (merge)
 function merge() {
   let items = [...arguments];
   return items.reduce((arg0, arg1) => {

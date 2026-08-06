@@ -1,10 +1,10 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11071
+// Function ID: 11072
 // Name: result
 // Dependencies: [687, 11, 2]
 // Exports: default
 
-// Module 11039 (result)
+// Module 11071 (result)
 const result = 2 * require("set").Millis.HOUR;
 const result1 = require("set").fileFinishedImporting("modules/activities/utils/isInviteActive.tsx");
 

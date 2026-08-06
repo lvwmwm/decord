@@ -1,10 +1,10 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16314
+// Function ID: 16315
 // Name: ActivityFeedbackReasons
-// Dependencies: [19, 4280, 676, 10973, 21, 698, 16275, 10994, 1236, 10976, 3955, 16276, 2]
+// Dependencies: [19, 4310, 676, 11005, 21, 698, 16315, 11026, 1236, 11008, 3984, 16316, 2]
 // Exports: default
 
-// Module 16274 (ActivityFeedbackReasons)
+// Module 16314 (ActivityFeedbackReasons)
 import "noop";
 import { ActivityFeedbackReasons } from "items3";
 import { AnalyticEvents } from "ME";
@@ -28,7 +28,7 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
     prop = embeddedActivityConfig.displays_advertisements;
   }
   let obj = { headerLabel: null, showHeaderCloseButton: true, ratingsBodyLabel: null, reasonsHeaderLabel: null, reasons: null, feedbackReasons: null, otherKey: null, trackOpen: null, trackReport: null };
-  const tmp2 = importDefault(16275)(true, true === prop);
+  const tmp2 = importDefault(16315)(true, true === prop);
   const intl = activityApplication(1236).intl;
   obj = { applicationName: activityApplication.name };
   obj[0] = intl.formatToPlainString(activityApplication(1236).t.QXYwoD, obj);
@@ -82,5 +82,5 @@ export default function ActivityFeedbackActionSheet(activityApplication) {
       const tmp16 = outer1_1(outer1_2[11]);
     }
   };
-  return jsx(importDefault(10994), { applicationName: activityApplication.name });
+  return jsx(importDefault(11026), { applicationName: activityApplication.name });
 };

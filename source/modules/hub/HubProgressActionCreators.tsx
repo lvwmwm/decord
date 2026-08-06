@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8999
+// Function ID: 9000
 // Name: setHubProgressActionComplete
-// Dependencies: [1862, 8971, 676, 1355, 1384, 2]
+// Dependencies: [1891, 9000, 676, 1355, 1384, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 8970 (setHubProgressActionComplete)
+// Module 8999 (setHubProgressActionComplete)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { HUB_PROGRESS_STEP_ORDER } from "items";
 import { GuildFeatures } from "ME";

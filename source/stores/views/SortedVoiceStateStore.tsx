@@ -1,10 +1,10 @@
-// Module ID: 4327
-// Function ID: 4328
+// Module ID: 4357
+// Function ID: 4358
 // Name: getVoiceStatesForGuild
-// Dependencies: [32, 1375, 1882, 1218, 1372, 1942, 1874, 4271, 676, 4094, 3879, 11, 1306, 12, 589, 1865, 709, 2]
+// Dependencies: [32, 1375, 1911, 1218, 1372, 1971, 1903, 4301, 676, 4123, 3908, 11, 1306, 12, 589, 1894, 709, 2]
 // Exports: getComparator, makeMemberAndComparator
 
-// Module 4327 (getVoiceStatesForGuild)
+// Module 4357 (getVoiceStatesForGuild)
 import _slicedToArray from "_slicedToArray";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import createdAt from "createdAt";
@@ -27,7 +27,7 @@ function getVoiceStatesForGuild(guildId) {
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -60,8 +60,8 @@ function makeSortedVoiceState(voiceState, guildId, arr) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4094).getName(tmp3);
-    const obj2 = importDefault(4094);
+    nick = importDefault(4123).getName(tmp3);
+    const obj2 = importDefault(4123);
   }
   let str = "\u0001";
   if (voiceState.selfStream) {
@@ -155,7 +155,7 @@ prototype["updateVoiceState"] = function updateVoiceState(id) {
             nick = member.nick;
           }
           if (nick == null) {
-            let obj = importDefault(4094);
+            let obj = importDefault(4123);
             nick = obj.getName(user);
           }
           const _voiceStates2 = self._voiceStates;
@@ -222,7 +222,7 @@ prototype["updateMember"] = function updateMember(arg0) {
           nick2 = member.nick;
         }
         if (nick2 == null) {
-          let obj = importDefault(4094);
+          let obj = importDefault(4123);
           nick2 = obj.getName(user);
         }
         let str = "\u0001";
@@ -359,7 +359,7 @@ prototype2["initialize"] = function initialize() {
   this.syncWith(items2, handleFavoriteChannelAppeared);
 };
 prototype2["getVoiceStates"] = function getVoiceStates(guildId) {
-  let obj = require(1865) /* getFavoritesAwareGuildName */;
+  let obj = require(1894) /* getFavoritesAwareGuildName */;
   if (obj.isFavoritesGuildId(guildId)) {
     let voiceStates = (function getFavoritesVoiceStates() {
       if (null != result) {
@@ -459,7 +459,7 @@ prototype2["getVoiceStates"] = function getVoiceStates(guildId) {
       const _Set = Set;
       const set = new Set();
       obj[0] = set;
-      const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+      const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -496,7 +496,7 @@ prototype2["getVoiceStatesForChannel"] = function getVoiceStatesForChannel(getGu
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -527,7 +527,7 @@ prototype2["getVoiceStatesForChannelAlt"] = function getVoiceStatesForChannelAlt
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -561,7 +561,7 @@ prototype2["countVoiceStatesForChannel"] = function countVoiceStatesForChannel(a
       const _Set = Set;
       const set = new Set();
       obj[0] = set;
-      const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+      const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -595,7 +595,7 @@ prototype2["getVoiceStateVersion"] = function getVoiceStateVersion(arg0) {
     const _Set = Set;
     const set = new Set();
     obj[0] = set;
-    const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+    const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
       const channelId = voiceState.voiceState.channelId;
       if (null != channelId) {
         const items = [channelId];
@@ -676,7 +676,7 @@ const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
         const _Set = Set;
         const set = new Set();
         obj[0] = set;
-        const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+        const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
           const channelId = voiceState.voiceState.channelId;
           if (null != channelId) {
             const items = [channelId];
@@ -740,7 +740,7 @@ const sortedVoiceStateStore = new SortedVoiceStateStore(require("dispatcher"), {
       const _Set = Set;
       const set = new Set();
       obj[0] = set;
-      const secondaryIndexMap = new require(3879) /* version */.SecondaryIndexMap((voiceState) => {
+      const secondaryIndexMap = new require(3908) /* version */.SecondaryIndexMap((voiceState) => {
         const channelId = voiceState.voiceState.channelId;
         if (null != channelId) {
           const items = [channelId];
@@ -817,8 +817,8 @@ export const makeMemberAndComparator = function makeMemberAndComparator(selfStre
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4094).getName(arg2);
-    const obj2 = importDefault(4094);
+    nick = importDefault(4123).getName(arg2);
+    const obj2 = importDefault(4123);
   }
   let str = "\u0001";
   if (selfStream.selfStream) {

@@ -1,8 +1,8 @@
-// Module ID: 8807
-// Function ID: 8808
-// Dependencies: [5, 676, 530, 709, 1208, 8806, 3928, 2]
+// Module ID: 8836
+// Function ID: 8837
+// Dependencies: [5, 676, 530, 709, 1208, 8835, 3957, 2]
 
-// Module 8807
+// Module 8836
 import generateHydrationId from "generateHydrationId";
 import { Endpoints } from "ME";
 
@@ -398,7 +398,7 @@ export default {
     })();
   },
   fetchForStatusNotification(arg0) {
-    let obj = require(8806) /* generateHydrationId */;
+    let obj = require(8835) /* generateHydrationId */;
     if (obj.icymiEnabled("fetchInitialStatus")) {
       obj = { type: "LOAD_ICYMI_FROM_NOTIFICATION", customStatusItem: null };
       obj[1] = arg0;

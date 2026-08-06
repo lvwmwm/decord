@@ -1,61 +1,73 @@
-// Module ID: 15139
-// Function ID: 15140
-// Name: handleAddToFavorites
-// Dependencies: [19, 21, 4223, 12019, 15140, 5631, 5322, 1236, 5633, 3001, 8640, 15141, 2]
+// Module ID: 15177
+// Function ID: 15178
+// Name: handleCreateCategory
+// Dependencies: [19, 21, 4253, 15178, 9629, 9633, 12053, 5685, 5376, 1236, 5687, 3030, 12026, 15179, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15139 (handleAddToFavorites)
-import "noop";
+// Module 15177 (handleCreateCategory)
+import noop from "noop";
 import jsxProd from "jsxProd";
 
-let c3;
 let c4;
+let c5;
 const require = arg1;
-function handleAddToFavorites() {
-  importDefault(4223).hideActionSheet(FavoritesGuildAddActionSheet);
-  const obj = importDefault(4223);
-  const result = require(12019) /* AddFavoriteChannelModal */.openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
-}
 function handleCreateCategory() {
-  importDefault(4223).hideActionSheet(FavoritesGuildAddActionSheet);
-  const obj = importDefault(4223);
-  const result = require(15140) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
+  importDefault(4253).hideActionSheet(FavoritesGuildAddActionSheet);
+  const obj = importDefault(4253);
+  const result = require(15178) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
-  let obj = { header: null, children: null };
+  let obj = shouldShowUpsell(favoriteLimit[4]);
+  const favoritesLimitUpsell = obj.useFavoritesLimitUpsell();
+  shouldShowUpsell = favoritesLimitUpsell.shouldShowUpsell;
+  const isAtLimit = favoritesLimitUpsell.isAtLimit;
+  favoriteLimit = favoritesLimitUpsell.favoriteLimit;
+  const items = [shouldShowUpsell, isAtLimit, favoriteLimit];
+  const callback = React.useCallback(() => {
+    isAtLimit(favoriteLimit[2]).hideActionSheet(outer1_6);
+    if (shouldShowUpsell) {
+      if (isAtLimit) {
+        tmp(tmp2[5])(favoriteLimit);
+      }
+    }
+    const obj = isAtLimit(favoriteLimit[2]);
+    tmp = isAtLimit;
+    const result = shouldShowUpsell(favoriteLimit[6]).openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
+  }, items);
+  obj = { header: null, children: null };
   obj = { title: null };
-  const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
-  obj[0] = callback(require(5322) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
-  obj = { hasIcons: true, children: null };
-  const obj1 = { label: null, icon: null, onPress: null };
-  const intl2 = require(1236) /* getSystemLocale */.intl;
-  obj1[0] = intl2.string(importDefault(3001).G9fGlP);
-  const obj2 = { IconComponent: null };
-  obj2[0] = require(8640) /* StarOutlineIcon */.StarOutlineIcon;
-  obj1[1] = callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj2);
-  obj1[2] = handleAddToFavorites;
-  obj[1] = callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow, obj1);
-  const items = [callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj), ];
-  const obj3 = { hasIcons: true, children: null };
-  const obj4 = { label: null, icon: null, onPress: null };
-  const intl3 = require(1236) /* getSystemLocale */.intl;
-  obj4[0] = intl3.string(require(1236) /* getSystemLocale */.t["ISN+NM"]);
-  const obj5 = { IconComponent: null };
-  obj5[0] = require(15141) /* FolderPlusIcon */.FolderPlusIcon;
-  obj4[1] = callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow.Icon, obj5);
-  obj4[2] = handleCreateCategory;
-  obj3[1] = callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow, obj4);
-  items[1] = callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj3);
-  obj[1] = items;
-  return callback2(require(5631) /* ActionSheet */.ActionSheet, obj);
+  const intl = shouldShowUpsell(favoriteLimit[9]).intl;
+  obj[0] = intl.string(shouldShowUpsell(favoriteLimit[9]).t.wMWyci);
+  obj[0] = callback(shouldShowUpsell(favoriteLimit[8]).BottomSheetTitleHeader, obj);
+  const obj1 = { hasIcons: true, children: null };
+  const obj2 = { label: null, icon: null, onPress: null };
+  const intl2 = shouldShowUpsell(favoriteLimit[9]).intl;
+  obj2[0] = intl2.string(isAtLimit(favoriteLimit[11]).G9fGlP);
+  const obj3 = { IconComponent: null };
+  obj3[0] = shouldShowUpsell(favoriteLimit[12]).PlusMediumIcon;
+  obj2[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Icon, obj3);
+  obj2[2] = callback;
+  obj1[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow, obj2);
+  const items1 = [callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Group, obj1), ];
+  const obj4 = { hasIcons: true, children: null };
+  const obj5 = { label: null, icon: null, onPress: null };
+  const intl3 = shouldShowUpsell(favoriteLimit[9]).intl;
+  obj5[0] = intl3.string(shouldShowUpsell(favoriteLimit[9]).t["ISN+NM"]);
+  const obj6 = { IconComponent: null };
+  obj6[0] = shouldShowUpsell(favoriteLimit[13]).FolderPlusIcon;
+  obj5[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Icon, obj6);
+  obj5[2] = handleCreateCategory;
+  obj4[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow, obj5);
+  items1[1] = callback(shouldShowUpsell(favoriteLimit[10]).ActionSheetRow.Group, obj4);
+  obj[1] = items1;
+  return callback2(shouldShowUpsell(favoriteLimit[7]).ActionSheet, obj);
 }
-({ jsx: c3, jsxs: c4 } = jsxProd);
+({ jsx: c4, jsxs: c5 } = jsxProd);
 FavoritesGuildAddActionSheet = "FavoritesGuildAddActionSheet";
 let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/favorites/native/FavoritesGuildAddActionSheet.tsx");
 
 export const openFavoritesGuildAddActionSheet = function openFavoritesGuildAddActionSheet() {
-  let obj = require(4223) /* ACTION_SHEET_HEIGHT_HALF */;
+  let obj = require(4253) /* ACTION_SHEET_HEIGHT_HALF */;
   obj = { content: callback(FavoritesGuildAddActionSheet, {}), key: FavoritesGuildAddActionSheet };
   obj.showActionSheet(obj);
 };

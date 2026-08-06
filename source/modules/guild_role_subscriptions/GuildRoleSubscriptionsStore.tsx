@@ -1,9 +1,9 @@
-// Module ID: 3877
-// Function ID: 3878
+// Module ID: 3906
+// Function ID: 3907
 // Name: makeGroupListingIndexSubscriptionListingTag
-// Dependencies: [3878, 3879, 589, 38, 709, 2]
+// Dependencies: [3907, 3908, 589, 38, 709, 2]
 
-// Module 3877 (makeGroupListingIndexSubscriptionListingTag)
+// Module 3906 (makeGroupListingIndexSubscriptionListingTag)
 import { DefaultCreatorMonetizationRestrictions as closure_2 } from "CreatorMonetizationRestrictions";
 import { Store } from "initialize";
 import set from "initialize";

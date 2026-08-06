@@ -1,10 +1,10 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14452
+// Function ID: 14453
 // Name: useSyncedModeThemeName
-// Dependencies: [1302, 4068, 1348, 589, 4098, 1236, 2453, 2]
+// Dependencies: [1302, 4097, 1348, 589, 4127, 1236, 2482, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14415 (useSyncedModeThemeName)
+// Module 14452 (useSyncedModeThemeName)
 import handleThemeChange from "handleThemeChange";
 import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes";
 

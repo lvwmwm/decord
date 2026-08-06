@@ -1,10 +1,10 @@
-// Module ID: 6894
-// Function ID: 6895
+// Module ID: 6921
+// Function ID: 6922
 // Name: openCollectiblesShop
-// Dependencies: [5, 4254, 1946, 6895, 6910, 6911, 6912, 6913, 6917, 6897, 6923, 6924, 678, 676, 6938, 6939, 4107, 709, 6940, 6941, 6943, 530, 4154, 5848, 6942, 6907, 6944, 6945, 2]
+// Dependencies: [5, 4284, 1975, 6922, 6937, 6938, 6939, 6940, 6944, 6924, 6950, 6951, 678, 676, 6965, 6966, 4136, 709, 6967, 6968, 6970, 530, 4184, 5875, 6969, 6934, 6971, 6972, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 6894 (openCollectiblesShop)
+// Module 6921 (openCollectiblesShop)
 import map from "map";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,8 +34,7 @@ function openCollectiblesShopMobile(screen) {
   obj = { type: "COLLECTIBLES_SHOP_OPEN" };
   const merged = Object.assign(screen);
   obj.dispatch(obj);
-  let obj2 = require(4107) /* getRootNavigationRef */;
-  const rootNavigationRef = obj2.getRootNavigationRef();
+  const rootNavigationRef = require(4136) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       screen = screen.screen;
@@ -56,9 +55,7 @@ function openCollectiblesShopMobile(screen) {
           obj1[1] = screen;
           obj1[2] = screen.onNavigateAway;
           obj[1] = obj1;
-          obj2 = { name: "settings", params: null };
-          obj2[1] = obj;
-          rootNavigationRef.navigate(obj2);
+          rootNavigationRef.navigate("settings", obj);
         }
       } else if (null != screen.initialProductSkuId) {
         let FEATURED_PAGE = constants.SHOP_ALL;
@@ -71,7 +68,7 @@ function openCollectiblesShopMobile(screen) {
 function closeCollectiblesShop() {
   importDefault(709).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(709);
-  require(6940) /* pushLayer */.popLayer();
+  require(6967) /* pushLayer */.popLayer();
 }
 function _fetchCollectiblesCategories() {
   const self = this;
@@ -692,8 +689,8 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5848);
-            const aPIError = new callback(4154).APIError(callback);
+            obj2 = callback(5875);
+            const aPIError = new callback(4184).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
@@ -788,8 +785,8 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5848);
-            const aPIError = new callback(4154).APIError(callback);
+            obj2 = callback(5875);
+            const aPIError = new callback(4184).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             const obj4 = { value: null, done: true };
@@ -1225,7 +1222,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4107).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4136).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -1424,7 +1421,7 @@ export const maybeFetchCollectiblesProduct = function maybeFetchCollectiblesProd
 };
 export const seedCollectiblesProductFromStandaloneLoad = function seedCollectiblesProductFromStandaloneLoad(memo) {
   const timestamp = Date.now();
-  let obj = require(6907) /* getItemRecordsFromPurchases */;
+  let obj = require(6934) /* getItemRecordsFromPurchases */;
   const items = [memo];
   const result = obj.extendVariantsProducts(items);
   const iter = result[Symbol.iterator]();

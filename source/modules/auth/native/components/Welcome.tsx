@@ -1,10 +1,10 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 14997
+// Function ID: 14998
 // Name: InviteCard
-// Dependencies: [19, 17, 14960, 4169, 6813, 11666, 1882, 4240, 8964, 676, 5835, 7090, 21, 4255, 712, 11900, 1236, 38, 1297, 4094, 4251, 12486, 7534, 13088, 1480, 1581, 589, 4681, 6828, 698, 595, 5721, 5583, 14961, 14956, 5102, 4665, 3967, 5220, 11179, 2]
+// Dependencies: [19, 17, 14998, 4199, 6840, 11700, 1911, 4270, 8993, 676, 5862, 7117, 21, 4285, 712, 11934, 1236, 38, 1297, 4123, 4281, 12523, 7562, 13125, 1480, 1609, 589, 4711, 6855, 698, 595, 5748, 5637, 14999, 14994, 1481, 5132, 4695, 3996, 5250, 11213, 2]
 // Exports: default
 
-// Module 14959 (InviteCard)
+// Module 14997 (InviteCard)
 import nameFromUser from "nameFromUser";
 import get_ActivityIndicator from "module_38";
 import isUnderageAnonymous from "isUnderageAnonymous";
@@ -43,7 +43,7 @@ function InviteCard(invite) {
     if (null != guild) {
       let obj = { guild: null };
       obj[0] = guild;
-      let tmp14 = callback(importDefault(11900), obj);
+      let tmp14 = callback(importDefault(11934), obj);
       const intl2 = require(1236) /* getSystemLocale */.intl;
       let stringResult = intl2.string(require(1236) /* getSystemLocale */.t["3rE1P8"]);
       let name = guild.name;
@@ -51,30 +51,30 @@ function InviteCard(invite) {
       let tmp18 = callback;
     } else if (null != tmp2) {
       importDefault(38)(null != inviter, "Null inviter");
-      obj = { user: null, guildId: "Array" };
+      obj = { user: null, guildId: "r" };
       const tmp12 = new createdAt(inviter);
       obj[0] = tmp12;
       tmp14 = callback(require(1297) /* Button */.Avatar, obj);
       const intl = require(1236) /* getSystemLocale */.intl;
       stringResult = intl.string(require(1236) /* getSystemLocale */.t.OsdY8B);
-      let obj1 = importDefault(4094);
+      let obj1 = importDefault(4123);
       name = obj1.getFormattedName(inviter);
       tmp17 = require;
       tmp18 = callback;
     } else if (null == inviter) {
       return null;
     } else {
-      obj = { user: null, guildId: "Array" };
+      obj = { user: null, guildId: "r" };
       const tmp33 = new createdAt(inviter);
       obj[0] = tmp33;
       const intl3 = require(1236) /* getSystemLocale */.intl;
       stringResult = intl3.string(require(1236) /* getSystemLocale */.t["+ITYkQ"]);
       const tmp35 = callback(require(1297) /* Button */.Avatar, obj);
-      name = importDefault(4094).getFormattedName(inviter, true);
+      name = importDefault(4123).getFormattedName(inviter, true);
       tmp14 = tmp35;
       tmp17 = require;
       tmp18 = callback;
-      const obj9 = importDefault(4094);
+      const obj9 = importDefault(4123);
     }
     obj1 = { style: null, children: null };
     const items = [tmp.container, invite.style];
@@ -84,10 +84,10 @@ function InviteCard(invite) {
     obj2[0] = tmp.text;
     const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: null };
     obj3[2] = stringResult;
-    const items2 = [tmp18(tmp17(4251).Text, obj3), ];
+    const items2 = [tmp18(tmp17(4281).Text, obj3), ];
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = name;
-    items2[1] = tmp18(tmp17(4251).Text, obj4);
+    items2[1] = tmp18(tmp17(4281).Text, obj4);
     obj2[1] = items2;
     items1[1] = callback2(closure_4, obj2);
     obj1[1] = items1;
@@ -101,13 +101,13 @@ function GuildTemplateCard(arg0) {
   const tmp = createCacheKey();
   let obj = { style: items, children: null };
   items = [tmp.container, style];
-  obj = { source: importDefault(12486) };
+  obj = { source: importDefault(12523) };
   const items1 = [callback(closure_5, obj), ];
   obj = { style: tmp.text, children: null };
   const obj1 = { variant: "text-sm/medium", color: "text-subtle", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.QzUORX);
-  const items2 = [callback(require(4251) /* Text */.Text, obj1), callback(require(4251) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildTemplate.name })];
+  const items2 = [callback(require(4281) /* Text */.Text, obj1), callback(require(4281) /* Text */.Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guildTemplate.name })];
   obj[1] = items2;
   items1[1] = callback2(closure_4, obj);
   obj[1] = items1;
@@ -117,7 +117,7 @@ function Centerpiece(inlineButtons) {
   let guildTemplate;
   let invite;
   ({ invite, guildTemplate } = inlineButtons);
-  const tmp2 = importDefault(7534)();
+  const tmp2 = importDefault(7562)();
   const tmp3 = callback3(tmp2);
   let tmp7 = null != guildTemplate;
   if (tmp7) {
@@ -126,7 +126,7 @@ function Centerpiece(inlineButtons) {
   let obj = { style: items, children: null };
   items = [tmp3.centerpieceContainer];
   obj = { alwaysBounceVertical: false, contentContainerStyle: tmp3.scrollViewContainer, children: null };
-  obj = { style: tmp3.logo, source: require(13088) /* registerAsset */ };
+  obj = { style: tmp3.logo, source: require(13125) /* registerAsset */ };
   const items1 = [callback(closure_5, obj), , ];
   const obj1 = { style: tmp3.header, lineClamp: null, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: null };
   let num = 2;
@@ -136,7 +136,7 @@ function Centerpiece(inlineButtons) {
   obj1[1] = num;
   const intl = tmp4(1236).intl;
   obj1[5] = intl.string(require(1236) /* getSystemLocale */.t["3S2xmm"]);
-  const items2 = [callback(require(4251) /* Text */.Heading, obj1), , , ];
+  const items2 = [callback(require(4281) /* Text */.Heading, obj1), , , ];
   const items3 = [tmp3.subHeader, ];
   if (null != invite) {
     let subHeaderWithInvite = tmp3.subHeaderWithInvite;
@@ -147,7 +147,7 @@ function Centerpiece(inlineButtons) {
   items3[1] = subHeaderWithInvite;
   const intl2 = tmp4(1236).intl;
   obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t.Gtcthl);
-  items2[1] = callback(require(4251) /* Text */.Text, obj2);
+  items2[1] = callback(require(4281) /* Text */.Text, obj2);
   let tmp9Result = null;
   if (null != invite) {
     const obj3 = { invite: null };
@@ -286,7 +286,9 @@ export default function Welcome() {
       if (nameFromUser) {
         arr = arr.push(outer1_16.AGE_GATE_UNDERAGE, { fromRegister: true });
       } else {
-        arr = arr.push(arr(stateFromStores[34]).getNextAuthState(outer1_16.WELCOME));
+        const nextAuthState = arr(stateFromStores[34]).getNextAuthState(outer1_16.WELCOME);
+        const StackActions = arr(stateFromStores[35]).StackActions;
+        arr.dispatch(StackActions.push(nextAuthState));
         const obj = arr(stateFromStores[34]);
         callback(stateFromStores[29]).track(outer1_14.REGISTER_VIEWED);
         const obj2 = callback(stateFromStores[29]);
@@ -296,7 +298,7 @@ export default function Welcome() {
   };
   const intl = tmp5(tmp2[16]).intl;
   obj1[3] = intl.string(_require(stateFromStores[16]).t.pV8xeR);
-  const items6 = [callback(_require(stateFromStores[36]).Button, obj1), ];
+  const items6 = [callback(_require(stateFromStores[37]).Button, obj1), ];
   obj2 = {
     size: "lg",
     variant: "secondary-overlay",
@@ -308,14 +310,14 @@ export default function Welcome() {
   };
   const intl2 = tmp5(tmp2[16]).intl;
   obj2[3] = intl2.string(_require(stateFromStores[16]).t.dKhVQN);
-  items6[1] = callback(_require(stateFromStores[36]).Button, obj2);
+  items6[1] = callback(_require(stateFromStores[37]).Button, obj2);
   obj[0] = items6;
-  obj[1] = callback2(_require(stateFromStores[35]).ButtonGroup, obj);
+  obj[1] = callback2(_require(stateFromStores[36]).ButtonGroup, obj);
   const tmp19 = callback(closure_4, obj);
   obj3 = { style: null, children: null };
   const items7 = [tmp4.container, ];
   obj4 = { paddingTop: null, paddingBottom: null };
-  obj4[0] = top + _require(stateFromStores[38]).NAV_BAR_HEIGHT;
+  obj4[0] = top + _require(stateFromStores[39]).NAV_BAR_HEIGHT;
   obj4[1] = bottom;
   items7[1] = obj4;
   obj3[0] = items7;
@@ -332,8 +334,8 @@ export default function Welcome() {
   }
   obj6 = { theme: "darker", children: null };
   items8[1] = tmp22;
-  items8[2] = callback(_require(stateFromStores[39]).TTIFirstContentfulPaint, { label: "welcome" });
+  items8[2] = callback(_require(stateFromStores[40]).TTIFirstContentfulPaint, { label: "welcome" });
   obj3[1] = items8;
   obj6[1] = callback2(closure_4, obj3);
-  return callback(_require(stateFromStores[37]).ThemeContextProvider, obj6);
+  return callback(_require(stateFromStores[38]).ThemeContextProvider, obj6);
 };

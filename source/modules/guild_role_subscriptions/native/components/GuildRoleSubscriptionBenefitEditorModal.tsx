@@ -1,9 +1,9 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16734
+// Function ID: 16735
 // Name: DeleteButton
-// Dependencies: [5, 32, 19, 17, 3892, 1874, 16693, 14316, 676, 21, 4255, 712, 5189, 13124, 4797, 4214, 1297, 1236, 1581, 16695, 4445, 7749, 16697, 8954, 16698, 2]
+// Dependencies: [5, 32, 19, 17, 3921, 1903, 16733, 14353, 676, 21, 4285, 712, 5219, 13161, 4827, 4244, 1297, 1236, 1609, 16735, 4475, 7890, 16737, 8983, 16738, 2]
 
-// Module 16694 (DeleteButton)
+// Module 16734 (DeleteButton)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "getSystemLocale";
@@ -27,16 +27,16 @@ const require = arg1;
 function DeleteButton(onDelete) {
   const tmp = callback4();
   let obj = { style: items, accessibilityRole: "button", onPress: onDelete.onDelete, children: null };
-  items = [importDefault(13124)().textInput, tmp.deleteButton];
+  items = [importDefault(13161)().textInput, tmp.deleteButton];
   obj = { style: tmp.deleteIcon, color: null, size: "custom" };
   obj[1] = importDefault(712).unsafe_rawColors.RED_400;
-  const items1 = [callback2(require(4214) /* TrashIcon */.TrashIcon, obj), ];
+  const items1 = [callback2(require(4244) /* TrashIcon */.TrashIcon, obj), ];
   obj = { style: tmp.deleteLabel, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.p4Bh7f);
   items1[1] = callback2(require(1297) /* Button */.LegacyText, obj);
   obj[3] = items1;
-  return callback3(require(4797) /* PressableBase */.PressableOpacity, obj);
+  return callback3(require(4827) /* PressableBase */.PressableOpacity, obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ GuildRoleSubscriptionBenefitTypes: c10, MAX_SUBSCRIPTION_BENEFIT_DESCRIPTION_LENGTH: unpackModuleId, MAX_SUBSCRIPTION_BENEFIT_NAME_LENGTH: closure_12 } = MAX_SUBSCRIPTION_TIERS);
@@ -175,7 +175,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
     return applyArgumentsResult;
   }
   let tmp = callback4();
-  const tmp4 = first(13124)();
+  const tmp4 = first(13161)();
   const tmp5 = callback(resetImperatively.useNameState(), 2);
   first = tmp5[0];
   const dependencyMap = tmp6;
@@ -240,7 +240,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
         callback3(id.id);
         tmp6(benefitType(tmp6[20]).computeChannelName(id, first4, first3));
       };
-      let tmp25 = callback2(tmp2(16695), obj);
+      let tmp25 = callback2(tmp2(16735), obj);
       let tmp26 = callback2;
     } else {
       obj = { style: null, showTopContainer: false, multiline: false, maxLength: null, value: null, placeholder: null, onChange: null, autoFocus: true, clearButtonVisibility: null };
@@ -251,7 +251,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       obj[5] = intl9.string(tmp20(1236).t["kV54/Y"]);
       obj[6] = tmp6;
       obj[8] = tmp20(1297).ClearButtonVisibility.WITH_CONTENT;
-      tmp25 = callback2(tmp20(7749).FormInput, obj);
+      tmp25 = callback2(tmp20(7890).FormInput, obj);
       tmp26 = callback2;
     }
     obj = { style: null, children: null };
@@ -271,20 +271,20 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       return applyArgumentsResult;
     };
     obj1[4] = benefitType.listingId;
-    const items = [tmp26(tmp2(16697), obj1), ];
+    const items = [tmp26(tmp2(16737), obj1), ];
     let obj2 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
     const items1 = [tmp.scrollContainer, ];
     const obj3 = { paddingBottom: null };
-    obj3[0] = first(1581)().bottom + 32 + 16;
+    obj3[0] = first(1609)().bottom + 32 + 16;
     items1[1] = obj3;
     obj2[3] = items1;
     const obj4 = { style: null, children: null };
     obj4[0] = tmp4.header;
     obj4[1] = stringResult1;
-    const items2 = [tmp26(tmp2(8954), obj4), tmp25, , , , , ];
+    const items2 = [tmp26(tmp2(8983), obj4), tmp25, , , , , ];
     const obj5 = { style: null, children: null };
     obj5[0] = tmp4.header;
-    let tmp2Result = tmp2(8954);
+    let tmp2Result = tmp2(8983);
     const intl7 = tmp20(1236).intl;
     obj5[1] = intl7.string(tmp20(1236).t.sMOuuS);
     items2[2] = tmp26(tmp2Result, obj5);
@@ -298,10 +298,10 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
       callback(emojiId.emojiId);
       callback2(emojiId.emojiName);
     };
-    items2[3] = tmp26(tmp2(16698), obj6);
+    items2[3] = tmp26(tmp2(16738), obj6);
     const obj8 = { style: null, children: null };
     obj8[0] = tmp4.header;
-    tmp2Result = tmp2(8954);
+    tmp2Result = tmp2(8983);
     const intl8 = tmp20(1236).intl;
     obj8[1] = intl8.string(tmp20(1236).t["74JctW"]);
     items2[4] = tmp26(tmp2Result, obj8);
@@ -311,7 +311,7 @@ const forwardRefResult = importAllResult.forwardRef((benefitType) => {
     obj9[5] = first3;
     obj9[6] = tmp9[1];
     obj9[7] = stringResult2;
-    items2[5] = tmp26(tmp20(7749).FormInput, obj9);
+    items2[5] = tmp26(tmp20(7890).FormInput, obj9);
     let tmp26Result = null;
     if (null != benefitType.onDelete) {
       const obj10 = { onDelete: null };

@@ -1,10 +1,10 @@
-// Module ID: 8536
-// Function ID: 8537
+// Module ID: 8565
+// Function ID: 8566
 // Name: withEqualityFn
-// Dependencies: [700, 4124, 705, 2]
+// Dependencies: [700, 4153, 705, 2]
 // Exports: default
 
-// Module 8536 (withEqualityFn)
+// Module 8565 (withEqualityFn)
 import identity from "identity";
 import createJSONStorage from "createJSONStorage";
 import identity from "identity";
@@ -117,7 +117,7 @@ const result = require("batchUpdates").fileFinishedImporting("modules/expression
 export default function createStore() {
   let obj = _undefined(700);
   const withEqualityFn = obj.createWithEqualityFn();
-  const withEqualityFnResult = withEqualityFn(_undefined(4124).subscribeWithSelector(() => closure_2));
+  const withEqualityFnResult = withEqualityFn(_undefined(4153).subscribeWithSelector(() => closure_2));
   _undefined = withEqualityFnResult;
   obj = {
     useStore: withEqualityFnResult,

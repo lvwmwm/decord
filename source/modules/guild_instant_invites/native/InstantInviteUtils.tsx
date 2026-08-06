@@ -1,10 +1,10 @@
-// Module ID: 9586
-// Function ID: 9587
+// Module ID: 9615
+// Function ID: 9616
 // Name: useInviteActions
-// Dependencies: [5, 1372, 1874, 676, 1236, 9580, 9587, 8817, 7112, 5623, 3955, 8959, 7651, 3956, 2]
+// Dependencies: [5, 1372, 1903, 676, 1236, 9609, 9616, 8846, 7139, 5677, 3984, 8988, 7679, 3985, 2]
 // Exports: useInviteActions
 
-// Module 9586 (useInviteActions)
+// Module 9615 (useInviteActions)
 import getMore from "get more";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -27,9 +27,9 @@ export const useInviteActions = function useInviteActions(invite) {
   let obj = { label: null, iconSource: null, action: null };
   let intl = invite(1236).intl;
   obj[0] = intl.string(invite(1236).t.RDE0Sc);
-  obj[1] = onInviteRevoked(9580).share;
+  obj[1] = onInviteRevoked(9609).share;
   obj[2] = function action() {
-    onInviteRevoked(9587)(() => {
+    onInviteRevoked(9616)(() => {
       let obj = outer1_0(outer1_2[7]);
       let tmp4;
       if (!getMore) {
@@ -64,23 +64,23 @@ export const useInviteActions = function useInviteActions(invite) {
   obj = { label: null, iconSource: null, action: null };
   const intl2 = invite(1236).intl;
   obj[0] = intl2.string(invite(1236).t.OpuAlK);
-  obj[1] = onInviteRevoked(9580).copy;
+  obj[1] = onInviteRevoked(9609).copy;
   obj[2] = function action() {
     if (c3) {
-      let tmpResult = tmp(8959);
+      let tmpResult = tmp(8988);
       tmpResult.handleCopy(invite.code, invite.channel, outer1_6.GROUP_DM, false);
     } else {
-      tmpResult = tmp(5623);
-      tmpResult.copy(onInviteRevoked(7112)(invite.code));
-      const result = invite(3955).presentCopiedToClipboard();
-      const obj2 = invite(3955);
+      tmpResult = tmp(5677);
+      tmpResult.copy(onInviteRevoked(7139)(invite.code));
+      const result = invite(3984).presentCopiedToClipboard();
+      const obj2 = invite(3984);
     }
   };
   items[1] = obj;
   let obj1 = { label: null, iconSource: null, variant: "destructive", action: null };
   const intl3 = invite(1236).intl;
   obj1[0] = intl3.string(invite(1236).t.v6Yazx);
-  obj1[1] = onInviteRevoked(9580).revoke;
+  obj1[1] = onInviteRevoked(9609).revoke;
   dependencyMap = callback(function*() {
     let closure_0 = tmp3;
     let c3 = 1;

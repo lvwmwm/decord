@@ -1,10 +1,10 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10240
+// Function ID: 10241
 // Name: canSeeChannelSummaries
-// Dependencies: [1415, 1862, 676, 1379, 1865, 647, 2]
+// Dependencies: [1415, 1891, 676, 1379, 1894, 647, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 10209 (canSeeChannelSummaries)
+// Module 10240 (canSeeChannelSummaries)
 import { isGuildNSFW } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -58,8 +58,8 @@ function canSeeChannelSummaries(channel, flag, arg2) {
           if (tmp15) {
             let isFavoritesGuildIdResult = id === closure_4;
             if (!isFavoritesGuildIdResult) {
-              isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id);
-              const obj = require(1865) /* getFavoritesAwareGuildName */;
+              isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id);
+              const obj = require(1894) /* getFavoritesAwareGuildName */;
             }
             tmp15 = isFavoritesGuildIdResult;
           }
@@ -106,8 +106,8 @@ export const canGuildUseConversationSummaries = function canGuildUseConversation
     if (tmp2) {
       let isFavoritesGuildIdResult = id === closure_4;
       if (!isFavoritesGuildIdResult) {
-        isFavoritesGuildIdResult = require(1865) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id);
-        const obj = require(1865) /* getFavoritesAwareGuildName */;
+        isFavoritesGuildIdResult = require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(id);
+        const obj = require(1894) /* getFavoritesAwareGuildName */;
       }
       tmp2 = isFavoritesGuildIdResult;
     }

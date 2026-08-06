@@ -1,10 +1,10 @@
-// Module ID: 1857
-// Function ID: 1858
+// Module ID: 1885
+// Function ID: 1886
 // Name: cssValueToNumber
-// Dependencies: [1858, 2, 1859]
+// Dependencies: [1886, 2, 1887]
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
-// Module 1857 (cssValueToNumber)
+// Module 1885 (cssValueToNumber)
 const re2 = /[\u0300-\u036f]/g;
 const re3 = /[\uD800-\uDBFF][\uDC00-\uDFFF]/;
 if (null == String.prototype.normalize) {
@@ -19,7 +19,7 @@ if (null == String.prototype.normalize) {
   let fullNormalize = (arg0) => arg0;
 } else {
   fullNormalize = function fullNormalize(str) {
-    _require = _require(1858);
+    _require = _require(1886);
     const dependencyMap = "";
     const items = [...str.normalize("NFD")];
     const item = items.forEach((arg0) => {

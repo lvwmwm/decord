@@ -1,9 +1,9 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14154
+// Function ID: 14155
 // Name: route
-// Dependencies: [676, 10333, 1236, 10347, 14118, 14120, 7075, 5118, 2]
+// Dependencies: [676, 10364, 1236, 10378, 14155, 14157, 7102, 5148, 2]
 
-// Module 14117 (route)
+// Module 14154 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -12,15 +12,15 @@ obj = {
     return intl.string(require(1236) /* getSystemLocale */.t.JALI2K);
   },
   usePredicate() {
-    return require(10347) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+    return require(10378) /* getIsEligibleForQuests */.getIsEligibleForQuests();
   },
   parent: null,
   IconComponent: require("QuestsIcon").QuestsIcon,
   screen: obj,
   usePreNavigationAction() {
     return () => {
-      let obj = callback(7075);
-      obj = { fromContent: callback(5118).QuestContent.USER_SETTINGS };
+      let obj = callback(7102);
+      obj = { fromContent: callback(5148).QuestContent.USER_SETTINGS };
       const result = obj.setQuestHomeUtmContext(obj);
       return true;
     };
@@ -29,7 +29,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.QUESTS,
   getComponent() {
-    return require(14120) /* QuestHomeSetting */.default;
+    return require(14157) /* QuestHomeSetting */.default;
   }
 };
 const route = createToggle.createRoute(obj);

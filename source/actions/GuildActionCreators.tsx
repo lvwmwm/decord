@@ -1,9 +1,9 @@
-// Module ID: 5185
-// Function ID: 5186
+// Module ID: 5215
+// Function ID: 5216
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [109, 5, 5186, 1218, 5108, 1932, 1862, 1931, 4072, 1874, 676, 1221, 4593, 1236, 709, 5187, 530, 1222, 5190, 1959, 5720, 5728, 5733, 5759, 5830, 5079, 503, 5831, 3888, 506, 5832, 3924, 698, 5836, 4468, 5838, 2]
+// Dependencies: [109, 5, 5216, 1218, 5138, 1961, 1891, 1960, 4101, 1903, 676, 1221, 4623, 1236, 709, 5217, 530, 1222, 5220, 1988, 5747, 5755, 5760, 5786, 5857, 5109, 503, 5858, 3917, 506, 5859, 3953, 698, 5863, 4498, 5865, 2]
 
-// Module 5185 (showTooManyUserGuildsAlert)
+// Module 5215 (showTooManyUserGuildsAlert)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import comparator from "comparator";
 import set from "set";
@@ -27,7 +27,7 @@ let closure_21;
 let closure_22;
 const require = arg1;
 function showTooManyUserGuildsAlert(quantity) {
-  let obj = importDefault(4593);
+  let obj = importDefault(4623);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cTaRxF);
@@ -507,11 +507,11 @@ export default {
               let closure_2 = tmp3;
               let c0;
               let obj3;
-              obj3 = function getChannelId(id) {
+              obj3 = function getChannelId(guildId) {
                 let channelIdForGuildTransition = arg1;
                 if (null == arg1) {
-                  channelIdForGuildTransition = _undefined(id[22]).getChannelIdForGuildTransition(id);
-                  const obj = _undefined(id[22]);
+                  channelIdForGuildTransition = _undefined(guildId[22]).getChannelIdForGuildTransition(guildId);
+                  const obj = _undefined(guildId[22]);
                 }
                 return channelIdForGuildTransition;
               };
@@ -577,7 +577,7 @@ export default {
   },
   deleteGuild,
   selectGuild(guildId) {
-    require(5830) /* stopLurkingAll */.stopLurking(guildId);
+    require(5857) /* stopLurkingAll */.stopLurking(guildId);
   },
   createGuild(guild) {
     let obj = importDefault(709);
@@ -632,7 +632,7 @@ export default {
     let reason;
     let userId;
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderator_report_id);
-    let obj = importDefault(5079);
+    let obj = importDefault(5109);
     obj = { url: closure_16.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderator_report_id.moderatorReportId }, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE, properties: null };
     const obj1 = { guild_id: guildId, target_user_id: userId, duration: null, reason: null, communication_disabled_until: null, location: null };
@@ -966,7 +966,7 @@ export default {
       const obj5 = outer1_0(530);
       obj1[3] = obj5.rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = outer1_1(5832);
+      const obj = outer1_1(5859);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -998,7 +998,7 @@ export default {
       obj1[1] = outer1_1;
       obj1[3] = outer1_0(530).rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = outer1_1(5832);
+      const obj = outer1_1(5859);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -1015,7 +1015,7 @@ export default {
       obj1[1] = outer1_1;
       obj1[3] = outer1_0(530).rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = outer1_1(5832);
+      const obj = outer1_1(5859);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -1143,19 +1143,19 @@ export default {
     obj.dispatch(obj);
   },
   nsfwReturnToSafety(guildId) {
-    const tmp2 = importDefault(5836)(guildId);
+    const tmp2 = importDefault(5863)(guildId);
     if (null == tmp2) {
       if (null != guildId) {
         const defaultChannel = store.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           if (!obj3.isChannelContentGated(defaultChannel)) {
-            let tmp11Result = tmp11(5838);
+            let tmp11Result = tmp11(5865);
             if (!tmp11Result.isChannelSpoilerGated(defaultChannel)) {
               tmp11Result = tmp11(1222);
               tmp11Result.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));
             }
           }
-          obj3 = require(4468) /* shouldShowAgeGateForVoiceChannel */;
+          obj3 = require(4498) /* shouldShowAgeGateForVoiceChannel */;
         }
         require(1222) /* transitionTo */.transitionTo(closure_21.FRIENDS, { navigationReplace: false, openChannel: true });
         const obj6 = require(1222) /* transitionTo */;

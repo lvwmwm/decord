@@ -1,9 +1,9 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 14826
+// Function ID: 14827
 // Name: pressable
-// Dependencies: [6890, 7864, 13948, 6953, 13952, 13945, 1236, 1306, 10333, 2]
+// Dependencies: [6917, 8005, 13985, 6980, 13989, 13982, 1236, 1306, 10364, 2]
 
-// Module 14788 (pressable)
+// Module 14826 (pressable)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -15,22 +15,22 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.PARENTAL_CONTROLS_SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const parentalControlledGoreContentSettings = require(13948) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
+    const parentalControlledGoreContentSettings = require(13985) /* useParentalControlledExplicitContentSettings */.useParentalControlledGoreContentSettings();
     let goreContentFriendDm;
     if (parentalControlledGoreContentSettings != null) {
       goreContentFriendDm = parentalControlledGoreContentSettings.goreContentFriendDm;
     }
     let tmp5 = null;
     if (null != goreContentFriendDm) {
-      tmp5 = require(6953) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(goreContentFriendDm)();
-      const tmpResult = require(6953) /* redactionSettingToRenderedString */;
+      tmp5 = require(6980) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(goreContentFriendDm)();
+      const tmpResult = require(6980) /* redactionSettingToRenderedString */;
     }
     return tmp5;
   },
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(13952);
+      let obj = selectedTeenId(13989);
       obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
       const intl = selectedTeenId(1236).intl;
       obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
@@ -44,8 +44,8 @@ createToggle = {
       obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
       obj[4] = items;
-      const result = selectedTeenId(13945).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(13945);
+      const result = selectedTeenId(13982).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(13982);
     }
   },
   unsearchable: true

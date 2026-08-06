@@ -1,8 +1,8 @@
-// Module ID: 3919
-// Function ID: 3920
-// Dependencies: [3920, 1454, 2]
+// Module ID: 3948
+// Function ID: 3949
+// Dependencies: [3949, 1454, 2]
 
-// Module 3919
+// Module 3948
 import loaderMaker from "loaderMaker";
 
 loaderMaker.setAwaitOnline(require("awaitOnline").awaitOnline);

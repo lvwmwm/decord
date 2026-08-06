@@ -1,9 +1,9 @@
-// Module ID: 1930
-// Function ID: 1931
+// Module ID: 1959
+// Function ID: 1960
 // Name: CHANGELOG_MODAL_KEY
 // Dependencies: [2]
 
-// Module 1930 (CHANGELOG_MODAL_KEY)
+// Module 1959 (CHANGELOG_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/changelog/ChangelogConstants.tsx");
 
 export const CHANGELOG_MODAL_KEY = "CHANGELOG_MODAL";

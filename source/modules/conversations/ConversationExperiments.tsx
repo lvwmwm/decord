@@ -1,10 +1,10 @@
-// Module ID: 8337
-// Function ID: 8338
+// Module ID: 8477
+// Function ID: 8478
 // Name: apexExperiment
-// Dependencies: [1862, 676, 1452, 589, 2]
+// Dependencies: [1891, 676, 1452, 589, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsTopicalNavEnabled
 
-// Module 8337 (apexExperiment)
+// Module 8477 (apexExperiment)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 import ApexExperiment from "ApexExperiment";

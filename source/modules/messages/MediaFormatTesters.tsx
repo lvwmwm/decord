@@ -1,10 +1,10 @@
-// Module ID: 4442
-// Function ID: 4443
+// Module ID: 4472
+// Function ID: 4473
 // Name: urlMatchesFileExtension
-// Dependencies: [32, 500, 4443, 2]
+// Dependencies: [32, 500, 4473, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 4442 (urlMatchesFileExtension)
+// Module 4472 (urlMatchesFileExtension)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import set from "set";
@@ -39,7 +39,7 @@ function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
   }
 }
 function isWebPlayerVideoUrl(mediaUrl) {
-  let isIOSWithWebMResult = require(4443) /* isIOSWithWebM */.isIOSWithWebM();
+  let isIOSWithWebMResult = require(4473) /* isIOSWithWebM */.isIOSWithWebM();
   if (isIOSWithWebMResult) {
     let flag = false;
     if (null != mediaUrl) {
@@ -54,8 +54,8 @@ function isWebPlayerVideoUrl(mediaUrl) {
 function isWebPlayerVideoFile(filename) {
   let isIOSWithWebMResult = null != filename;
   if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = require(4443) /* isIOSWithWebM */.isIOSWithWebM();
-    const obj = require(4443) /* isIOSWithWebM */;
+    isIOSWithWebMResult = require(4473) /* isIOSWithWebM */.isIOSWithWebM();
+    const obj = require(4473) /* isIOSWithWebM */;
   }
   if (isIOSWithWebMResult) {
     isIOSWithWebMResult = regex2.test(filename);
@@ -111,7 +111,7 @@ export const isVideoUrl = function isVideoUrl(url) {
     flag = closure_8.test(tmp2[0]);
   }
   if (!flag) {
-    let isIOSWithWebMResult = require(4443) /* isIOSWithWebM */.isIOSWithWebM();
+    let isIOSWithWebMResult = require(4473) /* isIOSWithWebM */.isIOSWithWebM();
     if (isIOSWithWebMResult) {
       let flag2 = false;
       if (null != url) {
@@ -122,7 +122,7 @@ export const isVideoUrl = function isVideoUrl(url) {
       obj3 = closure_6;
     }
     flag = isIOSWithWebMResult;
-    const obj2 = require(4443) /* isIOSWithWebM */;
+    const obj2 = require(4473) /* isIOSWithWebM */;
   }
   return flag;
 };
@@ -134,8 +134,8 @@ export const isVideoFile = function isVideoFile(filename) {
     if (!isMatch) {
       let isIOSWithWebMResult = null != filename;
       if (isIOSWithWebMResult) {
-        isIOSWithWebMResult = require(4443) /* isIOSWithWebM */.isIOSWithWebM();
-        const obj = require(4443) /* isIOSWithWebM */;
+        isIOSWithWebMResult = require(4473) /* isIOSWithWebM */.isIOSWithWebM();
+        const obj = require(4473) /* isIOSWithWebM */;
       }
       if (isIOSWithWebMResult) {
         isIOSWithWebMResult = regex2.test(filename);

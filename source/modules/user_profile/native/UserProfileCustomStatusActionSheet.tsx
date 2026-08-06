@@ -1,10 +1,10 @@
-// Module ID: 9355
-// Function ID: 9356
+// Module ID: 9384
+// Function ID: 9385
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1874, 5643, 21, 4255, 712, 589, 9356, 4444, 1236, 9357, 8082, 9339, 2]
+// Dependencies: [19, 17, 1903, 5697, 21, 4285, 712, 589, 9385, 4474, 1236, 9386, 8223, 9368, 2]
 // Exports: default
 
-// Module 9355 (UserProfileCustomStatusActionSheet)
+// Module 9384 (UserProfileCustomStatusActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -49,7 +49,7 @@ export default function UserProfileCustomStatusActionSheet(user) {
     }
     return id === user.id;
   }, items1);
-  let obj1 = importDefault(4444);
+  let obj1 = importDefault(4474);
   const name = obj1.useName(guildId, channelId, user);
   const intl = user(1236).intl;
   if (stateFromStores) {
@@ -62,10 +62,10 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj = { title: stringResult, children: null };
   obj1 = { style: tmp.statusPreviewContainer, children: null };
   const obj2 = { style: tmp.avatarContainer, children: null };
-  const tmp6 = importDefault(9356)(user.id);
-  obj2[1] = callback(importDefault(8082), { user, statusStyle: tmp.avatarStatus });
-  const items2 = [callback(View, obj2), callback(importDefault(9339), { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
+  const tmp6 = importDefault(9385)(user.id);
+  obj2[1] = callback(importDefault(8223), { user, statusStyle: tmp.avatarStatus });
+  const items2 = [callback(View, obj2), callback(importDefault(9368), { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
   obj1[1] = items2;
   obj[1] = callback2(View, obj1);
-  return callback(importDefault(9357), obj);
+  return callback(importDefault(9386), obj);
 };

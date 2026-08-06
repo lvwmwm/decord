@@ -1,10 +1,10 @@
-// Module ID: 3928
-// Function ID: 3929
+// Module ID: 3957
+// Function ID: 3958
 // Name: explicitContentFromProto
-// Dependencies: [3929, 685, 3930, 676, 3931, 3932, 1337, 1306, 643, 3933, 12, 589, 3934, 3941, 1344, 2]
+// Dependencies: [3958, 685, 3959, 676, 3960, 3961, 1337, 1306, 643, 3962, 12, 589, 3963, 3970, 1344, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
-// Module 3928 (explicitContentFromProto)
+// Module 3957 (explicitContentFromProto)
 import updateExistingSettings from "updateExistingSettings";
 import MAX_FAVORITES from "MAX_FAVORITES";
 import items from "items";
@@ -107,6 +107,7 @@ import defineProtoSetting from "defineProtoSetting";
 import defineProtoSetting from "defineProtoSetting";
 import defineProtoSetting from "defineProtoSetting";
 import defineProtoSetting from "defineProtoSetting";
+import set from "defineProtoSetting";
 import set from "defineProtoSetting";
 import set from "defineProtoSetting";
 import set from "defineProtoSetting";
@@ -1147,7 +1148,7 @@ const defineProtoSettingResult72 = defineProtoSetting.defineProtoSetting("appear
     }
     return COZY;
   }
-  COZY = require(3933) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
+  COZY = require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY;
 }, (value) => {
   const StringValue = require(1337) /* defineProperty */.StringValue;
   return StringValue.create({ value });
@@ -1166,111 +1167,13 @@ const defineProtoSettingResult73 = defineProtoSetting.defineProtoSetting("appear
     }
     return ALL;
   }
-  ALL = require(3933) /* ChannelListLayoutTypes */.MessagePreviewTypes.ALL;
+  ALL = require(3962) /* ChannelListLayoutTypes */.MessagePreviewTypes.ALL;
 }, (value) => {
   const StringValue = require(1337) /* defineProperty */.StringValue;
   return StringValue.create({ value });
 });
 set = { comparator: require("isFeatureAgeGated").isEqual };
-const defineProtoSettingResult74 = defineProtoSetting.defineProtoSetting("appearance", "darkSidebar", (arg0) => {
-  let flag = arg0;
-  if (arg0 == null) {
-    flag = false;
-  }
-  return flag;
-}, (arg0) => arg0);
-const result6 = defineProtoSetting.wrapSettingWithOverride(defineProtoSetting.wrapSettingWithSelectiveSyncing(defineProtoSetting.defineProtoSetting("textAndImages", "gifAutoPlay", (value) => {
-  let flag;
-  if (value != null) {
-    flag = value.value;
-  }
-  if (flag == null) {
-    flag = true;
-  }
-  return flag;
-}, (value) => {
-  const BoolValue = require(1337) /* defineProperty */.BoolValue;
-  return BoolValue.create({ value });
-}), "text", "gifAutoPlay"), "gifAutoPlay", () => {
-  const iter = store.getOverride("gifAutoPlay");
-  let value;
-  if (iter != null) {
-    value = iter.value;
-  }
-  return value;
-}, () => {
-  const items = [updateExistingSettings];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
-    const iter = override.getOverride("gifAutoPlay");
-    let value;
-    if (iter != null) {
-      value = iter.value;
-    }
-    return value;
-  });
-});
-const result7 = defineProtoSetting.wrapSettingWithOverride(defineProtoSetting.wrapSettingWithSelectiveSyncing(defineProtoSetting.defineProtoSetting("textAndImages", "animateEmoji", (value) => {
-  let flag;
-  if (value != null) {
-    flag = value.value;
-  }
-  if (flag == null) {
-    flag = true;
-  }
-  return flag;
-}, (value) => {
-  const BoolValue = require(1337) /* defineProperty */.BoolValue;
-  return BoolValue.create({ value });
-}), "text", "animateEmoji"), "animateEmoji", () => {
-  const iter = store.getOverride("animateEmoji");
-  let value;
-  if (iter != null) {
-    value = iter.value;
-  }
-  return value;
-}, () => {
-  const items = [updateExistingSettings];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
-    const iter = override.getOverride("animateEmoji");
-    let value;
-    if (iter != null) {
-      value = iter.value;
-    }
-    return value;
-  });
-});
-let closure_14 = [];
-const result8 = defineProtoSetting.wrapSettingWithOverride(defineProtoSetting.wrapSettingWithSelectiveSyncing(defineProtoSetting.defineProtoSetting("textAndImages", "animateStickers", (value) => {
-  let ALWAYS_ANIMATE;
-  if (value != null) {
-    ALWAYS_ANIMATE = value.value;
-  }
-  if (ALWAYS_ANIMATE == null) {
-    ALWAYS_ANIMATE = StickerAnimationSettings.ALWAYS_ANIMATE;
-  }
-  return ALWAYS_ANIMATE;
-}, (value) => {
-  const UInt32Value = require(1337) /* defineProperty */.UInt32Value;
-  return UInt32Value.create({ value });
-}), "text", "animateStickers"), "animateStickers", () => {
-  const iter = store.getOverride("animateStickers");
-  let value;
-  if (iter != null) {
-    value = iter.value;
-  }
-  return value;
-}, () => {
-  const items = [updateExistingSettings];
-  return require(589) /* initialize */.useStateFromStores(items, () => {
-    const iter = override.getOverride("animateStickers");
-    let value;
-    if (iter != null) {
-      value = iter.value;
-    }
-    return value;
-  });
-});
-const defineProtoSettingResult75 = defineProtoSetting.defineProtoSetting("appearance", "clientThemeSettings", (backgroundGradientPresetId) => {
+const result6 = defineProtoSetting.wrapSettingWithSelectiveSyncing(defineProtoSetting.defineProtoSetting("appearance", "clientThemeSettings", (backgroundGradientPresetId) => {
   let value;
   if (backgroundGradientPresetId != null) {
     if (backgroundGradientPresetId.backgroundGradientPresetId != null) {
@@ -1313,17 +1216,115 @@ const defineProtoSettingResult75 = defineProtoSetting.defineProtoSetting("appear
   }
   obj[1] = tmp4;
   return obj;
-}, set);
+}, set), "appearance", "clientThemeSettings");
+const result7 = defineProtoSetting.wrapSettingWithOverride(defineProtoSetting.wrapSettingWithSelectiveSyncing(defineProtoSetting.defineProtoSetting("textAndImages", "gifAutoPlay", (value) => {
+  let flag;
+  if (value != null) {
+    flag = value.value;
+  }
+  if (flag == null) {
+    flag = true;
+  }
+  return flag;
+}, (value) => {
+  const BoolValue = require(1337) /* defineProperty */.BoolValue;
+  return BoolValue.create({ value });
+}), "text", "gifAutoPlay"), "gifAutoPlay", () => {
+  const iter = store.getOverride("gifAutoPlay");
+  let value;
+  if (iter != null) {
+    value = iter.value;
+  }
+  return value;
+}, () => {
+  const items = [updateExistingSettings];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    const iter = override.getOverride("gifAutoPlay");
+    let value;
+    if (iter != null) {
+      value = iter.value;
+    }
+    return value;
+  });
+});
+const result8 = defineProtoSetting.wrapSettingWithOverride(defineProtoSetting.wrapSettingWithSelectiveSyncing(defineProtoSetting.defineProtoSetting("textAndImages", "animateEmoji", (value) => {
+  let flag;
+  if (value != null) {
+    flag = value.value;
+  }
+  if (flag == null) {
+    flag = true;
+  }
+  return flag;
+}, (value) => {
+  const BoolValue = require(1337) /* defineProperty */.BoolValue;
+  return BoolValue.create({ value });
+}), "text", "animateEmoji"), "animateEmoji", () => {
+  const iter = store.getOverride("animateEmoji");
+  let value;
+  if (iter != null) {
+    value = iter.value;
+  }
+  return value;
+}, () => {
+  const items = [updateExistingSettings];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    const iter = override.getOverride("animateEmoji");
+    let value;
+    if (iter != null) {
+      value = iter.value;
+    }
+    return value;
+  });
+});
+let closure_14 = [];
+const result9 = defineProtoSetting.wrapSettingWithOverride(defineProtoSetting.wrapSettingWithSelectiveSyncing(set.defineProtoSetting("textAndImages", "animateStickers", (value) => {
+  let ALWAYS_ANIMATE;
+  if (value != null) {
+    ALWAYS_ANIMATE = value.value;
+  }
+  if (ALWAYS_ANIMATE == null) {
+    ALWAYS_ANIMATE = StickerAnimationSettings.ALWAYS_ANIMATE;
+  }
+  return ALWAYS_ANIMATE;
+}, (value) => {
+  const UInt32Value = require(1337) /* defineProperty */.UInt32Value;
+  return UInt32Value.create({ value });
+}), "text", "animateStickers"), "animateStickers", () => {
+  const iter = store.getOverride("animateStickers");
+  let value;
+  if (iter != null) {
+    value = iter.value;
+  }
+  return value;
+}, () => {
+  const items = [updateExistingSettings];
+  return require(589) /* initialize */.useStateFromStores(items, () => {
+    const iter = override.getOverride("animateStickers");
+    let value;
+    if (iter != null) {
+      value = iter.value;
+    }
+    return value;
+  });
+});
+const defineProtoSettingResult74 = defineProtoSetting.defineProtoSetting("appearance", "darkSidebar", (arg0) => {
+  let flag = arg0;
+  if (arg0 == null) {
+    flag = false;
+  }
+  return flag;
+}, (arg0) => arg0);
 set = { delay: UserSettingsDelay.FREQUENT_USER_ACTION };
 let closure_15 = [];
-const defineProtoSettingResult76 = set.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
+const defineProtoSettingResult75 = set.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (arg0 == null) {
     tmp = closure_14;
   }
   return tmp;
 }, (arg0) => arg0);
-const defineProtoSettingResult77 = set.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
+const defineProtoSettingResult76 = set.defineProtoSetting("privacy", "activityRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (arg0 == null) {
     tmp = closure_14;
@@ -1339,10 +1340,10 @@ set[0] = set.defineProtoSetting("privacy", "defaultGuildsActivityRestricted", (a
   return OFF;
 });
 set[1] = function isEligible() {
-  return require(3934) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3941) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3963) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3970) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[2] = function useIsEligible() {
-  return require(3934) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3941) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3963) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3970) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[3] = require("create").GuildActivityStatusRestrictionDefault.OFF;
 set[4] = function eligibleDefault() {
@@ -1364,24 +1365,24 @@ set[0] = set.defineProtoSetting("privacy", "defaultGuildsActivityRestrictedV2", 
   return ACTIVITY_STATUS_OFF;
 });
 set[1] = function isEligible() {
-  return require(3934) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3941) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3963) /* isFeatureAgeGated */.isSettingTeenByDefault(require(3970) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[2] = function useIsEligible() {
-  return require(3934) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3941) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
+  return require(3963) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3970) /* SettingsDefaultFeature */.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
 set[3] = require("create").GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
 set[4] = function eligibleDefault() {
   return require(1306) /* create */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS;
 };
 defineProtoSetting = set.wrapSettingWithExperimentDefaults(set);
-const defineProtoSettingResult78 = set.defineProtoSetting("privacy", "activityJoiningRestrictedGuildIds", (arg0) => {
+const defineProtoSettingResult77 = set.defineProtoSetting("privacy", "activityJoiningRestrictedGuildIds", (arg0) => {
   let tmp = arg0;
   if (arg0 == null) {
     tmp = closure_15;
   }
   return tmp;
 }, (arg0) => arg0);
-const defineProtoSettingResult79 = set.defineProtoSetting("privacy", "familyCenterEnabledV2", (value) => {
+const defineProtoSettingResult78 = set.defineProtoSetting("privacy", "familyCenterEnabledV2", (value) => {
   value = undefined;
   if (value != null) {
     value = value.value;
@@ -1630,16 +1631,16 @@ export const ValidMessagePreviewTypes = set2;
 export const MessagePreviewSetting = defineProtoSettingResult73;
 export const DeveloperMode = result5;
 export const DarkSidebar = defineProtoSettingResult74;
-export const ClientThemeSettings = defineProtoSettingResult75;
-export const GifAutoPlay = result6;
-export const AnimateEmoji = result7;
-export const AnimateStickers = result8;
-export const ActivityRestrictedGuilds = defineProtoSettingResult76;
-export const ActivityRestrictedGuildsFrequent = defineProtoSettingResult77;
-export const ActivityJoiningRestrictedGuilds = defineProtoSettingResult78;
+export const ClientThemeSettings = result6;
+export const GifAutoPlay = result7;
+export const AnimateEmoji = result8;
+export const AnimateStickers = result9;
+export const ActivityRestrictedGuilds = defineProtoSettingResult75;
+export const ActivityRestrictedGuildsFrequent = defineProtoSettingResult76;
+export const ActivityJoiningRestrictedGuilds = defineProtoSettingResult77;
 export const DefaultGuildsActivityRestricted = defineProtoSetting;
 export const DefaultGuildsActivityRestrictedV2 = defineProtoSetting;
-export const FamilyCenterEnabled = defineProtoSettingResult79;
+export const FamilyCenterEnabled = defineProtoSettingResult78;
 export const LegacyUsernameDisabled = set.defineProtoSetting("privacy", "hideLegacyUsername", (value) => {
   let flag;
   if (value != null) {

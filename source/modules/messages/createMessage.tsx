@@ -1,10 +1,10 @@
-// Module ID: 7106
-// Function ID: 7107
+// Module ID: 7133
+// Function ID: 7134
 // Name: createMessage
-// Dependencies: [6948, 1882, 1874, 676, 38, 7107, 2]
+// Dependencies: [6975, 1911, 1903, 676, 38, 7134, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 7106 (createMessage)
+// Module 7133 (createMessage)
 import processMessage from "processMessage";
 import { ReferencedMessageState } from "processMessage";
 import createdAt from "createdAt";
@@ -30,7 +30,6 @@ export default function createMessage(tts) {
   let flags;
   let giftingPrompt;
   let mediaMention;
-  let mentionGames;
   let messageReference;
   let nonce;
   let poll;
@@ -47,7 +46,7 @@ export default function createMessage(tts) {
   }
   ({ messageReference, allowedMentions, author, nonce, state } = tts);
   const items = [];
-  ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, boostingPrompt, mediaMention, mentionGames } = tts);
+  ({ flags, poll, sharedCustomTheme, changelogId, giftingPrompt, boostingPrompt, mediaMention } = tts);
   if (DEFAULT === constants2.REPLY) {
     importDefault(38)(null != messageReference, "Replies must have a message reference");
     if (null == allowedMentions) {
@@ -74,26 +73,26 @@ export default function createMessage(tts) {
   }
   importDefault(38)(null != tmp8, "createMessage: author cannot be undefined");
   if (nonce == null) {
-    nonce = require(7107) /* snowflakeSequence */.createNonce();
-    const obj3 = require(7107) /* snowflakeSequence */;
+    nonce = require(7134) /* snowflakeSequence */.createNonce();
+    const obj3 = require(7134) /* snowflakeSequence */;
   }
-  obj = { id: nonce, type: DEFAULT, content, channel_id: channelId, author: tmp8, attachments: [], embeds: [], pinned: false, mentions: items, mention_channels: [], mention_roles: [], mention_everyone: false, mention_games: mentionGames, timestamp: null, state: null, tts: null, message_reference: null, message_snapshots: null, flags: null, nonce: null, poll: null, shared_client_theme: null, changelog_id: null, gifting_prompt: null, boosting_prompt: null, media_mention: null };
-  obj[13] = new Date().toISOString();
+  obj = { id: nonce, type: DEFAULT, content, channel_id: channelId, author: tmp8, attachments: [], embeds: [], pinned: false, mentions: items, mention_channels: [], mention_roles: [], mention_everyone: false, timestamp: null, state: null, tts: null, message_reference: null, message_snapshots: null, flags: null, nonce: null, poll: null, shared_client_theme: null, changelog_id: null, gifting_prompt: null, boosting_prompt: null, media_mention: null };
+  obj[12] = new Date().toISOString();
   if (state == null) {
     state = constants.SENDING;
   }
-  obj[14] = state;
-  obj[15] = flag;
-  obj[16] = messageReference;
-  obj[17] = [];
-  obj[18] = flags;
-  obj[19] = nonce;
-  obj[20] = poll;
-  obj[21] = sharedCustomTheme;
-  obj[22] = changelogId;
-  obj[23] = giftingPrompt;
-  obj[24] = boostingPrompt;
-  obj[25] = mediaMention;
+  obj[13] = state;
+  obj[14] = flag;
+  obj[15] = messageReference;
+  obj[16] = [];
+  obj[17] = flags;
+  obj[18] = nonce;
+  obj[19] = poll;
+  obj[20] = sharedCustomTheme;
+  obj[21] = changelogId;
+  obj[22] = giftingPrompt;
+  obj[23] = boostingPrompt;
+  obj[24] = mediaMention;
   return obj;
 };
 export const userRecordToServer = function userRecordToServer(currentUser) {
@@ -108,7 +107,7 @@ export const createBotMessage = function createBotMessage(arg0) {
   ({ messageId, embeds } = arg0);
   ({ channelId, content, loggingName } = arg0);
   if (messageId == null) {
-    let obj = require(7107) /* snowflakeSequence */;
+    let obj = require(7134) /* snowflakeSequence */;
     messageId = obj.createNonce();
   }
   obj = { id: messageId, type: constants2.DEFAULT, flags: constants3.EPHEMERAL, content, channel_id: channelId, author: obj, attachments: [], embeds: null, pinned: false, mentions: null, mention_channels: null, mention_roles: null, mention_everyone: false, timestamp: null, state: null, tts: false, loggingName: null };

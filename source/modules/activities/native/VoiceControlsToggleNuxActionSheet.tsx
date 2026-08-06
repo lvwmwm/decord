@@ -1,10 +1,10 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16064
+// Function ID: 16065
 // Name: VoiceControlsToggleActionSheet
-// Dependencies: [32, 19, 17, 4247, 1369, 21, 4255, 712, 4800, 589, 5323, 8764, 4251, 1236, 4665, 2]
+// Dependencies: [32, 19, 17, 4277, 1369, 21, 4285, 712, 4830, 589, 5377, 8793, 4281, 1236, 4695, 2]
 // Exports: default
 
-// Module 16024 (VoiceControlsToggleActionSheet)
+// Module 16064 (VoiceControlsToggleActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

@@ -1,9 +1,9 @@
-// Module ID: 7000
-// Function ID: 7001
+// Module ID: 7027
+// Function ID: 7028
 // Name: set
-// Dependencies: [32, 1218, 3, 1923, 1908, 709, 7001, 2]
+// Dependencies: [32, 1218, 3, 1952, 1937, 709, 7028, 2]
 
-// Module 7000 (set)
+// Module 7027 (set)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import set from "timestamp";
@@ -38,7 +38,7 @@ const prototype = AppDatabaseManager.prototype;
 prototype["handleAction"] = function handleAction(type) {
   this.validateInDev(type.type);
   id = id.getId();
-  const databaseResult = importDefault(1923).database(id);
+  const databaseResult = importDefault(1952).database(id);
   this.resetModules(type, databaseResult);
   this.executeModules(type, databaseResult);
   return false;
@@ -69,7 +69,7 @@ prototype["executeModules"] = function executeModules(type, databaseResult) {
   if (null != value) {
     if (0 !== value.length) {
       if (null != databaseResult) {
-        if (stateResult === _require(1908).DatabaseState.Open) {
+        if (stateResult === _require(1937).DatabaseState.Open) {
           let combined = null;
           if (!set.has(type.type)) {
             const _HermesInternal2 = HermesInternal;

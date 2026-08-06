@@ -1,9 +1,9 @@
-// Module ID: 1862
-// Function ID: 1863
+// Module ID: 1891
+// Function ID: 1892
 // Name: createGuildRecordFromRust
-// Dependencies: [1412, 1863, 1415, 1218, 1410, 1414, 1865, 11, 1411, 1866, 2]
+// Dependencies: [1412, 1892, 1415, 1218, 1410, 1414, 1894, 11, 1411, 1895, 2]
 
-// Module 1862 (createGuildRecordFromRust)
+// Module 1891 (createGuildRecordFromRust)
 import isValueEqual from "isValueEqual";
 import { LibdiscoreStore } from "identity";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";

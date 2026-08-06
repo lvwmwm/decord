@@ -1,8 +1,8 @@
-// Module ID: 15190
-// Function ID: 15191
-// Dependencies: [19, 1372, 1932, 9681, 4451, 21, 4255, 712, 647, 1222, 9556, 15117, 8927, 2]
+// Module ID: 15229
+// Function ID: 15230
+// Dependencies: [19, 1372, 1961, 9712, 4481, 21, 4285, 712, 647, 1222, 9585, 15155, 8956, 2]
 
-// Module 15190
+// Module 15229
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -50,15 +50,15 @@ const memoResult = importAllResult.memo((guildId) => {
     obj[2] = tmp.container;
     obj = { channel: null };
     obj[0] = stateFromStores;
-    obj[5] = id(8927)(obj);
+    obj[5] = id(8956)(obj);
     const obj1 = { selected: null };
     obj1[0] = selected;
     obj[6] = obj1;
     obj[7] = stateFromStores;
     obj[8] = selected;
     obj[9] = UnreadSetting.ONLY_MENTIONS;
-    tmp7 = jsx(id(15117), { channel: null });
-    const tmp10 = id(15117);
+    tmp7 = jsx(id(15155), { channel: null });
+    const tmp10 = id(15155);
   }
   return tmp7;
 });

@@ -1,9 +1,9 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 8018
+// Function ID: 8019
 // Name: saferParse
-// Dependencies: [7878, 3954, 2]
+// Dependencies: [8019, 3983, 2]
 
-// Module 7877 (saferParse)
+// Module 8018 (saferParse)
 function saferParse(arg0, arg1, inline) {
   let ast;
   let hasBailedAst;
@@ -19,10 +19,10 @@ function saferParse(arg0, arg1, inline) {
   `;
     }
     const tmp8 = arg0(text, inline);
-    const flattenAstResult = require(7878) /* collectAst */.flattenAst(inline, tmp8);
-    const obj = require(7878) /* collectAst */;
-    const obj2 = require(7878) /* collectAst */;
-    ({ hasBailedAst, ast } = require(7878) /* collectAst */.constrainAst(flattenAstResult));
+    const flattenAstResult = require(8019) /* collectAst */.flattenAst(inline, tmp8);
+    const obj = require(8019) /* collectAst */;
+    const obj2 = require(8019) /* collectAst */;
+    ({ hasBailedAst, ast } = require(8019) /* collectAst */.constrainAst(flattenAstResult));
     if (tmp6) {
       ast = tmp6(ast, inline.inline, hasBailedAst);
     }
@@ -40,7 +40,7 @@ const result = require("set").fileFinishedImporting("../discord_common/js/packag
 
 export default {
   astParserFor(importDefaultResultResult) {
-    let closure_0 = importDefault(3954).parserFor(importDefaultResultResult);
+    let closure_0 = importDefault(3983).parserFor(importDefaultResultResult);
     return (arg0, inline) => {
       let str = arg0;
       if (arg0 === undefined) {
@@ -59,11 +59,11 @@ export default {
       return outer1_3(closure_0, str, obj, tmp, !inline);
     };
   },
-  reactParserFor(defaultRules) {
-    let closure_0 = importDefault(3954).parserFor(defaultRules);
-    let obj = importDefault(3954);
-    const obj2 = importDefault(3954);
-    importDefault = obj2.reactFor(importDefault(3954).ruleOutput(defaultRules, "react"));
+  reactParserFor(importDefaultResultResult) {
+    let closure_0 = importDefault(3983).parserFor(importDefaultResultResult);
+    let obj = importDefault(3983);
+    const obj2 = importDefault(3983);
+    importDefault = obj2.reactFor(importDefault(3983).ruleOutput(importDefaultResultResult, "react"));
     return () => {
       let str = arg0;
       if (arg0 === undefined) {

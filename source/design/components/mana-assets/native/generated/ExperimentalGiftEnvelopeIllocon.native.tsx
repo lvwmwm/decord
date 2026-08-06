@@ -1,10 +1,10 @@
-// Module ID: 6158
-// Function ID: 6159
+// Module ID: 6185
+// Function ID: 6186
 // Name: ExperimentalGiftEnvelopeIllocon
-// Dependencies: [21, 5221, 6159, 2]
+// Dependencies: [21, 5251, 6186, 2]
 // Exports: ExperimentalGiftEnvelopeIllocon
 
-// Module 6158 (ExperimentalGiftEnvelopeIllocon)
+// Module 6185 (ExperimentalGiftEnvelopeIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const ExperimentalGiftEnvelopeIllocon = function ExperimentalGiftEnvelope
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6159);
+  obj[0] = importDefault(6186);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { uri: null });
+  return jsx(importDefault(5251), { uri: null });
 };

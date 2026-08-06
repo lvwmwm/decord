@@ -1,10 +1,10 @@
-// Module ID: 7176
-// Function ID: 7177
+// Module ID: 7203
+// Function ID: 7204
 // Name: onDismiss
-// Dependencies: [19, 17, 21, 4255, 712, 4223, 7177, 1236, 5323, 7137, 7178, 7116, 1297, 4251, 4665, 4071, 1358, 7176, 1959, 709, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4253, 7204, 1236, 5377, 7164, 7205, 7143, 1297, 4281, 4695, 4100, 1358, 7203, 1988, 709, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7176 (onDismiss)
+// Module 7203 (onDismiss)
 import "dispatcher";
 import get_ActivityIndicator from "onDismiss";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ let c4;
 let c5;
 const require = arg1;
 function onDismiss() {
-  importDefault(4223).hideActionSheet();
+  importDefault(4253).hideActionSheet();
 }
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -42,16 +42,16 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   let messageId;
   ({ emoji, channelId, messageId } = arg0);
   const tmp = createCacheKey();
-  let obj = require(7177) /* getDeviceSpecificString */;
+  let obj = require(7204) /* getDeviceSpecificString */;
   obj = { quest: require(1236) /* getSystemLocale */.t["5TpPli"] };
   const deviceSpecificString = obj.getDeviceSpecificString(obj, require(1236) /* getSystemLocale */.t["2Yp7dF"]);
   obj = { backdropOpacity: null, contentStyles: null, backdropChildren: null, onDismiss: null, children: null };
-  obj[0] = require(7137) /* _generateAnimationSource */.BACKDROP_OPACITY;
+  obj[0] = require(7164) /* _generateAnimationSource */.BACKDROP_OPACITY;
   obj[1] = tmp.content;
   const obj1 = { style: tmp.fill, children: null };
   const obj2 = { channelId, emoji, messageId, reactionType: null };
-  obj2[3] = require(7116) /* ReactionTypes */.ReactionTypes.BURST;
-  obj1[1] = callback(importDefault(7178), obj2);
+  obj2[3] = require(7143) /* ReactionTypes */.ReactionTypes.BURST;
+  obj1[1] = callback(importDefault(7205), obj2);
   obj[2] = callback(closure_3, obj1);
   obj[3] = onDismiss;
   const obj3 = { style: tmp.container, children: null };
@@ -60,27 +60,27 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   const obj6 = { variant: "heading-xl/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj6[1] = intl.string(require(1236) /* getSystemLocale */.t.NX7HI7);
-  items[1] = callback(require(4251) /* Text */.Text, obj6);
+  items[1] = callback(require(4281) /* Text */.Text, obj6);
   obj4[1] = items;
   const items1 = [callback2(closure_3, obj4), , ];
   const obj5 = { style: tmp.nitroWheel };
-  const tmp3 = importDefault(7178);
-  items1[1] = callback(closure_3, { style: tmp.body, children: callback(require(4251) /* Text */.Text, obj8) });
+  const tmp3 = importDefault(7205);
+  items1[1] = callback(closure_3, { style: tmp.body, children: callback(require(4281) /* Text */.Text, obj8) });
   const obj9 = { text: null, onPress: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj9[0] = intl2.string(require(1236) /* getSystemLocale */.t["+IrDzN"]);
   obj9[1] = onDismiss;
-  items1[2] = callback(require(4665) /* Button */.Button, obj9);
+  items1[2] = callback(require(4695) /* Button */.Button, obj9);
   obj3[1] = items1;
   obj[4] = callback2(closure_3, obj3);
-  return callback(require(5323) /* Background */.BottomSheet, obj);
+  return callback(require(5377) /* Background */.BottomSheet, obj);
 };
 export const openBurstReactionFirstSendActionSheet = function openBurstReactionFirstSendActionSheet(arg0) {
   let channelId;
   let emoji;
   let messageId;
   ({ channelId, messageId, emoji } = arg0);
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj.hideActionSheet();
   if (obj2.UNSAFE_isDismissibleContentDismissed(require(1358) /* DismissibleContent */.DismissibleContent.SUPER_REACTIONS_FIRST_SENT)) {
     let tmpResult = tmp(709);
@@ -90,13 +90,13 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     obj[3] = emoji;
     tmpResult.dispatch(obj);
   } else {
-    const result = tmp4(4071).UNSAFE_markDismissibleContentAsDismissed(tmp4(1358).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
-    tmpResult = tmp(4223);
+    const result = tmp4(4100).UNSAFE_markDismissibleContentAsDismissed(tmp4(1358).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
+    tmpResult = tmp(4253);
     obj = { channelId: null, messageId: null, emoji: null };
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji;
-    tmpResult.openLazy(tmp4(1959)(7176, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
-    const tmp4Result = tmp4(4071);
+    tmpResult.openLazy(tmp4(1988)(7203, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    const tmp4Result = tmp4(4100);
   }
 };

@@ -1,9 +1,9 @@
-// Module ID: 16240
-// Function ID: 16241
+// Module ID: 16280
+// Function ID: 16281
 // Name: _initialize
-// Dependencies: [5214, 1869, 2]
+// Dependencies: [5244, 1898, 2]
 
-// Module 16240 (_initialize)
+// Module 16280 (_initialize)
 import "initialize";
 
 const require = arg1;
@@ -14,8 +14,8 @@ BlockedDomainManager.prototype["_initialize"] = function _initialize() {
     const _window = window;
     const _HermesInternal = HermesInternal;
     const combined = "https:" + window.GLOBAL_ENV.WEBAPP_ENDPOINT + "/bad-hash-delta";
-    const result = require(1869) /* isBlockedDomain */.startFetchingBlockedDomains(combined);
-    const tmpResult = require(1869) /* isBlockedDomain */;
+    const result = require(1898) /* isBlockedDomain */.startFetchingBlockedDomains(combined);
+    const tmpResult = require(1898) /* isBlockedDomain */;
   }
 };
 const blockedDomainManager = new BlockedDomainManager();

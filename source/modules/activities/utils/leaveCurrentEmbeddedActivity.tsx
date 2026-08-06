@@ -1,10 +1,10 @@
-// Module ID: 10865
-// Function ID: 10866
+// Module ID: 10516
+// Function ID: 10517
 // Name: leaveCurrentEmbeddedActivity
-// Dependencies: [1371, 10509, 2]
+// Dependencies: [1371, 10517, 2]
 // Exports: leaveCurrentEmbeddedActivity
 
-// Module 10865 (leaveCurrentEmbeddedActivity)
+// Module 10516 (leaveCurrentEmbeddedActivity)
 import participantFromServer from "participantFromServer";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/leaveCurrentEmbeddedActivity.tsx");
@@ -12,7 +12,7 @@ const result = require("set").fileFinishedImporting("modules/activities/utils/le
 export const leaveCurrentEmbeddedActivity = function leaveCurrentEmbeddedActivity() {
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
   if (null != currentEmbeddedActivity) {
-    let obj = importDefault(10509)();
+    let obj = importDefault(10517)();
     obj = { location: null, applicationId: null, showFeedback: false };
     ({ location: obj2[0], applicationId: obj2[1] } = currentEmbeddedActivity);
     obj.leaveActivity(obj);

@@ -1,10 +1,10 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16269
+// Function ID: 16270
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4255, 712, 4468, 4470, 5257, 5921, 4251, 4665, 7692, 7694, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4498, 4500, 5311, 5948, 4281, 4695, 7720, 7722, 2]
 // Exports: default
 
-// Module 16229 (AgeGateVerify)
+// Module 16269 (AgeGateVerify)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,17 +29,17 @@ export default function AgeGateVerify(source) {
   let verifyTitle;
   source = source.source;
   const tmp = createCacheKey();
-  let obj = require(4468) /* shouldShowAgeGateForVoiceChannel */;
+  let obj = require(4498) /* shouldShowAgeGateForVoiceChannel */;
   const ageGateVerifyContent = obj.useAgeGateVerifyContent(source);
   ({ verifyAgreementButtonText, verifyGateDescription, verifyTitle } = ageGateVerifyContent);
-  let obj1 = require(4470) /* useAgeVerificationRunner */;
+  let obj1 = require(4500) /* useAgeVerificationRunner */;
   const maybePerformReactiveCheckForSource = obj1.useMaybePerformReactiveCheckForSource(source);
   obj = { top: true, style: tmp.container, children: null };
-  const items = [callback(require(5921) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
+  const items = [callback(require(5948) /* AccountAgeTier10LargeBadge */.ShieldSpotIllustration, {}), , , ];
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: verifyTitle };
-  items[1] = callback(require(4251) /* Text */.Text, obj);
+  items[1] = callback(require(4281) /* Text */.Text, obj);
   obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
-  items[2] = callback(require(4251) /* Text */.Text, obj1);
+  items[2] = callback(require(4281) /* Text */.Text, obj1);
   let tmp7Result = null != verifyAgreementButtonText;
   if (tmp7Result) {
     const obj2 = { style: null, children: null };
@@ -47,14 +47,14 @@ export default function AgeGateVerify(source) {
     const obj3 = { text: null, onPress: null, grow: true };
     obj3[0] = verifyAgreementButtonText;
     obj3[1] = function onPress() {
-      let obj = callback2(7692);
-      obj = { entryPoint: callback(7694).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+      let obj = callback2(7720);
+      obj = { entryPoint: callback(7722).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     };
-    obj2[1] = tmp7(require(4665) /* Button */.Button, obj3);
+    obj2[1] = tmp7(require(4695) /* Button */.Button, obj3);
     tmp7Result = tmp7(View, obj2);
   }
   items[3] = tmp7Result;
   obj[2] = items;
-  return closure_5(require(5257) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_5(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

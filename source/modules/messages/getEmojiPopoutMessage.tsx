@@ -1,10 +1,10 @@
-// Module ID: 8637
-// Function ID: 8638
+// Module ID: 8666
+// Function ID: 8667
 // Name: EmojiPopoutType
-// Dependencies: [5647, 1236, 2]
+// Dependencies: [5701, 1236, 2]
 // Exports: getEmojiPopoutData
 
-// Module 8637 (EmojiPopoutType)
+// Module 8666 (EmojiPopoutType)
 import { EmojiSourceDataTypes } from "getEmojiSourceData";
 
 let closure_3 = { DEFAULT: "Custom Emoji Popout", CROSS_SERVER: "Custom Emoji Popout (Cross-Server)", UPSELL_CURRENT_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Current-Server)", UPSELL_CROSS_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Cross-Server)", UPSELL_CROSS_SERVER_JOINABLE: "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", UPSELL_CROSS_SERVER_UNJOINABLE: "Custom Emoji Popout (Soft Upsell)" };

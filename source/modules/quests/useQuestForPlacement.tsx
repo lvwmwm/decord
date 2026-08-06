@@ -1,17 +1,17 @@
-// Module ID: 14234
-// Function ID: 14235
+// Module ID: 14271
+// Function ID: 14272
 // Name: maybeRefreshAd
-// Dependencies: [19, 7054, 687, 10347, 10356, 10348, 7069, 589, 14235, 7052, 2]
+// Dependencies: [19, 7081, 687, 10378, 10387, 10379, 7096, 589, 14272, 7079, 2]
 // Exports: default
 
-// Module 14234 (maybeRefreshAd)
+// Module 14271 (maybeRefreshAd)
 import noop from "noop";
 import initializeState from "initializeState";
 
 let c3;
 let c4;
 function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
-  let isEligibleForQuests = require(10347) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+  let isEligibleForQuests = require(10378) /* getIsEligibleForQuests */.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     let tmp5 = null != fetchedAt;
     if (tmp5) {
@@ -26,22 +26,22 @@ function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
       if (!fetchingQuestToDeliverByPlacement.isFetchingQuestToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
         let enableNewRequestBehavior = obj3.canRefreshAd(QUEST_HOME_BANNER_DESKTOP);
         if (enableNewRequestBehavior) {
-          enableNewRequestBehavior = tmp9(7069).getConfig({ location: "maybeRefreshAd" }).enableNewRequestBehavior;
-          const tmp9Result = tmp9(7069);
+          enableNewRequestBehavior = tmp9(7096).getConfig({ location: "maybeRefreshAd" }).enableNewRequestBehavior;
+          const tmp9Result = tmp9(7096);
         }
         if (enableNewRequestBehavior) {
-          let tmpResult = tmp(10348);
+          let tmpResult = tmp(10379);
           const currentQuests = tmpResult.fetchCurrentQuests();
-          tmpResult = tmp(10348);
+          tmpResult = tmp(10379);
           const questToDeliver = tmpResult.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2);
         }
       }
       obj3 = fetchingQuestToDeliverByPlacement;
     } else if (null != fetchedAt) {
-      tmp(10348).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
-      const tmpResult1 = tmp(10348);
+      tmp(10379).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
+      const tmpResult1 = tmp(10379);
     }
-    obj2 = importDefault(10356);
+    obj2 = importDefault(10387);
     tmp9 = importDefault;
   }
 }

@@ -1,10 +1,10 @@
-// Module ID: 7131
-// Function ID: 7132
+// Module ID: 7158
+// Function ID: 7159
 // Name: setActiveCommand
-// Dependencies: [1218, 7132, 676, 38, 6876, 709, 530, 11, 1906, 2]
+// Dependencies: [1218, 7159, 676, 38, 6903, 709, 530, 11, 1935, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 7131 (setActiveCommand)
+// Module 7158 (setActiveCommand)
 import fetchFingerprint from "fetchFingerprint";
 import handleInit from "handleInit";
 import { Endpoints } from "ME";
@@ -27,7 +27,7 @@ export const setActiveCommand = function setActiveCommand(command) {
   command = command.command;
   ({ channelId, section, location: _location, initialValues, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin } = command);
   if (null != command) {
-    importDefault(38)(command.inputType !== require(6876) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    importDefault(38)(command.inputType !== require(6903) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
     const tmp3 = importDefault(38);
   }
   importDefault(709).dispatch({ type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND", channelId, command, section, initialValues, location: _location, triggerSection, queryLength, sectionName, query, searchResultsPosition, source, commandOrigin });
@@ -94,7 +94,7 @@ export const performAutocomplete = function performAutocomplete(c0, closure_2, a
       obj = { url: null, body: null, timeout: 3000, rejectWithError: true };
       obj[0] = Endpoints.INTERACTIONS;
       const obj1 = { type: null, application_id: null, guild_id: null, channel_id: null, session_id: null, data: null, nonce: null };
-      obj1[0] = require(1906) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE;
+      obj1[0] = require(1935) /* PermissionOverwriteType */.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE;
       obj1[1] = c0.applicationId;
       const guild = closure_2.guild;
       let id;
@@ -141,7 +141,7 @@ export const updateRegistry = function updateRegistry(commands, applications, ch
 };
 export const setAppLauncherActiveCommand = function setAppLauncherActiveCommand(id, command) {
   if (null != command) {
-    importDefault(38)(command.inputType !== require(6876) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
+    importDefault(38)(command.inputType !== require(6903) /* ApplicationCommandSectionType */.ApplicationCommandInputType.PLACEHOLDER, "command should not be placeholder");
     const tmp3 = importDefault(38);
   }
   let obj = importDefault(709);

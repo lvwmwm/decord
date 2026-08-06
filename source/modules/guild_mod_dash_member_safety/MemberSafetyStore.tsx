@@ -1,9 +1,9 @@
-// Module ID: 6847
-// Function ID: 6848
+// Module ID: 6874
+// Function ID: 6875
 // Name: getMemberSafetyPageStore
-// Dependencies: [32, 1218, 1942, 1862, 1874, 6848, 676, 1351, 11, 6854, 6855, 6850, 589, 709, 2]
+// Dependencies: [32, 1218, 1971, 1891, 1903, 6875, 676, 1351, 11, 6881, 6882, 6877, 589, 709, 2]
 
-// Module 6847 (getMemberSafetyPageStore)
+// Module 6874 (getMemberSafetyPageStore)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -471,7 +471,7 @@ const memberSafetyStore = new MemberSafetyStore(require("dispatcher"), {
     let guildId;
     let memberSupplementals;
     ({ guildId, memberSupplementals } = arg0);
-    const result = require(6854) /* hasMemberSupplemental */.syncMemberSupplemental(guildId, memberSupplementals);
+    const result = require(6881) /* hasMemberSupplemental */.syncMemberSupplemental(guildId, memberSupplementals);
     if (result) {
       if (null == dependencyMap[guildId]) {
         const tmp8 = new closure_8(guildId);
@@ -506,9 +506,9 @@ const memberSafetyStore = new MemberSafetyStore(require("dispatcher"), {
       return memberIds;
     }, { memberIds: [], memberSupplementals: [] });
     let memberIds = reduced.memberIds;
-    let obj1 = require(6854) /* hasMemberSupplemental */;
+    let obj1 = require(6881) /* hasMemberSupplemental */;
     let result = obj1.syncMemberSupplemental(guildId, reduced.memberSupplementals);
-    let obj2 = require(6855) /* createFetchKeys */;
+    let obj2 = require(6882) /* createFetchKeys */;
     const result1 = obj2.registerFetchedSupplementals(guildId, memberIds);
     let tmp14;
     let first;
@@ -518,7 +518,7 @@ const memberSafetyStore = new MemberSafetyStore(require("dispatcher"), {
       tmp14 = members[members.length - 1];
     }
     obj = { totalResultsCount: totalResultsCount.total_result_count, elasticSearchCursor: null };
-    let tmp9Result = tmp9(6850);
+    let tmp9Result = tmp9(6877);
     let joined_at;
     if (first != null) {
       const member = first.member;
@@ -539,7 +539,7 @@ const memberSafetyStore = new MemberSafetyStore(require("dispatcher"), {
     }
     obj1 = { before: tmp9Result.createMemberSearchCursor(obj), after: null };
     obj[1] = id;
-    tmp9Result = tmp9(6850);
+    tmp9Result = tmp9(6877);
     let joined_at1;
     if (tmp14 != null) {
       const member3 = tmp14.member;

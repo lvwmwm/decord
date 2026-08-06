@@ -1,10 +1,10 @@
-// Module ID: 12450
-// Function ID: 12451
+// Module ID: 12487
+// Function ID: 12488
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 17, 1876, 8155, 21, 4255, 712, 5595, 10161, 7744, 8624, 4251, 1236, 9401, 4665, 3901, 2]
+// Dependencies: [19, 17, 1905, 8295, 21, 4285, 712, 5649, 10192, 7885, 8653, 4281, 1236, 9430, 4695, 3930, 2]
 // Exports: default
 
-// Module 12450 (ForLaterNitroUpsellBar)
+// Module 12487 (ForLaterNitroUpsellBar)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";
@@ -35,18 +35,18 @@ export default function ForLaterNitroUpsellBar(isReminder) {
   const isAtLimit = isReminder.isAtLimit;
   let analyticsLocations;
   const tmp = createCacheKey();
-  analyticsLocations = analyticsLocations(5595)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5649)().analyticsLocations;
   const items = [isReminder, analyticsLocations];
   let obj = { style: tmp.container, children: null };
   const callback = React.useCallback(() => analyticsLocations(outer1_2[8])(isReminder, analyticsLocations), items);
   if (isAtLimit) {
     obj = { color: "text-feedback-warning", style: null };
     obj[1] = tmp.icon;
-    let tmp7Result = tmp7(isReminder(7744).WarningIcon, obj);
+    let tmp7Result = tmp7(isReminder(7885).WarningIcon, obj);
     let tmp10 = tmp7;
   } else {
     obj = { source: null, style: null };
-    obj[0] = tmp2(8624);
+    obj[0] = tmp2(8653);
     obj[1] = tmp.icon;
     tmp7Result = tmp7(closure_4, obj);
     tmp10 = tmp7;
@@ -56,8 +56,8 @@ export default function ForLaterNitroUpsellBar(isReminder) {
   const obj2 = { variant: "text-xs/bold", color: "text-brand", children: null };
   const intl = isReminder(1236).intl;
   obj2[2] = intl.string(isReminder(1236).t.oW0eUd).toUpperCase();
-  const items2 = [tmp10(isReminder(4251).Text, obj2), " \u00B7 ", ];
-  let obj5 = isReminder(3901);
+  const items2 = [tmp10(isReminder(4281).Text, obj2), " \u00B7 ", ];
+  let obj5 = isReminder(3930);
   const premiumTypeDisplayName = obj5.getPremiumTypeDisplayName(PremiumTypes.TIER_2);
   const intl2 = isReminder(1236).intl;
   const formatToPlainString = intl2.formatToPlainString;
@@ -72,11 +72,11 @@ export default function ForLaterNitroUpsellBar(isReminder) {
     obj4[0] = premiumTypeDisplayName;
     items2[2] = formatToPlainString(isReminder ? t["W+ZaoS"] : t["0hoV2D"], obj4);
     obj1[3] = items2;
-    items1[1] = tmp5(isReminder(4251).Text, obj1);
+    items1[1] = tmp5(isReminder(4281).Text, obj1);
     if (isAtLimit) {
-      let Button = tmp2(9401);
+      let Button = tmp2(9430);
     } else {
-      Button = tmp12(4665).Button;
+      Button = tmp12(4695).Button;
     }
     obj5 = { size: "sm", text: null, onPress: null };
     const intl3 = tmp12(1236).intl;

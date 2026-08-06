@@ -1,10 +1,10 @@
-// Module ID: 7948
-// Function ID: 7949
+// Module ID: 8089
+// Function ID: 8090
 // Name: useIsInReverseTrial
-// Dependencies: [1874, 589, 2]
+// Dependencies: [1903, 589, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 7948 (useIsInReverseTrial)
+// Module 8089 (useIsInReverseTrial)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

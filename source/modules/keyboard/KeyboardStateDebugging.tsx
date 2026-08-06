@@ -1,8 +1,8 @@
-// Module ID: 1843
-// Function ID: 1844
+// Module ID: 1871
+// Function ID: 1872
 // Dependencies: [3, 501, 2]
 
-// Module 1843
+// Module 1871
 const require = arg1;
 let obj = {
   channelSafeAreaBottomLayoutHeightChanged(arg0) {

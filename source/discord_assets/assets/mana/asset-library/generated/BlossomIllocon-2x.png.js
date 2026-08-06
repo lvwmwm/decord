@@ -1,9 +1,9 @@
-// Module ID: 6017
-// Function ID: 6018
+// Module ID: 6044
+// Function ID: 6045
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6017 (metadata)
+// Module 6044 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BlossomIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/453e651fa55bccdae349af9e0adafbf77827ea52e848331341d2a75af8888834.png";

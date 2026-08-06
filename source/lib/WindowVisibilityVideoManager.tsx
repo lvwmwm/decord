@@ -1,9 +1,9 @@
-// Module ID: 10579
-// Function ID: 10580
+// Module ID: 10634
+// Function ID: 10635
 // Name: isIncomingVideoEnabled
-// Dependencies: [4354, 4140, 3, 687, 709, 9652, 10580, 2]
+// Dependencies: [4384, 4170, 3, 687, 709, 9683, 10635, 2]
 
-// Module 10579 (isIncomingVideoEnabled)
+// Module 10634 (isIncomingVideoEnabled)
 import "on";
 
 let require = arg1;

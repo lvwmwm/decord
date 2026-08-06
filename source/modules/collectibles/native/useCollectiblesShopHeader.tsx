@@ -1,18 +1,18 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14769
+// Function ID: 14770
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1874, 678, 676, 5113, 8679, 21, 4255, 712, 11410, 4251, 1236, 589, 9312, 6894, 5615, 5289, 4223, 10037, 1959, 698, 11052, 5116, 4460, 8677, 10025, 7644, 8661, 8380, 14732, 1480, 2]
+// Dependencies: [19, 17, 1903, 678, 676, 5143, 8708, 21, 4285, 712, 11444, 4281, 1236, 589, 9341, 10378, 6921, 5669, 5343, 4253, 10068, 1988, 698, 11084, 5146, 4490, 8706, 10056, 7672, 8690, 8521, 14770, 1480, 2]
 // Exports: default
 
-// Module 14731 (CollectiblesShopHeaderTitle)
-import ref from "ref";
-import { View } from "CheckmarkSmallIcon";
+// Module 14769 (CollectiblesShopHeaderTitle)
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
+import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
 import { AnalyticEvents } from "ME";
 import { RewardFilterTypes } from "QuestsExperimentLocations";
 import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY";
-import jsxProd from "expandEventProperties";
+import jsxProd from "asyncRequireImpl";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -21,7 +21,7 @@ const require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(11410) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(11444) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = tmp5(1236).intl;
@@ -31,7 +31,7 @@ function CollectiblesShopHeaderTitle(currentScreen) {
     stringResult = intl.string(tmp5(1236).t.pWG4ze);
   }
   obj[5] = stringResult;
-  items[1] = callback(require(4251) /* Text */.Heading, obj);
+  items[1] = callback(require(4281) /* Text */.Heading, obj);
   obj[1] = items;
   return closure_11(View, obj);
 }
@@ -44,24 +44,26 @@ function CollectiblesShopHeaderRight(currentScreen) {
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser(), []);
   let obj1 = currentScreen(balance[14]);
   balance = obj1.useFetchVirtualCurrencyBalance().balance;
+  let obj2 = currentScreen(balance[15]);
   const items1 = [currentScreen];
+  const isEligibleForQuests = obj2.getIsEligibleForQuests();
   const items2 = [balance];
   const memo = React.useMemo(() => {
     let obj = { label: null, action: null, trailingIndicator: null };
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t["xNiB/O"]);
     obj[1] = function action() {
-      let obj = callback(6894);
+      let obj = callback(6921);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5615).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
+      const items = [callback2(5669).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5615).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
+      obj[1] = callback2(5669).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
       obj[2] = constants.FEATURED_PAGE;
       const result = obj.openCollectiblesShopMobile(obj);
     };
     let CheckmarkSmallIcon;
     if (currentScreen === outer1_6.FEATURED_PAGE) {
-      CheckmarkSmallIcon = tmp(tmp2[17]).CheckmarkSmallIcon;
+      CheckmarkSmallIcon = tmp(tmp2[18]).CheckmarkSmallIcon;
     }
     obj[2] = CheckmarkSmallIcon;
     let items = [obj, , ];
@@ -69,17 +71,17 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl2 = tmp(tmp2[12]).intl;
     obj[0] = intl2.string(currentScreen(balance[12]).t.RSyoZu);
     obj[1] = function action() {
-      let obj = callback(6894);
+      let obj = callback(6921);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5615).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
+      const items = [callback2(5669).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5615).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
+      obj[1] = callback2(5669).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
       obj[2] = constants.SHOP_ALL;
       const result = obj.openCollectiblesShopMobile(obj);
     };
     let CheckmarkSmallIcon1;
     if (currentScreen === outer1_6.SHOP_ALL) {
-      CheckmarkSmallIcon1 = tmp(tmp2[17]).CheckmarkSmallIcon;
+      CheckmarkSmallIcon1 = tmp(tmp2[18]).CheckmarkSmallIcon;
     }
     obj[2] = CheckmarkSmallIcon1;
     items[1] = obj;
@@ -87,17 +89,17 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl3 = tmp(tmp2[12]).intl;
     obj[0] = intl3.string(currentScreen(balance[12]).t.EBYkzk);
     obj[1] = function action() {
-      let obj = callback(6894);
+      let obj = callback(6921);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5615).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
+      const items = [callback2(5669).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5615).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
+      obj[1] = callback2(5669).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
       obj[2] = constants.ORBS;
       const result = obj.openCollectiblesShopMobile(obj);
     };
     let CheckmarkSmallIcon2;
     if (currentScreen === outer1_6.ORBS) {
-      CheckmarkSmallIcon2 = tmp(tmp2[17]).CheckmarkSmallIcon;
+      CheckmarkSmallIcon2 = tmp(tmp2[18]).CheckmarkSmallIcon;
     }
     obj[2] = CheckmarkSmallIcon2;
     items[2] = obj;
@@ -106,33 +108,33 @@ function CollectiblesShopHeaderRight(currentScreen) {
   const items3 = [currentScreen, ];
   let id;
   const callback = React.useCallback(() => {
-    let obj = stateFromStores(balance[18]);
+    let obj = stateFromStores(balance[19]);
     obj = { balance, primaryButtonConfig: null, secondaryButtonConfig: null, source: null };
     obj = { buttonText: null, onButtonPress: null };
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t.SymzJC);
     obj[1] = function onButtonPress() {
-      let obj = outer1_1(outer1_2[21]);
-      obj = { type: "GO_TO_QUEST_HOME", source: outer1_1(outer1_2[16]).COLLECTIBLES_SHOP, balance: closure_2 };
+      let obj = outer1_1(outer1_2[22]);
+      obj = { type: "GO_TO_QUEST_HOME", source: outer1_1(outer1_2[17]).COLLECTIBLES_SHOP, balance: closure_2 };
       obj.track(outer1_7.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer1_1(outer1_2[18]).hideActionSheet();
-      const obj3 = outer1_1(outer1_2[18]);
-      obj = { mergeExistingRoutes: true, filter: outer1_8.VIRTUAL_CURRENCY, fromContent: outer1_0(outer1_2[23]).QuestContent.ORBS_BALANCE_MENU };
-      outer1_0(outer1_2[22]).openQuestHome(obj);
+      outer1_1(outer1_2[19]).hideActionSheet();
+      const obj3 = outer1_1(outer1_2[19]);
+      obj = { mergeExistingRoutes: true, filter: outer1_8.VIRTUAL_CURRENCY, fromContent: outer1_0(outer1_2[24]).QuestContent.ORBS_BALANCE_MENU };
+      outer1_0(outer1_2[23]).openQuestHome(obj);
     };
     obj[1] = obj;
     const obj1 = { buttonText: null, onButtonPress: null };
     const intl2 = currentScreen(balance[12]).intl;
     obj1[0] = intl2.string(currentScreen(balance[12]).t["/g10LC"]);
     obj1[1] = function onButtonPress() {
-      let obj = outer1_1(outer1_2[21]);
-      obj = { type: "GO_BACK", source: outer1_1(outer1_2[16]).COLLECTIBLES_SHOP, balance: closure_2 };
+      let obj = outer1_1(outer1_2[22]);
+      obj = { type: "GO_BACK", source: outer1_1(outer1_2[17]).COLLECTIBLES_SHOP, balance: closure_2 };
       obj.track(outer1_7.ORB_BALANCE_ACTION_SHEET_ACTION, obj);
-      outer1_1(outer1_2[18]).hideActionSheet();
+      outer1_1(outer1_2[19]).hideActionSheet();
     };
     obj[2] = obj1;
-    obj[3] = stateFromStores(balance[16]).COLLECTIBLES_SHOP;
-    obj.openLazy(() => callback(paths[20])(paths[19], paths.paths).then((arg0) => arg0.default), "BalanceWidgetActionSheet", obj);
+    obj[3] = stateFromStores(balance[17]).COLLECTIBLES_SHOP;
+    obj.openLazy(() => callback(paths[21])(paths[20], paths.paths).then((arg0) => arg0.default), "BalanceWidgetActionSheet", obj);
   }, items2);
   if (stateFromStores != null) {
     id = stateFromStores.id;
@@ -145,36 +147,49 @@ function CollectiblesShopHeaderRight(currentScreen) {
       id = tmp.id;
     }
     if (null != id) {
-      let obj = stateFromStores(balance[21]);
+      let obj = stateFromStores(balance[22]);
       obj = { cta_name: "wishlist header button", page_type: null };
       obj[1] = currentScreen;
       obj.track(outer1_7.COLLECTIBLES_SHOP_ELEMENT_CLICKED, obj);
-      stateFromStores(balance[24]).popAll();
+      stateFromStores(balance[25]).popAll();
       obj = { userId: null, sourceAnalyticsLocations: null, initialSection: null };
       obj[0] = tmp.id;
-      const obj3 = stateFromStores(balance[24]);
-      const items = [stateFromStores(balance[16]).COLLECTIBLES_SHOP];
+      const obj3 = stateFromStores(balance[25]);
+      const items = [stateFromStores(balance[17]).COLLECTIBLES_SHOP];
       obj[1] = items;
       obj[2] = outer1_9.WISHLIST;
-      stateFromStores(balance[25])(obj);
-      const tmp9 = stateFromStores(balance[25]);
+      stateFromStores(balance[26])(obj);
+      const tmp9 = stateFromStores(balance[26]);
     }
   }, items3);
-  const items4 = [callback(currentScreen(balance[26]).BalanceWidgetPillButton, { balance, onPress: callback }), , ];
-  let tmp12Result = null != stateFromStores;
-  if (tmp12Result) {
-    obj = { accessibilityLabel: null, variant: "tertiary", size: "sm", icon: null, onPress: null };
-    let intl = tmp2(tmp3[12]).intl;
-    obj[0] = intl.string(tmp2(tmp3[12]).t["7lZ31J"]);
-    obj[3] = tmp12(tmp2(tmp3[28]).HeartIcon, { size: "sm", color: "redesign-button-tertiary-text" });
-    obj[4] = callback1;
-    tmp12Result = tmp12(tmp2(tmp3[27]).IconButton, obj);
+  const tmp2Result = currentScreen(balance[27]);
+  if (isEligibleForQuests) {
+    obj = { balance: null, onPress: null };
+    obj[0] = balance;
+    obj[1] = callback;
+    let tmp13Result = tmp13(tmp2Result.BalanceWidgetPillButton, obj);
+    let tmp16 = tmp13;
+  } else {
+    obj1 = { balance: null };
+    obj1[0] = balance;
+    tmp13Result = tmp13(tmp2Result.BalanceWidgetPill, obj1);
+    tmp16 = tmp13;
   }
-  items4[1] = tmp12Result;
-  obj1 = { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null };
+  const items4 = [tmp13Result, , ];
+  let tmp16Result = null != stateFromStores;
+  if (tmp16Result) {
+    obj2 = { accessibilityLabel: null, variant: "tertiary", size: "sm", icon: null, onPress: null };
+    let intl = tmp2(tmp3[12]).intl;
+    obj2[0] = intl.string(tmp2(tmp3[12]).t["7lZ31J"]);
+    obj2[3] = tmp16(tmp2(tmp3[29]).HeartIcon, { size: "sm", color: "redesign-button-tertiary-text" });
+    obj2[4] = callback1;
+    tmp16Result = tmp16(tmp2(tmp3[28]).IconButton, obj2);
+  }
+  items4[1] = tmp16Result;
+  let obj3 = { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null };
   let intl2 = tmp2(tmp3[12]).intl;
-  obj1[2] = intl2.string(currentScreen(balance[12]).t.nSFuC0);
-  obj1[4] = function children(ref) {
+  obj3[2] = intl2.string(currentScreen(balance[12]).t.nSFuC0);
+  obj3[4] = function children(ref) {
     const merged = Object.assign(ref, Object.create(null));
     const obj = { ref: ref.ref };
     const merged1 = Object.assign(merged);
@@ -182,10 +197,10 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj.accessibilityLabel = intl.string(currentScreen(balance[12]).t.nSFuC0);
     obj.size = "sm";
-    obj.icon = callback(currentScreen(balance[30]).MenuIcon, { size: "sm", color: "redesign-button-tertiary-text" });
-    return callback(currentScreen(balance[27]).IconButton, obj);
+    obj.icon = callback(currentScreen(balance[31]).MenuIcon, { size: "sm", color: "redesign-button-tertiary-text" });
+    return callback(currentScreen(balance[28]).IconButton, obj);
   };
-  items4[2] = callback(currentScreen(balance[29]).ContextMenu, obj1, currentScreen);
+  items4[2] = tmp16(currentScreen(balance[30]).ContextMenu, obj3, currentScreen);
   obj[1] = items4;
   return closure_11(View, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 5223
-// Function ID: 5224
+// Module ID: 5253
+// Function ID: 5254
 // Name: HeaderBackImage
-// Dependencies: [5, 19, 17, 676, 21, 4255, 712, 4251, 5224, 5227, 1481, 5229, 1236, 5230, 5255, 500, 1581, 5220, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4285, 712, 4281, 5254, 5257, 1481, 5259, 1236, 5260, 5309, 500, 1609, 5250, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5223 (HeaderBackImage)
+// Module 5253 (HeaderBackImage)
 import closure_3 from "createCacheKey";
 import "noop";
 import get_ActivityIndicator from "NAV_BAR_HEIGHT";
@@ -47,7 +47,7 @@ function CloseButton(onPress) {
   const merged1 = Object.assign(merged);
   obj.onPress = fn;
   obj.label = stringResult;
-  obj.labelVisible = false;
+  obj.displayMode = "minimal";
   obj.backImage = function backImage(tintColor) {
     const style = [lib.headerButtonIcon, { tintColor: tintColor.tintColor }];
     return outer1_6(lib(fn[14]).XSmallIcon, { size: "md", style });
@@ -58,7 +58,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.create(null));
-  let obj = onPress(5229);
+  let obj = onPress(5259);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -68,11 +68,11 @@ function CustomHeaderBackButton(onPress) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj.onPress = onPress;
-  obj.labelVisible = false;
+  obj.displayMode = "minimal";
   obj.backImage = function backImage() {
     return callback(closure_9, {});
   };
-  return callback(onPress(5230).HeaderBackButton, obj);
+  return callback(onPress(5260).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -84,7 +84,7 @@ function HeaderTextButton(text) {
   obj = {};
   const merged2 = Object.assign(merged);
   obj.label = text;
-  obj.labelVisible = true;
+  obj.displayMode = "default";
   obj.labelStyle = items;
   obj.backImage = function backImage() {
     return null;
@@ -94,7 +94,7 @@ function HeaderTextButton(text) {
     tmp5 = text;
   }
   obj.accessibilityLabel = tmp5;
-  return closure_6(require(5230) /* Background */.HeaderBackButton, obj);
+  return closure_6(require(5260) /* Background */.HeaderBackButton, obj);
 }
 ({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -126,7 +126,7 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
   const tmp = createCacheKey();
   let obj = { style: tmp.navigatorHeaderContainer, children: null };
   obj = { style: tmp.navigatorHeaderTitleContainer, children: null };
-  const items = [icon, callback(require(4251) /* Text */.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title })];
+  const items = [icon, callback(require(4281) /* Text */.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title })];
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), , ];
   let tmp6Result = null != subtitle;
@@ -137,10 +137,10 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
     obj = { lineClamp: 1, style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj[1] = tmp.navigatorHeaderSubtitle;
     obj[4] = subtitle;
-    tmp6Result = callback(require(4251) /* Text */.Text, obj);
+    tmp6Result = callback(require(4281) /* Text */.Text, obj);
   }
   items1[1] = tmp6Result;
-  items1[2] = importDefault(5224)("js-stack");
+  items1[2] = importDefault(5254)("js-stack");
   obj[1] = items1;
   return callback2(closure_4, obj);
 };
@@ -285,10 +285,10 @@ export const FauxHeader = function FauxHeader(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
-  const top = importDefault(1581)().top;
+  const top = importDefault(1609)().top;
   let obj = { style: null, children: null };
   const items = [createCacheKey().fauxHeaderWrapper, , ];
-  obj = { paddingTop: top, height: top + require(5220) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
+  obj = { paddingTop: top, height: top + require(5250) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
   items[1] = obj;
   items[2] = style;
   obj[0] = items;

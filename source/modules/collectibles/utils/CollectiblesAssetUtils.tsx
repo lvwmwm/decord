@@ -1,10 +1,10 @@
-// Module ID: 1854
-// Function ID: 1855
+// Module ID: 1882
+// Function ID: 1883
 // Name: parseSkuIdFromServerData
-// Dependencies: [1351, 2, 1853]
+// Dependencies: [1351, 2, 1881]
 // Exports: getCollectiblesItemAssetUrl
 
-// Module 1854 (parseSkuIdFromServerData)
+// Module 1882 (parseSkuIdFromServerData)
 let c2 = "media/v1/collectibles-shop";
 let result = require("parseSkuIdFromServerData").fileFinishedImporting("modules/collectibles/utils/CollectiblesAssetUtils.tsx");
 

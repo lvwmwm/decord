@@ -1,10 +1,10 @@
-// Module ID: 8001
-// Function ID: 8002
+// Module ID: 8142
+// Function ID: 8143
 // Name: validateComponent
-// Dependencies: [1906, 4476, 1236, 38, 2]
+// Dependencies: [1935, 4506, 1236, 38, 2]
 // Exports: default
 
-// Module 8001 (validateComponent)
+// Module 8142 (validateComponent)
 const result = require("getSystemLocale").fileFinishedImporting("modules/interaction_components/validateComponent.tsx");
 
 export default function validateComponent(type, arg1, modal) {
@@ -24,15 +24,15 @@ export default function validateComponent(type, arg1, modal) {
     importDefault(38)(values.type === type.type, "component type matches state");
   }
   type = type.type;
-  if (require(1906) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
+  if (require(1935) /* PermissionOverwriteType */.ComponentType.BUTTON === type) {
     return null;
   } else {
-    if (tmp4(1906).ComponentType.STRING_SELECT !== type) {
-      if (tmp4(1906).ComponentType.USER_SELECT !== type) {
-        if (tmp4(1906).ComponentType.ROLE_SELECT !== type) {
-          if (tmp4(1906).ComponentType.MENTIONABLE_SELECT !== type) {
-            if (tmp4(1906).ComponentType.CHANNEL_SELECT !== type) {
-              if (tmp4(1906).ComponentType.TEXT_INPUT === type) {
+    if (tmp4(1935).ComponentType.STRING_SELECT !== type) {
+      if (tmp4(1935).ComponentType.USER_SELECT !== type) {
+        if (tmp4(1935).ComponentType.ROLE_SELECT !== type) {
+          if (tmp4(1935).ComponentType.MENTIONABLE_SELECT !== type) {
+            if (tmp4(1935).ComponentType.CHANNEL_SELECT !== type) {
+              if (tmp4(1935).ComponentType.TEXT_INPUT === type) {
                 ({ minLength, maxLength, required } = type);
                 if (null != values) {
                   if (0 !== values.value.length) {
@@ -54,7 +54,7 @@ export default function validateComponent(type, arg1, modal) {
                   stringResult = intl9.string(tmp4(1236).t.eJEUvD);
                 }
                 formatToPlainStringResult = stringResult;
-              } else if (tmp4(1906).ComponentType.FILE_UPLOAD === type) {
+              } else if (tmp4(1935).ComponentType.FILE_UPLOAD === type) {
                 ({ minValues: minValues2, maxValues: maxValues2 } = type);
                 let num3;
                 if (values != null) {
@@ -85,7 +85,7 @@ export default function validateComponent(type, arg1, modal) {
                   }
                 }
                 return formatToPlainStringResult1;
-              } else if (tmp4(1906).ComponentType.RADIO_GROUP === type) {
+              } else if (tmp4(1935).ComponentType.RADIO_GROUP === type) {
                 if (null == values) {
                   let stringResult2 = null;
                   if (tmp10) {
@@ -96,7 +96,7 @@ export default function validateComponent(type, arg1, modal) {
                   stringResult2 = null;
                 }
                 return stringResult2;
-              } else if (tmp4(1906).ComponentType.CHECKBOX_GROUP === type) {
+              } else if (tmp4(1935).ComponentType.CHECKBOX_GROUP === type) {
                 ({ minValues, maxValues } = type);
                 let num;
                 if (values != null) {
@@ -127,7 +127,7 @@ export default function validateComponent(type, arg1, modal) {
                   }
                 }
                 return formatToPlainStringResult2;
-              } else if (tmp4(1906).ComponentType.CHECKBOX === type) {
+              } else if (tmp4(1935).ComponentType.CHECKBOX === type) {
                 return null;
               } else {
                 importDefault(38)(false, "missing validator for this component");
@@ -149,10 +149,10 @@ export default function validateComponent(type, arg1, modal) {
           stringResult4 = intl10.string(tmp4(1236).t.eJEUvD);
         }
         const tmp18 = stringResult4;
-        tmp4Result = tmp4(4476);
+        tmp4Result = tmp4(4506);
       }
       return tmp18;
-    } else if (values.type === tmp4(1906).ComponentType.STRING_SELECT) {
+    } else if (values.type === tmp4(1935).ComponentType.STRING_SELECT) {
       ({ values, length } = values);
     } else {
       length = values.selectedOptions.length;

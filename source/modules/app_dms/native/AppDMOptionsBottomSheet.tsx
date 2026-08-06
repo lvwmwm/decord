@@ -1,10 +1,10 @@
-// Module ID: 12434
-// Function ID: 12435
+// Module ID: 12471
+// Function ID: 12472
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 5203, 676, 21, 4255, 712, 589, 8677, 4223, 5910, 5603, 5323, 5634, 5300, 1236, 2]
+// Dependencies: [19, 17, 5233, 676, 21, 4285, 712, 589, 8706, 4253, 5937, 5657, 5377, 5688, 5354, 1236, 2]
 // Exports: default
 
-// Module 12434 (AppDMOptionsBottomSheet)
+// Module 12471 (AppDMOptionsBottomSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import recomputeFromAppTokens from "recomputeFromAppTokens";

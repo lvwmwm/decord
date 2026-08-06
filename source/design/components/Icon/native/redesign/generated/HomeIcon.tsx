@@ -1,10 +1,10 @@
-// Module ID: 16486
-// Function ID: 16487
+// Module ID: 16526
+// Function ID: 16527
 // Name: HomeIcon
-// Dependencies: [19, 21, 712, 3958, 16487, 2]
+// Dependencies: [19, 21, 712, 3987, 16527, 2]
 // Exports: HomeIcon
 
-// Module 16486 (HomeIcon)
+// Module 16526 (HomeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const HomeIcon = function HomeIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(16487) /* registerAsset */;
+  obj[0] = require(16527) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3958) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

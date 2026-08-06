@@ -1,10 +1,10 @@
-// Module ID: 15193
-// Function ID: 15194
+// Module ID: 15232
+// Function ID: 15233
 // Name: useHubUnreadCount
-// Dependencies: [11568, 4267, 589, 11, 11560, 2]
+// Dependencies: [11602, 4297, 589, 11, 11594, 2]
 // Exports: useHubUnreadCount
 
-// Module 15193 (useHubUnreadCount)
+// Module 15232 (useHubUnreadCount)
 import isFetching from "isFetching";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 

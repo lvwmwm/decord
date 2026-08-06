@@ -1,8 +1,8 @@
-// Module ID: 11352
-// Function ID: 11353
-// Dependencies: [109, 19, 1479, 676, 21, 8353, 4255, 712, 5595, 5615, 4121, 1579, 5650, 4449, 1481, 11353, 11399, 11425, 11464, 9437, 2]
+// Module ID: 11386
+// Function ID: 11387
+// Dependencies: [109, 19, 1479, 676, 21, 8493, 4285, 712, 5649, 5669, 4150, 1607, 5704, 4479, 1481, 11387, 11433, 11459, 11498, 9466, 2]
 
-// Module 11352
+// Module 11386
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "context";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -38,13 +38,13 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   ({ context, entrypoint } = arg0);
   ({ expandBottomSheet, overrideParams } = arg0);
   ({ bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, contentStyle, keyboardCloseReasonRef, onActivityItemSelected, width } = arg0);
-  const tmp3 = importDefault(5595);
-  let obj = entrypoint(4121);
+  const tmp3 = importDefault(5649);
+  let obj = entrypoint(4150);
   if (overrideParams == null) {
-    overrideParams = obj.useKeyboardContextForType(entrypoint(1579).KeyboardTypes.APP_LAUNCHER);
+    overrideParams = obj.useKeyboardContextForType(entrypoint(1607).KeyboardTypes.APP_LAUNCHER);
   }
   const tmp4 = callback2();
-  const accessibilityNativeStackOptions = entrypoint(5650).useAccessibilityNativeStackOptions();
+  const accessibilityNativeStackOptions = entrypoint(5704).useAccessibilityNativeStackOptions();
   const initialRouteName = overrideParams.initialRouteName;
   let obj12 = callback(overrideParams, closure_3);
   const items = [entrypoint];
@@ -53,12 +53,12 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
     obj = { location: "app_launcher", source: entrypoint };
     obj.trackWithMetadata(outer1_7.APPLICATION_COMMAND_TOP_OF_FUNNEL, obj);
   }, items);
-  obj = { value: tmp3(importDefault(5615).APP_LAUNCHER).analyticsLocations, children: null };
+  obj = { value: tmp3(importDefault(5669).APP_LAUNCHER).analyticsLocations, children: null };
   obj = { initialRouteName, screenOptions: null, children: null };
   const items1 = [tmp4.navigator, contentStyle];
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj[1] = { contentStyle: items1, headerShown: false, fullScreenGestureEnabled: true };
-  const obj2 = { name: AppLauncherRouteName.HOME, component: importDefault(11353), initialParams: null };
+  const obj2 = { name: AppLauncherRouteName.HOME, component: importDefault(11387), initialParams: null };
   const obj3 = { context, initialSearchQuery: null };
   let initialSearchQuery;
   if (overrideParams.initialRouteName === AppLauncherRouteName.HOME) {
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj3[1] = initialSearchQuery;
   obj2[2] = obj3;
   const items2 = [closure_8(createNativeStackNavigator.Screen, obj2), , , ];
-  const obj4 = { name: AppLauncherRouteName.APPLICATION_VIEW, component: importDefault(11399), initialParams: null };
+  const obj4 = { name: AppLauncherRouteName.APPLICATION_VIEW, component: importDefault(11433), initialParams: null };
   const obj5 = { context };
   let obj6 = obj12;
   if (initialRouteName !== AppLauncherRouteName.APPLICATION_VIEW) {
@@ -77,7 +77,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj5.expandBottomSheet = expandBottomSheet;
   obj4[2] = obj5;
   items2[1] = closure_8(createNativeStackNavigator.Screen, obj4);
-  const obj7 = { name: AppLauncherRouteName.COMMAND_VIEW, component: importDefault(11425), initialParams: null };
+  const obj7 = { name: AppLauncherRouteName.COMMAND_VIEW, component: importDefault(11459), initialParams: null };
   let tmp15;
   if ("channel" === context.type) {
     tmp15 = context;
@@ -91,29 +91,31 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj8.expandBottomSheet = expandBottomSheet;
   obj7[2] = obj8;
   items2[2] = closure_8(createNativeStackNavigator.Screen, obj7);
-  const obj10 = { name: AppLauncherRouteName.APP_LIST_VIEW, component: importDefault(11464), initialParams: null };
+  const obj10 = { name: AppLauncherRouteName.APP_LIST_VIEW, component: importDefault(11498), initialParams: null };
   if (overrideParams.initialRouteName !== AppLauncherRouteName.APP_LIST_VIEW) {
     obj12 = {};
   }
-  const obj13 = { independent: true, children: null };
+  const obj13 = { children: null };
+  const obj14 = { children: null };
   const merged3 = Object.assign(obj12);
   obj10[2] = { context };
   items2[3] = closure_8(createNativeStackNavigator.Screen, obj10);
   obj[2] = items2;
   obj[1] = closure_9(createNativeStackNavigator.Navigator, obj);
-  obj13[1] = closure_8(entrypoint(5595).AnalyticsLocationProvider, obj);
+  obj14[0] = closure_8(entrypoint(5649).AnalyticsLocationProvider, obj);
+  obj13[0] = closure_8(entrypoint(1481).NavigationContainer, obj14);
   let tmp19 = "customId" in overrideParams;
-  const children = tmp8(tmp5(1481).NavigationContainer, obj13);
+  const children = tmp8(tmp5(1481).NavigationIndependentTree, obj13);
   if (!tmp19) {
     tmp19 = "referrerId" in overrideParams;
   }
   let entrypointParams = null;
   if (tmp19) {
-    ({ customId: obj18[0], referrerId: obj18[1] } = overrideParams);
+    ({ customId: obj19[0], referrerId: obj19[1] } = overrideParams);
     entrypointParams = { customId: null, referrerId: null };
-    const obj14 = { customId: null, referrerId: null };
+    const obj15 = { customId: null, referrerId: null };
   }
-  return closure_8(entrypoint(9437).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams, keyboardCloseReasonRef, onActivityItemSelected, width }, children });
+  return closure_8(entrypoint(9466).AppLauncherContext.Provider, { value: { bottomSheetExpandReasonRef, bottomSheetIndex, bottomSheetPosition, chatInputRef, entrypoint, entrypointParams, keyboardCloseReasonRef, onActivityItemSelected, width }, children });
 });
 const result = require("APP_LAUNCHER_BUILT_IN_SECTION_ICON").fileFinishedImporting("modules/app_launcher/native/AppLauncherNavigator.tsx");
 

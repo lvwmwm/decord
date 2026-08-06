@@ -1,10 +1,10 @@
-// Module ID: 13946
-// Function ID: 13947
+// Module ID: 13983
+// Function ID: 13984
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4255, 712, 4223, 5323, 5322, 7767, 1306, 7766, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4253, 5377, 5376, 7908, 1306, 7907, 2]
 // Exports: default
 
-// Module 13946 (ExplicitMediaSettingsActionSheet)
+// Module 13983 (ExplicitMediaSettingsActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -36,15 +36,15 @@ export default function ExplicitMediaSettingsActionSheet(options) {
       const obj2 = outer1_1(outer1_2[5]);
     }
   }, items);
-  const items1 = [callback(options(5322).BottomSheetTitleHeader, { title, subtitle }), ];
+  const items1 = [callback(options(5376).BottomSheetTitleHeader, { title, subtitle }), ];
   let obj = { style: createCacheKey().content, children: null };
   if (SHOW == null) {
     SHOW = options(1306).ExplicitContentRedaction.SHOW;
   }
   obj = { startExpanded: true, children: null };
   obj = { defaultValue: SHOW, onChange: callback, hasIcons: false, children: options.map((label) => callback(options(table[10]).TableRadioRow, { label: label.label, value: label.value }, label.value)) };
-  obj[1] = callback(options(7767).TableRadioGroup, obj);
+  obj[1] = callback(options(7908).TableRadioGroup, obj);
   items1[1] = callback(View, obj);
   obj[1] = items1;
-  return closure_6(options(5323).BottomSheet, obj);
+  return closure_6(options(5377).BottomSheet, obj);
 };

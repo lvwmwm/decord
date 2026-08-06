@@ -1,10 +1,10 @@
-// Module ID: 11243
-// Function ID: 11244
+// Module ID: 11277
+// Function ID: 11278
 // Name: isNewMessageGroup
-// Dependencies: [676, 687, 5784, 11, 3925, 2]
+// Dependencies: [676, 687, 5811, 11, 3954, 2]
 // Exports: isNewGroupItem
 
-// Module 11243 (isNewMessageGroup)
+// Module 11277 (isNewMessageGroup)
 import ME from "ME";
 
 let c3;
@@ -24,7 +24,7 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
     } else {
       let REPLY = constants;
       if (type.type > constants.DEFAULT) {
-        const tmp35 = importDefault(5784)(content);
+        const tmp35 = importDefault(5811)(content);
         let tmp36 = !tmp35;
         if (tmp35) {
           type = type.type;
@@ -33,7 +33,7 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
         }
         let tmp32 = tmp36;
       } else {
-        tmp32 = importDefault(5784)(content);
+        tmp32 = importDefault(5811)(content);
         if (!tmp32) {
           let tmp7 = content.author.id !== type.author.id;
           if (!tmp7) {
@@ -52,10 +52,10 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                 }
                 let tmp15 = !tmp14;
                 if (tmp14) {
-                  const isSameDayResult = require(3925) /* resetCache */.isSameDay(content.timestamp, type.timestamp);
+                  const isSameDayResult = require(3954) /* resetCache */.isSameDay(content.timestamp, type.timestamp);
                   let tmp18 = !isSameDayResult;
                   if (isSameDayResult) {
-                    const isWithinIntervalResult = tmp16(3925).isWithinInterval(content.timestamp, type.timestamp, closure_6);
+                    const isWithinIntervalResult = tmp16(3954).isWithinInterval(content.timestamp, type.timestamp, closure_6);
                     let tmp21 = !isWithinIntervalResult;
                     if (isWithinIntervalResult) {
                       const hasFlagResult2 = type.hasFlag(tmp.SUPPRESS_NOTIFICATIONS);
@@ -103,10 +103,10 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                       tmp21 = tmp24;
                     }
                     tmp18 = tmp21;
-                    const tmp16Result = tmp16(3925);
+                    const tmp16Result = tmp16(3954);
                   }
                   tmp15 = tmp18;
-                  const obj2 = require(3925) /* resetCache */;
+                  const obj2 = require(3954) /* resetCache */;
                   tmp16 = require;
                 }
                 tmp11 = tmp15;

@@ -1,10 +1,10 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 11907
+// Function ID: 11908
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: [32, 19, 1862, 3883, 6812, 4073, 676, 11, 589, 8210, 2]
+// Dependencies: [32, 19, 1891, 3912, 6839, 4102, 676, 11, 589, 8350, 2]
 // Exports: default
 
-// Module 11873 (useGetJoinRequestAndGuildForInterviewChannel)
+// Module 11907 (useGetJoinRequestAndGuildForInterviewChannel)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -54,19 +54,19 @@ export default function useGetJoinRequestAndGuildForInterviewChannel(id) {
   const effect = joinRequest.useEffect(() => {
     if (!tmp) {
       dependencyMap(true);
-      const requestToJoinGuilds = first(8210).fetchRequestToJoinGuilds();
-      const obj = first(8210);
+      const requestToJoinGuilds = first(8350).fetchRequestToJoinGuilds();
+      const obj = first(8350);
     }
   }, items1);
   const items2 = [joinRequest, castResult];
   const effect1 = joinRequest.useEffect(() => {
     if (null == joinRequest) {
       callback(true);
-      const joinRequestForInterview = first(8210).fetchJoinRequestForInterview(_slicedToArray);
+      const joinRequestForInterview = first(8350).fetchJoinRequestForInterview(_slicedToArray);
       joinRequestForInterview.finally(() => {
         callback(false);
       });
-      const obj = first(8210);
+      const obj = first(8350);
     }
   }, items2);
   return { loading, joinRequest, joinRequestGuild };

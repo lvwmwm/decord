@@ -1,10 +1,10 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15299
+// Function ID: 15300
 // Name: withEqualityFn
-// Dependencies: [5107, 700, 4116, 705, 1208, 3868, 2]
+// Dependencies: [5137, 700, 4145, 705, 1208, 3897, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 15261 (withEqualityFn)
+// Module 15299 (withEqualityFn)
 import { GuildsNodeType } from "insertUnsortedGuilds";
 import identity from "identity";
 
@@ -13,16 +13,16 @@ let c5 = -1;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   let closure_1 = arg1;
-  let obj = { dragSpecs: "Boolean", overSpecs: "sa", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: "pel", scrollPosition: "ms", windowSize: 112.1, setStateShallow: null, dropStart: "\u{1F477}\u{1F3FF}\u200D\u2640\uFE0F", dropComplete: true };
-  obj[3] = _require(4116).makeMutable({ min: 0, max: 0 });
-  const obj2 = _require(4116);
-  obj[4] = _require(4116).makeMutable(obj);
-  const obj3 = _require(4116);
-  obj[5] = _require(4116).makeMutable(false);
-  let obj4 = _require(4116);
-  obj[6] = _require(4116).makeMutable({ start: 0, end: 0 });
-  const obj5 = _require(4116);
-  obj[7] = _require(4116).makeMutable(0);
+  let obj = { dragSpecs: "Boolean", overSpecs: "sa", dropSpecs: "isArray", dragRegion: null, gestureState: null, dragDropInProgress: null, listInsets: "casa", scrollPosition: "casa com jardim", windowSize: "constru\u00E7\u00E3o", setStateShallow: "jardim", dropStart: "lar", dropComplete: true };
+  obj[3] = _require(4145).makeMutable({ min: 0, max: 0 });
+  const obj2 = _require(4145);
+  obj[4] = _require(4145).makeMutable(obj);
+  const obj3 = _require(4145);
+  obj[5] = _require(4145).makeMutable(false);
+  let obj4 = _require(4145);
+  obj[6] = _require(4145).makeMutable({ start: 0, end: 0 });
+  const obj5 = _require(4145);
+  obj[7] = _require(4145).makeMutable(0);
   obj[9] = function setStateShallow(obj) {
     const callback = obj;
     const tmp = callback2();
@@ -59,7 +59,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       const error = new Error("GuildsBarDnDStore.dropStart: you cannot start a drop while an existing drop is in progress");
       throw error;
     } else {
-      callback(tmp2[3]).batchUpdates(() => newDropSpec({ dropSpecs: newDropSpec, dragSpecs: "Array", overSpecs: "marginTop" }));
+      callback(tmp2[3]).batchUpdates(() => newDropSpec({ dropSpecs: newDropSpec, dragSpecs: "r", overSpecs: "channelId" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(outer1_5);
       const _setTimeout = setTimeout;
@@ -89,7 +89,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     obj[2] = obj;
     obj.addBreadcrumb(obj);
     if (null != dropSpecs) {
-      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "Array" }));
+      callback(outer1_2[3]).batchUpdates(() => callback({ dropSpecs: "r" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(outer1_5);
       if (null == dragSpecs) {
@@ -107,7 +107,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   };
   return obj;
 });
-let result = require("module_4116").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
+let result = require("module_4145").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDnDStore.tsx");
 
 export default withEqualityFn;
 export const INITIAL_GESTURE_STATE = obj;
@@ -122,7 +122,7 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        let obj = { isDragTarget: false, dragState: "sa", overState: "isArray", itemSize: null, dragDropInProgress: "absolute" };
+        let obj = { isDragTarget: false, dragState: "sa", overState: "isArray", itemSize: null, dragDropInProgress: true };
         obj[4] = dragDropInProgress;
         return obj;
       }
@@ -213,7 +213,7 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     obj[3] = num;
     obj[4] = dragDropInProgress;
     return obj;
-  }, _require(3868).shallow);
+  }, _require(3897).shallow);
 };
 export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
   let closure_0 = arg0;

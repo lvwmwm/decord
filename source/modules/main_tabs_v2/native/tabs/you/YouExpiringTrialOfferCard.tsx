@@ -1,10 +1,10 @@
-// Module ID: 15732
-// Function ID: 15733
+// Module ID: 15772
+// Function ID: 15773
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 12861, 676, 6790, 1876, 21, 687, 4255, 712, 15733, 698, 1236, 3837, 647, 6805, 6797, 15731, 1945, 4251, 3901, 4797, 1297, 7597, 4676, 5642, 2]
+// Dependencies: [19, 17, 12898, 676, 6817, 1905, 21, 687, 4285, 712, 15773, 698, 1236, 3866, 647, 6832, 6824, 15771, 1974, 4281, 3930, 4827, 1297, 7625, 4706, 5696, 2]
 // Exports: default
 
-// Module 15732 (YouExpiringTrialOfferCard)
+// Module 15772 (YouExpiringTrialOfferCard)
 import Text from "Text";
 import { View } from "useShouldShowExpiringTrialOfferCard";
 import clearDismissUntil from "clearDismissUntil";
@@ -41,14 +41,14 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let stateFromStores;
   let premiumTrialOffer;
   let shouldShowExpiringTrialOfferCard;
-  let obj = importDefault(3837)();
+  let obj = importDefault(3866)();
   importDefault = obj.add(5, "days");
   const tmp3 = createCacheKey();
   dependencyMap = tmp3;
   let obj1 = navigateToPremium(647);
   let items = [shouldShowExpiringTrialOfferCard];
   stateFromStores = obj1.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj2 = navigateToPremium(6805);
+  let obj2 = navigateToPremium(6832);
   premiumTrialOffer = obj2.usePremiumTrialOffer();
   let num = 0;
   if (null != premiumTrialOffer) {
@@ -58,8 +58,8 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
       num = Date.parse(premiumTrialOffer.expires_at);
     }
   }
-  const tmp7Result = importDefault(6797)(num, closure_15);
-  let tmp4Result = tmp4(15731);
+  const tmp7Result = importDefault(6824)(num, closure_15);
+  let tmp4Result = tmp4(15771);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -86,10 +86,10 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         } else {
           PREMIUM_TRIAL = constants.PREMIUM_TRIAL;
         }
-        const articleURL = tmp(1945).getArticleURL(PREMIUM_TRIAL);
+        const articleURL = tmp(1974).getArticleURL(PREMIUM_TRIAL);
         obj = { style: null, children: null };
         obj[0] = tmp3.header;
-        tmp4Result = tmp4(3901);
+        tmp4Result = tmp4(3930);
         const subscription_trial = premiumTrialOffer.subscription_trial;
         let interval;
         if (subscription_trial != null) {
@@ -130,7 +130,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         const obj4 = { children: null };
         const obj5 = { variant: "heading-sm/medium", color: "text-default", children: null };
         obj5[2] = formatResult;
-        obj[1] = closure_12(tmp4(4251).Text, obj5);
+        obj[1] = closure_12(tmp4(4281).Text, obj5);
         const items2 = [closure_12(premiumTrialOffer, obj), , ];
         const obj6 = { style: null, accessibilityRole: "button", accessibilityLabel: null, hitSlop: null, onPress: null, children: null };
         obj6[0] = tmp3.closeButton;
@@ -151,7 +151,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         const obj7 = { width: 16, height: 16, color: null };
         obj7[2] = tmp3.closeIcon.color;
         obj6[5] = closure_12(tmp4(1297).CloseIcon, obj7);
-        items2[1] = closure_12(tmp4(4797).PressableOpacity, obj6);
+        items2[1] = closure_12(tmp4(4827).PressableOpacity, obj6);
         const obj8 = { style: null, text: null, onPress: null, renderIcon: null, renderLinearGradient: null };
         obj8[0] = tmp3.primaryCTA;
         const intl5 = tmp4(1236).intl;
@@ -190,16 +190,16 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         const tmp15 = closure_14;
         const tmp16 = closure_13;
         const tmp18 = premiumTrialOffer;
-        const tmpResult = tmp(1945);
+        const tmpResult = tmp(1974);
         const obj9 = { style: null, children: null };
         obj9[0] = navigateToPremium.style;
         obj9[1] = closure_14(closure_13, obj4);
-        return closure_12(tmp(5642), obj9);
+        return closure_12(tmp(5696), obj9);
       }
     }
     return null;
   } else {
     return null;
   }
-  const tmp7 = importDefault(6797);
+  const tmp7 = importDefault(6824);
 };

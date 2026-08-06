@@ -1,10 +1,10 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7235
+// Function ID: 7236
 // Name: queryGamesAutocomplete
-// Dependencies: [4783, 636, 7209, 4784, 2]
+// Dependencies: [4813, 636, 7236, 4814, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 7208 (queryGamesAutocomplete)
+// Module 7235 (queryGamesAutocomplete)
 import set from "set";
 import importDefaultResult from "debounce";
 
@@ -12,14 +12,14 @@ const require = arg1;
 const obj = { leading: true, maxWait: null };
 obj[1] = require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS;
 let closure_3 = require("debounce")((arg0) => {
-  const useGameAutocomplete = require(7209) /* fetchStore */.useGameAutocomplete;
+  const useGameAutocomplete = require(7236) /* fetchStore */.useGameAutocomplete;
   const items = [arg0];
   const many = useGameAutocomplete.fetchMany(items);
 }, require("fetchStore").GAME_AUTOCOMPLETE_DEBOUNCE_MS, obj);
 let result = require("fetchStore").fileFinishedImporting("modules/games/autocomplete/queryGamesAutocomplete.tsx");
 
 export const queryGamesAutocomplete = function queryGamesAutocomplete(query) {
-  const result = require(4784) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(query);
+  const result = require(4814) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.normalizeGameAutocompleteQuery(query);
   let found = null;
   if (null != result) {
     callback(result);
@@ -27,7 +27,7 @@ export const queryGamesAutocomplete = function queryGamesAutocomplete(query) {
     if (closestResults == null) {
       closestResults = [];
     }
-    found = closestResults.filter(require(4784) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.isGameAutocompleteResultAllowedInGameWidgets);
+    found = closestResults.filter(require(4814) /* GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH */.isGameAutocompleteResultAllowedInGameWidgets);
   }
   return found;
 };

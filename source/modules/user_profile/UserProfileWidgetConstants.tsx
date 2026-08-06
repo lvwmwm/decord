@@ -1,9 +1,9 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 7006
+// Function ID: 7007
 // Name: items
-// Dependencies: [4292, 6975, 1236, 2]
+// Dependencies: [4322, 7002, 1236, 2]
 
-// Module 6979 (items)
+// Module 7006 (items)
 import addApplication from "addApplication";
 
 const require = arg1;
@@ -11,23 +11,23 @@ const items = [require("WidgetType").WidgetType.PERSONAL, require("WidgetType").
 const items1 = [require("WidgetType").WidgetType.FAVORITE_GAMES];
 const items2 = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.CLIPS_GALLERY];
 const obj = {
-  [arg1(6975).WidgetType.FAVORITE_GAMES]: () => {
+  [arg1(7002).WidgetType.FAVORITE_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.sUQar8);
   },
-  [arg1(6975).WidgetType.CURRENT_GAMES]: () => {
+  [arg1(7002).WidgetType.CURRENT_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.SqNnus);
   },
-  [arg1(6975).WidgetType.WANT_TO_PLAY_GAMES]: () => {
+  [arg1(7002).WidgetType.WANT_TO_PLAY_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.bWSQwW);
   },
-  [arg1(6975).WidgetType.PLAYED_GAMES]: () => {
+  [arg1(7002).WidgetType.PLAYED_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.scOKET);
   },
-  [arg1(6975).WidgetType.APPLICATION]: (applicationId) => {
+  [arg1(7002).WidgetType.APPLICATION]: (applicationId) => {
     application = application.getApplication(applicationId.applicationId);
     let str;
     if (application != null) {
@@ -38,11 +38,11 @@ const obj = {
     }
     return str;
   },
-  [arg1(6975).WidgetType.PERSONAL]: () => {
+  [arg1(7002).WidgetType.PERSONAL]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.AVkYMx);
   },
-  [arg1(6975).WidgetType.CLIPS_GALLERY]: () => {
+  [arg1(7002).WidgetType.CLIPS_GALLERY]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.zY8Ghg);
   }

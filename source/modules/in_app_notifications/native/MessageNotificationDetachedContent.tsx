@@ -1,10 +1,10 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 10125
+// Function ID: 10126
 // Name: MessageNotificationDetachedContent
-// Dependencies: [19, 17, 9655, 21, 4255, 9702, 1236, 10095, 1581, 4116, 4256, 10098, 10099, 2]
+// Dependencies: [19, 17, 9686, 21, 4285, 9733, 1236, 10126, 1609, 4145, 4286, 10129, 10130, 2]
 // Exports: MessageNotificationDetachedContent
 
-// Module 10094 (MessageNotificationDetachedContent)
+// Module 10125 (MessageNotificationDetachedContent)
 import noop from "noop";
 import { Keyboard } from "get ActivityIndicator";
 import { DEFAULT_ANIMATION_TIMING } from "set";

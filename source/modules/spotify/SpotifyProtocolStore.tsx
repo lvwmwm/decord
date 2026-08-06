@@ -1,9 +1,9 @@
-// Module ID: 11035
-// Function ID: 11036
+// Module ID: 11067
+// Function ID: 11068
 // Name: isProtocolRegistered
 // Dependencies: [589, 709, 2]
 
-// Module 11035 (isProtocolRegistered)
+// Module 11067 (isProtocolRegistered)
 import { Store } from "initialize";
 
 let c0 = false;

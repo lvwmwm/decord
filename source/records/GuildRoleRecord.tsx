@@ -1,10 +1,10 @@
-// Module ID: 1936
-// Function ID: 1937
+// Module ID: 1965
+// Function ID: 1966
 // Name: GuildRoleRecordTypeTag
 // Dependencies: [1412, 506, 12, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
-// Module 1936 (GuildRoleRecordTypeTag)
+// Module 1965 (GuildRoleRecordTypeTag)
 import { TypeTag } from "isValueEqual";
 
 const result = require("apply").fileFinishedImporting("records/GuildRoleRecord.tsx");

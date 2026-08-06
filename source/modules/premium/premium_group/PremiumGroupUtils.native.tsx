@@ -1,10 +1,10 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 8079
+// Function ID: 8080
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1874, 3915, 4094, 1236, 2837, 2, 7939]
+// Dependencies: [1903, 3944, 4123, 1236, 2866, 2, 8080]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 7938 (getPremiumGroupInviteEmbedText)
+// Module 8079 (getPremiumGroupInviteEmbedText)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
@@ -35,7 +35,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       user = user.getUser(found);
       let nameFromUserResult = null;
       if (null != user) {
-        let obj4 = sender(4094);
+        let obj4 = sender(4123);
         nameFromUserResult = obj4.nameFromUser(user);
       }
       tmp8 = nameFromUserResult;
@@ -47,20 +47,20 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       obj = { receiverName: null, premiumGroupProductName: null };
       obj[0] = tmp8;
       obj[1] = tmp;
-      obj[0] = intl4.format(importDefault(2837).MkcFjx, obj);
+      obj[0] = intl4.format(importDefault(2866).MkcFjx, obj);
       const intl5 = sender(1236).intl;
       const obj1 = { premiumGroupProductName: null };
       obj1[0] = tmp;
-      obj[1] = intl5.formatToPlainString(importDefault(2837)["5uwv8J"], obj1);
+      obj[1] = intl5.formatToPlainString(importDefault(2866)["5uwv8J"], obj1);
       const intl6 = sender(1236).intl;
       const obj2 = { receiverName: null };
       obj2[0] = tmp8;
-      obj[2] = intl6.formatToPlainString(importDefault(2837)["AmE0B/"], obj2);
+      obj[2] = intl6.formatToPlainString(importDefault(2866)["AmE0B/"], obj2);
       tmp15 = obj;
     }
     return tmp15;
   } else {
-    obj = sender(4094);
+    obj = sender(4123);
     const nameFromUserResult1 = obj.nameFromUser(sender);
     const obj3 = { message: null, header: null, body: null };
     const intl = sender(1236).intl;
@@ -68,14 +68,14 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     obj4[0] = nameFromUserResult1;
     obj4[1] = tmp;
     obj4[2] = closure_5;
-    obj3[0] = intl.format(importDefault(2837)["51Kv/4"], obj4);
+    obj3[0] = intl.format(importDefault(2866)["51Kv/4"], obj4);
     const intl2 = sender(1236).intl;
-    obj3[1] = intl2.string(importDefault(2837).ssge1y);
+    obj3[1] = intl2.string(importDefault(2866).ssge1y);
     const intl3 = sender(1236).intl;
     const obj5 = { senderName: null, premiumGroupProductName: null };
     obj5[0] = nameFromUserResult1;
     obj5[1] = tmp;
-    obj3[2] = intl3.formatToPlainString(importDefault(2837).tej76V, obj5);
+    obj3[2] = intl3.formatToPlainString(importDefault(2866).tej76V, obj5);
     return obj3;
   }
 };

@@ -1,9 +1,9 @@
-// Module ID: 1882
-// Function ID: 1883
+// Module ID: 1911
+// Function ID: 1912
 // Name: createdAt
-// Dependencies: [1883, 676, 1876, 1884, 1885, 1889, 1890, 1895, 1896, 506, 11, 1416, 1384, 1897, 1892, 1852, 1898, 2]
+// Dependencies: [1912, 676, 1905, 1913, 1914, 1918, 1919, 1924, 1925, 506, 11, 1416, 1384, 1926, 1921, 1880, 1927, 2]
 
-// Module 1882 (createdAt)
+// Module 1911 (createdAt)
 import "toJS";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";
@@ -450,7 +450,7 @@ prototype["hadPremiumSubscription"] = function hadPremiumSubscription() {
     tmp = null;
   }
   const self = this;
-  const isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this);
+  const isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this);
   let hasHadPremiumResult = !isPremiumResult;
   if (!isPremiumResult) {
     hasHadPremiumResult = self.hasHadPremium(tmp);
@@ -469,58 +469,58 @@ prototype["hasFreePremium"] = function hasFreePremium() {
   return isStaffResult;
 };
 prototype["isOnReverseTrial"] = function isOnReverseTrial() {
-  let isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this);
+  let isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let premiumSource;
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === require(1892) /* create */.PremiumSource.REVERSE_TRIAL;
+    isPremiumResult = premiumSource === require(1921) /* create */.PremiumSource.REVERSE_TRIAL;
   }
   return isPremiumResult;
 };
 prototype["isPremiumWithPremiumGroup"] = function isPremiumWithPremiumGroup() {
-  let isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
+  let isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let premiumSource;
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === require(1892) /* create */.PremiumSource.SUBSCRIPTION_GROUP;
+    isPremiumResult = premiumSource === require(1921) /* create */.PremiumSource.SUBSCRIPTION_GROUP;
   }
   return isPremiumResult;
 };
 prototype["hasPaidTier2Subscription"] = function hasPaidTier2Subscription() {
-  let isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
+  let isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let prop;
     if (premiumState != null) {
       prop = premiumState.premiumSubscriptionType;
     }
-    isPremiumResult = prop === require(1892) /* create */.PremiumSubscriptionType.TIER_2;
+    isPremiumResult = prop === require(1921) /* create */.PremiumSubscriptionType.TIER_2;
   }
   return isPremiumResult;
 };
 prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFractionalPremiumOnly() {
   const self = this;
-  let isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
+  let isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
   if (isPremiumResult) {
     const premiumState = self.premiumState;
     let prop;
     if (premiumState != null) {
       prop = premiumState.premiumSubscriptionType;
     }
-    let tmp6 = prop === tmp(1892).PremiumSubscriptionType.NONE_UNSPECIFIED;
+    let tmp6 = prop === tmp(1921).PremiumSubscriptionType.NONE_UNSPECIFIED;
     if (!tmp6) {
       const premiumState2 = self.premiumState;
       let prop1;
       if (premiumState2 != null) {
         prop1 = premiumState2.premiumSubscriptionType;
       }
-      tmp6 = prop1 === tmp(1892).PremiumSubscriptionType.BOOST_ONLY;
+      tmp6 = prop1 === tmp(1921).PremiumSubscriptionType.BOOST_ONLY;
     }
     isPremiumResult = tmp6;
   }
@@ -530,35 +530,35 @@ prototype["isPremiumWithFractionalPremiumOnly"] = function isPremiumWithFraction
     if (premiumState3 != null) {
       premiumSource = premiumState3.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1892).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1921).PremiumSource.FRACTIONAL_NITRO;
   }
   return isPremiumResult;
 };
 prototype["isFractionalPremiumWithNoStandardSub"] = function isFractionalPremiumWithNoStandardSub() {
   const self = this;
-  let isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
+  let isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
   if (isPremiumResult) {
     const premiumState = self.premiumState;
     let premiumSource;
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === tmp(1892).PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === tmp(1921).PremiumSource.FRACTIONAL_NITRO;
   }
   if (isPremiumResult) {
-    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1892).PremiumSubscriptionType.TIER_2;
+    isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1921).PremiumSubscriptionType.TIER_2;
   }
   return isPremiumResult;
 };
 prototype["isFractionalPremium"] = function isFractionalPremium() {
-  let isPremiumResult = require(1897) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
+  let isPremiumResult = require(1926) /* isPremiumAtLeast */.isPremium(this, closure_9.TIER_2);
   if (isPremiumResult) {
     const premiumState = this.premiumState;
     let premiumSource;
     if (premiumState != null) {
       premiumSource = premiumState.premiumSource;
     }
-    isPremiumResult = premiumSource === require(1892) /* create */.PremiumSource.FRACTIONAL_NITRO;
+    isPremiumResult = premiumSource === require(1921) /* create */.PremiumSource.FRACTIONAL_NITRO;
   }
   return isPremiumResult;
 };
@@ -609,14 +609,14 @@ prototype["hasUniqueUsername"] = function hasUniqueUsername() {
 prototype["isPremiumGroupMember"] = function isPremiumGroupMember() {
   let result = this.isPremiumWithPremiumGroup();
   if (result) {
-    result = this.premiumGroupRole === require(1892) /* create */.PremiumSubscriptionGroupRole.MEMBER;
+    result = this.premiumGroupRole === require(1921) /* create */.PremiumSubscriptionGroupRole.MEMBER;
   }
   return result;
 };
 prototype["isPremiumGroupPrimary"] = function isPremiumGroupPrimary() {
   let result = this.isPremiumWithPremiumGroup();
   if (result) {
-    result = this.premiumGroupRole === require(1892) /* create */.PremiumSubscriptionGroupRole.PRIMARY;
+    result = this.premiumGroupRole === require(1921) /* create */.PremiumSubscriptionGroupRole.PRIMARY;
   }
   return result;
 };
@@ -635,7 +635,7 @@ Object.defineProperty(prototype, "avatarDecoration", {
 Object.defineProperty(prototype, "avatarDecoration", {
   get: undefined,
   set: function avatarDecoration(avatar_decoration_data) {
-    this.avatarDecorationData = require(1852) /* parseAvatarDecorationData */.parseAvatarDecorationData(avatar_decoration_data);
+    this.avatarDecorationData = require(1880) /* parseAvatarDecorationData */.parseAvatarDecorationData(avatar_decoration_data);
   }
 });
 Object.defineProperty(prototype, "nameplate", {
@@ -645,7 +645,7 @@ Object.defineProperty(prototype, "nameplate", {
     if (collectibles != null) {
       nameplate = collectibles.nameplate;
     }
-    return require(1898) /* getNameplateData */.getNameplateData(nameplate);
+    return require(1927) /* getNameplateData */.getNameplateData(nameplate);
   },
   set: undefined
 });
@@ -657,7 +657,7 @@ Object.defineProperty(prototype, "premiumGroupRole", {
       prop = premiumState.premiumSubscriptionGroupRole;
     }
     if (prop == null) {
-      prop = require(1892) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED;
+      prop = require(1921) /* create */.PremiumSubscriptionGroupRole.UNSPECIFIED;
     }
     return prop;
   },

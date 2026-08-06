@@ -1,0 +1,34 @@
+// Module ID: 1562
+// Function ID: 1563
+// Name: useOnRouteFocus
+// Dependencies: [19, 1510]
+// Exports: useOnRouteFocus
+
+// Module 1562 (useOnRouteFocus)
+import noop from "noop";
+
+const require = arg1;
+
+export const useOnRouteFocus = function useOnRouteFocus(router) {
+  router = router.router;
+  const getState = router.getState;
+  const key = router.key;
+  const setState = router.setState;
+  let onRouteFocus;
+  onRouteFocus = key.useContext(router(getState[1]).NavigationBuilderContext).onRouteFocus;
+  const items = [getState, onRouteFocus, router, setState, key];
+  return key.useCallback((arg0) => {
+    const tmp = getState();
+    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
+    if (stateForRouteFocus !== tmp) {
+      setState(stateForRouteFocus);
+    }
+    let tmp6 = undefined !== onRouteFocus;
+    if (tmp6) {
+      tmp6 = undefined !== key;
+    }
+    if (tmp6) {
+      onRouteFocus(key);
+    }
+  }, items);
+};

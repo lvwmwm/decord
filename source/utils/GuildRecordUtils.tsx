@@ -1,7 +1,7 @@
 // Module ID: 1411
 // Function ID: 1412
 // Name: fromGuildPropertiesWithAdditionalFields
-// Dependencies: [1412, 1415, 676, 1414, 38, 1861, 2]
+// Dependencies: [1412, 1415, 676, 1414, 1889, 38, 1890, 2]
 // Exports: attachSerializedData, constructFromPartialGuildRecord, dangerouslyConstructGuildRecordFromUntypedObject, fromBackgroundSync, fromClientDiscoverableGuild, fromDirectoryGuild, fromGuild, fromGuildBasic, fromGuildDirectoryEntry, fromGuildProfile, fromInviteGuild, fromSerializedGuildRecord, fromServer, fromStoreListingGuild, fromVerificationGateGuild, isGuildRecord, toGuildProperties
 
 // Module 1411 (fromGuildPropertiesWithAdditionalFields)
@@ -19,7 +19,7 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
   let application_id;
   let discovery_splash;
   let mfa_level;
-  let obj = { id: properties.id, joinedAt: joinedAt.joinedAt, premiumSubscriberCount: joinedAt.premiumSubscriberCount, name: properties.name, description: null, icon: null, splash: null, banner: null, homeHeader: null, features: null, preferredLocale: null, ownerId: null, application_id: null, afkChannelId: null, afkTimeout: null, systemChannelId: null, verificationLevel: null, explicitContentFilter: null, defaultMessageNotifications: null, mfaLevel: null, vanityURLCode: null, premiumTier: null, premiumProgressBarEnabled: null, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: null, discoverySplash: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, maxStageVideoChannelUsers: null, maxVideoChannelUsers: null, maxMembers: null, nsfwLevel: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, verificationRoleId: null, gameApplicationIds: null, officialMessageColor: null };
+  let obj = { id: properties.id, joinedAt: joinedAt.joinedAt, premiumSubscriberCount: joinedAt.premiumSubscriberCount, name: properties.name, description: null, icon: null, splash: null, banner: null, homeHeader: null, features: null, preferredLocale: null, ownerId: null, application_id: null, afkChannelId: null, afkTimeout: null, systemChannelId: null, verificationLevel: null, explicitContentFilter: null, defaultMessageNotifications: null, mfaLevel: null, vanityURLCode: null, premiumTier: null, premiumProgressBarEnabled: null, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: null, discoverySplash: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, maxStageVideoChannelUsers: null, maxVideoChannelUsers: null, maxMembers: null, nsfwLevel: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, verificationRoleId: null, gameApplicationIds: null, officialMessageColor: null, incidentsData: null };
   let description = properties.description;
   if (description == null) {
     description = null;
@@ -180,12 +180,12 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
   } else {
     tmp35 = null;
     if (null != theme) {
-      let fromServerGuildThemeResult = require(1861) /* cloneGuildThemeSettings */.fromServerGuildTheme(theme);
+      let tmp8Result = tmp8(1890);
+      let fromServerGuildThemeResult = tmp8Result.fromServerGuildTheme(theme);
       if (fromServerGuildThemeResult == null) {
         fromServerGuildThemeResult = { enabled: false, themeSettings: null };
       }
       tmp35 = fromServerGuildThemeResult;
-      const tmp8Result = require(1861) /* cloneGuildThemeSettings */;
     }
   }
   obj[37] = tmp35;
@@ -218,6 +218,8 @@ function fromGuildPropertiesWithAdditionalFields(properties, joinedAt, guildThem
     prop4 = null;
   }
   obj[42] = prop4;
+  tmp8Result = tmp8(1889);
+  obj[43] = tmp8Result.fromServerGuildIncidentsData(properties.incidents_data);
   return closure_6(closure_8, guildTheme, obj);
 }
 ({ constructInPlace: c3, merge: c4, objectIsPlainRecordOfType: c5, tryReuseExistingInPlacePlainRecord: closure_6 } = isValueEqual);
@@ -500,7 +502,7 @@ export const fromGuildBasic = function fromGuildBasic(id) {
 };
 export const dangerouslyConstructGuildRecordFromUntypedObject = function dangerouslyConstructGuildRecordFromUntypedObject(c0) {
   let latestOnboardingQuestionId;
-  const obj = { id: c0.id, name: tmp, description: tmp2, ownerId: tmp3, icon: tmp4, splash: tmp5, banner: tmp6, homeHeader: tmp7, features: null, preferredLocale: null, afkChannelId: null, afkTimeout: null, systemChannelId: null, verificationLevel: null, joinedAt: null, defaultMessageNotifications: null, mfaLevel: null, application_id: null, explicitContentFilter: null, vanityURLCode: null, premiumTier: null, premiumSubscriberCount: null, premiumProgressBarEnabled: null, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: null, discoverySplash: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, maxStageVideoChannelUsers: null, maxVideoChannelUsers: null, maxMembers: null, nsfwLevel: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, gameApplicationIds: null, officialMessageColor: null, verificationRoleId: null };
+  const obj = { id: c0.id, name: tmp, description: tmp2, ownerId: tmp3, icon: tmp4, splash: tmp5, banner: tmp6, homeHeader: tmp7, features: null, preferredLocale: null, afkChannelId: null, afkTimeout: null, systemChannelId: null, verificationLevel: null, joinedAt: null, defaultMessageNotifications: null, mfaLevel: null, application_id: null, explicitContentFilter: null, vanityURLCode: null, premiumTier: null, premiumSubscriberCount: null, premiumProgressBarEnabled: null, premiumProgressBarEnabledUserUpdatedAt: null, systemChannelFlags: null, discoverySplash: null, rulesChannelId: null, safetyAlertsChannelId: null, publicUpdatesChannelId: null, maxStageVideoChannelUsers: null, maxVideoChannelUsers: null, maxMembers: null, nsfwLevel: null, ownerConfiguredContentLevel: null, hubType: null, latestOnboardingQuestionId: null, profile: null, guildTheme: null, premiumFeatures: null, moderatorReporting: null, gameApplicationIds: null, officialMessageColor: null, verificationRoleId: null, incidentsData: null };
   obj[8] = require(1414) /* areSetsEqual */.toSetInplace(c0.features);
   let preferredLocale = c0.preferredLocale;
   if (!preferredLocale) {
@@ -638,6 +640,11 @@ export const dangerouslyConstructGuildRecordFromUntypedObject = function dangero
     verificationRoleId = null;
   }
   obj[42] = verificationRoleId;
+  let incidentsData = c0.incidentsData;
+  if (incidentsData == null) {
+    incidentsData = null;
+  }
+  obj[43] = incidentsData;
   return callback(closure_8, obj);
 };
 export const toGuildProperties = function toGuildProperties(id) {
@@ -674,9 +681,9 @@ export const toGuildProperties = function toGuildProperties(id) {
     const guildTheme = id.guildTheme;
     obj = { enabled: null };
     obj[0] = guildTheme.enabled;
-    const merged = Object.assign(require(1861) /* cloneGuildThemeSettings */.toServerGuildThemeSettings(guildTheme.themeSettings));
+    const merged = Object.assign(require(1890) /* cloneGuildThemeSettings */.toServerGuildThemeSettings(guildTheme.themeSettings));
     tmp4 = obj;
-    const obj4 = require(1861) /* cloneGuildThemeSettings */;
+    const obj4 = require(1890) /* cloneGuildThemeSettings */;
   }
   obj[37] = tmp4;
   let tmp9 = null;
@@ -686,12 +693,15 @@ export const toGuildProperties = function toGuildProperties(id) {
     const obj1 = { moderator_reporting_enabled: null, moderator_report_channel_id: null };
   }
   obj[38] = tmp9;
-  ({ officialMessageColor: obj[39], gameApplicationIds: obj[41], verificationRoleId: obj[42] } = id);
+  obj[39] = id.officialMessageColor;
+  obj[40] = require(1889) /* fromServerGuildIncidentsData */.toServerGuildIncidentsData(id.incidentsData);
+  ({ gameApplicationIds: obj[41], verificationRoleId: obj[42] } = id);
   return obj;
 };
 export const fromSerializedGuildRecord = function fromSerializedGuildRecord(item10009) {
   const obj = {};
-  const merged = Object.assign(item10009);
+  const merged = Object.assign(closure_7);
+  const merged1 = Object.assign(item10009);
   obj.features = require(1414) /* areSetsEqual */.toSetInplace(item10009.features);
   let date = null;
   if (null != item10009.joinedAt) {

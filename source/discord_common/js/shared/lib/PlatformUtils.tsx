@@ -1,9 +1,9 @@
-// Module ID: 4491
-// Function ID: 4492
+// Module ID: 4521
+// Function ID: 4522
 // Name: isTablet
 // Dependencies: [669, 2]
 
-// Module 4491 (isTablet)
+// Module 4521 (isTablet)
 import { product as str } from "format";
 import importDefaultResult1 from "format";
 import importDefaultResult2 from "format";

@@ -1,10 +1,10 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 12917
+// Function ID: 12918
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 1372, 3892, 1874, 12874, 12877, 676, 21, 4255, 712, 589, 1236, 5631, 10242, 4251, 5634, 5300, 1297, 11108, 10738, 4665, 4223, 5081, 698, 2]
+// Dependencies: [19, 17, 1372, 3921, 1903, 12911, 12914, 676, 21, 4285, 712, 589, 1236, 5685, 10273, 4281, 5688, 5354, 1297, 11142, 10793, 4695, 4253, 5111, 698, 2]
 // Exports: default
 
-// Module 12880 (BlockedUserInVoiceChannelActionSheet)
+// Module 12917 (BlockedUserInVoiceChannelActionSheet)
 import "UserIcon";
 import get_ActivityIndicator from "TableRowInner";
 import ensureGuildLoaded from "ensureGuildLoaded";

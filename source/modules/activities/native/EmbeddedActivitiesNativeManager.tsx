@@ -1,15 +1,16 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10518
+// Function ID: 10519
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1372, 4326, 1371, 4280, 676, 7703, 500, 10489, 10490, 1208, 10492, 10511, 4594, 1236, 10496, 3873, 698, 709, 10526, 10485, 3956, 9764, 1231, 1351, 514, 2]
+// Dependencies: [5, 17, 1372, 4356, 1371, 4310, 676, 4188, 7733, 500, 10519, 10520, 1208, 10521, 10532, 4624, 1236, 10525, 3902, 698, 709, 10897, 10550, 3985, 9795, 1231, 1351, 514, 2]
 
-// Module 10510 (postMessageToWebView)
+// Module 10518 (postMessageToWebView)
 import items3 from "items3";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import participantFromServer from "participantFromServer";
 import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3";
 import ME from "ME";
+import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import WebView from "WebView";
 import set from "set";
 import "getShelfItemTrackingProperties";
@@ -38,11 +39,11 @@ function _postMessageToWebView() {
     return (function*(arg0) {
       const table = tmp3;
       let c4 = 1;
-      yield outer1_10.injectJavaScript(outer1_1(outer1_2[10])(closure_0));
+      yield outer1_11.injectJavaScript(outer1_1(outer1_2[11])(closure_0));
       if (1 === tmp7) {
         c4 = 0;
         closure_0 = items3;
-        const obj1 = callback(table[11]);
+        const obj1 = callback(table[12]);
         obj1.captureException(closure_0);
         let c6 = 3;
       } else if (arg0 === 1) {
@@ -68,7 +69,7 @@ function _postMessageToWebView() {
 const webViewProxy = WebView.getWebViewProxy("EMBEDDED_ACTIVITY_WEB_VIEW_KEY");
 let nativeEventEmitter = null;
 if (set.isAndroid()) {
-  nativeEventEmitter = new require("getEmbeddedActivityLocationChannelId").NativeEventEmitter(require("enforcing"));
+  nativeEventEmitter = new require("NativeModules").NativeEventEmitter(require("enforcing"));
 }
 class EmbeddedActivitiesNativeManager extends tmp6 {
   constructor() {
@@ -94,9 +95,9 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
     if (lifecycleSubscription != null) {
       removeResult = lifecycleSubscription.remove();
     }
-    obj = c11;
+    obj = c12;
     addListenerResult = undefined;
-    if (c11 != null) {
+    if (c12 != null) {
       str = "onHostDestroy";
       addListenerResult = obj.addListener("onHostDestroy", () => {
         let obj = outer1_6;
@@ -139,15 +140,16 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
           tmp14 = null != iframeId;
         }
         if (tmp14) {
-          let obj = outer1_1(outer1_2[13]);
-          obj = { origin: null, iframeId: null };
-          obj[0] = url;
-          obj[1] = iframeId;
-          obj.handleMessage(parsed, obj, outer1_12);
+          let obj = outer1_1(outer1_2[14]);
+          obj = { type: null, origin: null, iframeId: null };
+          obj[0] = outer1_10.POST_MESSAGE;
+          obj[1] = url;
+          obj[2] = iframeId;
+          obj.handleMessage(parsed, obj, outer1_13);
         }
-      } catch (tmp21) {
+      } catch (tmp22) {
         const _SyntaxError = SyntaxError;
-        if (tmp21 instanceof SyntaxError) {
+        if (tmp22 instanceof SyntaxError) {
           if (tmp2.data === outer1_7) {
             const connectedActivityLocation1 = outer1_6.getConnectedActivityLocation();
             if (null != connectedActivityLocation1) {
@@ -157,26 +159,26 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
                 applicationId = selfEmbeddedActivityForLocation1.applicationId;
               }
             }
-            let tmp28 = null != connectedActivityLocation1;
-            if (tmp28) {
-              tmp28 = null != tmp27;
+            let tmp29 = null != connectedActivityLocation1;
+            if (tmp29) {
+              tmp29 = null != tmp28;
             }
-            if (tmp28) {
+            if (tmp29) {
               obj = { location: null, applicationId: null, showFeedback: false };
               obj[0] = connectedActivityLocation1;
-              obj[1] = tmp27;
+              obj[1] = tmp28;
               self.leaveActivity(obj);
               const obj1 = { body: null, confirmText: null };
-              const intl = self(outer1_2[15]).intl;
-              obj1[0] = intl.string(self(outer1_2[15]).t.tYBBWz);
-              const intl2 = self(outer1_2[15]).intl;
-              obj1[1] = intl2.string(self(outer1_2[15]).t.BddRzS);
-              outer1_1(outer1_2[14]).show(obj1);
-              const obj4 = outer1_1(outer1_2[14]);
+              const intl = self(outer1_2[16]).intl;
+              obj1[0] = intl.string(self(outer1_2[16]).t.tYBBWz);
+              const intl2 = self(outer1_2[16]).intl;
+              obj1[1] = intl2.string(self(outer1_2[16]).t.BddRzS);
+              outer1_1(outer1_2[15]).show(obj1);
+              const obj4 = outer1_1(outer1_2[15]);
             }
           }
         } else {
-          throw tmp21;
+          throw tmp22;
         }
       }
     });
@@ -192,7 +194,7 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
       if (null != connectedActivityLocation) {
         selfEmbeddedActivityForLocation = obj.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
       }
-      const embeddedActivityLocationChannelId = self(table[17]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+      const embeddedActivityLocationChannelId = self(table[18]).getEmbeddedActivityLocationChannelId(connectedActivityLocation);
       basicChannel = basicChannel.getBasicChannel(embeddedActivityLocationChannelId);
       let compositeInstanceId;
       if (selfEmbeddedActivityForLocation != null) {
@@ -202,7 +204,7 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
       if (selfEmbeddedActivityForLocation != null) {
         applicationId = selfEmbeddedActivityForLocation.applicationId;
       }
-      const obj2 = self(table[17]);
+      const obj2 = self(table[18]);
       const tmp9 = callback;
       obj = { channel_id: embeddedActivityLocationChannelId, application_id: applicationId, activity_session_id: compositeInstanceId, thermal_state: rawThermalState.rawThermalState, guild_id: null, media_session_id: null };
       let guild_id;
@@ -211,20 +213,20 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
       }
       obj[4] = guild_id;
       obj[5] = mediaSessionId.getMediaSessionId();
-      callback(table[18]).track(constants.ACTIVITY_DEVICE_THERMAL_STATE_CHANGED, obj);
-      const obj3 = callback(table[18]);
-      tmp9(table[19]).dispatch({ type: "THERMAL_STATE_CHANGE", applicationId });
-      let tmp3Result = tmp3(tmp4[20]);
+      callback(table[19]).track(constants.ACTIVITY_DEVICE_THERMAL_STATE_CHANGED, obj);
+      const obj3 = callback(table[19]);
+      tmp9(table[20]).dispatch({ type: "THERMAL_STATE_CHANGE", applicationId });
+      let tmp3Result = tmp3(tmp4[21]);
       let tmp14 = null != compositeInstanceId;
       const thermalState = tmp3Result.getThermalState();
       if (tmp14) {
         tmp14 = null != applicationId;
       }
       if (tmp14) {
-        tmp14 = thermalState >= tmp3(tmp4[20]).ThermalStates.SERIOUS;
+        tmp14 = thermalState >= tmp3(tmp4[21]).ThermalStates.SERIOUS;
       }
       if (tmp14) {
-        tmp3Result = tmp3(tmp4[21]);
+        tmp3Result = tmp3(tmp4[22]);
         const respondToSeriousThermalState = tmp3Result.requestRespondToSeriousThermalState();
       }
     });
@@ -253,7 +255,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   let code;
   let message;
   ({ code, message } = reason);
-  let obj = importDefault(4594);
+  let obj = importDefault(4624);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.hbiAO6, { code });
@@ -261,7 +263,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   obj.show(obj);
 };
 prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
-  let obj = importDefault(4594);
+  let obj = importDefault(4624);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.PtobXW);
@@ -269,11 +271,11 @@ prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
   obj.show(obj);
 };
 prototype["showDevShelfOverrideEnabled"] = function showDevShelfOverrideEnabled() {
-  let obj = importDefault(3956);
+  let obj = importDefault(3985);
   obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: null, icon: null, iconColor: "status-positive" };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.JfA7IK);
-  obj[2] = importDefault(9764);
+  obj[2] = importDefault(9795);
   obj.open(obj);
 };
 prototype["releaseWebView"] = function releaseWebView() {
@@ -283,7 +285,7 @@ prototype["releaseWebView"] = function releaseWebView() {
     const obj = { id: null };
     obj[0] = releaseIframeIdResult;
     ComponentDispatch.dispatch(constants.IFRAME_UNMOUNT, obj);
-    closure_10.releaseWebView();
+    closure_11.releaseWebView();
   }
   return releaseIframeIdResult;
 };
@@ -312,7 +314,7 @@ prototype["hidePIPEmbed"] = function hidePIPEmbed(arg0) {
   }
 };
 prototype["clearEmbeddedActivityState"] = function clearEmbeddedActivityState(_location, applicationId, showFeedback) {
-  let obj = require(10485) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
+  let obj = require(10550) /* _runPrimaryAppCommandOrJoinEmbeddedActivity */;
   obj = { location: _location, applicationId, showFeedback };
   obj.stopEmbeddedActivity(obj);
   obj = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null };

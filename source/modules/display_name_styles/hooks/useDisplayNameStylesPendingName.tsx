@@ -1,10 +1,10 @@
-// Module ID: 14445
-// Function ID: 14446
+// Module ID: 14483
+// Function ID: 14484
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8044, 1942, 4094, 589, 2]
+// Dependencies: [8185, 1971, 4123, 589, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14445 (useDisplayNameStylesPendingName)
+// Module 14483 (useDisplayNameStylesPendingName)
 import handleFormOpen from "handleFormOpen";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 
@@ -14,8 +14,8 @@ const result = require("nameFromUser").fileFinishedImporting("modules/display_na
 export const useDisplayNameStylesPendingName = function useDisplayNameStylesPendingName(stateFromStores, guildId) {
   const _require = stateFromStores;
   const importDefault = guildId;
-  const name = importDefault(4094).useName(stateFromStores);
-  const obj = importDefault(4094);
+  const name = importDefault(4123).useName(stateFromStores);
+  const obj = importDefault(4123);
   const items = [handleFormOpen, trackCommunicationDisabled];
   const items1 = [guildId, stateFromStores];
   let str = _require(589).useStateFromStores(items, () => {

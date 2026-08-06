@@ -1,10 +1,10 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 15798
+// Function ID: 15799
 // Name: canCurrentUserManageMessageFilters
-// Dependencies: [1862, 3883, 676, 589, 2]
+// Dependencies: [1891, 3912, 676, 589, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
 
-// Module 15758 (canCurrentUserManageMessageFilters)
+// Module 15798 (canCurrentUserManageMessageFilters)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";

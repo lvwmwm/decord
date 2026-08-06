@@ -1,10 +1,10 @@
-// Module ID: 4318
-// Function ID: 4319
+// Module ID: 4348
+// Function ID: 4349
 // Name: isStreamKey
-// Dependencies: [32, 4319, 2]
+// Dependencies: [32, 4349, 2]
 // Exports: decodeStreamKey, encodeStreamKey, isStreamKey
 
-// Module 4318 (isStreamKey)
+// Module 4348 (isStreamKey)
 import _slicedToArray from "_slicedToArray";
 import { StreamTypes } from "StreamIssueReportReasons";
 

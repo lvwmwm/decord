@@ -1,12 +1,12 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16771
+// Function ID: 16772
 // Name: MessagePreview
-// Dependencies: [32, 19, 17, 4247, 1862, 8916, 5262, 4248, 505, 21, 4255, 712, 1236, 14378, 10091, 14380, 4255, 1480, 589, 8915, 5223, 5902, 4223, 15269, 1959, 8850, 4116, 5300, 13784, 688, 4251, 9035, 3925, 5781, 689, 1297, 14393, 2]
+// Dependencies: [32, 19, 17, 4277, 1891, 8945, 5316, 4278, 505, 21, 4285, 712, 1236, 14415, 10122, 14417, 4285, 1480, 589, 8944, 5253, 5929, 4253, 15307, 1988, 8879, 4145, 5354, 13821, 688, 4281, 9064, 3954, 5808, 689, 1297, 14430, 2]
 // Exports: default
 
-// Module 16731 (MessagePreview)
+// Module 16771 (MessagePreview)
 import resetCache from "resetCache";
-import module_8915 from "module_8915";
+import module_8944 from "module_8944";
 import get_ActivityIndicator from "useNavigation";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -42,7 +42,7 @@ function MessagePreview(theme) {
   if (maybeApplyNoTextColorForLightCustomTheme.desaturateUserColors) {
     num = maybeApplyNoTextColorForLightCustomTheme.saturation;
   }
-  let obj = require(5781) /* useCanManageGuildOfficialMessages */;
+  let obj = require(5808) /* useCanManageGuildOfficialMessages */;
   const accessibleGuildOfficialTextColor = obj.getAccessibleGuildOfficialTextColor(selectedColor, semanticColor, num);
   let obj2 = tmp3(689)(selectedColor);
   const hexResult = accessibleGuildOfficialTextColor.hex();
@@ -53,27 +53,27 @@ function MessagePreview(theme) {
   obj = { style: items1, children: null };
   items1 = [tmp.chatContainerInner, { backgroundColor: obj2.alpha(closure_10).hex() }];
   const obj1 = { source: null };
-  obj1[0] = importDefault(14393);
+  obj1[0] = importDefault(14430);
   const items2 = [callback(require(1297) /* Button */.Avatar, obj1), ];
   obj2 = { style: tmp.chatContent, children: null };
   const obj3 = { style: tmp.chatHeader, children: null };
   const obj4 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj4[4] = intl.string(require(1236) /* getSystemLocale */.t.cqpybK);
-  const items3 = [callback(require(4251) /* Text */.Text, obj4), ];
+  const items3 = [callback(require(4281) /* Text */.Text, obj4), ];
   const items4 = [tmp.chatTimestamp, animatedStyles.textMuted];
-  items3[1] = callback(require(4251) /* Text */.Text, { animated: true, variant: "text-xs/medium", style: items4, children: memo });
+  items3[1] = callback(require(4281) /* Text */.Text, { animated: true, variant: "text-xs/medium", style: items4, children: memo });
   obj3[1] = items3;
   const items5 = [callback2(closure_5, obj3), ];
   const obj5 = { animated: true, variant: "text-md/normal", style: { color: hexResult }, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj5[3] = intl2.string(require(1236) /* getSystemLocale */.t.Mi9Kbe);
-  items5[1] = callback(require(4251) /* Text */.Text, obj5);
+  items5[1] = callback(require(4281) /* Text */.Text, obj5);
   obj2[1] = items5;
   items2[1] = callback2(closure_5, obj2);
   obj[1] = items2;
   obj[2] = callback2(closure_5, obj);
-  return callback(importDefault(4116).View, obj);
+  return callback(importDefault(4145).View, obj);
 }
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: c9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: c10 } = MESSAGE_GROUP_SPACING);
@@ -162,7 +162,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
   const effect1 = officialMessageColor.useEffect(() => {
     function handleSaveChanges() {
       let obj = outer1_1(outer1_2[19]);
-      obj = { officialMessageColor: module_8915 };
+      obj = { officialMessageColor: module_8944 };
       obj.saveGuild(handleSaveChanges, obj);
     }
     let fn;

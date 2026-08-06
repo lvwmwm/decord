@@ -1,10 +1,10 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8853
+// Function ID: 8854
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4255, 5220, 1581, 2]
+// Dependencies: [19, 17, 21, 4285, 5250, 1609, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 8824 (MediaModalOverlayHeaderWrapper)
+// Module 8853 (MediaModalOverlayHeaderWrapper)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 const require = arg1;
 let closure_5 = createCacheKey.createStyles((paddingTop) => {
   let obj = { bar: null };
-  obj = { flexDirection: "row", alignItems: "center", height: require(5220) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 };
+  obj = { flexDirection: "row", alignItems: "center", height: require(5250) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 };
   obj[0] = obj;
   return obj;
 });
@@ -23,7 +23,7 @@ export const MediaModalOverlayHeaderWrapper = function MediaModalOverlayHeaderWr
   let children;
   let style;
   ({ children, style } = arg0);
-  const rect = importDefault(1581)();
+  const rect = importDefault(1609)();
   const obj = { style: null, pointerEvents: "box-none", children: null };
   const items = [callback(rect.top, rect.left, rect.right).bar, style];
   obj[0] = items;

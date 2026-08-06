@@ -1,10 +1,10 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16510
+// Function ID: 16511
 // Name: GuildSettingsOwnerConfiguredContentLevel
-// Dependencies: [19, 3883, 8916, 676, 21, 4255, 712, 7818, 8915, 5634, 1236, 1945, 5635, 3967, 5223, 5902, 7767, 13961, 7766, 4251, 7749, 4663, 5581, 1480, 589, 2]
+// Dependencies: [19, 3912, 8945, 676, 21, 4285, 712, 7959, 8944, 5688, 1236, 1974, 5689, 3996, 5253, 5929, 7908, 13998, 7907, 4281, 7890, 4693, 5635, 1480, 589, 2]
 // Exports: default
 
-// Module 16470 (GuildSettingsOwnerConfiguredContentLevel)
+// Module 16510 (GuildSettingsOwnerConfiguredContentLevel)
 import importAllResult from "Text";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleFormInit from "handleFormInit";
@@ -30,7 +30,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
   if (DEFAULT2 == null) {
     DEFAULT2 = constants3.DEFAULT;
   }
-  let obj = require(7818) /* useUserIsTeen */;
+  let obj = require(7959) /* useUserIsTeen */;
   let tmp7 = DEFAULT === constants3.AGE_RESTRICTED;
   const userIsTeen = obj.useUserIsTeen();
   if (tmp7) {
@@ -43,7 +43,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj[0] = intl.string(tmp3(1236).t.YJlvBM);
     const intl2 = tmp3(1236).intl;
     obj = { helpArticleLink: null };
-    obj[0] = importDefault(1945).getArticleURL(constants2.NSFW_SERVER_AGE_RESTRICTION);
+    obj[0] = importDefault(1974).getArticleURL(constants2.NSFW_SERVER_AGE_RESTRICTION);
     obj[2] = intl2.format(tmp3(1236).t.iyQQ62, obj);
     const obj1 = { label: null, value: null, onValueChange: null, disabled: null };
     const intl3 = tmp3(1236).intl;
@@ -51,9 +51,9 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj1[1] = DEFAULT2 === tmp6.AGE_RESTRICTED;
     obj1[2] = tmp8;
     obj1[3] = tmp7;
-    obj[3] = callback(tmp3(5635).TableSwitchRow, obj1);
-    tmp9 = callback(tmp3(5634).TableRowGroup, obj, "filter-section");
-    const obj4 = importDefault(1945);
+    obj[3] = callback(tmp3(5689).TableSwitchRow, obj1);
+    tmp9 = callback(tmp3(5688).TableRowGroup, obj, "filter-section");
+    const obj4 = importDefault(1974);
   }
   return tmp9;
 }
@@ -124,7 +124,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     return self.handleVerificationLevelChange(verificationLevel);
   };
   const features = guild.features;
-  const verificationLevelOptions = self(13961).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
+  const verificationLevelOptions = self(13998).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
   obj[5] = verificationLevelOptions.map((arg0) => {
     let color;
     let desc;
@@ -153,7 +153,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     obj[3] = tmp5;
     return outer1_10(self(outer1_2[18]).TableRadioRow, obj, "level-" + value);
   });
-  return callback(self(7767).TableRadioGroup, obj, "level-section");
+  return callback(self(7908).TableRadioGroup, obj, "level-section");
 };
 prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter() {
   const self = this;
@@ -163,15 +163,15 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
   obj[1] = intl.string(self(1236).t.bPgfJz);
   const intl2 = self(1236).intl;
   obj = { helpdeskArticle: null };
-  obj[0] = importDefault(1945).getArticleURL(constants2.SAFE_DIRECT_MESSAGING);
+  obj[0] = importDefault(1974).getArticleURL(constants2.SAFE_DIRECT_MESSAGING);
   obj[2] = intl2.format(self(1236).t.BI4ukC, obj);
   obj[3] = guild.explicitContentFilter;
   obj[4] = function onChange(explicitContentFilter) {
     return self.handleExplicitContentFilterChange(explicitContentFilter);
   };
-  const obj3 = importDefault(1945);
+  const obj3 = importDefault(1974);
   const features = guild.features;
-  const contentFilterOptions = self(13961).generateContentFilterOptions(features.has(constants.COMMUNITY));
+  const contentFilterOptions = self(13998).generateContentFilterOptions(features.has(constants.COMMUNITY));
   obj[5] = contentFilterOptions.map((value) => {
     let desc;
     let disabled;
@@ -187,7 +187,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
     obj[3] = tmp2;
     return outer1_10(self(outer1_2[18]).TableRadioRow, obj, "filter-" + value);
   });
-  return callback(self(7767).TableRadioGroup, obj, "filter-section");
+  return callback(self(7908).TableRadioGroup, obj, "filter-section");
 };
 prototype["render"] = function render() {
   let guild;
@@ -209,24 +209,24 @@ prototype["render"] = function render() {
   const obj1 = { children: null };
   items1[2] = canManageGuild;
   obj[2] = items1;
-  obj[1] = closure_11(require(4663) /* Stack */.Stack, obj);
-  const items2 = [closure_10(require(7749) /* Form */.Form, obj), closure_10(require(5581) /* NavScrim */.NavScrim, {})];
+  obj[1] = closure_11(require(4693) /* Stack */.Stack, obj);
+  const items2 = [closure_10(require(7890) /* Form */.Form, obj), closure_10(require(5635) /* NavScrim */.NavScrim, {})];
   obj1[0] = items2;
   return closure_11(closure_12, obj1);
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
   if (this.props.hasChanges) {
-    importDefault(8915).cancelChanges(tmp.props.guild.id);
-    const obj = importDefault(8915);
+    importDefault(8944).cancelChanges(tmp.props.guild.id);
+    const obj = importDefault(8944);
   }
 };
 prototype["handleVerificationLevelChange"] = function handleVerificationLevelChange(verificationLevel) {
-  let obj = importDefault(8915);
+  let obj = importDefault(8944);
   obj = { verificationLevel };
   obj.updateGuild(obj);
 };
 prototype["handleExplicitContentFilterChange"] = function handleExplicitContentFilterChange(explicitContentFilter) {
-  let obj = importDefault(8915);
+  let obj = importDefault(8944);
   obj = { explicitContentFilter };
   obj.updateGuild(obj);
 };

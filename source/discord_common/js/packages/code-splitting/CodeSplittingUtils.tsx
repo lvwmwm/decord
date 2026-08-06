@@ -1,10 +1,10 @@
-// Module ID: 3920
-// Function ID: 3921
+// Module ID: 3949
+// Function ID: 3950
 // Name: loaderMaker
-// Dependencies: [32, 19, 21, 3921, 2]
+// Dependencies: [32, 19, 21, 3950, 2]
 // Exports: LazyLibrary, makeLazy, makeLazyWithPreload
 
-// Module 3920 (loaderMaker)
+// Module 3949 (loaderMaker)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -49,7 +49,7 @@ export const makeLazy = function makeLazy(memo) {
   });
   class Wrapper {
     constructor(arg0) {
-      tmp = f73243;
+      tmp = f73426;
       if (null != renderLoader) {
         tmp2Result = tmp2();
       } else {
@@ -70,7 +70,7 @@ export const makeLazy = function makeLazy(memo) {
       obj1 = { fallback: tmp2Result, children: null };
       obj2 = {};
       merged = Object.assign(memo);
-      obj1[1] = tmp(f73243, obj2);
+      obj1[1] = tmp(f73426, obj2);
       return tmp(name.Suspense, obj1);
     }
   }

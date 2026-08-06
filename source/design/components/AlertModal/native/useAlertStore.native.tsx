@@ -1,10 +1,10 @@
-// Module ID: 4595
-// Function ID: 4596
+// Module ID: 4625
+// Function ID: 4626
 // Name: useAlertStore
-// Dependencies: [32, 644, 705, 4596, 4597, 2]
+// Dependencies: [32, 644, 705, 4626, 4627, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4595 (useAlertStore)
+// Module 4625 (useAlertStore)
 import _slicedToArray from "_slicedToArray";
 import keys from "keys";
 
@@ -39,7 +39,7 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp4) {
-    arr4(4596)();
+    arr4(4626)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -67,7 +67,7 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(4596)();
+      found(4626)();
     }
     const obj = _require(705);
   }
@@ -78,7 +78,7 @@ export const openAlert = function openAlert(DeleteEventAlert, arg1, onCloseCallb
   const dependencyMap = onCloseCallback;
   let _slicedToArray = arg3;
   if (0 === keys.getState().alerts.length) {
-    importDefault(4597)();
+    importDefault(4627)();
   }
   _require(705).batchUpdates(() => {
     outer1_4.setState((alerts) => {

@@ -1,9 +1,9 @@
-// Module ID: 1920
-// Function ID: 1921
+// Module ID: 1949
+// Function ID: 1950
 // Name: prefix
-// Dependencies: [1912, 1914, 2]
+// Dependencies: [1941, 1943, 2]
 
-// Module 1920 (prefix)
+// Module 1949 (prefix)
 let GuildEntityDao;
 class GuildEntityDao {
   constructor(arg0, arg1, arg2) {
@@ -35,7 +35,7 @@ prototype["withoutLogging"] = function withoutLogging() {
   const obj = Object.create(GuildEntityDao.prototype);
   obj.originalPrefix = originalPrefix;
   const items = [originalPrefix];
-  const table = new require(1912) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
+  const table = new require(1941) /* fromDatabaseTransaction */.Table(items, this.table.tableId, this.table.database, false);
   obj.table = table;
   return obj;
 };
@@ -82,7 +82,7 @@ prototype["put"] = function put(arg0, arg1) {
   const dependencyMap = arg1;
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = _require(1914).ConflictOptions.Replace;
+    Replace = _require(1943).ConflictOptions.Replace;
   }
   return this.transaction((put) => put.put(closure_0, closure_1, Replace), "" + this.prefix + " put");
 };
@@ -91,7 +91,7 @@ prototype["putAll"] = function putAll(arg0, arg1) {
   const dependencyMap = arg1;
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = _require(1914).ConflictOptions.Replace;
+    Replace = _require(1943).ConflictOptions.Replace;
   }
   return this.transaction((putAll) => putAll.putAll(closure_0, closure_1, Replace), "" + this.prefix + " putAll");
 };
@@ -159,7 +159,7 @@ class GuildEntityDaoTransaction {
 }
 const prototype2 = GuildEntityDaoTransaction.prototype;
 GuildEntityDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTransaction(prefix, tableId, transaction) {
-  const tableTransaction = new require(1912) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
+  const tableTransaction = new require(1941) /* fromDatabaseTransaction */.TableTransaction(prefix, tableId, transaction);
   if (typeof GuildEntityDaoTransaction !== "function") {
     HermesBuiltin.throwTypeError();
   }
@@ -170,14 +170,14 @@ GuildEntityDaoTransaction["fromDatabaseTransaction"] = function fromDatabaseTran
 prototype2["put"] = function put(arg0, arg1) {
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
   }
   return this.putWithGeneration(arg0, arg1, null, Replace);
 };
 prototype2["putWithGeneration"] = function putWithGeneration(arg0, arg1, arg2) {
   let Replace = arg3;
   if (arg3 === undefined) {
-    Replace = require(1914) /* TableId */.ConflictOptions.Replace;
+    Replace = require(1943) /* TableId */.ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   return transaction.put(GuildEntityDao.cell(arg0, arg1, arg2), Replace);
@@ -186,7 +186,7 @@ prototype2["putAll"] = function putAll(arg0, arr) {
   const _require = arg0;
   let Replace = arg2;
   if (arg2 === undefined) {
-    Replace = _require(1914).ConflictOptions.Replace;
+    Replace = _require(1943).ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   return transaction.putAll(arr.map((arg0) => outer1_2.cell(closure_0, arg0, null)), Replace);

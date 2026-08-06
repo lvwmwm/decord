@@ -1,10 +1,10 @@
-// Module ID: 11874
-// Function ID: 11875
+// Module ID: 11908
+// Function ID: 11909
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 1372, 676, 21, 3956, 1236, 5759, 4223, 8210, 4075, 4216, 712, 11875, 1959, 2]
+// Dependencies: [5, 32, 19, 1372, 676, 21, 3985, 1236, 5786, 4253, 8350, 4104, 4246, 712, 11909, 1988, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 11874 (useJoinRequestButtonActions)
+// Module 11908 (useJoinRequestButtonActions)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

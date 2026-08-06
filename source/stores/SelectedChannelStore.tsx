@@ -1,10 +1,10 @@
-// Module ID: 1931
-// Function ID: 1932
+// Module ID: 1960
+// Function ID: 1961
 // Name: handleConnectionOpen
-// Dependencies: [1376, 1218, 1372, 1932, 1862, 4302, 3883, 4072, 676, 1379, 595, 12, 1351, 506, 589, 709, 2]
+// Dependencies: [1376, 1218, 1372, 1961, 1891, 4332, 3912, 4101, 676, 1379, 595, 12, 1351, 506, 589, 709, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 1931 (handleConnectionOpen)
+// Module 1960 (handleConnectionOpen)
 import createChannelRecord from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

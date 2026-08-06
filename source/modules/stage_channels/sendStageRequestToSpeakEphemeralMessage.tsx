@@ -1,10 +1,10 @@
-// Module ID: 16421
-// Function ID: 16422
+// Module ID: 16461
+// Function ID: 16462
 // Name: sendStageRequestToSpeakEphemeralMessage
 // Dependencies: [676, 709, 11, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 16421 (sendStageRequestToSpeakEphemeralMessage)
+// Module 16461 (sendStageRequestToSpeakEphemeralMessage)
 import ME from "ME";
 
 let c3;

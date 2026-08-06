@@ -1,14 +1,14 @@
-// Module ID: 9451
-// Function ID: 9452
+// Module ID: 9480
+// Function ID: 9481
 // Name: SegmentedControlPage
-// Dependencies: [32, 19, 17, 21, 4116, 9452, 500, 5353, 4661, 4612, 2]
+// Dependencies: [32, 19, 17, 21, 4145, 9481, 500, 5407, 4691, 4642, 2]
 // Exports: SegmentedControlPages
 
-// Module 9451 (SegmentedControlPage)
+// Module 9480 (SegmentedControlPage)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
-import importDefaultResult from "module_4116";
+import importDefaultResult from "module_4145";
 
 const require = arg1;
 function SegmentedControlPage(children) {
@@ -159,7 +159,7 @@ function SegmentedControlPage(children) {
   obj1.children = activePageRangeEnd(tmp2(scrollTargetPageIndex[9]).Freeze, obj2);
   return activePageRangeEnd(pageIndex(scrollTargetPageIndex[4]).View, obj1, index);
 }
-let closure_6 = require("module_4116").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
+let closure_6 = require("module_4145").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
 let closure_7 = { code: "function SegmentedControlPagesNativeTsx1(){const{activeIndex}=this.__closure;return activeIndex.get();}" };
 let closure_8 = { code: "function SegmentedControlPagesNativeTsx2(value){const{runOnJS,updateCurrentActiveIndex}=this.__closure;runOnJS(updateCurrentActiveIndex)(value);}" };
 let closure_9 = { code: "function SegmentedControlPagesNativeTsx3(){const{pageIndex}=this.__closure;return pageIndex.get();}" };

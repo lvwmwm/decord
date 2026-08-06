@@ -1,9 +1,9 @@
-// Module ID: 4363
-// Function ID: 4364
+// Module ID: 4393
+// Function ID: 4394
 // Name: WantsVideoQuality
-// Dependencies: [4315, 4364, 2]
+// Dependencies: [4345, 4394, 2]
 
-// Module 4363 (WantsVideoQuality)
+// Module 4393 (WantsVideoQuality)
 import DesktopSources from "DesktopSources";
 
 let VideoQualityMode;

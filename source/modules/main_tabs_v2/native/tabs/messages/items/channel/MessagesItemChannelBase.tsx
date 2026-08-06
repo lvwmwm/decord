@@ -1,11 +1,11 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15079
+// Function ID: 15080
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4341, 4267, 3892, 1931, 4450, 1874, 676, 21, 4255, 712, 589, 1348, 15042, 8708, 500, 4265, 4263, 9556, 4797, 8927, 9279, 15043, 3933, 8076, 15044, 8084, 15045, 2]
+// Dependencies: [19, 17, 4371, 4297, 3921, 1960, 4480, 1903, 676, 21, 4285, 712, 589, 1348, 15080, 8737, 500, 4295, 4293, 9585, 4827, 8956, 9308, 15081, 3962, 8217, 15082, 8225, 15083, 2]
 
-// Module 15041 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15079 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import importAllResult from "openChannelLongPressActionSheet";
-import { View } from "module_4265";
+import { View } from "module_4295";
 import sortActivity from "sortActivity";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import upsertRelationship from "upsertRelationship";

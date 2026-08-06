@@ -1,10 +1,10 @@
-// Module ID: 14128
-// Function ID: 14129
+// Module ID: 14165
+// Function ID: 14166
 // Name: ItemSeparator
-// Dependencies: [32, 19, 17, 7053, 5113, 676, 1369, 21, 501, 712, 4255, 4116, 1474, 1581, 14129, 10346, 10867, 10868, 589, 14132, 14133, 514, 7081, 7071, 14135, 14136, 10348, 7082, 5118, 10473, 14126, 14137, 14167, 14168, 14169, 11062, 14170, 7638, 4676, 14174, 14175, 3979, 7640, 2]
+// Dependencies: [32, 19, 17, 7080, 5143, 676, 1369, 21, 501, 712, 4285, 4145, 1474, 1609, 14166, 10377, 10899, 10900, 589, 14169, 14170, 514, 7108, 7098, 14172, 14173, 10379, 7109, 5148, 10504, 14163, 14174, 14204, 14205, 14206, 11094, 14207, 7666, 4706, 14211, 14212, 4008, 7668, 2]
 // Exports: default
 
-// Module 14128 (ItemSeparator)
+// Module 14165 (ItemSeparator)
 import BountiesScrollPromptFooter from "BountiesScrollPromptFooter";
 import getRevealProgress from "getRevealProgress";
 import get_ActivityIndicator from "apexExperiment";
@@ -1040,7 +1040,7 @@ export default function BountiesModalContentScroll(arg0) {
   let sourceQuestContent;
   ({ bountyId, sourceQuestContent } = arg0);
   const obj = { theme: null, children: null };
-  obj[0] = require(7640) /* items */.ThemeTypes.DARKER;
+  obj[0] = require(7668) /* items */.ThemeTypes.DARKER;
   obj[1] = callback2(BountiesModalContentScrollInner, { initialBountyId: bountyId, sourceQuestContent });
-  return callback2(require(3979) /* ThemeContextProvider */.ThemeContextProvider, obj);
+  return callback2(require(4008) /* ThemeContextProvider */.ThemeContextProvider, obj);
 };

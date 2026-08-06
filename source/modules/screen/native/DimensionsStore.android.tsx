@@ -1,13 +1,13 @@
 // Module ID: 1475
 // Function ID: 1476
 // Name: getDimensionsStoreStateForEntry
-// Dependencies: [17, 1476, 1846, 1581, 1847, 1594, 705, 644, 1582, 2]
+// Dependencies: [17, 1476, 1874, 1609, 1875, 1622, 705, 644, 1610, 2]
 
 // Module 1475 (getDimensionsStoreStateForEntry)
 import { Dimensions } from "get ActivityIndicator";
 import keys from "keys";
 import importDefaultResult from "subscribeToKeyboardUIStore";
-import importDefaultResult1 from "module_1582";
+import importDefaultResult1 from "module_1610";
 
 function getDimensionsStoreStateForEntry(appEntryKey) {
   let height;
@@ -17,9 +17,9 @@ function getDimensionsStoreStateForEntry(appEntryKey) {
   const size = {};
   let obj = Dimensions;
   const merged = Object.assign(Dimensions.get("window"));
-  let obj1 = require(1846) /* readWindowSizeForAppEntry */;
+  let obj1 = require(1874) /* readWindowSizeForAppEntry */;
   const merged1 = Object.assign(obj1.readWindowSizeForAppEntry(appEntryKey));
-  let obj2 = require(1846) /* readWindowSizeForAppEntry */;
+  let obj2 = require(1874) /* readWindowSizeForAppEntry */;
   let size2 = obj2.readScreenSizeForAppEntry(appEntryKey);
   if (size2 == null) {
     size2 = obj.get("screen");
@@ -36,7 +36,7 @@ function getDimensionsStoreStateForEntry(appEntryKey) {
   }
   let width = size.width;
   ({ width: width2, height } = size2);
-  let tmp2Result = tmp2(1581);
+  let tmp2Result = tmp2(1609);
   const rect = tmp2Result.getSafeAreaInsets(appEntryKey);
   let tmp8 = height;
   let tmp9 = width2;
@@ -46,7 +46,7 @@ function getDimensionsStoreStateForEntry(appEntryKey) {
   }
   const bound = Math.min(width + rect.left + rect.right, tmp9);
   const sum = size.height + rect.top + rect.bottom;
-  tmp2Result = tmp2(1847);
+  tmp2Result = tmp2(1875);
   obj = { appEntryKey };
   const bound1 = Math.min(sum - tmp2Result.getSystemKeyboardHeight(obj), tmp8);
   width = undefined;
@@ -61,7 +61,7 @@ function getDimensionsStoreStateForEntry(appEntryKey) {
   }
   const width3 = size.width;
   ({ width: width4, height: height2 } = size2);
-  const rect2 = require(1581) /* useSafeAreaInsets */.getSafeAreaInsets(appEntryKey);
+  const rect2 = require(1609) /* useSafeAreaInsets */.getSafeAreaInsets(appEntryKey);
   let tmp14 = height2;
   let tmp15 = width4;
   if (height2 === width3) {
@@ -95,7 +95,7 @@ function getDimensionsStoreState(arg0) {
   let tmp = arg0;
   let obj = {};
   let flag = null != arg0;
-  const iter = require(1594) /* APP_ENTRY_KEYS */.APP_ENTRY_KEYS[Symbol.iterator]();
+  const iter = require(1622) /* APP_ENTRY_KEYS */.APP_ENTRY_KEYS[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;
@@ -128,7 +128,7 @@ function getDimensionsStoreState(arg0) {
   return tmp;
 }
 let obj = keys.create(() => getDimensionsStoreState(undefined));
-const subscription = require("module_1582").subscribe(() => {
+const subscription = require("module_1610").subscribe(() => {
   require(705) /* batchUpdates */.batchUpdates(() => state.setState((arg0) => callback(arg0)));
 });
 importDefaultResult(() => {

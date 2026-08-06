@@ -1,10 +1,10 @@
-// Module ID: 12595
-// Function ID: 12596
+// Module ID: 12632
+// Function ID: 12633
 // Name: ReferredFriendAvatar
-// Dependencies: [19, 17, 6809, 676, 21, 4255, 712, 1297, 4251, 12596, 1236, 1945, 589, 5595, 5615, 6810, 698, 4223, 12597, 1959, 12604, 4665, 2]
+// Dependencies: [19, 17, 6836, 676, 21, 4285, 712, 1297, 4281, 12633, 1236, 1974, 589, 5649, 5669, 6837, 698, 4253, 12634, 1988, 12641, 4695, 2]
 // Exports: ReferralProgramPerkCard
 
-// Module 12595 (ReferredFriendAvatar)
+// Module 12632 (ReferredFriendAvatar)
 import asyncRequireImpl from "asyncRequireImpl";
 import { View } from "ACTION_SHEET_HEIGHT_HALF";
 import emitChanges from "emitChanges";
@@ -27,13 +27,13 @@ function ReferredFriendAvatar(user) {
   return callback(View, obj);
 }
 function AvailableReferralSlot(children) {
-  return callback(View, { style: createCacheKey().availableReferralSlot, children: callback(require(4251) /* Text */.Text, { variant: "text-xs/medium", color: "text-strong", children: children.slotIndex }) });
+  return callback(View, { style: createCacheKey().availableReferralSlot, children: callback(require(4281) /* Text */.Text, { variant: "text-xs/medium", color: "text-strong", children: children.slotIndex }) });
 }
 function ProgressIndicator(referralSentUsers) {
   referralSentUsers = referralSentUsers.referralSentUsers;
   const items = [];
   let num = 0;
-  if (0 < require(12596) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT) {
+  if (0 < require(12633) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT) {
     do {
       let tmp2 = num;
       if (null != referralSentUsers[num]) {
@@ -52,7 +52,7 @@ function ProgressIndicator(referralSentUsers) {
       num = num + 1;
       let tmp9 = require;
       let tmp10 = dependencyMap;
-    } while (num < require(12596) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT);
+    } while (num < require(12633) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT);
   }
   obj = { style: createCacheKey().progressIndicatorContainer, children: items };
   return callback(View, obj);
@@ -78,7 +78,7 @@ const result = require("emitChanges").fileFinishedImporting("modules/premium/ref
 
 export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const tmp = createCacheKey();
-  let obj = analyticsLocations(12596);
+  let obj = analyticsLocations(12633);
   let obj1 = analyticsLocations(589);
   const items = [emitChanges];
   const stateFromStores = obj1.useStateFromStores(items, () => store.getRecipientStatus());
@@ -86,8 +86,8 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const items1 = [emitChanges];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => store.getHasEligibleFriends());
   let obj4 = importDefault;
-  analyticsLocations = importDefault(5595)(importDefault(5615).PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
-  let everyResult = stateFromStores.size === analyticsLocations(12596).MAX_REFERRALS_SENT;
+  analyticsLocations = importDefault(5649)(importDefault(5669).PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
+  let everyResult = stateFromStores.size === analyticsLocations(12633).MAX_REFERRALS_SENT;
   if (everyResult) {
     const items2 = [];
     HermesBuiltin.arraySpread(stateFromStores.values(), 0);
@@ -102,18 +102,18 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     outer1_1(outer1_2[17]).openLazy(analyticsLocations(outer1_2[19])(outer1_2[18], outer1_2.paths), "referral-program-share-action-sheet");
   }, items3);
   obj = { nReferralsSent: stateFromStores.size };
-  const items4 = [callback(obj4(12604), obj), callback(ProgressIndicator, { referralSentUsers: obj.useReferralProgramBannerDetails().referralSentUsers }), , ];
+  const items4 = [callback(obj4(12641), obj), callback(ProgressIndicator, { referralSentUsers: obj.useReferralProgramBannerDetails().referralSentUsers }), , ];
   obj1 = { style: tmp.contentContainer, children: null };
   const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.heading, children: null };
   const intl = tmp2(1236).intl;
   obj2[3] = intl.string(analyticsLocations(1236).t.USo4s7);
-  const items5 = [callback(analyticsLocations(4251).Text, obj2), ];
+  const items5 = [callback(analyticsLocations(4281).Text, obj2), ];
   obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.bodyText, children: null };
   if (false !== stateFromStores1) {
-    if (tmp14 !== tmp2(12596).MAX_REFERRALS_SENT) {
+    if (tmp14 !== tmp2(12633).MAX_REFERRALS_SENT) {
       const intl3 = tmp2(1236).intl;
       obj4 = { helpdeskArticle: null };
-      let obj5Result = obj4(1945);
+      let obj5Result = obj4(1974);
       obj4[0] = obj5Result.getArticleURL(constants.REFERRAL_PROGRAM);
       intl3.format(tmp2(1236).t["omMr+V"], obj4);
     }
@@ -122,19 +122,19 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     let t = tmp2(1236).t;
     if (everyResult) {
       t = { helpdeskArticle: null };
-      obj4 = obj4(1945);
+      obj4 = obj4(1974);
       t[0] = obj4.getArticleURL(constants.REFERRAL_PROGRAM);
       let formatResult1 = format(t["1aEjsH"], t);
     } else {
       const obj5 = { helpdeskArticle: null };
-      obj5Result = obj4(1945);
+      obj5Result = obj4(1974);
       obj5[0] = obj5Result.getArticleURL(constants.REFERRAL_PROGRAM);
       formatResult1 = format(t["+u3AOO"], obj5);
     }
   } else {
     const intl2 = tmp2(1236).intl;
     const obj6 = { helpdeskArticle: null };
-    obj6[0] = obj4(1945).getArticleURL(constants.REFERRAL_PROGRAM);
+    obj6[0] = obj4(1974).getArticleURL(constants.REFERRAL_PROGRAM);
     obj3[3] = intl2.format(tmp2(1236).t["zWhX/Q"], obj6);
     items5[1] = tmp12(tmp13, obj3);
     obj1[1] = items5;
@@ -143,14 +143,14 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     obj7[0] = tmp.buttonContainer;
     let tmp22 = false === stateFromStores1;
     if (!tmp22) {
-      tmp22 = stateFromStores.size === tmp2(12596).MAX_REFERRALS_SENT;
+      tmp22 = stateFromStores.size === tmp2(12633).MAX_REFERRALS_SENT;
     }
     const obj8 = { variant: "primary", size: "sm", disabled: null, text: null, onPress: null };
     obj8[2] = tmp22;
     const intl5 = tmp2(1236).intl;
     obj8[3] = intl5.string(tmp2(1236).t.Lm2nFc);
     obj8[4] = callback;
-    obj7[1] = tmp12(tmp2(4665).Button, obj8);
+    obj7[1] = tmp12(tmp2(4695).Button, obj8);
     items4[3] = tmp12(tmp11, obj7);
     obj[1] = items4;
     return tmp10(tmp11, obj);

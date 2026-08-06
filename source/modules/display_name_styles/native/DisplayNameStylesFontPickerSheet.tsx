@@ -1,10 +1,10 @@
-// Module ID: 14452
-// Function ID: 14453
+// Module ID: 14490
+// Function ID: 14491
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1886, 505, 21, 4255, 712, 7297, 14447, 14449, 1888, 1885, 4224, 4223, 5323, 5322, 1236, 2613, 4665, 4663, 13802, 9130, 4251, 4211, 2]
+// Dependencies: [32, 19, 17, 1915, 505, 21, 4285, 712, 7325, 14485, 14487, 1917, 1914, 4254, 4253, 5377, 5376, 1236, 2642, 4695, 4693, 13839, 9159, 4281, 4241, 2]
 // Exports: default
 
-// Module 14452 (DisplayNameStylesFontPickerSheet)
+// Module 14490 (DisplayNameStylesFontPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "getSystemLocale";
@@ -54,17 +54,17 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   let closure_7;
   let tmp = createCacheKey();
   importDefault = tmp;
-  let obj = onSelectFont(7297);
-  let obj1 = onSelectFont(14447);
+  let obj = onSelectFont(7325);
+  let obj1 = onSelectFont(14485);
   const visibleFontOrder = obj1.useVisibleFontOrder();
-  let obj2 = onSelectFont(14449);
+  let obj2 = onSelectFont(14487);
   const displayNameStylesNewFonts = obj2.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   const tmp5 = callback(first.useState(selectedFontId), 2);
   first = tmp5[0];
   closure_5 = tmp5[1];
-  let tmp14Result = first !== onSelectFont(1888).DisplayNameFont.DEFAULT;
-  let obj3 = onSelectFont(1885);
+  let tmp14Result = first !== onSelectFont(1917).DisplayNameFont.DEFAULT;
+  let obj3 = onSelectFont(1914);
   c6 = tmp9;
   closure_7 = first.useCallback((arg0) => {
     callback(arg0);
@@ -83,15 +83,15 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   obj = { style: tmp.header, children: null };
   obj1 = { title: null, trailing: null };
   let intl = onSelectFont(1236).intl;
-  obj1[0] = intl.string(importDefault(2613)["0JCuGm"]);
+  obj1[0] = intl.string(importDefault(2642)["0JCuGm"]);
   obj2 = { style: tmp.headerTrailing, children: null };
   obj3 = { text: null, onPress: null, variant: "primary", size: "sm" };
   let intl2 = onSelectFont(1236).intl;
   obj3[0] = intl2.string(onSelectFont(1236).t.XqMe3N);
   obj3[1] = callback;
-  obj2[1] = callback2(onSelectFont(4665).Button, obj3);
+  obj2[1] = callback2(onSelectFont(4695).Button, obj3);
   obj1[1] = callback2(closure_5, obj2);
-  obj[1] = callback2(onSelectFont(5322).BottomSheetTitleHeader, obj1);
+  obj[1] = callback2(onSelectFont(5376).BottomSheetTitleHeader, obj1);
   obj[1] = callback2(closure_5, obj);
   const obj4 = { style: tmp.container, children: null };
   const obj5 = { style: tmp.contentContainer, children: null };
@@ -157,19 +157,19 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
     obj[4] = outer1_10(closure_5, obj);
     return outer1_9(c6, obj, arg0);
   });
-  let items1 = [callback2(onSelectFont(4663).Stack, obj6), ];
+  let items1 = [callback2(onSelectFont(4693).Stack, obj6), ];
   if (tmp14Result) {
     tmp14Result = hasNonLatinLettersResult;
   }
   if (tmp14Result) {
     const obj7 = { style: null, children: null };
     obj7[0] = tmp.nonLatinDisclaimer;
-    let items2 = [tmp11(tmp2(4211).CircleInformationIcon, { size: "sm" }), ];
+    let items2 = [tmp11(tmp2(4241).CircleInformationIcon, { size: "sm" }), ];
     const obj8 = { variant: "text-xs/normal", color: "text-subtle", style: null, children: null };
     obj8[2] = tmp.disclaimerText;
     let intl3 = tmp2(1236).intl;
-    obj8[3] = intl3.string(importDefault(2613)["+O1xL2"]);
-    items2[1] = tmp11(tmp2(4251).Text, obj8);
+    obj8[3] = intl3.string(importDefault(2642)["+O1xL2"]);
+    items2[1] = tmp11(tmp2(4281).Text, obj8);
     obj7[1] = items2;
     tmp14Result = tmp14(tmp12, obj7);
   }
@@ -177,5 +177,5 @@ export default function DisplayNameStylesFontPickerSheet(displayName) {
   obj5[1] = items1;
   obj4[1] = closure_10(closure_5, obj5);
   obj[2] = callback2(closure_5, obj4);
-  return callback2(onSelectFont(5323).BottomSheet, obj);
+  return callback2(onSelectFont(5377).BottomSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10478
+// Function ID: 10479
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 10446, 676, 21, 4255, 1236, 4780, 8656, 1480, 1945, 10448, 10384, 2]
+// Dependencies: [19, 10477, 676, 21, 4285, 1236, 4810, 8685, 1480, 1974, 10479, 10415, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 10447 (PlayStationLinkLanding)
+// Module 10478 (PlayStationLinkLanding)
 import noop from "noop";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { HelpdeskArticles } from "ME";
@@ -20,9 +20,9 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   let obj = navigation(1480);
   navigation = obj.useNavigation();
   const tmp = callback();
-  const articleURL = importDefault(1945).getArticleURL(HelpdeskArticles.PS_CONNECTION);
+  const articleURL = importDefault(1974).getArticleURL(HelpdeskArticles.PS_CONNECTION);
   let intl = navigation(1236).intl;
-  const obj2 = importDefault(1945);
+  const obj2 = importDefault(1974);
   let items = [navigation];
   const memo = React.useMemo(() => {
     let obj = { label: null, subLabel: null, icon: null };
@@ -30,19 +30,19 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
     obj[0] = intl.string(navigation(1236).t["+eJP7o"]);
     const intl2 = navigation(1236).intl;
     obj[1] = intl2.string(navigation(1236).t["+0VIUh"]);
-    obj[2] = navigation(4780).VoiceNormalIcon;
+    obj[2] = navigation(4810).VoiceNormalIcon;
     const items = [obj, ];
     obj = { label: null, icon: null };
     const intl3 = navigation(1236).intl;
     obj[0] = intl3.string(navigation(1236).t.ZH4QFa);
-    obj[1] = navigation(8656).GameControllerIcon;
+    obj[1] = navigation(8685).GameControllerIcon;
     items[1] = obj;
     return items;
   }, []);
   callback = React.useCallback(() => {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: callback(10448) }), []);
+  const memo1 = React.useMemo(() => ({ uri: callback(10479) }), []);
   obj = { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
   let intl2 = navigation(1236).intl;
   obj[3] = intl2.string(navigation(1236).t.xAWHOy);
@@ -51,5 +51,5 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   obj[5] = intl.format(navigation(1236).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(10384).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+  return jsx(navigation(10415).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

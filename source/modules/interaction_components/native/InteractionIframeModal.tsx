@@ -1,10 +1,10 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16369
+// Function ID: 16370
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 4281, 21, 4255, 712, 16317, 5295, 8789, 16330, 4662, 3956, 1236, 10607, 10613, 4797, 4209, 4251, 9025, 2]
+// Dependencies: [32, 19, 17, 4311, 21, 4285, 712, 16357, 5349, 8818, 16370, 4692, 3985, 1236, 10662, 10669, 4827, 4239, 4281, 9054, 2]
 // Exports: default
 
-// Module 16329 (InteractionIframeModal)
+// Module 16369 (InteractionIframeModal)
 import _slicedToArray from "_slicedToArray";
 import getBotLabel from "getBotLabel";
 import { View } from "XLargeIcon";
@@ -56,7 +56,7 @@ export default function InteractionIframeModal(children) {
   importDefault(callback[11])(callback1);
   let tmp11 = null;
   if (!tmp5[0]) {
-    obj = { onActivityCrash: null, applicationId: null, channelId: null, guildId: null, activityUrl: null, activitySessionId: null, queryParams: null, onLoadError: null, allowPopups: null, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "PX_8", ignoreSilentHardwareSwitch: 511 };
+    obj = { onActivityCrash: null, applicationId: null, channelId: null, guildId: null, activityUrl: null, activitySessionId: null, queryParams: null, onLoadError: null, allowPopups: null, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "PX_8", ignoreSilentHardwareSwitch: "kj\u00F8nnsn\u00F8ytral" };
     obj[0] = function onActivityCrash() {
       callback(true);
       const timerId = setTimeout(() => callback(false), 0);

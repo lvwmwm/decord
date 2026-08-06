@@ -1,9 +1,9 @@
-// Module ID: 3961
-// Function ID: 3962
+// Module ID: 3990
+// Function ID: 3991
 // Name: getNodeText
-// Dependencies: [2, 3962, 3963, 3964, 3965]
+// Dependencies: [2, 3991, 3992, 3993, 3994]
 
-// Module 3961 (getNodeText)
+// Module 3990 (getNodeText)
 const result = require("chainCallbacks").fileFinishedImporting("design/utils/native.tsx");
 
 export const getNodeText = require("getNodeText").getNodeText;

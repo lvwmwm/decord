@@ -1,10 +1,10 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 8742
+// Function ID: 8743
 // Name: map
-// Dependencies: [32, 19, 17, 1854, 2]
+// Dependencies: [32, 19, 17, 1882, 2]
 // Exports: default
 
-// Module 8713 (map)
+// Module 8742 (map)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -23,8 +23,8 @@ export default function useProfileFrameLayerAsset(width) {
   let collectiblesItemAssetUrl;
   let dependencyMap;
   ({ skuId, layer } = width);
-  let obj = collectiblesItemAssetUrl(1854);
-  obj = { skuId, assetFormat: collectiblesItemAssetUrl(1854).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
+  let obj = collectiblesItemAssetUrl(1882);
+  obj = { skuId, assetFormat: collectiblesItemAssetUrl(1882).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
   collectiblesItemAssetUrl = obj.getCollectiblesItemAssetUrl(obj);
   dependencyMap = callback(React.useReducer((arg0) => arg0 + 1, 0), 2)[1];
   const items = [collectiblesItemAssetUrl];

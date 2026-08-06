@@ -1,10 +1,10 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 15093
+// Function ID: 15094
 // Name: useMessagesData
-// Dependencies: [32, 19, 4945, 1218, 3892, 5734, 589, 15056, 3928, 2]
+// Dependencies: [32, 19, 4975, 1218, 3921, 5761, 589, 15094, 3957, 2]
 // Exports: default
 
-// Module 15055 (useMessagesData)
+// Module 15093 (useMessagesData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";

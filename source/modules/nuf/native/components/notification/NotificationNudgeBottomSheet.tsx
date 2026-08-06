@@ -1,10 +1,10 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15533
+// Function ID: 15534
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 11663, 676, 1369, 21, 4255, 712, 698, 4223, 11664, 5323, 5921, 4251, 5102, 4665, 1236, 2]
+// Dependencies: [19, 17, 11697, 676, 1369, 21, 4285, 712, 698, 4253, 11698, 5377, 5948, 4281, 5132, 4695, 1236, 2]
 // Exports: default
 
-// Module 15495 (NotificationNudgeBottomSheet)
+// Module 15533 (NotificationNudgeBottomSheet)
 import noop from "noop";
 import { View } from "set";
 import EventActionType from "EventActionType";

@@ -1,10 +1,10 @@
-// Module ID: 7940
-// Function ID: 7941
+// Module ID: 8081
+// Function ID: 8082
 // Name: createReferralSystemMessage
-// Dependencies: [6809, 1218, 4255, 712, 7941, 7854, 7837, 7598, 7950, 2]
+// Dependencies: [6836, 1218, 4285, 712, 8082, 7995, 7978, 7626, 8091, 2]
 // Exports: createReferralSystemMessage
 
-// Module 7940 (createReferralSystemMessage)
+// Module 8081 (createReferralSystemMessage)
 import emitChanges from "emitChanges";
 import fetchFingerprint from "fetchFingerprint";
 import createCacheKey from "createCacheKey";
@@ -28,31 +28,31 @@ export const createReferralSystemMessage = function createReferralSystemMessage(
       referrer_id = relevantUserTrialOffer.referrer_id;
     }
     if (referrer_id === id) {
-      const obj3 = require(7950) /* createReferralTrialEmbedRedeemable */;
+      const obj3 = require(8091) /* createReferralTrialEmbedRedeemable */;
       const referralTrialEmbedRedeemable = obj3.createReferralTrialEmbedRedeemable(message, theme, id, relevantUserTrialOffer);
       if (null == referralTrialEmbedRedeemable) {
         return null;
       } else {
         let obj = {};
-        const merged = Object.assign(importDefault(7854)(message));
+        const merged = Object.assign(importDefault(7995)(message));
         obj.referralTrialOfferInfo = referralTrialEmbedRedeemable;
         const tmp17 = createCacheKey(theme);
-        obj.iconUrl = tmp8(7837).getAssetUriForEmbed(importDefault(7598));
+        obj.iconUrl = tmp8(7978).getAssetUriForEmbed(importDefault(7626));
         ({ iconTintColor: obj4.iconTintColor, iconDividerColor: obj4.iconDividerColor } = tmp17);
         return obj;
       }
       tmp8 = require;
     } else {
-      const obj6 = require(7941) /* createReferralTrialEmbedRedesign */;
+      const obj6 = require(8082) /* createReferralTrialEmbedRedesign */;
       const referralTrialEmbedRedesign = obj6.createReferralTrialEmbedRedesign(message, theme, id, relevantUserTrialOffer);
       if (null == referralTrialEmbedRedesign) {
         return null;
       } else {
         obj = {};
-        const merged1 = Object.assign(importDefault(7854)(message));
+        const merged1 = Object.assign(importDefault(7995)(message));
         obj.referralTrialOfferInfoRedesign = referralTrialEmbedRedesign;
         const tmp4 = createCacheKey(theme);
-        obj.iconUrl = tmp23(7837).getAssetUriForEmbed(importDefault(7598));
+        obj.iconUrl = tmp23(7978).getAssetUriForEmbed(importDefault(7626));
         ({ iconTintColor: obj.iconTintColor, iconDividerColor: obj.iconDividerColor } = tmp4);
         obj.timestamp = undefined;
         return obj;

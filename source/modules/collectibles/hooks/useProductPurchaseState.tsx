@@ -1,10 +1,10 @@
-// Module ID: 9302
-// Function ID: 9303
+// Module ID: 9331
+// Function ID: 9332
 // Name: getProductPurchaseState
-// Dependencies: [6911, 9303, 1901, 589, 2]
+// Dependencies: [6938, 9332, 1930, 589, 2]
 // Exports: useProductPurchaseState
 
-// Module 9302 (getProductPurchaseState)
+// Module 9331 (getProductPurchaseState)
 import map from "map";
 
 const require = arg1;
@@ -15,12 +15,12 @@ function getProductPurchaseState(outer1_5, skuId) {
   if (items == null) {
     items = [];
   }
-  const tmp3Result = importDefault(9303)(items.map((skuId) => outer1_5.getPurchase(skuId.skuId)));
+  const tmp3Result = importDefault(9332)(items.map((skuId) => outer1_5.getPurchase(skuId.skuId)));
   let type;
   if (skuId != null) {
     type = skuId.type;
   }
-  if (_require(1901).CollectiblesItemType.BUNDLE === type) {
+  if (_require(1930).CollectiblesItemType.BUNDLE === type) {
     if (!tmp) {
       tmp = items.length > 0 && tmp3Result.length === items.length;
       const tmp7 = items.length > 0 && tmp3Result.length === items.length;
@@ -29,7 +29,7 @@ function getProductPurchaseState(outer1_5, skuId) {
     obj[0] = tmp;
     obj[1] = tmp3Result.length > 0 && tmp3Result.length < items.length;
     return obj;
-  } else if (tmp5(1901).CollectiblesItemType.VARIANTS_GROUP === type) {
+  } else if (tmp5(1930).CollectiblesItemType.VARIANTS_GROUP === type) {
     const variants = skuId.variants;
     let everyResult;
     if (variants != null) {
@@ -59,7 +59,7 @@ function getProductPurchaseState(outer1_5, skuId) {
     obj[0] = tmp;
     return obj;
   }
-  const tmp3 = importDefault(9303);
+  const tmp3 = importDefault(9332);
   tmp5 = _require;
 }
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/hooks/useProductPurchaseState.tsx");

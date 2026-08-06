@@ -1,9 +1,9 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16344
+// Function ID: 16345
 // Name: handleInviteData
-// Dependencies: [676, 12547, 1384, 7667, 12548, 5214, 2]
+// Dependencies: [676, 12584, 1384, 7695, 12585, 5244, 2]
 
-// Module 16304 (handleInviteData)
+// Module 16344 (handleInviteData)
 import { GuildFeatures } from "ME";
 import "initialize";
 
@@ -22,15 +22,15 @@ function handleInviteData(invite) {
       }
     }
     if (hasItem) {
-      importDefault(12547).onOpenHubInvite(invite.invite);
-      const obj5 = importDefault(12547);
+      importDefault(12584).onOpenHubInvite(invite.invite);
+      const obj5 = importDefault(12584);
     }
   }
   let new_member = invite.invite.new_member;
   if (new_member) {
-    let hasFlagResult = require(1384) /* hasFlag */.hasFlag(num, require(7667) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = require(1384) /* hasFlag */.hasFlag(num, require(7695) /* set */.GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
-      hasFlagResult = tmp3(1384).hasFlag(num, tmp3(7667).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp3(1384).hasFlag(num, tmp3(7695).GuildInviteFlags.IS_APPLICATION_BYPASS);
       const tmp3Result = tmp3(1384);
     }
     new_member = !hasFlagResult;
@@ -40,12 +40,12 @@ function handleInviteData(invite) {
     new_member = null != guild;
   }
   if (new_member) {
-    new_member = require(12548) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
-    const obj3 = require(12548) /* inviteGuildHasPendingMemberDisabledVerification */;
+    new_member = require(12585) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
+    const obj3 = require(12585) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
   if (new_member) {
-    const result = require(12548) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
-    const obj4 = require(12548) /* inviteGuildHasPendingMemberDisabledVerification */;
+    const result = require(12585) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
+    const obj4 = require(12585) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
 }
 let prototype = function GuildVerificationManager() {

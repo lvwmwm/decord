@@ -1,10 +1,10 @@
-// Module ID: 11511
-// Function ID: 11512
+// Module ID: 11545
+// Function ID: 11546
 // Name: _startAudioRecording
-// Dependencies: [5, 4302, 11251, 11252, 676, 3, 11512, 206, 12, 4351, 698, 4224, 500, 2]
+// Dependencies: [5, 4332, 11285, 11286, 676, 3, 11546, 206, 12, 4381, 698, 4254, 500, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11511 (_startAudioRecording)
+// Module 11545 (_startAudioRecording)
 import timestamp from "timestamp";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
@@ -139,7 +139,7 @@ function _startAudioRecording() {
 }
 function resetAudioRecording() {
   mediaEngine = mediaEngine.getMediaEngine();
-  mediaEngine.removeListener(require(4351) /* BaseConnectionEvent */.MediaEngineEvent.VoiceActivity, closure_21);
+  mediaEngine.removeListener(require(4381) /* BaseConnectionEvent */.MediaEngineEvent.VoiceActivity, closure_21);
   callback3();
 }
 function stopAndGetAudioRecording() {
@@ -153,7 +153,7 @@ function stopAndGetAudioRecording() {
   });
   let arr3 = mapped;
   if (mapped.length > closure_16) {
-    arr3 = importDefault(11512)(mapped, tmp3);
+    arr3 = importDefault(11546)(mapped, tmp3);
   }
   const mapped1 = arr3.map((arg0) => Math.min(arg0, closure_13));
   const uint8Array = new Uint8Array(mapped1);
@@ -353,7 +353,7 @@ let result = require("VoiceMessageRecordingStatus").fileFinishedImporting("modul
 export const generateBase64EncodedWaveform = function generateBase64EncodedWaveform(arg0) {
   let arr = arg0;
   if (arg0.length > closure_16) {
-    arr = importDefault(11512)(arg0, tmp);
+    arr = importDefault(11546)(arg0, tmp);
   }
   const mapped = arr.map((arg0) => Math.min(arg0, closure_13));
   const uint8Array = new Uint8Array(mapped);
@@ -395,8 +395,8 @@ export const emitVoiceMessageRecorded = function emitVoiceMessageRecorded(CANCEL
   }
 };
 export const triggerHaptic = function triggerHaptic() {
-  const obj = require(4224) /* HapticFeedbackTypes */;
+  const obj = require(4254) /* HapticFeedbackTypes */;
   const obj2 = require(500) /* set */;
-  const HapticFeedbackTypes = require(4224) /* HapticFeedbackTypes */.HapticFeedbackTypes;
+  const HapticFeedbackTypes = require(4254) /* HapticFeedbackTypes */.HapticFeedbackTypes;
   const result = obj.triggerHapticFeedback(require(500) /* set */.isAndroid() ? HapticFeedbackTypes.IMPACT_LIGHT : HapticFeedbackTypes.IMPACT_MEDIUM);
 };

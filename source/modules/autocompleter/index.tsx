@@ -1,9 +1,9 @@
-// Module ID: 7202
-// Function ID: 7203
+// Module ID: 7229
+// Function ID: 7230
 // Name: sortByMatchScore
-// Dependencies: [2, 7203, 5180, 7211, 7212, 5183]
+// Dependencies: [2, 7230, 5210, 7238, 7239, 5213]
 
-// Module 7202 (sortByMatchScore)
+// Module 7229 (sortByMatchScore)
 import HeaderRecord from "HeaderRecord";
 
 const result = require("HeaderRecord").fileFinishedImporting("modules/autocompleter/index.tsx");
@@ -15,5 +15,5 @@ for (const key10022 in _module1) {
 
 export { default } from "getAutocompleterBoosterMap";
 export const createHeaderResult = require("HeaderRecord").createHeaderResult;
-export const findNextSelectedResult = require("module_7212");
+export const findNextSelectedResult = require("module_7239");
 export const sortByMatchScore = require("sortByMatchScore");

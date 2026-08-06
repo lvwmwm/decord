@@ -1,10 +1,10 @@
-// Module ID: 10767
-// Function ID: 10768
+// Module ID: 10822
+// Function ID: 10823
 // Name: useDeafStates
-// Dependencies: [1218, 4302, 4271, 589, 2]
+// Dependencies: [1218, 4332, 4301, 589, 2]
 // Exports: default, getDeafStates
 
-// Module 10767 (useDeafStates)
+// Module 10822 (useDeafStates)
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import updateVoiceState from "updateVoiceState";

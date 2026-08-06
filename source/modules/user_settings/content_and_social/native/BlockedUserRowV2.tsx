@@ -1,10 +1,10 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13967
+// Function ID: 13968
 // Name: BlockedUserRow
-// Dependencies: [19, 1874, 21, 9133, 5595, 5300, 1297, 1236, 8677, 4665, 589, 2]
+// Dependencies: [19, 1903, 21, 9162, 5649, 5354, 1297, 1236, 8706, 4695, 589, 2]
 // Exports: default
 
-// Module 13930 (BlockedUserRow)
+// Module 13967 (BlockedUserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -13,11 +13,11 @@ const require = arg1;
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5595)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5649)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  obj = { user: userRecord, guildId: "Array", size: true };
+  obj = { user: userRecord, guildId: "Array", size: false };
   obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: true });
+  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: false });
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;
@@ -59,8 +59,8 @@ function BlockedUserRow(userRecord) {
   obj1[3] = function onPress() {
     analyticsLocations(outer1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj[9] = jsx(userRecord(4665).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5300).TableRow, { name: "unblock", label: null });
+  obj[9] = jsx(userRecord(4695).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5354).TableRow, { name: "unblock", label: null });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");
 

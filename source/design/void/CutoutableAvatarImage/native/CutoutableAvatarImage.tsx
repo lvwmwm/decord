@@ -1,9 +1,9 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12221
+// Function ID: 12222
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [19, 17, 12188, 21, 3, 1416, 12189, 12190, 8075, 5221, 4116, 4664, 514, 8409, 643, 2]
+// Dependencies: [19, 17, 12222, 21, 3, 1416, 12223, 12224, 8216, 5251, 4145, 4694, 514, 7758, 643, 2]
 
-// Module 12187 (StaticNativeCutoutAvatarImage)
+// Module 12221 (StaticNativeCutoutAvatarImage)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_SPRING_CONFIG } from "n";
@@ -26,10 +26,10 @@ function StaticNativeCutoutAvatarImage(cutout) {
     return items;
   }, items);
   const obj = { style, cutouts: memo, children: null };
-  const tmp2 = importDefault(12190)(source);
+  const tmp2 = importDefault(12224)(source);
   const items1 = [obj.image, imageStyle];
-  obj[2] = callback(importDefault(5221), { style: items1, source: tmp2, usesSmallCache: true });
-  return callback(importDefault(8075), obj);
+  obj[2] = callback(importDefault(5251), { style: items1, source: tmp2, usesSmallCache: true });
+  return callback(importDefault(8216), obj);
 }
 function AnimatedNativeCutoutAvatarImage(cutout) {
   let imageStyle;
@@ -37,7 +37,7 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
   let style;
   cutout = cutout.cutout;
   ({ source, style, imageStyle } = cutout);
-  let obj = cutout(4116);
+  let obj = cutout(4145);
   const fn = function h() {
     const size = cutout;
     if (cutout.shape === cutout(outer1_2[8]).CutoutShape.RoundedRect) {
@@ -66,15 +66,15 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
     const cutouts = [obj];
     return { cutouts };
   };
-  obj = { cutout, CutoutShape: cutout(8075).CutoutShape, withSpring: cutout(4664).withSpring, CHANNEL_SPRING_CONFIG };
+  obj = { cutout, CutoutShape: cutout(8216).CutoutShape, withSpring: cutout(4694).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 12529564164821;
   fn.__initData = closure_15;
   const animatedProps = obj.useAnimatedProps(fn);
   obj = { style, animatedProps, children: null };
   const items = [obj.image, imageStyle];
-  obj[2] = callback(importDefault(5221), { style: items, source: importDefault(12190)(source), usesSmallCache: true });
-  return callback(cutout(8075).ClipViewAnimated, obj);
+  obj[2] = callback(importDefault(5251), { style: items, source: importDefault(12224)(source), usesSmallCache: true });
+  return callback(cutout(8216).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
   if (true === animate.animate) {
@@ -134,12 +134,12 @@ function CutoutAvatarImage(arg0) {
       obj1 = { tintColor: null };
       obj1[0] = tintColor;
       obj[0] = obj1;
-      obj[1] = importDefault(12190)(source);
-      obj[5] = callback(importDefault(5221), obj);
-      let tmp8 = callback(Circle(8409).ForeignObject, obj);
+      obj[1] = importDefault(12224)(source);
+      obj[5] = callback(importDefault(5251), obj);
+      let tmp8 = callback(Circle(7758).ForeignObject, obj);
       let tmp9 = importDefault;
       let tmp10 = callback;
-      const tmp14 = importDefault(5221);
+      const tmp14 = importDefault(5251);
     }
     const obj2 = { style: null, children: null };
     obj2[0] = style;
@@ -152,12 +152,12 @@ function CutoutAvatarImage(arg0) {
       obj4[0] = result;
       obj4[1] = result;
       obj4[2] = result;
-      let tmp10Result = tmp10(Circle(8409).Circle, obj4);
+      let tmp10Result = tmp10(Circle(7758).Circle, obj4);
     } else {
       const obj5 = { x: 0, y: 0, height: null, width: null, fill: "white" };
       obj5[2] = size;
       obj5[3] = size;
-      tmp10Result = tmp10(Circle(8409).Rect, obj5);
+      tmp10Result = tmp10(Circle(7758).Rect, obj5);
     }
     const obj6 = { children: null };
     const items = [tmp10Result, ];
@@ -165,10 +165,10 @@ function CutoutAvatarImage(arg0) {
     obj7[0] = diff;
     obj7[1] = diff1;
     obj7[2] = radius;
-    items[1] = tmp10(Circle(8409).Circle, obj7);
+    items[1] = tmp10(Circle(7758).Circle, obj7);
     obj3[3] = items;
-    obj6[0] = closure_8(Circle(8409).Mask, obj3);
-    const items1 = [tmp10(Circle(8409).Defs, obj6), tmp8, ];
+    obj6[0] = closure_8(Circle(7758).Mask, obj3);
+    const items1 = [tmp10(Circle(7758).Defs, obj6), tmp8, ];
     if (null == cutout.border) {
       const obj8 = { height: "100%", width: "100%", children: null };
       items1[2] = null;
@@ -176,7 +176,7 @@ function CutoutAvatarImage(arg0) {
       obj2[1] = tmp16(tmp9Result, obj8);
       return tmp10(tmp15, obj2);
     } else if (CIRCULAR === tmp4.CIRCULAR) {
-      Circle = Circle(8409).Circle;
+      Circle = Circle(7758).Circle;
       obj = { cx: null, cy: null, r: null, fill: "none", mask: null, stroke: null, strokeWidth: null };
       obj[0] = result;
       obj[1] = result;
@@ -195,15 +195,15 @@ function CutoutAvatarImage(arg0) {
       obj9[5] = "url(#" + v4Result + ")";
       obj9[6] = cutout.border.color;
       obj9[7] = cutout.border.width;
-      tmp10Result = tmp10(Circle(8409).Rect, obj9);
+      tmp10Result = tmp10(Circle(7758).Rect, obj9);
     }
     tmp15 = closure_5;
-    tmp9Result = tmp9(8409);
+    tmp9Result = tmp9(7758);
   }
   const obj10 = { x: "0", y: "0", height: "100%", width: "100%", href: null, mask: null };
-  obj10[4] = importDefault(12190)(source);
+  obj10[4] = importDefault(12224)(source);
   obj10[5] = "url(#" + v4Result + ")";
-  tmp8 = callback(Circle(8409).Image, obj10);
+  tmp8 = callback(Circle(7758).Image, obj10);
   tmp9 = importDefault;
   tmp10 = callback;
 }
@@ -285,7 +285,7 @@ const memoResult = importAllResult.memo((style) => {
   } else if (null != user) {
     avatarSource = user.getAvatarSource(tmp6, animate2, size2);
   } else if (null != channel) {
-    let obj1 = require(12189) /* getChannelIconURL */;
+    let obj1 = require(12223) /* getChannelIconURL */;
     const channelIconURL = obj1.getChannelIconURL(channel, size2);
     let tmp13 = channelIconURL;
     if (typeof channelIconURL !== "number") {
@@ -345,7 +345,7 @@ const memoResult = importAllResult.memo((style) => {
         tmp22 = source;
       }
       obj2[2] = tmp22;
-      return callback(importDefault(5221), obj2, "image");
+      return callback(importDefault(5251), obj2, "image");
     }
   }
 }, function customShallowEqual(source, source2) {

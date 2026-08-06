@@ -1,9 +1,9 @@
-// Module ID: 4339
-// Function ID: 4340
+// Module ID: 4369
+// Function ID: 4370
 // Name: updateAveragedStatsHelper
-// Dependencies: [1218, 4340, 4318, 589, 709, 2]
+// Dependencies: [1218, 4370, 4348, 589, 709, 2]
 
-// Module 4339 (updateAveragedStatsHelper)
+// Module 4369 (updateAveragedStatsHelper)
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";
 import { Store } from "initialize";
@@ -328,7 +328,7 @@ const mediaEngineStatsStore = new MediaEngineStatsStore(require("dispatcher"), {
       if (null == mediaEngineConnectionId) {
         return false;
       } else {
-        const ownerId = require(4318) /* isStreamKey */.decodeStreamKey(streamKey).ownerId;
+        const ownerId = require(4348) /* isStreamKey */.decodeStreamKey(streamKey).ownerId;
         let tmp11;
         if (dependencyMap2[mediaEngineConnectionId] != null) {
           tmp11 = tmp10[ownerId];

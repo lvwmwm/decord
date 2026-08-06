@@ -1,9 +1,9 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11957
+// Function ID: 11958
 // Name: _updateDiscoverability
-// Dependencies: [5, 4949, 676, 3928, 1384, 698, 11919, 5075, 2]
+// Dependencies: [5, 4979, 676, 3957, 1384, 698, 11953, 5105, 2]
 
-// Module 11923 (_updateDiscoverability)
+// Module 11957 (_updateDiscoverability)
 import importDefaultResult from "expandEventProperties";
 import set from "set";
 import ME from "ME";
@@ -102,7 +102,7 @@ function _updateDiscoverability() {
               dependencyMap = obj1.hasFlag(dependencyMap, constants2.FIND_BY_EMAIL);
             }
             obj3[2] = dependencyMap;
-            obj2 = phone(11919);
+            obj2 = phone(11953);
             obj3[3] = obj2.isContactSyncEnabled(localAccount.getLocalAccount(constants3.CONTACTS));
             callback2(698).track(constants.USER_DISCOVERY_UPDATED, obj3);
             constants2 = 3;

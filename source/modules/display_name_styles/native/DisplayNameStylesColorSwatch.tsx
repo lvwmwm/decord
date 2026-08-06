@@ -1,10 +1,10 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13840
+// Function ID: 13841
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4255, 712, 1887, 13804, 4676, 688, 2]
+// Dependencies: [17, 21, 4285, 712, 1916, 13841, 4706, 688, 2]
 // Exports: default
 
-// Module 13803 (DisplayNameStylesColorSwatch)
+// Module 13840 (DisplayNameStylesColorSwatch)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,7 +19,7 @@ const result = require("createCacheKey").fileFinishedImporting("modules/display_
 export default function DisplayNameStylesColorSwatch(colors) {
   colors = colors.colors;
   const tmp = callback();
-  if (colors.effectId === require(1887) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
+  if (colors.effectId === require(1916) /* DisplayNameEffect */.DisplayNameEffect.GUMMY) {
     if (colors.length > 0) {
       let obj = { style: null, children: null };
       const items = [, ];
@@ -27,7 +27,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
       obj[0] = items;
       obj = { colors: null };
       obj[0] = colors;
-      obj[1] = jsx(importDefault(13804), { colors: null });
+      obj[1] = jsx(importDefault(13841), { colors: null });
       return <View colors={null} />;
     }
   }
@@ -37,7 +37,7 @@ export default function DisplayNameStylesColorSwatch(colors) {
     obj1[1] = { x: 0, y: 0 };
     obj1[2] = { x: 1, y: 0 };
     obj1[3] = tmp.colorSwatch;
-    return jsx(importDefault(4676), { colors: null, start: null, end: null, style: null });
+    return jsx(importDefault(4706), { colors: null, start: null, end: null, style: null });
   } else {
     let str = "#000000";
     if (colors.length > 0) {

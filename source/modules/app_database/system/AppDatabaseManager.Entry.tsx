@@ -1,9 +1,9 @@
-// Module ID: 7001
-// Function ID: 7002
+// Module ID: 7028
+// Function ID: 7029
 // Name: actions
 // Dependencies: [2]
 
-// Module 7001 (actions)
+// Module 7028 (actions)
 const result = require("set").fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");
 class Entry {
   constructor(arg0, arg1) {

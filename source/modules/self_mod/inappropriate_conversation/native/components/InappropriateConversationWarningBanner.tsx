@@ -1,9 +1,9 @@
-// Module ID: 10255
-// Function ID: 10256
+// Module ID: 10286
+// Function ID: 10287
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [19, 3892, 9558, 21, 10238, 589, 10239, 4594, 10256, 1959, 10259, 10240, 1236, 2]
+// Dependencies: [19, 3921, 9587, 21, 10269, 589, 10270, 4624, 10287, 1988, 10290, 10271, 1236, 2]
 
-// Module 10255 (InappropriateConversationWarningBanner)
+// Module 10286 (InappropriateConversationWarningBanner)
 import noop from "noop";
 import upsertRelationship from "upsertRelationship";
 import { SafetyWarningTypes } from "handleConnectionOpen";

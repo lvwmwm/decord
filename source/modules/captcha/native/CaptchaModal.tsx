@@ -1,10 +1,10 @@
-// Module ID: 16205
-// Function ID: 16206
+// Module ID: 16245
+// Function ID: 16246
 // Name: CaptchaModal
-// Dependencies: [19, 17, 14957, 14958, 21, 4255, 8255, 1532, 16206, 5323, 4663, 5921, 4251, 1236, 4665, 10349, 16207, 14965, 2]
+// Dependencies: [19, 17, 14995, 14996, 21, 4285, 8395, 1481, 16246, 5377, 4693, 5948, 4281, 1236, 4695, 10380, 16247, 15003, 2]
 // Exports: default
 
-// Module 16205 (CaptchaModal)
+// Module 16245 (CaptchaModal)
 import noop from "noop";
 import get_ActivityIndicator from "trackRegTransition";
 import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore";
@@ -44,17 +44,20 @@ export default function CaptchaModal(arg0) {
   let require;
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: noop, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
-  let c8;
+  let navigation;
   let callback;
-  const tmp2 = callback2(onReject(8255)());
-  const tmp3 = onReject(1532)();
-  c8 = tmp3;
-  const items = [tmp3];
+  const tmp2 = callback2(onReject(8395)());
+  let obj = require(1481) /* createStandardNavigationFactories */;
+  navigation = obj.useNavigation();
+  const items = [navigation];
   const memo = React.useMemo(() => {
-    const first = _undefined.getState().routes[0];
+    const state = navigation.getState();
     let name;
-    if (first != null) {
-      name = first.name;
+    if (state != null) {
+      const first = state.routes[0];
+      if (first != null) {
+        name = first.name;
+      }
     }
     let str = "Guild Join Captcha";
     if ("auth" === name) {
@@ -65,29 +68,29 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(16206)({ onReject, analyticsType: memo });
+  callback = onReject(16246)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);
-  let obj = { style: tmp2.contentContainer, spacing: 12, children: null };
-  const items1 = [callback(require(5921) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
+  obj = { style: tmp2.contentContainer, spacing: 12, children: null };
+  const items1 = [callback(require(5948) /* AccountAgeTier10LargeBadge */.DisguiseSpotIllustration, { scale: 0.5 }), , ];
   if (headerText == null) {
-    const intl = tmp7(1236).intl;
-    headerText = intl.string(tmp7(1236).t.FpoiHe);
+    const intl = tmp3(1236).intl;
+    headerText = intl.string(tmp3(1236).t.FpoiHe);
   }
-  const items2 = [callback(require(4251) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
+  const items2 = [callback(require(4281) /* Text */.Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   obj = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: null };
   if (bodyText == null) {
-    const intl2 = tmp7(1236).intl;
-    bodyText = intl2.string(tmp7(1236).t["/CidxO"]);
+    const intl2 = tmp3(1236).intl;
+    bodyText = intl2.string(tmp3(1236).t["/CidxO"]);
   }
-  obj = { startHeight: 900, startExpanded: true, children: null };
-  const obj1 = { children: null };
+  const obj1 = { startHeight: 900, startExpanded: true, children: null };
+  let obj2 = { children: null };
   obj[3] = bodyText;
-  items2[1] = callback(require(4251) /* Text */.Text, obj);
-  obj1[0] = items2;
-  items1[1] = closure_10(closure_5, obj1);
-  let obj2 = {
+  items2[1] = callback(require(4281) /* Text */.Text, obj);
+  obj2[0] = items2;
+  items1[1] = closure_10(closure_5, obj2);
+  const obj3 = {
     grow: true,
     onPress() {
       callback2();
@@ -98,11 +101,19 @@ export default function CaptchaModal(arg0) {
       const showCaptchaResult = onReject(outer1_2[16]).showCaptcha(closure_4, noop, closure_5);
       onReject(outer1_2[16]).showCaptcha(closure_4, noop, closure_5).then((arg0) => {
         let obj = state;
-        let tmp = "auth" === state.getState().routes[0].name;
-        if (tmp) {
-          tmp = outer1_6();
+        state = state.getState();
+        let name;
+        if (state != null) {
+          const first = state.routes[0];
+          if (first != null) {
+            name = first.name;
+          }
         }
-        if (tmp) {
+        let tmp4 = "auth" === name;
+        if (tmp4) {
+          tmp4 = outer1_6();
+        }
+        if (tmp4) {
           obj = { step: null, actionType: null };
           obj[0] = outer1_7.CAPTCHA;
           obj[1] = outer1_8.SUBMITTED;
@@ -110,11 +121,19 @@ export default function CaptchaModal(arg0) {
           const obj2 = outer1_0(outer1_2[17]);
         }
         callback(arg0, closure_6);
-        let tmp9 = "auth" === obj.getState().routes[0].name;
-        if (tmp9) {
-          tmp9 = outer1_6();
+        const state1 = obj.getState();
+        let name1;
+        if (state1 != null) {
+          const first1 = state1.routes[0];
+          if (first1 != null) {
+            name1 = first1.name;
+          }
         }
-        if (tmp9) {
+        let tmp15 = "auth" === name1;
+        if (tmp15) {
+          tmp15 = outer1_6();
+        }
+        if (tmp15) {
           obj = { step: null, actionType: null };
           obj[0] = outer1_7.CAPTCHA;
           obj[1] = outer1_8.SUCCESS;
@@ -129,10 +148,10 @@ export default function CaptchaModal(arg0) {
     },
     text: null
   };
-  const intl3 = tmp7(1236).intl;
-  obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  items1[2] = callback(require(4665) /* Button */.Button, obj2);
+  const intl3 = tmp3(1236).intl;
+  obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
+  items1[2] = callback(require(4695) /* Button */.Button, obj3);
   obj[2] = items1;
-  obj[2] = closure_10(require(4663) /* Stack */.Stack, obj);
-  return callback(require(5323) /* Background */.BottomSheet, obj);
+  obj1[2] = closure_10(require(4693) /* Stack */.Stack, obj);
+  return callback(require(5377) /* Background */.BottomSheet, obj1);
 };

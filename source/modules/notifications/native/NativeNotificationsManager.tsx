@@ -1,9 +1,9 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16786
+// Function ID: 16787
 // Name: getDeliveredNotifications
-// Dependencies: [5, 17, 6991, 4267, 676, 3, 16747, 10640, 11, 5214, 500, 8695, 698, 2]
+// Dependencies: [5, 17, 7018, 4297, 676, 3, 16787, 10695, 11, 5244, 500, 8724, 698, 2]
 
-// Module 16746 (getDeliveredNotifications)
+// Module 16786 (getDeliveredNotifications)
 import timestamp from "timestamp";
 import { NativeModules } from "get ActivityIndicator";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
@@ -216,8 +216,8 @@ let prototype = function NativeNotificationsManager() {
   applyArgumentsResult.handleAck = function handleAck(channelId) {
     channelId = channelId.channelId;
     if (obj.isIOS()) {
-      const result = callback(10640).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
-      const obj2 = callback(10640);
+      const result = callback(10695).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+      const obj2 = callback(10695);
     }
     if (null != channelId) {
       const DCDNotificationManager = closure_4.DCDNotificationManager;

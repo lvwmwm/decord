@@ -1,9 +1,9 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7036
+// Function ID: 7037
 // Name: okAsync
-// Dependencies: [5, 499, 3, 1907, 2]
+// Dependencies: [5, 499, 3, 1936, 2]
 
-// Module 7009 (okAsync)
+// Module 7036 (okAsync)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import HELLO_KEY from "HELLO_KEY";
 import set from "timestamp";
@@ -87,13 +87,13 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen() {
 };
 prototype["handleWrite"] = function handleWrite(database) {
   this.hasSuccessfullyConnected = true;
-  obj = obj(1907);
+  obj = obj(1936);
   obj.cacheTransaction(database).put(closure_3, "\u{1F44B}");
   const cacheTransactionResult = obj.cacheTransaction(database);
-  const obj3 = obj(1907);
-  obj(1907).cacheTransaction(database).put(closure_7, closure_6);
-  const cacheTransactionResult1 = obj(1907).cacheTransaction(database);
-  const result = obj(1907).forceResyncVersionTransaction(database);
+  const obj3 = obj(1936);
+  obj(1936).cacheTransaction(database).put(closure_7, closure_6);
+  const cacheTransactionResult1 = obj(1936).cacheTransaction(database);
+  const result = obj(1936).forceResyncVersionTransaction(database);
   obj = { version: closure_4 };
   result.put(closure_5, obj);
 };

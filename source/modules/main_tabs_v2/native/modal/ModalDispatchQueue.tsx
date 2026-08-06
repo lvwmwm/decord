@@ -1,9 +1,9 @@
-// Module ID: 4463
-// Function ID: 4464
+// Module ID: 4493
+// Function ID: 4494
 // Name: enqueue
 // Dependencies: [2]
 
-// Module 4463 (enqueue)
+// Module 4493 (enqueue)
 class ModalDispatchQueue {
   constructor() {
     obj = Object.create(new.target.prototype);

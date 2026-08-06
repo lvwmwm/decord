@@ -1,10 +1,10 @@
-// Module ID: 6654
-// Function ID: 6655
+// Module ID: 6681
+// Function ID: 6682
 // Name: StreamSpotIllustration
-// Dependencies: [21, 5221, 6655, 2]
+// Dependencies: [21, 5251, 6682, 2]
 // Exports: StreamSpotIllustration
 
-// Module 6654 (StreamSpotIllustration)
+// Module 6681 (StreamSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/StreamSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const StreamSpotIllustration = function StreamSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6655);
+  obj[0] = importDefault(6682);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const StreamSpotIllustration = function StreamSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
 };

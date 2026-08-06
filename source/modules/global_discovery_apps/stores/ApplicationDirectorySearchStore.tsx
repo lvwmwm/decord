@@ -1,9 +1,9 @@
-// Module ID: 11339
-// Function ID: 11340
+// Module ID: 11373
+// Function ID: 11374
 // Name: getSearchResults
-// Dependencies: [11340, 1386, 589, 709, 2]
+// Dependencies: [11374, 1386, 589, 709, 2]
 
-// Module 11339 (getSearchResults)
+// Module 11373 (getSearchResults)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -27,7 +27,7 @@ prototype["getSearchResults"] = function getSearchResults(arg0) {
   let source;
   ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
   if (source === undefined) {
-    source = require(11340) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+    source = require(11374) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
     const tmp2 = dependencyMap;
   }
   return tmp2.get("query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source);
@@ -46,7 +46,7 @@ prototype["getFetchState"] = function getFetchState(arg0) {
   let source;
   ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
   if (source === undefined) {
-    source = require(11340) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+    source = require(11374) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
   }
   return table["query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source];
 };
@@ -66,7 +66,7 @@ obj = {
     let source;
     ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
     if (source === undefined) {
-      source = require(11340) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+      source = require(11374) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
     }
     const obj = {};
     const combined = "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;
@@ -88,7 +88,7 @@ obj = {
     let source;
     ({ query, guildId, page, pageSize, categoryId, result, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
     if (source === undefined) {
-      source = require(11340) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+      source = require(11374) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
       const tmp2 = dependencyMap;
     }
     const combined = "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;
@@ -113,7 +113,7 @@ obj = {
     let source;
     ({ query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand, source } = arg0);
     if (source === undefined) {
-      source = require(11340) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
+      source = require(11374) /* SearchAppsRequestSource */.SearchAppsRequestSource.APP_DIRECTORY;
     }
     const obj = {};
     const combined = "query:'" + query + "' guildId:" + guildId + " page:" + page + " pageSize:" + pageSize + " categoryId:" + categoryId + " integrationType:" + integrationType + " minUserInstallCommandCount:" + minUserInstallCommandCount + " excludeAppsWithCustomInstallUrl:" + excludeAppsWithCustomInstallUrl + " excludeNonEmbeddedApps:" + excludeNonEmbeddedApps + " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:" + excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand + " source:" + source;

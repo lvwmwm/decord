@@ -1,10 +1,10 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9660
+// Function ID: 9661
 // Name: useSelectedParticipant
-// Dependencies: [4268, 589, 2]
+// Dependencies: [4298, 589, 2]
 // Exports: default
 
-// Module 9629 (useSelectedParticipant)
+// Module 9660 (useSelectedParticipant)
 import getParticipants from "getParticipants";
 
 const require = arg1;

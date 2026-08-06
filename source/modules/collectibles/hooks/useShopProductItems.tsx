@@ -1,10 +1,10 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9292
+// Function ID: 9293
 // Name: firstAvatarDecoration
-// Dependencies: [19, 1901, 1236, 2]
+// Dependencies: [19, 1930, 1236, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 9263 (firstAvatarDecoration)
+// Module 9292 (firstAvatarDecoration)
 import noop from "noop";
 
 const require = arg1;
@@ -18,25 +18,25 @@ class ItemsSortingHat {
 const prototype = ItemsSortingHat.prototype;
 Object.defineProperty(prototype, "firstAvatarDecoration", {
   get: function firstAvatarDecoration(first) {
-    return this.getFirstItemByType(require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
+    return this.getFirstItemByType(require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "firstProfileEffect", {
   get: function firstProfileEffect() {
-    return this.getFirstItemByType(require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
+    return this.getFirstItemByType(require(1930) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "firstNameplate", {
   get: function firstNameplate(first) {
-    return this.getFirstItemByType(require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
+    return this.getFirstItemByType(require(1930) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "firstProfileFrame", {
   get: function firstProfileFrame(first) {
-    return this.getFirstItemByType(require(1901) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
+    return this.getFirstItemByType(require(1930) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_FRAME);
   },
   set: undefined
 });

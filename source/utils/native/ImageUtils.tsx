@@ -1,7 +1,7 @@
 // Module ID: 1473
 // Function ID: 1474
 // Name: getSrcWithWidthAndHeight
-// Dependencies: [32, 17, 676, 1451, 1474, 1464, 1848, 12, 1419, 1416, 2]
+// Dependencies: [32, 17, 676, 1451, 1474, 1464, 1876, 12, 1419, 1416, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
 // Module 1473 (getSrcWithWidthAndHeight)
@@ -61,9 +61,9 @@ function getSrcWithWidthAndHeight(animated) {
       obj[1] = targetHeight;
       obj[2] = sourceWidth;
       obj[3] = sourceHeight;
-      obj[4] = require(1848) /* items */.ATTACHMENT_LADDER_MAX_UPSCALE;
-      let size = require(1848) /* items */.snapAttachmentDimensions(obj);
-      const obj2 = require(1848) /* items */;
+      obj[4] = require(1876) /* items */.ATTACHMENT_LADDER_MAX_UPSCALE;
+      let size = require(1876) /* items */.snapAttachmentDimensions(obj);
+      const obj2 = require(1876) /* items */;
     } else {
       size = { width: null, height: null };
       size[0] = targetWidth;

@@ -1,10 +1,10 @@
-// Module ID: 16376
-// Function ID: 16377
+// Module ID: 16416
+// Function ID: 16417
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8044, 676, 21, 4255, 712, 1581, 589, 8057, 16361, 8086, 4811, 8047, 8049, 4251, 1236, 16370, 4665, 16358, 2]
+// Dependencies: [5, 32, 19, 17, 8185, 676, 21, 4285, 712, 1609, 589, 8198, 16401, 8227, 4841, 8188, 8190, 4281, 1236, 16410, 4695, 16398, 2]
 // Exports: default
 
-// Module 16376 (RedesignAddAvatarModal)
+// Module 16416 (RedesignAddAvatarModal)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import TouchableUploadAvatar from "TouchableUploadAvatar";
@@ -84,7 +84,7 @@ export default function RedesignAddAvatarModal(route) {
               dependencyMap = 1;
               v0 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = outer1_0(4811).openImagePicker(obj1);
+              obj2[0] = outer1_0(4841).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -100,19 +100,19 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(8057);
+                obj = outer1_0(8198);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(8057);
+                obj2 = outer1_0(8198);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
               outer1_1 = pendingImage;
-              obj3 = outer1_0(8047);
+              obj3 = outer1_0(8188);
               let obj5 = { avatar: null };
               obj5[0] = outer1_1;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(8049);
+              obj5 = outer1_0(8190);
               let str = "set";
               if (null == outer1_1) {
                 str = "remove";

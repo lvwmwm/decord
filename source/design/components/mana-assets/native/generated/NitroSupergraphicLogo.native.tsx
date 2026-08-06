@@ -1,10 +1,10 @@
-// Module ID: 6474
-// Function ID: 6475
+// Module ID: 6501
+// Function ID: 6502
 // Name: NitroSupergraphicLogo
-// Dependencies: [17, 21, 712, 3959, 6475, 2]
+// Dependencies: [17, 21, 712, 3988, 6502, 2]
 // Exports: NitroSupergraphicLogo
 
-// Module 6474 (NitroSupergraphicLogo)
+// Module 6501 (NitroSupergraphicLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const NitroSupergraphicLogo = function NitroSupergraphicLogo(color) {
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(3959) /* map */;
+  let obj = require(3988) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -46,7 +46,7 @@ export const NitroSupergraphicLogo = function NitroSupergraphicLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(6475) };
+  obj1[1] = { uri: importDefault(6502) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

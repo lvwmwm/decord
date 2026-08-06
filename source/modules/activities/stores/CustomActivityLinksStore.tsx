@@ -1,9 +1,9 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12133
+// Function ID: 12134
 // Name: getOne
-// Dependencies: [12100, 589, 709, 2]
+// Dependencies: [12134, 589, 709, 2]
 
-// Module 12099 (getOne)
+// Module 12133 (getOne)
 import getAssetURL from "getAssetURL";
 import { Store } from "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 9598
-// Function ID: 9599
+// Module ID: 9627
+// Function ID: 9628
 // Name: _addChannelToFavorites
-// Dependencies: [32, 5, 21, 3956, 1236, 8638, 9599, 1959, 9607, 3001, 8640, 1297, 2]
+// Dependencies: [32, 5, 21, 3985, 1236, 8667, 9628, 1988, 9638, 3030, 8669, 1297, 2]
 // Exports: default
 
-// Module 9598 (_addChannelToFavorites)
+// Module 9627 (_addChannelToFavorites)
 import _slicedToArray from "_slicedToArray";
 import StarIcon from "StarIcon";
 import { jsx } from "jsxProd";
@@ -177,8 +177,8 @@ export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
       if (tmp2) {
         let obj = { label: null, IconComponent: null, isDestructive: true, onPress: null };
         const intl2 = require(1236) /* getSystemLocale */.intl;
-        obj[0] = intl2.string(importDefault(3001).TN4nAX);
-        obj[1] = require(8638) /* StarIcon */.StarIcon;
+        obj[0] = intl2.string(importDefault(3030).TN4nAX);
+        obj[1] = require(8667) /* StarIcon */.StarIcon;
         obj[3] = function onPress() {
           return (function removeChannelFromFavorites(closure_0) {
             const self = this;
@@ -197,8 +197,8 @@ export default function buildFavoritesSectionButtons(hasFavoritesAccess) {
         if (!tmp3) {
           obj = { label: null, IconComponent: null, trailing: null, onPress: null };
           const intl = require(1236) /* getSystemLocale */.intl;
-          obj[0] = intl.string(importDefault(3001).G9fGlP);
-          obj[1] = require(8640) /* StarOutlineIcon */.StarOutlineIcon;
+          obj[0] = intl.string(importDefault(3030).G9fGlP);
+          obj[1] = require(8669) /* StarOutlineIcon */.StarOutlineIcon;
           let tmp10;
           if (tmp4) {
             obj = { size: null };

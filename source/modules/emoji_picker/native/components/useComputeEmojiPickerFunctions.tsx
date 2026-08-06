@@ -1,10 +1,10 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8601
+// Function ID: 8602
 // Name: _computeCategories
-// Dependencies: [32, 19, 5132, 8534, 8573, 3896, 12, 8535, 1941, 2]
+// Dependencies: [32, 19, 5162, 8563, 8602, 3925, 12, 8564, 1970, 2]
 // Exports: default
 
-// Module 8572 (_computeCategories)
+// Module 8601 (_computeCategories)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import EmojiCategoryTypes from "EmojiCategoryTypes";
@@ -95,7 +95,7 @@ function _computeCategories(arg0) {
       } else {
         let tmp26 = require;
         let tmp27 = dependencyMap;
-        obj6 = require(8573) /* GuildNSFWContentLevel */;
+        obj6 = require(8602) /* GuildNSFWContentLevel */;
         let tmp28 = guild;
         if (obj6.shouldNSFWGateGuild(guild.id)) {
           let obj7 = { type: null, label: null, footer: null, emojis: null, isSectionNitroLocked: null };
@@ -132,7 +132,7 @@ function _computeCategories(arg0) {
     } else if (tmp3.UNICODE === type) {
       let tmp60 = importDefault;
       let tmp61 = dependencyMap;
-      let obj19 = importDefault(3896);
+      let obj19 = importDefault(3925);
       let tmp62 = nextResult;
       let byCategory = obj19.getByCategory(tmp2.name);
       if (isNativeEmojiPickerEnabled) {
@@ -241,7 +241,7 @@ function _computeSearchResults(emojis) {
   const obj1 = { type: constants3.EMOJI, emojis: substr1, emojisDisabled: set1, label: null, footer: null };
   const set = new Set();
   const tmp2 = pushCategory;
-  obj1[3] = require(8535) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
+  obj1[3] = require(8564) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
   obj1[4] = constants2.PREMIUM_UPSELL;
   obj[1] = obj1;
   obj[2] = rowSize;
@@ -269,9 +269,9 @@ const result = require("EmojiCategoryTypes").fileFinishedImporting("modules/emoj
 export default function useComputeEmojiPickerFunctions() {
   return callback(React.useState(() => {
     const obj = { computeCategories: null, computeSearchResults: null };
-    obj[0] = callback(1941).cachedFunction(closure_8);
-    const obj2 = callback(1941);
-    obj[1] = callback(1941).cachedFunction(closure_9);
+    obj[0] = callback(1970).cachedFunction(closure_8);
+    const obj2 = callback(1970);
+    obj[1] = callback(1970).cachedFunction(closure_9);
     return obj;
   }), 1)[0];
 };

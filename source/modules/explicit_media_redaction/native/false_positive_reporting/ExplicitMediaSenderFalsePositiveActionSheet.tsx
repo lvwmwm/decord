@@ -1,10 +1,10 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11238
+// Function ID: 11239
 // Name: ExplicitMediaObscuredFalsePositiveActionSheet
-// Dependencies: [19, 5804, 6954, 21, 647, 10116, 10117, 11203, 6963, 4223, 6953, 2]
+// Dependencies: [19, 5831, 6981, 21, 647, 10147, 10148, 11237, 6990, 4253, 6980, 2]
 // Exports: default
 
-// Module 11204 (ExplicitMediaObscuredFalsePositiveActionSheet)
+// Module 11238 (ExplicitMediaObscuredFalsePositiveActionSheet)
 import noop from "noop";
 import getFpMessageInfo from "getFpMessageInfo";
 import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_5 } from "USER_SETTING_ACTION_SHEET_KEY";
@@ -28,28 +28,28 @@ export default function ExplicitMediaObscuredFalsePositiveActionSheet(channelId)
   React = attachments1.map((filename) => filename.filename);
   obj = {
     onSuccess() {
-      channelId(10117).handleSuccess(outer1_5);
-      const obj = channelId(10117);
-      const result = messageId(11203).disableFalsePositiveButton(channelId, messageId);
+      channelId(10148).handleSuccess(outer1_5);
+      const obj = channelId(10148);
+      const result = messageId(11237).disableFalsePositiveButton(channelId, messageId);
     },
     onError() {
-      return channelId(10117).handleError();
+      return channelId(10148).handleError();
     },
     report() {
-      return channelId(6963).reportFailedSendFalsePositive(channelId, messageId, dependencyMap, noop);
+      return channelId(6990).reportFailedSendFalsePositive(channelId, messageId, dependencyMap, noop);
     }
   };
-  const explicitMediaActions = channelId(10116).useExplicitMediaActions(obj);
+  const explicitMediaActions = channelId(10147).useExplicitMediaActions(obj);
   reportFalsePositive = explicitMediaActions.reportFalsePositive;
   if (stateFromStores.attachments.length <= 0) {
-    messageId(4223).hideActionSheet();
-    const obj4 = messageId(4223);
+    messageId(4253).hideActionSheet();
+    const obj4 = messageId(4253);
   }
   const items1 = [reportFalsePositive];
   const callback = React.useCallback(() => {
     reportFalsePositive();
   }, items1);
   obj = { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: null };
-  obj[4] = channelId(6953).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW;
-  return jsx(channelId(10117).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: null });
+  obj[4] = channelId(6980).TrackMediaRedactionContext.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_FLOW;
+  return jsx(channelId(10148).ExplicitMediaFalsePositiveActionSheet, { channelId, messageId, isReportFalsePositiveLoading: explicitMediaActions.isReportFalsePositiveLoading, onConfirmPress: callback, analyticsContext: null });
 };

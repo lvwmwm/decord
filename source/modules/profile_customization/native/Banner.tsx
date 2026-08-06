@@ -1,10 +1,10 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 8763
+// Function ID: 8764
 // Name: ProfileBanner
-// Dependencies: [19, 17, 676, 21, 4255, 688, 5221, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 688, 5251, 2]
 // Exports: default
 
-// Module 8734 (ProfileBanner)
+// Module 8763 (ProfileBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { BANNER_HEIGHT } from "ME";
@@ -40,7 +40,7 @@ export default function ProfileBanner(bannerHeight) {
     obj = { style: null, source: null };
     obj[0] = tmp.image;
     obj[1] = bannerSource;
-    tmp3Result = tmp3(importDefault(5221), obj);
+    tmp3Result = tmp3(importDefault(5251), obj);
   }
   obj[1] = tmp3Result;
   return <View style={items}>{null}</View>;

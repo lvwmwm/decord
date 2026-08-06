@@ -1,9 +1,9 @@
-// Module ID: 4436
-// Function ID: 4437
+// Module ID: 4466
+// Function ID: 4467
 // Name: reset
-// Dependencies: [4319, 12, 4318, 589, 709, 2]
+// Dependencies: [4349, 12, 4348, 589, 709, 2]
 
-// Module 4436 (reset)
+// Module 4466 (reset)
 import { StreamTypes } from "StreamIssueReportReasons";
 import { Store } from "initialize";
 import set from "isStreamKey";
@@ -19,7 +19,7 @@ class ApplicationStreamPreviewStore extends Store {
 }
 const prototype = ApplicationStreamPreviewStore.prototype;
 prototype["getPreviewURL"] = function getPreviewURL(closure_0, channelId, closure_2) {
-  let obj = require(4318) /* isStreamKey */;
+  let obj = require(4348) /* isStreamKey */;
   if (null != closure_0) {
     let CALL = StreamTypes.GUILD;
   } else {
@@ -34,7 +34,7 @@ prototype["getPreviewURL"] = function getPreviewURL(closure_0, channelId, closur
   return url;
 };
 prototype["shouldFetchPreview"] = function shouldFetchPreview(c0, closure_1, closure_2) {
-  let obj = require(4318) /* isStreamKey */;
+  let obj = require(4348) /* isStreamKey */;
   if (null != c0) {
     let CALL = StreamTypes.GUILD;
   } else {
@@ -64,11 +64,11 @@ prototype["shouldFetchPreview"] = function shouldFetchPreview(c0, closure_1, clo
   return tmp7;
 };
 prototype["getPreviewURLForStreamKey"] = function getPreviewURLForStreamKey(streamKey) {
-  const decodeStreamKeyResult = require(4318) /* isStreamKey */.decodeStreamKey(streamKey);
+  const decodeStreamKeyResult = require(4348) /* isStreamKey */.decodeStreamKey(streamKey);
   return this.getPreviewURL(decodeStreamKeyResult.guildId, decodeStreamKeyResult.channelId, decodeStreamKeyResult.ownerId);
 };
 prototype["getIsPreviewLoading"] = function getIsPreviewLoading(closure_0, closure_1, closure_2) {
-  let obj = require(4318) /* isStreamKey */;
+  let obj = require(4348) /* isStreamKey */;
   if (null != closure_0) {
     let CALL = StreamTypes.GUILD;
   } else {

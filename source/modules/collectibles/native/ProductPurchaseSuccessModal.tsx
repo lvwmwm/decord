@@ -1,10 +1,10 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10043
+// Function ID: 10044
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4247, 676, 21, 4255, 712, 1901, 10011, 5230, 5255, 1236, 4116, 4664, 4256, 4224, 6905, 10013, 3959, 4676, 9237, 10015, 589, 10016, 10017, 9312, 8789, 9327, 9263, 5257, 10025, 9264, 9276, 9335, 9443, 10044, 4251, 6907, 4665, 2]
+// Dependencies: [32, 853, 19, 17, 4277, 676, 21, 4285, 712, 1930, 10042, 5260, 5309, 1236, 4145, 4694, 4286, 4254, 6932, 10044, 3988, 4706, 9266, 10046, 589, 10047, 10048, 9341, 8818, 9356, 9292, 5311, 10056, 9293, 9305, 9364, 9472, 10075, 4281, 6934, 4695, 2]
 // Exports: default
 
-// Module 10012 (CancelButton)
+// Module 10043 (CancelButton)
 import BalanceWidgetPill from "BalanceWidgetPill";
 import _toArray from "_toArray";
 import importDefaultResult1 from "importDefaultResult1";
@@ -44,11 +44,11 @@ function CancelButton(arg0) {
       return outer1_12(outer1_0(closeButtonIcon[12]).XSmallIcon, { size: "lg", style });
     },
     accessibilityLabel: null,
-    labelVisible: false
+    displayMode: "minimal"
   };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
-  return callback(require(5230) /* Background */.HeaderBackButton, obj);
+  return callback(require(5260) /* Background */.HeaderBackButton, obj);
 }
 function ProductPurchaseGradientBackground(product) {
   product = product.product;
@@ -120,22 +120,22 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
   obj[6] = { position: "absolute", backgroundColor: importDefault(712).colors.BLACK, top: 0, bottom: 0, left: 0, right: 0 };
   obj[7] = { flexGrow: 1, flexDirection: "column", justifyContent: "center" };
   let num = 0;
-  if (arg0 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     num = 1;
   }
   const obj2 = { flexDirection: "row", justifyContent: "center", alignItems: "center", flex: num, marginTop: null, marginHorizontal: null };
   let str = 0;
-  if (arg0 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
+  if (arg0 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION) {
     str = "20%";
   }
   obj2[4] = str;
   let PX_32;
-  if (arg0 === require(1901) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
+  if (arg0 === require(1930) /* CollectiblesItemType */.CollectiblesItemType.NAMEPLATE) {
     PX_32 = tmp(712).space.PX_32;
   }
   obj2[5] = PX_32;
   if (flag) {
-    if (arg0 === tmp3(1901).CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1930).CollectiblesItemType.AVATAR_DECORATION) {
       const obj3 = { shadowColor: null, shadowOffset: null, shadowOpacity: 1, shadowRadius: 60, elevation: 24 };
       obj3[0] = tmp(712).unsafe_rawColors.PRIMARY_630;
       obj3[1] = { width: 0, height: 0 };
@@ -147,7 +147,7 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
     const obj4 = { paddingTop: null, minHeight: null, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: null };
     obj4[0] = tmp(712).space.PX_24;
     let str2;
-    if (arg0 === tmp3(1901).CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1930).CollectiblesItemType.AVATAR_DECORATION) {
       str2 = "32%";
     }
     obj4[1] = str2;

@@ -1,17 +1,11 @@
 // Module ID: 13484
 // Function ID: 13485
-// Dependencies: [13452, 13453, 13485]
+// Dependencies: [13485, 13550]
 
 // Module 13484
-import getOwnPropertyDescriptor from "getOwnPropertyDescriptor";
+import module_13485 from "module_13485";
 
-let tmp2 = !getOwnPropertyDescriptor;
-if (!getOwnPropertyDescriptor) {
-  tmp2 = !require("module_13453")(() => 7 !== Object.defineProperty(require(13485) /* element */("div"), "a", {
-    get() {
-      return 7;
-    }
-  }).a);
-}
-
-export default tmp2;
+let obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj[3] = Object.assign !== require("assign");
+obj = { assign: require("assign") };
+module_13485(obj, obj);

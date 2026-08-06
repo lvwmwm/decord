@@ -1,9 +1,9 @@
-// Module ID: 8964
-// Function ID: 8965
+// Module ID: 8993
+// Function ID: 8994
 // Name: getDisplayedInviteCode
 // Dependencies: [589, 709, 2]
 
-// Module 8964 (getDisplayedInviteCode)
+// Module 8993 (getDisplayedInviteCode)
 import { Store } from "initialize";
 
 let c1 = null;

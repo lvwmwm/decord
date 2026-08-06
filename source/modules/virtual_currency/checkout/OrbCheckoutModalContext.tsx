@@ -1,10 +1,10 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12075
+// Function ID: 12076
 // Name: useOrbCheckoutModalContextProvider
-// Dependencies: [19, 1874, 4300, 21, 514, 589, 3901, 10352, 5746, 10000, 6906, 3916, 9315, 2]
+// Dependencies: [19, 1903, 4330, 21, 514, 589, 3930, 10383, 5773, 10031, 6933, 3945, 9344, 2]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext
 
-// Module 12041 (useOrbCheckoutModalContextProvider)
+// Module 12075 (useOrbCheckoutModalContextProvider)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import addSku from "addSku";

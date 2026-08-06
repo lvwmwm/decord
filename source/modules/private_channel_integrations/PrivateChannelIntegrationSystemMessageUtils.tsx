@@ -1,10 +1,10 @@
-// Module ID: 7885
-// Function ID: 7886
+// Module ID: 8026
+// Function ID: 8027
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
-// Dependencies: [676, 1236, 1945, 2]
+// Dependencies: [676, 1236, 1974, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 7885 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 8026 (getPrivateChannelIntegrationAddedSystemMessageContent)
 import ME from "ME";
 
 let c3;
@@ -31,17 +31,17 @@ export const getPrivateChannelIntegrationAddedSystemMessageContent = function ge
     obj[1] = application.name;
     obj[2] = usernameHook;
     obj[3] = applicationNameHook;
-    obj[4] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj[4] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     let formatResult = intl2.format(require(1236) /* getSystemLocale */.t.J8SaGy, obj);
-    const obj4 = importDefault(1945);
+    const obj4 = importDefault(1974);
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;
     obj = { username: null, usernameHook: null, helpCenterLink: null };
     obj[0] = username;
     obj[1] = usernameHook;
-    obj[2] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj[2] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     formatResult = intl.format(require(1236) /* getSystemLocale */.t["+6V2sd"], obj);
-    const obj2 = importDefault(1945);
+    const obj2 = importDefault(1974);
   }
   return formatResult;
 };
@@ -64,17 +64,17 @@ export const getPrivateChannelIntegrationRemovedSystemMessageContent = function 
     obj[1] = application.name;
     obj[2] = usernameHook;
     obj[3] = applicationNameHook;
-    obj[4] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj[4] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     let formatResult = intl2.format(require(1236) /* getSystemLocale */.t.eGCDak, obj);
-    const obj4 = importDefault(1945);
+    const obj4 = importDefault(1974);
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;
     obj = { username: null, usernameHook: null, helpCenterLink: null };
     obj[0] = username;
     obj[1] = usernameHook;
-    obj[2] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj[2] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     formatResult = intl.format(require(1236) /* getSystemLocale */.t.sAX6rs, obj);
-    const obj2 = importDefault(1945);
+    const obj2 = importDefault(1974);
   }
   return formatResult;
 };
@@ -93,10 +93,10 @@ export const getPrivateChannelIntegrationAddedSystemMessageASTContent = function
     obj[3] = tmp;
     obj[4] = medium;
     obj = { url: null };
-    obj[0] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj[0] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     obj[5] = obj;
     let formatToPartsResult = intl.formatToParts(require(1236) /* getSystemLocale */.t["8r+Z+I"], obj);
-    const obj3 = importDefault(1945);
+    const obj3 = importDefault(1974);
   } else {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj = { username: null, usernameOnClick: null, medium: null, helpCenterLink: null };
@@ -104,10 +104,10 @@ export const getPrivateChannelIntegrationAddedSystemMessageASTContent = function
     obj[1] = usernameOnClick;
     obj[2] = medium;
     const obj1 = { url: null };
-    obj1[0] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj1[0] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     obj[3] = obj1;
     formatToPartsResult = intl2.formatToParts(require(1236) /* getSystemLocale */.t.ojysqe, obj);
-    const obj6 = importDefault(1945);
+    const obj6 = importDefault(1974);
   }
   return formatToPartsResult;
 };
@@ -126,10 +126,10 @@ export const getPrivateChannelIntegrationRemovedSystemMessageASTContent = functi
     obj[3] = tmp;
     obj[4] = medium;
     obj = { url: null };
-    obj[0] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj[0] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     obj[5] = obj;
     let formatToPartsResult = intl.formatToParts(require(1236) /* getSystemLocale */.t.zmc0mq, obj);
-    const obj3 = importDefault(1945);
+    const obj3 = importDefault(1974);
   } else {
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj = { username: null, usernameOnClick: null, medium: null, helpCenterLink: null };
@@ -137,10 +137,10 @@ export const getPrivateChannelIntegrationRemovedSystemMessageASTContent = functi
     obj[1] = usernameOnClick;
     obj[2] = medium;
     const obj1 = { url: null };
-    obj1[0] = importDefault(1945).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
+    obj1[0] = importDefault(1974).getArticleURL(constants.PRIVATE_CHANNEL_INTEGRATIONS);
     obj[3] = obj1;
     formatToPartsResult = intl2.formatToParts(require(1236) /* getSystemLocale */.t["x2CN/Z"], obj);
-    const obj6 = importDefault(1945);
+    const obj6 = importDefault(1974);
   }
   return formatToPartsResult;
 };

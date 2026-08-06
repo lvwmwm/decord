@@ -1,9 +1,9 @@
-// Module ID: 7008
-// Function ID: 7009
+// Module ID: 7035
+// Function ID: 7036
 // Name: getCommittedVersions
-// Dependencies: [32, 5, 1862, 3, 1907, 1351, 2]
+// Dependencies: [32, 5, 1891, 3, 1936, 1351, 2]
 
-// Module 7008 (getCommittedVersions)
+// Module 7035 (getCommittedVersions)
 import _slicedToArray from "_slicedToArray";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -184,7 +184,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGui
   const self = this;
   this.reset();
   const items = [...unavailableGuilds.unavailableGuilds];
-  const result = importDefault(1907).guildVersionsTransaction(database);
+  const result = importDefault(1936).guildVersionsTransaction(database);
   result.deleteAllExcept(items);
   for (const item10029 of tmp3) {
     let items1 = [item10029];
@@ -358,7 +358,7 @@ prototype["commit"] = function commit(database) {
   let tmp7;
   const self = this;
   if (this.pending.size > 0) {
-    const result = importDefault(1907).guildVersionsTransaction(database);
+    const result = importDefault(1936).guildVersionsTransaction(database);
     const pending2 = self.pending;
     const tmp21 = pending2[Symbol.iterator]();
     while (tmp21 !== undefined) {
@@ -385,7 +385,7 @@ prototype["commit"] = function commit(database) {
     }
     const pending = self.pending;
     pending.clear();
-    const obj2 = importDefault(1907);
+    const obj2 = importDefault(1936);
   }
 };
 let set = Object.create(GuildVersions.prototype);

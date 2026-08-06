@@ -1,10 +1,10 @@
-// Module ID: 9500
-// Function ID: 9501
+// Module ID: 9529
+// Function ID: 9530
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 8684, 7238, 9501, 1874, 676, 5753, 1876, 21, 3, 6786, 6787, 3916, 9502, 9472, 1236, 9503, 3901, 5755, 9325, 7227, 589, 9504, 9467, 8687, 8680, 4594, 698, 5615, 7218, 709, 500, 7267, 2]
+// Dependencies: [5, 32, 19, 8713, 7265, 9530, 1903, 676, 5780, 1905, 21, 3, 6813, 6814, 3945, 9531, 9501, 1236, 9532, 3930, 5782, 9354, 7254, 589, 9533, 9496, 8716, 8709, 4624, 698, 5669, 7245, 709, 500, 7295, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 9500 (NativeGiftContextProvider)
+// Module 9529 (NativeGiftContextProvider)
 import frozen from "frozen";
 import importDefaultResult from "dispatcher";
 import getPremiumPlanItem from "getPremiumPlanItem";
@@ -276,7 +276,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
       closure_13 = undefined;
       table = undefined;
       jsx = undefined;
-      obj = { orderId: "a", planId: "<string:4129030147>", planSelection: "<string:481624066>", giftInfo: "<string:116260867>" };
+      obj = { orderId: "a", planId: null, planSelection: null, giftInfo: null };
       obj = { premiumType: null, planInterval: null };
       obj[0] = first;
       obj[1] = first1;

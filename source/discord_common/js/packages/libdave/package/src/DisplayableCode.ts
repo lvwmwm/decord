@@ -1,10 +1,10 @@
-// Module ID: 9090
-// Function ID: 9091
+// Module ID: 9119
+// Function ID: 9120
 // Name: generateDisplayableCode
 // Dependencies: [2]
 // Exports: generateDisplayableCode
 
-// Module 9090 (generateDisplayableCode)
+// Module 9119 (generateDisplayableCode)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdave/package/src/DisplayableCode.ts");
 
 export const generateDisplayableCode = function generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize) {

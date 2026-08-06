@@ -1,10 +1,10 @@
-// Module ID: 7649
-// Function ID: 7650
+// Module ID: 7677
+// Function ID: 7678
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1862, 5744, 676, 7650, 5742, 1222, 5850, 7651, 2]
+// Dependencies: [5, 1891, 5771, 676, 7678, 5769, 1222, 5877, 7679, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 7649 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 7677 (navigateToSocialLayerStorefrontWithGuildPreview)
 import getPrice from "getPrice";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
@@ -72,7 +72,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
               if (null != set) {
                 if (!set.has(guild3.PREVIEW_ENABLED)) {
                   if (null != lib) {
-                    let obj4 = lib(7651);
+                    let obj4 = lib(7679);
                     let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                     obj2[0] = lib.code;
                     obj2[1] = { location: "game_shop" };
@@ -87,7 +87,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
               c3 = 2;
               guild = 1;
               obj4 = { value: null, done: false };
-              obj4[0] = id(5850).startLurking(id, {}, { shouldNavigate: false });
+              obj4[0] = id(5877).startLurking(id, {}, { shouldNavigate: false });
               return obj4;
             }
           } else {
@@ -146,7 +146,7 @@ export default function navigateToSocialLayerStorefront(arg0) {
   }
   let socialLayerStorefrontGuildId = guildId;
   if (guildId == null) {
-    let obj = require(5742) /* getPrice */;
+    let obj = require(5769) /* getPrice */;
     socialLayerStorefrontGuildId = obj.getSocialLayerStorefrontGuildId(applicationId);
   }
   if (null == applicationIdFromGuildId) {
@@ -183,7 +183,7 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
     guildId = id;
   }
   if (null != guildId) {
-    let obj = require(7650) /* _fetchSocialLayerStorefront */;
+    let obj = require(7678) /* _fetchSocialLayerStorefront */;
     obj = { eager: true, forceFetch: null };
     obj[1] = forceFetch.forceFetch;
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
@@ -193,6 +193,6 @@ export const eagerNavigateToSocialLayerStorefrontForApplication = function eager
   let applicationId;
   let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = require(7650) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = require(7678) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

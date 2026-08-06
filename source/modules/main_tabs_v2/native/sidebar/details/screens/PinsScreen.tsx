@@ -1,8 +1,8 @@
-// Module ID: 15787
-// Function ID: 15788
-// Dependencies: [19, 17, 1372, 8180, 21, 4255, 712, 1483, 589, 11555, 15651, 2]
+// Module ID: 15827
+// Function ID: 15828
+// Dependencies: [19, 17, 1372, 8320, 21, 4285, 712, 1483, 589, 11589, 15689, 2]
 
-// Module 15787
+// Module 15827
 import { View } from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SearchTabs } from "MessageEmbedTypes";
@@ -28,8 +28,8 @@ const memoResult = require("noop").memo(() => {
     return guild_id;
   });
   const obj2 = channelId(589);
-  const channelDetailsSearchContext = channelId(11555).useChannelDetailsSearchContext(channelId, stateFromStores);
-  obj = { style: callback().container, children: jsx(importDefault(15651), obj) };
+  const channelDetailsSearchContext = channelId(11589).useChannelDetailsSearchContext(channelId, stateFromStores);
+  obj = { style: callback().container, children: jsx(importDefault(15689), obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
   return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;
 });

@@ -1,8 +1,8 @@
-// Module ID: 4448
-// Function ID: 4449
-// Dependencies: [676, 709, 698, 4449, 1231, 2]
+// Module ID: 4478
+// Function ID: 4479
+// Dependencies: [676, 709, 698, 4479, 1231, 2]
 
-// Module 4448
+// Module 4478
 import ME from "ME";
 
 let c3;
@@ -37,9 +37,9 @@ export default {
     }
     let obj = importDefault(698);
     obj = { video_layout: layout };
-    const merged = Object.assign(require(4449) /* collectGuildAnalyticsMetadata */.collectVoiceAnalyticsMetadata(channelId));
+    const merged = Object.assign(require(4479) /* collectGuildAnalyticsMetadata */.collectVoiceAnalyticsMetadata(channelId));
     obj.track(constants2.VIDEO_LAYOUT_TOGGLED, obj);
-    const obj3 = require(4449) /* collectGuildAnalyticsMetadata */;
+    const obj3 = require(4479) /* collectGuildAnalyticsMetadata */;
     obj = { type: "CHANNEL_RTC_UPDATE_LAYOUT", channelId, layout, appContext: APP };
     importDefault(709).dispatch(obj);
   },

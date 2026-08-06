@@ -1,10 +1,10 @@
-// Module ID: 5763
-// Function ID: 5764
+// Module ID: 5790
+// Function ID: 5791
 // Name: useIsVibegrationsGuildEnabled
 // Dependencies: [676, 1452, 2]
 // Exports: isVibegrationsGuildEnabled, useIsVibegrationsGuildEnabled
 
-// Module 5763 (useIsVibegrationsGuildEnabled)
+// Module 5790 (useIsVibegrationsGuildEnabled)
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
 import ApexExperiment from "ApexExperiment";
 

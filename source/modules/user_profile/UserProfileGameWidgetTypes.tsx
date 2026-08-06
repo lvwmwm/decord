@@ -1,10 +1,10 @@
-// Module ID: 6976
-// Function ID: 6977
+// Module ID: 7003
+// Function ID: 7004
 // Name: items
-// Dependencies: [6975, 4785, 6977, 2]
+// Dependencies: [7002, 4815, 7004, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 6976 (items)
+// Module 7003 (items)
 const items = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.WANT_TO_PLAY_GAMES, require("WidgetType").WidgetType.PLAYED_GAMES];
 let BaseGameWidget;
 class BaseGameWidget {
@@ -20,7 +20,7 @@ class BaseGameWidget {
 const prototype = BaseGameWidget.prototype;
 prototype["toSubmission"] = function toSubmission() {
   let obj = { id: this.id, data: null };
-  obj = { type: this.type, games: games.map((applicationId) => ({ game_id: applicationId.applicationId, comment: applicationId.comment, tags: applicationId.tags })) };
+  obj = { type: this.type, games: games.map((gameId) => ({ game_id: gameId.gameId, comment: gameId.comment, tags: gameId.tags })) };
   games = this.games;
   obj[1] = obj;
   return obj;
@@ -32,7 +32,7 @@ prototype["isValid"] = function isValid() {
   const self = this;
   let tmp = this.games.length > 0;
   if (tmp) {
-    tmp = self.games.length <= require(4785) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_LIMITS_BY_TYPE[self.type];
+    tmp = self.games.length <= require(4815) /* GAME_WIDGET_LIMITS_BY_TYPE */.GAME_WIDGET_LIMITS_BY_TYPE[self.type];
   }
   return tmp;
 };
@@ -42,8 +42,8 @@ prototype["isEqual"] = function isEqual(type) {
     const self = this;
     let areWidgetGamesEqualResult = type.type === this.type;
     if (areWidgetGamesEqualResult) {
-      areWidgetGamesEqualResult = require(6977) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
-      const obj = require(6977) /* findGameWidget */;
+      areWidgetGamesEqualResult = require(7004) /* findGameWidget */.areWidgetGamesEqual(self.games, type.games, self.type);
+      const obj = require(7004) /* findGameWidget */;
     }
     tmp = areWidgetGamesEqualResult;
   }

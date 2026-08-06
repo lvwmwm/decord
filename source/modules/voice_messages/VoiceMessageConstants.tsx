@@ -1,9 +1,9 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11286
+// Function ID: 11287
 // Name: VoiceMessageAnimationState
 // Dependencies: [2]
 
-// Module 11252 (VoiceMessageAnimationState)
+// Module 11286 (VoiceMessageAnimationState)
 const result = require("set").fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");
 
 export const VoiceMessageAnimationState = { SENDING: 0, [0]: "SENDING", CANCELLING: 1, [1]: "CANCELLING", LOCKING: 2, [2]: "LOCKING", LOCKED: 3, [3]: "LOCKED" };

@@ -1,10 +1,10 @@
-// Module ID: 11755
-// Function ID: 11756
+// Module ID: 11789
+// Function ID: 11790
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 4142, 4143, 1369, 1358, 589, 11748, 5916, 1360, 2]
+// Dependencies: [32, 19, 4172, 4173, 1369, 1358, 589, 11782, 5943, 1360, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 11755 (useGuildPowerupsNewBadge)
+// Module 11789 (useGuildPowerupsNewBadge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -26,13 +26,13 @@ export default function useGuildPowerupsNewBadge(arg0) {
   let obj = _require(589);
   const items = [calculateAppliedBoosts];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_5.getStateForGuild(closure_0));
-  const tmp4Result = importDefault(11748)(arg0, stateFromStores);
+  const tmp4Result = importDefault(11782)(arg0, stateFromStores);
   let num = 0;
   if (tmp4Result >= constants.GUILD_THEME) {
     num = tmp4Result;
   }
   const tmp = _require;
-  const tmp4 = importDefault(11748);
+  const tmp4 = importDefault(11782);
   let tmp6 = null;
   if (num > 0) {
     tmp6 = null;
@@ -40,7 +40,7 @@ export default function useGuildPowerupsNewBadge(arg0) {
       tmp6 = closure_8;
     }
   }
-  const tmp7 = callback(_require(5916).useSelectedVersionedDismissibleContent(tmp6, num), 2);
+  const tmp7 = callback(_require(5943).useSelectedVersionedDismissibleContent(tmp6, num), 2);
   _require = tmp8;
   importDefault = tmp9;
   const items1 = [tmp7[0] === closure_8, tmp7[1]];
@@ -63,7 +63,7 @@ export const useAutoDismissGuildPowerupsNewBadge = function useAutoDismissGuildP
   const items = [calculateAppliedBoosts];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_5.getStateForGuild(closure_0));
   let obj = _require(589);
-  const tmp2Result = num(11748)(guildId, stateFromStores);
+  const tmp2Result = num(11782)(guildId, stateFromStores);
   num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {
     num = tmp2Result;

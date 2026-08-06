@@ -1,9 +1,9 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6931
+// Function ID: 6932
 // Name: fromServer
-// Dependencies: [1883, 6905, 688, 2]
+// Dependencies: [1912, 6932, 688, 2]
 
-// Module 6904 (fromServer)
+// Module 6931 (fromServer)
 import "toJS";
 
 const require = arg1;
@@ -41,17 +41,17 @@ prototype["fromServer"] = function fromServer(styles) {
     obj = { backgroundColors: null, buttonColors: null, confettiColors: null };
     const background_colors = styles.background_colors;
     obj[0] = background_colors.map((color) => {
-      const tmp = callback2(6905);
+      const tmp = callback2(6932);
       return tmp(callback(688).int2hex(color));
     });
     const button_colors = styles.button_colors;
     obj[1] = button_colors.map((color) => {
-      const tmp = callback2(6905);
+      const tmp = callback2(6932);
       return tmp(callback(688).int2hex(color));
     });
     const confetti_colors = styles.confetti_colors;
     obj[2] = confetti_colors.map((color) => {
-      const tmp = callback2(6905);
+      const tmp = callback2(6932);
       return tmp(callback(688).int2hex(color));
     });
     tmp5 = obj;

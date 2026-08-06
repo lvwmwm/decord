@@ -1,9 +1,9 @@
-// Module ID: 8603
-// Function ID: 8604
+// Module ID: 8632
+// Function ID: 8633
 // Name: EmojiItemLockedOverlay
-// Dependencies: [19, 17, 1302, 8534, 1338, 21, 4255, 712, 500, 689, 1416, 4774, 4797, 5221, 4101, 5287, 5288, 1297, 8604, 2]
+// Dependencies: [19, 17, 1302, 8563, 1338, 21, 4285, 712, 500, 689, 1416, 4804, 4827, 5251, 4130, 5341, 5342, 1297, 8633, 2]
 
-// Module 8603 (EmojiItemLockedOverlay)
+// Module 8632 (EmojiItemLockedOverlay)
 import importAllResult from "set";
 import get_ActivityIndicator from "Button";
 import handleThemeChange from "handleThemeChange";
@@ -21,7 +21,7 @@ let metroImportAll;
 const require = arg1;
 function EmojiItemLockedOverlay() {
   const tmp = callback2();
-  obj = { style: tmp.lockContainer, children: callback(require(4774) /* LockIcon */.LockIcon, obj) };
+  obj = { style: tmp.lockContainer, children: callback(require(4804) /* LockIcon */.LockIcon, obj) };
   obj = { style: tmp.lock };
   return callback(closure_3, obj);
 }
@@ -72,19 +72,19 @@ function EmojiItem(emoji) {
   if (null != emoji.id) {
     const obj1 = { resizeMode: "contain", style: null, placeholder: null, source: null, usesSmallCache: true };
     obj1[1] = tmp.image;
-    const tmp15 = importDefault(5221);
+    const tmp15 = importDefault(5251);
     if (tmp7Result.isThemeDark(theme.theme)) {
-      tmp8 = 5287;
+      tmp8 = 5341;
       let tmp14Result = tmp14(tmp8);
     } else {
-      tmp14Result = tmp14(5288);
+      tmp14Result = tmp14(5342);
     }
     obj1[2] = tmp14Result;
     const obj2 = { uri: null };
     obj2[0] = emojiURL;
     obj1[3] = obj2;
     callback(tmp15, obj1);
-    tmp7Result = tmp7(4101);
+    tmp7Result = tmp7(4130);
   } else {
     const obj3 = { allowFontScaling: false, style: null, children: null };
     obj3[1] = tmp.surrogates;
@@ -96,7 +96,7 @@ function EmojiItem(emoji) {
     }
     items1[1] = disabled;
     obj[5] = items1;
-    return closure_8(emoji(4797).PressableOpacity, obj);
+    return closure_8(emoji(4827).PressableOpacity, obj);
   }
 }
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
@@ -202,7 +202,7 @@ let closure_12 = importAllResult.memo((emojis) => {
     }
   };
   obj1 = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return callback(importDefault(8604), obj);
+  return callback(importDefault(8633), obj);
 });
 let closure_13 = importAllResult.memo((arg0) => {
   let animateEmoji;

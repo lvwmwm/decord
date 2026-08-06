@@ -1,9 +1,9 @@
-// Module ID: 10324
-// Function ID: 10325
+// Module ID: 10355
+// Function ID: 10356
 // Name: handleUpdateActivity
-// Dependencies: [1372, 1862, 4326, 3892, 1931, 1874, 5088, 1377, 5084, 676, 3888, 9545, 5094, 4445, 5087, 659, 589, 709, 2]
+// Dependencies: [1372, 1891, 4356, 3921, 1960, 1903, 5118, 1377, 5114, 676, 3917, 9574, 5124, 4475, 5117, 659, 589, 709, 2]
 
-// Module 10324 (handleUpdateActivity)
+// Module 10355 (handleUpdateActivity)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";
@@ -31,7 +31,7 @@ function handleUpdateActivity() {
       channel = channel.getChannel(voiceChannelId);
       tmp2 = null;
       if (null != channel) {
-        let obj1 = importAll(3888);
+        let obj1 = importAll(3917);
         tmp2 = null;
         if (obj1.canEveryone(constants2.VIEW_CHANNEL, channel)) {
           guild = guild.getGuild(channel.getGuildId());
@@ -40,7 +40,7 @@ function handleUpdateActivity() {
             const features = guild.features;
             tmp2 = null;
             if (features.has(constants.DISCOVERABLE)) {
-              let obj2 = require(9545) /* unpackStageChannelParty */;
+              let obj2 = require(9574) /* unpackStageChannelParty */;
               const result = obj2.packStageChannelPartyId(channel, stageInstanceByChannel);
               let id;
               if (_null != null) {
@@ -53,7 +53,7 @@ function handleUpdateActivity() {
               if (id === result) {
                 tmp15 = _null;
               }
-              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5094).StageChannelParticipantNamedIndex.SPEAKER);
+              const mutableParticipants = store.getMutableParticipants(channel.id, tmp12(5124).StageChannelParticipantNamedIndex.SPEAKER);
               const length = mutableParticipants.filter((type) => type.type === callback(table[12]).StageChannelParticipantTypes.STREAM).length;
               const diff = mutableParticipants.length - length;
               let size;
@@ -75,11 +75,11 @@ function handleUpdateActivity() {
                 topic = channel.topic;
               }
               if (topic == null) {
-                let tmp12Result = tmp12(4445);
+                let tmp12Result = tmp12(4475);
                 topic = tmp12Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
               }
               obj[1] = topic;
-              tmp12Result = tmp12(5087);
+              tmp12Result = tmp12(5117);
               obj[2] = tmp12Result.getStageHasMedia(channel.id) ? closure_13.WATCHING : closure_13.LISTENING;
               let start;
               if (tmp15 != null) {
@@ -169,9 +169,9 @@ const stageChannelSelfRichPresenceStore = new StageChannelSelfRichPresenceStore(
     voiceStates = voiceStates.voiceStates;
     let _require;
     if (null != c17) {
-      const result = _require(9545).unpackStageChannelParty(c17);
+      const result = _require(9574).unpackStageChannelParty(c17);
       _require = result;
-      const obj = _require(9545);
+      const obj = _require(9574);
       if (tmp5) {
         handleUpdateActivity();
       }

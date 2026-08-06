@@ -1,10 +1,10 @@
-// Module ID: 4714
-// Function ID: 4715
+// Module ID: 4744
+// Function ID: 4745
 // Name: match
-// Dependencies: [17, 4715, 3896, 3954, 4694, 1416, 4695, 4782, 4285, 1236, 4698, 2]
+// Dependencies: [17, 4745, 3925, 3983, 4724, 1416, 4725, 4812, 4315, 1236, 4728, 2]
 // Exports: decorateWithIcon
 
-// Module 4714 (match)
+// Module 4744 (match)
 import { Image } from "get ActivityIndicator";
 
 const re4 = /^[\u200B-\u200D\uFEFF\u180E\u061C]/;
@@ -25,7 +25,7 @@ obj = {
           const json = JSON.stringify(match[0]);
           tmp3 = null;
         }
-        obj = importDefault(3896);
+        obj = importDefault(3925);
       }
       return tmp3;
     }
@@ -48,7 +48,7 @@ obj[2] = {
       obj[0] = arg0[0];
       return obj;
     } else {
-      obj = importDefault(3896);
+      obj = importDefault(3925);
       const result = obj.maybeTranslateSurrogatesToInlineEmoji(arg0[0]);
       if (null == result) {
         obj = { content: null };
@@ -66,7 +66,7 @@ obj[2] = {
 };
 obj[3] = {
   parse(content) {
-    let obj = importDefault(3896);
+    let obj = importDefault(3925);
     obj = { type: "emoji", content: content[0], surrogate: obj.convertNameToSurrogate(content[1]) };
     return obj;
   }
@@ -101,7 +101,7 @@ obj[4] = {
 };
 obj[5] = {
   parse(arg0, arg1, arg2) {
-    const channelMention = importDefault(4695).channelMention;
+    const channelMention = importDefault(4725).channelMention;
     const parsed = channelMention.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -169,49 +169,29 @@ obj[5] = {
   }
 };
 obj[6] = {
-  parse(closure_0, arg1, returnMentionIds) {
-    if (returnMentionIds.returnMentionIds) {
-      let obj = { type: "gameMention", gameId: null };
-      obj[1] = tmp;
-      return obj;
-    } else {
-      obj = require(4782) /* getGameMentionData */;
-      const gameMentionData = obj.getGameMentionData(tmp);
-      let gameIcon;
-      if (gameMentionData != null) {
-        gameIcon = gameMentionData.gameIcon;
-      }
-      obj = { type: "gameMention", gameId: null, channelId: null, gameName: null, gameIcon: null, icon: null, displayName: null };
-      obj[1] = tmp;
-      obj[2] = returnMentionIds.channelId;
-      let gameName;
-      const tmp6 = importDefault(4285);
-      if (gameMentionData != null) {
-        gameName = gameMentionData.gameName;
-      }
-      obj[3] = gameName;
-      let gameIcon1;
-      if (gameMentionData != null) {
-        gameIcon1 = gameMentionData.gameIcon;
-      }
-      obj[4] = gameIcon1;
-      obj[5] = importDefault(4285)(tmp, gameIcon, { size: 32 });
-      let gameName1;
-      if (gameMentionData != null) {
-        gameName1 = gameMentionData.gameName;
-      }
-      if (gameName1 == null) {
-        const intl = tmp2(1236).intl;
-        gameName1 = intl.string(tmp2(1236).t["11pdXZ"]);
-      }
-      obj[6] = gameName1;
-      return obj;
+  parse(closure_0, arg1, channelId) {
+    let obj = require(4812) /* getGameMentionData */;
+    const gameMentionData = obj.getGameMentionData(tmp);
+    let gameIcon;
+    if (gameMentionData != null) {
+      gameIcon = gameMentionData.gameIcon;
     }
+    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: importDefault(4315)(tmp, gameIcon, { size: 32 }), displayName: null };
+    let gameName;
+    if (gameMentionData != null) {
+      gameName = gameMentionData.gameName;
+    }
+    if (gameName == null) {
+      const intl = tmp2(1236).intl;
+      gameName = intl.string(tmp2(1236).t["11pdXZ"]);
+    }
+    obj[4] = gameName;
+    return obj;
   }
 };
 obj[7] = {
   parse(arg0, arg1, arg2) {
-    const channelOrMessageUrl = importDefault(4695).channelOrMessageUrl;
+    const channelOrMessageUrl = importDefault(4725).channelOrMessageUrl;
     const parsed = channelOrMessageUrl.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -280,7 +260,7 @@ obj[7] = {
 };
 obj[8] = {
   parse(arg0, arg1, arg2) {
-    const mediaPostLink = importDefault(4695).mediaPostLink;
+    const mediaPostLink = importDefault(4725).mediaPostLink;
     const parsed = mediaPostLink.parse(arg0, arg1, arg2);
     let obj = {};
     let merged = Object.assign(parsed);
@@ -349,7 +329,7 @@ obj[8] = {
 };
 obj[9] = {
   parse(arg0, arg1, arg2) {
-    const attachmentLink = importDefault(4698).attachmentLink;
+    const attachmentLink = importDefault(4728).attachmentLink;
     return attachmentLink.parse(arg0, arg1, arg2);
   }
 };

@@ -1,16 +1,16 @@
-// Module ID: 10629
-// Function ID: 10630
+// Module ID: 10684
+// Function ID: 10685
 // Name: CALL_ACTION_BAR_HEIGHT
-// Dependencies: [7789, 2]
+// Dependencies: [7930, 2]
 // Exports: useGetActionBarHeight, useGetStageRTCPanelHeight
 
-// Module 10629 (CALL_ACTION_BAR_HEIGHT)
+// Module 10684 (CALL_ACTION_BAR_HEIGHT)
 const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelHeightHooks.tsx");
 
 export const CALL_ACTION_BAR_HEIGHT = 112;
 export const useGetStageRTCPanelHeight = function useGetStageRTCPanelHeight(stateFromStores) {
-  const stageBlockedUsersCount = require(7789) /* useStageBlockedUsersCount */.useStageBlockedUsersCount(stateFromStores);
-  require(7789) /* useStageBlockedUsersCount */;
+  const stageBlockedUsersCount = require(7930) /* useStageBlockedUsersCount */.useStageBlockedUsersCount(stateFromStores);
+  require(7930) /* useStageBlockedUsersCount */;
   if (stageBlockedUsersCount > 0) {
     let num = 88;
   } else {
@@ -19,8 +19,8 @@ export const useGetStageRTCPanelHeight = function useGetStageRTCPanelHeight(stat
   return num;
 };
 export const useGetActionBarHeight = function useGetActionBarHeight(id) {
-  const stageBlockedUsersCount = require(7789) /* useStageBlockedUsersCount */.useStageBlockedUsersCount(id);
-  require(7789) /* useStageBlockedUsersCount */;
+  const stageBlockedUsersCount = require(7930) /* useStageBlockedUsersCount */.useStageBlockedUsersCount(id);
+  require(7930) /* useStageBlockedUsersCount */;
   if (stageBlockedUsersCount > 0) {
     let num = 132;
   } else {

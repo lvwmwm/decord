@@ -1,9 +1,9 @@
-// Module ID: 16046
-// Function ID: 16047
+// Module ID: 16086
+// Function ID: 16087
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 16046 (apexExperiment)
+// Module 16086 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { defaultSpeakerForGuildCall: true, defaultSpeakerForDMCall: false } };

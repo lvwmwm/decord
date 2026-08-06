@@ -1,8 +1,8 @@
-// Module ID: 8982
-// Function ID: 8983
-// Dependencies: [32, 19, 17, 8983, 21, 4255, 712, 4671, 5353, 9018, 7644, 8987, 2]
+// Module ID: 9011
+// Function ID: 9012
+// Dependencies: [32, 19, 17, 9012, 21, 4285, 712, 4701, 5407, 9047, 7672, 9016, 2]
 
-// Module 8982
+// Module 9011
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -28,7 +28,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
   onItemPressed = onItemPressed.onItemPressed;
   let closure_1;
   let dependencyMap;
-  let obj = onItemPressed(4671);
+  let obj = onItemPressed(4701);
   closure_1 = obj.useFontScale();
   const tmp = callback2();
   [arr, c2] = callback(importAllResult.useState(closure_8), 2);
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
     obj[1] = tmpResult;
     return outer1_9(outer1_5, obj, type.type);
   })}</closure_6>;
-  return jsx(onItemPressed(5353).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5407).GestureDetector, { gesture, children });
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

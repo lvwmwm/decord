@@ -1,8 +1,8 @@
-// Module ID: 13660
-// Function ID: 13661
-// Dependencies: [676, 13661, 2]
+// Module ID: 13697
+// Function ID: 13698
+// Dependencies: [676, 13698, 2]
 
-// Module 13660
+// Module 13697
 let ACCEPT_ACTIVITY_INVITE;
 let ACTIVITY_INVITE_USER;
 let BILLING_POPUP_BRIDGE_CALLBACK;

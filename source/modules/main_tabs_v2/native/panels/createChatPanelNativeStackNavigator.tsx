@@ -1,32 +1,39 @@
-// Module ID: 14954
-// Function ID: 14955
-// Name: navigatorFactory
-// Dependencies: [19, 21, 1481, 4106, 13303, 8353, 2]
+// Module ID: 14992
+// Function ID: 14993
+// Name: ChatPanelNativeStackNavigator
+// Dependencies: [19, 21, 1481, 4135, 13340, 8493, 2]
+// Exports: default
 
-// Module 14954 (navigatorFactory)
+// Module 14992 (ChatPanelNativeStackNavigator)
 import noop from "noop";
 import { jsx } from "jsxProd";
-import Link from "Link";
 
 const require = arg1;
-const navigatorFactory = Link.createNavigatorFactory(function ChatPanelNativeStackNavigator(arg0) {
+function ChatPanelNativeStackNavigator(arg0) {
+  let NavigationContent;
+  let UNSTABLE_routeNamesChangeBehavior;
+  let UNSTABLE_router;
   let children;
+  let describe;
   let id;
   let initialRouteName;
+  let layout;
+  let screenLayout;
   let screenListeners;
   let screenOptions;
-  ({ id, initialRouteName, children, screenListeners, screenOptions } = arg0);
+  ({ id, initialRouteName, UNSTABLE_routeNamesChangeBehavior, children, layout, screenListeners, screenOptions, screenLayout, UNSTABLE_router } = arg0);
   let merged = Object.assign(arg0, Object.create(null));
   let state;
   let descriptors;
   let navigation;
   let state2;
   let obj = state(descriptors[2]);
-  const navigationBuilder = obj.useNavigationBuilder(state(descriptors[2]).StackRouter, { id, initialRouteName, children, screenListeners, screenOptions });
+  const navigationBuilder = obj.useNavigationBuilder(state(descriptors[2]).StackRouter, { id, initialRouteName, UNSTABLE_routeNamesChangeBehavior, children, layout, screenListeners, screenOptions, screenLayout, UNSTABLE_router });
   state = navigationBuilder.state;
   descriptors = navigationBuilder.descriptors;
   navigation = navigationBuilder.navigation;
   let items = [state, descriptors];
+  ({ describe, NavigationContent } = navigationBuilder);
   const memo = navigation.useMemo(() => {
     const state = {};
     const merged = Object.assign(state);
@@ -113,9 +120,12 @@ const navigatorFactory = Link.createNavigatorFactory(function ChatPanelNativeSta
   obj.state = state2;
   obj.navigation = navigation;
   obj.descriptors = accessibilityPatchedDescriptors;
+  obj.describe = describe;
   obj[0] = state2(state(descriptors[5]).NativeStackView, obj);
-  return state2(navigationBuilder.NavigationContent, obj);
-});
-const result = require("Link").fileFinishedImporting("modules/main_tabs_v2/native/panels/createChatPanelNativeStackNavigator.tsx");
+  return state2(NavigationContent, obj);
+}
+const result = require("createStandardNavigationFactories").fileFinishedImporting("modules/main_tabs_v2/native/panels/createChatPanelNativeStackNavigator.tsx");
 
-export default navigatorFactory;
+export default function createChatPanelNativeStackNavigator(arg0) {
+  return require(1481) /* createStandardNavigationFactories */.createNavigatorFactory(ChatPanelNativeStackNavigator)(arg0);
+};

@@ -1,10 +1,10 @@
-// Module ID: 7848
-// Function ID: 7849
+// Module ID: 7989
+// Function ID: 7990
 // Name: buildPlatformedThemedEmojiColorPalette
-// Dependencies: [4099, 4100, 689, 7136, 2]
+// Dependencies: [4128, 4129, 689, 7163, 2]
 // Exports: buildEmojiColorPalette
 
-// Module 7848 (buildPlatformedThemedEmojiColorPalette)
+// Module 7989 (buildPlatformedThemedEmojiColorPalette)
 function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
   let colors;
   let saturationFactor;
@@ -23,18 +23,18 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
   if (null != colors) {
     palette = null;
     if (colors.length >= 1) {
-      let obj = require(4099) /* hexToRgba */;
+      let obj = require(4128) /* hexToRgba */;
       const findColorByHsvResult = obj.findColorByHsv(colors);
-      let obj1 = importDefault(4100);
+      let obj1 = importDefault(4129);
       const parseStringResult = obj1.parseString(findColorByHsvResult);
       palette = null;
       if (null != parseStringResult) {
-        let tmp2Result = tmp2(4099);
+        let tmp2Result = tmp2(4128);
         const rawRgbToHslResult = tmp2Result.rawRgbToHsl(parseStringResult.red, parseStringResult.blue, parseStringResult.green);
-        tmp2Result = tmp2(4099);
+        tmp2Result = tmp2(4128);
         obj = { foreground: null, background: null, ratio: 3, saturationFactor: null };
         let tmp5Result = tmp5(689);
-        const colorLightnessAdjusted = tmp2(4099).getColorLightnessAdjusted(parseStringResult, 0.6, true);
+        const colorLightnessAdjusted = tmp2(4128).getColorLightnessAdjusted(parseStringResult, 0.6, true);
         obj[0] = tmp5Result(colorLightnessAdjusted.toHexString());
         obj[1] = tmp5(689)(c3);
         obj[3] = saturationFactor;
@@ -42,12 +42,12 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
         if (accessibleForegroundColor == null) {
           accessibleForegroundColor = parseStringResult;
         }
-        const tmp2Result1 = tmp2(4099);
+        const tmp2Result1 = tmp2(4128);
         const tmp8 = c3;
         obj = { foreground: null, background: null, ratio: 5, saturationFactor: null };
         tmp5Result = tmp5(689);
-        const tmp2Result2 = tmp2(4099);
-        const colorLightnessAdjusted1 = tmp2(4099).getColorLightnessAdjusted(parseStringResult, 0.6, false);
+        const tmp2Result2 = tmp2(4128);
+        const colorLightnessAdjusted1 = tmp2(4128).getColorLightnessAdjusted(parseStringResult, 0.6, false);
         obj[0] = tmp5Result(colorLightnessAdjusted1.toHexString());
         obj[1] = tmp5(689)(c4);
         obj[3] = saturationFactor;
@@ -56,29 +56,29 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
           accessibleForegroundColor1 = parseStringResult;
         }
         const tmp11 = c4;
-        const tmp2Result3 = tmp2(4099);
+        const tmp2Result3 = tmp2(4128);
         obj1 = { foreground: null, background: null, ratio: 7, saturationFactor: null };
         obj1[0] = tmp5(689)(findColorByHsvResult);
         obj1[1] = tmp5(689)(tmp8);
         obj1[3] = saturationFactor;
-        const accessibleForegroundColor2 = tmp2(4099).getAccessibleForegroundColor(obj1);
-        const tmp2Result4 = tmp2(4099);
+        const accessibleForegroundColor2 = tmp2(4128).getAccessibleForegroundColor(obj1);
+        const tmp2Result4 = tmp2(4128);
         const obj2 = { foreground: null, background: null, ratio: 7, saturationFactor: null };
         obj2[0] = tmp5(689)(findColorByHsvResult);
         obj2[1] = tmp5(689)(tmp11);
         obj2[3] = saturationFactor;
-        const accessibleForegroundColor3 = tmp2(4099).getAccessibleForegroundColor(obj2);
+        const accessibleForegroundColor3 = tmp2(4128).getAccessibleForegroundColor(obj2);
         let hexResult;
         if (accessibleForegroundColor2 != null) {
           hexResult = accessibleForegroundColor2.hex();
         }
         const obj3 = { accentColor: null, backgroundColor: null, highlightColor: null, opacity: null };
         obj3[0] = hexResult;
-        const tmp2Result5 = tmp2(4099);
+        const tmp2Result5 = tmp2(4128);
         const obj4 = { colorRGB: null, saturationFactor: null };
         obj4[0] = accessibleForegroundColor;
         obj4[1] = saturationFactor;
-        obj3[1] = tmp2(4099).getSaturatedColorHex(obj4);
+        obj3[1] = tmp2(4128).getSaturatedColorHex(obj4);
         let toHexStringResult;
         if (parseStringResult != null) {
           toHexStringResult = parseStringResult.toHexString();
@@ -101,11 +101,11 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
         }
         const obj6 = { accentColor: null, backgroundColor: null, highlightColor: null, opacity: null };
         obj6[0] = hexResult1;
-        const tmp2Result6 = tmp2(4099);
+        const tmp2Result6 = tmp2(4128);
         const obj7 = { colorRGB: null, saturationFactor: null };
         obj7[0] = accessibleForegroundColor1;
         obj7[1] = saturationFactor;
-        obj6[1] = tmp2(4099).getSaturatedColorHex(obj7);
+        obj6[1] = tmp2(4128).getSaturatedColorHex(obj7);
         let toHexStringResult1;
         if (parseStringResult != null) {
           toHexStringResult1 = parseStringResult.toHexString();
@@ -122,11 +122,11 @@ function buildPlatformedThemedEmojiColorPalette(shouldProcessMobileColors) {
         obj6[3] = num5;
         obj5[1] = obj6;
         palette = obj5;
-        const tmp2Result7 = tmp2(4099);
+        const tmp2Result7 = tmp2(4128);
       }
     }
   }
-  return importDefault(7136).applyPlatformToThemedEmojiColorPalette({ palette, shouldProcessMobileColors });
+  return importDefault(7163).applyPlatformToThemedEmojiColorPalette({ palette, shouldProcessMobileColors });
 }
 let c3 = "#ffffff";
 let c4 = "#36393e";

@@ -1,9 +1,9 @@
-// Module ID: 13774
-// Function ID: 13775
+// Module ID: 13811
+// Function ID: 13812
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 10022, 8044, 685, 676, 21, 4255, 1236, 13775, 13833, 3959, 712, 1480, 6772, 8850, 9353, 8293, 4114, 13791, 13834, 647, 4449, 10024, 5223, 8165, 4140, 1553, 11857, 9451, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10053, 8185, 685, 676, 21, 4285, 1236, 13812, 13870, 3988, 712, 1480, 6799, 8879, 9382, 8433, 4143, 13828, 13871, 647, 4479, 10055, 5253, 8305, 4170, 1481, 11891, 9480, 2]
 
-// Module 13774 (ProfileCustomizationSubsection)
+// Module 13811 (ProfileCustomizationSubsection)
 import zustandStore from "zustandStore";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import SegmentedControlPage from "SegmentedControlPage";
@@ -35,7 +35,7 @@ let items = [
     },
     id: "edit-user-profile",
     renderPage(autoFocusElement) {
-      return callback(importDefault(13775), { autoFocusElement: autoFocusElement.autoFocusElement });
+      return callback(importDefault(13812), { autoFocusElement: autoFocusElement.autoFocusElement });
     },
     subSection: ProfileCustomizationSubsection.USER_PROFILE
   },
@@ -46,7 +46,7 @@ let items = [
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return callback(importDefault(13833), {});
+      return callback(importDefault(13870), {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
@@ -221,7 +221,7 @@ const memoResult = importAllResult.memo(() => {
   if (stateFromStores) {
     stateFromStores = !tmp20;
   }
-  importDefault(nativeStackNavigation[30])(stateFromStores, (data) => {
+  const preventRemove = _require(nativeStackNavigation[30]).usePreventRemove(stateFromStores, (data) => {
     const action = data.data.action;
     const obj = { hasEdits: stateFromStores, resetPending: null, onHasEdits: null, onConfirm: null };
     obj[1] = callback(nativeStackNavigation[20]).resetAllPending;
@@ -244,7 +244,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return callback(importDefault(13775), { autoFocusElement: autoFocusElement.autoFocusElement });
+    return callback(importDefault(13812), { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };

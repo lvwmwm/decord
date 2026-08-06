@@ -1,9 +1,9 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15868
+// Function ID: 15869
 // Name: LeftAlignedHeaderTitle
-// Dependencies: [32, 19, 17, 1946, 13767, 676, 21, 8353, 4255, 712, 4251, 1481, 12562, 15829, 5907, 647, 5595, 5615, 13770, 6828, 14802, 5650, 13302, 3959, 4797, 1236, 15373, 15830, 13771, 15831, 38, 2]
+// Dependencies: [32, 19, 17, 1975, 13804, 676, 21, 8493, 4285, 712, 4281, 1481, 12599, 15869, 5934, 647, 5649, 5669, 13807, 6855, 14840, 5704, 13339, 3988, 4827, 1236, 15411, 15870, 13808, 15871, 38, 2]
 
-// Module 15828 (LeftAlignedHeaderTitle)
+// Module 15868 (LeftAlignedHeaderTitle)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getDeviceMetadata";
 import { View } from "QUICK_SWITCHER";
@@ -21,7 +21,7 @@ let unpackModuleId;
 let require = arg1;
 function LeftAlignedHeaderTitle(children) {
   const tmp = callback3();
-  return callback(require(4251) /* Text */.Heading, { lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: callback3().headerContainer, children: children.title });
+  return callback(require(4281) /* Text */.Heading, { lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: callback3().headerContainer, children: children.title });
 }
 let c4 = importAllResult;
 ({ AnalyticsPages: metroImportAll, UserSettingsSections: c9 } = ME);
@@ -170,7 +170,7 @@ const memoResult = importAllResult.memo(() => {
       return callback3(closure_14, { title: children.children });
     },
     headerTitleAlign: "center",
-    UNSTABLE_headerInsets: { left: false, right: false }
+    unstable_headerInsets: { left: false, right: false }
   };
   obj2[2] = { beforeRemove, transitionStart };
   obj2[3] = screen;

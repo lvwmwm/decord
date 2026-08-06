@@ -1,10 +1,10 @@
-// Module ID: 5620
-// Function ID: 5621
+// Module ID: 5674
+// Function ID: 5675
 // Name: getRoleIconData
-// Dependencies: [676, 500, 3896, 1450, 1416, 2]
+// Dependencies: [676, 500, 3925, 1450, 1416, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 5620 (getRoleIconData)
+// Module 5674 (getRoleIconData)
 import ME from "ME";
 import set from "set";
 import set from "parseRawEmojiObject";
@@ -25,9 +25,9 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
   } else {
     let byName;
     if (null != role.unicodeEmoji) {
-      let obj = importDefault(3896);
-      byName = obj.getByName(importDefault(3896).convertSurrogateToName(role.unicodeEmoji, false));
-      const obj2 = importDefault(3896);
+      let obj = importDefault(3925);
+      byName = obj.getByName(importDefault(3925).convertSurrogateToName(role.unicodeEmoji, false));
+      const obj2 = importDefault(3925);
     }
     ({ id, icon } = role);
     let tmp4;

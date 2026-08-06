@@ -1,10 +1,10 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13113
+// Function ID: 13114
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7652, 6879, 6779, 12565, 1218, 676, 1379, 4319, 4467, 10622, 6891, 4238, 13077, 11163, 7864, 11915, 4460, 4107, 13078, 8677, 5910, 9222, 11077, 1844, 10299, 698, 10301, 5760, 10944, 11205, 13085, 11947, 10824, 1959, 10861, 10860, 13087, 13089, 1577, 4812, 13094, 3952, 13096, 1862, 5851, 8834, 8843, 5825, 4459, 10745, 4106, 5125, 1222, 709, 5075, 1467, 8915, 13099, 13114, 500, 13125, 8959, 13132, 4574, 13133, 6894, 5615, 9107, 7071, 5118, 11052, 9920, 13205, 5103, 10483, 9172, 9166, 4221, 2]
+// Dependencies: [109, 5, 7680, 6906, 6806, 12602, 1218, 676, 1379, 4349, 4497, 10557, 6918, 4268, 13114, 11197, 8005, 11949, 4490, 4136, 13115, 8706, 5937, 9251, 11109, 1872, 10330, 698, 10332, 5787, 10976, 11239, 13122, 11981, 10561, 1988, 10558, 10556, 13124, 13126, 1605, 4842, 13131, 3981, 13133, 1891, 5878, 8863, 8872, 5852, 4489, 10800, 4135, 5155, 1222, 709, 5105, 1467, 8944, 13136, 13151, 500, 13162, 8988, 13169, 4604, 13170, 6921, 5669, 9136, 7098, 5148, 11084, 9951, 13242, 5133, 10514, 9201, 9195, 4251, 2]
 // Exports: default
 
-// Module 13076 (handleSupportedURL)
+// Module 13113 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "\u{1F9DB}\u{1F3FE}" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "<string:778043393>" };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

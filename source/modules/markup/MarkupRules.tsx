@@ -1,14 +1,13 @@
-// Module ID: 4687
-// Function ID: 4688
+// Module ID: 4717
+// Function ID: 4718
 // Name: parseLink
-// Dependencies: [32, 853, 1372, 4287, 1935, 1862, 1874, 676, 4688, 4689, 4690, 1236, 4693, 1938, 4444, 4094, 4285, 3954, 4694, 4695, 4698, 3896, 4699, 4709, 4710, 4711, 4712, 4713, 4686, 4714, 12, 2]
+// Dependencies: [32, 853, 1372, 1964, 1891, 1903, 676, 4718, 4719, 4720, 1236, 4723, 1967, 4474, 4123, 3983, 4724, 4725, 4728, 3925, 4729, 4739, 4740, 4741, 4742, 4743, 4716, 4744, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 4687 (parseLink)
+// Module 4717 (parseLink)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
-import gameFromServer from "gameFromServer";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -19,23 +18,23 @@ import importDefaultResult from "t";
 import importDefaultResult1 from "t";
 import importDefaultResult2 from "t";
 import importDefaultResult3 from "combineMarkupRules";
-import importDefaultResult4 from "useHasEnhancedRoleColors";
-import importDefaultResult5 from "useHasEnhancedRoleColors";
-import importDefaultResult6 from "useHasEnhancedRoleColors";
-import importDefaultResult7 from "useHasEnhancedRoleColors";
-import importDefaultResult8 from "useHasEnhancedRoleColors";
-import importDefaultResult9 from "useHasEnhancedRoleColors";
-import importDefaultResult10 from "useHasEnhancedRoleColors";
-import importDefaultResult11 from "useHasEnhancedRoleColors";
+import importDefaultResult4 from "extractColorStringsFromServerColors";
+import importDefaultResult5 from "extractColorStringsFromServerColors";
+import importDefaultResult6 from "extractColorStringsFromServerColors";
+import importDefaultResult7 from "extractColorStringsFromServerColors";
+import importDefaultResult8 from "extractColorStringsFromServerColors";
+import importDefaultResult9 from "extractColorStringsFromServerColors";
+import importDefaultResult10 from "extractColorStringsFromServerColors";
+import importDefaultResult11 from "extractColorStringsFromServerColors";
 import importDefaultResult12 from "combineMarkupRules";
-import importDefaultResult13 from "useHasEnhancedRoleColors";
+import importDefaultResult13 from "extractColorStringsFromServerColors";
 
 let c10;
-let closure_12;
+let c9;
 let unpackModuleId;
 const require = arg1;
 function parseLink(arg0) {
-  let obj = require(4690) /* validateContentTypes */;
+  let obj = require(4720) /* validateContentTypes */;
   const punycodeLinkResult = obj.punycodeLink(arg0[1]);
   if (null == punycodeLinkResult) {
     obj = { type: "text", content: null };
@@ -79,10 +78,10 @@ function hydrateRoleMention(arg0, guildId) {
     if (guild != null) {
       id = guild.id;
     }
-    let hasEnhancedRoleColorsForRole = require(4693) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
+    let hasEnhancedRoleColorsForRole = require(4723) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
-      hasEnhancedRoleColorsForRole = !require(1938) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
-      const tmp19Result = require(1938) /* extractColorStringsFromServerColors */;
+      hasEnhancedRoleColorsForRole = !require(1967) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
+      const tmp19Result = require(1967) /* extractColorStringsFromServerColors */;
     }
     obj = { type: "mention", channelId: null, guildId: null, roleId: null, roleColor: null, roleColors: null, roleName: null, color: null, colorString: null, content: null };
     obj[1] = guildId.channelId;
@@ -139,13 +138,13 @@ function hydrateUserMention(everyoneOrHere, channelId) {
   if (null != str) {
     str = str.toString();
     if (null != channel) {
-      let nickname = importDefault(4444).getNickname(channel.getGuildId(), channelId.channelId, str);
+      let nickname = importDefault(4474).getNickname(channel.getGuildId(), channelId.channelId, str);
       if (nickname == null) {
-        nickname = tmp4(4094).getName(str);
-        const tmp4Result = tmp4(4094);
+        nickname = tmp4(4123).getName(str);
+        const tmp4Result = tmp4(4123);
       }
       str = nickname;
-      const obj2 = importDefault(4444);
+      const obj2 = importDefault(4474);
       tmp4 = importDefault;
     }
     tmp2 = str;
@@ -184,73 +183,20 @@ function hydrateUserMention(everyoneOrHere, channelId) {
   obj[7] = items;
   return obj;
 }
-function hydrateGameMention(gameId, channelId) {
-  const mentionGames = channelId.mentionGames;
-  let value;
-  if (mentionGames != null) {
-    value = mentionGames.get(gameId);
-  }
-  detectableGame = detectableGame.getDetectableGame(gameId);
-  if (true !== channelId.returnMentionIds) {
-    if (null == value) {
-      if (null == detectableGame) {
-        let obj = { type: "text", content: null };
-        const intl2 = require(1236) /* getSystemLocale */.intl;
-        const _HermesInternal = HermesInternal;
-        obj[1] = "@" + intl2.string(require(1236) /* getSystemLocale */.t["11pdXZ"]);
-        return obj;
-      }
-    }
-  }
-  let name;
-  if (value != null) {
-    name = value.name;
-  }
-  if (name == null) {
-    let name1;
-    if (detectableGame != null) {
-      name1 = detectableGame.name;
-    }
-    name = name1;
-  }
-  if (name == null) {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    name = intl.string(require(1236) /* getSystemLocale */.t["11pdXZ"]);
-  }
-  let icon;
-  if (value != null) {
-    icon = value.icon;
-  }
-  const tmp7Result = importDefault(4285)(gameId, icon, { size: 32 });
-  obj = { type: "gameMention", gameId, channelId: channelId.channelId, gameName: null, gameIcon: null, icon: null, displayName: null };
-  let name2;
-  if (value != null) {
-    name2 = value.name;
-  }
-  obj[3] = name2;
-  let icon1;
-  if (value != null) {
-    icon1 = value.icon;
-  }
-  obj[4] = icon1;
-  obj[5] = tmp7Result;
-  obj[6] = name;
-  return obj;
-}
-({ ID_REGEX: c10, MARKDOWN_SPOILER_REGEXP: unpackModuleId, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: closure_12 } = ME);
-const re15 = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/;
-const re16 = /^$|\n *$/;
-const re17 = /^ *>>> ?/;
-const re18 = /^ *> ?/gm;
-const re19 = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
+({ ID_REGEX: c9, MARKDOWN_SPOILER_REGEXP: c10, MARKDOWN_STATIC_ROUTE_NAME_REGEXP: unpackModuleId } = ME);
+const re14 = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/;
+const re15 = /^$|\n *$/;
+const re16 = /^ *>>> ?/;
+const re17 = /^ *> ?/gm;
+const re18 = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 let obj = { newline: require("t").defaultRules.newline, paragraph: require("t").defaultRules.paragraph, escape: null, blockQuote: null, link: null, autolink: null, mailto: null, tel: null, url: null, strong: null, em: null, u: null, br: null, text: null, inlineCode: null, emoticon: null, codeBlock: null, roleMention: null, mention: null, silentPrefix: null, channelMention: null, channelOrMessageUrl: null, mediaPostLink: null, attachmentLink: null, commandMention: null, timestampMentionInput: null, gameMention: null, emoji: null, soundboard: null, customEmoji: null, timestamp: null, s: null, spoiler: null, staticRouteLink: null, heading: null, list: null, subtext: null };
 obj = {};
 let merged = Object.assign(require("t").defaultRules.escape);
 obj.match = function match(arg0, allowEscape) {
   let match = null;
   if (false !== allowEscape.allowEscape) {
-    match = importDefault(3954).defaultRules.escape.match(arg0, allowEscape, arg2);
-    const str = importDefault(3954).defaultRules.escape;
+    match = importDefault(3983).defaultRules.escape.match(arg0, allowEscape, arg2);
+    const str = importDefault(3983).defaultRules.escape;
   }
   return match;
 };
@@ -279,7 +225,7 @@ obj.parse = function parse(arg0, arg1, inQuote) {
   const BooleanResult = Boolean(regex6.exec(arg0[0]));
   let tmp2 = regex6;
   if (!BooleanResult) {
-    tmp2 = closure_18;
+    tmp2 = closure_17;
   }
   let flag = inQuote.inQuote;
   const replaced = str.replace(tmp2, "");
@@ -382,7 +328,7 @@ obj[13] = require("textRegexp");
 const obj5 = {};
 const merged6 = Object.assign(require("t").defaultRules.inlineCode);
 obj5.parse = function parse(arg0, arg1, parseInlineCodeChildContent) {
-  const inlineCode = importDefault(3954).defaultRules.inlineCode;
+  const inlineCode = importDefault(3983).defaultRules.inlineCode;
   const parsed = inlineCode.parse(arg0, arg1, parseInlineCodeChildContent);
   let tmp2 = parsed;
   if (true === parseInlineCodeChildContent.parseInlineCodeChildContent) {
@@ -571,7 +517,7 @@ obj[19] = {
 obj[20] = require("getChannel").channelMention;
 obj[21] = require("getChannel").channelOrMessageUrl;
 obj[22] = require("getChannel").mediaPostLink;
-obj[23] = require("module_4698").attachmentLink;
+obj[23] = require("module_4728").attachmentLink;
 const obj10 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["@"],
@@ -601,7 +547,7 @@ obj[24] = {
     } else {
       const items = [];
       HermesBuiltin.arraySpread(callback2(arg0[1].split(" ")).slice(1), 0);
-      const mapped = items.map((arg0) => "" + closure_13 + arg0);
+      const mapped = items.map((arg0) => "" + closure_12 + arg0);
       const _HermesInternal = HermesInternal;
       obj = { type: "commandMention", channelId: null, commandId: null, commandName: null, commandKey: null, content: null };
       obj[1] = returnMentionIds.channelId;
@@ -631,7 +577,7 @@ const obj11 = {
     } else {
       const items = [];
       HermesBuiltin.arraySpread(callback2(arg0[1].split(" ")).slice(1), 0);
-      const mapped = items.map((arg0) => "" + closure_13 + arg0);
+      const mapped = items.map((arg0) => "" + closure_12 + arg0);
       const _HermesInternal = HermesInternal;
       obj = { type: "commandMention", channelId: null, commandId: null, commandName: null, commandKey: null, content: null };
       obj[1] = returnMentionIds.channelId;
@@ -688,8 +634,8 @@ obj[26] = {
     }
     return match;
   },
-  parse(arg0, arg1, channelId) {
-    return hydrateGameMention(arg0[1], channelId);
+  parse(gameId) {
+    return { type: "gameMention", gameId: gameId[1] };
   }
 };
 const obj13 = {
@@ -702,15 +648,15 @@ const obj13 = {
     }
     return match;
   },
-  parse(arg0, arg1, channelId) {
-    return hydrateGameMention(arg0[1], channelId);
+  parse(gameId) {
+    return { type: "gameMention", gameId: gameId[1] };
   }
 };
 obj[27] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: [":"],
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3896).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3925).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arg0);
     let tmp4 = null;
     if (null != match) {
@@ -718,12 +664,12 @@ obj[27] = {
       if ("" !== tmpResult.convertNameToSurrogate(match[1])) {
         tmp4 = match;
       }
-      tmpResult = importDefault(3896);
+      tmpResult = importDefault(3925);
     }
     return tmp4;
   },
   parse(arg0) {
-    let content = importDefault(3896).convertNameToSurrogate(arg0[1]);
+    let content = importDefault(3925).convertNameToSurrogate(arg0[1]);
     if (null == content) {
       const _HermesInternal = HermesInternal;
       content = ":" + arg0[1] + ":";
@@ -735,7 +681,7 @@ const obj14 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: [":"],
   match(arg0) {
-    const EMOJI_NAME_RE = importDefault(3896).EMOJI_NAME_RE;
+    const EMOJI_NAME_RE = importDefault(3925).EMOJI_NAME_RE;
     const match = EMOJI_NAME_RE.exec(arg0);
     let tmp4 = null;
     if (null != match) {
@@ -743,12 +689,12 @@ const obj14 = {
       if ("" !== tmpResult.convertNameToSurrogate(match[1])) {
         tmp4 = match;
       }
-      tmpResult = importDefault(3896);
+      tmpResult = importDefault(3925);
     }
     return tmp4;
   },
   parse(arg0) {
-    let content = importDefault(3896).convertNameToSurrogate(arg0[1]);
+    let content = importDefault(3925).convertNameToSurrogate(arg0[1]);
     if (null == content) {
       const _HermesInternal = HermesInternal;
       content = ":" + arg0[1] + ":";
@@ -760,22 +706,22 @@ obj[28] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4699) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4729) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4699)(arg0, arg2);
+    return importDefault(4729)(arg0, arg2);
   }
 };
 const obj15 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4699) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4729) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4699)(arg0, arg2);
+    return importDefault(4729)(arg0, arg2);
   }
 };
 obj[29] = {
@@ -802,7 +748,7 @@ obj[30] = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4709) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4739) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -810,7 +756,7 @@ obj[30] = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4709) /* TIMESTAMP_FORMATS */;
+    let obj = require(4739) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
       obj = { type: "text", content: null };
@@ -827,7 +773,7 @@ const obj17 = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4709) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4739) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -835,7 +781,7 @@ const obj17 = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4709) /* TIMESTAMP_FORMATS */;
+    let obj = require(4739) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
       obj = { type: "text", content: null };
@@ -878,9 +824,9 @@ obj[33] = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = callback(arg0, 3);
-    let obj = require(4710) /* staticRouteToTranslation */;
+    let obj = require(4740) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    let obj1 = require(4710) /* staticRouteToTranslation */;
+    let obj1 = require(4740) /* staticRouteToTranslation */;
     if (null != guildId.guildId) {
       let guild = store2.getGuild(guildId.guildId);
     } else {
@@ -937,7 +883,7 @@ obj[33] = {
 };
 obj[34] = require("match");
 obj[35] = require("regExp");
-obj[36] = require("module_4713");
+obj[36] = require("module_4743");
 let items = [obj, ];
 const obj20 = {
   order: require("textRegexp").order,
@@ -947,9 +893,9 @@ const obj20 = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = callback(arg0, 3);
-    let obj = require(4710) /* staticRouteToTranslation */;
+    let obj = require(4740) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    let obj1 = require(4710) /* staticRouteToTranslation */;
+    let obj1 = require(4740) /* staticRouteToTranslation */;
     if (null != guildId.guildId) {
       let guild = store2.getGuild(guildId.guildId);
     } else {
@@ -1006,9 +952,9 @@ const obj20 = {
 };
 items[1] = require("match");
 const importDefaultResult3Result = require("combineMarkupRules")(items);
-const omitResult = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]);
-const omitResult1 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]);
-const omitResult2 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]);
+const omitResult = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "subtext", "soundboard"]);
+const omitResult1 = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["inlineCode", "codeBlock", "br", "blockQuote", "autolink", "url", "attachmentLink", "mention", "roleMention", "channelMention", "channelOrMessageUrl", "mediaPostLink", "subtext", "soundboard", "gameMention"]);
+const omitResult2 = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["codeBlock", "br", "mention", "channel", "roleMention", "attachmentLink", "subtext", "soundboard", "gameMention"]);
 let items1 = [
   importDefaultResult3Result,
   {
@@ -1048,10 +994,10 @@ const obj21 = {
     tmp = importDefaultResult3Result;
   }
 };
-const omitResult3 = require("useHasEnhancedRoleColors").omit(require("combineMarkupRules")(items1), ["blockQuote", "codeBlock", "br"]);
-const omitResult4 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "blockQuote"]);
-const omitResult5 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]);
-const omitResult6 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "blockQuote", "br"]);
+const omitResult3 = require("extractColorStringsFromServerColors").omit(require("combineMarkupRules")(items1), ["blockQuote", "codeBlock", "br"]);
+const omitResult4 = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["codeBlock", "br", "blockQuote"]);
+const omitResult5 = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["codeBlock", "br", "attachmentLink", "mention", "roleMention", "channel", "paragraph", "newline", "subtext", "soundboard"]);
+const omitResult6 = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["codeBlock", "blockQuote", "br"]);
 let items2 = [
   {
     highlightWord: {
@@ -1249,18 +1195,17 @@ const obj22 = {
     return items;
   }
 };
-const omitResult7 = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["codeBlock", "br", "inlineCode"]);
-items2[1] = require("useHasEnhancedRoleColors").omit(importDefaultResult3Result, ["url"]);
+const omitResult7 = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["codeBlock", "br", "inlineCode"]);
+items2[1] = require("extractColorStringsFromServerColors").omit(importDefaultResult3Result, ["url"]);
 const obj23 = { RULES: importDefaultResult3Result, CHANNEL_TOPIC_RULES: omitResult, VOICE_CHANNEL_STATUS_RULES: omitResult1, EMBED_TITLE_RULES: omitResult2, INLINE_REPLY_RULES: omitResult3, GUILD_VERIFICATION_FORM_RULES: omitResult4, GUILD_EVENT_RULES: omitResult6, PROFILE_BIO_RULES: omitResult5, AUTO_MODERATION_SYSTEM_MESSAGE_RULES: importDefaultResult12(items2), NATIVE_SEARCH_RESULT_LINK_RULES: omitResult7 };
 let result = require("ensureGuildLoaded").fileFinishedImporting("modules/markup/MarkupRules.tsx");
 
 export default obj23;
 export { hydrateRoleMention };
 export { hydrateUserMention };
-export { hydrateGameMention };
 export const hydrateCommandMention = function hydrateCommandMention(commandName, commandId, channelId) {
   const items = [...callback2(commandName.split(" ")).slice(1)];
-  const mapped = items.map((arg0) => "" + closure_13 + arg0);
+  const mapped = items.map((arg0) => "" + closure_12 + arg0);
   let obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName, commandKey: "" + commandId + mapped.join(""), content: null };
   obj = { type: "text", content: "" + commandName };
   const items1 = [obj];

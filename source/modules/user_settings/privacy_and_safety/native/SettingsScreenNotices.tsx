@@ -1,10 +1,10 @@
-// Module ID: 13939
-// Function ID: 13940
+// Module ID: 13976
+// Function ID: 13977
 // Name: items
-// Dependencies: [19, 17, 1874, 21, 4255, 712, 6946, 13940, 13941, 3934, 5093, 4470, 13942, 2]
+// Dependencies: [19, 17, 1903, 21, 4285, 712, 6973, 13977, 13978, 3963, 5123, 4500, 13979, 2]
 // Exports: default
 
-// Module 13939 (items)
+// Module 13976 (items)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -46,10 +46,10 @@ const obj3 = {
 items[2] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3934) /* isFeatureAgeGated */.isFeatureAgeGated(require(5093) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3963) /* isFeatureAgeGated */.isFeatureAgeGated(require(5123) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4470) /* useAgeVerificationRunner */.isAgeVerified();
-      const tmpResult = require(4470) /* useAgeVerificationRunner */;
+      isFeatureAgeGatedResult = !require(4500) /* useAgeVerificationRunner */.isAgeVerified();
+      const tmpResult = require(4500) /* useAgeVerificationRunner */;
     }
     return isFeatureAgeGatedResult;
   },
@@ -59,10 +59,10 @@ obj1[0] = items;
 const obj4 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3934) /* isFeatureAgeGated */.isFeatureAgeGated(require(5093) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3963) /* isFeatureAgeGated */.isFeatureAgeGated(require(5123) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4470) /* useAgeVerificationRunner */.isAgeVerified();
-      const tmpResult = require(4470) /* useAgeVerificationRunner */;
+      isFeatureAgeGatedResult = !require(4500) /* useAgeVerificationRunner */.isAgeVerified();
+      const tmpResult = require(4500) /* useAgeVerificationRunner */;
     }
     return isFeatureAgeGatedResult;
   },
@@ -73,10 +73,10 @@ const obj5 = { order: 100, predicate: require("getEmptyActivityFormatter").isPar
 items1[1] = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3934) /* isFeatureAgeGated */.isFeatureAgeGated(require(5093) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3963) /* isFeatureAgeGated */.isFeatureAgeGated(require(5123) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4470) /* useAgeVerificationRunner */.isAgeVerified();
-      const tmpResult = require(4470) /* useAgeVerificationRunner */;
+      isFeatureAgeGatedResult = !require(4500) /* useAgeVerificationRunner */.isAgeVerified();
+      const tmpResult = require(4500) /* useAgeVerificationRunner */;
     }
     return isFeatureAgeGatedResult;
   },
@@ -86,10 +86,10 @@ obj1[1] = items1;
 const obj6 = {
   order: 200,
   predicate() {
-    let isFeatureAgeGatedResult = require(3934) /* isFeatureAgeGated */.isFeatureAgeGated(require(5093) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = require(3963) /* isFeatureAgeGated */.isFeatureAgeGated(require(5123) /* AgeGatedFeature */.AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
-      isFeatureAgeGatedResult = !require(4470) /* useAgeVerificationRunner */.isAgeVerified();
-      const tmpResult = require(4470) /* useAgeVerificationRunner */;
+      isFeatureAgeGatedResult = !require(4500) /* useAgeVerificationRunner */.isAgeVerified();
+      const tmpResult = require(4500) /* useAgeVerificationRunner */;
     }
     return isFeatureAgeGatedResult;
   },

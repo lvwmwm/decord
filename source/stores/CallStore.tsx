@@ -1,9 +1,9 @@
-// Module ID: 4946
-// Function ID: 4947
+// Module ID: 4976
+// Function ID: 4977
 // Name: callConnect
-// Dependencies: [1372, 1931, 4072, 676, 709, 530, 12, 589, 2]
+// Dependencies: [1372, 1960, 4101, 676, 709, 530, 12, 589, 2]
 
-// Module 4946 (callConnect)
+// Module 4976 (callConnect)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_5 from "handleConnectionOpen";

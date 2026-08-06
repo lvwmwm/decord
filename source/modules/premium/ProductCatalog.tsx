@@ -1,10 +1,10 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 13243
+// Function ID: 13244
 // Name: ProductCatalogFeature
-// Dependencies: [1876, 3, 13207, 8156, 8593, 13208, 1892, 13209, 1890, 2]
+// Dependencies: [1905, 3, 13244, 8296, 8622, 13245, 1921, 13246, 1919, 2]
 // Exports: canUserUse
 
-// Module 13206 (ProductCatalogFeature)
+// Module 13243 (ProductCatalogFeature)
 import GuildFeatures from "GuildFeatures";
 import "set";
 import importDefaultResult1 from "set";
@@ -1161,20 +1161,20 @@ export const canUserUse = function canUserUse(COLLECTIBLES, isPremiumWithFractio
       perks = isPremiumWithFractionalPremiumOnly.perks;
     }
     if (null != perks) {
-      const config = importDefault(13209).getConfig({ location: "product_catalog_can_user_use" });
-      if (config !== _undefined(13209).DenormalizedPerksReadConfig.CONTROL) {
+      const config = importDefault(13246).getConfig({ location: "product_catalog_can_user_use" });
+      if (config !== _undefined(13246).DenormalizedPerksReadConfig.CONTROL) {
         let featureValue = COLLECTIBLES.getFeatureValue(isPremiumWithFractionalPremiumOnly);
         let perks1;
         if (isPremiumWithFractionalPremiumOnly != null) {
           perks1 = isPremiumWithFractionalPremiumOnly.perks;
         }
-        const tmp9Result = tmp9(1890);
-        if (config === tmp9(13209).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
+        const tmp9Result = tmp9(1919);
+        if (config === tmp9(13246).DenormalizedPerksReadConfig.DUAL_READ_RETURN_NEW) {
           featureValue = hasPerkResult;
         }
         return featureValue;
       }
-      const obj = importDefault(13209);
+      const obj = importDefault(13246);
     }
   }
   return COLLECTIBLES.getFeatureValue(isPremiumWithFractionalPremiumOnly);

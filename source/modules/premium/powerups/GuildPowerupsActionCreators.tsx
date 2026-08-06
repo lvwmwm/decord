@@ -1,10 +1,10 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11767
+// Function ID: 11768
 // Name: guildPowerupsAckNotification
-// Dependencies: [4143, 676, 709, 11734, 4492, 530, 11735, 1351, 2]
+// Dependencies: [4173, 676, 709, 11768, 4522, 530, 11769, 1351, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 11733 (guildPowerupsAckNotification)
+// Module 11767 (guildPowerupsAckNotification)
 import BoostedGuildTiers from "BoostedGuildTiers";
 import { Endpoints } from "ME";
 
@@ -24,11 +24,11 @@ export const guildPowerupsResetNotifications = function guildPowerupsResetNotifi
 export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(closure_0) {
   const _require = closure_0;
   if (true === arg1) {
-    const MOCK_LEVELS = _require(11734).MOCK_LEVELS;
-    const combined = MOCK_LEVELS.concat(_require(11734).MOCK_PERKS);
+    const MOCK_LEVELS = _require(11768).MOCK_LEVELS;
+    const combined = MOCK_LEVELS.concat(_require(11768).MOCK_PERKS);
     let obj = {};
-    obj[constants.LEVEL] = _require(11734).MOCK_LEVELS;
-    obj[constants.PERK] = _require(11734).MOCK_PERKS;
+    obj[constants.LEVEL] = _require(11768).MOCK_LEVELS;
+    obj[constants.PERK] = _require(11768).MOCK_PERKS;
     let obj2 = importDefault(709);
     obj = { type: "GUILD_POWERUP_CATALOG_FETCH_SUCCESS", guildId: null, allPowerups: null, powerupCatalog: null };
     obj[1] = closure_0;
@@ -52,7 +52,7 @@ export const fetchPowerupCatalogForGuild = function fetchPowerupCatalogForGuild(
     obj2[0] = closure_3;
     obj2[1] = closure_0;
     obj1[1] = obj2;
-    const obj5 = _require(4492);
+    const obj5 = _require(4522);
     obj1[3] = _require(530).rejectWithMigratedError();
     const result = obj5.httpGetWithCountryCodeQuery(obj1);
     return result.then((body) => {
@@ -96,7 +96,7 @@ export const fetchGuildBoostEntitlements = function fetchGuildBoostEntitlements(
   if (arg1 === undefined) {
     flag = true;
   }
-  let obj = _require(4492);
+  let obj = _require(4522);
   obj = { url: Endpoints.GUILD_POWERUPS(closure_0), query: { include_ends_at: flag }, oldFormErrors: true, rejectWithError: null };
   obj[3] = _require(530).rejectWithMigratedError();
   const result = obj.httpGetWithCountryCodeQuery(obj);

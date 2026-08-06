@@ -1,9 +1,9 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 8515
+// Function ID: 8516
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 8374 (__INTERNAL_VIEW_CONFIG)
+// Module 8515 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDAutoModerationSystemMessageView", validAttributes: { row: true } };

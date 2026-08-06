@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 11994
+// Function ID: 11995
 // Name: InviteErrorBase
-// Dependencies: [19, 17, 676, 21, 4255, 712, 4101, 4191, 11961, 11962, 11963, 1236, 4251, 4665, 1416, 1297, 11964, 5646, 1945, 2]
+// Dependencies: [19, 17, 676, 21, 4285, 712, 4130, 4221, 11995, 11996, 11997, 1236, 4281, 4695, 1416, 1297, 11998, 5700, 1974, 2]
 // Exports: default
 
-// Module 11960 (InviteErrorBase)
+// Module 11994 (InviteErrorBase)
 import "set";
 import get_ActivityIndicator from "GuildIconSizes";
 import ME from "ME";
@@ -25,14 +25,14 @@ function InviteErrorBase(invite) {
   let require;
   ({ onPressClose: require, inviteError } = invite);
   const tmp = createCacheKey();
-  let obj = require(4101) /* AccessibilityAnnouncer */;
+  let obj = require(4130) /* AccessibilityAnnouncer */;
   const tmp4 = importDefault;
-  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4191)()) ? 11961 : 11962);
+  const tmp4Result = importDefault(obj.isThemeDark(importDefault(4221)()) ? 11995 : 11996);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
-  const descriptiveInviteError = require(11963) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
+  const descriptiveInviteError = require(11997) /* getDescriptiveInviteError */.getDescriptiveInviteError(code);
   if (invite.invite.state === constants3.BANNED) {
     const intl2 = tmp2(1236).intl;
     let stringResult = intl2.string(tmp2(1236).t["GzD/aa"]);
@@ -62,13 +62,13 @@ function InviteErrorBase(invite) {
   function handlePressClose() {
     callback();
   }
-  items[1] = callback(require(4251) /* Text */.Text, obj);
-  items[2] = callback(require(4251) /* Text */.Text, { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult });
+  items[1] = callback(require(4281) /* Text */.Text, obj);
+  items[2] = callback(require(4281) /* Text */.Text, { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult });
   const obj3 = { variant: "primary", size: "lg", text: null, onPress: null };
   const intl4 = tmp2(1236).intl;
   obj3[2] = intl4.string(require(1236) /* getSystemLocale */.t.wcqOoF);
   obj3[3] = handlePressClose;
-  items[3] = callback(require(4665) /* Button */.Button, obj3);
+  items[3] = callback(require(4695) /* Button */.Button, obj3);
   obj1[0] = items;
   return closure_10(closure_9, obj1);
 }
@@ -91,33 +91,33 @@ function InviteDisabledError(onPressClose) {
     const guildIconURL = obj.getGuildIconURL(obj);
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.disabledPauseIcon;
-    obj2[1] = importDefault(11964);
+    obj2[1] = importDefault(11998);
     const items = [callback(onPressClose(1297).Icon, obj2), ];
     const obj3 = { style: null, icon: null, size: null };
     obj3[0] = tmp.guildIcon;
     obj3[1] = guildIconURL;
-    obj3[2] = onPressClose(5646).GuildIconSizes.XLARGE;
-    items[1] = callback(importDefault(5646), obj3);
+    obj3[2] = onPressClose(5700).GuildIconSizes.XLARGE;
+    items[1] = callback(importDefault(5700), obj3);
     obj1[1] = items;
     const items1 = [callback2(closure_4, obj1), , , ];
     const obj4 = { style: null, variant: "heading-xl/semibold", color: "text-feedback-critical", children: null };
     obj4[0] = tmp.disabledTitle;
     const intl = onPressClose(1236).intl;
     obj4[3] = intl.string(onPressClose(1236).t.jlLX2Z);
-    items1[1] = callback(onPressClose(4251).Text, obj4);
+    items1[1] = callback(onPressClose(4281).Text, obj4);
     const obj5 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
     obj5[0] = tmp.disabledBody;
     const intl2 = onPressClose(1236).intl;
     const obj6 = { articleLink: null };
-    const tmp10 = importDefault(5646);
-    obj6[0] = importDefault(1945).getArticleURL(constants2.INVITE_DISABLED);
+    const tmp10 = importDefault(5700);
+    obj6[0] = importDefault(1974).getArticleURL(constants2.INVITE_DISABLED);
     obj5[3] = intl2.format(onPressClose(1236).t.RXSeLl, obj6);
-    items1[2] = callback(onPressClose(4251).Text, obj5);
+    items1[2] = callback(onPressClose(4281).Text, obj5);
     const obj7 = { variant: "primary", size: "lg", text: null, onPress: null };
     const intl3 = onPressClose(1236).intl;
     obj7[2] = intl3.string(onPressClose(1236).t["yD/zkn"]);
     obj7[3] = handlePressClose;
-    items1[3] = callback(onPressClose(4665).Button, obj7);
+    items1[3] = callback(onPressClose(4695).Button, obj7);
     obj[0] = items1;
     return callback2(closure_9, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14039
+// Function ID: 14040
 // Name: shareGuardianConnectLink
-// Dependencies: [6891, 8817, 1236, 2255, 2]
+// Dependencies: [6918, 8846, 1236, 2284, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 14002 (shareGuardianConnectLink)
+// Module 14039 (shareGuardianConnectLink)
 import { FAMILY_CENTER_REQUEST_QR_CODE_URL as closure_3 } from "items";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");
@@ -14,9 +14,9 @@ export const shareGuardianConnectLink = function shareGuardianConnectLink(global
   if (username == null) {
     username = globalName.username;
   }
-  let obj = require(8817) /* showShareActionSheet */;
+  let obj = require(8846) /* showShareActionSheet */;
   obj = { message: null };
   const intl = require(1236) /* getSystemLocale */.intl;
-  obj[0] = intl.formatToPlainString(importDefault(2255).lVD5Nd, { username, url: callback(globalName.id, closure_2) });
+  obj[0] = intl.formatToPlainString(importDefault(2284).lVD5Nd, { username, url: callback(globalName.id, closure_2) });
   obj.showShareActionSheet(obj, "Family Center Connect Guardian");
 };

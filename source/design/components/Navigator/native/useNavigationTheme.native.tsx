@@ -1,10 +1,10 @@
-// Module ID: 5719
-// Function ID: 5720
+// Module ID: 5746
+// Function ID: 5747
 // Name: useNavigationTheme
-// Dependencies: [19, 3959, 712, 4101, 2]
+// Dependencies: [19, 3988, 712, 4130, 1481, 2]
 // Exports: useNavigationTheme
 
-// Module 5719 (useNavigationTheme)
+// Module 5746 (useNavigationTheme)
 import noop from "noop";
 
 const require = arg1;
@@ -23,10 +23,11 @@ export const useNavigationTheme = function useNavigationTheme(theme) {
   const token4 = _require(token1[1]).useToken(token(token1[2]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, theme);
   const items = [token1, token2, token4, token, token3, theme];
   return token2.useMemo(() => {
-    let obj = { dark: null, colors: null };
+    let obj = { dark: null, colors: null, fonts: null };
     obj[0] = theme(token1[3]).isThemeDark(theme);
     obj = { primary: token, background: "transparent", border: token1, card: token2, text: token3, notification: token4 };
     obj[1] = obj;
+    obj[2] = theme(token1[4]).DefaultTheme.fonts;
     return obj;
   }, items);
 };

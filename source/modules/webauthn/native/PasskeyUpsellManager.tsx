@@ -1,9 +1,9 @@
-// Module ID: 13850
-// Function ID: 13851
+// Module ID: 13887
+// Function ID: 13888
 // Name: handlePasskeyUpsellShow
-// Dependencies: [1218, 1874, 13844, 676, 5214, 8261, 4071, 1358, 4106, 5725, 13851, 2]
+// Dependencies: [1218, 1903, 13881, 676, 5244, 8401, 4100, 1358, 4135, 5752, 13888, 2]
 
-// Module 13850 (handlePasskeyUpsellShow)
+// Module 13887 (handlePasskeyUpsellShow)
 import fetchFingerprint from "fetchFingerprint";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import hasFetchedCredentials from "hasFetchedCredentials";
@@ -27,23 +27,23 @@ class PasskeyUpsellManager extends tmp2 {
 const prototype = PasskeyUpsellManager.prototype;
 prototype["handlePasskeyUpsellShow"] = function handlePasskeyUpsellShow() {
   if (c8) {
-    if (require(8261) /* _crypto */.hasWebAuthn) {
+    if (require(8401) /* _crypto */.hasWebAuthn) {
       if (loginStatus.getLoginStatus() === LoginStates.NONE) {
         if (obj.attemptedPasswordLogin()) {
-          let tmpResult = tmp(4071);
+          let tmpResult = tmp(4100);
           if (!tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(1358).DismissibleContent.PASSWORDLESS_UPSELL)) {
             if (!hasFetchedCredentials.hasFetchedCredentials()) {
-              tmpResult = tmp(4106);
+              tmpResult = tmp(4135);
               if (!tmpResult.isModalOpen()) {
                 currentUser = currentUser.getCurrentUser();
                 if (tmp6) {
                   if (obj3.hasFetchedCredentials()) {
-                    importDefault(13851).openPasskeyUpsell();
-                    const obj6 = importDefault(13851);
+                    importDefault(13888).openPasskeyUpsell();
+                    const obj6 = importDefault(13888);
                   } else if (!c7) {
                     c7 = true;
-                    const webAuthnCredentials = tmp(5725).fetchWebAuthnCredentials();
-                    const tmpResult1 = tmp(5725);
+                    const webAuthnCredentials = tmp(5752).fetchWebAuthnCredentials();
+                    const tmpResult1 = tmp(5752);
                   }
                 }
                 tmp6 = undefined !== currentUser && currentUser.verified;
@@ -64,7 +64,7 @@ prototype["handleLogout"] = function handleLogout() {
   let c8 = false;
 };
 prototype["markDismissed"] = function markDismissed(USER_DISMISS) {
-  let obj = require(4071) /* UNSAFE_isDismissibleContentDismissed */;
+  let obj = require(4100) /* UNSAFE_isDismissibleContentDismissed */;
   obj = { dismissAction: USER_DISMISS, forceTrack: true };
   return obj.UNSAFE_markDismissibleContentAsDismissed(require(1358) /* DismissibleContent */.DismissibleContent.PASSWORDLESS_UPSELL, obj);
 };

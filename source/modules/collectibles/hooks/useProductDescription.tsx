@@ -1,10 +1,10 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9483
+// Function ID: 9484
 // Name: getBundleDescription
-// Dependencies: [19, 1236, 1901, 2]
+// Dependencies: [19, 1236, 1930, 2]
 // Exports: useProductDescription
 
-// Module 9454 (getBundleDescription)
+// Module 9483 (getBundleDescription)
 import { useMemo } from "noop";
 
 function getBundleDescription(bundledProducts) {
@@ -36,7 +36,7 @@ function getBundleDescription(bundledProducts) {
       let tmp6 = require;
       let tmp7 = dependencyMap;
       let tmp8 = dependencyMap;
-      if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
+      if (require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === type) {
         let tmp13 = tmp5;
         let tmp14 = tmp7;
         let intl2 = tmp6(1236).intl;
@@ -47,7 +47,7 @@ function getBundleDescription(bundledProducts) {
       } else {
         let tmp33 = tmp5;
         let tmp34 = tmp7;
-        if (tmp6(1901).CollectiblesItemType.PROFILE_EFFECT === type) {
+        if (tmp6(1930).CollectiblesItemType.PROFILE_EFFECT === type) {
           let tmp9 = tmp5;
           let tmp10 = tmp7;
           let intl = tmp6(1236).intl;
@@ -58,7 +58,7 @@ function getBundleDescription(bundledProducts) {
         } else {
           let tmp35 = tmp5;
           let tmp36 = tmp7;
-          if (tmp6(1901).CollectiblesItemType.NAMEPLATE === type) {
+          if (tmp6(1930).CollectiblesItemType.NAMEPLATE === type) {
             let tmp37 = tmp5;
             let tmp38 = tmp7;
             let intl6 = tmp6(1236).intl;

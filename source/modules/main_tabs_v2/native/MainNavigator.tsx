@@ -1,13 +1,13 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 14990
+// Function ID: 14991
 // Name: getAuthComponent
-// Dependencies: [32, 19, 17, 1218, 14953, 676, 21, 4255, 500, 4235, 13303, 14954, 14955, 15013, 15668, 15673, 15676, 15712, 15735, 8352, 15789, 15792, 15796, 15798, 15827, 15832, 4114, 1478, 1579, 4449, 8165, 15833, 15882, 647, 10537, 4109, 5650, 10889, 15727, 15885, 15922, 10637, 15924, 9568, 2]
+// Dependencies: [32, 19, 17, 1218, 14991, 676, 21, 4285, 500, 4265, 13340, 14992, 14993, 15051, 15708, 15713, 15716, 15752, 15775, 8492, 15829, 15832, 15836, 15838, 15867, 15872, 4143, 1478, 1607, 4479, 8305, 15873, 15922, 647, 10592, 4138, 5704, 10921, 15767, 15925, 15962, 10692, 15964, 9597, 2]
 // Exports: getChannelScreen
 
-// Module 14952 (getAuthComponent)
+// Module 14990 (getAuthComponent)
 import useNativeThemeUpdater from "useNativeThemeUpdater";
 import importAllResult from "HeaderWithBorder";
-import { View } from "module_15712";
+import { View } from "module_15752";
 import fetchFingerprint from "fetchFingerprint";
 import { StackNavigationAnimationSettings as closure_7 } from "StackNavigationAnimationSettings";
 import ME from "ME";
@@ -23,49 +23,49 @@ let metroImportAll;
 let unpackModuleId;
 let require = arg1;
 function getAuthComponent() {
-  return require(14955) /* NavigatorWithCaptchaHook */.default;
+  return require(14993) /* NavigatorWithCaptchaHook */.default;
 }
 function getTabsComponent() {
-  return require(15013).default;
+  return require(15051).default;
 }
 function getChannelComponent() {
   return View;
 }
 function WrappedAutoAnalytics() {
-  return callback2(require(15668) /* componentDidMount */.default, {});
+  return callback2(require(15708) /* componentDidMount */.default, {});
 }
 function getMemberVerificationComponent() {
-  return require(15673) /* Loading */.default;
+  return require(15713) /* Loading */.default;
 }
 function getFriendsNavigatorComponent() {
-  return require(15676) /* RequestsSettingsModalButton */.default;
+  return require(15716) /* RequestsSettingsModalButton */.default;
 }
 function getYouComponent() {
-  return require(15712).default;
+  return require(15752).default;
 }
 function getChannelDetailsComponent() {
-  return require(15735) /* ConnectedCreateThreadHeaderButton */.default;
+  return require(15775) /* ConnectedCreateThreadHeaderButton */.default;
 }
 function getConversationsComponent() {
-  return require(8352) /* HeaderWithBorder */.default;
+  return require(8492) /* HeaderWithBorder */.default;
 }
 function getSearchComponent() {
-  return require(15789).default;
+  return require(15829).default;
 }
 function getContextMenuCommandNavigatorComponent() {
-  return require(15792) /* ContextMenuCommandNavigator */.default;
+  return require(15832) /* ContextMenuCommandNavigator */.default;
 }
 function getModalComponent() {
-  return require(15796) /* Modal */.default;
+  return require(15836) /* Modal */.default;
 }
 function getMessageRequestsComponent() {
-  return require(15798) /* MessageRequestsNavigator */.default;
+  return require(15838) /* MessageRequestsNavigator */.default;
 }
 function getSettingsComponent() {
-  return require(15827) /* Settings */.default;
+  return require(15867) /* Settings */.default;
 }
 function getAccountStanding() {
-  return require(15832) /* SuspendedUserSafetyHubPage */.default;
+  return require(15872) /* SuspendedUserSafetyHubPage */.default;
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: metroImportAll, DrawerSourceTypes: c9 } = ME);
@@ -84,6 +84,9 @@ function getChannelScreen() {
   }
   obj = {
     name: "channel",
+    getId(params) {
+      return params.params.screenKey;
+    },
     listeners: obj,
     options(arg0) {
       let navigation;
@@ -99,10 +102,10 @@ function getChannelScreen() {
   };
   obj = {
     beforeRemove(data) {
-      let obj = animation(4114);
+      let obj = animation(4143);
       if (null != obj.getBestActiveInput()) {
         obj = { type: null };
-        obj[0] = tmp(1579).KeyboardTypes.SYSTEM;
+        obj[0] = tmp(1607).KeyboardTypes.SYSTEM;
         tmp(1478).setKeyboardType(obj);
         const tmpResult = tmp(1478);
       }
@@ -119,13 +122,13 @@ function getChannelScreen() {
       } else {
         SWIPE = constants2.SWIPE;
       }
-      callback(4449).trackWithMetadata(constants.CHANNEL_BACK_NAVIGATED, { source: SWIPE });
+      callback(4479).trackWithMetadata(constants.CHANNEL_BACK_NAVIGATED, { source: SWIPE });
     }
   };
   return callback2(Screen.Screen, obj);
 }
-let closure_16 = require("navigatorFactory")();
-let closure_17 = require("navigatorFactory")();
+let closure_16 = require("AccessibleNativeStackNavigator")();
+let closure_17 = require("ChatPanelNativeStackNavigator")();
 let closure_30 = Object.freeze({ animation: "none" });
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/MainNavigator.tsx");
 
@@ -183,7 +186,7 @@ export default importAllResult.memo(function StackNavigator() {
               if (closure_15) {
                 str = "default";
               }
-              const merged = Object.assign(animation(8165).getDefaultStackHeaderProps(navigation.navigation));
+              const merged = Object.assign(animation(8305).getDefaultStackHeaderProps(navigation.navigation));
               const merged1 = Object.assign(closure_7);
               return { orientation: str, headerShown: false };
             },
@@ -191,7 +194,14 @@ export default importAllResult.memo(function StackNavigator() {
           };
           obj = { name: "tabs", getComponent: outer1_19, options: outer1_30 };
           const items = [outer1_10(outer1_17.Screen, obj), , ];
-          obj = { name: "member-verification", getComponent: outer1_22, options: { presentation: "transparentModal", animation: "slide_from_bottom" } };
+          obj = {
+            name: "member-verification",
+            getId(params) {
+              return params.params.guildId;
+            },
+            getComponent: outer1_22,
+            options: { presentation: "transparentModal", animation: "slide_from_bottom" }
+          };
           items[1] = outer1_10(outer1_17.Screen, obj);
           let animation;
           if (animation != null) {
@@ -206,6 +216,9 @@ export default importAllResult.memo(function StackNavigator() {
           const obj1 = { children: null };
           items[2] = outer1_10(outer1_17.Screen, {
             name: "channel",
+            getId(params) {
+              return params.params.screenKey;
+            },
             listeners: obj3,
             options(arg0) {
               let navigation;
@@ -230,7 +243,7 @@ export default importAllResult.memo(function StackNavigator() {
         name: "conversations",
         getComponent: outer1_26,
         options() {
-          return callback2(9568)();
+          return callback2(9597)();
         }
       }),
       outer1_10(outer1_16.Screen, { name: "auth", getComponent: outer1_18, options: outer1_30 }),
@@ -292,7 +305,7 @@ export default importAllResult.memo(function StackNavigator() {
           str = "modal";
         }
         const obj = {};
-        const merged = Object.assign(callback2(9568)({ presentation: str }));
+        const merged = Object.assign(callback2(9597)({ presentation: str }));
         const params3 = route.params;
         let presentation;
         if (params3 != null) {
@@ -318,7 +331,7 @@ export default importAllResult.memo(function StackNavigator() {
             if (closure_15) {
               str = "default";
             }
-            const merged = Object.assign(animation(8165).getDefaultStackHeaderProps(navigation.navigation));
+            const merged = Object.assign(animation(8305).getDefaultStackHeaderProps(navigation.navigation));
             const merged1 = Object.assign(closure_7);
             return { orientation: str, headerShown: false };
           },
@@ -326,7 +339,14 @@ export default importAllResult.memo(function StackNavigator() {
         };
         obj = { name: "tabs", getComponent: outer1_19, options: outer1_30 };
         const items = [outer1_10(outer1_17.Screen, obj), , ];
-        obj = { name: "member-verification", getComponent: outer1_22, options: { presentation: "transparentModal", animation: "slide_from_bottom" } };
+        obj = {
+          name: "member-verification",
+          getId(params) {
+            return params.params.guildId;
+          },
+          getComponent: outer1_22,
+          options: { presentation: "transparentModal", animation: "slide_from_bottom" }
+        };
         items[1] = outer1_10(outer1_17.Screen, obj);
         let animation;
         if (animation != null) {
@@ -341,6 +361,9 @@ export default importAllResult.memo(function StackNavigator() {
         const obj1 = { children: null };
         items[2] = outer1_10(outer1_17.Screen, {
           name: "channel",
+          getId(params) {
+            return params.params.screenKey;
+          },
           listeners: obj3,
           options(arg0) {
             let navigation;
@@ -365,7 +388,7 @@ export default importAllResult.memo(function StackNavigator() {
       name: "conversations",
       getComponent: outer1_26,
       options() {
-        return callback2(9568)();
+        return callback2(9597)();
       }
     };
     const obj5 = { name: "auth", getComponent: outer1_18, options: outer1_30 };
@@ -416,13 +439,13 @@ export default importAllResult.memo(function StackNavigator() {
     items1[7] = outer1_10(outer1_16.Screen, {
       name: "settings",
       options() {
-        let obj = callback(4235);
+        let obj = callback(4265);
         obj = undefined;
         if (obj.isIpadOS()) {
           obj = { presentation: "modal" };
         }
         obj = {};
-        const merged = Object.assign(callback2(9568)(obj));
+        const merged = Object.assign(callback2(9597)(obj));
         obj.animation = "slide_from_bottom";
         obj.fullScreenGestureEnabled = true;
         return obj;
@@ -433,19 +456,19 @@ export default importAllResult.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: outer1_25,
       options() {
-        return callback2(9568)({ lockOrientation: false });
+        return callback2(9597)({ lockOrientation: false });
       }
     });
     const obj13 = {
       name: "settings",
       options() {
-        let obj = callback(4235);
+        let obj = callback(4265);
         obj = undefined;
         if (obj.isIpadOS()) {
           obj = { presentation: "modal" };
         }
         obj = {};
-        const merged = Object.assign(callback2(9568)(obj));
+        const merged = Object.assign(callback2(9597)(obj));
         obj.animation = "slide_from_bottom";
         obj.fullScreenGestureEnabled = true;
         return obj;
@@ -456,7 +479,7 @@ export default importAllResult.memo(function StackNavigator() {
       name: "sidebar",
       getComponent: outer1_25,
       options() {
-        return callback2(9568)({ lockOrientation: false });
+        return callback2(9597)({ lockOrientation: false });
       }
     };
     tmp5Result = outer1_10(first[8]);
@@ -465,6 +488,9 @@ export default importAllResult.memo(function StackNavigator() {
     items1[10] = outer1_10(outer1_16.Screen, { name: "context-menu-commands", options: stateFromStores(first[43])(), getComponent: outer1_28 });
     items1[11] = outer1_10(outer1_16.Screen, {
       name: "modal",
+      getId(params) {
+        return params.params.modal.key;
+      },
       options(route) {
         route = route.route;
         const obj = { fullScreenGestureEnabled: route.params.fullScreenGestureEnabled, animation: null };
@@ -481,7 +507,7 @@ export default importAllResult.memo(function StackNavigator() {
           }
           str2 = str3;
         }
-        const merged = Object.assign(callback2(9568)({ presentation: str2 }));
+        const merged = Object.assign(callback2(9597)({ presentation: str2 }));
         return obj;
       },
       getComponent: outer1_29

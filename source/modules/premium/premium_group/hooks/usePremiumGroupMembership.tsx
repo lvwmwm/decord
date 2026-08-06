@@ -1,10 +1,10 @@
-// Module ID: 12636
-// Function ID: 12637
+// Module ID: 12673
+// Function ID: 12674
 // Name: usePremiumGroupMembership
-// Dependencies: [19, 12637, 589, 709, 2]
+// Dependencies: [19, 12674, 589, 709, 2]
 // Exports: default
 
-// Module 12636 (usePremiumGroupMembership)
+// Module 12673 (usePremiumGroupMembership)
 import { useEffect } from "noop";
 import handleMutationStart from "handleMutationStart";
 

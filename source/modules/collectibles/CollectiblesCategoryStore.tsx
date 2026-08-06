@@ -1,9 +1,9 @@
-// Module ID: 6895
-// Function ID: 6896
+// Module ID: 6922
+// Function ID: 6923
 // Name: updateCategoriesAndProducts
-// Dependencies: [1946, 6896, 687, 584, 709, 12, 6907, 589, 2]
+// Dependencies: [1975, 6923, 687, 584, 709, 12, 6934, 589, 2]
 
-// Module 6895 (updateCategoriesAndProducts)
+// Module 6922 (updateCategoriesAndProducts)
 import _getSystemLocale from "_getSystemLocale";
 import fromServer from "fromServer";
 import { Store } from "initialize";
@@ -15,7 +15,7 @@ function updateCategoriesAndProducts(map) {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   }));
-  const productsFromCategories = map1(6907).getProductsFromCategories(map, true);
+  const productsFromCategories = map1(6934).getProductsFromCategories(map, true);
   map1 = new Map(productsFromCategories.map((skuId) => {
     const items = [skuId.skuId, skuId];
     return items;
@@ -25,8 +25,8 @@ function updateCategoriesAndProducts(map) {
       const result = map1.set(skuId.skuId, skuId);
     }
   });
-  const obj = map1(6907);
-  const productsFromCategories1 = map1(6907).getProductsFromCategories(map, false);
+  const obj = map1(6934);
+  const productsFromCategories1 = map1(6934).getProductsFromCategories(map, false);
   const map2 = new Map(productsFromCategories1.map((storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;

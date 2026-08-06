@@ -1,9 +1,9 @@
-// Module ID: 4271
-// Function ID: 4272
+// Module ID: 4301
+// Function ID: 4302
 // Name: updateVoiceState
-// Dependencies: [32, 4272, 676, 4273, 12, 589, 1577, 709, 2]
+// Dependencies: [32, 4302, 676, 4303, 12, 589, 1605, 709, 2]
 
-// Module 4271 (updateVoiceState)
+// Module 4301 (updateVoiceState)
 import _slicedToArray from "_slicedToArray";
 import isVoiceMuted from "isVoiceMuted";
 import { ME } from "ME";
@@ -354,8 +354,8 @@ prototype["getVoicePlatformForChannel"] = function getVoicePlatformForChannel(ch
   }
   if (id === closure_3) {
     if (channelId === tmp) {
-      require(1577) /* isMetaQuest */.isMetaQuest() ? VoicePlatforms.QUEST : VoicePlatforms.MOBILE;
-      const obj = require(1577) /* isMetaQuest */;
+      require(1605) /* isMetaQuest */.isMetaQuest() ? VoicePlatforms.QUEST : VoicePlatforms.MOBILE;
+      const obj = require(1605) /* isMetaQuest */;
     }
   }
   return table["" + id + ":" + channelId];

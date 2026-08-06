@@ -1,8 +1,8 @@
-// Module ID: 8725
-// Function ID: 8726
-// Dependencies: [32, 19, 17, 21, 3967, 8726, 8727, 4676, 2]
+// Module ID: 8754
+// Function ID: 8755
+// Dependencies: [32, 19, 17, 21, 3996, 8755, 8756, 4706, 2]
 
-// Module 8725
+// Module 8754
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,13 +20,13 @@ const memoResult = require("noop").memo((style) => {
   let theme;
   style = style.style;
   ({ gradientHeight, bannerHeight } = style);
-  let obj = require(3967) /* ManaContext */;
+  let obj = require(3996) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, secondaryColor, theme } = themeContext);
-  const gradientFallbackBackground = require(8726) /* useUserProfileColors */.useUserProfileColors({ theme, primaryColor, secondaryColor }).gradientFallbackBackground;
-  const obj2 = require(8726) /* useUserProfileColors */;
-  const obj3 = require(8727) /* useUserProfileGradientColors */;
-  const first = callback(require(8727) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
+  const gradientFallbackBackground = require(8755) /* useUserProfileColors */.useUserProfileColors({ theme, primaryColor, secondaryColor }).gradientFallbackBackground;
+  const obj2 = require(8755) /* useUserProfileColors */;
+  const obj3 = require(8756) /* useUserProfileGradientColors */;
+  const first = callback(require(8756) /* useUserProfileGradientColors */.useUserProfileGradientColors(primaryColor, secondaryColor, gradientFallbackBackground), 2)[0];
   if (null != primaryColor) {
     if (null != secondaryColor) {
       const _Math = Math;
@@ -39,7 +39,7 @@ const memoResult = require("noop").memo((style) => {
       obj[1] = items1;
       const items2 = [closure_4.absoluteFill, style];
       obj[2] = items2;
-      return jsx(importDefault(4676), { colors: null, locations: null, style: null, pointerEvents: "none" });
+      return jsx(importDefault(4706), { colors: null, locations: null, style: null, pointerEvents: "none" });
     }
   }
   style = [closure_4.absoluteFill, { backgroundColor: gradientFallbackBackground }, ];

@@ -1,10 +1,10 @@
-// Module ID: 5786
-// Function ID: 5787
+// Module ID: 5813
+// Function ID: 5814
 // Name: GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME
-// Dependencies: [109, 19, 1372, 1862, 676, 589, 5787, 5814, 5596, 5820, 5822, 2]
-// Exports: canInviteToActivity, useFirstMessage, useGameInvitesChannelApplicationId, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
+// Dependencies: [109, 19, 1372, 1891, 676, 589, 5814, 5841, 5650, 5847, 5849, 5208, 2]
+// Exports: canInviteToActivity, useFirstMessage, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelApplicationId, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 5786 (GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME)
+// Module 5813 (GAME_INVITES_CHANNEL_NO_MIC_TAG_NAME)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { useMemo } from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -50,9 +50,9 @@ export const useIsGameInvitesPost = function useIsGameInvitesPost(channel) {
   });
 };
 export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoiceEnabled(thread) {
-  const appliedTags = _require(5787).useAppliedTags(thread);
+  const appliedTags = _require(5814).useAppliedTags(thread);
   _require = thread;
-  const obj = _require(5787);
+  const obj = _require(5814);
   const items = [ensureGuildLoaded];
   const obj3 = _require(589);
   return _require(589).useStateFromStores(items, () => {
@@ -81,7 +81,7 @@ export const useIsGameInvitePostVoiceEnabled = function useIsGameInvitePostVoice
   }) && !appliedTags.some((name) => name.name === closure_11);
 };
 export const useFirstMessage = function useFirstMessage(stateFromStores, enabled) {
-  let obj = require(5814) /* loadForumPostData */;
+  let obj = require(5841) /* loadForumPostData */;
   obj = { enabled, allowArchived: true };
   return obj.useFirstForumPostMessage(stateFromStores, obj);
 };
@@ -147,7 +147,7 @@ export const useGameInvitesChannelOfficialApplication = function useGameInvitesC
   }
   const obj = application(589);
   const tmp = application;
-  application = application(5596).useApplication(tmp4);
+  application = application(5650).useApplication(tmp4);
   const items2 = [application];
   return useMemo(() => {
     const merged = Object.assign(outer1_4(application, outer1_3));
@@ -204,12 +204,57 @@ export const useSubscribeToGameInvitePostAuthors = function useSubscribeToGameIn
     }
     return tmp;
   }, items2);
-  const subscribeGuildMembers = _require(5820).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
+  const subscribeGuildMembers = _require(5847).useSubscribeGuildMembers(tmp3, "GameInvitesChannelPostAuthors");
 };
 export const canInviteToActivity = function canInviteToActivity(type) {
   let tmp = type.type === constants2.PLAYING;
   if (tmp) {
-    tmp = importDefault(5822)(type, constants.JOIN);
+    tmp = importDefault(5849)(type, constants.JOIN);
   }
   return tmp;
+};
+export const useGameInvitesActiveAndArchivedThreads = function useGameInvitesActiveAndArchivedThreads(isGameInvitesChannel) {
+  let closure_0 = arg1;
+  let closure_1 = arg2;
+  const isGameInvitesChannelResult = isGameInvitesChannel.isGameInvitesChannel();
+  const dependencyMap = isGameInvitesChannelResult;
+  let items = [isGameInvitesChannelResult, arg1, arg2];
+  return useMemo(() => {
+    if (closure_2) {
+      const _Date = Date;
+      const items = [];
+      const items1 = [];
+      const timestamp = Date.now();
+      const iter = dependencyMap[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp11 = nextResult;
+        let tmp12 = outer1_6;
+        let channel = outer1_6.getChannel(nextResult);
+        if (null != channel) {
+          let tmp15 = callback;
+          let tmp16 = isGameInvitesChannelResult;
+          let tmp17 = channel;
+          if (callback(isGameInvitesChannelResult[11])(tmp14) <= timestamp) {
+            let tmp20 = nextResult;
+            let arr = items1.push(tmp11);
+            continue;
+          }
+        }
+        let tmp18 = nextResult;
+        arr = items.push(tmp11);
+      }
+      let obj = { activeThreadIds: null, archivedThreadIds: null };
+      obj[0] = items;
+      const items2 = [];
+      HermesBuiltin.arraySpread(callback, HermesBuiltin.arraySpread(items1, 0));
+      obj[1] = items2;
+      return obj;
+    } else {
+      obj = { activeThreadIds: null, archivedThreadIds: null };
+      obj[0] = dependencyMap;
+      obj[1] = callback;
+      return obj;
+    }
+  }, items);
 };

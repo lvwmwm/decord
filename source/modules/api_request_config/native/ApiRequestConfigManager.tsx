@@ -1,9 +1,9 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16803
+// Function ID: 16804
 // Name: updateApiRequestConfig
-// Dependencies: [17, 1218, 530, 698, 5214, 500, 2]
+// Dependencies: [17, 1218, 530, 698, 5244, 500, 2]
 
-// Module 16763 (updateApiRequestConfig)
+// Module 16803 (updateApiRequestConfig)
 import { NativeModules } from "get ActivityIndicator";
 import fetchFingerprint from "fetchFingerprint";
 import "initialize";

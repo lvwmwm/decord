@@ -1,10 +1,10 @@
-// Module ID: 8745
-// Function ID: 8746
+// Module ID: 8774
+// Function ID: 8775
 // Name: useVideoControls
-// Dependencies: [32, 19, 4247, 21, 644, 705, 8746, 4255, 589, 8739, 8747, 8740, 8748, 2]
+// Dependencies: [32, 19, 4277, 21, 644, 705, 8775, 4285, 589, 8768, 8776, 8769, 8777, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8745 (useVideoControls)
+// Module 8774 (useVideoControls)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

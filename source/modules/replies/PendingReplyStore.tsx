@@ -1,9 +1,9 @@
-// Module ID: 7034
-// Function ID: 7035
+// Module ID: 7061
+// Function ID: 7062
 // Name: getState
-// Dependencies: [32, 1372, 4472, 11, 589, 709, 2]
+// Dependencies: [32, 1372, 4502, 11, 589, 709, 2]
 
-// Module 7034 (getState)
+// Module 7061 (getState)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";

@@ -1,9 +1,9 @@
-// Module ID: 5083
-// Function ID: 5084
+// Module ID: 5113
+// Function ID: 5114
 // Name: recomputeGuild
-// Dependencies: [1415, 1942, 1935, 1862, 1874, 676, 3871, 1384, 709, 11, 589, 2]
+// Dependencies: [1415, 1971, 1964, 1891, 1903, 676, 3900, 1384, 709, 11, 589, 2]
 
-// Module 5083 (recomputeGuild)
+// Module 5113 (recomputeGuild)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";

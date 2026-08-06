@@ -1,10 +1,10 @@
-// Module ID: 7871
-// Function ID: 7872
+// Module ID: 8012
+// Function ID: 8013
 // Name: createChangeChannelNameSystemMessage
-// Dependencies: [1372, 7844, 7851, 7853, 1236, 7854, 7857, 2]
+// Dependencies: [1372, 7985, 7992, 7994, 1236, 7995, 7998, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 7871 (createChangeChannelNameSystemMessage)
+// Module 8012 (createChangeChannelNameSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
@@ -15,10 +15,10 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
   let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp3 = importDefault(7844)(theme);
-  let obj = require(7851) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = importDefault(7985)(theme);
+  let obj = require(7992) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp6 = importDefault(7853)({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  const tmp6 = importDefault(7994)({ message, author: messageAuthorWithProcessedColor, roleStyle });
   channel = channel.getChannel(message.channel_id);
   let flag;
   if (channel != null) {
@@ -35,7 +35,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
   } else {
     rk0be9 = tmp4(1236).t.rk0be9;
   }
-  const tmp8 = importDefault(7854)(message);
+  const tmp8 = importDefault(7995)(message);
   const intl = tmp4(1236).intl;
   const formatToParts = intl.formatToParts;
   if (flag) {
@@ -72,7 +72,7 @@ export const createChangeChannelNameSystemMessage = function createChangeChannel
     const obj4 = { label: null, name: null };
     const intl2 = tmp4(1236).intl;
     obj4[0] = intl2.string(tmp4(1236).t["5Q9+/L"]);
-    obj4[1] = tmp4(7857).MessageAccessibilityAction.EDIT_GDM;
+    obj4[1] = tmp4(7998).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj4;
     obj3[0] = items;
     tmp12 = obj3;

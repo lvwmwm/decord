@@ -1,9 +1,9 @@
-// Module ID: 4797
-// Function ID: 4798
+// Module ID: 4827
+// Function ID: 4828
 // Name: PressableBase
-// Dependencies: [19, 17, 4673, 1301, 21, 4255, 712, 500, 4798, 2]
+// Dependencies: [19, 17, 4703, 1301, 21, 4285, 712, 500, 4828, 2]
 
-// Module 4797 (PressableBase)
+// Module 4827 (PressableBase)
 import importAllResult from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";

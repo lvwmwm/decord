@@ -1,10 +1,10 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8164
+// Function ID: 8165
 // Name: updateAssets
-// Dependencies: [32, 5, 8024, 676, 38, 3, 530, 709, 1450, 2]
+// Dependencies: [32, 5, 8165, 676, 38, 3, 530, 709, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8023 (updateAssets)
+// Module 8164 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -318,7 +318,7 @@ function updateNonUrlAssetIds(arg0, arg1, arg2, arg3) {
   }
   return flag2;
 }
-function fetchAssetIds(id, closure_10) {
+function fetchAssetIds(id, closure_11) {
   const self = this;
   const apply = _fetchAssetIds.apply;
   if (typeof apply === "unknown") {
@@ -656,10 +656,10 @@ export const getAssetImage = function getAssetImage(application_id, media_assets
 };
 export { getAssets };
 export { fetchAssetIds };
-export const getAssetIds = function getAssetIds(id, closure_10) {
+export const getAssetIds = function getAssetIds(id, closure_11) {
   const items = [];
   let num = 0;
-  if (closure_10.filter((str) => {
+  if (closure_11.filter((str) => {
     let startsWithResult;
     if (str != null) {
       startsWithResult = str.startsWith("http:");
@@ -676,9 +676,9 @@ export const getAssetIds = function getAssetIds(id, closure_10) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
-    if (0 < closure_10.length) {
+    if (0 < closure_11.length) {
       do {
-        let tmp3 = closure_10[num3];
+        let tmp3 = closure_11[num3];
         let tmp4 = num3;
         let tmp5 = num4;
         let sum = num4;
@@ -702,10 +702,10 @@ export const getAssetIds = function getAssetIds(id, closure_10) {
         num3 = num3 + 1;
         num4 = sum;
         num = sum;
-      } while (num3 < closure_10.length);
+      } while (num3 < closure_11.length);
     }
   }
-  if (num === closure_10.length) {
+  if (num === closure_11.length) {
     return items;
   } else {
     const applicationAssets = store.getApplicationAssets(id);
@@ -714,8 +714,8 @@ export const getAssetIds = function getAssetIds(id, closure_10) {
       assets = applicationAssets.assets;
     }
     if (null != assets) {
-      for (let num6 = 0; num6 < closure_10.length; num6 = num6 + 1) {
-        let tmp13 = closure_10[num6];
+      for (let num6 = 0; num6 < closure_11.length; num6 = num6 + 1) {
+        let tmp13 = closure_11[num6];
         let tmp14 = num6;
         if (null != tmp13) {
           if (null == items[num6]) {

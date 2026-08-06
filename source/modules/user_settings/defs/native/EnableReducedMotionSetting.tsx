@@ -1,9 +1,9 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14513
+// Function ID: 14514
 // Name: toggle
-// Dependencies: [4247, 7864, 589, 13589, 10333, 1236, 2]
+// Dependencies: [4277, 8005, 589, 13626, 10364, 1236, 2]
 
-// Module 14475 (toggle)
+// Module 14513 (toggle)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
@@ -23,7 +23,7 @@ createToggle = {
     if (arg0) {
       str = "reduce";
     }
-    const result = require(13589) /* setFontSize */.setPrefersReducedMotion(str);
+    const result = require(13626) /* setFontSize */.setPrefersReducedMotion(str);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

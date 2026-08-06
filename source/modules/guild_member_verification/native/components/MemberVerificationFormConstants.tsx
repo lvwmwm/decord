@@ -1,10 +1,10 @@
-// Module ID: 8198
-// Function ID: 8199
+// Module ID: 8338
+// Function ID: 8339
 // Name: BANNER_RATIO_HEIGHT_16_9
 // Dependencies: [1474, 2]
 // Exports: useBannerHeight
 
-// Module 8198 (BANNER_RATIO_HEIGHT_16_9)
+// Module 8338 (BANNER_RATIO_HEIGHT_16_9)
 let c2 = 0.5625;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationFormConstants.tsx");
 

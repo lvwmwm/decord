@@ -1,9 +1,9 @@
-// Module ID: 7121
-// Function ID: 7122
+// Module ID: 7148
+// Function ID: 7149
 // Name: initialize
 // Dependencies: [1372, 589, 709, 2]
 
-// Module 7121 (initialize)
+// Module 7148 (initialize)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Store } from "initialize";
 

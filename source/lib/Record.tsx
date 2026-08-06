@@ -1,9 +1,9 @@
-// Module ID: 1883
-// Function ID: 1884
+// Module ID: 1912
+// Function ID: 1913
 // Name: toJS
 // Dependencies: [2]
 
-// Module 1883 (toJS)
+// Module 1912 (toJS)
 let Record;
 class Record {
 }

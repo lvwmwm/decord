@@ -1,9 +1,9 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7753
+// Function ID: 7754
 // Name: initialize
-// Dependencies: [1874, 595, 589, 709, 2]
+// Dependencies: [1903, 595, 589, 709, 2]
 
-// Module 7725 (initialize)
+// Module 7753 (initialize)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 

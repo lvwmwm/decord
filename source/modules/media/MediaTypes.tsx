@@ -1,10 +1,10 @@
-// Module ID: 4481
-// Function ID: 4482
+// Module ID: 4511
+// Function ID: 4512
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [676, 1384, 1906, 4442, 1467, 2]
+// Dependencies: [676, 1384, 1935, 4472, 1467, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4481 (messageAttachmentToUnfurledMediaItem)
+// Module 4511 (messageAttachmentToUnfurledMediaItem)
 import { MessageAttachmentFlags } from "ME";
 
 function messageAttachmentToUnfurledMediaItem(flags) {
@@ -25,7 +25,7 @@ function messageAttachmentToUnfurledMediaItem(flags) {
   if (tmpResult.hasFlag(num3, MessageAttachmentFlags.IS_ANIMATED)) {
     num4 = obj.IS_ANIMATED | 0;
   }
-  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1906).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: null, flags: null };
+  obj = { url: flags.url, proxyUrl: flags.proxy_url, height: flags.height, width: flags.width, contentType: flags.content_type, originalContentType: flags.original_content_type, placeholder: flags.placeholder, placeholderVersion: flags.placeholder_version, loadingState: tmp(1935).UnfurledMediaLoadingState.LOADED_SUCCESS, contentScanMetadata: null, flags: null };
   let tmp6;
   if (null != flags.content_scan_version) {
     obj = { version: null, flags: null };
@@ -79,7 +79,7 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(conten
       }
     }
     str = str3;
-    tmpResult = require(4442) /* urlMatchesFileExtension */;
+    tmpResult = require(4472) /* urlMatchesFileExtension */;
   }
   return str;
 };
@@ -93,7 +93,7 @@ export const messageAttachmentToMediaItem = function messageAttachmentToMediaIte
       str2 = "VIDEO";
     }
     str = str2;
-    tmp2Result = require(4442) /* urlMatchesFileExtension */;
+    tmp2Result = require(4472) /* urlMatchesFileExtension */;
   }
   obj.type = str;
   obj.alt = found2.description;

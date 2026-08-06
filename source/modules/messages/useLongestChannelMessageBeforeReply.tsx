@@ -1,10 +1,10 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11729
+// Function ID: 11730
 // Name: useLongestChannelMessageBeforeReply
-// Dependencies: [4472, 589, 2]
+// Dependencies: [4502, 589, 2]
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 11695 (useLongestChannelMessageBeforeReply)
+// Module 11729 (useLongestChannelMessageBeforeReply)
 import reinjectEphemerals from "reinjectEphemerals";
 
 const require = arg1;

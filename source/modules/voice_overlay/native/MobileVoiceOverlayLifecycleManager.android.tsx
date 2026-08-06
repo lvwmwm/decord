@@ -1,9 +1,9 @@
-// Module ID: 13669
-// Function ID: 13670
+// Module ID: 13706
+// Function ID: 13707
 // Name: importDefaultResult1
-// Dependencies: [1372, 1932, 1862, 4302, 3883, 4326, 3892, 5089, 1874, 4271, 10713, 676, 13670, 13671, 13672, 13673, 7809, 12931, 13674, 13675, 7796, 1236, 4119, 39, 13676, 10724, 7110, 4445, 5111, 698, 4449, 4433, 2]
+// Dependencies: [1372, 1961, 1891, 4332, 3912, 4356, 3921, 5119, 1903, 4301, 10768, 676, 13707, 13708, 13709, 13710, 7950, 12968, 13711, 13712, 7937, 1236, 4148, 39, 13713, 10779, 7137, 4475, 5141, 698, 4479, 4463, 2]
 
-// Module 13669 (importDefaultResult1)
+// Module 13706 (importDefaultResult1)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -427,7 +427,7 @@ class MobileVoiceOverlayManager {
 const prototype = MobileVoiceOverlayManager.prototype;
 prototype["initialize"] = function initialize() {
   const self = this;
-  let obj = require(4119) /* isFabric */;
+  let obj = require(4148) /* isFabric */;
   if (!tmp2) {
     if (typeof NativeCallableInterface !== "function") {
       HermesBuiltin.throwTypeError();

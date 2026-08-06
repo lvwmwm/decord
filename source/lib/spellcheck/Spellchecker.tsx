@@ -1,10 +1,10 @@
-// Module ID: 5273
-// Function ID: 5274
+// Module ID: 5327
+// Function ID: 5328
 // Name: normalizeLocale
-// Dependencies: [5, 32, 1946, 3, 3866, 5274, 5275, 5276, 12, 1859, 1351, 2]
+// Dependencies: [5, 32, 1975, 3, 3895, 5328, 5329, 5330, 12, 1887, 1351, 2]
 // Exports: install
 
-// Module 5273 (normalizeLocale)
+// Module 5327 (normalizeLocale)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
@@ -13,11 +13,11 @@ import importDefaultResult1 from "apply";
 
 const require = arg1;
 function normalizeLocale(arg0) {
-  let str = importDefault(5274)[arg0];
+  let str = importDefault(5328)[arg0];
   if (str == null) {
     str = arg0;
   }
-  const parsed = require(5275) /* parse */.parse(str.replace(/[_-]/g, "-"));
+  const parsed = require(5329) /* parse */.parse(str.replace(/[_-]/g, "-"));
   if (null != parsed) {
     if (null != parsed.langtag.language) {
       if (null != parsed.langtag.region) {
@@ -86,7 +86,7 @@ class Spellchecker {
       } else {
         let tmp3 = dependencyMap[arg0];
         if (tmp3 == null) {
-          tmp3 = first(5274)[first];
+          tmp3 = first(5328)[first];
         }
         if (null != tmp3) {
           obj.setLocale(tmp3);
@@ -181,9 +181,9 @@ let closure_10 = require("apply").debounce((detectLanguage, hasAttribute) => {
   let textContent = null;
   if (null != hasAttribute) {
     if (!obj.isElement(hasAttribute, globalThis.HTMLInputElement)) {
-      let tmp2Result = tmp2(1859);
+      let tmp2Result = tmp2(1887);
       if (!tmp2Result.isElement(hasAttribute, globalThis.HTMLTextAreaElement)) {
-        tmp2Result = tmp2(1859);
+        tmp2Result = tmp2(1887);
         if (tmp2Result.isElement(hasAttribute)) {
           if (hasAttribute.hasAttribute("contenteditable")) {
             textContent = hasAttribute.textContent;
@@ -192,7 +192,7 @@ let closure_10 = require("apply").debounce((detectLanguage, hasAttribute) => {
       }
     }
     textContent = hasAttribute.value;
-    obj = require(1859) /* set */;
+    obj = require(1887) /* set */;
   }
   if (null != textContent) {
     detectLanguage.detectLanguage(textContent);

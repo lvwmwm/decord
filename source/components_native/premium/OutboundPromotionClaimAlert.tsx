@@ -1,13 +1,13 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 12743
+// Function ID: 12744
 // Name: OutboundPromotionClaimAlert
-// Dependencies: [32, 19, 17, 21, 4255, 712, 12707, 5595, 5615, 7539, 12708, 4251, 1236, 4665, 5623, 12709, 4683, 3952, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 12744, 5649, 5669, 7567, 12745, 4281, 1236, 4695, 5677, 12746, 4713, 3981, 2]
 // Exports: default
 
-// Module 12706 (OutboundPromotionClaimAlert)
+// Module 12743 (OutboundPromotionClaimAlert)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
-import get_ActivityIndicator from "module_3952";
+import get_ActivityIndicator from "module_3981";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 

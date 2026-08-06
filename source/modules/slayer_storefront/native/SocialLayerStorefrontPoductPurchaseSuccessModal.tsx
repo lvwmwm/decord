@@ -1,10 +1,10 @@
-// Module ID: 9989
-// Function ID: 9990
+// Module ID: 10020
+// Function ID: 10021
 // Name: PurchaseSuccessModalBase
-// Dependencies: [853, 19, 17, 4247, 4300, 5745, 676, 21, 4255, 712, 4116, 4664, 4256, 4224, 1474, 589, 5742, 8789, 4676, 5257, 5230, 5255, 1236, 9287, 4251, 4665, 5601, 5598, 9990, 5615, 698, 4681, 9975, 3193, 9218, 4094, 2]
+// Dependencies: [853, 19, 17, 4277, 4330, 5772, 676, 21, 4285, 712, 4145, 4694, 4286, 4254, 1474, 589, 5769, 8818, 4706, 5311, 5260, 5309, 1236, 9316, 4281, 4695, 5655, 5652, 10021, 5669, 698, 4711, 10006, 3222, 9247, 4123, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 9989 (PurchaseSuccessModalBase)
+// Module 10020 (PurchaseSuccessModalBase)
 import _toArray from "_toArray";
 import SafeAreaPaddingView from "SafeAreaPaddingView";
 import get_ActivityIndicator from "handleOrientationChange";
@@ -190,7 +190,7 @@ function PurchaseSuccessModalBase(sku) {
       return outer1_14(stateFromStores(callback[21]).XSmallIcon, { size: "lg", style: _undefined.closeButtonIcon });
     },
     accessibilityLabel: null,
-    labelVisible: false
+    displayMode: "minimal"
   };
   const intl = tmp4(tmp3[22]).intl;
   obj8[2] = intl.string(stateFromStores(callback[22]).t.cpT0Cq);

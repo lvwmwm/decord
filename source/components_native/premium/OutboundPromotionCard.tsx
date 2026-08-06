@@ -1,10 +1,10 @@
-// Module ID: 12704
-// Function ID: 12705
+// Module ID: 12741
+// Function ID: 12742
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4255, 712, 5110, 5323, 5322, 1236, 4251, 4245, 4191, 7539, 12705, 4594, 12706, 1959, 7537, 4665, 4223, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4285, 712, 5140, 5377, 5376, 1236, 4281, 4275, 4221, 7567, 12742, 4624, 12743, 1988, 7565, 4695, 4253, 2]
 // Exports: default
 
-// Module 12704 (TermsAndConditionsActionSheet)
+// Module 12741 (TermsAndConditionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import fetchActivePromotions from "fetchActivePromotions";
 import get_ActivityIndicator from "OutboundPromotionClaimAlert";
@@ -21,12 +21,12 @@ function TermsAndConditionsActionSheet(termsAndConditions) {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.PdKWVT);
-  obj[0] = callback2(require(5322) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[0] = callback2(require(5376) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { style: createCacheKey().termsAndConditionsText, variant: "text-sm/medium", children: null };
   const tmp = createCacheKey();
-  obj[2] = importDefault(4245).parse(termsAndConditions.termsAndConditions, false, { allowLinks: true });
-  obj[1] = callback2(require(4251) /* Text */.Text, obj);
-  return callback2(require(5323) /* Background */.BottomSheet, obj);
+  obj[2] = importDefault(4275).parse(termsAndConditions.termsAndConditions, false, { allowLinks: true });
+  obj[1] = callback2(require(4281) /* Text */.Text, obj);
+  return callback2(require(5377) /* Background */.BottomSheet, obj);
 }
 ({ View: c5, Image: closure_6 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);

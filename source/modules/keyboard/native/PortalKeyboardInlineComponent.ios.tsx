@@ -1,8 +1,8 @@
-// Module ID: 11878
-// Function ID: 11879
-// Dependencies: [19, 17, 4247, 4121, 1847, 5898, 1579, 4681, 4122, 4114, 4125, 11307, 2]
+// Module ID: 11912
+// Function ID: 11913
+// Dependencies: [19, 17, 4277, 4150, 1875, 5925, 1607, 4711, 4151, 4143, 4154, 11341, 2]
 
-// Module 11878
+// Module 11912
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -22,13 +22,13 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
   let field1;
   let closure_7;
   id = importAllResult.useId();
-  const tmp2 = id(4121)();
+  const tmp2 = id(4150)();
   dependencyMap = tmp2;
-  let tmp4 = id(5898)({ includeCustomKeyboard: false });
+  let tmp4 = id(5925)({ includeCustomKeyboard: false });
   importAllResult = tmp4;
-  let tmp3 = id(1847)();
-  keyboardContextForType = messagesRef(4121).useKeyboardContextForType(messagesRef(1579).KeyboardTypes.SYSTEM);
-  id(4681)(() => () => {
+  let tmp3 = id(1875)();
+  keyboardContextForType = messagesRef(4150).useKeyboardContextForType(messagesRef(1607).KeyboardTypes.SYSTEM);
+  id(4711)(() => () => {
     const PortalKeyboardUIStore = outer1_0(outer1_2[8]).PortalKeyboardUIStore;
     const field = PortalKeyboardUIStore.getField("keyboard");
     let tmp4 = null != field;
@@ -42,9 +42,9 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
       tmpResult.closePortalKeyboard();
     }
   });
-  let PortalKeyboardUIStore = messagesRef(4122).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = messagesRef(4151).PortalKeyboardUIStore;
   field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = messagesRef(4122).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = messagesRef(4151).PortalKeyboardUIStore;
   field1 = PortalKeyboardUIStore2.useField("state");
   closure_7 = importAllResult.useRef(false);
   const items = [messagesRef.channelId, id, field, field1, tmp2, messagesRef, keyboardContextForType, tmp3, tmp4];

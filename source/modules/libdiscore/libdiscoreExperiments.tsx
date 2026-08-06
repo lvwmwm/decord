@@ -1,10 +1,10 @@
-// Module ID: 1866
-// Function ID: 1867
+// Module ID: 1895
+// Function ID: 1896
 // Name: items
-// Dependencies: [1867, 3, 1869, 38, 2]
+// Dependencies: [1896, 3, 1898, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 1866 (items)
+// Module 1895 (items)
 import { ensureValidMode } from "ensureValidMode";
 
 let c4 = new require("module_38")("libdiscoreExperiments");
@@ -36,13 +36,13 @@ prototype["getCachedConfig"] = function getCachedConfig() {
   const self = this;
   if (this.cachedConfig === closure_6) {
     if (obj.isLibdiscoreInitialized()) {
-      const experimentCacher = tmp(1869).getExperimentCacher();
+      const experimentCacher = tmp(1898).getExperimentCacher();
       self.cachedConfig = experimentCacher.getConfig(self.id);
-      const tmpResult = tmp(1869);
+      const tmpResult = tmp(1898);
     } else {
       self.cachedConfig = undefined;
     }
-    obj = require(1869) /* isBlockedDomain */;
+    obj = require(1898) /* isBlockedDomain */;
     tmp = require;
   }
   return self.cachedConfig;
@@ -254,8 +254,8 @@ export const clearLibdiscoreExperimentCache = function clearLibdiscoreExperiment
   if (obj.isLibdiscoreInitialized()) {
     tmp6.info("Clearing libdiscore experiment cache and disabling sync");
     let c7 = true;
-    const experimentCacher = require(1869) /* isBlockedDomain */.getExperimentCacher();
+    const experimentCacher = require(1898) /* isBlockedDomain */.getExperimentCacher();
     experimentCacher.clearCache();
-    const tmpResult = require(1869) /* isBlockedDomain */;
+    const tmpResult = require(1898) /* isBlockedDomain */;
   }
 };

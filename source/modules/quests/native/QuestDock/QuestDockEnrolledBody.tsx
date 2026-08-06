@@ -1,9 +1,9 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14349
+// Function ID: 14350
 // Name: EnrolledBodyWatchTask
-// Dependencies: [5, 19, 17, 14212, 5113, 14214, 21, 4255, 712, 14218, 14215, 8626, 14210, 14240, 5116, 14237, 14236, 14238, 14298, 1581, 7077, 2]
+// Dependencies: [5, 19, 17, 14249, 5143, 14251, 21, 4285, 712, 14255, 14252, 8655, 14247, 14277, 5146, 14274, 14273, 14275, 14335, 1609, 7104, 2]
 
-// Module 14312 (EnrolledBodyWatchTask)
+// Module 14349 (EnrolledBodyWatchTask)
 import closure_3 from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import importAllResult from "useSafeAreaInsets";
 import { View } from "useQuestRewardClaimHandler";
@@ -155,23 +155,23 @@ function EnrolledBodyPlayStreamTask(quest) {
   let stepActions;
   quest = quest.quest;
   const tmp = callback3();
-  let obj = require(14236) /* QuestBottomSheet */;
-  obj = { quest, location: constants.QUESTS_BAR_MOBILE, sourceQuestContent: require(5116) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
+  let obj = require(14273) /* QuestBottomSheet */;
+  obj = { quest, location: constants.QUESTS_BAR_MOBILE, sourceQuestContent: require(5146) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE };
   const enrolledQuestContentProps = obj.useEnrolledQuestContentProps(obj);
   ({ step, defibrillator, stepActions } = enrolledQuestContentProps);
   obj = { children: null };
   ({ handleTaskSelect, showMicrophone } = enrolledQuestContentProps);
-  const items = [callback(View, { style: tmp.headerWrapper, children: callback(importDefault(14237), obj2) }), , ];
+  const items = [callback(View, { style: tmp.headerWrapper, children: callback(importDefault(14274), obj2) }), , ];
   const obj3 = { style: tmp.contentWrapper, children: null };
   const obj4 = { defibrillator, quest, handleTaskSelect, location: constants.QUESTS_BAR_MOBILE, showMicrophone, step, sourceQuestContent: null };
-  obj4[6] = require(5116) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
-  obj3[1] = callback(require(14236) /* QuestBottomSheet */.QuestBottomSheetContent, obj4);
+  obj4[6] = require(5146) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
+  obj3[1] = callback(require(14273) /* QuestBottomSheet */.QuestBottomSheetContent, obj4);
   items[1] = callback(View, obj3);
   const obj5 = { style: tmp.footerWrapper, children: null };
   const obj6 = { quest, step, isDefibrilating: defibrillator.isActive, onBack: stepActions.onBack, onDefib: defibrillator.start, onConnectConsoleNext: stepActions.onNext, style: tmp.footer, withSafeArea: false, sourceQuestContent: null };
-  const obj1 = { style: tmp.headerWrapper, children: callback(importDefault(14237), obj2) };
-  obj6[8] = require(5116) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
-  obj5[1] = callback(importDefault(14238), obj6);
+  const obj1 = { style: tmp.headerWrapper, children: callback(importDefault(14274), obj2) };
+  obj6[8] = require(5146) /* QuestsVisibleMessagesChangedSource */.QuestContent.QUEST_BAR_MOBILE;
+  obj5[1] = callback(importDefault(14275), obj6);
   items[2] = callback(View, obj5);
   obj[0] = items;
   return callback2(closure_12, obj);
@@ -192,9 +192,9 @@ let closure_14 = createCacheKey.createStyles(obj);
 let obj2 = { marginTop: require("Themes").space.PX_16 };
 let obj3 = { marginLeft: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL, marginRight: -1 * QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL };
 const memoResult = importAllResult.memo(function QuestDockEnrolledBody() {
-  let obj = minExpandedContentHeight(14298);
+  let obj = minExpandedContentHeight(14335);
   const questCreative = obj.useQuestCreative();
-  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14215).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = importAllResult.useContext(minExpandedContentHeight(14252).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const items1 = [minExpandedContentHeight];
   const callback = importAllResult.useCallback((nativeEvent) => {
@@ -210,7 +210,7 @@ const memoResult = importAllResult.memo(function QuestDockEnrolledBody() {
   }, items1);
   obj = { style: null, onLayout: null, children: null };
   const items2 = [callback3().wrapper, ];
-  obj = { paddingBottom: Math.max(importDefault(1581)().bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) };
+  obj = { paddingBottom: Math.max(importDefault(1609)().bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) };
   items2[1] = obj;
   obj[0] = items2;
   obj[1] = callback;

@@ -1,10 +1,10 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11478
+// Function ID: 11479
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1877, 21, 4255, 712, 9437, 1906, 8537, 11441, 9438, 1297, 11445, 500, 11446, 1844, 8531, 2]
+// Dependencies: [32, 19, 17, 1906, 21, 4285, 712, 9466, 1935, 8566, 11475, 9467, 1297, 11479, 500, 11480, 1872, 8560, 2]
 // Exports: default
 
-// Module 11444 (AppLauncherTextInputOption)
+// Module 11478 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
@@ -61,10 +61,10 @@ export default function AppLauncherTextInputOption(guildId) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = onChangeText(9437);
+  let obj = onChangeText(9466);
   closure_5 = React.useRef({ start: 0, end: 0 });
   ref = React.useRef(null);
-  let tmp14Result = option.type === onChangeText(1906).ApplicationCommandOptionType.STRING;
+  let tmp14Result = option.type === onChangeText(1935).ApplicationCommandOptionType.STRING;
   c7 = tmp14Result;
   const items = [onChangeText];
   callback = React.useCallback((arg0) => {
@@ -117,17 +117,17 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11441);
+  let obj1 = onChangeText(11475);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (obj.useAppLauncherContext().entrypoint === onChangeText(9438).AppLauncherEntrypoint.VOICE) {
+  if (obj.useAppLauncherContext().entrypoint === onChangeText(9467).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1297).TextInput;
   } else {
-    TextInput = guildId(11445);
+    TextInput = guildId(11479);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -138,7 +138,7 @@ export default function AppLauncherTextInputOption(guildId) {
   items3[2] = style;
   obj = { ref, autoFocus: false, value: first, style: tmp.stringOptionInput, maxLength: null, autoComplete: "off", onChangeText: null, onSelectionChange: null, onFocus: null, onEndEditing: null, textAlignVertical: "center", returnKeyType: "done", multiline: true, keyboardType: null, onPressIn: null };
   let maxLength;
-  if (option.type === onChangeText(1906).ApplicationCommandOptionType.STRING) {
+  if (option.type === onChangeText(1935).ApplicationCommandOptionType.STRING) {
     maxLength = option.maxLength;
   }
   obj[4] = maxLength;
@@ -148,7 +148,7 @@ export default function AppLauncherTextInputOption(guildId) {
   };
   obj[8] = onFocus;
   obj[9] = onEndEditing;
-  if (option.type === onChangeText(1906).ApplicationCommandOptionType.INTEGER) {
+  if (option.type === onChangeText(1935).ApplicationCommandOptionType.INTEGER) {
     let str2 = "numbers-and-punctuation";
     if (tmp4Result.isAndroid()) {
       str2 = "numeric";
@@ -170,7 +170,7 @@ export default function AppLauncherTextInputOption(guildId) {
       obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
       const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
     };
-    tmp14Result = tmp14(guildId(11446), obj1);
+    tmp14Result = tmp14(guildId(11480), obj1);
   }
   items4[1] = tmp14Result;
   obj[1] = items4;

@@ -1,10 +1,10 @@
-// Module ID: 7043
-// Function ID: 7044
+// Module ID: 7070
+// Function ID: 7071
 // Name: set
-// Dependencies: [4244, 1351, 7044, 7045, 2]
+// Dependencies: [4274, 1351, 7071, 7072, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7043 (set)
+// Module 7070 (set)
 import set from "makeStorefrontSKUCodedLink";
 
 const items = [require("CodedLinkType").CodedLinkType.APP_DIRECTORY_PROFILE, require("CodedLinkType").CodedLinkType.ACTIVITY_BOOKMARK, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT, require("CodedLinkType").CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, require("CodedLinkType").CodedLinkType.APP_OAUTH2_LINK];
@@ -22,11 +22,11 @@ export const isApplicationCodedLinkMobileSupported = function isApplicationCoded
   return require(1351) /* isDiscordFrontendDevelopment */.isInSet(type, set1);
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
-  if (require(4244) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (tmp(4244).CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (tmp(4244).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (tmp(4244).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          let tmpResult = tmp(7044);
+  if (require(4274) /* CodedLinkType */.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
+    if (tmp(4274).CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (tmp(4274).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (tmp(4274).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          let tmpResult = tmp(7071);
           const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
@@ -36,11 +36,11 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
             tmp5 = obj;
           }
           return tmp5;
-        } else if (tmp(4244).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+        } else if (tmp(4274).CodedLinkType.ACTIVITY_BOOKMARK === type) {
           obj = { type: null, applicationId: null, params: null };
           obj[0] = type;
           obj[1] = code;
-          tmpResult = tmp(7045);
+          tmpResult = tmp(7072);
           obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }

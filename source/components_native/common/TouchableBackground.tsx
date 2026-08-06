@@ -1,10 +1,10 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11672
+// Function ID: 11673
 // Name: TouchableBackground
-// Dependencies: [32, 19, 17, 21, 4255, 712, 2]
+// Dependencies: [32, 19, 17, 21, 4285, 712, 2]
 // Exports: default
 
-// Module 11638 (TouchableBackground)
+// Module 11672 (TouchableBackground)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

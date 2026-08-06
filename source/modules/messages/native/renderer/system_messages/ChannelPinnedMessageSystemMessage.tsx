@@ -1,17 +1,17 @@
-// Module ID: 7873
-// Function ID: 7874
+// Module ID: 8014
+// Function ID: 8015
 // Name: createChannelPinnedMessageSystemMessage
-// Dependencies: [7851, 7853, 1236, 7854, 7857, 2]
+// Dependencies: [7992, 7994, 1236, 7995, 7998, 2]
 // Exports: createChannelPinnedMessageSystemMessage
 
-// Module 7873 (createChannelPinnedMessageSystemMessage)
+// Module 8014 (createChannelPinnedMessageSystemMessage)
 const result = require("getSystemLocale").fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx");
 
 export const createChannelPinnedMessageSystemMessage = function createChannelPinnedMessageSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(7851) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(7992) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7853)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), pinsOnClick: obj };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: importDefault(7994)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), pinsOnClick: obj };
   obj = { action: "bindOpenPins", messageChannelId: message.channel_id, medium: true };
   const messageReference = message.messageReference;
   if (null != messageReference) {
@@ -26,7 +26,7 @@ export const createChannelPinnedMessageSystemMessage = function createChannelPin
     const intl = tmp(1236).intl;
     formatToPartsResult = intl.formatToParts(tmp(1236).t["6TrHq2"], obj);
   }
-  const tmp9 = importDefault(7854)(roleStyle);
+  const tmp9 = importDefault(7995)(roleStyle);
   let accessibilityActions = tmp9.accessibilityActions;
   if (accessibilityActions == null) {
     accessibilityActions = [];
@@ -35,13 +35,13 @@ export const createChannelPinnedMessageSystemMessage = function createChannelPin
   const obj3 = { label: null, name: null };
   const intl3 = tmp(1236).intl;
   obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t["mp1N/2"]);
-  obj3[1] = require(7857) /* MessageAccessibilityAction */.MessageAccessibilityAction.OPEN_PINS;
+  obj3[1] = require(7998) /* MessageAccessibilityAction */.MessageAccessibilityAction.OPEN_PINS;
   items.push(obj3);
   if (null != messageReference) {
     const obj4 = { label: null, name: null };
     const intl4 = tmp(1236).intl;
     obj4[0] = intl4.string(tmp(1236).t["+TSRGD"]);
-    obj4[1] = tmp(7857).MessageAccessibilityAction.JUMP_TO_MESSAGE;
+    obj4[1] = tmp(7998).MessageAccessibilityAction.JUMP_TO_MESSAGE;
     items.push(obj4);
   }
   const obj5 = { content: formatToPartsResult };

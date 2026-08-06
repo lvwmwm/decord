@@ -1,10 +1,10 @@
-// Module ID: 10845
-// Function ID: 10846
+// Module ID: 10565
+// Function ID: 10566
 // Name: getOrFetchApplicationForLaunch
-// Dependencies: [5, 1372, 1371, 676, 10843, 10846, 709, 4154, 3873, 10847, 10509, 10848, 7482, 10850, 2]
+// Dependencies: [5, 1372, 1371, 676, 10566, 10551, 709, 4184, 3902, 10568, 10517, 10569, 7510, 10571, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10845 (getOrFetchApplicationForLaunch)
+// Module 10565 (getOrFetchApplicationForLaunch)
 import EmbeddedActivityLocationKind from "EmbeddedActivityLocationKind";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import participantFromServer from "participantFromServer";
@@ -36,13 +36,13 @@ function _getOrFetchApplicationForLaunch() {
       ({ applicationId: c0, channelId: c1, guildId: c2 } = callback);
       yield "PX_8";
       let c6 = 1;
-      yield callback2(10843)(callback, callback2);
+      yield callback2(10566)(callback, callback2);
       c6 = 0;
       ensureGuildLoaded = participantFromServer;
       if (null != dependencyMap) {
-        let PRIVATE_CHANNEL = callback(10846).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+        let PRIVATE_CHANNEL = callback(10551).EmbeddedActivityLocationKind.GUILD_CHANNEL;
       } else {
-        PRIVATE_CHANNEL = callback(10846).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+        PRIVATE_CHANNEL = callback(10551).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
       }
       const obj2 = callback2(709);
       const obj3 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce: "", applicationId: null, channelId: null, guildId: null, error: null, locationKind: null };
@@ -55,7 +55,7 @@ function _getOrFetchApplicationForLaunch() {
         dependencyMap = null;
       }
       obj3[4] = dependencyMap;
-      const aPIError = new callback(4154).APIError(ensureGuildLoaded);
+      const aPIError = new callback(4184).APIError(ensureGuildLoaded);
       obj3[5] = aPIError;
       obj3[6] = PRIVATE_CHANNEL;
       obj2.dispatch(obj3);
@@ -107,13 +107,13 @@ function _confirmActivityChange() {
             if (value != null) {
               _location = value.location;
             }
-            const channel = outer1_4.getChannel(_undefined(3873).getEmbeddedActivityLocationChannelId(_location));
+            const channel = outer1_4.getChannel(_undefined(3902).getEmbeddedActivityLocationChannelId(_location));
             if (null != value) {
               if (null != channel) {
                 if (dependencyMap != null) {
                   dependencyMap();
                 }
-                _undefined2(10847)(tmp, channel, () => {
+                _undefined2(10568)(tmp, channel, () => {
                   let obj = value(table[10])();
                   obj = { location: value.location, applicationId: lib.id, shouldClosePopout: value };
                   obj.leaveActivity(obj);

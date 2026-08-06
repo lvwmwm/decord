@@ -1,10 +1,10 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9814
+// Function ID: 9815
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 5646, 8075, 712, 4255, 9658, 1236, 4263, 9738, 7744, 9674, 2]
+// Dependencies: [19, 17, 21, 5700, 8216, 712, 4285, 9689, 1236, 4293, 9769, 7885, 9705, 2]
 // Exports: default
 
-// Module 9783 (AlertNotification)
+// Module 9814 (AlertNotification)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function AlertNotification(notification) {
   channel = notification.channel;
   guild = notification.guild;
   const tmp = callback3();
-  let obj = channel(9658);
+  let obj = channel(9689);
   const incidentData = obj.useGuildIncidentsState(notification.key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
@@ -62,18 +62,18 @@ export default function AlertNotification(notification) {
   obj = { children: null };
   const obj1 = { cutouts: items2, children: null };
   items2 = [obj];
-  obj1[1] = callback(guild(5646), { guild, selected: false });
-  const items3 = [callback(guild(8075), obj1), ];
+  obj1[1] = callback(guild(5700), { guild, selected: false });
+  const items3 = [callback(guild(8216), obj1), ];
   const obj2 = { style: tmp.warningBadge, children: null };
   const obj3 = { style: tmp.warningIcon, color: null };
   obj3[1] = guild(712).colors.ICON_FEEDBACK_WARNING;
-  obj2[1] = callback(channel(7744).WarningIcon, obj3);
+  obj2[1] = callback(channel(7885).WarningIcon, obj3);
   items3[1] = callback(View, obj2);
   obj[0] = items3;
   obj[0] = callback2(closure_6, obj);
   obj[1] = memo;
-  obj[2] = callback(channel(9674).SystemMessageText, { text: stringResult });
+  obj[2] = callback(channel(9705).SystemMessageText, { text: stringResult });
   obj[3] = callback;
   obj[4] = notification;
-  return callback(channel(9738).NotificationPressable, obj);
+  return callback(channel(9769).NotificationPressable, obj);
 };

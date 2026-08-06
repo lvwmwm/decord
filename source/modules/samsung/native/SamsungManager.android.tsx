@@ -1,9 +1,9 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10429
+// Function ID: 10430
 // Name: get ActivityIndicator
 // Dependencies: [17, 2]
 
-// Module 10398 (get ActivityIndicator)
+// Module 10429 (get ActivityIndicator)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/samsung/native/SamsungManager.android.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 9354
+// Function ID: 9355
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useAndroidShopOrdersEnabled
 
-// Module 9325 (apexExperiment)
+// Module 9354 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

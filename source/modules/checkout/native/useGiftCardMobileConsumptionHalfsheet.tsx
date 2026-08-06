@@ -1,10 +1,10 @@
-// Module ID: 5913
-// Function ID: 5914
+// Module ID: 5940
+// Function ID: 5941
 // Name: useGiftCardMobileConsumptionHalfsheet
-// Dependencies: [32, 19, 5914, 3904, 1369, 505, 5915, 589, 1358, 5916, 4574, 709, 5920, 1959, 4223, 2]
+// Dependencies: [32, 19, 5941, 3933, 1369, 505, 5942, 589, 1358, 5943, 4604, 709, 5947, 1988, 4253, 2]
 // Exports: useGiftCardMobileConsumptionHalfsheet
 
-// Module 5913 (useGiftCardMobileConsumptionHalfsheet)
+// Module 5940 (useGiftCardMobileConsumptionHalfsheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import set from "set";
@@ -19,8 +19,8 @@ const Idle = obj.Idle;
 const result = require("set").fileFinishedImporting("modules/checkout/native/useGiftCardMobileConsumptionHalfsheet.tsx");
 
 export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileConsumptionHalfsheet() {
-  enabled = enabled(5915).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
-  let obj = enabled(5915);
+  enabled = enabled(5942).useGiftCardsExperimentConfig({ location: "useGiftCardMobileConsumptionHalfsheet" }).enabled;
+  let obj = enabled(5942);
   let tmp = enabled;
   let items = [callback];
   let items1 = [enabled];
@@ -87,7 +87,7 @@ export const useGiftCardMobileConsumptionHalfsheet = function useGiftCardMobileC
     return items1;
   }, items6);
   const obj4 = enabled(589);
-  const tmp10 = first(tmp(5916).useSelectedDismissibleContent(memo, undefined, true), 2);
+  const tmp10 = first(tmp(5943).useSelectedDismissibleContent(memo, undefined, true), 2);
   first = tmp10[0];
   React = tmp12;
   set = React.useRef(tmp12);

@@ -1,9 +1,9 @@
-// Module ID: 7193
-// Function ID: 7194
+// Module ID: 7220
+// Function ID: 7221
 // Name: _fileSize
-// Dependencies: [5, 676, 4248, 3, 652, 12, 4843, 4848, 4809, 4810, 2]
+// Dependencies: [5, 676, 4278, 3, 652, 12, 4873, 4878, 4839, 4840, 2]
 
-// Module 7193 (_fileSize)
+// Module 7220 (_fileSize)
 import apply from "apply";
 import { AbortCodes } from "ME";
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING";

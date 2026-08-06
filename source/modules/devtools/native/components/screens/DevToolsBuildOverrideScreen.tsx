@@ -1,9 +1,9 @@
-// Module ID: 13728
-// Function ID: 13729
+// Module ID: 13765
+// Function ID: 13766
 // Name: jsx
-// Dependencies: [32, 19, 17, 10294, 21, 4255, 712, 7623, 13729, 5295, 589, 11072, 4663, 5634, 5300, 4203, 5623, 3955, 13726, 4214, 7767, 7766, 7685, 4665, 1351, 2]
+// Dependencies: [32, 19, 17, 10325, 21, 4285, 712, 7651, 13766, 5349, 589, 11104, 4693, 5688, 5354, 4233, 5677, 3984, 13763, 4244, 7908, 7907, 7713, 4695, 1351, 2]
 
-// Module 13728 (jsx)
+// Module 13765 (jsx)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TrashIcon";
 import { ScrollView } from "presentAddedFriendToast";
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(() => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 11072).DEVICE_FIELD];
+      tmp = overrides[first(undefined, 11104).DEVICE_FIELD];
     }
     return tmp;
   });
@@ -44,12 +44,12 @@ const memoResult = importAllResult.memo(() => {
   obj = { style: tmp.content, contentContainerStyle: null, children: null };
   obj = {};
   let merged = Object.assign(tmp.contentContainer);
-  obj.paddingBottom = tmp.contentContainer.padding + first(5295)({ includeKeyboardHeight: true }).insets.bottom;
+  obj.paddingBottom = tmp.contentContainer.padding + first(5349)({ includeKeyboardHeight: true }).insets.bottom;
   obj[1] = obj;
   let tmp10Result = null;
   if (null != stateFromStores) {
     const obj1 = { icon: null, label: null, subLabel: null, onPress: null };
-    obj1[0] = tmp7(tmp3(4203).CopyIcon, {});
+    obj1[0] = tmp7(tmp3(4233).CopyIcon, {});
     first = stateFromStores;
     const found = items.find((value) => value.value === first.type);
     let label;
@@ -60,28 +60,28 @@ const memoResult = importAllResult.memo(() => {
     obj1[1] = label;
     obj1[2] = stateFromStores.id;
     obj1[3] = function onPress() {
-      first(5623).copy(first.id);
-      const obj = first(5623);
-      const result = first(3955).presentCopiedToClipboard();
+      first(5677).copy(first.id);
+      const obj = first(5677);
+      const result = first(3984).presentCopiedToClipboard();
     };
-    const items1 = [tmp7(tmp3(5300).TableRow, obj1), , ];
+    const items1 = [tmp7(tmp3(5354).TableRow, obj1), , ];
     let obj3 = { icon: null, label: "Refresh Override", onPress: null, arrow: true };
-    obj3[0] = tmp7(tmp3(13726).RefreshIcon, {});
-    obj3[2] = tmp3(11072).refreshBuildOverride;
-    items1[1] = tmp7(tmp3(5300).TableRow, obj3);
+    obj3[0] = tmp7(tmp3(13763).RefreshIcon, {});
+    obj3[2] = tmp3(11104).refreshBuildOverride;
+    items1[1] = tmp7(tmp3(5354).TableRow, obj3);
     const obj4 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
-    obj4[0] = tmp7(tmp3(4214).TrashIcon, { color: "text-feedback-critical" });
-    obj4[3] = tmp3(11072).clearBuildOverride;
-    items1[2] = tmp7(tmp3(5300).TableRow, obj4);
+    obj4[0] = tmp7(tmp3(4244).TrashIcon, { color: "text-feedback-critical" });
+    obj4[3] = tmp3(11104).clearBuildOverride;
+    items1[2] = tmp7(tmp3(5354).TableRow, obj4);
     obj2[2] = items1;
-    tmp10Result = tmp10(tmp3(5634).TableRowGroup, obj2);
+    tmp10Result = tmp10(tmp3(5688).TableRowGroup, obj2);
   }
   const items2 = [tmp10Result, , , ];
   let str = "";
   if (null != stateFromStores) {
     str = "New";
   }
-  items2[1] = jsx(first(7767).TableRadioGroup, {
+  items2[1] = jsx(first(7908).TableRadioGroup, {
     title: `${str} Override Type`,
     defaultValue: first.type,
     onChange(type) {
@@ -93,7 +93,7 @@ const memoResult = importAllResult.memo(() => {
       let label;
       value = value.value;
       ({ icon, label } = value);
-      return callback(first(7766).TableRadioRow, { value, label, icon }, value);
+      return callback(first(7907).TableRadioRow, { value, label, icon }, value);
     })
   });
   const found1 = items.find((value) => value.value === first.type);
@@ -126,11 +126,11 @@ const memoResult = importAllResult.memo(() => {
       let label;
       value = value.value;
       ({ icon, label } = value);
-      return callback(first(7766).TableRadioRow, { value, label, icon }, value);
+      return callback(first(7907).TableRadioRow, { value, label, icon }, value);
     })
   };
   const tmp8 = ScrollView;
-  obj7[1] = jsx(first(7685).TextInput, {
+  obj7[1] = jsx(first(7713).TextInput, {
     size: "md",
     placeholder: "Enter " + label2,
     onChange(id) {
@@ -144,19 +144,19 @@ const memoResult = importAllResult.memo(() => {
     autoComplete: "off",
     isClearable: true
   });
-  obj6[2] = jsx(first(5300).TableRow, { icon, label: null });
-  items2[2] = jsx(first(5634).TableRowGroup, { title: label1, hasIcons: true, children: null });
-  items2[3] = jsx(first(4665).Button, {
+  obj6[2] = jsx(first(5354).TableRow, { icon, label: null });
+  items2[2] = jsx(first(5688).TableRowGroup, { title: label1, hasIcons: true, children: null });
+  items2[3] = jsx(first(4695).Button, {
     text: "Apply Build Override",
     disabled: "" === first.id,
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = first(11072).setBuildOverrideForBranch(tmp.id);
-        const obj3 = first(11072);
+        const result = first(11104).setBuildOverrideForBranch(tmp.id);
+        const obj3 = first(11104);
       } else if ("id" === type) {
-        const result1 = first(11072).setBuildOverrideForId(tmp.id);
-        const obj2 = first(11072);
+        const result1 = first(11104).setBuildOverrideForId(tmp.id);
+        const obj2 = first(11104);
       } else {
         first(1351).assertNever(tmp.type);
         const obj = first(1351);
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(() => {
     }
   });
   obj8[1] = items2;
-  obj[2] = jsxs(first(4663).Stack, { spacing: 16, children: null });
+  obj[2] = jsxs(first(4693).Stack, { spacing: 16, children: null });
   return <tmp8 />;
 });
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsBuildOverrideScreen.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 8890
-// Function ID: 8891
-// Dependencies: [1376, 1372, 4263, 4460, 8886, 1959, 2]
+// Module ID: 8919
+// Function ID: 8920
+// Dependencies: [1376, 1372, 4293, 4490, 8915, 1988, 2]
 
-// Module 8890
+// Module 8919
 import { CREATEABLE_NON_VOCAL_CHANNEL_NAME_TYPES as closure_3 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 
@@ -14,7 +14,7 @@ export default {
   open(arg0, arg1, arg2, arg3) {
     const self = this;
     if (null != arg1) {
-      const obj2 = importDefault(4460);
+      const obj2 = importDefault(4490);
       const tmp = arg0;
       let obj = { channelType: null, guildId: null, categoryId: null, cloneChannelId: null, onChannelCreated: null };
       obj[0] = tmp;
@@ -33,13 +33,13 @@ export default {
           const obj = self(outer1_2[2]);
         }
       };
-      obj2.pushLazy(self(1959)(8886, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
+      obj2.pushLazy(self(1988)(8915, dependencyMap.paths), obj, CREATE_CHANNEL_MODAL_KEY);
       const tmp2 = arg2;
       const tmp3 = arg3;
-      const tmp9 = self(1959)(8886, dependencyMap.paths);
+      const tmp9 = self(1988)(8915, dependencyMap.paths);
     }
   },
   close() {
-    importDefault(4460).popWithKey(CREATE_CHANNEL_MODAL_KEY);
+    importDefault(4490).popWithKey(CREATE_CHANNEL_MODAL_KEY);
   }
 };

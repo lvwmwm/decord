@@ -1,10 +1,10 @@
-// Module ID: 11447
-// Function ID: 11448
+// Module ID: 11481
+// Function ID: 11482
 // Name: AttachmentPreviewAppLauncher
-// Dependencies: [19, 17, 4591, 4590, 21, 4255, 712, 9765, 9698, 1906, 11430, 589, 8140, 11448, 1236, 4802, 10065, 2]
+// Dependencies: [19, 17, 4621, 4620, 21, 4285, 712, 9796, 9729, 1935, 11464, 589, 8280, 11482, 1236, 4832, 10096, 2]
 // Exports: default
 
-// Module 11447 (AttachmentPreviewAppLauncher)
+// Module 11481 (AttachmentPreviewAppLauncher)
 import noop from "noop";
 import { View } from "set";
 import { DraftType } from "handleChanged";
@@ -23,8 +23,8 @@ function AttachmentPreviewAppLauncher(arg0) {
   const tmp = createCacheKey();
   ({ width, height } = tmp.selectedImage);
   const obj = { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: null };
-  obj[6] = jsx(require(9698) /* FileIcon */.FileIcon, { size: "sm" });
-  return jsx(importDefault(9765), { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: null });
+  obj[6] = jsx(require(9729) /* FileIcon */.FileIcon, { size: "sm" });
+  return jsx(importDefault(9796), { uri, isImage, isVideo, width, height, style: tmp.selectedImage, defaultPreview: null });
 }
 createCacheKey = { imageIconWrapper: null, selectedImage: null };
 createCacheKey = { justifyContent: "center", alignItems: "center", backgroundColor: require("Themes").colors.BACKGROUND_MOD_SUBTLE, width: 32, height: 32, borderRadius: require("Themes").radii.lg };

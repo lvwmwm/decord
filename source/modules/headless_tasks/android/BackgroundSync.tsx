@@ -1,9 +1,9 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 16907
+// Function ID: 16908
 // Name: resolved
-// Dependencies: [4945, 1218, 6770, 3, 1923, 16239, 2]
+// Dependencies: [4975, 1218, 6797, 3, 1952, 16279, 2]
 
-// Module 16867 (resolved)
+// Module 16907 (resolved)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import fetchFingerprint from "fetchFingerprint";
 import getState from "getState";
@@ -19,8 +19,8 @@ export default (arg0) => {
     let resolved = Promise.resolve();
   } else {
     if (!tmp) {
-      const result = importDefault(1923).carefullyOpenDatabase(id.getId());
-      const obj2 = importDefault(1923);
+      const result = importDefault(1952).carefullyOpenDatabase(id.getId());
+      const obj2 = importDefault(1952);
     }
     resolved = new Promise((arg0) => {
       outer1_6.log("Executing BackgroundSync with ", callback);

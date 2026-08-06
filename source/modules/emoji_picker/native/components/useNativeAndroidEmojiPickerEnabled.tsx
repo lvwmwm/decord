@@ -1,10 +1,10 @@
-// Module ID: 8570
-// Function ID: 8571
+// Module ID: 8599
+// Function ID: 8600
 // Name: useNativeAndroidEmojiPickerEnabled
-// Dependencies: [1218, 500, 1923, 2]
+// Dependencies: [1218, 500, 1952, 2]
 // Exports: default
 
-// Module 8570 (useNativeAndroidEmojiPickerEnabled)
+// Module 8599 (useNativeAndroidEmojiPickerEnabled)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
@@ -13,8 +13,8 @@ const result = require("databaseName").fileFinishedImporting("modules/emoji_pick
 export default function useNativeAndroidEmojiPickerEnabled() {
   let isAndroidResult = require(500) /* set */.isAndroid();
   if (isAndroidResult) {
-    isAndroidResult = null != importDefault(1923).database(id.getId());
-    const obj2 = importDefault(1923);
+    isAndroidResult = null != importDefault(1952).database(id.getId());
+    const obj2 = importDefault(1952);
   }
   return isAndroidResult;
 };

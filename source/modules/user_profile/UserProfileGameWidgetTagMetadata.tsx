@@ -1,10 +1,10 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12260
+// Function ID: 12261
 // Name: WidgetGameTagIconRole
-// Dependencies: [6985, 1236, 2]
+// Dependencies: [7012, 1236, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 12226 (WidgetGameTagIconRole)
+// Module 12260 (WidgetGameTagIconRole)
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
 obj = {
   getText() {
@@ -21,86 +21,86 @@ obj = {
   iconRole: obj.RIBBON
 };
 let closure_2 = {
-  [require(6985).WidgetGameTag.BETTER_THAN_YOU]: obj,
-  [require(6985).WidgetGameTag.CASUAL]: obj,
-  [require(6985).WidgetGameTag.INTERMEDIATE]: {
+  [require(7012).WidgetGameTag.BETTER_THAN_YOU]: obj,
+  [require(7012).WidgetGameTag.CASUAL]: obj,
+  [require(7012).WidgetGameTag.INTERMEDIATE]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t["A/mIs/"]);
     },
     iconRole: obj.RIBBON
   },
-  [require(6985).WidgetGameTag.EXPERT]: {
+  [require(7012).WidgetGameTag.EXPERT]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.RIOFc2);
     },
     iconRole: obj.RIBBON
   },
-  [require(6985).WidgetGameTag.OBSESSED]: {
+  [require(7012).WidgetGameTag.OBSESSED]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.isPJDu);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(6985).WidgetGameTag.LOVE_IT]: {
+  [require(7012).WidgetGameTag.LOVE_IT]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t["1rN7BF"]);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(6985).WidgetGameTag.KIND_OF_LOVE_IT]: {
+  [require(7012).WidgetGameTag.KIND_OF_LOVE_IT]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.bCBpVg);
     },
     iconRole: obj.THUMBS_UP
   },
-  [require(6985).WidgetGameTag.KIND_OF_HATE_IT]: {
+  [require(7012).WidgetGameTag.KIND_OF_HATE_IT]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t["/WcmcP"]);
     },
     iconRole: obj.THUMBS_DOWN
   },
-  [require(6985).WidgetGameTag.RAGE_QUITTING]: {
+  [require(7012).WidgetGameTag.RAGE_QUITTING]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t["NXZ/MZ"]);
     },
     iconRole: obj.THUMBS_DOWN
   },
-  [require(6985).WidgetGameTag.OPEN_TO_PLAY]: {
+  [require(7012).WidgetGameTag.OPEN_TO_PLAY]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.q30PoH);
     },
     iconRole: obj.FRIENDS
   },
-  [require(6985).WidgetGameTag.LOOKING_FOR_GROUP]: {
+  [require(7012).WidgetGameTag.LOOKING_FOR_GROUP]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.DWWAAQ);
     },
     iconRole: obj.FRIENDS
   },
-  [require(6985).WidgetGameTag.LOOKING_FOR_TIPS]: {
+  [require(7012).WidgetGameTag.LOOKING_FOR_TIPS]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.KQDVvH);
     },
     iconRole: obj.FRIENDS
   },
-  [require(6985).WidgetGameTag.OPEN_TO_TEACH]: {
+  [require(7012).WidgetGameTag.OPEN_TO_TEACH]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t["5HhQo+"]);
     },
     iconRole: obj.FRIENDS
   },
-  [require(6985).WidgetGameTag.LOOKING_TO_DISCUSS]: {
+  [require(7012).WidgetGameTag.LOOKING_TO_DISCUSS]: {
     getText() {
       const intl = require(1236) /* getSystemLocale */.intl;
       return intl.string(require(1236) /* getSystemLocale */.t.GipOCq);

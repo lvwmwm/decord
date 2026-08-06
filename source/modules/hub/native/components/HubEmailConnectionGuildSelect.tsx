@@ -1,13 +1,13 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 12010
+// Function ID: 12011
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 11958, 21, 4255, 712, 7749, 5646, 1411, 4251, 1236, 1581, 4665, 1297, 1480, 5902, 5900, 11971, 4154, 11966, 2]
+// Dependencies: [5, 32, 19, 17, 11992, 21, 4285, 712, 7890, 5700, 1411, 4281, 1236, 1609, 4695, 1297, 1480, 5929, 5927, 12005, 4184, 12000, 2]
 // Exports: default
 
-// Module 11976 (HubEmailConnectionGuildSelectRow)
+// Module 12010 (HubEmailConnectionGuildSelectRow)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
-import module_11971 from "module_11971";
+import module_12005 from "module_12005";
 import get_ActivityIndicator from "HeaderActionButton";
 import { HubEmailConnectionSteps } from "HubEmailConnectionSteps";
 import jsxProd from "HubEmailConnectionModal";
@@ -42,7 +42,7 @@ function HubEmailConnectionGuildSelectHeader() {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.mOMeiR);
-  obj[1] = callback(require(4251) /* Text */.Text, obj);
+  obj[1] = callback(require(4281) /* Text */.Text, obj);
   return callback(closure_6, obj);
 }
 function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
@@ -52,7 +52,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const tmp = createCacheKey();
   let obj = { style: null, children: null };
   const items = [tmp.footerSafeAreaContainer, ];
-  obj = { paddingBottom: importDefault(1581)().bottom };
+  obj = { paddingBottom: importDefault(1609)().bottom };
   items[1] = obj;
   obj[0] = items;
   obj = { style: tmp.footerContainer, children: null };
@@ -60,7 +60,7 @@ function HubEmailConnectionGuildSelectFooter(onFooterButtonPressed) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t.G3Zk7V);
   obj1[5] = onFooterButtonPressed.onFooterButtonPressed;
-  const items1 = [callback(require(4665) /* Button */.Button, obj1), ];
+  const items1 = [callback(require(4695) /* Button */.Button, obj1), ];
   let tmp3Result = null != errors;
   if (tmp3Result) {
     const obj2 = { style: null, children: null };

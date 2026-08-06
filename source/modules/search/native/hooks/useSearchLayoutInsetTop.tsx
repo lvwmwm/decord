@@ -1,12 +1,12 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 15831
+// Function ID: 15832
 // Name: useSearchLayoutInsetTop
-// Dependencies: [1581, 2]
+// Dependencies: [1609, 2]
 // Exports: default
 
-// Module 15791 (useSearchLayoutInsetTop)
+// Module 15831 (useSearchLayoutInsetTop)
 const result = require("set").fileFinishedImporting("modules/search/native/hooks/useSearchLayoutInsetTop.tsx");
 
 export default function useSearchLayoutInsetTop() {
-  return importDefault(1581)().top + 8;
+  return importDefault(1609)().top + 8;
 };

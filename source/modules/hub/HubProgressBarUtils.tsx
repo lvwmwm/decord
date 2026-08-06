@@ -1,10 +1,10 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11942
+// Function ID: 11943
 // Name: getHubProgressTitleForStep
-// Dependencies: [19, 1340, 4949, 8971, 676, 589, 1306, 1236, 1351, 1384, 2]
+// Dependencies: [19, 1340, 4979, 9000, 676, 589, 1306, 1236, 1351, 1384, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 11908 (getHubProgressTitleForStep)
+// Module 11942 (getHubProgressTitleForStep)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import set from "set";

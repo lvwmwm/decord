@@ -1,10 +1,10 @@
-// Module ID: 15143
-// Function ID: 15144
+// Module ID: 15181
+// Function ID: 15182
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getMobileBoostProgressBarEnabled, useMobileBoostProgressBarEnabled
 
-// Module 15143 (apexExperiment)
+// Module 15181 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

@@ -1,10 +1,10 @@
-// Module ID: 13813
-// Function ID: 13814
+// Module ID: 13850
+// Function ID: 13851
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 5643, 9265, 505, 21, 4255, 712, 8049, 10000, 4223, 13814, 1959, 1236, 13805, 5717, 5221, 12023, 9268, 1297, 8070, 2]
+// Dependencies: [19, 17, 5697, 9294, 505, 21, 4285, 712, 8190, 10031, 4253, 13851, 1988, 1236, 13842, 5744, 5251, 12057, 9297, 1297, 8211, 2]
 // Exports: default
 
-// Module 13813 (UserProfileEffectEditButton)
+// Module 13850 (UserProfileEffectEditButton)
 import Button from "Button";
 import { View } from "metadata";
 import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET";

@@ -1,10 +1,10 @@
-// Module ID: 11314
-// Function ID: 11315
+// Module ID: 11348
+// Function ID: 11349
 // Name: result
-// Dependencies: [32, 1372, 4176, 1874, 11315, 11316, 4688, 687, 589, 11, 1358, 5916, 4071, 2]
+// Dependencies: [32, 1372, 4206, 1903, 11349, 11350, 4718, 687, 589, 11, 1358, 5943, 4100, 2]
 // Exports: default
 
-// Module 11314 (result)
+// Module 11348 (result)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleInviteData from "handleInviteData";
@@ -68,7 +68,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const tmp14 = initialize;
   const tmp2Result1 = guild_id(589);
-  const tmp2Result2 = guild_id(5916);
+  const tmp2Result2 = guild_id(5943);
   const items5 = [closure_8];
   const stateFromStoresObject = guild_id(589).useStateFromStoresObject(items5, () => ({ recentMessageMetadata: store2.getRecentMessageMetadata(), recentApplicationCommandMetadata: store2.getRecentApplicationCommandMetadata() }));
   ({ recentMessageMetadata, recentApplicationCommandMetadata } = stateFromStoresObject);
@@ -101,12 +101,12 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
     const applicationId = recentApplicationCommandMetadata.applicationId;
   }
   const tmp2Result4 = guild_id(589);
-  const result = guild_id(4071).useIsDismissibleContentDismissed_UNSAFE(tmp2(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const tmp2Result5 = guild_id(4071);
-  let result1 = guild_id(4071).useIsDismissibleContentDismissed_UNSAFE(tmp2(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
-  const tmp2Result6 = guild_id(4071);
+  const result = guild_id(4100).useIsDismissibleContentDismissed_UNSAFE(tmp2(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const tmp2Result5 = guild_id(4100);
+  let result1 = guild_id(4100).useIsDismissibleContentDismissed_UNSAFE(tmp2(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const tmp2Result6 = guild_id(4100);
   let tmp30 = null != stateFromStores4;
-  const result2 = guild_id(4071).useIsDismissibleContentDismissed_UNSAFE(tmp2(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const result2 = guild_id(4100).useIsDismissibleContentDismissed_UNSAFE(tmp2(1358).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp30) {
     tmp30 = stateFromStores4.channelId === channelId;
   }

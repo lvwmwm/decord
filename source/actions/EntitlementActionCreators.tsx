@@ -1,10 +1,10 @@
-// Module ID: 6756
-// Function ID: 6757
+// Module ID: 6783
+// Function ID: 6784
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 676, 709, 530, 4492, 2]
+// Dependencies: [5, 676, 709, 530, 4522, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 6756 (_fetchUserEntitlements)
+// Module 6783 (_fetchUserEntitlements)
 import set from "set";
 import { Endpoints } from "ME";
 

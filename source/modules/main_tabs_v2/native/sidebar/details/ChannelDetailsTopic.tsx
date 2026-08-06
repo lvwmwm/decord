@@ -1,9 +1,9 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15705
+// Function ID: 15706
 // Name: GuildChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1874, 9559, 676, 21, 500, 4255, 3959, 712, 689, 4116, 4664, 4245, 4797, 4251, 4676, 589, 4094, 4437, 2]
+// Dependencies: [32, 19, 17, 1903, 9588, 676, 21, 500, 4285, 3988, 712, 689, 4145, 4694, 4275, 4827, 4281, 4706, 589, 4123, 4467, 2]
 
-// Module 15667 (GuildChannelDetailsTopic)
+// Module 15705 (GuildChannelDetailsTopic)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "nameFromUser";
 import get_ActivityIndicator from "LinearGradient";
@@ -217,7 +217,7 @@ function PrivateChannelDetailsTopic(channel) {
     obj[0] = channel.textAlign;
     obj[2] = obj;
     obj[3] = stateFromStores;
-    tmp4 = callback(channel(4251).Text, obj);
+    tmp4 = callback(channel(4281).Text, obj);
   }
   return tmp4;
 }
@@ -233,7 +233,7 @@ function GroupDMChannelDetailsTopic(channel) {
     obj[0] = channel.textAlign;
     obj[2] = obj;
     obj[3] = stateFromStores;
-    tmp4 = callback(channel(4251).Text, obj);
+    tmp4 = callback(channel(4281).Text, obj);
   }
   return tmp4;
 }

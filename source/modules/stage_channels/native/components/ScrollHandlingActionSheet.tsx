@@ -1,10 +1,10 @@
-// Module ID: 7747
-// Function ID: 7748
+// Module ID: 7888
+// Function ID: 7889
 // Name: ScrollHandlingActionSheet
-// Dependencies: [19, 21, 5323, 2]
+// Dependencies: [19, 21, 5377, 2]
 // Exports: default
 
-// Module 7747 (ScrollHandlingActionSheet)
+// Module 7888 (ScrollHandlingActionSheet)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,5 +16,5 @@ export default function ScrollHandlingActionSheet(children) {
   const obj = { startExpanded: true };
   const merged1 = Object.assign(merged);
   obj.children = children.children;
-  return jsx(require(5323) /* Background */.BottomSheet, { startExpanded: true });
+  return jsx(require(5377) /* Background */.BottomSheet, { startExpanded: true });
 };

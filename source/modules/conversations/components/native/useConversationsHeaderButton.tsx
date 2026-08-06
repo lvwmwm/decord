@@ -1,10 +1,10 @@
-// Module ID: 8336
-// Function ID: 8337
+// Module ID: 8476
+// Function ID: 8477
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 6949, 6951, 8337, 692, 8338, 8339, 589, 8350, 8341, 8352, 1236, 2]
+// Dependencies: [5, 19, 6976, 6978, 8477, 692, 8478, 8479, 589, 8490, 8481, 8492, 1236, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 8336 (useConversationsHeaderButton)
+// Module 8476 (useConversationsHeaderButton)
 import set from "set";
 import noop from "noop";
 import removePendingListFetch from "removePendingListFetch";

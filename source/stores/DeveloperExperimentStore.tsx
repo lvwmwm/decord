@@ -1,9 +1,9 @@
-// Module ID: 7073
-// Function ID: 7074
+// Module ID: 7100
+// Function ID: 7101
 // Name: init
-// Dependencies: [1862, 1874, 4170, 1881, 1880, 589, 709, 2]
+// Dependencies: [1891, 1903, 4200, 1910, 1909, 589, 709, 2]
 
-// Module 7073 (init)
+// Module 7100 (init)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExperimentBuckets } from "ExperimentBuckets";
@@ -17,7 +17,7 @@ if (!tmp2) {
   tmp2 = window.GLOBAL_ENV.RELEASE_CHANNEL === Environments.STAGING;
 }
 function init() {
-  let closure_5 = require(1880) /* validatePremiumType */.isStaffEnv(authStore.getCurrentUser());
+  let closure_5 = require(1909) /* validatePremiumType */.isStaffEnv(authStore.getCurrentUser());
 }
 let c5 = tmp2;
 class DeveloperExperimentStore extends Store {
@@ -37,7 +37,7 @@ prototype["initialize"] = function initialize() {
       }
     }
   });
-  let closure_5 = self(1880).isStaffEnv(authStore.getCurrentUser());
+  let closure_5 = self(1909).isStaffEnv(authStore.getCurrentUser());
   const timerId = setTimeout(() => Object.freeze(self));
 };
 prototype["getExperimentDescriptor"] = function getExperimentDescriptor() {

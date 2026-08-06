@@ -1,10 +1,10 @@
-// Module ID: 9905
-// Function ID: 9906
+// Module ID: 9936
+// Function ID: 9937
 // Name: getDeviceMediaPhotos
-// Dependencies: [17, 3, 1208, 500, 9906, 2]
+// Dependencies: [17, 3, 1208, 500, 9937, 2]
 // Exports: default
 
-// Module 9905 (getDeviceMediaPhotos)
+// Module 9936 (getDeviceMediaPhotos)
 import { NativeModules } from "get ActivityIndicator";
 
 let c4 = new require("set")("DeviceMedia.tsx");
@@ -29,7 +29,7 @@ export default function getDeviceMediaPhotos(arg0) {
   }
   let obj = require(500) /* set */;
   if (obj.isIOS()) {
-    const obj3 = importDefault(9906);
+    const obj3 = importDefault(9937);
     if (obj3 != null) {
       obj = { first: null, groupTypes: "Recents", assetType: "All", after: null, extensions: null };
       obj[0] = batchSize;

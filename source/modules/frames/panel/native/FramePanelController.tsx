@@ -1,13 +1,15 @@
-// Module ID: 15965
-// Function ID: 15966
+// Module ID: 16005
+// Function ID: 16006
 // Name: FramePanelController
-// Dependencies: [19, 4292, 10478, 21, 589, 15932, 15966, 10482, 2]
+// Dependencies: [19, 4322, 10509, 10510, 9676, 21, 589, 15972, 16006, 10513, 2]
 // Exports: default
 
-// Module 15965 (FramePanelController)
+// Module 16005 (FramePanelController)
 import "noop";
 import addApplication from "addApplication";
 import map from "map";
+import { asLaunched } from "FrameLayoutModes";
+import { ActivityPanelModes } from "ActivityPanelModes";
 import { jsx } from "jsxProd";
 
 const require = arg1;
@@ -22,35 +24,40 @@ export default function FramePanelController(children) {
   let obj = require(589) /* initialize */;
   const items = [map, addApplication];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let obj = store;
-    const activityPanelMode = store.getActivityPanelMode();
-    const connectedFrame = store.getConnectedFrame();
-    let applicationId;
-    if (connectedFrame != null) {
-      applicationId = connectedFrame.applicationId;
+    const tmp = callback(mainFrame.getMainFrame());
+    let activityPanelMode;
+    if (tmp != null) {
+      activityPanelMode = tmp.data.activityPanelMode;
     }
-    obj = { mode: activityPanelMode, hasConnectedActivity: null != connectedFrame, connectedActivityAppId: applicationId, currentApp: null, orientationLockStateForApp: null };
+    if (activityPanelMode == null) {
+      activityPanelMode = constants.DISCONNECTED;
+    }
+    let applicationId;
+    if (tmp != null) {
+      applicationId = tmp.applicationId;
+    }
+    const obj = { mode: activityPanelMode, hasConnectedActivity: null != tmp, connectedActivityAppId: applicationId, currentApp: null, orientationLockStateForApp: null };
     let application;
     if (null != applicationId) {
       application = application.getApplication(applicationId);
     }
     obj[3] = application;
-    let orientationLockStateForApp;
-    if (null != applicationId) {
-      orientationLockStateForApp = obj.getOrientationLockStateForApp(applicationId);
+    let orientationLock;
+    if (tmp != null) {
+      orientationLock = tmp.data.orientationLock;
     }
-    obj[4] = orientationLockStateForApp;
+    obj[4] = orientationLock;
     return obj;
   }, []);
   ({ mode, hasConnectedActivity, connectedActivityAppId, currentApp, orientationLockStateForApp } = stateFromStoresObject);
   obj = { context: null, orientationLockStateForApp: null, mode: null, hasConnectedActivity: null, connectedActivityAppId: null, currentApp: null, updateActivityPanelMode: null, children: null };
-  obj[0] = importDefault(15966);
+  obj[0] = importDefault(16006);
   obj[1] = orientationLockStateForApp;
   obj[2] = mode;
   obj[3] = hasConnectedActivity;
   obj[4] = connectedActivityAppId;
   obj[5] = currentApp;
-  obj[6] = importDefault(10482).updateFramePanelMode;
+  obj[6] = importDefault(10513).updateFramePanelMode;
   obj[7] = children.children;
-  return jsx(require(15932) /* BaseActivityPanelController */.BaseActivityPanelController, { context: null, orientationLockStateForApp: null, mode: null, hasConnectedActivity: null, connectedActivityAppId: null, currentApp: null, updateActivityPanelMode: null, children: null });
+  return jsx(require(15972) /* BaseActivityPanelController */.BaseActivityPanelController, { context: null, orientationLockStateForApp: null, mode: null, hasConnectedActivity: null, connectedActivityAppId: null, currentApp: null, updateActivityPanelMode: null, children: null });
 };

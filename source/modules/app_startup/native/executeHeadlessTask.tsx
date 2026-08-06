@@ -1,10 +1,10 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 16906
+// Function ID: 16907
 // Name: _executeHeadlessTask
-// Dependencies: [5, 17, 1218, 16146, 676, 3, 1208, 675, 15, 9, 12814, 698, 503, 4140, 2]
+// Dependencies: [5, 17, 1218, 16186, 676, 3, 1208, 675, 15, 9, 12851, 698, 503, 4170, 2]
 // Exports: default
 
-// Module 16866 (_executeHeadlessTask)
+// Module 16906 (_executeHeadlessTask)
 import timestamp from "timestamp";
 import { AppState } from "get ActivityIndicator";
 import fetchFingerprint from "fetchFingerprint";

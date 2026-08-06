@@ -1,9 +1,9 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 7029
+// Function ID: 7030
 // Name: handleBackgroundSync
-// Dependencies: [1376, 1218, 1372, 1907, 2]
+// Dependencies: [1376, 1218, 1372, 1936, 2]
 
-// Module 7002 (handleBackgroundSync)
+// Module 7029 (handleBackgroundSync)
 import { createChannelRecordFromServer as closure_2 } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -94,7 +94,7 @@ prototype["handleBackgroundSync"] = function handleBackgroundSync(arg0, arg1) {
 prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGuilds, database) {
   const self = this;
   const items = [...unavailableGuilds.unavailableGuilds];
-  obj = obj(1907);
+  obj = obj(1936);
   obj.channelsTransaction(database).deleteAllExcept(items);
   for (const item10027 of tmp2) {
     let result = self.handleGuildSynchronize(item10027.id, item10027.channels, arg1);
@@ -142,7 +142,7 @@ prototype["resetInMemoryState"] = function resetInMemoryState() {
 prototype["handleGuildSynchronize"] = function handleGuildSynchronize(id, channels, closure_0) {
   const op = channels.op;
   if ("update" === op) {
-    obj = obj(1907);
+    obj = obj(1936);
     const channelsTransactionResult = obj.channelsTransaction(closure_0);
     channelsTransactionResult.putAll(id, channels.writes);
     const deletes = channels.deletes;
@@ -156,11 +156,11 @@ prototype["handleGuildSynchronize"] = function handleGuildSynchronize(id, channe
   }
 };
 prototype["putOne"] = function putOne(guild_id, database) {
-  obj = obj(1907);
+  obj = obj(1936);
   obj.channelsTransaction(database).put(guild_id.guild_id, guild_id);
 };
 prototype["putMany"] = function putMany(arg0, database) {
-  obj = obj(1907);
+  obj = obj(1936);
   const iter = arg0[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -169,15 +169,15 @@ prototype["putMany"] = function putMany(arg0, database) {
   }
 };
 prototype["replace"] = function replace(arg0, arg1, database) {
-  obj = obj(1907);
+  obj = obj(1936);
   const replaced = obj.channelsTransaction(database).replaceAll(arg0, arg1);
 };
 prototype["deleteOne"] = function deleteOne(arg0, arg1, database) {
-  obj = obj(1907);
+  obj = obj(1936);
   obj.channelsTransaction(database).delete(arg0, arg1);
 };
 prototype["deleteManySyncUnsafe"] = function deleteManySyncUnsafe(id) {
-  obj = obj(1907);
+  obj = obj(1936);
   const channelsResult = obj.channels();
   if (channelsResult != null) {
     channelsResult.deleteSyncUnsafe(id);

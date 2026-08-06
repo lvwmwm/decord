@@ -1,10 +1,10 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12679
+// Function ID: 12680
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 676, 1876, 5595, 6805, 6804, 6780, 1236, 3901, 2]
+// Dependencies: [19, 676, 1905, 5649, 6832, 6831, 6807, 1236, 3930, 2]
 // Exports: default
 
-// Module 12642 (useOpenPremiumMarketingPayment)
+// Module 12679 (useOpenPremiumMarketingPayment)
 import noop from "noop";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";

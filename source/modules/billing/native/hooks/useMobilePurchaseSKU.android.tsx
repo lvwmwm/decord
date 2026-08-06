@@ -1,10 +1,10 @@
-// Module ID: 9981
-// Function ID: 9982
+// Module ID: 10012
+// Function ID: 10013
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 6782, 1874, 676, 5753, 3, 7227, 9325, 5583, 698, 709, 6787, 3916, 1856, 7478, 514, 2]
+// Dependencies: [5, 19, 6809, 1903, 676, 5780, 3, 7254, 9354, 5637, 698, 709, 6814, 3945, 1884, 7506, 514, 2]
 // Exports: default
 
-// Module 9981 (useMobilePurchaseSKU)
+// Module 10012 (useMobilePurchaseSKU)
 import GPlayConnectionState from "GPlayConnectionState";
 import noop from "noop";
 import { useNativeCheckoutStoreOrNull as closure_5 } from "context";

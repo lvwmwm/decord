@@ -1,9 +1,9 @@
-// Module ID: 4076
-// Function ID: 4077
+// Module ID: 4105
+// Function ID: 4106
 // Name: initialize
 // Dependencies: [676, 589, 595, 709, 2]
 
-// Module 4076 (initialize)
+// Module 4105 (initialize)
 import { Routes } from "ME";
 import { PersistedStore } from "initialize";
 

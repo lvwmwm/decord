@@ -1,10 +1,10 @@
-// Module ID: 5084
-// Function ID: 5085
+// Module ID: 5114
+// Function ID: 5115
 // Name: MAX_STAGE_TOPIC_LENGTH
-// Dependencies: [676, 1236, 1945, 2]
+// Dependencies: [676, 1236, 1974, 2]
 // Exports: getStagePublicInfoText
 
-// Module 5084 (MAX_STAGE_TOPIC_LENGTH)
+// Module 5114 (MAX_STAGE_TOPIC_LENGTH)
 import { HelpdeskArticles } from "ME";
 
 const result = require("combined").fileFinishedImporting("modules/stage_channels/StageChannelsConstants.tsx");
@@ -31,7 +31,7 @@ export const getStagePublicInfoText = function getStagePublicInfoText() {
   items[1] = intl2.string(require(1236) /* getSystemLocale */.t.lF0IbB);
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const obj = { articleURL: null };
-  obj[0] = importDefault(1945).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
+  obj[0] = importDefault(1974).getArticleURL(HelpdeskArticles.STAGE_CHANNEL_GUIDELINES);
   items[2] = intl3.format(require(1236) /* getSystemLocale */.t.q2jZ6N, obj);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   items[3] = intl4.string(require(1236) /* getSystemLocale */.t.xfb7ZU);

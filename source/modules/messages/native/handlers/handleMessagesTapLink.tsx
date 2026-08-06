@@ -1,10 +1,10 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 10996
+// Function ID: 10997
 // Name: handleMessagesTapURLLink
-// Dependencies: [8122, 4292, 7829, 10207, 1882, 1372, 4240, 4472, 1874, 676, 1479, 1379, 5724, 1235, 10962, 4236, 7089, 10963, 9172, 9166, 8826, 10903, 8677, 4223, 9142, 1959, 5081, 4434, 10965, 9563, 10966, 6811, 5615, 8119, 1579, 10967, 4483, 1222, 7881, 10970, 10993, 2]
+// Dependencies: [8262, 4322, 7970, 10238, 1911, 1372, 4270, 4502, 1903, 676, 1479, 1379, 5751, 1235, 10994, 4266, 7116, 10995, 9201, 9195, 8855, 10935, 8706, 4253, 9171, 1988, 5111, 4464, 10997, 9592, 10998, 6838, 5669, 8259, 1607, 10999, 4513, 1222, 8022, 11002, 11025, 2]
 // Exports: handleMessagesTapLink
 
-// Module 10964 (handleMessagesTapURLLink)
+// Module 10996 (handleMessagesTapURLLink)
 import { getSection } from "getIndexKey";
 import addApplication from "addApplication";
 import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
@@ -32,10 +32,10 @@ function handleMessagesTapURLLink(data, channelId) {
     const node = data.node;
     let flag2 = false;
     if (null != node) {
-      let obj = require(10962) /* isLinkTrusted */;
+      let obj = require(10994) /* isLinkTrusted */;
       flag2 = false;
       if (obj.isLinkTrusted(node)) {
-        const payload = importDefault(4236)(tmp).payload;
+        const payload = importDefault(4266)(tmp).payload;
         flag2 = false;
         if (payload.type === constants.INVITE) {
           flag2 = false;
@@ -43,11 +43,11 @@ function handleMessagesTapURLLink(data, channelId) {
             invite = invite.getInvite(payload.inviteCode);
             let num = null == invite;
             if (!num) {
-              num = !tmp2(7089).isGuildScheduledEventInviteEmbed(invite);
-              const tmp2Result = tmp2(7089);
+              num = !tmp2(7116).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(7116);
             }
             if (!num) {
-              tmp4(10963)(invite);
+              tmp4(10995)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -58,7 +58,7 @@ function handleMessagesTapURLLink(data, channelId) {
       tmp2 = require;
     }
     if (!flag2) {
-      const payload2 = importDefault(4236)(data.url).payload;
+      const payload2 = importDefault(4266)(data.url).payload;
       let flag3 = false;
       if (payload2.type === constants.GAME_PROFILE) {
         const gameId = payload2.gameId;
@@ -75,14 +75,14 @@ function handleMessagesTapURLLink(data, channelId) {
         }
         obj = { gameId: null, source: null, sourceUserId: null, gameProfileModalChecks: null };
         obj[0] = gameId;
-        obj[1] = require(9172) /* GameProfileEmbedAction */.GameProfileSources.Deeplink;
+        obj[1] = require(9201) /* GameProfileEmbedAction */.GameProfileSources.Deeplink;
         obj[2] = tmp13;
         obj = { shouldOpenGameProfile: true, gameId: null };
         obj[1] = gameId;
         obj[3] = obj;
-        require(9166).default.openGameProfileModal(obj);
+        require(9195).default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = require(9166).default;
+        const _default = require(9195).default;
       }
       flag2 = flag3;
     }
@@ -92,15 +92,15 @@ function handleMessagesTapURLLink(data, channelId) {
       obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = tmp19(10962).isLinkTrusted(data.node);
-        const tmp19Result = tmp19(10962);
+        isLinkTrustedResult = tmp19(10994).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(10994);
       }
       obj1[1] = isLinkTrustedResult;
       obj1[2] = data.messageId;
       obj1[3] = channelId;
-      require(8826) /* isLinkTrusted */.handleClick(obj1);
+      require(8855) /* isLinkTrusted */.handleClick(obj1);
       flag = true;
-      const obj5 = require(8826) /* isLinkTrusted */;
+      const obj5 = require(8855) /* isLinkTrusted */;
       tmp19 = require;
     }
   }
@@ -124,20 +124,11 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
     }
     if (!tmp4(data, id)) {
       if (null != data.action) {
-        if (chatInputRef != null) {
-          const current = chatInputRef.current;
-          if (current != null) {
-            let flag = data.addSpace;
-            if (flag == null) {
-              flag = true;
-            }
-            current.insertText(data.text, null, flag);
-          }
-        }
+        const action = data.action;
       }
     }
     tmp4 = handleMessagesTapURLLink;
   } else {
-    const obj = require(10903) /* isAlertOrActionSheetOpen */;
+    const obj = require(10935) /* isAlertOrActionSheetOpen */;
   }
 };

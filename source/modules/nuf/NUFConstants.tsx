@@ -1,9 +1,9 @@
-// Module ID: 11944
-// Function ID: 11945
+// Module ID: 11978
+// Function ID: 11979
 // Name: NewUserTypes
 // Dependencies: [2]
 
-// Module 11944 (NewUserTypes)
+// Module 11978 (NewUserTypes)
 const result = require("set").fileFinishedImporting("modules/nuf/NUFConstants.tsx");
 
 export const NewUserTypes = { MARKETING_UNCLAIMED: 0, [0]: "MARKETING_UNCLAIMED", INVITE_UNCLAIMED: 1, [1]: "INVITE_UNCLAIMED", ORGANIC_REGISTERED: 2, [2]: "ORGANIC_REGISTERED", ORGANIC_REGISTERED_GUILD_TEMPLATE: 3, [3]: "ORGANIC_REGISTERED_GUILD_TEMPLATE" };

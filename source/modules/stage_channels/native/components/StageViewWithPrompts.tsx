@@ -1,10 +1,10 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10683
+// Function ID: 10684
 // Name: styles
-// Dependencies: [19, 17, 505, 21, 10629, 4255, 1581, 10630, 7682, 4251, 2]
+// Dependencies: [19, 17, 505, 21, 10684, 4285, 1609, 10685, 7710, 4281, 2]
 // Exports: default
 
-// Module 10628 (styles)
+// Module 10683 (styles)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ThemeTypes } from "sum";
@@ -32,12 +32,12 @@ export default function StageViewWithPrompts(arg0) {
   const tmp = styles();
   let obj = { style: tmp.scrollView, contentContainerStyle: null, alwaysBounceVertical: false, children: null };
   const items = [tmp.container, ];
-  obj = { paddingTop: top + require(10630) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
-  ({ top, bottom } = importDefault(1581)());
+  obj = { paddingTop: top + require(10685) /* FocusedControlsHeader */.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
+  ({ top, bottom } = importDefault(1609)());
   items[1] = obj;
   obj[1] = items;
   obj = { style: tmp.sparkle, theme: ThemeTypes.DARK };
-  const items1 = [callback(importDefault(7682), obj), callback(require(4251) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title }), callback(require(4251) /* Text */.Text, { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body }), callback(closure_4, { style: tmp.prompts, children })];
+  const items1 = [callback(importDefault(7710), obj), callback(require(4281) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title }), callback(require(4281) /* Text */.Text, { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body }), callback(closure_4, { style: tmp.prompts, children })];
   obj[3] = items1;
   return callback2(closure_3, obj);
 };

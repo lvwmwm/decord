@@ -1,10 +1,10 @@
-// Module ID: 4123
-// Function ID: 4124
+// Module ID: 4152
+// Function ID: 4153
 // Name: defaultStatesAreEqual
-// Dependencies: [700, 4124, 705, 2]
+// Dependencies: [700, 4153, 705, 2]
 // Exports: createZustandStore
 
-// Module 4123 (defaultStatesAreEqual)
+// Module 4152 (defaultStatesAreEqual)
 function defaultStatesAreEqual(arg0, arg1) {
   return arg0 === arg1;
 }
@@ -13,7 +13,7 @@ const result = require("batchUpdates").fileFinishedImporting("lib/ZustandStore.t
 export const createZustandStore = function createZustandStore(arg0) {
   const _require = arg0;
   let obj = _require(700);
-  const dependencyMap = obj.createWithEqualityFn(_require(4124).subscribeWithSelector((arg0, arg1, arg2) => {
+  const dependencyMap = obj.createWithEqualityFn(_require(4153).subscribeWithSelector((arg0, arg1, arg2) => {
     let callback = arg0;
     return callback((arg0) => {
       const callback = arg0;

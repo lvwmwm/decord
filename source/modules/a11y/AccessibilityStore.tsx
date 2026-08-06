@@ -1,10 +1,11 @@
-// Module ID: 4247
-// Function ID: 4248
+// Module ID: 4277
+// Function ID: 4278
 // Name: maybeApplyNoTextColorForLightCustomTheme
-// Dependencies: [109, 1302, 1340, 676, 4248, 4249, 3928, 589, 595, 4101, 709, 2]
+// Dependencies: [109, 1303, 1302, 1340, 676, 4278, 4279, 3957, 589, 595, 4130, 709, 2]
 
-// Module 4247 (maybeApplyNoTextColorForLightCustomTheme)
+// Module 4277 (maybeApplyNoTextColorForLightCustomTheme)
 import _objectWithoutProperties from "_objectWithoutProperties";
+import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ME from "ME";
@@ -12,7 +13,7 @@ import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING";
 import { DeviceSettingsStore } from "initialize";
 
 let c10;
-let c9;
+let closure_12;
 let unpackModuleId;
 const require = arg1;
 function maybeApplyNoTextColorForLightCustomTheme() {
@@ -24,7 +25,7 @@ function maybeApplyNoTextColorForLightCustomTheme() {
       tmp3 = theme.theme !== ThemeTypes.LIGHT;
     }
     if (!tmp3) {
-      const ClientThemeSettings = require(3928) /* explicitContentFromProto */.ClientThemeSettings;
+      const ClientThemeSettings = require(3957) /* explicitContentFromProto */.ClientThemeSettings;
       const setting = ClientThemeSettings.getSetting();
       let tmp10 = null != setting.backgroundGradientPresetId;
       if (!tmp10) {
@@ -55,11 +56,11 @@ function maybeApplyNoTextColorForLightCustomTheme() {
 let closure_3 = ["fontScale"];
 const Accessibility = ME.Accessibility;
 const ThemeTypes = ME.ThemeTypes;
-({ MESSAGE_GROUP_SPACING: c9, DEFAULT_COMPACT_SPACING: c10, DEFAULT_COZY_SPACING: unpackModuleId } = MESSAGE_GROUP_SPACING);
+({ MESSAGE_GROUP_SPACING: c10, DEFAULT_COMPACT_SPACING: unpackModuleId, DEFAULT_COZY_SPACING: closure_12 } = MESSAGE_GROUP_SPACING);
 let obj = { DEFAULT: "default", HIGH: "high" };
 obj = { FLEXIBLE: "flexible", CONDENSED: "condensed", HIDDEN: "hidden" };
 obj = { fontSize: Accessibility.FONT_SIZE_DEFAULT, zoom: Accessibility.ZOOM_DEFAULT, keyboardModeEnabled: false, contrastMode: obj.DEFAULT, colorblindMode: false, lowContrastMode: false, saturation: 1, contrast: 1, desaturateUserColors: false, forcedColorsModalSeen: false, keyboardNavigationExplainerModalSeen: false, messageGroupSpacing: null, systemPrefersReducedMotion: "no-preference", systemPrefersCrossfades: false, prefersReducedMotion: "auto", systemForcedColors: "none", syncForcedColors: true, systemPrefersContrast: "no-preference", alwaysShowLinkDecorations: false, roleStyle: "username", officialMessageStyle: "default", officialMessageStyleExplicitlySet: false, displayNameStylesEnabled: true, submitButtonEnabled: false, syncProfileThemeWithUserTheme: false, enableCustomCursor: true, switchIconsEnabled: false, appsButtonEnabled: true, expressionPickerFormat: obj.FLEXIBLE, condensePickerWhenNarrow: true, emojiButtonEnabled: true, gifButtonEnabled: true, stickerButtonEnabled: true };
-let closure_16 = { 12: "font-size-12", 14: "font-size-14", 15: "font-size-15", 16: "font-size-16", 18: "font-size-18", 20: "font-size-20", 24: "font-size-24" };
+let closure_17 = { 12: "font-size-12", 14: "font-size-14", 15: "font-size-15", 16: "font-size-16", 18: "font-size-18", 20: "font-size-20", 24: "font-size-24" };
 class AccessibilityStore extends DeviceSettingsStore {
 }
 const prototype = AccessibilityStore.prototype;
@@ -80,10 +81,10 @@ prototype["initialize"] = function initialize(arg0) {
   if (null != obj.messageGroupSpacing) {
     num = obj.messageGroupSpacing;
   }
-  if (closure_9.indexOf(num) < 0) {
+  if (closure_10.indexOf(num) < 0) {
     obj.messageGroupSpacing = null;
   }
-  const items = [handleConnectionClosedOrResumed];
+  const items = [handleConnectionClosedOrResumed, initialize];
   self.syncWith(items, maybeApplyNoTextColorForLightCustomTheme);
 };
 Object.defineProperty(prototype, "fontScale", {
@@ -203,8 +204,8 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
     if (null != obj.messageGroupSpacing) {
       let messageGroupSpacing = obj.messageGroupSpacing;
     } else {
-      const MessageDisplayCompact = require(3928) /* explicitContentFromProto */.MessageDisplayCompact;
-      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_10 : closure_11;
+      const MessageDisplayCompact = require(3957) /* explicitContentFromProto */.MessageDisplayCompact;
+      messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_11 : closure_12;
     }
     return messageGroupSpacing;
   },
@@ -212,15 +213,15 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingIncreased", {
   get: function isMessageGroupSpacingIncreased() {
-    const MessageDisplayCompact = require(3928) /* explicitContentFromProto */.MessageDisplayCompact;
-    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_10 : closure_11);
+    const MessageDisplayCompact = require(3957) /* explicitContentFromProto */.MessageDisplayCompact;
+    return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_11 : closure_12);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingDecreased", {
   get: function isMessageGroupSpacingDecreased() {
-    const MessageDisplayCompact = require(3928) /* explicitContentFromProto */.MessageDisplayCompact;
-    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_10 : closure_11);
+    const MessageDisplayCompact = require(3957) /* explicitContentFromProto */.MessageDisplayCompact;
+    return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_11 : closure_12);
   },
   set: undefined
 });
@@ -446,7 +447,7 @@ let items = [
   (saturation) => {
     const obj = {};
     const merged = Object.assign(saturation);
-    obj.alwaysShowLinkDecorations = saturation.saturation <= require(4101) /* AccessibilityAnnouncer */.LOW_SATURATION_THRESHOLD;
+    obj.alwaysShowLinkDecorations = saturation.saturation <= require(4130) /* AccessibilityAnnouncer */.LOW_SATURATION_THRESHOLD;
     return obj;
   },
   (arg0) => {
@@ -513,7 +514,7 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
           obj = {};
           const merged = Object.assign(obj);
           obj.zoom = zoom.zoom;
-          importDefault(4249).setZoomFactor(obj.zoom);
+          importDefault(4279).setZoomFactor(obj.zoom);
         }
       }
     }
@@ -532,8 +533,8 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
     }
     if (obj.zoom !== Accessibility.ZOOM_DEFAULT) {
       obj.zoom = tmp.ZOOM_DEFAULT;
-      importDefault(4249).setZoomFactor(obj.zoom);
-      const obj2 = importDefault(4249);
+      importDefault(4279).setZoomFactor(obj.zoom);
+      const obj2 = importDefault(4279);
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: function handleEnableKeyboardMode() {
@@ -727,7 +728,7 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
     const merged6 = Object.assign(tmp12);
   }
 });
-const result = require("handleConnectionClosedOrResumed").fileFinishedImporting("modules/a11y/AccessibilityStore.tsx");
+const result = require("handleThemeChange").fileFinishedImporting("modules/a11y/AccessibilityStore.tsx");
 
 export default accessibilityStore;
 export const AccessibilityContrastMode = obj;

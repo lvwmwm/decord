@@ -2894,62 +2894,38 @@ function byteLength(str) {
   if (Buffer.isBuffer(str)) {
     return str.length;
   } else {
+    let byteLength = globalThis;
     const _ArrayBuffer = ArrayBuffer;
     if (!ArrayBuffer.isView(str)) {
-      let tmp3 = str instanceof ArrayBuffer;
-      if (!tmp3) {
-        tmp3 = null != str && null != str.constructor && null != str.constructor.name && str.constructor.name === tmp2.name;
-        const tmp5 = null != str && null != str.constructor && null != str.constructor.name && str.constructor.name === tmp2.name;
+      let tmp2 = str instanceof ArrayBuffer;
+      if (!tmp2) {
+        tmp2 = null != str && null != str.constructor && null != str.constructor.name && str.constructor.name === tmp.name;
+        const tmp4 = null != str && null != str.constructor && null != str.constructor.name && str.constructor.name === tmp.name;
       }
-      if (!tmp3) {
+      if (!tmp2) {
         if (typeof str !== "string") {
           const _TypeError = TypeError;
           const typeError = new TypeError("The \"string\" argument must be one of type string, Buffer, or ArrayBuffer. Received type " + typeof str);
           throw typeError;
         } else {
-          let tmp6 = arguments.length > 2;
-          if (tmp6) {
-            tmp6 = true === arguments[2];
+          let tmp5 = arguments.length > 2;
+          if (tmp5) {
+            tmp5 = true === arguments[2];
           }
-          if (!tmp6) {
+          let flag2 = false;
+          let tmp7 = arg1;
+          if (!tmp5) {
+            flag2 = false;
+            tmp7 = arg1;
             if (0 === str.length) {
               return 0;
             }
           }
-          while (true) {
-            let tmp10 = require;
-            let tmp11 = dependencyMap;
-            let obj = require(206) /* byteLength */;
-            str = "=";
-            let str2 = str.split("=")[0];
-            let str3 = str2.trim();
-            let tmp12 = closure_14;
-            let str4 = "";
-            let replaced = str3.replace(closure_14, "");
-            if (replaced.length < 2) {
-              break;
-            } else {
-              let num2 = 4;
-              let num3 = 0;
-              let tmp13 = replaced;
-              let tmp14 = replaced;
-              if (replaced.length % 4 !== 0) {
-                do {
-                  let text = `${tmp13}=`;
-                  tmp13 = text;
-                  tmp14 = text;
-                  result = `${tmp13}=`.length % 4;
-                } while (result !== 0);
-              }
-              str4 = tmp14;
-              break;
-            }
-            return obj.toByteArray(str4).length;
-          }
         }
       }
+      return byteLength;
     }
-    return str.byteLength;
+    byteLength = str.byteLength;
   }
 }
 function slowToString(arg0, arg1, arg2) {

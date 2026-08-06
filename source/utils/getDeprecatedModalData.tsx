@@ -1,10 +1,10 @@
-// Module ID: 4462
-// Function ID: 4463
+// Module ID: 4492
+// Function ID: 4493
 // Name: getDeprecatedModalData
-// Dependencies: [4247, 676, 2]
+// Dependencies: [4277, 676, 2]
 // Exports: default
 
-// Module 4462 (getDeprecatedModalData)
+// Module 4492 (getDeprecatedModalData)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { ModalAnimation } from "ME";
 

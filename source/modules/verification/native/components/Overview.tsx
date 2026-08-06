@@ -1,16 +1,16 @@
-// Module ID: 16448
-// Function ID: 16449
+// Module ID: 16488
+// Function ID: 16489
 // Name: Overview
-// Dependencies: [19, 17, 1366, 1874, 676, 21, 4255, 712, 1945, 589, 8242, 1480, 4662, 4665, 1236, 16207, 530, 8293, 4251, 14597, 2]
+// Dependencies: [19, 17, 1366, 1903, 676, 21, 4285, 712, 1974, 589, 8382, 1480, 4692, 4695, 1236, 16247, 530, 8433, 1481, 4281, 14635, 2]
 // Exports: default
 
-// Module 16448 (Overview)
-import _emailSupport from "_emailSupport";
+// Module 16488 (Overview)
+import Text from "Text";
 import { View } from "saveProfileAndAccountRequest";
 import handleRequiredAction from "handleRequiredAction";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
-import jsxProd from "jsxProd";
+import jsxProd from "set";
 import createCacheKey from "createCacheKey";
 import importDefaultResult from "combined";
 
@@ -85,7 +85,8 @@ export default function Overview() {
             tmp4 = tmp2 !== tmp3.REVERIFY_EMAIL;
           }
           if (tmp4) {
-            outer1_2.push(outer2_8.ADD_PHONE);
+            const StackActions = outer2_0(outer2_2[18]).StackActions;
+            outer1_2.dispatch(StackActions.push(outer2_8.ADD_PHONE));
           } else {
             outer2_0(outer2_2[17]).accountDetailsInit();
             const currentUser = outer2_6.getCurrentUser();
@@ -106,11 +107,11 @@ export default function Overview() {
   obj1 = { variant: "heading-lg/semibold", style: tmp.title, accessibilityRole: "header", children: null };
   let intl = require(navigation[14]).intl;
   obj1[3] = intl.string(require(navigation[14]).t.Iz0kDg);
-  const items2 = [callback(require(navigation[18]).Text, obj1), , ];
+  const items2 = [callback(require(navigation[19]).Text, obj1), , ];
   const obj2 = { variant: "text-sm/medium", style: tmp.body, children: null };
   const intl2 = require(navigation[14]).intl;
   obj2[2] = intl2.format(require(navigation[14]).t["0rqMV5"], { helpCenterURL: closure_14 });
-  items2[1] = callback(require(navigation[18]).Text, obj2);
+  items2[1] = callback(require(navigation[19]).Text, obj2);
   const obj3 = { helpCenterURL: closure_14 };
   let tmp4 = stateFromStores(navigation[12]);
   items2[2] = callback(View, { style: tmp.blocks, children: callback() });
@@ -120,7 +121,7 @@ export default function Overview() {
   const obj6 = { variant: "secondary", text: null, onPress: null };
   const intl3 = require(navigation[14]).intl;
   obj6[1] = intl3.string(require(navigation[14]).t["Yl/Riu"]);
-  obj6[2] = require(navigation[19]).emailSupport;
+  obj6[2] = require(navigation[20]).emailSupport;
   obj5[2] = callback(require(navigation[13]).Button, obj6);
   items3[1] = callback(View, obj5);
   obj[1] = items3;

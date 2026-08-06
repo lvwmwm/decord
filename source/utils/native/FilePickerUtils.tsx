@@ -1,10 +1,10 @@
-// Module ID: 10051
-// Function ID: 10052
+// Module ID: 10082
+// Function ID: 10083
 // Name: _handleDocumentSelection
-// Dependencies: [5, 676, 10052, 500, 4594, 1236, 4449, 2]
+// Dependencies: [5, 676, 10083, 500, 4624, 1236, 4479, 2]
 // Exports: handleDocumentSelection
 
-// Module 10051 (_handleDocumentSelection)
+// Module 10082 (_handleDocumentSelection)
 import getSystemLocale from "getSystemLocale";
 import { AnalyticEvents } from "ME";
 
@@ -134,19 +134,19 @@ function _handleDocumentSelection() {
           } else if (2 === tmp7) {
             c4 = 0;
             c4 = getSystemLocale;
-            obj3 = flag(10052);
+            obj3 = flag(10083);
             if (obj3.isErrorWithCode(c4)) {
-              if (c4.code === flag(10052).errorCodes.OPERATION_CANCELED) {
+              if (c4.code === flag(10083).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
                 return { value: "T", done: null };
               }
             }
-            obj4 = flag(4449);
+            obj4 = flag(4479);
             const obj5 = { error_message: null };
             const _JSON = JSON;
             obj5[0] = JSON.stringify(c4);
             obj4.trackWithMetadata(c4.MOBILE_FILE_PICKER_ERROR, obj5);
-            let obj6 = extensions(4594);
+            let obj6 = extensions(4624);
             obj6 = { title: null, body: null };
             const intl3 = flag(1236).intl;
             obj6[0] = intl3.string(flag(1236).t.rWHepR);
@@ -167,7 +167,7 @@ function _handleDocumentSelection() {
           } else {
             getSystemLocale = arg1;
             if (getSystemLocale.some((size) => 0 === size.size)) {
-              obj = extensions(4594);
+              obj = extensions(4624);
               obj8 = { title: null, body: null };
               const intl = flag(1236).intl;
               obj8[0] = intl.string(flag(1236).t.B3vFdU);

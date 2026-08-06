@@ -1,10 +1,10 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11184
+// Function ID: 11185
 // Name: Navbar
-// Dependencies: [32, 19, 17, 676, 21, 4255, 712, 5257, 5902, 1236, 7809, 6871, 1581, 4251, 7749, 1297, 4665, 4449, 11151, 6870, 3955, 5650, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4285, 712, 5311, 5929, 1236, 7950, 6898, 1609, 4281, 7890, 1297, 4695, 4479, 11185, 6897, 3984, 5704, 2]
 // Exports: default
 
-// Module 11150 (Navbar)
+// Module 11184 (Navbar)
 import _slicedToArray from "_slicedToArray";
 import AutomodAlertActionType from "AutomodAlertActionType";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -23,10 +23,10 @@ function Navbar(onClose) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[1] = onClose.onClose;
-  obj[2] = importDefault(7809);
-  obj[1] = callback2(require(5902) /* HeaderActionButton */.HeaderActionButton, obj);
+  obj[2] = importDefault(7950);
+  obj[1] = callback2(require(5929) /* HeaderActionButton */.HeaderActionButton, obj);
   obj[2] = callback2(View, obj);
-  return callback2(require(5257) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function SubmitFeedbackScreen(onSubmit) {
   let importDefault;
@@ -36,17 +36,17 @@ function SubmitFeedbackScreen(onSubmit) {
   let feedbackOptions;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = require(6871) /* Feedback */;
+  let obj = require(6898) /* Feedback */;
   feedbackOptions = obj.generateFeedbackOptions();
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["7bdzNo"]);
-  const items = [callback2(require(4251) /* Text */.Text, obj), , , ];
+  const items = [callback2(require(4281) /* Text */.Text, obj), , , ];
   const obj1 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t.Lbpk6m);
-  items[1] = callback2(require(4251) /* Text */.Text, obj1);
+  items[1] = callback2(require(4281) /* Text */.Text, obj1);
   items[2] = callback2(View, {
     style: tmp.formBody,
     children: feedbackOptions.map((children) => {
@@ -89,12 +89,12 @@ function SubmitFeedbackScreen(onSubmit) {
       return outer1_8(outer1_4.Fragment, { children }, value);
     })
   };
-  items1[1] = { paddingBottom: importDefault(1581)().bottom + 16 };
+  items1[1] = { paddingBottom: importDefault(1609)().bottom + 16 };
   const obj5 = { size: "md", text: null, onPress: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[1] = intl3.string(require(1236) /* getSystemLocale */.t.Z6DZZ6);
   obj5[2] = onSubmit.onSubmit;
-  obj3[1] = callback2(require(4665) /* Button */.Button, obj5);
+  obj3[1] = callback2(require(4695) /* Button */.Button, obj5);
   items[3] = callback2(View, obj3);
   obj[1] = items;
   return callback3(View, obj);

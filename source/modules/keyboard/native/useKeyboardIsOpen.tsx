@@ -1,10 +1,10 @@
-// Module ID: 5898
-// Function ID: 5899
+// Module ID: 5925
+// Function ID: 5926
 // Name: useKeyboardIsOpen
-// Dependencies: [1476, 1477, 1478, 1579, 2]
+// Dependencies: [1476, 1477, 1478, 1607, 2]
 // Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 5898 (useKeyboardIsOpen)
+// Module 5925 (useKeyboardIsOpen)
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 
 const require = arg1;
@@ -92,7 +92,7 @@ export const getKeyboardIsOpen = function getKeyboardIsOpen(arg0) {
   if (flag) {
     let tmp7 = systemKeyboardOpen;
     if (!systemKeyboardOpen) {
-      tmp7 = tmp5.keyboardType !== require(1579) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
+      tmp7 = tmp5.keyboardType !== require(1607) /* KeyboardTypes */.KeyboardTypes.SYSTEM;
     }
     let tmp6 = tmp7;
   } else {

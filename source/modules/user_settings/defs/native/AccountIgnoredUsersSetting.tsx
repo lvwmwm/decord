@@ -1,9 +1,9 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 13968
+// Function ID: 13969
 // Name: route
-// Dependencies: [3892, 7864, 676, 589, 1236, 10333, 8278, 13932, 2]
+// Dependencies: [3921, 8005, 676, 589, 1236, 10364, 8418, 13969, 2]
 
-// Module 13931 (route)
+// Module 13968 (route)
 import upsertRelationship from "upsertRelationship";
 import createToggle from "createToggle";
 
@@ -28,7 +28,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.IGNORED_USERS,
   getComponent() {
-    return require(13932) /* IgnoredUsersList */.default;
+    return require(13969) /* IgnoredUsersList */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

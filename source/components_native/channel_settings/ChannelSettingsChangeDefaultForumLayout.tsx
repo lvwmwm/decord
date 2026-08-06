@@ -1,10 +1,10 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15821
+// Function ID: 15822
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 1372, 21, 4255, 712, 7798, 7767, 1236, 1382, 7766, 15744, 8217, 4251, 5634, 5221, 15782, 15783, 589, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4285, 712, 7939, 7908, 1236, 1382, 7907, 15784, 8357, 4281, 5688, 5251, 15822, 15823, 589, 2]
 // Exports: default
 
-// Module 15781 (ChannelSettingsChangeDefaultForumLayout)
+// Module 15821 (ChannelSettingsChangeDefaultForumLayout)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import { View } from "registerAsset";

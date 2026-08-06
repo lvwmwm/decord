@@ -1,10 +1,10 @@
-// Module ID: 6740
-// Function ID: 6741
+// Module ID: 6767
+// Function ID: 6768
 // Name: WindIllocon
-// Dependencies: [21, 5221, 6741, 2]
+// Dependencies: [21, 5251, 6768, 2]
 // Exports: WindIllocon
 
-// Module 6740 (WindIllocon)
+// Module 6767 (WindIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/WindIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const WindIllocon = function WindIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6741);
+  obj[0] = importDefault(6768);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { uri: null });
+  return jsx(importDefault(5251), { uri: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11802
+// Function ID: 11803
 // Name: GuildPowerupsImage
-// Dependencies: [4247, 21, 4255, 589, 501, 8079, 5221, 2]
+// Dependencies: [4277, 21, 4285, 589, 501, 8220, 5251, 2]
 // Exports: default
 
-// Module 11768 (GuildPowerupsImage)
+// Module 11802 (GuildPowerupsImage)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -32,11 +32,11 @@ export default function GuildPowerupsImage(style) {
         const items1 = [tmp.image, style];
         obj[0] = items1;
         obj[1] = imageUrl;
-        let tmp6 = jsx(importDefault(8079), { style: null, url: null });
+        let tmp6 = jsx(importDefault(8220), { style: null, url: null });
       }
       return tmp6;
     }
   }
   const items2 = [tmp.image, style];
-  tmp6 = jsx(importDefault(5221), { style: items2, source: { uri: imageUrl } });
+  tmp6 = jsx(importDefault(5251), { style: items2, source: { uri: imageUrl } });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9318
-// Function ID: 9319
+// Module ID: 9347
+// Function ID: 9348
 // Name: getProductName
-// Dependencies: [1236, 6906, 1901, 2]
+// Dependencies: [1236, 6933, 1930, 2]
 // Exports: getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 9318 (getProductName)
+// Module 9347 (getProductName)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
 export const getProductName = function getProductName(product) {
@@ -45,24 +45,24 @@ export const getPurchasedProductName = function getPurchasedProductName(baseVari
 };
 export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(closure_0) {
   if (null == closure_0) {
-    let obj1 = require(6906) /* getProductOrbPrice */;
+    let obj1 = require(6933) /* getProductOrbPrice */;
     const productType = obj1.getProductType(closure_0);
-    if (require(1901) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
+    if (require(1930) /* CollectiblesItemType */.CollectiblesItemType.AVATAR_DECORATION === productType) {
       const intl5 = tmp3(1236).intl;
       let obj = { product: null };
       obj[0] = "";
       return intl5.formatToPlainString(tmp3(1236).t.lvBzLi, obj);
-    } else if (tmp3(1901).CollectiblesItemType.PROFILE_EFFECT === productType) {
+    } else if (tmp3(1930).CollectiblesItemType.PROFILE_EFFECT === productType) {
       const intl4 = tmp3(1236).intl;
       obj = { product: null };
       obj[0] = "";
       return intl4.formatToPlainString(tmp3(1236).t.eR7moP, obj);
-    } else if (tmp3(1901).CollectiblesItemType.NAMEPLATE === productType) {
+    } else if (tmp3(1930).CollectiblesItemType.NAMEPLATE === productType) {
       const intl3 = tmp3(1236).intl;
       obj1 = { product: null };
       obj1[0] = "";
       return intl3.formatToPlainString(tmp3(1236).t.YFOwHj, obj1);
-    } else if (tmp3(1901).CollectiblesItemType.PROFILE_FRAME === productType) {
+    } else if (tmp3(1930).CollectiblesItemType.PROFILE_FRAME === productType) {
       const intl2 = tmp3(1236).intl;
       const obj2 = { product: null };
       obj2[0] = "";

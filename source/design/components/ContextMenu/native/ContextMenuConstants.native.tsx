@@ -1,9 +1,9 @@
-// Module ID: 8382
-// Function ID: 8383
+// Module ID: 8523
+// Function ID: 8524
 // Name: CONTEXT_MENU_LONG_PRESS_DURATION_MS
-// Dependencies: [500, 4224, 2]
+// Dependencies: [500, 4254, 2]
 
-// Module 8382 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
+// Module 8523 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
 import set from "set";
 import { HapticFeedbackTypes } from "HapticFeedbackTypes";
 import set from "set";

@@ -1,8 +1,8 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 15780
+// Function ID: 15781
 // Dependencies: [676, 530, 709, 2]
 
-// Module 15740
+// Module 15780
 import { Endpoints } from "ME";
 
 const result = require("dispatcher").fileFinishedImporting("actions/RegionActionCreators.tsx");

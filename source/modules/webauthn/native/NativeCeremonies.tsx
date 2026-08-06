@@ -1,9 +1,9 @@
-// Module ID: 8259
-// Function ID: 8260
+// Module ID: 8399
+// Function ID: 8400
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5725, 1236, 500, 8260, 8261, 1577, 2]
+// Dependencies: [5, 17, 3, 5752, 1236, 500, 8400, 8401, 1605, 2]
 
-// Module 8259 (_promptForRegisterCredential)
+// Module 8399 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -62,8 +62,8 @@ Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
   get: () => {
     let isAndroidResult = require(500) /* set */.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = !require(1577) /* isMetaQuest */.isMetaQuest();
-      const tmpResult = require(1577) /* isMetaQuest */;
+      isAndroidResult = !require(1605) /* isMetaQuest */.isMetaQuest();
+      const tmpResult = require(1605) /* isMetaQuest */;
     }
     return isAndroidResult;
   },

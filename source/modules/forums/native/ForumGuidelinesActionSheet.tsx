@@ -1,10 +1,10 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 9838
+// Function ID: 9839
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 5818, 21, 4255, 712, 8186, 1581, 9808, 500, 9809, 4223, 5257, 4666, 1236, 4078, 4446, 7798, 5323, 5325, 4797, 4251, 9562, 7682, 4755, 4245, 9807, 1959, 2]
+// Dependencies: [32, 19, 17, 5845, 21, 4285, 712, 8326, 1609, 9839, 500, 9840, 4253, 5311, 4696, 1236, 4107, 4476, 7939, 5377, 5379, 4827, 4281, 9591, 7710, 4785, 4275, 9838, 1988, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 9807 (ForumGuidelinesActionSheet)
+// Module 9838 (ForumGuidelinesActionSheet)
 import _slicedToArray from "_slicedToArray";
 import Background from "Background";
 import { View } from "ME";
@@ -189,8 +189,8 @@ export default function ForumGuidelinesActionSheet(channel) {
   return closure_8(closure_9, { children });
 };
 export const openForumGuidelinesActionSheet = function openForumGuidelinesActionSheet(arg0) {
-  let obj = importDefault(4223);
+  let obj = importDefault(4253);
   obj = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(require(1959) /* asyncRequireImpl */(9807, dependencyMap.paths), closure_6, obj);
+  obj.openLazy(require(1988) /* asyncRequireImpl */(9838, dependencyMap.paths), closure_6, obj);
 };

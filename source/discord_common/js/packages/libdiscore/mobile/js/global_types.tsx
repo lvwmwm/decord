@@ -1,9 +1,9 @@
-// Module ID: 1871
-// Function ID: 1872
+// Module ID: 1900
+// Function ID: 1901
 // Name: typedGlobal
 // Dependencies: [2]
 
-// Module 1871 (typedGlobal)
+// Module 1900 (typedGlobal)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/global_types.tsx");
 
 export const typedGlobal = global;

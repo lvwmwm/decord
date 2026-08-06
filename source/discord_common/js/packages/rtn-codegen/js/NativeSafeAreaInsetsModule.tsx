@@ -1,9 +1,9 @@
-// Module ID: 1593
-// Function ID: 1594
+// Module ID: 1621
+// Function ID: 1622
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 1593 (enforcing)
+// Module 1621 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeSafeAreaInsetsModule");

@@ -1,12 +1,12 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11755
+// Function ID: 11756
 // Name: GuildProgressHeader
-// Dependencies: [5, 19, 17, 8916, 1932, 11714, 676, 21, 4255, 712, 589, 11719, 3955, 698, 11722, 11723, 8959, 6401, 1236, 8915, 4811, 6031, 4263, 4223, 1231, 6523, 11724, 5615, 6021, 4251, 4665, 4797, 5631, 1297, 2]
+// Dependencies: [5, 19, 17, 8945, 1961, 11748, 676, 21, 4285, 712, 589, 11753, 3984, 698, 11756, 11757, 8988, 6428, 1236, 8944, 4841, 6058, 4293, 4253, 1231, 6550, 11758, 5669, 6048, 4281, 4695, 4827, 5685, 1297, 2]
 // Exports: default
 
-// Module 11721 (GuildProgressHeader)
+// Module 11755 (GuildProgressHeader)
 import closure_3 from "Steps";
-import module_8915 from "module_8915";
+import module_8944 from "module_8944";
 import { View } from "metadata";
 import handleFormInit from "handleFormInit";
 import comparator from "comparator";
@@ -93,16 +93,16 @@ export default function GuildProgressActionSheet(guild) {
               let closure_1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
-              outer1_1(8915).init(outer1_5);
-              const obj6 = outer1_1(8915);
-              outer1_0(11719).hideActionSheet(outer1_0.id);
-              const obj7 = outer1_0(11719);
+              outer1_1(8944).init(outer1_5);
+              const obj6 = outer1_1(8944);
+              outer1_0(11753).hideActionSheet(outer1_0.id);
+              const obj7 = outer1_0(11753);
               const obj1 = { size: null };
               obj1[0] = outer1_10;
               dependencyMap = 1;
               c3 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = outer1_1(4811).openImagePicker(obj1);
+              obj2[0] = outer1_1(4841).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -116,7 +116,7 @@ export default function GuildProgressActionSheet(guild) {
           } else {
             base64 = arg1.base64;
             if (null != base64) {
-              obj = outer1_1(8915);
+              obj = outer1_1(8944);
               obj.updateIcon(closure_5, base64);
             }
             c3 = 3;

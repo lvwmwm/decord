@@ -1,10 +1,10 @@
-// Module ID: 5745
-// Function ID: 5746
+// Module ID: 5772
+// Function ID: 5773
 // Name: STOREFRONT_MARKETING_GUILD_ID
-// Dependencies: [1881, 2]
+// Dependencies: [1910, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 5745 (STOREFRONT_MARKETING_GUILD_ID)
+// Module 5772 (STOREFRONT_MARKETING_GUILD_ID)
 import { Environments } from "Environments";
 
 let str = "1193841000108531764";

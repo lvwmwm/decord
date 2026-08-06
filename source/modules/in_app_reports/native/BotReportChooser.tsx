@@ -1,10 +1,10 @@
-// Module ID: 12148
-// Function ID: 12149
+// Module ID: 12182
+// Function ID: 12183
 // Name: ReportAppProfile
-// Dependencies: [19, 4292, 21, 5631, 4251, 1236, 5633, 4223, 7802, 589, 5596, 2]
+// Dependencies: [19, 4322, 21, 5685, 4281, 1236, 5687, 4253, 7943, 589, 5650, 2]
 // Exports: default
 
-// Module 12148 (ReportAppProfile)
+// Module 12182 (ReportAppProfile)
 import "noop";
 import addApplication from "addApplication";
 import jsxProd from "jsxProd";
@@ -22,17 +22,17 @@ function ReportAppProfile(arg0) {
   obj = { variant: "heading-md/semibold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.eyEkG1);
-  obj[0] = callback(require(4251) /* Text */.Text, obj);
+  obj[0] = callback(require(4281) /* Text */.Text, obj);
   obj = { variant: "text-xs/medium", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.ptItsj);
-  obj[1] = callback(require(4251) /* Text */.Text, obj);
+  obj[1] = callback(require(4281) /* Text */.Text, obj);
   obj[2] = function onPress() {
     outer1_1(outer1_2[7]).hideActionSheet(outer1_6);
     const obj = outer1_1(outer1_2[7]);
     const result = outer1_0(outer1_2[8]).showReportModalForUser(closure_0, closure_1, closure_2, addApplication);
   };
-  return callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5687) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 function ReportAppBehavior(arg0) {
   let addApplication;
@@ -46,17 +46,17 @@ function ReportAppBehavior(arg0) {
   let obj = require(589) /* initialize */;
   const items = [addApplication];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_3.getAppIdForBotUserId(id.id));
-  let obj1 = require(5596) /* fetchApplication */;
+  let obj1 = require(5650) /* fetchApplication */;
   data = obj1.useApplication(stateFromStores).data;
   obj = { label: null, subLabel: null, onPress: null, arrow: true, disabled: null };
   obj = { variant: "heading-md/semibold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.atP0yX);
-  obj[0] = callback(require(4251) /* Text */.Text, obj);
+  obj[0] = callback(require(4281) /* Text */.Text, obj);
   obj1 = { variant: "text-xs/medium", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.UGg603);
-  obj[1] = callback(require(4251) /* Text */.Text, obj1);
+  obj[1] = callback(require(4281) /* Text */.Text, obj1);
   obj[2] = function onPress() {
     if (null != data) {
       let obj = outer1_1(outer1_2[7]);
@@ -73,7 +73,7 @@ function ReportAppBehavior(arg0) {
     }
   };
   obj[4] = null == data;
-  return callback(require(5633) /* ActionSheetRowIcon */.ActionSheetRow, obj);
+  return callback(require(5687) /* ActionSheetRowIcon */.ActionSheetRow, obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 const BotReportChooser = "BotReportChooser";
@@ -84,14 +84,14 @@ export default function BotReportChooser(arg0) {
   obj = { style: { textAlign: "center" }, variant: "redesign/heading-18/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.Bd10bR);
-  obj[0] = callback(require(4251) /* Text */.Text, obj);
+  obj[0] = callback(require(4281) /* Text */.Text, obj);
   obj = { hasIcons: false, children: null };
   const merged = Object.assign(arg0);
   const items = [callback(ReportAppProfile, {}), ];
   const merged1 = Object.assign(arg0);
   items[1] = callback(ReportAppBehavior, {});
   obj[1] = items;
-  obj[1] = callback2(require(5633) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback(require(5631) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = callback2(require(5687) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback(require(5685) /* ActionSheet */.ActionSheet, obj);
 };
 export const BOT_REPORT_CHOOSER_KEY = "BotReportChooser";

@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 12791
+// Function ID: 12792
 // Name: items1
-// Dependencies: [32, 19, 17, 676, 21, 4255, 6757, 712, 1236, 1945, 4251, 4797, 1297, 12755, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4285, 6784, 712, 1236, 1974, 4281, 4827, 1297, 12792, 2]
 // Exports: default
 
-// Module 12754 (items1)
+// Module 12791 (items1)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -53,7 +53,7 @@ let items1 = [
     getAnswer() {
       const intl = require(1236) /* getSystemLocale */.intl;
       const obj = { helpCenterUrl: null };
-      obj[0] = importDefault(1945).getArticleURL(HelpdeskArticles.GUILD_BOOSTING_FAQ);
+      obj[0] = importDefault(1974).getArticleURL(HelpdeskArticles.GUILD_BOOSTING_FAQ);
       return intl.format(require(1236) /* getSystemLocale */.t["8zlqlD"], obj);
     }
   },
@@ -152,7 +152,7 @@ export default function GuildBoostingMarketingFaq() {
   obj = { style: tmp.heading, variant: "heading-xxl/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.HPJ6Nj);
-  let items = [callback2(require(4251) /* Text */.Heading, obj), ];
+  let items = [callback2(require(4281) /* Text */.Heading, obj), ];
   const tmp2 = callback(React.useState(null), 2);
   items[1] = callback2(View, {
     style: tmp.list,

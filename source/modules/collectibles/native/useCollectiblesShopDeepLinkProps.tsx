@@ -1,10 +1,10 @@
-// Module ID: 14707
-// Function ID: 14708
+// Module ID: 14745
+// Function ID: 14746
 // Name: useCollectiblesShopDeepLinkProps
-// Dependencies: [19, 6895, 6912, 589, 6906, 2]
+// Dependencies: [19, 6922, 6939, 589, 6933, 2]
 // Exports: useCollectiblesShopDeepLinkProps
 
-// Module 14707 (useCollectiblesShopDeepLinkProps)
+// Module 14745 (useCollectiblesShopDeepLinkProps)
 import { useMemo } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import items from "items";

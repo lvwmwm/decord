@@ -1,10 +1,10 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15928
+// Function ID: 15929
 // Name: useLaunchPadGesture
-// Dependencies: [19, 10329, 4106, 1581, 5353, 500, 14936, 10217, 4116, 4224, 2]
+// Dependencies: [19, 10360, 4135, 1609, 5407, 500, 14974, 10248, 4145, 4254, 2]
 // Exports: default
 
-// Module 15888 (useLaunchPadGesture)
+// Module 15928 (useLaunchPadGesture)
 import noop from "noop";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 

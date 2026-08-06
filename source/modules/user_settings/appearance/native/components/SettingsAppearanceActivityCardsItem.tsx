@@ -1,10 +1,10 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14440
+// Function ID: 14441
 // Name: ActivityCardsItem
-// Dependencies: [19, 21, 7638, 712, 14404, 2]
+// Dependencies: [19, 21, 7666, 712, 14441, 2]
 // Exports: default
 
-// Module 14403 (ActivityCardsItem)
+// Module 14440 (ActivityCardsItem)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function ActivityCardsItem(animatedStyles) {
   obj[3] = function keyExtractor(title) {
     return title.title;
   };
-  return jsx(animatedStyles(7638).FlashList, { paddingVertical: null, paddingHorizontal: null });
+  return jsx(animatedStyles(7666).FlashList, { paddingVertical: null, paddingHorizontal: null });
 };

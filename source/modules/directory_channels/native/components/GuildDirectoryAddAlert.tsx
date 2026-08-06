@@ -1,10 +1,10 @@
-// Module ID: 11578
-// Function ID: 11579
+// Module ID: 11612
+// Function ID: 11613
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4255, 712, 4683, 1236, 5646, 4251, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 4713, 1236, 5700, 4281, 2]
 // Exports: default
 
-// Module 11578 (GuildDirectoryAddAlert)
+// Module 11612 (GuildDirectoryAddAlert)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,17 +35,17 @@ export default function GuildDirectoryAddAlert(arg0) {
   obj[1] = onClose;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.guildIcon, guild, size: null };
-  const tmp2 = importDefault(4683);
-  obj[2] = require(5646) /* GuildIconSizes */.GuildIconSizes.XLARGE;
-  const items = [callback(importDefault(5646), obj), , ];
+  const tmp2 = importDefault(4713);
+  obj[2] = require(5700) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+  const items = [callback(importDefault(5700), obj), , ];
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/bold", color: "mobile-text-heading-primary", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl2.string(require(1236) /* getSystemLocale */.t.CueiPY);
-  items[1] = callback(require(4251) /* Text */.Text, obj1);
+  items[1] = callback(require(4281) /* Text */.Text, obj1);
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl3.format(require(1236) /* getSystemLocale */.t.R7Pqn5, { guildName: directoryGuildName });
-  items[2] = callback(require(4251) /* Text */.Text, obj2);
+  items[2] = callback(require(4281) /* Text */.Text, obj2);
   obj[1] = items;
   obj[2] = callback2(View, obj);
   return callback(tmp2, obj);

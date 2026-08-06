@@ -1,9 +1,9 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 4909
+// Function ID: 4910
 // Name: create
-// Dependencies: [5, 1904, 4880, 2]
+// Dependencies: [5, 1933, 4910, 2]
 
-// Module 4879 (create)
+// Module 4909 (create)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -19,7 +19,7 @@ class DiscordImagePng {
 const prototype = DiscordImagePng.prototype;
 DiscordImagePng["create"] = function create(originalBuffer) {
   try {
-    return new DiscordImagePng(importDefault(1904).decode(originalBuffer), originalBuffer);
+    return new DiscordImagePng(importDefault(1933).decode(originalBuffer), originalBuffer);
   } catch (err) {
   }
 };
@@ -30,7 +30,7 @@ prototype["hasTransparency"] = function hasTransparency() {
       return false;
     }
   }
-  const uint8Array = new Uint8Array(importDefault(1904).toRGBA8(self.img)[0]);
+  const uint8Array = new Uint8Array(importDefault(1933).toRGBA8(self.img)[0]);
   let num2 = 3;
   if (3 < uint8Array.length) {
     while (uint8Array[num2] >= 255) {

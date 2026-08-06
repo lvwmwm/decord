@@ -1,10 +1,10 @@
-// Module ID: 12132
-// Function ID: 12133
+// Module ID: 12166
+// Function ID: 12167
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [1372, 1874, 4223, 12133, 1959, 2]
+// Dependencies: [1372, 1903, 4253, 12167, 1988, 2]
 // Exports: default
 
-// Module 12132 (showMediaMessagePreviewActionSheet)
+// Module 12166 (showMediaMessagePreviewActionSheet)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -18,13 +18,13 @@ export default function showMediaMessagePreviewActionSheet(message) {
     if (null != message) {
       user = user.getUser(message.author.id);
       if (null != user) {
-        let obj = importDefault(4223);
+        let obj = importDefault(4253);
         obj = { channel: null, message: null, user: null, closeMediaModal: null };
         obj[0] = channel;
         obj[1] = message;
         obj[2] = user;
         obj[3] = message.closeMediaModal;
-        obj.openLazy(require(1959) /* asyncRequireImpl */(12133, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
+        obj.openLazy(require(1988) /* asyncRequireImpl */(12167, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
       }
     }
   }

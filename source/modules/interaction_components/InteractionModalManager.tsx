@@ -1,9 +1,9 @@
-// Module ID: 16315
-// Function ID: 16316
+// Module ID: 16355
+// Function ID: 16356
 // Name: _handleInteractionModalCreate
-// Dependencies: [5, 4292, 7831, 676, 1906, 16316, 1959, 698, 1866, 1208, 16327, 16330, 5214, 2]
+// Dependencies: [5, 4322, 7972, 676, 1935, 16356, 1988, 698, 1895, 1208, 16367, 16370, 5244, 2]
 
-// Module 16315 (_handleInteractionModalCreate)
+// Module 16355 (_handleInteractionModalCreate)
 import onClose from "onClose";
 import addApplication from "addApplication";
 import deleteNonce from "deleteNonce";
@@ -66,7 +66,7 @@ function _handleInteractionModalCreate() {
             const obj3 = { type: "interaction_modal", application_id: null };
             obj3[1] = lib.application.id;
             callback(698).track(constants.OPEN_MODAL, obj3);
-            const AndroidPullModeRenderingExperiment = lib(1866).AndroidPullModeRenderingExperiment;
+            const AndroidPullModeRenderingExperiment = lib(1895).AndroidPullModeRenderingExperiment;
             if (AndroidPullModeRenderingExperiment.getCurrentConfig().treatmentId >= 2) {
               callback = (function getInteractionModalDebugData(closure_0) {
                 interactionDebugContext = interactionDebugContext.getInteractionDebugContext(closure_0.nonce);

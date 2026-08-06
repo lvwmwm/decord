@@ -1,10 +1,10 @@
-// Module ID: 10873
-// Function ID: 10874
+// Module ID: 10905
+// Function ID: 10906
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1476, 1874, 500, 1847, 4187, 11, 2]
+// Dependencies: [32, 19, 1476, 1903, 500, 1875, 4217, 11, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 10873 (getMessageJumpData)
+// Module 10905 (getMessageJumpData)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
@@ -25,7 +25,7 @@ export default function getMessageJumpData(messages, isAtBottom, messages2) {
   messages2 = messages2.messages;
   const lastResult1 = messages2.last();
   currentUser = currentUser.getCurrentUser();
-  const ANIMATED = require(4187) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
+  const ANIMATED = require(4217) /* GuildThemeSourcePreference */.JumpType.ANIMATED;
   let tmp7 = tmp6;
   ({ jumpSequenceId, focusTargetId } = messages);
   if (messages.initialScrollSequenceId === messages2.initialScrollSequenceId) {
@@ -113,8 +113,8 @@ export const useMessageJumpAndroidKeyboardHeight = function useMessageJumpAndroi
   let tmp4;
   let num = 0;
   if (obj2.isAndroid()) {
-    num = tmp(1847).getSystemKeyboardHeight();
-    const tmpResult = tmp(1847);
+    num = tmp(1875).getSystemKeyboardHeight();
+    const tmpResult = tmp(1875);
   }
   const obj = React;
   obj2 = require(500) /* set */;

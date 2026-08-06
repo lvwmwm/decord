@@ -1,14 +1,14 @@
-// Module ID: 12141
-// Function ID: 12142
+// Module ID: 12175
+// Function ID: 12176
 // Name: getMediaViewerStateForScreen
-// Dependencies: [8740, 2]
+// Dependencies: [8769, 2]
 // Exports: default
 
-// Module 12141 (getMediaViewerStateForScreen)
+// Module 12175 (getMediaViewerStateForScreen)
 let result = require("set").fileFinishedImporting("modules/media_viewer/native/getMediaViewerStateForScreen.tsx");
 
 export default function getMediaViewerStateForScreen(arg0, arg1, closure_1) {
-  let obj = require(8740) /* isValidImageAttachment */;
+  let obj = require(8769) /* isValidImageAttachment */;
   const size = obj.flattenSource(closure_1, true);
   if (null == size) {
     obj = { maximumZoomScale: 1, width: null, height: null };

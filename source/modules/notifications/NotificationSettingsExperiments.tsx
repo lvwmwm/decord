@@ -1,9 +1,9 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 13640
+// Function ID: 13641
 // Name: knownExperimentConfigs
 // Dependencies: [1452, 2]
 
-// Module 13603 (knownExperimentConfigs)
+// Module 13640 (knownExperimentConfigs)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { "2026-05-noisier-notif-settings-defaults": null };

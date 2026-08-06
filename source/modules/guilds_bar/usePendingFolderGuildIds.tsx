@@ -1,10 +1,10 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11108
+// Function ID: 11109
 // Name: usePendingFolderGuildIds
-// Dependencies: [4073, 1862, 589, 2]
+// Dependencies: [4102, 1891, 589, 2]
 // Exports: default, getPendingFolderGuildIds
 
-// Module 11076 (usePendingFolderGuildIds)
+// Module 11108 (usePendingFolderGuildIds)
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 

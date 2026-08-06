@@ -1,10 +1,10 @@
-// Module ID: 7971
-// Function ID: 7972
+// Module ID: 8112
+// Function ID: 8113
 // Name: parseEmbedTitleMarkup
-// Dependencies: [676, 687, 1386, 4245, 7972, 7983, 2]
+// Dependencies: [676, 687, 1386, 4275, 8113, 8124, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 7971 (parseEmbedTitleMarkup)
+// Module 8112 (parseEmbedTitleMarkup)
 import { MessageTypes } from "ME";
 import importDefaultResult from "priv";
 
@@ -28,10 +28,10 @@ export const parseEmbedTitleMarkup = function parseEmbedTitleMarkup(rawName, clo
   if (null == value) {
     obj = { channelId: null };
     obj[0] = closure_0;
-    const parseEmbedTitleToASTResult = importDefault(4245).parseEmbedTitleToAST(rawName, true, obj);
+    const parseEmbedTitleToASTResult = importDefault(4275).parseEmbedTitleToAST(rawName, true, obj);
     const result = obj.set(combined, parseEmbedTitleToASTResult);
     value = parseEmbedTitleToASTResult;
-    const obj2 = importDefault(4245);
+    const obj2 = importDefault(4275);
   }
   return value;
 };
@@ -42,10 +42,10 @@ export const parseEmbedTitleMarkupWithoutLinks = function parseEmbedTitleMarkupW
   if (null == value) {
     obj = { channelId: null };
     obj[0] = arg1;
-    const result = importDefault(4245).parseEmbedTitleWithoutLinksToAST(arg0, true, obj);
+    const result = importDefault(4275).parseEmbedTitleWithoutLinksToAST(arg0, true, obj);
     const result1 = obj.set(combined, result);
     value = result;
-    const obj2 = importDefault(4245);
+    const obj2 = importDefault(4275);
   }
   return value;
 };
@@ -85,7 +85,7 @@ export const parseEmbedDescriptionMarkup = function parseEmbedDescriptionMarkup(
   obj[4] = tmp8;
   obj[5] = showListsAndHeaders;
   obj[6] = showMaskedLinks;
-  const parseToASTResult = importDefault(4245).parseToAST(tmp4, true, obj);
+  const parseToASTResult = importDefault(4275).parseToAST(tmp4, true, obj);
   const result = importDefaultResult.set(combined, parseToASTResult);
   return parseToASTResult;
 };
@@ -131,15 +131,15 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
     obj[5] = tmp6;
     obj[6] = flag3;
     obj[7] = flag3;
-    const merged = Object.assign(require(7983) /* getInitialParserState */.renderMessageMarkupToAST(message, obj));
+    const merged = Object.assign(require(8124) /* getInitialParserState */.renderMessageMarkupToAST(message, obj));
     obj.isInlineReplyPreview = flag;
     result = obj1.set(message, obj);
-    const obj3 = require(7983) /* getInitialParserState */;
+    const obj3 = require(8124) /* getInitialParserState */;
   }
-  const obj6 = importDefault(4245);
+  const obj6 = importDefault(4275);
   obj1 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
   flag = flag2;
-  const obj7 = require(7972) /* LHeading */;
+  const obj7 = require(8113) /* LHeading */;
   if (!flag2) {
     flag = obj;
   }
@@ -147,7 +147,7 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   if (!flag2) {
     flag2 = obj;
   }
-  obj = { content: obj6.astParserFor(require(7972) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1), isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
+  obj = { content: obj6.astParserFor(require(8113) /* LHeading */.changelogRules(message.changelogId, true))(message.content, false, obj1), isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
   obj1[3] = flag2;
   obj1[4] = flag3;
   obj1[5] = flag3;

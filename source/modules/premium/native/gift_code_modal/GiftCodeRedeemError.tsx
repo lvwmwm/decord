@@ -1,10 +1,10 @@
-// Module ID: 10318
-// Function ID: 10319
+// Module ID: 10349
+// Function ID: 10350
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4255, 712, 1481, 5257, 10319, 10320, 4251, 1236, 4665, 4460, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1481, 5311, 10350, 10351, 4281, 1236, 4695, 4490, 2]
 // Exports: default
 
-// Module 10318 (GiftCodeRedeemError)
+// Module 10349 (GiftCodeRedeemError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -30,21 +30,21 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/native/
 
 export default function GiftCodeRedeemError(children) {
   const tmp = createCacheKey();
-  let obj = require(1481) /* Link */;
+  let obj = require(1481) /* createStandardNavigationFactories */;
   const theme = obj.useTheme();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(10319);
+    let tmp9Result = tmp9(10350);
   } else {
-    tmp9Result = tmp9(10320);
+    tmp9Result = tmp9(10351);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
   const intl = tmp2(1236).intl;
   obj1[2] = intl.formatToMarkdownString(require(1236) /* getSystemLocale */.t.JUvC0s, {});
-  items[1] = closure_6(require(4251) /* Text */.Text, obj1);
-  items[2] = closure_6(require(4251) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  items[1] = closure_6(require(4281) /* Text */.Text, obj1);
+  items[2] = closure_6(require(4281) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
   obj[2] = items;
   const items1 = [closure_7(closure_5, obj), ];
   const obj3 = { style: tmp.footer, children: null };
@@ -54,8 +54,8 @@ export default function GiftCodeRedeemError(children) {
   obj4[2] = function onPress() {
     return callback(table[12]).pop();
   };
-  obj3[1] = closure_6(require(4665) /* Button */.Button, obj4);
+  obj3[1] = closure_6(require(4695) /* Button */.Button, obj4);
   items1[1] = closure_6(closure_4, obj3);
   obj[2] = items1;
-  return closure_7(require(5257) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_7(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

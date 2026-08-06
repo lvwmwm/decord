@@ -1,8 +1,8 @@
-// Module ID: 13633
-// Function ID: 13634
-// Dependencies: [4158, 676, 530, 698, 2]
+// Module ID: 13670
+// Function ID: 13671
+// Dependencies: [4188, 676, 530, 698, 2]
 
-// Module 13633
+// Module 13670
 import { RPC_LOCAL_SCOPE } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
 

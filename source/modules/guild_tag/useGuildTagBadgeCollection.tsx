@@ -1,10 +1,10 @@
-// Module ID: 16526
-// Function ID: 16527
+// Module ID: 16566
+// Function ID: 16567
 // Name: useGuildTagBadgeCollection
-// Dependencies: [19, 8916, 4142, 7834, 589, 2]
+// Dependencies: [19, 8945, 4172, 7975, 589, 2]
 // Exports: default
 
-// Module 16526 (useGuildTagBadgeCollection)
+// Module 16566 (useGuildTagBadgeCollection)
 import { useMemo } from "noop";
 import handleFormInit from "handleFormInit";
 import calculateAppliedBoosts from "calculateAppliedBoosts";

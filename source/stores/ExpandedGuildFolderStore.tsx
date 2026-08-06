@@ -1,9 +1,9 @@
-// Module ID: 5108
-// Function ID: 5109
+// Module ID: 5138
+// Function ID: 5139
 // Name: set
 // Dependencies: [1340, 589, 709, 2]
 
-// Module 5108 (set)
+// Module 5138 (set)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { PersistedStore } from "initialize";
 import set from "dispatcher";

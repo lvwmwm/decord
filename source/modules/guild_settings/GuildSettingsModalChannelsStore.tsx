@@ -1,9 +1,9 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16494
+// Function ID: 16495
 // Name: sortCategoryList
-// Dependencies: [109, 1376, 1932, 3883, 676, 5208, 12, 589, 709, 2]
+// Dependencies: [109, 1376, 1961, 3912, 676, 5238, 12, 589, 709, 2]
 
-// Module 16454 (sortCategoryList)
+// Module 16494 (sortCategoryList)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import createChannelRecord from "createChannelRecord";
 import comparator from "comparator";
@@ -86,9 +86,9 @@ function buildSortedChannels() {
       }
     }
   });
-  const item2 = importDefault(5208)(_null._categories, _null).forEach(setIndex);
+  const item2 = importDefault(5238)(_null._categories, _null).forEach(setIndex);
   if (null != _null) {
-    const arr4 = importDefault(5208)(_null._categories, _null, (channel) => {
+    const arr4 = importDefault(5238)(_null._categories, _null, (channel) => {
       channel = channel.channel;
       let tmp = channel.type === constants.GUILD_CATEGORY;
       if (!tmp) {
@@ -232,7 +232,7 @@ const guildSettingsModalChannelsStoreClass = new GuildSettingsModalChannelsStore
       const _Set = Set;
       const set = new Set(sortingType);
       if (null != _null) {
-        const arr = importDefault(5208)(_null._categories, _null, (channel) => {
+        const arr = importDefault(5238)(_null._categories, _null, (channel) => {
           channel = channel.channel;
           let tmp = channel.type === constants.GUILD_CATEGORY;
           if (!tmp) {
@@ -251,7 +251,7 @@ const guildSettingsModalChannelsStoreClass = new GuildSettingsModalChannelsStore
   GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER: function handleStopReorder() {
     let c16 = null;
     if (null != _null) {
-      const arr = importDefault(5208)(_null._categories, _null, (channel) => {
+      const arr = importDefault(5238)(_null._categories, _null, (channel) => {
         channel = channel.channel;
         let tmp = channel.type === constants.GUILD_CATEGORY;
         if (!tmp) {
@@ -296,7 +296,7 @@ let obj = {
       const _Set = Set;
       const set = new Set(sortingType);
       if (null != _null) {
-        const arr = importDefault(5208)(_null._categories, _null, (channel) => {
+        const arr = importDefault(5238)(_null._categories, _null, (channel) => {
           channel = channel.channel;
           let tmp = channel.type === constants.GUILD_CATEGORY;
           if (!tmp) {
@@ -315,7 +315,7 @@ let obj = {
   GUILD_SETTINGS_MODAL_CHANNELS_STOP_REORDER: function handleStopReorder() {
     let c16 = null;
     if (null != _null) {
-      const arr = importDefault(5208)(_null._categories, _null, (channel) => {
+      const arr = importDefault(5238)(_null._categories, _null, (channel) => {
         channel = channel.channel;
         let tmp = channel.type === constants.GUILD_CATEGORY;
         if (!tmp) {

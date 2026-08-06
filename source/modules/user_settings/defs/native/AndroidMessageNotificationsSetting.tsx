@@ -1,10 +1,10 @@
-// Module ID: 14551
-// Function ID: 14552
+// Module ID: 14589
+// Function ID: 14590
 // Name: useAndroidMessageNotificationsSettingValue
-// Dependencies: [14540, 7864, 500, 10333, 1236, 2]
+// Dependencies: [14578, 8005, 500, 10364, 1236, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 14551 (useAndroidMessageNotificationsSettingValue)
+// Module 14589 (useAndroidMessageNotificationsSettingValue)
 import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore";
 import createToggle from "createToggle";
 

@@ -1,9 +1,9 @@
-// Module ID: 7010
-// Function ID: 7011
+// Module ID: 7037
+// Function ID: 7038
 // Name: handlePostConnectionOpen
-// Dependencies: [6832, 1907, 2]
+// Dependencies: [6859, 1936, 2]
 
-// Module 7010 (handlePostConnectionOpen)
+// Module 7037 (handlePostConnectionOpen)
 import importDefaultResult from "result";
 
 let obj = importDefault;
@@ -34,7 +34,7 @@ prototype["handleFileSystemStoreChanged"] = function handleFileSystemStoreChange
     tmp = self.isLowDisk !== isLowDisk;
   }
   if (tmp) {
-    obj = obj(1907);
+    obj = obj(1936);
     const databaseResult = obj.database();
     if (databaseResult != null) {
       databaseResult.incrementalVacuum();

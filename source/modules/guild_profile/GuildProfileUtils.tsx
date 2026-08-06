@@ -1,10 +1,10 @@
-// Module ID: 7091
-// Function ID: 7092
+// Module ID: 7118
+// Function ID: 7119
 // Name: getEstablishedDate
 // Dependencies: [1376, 676, 1411, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 7091 (getEstablishedDate)
+// Module 7118 (getEstablishedDate)
 import { createChannelRecordFromInvite as closure_2 } from "createChannelRecord";
 import { GuildFeatures } from "ME";
 

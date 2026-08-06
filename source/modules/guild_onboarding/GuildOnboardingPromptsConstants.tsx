@@ -1,10 +1,10 @@
-// Module ID: 5196
-// Function ID: 5197
+// Module ID: 5226
+// Function ID: 5227
 // Name: serverPromptToClientPrompt
-// Dependencies: [32, 109, 676, 659, 1236, 1856, 2]
+// Dependencies: [32, 109, 676, 659, 1236, 1884, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 5196 (serverPromptToClientPrompt)
+// Module 5226 (serverPromptToClientPrompt)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { PlatformTypes } from "ME";
@@ -39,14 +39,14 @@ function validateOnboardingConnection(connection_type) {
     if (obj3.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID is required for application connections");
     }
-    obj3 = require(1856) /* isNullOrEmpty */;
+    obj3 = require(1884) /* isNullOrEmpty */;
     const tmp9 = require;
     if (!tmp9Result.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID not allowed for application connections");
     }
-    tmp9Result = require(1856) /* isNullOrEmpty */;
+    tmp9Result = require(1884) /* isNullOrEmpty */;
   } else if (tmp.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-    obj = require(1856) /* isNullOrEmpty */;
+    obj = require(1884) /* isNullOrEmpty */;
     if (obj.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID is required for platform connections");
     } else if (!closure_11.includes(connection_type.provider_id)) {
@@ -56,7 +56,7 @@ function validateOnboardingConnection(connection_type) {
       items.push("Application ID not allowed for platform connections");
     }
     const tmp3 = require;
-    tmp3Result = require(1856) /* isNullOrEmpty */;
+    tmp3Result = require(1884) /* isNullOrEmpty */;
   } else {
     const connection_type2 = connection_type.connection_type;
     items.push("Invalid connection type");

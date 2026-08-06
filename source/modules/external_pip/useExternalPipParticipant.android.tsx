@@ -1,10 +1,10 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 15970
+// Function ID: 15971
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4268, 1218, 4302, 4326, 4273, 589, 2]
+// Dependencies: [32, 19, 4298, 1218, 4332, 4356, 4303, 589, 2]
 // Exports: default
 
-// Module 15930 (useExternalPipParticipant)
+// Module 15970 (useExternalPipParticipant)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getParticipants from "getParticipants";
@@ -256,7 +256,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "accessible" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "__d" };
   }, items4);
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {

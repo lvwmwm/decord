@@ -1,9 +1,9 @@
-// Module ID: 5131
-// Function ID: 5132
+// Module ID: 5161
+// Function ID: 5162
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 5131 (initialize)
+// Module 5161 (initialize)
 import { PersistedStore } from "initialize";
 
 let obj = { topEmojisByGuildId: {} };

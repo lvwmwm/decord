@@ -1,9 +1,9 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16332
+// Function ID: 16333
 // Name: handleSelectedChannelStoreChange
-// Dependencies: [109, 1218, 4326, 1931, 589, 12902, 709, 2]
+// Dependencies: [109, 1218, 4356, 1960, 589, 12939, 709, 2]
 
-// Module 16292 (handleSelectedChannelStoreChange)
+// Module 16332 (handleSelectedChannelStoreChange)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import fetchFingerprint from "fetchFingerprint";
 import createRTCConnection from "createRTCConnection";
@@ -92,7 +92,7 @@ prototype["getPendingNote"] = function getPendingNote(arg0) {
 };
 prototype["getNotes"] = function getNotes(closure_1) {
   const roomObjects = this.getRoomObjects(closure_1);
-  let value = roomObjects.get(require(12902) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.NOTE);
+  let value = roomObjects.get(require(12939) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.NOTE);
   if (value == null) {
     value = closure_11;
   }

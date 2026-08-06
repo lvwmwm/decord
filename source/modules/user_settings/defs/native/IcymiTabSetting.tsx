@@ -1,9 +1,9 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14632
+// Function ID: 14633
 // Name: toggle
-// Dependencies: [7864, 8811, 8808, 8807, 14595, 10333, 1236, 2]
+// Dependencies: [8005, 8840, 8837, 8836, 14633, 10364, 1236, 2]
 
-// Module 14594 (toggle)
+// Module 14632 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,23 +13,23 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.ADVANCED,
   useValue: function useICYMISettingValue() {
-    return importDefault(8811)(require(8808) /* apexExperiment */.ICYMI_LAB_FEATURE);
+    return importDefault(8840)(require(8837) /* apexExperiment */.ICYMI_LAB_FEATURE);
   },
   onValueChange: function onICYMISettingValueChange(enabled) {
-    let obj = importDefault(8807);
+    let obj = importDefault(8836);
     let str = "show";
     if (enabled) {
       str = "hide";
     }
     obj.itemInteracted(str, "icymi_tab_toggle", "press");
-    importDefault(8807).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "icymi_tab_toggle", actionIntentType: "configure", actionDestinationType: null } });
+    importDefault(8836).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "icymi_tab_toggle", actionIntentType: "configure", actionDestinationType: null } });
     const tmp = importDefault;
-    const tmpResult = importDefault(8807);
+    const tmpResult = importDefault(8836);
     obj = { enabled };
-    require(14595) /* toggleLabFeature */.toggleLabFeature(require(8808) /* apexExperiment */.ICYMI_LAB_FEATURE, obj);
+    require(14633) /* toggleLabFeature */.toggleLabFeature(require(8837) /* apexExperiment */.ICYMI_LAB_FEATURE, obj);
   },
   usePredicate: function useICYMIPredicate() {
-    const ICYMIStaffOnlyExperiment = require(8808) /* apexExperiment */.ICYMIStaffOnlyExperiment;
+    const ICYMIStaffOnlyExperiment = require(8837) /* apexExperiment */.ICYMIStaffOnlyExperiment;
     return ICYMIStaffOnlyExperiment.useConfig({ location: "settings" }).enabled;
   }
 });
@@ -40,23 +40,23 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.ADVANCED,
   useValue: function useICYMISettingValue() {
-    return importDefault(8811)(require(8808) /* apexExperiment */.ICYMI_LAB_FEATURE);
+    return importDefault(8840)(require(8837) /* apexExperiment */.ICYMI_LAB_FEATURE);
   },
   onValueChange: function onICYMISettingValueChange(enabled) {
-    let obj = importDefault(8807);
+    let obj = importDefault(8836);
     let str = "show";
     if (enabled) {
       str = "hide";
     }
     obj.itemInteracted(str, "icymi_tab_toggle", "press");
-    importDefault(8807).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "icymi_tab_toggle", actionIntentType: "configure", actionDestinationType: null } });
+    importDefault(8836).feedPageActioned({ actionParameters: { actionGestureType: "press", actionTargetElement: "icymi_tab_toggle", actionIntentType: "configure", actionDestinationType: null } });
     const tmp = importDefault;
-    const tmpResult = importDefault(8807);
+    const tmpResult = importDefault(8836);
     obj = { enabled };
-    require(14595) /* toggleLabFeature */.toggleLabFeature(require(8808) /* apexExperiment */.ICYMI_LAB_FEATURE, obj);
+    require(14633) /* toggleLabFeature */.toggleLabFeature(require(8837) /* apexExperiment */.ICYMI_LAB_FEATURE, obj);
   },
   usePredicate: function useICYMIPredicate() {
-    const ICYMIStaffOnlyExperiment = require(8808) /* apexExperiment */.ICYMIStaffOnlyExperiment;
+    const ICYMIStaffOnlyExperiment = require(8837) /* apexExperiment */.ICYMIStaffOnlyExperiment;
     return ICYMIStaffOnlyExperiment.useConfig({ location: "settings" }).enabled;
   }
 };

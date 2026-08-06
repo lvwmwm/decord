@@ -1,10 +1,10 @@
-// Module ID: 1880
-// Function ID: 1881
+// Module ID: 1909
+// Function ID: 1910
 // Name: validatePremiumType
-// Dependencies: [1881, 676, 38, 1384, 2]
+// Dependencies: [1910, 676, 38, 1384, 2]
 // Exports: getEnv, getPremiumTypeFromRawValue, isStaffEnv, isStaffEnvRawData, validatePremiumType
 
-// Module 1880 (validatePremiumType)
+// Module 1909 (validatePremiumType)
 import { Environments } from "Environments";
 import ME from "ME";
 

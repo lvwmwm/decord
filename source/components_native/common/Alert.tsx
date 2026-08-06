@@ -1,10 +1,10 @@
-// Module ID: 4683
-// Function ID: 4684
+// Module ID: 4713
+// Function ID: 4714
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 4255, 712, 1297, 3967, 4684, 4140, 4661, 4251, 1236, 4665, 4797, 4799, 1474, 4800, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1297, 3996, 4714, 4170, 4691, 4281, 1236, 4695, 4827, 4829, 1474, 4830, 2]
 // Exports: getAlertButtonVariant
 
-// Module 4683 (componentDidMount)
+// Module 4713 (componentDidMount)
 import importAllResult from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -142,7 +142,7 @@ prototype["renderHeader"] = function renderHeader() {
       }
       obj = { children: null };
       obj[6] = renderContentResult;
-      const items = [closure_7(require(4251) /* Text */.Text, obj), ];
+      const items = [closure_7(require(4281) /* Text */.Text, obj), ];
       obj = { style: null };
       obj[0] = tmp.divider;
       items[1] = closure_7(closure_5, obj);
@@ -170,7 +170,7 @@ prototype["renderBody"] = function renderBody() {
       renderContentResult = self.renderContent(body);
     }
     obj[2] = renderContentResult;
-    obj[1] = closure_7(require(4251) /* Text */.Text, obj);
+    obj[1] = closure_7(require(4281) /* Text */.Text, obj);
     tmp5Result = tmp5(closure_6, obj);
     const tmp6 = closure_6;
   }
@@ -204,7 +204,7 @@ prototype["renderButtons"] = function renderButtons() {
       obj = { variant: "secondary", onPress: null, text: null };
       obj[1] = self.handleCancel;
       obj[2] = cancelText;
-      obj[1] = callback(require(4665) /* Button */.Button, obj);
+      obj[1] = callback(require(4695) /* Button */.Button, obj);
       tmp6 = callback(closure_5, obj);
     }
     let tmp11;
@@ -214,8 +214,8 @@ prototype["renderButtons"] = function renderButtons() {
       obj[2] = self.handleSecondaryConfirm;
       const obj1 = { variant: "text-sm/semibold", color: "text-link", children: null };
       obj1[2] = secondaryConfirmText;
-      obj[3] = callback(require(4251) /* Text */.Text, obj1);
-      tmp11 = callback(require(4797) /* PressableBase */.PressableOpacity, obj);
+      obj[3] = callback(require(4281) /* Text */.Text, obj1);
+      tmp11 = callback(require(4827) /* PressableBase */.PressableOpacity, obj);
     }
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.buttons;
@@ -273,7 +273,7 @@ prototype["renderButtons"] = function renderButtons() {
         str2 = str3;
       }
       obj3[6] = str2;
-      renderConfirmButtonResult = callback(require(4665) /* Button */.Button, obj3);
+      renderConfirmButtonResult = callback(require(4695) /* Button */.Button, obj3);
       const tmp20 = callback;
     }
     const items = [renderConfirmButtonResult, tmp6, tmp11];
@@ -304,7 +304,7 @@ prototype["render"] = function render() {
   let obj = { children: null };
   ({ style, isLandscape, onClose } = props);
   obj = { absolute: true, componentStyles: tmp.gradient };
-  const items = [callback(importDefault(4799), obj), ];
+  const items = [callback(importDefault(4829), obj), ];
   obj = { onAccessibilityEscape: onClose, style: items1, children: null };
   items1 = [tmp.alert, style, { width }];
   const items2 = [this.renderHeader(), this.renderBody(), this.renderButtons(), this.renderFooter()];
@@ -328,7 +328,7 @@ const obj4 = { borderRadius: require("Themes").radii.sm };
 Alert.defaultProps = { confirmColor: require("Button").ButtonColors.BRAND, autoCloseOnConfirm: true };
 const memoResult = importAllResult.memo((arg0) => {
   const size = importDefault(1474)();
-  let obj = require(4800) /* getIsScreenLandscape */;
+  let obj = require(4830) /* getIsScreenLandscape */;
   const isScreenLandscape = obj.useIsScreenLandscape();
   obj = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
   const merged = Object.assign(arg0);

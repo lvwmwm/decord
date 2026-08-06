@@ -1,9 +1,9 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16421
+// Function ID: 16422
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 3885, 1218, 1372, 4450, 11662, 11663, 676, 4467, 4223, 16382, 1959, 503, 3837, 11665, 9643, 698, 500, 5214, 14541, 691, 2]
+// Dependencies: [5, 17, 3914, 1218, 1372, 4480, 11696, 11697, 676, 4497, 4253, 16422, 1988, 503, 3866, 11699, 9674, 698, 500, 5244, 14579, 691, 2]
 
-// Module 16381 (haveNotSeenPromptSince)
+// Module 16421 (haveNotSeenPromptSince)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { NativeModules } from "expandEventProperties";
 import storeThread from "storeThread";
@@ -29,8 +29,8 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      tmp4 = importDefault(3837)().diff(tmp, "days") >= 1;
-      const obj = importDefault(3837)();
+      tmp4 = importDefault(3866)().diff(tmp, "days") >= 1;
+      const obj = importDefault(3866)();
     }
     tmp2 = tmp4;
   }
@@ -191,8 +191,8 @@ function _logNotificationPermissionStatus2() {
           return obj;
         } else {
           callback = arg1;
-          callback2 = callback(9643).allowInAppNotifications();
-          const obj5 = callback(9643);
+          callback2 = callback(9674).allowInAppNotifications();
+          const obj5 = callback(9674);
           const obj2 = { os_enabled: null, foreground_app_enabled: null, background_app_enabled: null, notification_authorization_status: null };
           obj2[0] = callback === constants2.AUTHORIZED;
           obj2[1] = callback2;
@@ -230,7 +230,7 @@ let c23 = null;
 class NotificationPermissionManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f113181 = applyArgumentsResult;
+    f113518 = applyArgumentsResult;
     applyArgumentsResult.previousAppState = null;
     applyArgumentsResult.actions = {
       MESSAGE_CREATE(message) {
@@ -253,7 +253,7 @@ class NotificationPermissionManager extends tmp4 {
             closure_0.handleAppStateUpdate(arg0);
           }
     };
-    f113181 = applyArgumentsResult;
+    f113518 = applyArgumentsResult;
     applyArgumentsResult.handleConnectionOpen = _logNotificationPermissionStatus2(function*() {
       if (c2 === 2) {
         c2 = 3;
@@ -322,7 +322,7 @@ class NotificationPermissionManager extends tmp4 {
         }
       }
     });
-    f113181 = _logNotificationPermissionStatus2((arg0) => {
+    f113518 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -439,7 +439,7 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f113181 = _logNotificationPermissionStatus2((arg0) => {
+    f113518 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c4 = 0;
       let c5 = 0;
@@ -563,7 +563,7 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f113181 = _logNotificationPermissionStatus2((arg0) => {
+    f113518 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -678,9 +678,9 @@ class NotificationPermissionManager extends tmp4 {
       }
       return applyArgumentsResult;
     };
-    f113181 = undefined;
+    f113518 = undefined;
     closure_1 = applyArgumentsResult;
-    f113181 = _logNotificationPermissionStatus2((arg0) => {
+    f113518 = _logNotificationPermissionStatus2((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -881,8 +881,8 @@ prototype["handleMessageCreateForNudge"] = function handleMessageCreateForNudge(
               isMutedResult = closure_8.isChannelMuted(guildId, channel.id);
             }
             if (!isMutedResult) {
-              const result = require(11665) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.CHANNEL_BANNER);
-              const obj = require(11665) /* getOrRefreshPushSyncToken */;
+              const result = require(11699) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.CHANNEL_BANNER);
+              const obj = require(11699) /* getOrRefreshPushSyncToken */;
             }
           }
         }
@@ -902,8 +902,8 @@ prototype["handleReactionAddForNudge"] = function handleReactionAddForNudge(opti
           isMutedResult = closure_8.isChannelMuted(guildId, channel.id);
         }
         if (!isMutedResult) {
-          const result = require(11665) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.POST_REACTION_BANNER);
-          const obj = require(11665) /* getOrRefreshPushSyncToken */;
+          const result = require(11699) /* getOrRefreshPushSyncToken */.setPushNotificationPermissionEligibleForPrompt(PermissionPromptType.POST_REACTION_BANNER);
+          const obj = require(11699) /* getOrRefreshPushSyncToken */;
         }
       }
     }

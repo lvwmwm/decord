@@ -1,9 +1,9 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16591
+// Function ID: 16592
 // Name: handleSetSection
-// Dependencies: [1412, 16552, 1936, 1935, 8916, 16546, 676, 16553, 11669, 4693, 1351, 506, 3888, 688, 1938, 12, 589, 709, 2]
+// Dependencies: [1412, 16592, 1965, 1964, 8945, 16586, 676, 16593, 11703, 4723, 1351, 506, 3917, 688, 1967, 12, 589, 709, 2]
 
-// Module 16551 (handleSetSection)
+// Module 16591 (handleSetSection)
 import { set } from "isValueEqual";
 import map from "map";
 import { isRoleEqual } from "GuildRoleRecordTypeTag";
@@ -215,7 +215,7 @@ let closure_33 = require("applyOverwrites").debounce(() => {
   if (c24) {
     if (null != user) {
       if (null != closure_25) {
-        let obj = importDefault(11669);
+        let obj = importDefault(11703);
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
         obj[0] = store.getSortedRoles(user.id);
         obj[1] = closure_25;
@@ -368,7 +368,7 @@ Object.defineProperty(prototype, "formState", {
 prototype["getSortDeltas"] = function getSortDeltas() {
   if (null != user) {
     if (null != closure_25) {
-      let obj = importDefault(11669);
+      let obj = importDefault(11703);
       obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null, ascending: false };
       obj[0] = store.getSortedRoles(user.id);
       obj[1] = closure_25;
@@ -479,7 +479,7 @@ obj = {
     let tmp2 = null != found;
     if (tmp2) {
       let obj = { permissions: null };
-      obj[0] = importAll(3888).NONE;
+      obj[0] = importAll(3917).NONE;
       const index = items.indexOf(found);
       if (index >= 0) {
         obj = {};
@@ -604,7 +604,7 @@ obj = {
     if (null == found) {
       return false;
     } else {
-      const result = id(1938).extractColorStringsFromServerColors(colors);
+      const result = id(1967).extractColorStringsFromServerColors(colors);
       const value = map2.get(id);
       let tmp21 = null != value;
       if (tmp21) {
@@ -988,7 +988,7 @@ obj = {
         obj[0] = currentStyle;
         obj[1] = value.styleColors;
         const result = obj3.set(id, obj);
-        const result1 = id(1938).extractColorStringsFromServerColors(tmp19);
+        const result1 = id(1967).extractColorStringsFromServerColors(tmp19);
         const primary_color = tmp19.primary_color;
         obj = { color: null, colors: null, colorString: null, colorStrings: null };
         obj[0] = primary_color;

@@ -1,10 +1,10 @@
-// Module ID: 16766
-// Function ID: 16767
+// Module ID: 16806
+// Function ID: 16807
 // Name: _fetchBasicGuild
-// Dependencies: [5, 1862, 7846, 676, 709, 530, 2]
+// Dependencies: [5, 1891, 7987, 676, 709, 530, 2]
 // Exports: fetchBasicGuild
 
-// Module 16766 (_fetchBasicGuild)
+// Module 16806 (_fetchBasicGuild)
 import sendRequest from "sendRequest";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getGuild from "getGuild";

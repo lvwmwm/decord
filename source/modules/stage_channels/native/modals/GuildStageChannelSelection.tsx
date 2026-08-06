@@ -1,10 +1,10 @@
-// Module ID: 8955
-// Function ID: 8956
+// Module ID: 8984
+// Function ID: 8985
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 3892, 1874, 21, 4255, 8864, 4445, 1844, 4223, 8862, 1959, 1236, 4251, 2]
+// Dependencies: [19, 3921, 1903, 21, 4285, 8893, 4475, 1872, 4253, 8891, 1988, 1236, 4281, 2]
 // Exports: default
 
-// Module 8955 (GuildStageChannelSelection)
+// Module 8984 (GuildStageChannelSelection)
 import "noop";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";

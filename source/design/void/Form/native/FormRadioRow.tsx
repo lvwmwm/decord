@@ -1,10 +1,10 @@
-// Module ID: 7765
-// Function ID: 7766
+// Module ID: 7906
+// Function ID: 7907
 // Name: FormRadioRow
-// Dependencies: [19, 21, 5299, 3973, 7766, 5293, 5316, 2]
+// Dependencies: [19, 21, 5353, 4002, 7907, 5347, 5370, 2]
 // Exports: default
 
-// Module 7765 (FormRadioRow)
+// Module 7906 (FormRadioRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -25,8 +25,8 @@ export default function FormRadioRow(arg0) {
   ({ leading, onPress } = arg0);
   ({ value, style } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  const context = React.useContext(require(5299) /* context */.RedesignCompatContext);
-  let obj = require(3973) /* useCheckboxA11yNative */;
+  const context = React.useContext(require(5353) /* context */.RedesignCompatContext);
+  let obj = require(4002) /* useCheckboxA11yNative */;
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   if (context) {
     obj = { icon: null, value: null, legacyCompat_selected: null, legacyCompat_onPress: null };
@@ -35,7 +35,7 @@ export default function FormRadioRow(arg0) {
     obj[2] = selected;
     obj[3] = onPress;
     const merged1 = Object.assign(merged);
-    let tmp8Result = tmp8(require(7766) /* TableRadioRow */.TableRadioRow, obj);
+    let tmp8Result = tmp8(require(7907) /* TableRadioRow */.TableRadioRow, obj);
   } else {
     obj = {};
     const merged2 = Object.assign(merged);
@@ -47,18 +47,18 @@ export default function FormRadioRow(arg0) {
     if ("right" === align) {
       const obj1 = { selected: null };
       obj1[0] = selected;
-      tmp8Result = tmp8(tmp9(5316), obj1);
+      tmp8Result = tmp8(tmp9(5370), obj1);
     }
     obj.trailing = tmp8Result;
     let tmp8Result1 = leading;
     if ("left" === align) {
       const obj2 = { selected: null };
       obj2[0] = selected;
-      tmp8Result1 = tmp8(tmp9(5316), obj2);
+      tmp8Result1 = tmp8(tmp9(5370), obj2);
     }
     obj.leading = tmp8Result1;
-    tmp8Result = tmp8(importDefault(5293), obj);
-    const tmp10 = importDefault(5293);
+    tmp8Result = tmp8(importDefault(5347), obj);
+    const tmp10 = importDefault(5347);
   }
   return tmp8Result;
 };

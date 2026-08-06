@@ -1,9 +1,9 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 8824
+// Function ID: 8825
 // Name: CRUNCHYROLL_LINK_DEST_ORIGIN
-// Dependencies: [8796, 2]
+// Dependencies: [8825, 2]
 
-// Module 8795 (CRUNCHYROLL_LINK_DEST_ORIGIN)
+// Module 8824 (CRUNCHYROLL_LINK_DEST_ORIGIN)
 const items = [require("set").OAuth2Scopes.ACTIVITIES_WRITE, require("set").OAuth2Scopes.EMAIL, require("set").OAuth2Scopes.IDENTIFY];
 const result = require("set").fileFinishedImporting("modules/connections/CrunchyrollConnectionConstants.tsx");
 

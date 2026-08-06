@@ -1,9 +1,9 @@
-// Module ID: 5902
-// Function ID: 5903
+// Module ID: 5929
+// Function ID: 5930
 // Name: HeaderActionButton
-// Dependencies: [19, 1301, 21, 4255, 712, 4251, 4669, 4667, 4797, 2]
+// Dependencies: [19, 1301, 21, 4285, 712, 4281, 4699, 4697, 4827, 2]
 
-// Module 5902 (HeaderActionButton)
+// Module 5929 (HeaderActionButton)
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -13,7 +13,7 @@ let c4;
 let c5;
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-let obj = { button: { flex: 1, alignItems: "center", justifyContent: "center", flexDirection: "row" }, text: null, buttonFont: null, buttonDisabled: null };
+let obj = { button: { alignSelf: "stretch", alignItems: "center", justifyContent: "center", flexDirection: "row" }, text: null, buttonFont: null, buttonDisabled: null };
 obj = { color: require("Themes").colors.TEXT_BRAND, textTransform: "capitalize" };
 obj[1] = obj;
 obj[2] = { fontSize: 16, maxWidth: 80 };
@@ -45,9 +45,9 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;
     obj[0] = items;
-    obj[3] = require(4669) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    obj[3] = require(4699) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
     obj[4] = text;
-    let tmp2 = callback(require(4251) /* Text */.Text, obj);
+    let tmp2 = callback(require(4281) /* Text */.Text, obj);
   } else if (null != IconComponent) {
     obj = { size: null };
     obj[0] = IconComponentSize;
@@ -57,7 +57,7 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
     obj[0] = source;
     obj[1] = imageStyle;
     obj[2] = iconSize;
-    tmp2 = callback(importDefault(4667), obj);
+    tmp2 = callback(importDefault(4697), obj);
   }
   const obj1 = { ref, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, accessibilityRole: "button", onPress: null, activeOpacity: 0.6, androidRippleConfig: null, style: null, disabled: null, children: null };
   if (accessibilityLabel == null) {
@@ -83,7 +83,7 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   obj1[10] = disabled;
   const items2 = [tmp2, icon];
   obj1[11] = items2;
-  return closure_5(require(4797) /* PressableBase */.PressableOpacity, obj1);
+  return closure_5(require(4827) /* PressableBase */.PressableOpacity, obj1);
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 

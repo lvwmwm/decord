@@ -1,9 +1,9 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15133
+// Function ID: 15134
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [19, 17, 1946, 1874, 14405, 676, 21, 4255, 712, 1297, 8075, 589, 15096, 8836, 8846, 698, 8843, 1416, 9029, 14406, 4768, 4251, 1851, 1236, 2]
+// Dependencies: [19, 17, 1975, 1903, 14442, 676, 21, 4285, 712, 1297, 8216, 589, 15134, 8865, 8875, 698, 8872, 1416, 9058, 14443, 4798, 4281, 1879, 1236, 2]
 
-// Module 15095 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15133 (HAPPENING_NOW_CONTENT_HEIGHT)
 import importAllResult from "HAPPENING_NOW_CARD_MARGIN_RIGHT";
 import get_ActivityIndicator from "getAvatarURL";
 import _getSystemLocale from "_getSystemLocale";

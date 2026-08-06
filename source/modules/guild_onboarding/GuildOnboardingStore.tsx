@@ -1,10 +1,10 @@
-// Module ID: 5191
-// Function ID: 5192
+// Module ID: 5221
+// Function ID: 5222
 // Name: shouldShowOnboarding
-// Dependencies: [676, 589, 1865, 709, 2]
+// Dependencies: [676, 589, 1894, 709, 2]
 // Exports: isOnboarding
 
-// Module 5191 (shouldShowOnboarding)
+// Module 5221 (shouldShowOnboarding)
 import { ME } from "ME";
 import { Store } from "initialize";
 
@@ -17,7 +17,7 @@ const prototype = GuildOnboardingStore.prototype;
 prototype["shouldShowOnboarding"] = function shouldShowOnboarding(c0) {
   let tmp = c0 !== ME;
   if (tmp) {
-    const obj = require(1865) /* getFavoritesAwareGuildName */;
+    const obj = require(1894) /* getFavoritesAwareGuildName */;
     tmp = !obj.isFavoritesGuildId(c0);
   }
   if (tmp) {

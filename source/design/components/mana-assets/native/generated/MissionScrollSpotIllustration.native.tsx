@@ -1,10 +1,10 @@
-// Module ID: 6412
-// Function ID: 6413
+// Module ID: 6439
+// Function ID: 6440
 // Name: MissionScrollSpotIllustration
-// Dependencies: [21, 5221, 6413, 2]
+// Dependencies: [21, 5251, 6440, 2]
 // Exports: MissionScrollSpotIllustration
 
-// Module 6412 (MissionScrollSpotIllustration)
+// Module 6439 (MissionScrollSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/MissionScrollSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const MissionScrollSpotIllustration = function MissionScrollSpotIllustrat
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6413);
+  obj[0] = importDefault(6440);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const MissionScrollSpotIllustration = function MissionScrollSpotIllustrat
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
 };

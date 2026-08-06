@@ -1,9 +1,9 @@
-// Module ID: 1945
-// Function ID: 1946
+// Module ID: 1974
+// Function ID: 1975
 // Name: combined
-// Dependencies: [1946, 676, 3867, 500, 2]
+// Dependencies: [1975, 676, 3896, 500, 2]
 
-// Module 1945 (combined)
+// Module 1974 (combined)
 import _getSystemLocale from "_getSystemLocale";
 import ME from "ME";
 
@@ -29,7 +29,7 @@ export default {
     return "https://creator-support.discord.com" + "/hc/" + _getSystemLocale.locale.toLowerCase() + "/articles/" + MEDIA_CHANNEL;
   },
   getTwitterURL() {
-    return importDefault(3867)(LocalizedLinks.TWITTER);
+    return importDefault(3896)(LocalizedLinks.TWITTER);
   },
   getCommunityURL() {
     return combined + "/hc/" + _getSystemLocale.locale.toLowerCase();

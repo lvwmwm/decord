@@ -1,10 +1,10 @@
-// Module ID: 8005
-// Function ID: 8006
+// Module ID: 8146
+// Function ID: 8147
 // Name: getInitialStringSelectOptions
-// Dependencies: [7999, 1906, 2]
+// Dependencies: [8140, 1935, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 8005 (getInitialStringSelectOptions)
+// Module 8146 (getInitialStringSelectOptions)
 import getInteractionComponentStates from "getInteractionComponentStates";
 
 const require = arg1;
@@ -16,7 +16,7 @@ export const getInitialStringSelectOptions = function getInitialStringSelectOpti
   if (interactionComponentState != null) {
     type = interactionComponentState.type;
   }
-  if (type === require(1906) /* PermissionOverwriteType */.ComponentType.STRING_SELECT) {
+  if (type === require(1935) /* PermissionOverwriteType */.ComponentType.STRING_SELECT) {
     let mapped = interactionComponentState.values;
   } else {
     const options = selectionActionComponent.options;

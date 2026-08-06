@@ -1,10 +1,10 @@
-// Module ID: 15847
-// Function ID: 15848
+// Module ID: 15887
+// Function ID: 15888
 // Name: MobileSurvey
-// Dependencies: [5, 19, 8343, 676, 21, 4255, 589, 698, 8344, 4683, 1236, 3952, 1297, 712, 10436, 2]
+// Dependencies: [5, 19, 8483, 676, 21, 4285, 589, 698, 8484, 4713, 1236, 3981, 1297, 712, 10467, 2]
 // Exports: default
 
-// Module 15847 (MobileSurvey)
+// Module 15887 (MobileSurvey)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";
@@ -123,8 +123,8 @@ export default function MobileSurvey() {
       obj[3] = stateFromStores(outer1_2[14]);
       return outer1_7(lib(outer1_2[12]).Icon, obj);
     };
-    tmp5 = jsx(stateFromStores(4683), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
-    const tmp8 = stateFromStores(4683);
+    tmp5 = jsx(stateFromStores(4713), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
+    const tmp8 = stateFromStores(4713);
   }
   return tmp5;
 };

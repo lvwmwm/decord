@@ -1,10 +1,10 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 7044
+// Function ID: 7045
 // Name: initialize
-// Dependencies: [1882, 1874, 12, 7018, 7019, 589, 709, 2]
+// Dependencies: [1911, 1903, 12, 7045, 7046, 589, 709, 2]
 // Exports: transformFriendSuggestions
 
-// Module 7017 (initialize)
+// Module 7044 (initialize)
 import createdAt from "createdAt";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
@@ -47,11 +47,11 @@ const friendSuggestionStore = new FriendSuggestionStore(require("dispatcher"), {
       if (flag2) {
         c6 = true;
         c7 = false;
-        const response = importDefault(7018).fetch();
-        const obj = importDefault(7018);
+        const response = importDefault(7045).fetch();
+        const obj = importDefault(7045);
       }
     } else {
-      importDefault(7019)();
+      importDefault(7046)();
     }
   },
   FRIEND_SUGGESTION_CREATE: function handleFriendSuggestionCreate(suggestion) {

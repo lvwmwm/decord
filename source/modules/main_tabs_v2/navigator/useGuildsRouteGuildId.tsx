@@ -1,14 +1,14 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15065
+// Function ID: 15066
 // Name: useGuildsRouteGuildId
 // Dependencies: [1481, 2]
 // Exports: default, useGuildsRouteGuildAndChannelId
 
-// Module 15027 (useGuildsRouteGuildId)
+// Module 15065 (useGuildsRouteGuildId)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
 
 export default function useGuildsRouteGuildId() {
-  const params = require(1481) /* Link */.useRoute().params;
+  const params = require(1481) /* createStandardNavigationFactories */.useRoute().params;
   let guildId;
   if (params != null) {
     guildId = params.guildId;
@@ -16,7 +16,7 @@ export default function useGuildsRouteGuildId() {
   return guildId;
 };
 export const useGuildsRouteGuildAndChannelId = function useGuildsRouteGuildAndChannelId() {
-  const route = require(1481) /* Link */.useRoute();
+  const route = require(1481) /* createStandardNavigationFactories */.useRoute();
   let guildId;
   if (route != null) {
     const params = route.params;

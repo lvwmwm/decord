@@ -1,10 +1,10 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8342
+// Function ID: 8343
 // Name: openMemberVerificationSuccessAlert
-// Dependencies: [19, 21, 1844, 4594, 8203, 1959, 8205, 8209, 4665, 1236, 8211, 8214, 8216, 2]
+// Dependencies: [19, 21, 1872, 4624, 8343, 1988, 8345, 8349, 4695, 1236, 8351, 8354, 8356, 2]
 // Exports: closeMemberVerificationAlert, openMemberVerificationCancelPendingAlert, openMemberVerificationIncompleteAlert, openMemberVerificationPendingAlert, openMemberVerificationRejectedAlert, openMemberVerificationSuccessAlert, openMemberVerificationUpdateAlert
 
-// Module 8202 (openMemberVerificationSuccessAlert)
+// Module 8342 (openMemberVerificationSuccessAlert)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ let result = require("dismissGlobalKeyboard").fileFinishedImporting("modules/gui
 export const openMemberVerificationSuccessAlert = function openMemberVerificationSuccessAlert(guildId, arg1) {
   let closure_0 = guildId;
   const importDefault = arg1;
-  let obj = importAll(1844);
+  let obj = importAll(1872);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -30,12 +30,12 @@ export const openMemberVerificationSuccessAlert = function openMemberVerificatio
       });
     }
   };
-  importDefault(4594).openLazy(obj);
+  importDefault(4624).openLazy(obj);
 };
 export const openMemberVerificationPendingAlert = function openMemberVerificationPendingAlert(guildId) {
   let closure_0 = guildId;
   const importDefault = arg1;
-  let obj = importAll(1844);
+  let obj = importAll(1872);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -57,7 +57,7 @@ export const openMemberVerificationPendingAlert = function openMemberVerificatio
       });
     }
   };
-  importDefault(4594).openLazy(obj);
+  importDefault(4624).openLazy(obj);
 };
 export const openMemberVerificationCancelPendingAlert = function openMemberVerificationCancelPendingAlert(arg0) {
   let dependencyMap;
@@ -65,7 +65,7 @@ export const openMemberVerificationCancelPendingAlert = function openMemberVerif
   let importDefault;
   let require;
   ({ guildId: require, confirmText: importDefault, subtitleText: importAll, onClose: dependencyMap } = arg0);
-  let obj = importAll(1844);
+  let obj = importAll(1872);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -89,7 +89,7 @@ export const openMemberVerificationCancelPendingAlert = function openMemberVerif
       });
     }
   };
-  importDefault(4594).openLazy(obj);
+  importDefault(4624).openLazy(obj);
 };
 export const openMemberVerificationRejectedAlert = function openMemberVerificationRejectedAlert(canWithdraw) {
   let onClose;
@@ -146,9 +146,9 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
     obj[0] = intl.string(tmp2(1236).t.BddRzS);
     obj[1] = fn;
   }
-  dependencyMap = jsx(onClose(4665).Button, obj);
-  let result = fn(1844).dismissGlobalKeyboard();
-  let obj3 = fn(1844);
+  dependencyMap = jsx(onClose(4695).Button, obj);
+  let result = fn(1872).dismissGlobalKeyboard();
+  let obj3 = fn(1872);
   const tmp = jsx;
   obj = {
     importer() {
@@ -171,10 +171,10 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
       });
     }
   };
-  onClose(4594).openLazy(obj);
+  onClose(4624).openLazy(obj);
 };
 export const openMemberVerificationUpdateAlert = function openMemberVerificationUpdateAlert() {
-  let obj = importAll(1844);
+  let obj = importAll(1872);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     importer() {
@@ -187,7 +187,7 @@ export const openMemberVerificationUpdateAlert = function openMemberVerification
       });
     }
   };
-  importDefault(4594).openLazy(obj);
+  importDefault(4624).openLazy(obj);
 };
 export function closeMemberVerificationAlert(arg0) {
   let closure_0 = arg0;
@@ -200,7 +200,7 @@ export function closeMemberVerificationAlert(arg0) {
 }
 export const openMemberVerificationIncompleteAlert = function openMemberVerificationIncompleteAlert(closure_0) {
   const importDefault = arg1;
-  let obj = importAll(1844);
+  let obj = importAll(1872);
   const result = obj.dismissGlobalKeyboard();
   obj = {
     isDismissable: true,
@@ -223,5 +223,5 @@ export const openMemberVerificationIncompleteAlert = function openMemberVerifica
       });
     }
   };
-  importDefault(4594).openLazy(obj);
+  importDefault(4624).openLazy(obj);
 };

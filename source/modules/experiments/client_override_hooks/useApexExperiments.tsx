@@ -1,10 +1,10 @@
-// Module ID: 10344
-// Function ID: 10345
+// Module ID: 10375
+// Function ID: 10376
 // Name: makeClientVariant
-// Dependencies: [32, 19, 1212, 7988, 4177, 1453, 10345, 589, 2]
+// Dependencies: [32, 19, 1212, 8129, 4207, 1453, 10376, 589, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 10344 (makeClientVariant)
+// Module 10375 (makeClientVariant)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import initialize from "initialize";
@@ -13,7 +13,7 @@ let c3;
 let c4;
 const require = arg1;
 function makeClientVariant(id) {
-  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: require(7988) /* create */.Variation_Type.UNSPECIFIED };
+  return { id, label: "Variant " + id, shortLabel: "Variant " + id, type: require(8129) /* create */.Variation_Type.UNSPECIFIED };
 }
 function mergeApexExperiments(experimentsMetadata, registeredExperiments) {
   let _slicedToArray;

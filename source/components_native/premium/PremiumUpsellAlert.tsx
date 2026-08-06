@@ -1,9 +1,9 @@
-// Module ID: 8583
-// Function ID: 8584
+// Module ID: 8612
+// Function ID: 8613
 // Name: PremiumUpsellItem
-// Dependencies: [32, 19, 17, 1304, 1874, 676, 7555, 1876, 21, 4255, 712, 3967, 4251, 6805, 1236, 3901, 8146, 8147, 4191, 4101, 8584, 8585, 8586, 8587, 8136, 8588, 8589, 8590, 8591, 589, 5635, 8592, 8145, 1474, 5595, 5615, 4681, 698, 8593, 4150, 4683, 1297, 5221, 8594, 8595, 8149, 2]
+// Dependencies: [32, 19, 17, 1304, 1903, 676, 7583, 1905, 21, 4285, 712, 3996, 4281, 6832, 1236, 3930, 8286, 8287, 4221, 4130, 8613, 8614, 8615, 8616, 8276, 8617, 8618, 8619, 8620, 589, 5689, 8621, 8285, 1474, 5649, 5669, 4711, 698, 8622, 4180, 4713, 1297, 5251, 8623, 8624, 8289, 2]
 
-// Module 8583 (PremiumUpsellItem)
+// Module 8612 (PremiumUpsellItem)
 import usePremiumUpsellConfig from "usePremiumUpsellConfig";
 import importAllResult from "AccessibilityAnnouncer";
 import get_ActivityIndicator from "registerAsset";
@@ -55,7 +55,7 @@ function GlobalEmojiUpsell(arg0) {
   let alertWidth;
   let useTier0Description;
   ({ alertWidth, useTier0Description } = arg0);
-  let obj = require(6805) /* usePremiumTrialOffer */;
+  let obj = require(6832) /* usePremiumTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let sku_id;
   if (premiumTrialOffer != null) {
@@ -70,7 +70,7 @@ function GlobalEmojiUpsell(arg0) {
     if (TIER_0.TIER_0 === sku_id) {
       const intl3 = tmp(1236).intl;
       obj = { planName: null };
-      let tmpResult = tmp(3901);
+      let tmpResult = tmp(3930);
       obj[0] = tmpResult.getPremiumTypeDisplayName(closure_13.TIER_0);
       let formatResult1 = intl3.format(tmp(1236).t["1P7x8p"], obj);
     } else {
@@ -78,7 +78,7 @@ function GlobalEmojiUpsell(arg0) {
       if (tmp8.TIER_2 === sku_id) {
         const intl5 = tmp(1236).intl;
         obj = { planName: null };
-        tmpResult = tmp(3901);
+        tmpResult = tmp(3930);
         obj[0] = tmpResult.getPremiumTypeDisplayName(closure_13.TIER_2);
         formatResult1 = intl5.format(tmp(1236).t["1P7x8p"], obj);
       }
@@ -88,13 +88,13 @@ function GlobalEmojiUpsell(arg0) {
     if (useTier0Description) {
       const intl2 = tmp(1236).intl;
       const obj1 = { planName: null };
-      obj1[0] = tmp(3901).getPremiumTypeDisplayName(closure_13.TIER_0);
+      obj1[0] = tmp(3930).getPremiumTypeDisplayName(closure_13.TIER_0);
       formatResult1 = intl2.format(tmp(1236).t.kWBwlJ, obj1);
-      const tmpResult1 = tmp(3901);
+      const tmpResult1 = tmp(3930);
     }
   }
   const obj2 = { alertWidth, upsellItem: null };
-  const obj3 = { image: importDefault(8146), title: null, description: null };
+  const obj3 = { image: importDefault(8286), title: null, description: null };
   const intl4 = tmp(1236).intl;
   obj3[1] = intl4.string(require(1236) /* getSystemLocale */.t.UNtcBV);
   obj3[2] = formatResult1;
@@ -103,7 +103,7 @@ function GlobalEmojiUpsell(arg0) {
 }
 function AnimatedEmojiUpsell(alertWidth) {
   let obj = { alertWidth: alertWidth.alertWidth, upsellItem: null };
-  obj = { image: importDefault(8147), title: null, description: null };
+  obj = { image: importDefault(8287), title: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.F6rmyq);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -111,9 +111,9 @@ function AnimatedEmojiUpsell(alertWidth) {
   const t = require(1236) /* getSystemLocale */.t;
   if (alertWidth.useTier0Description) {
     obj = { planName: null };
-    obj[0] = require(3901) /* getPremiumPlanItem */.getPremiumTypeDisplayName(closure_13.TIER_0);
+    obj[0] = require(3930) /* getPremiumPlanItem */.getPremiumTypeDisplayName(closure_13.TIER_0);
     let formatResult = format(t["1a36ee"], obj);
-    const tmp4Result = require(3901) /* getPremiumPlanItem */;
+    const tmp4Result = require(3930) /* getPremiumPlanItem */;
   } else {
     formatResult = format(t.JxTzzb, {});
   }
@@ -122,16 +122,16 @@ function AnimatedEmojiUpsell(alertWidth) {
   return closure_14(PremiumUpsellItem, obj);
 }
 function PremiumGuildIdentityUpsell(alertWidth) {
-  let obj = require(4255) /* createCacheKey */;
+  let obj = require(4285) /* createCacheKey */;
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(createCacheKey);
   obj = { alertWidth: alertWidth.alertWidth, imageStyle: legacyClassComponentStyles.largerUpsellImage, upsellItem: null };
-  const tmp5 = importDefault(4191)();
+  const tmp5 = importDefault(4221)();
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8584);
+    let tmp4Result = tmp4(8613);
   } else {
-    tmp4Result = tmp4(8585);
+    tmp4Result = tmp4(8614);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1236).intl;
@@ -142,9 +142,9 @@ function PremiumGuildIdentityUpsell(alertWidth) {
   return tmp6(tmp7, obj);
 }
 function CustomProfilesUpsell(alertWidth) {
-  let obj = require(4255) /* createCacheKey */;
+  let obj = require(4285) /* createCacheKey */;
   obj = { alertWidth: alertWidth.alertWidth, imageStyle: obj.useLegacyClassComponentStyles(createCacheKey).customProfileUpsellImage, upsellItem: null };
-  obj = { image: importDefault(8586), title: null, description: null };
+  obj = { image: importDefault(8615), title: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.rTY76D);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -154,10 +154,10 @@ function CustomProfilesUpsell(alertWidth) {
 }
 function CustomAppIconsUpsell(alertWidth) {
   let iconSource = alertWidth.imageSource;
-  let obj = require(4255) /* createCacheKey */;
+  let obj = require(4285) /* createCacheKey */;
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(createCacheKey);
   const arr = getIcons();
-  const tmp4 = importDefault(4191)();
+  const tmp4 = importDefault(4221)();
   obj = { alertWidth: alertWidth.alertWidth, imageStyle: null, upsellItem: null };
   const items = [legacyClassComponentStyles.customAppIconsUpsellImage, ];
   let prop;
@@ -179,7 +179,7 @@ function CustomAppIconsUpsell(alertWidth) {
 }
 function GlobalStickerUpsell(alertWidth) {
   let obj = { alertWidth: alertWidth.alertWidth, upsellItem: null };
-  obj = { image: importDefault(8587), title: null, description: null };
+  obj = { image: importDefault(8616), title: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.jn2mBl);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -187,9 +187,9 @@ function GlobalStickerUpsell(alertWidth) {
   const t = require(1236) /* getSystemLocale */.t;
   if (alertWidth.useTier0Description) {
     obj = { planName: null };
-    obj[0] = require(3901) /* getPremiumPlanItem */.getPremiumTypeDisplayName(closure_13.TIER_0);
+    obj[0] = require(3930) /* getPremiumPlanItem */.getPremiumTypeDisplayName(closure_13.TIER_0);
     let formatResult = format(t["8C+FZk"], obj);
-    const tmp4Result = require(3901) /* getPremiumPlanItem */;
+    const tmp4Result = require(3930) /* getPremiumPlanItem */;
   } else {
     formatResult = format(t["0qJYHK"], {});
   }
@@ -198,17 +198,17 @@ function GlobalStickerUpsell(alertWidth) {
   return closure_14(PremiumUpsellItem, obj);
 }
 function LongerMessageUpsell(alertWidth) {
-  let obj = require(4255) /* createCacheKey */;
+  let obj = require(4285) /* createCacheKey */;
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(createCacheKey);
   obj = { alertWidth: alertWidth.alertWidth, imageStyle: legacyClassComponentStyles.largerUpsellImage, upsellItem: null };
-  const tmp5 = importDefault(4191)();
-  const tmp6 = importDefault(8136)();
+  const tmp5 = importDefault(4221)();
+  const tmp6 = importDefault(8276)();
   const tmp7 = closure_14;
   const tmp8 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8588);
+    let tmp4Result = tmp4(8617);
   } else {
-    tmp4Result = tmp4(8589);
+    tmp4Result = tmp4(8618);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1236).intl;
@@ -219,16 +219,16 @@ function LongerMessageUpsell(alertWidth) {
   return tmp7(tmp8, obj);
 }
 function GuildCapUpsell(alertWidth) {
-  let obj = require(4255) /* createCacheKey */;
+  let obj = require(4285) /* createCacheKey */;
   const legacyClassComponentStyles = obj.useLegacyClassComponentStyles(createCacheKey);
   obj = { alertWidth: alertWidth.alertWidth, imageStyle: legacyClassComponentStyles.largerUpsellImage, upsellItem: null };
-  const tmp5 = importDefault(4191)();
+  const tmp5 = importDefault(4221)();
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8590);
+    let tmp4Result = tmp4(8619);
   } else {
-    tmp4Result = tmp4(8591);
+    tmp4Result = tmp4(8620);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1236).intl;
@@ -259,7 +259,7 @@ function UploadUpsell(arg0) {
       obj = { dataSavingMode };
       const result = obj.updatedUnsyncedSettings(obj);
     };
-    tmp6Result = callback2(tmp(5635).TableSwitchRow, obj);
+    tmp6Result = callback2(tmp(5689).TableSwitchRow, obj);
   }
   children[1] = tmp6Result;
   return closure_15(closure_16, { children });
@@ -484,8 +484,8 @@ UpsellItem.prototype["render"] = function render() {
     passiveTitle = activeTitle;
   }
   obj[3] = passiveTitle;
-  items1[1] = callback2(require(4251) /* Text */.Text, obj);
-  items1[2] = callback2(require(4251) /* Text */.Text, { style: tmp.upsellDescription, variant: "text-sm/medium", children: description });
+  items1[1] = callback2(require(4281) /* Text */.Text, obj);
+  items1[2] = callback2(require(4281) /* Text */.Text, { style: tmp.upsellDescription, variant: "text-sm/medium", children: description });
   obj[1] = items1;
   return closure_15(closure_5, obj);
 };

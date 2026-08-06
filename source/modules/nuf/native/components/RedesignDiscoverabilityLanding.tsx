@@ -1,10 +1,10 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 16418
+// Function ID: 16419
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4255, 712, 1581, 5220, 4251, 1236, 5221, 11989, 11919, 4665, 2]
+// Dependencies: [19, 17, 21, 4285, 712, 1609, 5250, 4281, 1236, 5251, 12023, 11953, 4695, 2]
 // Exports: default
 
-// Module 16378 (RedesignDiscoverabilityLanding)
+// Module 16418 (RedesignDiscoverabilityLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,8 +37,8 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const tmp = createCacheKey();
   let obj = { style: tmp.container, alwaysBounceVertical: false, contentContainerStyle: null, children: null };
   obj = { flexGrow: 2, paddingTop: null, paddingBottom: null, paddingHorizontal: null };
-  obj[1] = require(5220) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + 32;
-  obj[2] = importDefault(1581)().bottom + 16;
+  obj[1] = require(5250) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT + 32;
+  obj[2] = importDefault(1609)().bottom + 16;
   obj[3] = importDefault(712).space.PX_16;
   obj[2] = obj;
   obj = { style: tmp.topContainer };
@@ -46,14 +46,14 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t.n8nw6j);
-  items[1] = callback(require(4251) /* Text */.Text, obj1);
+  items[1] = callback(require(4281) /* Text */.Text, obj1);
   const obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.subtitle, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[3] = intl2.string(require(1236) /* getSystemLocale */.t.KMW0kP);
-  items[2] = callback(require(4251) /* Text */.Text, obj2);
+  items[2] = callback(require(4281) /* Text */.Text, obj2);
   const obj3 = { resizeMode: "contain", style: tmp.image, source: null };
-  obj3[2] = importDefault(11989);
-  items[3] = callback(importDefault(5221), obj3);
+  obj3[2] = importDefault(12023);
+  items[3] = callback(importDefault(5251), obj3);
   const obj4 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const items1 = [intl3.string(require(1236) /* getSystemLocale */.t.ci12MJ), " ", ];
@@ -61,19 +61,19 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   items1[2] = intl4.format(require(1236) /* getSystemLocale */.t.VcSQ4n, {
     learnMoreHook(arg0, arg1) {
       const obj = { onPress: null, variant: "text-sm/medium", color: "text-link", children: null };
-      obj[0] = callback(11919).handleOpenLearnMoreLink;
+      obj[0] = callback(11953).handleOpenLearnMoreLink;
       obj[3] = arg0;
-      return callback2(callback(4251).Text, obj, arg1);
+      return callback2(callback(4281).Text, obj, arg1);
     }
   });
   obj4[3] = items1;
-  items[4] = callback2(require(4251) /* Text */.Text, obj4);
+  items[4] = callback2(require(4281) /* Text */.Text, obj4);
   items[5] = callback(closure_3, { style: tmp.growContainer });
   const obj7 = { variant: "primary", size: "lg", text: null, onPress: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj7[2] = intl5.string(require(1236) /* getSystemLocale */.t.gHPk3I);
   obj7[3] = onNext.onNext;
-  items[6] = callback(require(4665) /* Button */.Button, obj7);
+  items[6] = callback(require(4695) /* Button */.Button, obj7);
   obj[3] = items;
   return callback2(closure_4, obj);
 };

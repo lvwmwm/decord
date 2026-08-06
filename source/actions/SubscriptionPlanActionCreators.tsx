@@ -1,10 +1,10 @@
-// Module ID: 5771
-// Function ID: 5772
+// Module ID: 5798
+// Function ID: 5799
 // Name: fetchSubscriptionPlansForSKU
-// Dependencies: [5, 3903, 676, 1876, 709, 4574, 530, 3916, 3924, 2]
+// Dependencies: [5, 3932, 676, 1905, 709, 4604, 530, 3945, 3953, 2]
 // Exports: fetchPremiumSubscriptionPlans, fetchSubscriptionPlansBySKUs, resetSubscriptionPlanData
 
-// Module 5771 (fetchSubscriptionPlansForSKU)
+// Module 5798 (fetchSubscriptionPlansForSKU)
 import _deletePaymentSource from "_deletePaymentSource";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import { Endpoints } from "ME";

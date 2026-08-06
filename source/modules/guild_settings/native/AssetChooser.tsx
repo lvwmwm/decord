@@ -1,9 +1,9 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16507
+// Function ID: 16508
 // Name: getSource
-// Dependencies: [5, 19, 17, 676, 21, 4255, 712, 3967, 4811, 4797, 1236, 16468, 16469, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4285, 712, 3996, 4841, 4827, 1236, 16508, 16509, 1297, 2]
 
-// Module 16467 (getSource)
+// Module 16507 (getSource)
 import closure_3 from "createCacheKey";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
@@ -142,7 +142,7 @@ prototype["render"] = function render() {
   obj[4] = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = importDefault(16468);
+    tmp9 = importDefault(16508);
   }
   obj = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
@@ -151,13 +151,13 @@ prototype["render"] = function render() {
     obj[0] = tmp.uploadIconWrapper;
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(16469);
+    obj1[1] = importDefault(16509);
     obj[1] = tmp5(closure_5, obj1);
     tmp5Result = tmp5(closure_4, obj);
   }
   obj[2] = tmp5Result;
   obj[5] = closure_9(closure_6, obj);
-  const children = [closure_9(require(4797) /* PressableBase */.PressableOpacity, obj), ];
+  const children = [closure_9(require(4827) /* PressableBase */.PressableOpacity, obj), ];
   tmp5Result = null;
   if (null != source) {
     tmp5Result = null;

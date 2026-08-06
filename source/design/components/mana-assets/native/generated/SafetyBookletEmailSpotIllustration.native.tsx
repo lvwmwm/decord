@@ -1,10 +1,10 @@
-// Module ID: 6564
-// Function ID: 6565
+// Module ID: 6591
+// Function ID: 6592
 // Name: SafetyBookletEmailSpotIllustration
-// Dependencies: [21, 5221, 6565, 2]
+// Dependencies: [21, 5251, 6592, 2]
 // Exports: SafetyBookletEmailSpotIllustration
 
-// Module 6564 (SafetyBookletEmailSpotIllustration)
+// Module 6591 (SafetyBookletEmailSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SafetyBookletEmailSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const SafetyBookletEmailSpotIllustration = function SafetyBookletEmailSpo
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6565);
+  obj[0] = importDefault(6592);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const SafetyBookletEmailSpotIllustration = function SafetyBookletEmailSpo
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5221), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
 };

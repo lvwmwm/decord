@@ -1,10 +1,10 @@
-// Module ID: 9327
-// Function ID: 9328
+// Module ID: 9356
+// Function ID: 9357
 // Name: usePreviewCollectibleProduct
-// Dependencies: [32, 19, 6900, 1899, 6901, 6902, 9263, 1901, 8047, 2]
+// Dependencies: [32, 19, 6927, 1928, 6928, 6929, 9292, 1930, 8188, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 9327 (usePreviewCollectibleProduct)
+// Module 9356 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { isAvatarDecorationRecord } from "fromServer";
@@ -19,7 +19,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(9263).useShopProductItems(product);
+  const shopProductItems = _require(9292).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
@@ -83,7 +83,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
       }
       return () => {
         if (closure_1) {
-          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "PX_8", profileEffect: "accessible", nameplate: "Boolean", profileFrame: "Symbol" });
+          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "Date", profileEffect: "isArray", nameplate: "isArray", profileFrame: "ty" });
           const obj = outer1_0(outer1_1[8]);
         }
       };

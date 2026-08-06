@@ -1,10 +1,10 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 9286
+// Function ID: 9287
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 5744, 8089, 9258, 589, 6976, 6988, 12, 2]
+// Dependencies: [19, 5771, 8230, 9287, 589, 7003, 7015, 12, 2]
 // Exports: default
 
-// Module 9257 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 9286 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import noop from "noop";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 
@@ -65,8 +65,8 @@ export default function useDisplayProfileSocialLayerStorefrontApplicationIds(use
         let tmp8 = item10011;
         if (item10011 instanceof _undefined(usersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds[5]).BaseGameWidget) {
           let games = tmp5.games;
-          let item = games.forEach((applicationId) => {
-            const applicationIdFromDetectableId = outer1_4.getApplicationIdFromDetectableId(applicationId.applicationId);
+          let item = games.forEach((gameId) => {
+            const applicationIdFromDetectableId = outer1_4.getApplicationIdFromDetectableId(gameId.gameId);
             if (null != applicationIdFromDetectableId) {
               set.add(applicationIdFromDetectableId);
             }

@@ -1,10 +1,10 @@
-// Module ID: 4488
-// Function ID: 4489
+// Module ID: 4518
+// Function ID: 4519
 // Name: isMentioned
-// Dependencies: [1372, 1942, 1862, 2]
+// Dependencies: [1372, 1971, 1891, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4488 (isMentioned)
+// Module 4518 (isMentioned)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

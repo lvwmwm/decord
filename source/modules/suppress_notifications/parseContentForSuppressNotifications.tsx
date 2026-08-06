@@ -1,10 +1,10 @@
-// Module ID: 7037
-// Function ID: 7038
+// Module ID: 7064
+// Function ID: 7065
 // Name: regExp
 // Dependencies: [2]
 // Exports: default
 
-// Module 7037 (regExp)
+// Module 7064 (regExp)
 const regExp = new RegExp("^" + "@silent" + "(\\s|$)");
 const result = require("set").fileFinishedImporting("modules/suppress_notifications/parseContentForSuppressNotifications.tsx");
 

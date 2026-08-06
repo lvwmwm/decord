@@ -1,10 +1,10 @@
-// Module ID: 13982
-// Function ID: 13983
+// Module ID: 14019
+// Function ID: 14020
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [17, 1874, 7864, 676, 21, 700, 8293, 705, 589, 3868, 13983, 1236, 3837, 10333, 13985, 2]
+// Dependencies: [17, 1903, 8005, 676, 21, 700, 8433, 705, 589, 3897, 14020, 1236, 3866, 10364, 14022, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 13982 (useIsHarvestRequestDisabled)
+// Module 14019 (useIsHarvestRequestDisabled)
 import { ActivityIndicator } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -19,12 +19,12 @@ function useIsHarvestRequestDisabled() {
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require(589) /* initialize */;
   const tmp = require;
-  let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3868) /* isIterable */.shallow);
+  let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3897) /* isIterable */.shallow);
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
-      harvestDisabledResult = tmp(13983).harvestDisabled(tmp4, stateFromStores);
-      const tmpResult = tmp(13983);
+      harvestDisabledResult = tmp(14020).harvestDisabled(tmp4, stateFromStores);
+      const tmpResult = tmp(14020);
     }
     tmp6 = harvestDisabledResult;
   }
@@ -40,13 +40,13 @@ obj = {
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useTrailing: function useHarvestRequestSettingTrailing() {
     let tmp = null;
-    if (callback((isRequesting) => isRequesting.isRequesting, require(3868) /* isIterable */.shallow)) {
+    if (callback((isRequesting) => isRequesting.isRequesting, require(3897) /* isIterable */.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;
   },
   useDescription: function useRequestYourDataSettingDescription() {
-    const tmp3 = callback((harvestRequest) => harvestRequest.harvestRequest, require(3868) /* isIterable */.shallow);
+    const tmp3 = callback((harvestRequest) => harvestRequest.harvestRequest, require(3897) /* isIterable */.shallow);
     currentUser = currentUser.getCurrentUser();
     if (null == currentUser) {
       return null;
@@ -56,9 +56,9 @@ obj = {
     } else if (null == tmp3) {
       return null;
     } else {
-      const addResult = importDefault(3837)(tmp3.created_at).add(closure_5, "days");
+      const addResult = importDefault(3866)(tmp3.created_at).add(closure_5, "days");
       let formatToPlainStringResult = null;
-      if (!addResult.isBefore(importDefault(3837)())) {
+      if (!addResult.isBefore(importDefault(3866)())) {
         const intl = tmp(1236).intl;
         const obj = { date: null };
         obj[0] = addResult.format("MMMM Do YYYY");
@@ -73,12 +73,12 @@ obj = {
     const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
     const obj = require(589) /* initialize */;
     const tmp = require;
-    let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3868) /* isIterable */.shallow);
+    let harvestDisabledResult = callback((isRequesting) => isRequesting.isRequesting, require(3897) /* isIterable */.shallow);
     let tmp6 = null == stateFromStores;
     if (!tmp6) {
       if (!harvestDisabledResult) {
-        harvestDisabledResult = tmp(13983).harvestDisabled(tmp4, stateFromStores);
-        const tmpResult = tmp(13983);
+        harvestDisabledResult = tmp(14020).harvestDisabled(tmp4, stateFromStores);
+        const tmpResult = tmp(14020);
       }
       tmp6 = harvestDisabledResult;
     }
@@ -97,7 +97,7 @@ obj = {
 obj = {
   route: UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(13985).default;
+    return require(14022).default;
   }
 };
 const route = createToggle.createRoute(obj);
@@ -105,7 +105,7 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default route;
 export const fetchHarvestStatus = function fetchHarvestStatus() {
-  const harvestStatus = require(8293) /* saveProfileAndAccountRequest */.getHarvestStatus();
+  const harvestStatus = require(8433) /* saveProfileAndAccountRequest */.getHarvestStatus();
   harvestStatus.then((arg0) => {
     const callback = arg0;
     callback(705).batchUpdates(() => {

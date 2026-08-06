@@ -1,14 +1,14 @@
-// Module ID: 11527
-// Function ID: 11528
+// Module ID: 11561
+// Function ID: 11562
 // Name: memoResult1
-// Dependencies: [19, 17, 11528, 676, 21, 4255, 4448, 1348, 1231, 11525, 1236, 4210, 7644, 11529, 4116, 7791, 4799, 8174, 1474, 1581, 11536, 4265, 4102, 10884, 3967, 4648, 11537, 10202, 2]
+// Dependencies: [19, 17, 11562, 676, 21, 4285, 4478, 1348, 1231, 11559, 1236, 4240, 7672, 11563, 4145, 7932, 4829, 8314, 1474, 1609, 11570, 4295, 4131, 10916, 3996, 4678, 11571, 10233, 2]
 
-// Module 11527 (memoResult1)
+// Module 11561 (memoResult1)
 import importAllResult from "useSafeAreaInsets";
 import { Platform } from "useGradientBottom";
 import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes";
 import ME from "ME";
-import jsxProd from "module_4265";
+import jsxProd from "module_4295";
 import createCacheKey from "createCacheKey";
 
 let c4;
@@ -22,8 +22,8 @@ let c3 = importAllResult;
 let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "hidden", paddingTop: CONTROLS_DRAWER_HEADER_SIZE }, gradientWrapper: { position: "absolute", top: CONTROLS_DRAWER_HEADER_SIZE, left: 0 }, titleBlur: { opacity: 0 } });
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
-  const windowDimensions = importAllResult.useContext(importDefault(11529)).windowDimensions;
-  let obj = windowDimensions(4116);
+  const windowDimensions = importAllResult.useContext(importDefault(11563)).windowDimensions;
+  let obj = windowDimensions(4145);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };
@@ -34,8 +34,8 @@ let closure_10 = importAllResult.memo(() => {
   obj = { style: items, children: null };
   items = [callback2().gradientWrapper, animatedStyle];
   const tmp = callback2();
-  obj[1] = callback(importDefault(4799), { absolute: true });
-  return callback(importDefault(7791), obj);
+  obj[1] = callback(importDefault(4829), { absolute: true });
+  return callback(importDefault(7932), obj);
 });
 const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
   const callback = importAllResult.useCallback(() => {
@@ -46,17 +46,17 @@ const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
     let obj = { accessibilityLabel: null, icon: null, onPress: null };
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
-    obj[1] = tmp(4210);
+    obj[1] = tmp(4240);
     obj[2] = callback;
-    let tmp5Result = tmp5(tmp(11525), obj);
-    const tmpResult = tmp(11525);
+    let tmp5Result = tmp5(tmp(11559), obj);
+    const tmpResult = tmp(11559);
   } else {
     obj = { accessibilityLabel: null, icon: null, onPress: null, variant: "primary-overlay" };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[0] = intl.string(require(1236) /* getSystemLocale */.t["5MstTl"]);
-    obj[1] = tmp(4210);
+    obj[1] = tmp(4240);
     obj[2] = callback;
-    tmp5Result = tmp5(require(7644) /* IconButton */.IconButton, obj);
+    tmp5Result = tmp5(require(7672) /* IconButton */.IconButton, obj);
   }
   return tmp5Result;
 });

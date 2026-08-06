@@ -1,9 +1,9 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 12989
+// Function ID: 12990
 // Name: noop
-// Dependencies: [706, 4302, 4315, 687, 4354, 584, 3, 4330, 12953, 500, 38, 2]
+// Dependencies: [706, 4332, 4345, 687, 4384, 584, 3, 4360, 12990, 500, 38, 2]
 
-// Module 12952 (noop)
+// Module 12989 (noop)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import DesktopSources from "DesktopSources";
@@ -73,13 +73,13 @@ prototype["createWebSocket"] = function createWebSocket() {
     logger2.error("Connect called with already existing websocket");
     self.cleanupWebSocket((close) => close.close(4000));
   }
-  let obj = self(4330);
+  let obj = self(4360);
   self.connectionStartTime = obj.now();
   self.helloTimeout = setTimeout(() => {
     self.handleClose(false, 0, "The connection timed out after " + self(outer1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: _detectH265HardwareDecode.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(12953).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(12990).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {
@@ -312,7 +312,7 @@ prototype["sendBinary"] = function sendBinary(MLS_COMMIT_WELCOME, uint8Array) {
 };
 prototype["doResumeOrClose"] = function doResumeOrClose() {
   const self = this;
-  const obj = require(4330) /* sleep */;
+  const obj = require(4360) /* sleep */;
   const nowResult = obj.now();
   if (null !== this.serverId) {
     if (null !== self.channelId) {
@@ -387,7 +387,7 @@ prototype["handleHello"] = function handleHello(d) {
     tmp = require;
     const tmp2 = dependencyMap;
   }
-  const diff = tmp4(4330).now() - self.connectionStartTime;
+  const diff = tmp4(4360).now() - self.connectionStartTime;
   ({ logger, heartbeatInterval } = self);
   if (heartbeatInterval == null) {
     heartbeatInterval = "??";
@@ -404,7 +404,7 @@ prototype["handleReady"] = function handleReady(experiments) {
   const self = this;
   const backoff = this.backoff;
   backoff.succeed();
-  const obj = require(4330) /* sleep */;
+  const obj = require(4360) /* sleep */;
   const logger = this.logger;
   logger.info("[READY] took " + obj.now() - this.connectionStartTime + " ms");
   if (this.serverVersion >= 6) {
@@ -567,9 +567,9 @@ prototype["handleHeartbeatAck"] = function handleHeartbeatAck(d) {
   if (this.serverVersion >= 8) {
     t = d.t;
   }
-  const obj = require(4330) /* sleep */;
+  const obj = require(4360) /* sleep */;
   self.emit(obj.Ping, obj.now() - t);
-  self.lastHeartbeatAckTime = require(4330) /* sleep */.now();
+  self.lastHeartbeatAckTime = require(4360) /* sleep */.now();
   self.heartbeatAck = true;
   if (null !== self.expeditedHeartbeatTimeout) {
     const _clearTimeout = clearTimeout;
@@ -619,14 +619,14 @@ prototype["sendHeartbeat"] = function sendHeartbeat() {
     const _HermesInternal = HermesInternal;
     logger2.info("Sending heartbeat with last received sequence number: " + num);
     let obj = { t: null, seq_ack: null };
-    obj[0] = require(4330) /* sleep */.now();
+    obj[0] = require(4360) /* sleep */.now();
     obj[1] = num;
     self.send(obj.HEARTBEAT, obj);
-    const obj3 = require(4330) /* sleep */;
+    const obj3 = require(4360) /* sleep */;
   } else {
     const logger = self.logger;
     logger.info("Sending heartbeat");
-    obj = require(4330) /* sleep */;
+    obj = require(4360) /* sleep */;
     self.send(obj.HEARTBEAT, obj.now());
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 10218
-// Function ID: 10219
+// Module ID: 10249
+// Function ID: 10250
 // Name: useSafeAreaBottomKeyboardInfoController
-// Dependencies: [19, 1577, 500, 1593, 1594, 1477, 1595, 4116, 1843, 2]
+// Dependencies: [19, 1605, 500, 1621, 1622, 1477, 1623, 4145, 1871, 2]
 // Exports: default
 
-// Module 10218 (useSafeAreaBottomKeyboardInfoController)
+// Module 10249 (useSafeAreaBottomKeyboardInfoController)
 import noop from "noop";
 import isMetaQuest from "isMetaQuest";
 

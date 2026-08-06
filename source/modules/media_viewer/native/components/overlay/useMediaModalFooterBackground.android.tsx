@@ -1,19 +1,19 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12164
+// Function ID: 12165
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 689, 3959, 712, 2]
+// Dependencies: [32, 689, 3988, 712, 2]
 // Exports: default
 
-// Module 12130 (useMediaModalFooterBackground)
+// Module 12164 (useMediaModalFooterBackground)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
 const result = require("map").fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
 
 export default function useMediaModalFooterBackground() {
-  let mediaModalFooterBackgroundColorRgba = require(3959) /* map */;
+  let mediaModalFooterBackgroundColorRgba = require(3988) /* map */;
   const tmp = importDefault(689);
   const tmp2 = callback(importDefault(689)(mediaModalFooterBackgroundColorRgba.useToken(importDefault(712).colors.THEME_LOCKED_BLUR_FALLBACK)).rgba(), 4);
   mediaModalFooterBackgroundColorRgba = { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] };
-  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "Array" };
+  return { mediaModalFooterBackgroundColorRgba, MediaModalFooterUnderlay: "r" };
 };

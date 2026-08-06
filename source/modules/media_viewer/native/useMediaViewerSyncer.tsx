@@ -1,10 +1,10 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 8786
+// Function ID: 8787
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 8758, 500, 4116, 8759, 1581, 8741, 8760, 8740, 4664, 2]
+// Dependencies: [32, 19, 8787, 500, 4145, 8788, 1609, 8770, 8789, 8769, 4694, 2]
 // Exports: useMediaViewerSyncer
 
-// Module 8757 (useMediaViewerSyncer)
+// Module 8786 (useMediaViewerSyncer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import THUMBNAIL_MARGIN from "THUMBNAIL_MARGIN";
