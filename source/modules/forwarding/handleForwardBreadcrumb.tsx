@@ -1,10 +1,10 @@
-// Module ID: 11256
-// Function ID: 11257
+// Module ID: 11271
+// Function ID: 11272
 // Name: _handleForwardBreadcrumb
-// Dependencies: [5, 1372, 1891, 676, 5877, 5215, 698, 5786, 2]
+// Dependencies: [5, 1372, 1891, 676, 5896, 5231, 698, 5805, 2]
 // Exports: default
 
-// Module 11256 (_handleForwardBreadcrumb)
+// Module 11271 (_handleForwardBreadcrumb)
 import showTooManyUserGuildsAlert from "showTooManyUserGuildsAlert";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

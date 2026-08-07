@@ -1,11 +1,11 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5342
+// Function ID: 5343
 // Name: _setEnabled
-// Dependencies: [5, 3895, 500, 5327, 2]
+// Dependencies: [5, 5343, 3912, 500, 5345, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5326 (_setEnabled)
-import asyncGeneratorStep from "asyncGeneratorStep";
+// Module 5342 (_setEnabled)
+import closure_3 from "set";
 import set from "set";
 import set from "set";
 
@@ -48,7 +48,7 @@ function _setEnabled() {
               c2 = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_4;
+              obj1[0] = outer1_5;
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -121,7 +121,7 @@ function _setLearnedWords() {
               c2 = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_4;
+              obj1[0] = outer1_5;
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -169,7 +169,7 @@ function _isMisspelled() {
         flag = false;
       }
       yield "PX_8";
-      misspelled = yield c4;
+      misspelled = yield c5;
       let isMisspelledResult = null != misspelled;
       if (isMisspelledResult) {
         isMisspelledResult = misspelled.isMisspelled(closure_0, flag);
@@ -251,7 +251,7 @@ function _getCorrections() {
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = closure_4;
+              obj2[0] = c5;
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -302,7 +302,7 @@ function _getCachedMisspelling() {
         num11 = 5;
       }
       yield "PX_8";
-      cachedMisspelling = yield c4;
+      cachedMisspelling = yield closure_5;
       if (null == cachedMisspelling) {
         const obj4 = { misspelledWord: "", corrections: null };
         obj4[1] = [];
@@ -365,7 +365,7 @@ function _replaceWithCorrection() {
               c2 = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_4;
+              obj1[0] = outer1_5;
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -400,79 +400,7 @@ function _replaceWithCorrection() {
   }
   return applyArgumentsResult;
 }
-function _setAppLocale() {
-  const self = this;
-  const tmp = callback((arg0) => {
-    let closure_0 = arg0;
-    let c2 = 0;
-    let c3 = 0;
-    return (function*(arg0) {
-      if (c3 === 2) {
-        c3 = 3;
-        HermesBuiltin.throwTypeError();
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw arg1;
-        } else if (arg0 === 2) {
-          let obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
-        } else {
-          return { value: "T", done: null };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === c2) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw arg1;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              let appLocale = tmp2;
-              appLocale = undefined;
-              c2 = 1;
-              c3 = 1;
-              const obj1 = { value: null, done: false };
-              obj1[0] = outer1_4;
-              return obj1;
-            }
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw arg1;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            obj = { value: null, done: true };
-            obj[0] = arg1;
-            return obj;
-          } else {
-            appLocale = arg1;
-            if (null != appLocale) {
-              appLocale.setAppLocale(closure_0);
-            }
-            c3 = 3;
-            return { value: "T", done: null };
-          }
-        } catch (tmp14) {
-          c3 = tmp;
-          throw tmp14;
-        }
-      }
-    })();
-  });
-  const _setAppLocale = tmp;
-  const apply = tmp.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
-  }
-  return applyArgumentsResult;
-}
+require("processCallbacks").addPostConnectionCallback;
 set = set.isDesktop();
 if (set) {
   const importDefaultResult = require("set");
@@ -482,16 +410,24 @@ if (set) {
   }
   set = null != spellCheck;
 }
-let installResult = null;
+let promise = null;
 if (set) {
-  installResult = require("normalizeLocale").install();
-  let obj2 = require("normalizeLocale");
+  promise = new Promise((arg0) => {
+    let closure_0 = arg0;
+    const resolved = Promise.resolve();
+    resolved.then(() => outer1_4(() => callback(outer1_0(outer1_2[4]).install())));
+  });
 }
-let c4 = installResult;
+let c6 = null;
+if (promise != null) {
+  promise.then((arg0) => {
+    let closure_6 = arg0;
+  });
+}
 function isSupported() {
   let isDesktopResult = require(500) /* set */.isDesktop();
   if (isDesktopResult) {
-    const tmp4 = importDefault(3895);
+    const tmp4 = importDefault(3912);
     let spellCheck;
     if (tmp4 != null) {
       spellCheck = tmp4.spellCheck;
@@ -563,24 +499,19 @@ export const replaceWithCorrection = function replaceWithCorrection() {
   }
   return applyArgumentsResult;
 };
-export const setAppLocale = function setAppLocale() {
-  const self = this;
-  const apply = _setAppLocale.apply;
-  if (typeof apply === "unknown") {
-    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-  } else {
-    applyArgumentsResult = apply(self, arguments);
+export const setAppLocale = function setAppLocale(arg0) {
+  if (null != _null) {
+    _null.setAppLocale(arg0);
   }
-  return applyArgumentsResult;
 };
 export const addResultListener = function addResultListener(arg0) {
-  const tmp3 = importDefault(3895);
+  const tmp3 = importDefault(3912);
   let spellCheck;
   if (tmp3 != null) {
     spellCheck = tmp3.spellCheck;
   }
   if (null != spellCheck) {
-    spellCheck = importDefault(3895).spellCheck;
+    spellCheck = importDefault(3912).spellCheck;
     let fn2 = spellCheck.on("spellcheck-result", arg0);
     if (fn2 == null) {
       fn2 = () => {

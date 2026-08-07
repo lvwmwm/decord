@@ -1,9 +1,9 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11373
+// Function ID: 11374
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 11358 (initialize)
+// Module 11373 (initialize)
 import { PersistedStore } from "initialize";
 
 let obj = { APPS: "apps", COMMANDS: "commands" };

@@ -1,10 +1,10 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16360
+// Function ID: 16361
 // Name: _guildRoomConnect
-// Dependencies: [5, 16335, 2]
+// Dependencies: [5, 16361, 2]
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 16334 (_guildRoomConnect)
+// Module 16360 (_guildRoomConnect)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _guildRoomConnect() {

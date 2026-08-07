@@ -1,10 +1,10 @@
-// Module ID: 16115
-// Function ID: 16116
+// Module ID: 16141
+// Function ID: 16142
 // Name: ActivityActionOverlay
-// Dependencies: [19, 1301, 21, 4285, 712, 4128, 11447, 11362, 5702, 16113, 1877, 10518, 6903, 10671, 7508, 4827, 3996, 16112, 11390, 1297, 16116, 16114, 4474, 12047, 4281, 11452, 1236, 2]
+// Dependencies: [19, 1301, 21, 4302, 712, 4145, 11462, 11377, 5721, 16139, 1877, 10534, 6922, 10683, 7527, 4844, 4013, 16138, 11405, 1297, 16142, 16140, 4491, 12062, 4298, 11467, 1236, 2]
 // Exports: default
 
-// Module 16115 (ActivityActionOverlay)
+// Module 16141 (ActivityActionOverlay)
 import Button from "Button";
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "useActivityUsers";
@@ -26,16 +26,16 @@ function ActivityActionOverlay(arg0) {
   ({ action, context } = arg0);
   ({ applicationId, activityItem, launchingComponentId } = arg0);
   ({ id, name } = activityItem.application);
-  if (require(11362) /* useActivityAction */.ActivityAction.JOIN !== action) {
-    if (tmp4(11362).ActivityAction.LEAVE !== action) {
+  if (require(11377) /* useActivityAction */.ActivityAction.JOIN !== action) {
+    if (tmp4(11377).ActivityAction.LEAVE !== action) {
       return null;
     }
   }
-  let tmp8 = action === tmp4(11362).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(11377).ActivityAction.LEAVE;
   if (tmp8) {
     let obj = { style: null };
     obj[0] = tmp3.ongoingActivityJoinedContainer;
-    tmp8 = callback(tmp(5702), obj);
+    tmp8 = callback(tmp(5721), obj);
   }
   const items = [tmp8, ];
   id = undefined;
@@ -47,7 +47,7 @@ function ActivityActionOverlay(arg0) {
     id = context.channel.id;
   }
   obj = { children: null };
-  items[1] = tmp10(importDefault(16113), { channelId: id, applicationId: id, applicationName: name, submitting: importDefault(11447)({ applicationId, context, launchingComponentId }).submitting });
+  items[1] = tmp10(importDefault(16139), { channelId: id, applicationId: id, applicationName: name, submitting: importDefault(11462)({ applicationId, context, launchingComponentId }).submitting });
   obj[0] = items;
   return tmp6(tmp7, obj);
 }
@@ -59,8 +59,8 @@ function ParticipantsText(arg0) {
   ({ activityItem, channelId } = arg0);
   ({ action, guildId } = arg0);
   const tmp = createCacheKey();
-  const arr = importDefault(16114)(activityItem.application.id, channelId);
-  let obj = importDefault(4474);
+  const arr = importDefault(16140)(activityItem.application.id, channelId);
+  let obj = importDefault(4491);
   let first;
   if (arr != null) {
     first = arr[0];
@@ -70,17 +70,17 @@ function ParticipantsText(arg0) {
   items = [, ];
   ({ participantsContainer: arr2[0], overlayBubble: arr2[1] } = tmp);
   obj = { source: null, size: null, color: "white" };
-  obj[0] = importDefault(12047);
+  obj[0] = importDefault(12062);
   obj[1] = require(1297) /* Button */.Icon.Sizes.EXTRA_SMALL;
   const items1 = [callback(require(1297) /* Button */.Icon, obj), ];
   const obj1 = { lineClamp: 1, style: tmp.participantsText, variant: "text-xxs/medium", color: "text-overlay-light", children: null };
-  if (action === require(11362) /* useActivityAction */.ActivityAction.START) {
+  if (action === require(11377) /* useActivityAction */.ActivityAction.START) {
     let num2 = activityItem.application.maxParticipants;
     if (num2 == null) {
       num2 = 0;
     }
-    let itemSubtitleForMaxPlayersShort = tmp9(11452).getItemSubtitleForMaxPlayersShort(num2);
-    const tmp9Result = tmp9(11452);
+    let itemSubtitleForMaxPlayersShort = tmp9(11467).getItemSubtitleForMaxPlayersShort(num2);
+    const tmp9Result = tmp9(11467);
   } else {
     itemSubtitleForMaxPlayersShort = name;
     if (arr.length > 1) {
@@ -92,9 +92,9 @@ function ParticipantsText(arg0) {
     }
   }
   obj1[4] = itemSubtitleForMaxPlayersShort;
-  items1[1] = callback(require(4281) /* Text */.Text, obj1);
+  items1[1] = callback(require(4298) /* Text */.Text, obj1);
   obj[1] = items1;
-  return closure_7(importDefault(5702), obj);
+  return closure_7(importDefault(5721), obj);
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { container: null, imageOuterContainer: null, ongoingActivityJoinedContainer: null, overlayBubble: null, participantsContainer: null, participantsText: null, developerIconContainer: null, developerIconColor: null };
@@ -143,32 +143,32 @@ export default function ActivityShelfItem(arg0) {
   const result = width * importDefault(1877)();
   const id = Button.useId();
   let obj = { activityItem, context, guildId, locationObject, onActivityItemSelected, embeddedActivitiesManager: null, backgroundResolution: null, assetNames: null, launchingComponentId: null, commandOrigin: null };
-  obj[5] = importDefault(10518);
+  obj[5] = importDefault(10534);
   obj[6] = result;
   obj[7] = ["embedded_cover"];
   obj[8] = id;
-  obj[9] = require(6903) /* ApplicationCommandSectionType */.CommandOrigin.VOICE_UI;
-  const tmp7 = importDefault(11362);
-  ({ activityAction, imageBackground, onActivityItemSelected: onActivityItemSelected2, labelType } = importDefault(11362)(obj));
+  obj[9] = require(6922) /* ApplicationCommandSectionType */.CommandOrigin.VOICE_UI;
+  const tmp7 = importDefault(11377);
+  ({ activityAction, imageBackground, onActivityItemSelected: onActivityItemSelected2, labelType } = importDefault(11377)(obj));
   obj = { applicationId: activityItem.application.id, size: result, names: ["embedded_background"] };
-  let tmp10 = importDefault(10671)(obj);
+  let tmp10 = importDefault(10683)(obj);
   let tmp11 = !disableBadges;
   if (!disableBadges) {
-    const items = [tmp8(11362).ActivityAction.LEAVE, tmp8(11362).ActivityAction.JOIN];
+    const items = [tmp8(11377).ActivityAction.LEAVE, tmp8(11377).ActivityAction.JOIN];
     tmp11 = !items.includes(activityAction);
   }
-  const tmp7Result = importDefault(11362)(obj);
-  const isTestModeForApplication = require(7508) /* isTestModeForApplication */.useIsTestModeForApplication(activityItem.application.id);
+  const tmp7Result = importDefault(11377)(obj);
+  const isTestModeForApplication = require(7527) /* isTestModeForApplication */.useIsTestModeForApplication(activityItem.application.id);
   obj = { activeOpacity: 0.7, onPress: onActivityItemSelected2, disabled: null, androidRippleConfig: null, style: null, children: null };
-  obj[2] = activityAction === require(11362) /* useActivityAction */.ActivityAction.LEAVE;
+  obj[2] = activityAction === require(11377) /* useActivityAction */.ActivityAction.LEAVE;
   obj[3] = ANDROID_FOREGROUND_RIPPLE;
   const items1 = [tmp.container, { width, height }];
   obj[4] = items1;
   const obj1 = { style: tmp.imageOuterContainer, children: null };
-  let tmp3Result = tmp3(5702);
+  let tmp3Result = tmp3(5721);
   const obj2 = { accessibilityLabel: activityItem.application.name, imageBackground: null, aspectRatio: null };
-  tmp3Result = tmp3(16112);
-  if (activityAction === require(11362) /* useActivityAction */.ActivityAction.START) {
+  tmp3Result = tmp3(16138);
+  if (activityAction === require(11377) /* useActivityAction */.ActivityAction.START) {
     tmp10 = imageBackground;
   }
   obj2[1] = tmp10;
@@ -180,7 +180,7 @@ export default function ActivityShelfItem(arg0) {
   if (tmp11) {
     const obj4 = { labelType: null };
     obj4[0] = labelType;
-    tmp15Result = tmp15(tmp3(11390), obj4);
+    tmp15Result = tmp15(tmp3(11405), obj4);
   }
   items3[1] = tmp15Result;
   tmp15Result = null;
@@ -191,16 +191,16 @@ export default function ActivityShelfItem(arg0) {
       obj5[0] = tmp.developerIconContainer;
       const obj6 = { size: null, source: null, color: null };
       obj6[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-      obj6[1] = tmp3(16116);
+      obj6[1] = tmp3(16142);
       obj6[2] = tmp.developerIconColor.color;
       obj5[1] = tmp15(tmp8(1297).Icon, obj6);
-      tmp15Result = tmp15(tmp3(5702), obj5);
-      const tmp3Result1 = tmp3(5702);
+      tmp15Result = tmp15(tmp3(5721), obj5);
+      const tmp3Result1 = tmp3(5721);
     }
   }
   items3[2] = tmp15Result;
-  const items4 = [closure_7(require(3996) /* ManaContext */.ThemeContextProvider, { theme: "dark", children: items3 }), ];
-  let tmp15Result1 = activityAction === tmp8(11362).ActivityAction.START;
+  const items4 = [closure_7(require(4013) /* ManaContext */.ThemeContextProvider, { theme: "dark", children: items3 }), ];
+  let tmp15Result1 = activityAction === tmp8(11377).ActivityAction.START;
   if (tmp15Result1) {
     const obj7 = { action: null, channelId: null, guildId: null, activityItem: null };
     obj7[0] = activityAction;
@@ -220,5 +220,5 @@ export default function ActivityShelfItem(arg0) {
   }
   items4[1] = tmp15Result1;
   obj[5] = items4;
-  return closure_7(require(4827) /* PressableBase */.PressableOpacity, obj);
+  return closure_7(require(4844) /* PressableBase */.PressableOpacity, obj);
 };

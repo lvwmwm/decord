@@ -1,10 +1,10 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13691
+// Function ID: 13692
 // Name: validateTransportType
-// Dependencies: [4188, 676, 10536, 2]
+// Dependencies: [4205, 676, 10670, 2]
 // Exports: validateTransportType
 
-// Module 13677 (validateTransportType)
+// Module 13691 (validateTransportType)
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { RPCErrors } from "ME";
 
@@ -15,7 +15,7 @@ export const validateTransportType = function validateTransportType(transport) {
     if (TransportTypes.POST_MESSAGE !== transport) {
       const obj = { errorCode: null };
       obj[0] = RPCErrors.INVALID_COMMAND;
-      const tmp7 = new importDefault(10536)(obj, "Invalid transport.");
+      const tmp7 = new importDefault(10670)(obj, "Invalid transport.");
       throw tmp7;
     }
   }

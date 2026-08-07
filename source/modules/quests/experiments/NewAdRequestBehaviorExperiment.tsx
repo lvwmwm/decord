@@ -1,9 +1,9 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7115
+// Function ID: 7116
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 7096 (apexExperiment)
+// Module 7115 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enableNewRequestBehavior: false }, 3: { enableNewRequestBehavior: true }, 4: { enableNewRequestBehavior: false }, 5: { enableNewRequestBehavior: true }, 6: { enableNewRequestBehavior: true } };

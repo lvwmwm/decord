@@ -1,10 +1,10 @@
-// Module ID: 10288
-// Function ID: 10289
+// Module ID: 10304
+// Function ID: 10305
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1903, 10256, 21, 4285, 712, 589, 10289, 4123, 9162, 7707, 7943, 4713, 4695, 1236, 4281, 2]
+// Dependencies: [19, 17, 1903, 10272, 21, 4302, 712, 589, 10305, 4140, 9179, 7724, 7960, 4730, 4712, 1236, 4298, 2]
 // Exports: default
 
-// Module 10288 (ConfirmBlockUserAlert)
+// Module 10304 (ConfirmBlockUserAlert)
 import noop from "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";

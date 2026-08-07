@@ -1,15 +1,17 @@
 // Module ID: 7805
 // Function ID: 7806
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 7774, 7797]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7806, 7790, 7799]
 
 // Module 7805 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
+import "noop";
+import { jsx } from "jsxProd";
 
-const FeDisplacementMap = arg1;
+const ClipPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeDisplacementMap {
+class ClipPath {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeDisplacementMap);
+    tmp = _isNativeReflectConstruct(this, ClipPath);
     tmp2 = __esModule;
-    obj = __esModule(FeDisplacementMap);
+    obj = __esModule(ClipPath);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -49,19 +51,21 @@ class FeDisplacementMap {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(FeDisplacementMap, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeDisplacementMap(7774).warnUnimplementedFilter();
-    return null;
+require("_inherits")(ClipPath, require("_isNativeReflectConstruct"));
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      const props = this.props;
+      const obj = { ref: this.refMethod };
+      const tmp = importDefault(7806);
+      const merged = Object.assign(ClipPath(7790).extract(this, props));
+      obj.children = props.children;
+      return <tmp ref={this.refMethod} />;
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeDisplacementMap, items);
-importDefaultResultResult.displayName = "FeDisplacementMap";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

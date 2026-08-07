@@ -1,9 +1,9 @@
-// Module ID: 13934
-// Function ID: 13935
+// Module ID: 13948
+// Function ID: 13949
 // Name: pressable
-// Dependencies: [8005, 21, 10364, 1236, 2802, 13935, 4625, 4500, 2]
+// Dependencies: [8022, 21, 10380, 1236, 2802, 13949, 4642, 4517, 2]
 
-// Module 13934 (pressable)
+// Module 13948 (pressable)
 import { jsx } from "jsxProd";
 import createToggle from "createToggle";
 
@@ -18,7 +18,7 @@ const pressable = createToggle.createPressable({
     return intl.string(importDefault(2802).Gn0SAj);
   },
   onPress() {
-    require(4625) /* useAlertStore */.openAlert(require(13935) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13935) /* SettingsAgeGroupResetAlert */.default, {}));
+    require(4642) /* useAlertStore */.openAlert(require(13949) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13949) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
   usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings
@@ -34,7 +34,7 @@ const obj = {
     return intl.string(importDefault(2802).Gn0SAj);
   },
   onPress() {
-    require(4625) /* useAlertStore */.openAlert(require(13935) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13935) /* SettingsAgeGroupResetAlert */.default, {}));
+    require(4642) /* useAlertStore */.openAlert(require(13949) /* SettingsAgeGroupResetAlert */.SETTINGS_AGE_GROUP_RESET_ALERT_ID, jsx(require(13949) /* SettingsAgeGroupResetAlert */.default, {}));
   },
   withArrow: true,
   usePredicate: require("useAgeVerificationRunner").useShowAssignedAgeGroupSettings

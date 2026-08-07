@@ -1,10 +1,10 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15134
+// Function ID: 15135
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1371, 4304, 3921, 21, 15119, 15131, 15132, 647, 15109, 2]
+// Dependencies: [19, 1371, 4321, 3938, 21, 15135, 15147, 15148, 647, 15125, 2]
 // Exports: default, useCallActivityData
 
-// Module 15118 (HappeningNowCardUnifiedVC)
+// Module 15134 (HappeningNowCardUnifiedVC)
 import "noop";
 import participantFromServer from "participantFromServer";
 import reset from "reset";
@@ -70,7 +70,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     obj[3] = stream;
     obj[4] = fullwidth;
     obj[5] = panelVariant;
-    let tmp5 = jsx(importDefault(15119), { index: null, userId: null, guildId: null, stream: null, fullwidth: null, panelVariant: null });
+    let tmp5 = jsx(importDefault(15135), { index: null, userId: null, guildId: null, stream: null, fullwidth: null, panelVariant: null });
   } else if (null != activity) {
     obj = { index: null, voiceState: null, fullwidth: null, guildId: null, activity: null, userId: null, cardKey: null, panelVariant: null };
     obj[0] = index;
@@ -81,7 +81,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     obj[5] = userId;
     obj[6] = cardKey;
     obj[7] = panelVariant;
-    tmp5 = jsx(importDefault(15131), { index: null, voiceState: null, fullwidth: null, guildId: null, activity: null, userId: null, cardKey: null, panelVariant: null });
+    tmp5 = jsx(importDefault(15147), { index: null, voiceState: null, fullwidth: null, guildId: null, activity: null, userId: null, cardKey: null, panelVariant: null });
   } else {
     let obj1 = { index: null, voiceState: null, fullwidth: null, guildId: null, panelVariant: null };
     obj1[0] = index;
@@ -89,7 +89,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     obj1[2] = fullwidth;
     obj1[3] = guildId;
     obj1[4] = panelVariant;
-    tmp5 = jsx(importDefault(15132), { index: null, voiceState: null, fullwidth: null, guildId: null, panelVariant: null });
+    tmp5 = jsx(importDefault(15148), { index: null, voiceState: null, fullwidth: null, guildId: null, panelVariant: null });
   }
   return tmp5;
 };

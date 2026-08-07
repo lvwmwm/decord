@@ -1,10 +1,10 @@
-// Module ID: 8580
-// Function ID: 8581
+// Module ID: 8597
+// Function ID: 8598
 // Name: useTooltipPosition
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 8580 (useTooltipPosition)
+// Module 8597 (useTooltipPosition)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");

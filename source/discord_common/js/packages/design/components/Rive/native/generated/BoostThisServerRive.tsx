@@ -1,9 +1,9 @@
-// Module ID: 4012
-// Function ID: 4013
+// Module ID: 4029
+// Function ID: 4030
 // Name: BoostThisServerRive
-// Dependencies: [109, 19, 21, 4013, 4063, 4064, 2]
+// Dependencies: [109, 19, 21, 4030, 4080, 4081, 2]
 
-// Module 4012 (BoostThisServerRive)
+// Module 4029 (BoostThisServerRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(4013) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(4030) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   "Boost Crystal": function BoostCrystalBindings(arg0) {
@@ -27,7 +27,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(4013) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(4030) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   "Boost Saved": function BoostSavedBindings(arg0) {
@@ -35,7 +35,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(4013) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(4030) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   }
 };
@@ -82,7 +82,7 @@ const forwardRefResult = importAllResult.forwardRef(function BoostThisServerRive
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4064) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/BoostThisServerRive.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 15336
-// Function ID: 15337
+// Module ID: 15360
+// Function ID: 15361
 // Name: areHomeDrawerGuildTypingStatesEqual
-// Dependencies: [3914, 1376, 1372, 11290, 643, 15332, 15333, 589, 11, 2]
+// Dependencies: [3931, 1376, 1372, 11305, 643, 15356, 15357, 589, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 15336 (areHomeDrawerGuildTypingStatesEqual)
+// Module 15360 (areHomeDrawerGuildTypingStatesEqual)
 import storeThread from "storeThread";
 import { isThread } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";

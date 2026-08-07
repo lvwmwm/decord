@@ -1,10 +1,10 @@
-// Module ID: 7299
-// Function ID: 7300
+// Module ID: 7318
+// Function ID: 7319
 // Name: getPlanIdForProduct
-// Dependencies: [109, 5, 17, 7255, 1218, 5779, 676, 5780, 1905, 505, 3, 5782, 5798, 3967, 709, 3943, 3945, 4623, 1236, 698, 530, 2]
+// Dependencies: [109, 5, 17, 7274, 1218, 5798, 676, 5799, 1905, 505, 3, 5801, 5817, 3984, 709, 3960, 3962, 4640, 1236, 698, 530, 2]
 // Exports: downgradeSubscription, loadUserCountry, purchase, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 7299 (getPlanIdForProduct)
+// Module 7318 (getPlanIdForProduct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importDefaultResult from "updateProduct";
 import setGPlayAnalytics from "setGPlayAnalytics";
@@ -29,13 +29,13 @@ let c1 = importDefault;
 function getPlanIdForProduct(arg0, arg1) {
   if (arg1) {
     try {
-      return callback(5782).getPlanIdForGift(arg0);
+      return callback(5801).getPlanIdForGift(arg0);
     } catch (err) {
       return null;
     }
   } else {
     let basePlanId;
-    const tmp4 = callback(5782).AppStorePremiumProductIdsToPremiumBundledItems[arg0];
+    const tmp4 = callback(5801).AppStorePremiumProductIdsToPremiumBundledItems[arg0];
     if (tmp4 != null) {
       basePlanId = tmp4.basePlanId;
     }
@@ -593,7 +593,7 @@ function _subscribe() {
       if (1 === tmp7) {
         c9 = 0;
         message = closure_8;
-        const obj1 = callback(3945);
+        const obj1 = callback(3962);
         const obj2 = { productId: null, oldProductId: null };
         obj2[0] = callback;
         let c5 = callback2;
@@ -604,7 +604,7 @@ function _subscribe() {
         obj2[1] = c5;
         obj3[0] = obj2;
         const result = obj1.captureBillingException(message, obj3);
-        let obj4 = callback2(4623);
+        let obj4 = callback2(4640);
         obj4 = { title: null, body: null };
         const intl = callback(1236).intl;
         obj4[0] = intl.string(callback(1236).t["U+H+kd"]);
@@ -738,7 +738,7 @@ function _verifyPurchase() {
           } else if (1 === tmp8) {
             c6 = 0;
             c6 = closure_5;
-            obj3 = lib(3945);
+            obj3 = lib(3962);
             const obj5 = { tags: null };
             let obj6 = { productId: null };
             obj6[0] = lib.productId;
@@ -883,7 +883,7 @@ closure_0 = importDefaultResult(() => {
                   obj3[0] = callback3(SubscriptionProductIds);
                   return obj3;
                 }
-                obj14 = SubscriptionProductIds(3943);
+                obj14 = SubscriptionProductIds(3960);
               }
             }
             c6 = 3;
@@ -1175,7 +1175,7 @@ closure_0 = importDefaultResult(() => {
                   })(IAPProductIds);
                   return obj3;
                 }
-                obj14 = IAPProductIds(3943);
+                obj14 = IAPProductIds(3960);
               }
             }
             c6 = 3;
@@ -1941,7 +1941,7 @@ export const updatePendingDowngrade = function updatePendingDowngrade(closure_0,
         if (null != tmp) {
           if (null != tmp2.billingPeriod) {
             if (null != tmp.billingPeriod) {
-              let obj = callback(3945);
+              let obj = callback(3962);
             }
           }
         }

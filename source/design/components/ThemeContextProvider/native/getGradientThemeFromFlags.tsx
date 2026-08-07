@@ -1,15 +1,15 @@
-// Module ID: 3995
-// Function ID: 3996
+// Module ID: 4012
+// Function ID: 4013
 // Name: getGradientThemeFromFlags
-// Dependencies: [3996, 2]
+// Dependencies: [4013, 2]
 // Exports: getGradientThemeFromFlags
 
-// Module 3995 (getGradientThemeFromFlags)
+// Module 4012 (getGradientThemeFromFlags)
 const result = require("set").fileFinishedImporting("design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx");
 
 export const getGradientThemeFromFlags = function getGradientThemeFromFlags(themeContext) {
-  const obj = require(3996) /* ManaContext */;
-  require(3996) /* ManaContext */;
+  const obj = require(4013) /* ManaContext */;
+  require(4013) /* ManaContext */;
   let str = "dark";
   if (!hasThemeFlagResult) {
     let str2 = null;

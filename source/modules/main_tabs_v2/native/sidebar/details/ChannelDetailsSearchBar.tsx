@@ -1,8 +1,8 @@
-// Module ID: 15600
-// Function ID: 15601
-// Dependencies: [19, 11629, 8318, 9588, 21, 4285, 11662, 11589, 11650, 11653, 15601, 4827, 1236, 9862, 2]
+// Module ID: 15624
+// Function ID: 15625
+// Dependencies: [19, 11644, 8335, 9604, 21, 4302, 11677, 11604, 11665, 11668, 15625, 4844, 1236, 9878, 2]
 
-// Module 15600
+// Module 15624
 import importAllResult from "noop";
 import prototype from "prototype";
 import { setIsChannelDetailsSearchActive as closure_5 } from "useChannelDetailsStore";

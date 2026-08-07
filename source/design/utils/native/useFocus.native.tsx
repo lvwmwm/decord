@@ -1,10 +1,10 @@
-// Module ID: 3993
-// Function ID: 3994
+// Module ID: 4010
+// Function ID: 4011
 // Name: useFocus
 // Dependencies: [32, 19, 2]
 // Exports: useFocus
 
-// Module 3993 (useFocus)
+// Module 4010 (useFocus)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

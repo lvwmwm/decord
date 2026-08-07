@@ -1,10 +1,10 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8638
+// Function ID: 8639
 // Name: saveGuildFolders
-// Dependencies: [5, 4096, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 4126, 3957, 2]
+// Dependencies: [5, 4113, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 4143, 3974, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8621 (saveGuildFolders)
+// Module 8638 (saveGuildFolders)
 import closure_3 from "SystemThemeState";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -36,19 +36,19 @@ export default {
       obj = {};
     } else {
       obj = { inlineAttachmentMedia: null, inlineEmbedMedia: null, renderEmbeds: null, renderReactions: null, animateEmoji: null, animateStickers: null, gifAutoPlay: null };
-      const InlineAttachmentMedia = require(3957) /* explicitContentFromProto */.InlineAttachmentMedia;
+      const InlineAttachmentMedia = require(3974) /* explicitContentFromProto */.InlineAttachmentMedia;
       obj[0] = InlineAttachmentMedia.getSetting();
-      const InlineEmbedMedia = require(3957) /* explicitContentFromProto */.InlineEmbedMedia;
+      const InlineEmbedMedia = require(3974) /* explicitContentFromProto */.InlineEmbedMedia;
       obj[1] = InlineEmbedMedia.getSetting();
-      const RenderEmbeds = require(3957) /* explicitContentFromProto */.RenderEmbeds;
+      const RenderEmbeds = require(3974) /* explicitContentFromProto */.RenderEmbeds;
       obj[2] = RenderEmbeds.getSetting();
-      const RenderReactions = require(3957) /* explicitContentFromProto */.RenderReactions;
+      const RenderReactions = require(3974) /* explicitContentFromProto */.RenderReactions;
       obj[3] = RenderReactions.getSetting();
-      const AnimateEmoji = require(3957) /* explicitContentFromProto */.AnimateEmoji;
+      const AnimateEmoji = require(3974) /* explicitContentFromProto */.AnimateEmoji;
       obj[4] = AnimateEmoji.getSetting();
-      const AnimateStickers = require(3957) /* explicitContentFromProto */.AnimateStickers;
+      const AnimateStickers = require(3974) /* explicitContentFromProto */.AnimateStickers;
       obj[5] = AnimateStickers.getSetting();
-      const GifAutoPlay = require(3957) /* explicitContentFromProto */.GifAutoPlay;
+      const GifAutoPlay = require(3974) /* explicitContentFromProto */.GifAutoPlay;
       obj[6] = GifAutoPlay.getSetting();
     }
     obj[1] = obj;
@@ -119,7 +119,7 @@ export default {
                   if (gradientPreset != null) {
                     id = gradientPreset.id;
                   }
-                  const ClientThemeSettings = tmp4(3957).ClientThemeSettings;
+                  const ClientThemeSettings = tmp4(3974).ClientThemeSettings;
                   const setting = ClientThemeSettings.getSetting();
                   let prop;
                   if (setting != null) {
@@ -176,10 +176,10 @@ export default {
             }
             const obj4 = { backgroundGradientPresetId: null, customUserThemeSettings: null };
             obj4[0] = id;
-            let ClientThemeSettings = outer1_0(3957).ClientThemeSettings;
+            let ClientThemeSettings = outer1_0(3974).ClientThemeSettings;
             obj4[1] = ClientThemeSettings.getSetting().customUserThemeSettings;
             obj3[1] = obj4;
-            const DeveloperMode = outer1_0(3957).DeveloperMode;
+            const DeveloperMode = outer1_0(3974).DeveloperMode;
             obj3[2] = DeveloperMode.getSetting();
           }
           const obj5 = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };

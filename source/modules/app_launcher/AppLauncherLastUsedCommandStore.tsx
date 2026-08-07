@@ -1,9 +1,9 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11440
+// Function ID: 11441
 // Name: initialize
 // Dependencies: [687, 589, 709, 2]
 
-// Module 11425 (initialize)
+// Module 11440 (initialize)
 import { PersistedStore } from "initialize";
 
 let closure_0 = 10 * require("set").Millis.MINUTE;

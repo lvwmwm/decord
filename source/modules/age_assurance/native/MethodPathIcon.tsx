@@ -1,10 +1,10 @@
-// Module ID: 7757
-// Function ID: 7758
+// Module ID: 7774
+// Function ID: 7775
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4285, 712, 3988, 7758, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4005, 7775, 2]
 // Exports: default
 
-// Module 7757 (MethodPathIcon)
+// Module 7774 (MethodPathIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,13 +19,13 @@ const result = require("jsxProd").fileFinishedImporting("modules/age_assurance/n
 
 export default function MethodPathIcon(icon) {
   let _require;
-  let obj = _require(3988);
+  let obj = _require(4005);
   _require = obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT);
   obj = { style: createCacheKey().container, children: null };
   obj = { width: 24, height: 24, viewBox: "0 0 24 24", children: null };
   const paths = icon.icon.paths;
   const tmp = createCacheKey();
   obj[3] = paths.map((d) => outer1_4(callback(outer1_2[6]).Path, { d: d.d, fill: callback, fillRule: d.fillRule }, d.d));
-  obj[1] = jsx(importDefault(7758), { width: 24, height: 24, viewBox: "0 0 24 24", children: null });
+  obj[1] = jsx(importDefault(7775), { width: 24, height: 24, viewBox: "0 0 24 24", children: null });
   return <View width={24} height={24} viewBox="0 0 24 24">{null}</View>;
 };

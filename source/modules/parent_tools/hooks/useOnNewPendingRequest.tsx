@@ -1,10 +1,10 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14055
+// Function ID: 14056
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 6917, 7258, 589, 4711, 6919, 2]
+// Dependencies: [19, 6936, 7277, 589, 4728, 6938, 2]
 // Exports: default
 
-// Module 14041 (useOnNewPendingRequest)
+// Module 14055 (useOnNewPendingRequest)
 import noop from "noop";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 

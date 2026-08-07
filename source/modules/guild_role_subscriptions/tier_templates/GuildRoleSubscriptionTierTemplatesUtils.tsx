@@ -1,10 +1,10 @@
-// Module ID: 14381
-// Function ID: 14382
+// Module ID: 14397
+// Function ID: 14398
 // Name: getUsedTemplateChannelsForGuild
-// Dependencies: [5, 19, 1372, 3906, 14376, 14382, 676, 1379, 4523, 647, 1384, 709, 8918, 5801, 13156, 2]
+// Dependencies: [5, 19, 1372, 3923, 14392, 14398, 676, 1379, 4540, 647, 1384, 709, 8935, 5820, 13170, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14381 (getUsedTemplateChannelsForGuild)
+// Module 14397 (getUsedTemplateChannelsForGuild)
 import initialize from "initialize";
 import { useMemo } from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -394,14 +394,14 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
   }
 };
 export const isEligibleForNewBadge = function isEligibleForNewBadge(features) {
-  let result = require(5801) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(features);
+  let result = require(5820) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(features);
   if (result) {
     features = features.features;
     result = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
   if (result) {
-    result = require(13156) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
-    const tmpResult = require(13156) /* GuildFeatures */;
+    result = require(13170) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
+    const tmpResult = require(13170) /* GuildFeatures */;
   }
   return result;
 };

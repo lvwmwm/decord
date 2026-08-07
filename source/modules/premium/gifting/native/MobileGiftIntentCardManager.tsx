@@ -1,9 +1,9 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16469
+// Function ID: 16470
 // Name: isChannelEligible
-// Dependencies: [7041, 1372, 4502, 1960, 8101, 1905, 16443, 692, 3957, 7245, 9267, 503, 4170, 8104, 9004, 2]
+// Dependencies: [7060, 1372, 4519, 1960, 8118, 1905, 16470, 692, 3974, 7264, 9284, 503, 4187, 8121, 9021, 2]
 
-// Module 16442 (isChannelEligible)
+// Module 16469 (isChannelEligible)
 import recomputeAffinities from "recomputeAffinities";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -85,8 +85,8 @@ prototype["sendCardInSelectedChannelIfEligible"] = function sendCardInSelectedCh
 };
 prototype["maybeFetchUserAffinities"] = function maybeFetchUserAffinities() {
   if (obj.getConfig({ location: "MobileGiftIntentCardManager" }).enabled) {
-    const userAffinitiesV2 = require(9004) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
-    const obj2 = require(9004) /* fetchUserAffinitiesV2 */;
+    const userAffinitiesV2 = require(9021) /* fetchUserAffinitiesV2 */.fetchUserAffinitiesV2();
+    const obj2 = require(9021) /* fetchUserAffinitiesV2 */;
   }
 };
 prototype["onChannelSelect"] = function onChannelSelect(channelId) {

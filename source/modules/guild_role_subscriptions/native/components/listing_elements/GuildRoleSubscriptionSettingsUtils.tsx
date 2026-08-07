@@ -1,10 +1,10 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15572
+// Function ID: 15573
 // Name: getCoverImageURI
-// Dependencies: [3906, 4522, 2]
+// Dependencies: [3923, 4539, 2]
 // Exports: getCoverImageURI
 
-// Module 15548 (getCoverImageURI)
+// Module 15572 (getCoverImageURI)
 import makeGroupListingIndexSubscriptionListingTag from "makeGroupListingIndexSubscriptionListingTag";
 
 const require = arg1;
@@ -14,8 +14,8 @@ export const getCoverImageURI = function getCoverImageURI(subscriptionsSettings)
   applicationIdForGuild = applicationIdForGuild.getApplicationIdForGuild(subscriptionsSettings.guild_id);
   let uri = "";
   if (tmp2) {
-    uri = require(4522) /* _httpGetWithCountryCodeQuery */.getAssetURL(applicationIdForGuild, subscriptionsSettings.cover_image_asset, 1024);
-    const obj = require(4522) /* _httpGetWithCountryCodeQuery */;
+    uri = require(4539) /* _httpGetWithCountryCodeQuery */.getAssetURL(applicationIdForGuild, subscriptionsSettings.cover_image_asset, 1024);
+    const obj = require(4539) /* _httpGetWithCountryCodeQuery */;
   }
   return { uri };
 };

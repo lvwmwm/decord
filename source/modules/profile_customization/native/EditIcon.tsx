@@ -1,10 +1,10 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 13850
+// Function ID: 13851
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 4285, 712, 9591, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 9607, 2]
 // Exports: default
 
-// Module 13836 (EditIcon)
+// Module 13850 (EditIcon)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

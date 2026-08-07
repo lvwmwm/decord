@@ -1,10 +1,10 @@
-// Module ID: 10553
-// Function ID: 10554
+// Module ID: 10550
+// Function ID: 10551
 // Name: _getPrimaryAppCommand
-// Dependencies: [5, 19, 1372, 8262, 1935, 8270, 8266, 9459, 2]
+// Dependencies: [5, 19, 1372, 8279, 1935, 8287, 8283, 9476, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 10553 (_getPrimaryAppCommand)
+// Module 10550 (_getPrimaryAppCommand)
 import ScoreMethod from "ScoreMethod";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -116,7 +116,7 @@ function queryForPrimaryAppCommand(closure_0, id) {
   let obj = { commandTypes: null };
   const items = [require(1935) /* PermissionOverwriteType */.ApplicationCommandType.PRIMARY_ENTRY_POINT];
   obj[0] = items;
-  obj = { placeholderCount: 1, scoreMethod: require(8270) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: require(8287) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId: id, allowFetch: false, allowApplicationState: true };
   return closure_7.query(closure_0, obj, obj).commands[0];
 }
 ({ getOrFetchApplicationCommandIndexForTarget: c5, useQueryState: closure_6 } = getIndexKey);
@@ -161,7 +161,7 @@ export const useGetPrimaryAppCommand = function useGetPrimaryAppCommand(context,
 };
 export const useQueryForPrimaryAppCommand = function useQueryForPrimaryAppCommand(arg0, applicationId) {
   let obj = { commandTypes: items };
-  obj = { placeholderCount: 1, scoreMethod: require(8270) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
+  obj = { placeholderCount: 1, scoreMethod: require(8287) /* ScoreMethod */.ScoreMethod.COMMAND_ONLY, applicationId, allowFetch: false, allowApplicationState: true };
   return callback2(arg0, obj, obj);
 };
 export const useIsPrimaryAppCommandUsableInAppDM = function useIsPrimaryAppCommandUsableInAppDM(applicationId) {
@@ -224,7 +224,7 @@ export const isPrimaryAppCommandUsableInAppDM = function isPrimaryAppCommandUsab
     let hasItem = null != integration_types.integration_types;
     if (hasItem) {
       integration_types = integration_types.integration_types;
-      hasItem = integration_types.includes(require(9459) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
+      hasItem = integration_types.includes(require(9476) /* ApplicationIntegrationType */.ApplicationIntegrationType.USER_INSTALL);
     }
     let hasItem1 = null != integration_types.contexts;
     if (hasItem1) {

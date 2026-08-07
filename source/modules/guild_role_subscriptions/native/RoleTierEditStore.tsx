@@ -1,10 +1,10 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 16730
+// Function ID: 16731
 // Name: usePriceTiers
-// Dependencies: [32, 5, 705, 700, 5797, 3897, 4711, 14360, 2]
+// Dependencies: [32, 5, 705, 700, 5816, 3914, 4728, 14376, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 16710 (usePriceTiers)
+// Module 16730 (usePriceTiers)
 import _slicedToArray from "_slicedToArray";
 import isIterable from "isIterable";
 import identity from "identity";
@@ -16,11 +16,11 @@ function usePriceTiers(guildId) {
     const items = [, , ];
     ({ priceTiers: arr[0], priceTierState: arr[1], loadPriceTiers: arr[2] } = arg0);
     return items;
-  }, _require(3897).shallow), 3);
+  }, _require(3914).shallow), 3);
   const first = tmp[0];
   const importAll = tmp3;
   const dependencyMap = tmp[2];
-  first(4711)(() => {
+  first(4728)(() => {
     let tmp2 = null == first;
     if (tmp2) {
       tmp2 = closure_2 !== outer1_6.LOADING;
@@ -127,7 +127,7 @@ export const usePriceTiersAvailableInGuild = function usePriceTiersAvailableInGu
   const tmp = usePriceTiers(guildId);
   let tiers = tmp.tiers;
   ({ state, onRefresh } = tmp);
-  const subscriptionListingsForGuild = set(14360).useSubscriptionListingsForGuild(guildId);
+  const subscriptionListingsForGuild = set(14376).useSubscriptionListingsForGuild(guildId);
   set = new Set();
   for (const item10022 of subscriptionListingsForGuild) {
     let addResult = set.add(item10022.subscription_plans[0].price);
@@ -144,19 +144,19 @@ export const useGroupCoverState = function useGroupCoverState() {
     const items = [, ];
     ({ groupCover: arr[0], setGroupCover: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };
 export const useGroupDescriptionState = function useGroupDescriptionState() {
   return withEqualityFn((arg0) => {
     const items = [, ];
     ({ groupDescription: arr[0], setGroupDescription: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };
 export const useGroupIsFullGateState = function useGroupIsFullGateState() {
   return withEqualityFn((arg0) => {
     const items = [, ];
     ({ groupIsFullGate: arr[0], setGroupIsFullGate: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };

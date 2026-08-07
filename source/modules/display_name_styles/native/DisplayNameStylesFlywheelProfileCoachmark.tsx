@@ -1,10 +1,10 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15794
+// Function ID: 15795
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1903, 1369, 21, 4285, 712, 589, 3930, 1236, 2642, 8576, 5948, 1297, 2]
+// Dependencies: [19, 17, 1903, 1369, 21, 4302, 712, 589, 3947, 1236, 2642, 8593, 5967, 1297, 2]
 // Exports: default
 
-// Module 15770 (CoachmarkImage)
+// Module 15794 (CoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -18,7 +18,7 @@ const require = arg1;
 function CoachmarkImage() {
   const tmp = createCacheKey();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
-  const items = [callback(require(5948) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
+  const items = [callback(require(5967) /* AccountAgeTier10LargeBadge */.DisplayNameLockeAbstractUI, { width: 160, height: 68, resizeMode: "contain" }), ];
   obj = { style: tmp.betaTag };
   items[1] = callback(require(1297) /* Button */.BetaTag, obj);
   obj[1] = items;
@@ -42,7 +42,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const stateFromStores = visible(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = visible(589);
   const tmp4 = markAsDismissed;
-  const result = markAsDismissed(3930).canUsePremiumProfileCustomization(stateFromStores);
+  const result = markAsDismissed(3947).canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1236).intl;
   const string = intl.string;
   const tmp6 = markAsDismissed(2642);
@@ -76,7 +76,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return callback(closure_10, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(3930);
-  const coachmark = visible(8576).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(3947);
+  const coachmark = visible(8593).useCoachmark(visible.targetRef, memo);
   return null;
 };

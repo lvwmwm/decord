@@ -1,10 +1,10 @@
-// Module ID: 7106
-// Function ID: 7107
+// Module ID: 7125
+// Function ID: 7126
 // Name: canStreamInChannel
-// Dependencies: [4299, 1376, 1961, 1891, 3912, 4301, 676, 5116, 1236, 4467, 4498, 589, 2]
+// Dependencies: [4316, 1376, 1961, 1891, 3929, 4318, 676, 5133, 1236, 4484, 4515, 589, 2]
 // Exports: getStreamCTAAriaLabel, getStreamCTAString, getStreamEligibleChannels, useCanWatchStream
 
-// Module 7106 (canStreamInChannel)
+// Module 7125 (canStreamInChannel)
 import set from "set";
 import { ChannelRecordBase } from "createChannelRecord";
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator";
@@ -37,7 +37,7 @@ function canStreamInChannel(channel, closure_2, set, arg3) {
     let tmp5 = !isGuildStageVoiceResult;
     if (!isGuildStageVoiceResult) {
       if (flag) {
-        flag = !importDefault(5116)(channel, set);
+        flag = !importDefault(5133)(channel, set);
       }
       let tmp9 = !flag;
       if (!flag) {
@@ -61,15 +61,15 @@ function canWatchStream(basicChannel1, closure_17, closure_12, closure_14, updat
     let isInChannelResult = closure_17.isInChannel(basicChannel1.id);
     let isChannelFullResult = basicChannel1 instanceof ChannelRecordBase;
     if (isChannelFullResult) {
-      obj = require(4467) /* allowChannelAccess */;
+      obj = require(4484) /* allowChannelAccess */;
       isChannelFullResult = obj.isChannelFull(basicChannel1, closure_17, closure_12);
     }
-    let tmp9 = importDefault(5116)(basicChannel1, closure_14);
+    let tmp9 = importDefault(5133)(basicChannel1, closure_14);
     const tmp10 = null != updateVoiceState.getAwaitingRemoteSessionInfo() || null != updateVoiceState.getRemoteSessionId();
-    let result = require(4498) /* shouldShowAgeGateForVoiceChannel */.shouldAgeVerifyForAgeGate();
+    let result = require(4515) /* shouldShowAgeGateForVoiceChannel */.shouldAgeVerifyForAgeGate();
     if (result) {
-      result = require(4498) /* shouldShowAgeGateForVoiceChannel */.shouldShowAgeGateForChannelId(basicChannel1.id);
-      const tmp11Result = require(4498) /* shouldShowAgeGateForVoiceChannel */;
+      result = require(4515) /* shouldShowAgeGateForVoiceChannel */.shouldShowAgeGateForChannelId(basicChannel1.id);
+      const tmp11Result = require(4515) /* shouldShowAgeGateForVoiceChannel */;
     }
     if (tmp10) {
       let CHANNEL_FULL = obj.REMOTE_MODE;

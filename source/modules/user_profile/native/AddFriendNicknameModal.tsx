@@ -1,10 +1,10 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12442
+// Function ID: 12443
 // Name: AddFriendNicknameModal
-// Dependencies: [5, 32, 19, 17, 3921, 1903, 21, 4285, 712, 589, 1236, 4490, 9162, 5745, 4713, 4281, 5914, 4123, 2]
+// Dependencies: [5, 32, 19, 17, 3938, 1903, 21, 4302, 712, 589, 1236, 4507, 9179, 5764, 4730, 4298, 5933, 4140, 2]
 // Exports: default
 
-// Module 12427 (AddFriendNicknameModal)
+// Module 12442 (AddFriendNicknameModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -158,7 +158,7 @@ export default function AddFriendNicknameModal(arg0) {
   obj = { children: null };
   const tmp3Result = require(589) /* initialize */;
   obj1 = { confirmText: null, onConfirm: null, cancelText: null, onCancel: null, children: null };
-  const tmp11 = showUserProfile(5745);
+  const tmp11 = showUserProfile(5764);
   const intl3 = tmp3(1236).intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t["R3BPH+"]);
   obj1[1] = function handleSubmit() {
@@ -174,17 +174,17 @@ export default function AddFriendNicknameModal(arg0) {
   const intl4 = tmp3(1236).intl;
   obj1[2] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
   obj1[3] = callback1;
-  const items3 = [callback2(require(4281) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
+  const items3 = [callback2(require(4298) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult }), , ];
   const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl5 = tmp3(1236).intl;
   obj3[3] = intl5.string(require(1236) /* getSystemLocale */.t["NdQ+lP"]);
-  items3[1] = callback2(require(4281) /* Text */.Text, obj3);
+  items3[1] = callback2(require(4298) /* Text */.Text, obj3);
   const obj4 = { onChange: callback, autoFocus: true, placeholder: null, defaultValue: null, maxLength: 32, isClearable: true };
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-  const tmp12 = showUserProfile(4713);
-  obj4[2] = showUserProfile(4123).getName(stateFromStores1);
+  const tmp12 = showUserProfile(4730);
+  obj4[2] = showUserProfile(4140).getName(stateFromStores1);
   obj4[3] = stateFromStores;
-  items3[2] = callback2(require(5914) /* TextField */.TextField, obj4);
+  items3[2] = callback2(require(5933) /* TextField */.TextField, obj4);
   obj1[4] = items3;
   obj[0] = callback3(tmp12, obj1);
   obj[1] = callback2(tmp11, obj);

@@ -1,10 +1,10 @@
-// Module ID: 5228
-// Function ID: 5229
+// Module ID: 5244
+// Function ID: 5245
 // Name: replaceFlagIconAndFlagColor
 // Dependencies: [2]
 // Exports: default
 
-// Module 5228 (replaceFlagIconAndFlagColor)
+// Module 5244 (replaceFlagIconAndFlagColor)
 const result = require("set").fileFinishedImporting("modules/guild_onboarding/LandingAssetUtils.tsx");
 
 export default function replaceFlagIconAndFlagColor(layers, p) {

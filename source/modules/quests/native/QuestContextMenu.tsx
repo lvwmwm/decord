@@ -1,26 +1,26 @@
-// Module ID: 14305
-// Function ID: 14306
+// Module ID: 14322
+// Function ID: 14323
 // Name: renderDefaultButton
-// Dependencies: [109, 19, 7081, 676, 21, 7672, 8528, 1236, 10377, 589, 5146, 11090, 10406, 10399, 7102, 500, 4266, 11084, 10408, 7108, 3997, 14261, 10379, 7878, 14306, 4233, 7104, 5677, 4237, 9434, 9435, 9439, 7109, 8521, 2]
+// Dependencies: [109, 19, 7100, 676, 21, 7691, 8545, 1236, 10393, 589, 5163, 11105, 10422, 10415, 7121, 500, 4283, 11099, 10424, 7127, 4014, 14275, 10395, 7895, 14323, 4250, 7123, 5696, 4254, 9451, 9452, 9456, 7128, 8538, 2]
 
-// Module 14305 (renderDefaultButton)
+// Module 14322 (renderDefaultButton)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "getQuestContentName";
 import initializeState from "initializeState";
 import { LinkingTypes } from "ME";
-import { jsx } from "module_14261";
+import { jsx } from "module_14275";
 
 const require = arg1;
 function renderDefaultButton(ref) {
   const obj = { ref: ref.ref };
   const merged = Object.assign(callback(ref, closure_3));
-  obj.icon = importDefault(8528);
+  obj.icon = importDefault(8545);
   obj.variant = "secondary";
   const intl = require(1236) /* getSystemLocale */.intl;
   obj.accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.CAgr1w);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj.accessibilityHint = intl2.string(require(1236) /* getSystemLocale */.t.hd0b7t);
-  return jsx(require(7672) /* IconButton */.IconButton, { ref: ref.ref });
+  return jsx(require(7691) /* IconButton */.IconButton, { ref: ref.ref });
 }
 let closure_3 = ["ref"];
 let c5 = importAllResult;

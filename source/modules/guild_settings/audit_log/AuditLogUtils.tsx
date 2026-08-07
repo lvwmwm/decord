@@ -1,10 +1,10 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16539
+// Function ID: 16540
 // Name: getPermissionChanges
-// Dependencies: [5158, 5225, 4486, 1377, 5202, 16513, 1372, 1964, 3921, 1903, 16512, 676, 1379, 11180, 1378, 3, 4360, 1236, 7695, 11, 16515, 506, 1384, 4475, 1935, 14, 688, 8990, 16516, 3954, 3866, 2]
+// Dependencies: [5175, 5241, 4503, 1377, 5218, 16538, 1372, 1964, 3938, 1903, 16537, 676, 1379, 11195, 1378, 3, 4377, 1236, 7712, 11, 16540, 506, 1384, 4492, 1935, 14, 688, 9007, 16541, 3971, 3883, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 16514 (getPermissionChanges)
+// Module 16539 (getPermissionChanges)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleUpdate from "handleUpdate";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -585,19 +585,19 @@ class ACTION_FILTER_ITEMS {
   }
 }
 let obj = {
-  [arg1(4360).TimeUnits.SECONDS]: (seconds) => {
+  [arg1(4377).TimeUnits.SECONDS]: (seconds) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.geSp4K, { seconds });
   },
-  [arg1(4360).TimeUnits.MINUTES]: (minutes) => {
+  [arg1(4377).TimeUnits.MINUTES]: (minutes) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.iXLF9W, { minutes });
   },
-  [arg1(4360).TimeUnits.HOURS]: (hours) => {
+  [arg1(4377).TimeUnits.HOURS]: (hours) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.xCjYxK, { hours });
   },
-  [arg1(4360).TimeUnits.DAYS]: (days) => {
+  [arg1(4377).TimeUnits.DAYS]: (days) => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["k2UNz+"], { days });
   }
@@ -842,7 +842,7 @@ export const getChangeStrings = function getChangeStrings(targetType) {
           __3TkD = __3TkD(1236).t.MWp6H7;
           obj16[AuditLogChangeKeys.TEMPORARY] = (newValue) => newValue.newValue ? __3TkD : _5kDYS3;
           const obj19 = {};
-          obj19[__3TkD(7695).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
+          obj19[__3TkD(7712).GuildInviteFlags.IS_GUEST_INVITE] = __3TkD(1236).t.XYZMbL;
           __3TkD = obj19;
           obj16[AuditLogChangeKeys.FLAGS] = (arg0) => __3TkD[arg0.newValue];
           obj16[AuditLogChangeKeys.ROLE_IDS] = () => __3TkD(1236).t.gb1Owj;
@@ -1313,12 +1313,12 @@ export const getSimpleAuditLogTitleContextFromChange = function getSimpleAuditLo
       const rounded = Math.round(diff / 1000 / 60);
       const obj2 = importDefault(11);
       const tmp25 = ROLES_REMOVE;
-      const timeAndUnit = ROLES_REMOVE(4360).getTimeAndUnit(rounded, items);
+      const timeAndUnit = ROLES_REMOVE(4377).getTimeAndUnit(rounded, items);
       if (null != timeAndUnit.unit) {
         if (null != timeAndUnit.time) {
           if (timeAndUnit.unit in obj) {
             ({ unit, unit: unit2 } = timeAndUnit);
-            if (unit2 === tmp25(4360).TimeUnits.SECONDS) {
+            if (unit2 === tmp25(4377).TimeUnits.SECONDS) {
               const _Math2 = Math;
               time = Math.round(diff / 1000);
             } else {
@@ -1713,9 +1713,9 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             found = require;
             found = dependencyMap;
-            if (require(16515) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+            if (require(16540) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
               return found(1236).t["PyEa+J"];
-            } else if (found(16515).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (found(16540).GuildFeedItemTypes.FORUM_POST === newValue) {
               return found(1236).t.hCuAb1;
             } else {
               return found(1236).t["UZ+U3A"];
@@ -1782,167 +1782,181 @@ export const getStringForPermission = function getStringForPermission(arg0, log)
   if (constants7.CREATE_INSTANT_INVITE === arg0) {
     stringResult = require;
     stringResult = dependencyMap;
-    const intl52 = require(1236) /* getSystemLocale */.intl;
-    return intl52.string(require(1236) /* getSystemLocale */.t.zJrgTG);
+    const intl55 = require(1236) /* getSystemLocale */.intl;
+    return intl55.string(require(1236) /* getSystemLocale */.t.zJrgTG);
   } else if (stringResult.KICK_MEMBERS === arg0) {
     stringResult = require;
     stringResult = dependencyMap;
-    const intl51 = require(1236) /* getSystemLocale */.intl;
-    return intl51.string(require(1236) /* getSystemLocale */.t.pBNv6i);
+    const intl54 = require(1236) /* getSystemLocale */.intl;
+    return intl54.string(require(1236) /* getSystemLocale */.t.pBNv6i);
   } else if (stringResult.BAN_MEMBERS === arg0) {
     stringResult = require;
     stringResult = dependencyMap;
-    const intl50 = require(1236) /* getSystemLocale */.intl;
-    return intl50.string(require(1236) /* getSystemLocale */.t.oTBA7N);
+    const intl53 = require(1236) /* getSystemLocale */.intl;
+    return intl53.string(require(1236) /* getSystemLocale */.t.oTBA7N);
   } else if (stringResult.ADMINISTRATOR === arg0) {
     stringResult = require;
     stringResult = dependencyMap;
-    const intl49 = require(1236) /* getSystemLocale */.intl;
-    return intl49.string(require(1236) /* getSystemLocale */.t.PGvZqX);
+    const intl52 = require(1236) /* getSystemLocale */.intl;
+    return intl52.string(require(1236) /* getSystemLocale */.t.PGvZqX);
   } else {
     stringResult = log;
     if (stringResult.MANAGE_CHANNELS === arg0) {
       if (log.targetType !== AuditLogTargetTypes.CHANNEL) {
-        if (log.targetType !== tmp97.CHANNEL_OVERWRITE) {
-          const intl47 = require(1236) /* getSystemLocale */.intl;
-          stringResult = intl47.string(require(1236) /* getSystemLocale */.t["9qLtWs"]);
+        if (log.targetType !== stringResult.CHANNEL_OVERWRITE) {
+          stringResult = require;
+          stringResult = dependencyMap;
+          const intl50 = require(1236) /* getSystemLocale */.intl;
+          stringResult = intl50.string(require(1236) /* getSystemLocale */.t["9qLtWs"]);
         }
         return stringResult;
       }
       stringResult = require;
       stringResult = dependencyMap;
-      const intl48 = require(1236) /* getSystemLocale */.intl;
-      stringResult = intl48.string(require(1236) /* getSystemLocale */.t.nAw15L);
+      const intl51 = require(1236) /* getSystemLocale */.intl;
+      stringResult = intl51.string(require(1236) /* getSystemLocale */.t.nAw15L);
     } else if (stringResult.MANAGE_GUILD === arg0) {
-      const intl46 = require(1236) /* getSystemLocale */.intl;
-      return intl46.string(require(1236) /* getSystemLocale */.t.QZRcfO);
+      stringResult = require;
+      stringResult = dependencyMap;
+      const intl49 = require(1236) /* getSystemLocale */.intl;
+      return intl49.string(require(1236) /* getSystemLocale */.t.QZRcfO);
     } else if (stringResult.VIEW_GUILD_ANALYTICS === arg0) {
-      const intl45 = require(1236) /* getSystemLocale */.intl;
-      return intl45.string(require(1236) /* getSystemLocale */.t["rQJBE/"]);
+      stringResult = dependencyMap;
+      const intl48 = require(1236) /* getSystemLocale */.intl;
+      return intl48.string(require(1236) /* getSystemLocale */.t["rQJBE/"]);
     } else if (stringResult.VIEW_CREATOR_MONETIZATION_ANALYTICS === arg0) {
-      const intl44 = require(1236) /* getSystemLocale */.intl;
-      return intl44.string(require(1236) /* getSystemLocale */.t["0lTLTv"]);
+      const intl47 = require(1236) /* getSystemLocale */.intl;
+      return intl47.string(require(1236) /* getSystemLocale */.t["0lTLTv"]);
     } else if (stringResult.CHANGE_NICKNAME === arg0) {
-      const intl43 = require(1236) /* getSystemLocale */.intl;
-      return intl43.string(require(1236) /* getSystemLocale */.t.dilOF6);
+      const intl46 = require(1236) /* getSystemLocale */.intl;
+      return intl46.string(require(1236) /* getSystemLocale */.t.dilOF6);
     } else if (stringResult.MANAGE_NICKNAMES === arg0) {
-      const intl42 = require(1236) /* getSystemLocale */.intl;
-      return intl42.string(require(1236) /* getSystemLocale */.t["t+Ct5x"]);
+      const intl45 = require(1236) /* getSystemLocale */.intl;
+      return intl45.string(require(1236) /* getSystemLocale */.t["t+Ct5x"]);
     } else if (stringResult.MANAGE_ROLES === arg0) {
-      const intl41 = require(1236) /* getSystemLocale */.intl;
-      return intl41.string(require(1236) /* getSystemLocale */.t["C8d+oG"]);
+      const intl44 = require(1236) /* getSystemLocale */.intl;
+      return intl44.string(require(1236) /* getSystemLocale */.t["C8d+oG"]);
     } else if (stringResult.MANAGE_WEBHOOKS === arg0) {
-      const intl40 = require(1236) /* getSystemLocale */.intl;
-      return intl40.string(require(1236) /* getSystemLocale */.t["/ADKmM"]);
+      const intl43 = require(1236) /* getSystemLocale */.intl;
+      return intl43.string(require(1236) /* getSystemLocale */.t["/ADKmM"]);
     } else if (stringResult.CREATE_GUILD_EXPRESSIONS === arg0) {
-      const intl39 = require(1236) /* getSystemLocale */.intl;
-      return intl39.string(require(1236) /* getSystemLocale */.t.HarVuP);
+      const intl42 = require(1236) /* getSystemLocale */.intl;
+      return intl42.string(require(1236) /* getSystemLocale */.t.HarVuP);
     } else if (stringResult.MANAGE_GUILD_EXPRESSIONS === arg0) {
-      const intl38 = require(1236) /* getSystemLocale */.intl;
-      return intl38.string(require(1236) /* getSystemLocale */.t.bbuXIn);
+      const intl41 = require(1236) /* getSystemLocale */.intl;
+      return intl41.string(require(1236) /* getSystemLocale */.t.bbuXIn);
     } else if (stringResult.VIEW_AUDIT_LOG === arg0) {
-      const intl37 = require(1236) /* getSystemLocale */.intl;
-      return intl37.string(require(1236) /* getSystemLocale */.t.fZgLpA);
+      const intl40 = require(1236) /* getSystemLocale */.intl;
+      return intl40.string(require(1236) /* getSystemLocale */.t.fZgLpA);
     } else if (stringResult.VIEW_CHANNEL === arg0) {
       if (log.targetType !== AuditLogTargetTypes.CHANNEL) {
-        if (log.targetType !== tmp71.CHANNEL_OVERWRITE) {
-          const intl35 = require(1236) /* getSystemLocale */.intl;
-          let stringResult1 = intl35.string(require(1236) /* getSystemLocale */.t.uV83yi);
+        if (log.targetType !== tmp77.CHANNEL_OVERWRITE) {
+          const intl38 = require(1236) /* getSystemLocale */.intl;
+          let stringResult1 = intl38.string(require(1236) /* getSystemLocale */.t.uV83yi);
         }
         return stringResult1;
       }
-      const intl36 = require(1236) /* getSystemLocale */.intl;
-      stringResult1 = intl36.string(require(1236) /* getSystemLocale */.t["W/A4Qp"]);
+      const intl39 = require(1236) /* getSystemLocale */.intl;
+      stringResult1 = intl39.string(require(1236) /* getSystemLocale */.t["W/A4Qp"]);
     } else if (stringResult.SEND_MESSAGES === arg0) {
-      const intl34 = require(1236) /* getSystemLocale */.intl;
-      return intl34.string(require(1236) /* getSystemLocale */.t.T32rkC);
+      const intl37 = require(1236) /* getSystemLocale */.intl;
+      return intl37.string(require(1236) /* getSystemLocale */.t.T32rkC);
     } else if (stringResult.SEND_TTS_MESSAGES === arg0) {
-      const intl33 = require(1236) /* getSystemLocale */.intl;
-      return intl33.string(require(1236) /* getSystemLocale */.t.Mg7bku);
+      const intl36 = require(1236) /* getSystemLocale */.intl;
+      return intl36.string(require(1236) /* getSystemLocale */.t.Mg7bku);
     } else if (stringResult.USE_APPLICATION_COMMANDS === arg0) {
-      const intl32 = require(1236) /* getSystemLocale */.intl;
-      return intl32.string(require(1236) /* getSystemLocale */.t.shbR1a);
+      const intl35 = require(1236) /* getSystemLocale */.intl;
+      return intl35.string(require(1236) /* getSystemLocale */.t.shbR1a);
     } else if (stringResult.MANAGE_MESSAGES === arg0) {
-      const intl31 = require(1236) /* getSystemLocale */.intl;
-      return intl31.string(require(1236) /* getSystemLocale */.t["6lU9xM"]);
+      const intl34 = require(1236) /* getSystemLocale */.intl;
+      return intl34.string(require(1236) /* getSystemLocale */.t["6lU9xM"]);
     } else if (stringResult.EMBED_LINKS === arg0) {
-      const intl30 = require(1236) /* getSystemLocale */.intl;
-      return intl30.string(require(1236) /* getSystemLocale */.t["969dEL"]);
+      const intl33 = require(1236) /* getSystemLocale */.intl;
+      return intl33.string(require(1236) /* getSystemLocale */.t["969dEL"]);
     } else if (stringResult.ATTACH_FILES === arg0) {
-      const intl29 = require(1236) /* getSystemLocale */.intl;
-      return intl29.string(require(1236) /* getSystemLocale */.t["3AS4UM"]);
+      const intl32 = require(1236) /* getSystemLocale */.intl;
+      return intl32.string(require(1236) /* getSystemLocale */.t["3AS4UM"]);
     } else if (stringResult.READ_MESSAGE_HISTORY === arg0) {
-      const intl28 = require(1236) /* getSystemLocale */.intl;
-      return intl28.string(require(1236) /* getSystemLocale */.t.l9ufaR);
+      const intl31 = require(1236) /* getSystemLocale */.intl;
+      return intl31.string(require(1236) /* getSystemLocale */.t.l9ufaR);
     } else if (stringResult.MENTION_EVERYONE === arg0) {
-      const intl27 = require(1236) /* getSystemLocale */.intl;
-      return intl27.string(require(1236) /* getSystemLocale */.t.Y78KGC);
+      const intl30 = require(1236) /* getSystemLocale */.intl;
+      return intl30.string(require(1236) /* getSystemLocale */.t.Y78KGC);
     } else if (stringResult.USE_EXTERNAL_EMOJIS === arg0) {
-      const intl26 = require(1236) /* getSystemLocale */.intl;
-      return intl26.string(require(1236) /* getSystemLocale */.t.BpBGZU);
+      const intl29 = require(1236) /* getSystemLocale */.intl;
+      return intl29.string(require(1236) /* getSystemLocale */.t.BpBGZU);
     } else if (stringResult.USE_EXTERNAL_STICKERS === arg0) {
-      const intl25 = require(1236) /* getSystemLocale */.intl;
-      return intl25.string(require(1236) /* getSystemLocale */.t["UeRs+b"]);
+      const intl28 = require(1236) /* getSystemLocale */.intl;
+      return intl28.string(require(1236) /* getSystemLocale */.t["UeRs+b"]);
     } else if (stringResult.ADD_REACTIONS === arg0) {
-      const intl24 = require(1236) /* getSystemLocale */.intl;
-      return intl24.string(require(1236) /* getSystemLocale */.t.yEoJAr);
+      const intl27 = require(1236) /* getSystemLocale */.intl;
+      return intl27.string(require(1236) /* getSystemLocale */.t.yEoJAr);
     } else if (stringResult.CONNECT === arg0) {
-      const intl23 = require(1236) /* getSystemLocale */.intl;
-      return intl23.string(require(1236) /* getSystemLocale */.t.S0W8Z5);
+      const intl26 = require(1236) /* getSystemLocale */.intl;
+      return intl26.string(require(1236) /* getSystemLocale */.t.S0W8Z5);
     } else if (stringResult.SPEAK === arg0) {
-      const intl22 = require(1236) /* getSystemLocale */.intl;
-      return intl22.string(require(1236) /* getSystemLocale */.t["8w1tIR"]);
+      const intl25 = require(1236) /* getSystemLocale */.intl;
+      return intl25.string(require(1236) /* getSystemLocale */.t["8w1tIR"]);
     } else if (stringResult.MUTE_MEMBERS === arg0) {
-      const intl21 = require(1236) /* getSystemLocale */.intl;
-      return intl21.string(require(1236) /* getSystemLocale */.t["8EI30/"]);
+      const intl24 = require(1236) /* getSystemLocale */.intl;
+      return intl24.string(require(1236) /* getSystemLocale */.t["8EI30/"]);
     } else if (stringResult.DEAFEN_MEMBERS === arg0) {
-      const intl20 = require(1236) /* getSystemLocale */.intl;
-      return intl20.string(require(1236) /* getSystemLocale */.t["9L47Fr"]);
+      const intl23 = require(1236) /* getSystemLocale */.intl;
+      return intl23.string(require(1236) /* getSystemLocale */.t["9L47Fr"]);
     } else if (stringResult.MOVE_MEMBERS === arg0) {
-      const intl19 = require(1236) /* getSystemLocale */.intl;
-      return intl19.string(require(1236) /* getSystemLocale */.t.YtjJPQ);
+      const intl22 = require(1236) /* getSystemLocale */.intl;
+      return intl22.string(require(1236) /* getSystemLocale */.t.YtjJPQ);
     } else if (stringResult.USE_VAD === arg0) {
-      const intl18 = require(1236) /* getSystemLocale */.intl;
-      return intl18.string(require(1236) /* getSystemLocale */.t["08zAV7"]);
+      const intl21 = require(1236) /* getSystemLocale */.intl;
+      return intl21.string(require(1236) /* getSystemLocale */.t["08zAV7"]);
     } else if (stringResult.PRIORITY_SPEAKER === arg0) {
-      const intl17 = require(1236) /* getSystemLocale */.intl;
-      return intl17.string(require(1236) /* getSystemLocale */.t.BVK71i);
+      const intl20 = require(1236) /* getSystemLocale */.intl;
+      return intl20.string(require(1236) /* getSystemLocale */.t.BVK71i);
     } else if (stringResult.STREAM === arg0) {
-      const intl16 = require(1236) /* getSystemLocale */.intl;
-      return intl16.string(require(1236) /* getSystemLocale */.t.FlNoSV);
+      const intl19 = require(1236) /* getSystemLocale */.intl;
+      return intl19.string(require(1236) /* getSystemLocale */.t.FlNoSV);
+    } else if (stringResult.USE_SOUNDBOARD === arg0) {
+      const intl18 = require(1236) /* getSystemLocale */.intl;
+      return intl18.string(require(1236) /* getSystemLocale */.t.Bco7NG);
+    } else if (stringResult.USE_EXTERNAL_SOUNDS === arg0) {
+      const intl17 = require(1236) /* getSystemLocale */.intl;
+      return intl17.string(require(1236) /* getSystemLocale */.t.pwaVJ6);
     } else if (stringResult.REQUEST_TO_SPEAK === arg0) {
-      const intl15 = require(1236) /* getSystemLocale */.intl;
-      return intl15.string(require(1236) /* getSystemLocale */.t["5kicT2"]);
+      const intl16 = require(1236) /* getSystemLocale */.intl;
+      return intl16.string(require(1236) /* getSystemLocale */.t["5kicT2"]);
     } else if (stringResult.USE_EMBEDDED_ACTIVITIES === arg0) {
-      const intl14 = require(1236) /* getSystemLocale */.intl;
-      return intl14.string(require(1236) /* getSystemLocale */.t.rLSGeh);
+      const intl15 = require(1236) /* getSystemLocale */.intl;
+      return intl15.string(require(1236) /* getSystemLocale */.t.rLSGeh);
     } else if (stringResult.CREATE_EVENTS === arg0) {
-      const intl13 = require(1236) /* getSystemLocale */.intl;
-      return intl13.string(require(1236) /* getSystemLocale */.t.qyjZua);
+      const intl14 = require(1236) /* getSystemLocale */.intl;
+      return intl14.string(require(1236) /* getSystemLocale */.t.qyjZua);
     } else if (stringResult.MANAGE_EVENTS === arg0) {
-      const intl12 = require(1236) /* getSystemLocale */.intl;
-      return intl12.string(require(1236) /* getSystemLocale */.t.HIgA5a);
+      const intl13 = require(1236) /* getSystemLocale */.intl;
+      return intl13.string(require(1236) /* getSystemLocale */.t.HIgA5a);
     } else if (stringResult.CREATE_PUBLIC_THREADS === arg0) {
-      const intl11 = require(1236) /* getSystemLocale */.intl;
-      return intl11.string(require(1236) /* getSystemLocale */.t["25rKnX"]);
+      const intl12 = require(1236) /* getSystemLocale */.intl;
+      return intl12.string(require(1236) /* getSystemLocale */.t["25rKnX"]);
     } else if (stringResult.CREATE_PRIVATE_THREADS === arg0) {
-      const intl10 = require(1236) /* getSystemLocale */.intl;
-      return intl10.string(require(1236) /* getSystemLocale */.t.QwbTSa);
+      const intl11 = require(1236) /* getSystemLocale */.intl;
+      return intl11.string(require(1236) /* getSystemLocale */.t.QwbTSa);
     } else if (stringResult.SEND_MESSAGES_IN_THREADS === arg0) {
-      const intl9 = require(1236) /* getSystemLocale */.intl;
-      return intl9.string(require(1236) /* getSystemLocale */.t.fTE74g);
+      const intl10 = require(1236) /* getSystemLocale */.intl;
+      return intl10.string(require(1236) /* getSystemLocale */.t.fTE74g);
     } else if (stringResult.MANAGE_THREADS === arg0) {
-      const intl8 = require(1236) /* getSystemLocale */.intl;
-      return intl8.string(require(1236) /* getSystemLocale */.t.kEqgr7);
+      const intl9 = require(1236) /* getSystemLocale */.intl;
+      return intl9.string(require(1236) /* getSystemLocale */.t.kEqgr7);
     } else if (stringResult.MODERATE_MEMBERS === arg0) {
-      const intl7 = require(1236) /* getSystemLocale */.intl;
-      return intl7.string(require(1236) /* getSystemLocale */.t["+RL6pz"]);
+      const intl8 = require(1236) /* getSystemLocale */.intl;
+      return intl8.string(require(1236) /* getSystemLocale */.t["+RL6pz"]);
     } else if (stringResult.SET_VOICE_CHANNEL_STATUS === arg0) {
-      const intl6 = require(1236) /* getSystemLocale */.intl;
-      return intl6.string(require(1236) /* getSystemLocale */.t.VBwkUf);
+      const intl7 = require(1236) /* getSystemLocale */.intl;
+      return intl7.string(require(1236) /* getSystemLocale */.t.VBwkUf);
     } else if (stringResult.SEND_POLLS === arg0) {
+      const intl6 = require(1236) /* getSystemLocale */.intl;
+      return intl6.string(require(1236) /* getSystemLocale */.t.UMQ7Ww);
+    } else if (stringResult.SEND_VOICE_MESSAGES === arg0) {
       const intl5 = require(1236) /* getSystemLocale */.intl;
-      return intl5.string(require(1236) /* getSystemLocale */.t.UMQ7Ww);
+      return intl5.string(require(1236) /* getSystemLocale */.t.WlWSBT);
     } else if (stringResult.USE_EXTERNAL_APPS === arg0) {
       const intl4 = require(1236) /* getSystemLocale */.intl;
       return intl4.string(require(1236) /* getSystemLocale */.t.TtA5rK);
@@ -2525,7 +2539,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
                             let tmp7 = ((targetId) => store.getChannel(targetId))(targetId);
                             let tmp10 = null;
                             if (tmp9) {
-                              tmp10 = ((channel) => found(4475).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true))(tmp7);
+                              tmp10 = ((channel) => found(4492).computeChannelName(channel, mergeGuildAvatar, upsertRelationship, true))(tmp7);
                             }
                             let tmp11 = tmp10;
                             if (null == tmp10) {
@@ -2610,7 +2624,7 @@ export const transformLogs = function transformLogs(arr, arg1) {
           found = null != found && true;
           found = null;
           if (found) {
-            found = ((found) => found(4475).computeChannelName(found, mergeGuildAvatar, upsertRelationship, true))(found);
+            found = ((found) => found(4492).computeChannelName(found, mergeGuildAvatar, upsertRelationship, true))(found);
           }
           if (null == found) {
             found = outer1_14;

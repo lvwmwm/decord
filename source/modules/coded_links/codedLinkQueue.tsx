@@ -1,10 +1,10 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16407
+// Function ID: 16408
 // Name: queueMessageLinkFetch
-// Dependencies: [3, 16382, 2]
+// Dependencies: [3, 16408, 2]
 // Exports: queueMessageLinkFetch
 
-// Module 16381 (queueMessageLinkFetch)
+// Module 16407 (queueMessageLinkFetch)
 let c0 = new require("timestamp")("codedLinkQueue");
 const obj = new require("_isNativeReflectConstruct")({ concurrency: 5, intervalCap: 10, interval: 2000 });
 obj.on("add", () => {

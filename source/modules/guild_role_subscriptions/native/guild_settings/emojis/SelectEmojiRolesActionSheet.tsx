@@ -1,10 +1,10 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 16782
+// Function ID: 16783
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1301, 505, 21, 4285, 712, 5219, 14360, 4827, 1297, 1236, 5376, 5685, 7931, 7890, 4281, 2]
+// Dependencies: [32, 19, 17, 1301, 505, 21, 4302, 712, 5235, 14376, 4844, 1297, 1236, 5395, 5704, 7948, 7907, 4298, 2]
 // Exports: default
 
-// Module 16762 (SelectEmojiRolesActionSheet)
+// Module 16782 (SelectEmojiRolesActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "Text";
@@ -67,7 +67,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   }), 2);
   first = tmp2[0];
   React = tmp2[1];
-  let obj = require(14360) /* useFetchListingsForGuild */;
+  let obj = require(14376) /* useFetchListingsForGuild */;
   subscriptionListingsForGuild = obj.useSubscriptionListingsForGuild(guildId, { includeSoftDeleted: true, sortDeletedListingsLast: true });
   obj = {
     onPress() {
@@ -93,17 +93,17 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   }
   obj[1] = stringResult;
   obj[3] = closure_6(require(1297) /* Button */.LegacyText, obj);
-  let tmp7Result = tmp7(require(4827) /* PressableBase */.PressableOpacity, obj);
+  let tmp7Result = tmp7(require(4844) /* PressableBase */.PressableOpacity, obj);
   let obj1 = { title: null, subtitle: null, trailing: null };
   const intl3 = tmp5(1236).intl;
   obj1[0] = intl3.string(require(1236) /* getSystemLocale */.t.JPU0EF);
   const intl4 = tmp5(1236).intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t.MZusPv);
   obj1[2] = tmp7Result;
-  tmp7Result = tmp7(tmp5(5376).BottomSheetTitleHeader, obj1);
+  tmp7Result = tmp7(tmp5(5395).BottomSheetTitleHeader, obj1);
   let obj2 = { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: null };
   const items1 = [subscriptionListingsForGuild.length];
-  obj2[4] = closure_6(emoji(7931), {
+  obj2[4] = closure_6(emoji(7948), {
     inActionSheet: true,
     style: tmp.list,
     itemSize: closure_9,
@@ -157,5 +157,5 @@ export default function SelectEmojiRolesActionSheet(arg0) {
       return outer1_7(outer1_8, { children });
     }
   });
-  return closure_6(require(5685) /* ActionSheet */.ActionSheet, obj2);
+  return closure_6(require(5704) /* ActionSheet */.ActionSheet, obj2);
 };

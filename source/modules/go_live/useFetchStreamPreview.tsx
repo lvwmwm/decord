@@ -1,10 +1,10 @@
-// Module ID: 10864
-// Function ID: 10865
+// Module ID: 10876
+// Function ID: 10877
 // Name: useFetchStreamPreview
-// Dependencies: [19, 4466, 1372, 3912, 1960, 505, 589, 4464, 2]
+// Dependencies: [19, 4483, 1372, 3929, 1960, 505, 589, 4481, 2]
 // Exports: default
 
-// Module 10864 (useFetchStreamPreview)
+// Module 10876 (useFetchStreamPreview)
 import noop from "noop";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";

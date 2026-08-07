@@ -1,21 +1,21 @@
-// Module ID: 4130
-// Function ID: 4131
+// Module ID: 4147
+// Function ID: 4148
 // Name: AccessibilityAnnouncer
-// Dependencies: [2, 4099, 3994, 4093]
+// Dependencies: [2, 4116, 4011, 4110]
 
-// Module 4130 (AccessibilityAnnouncer)
+// Module 4147 (AccessibilityAnnouncer)
 const result = require("isThemeLight").fileFinishedImporting("design/shared.tsx");
 
-export const AccessibilityAnnouncer = require("module_4099").AccessibilityAnnouncer;
-export const AccessibilityPreferencesContext = require("module_4099").AccessibilityPreferencesContext;
-export const LOW_SATURATION_THRESHOLD = require("module_4099").LOW_SATURATION_THRESHOLD;
-export const ContrastPreference = require("module_4099").ContrastPreference;
-export const ForcedColorsPreference = require("module_4099").ForcedColorsPreference;
-export const MotionPreference = require("module_4099").MotionPreference;
-export const RoleStyle = require("module_4099").RoleStyle;
-export const AccessibilityPreferences = require("module_4099").AccessibilityPreferences;
-export const useThemeContext = require("module_4099").useThemeContext;
-export const ThemeContextType = require("module_4099").ThemeContextType;
+export const AccessibilityAnnouncer = require("module_4116").AccessibilityAnnouncer;
+export const AccessibilityPreferencesContext = require("module_4116").AccessibilityPreferencesContext;
+export const LOW_SATURATION_THRESHOLD = require("module_4116").LOW_SATURATION_THRESHOLD;
+export const ContrastPreference = require("module_4116").ContrastPreference;
+export const ForcedColorsPreference = require("module_4116").ForcedColorsPreference;
+export const MotionPreference = require("module_4116").MotionPreference;
+export const RoleStyle = require("module_4116").RoleStyle;
+export const AccessibilityPreferences = require("module_4116").AccessibilityPreferences;
+export const useThemeContext = require("module_4116").useThemeContext;
+export const ThemeContextType = require("module_4116").ThemeContextType;
 export const isThemeDark = require("isThemeLight").isThemeDark;
 export const isThemeLight = require("isThemeLight").isThemeLight;
 export const getContrastingColor = require("WCAGContrastRatios").getContrastingColor;

@@ -1,10 +1,10 @@
-// Module ID: 5152
-// Function ID: 5153
+// Module ID: 5169
+// Function ID: 5170
 // Name: settingsPathToRoute
-// Dependencies: [32, 685, 676, 5153, 5154, 698, 5155, 2]
+// Dependencies: [32, 685, 676, 5170, 5171, 698, 5172, 2]
 // Exports: parseSettingsUrl, settingsPathToRoute, trackParseSettingsUrl
 
-// Module 5152 (settingsPathToRoute)
+// Module 5169 (settingsPathToRoute)
 import _slicedToArray from "_slicedToArray";
 import { UserSettingsPath } from "MAX_FAVORITES";
 import ME from "ME";
@@ -61,48 +61,48 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
   const found = items.filter(Boolean);
   const joined = found.join("/");
   const str = path.split("?")[0];
-  const isEligibleForUserSettingsRedesign4DExperiment = require(5153) /* apexExperiment */.getIsEligibleForUserSettingsRedesign4DExperiment("UserSection");
-  let obj = { [ACCOUNT]: require(5154) /* WebUserSettings */.WebUserSettings.ACCOUNT_PANEL, [ACCOUNT_STANDING]: require(5154) /* WebUserSettings */.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [ACCOUNT_ACCOUNT_STANDING]: require(5154) /* WebUserSettings */.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [PROFILE_CUSTOMIZATION]: require(5154) /* WebUserSettings */.WebUserSettings.PROFILE_PANEL };
+  const isEligibleForUserSettingsRedesign4DExperiment = require(5170) /* apexExperiment */.getIsEligibleForUserSettingsRedesign4DExperiment("UserSection");
+  let obj = { [ACCOUNT]: require(5171) /* WebUserSettings */.WebUserSettings.ACCOUNT_PANEL, [ACCOUNT_STANDING]: require(5171) /* WebUserSettings */.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [ACCOUNT_ACCOUNT_STANDING]: require(5171) /* WebUserSettings */.WebUserSettings.ACCOUNT_STANDING_CATEGORY, [PROFILE_CUSTOMIZATION]: require(5171) /* WebUserSettings */.WebUserSettings.PROFILE_PANEL };
   ({ ACCOUNT, ACCOUNT_STANDING, ACCOUNT_ACCOUNT_STANDING, PROFILE_CUSTOMIZATION, CONTENT_AND_SOCIAL } = UserSettingsPath);
-  const WebUserSettings = require(5154) /* WebUserSettings */.WebUserSettings;
+  const WebUserSettings = require(5171) /* WebUserSettings */.WebUserSettings;
   obj[CONTENT_AND_SOCIAL] = isEligibleForUserSettingsRedesign4DExperiment ? WebUserSettings.MESSAGING_PERMISSIONS_PANEL : WebUserSettings.CONTENT_AND_SOCIAL_PANEL;
-  obj[UserSettingsPath.CONNECTED_GAMES] = require(5154) /* WebUserSettings */.WebUserSettings.CONNECTED_GAMES_CATEGORY;
-  obj[UserSettingsPath.CONTENT_AND_SOCIAL_CONNECTED_GAMES] = require(5154) /* WebUserSettings */.WebUserSettings.CONNECTED_GAMES_CATEGORY;
-  obj[UserSettingsPath.DATA_AND_PRIVACY] = require(5154) /* WebUserSettings */.WebUserSettings.DATA_AND_PRIVACY_PANEL;
-  obj[UserSettingsPath.PRIVACY_AND_SAFETY] = require(5154) /* WebUserSettings */.WebUserSettings.DATA_AND_PRIVACY_PANEL;
-  obj[UserSettingsPath.FAMILY_CENTER] = require(5154) /* WebUserSettings */.WebUserSettings.FAMILY_CENTER_PANEL;
-  obj[UserSettingsPath.SESSIONS] = require(5154) /* WebUserSettings */.WebUserSettings.SESSIONS_PANEL;
-  const WebUserSettings2 = tmp5(5154).WebUserSettings;
+  obj[UserSettingsPath.CONNECTED_GAMES] = require(5171) /* WebUserSettings */.WebUserSettings.CONNECTED_GAMES_CATEGORY;
+  obj[UserSettingsPath.CONTENT_AND_SOCIAL_CONNECTED_GAMES] = require(5171) /* WebUserSettings */.WebUserSettings.CONNECTED_GAMES_CATEGORY;
+  obj[UserSettingsPath.DATA_AND_PRIVACY] = require(5171) /* WebUserSettings */.WebUserSettings.DATA_AND_PRIVACY_PANEL;
+  obj[UserSettingsPath.PRIVACY_AND_SAFETY] = require(5171) /* WebUserSettings */.WebUserSettings.DATA_AND_PRIVACY_PANEL;
+  obj[UserSettingsPath.FAMILY_CENTER] = require(5171) /* WebUserSettings */.WebUserSettings.FAMILY_CENTER_PANEL;
+  obj[UserSettingsPath.SESSIONS] = require(5171) /* WebUserSettings */.WebUserSettings.SESSIONS_PANEL;
+  const WebUserSettings2 = tmp5(5171).WebUserSettings;
   obj[UserSettingsPath.AUTHORIZED_APPS] = isEligibleForUserSettingsRedesign4DExperiment ? WebUserSettings2.AUTHORIZED_APPS_CATEGORY : WebUserSettings2.AUTHORIZED_APPS_PANEL;
-  const WebUserSettings3 = tmp5(5154).WebUserSettings;
+  const WebUserSettings3 = tmp5(5171).WebUserSettings;
   obj[UserSettingsPath.CONNECTIONS] = isEligibleForUserSettingsRedesign4DExperiment ? WebUserSettings3.CONNECTIONS_CATEGORY : WebUserSettings3.CONNECTIONS_PANEL;
-  obj[UserSettingsPath.CLIPS] = require(5154) /* WebUserSettings */.WebUserSettings.CLIPS_PANEL;
-  obj[UserSettingsPath.PREMIUM] = require(5154) /* WebUserSettings */.WebUserSettings.NITRO_PANEL;
-  obj[UserSettingsPath.GUILD_BOOSTING] = require(5154) /* WebUserSettings */.WebUserSettings.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL;
-  obj[UserSettingsPath.SUBSCRIPTIONS] = require(5154) /* WebUserSettings */.WebUserSettings.SUBSCRIPTIONS_PANEL;
-  obj[UserSettingsPath.SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS] = require(5154) /* WebUserSettings */.WebUserSettings.SUBSCRIPTIONS_PANEL;
-  obj[UserSettingsPath.INVENTORY] = require(5154) /* WebUserSettings */.WebUserSettings.GIFT_PANEL;
-  obj[UserSettingsPath.BILLING] = require(5154) /* WebUserSettings */.WebUserSettings.BILLING_PANEL;
-  obj[UserSettingsPath.APPEARANCE] = require(5154) /* WebUserSettings */.WebUserSettings.APPEARANCE_PANEL;
-  obj[UserSettingsPath.ACCESSIBILITY] = require(5154) /* WebUserSettings */.WebUserSettings.ACCESSIBILITY_PANEL;
-  obj[UserSettingsPath.VOICE] = require(5154) /* WebUserSettings */.WebUserSettings.VOICE_AND_VIDEO_PANEL;
-  obj[UserSettingsPath.POGGERMODE] = require(5154) /* WebUserSettings */.WebUserSettings.POGGERMODE_PANEL;
-  obj[UserSettingsPath.TEXT] = require(5154) /* WebUserSettings */.WebUserSettings.APPEARANCE_MESSAGES_CATEGORY;
-  obj[UserSettingsPath.NOTIFICATIONS] = require(5154) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_PANEL;
-  obj[UserSettingsPath.EMAILS] = require(5154) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY;
-  obj[UserSettingsPath.NOTIFICATIONS_EMAILS] = require(5154) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY;
-  obj[UserSettingsPath.KEYBINDS] = require(5154) /* WebUserSettings */.WebUserSettings.SYSTEM_CUSTOM_KEYBINDS_CATEGORY;
-  obj[UserSettingsPath.SYSTEM] = require(5154) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL;
-  obj[UserSettingsPath.LANGUAGE] = require(5154) /* WebUserSettings */.WebUserSettings.LANGUAGE_AND_TIME_PANEL;
-  obj[UserSettingsPath.WINDOWS] = require(5154) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL;
-  obj[UserSettingsPath.LINUX] = require(5154) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL;
-  obj[UserSettingsPath.STREAMER_MODE] = require(5154) /* WebUserSettings */.WebUserSettings.STREAMER_MODE_CATEGORY;
-  obj[UserSettingsPath.ADVANCED] = require(5154) /* WebUserSettings */.WebUserSettings.DEVELOPER_PANEL;
-  obj[UserSettingsPath.ACTIVITY_PRIVACY] = require(5154) /* WebUserSettings */.WebUserSettings.ACTIVITY_PRIVACY_PANEL;
-  obj[UserSettingsPath.REGISTERED_GAMES] = require(5154) /* WebUserSettings */.WebUserSettings.REGISTERED_GAMES_PANEL;
-  obj[UserSettingsPath.OVERLAY] = require(5154) /* WebUserSettings */.WebUserSettings.OVERLAY_PANEL;
-  obj[UserSettingsPath.EXPERIMENTS] = require(5154) /* WebUserSettings */.WebUserSettings.EXPERIMENTS_PANEL;
-  obj[UserSettingsPath.DEVELOPER_OPTIONS] = require(5154) /* WebUserSettings */.WebUserSettings.DEVELOPER_OPTIONS_PANEL;
+  obj[UserSettingsPath.CLIPS] = require(5171) /* WebUserSettings */.WebUserSettings.CLIPS_PANEL;
+  obj[UserSettingsPath.PREMIUM] = require(5171) /* WebUserSettings */.WebUserSettings.NITRO_PANEL;
+  obj[UserSettingsPath.GUILD_BOOSTING] = require(5171) /* WebUserSettings */.WebUserSettings.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL;
+  obj[UserSettingsPath.SUBSCRIPTIONS] = require(5171) /* WebUserSettings */.WebUserSettings.SUBSCRIPTIONS_PANEL;
+  obj[UserSettingsPath.SUBSCRIPTIONS_ROLE_SUBSCRIPTIONS] = require(5171) /* WebUserSettings */.WebUserSettings.SUBSCRIPTIONS_PANEL;
+  obj[UserSettingsPath.INVENTORY] = require(5171) /* WebUserSettings */.WebUserSettings.GIFT_PANEL;
+  obj[UserSettingsPath.BILLING] = require(5171) /* WebUserSettings */.WebUserSettings.BILLING_PANEL;
+  obj[UserSettingsPath.APPEARANCE] = require(5171) /* WebUserSettings */.WebUserSettings.APPEARANCE_PANEL;
+  obj[UserSettingsPath.ACCESSIBILITY] = require(5171) /* WebUserSettings */.WebUserSettings.ACCESSIBILITY_PANEL;
+  obj[UserSettingsPath.VOICE] = require(5171) /* WebUserSettings */.WebUserSettings.VOICE_AND_VIDEO_PANEL;
+  obj[UserSettingsPath.POGGERMODE] = require(5171) /* WebUserSettings */.WebUserSettings.POGGERMODE_PANEL;
+  obj[UserSettingsPath.TEXT] = require(5171) /* WebUserSettings */.WebUserSettings.APPEARANCE_MESSAGES_CATEGORY;
+  obj[UserSettingsPath.NOTIFICATIONS] = require(5171) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_PANEL;
+  obj[UserSettingsPath.EMAILS] = require(5171) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY;
+  obj[UserSettingsPath.NOTIFICATIONS_EMAILS] = require(5171) /* WebUserSettings */.WebUserSettings.NOTIFICATIONS_EMAIL_CATEGORY;
+  obj[UserSettingsPath.KEYBINDS] = require(5171) /* WebUserSettings */.WebUserSettings.SYSTEM_CUSTOM_KEYBINDS_CATEGORY;
+  obj[UserSettingsPath.SYSTEM] = require(5171) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL;
+  obj[UserSettingsPath.LANGUAGE] = require(5171) /* WebUserSettings */.WebUserSettings.LANGUAGE_AND_TIME_PANEL;
+  obj[UserSettingsPath.WINDOWS] = require(5171) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL;
+  obj[UserSettingsPath.LINUX] = require(5171) /* WebUserSettings */.WebUserSettings.SYSTEM_PANEL;
+  obj[UserSettingsPath.STREAMER_MODE] = require(5171) /* WebUserSettings */.WebUserSettings.STREAMER_MODE_CATEGORY;
+  obj[UserSettingsPath.ADVANCED] = require(5171) /* WebUserSettings */.WebUserSettings.DEVELOPER_PANEL;
+  obj[UserSettingsPath.ACTIVITY_PRIVACY] = require(5171) /* WebUserSettings */.WebUserSettings.ACTIVITY_PRIVACY_PANEL;
+  obj[UserSettingsPath.REGISTERED_GAMES] = require(5171) /* WebUserSettings */.WebUserSettings.REGISTERED_GAMES_PANEL;
+  obj[UserSettingsPath.OVERLAY] = require(5171) /* WebUserSettings */.WebUserSettings.OVERLAY_PANEL;
+  obj[UserSettingsPath.EXPERIMENTS] = require(5171) /* WebUserSettings */.WebUserSettings.EXPERIMENTS_PANEL;
+  obj[UserSettingsPath.DEVELOPER_OPTIONS] = require(5171) /* WebUserSettings */.WebUserSettings.DEVELOPER_OPTIONS_PANEL;
   let values = Object.values(tmp8);
   let tmp9;
   if (values.includes(joined)) {
@@ -118,11 +118,11 @@ export const parseSettingsUrl = function parseSettingsUrl(arg0) {
     tmp9 = tmp10;
   }
   obj = { target: tmp9, path: joined, params: null };
-  const obj2 = require(5153) /* apexExperiment */;
+  const obj2 = require(5170) /* apexExperiment */;
   if (search == null) {
     const _location = location;
     search = location.search;
   }
-  obj[2] = require(5155) /* keysSorter */.parse(search);
+  obj[2] = require(5172) /* keysSorter */.parse(search);
   return obj;
 };

@@ -1,9 +1,9 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 15120
+// Function ID: 15121
 // Name: renderCard
-// Dependencies: [32, 19, 17, 14442, 676, 21, 7933, 4285, 712, 5407, 8414, 15105, 698, 4711, 1481, 15106, 5649, 5669, 15113, 15114, 4145, 10248, 12, 7666, 1236, 15115, 15116, 15133, 15135, 15136, 15119, 15132, 15137, 15131, 15118, 1351, 2]
+// Dependencies: [32, 19, 17, 14458, 676, 21, 7950, 4302, 712, 5426, 8431, 15121, 698, 4728, 1481, 15122, 5668, 5688, 15129, 15130, 4162, 10264, 12, 7685, 1236, 15131, 15132, 15149, 15151, 15152, 15135, 15148, 15153, 15147, 15134, 1351, 2]
 
-// Module 15104 (renderCard)
+// Module 15120 (renderCard)
 import HappeningNowCardCreateChannel from "HappeningNowCardCreateChannel";
 import importAllResult from "useHappeningNowScrollBehavior";
 import get_ActivityIndicator from "QUICK_SWITCHER";
@@ -27,7 +27,7 @@ function renderCard(kind, fullWidth) {
       kind = kind.kind;
     }
   }
-  return jsx(require(15115) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
+  return jsx(require(15131) /* HappeningNowCardPlaceholder */.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
 }
 function keyExtractor(voiceState) {
   let kind;
@@ -56,7 +56,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   obj = { ref };
   const merged = Object.assign(arg0);
   obj[1] = <closure_5 ref={arg1} />;
-  return jsx(require(5407) /* Directions */.GestureDetector, { ref });
+  return jsx(require(5426) /* Directions */.GestureDetector, { ref });
 });
 forwardRefResult.displayName = "HappeningNowScrollView";
 const NativeResult = Gesture.Native();
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo((listRef) => {
   obj = obj(isFocused[14]);
   isFocused = obj.useIsFocused();
   ref = isFocused;
-  obj = { withoutUserCards: "T", guildId: "Array", showMultipleActivitiesPerChannel: 2682, isFocused: 2683 };
+  obj = { withoutUserCards: "T", guildId: "Array", showMultipleActivitiesPerChannel: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002587634462038079, isFocused: 0.000000000000000000000000000000000000000000000000000000000000000000000010187649789858458 };
   obj[3] = isFocused;
   const tmp7 = callback(ref(isFocused[15])(listRef.cards, obj), 2);
   let first = tmp7[0];

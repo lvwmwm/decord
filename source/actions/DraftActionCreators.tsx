@@ -1,9 +1,9 @@
-// Module ID: 7157
-// Function ID: 7158
+// Module ID: 7176
+// Function ID: 7177
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 7157 (dispatcher)
+// Module 7176 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/DraftActionCreators.tsx");
 
 export default {

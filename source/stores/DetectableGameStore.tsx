@@ -1,9 +1,9 @@
-// Module ID: 4317
-// Function ID: 4318
+// Module ID: 4334
+// Function ID: 4335
 // Name: gameFromServer
-// Dependencies: [4308, 676, 4311, 687, 4318, 595, 500, 4319, 589, 11, 1351, 1935, 698, 3957, 709, 2]
+// Dependencies: [4325, 676, 4328, 687, 4335, 595, 500, 4336, 589, 11, 1351, 1935, 698, 3974, 709, 2]
 
-// Module 4317 (gameFromServer)
+// Module 4334 (gameFromServer)
 import { createExecutable } from "createExecutable";
 import { AnalyticEvents } from "ME";
 import { ApplicationTypes } from "ApplicationTypes";
@@ -13,44 +13,67 @@ import { PersistedStore } from "initialize";
 import set from "ApplicationTypes";
 
 function gameFromServer(id) {
+  let aliases;
+  let executables;
+  let third_party_skus;
+  ({ executables, aliases, third_party_skus } = id);
   const obj = { id: id.id, name: id.name, executables: null, aliases: null, thirdPartySkus: null };
-  let executables = id.executables;
-  if (executables == null) {
-    executables = [];
+  let mapped;
+  if (executables != null) {
+    mapped = executables.map(createExecutable);
   }
-  obj[2] = executables.map(createExecutable);
-  let aliases = id.aliases;
-  if (aliases == null) {
-    aliases = [];
+  if (null == mapped) {
+    mapped = closure_26;
+  }
+  obj[2] = mapped;
+  if (null == aliases) {
+    aliases = closure_26;
   }
   obj[3] = aliases;
-  let third_party_skus = id.third_party_skus;
-  if (third_party_skus == null) {
-    third_party_skus = [];
+  if (null == third_party_skus) {
+    third_party_skus = closure_26;
   }
   obj[4] = third_party_skus;
   return obj;
 }
 function convertGameRecordToGame(id) {
-  const obj = { id: id.id, name: id.name, executables: id.executables, aliases: id.aliases, thirdPartySkus: null };
-  let thirdPartySkus = id.thirdPartySkus;
-  if (thirdPartySkus == null) {
-    thirdPartySkus = [];
+  let aliases;
+  let executables;
+  let thirdPartySkus;
+  ({ executables, aliases, thirdPartySkus } = id);
+  const obj = { id: id.id, name: id.name, executables: null, aliases: null, thirdPartySkus: null };
+  if (null == executables) {
+    executables = closure_26;
+  }
+  obj[2] = executables;
+  if (null == aliases) {
+    aliases = closure_26;
+  }
+  obj[3] = aliases;
+  if (null == thirdPartySkus) {
+    thirdPartySkus = closure_26;
   }
   obj[4] = thirdPartySkus;
   return obj;
 }
 function addGameIdToNameCache(id, item10026) {
-  if (null == dependencyMap[item10026]) {
-    dependencyMap[item10026] = [];
+  const value = map.get(item10026);
+  if (undefined === value) {
+    const result = obj.set(item10026, id);
+  } else {
+    const _Array = Array;
+    if (Array.isArray(value)) {
+      value.push(id);
+    } else {
+      const items = [value, id];
+      const result1 = obj.set(item10026, items);
+    }
   }
-  let arr = dependencyMap[item10026];
-  arr = arr.push(id);
 }
 function addDetectableGame(id) {
   let name;
   let tmp = id;
-  if (id instanceof require(4319) /* GameTheme */.DetectableGameRecord) {
+  if (id instanceof require(4336) /* GameTheme */.DetectableGameRecord) {
     tmp = convertGameRecordToGame(id);
     const tmp2 = convertGameRecordToGame;
   }
@@ -65,8 +88,8 @@ function addDetectableGame(id) {
   if (obj.isDesktop()) {
     const executables = id.executables;
     for (const item10044 of executables) {
-      let tmp10 = closure_10;
-      closure_10[item10044.name] = tmp.id;
+      let tmp10 = map1;
+      let result1 = map1.set(item10044.name, tmp.id);
       continue;
     }
   }
@@ -74,11 +97,11 @@ function addDetectableGame(id) {
 const GameStoreReportedGames = "GameStoreReportedGames";
 const DAY = require("set").Millis.DAY;
 const metroImportAll = new require("keys")();
-let closure_9 = Object.create(null);
-let closure_10 = Object.create(null);
+const map = new Map();
+const map1 = new Map();
 let obj = Storage.get("GameStoreReportedGames");
 if (obj == null) {
-  let _Object = Object;
+  const _Object = Object;
   obj = Object.create(null);
 }
 let c12 = "";
@@ -90,7 +113,7 @@ let c17 = false;
 let c18 = "";
 let closure_19 = [];
 let closure_20 = [];
-const map = new Map();
+const map2 = new Map();
 const HOUR = require("set").Millis.HOUR;
 let set = new Set();
 const set1 = new Set();
@@ -108,6 +131,7 @@ if (!set.isWindows()) {
   }
   str = str2;
 }
+let closure_26 = Object.freeze([]);
 class DetectableGameStore extends PersistedStore {
 }
 const prototype = DetectableGameStore.prototype;
@@ -167,13 +191,16 @@ prototype["searchGamesByName"] = function searchGamesByName(name) {
   if (null == name) {
     return [];
   } else {
-    const formatted = name.toLowerCase();
-    const _Object = Object;
-    const call = hasOwnProperty.call;
-    if (typeof call === "unknown" ? hasOwnProperty(formatted) : call(dependencyMap, formatted)) {
-      let items = dependencyMap[formatted];
+    const value = map.get(name.toLowerCase());
+    if (undefined === value) {
+      let items = [];
     } else {
-      items = [];
+      const _Array = Array;
+      items = value;
+      if (!Array.isArray(value)) {
+        const items1 = [value];
+        items = items1;
+      }
     }
     return items;
   }
@@ -383,7 +410,7 @@ prototype["canFetchExecutableBlocklist"] = function canFetchExecutableBlocklist(
 prototype["getGameByExecutable"] = function getGameByExecutable(found) {
   if (null != found) {
     const self = this;
-    return this.getDetectableGame(table[found]);
+    return this.getDetectableGame(map1.get(found));
   }
 };
 prototype["shouldBlock"] = function shouldBlock(exePath) {
@@ -519,8 +546,8 @@ prototype["maybeTrackBlock"] = function maybeTrackBlock(exePath, explicit_list, 
   if (str2 == null) {
     str2 = "unknown";
   }
-  let obj = map;
-  const value = map.get(str2);
+  let obj = map2;
+  const value = map2.get(str2);
   const timestamp = Date.now();
   let tmp3 = null == value;
   if (!tmp3) {
@@ -551,7 +578,7 @@ prototype["shouldReport"] = function shouldReport(name) {
     if (tmp3) {
       tmp3 = null != obj[name.name];
     }
-    const ShowCurrentGame = require(3957) /* explicitContentFromProto */.ShowCurrentGame;
+    const ShowCurrentGame = require(3974) /* explicitContentFromProto */.ShowCurrentGame;
     let setting = ShowCurrentGame.getSetting();
     if (setting) {
       setting = !c13;
@@ -581,11 +608,21 @@ let items = [
       let mapped;
       if (detectableGames != null) {
         mapped = detectableGames.map((aliases) => {
+          let executables;
+          let thirdPartySkus;
           const detectableGameRecord = new callback(table[7]).DetectableGameRecord(aliases);
-          const obj = { id: detectableGameRecord.id, name: detectableGameRecord.name, executables: detectableGameRecord.executables, aliases: detectableGameRecord.aliases, thirdPartySkus: null };
-          let thirdPartySkus = detectableGameRecord.thirdPartySkus;
-          if (thirdPartySkus == null) {
-            thirdPartySkus = [];
+          ({ executables, aliases, thirdPartySkus } = detectableGameRecord);
+          const obj = { id: detectableGameRecord.id, name: detectableGameRecord.name, executables: null, aliases: null, thirdPartySkus: null };
+          if (null == executables) {
+            executables = closure_26;
+          }
+          obj[2] = executables;
+          if (null == aliases) {
+            aliases = closure_26;
+          }
+          obj[3] = aliases;
+          if (null == thirdPartySkus) {
+            thirdPartySkus = closure_26;
           }
           obj[4] = thirdPartySkus;
           return obj;
@@ -637,12 +674,11 @@ DetectableGameStore.migrations = items;
 obj = {
   OVERLAY_INITIALIZE: function handleOverlayInitialize(arg0) {
     tmp2.clear();
-    let closure_9 = Object.create(null);
-    let closure_10 = Object.create(null);
-    tmp2 = arg0.detectableApplications[Symbol.iterator]();
-    while (tmp2 !== undefined) {
-      let tmp4 = addDetectableGame;
-      let tmp5 = addDetectableGame(tmp3);
+    map.clear();
+    map1.clear();
+    while (tmp4 !== undefined) {
+      let tmp6 = addDetectableGame;
+      let tmp7 = addDetectableGame(tmp5);
       continue;
     }
   },
@@ -663,15 +699,13 @@ obj = {
     }
     if (tmp) {
       tmp2.clear();
-      const _Object = Object;
-      let closure_9 = Object.create(null);
-      const _Object2 = Object;
-      let closure_10 = Object.create(null);
+      map.clear();
+      map1.clear();
     }
-    while (tmp6 !== undefined) {
-      let tmp8 = addDetectableGame;
-      let tmp9 = gameFromServer;
-      let tmp10 = addDetectableGame(gameFromServer(tmp7));
+    while (tmp9 !== undefined) {
+      let tmp11 = addDetectableGame;
+      let tmp12 = gameFromServer;
+      let tmp13 = addDetectableGame(gameFromServer(tmp10));
       continue;
     }
     let c13;

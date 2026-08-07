@@ -1,10 +1,10 @@
-// Module ID: 7680
-// Function ID: 7681
+// Module ID: 5343
+// Function ID: 5344
 // Name: processCallbacks
-// Dependencies: [7681, 4975, 709, 2]
+// Dependencies: [5344, 4992, 709, 2]
 // Exports: addPostConnectionCallback
 
-// Module 7680 (processCallbacks)
+// Module 5343 (processCallbacks)
 import initialize from "initialize";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import importDefaultResult from "dispatcher";

@@ -1,10 +1,10 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16639
+// Function ID: 16640
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 10954, 5354, 1297, 4221, 5376, 1236, 6883, 1416, 4130, 4253, 8879, 5685, 9064, 5379, 5311, 5688, 2]
+// Dependencies: [32, 19, 17, 21, 10969, 5373, 1297, 4238, 5395, 1236, 6902, 1416, 4147, 4270, 8896, 5704, 9081, 5398, 5327, 5707, 2]
 // Exports: default
 
-// Module 16619 (IdentityApplicationRow)
+// Module 16639 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "BottomSheetModal";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(10954) /* request */;
+  let obj = require(10969) /* request */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;
@@ -39,7 +39,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj[2] = description;
     obj[3] = onPress;
-    return closure_6(tmp(5354).TableRow, obj);
+    return closure_6(tmp(5373).TableRow, obj);
   }
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -55,7 +55,7 @@ export default function SelectConnectionActionSheet(arg0) {
   let require;
   ({ addConnection: require, excludedConnections: importDefault, excludedApplications: dependencyMap, integrations, onCompleteApplication: _slicedToArray, gameApplicationIds, onCompleteIdentityApplication } = arg0);
   let closure_5;
-  closure_5 = importDefault(4221)();
+  closure_5 = importDefault(4238)();
   let obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.Sm0YG7);
@@ -81,7 +81,7 @@ export default function SelectConnectionActionSheet(arg0) {
       return tmp2;
     });
   }
-  let tmp3Result = tmp3(6883);
+  let tmp3Result = tmp3(6902);
   const platforms = tmp3Result.usePlatforms();
   const found1 = platforms.filter((type) => !set.has(type.type));
   let mapped1;
@@ -161,7 +161,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = tmp3(1236).intl;
     items.push(intl4.string(tmp3(1236).t.y3ZnnU));
   }
-  tmp3Result = tmp3(8879);
+  tmp3Result = tmp3(8896);
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp5[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = tmp3Result.useSegmentedControlState(obj);
   if (1 === first) {
@@ -175,12 +175,12 @@ export default function SelectConnectionActionSheet(arg0) {
       tmp15 = mapped2;
     }
   }
-  obj = { scrollable: true, header: callback2(require(5376) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), startExpanded: true, children: null };
+  obj = { scrollable: true, header: callback2(require(5395) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), startExpanded: true, children: null };
   if (num > 0) {
     const obj1 = { children: null };
     const obj2 = { state: null };
     obj2[0] = segmentedControlState;
-    obj1[0] = tmp2(tmp3(9064).SegmentedControl, obj2);
+    obj1[0] = tmp2(tmp3(9081).SegmentedControl, obj2);
     let tmp2Result = tmp2(closure_5, obj1);
   } else {
     tmp2Result = null;
@@ -188,9 +188,9 @@ export default function SelectConnectionActionSheet(arg0) {
   const items1 = [tmp2Result, ];
   const obj3 = { children: null };
   const obj4 = { bottom: true, children: null };
-  obj4[1] = callback2(require(5688) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: true, children: tmp15 });
-  obj3[0] = callback2(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
-  items1[1] = callback2(require(5379) /* BottomSheetModal */.BottomSheetScrollView, obj3);
+  obj4[1] = callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, { hasIcons: true, children: tmp15 });
+  obj3[0] = callback2(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj4);
+  items1[1] = callback2(require(5398) /* BottomSheetModal */.BottomSheetScrollView, obj3);
   obj[3] = items1;
-  return closure_7(require(5685) /* ActionSheet */.ActionSheet, obj);
+  return closure_7(require(5704) /* ActionSheet */.ActionSheet, obj);
 };

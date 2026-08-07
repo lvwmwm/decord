@@ -1,10 +1,10 @@
-// Module ID: 10422
-// Function ID: 10423
+// Module ID: 10438
+// Function ID: 10439
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 10412, 676, 10423, 21, 1480, 10424, 10462, 2]
+// Dependencies: [19, 10428, 676, 10439, 21, 1480, 10440, 10478, 2]
 // Exports: default
 
-// Module 10422 (XboxLinkDiscordConsent)
+// Module 10438 (XboxLinkDiscordConsent)
 import noop from "noop";
 import { XboxLinkModalScenes } from "XboxLinkModalScenes";
 import { PlatformTypes } from "ME";
@@ -30,9 +30,9 @@ export default function XboxLinkDiscordConsent(arg0) {
     navigation.push(outer1_3.ERROR);
   }, items1);
   obj = { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: null, scopes: null, onNext: null, onError: null };
-  obj[3] = navigation(10462).ConsoleOAuthApplications.XBOX_APPLICATION_ID;
+  obj[3] = navigation(10478).ConsoleOAuthApplications.XBOX_APPLICATION_ID;
   obj[4] = XBOX_CLIENT_SCOPES;
   obj[5] = callback;
   obj[6] = callback1;
-  return jsx(navigation(10424).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: null, scopes: null, onNext: null, onError: null });
+  return jsx(navigation(10440).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.XBOX, callbackCode, callbackState, clientId: null, scopes: null, onNext: null, onError: null });
 };

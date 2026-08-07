@@ -1,10 +1,10 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16427
+// Function ID: 16428
 // Name: DefaultAvatarButton
-// Dependencies: [19, 17, 21, 16402, 16403, 16404, 16405, 16406, 16407, 16408, 16409, 1236, 4285, 712, 4281, 4827, 5251, 2]
+// Dependencies: [19, 17, 21, 16428, 16429, 16430, 16431, 16432, 16433, 16434, 16435, 1236, 4302, 712, 4298, 4844, 5267, 2]
 // Exports: default
 
-// Module 16401 (DefaultAvatarButton)
+// Module 16427 (DefaultAvatarButton)
 import "noop";
 import { View } from "set";
 import jsxProd from "jsxProd";
@@ -31,8 +31,8 @@ function DefaultAvatarButton(selected) {
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.vw2RsD);
   obj[5] = onSelect;
   obj = { style: tmp.defaultAvatarButton, source: { uri: source } };
-  obj[6] = closure_4(importDefault(5251), obj);
-  return closure_4(require(4827) /* PressableBase */.PressableOpacity, obj);
+  obj[6] = closure_4(importDefault(5267), obj);
+  return closure_4(require(4844) /* PressableBase */.PressableOpacity, obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let items = [require("set"), require("set"), require("set"), require("set"), require("set"), require("set"), require("set"), require("set")];
@@ -148,7 +148,7 @@ export default function PresetAvatarSelect(arg0) {
   obj = { variant: "text-sm/medium", color: "text-default", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.yP28YL);
-  const items = [callback(require(4281) /* Text */.Text, obj), , ];
+  const items = [callback(require(4298) /* Text */.Text, obj), , ];
   obj = {
     style: tmp.buttonsContainer,
     children: items1.map((arg0) => {

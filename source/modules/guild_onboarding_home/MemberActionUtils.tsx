@@ -1,10 +1,10 @@
-// Module ID: 11578
-// Function ID: 11579
+// Module ID: 11593
+// Function ID: 11594
 // Name: useMemberActionsForChannel
-// Dependencies: [1971, 4486, 4487, 3900, 5766, 647, 1384, 2]
+// Dependencies: [1971, 4503, 4504, 3917, 5785, 647, 1384, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11578 (useMemberActionsForChannel)
+// Module 11593 (useMemberActionsForChannel)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
 import set from "set";
@@ -20,7 +20,7 @@ export const useMemberActionsForChannel = function useMemberActionsForChannel(gu
   const items = [handleSettingsLoadSuccess];
   const items1 = [guild_id];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getNewMemberActions(closure_0), items1);
-  const tmp = importDefault(5766)(guild_id);
+  const tmp = importDefault(5785)(guild_id);
   const items2 = [set];
   const stateFromStores1 = _require(647).useStateFromStores(items2, () => outer1_5.getCompletedActions(closure_0));
   if (tmp) {

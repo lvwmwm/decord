@@ -1,9 +1,9 @@
-// Module ID: 16538
-// Function ID: 16539
+// Module ID: 16563
+// Function ID: 16564
 // Name: initialize
-// Dependencies: [16539, 4101, 1386, 687, 589, 709, 2]
+// Dependencies: [16564, 4118, 1386, 687, 589, 709, 2]
 
-// Module 16538 (initialize)
+// Module 16563 (initialize)
 import prototype from "prototype";
 import handleConnectionOpen from "handleConnectionOpen";
 import importDefaultResult from "priv";

@@ -1,10 +1,10 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11204
+// Function ID: 11205
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 10053, 1218, 1971, 1891, 3912, 4101, 676, 3900, 685, 647, 3918, 1236, 10054, 10055, 5937, 2]
+// Dependencies: [19, 10069, 1218, 1971, 1891, 3929, 4118, 676, 3917, 685, 647, 3935, 1236, 10070, 10071, 5956, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11189 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11204 (useCurrentUserHasAutomodQuarantinedProfile)
 import noop from "noop";
 import zustandStore from "zustandStore";
 import fetchFingerprint from "fetchFingerprint";

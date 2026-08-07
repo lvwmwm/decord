@@ -1,10 +1,10 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8125
+// Function ID: 8126
 // Name: createEphemeralIndication
-// Dependencies: [7970, 676, 8109, 1236, 1974, 2]
+// Dependencies: [7987, 676, 8126, 1236, 1974, 2]
 // Exports: createEphemeralIndication
 
-// Module 8108 (createEphemeralIndication)
+// Module 8125 (createEphemeralIndication)
 import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
 import ME from "ME";
 
@@ -22,7 +22,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       ephemerality_reason = interactionMetadata.ephemerality_reason;
     }
     if (null != ephemerality_reason) {
-      let obj1 = require(8109) /* getEphemeralReasonMessage */;
+      let obj1 = require(8126) /* getEphemeralReasonMessage */;
       const interactionMetadata2 = message.interactionMetadata;
       let ephemerality_reason1;
       if (interactionMetadata2 != null) {

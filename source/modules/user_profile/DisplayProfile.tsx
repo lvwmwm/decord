@@ -1,9 +1,9 @@
-// Module ID: 8234
-// Function ID: 8235
+// Module ID: 8251
+// Function ID: 8252
 // Name: premiumSince
-// Dependencies: [1905, 7003, 3930, 1416, 8190, 2]
+// Dependencies: [1905, 7022, 3947, 1416, 8207, 2]
 
-// Module 8234 (premiumSince)
+// Module 8251 (premiumSince)
 import { PremiumTypes } from "GuildFeatures";
 
 const result = require("getPremiumPlanItem").fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
@@ -119,7 +119,7 @@ Object.defineProperty(prototype, "gameWidgets", {
     const widgets = this._userProfile.widgets;
     let found;
     if (widgets != null) {
-      found = widgets.filter(require(7003) /* items */.isGameWidget);
+      found = widgets.filter(require(7022) /* items */.isGameWidget);
     }
     return found;
   },
@@ -141,7 +141,7 @@ Object.defineProperty(prototype, "primaryColor", {
 });
 Object.defineProperty(prototype, "canUsePremiumProfileCustomization", {
   get: function canUsePremiumProfileCustomization() {
-    return importDefault(3930).isPremiumAtLeast(this.premiumType, PremiumTypes.TIER_2);
+    return importDefault(3947).isPremiumAtLeast(this.premiumType, PremiumTypes.TIER_2);
   },
   set: undefined
 });
@@ -293,7 +293,7 @@ prototype["getPreviewBanner"] = function getPreviewBanner(pendingBanner, arg1, a
   }
 };
 prototype["getPreviewBio"] = function getPreviewBio(pendingBio) {
-  let obj = require(8190) /* useAvatarsWithGuilds */;
+  let obj = require(8207) /* useAvatarsWithGuilds */;
   obj = { pendingValue: pendingBio, userValue: this._userProfile.bio, guildValue: null, guildId: null };
   const _guildMemberProfile = this._guildMemberProfile;
   let bio;
@@ -305,7 +305,7 @@ prototype["getPreviewBio"] = function getPreviewBio(pendingBio) {
   return obj.getProfilePreviewValue(obj);
 };
 prototype["getPreviewPronouns"] = function getPreviewPronouns(pendingValue) {
-  let obj = require(8190) /* useAvatarsWithGuilds */;
+  let obj = require(8207) /* useAvatarsWithGuilds */;
   obj = { pendingValue, userValue: this._userProfile.pronouns, guildValue: null, guildId: null };
   const _guildMemberProfile = this._guildMemberProfile;
   let pronouns;

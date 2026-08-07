@@ -1,10 +1,10 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13093
+// Function ID: 13094
 // Name: getCodeToKeyLanguageCorrection
-// Dependencies: [32, 6884, 500, 12, 13080, 13081, 13082, 1351, 2]
+// Dependencies: [32, 6903, 500, 12, 13094, 13095, 13096, 1351, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toString
 
-// Module 13079 (getCodeToKeyLanguageCorrection)
+// Module 13093 (getCodeToKeyLanguageCorrection)
 import _slicedToArray from "_slicedToArray";
 import items from "items";
 import set from "set";
@@ -23,9 +23,9 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
       return key;
     }
   }
-  const BACKTICK_CODES = require(13081) /* normalizeKey */.BACKTICK_CODES;
+  const BACKTICK_CODES = require(13095) /* normalizeKey */.BACKTICK_CODES;
   if (BACKTICK_CODES.has(keyCode)) {
-    let tmp2Result = tmp2(13081);
+    let tmp2Result = tmp2(13095);
     const layoutMap = tmp2Result.getLayoutMap();
     let value = layoutMap.get("Backquote");
     if (key === value) {
@@ -35,7 +35,7 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
       }
       return str7;
     } else {
-      tmp2Result = tmp2(13081);
+      tmp2Result = tmp2(13095);
       const obj = { key: null, code: "Backquote", keyCode: null };
       obj[0] = value;
       obj[2] = keyCode;
@@ -105,7 +105,7 @@ function keyToCode(toLocaleLowerCase) {
                 tmp27 = arg1 === KeyboardEnvs.BROWSER;
               }
               if (tmp27 === true) {
-                const tmp39 = importDefault(13080);
+                const tmp39 = importDefault(13094);
                 const replaced = toLocaleLowerCase.replace(/^(right|left) (shift|meta|ctrl|alt)$/, "$2").replace("meta", "command");
                 let str13 = "pause/break";
                 if ("pause" !== replaced) {
@@ -141,7 +141,7 @@ function keyToCode(toLocaleLowerCase) {
       if (null != tmp17) {
         return tmp17;
       } else {
-        const keyboardEventShapeFromKey = require(13081) /* normalizeKey */.getKeyboardEventShapeFromKey(toLocaleLowerCase);
+        const keyboardEventShapeFromKey = require(13095) /* normalizeKey */.getKeyboardEventShapeFromKey(toLocaleLowerCase);
         let keyCode = null;
         if (null != keyboardEventShapeFromKey) {
           keyCode = keyboardEventShapeFromKey.keyCode;
@@ -282,7 +282,7 @@ function codeToKey(items1) {
   if (null != tmp4) {
     return getCodeToKeyLanguageCorrection(tmp2, tmp4, tmp3);
   } else {
-    const keyboardEventShapeFromKeycode = require(13081) /* normalizeKey */.getKeyboardEventShapeFromKeycode(tmp2);
+    const keyboardEventShapeFromKeycode = require(13095) /* normalizeKey */.getKeyboardEventShapeFromKeycode(tmp2);
     let tmp8 = null;
     if (null != keyboardEventShapeFromKeycode) {
       tmp8 = getCodeToKeyLanguageCorrection(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp3);
@@ -298,7 +298,7 @@ const result = set.fileFinishedImporting("utils/web/KeyboardUtils.tsx");
 export const getRawCodeFromKey = function getRawCodeFromKey(arg0) {
   if (arg1 !== undefined) {
     if (arg1 === KeyboardEnvs.BROWSER) {
-      let tmp10 = importDefault(13080)(arg0);
+      let tmp10 = importDefault(13094)(arg0);
     } else {
       tmp10 = set[arg0];
     }
@@ -416,7 +416,7 @@ export const toCombo = function toCombo(shortcut) {
     }
     const str2 = shortcut.replace(/numpad plus/i, "");
     const str4 = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus");
-    const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(13082).modKey).split("+");
+    const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(13096).modKey).split("+");
     const mapped = parts.map((str) => str.trim().replace("plus", "+"));
     return mapped.reduce((arr) => {
       let tmp3 = outer1_16((function toUglyKey(str) {
@@ -518,12 +518,12 @@ export const toString = function toString(arr) {
       if (null != tmp17) {
         let combined = callback3(tmp15, tmp17, tmp16);
       } else {
-        const keyboardEventShapeFromKeycode = callback(13081).getKeyboardEventShapeFromKeycode(tmp15);
+        const keyboardEventShapeFromKeycode = callback(13095).getKeyboardEventShapeFromKeycode(tmp15);
         combined = null;
         if (null != keyboardEventShapeFromKeycode) {
           combined = callback3(keyboardEventShapeFromKeycode.keyCode, keyboardEventShapeFromKeycode.key, tmp16);
         }
-        const obj3 = callback(13081);
+        const obj3 = callback(13095);
       }
       if (combined == null) {
         const _HermesInternal4 = HermesInternal;

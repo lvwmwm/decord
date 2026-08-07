@@ -1,9 +1,9 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16801
+// Function ID: 16802
 // Name: prototype
-// Dependencies: [4356, 4495, 5244, 2]
+// Dependencies: [4373, 4512, 5260, 2]
 
-// Module 16781 (prototype)
+// Module 16801 (prototype)
 import createRTCConnection from "createRTCConnection";
 import withEqualityFn from "withEqualityFn";
 import "initialize";

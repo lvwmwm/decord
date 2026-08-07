@@ -1,9 +1,9 @@
-// Module ID: 6940
-// Function ID: 6941
+// Module ID: 6959
+// Function ID: 6960
 // Name: fromServer
-// Dependencies: [6941, 6923, 2]
+// Dependencies: [6960, 6942, 2]
 
-// Module 6940 (fromServer)
+// Module 6959 (fromServer)
 import fromServer from "fromServer";
 import closure_1 from "fromServer";
 

@@ -1,10 +1,10 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11681
+// Function ID: 11682
 // Name: useEventsButtonProps
-// Dependencies: [19, 4297, 4480, 4481, 589, 8961, 4771, 8335, 8884, 4253, 11667, 1988, 1236, 11671, 2]
+// Dependencies: [19, 4314, 4497, 4498, 589, 8978, 4788, 8352, 8901, 4270, 11682, 1988, 1236, 11686, 2]
 // Exports: default
 
-// Module 11666 (useEventsButtonProps)
+// Module 11681 (useEventsButtonProps)
 import noop from "noop";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -24,7 +24,7 @@ export default function useEventsButtonProps(id) {
   ({ hasUnread, mentionCount } = stateFromStoresObject);
   const items2 = [updateUserGuildSettingsInternal];
   const eventsMuted = _require(589).useStateFromStores(items2, () => outer1_5.isMuteScheduledEventsEnabled(id.id));
-  const arr4 = importDefault(8961)(id.id);
+  const arr4 = importDefault(8978)(id.id);
   const items3 = [id];
   const items4 = [id.id];
   const handlePress = React.useCallback(() => {
@@ -51,13 +51,13 @@ export default function useEventsButtonProps(id) {
     const intl = tmp(1236).intl;
     name = intl.string(tmp(1236).t.tlopTM);
   }
-  let mode = tmp(11671).ChannelModes.DEFAULT;
+  let mode = tmp(11686).ChannelModes.DEFAULT;
   let tmp8 = hasUnread;
   if (hasUnread) {
     tmp8 = !eventsMuted;
   }
   if (tmp8) {
-    mode = tmp(11671).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(11686).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

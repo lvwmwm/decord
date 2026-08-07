@@ -1,10 +1,10 @@
-// Module ID: 9870
-// Function ID: 9871
+// Module ID: 9886
+// Function ID: 9887
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 676, 21, 4285, 712, 1236, 8936, 5251, 9871, 8667, 4281, 2]
+// Dependencies: [19, 17, 676, 21, 4302, 712, 1236, 8953, 5267, 9887, 8684, 4298, 2]
 // Exports: default
 
-// Module 9870 (GIFPickerCategoryView)
+// Module 9886 (GIFPickerCategoryView)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -54,25 +54,25 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   let obj = { categoryName: item.name };
   const formatToPlainStringResult = intl.formatToPlainString(onSelectCategory(1236).t["j+63pw"], obj);
   obj = { style: tmp.container, onPress: callback, accessible: true, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult };
-  const merged = Object.assign(item(8936)(callback, formatToPlainStringResult));
+  const merged = Object.assign(item(8953)(callback, formatToPlainStringResult));
   obj = { style: tmp.gifImage, source: obj1 };
-  const items1 = [callback(item(5251), obj), callback(closure_4, { style: tmp.gifOverlay }), ];
+  const items1 = [callback(item(5267), obj), callback(closure_4, { style: tmp.gifOverlay }), ];
   const obj3 = { style: tmp.categoryName, accessible: false, children: null };
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj4 = { size: "sm", style: null, color: null };
     obj4[1] = tmp.categoryNameIcon;
     obj4[2] = tmp6(712).colors.WHITE;
-    let tmp10Result = tmp10(tmp3(9871).AnalyticsIcon, obj4);
+    let tmp10Result = tmp10(tmp3(9887).AnalyticsIcon, obj4);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj5 = { size: "sm", style: null, color: null };
       obj5[1] = tmp.categoryNameIcon;
       obj5[2] = tmp6(712).colors.WHITE;
-      tmp10Result = tmp10(tmp3(8667).StarIcon, obj5);
+      tmp10Result = tmp10(tmp3(8684).StarIcon, obj5);
     }
   }
-  const items2 = [tmp10Result, callback(onSelectCategory(4281).Text, { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name })];
+  const items2 = [tmp10Result, callback(onSelectCategory(4298).Text, { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name })];
   obj3[2] = items2;
   items1[2] = closure_8(closure_4, obj3);
   obj.children = items1;

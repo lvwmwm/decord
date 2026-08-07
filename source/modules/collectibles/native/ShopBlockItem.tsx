@@ -1,10 +1,10 @@
-// Module ID: 14749
-// Function ID: 14750
+// Module ID: 14765
+// Function ID: 14766
 // Name: block
-// Dependencies: [19, 17, 6922, 21, 4285, 712, 589, 6953, 9265, 14750, 14759, 14761, 14768, 2]
+// Dependencies: [19, 17, 6941, 21, 4302, 712, 589, 6972, 9282, 14766, 14775, 14777, 14784, 2]
 // Exports: default
 
-// Module 14749 (block)
+// Module 14765 (block)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

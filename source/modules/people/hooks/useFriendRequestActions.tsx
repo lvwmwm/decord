@@ -1,10 +1,10 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12446
+// Function ID: 12447
 // Name: useFriendRequestActions
-// Dependencies: [19, 9551, 2]
+// Dependencies: [19, 9567, 2]
 // Exports: useFriendRequestActions
 
-// Module 12431 (useFriendRequestActions)
+// Module 12446 (useFriendRequestActions)
 import noop from "noop";
 
 let result = require("set").fileFinishedImporting("modules/people/hooks/useFriendRequestActions.tsx");

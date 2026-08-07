@@ -1,10 +1,10 @@
-// Module ID: 15293
-// Function ID: 15294
+// Module ID: 15317
+// Function ID: 15318
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4277, 1891, 676, 21, 1474, 4285, 712, 589, 1416, 1450, 698, 5215, 5878, 1236, 8216, 9181, 1297, 4281, 4695, 8521, 7672, 8527, 2]
+// Dependencies: [5, 32, 19, 17, 4294, 1891, 676, 21, 1474, 4302, 712, 589, 1416, 1450, 698, 5231, 5897, 1236, 8233, 9198, 1297, 4298, 4712, 8538, 7691, 8544, 2]
 // Exports: default
 
-// Module 15293 (GameCommunityMultiGuildUpsellCard)
+// Module 15317 (GameCommunityMultiGuildUpsellCard)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import GuildBadgeV2 from "GuildBadgeV2";

@@ -1,10 +1,10 @@
-// Module ID: 10026
-// Function ID: 10027
+// Module ID: 10042
+// Function ID: 10043
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 4322, 10024, 21, 4285, 712, 589, 9316, 5251, 9273, 2]
+// Dependencies: [19, 4339, 10040, 21, 4302, 712, 589, 9333, 5267, 9290, 2]
 // Exports: default
 
-// Module 10026 (SocialLayerStorefrontWishlistItemCard)
+// Module 10042 (SocialLayerStorefrontWishlistItemCard)
 import noop from "noop";
 import addApplication from "addApplication";
 import initialize from "initialize";
@@ -19,7 +19,7 @@ const require = arg1;
 createCacheKey = { applicationIcon: null, nestedCard: null };
 createCacheKey = { position: "absolute", top: require("Themes").space.PX_8, left: require("Themes").space.PX_8, width: 24, height: 24, borderRadius: require("Themes").radii.sm, zIndex: 1 };
 createCacheKey[0] = createCacheKey;
-const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F9DC}\u{1F3FB}" };
+const obj1 = { shadowColor: "Array", shadowOffset: 0, shadowOpacity: 0, shadowRadius: 0, elevation: "visible", overflow: null, borderRadius: "\u{1F9DB}\u{1F3FF}\u200D\u2640\uFE0F" };
 obj1[1] = { width: 0, height: 0 };
 obj1[6] = require("Themes").radii.none;
 createCacheKey[1] = obj1;
@@ -67,10 +67,10 @@ export default function SocialLayerStorefrontWishlistItemCard(sku) {
     }
     return iconSource;
   }, items4);
-  const tmp5 = createCacheKey();
-  c6 = tmp5;
+  const tmp7 = createCacheKey();
+  c6 = tmp7;
   const items5 = [sku, size, memo, , ];
-  ({ applicationIcon: arr6[3], nestedCard: arr6[4] } = tmp5);
+  ({ applicationIcon: arr6[3], nestedCard: arr6[4] } = tmp7);
   const callback = applicationId.useCallback(() => {
     let obj = { sku, size, containerStyle: _undefined.nestedCard };
     const children = [_undefined(wishlistOwnerId(size[7]), obj), ];
@@ -84,14 +84,18 @@ export default function SocialLayerStorefrontWishlistItemCard(sku) {
     children[1] = tmp3Result;
     return outer1_8(outer1_7, { children });
   }, items5);
-  obj = { accessibilityLabel: sku.name, renderPreview: callback, source: sku.source, isOwned: null, size: null };
+  obj = { accessibilityLabel: sku.name, renderPreview: callback, source: sku.source, size };
   const obj2 = sku(size[6]);
-  const tmp7 = c6;
-  if (!flag) {
-    flag = stateFromStores;
-  }
-  obj[3] = flag;
-  obj[4] = size;
+  const tmp2 = sku;
+  const tmp3 = size;
+  const tmp9 = c6;
   const merged1 = Object.assign(merged);
-  return tmp7(wishlistOwnerId(size[9]), obj);
+  if (!flag) {
+    if (!stateFromStores) {
+      let OWNED = merged.overlay;
+    }
+    obj.overlay = OWNED;
+    return tmp9(tmp10, obj);
+  }
+  OWNED = tmp2(tmp3[9]).WishlistItemCardOverlay.OWNED;
 };

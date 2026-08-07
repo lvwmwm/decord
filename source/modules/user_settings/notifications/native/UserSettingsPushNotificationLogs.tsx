@@ -1,10 +1,10 @@
-// Module ID: 14666
-// Function ID: 14667
+// Module ID: 14682
+// Function ID: 14683
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 676, 21, 4285, 712, 5922, 595, 9789, 1609, 5913, 4827, 1236, 8846, 9791, 12148, 7666, 4281, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4302, 712, 5941, 595, 9805, 1609, 5932, 4844, 1236, 8863, 9807, 12163, 7685, 4298, 2]
 // Exports: default
 
-// Module 14666 (UserSettingsPushNotificationLogs)
+// Module 14682 (UserSettingsPushNotificationLogs)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -165,7 +165,7 @@ export default function UserSettingsPushNotificationLogs() {
   callback2 = tmp9;
   let obj = { style: tmp9.wrap, children: null };
   obj = { style: tmp9.searchWrap, children: null };
-  let items1 = [callback3(first(5913).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp[1], defaultValue: first }), ];
+  let items1 = [callback3(first(5932).SearchField, { size: "md", placeholder: "Filter (regex)", onChange: tmp[1], defaultValue: first }), ];
   obj = { style: tmp9.shareButton, accessibilityLabel: null, onPress: null, children: null };
   const intl = first(1236).intl;
   obj[1] = intl.string(first(1236).t.leICvh);
@@ -202,7 +202,7 @@ export default function UserSettingsPushNotificationLogs() {
             dependencyMap = 1;
             c3 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(9789)();
+            obj1[0] = outer1_1(9805)();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -215,9 +215,9 @@ export default function UserSettingsPushNotificationLogs() {
           return obj2;
         } else {
           closure_0 = arg1;
-          obj = outer1_0(8846);
+          obj = outer1_0(8863);
           const obj3 = { message: null };
-          obj3[0] = outer1_1(9791)(closure_0, false);
+          obj3[0] = outer1_1(9807)(closure_0, false);
           obj.showShareActionSheet(obj3, "push-notification-logs");
           c3 = 3;
           return { value: "T", done: null };
@@ -228,8 +228,8 @@ export default function UserSettingsPushNotificationLogs() {
       }
     }
   });
-  obj[3] = callback3(first(12148).ShareIcon, {});
-  items1[1] = callback3(first(4827).PressableOpacity, obj);
+  obj[3] = callback3(first(12163).ShareIcon, {});
+  items1[1] = callback3(first(4844).PressableOpacity, obj);
   obj[1] = items1;
   let items2 = [callback4(View, obj), ];
   let obj1 = { contentContainerStyle: null, data: null, renderItem: null };
@@ -247,16 +247,16 @@ export default function UserSettingsPushNotificationLogs() {
     let obj = { style: tmp9.log, children: null };
     obj = { style: tmp9.code, variant: "text-xs/normal", children: null };
     obj[2] = new Date(item.receivedTimestamp).toISOString();
-    const items = [outer1_7(first(4281).Text, obj), ];
+    const items = [outer1_7(first(4298).Text, obj), ];
     obj = { style: tmp9.code, variant: "text-sm/normal", children: null };
     const items1 = [str, "[", item.type, "]", " "];
-    const items2 = [outer1_8(first(4281).Text, { style: tmp9.code, variant: "text-sm/normal", color: "text-brand", children: items1 }), item.title, " - ", item.content];
+    const items2 = [outer1_8(first(4298).Text, { style: tmp9.code, variant: "text-sm/normal", color: "text-brand", children: items1 }), item.title, " - ", item.content];
     obj[2] = items2;
-    items[1] = outer1_8(first(4281).Text, obj);
+    items[1] = outer1_8(first(4298).Text, obj);
     obj[1] = items;
     return outer1_8(outer1_6, obj, item.index);
   };
-  items2[1] = callback3(first(7666).FlashList, obj1);
+  items2[1] = callback3(first(7685).FlashList, obj1);
   obj[1] = items2;
   return callback4(View, obj);
 };

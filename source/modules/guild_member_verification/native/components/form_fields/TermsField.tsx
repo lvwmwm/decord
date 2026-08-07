@@ -1,10 +1,10 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8387
+// Function ID: 8388
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4285, 5314, 8371, 1236, 2]
+// Dependencies: [19, 17, 21, 4302, 5330, 8388, 1236, 2]
 // Exports: default
 
-// Module 8370 (TermsField)
+// Module 8387 (TermsField)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,7 +24,7 @@ export default function TermsField(field) {
   ({ onChange, rulesChannelId } = field);
   let flag = field.response;
   let obj = { style: callback2().container, children: null };
-  const items = [callback(importDefault(5314), { rules: field.values, rulesChannelId }), ];
+  const items = [callback(importDefault(5330), { rules: field.values, rulesChannelId }), ];
   if (flag == null) {
     flag = false;
   }
@@ -32,7 +32,7 @@ export default function TermsField(field) {
   const intl = tmp5(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["2EXfGJ"]);
   obj[4] = onChange;
-  items[1] = callback(require(8371) /* TableCheckboxRow */.TableCheckboxRow, obj);
+  items[1] = callback(require(8388) /* TableCheckboxRow */.TableCheckboxRow, obj);
   obj[1] = items;
   return closure_5(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 13759
-// Function ID: 13760
+// Module ID: 13773
+// Function ID: 13774
 // Name: getSortedDevToolsScreens
-// Dependencies: [32, 7099, 13760, 13762, 589, 2]
+// Dependencies: [32, 7118, 13774, 13776, 589, 2]
 // Exports: default, updateSortOrder
 
-// Module 13759 (getSortedDevToolsScreens)
+// Module 13773 (getSortedDevToolsScreens)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 
@@ -14,7 +14,7 @@ function getSortedDevToolsScreens() {
   {
     sortedScreenKeys = initialize.sortedScreenKeys;
   }
-  const entries = Object.entries(sortedScreenKeys(13760).DevToolsScreens);
+  const entries = Object.entries(sortedScreenKeys(13774).DevToolsScreens);
   const found = entries.filter((arg0) => {
     let obj;
     [, obj] = arg0;
@@ -52,7 +52,7 @@ export default function useSortedDevToolsScreens() {
   if (sortedScreenKeys === undefined) {
     sortedScreenKeys = initialize.sortedScreenKeys;
   }
-  const entries = Object.entries(sortedScreenKeys(13760).DevToolsScreens);
+  const entries = Object.entries(sortedScreenKeys(13774).DevToolsScreens);
   const found = entries.filter((arg0) => {
     let obj;
     [, obj] = arg0;
@@ -103,5 +103,5 @@ export const updateSortOrder = function updateSortOrder(closure_0, down) {
     items[index + 1] = items[index];
   }
   tmp2 = getSortedDevToolsScreens()[Symbol.iterator]();
-  const result = require(13762) /* updateDevToolsSettings */.updateDevToolsSettings({ sortedScreenKeys: items });
+  const result = require(13776) /* updateDevToolsSettings */.updateDevToolsSettings({ sortedScreenKeys: items });
 };

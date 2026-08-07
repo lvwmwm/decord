@@ -1,10 +1,10 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8867
+// Function ID: 8868
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8850 (apexExperiment)
+// Module 8867 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

@@ -1,10 +1,10 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8051
+// Function ID: 8052
 // Name: getNumSubscriptionsPurchasedFromSystemMessage
 // Dependencies: [2]
 // Exports: default
 
-// Module 8034 (getNumSubscriptionsPurchasedFromSystemMessage)
+// Module 8051 (getNumSubscriptionsPurchasedFromSystemMessage)
 const result = require("set").fileFinishedImporting("modules/premium/getNumSubscriptionsPurchasedFromSystemMessage.tsx");
 
 export default function getNumSubscriptionsPurchasedFromSystemMessage(content) {

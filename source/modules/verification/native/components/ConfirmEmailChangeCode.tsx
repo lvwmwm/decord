@@ -1,10 +1,10 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 8403
+// Function ID: 8404
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 8376, 21, 1480, 691, 8387, 8384, 1236, 2]
+// Dependencies: [5, 19, 8393, 21, 1480, 691, 8404, 8401, 1236, 2]
 // Exports: default
 
-// Module 8386 (ConfirmEmailChangeCode)
+// Module 8403 (ConfirmEmailChangeCode)
 import keys from "keys";
 import noop from "noop";
 import { setEmailToken } from "ChangeEmailFields";
@@ -113,5 +113,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj[3] = intl.string(_require(1236).t["2x/2Uo"]);
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.PDTjLN);
-  return jsx(navigation(8387), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(8404), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

@@ -1,8 +1,8 @@
-// Module ID: 11739
-// Function ID: 11740
-// Dependencies: [19, 17, 21, 4285, 712, 11727, 1236, 3981, 2]
+// Module ID: 11754
+// Function ID: 11755
+// Dependencies: [19, 17, 21, 4302, 712, 11742, 1236, 3998, 2]
 
-// Module 11739
+// Module 11754
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -44,10 +44,10 @@ const memoResult = require("noop").memo(function ChatInputGuardRequiredLobbyAppl
         fn = () => outer1_1(outer1_2[7]).openURLExternally(connectionEntrypointUrl);
       }
       obj[4] = fn;
-      return jsx(importDefault(11727), { name: null });
+      return jsx(importDefault(11742), { name: null });
     }
   }
-  return jsx(importDefault(11727), { type: "simple-action", message: "" });
+  return jsx(importDefault(11742), { type: "simple-action", message: "" });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardRequiredLobbyApplicationAuthorization.tsx");
 

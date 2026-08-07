@@ -1,9 +1,9 @@
-// Module ID: 3941
-// Function ID: 3942
+// Module ID: 3958
+// Function ID: 3959
 // Name: set
 // Dependencies: [2]
 
-// Module 3941 (set)
+// Module 3958 (set)
 import set from "set";
 
 let obj = { UNKNOWN: 0, [0]: "UNKNOWN", ADMIN: 1, [1]: "ADMIN", USER: 2, [2]: "USER", FRACTIONAL_PREMIUM: 3, [3]: "FRACTIONAL_PREMIUM", DEFERRED_START: 4, [4]: "DEFERRED_START", USER_TEMPORARY_BAN: 5, [5]: "USER_TEMPORARY_BAN" };

@@ -1,9 +1,9 @@
-// Module ID: 8979
-// Function ID: 8980
+// Module ID: 8996
+// Function ID: 8997
 // Name: closeModal
-// Dependencies: [5, 32, 19, 17, 1377, 5114, 676, 1378, 21, 4285, 712, 4490, 4827, 1236, 1297, 7983, 7710, 5700, 589, 5756, 7890, 4281, 8980, 8981, 8982, 4711, 698, 1872, 7701, 5759, 4184, 8983, 8984, 7719, 4695, 5311, 5745, 2]
+// Dependencies: [5, 32, 19, 17, 1377, 5131, 676, 1378, 21, 4302, 712, 4507, 4844, 1236, 1297, 8000, 7727, 5719, 589, 5775, 7907, 4298, 8997, 8998, 8999, 4728, 698, 1872, 7718, 5778, 4201, 9000, 9001, 7736, 4712, 5327, 5764, 2]
 
-// Module 8979 (closeModal)
+// Module 8996 (closeModal)
 import closure_4 from "MAX_STAGE_TOPIC_LENGTH";
 import GuildStageChannelSelection from "GuildStageChannelSelection";
 import importAllResult from "HotspotStore";
@@ -23,7 +23,7 @@ let metroImportAll;
 let unpackModuleId;
 const require = arg1;
 function closeModal() {
-  importDefault(4490).popWithKey(closure_11);
+  importDefault(4507).popWithKey(closure_11);
 }
 function NavigationBar(guild) {
   let tmp2 = null;
@@ -37,9 +37,9 @@ function NavigationBar(guild) {
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
     obj[2] = closeModal;
     obj = { source: null };
-    obj[0] = importDefault(7983);
+    obj[0] = importDefault(8000);
     obj[3] = callback2(require(1297) /* Button */.Icon, obj);
-    obj[1] = callback2(require(4827) /* PressableBase */.PressableOpacity, obj);
+    obj[1] = callback2(require(4844) /* PressableBase */.PressableOpacity, obj);
     tmp2 = callback2(closure_7, obj);
   }
   return tmp2;
@@ -47,14 +47,14 @@ function NavigationBar(guild) {
 function HeaderIcon(guild) {
   guild = guild.guild;
   if (null == guild) {
-    let tmp7 = callback2(importDefault(7710), {});
+    let tmp7 = callback2(importDefault(7727), {});
   } else {
     const obj = { style: null, size: null, guild: null };
     obj[0] = tmp.guildIcon;
-    obj[1] = require(5700) /* GuildIconSizes */.GuildIconSizes.LARGE;
+    obj[1] = require(5719) /* GuildIconSizes */.GuildIconSizes.LARGE;
     obj[2] = guild;
-    tmp7 = callback2(importDefault(5700), obj);
-    const tmp5 = importDefault(5700);
+    tmp7 = callback2(importDefault(5719), obj);
+    const tmp5 = importDefault(5719);
   }
   return tmp7;
 }
@@ -69,8 +69,8 @@ class NotificationToggle {
     items[0] = require("HotspotStore").HotspotStore;
     tmp5 = jsx;
     stateFromStores = obj.useStateFromStores(items, () => {
-      const HotspotStore = callback(5756).HotspotStore;
-      return HotspotStore.hasHotspot(callback(5756).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+      const HotspotStore = callback(5775).HotspotStore;
+      return HotspotStore.hasHotspot(callback(5775).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
     });
     obj = { DEPRECATED_style: tmp.notificationToggle, label: null, onPress: null, trailing: null };
     tmp7 = View;
@@ -196,10 +196,10 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
                     c4 = 3;
                     c5 = 1;
                     let obj1 = { value: null, done: false };
-                    obj1[0] = outer1_2(7701).editStage(outer1_2, tmp76, tmp47);
+                    obj1[0] = outer1_2(7718).editStage(outer1_2, tmp76, tmp47);
                     return obj1;
                   } else {
-                    const obj5 = outer1_2(7701);
+                    const obj5 = outer1_2(7718);
                     c4 = 2;
                     c5 = 1;
                     const obj2 = { value: null, done: false };
@@ -213,7 +213,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
             if (1 === tmp7) {
               dependencyMap = 0;
               closure_1 = closure_2;
-              aPIError = new outer1_0(4184).APIError(closure_1);
+              aPIError = new outer1_0(4201).APIError(closure_1);
               outer1_9(aPIError);
               outer1_8(false);
             } else {
@@ -227,8 +227,8 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
                     tmp8 = closure_13;
                   }
                   if (tmp8) {
-                    obj1 = outer1_2(5759);
-                    obj1.hideHotspot(outer1_0(5756).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
+                    obj1 = outer1_2(5778);
+                    obj1.hideHotspot(outer1_0(5775).HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
                   }
                 }
               } else if (arg0 === 1) {

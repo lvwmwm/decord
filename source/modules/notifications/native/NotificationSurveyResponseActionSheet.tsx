@@ -1,10 +1,10 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 11043
+// Function ID: 11044
 // Name: onClose
-// Dependencies: [19, 17, 676, 21, 4285, 5219, 712, 4253, 5377, 5376, 5686, 11029, 4281, 1236, 1974, 2]
+// Dependencies: [19, 17, 676, 21, 4302, 5235, 712, 4270, 5396, 5395, 5705, 11044, 4298, 1236, 1974, 2]
 // Exports: default
 
-// Module 11028 (onClose)
+// Module 11043 (onClose)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -20,7 +20,7 @@ let closure_6;
 let error;
 const require = arg1;
 function onClose() {
-  importDefault(4253).hideActionSheet();
+  importDefault(4270).hideActionSheet();
 }
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ HelpdeskArticles: c5, Fonts } = ME);
@@ -47,26 +47,26 @@ export default function NotificationSurveyResponseActionSheet(header) {
     obj[0] = header;
     obj = { onPress: null };
     obj[0] = onClose;
-    obj[1] = callback(tmp3(5686).ActionSheetCloseButton, obj);
-    tmp5 = callback(tmp3(5376).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp3(5705).ActionSheetCloseButton, obj);
+    tmp5 = callback(tmp3(5395).BottomSheetTitleHeader, obj);
   }
   obj = { children: null };
   const items = [tmp5, ];
   const obj1 = { style: tmp.view, children: null };
-  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(11029) }), , ];
+  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(11044) }), , ];
   const obj3 = { style: tmp.title, variant: "heading-md/bold", children: null };
   const intl = tmp3(1236).intl;
   obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["d9+vQ8"]);
-  items1[1] = callback(require(4281) /* Text */.Text, obj3);
+  items1[1] = callback(require(4298) /* Text */.Text, obj3);
   const obj4 = { style: tmp.subtitle, variant: "text-md/normal", children: null };
   const intl2 = tmp3(1236).intl;
   const obj5 = { helpUrl: null };
-  const obj2 = { style: tmp.rating, source: importDefault(11029) };
+  const obj2 = { style: tmp.rating, source: importDefault(11044) };
   obj5[0] = importDefault(1974).getArticleURL(constants.HIGHLIGHTS_NOTIFICATIONS);
   obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.WxD5QY, obj5);
-  items1[2] = callback(require(4281) /* Text */.Text, obj4);
+  items1[2] = callback(require(4298) /* Text */.Text, obj4);
   obj1[1] = items1;
   items[1] = closure_7(closure_3, obj1);
   obj[0] = items;
-  return closure_7(require(5377) /* Background */.BottomSheet, obj);
+  return closure_7(require(5396) /* Background */.BottomSheet, obj);
 };

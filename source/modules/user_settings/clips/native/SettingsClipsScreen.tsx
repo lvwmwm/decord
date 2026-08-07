@@ -1,10 +1,10 @@
-// Module ID: 14135
-// Function ID: 14136
+// Module ID: 14149
+// Function ID: 14150
 // Name: ClipsSettingsScreen
-// Dependencies: [19, 8005, 21, 10364, 13802, 2]
+// Dependencies: [19, 8022, 21, 10380, 13816, 2]
 // Exports: default
 
-// Module 14135 (ClipsSettingsScreen)
+// Module 14149 (ClipsSettingsScreen)
 import noop from "noop";
 import { MobileSetting } from "MobileSetting";
 import { jsx } from "jsxProd";
@@ -18,5 +18,5 @@ export default function ClipsSettingsScreen() {
     const sections = [{ settings: items }];
     return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(importDefault(13802), { node });
+  return jsx(importDefault(13816), { node });
 };

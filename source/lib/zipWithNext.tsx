@@ -1,10 +1,10 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 12999
+// Function ID: 13000
 // Name: zipWithNext
 // Dependencies: [2]
 // Exports: default
 
-// Module 12985 (zipWithNext)
+// Module 12999 (zipWithNext)
 const result = require("set").fileFinishedImporting("lib/zipWithNext.tsx");
 
 export default function zipWithNext(arg0, arg1) {

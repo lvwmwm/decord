@@ -1,10 +1,10 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8718
+// Function ID: 8719
 // Name: BackspaceIcon
-// Dependencies: [19, 21, 712, 3987, 8702, 2]
+// Dependencies: [19, 21, 712, 4004, 8719, 2]
 // Exports: BackspaceIcon
 
-// Module 8701 (BackspaceIcon)
+// Module 8718 (BackspaceIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const BackspaceIcon = function BackspaceIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8702) /* registerAsset */;
+  obj[0] = require(8719) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

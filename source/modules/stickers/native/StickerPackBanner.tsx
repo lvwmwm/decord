@@ -1,10 +1,10 @@
-// Module ID: 9886
-// Function ID: 9887
+// Module ID: 9902
+// Function ID: 9903
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 4619, 2]
+// Dependencies: [19, 17, 21, 4636, 2]
 // Exports: default
 
-// Module 9886 (StickerPackBanner)
+// Module 9902 (StickerPackBanner)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function StickerPackBanner(arg0) {
   let stickerPack;
   let style;
   ({ containerStyle, style, stickerPack } = arg0);
-  let obj = require(4619) /* getStickerExtensionFromFormatType */;
+  let obj = require(4636) /* getStickerExtensionFromFormatType */;
   const stickerPackBannerAssetUrl = obj.getStickerPackBannerAssetUrl(stickerPack, 1024);
   let tmp2 = null;
   if (null != stickerPackBannerAssetUrl) {

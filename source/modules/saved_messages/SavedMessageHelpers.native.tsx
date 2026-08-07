@@ -1,10 +1,10 @@
-// Module ID: 10189
-// Function ID: 10190
+// Module ID: 10205
+// Function ID: 10206
 // Name: _addOrUpdateSavedMessage
-// Dependencies: [5, 10190, 676, 8298, 8293, 8296, 5669, 10191, 10192, 4623, 1236, 8302, 8304, 3985, 7716, 4249, 10193, 2]
+// Dependencies: [5, 10206, 676, 8315, 8310, 8313, 5688, 10207, 10208, 4640, 1236, 8319, 8321, 4002, 7733, 4266, 10209, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 10189 (_addOrUpdateSavedMessage)
+// Module 10205 (_addOrUpdateSavedMessage)
 import EntitlementFeatureNames from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";
 import { AbortCodes } from "ME";
@@ -33,14 +33,14 @@ function _addOrUpdateSavedMessage() {
         } else {
           if (null == savedMessage.getSavedMessage(lib.channelId, lib.messageId)) {
             if (!obj10.hasForLaterAccess("addOrUpdateSavedMessage")) {
-              let items = [lib(5669).FOR_LATER_ROADBLOCK];
-              lib(8293)(displayToast(8296).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
+              let items = [lib(5688).FOR_LATER_ROADBLOCK];
+              lib(8310)(displayToast(8313).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
               savedMessage = 3;
-              const tmp36 = lib(8293);
+              const tmp36 = lib(8310);
             }
-            obj10 = displayToast(8298);
+            obj10 = displayToast(8315);
           }
-          let obj3 = displayToast(10191);
+          let obj3 = displayToast(10207);
           let BookmarkIcon = 2;
           savedMessage = 1;
           obj3 = { value: null, done: false };
@@ -118,11 +118,11 @@ function _addOrUpdateSavedMessage() {
             }
             const dependencyMap = stringResult;
             if (null != lib.dueAt) {
-              BookmarkIcon = displayToast(4249).ClockIcon;
+              BookmarkIcon = displayToast(4266).ClockIcon;
             } else {
-              BookmarkIcon = displayToast(10193).BookmarkIcon;
+              BookmarkIcon = displayToast(10209).BookmarkIcon;
             }
-            let obj = lib(3985);
+            let obj = lib(4002);
             const obj4 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: null, content: null };
             obj4[1] = BookmarkIcon;
             obj4[2] = dependencyMap;
@@ -207,8 +207,8 @@ function _removeSavedMessage() {
               c4 = 1;
               obj3 = { value: null, done: false };
               obj3[0] = obj3.deleteSavedMessage(closure_2).catch((body) => {
-                let obj = _undefined2(3985);
-                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(7716).CircleErrorIcon, content: null };
+                let obj = _undefined2(4002);
+                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(7733).CircleErrorIcon, content: null };
                 let message;
                 if (body != null) {
                   body = body.body;

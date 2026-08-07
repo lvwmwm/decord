@@ -1,9 +1,9 @@
-// Module ID: 7672
-// Function ID: 7673
+// Module ID: 7691
+// Function ID: 7692
 // Name: IconButton
-// Dependencies: [19, 21, 4285, 712, 4702, 7673, 4281, 2]
+// Dependencies: [19, 21, 4302, 712, 4719, 7692, 4298, 2]
 
-// Module 7672 (IconButton)
+// Module 7691 (IconButton)
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -43,14 +43,14 @@ const forwardRefResult = require("noop").forwardRef((grow) => {
     obj.accessibilityLabel = "";
     obj.size = "lg";
     obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    const items = [callback(require(7673) /* BaseIconButton */.BaseIconButton, obj), ];
+    const items = [callback(require(7692) /* BaseIconButton */.BaseIconButton, obj), ];
     const obj1 = { style: null, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier: null, children: null };
     obj1[0] = tmp2.label;
     obj1[3] = maxFontSizeMultiplier;
     obj1[4] = label;
-    items[1] = callback(require(4281) /* Text */.Text, obj1);
+    items[1] = callback(require(4298) /* Text */.Text, obj1);
     obj.children = items;
-    let tmp9 = callback2(require(4702) /* BaseButton */.BaseButton, obj);
+    let tmp9 = callback2(require(4719) /* BaseButton */.BaseButton, obj);
   } else {
     obj = { ref: null };
     obj[0] = arg1;
@@ -58,7 +58,7 @@ const forwardRefResult = require("noop").forwardRef((grow) => {
     obj.accessibilityLabel = accessibilityLabel;
     obj.accessibilityHint = accessibilityHint;
     obj.maxFontSizeMultiplier = maxFontSizeMultiplier;
-    tmp9 = callback(require(7673) /* BaseIconButton */.BaseIconButton, obj);
+    tmp9 = callback(require(7692) /* BaseIconButton */.BaseIconButton, obj);
   }
   return tmp9;
 });

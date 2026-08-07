@@ -1,10 +1,10 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14516
+// Function ID: 14517
 // Name: ChatPreview
-// Dependencies: [19, 17, 21, 4285, 712, 8190, 1927, 9365, 1236, 2642, 10075, 3954, 1297, 9388, 9389, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 8207, 1927, 9382, 1236, 2642, 10091, 3971, 1297, 9405, 9406, 4298, 2]
 // Exports: default
 
-// Module 14500 (ChatPreview)
+// Module 14516 (ChatPreview)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,16 +33,16 @@ function ChatPreview(arg0) {
   obj = { style: tmp.chatContent, children: null };
   const obj1 = { style: tmp.chatHeader, children: null };
   const obj2 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: null, lineClamp: 1, pendingDisplayNameStyles: null, style: null };
-  obj2[4] = require(9389) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN;
+  obj2[4] = require(9406) /* DisplayNameStyleColorPreset */.EffectDisplayType.PLAIN;
   obj2[6] = displayNameStyles;
   obj2[7] = tmp.chatUsername;
-  const items1 = [callback(importDefault(9388), obj2), callback(require(4281) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
+  const items1 = [callback(importDefault(9405), obj2), callback(require(4298) /* Text */.Text, { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo })];
   obj1[1] = items1;
   const items2 = [callback2(View, obj1), ];
   const obj4 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj4[3] = intl.string(importDefault(2642).h5Cuej);
-  items2[1] = callback(require(4281) /* Text */.Text, obj4);
+  items2[1] = callback(require(4298) /* Text */.Text, obj4);
   obj[1] = items2;
   items[1] = callback2(View, obj);
   obj[2] = items;

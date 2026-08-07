@@ -1,12 +1,12 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14946
+// Function ID: 14947
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1369, 5143, 21, 1348, 4827, 4281, 1236, 9918, 1358, 698, 11084, 5146, 14931, 9340, 4253, 10068, 1988, 5669, 6921, 10067, 4100, 4710, 4285, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1369, 5160, 21, 1348, 4844, 4298, 1236, 9934, 1358, 698, 11099, 5163, 14947, 9357, 4270, 10084, 1988, 5688, 6940, 10083, 4117, 4727, 4302, 712, 2]
 // Exports: default
 
-// Module 14930 (BalanceWidget)
+// Module 14946 (BalanceWidget)
 import ref from "ref";
-import { View } from "module_9340";
+import { View } from "module_9357";
 import { AnalyticEvents } from "ME";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
 import ContentDismissActionType from "ContentDismissActionType";
@@ -32,11 +32,11 @@ function BalanceWidget(arg0) {
   obj = { variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.gGtZpz);
-  const items1 = [callback(require(4281) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4298) /* Text */.Text, obj), ];
   obj = { style: tmp.pill, children };
   items1[1] = callback(View, obj);
   obj[7] = items1;
-  return callback2(require(4827) /* PressableBase */.PressableOpacity, obj);
+  return callback2(require(4844) /* PressableBase */.PressableOpacity, obj);
 }
 class OrbsOnboardingMenuDismissibleContent {
   constructor(arg0) {
@@ -75,7 +75,7 @@ class OrbsOnboardingMenuDismissibleContent {
 }
 function BalanceWidgetMenu(style) {
   let str;
-  let obj = str(9340);
+  let obj = str(9357);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
@@ -126,7 +126,7 @@ function BalanceWidgetMenu(style) {
     str2 = "";
   }
   obj[2] = intl.formatToPlainString(str(1236).t.zPaLL9, { balance: str2 });
-  obj[3] = closure_10(importDefault(10067), { balance: str, onPress: callback, accessible: false });
+  obj[3] = closure_10(importDefault(10083), { balance: str, onPress: callback, accessible: false });
   return closure_10(BalanceWidget, obj);
 }
 ({ ContentDismissActionType: error, DismissibleContentGroupName: metroImportAll } = ContentDismissActionType);
@@ -148,9 +148,9 @@ let closure_15 = createCacheKey.createStyles((arg0) => {
 let result = require("ME").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = require(9340);
+  let obj = require(9357);
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
-  require(4100) /* UNSAFE_isDismissibleContentDismissed */;
+  require(4117) /* UNSAFE_isDismissibleContentDismissed */;
   if (null == balance) {
     obj = { onPress: null, style: null, accessibilityLabel: null, accessibilityState: null, children: null };
     obj[0] = function onPress() {
@@ -162,7 +162,7 @@ export default function BalanceWidgetMenuWrapper(style) {
     obj[3] = { busy: true };
     obj = { style: null, children: null };
     obj[0] = tmp2.loadingContainer;
-    obj[1] = callback(tmp3(4710).Ellipsis, { variant: "primary", size: "sm" });
+    obj[1] = callback(tmp3(4727).Ellipsis, { variant: "primary", size: "sm" });
     obj[4] = callback(View, obj);
     let tmp6Result = callback(BalanceWidget, obj);
   } else {

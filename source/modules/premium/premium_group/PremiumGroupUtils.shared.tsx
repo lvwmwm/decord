@@ -1,10 +1,10 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8097
+// Function ID: 8098
 // Name: getPriceString
-// Dependencies: [3935, 3930, 5776, 2]
+// Dependencies: [3952, 3947, 5795, 2]
 // Exports: getPriceString
 
-// Module 8080 (getPriceString)
+// Module 8097 (getPriceString)
 import addSubscriptionPlan from "addSubscriptionPlan";
 
 const require = arg1;
@@ -23,17 +23,17 @@ export const getPriceString = function getPriceString(hasAnyPremiumGroup) {
         if (null == value) {
           return null;
         } else {
-          const price = require(3930) /* getPremiumPlanItem */.getPrice(planIdFromItems);
-          const obj2 = require(3930) /* getPremiumPlanItem */;
+          const price = require(3947) /* getPremiumPlanItem */.getPrice(planIdFromItems);
+          const obj2 = require(3947) /* getPremiumPlanItem */;
           const tmp2 = require;
-          const formatPriceResult = require(5776) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
+          const formatPriceResult = require(5795) /* formatSingleCurrencyPrice */.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return tmp2(5776).formatRate(formatPriceResult, interval, intervalCount);
+            return tmp2(5795).formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }
-          const obj3 = require(5776) /* formatSingleCurrencyPrice */;
+          const obj3 = require(5795) /* formatSingleCurrencyPrice */;
         }
       }
     }

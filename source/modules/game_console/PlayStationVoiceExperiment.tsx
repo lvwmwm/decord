@@ -1,9 +1,9 @@
-// Module ID: 6886
-// Function ID: 6887
+// Module ID: 6905
+// Function ID: 6906
 // Name: PlayStationVoiceExperiment
 // Dependencies: [1349, 2]
 
-// Module 6886 (PlayStationVoiceExperiment)
+// Module 6905 (PlayStationVoiceExperiment)
 const obj = { 1: null };
 obj[1] = { allowPlayStationStaging: true };
 const tmp2 = require("getUnitId")({ kind: "user", name: "2026-03-churro", defaultConfig: { allowPlayStationStaging: false }, variations: obj });

@@ -1,10 +1,10 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11340
+// Function ID: 11341
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 4285, 501, 4281, 2]
+// Dependencies: [19, 21, 4302, 501, 4298, 2]
 // Exports: default
 
-// Module 11325 (ForumPostTitle)
+// Module 11340 (ForumPostTitle)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -34,5 +34,5 @@ export default function ForumPostTitle(arg0) {
     str = "mobile-text-heading-primary";
   }
   const tmp = createCacheKey();
-  return jsx(require(4281) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: createCacheKey().title, onTextLayout, children: title });
+  return jsx(require(4298) /* Text */.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: createCacheKey().title, onTextLayout, children: title });
 };

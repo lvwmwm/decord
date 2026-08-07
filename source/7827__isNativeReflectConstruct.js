@@ -1,7 +1,7 @@
 // Module ID: 7827
 // Function ID: 7828
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7828, 7773, 7772]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7828, 7813, 7814]
 
 // Module 7827 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const ForeignObject = arg1;
+const FeOffset = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ForeignObject {
+class FeOffset {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, ForeignObject);
+    tmp = _isNativeReflectConstruct(this, FeOffset);
     tmp2 = __esModule;
-    obj = __esModule(ForeignObject);
+    obj = __esModule(FeOffset);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,31 +51,33 @@ class ForeignObject {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(ForeignObject, require("_isNativeReflectConstruct"));
-const items = [
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const tmp = importDefault(7828);
-      const merged = Object.assign(self(7773).withoutXY(this, props));
-      const merged1 = Object.assign(obj);
-      obj.children = props.children;
-      return <tmp ref={function ref(arg0) {
+require("_inherits")(FeOffset, require("_isNativeReflectConstruct"));
+let obj = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const merged = Object.assign(this.props);
+    const obj = {
+      ref(arg0) {
         return self.refMethod(arg0);
-      }} />;
-    }
+      }
+    };
+    const tmp = importDefault(7828);
+    const merged1 = Object.assign(self(7813).extractFilter(this.props));
+    const obj2 = self(7813);
+    const merged2 = Object.assign(self(7813).extractIn(this.props));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
-];
-const importDefaultResultResult = importDefaultResult(ForeignObject, items);
-importDefaultResultResult.displayName = "ForeignObject";
-importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
+};
+const items = [obj];
+const importDefaultResultResult = importDefaultResult(FeOffset, items);
+importDefaultResultResult.displayName = "FeOffset";
+obj = {};
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+obj.dx = 0;
+obj.dy = 0;
+importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

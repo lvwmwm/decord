@@ -1,13 +1,13 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16015
+// Function ID: 16016
 // Name: useBaseActivityPanelHeaderContent
-// Dependencies: [32, 19, 17, 1371, 9676, 505, 21, 4285, 712, 1609, 4145, 15986, 3996, 5407, 15990, 589, 5655, 15991, 15995, 15996, 16001, 15980, 2]
+// Dependencies: [32, 19, 17, 1371, 9692, 505, 21, 4302, 712, 1609, 4162, 16012, 4013, 5426, 16016, 589, 5674, 16017, 16021, 16022, 16027, 16006, 2]
 // Exports: useBaseActivityPanelHeader
 
-// Module 15989 (useBaseActivityPanelHeaderContent)
+// Module 16015 (useBaseActivityPanelHeaderContent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "QuestActivityButtonInner";
-import get_ActivityIndicator from "module_15991";
+import get_ActivityIndicator from "module_16017";
 import participantFromServer from "participantFromServer";
 import ActivityPanelModes from "ActivityPanelModes";
 import { ThemeTypes } from "sum";
@@ -80,7 +80,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
     items[2] = obj;
     return items;
   }, items1);
-  obj[0] = landscape(4145).runOnJS;
+  obj[0] = landscape(4162).runOnJS;
   obj[1] = setMode;
   obj[2] = closure_10;
   fn.__closure = obj;
@@ -90,11 +90,11 @@ function useBaseActivityPanelHeaderContent(landscape) {
   obj = { gesture: null, headerWrapperStyles: null, headerStyles: null, styles: null };
   const callback = importAllResult.useCallback(fn, items2);
   obj = { mode: null, panGestureEnabled: true, pipState: null, swipeRequiresPop: true, wrapperOffset: null, onPanMinimizeGestureEnd: null, disableHorizontalSafeAreas: true };
-  obj[0] = landscape(15986).MorphablePanelModes.PANEL;
+  obj[0] = landscape(16012).MorphablePanelModes.PANEL;
   obj[2] = pipState;
   obj[4] = wrapperOffset;
   obj[5] = callback;
-  obj[0] = setMode(15986)(obj);
+  obj[0] = setMode(16012)(obj);
   obj[1] = memo;
   obj[2] = memo1;
   obj[3] = tmp;
@@ -120,7 +120,7 @@ class BaseActivityPanelContent {
       tmp9 = closure_1;
       tmp7 = jsxs;
       items = [, , ];
-      items[0] = jsx(require("module_15990"), {});
+      items[0] = jsx(require("module_16016"), {});
       tmp3Result = !landscape;
       if (!landscape) {
         obj2 = { style: null };
@@ -179,14 +179,14 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
     applicationId = stateFromStores.applicationId;
   }
   const items1 = [applicationId];
-  const first = callback(importDefault(5655)(items1), 1)[0];
+  const first = callback(importDefault(5674)(items1), 1)[0];
   const tmp7 = styles();
   let id;
   const tmp = useBaseActivityPanelHeaderContent(obj);
   if (first != null) {
     id = first.id;
   }
-  let tmp8Result = tmp8(importDefault(15991), { applicationId: id });
+  let tmp8Result = tmp8(importDefault(16017), { applicationId: id });
   obj = { hasConnectedActivity: null != stateFromStores, gesture, headerWrapperStyles, headerStyles, landscape, children: null };
   const items2 = [tmp7.buttonContainer, ];
   let prop;
@@ -196,7 +196,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
   obj = { style: items2, children: null };
   items2[1] = prop;
   let tmp17;
-  let tmp5Result = tmp5(15995);
+  let tmp5Result = tmp5(16021);
   if (!landscape) {
     let name;
     if (first != null) {
@@ -209,7 +209,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
   if (tmp8Result) {
     obj1 = { applicationId: null };
     obj1[0] = applicationId;
-    tmp8Result = tmp8(tmp5(15996), obj1);
+    tmp8Result = tmp8(tmp5(16022), obj1);
   }
   items3[1] = tmp8Result;
   let tmp20 = null;
@@ -224,7 +224,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
     tmp21 = tmp8Result;
   }
   items4[1] = tmp21;
-  tmp5Result = tmp5(16001);
+  tmp5Result = tmp5(16027);
   items4[2] = closure_12(tmp5Result, { selfEmbeddedActivity: stateFromStores, setMode });
   obj[5] = items4;
   return closure_13(BaseActivityPanelContent, obj);
@@ -238,7 +238,7 @@ const memoResult = importAllResult.memo(() => {
   let wrapperDimensions;
   const tmp2 = callback3();
   c0 = tmp2;
-  const context = importAllResult.useContext(wrapperDimensions(15980));
+  const context = importAllResult.useContext(wrapperDimensions(16006));
   wrapperDimensions = context.wrapperDimensions;
   let items = [tmp2.headerContainer, wrapperDimensions.isWindowLandscape];
   ({ setMode, wrapperOffset, pipState } = context);

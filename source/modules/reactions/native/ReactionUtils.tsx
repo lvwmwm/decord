@@ -1,10 +1,10 @@
-// Module ID: 8536
-// Function ID: 8537
+// Module ID: 8553
+// Function ID: 8554
 // Name: handleOutOfSuperReactions
-// Dependencies: [1372, 4502, 4101, 1903, 676, 1906, 21, 3923, 4254, 4255, 7144, 3930, 4253, 8537, 1988, 4143, 8560, 7143, 4479, 8703, 12448, 12449, 12450, 7576, 7622, 4623, 1236, 4281, 2]
+// Dependencies: [1372, 4519, 4118, 1903, 676, 1906, 21, 3940, 4271, 4272, 7163, 3947, 4270, 8554, 1988, 4160, 8577, 7162, 4496, 8720, 12463, 12464, 12465, 7595, 7641, 4640, 1236, 4298, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 8536 (handleOutOfSuperReactions)
+// Module 8553 (handleOutOfSuperReactions)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -29,13 +29,13 @@ let result = require("handleConnectionOpen").fileFinishedImporting("modules/reac
 export const handleOutOfSuperReactions = function handleOutOfSuperReactions(arg0) {
   const currentUser = authStore.getCurrentUser();
   if (null != currentUser) {
-    let obj = require(3930) /* getPremiumPlanItem */;
+    let obj = require(3947) /* getPremiumPlanItem */;
     let openLazyResult;
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss: null };
       obj[0] = arg0;
-      openLazyResult = importDefault(4253).openLazy(require(1988) /* asyncRequireImpl */(8537, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
-      const obj2 = importDefault(4253);
+      openLazyResult = importDefault(4270).openLazy(require(1988) /* asyncRequireImpl */(8554, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      const obj2 = importDefault(4270);
     }
     return openLazyResult;
   }
@@ -147,36 +147,36 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     obj[1] = FORUM_CHANNEL_POST;
     const merged1 = Object.assign(_location);
     obj[4] = obj;
-    importDefault(4479).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
-    const obj3 = importDefault(4479);
+    importDefault(4496).trackWithMetadata(constants.REACTION_ACTION_SHEET_OPENED, obj);
+    const obj3 = importDefault(4496);
     const obj1 = { messageId: null, channelId: null, emoji: null };
     obj1[0] = messageId;
     obj1[1] = channelId;
     obj1[2] = isPoll.emoji;
-    const obj6 = importDefault(4253);
+    const obj6 = importDefault(4270);
     const merged2 = Object.assign(merged);
-    obj6.openLazy(require(1988) /* asyncRequireImpl */(8703, dependencyMap.paths), "MessageReactions", obj1);
+    obj6.openLazy(require(1988) /* asyncRequireImpl */(8720, dependencyMap.paths), "MessageReactions", obj1);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
-  let obj = importDefault(4253);
+  let obj = importDefault(4270);
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(require(1988) /* asyncRequireImpl */(12448, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(require(1988) /* asyncRequireImpl */(12463, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;
 export const handleRemoveAllReactions = function handleRemoveAllReactions(arg0, arg1) {
   const _require = arg0;
   const importDefault = arg1;
-  let obj = importDefault(4623);
+  let obj = importDefault(4640);
   obj = { title: null, children: null, cancelText: null, confirmText: null, onConfirm: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.ZbtGBm);
   obj = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.VpjOCo);
-  obj[1] = jsx(_require(4281).Text, { variant: "text-md/normal", children: null });
+  obj[1] = jsx(_require(4298).Text, { variant: "text-md/normal", children: null });
   const intl3 = _require(1236).intl;
   obj[2] = intl3.string(_require(1236).t["ETE/oC"]);
   const intl4 = _require(1236).intl;

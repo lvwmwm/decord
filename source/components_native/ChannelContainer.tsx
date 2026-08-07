@@ -1,10 +1,10 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9682
+// Function ID: 9683
 // Name: NotificationsContainer
-// Dependencies: [19, 17, 3913, 1372, 1960, 676, 1369, 21, 4285, 4138, 9667, 589, 10214, 8776, 4100, 1358, 10215, 10216, 10231, 2]
+// Dependencies: [19, 17, 3930, 1372, 1960, 676, 1369, 21, 4302, 4155, 9683, 589, 10230, 8793, 4117, 1358, 10231, 10232, 10247, 2]
 // Exports: ChannelContainer
 
-// Module 9666 (NotificationsContainer)
+// Module 9682 (NotificationsContainer)
 import set from "set";
 import { View } from "AnnouncementChannelLurkerBar";
 import initialize from "initialize";
@@ -20,10 +20,10 @@ let unpackModuleId;
 const require = arg1;
 function NotificationsContainer() {
   let tmp4 = null;
-  if (importDefault(4138)().isChatBesideChannelList) {
+  if (importDefault(4155)().isChatBesideChannelList) {
     const obj = { style: null, children: null };
     obj[0] = tmp.container;
-    obj[1] = callback(importDefault(9667), {});
+    obj[1] = callback(importDefault(9683), {});
     tmp4 = callback(View, obj);
   }
   return tmp4;
@@ -57,7 +57,7 @@ export const ChannelContainer = function ChannelContainer(children) {
   ({ channel, isStageChannel } = stateFromStoresObject);
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(10214)(stateFromStoresObject.voiceChannelId);
+    tmp5 = channelId(10230)(stateFromStoresObject.voiceChannelId);
   }
   let tmpResult = tmp(589);
   const items1 = [initialize];
@@ -73,9 +73,9 @@ export const ChannelContainer = function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(8776)(isPrivateResult);
+  const tmp8 = channelId(8793)(isPrivateResult);
   React = tmp8;
-  const tmp9 = channelId(8776)(channelId);
+  const tmp9 = channelId(8793)(channelId);
   c4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = React.useEffect(() => {
@@ -100,7 +100,7 @@ export const ChannelContainer = function ChannelContainer(children) {
       const result = obj.UNSAFE_markDismissibleContentAsDismissed(outer1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
     }
   }, items2);
-  tmpResult = tmp(10215);
+  tmpResult = tmp(10231);
   const channelStyles = tmpResult.useChannelStyles();
   obj = { style: channelStyles.scene, children: null };
   obj = { style: channelStyles.flex, children: null };
@@ -114,14 +114,14 @@ export const ChannelContainer = function ChannelContainer(children) {
     if (stateFromStores) {
       const obj1 = { channel: null };
       obj1[0] = channel;
-      tmp15 = callback(tmp4(10216), obj1);
+      tmp15 = callback(tmp4(10232), obj1);
     }
   }
   const items3 = [tmp15, children.children, ];
   if (tmp5) {
     const obj2 = { style: null };
     obj2[0] = channelStyles.callPTTButton;
-    tmp5 = callback(tmp4(10231), obj2);
+    tmp5 = callback(tmp4(10247), obj2);
   }
   items3[2] = tmp5;
   obj[1] = items3;

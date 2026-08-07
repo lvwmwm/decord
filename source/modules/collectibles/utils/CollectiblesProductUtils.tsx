@@ -1,10 +1,10 @@
-// Module ID: 6933
-// Function ID: 6934
+// Module ID: 6952
+// Function ID: 6953
 // Name: getProductOrbPrice
-// Dependencies: [32, 6928, 676, 1930, 2]
+// Dependencies: [32, 6947, 676, 1930, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 6933 (getProductOrbPrice)
+// Module 6952 (getProductOrbPrice)
 import _slicedToArray from "_slicedToArray";
 import { isProfileEffectRecord } from "fromServer";
 import ME from "ME";

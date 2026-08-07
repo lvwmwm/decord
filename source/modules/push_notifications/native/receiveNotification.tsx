@@ -1,10 +1,10 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 16897
+// Function ID: 16898
 // Name: onStageConnectionError
-// Dependencies: [5, 7680, 6906, 1218, 1372, 1903, 5751, 676, 4349, 1378, 11701, 3, 3985, 1236, 8535, 4136, 1231, 7696, 4293, 5878, 8872, 4135, 15424, 7022, 8706, 5669, 4295, 9161, 698, 4479, 500, 10893, 11, 15422, 6855, 10, 6856, 4975, 12896, 11704, 589, 10882, 9662, 4266, 691, 11006, 8836, 7225, 709, 4490, 1222, 4489, 13113, 2]
+// Dependencies: [5, 5343, 6925, 1218, 1372, 1903, 5770, 676, 4366, 1378, 11716, 3, 4002, 1236, 8552, 4153, 1231, 7713, 4310, 5897, 8889, 4152, 15448, 7041, 8723, 5688, 4312, 9178, 698, 4496, 500, 10905, 11, 15446, 6874, 10, 6875, 4992, 12911, 11719, 589, 10894, 9678, 4283, 691, 11021, 8853, 7244, 709, 4507, 1222, 4506, 13127, 2]
 // Exports: default
 
-// Module 16877 (onStageConnectionError)
+// Module 16897 (onStageConnectionError)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import scheduledEventSort from "scheduledEventSort";
 import fetchFingerprint from "fetchFingerprint";
@@ -22,11 +22,11 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 function onStageConnectionError() {
-  let obj = importDefault(3985);
+  let obj = importDefault(4002);
   obj = { key: "STAGE_DISCOVERY_CONNECTION_ERROR_GENERIC", content: null, icon: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.ah3RLk);
-  obj[2] = importDefault(8535);
+  obj[2] = importDefault(8552);
   obj.open(obj);
 }
 function waitForConnection() {
@@ -242,7 +242,7 @@ function _connectToStage2() {
       const dependencyMap = tmp3;
       yield outer1_20();
       let c5 = 1;
-      const obj2 = callback(7696);
+      const obj2 = callback(7713);
       yield obj2.connectOrLurkStage(callback, closure_1, true);
       if (2 === tmp7) {
         c5 = 0;
@@ -253,7 +253,7 @@ function _connectToStage2() {
         throw arg1;
       } else if (arg0 !== 2) {
         let closure_2 = arg1;
-        const obj = callback(7696);
+        const obj = callback(7713);
         obj.navigateToStage(closure_2, null);
         c5 = 0;
       }
@@ -397,11 +397,11 @@ function _handleGuildEventNotification() {
                 channel_id = tmp43.channel_id;
                 if (null == channel_id) {
                   (function onVoiceConnectionError() {
-                    let obj = guild_scheduled_event_id(3985);
+                    let obj = guild_scheduled_event_id(4002);
                     obj = { key: "VOICE_CONNECTION_ERROR_GENERIC", content: null, icon: null };
                     const intl = channel_id(1236).intl;
                     obj[1] = intl.string(channel_id(1236).t.S69lJR);
-                    obj[2] = guild_scheduled_event_id(8535);
+                    obj[2] = guild_scheduled_event_id(8552);
                     obj.open(obj);
                   })();
                   c4 = 3;
@@ -418,7 +418,7 @@ function _handleGuildEventNotification() {
                 }
               } else if (tmp46.EXTERNAL === NumberResult) {
                 guild_scheduled_event_id = tmp43.guild_scheduled_event_id;
-                let obj6 = callback(5878);
+                let obj6 = callback(5897);
                 obj6.transitionToGuild(tmp43.guild_id);
                 dependencyMap = 1;
                 c4 = 1;
@@ -441,7 +441,7 @@ function _handleGuildEventNotification() {
             } else {
               id = guildScheduledEvent.getGuildScheduledEvent(guild_scheduled_event_id);
               if (null != id) {
-                obj3 = channel_id(8872);
+                obj3 = channel_id(8889);
                 const obj7 = { eventId: null, event: null };
                 obj7[0] = id.id;
                 obj7[1] = id;
@@ -457,7 +457,7 @@ function _handleGuildEventNotification() {
             c4 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = channel_id(4293);
+            obj = channel_id(4310);
             obj.transitionToChannel(channel_id);
           }
           c4 = 3;
@@ -535,9 +535,9 @@ function _handleRelationshipAddNotification() {
               callback = Number(lib.rel_type);
               if (callback === constants2.PENDING_INCOMING) {
                 user_id = lib.user_id;
-                lib(4135).navigateToRootTab({ screen: "notifications" });
-                const obj8 = lib(4135);
-                user_id(15424).setTab(lib(7022).NotificationCenterTabs.ForYou);
+                lib(4152).navigateToRootTab({ screen: "notifications" });
+                const obj8 = lib(4152);
+                user_id(15448).setTab(lib(7041).NotificationCenterTabs.ForYou);
                 dependencyMap = 2;
                 c4 = 1;
                 let obj3 = { value: null, done: false };
@@ -546,14 +546,14 @@ function _handleRelationshipAddNotification() {
               } else {
                 if (callback !== constants2.FRIEND) {
                   if (lib.notification_type === constants.REMINDER) {
-                    let obj5 = lib(4136);
+                    let obj5 = lib(4153);
                     const rootNavigationRef = obj5.getRootNavigationRef();
                     if (rootNavigationRef != null) {
                       rootNavigationRef.navigate("friends", { screen: "requests" });
                     }
                   }
                 } else {
-                  obj3 = callback(4295);
+                  obj3 = callback(4312);
                   const obj4 = { recipientIds: null };
                   obj4[0] = lib.user_id;
                   obj3.openPrivateChannel(obj4);
@@ -572,9 +572,9 @@ function _handleRelationshipAddNotification() {
           } else {
             obj = { userId: null, sourceAnalyticsLocations: null };
             obj[0] = user_id;
-            const items = [callback(5669).PUSH_NOTIFICATION];
+            const items = [callback(5688).PUSH_NOTIFICATION];
             obj[1] = items;
-            callback(8706)(obj);
+            callback(8723)(obj);
             c4 = 3;
             const obj6 = { value: null, done: true };
             obj6[0] = undefined;
@@ -718,7 +718,7 @@ function _handleCallConnectNotification() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              lib(4293).transitionToChannel(lib.channel_id);
+              lib(4310).transitionToChannel(lib.channel_id);
               dependencyMap = 2;
               c4 = 1;
               let obj3 = { value: null, done: false };
@@ -734,7 +734,7 @@ function _handleCallConnectNotification() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            const tmp60 = callback(9161);
+            const tmp60 = callback(9178);
             const call = tmp60.call;
             const channel_id = lib.channel_id;
             if (typeof call === "unknown") {
@@ -744,10 +744,10 @@ function _handleCallConnectNotification() {
             }
             obj = callback(698);
             const obj5 = { location: null, guild_id: null, ringer_user_id: null };
-            obj5[0] = callback(5669).PUSH_NOTIFICATION;
+            obj5[0] = callback(5688).PUSH_NOTIFICATION;
             obj5[1] = lib.guild_id;
             obj5[2] = lib.user_id;
-            obj2 = lib(4479);
+            obj2 = lib(4496);
             const merged = Object.assign(obj2.collectChannelAnalyticsMetadataFromId(lib.channel_id));
             obj.track(constants.RING_CALL_ACCEPTED, obj5);
             obj3 = lib(500);
@@ -755,11 +755,11 @@ function _handleCallConnectNotification() {
               if (lib.is_fullscreen_call_ui) {
                 obj4 = callback(698);
                 let obj6 = { action_type: "join" };
-                obj6 = lib(4479);
+                obj6 = lib(4496);
                 const merged1 = Object.assign(obj6.collectChannelAnalyticsMetadataFromId(lib.channel_id));
                 obj4.track(constants.CALLKIT_CLICKED, obj6);
               }
-              callback(10893)(lib.channel_id);
+              callback(10905)(lib.channel_id);
             }
             c4 = 3;
             return { value: "T", done: null };
@@ -833,7 +833,7 @@ function _handleFriendSuggestionCreateNotification() {
               obj2[0] = arg1;
               return obj2;
             } else {
-              navigation = lib(4136).getRootNavigationRef();
+              navigation = lib(4153).getRootNavigationRef();
               if (null != navigation) {
                 const obj3 = { screen: "add-friends", params: null };
                 obj3[1] = { sourcePage: "Notifications" };
@@ -857,9 +857,9 @@ function _handleFriendSuggestionCreateNotification() {
           } else {
             obj = { userId: null, sourceAnalyticsLocations: null };
             obj[0] = user_id;
-            const items = [navigation(5669).PUSH_NOTIFICATION];
+            const items = [navigation(5688).PUSH_NOTIFICATION];
             obj[1] = items;
-            navigation(8706)(obj);
+            navigation(8723)(obj);
             c4 = 3;
             return { value: "T", done: null };
           }
@@ -963,14 +963,14 @@ function _maybeAckNotificationCenter() {
               const obj8 = prop(11);
               const _HermesInternal = HermesInternal;
               const items = ["incoming_friend_requests_" + lib.user_id + "_" + closure_2];
-              const result = lib(15422).markNotificationCenterLocalItemsAcked(items);
-              const obj10 = lib(15422);
+              const result = lib(15446).markNotificationCenterLocalItemsAcked(items);
+              const obj10 = lib(15446);
             }
           } else if (arg0 === 1) {
             c4 = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = lib(15422);
+            obj = lib(15446);
             const result1 = obj.markNotificationCenterRemoteItemAcked(prop);
           }
           c4 = 3;
@@ -995,17 +995,17 @@ function _maybeAckNotificationCenter() {
 }
 function receiveNotification_(notif_type) {
   const _require = notif_type;
-  let obj = _require(10882);
+  let obj = _require(10894);
   const result = obj.initializeRouteManagerIfNeeded();
   if ("MESSAGE_CREATE" === notif_type.type) {
     const _HermesInternal2 = HermesInternal;
     tmp3.log("Notification clicked of type " + notif_type.type + " with guild:" + notif_type.guild_id + " channel:" + notif_type.channel_id + " message:" + notif_type.message_id);
     obj = { guildId: null, channelId: null, messageId: null, isPreload: true };
     ({ guild_id: obj10[0], channel_id: obj10[1], message_id: obj10[2] } = notif_type);
-    const messages = importDefault(9662).fetchMessages(obj);
+    const messages = importDefault(9678).fetchMessages(obj);
     let flag = true;
     let flag2 = true;
-    const obj9 = importDefault(9662);
+    const obj9 = importDefault(9678);
   } else {
     flag = false;
     flag2 = false;
@@ -1016,7 +1016,7 @@ function receiveNotification_(notif_type) {
         flag = false;
         flag2 = false;
         if ("" !== notif_type.deeplink) {
-          const payload = importDefault(4266)(notif_type.deeplink).payload;
+          const payload = importDefault(4283)(notif_type.deeplink).payload;
           if (payload.type === tmp(691).LinkingTypes.MESSAGE) {
             let tracking_type;
             if (notif_type != null) {
@@ -1026,10 +1026,10 @@ function receiveNotification_(notif_type) {
               tracking_type = notif_type.type;
             }
             if (tmp8) {
-              let tmpResult = tmp(11006);
+              let tmpResult = tmp(11021);
               tmpResult.receivedNotification(payload.messageId, payload.channelId, tracking_type);
             }
-            let tmp56Result = tmp56(9662);
+            let tmp56Result = tmp56(9678);
             obj = { guildId: null, channelId: null, messageId: null, isPreload: true };
             ({ guildId: obj8[0], channelId: obj8[1], messageId: obj8[2] } = payload);
             const messages1 = tmp56Result.fetchMessages(obj);
@@ -1040,7 +1040,7 @@ function receiveNotification_(notif_type) {
             if (payload.type === tmp(691).LinkingTypes.ICYMI) {
               if (null != notif_type.channel_id) {
                 if (null != notif_type.message_id) {
-                  tmp56Result = tmp56(8836);
+                  tmp56Result = tmp56(8853);
                   const forNotification = tmp56Result.fetchForNotification(notif_type.channel_id, notif_type.message_id);
                   flag = false;
                   flag2 = false;
@@ -1065,17 +1065,17 @@ function receiveNotification_(notif_type) {
                   }
                   const obj1 = { id: null, type: null, score: 1000, data: null };
                   obj1[0] = notif_type.notification_center_id;
-                  obj1[1] = tmp(7225).ICYMIItemTypes.CUSTOM_STATUS;
+                  obj1[1] = tmp(7244).ICYMIItemTypes.CUSTOM_STATUS;
                   const obj2 = { user_id: null, text: null, emoji_id: null, emoji_name: null, emoji_animated: null };
                   ({ user_id: obj3[0], status_text: obj3[1] } = notif_type);
                   obj2[2] = status_emoji_id;
                   obj2[3] = notif_type.status_emoji_name;
                   obj2[4] = notif_type.status_emoji_animated;
                   obj1[3] = obj2;
-                  const forStatusNotification = tmp56(8836).fetchForStatusNotification(obj1);
+                  const forStatusNotification = tmp56(8853).fetchForStatusNotification(obj1);
                   flag = false;
                   flag2 = false;
-                  const tmp56Result1 = tmp56(8836);
+                  const tmp56Result1 = tmp56(8853);
                 }
               }
             }
@@ -1410,9 +1410,9 @@ function receiveNotification_(notif_type) {
     case "gap":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          let tmp19Result = tmp19(4266);
+          let tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           let obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1425,9 +1425,9 @@ function receiveNotification_(notif_type) {
     case "getChannel":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1440,9 +1440,9 @@ function receiveNotification_(notif_type) {
     case "getGuild":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1455,9 +1455,9 @@ function receiveNotification_(notif_type) {
     case "guildId":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1470,9 +1470,9 @@ function receiveNotification_(notif_type) {
     case "has":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1485,9 +1485,9 @@ function receiveNotification_(notif_type) {
     case "hash":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1500,9 +1500,9 @@ function receiveNotification_(notif_type) {
     case "header":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1515,9 +1515,9 @@ function receiveNotification_(notif_type) {
     case "httpServerLocation":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1530,9 +1530,9 @@ function receiveNotification_(notif_type) {
     case "includes":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1545,9 +1545,9 @@ function receiveNotification_(notif_type) {
     case "indexOf":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1565,12 +1565,12 @@ function receiveNotification_(notif_type) {
         tmp19(709).dispatch(obj5);
         const tmp19Result1 = tmp19(709);
       }
-      tmp19(4490).popAll();
+      tmp19(4507).popAll();
       tmpResult = tmp(1222);
       const obj6 = { navigationReplace: true, openChannel: true, skipMessageFetch: null };
       obj6[2] = flag;
       tmpResult.transitionTo(closure_14.CHANNEL(notif_type.guild_id, notif_type.channel_id, notif_type.message_id), obj6);
-      const tmp19Result2 = tmp19(4490);
+      const tmp19Result2 = tmp19(4507);
     break;
     case "join":
     break;
@@ -1644,7 +1644,7 @@ function receiveNotification_(notif_type) {
       const obj7 = { streamType: null, ownerId: null, guildId: null, channelId: null };
       obj7[0] = StreamTypes.GUILD;
       ({ user_id: obj15[1], guild_id: obj15[2], channel_id: obj15[3] } = notif_type);
-      tmp19(4489)(obj7);
+      tmp19(4506)(obj7);
     break;
     case "length":
     break;
@@ -1679,9 +1679,9 @@ function receiveNotification_(notif_type) {
     case "map":
       if (null != notif_type.deeplink) {
         if ("" !== notif_type.deeplink) {
-          tmp19Result = tmp19(4266);
+          tmp19Result = tmp19(4283);
           type = tmp19Result(notif_type.deeplink);
-          tmp19Result = tmp19(13113);
+          tmp19Result = tmp19(13127);
           obj4 = { payload: null, waitForConnection: false, skipMessageFetch: null };
           obj4[0] = type.payload;
           obj4[2] = flag;
@@ -1867,7 +1867,11 @@ function receiveNotification_(notif_type) {
     break;
     case "ay":
     break;
-    case "getVoiceStateMetadata":
+    case "getVueInternalName":
+    break;
+    case "minimumAgeInDays":
+    break;
+    case "navigateToLandingPage":
     break;
     case "firstChild":
     break;
@@ -1979,11 +1983,7 @@ function receiveNotification_(notif_type) {
     break;
     case "perGuildMaxCount":
     break;
-    case "useEditStateContext":
-    break;
-    case "disableApplicationSubscriptionCancellationSurvey":
-    break;
-    case "attachmentCarousel":
+    case "useEditStateIds":
     break;
     case "getChannelIcon":
     break;
@@ -2035,7 +2035,7 @@ function receiveNotification_(notif_type) {
     break;
     case "ap":
     break;
-    case "handleAppStateUpdate":
+    case "handleResolveRaid":
     break;
     case "ToIntlMathematicalValue":
     break;
@@ -2077,45 +2077,13 @@ function receiveNotification_(notif_type) {
     break;
     case "rect":
     break;
-    case "GUILD_SOUNDBOARD_SOUND_PLAY_START":
-    break;
-    case "RTC_CONNECTION_PLATFORM":
-    break;
-    case "ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED":
+    case "SETTINGS_DESKTOP_APP":
     break;
     case "PX_80":
     break;
     case "_":
     break;
-    case "isFLAC":
-    break;
-    case "FLAC":
-    break;
-    case "ACCEPT_FRIEND_REQUEST":
-    break;
-    case "ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID":
-    break;
-    case "FRIEND":
-    break;
-    case "IE":
-    break;
-    case "END":
-    break;
-    case "CO":
-    break;
-    case "CONFIRM":
-    break;
-    case "CONFIRMATION":
-    break;
-    case "FI":
-    break;
-    case "MO":
-    break;
-    case "MODAL":
-    break;
-    case "bypassSystemInputProcessing":
-    break;
-    case "singleApplicationId":
+    case "snapToEnd":
     break;
     case "AUTO_MODERATION_REMOVE_REGEX_PATTERNS":
     break;
@@ -2227,15 +2195,7 @@ function receiveNotification_(notif_type) {
     break;
     case "QUEST_BOTTOM_SHEET":
     break;
-    case "bountyId":
-    break;
-    case "disableRightInsetApplication":
-    break;
-    case "ApplicationStreamResolutions":
-    break;
-    case "lut":
-    break;
-    case "fullySanitized":
+    case "fuseboxFrameRecordingEnabled":
     break;
     case "ActionSheetHeaderPressableText":
     break;
@@ -2245,9 +2205,7 @@ function receiveNotification_(notif_type) {
     break;
     case "ext":
     break;
-    case "isLight":
-    break;
-    case "isLightsEnabled":
+    case "isLinkTrusted":
     break;
     case "AccessibilityFocusView":
     break;
@@ -2435,6 +2393,8 @@ function receiveNotification_(notif_type) {
     break;
     case "ce":
     break;
+    case "enableServerTrendingNotifications":
+    break;
     case "access":
     break;
     case "accessibilityLabelCalendarFormat":
@@ -2486,6 +2446,8 @@ function receiveNotification_(notif_type) {
     case "clearAllSearchMesssages":
     break;
     case "sss":
+    break;
+    case "pushState":
     break;
     case "accessibleDismiss":
     break;
@@ -2541,6 +2503,44 @@ function receiveNotification_(notif_type) {
     break;
     case "alignItemsAtEndPaddingEnabled":
     break;
+    case "ig":
+    break;
+    case "em":
+    break;
+    case "ms":
+    break;
+    case "treatmentRendered":
+    break;
+    case "GuildEntityDao":
+    break;
+    case "EntityDao":
+    break;
+    case "Dao":
+    break;
+    case "NOTIF_SETTING_MAPPING":
+    break;
+    case "GUILD_CREATION_INTENT_SELECTED":
+    break;
+    case "CREATION_INTENT":
+    break;
+    case "app":
+    break;
+    case "application":
+    break;
+    case "applicationIdToGuildIds":
+    break;
+    case "pp":
+    break;
+    case "pl":
+    break;
+    case "ca":
+    break;
+    case "cat":
+    break;
+    case "tio":
+    break;
+    case "io":
+    break;
   }
 }
 require("processCallbacks").addPostConnectionCallback;
@@ -2553,25 +2553,25 @@ export default function receiveNotification(getData) {
   if (null == getData.getData) {
     return false;
   } else {
-    data(6855).trackAppOpened("notification");
+    data(6874).trackAppOpened("notification");
     data = getData.getData();
-    const obj3 = data(6855);
+    const obj3 = data(6874);
     const tmp11 = importDefault;
     const _HermesInternal = HermesInternal;
     importDefault(10).mark("\u2757", "Receive notification " + data.type);
     if (null != data.receiving_user_id) {
       if (null != id.getId()) {
         if (data.receiving_user_id !== obj.getId()) {
-          tmp7(6856);
-          tmp7(4975);
-          tmp7(12896);
+          tmp7(6875);
+          tmp7(4992);
+          tmp7(12911);
           let receiving_user_id = data.receiving_user_id;
-          receiving_user_id = tmp7(11704).switchAccount(receiving_user_id, false, arg1 ? tmp5.PUSH_NOTIFICATION_INITIAL : tmp5.PUSH_NOTIFICATION);
+          receiving_user_id = tmp7(11719).switchAccount(receiving_user_id, false, arg1 ? tmp5.PUSH_NOTIFICATION_INITIAL : tmp5.PUSH_NOTIFICATION);
           receiving_user_id.then(() => {
             const Emitter = outer1_1(outer1_3[40]).Emitter;
             Emitter.batched(() => outer1_34(closure_0));
           });
-          const tmp7Result2 = tmp7(11704);
+          const tmp7Result2 = tmp7(11719);
         }
       }
       obj = id;

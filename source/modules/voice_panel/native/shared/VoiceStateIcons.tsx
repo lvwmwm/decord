@@ -1,9 +1,9 @@
-// Module ID: 9101
-// Function ID: 9102
+// Module ID: 9118
+// Function ID: 9119
 // Name: VideoDisabledSvgIcon
-// Dependencies: [19, 17, 21, 4285, 712, 9102, 9103, 9105, 9107, 9109, 1351, 1297, 7758, 9111, 9112, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 9119, 9120, 9122, 9124, 9126, 1351, 1297, 7775, 9128, 9129, 2]
 
-// Module 9101 (VideoDisabledSvgIcon)
+// Module 9118 (VideoDisabledSvgIcon)
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,11 +34,11 @@ function VideoDisabledSvgIcon(size) {
   const items = [iconStyle, flattenResult];
   obj.style = items;
   obj.viewBox = "0 0 24 24";
-  const items1 = [callback(require(7758) /* inlineStyles */.Path, { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor }), callback(require(7758) /* inlineStyles */.Path, { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor }), ];
+  const items1 = [callback(require(7775) /* inlineStyles */.Path, { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor }), callback(require(7775) /* inlineStyles */.Path, { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor }), ];
   obj = { d: "M21.2785 2.70712C20.888 2.31659 20.2549 2.31659 19.8643 2.70711L2.70711 19.8643C2.31658 20.2549 2.31658 20.888 2.70711 21.2785L2.72146 21.2929C3.11199 21.6834 3.74515 21.6834 4.13567 21.2929L21.2929 4.13568C21.6834 3.74515 21.6834 3.11199 21.2929 2.72147L21.2785 2.70712Z", fill: tmp4.redTint.tintColor };
-  items1[2] = callback(require(7758) /* inlineStyles */.Path, obj);
+  items1[2] = callback(require(7775) /* inlineStyles */.Path, obj);
   obj.children = items1;
-  return callback2(importDefault(7758), obj);
+  return callback2(importDefault(7775), obj);
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { redTint: null, defaultTint: null, noTint: null };
@@ -57,7 +57,7 @@ const memoResult = importAllResult.memo((arg0) => {
     alwaysWhite = false;
   }
   const tmp = callback3();
-  if (require(9102) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER === state) {
+  if (require(9119) /* isStableVoiceStateEqual */.MuteDeafenIconState.DEAFENED_SERVER === state) {
     const items = [style, ];
     let redTint = null;
     if (!alwaysWhite) {
@@ -66,13 +66,13 @@ const memoResult = importAllResult.memo((arg0) => {
     let obj = { style: null, size: "xs" };
     items[1] = redTint;
     obj[0] = items;
-    return callback(tmp2(9103).HeadphonesDenyIcon, obj);
-  } else if (tmp2(9102).MuteDeafenIconState.DEAFENED === state) {
+    return callback(tmp2(9120).HeadphonesDenyIcon, obj);
+  } else if (tmp2(9119).MuteDeafenIconState.DEAFENED === state) {
     obj = { style: null, size: "xs" };
     const items1 = [style];
     obj[0] = items1;
-    return callback(tmp2(9105).HeadphonesSlashIcon, obj);
-  } else if (tmp2(9102).MuteDeafenIconState.MUTED_SERVER === state) {
+    return callback(tmp2(9122).HeadphonesSlashIcon, obj);
+  } else if (tmp2(9119).MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
     if (!alwaysWhite) {
@@ -81,17 +81,17 @@ const memoResult = importAllResult.memo((arg0) => {
     const obj1 = { style: null, size: "xs" };
     items2[1] = redTint1;
     obj1[0] = items2;
-    return callback(tmp2(9107).MicrophoneDenyIcon, obj1);
-  } else if (tmp2(9102).MuteDeafenIconState.MUTED_LOCAL === state) {
+    return callback(tmp2(9124).MicrophoneDenyIcon, obj1);
+  } else if (tmp2(9119).MuteDeafenIconState.MUTED_LOCAL === state) {
     const obj2 = { style: null, size: "xs" };
     const items3 = [style];
     obj2[0] = items3;
-    return callback(tmp2(9107).MicrophoneDenyIcon, obj2);
-  } else if (tmp2(9102).MuteDeafenIconState.MUTED === state) {
+    return callback(tmp2(9124).MicrophoneDenyIcon, obj2);
+  } else if (tmp2(9119).MuteDeafenIconState.MUTED === state) {
     const obj3 = { style: null, size: "xs" };
     const items4 = [style];
     obj3[0] = items4;
-    return callback(tmp2(9109).MicrophoneSlashIcon, obj3);
+    return callback(tmp2(9126).MicrophoneSlashIcon, obj3);
   } else {
     tmp2(1351).assertNever(state);
   }
@@ -99,21 +99,21 @@ const memoResult = importAllResult.memo((arg0) => {
 const memoResult1 = importAllResult.memo((state) => {
   state = state.state;
   const merged = Object.assign(state, Object.create(null));
-  if (require(9102) /* isStableVoiceStateEqual */.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
+  if (require(9119) /* isStableVoiceStateEqual */.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     let obj = {};
     const merged1 = Object.assign(merged);
-    obj.source = importDefault(9111);
+    obj.source = importDefault(9128);
     const items = [merged.style, tmp2.noTint];
     obj.style = items;
     return callback(tmp3(1297).Icon, obj);
-  } else if (tmp3(9102).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
+  } else if (tmp3(9119).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
     obj = {};
     const merged2 = Object.assign(merged);
     return callback(VideoDisabledSvgIcon, obj);
-  } else if (tmp3(9102).VideoIconState.VIDEO_ACTIVE === state) {
+  } else if (tmp3(9119).VideoIconState.VIDEO_ACTIVE === state) {
     const obj1 = {};
     const merged3 = Object.assign(merged);
-    obj1.source = importDefault(9112);
+    obj1.source = importDefault(9129);
     return callback(tmp3(1297).Icon, obj1);
   } else {
     tmp3(1351).assertNever(state);

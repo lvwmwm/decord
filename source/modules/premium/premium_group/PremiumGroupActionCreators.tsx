@@ -1,10 +1,10 @@
-// Module ID: 12675
-// Function ID: 12676
+// Module ID: 12690
+// Function ID: 12691
 // Name: _fetchPremiumGroupMembership
-// Dependencies: [5, 1911, 12676, 676, 709, 530, 38, 2]
+// Dependencies: [5, 1911, 12691, 676, 709, 530, 38, 2]
 // Exports: acceptSubscriptionGroupInvite, fetchEligibleUsers, fetchPremiumGroupInvite, fetchPremiumGroupInvites, fetchPremiumGroupMembership, fetchSubscriptionGroupMembers, inviteUsersToSubscriptionGroup, removeSubscriptionGroupInvite, removeUserFromSubscriptionGroup
 
-// Module 12675 (_fetchPremiumGroupMembership)
+// Module 12690 (_fetchPremiumGroupMembership)
 import sendRequest from "sendRequest";
 import createdAt from "createdAt";
 import createFromServer from "createFromServer";

@@ -1,10 +1,10 @@
-// Module ID: 9782
-// Function ID: 9783
+// Module ID: 9798
+// Function ID: 9799
 // Name: BugReporterNotification
-// Dependencies: [19, 17, 9783, 676, 21, 4285, 712, 9769, 9705, 9685, 4490, 9687, 9784, 1988, 5937, 2]
+// Dependencies: [19, 17, 9799, 676, 21, 4302, 712, 9785, 9721, 9701, 4507, 9703, 9800, 1988, 5956, 2]
 // Exports: BugReporterNotification
 
-// Module 9782 (BugReporterNotification)
+// Module 9798 (BugReporterNotification)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import zustandStore from "zustandStore";
@@ -32,7 +32,7 @@ export const BugReporterNotification = function BugReporterNotification(notifica
   const memo = React.useMemo(() => ({ type: "simple", text: "Bug Catcher Clyde" }), []);
   obj[1] = <closure_4 source={{ uri: notification.imageUri }} style={tmp.preview} />;
   obj = { header: memo, children: null, rightAccessory: null, onPress: null, onSettingsPress: null, notification: null };
-  obj[1] = jsx(notification(9705).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." });
+  obj[1] = jsx(notification(9721).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." });
   obj[2] = <closure_5 header={memo} rightAccessory={null} onPress={null} onSettingsPress={null} notification={null}>{null}</closure_5>;
   obj[3] = function onPress() {
     let obj = outer1_6;
@@ -58,5 +58,5 @@ export const BugReporterNotification = function BugReporterNotification(notifica
     obj.openUserSettings(obj);
   };
   obj[5] = notification;
-  return jsx(notification(9769).NotificationPressable, { header: memo, children: null, rightAccessory: null, onPress: null, onSettingsPress: null, notification: null });
+  return jsx(notification(9785).NotificationPressable, { header: memo, children: null, rightAccessory: null, onPress: null, onSettingsPress: null, notification: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9588
+// Function ID: 9589
 // Name: getChannelCopyForEmbeddedActivity
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 9572 (getChannelCopyForEmbeddedActivity)
+// Module 9588 (getChannelCopyForEmbeddedActivity)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getChannelCopyForEmbeddedActivity.tsx");
 
 export default function getChannelCopyForEmbeddedActivity(arg0) {

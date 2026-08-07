@@ -1,8 +1,8 @@
-// Module ID: 4145
-// Function ID: 4146
-// Dependencies: [501, 1634, 4146, 2]
+// Module ID: 4162
+// Function ID: 4163
+// Dependencies: [501, 1634, 4163, 2]
 
-// Module 4145
+// Module 4162
 import PlatformTypes from "PlatformTypes";
 
 if (PlatformTypes.isAndroid()) {

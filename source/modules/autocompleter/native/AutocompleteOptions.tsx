@@ -1,10 +1,10 @@
-// Module ID: 9910
-// Function ID: 9911
+// Module ID: 9926
+// Function ID: 9927
 // Name: getAutocompleteOptions
-// Dependencies: [7159, 7160, 4813, 5202, 1372, 1971, 1891, 676, 4718, 4719, 9911, 1906, 12, 9912, 5141, 5870, 3957, 7235, 9875, 5873, 1416, 1236, 2]
+// Dependencies: [7178, 7179, 4830, 5218, 1372, 1971, 1891, 676, 4735, 4736, 9927, 1906, 12, 9928, 5158, 5889, 3974, 7254, 9891, 5892, 1416, 1236, 2]
 // Exports: getAutocompleteOptions
 
-// Module 9910 (getAutocompleteOptions)
+// Module 9926 (getAutocompleteOptions)
 import handleInit from "handleInit";
 import closure_4 from "handleInit";
 import closure_5 from "set";
@@ -241,7 +241,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 const obj4 = _private(tmp3[18]);
               }
               const items2 = [query];
-              const items3 = [_private, (arg0, arg1) => arg1 === callback(5873).StickerSendability.SENDABLE];
+              const items3 = [_private, (arg0, arg1) => arg1 === callback(5892).StickerSendability.SENDABLE];
               items1 = flag(tmp3[14]).queryStickers(items2, true, items3);
               const tmp2Result = flag(tmp3[14]);
             }

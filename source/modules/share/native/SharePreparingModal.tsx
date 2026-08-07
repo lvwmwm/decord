@@ -1,10 +1,10 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8869
+// Function ID: 8870
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4285, 712, 4683, 8853, 8854, 1236, 5309, 5744, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4700, 8870, 8871, 1236, 5325, 5763, 4298, 2]
 // Exports: default
 
-// Module 8852 (SharePreparingModal)
+// Module 8869 (SharePreparingModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,22 +34,22 @@ export default function SharePreparingModal(onCancel) {
   const items = [onCancel];
   const effect = React.useEffect(() => () => callback(), items);
   let obj = { style: tmp.content, children: null };
-  const items1 = [callback(onCancel(4683).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
+  const items1 = [callback(onCancel(4700).Backdrop, { blur: "none", "aria-hidden": true }), , , ];
   obj = { style: tmp.topBar, pointerEvents: "box-none", children: null };
   obj = { style: tmp.topBarEnd, children: null };
   const obj1 = { accessibilityLabel: null, icon: null, onPress: null };
   const intl = onCancel(1236).intl;
   obj1[0] = intl.string(onCancel(1236).t.cpT0Cq);
-  obj1[1] = callback(onCancel(5309).XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj1[1] = callback(onCancel(5325).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj1[2] = onCancel;
-  obj[1] = callback(importDefault(8854), obj1);
-  obj[2] = callback(onCancel(8853).MediaModalOverlayHeaderWrapper, obj);
+  obj[1] = callback(importDefault(8871), obj1);
+  obj[2] = callback(onCancel(8870).MediaModalOverlayHeaderWrapper, obj);
   items1[1] = callback(closure_4, obj);
-  items1[2] = callback(onCancel(5744).ActivityIndicator, {});
+  items1[2] = callback(onCancel(5763).ActivityIndicator, {});
   const obj2 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
   const intl2 = onCancel(1236).intl;
   obj2[2] = intl2.string(onCancel(1236).t.DwTQE5);
-  items1[3] = callback(onCancel(4281).Text, obj2);
+  items1[3] = callback(onCancel(4298).Text, obj2);
   obj[1] = items1;
   return callback2(closure_4, obj);
 };

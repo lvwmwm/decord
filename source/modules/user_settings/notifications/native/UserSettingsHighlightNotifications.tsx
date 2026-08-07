@@ -1,10 +1,10 @@
-// Module ID: 14620
-// Function ID: 14621
+// Module ID: 14636
+// Function ID: 14637
 // Name: Row
-// Dependencies: [19, 1891, 5137, 4480, 676, 21, 5245, 5240, 589, 5700, 5689, 7890, 2]
+// Dependencies: [19, 1891, 5154, 4497, 676, 21, 5261, 5256, 589, 5719, 5708, 7907, 2]
 // Exports: default
 
-// Module 14620 (Row)
+// Module 14636 (Row)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
@@ -46,12 +46,12 @@ function Row(guildId) {
     obj[0] = guild;
     obj = { label: null, icon: null, value: null, onValueChange: null, start: null, end: null };
     obj[0] = guild.name;
-    obj[1] = jsx(importDefault(5700), { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
+    obj[1] = jsx(importDefault(5719), { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
     obj[2] = !muted;
     obj[3] = callback;
     obj[4] = isStart;
     obj[5] = isEnd;
-    return jsx(tmp2(5689).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
+    return jsx(tmp2(5708).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
   }
   tmp2 = guildId;
 }
@@ -66,7 +66,7 @@ export default function UserSettingsHighlightNotifications() {
   if (0 !== stateFromStoresArray.length) {
     obj = { children: null };
     obj[0] = tmp3;
-    tmp4 = jsx(stateFromStoresArray(7890).Form, { children: null });
+    tmp4 = jsx(stateFromStoresArray(7907).Form, { children: null });
   }
   return tmp4;
 };

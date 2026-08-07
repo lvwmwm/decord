@@ -1,10 +1,10 @@
-// Module ID: 6387
-// Function ID: 6388
+// Module ID: 6406
+// Function ID: 6407
 // Name: HdAudioSpotIllustration
-// Dependencies: [21, 5251, 6388, 2]
+// Dependencies: [21, 5267, 6407, 2]
 // Exports: HdAudioSpotIllustration
 
-// Module 6387 (HdAudioSpotIllustration)
+// Module 6406 (HdAudioSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HdAudioSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const HdAudioSpotIllustration = function HdAudioSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6388);
+  obj[0] = importDefault(6407);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const HdAudioSpotIllustration = function HdAudioSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16765
+// Function ID: 16766
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 16710, 21, 4285, 712, 13161, 16722, 16714, 1236, 8983, 5251, 4281, 16746, 2]
+// Dependencies: [5, 32, 19, 17, 16730, 21, 4302, 712, 13175, 16742, 16734, 1236, 9000, 5267, 4298, 16766, 2]
 // Exports: default
 
-// Module 16745 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 16765 (GuildRoleSubscriptionTierConfirmationModal)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -37,8 +37,8 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
   const merged = Object.assign(onDone, Object.create(null));
   let importDefault;
   const tmp2 = createCacheKey();
-  const tmp5 = importDefault(13161)();
-  let obj = onDone(16722);
+  const tmp5 = importDefault(13175)();
+  let obj = onDone(16742);
   const editStateContext = obj.useEditStateContext();
   ({ guildId, editStateId } = editStateContext);
   [tmp9, tmp10] = callback2(React.useState(false), 2);
@@ -128,7 +128,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       obj = { children: null };
       let obj1 = { style: null, children: null };
       obj1[0] = tmp5.header;
-      let tmp3Result = tmp3(8983);
+      let tmp3Result = tmp3(9000);
       const intl3 = tmp6(1236).intl;
       obj1[1] = intl3.string(tmp6(1236).t["3S8gA7"]);
       const items1 = [callback3(tmp3Result, obj1), ];
@@ -137,7 +137,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       const obj3 = { style: null, resizeMode: "cover", source: null };
       obj3[0] = tmp2.coverPhoto;
       obj3[2] = first;
-      obj2[1] = callback3(tmp3(5251), obj3);
+      obj2[1] = callback3(tmp3(5267), obj3);
       items1[1] = callback3(View, obj2);
       obj[0] = items1;
       tmp13Result = tmp13(tmp16, obj);
@@ -146,18 +146,18 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     const items2 = [tmp13Result, , ];
     const obj5 = { style: null, children: null };
     obj5[0] = tmp5.header;
-    tmp3Result = tmp3(8983);
+    tmp3Result = tmp3(9000);
     const intl4 = tmp6(1236).intl;
     obj5[1] = intl4.string(tmp6(1236).t["74JctW"]);
     items2[1] = callback3(tmp3Result, obj5);
     const obj6 = { style: null, variant: "text-md/medium", color: "interactive-text-active", children: null };
     obj6[0] = tmp2.description;
     obj6[3] = callback2(usePriceTiers.useGroupDescriptionState(), 1)[0];
-    items2[2] = callback3(tmp6(4281).Text, obj6);
+    items2[2] = callback3(tmp6(4298).Text, obj6);
     obj4[0] = items2;
     flag = tmp13(tmp16, obj4);
   }
-  const items3 = [flag, callback3(onDone(16746).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  const items3 = [flag, callback3(onDone(16766).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   obj.children = items3;
-  return closure_10(importDefault(16714), obj);
+  return closure_10(importDefault(16734), obj);
 };

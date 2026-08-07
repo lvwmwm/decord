@@ -1,10 +1,10 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9070
+// Function ID: 9071
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4285, 712, 4281, 9054, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4298, 9071, 2]
 // Exports: default
 
-// Module 9053 (DiscordTag)
+// Module 9070 (DiscordTag)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,7 +38,7 @@ export default function DiscordTag(arg0) {
     obj = { variant: "text-md/semibold", maxFontSizeMultiplier: 2, style: null, lineClamp: 1, children: null };
     obj[2] = nicknameStyle;
     obj[4] = nick;
-    let tmp2Result = callback(require(4281) /* Text */.Text, obj);
+    let tmp2Result = callback(require(4298) /* Text */.Text, obj);
   } else {
     tmp2Result = null;
     if (null != user) {
@@ -52,11 +52,11 @@ export default function DiscordTag(arg0) {
         obj1[2] = discriminatorStyle;
         const items1 = ["#", user.discriminator];
         obj1[3] = items1;
-        tmp2Result = tmp2(tmp4(4281).Text, obj1);
+        tmp2Result = tmp2(tmp4(4298).Text, obj1);
       }
       items[1] = tmp2Result;
       obj[4] = items;
-      tmp2Result = tmp2(require(4281) /* Text */.Text, obj);
+      tmp2Result = tmp2(require(4298) /* Text */.Text, obj);
       tmp4 = require;
     }
   }
@@ -72,8 +72,8 @@ export default function DiscordTag(arg0) {
       const obj2 = { style: null, verified: null };
       obj2[0] = tmp.botTag;
       obj2[1] = user.isVerifiedBot();
-      tmp13 = callback(importDefault(9054), obj2);
-      const tmp17 = importDefault(9054);
+      tmp13 = callback(importDefault(9071), obj2);
+      const tmp17 = importDefault(9071);
     }
   }
   items2[1] = tmp13;

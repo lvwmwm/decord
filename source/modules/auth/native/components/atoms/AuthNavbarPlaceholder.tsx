@@ -1,10 +1,10 @@
-// Module ID: 8428
-// Function ID: 8429
+// Module ID: 8445
+// Function ID: 8446
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4285, 712, 5253, 2]
+// Dependencies: [19, 21, 4302, 712, 5269, 2]
 // Exports: default
 
-// Module 8428 (AuthNavbarPlaceholder)
+// Module 8445 (AuthNavbarPlaceholder)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,5 +18,5 @@ const result = require("createCacheKey").fileFinishedImporting("modules/auth/nat
 
 export default function AuthNavbarPlaceholder() {
   const tmp = createCacheKey();
-  return jsx(require(5253) /* HeaderBackImage */.FauxHeader, { style: createCacheKey().navBar, children: null });
+  return jsx(require(5269) /* HeaderBackImage */.FauxHeader, { style: createCacheKey().navBar, children: null });
 };

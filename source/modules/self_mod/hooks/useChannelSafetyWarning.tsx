@@ -1,10 +1,10 @@
-// Module ID: 10260
-// Function ID: 10261
+// Module ID: 10276
+// Function ID: 10277
 // Name: useChannelSafetyWarning
-// Dependencies: [9587, 589, 2]
+// Dependencies: [9603, 589, 2]
 // Exports: useChannelSafetyWarning
 
-// Module 10260 (useChannelSafetyWarning)
+// Module 10276 (useChannelSafetyWarning)
 import handleConnectionOpen from "handleConnectionOpen";
 
 const require = arg1;

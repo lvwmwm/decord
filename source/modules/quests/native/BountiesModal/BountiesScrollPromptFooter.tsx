@@ -1,10 +1,10 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14180
+// Function ID: 14181
 // Name: BountiesScrollPromptFooterContent
-// Dependencies: [19, 17, 4277, 5143, 21, 4285, 712, 4286, 4289, 589, 1609, 4145, 3996, 14167, 14168, 8582, 2]
+// Dependencies: [19, 17, 4294, 5160, 21, 4302, 712, 4303, 4306, 589, 1609, 4162, 4013, 14181, 14182, 8599, 2]
 // Exports: default
 
-// Module 14166 (BountiesScrollPromptFooterContent)
+// Module 14180 (BountiesScrollPromptFooterContent)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,12 +49,12 @@ function BountiesScrollPromptFooterContent(zIndex) {
   if (stateFromStores) {
     str = "halt";
   }
-  obj[1] = closure_7(zIndex(3996).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
-  const items5 = [closure_7(importDefault(4145).View, obj), ];
+  obj[1] = closure_7(zIndex(4013).BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str });
+  const items5 = [closure_7(importDefault(4162).View, obj), ];
   const items6 = [tmp.content, memo1, opacityStyle];
-  items5[1] = closure_7(importDefault(4145).View, { style: items6, onLayout: onContentLayout, children });
+  items5[1] = closure_7(importDefault(4162).View, { style: items6, onLayout: onContentLayout, children });
   obj[2] = items5;
-  return closure_8(importDefault(4145).View, obj);
+  return closure_8(importDefault(4162).View, obj);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles(() => {
@@ -68,7 +68,7 @@ let closure_9 = createCacheKey.createStyles(() => {
 });
 const fn = function t(value) {
   const obj = { opacity: null };
-  obj[0] = require(4286) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4289) /* timingNone */.timingStandard, "respect-motion-settings");
+  obj[0] = require(4303) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4306) /* timingNone */.timingStandard, "respect-motion-settings");
   return obj;
 };
 createCacheKey = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, timingStandard: require("timingNone").timingStandard };
@@ -77,7 +77,7 @@ fn.__workletHash = 11416950434629;
 fn.__initData = { code: "function BountiesScrollPromptFooterTsx1(visible){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings')};}" };
 const fn2 = function n(value, fn2) {
   const obj = { opacity: null };
-  obj[0] = require(4286) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4289) /* timingNone */.timingStandard, "respect-motion-settings", fn2);
+  obj[0] = require(4303) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming(value, require(4306) /* timingNone */.timingStandard, "respect-motion-settings", fn2);
   return obj;
 };
 createCacheKey = { withTiming: require("CONFIG_NEVER_ANIMATE_TIMING").withTiming, timingStandard: require("timingNone").timingStandard };
@@ -89,7 +89,7 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 export default function BountiesScrollPromptFooter(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.create(null));
-  let obj = require(14167) /* apexExperiment */;
+  let obj = require(14181) /* apexExperiment */;
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   let obj1 = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
@@ -100,8 +100,8 @@ export default function BountiesScrollPromptFooter(visible) {
     obj.visibilityOpacityStyle = visibilityOpacityStyle;
     return callback(closure_12, obj);
   }, []);
-  obj = { visible, entranceTiming: require(4289) /* timingNone */.timingStandard, exitTiming: require(4289) /* timingNone */.timingStandard };
-  const visibilityTransition = require(14168) /* useVisibilityTransition */.useVisibilityTransition(obj);
+  obj = { visible, entranceTiming: require(4306) /* timingNone */.timingStandard, exitTiming: require(4306) /* timingNone */.timingStandard };
+  const visibilityTransition = require(14182) /* useVisibilityTransition */.useVisibilityTransition(obj);
   let shouldRender = visibilityTransition.shouldRender;
   if (isBountiesModalTransitionsRefactorEnabled) {
     obj = { useReducedMotion: null, item: null, entering: null, exiting: null, renderItem: null };
@@ -114,9 +114,9 @@ export default function BountiesScrollPromptFooter(visible) {
     obj[2] = fn;
     obj[3] = fn2;
     obj[4] = callback;
-    shouldRender = callback(importDefault(8582), obj);
+    shouldRender = callback(importDefault(8599), obj);
     const tmp13 = callback;
-    const tmp15 = importDefault(8582);
+    const tmp15 = importDefault(8599);
   } else if (shouldRender) {
     obj1 = {};
     const merged1 = Object.assign(merged);

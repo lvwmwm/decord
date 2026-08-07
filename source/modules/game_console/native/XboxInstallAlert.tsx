@@ -1,10 +1,10 @@
-// Module ID: 10813
-// Function ID: 10814
+// Module ID: 10825
+// Function ID: 10826
 // Name: XboxInstallAlert
-// Dependencies: [19, 10423, 21, 4285, 712, 4713, 1236, 1297, 10467, 500, 3981, 2]
+// Dependencies: [19, 10439, 21, 4302, 712, 4730, 1236, 1297, 10483, 500, 3998, 2]
 // Exports: default
 
-// Module 10813 (XboxInstallAlert)
+// Module 10825 (XboxInstallAlert)
 import "noop";
 import XBOX_URL_BASE from "XBOX_URL_BASE";
 import { jsx } from "jsxProd";
@@ -42,12 +42,12 @@ export default function XboxInstallAlert(arg0) {
   obj.onConfirm = function onConfirm() {
     const obj = lib(500);
     const isAndroidResult = lib(500).isAndroid();
-    const openURL = callback(3981).openURL;
+    const openURL = callback(3998).openURL;
     if (isAndroidResult) {
       openURL(closure_3);
     } else {
       openURL(closure_4);
     }
   };
-  return jsx(importDefault(4713), {});
+  return jsx(importDefault(4730), {});
 };

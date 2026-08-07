@@ -1,9 +1,9 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7917
+// Function ID: 7918
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4285, 712, 5921, 5915, 3990, 7901, 1236, 5924, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 5940, 5934, 4007, 7918, 1236, 5943, 4298, 2]
 
-// Module 7900 (TextAreaField)
+// Module 7917 (TextAreaField)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,22 +25,22 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   let state;
   let label = isDisabled;
   let obj = dependencyMap;
-  let obj1 = require(5921) /* useInputStyles */;
+  let obj1 = require(5940) /* useInputStyles */;
   obj = { size: "lg", isRound: false, isDisabled: isDisabled.isDisabled };
   const inputStyles = obj1.useInputStyles(obj);
   const tmp2 = callback2();
   const maxLength = isDisabled.maxLength;
-  let obj3 = require(5915) /* useTextFieldState */;
+  let obj3 = require(5934) /* useTextFieldState */;
   const textField = obj3.useTextField(isDisabled, ref);
   ({ state, inputProps, innerRef } = textField);
-  let obj4 = require(3990) /* getNodeText */;
+  let obj4 = require(4007) /* getNodeText */;
   const focus = obj4.useFocus();
   let diff;
   ({ focusProps, isFocused } = focus);
   if (null != maxLength) {
     diff = maxLength - state.value.length;
   }
-  const result = _8Q_k1s(7901);
+  const result = _8Q_k1s(7918);
   obj = { currentLength: state.value.length, maxLength, message: null };
   const intl = _8Q_k1s(1236).intl;
   obj[2] = intl.string(_8Q_k1s(1236).t.c2Jqed);
@@ -49,7 +49,7 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   const merged = Object.assign(label);
   obj1.isFocused = isFocused;
   const obj2 = {};
-  const result1 = _8Q_k1s(3990);
+  const result1 = _8Q_k1s(4007);
   const merged1 = Object.assign(result1.mergeProps(inputProps, focusProps));
   obj2.ref = innerRef;
   const items = [, , ];
@@ -58,11 +58,11 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
   obj2.style = items;
   obj2.placeholderTextColor = inputStyles.placeholderText.color;
   obj2.multiline = true;
-  const items1 = [callback(_8Q_k1s(5924).NativeTextInput, obj2), ];
+  const items1 = [callback(_8Q_k1s(5943).NativeTextInput, obj2), ];
   if (null == diff) {
     items1[1] = null;
     obj1.children = items1;
-    return closure_4(_8Q_k1s(5921).InputFieldContainer, obj1);
+    return closure_4(_8Q_k1s(5940).InputFieldContainer, obj1);
   } else {
     obj3 = { style: null, children: null };
     obj3[0] = tmp2.maxLengthIndicator;
@@ -98,7 +98,7 @@ const forwardRefResult = require("noop").forwardRef((isDisabled, ref) => {
     }
     obj4[2] = formatToPlainStringResult;
     obj4[3] = diff;
-    obj4 = tmp9(_8Q_k1s(4281).Text, obj4);
+    obj4 = tmp9(_8Q_k1s(4298).Text, obj4);
     obj3[1] = obj4;
     tmp9(View, obj3);
     const tmp13 = View;

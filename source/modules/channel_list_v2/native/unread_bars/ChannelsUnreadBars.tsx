@@ -1,11 +1,11 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15227
+// Function ID: 15228
 // Name: shouldSkipSection
-// Dependencies: [32, 19, 17, 4277, 1372, 7018, 4297, 4480, 9712, 4481, 21, 4285, 6908, 4701, 7931, 14256, 636, 643, 589, 4145, 15168, 7562, 4254, 4255, 15204, 2]
+// Dependencies: [32, 19, 17, 4294, 1372, 7037, 4314, 4497, 9728, 4498, 21, 4302, 6927, 4718, 7948, 14270, 636, 643, 589, 4162, 15184, 7581, 4271, 4272, 15228, 2]
 
-// Module 15203 (shouldSkipSection)
+// Module 15227 (shouldSkipSection)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_4145";
+import importAllResult from "module_4162";
 import get_ActivityIndicator from "shallowEqual";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -23,8 +23,8 @@ let closure_14;
 let map1;
 const require = arg1;
 function shouldSkipSection(diff1) {
-  if (require(6908) /* computeSubtitle */.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
-    if (require(6908) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
+  if (require(6927) /* computeSubtitle */.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
+    if (require(6927) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
       return false;
     }
   }
@@ -110,7 +110,7 @@ function findNearestUnreadItem(containerSize, id) {
     return closure_17;
   } else {
     const scrollPosValue = containerSize.scrollPosValue;
-    const result = getScaledChannelRowHeight(require(4701) /* getFontScale */.getFontScale()) / 2;
+    const result = getScaledChannelRowHeight(require(4718) /* getFontScale */.getFontScale()) / 2;
     const value = scrollPosValue.get();
     const item2 = containerSize.getSectionItemFromPosition(arg2 + value + result).item;
     let layoutStart;
@@ -132,7 +132,7 @@ function findNearestUnreadItem(containerSize, id) {
         let tmp71 = require;
         let tmp72 = dependencyMap;
         let tmp73 = dependencyMap;
-        if (tmp12.type === require(7931) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
+        if (tmp12.type === require(7948) /* renderDefaultEmpty */.FastListItemTypes.ITEM) {
           let tmp16 = item10031;
           if (tmp12.layoutStart > tmp8) {
             let tmp29 = obj;
@@ -147,7 +147,7 @@ function findNearestUnreadItem(containerSize, id) {
             let tmp18 = item10031;
             let tmp19 = tmp70;
             let tmp20 = tmp72;
-            if (tmp12.type !== tmp71(7931).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(7948).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else {
               let tmp21 = shouldSkipSection;
@@ -265,7 +265,7 @@ function findNearestUnreadItem(containerSize, id) {
       }
       continue;
     }
-    const obj6 = require(4701) /* getFontScale */;
+    const obj6 = require(4718) /* getFontScale */;
   }
 }
 let c4 = importAllResult;

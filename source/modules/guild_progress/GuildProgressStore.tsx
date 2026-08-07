@@ -1,9 +1,9 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11769
+// Function ID: 11770
 // Name: completeStep
-// Dependencies: [1218, 1372, 1891, 11748, 11, 589, 709, 2]
+// Dependencies: [1218, 1372, 1891, 11763, 11, 589, 709, 2]
 
-// Module 11754 (completeStep)
+// Module 11769 (completeStep)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

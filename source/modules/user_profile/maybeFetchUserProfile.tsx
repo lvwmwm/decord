@@ -1,10 +1,10 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8248
+// Function ID: 8249
 // Name: maybeFetchUserProfile
-// Dependencies: [1372, 1971, 7001, 6921, 8158, 5106, 709, 8232, 8233, 2]
+// Dependencies: [1372, 1971, 7020, 6940, 8175, 5123, 709, 8249, 8250, 2]
 // Exports: default
 
-// Module 8231 (maybeFetchUserProfile)
+// Module 8248 (maybeFetchUserProfile)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -117,8 +117,8 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       profileEffect = userProfile.profileEffect;
     }
     if (null != profileEffect) {
-      const result = _require(6921).maybeFetchCollectiblesProduct(profileEffect.skuId);
-      const obj2 = _require(6921);
+      const result = _require(6940).maybeFetchCollectiblesProduct(profileEffect.skuId);
+      const obj2 = _require(6940);
     }
     if (null != guildId) {
       let profileFrame;
@@ -129,12 +129,12 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       profileFrame = userProfile.profileFrame;
     }
     if (null != profileFrame) {
-      const result1 = _require(6921).maybeFetchCollectiblesProduct(profileFrame.skuId);
-      const obj3 = _require(6921);
+      const result1 = _require(6940).maybeFetchCollectiblesProduct(profileFrame.skuId);
+      const obj3 = _require(6940);
     }
     if (null != closure_0) {
-      _require(8158).maybeFetchColors(closure_0);
-      const obj4 = _require(8158);
+      _require(8175).maybeFetchColors(closure_0);
+      const obj4 = _require(8175);
     }
     obj = { type: null, withMutualGuilds: null, withMutualFriends: null, withMutualFriendsCount: null, guildId: null, joinRequestId: null, abortSignal: null, connectionsRoleId: null };
     obj[0] = type;
@@ -149,13 +149,13 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       obj = { guildMember: null, channel: null };
       obj[0] = member.getMember(guildId, id);
       obj[1] = channel.getChannel(tmp);
-      const visibleConnectionsRole = _require(5106).getVisibleConnectionsRole(obj);
+      const visibleConnectionsRole = _require(5123).getVisibleConnectionsRole(obj);
       id = undefined;
       if (visibleConnectionsRole != null) {
         id = visibleConnectionsRole.id;
       }
       tmp34 = id;
-      const obj6 = _require(5106);
+      const obj6 = _require(5123);
     }
     obj[7] = tmp34;
     if (flag3) {
@@ -165,7 +165,7 @@ export default function maybeFetchUserProfile(id, closure_0, guildMember) {
       });
       return Promise.resolve();
     } else {
-      const profile = _require(8232).fetchProfile(id, obj, obj(8233));
+      const profile = _require(8249).fetchProfile(id, obj, obj(8250));
       let resolved = profile;
       if (tmp18) {
         resolved = profile;

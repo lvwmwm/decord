@@ -1,10 +1,10 @@
-// Module ID: 5666
-// Function ID: 5667
+// Module ID: 5685
+// Function ID: 5686
 // Name: getDefaultProviderDescription
 // Dependencies: [676, 1236, 2]
 // Exports: default
 
-// Module 5666 (getDefaultProviderDescription)
+// Module 5685 (getDefaultProviderDescription)
 import { PlatformTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/guild_onboarding/getDefaultProviderDescription.tsx");

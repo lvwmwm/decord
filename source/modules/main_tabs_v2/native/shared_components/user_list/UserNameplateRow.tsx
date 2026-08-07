@@ -1,10 +1,10 @@
-// Module ID: 9475
-// Function ID: 9476
+// Module ID: 9492
+// Function ID: 9493
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 4285, 712, 5355, 3988, 5356, 9308, 5354, 5315, 2]
+// Dependencies: [32, 19, 21, 4302, 712, 5374, 4005, 5375, 9325, 5373, 5331, 2]
 // Exports: UserNameplateRow
 
-// Module 9475 (UserNameplateRow)
+// Module 9492 (UserNameplateRow)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -56,7 +56,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   const merged = Object.assign(onPressOut, Object.create(null));
   let dependencyMap;
   let obj = React;
-  const context = React.useContext(onPressIn(5355).TableRowGroupContext);
+  const context = React.useContext(onPressIn(5374).TableRowGroupContext);
   let tmp6 = !context;
   if (!context) {
     tmp6 = true === end;
@@ -78,7 +78,7 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
     }
   }, items1);
   const tmp2 = createCacheKey();
-  const token = onPressIn(3988).useToken(onPressOut(712).modules.mobile.TABLE_ROW_BORDER_RADIUS);
+  const token = onPressIn(4005).useToken(onPressOut(712).modules.mobile.TABLE_ROW_BORDER_RADIUS);
   obj = { shadow: "none", border: "none", radius: token, start: null, end: null, onPress: null, onPressIn: null, onPressOut: null, disabled: null, style: null };
   let tmp13 = !context;
   if (!context) {
@@ -92,16 +92,16 @@ export const UserNameplateRow = function UserNameplateRow(onPressOut) {
   obj[8] = flag;
   obj[9] = tmp2.card;
   const merged1 = Object.assign(merged);
-  const items2 = [callback2(onPressOut(9308), { nameplate, isPressed: tmp7[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), callback2(onPressIn(5354).TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps })];
+  const items2 = [callback2(onPressOut(9325), { nameplate, isPressed: tmp7[0], invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), callback2(onPressIn(5373).TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps })];
   obj.children = items2;
-  let tmp12Result = tmp12(tmp3(5356).Card, obj);
+  let tmp12Result = tmp12(tmp3(5375).Card, obj);
   if (!context) {
     if (!tmp6) {
       obj = { children: null };
       const items3 = [tmp12Result, ];
       const obj1 = { adjustSpacingForIcon: null };
       obj1[0] = null != icon;
-      items3[1] = tmp15(tmp3(5315).TableRowDivider, obj1);
+      items3[1] = tmp15(tmp3(5331).TableRowDivider, obj1);
       obj[0] = items3;
       tmp12Result = tmp12(closure_7, obj);
     }

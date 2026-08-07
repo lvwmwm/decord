@@ -1,9 +1,9 @@
-// Module ID: 16621
-// Function ID: 16622
+// Module ID: 16641
+// Function ID: 16642
 // Name: hasLoaded
 // Dependencies: [589, 709, 2]
 
-// Module 16621 (hasLoaded)
+// Module 16641 (hasLoaded)
 import { Store } from "initialize";
 
 let closure_0 = {};

@@ -1,9 +1,9 @@
-// Module ID: 5243
-// Function ID: 5244
+// Module ID: 5259
+// Function ID: 5260
 // Name: incrementVersion
-// Dependencies: [1340, 1372, 4622, 1961, 676, 1306, 1351, 1894, 589, 709, 2]
+// Dependencies: [1340, 1372, 4639, 1961, 676, 1306, 1351, 1894, 589, 709, 2]
 
-// Module 5243 (incrementVersion)
+// Module 5259 (incrementVersion)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";

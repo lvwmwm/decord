@@ -1,9 +1,9 @@
-// Module ID: 3921
-// Function ID: 3922
+// Module ID: 3938
+// Function ID: 3939
 // Name: upsertRelationship
-// Dependencies: [32, 3922, 1903, 676, 709, 589, 2]
+// Dependencies: [32, 3939, 1903, 676, 709, 589, 2]
 
-// Module 3921 (upsertRelationship)
+// Module 3938 (upsertRelationship)
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -78,7 +78,7 @@ let closure_15 = {};
 let c16 = 0;
 let c17 = 0;
 let c18 = 0;
-let closure_19 = { friends: "Date", blocked: "isArray", ignored: "isArray", blockedOrIgnored: "ty" };
+let closure_19 = { friends: "Array", blocked: "Promise", ignored: "y", blockedOrIgnored: "T" };
 const map1 = new Map();
 class RelationshipStore extends Store {
 }

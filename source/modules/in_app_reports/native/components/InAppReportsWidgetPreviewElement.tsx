@@ -1,10 +1,10 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 12571
+// Function ID: 12572
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4285, 712, 8758, 7010, 12371, 7003, 12258, 4281, 1236, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 8775, 7029, 12386, 7022, 12273, 4298, 1236, 2]
 // Exports: default
 
-// Module 12556 (WidgetPreview)
+// Module 12571 (WidgetPreview)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,14 +25,14 @@ export default function WidgetPreview(arg0) {
   let widget;
   ({ widget, userId } = arg0);
   const tmp = createCacheKey();
-  const tmp4 = importDefault(8758)();
-  if (widget instanceof require(7010) /* isFieldEmpty */.UserProfilePersonalWidget) {
+  const tmp4 = importDefault(8775)();
+  if (widget instanceof require(7029) /* isFieldEmpty */.UserProfilePersonalWidget) {
     let obj = { userId: null, widget: null, disableInteraction: true, cardStyle: null };
     obj[0] = userId;
     obj[1] = widget;
     const items = [tmp4.card, tmp.card];
     obj[3] = items;
-    let tmp6 = callback(importDefault(12371), obj);
+    let tmp6 = callback(importDefault(12386), obj);
   } else {
     tmp6 = null;
     if (tmp5Result.isGameWidget(widget)) {
@@ -43,10 +43,10 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(12258).WidgetSection, obj);
+        tmp6 = callback(tmp5(12273).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(7003);
+    tmp5Result = tmp5(7022);
   }
   let tmp9 = null;
   if (null !== tmp6) {
@@ -56,7 +56,7 @@ export default function WidgetPreview(arg0) {
     obj2[0] = tmp.title;
     const intl = tmp5(1236).intl;
     obj2[3] = intl.string(tmp5(1236).t.SpsnDY).toUpperCase();
-    const items2 = [callback(tmp5(4281).Text, obj2), tmp6];
+    const items2 = [callback(tmp5(4298).Text, obj2), tmp6];
     obj1[1] = items2;
     tmp9 = callback2(View, obj1);
     const str = intl.string(tmp5(1236).t.SpsnDY);

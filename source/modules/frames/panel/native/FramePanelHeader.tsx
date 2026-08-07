@@ -1,9 +1,9 @@
-// Module ID: 16013
-// Function ID: 16014
+// Module ID: 16039
+// Function ID: 16040
 // Name: FramePanelHeaderContentInner
-// Dependencies: [32, 19, 17, 10509, 10510, 21, 5655, 15989, 15991, 15995, 15996, 16014, 589, 16006, 2]
+// Dependencies: [32, 19, 17, 10525, 10526, 21, 5674, 16015, 16017, 16021, 16022, 16040, 589, 16032, 2]
 
-// Module 16013 (FramePanelHeaderContentInner)
+// Module 16039 (FramePanelHeaderContentInner)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -26,17 +26,17 @@ function FramePanelHeaderContentInner(arg0) {
   ({ frame, landscape, setMode } = arg0);
   ({ pipState, wrapperOffset } = arg0);
   const items = [frame.applicationId];
-  const first = callback(importDefault(5655)(items), 1)[0];
-  let obj = require(15989) /* useBaseActivityPanelHeaderContent */;
+  const first = callback(importDefault(5674)(items), 1)[0];
+  let obj = require(16015) /* useBaseActivityPanelHeaderContent */;
   const baseActivityPanelHeaderContent = obj.useBaseActivityPanelHeaderContent({ landscape, setMode, wrapperOffset, pipState });
   ({ gesture, headerWrapperStyles, headerStyles } = baseActivityPanelHeaderContent);
-  let obj1 = require(15989) /* useBaseActivityPanelHeaderContent */;
+  let obj1 = require(16015) /* useBaseActivityPanelHeaderContent */;
   const minimizeAndQuestButtonContainerStyles = obj1.useMinimizeAndQuestButtonContainerStyles();
   let id;
   if (first != null) {
     id = first.id;
   }
-  const tmp7Result = closure_7(importDefault(15991), { applicationId: id });
+  const tmp7Result = closure_7(importDefault(16017), { applicationId: id });
   obj = { hasConnectedActivity: true, gesture, headerWrapperStyles, headerStyles, landscape, children: null };
   const items1 = [minimizeAndQuestButtonContainerStyles.buttonContainer, ];
   let prop;
@@ -48,7 +48,7 @@ function FramePanelHeaderContentInner(arg0) {
   let tmp15;
   const tmp12 = View;
   const tmp4 = require;
-  const tmp8 = importDefault(15991);
+  const tmp8 = importDefault(16017);
   if (!landscape) {
     let name;
     if (first != null) {
@@ -56,9 +56,9 @@ function FramePanelHeaderContentInner(arg0) {
     }
     tmp15 = name;
   }
-  const items2 = [closure_7(importDefault(15995), { activityName: tmp15, setMode }), , ];
+  const items2 = [closure_7(importDefault(16021), { activityName: tmp15, setMode }), , ];
   obj1 = { applicationId: frame.applicationId };
-  items2[1] = closure_7(importDefault(15996), obj1);
+  items2[1] = closure_7(importDefault(16022), obj1);
   let tmp17 = null;
   if (landscape) {
     tmp17 = tmp7Result;
@@ -71,9 +71,9 @@ function FramePanelHeaderContentInner(arg0) {
     tmp18 = tmp7Result;
   }
   items3[1] = tmp18;
-  items3[2] = closure_7(importDefault(16014), { frame, setMode });
+  items3[2] = closure_7(importDefault(16040), { frame, setMode });
   obj[5] = items3;
-  return closure_8(tmp4(15989).BaseActivityPanelContent, obj);
+  return closure_8(tmp4(16015).BaseActivityPanelContent, obj);
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_10 = importAllResult.memo((arg0) => {
@@ -90,8 +90,8 @@ let closure_10 = importAllResult.memo((arg0) => {
   return tmp2;
 });
 const memoResult = importAllResult.memo(() => {
-  let obj = require(15989) /* useBaseActivityPanelHeaderContent */;
-  obj = { context: importDefault(16006) };
+  let obj = require(16015) /* useBaseActivityPanelHeaderContent */;
+  obj = { context: importDefault(16032) };
   const baseActivityPanelHeader = obj.useBaseActivityPanelHeader(obj);
   obj = { style: baseActivityPanelHeader.headerStyles, children: callback2(closure_10, obj1) };
   return callback2(View, obj);

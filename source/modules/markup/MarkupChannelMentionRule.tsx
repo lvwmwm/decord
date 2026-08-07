@@ -1,10 +1,10 @@
-// Module ID: 4725
-// Function ID: 4726
+// Module ID: 4742
+// Function ID: 4743
 // Name: getChannel
-// Dependencies: [1962, 1372, 1891, 3912, 3921, 1903, 676, 1884, 1416, 1236, 4726, 4467, 4475, 4727, 4476, 4724, 3983, 2]
+// Dependencies: [1962, 1372, 1891, 3929, 3938, 1903, 676, 1884, 1416, 1236, 4743, 4484, 4492, 4744, 4493, 4741, 4000, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 4725 (getChannel)
+// Module 4742 (getChannel)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -19,9 +19,9 @@ const require = arg1;
 function getChannel(id, arr) {
   const _require = id;
   const channel = store.getChannel(id);
-  const isSubscriptionGated = _require(4726).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
-  const obj2 = _require(4726);
-  let str = _require(4467).getMentionIconType(channel);
+  const isSubscriptionGated = _require(4743).getChannelRoleSubscriptionStatus(id, store, isSubscriptionGated, getUncachedChannelPermissions).isSubscriptionGated;
+  const obj2 = _require(4743);
+  let str = _require(4484).getMentionIconType(channel);
   if (str == null) {
     str = "text";
   }
@@ -47,18 +47,18 @@ function getChannel(id, arr) {
   if (null != channel) {
     obj = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4[0], id: obj4[1], guild_id: obj4[2] } = channel);
-    let tmpResult = tmp(4475);
+    let tmpResult = tmp(4492);
     obj[3] = tmpResult.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
     obj[4] = channel.isPrivate();
     obj[5] = channel.isForumPost();
-    tmpResult = tmp(4727);
+    tmpResult = tmp(4744);
     obj[6] = tmpResult.isChannelTypeMentionable(channel.type);
-    obj[7] = tmp(4476).canViewChannel(channel);
+    obj[7] = tmp(4493).canViewChannel(channel);
     obj[8] = isSubscriptionGated;
     obj[9] = str;
     obj[10] = channel.parent_id;
     tmp4 = obj;
-    const tmpResult1 = tmp(4476);
+    const tmpResult1 = tmp(4493);
   }
   return tmp4;
 }
@@ -170,9 +170,9 @@ function parseChannel(canViewChannel) {
             if (canViewChannel.isForumPost) {
               const channel = store.getChannel(canViewChannel.parentId);
               if (null != channel) {
-                let tmp35Result = tmp35(4475);
+                let tmp35Result = tmp35(4492);
                 const channelName = tmp35Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-                tmp35Result = tmp35(4467);
+                tmp35Result = tmp35(4484);
                 let str3 = tmp35Result.getMentionIconType(channel);
                 if (str3 == null) {
                   str3 = "forum";
@@ -310,7 +310,7 @@ obj = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const CHANNEL_OR_MESSAGES_URL_RE = require(4476) /* ME */.CHANNEL_OR_MESSAGES_URL_RE;
+    const CHANNEL_OR_MESSAGES_URL_RE = require(4493) /* ME */.CHANNEL_OR_MESSAGES_URL_RE;
     const match = CHANNEL_OR_MESSAGES_URL_RE.exec(arg0);
     if (null != match) {
       if (null != match[2]) {
@@ -370,7 +370,7 @@ obj[2] = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4476) /* ME */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = require(4493) /* ME */.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(arg0, arg1, channelId) {
@@ -422,7 +422,7 @@ let obj1 = {
   order: require("t").defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
-    const MEDIA_POST_URL_RE = require(4476) /* ME */.MEDIA_POST_URL_RE;
+    const MEDIA_POST_URL_RE = require(4493) /* ME */.MEDIA_POST_URL_RE;
     return MEDIA_POST_URL_RE.exec(arg0);
   },
   parse(arg0, arg1, channelId) {

@@ -1,9 +1,9 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 7252
+// Function ID: 7253
 // Name: getTransformedUser
-// Dependencies: [1376, 1911, 1372, 1971, 3921, 1903, 676, 4123, 1384, 514, 5244, 7234, 1351, 1208, 12, 11, 2]
+// Dependencies: [1376, 1911, 1372, 1971, 3938, 1903, 676, 4140, 1384, 514, 5260, 7253, 1351, 1208, 12, 11, 2]
 
-// Module 7233 (getTransformedUser)
+// Module 7252 (getTransformedUser)
 import { isPrivate } from "createChannelRecord";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -922,7 +922,7 @@ prototype2["rebootWebworker"] = function rebootWebworker() {
     _worker.terminate();
     self._worker = null;
   }
-  self._worker = require(7234) /* UserSearchWorkerManager */;
+  self._worker = require(7253) /* UserSearchWorkerManager */;
 };
 prototype2["updateUsers"] = function updateUsers(arr) {
   const _worker = this._worker;

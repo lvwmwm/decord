@@ -1,10 +1,10 @@
-// Module ID: 6823
-// Function ID: 6824
+// Module ID: 6842
+// Function ID: 6843
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 4285, 712, 4221, 6824, 6831, 1236, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4238, 6843, 6850, 1236, 4298, 2]
 // Exports: PremiumPill
 
-// Module 6823 (PremiumPill)
+// Module 6842 (PremiumPill)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

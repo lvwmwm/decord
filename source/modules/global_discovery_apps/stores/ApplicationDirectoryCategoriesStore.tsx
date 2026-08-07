@@ -1,9 +1,9 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 11392
+// Function ID: 11393
 // Name: getLastFetchTimeMs
 // Dependencies: [589, 709, 2]
 
-// Module 11377 (getLastFetchTimeMs)
+// Module 11392 (getLastFetchTimeMs)
 import { Store } from "initialize";
 
 let closure_0 = [];

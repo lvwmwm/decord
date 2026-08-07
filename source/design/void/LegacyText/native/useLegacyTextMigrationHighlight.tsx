@@ -1,10 +1,10 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7940
+// Function ID: 7941
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4284, 4285, 712, 589, 2]
+// Dependencies: [4301, 4302, 712, 589, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 7923 (useLegacyTextMigrationHighlight)
+// Module 7940 (useLegacyTextMigrationHighlight)
 import getUserAgnosticState from "getUserAgnosticState";
 import createCacheKey from "createCacheKey";
 

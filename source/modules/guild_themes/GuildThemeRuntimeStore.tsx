@@ -1,9 +1,9 @@
-// Module ID: 4171
-// Function ID: 4172
+// Module ID: 4188
+// Function ID: 4189
 // Name: snapshotSelectedGuildId
-// Dependencies: [4172, 1891, 4101, 676, 4176, 1890, 12, 589, 709, 2]
+// Dependencies: [4189, 1891, 4118, 676, 4193, 1890, 12, 589, 709, 2]
 
-// Module 4171 (snapshotSelectedGuildId)
+// Module 4188 (snapshotSelectedGuildId)
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -216,7 +216,7 @@ const guildThemeRuntimeStore = new GuildThemeRuntimeStore(require("dispatcher"),
             if (stateForGuild != null) {
               const unlockedPowerups = stateForGuild.unlockedPowerups;
               if (unlockedPowerups != null) {
-                tmp14 = unlockedPowerups[require(undefined, 4176) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
+                tmp14 = unlockedPowerups[require(undefined, 4193) /* VANITY_URL_POWERUP_SKU_ID */.GUILD_POWERUP_GUILD_THEME_SKU_ID];
               }
             }
             let tmp17 = null != tmp14;

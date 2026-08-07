@@ -1,10 +1,10 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15064
+// Function ID: 15065
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 11696, 11697, 676, 21, 4285, 712, 11698, 698, 11699, 11961, 15049, 1236, 2]
+// Dependencies: [19, 17, 11711, 11712, 676, 21, 4302, 712, 11713, 698, 11714, 11976, 15065, 1236, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 15048 (RedesignNotificationModal)
+// Module 15064 (RedesignNotificationModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PermissionStateType } from "set";

@@ -1,10 +1,10 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 11713
+// Function ID: 11714
 // Name: _requestPushNotificationPermission
-// Dependencies: [32, 5, 19, 17, 11696, 11697, 676, 4497, 10697, 698, 11699, 11705, 11706, 589, 2]
+// Dependencies: [32, 5, 19, 17, 11711, 11712, 676, 4514, 10709, 698, 11714, 11720, 11721, 589, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 11698 (_requestPushNotificationPermission)
+// Module 11713 (_requestPushNotificationPermission)
 import _slicedToArray from "_slicedToArray";
 import EventActionType from "EventActionType";
 import noop from "noop";
@@ -71,7 +71,7 @@ function _requestPushNotificationPermission() {
           } else {
             _slicedToArray = arg1;
             if (_slicedToArray === constants3.DENIED) {
-              callback2(10697)();
+              callback2(10709)();
               obj2 = callback2(698);
               const obj3 = { action_type: null, action_location: null };
               obj3[0] = constants.TO_SETTINGS;
@@ -80,7 +80,7 @@ function _requestPushNotificationPermission() {
               dependencyMap();
               obj = 3;
             } else if (_slicedToArray !== constants3.AUTHORIZED) {
-              obj = callback2(11705);
+              obj = callback2(11720);
               const permission = obj.requestPermission((permission_granted) => {
                 let obj = callback(698);
                 obj = { action_type: closure_0, action_location: callback, permission_granted };
@@ -88,7 +88,7 @@ function _requestPushNotificationPermission() {
                 dependencyMap();
               });
             }
-            obj1 = callback(11699);
+            obj1 = callback(11714);
             const result = obj1.updateNotificationAuthorizationStatus(_slicedToArray);
             dependencyMap();
           }
@@ -302,8 +302,8 @@ export const enableProvisionalPushNotification = function enableProvisionalPushN
 export const useCanSeePushNotificationNudge = function useCanSeePushNotificationNudge() {
   let require;
   let tmp4;
-  const isTeenInStrictCountry = require(11706) /* set */.useIsTeenInStrictCountry();
-  const obj = require(11706) /* set */;
+  const isTeenInStrictCountry = require(11721) /* set */.useIsTeenInStrictCountry();
+  const obj = require(11721) /* set */;
   const items = [set];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => state.authorizationStatus);
   const obj2 = require(589) /* initialize */;
@@ -335,8 +335,8 @@ export const useCanSeePushNotificationNudge = function useCanSeePushNotification
 export const useShouldShowPushNotificationNudgeByPromptType = function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   let require;
   let tmp7;
-  const isTeenInStrictCountry = require(11706) /* set */.useIsTeenInStrictCountry();
-  let obj = require(11706) /* set */;
+  const isTeenInStrictCountry = require(11721) /* set */.useIsTeenInStrictCountry();
+  let obj = require(11721) /* set */;
   const tmp = require;
   const items = [set];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => state.authorizationStatus);

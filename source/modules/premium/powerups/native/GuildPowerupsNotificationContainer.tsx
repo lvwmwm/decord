@@ -1,10 +1,10 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11847
+// Function ID: 11848
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4285, 712, 4281, 11833, 11834, 1236, 2316, 11837, 2]
+// Dependencies: [17, 21, 4302, 712, 4298, 11848, 11849, 1236, 2316, 11852, 2]
 // Exports: default
 
-// Module 11832 (Tier3OverrideNotice)
+// Module 11847 (Tier3OverrideNotice)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -12,7 +12,7 @@ import createCacheKey from "createCacheKey";
 let c4;
 let c5;
 function Tier3OverrideNotice(children) {
-  return callback(View, { style: callback2().staffContainer, children: callback(require(4281) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
+  return callback(View, { style: callback2().staffContainer, children: callback(require(4298) /* Text */.Text, { variant: "text-sm/medium", children: children.text }) });
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
 let obj = { container: null, staffContainer: null };
@@ -25,15 +25,15 @@ const result = require("createCacheKey").fileFinishedImporting("modules/premium/
 
 export default function GuildPowerupsNotificationContainer(guildId) {
   guildId = guildId.guildId;
-  const tmp4 = importDefault(11833)(guildId);
-  const tmp5 = importDefault(11834)(guildId);
+  const tmp4 = importDefault(11848)(guildId);
+  const tmp5 = importDefault(11849)(guildId);
   if (tmp4.shouldShow) {
     let obj = { style: null, children: null };
     obj[0] = tmp.container;
     obj = { variant: "eyebrow", color: "text-subtle", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(tmp2(2316)["3FRirU"]);
-    const items = [callback(require(4281) /* Text */.Text, obj), , ];
+    const items = [callback(require(4298) /* Text */.Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       obj = { text: null };
@@ -46,7 +46,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj1 = { guildId: null, powerupNames: null, warnings: null };
       obj1[0] = guildId;
       ({ expiringPowerupNames: obj4[1], warnings: obj4[2] } = tmp5);
-      shouldShow2 = tmp9(tmp2(11837), obj1);
+      shouldShow2 = tmp9(tmp2(11852), obj1);
     }
     items[2] = shouldShow2;
     obj[1] = items;

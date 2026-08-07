@@ -1,9 +1,9 @@
-// Module ID: 4308
-// Function ID: 4309
+// Module ID: 4325
+// Function ID: 4326
 // Name: createExecutable
-// Dependencies: [1912, 4309, 1911, 4310, 4311, 4312, 4313, 1416, 4314, 506, 11, 2]
+// Dependencies: [1912, 4326, 1911, 4327, 4328, 4329, 4330, 1416, 4331, 506, 11, 2]
 
-// Module 4308 (createExecutable)
+// Module 4325 (createExecutable)
 import "toJS";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -285,7 +285,7 @@ ApplicationRecord["createFromServer"] = function createFromServer(bot) {
   obj.bot = tmp3;
   ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
   if (overlay_methods == null) {
-    overlay_methods = require(4314) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
+    overlay_methods = require(4331) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
   }
   obj.overlayMethods = overlay_methods;
   ({ hook: obj.hook, store_listing_sku_id: obj.storeListingSkuId, guild_id: obj.guildId, guild: obj.guild } = bot);
@@ -681,7 +681,7 @@ Object.defineProperty(prototype2, "supportsOutOfProcessOverlay", {
   set: undefined
 });
 ApplicationRecord["supportsOutOfProcessOverlay"] = function supportsOutOfProcessOverlay(arg0) {
-  const OUT_OF_PROCESS = require(4314) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
+  const OUT_OF_PROCESS = require(4331) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
   return null != arg0 && (arg0 & OUT_OF_PROCESS) === OUT_OF_PROCESS;
 };
 const result = require("createdAt").fileFinishedImporting("records/ApplicationRecord.tsx");

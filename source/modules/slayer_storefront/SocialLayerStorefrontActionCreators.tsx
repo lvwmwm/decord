@@ -1,10 +1,10 @@
-// Module ID: 7678
-// Function ID: 7679
+// Module ID: 7697
+// Function ID: 7698
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 7507, 5771, 676, 687, 709, 5769, 7508, 530, 1884, 584, 2]
+// Dependencies: [5, 7526, 5790, 676, 687, 709, 5788, 7527, 530, 1884, 584, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 7678 (_fetchSocialLayerStorefront)
+// Module 7697 (_fetchSocialLayerStorefront)
 import dispatcher from "dispatcher";
 import getPromotionIdOverride from "getPromotionIdOverride";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";

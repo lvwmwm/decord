@@ -1,9 +1,9 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11494
+// Function ID: 11495
 // Name: BottomSheetTextInput
-// Dependencies: [2, 8933]
+// Dependencies: [2, 8950]
 
-// Module 11479 (BottomSheetTextInput)
+// Module 11494 (BottomSheetTextInput)
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/components/BottomSheetTextInput.tsx");
 
 export { BottomSheetTextInput as default } from "BottomSheetTextInput";

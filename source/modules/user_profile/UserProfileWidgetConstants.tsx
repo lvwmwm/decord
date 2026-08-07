@@ -1,9 +1,9 @@
-// Module ID: 7006
-// Function ID: 7007
+// Module ID: 7025
+// Function ID: 7026
 // Name: items
-// Dependencies: [4322, 7002, 1236, 2]
+// Dependencies: [4339, 7021, 1236, 2]
 
-// Module 7006 (items)
+// Module 7025 (items)
 import addApplication from "addApplication";
 
 const require = arg1;
@@ -11,23 +11,23 @@ const items = [require("WidgetType").WidgetType.PERSONAL, require("WidgetType").
 const items1 = [require("WidgetType").WidgetType.FAVORITE_GAMES];
 const items2 = [require("WidgetType").WidgetType.CURRENT_GAMES, require("WidgetType").WidgetType.FAVORITE_GAMES, require("WidgetType").WidgetType.CLIPS_GALLERY];
 const obj = {
-  [arg1(7002).WidgetType.FAVORITE_GAMES]: () => {
+  [arg1(7021).WidgetType.FAVORITE_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.sUQar8);
+    return intl.string(require(1236) /* getSystemLocale */.t.Rpf6Ak);
   },
-  [arg1(7002).WidgetType.CURRENT_GAMES]: () => {
+  [arg1(7021).WidgetType.CURRENT_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.SqNnus);
+    return intl.string(require(1236) /* getSystemLocale */.t.zs6NsE);
   },
-  [arg1(7002).WidgetType.WANT_TO_PLAY_GAMES]: () => {
+  [arg1(7021).WidgetType.WANT_TO_PLAY_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.bWSQwW);
+    return intl.string(require(1236) /* getSystemLocale */.t.I509Dl);
   },
-  [arg1(7002).WidgetType.PLAYED_GAMES]: () => {
+  [arg1(7021).WidgetType.PLAYED_GAMES]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t.scOKET);
+    return intl.string(require(1236) /* getSystemLocale */.t.QTq6Pf);
   },
-  [arg1(7002).WidgetType.APPLICATION]: (applicationId) => {
+  [arg1(7021).WidgetType.APPLICATION]: (applicationId) => {
     application = application.getApplication(applicationId.applicationId);
     let str;
     if (application != null) {
@@ -38,11 +38,11 @@ const obj = {
     }
     return str;
   },
-  [arg1(7002).WidgetType.PERSONAL]: () => {
+  [arg1(7021).WidgetType.PERSONAL]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.AVkYMx);
   },
-  [arg1(7002).WidgetType.CLIPS_GALLERY]: () => {
+  [arg1(7021).WidgetType.CLIPS_GALLERY]: () => {
     const intl = require(1236) /* getSystemLocale */.intl;
     return intl.string(require(1236) /* getSystemLocale */.t.zY8Ghg);
   }

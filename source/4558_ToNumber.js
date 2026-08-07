@@ -1,0 +1,28 @@
+// Module ID: 4558
+// Function ID: 4559
+// Name: ToNumber
+// Dependencies: [540, 4559, 4560, 541, 4565]
+
+// Module 4558 (ToNumber)
+let closure_2 = require("getEvalledConstructor")("%Number%");
+
+export default function ToNumber(arg0) {
+  let tmp3 = arg0;
+  if (!require(4559) /* isPrimitive */(arg0)) {
+    tmp3 = tmp(4560)(arg0, closure_2);
+  }
+  if (typeof tmp3 === "symbol") {
+    const tmp12 = new tmp(541)("Cannot convert a Symbol value to a number");
+    throw tmp12;
+  } else if (typeof tmp3 === "bigint") {
+    const tmp8 = new tmp(541)("Conversion from 'BigInt' to 'number' is not allowed.");
+    throw tmp8;
+  } else {
+    if (typeof tmp3 === "string") {
+      let tmp5 = tmp(4565)(tmp3);
+    } else {
+      tmp5 = +tmp3;
+    }
+    return tmp5;
+  }
+};

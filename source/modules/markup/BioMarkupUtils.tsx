@@ -1,10 +1,10 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9467
+// Function ID: 9468
 // Name: parseBioReact
-// Dependencies: [4716, 4717, 4276, 1386, 8017, 4275, 3983, 12, 2]
+// Dependencies: [4733, 4734, 4293, 1386, 8034, 4292, 4000, 12, 2]
 // Exports: getOrParseBioAST, parseBioReactWithCachedAST
 
-// Module 9450 (parseBioReact)
+// Module 9467 (parseBioReact)
 import importDefaultResult from "combineMarkupRules";
 import importAllResult from "reactParserFor";
 import importDefaultResult1 from "get defaultRules";
@@ -57,8 +57,8 @@ export const parseBioReactWithCachedAST = function parseBioReactWithCachedAST(de
       value = tmp4;
     }
     obj = tmp4;
-    const obj2 = importDefault(3983);
-    return obj2.reactFor(importDefault(3983).ruleOutput(closure_2, "react"))(value);
+    const obj2 = importDefault(4000);
+    return obj2.reactFor(importDefault(4000).ruleOutput(closure_2, "react"))(value);
   }
 };
 export const parseBioReactWithoutScrolling = reactParserForResult1;

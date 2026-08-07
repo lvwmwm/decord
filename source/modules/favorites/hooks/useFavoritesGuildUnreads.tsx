@@ -1,10 +1,10 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 15351
+// Function ID: 15352
 // Name: useFavoritesGuildUnreads
-// Dependencies: [5206, 3914, 1372, 7018, 3912, 4297, 4480, 589, 11, 2]
+// Dependencies: [5222, 3931, 1372, 7037, 3929, 4314, 4497, 589, 11, 2]
 // Exports: default
 
-// Module 15327 (useFavoritesGuildUnreads)
+// Module 15351 (useFavoritesGuildUnreads)
 import rebuild from "rebuild";
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";

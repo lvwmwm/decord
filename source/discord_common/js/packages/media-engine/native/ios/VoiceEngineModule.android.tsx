@@ -1,9 +1,9 @@
-// Module ID: 4336
-// Function ID: 4337
+// Module ID: 4353
+// Function ID: 4354
 // Name: constants
-// Dependencies: [17, 4337, 2]
+// Dependencies: [17, 4354, 2]
 
-// Module 4336 (constants)
+// Module 4353 (constants)
 import importDefaultResult from "enforcing";
 
 const constants = require("enforcing").getConstants();
@@ -15,31 +15,31 @@ obj.getConstants = function getConstants() {
 };
 obj.setInputDevice = function setInputDevice(str) {
   if (typeof str === "string") {
-    let setInputDeviceByIdResult = importDefault(4337).setInputDeviceById(str);
-    const obj = importDefault(4337);
+    let setInputDeviceByIdResult = importDefault(4354).setInputDeviceById(str);
+    const obj = importDefault(4354);
   } else {
-    setInputDeviceByIdResult = importDefault(4337).setInputDevice(str);
-    const obj2 = importDefault(4337);
+    setInputDeviceByIdResult = importDefault(4354).setInputDevice(str);
+    const obj2 = importDefault(4354);
   }
   return setInputDeviceByIdResult;
 };
 obj.setOutputDevice = function setOutputDevice(str) {
   if (typeof str === "string") {
-    let setOutputDeviceByIdResult = importDefault(4337).setOutputDeviceById(str);
-    const obj = importDefault(4337);
+    let setOutputDeviceByIdResult = importDefault(4354).setOutputDeviceById(str);
+    const obj = importDefault(4354);
   } else {
-    setOutputDeviceByIdResult = importDefault(4337).setOutputDevice(str);
-    const obj2 = importDefault(4337);
+    setOutputDeviceByIdResult = importDefault(4354).setOutputDevice(str);
+    const obj2 = importDefault(4354);
   }
   return setOutputDeviceByIdResult;
 };
 obj.setVideoInputDevice = function setVideoInputDevice(str) {
   if (typeof str === "string") {
-    let result = importDefault(4337).setVideoInputDeviceById(str);
-    const obj = importDefault(4337);
+    let result = importDefault(4354).setVideoInputDeviceById(str);
+    const obj = importDefault(4354);
   } else {
-    result = importDefault(4337).setVideoInputDevice(str);
-    const obj2 = importDefault(4337);
+    result = importDefault(4354).setVideoInputDevice(str);
+    const obj2 = importDefault(4354);
   }
   return result;
 };

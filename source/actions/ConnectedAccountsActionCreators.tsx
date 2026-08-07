@@ -1,9 +1,9 @@
-// Module ID: 5105
-// Function ID: 5106
+// Module ID: 5122
+// Function ID: 5123
 // Name: callback
-// Dependencies: [5, 4979, 676, 3, 530, 709, 698, 5106, 5109, 503, 2]
+// Dependencies: [5, 4996, 676, 3, 530, 709, 698, 5123, 5126, 503, 2]
 
-// Module 5105 (callback)
+// Module 5122 (callback)
 import dispatcher from "dispatcher";
 import set from "set";
 import ME from "ME";
@@ -101,7 +101,7 @@ let obj = {
   },
   callback,
   connect(arg0, arg1, name, location, friend_sync) {
-    let obj = importDefault(5109);
+    let obj = importDefault(5126);
     obj = { url: closure_6.CONNECTION(arg0, arg1), body: null, context: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { name, friend_sync: null };
     friend_sync = undefined;
@@ -146,7 +146,7 @@ let obj = {
     return this.update(type, id, { show_activity: closure_0 });
   },
   update(arg0, arg1, body) {
-    let obj = importDefault(5109);
+    let obj = importDefault(5126);
     obj = { url: closure_6.CONNECTION(arg0, arg1), body, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: require(503) /* encodeProperties */.NetworkActionNames.USER_CONNECTIONS_UPDATE, properties: null };
     const merged = Object.assign(body);

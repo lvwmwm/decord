@@ -1,14 +1,14 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8120
+// Function ID: 8121
 // Name: getFriendAnniversaryGateConfig
-// Dependencies: [8104, 2]
+// Dependencies: [8121, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 8103 (getFriendAnniversaryGateConfig)
+// Module 8120 (getFriendAnniversaryGateConfig)
 const result = require("set").fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 
 export const getFriendAnniversaryGateConfig = function getFriendAnniversaryGateConfig(arg0) {
   const obj = { enabled: null };
-  obj[0] = importDefault(8104).getConfig(arg0).enabled;
+  obj[0] = importDefault(8121).getConfig(arg0).enabled;
   return obj;
 };

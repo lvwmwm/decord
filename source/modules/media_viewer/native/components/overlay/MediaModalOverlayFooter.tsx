@@ -1,10 +1,10 @@
-// Module ID: 12163
-// Function ID: 12164
+// Module ID: 12178
+// Function ID: 12179
 // Name: clamp
-// Dependencies: [32, 19, 17, 21, 4285, 712, 4145, 10925, 4286, 1297, 12164, 5407, 4146, 5311, 5633, 12165, 12156, 2]
+// Dependencies: [32, 19, 17, 21, 4302, 712, 4162, 10940, 4303, 1297, 12179, 5426, 4163, 5327, 5652, 12180, 12171, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12163 (clamp)
+// Module 12178 (clamp)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";

@@ -1,10 +1,10 @@
-// Module ID: 6415
-// Function ID: 6416
+// Module ID: 6434
+// Function ID: 6435
 // Name: LaptopSpotIllustration
-// Dependencies: [21, 5251, 6416, 2]
+// Dependencies: [21, 5267, 6435, 2]
 // Exports: LaptopSpotIllustration
 
-// Module 6415 (LaptopSpotIllustration)
+// Module 6434 (LaptopSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/LaptopSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const LaptopSpotIllustration = function LaptopSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6416);
+  obj[0] = importDefault(6435);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const LaptopSpotIllustration = function LaptopSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

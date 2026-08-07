@@ -1,10 +1,10 @@
-// Module ID: 12761
-// Function ID: 12762
+// Module ID: 12776
+// Function ID: 12777
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4178, 6797, 589, 691, 6804, 4181, 2]
+// Dependencies: [5, 32, 19, 4195, 6816, 589, 691, 6823, 4198, 2]
 // Exports: default
 
-// Module 12761 (useFetchGuildBoostSlots)
+// Module 12776 (useFetchGuildBoostSlots)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

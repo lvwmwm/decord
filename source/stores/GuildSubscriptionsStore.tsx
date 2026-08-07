@@ -1,9 +1,9 @@
-// Module ID: 5817
-// Function ID: 5818
+// Module ID: 5836
+// Function ID: 5837
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4199, 3913, 4978, 1218, 5818, 5819, 1372, 4622, 1971, 1891, 4356, 3921, 1960, 4101, 676, 5822, 709, 12, 1894, 589, 2]
+// Dependencies: [32, 4216, 3930, 4995, 1218, 5837, 5838, 1372, 4639, 1971, 1891, 4373, 3938, 1960, 4118, 676, 5841, 709, 12, 1894, 589, 2]
 
-// Module 5817 (handleConnectionOpenOrResumed)
+// Module 5836 (handleConnectionOpenOrResumed)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import initialize from "initialize";

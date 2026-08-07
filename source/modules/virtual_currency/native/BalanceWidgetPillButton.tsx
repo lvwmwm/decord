@@ -1,9 +1,9 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10083
+// Function ID: 10084
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 21, 4695, 9327, 1236, 2]
+// Dependencies: [19, 21, 4712, 9344, 1236, 2]
 
-// Module 10067 (BalanceWidgetPillButton)
+// Module 10083 (BalanceWidgetPillButton)
 import "noop";
 import { jsx } from "jsxProd";
 

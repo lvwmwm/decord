@@ -1,10 +1,10 @@
-// Module ID: 9176
-// Function ID: 9177
+// Module ID: 9193
+// Function ID: 9194
 // Name: useProfilePrimaryColor
-// Dependencies: [32, 4277, 1416, 8158, 6932, 2]
+// Dependencies: [32, 4294, 1416, 8175, 6951, 2]
 // Exports: getProfilePrimaryColor, useProfilePrimaryColor
 
-// Module 9176 (useProfilePrimaryColor)
+// Module 9193 (useProfilePrimaryColor)
 import _slicedToArray from "_slicedToArray";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
@@ -22,7 +22,7 @@ export const useProfilePrimaryColor = function useProfilePrimaryColor(guildProfi
       guildIconURL = obj.getGuildIconURL(obj);
     }
   }
-  let brandColorPrimary = importDefault(8158)(guildIconURL, token);
+  let brandColorPrimary = importDefault(8175)(guildIconURL, token);
   brandColorPrimary = undefined;
   if (guildProfile != null) {
     brandColorPrimary = guildProfile.brandColorPrimary;
@@ -50,8 +50,8 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
     if (null == guildIconURL) {
       return null;
     } else {
-      require(8158) /* hasFetchedColors */.maybeFetchColors(guildIconURL);
-      const useColorStore = require(8158) /* hasFetchedColors */.useColorStore;
+      require(8175) /* hasFetchedColors */.maybeFetchColors(guildIconURL);
+      const useColorStore = require(8175) /* hasFetchedColors */.useColorStore;
       const tmp13 = useColorStore.getState().palette[guildIconURL];
       let first;
       if (tmp13 != null) {
@@ -64,9 +64,9 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         obj[1] = tmp5;
         obj[2] = tmp6;
         const tmp3 = callback(first, 3);
-        const obj2 = tmp8(6932)(obj);
+        const obj2 = tmp8(6951)(obj);
         let num2 = 1;
-        ({ h, s, l } = tmp8(6932)(obj).toHsl());
+        ({ h, s, l } = tmp8(6951)(obj).toHsl());
         if (maybeApplyNoTextColorForLightCustomTheme.desaturateUserColors) {
           num2 = maybeApplyNoTextColorForLightCustomTheme.saturation;
         }
@@ -74,12 +74,12 @@ export const getProfilePrimaryColor = function getProfilePrimaryColor(guildProfi
         obj[0] = h;
         obj[1] = s * num2;
         obj[2] = l;
-        const toHslResult = tmp8(6932)(obj).toHsl();
-        return tmp8(6932)(obj).toHexString();
+        const toHslResult = tmp8(6951)(obj).toHsl();
+        return tmp8(6951)(obj).toHexString();
       } else {
         return null;
       }
-      const obj7 = require(8158) /* hasFetchedColors */;
+      const obj7 = require(8175) /* hasFetchedColors */;
     }
     const obj5 = importDefault(1416);
   }

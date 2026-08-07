@@ -1,10 +1,10 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10027
+// Function ID: 10028
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 676, 7299, 10012, 2]
+// Dependencies: [19, 676, 7318, 10028, 2]
 // Exports: default
 
-// Module 10011 (useMobileSocialLayerPurchaseSKU)
+// Module 10027 (useMobileSocialLayerPurchaseSKU)
 import noop from "noop";
 import { PriceSetAssignmentPurchaseTypes as closure_4 } from "ME";
 
@@ -48,7 +48,7 @@ export default function useMobileSocialLayerPurchaseSKU(sku) {
     const merged1 = Object.assign(merged);
     obj.platformSkuId = tmp4;
     obj.isFreeForStaffSelfPurchase = false;
-    return importDefault(10012)(obj);
+    return importDefault(10028)(obj);
   }
   DEFAULT = constants.DEFAULT;
 };

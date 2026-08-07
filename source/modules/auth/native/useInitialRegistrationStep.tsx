@@ -1,10 +1,10 @@
-// Module ID: 15010
-// Function ID: 15011
+// Module ID: 15026
+// Function ID: 15027
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 1218, 5750, 14995, 14994, 589, 5748, 2]
+// Dependencies: [19, 1218, 5769, 15011, 15010, 589, 5767, 2]
 // Exports: default
 
-// Module 15010 (useInitialRegistrationStep)
+// Module 15026 (useInitialRegistrationStep)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import hasConsented from "hasConsented";

@@ -1,10 +1,10 @@
-// Module ID: 9328
-// Function ID: 9329
+// Module ID: 9345
+// Function ID: 9346
 // Name: WishlistButtonBase
-// Dependencies: [5, 32, 19, 17, 1218, 1903, 678, 505, 21, 4145, 4699, 4285, 712, 3996, 5698, 4130, 4003, 3985, 1236, 4286, 4694, 4698, 9329, 8690, 589, 9270, 9320, 9331, 9268, 2]
+// Dependencies: [5, 32, 19, 17, 1218, 1903, 678, 505, 21, 4162, 4716, 4302, 712, 4013, 5717, 4147, 4020, 4002, 1236, 4303, 4711, 4715, 9346, 8707, 589, 9287, 9337, 9348, 9285, 2]
 // Exports: default
 
-// Module 9328 (WishlistButtonBase)
+// Module 9345 (WishlistButtonBase)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
@@ -14,7 +14,7 @@ import closure_9 from "mergeGuildAvatar";
 import { ShopCtaEnum } from "items";
 import { ThemeTypes } from "sum";
 import jsxProd from "SUBTLE_SPRING";
-import { Easing } from "module_4145";
+import { Easing } from "module_4162";
 import createCacheKey from "createCacheKey";
 
 let closure_12;
@@ -46,7 +46,7 @@ class WishlistButtonBase {
     useContext = undefined;
     c13 = undefined;
     c14 = undefined;
-    tmp = f46448(size);
+    tmp = f46491(size);
     c6 = tmp;
     tmp2 = isWishlisted;
     tmp3 = busy;
@@ -70,7 +70,7 @@ class WishlistButtonBase {
       tmp9 = first;
     }
     c13 = tmp9;
-    tmp2Result = require("module_4145");
+    tmp2Result = require("module_4162");
     num = 0;
     if (isWishlisted) {
       num = 1;
@@ -151,7 +151,7 @@ class WishlistButtonBase {
         return () => cancelAnimationFrame(closure_0);
       }
     }, items2);
-    tmp2Result1 = require("module_4145");
+    tmp2Result1 = require("module_4162");
     class J {
       constructor() {
         obj = {};
@@ -180,9 +180,9 @@ class WishlistButtonBase {
     obj = { styles: tmp, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, showFilled: tmp9, SUBTLE_SPRING: require("SUBTLE_SPRING").SUBTLE_SPRING };
     J.__closure = obj;
     J.__workletHash = 1357254413161;
-    J.__initData = f46448;
+    J.__initData = f46491;
     animatedStyle = tmp2Result1.useAnimatedStyle(J);
-    tmp2Result2 = require("module_4145");
+    tmp2Result2 = require("module_4162");
     class Y {
       constructor() {
         value = c14.get();
@@ -197,20 +197,20 @@ class WishlistButtonBase {
         }
         obj.opacity = obj2.withSpring(num, require("SUBTLE_SPRING").SUBTLE_SPRING, "animate-always");
         obj = { scale: null };
-        tmp3Result = require("module_4145");
-        obj[0] = tmp3Result.interpolate(value, [0, 0.625, 1], [0, 1.35, 1], require("module_4145").Extrapolation.CLAMP);
+        tmp3Result = require("module_4162");
+        obj[0] = tmp3Result.interpolate(value, [0, 0.625, 1], [0, 1.35, 1], require("module_4162").Extrapolation.CLAMP);
         items = [];
         items[0] = obj;
         obj.transform = items;
         return obj;
       }
     }
-    obj1 = { animationFillProgress: sharedValue, styles: tmp, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, showFilled: tmp9, SUBTLE_SPRING: require("SUBTLE_SPRING").SUBTLE_SPRING, interpolate: require("module_4145").interpolate, Extrapolation: require("module_4145").Extrapolation };
+    obj1 = { animationFillProgress: sharedValue, styles: tmp, withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, showFilled: tmp9, SUBTLE_SPRING: require("SUBTLE_SPRING").SUBTLE_SPRING, interpolate: require("module_4162").interpolate, Extrapolation: require("module_4162").Extrapolation };
     Y.__closure = obj1;
     Y.__workletHash = 15039903885060;
-    Y.__initData = f46448;
+    Y.__initData = f46491;
     animatedStyle1 = tmp2Result2.useAnimatedStyle(Y);
-    tmp2Result3 = require("module_4145");
+    tmp2Result3 = require("module_4162");
     class K {
       constructor() {
         value = c14.get();
@@ -220,27 +220,27 @@ class WishlistButtonBase {
         if (c13) {
           tmp3 = isWishlisted;
           tmp4 = busy;
-          obj2 = require("module_4145");
+          obj2 = require("module_4162");
           tmp5 = isWishlisted;
           tmp6 = busy;
           tmp7 = obj2;
           tmp8 = value;
-          num = obj2.interpolate(value, [0, 0.7], [1, 0], require("module_4145").Extrapolation.CLAMP);
+          num = obj2.interpolate(value, [0, 0.7], [1, 0], require("module_4162").Extrapolation.CLAMP);
         }
         obj.opacity = num;
         obj = { scale: null };
-        obj4 = require("module_4145");
-        obj[0] = obj4.interpolate(value, [0, 0.625, 1], [0, 1.35, 1], require("module_4145").Extrapolation.CLAMP);
+        obj4 = require("module_4162");
+        obj[0] = obj4.interpolate(value, [0, 0.625, 1], [0, 1.35, 1], require("module_4162").Extrapolation.CLAMP);
         items = [];
         items[0] = obj;
         obj.transform = items;
         return obj;
       }
     }
-    obj2 = { animationFillProgress: sharedValue, styles: tmp, showFilled: tmp9, interpolate: require("module_4145").interpolate, Extrapolation: require("module_4145").Extrapolation };
+    obj2 = { animationFillProgress: sharedValue, styles: tmp, showFilled: tmp9, interpolate: require("module_4162").interpolate, Extrapolation: require("module_4162").Extrapolation };
     K.__closure = obj2;
     K.__workletHash = 12429379889426;
-    K.__initData = f46448;
+    K.__initData = f46491;
     tmp17 = useContext;
     obj3 = {
       style(pressed) {
@@ -309,16 +309,16 @@ class WishlistButtonBase {
     obj7[1] = require("Themes").colors.INTERACTIVE_ICON_DEFAULT;
     obj6[2] = tmp17(require("HeartOutlineIcon").HeartOutlineIcon, obj7);
     items4 = [, , ];
-    items4[0] = tmp17(require("module_4145").View, obj6);
+    items4[0] = tmp17(require("module_4162").View, obj6);
     obj8 = { style: animatedStyle1, pointerEvents: "none", children: null };
     obj9 = { size: tmp4[size], color: null };
     obj9[1] = require("Themes").unsafe_rawColors.RED_NEW_50;
     obj8[2] = tmp17(require("HeartIcon").HeartIcon, obj9);
-    items4[1] = tmp17(require("module_4145").View, obj8);
+    items4[1] = tmp17(require("module_4162").View, obj8);
     obj10 = { style: animatedStyle2, pointerEvents: "none", children: null };
     obj11 = { size: tmp4[size], color: "white" };
     obj10[2] = tmp17(require("HeartIcon").HeartIcon, obj11);
-    items4[2] = tmp17(require("module_4145").View, obj10);
+    items4[2] = tmp17(require("module_4162").View, obj10);
     obj5[1] = items4;
     obj3[7] = c13(c7, obj5);
     return tmp17(tmp18, obj3);
@@ -408,13 +408,13 @@ let closure_17 = createCacheKey.createStyles((arg0) => {
   obj = { width: obj[arg0], height: obj[arg0], display: "flex", alignItems: "center", justifyContent: "center", borderRadius: importDefault(712).radii.round, borderWidth: 1, borderColor: importDefault(712).colors.CONTROL_SECONDARY_BORDER_DEFAULT };
   obj[0] = obj;
   obj = { backgroundColor: null };
-  let obj3 = require(3996) /* ManaContext */;
+  let obj3 = require(4013) /* ManaContext */;
   obj[0] = obj3.setColorOpacity("white", 0.72);
   obj[1] = obj;
   const obj1 = { backgroundColor: null };
-  obj1[0] = require(3996) /* ManaContext */.setColorOpacity("white", 0.62);
+  obj1[0] = require(4013) /* ManaContext */.setColorOpacity("white", 0.62);
   obj[2] = obj1;
-  const obj6 = require(3996) /* ManaContext */;
+  const obj6 = require(4013) /* ManaContext */;
   obj[3] = { backgroundColor: importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT };
   obj3 = { backgroundColor: importDefault(712).colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE };
   obj[4] = obj3;
@@ -435,8 +435,8 @@ export default function CollectiblesWishlistButton(selectedProduct) {
   selectedProduct = selectedProduct.selectedProduct;
   let tmp = null;
   const merged = Object.assign(selectedProduct, Object.create(null));
-  let obj = require(9331) /* getProductPurchaseState */;
-  require(9268) /* getProductNameAndTypeFromSku */;
+  let obj = require(9348) /* getProductPurchaseState */;
+  require(9285) /* getProductNameAndTypeFromSku */;
   if (!obj.useProductPurchaseState(selectedProduct).isPurchased) {
     obj = { skuId: null, product: null, disabled: null, onTrackPress: null };
     obj[0] = selectedProduct.skuId;

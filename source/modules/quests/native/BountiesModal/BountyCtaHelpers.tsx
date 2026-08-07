@@ -1,10 +1,10 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14212
+// Function ID: 14213
 // Name: getBountyCtaInfo
 // Dependencies: [1236, 2]
 // Exports: getBountyCtaInfo
 
-// Module 14198 (getBountyCtaInfo)
+// Module 14212 (getBountyCtaInfo)
 const result = require("set").fileFinishedImporting("modules/quests/native/BountiesModal/BountyCtaHelpers.tsx");
 
 export const getBountyCtaInfo = function getBountyCtaInfo(bounty) {

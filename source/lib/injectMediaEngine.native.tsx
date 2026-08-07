@@ -1,8 +1,8 @@
-// Module ID: 4333
-// Function ID: 4334
-// Dependencies: [4334, 4335, 2]
+// Module ID: 4350
+// Function ID: 4351
+// Dependencies: [4351, 4352, 2]
 
-// Module 4333
+// Module 4350
 import inject from "inject";
 
 inject.inject({
@@ -17,7 +17,7 @@ inject.inject({
 
   },
   getVoiceEngine() {
-    return require(4335) /* logger */.default;
+    return require(4352) /* logger */.default;
   },
   getOpenH264LibraryPath() {
 

@@ -1,10 +1,10 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13830
+// Function ID: 13831
 // Name: ProfilePreviewButton
-// Dependencies: [19, 17, 21, 4285, 712, 5649, 8711, 8706, 4827, 1236, 4281, 9591, 8748, 8762, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 5668, 8728, 8723, 4844, 1236, 4298, 9607, 8765, 8779, 2]
 // Exports: default
 
-// Module 13816 (ProfilePreviewButton)
+// Module 13830 (ProfilePreviewButton)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -47,8 +47,8 @@ function EditButton(disabled) {
   let obj = { accessibilityRole: "button", accessibilityLabel, onPress, disabled: flag, style: createCacheKey().editButton, children: null };
   obj = { size: "xs", color: null };
   obj[1] = importDefault(712).colors.WHITE;
-  obj[5] = callback(require(9591) /* PencilIcon */.PencilIcon, obj);
-  return callback(require(4827) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = callback(require(9607) /* PencilIcon */.PencilIcon, obj);
+  return callback(require(4844) /* PressableBase */.PressableOpacity, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: { position: "relative" }, editButton: null, previewButton: null };
@@ -83,7 +83,7 @@ export default function UserProfileEditBannerButton(arg0) {
   }
   let obj = { style: createCacheKey().container, children: null };
   const tmp = createCacheKey();
-  const items = [callback(importDefault(8762), { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: importDefault(8748)(), bannerSafeArea }), , ];
+  const items = [callback(importDefault(8779), { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: importDefault(8765)(), bannerSafeArea }), , ];
   if (showProfilePreviewButton) {
     obj = { userId: null };
     obj[0] = user.id;

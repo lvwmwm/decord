@@ -1,9 +1,9 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 12846
+// Function ID: 12847
 // Name: flush
 // Dependencies: [709, 2]
 
-// Module 12831 (flush)
+// Module 12846 (flush)
 let ActionBatcher;
 class ActionBatcher {
   constructor(arg0, arg1, arg2) {

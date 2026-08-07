@@ -1,9 +1,9 @@
-// Module ID: 3969
-// Function ID: 3970
+// Module ID: 3986
+// Function ID: 3987
 // Name: isFeatureTeenByDefault
 // Dependencies: [2]
 
-// Module 3969 (isFeatureTeenByDefault)
+// Module 3986 (isFeatureTeenByDefault)
 class SettingsConfig {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);

@@ -1,27 +1,27 @@
-// Module ID: 9713
-// Function ID: 9714
+// Module ID: 9729
+// Function ID: 9730
 // Name: getLayoutStyles
-// Dependencies: [3962, 9714, 9716, 9717, 3957, 2]
+// Dependencies: [3979, 9730, 9732, 9733, 3974, 2]
 // Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle, useMessagesTabLayout
 
-// Module 9713 (getLayoutStyles)
+// Module 9729 (getLayoutStyles)
 function getLayoutStyles(layout, launchpad) {
   let flag = launchpad;
   if (launchpad === undefined) {
     flag = false;
   }
-  if (require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY_DRAWER === layout) {
-    return tmp(9714).CHANNEL_LIST_STYLES_COZY_DRAWER;
-  } else if (tmp(3962).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
-    return tmp(9714).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
-  } else if (tmp(3962).ChannelListLayoutTypes.COMPACT === layout) {
-    let tmpResult = tmp(9716);
+  if (require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY_DRAWER === layout) {
+    return tmp(9730).CHANNEL_LIST_STYLES_COZY_DRAWER;
+  } else if (tmp(3979).ChannelListLayoutTypes.COZY_DRAWER_SMOL === layout) {
+    return tmp(9730).CHANNEL_LIST_STYLES_COZY_DRAWER_SMOL;
+  } else if (tmp(3979).ChannelListLayoutTypes.COMPACT === layout) {
+    let tmpResult = tmp(9732);
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COMPACT_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COMPACT;
   } else {
-    if (tmp(3962).ChannelListLayoutTypes.MINIMAL !== layout) {
-      const COZY = tmp(3962).ChannelListLayoutTypes.COZY;
+    if (tmp(3979).ChannelListLayoutTypes.MINIMAL !== layout) {
+      const COZY = tmp(3979).ChannelListLayoutTypes.COZY;
     }
-    tmpResult = tmp(9717);
+    tmpResult = tmp(9733);
     return flag ? tmpResult.CHANNEL_LIST_STYLES_COZY_LAUNCHPAD : tmpResult.CHANNEL_LIST_STYLES_COZY;
   }
 }
@@ -32,21 +32,21 @@ export function makeSizeStyle(size) {
   return { width: size, height: size };
 }
 export const isLayoutCompact = function isLayoutCompact(closure_2) {
-  return closure_2 === require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
+  return closure_2 === require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT;
 };
 export const isLayoutCozy = function isLayoutCozy(layout) {
-  return layout === require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY || layout === require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY_DRAWER || layout === require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+  return layout === require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY || layout === require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY_DRAWER || layout === require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COZY_DRAWER_SMOL;
 };
 export const useMessagesTabLayout = function useMessagesTabLayout(panelVariant) {
-  const ChannelListLayoutSetting = require(3957) /* explicitContentFromProto */.ChannelListLayoutSetting;
+  const ChannelListLayoutSetting = require(3974) /* explicitContentFromProto */.ChannelListLayoutSetting;
   const setting = ChannelListLayoutSetting.useSetting();
-  const ChannelListLayoutTypes = require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes;
+  const ChannelListLayoutTypes = require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes;
   if (panelVariant) {
     let COZY = ChannelListLayoutTypes.COZY_DRAWER_SMOL;
   } else if (setting === ChannelListLayoutTypes.COMPACT) {
-    COZY = tmp(3962).ChannelListLayoutTypes.COMPACT;
+    COZY = tmp(3979).ChannelListLayoutTypes.COMPACT;
   } else {
-    COZY = tmp(3962).ChannelListLayoutTypes.COZY;
+    COZY = tmp(3979).ChannelListLayoutTypes.COZY;
   }
   return COZY;
 };
@@ -72,7 +72,7 @@ export const getScaledChannelRowHeight = function getScaledChannelRowHeight(arg0
   }
   const result = 2 * marginVertical;
   let num = 0;
-  if (layout === require(3962) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT) {
+  if (layout === require(3979) /* ChannelListLayoutTypes */.ChannelListLayoutTypes.COMPACT) {
     num = 4;
   }
   return sum + result + num;

@@ -1,10 +1,10 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14494
+// Function ID: 14495
 // Name: getSettingsOverrideReason
-// Dependencies: [3958, 685, 1236, 589, 2]
+// Dependencies: [3975, 685, 1236, 589, 2]
 // Exports: default, useSettingsOverrideReason
 
-// Module 14478 (getSettingsOverrideReason)
+// Module 14494 (getSettingsOverrideReason)
 import updateExistingSettings from "updateExistingSettings";
 import { SettingsOverrideReasonKeys as closure_3 } from "MAX_FAVORITES";
 

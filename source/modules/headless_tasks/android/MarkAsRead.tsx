@@ -1,9 +1,9 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16931
+// Function ID: 16932
 // Name: promise
-// Dependencies: [676, 5236, 2]
+// Dependencies: [676, 5252, 2]
 
-// Module 16911 (promise)
+// Module 16931 (promise)
 import ME from "ME";
 
 let c3;

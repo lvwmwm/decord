@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15604
+// Function ID: 15605
 // Name: showMembersManagementActionSheet
-// Dependencies: [1903, 1236, 4253, 15581, 1988, 5806, 15582, 5682, 2]
+// Dependencies: [1903, 1236, 4270, 15605, 1988, 5825, 15606, 5701, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 15580 (showMembersManagementActionSheet)
+// Module 15604 (showMembersManagementActionSheet)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -26,7 +26,7 @@ export default function showMembersManagementActionSheet(guild) {
   };
   const items = [obj];
   if (canPrune == null) {
-    let tmpResult = tmp(5806);
+    let tmpResult = tmp(5825);
     canPrune = tmpResult.canPruneGuildMembers(guild, authStore.getCurrentUser());
   }
   if (canPrune) {
@@ -40,7 +40,7 @@ export default function showMembersManagementActionSheet(guild) {
     };
     items.push(obj);
   }
-  tmpResult = tmp(5682);
+  tmpResult = tmp(5701);
   const result = tmpResult.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
 export const getMembersManagementActions = function getMembersManagementActions(guild) {
@@ -59,8 +59,8 @@ export const getMembersManagementActions = function getMembersManagementActions(
   };
   const items = [obj];
   if (canPrune == null) {
-    canPrune = tmp(5806).canPruneGuildMembers(guild, authStore.getCurrentUser());
-    const tmpResult = tmp(5806);
+    canPrune = tmp(5825).canPruneGuildMembers(guild, authStore.getCurrentUser());
+    const tmpResult = tmp(5825);
   }
   if (canPrune) {
     obj = { label: null, action: null, variant: "destructive" };

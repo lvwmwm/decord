@@ -1,8 +1,8 @@
-// Module ID: 15259
-// Function ID: 15260
-// Dependencies: [19, 4297, 4480, 9712, 4481, 21, 4285, 712, 9585, 4293, 589, 15080, 15155, 8956, 2]
+// Module ID: 15283
+// Function ID: 15284
+// Dependencies: [19, 4314, 4497, 9728, 4498, 21, 4302, 712, 9601, 4310, 589, 15096, 15171, 8973, 2]
 
-// Module 15259
+// Module 15283
 import importAllResult from "noop";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -41,10 +41,10 @@ const memoResult = importAllResult.memo((channel) => {
   const items5 = [channel];
   const stateFromStores = channel(589).useStateFromStores(items4, () => outer1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
   const obj2 = channel(589);
-  ({ isIncomingCall, isOngoingCall } = importDefault(15080)(channel.id));
+  ({ isIncomingCall, isOngoingCall } = importDefault(15096)(channel.id));
   obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null };
-  const tmp6 = importDefault(15080)(channel.id);
-  obj[5] = importDefault(8956)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
+  const tmp6 = importDefault(15096)(channel.id);
+  obj[5] = importDefault(8973)({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
   obj[6] = { selected };
   obj[7] = channel;
   obj[8] = selected;
@@ -52,7 +52,7 @@ const memoResult = importAllResult.memo((channel) => {
   obj[10] = UnreadSetting.ALL_MESSAGES;
   obj[11] = mentionCount;
   obj[12] = stateFromStores;
-  return jsx(importDefault(15155), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null });
+  return jsx(importDefault(15171), { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null });
 });
 let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
 

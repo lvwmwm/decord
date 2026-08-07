@@ -1,10 +1,10 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12003
+// Function ID: 12004
 // Name: JoinServerContainer
-// Dependencies: [32, 19, 8430, 21, 4285, 5250, 1480, 5253, 11956, 5311, 8429, 1236, 7679, 2]
+// Dependencies: [32, 19, 8447, 21, 4302, 5266, 1480, 5269, 11971, 5327, 8446, 1236, 7698, 2]
 // Exports: default
 
-// Module 11988 (JoinServerContainer)
+// Module 12003 (JoinServerContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -72,7 +72,7 @@ export default function JoinServerContainer(initialRoute) {
   obj[3] = function onInviteChange(arg0) {
     callback(arg0);
   };
-  obj[4] = function onDone(arg0) {
+  obj[4] = function onDone() {
     const str = first.trim();
     if ("" !== str) {
       callback2(true);

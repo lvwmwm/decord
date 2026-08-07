@@ -1,10 +1,10 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 16667
+// Function ID: 16668
 // Name: safetyCheck
-// Dependencies: [32, 19, 505, 4130, 16648, 16649, 16650, 16654, 16655, 7950, 4221, 2]
+// Dependencies: [32, 19, 505, 4147, 16668, 16669, 16670, 16674, 16675, 7967, 4238, 2]
 // Exports: default
 
-// Module 16647 (safetyCheck)
+// Module 16667 (safetyCheck)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ThemeTypes } from "sum";
@@ -22,9 +22,9 @@ const prototype = EnableCommunityModalIcons.prototype;
 Object.defineProperty(prototype, "safetyCheck", {
   get: function safetyCheck() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(16648);
+      let tmpResult = tmp(16668);
     } else {
-      tmpResult = tmp(16649);
+      tmpResult = tmp(16669);
     }
     return tmpResult;
   },
@@ -32,16 +32,16 @@ Object.defineProperty(prototype, "safetyCheck", {
 });
 Object.defineProperty(prototype, "channelSetup", {
   get: function channelSetup() {
-    return require(16650) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
+    return require(16670) /* getChannelSetupSource */.getChannelSetupSource(this.theme);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "finishingTouches", {
   get: function finishingTouches() {
     if (obj.isThemeDark(this.theme)) {
-      let tmpResult = tmp(16654);
+      let tmpResult = tmp(16674);
     } else {
-      tmpResult = tmp(16655);
+      tmpResult = tmp(16675);
     }
     return tmpResult;
   },
@@ -49,14 +49,14 @@ Object.defineProperty(prototype, "finishingTouches", {
 });
 Object.defineProperty(prototype, "close", {
   get: function close() {
-    return require(7950) /* registerAsset */;
+    return require(7967) /* registerAsset */;
   },
   set: undefined
 });
 const result = require("sum").fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
 
 export default function useEnableCommunityModalIcons() {
-  let closure_0 = importDefault(4221)();
+  let closure_0 = importDefault(4238)();
   return callback(React.useState(() => {
     if (typeof outer1_6 !== "function") {
       HermesBuiltin.throwTypeError();

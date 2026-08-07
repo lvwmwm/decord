@@ -1,10 +1,10 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8627
+// Function ID: 8628
 // Name: ShinyButton
-// Dependencies: [19, 21, 4285, 712, 4696, 1297, 8611, 2]
+// Dependencies: [19, 21, 4302, 712, 4713, 1297, 8628, 2]
 // Exports: default
 
-// Module 8610 (ShinyButton)
+// Module 8627 (ShinyButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -37,7 +37,7 @@ export default function ShinyButton(style) {
   if (!loading) {
     obj = { size: null, source: null, style: null };
     obj[0] = tmp4(1297).Icon.Sizes.REFRESH_SMALL_16;
-    obj[1] = importDefault(8611);
+    obj[1] = importDefault(8628);
     const items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
       disabled = tmp2.disabled;
@@ -48,5 +48,5 @@ export default function ShinyButton(style) {
   }
   obj[4] = tmp3Result;
   const merged1 = Object.assign(merged);
-  return jsx(require(4696) /* CollapsingText */.BaseTextButton, { onPress, pillStyle: items, loading, disabled, icon: null });
+  return jsx(require(4713) /* CollapsingText */.BaseTextButton, { onPress, pillStyle: items, loading, disabled, icon: null });
 };

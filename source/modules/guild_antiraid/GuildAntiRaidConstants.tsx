@@ -1,10 +1,10 @@
-// Module ID: 8046
-// Function ID: 8047
+// Module ID: 8063
+// Function ID: 8064
 // Name: GUILD_REPORT_RAID_MOBILE_KEY
 // Dependencies: [505, 1236, 506, 2]
 // Exports: getTimeframes
 
-// Module 8046 (GUILD_REPORT_RAID_MOBILE_KEY)
+// Module 8063 (GUILD_REPORT_RAID_MOBILE_KEY)
 import { Permissions } from "sum";
 import importAllResult from "fromString";
 

@@ -1,10 +1,10 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13244
+// Function ID: 13245
 // Name: CommunityPill
-// Dependencies: [19, 17, 13231, 1891, 5817, 676, 21, 4285, 712, 501, 1236, 9183, 9179, 10453, 9186, 4827, 3985, 1297, 4281, 7562, 589, 1411, 13232, 13233, 1474, 5700, 1416, 1450, 8314, 3988, 5251, 9181, 12466, 2]
+// Dependencies: [19, 17, 13245, 1891, 5836, 676, 21, 4302, 712, 501, 1236, 9200, 9196, 10469, 9203, 4844, 4002, 1297, 4298, 7581, 589, 1411, 13246, 13247, 1474, 5719, 1416, 1450, 8331, 4005, 5267, 9198, 12481, 2]
 // Exports: default
 
-// Module 13230 (CommunityPill)
+// Module 13244 (CommunityPill)
 import useIsWindowLarge from "useIsWindowLarge";
 import get_ActivityIndicator from "Button";
 import initialize from "initialize";
@@ -26,12 +26,12 @@ function CommunityPill(guildVisibility) {
   const tmp = createCacheKey();
   const intl = GlobeEarthIcon(1236).intl;
   importDefault = intl.string(GlobeEarthIcon(1236).t.TME4LJ);
-  let tmp4Result = importDefault(9183);
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(9179).GuildVisibility.PUBLIC) {
+  let tmp4Result = importDefault(9200);
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(9196).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1236).intl;
     importDefault = intl2.string(tmp2(1236).t.op2cJ6);
-    GlobeEarthIcon = tmp2(10453).GlobeEarthIcon;
-    tmp4Result = importDefault(9186);
+    GlobeEarthIcon = tmp2(10469).GlobeEarthIcon;
+    tmp4Result = importDefault(9203);
   }
   let obj = {
     style: tmp.communityPill,
@@ -48,9 +48,9 @@ function CommunityPill(guildVisibility) {
   obj = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: null };
   const intl3 = tmp2(1236).intl;
   obj[3] = intl3.string(GlobeEarthIcon(1236).t.K7iRig);
-  items[1] = callback(GlobeEarthIcon(4281).Text, obj);
+  items[1] = callback(GlobeEarthIcon(4298).Text, obj);
   obj[3] = items;
-  return callback2(GlobeEarthIcon(4827).PressableOpacity, obj);
+  return callback2(GlobeEarthIcon(4844).PressableOpacity, obj);
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

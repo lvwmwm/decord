@@ -1,9 +1,9 @@
-// Module ID: 4462
-// Function ID: 4463
+// Module ID: 4479
+// Function ID: 4480
 // Name: handleThumbnailUpload
-// Dependencies: [5, 17, 4304, 1372, 1960, 676, 4310, 3, 4170, 3957, 709, 530, 4463, 4334, 38, 4464, 4478, 4348, 1474, 10746, 10695, 1236, 2]
+// Dependencies: [5, 17, 4321, 1372, 1960, 676, 4327, 3, 4187, 3974, 709, 530, 4480, 4351, 38, 4481, 4495, 4365, 1474, 10758, 10707, 1236, 2]
 
-// Module 4462 (handleThumbnailUpload)
+// Module 4479 (handleThumbnailUpload)
 import closure_3 from "ME";
 import { Linking } from "isStreamKey";
 import reset from "reset";
@@ -173,7 +173,7 @@ class VoiceEngineStreamingManager extends tmp6 {
 }
 const prototype = VoiceEngineStreamingManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  const voiceEngine = require(4334) /* inject */.getVoiceEngine();
+  const voiceEngine = require(4351) /* inject */.getVoiceEngine();
   let result = voiceEngine.setBroadcastRequestCallback(() => {
     logger.log("Broadcast Requested");
     callback2(38)(null != voiceEngine, "Voice Engine should be initialized in callback");
@@ -182,11 +182,11 @@ prototype["_initialize"] = function _initialize() {
     currentAppIntent = currentAppIntent.getCurrentAppIntent();
     if (null != channel) {
       const guildId = channel.getGuildId();
-      currentUserActiveStream(4464).startStream(guildId, channel.id, { sourceId: "screen:0" });
+      currentUserActiveStream(4481).startStream(guildId, channel.id, { sourceId: "screen:0" });
       currentUserActiveStream = currentAppIntent.getCurrentUserActiveStream();
       if (null != currentUserActiveStream) {
-        const tmp2Result = callback2(4478);
-        const participant = tmp2Result.selectParticipant(channel.id, tmp9(4348).encodeStreamKey(currentUserActiveStream));
+        const tmp2Result = callback2(4495);
+        const participant = tmp2Result.selectParticipant(channel.id, tmp9(4365).encodeStreamKey(currentUserActiveStream));
         if ("android" === voiceEngine.platform) {
           closure_15.start(15000, () => {
             outer1_1(outer1_2[14])(null != outer1_19, "Voice Engine should be initialized in callback");
@@ -201,9 +201,9 @@ prototype["_initialize"] = function _initialize() {
         if (null != currentAppIntent) {
           closure_4.openURL(callback3(currentAppIntent));
         }
-        const tmp9Result = tmp9(4348);
+        const tmp9Result = tmp9(4365);
       }
-      const obj3 = currentUserActiveStream(4464);
+      const obj3 = currentUserActiveStream(4481);
       tmp9 = currentUserActiveStream;
     } else {
       let result = voiceEngine.stopBroadcastWithError(-1, "Not currently in a voice channel");
@@ -213,7 +213,7 @@ prototype["_initialize"] = function _initialize() {
     logger.log("Broadcast Finished");
     closure_14.stop();
     closure_15.stop();
-    const result = callback(10746).handleCloseScreenshare();
+    const result = callback(10758).handleCloseScreenshare();
   });
   const result2 = voiceEngine.setBroadcastAnnotatedCallback((arg0) => {
     logger.log("Broadcast Annotated:", arg0);
@@ -227,18 +227,18 @@ prototype["_initialize"] = function _initialize() {
   });
   const result3 = voiceEngine.setBroadcastBlockedCallback(() => {
     logger.log("Broadcast Blocked");
-    let obj = callback2(10695);
+    let obj = callback2(10707);
     obj = { alertBody: null };
     const intl = callback(1236).intl;
     obj[0] = intl.string(callback(1236).t.iYQlwv);
     const result = obj.presentLocalNotification(obj);
   });
-  let obj = require(4334) /* inject */;
+  let obj = require(4351) /* inject */;
   // GetOwnPrivateBySym (0x65)
   const subscription = importDefault(709).subscribe("VOICE_CHANNEL_SELECT", importDefault);
 };
 prototype["_terminate"] = function _terminate() {
-  const voiceEngine = require(4334) /* inject */.getVoiceEngine();
+  const voiceEngine = require(4351) /* inject */.getVoiceEngine();
   if (null != voiceEngine) {
     const result = voiceEngine.setBroadcastRequestCallback(closure_10);
     const result1 = voiceEngine.setBroadcastFinishedCallback(closure_10);
@@ -247,7 +247,7 @@ prototype["_terminate"] = function _terminate() {
   }
   timeout.stop();
   timeout1.stop();
-  const obj = require(4334) /* inject */;
+  const obj = require(4351) /* inject */;
   // GetOwnPrivateBySym (0x65)
   importDefault(709).unsubscribe("VOICE_CHANNEL_SELECT", this);
 };

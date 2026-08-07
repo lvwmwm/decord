@@ -1,9 +1,9 @@
-// Module ID: 11843
-// Function ID: 11844
+// Module ID: 11858
+// Function ID: 11859
 // Name: BoostedGuildTiers
-// Dependencies: [676, 1905, 4177, 1236, 2]
+// Dependencies: [676, 1905, 4194, 1236, 2]
 
-// Module 11843 (BoostedGuildTiers)
+// Module 11858 (BoostedGuildTiers)
 import ME from "ME";
 import { BoostedGuildFeatures } from "GuildFeatures";
 

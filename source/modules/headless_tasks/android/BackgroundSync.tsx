@@ -1,9 +1,9 @@
-// Module ID: 16907
-// Function ID: 16908
+// Module ID: 16927
+// Function ID: 16928
 // Name: resolved
-// Dependencies: [4975, 1218, 6797, 3, 1952, 16279, 2]
+// Dependencies: [4992, 1218, 6816, 3, 1952, 16305, 2]
 
-// Module 16907 (resolved)
+// Module 16927 (resolved)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import fetchFingerprint from "fetchFingerprint";
 import getState from "getState";

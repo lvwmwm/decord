@@ -1,10 +1,10 @@
-// Module ID: 11807
-// Function ID: 11808
+// Module ID: 11822
+// Function ID: 11823
 // Name: HeadphonesIcon
-// Dependencies: [19, 21, 712, 3987, 11808, 2]
+// Dependencies: [19, 21, 712, 4004, 11823, 2]
 // Exports: HeadphonesIcon
 
-// Module 11807 (HeadphonesIcon)
+// Module 11822 (HeadphonesIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const HeadphonesIcon = function HeadphonesIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11808) /* registerAsset */;
+  obj[0] = require(11823) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

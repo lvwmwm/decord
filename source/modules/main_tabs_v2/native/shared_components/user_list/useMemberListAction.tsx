@@ -1,10 +1,10 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 10995
+// Function ID: 10996
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1372, 3912, 3921, 1903, 9546, 676, 21, 4285, 1348, 647, 8920, 8446, 4135, 10981, 10982, 1236, 9640, 9639, 4100, 1358, 10984, 10989, 5932, 10990, 1872, 8988, 7893, 5354, 2]
+// Dependencies: [32, 19, 17, 1372, 3929, 3938, 1903, 9562, 676, 21, 4302, 1348, 647, 8937, 8463, 4152, 10996, 10997, 1236, 9656, 9655, 4117, 1358, 10999, 11004, 5951, 11005, 1872, 9005, 7910, 5373, 2]
 // Exports: default
 
-// Module 10980 (useMemberListAction)
+// Module 10995 (useMemberListAction)
 import _slicedToArray from "_slicedToArray";
 import registerAsset from "registerAsset";
 import { View } from "ChatPlusIcon";
@@ -67,8 +67,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = flag3.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(8920).isPrivateGuildChannel(channel);
-    const tmp5Result = channel(8920);
+    canResult = channel(8937).isPrivateGuildChannel(channel);
+    const tmp5Result = channel(8937);
   }
   React = canResult;
   let tmp9 = null != channel && !flag;
@@ -100,7 +100,7 @@ export default function useMemberListAction(channel) {
   if (channel != null) {
     id = channel.id;
   }
-  const tmp15 = importDefault(8446)();
+  const tmp15 = importDefault(8463)();
   c9 = tmp15;
   const tmp16 = stateFromStores(React.useState(undefined), 2);
   first = tmp16[0];

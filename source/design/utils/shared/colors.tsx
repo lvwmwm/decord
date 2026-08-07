@@ -1,10 +1,10 @@
-// Module ID: 8218
-// Function ID: 8219
+// Module ID: 8235
+// Function ID: 8236
 // Name: flattenColorOverOpaqueBackground
 // Dependencies: [689, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 8218 (flattenColorOverOpaqueBackground)
+// Module 8235 (flattenColorOverOpaqueBackground)
 const result = require("set").fileFinishedImporting("design/utils/shared/colors.tsx");
 
 export const flattenColorOverOpaqueBackground = function flattenColorOverOpaqueBackground(token, context) {

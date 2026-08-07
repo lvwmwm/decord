@@ -1,10 +1,10 @@
-// Module ID: 9887
-// Function ID: 9888
+// Module ID: 9903
+// Function ID: 9904
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 4285, 712, 4619, 1236, 4281, 4827, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4636, 1236, 4298, 4844, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 9887 (StickerPackInformationPopout)
+// Module 9903 (StickerPackInformationPopout)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -37,7 +37,7 @@ export default function StickerPackInformationPopout(stickerPack) {
   const tmp = createCacheKey();
   _require = tmp;
   let items = [];
-  let obj = _require(4619);
+  let obj = _require(4636);
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
     const intl = tmp2(1236).intl;
@@ -50,15 +50,15 @@ export default function StickerPackInformationPopout(stickerPack) {
   const obj2 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp2(1236).intl;
   obj2[3] = intl2.format(_require(1236).t.XDm6yN, { stickerPackName: stickerPack.name });
-  const items2 = [callback(_require(4281).Text, obj2), ];
+  const items2 = [callback(_require(4298).Text, obj2), ];
   const obj4 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: null, children: null };
   const intl3 = tmp2(1236).intl;
   obj4[2] = intl3.string(_require(1236).t.cpT0Cq);
   const obj5 = { variant: "text-md/bold", color: "text-brand", children: null };
   const intl4 = tmp2(1236).intl;
   obj5[2] = intl4.string(_require(1236).t.cpT0Cq);
-  obj4[3] = callback(_require(4281).Text, obj5);
-  items2[1] = callback(_require(4827).PressableOpacity, obj4);
+  obj4[3] = callback(_require(4298).Text, obj5);
+  items2[1] = callback(_require(4844).PressableOpacity, obj4);
   obj1[1] = items2;
   const items3 = [
     callback2(closure_2, obj1),
@@ -82,7 +82,7 @@ export default function StickerPackInformationPopout(stickerPack) {
 };
 export const doesStickerPackHavePopoutInformation = function doesStickerPackHavePopoutInformation(stickerPack) {
   const items = [];
-  let obj = require(4619) /* getStickerExtensionFromFormatType */;
+  let obj = require(4636) /* getStickerExtensionFromFormatType */;
   if (obj.isStickerPackAnimated(stickerPack)) {
     obj = { key: "animated", description: null };
     const intl = tmp(1236).intl;

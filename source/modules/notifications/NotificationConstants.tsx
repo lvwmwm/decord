@@ -1,9 +1,9 @@
-// Module ID: 3924
-// Function ID: 3925
+// Module ID: 3941
+// Function ID: 3942
 // Name: AccountNotificationFlags
 // Dependencies: [2]
 
-// Module 3924 (AccountNotificationFlags)
+// Module 3941 (AccountNotificationFlags)
 const result = require("set").fileFinishedImporting("modules/notifications/NotificationConstants.tsx");
 
 export const AccountNotificationFlags = { USE_NEW_NOTIFICATIONS: 16, [16]: "USE_NEW_NOTIFICATIONS", MENTION_ON_ALL_MESSAGES: 32, [32]: "MENTION_ON_ALL_MESSAGES" };

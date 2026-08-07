@@ -1,10 +1,10 @@
-// Module ID: 9182
-// Function ID: 9183
+// Module ID: 9199
+// Function ID: 9200
 // Name: badgeVariants
-// Dependencies: [9180, 8362, 8363, 9183, 9184, 9185, 9186, 9187, 9188, 4130, 9179, 2]
+// Dependencies: [9197, 8379, 8380, 9200, 9201, 9202, 9203, 9204, 9205, 4147, 9196, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 9182 (badgeVariants)
+// Module 9199 (badgeVariants)
 const require = arg1;
 let obj = {};
 obj = { imageSource: null };
@@ -48,9 +48,9 @@ export const resolveImageSource = function resolveImageSource(premiumImageSource
   imageSource = premiumImageSource.imageSource;
 };
 export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild, closure_2) {
-  const obj = require(9179) /* GuildVisibility */;
+  const obj = require(9196) /* GuildVisibility */;
   const guildTraits = obj.getGuildTraits(guild);
-  const obj2 = require(9180) /* BadgeCategory */;
+  const obj2 = require(9197) /* BadgeCategory */;
   const tmp4 = obj[obj2.getBadgeCategory(obj2, guildTraits)];
   if (null == tmp4) {
     return null;
@@ -62,7 +62,7 @@ export const getGuildBadgeImageSource = function getGuildBadgeImageSource(guild,
         }
       }
       premiumImageSource = tmp4.imageSource;
-      tmpResult = require(4130) /* AccessibilityAnnouncer */;
+      tmpResult = require(4147) /* AccessibilityAnnouncer */;
     }
     premiumImageSource = tmp4.premiumImageSource;
   }

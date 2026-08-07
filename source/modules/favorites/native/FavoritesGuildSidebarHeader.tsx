@@ -1,10 +1,10 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15248
+// Function ID: 15249
 // Name: EmptyBody
-// Dependencies: [19, 17, 1410, 1905, 21, 4285, 712, 9370, 9629, 12053, 4253, 9634, 1988, 9633, 4281, 1236, 3030, 5649, 5669, 8545, 4693, 3930, 1297, 4790, 4810, 4781, 2]
+// Dependencies: [19, 17, 1410, 1905, 21, 4302, 712, 9387, 9645, 12068, 4270, 9650, 1988, 9649, 4298, 1236, 3030, 5668, 5688, 8562, 4710, 3947, 1297, 4807, 4827, 4798, 2]
 // Exports: default, getScaledFavoritesUpsellNoticeHeight
 
-// Module 15224 (EmptyBody)
+// Module 15248 (EmptyBody)
 import openPremiumModal from "openPremiumModal";
 import { View } from "context";
 import { MAX_FAVORITE_CHANNELS } from "date";
@@ -29,17 +29,17 @@ function EmptyBody() {
   const obj = { variant: c10, color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.format(importDefault(3030).Z3Hdr5, { onClick: callback });
-  return callback(require(4281) /* Text */.Text, obj);
+  return callback(require(4298) /* Text */.Text, obj);
 }
 function UpsellBody() {
   let favoriteCount;
   let favoriteLimit;
   const tmp = createCacheKey();
-  let obj = isAtLimit(9629);
+  let obj = isAtLimit(9645);
   const favoritesLimitUpsell = obj.useFavoritesLimitUpsell();
   isAtLimit = favoritesLimitUpsell.isAtLimit;
   ({ favoriteCount, favoriteLimit } = favoritesLimitUpsell);
-  analyticsLocations = analyticsLocations(5649)(analyticsLocations(5669).FAVORITES_GUILD_UPSELL_BAR).analyticsLocations;
+  analyticsLocations = analyticsLocations(5668)(analyticsLocations(5688).FAVORITES_GUILD_UPSELL_BAR).analyticsLocations;
   const items = [analyticsLocations];
   const items1 = [isAtLimit];
   const callback = React.useCallback(() => {
@@ -57,18 +57,18 @@ function UpsellBody() {
   obj = { variant: c10, color: "text-muted", style: tmp.upsellText, lineClamp: 3, children: null };
   const intl = isAtLimit(1236).intl;
   const obj1 = { count: favoriteCount, limit: favoriteLimit, maxCount: MAX_FAVORITE_CHANNELS, nitroTierName: null, onClick: null, countHook: null };
-  const tmp3 = analyticsLocations(5649);
-  obj1[3] = isAtLimit(3930).getPremiumTypeDisplayName(PremiumTypes.TIER_2);
+  const tmp3 = analyticsLocations(5668);
+  obj1[3] = isAtLimit(3947).getPremiumTypeDisplayName(PremiumTypes.TIER_2);
   obj1[4] = callback;
   obj1[5] = callback1;
   obj[4] = intl.format(analyticsLocations(3030).Yw4x8Q, obj1);
-  const items2 = [callback(isAtLimit(4281).Text, obj), ];
+  const items2 = [callback(isAtLimit(4298).Text, obj), ];
   const obj2 = { size: null, style: null };
   obj2[0] = isAtLimit(1297).BetaSizes.SMALL;
   obj2[1] = tmp.betaTag;
   items2[1] = callback(isAtLimit(1297).BetaTag, obj2);
   obj[3] = items2;
-  return callback2(isAtLimit(4693).Stack, obj);
+  return callback2(isAtLimit(4710).Stack, obj);
 }
 function PlaceholderRows() {
   const tmp = createCacheKey();
@@ -76,7 +76,7 @@ function PlaceholderRows() {
   obj = { style: tmp.placeholderRow, children: null };
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.ICON_MUTED;
-  const items = [callback(require(4790) /* TextIcon */.TextIcon, obj), ];
+  const items = [callback(require(4807) /* TextIcon */.TextIcon, obj), ];
   const items1 = [, ];
   ({ placeholderBar: arr2[0], placeholderBarShort: arr2[1] } = tmp);
   items[1] = callback(View, { style: items1 });
@@ -85,7 +85,7 @@ function PlaceholderRows() {
   const obj1 = { style: tmp.placeholderRow, children: null };
   const obj2 = { size: "sm", color: null };
   obj2[1] = importDefault(712).colors.ICON_MUTED;
-  const items3 = [callback(require(4810) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
+  const items3 = [callback(require(4827) /* VoiceNormalIcon */.VoiceNormalIcon, obj2), ];
   const items4 = [, ];
   ({ placeholderBar: arr5[0], placeholderBarLong: arr5[1] } = tmp);
   items3[1] = callback(View, { style: items4 });
@@ -94,7 +94,7 @@ function PlaceholderRows() {
   const obj3 = { style: tmp.placeholderRow, children: null };
   const obj4 = { size: "sm", color: null };
   obj4[1] = importDefault(712).colors.ICON_MUTED;
-  const items5 = [callback(require(4781) /* ChatIcon */.ChatIcon, obj4), ];
+  const items5 = [callback(require(4798) /* ChatIcon */.ChatIcon, obj4), ];
   const items6 = [, ];
   ({ placeholderBar: arr7[0], placeholderBarShort: arr7[1] } = tmp);
   items5[1] = callback(View, { style: items6 });
@@ -137,21 +137,21 @@ export default function FavoritesGuildSidebarHeader(variant) {
   obj[2] = 1;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(importDefault(3030)["1n0TGE"]);
-  const items = [closure_7(require(4281) /* Text */.Heading, obj), closure_7("empty" === variant.variant ? EmptyBody : UpsellBody, {})];
+  const items = [closure_7(require(4298) /* Text */.Heading, obj), closure_7("empty" === variant.variant ? EmptyBody : UpsellBody, {})];
   obj[2] = items;
-  const items1 = [closure_8(require(4693) /* Stack */.Stack, obj), closure_7(View, { style: tmp.divider }), ];
+  const items1 = [closure_8(require(4710) /* Stack */.Stack, obj), closure_7(View, { style: tmp.divider }), ];
   let tmp7Result = null;
   if ("empty" === variant.variant) {
     tmp7Result = tmp7(PlaceholderRows, {});
   }
   items1[2] = tmp7Result;
   obj[1] = items1;
-  return closure_8(require(4693) /* Stack */.Stack, obj);
+  return closure_8(require(4710) /* Stack */.Stack, obj);
 };
 export const getScaledFavoritesUpsellNoticeHeight = function getScaledFavoritesUpsellNoticeHeight(fontScale) {
-  const obj = require(9370) /* map */;
-  const scaleTextLineHeightResult = require(9370) /* map */.scaleTextLineHeight(c9, fontScale);
-  const result = 3 * require(9370) /* map */.scaleTextLineHeight(c10, fontScale);
+  const obj = require(9387) /* map */;
+  const scaleTextLineHeightResult = require(9387) /* map */.scaleTextLineHeight(c9, fontScale);
+  const result = 3 * require(9387) /* map */.scaleTextLineHeight(c10, fontScale);
   const sum = importDefault(712).space.PX_16 + scaleTextLineHeightResult;
   const sum1 = sum + importDefault(712).space.PX_8;
   const sum2 = sum1 + result + importDefault(712).space.PX_8;

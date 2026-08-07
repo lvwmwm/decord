@@ -1,10 +1,10 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 9787
+// Function ID: 9788
 // Name: MAX_TIMES_SHOWN
 // Dependencies: [595, 2]
 // Exports: getExpandNUXState, markExpandNUXStateAsShown, resetExpandNUXState
 
-// Module 9771 (MAX_TIMES_SHOWN)
+// Module 9787 (MAX_TIMES_SHOWN)
 const inAppNotificationExpandNux = "inAppNotificationExpandNux";
 let closure_3 = { lastShownAtMs: 0, numTimesShown: 0 };
 let result = require("set").fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationExpandNux.tsx");

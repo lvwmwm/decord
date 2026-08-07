@@ -1,8 +1,8 @@
-// Module ID: 14410
-// Function ID: 14411
-// Dependencies: [19, 4096, 1303, 1302, 14411, 8005, 676, 21, 1480, 500, 8305, 1236, 9371, 705, 3030, 1974, 4711, 14412, 647, 10364, 13802, 2]
+// Module ID: 14426
+// Function ID: 14427
+// Dependencies: [19, 4113, 1303, 1302, 14427, 8022, 676, 21, 1480, 500, 8322, 1236, 9388, 705, 3030, 1974, 4728, 14428, 647, 10380, 13816, 2]
 
-// Module 14410
+// Module 14426
 import importAllResult from "createToggle";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -20,10 +20,10 @@ let c3 = importAllResult;
 const memoResult = importAllResult.memo(() => {
   let gradientPresetId;
   let theme;
-  nativeStackNavigation(4711)(() => {
+  nativeStackNavigation(4728)(() => {
     if (initialize.shouldSync("appearance")) {
-      const userCustomThemes = _undefined(14412).fetchUserCustomThemes();
-      const obj = _undefined(14412);
+      const userCustomThemes = _undefined(14428).fetchUserCustomThemes();
+      const obj = _undefined(14428);
     }
   });
   let items = [handleThemeChange, isSyncedModeThemesEnabled];
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(() => {
     callback(table[13]).batchUpdates(() => state.setState(closure_7));
   }, []);
   const node = importAllResult.useMemo(() => {
-    let obj = _undefined(10364);
+    let obj = _undefined(10380);
     obj = { sections: null };
     const items = [constants.MOBILE_VISUAL_REFRESH];
     const items1 = [{ settings: items }, , , , , , , , , ];
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(() => {
     return obj.createList(obj);
   }, []);
   let obj2 = _require(1480);
-  return jsx(nativeStackNavigation(13802), { node }, "" + theme + "-" + gradientPresetId);
+  return jsx(nativeStackNavigation(13816), { node }, "" + theme + "-" + gradientPresetId);
 });
 const result = require("initialize").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
 

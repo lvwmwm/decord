@@ -1,10 +1,10 @@
-// Module ID: 10750
-// Function ID: 10751
+// Module ID: 10762
+// Function ID: 10763
 // Name: canStreamWithSettings
-// Dependencies: [4340, 10751, 10752, 2]
+// Dependencies: [4357, 10763, 10764, 2]
 // Exports: default
 
-// Module 10750 (canStreamWithSettings)
+// Module 10762 (canStreamWithSettings)
 import RESOLUTION_720 from "RESOLUTION_720";
 
 let c3;
@@ -14,7 +14,7 @@ const result = require("canUseStreamSetting").fileFinishedImporting("modules/go_
 
 export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5) {
   if (arg0 === constants.PRESET_AUTO) {
-    return require(10751) /* getGoLiveAutoQualityExperimentConfig */.getGoLiveAutoQualityExperimentConfig({ location: "canStreamWithSettings" }).allowAutoQuality;
+    return require(10763) /* getGoLiveAutoQualityExperimentConfig */.getGoLiveAutoQualityExperimentConfig({ location: "canStreamWithSettings" }).allowAutoQuality;
   } else {
     const iter = dependencyMap[Symbol.iterator]();
     const nextResult = iter.next();
@@ -31,7 +31,7 @@ export default function canStreamWithSettings(arg0, arg1, arg2, arg3, arg4, arg5
             let tmp11 = arg3;
             let tmp12 = arg4;
             let tmp13 = arg5;
-            if (importDefault(10752)(tmp4, arg3, arg4, arg5)) {
+            if (importDefault(10764)(tmp4, arg3, arg4, arg5)) {
               let tmp14 = iter;
               iter.return();
               let flag = true;

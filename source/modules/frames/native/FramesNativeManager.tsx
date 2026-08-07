@@ -1,9 +1,9 @@
-// Module ID: 10529
-// Function ID: 10530
+// Module ID: 10911
+// Function ID: 10912
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 10509, 10510, 676, 4310, 4188, 7733, 501, 10519, 10520, 1208, 10530, 10532, 4624, 1236, 1351, 709, 10513, 1231, 514, 2]
+// Dependencies: [5, 17, 10525, 10526, 676, 4327, 4205, 7750, 501, 10535, 10536, 1208, 10912, 10666, 4641, 1236, 1351, 709, 1231, 514, 2]
 
-// Module 10529 (postMessageToWebView)
+// Module 10911 (postMessageToWebView)
 import items3 from "items3";
 import map from "map";
 import { isLaunched } from "FrameLayoutModes";
@@ -12,7 +12,7 @@ import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3"
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import WebView from "WebView";
 import PlatformTypes from "PlatformTypes";
-import "prototype";
+import "leaveFrame";
 
 const require = arg1;
 function postMessageToWebView() {
@@ -148,13 +148,27 @@ class FramesNativeManager extends tmp5 {
     }
     return;
   }
+  leaveFrame(arg0) {
+    releaseWebViewResult = this.releaseWebView();
+    tmp2 = closure_2;
+    obj = require("isDiscordFrontendDevelopment");
+    if (obj.isNotNullish(global)) {
+      tmp3 = closure_1;
+      obj2 = require("dispatcher");
+      obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId: null, lockState: null, pictureInPictureLockState: null };
+      obj[1] = global;
+      dispatchResult = obj2.dispatch(obj);
+    }
+    leaveFrameResult = super.leaveFrame(global);
+    return;
+  }
 }
 const prototype = FramesNativeManager.prototype;
 prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason) {
   let code;
   let message;
   ({ code, message } = reason);
-  let obj = importDefault(4624);
+  let obj = importDefault(4641);
   obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.hbiAO6, { code });
@@ -167,19 +181,6 @@ prototype["getManagedFrame"] = function getManagedFrame() {
     frameByIframeId = frameByIframeId.getFrameByIframeId(tmp.iframeId);
   }
   return frameByIframeId;
-};
-prototype["leaveFrame"] = function leaveFrame(id) {
-  const self = this;
-  this.releaseWebView();
-  if (obj.isNotNullish(id)) {
-    self.clearFrameState(id);
-  }
-};
-prototype["clearFrameState"] = function clearFrameState(frameId) {
-  let obj = importDefault(709);
-  obj = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId, lockState: null, pictureInPictureLockState: null };
-  obj.dispatch(obj);
-  importDefault(10513).stopFrame(frameId);
 };
 prototype["releaseWebView"] = function releaseWebView() {
   const releaseIframeIdResult = this.releaseIframeId();

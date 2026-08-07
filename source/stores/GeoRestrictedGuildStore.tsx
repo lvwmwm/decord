@@ -1,9 +1,9 @@
-// Module ID: 12922
-// Function ID: 12923
+// Module ID: 12937
+// Function ID: 12938
 // Name: getGeoRestrictedGuilds
 // Dependencies: [589, 709, 2]
 
-// Module 12922 (getGeoRestrictedGuilds)
+// Module 12937 (getGeoRestrictedGuilds)
 import { Store } from "initialize";
 
 let closure_0 = [];

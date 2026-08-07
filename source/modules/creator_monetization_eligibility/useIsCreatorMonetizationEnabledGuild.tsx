@@ -1,10 +1,10 @@
-// Module ID: 5792
-// Function ID: 5793
+// Module ID: 5811
+// Function ID: 5812
 // Name: useIsCreatorMonetizationEnabledGuild
 // Dependencies: [1891, 676, 589, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 5792 (useIsCreatorMonetizationEnabledGuild)
+// Module 5811 (useIsCreatorMonetizationEnabledGuild)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 

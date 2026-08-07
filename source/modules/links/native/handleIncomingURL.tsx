@@ -1,10 +1,10 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16892
+// Function ID: 16893
 // Name: _handleIncomingURL
-// Dependencies: [5, 1372, 4356, 6797, 676, 3, 6855, 16871, 4494, 698, 13113, 4266, 4271, 513, 7679, 16873, 2]
+// Dependencies: [5, 1372, 4373, 6816, 676, 3, 6874, 16891, 4511, 698, 13127, 4283, 4288, 513, 7698, 16893, 2]
 // Exports: default
 
-// Module 16872 (_handleIncomingURL)
+// Module 16892 (_handleIncomingURL)
 import timestamp from "timestamp";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";

@@ -1,10 +1,10 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10286
+// Function ID: 10287
 // Name: dismissChannelSafetyWarnings
-// Dependencies: [9587, 676, 709, 530, 2]
+// Dependencies: [9603, 676, 709, 530, 2]
 // Exports: acknowledgeChannelSafetyWarningTooltip, clearChannelSafetyWarnings, dismissChannelSafetyWarnings, markAsStrangerDanger, reportFalsePositive, setChannelSafetyWarningFeedback
 
-// Module 10270 (dismissChannelSafetyWarnings)
+// Module 10286 (dismissChannelSafetyWarnings)
 import { SafetyWarningTypes } from "handleConnectionOpen";
 import { Endpoints } from "ME";
 

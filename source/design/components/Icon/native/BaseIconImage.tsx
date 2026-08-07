@@ -1,10 +1,10 @@
-// Module ID: 3987
-// Function ID: 3988
+// Module ID: 4004
+// Function ID: 4005
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 3988, 2]
+// Dependencies: [19, 17, 21, 4005, 2]
 // Exports: BaseIconImage
 
-// Module 3987 (BaseIconImage)
+// Module 4004 (BaseIconImage)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export const BaseIconImage = function BaseIconImage(source) {
   }
   const color = source.color;
   ({ resizeMode, style, accessible, accessibilityLabel } = source);
-  let obj = require(3988) /* map */;
+  let obj = require(4005) /* map */;
   const token = obj.useToken(color);
   if (null != token) {
     obj = { tintColor: null };

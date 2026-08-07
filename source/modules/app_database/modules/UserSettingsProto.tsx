@@ -1,9 +1,9 @@
-// Module ID: 6869
-// Function ID: 6870
+// Module ID: 6888
+// Function ID: 6889
 // Name: getAll
 // Dependencies: [5, 1340, 1218, 3, 1936, 1952, 12, 2]
 
-// Module 6869 (getAll)
+// Module 6888 (getAll)
 import databaseName from "databaseName";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";

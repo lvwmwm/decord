@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16647
+// Function ID: 16648
 // Name: InvitesDisabledRow
-// Dependencies: [32, 19, 17, 9669, 7683, 1372, 1891, 8945, 676, 21, 4285, 1236, 1974, 8371, 4281, 5360, 8368, 11663, 589, 12, 8047, 8045, 4253, 11146, 1988, 3985, 9604, 5743, 1297, 16628, 5635, 2]
+// Dependencies: [32, 19, 17, 9685, 7700, 1372, 1891, 8962, 676, 21, 4302, 1236, 1974, 8388, 4298, 5379, 8385, 11678, 589, 12, 8064, 8062, 4270, 11161, 1988, 4002, 9620, 5762, 1297, 16648, 5654, 2]
 // Exports: default
 
-// Module 16627 (InvitesDisabledRow)
+// Module 16647 (InvitesDisabledRow)
 import _slicedToArray from "_slicedToArray";
 import apply from "apply";
 import get_ActivityIndicator from "useInvitesDisabledPermission";
@@ -230,7 +230,7 @@ export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
     obj[0] = stateFromStores;
     obj[1] = tmp5;
     obj[2] = guildId.contentContainerStyle;
-    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5635).NavScrim, {})];
+    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5654).NavScrim, {})];
     obj[0] = items1;
     tmp6 = callback2(closure_13, obj);
   }

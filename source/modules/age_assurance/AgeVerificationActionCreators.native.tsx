@@ -1,9 +1,9 @@
-// Module ID: 7720
-// Function ID: 7721
+// Module ID: 7737
+// Function ID: 7738
 // Name: openIncodeAgeVerificationModal
-// Dependencies: [5, 1903, 7721, 7723, 4497, 7702, 21, 4842, 4490, 7724, 1988, 7707, 1605, 4625, 7741, 7742, 7743, 4500, 3963, 709, 7744, 7745, 7873, 7874, 3981, 2]
+// Dependencies: [5, 1903, 7738, 7740, 4514, 7719, 21, 4859, 4507, 7741, 1988, 7724, 1605, 4642, 7758, 7759, 7760, 4517, 3980, 709, 7761, 7762, 7890, 7891, 3998, 2]
 
-// Module 7720 (openIncodeAgeVerificationModal)
+// Module 7737 (openIncodeAgeVerificationModal)
 import SafetyToastType from "SafetyToastType";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import set from "set";
@@ -52,13 +52,13 @@ function openIncodeAgeVerificationModal(arg0) {
       let closure_1 = tmp3;
       let closure_0 = tmp3;
       let dependencyMap = 1;
-      yield outer1_1(4842).requestPermission(outer1_10.CAMERA, { showAuthorizationError: true });
+      yield outer1_1(4859).requestPermission(outer1_10.CAMERA, { showAuthorizationError: true });
       if (1 === tmp7) {
         dependencyMap = 0;
-        outer1_1(7707).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
+        outer1_1(7724).showFailedToast(outer1_11.TIGGER_PAWTECT_ERROR);
         outer1_0();
         let c4 = 3;
-        const obj5 = outer1_1(7707);
+        const obj5 = outer1_1(7724);
       } else if (2 === tmp7) {
         if (arg0 === 1) {
           c4 = 3;
@@ -70,7 +70,7 @@ function openIncodeAgeVerificationModal(arg0) {
           obj2[0] = arg1;
           return obj2;
         } else {
-          const obj1 = outer1_1(4490);
+          const obj1 = outer1_1(4507);
           const v0 = 3;
           c4 = 1;
           const obj3 = { value: null, done: false };
@@ -150,14 +150,14 @@ export default {
     let currentUser;
     let obj = entryPoint(1605);
     if (obj.isMetaQuest()) {
-      let tmpResult = tmp(4625);
-      tmpResult.openAlert(closure_7, jsx(onClose(7741), {}), onClose);
+      let tmpResult = tmp(4642);
+      tmpResult.openAlert(closure_7, jsx(onClose(7758), {}), onClose);
     } else {
-      tmpResult = tmp(4500);
+      tmpResult = tmp(4517);
       let isAgeVerifiedResult = tmpResult.isAgeVerified();
       if (isAgeVerifiedResult) {
-        isAgeVerifiedResult = tmp(3963).hasAgeGatedFeatures();
-        const tmpResult1 = tmp(3963);
+        isAgeVerifiedResult = tmp(3980).hasAgeGatedFeatures();
+        const tmpResult1 = tmp(3980);
       }
       dependencyMap = isAgeVerifiedResult;
       if (tmpResult2.isAgeVerificationIncodeEnabled(entryPoint)) {
@@ -191,7 +191,7 @@ export default {
         }
       } else {
         if (tmpResult3.isExpressiveModalV2Enabled(entryPoint)) {
-          onClose(4490).pushLazy(prop(function*() {
+          onClose(4507).pushLazy(prop(function*() {
             let closure_0 = tmp2;
             yield outer1_0(paths[10])(paths[21], paths.paths);
             closure_0 = arg1.default;
@@ -206,24 +206,24 @@ export default {
               }
             });
           }), {}, closure_6);
-          const obj8 = onClose(4490);
+          const obj8 = onClose(4507);
         } else {
-          currentUser = tmp(7873).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-          const tmpResult4 = tmp(7873);
-          onClose(4490).pushLazy(prop(function*() {
+          currentUser = tmp(7890).isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
+          const tmpResult4 = tmp(7890);
+          onClose(4507).pushLazy(prop(function*() {
             let closure_0 = tmp2;
             yield outer1_0(paths[10])(paths[23], paths.paths);
             closure_0 = arg1.default;
             return () => outer2_12(closure_0, { entryPoint: closure_0, isRetry: c2, useEmbeddedMethods: outer1_4 });
           }), {}, closure_6);
-          const obj7 = onClose(4490);
+          const obj7 = onClose(4507);
         }
-        tmpResult3 = tmp(7744);
+        tmpResult3 = tmp(7761);
       }
-      tmpResult2 = tmp(7742);
+      tmpResult2 = tmp(7759);
     }
   },
   openUrl(arg0) {
-    importDefault(3981).openURL(arg0);
+    importDefault(3998).openURL(arg0);
   }
 };

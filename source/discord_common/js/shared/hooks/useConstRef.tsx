@@ -1,10 +1,10 @@
-// Module ID: 7077
-// Function ID: 7078
+// Module ID: 7096
+// Function ID: 7097
 // Name: useConstRef
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 7077 (useConstRef)
+// Module 7096 (useConstRef)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useConstRef.tsx");

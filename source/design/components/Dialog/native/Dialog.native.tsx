@@ -1,10 +1,10 @@
-// Module ID: 4677
-// Function ID: 4678
+// Module ID: 4694
+// Function ID: 4695
 // Name: Dialog
-// Dependencies: [19, 17, 21, 4678, 2]
+// Dependencies: [19, 17, 21, 4695, 2]
 // Exports: Dialog
 
-// Module 4677 (Dialog)
+// Module 4694 (Dialog)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -26,5 +26,5 @@ export const Dialog = function Dialog(dialogKey) {
   }
   obj[3] = dialogKey;
   const merged1 = Object.assign(merged);
-  return jsx(require(4678) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss, nativeID: null });
+  return jsx(require(4695) /* AccessibilityView */.AccessibilityView, { style: items, accessibilityViewIsModal: true, onAccessibilityEscape: onDismiss, nativeID: null });
 };

@@ -264,7 +264,7 @@ class FeedbackWidget {
                 fileName = undefined;
                 uri = undefined;
                 if (uri._hasScreenshot()) {
-                  debug.setState({ filename: "Button", attachment: "sa", attachmentUri: "Array" });
+                  debug.setState({ filename: "sa", attachment: "isArray", attachmentUri: "isArray" });
                 } else {
                   num2 = debug.props.imagePicker;
                   if (num2) {
@@ -506,7 +506,7 @@ class FeedbackWidget {
       tmp4Result._savedState = Object.assign({}, tmp4Result.state);
     };
     tmp4Result._clearFormState = () => {
-      closure_0._savedState = { name: "", email: "", description: "", filename: "accessible", attachment: "HTTP", attachmentUri: "push" };
+      closure_0._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "sa", attachmentUri: "isArray" };
     };
     tmp4Result._hasScreenshot = () => undefined !== tmp4Result.state.filename && undefined !== tmp4Result.state.attachment && undefined !== tmp4Result.state.attachmentUri;
     tmp4Result._getUser = () => {
@@ -850,12 +850,12 @@ let items = [
 obj = {
   key: "reset",
   value: function reset() {
-    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "accessible", attachment: "HTTP", attachmentUri: "push" };
+    FeedbackWidget._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "sa", attachmentUri: "isArray" };
   }
 };
 const items1 = [obj];
 const importDefaultResultResult = importDefaultResult(FeedbackWidget, items, items1);
 importDefaultResultResult.defaultProps = require("module_1201").defaultConfiguration;
-importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "accessible", attachment: "HTTP", attachmentUri: "push" };
+importDefaultResultResult._savedState = { name: "", email: "", description: "", filename: "Boolean", attachment: "sa", attachmentUri: "isArray" };
 
 export const FeedbackWidget = importDefaultResultResult;

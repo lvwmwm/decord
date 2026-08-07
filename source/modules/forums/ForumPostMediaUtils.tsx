@@ -1,10 +1,10 @@
-// Module ID: 8328
-// Function ID: 8329
+// Module ID: 8345
+// Function ID: 8346
 // Name: isMediaAttachment
-// Dependencies: [19, 5843, 1372, 4502, 1903, 676, 4472, 3957, 1384, 1467, 1351, 4506, 1935, 4511, 11, 2]
+// Dependencies: [19, 5862, 1372, 4519, 1903, 676, 4489, 3974, 1384, 1467, 1351, 4523, 1935, 4528, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 8328 (isMediaAttachment)
+// Module 8345 (isMediaAttachment)
 import noop from "noop";
 import updateState from "updateState";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -21,7 +21,7 @@ function isMediaAttachment(filename) {
   let flag = false;
   if (null != filename) {
     ({ height, width } = filename);
-    let tmp3 = require(4472) /* urlMatchesFileExtension */.isImageFile(filename.filename) && null != height;
+    let tmp3 = require(4489) /* urlMatchesFileExtension */.isImageFile(filename.filename) && null != height;
     if (tmp3) {
       tmp3 = height > 0;
     }
@@ -32,15 +32,15 @@ function isMediaAttachment(filename) {
       tmp3 = width > 0;
     }
     flag = tmp3;
-    const obj = require(4472) /* urlMatchesFileExtension */;
+    const obj = require(4489) /* urlMatchesFileExtension */;
   }
   if (!flag) {
     let tmp4 = null != filename;
     if (tmp4) {
       let isVideoFileResult = null != filename;
       if (isVideoFileResult) {
-        isVideoFileResult = require(4472) /* urlMatchesFileExtension */.isVideoFile(filename.filename);
-        const obj2 = require(4472) /* urlMatchesFileExtension */;
+        isVideoFileResult = require(4489) /* urlMatchesFileExtension */.isVideoFile(filename.filename);
+        const obj2 = require(4489) /* urlMatchesFileExtension */;
       }
       if (isVideoFileResult) {
         isVideoFileResult = null != filename.proxy_url;
@@ -54,7 +54,7 @@ function isMediaAttachment(filename) {
 function getForumPostMedia(attachments, InlineAttachmentMedia) {
   let setting = InlineAttachmentMedia;
   if (InlineAttachmentMedia === undefined) {
-    InlineAttachmentMedia = require(3957) /* explicitContentFromProto */.InlineAttachmentMedia;
+    InlineAttachmentMedia = require(3974) /* explicitContentFromProto */.InlineAttachmentMedia;
     setting = InlineAttachmentMedia.getSetting();
   }
   if (setting) {
@@ -149,9 +149,9 @@ function getForumPostMedia(attachments, InlineAttachmentMedia) {
 }
 function useForumPostEmbeds(embeds, flag) {
   const _require = flag;
-  const InlineEmbedMedia = _require(3957).InlineEmbedMedia;
+  const InlineEmbedMedia = _require(3974).InlineEmbedMedia;
   const setting = InlineEmbedMedia.useSetting();
-  const RenderEmbeds = _require(3957).RenderEmbeds;
+  const RenderEmbeds = _require(3974).RenderEmbeds;
   if (null == embeds) {
     return [];
   } else {
@@ -228,9 +228,9 @@ function useForumPostEmbeds(embeds, flag) {
   }
 }
 function useForumPostMediaProperties(firstResult, flag) {
-  const InlineAttachmentMedia = require(3957) /* explicitContentFromProto */.InlineAttachmentMedia;
+  const InlineAttachmentMedia = require(3974) /* explicitContentFromProto */.InlineAttachmentMedia;
   const items = [...getForumPostMedia(firstResult, InlineAttachmentMedia.useSetting()), ...useForumPostEmbeds(firstResult, flag)];
-  const InlineEmbedMedia = require(3957) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = require(3974) /* explicitContentFromProto */.InlineEmbedMedia;
   if (null == firstResult) {
     let items1 = [];
   } else {
@@ -238,10 +238,10 @@ function useForumPostMediaProperties(firstResult, flag) {
     if (tmp4) {
       if (null != components) {
         const _Array = Array;
-        const tmpResult = tmp(4506);
-        const flattenComponentsResult = tmp(4506).flattenComponents(components);
-        const arr = Array.from(tmp(4506).flattenComponents(components).values());
-        items1 = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const tmpResult = tmp(4523);
+        const flattenComponentsResult = tmp(4523).flattenComponents(components);
+        const arr = Array.from(tmp(4523).flattenComponents(components).values());
+        items1 = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -326,7 +326,7 @@ function useForumPostMediaProperties(firstResult, flag) {
             return null;
           }
         }).filter(tmp(1351).isNotNullish);
-        const flatMapResult = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const flatMapResult = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -441,7 +441,7 @@ export const isValidImageAttachment = function isValidImageAttachment(filename) 
     return false;
   } else {
     ({ height, width } = filename);
-    let tmp3 = require(4472) /* urlMatchesFileExtension */.isImageFile(filename.filename) && null != height;
+    let tmp3 = require(4489) /* urlMatchesFileExtension */.isImageFile(filename.filename) && null != height;
     if (tmp3) {
       tmp3 = height > 0;
     }
@@ -459,8 +459,8 @@ export const isValidVideoAttachment = function isValidVideoAttachment(filename) 
   if (tmp) {
     let isVideoFileResult = null != filename;
     if (isVideoFileResult) {
-      isVideoFileResult = require(4472) /* urlMatchesFileExtension */.isVideoFile(filename.filename);
-      const obj = require(4472) /* urlMatchesFileExtension */;
+      isVideoFileResult = require(4489) /* urlMatchesFileExtension */.isVideoFile(filename.filename);
+      const obj = require(4489) /* urlMatchesFileExtension */;
     }
     if (isVideoFileResult) {
       isVideoFileResult = null != filename.proxy_url;
@@ -473,7 +473,7 @@ export { isMediaAttachment };
 export const ForumPostMediaTypes = obj;
 export { getForumPostMedia };
 export const useForumPostComponentsMedia = function useForumPostComponentsMedia(components) {
-  const InlineEmbedMedia = require(3957) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = require(3974) /* explicitContentFromProto */.InlineEmbedMedia;
   if (null == components) {
     return [];
   } else {
@@ -481,10 +481,10 @@ export const useForumPostComponentsMedia = function useForumPostComponentsMedia(
     if (tmp3) {
       if (null != components) {
         const _Array = Array;
-        const tmpResult = tmp(4506);
-        const flattenComponentsResult = tmp(4506).flattenComponents(components);
-        const arr = Array.from(tmp(4506).flattenComponents(components).values());
-        let found = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const tmpResult = tmp(4523);
+        const flattenComponentsResult = tmp(4523).flattenComponents(components);
+        const arr = Array.from(tmp(4523).flattenComponents(components).values());
+        let found = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -569,7 +569,7 @@ export const useForumPostComponentsMedia = function useForumPostComponentsMedia(
             return null;
           }
         }).filter(tmp(1351).isNotNullish);
-        const flatMapResult = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const flatMapResult = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -691,9 +691,9 @@ export const useForumPostMediaThumbnail = function useForumPostMediaThumbnail(fi
 };
 export { useForumPostMediaProperties };
 export const useFindFirstMediaProperties = function useFindFirstMediaProperties(firstMessage, hasSpoilerEmbeds) {
-  const InlineAttachmentMedia = require(3957) /* explicitContentFromProto */.InlineAttachmentMedia;
+  const InlineAttachmentMedia = require(3974) /* explicitContentFromProto */.InlineAttachmentMedia;
   const tmp3 = getForumPostMedia(firstMessage, InlineAttachmentMedia.useSetting());
-  const InlineEmbedMedia = require(3957) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = require(3974) /* explicitContentFromProto */.InlineEmbedMedia;
   if (null == firstMessage) {
     let items = [];
   } else {
@@ -701,10 +701,10 @@ export const useFindFirstMediaProperties = function useFindFirstMediaProperties(
     if (tmp5) {
       if (null != components) {
         const _Array = Array;
-        const tmpResult = tmp(4506);
-        const flattenComponentsResult = tmp(4506).flattenComponents(components);
-        const arr = Array.from(tmp(4506).flattenComponents(components).values());
-        items = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const tmpResult = tmp(4523);
+        const flattenComponentsResult = tmp(4523).flattenComponents(components);
+        const arr = Array.from(tmp(4523).flattenComponents(components).values());
+        items = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -789,7 +789,7 @@ export const useFindFirstMediaProperties = function useFindFirstMediaProperties(
             return null;
           }
         }).filter(tmp(1351).isNotNullish);
-        const flatMapResult = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const flatMapResult = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -891,9 +891,9 @@ export const useFindFirstMediaProperties = function useFindFirstMediaProperties(
   return first;
 };
 export const useFirstMediaIsEmbed = function useFirstMediaIsEmbed(firstMessage, hasSpoilerEmbeds) {
-  const InlineAttachmentMedia = require(3957) /* explicitContentFromProto */.InlineAttachmentMedia;
+  const InlineAttachmentMedia = require(3974) /* explicitContentFromProto */.InlineAttachmentMedia;
   const tmp3 = getForumPostMedia(firstMessage, InlineAttachmentMedia.useSetting());
-  const InlineEmbedMedia = require(3957) /* explicitContentFromProto */.InlineEmbedMedia;
+  const InlineEmbedMedia = require(3974) /* explicitContentFromProto */.InlineEmbedMedia;
   if (null == firstMessage) {
     let items = [];
   } else {
@@ -901,10 +901,10 @@ export const useFirstMediaIsEmbed = function useFirstMediaIsEmbed(firstMessage, 
     if (tmp5) {
       if (null != components) {
         const _Array = Array;
-        let tmpResult = tmp(4506);
-        const flattenComponentsResult = tmp(4506).flattenComponents(components);
-        const arr = Array.from(tmp(4506).flattenComponents(components).values());
-        items = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        let tmpResult = tmp(4523);
+        const flattenComponentsResult = tmp(4523).flattenComponents(components);
+        const arr = Array.from(tmp(4523).flattenComponents(components).values());
+        items = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -989,7 +989,7 @@ export const useFirstMediaIsEmbed = function useFirstMediaIsEmbed(firstMessage, 
             return null;
           }
         }).filter(tmp(1351).isNotNullish);
-        const flatMapResult = Array.from(tmp(4506).flattenComponents(components).values()).flatMap((type) => {
+        const flatMapResult = Array.from(tmp(4523).flattenComponents(components).values()).flatMap((type) => {
           let height;
           let media;
           let spoiler;
@@ -1111,7 +1111,7 @@ export const shouldShowAddMediaToOriginalPostModal = function shouldShowAddMedia
             let flag = false;
             if (null != filename) {
               ({ height, width } = filename);
-              let tmp3 = callback(4472).isImageFile(filename.filename) && null != height;
+              let tmp3 = callback(4489).isImageFile(filename.filename) && null != height;
               if (tmp3) {
                 tmp3 = height > 0;
               }
@@ -1122,15 +1122,15 @@ export const shouldShowAddMediaToOriginalPostModal = function shouldShowAddMedia
                 tmp3 = width > 0;
               }
               flag = tmp3;
-              const obj = callback(4472);
+              const obj = callback(4489);
             }
             if (!flag) {
               let tmp4 = null != filename;
               if (tmp4) {
                 let isVideoFileResult = null != filename;
                 if (isVideoFileResult) {
-                  isVideoFileResult = callback(4472).isVideoFile(filename.filename);
-                  const obj2 = callback(4472);
+                  isVideoFileResult = callback(4489).isVideoFile(filename.filename);
+                  const obj2 = callback(4489);
                 }
                 if (isVideoFileResult) {
                   isVideoFileResult = null != filename.proxy_url;

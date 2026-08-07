@@ -1,10 +1,10 @@
-// Module ID: 4686
-// Function ID: 4687
+// Module ID: 4703
+// Function ID: 4704
 // Name: useVisualEffectViewOverrides
 // Dependencies: [644, 705, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 4686 (useVisualEffectViewOverrides)
+// Module 4703 (useVisualEffectViewOverrides)
 import keys from "keys";
 
 let closure_2 = {};

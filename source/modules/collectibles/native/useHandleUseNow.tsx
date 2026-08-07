@@ -1,10 +1,10 @@
-// Module ID: 10048
-// Function ID: 10049
+// Module ID: 10064
+// Function ID: 10065
 // Name: useHandleUseNow
-// Dependencies: [19, 9492, 4253, 4490, 4136, 3985, 1236, 10049, 10052, 2]
+// Dependencies: [19, 9509, 4270, 4507, 4153, 4002, 1236, 10065, 10068, 2]
 // Exports: useHandleUseNow
 
-// Module 10048 (useHandleUseNow)
+// Module 10064 (useHandleUseNow)
 import noop from "noop";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 
@@ -38,16 +38,16 @@ export const useHandleUseNow = function useHandleUseNow(onSuccess) {
     }
   }, items);
   const callback1 = React.useCallback(() => {
-    let obj = _undefined(3985);
+    let obj = _undefined(4002);
     obj = { key: "collectible shop apply error", content: null };
     const intl = onSuccess(1236).intl;
     obj[1] = intl.string(onSuccess(1236).t.CKsXk3);
     obj.open(obj);
   }, []);
-  let obj = onSuccess(10049);
+  let obj = onSuccess(10065);
   handleUseNow = obj.useHandleUseNow({ product, onSuccess: callback, onError: callback1 });
   ({ handleUseNow, isApplying, canUseNow } = handleUseNow);
-  const tmp4 = importDefault(10052)({ analyticsLocations });
+  const tmp4 = importDefault(10068)({ analyticsLocations });
   importDefault = tmp4;
   obj = {
     handleUseNow,

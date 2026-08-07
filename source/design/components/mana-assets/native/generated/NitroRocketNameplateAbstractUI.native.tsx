@@ -1,10 +1,10 @@
-// Module ID: 6487
-// Function ID: 6488
+// Module ID: 6506
+// Function ID: 6507
 // Name: NitroRocketNameplateAbstractUI
-// Dependencies: [21, 5251, 6488, 2]
+// Dependencies: [21, 5267, 6507, 2]
 // Exports: NitroRocketNameplateAbstractUI
 
-// Module 6487 (NitroRocketNameplateAbstractUI)
+// Module 6506 (NitroRocketNameplateAbstractUI)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/NitroRocketNameplateAbstractUI.native.tsx");
@@ -28,7 +28,7 @@ export const NitroRocketNameplateAbstractUI = function NitroRocketNameplateAbstr
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6488);
+  obj[0] = importDefault(6507);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroRocketNameplateAbstractUI = function NitroRocketNameplateAbstr
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

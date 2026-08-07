@@ -1,9 +1,9 @@
-// Module ID: 10632
-// Function ID: 10633
+// Module ID: 10629
+// Function ID: 10630
 // Name: map
-// Dependencies: [1218, 1372, 4376, 4356, 4301, 676, 3, 4360, 698, 2]
+// Dependencies: [1218, 1372, 4393, 4373, 4318, 676, 3, 4377, 698, 2]
 
-// Module 10632 (map)
+// Module 10629 (map)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
@@ -25,8 +25,8 @@ class VideoSpinnerTimer {
 const prototype = VideoSpinnerTimer.prototype;
 prototype["onSpinnerStarted"] = function onSpinnerStarted() {
   if (null == this.spinnerVisibleStart) {
-    tmp.spinnerVisibleStart = require(4360) /* sleep */.now();
-    const obj = require(4360) /* sleep */;
+    tmp.spinnerVisibleStart = require(4377) /* sleep */.now();
+    const obj = require(4377) /* sleep */;
   }
 };
 prototype["trackSpinnerDuration"] = function trackSpinnerDuration(videoSpinnerContext, userId, arg2) {
@@ -38,7 +38,7 @@ prototype["trackSpinnerDuration"] = function trackSpinnerDuration(videoSpinnerCo
     }
     const sum = num + 1;
     const result = map.set(arg2, sum);
-    let obj = require(4360) /* sleep */;
+    let obj = require(4377) /* sleep */;
     const diff = obj.now() - self.spinnerVisibleStart;
     self.spinnerVisibleStart = null;
     if (diff < 0) {

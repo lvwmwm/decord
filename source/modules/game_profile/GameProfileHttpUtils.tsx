@@ -1,10 +1,10 @@
-// Module ID: 9258
-// Function ID: 9259
+// Module ID: 9275
+// Function ID: 9276
 // Name: _getShopCollection
-// Dependencies: [5, 1975, 9197, 676, 9259, 709, 4522, 530, 589, 584, 687, 9253, 2]
+// Dependencies: [5, 1975, 9214, 676, 9276, 709, 4539, 530, 589, 584, 687, 9270, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9258 (_getShopCollection)
+// Module 9275 (_getShopCollection)
 import dispatcher from "dispatcher";
 import _getSystemLocale from "_getSystemLocale";
 import importDefaultResult from "getSimilarGames";
@@ -198,7 +198,7 @@ function _getGameAnnouncements() {
         const obj6 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS", gameId: null, messages: null, channelId: null, guildId: null };
         obj6[1] = callback;
         const obj9 = body(709);
-        obj6[2] = callback(9253).toAnnouncementMessages(body.messages);
+        obj6[2] = callback(9270).toAnnouncementMessages(body.messages);
         const channel_id = body.channel_id;
         let dependencyMap = channel_id;
         if (channel_id == null) {
@@ -213,7 +213,7 @@ function _getGameAnnouncements() {
         obj6[4] = c3;
         obj9.dispatch(obj6);
         c7 = 0;
-        const obj11 = callback(9253);
+        const obj11 = callback(9270);
       }
       c7 = 0;
       return body;

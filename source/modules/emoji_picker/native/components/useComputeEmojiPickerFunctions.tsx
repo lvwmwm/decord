@@ -1,10 +1,10 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 8618
+// Function ID: 8619
 // Name: _computeCategories
-// Dependencies: [32, 19, 5162, 8563, 8602, 3925, 12, 8564, 1970, 2]
+// Dependencies: [32, 19, 5179, 8580, 8619, 3942, 12, 8581, 1970, 2]
 // Exports: default
 
-// Module 8601 (_computeCategories)
+// Module 8618 (_computeCategories)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import EmojiCategoryTypes from "EmojiCategoryTypes";
@@ -95,7 +95,7 @@ function _computeCategories(arg0) {
       } else {
         let tmp26 = require;
         let tmp27 = dependencyMap;
-        obj6 = require(8602) /* GuildNSFWContentLevel */;
+        obj6 = require(8619) /* GuildNSFWContentLevel */;
         let tmp28 = guild;
         if (obj6.shouldNSFWGateGuild(guild.id)) {
           let obj7 = { type: null, label: null, footer: null, emojis: null, isSectionNitroLocked: null };
@@ -132,7 +132,7 @@ function _computeCategories(arg0) {
     } else if (tmp3.UNICODE === type) {
       let tmp60 = importDefault;
       let tmp61 = dependencyMap;
-      let obj19 = importDefault(3925);
+      let obj19 = importDefault(3942);
       let tmp62 = nextResult;
       let byCategory = obj19.getByCategory(tmp2.name);
       if (isNativeEmojiPickerEnabled) {
@@ -241,7 +241,7 @@ function _computeSearchResults(emojis) {
   const obj1 = { type: constants3.EMOJI, emojis: substr1, emojisDisabled: set1, label: null, footer: null };
   const set = new Set();
   const tmp2 = pushCategory;
-  obj1[3] = require(8564) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
+  obj1[3] = require(8581) /* initializeSearch */.getStringForEmojiCategory(constants.PREMIUM_UPSELL);
   obj1[4] = constants2.PREMIUM_UPSELL;
   obj[1] = obj1;
   obj[2] = rowSize;

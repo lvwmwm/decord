@@ -1,20 +1,20 @@
-// Module ID: 4982
-// Function ID: 4983
+// Module ID: 4999
+// Function ID: 5000
 // Name: items1
-// Dependencies: [4312, 2]
+// Dependencies: [4329, 2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 4982 (items1)
+// Module 4999 (items1)
 let obj = { RIOT_GAMES: "1443033465766281327", BATTLENET: "1356665549089800303" };
 obj = {
   applicationId: obj.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4312) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4329) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4312) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4329) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   }
@@ -23,12 +23,12 @@ const items = [obj];
 obj = {
   applicationId: obj.RIOT_GAMES,
   getMigrationExperimentEnabled(location) {
-    let obj = require(4312) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4329) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.getIsRiotSocialSDKMigrationEnabled(obj);
   },
   useMigrationExperimentEnabled(location) {
-    let obj = require(4312) /* useIsRiotSocialSDKMigrationEnabled */;
+    let obj = require(4329) /* useIsRiotSocialSDKMigrationEnabled */;
     obj = { location };
     return obj.useIsRiotSocialSDKMigrationEnabled(obj);
   }
@@ -38,11 +38,11 @@ const items1 = [
   {
     applicationId: obj.BATTLENET,
     getMigrationExperimentEnabled(location) {
-      const battlenetSocialSDKMigrationExperiment = require(4312) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+      const battlenetSocialSDKMigrationExperiment = require(4329) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
       return battlenetSocialSDKMigrationExperiment.getConfig({ location }).enabled;
     },
     useMigrationExperimentEnabled(location) {
-      const battlenetSocialSDKMigrationExperiment = require(4312) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+      const battlenetSocialSDKMigrationExperiment = require(4329) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
       return battlenetSocialSDKMigrationExperiment.useConfig({ location }).enabled;
     }
   }
@@ -51,12 +51,12 @@ const items2 = [
   {
     applicationId: obj.RIOT_GAMES,
     getMigrationExperimentEnabled(location) {
-      let obj = require(4312) /* useIsRiotSocialSDKMigrationEnabled */;
+      let obj = require(4329) /* useIsRiotSocialSDKMigrationEnabled */;
       obj = { location };
       return obj.getIsRiotSocialSDKMigrationEnabled(obj);
     },
     useMigrationExperimentEnabled(location) {
-      let obj = require(4312) /* useIsRiotSocialSDKMigrationEnabled */;
+      let obj = require(4329) /* useIsRiotSocialSDKMigrationEnabled */;
       obj = { location };
       return obj.useIsRiotSocialSDKMigrationEnabled(obj);
     }
@@ -64,11 +64,11 @@ const items2 = [
   {
     applicationId: obj.BATTLENET,
     getMigrationExperimentEnabled(location) {
-      const battlenetSocialSDKMigrationExperiment = require(4312) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+      const battlenetSocialSDKMigrationExperiment = require(4329) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
       return battlenetSocialSDKMigrationExperiment.getConfig({ location }).enabled;
     },
     useMigrationExperimentEnabled(location) {
-      const battlenetSocialSDKMigrationExperiment = require(4312) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
+      const battlenetSocialSDKMigrationExperiment = require(4329) /* useIsRiotSocialSDKMigrationEnabled */.battlenetSocialSDKMigrationExperiment;
       return battlenetSocialSDKMigrationExperiment.useConfig({ location }).enabled;
     }
   }

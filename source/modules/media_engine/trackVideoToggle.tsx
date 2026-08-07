@@ -1,10 +1,10 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13024
+// Function ID: 13025
 // Name: trackVideoToggle
-// Dependencies: [676, 13004, 698, 2]
+// Dependencies: [676, 13018, 698, 2]
 // Exports: default, setVideoToggleAnalyticsParams
 
-// Module 13010 (trackVideoToggle)
+// Module 13024 (trackVideoToggle)
 import { AnalyticEvents } from "ME";
 
 const result = require("expandEventProperties").fileFinishedImporting("modules/media_engine/trackVideoToggle.tsx");
@@ -14,7 +14,7 @@ export default function trackVideoToggle(toggled_user_id, video_toggle_reason) {
   let backoffTimeSec;
   let fpsThreshold;
   let windowLength;
-  const defaultConfig = require(13004) /* calculateFps */.VideoHealthManager.defaultConfig;
+  const defaultConfig = require(13018) /* calculateFps */.VideoHealthManager.defaultConfig;
   const featureEnabled = defaultConfig.featureEnabled;
   ({ windowLength, allowedPoorFpsRatio, fpsThreshold, backoffTimeSec } = defaultConfig);
   let obj = importDefault(698);

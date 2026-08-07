@@ -1,10 +1,10 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15691
+// Function ID: 15692
 // Name: useSearchMessagesLoadingState
-// Dependencies: [5820, 11629, 8320, 15622, 589, 11630, 2]
+// Dependencies: [5839, 11644, 8337, 15646, 589, 11645, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 15667 (useSearchMessagesLoadingState)
+// Module 15691 (useSearchMessagesLoadingState)
 import handleReaction from "handleReaction";
 import prototype from "prototype";
 import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "MessageEmbedTypes";
@@ -20,8 +20,8 @@ export const useSearchMessagesLoadingState = function useSearchMessagesLoadingSt
   ({ searchContext: require, tab: dependencyMap } = arg0);
   let handleReaction;
   ({ placeholderHeight, numColumns } = arg0);
-  handleReaction = require(15622) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
-  let obj = require(15622) /* useFullscreenPlaceholderCount */;
+  handleReaction = require(15646) /* useFullscreenPlaceholderCount */.useFullscreenPlaceholderCount({ placeholderHeight, numColumns });
+  let obj = require(15646) /* useFullscreenPlaceholderCount */;
   const items = [prototype, handleReaction];
   return require(589) /* initialize */.useStateFromStoresObject(items, () => {
     let obj = outer1_0(outer1_1[5]);

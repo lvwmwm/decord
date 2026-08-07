@@ -1,10 +1,10 @@
-// Module ID: 10172
-// Function ID: 10173
+// Module ID: 10188
+// Function ID: 10189
 // Name: useShareChatInputActions
-// Dependencies: [32, 19, 1906, 8560, 2]
+// Dependencies: [32, 19, 1906, 8577, 2]
 // Exports: useShareChatInputActions
 
-// Module 10172 (useShareChatInputActions)
+// Module 10188 (useShareChatInputActions)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { EmojiIntention } from "set";

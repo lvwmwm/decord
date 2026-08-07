@@ -1,10 +1,10 @@
-// Module ID: 8910
-// Function ID: 8911
+// Module ID: 8927
+// Function ID: 8928
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 1372, 3912, 6906, 1378, 676, 21, 4285, 1236, 8868, 589, 1480, 8911, 8890, 4281, 4695, 1872, 8864, 3997, 8888, 8942, 3866, 8943, 8944, 2]
+// Dependencies: [32, 19, 1372, 3929, 6925, 1378, 676, 21, 4302, 1236, 8885, 589, 1480, 8928, 8907, 4298, 4712, 1872, 8881, 4014, 8905, 8959, 3883, 8960, 8961, 2]
 // Exports: default
 
-// Module 8910 (EditGuildEventWhere)
+// Module 8927 (EditGuildEventWhere)
 import _slicedToArray from "_slicedToArray";
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -122,7 +122,7 @@ export default function EditGuildEventWhere(guild) {
               const error1 = new Error(intl2.string(tmp3(1236).t.q91szp));
               throw error1;
             }
-            obj = callback(8868);
+            obj = callback(8885);
           }
           if (null == tmp) {
             if (entityType !== tmp2.EXTERNAL) {
@@ -161,7 +161,7 @@ export default function EditGuildEventWhere(guild) {
       entityType: guildEvent.entityType,
       onChange(entityType) {
         _undefined(null);
-        const obj = { entityType, scheduledEndTime: "r" };
+        const obj = { entityType, scheduledEndTime: "a" };
         if (entityType === outer1_10.EXTERNAL) {
           let obj2 = guildEvent(ref[22])(guildEvent.scheduledStartTime);
           if (obj2 == null) {
@@ -185,7 +185,7 @@ export default function EditGuildEventWhere(guild) {
     entityType: guildEvent.entityType,
     onChange(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "r" };
+      const obj = { entityType, scheduledEndTime: "a" };
       if (entityType === outer1_10.EXTERNAL) {
         let obj2 = guildEvent(ref[22])(guildEvent.scheduledStartTime);
         if (obj2 == null) {

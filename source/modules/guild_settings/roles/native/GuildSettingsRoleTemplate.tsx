@@ -1,10 +1,10 @@
-// Module ID: 16594
-// Function ID: 16595
+// Module ID: 16614
+// Function ID: 16615
 // Name: width
-// Dependencies: [32, 19, 17, 4277, 1891, 16590, 676, 21, 4285, 712, 7562, 698, 4479, 7912, 4827, 4281, 13348, 1297, 10955, 4695, 1236, 2]
+// Dependencies: [32, 19, 17, 4294, 1891, 16610, 676, 21, 4302, 712, 7581, 698, 4496, 7929, 4844, 4298, 13362, 1297, 10970, 4712, 1236, 2]
 // Exports: default
 
-// Module 16594 (width)
+// Module 16614 (width)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Button";
@@ -79,7 +79,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   maybeApplyNoTextColorForLightCustomTheme = tmp6[1];
   const tmp8 = callback(ref.useState(closure_18), 2);
   createGuildRecordFromRust = tmp8[1];
-  const tmp2 = importDefault(7562)();
+  const tmp2 = importDefault(7581)();
   [tmp10, c10] = callback(ref.useState(false), 2);
   const effect = ref.useEffect(() => {
     const result = screenReaderEnabled.isScreenReaderEnabled();
@@ -100,7 +100,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
     children: null
   };
   obj = { style: tmp.sliderContainer, children: null };
-  obj = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(7912), obj1) };
+  obj = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: callback2(importDefault(7929), obj1) };
   let items = [callback2(first, obj), ];
   obj1 = {
     maximumValue: values.length - 1,
@@ -273,7 +273,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   obj3[10] = first1;
   obj3[11] = tmp.carousel;
   obj3[12] = !tmp10;
-  items1[1] = tmp14(importDefault(13348), obj3);
+  items1[1] = tmp14(importDefault(13362), obj3);
   obj[2] = items1;
   return tmp12(tmp13, obj);
 };

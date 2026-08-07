@@ -1,10 +1,10 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8261
+// Function ID: 8262
 // Name: useMessagePollInteractions
 // Dependencies: [700, 705, 643, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 8244 (useMessagePollInteractions)
+// Module 8261 (useMessagePollInteractions)
 import identity from "identity";
 
 let closure_3 = {};

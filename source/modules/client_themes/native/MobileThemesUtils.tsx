@@ -1,10 +1,10 @@
-// Module ID: 4218
-// Function ID: 4219
+// Module ID: 4235
+// Function ID: 4236
 // Name: getCustomThemesName
-// Dependencies: [1302, 4219, 1346, 4097, 1236, 2482, 4098, 4220, 589, 1348, 2]
+// Dependencies: [1302, 4236, 1346, 4114, 1236, 2482, 4115, 4237, 589, 1348, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4218 (getCustomThemesName)
+// Module 4235 (getCustomThemesName)
 import handleThemeChange from "handleThemeChange";
 import validateSavedTheme from "validateSavedTheme";
 import reset from "reset";
@@ -26,7 +26,7 @@ export const getCustomBackgroundGradient = function getCustomBackgroundGradient(
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
     const obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = require(4098) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = require(4115) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj[2], customTheme: obj[3] } = customThemeDisplaySettings);
     tmp2 = obj;
@@ -34,12 +34,12 @@ export const getCustomBackgroundGradient = function getCustomBackgroundGradient(
   return tmp2;
 };
 export const useCustomBackgroundGradient = function useCustomBackgroundGradient(base_theme) {
-  let obj = require(4220) /* useCustomThemeDisplaySettings */;
+  let obj = require(4237) /* useCustomThemeDisplaySettings */;
   const customThemeDisplaySettings = obj.useCustomThemeDisplaySettings(base_theme);
   let tmp4 = null;
   if (undefined !== customThemeDisplaySettings) {
     obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = require(4098) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = require(4115) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj2[2], customTheme: obj2[3] } = customThemeDisplaySettings);
     tmp4 = obj;
@@ -79,7 +79,7 @@ export const getAllMobileThemes = function getAllMobileThemes() {
   let tmp2 = null;
   if (undefined !== customThemeDisplaySettings) {
     const obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = require(4098) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = require(4115) /* ClientThemeType */.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj[2], customTheme: obj[3] } = customThemeDisplaySettings);
     tmp2 = obj;
@@ -105,12 +105,12 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   if (null != stateFromStores) {
     tmp4 = stateFromStores;
   }
-  let tmpResult = tmp(4220);
+  let tmpResult = tmp(4237);
   const customThemeDisplaySettings = tmpResult.useCustomThemeDisplaySettings(tmp4);
   let stateFromStores1 = null;
   if (undefined !== customThemeDisplaySettings) {
     obj = { type: null, getName: null, theme: null, customThemeSettings: null };
-    obj[0] = tmp(4098).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
+    obj[0] = tmp(4115).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT;
     obj[1] = getCustomThemesName;
     ({ baseTheme: obj3[2], customTheme: obj3[3] } = customThemeDisplaySettings);
     stateFromStores1 = obj;

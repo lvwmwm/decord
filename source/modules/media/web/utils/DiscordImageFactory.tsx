@@ -1,16 +1,16 @@
-// Module ID: 4881
-// Function ID: 4882
+// Module ID: 4898
+// Function ID: 4899
 // Name: create
-// Dependencies: [4882, 4909, 2]
+// Dependencies: [4899, 4926, 2]
 
-// Module 4881 (create)
+// Module 4898 (create)
 const result = require("set").fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
 const prototype = function DiscordImageFactory() {
   return Object.create(new.target.prototype);
 }.prototype;
 prototype["create"] = function create(byteLength) {
   const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
-  let obj = require(4882) /* detectFile */;
+  let obj = require(4899) /* detectFile */;
   const detectFileResult = obj.detectFile(uint8Array);
   let mimeType;
   if (detectFileResult != null) {
@@ -18,7 +18,7 @@ prototype["create"] = function create(byteLength) {
   }
   obj = null;
   if ("image/png" === mimeType) {
-    const DiscordImagePng = require(4909) /* create */.DiscordImagePng;
+    const DiscordImagePng = require(4926) /* create */.DiscordImagePng;
     obj = DiscordImagePng.create(byteLength);
   }
   return obj;

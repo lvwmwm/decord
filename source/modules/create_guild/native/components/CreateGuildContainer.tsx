@@ -1,10 +1,10 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11638
+// Function ID: 11639
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 1961, 1903, 676, 21, 4285, 5250, 5214, 4841, 11610, 5215, 1411, 9003, 5311, 11624, 2]
+// Dependencies: [5, 32, 19, 1961, 1903, 676, 21, 4302, 5266, 5230, 4858, 11625, 5231, 1411, 9020, 5327, 11639, 2]
 // Exports: default
 
-// Module 11623 (CreateGuildContainer)
+// Module 11638 (CreateGuildContainer)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

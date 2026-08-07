@@ -1,10 +1,10 @@
-// Module ID: 10601
-// Function ID: 10602
+// Module ID: 10598
+// Function ID: 10599
 // Name: useIsViewingActivity
-// Dependencies: [4298, 10591, 4135, 10588, 589, 2]
+// Dependencies: [4315, 10588, 4152, 10585, 589, 2]
 // Exports: useIsViewingActivity
 
-// Module 10601 (useIsViewingActivity)
+// Module 10598 (useIsViewingActivity)
 import getParticipants from "getParticipants";
 
 const require = arg1;
@@ -12,9 +12,9 @@ const result = require("navigationToRootTabHelper").fileFinishedImporting("modul
 
 export const useIsViewingActivity = function useIsViewingActivity(channelId) {
   channelId = channelId.channelId;
-  let tmp = importDefault(10591)(channelId);
-  const isModalOpen = channelId(4135).useIsModalOpen(importDefault(10588));
-  const obj = channelId(4135);
+  let tmp = importDefault(10588)(channelId);
+  const isModalOpen = channelId(4152).useIsModalOpen(importDefault(10585));
+  const obj = channelId(4152);
   const items = [getParticipants];
   const items1 = [channelId];
   const stateFromStores = channelId(589).useStateFromStores(items, () => outer1_3.getChatOpen(channelId), items1);

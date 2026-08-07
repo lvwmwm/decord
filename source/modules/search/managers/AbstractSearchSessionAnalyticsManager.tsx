@@ -1,9 +1,9 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11667
+// Function ID: 11668
 // Name: getSession
-// Dependencies: [514, 11630, 2]
+// Dependencies: [514, 11645, 2]
 
-// Module 11652 (getSession)
+// Module 11667 (getSession)
 let result = require("set").fileFinishedImporting("modules/search/managers/AbstractSearchSessionAnalyticsManager.tsx");
 class AbstractSearchSessionAnalyticsManager {
   constructor() {
@@ -16,14 +16,14 @@ class AbstractSearchSessionAnalyticsManager {
 const prototype = AbstractSearchSessionAnalyticsManager.prototype;
 prototype["getSession"] = function getSession(searchContext) {
   const sessions = this.sessions;
-  let value = sessions.get(require(11630) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  let value = sessions.get(require(11645) /* SearchTokenTypes */.getSearchContextId(searchContext));
   if (value == null) {
     value = null;
   }
   return value;
 };
 prototype["setSession"] = function setSession(searchContext) {
-  let obj = require(11630) /* SearchTokenTypes */;
+  let obj = require(11645) /* SearchTokenTypes */;
   const searchContextId = obj.getSearchContextId(searchContext);
   const sessions = this.sessions;
   let value = sessions.get(searchContextId);
@@ -41,7 +41,7 @@ prototype["setSession"] = function setSession(searchContext) {
 };
 prototype["deleteSession"] = function deleteSession(searchContext) {
   const sessions = this.sessions;
-  sessions.delete(require(11630) /* SearchTokenTypes */.getSearchContextId(searchContext));
+  sessions.delete(require(11645) /* SearchTokenTypes */.getSearchContextId(searchContext));
 };
 prototype["getSessionId"] = function getSessionId(arg0) {
   const session = this.getSession(arg0);
@@ -86,7 +86,7 @@ prototype["transferSession"] = function transferSession(arg0, searchContext) {
   this._transferSession(arg0, searchContext);
   let session = this.getSession(arg0);
   const sessions = this.sessions;
-  let obj = require(11630) /* SearchTokenTypes */;
+  let obj = require(11645) /* SearchTokenTypes */;
   const searchContextId = obj.getSearchContextId(searchContext);
   if (session == null) {
     obj = { sessionId: null, searchQueryId: null };

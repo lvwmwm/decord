@@ -1,10 +1,10 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 10933
+// Function ID: 10934
 // Name: areArraysShallowlyEqual
 // Dependencies: [32, 5, 2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 10918 (areArraysShallowlyEqual)
+// Module 10933 (areArraysShallowlyEqual)
 import _slicedToArray from "_slicedToArray";
 import asyncGeneratorStep from "asyncGeneratorStep";
 

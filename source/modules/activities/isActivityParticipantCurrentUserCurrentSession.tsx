@@ -1,10 +1,10 @@
-// Module ID: 13248
-// Function ID: 13249
+// Module ID: 13262
+// Function ID: 13263
 // Name: isActivityParticipantCurrentUserCurrentSession
 // Dependencies: [1218, 2]
 // Exports: isActivityParticipantCurrentUserCurrentSession
 
-// Module 13248 (isActivityParticipantCurrentUserCurrentSession)
+// Module 13262 (isActivityParticipantCurrentUserCurrentSession)
 import fetchFingerprint from "fetchFingerprint";
 
 const result = require("set").fileFinishedImporting("modules/activities/isActivityParticipantCurrentUserCurrentSession.tsx");

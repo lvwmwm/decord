@@ -1,35 +1,35 @@
-// Module ID: 8606
-// Function ID: 8607
+// Module ID: 8623
+// Function ID: 8624
 // Name: isSoundboardSectionNitroLocked
-// Dependencies: [4737, 8296, 691, 38, 2]
+// Dependencies: [4754, 8313, 691, 38, 2]
 // Exports: getUpsellType, isSoundboardSectionNitroLocked
 
-// Module 8606 (isSoundboardSectionNitroLocked)
+// Module 8623 (isSoundboardSectionNitroLocked)
 const result = require("keys").fileFinishedImporting("modules/premium/roadblocks/native/utils/PremiumFeatureUpsellUtils.tsx");
 
 export const isSoundboardSectionNitroLocked = function isSoundboardSectionNitroLocked(guild_id, categoryInfo) {
-  let tmp = categoryInfo.type === require(4737) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD;
+  let tmp = categoryInfo.type === require(4754) /* SoundButtonOverlay */.SoundboardSoundGridSectionType.GUILD;
   if (tmp) {
     tmp = categoryInfo.guild.id !== guild_id;
   }
   return tmp;
 };
 export const getUpsellType = function getUpsellType(featureName) {
-  if (require(8296) /* EntitlementFeatureNames */.EntitlementFeatureNames.ANIMATED_EMOJIS === featureName) {
+  if (require(8313) /* EntitlementFeatureNames */.EntitlementFeatureNames.ANIMATED_EMOJIS === featureName) {
     return tmp(691).UpsellTypes.ANIMATED_EMOJI;
-  } else if (tmp(8296).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
     return tmp(691).UpsellTypes.GLOBAL_EMOJI;
-  } else if (tmp(8296).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
     return tmp(691).UpsellTypes.UPLOAD;
-  } else if (tmp(8296).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
     return tmp(691).UpsellTypes.SOUNDBOARD;
-  } else if (tmp(8296).EntitlementFeatureNames.CLIENT_THEMES === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.CLIENT_THEMES === featureName) {
     return tmp(691).UpsellTypes.CLIENT_THEMES;
-  } else if (tmp(8296).EntitlementFeatureNames.APP_ICONS === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.APP_ICONS === featureName) {
     return tmp(691).UpsellTypes.APP_ICONS;
-  } else if (tmp(8296).EntitlementFeatureNames.SAVED_MESSAGES === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.SAVED_MESSAGES === featureName) {
     return tmp(691).UpsellTypes.FOR_LATER;
-  } else if (tmp(8296).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
+  } else if (tmp(8313).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
     return tmp(691).UpsellTypes.STREAM_HIGH_QUALITY;
   } else {
     const _HermesInternal = HermesInternal;

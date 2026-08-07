@@ -1,9 +1,9 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7352
+// Function ID: 7353
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 7333 (apexExperiment)
+// Module 7352 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";

@@ -1,10 +1,10 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 14814
+// Function ID: 14815
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [1891, 14796, 676, 589, 2]
+// Dependencies: [1891, 14812, 676, 589, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub, useUserSafetySettingsSelectedGuildId
 
-// Module 14798 (useUserSafetySettingsSelectedGuildId)
+// Module 14814 (useUserSafetySettingsSelectedGuildId)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID";
 import { GuildFeatures } from "ME";

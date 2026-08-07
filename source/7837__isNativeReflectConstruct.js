@@ -1,17 +1,15 @@
 // Module ID: 7837
 // Function ID: 7838
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7838, 7771, 7782]
+// Dependencies: [41, 42, 93, 95, 98, 19, 7791]
 
 // Module 7837 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const Marker = importDefault;
+const FePointLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Marker {
+class FePointLight {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Marker);
+    tmp = _isNativeReflectConstruct(this, FePointLight);
     tmp2 = __esModule;
-    obj = __esModule(Marker);
+    obj = __esModule(FePointLight);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,38 +49,18 @@ class Marker {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Marker, require("_isNativeReflectConstruct"));
+require("_inherits")(FePointLight, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      let children;
-      let markerHeight;
-      let markerWidth;
-      let preserveAspectRatio;
-      let viewBox;
-      const self = this;
-      const props = this.props;
-      let obj = { name: props.id, refX: props.refX, refY: props.refY, markerUnits: props.markerUnits, orient: String(props.orient), markerWidth, markerHeight };
-      ({ viewBox, preserveAspectRatio, markerWidth, markerHeight, children } = props);
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(7771)({ viewBox, preserveAspectRatio }));
-      obj.children = children;
-      return jsx(self(7838), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const result = FePointLight(7791).warnUnimplementedFilter();
+      return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Marker, items);
-importDefaultResultResult.displayName = "Marker";
-importDefaultResultResult.defaultProps = { refX: 0, refY: 0, orient: "0", markerWidth: 3, markerHeight: 3, markerUnits: "strokeWidth" };
+const importDefaultResultResult = importDefaultResult(FePointLight, items);
+importDefaultResultResult.displayName = "FePointLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

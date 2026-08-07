@@ -1,10 +1,10 @@
-// Module ID: 16337
-// Function ID: 16338
+// Module ID: 16363
+// Function ID: 16364
 // Name: getName
-// Dependencies: [16338, 1236, 2186, 16339, 16340, 16341, 2]
+// Dependencies: [16364, 1236, 2186, 16365, 16366, 16367, 2]
 // Exports: getBlurredBackgroundScale, getSeatName
 
-// Module 16337 (getName)
+// Module 16363 (getName)
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
 import { ytIYuY as IE3e0y } from "messagesProxy";
@@ -39,7 +39,7 @@ import { IE3e0y } from "messagesProxy";
 let IE3e0y = arg1;
 let YpJ7QS = importDefault;
 let obj = {};
-obj = { background: null, backgroundBlurred: null, aspectRatio: 1.366583541147132, getName: null, seats: null, plants: null };
+obj = { background: null, backgroundBlurred: null, aspectRatio: 1.3667000333667, getName: null, seats: null, plants: null, screen: null };
 obj[0] = require("metadata");
 obj[1] = require("metadata");
 obj[3] = function getName() {
@@ -301,6 +301,7 @@ items[20] = obj20;
 obj[4] = items;
 const items1 = [{ x: 45.57, y: 50.62 }];
 obj[5] = items1;
+obj[6] = { topLeft: { x: 56.8, y: 16.15 }, topRight: { x: 75.85, y: 23 }, bottomRight: { x: 75.3, y: 41.3 }, bottomLeft: { x: 56.95, y: 33.75 } };
 obj[require("GuildRoomBackgrounds").GuildRoomBackgrounds.DEFAULT] = obj;
 const result = require("messagesProxy").fileFinishedImporting("modules/guild_rooms/GuildRoomConstants.tsx");
 
@@ -310,7 +311,7 @@ export const BACKGROUND_BLUR_WIDTH_FACTOR = 0.0228310502283105;
 export const getSeatName = function getSeatName(arg0, arg1) {
   const IE3e0y = arg0;
   let closure_1 = arg1;
-  const seats = obj[IE3e0y(undefined, 16338).GuildRoomBackgrounds.DEFAULT].seats;
+  const seats = obj[IE3e0y(undefined, 16364).GuildRoomBackgrounds.DEFAULT].seats;
   const found = seats.find((position) => {
     let tmp = position.position.x === closure_0;
     if (tmp) {

@@ -1,9 +1,9 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7060
+// Function ID: 7061
 // Name: recomputeAffinities
-// Dependencies: [3921, 7042, 589, 709, 2]
+// Dependencies: [3938, 7061, 589, 709, 2]
 
-// Module 7041 (recomputeAffinities)
+// Module 7060 (recomputeAffinities)
 import upsertRelationship from "upsertRelationship";
 import { USER_AFFINITY_TTL } from "result";
 import { PersistedStore } from "initialize";

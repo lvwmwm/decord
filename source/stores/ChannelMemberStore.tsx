@@ -1,9 +1,9 @@
-// Module ID: 5818
-// Function ID: 5819
+// Module ID: 5837
+// Function ID: 5838
 // Name: getMemberListId
-// Dependencies: [4199, 4304, 1218, 1372, 4206, 1971, 1964, 1891, 4371, 4977, 1903, 676, 1236, 3917, 1217, 12, 506, 589, 709, 2]
+// Dependencies: [4216, 4321, 1218, 1372, 4223, 1971, 1964, 1891, 4388, 4994, 1903, 676, 1236, 3934, 1217, 12, 506, 589, 709, 2]
 
-// Module 5818 (getMemberListId)
+// Module 5837 (getMemberListId)
 import getHash from "getHash";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -53,7 +53,7 @@ function getMemberListId(arg0) {
       str = obj2.v3(sorted.join(",")).toString();
       const str2 = obj2.v3(sorted.join(","));
     }
-    obj = importAll(3917);
+    obj = importAll(3934);
   } else {
     memberListId = channel.memberListId;
   }
@@ -96,7 +96,7 @@ prototype["updateOwnerId"] = function updateOwnerId() {
   if (null == guild) {
     return false;
   } else {
-    const guildVisualOwnerId = importAll(3917).getGuildVisualOwnerId(guild);
+    const guildVisualOwnerId = importAll(3934).getGuildVisualOwnerId(guild);
     let flag = self.ownerId !== guildVisualOwnerId;
     if (flag) {
       self.ownerId = guildVisualOwnerId;

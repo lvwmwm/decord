@@ -1,9 +1,9 @@
-// Module ID: 10934
-// Function ID: 10935
+// Module ID: 10949
+// Function ID: 10950
 // Name: items
-// Dependencies: [109, 5, 32, 7753, 4322, 5651, 9669, 6906, 8101, 7081, 6975, 10238, 3914, 7041, 1218, 1372, 10329, 1971, 1891, 4270, 10353, 4502, 3912, 4371, 1960, 4101, 4977, 7218, 1903, 7965, 676, 7117, 1905, 7728, 1235, 5669, 10935, 10937, 1988, 10938, 10939, 10974, 10977, 8011, 4494, 5682, 1236, 8321, 7635, 9461, 4253, 9469, 6903, 10993, 10994, 4266, 7116, 10995, 10996, 8533, 8536, 9890, 500, 8066, 5810, 9833, 8064, 11030, 9171, 8706, 11, 11032, 11033, 10237, 4512, 11038, 11063, 4254, 4255, 10151, 1222, 10134, 11062, 5133, 4479, 6888, 7999, 11064, 11065, 1384, 11070, 11078, 11079, 11080, 11081, 11082, 10552, 3981, 11083, 10746, 10368, 4271, 8884, 7139, 1605, 7079, 11084, 5148, 10379, 7108, 4274, 10908, 10909, 7679, 11104, 10006, 5878, 11107, 11109, 8126, 11123, 10556, 698, 4498, 5865, 7696, 5111, 8602, 5755, 8285, 8374, 7366, 4490, 10333, 11131, 6807, 5937, 11132, 9951, 11133, 9267, 503, 3985, 11135, 8535, 11136, 6838, 4506, 1935, 4623, 8143, 11138, 11140, 11144, 8031, 11145, 7701, 8047, 8045, 11146, 11150, 11178, 11179, 4293, 5677, 3984, 11190, 11191, 11192, 4476, 5877, 11193, 11194, 6980, 4500, 7720, 7722, 11196, 10200, 8769, 8767, 11234, 11236, 11239, 7998, 9592, 10997, 11255, 11256, 11257, 10152, 11258, 11261, 11264, 11265, 11271, 11274, 2]
+// Dependencies: [109, 5, 32, 7770, 4339, 5670, 9685, 6925, 8118, 7100, 6994, 10254, 3931, 7060, 1218, 1372, 10345, 1971, 1891, 4287, 10369, 4519, 3929, 4388, 1960, 4118, 4994, 7237, 1903, 7982, 676, 7136, 1905, 7745, 1235, 5688, 10950, 10952, 1988, 10953, 10954, 10989, 10992, 8028, 4511, 5701, 1236, 8338, 7654, 9478, 4270, 9486, 6922, 11008, 11009, 4283, 7135, 11010, 11011, 8550, 8553, 9906, 500, 8083, 5829, 9849, 8081, 11045, 9188, 8723, 11, 11047, 11048, 10253, 4529, 11053, 11078, 4271, 4272, 10167, 1222, 10150, 11077, 5150, 4496, 6907, 8016, 11079, 11080, 1384, 11085, 11093, 11094, 11095, 11096, 11097, 10549, 3998, 11098, 10758, 10384, 4288, 8901, 7158, 1605, 7098, 11099, 5165, 10395, 7127, 4291, 10923, 10924, 7698, 11119, 10022, 5897, 11122, 11124, 8143, 11138, 10553, 698, 4515, 5884, 7713, 5128, 8619, 5774, 8302, 8391, 7385, 4507, 10349, 11146, 6826, 5956, 11147, 9967, 11148, 9284, 503, 4002, 11150, 8552, 11151, 6857, 4523, 1935, 4640, 8160, 11153, 11155, 11159, 8048, 11160, 7718, 8064, 8062, 11161, 11165, 11193, 11194, 4310, 5696, 4001, 11205, 11206, 11207, 4493, 5896, 11208, 11209, 6999, 4517, 7737, 7739, 11211, 10216, 8786, 8784, 11249, 11251, 11254, 8015, 9608, 11012, 11270, 11271, 11272, 10168, 11273, 11276, 11279, 11280, 11286, 11289, 2]
 
-// Module 10934 (items)
+// Module 10949 (items)
 import getQuestContentName from "getQuestContentName";
 import set from "set";
 import closure_8 from "GuildFeatures";
@@ -74,7 +74,7 @@ let result = require("_slicedToArray").fileFinishedImporting("modules/messages/n
 class MessagesHandlers {
   constructor(arg0) {
     obj = Object.create(new.target.prototype);
-    f108274 = obj;
+    f108363 = obj;
     obj.getMessageData = function getMessageData(messageId) {
       if (null == messageId) {
         return null;
@@ -1060,44 +1060,46 @@ class MessagesHandlers {
         tmpResult = tmp(tmp2[105]);
         const result = tmpResult.findQuestOrReplacement(code, initializeState.quests, initializeState.excludedQuests);
         if (null != result) {
-          if (null != initializeState.questEnrollmentBlockedUntil) {
-            obj = { scrollToQuestId: null, fromContent: null };
-            obj[0] = result.id;
-            obj[1] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
-            tmp(tmp2[106]).openQuestHome(obj);
-            const tmpResult1 = tmp(tmp2[106]);
-          } else {
-            const userStatus = result.userStatus;
-            let enrolledAt;
-            if (userStatus != null) {
-              enrolledAt = userStatus.enrolledAt;
+          if (null == initializeState.questEnrollmentBlockedUntil) {
+            if (!tmp4.isQuestAccessSuspended) {
+              const userStatus = result.userStatus;
+              let enrolledAt;
+              if (userStatus != null) {
+                enrolledAt = userStatus.enrolledAt;
+              }
+              let tmp9 = null != enrolledAt;
+              const _Date = Date;
+              const date = new Date();
+              if (!tmp9) {
+                tmp9 = result.config.expiresAt < date.toISOString();
+              }
+              if (!tmp9) {
+                obj = { questContent: null, questContentCTA: null, sourceQuestContent: null };
+                obj[0] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
+                obj[1] = tmp(tmp2[109]).QuestContentCTA.ACCEPT_QUEST;
+                obj[2] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
+                tmp(tmp2[108]).enrollInQuest(result.id, obj);
+                const tmpResult1 = tmp(tmp2[108]);
+              }
+              obj = { scrollToQuestId: null, fromContent: null };
+              obj[0] = result.id;
+              obj[1] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
+              tmp(tmp2[106]).openQuestHome(obj);
+              const tmpResult2 = tmp(tmp2[106]);
             }
-            let tmp9 = null != enrolledAt;
-            const _Date = Date;
-            const date = new Date();
-            if (!tmp9) {
-              tmp9 = result.config.expiresAt < date.toISOString();
-            }
-            if (!tmp9) {
-              obj = { questContent: null, questContentCTA: null, sourceQuestContent: null };
-              obj[0] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
-              obj[1] = tmp(tmp2[109]).QuestContentCTA.ACCEPT_QUEST;
-              obj[2] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
-              tmp(tmp2[108]).enrollInQuest(result.id, obj);
-              const tmpResult2 = tmp(tmp2[108]);
-            }
-            const obj1 = { scrollToQuestId: null, fromContent: null };
-            obj1[0] = result.id;
-            obj1[1] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
-            tmp(tmp2[106]).openQuestHome(obj1);
-            const tmpResult3 = tmp(tmp2[106]);
           }
+          const obj1 = { scrollToQuestId: null, fromContent: null };
+          obj1[0] = result.id;
+          obj1[1] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
+          tmp(tmp2[106]).openQuestHome(obj1);
+          const tmpResult3 = tmp(tmp2[106]);
         } else {
           const obj2 = { fromContent: null };
           obj2[0] = tmp(tmp2[107]).QuestContent.QUEST_EMBED_MOBILE;
           tmp(tmp2[106]).openQuestHome(obj2);
           const tmpResult4 = tmp(tmp2[106]);
         }
+        tmp4 = initializeState;
       }
     };
     obj.handleTapInviteEmbedAccept = function handleTapInviteEmbedAccept(closure_0) {
@@ -2262,8 +2264,8 @@ class MessagesHandlers {
       obj[2] = callback(closure_3[144]);
       callback(closure_3[142]).open(obj);
     };
-    f108274 = undefined;
-    f108274 = set((arg0) => {
+    f108363 = undefined;
+    f108363 = set((arg0) => {
       let closure_0 = arg0;
       let c2 = 0;
       let c1 = 0;
@@ -2385,7 +2387,7 @@ class MessagesHandlers {
       const obj = uiStore(closure_3[39]);
       callback(closure_3[50]).openLazy(uiStore(closure_3[38])(closure_3[172], closure_3.paths), "ExplicitMediaLearnMore", { messageId, channelId, attachmentId, embedId });
     };
-    f108274 = set((arg0) => {
+    f108363 = set((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;
@@ -2425,25 +2427,25 @@ class MessagesHandlers {
                 let closure_1 = tmp2;
                 isReveal = undefined;
                 closure_1 = undefined;
-                const nativeSyntheticEventData = callback(10938).getNativeSyntheticEventData(isReveal);
+                const nativeSyntheticEventData = callback(10953).getNativeSyntheticEventData(isReveal);
                 ({ messageId, channelId, isReveal } = nativeSyntheticEventData);
                 ({ attachmentId, embedId } = nativeSyntheticEventData);
-                const obj10 = callback(10938);
+                const obj10 = callback(10953);
                 if (isReveal) {
                   if (obj11.shouldAgeVerifyForExplicitMedia()) {
                     dependencyMap = 1;
                     c4 = 1;
                     const obj1 = { value: null, done: false };
-                    obj1[0] = callback(4500).maybePerformReactiveCheck();
+                    obj1[0] = callback(4517).maybePerformReactiveCheck();
                     return obj1;
                   }
                 }
-                let obj3 = callback(6980);
+                let obj3 = callback(6999);
                 const obj2 = { obscure: null };
                 obj2[0] = isReveal;
                 const result = obj3.trackToggleMediaObscurityV2(obj2);
                 c4 = 3;
-                obj11 = callback(6980);
+                obj11 = callback(6999);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -2456,9 +2458,9 @@ class MessagesHandlers {
                 reactiveCheckPassed = outer1_9.getReactiveCheckPassed();
               }
               if (!reactiveCheckPassed) {
-                obj = outer1_1(7720);
+                obj = outer1_1(7737);
                 obj3 = { entryPoint: null };
-                obj3[0] = callback(7722).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
+                obj3[0] = callback(7739).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
                 const result1 = obj.showAgeVerificationGetStartedModal(obj3);
               }
             }

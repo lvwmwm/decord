@@ -1,9 +1,9 @@
-// Module ID: 3935
-// Function ID: 3936
+// Module ID: 3952
+// Function ID: 3953
 // Name: addSubscriptionPlan
-// Dependencies: [3931, 676, 1905, 1970, 589, 11, 709, 2]
+// Dependencies: [3948, 676, 1905, 1970, 589, 11, 709, 2]
 
-// Module 3935 (addSubscriptionPlan)
+// Module 3952 (addSubscriptionPlan)
 import createFromServer from "createFromServer";
 import ME from "ME";
 import GuildFeatures from "GuildFeatures";

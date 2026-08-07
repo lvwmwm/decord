@@ -1,10 +1,10 @@
-// Module ID: 10055
-// Function ID: 10056
+// Module ID: 10071
+// Function ID: 10072
 // Name: _saveGuildIdentityChanges
-// Dependencies: [5, 676, 709, 530, 8196, 8193, 2]
+// Dependencies: [5, 676, 709, 530, 8213, 8210, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 10055 (_saveGuildIdentityChanges)
+// Module 10071 (_saveGuildIdentityChanges)
 import SafetyScannedUploadSurface from "SafetyScannedUploadSurface";
 import { Endpoints } from "ME";
 
@@ -165,9 +165,9 @@ function _saveGuildIdentityChanges() {
                 const obj6 = { url: null, body: null, headers: null, oldFormErrors: true, rejectWithError: false };
                 obj6[0] = c4.SET_GUILD_MEMBER(callback);
                 obj6[1] = obj3;
-                let obj9 = callback2(8196);
+                let obj9 = callback2(8213);
                 const obj7 = {};
-                obj7[callback(8193).SafetyScannedUploadSurface.USER_GUILD_PROFILE_AVATAR] = c8;
+                obj7[callback(8210).SafetyScannedUploadSurface.USER_GUILD_PROFILE_AVATAR] = c8;
                 obj6[2] = obj9.buildHeadersForMd5(obj7);
                 c7 = 3;
                 c8 = 1;

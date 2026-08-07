@@ -1,13 +1,13 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 6974
+// Function ID: 6975
 // Name: fromServer
-// Dependencies: [6956, 2]
+// Dependencies: [6975, 2]
 
-// Module 6955 (fromServer)
+// Module 6974 (fromServer)
 let prototype;
 prototype = function FeaturedCategorySubblockRecord(unpublished_at) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(6956) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
+  obj.type = require(6975) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
   ({ category_store_listing_id: tmp.categoryStoreListingId, name: tmp.name } = unpublished_at);
   let date = null;
   if (null != unpublished_at.unpublished_at) {
@@ -23,7 +23,7 @@ prototype["fromServer"] = function fromServer(unpublished_at) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(6956) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
+  obj.type = require(6975) /* FeaturedSubblockType */.FeaturedSubblockType.CATEGORY;
   ({ category_store_listing_id: tmp2.categoryStoreListingId, name: tmp2.name } = unpublished_at);
   let date = null;
   if (null != unpublished_at.unpublished_at) {

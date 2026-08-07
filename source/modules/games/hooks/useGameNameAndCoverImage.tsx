@@ -1,14 +1,14 @@
-// Module ID: 12263
-// Function ID: 12264
+// Module ID: 12278
+// Function ID: 12279
 // Name: useGameNameAndCoverImage
-// Dependencies: [7013, 1236, 2]
+// Dependencies: [7032, 1236, 2]
 // Exports: default
 
-// Module 12263 (useGameNameAndCoverImage)
+// Module 12278 (useGameNameAndCoverImage)
 const result = require("set").fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
 
 export default function useGameNameAndCoverImage(arg0, arg1, size) {
-  let obj = require(7013) /* importDefaultResult1 */;
+  let obj = require(7032) /* importDefaultResult1 */;
   const game = obj.useGame(arg0);
   const data = game.data;
   let coverURL;

@@ -1,9 +1,9 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6091
+// Function ID: 6092
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6072 (metadata)
+// Module 6091 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CampfireSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/0cee27714be3050962b57a408d3f1c1abbc5b58fc0dac1a701139e54be5d3813.png";

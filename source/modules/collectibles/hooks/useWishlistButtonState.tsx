@@ -1,10 +1,10 @@
-// Module ID: 9320
-// Function ID: 9321
+// Module ID: 9337
+// Function ID: 9338
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7001, 5649, 1884, 589, 9274, 9281, 4130, 1236, 2]
+// Dependencies: [5, 32, 19, 7020, 5668, 1884, 589, 9291, 9298, 4147, 1236, 2]
 // Exports: useWishlistButtonState
 
-// Module 9320 (useWishlistButtonState)
+// Module 9337 (useWishlistButtonState)
 import isNullOrEmpty from "isNullOrEmpty";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

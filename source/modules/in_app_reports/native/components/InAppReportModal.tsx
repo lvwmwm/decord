@@ -1,10 +1,10 @@
-// Module ID: 7948
-// Function ID: 7949
+// Module ID: 7965
+// Function ID: 7966
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 7949, 21, 5929, 7950, 1236, 7951, 4711, 6973, 7947, 7945, 5704, 2]
+// Dependencies: [5, 32, 19, 7966, 21, 5948, 7967, 1236, 7968, 4728, 6992, 7964, 7962, 5723, 2]
 // Exports: default
 
-// Module 7948 (InAppReportModal)
+// Module 7965 (InAppReportModal)
 import HeaderActionButton from "HeaderActionButton";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -76,7 +76,7 @@ export default function InAppReportModal(arg0) {
   [c12, c13] = callback(React.useState([]), 2);
   let tmp4 = callback(React.useState([]), 2);
   [c14, c15] = callback(React.useState([]), 2);
-  menu(4711)(() => {
+  menu(4728)(() => {
     const orFetchLinkedUsers = callback(table[10]).getOrFetchLinkedUsers();
   });
   let items = [closeModal, first];
@@ -221,11 +221,11 @@ export default function InAppReportModal(arg0) {
       const obj3 = { headerRight: null, headerTitle: null, fullscreen: true, render: null };
       obj3[0] = function headerRight() {
         const obj = { source: null, onPress: null, accessibilityLabel: null };
-        obj[0] = callback(7950);
+        obj[0] = callback(7967);
         obj[1] = closure_6;
         const intl = _onSubmit(1236).intl;
         obj[2] = intl.string(_onSubmit(1236).t.cpT0Cq);
-        return callback2(_onSubmit(5929).HeaderActionButton, obj);
+        return callback2(_onSubmit(5948).HeaderActionButton, obj);
       };
       obj3[1] = function headerTitle() {
         return null;
@@ -248,7 +248,7 @@ export default function InAppReportModal(arg0) {
         obj.addOnCloseCallback = callback2;
         obj.reportId = noop;
         obj.onNavigate = onNavigate;
-        return callback2(callback(7951), obj);
+        return callback2(callback(7968), obj);
       };
       obj2[c6] = obj3;
       obj[1] = obj2;
@@ -265,7 +265,7 @@ export default function InAppReportModal(arg0) {
       obj[1] = initialStack;
       let intl = require(1236) /* getSystemLocale */.intl;
       obj[2] = intl.string(require(1236) /* getSystemLocale */.t["13/7kX"]);
-      tmp9 = jsx(require(5704) /* NavigationStack */.Navigator, { screens: null, initialRouteStack: null, headerBackTitle: null });
+      tmp9 = jsx(require(5723) /* NavigationStack */.Navigator, { screens: null, initialRouteStack: null, headerBackTitle: null });
     }
   }
   return tmp9;

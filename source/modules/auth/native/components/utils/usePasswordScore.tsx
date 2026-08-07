@@ -1,10 +1,10 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15035
+// Function ID: 15036
 // Name: PasswordScore
-// Dependencies: [5, 32, 19, 12, 15006, 2]
+// Dependencies: [5, 32, 19, 12, 15022, 2]
 // Exports: usePasswordScore
 
-// Module 15019 (PasswordScore)
+// Module 15035 (PasswordScore)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

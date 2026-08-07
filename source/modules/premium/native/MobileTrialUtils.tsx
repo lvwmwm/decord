@@ -1,19 +1,19 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 6850
+// Function ID: 6851
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
-// Dependencies: [1905, 6832, 4100, 1358, 7249, 3930, 1236, 2]
+// Dependencies: [1905, 6851, 4117, 1358, 7268, 3947, 1236, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 6831 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
+// Module 6850 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
 import { PremiumSubscriptionSKUToPremiumType as closure_2 } from "GuildFeatures";
 
 let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporting("modules/premium/native/MobileTrialUtils.tsx");
 
 export const useShouldShowPremiumTrialUserSettingsAvatarBadge = function useShouldShowPremiumTrialUserSettingsAvatarBadge() {
-  const premiumTrialOffer = require(6832) /* usePremiumTrialOffer */.usePremiumTrialOffer();
-  const obj = require(6832) /* usePremiumTrialOffer */;
+  const premiumTrialOffer = require(6851) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const obj = require(6851) /* usePremiumTrialOffer */;
   let tmp3 = null != premiumTrialOffer;
-  const result = require(4100) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE);
+  const result = require(4117) /* UNSAFE_isDismissibleContentDismissed */.useIsDismissibleContentDismissed_UNSAFE(require(1358) /* DismissibleContent */.DismissibleContent.PREMIUM_MOBILE_TRIAL_USER_SETTINGS_AVATAR_BADGE);
   if (tmp3) {
     let expires_at;
     if (premiumTrialOffer != null) {
@@ -27,7 +27,7 @@ export const useShouldShowPremiumTrialUserSettingsAvatarBadge = function useShou
   return tmp3;
 };
 export const usePremiumTrialOfferPremiumType = function usePremiumTrialOfferPremiumType() {
-  const premiumTrialOffer = require(6832) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const premiumTrialOffer = require(6851) /* usePremiumTrialOffer */.usePremiumTrialOffer();
   let sku_id;
   if (premiumTrialOffer != null) {
     const subscription_trial = premiumTrialOffer.subscription_trial;
@@ -38,7 +38,7 @@ export const usePremiumTrialOfferPremiumType = function usePremiumTrialOfferPrem
   return table[sku_id];
 };
 export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_profile_premium_upsell_card) {
-  let obj = require(6832) /* usePremiumTrialOffer */;
+  let obj = require(6851) /* usePremiumTrialOffer */;
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let subscription_trial;
   if (premiumTrialOffer != null) {
@@ -47,11 +47,11 @@ export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_p
   if (null == subscription_trial) {
     return null;
   } else {
-    let tmpResult = tmp(7249);
+    let tmpResult = tmp(7268);
     obj = { location: null };
     obj[0] = user_profile_premium_upsell_card;
     if (tmpResult.isAndroidTwoWeekTrialsTrialCTAEnabled(obj)) {
-      tmpResult = tmp(3930);
+      tmpResult = tmp(3947);
       obj = { intervalType: null, intervalCount: null };
       ({ interval: obj3[0], interval_count: obj3[1] } = subscription_trial);
       const result = tmpResult.formatIntervalDuration(obj);

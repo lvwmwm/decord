@@ -1,15 +1,15 @@
-// Module ID: 8459
-// Function ID: 8460
+// Module ID: 8476
+// Function ID: 8477
 // Name: getFastestListSectionsWithErrorChecking
-// Dependencies: [8453, 2]
+// Dependencies: [8470, 2]
 // Exports: default
 
-// Module 8459 (getFastestListSectionsWithErrorChecking)
+// Module 8476 (getFastestListSectionsWithErrorChecking)
 const result = require("set").fileFinishedImporting("modules/fastest_list/utils/getFastestListSectionsWithErrorChecking.native.tsx");
 
 export default function getFastestListSectionsWithErrorChecking(itemSizes) {
   if (tmp) {
-    let obj = require(8453) /* logFastestListError */;
+    let obj = require(8470) /* logFastestListError */;
     obj = { itemSizesLength: null, itemKeysLength: null, listId: null, detail: "Using non-uniform item sizes or list keys forces a full iteration of the list entries. This will cause performance issues on slower devices, please consider using a uniform configuration." };
     obj[0] = itemSizes.itemSizes.length;
     obj[1] = itemSizes.itemKeys.length;

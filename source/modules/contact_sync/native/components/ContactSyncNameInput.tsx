@@ -1,10 +1,10 @@
-// Module ID: 11970
-// Function ID: 11971
+// Module ID: 11985
+// Function ID: 11986
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4285, 712, 5349, 1236, 4281, 1297, 4695, 11967, 2]
+// Dependencies: [32, 19, 17, 21, 4302, 712, 5368, 1236, 4298, 1297, 4712, 11982, 2]
 // Exports: default
 
-// Module 11970 (ContactSyncNameInput)
+// Module 11985 (ContactSyncNameInput)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

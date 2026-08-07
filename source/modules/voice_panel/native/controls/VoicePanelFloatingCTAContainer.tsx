@@ -1,10 +1,10 @@
-// Module ID: 16138
-// Function ID: 16139
+// Module ID: 16164
+// Function ID: 16165
 // Name: FloatingCTA
-// Dependencies: [32, 19, 1372, 11564, 11567, 505, 21, 1348, 712, 4285, 4693, 7893, 3996, 11563, 16026, 5944, 647, 16022, 4145, 11570, 4629, 10169, 4694, 7932, 9918, 2]
+// Dependencies: [32, 19, 1372, 11579, 11582, 505, 21, 1348, 712, 4302, 4710, 7910, 4013, 11578, 16052, 5963, 647, 16048, 4162, 11585, 4646, 10185, 4711, 7949, 9934, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 16138 (FloatingCTA)
+// Module 16164 (FloatingCTA)
 import _slicedToArray from "_slicedToArray";
 import VOICE_PANEL_DRAWER_MAX_WIDTH from "VOICE_PANEL_DRAWER_MAX_WIDTH";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -23,8 +23,8 @@ function FloatingCTA(trailing) {
   let obj = { children: null };
   obj = { experimental_withBlurBackground: true, arrow: null == trailing, trailing };
   const merged1 = Object.assign(merged);
-  obj[0] = jsx(require(7893) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
-  return jsx(require(4693) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  obj[0] = jsx(require(7910) /* RowButtonWrapper */.RowButton, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
+  return jsx(require(4710) /* Stack */.Stack, { experimental_withBlurBackground: true, arrow: null == trailing, trailing });
 }
 class VoicePanelFloatingCTAContainer {
   constructor(arg0) {
@@ -67,7 +67,7 @@ class VoicePanelFloatingCTAContainer {
     useMemo = memo;
     obj3 = require("useFloatingCTAProps");
     floatingCTAProps = obj3.useFloatingCTAProps(stateFromStores);
-    obj4 = require("module_4145");
+    obj4 = require("module_4162");
     class A {
       constructor() {
         tmp = wrapperSpecs;
@@ -91,7 +91,7 @@ class VoicePanelFloatingCTAContainer {
             const obj = outer1_0(outer1_2[18]);
           }
         };
-        obj1 = { state: tmp4, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4145").runOnJS, cleanUp };
+        obj1 = { state: tmp4, TransitionStates: require("wrapChildrenDefault").TransitionStates, runOnJS: require("module_4162").runOnJS, cleanUp };
         fn.__closure = obj1;
         fn.__workletHash = 7334460639890;
         fn.__initData = outer1_14;
@@ -121,7 +121,7 @@ class VoicePanelFloatingCTAContainer {
         return obj;
       }
     }
-    obj = { getControlsDefaultWidth: require("VOICE_PANEL_DRAWER_MAX_WIDTH").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("wrapChildrenDefault").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, OPACITY_CHANGE_PHYSICS: jsx, runOnJS: require("module_4145").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
+    obj = { getControlsDefaultWidth: require("VOICE_PANEL_DRAWER_MAX_WIDTH").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("wrapChildrenDefault").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, OPACITY_CHANGE_PHYSICS: jsx, runOnJS: require("module_4162").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
     A.__closure = obj;
     A.__workletHash = 3338259366067;
     A.__initData = jsx;
@@ -131,7 +131,7 @@ class VoicePanelFloatingCTAContainer {
     items2 = [, ];
     items2[0] = tmp.container;
     items2[1] = animatedStyle;
-    tmp12 = require("module_7932");
+    tmp12 = require("module_7949");
     if (null != memo) {
       obj2 = { contentTypes: null, children: null };
       obj2[0] = tmp5;
@@ -178,5 +178,5 @@ export const renderVoicePanelFloatingCTA = function renderVoicePanelFloatingCTA(
   obj.state = state;
   obj.cleanUp = cleanUp;
   obj[1] = <VoicePanelFloatingCTAContainer />;
-  return jsx(require(3996) /* ManaContext */.ThemeContextProvider, {}, arg0);
+  return jsx(require(4013) /* ManaContext */.ThemeContextProvider, {}, arg0);
 };

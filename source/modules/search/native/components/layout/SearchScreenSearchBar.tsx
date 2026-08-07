@@ -1,8 +1,8 @@
-// Module ID: 15601
-// Function ID: 15602
-// Dependencies: [19, 17, 21, 4285, 15602, 15604, 15611, 2]
+// Module ID: 15625
+// Function ID: 15626
+// Dependencies: [19, 17, 21, 4302, 15626, 15628, 15635, 2]
 
-// Module 15601
+// Module 15625
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   const items1 = [backButton, , ];
   obj = { style: tmp.headerSearch, children: null };
   obj = { ref, searchContext, setSuggestionsDismissed };
-  const items2 = [callback(importDefault(15602), obj), ];
+  const items2 = [callback(importDefault(15626), obj), ];
   const obj1 = { style: tmp.suggestionsAnchor, children: null };
   const obj2 = { searchContext, onLayoutMeasure: onSuggestionsLayoutMesure, dismissed: suggestionsDismissed, containerStyle: null };
   const items3 = [tmp.suggestions, ];
@@ -37,14 +37,14 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   }
   items3[1] = suggestionsWithBackButton;
   obj2[3] = items3;
-  obj1[1] = callback(importDefault(15604), obj2);
+  obj1[1] = callback(importDefault(15628), obj2);
   items2[1] = callback(View, obj1);
   obj[1] = items2;
   items1[1] = closure_4(View, obj);
   const tmp4 = null != backButton && tmp.headerWithBackButton;
   const tmp6 = importDefault;
-  const tmp8 = importDefault(15604);
-  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(importDefault(15611), { searchContext }) });
+  const tmp8 = importDefault(15628);
+  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(importDefault(15635), { searchContext }) });
   obj[1] = items1;
   return closure_4(View, obj);
 }));

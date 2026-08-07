@@ -1,7 +1,7 @@
 // Module ID: 1971
 // Function ID: 1972
 // Name: trackCommunicationDisabled
-// Dependencies: [1972, 1963, 1218, 1372, 1964, 1891, 3900, 3, 3901, 1968, 1384, 11, 1880, 1881, 1914, 1351, 1934, 12, 3902, 589, 709, 2]
+// Dependencies: [1972, 1963, 1218, 1372, 1964, 1891, 3917, 3, 3918, 1968, 1384, 11, 1880, 1881, 1914, 1351, 1934, 12, 3919, 589, 709, 2]
 // Exports: getCommunicationDisabledUserKey, getGuildIdFromCommunicationDisabledUserKey, getUserCommunicationDisabledVersion, getUserIdFromCommunicationDisabledUserKey
 
 // Module 1971 (trackCommunicationDisabled)
@@ -23,8 +23,8 @@ function trackCommunicationDisabled(guildId, tmp10Result) {
       const joined = items.join("-");
       let result = dependencyMap4[joined] !== tmp10Result.communicationDisabledUntil;
       if (result) {
-        result = tmp10(3901).isMemberCommunicationDisabled(tmp10Result);
-        tmp10Result = tmp10(3901);
+        result = tmp10(3918).isMemberCommunicationDisabled(tmp10Result);
+        tmp10Result = tmp10(3918);
       }
       if (result) {
         dependencyMap4[joined] = tmp10Result.communicationDisabledUntil;
@@ -33,7 +33,7 @@ function trackCommunicationDisabled(guildId, tmp10Result) {
         closure_19[joined] = sum;
       }
     }
-    obj2 = require(3901) /* isCommunicationDisabled */;
+    obj2 = require(3918) /* isCommunicationDisabled */;
     tmp10 = require;
   }
   removeCommunicationDisabled(guildId, tmp10Result.userId);
@@ -88,7 +88,7 @@ function computeDerivedMemberState(unsafeMutableRoles, roles) {
   let tmp3;
   let tmp4;
   if (0 === roles.length) {
-    return { colorString: null, colorStrings: null, colorRoleId: "channel", hoistRoleId: "skuId", iconRoleId: "find", highestRoleId: "accessible" };
+    return { colorString: null, colorStrings: null, colorRoleId: "children", hoistRoleId: "Path", iconRoleId: "keys", highestRoleId: "Symbol" };
   } else {
     const iter = roles[Symbol.iterator]();
     while (iter !== undefined) {
@@ -351,7 +351,7 @@ function handleGuildMemberUpdate(arg0) {
       obj[15] = tmp12;
       tmp13[user.id] = createMember(obj);
       if (null != tmp13[user.id].communicationDisabledUntil) {
-        let tmp32Result = tmp32(3901);
+        let tmp32Result = tmp32(3918);
         if (tmp32Result.isMemberCommunicationDisabled(tmp15)) {
           const items = [];
           items[constants.GUILD] = guildId;
@@ -359,7 +359,7 @@ function handleGuildMemberUpdate(arg0) {
           const joined = items.join("-");
           let result = dependencyMap4[joined] !== tmp15.communicationDisabledUntil;
           if (result) {
-            tmp32Result = tmp32(3901);
+            tmp32Result = tmp32(3918);
             result = tmp32Result.isMemberCommunicationDisabled(tmp15);
           }
           if (result) {
@@ -1595,7 +1595,7 @@ const guildMemberStore = new GuildMemberStore(require("dispatcher"), {
         obj[15] = require(1914) /* items */.parseServerDisplayNameStyles(guildMember.display_name_styles);
         tmp[guildMember.user.id] = createMember(obj);
         if (null != tmp[guildMember.user.id].communicationDisabledUntil) {
-          let tmp18Result = tmp18(3901);
+          let tmp18Result = tmp18(3918);
           if (tmp18Result.isMemberCommunicationDisabled(tmp22)) {
             const items = [];
             items[constants.GUILD] = guildId;
@@ -1603,7 +1603,7 @@ const guildMemberStore = new GuildMemberStore(require("dispatcher"), {
             const joined = items.join("-");
             let result = dependencyMap4[joined] !== tmp22.communicationDisabledUntil;
             if (result) {
-              tmp18Result = tmp18(3901);
+              tmp18Result = tmp18(3918);
               result = tmp18Result.isMemberCommunicationDisabled(tmp22);
             }
             if (result) {
@@ -1812,7 +1812,7 @@ const guildMemberStore = new GuildMemberStore(require("dispatcher"), {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    let obj = require(3902) /* getEmbeddedActivityLocationChannelId */;
+    let obj = require(3919) /* getEmbeddedActivityLocationChannelId */;
     const embeddedActivityLocationGuildId = obj.getEmbeddedActivityLocationGuildId(instance.location);
     let tmp3 = null != embeddedActivityLocationGuildId;
     if (tmp3) {
@@ -2424,7 +2424,7 @@ let obj = {
         obj[15] = require(1914) /* items */.parseServerDisplayNameStyles(guildMember.display_name_styles);
         tmp[guildMember.user.id] = createMember(obj);
         if (null != tmp[guildMember.user.id].communicationDisabledUntil) {
-          let tmp18Result = tmp18(3901);
+          let tmp18Result = tmp18(3918);
           if (tmp18Result.isMemberCommunicationDisabled(tmp22)) {
             const items = [];
             items[constants.GUILD] = guildId;
@@ -2432,7 +2432,7 @@ let obj = {
             const joined = items.join("-");
             let result = dependencyMap4[joined] !== tmp22.communicationDisabledUntil;
             if (result) {
-              tmp18Result = tmp18(3901);
+              tmp18Result = tmp18(3918);
               result = tmp18Result.isMemberCommunicationDisabled(tmp22);
             }
             if (result) {
@@ -2641,7 +2641,7 @@ let obj = {
   },
   EMBEDDED_ACTIVITY_UPDATE_V2: function handleEmbeddedActivityUpdateV2(instance) {
     instance = instance.instance;
-    let obj = require(3902) /* getEmbeddedActivityLocationChannelId */;
+    let obj = require(3919) /* getEmbeddedActivityLocationChannelId */;
     const embeddedActivityLocationGuildId = obj.getEmbeddedActivityLocationGuildId(instance.location);
     let tmp3 = null != embeddedActivityLocationGuildId;
     if (tmp3) {

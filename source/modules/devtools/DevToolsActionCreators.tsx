@@ -1,10 +1,10 @@
-// Module ID: 13762
-// Function ID: 13763
+// Module ID: 13776
+// Function ID: 13777
 // Name: updateDevToolsSettings
-// Dependencies: [7099, 709, 2]
+// Dependencies: [7118, 709, 2]
 // Exports: clearAnalyticsLog, openDevTools, toggleDisplayDevTools, updateDevToolsSettings
 
-// Module 13762 (updateDevToolsSettings)
+// Module 13776 (updateDevToolsSettings)
 import initialize from "initialize";
 
 const result = require("set").fileFinishedImporting("modules/devtools/DevToolsActionCreators.tsx");

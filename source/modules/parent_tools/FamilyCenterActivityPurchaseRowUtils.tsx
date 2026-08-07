@@ -1,10 +1,10 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14077
+// Function ID: 14078
 // Name: getCollectibleTypeName
-// Dependencies: [6927, 6928, 1905, 1930, 1236, 2284, 1416, 2]
+// Dependencies: [6946, 6947, 1905, 1930, 1236, 2284, 1416, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14063 (getCollectibleTypeName)
+// Module 14077 (getCollectibleTypeName)
 import { isAvatarDecorationRecord } from "fromServer";
 import { isProfileEffectRecord } from "fromServer";
 import GuildFeatures from "GuildFeatures";

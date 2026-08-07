@@ -1,10 +1,10 @@
-// Module ID: 14053
-// Function ID: 14054
+// Module ID: 14067
+// Function ID: 14068
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4285, 4123, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 4140, 4298, 2]
 // Exports: default
 
-// Module 14053 (FamilyCenterUsernameHeader)
+// Module 14067 (FamilyCenterUsernameHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -19,14 +19,14 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterUsernameHeader(user) {
   user = user.user;
-  let obj = importDefault(4123);
+  let obj = importDefault(4140);
   const name = obj.useName(user);
   const tmp = callback3();
   obj = { style: tmp.container, children: null };
-  const combined = " (@" + importDefault(4123).getUserTag(user, { decoration: "never" }) + ")";
+  const combined = " (@" + importDefault(4140).getUserTag(user, { decoration: "never" }) + ")";
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
-  const items = [name, callback(require(4281) /* Text */.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
+  const items = [name, callback(require(4298) /* Text */.Text, { variant: "text-md/medium", color: "text-muted", lineClamp: 1, children: combined })];
   obj[3] = items;
-  obj[1] = callback2(require(4281) /* Text */.Text, obj);
+  obj[1] = callback2(require(4298) /* Text */.Text, obj);
   return callback(View, obj);
 };

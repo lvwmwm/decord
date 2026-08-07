@@ -1,10 +1,10 @@
-// Module ID: 8100
-// Function ID: 8101
+// Module ID: 8117
+// Function ID: 8118
 // Name: createGiftIntentEmbed
-// Dependencies: [8101, 1903, 1905, 4285, 712, 1236, 8105, 4123, 7978, 4222, 8106, 8107, 2]
+// Dependencies: [8118, 1903, 1905, 4302, 712, 1236, 8122, 4140, 7995, 4239, 8123, 8124, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 8100 (createGiftIntentEmbed)
+// Module 8117 (createGiftIntentEmbed)
 import getCurrentTime from "getCurrentTime";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { GiftIntentType } from "GuildFeatures";
@@ -27,7 +27,7 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
     if (null == user) {
       return null;
     } else {
-      const name = importDefault(4123).getName(user);
+      const name = importDefault(4140).getName(user);
       if (GiftIntentType.FRIEND_ANNIVERSARY === giftIntentType) {
         let obj = { headerText: null, subHeaderParts: null };
         const intl = require(1236) /* getSystemLocale */.intl;
@@ -43,9 +43,9 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
       } else {
         tmp = null;
         if (tmp13.UNSPECIFIED !== giftIntentType) {
-          require(8105) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
+          require(8122) /* _sendGiftMessage */.unhandledGiftIntent(giftIntentType);
           tmp = null;
-          const obj11 = require(8105) /* _sendGiftMessage */;
+          const obj11 = require(8122) /* _sendGiftMessage */;
         }
       }
       if (null == tmp) {
@@ -68,18 +68,18 @@ export const createGiftIntentEmbed = function createGiftIntentEmbed(message, the
         obj1[6] = giftIntentType;
         ({ headerTextColor: obj4[7], subHeaderTextColor: obj4[8], backgroundColor: obj4[9], borderColor: obj4[10] } = createCacheKey(theme));
         const tmp6 = createCacheKey(theme);
-        obj1[11] = require(7978) /* frozen */.getAssetUriForEmbed(tmp8(4222));
+        obj1[11] = require(7995) /* frozen */.getAssetUriForEmbed(tmp8(4239));
         const intl3 = require(1236) /* getSystemLocale */.intl;
         obj1[12] = intl3.string(require(1236) /* getSystemLocale */.t.ilhtIa);
-        const obj5 = require(7978) /* frozen */;
-        obj1[13] = require(7978) /* frozen */.getAssetUriForEmbed(tmp8(8106));
-        const obj6 = require(7978) /* frozen */;
-        obj1[14] = require(7978) /* frozen */.getAssetUriForEmbed(tmp8(8107));
+        const obj5 = require(7995) /* frozen */;
+        obj1[13] = require(7995) /* frozen */.getAssetUriForEmbed(tmp8(8123));
+        const obj6 = require(7995) /* frozen */;
+        obj1[14] = require(7995) /* frozen */.getAssetUriForEmbed(tmp8(8124));
         const intl4 = require(1236) /* getSystemLocale */.intl;
         obj1[15] = intl4.string(require(1236) /* getSystemLocale */.t.I5gL2H);
         return obj1;
       }
-      const obj10 = importDefault(4123);
+      const obj10 = importDefault(4140);
     }
     obj8 = user;
   }

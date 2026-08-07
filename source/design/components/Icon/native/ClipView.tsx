@@ -1,15 +1,15 @@
-// Module ID: 8216
-// Function ID: 8217
+// Module ID: 8233
+// Function ID: 8234
 // Name: SolidCutout
-// Dependencies: [19, 17, 21, 8217, 8219, 4145, 2]
+// Dependencies: [19, 17, 21, 8234, 8236, 4162, 2]
 // Exports: default
 
-// Module 8216 (SolidCutout)
+// Module 8233 (SolidCutout)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import animatedComponent from "__INTERNAL_VIEW_CONFIG";
-import importDefaultResult from "module_4145";
+import importDefaultResult from "module_4162";
 
 let StyleSheet;
 let c3;
@@ -68,7 +68,7 @@ export default function ClipView(cutouts) {
   cutouts = cutouts.cutouts;
   ({ children, style } = cutouts);
   const merged = Object.assign(cutouts, Object.create(null));
-  let obj = require(8217) /* useCutoutBackgroundColor */;
+  let obj = require(8234) /* useCutoutBackgroundColor */;
   const cutoutBackgroundColor = obj.useCutoutBackgroundColor();
   let tmp4 = null;
   let tmp5 = cutouts;
@@ -94,7 +94,7 @@ export default function ClipView(cutouts) {
   obj.style = style;
   const items = [children, tmp4];
   obj.children = items;
-  return callback2(importDefault(8219), obj);
+  return callback2(importDefault(8236), obj);
 };
 export const ClipViewAnimated = animatedComponent;
 export const CutoutShape = obj;

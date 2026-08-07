@@ -1,10 +1,10 @@
-// Module ID: 6035
-// Function ID: 6036
+// Module ID: 6054
+// Function ID: 6055
 // Name: BananaSpotIllustration
-// Dependencies: [21, 5251, 6036, 2]
+// Dependencies: [21, 5267, 6055, 2]
 // Exports: BananaSpotIllustration
 
-// Module 6035 (BananaSpotIllustration)
+// Module 6054 (BananaSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/BananaSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const BananaSpotIllustration = function BananaSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6036);
+  obj[0] = importDefault(6055);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const BananaSpotIllustration = function BananaSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

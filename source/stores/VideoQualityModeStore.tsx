@@ -1,9 +1,9 @@
-// Module ID: 13011
-// Function ID: 13012
+// Module ID: 13025
+// Function ID: 13026
 // Name: mode
 // Dependencies: [676, 589, 709, 2]
 
-// Module 13011 (mode)
+// Module 13025 (mode)
 import { Store } from "initialize";
 
 const AUTO = require("ME").VideoQualityMode.AUTO;

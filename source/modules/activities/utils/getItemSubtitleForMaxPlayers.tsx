@@ -1,10 +1,10 @@
-// Module ID: 11452
-// Function ID: 11453
+// Module ID: 11467
+// Function ID: 11468
 // Name: getItemSubtitleForMaxPlayers
 // Dependencies: [1236, 2]
 // Exports: default, getItemSubtitleForMaxPlayersShort, getItemSubtitleForMaxPlayersShorter
 
-// Module 11452 (getItemSubtitleForMaxPlayers)
+// Module 11467 (getItemSubtitleForMaxPlayers)
 const result = require("set").fileFinishedImporting("modules/activities/utils/getItemSubtitleForMaxPlayers.tsx");
 
 export default function getItemSubtitleForMaxPlayers(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 9343
-// Function ID: 9344
+// Module ID: 9360
+// Function ID: 9361
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4330, 676, 3, 709, 530, 4184, 7508, 1208, 2]
+// Dependencies: [5, 4347, 676, 3, 709, 530, 4201, 7527, 1208, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9343 (fetchVirtualCurrencyBalance)
+// Module 9360 (fetchVirtualCurrencyBalance)
 import sendRequest from "sendRequest";
 import addSku from "addSku";
 import { Endpoints } from "ME";
@@ -224,7 +224,7 @@ function _redeemVirtualCurrencyForSKU() {
                 }
                 let result = null != applicationId;
                 if (result) {
-                  let obj8 = callback(7508);
+                  let obj8 = callback(7527);
                   result = obj8.isTestModeForApplication(applicationId);
                 }
                 c8 = result;
@@ -246,10 +246,10 @@ function _redeemVirtualCurrencyForSKU() {
             } else if (2 === tmp7) {
               c4 = 0;
               let closure_14 = c3;
-              if (closure_14 instanceof callback(4184).BillingError) {
+              if (closure_14 instanceof callback(4201).BillingError) {
                 billingError = closure_14;
               } else {
-                billingError = new callback(4184).BillingError(closure_14);
+                billingError = new callback(4201).BillingError(closure_14);
               }
               let obj6 = callback2(709);
               const obj5 = { type: "VIRTUAL_CURRENCY_REDEEM_FAIL", skuId: null, error: null };

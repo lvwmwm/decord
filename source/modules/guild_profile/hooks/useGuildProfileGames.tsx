@@ -1,10 +1,10 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12136
+// Function ID: 12137
 // Name: useGuildProfileGames
-// Dependencies: [19, 4307, 4306, 1218, 589, 7013, 1351, 2]
+// Dependencies: [19, 4324, 4323, 1218, 589, 7032, 1351, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 12121 (useGuildProfileGames)
+// Module 12136 (useGuildProfileGames)
 import noop from "noop";
 import applicationId from "applicationId";
 import handleLoadMessages from "handleLoadMessages";
@@ -103,7 +103,7 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
   games = profile.games;
   const items = [fetchFingerprint];
   const stateFromStores = games(589).useStateFromStores(items, () => authenticated.isAuthenticated());
-  games(7013);
+  games(7032);
   if (null != games) {
     if (!stateFromStores) {
       let items1 = [];

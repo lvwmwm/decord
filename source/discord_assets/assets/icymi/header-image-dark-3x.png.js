@@ -1,9 +1,9 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15505
+// Function ID: 15506
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15481 (metadata)
+// Module 15505 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/icymi/header-image-dark-3x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/b3be8d8e7f844639e9e402cd37630f1eb87a85d8b8ef5b72ae16ca5b554865b6.png";

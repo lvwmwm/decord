@@ -1,9 +1,9 @@
-// Module ID: 15412
-// Function ID: 15413
+// Module ID: 15436
+// Function ID: 15437
 // Name: BadgedIcon
-// Dependencies: [19, 17, 10190, 21, 8216, 15413, 4285, 712, 4221, 3988, 4700, 8304, 4249, 10193, 589, 8298, 8293, 8296, 5669, 8302, 7672, 1236, 2]
+// Dependencies: [19, 17, 10206, 21, 8233, 15437, 4302, 712, 4238, 4005, 4717, 8321, 4266, 10209, 589, 8315, 8310, 8313, 5688, 8319, 7691, 1236, 2]
 
-// Module 15412 (BadgedIcon)
+// Module 15436 (BadgedIcon)
 import importAllResult from "showForLaterModal";
 import { View } from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";
@@ -17,15 +17,15 @@ function BadgedIcon(arg0) {
   let showRedDot;
   let type;
   ({ type, showRedDot } = arg0);
-  let obj = require(3988) /* map */;
-  const token = obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4221)());
+  let obj = require(4005) /* map */;
+  const token = obj.useToken(importDefault(712).colors.INTERACTIVE_TEXT_DEFAULT, importDefault(4238)());
   const tmp6 = callback2();
-  let obj1 = require(4700) /* styleProperties */;
+  let obj1 = require(4717) /* styleProperties */;
   const iconSizeStyles = obj1.useIconSizeStyles("sm", true, 2);
-  if (type === require(8304) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp4(4249).ClockIcon;
+  if (type === require(8321) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
+    let BookmarkIcon = tmp4(4266).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(10193).BookmarkIcon;
+    BookmarkIcon = tmp4(10209).BookmarkIcon;
   }
   obj = { style: items, children: null };
   items = [tmp6.container, iconSizeStyles];
@@ -38,13 +38,13 @@ function BadgedIcon(arg0) {
     const obj2 = { size: "sm", color: null };
     obj2[1] = token;
     obj1[1] = tmp8(BookmarkIcon, obj2);
-    const items2 = [tmp8(importDefault(8216), obj1), ];
+    const items2 = [tmp8(importDefault(8233), obj1), ];
     const obj3 = { style: null };
     obj3[0] = tmp6.dot;
     items2[1] = tmp8(tmp9, obj3);
     obj[1] = items2;
     let tmp8Result = callback(tmp9, obj);
-    const tmpResult = importDefault(8216);
+    const tmpResult = importDefault(8233);
   } else {
     const obj4 = { size: "sm", color: null };
     obj4[1] = token;

@@ -1,10 +1,10 @@
-// Module ID: 10973
-// Function ID: 10974
+// Module ID: 10988
+// Function ID: 10989
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4285, 712, 3996, 5671, 4128, 7330, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4013, 5690, 4145, 7349, 4298, 2]
 // Exports: default
 
-// Module 10973 (UserProfileSection)
+// Module 10988 (UserProfileSection)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,17 +32,17 @@ export default function UserProfileSection(title) {
   ({ headerIcon, trailingIcon, showContainer, children, style } = title);
   const merged = Object.assign(title, Object.create(null));
   const tmp2 = createCacheKey();
-  let obj = require(3996) /* ManaContext */;
+  let obj = require(4013) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ theme, primaryColor } = themeContext);
-  let obj1 = require(5671) /* useProfileThemeValues */;
+  let obj1 = require(5690) /* useProfileThemeValues */;
   const profileThemeValues = obj1.useProfileThemeValues(theme);
   obj = {};
   const merged1 = Object.assign(tmp2.contentContainer);
   if (null != primaryColor) {
     if (null != profileThemeValues) {
-      let borderColor = tmp3(4128).hexOpacityToRgba(tmp3(7330).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
-      const tmp3Result = tmp3(4128);
+      let borderColor = tmp3(4145).hexOpacityToRgba(tmp3(7349).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      const tmp3Result = tmp3(4145);
     }
     obj.borderColor = borderColor;
     obj = { style: null };
@@ -57,7 +57,7 @@ export default function UserProfileSection(title) {
       obj2[0] = tmp2.title;
       const obj3 = { variant: "eyebrow", accessibilityRole: "header", children: null };
       obj3[2] = title;
-      const items1 = [callback(tmp3(4281).Text, obj3), headerIcon];
+      const items1 = [callback(tmp3(4298).Text, obj3), headerIcon];
       obj2[1] = items1;
       const items2 = [tmp8(tmp9, obj2), trailingIcon];
       obj1[1] = items2;

@@ -1,9 +1,9 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6927
+// Function ID: 6928
 // Name: computeSubtitle
-// Dependencies: [1371, 4322, 6909, 1962, 6906, 1963, 6910, 6911, 6912, 5206, 3914, 1376, 5243, 1372, 6907, 1891, 3912, 4297, 1960, 4480, 4301, 4357, 6913, 6914, 676, 1379, 505, 12, 6915, 5765, 5828, 5807, 6916, 38, 1351, 11, 4468, 2]
+// Dependencies: [1371, 4339, 6928, 1962, 6925, 1963, 6929, 6930, 6931, 5222, 3931, 1376, 5259, 1372, 6926, 1891, 3929, 4314, 1960, 4497, 4318, 4374, 6932, 6933, 676, 1379, 505, 12, 6934, 5784, 5847, 5826, 6935, 38, 1351, 11, 4485, 2]
 
-// Module 6908 (computeSubtitle)
+// Module 6927 (computeSubtitle)
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
 import handleConnectionReset from "handleConnectionReset";
@@ -51,7 +51,7 @@ function computeSubtitle(type) {
     } else {
       if (arg2) {
         if (arg1) {
-          let obj1 = require(4468) /* hasStream */;
+          let obj1 = require(4485) /* hasStream */;
           if (obj1.hasStream(tmp19)) {
             return { type: "go-live" };
           }

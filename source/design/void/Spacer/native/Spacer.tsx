@@ -1,10 +1,10 @@
-// Module ID: 13288
-// Function ID: 13289
+// Module ID: 13302
+// Function ID: 13303
 // Name: Spacer
 // Dependencies: [19, 17, 21, 12, 2]
 // Exports: default
 
-// Module 13288 (Spacer)
+// Module 13302 (Spacer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

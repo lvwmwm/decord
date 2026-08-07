@@ -1,10 +1,10 @@
-// Module ID: 6921
-// Function ID: 6922
+// Module ID: 6940
+// Function ID: 6941
 // Name: openCollectiblesShop
-// Dependencies: [5, 4284, 1975, 6922, 6937, 6938, 6939, 6940, 6944, 6924, 6950, 6951, 678, 676, 6965, 6966, 4136, 709, 6967, 6968, 6970, 530, 4184, 5875, 6969, 6934, 6971, 6972, 2]
+// Dependencies: [5, 4301, 1975, 6941, 6956, 6957, 6958, 6959, 6963, 6943, 6969, 6970, 678, 676, 6984, 6985, 4153, 709, 6986, 6987, 6989, 530, 4201, 5894, 6988, 6953, 6990, 6991, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 6921 (openCollectiblesShop)
+// Module 6940 (openCollectiblesShop)
 import map from "map";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ function openCollectiblesShopMobile(screen) {
   obj = { type: "COLLECTIBLES_SHOP_OPEN" };
   const merged = Object.assign(screen);
   obj.dispatch(obj);
-  const rootNavigationRef = require(4136) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       screen = screen.screen;
@@ -68,7 +68,7 @@ function openCollectiblesShopMobile(screen) {
 function closeCollectiblesShop() {
   importDefault(709).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(709);
-  require(6967) /* pushLayer */.popLayer();
+  require(6986) /* pushLayer */.popLayer();
 }
 function _fetchCollectiblesCategories() {
   const self = this;
@@ -689,8 +689,8 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5875);
-            const aPIError = new callback(4184).APIError(callback);
+            obj2 = callback(5894);
+            const aPIError = new callback(4201).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
@@ -785,8 +785,8 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5875);
-            const aPIError = new callback(4184).APIError(callback);
+            obj2 = callback(5894);
+            const aPIError = new callback(4201).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             const obj4 = { value: null, done: true };
@@ -1222,7 +1222,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4136).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4153).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -1421,7 +1421,7 @@ export const maybeFetchCollectiblesProduct = function maybeFetchCollectiblesProd
 };
 export const seedCollectiblesProductFromStandaloneLoad = function seedCollectiblesProductFromStandaloneLoad(memo) {
   const timestamp = Date.now();
-  let obj = require(6934) /* getItemRecordsFromPurchases */;
+  let obj = require(6953) /* getItemRecordsFromPurchases */;
   const items = [memo];
   const result = obj.extendVariantsProducts(items);
   const iter = result[Symbol.iterator]();

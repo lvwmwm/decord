@@ -1,10 +1,10 @@
-// Module ID: 14219
-// Function ID: 14220
+// Module ID: 14233
+// Function ID: 14234
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 4285, 4145, 4286, 4289, 4706, 14201, 2]
+// Dependencies: [17, 21, 4302, 4162, 4303, 4306, 4723, 14215, 2]
 // Exports: default
 
-// Module 14219 (BountiesModalEndCard)
+// Module 14233 (BountiesModalEndCard)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -35,7 +35,7 @@ export default function BountiesModalEndCard(visible) {
   visible = visible.visible;
   ({ bounty, sourceQuestContent } = visible);
   const tmp = callback3();
-  visible(4145);
+  visible(4162);
   const fn = function y() {
     let obj = visible(outer1_2[4]);
     let num = 0;
@@ -45,7 +45,7 @@ export default function BountiesModalEndCard(visible) {
     obj = { opacity: obj.withTiming(num, visible(outer1_2[5]).timingStandard) };
     return obj;
   };
-  let obj = { withTiming: visible(4286).withTiming, visible, timingStandard: visible(4289).timingStandard };
+  let obj = { withTiming: visible(4303).withTiming, visible, timingStandard: visible(4306).timingStandard };
   fn.__closure = obj;
   fn.__workletHash = 15062259404736;
   fn.__initData = closure_8;
@@ -60,13 +60,13 @@ export default function BountiesModalEndCard(visible) {
     obj1[0] = ["rgba(0, 0, 0, 0.60)", "rgba(0, 0, 0, 1)"];
     obj1[1] = [0, 0.841];
     obj1[2] = tmp.backdropGradient;
-    items1[1] = callback(importDefault(4706), obj1);
+    items1[1] = callback(importDefault(4723), obj1);
     const obj2 = { bounty: null, sourceQuestContent: null };
     obj2[0] = bounty;
     obj2[1] = sourceQuestContent;
-    items1[2] = callback(importDefault(14201), obj2);
+    items1[2] = callback(importDefault(14215), obj2);
     obj[2] = items1;
-    visible = callback2(importDefault(4145).View, obj);
+    visible = callback2(importDefault(4162).View, obj);
   }
   return visible;
 };

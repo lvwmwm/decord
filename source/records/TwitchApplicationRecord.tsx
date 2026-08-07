@@ -1,9 +1,9 @@
-// Module ID: 12926
-// Function ID: 12927
+// Module ID: 12941
+// Function ID: 12942
 // Name: getIconURL
-// Dependencies: [4308, 1236, 4981, 2]
+// Dependencies: [4325, 1236, 4998, 2]
 
-// Module 12926 (getIconURL)
+// Module 12941 (getIconURL)
 import "createExecutable";
 
 const require = arg1;
@@ -20,7 +20,7 @@ class TwitchApplicationRecord extends tmp2 {
   }
 }
 TwitchApplicationRecord.prototype["getIconURL"] = function getIconURL() {
-  return importDefault(4981).get("twitch").icon.lightPNG;
+  return importDefault(4998).get("twitch").icon.lightPNG;
 };
 
 export default TwitchApplicationRecord;

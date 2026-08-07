@@ -1,10 +1,10 @@
-// Module ID: 9060
-// Function ID: 9061
+// Module ID: 9077
+// Function ID: 9078
 // Name: ThrottledButton
-// Dependencies: [19, 21, 4695, 2]
+// Dependencies: [19, 21, 4712, 2]
 // Exports: default, useThrottledActionHandler
 
-// Module 9060 (ThrottledButton)
+// Module 9077 (ThrottledButton)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -72,7 +72,7 @@ export default function ThrottledButton(throttleMs) {
       }, closure_0);
     }
   };
-  return jsx(onPressOut(4695).Button, {});
+  return jsx(onPressOut(4712).Button, {});
 };
 export const useThrottledActionHandler = function useThrottledActionHandler() {
   let num = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 7141
-// Function ID: 7142
+// Module ID: 7160
+// Function ID: 7161
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1372, 7142, 4502, 3912, 3921, 7209, 676, 514, 589, 5764, 687, 1885, 4513, 1236, 7143, 12, 4474, 2]
+// Dependencies: [1372, 7161, 4519, 3929, 3938, 7228, 676, 514, 589, 5783, 687, 1885, 4530, 1236, 7162, 12, 4491, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 7141 (getSampleOfVoterUsernamesForAnswer)
+// Module 7160 (getSampleOfVoterUsernamesForAnswer)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reactionKey from "reactionKey";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -20,7 +20,7 @@ let unpackModuleId;
 const require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7143).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7162).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -264,7 +264,7 @@ export const getPollReplyPreview = function getPollReplyPreview(message) {
   return str;
 };
 export const getPollResultsReplyPreview = function getPollResultsReplyPreview(message) {
-  let obj = require(4513) /* useNullableMessageAuthor */;
+  let obj = require(4530) /* useNullableMessageAuthor */;
   const first = message.embeds[0];
   let str;
   const messageAuthor = obj.getMessageAuthor(message);
@@ -291,7 +291,7 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
 };
 export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPreviewMobile(message2) {
   if ("author" in message2) {
-    let obj = require(4513) /* useNullableMessageAuthor */;
+    let obj = require(4530) /* useNullableMessageAuthor */;
     const first = message2.embeds[0];
     let str;
     const messageAuthor = obj.getMessageAuthor(message2);

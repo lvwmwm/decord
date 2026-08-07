@@ -1,10 +1,10 @@
-// Module ID: 5374
-// Function ID: 5375
+// Module ID: 5393
+// Function ID: 5394
 // Name: RowCheckmark
-// Dependencies: [19, 21, 5343, 712, 2]
+// Dependencies: [19, 21, 5362, 712, 2]
 // Exports: default
 
-// Module 5374 (RowCheckmark)
+// Module 5393 (RowCheckmark)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,7 +16,7 @@ export default function RowCheckmark(selected) {
   if (selected.selected) {
     const obj = { color: null };
     obj[0] = importDefault(712).unsafe_rawColors.BRAND_500;
-    tmp = jsx(require(5343) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: null });
+    tmp = jsx(require(5362) /* CheckmarkSmallIcon */.CheckmarkSmallIcon, { color: null });
   }
   return tmp;
 };

@@ -1,9 +1,9 @@
-// Module ID: 13926
-// Function ID: 13927
+// Module ID: 13940
+// Function ID: 13941
 // Name: route
-// Dependencies: [1903, 8005, 676, 589, 10364, 1236, 13811, 2]
+// Dependencies: [1903, 8022, 676, 589, 10380, 1236, 13825, 2]
 
-// Module 13926 (route)
+// Module 13940 (route)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
@@ -30,7 +30,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PROFILE_CUSTOMIZATION,
   getComponent() {
-    return require(13811) /* ProfileCustomizationSubsection */.default;
+    return require(13825) /* ProfileCustomizationSubsection */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

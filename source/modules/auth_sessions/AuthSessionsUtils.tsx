@@ -1,10 +1,10 @@
-// Module ID: 13896
-// Function ID: 13897
+// Module ID: 13910
+// Function ID: 13911
 // Name: useAuthSessions
-// Dependencies: [19, 1218, 13897, 589, 1236, 3866, 2]
+// Dependencies: [19, 1218, 13911, 589, 1236, 3883, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 13896 (useAuthSessions)
+// Module 13910 (useAuthSessions)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import handleInit from "handleInit";
@@ -41,8 +41,8 @@ export const formatDate = function formatDate(arg0) {
     const intl = require(1236) /* getSystemLocale */.intl;
     let stringResult = intl.string(require(1236) /* getSystemLocale */.t.TXCmfL);
   } else {
-    stringResult = importDefault(3866)(arg0).fromNow();
-    const obj = importDefault(3866)(arg0);
+    stringResult = importDefault(3883)(arg0).fromNow();
+    const obj = importDefault(3883)(arg0);
   }
   return stringResult;
 };

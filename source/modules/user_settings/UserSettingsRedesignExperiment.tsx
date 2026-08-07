@@ -1,10 +1,10 @@
-// Module ID: 5153
-// Function ID: 5154
+// Module ID: 5170
+// Function ID: 5171
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsEligibleForUserSettingsRedesign4DExperiment, useIsEligibleForUserSettingsRedesign4DExperiment
 
-// Module 5153 (apexExperiment)
+// Module 5170 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-05-user-settings-redesign-4d", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

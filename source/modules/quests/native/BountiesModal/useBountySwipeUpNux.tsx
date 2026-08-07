@@ -1,10 +1,10 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14184
+// Function ID: 14185
 // Name: useBountySwipeUpNux
-// Dependencies: [32, 10900, 14171, 1358, 5943, 2]
+// Dependencies: [32, 10915, 14185, 1358, 5962, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 14170 (useBountySwipeUpNux)
+// Module 14184 (useBountySwipeUpNux)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -12,9 +12,9 @@ const result = require("FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY").fileFinishedIm
 
 export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
   let isEligible = location.isEligible;
-  const BountiesVerticalScrollExperiment = require(10900) /* apexExperiment */.BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = require(10915) /* apexExperiment */.BountiesVerticalScrollExperiment;
   const tmp3 = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
-  let obj = require(14171) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
+  let obj = require(14185) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
   const first = callback(obj.useForceBountiesSwipeUpNux(), 1)[0];
   if (isEligible) {
     if (tmp3) {
@@ -27,7 +27,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
         prop = tmp(1358).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
       }
     }
-    let tmpResult = tmp(5943);
+    let tmpResult = tmp(5962);
     let tmp4Result = tmp4(tmpResult.useSelectedDismissibleContent([]), 2);
     if (first) {
       let tmp11 = isEligible;
@@ -38,7 +38,7 @@ export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
     } else {
       tmp10 = tmp9 === tmp(1358).DismissibleContent.BOUNTIES_SWIPE_UP_NUX;
     }
-    tmpResult = tmp(5943);
+    tmpResult = tmp(5962);
     tmp4Result = tmp4(tmpResult.useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 86400000 }), 2);
     obj = { hasSingleUseSwipeUpNux: null, dismissSingleUseSwipeUpNux: null, hasRecurringSwipeUpNux: null, dismissRecurringSwipeUpNux: null };
     obj[0] = tmp10;

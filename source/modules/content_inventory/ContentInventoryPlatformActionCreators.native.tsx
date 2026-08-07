@@ -1,12 +1,12 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11278
+// Function ID: 11279
 // Name: showUserProfile
-// Dependencies: [8706, 2]
+// Dependencies: [8723, 2]
 // Exports: showUserProfile
 
-// Module 11263 (showUserProfile)
+// Module 11278 (showUserProfile)
 const result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryPlatformActionCreators.native.tsx");
 
 export const showUserProfile = function showUserProfile(arg0) {
-  importDefault(8706)(arg0);
+  importDefault(8723)(arg0);
 };

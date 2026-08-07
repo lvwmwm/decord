@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16606
+// Function ID: 16607
 // Name: MAX_SUBCATEGORIES
 // Dependencies: [1236, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 16586 (MAX_SUBCATEGORIES)
+// Module 16606 (MAX_SUBCATEGORIES)
 const obj = {
   afk_channel_id() {
     const intl = require(1236) /* getSystemLocale */.intl;

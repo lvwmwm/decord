@@ -1,10 +1,10 @@
-// Module ID: 16170
-// Function ID: 16171
+// Module ID: 16196
+// Function ID: 16197
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 16169, 21, 4285, 1236, 4713, 4281, 8621, 2]
+// Dependencies: [19, 17, 16195, 21, 4302, 1236, 4730, 4298, 8638, 2]
 // Exports: default
 
-// Module 16170 (HideSelfStreamAndVideoConfirmDialog)
+// Module 16196 (HideSelfStreamAndVideoConfirmDialog)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { SelfStreamAndVideoAlertType as closure_4 } from "SelfStreamAndVideoAlertType";
@@ -56,7 +56,7 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   obj.onConfirm = onConfirm;
   obj = { style: tmp2.body, children: null };
   obj = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  const items = [closure_5(tmp6(4281).Text, obj), ];
+  const items = [closure_5(tmp6(4298).Text, obj), ];
   const obj1 = {
     accessibilityRole: "link",
     style: items1,
@@ -71,8 +71,8 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
   const intl7 = tmp6(1236).intl;
   obj1[4] = intl7.string(tmp6(1236).t["JdIQ/Y"]);
-  items[1] = closure_5(tmp6(4281).Text, obj1);
+  items[1] = closure_5(tmp6(4298).Text, obj1);
   obj[1] = items;
   obj.children = callback(View, obj);
-  return closure_5(importDefault(4713), obj);
+  return closure_5(importDefault(4730), obj);
 };

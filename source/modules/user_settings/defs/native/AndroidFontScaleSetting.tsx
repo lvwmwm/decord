@@ -1,9 +1,9 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14475
+// Function ID: 14476
 // Name: slider
-// Dependencies: [19, 14411, 685, 8005, 21, 705, 14460, 9445, 1236, 10364, 500, 2]
+// Dependencies: [19, 14427, 685, 8022, 21, 705, 14476, 9462, 1236, 10380, 500, 2]
 
-// Module 14459 (slider)
+// Module 14475 (slider)
 import noop from "noop";
 import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
 import { FontScales } from "MAX_FAVORITES";

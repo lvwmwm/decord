@@ -1,10 +1,10 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12534
+// Function ID: 12535
 // Name: createEmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 1371, 8165, 4322, 1218, 1372, 4270, 3921, 1903, 10910, 7117, 709, 8164, 7976, 4745, 1236, 4475, 12520, 2]
+// Dependencies: [32, 17, 1371, 8182, 4339, 1218, 1372, 4287, 3938, 1903, 10925, 7136, 709, 8181, 7993, 4762, 1236, 4492, 12535, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12519 (createEmbeddedActivityInviteEmbed)
+// Module 12534 (createEmbeddedActivityInviteEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "computeChannelName";
 import participantFromServer from "participantFromServer";
@@ -40,10 +40,10 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         id = target_application.id;
         if (applicationAssetFetchState.getApplicationAssetFetchState(id) === FetchState.NOT_FETCHED) {
-          let obj2 = id(8164);
+          let obj2 = id(8181);
           const assetIds = obj2.fetchAssetIds(id, closure_16);
         }
-        const tmp13 = importDefault(7976)(inviteCode.theme);
+        const tmp13 = importDefault(7993)(inviteCode.theme);
         const baseColors = tmp13.baseColors;
         const guild = invite.guild;
         let name;
@@ -65,7 +65,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
         }
         let simpleChannelIcon = null;
         if (null != channel) {
-          let obj3 = id(4745);
+          let obj3 = id(4762);
           simpleChannelIcon = obj3.getSimpleChannelIcon(channel);
         }
         if (null != simpleChannelIcon) {
@@ -88,7 +88,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           if (null != name) {
             const intl2 = tmp25(1236).intl;
             obj = { channelName: null, guildName: null };
-            let tmp25Result = tmp25(4475);
+            let tmp25Result = tmp25(4492);
             obj[0] = tmp25Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
             obj[1] = name;
             let formatToPartsResult = intl2.formatToParts(tmp25(1236).t.omZR7L, obj);
@@ -108,7 +108,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           }
           if (null != id) {
             if (null != id2) {
-              tmp25Result = tmp25(12520);
+              tmp25Result = tmp25(12535);
               const obj1 = { channelId: null, guildId: null, applicationId: null };
               obj1[0] = id;
               obj1[1] = id2;
@@ -126,15 +126,15 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
                 stringResult = intl3.string(tmp25(1236).t.KC26NR);
               }
             }
-            let assetIds1 = tmp25(8164).getAssetIds(id, closure_16);
+            let assetIds1 = tmp25(8181).getAssetIds(id, closure_16);
             if (assetIds1 == null) {
               assetIds1 = [];
             }
             const first = callback(assetIds1, 1)[0];
             let assetImage;
             if (null != first) {
-              assetImage = tmp25(8164).getAssetImage(id, first, 1024);
-              const tmp25Result2 = tmp25(8164);
+              assetImage = tmp25(8181).getAssetImage(id, first, 1024);
+              const tmp25Result2 = tmp25(8181);
             }
             obj2 = {};
             const merged = Object.assign(baseColors);

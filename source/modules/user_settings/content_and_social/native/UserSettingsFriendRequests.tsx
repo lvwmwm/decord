@@ -1,10 +1,10 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 15770
+// Function ID: 15771
 // Name: UserSettingsFriendRequests
-// Dependencies: [19, 17, 676, 21, 3957, 5934, 5688, 1236, 5689, 1384, 2]
+// Dependencies: [19, 17, 676, 21, 3974, 5953, 5707, 1236, 5708, 1384, 2]
 // Exports: default
 
-// Module 15746 (UserSettingsFriendRequests)
+// Module 15770 (UserSettingsFriendRequests)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";
@@ -20,7 +20,7 @@ const require = arg1;
 const result = require("ME").fileFinishedImporting("modules/user_settings/content_and_social/native/UserSettingsFriendRequests.tsx");
 
 export default function UserSettingsFriendRequests() {
-  let FriendSourceFlagsSetting = setting(3957).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(3974).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = React.useMemo(() => setting(outer1_2[5]).computeFlags(setting), items);
@@ -41,7 +41,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(tmp3);
   };
-  const items1 = [callback(setting(5689).TableSwitchRow, obj), , ];
+  const items1 = [callback(setting(5708).TableSwitchRow, obj), , ];
   const obj1 = { label: null, value: null, onValueChange: null };
   const intl3 = setting(1236).intl;
   obj1[0] = intl3.string(setting(1236).t.IqlCSq);
@@ -56,7 +56,7 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[1] = callback(setting(5689).TableSwitchRow, obj1);
+  items1[1] = callback(setting(5708).TableSwitchRow, obj1);
   const obj2 = { label: null, value: null, onValueChange: null };
   const intl4 = setting(1236).intl;
   obj2[0] = intl4.string(setting(1236).t.mozb8f);
@@ -71,8 +71,8 @@ export default function UserSettingsFriendRequests() {
     }
     return FriendSourceFlagsSetting.updateSetting(addFlagResult);
   };
-  items1[2] = callback(setting(5689).TableSwitchRow, obj2);
+  items1[2] = callback(setting(5708).TableSwitchRow, obj2);
   obj[2] = items1;
-  obj[0] = callback2(setting(5688).TableRowGroup, obj);
+  obj[0] = callback2(setting(5707).TableRowGroup, obj);
   return callback(View, obj);
 };

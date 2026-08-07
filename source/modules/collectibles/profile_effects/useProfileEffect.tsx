@@ -1,10 +1,10 @@
-// Module ID: 8745
-// Function ID: 8746
+// Module ID: 8762
+// Function ID: 8763
 // Name: useProfileEffect
-// Dependencies: [19, 6922, 6938, 6928, 589, 6921, 2]
+// Dependencies: [19, 6941, 6957, 6947, 589, 6940, 2]
 // Exports: default
 
-// Module 8745 (useProfileEffect)
+// Module 8762 (useProfileEffect)
 import noop from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import map from "map";

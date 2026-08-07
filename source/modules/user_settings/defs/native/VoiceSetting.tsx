@@ -1,9 +1,9 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14410
+// Function ID: 14411
 // Name: route
-// Dependencies: [4332, 676, 589, 1236, 10364, 10793, 14395, 2]
+// Dependencies: [4349, 676, 589, 1236, 10380, 10805, 14411, 2]
 
-// Module 14394 (route)
+// Module 14410 (route)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import ME from "ME";
 import createToggle from "createToggle";
@@ -40,7 +40,7 @@ createToggle = {
 createToggle = {
   route: UserSettingsSections.VOICE,
   getComponent() {
-    return require(14395) /* KrispLogo */.default;
+    return require(14411) /* KrispLogo */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

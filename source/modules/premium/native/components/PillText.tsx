@@ -1,10 +1,10 @@
-// Module ID: 12624
-// Function ID: 12625
+// Module ID: 12639
+// Function ID: 12640
 // Name: PillText
-// Dependencies: [676, 21, 4285, 712, 12625, 4706, 4281, 2]
+// Dependencies: [676, 21, 4302, 712, 12640, 4723, 4298, 2]
 // Exports: default
 
-// Module 12624 (PillText)
+// Module 12639 (PillText)
 import { HorizontalGradient } from "ME";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,10 +21,10 @@ export default function PillText(arg0) {
   let style;
   ({ pillText, style } = arg0);
   const tmp = callback();
-  let obj = { style: items, start: HorizontalGradient.START, end: HorizontalGradient.END, colors: importDefault(12625)(), children: null };
+  let obj = { style: items, start: HorizontalGradient.START, end: HorizontalGradient.END, colors: importDefault(12640)(), children: null };
   items = [tmp.pillTextContainer, style];
-  const tmp2 = importDefault(12625)();
+  const tmp2 = importDefault(12640)();
   obj = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText };
-  obj[4] = jsx(require(4281) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
-  return jsx(importDefault(4706), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
+  obj[4] = jsx(require(4298) /* Text */.Text, { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
+  return jsx(importDefault(4723), { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.pillText, children: pillText });
 };

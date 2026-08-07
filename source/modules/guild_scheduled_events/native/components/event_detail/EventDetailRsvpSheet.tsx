@@ -1,9 +1,9 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9084
+// Function ID: 9085
 // Name: EmptyDisplay
-// Dependencies: [19, 17, 4371, 1903, 505, 21, 4285, 712, 5219, 7710, 9068, 4281, 1236, 7890, 5251, 5649, 589, 1297, 9053, 4123, 8706, 9069, 5379, 5744, 2]
+// Dependencies: [19, 17, 4388, 1903, 505, 21, 4302, 712, 5235, 7727, 9085, 4298, 1236, 7907, 5267, 5668, 589, 1297, 9070, 4140, 8723, 9086, 5398, 5763, 2]
 
-// Module 9067 (EmptyDisplay)
+// Module 9084 (EmptyDisplay)
 import importAllResult from "nameFromUser";
 import { View } from "Button";
 import sortActivity from "sortActivity";
@@ -24,8 +24,8 @@ function EmptyDisplay(arg0) {
   const items = [callback3().emptyDisplayContainer, style];
   obj[0] = items;
   obj = { icon: null };
-  obj[0] = importDefault(9068);
-  const items1 = [callback(importDefault(7710), obj), children];
+  obj[0] = importDefault(9085);
+  const items1 = [callback(importDefault(7727), obj), children];
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -34,7 +34,7 @@ function FetchErrorDisplay(style) {
   obj = { style: callback3().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.obChXk);
-  obj[1] = callback(require(4281) /* Text */.Text, obj);
+  obj[1] = callback(require(4298) /* Text */.Text, obj);
   return callback(EmptyDisplay, obj);
 }
 function NoUsersDisplay(style) {
@@ -42,7 +42,7 @@ function NoUsersDisplay(style) {
   obj = { style: callback3().emptyDisplayTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.hW0mBR);
-  obj[1] = callback(require(4281) /* Text */.Text, obj);
+  obj[1] = callback(require(4298) /* Text */.Text, obj);
   return callback(EmptyDisplay, obj);
 }
 function RemainingUsersRow(remainingUsersGroup) {
@@ -50,13 +50,13 @@ function RemainingUsersRow(remainingUsersGroup) {
   let obj = { DEPRECATED_style: tmp.userListRow, leading: null, label: null };
   obj = { style: tmp.remainingUsersIconContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(9068);
+  obj[0] = importDefault(9085);
   obj[1] = tmp.remainingUsersIcon;
-  obj[1] = callback(importDefault(5251), obj);
+  obj[1] = callback(importDefault(5267), obj);
   obj[1] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t.BdQTfR, { userRemainCount: remainingUsersGroup.remainingUsersGroup.count });
-  return callback(require(7890) /* Form */.FormRow, obj, "userRemaining");
+  return callback(require(7907) /* Form */.FormRow, obj, "userRemaining");
 }
 function keyExtractor(count) {
   if (obj.isRemainingUsersGroup(count)) {
@@ -231,7 +231,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   eventUser = eventUser.eventUser;
   let analyticsLocations;
   const tmp = callback3();
-  analyticsLocations = analyticsLocations(5649)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5668)().analyticsLocations;
   let obj = eventUser(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getUser(eventUser.user_id));
@@ -256,12 +256,12 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj1 = { user: stateFromStores, nick: null, usernameStyle: null, nicknameStyle: null };
   const member = eventUser.member;
   let nick;
-  let tmp2Result = tmp2(9053);
+  let tmp2Result = tmp2(9070);
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    tmp2Result = tmp2(4123);
+    tmp2Result = tmp2(4140);
     nick = tmp2Result.getName(eventUser.user);
   }
   obj1[1] = nick;
@@ -270,7 +270,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj[3] = function onPress() {
     analyticsLocations(outer1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(7890).FormRow, obj, eventUser.user_id);
+  return closure_7(eventUser(7907).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 let obj3 = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };

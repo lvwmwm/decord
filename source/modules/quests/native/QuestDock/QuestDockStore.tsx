@@ -1,9 +1,9 @@
-// Module ID: 14249
-// Function ID: 14250
+// Module ID: 14263
+// Function ID: 14264
 // Name: QuestDockMode
-// Dependencies: [5143, 589, 14250, 709, 2]
+// Dependencies: [5160, 589, 14264, 709, 2]
 
-// Module 14249 (QuestDockMode)
+// Module 14263 (QuestDockMode)
 import { QuestDockMode } from "QuestsExperimentLocations";
 import { PersistedStore } from "initialize";
 
@@ -17,8 +17,8 @@ const prototype = QuestDockStore.prototype;
 prototype["initialize"] = function initialize(questDockSoftDismissedAt) {
   if (null != questDockSoftDismissedAt) {
     questDockSoftDismissedAt = questDockSoftDismissedAt.questDockSoftDismissedAt;
-    let closure_2 = require(14250) /* QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED */.isSoftDismissed(questDockSoftDismissedAt) ? tmp4.SOFT_DISMISSED : tmp4.COLLAPSED;
-    const obj = require(14250) /* QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED */;
+    let closure_2 = require(14264) /* QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED */.isSoftDismissed(questDockSoftDismissedAt) ? tmp4.SOFT_DISMISSED : tmp4.COLLAPSED;
+    const obj = require(14264) /* QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED */;
   }
 };
 prototype["getState"] = function getState() {

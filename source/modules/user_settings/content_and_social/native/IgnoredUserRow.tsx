@@ -1,10 +1,10 @@
-// Module ID: 13970
-// Function ID: 13971
+// Module ID: 13984
+// Function ID: 13985
 // Name: IgnoredUserRow
-// Dependencies: [19, 1903, 21, 9162, 5649, 5354, 1297, 1236, 8706, 4695, 589, 2]
+// Dependencies: [19, 1903, 21, 9179, 5668, 5373, 1297, 1236, 8723, 4712, 589, 2]
 // Exports: default
 
-// Module 13970 (IgnoredUserRow)
+// Module 13984 (IgnoredUserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const require = arg1;
 function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5649)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5668)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
   obj = { source: null, size: null };
   obj[0] = userRecord.getAvatarSource(undefined);
@@ -60,8 +60,8 @@ function IgnoredUserRow(userRecord) {
   obj1[3] = function onPress() {
     analyticsLocations(outer1_2[3]).unignoreUser(userRecord.id, "ignored-users-list-mobile");
   };
-  obj[9] = jsx(userRecord(4695).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5354).TableRow, { name: "unignore", label: null });
+  obj[9] = jsx(userRecord(4712).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5373).TableRow, { name: "unignore", label: null });
 }
 const result = require("jsxProd").fileFinishedImporting("modules/user_settings/content_and_social/native/IgnoredUserRow.tsx");
 

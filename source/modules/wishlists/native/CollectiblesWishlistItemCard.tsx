@@ -1,10 +1,10 @@
-// Module ID: 10023
-// Function ID: 10024
+// Module ID: 10039
+// Function ID: 10040
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 6926, 10024, 21, 9269, 589, 9268, 9272, 1930, 9273, 2]
+// Dependencies: [19, 6945, 10040, 21, 9286, 589, 9285, 9289, 1930, 9290, 2]
 // Exports: default
 
-// Module 10023 (CollectiblesWishlistItemCard)
+// Module 10039 (CollectiblesWishlistItemCard)
 import noop from "noop";
 import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse";
 import initialize from "initialize";
@@ -23,6 +23,7 @@ export default function CollectiblesWishlistItemCard(sku) {
   const size = sku.size;
   const merged = Object.assign(sku, Object.create(null));
   let memo;
+  let WishlistItemCardOverlay = size;
   let obj = sku(size[4]);
   const isProfileFrameGiftingEnabled = obj.useIsProfileFrameGiftingEnabled("CollectiblesWishlistItemCard");
   const items = [initialize];
@@ -35,7 +36,6 @@ export default function CollectiblesWishlistItemCard(sku) {
     return hasSentGiftResult;
   }, items1);
   const obj2 = sku(size[5]);
-  let tmp2 = sku;
   const items2 = [sku];
   const productNameAndTypeFromSku = sku(size[6]).getProductNameAndTypeFromSku(sku);
   memo = memo.useMemo(() => outer1_4(sku), items2);
@@ -55,19 +55,23 @@ export default function CollectiblesWishlistItemCard(sku) {
     type = memo.type;
   }
   if ("single" === type) {
-    if (memo.item.type === tmp2(tmp3[8]).CollectiblesItemType.PROFILE_FRAME) {
-      let tmp11Result = null;
+    if (memo.item.type === tmp2(WishlistItemCardOverlay[8]).CollectiblesItemType.PROFILE_FRAME) {
+      if (!isProfileFrameGiftingEnabled) {
+        return null;
+      }
     }
-    return tmp11Result;
   }
-  obj = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source: sku.source, isOwned: null, size: null };
+  obj = { accessibilityLabel: productNameAndTypeFromSku, renderPreview: callback, source: sku.source, size };
   const obj3 = sku(size[6]);
-  const tmp11 = jsx;
-  if (!flag) {
-    flag = stateFromStores;
-  }
-  obj[3] = flag;
-  obj[4] = size;
+  const tmp10 = jsx;
   const merged1 = Object.assign(merged);
-  tmp11Result = tmp11(wishlistOwnerId(size[9]), obj);
+  if (!flag) {
+    if (!stateFromStores) {
+      let OWNED = merged.overlay;
+    }
+    obj.overlay = OWNED;
+    tmp10(tmp11, obj);
+  }
+  WishlistItemCardOverlay = tmp2(WishlistItemCardOverlay[9]).WishlistItemCardOverlay;
+  OWNED = WishlistItemCardOverlay.OWNED;
 };

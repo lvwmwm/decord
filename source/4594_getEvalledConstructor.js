@@ -1,18 +1,45 @@
 // Module ID: 4594
 // Function ID: 4595
 // Name: getEvalledConstructor
-// Dependencies: [540, 4542]
+// Dependencies: [4595, 4596]
 
 // Module 4594 (getEvalledConstructor)
-let closure_2 = require("getEvalledConstructor")("%Object.isExtensible%", true);
+import DefinePropertyOrThrow from "DefinePropertyOrThrow";
 
-export default require("getEvalledConstructor")("%Object.preventExtensions%", true) ? (function IsExtensible(arg0) {
-  const tmp = require(4542) /* isPrimitive */(arg0);
-  let tmp2 = !tmp;
-  if (!tmp) {
-    tmp2 = callback(arg0);
+const tmp = require("getEvalledConstructor")("%Reflect.construct%", true);
+let c0 = tmp;
+try {
+  let obj = { "[[Get]]": null };
+  obj[0] = () => {
+
+  };
+  DefinePropertyOrThrow({}, "", obj);
+  let tmp4 = DefinePropertyOrThrow;
+  if (tmp4) {
+    if (tmp) {
+      let closure_1 = {};
+      obj = {};
+      obj = { "[[Get]]": null, "[[Enumerable]]": true };
+      obj[0] = () => {
+        throw closure_1;
+      };
+      tmp4(obj, "length", obj);
+      module.exports = function IsConstructor(arg0) {
+        try {
+          arg0(arg0, obj);
+        } catch (tmp5) {
+          return tmp5 === closure_1;
+        }
+      };
+    }
   }
-  return tmp2;
-}) : (function IsExtensible(arg0) {
-  return !require(4542) /* isPrimitive */(arg0);
-});
+  module.exports = function IsConstructor(fn) {
+    let prototype = typeof fn === "function";
+    if (typeof fn === "function") {
+      prototype = fn.prototype;
+    }
+    return prototype;
+  };
+} catch (err) {
+  tmp4 = null;
+}

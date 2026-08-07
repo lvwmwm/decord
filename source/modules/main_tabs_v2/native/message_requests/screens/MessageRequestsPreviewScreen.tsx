@@ -1,10 +1,10 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15883
+// Function ID: 15884
 // Name: MessageRequestsScreen
-// Dependencies: [19, 4297, 676, 21, 11719, 9662, 9666, 15860, 10233, 2]
+// Dependencies: [19, 4314, 676, 21, 11734, 9678, 9682, 15884, 10249, 2]
 // Exports: default
 
-// Module 15859 (MessageRequestsScreen)
+// Module 15883 (MessageRequestsScreen)
 import noop from "noop";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import { ME } from "ME";
@@ -15,7 +15,7 @@ const result = require("ME").fileFinishedImporting("modules/main_tabs_v2/native/
 
 export default function MessageRequestsScreen(route) {
   const channelId = route.route.params.channelId;
-  let obj = channelId(11719);
+  let obj = channelId(11734);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer("MessageRequestsPreviewScreen");
   const effect = React.useEffect(() => {
@@ -27,14 +27,14 @@ export default function MessageRequestsScreen(route) {
   if (isMessageRequestRestrictedViewer) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp5Result = tmp5(tmp7(15860), obj);
+    let tmp5Result = tmp5(tmp7(15884), obj);
   } else {
     const obj1 = { guildId: null, channelId: null, chatInputRef: null, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     obj1[0] = tmp6;
     obj1[1] = channelId;
     obj1[2] = ref;
-    tmp5Result = tmp5(tmp7(10233), obj1);
+    tmp5Result = tmp5(tmp7(10249), obj1);
   }
   obj[2] = tmp5Result;
-  return jsx(channelId(9666).ChannelContainer, { guildId: ME, channelId, children: null });
+  return jsx(channelId(9682).ChannelContainer, { guildId: ME, channelId, children: null });
 };

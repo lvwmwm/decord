@@ -1,10 +1,10 @@
-// Module ID: 6551
-// Function ID: 6552
+// Module ID: 6570
+// Function ID: 6571
 // Name: PortalSpotIllustration
-// Dependencies: [21, 5251, 6552, 2]
+// Dependencies: [21, 5267, 6571, 2]
 // Exports: PortalSpotIllustration
 
-// Module 6551 (PortalSpotIllustration)
+// Module 6570 (PortalSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/PortalSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const PortalSpotIllustration = function PortalSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6552);
+  obj[0] = importDefault(6571);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const PortalSpotIllustration = function PortalSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

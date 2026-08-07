@@ -1,10 +1,10 @@
-// Module ID: 5811
-// Function ID: 5812
+// Module ID: 5830
+// Function ID: 5831
 // Name: isSystemMessage
 // Dependencies: [686, 2]
 // Exports: default
 
-// Module 5811 (isSystemMessage)
+// Module 5830 (isSystemMessage)
 const result = require("set").fileFinishedImporting("modules/messages/isSystemMessage.tsx");
 
 export default function isSystemMessage(type) {

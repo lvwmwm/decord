@@ -1,10 +1,10 @@
-// Module ID: 3992
-// Function ID: 3993
+// Module ID: 4009
+// Function ID: 4010
 // Name: chainCallbacks
 // Dependencies: [2]
 // Exports: mergeProps, mergeRefs
 
-// Module 3992 (chainCallbacks)
+// Module 4009 (chainCallbacks)
 function chainCallbacks(arg0, arg1) {
   let closure_0 = [...arguments];
   return () => {

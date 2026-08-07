@@ -1,8 +1,8 @@
-// Module ID: 8863
-// Function ID: 8864
-// Dependencies: [5, 1218, 6906, 1378, 676, 530, 5111, 1222, 8864, 4522, 709, 8869, 11, 2]
+// Module ID: 8880
+// Function ID: 8881
+// Dependencies: [5, 1218, 6925, 1378, 676, 530, 5128, 1222, 8881, 4539, 709, 8886, 11, 2]
 
-// Module 8863
+// Module 8880
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import scheduledEventSort from "scheduledEventSort";
@@ -36,8 +36,8 @@ export default {
     return HTTP.patch(obj);
   },
   joinVoiceEvent(arg0, id) {
-    const voiceChannel = importDefault(5111).selectVoiceChannel(id);
-    const obj = importDefault(5111);
+    const voiceChannel = importDefault(5128).selectVoiceChannel(id);
+    const obj = importDefault(5128);
     require(1222) /* transitionTo */.transitionTo(closure_11.CHANNEL(arg0, id));
   },
   saveEvent(arg0, entityType) {
@@ -55,19 +55,19 @@ export default {
       let obj = /^data:/;
     }
     obj = { name: entityType.name, description: entityType.description, image, privacy_level: entityType.privacyLevel, scheduled_start_time: entityType.scheduledStartTime, scheduled_end_time: entityType.scheduledEndTime, entity_type: entityType.entityType, channel_id: channelId, entity_metadata: entityMetadata, recurrence_rule: null };
-    obj[9] = require(8864) /* EditGuildEventScreens */.recurrenceRuleToServer(entityType.recurrenceRule);
+    obj[9] = require(8881) /* EditGuildEventScreens */.recurrenceRuleToServer(entityType.recurrenceRule);
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_10.GUILD_EVENT(arg2, arg0), body: obj, rejectWithError: null };
-    const obj3 = require(8864) /* EditGuildEventScreens */;
+    const obj3 = require(8881) /* EditGuildEventScreens */;
     obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.patch(obj);
   },
   createGuildEvent(first, id) {
     let obj = { name: first.name, description: first.description, image: first.image, privacy_level: first.privacyLevel, scheduled_start_time: first.scheduledStartTime, scheduled_end_time: first.scheduledEndTime, entity_type: first.entityType, channel_id: first.channelId, entity_metadata: first.entityMetadata, recurrence_rule: null };
-    obj[9] = require(8864) /* EditGuildEventScreens */.recurrenceRuleToServer(first.recurrenceRule);
+    obj[9] = require(8881) /* EditGuildEventScreens */.recurrenceRuleToServer(first.recurrenceRule);
     const HTTP = require(530) /* sendRequest */.HTTP;
     obj = { url: closure_10.GUILD_EVENTS_FOR_GUILD(id), body: obj, rejectWithError: null };
-    const obj2 = require(8864) /* EditGuildEventScreens */;
+    const obj2 = require(8881) /* EditGuildEventScreens */;
     obj[2] = require(530) /* sendRequest */.rejectWithMigratedError();
     return HTTP.post(obj);
   },
@@ -79,7 +79,7 @@ export default {
       let body = tmp5;
       const obj1 = { url: null, rejectWithError: null };
       obj1[0] = outer1_10.GUILD_EVENT(outer1_0, outer1_1);
-      const obj8 = outer1_0(4522);
+      const obj8 = outer1_0(4539);
       obj1[1] = outer1_0(530).rejectWithMigratedError();
       yield obj8.httpGetWithCountryCodeQuery(obj1);
       body = arg1.body;
@@ -99,7 +99,7 @@ export default {
       obj1[0] = outer1_10.GUILD_EVENTS_FOR_GUILD(outer1_0);
       obj1[1] = outer1_0(530).rejectWithMigratedError();
       const obj9 = outer1_0(530);
-      yield outer1_0(4522).httpGetWithCountryCodeQuery(obj1);
+      yield outer1_0(4539).httpGetWithCountryCodeQuery(obj1);
       body = arg1.body;
       const obj = outer1_1(709);
       const obj4 = { type: "FETCH_GUILD_EVENTS_FOR_GUILD", guildId: null, guildScheduledEvents: null };

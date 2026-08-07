@@ -1,10 +1,10 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12012
+// Function ID: 12013
 // Name: getDescriptiveInviteError
-// Dependencies: [1903, 676, 3930, 1236, 1974, 2]
+// Dependencies: [1903, 676, 3947, 1236, 1974, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 11997 (getDescriptiveInviteError)
+// Module 12012 (getDescriptiveInviteError)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 
@@ -37,7 +37,7 @@ export const getDescriptiveInviteError = function getDescriptiveInviteError(code
       return obj;
     }
     tmp14 = closure_7;
-    obj5 = importDefault(3930);
+    obj5 = importDefault(3947);
   } else if (tmp.GUILD_AT_CAPACITY === code) {
     const obj1 = { title: null, description: null };
     const intl5 = require(1236) /* getSystemLocale */.intl;

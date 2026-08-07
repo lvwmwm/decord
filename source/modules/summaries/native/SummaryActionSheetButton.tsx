@@ -1,10 +1,10 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 11051
+// Function ID: 11052
 // Name: SummaryActionSheetButton
-// Dependencies: [19, 17, 21, 4285, 712, 4827, 1297, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4844, 1297, 4298, 2]
 // Exports: SummaryActionSheetButton
 
-// Module 11036 (SummaryActionSheetButton)
+// Module 11051 (SummaryActionSheetButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ export const SummaryActionSheetButton = function SummaryActionSheetButton(label)
   items = [tmp.iconBox];
   obj = { style: tmp.icon, source: iconSource };
   obj[1] = callback(require(1297) /* Button */.Icon, obj);
-  const items1 = [callback(View, obj), callback(require(4281) /* Text */.Text, { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label })];
+  const items1 = [callback(View, obj), callback(require(4298) /* Text */.Text, { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label })];
   obj[4] = items1;
-  return callback2(require(4827) /* PressableBase */.PressableOpacity, obj);
+  return callback2(require(4844) /* PressableBase */.PressableOpacity, obj);
 };

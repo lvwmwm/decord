@@ -1,10 +1,10 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15765
+// Function ID: 15766
 // Name: ContactSuggestionRow
-// Dependencies: [19, 4277, 676, 21, 4123, 4145, 1236, 647, 15092, 15091, 9549, 15450, 15451, 698, 2]
+// Dependencies: [19, 4294, 676, 21, 4140, 4162, 1236, 647, 15108, 15107, 9565, 15474, 15475, 698, 2]
 // Exports: ContactSuggestionRow
 
-// Module 15741 (ContactSuggestionRow)
+// Module 15765 (ContactSuggestionRow)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ME from "ME";

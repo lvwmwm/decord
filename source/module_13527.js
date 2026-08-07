@@ -1,16 +1,15 @@
 // Module ID: 13527
 // Function ID: 13528
-// Dependencies: [13493, 13514, 13528, 13538, 13539]
+// Dependencies: [13518, 13528, 13526, 13529]
 
 // Module 13527
-let closure_2 = require("call")([].concat);
 
-export default require("all")("Reflect", "ownKeys") || (function ownKeys(arg0) {
-  const fResult = require(13528) /* f */.f(require(13538) /* all */(arg0));
-  const f = require(13539).f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = callback(fResult, f(arg0));
+export default require("prop") ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
+  const tmp3 = require(13528) /* all */("Symbol");
+  let tmpResultResult = require(13526) /* all */(tmp3);
+  if (tmpResultResult) {
+    tmpResultResult = require(13529) /* call */(tmp3.prototype, Object(arg0));
+    const tmpResult = require(13529) /* call */;
   }
-  return tmp2;
+  return tmpResultResult;
 });

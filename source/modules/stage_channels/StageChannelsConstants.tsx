@@ -1,10 +1,10 @@
-// Module ID: 5114
-// Function ID: 5115
+// Module ID: 5131
+// Function ID: 5132
 // Name: MAX_STAGE_TOPIC_LENGTH
 // Dependencies: [676, 1236, 1974, 2]
 // Exports: getStagePublicInfoText
 
-// Module 5114 (MAX_STAGE_TOPIC_LENGTH)
+// Module 5131 (MAX_STAGE_TOPIC_LENGTH)
 import { HelpdeskArticles } from "ME";
 
 const result = require("combined").fileFinishedImporting("modules/stage_channels/StageChannelsConstants.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 16456
-// Function ID: 16457
+// Module ID: 16483
+// Function ID: 16484
 // Name: handleGuildCreate
-// Dependencies: [4332, 1960, 4101, 676, 5244, 5878, 5111, 1222, 709, 2]
+// Dependencies: [4349, 1960, 4118, 676, 5260, 5897, 5128, 1222, 709, 2]
 
-// Module 16456 (handleGuildCreate)
+// Module 16483 (handleGuildCreate)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
 import { findFirstVoiceChannelId } from "handleConnectionOpen";
@@ -30,8 +30,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   const channelId = store.getChannelId(closure_9);
   const voiceChannelId = store.getVoiceChannelId();
   if (guild.id === channelId) {
-    require(5878) /* transitionToGuild */.transitionToGuild(guild.id);
-    const obj = require(5878) /* transitionToGuild */;
+    require(5897) /* transitionToGuild */.transitionToGuild(guild.id);
+    const obj = require(5897) /* transitionToGuild */;
   }
   let tmp6 = guild.id === voiceChannelId;
   if (tmp6) {
@@ -41,8 +41,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
     tmp6 = null == voiceChannelId;
   }
   if (tmp6) {
-    const voiceChannel = importDefault(5111).selectVoiceChannel(findFirstVoiceChannelId(guild.id));
-    const obj2 = importDefault(5111);
+    const voiceChannel = importDefault(5128).selectVoiceChannel(findFirstVoiceChannelId(guild.id));
+    const obj2 = importDefault(5128);
   }
 };
 prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
@@ -57,8 +57,8 @@ prototype["handleChannelCreate"] = function handleChannelCreate(channel) {
     const obj3 = store;
     tmp = null == guildId.getGuildId() && null != originChannelId && originChannelId === channelId;
     if (tmp7) {
-      const voiceChannel = importDefault(5111).selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
-      const obj2 = importDefault(5111);
+      const voiceChannel = importDefault(5128).selectVoiceChannel(channel.id, videoEnabled.isVideoEnabled());
+      const obj2 = importDefault(5128);
     }
     tmp7 = null != originChannelId && originChannelId === store.getVoiceChannelId();
   }

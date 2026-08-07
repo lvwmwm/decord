@@ -1,10 +1,10 @@
-// Module ID: 4966
-// Function ID: 4967
+// Module ID: 4983
+// Function ID: 4984
 // Name: StickerFormat
-// Dependencies: [1413, 4967, 2]
+// Dependencies: [1413, 4984, 2]
 // Exports: isAnimatedSticker, isCustomSticker
 
-// Module 4966 (StickerFormat)
+// Module 4983 (StickerFormat)
 import { TypeTag } from "TypeTag";
 
 const result = require("set").fileFinishedImporting("modules/stickers/StickersTypes.tsx");
@@ -13,10 +13,10 @@ export const StickerFormat = require("MetaStickerType").StickerFormat;
 export const MetaStickerType = require("MetaStickerType").MetaStickerType;
 export const StickerExtensions = { PNG: "png", APNG: "png", LOTTIE: "json", WEBP: "webp", GIF: "gif" };
 export const isAnimatedSticker = function isAnimatedSticker(arg0) {
-  return arg0 !== require(4967) /* MetaStickerType */.StickerFormat.PNG;
+  return arg0 !== require(4984) /* MetaStickerType */.StickerFormat.PNG;
 };
 export const isCustomSticker = function isCustomSticker(arg0) {
-  return arg0 !== require(4967) /* MetaStickerType */.MetaStickerType.STANDARD;
+  return arg0 !== require(4984) /* MetaStickerType */.MetaStickerType.STANDARD;
 };
 export const StickerGridItemTypes = { STICKER: 0, [0]: "STICKER", CREATE_STICKER: 1, [1]: "CREATE_STICKER" };
 export const StickerCategoryTypes = { PACK: "PACK", FAVORITE: "FAVORITE", RECENT: "RECENT", SEARCH_RESULTS: "SEARCH_RESULTS", SEARCH_SUGGESTIONS: "SEARCH_SUGGESTIONS", GUILD: "GUILD", EMPTY_GUILD_UPSELL: "EMPTY_GUILD_UPSELL", CREATE_STICKER: "CREATE_STICKER" };

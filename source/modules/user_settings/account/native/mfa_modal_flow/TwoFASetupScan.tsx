@@ -1,10 +1,10 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 13963
+// Function ID: 13964
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 4285, 712, 5677, 13947, 13943, 5311, 1297, 1236, 4281, 4827, 2]
+// Dependencies: [32, 19, 21, 4302, 712, 5696, 13961, 13957, 5327, 1297, 1236, 4298, 4844, 2]
 // Exports: default
 
-// Module 13949 (TwoFASetupScan)
+// Module 13963 (TwoFASetupScan)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import jsxProd from "jsxProd";
@@ -29,9 +29,9 @@ export default function TwoFASetupScan(totpSecret) {
   const items = [totpSecret];
   callback = React.useCallback(() => {
     dependencyMap(true);
-    totpSecret(5677).copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
+    totpSecret(5696).copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(13947);
+  let obj = totpSecret(13961);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: items1, children: null };
@@ -46,7 +46,7 @@ export default function TwoFASetupScan(totpSecret) {
   const intl2 = totpSecret(1236).intl;
   obj1[1] = intl2.string(totpSecret(1236).t["UQR+Qy"]);
   items2[1] = callback2(totpSecret(1297).LegacyText, obj1);
-  items2[2] = callback2(totpSecret(4281).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
+  items2[2] = callback2(totpSecret(4298).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
   const obj2 = { accessibilityRole: "button", onPress: callback, children: null };
   const obj3 = { style: tmp.copy, children: null };
   const intl3 = totpSecret(1236).intl;
@@ -60,8 +60,8 @@ export default function TwoFASetupScan(totpSecret) {
   const obj4 = { children: null };
   obj3[1] = stringResult;
   obj2[2] = callback2(totpSecret(1297).LegacyText, obj3);
-  items2[3] = callback2(totpSecret(4827).PressableOpacity, obj2);
+  items2[3] = callback2(totpSecret(4844).PressableOpacity, obj2);
   obj[2] = items2;
-  obj4[0] = closure_5(totpSecret(5311).SafeAreaPaddingView, obj);
-  return callback2(totpSecret(13943).TwoFASetupModalScreen, obj4);
+  obj4[0] = closure_5(totpSecret(5327).SafeAreaPaddingView, obj);
+  return callback2(totpSecret(13957).TwoFASetupModalScreen, obj4);
 };

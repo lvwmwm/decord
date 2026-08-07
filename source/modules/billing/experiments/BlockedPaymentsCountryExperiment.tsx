@@ -1,10 +1,10 @@
-// Module ID: 6802
-// Function ID: 6803
+// Module ID: 6821
+// Function ID: 6822
 // Name: useBlockedPaymentsConfig
-// Dependencies: [4197, 1452, 6803, 2]
+// Dependencies: [4214, 1452, 6822, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 6802 (useBlockedPaymentsConfig)
+// Module 6821 (useBlockedPaymentsConfig)
 import createExperiment from "createExperiment";
 import ApexExperiment from "ApexExperiment";
 
@@ -21,7 +21,7 @@ export const useBlockedPaymentsConfig = function useBlockedPaymentsConfig() {
     enabled = closure_3.useConfig({ location: "c519a9_1" }).enabled;
   }
   if (!enabled) {
-    enabled = "RU" === importDefault(6803)().defaultBillingCountryCode;
+    enabled = "RU" === importDefault(6822)().defaultBillingCountryCode;
   }
   return enabled;
 };

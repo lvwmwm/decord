@@ -1,10 +1,10 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 16829
+// Function ID: 16830
 // Name: _navigateToGuild
-// Dependencies: [5, 1975, 12882, 8946, 676, 1236, 1351, 5877, 698, 16808, 514, 2]
+// Dependencies: [5, 1975, 12897, 8963, 676, 1236, 1351, 5896, 698, 16828, 514, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 16809 (_navigateToGuild)
+// Module 16829 (_navigateToGuild)
 import getSystemLocale from "getSystemLocale";
 import _getSystemLocale from "_getSystemLocale";
 import map from "map";
@@ -85,7 +85,7 @@ function _navigateToGuild() {
               obj2 = {};
               const merged = Object.assign(c5);
               obj2.loadId = c0;
-              let obj4 = callback2(5877);
+              let obj4 = callback2(5896);
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -272,7 +272,7 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: null, presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "channelId", discoverySplash: "region", emojis: true };
+  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: null, presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "isArray", discoverySplash: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001065950703865552, emojis: 563152819322925.1 };
   obj[6] = new Set(id.features);
   ({ approximate_presence_count: obj[7], approximate_member_count: obj[8], discovery_splash: obj[11] } = id);
   obj[12] = [];
@@ -311,8 +311,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
   let isInitialFetchComplete = store.getIsInitialFetchComplete(closure_9);
   if (!isInitialFetchComplete) {
     if (!isFetching) {
-      const featuredGuilds = importDefault(16808).fetchFeaturedGuilds();
-      const obj = importDefault(16808);
+      const featuredGuilds = importDefault(16828).fetchFeaturedGuilds();
+      const obj = importDefault(16828);
     }
   }
   if (isInitialFetchComplete) {
@@ -322,8 +322,8 @@ export const handleTabPressPrefetch = function handleTabPressPrefetch() {
     isInitialFetchComplete = null != error;
   }
   if (isInitialFetchComplete) {
-    const featuredGuilds1 = importDefault(16808).fetchFeaturedGuilds({ forceRefresh: true });
-    const obj2 = importDefault(16808);
+    const featuredGuilds1 = importDefault(16828).fetchFeaturedGuilds({ forceRefresh: true });
+    const obj2 = importDefault(16828);
   }
 };
 export const makeAnalyticsID = function makeAnalyticsID() {

@@ -1,9 +1,9 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7524
+// Function ID: 7525
 // Name: ACRequestOperations
 // Dependencies: [2]
 
-// Module 7505 (ACRequestOperations)
+// Module 7524 (ACRequestOperations)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ACRequestOperations.tsx");
 
 export const ACRequestOperations = { CREATE: "ac_create", REACTIVATE: "ac_reactivate", CHARGE: "ac_charge", CANCEL: "ac_cancel", MODIFY: "ac_modify" };

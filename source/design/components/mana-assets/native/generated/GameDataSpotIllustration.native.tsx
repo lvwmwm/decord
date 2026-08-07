@@ -1,10 +1,10 @@
-// Module ID: 6211
-// Function ID: 6212
+// Module ID: 6230
+// Function ID: 6231
 // Name: GameDataSpotIllustration
-// Dependencies: [21, 5251, 6212, 2]
+// Dependencies: [21, 5267, 6231, 2]
 // Exports: GameDataSpotIllustration
 
-// Module 6211 (GameDataSpotIllustration)
+// Module 6230 (GameDataSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GameDataSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GameDataSpotIllustration = function GameDataSpotIllustration(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6212);
+  obj[0] = importDefault(6231);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameDataSpotIllustration = function GameDataSpotIllustration(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8027
+// Function ID: 8028
 // Name: getHumanizedCallDuration
 // Dependencies: [2]
 // Exports: default
 
-// Module 8010 (getHumanizedCallDuration)
+// Module 8027 (getHumanizedCallDuration)
 const result = require("set").fileFinishedImporting("modules/messages/getHumanizedCallDuration.tsx");
 
 export default function getHumanizedCallDuration(call) {

@@ -1,9 +1,9 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16426
+// Function ID: 16427
 // Name: AddAvatarScreen
-// Dependencies: [5, 32, 19, 17, 8185, 676, 21, 4285, 712, 5250, 5219, 1609, 589, 8198, 16401, 8227, 4841, 8188, 8190, 4281, 1236, 16410, 1297, 4695, 16398, 503, 5929, 5253, 5704, 2]
+// Dependencies: [5, 32, 19, 17, 8202, 676, 21, 4302, 712, 5266, 5235, 1609, 589, 8215, 16427, 8244, 4858, 8205, 8207, 4298, 1236, 16436, 1297, 4712, 16424, 503, 5948, 5269, 5723, 2]
 
-// Module 16400 (AddAvatarScreen)
+// Module 16426 (AddAvatarScreen)
 import closure_3 from "ME";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -62,7 +62,7 @@ function AddAvatarScreen() {
               dependencyMap = 1;
               c3 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = outer1_0(4841).openImagePicker(obj1);
+              obj2[0] = outer1_0(4858).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -78,19 +78,19 @@ function AddAvatarScreen() {
             if (null == base64) {
               let pendingImage;
               if (null != outer1_0) {
-                obj = outer1_0(8198);
+                obj = outer1_0(8215);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = outer1_0(8198);
+                obj2 = outer1_0(8215);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
               const outer1_1 = pendingImage;
-              obj3 = outer1_0(8188);
+              obj3 = outer1_0(8205);
               let obj5 = { avatar: null };
               obj5[0] = outer1_1;
               obj3.setPendingChanges(obj5);
-              obj5 = outer1_0(8190);
+              obj5 = outer1_0(8207);
               let str = "set";
               if (null == outer1_1) {
                 str = "remove";
@@ -127,10 +127,10 @@ function AddAvatarScreen() {
   let pendingImage;
   const stateFromStores = obj.useStateFromStores(items, () => pendingChanges.getPendingChanges().pendingAvatar);
   if (null != first) {
-    let tmp9Result = tmp9(8198);
+    let tmp9Result = tmp9(8215);
     obj = { imageUri: null, description: null };
-    obj[0] = tmp9(16401).DEFAULT_AVATARS[first];
-    tmp9Result = tmp9(8198);
+    obj[0] = tmp9(16427).DEFAULT_AVATARS[first];
+    tmp9Result = tmp9(8215);
     obj[1] = tmp9Result.generateAvatarDescription();
     pendingImage = tmp9Result.createPendingImage(obj);
   }
@@ -144,7 +144,7 @@ function AddAvatarScreen() {
   }
   const items1 = [tmp.container, ];
   let num = 16;
-  const tmp9Result1 = require(8227) /* useDominantRGBFromImage */;
+  const tmp9Result1 = require(8244) /* useDominantRGBFromImage */;
   if (bottom > 0) {
     num = bottom;
   }
@@ -155,16 +155,16 @@ function AddAvatarScreen() {
   let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp9(1236).intl;
   obj3[4] = intl.string(require(1236) /* getSystemLocale */.t.XQRWvR);
-  const items2 = [callback(require(4281) /* Text */.Text, obj3), ];
+  const items2 = [callback(require(4298) /* Text */.Text, obj3), ];
   let obj4 = { style: tmp.subtitle, variant: "heading-deprecated-12/medium", color: "text-default", children: null };
   const intl2 = tmp9(1236).intl;
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.fH9TLT);
-  items2[1] = callback(require(4281) /* Text */.Text, obj4);
+  items2[1] = callback(require(4298) /* Text */.Text, obj4);
   obj2[0] = items2;
   const items3 = [closure_10(View, obj2), , ];
-  const memoizedImageSourceResult = require(8227) /* useDominantRGBFromImage */.memoizedImageSource(imageUri);
-  items3[1] = callback(first(16410), {
-    avatarSource: require(8227) /* useDominantRGBFromImage */.memoizedImageSource(imageUri),
+  const memoizedImageSourceResult = require(8244) /* useDominantRGBFromImage */.memoizedImageSource(imageUri);
+  items3[1] = callback(first(16436), {
+    avatarSource: require(8244) /* useDominantRGBFromImage */.memoizedImageSource(imageUri),
     showPendingAvatar: null != pendingImage,
     onSelectAvatar: function handleSelectAvatar() {
       const self = this;
@@ -187,7 +187,7 @@ function AddAvatarScreen() {
   obj6[1] = callback(require(1297) /* Button */.LegacyText, obj7);
   items3[2] = callback(View, obj6);
   obj1[1] = items3;
-  const items4 = [closure_10(View, obj1), callback(first(16401), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
+  const items4 = [closure_10(View, obj1), callback(first(16427), { onAvatarSelect: tmp4[1], selectedAvatar: first }), ];
   const obj8 = { style: tmp.buttonContainer, children: null };
   const obj9 = { text: null, grow: true, onPress: null, disabled: null };
   const intl4 = tmp9(1236).intl;
@@ -196,7 +196,7 @@ function AddAvatarScreen() {
     return outer1_0(tmp6[24]).handlePressNext(pendingImage, first);
   };
   obj9[3] = null == pendingImage;
-  obj8[1] = callback(require(4695) /* Button */.Button, obj9);
+  obj8[1] = callback(require(4712) /* Button */.Button, obj9);
   items4[2] = callback(View, obj8);
   obj[1] = items4;
   return closure_10(View, obj);
@@ -214,7 +214,7 @@ class AddAvatarModal {
           obj[1] = function onPress() {
             return callback(table[24]).showSkipAvatarModal();
           };
-          return callback2(callback(5929).HeaderActionButton, obj);
+          return callback2(callback(5948).HeaderActionButton, obj);
         },
         headerLeft() {
           return null;
@@ -224,7 +224,7 @@ class AddAvatarModal {
         fullscreen: true,
         render: null
       };
-      obj[3] = callback(5253).getHeaderNoTitle();
+      obj[3] = callback(5269).getHeaderNoTitle();
       obj[6] = function render() {
         return callback2(closure_12, {});
       };

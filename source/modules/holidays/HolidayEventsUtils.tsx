@@ -1,32 +1,32 @@
-// Module ID: 16351
-// Function ID: 16352
+// Module ID: 16377
+// Function ID: 16378
 // Name: HolidayEmojiAnimationType
-// Dependencies: [16348, 2]
+// Dependencies: [16374, 2]
 
-// Module 16351 (HolidayEmojiAnimationType)
+// Module 16377 (HolidayEmojiAnimationType)
 const result = require("set").fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
 
 export default {
   isEligible() {
-    const isExperimentEligible = importDefault(16348).getIsExperimentEligible();
+    const isExperimentEligible = importDefault(16374).getIsExperimentEligible();
     const timestamp = Date.now();
-    const obj = importDefault(16348);
+    const obj = importDefault(16374);
     const tmp = importDefault;
-    return timestamp >= importDefault(16348).startTimeMs && timestamp <= importDefault(16348).endTimeMs && isExperimentEligible;
+    return timestamp >= importDefault(16374).startTimeMs && timestamp <= importDefault(16374).endTimeMs && isExperimentEligible;
   },
   useHolidaySoundpack() {
-    let obj = importDefault(16348);
+    let obj = importDefault(16374);
     const isExperimentEligible = obj.useIsExperimentEligible();
     const timestamp = Date.now();
     let tmp6 = null;
     if (tmp5) {
       tmp6 = null;
-      if (null != tmp(16348).soundpack) {
+      if (null != tmp(16374).soundpack) {
         tmp6 = null;
-        if (null != tmp(16348).soundpackLabel) {
+        if (null != tmp(16374).soundpackLabel) {
           obj = { soundpack: null, soundpackLabel: null };
-          obj[0] = tmp(16348).soundpack;
-          obj[1] = tmp(16348).soundpackLabel;
+          obj[0] = tmp(16374).soundpack;
+          obj[1] = tmp(16374).soundpackLabel;
           tmp6 = obj;
         }
       }
@@ -34,17 +34,17 @@ export default {
     return tmp6;
   },
   useIsEligible() {
-    const isExperimentEligible = importDefault(16348).useIsExperimentEligible();
+    const isExperimentEligible = importDefault(16374).useIsExperimentEligible();
     const timestamp = Date.now();
-    const obj = importDefault(16348);
+    const obj = importDefault(16374);
     const tmp = importDefault;
-    return timestamp >= importDefault(16348).startTimeMs && timestamp <= importDefault(16348).endTimeMs && isExperimentEligible;
+    return timestamp >= importDefault(16374).startTimeMs && timestamp <= importDefault(16374).endTimeMs && isExperimentEligible;
   },
   getAppSpinnerSources() {
     const timestamp = Date.now();
     let appSpinnerSources = null;
     if (tmp4) {
-      appSpinnerSources = tmp2(16348).appSpinnerSources;
+      appSpinnerSources = tmp2(16374).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -52,25 +52,25 @@ export default {
     const timestamp = Date.now();
     let tmp5 = null;
     if (tmp4) {
-      const getLoadingTips = tmp2(16348).getLoadingTips;
+      const getLoadingTips = tmp2(16374).getLoadingTips;
       let loadingTips;
       if (getLoadingTips != null) {
         loadingTips = getLoadingTips();
       }
       tmp5 = loadingTips;
-      const tmp2Result = tmp2(16348);
+      const tmp2Result = tmp2(16374);
     }
     return tmp5;
   },
   getHolidaySoundpack() {
-    const isExperimentEligible = importDefault(16348).getIsExperimentEligible();
+    const isExperimentEligible = importDefault(16374).getIsExperimentEligible();
     const timestamp = Date.now();
-    const obj = importDefault(16348);
+    const obj = importDefault(16374);
     let soundpack = null;
     if (tmp5) {
       soundpack = null;
-      if (null != tmp(16348).soundpack) {
-        soundpack = tmp(16348).soundpack;
+      if (null != tmp(16374).soundpack) {
+        soundpack = tmp(16374).soundpack;
       }
     }
     return soundpack;

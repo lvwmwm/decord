@@ -1,10 +1,10 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 15956
+// Function ID: 15957
 // Name: useLaunchpadAnimatedStyles
-// Dependencies: [10360, 500, 4285, 10126, 14974, 1609, 4145, 4694, 2]
+// Dependencies: [10376, 500, 4302, 10142, 14990, 1609, 4162, 4711, 2]
 // Exports: default
 
-// Module 15930 (useLaunchpadAnimatedStyles)
+// Module 15956 (useLaunchpadAnimatedStyles)
 import { LAUNCH_PAD_SPRING_CONFIG } from "LAUNCH_PAD_SPRING_CONFIG";
 import set from "set";
 import createCacheKey from "createCacheKey";

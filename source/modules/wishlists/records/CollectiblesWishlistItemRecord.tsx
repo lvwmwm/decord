@@ -1,10 +1,10 @@
-// Module ID: 9278
-// Function ID: 9279
+// Module ID: 9295
+// Function ID: 9296
 // Name: createCollectiblesItemFromServerResponse
-// Dependencies: [6927, 6926, 1928, 6928, 6929, 4324, 9277, 676, 1930, 2]
+// Dependencies: [6946, 6945, 1928, 6947, 6948, 4341, 9294, 676, 1930, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 9278 (createCollectiblesItemFromServerResponse)
+// Module 9295 (createCollectiblesItemFromServerResponse)
 import fromServer from "fromServer";
 import { transformSKUToCollectiblesItem as closure_3 } from "createCollectiblesItemsFromServerResponse";
 import closure_4 from "fromServer";

@@ -1,10 +1,10 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 15965
+// Function ID: 15966
 // Name: useSimpleGuildSize
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 15939 (useSimpleGuildSize)
+// Module 15965 (useSimpleGuildSize)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useSimpleGuildSize.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12667
+// Function ID: 12668
 // Name: isUserEligibleBasedOnCurrentOrPreviousSubs
-// Dependencies: [5, 1903, 3936, 6835, 6782, 7265, 1905, 676, 3866, 3930, 500, 4521, 6802, 12653, 12654, 647, 6832, 7262, 12655, 12656, 4604, 7565, 2]
+// Dependencies: [5, 1903, 3953, 6854, 6801, 7284, 1905, 676, 3883, 3947, 500, 4538, 6821, 12668, 12669, 647, 6851, 7281, 12670, 12671, 4621, 7584, 2]
 // Exports: maybeFetchActiveBogoPromotion, useIsEligibleForBogoPromotion
 
-// Module 12652 (isUserEligibleBasedOnCurrentOrPreviousSubs)
+// Module 12667 (isUserEligibleBasedOnCurrentOrPreviousSubs)
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -30,11 +30,11 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
         const endedAt = mostRecentSubscription.endedAt;
         if (null != endedAt) {
           if (mostRecentSubscription.hasPremiumAtLeast(closure_10.TIER_2)) {
-            const obj = importDefault(3866)();
+            const obj = importDefault(3883)();
             if (subtractResult.isBefore(endedAt)) {
               return false;
             }
-            subtractResult = importDefault(3866)().subtract(10, "days");
+            subtractResult = importDefault(3883)().subtract(10, "days");
           }
         }
       }
@@ -44,11 +44,11 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
         const endedAt2 = previousPremiumSubscription.endedAt;
         if (null != endedAt2) {
           if (previousPremiumSubscription.hasPremiumAtLeast(closure_10.TIER_2)) {
-            const obj3 = importDefault(3866)();
+            const obj3 = importDefault(3883)();
             if (subtractResult1.isBefore(endedAt2)) {
               return false;
             }
-            subtractResult1 = importDefault(3866)().subtract(10, "days");
+            subtractResult1 = importDefault(3883)().subtract(10, "days");
           }
         }
       }
@@ -61,8 +61,8 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
       }
       let isPremiumExactlyResult = hasActiveTrial;
       if (isPremiumExactlyResult) {
-        isPremiumExactlyResult = importDefault(3930).isPremiumExactly(currentUser, tmp22.TIER_0);
-        const obj5 = importDefault(3930);
+        isPremiumExactlyResult = importDefault(3947).isPremiumExactly(currentUser, tmp22.TIER_0);
+        const obj5 = importDefault(3947);
       }
       const hasPremiumAtLeastResult = premiumSubscription.hasPremiumAtLeast(closure_10.TIER_2);
       tmp22 = closure_10;
@@ -72,7 +72,7 @@ function isUserEligibleBasedOnCurrentOrPreviousSubs(experimentEnabled) {
       }
       return false;
     }
-    const isMobile = require(4521) /* isTablet */.isMobile;
+    const isMobile = require(4538) /* isTablet */.isMobile;
     let tmp20 = !isMobile;
     if (isMobile) {
       tmp20 = !fractionalPremiumActive.isFractionalPremiumActive();
@@ -159,13 +159,13 @@ function _isEligibleForBOGOPromotion() {
                   isClaimedResult = currentUser2.isClaimed();
                 }
                 dependencyMap = !isClaimedResult;
-                let obj2 = flag(6802);
+                let obj2 = flag(6821);
                 isPaymentsBlocked = obj2.getIsPaymentsBlocked();
-                let obj3 = flag(12654);
+                let obj3 = flag(12669);
                 authStore = obj3.getBogoPromotionGateEnabled("bogo eligibility async check");
-                let obj4 = flag(12656);
+                let obj4 = flag(12671);
                 store = obj4.getBogoMarketingMaterialsEnabled("bogo marketing eligibility async check");
-                const isMobile = flag(4521).isMobile;
+                const isMobile = flag(4538).isMobile;
                 let isAndroidResult = !isMobile;
                 if (isMobile) {
                   let obj5 = flag(500);
@@ -195,7 +195,7 @@ function _isEligibleForBOGOPromotion() {
                             isPaymentsBlocked = 2;
                             authStore = 1;
                             obj2 = { value: null, done: false };
-                            obj2[0] = flag(4604).fetchMostRecentSubscription();
+                            obj2[0] = flag(4621).fetchMostRecentSubscription();
                             return obj2;
                           }
                         }
@@ -241,7 +241,7 @@ function _isEligibleForBOGOPromotion() {
               isPaymentsBlocked = 3;
               authStore = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = flag(4604).fetchSubscriptions();
+              obj6[0] = flag(4621).fetchSubscriptions();
               return obj6;
             }
           }
@@ -370,27 +370,27 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   if (arg0 === undefined) {
     flag = true;
   }
-  const isPaymentsBlocked = require(6802) /* useBlockedPaymentsConfig */.useIsPaymentsBlocked();
-  const obj = require(6802) /* useBlockedPaymentsConfig */;
-  const promotion = require(12653) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
-  const obj2 = require(12653) /* useEligibleActiveOutboundPromotions */;
-  const bogoPromotionGateEnabled = require(12654) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
-  const obj3 = require(12654) /* apexExperiment */;
+  const isPaymentsBlocked = require(6821) /* useBlockedPaymentsConfig */.useIsPaymentsBlocked();
+  const obj = require(6821) /* useBlockedPaymentsConfig */;
+  const promotion = require(12668) /* useEligibleActiveOutboundPromotions */.useBogoPromotion().promotion;
+  const obj2 = require(12668) /* useEligibleActiveOutboundPromotions */;
+  const bogoPromotionGateEnabled = require(12669) /* apexExperiment */.useBogoPromotionGateEnabled("bogo eligibility hook");
+  const obj3 = require(12669) /* apexExperiment */;
   const items = [reset];
   const stateFromStoresObject = require(647) /* defaultAreStatesEqual */.useStateFromStoresObject(items, () => ({ mostRecentSubscription: store.getMostRecentPremiumTypeSubscription(), premiumSubscription: store.getPremiumTypeSubscription(), previousPremiumSubscription: store.getPreviousPremiumTypeSubscription() }));
   ({ mostRecentSubscription, premiumSubscription, previousPremiumSubscription } = stateFromStoresObject);
   const obj4 = require(647) /* defaultAreStatesEqual */;
-  const premiumTrialOffer = require(6832) /* usePremiumTrialOffer */.usePremiumTrialOffer();
-  const obj5 = require(6832) /* usePremiumTrialOffer */;
+  const premiumTrialOffer = require(6851) /* usePremiumTrialOffer */.usePremiumTrialOffer();
+  const obj5 = require(6851) /* usePremiumTrialOffer */;
   let num;
-  const premiumDiscountOffer = require(7262) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
+  const premiumDiscountOffer = require(7281) /* usePremiumDiscountOffer */.usePremiumDiscountOffer();
   if (promotion != null) {
     num = promotion.endDate;
   }
   if (num == null) {
     num = 0;
   }
-  const obj6 = require(7262) /* usePremiumDiscountOffer */;
+  const obj6 = require(7281) /* usePremiumDiscountOffer */;
   const valueOfResult = new Date(num).valueOf();
   const timestamp = Date.now();
   let num2 = -1;
@@ -398,15 +398,15 @@ export const useIsEligibleForBogoPromotion = function useIsEligibleForBogoPromot
   if (timestamp <= valueOfResult) {
     num2 = valueOfResult - timestamp;
   }
-  importDefault(12655)({ delay: num2 });
-  const isMobile = tmp(4521).isMobile;
+  importDefault(12670)({ delay: num2 });
+  const isMobile = tmp(4538).isMobile;
   let isAndroidResult = !isMobile;
   if (isMobile) {
     let tmpResult = tmp(500);
     isAndroidResult = tmpResult.isAndroid();
   }
-  const tmp11 = importDefault(12655);
-  tmpResult = tmp(12656);
+  const tmp11 = importDefault(12670);
+  tmpResult = tmp(12671);
   let bogoMarketingMaterialsEnabled = tmpResult.useBogoMarketingMaterialsEnabled("bogo marketing eligibility hook");
   let tmp16 = !tmp10;
   if (timestamp <= valueOfResult) {

@@ -1,9 +1,9 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15165
+// Function ID: 15166
 // Name: GuildChannels
-// Dependencies: [32, 19, 17, 4277, 6905, 15072, 1891, 1960, 4357, 676, 21, 1483, 4135, 9470, 1348, 15150, 15168, 15202, 14255, 15071, 15203, 15169, 15205, 6916, 589, 6915, 15206, 15210, 6908, 15211, 10169, 15057, 14256, 10921, 5636, 15262, 15264, 15277, 7931, 15280, 15282, 15286, 15287, 15171, 15224, 15288, 15290, 1894, 8602, 15294, 11213, 2]
+// Dependencies: [32, 19, 17, 4294, 6924, 15088, 1891, 1960, 4374, 676, 21, 1483, 4152, 9487, 1348, 15166, 15184, 15226, 14269, 15087, 15227, 15185, 15229, 6935, 589, 6934, 15230, 15234, 6927, 15235, 10185, 15073, 14270, 10936, 5655, 15286, 15288, 15301, 7948, 15304, 15306, 15310, 15311, 15187, 15248, 15312, 15314, 1894, 8619, 15318, 11228, 2]
 
-// Module 15149 (GuildChannels)
+// Module 15165 (GuildChannels)
 import useYouBarTotalHeight from "useYouBarTotalHeight";
 import importAllResult from "context";
 import { View } from "registerGuildVisibilityMethod";
@@ -57,7 +57,7 @@ function FavoriteChannels(arg0) {
   let hasNoChannels;
   let shouldShowEmptyState;
   let obj = dependencyMap;
-  let obj1 = require(15287) /* getMissingFavoriteThreadIds */;
+  let obj1 = require(15311) /* getMissingFavoriteThreadIds */;
   const favoritesGuildChannelList = obj1.useFavoritesGuildChannelList({ withUpsellNotice: true });
   ({ guildChannels, shouldShowEmptyState, hasNoChannels } = favoritesGuildChannelList);
   if (!obj3.useShouldRenderChannelList()) {
@@ -70,17 +70,17 @@ function FavoriteChannels(arg0) {
       obj = { guild: null, showExtraButtons: false, canOpenGuildActionSheet: false };
       guild = guild.guild;
       obj[0] = guild;
-      const items = [callback(importDefault(15171), obj), ];
+      const items = [callback(importDefault(15187), obj), ];
       let tmp11Result = null;
       if (shouldShowEmptyState) {
         obj = { variant: "empty" };
-        tmp11Result = tmp11(tmp9(15224), obj);
-        const tmp9Result = tmp9(15224);
+        tmp11Result = tmp11(tmp9(15248), obj);
+        const tmp9Result = tmp9(15248);
       }
       items[1] = tmp11Result;
       obj[2] = items;
-      let tmp8Result = closure_15(importDefault(15262), obj);
-      const tmp10 = importDefault(15262);
+      let tmp8Result = closure_15(importDefault(15286), obj);
+      const tmp10 = importDefault(15286);
       tmp11 = callback;
       const tmp8 = closure_15;
       tmp9 = importDefault;
@@ -106,7 +106,7 @@ function ChannelsWrapper(selectedGuildId) {
   if (selectedGuildId === closure_13) {
     obj = { style: null };
     obj[0] = merged.style;
-    let tmp6Result = callback(importDefault(15288), obj);
+    let tmp6Result = callback(importDefault(15312), obj);
   } else {
     if (null != stateFromStores) {
       if (selectedGuildId !== closure_12) {
@@ -119,12 +119,12 @@ function ChannelsWrapper(selectedGuildId) {
           obj.selectedVoiceChannelId = stateFromStores1;
           tmp6Result = callback(FavoriteChannels, obj);
         } else {
-          tmp2Result = tmp2(8602);
+          tmp2Result = tmp2(8619);
           if (tmp2Result.shouldNSFWGateGuild(selectedGuildId)) {
             obj1 = { style: null, guildId: null };
             obj1[0] = merged.style;
             obj1[1] = selectedGuildId;
-            tmp6Result = tmp6(importDefault(15294), obj1);
+            tmp6Result = tmp6(importDefault(15318), obj1);
           } else {
             const obj2 = {};
             const merged2 = Object.assign(merged);
@@ -139,7 +139,7 @@ function ChannelsWrapper(selectedGuildId) {
     const obj3 = { style: null, selectedGuildId: null };
     obj3[0] = merged.style;
     obj3[1] = selectedGuildId;
-    tmp6Result = callback(importDefault(15290), obj3);
+    tmp6Result = callback(importDefault(15314), obj3);
   }
   return tmp6Result;
 }
@@ -419,7 +419,7 @@ const memoResult = importAllResult.memo((arg0) => {
   let obj = { children: null };
   obj = {};
   const merged = Object.assign(arg0);
-  const items = [callback(ChannelsWrapper, obj), callback(require(11213) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
+  const items = [callback(ChannelsWrapper, obj), callback(require(11228) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "channel-list", checkFocusedScreen: "guilds" })];
   obj[0] = items;
   return callback2(closure_16, obj);
 });

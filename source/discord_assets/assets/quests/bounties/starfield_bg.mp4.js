@@ -1,9 +1,9 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14224
+// Function ID: 14225
 // Name: metadata
 // Dependencies: [2]
 
-// Module 14210 (metadata)
+// Module 14224 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/quests/bounties/starfield_bg.mp4.js");
 
 export default "https://cdn.discordapp.com/assets/content/8f5669d3d1da0a93884c4c7a868d13f6d942c2d63f5c0b400597fc86a7f2f037.mp4";

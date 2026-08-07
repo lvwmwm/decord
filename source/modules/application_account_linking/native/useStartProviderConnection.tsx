@@ -1,10 +1,10 @@
-// Module ID: 5667
-// Function ID: 5668
+// Module ID: 5686
+// Function ID: 5687
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 5668, 3981, 2]
+// Dependencies: [5, 19, 5687, 3998, 2]
 // Exports: useStartProviderConnection
 
-// Module 5667 (useStartProviderConnection)
+// Module 5686 (useStartProviderConnection)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import noop from "noop";
 
@@ -16,7 +16,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
   let canConnect;
   let hasConnection;
   let loading;
-  let obj = _require(5668);
+  let obj = _require(5687);
   const providerConnection = obj.useProviderConnection(provider_id);
   const startConnection = providerConnection.startConnection;
   _require = startConnection;

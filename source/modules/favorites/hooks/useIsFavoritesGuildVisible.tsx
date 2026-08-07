@@ -1,18 +1,18 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15394
+// Function ID: 15395
 // Name: useIsFavoritesGuildVisible
-// Dependencies: [4101, 1375, 1894, 9638, 9629, 9637, 589, 2]
+// Dependencies: [4118, 1375, 1894, 9654, 9645, 9653, 589, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 15370 (useIsFavoritesGuildVisible)
+// Module 15394 (useIsFavoritesGuildVisible)
 import handleConnectionOpen from "handleConnectionOpen";
 import initializeFromUserSettings from "initializeFromUserSettings";
 
 const require = arg1;
 let result = require("getFavoritesAwareGuildName").fileFinishedImporting("modules/favorites/hooks/useIsFavoritesGuildVisible.tsx");
 
-export default function useIsFavoritesGuildVisible(FavoritesGuildChannelList) {
-  const favoritesAccess = isExperimentEnabled(isFreemium[4]).useFavoritesAccess(FavoritesGuildChannelList);
+export default function useIsFavoritesGuildVisible(FavoritesGuildActionSheet) {
+  const favoritesAccess = isExperimentEnabled(isFreemium[4]).useFavoritesAccess(FavoritesGuildActionSheet);
   isExperimentEnabled = favoritesAccess.isExperimentEnabled;
   isFreemium = favoritesAccess.isFreemium;
   const hasAccess = favoritesAccess.hasAccess;
@@ -49,9 +49,9 @@ export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
   let hasAccess;
   let isExperimentEnabled;
   let isFreemium;
-  const favoritesAccess = require(9629) /* useFavoritesAccess */.getFavoritesAccess();
+  const favoritesAccess = require(9645) /* useFavoritesAccess */.getFavoritesAccess();
   ({ isExperimentEnabled, isFreemium, hasAccess } = favoritesAccess);
-  const obj = require(9629) /* useFavoritesAccess */;
+  const obj = require(9645) /* useFavoritesAccess */;
   const obj2 = handleConnectionOpen;
   const tmp4 = initializeFromUserSettings;
   let tmp5 = isExperimentEnabled;
@@ -63,7 +63,7 @@ export const isFavoritesGuildVisible = function isFavoritesGuildVisible() {
       if (!isFavoritesGuildIdResult) {
         let isFavoritesGuildEnabled = hasAccess;
         if (isFavoritesGuildEnabled) {
-          tmpResult = tmp(9638);
+          tmpResult = tmp(9654);
           isFavoritesGuildEnabled = tmpResult.computeIsFavoritesGuildEnabled(isFreemium, tmp4);
         }
         isFavoritesGuildIdResult = isFavoritesGuildEnabled;

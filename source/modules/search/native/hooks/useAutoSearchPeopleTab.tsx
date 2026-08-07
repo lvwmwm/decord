@@ -1,10 +1,10 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15719
+// Function ID: 15720
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 11629, 11643, 9004, 11653, 12, 11628, 2]
+// Dependencies: [19, 11644, 11658, 9021, 11668, 12, 11643, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 15695 (useAutoSearchPeopleTab)
+// Module 15719 (useAutoSearchPeopleTab)
 import noop from "noop";
 import prototype from "prototype";
 import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME";

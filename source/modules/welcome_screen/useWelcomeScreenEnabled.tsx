@@ -1,10 +1,10 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 11945
+// Function ID: 11946
 // Name: useWelcomeScreenEnabled
 // Dependencies: [1376, 1372, 1891, 1960, 676, 589, 2]
 // Exports: default
 
-// Module 11930 (useWelcomeScreenEnabled)
+// Module 11945 (useWelcomeScreenEnabled)
 import { isGuildTextChannelType } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

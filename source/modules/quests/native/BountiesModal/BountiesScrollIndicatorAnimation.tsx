@@ -1,10 +1,10 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14210
+// Function ID: 14211
 // Name: BountiesScrollIndicatorAnimation
-// Dependencies: [32, 19, 17, 21, 4285, 3988, 712, 3996, 2]
+// Dependencies: [32, 19, 17, 21, 4302, 4005, 712, 4013, 2]
 // Exports: default
 
-// Module 14196 (BountiesScrollIndicatorAnimation)
+// Module 14210 (BountiesScrollIndicatorAnimation)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -19,7 +19,7 @@ export default function BountiesScrollIndicatorAnimation(startAnimation) {
   let tmp6;
   let tmp7;
   const visible = startAnimation.visible;
-  let obj = require(3988) /* map */;
+  let obj = require(4005) /* map */;
   const token = obj.useToken(importDefault(712).colors.TEXT_DEFAULT);
   const tmp = callback2();
   const tmp2 = require;
@@ -31,7 +31,7 @@ export default function BountiesScrollIndicatorAnimation(startAnimation) {
       tmp7((arg0) => arg0 + 1);
     }
   }
-  obj = { style: tmp.container, children: jsx(tmp2(3996).BountiesScrollIndicatorRive, { stateMachine: "State Machine 1", fit: "contain", dataBinding: obj }, tmp6) };
+  obj = { style: tmp.container, children: jsx(tmp2(4013).BountiesScrollIndicatorRive, { stateMachine: "State Machine 1", fit: "contain", dataBinding: obj }, tmp6) };
   obj = { color: token, startAnimation: !startAnimation.isFadingInContent };
   return <View color={token} startAnimation={!arg0.isFadingInContent} />;
 };

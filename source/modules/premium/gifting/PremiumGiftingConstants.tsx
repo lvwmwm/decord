@@ -1,9 +1,9 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12078
+// Function ID: 12079
 // Name: GIFT_STYLE_DESCRIPTIONS
 // Dependencies: [1905, 2348, 2]
 
-// Module 12063 (GIFT_STYLE_DESCRIPTIONS)
+// Module 12078 (GIFT_STYLE_DESCRIPTIONS)
 let BOX;
 let CAKE;
 let CHEST;

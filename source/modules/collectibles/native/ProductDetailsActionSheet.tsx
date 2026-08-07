@@ -1,10 +1,10 @@
-// Module ID: 9353
-// Function ID: 9354
+// Module ID: 9370
+// Function ID: 9371
 // Name: PreviewProfileTrigger
-// Dependencies: [32, 19, 17, 6922, 678, 676, 505, 21, 4285, 712, 4699, 3996, 4130, 1236, 8420, 1930, 9266, 8706, 9352, 7333, 9354, 5649, 5669, 6933, 9355, 9356, 9265, 9267, 503, 9292, 698, 9321, 589, 9357, 9358, 8213, 9323, 6934, 9325, 9326, 3943, 9359, 5377, 5379, 9328, 9360, 9482, 9488, 1297, 9489, 7334, 4253, 9491, 500, 2]
+// Dependencies: [32, 19, 17, 6941, 678, 676, 505, 21, 4302, 712, 4716, 4013, 4147, 1236, 8437, 1930, 9283, 8723, 9369, 7352, 9371, 5668, 5688, 6952, 9372, 9373, 9282, 9284, 503, 9309, 698, 9338, 589, 9374, 9375, 8230, 9340, 6953, 9342, 9343, 3960, 9376, 5396, 5398, 9345, 9377, 9499, 9505, 1297, 9506, 7353, 4270, 9508, 500, 2]
 // Exports: default
 
-// Module 9353 (PreviewProfileTrigger)
+// Module 9370 (PreviewProfileTrigger)
 import initialize from "initialize";
 import apexExperiment from "apexExperiment";
 import noop from "apexExperiment";
@@ -36,9 +36,9 @@ function PreviewProfileTrigger(handlePreviewPress) {
   let closure_5;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = handlePreviewPress(3996);
+  let obj = handlePreviewPress(4013);
   const theme = obj.useThemeContext().theme;
-  const isThemeLightResult = handlePreviewPress(4130).isThemeLight(theme);
+  const isThemeLightResult = handlePreviewPress(4147).isThemeLight(theme);
   initialize = theme === constants2.MIDNIGHT;
   React = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
   closure_5 = isThemeLightResult ? tmp.previewProfileButtonLightPressed : tmp.previewProfileButtonDarkPressed;
@@ -70,7 +70,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   obj[3] = intl.string(handlePreviewPress(1236).t["3Qcx6K"]);
   obj = { size: "md", color: null };
   obj[1] = onTrackPress(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[4] = callback3(handlePreviewPress(8420).EyeIcon, obj);
+  obj[4] = callback3(handlePreviewPress(8437).EyeIcon, obj);
   return callback3(closure_7, obj);
 }
 function ProductDetailsActionSheetInner(product) {
@@ -430,5 +430,5 @@ export default function ProductDetailsActionSheet(shopAnalyticsContext) {
   obj = {};
   const merged1 = Object.assign(merged);
   obj[1] = callback3(ProductDetailsActionSheetWithOrderCTX, obj);
-  return callback3(require(9265) /* context */.CollectiblesAnalyticsProvider, obj);
+  return callback3(require(9282) /* context */.CollectiblesAnalyticsProvider, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 11379
-// Function ID: 11380
+// Module ID: 11394
+// Function ID: 11395
 // Name: getSimilarApplications
 // Dependencies: [1386, 589, 709, 2]
 
-// Module 11379 (getSimilarApplications)
+// Module 11394 (getSimilarApplications)
 import { Store } from "initialize";
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", ERROR: 3, [3]: "ERROR" };

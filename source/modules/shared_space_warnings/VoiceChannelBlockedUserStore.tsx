@@ -1,9 +1,9 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12924
+// Function ID: 12925
 // Name: init
-// Dependencies: [3921, 4301, 12910, 589, 709, 2]
+// Dependencies: [3938, 4318, 12925, 589, 709, 2]
 
-// Module 12909 (init)
+// Module 12924 (init)
 import upsertRelationship from "upsertRelationship";
 import updateVoiceState from "updateVoiceState";
 import { Store } from "initialize";
@@ -49,8 +49,8 @@ function processUserInChannel(channelId, id) {
             delete tmp[tmp2];
           }
           if (flag3) {
-            const result = importDefault(12910).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
-            const obj4 = importDefault(12910);
+            const result = importDefault(12925).handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, id);
+            const obj4 = importDefault(12925);
           }
           return flag4;
         }

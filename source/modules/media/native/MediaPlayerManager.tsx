@@ -1,10 +1,10 @@
-// Module ID: 13714
-// Function ID: 13715
+// Module ID: 13728
+// Function ID: 13729
 // Name: _initialize
-// Dependencies: [17, 1371, 4495, 1372, 4502, 3912, 6797, 676, 9676, 13715, 505, 3, 644, 705, 4463, 4136, 709, 500, 643, 6838, 9679, 2]
+// Dependencies: [17, 1371, 4512, 1372, 4519, 3929, 6816, 676, 9692, 13729, 505, 3, 644, 705, 4480, 4153, 709, 500, 643, 6857, 9695, 2]
 // Exports: isPlaybackComplete
 
-// Module 13714 (_initialize)
+// Module 13728 (_initialize)
 import get_ActivityIndicator from "set";
 import participantFromServer from "participantFromServer";
 import withEqualityFn from "withEqualityFn";
@@ -28,21 +28,12 @@ let map1;
 let closure_16 = new require("ensureGuildLoaded")("MediaPlayerManager");
 let obj = keys.create((arg0) => {
   let closure_0 = arg0;
-  return {
-    activeMediaPlayerSource: "T",
-    mediaSourceMessage: "Path",
-    canAccessMedia: "sa",
-    isPlaying: false,
-    wasPipClosedByUser: null,
-    progress: null,
-    rate: "PX_8",
-    showPip: "simple-action",
-    closePip() {
-      callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
-    },
-    displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: null
+  const obj = { activeMediaPlayerSource: "T", mediaSourceMessage: "Path", canAccessMedia: "sa", isPlaying: false, wasPipClosedByUser: null, progress: null, rate: "PX_8", showPip: 16, closePip: 32, displayedMediaItemIdsPerChannel: 32, currentlyDisplayedChannelId: null };
+  obj[8] = function closePip() {
+    callback(outer1_2[13]).batchUpdates(() => callback({ showPip: false }));
   };
+  obj[9] = {};
+  return obj;
 });
 class MediaPlayerManager extends tmp8 {
   constructor() {
@@ -80,7 +71,7 @@ prototype["_initialize"] = function _initialize() {
   this.subscriptions = items;
   let MediaPlayerManager = closure_4.MediaPlayerManager;
   const result = MediaPlayerManager.subscribeToPlaybackEvents();
-  const rootNavigationRef = require(4136) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.addListener("state", self.updateDisplayState);
   }
@@ -88,7 +79,7 @@ prototype["_initialize"] = function _initialize() {
   participantFromServer.addChangeListener(self.handleEmbeddedActivitiesUpdated);
   ensureGuildLoaded.addChangeListener(self.updateMediaPermissions);
   getUncachedChannelPermissions.addChangeListener(self.updateMediaPermissions);
-  const obj2 = require(4136) /* getRootNavigationRef */;
+  const obj2 = require(4153) /* getRootNavigationRef */;
   const tmp2 = require;
   const subscription = importDefault(709).subscribe("LOGOUT", self.userDidClosePip);
   const obj4 = importDefault(709);
@@ -140,7 +131,7 @@ prototype["_terminate"] = function _terminate() {
   const subscriptions = this.subscriptions;
   const item = subscriptions.forEach((remove) => remove.remove());
   this.subscriptions = [];
-  const rootNavigationRef = require(4136) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     rootNavigationRef.removeListener("state", self.updateDisplayState);
   }
@@ -155,7 +146,7 @@ prototype["_terminate"] = function _terminate() {
   participantFromServer.removeChangeListener(self.handleEmbeddedActivitiesUpdated);
   ensureGuildLoaded.removeChangeListener(self.updateMediaPermissions);
   getUncachedChannelPermissions.removeChangeListener(self.updateMediaPermissions);
-  const obj = require(4136) /* getRootNavigationRef */;
+  const obj = require(4153) /* getRootNavigationRef */;
   importDefault(709).unsubscribe("LOGOUT", self.userDidClosePip);
 };
 prototype["pauseCurrentPlayer"] = function pauseCurrentPlayer(arg0) {
@@ -349,13 +340,13 @@ prototype["getOrFetchMediaSourceMessage"] = function getOrFetchMediaSourceMessag
         const obj = { channelId: null, messageId: null };
         obj[0] = channelId;
         obj[1] = messageId;
-        const message1 = self(6838).fetchMessage(obj);
+        const message1 = self(6857).fetchMessage(obj);
         message1.then((arg0) => {
           if (null != arg0) {
             const result = self.handleMediaSourceMessageUpdated(arg0);
           }
         });
-        const obj2 = self(6838);
+        const obj2 = self(6857);
       }
       obj4 = message;
     }

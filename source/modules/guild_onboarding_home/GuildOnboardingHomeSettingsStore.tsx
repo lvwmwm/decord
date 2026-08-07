@@ -1,9 +1,9 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4503
+// Function ID: 4504
 // Name: handleSettingsLoadSuccess
 // Dependencies: [589, 709, 2]
 
-// Module 4486 (handleSettingsLoadSuccess)
+// Module 4503 (handleSettingsLoadSuccess)
 import { Store } from "initialize";
 import set from "set";
 

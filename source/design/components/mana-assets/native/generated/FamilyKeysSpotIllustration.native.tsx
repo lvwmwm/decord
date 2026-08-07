@@ -1,10 +1,10 @@
-// Module ID: 6189
-// Function ID: 6190
+// Module ID: 6208
+// Function ID: 6209
 // Name: FamilyKeysSpotIllustration
-// Dependencies: [21, 5251, 6190, 2]
+// Dependencies: [21, 5267, 6209, 2]
 // Exports: FamilyKeysSpotIllustration
 
-// Module 6189 (FamilyKeysSpotIllustration)
+// Module 6208 (FamilyKeysSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/FamilyKeysSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const FamilyKeysSpotIllustration = function FamilyKeysSpotIllustration(wi
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6190);
+  obj[0] = importDefault(6209);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const FamilyKeysSpotIllustration = function FamilyKeysSpotIllustration(wi
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

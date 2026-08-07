@@ -1,9 +1,9 @@
-// Module ID: 12896
-// Function ID: 12897
+// Module ID: 12911
+// Function ID: 12912
 // Name: initialize
-// Dependencies: [11700, 676, 3, 15, 707, 698, 589, 709, 2]
+// Dependencies: [11715, 676, 3, 15, 707, 698, 589, 709, 2]
 
-// Module 12896 (initialize)
+// Module 12911 (initialize)
 import initialize from "initialize";
 import { AnalyticEvents } from "ME";
 import { Store } from "initialize";

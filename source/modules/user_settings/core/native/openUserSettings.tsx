@@ -1,17 +1,17 @@
-// Module ID: 5937
-// Function ID: 5938
+// Module ID: 5956
+// Function ID: 5957
 // Name: openUserSettings
-// Dependencies: [5938, 676, 4136, 709, 2]
+// Dependencies: [5957, 676, 4153, 709, 2]
 // Exports: openUserSettings
 
-// Module 5937 (openUserSettings)
+// Module 5956 (openUserSettings)
 import handleFormClose from "handleFormClose";
 import { UserSettingsSections } from "ME";
 
 const result = require("getRootNavigationRef").fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");
 
 export const openUserSettings = (screen) => {
-  let obj = require(4136) /* getRootNavigationRef */;
+  let obj = require(4153) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp2) {
     screen = undefined;

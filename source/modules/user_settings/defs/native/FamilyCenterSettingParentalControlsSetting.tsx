@@ -1,9 +1,9 @@
-// Module ID: 14089
-// Function ID: 14090
+// Module ID: 14103
+// Function ID: 14104
 // Name: route
-// Dependencies: [8005, 676, 10364, 1236, 2284, 14090, 2]
+// Dependencies: [8022, 676, 10380, 1236, 2284, 14104, 2]
 
-// Module 14089 (route)
+// Module 14103 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
   getComponent() {
-    return require(14090) /* FamilyCenterParentalControlsSettings */.default;
+    return require(14104) /* FamilyCenterParentalControlsSettings */.default;
   }
 };
 const route = createToggle.createRoute(obj);

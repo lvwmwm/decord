@@ -1,9 +1,9 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 13015
+// Function ID: 13016
 // Name: start
-// Dependencies: [7123, 4381, 12, 2]
+// Dependencies: [7142, 4398, 12, 2]
 
-// Module 13001 (start)
+// Module 13015 (start)
 const result = require("apply").fileFinishedImporting("lib/SystemResponsiveness.tsx");
 class SystemResponsiveness {
   constructor(arg0) {
@@ -38,11 +38,11 @@ class SystemResponsiveness {
 const prototype = SystemResponsiveness.prototype;
 prototype["start"] = function start() {
   const connection = this.connection;
-  connection.on(require(4381) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.on(require(4398) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["stop"] = function stop() {
   const connection = this.connection;
-  connection.off(require(4381) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
+  connection.off(require(4398) /* BaseConnectionEvent */.BaseConnectionEvent.Stats, this.sampleStats);
 };
 prototype["getPttQueueLatencyStats"] = function getPttQueueLatencyStats() {
   const pttQueueLatencyHistogram = this.pttQueueLatencyHistogram;

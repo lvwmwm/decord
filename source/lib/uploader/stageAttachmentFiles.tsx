@@ -1,10 +1,10 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7241
+// Function ID: 7242
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 676, 4831, 2]
+// Dependencies: [5, 676, 4848, 2]
 // Exports: default
 
-// Module 7222 (_stageAttachmentFiles)
+// Module 7241 (_stageAttachmentFiles)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { AbortCodes } from "ME";
 

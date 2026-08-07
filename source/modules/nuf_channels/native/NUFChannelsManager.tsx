@@ -1,9 +1,9 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12962
+// Function ID: 12963
 // Name: _initialize
-// Dependencies: [1971, 1891, 4101, 1903, 676, 3900, 595, 4123, 5244, 4136, 4135, 1384, 4253, 12949, 1988, 2]
+// Dependencies: [1971, 1891, 4118, 1903, 676, 3917, 595, 4140, 5260, 4153, 4152, 1384, 4270, 12963, 1988, 2]
 
-// Module 12948 (_initialize)
+// Module 12962 (_initialize)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -95,8 +95,8 @@ class NUFChannelsManager extends tmp2 {
       const value = Storage.get(closure_10);
       let isNewUserResult = !value;
       if (!value) {
-        isNewUserResult = applyArgumentsResult(4123).isNewUser(currentUser.getCurrentUser());
-        const tmpResult = applyArgumentsResult(4123);
+        isNewUserResult = applyArgumentsResult(4140).isNewUser(currentUser.getCurrentUser());
+        const tmpResult = applyArgumentsResult(4140);
       }
       return isNewUserResult;
     };
@@ -119,11 +119,11 @@ prototype["_initialize"] = function _initialize() {
   const value = Storage.get(c9);
   let isNewUserResult = !value;
   if (!value) {
-    let tmpResult = tmp(4123);
+    let tmpResult = tmp(4140);
     isNewUserResult = tmpResult.isNewUser(currentUser.getCurrentUser());
   }
   if (isNewUserResult) {
-    tmpResult = tmp(4136);
+    tmpResult = tmp(4153);
     const rootNavigationRef = tmpResult.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const self = this;
@@ -132,7 +132,7 @@ prototype["_initialize"] = function _initialize() {
   }
 };
 prototype["_terminate"] = function _terminate() {
-  const rootNavigationRef = require(4136) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
   if (rootNavigationRef != null) {
     const self = this;
     rootNavigationRef.removeListener("state", this.handleNavigationStateChanged);

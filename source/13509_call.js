@@ -1,11 +1,10 @@
 // Module ID: 13509
 // Function ID: 13510
 // Name: call
-// Dependencies: [13493, 13510]
+// Dependencies: [13507]
 
 // Module 13509 (call)
-let closure_2 = require("call")({}.hasOwnProperty);
+let closure_0 = require("call")({}.toString);
+let closure_1 = require("call")("".slice);
 
-export default Object.hasOwn || (function hasOwn(arg0, arg1) {
-  return callback(require(13510)(arg0), arg1);
-});
+export default (arg0) => callback2(callback(arg0), 8, -1);

@@ -1,10 +1,10 @@
-// Module ID: 11094
-// Function ID: 11095
+// Module ID: 11109
+// Function ID: 11110
 // Name: AdContentImpressionTrackerBaseNative
-// Dependencies: [32, 19, 6797, 9438, 676, 21, 7666, 8776, 589, 10406, 10407, 7109, 2]
+// Dependencies: [32, 19, 6816, 9455, 676, 21, 7685, 8793, 589, 10422, 10423, 7128, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 11094 (AdContentImpressionTrackerBaseNative)
+// Module 11109 (AdContentImpressionTrackerBaseNative)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getState from "getState";
@@ -20,7 +20,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let tmp3 = obj.useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
   const ref = React.useRef(null);
   const tmp5 = visibilityRef;
-  let obj1 = adContentIds2(10406);
+  let obj1 = adContentIds2(10422);
   const adContentImpressionTrackerProps = obj1.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   obj = {};
@@ -33,9 +33,9 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let overrideVisibility = obj.overrideVisibility;
   let dependencyMap;
   const joined = adContentIds2.join("_");
-  let tmp6 = visibilityRef(8776)(tmp3);
+  let tmp6 = visibilityRef(8793)(tmp3);
   let items1 = [joined];
-  const tmp10 = callback(adContentIds2(7666).useRecyclingState(false, items1), 2);
+  const tmp10 = callback(adContentIds2(7685).useRecyclingState(false, items1), 2);
   dependencyMap = tmp11;
   let items2 = [adContentIds2, tmp10[1], visibilityRef];
   const effect = React.useEffect(() => {
@@ -143,7 +143,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   if (overrideVisibility == null) {
     overrideVisibility = tmp10[0];
   }
-  obj = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(8776)(overrideVisibility) };
+  obj = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(8793)(overrideVisibility) };
   obj1 = {};
   const merged1 = Object.assign(skipRemountKey);
   const merged2 = Object.assign(obj);
@@ -160,13 +160,13 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   obj2.key = key;
   obj2.adContentIds = adContentIds;
   if (tmp17) {
-    obj2.adCreativeType = tmp(7109).AdCreativeType.QUEST;
+    obj2.adCreativeType = tmp(7128).AdCreativeType.QUEST;
     let tmp19 = obj2;
   } else {
     obj2.adCreativeType = skipRemountKey.adCreativeType;
     tmp19 = obj2;
   }
-  return createElement(adContentIds2(10407).QuestContentImpressionTracker, tmp19);
+  return createElement(adContentIds2(10423).QuestContentImpressionTracker, tmp19);
 }
 const result = require("getState").fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
 

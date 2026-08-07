@@ -1,8 +1,8 @@
-// Module ID: 8388
-// Function ID: 8389
-// Dependencies: [19, 17, 21, 4285, 500, 5353, 7713, 1297, 8389, 8390, 8392, 4281, 2]
+// Module ID: 8405
+// Function ID: 8406
+// Dependencies: [19, 17, 21, 4302, 500, 5372, 7730, 1297, 8406, 8407, 8409, 4298, 2]
 
-// Module 8388
+// Module 8405
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     let obj1 = require(500) /* set */;
     str = "visible-password";
   }
-  const context = importAllResult.useContext(require(5353) /* context */.RedesignCompatContext);
+  const context = importAllResult.useContext(require(5372) /* context */.RedesignCompatContext);
   const id = importAllResult.useId();
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
@@ -64,7 +64,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     obj[8] = str;
     obj[9] = isAndroidResult;
     obj[10] = merged.autoCapitalize;
-    return callback(tmp8(7713).TextInput, obj);
+    return callback(tmp8(7730).TextInput, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = style;
@@ -74,7 +74,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
       obj1[0] = tmp2.label;
       obj1[1] = id;
       obj1[2] = label;
-      tmp14 = callback(importDefault(8389), obj1);
+      tmp14 = callback(importDefault(8406), obj1);
     }
     const items = [tmp14, , , ];
     const obj2 = {};
@@ -96,13 +96,13 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
     obj2.keyboardType = str;
     const items1 = [tmp2.input, accessibilityLabel.textStyle];
     obj2.style = items1;
-    items[1] = callback(importDefault(8390), obj2);
+    items[1] = callback(importDefault(8407), obj2);
     let tmp17Result = null;
     if (null != error) {
       const obj3 = { style: null, children: null };
       obj3[0] = tmp2.error;
       obj3[1] = error;
-      tmp17Result = tmp17(importDefault(8392), obj3);
+      tmp17Result = tmp17(importDefault(8409), obj3);
     }
     items[2] = tmp17Result;
     tmp17Result = null;
@@ -110,7 +110,7 @@ const forwardRefResult = importAllResult.forwardRef((accessibilityLabel, ref) =>
       const obj4 = { style: null, variant: "text-xs/medium", color: "text-muted", children: null };
       obj4[0] = tmp2.hint;
       obj4[3] = hint;
-      tmp17Result = tmp17(tmp8(4281).Text, obj4);
+      tmp17Result = tmp17(tmp8(4298).Text, obj4);
     }
     items[3] = tmp17Result;
     obj[1] = items;

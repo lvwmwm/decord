@@ -1,10 +1,10 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 6849
+// Function ID: 6850
 // Name: useInterval
 // Dependencies: [19, 38, 2]
 // Exports: default
 
-// Module 6830 (useInterval)
+// Module 6849 (useInterval)
 import noop from "noop";
 
 let c3;

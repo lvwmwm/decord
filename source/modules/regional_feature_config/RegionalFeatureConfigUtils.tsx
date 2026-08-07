@@ -1,10 +1,10 @@
-// Module ID: 3963
-// Function ID: 3964
+// Module ID: 3980
+// Function ID: 3981
 // Name: isFeatureAgeGated
-// Dependencies: [3964, 589, 2]
+// Dependencies: [3981, 589, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 3963 (isFeatureAgeGated)
+// Module 3980 (isFeatureAgeGated)
 import getRegionalFeatureConfig from "getRegionalFeatureConfig";
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 10332
-// Function ID: 10333
+// Module ID: 10348
+// Function ID: 10349
 // Name: redeemGiftCode
-// Dependencies: [5, 676, 6802, 7366, 709, 530, 698, 4184, 4490, 10333, 1988, 2]
+// Dependencies: [5, 676, 6821, 7385, 709, 530, 698, 4201, 4507, 10349, 1988, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 10332 (redeemGiftCode)
+// Module 10348 (redeemGiftCode)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -91,7 +91,7 @@ function _redeemGiftCode() {
               return obj1;
             } else {
               if (obj18.getIsPaymentsBlocked()) {
-                options(7366)();
+                options(7385)();
                 paymentSource = 3;
                 return { value: "T", done: null };
               } else {
@@ -129,12 +129,12 @@ function _redeemGiftCode() {
                 obj5[0] = HTTP.post(obj3);
                 return obj5;
               }
-              obj18 = callback(6802);
+              obj18 = callback(6821);
             }
           } else if (2 === tmp7) {
             channelId = 0;
             let closure_10 = c3;
-            billingError = new callback(4184).BillingError(closure_10);
+            billingError = new callback(4201).BillingError(closure_10);
             obj3 = options(709);
             obj6 = { type: "GIFT_CODE_REDEEM_FAILURE", code: null, error: null };
             obj6[1] = callback;
@@ -198,9 +198,9 @@ function _redeemGiftCode() {
   return applyArgumentsResult;
 }
 function openGiftCodeRedeemModal(code) {
-  let obj = importDefault(4490);
+  let obj = importDefault(4507);
   obj = { code };
-  obj.pushLazy(require(1988) /* asyncRequireImpl */(10333, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(require(1988) /* asyncRequireImpl */(10349, dependencyMap.paths), obj, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: c4, AnalyticEvents: c5 } = ME);
 let closure_6 = Object.freeze({});

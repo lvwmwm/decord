@@ -1,9 +1,9 @@
-// Module ID: 6912
-// Function ID: 6913
+// Module ID: 6931
+// Function ID: 6932
 // Name: guildHasCommunity
-// Dependencies: [1340, 1218, 1372, 1961, 1971, 1891, 4297, 4480, 676, 687, 5821, 709, 5236, 11, 589, 2]
+// Dependencies: [1340, 1218, 1372, 1961, 1971, 1891, 4314, 4497, 676, 687, 5840, 709, 5252, 11, 589, 2]
 
-// Module 6912 (guildHasCommunity)
+// Module 6931 (guildHasCommunity)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -22,7 +22,7 @@ let closure_14;
 let map1;
 const require = arg1;
 function guildHasCommunity(nextResult) {
-  const guild = store2.getGuild(nextResult);
+  const guild = store.getGuild(nextResult);
   let hasItem;
   if (guild != null) {
     const features = guild.features;
@@ -32,7 +32,7 @@ function guildHasCommunity(nextResult) {
 }
 function seedCommunityBaseline() {
   set1.clear();
-  const guildIds = store2.getGuildIds();
+  const guildIds = store.getGuildIds();
   const iter = guildIds[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
@@ -46,6 +46,41 @@ function seedCommunityBaseline() {
     continue;
   }
   return false;
+}
+function maybeAckViewedChannel(guildId, channelId) {
+  let closure_0 = channelId;
+  let tmp = null != obj && null != channelId && obj.has(channelId);
+  if (tmp) {
+    const guild = store.getGuild(guildId);
+    let hasItem;
+    if (guild != null) {
+      const features = guild.features;
+      hasItem = features.has(constants.COMMUNITY);
+    }
+    tmp = true === hasItem;
+  }
+  if (tmp) {
+    channel = channel.getChannel(channelId);
+    let isThreadResult;
+    if (channel != null) {
+      isThreadResult = channel.isThread();
+    }
+    tmp = !isThreadResult;
+  }
+  if (tmp) {
+    tmp = null == store2.ackMessageId(channelId);
+  }
+  if (tmp) {
+    tmp = 0 === store2.getMentionCount(channelId);
+  }
+  if (tmp) {
+    importDefault(709).wait(() => {
+      let obj = channelId(outer1_2[12]);
+      obj = { object: outer1_12.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: outer1_13.ACK_AUTOMATIC };
+      return obj.ack(channelId, obj, true, true, outer1_1(outer1_2[13]).atPreviousMillisecond(channelId));
+    });
+    const obj3 = importDefault(709);
+  }
 }
 function initializeNewChannels(guildId) {
   let closure_0 = guildId;
@@ -136,7 +171,7 @@ prototype["shouldIndicateNewChannel"] = function shouldIndicateNewChannel(guild_
   if (null == guild_id) {
     return false;
   } else {
-    const guild = store2.getGuild(guild_id);
+    const guild = store.getGuild(guild_id);
     let tmp2 = null == guild;
     if (!tmp2) {
       const features = guild.features;
@@ -156,7 +191,7 @@ prototype["shouldIndicateNewChannel"] = function shouldIndicateNewChannel(guild_
         hasItem = obj.has(id);
       }
       if (hasItem) {
-        hasItem = null == generateOldThreadCutoff.getTrackedAckMessageId(id);
+        hasItem = null == store2.getTrackedAckMessageId(id);
       }
       tmp3 = hasItem;
     }
@@ -187,108 +222,38 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     if (null == guildId) {
       return false;
     } else {
-      let tmp6 = null == dependencyMap[guildId];
-      if (!tmp6) {
+      let tmp2 = null == dependencyMap[guildId];
+      if (!tmp2) {
         const _Date = Date;
         const timestamp = Date.now();
-        tmp6 = table[guildId] < timestamp - importDefault(687).Millis.HOUR;
+        tmp2 = table[guildId] < timestamp - importDefault(687).Millis.HOUR;
       }
       let flag = false;
-      if (tmp6) {
+      if (tmp2) {
         initializeNewChannels(guildId);
         flag = true;
       }
       if (null != channelId) {
-        let isOptInEnabledResult = null != obj3 && null != channelId && obj3.has(channelId);
-        if (isOptInEnabledResult) {
-          isOptInEnabledResult = updateUserGuildSettingsInternal.isOptInEnabled(guildId);
-        }
-        if (isOptInEnabledResult) {
-          const channel = store.getChannel(channelId);
-          let isThreadResult;
-          if (channel != null) {
-            isThreadResult = channel.isThread();
-          }
-          isOptInEnabledResult = !isThreadResult;
-        }
-        if (isOptInEnabledResult) {
-          isOptInEnabledResult = null == generateOldThreadCutoff.ackMessageId(channelId);
-        }
-        if (isOptInEnabledResult) {
-          importDefault(709).wait(() => {
-            let obj = baseChannelId(outer1_2[12]);
-            obj = { object: outer1_12.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: outer1_13.ACK_AUTOMATIC };
-            return obj.ack(baseChannelId, obj, true, true, outer1_1(outer1_2[13]).atPreviousMillisecond(baseChannelId));
-          });
-          const obj2 = importDefault(709);
-        }
+        maybeAckViewedChannel(guildId, channelId);
       }
       return flag;
     }
   },
-  SIDEBAR_VIEW_CHANNEL: function handleSidebarViewChannel(arg0) {
-    let channelId;
-    let guildId;
-    ({ guildId, channelId } = arg0);
+  SIDEBAR_VIEW_CHANNEL: function handleSidebarViewChannel(guildId) {
+    guildId = guildId.guildId;
     let tmp2 = null == guildId;
     if (!tmp2) {
-      tmp2 = tmp !== channelId(5821).SidebarType.VIEW_CHANNEL;
+      tmp2 = tmp !== require(5840) /* SidebarType */.SidebarType.VIEW_CHANNEL;
     }
     if (!tmp2) {
-      let isOptInEnabledResult = null != obj && null != channelId && obj.has(channelId);
-      if (isOptInEnabledResult) {
-        isOptInEnabledResult = updateUserGuildSettingsInternal.isOptInEnabled(guildId);
-      }
-      if (isOptInEnabledResult) {
-        const channel = store.getChannel(channelId);
-        let isThreadResult;
-        if (channel != null) {
-          isThreadResult = channel.isThread();
-        }
-        isOptInEnabledResult = !isThreadResult;
-      }
-      if (isOptInEnabledResult) {
-        isOptInEnabledResult = null == generateOldThreadCutoff.ackMessageId(channelId);
-      }
-      if (isOptInEnabledResult) {
-        importDefault(709).wait(() => {
-          let obj = baseChannelId(outer1_2[12]);
-          obj = { object: outer1_12.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: outer1_13.ACK_AUTOMATIC };
-          return obj.ack(baseChannelId, obj, true, true, outer1_1(outer1_2[13]).atPreviousMillisecond(baseChannelId));
-        });
-        const obj3 = importDefault(709);
-      }
+      maybeAckViewedChannel(guildId, guildId.channelId);
     }
     return false;
   },
-  SIDEBAR_VIEW_GUILD: function handleSidebarViewGuild(arg0) {
-    let baseChannelId;
-    let guildId;
-    ({ guildId, baseChannelId } = arg0);
+  SIDEBAR_VIEW_GUILD: function handleSidebarViewGuild(guildId) {
+    guildId = guildId.guildId;
     if (null != guildId) {
-      let isOptInEnabledResult = null != obj3 && null != baseChannelId && obj3.has(baseChannelId);
-      if (isOptInEnabledResult) {
-        isOptInEnabledResult = updateUserGuildSettingsInternal.isOptInEnabled(guildId);
-      }
-      if (isOptInEnabledResult) {
-        const channel = store.getChannel(baseChannelId);
-        let isThreadResult;
-        if (channel != null) {
-          isThreadResult = channel.isThread();
-        }
-        isOptInEnabledResult = !isThreadResult;
-      }
-      if (isOptInEnabledResult) {
-        isOptInEnabledResult = null == generateOldThreadCutoff.ackMessageId(baseChannelId);
-      }
-      if (isOptInEnabledResult) {
-        importDefault(709).wait(() => {
-          let obj = baseChannelId(outer1_2[12]);
-          obj = { object: outer1_12.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED, objectType: outer1_13.ACK_AUTOMATIC };
-          return obj.ack(baseChannelId, obj, true, true, outer1_1(outer1_2[13]).atPreviousMillisecond(baseChannelId));
-        });
-        const obj2 = importDefault(709);
-      }
+      maybeAckViewedChannel(guildId, tmp);
     }
     return false;
   },
@@ -296,7 +261,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
   CACHE_LOADED: seedCommunityBaseline,
   GUILD_CREATE: function handleGuildCreate(guild) {
     guild = guild.guild;
-    guild = store2.getGuild(guild.id);
+    guild = store.getGuild(guild.id);
     let hasItem;
     if (guild != null) {
       const features = guild.features;
@@ -312,7 +277,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
     let hasItem;
     let c0;
     let set;
-    guild = store2.getGuild(guild.id);
+    guild = store.getGuild(guild.id);
     if (guild != null) {
       const features = guild.features;
       hasItem = features.has(constants.COMMUNITY);
@@ -321,7 +286,7 @@ const newChannelsStore = new NewChannelsStore(require("dispatcher"), {
       if (!set1.has(guild.id)) {
         obj2.add(guild.id);
         c0 = tmp7;
-        const guild1 = store2.getGuild(guild.id);
+        const guild1 = store.getGuild(guild.id);
         const _Set = Set;
         set = new Set();
         if (tmp14) {

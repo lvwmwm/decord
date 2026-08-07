@@ -1,10 +1,10 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14370
+// Function ID: 14371
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [5159, 14353, 589, 2]
+// Dependencies: [5176, 14369, 589, 2]
 // Exports: default, getUserRoleSubscriptionRelationship
 
-// Module 14354 (useUserRoleSubscriptionRelationship)
+// Module 14370 (useUserRoleSubscriptionRelationship)
 import computeRolesForGuild from "computeRolesForGuild";
 import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS";
 

@@ -1,10 +1,10 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11220
+// Function ID: 11221
 // Name: _getSafetyHubData
-// Dependencies: [5, 1218, 11199, 7728, 676, 709, 530, 4472, 7727, 2]
+// Dependencies: [5, 1218, 11214, 7745, 676, 709, 530, 4489, 7744, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11205 (_getSafetyHubData)
+// Module 11220 (_getSafetyHubData)
 import dispatcher from "dispatcher";
 import fetchFingerprint from "fetchFingerprint";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
@@ -292,7 +292,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(7727);
+                      obj3 = callback(7744);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };
@@ -354,7 +354,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(7727);
+                      obj3 = callback(7744);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };

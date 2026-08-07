@@ -1,9 +1,9 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10902
+// Function ID: 10903
 // Name: getMatchData
-// Dependencies: [676, 4106, 4119, 700, 705, 2]
+// Dependencies: [676, 4123, 4136, 700, 705, 2]
 
-// Module 10890 (getMatchData)
+// Module 10902 (getMatchData)
 import ME from "ME";
 import identity from "identity";
 
@@ -13,15 +13,15 @@ function getMatchData(pathname) {
   let channelId;
   let guildId;
   let str = pathname;
-  let obj = require(4106) /* matchPath */;
+  let obj = require(4123) /* matchPath */;
   let str2 = pathname;
   if (pathname == null) {
     str2 = "";
   }
   obj = { path: null };
   let obj2 = closure_2;
-  const RouteParam = tmp(4119).RouteParam;
-  const RouteParam2 = tmp(4119).RouteParam;
+  const RouteParam = tmp(4136).RouteParam;
+  const RouteParam2 = tmp(4136).RouteParam;
   obj[0] = closure_2.CHANNEL(RouteParam.guildId(), RouteParam2.channelId({ optional: true }), ":messageId?");
   const matchPathResult = obj.matchPath(str2, obj);
   if (null != matchPathResult) {
@@ -42,9 +42,9 @@ function getMatchData(pathname) {
       str = "";
     }
     const obj1 = { path: null };
-    const RouteParam3 = tmp(4119).RouteParam;
+    const RouteParam3 = tmp(4136).RouteParam;
     obj1[0] = obj2.GUILD_BOOSTING_MARKETING(RouteParam3.guildId());
-    const matchPathResult1 = tmp(4106).matchPath(str, obj1);
+    const matchPathResult1 = tmp(4123).matchPath(str, obj1);
     if (null != matchPathResult1) {
       obj2 = { guildId: null, channelId: null };
       obj2[0] = matchPathResult1.params.guildId;

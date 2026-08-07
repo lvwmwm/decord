@@ -1,10 +1,10 @@
-// Module ID: 3923
-// Function ID: 3924
+// Module ID: 3940
+// Function ID: 3941
 // Name: MAX_REACTIONS
-// Dependencies: [1218, 676, 3924, 3925, 1236, 7143, 3957, 698, 2]
+// Dependencies: [1218, 676, 3941, 3942, 1236, 7162, 3974, 698, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 3923 (MAX_REACTIONS)
+// Module 3940 (MAX_REACTIONS)
 import fetchFingerprint from "fetchFingerprint";
 import ME from "ME";
 import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags";
@@ -18,8 +18,8 @@ let result = require("AccountNotificationFlags").fileFinishedImporting("modules/
 export const MAX_REACTIONS = 20;
 export const getReactionEmojiName = function getReactionEmojiName(emoji) {
   if (null == emoji.id) {
-    let result = importDefault(3925).convertSurrogateToName(emoji.name);
-    const obj = importDefault(3925);
+    let result = importDefault(3942).convertSurrogateToName(emoji.name);
+    const obj = importDefault(3942);
   } else {
     const _HermesInternal = HermesInternal;
     result = ":" + emoji.name + ":";
@@ -52,8 +52,8 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
     const obj = { reactions: null, emojiName: null };
     obj[0] = count;
     if (null == emoji.id) {
-      let str2 = importDefault(3925).convertSurrogateToName(emoji.name);
-      const obj2 = importDefault(3925);
+      let str2 = importDefault(3942).convertSurrogateToName(emoji.name);
+      const obj2 = importDefault(3942);
     } else {
       const _HermesInternal = HermesInternal;
       str2 = ":" + emoji.name + ":";
@@ -73,12 +73,12 @@ export const getAccessibleEmojiDisplayName = function getAccessibleEmojiDisplayN
   }
 };
 export const isMeReaction = function isMeReaction(me, me_burst, arg2) {
-  let tmp3 = arg2 === require(7143) /* ReactionTypes */.ReactionTypes.BURST;
+  let tmp3 = arg2 === require(7162) /* ReactionTypes */.ReactionTypes.BURST;
   if (tmp3) {
     tmp3 = true === me_burst;
   }
   if (!tmp3) {
-    let tmp5 = arg2 === require(7143) /* ReactionTypes */.ReactionTypes.NORMAL;
+    let tmp5 = arg2 === require(7162) /* ReactionTypes */.ReactionTypes.NORMAL;
     if (tmp5) {
       tmp5 = true === me;
     }
@@ -149,7 +149,7 @@ export const shouldApplyReaction = function shouldApplyReaction(optimistic) {
   return !optimistic;
 };
 export const updateReactionNotificationsSetting = function updateReactionNotificationsSetting(NumberResult, setting) {
-  const ReactionNotifications = require(3957) /* explicitContentFromProto */.ReactionNotifications;
+  const ReactionNotifications = require(3974) /* explicitContentFromProto */.ReactionNotifications;
   ReactionNotifications.updateSetting(NumberResult);
   let obj = importDefault(698);
   obj = { update_type: constants3.ACCOUNT, reaction_notifications: NumberResult, reaction_notifications_old: setting };

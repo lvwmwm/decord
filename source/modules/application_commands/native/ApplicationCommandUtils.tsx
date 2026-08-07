@@ -1,10 +1,10 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11535
+// Function ID: 11536
 // Name: getApplicationCommandsIconSource
-// Dependencies: [4621, 4620, 4718, 1416, 11521, 11522, 6903, 1883, 9924, 8280, 2]
+// Dependencies: [4638, 4637, 4735, 1416, 11536, 11537, 6922, 1883, 9940, 8297, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11520 (getApplicationCommandsIconSource)
+// Module 11535 (getApplicationCommandsIconSource)
 import { DraftType } from "handleChanged";
 import map from "map";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
@@ -18,11 +18,11 @@ export const getApplicationCommandsIconSource = function getApplicationCommandsI
   } else {
     const id = section.id;
     if (BuiltInSectionId.BUILT_IN === id) {
-      return importDefault(1416).makeSource(importDefault(11521));
+      return importDefault(1416).makeSource(importDefault(11536));
     } else if (tmp10.FRECENCY === id) {
-      return importDefault(1416).makeSource(importDefault(11522));
+      return importDefault(1416).makeSource(importDefault(11537));
     } else {
-      if (section.type === require(6903) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
+      if (section.type === require(6922) /* ApplicationCommandSectionType */.ApplicationCommandSectionType.APPLICATION) {
         let obj = importDefault(1416);
         obj = { id: null, icon: null, bot: null, botIconFirst: true, guildMember: null };
         ({ id: obj2[0], icon: obj2[1], application } = section);
@@ -68,6 +68,6 @@ export const openCommandAttachmentPreview = function openCommandAttachmentPrevie
       }
     };
     obj[4] = upload;
-    importDefault(9924)(obj);
+    importDefault(9940)(obj);
   }
 };

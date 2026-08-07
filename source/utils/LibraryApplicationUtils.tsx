@@ -1,10 +1,10 @@
-// Module ID: 4329
-// Function ID: 4330
+// Module ID: 4346
+// Function ID: 4347
 // Name: getComboId
-// Dependencies: [32, 1903, 4330, 676, 3957, 2]
+// Dependencies: [32, 1903, 4347, 676, 3974, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4329 (getComboId)
+// Module 4346 (getComboId)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import addSku from "addSku";
@@ -25,9 +25,9 @@ export const convertComboId = function convertComboId(str) {
   return { applicationId: tmp[0], branchId: tmp[1] };
 };
 export const shouldShareApplicationActivity = function shouldShareApplicationActivity(application_id, closure_7) {
-  const ShowCurrentGame = require(3957) /* explicitContentFromProto */.ShowCurrentGame;
+  const ShowCurrentGame = require(3974) /* explicitContentFromProto */.ShowCurrentGame;
   if (ShowCurrentGame.getSetting()) {
-    const StatusSetting = require(3957) /* explicitContentFromProto */.StatusSetting;
+    const StatusSetting = require(3974) /* explicitContentFromProto */.StatusSetting;
     if (StatusSetting.getSetting() !== constants3.INVISIBLE) {
       const activeLibraryApplication = closure_7.getActiveLibraryApplication(application_id);
       let tmp7 = null == activeLibraryApplication;

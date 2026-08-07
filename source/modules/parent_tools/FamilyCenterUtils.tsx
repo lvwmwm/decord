@@ -1,10 +1,10 @@
-// Module ID: 6973
-// Function ID: 6974
+// Module ID: 6992
+// Function ID: 6993
 // Name: getEmptyActivityFormatter
-// Dependencies: [6917, 6918, 1236, 2284, 3866, 6919, 2]
+// Dependencies: [6936, 6937, 1236, 2284, 3883, 6938, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 6973 (getEmptyActivityFormatter)
+// Module 6992 (getEmptyActivityFormatter)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 
@@ -50,10 +50,10 @@ export const getActivityWindowTimestampFormatter = function getActivityWindowTim
   return tmp5;
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
-  let obj = importDefault(3866)();
-  const diffResult = obj.diff(importDefault(3866)(time), "s");
+  let obj = importDefault(3883)();
+  const diffResult = obj.diff(importDefault(3883)(time), "s");
   const tmp3 = timestampFormatter();
-  importDefault(3866)(time).format("LL");
+  importDefault(3883)(time).format("LL");
   if (diffResult < c10) {
     let yesterday = tmp3.today;
   } else if (diffResult < c11) {
@@ -73,10 +73,10 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
   return yesterday;
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
-  let obj = importDefault(3866)();
-  const diffResult = obj.diff(importDefault(3866)(arg0), "s");
+  let obj = importDefault(3883)();
+  const diffResult = obj.diff(importDefault(3883)(arg0), "s");
   const tmp3 = SENT_TIMESTAMP_FORMATTER();
-  importDefault(3866)(arg0);
+  importDefault(3883)(arg0);
   if (diffResult < 60) {
     let yesterday = tmp3.seconds;
   } else if (diffResult < 3600) {
@@ -167,7 +167,7 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
     return obj.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(6919).fetchLinkedUsers();
+    const linkedUsers = importDefault(6938).fetchLinkedUsers();
   }
   obj = authStore;
 };

@@ -1,9 +1,9 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 14593
+// Function ID: 14594
 // Name: SystemNotificationsSubLabel
-// Dependencies: [19, 17, 14578, 8005, 21, 4285, 712, 11698, 14579, 14580, 4281, 1236, 5356, 7716, 6974, 10364, 14581, 14582, 13802, 2]
+// Dependencies: [19, 17, 14594, 8022, 21, 4302, 712, 11713, 14595, 14596, 4298, 1236, 5375, 7733, 6993, 10380, 14597, 14598, 13816, 2]
 
-// Module 14577 (SystemNotificationsSubLabel)
+// Module 14593 (SystemNotificationsSubLabel)
 import importAllResult from "set";
 import { View } from "prefetchFamilyCenterAgeGroupWhen";
 import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore";
@@ -17,16 +17,16 @@ let metroImportAll;
 const require = arg1;
 function SystemNotificationsSubLabel() {
   const tmp = callback2();
-  let obj = require(11698) /* _requestPushNotificationPermission */;
+  let obj = require(11713) /* _requestPushNotificationPermission */;
   let showReactivationPrompt = obj.useShowReactivationPrompt();
-  let obj1 = importDefault(14579);
-  let obj2 = require(14580) /* hasAndroidNotificationChannels */;
+  let obj1 = importDefault(14595);
+  let obj2 = require(14596) /* hasAndroidNotificationChannels */;
   let result = obj2.hasAndroidNotificationChannels();
   if (result) {
     obj = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl = tmp2(1236).intl;
     obj[2] = intl.string(tmp2(1236).t["/TZX1J"]);
-    result = callback(tmp2(4281).Text, obj);
+    result = callback(tmp2(4298).Text, obj);
   }
   const children = [result, ];
   if (showReactivationPrompt) {
@@ -40,17 +40,17 @@ function SystemNotificationsSubLabel() {
     obj2[0] = tmp.cardContent;
     const obj3 = { color: null };
     obj3[0] = importDefault(712).unsafe_rawColors.YELLOW_300;
-    const items1 = [callback(tmp2(7716).CircleErrorIcon, obj3), ];
+    const items1 = [callback(tmp2(7733).CircleErrorIcon, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.text;
     const obj5 = { color: "text-default", variant: "text-sm/medium", children: null };
     const intl2 = tmp2(1236).intl;
     obj5[2] = intl2.string(tmp2(1236).t.TAuasM);
-    obj4[1] = callback(tmp2(4281).Text, obj5);
+    obj4[1] = callback(tmp2(4298).Text, obj5);
     items1[1] = callback(View, obj4);
     obj2[1] = items1;
     obj1[2] = tmp7(View, obj2);
-    obj[1] = callback(tmp2(5356).Card, obj1);
+    obj[1] = callback(tmp2(5375).Card, obj1);
     showReactivationPrompt = callback(View, obj);
   }
   children[1] = showReactivationPrompt;
@@ -65,9 +65,9 @@ obj[1] = { flexDirection: "row", alignItems: "center", gap: 8 };
 obj[2] = { flex: 1 };
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(6974).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
-  let obj = isFamilyCenterV3Enabled(6974);
-  let tmp2 = !importDefault(14579).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
+  isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(6993).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
+  let obj = isFamilyCenterV3Enabled(6993);
+  let tmp2 = !importDefault(14595).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   importDefault = tmp2;
   let items = [tmp2];
   const node = importAllResult.useMemo(() => {
@@ -153,7 +153,7 @@ const memoResult = importAllResult.memo(() => {
   const effect1 = importAllResult.useEffect(() => {
     const result = isFamilyCenterV3Enabled(outer1_2[17]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
   }, items1);
-  return callback(importDefault(13802), { node });
+  return callback(importDefault(13816), { node });
 });
 let result = require("_initializeAndroidNotificationSettingsStore").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
 

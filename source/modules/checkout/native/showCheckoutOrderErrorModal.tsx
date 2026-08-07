@@ -1,10 +1,10 @@
-// Module ID: 6815
-// Function ID: 6816
+// Module ID: 6834
+// Function ID: 6835
 // Name: SyncedLoadingAlertModal
-// Dependencies: [5, 32, 19, 21, 4628, 1236, 4625, 2]
+// Dependencies: [5, 32, 19, 21, 4645, 1236, 4642, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 6815 (SyncedLoadingAlertModal)
+// Module 6834 (SyncedLoadingAlertModal)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -96,16 +96,16 @@ function SyncedLoadingAlertModal(onConfirm) {
     }
   });
   obj[3] = tmp2;
-  const items = [callback3(onConfirm(4628).AlertActionButton, obj), ];
+  const items = [callback3(onConfirm(4645).AlertActionButton, obj), ];
   let obj1 = { variant: "secondary", text: null, onPress: null, loading: null };
   const intl = onConfirm(1236).intl;
   obj1[1] = intl.string(onConfirm(1236).t["ETE/oC"]);
   obj1[2] = onCancel;
   obj1[3] = tmp2;
-  items[1] = callback3(onConfirm(4628).AlertActionButton, obj1);
+  items[1] = callback3(onConfirm(4645).AlertActionButton, obj1);
   obj[0] = items;
   obj[2] = callback4(closure_6, obj);
-  return callback3(onConfirm(4628).AlertModal, obj);
+  return callback3(onConfirm(4645).AlertModal, obj);
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 const result = require("noop").fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
@@ -115,7 +115,7 @@ export const showRetryConfirmModal = function showRetryConfirmModal(dismissable)
   let onCloseCallback;
   ({ key, onCloseCallback } = dismissable);
   const merged = Object.assign(dismissable, Object.create(null));
-  let obj = require(4625) /* useAlertStore */;
+  let obj = require(4642) /* useAlertStore */;
   obj = {};
   const merged1 = Object.assign(merged);
   obj = { dismissable: dismissable.dismissable };
@@ -212,6 +212,6 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
     obj = {};
     const merged1 = Object.assign(merged);
     obj = { dismissable: obj.dismissable };
-    callback(4625).openAlert(key, outer1_5(outer1_8, obj), onCloseCallback, obj);
+    callback(4642).openAlert(key, outer1_5(outer1_8, obj), onCloseCallback, obj);
   });
 };

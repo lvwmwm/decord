@@ -1,10 +1,10 @@
-// Module ID: 5776
-// Function ID: 5777
+// Module ID: 5795
+// Function ID: 5796
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1975, 3932, 1905, 505, 500, 5777, 5779, 5781, 1236, 3930, 2]
+// Dependencies: [1975, 3949, 1905, 505, 500, 5796, 5798, 5800, 1236, 3947, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 5776 (formatSingleCurrencyPrice)
+// Module 5795 (formatSingleCurrencyPrice)
 import _getSystemLocale from "_getSystemLocale";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -46,7 +46,7 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   if (tmp11) {
     obj.minimumFractionDigits = 0;
   }
-  return require(5777) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
+  return require(5796) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
 }
 function formatPrice(amount, currency, localeOverride, localeOverride) {
   const timestamp = Date.now();
@@ -54,16 +54,16 @@ function formatPrice(amount, currency, localeOverride, localeOverride) {
   if (timestamp < date.getTime()) {
     const platformName = require(500) /* set */.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = tmp2(5779).default.getUserCountry();
-      const _default2 = tmp2(5779).default;
+      let ipCountryCode = tmp2(5798).default.getUserCountry();
+      const _default2 = tmp2(5798).default;
     } else if ("ios" === platformName) {
-      const storeFront = tmp2(5781).default.getStoreFront();
+      const storeFront = tmp2(5800).default.getStoreFront();
       let country;
       if (storeFront != null) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = tmp2(5781).default;
+      const _default = tmp2(5800).default;
     } else {
       ipCountryCode = ipCountryCode.ipCountryCode;
     }
@@ -130,7 +130,7 @@ export const formatPercent = function formatPercent(arg0, arg1) {
   return Intl.NumberFormat(arg0, { style: "percent", minimumFractionDigits: 0 }).format(arg1);
 };
 export const formatSubscriptionPlanRate = function formatSubscriptionPlanRate(interval_count) {
-  const price = require(3930) /* getPremiumPlanItem */.getPrice(interval_count.id);
+  const price = require(3947) /* getPremiumPlanItem */.getPrice(interval_count.id);
   return formatRate(formatPrice(price.amount, price.currency), interval_count.interval, "interval_count" in interval_count ? interval_count.interval_count : interval_count.intervalCount);
 };
 export const maybeShortenPrice = function maybeShortenPrice(str) {

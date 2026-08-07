@@ -1,10 +1,10 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15081
+// Function ID: 15082
 // Name: useGuildsRouteGuildId
 // Dependencies: [1481, 2]
 // Exports: default, useGuildsRouteGuildAndChannelId
 
-// Module 15065 (useGuildsRouteGuildId)
+// Module 15081 (useGuildsRouteGuildId)
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
 
 export default function useGuildsRouteGuildId() {

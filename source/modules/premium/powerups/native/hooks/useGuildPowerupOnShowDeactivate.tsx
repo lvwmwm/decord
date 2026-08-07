@@ -1,15 +1,15 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 11831
+// Function ID: 11832
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 11817, 1988, 4625, 2]
+// Dependencies: [19, 21, 11832, 1988, 4642, 2]
 // Exports: default
 
-// Module 11816 (useGuildPowerupOnShowDeactivate)
+// Module 11831 (useGuildPowerupOnShowDeactivate)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-let closure_4 = importAllResult.lazy(() => require(1988) /* asyncRequireImpl */(11817, dependencyMap.paths));
+let closure_4 = importAllResult.lazy(() => require(1988) /* asyncRequireImpl */(11832, dependencyMap.paths));
 const result = require("GuildPowerupsDeactivateAlert").fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowDeactivate.tsx");
 
 export default function useGuildPowerupOnShowDeactivate(arg0, arg1) {

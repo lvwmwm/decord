@@ -1,10 +1,10 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12496
+// Function ID: 12497
 // Name: ForLaterCardReminderHeader
-// Dependencies: [17, 21, 4285, 712, 10197, 4249, 4281, 2]
+// Dependencies: [17, 21, 4302, 712, 10213, 4266, 4298, 2]
 // Exports: ForLaterCardReminderHeader
 
-// Module 12481 (ForLaterCardReminderHeader)
+// Module 12496 (ForLaterCardReminderHeader)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,12 +27,12 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
   savedMessage = savedMessage.savedMessage;
   ({ throttledNow, actions } = savedMessage);
   const tmp = callback3();
-  let obj = require(10197) /* _savedMessageJumpToMessage */;
+  let obj = require(10213) /* _savedMessageJumpToMessage */;
   let dueAt;
   if (savedMessage != null) {
     dueAt = savedMessage.saveData.dueAt;
   }
-  obj = { dueAt, now: throttledNow, type: tmp2(10197).DueInStringTypes.SHORT };
+  obj = { dueAt, now: throttledNow, type: tmp2(10213).DueInStringTypes.SHORT };
   const dueInString = obj.useDueInString(obj);
   const isOverdue = dueInString.isOverdue;
   if (null == savedMessage.saveData.dueAt) {
@@ -49,12 +49,12 @@ export const ForLaterCardReminderHeader = function ForLaterCardReminderHeader(sa
     obj1[0] = tmp.icon;
     const obj2 = { size: "xxs", color: null };
     obj2[1] = isOverdue ? colors.TEXT_FEEDBACK_CRITICAL : colors.INTERACTIVE_TEXT_DEFAULT;
-    obj1[1] = callback(tmp2(4249).ClockIcon, obj2);
+    obj1[1] = callback(tmp2(4266).ClockIcon, obj2);
     const items = [callback(View, obj1), , ];
     const obj3 = { variant: "text-md/semibold", color: null, children: null };
     obj3[1] = str;
     obj3[2] = tmp6;
-    items[1] = callback(tmp2(4281).Text, obj3);
+    items[1] = callback(tmp2(4298).Text, obj3);
     const obj4 = { style: null, children: null };
     obj4[0] = tmp.actionsContainer;
     obj4[1] = actions;

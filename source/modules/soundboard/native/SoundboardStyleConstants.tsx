@@ -1,9 +1,9 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16056
+// Function ID: 16057
 // Name: SOUND_BUTTON_HEIGHT
 // Dependencies: [2]
 
-// Module 16030 (SOUND_BUTTON_HEIGHT)
+// Module 16056 (SOUND_BUTTON_HEIGHT)
 const result = require("set").fileFinishedImporting("modules/soundboard/native/SoundboardStyleConstants.tsx");
 
 export const SOUND_BUTTON_HEIGHT = 88;

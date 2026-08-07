@@ -1,10 +1,10 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9383
+// Function ID: 9384
 // Name: _activityFromSetting
-// Dependencies: [19, 5158, 676, 3925, 3957, 589, 2]
+// Dependencies: [19, 5175, 676, 3942, 3974, 589, 2]
 // Exports: getActivityFromCustomStatus, useCustomStatusActivity
 
-// Module 9366 (_activityFromSetting)
+// Module 9383 (_activityFromSetting)
 import { useMemo } from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import { ActivityTypes } from "ME";
@@ -19,8 +19,8 @@ function _activityFromSetting(emojiName) {
     if (null != emojiName.emojiName) {
       tmp = null;
       if ("" !== emojiName.emojiName) {
-        const obj5 = importDefault(3925);
-        const byName = obj5.getByName(importDefault(3925).convertSurrogateToName(emojiName.emojiName, false));
+        const obj5 = importDefault(3942);
+        const byName = obj5.getByName(importDefault(3942).convertSurrogateToName(emojiName.emojiName, false));
         let tmp2 = null;
         if (null != byName) {
           obj = { id: null, name: null, animated: false };
@@ -28,7 +28,7 @@ function _activityFromSetting(emojiName) {
           tmp2 = obj;
         }
         tmp = tmp2;
-        const obj6 = importDefault(3925);
+        const obj6 = importDefault(3942);
       }
     }
   }

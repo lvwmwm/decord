@@ -1,10 +1,10 @@
-// Module ID: 12692
-// Function ID: 12693
+// Module ID: 12707
+// Function ID: 12708
 // Name: BoostedGuildTierProgressCircle
-// Dependencies: [19, 17, 676, 21, 4285, 712, 12693, 12697, 12698, 12699, 4192, 4177, 11868, 4281, 2]
+// Dependencies: [19, 17, 676, 21, 4302, 712, 12708, 12712, 12713, 12714, 4209, 4194, 11883, 4298, 2]
 // Exports: default
 
-// Module 12692 (BoostedGuildTierProgressCircle)
+// Module 12707 (BoostedGuildTierProgressCircle)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -35,7 +35,7 @@ export default function BoostedGuildTierProgressCircle(arg0) {
   let theme;
   ({ guild, theme } = arg0);
   const tmp = createCacheKey();
-  importDefault(4192);
+  importDefault(4209);
   if (guild != null) {
     const id = guild.id;
   }
@@ -43,12 +43,12 @@ export default function BoostedGuildTierProgressCircle(arg0) {
     let obj = { style: null, children: null };
     obj[0] = tmp.guildTierBackground;
     obj = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no" };
-    obj[0] = require(12693) /* getTier048PxSource */.getTier048PxSource(theme);
+    obj[0] = require(12708) /* getTier048PxSource */.getTier048PxSource(theme);
     obj[1] = tmp.guildTierNoneIcon;
     obj[1] = callback(closure_4, obj);
     return callback(closure_3, obj);
   } else {
-    const nextGuildTierFromGuild = require(4177) /* getGuildTierFromGuild */.getNextGuildTierFromGuild(guild.id);
+    const nextGuildTierFromGuild = require(4194) /* getGuildTierFromGuild */.getNextGuildTierFromGuild(guild.id);
     let tmp7 = null;
     if (null != nextGuildTierFromGuild) {
       tmp7 = table[nextGuildTierFromGuild];
@@ -69,11 +69,11 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       if (guild.premiumTier !== constants.NONE) {
         const premiumTier = guild.premiumTier;
         if (tmp13.TIER_1 === premiumTier) {
-          let tier048PxSource = tmp2(12697);
+          let tier048PxSource = tmp2(12712);
         } else if (tmp13.TIER_2 === premiumTier) {
-          tier048PxSource = tmp2(12698);
+          tier048PxSource = tmp2(12713);
         } else if (tmp13.TIER_3 === premiumTier) {
-          tier048PxSource = tmp2(12699);
+          tier048PxSource = tmp2(12714);
         }
       }
       const obj2 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no" };
@@ -82,15 +82,15 @@ export default function BoostedGuildTierProgressCircle(arg0) {
       const items = [tmp8(tmp12, obj2), ];
       const obj3 = { style: null, variant: "text-xs/semibold", color: "interactive-text-active", children: null };
       obj3[0] = tmp.guildTierName;
-      let tmp19Result = tmp19(4177);
+      let tmp19Result = tmp19(4194);
       obj3[3] = tmp19Result.getTierName(guild.premiumTier);
-      items[1] = tmp8(tmp19(4281).Text, obj3);
+      items[1] = tmp8(tmp19(4298).Text, obj3);
       obj1[1] = items;
       obj[2] = tmp10(tmp11, obj1);
       return tmp8(tmp9, obj);
     }
-    tmp19Result = tmp19(12693);
+    tmp19Result = tmp19(12708);
     tier048PxSource = tmp19Result.getTier048PxSource(theme);
-    const obj10 = require(4177) /* getGuildTierFromGuild */;
+    const obj10 = require(4194) /* getGuildTierFromGuild */;
   }
 };

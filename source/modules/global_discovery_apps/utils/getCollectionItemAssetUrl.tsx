@@ -1,10 +1,10 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11445
+// Function ID: 11446
 // Name: getCollectionItemAssetUrl
 // Dependencies: [676, 1450, 1416, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 11430 (getCollectionItemAssetUrl)
+// Module 11445 (getCollectionItemAssetUrl)
 import { Endpoints } from "ME";
 
 let c3;

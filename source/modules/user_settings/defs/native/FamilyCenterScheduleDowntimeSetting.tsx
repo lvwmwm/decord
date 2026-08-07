@@ -1,9 +1,9 @@
-// Module ID: 14094
-// Function ID: 14095
+// Module ID: 14108
+// Function ID: 14109
 // Name: route
-// Dependencies: [8005, 676, 10364, 1236, 2284, 14095, 2]
+// Dependencies: [8022, 676, 10380, 1236, 2284, 14109, 2]
 
-// Module 14094 (route)
+// Module 14108 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER_SCHEDULE_DOWNTIME,
   getComponent() {
-    return require(14095) /* OverlappingSchedulesWarning */.default;
+    return require(14109) /* OverlappingSchedulesWarning */.default;
   }
 };
 const route = createToggle.createRoute(obj);

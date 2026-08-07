@@ -1,8 +1,8 @@
-// Module ID: 15653
-// Function ID: 15654
-// Dependencies: [19, 17, 1372, 8320, 21, 4285, 4472, 4796, 7635, 9729, 589, 8242, 15641, 15643, 4837, 2]
+// Module ID: 15677
+// Function ID: 15678
+// Dependencies: [19, 17, 1372, 8337, 21, 4302, 4489, 4813, 7654, 9745, 589, 8259, 15665, 15667, 4854, 2]
 
-// Module 15653
+// Module 15677
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ensureGuildLoaded from "ensureGuildLoaded";

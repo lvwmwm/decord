@@ -1,9 +1,9 @@
-// Module ID: 3959
-// Function ID: 3960
+// Module ID: 3976
+// Function ID: 3977
 // Name: items
 // Dependencies: [1306, 2]
 
-// Module 3959 (items)
+// Module 3976 (items)
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };
 const items = [obj.DISABLED, require("create").DmSpamFilterV2.DISABLED];
 const items1 = [items, , ];

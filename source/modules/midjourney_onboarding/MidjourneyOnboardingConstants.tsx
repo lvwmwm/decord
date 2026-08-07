@@ -1,9 +1,9 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 13137
+// Function ID: 13138
 // Name: MIDJOURNEY_GUILD_ID
 // Dependencies: [2]
 
-// Module 13123 (MIDJOURNEY_GUILD_ID)
+// Module 13137 (MIDJOURNEY_GUILD_ID)
 const result = require("set").fileFinishedImporting("modules/midjourney_onboarding/MidjourneyOnboardingConstants.tsx");
 
 export const MIDJOURNEY_GUILD_ID = "662267976984297473";

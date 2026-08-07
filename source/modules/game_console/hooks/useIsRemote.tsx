@@ -1,10 +1,10 @@
-// Module ID: 5812
-// Function ID: 5813
+// Module ID: 5831
+// Function ID: 5832
 // Name: useIsRemote
-// Dependencies: [4299, 589, 2]
+// Dependencies: [4316, 589, 2]
 // Exports: default
 
-// Module 5812 (useIsRemote)
+// Module 5831 (useIsRemote)
 import set from "set";
 
 const require = arg1;

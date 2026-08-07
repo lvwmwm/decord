@@ -1,10 +1,10 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15592
+// Function ID: 15593
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 15566, 21, 3988, 712, 15567, 11575, 4253, 5685, 5687, 1416, 5251, 2]
+// Dependencies: [19, 15590, 21, 4005, 712, 15591, 11590, 4270, 5704, 5706, 1416, 5267, 2]
 // Exports: default
 
-// Module 15568 (OnboardingHomeResourcesSheet)
+// Module 15592 (OnboardingHomeResourcesSheet)
 import "noop";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_3 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
 import { jsx } from "jsxProd";
@@ -15,11 +15,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_onboardin
 export default function OnboardingHomeResourcesSheet(guildId) {
   guildId = guildId.guildId;
   let importDefault;
-  let obj = guildId(3988);
+  let obj = guildId(4005);
   importDefault = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_ICON_SIZE);
   obj = { children: null };
   obj = { hasIcons: true, children: null };
-  obj[1] = importDefault(15567)(guildId).map((label) => {
+  obj[1] = importDefault(15591)(guildId).map((label) => {
     let closure_0 = label;
     let obj = callback(outer1_2[10]);
     const resourceChannelIconURL = obj.getResourceChannelIconURL(label);
@@ -44,6 +44,6 @@ export default function OnboardingHomeResourcesSheet(guildId) {
     };
     return outer1_4(guildId(outer1_2[9]).ActionSheetRow, obj, label.channelId);
   });
-  obj[0] = jsx(guildId(5687).ActionSheetRow.Group, { hasIcons: true, children: null });
-  return jsx(guildId(5685).ActionSheet, { hasIcons: true, children: null });
+  obj[0] = jsx(guildId(5706).ActionSheetRow.Group, { hasIcons: true, children: null });
+  return jsx(guildId(5704).ActionSheet, { hasIcons: true, children: null });
 };

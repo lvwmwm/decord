@@ -1,15 +1,7 @@
 // Module ID: 13537
 // Function ID: 13538
-// Dependencies: [13535]
+// Dependencies: []
 
 // Module 13537
 
-export default (arg0, arg1) => {
-  const tmp = require(13535)(arg0);
-  if (tmp < 0) {
-    let tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });

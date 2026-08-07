@@ -1,10 +1,10 @@
-// Module ID: 8029
-// Function ID: 8030
+// Module ID: 8046
+// Function ID: 8047
 // Name: NativeLottieView
-// Dependencies: [19, 17, 21, 500, 8030, 113, 2]
+// Dependencies: [19, 17, 21, 500, 8047, 113, 2]
 // Exports: default
 
-// Module 8029 (NativeLottieView)
+// Module 8046 (NativeLottieView)
 import noop from "noop";
 import closure_2 from "noop";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 4269
-// Function ID: 4270
+// Module ID: 4286
+// Function ID: 4287
 // Name: getPathsFromURL
-// Dependencies: [4270, 676, 678, 4273, 1469, 4274, 4275, 8019, 4715, 4201, 8126, 4271, 7116, 10427, 8825, 7071, 5155, 2]
+// Dependencies: [4287, 676, 678, 4290, 1469, 4291, 4292, 8036, 4732, 4218, 8143, 4288, 7135, 10443, 8842, 7090, 5172, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, remainingPathFromDiscordHostMatch
 
-// Module 4269 (getPathsFromURL)
+// Module 4286 (getPathsFromURL)
 import updateInvite from "updateInvite";
 import { PRIMARY_DOMAIN } from "ME";
 import { CollectibleShopTab } from "items";
@@ -354,9 +354,9 @@ function findCodedLinks(str) {
     });
     const items = [];
     let combined = items;
-    const _default = combined(4275).default;
-    const parseToASTResult = combined(4275).default.parseToAST(str, true, { allowLinks: true });
-    combined(8019).walkAst(parseToASTResult, (type) => {
+    const _default = combined(4292).default;
+    const parseToASTResult = combined(4292).default.parseToAST(str, true, { allowLinks: true });
+    combined(8036).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -537,18 +537,21 @@ function findCodedLinks(str) {
                 let tmp48 = null;
                 if (null != url.pathname) {
                   const match4 = str6.match(outer1_7);
-                  let tmp50 = null;
+                  tmp48 = null;
                   if (null != match4) {
-                    tmp50 = null;
+                    tmp48 = null;
                     if (match4.length >= 4) {
-                      const obj8 = { guildId: null, guildEventId: null, recurrenceId: null };
-                      obj8[0] = match4[1];
-                      obj8[1] = match4[2];
-                      obj8[2] = match4[4];
-                      tmp50 = obj8;
+                      let tmp51 = null;
+                      if (null != match4[2]) {
+                        const obj8 = { guildId: null, guildEventId: null, recurrenceId: null };
+                        obj8[0] = match4[1];
+                        obj8[1] = tmp50;
+                        obj8[2] = match4[4];
+                        tmp51 = obj8;
+                      }
+                      tmp48 = tmp51;
                     }
                   }
-                  tmp48 = tmp50;
                 }
                 if (null != tmp48) {
                   formatted = globalThis;
@@ -578,19 +581,19 @@ function findCodedLinks(str) {
                   if (null != query) {
                     formatted = tmp4(tmp5[13]).parseOAuth2AuthorizeProps(query);
                     const clientId = formatted.clientId;
-                    let tmp57 = null == clientId;
-                    if (!tmp57) {
-                      tmp57 = "" === clientId;
+                    let tmp58 = null == clientId;
+                    if (!tmp58) {
+                      tmp58 = "" === clientId;
                     }
-                    if (!tmp57) {
+                    if (!tmp58) {
                       const scopes = formatted.scopes;
                       let someResult;
                       if (scopes != null) {
                         someResult = scopes.some((arg0) => arg0 !== callback(table[14]).OAuth2Scopes.APPLICATIONS_COMMANDS);
                       }
-                      tmp57 = someResult;
+                      tmp58 = someResult;
                     }
-                    if (!tmp57) {
+                    if (!tmp58) {
                       if (!set.has(clientId)) {
                         obj28.add(clientId);
                         const obj10 = { type: null, code: null, url: null };
@@ -610,10 +613,10 @@ function findCodedLinks(str) {
                 }
                 if (null != match6) {
                   if (!set.has(match6[2])) {
-                    obj30.add(tmp64);
+                    obj30.add(tmp65);
                     obj11 = { type: null, code: null, url: null };
                     obj11[0] = tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_PROFILE;
-                    obj11[1] = tmp64;
+                    obj11[1] = tmp65;
                     obj11[2] = iter;
                     items.push(obj11);
                   }
@@ -656,10 +659,10 @@ function findCodedLinks(str) {
                 }
                 if (null != match8) {
                   if (!set.has(match8[1])) {
-                    obj37.add(tmp79);
+                    obj37.add(tmp80);
                     const obj14 = { type: null, code: null, url: null };
                     obj14[0] = tmp4(tmp5[5]).CodedLinkType.ACTIVITY_BOOKMARK;
-                    obj14[1] = tmp79;
+                    obj14[1] = tmp80;
                     obj14[2] = iter;
                     items.push(obj14);
                   }
@@ -688,10 +691,10 @@ function findCodedLinks(str) {
                 }
                 if (null != match10) {
                   if (!set.has(match10[1])) {
-                    obj41.add(tmp92);
+                    obj41.add(tmp93);
                     const obj16 = { type: null, code: null, url: null };
                     obj16[0] = tmp4(tmp5[5]).CodedLinkType.SERVER_SHOP;
-                    obj16[1] = tmp92;
+                    obj16[1] = tmp93;
                     obj16[2] = iter;
                     items.push(obj16);
                   }
@@ -702,12 +705,13 @@ function findCodedLinks(str) {
                   match11 = primaryHostRemainingPath.match(outer1_12);
                 }
                 if (null != match11) {
-                  let tmp98 = match11[1];
-                  if (tmp98 == null) {
-                    tmp98 = match11[2];
+                  let tmp99 = match11[1];
+                  if (tmp99 == null) {
+                    tmp99 = match11[2];
                   }
+                  formatted = globalThis;
                   const _HermesInternal3 = HermesInternal;
-                  formatted = "" + match11[3] + "-" + tmp98;
+                  formatted = "" + match11[3] + "-" + tmp99;
                   if (!set.has(formatted)) {
                     formatted = obj43.add(formatted);
                     formatted = items;
@@ -1055,7 +1059,7 @@ export const isSuspiciousCodedLink = function isSuspiciousCodedLink(arr) {
           let flag;
           if (url.pathname != null) {
             const formatted = str2.toUpperCase();
-            flag = formatted.includes(url(4274).CodedLinkType.INVITE);
+            flag = formatted.includes(url(4291).CodedLinkType.INVITE);
           }
           if (flag == null) {
             flag = false;
@@ -1099,9 +1103,9 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     });
     const items1 = [];
     let combined = items1;
-    const _default = combined(4275).default;
-    const parseToASTResult = combined(4275).default.parseToAST(str, true, { allowLinks: true });
-    combined(8019).walkAst(parseToASTResult, (type) => {
+    const _default = combined(4292).default;
+    const parseToASTResult = combined(4292).default.parseToAST(str, true, { allowLinks: true });
+    combined(8036).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -1282,18 +1286,21 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 let tmp48 = null;
                 if (null != url.pathname) {
                   const match4 = str6.match(outer1_7);
-                  let tmp50 = null;
+                  tmp48 = null;
                   if (null != match4) {
-                    tmp50 = null;
+                    tmp48 = null;
                     if (match4.length >= 4) {
-                      const obj8 = { guildId: null, guildEventId: null, recurrenceId: null };
-                      obj8[0] = match4[1];
-                      obj8[1] = match4[2];
-                      obj8[2] = match4[4];
-                      tmp50 = obj8;
+                      let tmp51 = null;
+                      if (null != match4[2]) {
+                        const obj8 = { guildId: null, guildEventId: null, recurrenceId: null };
+                        obj8[0] = match4[1];
+                        obj8[1] = tmp50;
+                        obj8[2] = match4[4];
+                        tmp51 = obj8;
+                      }
+                      tmp48 = tmp51;
                     }
                   }
-                  tmp48 = tmp50;
                 }
                 if (null != tmp48) {
                   formatted = globalThis;
@@ -1323,19 +1330,19 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                   if (null != query) {
                     formatted = tmp4(tmp5[13]).parseOAuth2AuthorizeProps(query);
                     const clientId = formatted.clientId;
-                    let tmp57 = null == clientId;
-                    if (!tmp57) {
-                      tmp57 = "" === clientId;
+                    let tmp58 = null == clientId;
+                    if (!tmp58) {
+                      tmp58 = "" === clientId;
                     }
-                    if (!tmp57) {
+                    if (!tmp58) {
                       const scopes = formatted.scopes;
                       let someResult;
                       if (scopes != null) {
                         someResult = scopes.some((arg0) => arg0 !== callback(table[14]).OAuth2Scopes.APPLICATIONS_COMMANDS);
                       }
-                      tmp57 = someResult;
+                      tmp58 = someResult;
                     }
-                    if (!tmp57) {
+                    if (!tmp58) {
                       if (!set.has(clientId)) {
                         obj28.add(clientId);
                         const obj10 = { type: null, code: null, url: null };
@@ -1355,10 +1362,10 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match6) {
                   if (!set.has(match6[2])) {
-                    obj30.add(tmp64);
+                    obj30.add(tmp65);
                     obj11 = { type: null, code: null, url: null };
                     obj11[0] = tmp4(tmp5[5]).CodedLinkType.APP_DIRECTORY_PROFILE;
-                    obj11[1] = tmp64;
+                    obj11[1] = tmp65;
                     obj11[2] = iter;
                     items.push(obj11);
                   }
@@ -1401,10 +1408,10 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match8) {
                   if (!set.has(match8[1])) {
-                    obj37.add(tmp79);
+                    obj37.add(tmp80);
                     const obj14 = { type: null, code: null, url: null };
                     obj14[0] = tmp4(tmp5[5]).CodedLinkType.ACTIVITY_BOOKMARK;
-                    obj14[1] = tmp79;
+                    obj14[1] = tmp80;
                     obj14[2] = iter;
                     items.push(obj14);
                   }
@@ -1433,10 +1440,10 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                 }
                 if (null != match10) {
                   if (!set.has(match10[1])) {
-                    obj41.add(tmp92);
+                    obj41.add(tmp93);
                     const obj16 = { type: null, code: null, url: null };
                     obj16[0] = tmp4(tmp5[5]).CodedLinkType.SERVER_SHOP;
-                    obj16[1] = tmp92;
+                    obj16[1] = tmp93;
                     obj16[2] = iter;
                     items.push(obj16);
                   }
@@ -1447,12 +1454,13 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
                   match11 = primaryHostRemainingPath.match(outer1_12);
                 }
                 if (null != match11) {
-                  let tmp98 = match11[1];
-                  if (tmp98 == null) {
-                    tmp98 = match11[2];
+                  let tmp99 = match11[1];
+                  if (tmp99 == null) {
+                    tmp99 = match11[2];
                   }
+                  formatted = globalThis;
                   const _HermesInternal3 = HermesInternal;
-                  formatted = "" + match11[3] + "-" + tmp98;
+                  formatted = "" + match11[3] + "-" + tmp99;
                   if (!set.has(formatted)) {
                     formatted = obj43.add(formatted);
                     formatted = items;
@@ -1616,7 +1624,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     combined = items1.concat(match);
     const result = coerceLinksToCodedLinks(combined);
     items = result.slice(0, 10);
-    let obj = combined(8019);
+    let obj = combined(8036);
   }
   return items[0];
 };

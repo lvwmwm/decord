@@ -1,10 +1,10 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14194
+// Function ID: 14195
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [19, 4376, 676, 10406, 514, 10504, 7098, 7109, 14175, 14181, 6982, 6987, 2]
+// Dependencies: [19, 4393, 676, 10422, 514, 10520, 7117, 7128, 14189, 14195, 7001, 7006, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 14180 (useBountiesModalVideoAnalytics)
+// Module 14194 (useBountiesModalVideoAnalytics)
 import noop from "noop";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import { AnalyticEvents } from "ME";

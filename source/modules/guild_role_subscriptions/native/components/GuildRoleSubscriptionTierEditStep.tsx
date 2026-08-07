@@ -1,10 +1,10 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 16734
+// Function ID: 16735
 // Name: Header
-// Dependencies: [19, 17, 21, 4285, 712, 5311, 4281, 14365, 1236, 1609, 4695, 1480, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 5327, 4298, 14381, 1236, 1609, 4712, 1480, 2]
 // Exports: default
 
-// Module 16714 (Header)
+// Module 16734 (Header)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,12 +22,12 @@ function Header(arg0) {
   const tmp = createCacheKey();
   let obj = { top: true, style: tmp.headerContainer, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
-  const items = [callback(require(4281) /* Text */.Text, obj), , ];
+  const items = [callback(require(4298) /* Text */.Text, obj), , ];
   obj = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
-  items[1] = callback(require(4281) /* Text */.Text, obj);
-  items[2] = callback(importDefault(14365), { style: tmp.separator });
+  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[2] = callback(importDefault(14381), { style: tmp.separator });
   obj[2] = items;
-  return callback2(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function Footer(arg0) {
   let canProceedToNextStep;
@@ -50,7 +50,7 @@ function Footer(arg0) {
   items[1] = obj;
   obj[0] = items;
   obj = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };
-  obj[1] = callback(tmp5(4695).Button, obj);
+  obj[1] = callback(tmp5(4712).Button, obj);
   return callback(closure_4, obj);
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);

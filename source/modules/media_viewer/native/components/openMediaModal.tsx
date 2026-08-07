@@ -1,10 +1,10 @@
-// Module ID: 8767
-// Function ID: 8768
+// Module ID: 8784
+// Function ID: 8785
 // Name: _openMediaModal
-// Dependencies: [32, 5, 3977, 676, 1474, 8768, 1988, 8770, 8774, 38, 4253, 8783, 4490, 8784, 2]
+// Dependencies: [32, 5, 3994, 676, 1474, 8785, 1988, 8787, 8791, 38, 4270, 8800, 4507, 8801, 2]
 // Exports: openMediaModal
 
-// Module 8767 (_openMediaModal)
+// Module 8784 (_openMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
 import setContent from "setContent";
@@ -109,7 +109,7 @@ function _openMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 3977.initVideoStateStore;
+            initVideoStateStore = 3994.initVideoStateStore;
             !(function getMeasureInWindowFunction(c0) {
               let closure_0 = c0;
               if (null != c0) {

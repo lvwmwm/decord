@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15299
+// Function ID: 15300
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [1415, 1891, 1903, 676, 589, 5802, 2]
+// Dependencies: [1415, 1891, 1903, 676, 589, 5821, 2]
 // Exports: default
 
-// Module 15275 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 15299 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -24,7 +24,7 @@ export default function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
   }
   const obj = _require(589);
   const tmp = _require;
-  const isUserInCreatorMonetizationEligibleCountry = _require(5802).useIsUserInCreatorMonetizationEligibleCountry();
+  const isUserInCreatorMonetizationEligibleCountry = _require(5821).useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;
     if (stateFromStores != null) {

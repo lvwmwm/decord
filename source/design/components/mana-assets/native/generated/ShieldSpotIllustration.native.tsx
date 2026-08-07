@@ -1,10 +1,10 @@
-// Module ID: 6649
-// Function ID: 6650
+// Module ID: 6668
+// Function ID: 6669
 // Name: ShieldSpotIllustration
-// Dependencies: [21, 5251, 6650, 2]
+// Dependencies: [21, 5267, 6669, 2]
 // Exports: ShieldSpotIllustration
 
-// Module 6649 (ShieldSpotIllustration)
+// Module 6668 (ShieldSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ShieldSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const ShieldSpotIllustration = function ShieldSpotIllustration(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6650);
+  obj[0] = importDefault(6669);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ShieldSpotIllustration = function ShieldSpotIllustration(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
 };

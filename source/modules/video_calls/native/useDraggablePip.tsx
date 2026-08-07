@@ -1,10 +1,10 @@
-// Module ID: 10602
-// Function ID: 10603
+// Module ID: 10599
+// Function ID: 10600
 // Name: clamp
-// Dependencies: [32, 9657, 10589, 4145, 4286, 1297, 8699, 5407, 4694, 2]
+// Dependencies: [32, 9673, 10586, 4162, 4303, 1297, 8716, 5426, 4711, 2]
 // Exports: useDraggablePip
 
-// Module 10602 (clamp)
+// Module 10599 (clamp)
 import _slicedToArray from "_slicedToArray";
 import { useChannelCallStore } from "VoiceChatDrawerState";
 import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET";

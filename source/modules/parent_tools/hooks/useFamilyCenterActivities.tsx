@@ -1,10 +1,10 @@
-// Module ID: 14055
-// Function ID: 14056
+// Module ID: 14069
+// Function ID: 14070
 // Name: useActionsForDisplayType
-// Dependencies: [6917, 6918, 647, 6973, 5776, 2]
+// Dependencies: [6936, 6937, 647, 6992, 5795, 2]
 // Exports: useActionTotalsForDisplayType, useActionsForDisplayType, useFormattedTotalForDisplayType, useHasActionForAnyDisplayType
 
-// Module 14055 (useActionsForDisplayType)
+// Module 14069 (useActionsForDisplayType)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { TeenActionDisplayType } from "items";
 
@@ -36,7 +36,7 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     num = 0;
   }
   if (displayType === TeenActionDisplayType.TOTAL_VOICE_MINUTES) {
-    let tmpResult = tmp(6973);
+    let tmpResult = tmp(6992);
     return tmpResult.formatTotalTime(num);
   } else if (displayType === tmp3.PURCHASES) {
     const totalSpendAmount = obj2.getTotalSpendAmount();
@@ -45,7 +45,7 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     if (null != totalSpendAmount) {
       result = num;
       if (null != totalSpendCurrency) {
-        tmpResult = tmp(5776);
+        tmpResult = tmp(5795);
         result = tmpResult.shortenAndFormatPrice(totalSpendAmount, totalSpendCurrency);
       }
     }
@@ -54,8 +54,8 @@ export const useFormattedTotalForDisplayType = function useFormattedTotalForDisp
     const totalGiftValue = obj2.getTotalGiftValue();
     let result1 = num;
     if (null != totalGiftValue) {
-      result1 = tmp(5776).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
-      const tmpResult1 = tmp(5776);
+      result1 = tmp(5795).shortenAndFormatPrice(totalGiftValue.amount, totalGiftValue.currency);
+      const tmpResult1 = tmp(5795);
     }
     return result1;
   } else {

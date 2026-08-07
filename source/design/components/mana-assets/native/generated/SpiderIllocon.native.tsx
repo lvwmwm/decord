@@ -1,10 +1,10 @@
-// Module ID: 6675
-// Function ID: 6676
+// Module ID: 6694
+// Function ID: 6695
 // Name: SpiderIllocon
-// Dependencies: [21, 5251, 6676, 2]
+// Dependencies: [21, 5267, 6695, 2]
 // Exports: SpiderIllocon
 
-// Module 6675 (SpiderIllocon)
+// Module 6694 (SpiderIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/SpiderIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const SpiderIllocon = function SpiderIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6676);
+  obj[0] = importDefault(6695);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { uri: null });
+  return jsx(importDefault(5267), { uri: null });
 };

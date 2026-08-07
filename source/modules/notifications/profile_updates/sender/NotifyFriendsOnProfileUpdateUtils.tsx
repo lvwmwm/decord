@@ -1,17 +1,17 @@
-// Module ID: 14839
-// Function ID: 14840
+// Module ID: 14855
+// Function ID: 14856
 // Name: onNotifyFriendsOnProfileUpdateSettingsChanged
-// Dependencies: [3924, 676, 3957, 698, 2]
+// Dependencies: [3941, 676, 3974, 698, 2]
 // Exports: onNotifyFriendsOnProfileUpdateSettingsChanged
 
-// Module 14839 (onNotifyFriendsOnProfileUpdateSettingsChanged)
+// Module 14855 (onNotifyFriendsOnProfileUpdateSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/profile_updates/sender/NotifyFriendsOnProfileUpdateUtils.tsx");
 
 export const onNotifyFriendsOnProfileUpdateSettingsChanged = function onNotifyFriendsOnProfileUpdateSettingsChanged(notify_friends_on_profile_update) {
-  const NotifyFriendsOnProfileUpdate = require(3957) /* explicitContentFromProto */.NotifyFriendsOnProfileUpdate;
+  const NotifyFriendsOnProfileUpdate = require(3974) /* explicitContentFromProto */.NotifyFriendsOnProfileUpdate;
   NotifyFriendsOnProfileUpdate.updateSetting(notify_friends_on_profile_update);
   let obj = importDefault(698);
   obj = { update_type: constants.ACCOUNT, notify_friends_on_profile_update };

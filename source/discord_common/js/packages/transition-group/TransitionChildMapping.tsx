@@ -1,10 +1,10 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10226
+// Function ID: 10227
 // Name: getChildMapping
 // Dependencies: [19, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 10210 (getChildMapping)
+// Module 10226 (getChildMapping)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/transition-group/TransitionChildMapping.tsx");

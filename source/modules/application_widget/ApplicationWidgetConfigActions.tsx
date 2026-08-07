@@ -1,10 +1,10 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12384
+// Function ID: 12385
 // Name: getApplicationsFromConfigs
-// Dependencies: [5, 12368, 676, 10918, 584, 687, 709, 530, 1208, 2]
+// Dependencies: [5, 12383, 676, 10933, 584, 687, 709, 530, 1208, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 12369 (getApplicationsFromConfigs)
+// Module 12384 (getApplicationsFromConfigs)
 import set from "set";
 import updateApplicationConfigs from "updateApplicationConfigs";
 import { FetchState } from "updateApplicationConfigs";

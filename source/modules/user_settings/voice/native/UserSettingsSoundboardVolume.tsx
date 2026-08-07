@@ -1,10 +1,10 @@
-// Module ID: 10777
-// Function ID: 10778
+// Module ID: 10789
+// Function ID: 10790
 // Name: SoundboardVolume
-// Dependencies: [19, 17, 676, 21, 4285, 5880, 5649, 10767, 1236, 5354, 10774, 5874, 4281, 1974, 2]
+// Dependencies: [19, 17, 676, 21, 4302, 5899, 5668, 10779, 1236, 5373, 10786, 5893, 4298, 1974, 2]
 // Exports: default
 
-// Module 10777 (SoundboardVolume)
+// Module 10789 (SoundboardVolume)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -21,9 +21,9 @@ const result = require("ME").fileFinishedImporting("modules/user_settings/voice/
 
 export default function SoundboardVolume() {
   const tmp = callback3();
-  let obj = analyticsLocations(5880);
+  let obj = analyticsLocations(5899);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
-  analyticsLocations = importDefault(5649)().analyticsLocations;
+  analyticsLocations = importDefault(5668)().analyticsLocations;
   obj = { title: null, hasIcons: false, children: null };
   const intl = analyticsLocations(1236).intl;
   obj[0] = intl.string(analyticsLocations(1236).t.xbMc8r);
@@ -31,16 +31,16 @@ export default function SoundboardVolume() {
   const intl2 = analyticsLocations(1236).intl;
   obj[0] = intl2.string(analyticsLocations(1236).t.kbFsAD);
   const obj1 = { children: null };
-  const items = [callback(View, { style: tmp.slider, children: callback(importDefault(10774), obj3) }), ];
+  const items = [callback(View, { style: tmp.slider, children: callback(importDefault(10786), obj3) }), ];
   const obj4 = { style: tmp.text, variant: "text-sm/medium", children: null };
   const intl3 = analyticsLocations(1236).intl;
   const obj5 = { helpCenterArticle: null };
-  const obj2 = { style: tmp.slider, children: callback(importDefault(10774), obj3) };
+  const obj2 = { style: tmp.slider, children: callback(importDefault(10786), obj3) };
   obj5[0] = importDefault(1974).getArticleURL(HelpdeskArticles.SOUNDBOARD);
   obj4[2] = intl3.format(analyticsLocations(1236).t.BPbGq7, obj5);
-  items[1] = callback(analyticsLocations(4281).Text, obj4);
+  items[1] = callback(analyticsLocations(4298).Text, obj4);
   obj1[0] = items;
   obj[1] = callback2(closure_6, obj1);
-  obj[2] = callback(analyticsLocations(5354).TableRow, obj);
-  return callback(analyticsLocations(10767).UserSettingsTableRowGroup, obj);
+  obj[2] = callback(analyticsLocations(5373).TableRow, obj);
+  return callback(analyticsLocations(10779).UserSettingsTableRowGroup, obj);
 };

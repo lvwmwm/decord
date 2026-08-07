@@ -1,10 +1,10 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7032
+// Function ID: 7033
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4306, 676, 589, 687, 7014, 2]
+// Dependencies: [5, 19, 4323, 676, 589, 687, 7033, 2]
 // Exports: useGames
 
-// Module 7013 (importDefaultResult1)
+// Module 7032 (importDefaultResult1)
 import noop from "noop";
 import importDefaultResult1 from "handleLoadMessages";
 import initialize from "initialize";

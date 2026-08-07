@@ -1,10 +1,10 @@
-// Module ID: 15832
-// Function ID: 15833
+// Module ID: 15856
+// Function ID: 15857
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 8493, 4285, 712, 6855, 5704, 1609, 8305, 1236, 15833, 15835, 2]
+// Dependencies: [19, 17, 21, 8510, 4302, 712, 6874, 5723, 1609, 8322, 1236, 15857, 15859, 2]
 // Exports: default
 
-// Module 15832 (ContextMenuCommandNavigator)
+// Module 15856 (ContextMenuCommandNavigator)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,8 +27,8 @@ export default function ContextMenuCommandNavigator() {
   let Screen;
   const tmp = createNativeStackNavigator();
   const require = tmp;
-  const layoutEffect = React.useLayoutEffect(() => tmp(6855).trackAppUIViewed(), []);
-  let obj = require(5704) /* NavigationStack */;
+  const layoutEffect = React.useLayoutEffect(() => tmp(6874).trackAppUIViewed(), []);
+  let obj = require(5723) /* NavigationStack */;
   const importDefault = obj.useAccessibilityNativeStackOptions();
   const rect = importDefault(1609)();
   obj = { style: items, children: null };
@@ -67,7 +67,7 @@ export default function ContextMenuCommandNavigator() {
   obj2[0] = intl.string(require(1236) /* getSystemLocale */.t.PHjkRE);
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return tmp(15833).default;
+    return tmp(15857).default;
   };
   const items1 = [
     callback(Screen, obj1),
@@ -82,7 +82,7 @@ export default function ContextMenuCommandNavigator() {
         return { title };
       },
       getComponent() {
-        return tmp(15835).default;
+        return tmp(15859).default;
       }
     })
   ];

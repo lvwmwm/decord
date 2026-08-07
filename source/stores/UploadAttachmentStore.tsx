@@ -1,9 +1,9 @@
-// Module ID: 4620
-// Function ID: 4621
+// Module ID: 4637
+// Function ID: 4638
 // Name: map
-// Dependencies: [4621, 676, 4623, 1236, 12, 4831, 4839, 589, 709, 2]
+// Dependencies: [4638, 676, 4640, 1236, 12, 4848, 4856, 589, 709, 2]
 
-// Module 4620 (map)
+// Module 4637 (map)
 import { DraftType } from "handleChanged";
 import { MAX_UPLOAD_COUNT } from "ME";
 import { Store } from "initialize";
@@ -352,7 +352,7 @@ const uploadAttachmentStore = new UploadAttachmentStore(require("dispatcher"), {
     }
     const items = [...value];
     const found = items.filter((id) => id.id !== closure_0);
-    const cloudUpload = new require(4831) /* set */.CloudUpload(file, channelId, undefined, allowOptimization);
+    const cloudUpload = new require(4848) /* set */.CloudUpload(file, channelId, undefined, allowOptimization);
     found.push(cloudUpload);
     let value1 = obj.get(channelId);
     if (value1 == null) {

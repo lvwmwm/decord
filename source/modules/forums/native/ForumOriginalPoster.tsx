@@ -1,10 +1,10 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11205
+// Function ID: 11206
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4285, 712, 5140, 4281, 1236, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 5157, 4298, 1236, 2]
 // Exports: getForumOriginalPoster
 
-// Module 11190 (ForumOriginalPoster)
+// Module 11205 (ForumOriginalPoster)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11319
+// Function ID: 11320
 // Name: tryUpdateSubscriptionForHereMention
-// Dependencies: [32, 19, 5818, 5848, 5824, 8276, 12, 2]
+// Dependencies: [32, 19, 5837, 5867, 5843, 8293, 12, 2]
 // Exports: tryUpdateSubscriptionForHereMention, useHereMentionCallback
 
-// Module 11304 (tryUpdateSubscriptionForHereMention)
+// Module 11319 (tryUpdateSubscriptionForHereMention)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getMemberListId from "getMemberListId";
@@ -33,9 +33,9 @@ export const tryUpdateSubscriptionForHereMention = function tryUpdateSubscriptio
     if (!tmp5) {
       let flag = -1 !== arr.indexOf(c6);
       if (flag) {
-        require(5848) /* subscribeMembers */.subscribeChannel(guild_id, id, require(5824) /* reset */.DEFAULT_RANGES);
+        require(5867) /* subscribeMembers */.subscribeChannel(guild_id, id, require(5843) /* reset */.DEFAULT_RANGES);
         flag = true;
-        const obj = require(5848) /* subscribeMembers */;
+        const obj = require(5867) /* subscribeMembers */;
       }
       tmp7 = flag;
     }
@@ -47,7 +47,7 @@ export const useHereMentionCallback = function useHereMentionCallback(arg0, arg1
   let closure_0 = arg0;
   const importDefault = arg1;
   const dependencyMap = arg2;
-  let tmp = importDefault(8276)();
+  let tmp = importDefault(8293)();
   const callback = tmp;
   let tmp2 = callback(first.useState(false), 2);
   first = tmp2[0];

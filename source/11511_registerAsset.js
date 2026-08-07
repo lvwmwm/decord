@@ -1,0 +1,10 @@
+// Module ID: 11511
+// Function ID: 11512
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 11511 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 128, height: 128, scales: [2, 3], hash: "e383fc0d018f183d68f1f643b1d8ed25", name: "app_dock_not_found_light", type: "png" });

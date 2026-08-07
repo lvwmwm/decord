@@ -1,9 +1,9 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11214
+// Function ID: 11215
 // Name: handleSafetyHubRequestAgeVerificationResetModalAction
-// Dependencies: [7728, 7729, 11200, 589, 709, 2]
+// Dependencies: [7745, 7746, 11215, 589, 709, 2]
 
-// Module 11199 (handleSafetyHubRequestAgeVerificationResetModalAction)
+// Module 11214 (handleSafetyHubRequestAgeVerificationResetModalAction)
 import SafetyHubView from "SafetyHubView";
 import { Store } from "initialize";
 
@@ -122,7 +122,7 @@ obj = {
     let isDsaEligible;
     let username;
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility } = arg0);
-    let closure_6 = importDefault(11200)(classifications, "id");
+    let closure_6 = importDefault(11215)(classifications, "id");
     let c9 = false;
     let c10 = true;
     let c11 = null;
@@ -133,7 +133,7 @@ obj = {
     error = error.error;
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_START: function handleFetchClassificationStart(classificationId) {
-    closure_7[classificationId.classificationId] = require(7729) /* ContentIdType */.ClassificationRequestState.PENDING;
+    closure_7[classificationId.classificationId] = require(7746) /* ContentIdType */.ClassificationRequestState.PENDING;
     let c9 = true;
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS: function handleFetchClassificationSuccess(classification) {
@@ -144,7 +144,7 @@ obj = {
     classification = classification.classification;
     closure_6[classification.id] = classification;
     ({ accountStanding, isDsaEligible, username, isAppealEligible } = classification);
-    closure_7[classification.id] = require(7729) /* ContentIdType */.ClassificationRequestState.SUCCESS;
+    closure_7[classification.id] = require(7746) /* ContentIdType */.ClassificationRequestState.SUCCESS;
     let c9 = false;
     let c11 = null;
     let c10 = true;
@@ -152,7 +152,7 @@ obj = {
   SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: function handleFetchClassificationFailure(error) {
     let c9 = false;
     error = error.error;
-    closure_7[error.classificationId] = require(7729) /* ContentIdType */.ClassificationRequestState.FAILED;
+    closure_7[error.classificationId] = require(7746) /* ContentIdType */.ClassificationRequestState.FAILED;
     let c10 = false;
   },
   SAFETY_HUB_APPEAL_OPEN: function handleAppealOpen(classificationId) {
@@ -180,7 +180,7 @@ obj = {
   SAFETY_HUB_REQUEST_REVIEW_SUCCESS: function handleSafetyHubRequestReviewSuccess(arg0) {
     let c16 = false;
     let c17 = null;
-    dependencyMap[arg0.classificationId].appeal_status = { status: require(7729) /* ContentIdType */.AppealStatusType.REVIEW_PENDING };
+    dependencyMap[arg0.classificationId].appeal_status = { status: require(7746) /* ContentIdType */.AppealStatusType.REVIEW_PENDING };
   },
   SAFETY_HUB_REQUEST_REVIEW_FAILURE: function handleSafetyHubRequestReviewFailure(error) {
     let c16 = false;
@@ -222,7 +222,7 @@ obj = {
           let obj = { status: null };
           let tmp2 = require;
           let tmp3 = dependencyMap;
-          obj[0] = require(7729) /* ContentIdType */.AppealStatusType.REVIEW_PENDING;
+          obj[0] = require(7746) /* ContentIdType */.AppealStatusType.REVIEW_PENDING;
           dependencyMap[key10002].appeal_status = obj;
           continue;
         }
@@ -264,7 +264,7 @@ obj = {
   LOGOUT: function reset() {
     let c9 = false;
     let closure_6 = {};
-    const obj = { state: require(7729) /* ContentIdType */.AccountStandingState.ALL_GOOD };
+    const obj = { state: require(7746) /* ContentIdType */.AccountStandingState.ALL_GOOD };
     let c12 = null;
     const DIDNT_VIOLATE_POLICY = AppealIngestionSignal.DIDNT_VIOLATE_POLICY;
     let c19 = "";

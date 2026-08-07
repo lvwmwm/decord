@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 12769
+// Function ID: 12770
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 3936, 5779, 21, 4700, 4281, 589, 5782, 7342, 5649, 9955, 4624, 1236, 3930, 9951, 4696, 12755, 2]
+// Dependencies: [5, 19, 17, 3953, 5798, 21, 4717, 4298, 589, 5801, 7361, 5668, 9971, 4641, 1236, 3947, 9967, 4713, 12770, 2]
 // Exports: default
 
-// Module 12754 (GiftPurchaseButton)
+// Module 12769 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = outer1_1(4624);
+          obj1 = outer1_1(4641);
           const obj3 = { title: null, body: null };
           const intl = outer1_0(1236).intl;
           obj3[0] = intl.string(outer1_0(1236).t.R0RpRX);
@@ -124,10 +124,10 @@ export default function GiftPurchaseButton(style) {
         } else {
           closure_0 = arg1;
           premiumType = 0;
-          premiumTypeFromPlanId = outer1_0(3930).getPremiumTypeFromPlanId(closure_0);
+          premiumTypeFromPlanId = outer1_0(3947).getPremiumTypeFromPlanId(closure_0);
           premiumType = premiumTypeFromPlanId.premiumType;
           planInterval = premiumTypeFromPlanId.planInterval;
-          const obj9 = outer1_0(3930);
+          const obj9 = outer1_0(3947);
           const obj5 = { recipientUserId: null, premiumType: null, planInterval: null, analyticsLocation: null, analyticsLocations: null, order: null };
           obj5[0] = premiumType;
           obj5[1] = premiumType;
@@ -135,7 +135,7 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(9951).openGiftModal(obj5);
+          outer1_0(9967).openGiftModal(obj5);
           c4 = 3;
           return { value: "T", done: null };
         }

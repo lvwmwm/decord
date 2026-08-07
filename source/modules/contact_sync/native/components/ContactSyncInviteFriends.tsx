@@ -1,10 +1,10 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 11988
+// Function ID: 11989
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1903, 676, 21, 4285, 712, 589, 5251, 11974, 4281, 1236, 4695, 698, 4123, 8846, 2]
+// Dependencies: [19, 17, 1903, 676, 21, 4302, 712, 589, 5267, 11989, 4298, 1236, 4712, 698, 4140, 8863, 2]
 // Exports: default
 
-// Module 11973 (ContactSyncInviteFriends)
+// Module 11988 (ContactSyncInviteFriends)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,16 +34,16 @@ export default function ContactSyncInviteFriends() {
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { style: tmp.art, source: null };
-  obj1[1] = importDefault(11974);
-  const items1 = [callback(importDefault(5251), obj1), , ];
+  obj1[1] = importDefault(11989);
+  const items1 = [callback(importDefault(5267), obj1), , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   let intl = _require(1236).intl;
   obj2[4] = intl.string(_require(1236).t.ZxBpLf);
-  items1[1] = callback(_require(4281).Text, obj2);
+  items1[1] = callback(_require(4298).Text, obj2);
   const obj3 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = _require(1236).intl;
   obj3[3] = intl2.string(_require(1236).t["fXtCJ+"]);
-  items1[2] = callback(_require(4281).Text, obj3);
+  items1[2] = callback(_require(4298).Text, obj3);
   obj[1] = items1;
   const items2 = [callback2(View, obj), ];
   const obj4 = { style: tmp.button, children: null };
@@ -66,7 +66,7 @@ export default function ContactSyncInviteFriends() {
     const tmp5 = callback;
     callback(outer1_2[15]).showShareActionSheet({ message: formatToPlainStringResult }, tmp3.CONTACT_SYNC_MODAL);
   };
-  obj4[1] = callback(_require(4695).Button, obj5);
+  obj4[1] = callback(_require(4712).Button, obj5);
   items2[1] = callback(View, obj4);
   obj[0] = items2;
   return callback2(closure_9, obj);

@@ -1,10 +1,10 @@
-// Module ID: 13113
-// Function ID: 13114
+// Module ID: 13127
+// Function ID: 13128
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7680, 6906, 6806, 12602, 1218, 676, 1379, 4349, 4497, 10557, 6918, 4268, 13114, 11197, 8005, 11949, 4490, 4136, 13115, 8706, 5937, 9251, 11109, 1872, 10330, 698, 10332, 5787, 10976, 11239, 13122, 11981, 10561, 1988, 10558, 10556, 13124, 13126, 1605, 4842, 13131, 3981, 13133, 1891, 5878, 8863, 8872, 5852, 4489, 10800, 4135, 5155, 1222, 709, 5105, 1467, 8944, 13136, 13151, 500, 13162, 8988, 13169, 4604, 13170, 6921, 5669, 9136, 7098, 5148, 11084, 9951, 13242, 5133, 10514, 9201, 9195, 4251, 2]
+// Dependencies: [109, 5, 5343, 6925, 6825, 12617, 1218, 676, 1379, 4366, 4514, 10554, 6937, 4285, 13128, 11212, 8022, 11964, 4507, 4153, 13129, 8723, 5956, 9268, 11124, 1872, 10346, 698, 10348, 5806, 10991, 11254, 13136, 11996, 10558, 1988, 10555, 10553, 13138, 13140, 1605, 4859, 13145, 3998, 13147, 1891, 5897, 8880, 8889, 5871, 4506, 10812, 4152, 5172, 1222, 709, 5122, 1467, 8961, 13150, 13165, 500, 13176, 9005, 13183, 4621, 13184, 6940, 5688, 9153, 7117, 5165, 11099, 9967, 13256, 5150, 10530, 9218, 9212, 4268, 2]
 // Exports: default
 
-// Module 13113 (handleSupportedURL)
+// Module 13127 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "<string:778043393>" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: false };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

@@ -1,10 +1,10 @@
-// Module ID: 12536
-// Function ID: 12537
+// Module ID: 12551
+// Function ID: 12552
 // Name: getAskToJoinText
-// Dependencies: [1903, 676, 1236, 2738, 4474, 2]
+// Dependencies: [1903, 676, 1236, 2738, 4491, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12536 (getAskToJoinText)
+// Module 12551 (getAskToJoinText)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ActivityActionTypes } from "ME";
 
@@ -98,9 +98,9 @@ export const getRequestToStreamText = function getRequestToStreamText(author, gu
   } else {
     const intl = require(1236) /* getSystemLocale */.intl;
     const obj = { username: null };
-    obj[0] = require(4474) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author);
+    obj[0] = require(4491) /* getNickname */.getName(guild_id.guild_id, guild_id.id, author.author);
     stringResult = intl.formatToPlainString(importDefault(2738)["d/qbC0"], obj);
-    const obj2 = require(4474) /* getNickname */;
+    const obj2 = require(4491) /* getNickname */;
   }
   return stringResult;
 };
@@ -121,9 +121,9 @@ export const getDeadGameInviteText = function getDeadGameInviteText(activity, na
           } else {
             const intl = require(1236) /* getSystemLocale */.intl;
             const obj = { username: null };
-            obj[0] = require(4474) /* getNickname */.getName(guild_id.guild_id, guild_id.id, activity.author);
+            obj[0] = require(4491) /* getNickname */.getName(guild_id.guild_id, guild_id.id, activity.author);
             stringResult = intl.formatToPlainString(importDefault(2738)["d/qbC0"], obj);
-            const obj2 = require(4474) /* getNickname */;
+            const obj2 = require(4491) /* getNickname */;
           }
           return stringResult;
         } else {

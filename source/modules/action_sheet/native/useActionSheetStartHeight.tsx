@@ -1,10 +1,10 @@
-// Module ID: 9839
-// Function ID: 9840
+// Module ID: 9855
+// Function ID: 9856
 // Name: useActionSheetHeight
-// Dependencies: [5378, 1474, 2]
+// Dependencies: [5397, 1474, 2]
 // Exports: default
 
-// Module 9839 (useActionSheetHeight)
+// Module 9855 (useActionSheetHeight)
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_2 } from "ACTION_SHEET_START_HEIGHT_RATIO";
 
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/useActionSheetStartHeight.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 8117
-// Function ID: 8118
+// Module ID: 8134
+// Function ID: 8135
 // Name: ChangeLogLink
-// Dependencies: [19, 17, 21, 4285, 712, 5140, 4714, 4281, 3983, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 5157, 4731, 4298, 4000, 2]
 
-// Module 8117 (ChangeLogLink)
+// Module 8134 (ChangeLogLink)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -86,7 +86,7 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = require(4281) /* Text */.Text;
+    Paragraph = require(4298) /* Text */.Text;
   }
   const tmp = createCacheKey();
   return <Paragraph key={state.key} variant="text-sm/normal" style={createCacheKey().text}>{output(node.content, state)}</Paragraph>;
@@ -97,7 +97,7 @@ function ChangeLogImage(arg0) {
   ({ node, state } = arg0);
   let obj = { style: createCacheKey().image, source: null };
   obj = { uri: null };
-  obj[0] = importDefault(3983).sanitizeUrl(node.target);
+  obj[0] = importDefault(4000).sanitizeUrl(node.target);
   obj[1] = obj;
   return <closure_4 key={state.key} uri={null} />;
 }
@@ -110,7 +110,7 @@ function ChangeLogBlockQuote(state) {
   let obj = { style: tmp.container, children: null };
   obj = { variant: "text-sm/normal", style: tmp.text, children: null };
   obj[2] = output(node.content, state);
-  obj[1] = jsx(require(4281) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: null });
+  obj[1] = jsx(require(4298) /* Text */.Text, { variant: "text-sm/normal", style: tmp.text, children: null });
   return <closure_3 key={state.key} variant="text-sm/normal" style={tmp.text}>{null}</closure_3>;
 }
 ({ View: c3, Image: c4 } = get_ActivityIndicator);

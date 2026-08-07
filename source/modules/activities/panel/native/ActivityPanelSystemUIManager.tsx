@@ -1,9 +1,9 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16029
+// Function ID: 16030
 // Name: BaseActivityPanelSystemUIManager
-// Dependencies: [19, 9676, 21, 15980, 500, 7669, 10592, 2]
+// Dependencies: [19, 9692, 21, 16006, 500, 7688, 10589, 2]
 
-// Module 16003 (BaseActivityPanelSystemUIManager)
+// Module 16029 (BaseActivityPanelSystemUIManager)
 import importAllResult from "noop";
 import { ActivityPanelModes } from "ActivityPanelModes";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ class BaseActivityPanelSystemUIManager {
 let c3 = importAllResult;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 const memoResult = importAllResult.memo(() => {
-  const context = importAllResult.useContext(importDefault(15980));
+  const context = importAllResult.useContext(importDefault(16006));
   return callback(BaseActivityPanelSystemUIManager, { mode: context.mode, isWindowLandscape: context.wrapperDimensions.isWindowLandscape });
 });
 const result = require("jsxProd").fileFinishedImporting("modules/activities/panel/native/ActivityPanelSystemUIManager.tsx");

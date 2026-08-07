@@ -1,10 +1,10 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14955
+// Function ID: 14956
 // Name: items
-// Dependencies: [32, 19, 17, 7975, 21, 4285, 712, 4693, 4281, 4695, 13178, 2]
+// Dependencies: [32, 19, 17, 7992, 21, 4302, 712, 4710, 4298, 4712, 13192, 2]
 // Exports: default
 
-// Module 14939 (items)
+// Module 14955 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -35,7 +35,7 @@ let closure_9 = found.map((arg0) => {
   [tmp, tmp2] = arg0;
   return { name, value };
 });
-items = [{ label: "Untinted", primary: "displayName", secondary: "isArray" }, ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary) => ({ label: "P" + arg1 + 1, primary: primary.primary, secondary: primary.secondary }))];
+items = [{ label: "Untinted", primary: "displayName", secondary: "Map" }, ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary) => ({ label: "P" + arg1 + 1, primary: primary.primary, secondary: primary.secondary }))];
 let closure_11 = [24, 48, 72];
 createCacheKey = { wrap: null, contentContainer: null, controlRow: null, grid: null, tile: null, badgeBox: null };
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW, flex: 1 };

@@ -1,10 +1,10 @@
-// Module ID: 7654
-// Function ID: 7655
+// Module ID: 7673
+// Function ID: 7674
 // Name: PromoSheet
-// Dependencies: [109, 19, 17, 21, 4285, 712, 1348, 7655, 5377, 4693, 7656, 4281, 2]
+// Dependencies: [109, 19, 17, 21, 4302, 712, 1348, 7674, 5396, 4710, 7675, 4298, 2]
 // Exports: PromoSheet
 
-// Module 7654 (PromoSheet)
+// Module 7673 (PromoSheet)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -59,7 +59,7 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj = {};
       const merged1 = Object.assign(graphic);
       obj.style = tmp4.graphic;
-      let tmp6Result = tmp6(tmp7(7656).Graphic, obj);
+      let tmp6Result = tmp6(tmp7(7675).Graphic, obj);
     }
     const items1 = [tmp6Result, , ];
     let str = "heading-xl/bold";
@@ -70,7 +70,7 @@ export const PromoSheet = function PromoSheet(arg0) {
     obj[0] = str;
     obj[2] = tmp4.title;
     obj[3] = title;
-    const items2 = [tmp6(tmp7(4281).Text, obj), ];
+    const items2 = [tmp6(tmp7(4298).Text, obj), ];
     tmp6Result = null;
     if (null != description) {
       let str2 = "text-md/medium";
@@ -86,17 +86,17 @@ export const PromoSheet = function PromoSheet(arg0) {
       obj1[1] = str3;
       obj1[2] = tmp4.description;
       obj1[3] = description;
-      tmp6Result = tmp6(tmp7(4281).Text, obj1);
+      tmp6Result = tmp6(tmp7(4298).Text, obj1);
     }
     const obj2 = { spacing: 24, children: null };
     const obj3 = { children: null };
     items2[1] = tmp6Result;
     obj3[0] = items2;
-    items1[1] = tmp9(tmp7(4693).Stack, obj3);
+    items1[1] = tmp9(tmp7(4710).Stack, obj3);
     items1[2] = actions;
     obj2[1] = items1;
     obj.children = tmp9(tmp10, obj2);
-    return tmp6(gradientColor(5377).BottomSheet, obj);
+    return tmp6(gradientColor(5396).BottomSheet, obj);
   }
   tmp6Result = null;
   if (null != illustration) {

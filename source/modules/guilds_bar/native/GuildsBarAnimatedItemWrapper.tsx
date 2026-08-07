@@ -1,10 +1,10 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15334
+// Function ID: 15335
 // Name: UnreadIndicator
-// Dependencies: [19, 4703, 15300, 21, 4285, 712, 3988, 4629, 4694, 4145, 7932, 15311, 15071, 1236, 3997, 5702, 8216, 2]
+// Dependencies: [19, 4720, 15324, 21, 4302, 712, 4005, 4646, 4711, 4162, 7949, 15335, 15087, 1236, 4014, 5721, 8233, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 15310 (UnreadIndicator)
+// Module 15334 (UnreadIndicator)
 import noop from "noop";
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE";
 import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE";
@@ -38,7 +38,7 @@ class UnreadIndicator {
     tmp5 = id;
     token = obj.useToken(require("Themes").modules.mobile.GUILD_BAR_ITEM_SIZE);
     c4 = token;
-    tmp7 = f61399(c6());
+    tmp7 = f61498(c6());
     GUILD_BAR_ITEM_SIZE = tmp7;
     tmp8 = MOUNTED === require("wrapChildrenDefault").TransitionStates.MOUNTED;
     c6 = tmp8;
@@ -93,7 +93,7 @@ class UnreadIndicator {
     obj[5] = token;
     fn.__closure = obj;
     fn.__workletHash = 404454683979;
-    fn.__initData = f61400;
+    fn.__initData = f61499;
     items1 = [, , , ];
     items1[0] = tmp8;
     items1[1] = sharedId;
@@ -128,15 +128,15 @@ class UnreadIndicator {
     obj1[2] = MOUNTED;
     obj1[3] = require("wrapChildrenDefault").TransitionStates;
     obj1[4] = cleanUp;
-    obj1[5] = require("module_4145").runOnJS;
+    obj1[5] = require("module_4162").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
-    fn2.__initData = f61400;
+    fn2.__initData = f61499;
     items2 = [, ];
     items2[0] = MOUNTED;
     items2[1] = cleanUp;
     callback1 = cleanUp.useCallback(fn2, items2);
-    return c7(require("module_7932"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
+    return c7(require("module_7949"), { collapsable: false, entering: callback, layout: callback1, style: memo, pointerEvents: "none" });
   }
 }
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
@@ -508,7 +508,7 @@ export const useGuildsBarAnimatedWrapperStyles = function useGuildsBarAnimatedWr
   if (flag2 === undefined) {
     flag2 = false;
   }
-  const token = require(3988) /* map */.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
+  const token = require(4005) /* map */.useToken(importDefault(712).modules.mobile.GUILD_BAR_ITEM_SIZE);
   return callback4(flag, flag2, token, callback());
 };
 export { UnreadIndicator };

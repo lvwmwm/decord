@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15850
+// Function ID: 15851
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 676, 21, 4285, 1480, 1483, 11650, 15785, 2]
+// Dependencies: [19, 17, 676, 21, 4302, 1480, 1483, 11665, 15809, 2]
 // Exports: default
 
-// Module 15826 (SearchNavigatorPreviewScreen)
+// Module 15850 (SearchNavigatorPreviewScreen)
 import noop from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { SearchTypes } from "ME";

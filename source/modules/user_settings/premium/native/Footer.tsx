@@ -1,10 +1,10 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12693
+// Function ID: 12694
 // Name: Footer
-// Dependencies: [19, 17, 21, 4285, 12679, 5669, 4281, 1236, 4695, 5251, 12680, 2]
+// Dependencies: [19, 17, 21, 4302, 12694, 5688, 4298, 1236, 4712, 5267, 12695, 2]
 // Exports: default
 
-// Module 12678 (Footer)
+// Module 12693 (Footer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/p
 export default function Footer(showSubscribeButton) {
   showSubscribeButton = showSubscribeButton.showSubscribeButton;
   const tmp = callback2();
-  importDefault(12679)(importDefault(5669).PREMIUM_MARKETING_FOOTER);
+  importDefault(12694)(importDefault(5688).PREMIUM_MARKETING_FOOTER);
   let obj = { style: items, children: null };
   items = [tmp.container, showSubscribeButton.style];
   let tmp8Result = showSubscribeButton;
@@ -31,13 +31,13 @@ export default function Footer(showSubscribeButton) {
     obj[0] = tmp.footerText;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[3] = intl.string(require(1236) /* getSystemLocale */.t["2bSPbq"]);
-    const items1 = [callback(require(4281) /* Text */.Text, obj), ];
+    const items1 = [callback(require(4298) /* Text */.Text, obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.button;
     const obj2 = { text: null, variant: "primary", size: "lg", onPress: null, grow: true };
     obj2[0] = tmp7;
     obj2[3] = tmp6;
-    obj1[1] = callback(require(4695) /* Button */.Button, obj2);
+    obj1[1] = callback(require(4712) /* Button */.Button, obj2);
     items1[1] = callback(tmp9, obj1);
     obj[0] = items1;
     tmp8Result = tmp8(closure_5, obj);
@@ -45,12 +45,12 @@ export default function Footer(showSubscribeButton) {
   const items2 = [tmp8Result, ];
   let easterEggSpacing = null;
   const tmp14 = callback;
-  const tmp4 = importDefault(12679);
+  const tmp4 = importDefault(12694);
   if (!showSubscribeButton) {
     easterEggSpacing = tmp.easterEggSpacing;
   }
-  const tmp2Result = importDefault(5251);
-  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12680) });
+  const tmp2Result = importDefault(5267);
+  items2[1] = tmp14(tmp2Result, { style: easterEggSpacing, source: importDefault(12695) });
   obj[1] = items2;
   return closure_6(View, obj);
 };

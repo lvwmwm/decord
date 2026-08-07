@@ -1,10 +1,10 @@
-// Module ID: 16749
-// Function ID: 16750
+// Module ID: 16769
+// Function ID: 16770
 // Name: FormRoleColorPicker
-// Dependencies: [19, 676, 21, 4285, 4253, 15307, 1988, 13159, 13821, 688, 2]
+// Dependencies: [19, 676, 21, 4302, 4270, 15331, 1988, 13173, 13835, 688, 2]
 // Exports: default
 
-// Module 16749 (FormRoleColorPicker)
+// Module 16769 (FormRoleColorPicker)
 import noop from "noop";
 import { DEFAULT_ROLE_COLOR } from "ME";
 import { jsx } from "jsxProd";
@@ -33,8 +33,8 @@ export default function FormRoleColorPicker(color) {
   let obj = { leading: null, label: null, disabled: null, onPress: null };
   const tmp = callback();
   obj = { color, style: tmp.rowColorBlock, onSelect: callback };
-  obj[0] = jsx(onChange(13821), { color, style: tmp.rowColorBlock, onSelect: callback });
-  const tmp3 = onChange(13159);
+  obj[0] = jsx(onChange(13835), { color, style: tmp.rowColorBlock, onSelect: callback });
+  const tmp3 = onChange(13173);
   obj[1] = color(688).int2hex(color);
   obj[2] = flag;
   obj[3] = callback;

@@ -1,10 +1,10 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15021
+// Function ID: 15022
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 14995, 14996, 676, 1480, 14993, 1236, 15006, 10380, 8398, 15003, 691, 14994, 1481, 8413, 8407, 8861, 2]
+// Dependencies: [5, 32, 19, 15011, 15012, 676, 1480, 15009, 1236, 15022, 10396, 8415, 15019, 691, 15010, 1481, 8430, 8424, 8878, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15005 (useIdentityRegistrationStep)
+// Module 15021 (useIdentityRegistrationStep)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";

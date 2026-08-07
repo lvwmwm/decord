@@ -1,10 +1,10 @@
-// Module ID: 16056
-// Function ID: 16057
+// Module ID: 16082
+// Function ID: 16083
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 4495, 11564, 676, 4145, 1231, 10889, 4106, 4119, 10882, 10514, 2]
+// Dependencies: [32, 19, 4512, 11579, 676, 4162, 1231, 10901, 4123, 4136, 10894, 10530, 2]
 // Exports: default
 
-// Module 16056 (usePanelOpenState)
+// Module 16082 (usePanelOpenState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import withEqualityFn from "withEqualityFn";
@@ -28,7 +28,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
     const state = first.getState();
     return state.closeChannel(closure_0);
   }
-  let obj = _require(4145);
+  let obj = _require(4162);
   const fn = function f() {
     return { connected: connected.get() };
   };
@@ -52,7 +52,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       return;
     }
   }
-  obj = { runOnJS: _require(4145).runOnJS, doCloseChannel };
+  obj = { runOnJS: _require(4162).runOnJS, doCloseChannel };
   O.__closure = obj;
   O.__workletHash = 9166012598595;
   O.__initData = closure_10;
@@ -89,12 +89,12 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       ComponentDispatch2.unsubscribe(outer2_7.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = callback(doCloseChannel.useState(() => callback2(10889).getHistory().location.pathname), 2);
+  const tmp3 = callback(doCloseChannel.useState(() => callback2(10901).getHistory().location.pathname), 2);
   const first = tmp3[0];
   let closure_6 = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = doCloseChannel.useEffect(() => {
-    let closure_0 = callback2(10889).addRouteChangeListener((pathname) => {
+    let closure_0 = callback2(10901).addRouteChangeListener((pathname) => {
       if (withEqualityFn !== pathname.pathname) {
         callback2(tmp);
         let obj = callback(outer1_2[8]);

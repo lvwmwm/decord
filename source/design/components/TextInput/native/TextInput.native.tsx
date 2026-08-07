@@ -1,9 +1,9 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7730
+// Function ID: 7731
 // Name: TextInput
-// Dependencies: [19, 21, 7714, 5914, 500, 2]
+// Dependencies: [19, 21, 7731, 5933, 500, 2]
 
-// Module 7713 (TextInput)
+// Module 7730 (TextInput)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -47,8 +47,8 @@ const forwardRefResult = importAllResult.forwardRef((errorMessage, ref) => {
     tmp10 = id;
   }
   obj.accessibilityLabelledBy = tmp10;
-  obj.children = jsx(require(5914) /* TextField */.TextField, { ref });
-  return jsx(require(7714) /* Input */.Input, { ref });
+  obj.children = jsx(require(5933) /* TextField */.TextField, { ref });
+  return jsx(require(7731) /* Input */.Input, { ref });
 });
 const result = require("Input").fileFinishedImporting("design/components/TextInput/native/TextInput.native.tsx");
 

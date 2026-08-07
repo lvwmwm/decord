@@ -1,10 +1,10 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 8751
+// Function ID: 8752
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsShopThisLookMobileEnabled
 
-// Module 8734 (apexExperiment)
+// Module 8751 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-shop-this-look-mobile", kind: "user", defaultConfig: { shopThisLookMobileEnabled: false }, variations: { 0: { shopThisLookMobileEnabled: false }, 1: { shopThisLookMobileEnabled: true } } });

@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7725
+// Function ID: 7726
 // Name: getSafetyToastTypeContent
-// Dependencies: [1372, 1903, 7702, 4474, 4123, 1236, 2384, 2802, 2]
+// Dependencies: [1372, 1903, 7719, 4491, 4140, 1236, 2802, 2384, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7708 (getSafetyToastTypeContent)
+// Module 7725 (getSafetyToastTypeContent)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyToastType } from "SafetyToastType";
@@ -15,7 +15,7 @@ const result = require("SafetyToastType").fileFinishedImporting("modules/safety_
 export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOCK_SUCCESS, closure_0, c1) {
   user = user.getUser(closure_0);
   channel = channel.getChannel(c1);
-  let obj = importDefault(4474);
+  let obj = importDefault(4491);
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
@@ -26,47 +26,56 @@ export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOC
   }
   let name = obj.getName(guild_id, id, user);
   if (name == null) {
-    name = tmp3(4123).getGlobalName(user);
-    const tmp3Result = tmp3(4123);
+    name = tmp3(4140).getGlobalName(user);
+    const tmp3Result = tmp3(4140);
   }
   if (SafetyToastType.IGNORE_SUCCESS === BLOCK_SUCCESS) {
-    const intl15 = require(1236) /* getSystemLocale */.intl;
+    const intl18 = require(1236) /* getSystemLocale */.intl;
     obj = { username: null };
     obj[0] = name;
-    return intl15.formatToPlainString(require(1236) /* getSystemLocale */.t["+joqrP"], obj);
+    return intl18.formatToPlainString(require(1236) /* getSystemLocale */.t["+joqrP"], obj);
   } else if (tmp8.UNIGNORE_SUCCESS === BLOCK_SUCCESS) {
-    const intl14 = require(1236) /* getSystemLocale */.intl;
+    const intl17 = require(1236) /* getSystemLocale */.intl;
     obj = { username: null };
     obj[0] = name;
-    return intl14.formatToPlainString(require(1236) /* getSystemLocale */.t.THExKa, obj);
+    return intl17.formatToPlainString(require(1236) /* getSystemLocale */.t.THExKa, obj);
   } else if (tmp8.BLOCK_SUCCESS === BLOCK_SUCCESS) {
-    const intl13 = require(1236) /* getSystemLocale */.intl;
+    const intl16 = require(1236) /* getSystemLocale */.intl;
     const obj1 = { username: null };
     obj1[0] = name;
-    return intl13.formatToPlainString(require(1236) /* getSystemLocale */.t.XXPrIs, obj1);
+    return intl16.formatToPlainString(require(1236) /* getSystemLocale */.t.XXPrIs, obj1);
   } else if (tmp8.UNBLOCK_SUCCESS === BLOCK_SUCCESS) {
-    const intl12 = require(1236) /* getSystemLocale */.intl;
+    const intl15 = require(1236) /* getSystemLocale */.intl;
     const obj2 = { username: null };
     obj2[0] = name;
-    return intl12.formatToPlainString(require(1236) /* getSystemLocale */.t.uExcGX, obj2);
+    return intl15.formatToPlainString(require(1236) /* getSystemLocale */.t.uExcGX, obj2);
   } else if (tmp8.MUTE_SUCCESS === BLOCK_SUCCESS) {
-    const intl11 = require(1236) /* getSystemLocale */.intl;
+    const intl14 = require(1236) /* getSystemLocale */.intl;
     const obj3 = { username: null };
     obj3[0] = name;
-    return intl11.formatToPlainString(require(1236) /* getSystemLocale */.t.X4NtYb, obj3);
+    return intl14.formatToPlainString(require(1236) /* getSystemLocale */.t.X4NtYb, obj3);
   } else if (tmp8.UNMUTE_SUCCESS === BLOCK_SUCCESS) {
-    const intl10 = require(1236) /* getSystemLocale */.intl;
+    const intl13 = require(1236) /* getSystemLocale */.intl;
     const obj4 = { username: null };
     obj4[0] = name;
-    return intl10.formatToPlainString(require(1236) /* getSystemLocale */.t.tRaBfY, obj4);
+    return intl13.formatToPlainString(require(1236) /* getSystemLocale */.t.tRaBfY, obj4);
   } else if (tmp8.REPORT_SUCCESS === BLOCK_SUCCESS) {
-    const intl9 = require(1236) /* getSystemLocale */.intl;
+    const intl12 = require(1236) /* getSystemLocale */.intl;
     const obj5 = { username: null };
     obj5[0] = name;
-    return intl9.formatToPlainString(require(1236) /* getSystemLocale */.t.FOptFU, obj5);
+    return intl12.formatToPlainString(require(1236) /* getSystemLocale */.t.FOptFU, obj5);
   } else if (tmp8.TIGGER_PAWTECT_ERROR === BLOCK_SUCCESS) {
+    const intl11 = require(1236) /* getSystemLocale */.intl;
+    return intl11.string(require(1236) /* getSystemLocale */.t.c6kn6F);
+  } else if (tmp8.AGE_VERIFICATION_FAE_FAILED === BLOCK_SUCCESS) {
+    const intl10 = require(1236) /* getSystemLocale */.intl;
+    return intl10.string(tmp3(2802)["9F2y52"]);
+  } else if (tmp8.AGE_VERIFICATION_ID_FAILED === BLOCK_SUCCESS) {
+    const intl9 = require(1236) /* getSystemLocale */.intl;
+    return intl9.string(tmp3(2802)["40UKek"]);
+  } else if (tmp8.AGE_VERIFICATION_UNDERAGE === BLOCK_SUCCESS) {
     const intl8 = require(1236) /* getSystemLocale */.intl;
-    return intl8.string(require(1236) /* getSystemLocale */.t.c6kn6F);
+    return intl8.string(tmp3(2802).XBGt7g);
   } else if (tmp8.TIGGER_PAWTECT_VERIFIED === BLOCK_SUCCESS) {
     const intl7 = require(1236) /* getSystemLocale */.intl;
     return intl7.string(require(1236) /* getSystemLocale */.t["7nKAXx"]);

@@ -1,10 +1,10 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8094
+// Function ID: 8095
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: [3944, 4285, 712, 7978, 8078, 8079, 1236, 2866, 2]
+// Dependencies: [3961, 4302, 712, 7995, 8095, 8096, 1236, 2866, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8077 (createPremiumGroupInviteEmbed)
+// Module 8094 (createPremiumGroupInviteEmbed)
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
 let c3;
@@ -29,19 +29,19 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     obj[3] = importDefault(712).colors.BACKGROUND_MOD_NORMAL;
     obj[4] = importDefault(712).colors.BLACK;
     obj[5] = importDefault(712).colors.WHITE;
-    const obj4 = require(4285) /* createCacheKey */;
+    const obj4 = require(4302) /* createCacheKey */;
     const tmp8 = importDefault;
-    ({ backgroundColor, headerTextColor, bodyTextColor, linkTextColor, betaPillTextColor, betaPillBackgroundColor } = require(4285) /* createCacheKey */.createNativeStyleProperties(obj)(theme));
-    const tmp9 = require(4285) /* createCacheKey */.createNativeStyleProperties(obj)(theme);
+    ({ backgroundColor, headerTextColor, bodyTextColor, linkTextColor, betaPillTextColor, betaPillBackgroundColor } = require(4302) /* createCacheKey */.createNativeStyleProperties(obj)(theme));
+    const tmp9 = require(4302) /* createCacheKey */.createNativeStyleProperties(obj)(theme);
     const author = message.author;
-    const assetUriForEmbed = require(7978) /* frozen */.getAssetUriForEmbed(importDefault(8078));
-    const obj6 = require(7978) /* frozen */;
+    const assetUriForEmbed = require(7995) /* frozen */.getAssetUriForEmbed(importDefault(8095));
+    const obj6 = require(7995) /* frozen */;
     obj = { sender: null, channel: null, isSender: null, inviteState: null };
     obj[0] = author;
     obj[1] = channel;
     obj[2] = id === author.id;
     obj[3] = constants.UNKNOWN;
-    const premiumGroupInviteEmbedText = require(8079) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
+    const premiumGroupInviteEmbedText = require(8096) /* getPremiumGroupInviteEmbedText */.getPremiumGroupInviteEmbedText(obj);
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
       const intl = tmp6(1236).intl;
@@ -66,6 +66,6 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj2[10] = formatToPartsResult;
       return obj2;
     }
-    const obj7 = require(8079) /* getPremiumGroupInviteEmbedText */;
+    const obj7 = require(8096) /* getPremiumGroupInviteEmbedText */;
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16635
+// Function ID: 16636
 // Name: onMembersLoadFail
-// Dependencies: [32, 19, 17, 5338, 676, 21, 4285, 712, 3985, 8368, 1236, 16595, 5847, 589, 4623, 8944, 1297, 698, 4253, 16596, 1988, 9614, 7672, 5917, 5913, 4241, 4281, 5354, 9445, 2]
+// Dependencies: [32, 19, 17, 5357, 676, 21, 4302, 712, 4002, 8385, 1236, 16615, 5866, 589, 4640, 8961, 1297, 698, 4270, 16616, 1988, 9630, 7691, 5936, 5932, 4258, 4298, 5373, 9462, 2]
 // Exports: default
 
-// Module 16615 (onMembersLoadFail)
+// Module 16635 (onMembersLoadFail)
 import _slicedToArray from "_slicedToArray";
 import _toPropertyKey from "_toPropertyKey";
 import { View } from "expandEventProperties";
@@ -17,8 +17,8 @@ let c9;
 let metroImportAll;
 const require = arg1;
 function onMembersLoadFail() {
-  let obj = importDefault(3985);
-  obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: importDefault(8368), content: null };
+  let obj = importDefault(4002);
+  obj = { key: "ERROR_OCCURRED_TRY_AGAIN", icon: importDefault(8385), content: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.fEptJP);
   obj.open(obj);
@@ -88,11 +88,11 @@ export default function GuildSettingsRoleMembers(guild) {
         const items = [found.id];
         let obj = role(locked[15]);
         role(locked[15]).updateMemberRoles(name.id, name.id, found, [], items).catch(() => {
-          let obj = callback2(3985);
+          let obj = callback2(4002);
           obj = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
           const intl = callback(1236).intl;
           obj[1] = intl.string(callback(1236).t.fEptJP);
-          obj[2] = callback2(8368);
+          obj[2] = callback2(8385);
           obj.open(obj);
         });
       };

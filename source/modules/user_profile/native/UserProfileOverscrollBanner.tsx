@@ -1,15 +1,15 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 8778
+// Function ID: 8779
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 4145, 8697, 8762, 500, 2]
+// Dependencies: [19, 17, 21, 4162, 8714, 8779, 500, 2]
 // Exports: default
 
-// Module 8761 (UserProfileOverscrollBanner)
+// Module 8778 (UserProfileOverscrollBanner)
 import "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
-import module_8697 from "module_8697";
-import importDefaultResult from "module_4145";
+import module_8714 from "module_8714";
+import importDefaultResult from "module_4162";
 
 let c4;
 let c5;
@@ -30,19 +30,19 @@ export default function UserProfileOverscrollBanner(arg0) {
   obj = { style: bannerImageAnimatedStyle, children: null };
   obj = {};
   const merged1 = Object.assign(merged);
-  const items1 = [callback(importDefault(8762), obj), ];
+  const items1 = [callback(importDefault(8779), obj), ];
   const tmp3 = callback;
-  const tmp4 = importDefault(8762);
+  const tmp4 = importDefault(8779);
   let tmp3Result = require(500) /* set */.isIOS() && showBlur;
   if (tmp3Result) {
     const obj1 = { animatedProps: null, style: null };
     obj1[0] = blurAnimatedProps;
     obj1[1] = StyleSheet.absoluteFillObject;
-    tmp3Result = tmp3(module_8697, obj1);
+    tmp3Result = tmp3(module_8714, obj1);
   }
   items1[1] = tmp3Result;
   obj[1] = items1;
-  items[1] = closure_5(importDefault(4145).View, obj);
+  items[1] = closure_5(importDefault(4162).View, obj);
   obj[1] = items;
-  return closure_5(importDefault(4145).View, obj);
+  return closure_5(importDefault(4162).View, obj);
 };

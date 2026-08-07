@@ -1,10 +1,10 @@
-// Module ID: 9695
-// Function ID: 9696
+// Module ID: 9711
+// Function ID: 9712
 // Name: isInAppMessageSoundsEnabled
-// Dependencies: [595, 700, 3897, 2]
+// Dependencies: [595, 700, 3914, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 9695 (isInAppMessageSoundsEnabled)
+// Module 9711 (isInAppMessageSoundsEnabled)
 import identity from "identity";
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
@@ -27,5 +27,5 @@ export const setInAppMessageSoundsEnabled = function setInAppMessageSoundsEnable
   store.setState({ isEnabled });
 };
 export const useInAppMessageSoundsEnabled = function useInAppMessageSoundsEnabled() {
-  return store((isEnabled) => isEnabled.isEnabled, require(3897) /* isIterable */.shallow);
+  return store((isEnabled) => isEnabled.isEnabled, require(3914) /* isIterable */.shallow);
 };

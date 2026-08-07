@@ -1,15 +1,15 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14601
+// Function ID: 14602
 // Name: onChange
-// Dependencies: [8005, 3923, 3957, 1236, 1306, 10364, 2]
+// Dependencies: [8022, 3940, 3974, 1236, 1306, 10380, 2]
 // Exports: onChange
 
-// Module 14585 (onChange)
+// Module 14601 (onChange)
 import createToggle from "createToggle";
 
 function onChange(arg0) {
-  const obj = require(3923) /* MAX_REACTIONS */;
-  const ReactionNotifications = require(3957) /* explicitContentFromProto */.ReactionNotifications;
+  const obj = require(3940) /* MAX_REACTIONS */;
+  const ReactionNotifications = require(3974) /* explicitContentFromProto */.ReactionNotifications;
   const result = obj.updateReactionNotificationsSetting(Number(arg0), ReactionNotifications.getSetting());
 }
 const radio = createToggle.createRadio({

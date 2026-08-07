@@ -1,10 +1,10 @@
-// Module ID: 4812
-// Function ID: 4813
+// Module ID: 4829
+// Function ID: 4830
 // Name: getGameMentionData
-// Dependencies: [4306, 4813, 1903, 4816, 589, 643, 2]
+// Dependencies: [4323, 4830, 1903, 4833, 589, 643, 2]
 // Exports: getGameMentionData, useGameMentionData
 
-// Module 4812 (getGameMentionData)
+// Module 4829 (getGameMentionData)
 import handleLoadMessages from "handleLoadMessages";
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -33,7 +33,7 @@ export const getGameMentionData = function getGameMentionData(closure_0) {
       obj[2] = icon;
       let tmp4 = obj;
     }
-    obj2 = require(4816) /* useGameProfileObscured */;
+    obj2 = require(4833) /* useGameProfileObscured */;
   } else if (null != gameById) {
     obj = { gameId: null, gameName: null, gameIcon: null };
     obj[0] = closure_0;

@@ -1,9 +1,9 @@
-// Module ID: 6797
-// Function ID: 6798
+// Module ID: 6816
+// Function ID: 6817
 // Name: getState
 // Dependencies: [17, 676, 589, 698, 1988, 709, 2]
 
-// Module 6797 (getState)
+// Module 6816 (getState)
 import { AppStates } from "ME";
 import { Store } from "initialize";
 import promise from "expandEventProperties";

@@ -1,8 +1,8 @@
-// Module ID: 3981
-// Function ID: 3982
-// Dependencies: [17, 3976, 2]
+// Module ID: 3998
+// Function ID: 3999
+// Dependencies: [17, 3993, 2]
 
-// Module 3981
+// Module 3998
 import { Linking } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("lib/native/Linking.tsx");
@@ -13,10 +13,10 @@ export default {
     if (arg2 === undefined) {
       flag = true;
     }
-    require(3976) /* sanitizeURLPart */.default(arg0, arg1, { allowExternal: flag });
+    require(3993) /* sanitizeURLPart */.default(arg0, arg1, { allowExternal: flag });
   },
   openURLExternally(href, SAFARI) {
-    require(3976) /* sanitizeURLPart */.default(href, SAFARI, { forceExternalBrowser: true });
+    require(3993) /* sanitizeURLPart */.default(href, SAFARI, { forceExternalBrowser: true });
   },
   performURLNavigation(href) {
     Linking.openURL(href).catch(() => {

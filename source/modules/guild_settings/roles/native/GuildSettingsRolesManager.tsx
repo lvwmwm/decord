@@ -1,10 +1,10 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16607
+// Function ID: 16608
 // Name: setRoleJustCreated
 // Dependencies: [644, 705, 2]
 // Exports: setRoleJustCreated
 
-// Module 16587 (setRoleJustCreated)
+// Module 16607 (setRoleJustCreated)
 import keys from "keys";
 
 const obj = keys.create(() => ({ roleJustCreated: false }));

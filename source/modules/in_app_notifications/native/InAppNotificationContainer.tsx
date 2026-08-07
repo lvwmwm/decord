@@ -1,10 +1,10 @@
-// Module ID: 9701
-// Function ID: 9702
+// Module ID: 9717
+// Function ID: 9718
 // Name: NotificationWrapper
-// Dependencies: [32, 19, 17, 9702, 4297, 9686, 676, 21, 4145, 4285, 9703, 8001, 8006, 9704, 9778, 9781, 9782, 9814, 9815, 10120, 10121, 10124, 10125, 9685, 8655, 589, 4100, 1358, 4253, 4479, 4692, 1474, 11, 5236, 4286, 4711, 698, 5407, 4694, 1297, 4683, 1236, 5311, 9733, 2]
+// Dependencies: [32, 19, 17, 9718, 4314, 9702, 676, 21, 4162, 4302, 9719, 8018, 8023, 9720, 9794, 9797, 9798, 9830, 9831, 10136, 10137, 10140, 10141, 9701, 8672, 589, 4117, 1358, 4270, 4496, 4709, 1474, 11, 5252, 4303, 4728, 698, 5426, 4711, 1297, 4700, 1236, 5327, 9749, 2]
 // Exports: default
 
-// Module 9701 (NotificationWrapper)
+// Module 9717 (NotificationWrapper)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import NotificationAvatar from "NotificationAvatar";
 import get_ActivityIndicator from "AlertNotification";
@@ -13,7 +13,7 @@ import generateOldThreadCutoff from "generateOldThreadCutoff";
 import set from "set";
 import ME from "ME";
 import jsxProd from "MessageRequestInAppNotification";
-import { Easing } from "module_4145";
+import { Easing } from "module_4162";
 import createCacheKey from "createCacheKey";
 import set from "get ActivityIndicator";
 
@@ -42,38 +42,38 @@ function NotificationWrapper(notification) {
   if (constants.MESSAGE === type) {
     let obj = { notification: null };
     obj[0] = notification;
-    return callback(importDefault(9704), obj);
+    return callback(importDefault(9720), obj);
   } else if (tmp.MESSAGE_FAILED_TO_SEND === type) {
     obj = { notification: null };
     obj[0] = notification;
-    return callback(importDefault(9778), obj);
+    return callback(importDefault(9794), obj);
   } else if (tmp.FORUM_THREAD_CREATED === type) {
     const obj1 = { notification: null };
     obj1[0] = notification;
-    return callback(importDefault(9781), obj1);
+    return callback(importDefault(9797), obj1);
   } else if (tmp.BUG_REPORTER === type) {
     const obj2 = { notification: null };
     obj2[0] = notification;
-    return callback(require(9782) /* BugReporterNotification */.BugReporterNotification, obj2);
+    return callback(require(9798) /* BugReporterNotification */.BugReporterNotification, obj2);
   } else if (tmp.ALERT === type) {
     const obj3 = { notification: null };
     obj3[0] = notification;
-    return callback(importDefault(9814), obj3);
+    return callback(importDefault(9830), obj3);
   } else if (tmp.REACTION === type) {
     const obj4 = { notification: null };
     obj4[0] = notification;
-    return callback(importDefault(9815), obj4);
+    return callback(importDefault(9831), obj4);
   } else if (tmp.MESSAGE_REMINDER === type) {
     const obj5 = { notification: null };
     obj5[0] = notification;
-    return callback(importDefault(10120), obj5);
+    return callback(importDefault(10136), obj5);
   } else {
     if (tmp.RESTRICTED_HOURS_WARNING !== type) {
       if (tmp.RESTRICTED_SCHEDULE_UPDATED !== type) {
         if (tmp.MESSAGE_REQUEST === type) {
           obj = { notification: null };
           obj[0] = notification;
-          return callback(importDefault(10124), obj);
+          return callback(importDefault(10140), obj);
         } else {
           return null;
         }
@@ -81,7 +81,7 @@ function NotificationWrapper(notification) {
     }
     const obj6 = { notification: null };
     obj6[0] = notification;
-    return callback(importDefault(10121), obj6);
+    return callback(importDefault(10137), obj6);
   }
 }
 function DetachedNotificationContent(notification) {
@@ -90,7 +90,7 @@ function DetachedNotificationContent(notification) {
   if (notification.type === constants.MESSAGE) {
     const obj = { notification: null };
     obj[0] = notification;
-    tmp = callback(require(10125) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
+    tmp = callback(require(10141) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
   }
   return tmp;
 }
@@ -99,7 +99,7 @@ function DetachedNotificationContent(notification) {
 ({ InAppNotificationTypes: closure_17, AnalyticEvents: closure_18, AnalyticsSections: closure_19, AnalyticsObjects: closure_20, AnalyticsObjectTypes: closure_21 } = ME);
 ({ jsx: closure_22, jsxs: closure_23 } = jsxProd);
 let obj = { duration: 200, easing: null };
-obj[1] = Easing.in(require("module_4145").Easing.ease);
+obj[1] = Easing.in(require("module_4162").Easing.ease);
 let closure_25 = createCacheKey.createStyles({ safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, backdrop: { position: "absolute", zIndex: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } });
 let closure_28 = { code: "function InAppNotificationContainerTsx1(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('autodismissed');}}" };
 let closure_29 = { code: "function InAppNotificationContainerTsx2(){const{runOnJS,setInitialized}=this.__closure;return runOnJS(setInitialized)(true);}" };

@@ -1,10 +1,10 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8957
+// Function ID: 8958
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 1891, 7704, 21, 4285, 712, 1480, 38, 8917, 5115, 1935, 1236, 5253, 5929, 4281, 1297, 8941, 1380, 2]
+// Dependencies: [32, 19, 17, 1891, 7721, 21, 4302, 712, 1480, 38, 8934, 5132, 1935, 1236, 5269, 5948, 4298, 1297, 8958, 1380, 2]
 // Exports: default
 
-// Module 8940 (AddModerators)
+// Module 8957 (AddModerators)
 import _slicedToArray from "_slicedToArray";
 import Permissions from "Permissions";
 import { View } from "Button";
@@ -51,11 +51,11 @@ export default function AddModerators(guildId) {
     const mapped = found.map((row) => {
       row = row.row;
       if (row.rowType === constants.ROLE) {
-        let moderatorOverwrite = callback(5115).createModeratorOverwrite(row.id, callback(1935).PermissionOverwriteType.ROLE);
-        const obj2 = callback(5115);
+        let moderatorOverwrite = callback(5132).createModeratorOverwrite(row.id, callback(1935).PermissionOverwriteType.ROLE);
+        const obj2 = callback(5132);
       } else {
-        moderatorOverwrite = callback(5115).createModeratorOverwrite(row.id, callback(1935).PermissionOverwriteType.MEMBER);
-        const obj = callback(5115);
+        moderatorOverwrite = callback(5132).createModeratorOverwrite(row.id, callback(1935).PermissionOverwriteType.MEMBER);
+        const obj = callback(5132);
       }
       return moderatorOverwrite;
     });

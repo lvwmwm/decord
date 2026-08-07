@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11574
+// Function ID: 11575
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4285, 712, 4145, 3988, 4694, 4698, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4162, 4005, 4711, 4715, 2]
 // Exports: default
 
-// Module 11559 (ChatFloatingNavButton)
+// Module 11574 (ChatFloatingNavButton)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

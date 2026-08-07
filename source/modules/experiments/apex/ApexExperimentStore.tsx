@@ -1,7 +1,7 @@
 // Module ID: 1212
 // Function ID: 1213
 // Name: initialize
-// Dependencies: [32, 1213, 1218, 676, 709, 698, 4201, 2]
+// Dependencies: [32, 1213, 1218, 676, 709, 698, 4218, 2]
 
 // Module 1212 (initialize)
 import _slicedToArray from "_slicedToArray";
@@ -74,7 +74,7 @@ class ApexExperimentStore extends tmp2 {
 const prototype = ApexExperimentStore.prototype;
 prototype["initialize"] = function initialize(version) {
   this.waitFor(fetchFingerprint);
-  const storedState = this.loadStoredState(version, require(4201) /* Version */.getBuildOverrideExperiments());
+  const storedState = this.loadStoredState(version, require(4218) /* Version */.getBuildOverrideExperiments());
 };
 prototype["maybeEmitDebugExperimentEvent"] = function maybeEmitDebugExperimentEvent() {
   const self = this;

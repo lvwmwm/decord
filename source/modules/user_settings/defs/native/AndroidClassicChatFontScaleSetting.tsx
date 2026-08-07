@@ -1,9 +1,9 @@
-// Module ID: 14463
-// Function ID: 14464
+// Module ID: 14479
+// Function ID: 14480
 // Name: toggle
-// Dependencies: [14411, 8005, 3897, 705, 1236, 10364, 500, 2]
+// Dependencies: [14427, 8022, 3914, 705, 1236, 10380, 500, 2]
 
-// Module 14463 (toggle)
+// Module 14479 (toggle)
 import { useFontScaleStore } from "DEFAULT_FONT_SCALE_STORE_STATE";
 import createToggle from "createToggle";
 
@@ -14,7 +14,7 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3897) /* isIterable */.shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3914) /* isIterable */.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;
@@ -33,7 +33,7 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: function useClassicChatFontScaleValue() {
-    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3897) /* isIterable */.shallow);
+    return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, require(3914) /* isIterable */.shallow);
   },
   onValueChange: function onClassicChatFontScaleChange(arg0) {
     const _require = arg0;

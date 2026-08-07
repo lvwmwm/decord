@@ -1,10 +1,10 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 13851
+// Function ID: 13852
 // Name: UserProfileEditFormTextField
-// Dependencies: [19, 21, 7899, 7713, 2]
+// Dependencies: [19, 21, 7916, 7730, 2]
 // Exports: default
 
-// Module 13837 (UserProfileEditFormTextField)
+// Module 13851 (UserProfileEditFormTextField)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -35,13 +35,13 @@ export default function UserProfileEditFormTextField(inputRef) {
     obj = { ref: null };
     obj[0] = inputRef;
     const merged2 = Object.assign(obj);
-    let tmp9 = jsx(require(7899) /* TextArea */.TextArea, { ref: null });
+    let tmp9 = jsx(require(7916) /* TextArea */.TextArea, { ref: null });
   } else {
     obj = { ref: null };
     obj[0] = inputRef;
     const merged3 = Object.assign(obj);
     obj.isClearable = true;
-    tmp9 = jsx(require(7713) /* TextInput */.TextInput, { ref: null });
+    tmp9 = jsx(require(7730) /* TextInput */.TextInput, { ref: null });
   }
   return tmp9;
 };

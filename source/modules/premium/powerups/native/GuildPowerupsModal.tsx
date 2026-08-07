@@ -1,10 +1,10 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11774
+// Function ID: 11775
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4173, 21, 4285, 712, 4196, 11760, 11770, 11790, 1609, 5649, 11795, 11796, 11823, 4490, 4192, 5260, 1236, 2316, 8305, 5253, 11830, 11832, 11840, 11846, 11856, 11864, 2]
+// Dependencies: [19, 17, 4190, 21, 4302, 712, 4213, 11775, 11785, 11805, 1609, 5668, 11810, 11811, 11838, 4507, 4209, 5276, 1236, 2316, 8322, 5269, 11845, 11847, 11855, 11861, 11871, 11879, 2]
 // Exports: default
 
-// Module 11759 (GuildPowerupsModal)
+// Module 11774 (GuildPowerupsModal)
 import messagesProxy from "messagesProxy";
 import get_ActivityIndicator from "Background";
 import BoostedGuildTiers from "BoostedGuildTiers";

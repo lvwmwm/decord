@@ -1,9 +1,9 @@
-// Module ID: 14328
-// Function ID: 14329
+// Module ID: 14345
+// Function ID: 14346
 // Name: QuestThemePicker
-// Dependencies: [19, 17, 1303, 1302, 4097, 505, 21, 4285, 712, 5649, 5669, 4218, 589, 4098, 3988, 1884, 14329, 4281, 13763, 1236, 2]
+// Dependencies: [19, 17, 1303, 1302, 4114, 505, 21, 4302, 712, 5668, 5688, 4235, 589, 4115, 4005, 1884, 14346, 4298, 13777, 1236, 2]
 
-// Module 14328 (QuestThemePicker)
+// Module 14345 (QuestThemePicker)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "Text";
 import initialize from "initialize";
@@ -98,7 +98,7 @@ class QuestThemePicker {
         const obj = tmp(allMobileThemes[16]);
       }
     }, items5);
-    f93976 = callback;
+    f94052 = callback;
     items6 = [];
     items6[0] = callback;
     obj = { style: tmp.themeSection, children: null };
@@ -132,18 +132,18 @@ class QuestThemePicker {
       return tmp(closure_5, obj, backgroundColor.theme);
     });
     obj2 = { style: tmp.resetButton, onPress: callback1, children: null };
-    obj3 = { style: tmp.resetIcon, children: f93976(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
+    obj3 = { style: tmp.resetIcon, children: f94052(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
     items8 = [, ];
-    items8[0] = f93976(isSynced, obj3);
+    items8[0] = f94052(isSynced, obj3);
     obj4 = { variant: "text-xs/medium", color: "text-muted", style: tmp.themeLabel, children: null };
     intl = require("getSystemLocale").intl;
     obj4[3] = intl.string(require("getSystemLocale").t.yBZMsQ);
-    items8[1] = f93976(require("Text").Text, obj4);
+    items8[1] = f94052(require("Text").Text, obj4);
     obj2[2] = items8;
     items7[1] = jsxs(useRef, obj2);
     obj1[1] = items7;
     obj[1] = jsxs(isSynced, obj1);
-    return f93976(isSynced, obj);
+    return f94052(isSynced, obj);
   }
 }
 ({ View: c4, TouchableOpacity: c5 } = get_ActivityIndicator);

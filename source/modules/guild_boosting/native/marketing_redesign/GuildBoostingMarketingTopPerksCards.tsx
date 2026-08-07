@@ -1,10 +1,10 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12802
+// Function ID: 12803
 // Name: items
-// Dependencies: [19, 17, 4277, 21, 4285, 712, 1236, 12788, 5640, 12789, 12790, 4281, 11841, 2]
+// Dependencies: [19, 17, 4294, 21, 4302, 712, 1236, 12803, 5659, 12804, 12805, 4298, 11856, 2]
 // Exports: default
 
-// Module 12787 (items)
+// Module 12802 (items)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -37,7 +37,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12788) });
+      return callback(closure_3, { style, source: importDefault(12803) });
     }
   },
   {
@@ -51,10 +51,10 @@ let items = [
     },
     getGraphic(arg0) {
       const obj = { source: null, autoPlay: null, style: null };
-      obj[0] = require(12789);
+      obj[0] = require(12804);
       obj[1] = !useReducedMotion.useReducedMotion;
       obj[2] = arg0;
-      return callback(importDefault(5640), obj);
+      return callback(importDefault(5659), obj);
     }
   },
   {
@@ -67,7 +67,7 @@ let items = [
       return intl.string(require(1236) /* getSystemLocale */.t.yCjoUC);
     },
     getGraphic(style) {
-      return callback(closure_3, { style, source: importDefault(12790) });
+      return callback(closure_3, { style, source: importDefault(12805) });
     }
   }
 ];
@@ -82,7 +82,7 @@ const obj2 = {
     return intl.string(require(1236) /* getSystemLocale */.t.HTvLGu);
   },
   getGraphic(style) {
-    return callback(closure_3, { style, source: importDefault(12788) });
+    return callback(closure_3, { style, source: importDefault(12803) });
   }
 };
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
@@ -94,7 +94,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
   obj = { style: tmp.heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.aGdB3E);
-  let items = [callback(require(4281) /* Text */.Heading, obj), ];
+  let items = [callback(require(4298) /* Text */.Heading, obj), ];
   obj = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp.scrollerContent, children: null };
   obj[4] = items.map((getGraphic) => {
     const items = [tmp.card, ];
@@ -114,7 +114,7 @@ export default function GuildBoostingMarketingTopPerksCards() {
     obj[1] = items1;
     return outer1_7(outer1_4, obj, arg1);
   });
-  items[1] = callback(require(11841) /* items */.MarketingCardsScroller, obj);
+  items[1] = callback(require(11856) /* items */.MarketingCardsScroller, obj);
   obj[1] = items;
   return callback2(closure_4, obj);
 };

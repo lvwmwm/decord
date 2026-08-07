@@ -1,10 +1,10 @@
-// Module ID: 12212
-// Function ID: 12213
+// Module ID: 12227
+// Function ID: 12228
 // Name: getActivityPlatformDisplayName
-// Dependencies: [676, 1236, 12211, 2]
+// Dependencies: [676, 1236, 12226, 2]
 // Exports: default
 
-// Module 12212 (getActivityPlatformDisplayName)
+// Module 12227 (getActivityPlatformDisplayName)
 import { PlatformTypes } from "ME";
 
 const result = require("isOnMetaHorizon").fileFinishedImporting("modules/user_profile/utils/getActivityPlatformDisplayName.tsx");

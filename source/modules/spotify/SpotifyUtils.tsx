@@ -1,10 +1,10 @@
-// Module ID: 11066
-// Function ID: 11067
+// Module ID: 11081
+// Function ID: 11082
 // Name: asString
-// Dependencies: [5, 4305, 11067, 4978, 8826, 676, 687, 4981, 11068, 11069, 2]
+// Dependencies: [5, 4322, 11082, 4995, 8843, 676, 687, 4998, 11083, 11084, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11066 (asString)
+// Module 11081 (asString)
 import ME from "ME";
 import initialize from "initialize";
 import isProtocolRegistered from "isProtocolRegistered";
@@ -163,7 +163,7 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     if (observedAppRunning.isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        playableComputerDevices(11068).setActiveDevice(socket.accountId, device.id);
+        playableComputerDevices(11083).setActiveDevice(socket.accountId, device.id);
         obj = { socket: null, device: null };
         obj[0] = socket;
         obj[1] = device;
@@ -232,7 +232,7 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
     if (socket.isPremium) {
       let resolved = Promise.resolve();
     } else {
-      const profile = socket(11068).getProfile(socket.accountId, socket.accessToken);
+      const profile = socket(11083).getProfile(socket.accountId, socket.accessToken);
       resolved = profile.then(() => {
         if (!socket.isPremium) {
           const _Error = Error;
@@ -240,7 +240,7 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
           return Promise.reject(error);
         }
       });
-      const obj = socket(11068);
+      const obj = socket(11083);
     }
     return resolved;
   }

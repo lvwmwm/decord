@@ -1,9 +1,9 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8860
+// Function ID: 8861
 // Name: ContentInventoryFeedKey
 // Dependencies: [2]
 
-// Module 8843 (ContentInventoryFeedKey)
+// Module 8860 (ContentInventoryFeedKey)
 const result = require("set").fileFinishedImporting("modules/content_inventory/ContentInventoryConstants.tsx");
 
 export const ContentInventoryFeedKey = { GLOBAL_FEED: "global feed", GAME_PROFILE_FEED: "game profile feed" };

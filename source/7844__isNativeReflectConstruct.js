@@ -1,7 +1,7 @@
 // Module ID: 7844
 // Function ID: 7845
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7766, 7836, 7845, 7771, 7782]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7845, 7790, 7789]
 
 // Module 7844 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Pattern = importDefault;
+const ForeignObject = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +31,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Pattern {
+class ForeignObject {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, Pattern);
+    tmp = _isNativeReflectConstruct(this, ForeignObject);
     tmp2 = __esModule;
-    obj = __esModule(Pattern);
+    obj = __esModule(ForeignObject);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,67 +51,31 @@ class Pattern {
     return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Pattern, require("_isNativeReflectConstruct"));
+require("_inherits")(ForeignObject, require("_isNativeReflectConstruct"));
 const items = [
   {
     key: "render",
     value: function render() {
-      let children;
-      let height;
-      let id;
-      let patternContentUnits;
-      let patternTransform;
-      let patternUnits;
-      let preserveAspectRatio;
-      let transform;
-      let viewBox;
-      let width;
-      let x;
-      let y;
       const self = this;
       const props = this.props;
-      ({ patternTransform, patternUnits, patternContentUnits } = props);
-      ({ transform, id, x, y, width, height, children, viewBox, preserveAspectRatio } = props);
-      if (!patternTransform) {
-        patternTransform = transform;
-      }
-      if (!patternTransform) {
-        patternTransform = props;
-      }
-      const tmp3Result = self(7766)(patternTransform);
-      let obj = { x, y, width, height, name: id, matrix: tmp3Result, patternTransform: tmp3Result, patternUnits: null, patternContentUnits: null };
-      let num = patternUnits;
-      if (patternUnits) {
-        num = tmp(7836)[patternUnits];
-      }
-      if (!num) {
-        num = 0;
-      }
-      obj[7] = num;
-      let num2 = 1;
-      if (patternContentUnits) {
-        num2 = tmp(7836)[patternContentUnits];
-      }
-      obj[8] = num2;
+      let obj = { x: props.x, y: props.y, width: props.width, height: props.height };
       obj = {
         ref(arg0) {
           return self.refMethod(arg0);
         }
       };
-      const tmp3 = self(7766);
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(tmp(7771)({ viewBox, preserveAspectRatio }));
-      obj.children = children;
-      return jsx(self(7845), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const tmp = importDefault(7845);
+      const merged = Object.assign(self(7790).withoutXY(this, props));
+      const merged1 = Object.assign(obj);
+      obj.children = props.children;
+      return <tmp ref={function ref(arg0) {
+        return self.refMethod(arg0);
+      }} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Pattern, items);
-importDefaultResultResult.displayName = "Pattern";
+const importDefaultResultResult = importDefaultResult(ForeignObject, items);
+importDefaultResultResult.displayName = "ForeignObject";
 importDefaultResultResult.defaultProps = { x: "0%", y: "0%", width: "100%", height: "100%" };
 
 export default importDefaultResultResult;

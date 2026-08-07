@@ -1,9 +1,9 @@
-// Module ID: 4687
-// Function ID: 4688
+// Module ID: 4704
+// Function ID: 4705
 // Name: BLUR_EFFECT_NAMES
-// Dependencies: [4265, 4688, 4689, 2]
+// Dependencies: [4282, 4705, 4706, 2]
 
-// Module 4687 (BLUR_EFFECT_NAMES)
+// Module 4704 (BLUR_EFFECT_NAMES)
 import DCDDeviceManager from "DCDDeviceManager";
 import importDefaultResult from "map";
 

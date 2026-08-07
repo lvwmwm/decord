@@ -1,9 +1,9 @@
-// Module ID: 15061
-// Function ID: 15062
+// Module ID: 15077
+// Function ID: 15078
 // Name: getGuildsComponent
-// Dependencies: [19, 17, 1960, 4101, 9492, 21, 8493, 15062, 15409, 15457, 589, 15531, 8837, 5704, 5636, 2]
+// Dependencies: [19, 17, 1960, 4118, 9509, 21, 8510, 15078, 15433, 15481, 589, 15555, 8854, 5723, 5655, 2]
 
-// Module 15061 (getGuildsComponent)
+// Module 15077 (getGuildsComponent)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -19,13 +19,13 @@ let c9;
 let unpackModuleId;
 const require = arg1;
 function getGuildsComponent() {
-  return require(15062).default;
+  return require(15078).default;
 }
 function getNotificationsComponent() {
-  return require(15409) /* goBack */.ThemedNotifications;
+  return require(15433) /* goBack */.ThemedNotifications;
 }
 function getICYMIComponent() {
-  return require(15457) /* ICYMINavigator */.default;
+  return require(15481) /* ICYMINavigator */.default;
 }
 let c3 = importAllResult;
 ({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);

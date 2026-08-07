@@ -1,9 +1,9 @@
-// Module ID: 13773
-// Function ID: 13774
+// Module ID: 13787
+// Function ID: 13788
 // Name: handleAddUser
 // Dependencies: [1911, 589, 709, 2]
 
-// Module 13773 (handleAddUser)
+// Module 13787 (handleAddUser)
 import createdAt from "createdAt";
 import { PersistedStore } from "initialize";
 

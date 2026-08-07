@@ -1,9 +1,9 @@
-// Module ID: 4319
-// Function ID: 4320
+// Module ID: 4336
+// Function ID: 4337
 // Name: GameTheme
-// Dependencies: [1912, 4308, 2]
+// Dependencies: [1912, 4325, 2]
 
-// Module 4319 (GameTheme)
+// Module 4336 (GameTheme)
 import "toJS";
 import { createExecutable } from "createExecutable";
 

@@ -1,10 +1,10 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 15000
+// Function ID: 15001
 // Name: SURVEY_CONFIGS
 // Dependencies: [2]
 // Exports: getAvailableSurveys, getSurveyConfig, getSurveyConfigSafe
 
-// Module 14984 (SURVEY_CONFIGS)
+// Module 15000 (SURVEY_CONFIGS)
 const obj = {};
 const result = require("set").fileFinishedImporting("modules/screen_recording/native/StudyConfig.tsx");
 

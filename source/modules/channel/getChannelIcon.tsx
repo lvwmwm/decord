@@ -1,10 +1,10 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12238
+// Function ID: 12239
 // Name: getChannelIconURL
 // Dependencies: [32, 1903, 676, 1351, 1416, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 12223 (getChannelIconURL)
+// Module 12238 (getChannelIconURL)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ChannelTypes } from "ME";

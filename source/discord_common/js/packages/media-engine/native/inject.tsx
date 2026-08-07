@@ -1,10 +1,10 @@
-// Module ID: 4334
-// Function ID: 4335
+// Module ID: 4351
+// Function ID: 4352
 // Name: inject
 // Dependencies: [2]
 // Exports: getOpenH264LibraryPath, getVoiceEngine, inject, setProcessPriority, supported, supportsFeature
 
-// Module 4334 (inject)
+// Module 4351 (inject)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/native/inject.tsx");
 
 export function inject(arg0) {

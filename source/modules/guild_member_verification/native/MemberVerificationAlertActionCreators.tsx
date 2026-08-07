@@ -1,10 +1,10 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 8359
+// Function ID: 8360
 // Name: openMemberVerificationSuccessAlert
-// Dependencies: [19, 21, 1872, 4624, 8343, 1988, 8345, 8349, 4695, 1236, 8351, 8354, 8356, 2]
+// Dependencies: [19, 21, 1872, 4641, 8360, 1988, 8362, 8366, 4712, 1236, 8368, 8371, 8373, 2]
 // Exports: closeMemberVerificationAlert, openMemberVerificationCancelPendingAlert, openMemberVerificationIncompleteAlert, openMemberVerificationPendingAlert, openMemberVerificationRejectedAlert, openMemberVerificationSuccessAlert, openMemberVerificationUpdateAlert
 
-// Module 8342 (openMemberVerificationSuccessAlert)
+// Module 8359 (openMemberVerificationSuccessAlert)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -30,7 +30,7 @@ export const openMemberVerificationSuccessAlert = function openMemberVerificatio
       });
     }
   };
-  importDefault(4624).openLazy(obj);
+  importDefault(4641).openLazy(obj);
 };
 export const openMemberVerificationPendingAlert = function openMemberVerificationPendingAlert(guildId) {
   let closure_0 = guildId;
@@ -57,7 +57,7 @@ export const openMemberVerificationPendingAlert = function openMemberVerificatio
       });
     }
   };
-  importDefault(4624).openLazy(obj);
+  importDefault(4641).openLazy(obj);
 };
 export const openMemberVerificationCancelPendingAlert = function openMemberVerificationCancelPendingAlert(arg0) {
   let dependencyMap;
@@ -89,7 +89,7 @@ export const openMemberVerificationCancelPendingAlert = function openMemberVerif
       });
     }
   };
-  importDefault(4624).openLazy(obj);
+  importDefault(4641).openLazy(obj);
 };
 export const openMemberVerificationRejectedAlert = function openMemberVerificationRejectedAlert(canWithdraw) {
   let onClose;
@@ -146,7 +146,7 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
     obj[0] = intl.string(tmp2(1236).t.BddRzS);
     obj[1] = fn;
   }
-  dependencyMap = jsx(onClose(4695).Button, obj);
+  dependencyMap = jsx(onClose(4712).Button, obj);
   let result = fn(1872).dismissGlobalKeyboard();
   let obj3 = fn(1872);
   const tmp = jsx;
@@ -171,7 +171,7 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
       });
     }
   };
-  onClose(4624).openLazy(obj);
+  onClose(4641).openLazy(obj);
 };
 export const openMemberVerificationUpdateAlert = function openMemberVerificationUpdateAlert() {
   let obj = importAll(1872);
@@ -187,7 +187,7 @@ export const openMemberVerificationUpdateAlert = function openMemberVerification
       });
     }
   };
-  importDefault(4624).openLazy(obj);
+  importDefault(4641).openLazy(obj);
 };
 export function closeMemberVerificationAlert(arg0) {
   let closure_0 = arg0;
@@ -223,5 +223,5 @@ export const openMemberVerificationIncompleteAlert = function openMemberVerifica
       });
     }
   };
-  importDefault(4624).openLazy(obj);
+  importDefault(4641).openLazy(obj);
 };

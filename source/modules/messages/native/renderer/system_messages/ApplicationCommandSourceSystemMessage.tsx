@@ -1,10 +1,10 @@
-// Module ID: 8039
-// Function ID: 8040
+// Module ID: 8056
+// Function ID: 8057
 // Name: createApplicationCommandSourceSystemMessage
-// Dependencies: [676, 4719, 8040, 7992, 1236, 7994, 7995, 2]
+// Dependencies: [676, 4736, 8057, 8009, 1236, 8011, 8012, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 8039 (createApplicationCommandSourceSystemMessage)
+// Module 8056 (createApplicationCommandSourceSystemMessage)
 import { MessageTypes } from "ME";
 import { COMMAND_SENTINEL } from "regExp";
 
@@ -12,7 +12,7 @@ const result = require("getApplicationCommand").fileFinishedImporting("modules/m
 
 export const createApplicationCommandSourceSystemMessage = function createApplicationCommandSourceSystemMessage(message) {
   message = message.message;
-  let obj = require(8040) /* getApplicationCommand */;
+  let obj = require(8057) /* getApplicationCommand */;
   const applicationCommand = obj.getApplicationCommand(message.content);
   const application = message.application;
   if (application != null) {
@@ -20,7 +20,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      const messageAuthorWithProcessedColor = tmp(7992).getMessageAuthorWithProcessedColor(message);
+      const messageAuthorWithProcessedColor = tmp(8009).getMessageAuthorWithProcessedColor(message);
       const intl = tmp(1236).intl;
       obj = { username: null, usernameOnClick: null, commandName: null, applicationName: null };
       obj[0] = messageAuthorWithProcessedColor.nick;
@@ -28,7 +28,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
       obj[0] = message;
       obj[1] = messageAuthorWithProcessedColor;
       obj[2] = message.roleStyle;
-      obj[1] = importDefault(7994)(obj);
+      obj[1] = importDefault(8011)(obj);
       if (message.type === MessageTypes.CHAT_INPUT_COMMAND) {
         const _HermesInternal = HermesInternal;
         let name2 = "" + COMMAND_SENTINEL + applicationCommand.name;
@@ -39,7 +39,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
       obj[2] = name2;
       obj[3] = name;
       obj1[0] = intl.formatToParts(tmp(1236).t["1Zm+zw"], obj);
-      const merged = Object.assign(importDefault(7995)(message));
+      const merged = Object.assign(importDefault(8012)(message));
       return obj1;
     }
   }

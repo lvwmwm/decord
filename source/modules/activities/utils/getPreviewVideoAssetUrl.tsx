@@ -1,10 +1,10 @@
-// Module ID: 11363
-// Function ID: 11364
+// Module ID: 11378
+// Function ID: 11379
 // Name: getPreviewVideoAssetUrl
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 11363 (getPreviewVideoAssetUrl)
+// Module 11378 (getPreviewVideoAssetUrl)
 import { Endpoints } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/getPreviewVideoAssetUrl.tsx");

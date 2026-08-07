@@ -1,10 +1,10 @@
-// Module ID: 15162
-// Function ID: 15163
+// Module ID: 15178
+// Function ID: 15179
 // Name: getVoiceUserHeight
-// Dependencies: [19, 17, 4277, 21, 1297, 9370, 4285, 712, 9713, 589, 4145, 4286, 1416, 15163, 9107, 9109, 9103, 9105, 7635, 7612, 12131, 2]
+// Dependencies: [19, 17, 4294, 21, 1297, 9387, 4302, 712, 9729, 589, 4162, 4303, 1416, 15179, 9124, 9126, 9120, 9122, 7654, 7631, 12146, 2]
 // Exports: getVoiceUserHeight
 
-// Module 15162 (getVoiceUserHeight)
+// Module 15178 (getVoiceUserHeight)
 import { View } from "HeadphonesSlashIcon";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "set";
@@ -62,7 +62,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
   let obj = require(589) /* initialize */;
   const items = [stateFromStores];
   stateFromStores = obj.useStateFromStores(items, () => !stateFromStores.useReducedMotion);
-  require(4145);
+  require(4162);
   const fn = function c() {
     if (ringing) {
       if (stateFromStores) {
@@ -85,7 +85,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
       return { opacity: 1 };
     }
   };
-  obj = { ringing, shouldAnimate: stateFromStores, PULSE_ENDING_OPACITY: 0.4, withRepeat: require(4145).withRepeat, withSequence: require(4145).withSequence, withDelay: require(4145).withDelay, INNER_PULSE_DELAY: 100, withTiming: require(4286) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming, PULSE_DURATION: 250, Easing: require(4145).Easing, PULSE_STARTING_OPACITY: 0.1, FADE_DURATION: 500 };
+  obj = { ringing, shouldAnimate: stateFromStores, PULSE_ENDING_OPACITY: 0.4, withRepeat: require(4162).withRepeat, withSequence: require(4162).withSequence, withDelay: require(4162).withDelay, INNER_PULSE_DELAY: 100, withTiming: require(4303) /* CONFIG_NEVER_ANIMATE_TIMING */.withTiming, PULSE_DURATION: 250, Easing: require(4162).Easing, PULSE_STARTING_OPACITY: 0.1, FADE_DURATION: 500 };
   fn.__closure = obj;
   fn.__workletHash = 9430639809025;
   fn.__initData = closure_11;
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
     let obj4 = { variant: null, color: null };
     obj4[0] = c7;
     obj4[1] = c8;
-    let tmp8Result = tmp8(15163);
+    let tmp8Result = tmp8(15179);
     const merged = Object.assign(arg0);
     items2[1] = callback(tmp8Result, obj4);
     if (disabled) {
@@ -128,27 +128,27 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
             let obj5 = { size: "custom", color: null, style: null };
             obj5[1] = tmp13;
             obj5[2] = tmp.voiceStateIcon;
-            tmp9Result = tmp9(tmp2(7635).VideoIcon, obj5);
+            tmp9Result = tmp9(tmp2(7654).VideoIcon, obj5);
           }
         }
         items2[4] = tmp9Result;
         tmp9Result = null;
         if (isInEmbeddedActivity) {
           let obj6 = { source: null, size: null, style: null };
-          obj6[0] = tmp8(7612);
+          obj6[0] = tmp8(7631);
           obj6[1] = tmp2(1297).Icon.Sizes.REFRESH_SMALL_16;
           obj6[2] = tmp.legacyVoiceStateIcon;
           tmp9Result = tmp9(tmp2(1297).Icon, obj6);
         }
         items2[5] = tmp9Result;
-        tmp8Result = tmp8(12131);
+        tmp8Result = tmp8(12146);
         if (platform == null) {
           platform = "";
         }
         let tmp8Result1Result = tmp8Result(platform);
         if (tmp8Result1Result == null) {
-          tmp8Result1Result = tmp2(12131).getConsoleIconForVoicePlatform(voicePlatform);
-          const tmp2Result = tmp2(12131);
+          tmp8Result1Result = tmp2(12146).getConsoleIconForVoicePlatform(voicePlatform);
+          const tmp2Result = tmp2(12146);
         }
         let tmp9Result1 = null;
         if (null != tmp8Result1Result) {
@@ -167,36 +167,36 @@ const memoResult = importAllResult.memo(function VoiceUserItem(arg0) {
         }
         items2[7] = tmp9Result2;
         obj2[1] = items2;
-        tmp7Result = tmp7(importDefault(4145).View, obj2);
+        tmp7Result = tmp7(importDefault(4162).View, obj2);
       } else if (serverDeaf) {
         let obj9 = { style: null, color: "text-feedback-critical", size: "custom" };
         obj9[0] = tmp.voiceStateIcon;
-        let tmp9Result3 = tmp9(tmp2(9103).HeadphonesDenyIcon, obj9);
+        let tmp9Result3 = tmp9(tmp2(9120).HeadphonesDenyIcon, obj9);
       } else {
         tmp9Result3 = null;
         if (deaf) {
           const obj10 = { style: null, size: "custom", color: null };
           obj10[0] = tmp.voiceStateIcon;
           obj10[2] = tmp13;
-          tmp9Result3 = tmp9(tmp2(9105).HeadphonesSlashIcon, obj10);
+          tmp9Result3 = tmp9(tmp2(9122).HeadphonesSlashIcon, obj10);
         }
       }
     } else if (serverMute) {
       const obj11 = { style: null, color: "text-feedback-critical", size: "custom" };
       obj11[0] = tmp.voiceStateIcon;
-      let tmp9Result4 = tmp9(tmp2(9107).MicrophoneDenyIcon, obj11);
+      let tmp9Result4 = tmp9(tmp2(9124).MicrophoneDenyIcon, obj11);
     } else if (localMute) {
       const obj12 = { style: null, size: "custom", color: null };
       obj12[0] = tmp.voiceStateIcon;
       obj12[2] = tmp13;
-      tmp9Result4 = tmp9(tmp2(9107).MicrophoneDenyIcon, obj12);
+      tmp9Result4 = tmp9(tmp2(9124).MicrophoneDenyIcon, obj12);
     } else {
       tmp9Result4 = null;
       if (mute) {
         const obj13 = { style: null, size: "custom", color: null };
         obj13[0] = tmp.voiceStateIcon;
         obj13[2] = tmp13;
-        tmp9Result4 = tmp9(tmp2(9109).MicrophoneSlashIcon, obj13);
+        tmp9Result4 = tmp9(tmp2(9126).MicrophoneSlashIcon, obj13);
       }
     }
     tmp7 = closure_6;
@@ -207,6 +207,6 @@ const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedI
 
 export default memoResult;
 export const getVoiceUserHeight = function getVoiceUserHeight(fontScale) {
-  const obj = require(9370) /* map */;
-  return Math.max(require(9370) /* map */.scaleTextLineHeight(c7, fontScale), require(1297) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
+  const obj = require(9387) /* map */;
+  return Math.max(require(9387) /* map */.scaleTextLineHeight(c7, fontScale), require(1297) /* Button */.AVATAR_SIZE_MAP[XSMALL_20]) + 10;
 };

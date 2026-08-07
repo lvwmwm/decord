@@ -1,10 +1,10 @@
-// Module ID: 10076
-// Function ID: 10077
+// Module ID: 10092
+// Function ID: 10093
 // Name: PostPurchaseFooter
-// Dependencies: [19, 17, 8713, 10077, 1369, 21, 4285, 712, 1609, 4490, 4136, 4695, 9493, 1236, 2380, 10078, 4281, 4254, 4255, 9958, 10079, 4100, 1358, 589, 8709, 2]
+// Dependencies: [19, 17, 8730, 10093, 1369, 21, 4302, 712, 1609, 4507, 4153, 4712, 9510, 1236, 2380, 10094, 4298, 4271, 4272, 9974, 10095, 4117, 1358, 589, 8726, 2]
 // Exports: default
 
-// Module 10076 (PostPurchaseFooter)
+// Module 10092 (PostPurchaseFooter)
 import GiftingBadgeIcon from "GiftingBadgeIcon";
 import { View } from "HapticFeedbackTypes";
 import map from "map";
@@ -29,9 +29,9 @@ function PostPurchaseFooter(onSendGift) {
   }, items);
   let obj = { style: callback6(importDefault(1609)().bottom).footer, children: null };
   const callback1 = React.useCallback(() => {
-    let arr = callback(4490);
+    let arr = callback(4507);
     arr = arr.pop();
-    const rootNavigationRef = onSendGift(4136).getRootNavigationRef();
+    const rootNavigationRef = onSendGift(4153).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("you");
     }
@@ -39,16 +39,16 @@ function PostPurchaseFooter(onSendGift) {
   obj = { grow: true, variant: "primary", icon: null, text: null, onPress: null };
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.CONTROL_PRIMARY_TEXT_DEFAULT;
-  obj[2] = callback4(onSendGift(9493).GiftIcon, obj);
+  obj[2] = callback4(onSendGift(9510).GiftIcon, obj);
   const intl = onSendGift(1236).intl;
   obj[3] = intl.string(importDefault(2380).g86YiI);
   obj[4] = callback;
-  const items1 = [callback4(onSendGift(4695).Button, obj), ];
+  const items1 = [callback4(onSendGift(4712).Button, obj), ];
   const obj1 = { grow: true, variant: "secondary", text: null, onPress: null };
   const intl2 = onSendGift(1236).intl;
   obj1[2] = intl2.string(importDefault(2380)["sa/cfM"]);
   obj1[3] = callback1;
-  items1[1] = callback4(onSendGift(4695).Button, obj1);
+  items1[1] = callback4(onSendGift(4712).Button, obj1);
   obj[1] = items1;
   return callback5(View, obj);
 }
@@ -64,10 +64,10 @@ function InProgressScreen(arg0) {
   const tmp = callback6(importDefault(1609)().bottom);
   let obj = { style: tmp.screenContainer, children: null };
   obj = { style: tmp.content, children: null };
-  obj = { style: tmp.progressWrapper, children: callback4(importDefault(10078), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
+  obj = { style: tmp.progressWrapper, children: callback4(importDefault(10094), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection, children: null };
-  const items1 = [callback4(require(4281) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), callback4(require(4281) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description })];
+  const items1 = [callback4(require(4298) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), callback4(require(4298) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description })];
   obj1[1] = items1;
   items[1] = callback5(View, obj1);
   obj[1] = items;
@@ -86,7 +86,7 @@ function LevelUpScreen(arg0) {
   ({ simulatedProgress, currentTier, onSendGift } = arg0);
   const tmp3 = callback6(importDefault(1609)().bottom);
   const effect = React.useEffect(() => {
-    const result = callback(4254).triggerHapticFeedback(callback2(4255).IMPACT_HEAVY);
+    const result = callback(4271).triggerHapticFeedback(callback2(4272).IMPACT_HEAVY);
   }, []);
   let obj = { style: tmp3.screenContainer, children: null };
   obj = { style: tmp3.content, children: null };
@@ -95,12 +95,12 @@ function LevelUpScreen(arg0) {
   if (tmp7Result) {
     const obj1 = { icon: null, size: 140 };
     obj1[0] = newTier.simple_icon_url;
-    tmp7Result = tmp7(tmp(9958), obj1);
+    tmp7Result = tmp7(tmp(9974), obj1);
   }
   obj[1] = tmp7Result;
   const items = [closure_10(View, obj), ];
   const obj2 = { style: tmp3.levelUpBody, children: null };
-  const items1 = [closure_10(importDefault(10079), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
+  const items1 = [closure_10(importDefault(10095), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
   const obj4 = { style: tmp3.messageSection, children: null };
   const obj5 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -109,7 +109,7 @@ function LevelUpScreen(arg0) {
     str = "";
   }
   obj5[2] = intl.format(importDefault(2380).k8MmO8, { tierName: str });
-  const items2 = [closure_10(require(4281) /* Text */.Text, obj5), ];
+  const items2 = [closure_10(require(4298) /* Text */.Text, obj5), ];
   tmp7Result = null != nextTier && null != giftsToNextTier;
   if (tmp7Result) {
     tmp7Result = giftsToNextTier > 0;
@@ -126,7 +126,7 @@ function LevelUpScreen(arg0) {
     }
     obj7[1] = str2;
     obj6[3] = intl2.format(tmp(2380)["6QVlxw"], obj7);
-    tmp7Result = tmp7(tmp9(4281).Text, obj6);
+    tmp7Result = tmp7(tmp9(4298).Text, obj6);
   }
   items2[1] = tmp7Result;
   obj4[1] = items2;
@@ -164,14 +164,14 @@ export default function GiftBadgePostPurchase(arg0) {
   let onSendGift;
   ({ currentProgress, onSendGift } = arg0);
   const effect = React.useEffect(() => {
-    let obj = callback(4100);
+    let obj = callback(4117);
     obj = { dismissAction: constants.INDIRECT_ACTION };
     const result = obj.UNSAFE_markDismissibleContentAsDismissed(callback(1358).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK, obj);
   }, []);
   let obj = require(589) /* initialize */;
   const items = [map];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    badgeById = badgeById.getBadgeById(callback(8709).BadgeId.GIFTING);
+    badgeById = badgeById.getBadgeById(callback(8726).BadgeId.GIFTING);
     let tiers;
     if (badgeById != null) {
       tiers = badgeById.tiers;

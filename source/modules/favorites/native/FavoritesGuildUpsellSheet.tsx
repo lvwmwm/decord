@@ -1,10 +1,10 @@
-// Module ID: 9634
-// Function ID: 9635
+// Module ID: 9650
+// Function ID: 9651
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 1410, 676, 21, 9631, 5649, 5669, 9635, 4253, 9633, 7654, 1236, 3030, 6195, 5132, 4695, 8545, 1222, 2]
+// Dependencies: [19, 1410, 676, 21, 9647, 5668, 5688, 9651, 4270, 9649, 7673, 1236, 3030, 6214, 5149, 4712, 8562, 1222, 2]
 // Exports: default
 
-// Module 9634 (FavoritesGuildUpsellSheet)
+// Module 9650 (FavoritesGuildUpsellSheet)
 import noop from "noop";
 import { MAX_FAVORITE_CHANNELS } from "date";
 import { FAVORITES } from "ME";
@@ -19,7 +19,7 @@ let result = require("ME").fileFinishedImporting("modules/favorites/native/Favor
 export default function FavoritesGuildUpsellSheet(limit) {
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
-    FREE_FAVORITE_LIMIT = str(9631).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = str(9647).FREE_FAVORITE_LIMIT;
   }
   str = limit.source;
   if (str === undefined) {
@@ -31,13 +31,13 @@ export default function FavoritesGuildUpsellSheet(limit) {
   }
   let analyticsLocations;
   let dependencyMap;
-  analyticsLocations = analyticsLocations(5649)(analyticsLocations(5669).FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations;
+  analyticsLocations = analyticsLocations(5668)(analyticsLocations(5688).FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations;
   const items = [str];
   const effect = React.useEffect(() => {
-    const result = str(9635).trackFavoritesGuildUpsellModalOpened(str);
+    const result = str(9651).trackFavoritesGuildUpsellModalOpened(str);
   }, items);
   dependencyMap = React.useCallback(() => {
-    analyticsLocations(4253).hideActionSheet(str(9633).FAVORITES_UPSELL_SHEET_KEY);
+    analyticsLocations(4270).hideActionSheet(str(9649).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
   const intl = str(1236).intl;
   const tmp10 = analyticsLocations(3030);
@@ -52,32 +52,32 @@ export default function FavoritesGuildUpsellSheet(limit) {
     formatToPlainStringResult = intl2.string(tmp3(3030)["WaP/lz"]);
   }
   obj[1] = formatToPlainStringResult;
-  obj[2] = closure_6(str(6195).FavoritesSpotIllustration, {});
+  obj[2] = closure_6(str(6214).FavoritesSpotIllustration, {});
   obj = { size: "lg", variant: "primary", text: null, onPress: null };
   const intl3 = tmp9(1236).intl;
   obj[2] = intl3.string(str(1236).t.pj0XBN);
   obj[3] = function onPress() {
     dependencyMap();
-    analyticsLocations(8545)({ analyticsLocations });
+    analyticsLocations(8562)({ analyticsLocations });
   };
-  const items1 = [closure_6(str(4695).Button, obj), ];
+  const items1 = [closure_6(str(4712).Button, obj), ];
   const intl4 = tmp9(1236).intl;
   const tmp3Result = analyticsLocations(3030);
   const obj1 = { children: null };
   const tmp13 = closure_7;
-  const tmp5 = analyticsLocations(5649);
-  items1[1] = closure_6(str(4695).Button, {
+  const tmp5 = analyticsLocations(5668);
+  items1[1] = closure_6(str(4712).Button, {
     size: "lg",
     variant: "secondary",
     text: intl4.string("limit_reached" === str2 ? tmp3Result.PprSsy : tmp3Result["+dSwhE"]),
     onPress() {
       dependencyMap();
-      const result = str(9635).setNextFavoritesGuildViewSource("upsell_modal");
-      const obj = str(9635);
+      const result = str(9651).setNextFavoritesGuildViewSource("upsell_modal");
+      const obj = str(9651);
       str(1222).transitionToGuild(outer1_5);
     }
   });
   obj1[0] = items1;
-  obj[3] = tmp13(str(5132).ButtonGroup, obj1);
-  return closure_6(str(7654).PromoSheet, obj);
+  obj[3] = tmp13(str(5149).ButtonGroup, obj1);
+  return closure_6(str(7673).PromoSheet, obj);
 };

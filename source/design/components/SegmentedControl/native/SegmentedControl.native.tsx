@@ -1,10 +1,10 @@
-// Module ID: 9064
-// Function ID: 9065
+// Module ID: 9081
+// Function ID: 9082
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4285, 712, 3988, 4145, 4694, 9065, 5407, 500, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4005, 4162, 4711, 9082, 5426, 500, 2]
 // Exports: SegmentedControl
 
-// Module 9064 (SegmentedControl)
+// Module 9081 (SegmentedControl)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

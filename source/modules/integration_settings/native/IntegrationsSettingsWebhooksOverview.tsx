@@ -1,10 +1,10 @@
-// Module ID: 15806
-// Function ID: 15807
+// Module ID: 15830
+// Function ID: 15831
 // Name: WebhookItem
-// Dependencies: [5, 19, 1372, 1961, 1891, 3912, 1903, 15807, 676, 21, 4285, 712, 1480, 1416, 5354, 1297, 1236, 11, 4123, 589, 15808, 7893, 15809, 3996, 1974, 4281, 15811, 5688, 7890, 4693, 5635, 2]
+// Dependencies: [5, 19, 1372, 1961, 1891, 3929, 1903, 15831, 676, 21, 4302, 712, 1480, 1416, 5373, 1297, 1236, 11, 4140, 589, 15832, 7910, 15833, 4013, 1974, 4298, 15835, 5707, 7907, 4710, 5654, 2]
 // Exports: default
 
-// Module 15806 (WebhookItem)
+// Module 15830 (WebhookItem)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importAllResult from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -245,7 +245,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [callback(webhookType(4281).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [callback(webhookType(4298).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants2.INCOMING;
   if (tmp4Result) {
     let obj = { guild: null, channel: null };
@@ -256,7 +256,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(15811).WebhookEmpty;
+    obj[0] = tmp5(15835).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -289,7 +289,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       return closure_18(closure_23, obj, id);
     });
     const obj1 = { children: null };
-    items[2] = tmp4(tmp5(5688).TableRowGroup, obj);
+    items[2] = tmp4(tmp5(5707).TableRowGroup, obj);
     obj1[0] = items;
     return closure_20(closure_19, obj1);
   }
@@ -302,8 +302,8 @@ prototype["render"] = function render() {
   obj[0] = importDefault(712).space.PX_24;
   obj[1] = tmp.content;
   obj[2] = this.renderWebhooks();
-  obj[2] = callback(require(4693) /* Stack */.Stack, obj);
-  const items = [callback(require(7890) /* Form */.Form, obj), callback(require(5635) /* NavScrim */.NavScrim, {})];
+  obj[2] = callback(require(4710) /* Stack */.Stack, obj);
+  const items = [callback(require(7907) /* Form */.Form, obj), callback(require(5654) /* NavScrim */.NavScrim, {})];
   obj[0] = items;
   return callback2(closure_19, obj);
 };

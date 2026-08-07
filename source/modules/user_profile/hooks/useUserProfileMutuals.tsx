@@ -1,10 +1,10 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11894
+// Function ID: 11895
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7041, 5137, 7001, 589, 12, 8972, 2]
+// Dependencies: [32, 19, 7060, 5154, 7020, 589, 12, 8989, 2]
 // Exports: default
 
-// Module 11879 (useUserProfileMutuals)
+// Module 11894 (useUserProfileMutuals)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "noop";
 import recomputeAffinities from "recomputeAffinities";
@@ -75,8 +75,8 @@ export default function useUserProfileMutuals(arg0) {
     return tmp4;
   }, items4);
   const obj3 = _require(589);
-  const tmp9 = importDefault(8972)(tmp2);
-  const tmp10 = importDefault(8972)(tmp7);
+  const tmp9 = importDefault(8989)(tmp2);
+  const tmp10 = importDefault(8989)(tmp7);
   obj = { mutualFriendsCount: tmp2, mutualFriends: null, mutualGuilds: null, isFetching: null, isFetchingFriends: null };
   if (tmp7 == null) {
     tmp7 = tmp10;

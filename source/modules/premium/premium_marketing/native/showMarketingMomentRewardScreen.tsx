@@ -1,10 +1,10 @@
-// Module ID: 12590
-// Function ID: 12591
+// Module ID: 12605
+// Function ID: 12606
 // Name: _showMarketingMomentRewardScreen
-// Dependencies: [5, 6922, 6921, 10042, 2]
+// Dependencies: [5, 6941, 6940, 10058, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 12590 (_showMarketingMomentRewardScreen)
+// Module 12605 (_showMarketingMomentRewardScreen)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 

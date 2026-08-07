@@ -1,10 +1,10 @@
-// Module ID: 9264
-// Function ID: 9265
+// Module ID: 9281
+// Function ID: 9282
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 676, 9265, 5649, 1474, 9266, 3930, 6934, 698, 9267, 503, 6933, 2]
+// Dependencies: [19, 676, 9282, 5668, 1474, 9283, 3947, 6953, 698, 9284, 503, 6952, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 9264 (useTrackShopCardImpression)
+// Module 9281 (useTrackShopCardImpression)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -15,18 +15,18 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const _require = product;
   const importDefault = selectedProduct;
   const dependencyMap = flag2;
-  const collectiblesAnalyticsContext = _require(9265).useCollectiblesAnalyticsContext();
-  const analyticsLocations = importDefault(5649)().analyticsLocations;
+  const collectiblesAnalyticsContext = _require(9282).useCollectiblesAnalyticsContext();
+  const analyticsLocations = importDefault(5668)().analyticsLocations;
   const size = importDefault(1474)();
   const width = size.width;
   const height = size.height;
-  let obj = _require(9265);
-  const currentUser = _require(9266).useCurrentUser();
-  let obj2 = _require(9266);
-  const canUseCollectiblesResult = importDefault(3930).canUseCollectibles(currentUser);
+  let obj = _require(9282);
+  const currentUser = _require(9283).useCurrentUser();
+  let obj2 = _require(9283);
+  const canUseCollectiblesResult = importDefault(3947).canUseCollectibles(currentUser);
   let closure_7 = canUseCollectiblesResult;
-  const obj3 = importDefault(3930);
-  const shopDiscountSource = _require(6934).getShopDiscountSource(currentUser);
+  const obj3 = importDefault(3947);
+  const shopDiscountSource = _require(6953).getShopDiscountSource(currentUser);
   const ref = collectiblesAnalyticsContext.useRef(null);
   let closure_10 = collectiblesAnalyticsContext.useRef(null);
   let closure_11 = collectiblesAnalyticsContext.useRef({ windowWidth: width, windowHeight: height });
@@ -68,13 +68,13 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const callback = collectiblesAnalyticsContext.useCallback(() => {
     let priceForCollectiblesProduct = null;
     if (null != product) {
-      let obj = product(6934);
+      let obj = product(6953);
       priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(tmp, closure_7, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
     if (null != product) {
-      strikeThroughPriceAmountForCollectiblesProduct = product(6934).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_7, true);
-      const obj2 = product(6934);
+      strikeThroughPriceAmountForCollectiblesProduct = product(6953).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_7, true);
+      const obj2 = product(6953);
     }
     let sessionId;
     if (collectiblesAnalyticsContext != null) {
@@ -134,7 +134,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
   const callback1 = obj5.useCallback(() => {
-    let obj = product(9267);
+    let obj = product(9284);
     obj = { name: product(503).ImpressionNames.SHOP_CARD, type: product(503).ImpressionTypes.VIEW, properties: null };
     obj = { sku_id: selectedProduct.skuId, card_id: null, shop_session_id: null, position_in_section: null, product_sku_ids: null, location_stack: null, discount_source: null };
     let cardId;
@@ -152,10 +152,10 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
       tilePosition = tmp3.tilePosition;
     }
     obj[3] = tilePosition;
-    let tmpResult = tmp(6933);
+    let tmpResult = tmp(6952);
     obj[4] = tmpResult.getProductSkuIds(product);
     obj[5] = analyticsLocations;
-    tmpResult = tmp(6934);
+    tmpResult = tmp(6953);
     obj[6] = tmpResult.getAnalyticsShopDiscountSource(shopDiscountSource);
     obj[2] = obj;
     obj.trackImpression(obj, false, true);

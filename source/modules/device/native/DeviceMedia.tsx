@@ -1,8 +1,8 @@
-// Module ID: 9935
-// Function ID: 9936
-// Dependencies: [676, 644, 698, 705, 9936, 500, 2]
+// Module ID: 9951
+// Function ID: 9952
+// Dependencies: [676, 644, 698, 705, 9952, 500, 2]
 
-// Module 9935
+// Module 9951
 import { AnalyticEvents } from "ME";
 import keys from "keys";
 
@@ -94,14 +94,14 @@ export default {
             obj = { page: table, has_reached_end: tmp12 };
             lastAssetIndex(table[2]).track(outer1_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
           };
-          lastAssetIndex(9936)(obj);
+          lastAssetIndex(9952)(obj);
         }
       }
     }
   },
   refreshAssets(batchSize) {
     batchSize = batchSize.batchSize;
-    importDefault(9936)({
+    importDefault(9952)({
       batchSize,
       extensions: batchSize.extensions,
       onFetched(edges) {

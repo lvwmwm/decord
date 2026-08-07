@@ -1,7 +1,7 @@
 // Module ID: 1975
 // Function ID: 1976
 // Name: _getSystemLocale
-// Dependencies: [5, 1976, 1340, 3895, 1236, 589, 709, 2]
+// Dependencies: [5, 1976, 1340, 3912, 1236, 589, 709, 2]
 
 // Module 1975 (_getSystemLocale)
 import initialize from "initialize";
@@ -43,7 +43,7 @@ function _getSystemLocale() {
             let closure_1 = tmp2;
             let callback = tmp3;
             callback = undefined;
-            const tmp25 = outer1_1(3895);
+            const tmp25 = outer1_1(3912);
             let prop;
             if (tmp25 != null) {
               const app = tmp25.app;
@@ -52,7 +52,7 @@ function _getSystemLocale() {
               }
             }
             if (null != prop) {
-              const app2 = tmp23(3895).app;
+              const app2 = tmp23(3912).app;
               const preferredSystemLanguages = app2.getPreferredSystemLanguages();
               dependencyMap = 1;
               c3 = 1;

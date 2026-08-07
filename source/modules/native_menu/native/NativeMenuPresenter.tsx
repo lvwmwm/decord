@@ -1,10 +1,10 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 15902
+// Function ID: 15903
 // Name: MenuContainer
-// Dependencies: [19, 9702, 589, 9941, 4692, 2]
+// Dependencies: [19, 9718, 589, 9957, 4709, 2]
 // Exports: default
 
-// Module 15878 (MenuContainer)
+// Module 15902 (MenuContainer)
 import noop from "noop";
 import initialize from "initialize";
 
@@ -24,7 +24,7 @@ export default function MenuContainer() {
     }
     return null != key;
   }, items1);
-  importDefault(4692)(callback);
+  importDefault(4709)(callback);
   let tmp4 = null;
   if (null != key) {
     tmp4 = null;

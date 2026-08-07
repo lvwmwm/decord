@@ -1,10 +1,10 @@
-// Module ID: 8629
-// Function ID: 8630
+// Module ID: 8646
+// Function ID: 8647
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 6817, 21, 4285, 4706, 691, 2]
+// Dependencies: [19, 17, 6836, 21, 4302, 4723, 691, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 8629 (PremiumUpsellGradientBackground)
+// Module 8646 (PremiumUpsellGradientBackground)
 import "noop";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";
@@ -30,5 +30,5 @@ export const PremiumUpsellGradientBackground = function PremiumUpsellGradientBac
     PREMIUM_TIER_2_TRI_COLOR = Gradients.PREMIUM_TIER_2_TRI_COLOR;
   }
   obj[3] = PREMIUM_TIER_2_TRI_COLOR;
-  return tmp2(importDefault(4706), obj);
+  return tmp2(importDefault(4723), obj);
 };

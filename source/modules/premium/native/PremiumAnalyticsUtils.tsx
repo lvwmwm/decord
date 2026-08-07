@@ -1,10 +1,10 @@
-// Module ID: 7295
-// Function ID: 7296
+// Module ID: 7314
+// Function ID: 7315
 // Name: PaymentFlowStep
-// Dependencies: [676, 514, 3930, 698, 2]
+// Dependencies: [676, 514, 3947, 698, 2]
 // Exports: getBasePurchaseFlowAnalyticsFields, getNewAnalyticsLoadId, getPaymentFlowCompletedAnalyticsFields, getPaymentFlowStepAnalyticsFields, trackPremiumSubscriptionCancellationFlowStep, trackPremiumSubscriptionCancellationStarted
 
-// Module 7295 (PaymentFlowStep)
+// Module 7314 (PaymentFlowStep)
 import ME from "ME";
 
 let c3;
@@ -60,13 +60,13 @@ export const trackPremiumSubscriptionCancellationStarted = function trackPremium
   obj[1] = type;
   let tmp4;
   if (null != closure_0) {
-    const premiumPlanItem = require(3930) /* getPremiumPlanItem */.getPremiumPlanItem(closure_0);
+    const premiumPlanItem = require(3947) /* getPremiumPlanItem */.getPremiumPlanItem(closure_0);
     let id1;
     if (premiumPlanItem != null) {
       id1 = premiumPlanItem.id;
     }
     tmp4 = id1;
-    const obj4 = require(3930) /* getPremiumPlanItem */;
+    const obj4 = require(3947) /* getPremiumPlanItem */;
   }
   obj[2] = tmp4;
   let paymentGatewayPlanId;
@@ -102,13 +102,13 @@ export const trackPremiumSubscriptionCancellationFlowStep = function trackPremiu
   obj[1] = type;
   let tmp4;
   if (null != subscription) {
-    const premiumPlanItem = require(3930) /* getPremiumPlanItem */.getPremiumPlanItem(subscription);
+    const premiumPlanItem = require(3947) /* getPremiumPlanItem */.getPremiumPlanItem(subscription);
     let id1;
     if (premiumPlanItem != null) {
       id1 = premiumPlanItem.id;
     }
     tmp4 = id1;
-    const obj4 = require(3930) /* getPremiumPlanItem */;
+    const obj4 = require(3947) /* getPremiumPlanItem */;
   }
   obj[2] = tmp4;
   let paymentGatewayPlanId;

@@ -1,10 +1,10 @@
-// Module ID: 10162
-// Function ID: 10163
+// Module ID: 10178
+// Function ID: 10179
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4285, 712, 1609, 5260, 8305, 5253, 500, 7562, 2]
+// Dependencies: [19, 21, 4302, 712, 1609, 5276, 8322, 5269, 500, 7581, 2]
 // Exports: default
 
-// Module 10162 (SearchableDestinationListHeader)
+// Module 10178 (SearchableDestinationListHeader)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -42,10 +42,10 @@ export default function SearchableDestinationListHeader(arg0) {
     headerRightContainerStyle: null,
     headerStatusBarHeight: null
   };
-  obj[4] = require(5253) /* HeaderBackImage */.getHeaderCloseButton(onClose);
+  obj[4] = require(5269) /* HeaderBackImage */.getHeaderCloseButton(onClose);
   obj[5] = headerRight;
   ({ headerLeftContainer: obj[6], headerRightContainer: obj[7] } = tmp);
-  const obj2 = require(5253) /* HeaderBackImage */;
+  const obj2 = require(5269) /* HeaderBackImage */;
   const tmp2 = importDefault;
   const tmp4 = jsx;
   const tmp5 = require;
@@ -53,8 +53,8 @@ export default function SearchableDestinationListHeader(arg0) {
     let num = importDefault(1609)().top;
   } else {
     num = 0;
-    const tmp5Result = tmp5(7562);
+    const tmp5Result = tmp5(7581);
   }
   obj[8] = num + tmp2(712).space.PX_8;
-  return tmp4(require(5260) /* Background */.Header, obj);
+  return tmp4(require(5276) /* Background */.Header, obj);
 };

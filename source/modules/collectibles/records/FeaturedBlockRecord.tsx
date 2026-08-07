@@ -1,15 +1,15 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 6973
+// Function ID: 6974
 // Name: fromServer
-// Dependencies: [6955, 6953, 6956, 2]
+// Dependencies: [6974, 6972, 6975, 2]
 
-// Module 6954 (fromServer)
+// Module 6973 (fromServer)
 import { FeaturedCategorySubblockRecord as closure_2 } from "fromServer";
 
 let prototype;
 prototype = function FeaturedBlockRecord(subblocks) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(6953) /* ShopBlockType */.ShopBlockType.FEATURED;
+  obj.type = require(6972) /* ShopBlockType */.ShopBlockType.FEATURED;
   subblocks = subblocks.subblocks;
   obj.subblocks = subblocks.map((type) => {
     if (type.type === callback(table[2]).FeaturedSubblockType.CATEGORY) {
@@ -27,7 +27,7 @@ prototype["fromServer"] = function fromServer(subblocks) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(6953) /* ShopBlockType */.ShopBlockType.FEATURED;
+  obj.type = require(6972) /* ShopBlockType */.ShopBlockType.FEATURED;
   subblocks = subblocks.subblocks;
   obj.subblocks = subblocks.map((type) => {
     if (type.type === callback(table[2]).FeaturedSubblockType.CATEGORY) {

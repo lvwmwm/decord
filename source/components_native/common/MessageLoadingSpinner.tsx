@@ -1,10 +1,10 @@
-// Module ID: 10637
-// Function ID: 10638
+// Module ID: 10634
+// Function ID: 10635
 // Name: result
-// Dependencies: [19, 17, 21, 500, 3988, 712, 5744, 2]
+// Dependencies: [19, 17, 21, 500, 4005, 712, 5763, 2]
 // Exports: default
 
-// Module 10637 (result)
+// Module 10634 (result)
 import "noop";
 import { jsx } from "jsxProd";
 import set from "set";
@@ -19,7 +19,7 @@ let c4 = result;
 const result1 = set.fileFinishedImporting("components_native/common/MessageLoadingSpinner.tsx");
 
 export default function MessageLoadingSpinner(color) {
-  let obj = require(3988) /* map */;
+  let obj = require(4005) /* map */;
   color = color.color;
   if (color == null) {
     color = obj.useToken(importDefault(712).colors.BACKGROUND_BRAND);
@@ -33,7 +33,7 @@ export default function MessageLoadingSpinner(color) {
     obj = { animating: null };
     obj[0] = color.animate;
     const merged1 = Object.assign(color);
-    tmp8 = jsx(require(5744) /* ActivityIndicator */.ActivityIndicator, { animating: null });
+    tmp8 = jsx(require(5763) /* ActivityIndicator */.ActivityIndicator, { animating: null });
   }
   return tmp8;
 };

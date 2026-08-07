@@ -90,7 +90,7 @@ export const mutateUserGuildSettings = function mutateUserGuildSettings(guilds) 
   }
   return arg2(guilds.guilds[tmp3]);
 };
-export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, closure_0, f69519) {
+export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsInternal(guilds, closure_0, f69576) {
   let tmp = closure_0;
   let tmp2 = null != closure_0;
   if (tmp2) {
@@ -103,7 +103,7 @@ export const mutateUserGuildSettingsInternal = function mutateUserGuildSettingsI
     const GuildSettings = require(1306) /* create */.GuildSettings;
     guilds.guilds[tmp] = GuildSettings.create();
   }
-  return f69519(guilds.guilds[tmp]);
+  return f69576(guilds.guilds[tmp]);
 };
 export const mutateUserChannelSettings = function mutateUserChannelSettings(guilds, arg1, id, arg3) {
   if (null == guilds.guilds) {
@@ -129,12 +129,12 @@ export const mutateUserChannelSettings = function mutateUserChannelSettings(guil
   }
   return arg3(guilds.guilds[tmp3].channels[id]);
 };
-export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, closure_0, f69519) {
+export const mutateUserChannelSettingsInternal = function mutateUserChannelSettingsInternal(channels, closure_0, f69576) {
   if (!(closure_0 in channels.channels)) {
     const ChannelSettings = require(1306) /* create */.ChannelSettings;
     channels.channels[closure_0] = ChannelSettings.create();
   }
-  return f69519(channels.channels[closure_0]);
+  return f69576(channels.channels[closure_0]);
 };
 export const runMigrations = function runMigrations(closure_1, closure_2) {
   if (null == closure_1.versions) {

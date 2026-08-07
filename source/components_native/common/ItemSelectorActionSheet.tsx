@@ -1,10 +1,10 @@
-// Module ID: 8891
-// Function ID: 8892
+// Module ID: 8908
+// Function ID: 8909
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 3988, 712, 1609, 5377, 5376, 5686, 5379, 7908, 7907, 2]
+// Dependencies: [19, 21, 4005, 712, 1609, 5396, 5395, 5705, 5398, 7925, 7924, 2]
 // Exports: default
 
-// Module 8891 (ItemSelectorActionSheet)
+// Module 8908 (ItemSelectorActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -25,7 +25,7 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(3988);
+  let obj = items(4005);
   const token = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === closure_1);
   obj = { title, trailing: null };
@@ -33,9 +33,9 @@ export default function ItemSelectorActionSheet(arg0) {
   if (null != onClose) {
     obj = { onPress: null };
     obj[0] = onClose;
-    tmp6Result = tmp6(tmp(5686).ActionSheetCloseButton, obj);
+    tmp6Result = tmp6(tmp(5705).ActionSheetCloseButton, obj);
   }
-  const obj1 = { scrollable: true, header: closure_3(items(5376).BottomSheetTitleHeader, obj), children: null };
+  const obj1 = { scrollable: true, header: closure_3(items(5395).BottomSheetTitleHeader, obj), children: null };
   obj[1] = tmp6Result;
   const obj2 = { contentContainerStyle: null, children: null };
   const obj3 = { paddingHorizontal: token, paddingBottom: null };
@@ -46,7 +46,7 @@ export default function ItemSelectorActionSheet(arg0) {
   if (findIndexResult >= 0) {
     num = findIndexResult;
   }
-  items[1] = closure_3(items(7908).TableRadioGroup, {
+  items[1] = closure_3(items(7925).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -55,9 +55,9 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => callback(items(7907).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => callback(items(7924).TableRadioRow, { label: label.label, value }, value))
   });
   obj2[1] = items;
-  obj1[2] = closure_4(items(5379).BottomSheetScrollView, obj2);
-  return closure_3(items(5377).BottomSheet, obj1);
+  obj1[2] = closure_4(items(5398).BottomSheetScrollView, obj2);
+  return closure_3(items(5396).BottomSheet, obj1);
 };

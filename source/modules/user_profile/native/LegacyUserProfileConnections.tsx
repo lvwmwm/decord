@@ -1,10 +1,10 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 10980
+// Function ID: 10981
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 1975, 1911, 4124, 7001, 676, 1301, 5107, 21, 4285, 712, 5106, 10966, 4981, 1416, 4130, 1297, 10969, 10970, 3988, 10971, 10972, 4254, 5677, 3984, 1236, 8855, 4479, 3981, 4827, 4281, 3996, 589, 6883, 10973, 2]
+// Dependencies: [19, 17, 1975, 1911, 4141, 7020, 676, 1301, 5124, 21, 4302, 712, 5123, 10981, 4998, 1416, 4147, 1297, 10984, 10985, 4005, 10986, 10987, 4271, 5696, 4001, 1236, 8872, 4496, 3998, 4844, 4298, 4013, 589, 6902, 10988, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 10965 (LegacyUserProfileConnections)
+// Module 10980 (LegacyUserProfileConnections)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "Button";
 import _getSystemLocale from "_getSystemLocale";
@@ -532,8 +532,8 @@ export { ConnectedUserAccount };
 export { ConnectedApplicationUserRoleAccount };
 export const useAppplicationRoleConnectionItems = function useAppplicationRoleConnectionItems(arr) {
   const _require = arg1;
-  const theme = _require(3996).useThemeContext().theme;
-  const obj = _require(3996);
+  const theme = _require(4013).useThemeContext().theme;
+  const obj = _require(4013);
   const items = [_getSystemLocale];
   const dependencyMap = _require(589).useStateFromStores(items, () => _getSystemLocale.locale);
   return arr.map((applicationRoleConnection) => {

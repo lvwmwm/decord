@@ -1,10 +1,10 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16050
+// Function ID: 16051
 // Name: hideLiveChannelNotice
 // Dependencies: [709, 2]
 // Exports: dismissEventBanner, hideLiveChannelNotice, hideUpcomingEventNotice, markUpcomingEventNoticeAsSeen
 
-// Module 16024 (hideLiveChannelNotice)
+// Module 16050 (hideLiveChannelNotice)
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventsNoticesActionCreators.tsx");
 
 export const hideLiveChannelNotice = function hideLiveChannelNotice(arg0) {

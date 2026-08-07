@@ -1,9 +1,9 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16487
+// Function ID: 16488
 // Name: handleVoiceStateUpdates
-// Dependencies: [1218, 1372, 4502, 3912, 1960, 1903, 676, 5244, 1380, 16461, 686, 6838, 2]
+// Dependencies: [1218, 1372, 4519, 3929, 1960, 1903, 676, 5260, 1380, 16488, 686, 6857, 2]
 
-// Module 16460 (handleVoiceStateUpdates)
+// Module 16487 (handleVoiceStateUpdates)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";

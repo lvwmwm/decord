@@ -1,10 +1,10 @@
-// Module ID: 8946
-// Function ID: 8947
+// Module ID: 8963
+// Function ID: 8964
 // Name: DEFAULT_DISCOVERY_CATEGORY_ID
 // Dependencies: [687, 1236, 2]
 // Exports: getLanguageOptions
 
-// Module 8946 (DEFAULT_DISCOVERY_CATEGORY_ID)
+// Module 8963 (DEFAULT_DISCOVERY_CATEGORY_ID)
 import set from "set";
 
 const require = arg1;

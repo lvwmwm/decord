@@ -1,10 +1,10 @@
-// Module ID: 10250
-// Function ID: 10251
+// Module ID: 10266
+// Function ID: 10267
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 4975, 3913, 1372, 4332, 4356, 676, 1379, 4285, 712, 10251, 4726, 4150, 647, 1607, 500, 1348, 3988, 8314, 2]
+// Dependencies: [19, 4992, 3930, 1372, 4349, 4373, 676, 1379, 4302, 712, 10267, 4743, 4167, 647, 1607, 500, 1348, 4005, 8331, 2]
 // Exports: default
 
-// Module 10250 (useChannelSafeAreaBottomStyles)
+// Module 10266 (useChannelSafeAreaBottomStyles)
 import set from "set";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import initialize from "initialize";

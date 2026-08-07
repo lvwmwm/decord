@@ -1,10 +1,10 @@
-// Module ID: 13626
-// Function ID: 13627
+// Module ID: 13640
+// Function ID: 13641
 // Name: setFontSize
-// Dependencies: [4277, 676, 3960, 685, 709, 698, 8621, 2]
+// Dependencies: [4294, 676, 3977, 685, 709, 698, 8638, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 13626 (setFontSize)
+// Module 13640 (setFontSize)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { AnalyticEvents } from "ME";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
@@ -82,7 +82,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
   const useReducedMotion2 = maybeApplyNoTextColorForLightCustomTheme.useReducedMotion;
   if (!useReducedMotion) {
     if (useReducedMotion2) {
-      let tmpResult = tmp(8621);
+      let tmpResult = tmp(8638);
       obj = { gifAutoPlay: null, animateEmoji: null, animateStickers: null };
       const obj1 = { value: false, reasonKey: null };
       obj1[1] = constants.REDUCED_MOTION;
@@ -101,7 +101,7 @@ export const setPrefersReducedMotion = function setPrefersReducedMotion(prefersR
     useReducedMotion = !useReducedMotion2;
   }
   if (useReducedMotion) {
-    tmpResult = tmp(8621);
+    tmpResult = tmp(8638);
     const result1 = tmpResult.clearSettingsOverride("gifAutoPlay", "animateEmoji", "animateStickers");
   }
 };

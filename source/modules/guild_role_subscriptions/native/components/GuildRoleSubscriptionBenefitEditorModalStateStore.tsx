@@ -1,13 +1,13 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 16753
+// Function ID: 16754
 // Name: resetImperatively
-// Dependencies: [700, 705, 3897, 2]
+// Dependencies: [700, 705, 3914, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 16733 (resetImperatively)
+// Module 16753 (resetImperatively)
 import identity from "identity";
 
-let closure_2 = Object.freeze({ name: "", emojiId: "channel", emojiName: "state", description: "title", refId: "channel" });
+let closure_2 = Object.freeze({ name: "", emojiId: "channel", emojiName: "surrogates", description: "title", refId: "padding" });
 let closure_3 = identity.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   const obj = {};
@@ -67,33 +67,33 @@ export const useDescriptionState = function useDescriptionState() {
     const items = [, ];
     ({ description: arr[0], setDescription: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };
 export const useEmojiIdState = function useEmojiIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiId: arr[0], setEmojiId: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };
 export const useEmojiNameState = function useEmojiNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ emojiName: arr[0], setEmojiName: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };
 export const useNameState = function useNameState() {
   return store((arg0) => {
     const items = [, ];
     ({ name: arr[0], setName: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };
 export const useRefIdState = function useRefIdState() {
   return store((arg0) => {
     const items = [, ];
     ({ refId: arr[0], setRefId: arr[1] } = arg0);
     return items;
-  }, require(3897) /* isIterable */.shallow);
+  }, require(3914) /* isIterable */.shallow);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15499
-// Function ID: 15500
+// Module ID: 15523
+// Function ID: 15524
 // Name: Separator
-// Dependencies: [19, 17, 5843, 1372, 1971, 3912, 1903, 676, 21, 7225, 12119, 4796, 9724, 15428, 5236, 5786, 5742, 6838, 4217, 15460, 500, 712, 1297, 8216, 5700, 4701, 4827, 4281, 7023, 15500, 8527, 589, 4474, 8836, 8706, 4803, 8835, 15134, 8967, 1236, 15461, 4221, 3988, 4128, 4145, 4286, 4295, 4781, 5699, 4275, 2]
+// Dependencies: [19, 17, 5862, 1372, 1971, 3929, 1903, 676, 21, 7244, 12134, 4813, 9740, 15452, 5252, 5805, 5761, 6857, 4234, 15484, 500, 712, 1297, 8233, 5719, 4718, 4844, 4298, 7042, 15524, 8544, 589, 4491, 8853, 8723, 4820, 8852, 15150, 8984, 1236, 15485, 4238, 4005, 4145, 4162, 4303, 4312, 4798, 5718, 4292, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 15499 (Separator)
+// Module 15523 (Separator)
 import closure_3 from "createICYMIStyles";
 import { View } from "trackInvite";
 import updateState from "updateState";
@@ -30,7 +30,7 @@ let unpackModuleId;
 const require = arg1;
 class Separator {
   constructor() {
-    obj = { style: f61884().separator };
+    obj = { style: f61984().separator };
     return jsx(View, obj);
   }
 }
@@ -69,7 +69,7 @@ class GuildContentPost {
     guild = global.guild;
     ({ channel, hideTimestamp, id, type } = global);
     ({ timestamp, children, avatar, title, subtitle, onHeaderPress, onHeaderLongPress, disableInteractions } = global);
-    tmp = f61884();
+    tmp = f61984();
     tmp2 = guild;
     tmp3 = id;
     obj = require("getFontScale");
@@ -201,16 +201,16 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
     obj = { page: outer1_12.ICYMI, object: outer1_10.ACK_MESSAGE_VIEWED, objectType: outer1_11.ACK_SEMI_AUTOMATIC };
     obj.ack(id, obj, true, true, closure_1);
   }, 1500);
-  importDefault(5786)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
+  importDefault(5805)(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(5742).runAfterInteractions(() => {
+    _require(5761).runAfterInteractions(() => {
       let obj = id3(outer1_2[17]);
       obj = { channelId: id, limit: outer1_14, jump: null };
       obj = { messageId: id3, flash: true, jumpType: id(outer1_2[18]).JumpType.ANIMATED };
       obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(5742);
+    let obj = _require(5761);
   }
 };
 export { Separator };
@@ -504,27 +504,27 @@ export const SimplePost = function SimplePost(arg0) {
   let dependencyMap;
   let sharedValue;
   const tmp = callback3();
-  let obj = highlight(3988);
-  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4221)());
-  let obj1 = highlight(4128);
+  let obj = highlight(4005);
+  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4238)());
+  let obj1 = highlight(4145);
   const hexWithOpacityResult = obj1.hexWithOpacity(token(712).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
-  let obj2 = highlight(4145);
+  let obj2 = highlight(4162);
   sharedValue = obj2.useSharedValue(0);
   const tmp2 = token;
-  const tmp4 = token(4221)();
+  const tmp4 = token(4238)();
   const fn = function c() {
     const obj = { backgroundColor: null };
     const items = [token, _undefined];
     obj[0] = highlight(_undefined[44]).interpolateColor(sharedValue.get(), [0, 1], items);
     return obj;
   };
-  obj = { interpolateColor: highlight(4145).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
+  obj = { interpolateColor: highlight(4162).interpolateColor, progress: sharedValue, bgColor: token, bgColorHighlighted: hexWithOpacityResult };
   fn.__closure = obj;
   fn.__workletHash = 11116019021445;
   fn.__initData = closure_26;
   let items = [highlight, sharedValue];
-  const animatedStyle = highlight(4145).useAnimatedStyle(fn);
+  const animatedStyle = highlight(4162).useAnimatedStyle(fn);
   const effect = sharedValue.useEffect(() => {
     if (highlight) {
       const obj = highlight(_undefined[44]);
@@ -541,7 +541,7 @@ export const SimplePost = function SimplePost(arg0) {
     const items1 = [tmp.simplePostContent, animatedStyle];
     obj1[0] = items1;
     obj1[1] = children;
-    const items2 = [tmp12(tmp2(4145).View, obj1), ];
+    const items2 = [tmp12(tmp2(4162).View, obj1), ];
     let tmp12Result = null;
     if (!hideDivider) {
       tmp12Result = tmp12(Separator, {});

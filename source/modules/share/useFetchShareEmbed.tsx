@@ -1,10 +1,10 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13178
+// Function ID: 13179
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1467, 11193, 705, 2]
+// Dependencies: [5, 32, 19, 1467, 11208, 705, 2]
 // Exports: default
 
-// Module 13164 (useFetchShareEmbed)
+// Module 13178 (useFetchShareEmbed)
 import batchUpdates from "batchUpdates";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -64,7 +64,7 @@ export default function useFetchShareEmbed(arg0) {
                   c4 = 3;
                   c5 = 1;
                   let obj1 = { value: null, done: false };
-                  obj1[0] = outer2_0(11193).unfurlEmbedUrl(items);
+                  obj1[0] = outer2_0(11208).unfurlEmbedUrl(items);
                   return obj1;
                 } else {
                   c5 = 3;

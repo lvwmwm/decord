@@ -1,10 +1,10 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10713
+// Function ID: 10714
 // Name: ScheduleEventPrompt
-// Dependencies: [19, 21, 4285, 712, 8909, 7890, 8884, 8966, 1236, 3954, 3866, 2]
+// Dependencies: [19, 21, 4302, 712, 8926, 7907, 8901, 8983, 1236, 3971, 3883, 2]
 // Exports: ScheduleEventPrompt, StartEventPrompt
 
-// Module 10701 (ScheduleEventPrompt)
+// Module 10713 (ScheduleEventPrompt)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,7 +25,7 @@ export const ScheduleEventPrompt = function ScheduleEventPrompt(isLive) {
   let require;
   ({ guild: require, channel } = isLive);
   const tmp = createCacheKey();
-  let obj = require(8909) /* canManageResource */;
+  let obj = require(8926) /* canManageResource */;
   let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canCreateGuildEvent) {
     obj = { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null };
@@ -35,14 +35,14 @@ export const ScheduleEventPrompt = function ScheduleEventPrompt(isLive) {
       obj = { channel };
       const result = obj.openCreateOrEditGuildEventModal(closure_0, obj);
     };
-    obj[2] = channel(8966);
+    obj[2] = channel(8983);
     ({ iconStyle: obj2[3], iconContainerStyle: obj2[4] } = tmp);
     obj[5] = isLive.isLive;
     const intl = tmp2(1236).intl;
     obj[6] = intl.string(tmp2(1236).t["60lJ0C"]);
     const intl2 = tmp2(1236).intl;
     obj[7] = intl2.string(tmp2(1236).t["EYn7/y"]);
-    tmp4 = jsx(tmp2(7890).FormCTA, { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null });
+    tmp4 = jsx(tmp2(7907).FormCTA, { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null });
   }
   return tmp4;
 };
@@ -56,7 +56,7 @@ export const StartEventPrompt = function StartEventPrompt(event) {
   ({ channel, isLive } = event);
   const tmp = createCacheKey();
   ({ name, scheduled_start_time } = event);
-  let obj = event(8909);
+  let obj = event(8926);
   let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canManageGuildEvent(event)) {
     obj = { style: null, onPress: null, iconSource: null, iconStyle: null, iconContainerStyle: null, completed: null, title: null, subtitle: null };
@@ -64,7 +64,7 @@ export const StartEventPrompt = function StartEventPrompt(event) {
     obj[1] = function onPress() {
       const result = event(outer1_2[6]).openStartGuildEventModal(event, recurrenceId);
     };
-    obj[2] = recurrenceId(8966);
+    obj[2] = recurrenceId(8983);
     obj[3] = tmp.iconStyle;
     const items = [, ];
     ({ iconContainerStyle: arr[0], greenIcon: arr[1] } = tmp);
@@ -76,10 +76,10 @@ export const StartEventPrompt = function StartEventPrompt(event) {
     obj[6] = intl.formatToPlainString(tmp2(1236).t["1vGXqM"], obj);
     const intl2 = tmp2(1236).intl;
     const obj1 = { startTime: null };
-    obj1[0] = tmp2(3954).calendarFormat(recurrenceId(3866)(scheduled_start_time));
+    obj1[0] = tmp2(3971).calendarFormat(recurrenceId(3883)(scheduled_start_time));
     obj[7] = intl2.formatToPlainString(tmp2(1236).t.PTebCR, obj1);
-    tmp4 = jsx(tmp2(7890).FormCTA, { eventName: null });
-    const tmp2Result = tmp2(3954);
+    tmp4 = jsx(tmp2(7907).FormCTA, { eventName: null });
+    const tmp2Result = tmp2(3971);
   }
   return tmp4;
 };

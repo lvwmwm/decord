@@ -1,10 +1,10 @@
-// Module ID: 4683
-// Function ID: 4684
+// Module ID: 4700
+// Function ID: 4701
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4285, 712, 1236, 3996, 1609, 4145, 4684, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 1236, 4013, 1609, 4162, 4701, 2]
 // Exports: Backdrop
 
-// Module 4683 (Backdrop)
+// Module 4700 (Backdrop)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -51,7 +51,7 @@ export const Backdrop = function Backdrop(animatedProps) {
     accessibilityLabel = intl.string(require(1236) /* getSystemLocale */.t.WAI6xu);
   }
   let backgroundColor = createCacheKey();
-  let obj = require(3996) /* ManaContext */;
+  let obj = require(4013) /* ManaContext */;
   obj = { onPress: onDismiss, "aria-hidden": true };
   obj = { style: items, pointerEvents: "box-none", animatedProps, children: null };
   items = [backgroundColor.fill, style];
@@ -95,6 +95,6 @@ export const Backdrop = function Backdrop(animatedProps) {
     obj5.style = items3;
     items2[1] = tmp7(tmp8, obj5);
     obj[3] = items2;
-    return closure_5(importDefault(4145).View, obj);
+    return closure_5(importDefault(4162).View, obj);
   }
 };

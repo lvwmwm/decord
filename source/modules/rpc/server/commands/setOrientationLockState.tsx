@@ -1,8 +1,8 @@
-// Module ID: 13674
-// Function ID: 13675
-// Dependencies: [10509, 4188, 4310, 505, 10539, 10536, 709, 2]
+// Module ID: 13688
+// Function ID: 13689
+// Dependencies: [10525, 4205, 4327, 505, 10673, 10670, 709, 2]
 
-// Module 13674
+// Module 13688
 import map from "map";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import { OrientationLockState } from "items3";
@@ -14,7 +14,7 @@ const result = require("items3").fileFinishedImporting("modules/rpc/server/comma
 export default {
   [sum.RPCCommands.SET_ORIENTATION_LOCK_STATE]: {
     validation(number) {
-      let obj = importDefault(10539)(number);
+      let obj = importDefault(10673)(number);
       obj = { lock_state: null, picture_in_picture_lock_state: null, grid_lock_state: null };
       const requiredResult = obj.required();
       let validResult = number.number().valid(OrientationLockState.UNLOCKED, OrientationLockState.PORTRAIT, OrientationLockState.LANDSCAPE);
@@ -40,7 +40,7 @@ export default {
         let obj = { errorCode: null };
         obj[0] = RPCErrors.INVALID_COMMAND;
         const _HermesInternal = HermesInternal;
-        let tmp18 = importDefault(10536);
+        let tmp18 = importDefault(10670);
         tmp18 = new tmp18(obj, "command not available from \"" + socket.source.type + "\" transport");
         throw tmp18;
       } else {
@@ -48,7 +48,7 @@ export default {
         if (null == id) {
           obj = { errorCode: null };
           obj[0] = RPCErrors.INVALID_COMMAND;
-          const tmp14 = new importDefault(10536)(obj, "No application.");
+          const tmp14 = new importDefault(10670)(obj, "No application.");
           throw tmp14;
         } else {
           frameByIframeId = frameByIframeId.getFrameByIframeId(socket.source.iframeId);

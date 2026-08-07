@@ -1,10 +1,10 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9645
+// Function ID: 9646
 // Name: useFavoritesAccess
-// Dependencies: [4101, 1903, 1375, 9630, 1410, 1905, 9631, 9632, 589, 1926, 11, 1306, 1894, 2]
+// Dependencies: [4118, 1903, 1375, 9646, 1410, 1905, 9647, 9648, 589, 1926, 11, 1306, 1894, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 9629 (useFavoritesAccess)
+// Module 9645 (useFavoritesAccess)
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -13,14 +13,14 @@ import { MAX_FAVORITE_CHANNELS } from "date";
 import { PremiumTypes } from "GuildFeatures";
 
 const require = arg1;
-function useFavoritesAccess(FavoritesGuildChannelList) {
+function useFavoritesAccess(FavoritesGuildActionSheet) {
   let enabled;
   let isFreemium;
-  let str = FavoritesGuildChannelList;
-  if (FavoritesGuildChannelList === undefined) {
+  let str = FavoritesGuildActionSheet;
+  if (FavoritesGuildActionSheet === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9648) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -59,7 +59,7 @@ function useFavoritesAccess(FavoritesGuildChannelList) {
   } else {
     num = 0;
     if (tmp4) {
-      num = tmp(9631).FREE_FAVORITE_LIMIT;
+      num = tmp(9647).FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -69,7 +69,7 @@ export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
   let enabled;
   let isFreemium;
-  let obj = require(9632) /* useFavoritesGuildConfig */;
+  let obj = require(9648) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -105,7 +105,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
   } else {
     num = 0;
     if (tmp4) {
-      num = require(9631) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(9647) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 };
@@ -187,7 +187,7 @@ export const useIsFavoritesGuildSelected = function useIsFavoritesGuildSelected(
   const obj = require(589) /* initialize */;
   return require(1894) /* getFavoritesAwareGuildName */.isFavoritesGuildId(stateFromStores);
 };
-export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, FavoritesGuildChannelList) {
+export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, FavoritesGuildActionSheet) {
   let tmp = arg0;
   const _require = arg0;
   const items = [handleConnectionOpen];
@@ -203,7 +203,7 @@ export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, 
     let tmp7 = tmp;
   } else {
     tmp7 = null;
-    if (useFavoritesAccess(FavoritesGuildChannelList).hasAccess) {
+    if (useFavoritesAccess(FavoritesGuildActionSheet).hasAccess) {
       tmp7 = null;
       if (tmp5) {
         let isCategoryResult;

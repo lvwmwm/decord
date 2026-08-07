@@ -1,9 +1,9 @@
-// Module ID: 6290
-// Function ID: 6291
+// Module ID: 6309
+// Function ID: 6310
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6290 (vanityUrl)
+// Module 6309 (vanityUrl)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDiversityTier9LargeBadge-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/bfaf0686098768efbd090c466ad55399b2c8ec82e1d2dbf031c5f6fdd721f828.png";

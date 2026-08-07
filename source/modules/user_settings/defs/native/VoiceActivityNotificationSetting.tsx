@@ -1,9 +1,9 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14614
+// Function ID: 14615
 // Name: toggle
-// Dependencies: [8005, 676, 3924, 10364, 1236, 3957, 698, 2]
+// Dependencies: [8022, 676, 3941, 10380, 1236, 3974, 698, 2]
 
-// Module 14598 (toggle)
+// Module 14614 (toggle)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import createToggle from "createToggle";
@@ -20,7 +20,7 @@ const toggle = createToggle.createToggle({
     return intl.string(require(1236) /* getSystemLocale */.t.rngMNx);
   },
   onValueChange(voice_activity_notifications) {
-    const EnableVoiceActivityNotifications = require(3957) /* explicitContentFromProto */.EnableVoiceActivityNotifications;
+    const EnableVoiceActivityNotifications = require(3974) /* explicitContentFromProto */.EnableVoiceActivityNotifications;
     EnableVoiceActivityNotifications.updateSetting(voice_activity_notifications);
     let obj = importDefault(698);
     obj = { update_type: constants.ACCOUNT, voice_activity_notifications };
@@ -39,7 +39,7 @@ let obj = {
     return intl.string(require(1236) /* getSystemLocale */.t.rngMNx);
   },
   onValueChange(voice_activity_notifications) {
-    const EnableVoiceActivityNotifications = require(3957) /* explicitContentFromProto */.EnableVoiceActivityNotifications;
+    const EnableVoiceActivityNotifications = require(3974) /* explicitContentFromProto */.EnableVoiceActivityNotifications;
     EnableVoiceActivityNotifications.updateSetting(voice_activity_notifications);
     let obj = importDefault(698);
     obj = { update_type: constants.ACCOUNT, voice_activity_notifications };

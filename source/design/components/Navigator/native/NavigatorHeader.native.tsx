@@ -1,10 +1,10 @@
-// Module ID: 5253
-// Function ID: 5254
+// Module ID: 5269
+// Function ID: 5270
 // Name: HeaderBackImage
-// Dependencies: [5, 19, 17, 676, 21, 4285, 712, 4281, 5254, 5257, 1481, 5259, 1236, 5260, 5309, 500, 1609, 5250, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4302, 712, 4298, 5270, 5273, 1481, 5275, 1236, 5276, 5325, 500, 1609, 5266, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5253 (HeaderBackImage)
+// Module 5269 (HeaderBackImage)
 import closure_3 from "createCacheKey";
 import "noop";
 import get_ActivityIndicator from "NAV_BAR_HEIGHT";
@@ -58,7 +58,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.create(null));
-  let obj = onPress(5259);
+  let obj = onPress(5275);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -72,7 +72,7 @@ function CustomHeaderBackButton(onPress) {
   obj.backImage = function backImage() {
     return callback(closure_9, {});
   };
-  return callback(onPress(5260).HeaderBackButton, obj);
+  return callback(onPress(5276).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -94,7 +94,7 @@ function HeaderTextButton(text) {
     tmp5 = text;
   }
   obj.accessibilityLabel = tmp5;
-  return closure_6(require(5260) /* Background */.HeaderBackButton, obj);
+  return closure_6(require(5276) /* Background */.HeaderBackButton, obj);
 }
 ({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -126,7 +126,7 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
   const tmp = createCacheKey();
   let obj = { style: tmp.navigatorHeaderContainer, children: null };
   obj = { style: tmp.navigatorHeaderTitleContainer, children: null };
-  const items = [icon, callback(require(4281) /* Text */.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title })];
+  const items = [icon, callback(require(4298) /* Text */.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", children: title })];
   obj[1] = items;
   const items1 = [callback2(closure_4, obj), , ];
   let tmp6Result = null != subtitle;
@@ -137,10 +137,10 @@ export const NavigatorHeader = function NavigatorHeader(subtitle) {
     obj = { lineClamp: 1, style: null, variant: "text-xs/medium", color: "text-muted", children: null };
     obj[1] = tmp.navigatorHeaderSubtitle;
     obj[4] = subtitle;
-    tmp6Result = callback(require(4281) /* Text */.Text, obj);
+    tmp6Result = callback(require(4298) /* Text */.Text, obj);
   }
   items1[1] = tmp6Result;
-  items1[2] = importDefault(5254)("js-stack");
+  items1[2] = importDefault(5270)("js-stack");
   obj[1] = items1;
   return callback2(closure_4, obj);
 };
@@ -288,7 +288,7 @@ export const FauxHeader = function FauxHeader(arg0) {
   const top = importDefault(1609)().top;
   let obj = { style: null, children: null };
   const items = [createCacheKey().fauxHeaderWrapper, , ];
-  obj = { paddingTop: top, height: top + require(5250) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
+  obj = { paddingTop: top, height: top + require(5266) /* NAV_BAR_HEIGHT */.NAV_BAR_HEIGHT };
   items[1] = obj;
   items[2] = style;
   obj[0] = items;

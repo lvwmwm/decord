@@ -1,10 +1,10 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 11077
+// Function ID: 11078
 // Name: canEditMessage
-// Dependencies: [676, 5811, 4504, 5839, 2]
+// Dependencies: [676, 5830, 4521, 5858, 2]
 // Exports: default
 
-// Module 11062 (canEditMessage)
+// Module 11077 (canEditMessage)
 import ME from "ME";
 
 let c3;
@@ -20,10 +20,10 @@ export default function canEditMessage(author) {
     if (tmp3) {
       let tmp5 = author.state === constants2.SENT;
       if (tmp5) {
-        const tmp8 = importDefault(5811)(author);
+        const tmp8 = importDefault(5830)(author);
         let tmp9 = !tmp8;
         if (!tmp8) {
-          let result = require(4504) /* createMinimalMessageRecord */.canEditMessageWithStickers(author);
+          let result = require(4521) /* createMinimalMessageRecord */.canEditMessageWithStickers(author);
           if (result) {
             const hasFlagResult = author.hasFlag(constants.IS_VOICE_MESSAGE);
             let tmp14 = !hasFlagResult;
@@ -33,7 +33,7 @@ export default function canEditMessage(author) {
                 const isPollResult = author.isPoll();
                 let tmp17 = !isPollResult;
                 if (!isPollResult) {
-                  const tmp18 = tmp6(5839)(author);
+                  const tmp18 = tmp6(5858)(author);
                   let tmp19 = !tmp18;
                   if (!tmp18) {
                     tmp19 = author.type !== constants3.MEDIA_MENTION_MESSAGE;
@@ -47,7 +47,7 @@ export default function canEditMessage(author) {
             result = tmp14;
           }
           tmp9 = result;
-          const obj = require(4504) /* createMinimalMessageRecord */;
+          const obj = require(4521) /* createMinimalMessageRecord */;
         }
         tmp5 = tmp9;
         tmp6 = importDefault;

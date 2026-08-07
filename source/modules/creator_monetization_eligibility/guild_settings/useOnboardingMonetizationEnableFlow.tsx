@@ -1,10 +1,10 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16711
+// Function ID: 16712
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 1415, 1903, 676, 5802, 647, 16692, 16693, 16694, 5794, 1236, 1974, 16695, 2]
+// Dependencies: [19, 1415, 1903, 676, 5821, 647, 16712, 16713, 16714, 5813, 1236, 1974, 16715, 2]
 // Exports: default
 
-// Module 16691 (useOnboardingMonetizationEnableFlow)
+// Module 16711 (useOnboardingMonetizationEnableFlow)
 import noop from "noop";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -28,7 +28,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   let requestCooldownDuration;
   let submittedRequest;
   const _require = features;
-  let obj = _require(5802);
+  let obj = _require(5821);
   let isExpeditedOnboardingGuild = obj.useIsExpeditedOnboardingGuild(features);
   if (features != null) {
     features = features.features;
@@ -51,18 +51,18 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (features != null) {
     id = features.id;
   }
-  const tmp10 = refresh(16692);
-  ({ submittedRequest, error, loading, createEnableRequest } = refresh(16692)(id));
+  const tmp10 = refresh(16712);
+  ({ submittedRequest, error, loading, createEnableRequest } = refresh(16712)(id));
   let id1;
-  let tmp9Result = tmp9(16693);
+  let tmp9Result = tmp9(16713);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  const tmp10Result = refresh(16692)(id);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(16694)(eligibility));
+  const tmp10Result = refresh(16712)(id);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(16714)(eligibility));
   let hasItem2;
   if (features != null) {
     const features3 = features.features;
@@ -77,7 +77,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     }
     tmp19 = true === hasItem3;
   }
-  tmpResult = tmp(5794);
+  tmpResult = tmp(5813);
   let id2;
   if (features != null) {
     id2 = features.id;
@@ -98,7 +98,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   obj = { faqUrl: null };
   tmp9Result = tmp9(1974);
   obj[0] = tmp9Result.getArticleURL(constants2.CREATOR_FAQ);
-  const tmp16 = refresh(16694)(eligibility);
+  const tmp16 = refresh(16714)(eligibility);
   const tmp26 = constants2;
   if (isApplicationRejected) {
     if (tmpResult.useIsMonetizationReapplicationDisabled(id2).isMonetizationReapplicationDisabled) {
@@ -141,7 +141,7 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   const formatResult = intl.format(_require(1236).t.aJUdOi, obj);
   let formatResult3;
-  const creatorMonetizationAcceptTermsCheckboxText = _require(16695).getCreatorMonetizationAcceptTermsCheckboxText();
+  const creatorMonetizationAcceptTermsCheckboxText = _require(16715).getCreatorMonetizationAcceptTermsCheckboxText();
   if (isApplicationRejected) {
     if (tmp35) {
       if (stateFromStores) {

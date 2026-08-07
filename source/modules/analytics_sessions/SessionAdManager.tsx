@@ -1,9 +1,9 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13739
+// Function ID: 13740
 // Name: _initialize
-// Dependencies: [1218, 676, 4463, 6845, 4170, 709, 687, 1208, 7101, 698, 2]
+// Dependencies: [1218, 676, 4480, 6864, 4187, 709, 687, 1208, 7120, 698, 2]
 
-// Module 13725 (_initialize)
+// Module 13739 (_initialize)
 import importDefaultResult from "fetchFingerprint";
 import ME from "ME";
 import "initialize";
@@ -135,9 +135,9 @@ class SessionAdManager extends tmp3 {
 }
 const prototype = SessionAdManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  this.focusedOrForegrounded = require(6845) /* isForegrounded */.isForegrounded();
+  this.focusedOrForegrounded = require(6864) /* isForegrounded */.isForegrounded();
   importDefaultResult.addChangeListener(this.handleAuthenticationChange);
-  const obj = require(6845) /* isForegrounded */;
+  const obj = require(6864) /* isForegrounded */;
   const subscription = importDefault(709).subscribe("WINDOW_FOCUS", this.handleWindowFocus);
   const obj2 = importDefault(709);
   const subscription1 = importDefault(709).subscribe("APP_STATE_UPDATE", this.handleAppStateUpdate);

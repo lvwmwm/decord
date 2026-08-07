@@ -1,9 +1,9 @@
-// Module ID: 5142
-// Function ID: 5143
+// Module ID: 5159
+// Function ID: 5160
 // Name: fromType
-// Dependencies: [1912, 676, 5143, 685, 5152, 2]
+// Dependencies: [1912, 676, 5160, 685, 5169, 2]
 
-// Module 5142 (fromType)
+// Module 5159 (fromType)
 import "toJS";
 import { Routes } from "ME";
 import { RewardFilterTypes } from "QuestsExperimentLocations";
@@ -105,7 +105,7 @@ prototype["fromType"] = function fromType(arg0) {
     throwTypeErrorResult = arg2;
     if (tmp7.SETTINGS === arg0) {
       if (settingsPathToRouteResult == null) {
-        obj2 = require(5152) /* settingsPathToRoute */;
+        obj2 = require(5169) /* settingsPathToRoute */;
         settingsPathToRouteResult = obj2.settingsPathToRoute(UserSettingsPath.ACCOUNT);
       }
       const obj3 = { path: null, label: null, type: null };

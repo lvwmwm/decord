@@ -1,10 +1,10 @@
-// Module ID: 8164
-// Function ID: 8165
+// Module ID: 8181
+// Function ID: 8182
 // Name: updateAssets
-// Dependencies: [32, 5, 8165, 676, 38, 3, 530, 709, 1450, 2]
+// Dependencies: [32, 5, 8182, 676, 38, 3, 530, 709, 1450, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8164 (updateAssets)
+// Module 8181 (updateAssets)
 import _slicedToArray from "_slicedToArray";
 import timestamp from "timestamp";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";

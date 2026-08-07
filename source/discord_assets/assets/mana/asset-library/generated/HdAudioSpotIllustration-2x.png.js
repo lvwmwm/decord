@@ -1,9 +1,9 @@
-// Module ID: 6388
-// Function ID: 6389
+// Module ID: 6407
+// Function ID: 6408
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6388 (metadata)
+// Module 6407 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HdAudioSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/d4dd74bba54845b5f005c2258235d8bd1f7d1f3b178cad77ad514c6cb9f8f149.png";

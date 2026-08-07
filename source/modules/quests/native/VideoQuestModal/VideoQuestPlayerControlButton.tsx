@@ -1,9 +1,9 @@
-// Module ID: 14189
-// Function ID: 14190
+// Module ID: 14203
+// Function ID: 14204
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [19, 21, 4285, 712, 689, 4827, 4685, 2]
+// Dependencies: [19, 21, 4302, 712, 689, 4844, 4702, 2]
 
-// Module 14189 (VideoQuestPlayerControlButton)
+// Module 14203 (VideoQuestPlayerControlButton)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -36,8 +36,8 @@ const memoResult = importAllResult.memo((arg0) => {
   items[2] = style;
   const merged1 = Object.assign(merged);
   obj = { style: tmp2.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children };
-  obj.children = jsx(importDefault(4685), { style: tmp2.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
-  return jsx(require(4827) /* PressableBase */.PressableOpacity, { style: tmp2.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
+  obj.children = jsx(importDefault(4702), { style: tmp2.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
+  return jsx(require(4844) /* PressableBase */.PressableOpacity, { style: tmp2.blur, blurAmount: 0.2, blurStyle: "default", blurTheme: "dark", children });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayerControlButton.tsx");
 

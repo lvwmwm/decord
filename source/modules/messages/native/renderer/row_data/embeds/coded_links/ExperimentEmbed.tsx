@@ -1,10 +1,10 @@
-// Module ID: 11124
-// Function ID: 11125
+// Module ID: 11139
+// Function ID: 11140
 // Name: ExperimentOverrideActionSheet
-// Dependencies: [19, 17, 1218, 4200, 7117, 21, 7976, 8126, 10374, 10375, 3994, 11125, 11126, 11127, 7978, 11128, 8128, 4253, 4207, 5377, 5376, 11129, 10373, 2]
+// Dependencies: [19, 17, 1218, 4217, 7136, 21, 7993, 8143, 10390, 10391, 4011, 11140, 11141, 11142, 7995, 11143, 8145, 4270, 4224, 5396, 5395, 11144, 10389, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 11124 (ExperimentOverrideActionSheet)
+// Module 11139 (ExperimentOverrideActionSheet)
 import Background from "Background";
 import { Image } from "ACTION_SHEET_HEIGHT_HALF";
 import fetchFingerprint from "fetchFingerprint";
@@ -124,16 +124,16 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
   let colors;
   let experiments;
   let overridesInfo;
-  ({ colors, baseColors } = importDefault(7976)(closure_2));
-  let obj = experimentTreatmentFromEmbedURL(8126);
+  ({ colors, baseColors } = importDefault(7993)(closure_2));
+  let obj = experimentTreatmentFromEmbedURL(8143);
   const experimentFromEmbedURL = obj.getExperimentFromEmbedURL(url);
-  let obj1 = experimentTreatmentFromEmbedURL(8126);
+  let obj1 = experimentTreatmentFromEmbedURL(8143);
   experimentTreatmentFromEmbedURL = obj1.getExperimentTreatmentFromEmbedURL(url);
-  const tmp3 = importDefault(7976)(closure_2);
-  const legacyExperiments = experimentTreatmentFromEmbedURL(10374).getLegacyExperiments();
+  const tmp3 = importDefault(7993)(closure_2);
+  const legacyExperiments = experimentTreatmentFromEmbedURL(10390).getLegacyExperiments();
   ({ experiments, overridesInfo } = legacyExperiments);
-  const obj3 = experimentTreatmentFromEmbedURL(10374);
-  const apexExperiments = experimentTreatmentFromEmbedURL(10375).getApexExperiments();
+  const obj3 = experimentTreatmentFromEmbedURL(10390);
+  const apexExperiments = experimentTreatmentFromEmbedURL(10391).getApexExperiments();
   let tmp10 = null;
   if (null != experimentFromEmbedURL) {
     let tmp11 = experiments[experimentFromEmbedURL];
@@ -151,7 +151,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
       if (tmp12 == null) {
         tmp12 = null;
       }
-      let tmp4Result = tmp4(8126);
+      let tmp4Result = tmp4(8143);
       const experimentBuckets = tmp4Result.getExperimentBuckets(tmp10);
       const iter = experimentBuckets.find((value) => value.value === experimentTreatmentFromEmbedURL);
       if (null != iter) {
@@ -162,9 +162,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         EXPERIMENT = ExperimentEmbedType.EXPERIMENT;
       }
       id = id.getId();
-      tmp4Result = tmp4(11127);
+      tmp4Result = tmp4(11142);
       const experimentServerAssignment = tmp4Result.getExperimentServerAssignment(tmp10, id);
-      const experimentServerAssignmentLabel = tmp4(8126).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
+      const experimentServerAssignmentLabel = tmp4(8143).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
       if (EXPERIMENT === tmp13.EXPERIMENT_TREATMENT) {
         if (null != iter) {
           let label = iter.label;
@@ -179,7 +179,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         obj.titleColor = colors.titleColor;
         obj.subtitle = label;
         obj.subtitleColor = colors.subtitleColor;
-        obj.thumbnailUrl = tmp4(7978).getAssetUriForEmbed(tmp(11128));
+        obj.thumbnailUrl = tmp4(7995).getAssetUriForEmbed(tmp(11143));
         obj.thumbnailBackgroundColor = colors.backgroundColor;
         obj.acceptLabelColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
         obj.acceptLabelBackgroundColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
@@ -208,14 +208,14 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
         }
         obj.subtitle = combined1;
         obj.subtitleColor = colors.subtitleColor;
-        obj.thumbnailUrl = tmp4(7978).getAssetUriForEmbed(tmp(11128));
+        obj.thumbnailUrl = tmp4(7995).getAssetUriForEmbed(tmp(11143));
         ({ backgroundColor: obj13.thumbnailBackgroundColor, acceptLabelGreenColor: obj13.acceptLabelColor, acceptLabelGreenBackgroundColor: obj13.acceptLabelBackgroundColor } = colors);
         obj.acceptLabelText = "View Experiment Details";
         obj.embedCanBeTapped = true;
         obj.type = InviteTypes.GUILD;
         return obj;
       }
-      const tmp4Result1 = tmp4(8126);
+      const tmp4Result1 = tmp4(8143);
     }
   }
   obj1 = {};
@@ -231,11 +231,11 @@ export const createExperimentEmbed = function createExperimentEmbed(url, closure
   obj1.subtitleColor = colors.subtitleColor;
   obj1.bodyText = "This client is missing this experiment. You may need to open the surface where the experiment is used first.";
   obj1.bodyTextColor = colors.bodyTextColor;
-  const obj4 = experimentTreatmentFromEmbedURL(10375);
+  const obj4 = experimentTreatmentFromEmbedURL(10391);
   if (tmp4Result4.isThemeDark(closure_2)) {
-    let tmpResult = tmp(11125);
+    let tmpResult = tmp(11140);
   } else {
-    tmpResult = tmp(11126);
+    tmpResult = tmp(11141);
   }
   obj1.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   obj1.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;

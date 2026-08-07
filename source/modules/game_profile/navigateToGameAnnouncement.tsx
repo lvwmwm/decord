@@ -1,10 +1,10 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9277
+// Function ID: 9278
 // Name: _navigateToGameAnnouncement
-// Dependencies: [5, 1891, 676, 38, 5877, 7679, 1222, 2]
+// Dependencies: [5, 1891, 676, 38, 5896, 7698, 1222, 2]
 // Exports: default
 
-// Module 9260 (_navigateToGameAnnouncement)
+// Module 9277 (_navigateToGameAnnouncement)
 import generateAcceptInviteOptions from "generateAcceptInviteOptions";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -103,7 +103,7 @@ function _navigateToGameAnnouncement() {
                     if (null != set) {
                       if (!set.has(constants.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj5 = id(7679);
+                          let obj5 = id(7698);
                           const obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           let obj3 = { location: null };
@@ -117,7 +117,7 @@ function _navigateToGameAnnouncement() {
                         }
                       }
                     }
-                    let obj9 = lib(5877);
+                    let obj9 = lib(5896);
                     obj5 = { shouldNavigate: true, channelId: null, messageId: null, joinSource: null };
                     obj5[1] = dependencyMap;
                     obj5[2] = c3;

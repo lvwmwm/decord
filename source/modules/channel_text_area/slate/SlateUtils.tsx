@@ -1,10 +1,10 @@
-// Module ID: 7066
-// Function ID: 7067
+// Module ID: 7085
+// Function ID: 7086
 // Name: createEmptyState
 // Dependencies: [2]
 // Exports: createEmptyState, createState, toRichValue, voidToOptionValue
 
-// Module 7066 (createEmptyState)
+// Module 7085 (createEmptyState)
 let obj = { type: "line", children: null };
 let items = [Object.freeze({ text: "" })];
 obj[1] = Object.freeze(items);

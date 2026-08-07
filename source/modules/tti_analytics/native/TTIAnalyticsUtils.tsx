@@ -1,10 +1,10 @@
-// Module ID: 6855
-// Function ID: 6856
+// Module ID: 6874
+// Function ID: 6875
 // Name: getDeviceMetadata
-// Dependencies: [5, 6856, 4199, 1302, 1218, 1372, 706, 676, 7051, 1379, 21, 4265, 7052, 514, 1606, 4136, 4135, 10, 1208, 698, 7053, 4142, 7055, 9, 687, 7056, 4624, 4713, 1988, 2]
+// Dependencies: [5, 6875, 4216, 1302, 1218, 1372, 706, 676, 7070, 1379, 21, 4282, 7071, 514, 1606, 4153, 4152, 10, 1208, 698, 7072, 4159, 7074, 9, 687, 7075, 4641, 4730, 1988, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 6855 (getDeviceMetadata)
+// Module 6874 (getDeviceMetadata)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleClearCaches from "handleClearCaches";
 import getHash from "getHash";
@@ -23,30 +23,30 @@ const require = arg1;
 function getDeviceMetadata() {
   if (null == obj) {
     obj = { device_model: null, device_brand: null, device_product: null, device_manufacturer: null, smallest_screen_width_dp: null, device_performance_class: null, soc_name: null, ram_size: null, max_cpu_freq: null };
-    obj[0] = require(4265) /* DCDDeviceManager */.getDeviceModel();
-    const obj2 = require(4265) /* DCDDeviceManager */;
-    obj[1] = require(4265) /* DCDDeviceManager */.getDeviceBrand();
-    const obj3 = require(4265) /* DCDDeviceManager */;
-    obj[2] = require(4265) /* DCDDeviceManager */.getDeviceProduct();
-    const obj4 = require(4265) /* DCDDeviceManager */;
-    obj[3] = require(4265) /* DCDDeviceManager */.getDeviceManufacturer();
-    const obj5 = require(4265) /* DCDDeviceManager */;
-    obj[4] = require(4265) /* DCDDeviceManager */.getSmallestScreenWidthDp();
-    obj[5] = importDefault(7052)();
-    const obj6 = require(4265) /* DCDDeviceManager */;
-    obj[6] = require(4265) /* DCDDeviceManager */.getSocName();
-    const obj7 = require(4265) /* DCDDeviceManager */;
-    obj[7] = require(4265) /* DCDDeviceManager */.getRamSize();
-    const obj8 = require(4265) /* DCDDeviceManager */;
-    obj[8] = require(4265) /* DCDDeviceManager */.getMaxCpuFreq();
-    const obj9 = require(4265) /* DCDDeviceManager */;
+    obj[0] = require(4282) /* DCDDeviceManager */.getDeviceModel();
+    const obj2 = require(4282) /* DCDDeviceManager */;
+    obj[1] = require(4282) /* DCDDeviceManager */.getDeviceBrand();
+    const obj3 = require(4282) /* DCDDeviceManager */;
+    obj[2] = require(4282) /* DCDDeviceManager */.getDeviceProduct();
+    const obj4 = require(4282) /* DCDDeviceManager */;
+    obj[3] = require(4282) /* DCDDeviceManager */.getDeviceManufacturer();
+    const obj5 = require(4282) /* DCDDeviceManager */;
+    obj[4] = require(4282) /* DCDDeviceManager */.getSmallestScreenWidthDp();
+    obj[5] = importDefault(7071)();
+    const obj6 = require(4282) /* DCDDeviceManager */;
+    obj[6] = require(4282) /* DCDDeviceManager */.getSocName();
+    const obj7 = require(4282) /* DCDDeviceManager */;
+    obj[7] = require(4282) /* DCDDeviceManager */.getRamSize();
+    const obj8 = require(4282) /* DCDDeviceManager */;
+    obj[8] = require(4282) /* DCDDeviceManager */.getMaxCpuFreq();
+    const obj9 = require(4282) /* DCDDeviceManager */;
   }
   return obj;
 }
 function getRedesignScreenName() {
   let name;
   let params;
-  const rootNavigationRef = require(4136) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
   let currentRoute;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -100,9 +100,9 @@ function getRedesignScreenName() {
       const _HermesInternal = HermesInternal;
       return "redesign-" + name;
     }
-    tmpResult = tmp(4135);
+    tmpResult = tmp(4152);
   }
-  const obj = require(4136) /* getRootNavigationRef */;
+  const obj = require(4153) /* getRootNavigationRef */;
   tmp = require;
 }
 function sharedProperties(screen_name, has_cached_data) {
@@ -159,7 +159,7 @@ function _trackAppUIViewedAsync() {
               getHash = 1;
               c6 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback2(4142).getAppFirstVisibleTimestamp();
+              obj1[0] = callback2(4159).getAppFirstVisibleTimestamp();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -173,15 +173,15 @@ function _trackAppUIViewedAsync() {
           } else {
             handleClearCaches = arg1;
             getHash = ensureGuildLoaded - handleClearCaches;
-            callback2(4142).reportFullyDrawn();
-            const obj5 = callback2(4142);
+            callback2(4159).reportFullyDrawn();
+            const obj5 = callback2(4159);
             callback2(10).mark("\u2757", "Track app_ui_viewed");
             const obj6 = callback2(10);
             callback2(10).addDetail("TTI", getHash);
             const obj7 = callback2(10);
             callback2(10).markAt("\u{1F3C3}", "app_opened", handleClearCaches);
             const obj8 = callback2(10);
-            callback(7055).ttiRecorded(getHash);
+            callback(7074).ttiRecorded(getHash);
             let _setTimeout = setTimeout;
             let timerId = setTimeout(() => {
               let str = closure_0;
@@ -203,7 +203,7 @@ function _trackAppUIViewedAsync() {
               if (null == timeout) {
                 let _setTimeout = setTimeout;
                 timeout = setTimeout(() => {
-                  callback(9).setTTICallback(/* F119542 */ function() { ... });
+                  callback(9).setTTICallback(/* F119632 */ function() { ... });
                   callback3();
                   let c25 = null;
                 }, 15 * callback(687).Millis.SECOND);
@@ -313,7 +313,7 @@ function _logLegacyAppUiViewed() {
               c7 = 1;
               c8 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = callback(4142).getJSBundleTimestamps();
+              obj1[0] = callback(4159).getJSBundleTimestamps();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -438,7 +438,7 @@ function _trackAppUIViewed() {
             outer1_2 = outer1_1.appCreatedTime;
             const outer1_3 = outer1_1.appFirstVisibleTime;
             const outer1_4 = outer1_1.extraProperties;
-            const allNativeTimestamps = callback(4142).getAllNativeTimestamps();
+            const allNativeTimestamps = callback(4159).getAllNativeTimestamps();
             getHash = 2;
             theme = 1;
             let obj3 = { value: null, done: false };
@@ -457,7 +457,7 @@ function _trackAppUIViewed() {
           obj4[0] = arg1;
           return obj4;
         } else {
-          const cumulativeCPUUsage = callback(7056).getCumulativeCPUUsage();
+          const cumulativeCPUUsage = callback(7075).getCumulativeCPUUsage();
           let usage;
           if (cumulativeCPUUsage != null) {
             usage = cumulativeCPUUsage.usage;
@@ -488,7 +488,7 @@ function _trackAppUIViewed() {
           obj3.track(APP_UI_VIEWED2.APP_UI_VIEWED2, theme, { logEventProperties: true });
           let closure_26 = theme;
           if (alertStartupMetrics.alertStartupMetrics) {
-            obj4 = callback(4624);
+            obj4 = callback(4641);
             const obj5 = { importer: null };
             obj5[0] = function importer() {
               return callback(paths[28])(paths[27], paths.paths).then((arg0) => {
@@ -508,7 +508,7 @@ function _trackAppUIViewed() {
             };
             obj4.openLazy(obj5);
           }
-          const obj14 = callback(7056);
+          const obj14 = callback(7075);
           if (obj7.runningTTIAutomation()) {
             (function logToDevice(json) {
               let obj = {};
@@ -700,7 +700,7 @@ export const trackAppUIViewed = function trackAppUIViewed(ModalScreen, arg1, has
   if (hasCacheResult === undefined) {
     hasCacheResult = handleClearCaches.hasCache();
   }
-  const AppStartInfo = require(7053) /* AppStartInfo */.AppStartInfo;
+  const AppStartInfo = require(7072) /* AppStartInfo */.AppStartInfo;
   if (!AppStartInfo.getAppUIViewed()) {
     (function trackAppUIViewedAsync(ModalScreen, arg1, hasCacheResult) {
       const self = this;

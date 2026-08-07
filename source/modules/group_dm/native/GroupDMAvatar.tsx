@@ -1,10 +1,10 @@
-// Module ID: 9582
-// Function ID: 9583
+// Module ID: 9598
+// Function ID: 9599
 // Name: FacepileGroupDMAvatar
-// Dependencies: [19, 17, 1903, 21, 1297, 4285, 8216, 589, 1351, 2]
+// Dependencies: [19, 17, 1903, 21, 1297, 4302, 8233, 589, 1351, 2]
 // Exports: default
 
-// Module 9582 (FacepileGroupDMAvatar)
+// Module 9598 (FacepileGroupDMAvatar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -73,7 +73,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj3);
     items3 = [, ];
     items3[0] = tmp11(require("Button").Avatar, obj1);
-    obj4 = { status, statusSizeOverride: null, autoStatusCutout: true, style: null, size: null, guildId: "Array", animate: "row" };
+    obj4 = { status, statusSizeOverride: null, autoStatusCutout: true, style: null, size: null, guildId: "Array", animate: "heading-md/normal" };
     obj4[1] = require("Button").StatusSizes.REFRESH_MEDIUM_10;
     obj4[3] = tmp.secondFace;
     obj4[4] = pileSizeOverride;
@@ -126,7 +126,7 @@ export default function GroupDMAvatar(pileSizeOverride) {
     if (0 !== channel.recipients.length) {
       if (0 !== stateFromStoresArray.length) {
         if (1 === stateFromStoresArray.length) {
-          obj = { autoStatusCutout: true, status: null, style: null, size: null, user: null, guildId: "a", animate: "previousElementSibling", accessible: null, accessibilityLabel: "pt" };
+          obj = { autoStatusCutout: true, status: null, style: null, size: null, user: null, guildId: "a", animate: "previousElementSibling", accessible: null, accessibilityLabel: "it" };
           obj[1] = status;
           obj[2] = style;
           obj[3] = size;

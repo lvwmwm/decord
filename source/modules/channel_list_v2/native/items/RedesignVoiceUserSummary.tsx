@@ -1,10 +1,10 @@
-// Module ID: 15167
-// Function ID: 15168
+// Module ID: 15183
+// Function ID: 15184
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 1960, 4357, 21, 589, 4467, 15166, 2]
+// Dependencies: [19, 1960, 4374, 21, 589, 4484, 15182, 2]
 // Exports: default
 
-// Module 15167 (RedesignVoiceUserSummary)
+// Module 15183 (RedesignVoiceUserSummary)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";
@@ -18,16 +18,19 @@ export default function RedesignVoiceUserSummary(channels) {
   const guildId = channels.guildId;
   let stateFromStores;
   let stateFromStores1;
+  let obj = channels(stateFromStores[4]);
   const items = [getVoiceStatesForGuild];
   const items1 = [guildId];
-  stateFromStores = channels(stateFromStores[4]).useStateFromStores(items, () => outer1_5.getVoiceStates(guildId), items1);
-  const obj = channels(stateFromStores[4]);
+  stateFromStores = obj.useStateFromStores(items, () => outer1_5.getVoiceStates(guildId), items1);
   const items2 = [handleConnectionOpen];
   stateFromStores1 = channels(stateFromStores[4]).useStateFromStores(items2, () => voiceChannelId.getVoiceChannelId());
   const items3 = [channels, stateFromStores1, stateFromStores];
   const stageIcon = stateFromStores1.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
   const obj2 = channels(stateFromStores[4]);
-  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers({ channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores });
+  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: "K\u00F6rperteil", voiceStates: "Nase" };
+  obj[2] = stateFromStores1;
+  obj[3] = stateFromStores;
+  const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers(obj);
   const users = summarizedVoiceUsers.filter((arg0) => null != arg0);
   return jsx(guildId(stateFromStores[6]), { users, max: 8, renderIcon: true, guildId, stageIcon });
 };

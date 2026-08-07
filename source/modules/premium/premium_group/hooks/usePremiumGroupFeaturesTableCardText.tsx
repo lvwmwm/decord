@@ -1,10 +1,10 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12686
+// Function ID: 12687
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [3936, 3944, 1236, 2866, 1921, 8079, 12672, 589, 2]
+// Dependencies: [3953, 3961, 1236, 2866, 1921, 8096, 12687, 589, 2]
 // Exports: default
 
-// Module 12671 (usePremiumGroupFeaturesTableCardText)
+// Module 12686 (usePremiumGroupFeaturesTableCardText)
 import reset from "reset";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
@@ -16,7 +16,7 @@ const result = require("getSystemLocale").fileFinishedImporting("modules/premium
 
 export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
   let obj = { useCachedData: true, fetch: arg0 === require(1921) /* create */.PremiumSubscriptionGroupRole.MEMBER };
-  const tmp4 = importDefault(12672)(obj);
+  const tmp4 = importDefault(12687)(obj);
   let obj1 = require(589) /* initialize */;
   const items = [reset];
   const stateFromStores = obj1.useStateFromStores(items, () => premiumGroupSubscription.getPremiumGroupSubscription());
@@ -24,8 +24,8 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     return null;
   } else {
     if (arg0 === tmp(1921).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(8079).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult = tmp(8079);
+      let priceString = tmp(8096).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(8096);
     } else {
       priceString = null;
       if (null != tmp4) {

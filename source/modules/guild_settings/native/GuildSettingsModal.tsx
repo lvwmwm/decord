@@ -1,10 +1,10 @@
-// Module ID: 16491
-// Function ID: 16492
+// Module ID: 16518
+// Function ID: 16519
 // Name: close
-// Dependencies: [32, 19, 1891, 8945, 676, 21, 16492, 8944, 503, 1236, 5253, 16493, 16506, 16510, 16511, 16521, 16536, 16537, 16549, 16561, 16563, 15806, 15815, 16571, 16575, 16577, 15817, 16578, 16583, 16584, 16604, 16623, 16627, 16630, 11154, 11167, 11169, 16631, 16636, 16637, 16659, 16699, 16700, 16716, 16755, 16759, 16760, 16763, 16771, 1609, 5637, 589, 5704, 2]
+// Dependencies: [32, 19, 1891, 8962, 676, 21, 15193, 8961, 503, 1236, 5269, 16519, 16531, 16535, 16536, 16546, 16561, 16562, 16574, 16586, 16588, 15830, 15839, 16596, 16600, 16602, 15841, 15194, 16603, 16604, 16624, 16643, 16647, 16650, 11169, 11182, 11184, 16651, 16656, 16657, 16679, 16719, 16720, 16736, 16775, 16779, 16780, 16783, 16791, 1609, 5656, 589, 5723, 2]
 // Exports: default
 
-// Module 16491 (close)
+// Module 16518 (close)
 import InvitesDisabledRow from "InvitesDisabledRow";
 import GuildSettingsModalServerTag from "GuildSettingsModalServerTag";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -16,9 +16,9 @@ let error;
 let metroImportAll;
 const require = arg1;
 function close() {
-  importDefault(16492).terminate();
-  const obj = importDefault(16492);
-  importDefault(8944).close();
+  importDefault(15193).terminate();
+  const obj = importDefault(15193);
+  importDefault(8961).close();
 }
 ({ GuildSettingsSections: error, WebhookTypes: metroImportAll } = ME);
 const result = require("createGuildRecordFromRust").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");
@@ -217,7 +217,8 @@ export default function GuildSettingsModal() {
       const intl18 = bottom(stateFromStores[9]).intl;
       obj18[1] = intl18.string(bottom(stateFromStores[9]).t.OGiMXJ);
       obj18[3] = function render() {
-        const obj = { guildId: closure_0 };
+        const obj = { guildId: closure_0, onDone: null };
+        obj[1] = obj(outer1_2[6]).stopReordering;
         const merged = Object.assign(obj);
         return outer1_9(obj(outer1_2[27]), obj);
       };

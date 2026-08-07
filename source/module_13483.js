@@ -1,9 +1,6 @@
 // Module ID: 13483
 // Function ID: 13484
-// Dependencies: [13484, 13552]
+// Dependencies: []
 
 // Module 13483
-import module_13484 from "module_13484";
-
-
-export default require("module_13552").Object.assign;
+arg5.calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

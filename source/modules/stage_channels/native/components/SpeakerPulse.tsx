@@ -1,10 +1,10 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13296
+// Function ID: 13297
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 4277, 21, 4285, 712, 589, 4145, 4286, 2]
+// Dependencies: [19, 17, 4294, 21, 4302, 712, 589, 4162, 4303, 2]
 // Exports: default
 
-// Module 13282 (SpeakerPulse)
+// Module 13296 (SpeakerPulse)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

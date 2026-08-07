@@ -1,10 +1,10 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11222
+// Function ID: 11223
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4285, 1297, 712, 4281, 1236, 11208, 2]
+// Dependencies: [19, 17, 21, 4302, 1297, 712, 4298, 1236, 11223, 2]
 // Exports: default
 
-// Module 11207 (ClassificationEvidence)
+// Module 11222 (ClassificationEvidence)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -34,14 +34,14 @@ export default function ClassificationEvidence(flaggedContent) {
     obj = { variant: "eyebrow", color: "text-default", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(require(1236) /* getSystemLocale */.t.s64CMg);
-    const items = [callback(require(4281) /* Text */.Text, obj), ];
+    const items = [callback(require(4298) /* Text */.Text, obj), ];
     obj = { style: null, children: null };
     const items1 = [, ];
     ({ flaggedContent: arr3[0], cardShadow: arr3[1] } = tmp);
     obj[0] = items1;
     const obj1 = { flaggedContent: null };
     obj1[0] = flaggedContent;
-    obj[1] = callback(importDefault(11208), obj1);
+    obj[1] = callback(importDefault(11223), obj1);
     items[1] = callback(View, obj);
     obj[1] = items;
     tmp2 = callback2(View, obj);

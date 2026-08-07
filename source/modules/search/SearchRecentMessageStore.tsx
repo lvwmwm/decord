@@ -1,9 +1,9 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11648
+// Function ID: 11649
 // Name: handleReset
-// Dependencies: [4504, 589, 709, 2]
+// Dependencies: [4521, 589, 709, 2]
 
-// Module 11633 (handleReset)
+// Module 11648 (handleReset)
 import { Store } from "initialize";
 
 const require = arg1;

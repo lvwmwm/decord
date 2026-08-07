@@ -1,9 +1,9 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10871
+// Function ID: 10872
 // Name: StreamPreviewTile
-// Dependencies: [19, 17, 4304, 1903, 9657, 4303, 21, 4285, 4128, 712, 5649, 1609, 589, 4478, 8706, 10619, 10828, 10646, 10653, 10860, 10865, 10866, 10465, 10867, 10868, 1297, 10590, 4145, 4286, 10869, 2]
+// Dependencies: [19, 17, 4321, 1903, 9673, 4320, 21, 4302, 4145, 712, 5668, 1609, 589, 4495, 8723, 10616, 10840, 10643, 10650, 10872, 10877, 10878, 10481, 10879, 10880, 1297, 10587, 4162, 4303, 10881, 2]
 
-// Module 10859 (StreamPreviewTile)
+// Module 10871 (StreamPreviewTile)
 import importAllResult from "StreamPreviewContainer";
 import get_ActivityIndicator from "UserTile";
 import reset from "reset";
@@ -49,17 +49,17 @@ class StreamPreviewTile {
 function ParticipantIcon(participant) {
   participant = participant.participant;
   if (participant.type === constants.STREAM) {
-    let tmp3 = importDefault(10865);
+    let tmp3 = importDefault(10877);
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = importDefault(10866);
+      tmp3 = importDefault(10878);
     } else if (tmp19.XBOX === voicePlatform) {
-      tmp3 = importDefault(10465);
+      tmp3 = importDefault(10481);
     } else if (tmp19.PLAYSTATION === voicePlatform) {
-      tmp3 = importDefault(10867);
+      tmp3 = importDefault(10879);
     } else if (tmp19.QUEST === voicePlatform) {
-      tmp3 = importDefault(10868);
+      tmp3 = importDefault(10880);
     }
   }
   let tmp14 = null;
@@ -85,7 +85,7 @@ class TileOverlay {
     ({ bottom, left, top, right } = tmp4);
     tmp5 = reveal;
     reveal = defineProperty.useContext(require("useRevealProviderValue").RevealContext).reveal;
-    obj = require("module_4145");
+    obj = require("module_4162");
     class T {
       constructor() {
         tmp = reveal;
@@ -151,7 +151,7 @@ class TileOverlay {
     obj4[1] = tmp7(View, obj5);
     items1[1] = jsx(View, obj4);
     obj2[2] = items1;
-    return tmp7(require("module_4145").View, obj2);
+    return tmp7(require("module_4162").View, obj2);
   }
 }
 let c3 = importAllResult;

@@ -1,10 +1,10 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12609
+// Function ID: 12610
 // Name: useBuyNitroPlanSubLabelRenderer
-// Dependencies: [19, 1905, 21, 7657, 2]
+// Dependencies: [19, 1905, 21, 7676, 2]
 // Exports: useBuyNitroPlanSubLabelRenderer
 
-// Module 12594 (useBuyNitroPlanSubLabelRenderer)
+// Module 12609 (useBuyNitroPlanSubLabelRenderer)
 import noop from "noop";
 import { PRICE_PLACEHOLDER } from "GuildFeatures";
 import { jsx } from "jsxProd";

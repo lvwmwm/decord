@@ -1,10 +1,10 @@
-// Module ID: 8956
-// Function ID: 8957
+// Module ID: 8973
+// Function ID: 8974
 // Name: getChannelA11yLabel
-// Dependencies: [1376, 3921, 1903, 676, 1236, 4475, 4775, 4123, 8161, 2]
+// Dependencies: [1376, 3938, 1903, 676, 1236, 4492, 4792, 4140, 8178, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 8956 (getChannelA11yLabel)
+// Module 8973 (getChannelA11yLabel)
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -41,9 +41,9 @@ export default function getChannelA11yLabel(mentionCount) {
     flag = false;
   }
   const voiceChannelStartTime = mentionCount.voiceChannelStartTime;
-  let obj = require(4475) /* computeChannelName */;
+  let obj = require(4492) /* computeChannelName */;
   const channelName = obj.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-  if (importDefault(4775)(channel)) {
+  if (importDefault(4792)(channel)) {
     const intl = tmp(1236).intl;
     const stringResult = intl.string(tmp(1236).t["4qvAtn"]);
   }
@@ -136,9 +136,9 @@ export default function getChannelA11yLabel(mentionCount) {
         const obj6 = { start: null };
         obj6[0] = voiceChannelStartTime;
         const _Date = Date;
-        obj5[0] = tmp(8161).formatActiveA11yTimestamp(obj6, Date.now());
+        obj5[0] = tmp(8178).formatActiveA11yTimestamp(obj6, Date.now());
         items1.push(intl15.formatToPlainString(tmp(1236).t.JQtsGh, obj5));
-        const tmpResult = tmp(8161);
+        const tmpResult = tmp(8178);
       }
       if (tmp14) {
         const intl7 = tmp(1236).intl;
@@ -216,13 +216,13 @@ export default function getChannelA11yLabel(mentionCount) {
 };
 export const getStatusLabel = function getStatusLabel(status) {
   if (constants2.ONLINE === status) {
-    return require(4123) /* nameFromUser */.humanizeStatus(tmp.ONLINE);
+    return require(4140) /* nameFromUser */.humanizeStatus(tmp.ONLINE);
   } else if (tmp.IDLE === status) {
-    return require(4123) /* nameFromUser */.humanizeStatus(tmp.IDLE);
+    return require(4140) /* nameFromUser */.humanizeStatus(tmp.IDLE);
   } else if (tmp.DND === status) {
-    return require(4123) /* nameFromUser */.humanizeStatus(tmp.DND);
+    return require(4140) /* nameFromUser */.humanizeStatus(tmp.DND);
   } else if (tmp.INVISIBLE === status) {
-    return require(4123) /* nameFromUser */.humanizeStatus(tmp.INVISIBLE);
+    return require(4140) /* nameFromUser */.humanizeStatus(tmp.INVISIBLE);
   } else {
     return "";
   }
@@ -247,21 +247,21 @@ export const getChannelA11yHint = function getChannelA11yHint(userStatus) {
         let ONLINE = constants2;
         if (constants2.ONLINE === userStatus) {
           ONLINE = ONLINE.ONLINE;
-          let str = require(4123) /* nameFromUser */.humanizeStatus(ONLINE);
-          const obj3 = require(4123) /* nameFromUser */;
+          let str = require(4140) /* nameFromUser */.humanizeStatus(ONLINE);
+          const obj3 = require(4140) /* nameFromUser */;
         } else {
           if (ONLINE.IDLE === userStatus) {
-            str = require(4123) /* nameFromUser */.humanizeStatus(ONLINE.IDLE);
-            const obj2 = require(4123) /* nameFromUser */;
+            str = require(4140) /* nameFromUser */.humanizeStatus(ONLINE.IDLE);
+            const obj2 = require(4140) /* nameFromUser */;
           } else if (ONLINE.DND !== userStatus) {
             str = "";
             if (ONLINE.INVISIBLE === userStatus) {
-              str = require(4123) /* nameFromUser */.humanizeStatus(ONLINE.INVISIBLE);
-              const obj4 = require(4123) /* nameFromUser */;
+              str = require(4140) /* nameFromUser */.humanizeStatus(ONLINE.INVISIBLE);
+              const obj4 = require(4140) /* nameFromUser */;
             }
           }
-          str = require(4123) /* nameFromUser */.humanizeStatus(ONLINE.DND);
-          const obj = require(4123) /* nameFromUser */;
+          str = require(4140) /* nameFromUser */.humanizeStatus(ONLINE.DND);
+          const obj = require(4140) /* nameFromUser */;
         }
         items.push(str);
       }

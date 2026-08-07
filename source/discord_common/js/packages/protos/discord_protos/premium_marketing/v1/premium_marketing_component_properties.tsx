@@ -1,9 +1,9 @@
-// Module ID: 7269
-// Function ID: 7270
+// Module ID: 7288
+// Function ID: 7289
 // Name: create
-// Dependencies: [32, 1307, 7270, 7274, 7275, 7276, 7277, 7278, 7280, 7282, 7283, 7284, 7285, 7286, 7287, 7288, 7289, 7290, 7291, 7292, 7293, 2]
+// Dependencies: [32, 1307, 7289, 7293, 7294, 7295, 7296, 7297, 7299, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7309, 7310, 7311, 7312, 2]
 
-// Module 7269 (create)
+// Module 7288 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
@@ -18,7 +18,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7270).AnnouncementModalVariant1Properties;
+            return callback(7289).AnnouncementModalVariant1Properties;
           }
     };
     items[2] = {
@@ -27,7 +27,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7274).PremiumTab;
+            return callback(7293).PremiumTab;
           }
     };
     items[3] = {
@@ -36,7 +36,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7275).MarketingPageBanner;
+            return callback(7294).MarketingPageBanner;
           }
     };
     items[4] = {
@@ -45,7 +45,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7276).PaymentModalBanner;
+            return callback(7295).PaymentModalBanner;
           }
     };
     items[5] = {
@@ -54,7 +54,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7277).MobileBottomSheet;
+            return callback(7296).MobileBottomSheet;
           }
     };
     items[6] = {
@@ -63,7 +63,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7278).GiftIcon;
+            return callback(7297).GiftIcon;
           }
     };
     items[7] = {
@@ -72,7 +72,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7280).GiftIconCoachmark;
+            return callback(7299).GiftIconCoachmark;
           }
     };
     items[8] = {
@@ -81,7 +81,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7282).GiftPlanSelectionCardBanner;
+            return callback(7301).GiftPlanSelectionCardBanner;
           }
     };
     items[9] = {
@@ -90,7 +90,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7283).GiftCustomizationBanner;
+            return callback(7302).GiftCustomizationBanner;
           }
     };
     items[10] = {
@@ -99,7 +99,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7284).BillingSettingsNitroGiftBanner;
+            return callback(7303).BillingSettingsNitroGiftBanner;
           }
     };
     items[11] = {
@@ -108,7 +108,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7285).GiftReminderNagbar;
+            return callback(7304).GiftReminderNagbar;
           }
     };
     items[12] = {
@@ -117,7 +117,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7286).GiftReminderCoachmark;
+            return callback(7305).GiftReminderCoachmark;
           }
     };
     items[13] = {
@@ -126,7 +126,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7287).PremiumTabTooltip;
+            return callback(7306).PremiumTabTooltip;
           }
     };
     items[14] = {
@@ -135,7 +135,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7288).PremiumTabPopover;
+            return callback(7307).PremiumTabPopover;
           }
     };
     items[15] = {
@@ -144,7 +144,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7289).Nagbar;
+            return callback(7308).Nagbar;
           }
     };
     items[16] = {
@@ -153,7 +153,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7290).PlanSelectCardBanner;
+            return callback(7309).PlanSelectCardBanner;
           }
     };
     items[17] = {
@@ -162,7 +162,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7291).BillingSettingsBanner;
+            return callback(7310).BillingSettingsBanner;
           }
     };
     obj = { no: 21, name: "shop_nagbar", kind: "message", oneof: "properties", T: null };
@@ -179,7 +179,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(7293).AdminEditorTestComponent;
+            return callback(7312).AdminEditorTestComponent;
           }
     };
     items[20] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };
@@ -207,9 +207,9 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos) {
   if (arg3 == null) {
     obj = self.create();
   }
-  if (pos.pos < pos.pos + arg1) {
-    [r10019, r10020] = callback(pos.tag(), 2);
-    const tmp3 = callback(pos.tag(), 2);
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    obj.isDefaultBase = pos.bool();
   }
   return obj;
 };
@@ -219,115 +219,115 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(properties, tag,
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
   }
   if ("announcementModalVariant1" === properties.properties.oneofKind) {
-    const AnnouncementModalVariant1Properties = require(7270) /* create */.AnnouncementModalVariant1Properties;
+    const AnnouncementModalVariant1Properties = require(7289) /* create */.AnnouncementModalVariant1Properties;
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
     const joined = AnnouncementModalVariant1Properties.internalBinaryWrite(properties.properties.announcementModalVariant1, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = AnnouncementModalVariant1Properties.internalBinaryWrite(properties.properties.announcementModalVariant1, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("premiumTab" === properties.properties.oneofKind) {
-    const PremiumTab = require(7274) /* create */.PremiumTab;
+    const PremiumTab = require(7293) /* create */.PremiumTab;
     const tagResult2 = tag.tag(4, require(1307).WireType.LengthDelimited);
     const joined1 = PremiumTab.internalBinaryWrite(properties.properties.premiumTab, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = PremiumTab.internalBinaryWrite(properties.properties.premiumTab, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("marketingPageBanner" === properties.properties.oneofKind) {
-    const MarketingPageBanner = require(7275) /* create */.MarketingPageBanner;
+    const MarketingPageBanner = require(7294) /* create */.MarketingPageBanner;
     const tagResult3 = tag.tag(5, require(1307).WireType.LengthDelimited);
     const joined2 = MarketingPageBanner.internalBinaryWrite(properties.properties.marketingPageBanner, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult2 = MarketingPageBanner.internalBinaryWrite(properties.properties.marketingPageBanner, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("paymentModalBanner" === properties.properties.oneofKind) {
-    const PaymentModalBanner = require(7276) /* create */.PaymentModalBanner;
+    const PaymentModalBanner = require(7295) /* create */.PaymentModalBanner;
     const tagResult4 = tag.tag(6, require(1307).WireType.LengthDelimited);
     const joined3 = PaymentModalBanner.internalBinaryWrite(properties.properties.paymentModalBanner, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult3 = PaymentModalBanner.internalBinaryWrite(properties.properties.paymentModalBanner, tag.tag(6, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("mobileBottomSheet" === properties.properties.oneofKind) {
-    const MobileBottomSheet = require(7277) /* create */.MobileBottomSheet;
+    const MobileBottomSheet = require(7296) /* create */.MobileBottomSheet;
     const tagResult5 = tag.tag(7, require(1307).WireType.LengthDelimited);
     const joined4 = MobileBottomSheet.internalBinaryWrite(properties.properties.mobileBottomSheet, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult4 = MobileBottomSheet.internalBinaryWrite(properties.properties.mobileBottomSheet, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("giftIcon" === properties.properties.oneofKind) {
-    const GiftIcon = require(7278) /* create */.GiftIcon;
+    const GiftIcon = require(7297) /* create */.GiftIcon;
     const tagResult6 = tag.tag(8, require(1307).WireType.LengthDelimited);
     const joined5 = GiftIcon.internalBinaryWrite(properties.properties.giftIcon, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult5 = GiftIcon.internalBinaryWrite(properties.properties.giftIcon, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("giftIconCoachmark" === properties.properties.oneofKind) {
-    const GiftIconCoachmark = require(7280) /* create */.GiftIconCoachmark;
+    const GiftIconCoachmark = require(7299) /* create */.GiftIconCoachmark;
     const tagResult7 = tag.tag(9, require(1307).WireType.LengthDelimited);
     const joined6 = GiftIconCoachmark.internalBinaryWrite(properties.properties.giftIconCoachmark, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult6 = GiftIconCoachmark.internalBinaryWrite(properties.properties.giftIconCoachmark, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("giftPlanSelectionCardBanner" === properties.properties.oneofKind) {
-    const GiftPlanSelectionCardBanner = require(7282) /* create */.GiftPlanSelectionCardBanner;
+    const GiftPlanSelectionCardBanner = require(7301) /* create */.GiftPlanSelectionCardBanner;
     const tagResult8 = tag.tag(10, require(1307).WireType.LengthDelimited);
     const joined7 = GiftPlanSelectionCardBanner.internalBinaryWrite(properties.properties.giftPlanSelectionCardBanner, tag.tag(10, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult7 = GiftPlanSelectionCardBanner.internalBinaryWrite(properties.properties.giftPlanSelectionCardBanner, tag.tag(10, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("giftCustomizationBanner" === properties.properties.oneofKind) {
-    const GiftCustomizationBanner = require(7283) /* create */.GiftCustomizationBanner;
+    const GiftCustomizationBanner = require(7302) /* create */.GiftCustomizationBanner;
     const tagResult9 = tag.tag(11, require(1307).WireType.LengthDelimited);
     const joined8 = GiftCustomizationBanner.internalBinaryWrite(properties.properties.giftCustomizationBanner, tag.tag(11, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult8 = GiftCustomizationBanner.internalBinaryWrite(properties.properties.giftCustomizationBanner, tag.tag(11, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("billingSettingsNitroGiftBanner" === properties.properties.oneofKind) {
-    const BillingSettingsNitroGiftBanner = require(7284) /* create */.BillingSettingsNitroGiftBanner;
+    const BillingSettingsNitroGiftBanner = require(7303) /* create */.BillingSettingsNitroGiftBanner;
     const tagResult10 = tag.tag(12, require(1307).WireType.LengthDelimited);
     const joined9 = BillingSettingsNitroGiftBanner.internalBinaryWrite(properties.properties.billingSettingsNitroGiftBanner, tag.tag(12, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult9 = BillingSettingsNitroGiftBanner.internalBinaryWrite(properties.properties.billingSettingsNitroGiftBanner, tag.tag(12, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("giftReminderNagbar" === properties.properties.oneofKind) {
-    const GiftReminderNagbar = require(7285) /* create */.GiftReminderNagbar;
+    const GiftReminderNagbar = require(7304) /* create */.GiftReminderNagbar;
     const tagResult11 = tag.tag(13, require(1307).WireType.LengthDelimited);
     const joined10 = GiftReminderNagbar.internalBinaryWrite(properties.properties.giftReminderNagbar, tag.tag(13, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult10 = GiftReminderNagbar.internalBinaryWrite(properties.properties.giftReminderNagbar, tag.tag(13, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("giftReminderCoachmark" === properties.properties.oneofKind) {
-    const GiftReminderCoachmark = require(7286) /* create */.GiftReminderCoachmark;
+    const GiftReminderCoachmark = require(7305) /* create */.GiftReminderCoachmark;
     const tagResult12 = tag.tag(14, require(1307).WireType.LengthDelimited);
     const joined11 = GiftReminderCoachmark.internalBinaryWrite(properties.properties.giftReminderCoachmark, tag.tag(14, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult11 = GiftReminderCoachmark.internalBinaryWrite(properties.properties.giftReminderCoachmark, tag.tag(14, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("premiumTabTooltip" === properties.properties.oneofKind) {
-    const PremiumTabTooltip = require(7287) /* create */.PremiumTabTooltip;
+    const PremiumTabTooltip = require(7306) /* create */.PremiumTabTooltip;
     const tagResult13 = tag.tag(15, require(1307).WireType.LengthDelimited);
     const joined12 = PremiumTabTooltip.internalBinaryWrite(properties.properties.premiumTabTooltip, tag.tag(15, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult12 = PremiumTabTooltip.internalBinaryWrite(properties.properties.premiumTabTooltip, tag.tag(15, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("premiumTabPopover" === properties.properties.oneofKind) {
-    const PremiumTabPopover = require(7288) /* create */.PremiumTabPopover;
+    const PremiumTabPopover = require(7307) /* create */.PremiumTabPopover;
     const tagResult14 = tag.tag(16, require(1307).WireType.LengthDelimited);
     const joined13 = PremiumTabPopover.internalBinaryWrite(properties.properties.premiumTabPopover, tag.tag(16, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult13 = PremiumTabPopover.internalBinaryWrite(properties.properties.premiumTabPopover, tag.tag(16, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("nagbar" === properties.properties.oneofKind) {
-    const Nagbar = require(7289) /* create */.Nagbar;
+    const Nagbar = require(7308) /* create */.Nagbar;
     const tagResult15 = tag.tag(17, require(1307).WireType.LengthDelimited);
     const joined14 = Nagbar.internalBinaryWrite(properties.properties.nagbar, tag.tag(17, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult14 = Nagbar.internalBinaryWrite(properties.properties.nagbar, tag.tag(17, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("planSelectCardBanner" === properties.properties.oneofKind) {
-    const PlanSelectCardBanner = require(7290) /* create */.PlanSelectCardBanner;
+    const PlanSelectCardBanner = require(7309) /* create */.PlanSelectCardBanner;
     const tagResult16 = tag.tag(19, require(1307).WireType.LengthDelimited);
     const joined15 = PlanSelectCardBanner.internalBinaryWrite(properties.properties.planSelectCardBanner, tag.tag(19, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult15 = PlanSelectCardBanner.internalBinaryWrite(properties.properties.planSelectCardBanner, tag.tag(19, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("billingSettingsBanner" === properties.properties.oneofKind) {
-    const BillingSettingsBanner = require(7291) /* create */.BillingSettingsBanner;
+    const BillingSettingsBanner = require(7310) /* create */.BillingSettingsBanner;
     const tagResult17 = tag.tag(20, require(1307).WireType.LengthDelimited);
     const joined16 = BillingSettingsBanner.internalBinaryWrite(properties.properties.billingSettingsBanner, tag.tag(20, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult16 = BillingSettingsBanner.internalBinaryWrite(properties.properties.billingSettingsBanner, tag.tag(20, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("shopNagbar" === properties.properties.oneofKind) {
-    const ShopNagbar = require(7292) /* create */.ShopNagbar;
+    const ShopNagbar = require(7311) /* create */.ShopNagbar;
     const tagResult18 = tag.tag(21, require(1307).WireType.LengthDelimited);
     const joined17 = ShopNagbar.internalBinaryWrite(properties.properties.shopNagbar, tag.tag(21, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult17 = ShopNagbar.internalBinaryWrite(properties.properties.shopNagbar, tag.tag(21, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if ("adminEditorTestComponent" === properties.properties.oneofKind) {
-    const AdminEditorTestComponent = require(7293) /* create */.AdminEditorTestComponent;
+    const AdminEditorTestComponent = require(7312) /* create */.AdminEditorTestComponent;
     const tagResult19 = tag.tag(22, require(1307).WireType.LengthDelimited);
     const joined18 = AdminEditorTestComponent.internalBinaryWrite(properties.properties.adminEditorTestComponent, tag.tag(22, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult18 = AdminEditorTestComponent.internalBinaryWrite(properties.properties.adminEditorTestComponent, tag.tag(22, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);

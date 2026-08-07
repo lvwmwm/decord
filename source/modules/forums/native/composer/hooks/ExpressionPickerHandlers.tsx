@@ -1,10 +1,10 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9847
+// Function ID: 9848
 // Name: usePressEmojiHandler
 // Dependencies: [19, 2]
 // Exports: usePressEmojiHandler, usePressGIFHandler
 
-// Module 9831 (usePressEmojiHandler)
+// Module 9847 (usePressEmojiHandler)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/forums/native/composer/hooks/ExpressionPickerHandlers.tsx");

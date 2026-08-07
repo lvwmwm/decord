@@ -1,10 +1,10 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10153
+// Function ID: 10154
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 10138, 687, 589, 10139, 2]
+// Dependencies: [32, 19, 10154, 687, 589, 10155, 2]
 // Exports: default
 
-// Module 10137 (useChannelFollowerStats)
+// Module 10153 (useChannelFollowerStats)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getFollowerStatsForChannel from "getFollowerStatsForChannel";
@@ -26,8 +26,8 @@ export default function useChannelFollowerStats(arg0) {
     if (null == stateFromStores) {
       if (!first) {
         dependencyMap(true);
-        const channelFollowerStats = first(10139).fetchChannelFollowerStats(closure_0);
-        const obj = first(10139);
+        const channelFollowerStats = first(10155).fetchChannelFollowerStats(closure_0);
+        const obj = first(10155);
       }
     } else {
       const _Date = Date;

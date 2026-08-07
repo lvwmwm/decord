@@ -1,9 +1,9 @@
-// Module ID: 4106
-// Function ID: 4107
+// Module ID: 4123
+// Function ID: 4124
 // Name: matchPath
-// Dependencies: [2, 4107]
+// Dependencies: [2, 4124]
 
-// Module 4106 (matchPath)
+// Module 4123 (matchPath)
 const result = require("set").fileFinishedImporting("modules/routing/matchPathCompat.tsx");
 
 export const matchPath = require("_extends").matchPath;

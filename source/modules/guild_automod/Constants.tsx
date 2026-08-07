@@ -1,9 +1,9 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11195
+// Function ID: 11196
 // Name: AutomodEventType
-// Dependencies: [11181, 2, 11182, 11183]
+// Dependencies: [11196, 2, 11197, 11198]
 
-// Module 11180 (AutomodEventType)
+// Module 11195 (AutomodEventType)
 const items = [require("AutomodTriggerType").AutomodTriggerType.USER_PROFILE, require("AutomodTriggerType").AutomodTriggerType.SERVER_POLICY, require("AutomodTriggerType").AutomodTriggerType.MENTION_SPAM, require("AutomodTriggerType").AutomodTriggerType.ML_SPAM, require("AutomodTriggerType").AutomodTriggerType.DEFAULT_KEYWORD_LIST, require("AutomodTriggerType").AutomodTriggerType.KEYWORD];
 const result = require("AutomodEventType").fileFinishedImporting("modules/guild_automod/Constants.tsx");
 

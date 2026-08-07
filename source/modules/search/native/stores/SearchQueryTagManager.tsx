@@ -1,9 +1,9 @@
-// Module ID: 11642
-// Function ID: 11643
+// Module ID: 11657
+// Function ID: 11658
 // Name: isComplete
-// Dependencies: [8320, 8319, 2]
+// Dependencies: [8337, 8336, 2]
 
-// Module 11642 (isComplete)
+// Module 11657 (isComplete)
 import { SearchQueryTagTypes } from "MessageEmbedTypes";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 

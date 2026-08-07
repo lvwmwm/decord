@@ -1,10 +1,10 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15393
+// Function ID: 15394
 // Name: componentWillEnter
-// Dependencies: [19, 17, 4277, 676, 21, 4285, 5219, 712, 4128, 3996, 4254, 4255, 1297, 1236, 589, 10209, 2]
+// Dependencies: [19, 17, 4294, 676, 21, 4302, 5235, 712, 4145, 4013, 4271, 4272, 1297, 1236, 589, 10225, 2]
 // Exports: default
 
-// Module 15369 (componentWillEnter)
+// Module 15393 (componentWillEnter)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -212,5 +212,5 @@ export default function UnreadBars(contentInset) {
   }
   items1[1] = tmp6;
   obj[1] = items1;
-  return closure_9(require(10209) /* _toPropertyKey */.TransitionGroup, obj);
+  return closure_9(require(10225) /* _toPropertyKey */.TransitionGroup, obj);
 };

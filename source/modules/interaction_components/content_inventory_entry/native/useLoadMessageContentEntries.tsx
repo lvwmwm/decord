@@ -1,10 +1,10 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10932
+// Function ID: 10933
 // Name: fetchColors
-// Dependencies: [32, 5, 19, 4322, 4310, 10918, 8232, 5650, 8158, 38, 8164, 1935, 8156, 5839, 2]
+// Dependencies: [32, 5, 19, 4339, 4327, 10933, 8249, 5669, 8175, 38, 8181, 1935, 8173, 5858, 2]
 // Exports: default
 
-// Module 10917 (fetchColors)
+// Module 10932 (fetchColors)
 import _slicedToArray from "_slicedToArray";
 import areArraysShallowlyEqual from "areArraysShallowlyEqual";
 import noop from "noop";
@@ -416,7 +416,7 @@ function _fetchTopArtistContentParts() {
             } else if ("media" in lib.extra) {
               const image_url = lib.extra.media.image_url;
               v0(38)(null != image_url, "missing image url for top artist");
-              let obj1 = lib(8158);
+              let obj1 = lib(8175);
               dependencyMap = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
@@ -516,7 +516,7 @@ function _loadContentEntryParts() {
                       if (outer1_2.type === arr(outer1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
                         function _fetchEntryParts() {
                           const self = this;
-                          const tmp = outer1_4(/* F119843 */ function() { ... });
+                          const tmp = outer1_4(/* F119933 */ function() { ... });
                           const _fetchEntryParts = tmp;
                           const apply = tmp.apply;
                           if (typeof apply === "unknown") {
@@ -736,7 +736,7 @@ function isMessageRenderable(arg0) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
     if (nextResult.type === require(1935) /* PermissionOverwriteType */.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8156);
+      let tmp3Result = tmp3(8173);
       let obj = { component: null, message: null };
       obj = { contentInventoryEntry: null };
       let tmp5 = nextResult;
@@ -772,7 +772,7 @@ export default function useLoadMessageContentEntries(arg0) {
   const tmp7 = first(first1.useState(new Set()), 2);
   first1 = tmp7[0];
   let addApplication = tmp7[1];
-  let obj = _require(8158);
+  let obj = _require(8175);
   _require = undefined;
   const colorStore = obj.useColorStore((palette) => palette.palette);
   _require = callback((arg0, arg1) => {

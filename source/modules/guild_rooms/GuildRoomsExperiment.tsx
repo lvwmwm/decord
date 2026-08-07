@@ -1,9 +1,9 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16359
+// Function ID: 16360
 // Name: experiment
-// Dependencies: [4197, 2]
+// Dependencies: [4214, 2]
 
-// Module 16333 (experiment)
+// Module 16359 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 2, label: "Enable Guild Rooms without Interactions", config: { enabled: true, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 3, label: "Enable Guild Rooms with Room Variants", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }, { id: 4, label: "Enable Guild Rooms without Postures", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: false } }];

@@ -1,9 +1,9 @@
-// Module ID: 3914
-// Function ID: 3915
+// Module ID: 3931
+// Function ID: 3932
 // Name: storeThread
-// Dependencies: [1376, 1218, 3915, 12, 589, 709, 2]
+// Dependencies: [1376, 1218, 3932, 12, 589, 709, 2]
 
-// Module 3914 (storeThread)
+// Module 3931 (storeThread)
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";

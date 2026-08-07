@@ -1,10 +1,10 @@
-// Module ID: 5788
-// Function ID: 5789
+// Module ID: 5807
+// Function ID: 5808
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1962, 5221, 1372, 1964, 1891, 676, 1379, 5789, 5791, 5800, 5769, 5803, 5805, 5765, 5806, 5807, 4196, 5808, 5767, 1351, 5850, 4295, 4476, 2]
+// Dependencies: [5, 1962, 5237, 1372, 1964, 1891, 676, 1379, 5808, 5810, 5819, 5788, 5822, 5824, 5784, 5825, 5826, 4213, 5827, 5786, 1351, 5869, 4312, 4493, 2]
 // Exports: default
 
-// Module 5788 (_isAccessibleChannelOrThreadPath)
+// Module 5807 (_isAccessibleChannelOrThreadPath)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import isSubscriptionGated from "isSubscriptionGated";
 import shouldShowOnboarding from "shouldShowOnboarding";

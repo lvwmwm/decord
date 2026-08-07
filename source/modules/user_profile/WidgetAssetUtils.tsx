@@ -1,10 +1,10 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12388
+// Function ID: 12389
 // Name: getWidgetAssetURL
 // Dependencies: [676, 2]
 // Exports: getWidgetAssetURL
 
-// Module 12373 (getWidgetAssetURL)
+// Module 12388 (getWidgetAssetURL)
 import { DEFAULT_CDN_HOST } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");

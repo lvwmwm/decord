@@ -1,9 +1,9 @@
-// Module ID: 14011
-// Function ID: 14012
+// Module ID: 14025
+// Function ID: 14026
 // Name: radio
-// Dependencies: [8005, 3957, 12386, 14012, 4253, 14013, 1988, 1236, 1306, 10364, 2]
+// Dependencies: [8022, 3974, 12401, 14026, 4270, 14027, 1988, 1236, 1306, 10380, 2]
 
-// Module 14011 (radio)
+// Module 14025 (radio)
 import createToggle from "createToggle";
 
 const radio = createToggle.createRadio({
@@ -13,25 +13,25 @@ const radio = createToggle.createRadio({
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue() {
-    const ProfileVisibility = require(3957) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3974) /* explicitContentFromProto */.ProfileVisibility;
     return ProfileVisibility.useSetting();
   },
   onValueChange(arg0) {
     const NumberResult = Number(arg0);
-    const ProfileVisibility = require(3957) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3974) /* explicitContentFromProto */.ProfileVisibility;
     const setting = ProfileVisibility.getSetting();
-    const ProfileVisibility2 = require(3957) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility2 = require(3974) /* explicitContentFromProto */.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    let obj = require(12386) /* apexExperiment */;
+    let obj = require(12401) /* apexExperiment */;
     if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const profileToActivityUpsell = tmp2(14012).computeProfileToActivityUpsell(setting, NumberResult);
+      const profileToActivityUpsell = tmp2(14026).computeProfileToActivityUpsell(setting, NumberResult);
       if (null != profileToActivityUpsell) {
         obj = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
         ({ direction: obj4[0], affectedGuildIds: obj4[1], settingName: obj4[2], mappedActivityValue: obj4[3] } = profileToActivityUpsell);
-        importDefault(4253).openLazy(tmp2(1988)(14013, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
-        const obj3 = importDefault(4253);
+        importDefault(4270).openLazy(tmp2(1988)(14027, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
+        const obj3 = importDefault(4270);
       }
-      const tmp2Result = tmp2(14012);
+      const tmp2Result = tmp2(14026);
     }
   },
   useOptions() {
@@ -59,7 +59,7 @@ const radio = createToggle.createRadio({
     return items;
   },
   usePredicate() {
-    return require(12386) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
+    return require(12401) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 });
 let obj = {
@@ -69,25 +69,25 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.DATA_AND_PRIVACY,
   useValue() {
-    const ProfileVisibility = require(3957) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3974) /* explicitContentFromProto */.ProfileVisibility;
     return ProfileVisibility.useSetting();
   },
   onValueChange(arg0) {
     const NumberResult = Number(arg0);
-    const ProfileVisibility = require(3957) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility = require(3974) /* explicitContentFromProto */.ProfileVisibility;
     const setting = ProfileVisibility.getSetting();
-    const ProfileVisibility2 = require(3957) /* explicitContentFromProto */.ProfileVisibility;
+    const ProfileVisibility2 = require(3974) /* explicitContentFromProto */.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    let obj = require(12386) /* apexExperiment */;
+    let obj = require(12401) /* apexExperiment */;
     if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const profileToActivityUpsell = tmp2(14012).computeProfileToActivityUpsell(setting, NumberResult);
+      const profileToActivityUpsell = tmp2(14026).computeProfileToActivityUpsell(setting, NumberResult);
       if (null != profileToActivityUpsell) {
         obj = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
         ({ direction: obj4[0], affectedGuildIds: obj4[1], settingName: obj4[2], mappedActivityValue: obj4[3] } = profileToActivityUpsell);
-        importDefault(4253).openLazy(tmp2(1988)(14013, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
-        const obj3 = importDefault(4253);
+        importDefault(4270).openLazy(tmp2(1988)(14027, dependencyMap.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj);
+        const obj3 = importDefault(4270);
       }
-      const tmp2Result = tmp2(14012);
+      const tmp2Result = tmp2(14026);
     }
   },
   useOptions() {
@@ -115,7 +115,7 @@ let obj = {
     return items;
   },
   usePredicate() {
-    return require(12386) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
+    return require(12401) /* apexExperiment */.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 };
 const result = require("apexExperiment").fileFinishedImporting("modules/user_settings/defs/native/ProfilePrivacySetting.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14150
+// Function ID: 14151
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 8005, 3957, 709, 10364, 1236, 2]
+// Dependencies: [5, 8022, 3974, 709, 10380, 1236, 2]
 
-// Module 14136 (_updateClipsAllowVoiceRecording)
+// Module 14150 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale";
 import createToggle from "createToggle";
 
@@ -42,7 +42,7 @@ function _updateClipsAllowVoiceRecording() {
               return obj;
             } else {
               const callback2 = tmp4;
-              const ClipsAllowVoiceRecording = callback(3957).ClipsAllowVoiceRecording;
+              const ClipsAllowVoiceRecording = callback(3974).ClipsAllowVoiceRecording;
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };

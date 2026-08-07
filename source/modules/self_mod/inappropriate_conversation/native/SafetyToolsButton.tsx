@@ -1,10 +1,10 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12487
+// Function ID: 12488
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4285, 712, 10293, 10295, 1236, 10269, 4711, 10270, 10290, 8577, 12453, 10149, 2]
+// Dependencies: [32, 19, 17, 21, 4302, 712, 10309, 10311, 1236, 10285, 4728, 10286, 10306, 8594, 12468, 10165, 2]
 // Exports: SafetyToolsButton
 
-// Module 12472 (SafetyToolsButton)
+// Module 12487 (SafetyToolsButton)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

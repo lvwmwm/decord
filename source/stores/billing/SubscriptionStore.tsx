@@ -1,10 +1,10 @@
-// Module ID: 3936
-// Function ID: 3937
+// Module ID: 3953
+// Function ID: 3954
 // Name: reset
-// Dependencies: [1904, 3931, 3937, 1218, 676, 589, 709, 2]
+// Dependencies: [1904, 3948, 3954, 1218, 676, 589, 709, 2]
 // Exports: getSubscriptionOfType
 
-// Module 3936 (reset)
+// Module 3953 (reset)
 import setPremiumTypeActual from "setPremiumTypeActual";
 import { isNoneSubscription } from "createFromServer";
 import { SubscriptionRecord } from "createSubscriptionItemFromServer";

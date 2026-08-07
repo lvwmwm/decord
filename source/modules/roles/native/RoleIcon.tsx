@@ -1,10 +1,10 @@
-// Module ID: 5675
-// Function ID: 5676
+// Module ID: 5694
+// Function ID: 5695
 // Name: RoleIcon
 // Dependencies: [19, 17, 21, 1297, 2]
 // Exports: default
 
-// Module 5675 (RoleIcon)
+// Module 5694 (RoleIcon)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

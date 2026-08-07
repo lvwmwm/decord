@@ -1,10 +1,10 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12648
+// Function ID: 12649
 // Name: MAX_REFERRALS_SENT
-// Dependencies: [19, 1903, 6836, 589, 8232, 2]
+// Dependencies: [19, 1903, 6855, 589, 8249, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12633 (MAX_REFERRALS_SENT)
+// Module 12648 (MAX_REFERRALS_SENT)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import emitChanges from "emitChanges";

@@ -1,9 +1,9 @@
-// Module ID: 4395
-// Function ID: 4396
+// Module ID: 4412
+// Function ID: 4413
 // Name: logger
-// Dependencies: [4345, 4, 4381, 2]
+// Dependencies: [4362, 4, 4398, 2]
 
-// Module 4395 (logger)
+// Module 4412 (logger)
 import DesktopSources from "DesktopSources";
 
 let c3;

@@ -1,10 +1,10 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15468
+// Function ID: 15469
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 4285, 712, 4281, 1236, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4298, 1236, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15444 (ForYouRecentActivitySectionHeader)
+// Module 15468 (ForYouRecentActivitySectionHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,6 +25,6 @@ export const ForYouRecentActivitySectionHeader = function ForYouRecentActivitySe
   obj = { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.yM9Krm);
-  obj[1] = jsx(require(4281) /* Text */.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null });
+  obj[1] = jsx(require(4298) /* Text */.Text, { style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: null });
   return <View style={tmp.textHeader} color="text-muted" variant="text-sm/semibold" accessibilityRole="header">{null}</View>;
 };

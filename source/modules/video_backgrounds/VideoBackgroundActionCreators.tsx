@@ -1,10 +1,10 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9103
+// Function ID: 9104
 // Name: _fetchVideoFilterAssets
-// Dependencies: [5, 4332, 1903, 676, 530, 709, 9087, 9088, 9085, 1355, 2]
+// Dependencies: [5, 4349, 1903, 676, 530, 709, 9104, 9105, 9102, 1355, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 9086 (_fetchVideoFilterAssets)
+// Module 9103 (_fetchVideoFilterAssets)
 import dispatcher from "dispatcher";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -163,7 +163,7 @@ function _uploadVideoFilterAsset() {
           } else if (1 === tmp7) {
             constants = 0;
             callback = mergeGuildAvatar;
-            const tmp24 = new callback(9087)(callback);
+            const tmp24 = new callback(9104)(callback);
             throw tmp24;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -261,9 +261,9 @@ function _deleteVideoFilterAsset() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            lib2 = lib(9088).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
-            const obj7 = lib(9088);
-            let result = lib(9085).isCustomBackgroundOption(lib2);
+            lib2 = lib(9105).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
+            const obj7 = lib(9105);
+            let result = lib(9102).isCustomBackgroundOption(lib2);
             if (result) {
               result = lib2.id === lib.id;
             }
@@ -341,7 +341,7 @@ function _saveLastUsedBackgroundOption() {
             obj3.dispatch(obj5);
             c4 = 3;
           }
-          obj12 = lib(9085);
+          obj12 = lib(9102);
         }
       } else if (arg0 === 1) {
         c4 = 3;

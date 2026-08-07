@@ -1,9 +1,9 @@
-// Module ID: 8773
-// Function ID: 8774
+// Module ID: 8790
+// Function ID: 8791
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 8773 (enforcing)
+// Module 8790 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativePortalFromNativeModule");

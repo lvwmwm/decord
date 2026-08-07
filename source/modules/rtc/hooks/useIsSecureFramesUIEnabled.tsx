@@ -1,10 +1,10 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9168
+// Function ID: 9169
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [1372, 4356, 9134, 589, 2]
+// Dependencies: [1372, 4373, 9151, 589, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 9151 (useIsSecureFramesUIEnabled)
+// Module 9168 (useIsSecureFramesUIEnabled)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import { END_TO_END_ENCRYPTION_DISABLED as closure_4 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY";

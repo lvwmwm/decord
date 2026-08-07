@@ -1,9 +1,9 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 15640
+// Function ID: 15641
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 5820, 11655, 15617, 11629, 8320, 11643, 676, 21, 4827, 11653, 1236, 4281, 9541, 15618, 4295, 11650, 11630, 589, 1481, 15621, 11628, 13982, 7720, 7722, 15622, 15623, 15626, 2]
+// Dependencies: [32, 5, 19, 5839, 11670, 15641, 11644, 8337, 11658, 676, 21, 4844, 11668, 1236, 4298, 9557, 15642, 4312, 11665, 11645, 589, 1481, 15645, 11643, 13996, 7737, 7739, 15646, 15647, 15650, 2]
 
-// Module 15616 (ClearAllHistory)
+// Module 15640 (ClearAllHistory)
 import _slicedToArray from "_slicedToArray";
 import deserialize from "deserialize";
 import importAllResult from "SearchTokenTypes";
@@ -37,8 +37,8 @@ function ClearAllHistory(searchContext) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = searchContext(1236).intl;
   obj[2] = intl2.string(searchContext(1236).t.LFTAUp);
-  obj[4] = jsx(searchContext(4281).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(4827).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(searchContext(4298).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(4844).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null };
@@ -47,8 +47,8 @@ function ViewAll(onJumpToMedia) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.Ofpgwh);
-  obj[4] = jsx(require(4281) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(require(4827) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(require(4298) /* Text */.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(require(4844) /* PressableBase */.PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 let c5 = importAllResult;
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: unpackModuleId, SearchListItemTypes: closure_12, SearchTabs: map1 } = MessageEmbedTypes);

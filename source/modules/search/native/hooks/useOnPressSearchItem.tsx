@@ -1,10 +1,10 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15642
+// Function ID: 15643
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1372, 11629, 8320, 15619, 8319, 676, 1379, 11628, 11653, 1467, 3984, 1236, 8855, 3981, 1480, 15597, 15620, 1231, 8767, 4295, 4293, 7696, 1988, 4494, 4498, 12582, 4726, 4771, 8335, 1222, 11650, 2]
+// Dependencies: [5, 19, 1372, 11644, 8337, 15643, 8336, 676, 1379, 11643, 11668, 1467, 4001, 1236, 8872, 3998, 1480, 15621, 15644, 1231, 8784, 4312, 4310, 7713, 1988, 4511, 4515, 12597, 4743, 4788, 8352, 1222, 11665, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15618 (handleVoiceOrStageChannelConnectPress)
+// Module 15642 (handleVoiceOrStageChannelConnectPress)
 import SearchNavigatorScreens from "SearchNavigatorScreens";
 import ComponentDispatcher from "ComponentDispatcher";
 import ensureGuildLoaded from "ensureGuildLoaded";

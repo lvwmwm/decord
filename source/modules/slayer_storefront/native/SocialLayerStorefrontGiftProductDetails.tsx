@@ -1,10 +1,10 @@
-// Module ID: 10017
-// Function ID: 10018
+// Module ID: 10033
+// Function ID: 10034
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 676, 21, 4285, 712, 5655, 10010, 1416, 9316, 4281, 2]
+// Dependencies: [19, 17, 676, 21, 4302, 712, 5674, 10026, 1416, 9333, 4298, 2]
 // Exports: default
 
-// Module 10017 (SocialLayerStorefrontGiftProductDetails)
+// Module 10033 (SocialLayerStorefrontGiftProductDetails)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
@@ -34,9 +34,9 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   let getOrFetchApplication;
   const tmp = createCacheKey();
-  let obj = getOrFetchApplication(5655);
+  let obj = getOrFetchApplication(5674);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(10010);
+  let obj1 = getOrFetchApplication(10026);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
@@ -51,7 +51,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     return applicationIconURL;
   }, items);
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(importDefault(9316), { sku, size: 55 }), , ];
+  const items1 = [callback(importDefault(9333), { sku, size: 55 }), , ];
   obj1 = { style: tmp.text, children: null };
   let tmp6Result = null != getOrFetchApplication;
   if (tmp6Result) {
@@ -69,18 +69,18 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     const items2 = [tmp8Result, ];
     const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj5[2] = getOrFetchApplication.name;
-    items2[1] = tmp8(tmp2(4281).Text, obj5);
+    items2[1] = tmp8(tmp2(4298).Text, obj5);
     obj2[1] = items2;
     tmp6Result = tmp6(tmp7, obj2);
   }
-  const items3 = [tmp6Result, callback(getOrFetchApplication(4281).Text, { variant: "text-md/semibold", children: sku.name })];
+  const items3 = [tmp6Result, callback(getOrFetchApplication(4298).Text, { variant: "text-md/semibold", children: sku.name })];
   obj1[1] = items3;
   items1[1] = closure_8(closure_5, obj1);
   tmp8Result = null != userPrice;
   if (tmp8Result) {
     const obj7 = { variant: "text-md/semibold", children: null };
     obj7[1] = userPrice;
-    tmp8Result = tmp8(tmp2(4281).Text, obj7);
+    tmp8Result = tmp8(tmp2(4298).Text, obj7);
   }
   items1[2] = tmp8Result;
   obj[1] = items1;

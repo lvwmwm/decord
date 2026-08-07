@@ -1,9 +1,9 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8266
+// Function ID: 8267
 // Name: NativeShadowType
 // Dependencies: [2]
 
-// Module 8249 (NativeShadowType)
+// Module 8266 (NativeShadowType)
 const result = require("set").fileFinishedImporting("modules/polls/chat/PollMessageChatDataTypes.tsx");
 
 export const NativeShadowType = { NONE: 0, [0]: "NONE", LOW: 1, [1]: "LOW", HIGH: 2, [2]: "HIGH" };

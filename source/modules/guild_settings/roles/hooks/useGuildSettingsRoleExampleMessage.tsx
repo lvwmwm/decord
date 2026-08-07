@@ -1,10 +1,10 @@
-// Module ID: 16610
-// Function ID: 16611
+// Module ID: 16630
+// Function ID: 16631
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1911, 676, 4504, 7133, 1236, 8232, 12486, 2]
+// Dependencies: [19, 1911, 676, 4521, 7152, 1236, 8249, 12501, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 16610 (useGuildSettingsRoleExampleMessage)
+// Module 16630 (useGuildSettingsRoleExampleMessage)
 import noop from "noop";
 import createdAt from "createdAt";
 import { MessageStates } from "ME";

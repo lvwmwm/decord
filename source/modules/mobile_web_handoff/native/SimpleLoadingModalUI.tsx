@@ -1,10 +1,10 @@
-// Module ID: 5854
-// Function ID: 5855
+// Module ID: 5873
+// Function ID: 5874
 // Name: SimpleLoadingModal
-// Dependencies: [19, 17, 21, 4285, 5744, 2]
+// Dependencies: [19, 17, 21, 4302, 5763, 2]
 // Exports: default
 
-// Module 5854 (SimpleLoadingModal)
+// Module 5873 (SimpleLoadingModal)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -99,7 +99,7 @@ export default function SimpleLoadingModal(operation) {
     },
     children: null
   };
-  obj = { style: callback().modalBackground, children: jsx(operation(5744).ActivityIndicator, {}) };
-  obj[4] = <closure_4 style={callback().modalBackground}>{jsx(operation(5744).ActivityIndicator, {})}</closure_4>;
-  return <cancelable style={callback().modalBackground}>{jsx(operation(5744).ActivityIndicator, {})}</cancelable>;
+  obj = { style: callback().modalBackground, children: jsx(operation(5763).ActivityIndicator, {}) };
+  obj[4] = <closure_4 style={callback().modalBackground}>{jsx(operation(5763).ActivityIndicator, {})}</closure_4>;
+  return <cancelable style={callback().modalBackground}>{jsx(operation(5763).ActivityIndicator, {})}</cancelable>;
 };

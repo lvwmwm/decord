@@ -1,14 +1,14 @@
-// Module ID: 9487
-// Function ID: 9488
+// Module ID: 9504
+// Function ID: 9505
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 6933, 9340, 2]
+// Dependencies: [19, 6952, 9357, 2]
 // Exports: useVirtualCurrencyData
 
-// Module 9487 (useVirtualCurrencyData)
+// Module 9504 (useVirtualCurrencyData)
 import noop from "noop";
 
 const require = arg1;
-const result = require("module_9340").fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
+const result = require("module_9357").fileFinishedImporting("modules/collectibles/native/hooks/useVirtualCurrencyData.tsx");
 
 export const useVirtualCurrencyData = function useVirtualCurrencyData(product, canUseShopDiscountsResult) {
   let obj = productOrbPrice(balance[1]);

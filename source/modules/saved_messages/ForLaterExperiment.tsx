@@ -1,10 +1,10 @@
-// Module ID: 8298
-// Function ID: 8299
+// Module ID: 8315
+// Function ID: 8316
 // Name: ForLaterFreemiumConfig
-// Dependencies: [8295, 1452, 38, 8299, 2]
+// Dependencies: [8312, 1452, 38, 8316, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, isForLaterLimitUpgradable, useForLaterLimit, useHasForLaterAccess, useIsForLaterExperimentOn, useIsForLaterLimitUpgradable
 
-// Module 8298 (ForLaterFreemiumConfig)
+// Module 8315 (ForLaterFreemiumConfig)
 import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX";
 import ApexExperiment from "ApexExperiment";
 import ApexExperiment from "ApexExperiment";
@@ -93,7 +93,7 @@ export const useHasForLaterAccess = function useHasForLaterAccess(ForLaterOpenAc
   if (!enabled) {
     let enabled1 = store.useConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(8299)();
+      enabled1 = importDefault(8316)();
     }
     enabled = enabled1;
   }
@@ -106,7 +106,7 @@ export const hasForLaterAccess = function hasForLaterAccess(addOrUpdateSavedMess
   if (!enabled) {
     let enabled1 = store.getConfig(obj).enabled;
     if (enabled1) {
-      enabled1 = importDefault(8299)();
+      enabled1 = importDefault(8316)();
     }
     enabled = enabled1;
   }
@@ -116,7 +116,7 @@ export const getForLaterLimit = function getForLaterLimit(addOrUpdateSavedMessag
   let obj = { location: addOrUpdateSavedMessage };
   const config = store2.getConfig(obj);
   obj = { location: addOrUpdateSavedMessage };
-  const tmp2 = importDefault(8299)();
+  const tmp2 = importDefault(8316)();
   if (!config.enabled) {
     let num = 0;
     if (store.getConfig(obj).enabled) {
@@ -130,7 +130,7 @@ export const useForLaterLimit = function useForLaterLimit(ForLaterScreen, arg1) 
   const config = store2.useConfig(obj);
   obj = { location: ForLaterScreen };
   const config1 = store.useConfig(obj);
-  const hasForLaterPremiumType = require(8299) /* hasForLaterPremiumType */.useHasForLaterPremiumType();
+  const hasForLaterPremiumType = require(8316) /* hasForLaterPremiumType */.useHasForLaterPremiumType();
   if (!config.enabled) {
     let num = 0;
     if (tmp4) {
@@ -142,7 +142,7 @@ export const useForLaterLimit = function useForLaterLimit(ForLaterScreen, arg1) 
 export const isForLaterLimitUpgradable = function isForLaterLimitUpgradable(addOrUpdateSavedMessage) {
   let enabled = store2.getConfig({ location: addOrUpdateSavedMessage }).enabled;
   if (enabled) {
-    enabled = !importDefault(8299)();
+    enabled = !importDefault(8316)();
   }
   return enabled;
 };

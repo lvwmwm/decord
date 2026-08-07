@@ -1,9 +1,9 @@
-// Module ID: 6646
-// Function ID: 6647
+// Module ID: 6665
+// Function ID: 6666
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6646 (metadata)
+// Module 6665 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShareNitroSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/6fe5071af24f10950d49170dbd8e7d2b8c5204b032fa9ffe3ed5c7283b5e1185.png";

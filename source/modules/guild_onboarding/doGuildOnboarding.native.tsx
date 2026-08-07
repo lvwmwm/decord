@@ -1,10 +1,10 @@
-// Module ID: 5220
-// Function ID: 5221
+// Module ID: 5236
+// Function ID: 5237
 // Name: getBaseAnimationData
-// Dependencies: [5, 17, 4101, 5221, 5222, 676, 5223, 4253, 4490, 5215, 5224, 1416, 1877, 5228, 5229, 5230, 5247, 1988, 1222, 2]
+// Dependencies: [5, 17, 4118, 5237, 5238, 676, 5239, 4270, 4507, 5231, 5240, 1416, 1877, 5244, 5245, 5246, 5263, 1988, 1222, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 5220 (getBaseAnimationData)
+// Module 5236 (getBaseAnimationData)
 import closure_3 from "ME";
 import { NativeModules } from "asyncRequireImpl";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -16,7 +16,7 @@ let c9;
 let metroImportAll;
 const require = arg1;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(require(5223)));
+  return JSON.parse(JSON.stringify(require(5239)));
 }
 function _doGuildOnboarding() {
   let self = this;
@@ -70,14 +70,14 @@ function _doGuildOnboarding() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj8 = lib(4253);
+              let obj8 = lib(4270);
               obj8.hideActionSheet();
-              lib(4490).popAll();
-              const obj10 = lib(4490);
+              lib(4507).popAll();
+              const obj10 = lib(4507);
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = guildId(5215).waitForGuild(closure_0);
+              obj2[0] = guildId(5231).waitForGuild(closure_0);
               return obj2;
             }
           } else {
@@ -99,7 +99,7 @@ function _doGuildOnboarding() {
                   hasItem = features.has(constants.COMMUNITY);
                 }
                 if (hasItem) {
-                  let obj5 = guildId(5224);
+                  let obj5 = guildId(5240);
                   c5 = 3;
                   c6 = 1;
                   const obj4 = { value: null, done: false };
@@ -269,7 +269,7 @@ function _fetchLandingAsset() {
           } else {
             dependencyMap = arg1;
             const _HermesInternal = HermesInternal;
-            const tmp12 = callback(5228);
+            const tmp12 = callback(5244);
             c3 = 0;
             c5 = 3;
             obj = { value: null, done: true };
@@ -298,7 +298,7 @@ function _fetchLandingAsset() {
 }
 function openAndWaitForOnboarding(arg0) {
   const _require = arg0;
-  const result = _require(5229).waitForOnboardingCompletion(arg0);
+  const result = _require(5245).waitForOnboardingCompletion(arg0);
   result.then(() => {
     if (null != outer1_11[closure_0]) {
       tmp4();
@@ -306,7 +306,7 @@ function openAndWaitForOnboarding(arg0) {
     delete tmp[tmp2];
     outer1_1(outer1_2[15]).finishOnboarding(closure_0);
   });
-  let obj = _require(5229);
+  let obj = _require(5245);
   return new Promise((arg0) => {
     if (null == outer1_11[callback]) {
       tmp[tmp2] = arg0;

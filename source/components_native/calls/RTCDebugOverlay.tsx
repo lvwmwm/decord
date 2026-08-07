@@ -1,10 +1,10 @@
-// Module ID: 10839
-// Function ID: 10840
+// Module ID: 10851
+// Function ID: 10852
 // Name: Text
-// Dependencies: [19, 17, 1372, 1891, 4356, 10840, 4370, 1903, 4345, 21, 4285, 4128, 712, 1297, 589, 4475, 10842, 10841, 709, 5311, 4695, 1236, 2]
+// Dependencies: [19, 17, 1372, 1891, 4373, 10852, 4387, 1903, 4362, 21, 4302, 4145, 712, 1297, 589, 4492, 10854, 10853, 709, 5327, 4712, 1236, 2]
 // Exports: default
 
-// Module 10839 (Text)
+// Module 10851 (Text)
 import importAllResult from "SafeAreaPaddingView";
 import get_ActivityIndicator from "open";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -103,7 +103,7 @@ function RTCDebugGeneral() {
   if (null != stateFromStores) {
     name = stateFromStores.name;
   }
-  obj = { title: "general", children: tmp5(ObjectKV, { obj: { guild: obj, channel: { id: channelId, name: channelId(4475)(stateFromStores1) } } }) };
+  obj = { title: "general", children: tmp5(ObjectKV, { obj: { guild: obj, channel: { id: channelId, name: channelId(4492)(stateFromStores1) } } }) };
   obj[1] = name;
   return closure_14(Section, obj);
 }
@@ -228,7 +228,7 @@ export default function RTCDebugOverlay(arg0) {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
     callback(table[17]).open();
-    return () => callback(709).wait(callback2(10841).close);
+    return () => callback(709).wait(callback2(10853).close);
   }, []);
   let obj = { top: true, left: true, right: true, bottom: true, style: items, children: null };
   items = [tmp.container, style];
@@ -243,8 +243,8 @@ export default function RTCDebugOverlay(arg0) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[0] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj1[1] = onClose;
-  obj[1] = callback(require(4695) /* Button */.Button, obj1);
+  obj[1] = callback(require(4712) /* Button */.Button, obj1);
   items2[1] = callback(closure_5, obj);
   obj[5] = items2;
-  return callback2(require(5311) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback2(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

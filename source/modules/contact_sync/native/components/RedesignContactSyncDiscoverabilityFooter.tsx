@@ -1,10 +1,10 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11974
+// Function ID: 11975
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [676, 21, 5688, 1236, 1974, 5689, 2]
+// Dependencies: [676, 21, 5707, 1236, 1974, 5708, 2]
 // Exports: default
 
-// Module 11959 (RedesignContactSyncDiscoverabilityFooter)
+// Module 11974 (RedesignContactSyncDiscoverabilityFooter)
 import { HelpdeskArticles } from "ME";
 import { jsx } from "jsxProd";
 
@@ -24,6 +24,6 @@ export default function RedesignContactSyncDiscoverabilityFooter(arg0) {
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.a5QL24);
   obj[1] = onValueChanged;
   obj[2] = discoverabilityEnabled;
-  obj[2] = jsx(require(5689) /* TableSwitchRow */.TableSwitchRow, { label: null, onValueChange: null, value: null });
-  return jsx(require(5688) /* TableRowGroupTitle */.TableRowGroup, { label: null, onValueChange: null, value: null });
+  obj[2] = jsx(require(5708) /* TableSwitchRow */.TableSwitchRow, { label: null, onValueChange: null, value: null });
+  return jsx(require(5707) /* TableRowGroupTitle */.TableRowGroup, { label: null, onValueChange: null, value: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9568
+// Function ID: 9569
 // Name: showRequestFailedAlert
-// Dependencies: [5, 676, 4184, 4623, 1236, 530, 4130, 2]
+// Dependencies: [5, 676, 4201, 4640, 1236, 530, 4147, 2]
 
-// Module 9552 (showRequestFailedAlert)
+// Module 9568 (showRequestFailedAlert)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -11,7 +11,7 @@ let c4;
 let c5;
 const require = arg1;
 function showRequestFailedAlert(arg0) {
-  const aPIError = new require(4184) /* V6OrEarlierAPIError */.APIError(arg0);
+  const aPIError = new require(4201) /* V6OrEarlierAPIError */.APIError(arg0);
   let anyErrorMessage = aPIError.getAnyErrorMessage();
   const obj = { title: null, body: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -21,7 +21,7 @@ function showRequestFailedAlert(arg0) {
     anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
   }
   obj[1] = anyErrorMessage;
-  importDefault(4623).show(obj);
+  importDefault(4640).show(obj);
 }
 function deleteGameRelationship() {
   const self = this;
@@ -304,7 +304,7 @@ export default {
       const intl = onSuccess(outer1_2[4]).intl;
       AccessibilityAnnouncer.announce(intl.string(onSuccess(outer1_2[4]).t.taJiuc));
     }).catch((arg0) => {
-      const aPIError = new onSuccess(4184).APIError(arg0);
+      const aPIError = new onSuccess(4201).APIError(arg0);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
       const intl = onSuccess(1236).intl;
@@ -314,7 +314,7 @@ export default {
         anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
       }
       obj[1] = anyErrorMessage;
-      callback(4623).show(obj);
+      callback(4640).show(obj);
       return Promise.reject(arg0);
     });
   },

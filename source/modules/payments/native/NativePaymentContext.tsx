@@ -1,10 +1,10 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9506
+// Function ID: 9507
 // Name: NativePaymentContextProvider
-// Dependencies: [32, 19, 3935, 505, 21, 6813, 7572, 5798, 9490, 589, 2]
+// Dependencies: [32, 19, 3952, 505, 21, 6832, 7591, 5817, 9507, 589, 2]
 // Exports: NativePaymentContextProvider
 
-// Module 9489 (NativePaymentContextProvider)
+// Module 9506 (NativePaymentContextProvider)
 import noop from "noop";
 import addSubscriptionPlan from "addSubscriptionPlan";
 import { PaymentGateways } from "sum";

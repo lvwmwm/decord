@@ -1,9 +1,9 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6067
+// Function ID: 6068
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6048 (metadata)
+// Module 6067 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BoostGemIllocon-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/309e9b7830caa5cbaee6006226969594cc7bbeb5cda321930ba9a0f78d6e9667.png";

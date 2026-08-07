@@ -1,10 +1,10 @@
-// Module ID: 8031
-// Function ID: 8032
+// Module ID: 8048
+// Function ID: 8049
 // Name: pickHelloSticker
-// Dependencies: [1903, 8032, 676, 11, 6838, 698, 2]
+// Dependencies: [1903, 8049, 676, 11, 6857, 698, 2]
 // Exports: handleWelcomeCtaClicked, pickHelloSticker, pickWelcomeSticker
 
-// Module 8031 (pickHelloSticker)
+// Module 8048 (pickHelloSticker)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { WELCOME_STICKERS } from "items";
 import { AnalyticEvents } from "ME";
@@ -39,10 +39,10 @@ export const pickWelcomeSticker = function pickWelcomeSticker(id) {
   return WELCOME_STICKERS[(num + obj2.extractTimestamp(obj2, id)) % WELCOME_STICKERS.length];
 };
 export const handleWelcomeCtaClicked = function handleWelcomeCtaClicked(messageChannel, message, stickerId) {
-  let obj = importDefault(6838);
+  let obj = importDefault(6857);
   obj = { channel: messageChannel, message, shouldMention: true, showMentionToggle: true };
-  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(6838).getSendMessageOptionsForReply(obj));
-  const obj2 = importDefault(6838);
+  obj.sendGreetMessage(messageChannel.id, stickerId, importDefault(6857).getSendMessageOptionsForReply(obj));
+  const obj2 = importDefault(6857);
   obj = { is_reply: true, sticker_id: stickerId, target_user: message.author.id, sender: null };
   const currentUser = authStore.getCurrentUser();
   let id;

@@ -1,10 +1,10 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 16751
+// Function ID: 16752
 // Name: items
-// Dependencies: [19, 5158, 589, 5163, 2]
+// Dependencies: [19, 5175, 589, 5180, 2]
 // Exports: default
 
-// Module 16731 (items)
+// Module 16751 (items)
 import noop from "noop";
 import getEmojiToGroupId from "getEmojiToGroupId";
 

@@ -1,10 +1,10 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 11798
+// Function ID: 11799
 // Name: items
-// Dependencies: [32, 19, 1891, 4172, 4173, 676, 4176, 589, 4192, 2]
+// Dependencies: [32, 19, 1891, 4189, 4190, 676, 4193, 589, 4209, 2]
 // Exports: default
 
-// Module 11783 (items)
+// Module 11798 (items)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

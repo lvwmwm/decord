@@ -1,10 +1,10 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10939
+// Function ID: 10940
 // Name: MediaViewerAltTextSheet
-// Dependencies: [19, 21, 4285, 712, 10925, 4830, 5377, 5376, 1236, 4281, 2]
+// Dependencies: [19, 21, 4302, 712, 10940, 4847, 5396, 5395, 1236, 4298, 2]
 // Exports: default
 
-// Module 10924 (MediaViewerAltTextSheet)
+// Module 10939 (MediaViewerAltTextSheet)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -17,7 +17,7 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("createCacheKey").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx");
 
 export default function MediaViewerAltTextSheet(children) {
-  let obj = require(10925) /* useMessagePreviewHeightStore */;
+  let obj = require(10940) /* useMessagePreviewHeightStore */;
   const messagePreviewCollapsedheight = obj.useMessagePreviewCollapsedheight();
   const tmp = createCacheKey();
   let num = 70;
@@ -28,9 +28,9 @@ export default function MediaViewerAltTextSheet(children) {
   obj = { title: null };
   const intl = tmp2(1236).intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.J3IOO1);
-  obj[0] = jsx(require(5376) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
+  obj[0] = jsx(require(5395) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
   const items = [tmp.container, { minHeight: num }];
   obj[1] = items;
-  obj[2] = jsx(require(4281) /* Text */.Text, { accessibilityRole: "text", variant: "text-md/normal", children: children.description });
-  return jsx(require(5377) /* Background */.BottomSheet, { title: null });
+  obj[2] = jsx(require(4298) /* Text */.Text, { accessibilityRole: "text", variant: "text-md/normal", children: children.description });
+  return jsx(require(5396) /* Background */.BottomSheet, { title: null });
 };

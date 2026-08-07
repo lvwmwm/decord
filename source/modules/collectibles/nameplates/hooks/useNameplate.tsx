@@ -1,10 +1,10 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8754
+// Function ID: 8755
 // Name: useNameplate
 // Dependencies: [19, 1971, 589, 1927, 2]
 // Exports: useNameplate
 
-// Module 8737 (useNameplate)
+// Module 8754 (useNameplate)
 import noop from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 

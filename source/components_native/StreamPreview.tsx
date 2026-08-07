@@ -1,10 +1,10 @@
-// Module ID: 10861
-// Function ID: 10862
+// Module ID: 10873
+// Function ID: 10874
 // Name: render
-// Dependencies: [19, 17, 1302, 21, 4285, 712, 3996, 4130, 10862, 10863, 1236, 4827, 10864, 589, 2]
+// Dependencies: [19, 17, 1302, 21, 4302, 712, 4013, 4147, 10874, 10875, 1236, 4844, 10876, 589, 2]
 // Exports: default
 
-// Module 10861 (render)
+// Module 10873 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -39,9 +39,9 @@ DefaultFallback.prototype["render"] = function render() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(10862);
+    let tmp6Result = tmp6(10874);
   } else {
-    tmp6Result = tmp6(10863);
+    tmp6Result = tmp6(10875);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);
@@ -111,7 +111,7 @@ StreamPreview.prototype["render"] = function render() {
       obj1[1] = items1;
       const items2 = [callback2(closure_4, obj1), tmp4];
       obj[6] = items2;
-      return callback2(require(4827) /* PressableBase */.PressableOpacity, obj);
+      return callback2(require(4844) /* PressableBase */.PressableOpacity, obj);
     }
   }
   let renderFallbackResult1;
@@ -146,7 +146,7 @@ export default function ConnectedStreamPreview(stream) {
   let ownerId;
   let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(10864)(guildId, channelId, ownerId));
+  ({ previewUrl, isLoading } = importDefault(10876)(guildId, channelId, ownerId));
   let obj = require(589) /* initialize */;
   const items = [handleThemeChange];
   obj = {};

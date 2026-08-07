@@ -1,17 +1,17 @@
-// Module ID: 10309
-// Function ID: 10310
+// Module ID: 10325
+// Function ID: 10326
 // Name: showSafetyToast
-// Dependencies: [3985, 10149, 10150, 2]
+// Dependencies: [4002, 10165, 10166, 2]
 // Exports: showSafetyToast
 
-// Module 10309 (showSafetyToast)
+// Module 10325 (showSafetyToast)
 const result = require("ShieldIcon").fileFinishedImporting("modules/self_mod/shared/ShowSafetyToast.native.tsx");
 
 export const showSafetyToast = function showSafetyToast(arg0) {
   let id;
   let text;
   ({ id, text } = arg0);
-  let obj = importDefault(3985);
-  obj = { key: id, icon: importDefault(10149), IconComponent: require(10150) /* ShieldIcon */.ShieldIcon, iconColor: "text-brand", content: text };
+  let obj = importDefault(4002);
+  obj = { key: id, icon: importDefault(10165), IconComponent: require(10166) /* ShieldIcon */.ShieldIcon, iconColor: "text-brand", content: text };
   obj.open(obj);
 };

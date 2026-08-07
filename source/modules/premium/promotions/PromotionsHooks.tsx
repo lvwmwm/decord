@@ -1,10 +1,10 @@
-// Module ID: 12653
-// Function ID: 12654
+// Module ID: 12668
+// Function ID: 12669
 // Name: useEligibleActiveOutboundPromotions
-// Dependencies: [19, 1903, 7265, 1905, 589, 7567, 3930, 709, 7565, 2]
+// Dependencies: [19, 1903, 7284, 1905, 589, 7586, 3947, 709, 7584, 2]
 // Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 12653 (useEligibleActiveOutboundPromotions)
+// Module 12668 (useEligibleActiveOutboundPromotions)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createEmptyPromotionsByType from "createEmptyPromotionsByType";

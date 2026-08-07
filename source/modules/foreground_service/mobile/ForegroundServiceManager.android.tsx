@@ -1,9 +1,9 @@
-// Module ID: 7137
-// Function ID: 7138
+// Module ID: 7156
+// Function ID: 7157
 // Name: initialize
-// Dependencies: [17, 675, 659, 4463, 2]
+// Dependencies: [17, 675, 659, 4480, 2]
 
-// Module 7137 (initialize)
+// Module 7156 (initialize)
 import { NativeModules } from "get ActivityIndicator";
 import "initialize";
 

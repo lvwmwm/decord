@@ -1,14 +1,14 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 9486
+// Function ID: 9487
 // Name: navigateToLastChannel
-// Dependencies: [4135, 9470, 4293, 2]
+// Dependencies: [4152, 9487, 4310, 2]
 // Exports: default
 
-// Module 9469 (navigateToLastChannel)
+// Module 9486 (navigateToLastChannel)
 const result = require("transitionToChannel").fileFinishedImporting("modules/main_tabs_v2/native/navigateToLastChannel.tsx");
 
 export default function navigateToLastChannel() {
-  const coerceGuildsRouteResult = require(4135) /* navigationToRootTabHelper */.coerceGuildsRoute(importDefault(9470)());
+  const coerceGuildsRouteResult = require(4152) /* navigationToRootTabHelper */.coerceGuildsRoute(importDefault(9487)());
   let tmp4 = null != coerceGuildsRouteResult;
   if (tmp4) {
     const params = coerceGuildsRouteResult.params;
@@ -24,7 +24,7 @@ export default function navigateToLastChannel() {
     if (params2 != null) {
       channelId1 = params2.channelId;
     }
-    require(4293) /* transitionToChannel */.transitionToChannel(channelId1);
-    const tmpResult = require(4293) /* transitionToChannel */;
+    require(4310) /* transitionToChannel */.transitionToChannel(channelId1);
+    const tmpResult = require(4310) /* transitionToChannel */;
   }
 };

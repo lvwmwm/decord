@@ -1,10 +1,10 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8342
+// Function ID: 8343
 // Name: useIsNsfwGated
-// Dependencies: [4499, 1903, 589, 2]
+// Dependencies: [4516, 1903, 589, 2]
 // Exports: default
 
-// Module 8325 (useIsNsfwGated)
+// Module 8342 (useIsNsfwGated)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

@@ -1,10 +1,10 @@
-// Module ID: 12907
-// Function ID: 12908
+// Module ID: 12922
+// Function ID: 12923
 // Name: hasCrepeMonthlyOrbsPerk
-// Dependencies: [1903, 1905, 3930, 1919, 1921, 589, 2]
+// Dependencies: [1903, 1905, 3947, 1919, 1921, 589, 2]
 // Exports: hasCrepeMonthlyOrbsPerk, useHasXboxMonthlyOrbsPerk
 
-// Module 12907 (hasCrepeMonthlyOrbsPerk)
+// Module 12922 (hasCrepeMonthlyOrbsPerk)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -25,7 +25,7 @@ export const hasCrepeMonthlyOrbsPerk = function hasCrepeMonthlyOrbsPerk(currentU
       }
       return hasItem;
     }
-    obj2 = require(3930) /* getPremiumPlanItem */;
+    obj2 = require(3947) /* getPremiumPlanItem */;
   }
   return false;
 };
@@ -35,7 +35,7 @@ export const useHasXboxMonthlyOrbsPerk = function useHasXboxMonthlyOrbsPerk() {
   const obj = require(589) /* initialize */;
   let flag = false;
   if (obj2.canUseMonthlyOrbs(stateFromStores)) {
-    let tmpResult = tmp(3930);
+    let tmpResult = tmp(3947);
     flag = false;
     if (!tmpResult.isPremiumExactly(stateFromStores, PremiumTypes.TIER_2)) {
       tmpResult = tmp(1919);

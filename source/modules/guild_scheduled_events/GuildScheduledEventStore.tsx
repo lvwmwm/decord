@@ -1,10 +1,10 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6925
+// Function ID: 6926
 // Name: scheduledEventSort
-// Dependencies: [1218, 1971, 1378, 3908, 12, 11, 589, 709, 2]
+// Dependencies: [1218, 1971, 1378, 3925, 12, 11, 589, 709, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 6906 (scheduledEventSort)
+// Module 6925 (scheduledEventSort)
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH";

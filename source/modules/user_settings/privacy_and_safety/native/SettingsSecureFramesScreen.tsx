@@ -1,10 +1,10 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14798
+// Function ID: 14799
 // Name: UserListItem
-// Dependencies: [19, 17, 1903, 676, 21, 4285, 712, 589, 14783, 4123, 8232, 5649, 8706, 5354, 1297, 1236, 5361, 3988, 1480, 14781, 4281, 7666, 9132, 2]
+// Dependencies: [19, 17, 1903, 676, 21, 4302, 712, 589, 14799, 4140, 8249, 5668, 8723, 5373, 1297, 1236, 5380, 4005, 1480, 14797, 4298, 7685, 9149, 2]
 // Exports: default
 
-// Module 14782 (UserListItem)
+// Module 14798 (UserListItem)
 import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds";
 import { View } from "map";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -43,7 +43,7 @@ function UserListItem(userId) {
   }, items3);
   let tmp8Result = null != stateFromStores;
   if (tmp8Result) {
-    obj = { user: null, guildId: "Array", size: false };
+    obj = { user: null, guildId: "Array", size: null };
     obj[0] = stateFromStores;
     obj[2] = tmp(tmp2[14]).AvatarSizes.REFRESH_MEDIUM_32;
     tmp8Result = tmp8(tmp(tmp2[14]).Avatar, obj);
@@ -136,13 +136,13 @@ export default function SettingsSecureFramesScreen() {
   obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t["9Q/PQv"]);
-  const items = [callback(require(4281) /* Text */.Text, obj), ];
+  const items = [callback(require(4298) /* Text */.Text, obj), ];
   const obj1 = { variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const obj2 = { helpArticle: null };
-  obj2[0] = require(9132) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
+  obj2[0] = require(9149) /* getCurrentUserSigningKey */.getSecureFramesHelpdeskArticle();
   obj1[2] = intl2.format(require(1236) /* getSystemLocale */.t["8IwQfG"], obj2);
-  items[1] = callback(require(4281) /* Text */.Text, obj1);
+  items[1] = callback(require(4298) /* Text */.Text, obj1);
   obj[1] = items;
   const items1 = [callback2(View, obj), callback(SettingsSecureFramesFooter, {})];
   obj[1] = items1;

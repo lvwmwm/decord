@@ -1,10 +1,10 @@
-// Module ID: 8760
-// Function ID: 8761
+// Module ID: 8777
+// Function ID: 8778
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 4277, 1474, 589, 4145, 2]
+// Dependencies: [32, 19, 4294, 1474, 589, 4162, 2]
 // Exports: default
 
-// Module 8760 (useUserProfileOverscrollStyles)
+// Module 8777 (useUserProfileOverscrollStyles)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

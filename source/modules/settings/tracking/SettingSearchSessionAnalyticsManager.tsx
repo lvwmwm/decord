@@ -1,9 +1,9 @@
-// Module ID: 5935
-// Function ID: 5936
+// Module ID: 5954
+// Function ID: 5955
 // Name: getSearchSessionId
-// Dependencies: [514, 5936, 2]
+// Dependencies: [514, 5955, 2]
 
-// Module 5935 (getSearchSessionId)
+// Module 5954 (getSearchSessionId)
 class SettingSearchSessionAnalyticsManager {
 }
 const prototype = SettingSearchSessionAnalyticsManager.prototype;
@@ -20,15 +20,15 @@ prototype["initialize"] = function initialize() {
 };
 prototype["maybeTrackQueryEntered"] = function maybeTrackQueryEntered() {
   if (!this.isQueryEnteredTracked) {
-    const result = require(5936) /* trackSettingSearchInputFocused */.trackSettingSearchQueryEntered();
+    const result = require(5955) /* trackSettingSearchInputFocused */.trackSettingSearchQueryEntered();
     tmp.isQueryEnteredTracked = true;
-    const obj = require(5936) /* trackSettingSearchInputFocused */;
+    const obj = require(5955) /* trackSettingSearchInputFocused */;
   }
 };
 prototype["terminate"] = function terminate() {
   const self = this;
   if (tmp) {
-    let obj = require(5936) /* trackSettingSearchInputFocused */;
+    let obj = require(5955) /* trackSettingSearchInputFocused */;
     obj = { searchSessionDuration: null };
     const _Date = Date;
     obj[0] = Date.now() - self.searchSessionStartTime;

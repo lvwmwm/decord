@@ -1,10 +1,10 @@
-// Module ID: 15654
-// Function ID: 15655
+// Module ID: 15678
+// Function ID: 15679
 // Name: GuildChannelMemberRow
-// Dependencies: [19, 21, 9549, 2]
+// Dependencies: [19, 21, 9565, 2]
 // Exports: default
 
-// Module 15654 (GuildChannelMemberRow)
+// Module 15678 (GuildChannelMemberRow)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -12,5 +12,5 @@ const result = require("UserRowSubLabel").fileFinishedImporting("modules/search/
 
 export default function GuildChannelMemberRow(arg0) {
   const merged = Object.assign(arg0);
-  return jsx(importDefault(9549), {});
+  return jsx(importDefault(9565), {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11930
+// Function ID: 11931
 // Name: PX_24
 // Dependencies: [712, 1297, 2]
 // Exports: default
 
-// Module 11915 (PX_24)
+// Module 11930 (PX_24)
 const PX_24 = require("Themes").space.PX_24;
 const tmp2 = require("Button").AVATAR_SIZE_MAP[require("Button").AvatarSizes.NORMAL];
 let closure_1 = tmp2;

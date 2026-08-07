@@ -1,9 +1,9 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 8367
+// Function ID: 8368
 // Name: _fetchGuildJoinRequests
-// Dependencies: [5, 1376, 6839, 4102, 676, 4104, 709, 530, 7243, 4623, 1236, 5111, 2]
+// Dependencies: [5, 1376, 6858, 4119, 676, 4121, 709, 530, 7262, 4640, 1236, 5128, 2]
 
-// Module 8350 (_fetchGuildJoinRequests)
+// Module 8367 (_fetchGuildJoinRequests)
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
@@ -471,7 +471,7 @@ function _updateGuildJoinRequest() {
               let APPROVED;
               let closure_4;
               if (APPROVED === undefined) {
-                APPROVED = callback(4104).GuildJoinRequestApplicationStatuses.APPROVED;
+                APPROVED = callback(4121).GuildJoinRequestApplicationStatuses.APPROVED;
               }
               updateSubmittedGuildJoinRequestTotal = undefined;
               c7 = 1;
@@ -488,7 +488,7 @@ function _updateGuildJoinRequest() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback(7243);
+              let obj7 = callback(7262);
               const obj2 = { guildId: null, actionType: null, applicationUserId: null };
               obj2[0] = callback;
               obj2[1] = APPROVED;
@@ -514,7 +514,7 @@ function _updateGuildJoinRequest() {
                   body = body.body.code === constants.REQUEST_TO_JOIN_USER_INELIGIBLE;
                 }
                 if (body) {
-                  let obj = callback2(4623);
+                  let obj = callback2(4640);
                   obj = { title: null, body: null };
                   const intl = callback(1236).intl;
                   obj[0] = intl.string(callback(1236).t.DxJj4e);
@@ -888,7 +888,7 @@ export default {
   },
   setSelectedGuildJoinRequest(guildId, request) {
     if (null != request) {
-      let obj = require(7243) /* trackMemberApplicationViewed */;
+      let obj = require(7262) /* trackMemberApplicationViewed */;
       obj = { guildId: null, applicationStatus: null, applicationUserId: null };
       obj[0] = guildId;
       ({ applicationStatus: obj2[1], userId: obj2[2] } = request);

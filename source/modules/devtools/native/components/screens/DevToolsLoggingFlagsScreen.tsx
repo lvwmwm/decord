@@ -1,10 +1,10 @@
-// Module ID: 13770
-// Function ID: 13771
+// Module ID: 13784
+// Function ID: 13785
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [17, 706, 21, 4285, 712, 589, 5688, 5689, 708, 2]
+// Dependencies: [17, 706, 21, 4302, 712, 589, 5707, 5708, 708, 2]
 // Exports: default
 
-// Module 13770 (DevToolsLoggingFlagsScreen)
+// Module 13784 (DevToolsLoggingFlagsScreen)
 import { ScrollView } from "get ActivityIndicator";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function DevToolsLoggingFlagsScreen() {
   ({ isLoggingGatewayEvents, isLoggingAnalyticsEvents, isTracingRequests } = stateFromStoresObject);
   obj = { title: "Logging", hasIcons: false, children: null };
   const items1 = [
-    callback(require(5689) /* TableSwitchRow */.TableSwitchRow, {
+    callback(require(5708) /* TableSwitchRow */.TableSwitchRow, {
       label: "Gateway Events",
       subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
       value: isLoggingGatewayEvents,
@@ -43,7 +43,7 @@ export default function DevToolsLoggingFlagsScreen() {
         return obj.setDeveloperOptionSettings(obj);
       }
     }),
-    callback(require(5689) /* TableSwitchRow */.TableSwitchRow, {
+    callback(require(5708) /* TableSwitchRow */.TableSwitchRow, {
       label: "Analytics Events",
       subLabel: "Logs all analytics events to the developer console.",
       value: isLoggingAnalyticsEvents,
@@ -53,7 +53,7 @@ export default function DevToolsLoggingFlagsScreen() {
         return obj.setDeveloperOptionSettings(obj);
       }
     }),
-    callback(require(5689) /* TableSwitchRow */.TableSwitchRow, {
+    callback(require(5708) /* TableSwitchRow */.TableSwitchRow, {
       label: "Tracing Requests",
       subLabel: "Force trace all client requests with APM.",
       value: isTracingRequests,
@@ -65,6 +65,6 @@ export default function DevToolsLoggingFlagsScreen() {
     })
   ];
   obj[2] = items1;
-  obj[2] = callback2(require(5688) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
   return callback(ScrollView, obj);
 };

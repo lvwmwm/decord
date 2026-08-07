@@ -1,17 +1,14 @@
 // Module ID: 7814
 // Function ID: 7815
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7815, 7796, 7797]
+// Dependencies: [42, 41, 93, 95, 98, 19]
 
 // Module 7814 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
+import FilterPrimitive from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
 
-const FeMerge = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,50 +28,40 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeMerge {
+class FilterPrimitive {
   constructor() {
     self = this;
-    tmp = _isNativeReflectConstruct(this, FeMerge);
+    items = [...arguments];
+    apply = undefined;
+    tmp = FilterPrimitive(this, apply);
+    items1 = [...items];
     tmp2 = __esModule;
-    obj = __esModule(FeMerge);
+    obj = __esModule(apply);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
-      tmp7 = globalThis;
+      tmp5 = globalThis;
       _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
     } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, items1);
     }
-    return tmp3(self, constructResult);
-  }
-}
-require("_inherits")(FeMerge, require("_isNativeReflectConstruct"));
-let obj = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
+    tmp3Result = tmp3(self, constructResult);
+    apply = tmp3Result;
+    tmp3Result.root = null;
+    tmp3Result.refMethod = (root) => {
+      c0.root = root;
+    };
+    tmp3Result.setNativeProps = (arg0) => {
+      const root = _undefined.root;
+      if (root != null) {
+        root.setNativeProps(arg0);
       }
     };
-    const tmp = importDefault(7815);
-    const merged = Object.assign(self(7796).extractFilter(this.props));
-    const obj2 = self(7796);
-    const merged1 = Object.assign(self(7796).extractFeMerge(this.props, this));
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
+    return tmp3Result;
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeMerge, items);
-importDefaultResultResult.displayName = "FeMerge";
-obj = {};
-let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+}
+require("_inherits")(FilterPrimitive, require("noop").Component);
+const importDefaultResultResult = importDefaultResult(FilterPrimitive);
+importDefaultResultResult.defaultPrimitiveProps = {};
 
 export default importDefaultResultResult;

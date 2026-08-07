@@ -1,10 +1,10 @@
-// Module ID: 9386
-// Function ID: 9387
+// Module ID: 9403
+// Function ID: 9404
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4285, 712, 1609, 5379, 7890, 500, 5377, 4827, 1236, 5257, 4281, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 1609, 5398, 7907, 500, 5396, 4844, 1236, 5273, 4298, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 9386 (UserProfileStackedActionSheet)
+// Module 9403 (UserProfileStackedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,10 +48,10 @@ export default function UserProfileStackedActionSheet(onBack) {
     const intl = tmp5(1236).intl;
     obj[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj[2] = onBack;
-    obj[3] = tmp4(tmp5(5257).ArrowLargeLeftIcon, { size: "md" });
-    tmp4Result = tmp4(tmp5(4827).PressableOpacity, obj);
+    obj[3] = tmp4(tmp5(5273).ArrowLargeLeftIcon, { size: "md" });
+    tmp4Result = tmp4(tmp5(4844).PressableOpacity, obj);
   }
-  const items1 = [tmp4Result, closure_4(require(4281) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
+  const items1 = [tmp4Result, closure_4(require(4298) /* Text */.Text, { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
   if (tmp4Result) {
     const obj1 = { style: null };
     obj1[0] = tmp2.headerSpacer;
@@ -61,7 +61,7 @@ export default function UserProfileStackedActionSheet(onBack) {
   obj[1] = items1;
   obj.header = closure_5(View, obj);
   obj.children = children;
-  return closure_4(require(5377) /* Background */.BottomSheet, obj);
+  return closure_4(require(5396) /* Background */.BottomSheet, obj);
 };
 export const UserProfileStackedActionSheetList = function UserProfileStackedActionSheetList(data) {
   data = data.data;
@@ -89,7 +89,7 @@ export const UserProfileStackedActionSheetList = function UserProfileStackedActi
     index = index.index;
     return renderItem({ item: index.item, index, start: 0 === index, end: index === data.length - 1 });
   };
-  return closure_4(data(5379).BottomSheetFlatList, obj);
+  return closure_4(data(5398).BottomSheetFlatList, obj);
 };
 export const UserProfileStackedActionSheetSectionList = function UserProfileStackedActionSheetSectionList(renderItem) {
   renderItem = renderItem.renderItem;
@@ -106,5 +106,5 @@ export const UserProfileStackedActionSheetSectionList = function UserProfileStac
   obj.ItemSeparatorComponent = function ItemSeparatorComponent() {
     return outer1_4(renderItem(outer1_2[7]).FormDivider, { style: divider.divider });
   };
-  return callback(renderItem(5379).BottomSheetSectionList, obj);
+  return callback(renderItem(5398).BottomSheetSectionList, obj);
 };

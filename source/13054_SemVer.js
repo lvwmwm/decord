@@ -5,4 +5,4 @@
 
 // Module 13054 (SemVer)
 
-export default (arg0, arg1, arg2) => require(13044) /* SemVer */(arg0, arg1, arg2) >= 0;
+export default (arg0, arg1) => new require(13044) /* SemVer */(arg0, arg1).major;

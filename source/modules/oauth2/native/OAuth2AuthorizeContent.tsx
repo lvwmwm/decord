@@ -1,10 +1,10 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10561
+// Function ID: 10562
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4285, 712, 1474, 1609, 5745, 9227, 2]
+// Dependencies: [32, 19, 17, 21, 4302, 712, 1474, 1609, 5764, 9244, 2]
 // Exports: default
 
-// Module 10564 (OAuth2AuthorizeContent)
+// Module 10561 (OAuth2AuthorizeContent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";

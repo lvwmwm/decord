@@ -1,0 +1,10 @@
+// Module ID: 4265
+// Function ID: 4266
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 4265 (registerAsset)
+import registerAsset from "registerAsset";
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dd2bf1474590dee83bbb5fea2b4f182c", name: "CircleCheckIcon-primary", type: "png" });

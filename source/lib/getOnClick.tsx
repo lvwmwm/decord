@@ -1,10 +1,10 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 8879
+// Function ID: 8880
 // Name: openInviteModal
-// Dependencies: [32, 5, 4322, 6906, 5771, 1218, 1971, 1891, 4270, 4502, 1960, 4101, 5137, 676, 678, 5772, 709, 4271, 7679, 8863, 1988, 5215, 5786, 8872, 4269, 4274, 7071, 3975, 698, 10517, 11268, 12132, 10550, 4295, 10895, 12136, 10006, 10378, 1467, 11084, 5148, 12137, 6921, 4479, 4476, 8154, 12138, 2]
+// Dependencies: [32, 5, 4339, 6925, 5790, 1218, 1971, 1891, 4287, 4519, 1960, 4118, 5154, 676, 678, 5791, 709, 4288, 7698, 8880, 1988, 5231, 5805, 8889, 4286, 4291, 7090, 3992, 698, 10533, 11283, 12147, 10547, 4312, 10907, 12151, 10022, 10394, 1467, 11099, 5165, 12152, 6940, 4496, 4493, 8171, 12153, 2]
 // Exports: default
 
-// Module 8862 (openInviteModal)
+// Module 8879 (openInviteModal)
 import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity";
 import fetchFingerprint from "fetchFingerprint";
 import addApplication from "addApplication";
@@ -76,7 +76,7 @@ function _openInviteModal() {
               return obj;
             } else {
               let obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessible", invite_instance_id: 16778272 };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessible", invite_instance_id: "y" };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -312,7 +312,7 @@ export default function getOnClick(url) {
   let c3;
   pathname = undefined;
   obj = undefined;
-  obj = _require(4269);
+  obj = _require(4286);
   const findCodedLinkResult = obj.findCodedLink(url);
   c3 = findCodedLinkResult;
   if (null != findCodedLinkResult) {
@@ -362,11 +362,11 @@ export default function getOnClick(url) {
         outer1_1(tmp4[27])(url);
         return true;
       }
-      result = { applicationId: code, skuId: "r" };
+      result = { applicationId: code, skuId: "a" };
     };
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.ACTIVITY_BOOKMARK) {
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.ACTIVITY_BOOKMARK) {
       return (preventDefault) => {
         let isCurrentlyInInstance;
         let obj;
@@ -623,7 +623,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.GUILD_PRODUCT) {
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.GUILD_PRODUCT) {
       return (preventDefault) => {
         let closure_0;
         let closure_1;
@@ -641,7 +641,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -654,7 +654,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -667,8 +667,8 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.QUESTS_EMBED) {
-      let tmp2Result = tmp2(10378);
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.QUESTS_EMBED) {
+      let tmp2Result = tmp2(10394);
       if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (preventDefault != null) {
@@ -707,7 +707,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.COLLECTIBLES_SHOP) {
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.COLLECTIBLES_SHOP) {
       return (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -794,7 +794,7 @@ export default function getOnClick(url) {
     }
   }
   if (null != findCodedLinkResult) {
-    if (findCodedLinkResult.type === tmp2(4274).CodedLinkType.APP_OAUTH2_LINK) {
+    if (findCodedLinkResult.type === tmp2(4291).CodedLinkType.APP_OAUTH2_LINK) {
       let fn = (preventDefault) => {
         if (preventDefault != null) {
           preventDefault.preventDefault();
@@ -808,7 +808,7 @@ export default function getOnClick(url) {
     }
     return fn;
   }
-  tmp2Result = tmp2(4476);
+  tmp2Result = tmp2(4493);
   let result = tmp2Result.tryParseEventDetailsPath(pathname);
   if (!tmp.skipExtensionCheck) {
     if (null != tmp2Result1.isSuspiciousDownload(url)) {
@@ -820,6 +820,6 @@ export default function getOnClick(url) {
         return true;
       };
     }
-    tmp2Result1 = tmp2(8154);
+    tmp2Result1 = tmp2(8171);
   }
 };

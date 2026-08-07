@@ -1,18 +1,18 @@
-// Module ID: 10294
-// Function ID: 10295
+// Module ID: 10310
+// Function ID: 10311
 // Name: useInappropriateConversationSafetyToolsWarningForChannel
-// Dependencies: [10263, 10264, 10261, 2]
+// Dependencies: [10279, 10280, 10277, 2]
 // Exports: useInappropriateConversationSafetyToolsWarningForChannel
 
-// Module 10294 (useInappropriateConversationSafetyToolsWarningForChannel)
+// Module 10310 (useInappropriateConversationSafetyToolsWarningForChannel)
 const result = require("useInappropriateConversationWarningsForChannel").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationSafetyToolsWarningForChannel.tsx");
 
 export const useInappropriateConversationSafetyToolsWarningForChannel = function useInappropriateConversationSafetyToolsWarningForChannel(channelId) {
-  const isEligibleForInappropriateConversationWarning = require(10263) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "safety-tools-button" });
-  const obj = require(10263) /* InappropriateConversationExperiment */;
-  const safetyAlertsSettingOrDefault = require(10264) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
-  const obj2 = require(10264) /* useSafetyAlertsSettingOrDefault */;
-  const inappropriateConversationWarningsForChannel = require(10261) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
+  const isEligibleForInappropriateConversationWarning = require(10279) /* InappropriateConversationExperiment */.useIsEligibleForInappropriateConversationWarning({ location: "safety-tools-button" });
+  const obj = require(10279) /* InappropriateConversationExperiment */;
+  const safetyAlertsSettingOrDefault = require(10280) /* useSafetyAlertsSettingOrDefault */.useSafetyAlertsSettingOrDefault();
+  const obj2 = require(10280) /* useSafetyAlertsSettingOrDefault */;
+  const inappropriateConversationWarningsForChannel = require(10277) /* useInappropriateConversationWarningsForChannel */.useInappropriateConversationWarningsForChannel(channelId);
   if (isEligibleForInappropriateConversationWarning) {
     if (safetyAlertsSettingOrDefault) {
       const found = inappropriateConversationWarningsForChannel.filter((dismiss_timestamp) => null != dismiss_timestamp.dismiss_timestamp);

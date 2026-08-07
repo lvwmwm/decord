@@ -1,9 +1,9 @@
-// Module ID: 12992
-// Function ID: 12993
+// Module ID: 13006
+// Function ID: 13007
 // Name: getUnitId
 // Dependencies: [1349, 2]
 
-// Module 12992 (getUnitId)
+// Module 13006 (getUnitId)
 const obj = { 1: null, 2: { mode: "standard" } };
 obj[2] = { mode: "low_latency" };
 const tmp2 = require("getUnitId")({ kind: "user", name: "2026-05-ios-video-stabilization", defaultConfig: { mode: "off" }, variations: obj });

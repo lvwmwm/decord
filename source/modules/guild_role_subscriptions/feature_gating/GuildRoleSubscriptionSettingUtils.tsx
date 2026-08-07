@@ -1,10 +1,10 @@
-// Module ID: 5801
-// Function ID: 5802
+// Module ID: 5820
+// Function ID: 5821
 // Name: computeGuildRoleSubscriptionSettingsVisibility
-// Dependencies: [1415, 3912, 1903, 676, 589, 5802, 5794, 2]
+// Dependencies: [1415, 3929, 1903, 676, 589, 5821, 5813, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanManageGuildRoleSubscriptions, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 5801 (computeGuildRoleSubscriptionSettingsVisibility)
+// Module 5820 (computeGuildRoleSubscriptionSettingsVisibility)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -75,8 +75,8 @@ function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
     return tmp3;
   });
   const obj2 = _require(589);
-  const isUserInCreatorMonetizationEligibleCountry = _require(5802).useIsUserInCreatorMonetizationEligibleCountry();
-  _require(5794);
+  const isUserInCreatorMonetizationEligibleCountry = _require(5821).useIsUserInCreatorMonetizationEligibleCountry();
+  _require(5813);
   if (stateFromStores != null) {
     const id = stateFromStores.id;
   }
@@ -152,7 +152,7 @@ export const getGuildRoleSubscriptionSettingsVisibility = function getGuildRoleS
       canResult = getUncachedChannelPermissions.can(constants2.ADMINISTRATOR, guild);
     }
     obj[2] = canResult;
-    obj = require(5802) /* set */;
+    obj = require(5821) /* set */;
     obj[3] = obj.isUserInCreatorMonetizationEligibleCountry();
     const features = guild.features;
     obj[4] = features.has(constants.CREATOR_MONETIZABLE_RESTRICTED);

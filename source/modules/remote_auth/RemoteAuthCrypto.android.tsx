@@ -1,9 +1,9 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15055
+// Function ID: 15056
 // Name: generateRsaKeyPair
-// Dependencies: [5, 15040, 2]
+// Dependencies: [5, 15056, 2]
 
-// Module 15039 (generateRsaKeyPair)
+// Module 15055 (generateRsaKeyPair)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let closure_3 = {};
@@ -19,10 +19,10 @@ prototype["generateRsaKeyPair"] = function generateRsaKeyPair() {
   })();
 };
 prototype["serializePublicKey"] = function serializePublicKey(c3) {
-  return importDefault(15040).getEncodedPublicKey();
+  return importDefault(15056).getEncodedPublicKey();
 };
 prototype["publicKeyFingerprint"] = function publicKeyFingerprint(c3) {
-  return importDefault(15040).getPublicKeyFingerprint();
+  return importDefault(15056).getPublicKeyFingerprint();
 };
 prototype["decryptEncodedCiphertext"] = function decryptEncodedCiphertext(closure_0, closure_02) {
   closure_0 = closure_02;
@@ -46,7 +46,7 @@ prototype["decryptNonce"] = function decryptNonce(arg0, outer1_2) {
   })();
 };
 prototype["release"] = function release() {
-  importDefault(15040).releaseKeyPair();
+  importDefault(15056).releaseKeyPair();
 };
 const result = require("set").fileFinishedImporting("modules/remote_auth/RemoteAuthCrypto.android.tsx");
 

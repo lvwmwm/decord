@@ -1,10 +1,10 @@
-// Module ID: 15085
-// Function ID: 15086
+// Module ID: 15101
+// Function ID: 15102
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 676, 4278, 11554, 1222, 6838, 3985, 1236, 11553, 15086, 2]
+// Dependencies: [5, 32, 19, 676, 4295, 11569, 1222, 6857, 4002, 1236, 11568, 15102, 2]
 // Exports: default
 
-// Module 15085 (usePrivateChannelWave)
+// Module 15101 (usePrivateChannelWave)
 import getDmHasMessageHistory from "getDmHasMessageHistory";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -115,7 +115,7 @@ export default function usePrivateChannelWave(id) {
       }
     }
   }), items);
-  obj[0] = _require(15086).usePrivateChannelWaveEligible(id, arg1);
+  obj[0] = _require(15102).usePrivateChannelWaveEligible(id, arg1);
   obj[1] = callback;
   return obj;
 };

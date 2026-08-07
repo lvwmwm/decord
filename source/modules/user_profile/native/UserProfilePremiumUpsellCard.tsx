@@ -1,10 +1,10 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13882
+// Function ID: 13883
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 676, 21, 4285, 1609, 1480, 6831, 5649, 5669, 7514, 8545, 8546, 13869, 1236, 4281, 2]
+// Dependencies: [19, 676, 21, 4302, 1609, 1480, 6850, 5668, 5688, 7533, 8562, 8563, 13883, 1236, 4298, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 13868 (UserProfilePremiumUpsellCard)
+// Module 13882 (UserProfilePremiumUpsellCard)
 import noop from "noop";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -30,11 +30,11 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   navigation = obj.useNavigation();
   const tmp = analyticsLocations;
   const tmp3 = callback(analyticsLocations(1609)().bottom);
-  let nitroTrialCtaOverride = navigation(6831).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
-  const obj2 = navigation(6831);
-  const tmp8 = analyticsLocations(5669);
+  let nitroTrialCtaOverride = navigation(6850).useNitroTrialCtaOverride("user_profile_premium_upsell_card");
+  const obj2 = navigation(6850);
+  const tmp8 = analyticsLocations(5688);
   const items = [isTryItOut ? tmp8.USER_SETTINGS_TRY_OUT_PREMIUM : tmp8.USER_SETTINGS_USER_PROFILE];
-  analyticsLocations = analyticsLocations(5649)(items).analyticsLocations;
+  analyticsLocations = analyticsLocations(5668)(items).analyticsLocations;
   const items1 = [navigation];
   callback = React.useCallback(() => {
     analyticsLocations(outer1_2[9]).setSection(outer1_7.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
@@ -48,7 +48,7 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
     analyticsLocations(outer1_2[10])(obj);
   }, items2);
   obj = { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null };
-  const tmp7 = analyticsLocations(5649);
+  const tmp7 = analyticsLocations(5668);
   if (isTryItOut) {
     if (nitroTrialCtaOverride == null) {
       const intl2 = tmp4(1236).intl;
@@ -72,6 +72,6 @@ export const UserProfilePremiumUpsellCard = function UserProfilePremiumUpsellCar
   } else {
     stringResult1 = string(t.Tii53U);
   }
-  obj[4] = jsx(navigation(4281).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
-  return jsx(tmp(13869), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
+  obj[4] = jsx(navigation(4298).Text, { variant: "text-sm/normal", maxFontSizeMultiplier: 2.5, children: stringResult1 });
+  return jsx(tmp(13883), { style: tmp3.container, ctaText: null, showLinearGradient: true, onPress: null, children: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 11045
+// Function ID: 11046
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4285, 712, 5377, 5251, 8064, 1297, 11031, 4281, 1236, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 5396, 5267, 8081, 1297, 11046, 4298, 1236, 2]
 // Exports: default
 
-// Module 11030 (PublicGuildAnnouncementProfile)
+// Module 11045 (PublicGuildAnnouncementProfile)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -28,28 +28,28 @@ export default function PublicGuildAnnouncementProfile() {
   let obj = { startExpanded: true, children: null };
   obj = { style: tmp.content, children: null };
   obj = { style: tmp.avatar, source: null };
-  let obj3 = require(8064) /* isPublicSystemMessage */;
+  let obj3 = require(8081) /* isPublicSystemMessage */;
   obj[1] = obj3.getPublicSystemMessageAvatar();
-  const items = [callback(importDefault(5251), obj), , , ];
+  const items = [callback(importDefault(5267), obj), , , ];
   const obj1 = { style: tmp.nameWrapper, children: null };
   const obj2 = { source: null, disableColor: true };
-  obj2[0] = importDefault(11031);
+  obj2[0] = importDefault(11046);
   const items1 = [callback(require(1297) /* Button */.Icon, obj2), ];
   obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.xfAlNx);
-  items1[1] = callback(require(4281) /* Text */.Text, obj3);
+  items1[1] = callback(require(4298) /* Text */.Text, obj3);
   obj1[1] = items1;
   items[1] = callback2(View, obj1);
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.BUZ0sl);
-  items[2] = callback(require(4281) /* Text */.Text, obj4);
+  items[2] = callback(require(4298) /* Text */.Text, obj4);
   const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj5[3] = intl3.string(require(1236) /* getSystemLocale */.t.w5beJH);
-  items[3] = callback(require(4281) /* Text */.Text, obj5);
+  items[3] = callback(require(4298) /* Text */.Text, obj5);
   obj[1] = items;
   obj[1] = callback2(View, obj);
-  return callback(require(5377) /* Background */.BottomSheet, obj);
+  return callback(require(5396) /* Background */.BottomSheet, obj);
 };

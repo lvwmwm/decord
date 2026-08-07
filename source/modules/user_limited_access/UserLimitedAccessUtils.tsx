@@ -1,10 +1,10 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9182
+// Function ID: 9183
 // Name: isLimitedAccessErrorCode
 // Dependencies: [676, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 9165 (isLimitedAccessErrorCode)
+// Module 9182 (isLimitedAccessErrorCode)
 import { AbortCodes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/user_limited_access/UserLimitedAccessUtils.tsx");

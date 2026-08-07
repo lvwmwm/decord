@@ -1,10 +1,10 @@
-// Module ID: 4381
-// Function ID: 4382
+// Module ID: 4398
+// Function ID: 4399
 // Name: BaseConnectionEvent
-// Dependencies: [4345, 4382, 4452, 2, 4392, 4453]
+// Dependencies: [4362, 4399, 4469, 2, 4409, 4470]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 4381 (BaseConnectionEvent)
+// Module 4398 (BaseConnectionEvent)
 import DesktopSources from "DesktopSources";
 
 let closure_2 = DesktopSources.MediaEngineImplementations;
@@ -22,12 +22,12 @@ export const determineMediaEngine = function determineMediaEngine() {
   ({ NATIVE: arr[0], WEBRTC: arr[1] } = closure_2);
   let DUMMY = items.find((arg0) => {
     if (constants.NATIVE === arg0) {
-      let _default = callback(4382).default;
+      let _default = callback(4399).default;
     } else {
       if (tmp.WEBRTC !== arg0) {
         const DUMMY = tmp.DUMMY;
       }
-      _default = callback(4452).default;
+      _default = callback(4469).default;
     }
     return _default.supported();
   });
@@ -38,12 +38,12 @@ export const determineMediaEngine = function determineMediaEngine() {
 };
 export const initializeMediaEngine = function initializeMediaEngine(BaseConnectionEvent) {
   if (constants.NATIVE === BaseConnectionEvent) {
-    let _default = require(4382) /* destroy */.default;
+    let _default = require(4399) /* destroy */.default;
   } else {
     if (tmp.WEBRTC !== BaseConnectionEvent) {
       const DUMMY = tmp.DUMMY;
     }
-    _default = require(4452) /* Video */.default;
+    _default = require(4469) /* Video */.default;
   }
   _default = new _default();
   return _default;

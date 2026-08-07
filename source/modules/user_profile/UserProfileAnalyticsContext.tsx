@@ -1,10 +1,10 @@
-// Module ID: 8711
-// Function ID: 8712
+// Module ID: 8728
+// Function ID: 8729
 // Name: UserProfileAnalyticsProvider
-// Dependencies: [19, 21, 5649, 8712, 514, 2]
+// Dependencies: [19, 21, 5668, 8729, 514, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8711 (UserProfileAnalyticsProvider)
+// Module 8728 (UserProfileAnalyticsProvider)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -34,7 +34,7 @@ export const UserProfileAnalyticsProvider = (children) => {
     ref1.current = openedAt;
     ref.current = undefined;
   }
-  obj = { analyticsLocations: importDefault(5649)().analyticsLocations, value };
+  obj = { analyticsLocations: importDefault(5668)().analyticsLocations, value };
   closure_6 = obj.useRef(obj);
   const effect = obj.useEffect(() => {
     closure_6.current = obj;
@@ -121,7 +121,7 @@ export const useCreateUserProfileAnalyticsContext = function useCreateUserProfil
 };
 export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsContext() {
   const context = importAllResult.useContext(closure_5);
-  analyticsLocations = analyticsLocations(5649)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5668)().analyticsLocations;
   const items = [context, analyticsLocations];
   const items1 = [context, analyticsLocations];
   const items2 = [context, analyticsLocations];

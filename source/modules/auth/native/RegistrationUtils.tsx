@@ -1,10 +1,10 @@
-// Module ID: 15003
-// Function ID: 15004
+// Module ID: 15019
+// Function ID: 15020
 // Name: trackRegTransition
-// Dependencies: [19, 4270, 8993, 14995, 14996, 676, 21, 698, 14993, 5260, 2]
+// Dependencies: [19, 4287, 9010, 15011, 15012, 676, 21, 698, 15009, 5276, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 15003 (trackRegTransition)
+// Module 15019 (trackRegTransition)
 import noop from "noop";
 import updateInvite from "updateInvite";
 import getDisplayedInviteCode from "getDisplayedInviteCode";
@@ -170,7 +170,7 @@ export function getTrackRegTransition(closure_0) {
 export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
   let dependencyMap;
   let importDefault;
-  _require = React.useContext(_require(14993).TrackRegistrationContext);
+  _require = React.useContext(_require(15009).TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
   let obj = {};
   const merged = Object.assign(arg0);
@@ -184,7 +184,7 @@ export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
       tmp();
     }
   };
-  return jsx(_require(5260).HeaderBackButton, {});
+  return jsx(_require(5276).HeaderBackButton, {});
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

@@ -1,10 +1,10 @@
-// Module ID: 9253
-// Function ID: 9254
+// Module ID: 9270
+// Function ID: 9271
 // Name: toAnnouncementMessages
-// Dependencies: [3922, 1935, 4511, 4472, 9254, 4504, 8245, 1236, 1467, 2]
+// Dependencies: [3939, 1935, 4528, 4489, 9271, 4521, 8262, 1236, 1467, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9253 (toAnnouncementMessages)
+// Module 9270 (toAnnouncementMessages)
 import { isMessageComponentsV2 } from "hasFlag";
 
 const re4 = /^#{1,3}\s+(.+)$/;
@@ -247,7 +247,7 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
   });
 };
 export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
-  let result = require(8245) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
+  let result = require(8262) /* formatExpirationLabel */.formatExpirationLabel(poll.expiry);
   if (result == null) {
     const intl = tmp(1236).intl;
     result = intl.string(tmp(1236).t["e+J3JZ"]);

@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15246
+// Function ID: 15247
 // Name: handlePress
-// Dependencies: [5, 19, 17, 676, 21, 4285, 712, 9370, 1974, 1988, 3981, 4827, 15223, 4281, 1236, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4302, 712, 9387, 1974, 1988, 3998, 4844, 15247, 4298, 1236, 1297, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15222 (handlePress)
+// Module 15246 (handlePress)
 import closure_3 from "createCacheKey";
 import "noop";
 import { Image } from "get ActivityIndicator";
@@ -110,7 +110,7 @@ export default function GuildMFAWarning() {
   const tmp = createCacheKey();
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
   obj = { style: tmp.MFAWarningIcon, source: null };
-  obj[1] = importDefault(15223);
+  obj[1] = importDefault(15247);
   const items = [callback2(Image, obj), ];
   obj = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -121,10 +121,10 @@ export default function GuildMFAWarning() {
   obj1[1] = items2;
   items1[1] = callback3(require(1297) /* Button */.LegacyText, obj1);
   obj[2] = items1;
-  items[1] = callback3(require(4281) /* Text */.Text, obj);
+  items[1] = callback3(require(4298) /* Text */.Text, obj);
   obj[3] = items;
-  return callback3(require(4827) /* PressableBase */.PressableOpacity, obj);
+  return callback3(require(4844) /* PressableBase */.PressableOpacity, obj);
 };
 export const getScaledGuildMFAWarningHeight = function getScaledGuildMFAWarningHeight(fontScale) {
-  return 83 + 5 * require(9370) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * require(9387) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
 };

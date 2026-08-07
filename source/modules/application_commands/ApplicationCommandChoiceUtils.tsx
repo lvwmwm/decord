@@ -1,10 +1,10 @@
-// Module ID: 9915
-// Function ID: 9916
+// Module ID: 9931
+// Function ID: 9932
 // Name: toChoiceBooleanValue
-// Dependencies: [7159, 4718, 2]
+// Dependencies: [7178, 4735, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 9915 (toChoiceBooleanValue)
+// Module 9931 (toChoiceBooleanValue)
 import handleInit from "handleInit";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 

@@ -1,10 +1,10 @@
-// Module ID: 4880
-// Function ID: 4881
+// Module ID: 4897
+// Function ID: 4898
 // Name: _shouldConvertToWebP
-// Dependencies: [5, 3, 4881, 1217, 2]
+// Dependencies: [5, 3, 4898, 1217, 2]
 // Exports: maybeConvertToWebP
 
-// Module 4880 (_shouldConvertToWebP)
+// Module 4897 (_shouldConvertToWebP)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

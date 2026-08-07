@@ -1,9 +1,9 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 16470
+// Function ID: 16471
 // Name: onPostConnectionOpen
-// Dependencies: [4503, 1340, 1372, 8101, 676, 687, 5244, 584, 7246, 7245, 709, 6838, 2]
+// Dependencies: [4520, 1340, 1372, 8118, 676, 687, 5260, 584, 7265, 7264, 709, 6857, 2]
 
-// Module 16443 (onPostConnectionOpen)
+// Module 16470 (onPostConnectionOpen)
 import dropChannelIfEmpty from "dropChannelIfEmpty";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -77,7 +77,7 @@ prototype["maybeReconcileServerDismissals"] = function maybeReconcileServerDismi
 prototype["isReconcileEligible"] = function isReconcileEligible(maybeReconcileServerDismissals) {
   let enabled = 0 !== store.getFriendAnniversaries().length;
   if (enabled) {
-    const FriendshipAnniversaryBackendPersistenceExperiment = require(7246) /* apexExperiment */.FriendshipAnniversaryBackendPersistenceExperiment;
+    const FriendshipAnniversaryBackendPersistenceExperiment = require(7265) /* apexExperiment */.FriendshipAnniversaryBackendPersistenceExperiment;
     const obj = { location: null };
     obj[0] = maybeReconcileServerDismissals;
     enabled = FriendshipAnniversaryBackendPersistenceExperiment.getConfig(obj).enabled;
@@ -100,8 +100,8 @@ prototype["attemptReconcileFetch"] = function attemptReconcileFetch() {
   const serverDismissalTimestampMs = this.getServerDismissalTimestampMs();
   if (!tmp2) {
     self.isReconciling = true;
-    const andReconcileGiftIntentDismissals = require(7245) /* fetchAndReconcileGiftIntentDismissals */.fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs);
-    const obj = require(7245) /* fetchAndReconcileGiftIntentDismissals */;
+    const andReconcileGiftIntentDismissals = require(7264) /* fetchAndReconcileGiftIntentDismissals */.fetchAndReconcileGiftIntentDismissals(serverDismissalTimestampMs);
+    const obj = require(7264) /* fetchAndReconcileGiftIntentDismissals */;
   }
 };
 prototype["onReconcileSuccess"] = function onReconcileSuccess(dismissals) {
@@ -202,7 +202,7 @@ prototype["maybeRetryHeldGiftingPromptSystemMessage"] = function maybeRetryHeldG
   }
 };
 prototype["shouldHoldGiftingPromptSystemMessageForServerReconcile"] = function shouldHoldGiftingPromptSystemMessageForServerReconcile(location) {
-  const FriendshipAnniversaryBackendPersistenceExperiment = require(7246) /* apexExperiment */.FriendshipAnniversaryBackendPersistenceExperiment;
+  const FriendshipAnniversaryBackendPersistenceExperiment = require(7265) /* apexExperiment */.FriendshipAnniversaryBackendPersistenceExperiment;
   let enabled = FriendshipAnniversaryBackendPersistenceExperiment.getConfig({ location }).enabled;
   if (enabled) {
     const self = this;
@@ -216,7 +216,7 @@ prototype["trySendGiftingPromptSystemMessage"] = function trySendGiftingPromptSy
     this.heldGiftingPromptSystemMessage = true;
     let flag = false;
   } else {
-    let obj = importDefault(6838);
+    let obj = importDefault(6857);
     obj = { giftIntentType: null, recipientUserId: null, giftIntentSecondaryAction: null };
     obj[0] = FRIEND_ANNIVERSARY;
     obj[1] = closure_0;

@@ -1,9 +1,9 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12604
+// Function ID: 12605
 // Name: launchMobile
-// Dependencies: [4603, 2]
+// Dependencies: [4620, 2]
 
-// Module 12589 (launchMobile)
+// Module 12604 (launchMobile)
 import { os } from "format";
 
 let family;

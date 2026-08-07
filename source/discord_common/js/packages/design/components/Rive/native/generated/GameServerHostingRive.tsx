@@ -1,9 +1,9 @@
-// Module ID: 4081
-// Function ID: 4082
+// Module ID: 4098
+// Function ID: 4099
 // Name: GameServerHostingRive
-// Dependencies: [109, 19, 21, 4013, 4082, 4064, 2]
+// Dependencies: [109, 19, 21, 4030, 4099, 4081, 2]
 
-// Module 4081 (GameServerHostingRive)
+// Module 4098 (GameServerHostingRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(4013) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(4030) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   },
   hytale_gameplay: function HytalegameplayBindings(arg0) {
@@ -27,7 +27,7 @@ let closure_9 = {
     let playIfNeeded;
     let reducedMotionEnabled;
     ({ instance, reducedMotionEnabled, playIfNeeded } = arg0);
-    const booleanBinding = require(4013) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
+    const booleanBinding = require(4030) /* BaseRive */.useBooleanBinding("reducedMotion", instance, reducedMotionEnabled, undefined, playIfNeeded);
     return null;
   }
 };
@@ -74,7 +74,7 @@ const forwardRefResult = importAllResult.forwardRef(function GameServerHostingRi
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4064) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/GameServerHostingRive.tsx");
 

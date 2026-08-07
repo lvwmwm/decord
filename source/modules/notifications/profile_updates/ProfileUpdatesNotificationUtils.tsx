@@ -1,17 +1,17 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14622
+// Function ID: 14623
 // Name: onProfileUpdatesNotificationSettingsChanged
-// Dependencies: [3924, 676, 3957, 698, 2]
+// Dependencies: [3941, 676, 3974, 698, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 14606 (onProfileUpdatesNotificationSettingsChanged)
+// Module 14622 (onProfileUpdatesNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 
 const result = require("explicitContentFromProto").fileFinishedImporting("modules/notifications/profile_updates/ProfileUpdatesNotificationUtils.tsx");
 
 export const onProfileUpdatesNotificationSettingsChanged = function onProfileUpdatesNotificationSettingsChanged(profile_updates_notifications) {
-  const EnableProfileUpdatesNotifications = require(3957) /* explicitContentFromProto */.EnableProfileUpdatesNotifications;
+  const EnableProfileUpdatesNotifications = require(3974) /* explicitContentFromProto */.EnableProfileUpdatesNotifications;
   EnableProfileUpdatesNotifications.updateSetting(profile_updates_notifications);
   let obj = importDefault(698);
   obj = { update_type: constants.ACCOUNT, profile_updates_notifications };

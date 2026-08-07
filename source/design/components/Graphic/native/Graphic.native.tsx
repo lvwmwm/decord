@@ -1,10 +1,10 @@
-// Module ID: 7656
-// Function ID: 7657
+// Module ID: 7675
+// Function ID: 7676
 // Name: ImageGraphic
-// Dependencies: [19, 17, 21, 4285, 5251, 3996, 4094, 2]
+// Dependencies: [19, 17, 21, 4302, 5267, 4013, 4111, 2]
 // Exports: Graphic
 
-// Module 7656 (ImageGraphic)
+// Module 7675 (ImageGraphic)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 const require = arg1;
 function ImageGraphic(source) {
   const tmp = callback();
-  return jsx(importDefault(5251), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
+  return jsx(importDefault(5267), { source: source.src, style: callback().image, resizeMode: "contain", accessibilityElementsHidden: true });
 }
 function RiveGraphic(riveProps) {
   riveProps = riveProps.riveProps;

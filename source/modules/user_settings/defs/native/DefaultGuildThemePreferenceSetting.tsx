@@ -1,9 +1,9 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14474
+// Function ID: 14475
 // Name: radio
-// Dependencies: [19, 8005, 3957, 1236, 1306, 10364, 4214, 2]
+// Dependencies: [19, 8022, 3974, 1236, 1306, 10380, 4231, 2]
 
-// Module 14458 (radio)
+// Module 14474 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -16,7 +16,7 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   useValue: require("explicitContentFromProto").DefaultGuildThemePreference.useSetting,
   onValueChange: function onDefaultGuildThemePreferenceChange(arg0) {
-    const DefaultGuildThemePreference = require(3957) /* explicitContentFromProto */.DefaultGuildThemePreference;
+    const DefaultGuildThemePreference = require(3974) /* explicitContentFromProto */.DefaultGuildThemePreference;
     DefaultGuildThemePreference.updateSetting(Number(arg0));
   },
   useOptions: function useDefaultGuildThemePreferenceOptions() {
@@ -35,7 +35,7 @@ createToggle = {
     }, []);
   },
   usePredicate() {
-    return require(4214) /* apexExperiment */.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
+    return require(4231) /* apexExperiment */.useServerThemeUserEnabled("DefaultGuildThemePreferenceSetting");
   }
 };
 createToggle = createToggle.createRadio(createToggle);

@@ -1,10 +1,10 @@
-// Module ID: 15461
-// Function ID: 15462
+// Module ID: 15485
+// Function ID: 15486
 // Name: context
 // Dependencies: [19, 21, 1474, 712, 2]
 // Exports: ICYMIContextProvider, useICYMIContextConstructor
 
-// Module 15461 (context)
+// Module 15485 (context)
 import { jsx } from "jsxProd";
 
 const context = require("noop").createContext({ width: 0, margin: 0, inset: 0 });

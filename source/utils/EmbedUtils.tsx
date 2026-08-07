@@ -1,10 +1,10 @@
-// Module ID: 4617
-// Function ID: 4618
+// Module ID: 4634
+// Function ID: 4635
 // Name: getEffectiveVideoProvider
-// Dependencies: [676, 4618, 11, 1384, 12, 3866, 688, 4506, 2]
+// Dependencies: [676, 4635, 11, 1384, 12, 3883, 688, 4523, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4617 (getEffectiveVideoProvider)
+// Module 4634 (getEffectiveVideoProvider)
 import ME from "ME";
 import { EMBED_TYPES_WITH_PARSEABLE_FIELDS as closure_6 } from "MessageEmbedTypes";
 
@@ -83,7 +83,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   }
   if (null != footer.timestamp) {
     const _Date = Date;
-    let tmpResult = tmp(3866);
+    let tmpResult = tmp(3883);
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
@@ -250,13 +250,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = obj6(4506).transformComponents(footer.components);
+    const transformComponentsResult = obj6(4523).transformComponents(footer.components);
     let tmp40;
     if (transformComponentsResult.length > 0) {
       tmp40 = transformComponentsResult;
     }
     obj.components = tmp40;
-    const obj17 = obj6(4506);
+    const obj17 = obj6(4523);
   }
   return obj;
 };

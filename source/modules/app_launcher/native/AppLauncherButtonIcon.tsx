@@ -1,10 +1,10 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11548
+// Function ID: 11549
 // Name: AppLauncherButtonIcon
-// Dependencies: [19, 17, 21, 4150, 1607, 9625, 7611, 2]
+// Dependencies: [19, 17, 21, 4167, 1607, 9641, 7630, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 11533 (AppLauncherButtonIcon)
+// Module 11548 (AppLauncherButtonIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,12 +25,12 @@ export const AppLauncherButtonIcon = function AppLauncherButtonIcon(style) {
     obj[0] = items1;
     items[1] = obj;
     obj.style = items;
-    let tmp4Result = tmp4(tmp6(9625).PlusLargeIcon, obj);
+    let tmp4Result = tmp4(tmp6(9641).PlusLargeIcon, obj);
   } else {
     const obj1 = { style: null };
     obj1[0] = style;
     const merged2 = Object.assign(merged);
-    tmp4Result = tmp4(tmp6(7611).AppsIcon, obj1);
+    tmp4Result = tmp4(tmp6(7630).AppsIcon, obj1);
   }
   obj[1] = tmp4Result;
   return <View style={{ overflow: "hidden" }}>{null}</View>;

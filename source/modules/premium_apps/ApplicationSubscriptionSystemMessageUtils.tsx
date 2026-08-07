@@ -1,10 +1,10 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8042
+// Function ID: 8043
 // Name: getApplicationSubscriptionSystemMessageASTContent
 // Dependencies: [1236, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 8025 (getApplicationSubscriptionSystemMessageASTContent)
+// Module 8042 (getApplicationSubscriptionSystemMessageASTContent)
 const result = require("set").fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
 
 export const getApplicationSubscriptionSystemMessageASTContent = function getApplicationSubscriptionSystemMessageASTContent(arg0) {

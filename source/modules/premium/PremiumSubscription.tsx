@@ -1,10 +1,10 @@
-// Module ID: 3942
-// Function ID: 3943
+// Module ID: 3959
+// Function ID: 3960
 // Name: getNonePlanIdForIntervalType
 // Dependencies: [1905, 2]
 // Exports: getBasePlanIdForSubscriptionItems, getBaseSubscriptionItemForSubscriptionItems, getNonePlanIdForIntervalType, getNonePlanIdForSubscription
 
-// Module 3942 (getNonePlanIdForIntervalType)
+// Module 3959 (getNonePlanIdForIntervalType)
 import GuildFeatures from "GuildFeatures";
 
 let c0;

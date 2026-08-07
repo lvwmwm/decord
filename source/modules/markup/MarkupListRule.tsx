@@ -1,9 +1,9 @@
-// Module ID: 4742
-// Function ID: 4743
+// Module ID: 4759
+// Function ID: 4760
 // Name: regExp
-// Dependencies: [3983, 38, 2]
+// Dependencies: [4000, 38, 2]
 
-// Module 4742 (regExp)
+// Module 4759 (regExp)
 import closure_10 from "t";
 
 const re2 = /\n{2,}$/;

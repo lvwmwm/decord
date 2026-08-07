@@ -1,10 +1,10 @@
-// Module ID: 8756
-// Function ID: 8757
+// Module ID: 8773
+// Function ID: 8774
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 4277, 589, 3996, 5671, 8236, 2]
+// Dependencies: [19, 4294, 589, 4013, 5690, 8253, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 8756 (useUserProfileGradientColors)
+// Module 8773 (useUserProfileGradientColors)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 
@@ -18,8 +18,8 @@ export const useUserProfileGradientColors = function useUserProfileGradientColor
   const items = [overlay];
   const stateFromStores = _require(589).useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
   let obj = _require(589);
-  let obj2 = _require(3996);
-  const profileThemeValues = _require(5671).useProfileThemeValues(obj2.useThemeContext().theme);
+  let obj2 = _require(4013);
+  const profileThemeValues = _require(5690).useProfileThemeValues(obj2.useThemeContext().theme);
   if (stateFromStores) {
     let prop;
     if (!tmp3) {

@@ -1,9 +1,9 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14488
+// Function ID: 14489
 // Name: toggle
-// Dependencies: [8005, 10364, 1236, 3030, 9629, 9638, 9628, 2]
+// Dependencies: [8022, 10380, 1236, 3030, 9645, 9654, 9644, 2]
 
-// Module 14472 (toggle)
+// Module 14488 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -13,7 +13,7 @@ const toggle = createToggle.createToggle({
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return require(9629) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return require(9645) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue: require("computeIsFavoritesGuildEnabled").useIsFavoritesGuildEnabled,
   onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings
@@ -25,7 +25,7 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.APPEARANCE,
   usePredicate() {
-    return require(9629) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
+    return require(9645) /* useFavoritesAccess */.useFavoritesAccess("FavoritesGuildToggleSetting").hasAccess;
   },
   useValue: require("computeIsFavoritesGuildEnabled").useIsFavoritesGuildEnabled,
   onValueChange: require("getNextPositionFromChannels").setFavoritesGuildVisibilityFromSettings

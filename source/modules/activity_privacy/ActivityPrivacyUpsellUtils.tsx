@@ -1,10 +1,10 @@
-// Module ID: 14012
-// Function ID: 14013
+// Module ID: 14026
+// Function ID: 14027
 // Name: computeAffectedGuilds
-// Dependencies: [5209, 4206, 1891, 5137, 1306, 5934, 1236, 3957, 2]
+// Dependencies: [5225, 4223, 1891, 5154, 1306, 5953, 1236, 3974, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 14012 (computeAffectedGuilds)
+// Module 14026 (computeAffectedGuilds)
 import handleChannelSelect from "handleChannelSelect";
 import handleInviteData from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -42,7 +42,7 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
         } else {
           EXPANDING = obj.EXPANDING;
         }
-        const dependencyMap = tmp8(5934).getSanitizedActivityRestrictedGuilds();
+        const dependencyMap = tmp8(5953).getSanitizedActivityRestrictedGuilds();
         flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
         if (setting !== tmp8(1306).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
           if (setting !== tmp8(1306).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
@@ -239,7 +239,7 @@ export const computeProfileToActivityUpsell = function computeProfileToActivityU
   if (ACTIVITY_STATUS_OFF == null) {
     ACTIVITY_STATUS_OFF = require(1306) /* create */.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
   }
-  const DefaultGuildsActivityRestrictedV2 = require(3957) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
+  const DefaultGuildsActivityRestrictedV2 = require(3974) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
   setting = DefaultGuildsActivityRestrictedV2.getSetting();
   if (setting === ACTIVITY_STATUS_OFF) {
     return null;
@@ -312,7 +312,7 @@ export const sortGuildIdsByFrecency = function sortGuildIdsByFrecency(guildIds) 
   });
 };
 export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
-  const obj = set(5934);
+  const obj = set(5953);
   const sanitizedActivityRestrictedGuilds = obj.getSanitizedActivityRestrictedGuilds();
   set = new Set(affectedGuildIds);
   if (direction === obj.RESTRICTING) {
@@ -320,7 +320,7 @@ export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictio
     const items = [];
     HermesBuiltin.arraySpread(tmp5, HermesBuiltin.arraySpread(sanitizedActivityRestrictedGuilds, 0));
     const set1 = new Set(items);
-    const ActivityRestrictedGuilds2 = tmp(3957).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds2 = tmp(3974).ActivityRestrictedGuilds;
     const items1 = [];
     HermesBuiltin.arraySpread(set1, 0);
     ActivityRestrictedGuilds2.updateSetting(items1);
@@ -328,7 +328,7 @@ export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictio
     const items2 = [];
     HermesBuiltin.arraySpread(sanitizedActivityRestrictedGuilds, 0);
     const found = items2.filter((arg0) => !set.has(arg0));
-    const ActivityRestrictedGuilds = tmp(3957).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = tmp(3974).ActivityRestrictedGuilds;
     ActivityRestrictedGuilds.updateSetting(found);
   }
 };

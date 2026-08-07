@@ -1,10 +1,10 @@
-// Module ID: 8415
-// Function ID: 8416
+// Module ID: 8432
+// Function ID: 8433
 // Name: useStableCallback
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 8415 (useStableCallback)
+// Module 8432 (useStableCallback)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useStableCallback.tsx");

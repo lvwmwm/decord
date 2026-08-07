@@ -1,9 +1,9 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16814
+// Function ID: 16815
 // Name: _fetch
-// Dependencies: [7081, 687, 5244, 10378, 1208, 10379, 500, 10387, 7096, 5146, 16795, 2]
+// Dependencies: [7100, 687, 5260, 10394, 1208, 10395, 500, 10403, 7115, 5163, 16815, 2]
 
-// Module 16794 (_fetch)
+// Module 16814 (_fetch)
 import initializeState from "initializeState";
 import "initialize";
 
@@ -106,7 +106,7 @@ class QuestFetchManager extends tmp2 {
   }
 }
 QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
-  let obj = require(10378) /* getIsEligibleForQuests */;
+  let obj = require(10394) /* getIsEligibleForQuests */;
   let isEligibleForQuests = obj.getIsEligibleForQuests();
   if (isEligibleForQuests) {
     isEligibleForQuests = !initializeState.isFetchingCurrentQuests;
@@ -122,21 +122,21 @@ QuestFetchManager.prototype["_fetch"] = function _fetch(arg0) {
     obj[4] = initializeState.isFetchingCurrentQuests;
     obj[2] = obj;
     importDefault(1208).addBreadcrumb(obj);
-    let tmpResult = tmp(10379);
+    let tmpResult = tmp(10395);
     const currentQuests = tmpResult.fetchCurrentQuests();
     tmpResult = tmp(500);
     let enableNewRequestBehavior = tmpResult.isMac();
     if (enableNewRequestBehavior) {
-      let tmp6Result = tmp6(10387);
+      let tmp6Result = tmp6(10403);
       enableNewRequestBehavior = "focused" !== tmp6Result.getState();
     }
     if (!enableNewRequestBehavior) {
-      tmp6Result = tmp6(7096);
+      tmp6Result = tmp6(7115);
       enableNewRequestBehavior = tmp6Result.getConfig({ location: "QuestFetchManager" }).enableNewRequestBehavior;
     }
     if (!enableNewRequestBehavior) {
-      const questToDeliver = tmp(10379).fetchQuestToDeliver(tmp(5146).AdPlacement.MOBILE_HOME_DOCK_AREA, arg0);
-      const tmpResult1 = tmp(10379);
+      const questToDeliver = tmp(10395).fetchQuestToDeliver(tmp(5163).AdPlacement.MOBILE_HOME_DOCK_AREA, arg0);
+      const tmpResult1 = tmp(10395);
     }
     const obj2 = importDefault(1208);
   }

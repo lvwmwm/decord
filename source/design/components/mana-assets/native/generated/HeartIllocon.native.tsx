@@ -1,10 +1,10 @@
-// Module ID: 6397
-// Function ID: 6398
+// Module ID: 6416
+// Function ID: 6417
 // Name: HeartIllocon
-// Dependencies: [21, 5251, 6398, 2]
+// Dependencies: [21, 5267, 6417, 2]
 // Exports: HeartIllocon
 
-// Module 6397 (HeartIllocon)
+// Module 6416 (HeartIllocon)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");
@@ -20,12 +20,12 @@ export const HeartIllocon = function HeartIllocon(size) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6398);
+  obj[0] = importDefault(6417);
   obj[1] = obj;
   const items = [{ width: num, height: num }];
   obj[2] = items;
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5251), { uri: null });
+  return jsx(importDefault(5267), { uri: null });
 };

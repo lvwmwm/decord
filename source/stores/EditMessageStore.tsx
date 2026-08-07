@@ -1,9 +1,9 @@
-// Module ID: 7062
-// Function ID: 7063
+// Module ID: 7081
+// Function ID: 7082
 // Name: initialize
-// Dependencies: [4502, 3957, 7063, 7066, 589, 709, 2]
+// Dependencies: [4519, 3974, 7082, 7085, 589, 709, 2]
 
-// Module 7062 (initialize)
+// Module 7081 (initialize)
 import reinjectEphemerals from "reinjectEphemerals";
 import { Store } from "initialize";
 
@@ -69,15 +69,15 @@ const editMessageStore = new EditMessageStore(require("dispatcher"), {
     let source;
     ({ channelId, content } = arg0);
     ({ messageId, source } = arg0);
-    const UseLegacyChatInput = require(3957) /* explicitContentFromProto */.UseLegacyChatInput;
+    const UseLegacyChatInput = require(3974) /* explicitContentFromProto */.UseLegacyChatInput;
     const setting = UseLegacyChatInput.getSetting();
-    let obj = importDefault(7063);
+    let obj = importDefault(7082);
     const unparseResult = obj.unparse(content, channelId);
     obj = { channelId, messageId, textValue: unparseResult, richValue: null };
     if (setting) {
       content = unparseResult;
     }
-    obj[3] = require(7066) /* createEmptyState */.toRichValue(content);
+    obj[3] = require(7085) /* createEmptyState */.toRichValue(content);
     closure_4[channelId] = obj;
     closure_5[channelId] = source;
   },

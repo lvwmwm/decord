@@ -1,9 +1,9 @@
-// Module ID: 11409
-// Function ID: 11410
+// Module ID: 11424
+// Function ID: 11425
 // Name: getApplicationIdFromApplicationItem
-// Dependencies: [32, 19, 17, 8262, 11373, 1479, 21, 4285, 712, 11356, 11361, 11410, 9467, 1236, 5354, 8261, 11359, 1609, 8446, 8260, 11372, 6903, 6901, 11411, 11412, 3997, 11395, 11387, 11407, 4281, 11413, 8586, 11414, 2]
+// Dependencies: [32, 19, 17, 8279, 11388, 1479, 21, 4302, 712, 11371, 11376, 11425, 9484, 1236, 5373, 8278, 11374, 1609, 8463, 8277, 11387, 6922, 6920, 11426, 11427, 4014, 11410, 11402, 11422, 4298, 11428, 8603, 11429, 2]
 
-// Module 11409 (getApplicationIdFromApplicationItem)
+// Module 11424 (getApplicationIdFromApplicationItem)
 import EmptyState from "EmptyState";
 import importAllResult from "isActivityInTextSupportedForChannel";
 import { View } from "useSafeAreaInsets";
@@ -48,16 +48,16 @@ function CommandRow(arg0) {
   let hasOptions;
   let onPressSend;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  let obj = hasOptions(11356);
+  let obj = hasOptions(11371);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     obj = { iconSource: null };
     obj[0] = appLauncherIconSource;
-    tmp4 = callback2(onPressSend(11361), obj);
+    tmp4 = callback2(onPressSend(11376), obj);
   }
-  let tmpResult = tmp(11410);
-  obj = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(9467).AppLauncherSectionName.SEARCH };
+  let tmpResult = tmp(11425);
+  obj = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(9484).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -80,15 +80,15 @@ function CommandRow(arg0) {
     }
   }, items1);
   const obj1 = { icon: tmp4, label: command.displayName, subLabel: null, subLabelLineClamp: 1, start: null, end: null, onPress: null, accessibilityActions: null, onAccessibilityAction: null, trailing: null };
-  tmpResult = tmp(8261);
+  tmpResult = tmp(8278);
   obj1[2] = tmpResult.getSectionName(application);
   obj1[4] = isFirstRow;
   obj1[5] = isLastRow;
   obj1[6] = onPress;
   obj1[7] = memo;
   obj1[8] = callback;
-  obj1[9] = callback2(onPressSend(11410), { hasOptions, sending: commandRowSend.sending, onPressSend });
-  return callback2(hasOptions(5354).TableRow, obj1);
+  obj1[9] = callback2(onPressSend(11425), { hasOptions, sending: commandRowSend.sending, onPressSend });
+  return callback2(hasOptions(5373).TableRow, obj1);
 }
 function PlaceholderCommandRow(isFirstRow) {
   let flag = isFirstRow.isFirstRow;
@@ -100,9 +100,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = callback3();
-  let obj = require(11359) /* usePlaceholderWidth */;
+  let obj = require(11374) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11359) /* usePlaceholderWidth */;
+  let obj1 = require(11374) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = { icon: null, label: null, subLabel: null, subLabelLineClamp: 1, start: null, end: null, onPress: null };
   obj = { style: tmp.loadingCommandAppIcon };
@@ -122,7 +122,7 @@ function PlaceholderCommandRow(isFirstRow) {
   obj[6] = function onPress() {
 
   };
-  return callback2(require(5354) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5373) /* TableRowInner */.TableRow, obj);
 }
 function keyExtractor(type) {
   if (type.type === obj.PLACERHOLDER) {

@@ -1,10 +1,10 @@
-// Module ID: 3931
-// Function ID: 3932
+// Module ID: 3948
+// Function ID: 3949
 // Name: createFromServer
 // Dependencies: [1912, 1905, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 3931 (createFromServer)
+// Module 3948 (createFromServer)
 import "toJS";
 import GuildFeatures from "GuildFeatures";
 

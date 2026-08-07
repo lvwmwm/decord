@@ -1,10 +1,10 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8711
+// Function ID: 8712
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 676, 4285, 712, 8456, 2]
+// Dependencies: [19, 676, 4302, 712, 8473, 2]
 // Exports: default
 
-// Module 8694 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 8711 (useExpressionPickerCategoriesPlaceholderConfig)
 import noop from "noop";
 import { CATEGORY_ICON_SIZE } from "ME";
 import createCacheKey from "createCacheKey";

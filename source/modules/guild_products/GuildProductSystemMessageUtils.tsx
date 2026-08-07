@@ -1,10 +1,10 @@
-// Module ID: 8024
-// Function ID: 8025
+// Module ID: 8041
+// Function ID: 8042
 // Name: getGuildProductPurchaseSystemMessageContentMobile
 // Dependencies: [676, 1236, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8024 (getGuildProductPurchaseSystemMessageContentMobile)
+// Module 8041 (getGuildProductPurchaseSystemMessageContentMobile)
 import { NOOP } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/guild_products/GuildProductSystemMessageUtils.tsx");

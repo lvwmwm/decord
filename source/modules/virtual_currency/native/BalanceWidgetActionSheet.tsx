@@ -1,10 +1,10 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10084
+// Function ID: 10085
 // Name: ref
-// Dependencies: [19, 17, 676, 1369, 21, 10069, 10070, 10071, 1236, 3975, 1974, 4003, 3988, 712, 698, 4100, 1358, 3996, 5377, 5251, 8793, 5633, 10072, 9326, 4281, 4695, 4285, 500, 2]
+// Dependencies: [19, 17, 676, 1369, 21, 10085, 10086, 10087, 1236, 3992, 1974, 4020, 4005, 712, 698, 4117, 1358, 4013, 5396, 5267, 8810, 5652, 10088, 9343, 4298, 4712, 4302, 500, 2]
 // Exports: default
 
-// Module 10068 (ref)
+// Module 10084 (ref)
 import preload from "preload";
 import get_ActivityIndicator from "ManaContext";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 8011
-// Function ID: 8012
+// Module ID: 8028
+// Function ID: 8029
 // Name: useIsCallActive
-// Dependencies: [4976, 4298, 4303, 589, 2]
+// Dependencies: [4993, 4315, 4320, 589, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8011 (useIsCallActive)
+// Module 8028 (useIsCallActive)
 import callConnect from "callConnect";
 import getParticipants from "getParticipants";
 import { ParticipantTypes } from "ParticipantTypes";

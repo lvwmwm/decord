@@ -1,9 +1,9 @@
-// Module ID: 14602
-// Function ID: 14603
+// Module ID: 14618
+// Function ID: 14619
 // Name: toggle
-// Dependencies: [8005, 10364, 1236, 3957, 14603, 2]
+// Dependencies: [8022, 10380, 1236, 3974, 14619, 2]
 
-// Module 14602 (toggle)
+// Module 14618 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({

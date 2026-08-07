@@ -1,10 +1,10 @@
-// Module ID: 3986
-// Function ID: 3987
+// Module ID: 4003
+// Function ID: 4004
 // Name: FriendsIcon
-// Dependencies: [19, 21, 712, 3987, 4222, 2]
+// Dependencies: [19, 21, 712, 4004, 4239, 2]
 // Exports: FriendsIcon
 
-// Module 3986 (FriendsIcon)
+// Module 4003 (FriendsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export const FriendsIcon = function FriendsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4222) /* registerAsset */;
+  obj[0] = require(4239) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);
-  return jsx(require(3987) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
+  return jsx(require(4004) /* BaseIconImage */.BaseIconImage, { source: null, color: null, style: null });
 };

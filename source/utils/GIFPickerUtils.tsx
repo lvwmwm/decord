@@ -1,22 +1,22 @@
-// Module ID: 9854
-// Function ID: 9855
+// Module ID: 9870
+// Function ID: 9871
 // Name: isKlipyProvider
-// Dependencies: [676, 9853, 2]
+// Dependencies: [676, 9869, 2]
 // Exports: calculateAnalyticsMetadata, getGIFThumbnailForFavorite, isKlipyProvider, shouldUseAnimatedWebPThumbnail
 
-// Module 9854 (isKlipyProvider)
+// Module 9870 (isKlipyProvider)
 import { SearchTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("utils/GIFPickerUtils.tsx");
 
 export const isKlipyProvider = function isKlipyProvider(arg0) {
-  return arg0 === require(9853) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME;
+  return arg0 === require(9869) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME;
 };
 export const shouldUseAnimatedWebPThumbnail = function shouldUseAnimatedWebPThumbnail(arg0) {
-  return arg0 === require(9853) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME;
+  return arg0 === require(9869) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME;
 };
 export const getGIFThumbnailForFavorite = function getGIFThumbnailForFavorite(providerName) {
-  if (providerName.providerName === require(9853) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME) {
+  if (providerName.providerName === require(9869) /* GIF_PROVIDER */.GIF_PROVIDER_EMBED_NAME) {
     const thumbnail = providerName.thumbnail;
     if (null != thumbnail) {
       let uri = thumbnail.proxyURL;

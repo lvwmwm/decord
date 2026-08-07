@@ -1,10 +1,10 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11023
+// Function ID: 11024
 // Name: shuffleProblems
-// Dependencies: [11005, 676, 12, 698, 3957, 1236, 2514, 2]
+// Dependencies: [11020, 676, 12, 698, 3974, 1236, 2514, 2]
 // Exports: getAudioFeedbackOptions, getConnectionFeedbackOptions, getPeopleFeedbackOptions, getStreamFeedbackOptions, getVideoBackgroundFeedbackOptions, getVideoFeedbackOptions, processOptOut, shuffleProblems
 
-// Module 11008 (shuffleProblems)
+// Module 11023 (shuffleProblems)
 import FeedbackRating from "FeedbackRating";
 import { AnalyticEvents } from "ME";
 
@@ -35,7 +35,7 @@ export const processOptOut = function processOptOut(feedbackType) {
   let obj = importDefault(698);
   obj = { feedback_type: table[feedbackType], opted_out_until: closure_10 };
   obj.track(AnalyticEvents.USER_SETTINGS_IN_APP_FEEDBACK_OPTED_OUT, obj);
-  const InAppFeedbackStates = feedbackType(3957).InAppFeedbackStates;
+  const InAppFeedbackStates = feedbackType(3974).InAppFeedbackStates;
   InAppFeedbackStates.updateSetting((arg0) => {
     let obj = {};
     const merged = Object.assign(arg0);

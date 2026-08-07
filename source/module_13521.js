@@ -1,17 +1,13 @@
 // Module ID: 13521
 // Function ID: 13522
-// Dependencies: [13489, 13490, 13522]
+// Dependencies: [13500]
 
 // Module 13521
-import getOwnPropertyDescriptor from "getOwnPropertyDescriptor";
-
-let tmp2 = !getOwnPropertyDescriptor;
-if (!getOwnPropertyDescriptor) {
-  tmp2 = !require("module_13490")(() => 7 !== Object.defineProperty(require(13522) /* element */("div"), "a", {
-    get() {
-      return 7;
-    }
-  }).a);
+const tmp = require("module_13500").navigator && require("module_13500").navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
 }
 
-export default tmp2;
+export default str;

@@ -1,10 +1,10 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13749
+// Function ID: 13750
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [9267, 503, 2]
+// Dependencies: [9284, 503, 2]
 // Exports: useTrackNavigatorScreenImpression
 
-// Module 13735 (useTrackNavigatorScreenImpression)
+// Module 13749 (useTrackNavigatorScreenImpression)
 const result = require("set").fileFinishedImporting("modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx");
 
 export const useTrackNavigatorScreenImpression = function useTrackNavigatorScreenImpression(impressionProperties, params) {
@@ -17,5 +17,5 @@ export const useTrackNavigatorScreenImpression = function useTrackNavigatorScree
   obj[0] = require(503) /* encodeProperties */.ImpressionTypes.PAGE;
   obj[1] = impressionProperties.impressionName;
   obj[2] = impressionPropertiesResult;
-  importDefault(9267)(obj);
+  importDefault(9284)(obj);
 };

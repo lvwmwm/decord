@@ -1,10 +1,10 @@
-// Module ID: 11901
-// Function ID: 11902
+// Module ID: 11916
+// Function ID: 11917
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 4123, 4628, 1236, 4628, 2]
+// Dependencies: [19, 21, 4140, 4645, 1236, 4645, 2]
 // Exports: default
 
-// Module 11901 (UserProfileConfirmThreadRemove)
+// Module 11916 (UserProfileConfirmThreadRemove)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -19,7 +19,7 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   let user;
   isForumPost = isForumPost.isForumPost;
   ({ user, onConfirm } = isForumPost);
-  let obj = importDefault(4123);
+  let obj = importDefault(4140);
   const name = obj.useName(user);
   const intl = require(1236) /* getSystemLocale */.intl;
   const t = require(1236) /* getSystemLocale */.t;
@@ -32,12 +32,12 @@ export default function UserProfileConfirmThreadRemove(isForumPost) {
   const intl3 = tmp4(1236).intl;
   obj1[1] = intl3.string(require(1236) /* getSystemLocale */.t.N86XcP);
   obj1[2] = onConfirm;
-  const items = [closure_3(require(4628) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
+  const items = [closure_3(require(4645) /* getAlertModalItemKey */.AlertActionButton, obj1, "remove-user-from-thread"), ];
   const obj2 = { variant: "secondary", text: null };
   const intl4 = tmp4(1236).intl;
   obj2[1] = intl4.string(require(1236) /* getSystemLocale */.t.yNbnce);
-  items[1] = closure_3(require(4628) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
+  items[1] = closure_3(require(4645) /* getAlertModalItemKey */.AlertActionButton, obj2, "cancel-remove-user-from-thread");
   obj[0] = items;
-  obj[2] = callback(require(4628) /* getAlertModalItemKey */.AlertActions, obj);
-  return closure_3(require(4628) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback(require(4645) /* getAlertModalItemKey */.AlertActions, obj);
+  return closure_3(require(4645) /* getAlertModalItemKey */.AlertModal, obj);
 };

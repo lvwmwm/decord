@@ -1,18 +1,18 @@
-// Module ID: 13993
-// Function ID: 13994
+// Module ID: 14007
+// Function ID: 14008
 // Name: useGoreContentNonFriendsDmSettingValue
-// Dependencies: [8005, 13981, 6980, 5838, 13982, 1236, 10364, 13984, 2]
+// Dependencies: [8022, 13995, 6999, 5857, 13996, 1236, 10380, 13998, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 13993 (useGoreContentNonFriendsDmSettingValue)
+// Module 14007 (useGoreContentNonFriendsDmSettingValue)
 import createToggle from "createToggle";
 
 function useGoreContentNonFriendsDmSettingValue() {
-  const obj = require(13981) /* useExplicitContentSettingOrDefault */;
-  return require(6980) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
+  const obj = require(13995) /* useExplicitContentSettingOrDefault */;
+  return require(6999) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentNonFriendDm)();
 }
 function onGoreContentNonFriendsDmOnPress() {
-  let obj = require(5838) /* resolveGoreSettingWithDefaults */;
+  let obj = require(5857) /* resolveGoreSettingWithDefaults */;
   obj = { title: null, subtitle: null, handlePress: null, currentValue: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["16/3Bi"]);
@@ -24,7 +24,7 @@ function onGoreContentNonFriendsDmOnPress() {
     return obj.updateGoreContentSetting(obj);
   };
   obj[3] = obj.getGoreContentSettingOrDefault().goreContentNonFriendDm;
-  const result = require(13982) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+  const result = require(13996) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
 }
 const pressable = createToggle.createPressable({
   useTitle: function getTitle() {

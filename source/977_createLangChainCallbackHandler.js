@@ -34,7 +34,7 @@ arg5.createLangChainCallbackHandler = function createLangChainCallbackHandler() 
     lc_namespace: ["langchain_core", "callbacks", "sentry"],
     lc_secrets: "r",
     lc_attributes: "accessible",
-    lc_aliases: "hash",
+    lc_aliases: "next",
     lc_serializable_keys: "channel_id",
     lc_id: ["langchain_core", "callbacks", "sentry"],
     lc_kwargs: {},
@@ -287,7 +287,7 @@ arg5.createLangChainCallbackHandler = function createLangChainCallbackHandler() 
       obj = { lc: 1, type: "not_implemented", id: obj.lc_id };
       return obj;
     },
-    toJSONNotImplemented: "drikkekartong"
+    toJSONNotImplemented: "keyExtractor is not defined. This might cause the animations to not work as expected."
   };
   obj[28] = function toJSONNotImplemented() {
     obj = { lc: 1, type: "not_implemented", id: obj.lc_id };

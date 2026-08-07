@@ -1,10 +1,10 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9654
+// Function ID: 9655
 // Name: computeIsFavoritesGuildEnabled
-// Dependencies: [1375, 9629, 589, 2]
+// Dependencies: [1375, 9645, 589, 2]
 // Exports: computeIsFavoritesGuildEnabled, getIsFavoritesGuildEnabled, useIsFavoritesGuildEnabled
 
-// Module 9638 (computeIsFavoritesGuildEnabled)
+// Module 9654 (computeIsFavoritesGuildEnabled)
 import initializeFromUserSettings from "initializeFromUserSettings";
 
 const require = arg1;
@@ -27,8 +27,8 @@ export const getIsFavoritesGuildEnabled = function getIsFavoritesGuildEnabled() 
   return favoriteGuildEnabled;
 };
 export const useIsFavoritesGuildEnabled = function useIsFavoritesGuildEnabled() {
-  isFreemium = isFreemium(9629).useFavoritesAccess("useIsFavoritesGuildEnabled").isFreemium;
-  const obj = isFreemium(9629);
+  isFreemium = isFreemium(9645).useFavoritesAccess("useIsFavoritesGuildEnabled").isFreemium;
+  const obj = isFreemium(9645);
   const items = [initializeFromUserSettings];
   return isFreemium(589).useStateFromStores(items, () => {
     if (isFreemium) {

@@ -1,9 +1,9 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14811
+// Function ID: 14812
 // Name: MobileSetting
-// Dependencies: [19, 5137, 13804, 14796, 8005, 4253, 14797, 1988, 10364, 2]
+// Dependencies: [19, 5154, 13818, 14812, 8022, 4270, 14813, 1988, 10380, 2]
 
-// Module 14795 (MobileSetting)
+// Module 14811 (MobileSetting)
 import noop from "noop";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import zustandStore from "zustandStore";
@@ -41,7 +41,7 @@ createToggle = {
   },
   parent: MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
-    importDefault(4253).openLazy(require(1988) /* asyncRequireImpl */(14797, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    importDefault(4270).openLazy(require(1988) /* asyncRequireImpl */(14813, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 createToggle = createToggle.createGuildSelector(createToggle);

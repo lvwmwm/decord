@@ -1,10 +1,10 @@
-// Module ID: 12428
-// Function ID: 12429
+// Module ID: 12443
+// Function ID: 12444
 // Name: ShopThisLookMarketingCoachmarkImage
-// Dependencies: [19, 17, 1369, 21, 4285, 6063, 1236, 8576, 2]
+// Dependencies: [19, 17, 1369, 21, 4302, 6082, 1236, 8593, 2]
 // Exports: default
 
-// Module 12428 (ShopThisLookMarketingCoachmarkImage)
+// Module 12443 (ShopThisLookMarketingCoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -13,7 +13,7 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 function ShopThisLookMarketingCoachmarkImage() {
-  return <View style={callback().imageContainer}>{jsx(require(6063) /* BumpingFistsSpotIllustration */.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>;
+  return <View style={callback().imageContainer}>{jsx(require(6082) /* BumpingFistsSpotIllustration */.BumpingFistsSpotIllustration, { width: 100, height: 56, resizeMode: "contain" })}</View>;
 }
 let closure_6 = createCacheKey.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 const result = require("ContentDismissActionType").fileFinishedImporting("modules/collectibles/shop_this_look/native/ShopThisLookMarketingCoachmark.tsx");

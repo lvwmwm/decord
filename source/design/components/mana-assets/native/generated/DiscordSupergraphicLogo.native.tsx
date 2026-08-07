@@ -1,10 +1,10 @@
-// Module ID: 6149
-// Function ID: 6150
+// Module ID: 6168
+// Function ID: 6169
 // Name: DiscordSupergraphicLogo
-// Dependencies: [17, 21, 712, 3988, 6150, 2]
+// Dependencies: [17, 21, 712, 4005, 6169, 2]
 // Exports: DiscordSupergraphicLogo
 
-// Module 6149 (DiscordSupergraphicLogo)
+// Module 6168 (DiscordSupergraphicLogo)
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 
@@ -31,7 +31,7 @@ export const DiscordSupergraphicLogo = function DiscordSupergraphicLogo(color) {
   if (num3 === undefined) {
     num3 = 1;
   }
-  let obj = require(3988) /* map */;
+  let obj = require(4005) /* map */;
   const token = obj.useToken(ICON_STRONG);
   if (null != token) {
     obj = { tintColor: null };
@@ -46,7 +46,7 @@ export const DiscordSupergraphicLogo = function DiscordSupergraphicLogo(color) {
     tmp5 = null != ICON_STRONG && typeof ICON_STRONG === "string";
   }
   const obj1 = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  obj1[1] = { uri: importDefault(6150) };
+  obj1[1] = { uri: importDefault(6169) };
   const items = [{ width: num * num3, height: num2 * num3 }, tmp6];
   obj1[2] = items;
   obj1[3] = accessible;

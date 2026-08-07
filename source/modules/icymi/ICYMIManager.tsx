@@ -1,9 +1,9 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13736
+// Function ID: 13737
 // Name: _initialize
-// Dependencies: [8836, 687, 4463, 709, 8837, 2]
+// Dependencies: [8853, 687, 4480, 709, 8854, 2]
 
-// Module 13722 (_initialize)
+// Module 13736 (_initialize)
 import "initialize";
 
 const require = arg1;
@@ -18,11 +18,11 @@ prototype["_terminate"] = function _terminate() {
   importDefault(709).unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen);
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  let obj = require(8837) /* apexExperiment */;
+  let obj = require(8854) /* apexExperiment */;
   if (obj.getICYMIEnabled("ICYMIManager")) {
     obj = { isInitialLoad: null };
     obj[0] = true;
-    const dehydrated = importDefault(8836).fetchDehydrated(obj);
+    const dehydrated = importDefault(8853).fetchDehydrated(obj);
     if (null != timeout) {
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
@@ -57,11 +57,11 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         }, 15 * callback(table[1]).Millis.MINUTE);
       }, 15 * callback(table[1]).Millis.MINUTE);
     }, 15 * tmp2(687).Millis.MINUTE);
-    let tmp2Result = tmp2(8836);
+    let tmp2Result = tmp2(8853);
     const guildChannelScores = tmp2Result.getGuildChannelScores();
-    tmp2Result = tmp2(8836);
+    tmp2Result = tmp2(8853);
     const recommendedGuilds = tmp2Result.getRecommendedGuilds();
-    const obj2 = importDefault(8836);
+    const obj2 = importDefault(8853);
   }
 };
 const iCYMIManager = new ICYMIManager();

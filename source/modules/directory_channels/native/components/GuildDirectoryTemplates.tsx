@@ -1,10 +1,10 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11628
+// Function ID: 11629
 // Name: GuildTemplatesItem
-// Dependencies: [19, 17, 11595, 11600, 21, 4285, 11614, 1297, 11615, 1480, 1609, 11599, 4281, 1236, 5688, 8389, 2]
+// Dependencies: [19, 17, 11610, 11615, 21, 4302, 11629, 1297, 11630, 1480, 1609, 11614, 4298, 1236, 5707, 8406, 2]
 // Exports: default
 
-// Module 11613 (GuildTemplatesItem)
+// Module 11628 (GuildTemplatesItem)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import DirectoryEntryTypes from "DirectoryEntryTypes";

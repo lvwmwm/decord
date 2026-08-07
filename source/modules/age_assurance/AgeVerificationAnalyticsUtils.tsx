@@ -1,10 +1,10 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7739
+// Function ID: 7740
 // Name: AgeVerificationModalEntryPoint
 // Dependencies: [1372, 676, 698, 2]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 7722 (AgeVerificationModalEntryPoint)
+// Module 7739 (AgeVerificationModalEntryPoint)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";
 
@@ -54,7 +54,7 @@ export const trackNsfwSpaceWarningModalClicked = function trackNsfwSpaceWarningM
   obj = { cta: NSFW_CHANNEL_AGREE_CTA, modal_type: modalType, channel_id: channelId, guild_id: guildId, has_channel_topic: tmp4 };
   obj.track(AnalyticEvents.NSFW_SPACE_WARNING_MODAL_CLICKED, obj);
 };
-export const AgeVerificationToastType = { VERIFIED_TEEN: "verified_teen", VERIFIED_ADULT: "verified_adult", ERROR: "error" };
+export const AgeVerificationToastType = { VERIFIED_TEEN: "verified_teen", VERIFIED_ADULT: "verified_adult", ERROR: "error", FAE_FAILED: "fae_failed", ID_FAILED: "id_failed", UNDERAGE: "underage" };
 export const trackAgeVerificationToastViewed = function trackAgeVerificationToastViewed(toast_type) {
   let obj = importDefault(698);
   obj = { toast_type };

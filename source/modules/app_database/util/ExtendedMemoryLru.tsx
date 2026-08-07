@@ -1,9 +1,9 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6879
+// Function ID: 6880
 // Name: totalLength
-// Dependencies: [32, 6861, 6862, 2]
+// Dependencies: [32, 6880, 6881, 2]
 
-// Module 6860 (totalLength)
+// Module 6879 (totalLength)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -126,19 +126,19 @@ prototype["allEntries"] = function allEntries() {
   const extended = this.extended;
   const primary = this.primary;
   const entries = extended.entries();
-  return importAll(6862).chain(entries, primary.entries());
+  return importAll(6881).chain(entries, primary.entries());
 };
 prototype["allKeys"] = function allKeys() {
   const extended = this.extended;
   const primary = this.primary;
   const keys = extended.keys();
-  return importAll(6862).chain(keys, primary.keys());
+  return importAll(6881).chain(keys, primary.keys());
 };
 prototype["allValues"] = function allValues() {
   const extended = this.extended;
   const primary = this.primary;
   const values = extended.values();
-  return importAll(6862).chain(values, primary.values());
+  return importAll(6881).chain(values, primary.values());
 };
 
 export { ExtendedMemoryLru };

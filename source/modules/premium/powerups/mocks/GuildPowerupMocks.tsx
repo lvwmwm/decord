@@ -1,9 +1,9 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11783
+// Function ID: 11784
 // Name: items
-// Dependencies: [4173, 2]
+// Dependencies: [4190, 2]
 
-// Module 11768 (items)
+// Module 11783 (items)
 import { GuildPowerupType } from "BoostedGuildTiers";
 
 let obj = { type: GuildPowerupType.LEVEL, skuId: "1", title: "Lorem ipsum", cost: 1, dependencies: [], features: { additional_emoji_slots: 50, additional_sound_slots: 50, additional_sticker_slots: 50, total_emoji_slots: 50, total_sound_slots: 50, total_sticker_slots: 50, features: [] } };

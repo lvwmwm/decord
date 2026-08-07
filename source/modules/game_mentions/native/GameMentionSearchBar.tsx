@@ -1,8 +1,8 @@
-// Module ID: 11692
-// Function ID: 11693
-// Dependencies: [19, 17, 21, 4285, 712, 11680, 8685, 4281, 1236, 7890, 2]
+// Module ID: 11707
+// Function ID: 11708
+// Dependencies: [19, 17, 21, 4302, 712, 11695, 8702, 4298, 1236, 7907, 2]
 
-// Module 11692
+// Module 11707
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,19 +28,19 @@ const memoResult = importAllResult.memo(function GameMentionSearchBar() {
   let obj = { style: tmp.container, children: null };
   obj = { accessible: true, accessibilityRole: "header", children: null };
   obj = { style: tmp.headerRow, children: null };
-  const items = [callback(require(8685) /* GameControllerIcon */.GameControllerIcon, { size: "sm", style: tmp.icon }), ];
+  const items = [callback(require(8702) /* GameControllerIcon */.GameControllerIcon, { size: "sm", style: tmp.icon }), ];
   const obj2 = { variant: null, color: "mobile-text-heading-primary", children: "@game" };
-  obj2[0] = require(11680) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT;
-  items[1] = callback(require(4281) /* Text */.Text, obj2);
+  obj2[0] = require(11695) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT;
+  items[1] = callback(require(4298) /* Text */.Text, obj2);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj3 = { style: tmp.description, variant: null, color: "text-muted", children: null };
-  obj3[1] = require(11680) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT;
+  obj3[1] = require(11695) /* useGameMentionSearchBarHeight */.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl.string(require(1236) /* getSystemLocale */.t["1kR88y"]);
-  items1[1] = callback(require(4281) /* Text */.Text, obj3);
+  items1[1] = callback(require(4298) /* Text */.Text, obj3);
   obj[2] = items1;
-  const items2 = [callback2(View, obj), callback(require(7890) /* Form */.FormDivider, { style: tmp.divider })];
+  const items2 = [callback2(View, obj), callback(require(7907) /* Form */.FormDivider, { style: tmp.divider })];
   obj[1] = items2;
   return callback2(View, obj);
 });

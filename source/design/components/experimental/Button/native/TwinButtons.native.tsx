@@ -1,10 +1,10 @@
-// Module ID: 8588
-// Function ID: 8589
+// Module ID: 8605
+// Function ID: 8606
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4285, 712, 4701, 4695, 2]
+// Dependencies: [19, 17, 21, 4302, 712, 4718, 4712, 2]
 // Exports: TwinButtons
 
-// Module 8588 (TwinButtons)
+// Module 8605 (TwinButtons)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -25,7 +25,7 @@ const result = require("jsxProd").fileFinishedImporting("design/components/exper
 
 export const TwinButtons = function TwinButtons(children) {
   let _require;
-  let obj = _require(4701);
+  let obj = _require(4718);
   let tmp = callback(obj.useFontScale() > 1.2);
   _require = tmp;
   obj = {

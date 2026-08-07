@@ -1,8 +1,8 @@
-// Module ID: 8696
-// Function ID: 8697
-// Dependencies: [19, 17, 676, 21, 4285, 712, 500, 8697, 2]
+// Module ID: 8713
+// Function ID: 8714
+// Dependencies: [19, 17, 676, 21, 4302, 712, 500, 8714, 2]
 
-// Module 8696
+// Module 8713
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -35,7 +35,7 @@ const memoResult = require("noop").memo(function EmojiPickerCategoriesBackdrop()
     obj[0] = tmp.backdrop;
     const obj1 = { style: null };
     obj1[0] = tmp.backdrop;
-    obj[1] = tmp3(importDefault(8697), obj1);
+    obj[1] = tmp3(importDefault(8714), obj1);
     tmp3Result = tmp3(tmp4, obj);
   }
   return tmp3Result;

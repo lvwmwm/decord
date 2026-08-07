@@ -1,10 +1,10 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 15665
+// Function ID: 15666
 // Name: SearchMediaObscurityIcon
-// Dependencies: [32, 19, 17, 5820, 21, 4285, 4221, 4130, 5834, 10100, 4791, 4685, 1473, 11321, 500, 1236, 9255, 9765, 8769, 589, 9724, 9796, 2]
+// Dependencies: [32, 19, 17, 5839, 21, 4302, 4238, 4147, 5853, 10116, 4808, 4702, 1473, 11336, 500, 1236, 9272, 9781, 8786, 589, 9740, 9812, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 15641 (SearchMediaObscurityIcon)
+// Module 15665 (SearchMediaObscurityIcon)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "initialize";
 import get_ActivityIndicator from "useEnabledHarmTypesBitmaskForChannelAndAuthorId";
@@ -108,7 +108,7 @@ let closure_14 = importAllResult.memo((containerWidth) => {
         obj[3] = tmp6;
         obj[4] = tmp7;
         const srcWithWidthAndHeight = obj.getSrcWithWidthAndHeight(obj);
-        let obj2 = containerHeight(11321);
+        let obj2 = containerHeight(11336);
         const obscuredAlt = obj2.getObscuredAlt(obscureReason);
         let tmp12 = null;
         if (null != obscureReason) {
@@ -148,7 +148,7 @@ let closure_14 = importAllResult.memo((containerWidth) => {
         obj5[2] = placeholder;
         obj5[3] = placeholderVersion;
         obj5[4] = stringResult;
-        const items4 = [callback2(containerHeight(9255).ImageWithPlaceholder, obj5), tmp12];
+        const items4 = [callback2(containerHeight(9272).ImageWithPlaceholder, obj5), tmp12];
         obj4[1] = items4;
         return callback3(closure_7, obj4);
       }
@@ -171,12 +171,12 @@ export const SearchAttachmentMediaImage = function SearchAttachmentMediaImage(at
   ({ channelId, authorId } = attachment);
   const merged = Object.assign(attachment, Object.create(null));
   let enabledHarmTypesBitmaskForChannelAndAuthorId;
-  let obj = attachment(9765);
+  let obj = attachment(9781);
   enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   const items = [attachment, enabledHarmTypesBitmaskForChannelAndAuthorId];
   const memo = importAllResult.useMemo(() => attachment(outer1_2[13]).getObscureReasonForAttachment(attachment, enabledHarmTypesBitmaskForChannelAndAuthorId), items);
   obj = {};
-  const attachmentUrl = attachment(8769).getAttachmentUrl(attachment);
+  const attachmentUrl = attachment(8786).getAttachmentUrl(attachment);
   const merged1 = Object.assign(merged);
   obj.obscureReason = memo;
   obj.mediaUrl = attachmentUrl;
@@ -193,7 +193,7 @@ export const SearchEmbedMediaImage = function SearchEmbedMediaImage(embed) {
   ({ channelId, authorId } = embed);
   const merged = Object.assign(embed, Object.create(null));
   let _slicedToArray;
-  let obj = embed(9765);
+  let obj = embed(9781);
   _slicedToArray = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   const items = [handleReaction];
   const thumbnail = embed.thumbnail;
@@ -216,11 +216,11 @@ export const SearchEmbedMediaImage = function SearchEmbedMediaImage(embed) {
   });
   const obj2 = embed(589);
   const tmp2 = embed;
-  const size = embed(8769).getEmbedMedia(embed);
+  const size = embed(8786).getEmbedMedia(embed);
   let embedUrl = null;
   if (null != size) {
-    embedUrl = tmp2(8769).getEmbedUrl(size);
-    let tmp2Result = tmp2(8769);
+    embedUrl = tmp2(8786).getEmbedUrl(size);
+    let tmp2Result = tmp2(8786);
   }
   if (null != thumbnail) {
     embedUrl = thumbnail.url;
@@ -250,7 +250,7 @@ export const SearchSoundMediaImage = function SearchSoundMediaImage(height) {
   const obj = { style: null, children: null };
   const items1 = [callback4().sound, height.containerStyle, importAllResult.useMemo(() => ({ height, width }), items)];
   obj[0] = items1;
-  obj[1] = callback2(height(9724).CirclePlayIcon, { size: "lg", color: "interactive-text-default" });
+  obj[1] = callback2(height(9740).CirclePlayIcon, { size: "lg", color: "interactive-text-default" });
   return callback2(closure_7, obj);
 };
 export const SearchFileMediaImage = function SearchFileMediaImage(height) {
@@ -263,7 +263,7 @@ export const SearchFileMediaImage = function SearchFileMediaImage(height) {
   const obj = { style: null, children: null };
   const items1 = [callback4().sound, containerStyle, importAllResult.useMemo(() => ({ height, width }), items)];
   obj[0] = items1;
-  obj[1] = callback2(height(9796).AttachmentIcon, { fileName });
+  obj[1] = callback2(height(9812).AttachmentIcon, { fileName });
   return callback2(closure_7, obj);
 };
 export const SearchComponentMediaImage = function SearchComponentMediaImage(unfurledMediaItem) {

@@ -1,10 +1,10 @@
-// Module ID: 11777
-// Function ID: 11778
+// Module ID: 11792
+// Function ID: 11793
 // Name: useShouldShowFileUploadRollback
-// Dependencies: [4172, 4173, 589, 4176, 11778, 4213, 2]
+// Dependencies: [4189, 4190, 589, 4193, 11793, 4230, 2]
 // Exports: useShouldShowFileUploadRollback
 
-// Module 11777 (useShouldShowFileUploadRollback)
+// Module 11792 (useShouldShowFileUploadRollback)
 import calculateAppliedBoosts from "calculateAppliedBoosts";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
 
@@ -17,11 +17,11 @@ export const useShouldShowFileUploadRollback = function useShouldShowFileUploadR
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_3.getStateForGuild(closure_0));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4176).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4193).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
   }
   const obj = _require(589);
-  const tmp5 = importDefault(11778)(guildId, tmp4);
-  let tmp6 = _require(4213).useFileUpload250MbPowerupRollbackEnabled(guildId, location) && null != tmp4 && null != tmp4.storeRemovalDate;
+  const tmp5 = importDefault(11793)(guildId, tmp4);
+  let tmp6 = _require(4230).useFileUpload250MbPowerupRollbackEnabled(guildId, location) && null != tmp4 && null != tmp4.storeRemovalDate;
   if (tmp6) {
     tmp6 = tmp5.type === PowerupActiveStatusType.POWERUP_ACTIVATED;
   }
