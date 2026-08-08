@@ -1,10 +1,10 @@
-// Module ID: 11609
-// Function ID: 11610
+// Module ID: 11675
+// Function ID: 11676
 // Name: guildDirectoryEntryFromServer
-// Dependencies: [11610, 38, 12, 2]
+// Dependencies: [11676, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 11609 (guildDirectoryEntryFromServer)
+// Module 11675 (guildDirectoryEntryFromServer)
 import { DirectoryEntryTypes } from "DirectoryEntryTypes";
 
 const result = require("apply").fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");

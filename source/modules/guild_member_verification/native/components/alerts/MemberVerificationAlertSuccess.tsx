@@ -1,10 +1,10 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8420
+// Function ID: 8421
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4294, 1891, 21, 4302, 589, 4730, 1236, 5659, 8361, 4298, 2]
+// Dependencies: [19, 17, 4295, 1891, 21, 4303, 589, 4732, 1236, 5719, 8421, 4299, 2]
 // Exports: default
 
-// Module 8360 (MemberVerificationAlertSuccess)
+// Module 8420 (MemberVerificationAlertSuccess)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

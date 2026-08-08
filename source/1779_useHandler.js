@@ -11,7 +11,7 @@ let c3;
 let obj1;
 ({ useEffect: obj1, useRef: c3 } = noop);
 
-export const useHandler = function useHandler(handler, items10) {
+export const useHandler = function useHandler(memoizedGestureCallbacks, items10) {
   let context;
   let savedDependencies;
   const tmp = callback2(null);
@@ -43,7 +43,7 @@ export const useHandler = function useHandler(handler, items10) {
       throw reanimatedError;
     }
   }
-  const dependencies = require(1780) /* isAnimated */.buildDependencies(items10, handler);
+  const dependencies = require(1780) /* isAnimated */.buildDependencies(items10, memoizedGestureCallbacks);
   const obj3 = require(1780) /* isAnimated */;
   const tmp9 = require;
   tmp.current.savedDependencies = dependencies;

@@ -1,10 +1,10 @@
-// Module ID: 12418
-// Function ID: 12419
+// Module ID: 12485
+// Function ID: 12486
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 7020, 1369, 687, 1452, 589, 5962, 1358, 2]
+// Dependencies: [32, 19, 7080, 1369, 687, 1452, 589, 6022, 1358, 2]
 // Exports: default
 
-// Module 12418 (useWishlistSuggestionsDismissibleContent)
+// Module 12485 (useWishlistSuggestionsDismissibleContent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createUserWidgetFromServer from "createUserWidgetFromServer";

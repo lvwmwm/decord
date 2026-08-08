@@ -1,10 +1,10 @@
-// Module ID: 10517
-// Function ID: 10518
+// Module ID: 10583
+// Function ID: 10584
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5260, 500, 691, 2]
+// Dependencies: [676, 5261, 500, 691, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 10517 (handleAppStateUpdate)
+// Module 10583 (handleAppStateUpdate)
 import { AnalyticEvents } from "ME";
 import "initialize";
 

@@ -1,10 +1,10 @@
-// Module ID: 7601
-// Function ID: 7602
+// Module ID: 7661
+// Function ID: 7662
 // Name: fetchCurrentAppIcon
-// Dependencies: [32, 5, 19, 17, 7602, 676, 1905, 3, 500, 7629, 7603, 4728, 709, 698, 4002, 1236, 5956, 1605, 2]
+// Dependencies: [32, 5, 19, 17, 7662, 676, 1905, 3, 500, 7689, 7663, 4730, 709, 698, 4002, 1236, 6016, 1605, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon, useAppIcons, useCurrentAppIcon
 
-// Module 7601 (fetchCurrentAppIcon)
+// Module 7661 (fetchCurrentAppIcon)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "ME";
 import noop from "noop";
@@ -44,7 +44,7 @@ function _fetchCurrentAppIcon() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ function _setAppIcon() {
         obj3[0] = callback;
         obj3[1] = callback2;
         let TIER_2 = null;
-        if (callback !== callback(7603).FreemiumAppIconIds.DEFAULT) {
+        if (callback !== callback(7663).FreemiumAppIconIds.DEFAULT) {
           TIER_2 = TIER_2.TIER_2;
         }
         obj3[2] = TIER_2;
@@ -186,7 +186,7 @@ if (set.isAndroid()) {
   DCDIconManager = require("isMetaQuest").NativeModules.DCDIconManager;
 }
 function useCurrentAppIcon() {
-  const tmp = callback(React.useState(_require(7603).FreemiumAppIconIds.DEFAULT), 2);
+  const tmp = callback(React.useState(_require(7663).FreemiumAppIconIds.DEFAULT), 2);
   _require = tmp[1];
   const importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -200,7 +200,7 @@ function useCurrentAppIcon() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -236,7 +236,7 @@ function useCurrentAppIcon() {
           callback = arg1;
           callback(callback);
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -244,7 +244,7 @@ function useCurrentAppIcon() {
       }
     }
   }), []);
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     callback();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", callback);
     return () => {
@@ -272,7 +272,7 @@ export const useAppIcons = function useAppIcons() {
   let closure_1;
   let tmp4;
   let tmp6;
-  const currentAppIcon = callback(React.useState(_require(7603).FreemiumAppIconIds.DEFAULT), 2);
+  const currentAppIcon = callback(React.useState(_require(7663).FreemiumAppIconIds.DEFAULT), 2);
   _require = currentAppIcon[1];
   const importDefault = React.useCallback(callback2(function*() {
     if (c3 === 2) {
@@ -286,7 +286,7 @@ export const useAppIcons = function useAppIcons() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -322,7 +322,7 @@ export const useAppIcons = function useAppIcons() {
           callback = arg1;
           callback(callback);
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -330,7 +330,7 @@ export const useAppIcons = function useAppIcons() {
       }
     }
   }), []);
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     callback();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", callback);
     return () => {
@@ -379,7 +379,7 @@ export const useAppIcons = function useAppIcons() {
     c4 = 0;
     return arg1;
   }), []);
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     dependencyMap();
     const subscription = callback(709).subscribe("APP_ICON_UPDATED", dependencyMap);
     return () => {
@@ -389,7 +389,7 @@ export const useAppIcons = function useAppIcons() {
   return { officialAppIcons, limitedTimeAppIcons, currentAppIcon: currentAppIcon[0] };
 };
 export const navigateToAppIconSettings = function navigateToAppIconSettings() {
-  let obj = require(5956) /* openUserSettings */;
+  let obj = require(6016) /* openUserSettings */;
   obj = { screen: constants.APP_ICONS };
   obj.openUserSettings(obj);
 };

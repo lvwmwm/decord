@@ -1,10 +1,10 @@
-// Module ID: 12718
-// Function ID: 12719
+// Module ID: 12788
+// Function ID: 12789
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 676, 21, 4302, 712, 5396, 7733, 4298, 1236, 1974, 2]
+// Dependencies: [17, 676, 21, 4303, 712, 5397, 7793, 4299, 1236, 1974, 2]
 // Exports: default
 
-// Module 12718 (NitroCreditEducationActionSheet)
+// Module 12788 (NitroCreditEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -27,18 +27,18 @@ export default function NitroCreditEducationActionSheet(children) {
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.aboutContainer, children: null };
-  const items = [callback(require(7733) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(4298) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) })];
+  const items = [callback(require(7793) /* CircleErrorIcon */.CircleErrorIcon, { size: "lg", style: tmp.warningIcon }), callback(View, { style: tmp.aboutTextContainer, children: callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) })];
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   const obj4 = { helpCenterLink: null };
   const obj1 = { size: "lg", style: tmp.warningIcon };
-  const obj2 = { style: tmp.aboutTextContainer, children: callback(require(4298) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) };
+  const obj2 = { style: tmp.aboutTextContainer, children: callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: children.aboutText }) };
   obj4[0] = importDefault(1974).getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT);
   obj3[3] = intl.format(require(1236) /* getSystemLocale */.t.bg3jBj, obj4);
-  items1[1] = callback(require(4298) /* Text */.Text, obj3);
+  items1[1] = callback(require(4299) /* Text */.Text, obj3);
   obj[1] = items1;
   obj[0] = callback2(View, obj);
-  return callback(require(5396) /* Background */.BottomSheet, obj);
+  return callback(require(5397) /* Background */.BottomSheet, obj);
 };

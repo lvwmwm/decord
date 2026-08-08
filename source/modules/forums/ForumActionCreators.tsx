@@ -1,9 +1,9 @@
-// Module ID: 8346
-// Function ID: 8347
+// Module ID: 8406
+// Function ID: 8407
 // Name: withErrorHandling
-// Dependencies: [5, 676, 4640, 1236, 709, 530, 7164, 8347, 8348, 8349, 7166, 2]
+// Dependencies: [5, 676, 4642, 1236, 709, 530, 7224, 8407, 8408, 8409, 7226, 2]
 
-// Module 8346 (withErrorHandling)
+// Module 8406 (withErrorHandling)
 import sendRequest from "sendRequest";
 import ME from "ME";
 
@@ -41,7 +41,7 @@ function _withErrorHandling() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ export default {
     let closure_1 = arg1;
     return callback(function*() {
       let closure_0 = tmp4;
-      const obj2 = v0(7164);
+      const obj2 = v0(7224);
       yield obj2.unarchiveThreadIfNecessary(outer1_0);
       const HTTP = outer1_0(530).HTTP;
       const obj3 = { url: null, body: null, rejectWithError: null };
@@ -218,19 +218,19 @@ export default {
     obj.dispatch(obj);
   },
   markPostAsSeen(arg0, feedItemId, timestampMillis) {
-    const obj = require(8347) /* markAnalyticsFeedItemSeen */;
-    const result = obj.markAnalyticsFeedItemSeen(require(8348) /* prototype */.getForumPostSeenManagerId(arg0), feedItemId, timestampMillis);
+    const obj = require(8407) /* markAnalyticsFeedItemSeen */;
+    const result = obj.markAnalyticsFeedItemSeen(require(8408) /* prototype */.getForumPostSeenManagerId(arg0), feedItemId, timestampMillis);
   },
   markPostAsUnseen(arg0, feedItemId, timestampMillis) {
-    const obj = require(8347) /* markAnalyticsFeedItemSeen */;
-    const result = obj.markAnalyticsFeedItemUnseen(require(8348) /* prototype */.getForumPostSeenManagerId(arg0), feedItemId, timestampMillis);
+    const obj = require(8407) /* markAnalyticsFeedItemSeen */;
+    const result = obj.markAnalyticsFeedItemUnseen(require(8408) /* prototype */.getForumPostSeenManagerId(arg0), feedItemId, timestampMillis);
   },
   flushSeenItems(arg0, IMMEDIATE_WITH_COOLDOWN) {
     if (IMMEDIATE_WITH_COOLDOWN === undefined) {
-      IMMEDIATE_WITH_COOLDOWN = require(8349) /* maybeMarkSeen */.ForceFlushType.IMMEDIATE_WITH_COOLDOWN;
+      IMMEDIATE_WITH_COOLDOWN = require(8409) /* maybeMarkSeen */.ForceFlushType.IMMEDIATE_WITH_COOLDOWN;
     }
-    const obj = require(8347) /* markAnalyticsFeedItemSeen */;
-    const result = obj.flushAnalyticsFeedItems(require(8348) /* prototype */.getForumPostSeenManagerId(arg0), IMMEDIATE_WITH_COOLDOWN);
+    const obj = require(8407) /* markAnalyticsFeedItemSeen */;
+    const result = obj.flushAnalyticsFeedItems(require(8408) /* prototype */.getForumPostSeenManagerId(arg0), IMMEDIATE_WITH_COOLDOWN);
   },
   searchForumPosts(guild_id, id, outer1_5, c1, c2) {
     let closure_0 = guild_id;
@@ -244,7 +244,7 @@ export default {
       obj1[1] = outer1_1;
       outer1_1(709).dispatch(obj1);
       let dependencyMap = 1;
-      const obj13 = outer1_1(7164);
+      const obj13 = outer1_1(7224);
       yield obj13.searchThreads(outer1_0, outer1_1, dependencyMap, c3, c4);
       if (1 === tmp7) {
         dependencyMap = 0;
@@ -262,8 +262,8 @@ export default {
         obj4[0] = length;
         obj4[1] = closure_1;
         obj4[2] = length.length;
-        outer1_0(7166).trackForumSearched(obj4);
-        const obj7 = outer1_0(7166);
+        outer1_0(7226).trackForumSearched(obj4);
+        const obj7 = outer1_0(7226);
         const obj5 = { type: "FORUM_SEARCH_SUCCESS", channelId: null, threadIds: null };
         obj5[1] = closure_1;
         obj5[2] = length;

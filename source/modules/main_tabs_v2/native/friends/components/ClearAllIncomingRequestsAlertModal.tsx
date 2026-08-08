@@ -1,10 +1,10 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15847
+// Function ID: 15848
 // Name: handleConfirm
-// Dependencies: [5, 19, 21, 9179, 4645, 1236, 4645, 2]
+// Dependencies: [5, 19, 21, 9243, 4647, 1236, 4647, 2]
 // Exports: default
 
-// Module 15772 (handleConfirm)
+// Module 15847 (handleConfirm)
 import getSystemLocale from "getSystemLocale";
 import "noop";
 import jsxProd from "jsxProd";
@@ -36,7 +36,7 @@ function _handleConfirm() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -98,12 +98,12 @@ export default function ClearAllIncomingRequestsAlertModal(incomingRequestCount)
   obj = { variant: "destructive", onPress: handleConfirm, text: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl3.string(require(1236) /* getSystemLocale */.t["cY+Oob"]);
-  const items = [callback2(require(4645) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
+  const items = [callback2(require(4647) /* getAlertModalItemKey */.AlertActionButton, obj, "confirm"), ];
   const obj1 = { variant: "secondary", text: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["ETE/oC"]);
-  items[1] = callback2(require(4645) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
+  items[1] = callback2(require(4647) /* getAlertModalItemKey */.AlertActionButton, obj1, "cancel");
   obj[0] = items;
-  obj[2] = callback3(require(4645) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback2(require(4645) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback3(require(4647) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback2(require(4647) /* getAlertModalItemKey */.AlertModal, obj);
 };

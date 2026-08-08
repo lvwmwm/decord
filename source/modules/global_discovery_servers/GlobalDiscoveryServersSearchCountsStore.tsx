@@ -1,9 +1,9 @@
-// Module ID: 12895
-// Function ID: 12896
+// Module ID: 12965
+// Function ID: 12966
 // Name: map
-// Dependencies: [4201, 589, 709, 2]
+// Dependencies: [4202, 589, 709, 2]
 
-// Module 12895 (map)
+// Module 12965 (map)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -21,7 +21,7 @@ prototype["handleSearchCountSuccess"] = function handleSearchCountSuccess(catego
   this.isInitialFetchComplete = true;
 };
 prototype["handleSearchCountFailure"] = function handleSearchCountFailure(error) {
-  const aPIError = new require(4201) /* V6OrEarlierAPIError */.APIError(error);
+  const aPIError = new require(4202) /* V6OrEarlierAPIError */.APIError(error);
   this.error = aPIError;
   this.isFetching = false;
 };

@@ -1,10 +1,10 @@
-// Module ID: 13127
-// Function ID: 13128
+// Module ID: 13197
+// Function ID: 13198
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5343, 6925, 6825, 12617, 1218, 676, 1379, 4366, 4514, 10554, 6937, 4285, 13128, 11212, 8022, 11964, 4507, 4153, 13129, 8723, 5956, 9268, 11124, 1872, 10346, 698, 10348, 5806, 10991, 11254, 13136, 11996, 10558, 1988, 10555, 10553, 13138, 13140, 1605, 4859, 13145, 3998, 13147, 1891, 5897, 8880, 8889, 5871, 4506, 10812, 4152, 5172, 1222, 709, 5122, 1467, 8961, 13150, 13165, 500, 13176, 9005, 13183, 4621, 13184, 6940, 5688, 9153, 7117, 5165, 11099, 9967, 13256, 5150, 10530, 9218, 9212, 4268, 2]
+// Dependencies: [109, 5, 5344, 6985, 6885, 12687, 1218, 676, 1379, 4368, 4516, 10620, 6997, 4286, 13198, 11278, 8082, 12030, 4509, 4159, 13199, 8783, 6016, 9333, 11190, 1872, 10412, 698, 10414, 5866, 11057, 11320, 13206, 12062, 10624, 1988, 10621, 10619, 13208, 13210, 1605, 4861, 13215, 3998, 13217, 1891, 5957, 8940, 8949, 5931, 4508, 10878, 4158, 5173, 1222, 709, 5123, 1467, 9021, 13220, 13235, 500, 13246, 9065, 13253, 4623, 13254, 7000, 5748, 9213, 7177, 5166, 11165, 10033, 13326, 5151, 10596, 9283, 9277, 4269, 2]
 // Exports: default
 
-// Module 13127 (handleSupportedURL)
+// Module 13197 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -386,7 +386,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -461,7 +461,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj2.openGuildEventDetails(obj4);
                   }
                   c4 = 3;
-                  return { value: "T", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp35) {
                 c4 = tmp;
@@ -493,7 +493,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -555,7 +555,7 @@ export default function handleSupportedURL(payload) {
                   obj3.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } catch (tmp37) {
                 c2 = tmp;
                 throw tmp37;
@@ -615,7 +615,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -801,7 +801,7 @@ export default function handleSupportedURL(payload) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "T", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -889,15 +889,15 @@ export default function handleSupportedURL(payload) {
               } else if (result.QUESTS === type) {
                 addPostConnectionCallback(() => {
                   if (null != payload.questId) {
-                    let obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
+                    let obj = payload(inviteCode[70]);
+                    obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
                     obj[0] = arr.questId;
                     obj[1] = outer1_12.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT;
                     obj[2] = payload(inviteCode[71]).QuestContent.QUEST_EMBED_MOBILE;
                     obj = { referrer_id: null };
                     obj[0] = arr.referrerId;
                     obj[3] = obj;
-                    payload(inviteCode[70]).trackQuestEvent(obj);
-                    const obj3 = payload(inviteCode[70]);
+                    obj.trackQuestEvent(obj);
                   }
                   let sort;
                   if (payload != null) {
@@ -907,26 +907,25 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
-                  obj = payload(inviteCode[72]);
                   const obj1 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp3 = null;
+                  let tmp9 = null;
                   if (null != sort) {
-                    tmp3 = null;
+                    tmp9 = null;
                     if ("" !== sort) {
-                      tmp3 = sort;
+                      tmp9 = sort;
                     }
                   }
-                  obj1[1] = tmp3;
-                  let tmp4 = null;
+                  obj1[1] = tmp9;
+                  let tmp10 = null;
                   if (null != filter) {
-                    tmp4 = null;
+                    tmp10 = null;
                     if ("" !== filter) {
-                      tmp4 = filter;
+                      tmp10 = filter;
                     }
                   }
-                  obj1[2] = tmp4;
+                  obj1[2] = tmp10;
                   obj1[3] = payload(inviteCode[71]).QuestContent.QUEST_SHARE_LINK;
-                  obj.openQuestHome(obj1);
+                  payload(inviteCode[72]).openQuestHome(obj1);
                 });
                 flag = true;
               } else if (result.QUEST_HOME_PREVIEW === type) {

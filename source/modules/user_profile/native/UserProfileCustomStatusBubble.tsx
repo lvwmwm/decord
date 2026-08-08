@@ -1,9 +1,9 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 9450
+// Function ID: 9451
 // Name: EmojiImage
-// Dependencies: [32, 19, 17, 5716, 1906, 21, 4302, 712, 3974, 5267, 1416, 500, 4298, 5359, 8728, 9386, 9387, 4270, 9389, 5688, 1236, 4844, 9462, 2]
+// Dependencies: [32, 19, 17, 5776, 1906, 21, 4303, 712, 3974, 5268, 1416, 500, 4299, 5360, 8788, 9451, 9452, 4271, 9454, 5748, 1236, 4846, 9527, 2]
 
-// Module 9385 (EmojiImage)
+// Module 9450 (EmojiImage)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "QUICK_SWITCHER";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -30,7 +30,7 @@ function EmojiImage(id) {
   let obj = { style: items, source: null, resizeMode: "contain" };
   items = [{ height: size, width: size }, id.style];
   const tmp2 = closure_8;
-  const tmp3 = importDefault(5267);
+  const tmp3 = importDefault(5268);
   obj = { id: id.emojiId, animated: null, size: null };
   const obj2 = importDefault(1416);
   obj = { uri: obj2.getEmojiURL(obj) };
@@ -103,7 +103,7 @@ function TextStatusContent(arg0) {
     }
     const items2 = [tmp7Result, text];
     obj[5] = items2;
-    return closure_10(require(4298) /* Text */.Text, obj);
+    return closure_10(require(4299) /* Text */.Text, obj);
   } else {
     obj1 = require(500) /* set */;
     obj1.isAndroid() ? { fontFamily: "ggsans-NormalItalic, NotoSans-NormalItalic" } : { fontStyle: "italic" };
@@ -145,7 +145,7 @@ function EmojiOnlyStatusContent(arg0) {
     str = "";
   }
   obj1[3] = str;
-  obj[1] = closure_8(importDefault(5359), obj1);
+  obj[1] = closure_8(importDefault(5360), obj1);
   return closure_8(tmp12, obj);
 }
 let c4 = importAllResult;
@@ -182,7 +182,7 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   return obj;
 });
 let closure_12 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_13 = { [arg1(5716).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_13 = { [arg1(5776).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_16 = createCacheKey.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus, ref) => {
   let customStatusActivity;

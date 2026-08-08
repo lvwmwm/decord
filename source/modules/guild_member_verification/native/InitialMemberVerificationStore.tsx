@@ -1,10 +1,10 @@
-// Module ID: 8357
-// Function ID: 8358
+// Module ID: 8417
+// Function ID: 8418
 // Name: map
 // Dependencies: [589, 709, 2]
 // Exports: setInitialVerification
 
-// Module 8357 (map)
+// Module 8417 (map)
 import { Store } from "initialize";
 
 const map = new Map();

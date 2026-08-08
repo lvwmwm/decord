@@ -1,10 +1,10 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 14997
+// Function ID: 14998
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 6816, 676, 21, 4302, 589, 8431, 5761, 5696, 7730, 2]
+// Dependencies: [5, 19, 17, 6876, 676, 21, 4303, 589, 8491, 5821, 5756, 7790, 2]
 // Exports: default
 
-// Module 14927 (ClipboardCopyInput)
+// Module 14997 (ClipboardCopyInput)
 import jsxProd from "jsxProd";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -62,7 +62,7 @@ export default function ClipboardCopyInput(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -141,7 +141,7 @@ export default function ClipboardCopyInput(arg0) {
                 }
               }
               v0 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp31) {
             v0 = tmp;

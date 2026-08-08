@@ -1,10 +1,10 @@
-// Module ID: 14134
-// Function ID: 14135
+// Module ID: 14204
+// Function ID: 14205
 // Name: EmptyStateCard
-// Dependencies: [19, 17, 676, 21, 4302, 712, 4238, 10425, 14135, 14136, 1416, 4147, 5375, 1297, 4270, 14132, 1988, 4298, 6902, 1609, 4710, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4239, 10491, 14205, 14206, 1416, 4153, 5376, 1297, 4271, 14202, 1988, 4299, 6962, 1609, 4712, 1236, 2]
 // Exports: default
 
-// Module 14134 (EmptyStateCard)
+// Module 14204 (EmptyStateCard)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { View } from "Text";
 import { AnalyticsLocations } from "ME";
@@ -60,8 +60,8 @@ function OtherConnectionsCard(count) {
   let obj = { onPress: callback, style: callback3().card, border: "strong", children: null };
   obj = { variant: "text-md/medium", color: "interactive-text-default", children: null };
   obj[2] = "+" + count.count;
-  obj[3] = callback(require(4298) /* Text */.Text, obj);
-  return callback(require(5375) /* PressableCard */.Card, obj);
+  obj[3] = callback(require(4299) /* Text */.Text, obj);
+  return callback(require(5376) /* PressableCard */.Card, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles(() => {
@@ -75,7 +75,7 @@ let result = require("ME").fileFinishedImporting("modules/user_settings/connecti
 
 export default function ConnectionsEmptyStateUpsell() {
   const tmp = callback3();
-  let obj = emptyStatePlatforms(6902);
+  let obj = emptyStatePlatforms(6962);
   emptyStatePlatforms = obj.useEmptyStatePlatforms();
   const items = [emptyStatePlatforms];
   const memo = React.useMemo(() => emptyStatePlatforms.slice(0, 3), items);
@@ -90,24 +90,24 @@ export default function ConnectionsEmptyStateUpsell() {
   const obj2 = { spacing: 16, direction: "vertical", align: "center", style: tmp.textContainer, children: null };
   const obj3 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
   obj3[3] = memo.map((platform) => callback(closure_9, { platform }, platform.type));
-  const items3 = [callback(emptyStatePlatforms(4710).Stack, obj3), ];
+  const items3 = [callback(emptyStatePlatforms(4712).Stack, obj3), ];
   const obj4 = { spacing: 16, justify: "center", direction: "horizontal", children: null };
   const items4 = [memo1.map((platform) => callback(closure_9, { platform }, platform.type)), callback(OtherConnectionsCard, { count: emptyStatePlatforms.length - 5 })];
   obj4[3] = items4;
-  items3[1] = callback2(emptyStatePlatforms(4710).Stack, obj4);
+  items3[1] = callback2(emptyStatePlatforms(4712).Stack, obj4);
   obj2[4] = items3;
-  const items5 = [callback2(emptyStatePlatforms(4710).Stack, obj2), ];
+  const items5 = [callback2(emptyStatePlatforms(4712).Stack, obj2), ];
   const obj6 = { spacing: 8, align: "center", style: tmp.textContainer, children: null };
   const obj7 = { variant: "text-lg/bold", color: "mobile-text-heading-primary", style: tmp.text, children: null };
   const intl = emptyStatePlatforms(1236).intl;
   obj7[3] = intl.string(emptyStatePlatforms(1236).t.JlrHXb);
-  const items6 = [callback(emptyStatePlatforms(4298).Text, obj7), ];
+  const items6 = [callback(emptyStatePlatforms(4299).Text, obj7), ];
   const obj8 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: null };
   const intl2 = emptyStatePlatforms(1236).intl;
   obj8[3] = intl2.string(emptyStatePlatforms(1236).t.XijaQP);
-  items6[1] = callback(emptyStatePlatforms(4298).Text, obj8);
+  items6[1] = callback(emptyStatePlatforms(4299).Text, obj8);
   obj6[3] = items6;
-  items5[1] = callback2(emptyStatePlatforms(4710).Stack, obj6);
+  items5[1] = callback2(emptyStatePlatforms(4712).Stack, obj6);
   obj1[1] = items5;
   obj[1] = callback2(View, obj1);
   return callback(View, obj);

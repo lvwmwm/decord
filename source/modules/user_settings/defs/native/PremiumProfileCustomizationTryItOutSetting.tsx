@@ -1,9 +1,9 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14822
+// Function ID: 14823
 // Name: route
-// Dependencies: [8022, 676, 10380, 1236, 14753, 2]
+// Dependencies: [8082, 676, 10446, 1236, 14823, 2]
 
-// Module 14752 (route)
+// Module 14822 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -18,7 +18,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.PROFILE_CUSTOMIZATION_TRY_IT_OUT,
   getComponent() {
-    return require(14753) /* ProfileCustomizationTryItOutSettingScreen */.default;
+    return require(14823) /* ProfileCustomizationTryItOutSettingScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

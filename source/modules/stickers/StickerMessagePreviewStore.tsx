@@ -1,9 +1,9 @@
-// Module ID: 4982
-// Function ID: 4983
+// Module ID: 4984
+// Function ID: 4985
 // Name: getStickerPreview
-// Dependencies: [4638, 589, 709, 2]
+// Dependencies: [4640, 589, 709, 2]
 
-// Module 4982 (getStickerPreview)
+// Module 4984 (getStickerPreview)
 import { DraftType } from "handleChanged";
 import { Store } from "initialize";
 

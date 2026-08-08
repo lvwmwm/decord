@@ -1,9 +1,9 @@
-// Module ID: 14408
-// Function ID: 14409
+// Module ID: 14478
+// Function ID: 14479
 // Name: render
-// Dependencies: [19, 5798, 21, 14409, 589, 2]
+// Dependencies: [19, 5858, 21, 14479, 589, 2]
 
-// Module 14408 (render)
+// Module 14478 (render)
 import importDefaultResult from "updateProduct";
 import { jsx } from "jsxProd";
 import { PureComponent } from "noop";
@@ -16,7 +16,7 @@ PremiumRestorationAlert.prototype["render"] = function render() {
   let isBusy;
   let onClose;
   ({ isBusy, onClose } = this.props);
-  return jsx(importDefault(14409), { loading, onClose });
+  return jsx(importDefault(14479), { loading, onClose });
 };
 const items = [importDefaultResult];
 const tmp4 = require("initialize").connectStores(items, () => ({ isBusy: importDefaultResult.isBusy() }))(PremiumRestorationAlert);

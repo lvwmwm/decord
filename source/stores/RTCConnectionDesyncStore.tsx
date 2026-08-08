@@ -1,9 +1,9 @@
-// Module ID: 12947
-// Function ID: 12948
+// Module ID: 13017
+// Function ID: 13018
 // Name: retryFailedUsers
-// Dependencies: [4319, 1372, 4373, 1903, 4318, 4374, 676, 4320, 4335, 4491, 8753, 4398, 589, 709, 2]
+// Dependencies: [4320, 1372, 4375, 1903, 4319, 4376, 676, 4321, 4337, 4493, 8813, 4400, 589, 709, 2]
 
-// Module 12947 (retryFailedUsers)
+// Module 13017 (retryFailedUsers)
 import isVoiceMuted from "isVoiceMuted";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
@@ -49,12 +49,12 @@ function retryFailedUsers() {
           obj[1] = user;
           obj[2] = user.id;
           obj[4] = tmp23;
-          obj[10] = guildId(4491).getName(guildId, tmp, user);
-          const obj2 = guildId(4491);
+          obj[10] = guildId(4493).getName(guildId, tmp, user);
+          const obj2 = guildId(4493);
           const tmp24 = outer1_8;
-          obj[11] = channelId(8753).getAvatarDecoration(user, guildId);
+          obj[11] = channelId(8813).getAvatarDecoration(user, guildId);
           const result1 = outer1_13.set(user.id, obj);
-          const obj3 = channelId(8753);
+          const obj3 = channelId(8813);
         }
       } else {
         outer1_14.delete(userId);
@@ -106,7 +106,7 @@ const rTCConnectionDesyncStore = new RTCConnectionDesyncStore(require("dispatche
     let context;
     let state;
     ({ state, context } = arg0);
-    let tmp = context === require(4398) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
+    let tmp = context === require(4400) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
     if (tmp) {
       if (state === constants.DISCONNECTED) {
         tmp3.clear();
@@ -151,7 +151,7 @@ const rTCConnectionDesyncStore = new RTCConnectionDesyncStore(require("dispatche
     let require;
     let userIds;
     ({ userIds, guildId: require, channelId: importDefault } = context);
-    let reduced = context.context === require(4398) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
+    let reduced = context.context === require(4400) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
     if (reduced) {
       reduced = userIds.reduce((arg0, userId) => {
         if (null != outer1_7.getVoiceStateForChannel(closure_1, userId)) {
@@ -192,7 +192,7 @@ const rTCConnectionDesyncStore = new RTCConnectionDesyncStore(require("dispatche
   },
   RTC_CONNECTION_CLIENT_DISCONNECT: function handleRTCConnectionClientDisconnect(userId) {
     userId = userId.userId;
-    let tmp = userId.context === require(4398) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
+    let tmp = userId.context === require(4400) /* BaseConnectionEvent */.MediaEngineContextTypes.DEFAULT;
     if (tmp) {
       let deleteResult = tmp3.delete(userId);
       const deleteResult1 = tmp4.delete(userId);

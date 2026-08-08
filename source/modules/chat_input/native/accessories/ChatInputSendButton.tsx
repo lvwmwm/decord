@@ -1,11 +1,11 @@
-// Module ID: 11558
-// Function ID: 11559
+// Module ID: 11624
+// Function ID: 11625
 // Name: renderChatInputSendButton
-// Dependencies: [32, 19, 17, 4294, 7086, 11302, 21, 4302, 712, 4005, 11550, 11559, 11543, 4248, 1236, 1348, 589, 4646, 11563, 4162, 2]
+// Dependencies: [32, 19, 17, 4295, 7146, 11368, 21, 4303, 712, 4005, 11616, 11625, 11609, 4249, 1236, 1348, 589, 4648, 11629, 4036, 2]
 
-// Module 11558 (renderChatInputSendButton)
+// Module 11624 (renderChatInputSendButton)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_4162";
+import importAllResult from "module_4036";
 import { View } from "wrapChildrenDefault";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import setCooldown from "setCooldown";
@@ -31,8 +31,8 @@ function FloatingSlot(arg0) {
   let sendVoiceMessageEnabled;
   ({ buttonHeight, buttonMargin } = arg0);
   ({ buttonWidth, sendVoiceMessageEnabled, children } = arg0);
-  const style = [{ height: buttonHeight }, importDefault(11563)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
-  return jsx(importDefault(4162).View, { style, children });
+  const style = [{ height: buttonHeight }, importDefault(11629)({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
+  return jsx(importDefault(4036).View, { style, children });
 }
 let c4 = importAllResult;
 let closure_10 = { BUTTON_SEND: "send-button", BUTTON_SEND_DISABLED: "send-button-disabled", BUTTON_SEND_VOICE_MESSAGE: "voice-message-button", BUTTON_SEND_VOICE_MESSAGE_DISABLED: "voice-message-button-disabled" };
@@ -62,17 +62,17 @@ let closure_12 = importAllResult.memo((type) => {
     num = closure_8;
   }
   obj = { cleanup, state, withBounce, bounceEnterDelayMs: num, children: null };
-  let tmp3Result = tmp3(11550);
+  let tmp3Result = tmp3(11616);
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     obj = { disabled: null, channelId: null };
     obj[0] = isOnCooldown;
     obj[1] = channelId;
-    let tmp7Result = tmp7(tmp3(11559), obj);
+    let tmp7Result = tmp7(tmp3(11625), obj);
   } else {
     obj1 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null, disabled: null };
     ({ button: obj4[1], buttonActive: obj4[2], iconActive: obj4[3] } = tmp5);
-    tmp3Result = tmp3(11543);
-    obj1[4] = tmp(4248).SendMessageIcon;
+    tmp3Result = tmp3(11609);
+    obj1[4] = tmp(4249).SendMessageIcon;
     const intl = tmp(1236).intl;
     obj1[5] = intl.string(tmp(1236).t.TXNS7S);
     obj1[6] = onSendMessage;

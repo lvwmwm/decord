@@ -1,10 +1,10 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13936
+// Function ID: 13937
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 6941, 6957, 647, 6953, 1236, 2]
+// Dependencies: [32, 19, 7001, 7017, 647, 7013, 1236, 2]
 // Exports: default
 
-// Module 13866 (useProfileEffectSections)
+// Module 13936 (useProfileEffectSections)
 import _slicedToArray from "_slicedToArray";
 import { useMemo } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

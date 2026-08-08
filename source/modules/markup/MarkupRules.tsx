@@ -1,10 +1,10 @@
-// Module ID: 4734
-// Function ID: 4735
+// Module ID: 4736
+// Function ID: 4737
 // Name: parseLink
-// Dependencies: [32, 853, 1372, 1964, 1891, 1903, 676, 4735, 4736, 4737, 1236, 4740, 1967, 4491, 4140, 4000, 4741, 4742, 4745, 3942, 4746, 4756, 4757, 4758, 4759, 4760, 4733, 4761, 12, 2]
+// Dependencies: [32, 853, 1372, 1964, 1891, 1903, 676, 4737, 4738, 4739, 1236, 4742, 1967, 4493, 4146, 4000, 4743, 4744, 4747, 3942, 4748, 4758, 4759, 4760, 4761, 4762, 4735, 4763, 12, 2]
 // Exports: hydrateCommandMention
 
-// Module 4734 (parseLink)
+// Module 4736 (parseLink)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -34,13 +34,13 @@ let c9;
 let unpackModuleId;
 const require = arg1;
 function parseLink(arg0) {
-  let obj = require(4737) /* validateContentTypes */;
+  let obj = require(4739) /* validateContentTypes */;
   const punycodeLinkResult = obj.punycodeLink(arg0[1]);
   if (null == punycodeLinkResult) {
     obj = { type: "text", content: null };
     obj[1] = arg0[1];
   } else {
-    obj = { type: "link", content: null, target: null, title: "channel" };
+    obj = { type: "link", content: null, target: null, title: "call" };
     const obj1 = { type: "text", content: null };
     obj1[1] = punycodeLinkResult.displayTarget;
     const items = [obj1];
@@ -78,7 +78,7 @@ function hydrateRoleMention(arg0, guildId) {
     if (guild != null) {
       id = guild.id;
     }
-    let hasEnhancedRoleColorsForRole = require(4740) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
+    let hasEnhancedRoleColorsForRole = require(4742) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColorsForRole(id, role);
     if (hasEnhancedRoleColorsForRole) {
       hasEnhancedRoleColorsForRole = !require(1967) /* extractColorStringsFromServerColors */.getIsDefaultErc(role);
       const tmp19Result = require(1967) /* extractColorStringsFromServerColors */;
@@ -138,13 +138,13 @@ function hydrateUserMention(everyoneOrHere, channelId) {
   if (null != str) {
     str = str.toString();
     if (null != channel) {
-      let nickname = importDefault(4491).getNickname(channel.getGuildId(), channelId.channelId, str);
+      let nickname = importDefault(4493).getNickname(channel.getGuildId(), channelId.channelId, str);
       if (nickname == null) {
-        nickname = tmp4(4140).getName(str);
-        const tmp4Result = tmp4(4140);
+        nickname = tmp4(4146).getName(str);
+        const tmp4Result = tmp4(4146);
       }
       str = nickname;
-      const obj2 = importDefault(4491);
+      const obj2 = importDefault(4493);
       tmp4 = importDefault;
     }
     tmp2 = str;
@@ -517,7 +517,7 @@ obj[19] = {
 obj[20] = require("getChannel").channelMention;
 obj[21] = require("getChannel").channelOrMessageUrl;
 obj[22] = require("getChannel").mediaPostLink;
-obj[23] = require("module_4745").attachmentLink;
+obj[23] = require("module_4747").attachmentLink;
 const obj10 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["@"],
@@ -706,22 +706,22 @@ obj[28] = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4746) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4748) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4746)(arg0, arg2);
+    return importDefault(4748)(arg0, arg2);
   }
 };
 const obj15 = {
   order: require("textRegexp").order,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const soundmojiRawFormatRegex = require(4746) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
+    const soundmojiRawFormatRegex = require(4748) /* getSoundmojiASTFromString */.soundmojiRawFormatRegex;
     return soundmojiRawFormatRegex.exec(arg0);
   },
   parse(arg0, arg1, arg2) {
-    return importDefault(4746)(arg0, arg2);
+    return importDefault(4748)(arg0, arg2);
   }
 };
 obj[29] = {
@@ -748,7 +748,7 @@ obj[30] = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4756) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4758) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -756,7 +756,7 @@ obj[30] = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4756) /* TIMESTAMP_FORMATS */;
+    let obj = require(4758) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
       obj = { type: "text", content: null };
@@ -773,7 +773,7 @@ const obj17 = {
   order: require("textRegexp").order - 1,
   requiredFirstCharacters: ["<"],
   match(arg0) {
-    const TIMESTAMP_REGEX = require(4756) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
+    const TIMESTAMP_REGEX = require(4758) /* TIMESTAMP_FORMATS */.TIMESTAMP_REGEX;
     return TIMESTAMP_REGEX.exec(arg0);
   },
   parse(arg0) {
@@ -781,7 +781,7 @@ const obj17 = {
     let tmp2;
     let tmp3;
     [tmp, tmp2, tmp3] = arg0;
-    let obj = require(4756) /* TIMESTAMP_FORMATS */;
+    let obj = require(4758) /* TIMESTAMP_FORMATS */;
     let parseTimestampResult = obj.parseTimestamp(tmp2, tmp3);
     if (null == parseTimestampResult) {
       obj = { type: "text", content: null };
@@ -824,9 +824,9 @@ obj[33] = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = callback(arg0, 3);
-    let obj = require(4757) /* staticRouteToTranslation */;
+    let obj = require(4759) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    let obj1 = require(4757) /* staticRouteToTranslation */;
+    let obj1 = require(4759) /* staticRouteToTranslation */;
     if (null != guildId.guildId) {
       let guild = store2.getGuild(guildId.guildId);
     } else {
@@ -883,7 +883,7 @@ obj[33] = {
 };
 obj[34] = require("match");
 obj[35] = require("regExp");
-obj[36] = require("module_4760");
+obj[36] = require("module_4762");
 let items = [obj, ];
 const obj20 = {
   order: require("textRegexp").order,
@@ -893,9 +893,9 @@ const obj20 = {
   },
   parse(arg0, arg1, guildId) {
     const tmp = callback(arg0, 3);
-    let obj = require(4757) /* staticRouteToTranslation */;
+    let obj = require(4759) /* staticRouteToTranslation */;
     const result = obj.staticRouteToTranslation(tmp2);
-    let obj1 = require(4757) /* staticRouteToTranslation */;
+    let obj1 = require(4759) /* staticRouteToTranslation */;
     if (null != guildId.guildId) {
       let guild = store2.getGuild(guildId.guildId);
     } else {

@@ -1,10 +1,10 @@
-// Module ID: 9100
-// Function ID: 9101
+// Module ID: 9160
+// Function ID: 9161
 // Name: _getFilterBlob
-// Dependencies: [5, 1903, 9101, 8212, 676, 38, 9103, 4398, 9106, 1416, 9102, 9105, 9107, 2]
+// Dependencies: [5, 1903, 9161, 8272, 676, 38, 9163, 4400, 9166, 1416, 9162, 9165, 9167, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 9100 (_getFilterBlob)
+// Module 9160 (_getFilterBlob)
 import module_38 from "module_38";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleSyncedStoresUpdate from "handleSyncedStoresUpdate";
@@ -40,7 +40,7 @@ function _getFilterBlob() {
   return applyArgumentsResult;
 }
 function applyBackgroundMediaFilterSettings(arg0, target, graph, image, blob) {
-  let obj = require(9103) /* _fetchVideoFilterAssets */;
+  let obj = require(9163) /* _fetchVideoFilterAssets */;
   obj = { graph, target, image, blob };
   const result = obj.applyMediaFilterSettings({ [arg0]: obj });
 }
@@ -75,7 +75,7 @@ function _applyBackgroundOption() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,13 +97,13 @@ function _applyBackgroundOption() {
               c5 = undefined;
               let module_38 = false;
               if (null == source) {
-                outer1_10(tmp57, tmp58, callback(4398).FilterSettingsGraph.NONE);
+                outer1_10(tmp57, tmp58, callback(4400).FilterSettingsGraph.NONE);
                 c9 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else if (tmp59 === c7) {
-                outer1_10(tmp57, tmp58, callback(4398).FilterSettingsGraph.BACKGROUND_BLUR);
+                outer1_10(tmp57, tmp58, callback(4400).FilterSettingsGraph.BACKGROUND_BLUR);
                 c9 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 if (typeof tmp59 !== "string") {
                   if (typeof tmp59 !== "number") {
@@ -168,7 +168,7 @@ function _applyBackgroundOption() {
                     }
                   }
                 }
-                const tmp24 = callback2(9106)()[tmp59];
+                const tmp24 = callback2(9166)()[tmp59];
                 const isVideo = tmp24.isVideo;
                 module_38 = isVideo;
                 if (isVideo == null) {
@@ -261,7 +261,7 @@ function _applyBackgroundOptionLive() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -287,7 +287,7 @@ function _applyBackgroundOptionLive() {
               location = flag.location;
               c4 = 1;
               c5 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -321,11 +321,11 @@ function _applyBackgroundOptionLive() {
               const result = obj.trackBackgroundOptionUpdated(callback, location, "Enabled");
             }
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp16) {
+        } catch (tmp24) {
           c5 = tmp;
-          throw tmp16;
+          throw tmp24;
         }
       }
     })();
@@ -361,7 +361,7 @@ function _applyBackgroundOptionPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -387,7 +387,7 @@ function _applyBackgroundOptionPreview() {
               location = flag.location;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -423,7 +423,7 @@ function _applyBackgroundOptionPreview() {
               const result1 = obj.trackBackgroundOptionUpdated(callback, location, "Preview");
             }
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c6 = tmp;
@@ -460,8 +460,8 @@ export const applyBackgroundOptionPreview = function applyBackgroundOptionPrevie
 export const applyInitialVideoBackgroundOption = function applyInitialVideoBackgroundOption() {
   currentUser = currentUser.getCurrentUser();
   if (null != currentUser) {
-    const lastUsedVideoBackgroundOption = require(9105) /* getLastUsedVideoBackgroundOption */.getLastUsedVideoBackgroundOption(currentUser);
-    let tmp6 = importDefault(9107)();
+    const lastUsedVideoBackgroundOption = require(9165) /* getLastUsedVideoBackgroundOption */.getLastUsedVideoBackgroundOption(currentUser);
+    let tmp6 = importDefault(9167)();
     if (tmp6) {
       tmp6 = !hasBeenApplied.hasBeenApplied;
     }
@@ -472,6 +472,6 @@ export const applyInitialVideoBackgroundOption = function applyInitialVideoBackg
       applyBackgroundOptionLive(lastUsedVideoBackgroundOption, { track: false }).catch(NOOP);
       const promise = applyBackgroundOptionLive(lastUsedVideoBackgroundOption, { track: false });
     }
-    const obj = require(9105) /* getLastUsedVideoBackgroundOption */;
+    const obj = require(9165) /* getLastUsedVideoBackgroundOption */;
   }
 };

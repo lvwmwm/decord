@@ -1,10 +1,10 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 14762
+// Function ID: 14763
 // Name: BugIcon
-// Dependencies: [19, 21, 712, 4004, 14693, 2]
+// Dependencies: [19, 21, 712, 4004, 14763, 2]
 // Exports: BugIcon
 
-// Module 14692 (BugIcon)
+// Module 14762 (BugIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BugIcon = function BugIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14693) /* registerAsset */;
+  obj[0] = require(14763) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

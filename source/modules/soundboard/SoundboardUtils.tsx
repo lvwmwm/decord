@@ -1,10 +1,10 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 5959
+// Function ID: 5960
 // Name: hasPermissionToPlaySound
-// Dependencies: [5, 1340, 1376, 3929, 1903, 4747, 4748, 676, 1338, 3974, 3947, 5900, 5893, 4754, 5901, 709, 5928, 5929, 5930, 647, 4140, 1358, 1355, 698, 4496, 2]
+// Dependencies: [5, 1340, 1376, 3929, 1903, 4749, 4750, 676, 1338, 3974, 3947, 5960, 5953, 4756, 5961, 709, 5988, 5989, 5990, 647, 4146, 1358, 1355, 698, 4498, 2]
 // Exports: getAmplitudinalSoundboardVolume, hasSetAnyCustomJoinSound, maybePlayCustomJoinSound, playSound, removeCustomJoinSound, trackCustomCallSoundExternallyDeleted, trackSoundFavorited, updateCustomJoinSound, useSoundBoardDismissContentTypes
 
-// Module 5899 (hasPermissionToPlaySound)
+// Module 5959 (hasPermissionToPlaySound)
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import { SILENT_JOIN_LEAVE_CHANNEL_TYPES as closure_5 } from "createChannelRecord";
@@ -88,7 +88,7 @@ function canUseSoundboardSound(closure_0, closure_1, channel) {
   return result;
 }
 function canMakeSound(channel) {
-  let obj = require(5900) /* getMuteStates */;
+  let obj = require(5960) /* getMuteStates */;
   obj = { channel };
   const muteStates = obj.getMuteStates(obj);
   const mute = muteStates.mute;
@@ -116,7 +116,7 @@ function _maybePlayCustomJoinSound() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ function _maybePlayCustomJoinSound() {
             }
           }
           sound2 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp33) {
           sound2 = tmp;
           throw tmp33;
@@ -237,10 +237,10 @@ export { hasPermissionToPlaySound };
 export { canUseSoundboardSound };
 export { canMakeSound };
 export const playSound = function playSound(soundId, channelId) {
-  let obj = require(5893) /* _fetchDefaultSoundsFromApi2 */;
-  obj.playSoundLocally(channelId, soundId, require(4754) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
-  const result = require(5901) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
-  const obj2 = require(5901) /* VoiceChannelEffectSentLocation */;
+  let obj = require(5953) /* _fetchDefaultSoundsFromApi2 */;
+  obj.playSoundLocally(channelId, soundId, require(4756) /* SoundButtonOverlay */.LocalSoundTrigger.SOUNDBOARD);
+  const result = require(5961) /* VoiceChannelEffectSentLocation */.sendVoiceChannelSoundboardEffect(channelId, soundId, false, arg2, arg3);
+  const obj2 = require(5961) /* VoiceChannelEffectSentLocation */;
   obj = { type: "SOUNDBOARD_TRACK_USAGE", soundId: soundId.soundId };
   importDefault(709).dispatch(obj);
 };
@@ -286,8 +286,8 @@ export const useSoundBoardDismissContentTypes = function useSoundBoardDismissCon
     const _Object = Object;
     const values = Object.values(guilds);
     if (!values.some((joinSound) => null != joinSound.joinSound)) {
-      const result = tmp(4140).ageEligibleForPremiumUpsell(stateFromStores);
-      const tmpResult = tmp(4140);
+      const result = tmp(4146).ageEligibleForPremiumUpsell(stateFromStores);
+      const tmpResult = tmp(4146);
       const obj5 = importDefault(3947);
       if (tmp9) {
         items1.push(tmp(1358).DismissibleContent.CUSTOM_CALL_SOUNDS_PICKER_UPSELL);
@@ -362,7 +362,7 @@ export const trackCustomCallSoundExternallyDeleted = function trackCustomCallSou
 };
 export const trackSoundFavorited = function trackSoundFavorited(location) {
   const sound = location.sound;
-  let obj = importDefault(4496);
+  let obj = importDefault(4498);
   obj = { location: location.location, expression_type: ExpressionPickerViewType.SOUNDBOARD, expression_id: sound.soundId, expression_name: sound.name, expression_guild_id: sound.guildId };
   obj.trackWithMetadata(constants2.EXPRESSION_FAVORITED, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7534
-// Function ID: 7535
+// Module ID: 7594
+// Function ID: 7595
 // Name: useBuyNitroExperiment
-// Dependencies: [32, 19, 6825, 5656, 7535, 2]
+// Dependencies: [32, 19, 6885, 5716, 7595, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 7534 (useBuyNitroExperiment)
+// Module 7594 (useBuyNitroExperiment)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore";
@@ -17,7 +17,7 @@ export const useBuyNitroExperiment = function useBuyNitroExperiment(isNitroHomeS
   let userHasSubscription;
   isNitroHomeSurface = isNitroHomeSurface.isNitroHomeSurface;
   ({ userHasSubscription, isConfirmedNonSubscriber } = isNitroHomeSurface);
-  let canRenderRedesignUpsellEarly = importDefault(5656)(() => callback(table[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
+  let canRenderRedesignUpsellEarly = importDefault(5716)(() => callback(table[4]).getMobileNitroMarketingRedesignExperiment({ location: "PremiumMarketingPage" }));
   const tmp3 = callback(React.useState(false), 2);
   const first = tmp3[0];
   let showRedesignUpsell = canRenderRedesignUpsellEarly;

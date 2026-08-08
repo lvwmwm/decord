@@ -1,10 +1,10 @@
-// Module ID: 11832
-// Function ID: 11833
+// Module ID: 11898
+// Function ID: 11899
 // Name: GuildPowerupsDeactivateAlert
-// Dependencies: [17, 21, 4302, 712, 11833, 11834, 11835, 4645, 7733, 1236, 2316, 4645, 4298, 2]
+// Dependencies: [17, 21, 4303, 712, 11899, 11900, 11901, 4647, 7793, 1236, 2316, 4647, 4299, 2]
 // Exports: default
 
-// Module 11832 (GuildPowerupsDeactivateAlert)
+// Module 11898 (GuildPowerupsDeactivateAlert)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -31,17 +31,17 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   let importDefault;
   const tmp = callback2();
   _require = tmp;
-  ({ onDeactivate: c1, error } = importDefault(11833)(guildId, powerup));
+  ({ onDeactivate: c1, error } = importDefault(11899)(guildId, powerup));
   const tmp2 = importDefault;
-  const tmp4 = importDefault(11833)(guildId, powerup);
-  let obj = _require(11835);
-  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, _require(11835).ModalType.DEACTIVATE);
+  const tmp4 = importDefault(11899)(guildId, powerup);
+  let obj = _require(11901);
+  const logPowerupModalOpened = obj.useLogPowerupModalOpened(guildId, powerup, _require(11901).ModalType.DEACTIVATE);
   obj = { header: null, title: null, content: null, actions: null, extraContent: null };
   obj = { style: tmp.headerContainer, children: null };
   const obj1 = { color: null, size: "custom", style: null };
   obj1[0] = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
   obj1[2] = { width: 40, height: 40 };
-  obj[1] = callback(_require(7733).CircleErrorIcon, obj1);
+  obj[1] = callback(_require(7793).CircleErrorIcon, obj1);
   obj[0] = callback(View, obj);
   const intl = _require(1236).intl;
   obj[1] = intl.formatToPlainString(importDefault(2316).iEBw1M, { perk: powerup.title });
@@ -52,7 +52,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
     const obj4 = { style: null, variant: "text-xs/semibold", color: "text-feedback-critical", children: null };
     obj4[0] = tmp.warningText;
     obj4[3] = error;
-    tmp7Result = tmp7(tmp5(4298).Text, obj4);
+    tmp7Result = tmp7(tmp5(4299).Text, obj4);
   }
   const obj5 = { children: null };
   const items = [tmp7Result, , ];
@@ -66,7 +66,7 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   };
   const intl3 = tmp5(1236).intl;
   obj6[2] = intl3.string(tmp2(2316).PYPdl4);
-  items[1] = callback(_require(4645).AlertActionButton, obj6, "deactivate");
+  items[1] = callback(_require(4647).AlertActionButton, obj6, "deactivate");
   const obj7 = {
     onPress() {
 
@@ -76,17 +76,17 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
   };
   const intl4 = tmp5(1236).intl;
   obj7[2] = intl4.string(_require(1236).t["ETE/oC"]);
-  items[2] = callback(_require(4645).AlertActionButton, obj7, "cancel");
+  items[2] = callback(_require(4647).AlertActionButton, obj7, "cancel");
   obj5[0] = items;
-  obj[3] = closure_5(_require(4645).AlertActions, obj5);
-  const arr = importDefault(11834)(guildId, powerup);
+  obj[3] = closure_5(_require(4647).AlertActions, obj5);
+  const arr = importDefault(11900)(guildId, powerup);
   const obj2 = { perk: powerup.title };
   const obj3 = { perk: powerup.title };
   const tmp8 = View;
   const tmp9 = closure_5;
   obj[4] = callback(tmp8, {
     style: tmp.extraContentContainer,
-    children: importDefault(11834)(guildId, powerup).map((critical) => {
+    children: importDefault(11900)(guildId, powerup).map((critical) => {
       const obj = { style: _undefined.warningText, variant: null, color: null, children: null };
       let str = "text-sm/medium";
       if (critical.critical) {
@@ -102,5 +102,5 @@ export default function GuildPowerupsDeactivateAlert(arg0) {
       return outer1_4(_undefined(outer1_2[12]).Text, obj, arg1);
     })
   });
-  return callback(_require(4645).AlertModal, obj);
+  return callback(_require(4647).AlertModal, obj);
 };

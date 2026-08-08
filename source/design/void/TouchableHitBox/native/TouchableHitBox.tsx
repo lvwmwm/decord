@@ -1,9 +1,9 @@
-// Module ID: 8997
-// Function ID: 8998
+// Module ID: 9057
+// Function ID: 9058
 // Name: render
-// Dependencies: [19, 17, 21, 4302, 712, 4013, 1297, 4844, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4013, 1297, 4846, 2]
 
-// Module 8997 (render)
+// Module 9057 (render)
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -116,7 +116,7 @@ TouchableHitBox.prototype["render"] = function render() {
   }
   obj3[7] = disabled;
   obj3[8] = tmp8Result;
-  return jsx(require(4844) /* PressableBase */.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3, disabled: null, children: null });
+  return jsx(require(4846) /* PressableBase */.PressableOpacity, { accessibilityRole, accessibilityLabel, accessibilityState, onPress, onLongPress, activeOpacity, style: items3, disabled: null, children: null });
 };
 TouchableHitBox.contextType = require("ManaContext").ThemeContext;
 TouchableHitBox.defaultProps = {

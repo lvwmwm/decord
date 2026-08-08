@@ -1,10 +1,10 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8553
+// Function ID: 8554
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 6995, 6997, 8494, 692, 8495, 8496, 589, 8507, 8498, 8509, 1236, 2]
+// Dependencies: [5, 19, 7055, 7057, 8554, 692, 8555, 8556, 589, 8567, 8558, 8569, 1236, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 8493 (useConversationsHeaderButton)
+// Module 8553 (useConversationsHeaderButton)
 import set from "set";
 import noop from "noop";
 import removePendingListFetch from "removePendingListFetch";
@@ -50,7 +50,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

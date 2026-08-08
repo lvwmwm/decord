@@ -1,10 +1,10 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8140
+// Function ID: 8141
 // Name: getTagProperties
-// Dependencies: [17, 4295, 8081, 1236, 8083, 8085, 2]
+// Dependencies: [17, 4296, 8141, 1236, 8143, 8145, 2]
 // Exports: default
 
-// Module 8080 (getTagProperties)
+// Module 8140 (getTagProperties)
 import { Image } from "get ActivityIndicator";
 import { MessageTagTypes } from "MESSAGE_GROUP_SPACING";
 
@@ -22,10 +22,10 @@ export default function getTagProperties(arg0) {
   ({ channel, colors } = arg0);
   const author = message.author;
   const isVerifiedBotResult = author.isVerifiedBot();
-  let obj = require(8081) /* isPublicSystemMessage */;
+  let obj = require(8141) /* isPublicSystemMessage */;
   if (!obj.isPublicSystemMessage(message)) {
     if (!isSystemDM) {
-      if (importDefault(8083)(message)) {
+      if (importDefault(8143)(message)) {
         const intl2 = tmp2(1236).intl;
         let stringResult = intl2.string(tmp2(1236).t.PuJGuM);
         let SYSTEM_DM_TAG_SYSTEM_TYPE = MessageTagTypes.BOT_TAG_SERVER_TYPE;
@@ -37,7 +37,7 @@ export default function getTagProperties(arg0) {
           const intl = tmp2(1236).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8085)).uri;
+            uri = Image.resolveAssetSource(tmp4(8145)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = intl.string(tmp2(1236).t["9RNkeF"]);
@@ -65,7 +65,7 @@ export default function getTagProperties(arg0) {
         const intl6 = tmp2(1236).intl;
         stringResult2 = intl6.string(tmp2(1236).t.fyE8sH);
       }
-      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "add", tagType: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000007854562309725305, tagIconUrl: -33390466905060710000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, opTagText: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007296780991884167, opTagTextColor: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002649572103959116, opTagBackgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000355024749901963 };
+      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "HermesInternal", tagType: null, tagIconUrl: false, opTagText: "none", opTagTextColor: null, opTagBackgroundColor: null };
       obj[0] = stringResult;
       obj[1] = null;
       obj[2] = flag;
@@ -87,12 +87,12 @@ export default function getTagProperties(arg0) {
           } else {
             stringResult3 = string(t.qwJHjo);
           }
-          tmp14 = importDefault(8083)(message);
+          tmp14 = importDefault(8143)(message);
         }
       }
       const intl5 = tmp2(1236).intl;
       stringResult3 = intl5.string(tmp2(1236).t["7s687k"]);
-      tmp2Result = tmp2(8081);
+      tmp2Result = tmp2(8141);
     }
   }
   const intl3 = tmp2(1236).intl;

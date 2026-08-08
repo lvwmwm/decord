@@ -1,10 +1,10 @@
-// Module ID: 8208
-// Function ID: 8209
+// Module ID: 8268
+// Function ID: 8269
 // Name: _saveProfileChanges
-// Dependencies: [5, 1903, 676, 1905, 1231, 4147, 1236, 698, 8209, 7082, 709, 8210, 530, 8213, 4201, 2]
+// Dependencies: [5, 1903, 676, 1905, 1231, 4153, 1236, 698, 8269, 7142, 709, 8270, 530, 8273, 4202, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8208 (_saveProfileChanges)
+// Module 8268 (_saveProfileChanges)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
@@ -38,7 +38,7 @@ function _saveProfileChanges() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ function _saveProfileChanges() {
                 const obj15 = callback2(body[13]);
               } else {
                 c9 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
               tmp71 = body;
             }
@@ -189,7 +189,7 @@ export const notifyUnsavedUserProfileChangesInModal = function notifyUnsavedUser
   ComponentDispatch.dispatch(constants.SHAKE_PROFILE_MODAL);
   const ComponentDispatch2 = require(1231) /* ComponentDispatcher */.ComponentDispatch;
   ComponentDispatch2.dispatch(constants.EMPHASIZE_NOTICE);
-  const AccessibilityAnnouncer = require(4147) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
+  const AccessibilityAnnouncer = require(4153) /* AccessibilityAnnouncer */.AccessibilityAnnouncer;
   const intl = require(1236) /* getSystemLocale */.intl;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   AccessibilityAnnouncer.announce("" + intl.string(require(1236) /* getSystemLocale */.t.GP7JLE) + " " + intl2.string(require(1236) /* getSystemLocale */.t.gKoO1D));

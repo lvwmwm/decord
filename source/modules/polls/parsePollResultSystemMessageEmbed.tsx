@@ -1,10 +1,10 @@
-// Module ID: 8089
-// Function ID: 8090
+// Module ID: 8149
+// Function ID: 8150
 // Name: parsePollResultSystemMessageEmbed
 // Dependencies: [2]
 // Exports: default
 
-// Module 8089 (parsePollResultSystemMessageEmbed)
+// Module 8149 (parsePollResultSystemMessageEmbed)
 const result = require("set").fileFinishedImporting("modules/polls/parsePollResultSystemMessageEmbed.tsx");
 
 export default function parsePollResultSystemMessageEmbed(fields) {

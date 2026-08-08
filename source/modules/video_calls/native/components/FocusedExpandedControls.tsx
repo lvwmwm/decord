@@ -1,10 +1,10 @@
-// Module ID: 10830
-// Function ID: 10831
+// Module ID: 10896
+// Function ID: 10897
 // Name: ExpandedControlItemIcon
-// Dependencies: [19, 17, 4321, 1218, 4362, 21, 4302, 712, 1297, 10831, 10832, 7907, 589, 10833, 1236, 10786, 500, 9088, 9113, 10758, 10834, 10803, 10835, 10836, 2]
+// Dependencies: [19, 17, 4322, 1218, 4364, 21, 4303, 712, 1297, 10897, 10898, 7967, 589, 10899, 1236, 10852, 500, 9148, 9173, 10824, 10900, 10869, 10901, 10902, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10830 (ExpandedControlItemIcon)
+// Module 10896 (ExpandedControlItemIcon)
 import "stopScreenshare";
 import get_ActivityIndicator from "_handleToggleVideo";
 import reset from "reset";
@@ -36,11 +36,11 @@ function ExpandedControlItemIcon(iconSource) {
       const items = [tmp10, , ];
       obj = { style: null, source: null };
       obj[0] = tmp.sparkle2;
-      obj[1] = importDefault(10831);
+      obj[1] = importDefault(10897);
       items[1] = tmp7(closure_4, obj);
       const obj1 = { style: null, source: null };
       obj1[0] = tmp.sparkle;
-      obj1[1] = importDefault(10832);
+      obj1[1] = importDefault(10898);
       items[2] = tmp7(closure_4, obj1);
       obj[0] = items;
       tmp6 = callback2(closure_3, obj);
@@ -72,15 +72,15 @@ function ExpandedControlItem(iconSource) {
     obj[2] = switchValue;
     obj[3] = disabled;
     obj[4] = onSwitchValueChange;
-    trailing = callback(require(7907) /* Form */.FormSwitch, obj);
+    trailing = callback(require(7967) /* Form */.FormSwitch, obj);
   }
   obj = { disabled, leading: null, label: null, onPress: null, trailing: null };
   obj[1] = callback(ExpandedControlItemIcon, { iconSource: iconSource.iconSource, showIconSparkle });
   obj = { text: label, style: createCacheKey().formColor };
-  obj[2] = callback(require(7907) /* Form */.FormLabel, obj);
+  obj[2] = callback(require(7967) /* Form */.FormLabel, obj);
   obj[3] = onPress;
   obj[4] = trailing;
-  return callback(require(7907) /* Form */.FormRow, obj);
+  return callback(require(7967) /* Form */.FormRow, obj);
 }
 ({ View: c3, Image: c4 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);
@@ -115,16 +115,16 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (stateFromStores != null) {
     ownerId = stateFromStores.ownerId;
   }
-  const tmp6 = importDefault(10833);
-  ({ effectiveVolume, handleVolumeChange } = importDefault(10833)(ownerId, MediaEngineContextTypes.STREAM));
+  const tmp6 = importDefault(10899);
+  ({ effectiveVolume, handleVolumeChange } = importDefault(10899)(ownerId, MediaEngineContextTypes.STREAM));
   obj = { text: null, style: null };
   const intl = tmp2(1236).intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.pEAl4b);
   const items1 = [tmp.formColor, { marginBottom: 16 }];
   obj[1] = items1;
-  const items2 = [callback(require(7907) /* Form */.FormLabel, obj), ];
-  const tmp6Result = importDefault(10833)(ownerId, MediaEngineContextTypes.STREAM);
-  const tmp5Result = importDefault(10786);
+  const items2 = [callback(require(7967) /* Form */.FormLabel, obj), ];
+  const tmp6Result = importDefault(10899)(ownerId, MediaEngineContextTypes.STREAM);
+  const tmp5Result = importDefault(10852);
   let fn;
   if (tmp2Result.isAndroid()) {
     fn = () => true;
@@ -136,7 +136,7 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (null != stateFromStores) {
     const obj1 = { label: null };
     obj1[0] = tmp11;
-    tmp9Result = tmp9(tmp2(7907).FormRow, obj1);
+    tmp9Result = tmp9(tmp2(7967).FormRow, obj1);
   }
   return tmp9Result;
 };
@@ -144,7 +144,7 @@ export const AudioRouteButton = function AudioRouteButton(arg0) {
   let importDefault;
   let require;
   ({ channelId: require, isConnectedToVoiceChannel: importDefault } = arg0);
-  let obj = require(9088) /* _handleToggleVideo */;
+  let obj = require(9148) /* _handleToggleVideo */;
   obj = {
     onPress() {
       const result = outer1_0(outer1_2[18]).showAudioOutputSelector(closure_0, closure_1);
@@ -163,7 +163,7 @@ export const ScreenshareButton = function ScreenshareButton(arg0) {
   let onPress;
   let text;
   ({ channel, disabled } = arg0);
-  const tmp = importDefault(10758)(channel);
+  const tmp = importDefault(10824)(channel);
   const isFeatureEnabled = tmp.isFeatureEnabled;
   disabled = !isFeatureEnabled;
   ({ onPress, imgSource, text } = tmp);
@@ -174,9 +174,9 @@ export const DeafenButton = function DeafenButton(disabled) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10803) /* NOOP */;
-  const deafHandler = obj.createDeafHandler(importDefault(10834)(disabled.channel));
-  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10835 : 10836), label: null };
+  let obj = require(10869) /* NOOP */;
+  const deafHandler = obj.createDeafHandler(importDefault(10900)(disabled.channel));
+  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10901 : 10902), label: null };
   const intl = tmp4(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.wjcRFX);
   return callback(ExpandedControlItem, obj);

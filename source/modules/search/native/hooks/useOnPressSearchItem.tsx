@@ -1,10 +1,10 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 15717
+// Function ID: 15718
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1372, 11644, 8337, 15643, 8336, 676, 1379, 11643, 11668, 1467, 4001, 1236, 8872, 3998, 1480, 15621, 15644, 1231, 8784, 4312, 4310, 7713, 1988, 4511, 4515, 12597, 4743, 4788, 8352, 1222, 11665, 2]
+// Dependencies: [5, 19, 1372, 11710, 8397, 15718, 8396, 676, 1379, 11709, 11734, 1467, 4001, 1236, 8932, 3998, 1480, 15696, 15719, 1231, 8844, 4313, 4311, 7773, 1988, 4513, 4517, 12667, 4745, 4790, 8412, 1222, 11731, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15642 (handleVoiceOrStageChannelConnectPress)
+// Module 15717 (handleVoiceOrStageChannelConnectPress)
 import SearchNavigatorScreens from "SearchNavigatorScreens";
 import ComponentDispatcher from "ComponentDispatcher";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -51,7 +51,7 @@ function _handleVoiceOrStageChannelConnectPress() {
           obj[0] = openGuildVoiceModal;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -425,7 +425,7 @@ export const useOnPressGuildVoiceChannel = function useOnPressGuildVoiceChannel(
           }
         }
       }
-      yield "T";
+      yield "HermesInternal";
       if (arg0 !== 2) {
         const result = openMemberVerificationModal.openMemberVerificationModal(guildId, () => outer1_17(closure_0));
         c3 = 3;

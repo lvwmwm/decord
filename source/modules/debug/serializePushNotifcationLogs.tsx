@@ -1,10 +1,10 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 9873
+// Function ID: 9874
 // Name: serializePushNotificationLogs
 // Dependencies: [676, 595, 2]
 // Exports: default
 
-// Module 9807 (serializePushNotificationLogs)
+// Module 9873 (serializePushNotificationLogs)
 import ME from "ME";
 
 let c3;

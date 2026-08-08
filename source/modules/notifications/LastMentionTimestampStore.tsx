@@ -1,10 +1,10 @@
-// Module ID: 5257
-// Function ID: 5258
+// Module ID: 5258
+// Function ID: 5259
 // Name: initialize
-// Dependencies: [1971, 4497, 1903, 709, 589, 2]
+// Dependencies: [1971, 4499, 1903, 709, 589, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 5257 (initialize)
+// Module 5258 (initialize)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,10 +1,10 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15121
+// Function ID: 15122
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 676, 21, 4302, 712, 8412, 1480, 5269, 5275, 1236, 8442, 8445, 5967, 8441, 4298, 1974, 4712, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 8472, 1480, 5270, 5276, 1236, 8502, 8505, 6027, 8501, 4299, 1974, 4714, 2]
 // Exports: default
 
-// Module 15051 (AgeGateUnderage)
+// Module 15121 (AgeGateUnderage)
 import noop from "noop";
 import { View } from "Button";
 import { HelpdeskArticles } from "ME";

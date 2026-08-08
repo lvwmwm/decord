@@ -1,10 +1,10 @@
-// Module ID: 6632
-// Function ID: 6633
+// Module ID: 6692
+// Function ID: 6693
 // Name: ServerBannerUnderboxExample
-// Dependencies: [21, 5267, 6633, 2]
+// Dependencies: [21, 5268, 6693, 2]
 // Exports: ServerBannerUnderboxExample
 
-// Module 6632 (ServerBannerUnderboxExample)
+// Module 6692 (ServerBannerUnderboxExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerUnderboxExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerBannerUnderboxExample = function ServerBannerUnderboxExample(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6633);
+  obj[0] = importDefault(6693);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerBannerUnderboxExample = function ServerBannerUnderboxExample(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

@@ -1,10 +1,10 @@
-// Module ID: 13890
-// Function ID: 13891
+// Module ID: 13960
+// Function ID: 13961
 // Name: EditGuildProfileBanner
-// Dependencies: [109, 19, 17, 1971, 7020, 5716, 676, 1905, 21, 3947, 5668, 5688, 13830, 4270, 13831, 1988, 8207, 1236, 8205, 8302, 8775, 13841, 5944, 5368, 712, 9397, 13885, 589, 8247, 9383, 8776, 8215, 13238, 13891, 8763, 8772, 4298, 4013, 13892, 9384, 9385, 9404, 13851, 4140, 13852, 13857, 13863, 13864, 13868, 13872, 13883, 8562, 8563, 2]
+// Dependencies: [109, 19, 17, 1971, 7080, 5776, 676, 1905, 21, 3947, 5728, 5748, 13900, 4271, 13901, 1988, 8267, 1236, 8265, 8362, 8835, 13911, 6004, 5369, 712, 9462, 13955, 589, 8307, 9448, 8836, 8275, 13308, 13961, 8823, 8832, 4299, 4013, 13962, 9449, 9450, 9469, 13921, 4146, 13922, 13927, 13933, 13934, 13938, 13942, 13953, 8622, 8623, 2]
 // Exports: default
 
-// Module 13890 (EditGuildProfileBanner)
+// Module 13960 (EditGuildProfileBanner)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import usePremiumUpsellConfig from "usePremiumUpsellConfig";
 import get_ActivityIndicator from "getSystemLocale";
@@ -44,10 +44,10 @@ function EditGuildProfileBanner(user) {
   let obj = importDefault(3947);
   let result = obj.canUsePremiumGuildMemberProfile(user);
   c4 = result;
-  analyticsLocations = importDefault(5668)(importDefault(5688).EDIT_BANNER).analyticsLocations;
+  analyticsLocations = importDefault(5728)(importDefault(5748).EDIT_BANNER).analyticsLocations;
   obj = { value: analyticsLocations, children: null };
   obj = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, showProfilePreviewButton: false, showEditButton: null, onPressEdit: null, editButtonAccessibilityLabel: null, editDisabled: null };
-  const tmp3 = importDefault(5668);
+  const tmp3 = importDefault(5728);
   if (result) {
     result = null != guildMember;
   }
@@ -92,8 +92,8 @@ function EditGuildProfileBanner(user) {
   let intl = tmp5(1236).intl;
   obj[8] = intl.string(user(1236).t["95hPAe"]);
   obj[9] = disabled;
-  obj[1] = closure_18(importDefault(13830), obj);
-  return closure_18(user(5668).AnalyticsLocationProvider, obj);
+  obj[1] = closure_18(importDefault(13900), obj);
+  return closure_18(user(5728).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);

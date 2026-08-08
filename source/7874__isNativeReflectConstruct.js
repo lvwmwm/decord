@@ -1,18 +1,14 @@
 // Module ID: 7874
 // Function ID: 7875
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7783, 7790, 7791, 7797, 7875, 7799]
+// Dependencies: [42, 41, 93, 95, 98, 19]
 
 // Module 7874 (_isNativeReflectConstruct)
-import _classCallCheck from "_classCallCheck";
+import FilterPrimitive from "_classCallCheck";
 import _possibleConstructorReturn from "_possibleConstructorReturn";
 import _getPrototypeOf from "_getPrototypeOf";
 import importDefaultResult from "_createClass";
-import "noop";
-import { jsx } from "jsxProd";
-import extractFont from "extractFont";
 
-const TSpan = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,16 +28,16 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class TSpan {
+class FilterPrimitive {
   constructor() {
     self = this;
     items = [...arguments];
     apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
+    tmp = FilterPrimitive(this, apply);
     items1 = [...items];
-    tmp2 = _isNativeReflectConstruct;
-    obj = _isNativeReflectConstruct(apply);
-    tmp3 = _isNativeReflectConstruct;
+    tmp2 = __esModule;
+    obj = __esModule(apply);
+    tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
       tmp5 = globalThis;
       _Reflect = Reflect;
@@ -51,49 +47,21 @@ class TSpan {
     }
     tmp3Result = tmp3(self, constructResult);
     apply = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      matrix = matrix.matrix;
-      let tmp = !matrix;
-      if (!matrix) {
-        tmp = outer1_1(outer1_2[7])(matrix);
-      }
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      const propsAndStylesResult = _undefined(outer1_2[8]).propsAndStyles(matrix);
-      const obj = _undefined(outer1_2[8]);
-      const merged = Object.assign(propsAndStylesResult, _undefined(outer1_2[9]).pickNotNil(outer1_1(outer1_2[10])(propsAndStylesResult, false)));
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(propsAndStylesResult);
+    tmp3Result.root = null;
+    tmp3Result.refMethod = (root) => {
+      c0.root = root;
+    };
+    tmp3Result.setNativeProps = (arg0) => {
+      const root = _undefined.root;
+      if (root != null) {
+        root.setNativeProps(arg0);
       }
     };
     return tmp3Result;
   }
 }
-require("_inherits")(TSpan, require("_isNativeReflectConstruct"));
-let items = [
-  {
-    key: "render",
-    value: function render() {
-      let obj = TSpan(7790);
-      const propsAndStylesResult = obj.propsAndStyles(this.props);
-      obj = {};
-      const merged = Object.assign(propsAndStylesResult);
-      obj.x = null;
-      obj.y = null;
-      const tmp2Result = importDefault(7790)(obj, this);
-      const merged1 = Object.assign(tmp2Result, importDefault(7797)(propsAndStylesResult, false));
-      tmp2Result.ref = this.refMethod;
-      obj = {};
-      const tmp2 = importDefault(7790);
-      const merged2 = Object.assign(tmp2Result);
-      return jsx(importDefault(7875), {});
-    }
-  }
-];
-const importDefaultResultResult = importDefaultResult(TSpan, items);
-importDefaultResultResult.displayName = "TSpan";
-extractFont.setTSpan(importDefaultResultResult);
+require("_inherits")(FilterPrimitive, require("noop").Component);
+const importDefaultResultResult = importDefaultResult(FilterPrimitive);
+importDefaultResultResult.defaultPrimitiveProps = {};
 
 export default importDefaultResultResult;

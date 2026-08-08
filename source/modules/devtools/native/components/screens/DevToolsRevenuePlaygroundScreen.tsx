@@ -1,10 +1,10 @@
-// Module ID: 14937
-// Function ID: 14938
+// Module ID: 15007
+// Function ID: 15008
 // Name: describeServerError
-// Dependencies: [5, 32, 19, 17, 8118, 7060, 1340, 1372, 1960, 1903, 4301, 1905, 21, 709, 647, 530, 4002, 5373, 5380, 5707, 5702, 6857, 1297, 712, 7264, 4302, 6851, 4270, 14938, 1988, 5708, 14941, 7361, 11121, 4507, 14942, 14945, 14949, 14951, 14954, 2]
+// Dependencies: [5, 32, 19, 17, 8178, 7120, 1340, 1372, 1960, 1903, 4302, 1905, 21, 709, 647, 530, 4002, 5374, 5381, 5767, 5762, 6917, 1297, 712, 7324, 4303, 6911, 4271, 15008, 1988, 5768, 15011, 7421, 11187, 4509, 15012, 15015, 15019, 15021, 15024, 2]
 // Exports: default
 
-// Module 14937 (describeServerError)
+// Module 15007 (describeServerError)
 import recomputeAffinities from "recomputeAffinities";
 import serializePurchaseResponse from "serializePurchaseResponse";
 import TableRowGroupTitle from "TableRowGroupTitle";
@@ -208,7 +208,7 @@ function FriendAnniversary() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -314,7 +314,7 @@ function FriendAnniversary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -640,7 +640,7 @@ function FriendAnniversary() {
   return callback3(closure_19, obj9);
 }
 function TrialOfferSheetExample() {
-  let obj = premiumTrialOffer(6851);
+  let obj = premiumTrialOffer(6911);
   premiumTrialOffer = obj.usePremiumTrialOffer();
   obj = {
     label: "Trial Offer Nitro Basic",
@@ -659,9 +659,9 @@ function TrialOfferSheetExample() {
       }
     }
   };
-  const items = [closure_17(premiumTrialOffer(5373).TableRow, obj), ];
+  const items = [closure_17(premiumTrialOffer(5374).TableRow, obj), ];
   obj = { title: "Trial Offers", hasIcons: false, children: null };
-  items[1] = closure_17(premiumTrialOffer(5373).TableRow, {
+  items[1] = closure_17(premiumTrialOffer(5374).TableRow, {
     label: "Trial Offer Nitro",
     subLabel: "No trial offer in store",
     disabled: null == premiumTrialOffer,
@@ -679,7 +679,7 @@ function TrialOfferSheetExample() {
     }
   });
   obj[2] = items;
-  return closure_18(premiumTrialOffer(5707).TableRowGroup, obj);
+  return closure_18(premiumTrialOffer(5767).TableRowGroup, obj);
 }
 function PremiumToggles() {
   let obj = require(647) /* defaultAreStatesEqual */;
@@ -703,13 +703,13 @@ function PremiumToggles() {
       }
     }, tmp);
   });
-  return callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function ForceMockIAP() {
   let obj = require(647) /* defaultAreStatesEqual */;
   const items = [getUserAgnosticState];
   const stateFromStores = obj.useStateFromStores(items, () => getUserAgnosticState.get("force_mock_iap"));
-  let result = require(7361) /* serializePurchaseResponse */.shouldMockIAPForceEnable();
+  let result = require(7421) /* serializePurchaseResponse */.shouldMockIAPForceEnable();
   let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
   if (result) {
     str = "Forced on - the current device can't fetch real StoreKit products.";
@@ -719,16 +719,16 @@ function ForceMockIAP() {
   if (!result) {
     tmp4 = stateFromStores;
   }
-  obj = { title: "iOS IAP Mock", hasIcons: false, children: tmp3(require(5708) /* TableSwitchRow */.TableSwitchRow, obj) };
+  obj = { title: "iOS IAP Mock", hasIcons: false, children: tmp3(require(5768) /* TableSwitchRow */.TableSwitchRow, obj) };
   obj[2] = tmp4;
   obj[3] = result;
   obj[4] = function onValueChange(arg0) {
-    callback(14941).toggle("force_mock_iap", arg0);
+    callback(15011).toggle("force_mock_iap", arg0);
     getUserAgnosticState.persist();
-    const obj = callback(14941);
-    const result = callback2(11121).checkForUpdateAndReload();
+    const obj = callback(15011);
+    const result = callback2(11187).checkForUpdateAndReload();
   };
-  return closure_17(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  return closure_17(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function PaymentFlowTest() {
   let obj = { title: "Payment Flow Test", hasIcons: false, children: null };
@@ -739,9 +739,9 @@ function PaymentFlowTest() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5380) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5373) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(5381) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(5374) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function Orbs() {
   let obj = { title: "Orbs", hasIcons: false, children: null };
@@ -752,9 +752,9 @@ function Orbs() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5380) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5373) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(5381) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(5374) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function RevenueSmokeTests() {
   let obj = { title: "Revenue Smoke Tests", hasIcons: false, children: null };
@@ -765,9 +765,9 @@ function RevenueSmokeTests() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5380) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5373) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(5381) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(5374) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function GuildPowerups() {
   let obj = { title: "Guild Powerups", hasIcons: false, children: null };
@@ -778,9 +778,9 @@ function GuildPowerups() {
     },
     trailing: null
   };
-  obj[2] = callback2(require(5380) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5373) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[2] = callback2(require(5381) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(5374) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 function GuildTagBadges() {
   let obj = { title: "Guild Tag Badges", hasIcons: false, children: null };
@@ -792,9 +792,9 @@ function GuildTagBadges() {
     },
     trailing: null
   };
-  obj[3] = callback2(require(5380) /* TableRowArrow */.TableRowArrow, {});
-  obj[2] = callback2(require(5373) /* TableRowInner */.TableRow, obj);
-  return callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  obj[3] = callback2(require(5381) /* TableRowArrow */.TableRowArrow, {});
+  obj[2] = callback2(require(5374) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
 }
 ({ GiftIntentType: closure_15, PremiumTypes: closure_16 } = GuildFeatures);
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = jsxProd);

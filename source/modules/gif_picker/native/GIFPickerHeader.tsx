@@ -1,9 +1,9 @@
-// Module ID: 9877
-// Function ID: 9878
+// Module ID: 9943
+// Function ID: 9944
 // Name: FavoritesSearch
-// Dependencies: [32, 19, 17, 676, 21, 4302, 712, 9871, 5941, 4162, 4303, 4306, 7691, 5947, 1236, 5932, 9869, 4844, 9878, 4298, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 9937, 6001, 4036, 4304, 4307, 7751, 6007, 1236, 5992, 9935, 4846, 9944, 4299, 2]
 
-// Module 9877 (FavoritesSearch)
+// Module 9943 (FavoritesSearch)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "Text";
 import { View } from "PressableBase";
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
   ({ categoryType, onQueryClear } = arg0);
   ({ columnWidth, onQueryChange, onFavoritesQueryChange, searchInputRef } = arg0);
   const tmp = callback();
-  require(9869) /* GIF_PROVIDER */;
+  require(9935) /* GIF_PROVIDER */;
   let obj = { style: tmp.container, children: null };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     obj = { size: "md", onChange: null, placeholder: null, onClear: null, ref: null, isRound: true };
@@ -153,7 +153,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj[2] = tmp5;
     obj[3] = onQueryClear;
     obj[4] = searchInputRef;
-    let tmp13Result = tmp6(tmp2(5932).SearchField, obj);
+    let tmp13Result = tmp6(tmp2(5992).SearchField, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
@@ -167,7 +167,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj1[3] = intl4.formatToPlainString(tmp2(1236).t.UTypEu, obj2);
     const obj3 = { color: null, size: "sm" };
     obj3[0] = importDefault(712).colors.INTERACTIVE_TEXT_ACTIVE;
-    const items = [tmp6(tmp2(9878).ChevronLargeLeftIcon, obj3), ];
+    const items = [tmp6(tmp2(9944).ChevronLargeLeftIcon, obj3), ];
     if (categoryType === tmp8.TRENDING_GIFS) {
       const intl3 = tmp2(1236).intl;
       let stringResult = intl3.string(tmp2(1236).t.TsWCdW);
@@ -180,9 +180,9 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     }
     const obj4 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: null };
     obj4[3] = stringResult;
-    items[1] = tmp6(tmp2(4298).Text, obj4);
+    items[1] = tmp6(tmp2(4299).Text, obj4);
     obj1[4] = items;
-    const items1 = [closure_9(tmp2(4844).PressableOpacity, obj1), ];
+    const items1 = [closure_9(tmp2(4846).PressableOpacity, obj1), ];
     let tmp6Result = categoryType === tmp8.FAVORITES;
     if (tmp6Result) {
       const obj5 = { columnWidth: null, onQueryChange: null };

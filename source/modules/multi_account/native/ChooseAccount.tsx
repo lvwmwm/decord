@@ -1,10 +1,10 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15085
+// Function ID: 15086
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 11715, 11716, 676, 21, 4302, 712, 1480, 15016, 698, 11719, 4641, 1236, 1297, 4270, 5701, 8439, 4298, 13141, 15017, 4844, 8991, 7907, 15018, 2]
+// Dependencies: [5, 19, 17, 11781, 11782, 676, 21, 4303, 712, 1480, 15086, 698, 11785, 4643, 1236, 1297, 4271, 5761, 8499, 4299, 13211, 15087, 4846, 9051, 7967, 15088, 2]
 // Exports: default
 
-// Module 15015 (ChooseAccount)
+// Module 15085 (ChooseAccount)
 import closure_4 from "ME";
 import "Text";
 import { View } from "showSimpleActionSheet";
@@ -53,7 +53,7 @@ export default function ChooseAccount() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -93,10 +93,10 @@ export default function ChooseAccount() {
                 intl2 = tmp31(1236).intl;
                 string = intl2.string;
                 obj1[4] = string(lib(1236).t["ETE/oC"]);
-                obj1 = outer1_1(4641).confirm(obj1);
+                obj1 = outer1_1(4643).confirm(obj1);
                 dependencyMap = 1;
                 c4 = 1;
-                const obj8 = outer1_1(4641);
+                const obj8 = outer1_1(4643);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -108,13 +108,13 @@ export default function ChooseAccount() {
               return obj3;
             } else {
               if (arg1) {
-                obj = outer1_1(4270);
+                obj = outer1_1(4271);
                 obj.hideActionSheet();
-                obj1 = outer1_2(11719);
+                obj1 = outer1_2(11785);
                 obj1.removeAccount(lib.id);
               }
               c4 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp23) {
             c4 = tmp;
@@ -135,7 +135,7 @@ export default function ChooseAccount() {
   let tmp = createCacheKey();
   let obj = _require(1480);
   _require = obj.useNavigation();
-  let obj1 = _require(15016);
+  let obj1 = _require(15086);
   const multiAccountUsers = obj1.useMultiAccountUsers().multiAccountUsers;
   obj = { headerText: null, subHeader: null, backgroundImageSource: null, backgroundImageCover: true, contentStyle: null, children: null };
   let intl = _require(1236).intl;
@@ -143,8 +143,8 @@ export default function ChooseAccount() {
   obj = { variant: "text-sm/medium", color: "text-default", children: null };
   let intl2 = _require(1236).intl;
   obj[2] = intl2.string(_require(1236).t["0M5fN7"]);
-  obj[1] = callback(_require(4298).Text, obj);
-  obj[2] = multiAccountUsers(13141);
+  obj[1] = callback(_require(4299).Text, obj);
+  obj[2] = multiAccountUsers(13211);
   obj[4] = tmp.container;
   obj1 = { style: tmp.mainCard, children: null };
   let items = [
@@ -220,8 +220,8 @@ export default function ChooseAccount() {
   let obj3 = { themedColor: null, size: null, source: null };
   obj3[0] = multiAccountUsers(712).colors.TEXT_LINK;
   obj3[1] = _require(1297).Icon.Sizes.SMALL_20;
-  obj3[2] = multiAccountUsers(15018);
-  obj2[0] = callback(_require(7907).FormRow.Icon, obj3);
+  obj3[2] = multiAccountUsers(15088);
+  obj2[0] = callback(_require(7967).FormRow.Icon, obj3);
   let intl3 = _require(1236).intl;
   obj2[1] = intl3.string(_require(1236).t.bPP34Q);
   obj2[2] = tmp.addAccountLabel;
@@ -242,8 +242,8 @@ export default function ChooseAccount() {
       obj.track(outer1_9.LOGIN_VIEWED, { source: "choose_account_add_account" });
     }
   };
-  items[1] = callback(_require(7907).FormRow, obj2);
+  items[1] = callback(_require(7967).FormRow, obj2);
   obj1[1] = items;
   obj[5] = callback2(View, obj1);
-  return callback(multiAccountUsers(8439), obj);
+  return callback(multiAccountUsers(8499), obj);
 };

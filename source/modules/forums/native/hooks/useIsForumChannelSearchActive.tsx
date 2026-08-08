@@ -1,10 +1,10 @@
-// Module ID: 12483
-// Function ID: 12484
+// Module ID: 12553
+// Function ID: 12554
 // Name: useIsForumChannelSearchActive
-// Dependencies: [7167, 12470, 589, 2]
+// Dependencies: [7227, 12540, 589, 2]
 // Exports: useIsForumChannelSearchActive
 
-// Module 12483 (useIsForumChannelSearchActive)
+// Module 12553 (useIsForumChannelSearchActive)
 import initialize from "initialize";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("initialize").fileFinishedImporting("modules/forums/nativ
 
 export const useIsForumChannelSearchActive = function useIsForumChannelSearchActive(channelId) {
   const _require = channelId;
-  let canSearchForumPostsByChannelId = _require(12470).useCanSearchForumPostsByChannelId(channelId);
+  let canSearchForumPostsByChannelId = _require(12540).useCanSearchForumPostsByChannelId(channelId);
   _require(589);
   [][0] = channelId;
   if (canSearchForumPostsByChannelId) {

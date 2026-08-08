@@ -1,9 +1,9 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15496
+// Function ID: 15497
 // Name: Username
-// Dependencies: [19, 17, 4994, 21, 4302, 712, 15404, 9405, 9187, 9413, 589, 9383, 9386, 9458, 4298, 4140, 2]
+// Dependencies: [19, 17, 4996, 21, 4303, 712, 15479, 9470, 9252, 9478, 589, 9448, 9451, 9523, 4299, 4146, 2]
 
-// Module 15421 (Username)
+// Module 15496 (Username)
 import { View } from "get ActivityIndicator";
 import filterPlayingActivities from "filterPlayingActivities";
 import jsxProd from "jsxProd";
@@ -16,21 +16,21 @@ const require = arg1;
 function Username(userId) {
   userId = userId.userId;
   const tmp = callback2();
-  let obj = require(15404) /* apexExperiment */;
+  let obj = require(15479) /* apexExperiment */;
   obj = { style: items, children: null };
   items = [tmp.usernameRow];
   const isYouBarGuildTagEnabled = obj.useIsYouBarGuildTagEnabled("YouBarName");
   obj = { userId, userName: userId.username, defaultColor: "mobile-text-heading-primary", variant: "heading-md/semibold", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, containerStyle: tmp.username, style: tmp.username };
-  const items1 = [callback(importDefault(9405), obj), , ];
+  const items1 = [callback(importDefault(9470), obj), , ];
   let tmp7Result = null;
   if (isYouBarGuildTagEnabled) {
     const obj1 = { userId: null, disabledTooltip: true, containerStyles: null };
     obj1[0] = userId;
     obj1[2] = tmp.guildTag;
-    tmp7Result = tmp7(importDefault(9187), obj1);
+    tmp7Result = tmp7(importDefault(9252), obj1);
   }
   items1[1] = tmp7Result;
-  items1[2] = callback(require(9413) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" });
+  items1[2] = callback(require(9478) /* ChevronSmallDownIcon */.ChevronSmallDownIcon, { size: "xs", color: "mobile-text-heading-primary" });
   obj[1] = items1;
   return closure_6(View, obj);
 }
@@ -52,9 +52,9 @@ const memoResult = require("noop").memo(function YouName(arg0) {
   let obj = require(589) /* initialize */;
   const items = [filterPlayingActivities];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj1 = require(9383) /* _activityFromSetting */;
+  let obj1 = require(9448) /* _activityFromSetting */;
   const customStatusActivity = obj1.useCustomStatusActivity();
-  let obj2 = require(9386) /* useGameMentionsAsPlainText */;
+  let obj2 = require(9451) /* useGameMentionsAsPlainText */;
   let state;
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
@@ -72,16 +72,16 @@ const memoResult = require("noop").memo(function YouName(arg0) {
     obj1 = { size: 16, style: null, emoji: null };
     obj1[1] = tmp.statusEmoji;
     obj1[2] = customStatusActivity.emoji;
-    tmp10Result = tmp10(importDefault(9458), obj1);
+    tmp10Result = tmp10(importDefault(9523), obj1);
   }
   const items2 = [tmp10Result, ];
   obj2 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: null };
   if (gameMentionsAsPlainText == null) {
-    gameMentionsAsPlainText = tmp2(4140).humanizeStatus(stateFromStores);
-    const tmp2Result = tmp2(4140);
+    gameMentionsAsPlainText = tmp2(4146).humanizeStatus(stateFromStores);
+    const tmp2Result = tmp2(4146);
   }
   obj2[6] = gameMentionsAsPlainText;
-  items2[1] = callback(require(4298) /* Text */.Text, obj2);
+  items2[1] = callback(require(4299) /* Text */.Text, obj2);
   obj[1] = items2;
   items1[1] = closure_6(View, obj);
   obj[1] = items1;

@@ -1,17 +1,17 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15157
+// Function ID: 15158
 // Name: context
-// Dependencies: [32, 19, 15088, 15089, 676, 4158, 4162, 1481, 698, 4271, 1474, 1609, 4155, 15090, 4152, 4711, 5426, 7950, 2]
+// Dependencies: [32, 19, 15158, 15159, 676, 4164, 4036, 1481, 698, 4272, 1474, 1609, 4161, 15160, 4158, 4713, 5427, 8010, 2]
 // Exports: useHomeDrawerState, useHomeGesture, useIsHomeDrawerEnabled
 
-// Module 15087 (context)
+// Module 15157 (context)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import withEqualityFn from "withEqualityFn";
 import { computeMaxX } from "withEqualityFn";
 import keys from "keys";
 import { AnalyticEvents } from "ME";
-import { Gesture } from "Directions";
+import { Gesture } from "LegacyBaseButton";
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";

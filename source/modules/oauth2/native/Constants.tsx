@@ -1,9 +1,9 @@
-// Module ID: 10554
-// Function ID: 10555
+// Module ID: 10620
+// Function ID: 10621
 // Name: OAUTH2_AUTHORIZE_MODAL_KEY
 // Dependencies: [2]
 
-// Module 10554 (OAUTH2_AUTHORIZE_MODAL_KEY)
+// Module 10620 (OAUTH2_AUTHORIZE_MODAL_KEY)
 const result = require("set").fileFinishedImporting("modules/oauth2/native/Constants.tsx");
 
 export const OAUTH2_AUTHORIZE_MODAL_KEY = "oauth2-authorize";

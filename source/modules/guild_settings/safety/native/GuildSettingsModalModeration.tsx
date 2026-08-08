@@ -1,10 +1,10 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 16612
+// Function ID: 16613
 // Name: GuildSettingsOwnerConfiguredContentLevel
-// Dependencies: [19, 3929, 8962, 676, 21, 4302, 712, 7976, 8961, 5707, 1236, 1974, 5708, 4013, 5269, 5948, 7925, 14012, 7924, 4298, 7907, 4710, 5654, 1480, 589, 2]
+// Dependencies: [19, 3929, 9022, 676, 21, 4303, 712, 8036, 9021, 5767, 1236, 1974, 5768, 4013, 5270, 6008, 7985, 14082, 7984, 4299, 7967, 4712, 5714, 1480, 589, 2]
 // Exports: default
 
-// Module 16535 (GuildSettingsOwnerConfiguredContentLevel)
+// Module 16612 (GuildSettingsOwnerConfiguredContentLevel)
 import importAllResult from "Text";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleFormInit from "handleFormInit";
@@ -30,7 +30,7 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
   if (DEFAULT2 == null) {
     DEFAULT2 = constants3.DEFAULT;
   }
-  let obj = require(7976) /* useUserIsTeen */;
+  let obj = require(8036) /* useUserIsTeen */;
   let tmp7 = DEFAULT === constants3.AGE_RESTRICTED;
   const userIsTeen = obj.useUserIsTeen();
   if (tmp7) {
@@ -51,8 +51,8 @@ function GuildSettingsOwnerConfiguredContentLevel(guild) {
     obj1[1] = DEFAULT2 === tmp6.AGE_RESTRICTED;
     obj1[2] = tmp8;
     obj1[3] = tmp7;
-    obj[3] = callback(tmp3(5708).TableSwitchRow, obj1);
-    tmp9 = callback(tmp3(5707).TableRowGroup, obj, "filter-section");
+    obj[3] = callback(tmp3(5768).TableSwitchRow, obj1);
+    tmp9 = callback(tmp3(5767).TableRowGroup, obj, "filter-section");
     const obj4 = importDefault(1974);
   }
   return tmp9;
@@ -124,7 +124,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     return self.handleVerificationLevelChange(verificationLevel);
   };
   const features = guild.features;
-  const verificationLevelOptions = self(14012).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
+  const verificationLevelOptions = self(14082).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
   obj[5] = verificationLevelOptions.map((arg0) => {
     let color;
     let desc;
@@ -153,7 +153,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     obj[3] = tmp5;
     return outer1_10(self(outer1_2[18]).TableRadioRow, obj, "level-" + value);
   });
-  return callback(self(7925).TableRadioGroup, obj, "level-section");
+  return callback(self(7985).TableRadioGroup, obj, "level-section");
 };
 prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter() {
   const self = this;
@@ -171,7 +171,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
   };
   const obj3 = importDefault(1974);
   const features = guild.features;
-  const contentFilterOptions = self(14012).generateContentFilterOptions(features.has(constants.COMMUNITY));
+  const contentFilterOptions = self(14082).generateContentFilterOptions(features.has(constants.COMMUNITY));
   obj[5] = contentFilterOptions.map((value) => {
     let desc;
     let disabled;
@@ -187,7 +187,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
     obj[3] = tmp2;
     return outer1_10(self(outer1_2[18]).TableRadioRow, obj, "filter-" + value);
   });
-  return callback(self(7925).TableRadioGroup, obj, "filter-section");
+  return callback(self(7985).TableRadioGroup, obj, "filter-section");
 };
 prototype["render"] = function render() {
   let guild;
@@ -209,24 +209,24 @@ prototype["render"] = function render() {
   const obj1 = { children: null };
   items1[2] = canManageGuild;
   obj[2] = items1;
-  obj[1] = closure_11(require(4710) /* Stack */.Stack, obj);
-  const items2 = [closure_10(require(7907) /* Form */.Form, obj), closure_10(require(5654) /* NavScrim */.NavScrim, {})];
+  obj[1] = closure_11(require(4712) /* Stack */.Stack, obj);
+  const items2 = [closure_10(require(7967) /* Form */.Form, obj), closure_10(require(5714) /* NavScrim */.NavScrim, {})];
   obj1[0] = items2;
   return closure_11(closure_12, obj1);
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
   if (this.props.hasChanges) {
-    importDefault(8961).cancelChanges(tmp.props.guild.id);
-    const obj = importDefault(8961);
+    importDefault(9021).cancelChanges(tmp.props.guild.id);
+    const obj = importDefault(9021);
   }
 };
 prototype["handleVerificationLevelChange"] = function handleVerificationLevelChange(verificationLevel) {
-  let obj = importDefault(8961);
+  let obj = importDefault(9021);
   obj = { verificationLevel };
   obj.updateGuild(obj);
 };
 prototype["handleExplicitContentFilterChange"] = function handleExplicitContentFilterChange(explicitContentFilter) {
-  let obj = importDefault(8961);
+  let obj = importDefault(9021);
   obj = { explicitContentFilter };
   obj.updateGuild(obj);
 };

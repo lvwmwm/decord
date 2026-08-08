@@ -1,7 +1,7 @@
 // Module ID: 1961
 // Function ID: 1962
 // Name: comparator
-// Dependencies: [1962, 1375, 3928, 1376, 1218, 1372, 1971, 1891, 3929, 3938, 1903, 676, 1894, 12, 4492, 506, 3934, 589, 709, 2]
+// Dependencies: [1962, 1375, 3928, 1376, 1218, 1372, 1971, 1891, 3929, 3938, 1903, 676, 1894, 12, 4494, 506, 3934, 589, 709, 2]
 
 // Module 1961 (comparator)
 import isSubscriptionGated from "isSubscriptionGated";

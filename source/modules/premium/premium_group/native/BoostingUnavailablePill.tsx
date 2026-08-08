@@ -1,10 +1,10 @@
-// Module ID: 12715
-// Function ID: 12716
+// Module ID: 12785
+// Function ID: 12786
 // Name: handlePress
-// Dependencies: [17, 3961, 21, 4302, 712, 4270, 12716, 1988, 1236, 2866, 4298, 2]
+// Dependencies: [17, 3961, 21, 4303, 712, 4271, 12786, 1988, 1236, 2866, 4299, 2]
 // Exports: default
 
-// Module 12715 (handlePress)
+// Module 12785 (handlePress)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { getPremiumGroupProductName as closure_5 } from "SubscriptionStatusTypes";
 import { jsx } from "jsxProd";
@@ -13,13 +13,13 @@ import createCacheKey from "createCacheKey";
 let c3;
 let c4;
 function handlePress() {
-  let obj = importDefault(4270);
+  let obj = importDefault(4271);
   obj = { aboutText: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { premiumGroupProductName: null };
   obj[0] = callback();
   obj[0] = intl.formatToPlainString(importDefault(2866)["5xN/C1"], obj);
-  obj.openLazy(require(1988) /* asyncRequireImpl */(12716, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(require(1988) /* asyncRequireImpl */(12786, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 let obj = { premiumGroupBanner: null, pgUnavailable: null, pgUnavailableText: null };
@@ -39,7 +39,7 @@ export default function BoostingUnavailablePill(style) {
   const obj1 = { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl.string(require(1236) /* getSystemLocale */.t["5nrJDO"]);
-  obj[1] = jsx(require(4298) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
+  obj[1] = jsx(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "interactive-text-active", style: tmp.pgUnavailableText, children: null });
   obj[1] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
   obj[2] = <closure_4 style={tmp.pgUnavailable}>{null}</closure_4>;
   return <closure_3 style={tmp.pgUnavailable}>{null}</closure_3>;

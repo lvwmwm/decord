@@ -1,8 +1,8 @@
-// Module ID: 4474
-// Function ID: 4475
-// Dependencies: [5, 4475, 4473, 2]
+// Module ID: 4476
+// Function ID: 4477
+// Dependencies: [5, 4477, 4475, 2]
 
-// Module 4474
+// Module 4476
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -22,7 +22,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -38,7 +38,7 @@ export default {
               return obj;
             } else {
               let closure_0 = tmp4;
-              let obj2 = outer1_0(4475);
+              let obj2 = outer1_0(4477);
               dependencyMap = 1;
               c2 = 1;
               const obj1 = { value: null, done: false };
@@ -54,7 +54,7 @@ export default {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = outer1_0(4473);
+            obj = outer1_0(4475);
             if (arg1) {
               obj.ROBLOX_PROTOCOL_URL(closure_0);
             } else {

@@ -1,10 +1,10 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 9002
+// Function ID: 9003
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8941, 589, 8943, 2]
+// Dependencies: [5, 19, 9001, 589, 9003, 2]
 // Exports: useGuildProfile
 
-// Module 8942 (useGuildProfile)
+// Module 9002 (useGuildProfile)
 import set from "set";
 import noop from "noop";
 import handleUpdateStart from "handleUpdateStart";
@@ -30,7 +30,7 @@ export const useGuildProfile = function useGuildProfile(guildId) {
       if (flag === undefined) {
         flag = false;
       }
-      yield "PX_8";
+      yield "ct";
       const obj2 = callback(outer1_1[4]);
       yield obj2.getGuildProfile(flag, flag);
       return arg1;

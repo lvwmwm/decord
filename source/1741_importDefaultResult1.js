@@ -82,7 +82,7 @@ const items = [
   },
   {
     key: "updateEvents",
-    value: function updateEvents(layout) {
+    value: function updateEvents(current) {
       const self = this;
       const eventViewTag = this.getEventViewTag(true);
       if (callback2(this, closure_6)[closure_6] !== eventViewTag) {

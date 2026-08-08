@@ -1,10 +1,10 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15106
+// Function ID: 15107
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 13937, 15011, 15012, 15009, 1480, 8424, 13935, 13934, 15010, 1481, 1236, 2]
+// Dependencies: [32, 19, 14007, 15081, 15082, 15079, 1480, 8484, 14005, 14004, 15080, 1481, 1236, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 15036 (useUsernameRegistrationStep)
+// Module 15106 (useUsernameRegistrationStep)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import isRateLimited from "isRateLimited";

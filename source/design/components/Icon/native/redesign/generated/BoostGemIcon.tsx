@@ -1,10 +1,10 @@
-// Module ID: 7635
-// Function ID: 7636
+// Module ID: 7695
+// Function ID: 7696
 // Name: BoostGemIcon
-// Dependencies: [19, 21, 712, 4004, 7636, 2]
+// Dependencies: [19, 21, 712, 4004, 7696, 2]
 // Exports: BoostGemIcon
 
-// Module 7635 (BoostGemIcon)
+// Module 7695 (BoostGemIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BoostGemIcon = function BoostGemIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7636) /* registerAsset */;
+  obj[0] = require(7696) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

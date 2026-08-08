@@ -1,8 +1,8 @@
-// Module ID: 15560
-// Function ID: 15561
-// Dependencies: [19, 17, 21, 4302, 712, 1609, 4005, 688, 4723, 2]
+// Module ID: 15635
+// Function ID: 15636
+// Dependencies: [19, 17, 21, 4303, 712, 1609, 4005, 688, 4725, 2]
 
-// Module 15560
+// Module 15635
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -38,7 +38,7 @@ const memoResult = require("noop").memo(function ThemedHeaderBackgroundGradient(
   obj[0] = items;
   obj1 = { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } };
   items1 = [token, str];
-  obj[2] = jsx(tmp4(4723), { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } });
+  obj[2] = jsx(tmp4(4725), { style: absoluteFill.absoluteFill, colors: items1, start: { x: 0, y: 0 }, end: { x: 0, y: 1 } });
   return <closure_4 height={Math.max(importDefault(1609)().top, num)} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/panels/ThemedHeaderBackgroundGradient.tsx");

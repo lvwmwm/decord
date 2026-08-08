@@ -1,10 +1,10 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12867
+// Function ID: 12868
 // Name: Card
-// Dependencies: [19, 17, 21, 4302, 712, 4298, 1236, 12798, 7635, 12799, 12725, 12800, 8946, 12801, 8707, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 12868, 7695, 12869, 12795, 12870, 9006, 12871, 8767, 2]
 // Exports: default
 
-// Module 12797 (Card)
+// Module 12867 (Card)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ function Card(arg0) {
   obj = { size: "lg", color: importDefault(712).unsafe_rawColors.GUILD_BOOSTING_PINK };
   ({ IconComponent, children } = arg0);
   obj[1] = callback(IconComponent, obj);
-  const items = [callback(View, obj), callback(require(4298) /* Text */.Text, { style: tmp.description, variant: "text-sm/medium", children })];
+  const items = [callback(View, obj), callback(require(4299) /* Text */.Text, { style: tmp.description, variant: "text-sm/medium", children })];
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -43,21 +43,21 @@ export default function GuildBoostingMarketingBoosterRecognitionCards() {
   obj = { variant: "heading-xl/extrabold", style: tmp.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.IzKs3o);
-  const items = [callback(require(4298) /* Text */.Heading, obj), ];
+  const items = [callback(require(4299) /* Text */.Heading, obj), ];
   obj = { style: tmp.recognitionCardsContainer, children: null };
-  const obj1 = { icon: importDefault(12798), IconComponent: require(7635) /* BoostGemIcon */.BoostGemIcon, children: null };
+  const obj1 = { icon: importDefault(12868), IconComponent: require(7695) /* BoostGemIcon */.BoostGemIcon, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.TZigSO);
   const items1 = [callback(Card, obj1), , , ];
-  const obj2 = { icon: importDefault(12799), IconComponent: require(12725) /* BoostTier3Icon */.BoostTier3Icon, children: null };
+  const obj2 = { icon: importDefault(12869), IconComponent: require(12795) /* BoostTier3Icon */.BoostTier3Icon, children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hjQuV2);
   items1[1] = callback(Card, obj2);
-  const obj3 = { icon: importDefault(12800), IconComponent: require(8946) /* ShieldUserIcon */.ShieldUserIcon, children: null };
+  const obj3 = { icon: importDefault(12870), IconComponent: require(9006) /* ShieldUserIcon */.ShieldUserIcon, children: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl4.string(require(1236) /* getSystemLocale */.t["2RUcaM"]);
   items1[2] = callback(Card, obj3);
-  const obj4 = { icon: importDefault(12801), IconComponent: require(8707) /* HeartIcon */.HeartIcon, children: null };
+  const obj4 = { icon: importDefault(12871), IconComponent: require(8767) /* HeartIcon */.HeartIcon, children: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl5.string(require(1236) /* getSystemLocale */.t.bJoZKV);
   items1[3] = callback(Card, obj4);

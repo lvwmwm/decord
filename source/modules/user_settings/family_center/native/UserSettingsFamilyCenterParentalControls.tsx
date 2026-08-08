@@ -1,10 +1,10 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 14174
+// Function ID: 14175
 // Name: FamilyCenterParentalControlsSettings
-// Dependencies: [32, 19, 17, 676, 6937, 21, 4302, 712, 1480, 5668, 5688, 6818, 6993, 14068, 14086, 1236, 2284, 8322, 14105, 14106, 8896, 6938, 5327, 14107, 9081, 9497, 2]
+// Dependencies: [32, 19, 17, 676, 6997, 21, 4303, 712, 1480, 5728, 5748, 6878, 7053, 14138, 14156, 1236, 2284, 8382, 14175, 14176, 8956, 6998, 5328, 14177, 9141, 9562, 2]
 // Exports: default
 
-// Module 14104 (FamilyCenterParentalControlsSettings)
+// Module 14174 (FamilyCenterParentalControlsSettings)
 import _slicedToArray from "_slicedToArray";
 import FamilyCenterParentalControlsDataAndPrivacy from "FamilyCenterParentalControlsDataAndPrivacy";
 import get_ActivityIndicator from "GenericHeaderTitle";
@@ -110,7 +110,7 @@ export default function FamilyCenterParentalControlsSettings() {
         }
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "PX_8" });
+    stackNavigation.setOptions({ title: "r", headerRight: "accessibilityRole" });
   }, items1);
   if (isFamilyCenterV3Enabled) {
     isFamilyCenterV3Enabled = selectedSubPage === items2.SCREEN_TIME_CONTROLS;

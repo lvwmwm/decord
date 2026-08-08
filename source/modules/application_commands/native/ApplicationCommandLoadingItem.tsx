@@ -1,10 +1,10 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 11770
+// Function ID: 11771
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 9850, 21, 4302, 712, 4718, 2]
+// Dependencies: [19, 17, 9916, 21, 4303, 712, 4720, 2]
 // Exports: default
 
-// Module 11704 (ApplicationCommandLoadingItem)
+// Module 11770 (ApplicationCommandLoadingItem)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT";
@@ -31,7 +31,7 @@ let closure_8 = createCacheKey.createStyles((arg0) => {
 const result = require("AUTOCOMPLETE_ROW_HEIGHT").fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
 
 export default function ApplicationCommandLoadingItem() {
-  let obj = require(4718) /* getFontScale */;
+  let obj = require(4720) /* getFontScale */;
   const tmp = callback3(obj.useFontScale());
   obj = { style: tmp.applicationCommandLoadingItem, children: null };
   obj = { style: tmp.applicationCommandLoadingLeftWrapper, children: null };

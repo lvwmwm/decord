@@ -1,10 +1,10 @@
-// Module ID: 10469
-// Function ID: 10470
+// Module ID: 10535
+// Function ID: 10536
 // Name: GlobeEarthIcon
-// Dependencies: [19, 21, 712, 4004, 10470, 2]
+// Dependencies: [19, 21, 712, 4004, 10536, 2]
 // Exports: GlobeEarthIcon
 
-// Module 10469 (GlobeEarthIcon)
+// Module 10535 (GlobeEarthIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const GlobeEarthIcon = function GlobeEarthIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10470) /* registerAsset */;
+  obj[0] = require(10536) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

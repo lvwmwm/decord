@@ -1,9 +1,9 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16583
+// Function ID: 16584
 // Name: handlePushedModal
-// Dependencies: [8962, 1218, 9006, 16507, 1366, 676, 4153, 4152, 4509, 8399, 16508, 16509, 16517, 5260, 16518, 16792, 16794, 2]
+// Dependencies: [9022, 1218, 9066, 16584, 1366, 676, 4159, 4158, 4511, 8459, 16585, 16586, 16594, 5261, 16595, 16869, 16871, 2]
 
-// Module 16506 (handlePushedModal)
+// Module 16583 (handlePushedModal)
 import handleFormInit from "handleFormInit";
 import fetchFingerprint from "fetchFingerprint";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -14,7 +14,7 @@ import "initialize";
 
 const require = arg1;
 function handlePushedModal(arg0) {
-  let obj = require(4153) /* getRootNavigationRef */;
+  let obj = require(4159) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     obj = { modal: null };
@@ -23,7 +23,7 @@ function handlePushedModal(arg0) {
   }
 }
 function handlePoppedModal() {
-  require(4152) /* navigationToRootTabHelper */.popModal();
+  require(4158) /* navigationToRootTabHelper */.popModal();
 }
 function pushFirstOpenModal(arg0, arg1) {
   const iter = arg0[Symbol.iterator]();
@@ -60,7 +60,7 @@ function pushFirstOpenModal(arg0, arg1) {
     key = key.key;
     obj[0] = key;
     let num = 0;
-    component = handlePushedModal(importDefault(4509)(component, obj, props));
+    component = handlePushedModal(importDefault(4511)(component, obj, props));
   }
 }
 function createPushModalHandler(closure_15, closure_152) {
@@ -82,18 +82,18 @@ let closure_15 = {
     if (action == null) {
       action = importDefaultResult.getAction();
     }
-    let result = importDefault(8399).isFullScreenVerification(action);
+    let result = importDefault(8459).isFullScreenVerification(action);
     if (result) {
       result = null != token.getToken();
     }
     if (result) {
-      result = !require(16508) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
-      const obj2 = require(16508) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16585) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
+      const obj2 = require(16585) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16509) /* PhoneThenEmailInterstitial */.default;
+    return require(16586) /* PhoneThenEmailInterstitial */.default;
   }
 };
 const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
@@ -109,7 +109,7 @@ let closure_17 = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16517) /* handleTouch */.default;
+    return require(16594) /* handleTouch */.default;
   }
 };
 let prototype = function DeprecatedModalManager() {
@@ -120,15 +120,15 @@ let prototype = function DeprecatedModalManager() {
     USER_REQUIRED_ACTION_UPDATE(requiredAction) {
       if (null == requiredAction.requiredAction) {
         if (obj.isModalOpen(closure_16)) {
-          let tmp5Result = tmp5(4152);
+          let tmp5Result = tmp5(4158);
           tmp5Result.popModal(tmp7);
         }
-        tmp5Result = tmp5(4152);
+        tmp5Result = tmp5(4158);
         if (tmp5Result.isModalOpen(closure_14)) {
-          tmp5(4152).popModal(tmp9);
-          const tmp5Result1 = tmp5(4152);
+          tmp5(4158).popModal(tmp9);
+          const tmp5Result1 = tmp5(4158);
         }
-        obj = callback(4152);
+        obj = callback(4158);
         tmp7 = closure_16;
         tmp9 = closure_14;
       } else {
@@ -152,7 +152,7 @@ let prototype = function DeprecatedModalManager() {
     store: handleFormInit,
     closable: false,
     getComponent() {
-      return callback(16518).default;
+      return callback(16595).default;
     }
   };
   obj = {
@@ -160,7 +160,7 @@ let prototype = function DeprecatedModalManager() {
     store: FormStates,
     closable: false,
     getComponent() {
-      return callback(16792).default;
+      return callback(16869).default;
     }
   };
   applyArgumentsResult.actions = obj;

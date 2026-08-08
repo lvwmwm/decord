@@ -1,10 +1,10 @@
-// Module ID: 4144
-// Function ID: 4145
+// Module ID: 4150
+// Function ID: 4151
 // Name: getThemeForColor
-// Dependencies: [4114, 1305, 505, 711, 2]
+// Dependencies: [4120, 1305, 505, 711, 2]
 // Exports: areThemesEqualForGradientThemes, getBaseTheme, getLinearGradientForBackgroundGradient, getThemeForColor, getThemeName
 
-// Module 4144 (getThemeForColor)
+// Module 4150 (getThemeForColor)
 import ThemeTypes from "ThemeTypes";
 import SystemThemeState from "SystemThemeState";
 import { ThemeTypes } from "sum";

@@ -1,10 +1,10 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 11977
+// Function ID: 11978
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [19, 21, 4645, 1236, 4645, 2]
+// Dependencies: [19, 21, 4647, 1236, 4647, 2]
 // Exports: default
 
-// Module 11911 (UserProfileConfirmCancelFriendRequest)
+// Module 11977 (UserProfileConfirmCancelFriendRequest)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -28,12 +28,12 @@ export default function UserProfileConfirmCancelFriendRequest(arg0) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["bTfA//"]);
   obj[2] = onConfirm;
-  const items = [callback(require(4645) /* getAlertModalItemKey */.AlertActionButton, obj, "cancel-friend-request"), ];
+  const items = [callback(require(4647) /* getAlertModalItemKey */.AlertActionButton, obj, "cancel-friend-request"), ];
   const obj1 = { variant: "secondary", text: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl4.string(require(1236) /* getSystemLocale */.t["eN6+rI"]);
-  items[1] = callback(require(4645) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
+  items[1] = callback(require(4647) /* getAlertModalItemKey */.AlertActionButton, obj1, "nevermind");
   obj[0] = items;
-  obj[2] = callback2(require(4645) /* getAlertModalItemKey */.AlertActions, obj);
-  return callback(require(4645) /* getAlertModalItemKey */.AlertModal, obj);
+  obj[2] = callback2(require(4647) /* getAlertModalItemKey */.AlertActions, obj);
+  return callback(require(4647) /* getAlertModalItemKey */.AlertModal, obj);
 };

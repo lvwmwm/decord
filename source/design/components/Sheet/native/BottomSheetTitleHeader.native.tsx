@@ -1,10 +1,10 @@
-// Module ID: 5395
-// Function ID: 5396
+// Module ID: 5396
+// Function ID: 5397
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [32, 19, 17, 21, 4302, 712, 1474, 4005, 1348, 4298, 5270, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 1474, 4005, 1348, 4299, 5271, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5395 (RedesignBottomSheetTitleHeaderBase)
+// Module 5396 (RedesignBottomSheetTitleHeaderBase)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -120,7 +120,7 @@ function Title(arg0) {
   }
   const tmp = callback4();
   const merged = Object.assign(arg0);
-  return callback2(require(4298) /* Text */.Text, { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: callback4().title });
+  return callback2(require(4299) /* Text */.Text, { variant: str, color: "mobile-text-heading-primary", accessibilityRole: "header", style: callback4().title });
 }
 function Subtitle(children) {
   const tmp3 = importDefault(1348)("BottomSheetTitleHeader");
@@ -133,7 +133,7 @@ function Subtitle(children) {
     str2 = "text-sm/medium";
   }
   const tmp = callback4();
-  return callback2(require(4298) /* Text */.Text, { variant: str2, color: str, lineClamp: 1, style: callback4().subtitle, children: children.children });
+  return callback2(require(4299) /* Text */.Text, { variant: str2, color: str, lineClamp: 1, style: callback4().subtitle, children: children.children });
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 let closure_8 = createCacheKey.createStyles(() => {
@@ -163,7 +163,7 @@ export const BottomSheetTitleHeader = function BottomSheetTitleHeader(arg0) {
   ({ leading, trailing } = arg0);
   const tmp2 = callback(React.useState(false), 2);
   let closure_0 = tmp2[1];
-  const tmp3 = importDefault(5270)("sheet");
+  const tmp3 = importDefault(5271)("sheet");
   if (null != leading) {
     if (tmp2[0]) {
       let obj = {};

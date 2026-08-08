@@ -1,10 +1,10 @@
-// Module ID: 9512
-// Function ID: 9513
+// Module ID: 9577
+// Function ID: 9578
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 6941, 676, 21, 9513, 8733, 8726, 589, 5668, 5688, 1884, 6940, 3960, 9514, 1236, 9515, 12071, 12074, 2]
+// Dependencies: [19, 7001, 676, 21, 9578, 8793, 8786, 589, 5728, 5748, 1884, 7000, 3960, 9579, 1236, 9580, 12138, 12141, 2]
 // Exports: default
 
-// Module 9512 (CollectiblesShopGiftModal)
+// Module 9577 (CollectiblesShopGiftModal)
 import noop from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME";

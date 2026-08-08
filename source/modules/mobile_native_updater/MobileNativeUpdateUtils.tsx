@@ -1,10 +1,10 @@
-// Module ID: 13183
-// Function ID: 13184
+// Module ID: 13253
+// Function ID: 13254
 // Name: _checkForNewerBuild
-// Dependencies: [5, 4284, 3, 530, 3998, 500, 691, 2]
+// Dependencies: [5, 4285, 3, 530, 3998, 500, 691, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13183 (_checkForNewerBuild)
+// Module 13253 (_checkForNewerBuild)
 import set from "set";
 import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL";
 
@@ -23,7 +23,7 @@ function _checkForNewerBuild() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9425
+// Function ID: 9426
 // Name: fetchVirtualCurrencyBalance
-// Dependencies: [5, 4347, 676, 3, 709, 530, 4201, 7527, 1208, 2]
+// Dependencies: [5, 4349, 676, 3, 709, 530, 4202, 7587, 1208, 2]
 // Exports: redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9360 (fetchVirtualCurrencyBalance)
+// Module 9425 (fetchVirtualCurrencyBalance)
 import sendRequest from "sendRequest";
 import addSku from "addSku";
 import { Endpoints } from "ME";
@@ -34,7 +34,7 @@ function _fetchVirtualCurrencyBalance() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -153,7 +153,7 @@ function _redeemVirtualCurrencyForSKU() {
             obj[0] = body;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -192,7 +192,7 @@ function _redeemVirtualCurrencyForSKU() {
                 let billingError;
                 c5 = 1;
                 logger = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -224,7 +224,7 @@ function _redeemVirtualCurrencyForSKU() {
                 }
                 let result = null != applicationId;
                 if (result) {
-                  let obj8 = callback(7527);
+                  let obj8 = callback(7587);
                   result = obj8.isTestModeForApplication(applicationId);
                 }
                 c8 = result;
@@ -246,10 +246,10 @@ function _redeemVirtualCurrencyForSKU() {
             } else if (2 === tmp7) {
               c4 = 0;
               let closure_14 = c3;
-              if (closure_14 instanceof callback(4201).BillingError) {
+              if (closure_14 instanceof callback(4202).BillingError) {
                 billingError = closure_14;
               } else {
-                billingError = new callback(4201).BillingError(closure_14);
+                billingError = new callback(4202).BillingError(closure_14);
               }
               let obj6 = callback2(709);
               const obj5 = { type: "VIRTUAL_CURRENCY_REDEEM_FAIL", skuId: null, error: null };
@@ -263,7 +263,7 @@ function _redeemVirtualCurrencyForSKU() {
                 tmp69(billingError);
               }
               logger = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               logger = 3;
               throw body;

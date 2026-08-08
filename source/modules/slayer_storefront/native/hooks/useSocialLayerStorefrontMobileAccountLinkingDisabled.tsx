@@ -1,10 +1,10 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10103
+// Function ID: 10104
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [5790, 589, 2]
+// Dependencies: [5850, 589, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
-// Module 10037 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+// Module 10103 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
 
 const require = arg1;

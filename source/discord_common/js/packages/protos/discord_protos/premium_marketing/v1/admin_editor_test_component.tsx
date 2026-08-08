@@ -1,36 +1,44 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7372
+// Function ID: 7373
 // Name: create
-// Dependencies: [32, 1307, 7290, 2]
+// Dependencies: [32, 1307, 7350, 7360, 2]
 
-// Module 7312 (create)
+// Module 7372 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
 const require = arg1;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
-    items = [, , , , , ];
+    items = [, , , , , , ];
     items[0] = { no: 1, name: "deprecated_field", kind: "scalar", T: 9 };
-    obj = { no: 2, name: "localized_text_field", kind: "message", T: null };
+    items[1] = {
+      no: 2,
+      name: "localized_text_field",
+      kind: "message",
+      T() {
+            return callback(7350).LocalizedString;
+          }
+    };
+    items[2] = { no: 3, name: "plain_text_field", kind: "scalar", T: 9 };
+    obj = { no: 4, name: "textarea_field", kind: "message", T: null };
     class T {
       constructor() {
         return require("create").LocalizedString;
       }
     }
     obj[3] = T;
-    items[1] = obj;
-    items[2] = { no: 3, name: "plain_text_field", kind: "scalar", T: 9 };
-    items[3] = {
-      no: 4,
-      name: "textarea_field",
-      kind: "message",
-      T() {
-            return callback(7290).LocalizedString;
-          }
-    };
+    items[3] = obj;
     items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
     items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
+    items[6] = {
+      no: 7,
+      name: "themed_asset_field",
+      kind: "message",
+      T() {
+            return callback(7360).ThemeAwareAsset;
+          }
+    };
     tmp = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
     // ThrowIfThisInitialized (0x7c)
     return tmp;
@@ -65,27 +73,35 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos, arg1, readUnk
       if (1 === tmp5) {
         obj.deprecatedField = pos.string();
       } else if (2 === tmp5) {
-        let tmp27 = require;
-        let tmp28 = dependencyMap;
-        let LocalizedString2 = require(7290) /* create */.LocalizedString;
-        let tmp29 = LocalizedString2;
-        let tmp30 = pos;
-        let tmp31 = readUnknownField;
+        let tmp32 = require;
+        let tmp33 = dependencyMap;
+        let LocalizedString2 = require(7350) /* create */.LocalizedString;
+        let tmp34 = LocalizedString2;
+        let tmp35 = pos;
+        let tmp36 = readUnknownField;
         obj.localizedTextField = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.localizedTextField);
       } else if (3 === tmp5) {
         obj.plainTextField = pos.string();
       } else if (4 === tmp5) {
-        let tmp22 = require;
-        let tmp23 = dependencyMap;
-        let LocalizedString = require(7290) /* create */.LocalizedString;
-        let tmp24 = LocalizedString;
-        let tmp25 = pos;
-        let tmp26 = readUnknownField;
+        let tmp27 = require;
+        let tmp28 = dependencyMap;
+        let LocalizedString = require(7350) /* create */.LocalizedString;
+        let tmp29 = LocalizedString;
+        let tmp30 = pos;
+        let tmp31 = readUnknownField;
         obj.textareaField = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.textareaField);
       } else if (5 === tmp5) {
         obj.checkboxField = pos.bool();
       } else if (6 === tmp5) {
         obj.assetField = pos.string();
+      } else if (7 === tmp5) {
+        let tmp22 = require;
+        let tmp23 = dependencyMap;
+        let ThemeAwareAsset = require(7360) /* create */.ThemeAwareAsset;
+        let tmp24 = ThemeAwareAsset;
+        let tmp25 = pos;
+        let tmp26 = readUnknownField;
+        obj.themedAssetField = ThemeAwareAsset.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.themedAssetField);
       } else {
         let onRead = readUnknownField.readUnknownField;
         if ("throw" === onRead) {
@@ -128,7 +144,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult = tag.tag(1, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.localizedTextField) {
-    const LocalizedString = require(7290) /* create */.LocalizedString;
+    const LocalizedString = require(7350) /* create */.LocalizedString;
     const tagResult1 = tag.tag(2, require(1307).WireType.LengthDelimited);
     const joined = LocalizedString.internalBinaryWrite(deprecatedField.localizedTextField, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = LocalizedString.internalBinaryWrite(deprecatedField.localizedTextField, tag.tag(2, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -138,7 +154,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     const tagResult2 = tag.tag(3, require(1307).WireType.LengthDelimited);
   }
   if (deprecatedField.textareaField) {
-    const LocalizedString2 = require(7290) /* create */.LocalizedString;
+    const LocalizedString2 = require(7350) /* create */.LocalizedString;
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
     const joined1 = LocalizedString2.internalBinaryWrite(deprecatedField.textareaField, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = LocalizedString2.internalBinaryWrite(deprecatedField.textareaField, tag.tag(4, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -151,6 +167,12 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
     tag.tag(6, require(1307).WireType.LengthDelimited).string(deprecatedField.assetField);
     const tagResult5 = tag.tag(6, require(1307).WireType.LengthDelimited);
   }
+  if (deprecatedField.themedAssetField) {
+    const ThemeAwareAsset = require(7360) /* create */.ThemeAwareAsset;
+    const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
+    const joined2 = ThemeAwareAsset.internalBinaryWrite(deprecatedField.themedAssetField, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
+    const internalBinaryWriteResult2 = ThemeAwareAsset.internalBinaryWrite(deprecatedField.themedAssetField, tag.tag(7, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
+  }
   let onWrite = writeUnknownFields.writeUnknownFields;
   if (false !== onWrite) {
     if (1 == onWrite) {
@@ -161,26 +183,40 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(deprecatedField,
   }
   return tag;
 };
-let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, , , , , ];
-let obj = { no: 2, name: "localized_text_field", kind: "message", T: null };
+let items = [
+  { no: 1, name: "deprecated_field", kind: "scalar", T: 9 },
+  {
+    no: 2,
+    name: "localized_text_field",
+    kind: "message",
+    T() {
+      return callback(7350).LocalizedString;
+    }
+  },
+  { no: 3, name: "plain_text_field", kind: "scalar", T: 9 },
+,
+,
+,
+
+];
+let obj = { no: 4, name: "textarea_field", kind: "message", T: null };
 class T {
   constructor() {
     return require("create").LocalizedString;
   }
 }
 obj[3] = T;
-items[1] = obj;
-items[2] = { no: 3, name: "plain_text_field", kind: "scalar", T: 9 };
-items[3] = {
-  no: 4,
-  name: "textarea_field",
-  kind: "message",
-  T() {
-    return callback(7290).LocalizedString;
-  }
-};
+items[3] = obj;
 items[4] = { no: 5, name: "checkbox_field", kind: "scalar", T: 8 };
 items[5] = { no: 6, name: "asset_field", kind: "scalar", T: 9 };
+items[6] = {
+  no: 7,
+  name: "themed_asset_field",
+  kind: "message",
+  T() {
+    return callback(7360).ThemeAwareAsset;
+  }
+};
 prototype = new prototype("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, tmp, T, AdminEditorTestComponent$Type, prototype, items);
 // ThrowIfThisInitialized (0x7c)
 let result = require("create").fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/admin_editor_test_component.tsx");

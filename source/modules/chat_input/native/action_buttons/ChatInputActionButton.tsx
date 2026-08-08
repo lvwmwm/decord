@@ -1,8 +1,8 @@
-// Module ID: 11543
-// Function ID: 11544
-// Dependencies: [19, 17, 21, 4302, 712, 1348, 4005, 4844, 2]
+// Module ID: 11609
+// Function ID: 11610
+// Dependencies: [19, 17, 21, 4303, 712, 1348, 4005, 4846, 2]
 
-// Module 11543
+// Module 11609
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((active, ref)
   }
   items1[3] = disabled;
   obj[12] = <IconComponent size="custom" style={items1} />;
-  return jsx(tmp(4844).PressableOpacity, { disabled });
+  return jsx(tmp(4846).PressableOpacity, { disabled });
 }));
 const result = require("jsxProd").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButton.tsx");
 

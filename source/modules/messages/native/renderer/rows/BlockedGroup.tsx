@@ -1,38 +1,38 @@
-// Module ID: 7984
-// Function ID: 7985
+// Module ID: 8044
+// Function ID: 8045
 // Name: generateBlockedGroupRowData
-// Dependencies: [7982, 505, 12, 4147, 712, 4145, 7985, 2]
+// Dependencies: [8042, 505, 12, 4153, 712, 4151, 8045, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 7984 (generateBlockedGroupRowData)
+// Module 8044 (generateBlockedGroupRowData)
 import { SeparatorAction } from "Changeset";
 import { UNSAFE_Colors } from "sum";
 import apply from "apply";
 
 let closure_5 = apply.memoize((arg0) => {
-  let obj = require(4147) /* AccessibilityAnnouncer */;
+  let obj = require(4153) /* AccessibilityAnnouncer */;
   let str = "#DBE0E4";
   if (obj.isThemeDark(arg0)) {
     str = importDefault(712).unsafe_rawColors.PRIMARY_700;
   }
-  let tmpResult = tmp(4147);
+  let tmpResult = tmp(4153);
   let str2 = "#FAFAFA";
   if (tmpResult.isThemeDark(arg0)) {
     str2 = importDefault(712).unsafe_rawColors.PRIMARY_630;
   }
-  tmpResult = tmp(4147);
+  tmpResult = tmp(4153);
   if (tmpResult.isThemeDark(arg0)) {
-    let GREY1 = tmp(4145).hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_300, 0.6);
-    const tmpResult1 = tmp(4145);
+    let GREY1 = tmp(4151).hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_300, 0.6);
+    const tmpResult1 = tmp(4151);
   } else {
     GREY1 = UNSAFE_Colors.GREY1;
   }
   obj = { borderColor: null, backgroundColor: null, color: null };
-  obj[0] = require(7985) /* processColorOrThrow */.processColorOrThrow(str);
-  const tmpResult2 = require(7985) /* processColorOrThrow */;
-  obj[1] = require(7985) /* processColorOrThrow */.processColorOrThrow(str2);
-  const tmpResult3 = require(7985) /* processColorOrThrow */;
-  obj[2] = require(7985) /* processColorOrThrow */.processColorOrThrow(GREY1);
+  obj[0] = require(8045) /* processColorOrThrow */.processColorOrThrow(str);
+  const tmpResult2 = require(8045) /* processColorOrThrow */;
+  obj[1] = require(8045) /* processColorOrThrow */.processColorOrThrow(str2);
+  const tmpResult3 = require(8045) /* processColorOrThrow */;
+  obj[2] = require(8045) /* processColorOrThrow */.processColorOrThrow(GREY1);
   return obj;
 });
 const result = require("apply").fileFinishedImporting("modules/messages/native/renderer/rows/BlockedGroup.tsx");

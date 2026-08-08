@@ -1,10 +1,10 @@
-// Module ID: 10273
-// Function ID: 10274
+// Module ID: 10339
+// Function ID: 10340
 // Name: useStrangerDangerWarning
-// Dependencies: [1903, 9603, 589, 10274, 10275, 10276, 7976, 10277, 2]
+// Dependencies: [1903, 9668, 589, 10340, 10341, 10342, 8036, 10343, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 10273 (useStrangerDangerWarning)
+// Module 10339 (useStrangerDangerWarning)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 
@@ -16,17 +16,17 @@ export const useStrangerDangerWarning = function useStrangerDangerWarning(id) {
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require(589) /* initialize */;
   const tmp = require;
-  const isSpamMessageRequest = require(10274) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
-  const obj3 = require(10274) /* useIsSpamMessageRequest */;
-  const isMessageRequest = require(10275) /* useIsMessageRequest */.useIsMessageRequest(id);
-  const obj4 = require(10275) /* useIsMessageRequest */;
-  const channelSafetyWarning = require(10276) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
-  const obj5 = require(10276) /* useChannelSafetyWarning */;
-  const userIsTeen = require(7976) /* useUserIsTeen */.useUserIsTeen();
+  const isSpamMessageRequest = require(10340) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
+  const obj3 = require(10340) /* useIsSpamMessageRequest */;
+  const isMessageRequest = require(10341) /* useIsMessageRequest */.useIsMessageRequest(id);
+  const obj4 = require(10341) /* useIsMessageRequest */;
+  const channelSafetyWarning = require(10342) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
+  const obj5 = require(10342) /* useChannelSafetyWarning */;
+  const userIsTeen = require(8036) /* useUserIsTeen */.useUserIsTeen();
   if (stateFromStores != null) {
     const isStaffResult = stateFromStores.isStaff();
   }
-  const obj6 = require(7976) /* useUserIsTeen */;
+  const obj6 = require(8036) /* useUserIsTeen */;
   if (userIsTeen) {
     if (!isSpamMessageRequest) {
       if (!isMessageRequest) {

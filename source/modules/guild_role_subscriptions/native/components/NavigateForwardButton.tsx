@@ -1,10 +1,10 @@
-// Module ID: 14385
-// Function ID: 14386
+// Module ID: 14455
+// Function ID: 14456
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4302, 712, 4844, 4298, 1297, 14386, 2]
+// Dependencies: [19, 21, 4303, 712, 4846, 4299, 1297, 14456, 2]
 // Exports: default
 
-// Module 14385 (NavigateForwardButton)
+// Module 14455 (NavigateForwardButton)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -27,10 +27,10 @@ export default function NavigateForwardButton(arg0) {
   const tmp = createCacheKey();
   let obj = { style: tmp.container, onPress, children: null };
   obj = { style: tmp.text, variant: "text-md/semibold", color: "interactive-text-active", children: text };
-  const items = [callback(require(4298) /* Text */.Text, obj), ];
+  const items = [callback(require(4299) /* Text */.Text, obj), ];
   obj = { source: null };
-  obj[0] = importDefault(14386);
+  obj[0] = importDefault(14456);
   items[1] = callback(require(1297) /* Button */.Icon, obj);
   obj[2] = items;
-  return callback2(require(4844) /* PressableBase */.PressableHighlight, obj);
+  return callback2(require(4846) /* PressableBase */.PressableHighlight, obj);
 };

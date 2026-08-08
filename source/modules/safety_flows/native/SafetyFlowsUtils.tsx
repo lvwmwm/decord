@@ -1,11 +1,11 @@
-// Module ID: 16870
-// Function ID: 16871
+// Module ID: 16947
+// Function ID: 16948
 // Name: fetchAndUpdateTask
-// Dependencies: [5, 19, 1903, 16864, 16866, 4507, 16865, 4002, 9811, 1236, 2546, 1480, 16869, 2]
+// Dependencies: [5, 19, 1903, 16941, 16943, 4509, 16942, 4002, 9877, 1236, 2546, 1480, 16946, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 16870 (fetchAndUpdateTask)
-import module_4507 from "module_4507";
+// Module 16947 (fetchAndUpdateTask)
+import module_4509 from "module_4509";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -47,20 +47,20 @@ function _fetchAndUpdateTask() {
 }
 function navigateToScreenForTask(closure_1, closure_0) {
   if (null == closure_0) {
-    let obj = importDefault(4507);
-    obj.popWithKey(require(16865) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
+    let obj = importDefault(4509);
+    obj.popWithKey(require(16942) /* SAFETY_FLOWS_MODAL_KEY */.SAFETY_FLOWS_MODAL_KEY);
     obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: null, content: null };
-    obj[1] = importDefault(9811);
+    obj[1] = importDefault(9877);
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(importDefault(2546)["/fHz9S"]);
     importDefault(4002).open(obj);
   } else {
     const task_type = closure_0.task_type;
-    const tmp16 = require(16864) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+    const tmp16 = require(16941) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(16864).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(16941).TaskType.EMAIL_VERIFICATION) {
         const currentUser = authStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -68,7 +68,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(16864).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(16941).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -77,18 +77,18 @@ function navigateToScreenForTask(closure_1, closure_0) {
     if (null != tmp5) {
       closure_1.push(tmp5[0]);
     } else {
-      closure_1.push(tmp14(16864).SafetyFlowScreens.UPDATE_APP);
+      closure_1.push(tmp14(16941).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
 
 export const getScreensForTaskType = function getScreensForTaskType(task_type) {
-  const tmp3 = require(16864) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
+  const tmp3 = require(16941) /* TaskType */.TASK_TYPE_TO_SCREENS[task_type];
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(16864).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(16941).TaskType.EMAIL_VERIFICATION) {
       const currentUser = authStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -96,7 +96,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(16864).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(16941).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }
@@ -130,7 +130,7 @@ export const useOnTaskComplete = function useOnTaskComplete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ export const useOnTaskComplete = function useOnTaskComplete() {
             callback = arg1;
             outer2_8(callback, callback);
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c4 = tmp;

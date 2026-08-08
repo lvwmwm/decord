@@ -1,10 +1,10 @@
-// Module ID: 8908
-// Function ID: 8909
+// Module ID: 8968
+// Function ID: 8969
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4005, 712, 1609, 5396, 5395, 5705, 5398, 7925, 7924, 2]
+// Dependencies: [19, 21, 4005, 712, 1609, 5397, 5396, 5765, 5399, 7985, 7984, 2]
 // Exports: default
 
-// Module 8908 (ItemSelectorActionSheet)
+// Module 8968 (ItemSelectorActionSheet)
 import "noop";
 import jsxProd from "jsxProd";
 
@@ -33,9 +33,9 @@ export default function ItemSelectorActionSheet(arg0) {
   if (null != onClose) {
     obj = { onPress: null };
     obj[0] = onClose;
-    tmp6Result = tmp6(tmp(5705).ActionSheetCloseButton, obj);
+    tmp6Result = tmp6(tmp(5765).ActionSheetCloseButton, obj);
   }
-  const obj1 = { scrollable: true, header: closure_3(items(5395).BottomSheetTitleHeader, obj), children: null };
+  const obj1 = { scrollable: true, header: closure_3(items(5396).BottomSheetTitleHeader, obj), children: null };
   obj[1] = tmp6Result;
   const obj2 = { contentContainerStyle: null, children: null };
   const obj3 = { paddingHorizontal: token, paddingBottom: null };
@@ -46,7 +46,7 @@ export default function ItemSelectorActionSheet(arg0) {
   if (findIndexResult >= 0) {
     num = findIndexResult;
   }
-  items[1] = closure_3(items(7925).TableRadioGroup, {
+  items[1] = closure_3(items(7985).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -55,9 +55,9 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => callback(items(7924).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => callback(items(7984).TableRadioRow, { label: label.label, value }, value))
   });
   obj2[1] = items;
-  obj1[2] = closure_4(items(5398).BottomSheetScrollView, obj2);
-  return closure_3(items(5396).BottomSheet, obj1);
+  obj1[2] = closure_4(items(5399).BottomSheetScrollView, obj2);
+  return closure_3(items(5397).BottomSheet, obj1);
 };

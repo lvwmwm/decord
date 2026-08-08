@@ -1,10 +1,10 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8156
+// Function ID: 8157
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1903, 3961, 4140, 1236, 2866, 2, 8097]
+// Dependencies: [1903, 3961, 4146, 1236, 2866, 2, 8157]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 8096 (getPremiumGroupInviteEmbedText)
+// Module 8156 (getPremiumGroupInviteEmbedText)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
@@ -35,7 +35,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       user = user.getUser(found);
       let nameFromUserResult = null;
       if (null != user) {
-        let obj4 = sender(4140);
+        let obj4 = sender(4146);
         nameFromUserResult = obj4.nameFromUser(user);
       }
       tmp8 = nameFromUserResult;
@@ -60,7 +60,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     }
     return tmp15;
   } else {
-    obj = sender(4140);
+    obj = sender(4146);
     const nameFromUserResult1 = obj.nameFromUser(sender);
     const obj3 = { message: null, header: null, body: null };
     const intl = sender(1236).intl;

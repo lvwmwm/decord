@@ -1,9 +1,9 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11721
+// Function ID: 11722
 // Name: fetch
 // Dependencies: [5, 1372, 676, 687, 3, 530, 1464, 2]
 
-// Module 11655 (fetch)
+// Module 11721 (fetch)
 import sendRequest from "sendRequest";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
@@ -39,7 +39,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -88,7 +88,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
             if (null == lib) {
               c4 = 0;
               c6 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } else if (!sendRequest.isCanceled) {
               if (200 === lib.status) {
                 lib(outer1_0);
@@ -102,7 +102,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
                 if (sendRequest.query.attempts > 5) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "T", done: null };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   const _parseInt = parseInt;
                   callback = parseInt(lib.headers["retry-after"]);
@@ -125,7 +125,7 @@ prototype["fetch"] = function fetch(arg0, arg1, arg2) {
           }
           c4 = 0;
           c6 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
         c6 = 3;
       } catch (tmp49) {

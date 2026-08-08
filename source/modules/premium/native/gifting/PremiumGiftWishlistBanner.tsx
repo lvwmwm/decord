@@ -1,10 +1,10 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10082
+// Function ID: 10083
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 5789, 1905, 676, 678, 8725, 21, 712, 4302, 9279, 9291, 10017, 10021, 5668, 5688, 698, 8723, 9970, 10022, 4153, 4002, 1236, 6940, 9511, 4140, 4298, 10038, 10043, 2]
+// Dependencies: [5, 19, 17, 5849, 1905, 676, 678, 8785, 21, 712, 4303, 9344, 9356, 10083, 10087, 5728, 5748, 698, 8783, 10036, 10088, 4159, 4002, 1236, 7000, 9576, 4146, 4299, 10104, 10109, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10016 (PremiumGiftWishlistBanner)
+// Module 10082 (PremiumGiftWishlistBanner)
 import closure_3 from "ME";
 import useSelectPremiumGift from "useSelectPremiumGift";
 import get_ActivityIndicator from "expandEventProperties";
@@ -148,7 +148,7 @@ export const PremiumGiftWishlistBanner = function PremiumGiftWishlistBanner(gift
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

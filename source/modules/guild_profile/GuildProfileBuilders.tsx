@@ -1,10 +1,10 @@
-// Module ID: 5334
-// Function ID: 5335
+// Module ID: 5335
+// Function ID: 5336
 // Name: getEmoji
-// Dependencies: [5175, 3942, 5335, 1351, 5336, 2]
+// Dependencies: [5176, 3942, 5336, 1351, 5337, 2]
 // Exports: buildGuildProfileFromInvite, buildGuildProfileUpdateForServer, buildTopGamesFromServer
 
-// Module 5334 (getEmoji)
+// Module 5335 (getEmoji)
 import { EmojiDisambiguations } from "getEmojiToGroupId";
 
 function getEmoji(guildId) {
@@ -35,7 +35,7 @@ function getEmoji(guildId) {
 }
 function buildGuildProfileTraitsFromServer(arg0, arg1) {
   let position;
-  const array = new Array(require(5335) /* MAX_TRAITS */.MAX_TRAITS);
+  const array = new Array(require(5336) /* MAX_TRAITS */.MAX_TRAITS);
   const fillResult = array.fill(closure_5);
   const iter = arg1[Symbol.iterator]();
   const nextResult = iter.next();
@@ -46,7 +46,7 @@ function buildGuildProfileTraitsFromServer(arg0, arg1) {
       let tmp5 = nextResult;
       let tmp6 = require;
       let tmp7 = dependencyMap;
-      tmp4 = tmp3.position >= require(5335) /* MAX_TRAITS */.MAX_TRAITS;
+      tmp4 = tmp3.position >= require(5336) /* MAX_TRAITS */.MAX_TRAITS;
     }
     if (!tmp4) {
       let tmp8 = nextResult;
@@ -236,7 +236,7 @@ export const buildGuildProfileFromInvite = function buildGuildProfileFromInvite(
         num = 0;
       }
       obj[6] = num;
-      obj[7] = require(5336) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
+      obj[7] = require(5337) /* GuildProfileVisibility */.GuildProfileVisibility.NOT_SPECIFIED;
       obj[8] = [];
       obj[9] = [];
       obj[10] = {};

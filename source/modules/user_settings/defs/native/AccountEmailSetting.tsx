@@ -1,9 +1,9 @@
-// Module ID: 13941
-// Function ID: 13942
+// Module ID: 14011
+// Function ID: 14012
 // Name: pressable
-// Dependencies: [1903, 8022, 589, 8391, 10380, 1236, 2]
+// Dependencies: [1903, 8082, 589, 8451, 10446, 1236, 2]
 
-// Module 13941 (pressable)
+// Module 14011 (pressable)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import createToggle from "createToggle";
 
@@ -26,7 +26,7 @@ createToggle = {
     });
   },
   onPress: function onAccountEmailSettingPress() {
-    importDefault(8391).open(true);
+    importDefault(8451).open(true);
   },
   withArrow: true
 };

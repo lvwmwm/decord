@@ -1,10 +1,10 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 8016
+// Function ID: 8017
 // Name: init
-// Dependencies: [5, 7957, 1372, 676, 709, 4153, 7164, 530, 5878, 2]
+// Dependencies: [5, 8017, 1372, 676, 709, 4159, 7224, 530, 5938, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 7956 (init)
+// Module 8016 (init)
 import getRootNavigationRef from "getRootNavigationRef";
 import normalizeChannelPropertyForCompare from "normalizeChannelPropertyForCompare";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -20,7 +20,7 @@ function init(channelId, location, subsection) {
   obj.dispatch(obj);
 }
 function open(arg0, arg1, arg2) {
-  let obj = require(4153) /* getRootNavigationRef */;
+  let obj = require(4159) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -135,7 +135,7 @@ function _saveChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -181,7 +181,7 @@ function _saveChannel() {
               let channel2;
               c4 = 1;
               channel = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -351,7 +351,7 @@ function _deleteChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -408,7 +408,7 @@ function _deleteChannel() {
             }
             callback2();
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = tmp;

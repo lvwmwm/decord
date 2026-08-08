@@ -1,10 +1,10 @@
-// Module ID: 6825
-// Function ID: 6826
+// Module ID: 6885
+// Function ID: 6886
 // Name: usePremiumPlanPurchasedStore
-// Dependencies: [3994, 1905, 644, 705, 6826, 5688, 2]
+// Dependencies: [3994, 1905, 644, 705, 6886, 5748, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 6825 (usePremiumPlanPurchasedStore)
+// Module 6885 (usePremiumPlanPurchasedStore)
 import setContent from "setContent";
 import GuildFeatures from "GuildFeatures";
 import keys from "keys";
@@ -50,11 +50,11 @@ export const handleMobileWebCheckoutStatus = function handleMobileWebCheckoutSta
       if (key.getKey() !== closure_4) {
         const obj = { premiumType: null, analyticsLocations: null, analyticsLocation: null };
         obj[0] = TIER_2.TIER_2;
-        const items = [importDefault(5688).DEEPLINK];
+        const items = [importDefault(5748).DEEPLINK];
         obj[1] = items;
         obj[2] = {};
-        importDefault(6826)(obj);
-        const tmp3 = importDefault(6826);
+        importDefault(6886)(obj);
+        const tmp3 = importDefault(6886);
       }
       _require(705).batchUpdates(() => outer1_6.setState({ isPaymentSuccess: true, mobileWebRedirectCheckoutStatus: closure_0 }));
       if (null != onPaymentSuccess) {
@@ -91,6 +91,6 @@ export const reset = function reset() {
         str = "dismissed";
       }
     }
-    outer1_6.setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "accessible", onPaymentDismiss: "v" });
+    outer1_6.setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "dispatch" });
   });
 };

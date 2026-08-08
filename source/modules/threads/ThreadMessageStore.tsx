@@ -1,9 +1,9 @@
-// Module ID: 5862
-// Function ID: 5863
+// Module ID: 5922
+// Function ID: 5923
 // Name: updateState
-// Dependencies: [1376, 3939, 1911, 1372, 4519, 1235, 676, 12, 11, 4521, 589, 709, 2]
+// Dependencies: [1376, 3939, 1911, 1372, 4521, 1235, 676, 12, 11, 4523, 589, 709, 2]
 
-// Module 5862 (updateState)
+// Module 5922 (updateState)
 import createChannelRecord from "createChannelRecord";
 import hasFlag from "hasFlag";
 import createdAt from "createdAt";
@@ -327,8 +327,8 @@ prototype["getMostRecentMessage"] = function getMostRecentMessage(id) {
     if (tmp3) {
       let message = store2.getMessage(id, tmp.mostRecentRawMessage.id);
       if (message == null) {
-        message = require(4521) /* createMinimalMessageRecord */.createMessageRecord(tmp.mostRecentRawMessage);
-        const obj = require(4521) /* createMinimalMessageRecord */;
+        message = require(4523) /* createMinimalMessageRecord */.createMessageRecord(tmp.mostRecentRawMessage);
+        const obj = require(4523) /* createMinimalMessageRecord */;
       }
       tmp.mostRecentMessage = message;
       tmp.mostRecentRawMessage = null;
@@ -543,12 +543,12 @@ const threadMessageStore = new ThreadMessageStore(require("dispatcher"), {
           }
           dependencyMap2[tmp.parentId] = num + 1;
           if (null != tmp.mostRecentMessage) {
-            tmp.mostRecentMessage = require(4521) /* createMinimalMessageRecord */.updateMessageRecord(tmp.mostRecentMessage, message);
-            const obj = require(4521) /* createMinimalMessageRecord */;
+            tmp.mostRecentMessage = require(4523) /* createMinimalMessageRecord */.updateMessageRecord(tmp.mostRecentMessage, message);
+            const obj = require(4523) /* createMinimalMessageRecord */;
           }
           if (null != tmp.mostRecentRawMessage) {
-            tmp.mostRecentRawMessage = require(4521) /* createMinimalMessageRecord */.updateServerMessage(tmp.mostRecentRawMessage, message);
-            const obj2 = require(4521) /* createMinimalMessageRecord */;
+            tmp.mostRecentRawMessage = require(4523) /* createMinimalMessageRecord */.updateServerMessage(tmp.mostRecentRawMessage, message);
+            const obj2 = require(4523) /* createMinimalMessageRecord */;
           }
         }
       }

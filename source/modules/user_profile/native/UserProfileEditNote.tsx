@@ -1,10 +1,10 @@
-// Module ID: 12266
-// Function ID: 12267
+// Module ID: 12333
+// Function ID: 12334
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 676, 21, 4302, 1480, 12260, 5269, 9399, 4160, 8322, 1236, 12267, 4298, 7916, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 1480, 12327, 5270, 9464, 4166, 8382, 1236, 12334, 4299, 7976, 2]
 // Exports: default
 
-// Module 12266 (UserProfileEditNote)
+// Module 12333 (UserProfileEditNote)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ScrollView } from "get ActivityIndicator";

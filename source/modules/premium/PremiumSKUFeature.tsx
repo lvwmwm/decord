@@ -1,9 +1,9 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13328
+// Function ID: 13329
 // Name: set
 // Dependencies: [2]
 
-// Module 13258 (set)
+// Module 13328 (set)
 const result = require("set").fileFinishedImporting("modules/premium/PremiumSKUFeature.tsx");
 
 export default function PremiumSKUFeature(name, getFeatureValue, description) {

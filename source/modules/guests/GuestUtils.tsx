@@ -1,8 +1,8 @@
-// Module ID: 10927
-// Function ID: 10928
-// Dependencies: [3917, 1384, 7712, 2]
+// Module ID: 10993
+// Function ID: 10994
+// Dependencies: [3917, 1384, 7772, 2]
 
-// Module 10927
+// Module 10993
 import { GuildMemberFlags } from "GuildMemberFlags";
 
 const result = require("set").fileFinishedImporting("modules/guests/GuestUtils.tsx");
@@ -29,7 +29,7 @@ export default {
         if (num2 == null) {
           num2 = 0;
         }
-        hasFlagResult1 = tmp2(1384).hasFlag(num2, tmp2(7712).GuildInviteFlags.IS_GUEST_INVITE);
+        hasFlagResult1 = tmp2(1384).hasFlag(num2, tmp2(7772).GuildInviteFlags.IS_GUEST_INVITE);
         const tmp2Result = tmp2(1384);
       }
       tmp = hasFlagResult1;

@@ -1,16 +1,16 @@
-// Module ID: 14360
-// Function ID: 14361
+// Module ID: 14430
+// Function ID: 14431
 // Name: QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED
-// Dependencies: [32, 19, 17, 5160, 14265, 505, 21, 4302, 712, 4711, 14287, 14266, 501, 14262, 14275, 5163, 7127, 4238, 4147, 4005, 14353, 4162, 14261, 7949, 14361, 14330, 5267, 14363, 14364, 14321, 4298, 1236, 4844, 10088, 8544, 2]
+// Dependencies: [32, 19, 17, 5161, 14335, 505, 21, 4303, 712, 4713, 14357, 14336, 501, 14332, 14345, 5164, 7187, 4239, 4153, 4005, 14423, 4036, 14331, 8009, 14431, 14400, 5268, 14433, 14434, 14391, 4299, 1236, 4846, 10154, 8604, 2]
 
-// Module 14360 (QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)
+// Module 14430 (QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)
 import PressableBase from "PressableBase";
 import importAllResult from "map";
 import get_ActivityIndicator from "useTheme";
 import { QuestDockMode } from "QuestsExperimentLocations";
 import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT";
 import { ThemeTypes } from "sum";
-import jsxProd from "module_4162";
+import jsxProd from "module_4036";
 import createCacheKey from "createCacheKey";
 
 let QUEST_DOCK_COLLAPSED_HEIGHT;
@@ -37,13 +37,13 @@ function questDockHeaderLayoutAnimation(currentOriginX) {
   obj = { initialValues: obj, animations: null };
   obj = { originX: currentOriginX.currentOriginX, originY: currentOriginX.currentOriginY, width: currentOriginX.currentWidth, height: currentOriginX.currentHeight };
   obj = { originX: null, originY: null, height: null, width: null };
-  obj[0] = require(4711) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginX, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
-  const obj4 = require(4711) /* CONFIG_NEVER_ANIMATE */;
-  obj[1] = require(4711) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
-  const obj5 = require(4711) /* CONFIG_NEVER_ANIMATE */;
-  obj[2] = require(4711) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetHeight, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
-  const obj6 = require(4711) /* CONFIG_NEVER_ANIMATE */;
-  obj[3] = require(4711) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetWidth, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
+  obj[0] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginX, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
+  const obj4 = require(4713) /* CONFIG_NEVER_ANIMATE */;
+  obj[1] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetOriginY, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
+  const obj5 = require(4713) /* CONFIG_NEVER_ANIMATE */;
+  obj[2] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetHeight, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
+  const obj6 = require(4713) /* CONFIG_NEVER_ANIMATE */;
+  obj[3] = require(4713) /* CONFIG_NEVER_ANIMATE */.withSpring(currentOriginX.targetWidth, QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED);
   obj[1] = obj;
   return obj;
 }

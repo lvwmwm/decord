@@ -1,0 +1,35 @@
+// Module ID: 13583
+// Function ID: 13584
+// Dependencies: [13584, 13595, 13597, 13600, 13603, 13604]
+
+// Module 13583
+let closure_3 = require("withoutSetter")("toPrimitive");
+
+export default (arg0, arg1) => {
+  if (require(13595) /* all */(arg0)) {
+    if (!tmp(13597)(arg0)) {
+      let str = arg1;
+      const tmp4 = tmp(13600)(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
+        }
+        const tmp5 = tmp(13603)(tmp4, arg0, str);
+        if (tmp(13595)(tmp5)) {
+          if (!tmp(13597)(tmp5)) {
+            const tmp9 = new TypeError("Can't convert object to primitive value");
+            throw tmp9;
+          }
+        }
+        return tmp5;
+      } else {
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return tmp(13604)(arg0, str2);
+      }
+    }
+  }
+  return arg0;
+};

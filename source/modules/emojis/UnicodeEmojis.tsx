@@ -1,7 +1,7 @@
 // Module ID: 3942
 // Function ID: 3943
 // Name: parseRawEmojiObject
-// Dependencies: [3943, 3944, 3945, 3946, 12, 13261, 2]
+// Dependencies: [3943, 3944, 3945, 3946, 12, 13331, 2]
 // Exports: asUnicodeEmoji
 
 // Module 3942 (parseRawEmojiObject)
@@ -484,7 +484,7 @@ let obj = {
     }
     const call = hasOwnProperty.call;
     if (typeof call === "unknown" ? hasOwnProperty(key10009) : call(tmp3, key10009)) {
-      str = require(13261)[key10009];
+      str = require(13331)[key10009];
     }
     let combined = str;
     if (flag) {

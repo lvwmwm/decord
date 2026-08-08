@@ -1,10 +1,10 @@
-// Module ID: 15780
-// Function ID: 15781
+// Module ID: 15855
+// Function ID: 15856
 // Name: ReferralProgramCoachmarkImg
-// Dependencies: [32, 19, 17, 676, 1369, 21, 4302, 5267, 15781, 4117, 1358, 8102, 5962, 1236, 712, 5956, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 21, 4303, 5268, 15856, 4123, 1358, 8162, 6022, 1236, 712, 6016, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 15780 (ReferralProgramCoachmarkImg)
+// Module 15855 (ReferralProgramCoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -18,9 +18,9 @@ function ReferralProgramCoachmarkImg() {
   const tmp = callback2();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(15781);
+  obj[0] = importDefault(15856);
   obj[1] = tmp.coachmarkImage;
-  obj[1] = jsx(importDefault(5267), { source: null, style: null });
+  obj[1] = jsx(importDefault(5268), { source: null, style: null });
   return <View source={null} style={null} />;
 }
 let closure_9 = createCacheKey.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 200, height: 112 } });
@@ -30,13 +30,13 @@ export const useReferralProgramCoachmark = function useReferralProgramCoachmark(
   disabled = disabled.disabled;
   let _require;
   let c1;
-  let obj = _require(4117);
+  let obj = _require(4123);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK);
   if (!result) {
     result = disabled;
   }
-  const isEligibleSenderForReferralProgram = _require(8102).useIsEligibleSenderForReferralProgram(result);
-  _require(5962);
+  const isEligibleSenderForReferralProgram = _require(8162).useIsEligibleSenderForReferralProgram(result);
+  _require(6022);
   if (isEligibleSenderForReferralProgram) {
     if (!disabled) {
       let items = [tmp(1358).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];

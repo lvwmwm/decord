@@ -1,9 +1,9 @@
-// Module ID: 8861
-// Function ID: 8862
+// Module ID: 8921
+// Function ID: 8922
 // Name: DEFAULT_UX_VARIATION
-// Dependencies: [8838, 676, 8174, 7244, 698, 2]
+// Dependencies: [8898, 676, 8234, 7304, 698, 2]
 
-// Module 8861 (DEFAULT_UX_VARIATION)
+// Module 8921 (DEFAULT_UX_VARIATION)
 import filterStaffGuild from "filterStaffGuild";
 import ME from "ME";
 

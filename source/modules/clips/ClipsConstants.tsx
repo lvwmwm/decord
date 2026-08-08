@@ -1,10 +1,10 @@
-// Module ID: 4356
-// Function ID: 4357
+// Module ID: 4358
+// Function ID: 4359
 // Name: result
 // Dependencies: [687, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds
 
-// Module 4356 (result)
+// Module 4358 (result)
 let obj = {};
 const result = 30 * require("set").Millis.SECOND;
 obj.SECONDS_30 = result;
@@ -38,8 +38,6 @@ export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 2;
 export const WINDOWS_HARDWARE_MINIMUM_GPU_REGEX = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/;
 export const WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/;
 export const MIN_CLIP_DURATION_SECONDS = 0.1;
-export const CLIP_NAME_MIN_CHAR_LENGTH = 0;
-export const CLIP_NAME_MAX_CHAR_LENGTH = 200;
 export const CLIPS_EDIT_MODAL_KEY = "clips-edit";
 export const CLIPS_GALLERY_MODAL_KEY = "clips-gallery";
 export const CLIPS_QOE_LOCATION = "clips_player";
@@ -67,6 +65,7 @@ export const DEFAULT_CLIPS_BITRATE_PERCENT = 75;
 export const BYTES_PER_GB = 1073741824;
 export const MAX_TRANSIENT_STORAGE_BYTES = 16106127360;
 export const TRANSIENT_AUTOCLIP_DIRNAME = ".autoclip-cache";
+export const CLIP_NAME_MIN_CHAR_LENGTH = 0;
 export const ClipsTrackSuffixes = { ALL: ":all", APPLICATION: ":application", VOICE: ":voice", SOUNDBOARD: ":soundboard" };
 export const ClipSignalTypes = { MANUAL: "manual", DISTRIBUTED: "distributed", SHOUTING: "shouting", LAUGHTER: "laughter", GAME_EVENT: "game_event", SPEAKING: "speaking", SOUNDBOARD: "soundboard" };
 export const ClipsHardwareClassification = { UNKNOWN: "unknown", BELOW_MINIMUM: "below_minimum", MEETS_MINIMUM: "meets_minimum", MEETS_AUTO_ENABLE: "meets_auto_enable" };

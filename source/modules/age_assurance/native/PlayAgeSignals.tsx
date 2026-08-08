@@ -1,10 +1,10 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16531
+// Function ID: 16532
 // Name: _getAgeSignals
-// Dependencies: [5, 16455, 2]
+// Dependencies: [5, 16532, 2]
 // Exports: getAgeSignals, isConsideredOlderThan
 
-// Module 16454 (_getAgeSignals)
+// Module 16531 (_getAgeSignals)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _getAgeSignals() {
@@ -21,7 +21,7 @@ function _getAgeSignals() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

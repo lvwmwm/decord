@@ -1,10 +1,10 @@
-// Module ID: 11103
-// Function ID: 11104
+// Module ID: 11169
+// Function ID: 11170
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7100, 5160, 21, 4302, 712, 1609, 589, 11104, 4002, 1236, 8385, 4270, 10410, 5696, 4250, 11106, 5396, 5395, 4298, 4292, 5707, 5373, 4712, 11109, 2]
+// Dependencies: [19, 17, 7160, 5161, 21, 4303, 712, 1609, 589, 11170, 4002, 1236, 8445, 4271, 10476, 5756, 4251, 11172, 5397, 5396, 4299, 4293, 5767, 5374, 4714, 11175, 2]
 // Exports: default
 
-// Module 11103 (QuestRewardCodeClaimBottomSheet)
+// Module 11169 (QuestRewardCodeClaimBottomSheet)
 import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase";
 import get_ActivityIndicator from "_getQuestsInstructionsToWinReward";
 import initializeState from "initializeState";

@@ -1,9 +1,9 @@
-// Module ID: 5780
-// Function ID: 5781
+// Module ID: 5840
+// Function ID: 5841
 // Name: makeSortedChannel
-// Dependencies: [5781, 5782, 1376, 1372, 1891, 4314, 4497, 1903, 11, 3925, 3883, 5783, 589, 709, 2]
+// Dependencies: [5841, 5842, 1376, 1372, 1891, 4315, 4499, 1903, 11, 3925, 3883, 5843, 589, 709, 2]
 
-// Module 5780 (makeSortedChannel)
+// Module 5840 (makeSortedChannel)
 import processChannel from "processChannel";
 import closure_4 from "processChannel";
 import { isPrivate } from "createChannelRecord";
@@ -79,7 +79,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap(function inde
 let closure_15 = [];
 let closure_16 = [];
 let closure_17 = [];
-const f36194 = () => {
+const f36347 = () => {
 
 };
 class PrivateChannelSortStore extends Store {
@@ -91,7 +91,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f36194 !== "function") {
+  if (typeof f36347 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let values = secondaryIndexMap.values(constants.FAVORITE);
@@ -142,7 +142,7 @@ const privateChannelSortStore = new PrivateChannelSortStore(require("dispatcher"
     channel = channel.channel;
     let tmp = isPrivate(channel.type);
     if (tmp) {
-      const tmp4 = channel.id !== require(5783) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+      const tmp4 = channel.id !== require(5843) /* FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID */.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
       if (tmp4) {
         const result = secondaryIndexMap.set(channel.id, makeSortedChannel(channel));
       }

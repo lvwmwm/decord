@@ -1,10 +1,10 @@
-// Module ID: 6885
-// Function ID: 6886
+// Module ID: 6945
+// Function ID: 6946
 // Name: isSaveableChannel
-// Dependencies: [32, 1372, 5154, 676, 6879, 6883, 6884, 2]
+// Dependencies: [32, 1372, 5155, 676, 6939, 6943, 6944, 2]
 // Exports: withFallbacks
 
-// Module 6885 (isSaveableChannel)
+// Module 6945 (isSaveableChannel)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
@@ -38,7 +38,7 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
   if (extendedMemoryLru.totalLength >= arg1) {
     return extendedMemoryLru;
   } else {
-    extendedMemoryLru = new require(6879) /* totalLength */.ExtendedMemoryLru(extendedMemoryLru.primaryCapacity, extendedMemoryLru.extendedCapacity);
+    extendedMemoryLru = new require(6939) /* totalLength */.ExtendedMemoryLru(extendedMemoryLru.primaryCapacity, extendedMemoryLru.extendedCapacity);
     const diff = arg1 - extendedMemoryLru.totalLength;
     guildFolders = guildFolders.getGuildFolders();
     const iter = guildFolders[Symbol.iterator]();
@@ -60,14 +60,14 @@ export const withFallbacks = function withFallbacks(extendedMemoryLru, arg1) {
           if (isReadableChannelResult) {
             let tmp13 = require;
             let tmp14 = dependencyMap;
-            let obj3 = require(6883) /* isReadableChannel */;
+            let obj3 = require(6943) /* isReadableChannel */;
             let tmp15 = item10025;
             isReadableChannelResult = obj3.isReadableChannel(tmp10);
           }
           if (isReadableChannelResult) {
             let tmp16 = require;
             let tmp17 = dependencyMap;
-            let obj4 = require(6884) /* LIMITED_GUILD_MEMBER_THRESHOLD */;
+            let obj4 = require(6944) /* LIMITED_GUILD_MEMBER_THRESHOLD */;
             let tmp18 = item10025;
             isReadableChannelResult = !obj4.isLimitedChannel(tmp10);
           }

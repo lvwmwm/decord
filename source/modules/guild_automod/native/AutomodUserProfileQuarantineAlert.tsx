@@ -1,10 +1,10 @@
-// Module ID: 11202
-// Function ID: 11203
+// Module ID: 11268
+// Function ID: 11269
 // Name: ChatBlockedAlert
-// Dependencies: [32, 109, 19, 17, 1218, 1971, 1891, 11195, 676, 3917, 21, 4302, 712, 4730, 1236, 1297, 11203, 4298, 11204, 5956, 647, 3935, 4728, 698, 2]
+// Dependencies: [32, 109, 19, 17, 1218, 1971, 1891, 11261, 676, 3917, 21, 4303, 712, 4732, 1236, 1297, 11269, 4299, 11270, 6016, 647, 3935, 4730, 698, 2]
 // Exports: default
 
-// Module 11202 (ChatBlockedAlert)
+// Module 11268 (ChatBlockedAlert)
 import _slicedToArray from "_slicedToArray";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "openUserSettings";
@@ -45,13 +45,13 @@ function ChatBlockedAlert(arg0) {
   obj.onConfirm = onConfirm;
   obj = { style: tmp2.body, children: null };
   obj = { source: null, size: null, style: null };
-  obj[0] = importDefault(11203);
+  obj[0] = importDefault(11269);
   obj[1] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
   obj[2] = tmp2.mainIcon;
-  const items = [closure_16(require(1297) /* Button */.Icon, obj), closure_16(require(4298) /* Text */.Text, { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title }), closure_16(require(4298) /* Text */.Text, { style: tmp2.description, variant: "text-sm/medium", color: "text-default", children: description })];
+  const items = [closure_16(require(1297) /* Button */.Icon, obj), closure_16(require(4299) /* Text */.Text, { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title }), closure_16(require(4299) /* Text */.Text, { style: tmp2.description, variant: "text-sm/medium", color: "text-default", children: description })];
   obj[1] = items;
   obj.children = callback4(View, obj);
-  return closure_16(importDefault(4730), obj);
+  return closure_16(importDefault(4732), obj);
 }
 function PerServerProfileAlert(arg0) {
   let automodReason;
@@ -70,8 +70,8 @@ function PerServerProfileAlert(arg0) {
     stringResult = intl.string(require(1236) /* getSystemLocale */.t.TBeZmG);
   }
   const tmp = callback2(arg0, closure_4);
-  const tmp2Result = tmp2(11204);
-  [require, tmp8] = callback(tmp2(11204).useOpenFixQuarantinedProfileModal({ guildId }), 2);
+  const tmp2Result = tmp2(11270);
+  [require, tmp8] = callback(tmp2(11270).useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
     const intl3 = tmp2(1236).intl;
     stringResult = intl3.string(tmp2(1236).t.FFj5Dt);
@@ -151,7 +151,7 @@ export default function AutomodUserProfileQuarantineAlert(guildId) {
       return guildId(outer1_2[21]).getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(4728)(() => {
+  stateFromStores(4730)(() => {
     let obj = stateFromStores(outer1_2[23]);
     obj = { type: outer1_12, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(outer1_13.OPEN_MODAL, obj);

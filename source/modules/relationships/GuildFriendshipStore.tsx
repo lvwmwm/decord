@@ -1,9 +1,9 @@
-// Module ID: 12914
-// Function ID: 12915
+// Module ID: 12984
+// Function ID: 12985
 // Name: resetStates
-// Dependencies: [589, 5231, 709, 2]
+// Dependencies: [589, 5232, 709, 2]
 
-// Module 12914 (resetStates)
+// Module 12984 (resetStates)
 import { Store } from "initialize";
 
 function resetStates() {
@@ -37,8 +37,8 @@ prototype["fetchFriendMembersIfNotFetched"] = function fetchFriendMembersIfNotFe
     const obj = { fetchState: null, foundMembers: 0, notFoundMembers: 0 };
     obj[0] = tmp4.FETCHING;
     dependencyMap[id1] = obj;
-    const membersById = importDefault(5231).requestMembersById(id1, items, false);
-    const obj2 = importDefault(5231);
+    const membersById = importDefault(5232).requestMembersById(id1, items, false);
+    const obj2 = importDefault(5232);
   }
 };
 const guildFriendshipStore = new GuildFriendshipStore(require("dispatcher"), {

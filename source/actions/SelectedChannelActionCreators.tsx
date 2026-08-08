@@ -1,8 +1,8 @@
-// Module ID: 5128
-// Function ID: 5129
-// Dependencies: [4316, 1372, 4349, 676, 709, 1222, 5129, 10812, 2]
+// Module ID: 5129
+// Function ID: 5130
+// Dependencies: [4317, 1372, 4351, 676, 709, 1222, 5130, 10878, 2]
 
-// Module 5128
+// Module 5129
 import set from "set";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -54,15 +54,15 @@ export default {
         const mediaEngine = supported.getMediaEngine();
         mediaEngine.interact();
       }
-      const obj5 = require(5129) /* selectVoiceChannelAdditional */;
+      const obj5 = require(5130) /* selectVoiceChannelAdditional */;
       const voiceChannelAdditional = obj5.selectVoiceChannelAdditional(id, guildId, flag, flag2, obj);
     }
   },
   disconnect() {
     remoteSessionId = remoteSessionId.getRemoteSessionId();
     if (null != remoteSessionId) {
-      importAll(10812).remoteDisconnect(remoteSessionId);
-      const obj = importAll(10812);
+      importAll(10878).remoteDisconnect(remoteSessionId);
+      const obj = importAll(10878);
     }
     const voiceChannel = this.selectVoiceChannel(null);
   }

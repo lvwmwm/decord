@@ -1,10 +1,10 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11383
+// Function ID: 11384
 // Name: addRule
 // Dependencies: [17, 12, 2]
 // Exports: convertToNativeStyle
 
-// Module 11317 (addRule)
+// Module 11383 (addRule)
 import { processColor } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/chat_input/native/ChatInputParser.tsx");

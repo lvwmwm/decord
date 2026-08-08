@@ -1,9 +1,9 @@
-// Module ID: 5175
-// Function ID: 5176
+// Module ID: 5176
+// Function ID: 5177
 // Name: getEmojiToGroupId
-// Dependencies: [32, 5, 4216, 5176, 1975, 1340, 1971, 1374, 1964, 1891, 5154, 1903, 5177, 5178, 1906, 676, 5179, 685, 3942, 5180, 11, 12, 687, 1936, 1955, 10, 5181, 709, 4385, 38, 4290, 1351, 5182, 5183, 5215, 3920, 3883, 589, 3946, 3945, 2]
+// Dependencies: [32, 5, 4217, 5177, 1975, 1340, 1971, 1374, 1964, 1891, 5155, 1903, 5178, 5179, 1906, 676, 5180, 685, 3942, 5181, 11, 12, 687, 1936, 1955, 10, 5182, 709, 4387, 38, 4291, 1351, 5183, 5184, 5216, 3920, 3883, 589, 3946, 3945, 2]
 
-// Module 5175 (getEmojiToGroupId)
+// Module 5176 (getEmojiToGroupId)
 import dedupeEmojisByNameOrId from "dedupeEmojisByNameOrId";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import getHash from "getHash";
@@ -75,7 +75,7 @@ function _loadSavedEmojis() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -166,7 +166,7 @@ function updateGuildEmoji(guildId) {
   if (null != guildEmojis) {
     const currentUser = authStore.getCurrentUser();
     if (null != currentUser) {
-      let obj = callback(5215);
+      let obj = callback(5216);
       let flag = obj.canUseRoleSubscriptionIAP(guildId);
       if (typeof GuildEmojis !== "function") {
         HermesBuiltin.throwTypeError();
@@ -375,7 +375,7 @@ prototype["isUsable"] = function isUsable(emoji) {
         return roles.includes(arg0);
       });
       if (!someResult) {
-        let result = callback(5180).isPurchasableRoleSubscriptionEmoji(emoji);
+        let result = callback(5181).isPurchasableRoleSubscriptionEmoji(emoji);
         if (result) {
           let _canSeeServerSubIAP = self._canSeeServerSubIAP;
           if (!_canSeeServerSubIAP) {
@@ -384,7 +384,7 @@ prototype["isUsable"] = function isUsable(emoji) {
           result = _canSeeServerSubIAP;
         }
         someResult = result;
-        const obj = callback(5180);
+        const obj = callback(5181);
       }
       tmp6 = someResult;
     }
@@ -754,7 +754,7 @@ prototype2["getFrequentlyUsedEmojisWithoutFetchingLatest"] = function getFrequen
     });
     const found = mapped.filter(self(1351).isNotNullish);
     const items = [];
-    HermesBuiltin.arraySpread(importDefault(5182)(found).values(), 0);
+    HermesBuiltin.arraySpread(importDefault(5183)(found).values(), 0);
     self.frequentlyUsed = items;
     return self.frequentlyUsed;
   }
@@ -780,7 +780,7 @@ prototype2["rebuildFrequentlyUsedReactionsEmojisWithoutFetchingLatest"] = functi
     return byId;
   });
   const found = mapped.filter(self(1351).isNotNullish);
-  obj = importDefault(5182)(found);
+  obj = importDefault(5183)(found);
   const items = [...obj.values()];
   self.frequentlyUsedReactionEmojis = items;
   self.frequentlyUsedReactionNamesAndIds = new Set(obj.keys());
@@ -829,7 +829,7 @@ prototype2["rebuildFavoriteEmojisWithoutFetchingLatest"] = function rebuildFavor
     return byId;
   });
   const found = mapped.filter(self(1351).isNotNullish);
-  obj = importDefault(5182)(found);
+  obj = importDefault(5183)(found);
   const items = [...obj.values()];
   self.favorites = items;
   self.favoriteNamesAndIds = new Set(obj.keys());
@@ -1140,7 +1140,7 @@ prototype3["getDisambiguatedEmojiContext"] = function getDisambiguatedEmojiConte
 prototype3["getSearchResultsOrder"] = function getSearchResultsOrder(locked, query, count, intention) {
   let closure_0 = intention;
   let formatted = query.toLowerCase();
-  const escapeResult = formatted(4290).escape(formatted);
+  const escapeResult = formatted(4291).escape(formatted);
   let orderByResult = locked;
   if (locked.length > 0) {
     const _RegExp = RegExp;
@@ -1530,7 +1530,7 @@ const emojiStore = new EmojiStore(require("dispatcher"), {
     trackUsage(emojiUsed.emojiUsed);
   },
   USER_SETTINGS_PROTO_UPDATE: function handleUserSettingsProtoUpdate(settings) {
-    const obj = importDefault(5183);
+    const obj = importDefault(5184);
     obj.setEmojiLocale(locale.locale);
     if (settings.settings.type === UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
       if (settings.wasSaved) {

@@ -1,10 +1,10 @@
-// Module ID: 10213
-// Function ID: 10214
+// Module ID: 10279
+// Function ID: 10280
 // Name: _savedMessageJumpToMessage
-// Dependencies: [5, 19, 1376, 1372, 676, 1236, 3883, 589, 4312, 5805, 2]
+// Dependencies: [5, 19, 1376, 1372, 676, 1236, 3883, 589, 4313, 5865, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 10213 (_savedMessageJumpToMessage)
+// Module 10279 (_savedMessageJumpToMessage)
 import getSystemLocale from "getSystemLocale";
 import noop from "noop";
 import { UnknownChannelRecord } from "createChannelRecord";
@@ -34,7 +34,7 @@ function _savedMessageJumpToMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -84,11 +84,11 @@ function _savedMessageJumpToMessage() {
               if (null == closure_2.recipients) {
                 c5 = 0;
                 constants = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else if (closure_2.recipients.length > 1) {
                 c5 = 0;
                 constants = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 obj1 = lib(closure_2[8]);
                 const recipients = closure_2.recipients;
@@ -117,7 +117,7 @@ function _savedMessageJumpToMessage() {
           }
           lib(closure_2[9])(closure_8.CHANNEL(guildId, closure_0.saveData.channelId, closure_0.saveData.messageId), { openChannel: true });
           constants = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp30) {
           let noop = tmp30;
           if (tmp4 === c5) {

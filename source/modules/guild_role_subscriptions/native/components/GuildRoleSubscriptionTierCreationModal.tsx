@@ -1,10 +1,10 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16818
+// Function ID: 16819
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 16730, 14369, 21, 14391, 4001, 1236, 16742, 16725, 16743, 2]
+// Dependencies: [5, 32, 19, 16807, 14439, 21, 14461, 4001, 1236, 16819, 16802, 16820, 2]
 // Exports: default
 
-// Module 16741 (GuildRoleSubscriptionTierCreationModal)
+// Module 16818 (GuildRoleSubscriptionTierCreationModal)
 import jsxProd from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -44,7 +44,7 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
               callback();
             }
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           v0 = tmp;
@@ -108,7 +108,7 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
   let tmp = callback(React.useState(guildId.editStateId), 2);
   first = tmp[0];
   callback = tmp[1];
-  let obj = importAll(14391);
+  let obj = importAll(14461);
   const createOrUpdateListingFromEditState = obj.useCreateOrUpdateListingFromEditState();
   ({ handleCreateOrUpdateFromEditState: c6, error } = createOrUpdateListingFromEditState);
   let items = [error];
@@ -130,7 +130,7 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
   }, []);
   obj = { guildId, editStateId: first, groupListingId, children: null };
   obj = { guildId, children: null };
-  obj[1] = jsx(groupListingId(16743), {
+  obj[1] = jsx(groupListingId(16820), {
     guildId,
     modalKey: closure_9,
     onDone: function handleCreate() {
@@ -145,6 +145,6 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     },
     steps: memo
   });
-  obj[3] = jsx(guildId(16725).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: null });
-  return jsx(guildId(16742).EditStateContextProvider, { guildId, children: null });
+  obj[3] = jsx(guildId(16802).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: null });
+  return jsx(guildId(16819).EditStateContextProvider, { guildId, children: null });
 };

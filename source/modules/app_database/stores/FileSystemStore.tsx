@@ -1,9 +1,9 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 6938
+// Function ID: 6939
 // Name: result
 // Dependencies: [5, 3, 687, 589, 709, 1936, 2]
 
-// Module 6878 (result)
+// Module 6938 (result)
 import items from "items";
 import { Store } from "initialize";
 
@@ -58,7 +58,7 @@ function refresh() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ function refresh() {
             }
           }
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp38) {
         c3 = tmp;

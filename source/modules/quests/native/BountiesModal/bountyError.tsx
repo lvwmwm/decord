@@ -1,10 +1,10 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14261
+// Function ID: 14262
 // Name: set
-// Dependencies: [14192, 1236, 4002, 8385, 2]
+// Dependencies: [14262, 1236, 4002, 8445, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 14191 (set)
+// Module 14261 (set)
 import { BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS as closure_3 } from "BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS";
 import set from "dispatcher";
 
@@ -28,7 +28,7 @@ export const openBountyRewardClaimErrorToast = function openBountyRewardClaimErr
       }
       obj = { key: "QUESTS_BOUNTIES_REWARD_CLAIM_FAILED", content: null, icon: null, toastDurationMs: null };
       obj[1] = message;
-      obj[2] = importDefault(8385);
+      obj[2] = importDefault(8445);
       obj[3] = closure_3;
       obj.open(obj);
     }

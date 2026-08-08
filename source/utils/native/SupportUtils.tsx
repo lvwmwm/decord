@@ -1,10 +1,10 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14721
+// Function ID: 14722
 // Name: _emailSupport
-// Dependencies: [5, 1975, 1606, 4282, 3998, 1974, 2]
+// Dependencies: [5, 1975, 1606, 4283, 3998, 1974, 2]
 // Exports: emailSupport
 
-// Module 14651 (_emailSupport)
+// Module 14721 (_emailSupport)
 import combined from "combined";
 import _getSystemLocale from "_getSystemLocale";
 
@@ -23,7 +23,7 @@ function _emailSupport() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -70,7 +70,7 @@ function _emailSupport() {
         } else {
           openURL(arg1);
           dependencyMap = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         dependencyMap = tmp;

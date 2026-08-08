@@ -1,9 +1,9 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9630
+// Function ID: 9631
 // Name: UserRowSubLabel
-// Dependencies: [19, 17, 4294, 4339, 7063, 1372, 4388, 3938, 9555, 676, 21, 4302, 712, 4312, 38, 9566, 9567, 4001, 9568, 9179, 7064, 589, 1297, 4298, 4140, 9573, 5668, 8753, 1236, 9593, 4256, 4254, 4712, 1885, 8338, 4798, 8723, 1988, 8754, 9594, 7635, 4740, 8010, 4531, 9176, 9405, 9071, 9596, 9187, 8388, 9492, 5373, 2]
+// Dependencies: [19, 17, 4295, 4341, 7123, 1372, 4390, 3938, 9620, 676, 21, 4303, 712, 4313, 38, 9631, 9632, 4001, 9633, 9243, 7124, 589, 1297, 4299, 4146, 9638, 5728, 8813, 1236, 9658, 4257, 4255, 4714, 1885, 8398, 4800, 8783, 1988, 8814, 9659, 7695, 4742, 8070, 4533, 9236, 9470, 9131, 9661, 9252, 8448, 9557, 5374, 2]
 
-// Module 9565 (UserRowSubLabel)
+// Module 9630 (UserRowSubLabel)
 import importAllResult from "handleRelationshipAddError";
 import { View } from "presentAddedFriendToast";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -45,15 +45,15 @@ function UserRowSubLabel(arg0) {
         obj[1] = guildId;
         obj[2] = gameIcon.activityText;
         obj[3] = animate;
-        return callback(importDefault(9573), obj);
+        return callback(importDefault(9638), obj);
       }
     }
   }
   if (!isGameRelationship) {
     obj = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: null };
-    obj[3] = tmp(4140).getUserTag(user);
-    callback(tmp(4298).Text, obj);
-    const tmpResult = tmp(4140);
+    obj[3] = tmp(4146).getUserTag(user);
+    callback(tmp(4299).Text, obj);
+    const tmpResult = tmp(4146);
   }
   if (null == stateFromStores) {
     const obj1 = { style: null };
@@ -75,7 +75,7 @@ function UserRowSubLabel(arg0) {
     const items1 = [callback(tmp(1297).Icon, obj3, stateFromStores.id), ];
     const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: null };
     obj5[3] = stateFromStores.name;
-    items1[1] = callback(tmp(4298).Text, obj5);
+    items1[1] = callback(tmp(4299).Text, obj5);
     obj2[1] = items1;
     closure_15(View, obj2);
     const tmp11 = closure_15;
@@ -207,7 +207,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
   const memo = flag2.useMemo(() => {
     const items = [];
     if (NONE !== guildId.ACTIONS) {
-      let obj = { accessibilityActions: null, actions: "a" };
+      let obj = { accessibilityActions: null, actions: "Array" };
       obj[0] = items;
       return obj;
     } else {
@@ -350,7 +350,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         obj17[2] = obj5.truncateText(intl3.string(type(NONE[28]).t.OYkgVk), 8);
         obj17[3] = function onPress() {
           let obj = outer1_1(outer1_2[19]);
-          obj = { userId: closure_26.current.id, context: obj, type: "T", fromFriendSuggestion: null };
+          obj = { userId: closure_26.current.id, context: obj, type: "HermesInternal", fromFriendSuggestion: null };
           obj = { location: outer1_20 };
           obj.addRelationship(obj);
           const result = outer1_0(outer1_2[17]).presentAddedFriendToast();
@@ -387,17 +387,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
             const channel = outer1_8.getChannel(arg0);
             if (null != channel) {
               outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-              const obj4 = outer1_1(outer1_2[15])(channel, false);
-              if (!obj4.inCall) {
-                obj4.onPress();
+              const obj2 = outer1_1(outer1_2[15])(channel, false);
+              if (!obj2.inCall) {
+                obj2.onPress();
               }
-              const tmp4 = outer1_1;
-              const tmp5 = outer1_2;
-              const tmp6 = outer1_1(outer1_2[14]);
+              const tmp = outer1_1;
+              const tmp2 = outer1_2;
+              const tmp3 = outer1_1(outer1_2[14]);
               const obj = { recipientIds: null };
               obj[0] = current.id;
               outer1_1(outer1_2[13]).openPrivateChannel(obj);
-              const tmp4Result = outer1_1(outer1_2[13]);
+              const tmpResult = outer1_1(outer1_2[13]);
             }
           });
         };
@@ -446,17 +446,17 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         const channel = outer1_8.getChannel(arg0);
         if (null != channel) {
           outer1_1(outer1_2[14])(channel.isPrivate(), "must be a DM");
-          const obj4 = outer1_1(outer1_2[15])(channel, false);
-          if (!obj4.inCall) {
-            obj4.onPress();
+          const obj2 = outer1_1(outer1_2[15])(channel, false);
+          if (!obj2.inCall) {
+            obj2.onPress();
           }
-          const tmp4 = outer1_1;
-          const tmp5 = outer1_2;
-          const tmp6 = outer1_1(outer1_2[14]);
+          const tmp = outer1_1;
+          const tmp2 = outer1_2;
+          const tmp3 = outer1_1(outer1_2[14]);
           const obj = { recipientIds: null };
           obj[0] = current.id;
           outer1_1(outer1_2[13]).openPrivateChannel(obj);
-          const tmp4Result = outer1_1(outer1_2[13]);
+          const tmpResult = outer1_1(outer1_2[13]);
         }
       });
     } else if (tmp.MESSAGE === actionName) {
@@ -486,7 +486,7 @@ const memoResult = importAllResult.memo(function UserRow(type) {
         if (tmp.CANCEL !== actionName) {
           if (tmp.ACCEPT_SUGGESTION === actionName) {
             let obj1 = user(NONE[19]);
-            obj = { userId: null, context: null, type: "T", fromFriendSuggestion: null };
+            obj = { userId: null, context: null, type: "HermesInternal", fromFriendSuggestion: null };
             obj[0] = user.id;
             obj1 = { location: null };
             obj1[0] = roleStyle;

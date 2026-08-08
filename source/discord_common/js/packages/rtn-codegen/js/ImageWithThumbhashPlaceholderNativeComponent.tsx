@@ -1,9 +1,9 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9338
+// Function ID: 9339
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 9273 (__INTERNAL_VIEW_CONFIG)
+// Module 9338 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDImageWithThumbhashPlaceholderView", validAttributes: { uri: true, placeholder: true, placeholderVersion: true, alt: true } };

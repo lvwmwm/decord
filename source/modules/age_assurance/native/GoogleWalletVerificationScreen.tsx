@@ -1,10 +1,10 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7949
+// Function ID: 7950
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1480, 4517, 7772, 7001, 7006, 1236, 2802, 7747, 7748, 4710, 4298, 5149, 4712, 7739, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1480, 4519, 7832, 7061, 7066, 1236, 2802, 7807, 7808, 4712, 4299, 5150, 4714, 7799, 2]
 // Exports: default
 
-// Module 7889 (GoogleWalletVerificationScreen)
+// Module 7949 (GoogleWalletVerificationScreen)
 import useNavigation from "useNavigation";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -30,7 +30,7 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
   let obj = modalSessionId(1480);
   navigation = obj.useNavigation();
   [tmp5, c2] = callback1(React.useState({ type: "loading" }), 2);
-  let obj1 = modalSessionId(4517);
+  let obj1 = modalSessionId(4519);
   const watchAgeVerificationStatusChange = obj1.useWatchAgeVerificationStatusChange(modalSessionId.onClose);
   let items = [navigation];
   callback = React.useCallback(() => {
@@ -196,18 +196,18 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
     let obj2 = { variant: "text-md/medium", color: "text-strong", children: null };
     let intl = tmp(1236).intl;
     obj2[2] = intl.string(navigation(2802).MlFuBI);
-    items3[1] = callback(tmp(4298).Text, obj2);
+    items3[1] = callback(tmp(4299).Text, obj2);
     obj1[3] = items3;
-    obj[0] = callback2(tmp(4710).Stack, obj1);
-    obj[0] = callback(tmp(7748).ModalContent, obj);
-    let tmp14 = callback(tmp(7747).ModalScreen, obj);
+    obj[0] = callback2(tmp(4712).Stack, obj1);
+    obj[0] = callback(tmp(7808).ModalContent, obj);
+    let tmp14 = callback(tmp(7807).ModalScreen, obj);
   } else {
     let obj3 = { children: null };
     let obj4 = { children: null };
     let obj5 = { align: "center", justify: "center", spacing: 16, children: null };
     let obj6 = { variant: "text-md/medium", color: "text-strong", children: null };
     obj6[2] = tmp5.message;
-    const items4 = [callback(tmp(4298).Text, obj6), ];
+    const items4 = [callback(tmp(4299).Text, obj6), ];
     let obj7 = { children: null };
     let obj8 = { variant: "primary", size: "lg", text: null, onPress: null };
     let intl2 = tmp(1236).intl;
@@ -216,12 +216,12 @@ export default function GoogleWalletVerificationScreen(modalSessionId) {
       const result = modalSessionId(_undefined[18]).trackAgeVerificationModalClicked(modalSessionId, modalSessionId(_undefined[18]).AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, modalSessionId(_undefined[18]).AgeVerificationModalCta.METHOD_SELECT);
       callback();
     };
-    obj7[0] = callback(tmp(4712).Button, obj8);
-    items4[1] = callback(tmp(5149).ButtonGroup, obj7);
+    obj7[0] = callback(tmp(4714).Button, obj8);
+    items4[1] = callback(tmp(5150).ButtonGroup, obj7);
     obj5[3] = items4;
-    obj4[0] = callback2(tmp(4710).Stack, obj5);
-    obj3[0] = callback(tmp(7748).ModalContent, obj4);
-    tmp14 = callback(tmp(7747).ModalScreen, obj3);
+    obj4[0] = callback2(tmp(4712).Stack, obj5);
+    obj3[0] = callback(tmp(7808).ModalContent, obj4);
+    tmp14 = callback(tmp(7807).ModalScreen, obj3);
   }
   return tmp14;
 };

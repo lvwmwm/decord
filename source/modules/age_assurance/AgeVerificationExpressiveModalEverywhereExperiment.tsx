@@ -1,10 +1,10 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 7950
+// Function ID: 7951
 // Name: useIsAgeVerificationExpressiveModalEverywhereEnabled
 // Dependencies: [1452, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 7890 (useIsAgeVerificationExpressiveModalEverywhereEnabled)
+// Module 7950 (useIsAgeVerificationExpressiveModalEverywhereEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

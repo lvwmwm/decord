@@ -1,9 +1,9 @@
-// Module ID: 8349
-// Function ID: 8350
+// Module ID: 8409
+// Function ID: 8410
 // Name: maybeMarkSeen
 // Dependencies: [5, 38, 709, 2]
 
-// Module 8349 (maybeMarkSeen)
+// Module 8409 (maybeMarkSeen)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 let obj = { IMMEDIATE: 0, [0]: "IMMEDIATE", IMMEDIATE_WITH_COOLDOWN: 1, [1]: "IMMEDIATE_WITH_COOLDOWN", IMMEDIATE_WITH_DELAY: 2, [2]: "IMMEDIATE_WITH_DELAY" };
@@ -288,7 +288,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -321,7 +321,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
                 } else {
                   callback();
                   c2 = 3;
-                  return { value: "T", done: null };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp9) {
                 c2 = tmp;
@@ -349,7 +349,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -382,7 +382,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
             } else {
               callback();
               c3 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c3 = tmp;

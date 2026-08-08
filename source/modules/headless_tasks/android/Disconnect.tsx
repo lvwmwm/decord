@@ -1,9 +1,9 @@
-// Module ID: 16929
-// Function ID: 16930
+// Module ID: 17004
+// Function ID: 17005
 // Name: promise
-// Dependencies: [1372, 16930, 9088, 2]
+// Dependencies: [1372, 17005, 9148, 2]
 
-// Module 16929 (promise)
+// Module 17004 (promise)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;

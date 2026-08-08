@@ -1,9 +1,9 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7441
+// Function ID: 7442
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 17, 3982, 5796, 7362, 2]
+// Dependencies: [5, 17, 3982, 5856, 7422, 2]
 
-// Module 7381 (productSK2ToIAPProduct)
+// Module 7441 (productSK2ToIAPProduct)
 import closure_2 from "set";
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME";
 import set from "DEFAULT_COUNTRY_CODE_NAME";
@@ -31,7 +31,7 @@ function productSK2ToIAPProduct(subscription) {
   if (null == subscription.subscription.introductoryOffer) {
     const _Number = Number;
     const price = subscription.price;
-    const NumberResult = Number(price.toFixed(require(5796) /* CurrencyCodes */.CurrencyExponents[subscription.currency.toLowerCase(subscription.currency)]));
+    const NumberResult = Number(price.toFixed(require(5856) /* CurrencyCodes */.CurrencyExponents[subscription.currency.toLowerCase(subscription.currency)]));
     let obj = { identifier: null, price: null, currencySymbol: null, currencyCode: null, priceString: null, countryCode: "", downloadable: false, description: null, title: null, discounts: null };
     const _String = String;
     obj[0] = String(subscription.id);
@@ -119,7 +119,7 @@ prototype["fetchProducts"] = function fetchProducts(arg0) {
     _queue.push(outer1_2(function*() {
       const dependencyMap = tmp3;
       let c3 = 1;
-      let obj1 = callback(7362);
+      let obj1 = callback(7422);
       obj1 = { skus: null };
       obj1[0] = outer1_0;
       const products = obj1.getProducts(obj1);
@@ -158,7 +158,7 @@ prototype["processQueue"] = function processQueue() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

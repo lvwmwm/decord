@@ -1,10 +1,10 @@
-// Module ID: 10702
-// Function ID: 10703
+// Module ID: 10768
+// Function ID: 10769
 // Name: isVoicePanelEnabled
-// Dependencies: [1372, 4373, 4512, 4513, 647, 2]
+// Dependencies: [1372, 4375, 4514, 4515, 647, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 10702 (isVoicePanelEnabled)
+// Module 10768 (isVoicePanelEnabled)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";
 import withEqualityFn from "withEqualityFn";
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("withEqualityFn").fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");
 
 export const isVoicePanelEnabled = function isVoicePanelEnabled(channel2) {
-  const result = require(4513) /* useIsStageVoicePanelEnabled */.isStageVoicePanelEnabled("voice_panel_utils");
+  const result = require(4515) /* useIsStageVoicePanelEnabled */.isStageVoicePanelEnabled("voice_panel_utils");
   let tmp2 = !result;
   if (!result) {
     let isGuildStageVoiceResult;

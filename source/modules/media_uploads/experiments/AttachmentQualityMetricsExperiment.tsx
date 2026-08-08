@@ -1,9 +1,9 @@
-// Module ID: 4885
-// Function ID: 4886
+// Module ID: 4887
+// Function ID: 4888
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 4885 (apexExperiment)
+// Module 4887 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-attachment-quality-metrics", kind: "user", defaultConfig: { enableQualityMetrics: false, enableOriginDetection: false }, variations: { 0: { enableQualityMetrics: false, enableOriginDetection: false }, 1: { enableQualityMetrics: true, enableOriginDetection: true } } });

@@ -1,9 +1,9 @@
-// Module ID: 4313
-// Function ID: 4314
+// Module ID: 4314
+// Function ID: 4315
 // Name: handleUserSettingsProtoStoreChange
 // Dependencies: [1975, 1340, 1959, 595, 3974, 589, 709, 2]
 
-// Module 4313 (handleUserSettingsProtoStoreChange)
+// Module 4314 (handleUserSettingsProtoStoreChange)
 import _getSystemLocale from "_getSystemLocale";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import CHANGELOG_MODAL_KEY from "CHANGELOG_MODAL_KEY";

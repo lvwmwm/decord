@@ -1,14 +1,14 @@
-// Module ID: 11303
-// Function ID: 11304
+// Module ID: 11369
+// Function ID: 11370
 // Name: useKeyboardOpenPaddingStyle
-// Dependencies: [32, 19, 21, 4162, 4005, 712, 1623, 4167, 1607, 4303, 4306, 2]
+// Dependencies: [32, 19, 21, 4036, 4005, 712, 1623, 4168, 1607, 4304, 4307, 2]
 // Exports: default
 
-// Module 11303 (useKeyboardOpenPaddingStyle)
+// Module 11369 (useKeyboardOpenPaddingStyle)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
-import { Easing } from "module_4162";
+import { Easing } from "module_4036";
 
 const require = arg1;
 function useKeyboardOpenPaddingStyle() {
@@ -51,7 +51,7 @@ function useKeyboardOpenPaddingStyle() {
     }
     return num > 0;
   }), 2);
-  const obj3 = token(4167);
+  const obj3 = token(4168);
   if (!tmp5) {
     tmp5 = true === obj3.useKeyboardContextForType(token(1607).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }
@@ -59,7 +59,7 @@ function useKeyboardOpenPaddingStyle() {
     tmp5 = tmp7 !== token(1607).KeyboardTypes.SYSTEM;
   }
   const dependencyMap = tmp5;
-  let tmpResult = tmp(4162);
+  let tmpResult = tmp(4036);
   let num = 0;
   if (tmp5) {
     num = token;
@@ -75,7 +75,7 @@ function useKeyboardOpenPaddingStyle() {
     obj = { duration: token(tmp5[10]).timingStandardDuration, easing: outer1_6 };
     const result = sharedValue.set(obj.withTiming(num, obj));
   }, items);
-  tmpResult = tmp(4162);
+  tmpResult = tmp(4036);
   const fn = function b() {
     return { paddingBottom: sharedValue.get() };
   };
@@ -96,6 +96,6 @@ export default function FloatingChatInputContainer(arg0) {
   style = [, ];
   style[0] = style;
   style[1] = useKeyboardOpenPaddingStyle();
-  return jsx(importDefault(4162).View, { style, onLayout, children });
+  return jsx(importDefault(4036).View, { style, onLayout, children });
 };
 export { useKeyboardOpenPaddingStyle };

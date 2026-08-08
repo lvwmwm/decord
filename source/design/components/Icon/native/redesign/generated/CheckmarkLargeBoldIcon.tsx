@@ -1,10 +1,10 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 9229
+// Function ID: 9230
 // Name: CheckmarkLargeBoldIcon
-// Dependencies: [19, 21, 712, 4004, 9170, 2]
+// Dependencies: [19, 21, 712, 4004, 9230, 2]
 // Exports: CheckmarkLargeBoldIcon
 
-// Module 9169 (CheckmarkLargeBoldIcon)
+// Module 9229 (CheckmarkLargeBoldIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const CheckmarkLargeBoldIcon = function CheckmarkLargeBoldIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9170) /* registerAsset */;
+  obj[0] = require(9230) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

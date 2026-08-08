@@ -1,10 +1,10 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14312
+// Function ID: 14313
 // Name: _search
-// Dependencies: [5, 676, 530, 585, 5894, 2]
+// Dependencies: [5, 676, 530, 585, 5954, 2]
 // Exports: search
 
-// Module 14242 (_search)
+// Module 14312 (_search)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -29,7 +29,7 @@ function _search() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -55,7 +55,7 @@ function _search() {
               aPIError = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

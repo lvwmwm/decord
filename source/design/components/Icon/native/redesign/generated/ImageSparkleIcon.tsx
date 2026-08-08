@@ -1,10 +1,10 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10834
+// Function ID: 10835
 // Name: ImageSparkleIcon
-// Dependencies: [19, 21, 712, 4004, 10769, 2]
+// Dependencies: [19, 21, 712, 4004, 10835, 2]
 // Exports: ImageSparkleIcon
 
-// Module 10768 (ImageSparkleIcon)
+// Module 10834 (ImageSparkleIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ImageSparkleIcon = function ImageSparkleIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10769) /* registerAsset */;
+  obj[0] = require(10835) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

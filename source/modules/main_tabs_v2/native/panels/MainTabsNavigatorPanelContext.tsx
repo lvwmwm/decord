@@ -1,11 +1,11 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 15145
+// Function ID: 15146
 // Name: context
-// Dependencies: [19, 5426, 7950, 2]
+// Dependencies: [19, 5427, 8010, 2]
 
-// Module 15075 (context)
+// Module 15145 (context)
 import importAllResult from "noop";
-import { Gesture } from "Directions";
+import { Gesture } from "LegacyBaseButton";
 import createFakeSharedValue from "createFakeSharedValue";
 import createFakeSharedValue from "createFakeSharedValue";
 

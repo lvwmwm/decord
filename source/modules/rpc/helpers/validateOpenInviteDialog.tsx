@@ -1,10 +1,10 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13746
+// Function ID: 13747
 // Name: validateOpenInviteDialog
-// Dependencies: [10525, 1372, 1891, 3929, 4205, 676, 10526, 10670, 13665, 8899, 2]
+// Dependencies: [10591, 1372, 1891, 3929, 4206, 676, 10592, 10736, 13735, 8959, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 13676 (validateOpenInviteDialog)
+// Module 13746 (validateOpenInviteDialog)
 import map from "map";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -24,7 +24,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
     let obj = { errorCode: null };
     obj[0] = RPCErrors.INVALID_COMMAND;
     const _HermesInternal3 = HermesInternal;
-    let tmp36 = importDefault(10670);
+    let tmp36 = importDefault(10736);
     tmp36 = new tmp36(obj, "command not available from \"" + socket.source.type + "\" transport");
     throw tmp36;
   } else {
@@ -33,7 +33,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
       const surface = tmp46.surface;
       const type = surface.type;
       if (constants.MAIN === type) {
-        obj = { frame: null, channel: "Array", guild: "accessible" };
+        obj = { frame: null, channel: "Array", guild: "isArray" };
         obj[0] = tmp46;
         return obj;
       } else if (tmp23.APP_CHANNEL === type) {
@@ -45,28 +45,28 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
       } else {
         const obj2 = { errorCode: null };
         obj2[0] = RPCErrors.INVALID_CHANNEL;
-        const tmp30 = new importDefault(10670)(obj2, "Invalid channel");
+        const tmp30 = new importDefault(10736)(obj2, "Invalid channel");
         throw tmp30;
       }
     } else {
-      const obj9 = importDefault(13665)();
+      const obj9 = importDefault(13735)();
       if (null == obj9) {
         const obj3 = { errorCode: null };
         obj3[0] = RPCErrors.INVALID_CHANNEL;
-        const tmp21 = new tmp48(10670)(obj3, "Invalid channel");
+        const tmp21 = new tmp48(10736)(obj3, "Invalid channel");
         throw tmp21;
       } else {
         const guild = store.getGuild(obj9.getGuildId());
         if (null == guild) {
           const obj4 = { errorCode: null };
           obj4[0] = RPCErrors.INVALID_CHANNEL;
-          let tmp48Result = tmp48(10670);
+          let tmp48Result = tmp48(10736);
           const _HermesInternal2 = HermesInternal;
           tmp48Result = new tmp48Result(obj4, "Invalid guild " + obj9.getGuildId());
           throw tmp48Result;
         } else {
           if (obj10.canViewInviteModal(getUncachedChannelPermissions, guild, obj9)) {
-            const obj5 = { frame: "r", channel: "Path", guild: "TRANSPARENT" };
+            const obj5 = { frame: "r", channel: "PX_16", guild: "TRANSPARENT" };
             obj5[1] = obj9;
             obj5[2] = guild;
             return obj5;
@@ -74,11 +74,11 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
             obj = { errorCode: null };
             obj[0] = RPCErrors.INVALID_PERMISSIONS;
             const _HermesInternal = HermesInternal;
-            let tmp = tmp48(10670);
+            let tmp = tmp48(10736);
             tmp = new tmp(obj, "No invite permissions for " + obj9.id);
             throw tmp;
           }
-          obj10 = require(8899) /* canViewInviteModal */;
+          obj10 = require(8959) /* canViewInviteModal */;
         }
       }
     }

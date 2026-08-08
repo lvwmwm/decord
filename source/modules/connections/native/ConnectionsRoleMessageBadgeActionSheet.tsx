@@ -1,10 +1,10 @@
-// Module ID: 11151
-// Function ID: 11152
+// Module ID: 11217
+// Function ID: 11218
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1911, 1218, 1971, 1964, 1891, 11152, 5124, 676, 21, 4302, 712, 1236, 5123, 4254, 4298, 4238, 12, 4005, 4998, 10972, 9071, 1297, 1416, 4147, 38, 5668, 5688, 589, 698, 4496, 5231, 5396, 5712, 4712, 4270, 10975, 8723, 2]
+// Dependencies: [32, 19, 17, 1911, 1218, 1971, 1964, 1891, 11218, 5125, 676, 21, 4303, 712, 1236, 5124, 4255, 4299, 4239, 12, 4005, 5000, 11038, 9131, 1297, 1416, 4153, 38, 5728, 5748, 589, 698, 4498, 5232, 5397, 5772, 4714, 4271, 11041, 8783, 2]
 // Exports: default
 
-// Module 11151 (PopoutCheck)
+// Module 11217 (PopoutCheck)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import apply from "apply";
 import get_ActivityIndicator from "Text";
@@ -58,7 +58,7 @@ function PopoutCheck(arg0) {
       }
     }
   } else {
-    obj = require(5123) /* officialApplicationIds */;
+    obj = require(5124) /* officialApplicationIds */;
     const obj1 = { connectionType: null, connectionMetadataField: null, operator: null, value: null };
     obj1[0] = connectionType;
     obj1[1] = connectionMetadataField;
@@ -72,10 +72,10 @@ function PopoutCheck(arg0) {
     obj2[0] = tmp.popoutCheck;
     const obj3 = { size: "sm", style: null };
     obj3[1] = tmp.popoutCheckIcon;
-    const items = [callback(require(4254) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj3), ];
+    const items = [callback(require(4255) /* CheckmarkLargeIcon */.CheckmarkLargeIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: null };
     obj4[2] = formatResult;
-    items[1] = callback(require(4298) /* Text */.Text, obj4);
+    items[1] = callback(require(4299) /* Text */.Text, obj4);
     obj2[1] = items;
     tmp9 = callback2(closure_6, obj2);
   }

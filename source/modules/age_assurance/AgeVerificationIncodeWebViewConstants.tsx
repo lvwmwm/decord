@@ -1,10 +1,10 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7800
+// Function ID: 7801
 // Name: AGE_VERIFICATION_INCODE_PATH
 // Dependencies: [2]
 // Exports: buildIncodeFallbackSessionInjection, buildIncodeParamsInjection, parseIncodeWebViewMessage, postIncodeCaptureComplete, postIncodeFallbackRequest, postIncodeResult, readInjectedIncodeParams
 
-// Module 7740 (AGE_VERIFICATION_INCODE_PATH)
+// Module 7800 (AGE_VERIFICATION_INCODE_PATH)
 let c0 = "__DISCORD_AGE_VERIFICATION_INCODE_PARAMS__";
 let c1 = "Verification.Result";
 let c2 = "Verification.CaptureComplete";

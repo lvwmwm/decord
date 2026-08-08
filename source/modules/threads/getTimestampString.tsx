@@ -1,10 +1,10 @@
-// Module ID: 6898
-// Function ID: 6899
+// Module ID: 6958
+// Function ID: 6959
 // Name: getTimestampString
 // Dependencies: [1236, 3883, 2]
 // Exports: default
 
-// Module 6898 (getTimestampString)
+// Module 6958 (getTimestampString)
 let c3 = 2592000;
 let c4 = 31104000;
 const result = require("set").fileFinishedImporting("modules/threads/getTimestampString.tsx");

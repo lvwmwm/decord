@@ -1,10 +1,10 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 8380
+// Function ID: 8381
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4302, 712, 1609, 1236, 8321, 5276, 8322, 500, 5269, 4507, 12488, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1609, 1236, 8381, 5277, 8382, 500, 5270, 4509, 12558, 2]
 // Exports: default
 
-// Module 8320 (ForLaterModal)
+// Module 8380 (ForLaterModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ export default function ForLaterModal(type) {
   let _require;
   const tmp = createCacheKey();
   const intl = _require(1236).intl;
-  if (type === _require(8321).SavedMessageSortTypes.REMINDER) {
+  if (type === _require(8381).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
@@ -52,13 +52,13 @@ export default function ForLaterModal(type) {
     num = importDefault(1609)().top;
   }
   obj[3] = num + importDefault(712).space.PX_8;
-  tmp4Result = tmp4(5269);
-  obj[4] = tmp4Result.getHeaderCloseButton(importDefault(4507).pop);
+  tmp4Result = tmp4(5270);
+  obj[4] = tmp4Result.getHeaderCloseButton(importDefault(4509).pop);
   ({ headerLeftContainer: obj2[5], headerRightContainer: obj2[6] } = tmp);
-  const items = [closure_4(_require(5276).Header, obj), ];
+  const items = [closure_4(_require(5277).Header, obj), ];
   obj = { type, onClose: null };
-  obj[1] = importDefault(4507).pop;
-  items[1] = closure_4(importDefault(12488), obj, type);
+  obj[1] = importDefault(4509).pop;
+  items[1] = closure_4(importDefault(12558), obj, type);
   obj[1] = items;
   return closure_5(View, obj);
 };

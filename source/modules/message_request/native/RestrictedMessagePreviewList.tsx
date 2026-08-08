@@ -1,10 +1,10 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15962
+// Function ID: 15963
 // Name: HiddenMedia
-// Dependencies: [19, 17, 4519, 21, 4302, 15888, 712, 4808, 4298, 1236, 4258, 3971, 5668, 589, 8723, 7981, 15889, 8529, 4844, 15890, 2]
+// Dependencies: [19, 17, 4521, 21, 4303, 15963, 712, 4810, 4299, 1236, 4259, 3971, 5728, 589, 8783, 8041, 15964, 8589, 4846, 15965, 2]
 // Exports: default
 
-// Module 15887 (HiddenMedia)
+// Module 15962 (HiddenMedia)
 import RestrictedBlockedMessageGroup from "RestrictedBlockedMessageGroup";
 import { View } from "DCDChatItem";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -34,11 +34,11 @@ function HiddenMedia(length) {
 
   ];
   obj = { style: tmp.mediaHiddenRow, children: null };
-  const items1 = [callback(_require(4258).CircleInformationIcon, { size: "sm", color: "text-muted" }), ];
+  const items1 = [callback(_require(4259).CircleInformationIcon, { size: "sm", color: "text-muted" }), ];
   obj = { variant: "text-sm/normal", color: "text-muted", children: null };
   let intl = _require(1236).intl;
   obj[2] = intl.string(_require(1236).t["VGf+K3"]);
-  items1[1] = callback(_require(4298).Text, obj);
+  items1[1] = callback(_require(4299).Text, obj);
   obj[1] = items1;
   items[1] = callback2(View, obj);
   obj[0] = items;

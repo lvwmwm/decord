@@ -1,10 +1,10 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15316
+// Function ID: 15317
 // Name: voiceCategoryExpand
 // Dependencies: [709, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 15243 (voiceCategoryExpand)
+// Module 15316 (voiceCategoryExpand)
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/VoiceCategoryActionCreators.tsx");
 
 export const voiceCategoryExpand = function voiceCategoryExpand(guildId) {

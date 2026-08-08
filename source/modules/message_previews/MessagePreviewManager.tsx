@@ -1,9 +1,9 @@
-// Module ID: 14483
-// Function ID: 14484
+// Module ID: 14553
+// Function ID: 14554
 // Name: addWant
-// Dependencies: [32, 5, 4992, 1376, 1218, 1372, 12908, 676, 3, 5260, 12, 1936, 709, 530, 14484, 2]
+// Dependencies: [32, 5, 4994, 1376, 1218, 1372, 12978, 676, 3, 5261, 12, 1936, 709, 530, 14554, 2]
 
-// Module 14483 (addWant)
+// Module 14553 (addWant)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -80,7 +80,7 @@ class MessagePreviewManager extends tmp3 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           while (true) {
@@ -112,7 +112,7 @@ class MessagePreviewManager extends tmp3 {
                 c7 = 1;
                 let num9 = 1;
                 c8 = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp4) {
@@ -284,7 +284,7 @@ prototype["fetchLocal"] = function fetchLocal(guild_id) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -421,7 +421,7 @@ prototype["fetchDms"] = function fetchDms(outer1_4) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ prototype["fetchDms"] = function fetchDms(outer1_4) {
             obj5[2] = body;
             obj.dispatch(obj5);
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -495,7 +495,7 @@ prototype["getOrCreate"] = function getOrCreate(arg0) {
   const remote = this.remote;
   if (!remote.has(arg0)) {
     const remote2 = self.remote;
-    const remoteFetchData = new require(14484) /* FetchStatus */.RemoteFetchData();
+    const remoteFetchData = new require(14554) /* FetchStatus */.RemoteFetchData();
     const result = remote2.set(arg0, remoteFetchData);
   }
   const remote3 = self.remote;

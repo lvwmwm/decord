@@ -1,10 +1,10 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15264
+// Function ID: 15265
 // Name: FavoritesGuildChannelSortModal
-// Dependencies: [19, 15192, 1376, 676, 21, 15193, 1609, 1236, 15194, 4507, 5723, 2]
+// Dependencies: [19, 15265, 1376, 676, 21, 15266, 1609, 1236, 15267, 4509, 5783, 2]
 // Exports: openFavoritesGuildChannelSortModal
 
-// Module 15191 (FavoritesGuildChannelSortModal)
+// Module 15264 (FavoritesGuildChannelSortModal)
 import noop from "noop";
 import sortCategoryList from "sortCategoryList";
 import { ALL_CHANNEL_TYPES } from "createChannelRecord";
@@ -18,9 +18,9 @@ function FavoritesGuildChannelSortModal() {
     const items = [...closure_5];
     callback(table[5]).startReordering.apply(items);
     return () => {
-      callback(15193).stopReordering();
-      const obj = callback(15193);
-      callback(15193).terminate();
+      callback(15266).stopReordering();
+      const obj = callback(15266);
+      callback(15266).terminate();
     };
   }, []);
   const bottom = importDefault(1609)().bottom;
@@ -44,11 +44,11 @@ function FavoritesGuildChannelSortModal() {
     obj[0] = obj;
     return obj;
   }, items);
-  return jsx(bottom(5723).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
+  return jsx(bottom(5783).Navigator, { screens, initialRouteName: "FAVORITES_GUILD_CHANNEL_SORT" });
 }
 FavoritesGuildChannelSortModal = "FavoritesGuildChannelSortModal";
 const result = require("createChannelRecord").fileFinishedImporting("modules/favorites/native/FavoritesGuildChannelSortModal.tsx");
 
 export const openFavoritesGuildChannelSortModal = function openFavoritesGuildChannelSortModal() {
-  importDefault(4507).pushLazy(() => Promise.resolve(closure_9), undefined, FavoritesGuildChannelSortModal);
+  importDefault(4509).pushLazy(() => Promise.resolve(closure_9), undefined, FavoritesGuildChannelSortModal);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 7409
+// Function ID: 7410
 // Name: Divider
-// Dependencies: [19, 17, 676, 21, 4302, 712, 1348, 4013, 5690, 4145, 5372, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1348, 4013, 5750, 4151, 5373, 2]
 // Exports: default
 
-// Module 7349 (Divider)
+// Module 7409 (Divider)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -45,16 +45,16 @@ export default function Divider(outer) {
   let obj = require(4013) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ theme, primaryColor } = themeContext);
-  const profileThemeValues = require(5690) /* useProfileThemeValues */.useProfileThemeValues(theme);
+  const profileThemeValues = require(5750) /* useProfileThemeValues */.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
     obj = { backgroundColor: null };
-    obj[0] = tmp3(4145).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
+    obj[0] = tmp3(4151).hexOpacityToRgba(createCacheKey[theme], profileThemeValues.dividerOpacity);
     tmp7 = obj;
-    const tmp3Result = tmp3(4145);
+    const tmp3Result = tmp3(4151);
   }
   let tmp10Result = null;
-  if (!React.useContext(require(5372) /* context */.RedesignCompatContext)) {
+  if (!React.useContext(require(5373) /* context */.RedesignCompatContext)) {
     const items = [flag ? tmp2.dividerOuter : tmp2.divider, , , ];
     if (flag2) {
       flag2 = tmp2.dividerHasIcon;

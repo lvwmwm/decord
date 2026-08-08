@@ -1,10 +1,10 @@
-// Module ID: 16460
-// Function ID: 16461
+// Module ID: 16537
+// Function ID: 16538
 // Name: buildRequestHashPayload
-// Dependencies: [5, 16461, 500, 16462, 2]
+// Dependencies: [5, 16538, 500, 16539, 2]
 // Exports: getAgeSignalIntegrityToken
 
-// Module 16460 (buildRequestHashPayload)
+// Module 16537 (buildRequestHashPayload)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -58,9 +58,9 @@ function _requestPlayIntegrityToken() {
         tmp10 = table;
         tmp9 = v0;
       }
-      yield "T";
+      yield "HermesInternal";
       c3 = 0;
-      yield "T";
+      yield "HermesInternal";
       c3 = 0;
       return arg1;
     })();
@@ -92,7 +92,7 @@ function _getAgeSignalIntegrityToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ function _getAgeSignalIntegrityToken() {
             return obj;
           }
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           v0 = tmp;
           throw tmp9;

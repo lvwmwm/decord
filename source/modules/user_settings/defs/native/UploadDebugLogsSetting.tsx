@@ -1,9 +1,9 @@
-// Module ID: 14652
-// Function ID: 14653
+// Module ID: 14722
+// Function ID: 14723
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9803, 4002, 4258, 1236, 10380, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9869, 4002, 4259, 1236, 10446, 2]
 
-// Module 14652 (_handleUploadDebugLogSettingPress)
+// Module 14722 (_handleUploadDebugLogSettingPress)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { DebugLogCategory } from "ME";
@@ -26,7 +26,7 @@ function _handleUploadDebugLogSettingPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -72,7 +72,7 @@ function _handleUploadDebugLogSettingPress() {
             c3 = 1;
             let obj1 = callback2(4002);
             obj1 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj1[1] = callback(4258).CircleInformationIcon;
+            obj1[1] = callback(4259).CircleInformationIcon;
             const intl = callback(1236).intl;
             obj1[2] = intl.string(callback(1236).t.VzHcSm);
             obj1.open(obj1);
@@ -87,7 +87,7 @@ function _handleUploadDebugLogSettingPress() {
             throw arg1;
           } else if (arg0 !== 2) {
             const obj2 = { key: "USER_SETTINGS_CACHES_CLEARED", IconComponent: null, content: null };
-            obj2[1] = callback(4258).CircleInformationIcon;
+            obj2[1] = callback(4259).CircleInformationIcon;
             const intl2 = callback(1236).intl;
             obj2[2] = intl2.string(callback(1236).t.BvyxE7);
             callback2(4002).open(obj2);

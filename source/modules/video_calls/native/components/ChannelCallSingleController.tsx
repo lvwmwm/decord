@@ -1,10 +1,10 @@
-// Module ID: 10838
-// Function ID: 10839
+// Module ID: 10904
+// Function ID: 10905
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4321, 1218, 676, 4320, 21, 698, 4496, 589, 10839, 10841, 10842, 2]
+// Dependencies: [19, 4322, 1218, 676, 4321, 21, 698, 4498, 589, 10905, 10907, 10908, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10838 (ChannelCallSingleController)
+// Module 10904 (ChannelCallSingleController)
 import noop from "noop";
 import reset from "reset";
 import fetchFingerprint from "fetchFingerprint";
@@ -33,7 +33,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10839 : 10841);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10905 : 10907);
       let obj = { participant: null, channel: null };
       obj[0] = selectedParticipant;
       obj[1] = channel;
@@ -44,7 +44,7 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
     obj = { participant: null, channel: null };
     obj[0] = selectedParticipant;
     obj[1] = channel;
-    return jsx(channel(10842), { participant: null, channel: null });
+    return jsx(channel(10908), { participant: null, channel: null });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

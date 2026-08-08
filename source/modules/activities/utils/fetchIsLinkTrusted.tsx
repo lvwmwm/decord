@@ -1,10 +1,10 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 13748
+// Function ID: 13749
 // Name: _fetchIsLinkTrusted
 // Dependencies: [5, 676, 530, 2]
 // Exports: fetchIsLinkTrusted
 
-// Module 13678 (_fetchIsLinkTrusted)
+// Module 13748 (_fetchIsLinkTrusted)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -29,7 +29,7 @@ function _fetchIsLinkTrusted() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

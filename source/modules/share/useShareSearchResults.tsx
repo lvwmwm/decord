@@ -1,10 +1,10 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10246
+// Function ID: 10247
 // Name: makeAutocompleterSearchParams
-// Dependencies: [32, 19, 4992, 1218, 5225, 7261, 10181, 589, 10184, 9873, 7246, 2]
+// Dependencies: [32, 19, 4994, 1218, 5226, 7321, 10247, 589, 10250, 9939, 7306, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 10180 (makeAutocompleterSearchParams)
+// Module 10246 (makeAutocompleterSearchParams)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -16,7 +16,7 @@ const require = arg1;
 const result = require("_handleConnectionOpen").fileFinishedImporting("modules/share/useShareSearchResults.tsx");
 
 export const makeAutocompleterSearchParams = function makeAutocompleterSearchParams(arg0) {
-  const query = require(10181) /* trackClose */.getQuickSwitcherOptions(arg0);
+  const query = require(10247) /* trackClose */.getQuickSwitcherOptions(arg0);
   let queryMode = query.queryMode;
   let resultTypes = ALLOWED_TYPES;
   let hasItem = null != queryMode;
@@ -38,6 +38,10 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   let flag = targetDestination.includeMissingDMs;
   if (flag === undefined) {
     flag = false;
+  }
+  let flag2 = targetDestination.includeFrecency;
+  if (flag2 === undefined) {
+    flag2 = true;
   }
   let stateFromStores;
   let search;
@@ -119,7 +123,7 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
     search({ query: first.query, resultTypes: first.resultTypes });
   }, items5);
   let tmpResult = tmp(tmp2[9]);
-  const frecencySettings = tmpResult.useFrecencySettings();
+  const frecencySettings = tmpResult.useFrecencySettings(flag2);
   tmpResult = tmp(tmp2[7]);
   const items6 = [query];
   stateFromStores1 = tmpResult.useStateFromStores(items6, () => query.getFrequentlyWithoutFetchingLatest());

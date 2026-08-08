@@ -1,13 +1,13 @@
-// Module ID: 15011
-// Function ID: 15012
+// Module ID: 15081
+// Function ID: 15082
 // Name: useRegistrationUIStore
 // Dependencies: [644, 705, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 15011 (useRegistrationUIStore)
+// Module 15081 (useRegistrationUIStore)
 import keys from "keys";
 
-let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "T" }));
+let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "call" }));
 const result = require("set").fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export const useRegistrationUIStore = obj;

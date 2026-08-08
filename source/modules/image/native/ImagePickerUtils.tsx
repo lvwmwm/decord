@@ -1,10 +1,10 @@
-// Module ID: 4871
-// Function ID: 4872
+// Module ID: 4873
+// Function ID: 4874
 // Name: isActionPickSupported
 // Dependencies: [1605, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 4871 (isActionPickSupported)
+// Module 4873 (isActionPickSupported)
 const result = require("set").fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");
 
 export const isActionPickSupported = function isActionPickSupported() {

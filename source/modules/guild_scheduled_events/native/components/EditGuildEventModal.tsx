@@ -1,8 +1,8 @@
-// Module ID: 8923
-// Function ID: 8924
-// Dependencies: [5, 32, 19, 1378, 21, 4302, 712, 8881, 8895, 1872, 8880, 4014, 1236, 8885, 8924, 8904, 8927, 8970, 8971, 5723, 2]
+// Module ID: 8983
+// Function ID: 8984
+// Dependencies: [5, 32, 19, 1378, 21, 4303, 712, 8941, 8955, 1872, 8940, 4014, 1236, 8945, 8984, 8964, 8987, 9030, 9031, 5783, 2]
 
-// Module 8923
+// Module 8983
 import closure_4 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "NavigationStack";
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo((guild) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ const memoResult = importAllResult.memo((guild) => {
             return obj;
           } else if (null == arg1) {
             id = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           } else {
             if (!_slicedToArray) {
               const AccessibilityAnnouncer = outer1_0(outer1_3[11]).AccessibilityAnnouncer;
@@ -178,7 +178,7 @@ const memoResult = importAllResult.memo((guild) => {
   obj = {};
   obj = { title: "", customNavbar: null, headerLeft: null, render: null, fullscreen: true };
   PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR;
-  obj[1] = () => jsx(importDefault(8904), { screen: PREVIEW, onClose: outer1_1 });
+  obj[1] = () => jsx(importDefault(8964), { screen: PREVIEW, onClose: outer1_1 });
   obj[2] = function headerLeft() {
     return null;
   };
@@ -195,7 +195,7 @@ const memoResult = importAllResult.memo((guild) => {
   obj[PREVIEW(first[7]).EditGuildEventScreens.CHANNEL_SELECTOR] = obj;
   obj1 = { title: "", customNavbar: null, render: null, fullscreen: true };
   PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.DETAILS;
-  obj1[1] = () => jsx(importDefault(8904), { screen: PREVIEW, onClose: outer1_1 });
+  obj1[1] = () => jsx(importDefault(8964), { screen: PREVIEW, onClose: outer1_1 });
   obj1[2] = function render() {
     const merged = Object.assign(callback2);
     return callback2(outer1_1(first[17]), {});
@@ -203,7 +203,7 @@ const memoResult = importAllResult.memo((guild) => {
   obj[PREVIEW(first[7]).EditGuildEventScreens.DETAILS] = obj1;
   let obj2 = { title: "", customNavbar: null, render: null, fullscreen: true };
   PREVIEW = PREVIEW(first[7]).EditGuildEventScreens.PREVIEW;
-  obj2[1] = () => jsx(importDefault(8904), { screen: PREVIEW, onClose: outer1_1 });
+  obj2[1] = () => jsx(importDefault(8964), { screen: PREVIEW, onClose: outer1_1 });
   obj2[2] = function render() {
     const merged = Object.assign(callback2);
     return callback2(outer1_1(first[18]), {});

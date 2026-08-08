@@ -1,10 +1,10 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8698
+// Function ID: 8699
 // Name: saveGuildFolders
-// Dependencies: [5, 4113, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 4143, 3974, 2]
+// Dependencies: [5, 4119, 1303, 1302, 676, 1305, 1355, 1306, 1337, 709, 4149, 3974, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8638 (saveGuildFolders)
+// Module 8698 (saveGuildFolders)
 import closure_3 from "SystemThemeState";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -68,7 +68,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ export default {
           } else if (1 === tmp7) {
             dependencyMap = 0;
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c3 = 3;
             throw arg1;

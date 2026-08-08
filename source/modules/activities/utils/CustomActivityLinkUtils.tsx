@@ -1,10 +1,10 @@
-// Module ID: 12147
-// Function ID: 12148
+// Module ID: 12214
+// Function ID: 12215
 // Name: fetchCustomActivityLink
-// Dependencies: [5, 12148, 676, 12150, 530, 709, 2]
+// Dependencies: [5, 12215, 676, 12217, 530, 709, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12147 (fetchCustomActivityLink)
+// Module 12214 (fetchCustomActivityLink)
 import dispatcher from "dispatcher";
 import getOne from "getOne";
 import { Endpoints } from "ME";
@@ -40,7 +40,7 @@ function _fetchCustomActivityLink() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ function _getCustomActivityLinkParams() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -208,7 +208,7 @@ function _getCustomActivityLinkParams() {
             v0 = 0;
             c7 = 3;
             const obj6 = { value: null, done: true };
-            obj6[0] = { customId: "r" };
+            obj6[0] = { customId: "sa" };
             return obj6;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -222,7 +222,7 @@ function _getCustomActivityLinkParams() {
           } else {
             custom_id = arg1;
             if (null == custom_id) {
-              obj = { customId: "r" };
+              obj = { customId: "sa" };
             } else {
               { customId: null }[0] = custom_id.custom_id;
             }
@@ -279,7 +279,7 @@ function _loadCustomActivityLink() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -333,7 +333,7 @@ function _loadCustomActivityLink() {
               obj5[2] = callback;
               obj.dispatch(obj5);
               c5 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp16) {

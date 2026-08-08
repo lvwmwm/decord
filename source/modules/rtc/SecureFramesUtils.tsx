@@ -1,10 +1,10 @@
-// Module ID: 9149
-// Function ID: 9150
+// Module ID: 9209
+// Function ID: 9210
 // Name: getCurrentUserSigningKey
-// Dependencies: [32, 5, 1218, 4349, 4373, 4387, 1903, 9150, 9151, 676, 1974, 9152, 9159, 9134, 9153, 1236, 4140, 3883, 687, 38, 206, 530, 1208, 4640, 4491, 2]
+// Dependencies: [32, 5, 1218, 4351, 4375, 4389, 1903, 9210, 9211, 676, 1974, 9212, 9219, 9194, 9213, 1236, 4146, 3883, 687, 38, 206, 530, 1208, 4642, 4493, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9149 (getCurrentUserSigningKey)
+// Module 9209 (getCurrentUserSigningKey)
 import _slicedToArray from "_slicedToArray";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -90,7 +90,7 @@ function _isPublicKeyMatch() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -193,7 +193,7 @@ function _uploadCurrentUserPublicKey() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -267,7 +267,7 @@ function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(callback);
             c4 = 0;
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           signature = tmp25;
@@ -312,7 +312,7 @@ function _ensureCurrentUserPublicKey() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -346,7 +346,7 @@ function _ensureCurrentUserPublicKey() {
             return obj;
           }
           c1 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c1 = tmp;
           throw tmp8;
@@ -381,7 +381,7 @@ function _isCurrentUserPublicKeyMatch() {
           obj[0] = key;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -552,32 +552,32 @@ export const getSecureFramesVerifiedDevicesHelpdeskArticle = function getSecureF
   return importDefault(1974).getArticleURL(constants3.END_TO_END_ENCRYPTION);
 };
 export const addVerification = function addVerification(userId, userKey, isOtherUserKeyPersistent, channelId, DEEP_LINK) {
-  let obj = importDefault(9152);
+  let obj = importDefault(9212);
   if (isOtherUserKeyPersistent) {
     const secureFramesVerifiedKey = obj.createSecureFramesVerifiedKey(userId, userKey);
   } else {
     const secureFramesTransientKey = obj.createSecureFramesTransientKey(userId, userKey);
   }
   obj = { channelId, userId, analyticsLocation: DEEP_LINK };
-  const result = require(9159) /* trackRTCPanelViewed */.trackE2EEUserVerified(obj);
+  const result = require(9219) /* trackRTCPanelViewed */.trackE2EEUserVerified(obj);
 };
 export const deleteVerification = function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
   if (isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const uint8Array = new Uint8Array(arg1);
-    const obj2 = require(9134) /* set */;
-    const serializeKeyResult = require(9134) /* set */.serializeKey(uint8Array);
-    const result = importDefault(9152).deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
-    const obj3 = importDefault(9152);
+    const obj2 = require(9194) /* set */;
+    const serializeKeyResult = require(9194) /* set */.serializeKey(uint8Array);
+    const result = importDefault(9212).deleteSecureFramesVerifiedKey(userId, serializeKeyResult);
+    const obj3 = importDefault(9212);
   } else {
-    const result1 = importDefault(9152).deleteSecureFramesTransientKey(userId);
-    const obj = importDefault(9152);
+    const result1 = importDefault(9212).deleteSecureFramesTransientKey(userId);
+    const obj = importDefault(9212);
   }
 };
 export const deletePersistentVerification = function deletePersistentVerification(userId, verifiedKey) {
   const _require = userId;
   const importDefault = verifiedKey;
-  let obj = importDefault(9153);
+  let obj = importDefault(9213);
   obj = { title: null, subtitle: null, onConfirm: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.hdL152);
@@ -593,7 +593,7 @@ export const deletePersistentVerification = function deletePersistentVerificatio
 export const deleteUserPersistentVerifications = function deleteUserPersistentVerifications(userId) {
   const _require = userId;
   const user = authStore.getUser(userId);
-  let obj = importDefault(4140);
+  let obj = importDefault(4146);
   const name = obj.getName(user);
   obj = { title: null, subtitle: null, onConfirm: null };
   const intl = _require(1236).intl;
@@ -605,7 +605,7 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
     const obj = outer1_1(outer1_2[11]);
     const result1 = userId(outer1_2[12]).trackE2EESettingsUserDelete();
   };
-  let result = importDefault(9153).openSecureFramesUpdateConfirmation(obj);
+  let result = importDefault(9213).openSecureFramesUpdateConfirmation(obj);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
   let obj = importDefault(3883)();
@@ -784,7 +784,7 @@ export const showSecureFramesKeyInconsistentAlert = function showSecureFramesKey
   let nickname;
   let userId;
   ({ userId, channelId, nickname } = arg0);
-  let obj = require(9159) /* trackRTCPanelViewed */;
+  let obj = require(9219) /* trackRTCPanelViewed */;
   obj = { userId, channelId, keyVersion: closure_12, reason: constants.OTHER_USER_INCONSISTENT_KEYS };
   const result = obj.trackE2EEUserVerificationFailed(obj);
   obj = { title: null, body: null };
@@ -792,7 +792,7 @@ export const showSecureFramesKeyInconsistentAlert = function showSecureFramesKey
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.mznLyR);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.WY6IKb, { username: nickname });
-  importDefault(4640).show(obj);
+  importDefault(4642).show(obj);
 };
 export const validateSecureFramesKeyConsistent = function validateSecureFramesKeyConsistent(guildId) {
   let channelId;
@@ -801,9 +801,9 @@ export const validateSecureFramesKeyConsistent = function validateSecureFramesKe
   const items = [createRTCConnection, closure_8];
   if (getIsSecureFramesKeyInconsistent(userId, items)) {
     const user = authStore.getUser(userId);
-    let obj = importDefault(4491);
+    let obj = importDefault(4493);
     const name = obj.getName(guildId.guildId, channelId, user);
-    let obj1 = require(9159) /* trackRTCPanelViewed */;
+    let obj1 = require(9219) /* trackRTCPanelViewed */;
     obj = { userId: null, channelId: null, keyVersion: null, reason: null };
     obj[0] = userId;
     obj[1] = channelId;
@@ -817,7 +817,7 @@ export const validateSecureFramesKeyConsistent = function validateSecureFramesKe
     obj1 = { username: null };
     obj1[0] = name;
     obj[1] = intl2.format(require(1236) /* getSystemLocale */.t.WY6IKb, obj1);
-    importDefault(4640).show(obj);
+    importDefault(4642).show(obj);
     return false;
   } else {
     return true;

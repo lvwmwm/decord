@@ -1,9 +1,9 @@
-// Module ID: 12912
-// Function ID: 12913
+// Module ID: 12982
+// Function ID: 12983
 // Name: initialize
-// Dependencies: [4994, 676, 687, 3974, 709, 589, 2]
+// Dependencies: [4996, 676, 687, 3974, 709, 589, 2]
 
-// Module 12912 (initialize)
+// Module 12982 (initialize)
 import filterPlayingActivities from "filterPlayingActivities";
 import { StatusTypes } from "ME";
 import { PersistedStore } from "initialize";

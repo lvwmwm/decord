@@ -1,10 +1,10 @@
-// Module ID: 16150
-// Function ID: 16151
+// Module ID: 16227
+// Function ID: 16228
 // Name: areVoicePanelPreJoinContentPropsEqual
 // Dependencies: [643, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 16150 (areVoicePanelPreJoinContentPropsEqual)
+// Module 16227 (areVoicePanelPreJoinContentPropsEqual)
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/prejoin/VoicePanelPreJoinUtils.tsx");
 
 export const areVoicePanelPreJoinContentPropsEqual = function areVoicePanelPreJoinContentPropsEqual(streamingMembers) {

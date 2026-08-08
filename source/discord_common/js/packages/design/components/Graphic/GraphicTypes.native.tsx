@@ -1,10 +1,10 @@
-// Module ID: 4111
-// Function ID: 4112
+// Module ID: 4117
+// Function ID: 4118
 // Name: isImage
 // Dependencies: [2]
 // Exports: isImage, isRive
 
-// Module 4111 (isImage)
+// Module 4117 (isImage)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Graphic/GraphicTypes.native.tsx");
 
 export const isImage = function isImage(type) {

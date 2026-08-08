@@ -1,10 +1,10 @@
-// Module ID: 10873
-// Function ID: 10874
+// Module ID: 10939
+// Function ID: 10940
 // Name: render
-// Dependencies: [19, 17, 1302, 21, 4302, 712, 4013, 4147, 10874, 10875, 1236, 4844, 10876, 589, 2]
+// Dependencies: [19, 17, 1302, 21, 4303, 712, 4013, 4153, 10940, 10941, 1236, 4846, 10942, 589, 2]
 // Exports: default
 
-// Module 10873 (render)
+// Module 10939 (render)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -39,9 +39,9 @@ DefaultFallback.prototype["render"] = function render() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(10874);
+    let tmp6Result = tmp6(10940);
   } else {
-    tmp6Result = tmp6(10875);
+    tmp6Result = tmp6(10941);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);
@@ -49,7 +49,7 @@ DefaultFallback.prototype["render"] = function render() {
 };
 DefaultFallback.contextType = require("ManaContext").ThemeContext;
 const obj2 = { touchable: null, imageContainer: null, image: null };
-const obj3 = { flex: 1, width: "100%", height: "__closure", aspectRatio: true, backgroundColor: true };
+const obj3 = { flex: 1, width: "100%", height: "View", aspectRatio: true, backgroundColor: true };
 obj3[4] = require("Themes").colors.BACKGROUND_BASE_LOWEST;
 obj2[0] = obj3;
 createCacheKey = { flex: 1, backgroundColor: require("Themes").unsafe_rawColors.BLACK };
@@ -111,7 +111,7 @@ StreamPreview.prototype["render"] = function render() {
       obj1[1] = items1;
       const items2 = [callback2(closure_4, obj1), tmp4];
       obj[6] = items2;
-      return callback2(require(4844) /* PressableBase */.PressableOpacity, obj);
+      return callback2(require(4846) /* PressableBase */.PressableOpacity, obj);
     }
   }
   let renderFallbackResult1;
@@ -146,7 +146,7 @@ export default function ConnectedStreamPreview(stream) {
   let ownerId;
   let previewUrl;
   ({ guildId, channelId, ownerId } = stream.stream);
-  ({ previewUrl, isLoading } = importDefault(10876)(guildId, channelId, ownerId));
+  ({ previewUrl, isLoading } = importDefault(10942)(guildId, channelId, ownerId));
   let obj = require(589) /* initialize */;
   const items = [handleThemeChange];
   obj = {};

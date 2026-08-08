@@ -1,10 +1,10 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 9906
+// Function ID: 9907
 // Name: useGetThreadDraftSettings
-// Dependencies: [4638, 589, 11, 2]
+// Dependencies: [4640, 589, 11, 2]
 // Exports: default, useHasThreadDraft
 
-// Module 9840 (useGetThreadDraftSettings)
+// Module 9906 (useGetThreadDraftSettings)
 import handleChanged from "handleChanged";
 
 const require = arg1;

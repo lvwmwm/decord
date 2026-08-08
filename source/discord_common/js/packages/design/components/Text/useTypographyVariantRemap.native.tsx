@@ -1,10 +1,10 @@
-// Module ID: 4307
-// Function ID: 4308
+// Module ID: 4308
+// Function ID: 4309
 // Name: useTypographyVariantRemap
-// Dependencies: [4024, 4308, 2]
+// Dependencies: [4024, 4309, 2]
 // Exports: useTypographyVariantRemap
 
-// Module 4307 (useTypographyVariantRemap)
+// Module 4308 (useTypographyVariantRemap)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/design/components/Text/useTypographyVariantRemap.native.tsx");
 
 export const useTypographyVariantRemap = function useTypographyVariantRemap(variant, arg1) {
@@ -18,5 +18,5 @@ export const useTypographyVariantRemap = function useTypographyVariantRemap(vari
   if (enabledExperiments == null) {
     enabledExperiments = [];
   }
-  return require(4308) /* remapTypographyVariant */.remapTypographyVariant(enabledExperiments, variant, arg1);
+  return require(4309) /* remapTypographyVariant */.remapTypographyVariant(enabledExperiments, variant, arg1);
 };

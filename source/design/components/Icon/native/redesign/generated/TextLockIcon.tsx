@@ -1,10 +1,10 @@
-// Module ID: 4805
-// Function ID: 4806
+// Module ID: 4807
+// Function ID: 4808
 // Name: TextLockIcon
-// Dependencies: [19, 21, 712, 4004, 4787, 2]
+// Dependencies: [19, 21, 712, 4004, 4789, 2]
 // Exports: TextLockIcon
 
-// Module 4805 (TextLockIcon)
+// Module 4807 (TextLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TextLockIcon = function TextLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4787) /* registerAsset */;
+  obj[0] = require(4789) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

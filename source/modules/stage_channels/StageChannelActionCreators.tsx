@@ -1,10 +1,10 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 7778
+// Function ID: 7779
 // Name: audienceAckRequestToSpeak
-// Dependencies: [5, 1960, 4318, 676, 7719, 38, 4496, 7720, 530, 7724, 4486, 5139, 5231, 1935, 3934, 506, 4312, 7713, 7726, 2]
+// Dependencies: [5, 1960, 4319, 676, 7779, 38, 4498, 7780, 530, 7784, 4488, 5140, 5232, 1935, 3934, 506, 4313, 7773, 7786, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 7718 (audienceAckRequestToSpeak)
+// Module 7778 (audienceAckRequestToSpeak)
 import module_38 from "module_38";
 import handleConnectionOpen from "handleConnectionOpen";
 import updateVoiceState from "updateVoiceState";
@@ -28,20 +28,20 @@ function audienceAckRequestToSpeak(channel, suppress) {
   importDefault(38)(null != guildId, "This channel cannot be guildless.");
   let obj = require;
   voiceStateForChannel = voiceStateForChannel.getVoiceStateForChannel(channel.id);
-  let obj1 = require(4486) /* useAudienceRequestToSpeakState */;
+  let obj1 = require(4488) /* useAudienceRequestToSpeakState */;
   const audienceRequestToSpeakState = obj1.getAudienceRequestToSpeakState(voiceStateForChannel);
   if (!suppress) {
-    let objResult = obj(5139);
+    let objResult = obj(5140);
     if (objResult.shouldAgeVerifyToSpeakForCurrentUser()) {
       return Promise.resolve();
     }
   }
   if (!tmp7) {
-    objResult = obj(4496);
+    objResult = obj(4498);
     obj = {};
-    const merged = Object.assign(obj(7720).getStageChannelMetadata(channel));
+    const merged = Object.assign(obj(7780).getStageChannelMetadata(channel));
     objResult.trackWithMetadata(constants.PROMOTED_TO_SPEAKER, obj);
-    const objResult1 = obj(7720);
+    const objResult1 = obj(7780);
   }
   const HTTP = obj(530).HTTP;
   obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: null, rejectWithError: null };
@@ -81,7 +81,7 @@ function _startStage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -101,10 +101,10 @@ function _startStage() {
               let closure_1;
               if ("" !== closure_1) {
                 if (outer1_5.getVoiceChannelId() !== tmp28.id) {
-                  let obj2 = callback(7713);
+                  let obj2 = callback(7773);
                   obj2.connectToStage(tmp28);
                 }
-                const obj4 = callback(7726);
+                const obj4 = callback(7786);
                 c6 = 1;
                 c7 = 1;
                 const obj1 = { value: null, done: false };
@@ -112,7 +112,7 @@ function _startStage() {
                 return obj1;
               } else {
                 c7 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (arg0 === 1) {
@@ -167,7 +167,7 @@ function _editStage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -190,7 +190,7 @@ function _editStage() {
               return obj1;
             } else {
               table = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             table = 3;
@@ -240,7 +240,7 @@ function _endStage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ function _endStage() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c1 = tmp;
@@ -297,11 +297,11 @@ export const toggleRequestToSpeak = function toggleRequestToSpeak(channel_id, ar
   const guildId = channel_id.getGuildId();
   importDefault(38)(null != guildId, "This channel cannot be guildless.");
   if (arg1) {
-    let obj = require(4496) /* collectGuildAnalyticsMetadata */;
+    let obj = require(4498) /* collectGuildAnalyticsMetadata */;
     obj = {};
-    const merged = Object.assign(require(7720) /* fillChunk */.getStageChannelMetadata(channel_id));
+    const merged = Object.assign(require(7780) /* fillChunk */.getStageChannelMetadata(channel_id));
     obj.trackWithMetadata(constants.REQUEST_TO_SPEAK_INITIATED, obj);
-    const obj3 = require(7720) /* fillChunk */;
+    const obj3 = require(7780) /* fillChunk */;
   }
   const HTTP = require(530) /* sendRequest */.HTTP;
   obj = { url: closure_9.UPDATE_VOICE_STATE(guildId), body: null, rejectWithError: null };
@@ -404,8 +404,8 @@ export const removeUserFromChannel = function removeUserFromChannel(id, getGuild
     guildId = getGuildId.getGuildId();
   }
   if (tmp2) {
-    importDefault(5231).setChannel(guildId, id.id, null);
-    const obj = importDefault(5231);
+    importDefault(5232).setChannel(guildId, id.id, null);
+    const obj = importDefault(5232);
   }
 };
 export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissionAllowed(getGuildId, REQUEST_TO_SPEAK, arg2) {
@@ -423,7 +423,7 @@ export const setEveryoneRolePermissionAllowed = function setEveryoneRolePermissi
     tmp5Result = tmp5(506);
     obj.deny = tmp5Result.add(obj.deny, REQUEST_TO_SPEAK);
   }
-  const result = importDefault(4312).updatePermissionOverwrite(getGuildId.id, obj);
+  const result = importDefault(4313).updatePermissionOverwrite(getGuildId.id, obj);
 };
 export const startStage = function startStage(outer1_0, arg1, GUILD_ONLY, outer1_11) {
   const self = this;

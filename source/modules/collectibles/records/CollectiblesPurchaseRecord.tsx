@@ -1,9 +1,9 @@
-// Module ID: 6969
-// Function ID: 6970
+// Module ID: 7029
+// Function ID: 7030
 // Name: fromServer
-// Dependencies: [6944, 6945, 6943, 678, 676, 4343, 2]
+// Dependencies: [7004, 7005, 7003, 678, 676, 4345, 2]
 
-// Module 6969 (fromServer)
+// Module 7029 (fromServer)
 import fromServer from "fromServer";
 import { createCollectiblesItemsFromServerResponse as closure_3 } from "createCollectiblesItemsFromServerResponse";
 import { CollectiblesVariantProductRecord as closure_4 } from "fromServer";
@@ -42,7 +42,7 @@ prototype["fromServer"] = function fromServer(sku_id) {
   }
   const someResult = closure_5.some((rewardSkuId) => rewardSkuId.rewardSkuId === sku_id);
   let mapped;
-  const tmp5 = sku_id(4343)(prices);
+  const tmp5 = sku_id(4345)(prices);
   if (bundled_products != null) {
     mapped = bundled_products.map(fromServer.fromServer);
   }

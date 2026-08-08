@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12337
+// Function ID: 12338
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 32, 19, 17, 3938, 676, 21, 4302, 712, 11910, 5706, 5325, 1297, 4298, 12271, 5674, 4491, 9179, 4001, 4270, 5704, 5395, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 3938, 676, 21, 4303, 712, 11976, 5766, 5326, 1297, 4299, 12338, 5734, 4493, 9243, 4001, 4271, 5764, 5396, 1236, 2]
 // Exports: default
 
-// Module 12270 (GameFriendApplicationRow)
+// Module 12337 (GameFriendApplicationRow)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
@@ -101,7 +101,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

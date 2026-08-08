@@ -1,9 +1,9 @@
-// Module ID: 5844
-// Function ID: 5845
+// Module ID: 5904
+// Function ID: 5905
 // Name: reset
 // Dependencies: [1386, 2]
 
-// Module 5844 (reset)
+// Module 5904 (reset)
 let result = require("set").fileFinishedImporting("lib/guild/GuildThreadSubscriptions.tsx");
 class GuildThreadSubscriptions {
   constructor(arg0) {

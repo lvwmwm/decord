@@ -1,16 +1,16 @@
-// Module ID: 14435
-// Function ID: 14436
+// Module ID: 14505
+// Function ID: 14506
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 14436, 21, 4162, 1297, 4302, 712, 4698, 12, 14437, 4303, 4306, 4115, 8640, 4298, 1605, 9982, 4271, 1236, 14440, 2]
+// Dependencies: [19, 17, 14506, 21, 4036, 1297, 4303, 712, 4700, 12, 14507, 4304, 4307, 4121, 8700, 4299, 1605, 10048, 4272, 1236, 14510, 2]
 // Exports: default
 
-// Module 14435 (SettingsAppearanceThemeCarousel)
+// Module 14505 (SettingsAppearanceThemeCarousel)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "Pagination";
 import importDefaultResult from "THEME_ITEM_WIDTH";
 import jsxProd from "set";
 import createCacheKey from "createCacheKey";
-import importDefaultResult1 from "module_4162";
+import importDefaultResult1 from "module_4036";
 
 let c4;
 let c5;
@@ -20,7 +20,7 @@ let metroImportAll;
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll, Fragment: c9 } = jsxProd);
-let closure_10 = require("module_4162").createAnimatedComponent(require("Button").Icon);
+let closure_10 = require("module_4036").createAnimatedComponent(require("Button").Icon);
 let obj = { container: null, textCentered: null, labelGroup: null, titleContainer: null, floatingNuxContainer: null, floatingNux: null, arrowLeft: null, uppercase: null, selectionBorder: null, a11yThemeList: null, a11yThemeListScroll: null };
 obj = { gap: require("Themes").space.PX_24, alignItems: "center" };
 obj[0] = obj;

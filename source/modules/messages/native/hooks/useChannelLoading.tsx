@@ -1,10 +1,10 @@
-// Module ID: 10945
-// Function ID: 10946
+// Module ID: 11011
+// Function ID: 11012
 // Name: useChannelLoading
-// Dependencies: [32, 19, 10946, 8550, 4729, 2]
+// Dependencies: [32, 19, 11012, 8610, 4731, 2]
 // Exports: default
 
-// Module 10945 (useChannelLoading)
+// Module 11011 (useChannelLoading)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -19,7 +19,7 @@ export default function useChannelLoading(arg0) {
   ({ channelId: require, jumpTargetId: importDefault, oldestUnreadMessageId: dependencyMap, shouldJumpToOriginalPost: _slicedToArray } = arg0);
   let first;
   first = callback(first.useState(() => new callback(table[2])("Messages")), 1)[0];
-  importDefault(4729)(() => {
+  importDefault(4731)(() => {
     let obj = outer1_0(outer1_2[3]);
     obj = { jumpTargetId: closure_1, oldestUnreadMessageId: closure_2, shouldJumpToOriginalPost: callback2(false), channelId: closure_0, tracker: first };
     const result = obj.startOrCancelChannelLatestMessagesLoad(obj);

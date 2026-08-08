@@ -1,9 +1,9 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 12978
+// Function ID: 12979
 // Name: initialize
-// Dependencies: [32, 1372, 4519, 3, 589, 709, 12909, 4991, 2]
+// Dependencies: [32, 1372, 4521, 3, 589, 709, 12979, 4993, 2]
 
-// Module 12908 (initialize)
+// Module 12978 (initialize)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import reinjectEphemerals from "reinjectEphemerals";
@@ -111,7 +111,7 @@ prototype["data"] = function data(guildId, items, arg2) {
   const guilds = this.guilds;
   if (!guilds.has(guildId)) {
     const guilds2 = self.guilds;
-    const previewData = new object(12909).PreviewData();
+    const previewData = new object(12979).PreviewData();
     const result = guilds2.set(guildId, previewData);
   }
   const guilds3 = self.guilds;
@@ -225,7 +225,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
     return false;
   } else {
     const self = this;
-    const result = object(4991).requireSortedDescending(channelId.messages);
+    const result = object(4993).requireSortedDescending(channelId.messages);
     if (!channelId.isAfter) {
       if (!channelId.isBefore) {
         if (!channelId.hasMoreAfter) {
@@ -238,7 +238,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
         }
       }
     }
-    const obj3 = object(4991);
+    const obj3 = object(4993);
     let first1 = channelId.messages[0];
     if (first1 == null) {
       first1 = null;
@@ -251,8 +251,8 @@ prototype["handleLocalMessagesLoaded"] = function handleLocalMessagesLoaded(chan
   const basicChannel = store.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
     const self = this;
-    const result = object(4991).requireSortedDescending(channelId.messages);
-    const obj = object(4991);
+    const result = object(4993).requireSortedDescending(channelId.messages);
+    const obj = object(4993);
     let first = channelId.messages[0];
     if (first == null) {
       first = null;

@@ -1,10 +1,10 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11277
+// Function ID: 11278
 // Name: ClassificationDetailModal
-// Dependencies: [19, 676, 11212, 21, 4302, 712, 4507, 5269, 11213, 5956, 11248, 11220, 1481, 5723, 1236, 2]
+// Dependencies: [19, 676, 11278, 21, 4303, 712, 4509, 5270, 11279, 6016, 11314, 11286, 1481, 5783, 1236, 2]
 // Exports: default
 
-// Module 11211 (ClassificationDetailModal)
+// Module 11277 (ClassificationDetailModal)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = classificationId(11248);
+  let obj = classificationId(11314);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -74,9 +74,9 @@ export default function ClassificationDetailModal(classificationId) {
           }
         },
         onError() {
-          let arr = callback2(4507);
+          let arr = callback2(4509);
           arr = arr.pop();
-          let obj = callback(5956);
+          let obj = callback(6016);
           obj = { screen: constants.ACCOUNT, params: obj };
           obj = { initialTab: constants2.STANDING };
           obj.openUserSettings(obj);
@@ -89,5 +89,5 @@ export default function ClassificationDetailModal(classificationId) {
   obj = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null };
   const intl = classificationId(1236).intl;
   obj[2] = intl.string(classificationId(1236).t["13/7kX"]);
-  return jsx(classificationId(5723).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
+  return jsx(classificationId(5783).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
 };

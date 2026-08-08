@@ -1,9 +1,9 @@
-// Module ID: 8151
-// Function ID: 8152
+// Module ID: 8211
+// Function ID: 8212
 // Name: nativeStyleProperties
-// Dependencies: [17, 4294, 1372, 1891, 4295, 7982, 676, 4302, 4145, 712, 5827, 4521, 1473, 2]
+// Dependencies: [17, 4295, 1372, 1891, 4296, 8042, 676, 4303, 4151, 712, 5887, 4523, 1473, 2]
 
-// Module 8151 (nativeStyleProperties)
+// Module 8211 (nativeStyleProperties)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -21,7 +21,7 @@ let error;
 const require = arg1;
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: closure_6, GUILD_OFFICIAL_HIGHLIGHT_ALPHA_COLOR: error } = MESSAGE_GROUP_SPACING);
 ({ MessageFlags: c9, MessageTypes: c10 } = ME);
-const result = createCacheKey.experimental_createToken(() => require(4145) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.BRAND_500, 0.1));
+const result = createCacheKey.experimental_createToken(() => require(4151) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.BRAND_500, 0.1));
 createCacheKey = { ephemeralBackgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE, ephemeralGutterColor: require("Themes").colors.BACKGROUND_BRAND, giftIntentEphemeralBackgroundColor: result, mentionedBackgroundColor: require("Themes").colors.MESSAGE_MENTIONED_BACKGROUND_DEFAULT, mentionedGutterColor: require("Themes").unsafe_rawColors.YELLOW_300, automodBlockedBackgroundColor: require("Themes").colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, automodBlockedGutterColor: require("Themes").unsafe_rawColors.RED_345, editingColor: require("Themes").colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT };
 createCacheKey = createCacheKey.createNativeStyleProperties(createCacheKey);
 const MediaManager = require("get ActivityIndicator").NativeModules.MediaManager;
@@ -62,7 +62,7 @@ createCacheKey = {
       return obj;
     } else {
       if (message.hasFlag(constants.IS_GUILD_OFFICIAL)) {
-        obj = require(5827) /* useCanManageGuildOfficialMessages */;
+        obj = require(5887) /* useCanManageGuildOfficialMessages */;
         if (obj.showGuildOfficialMessageGradient(officialMessageStyle.officialMessageStyle)) {
           channel = channel.getChannel(message.getChannelId());
           let guild_id;
@@ -70,7 +70,7 @@ createCacheKey = {
             guild_id = channel.guild_id;
           }
           guild = guild.getGuild(guild_id);
-          let tmp3Result = tmp3(5827);
+          let tmp3Result = tmp3(5887);
           if (tmp3Result.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (guild != null) {
@@ -82,7 +82,7 @@ createCacheKey = {
             if (message.mentioned) {
               let ephemeralGutterColor = tmp.mentionedGutterColor;
             } else {
-              tmp3Result = tmp3(4521);
+              tmp3Result = tmp3(4523);
               if (tmp3Result.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }
@@ -99,7 +99,7 @@ createCacheKey = {
         ({ mentionedBackgroundColor: obj5[0], mentionedGutterColor: obj5[1] } = tmp);
         const tmp14 = obj2;
       } else {
-        obj2 = require(4521) /* createMinimalMessageRecord */;
+        obj2 = require(4523) /* createMinimalMessageRecord */;
         if (obj2.hasEphemeralAppearance(message)) {
           const obj3 = { backgroundColor: null, gutterColor: null };
           obj3[0] = message.type === constants2.GIFTING_PROMPT ? tmp.giftIntentEphemeralBackgroundColor : tmp.ephemeralBackgroundColor;

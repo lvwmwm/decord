@@ -1,10 +1,10 @@
-// Module ID: 7032
-// Function ID: 7033
+// Module ID: 7092
+// Function ID: 7093
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4323, 676, 589, 687, 7033, 2]
+// Dependencies: [5, 19, 4324, 676, 589, 687, 7093, 2]
 // Exports: useGames
 
-// Module 7032 (importDefaultResult1)
+// Module 7092 (importDefaultResult1)
 import noop from "noop";
 import importDefaultResult1 from "handleLoadMessages";
 import initialize from "initialize";
@@ -49,7 +49,7 @@ let closure_2 = require("set")((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let closure_2 = require("set")((arg0) => {
           return obj;
         }
         table = 3;
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         table = tmp;
         throw tmp9;

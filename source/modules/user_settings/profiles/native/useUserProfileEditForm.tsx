@@ -1,10 +1,10 @@
-// Module ID: 13842
-// Function ID: 13843
+// Module ID: 13912
+// Function ID: 13913
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8202, 7020, 676, 589, 709, 8450, 10066, 8451, 8452, 13843, 8208, 4201, 3974, 13191, 1236, 2]
+// Dependencies: [109, 5, 19, 8262, 7080, 676, 589, 709, 8510, 10132, 8511, 8512, 13913, 8268, 4202, 3974, 13261, 1236, 2]
 // Exports: default
 
-// Module 13842 (useUserProfileEditForm)
+// Module 13912 (useUserProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import ME from "ME";
 import noop from "noop";
@@ -32,7 +32,7 @@ export default function useUserProfileEditForm() {
     }
     return isSubmitting;
   });
-  const effect = React.useEffect(() => () => callback2(709).wait(callback(8450).resetAllPending), []);
+  const effect = React.useEffect(() => () => callback2(709).wait(callback(8510).resetAllPending), []);
   const items2 = [stateFromStores, pendingChanges];
   callback = React.useCallback(callback(function*() {
     if (bannerOriginalMd5 === 2) {
@@ -52,7 +52,7 @@ export default function useUserProfileEditForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ export default function useUserProfileEditForm() {
               throwTypeErrorResult = outer1_1;
               if (outer1_1) {
                 bannerOriginalMd5 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 const accountUpdateForUpdateRequest = outer1_0(outer1_2[9]).getAccountUpdateForUpdateRequest(outer1_0);
                 c0 = accountUpdateForUpdateRequest;
@@ -404,7 +404,7 @@ export default function useUserProfileEditForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -425,7 +425,7 @@ export default function useUserProfileEditForm() {
               if (outer1_1) {
                 c3 = 3;
               } else {
-                let obj2 = outer1_0(8450);
+                let obj2 = outer1_0(8510);
                 const obj1 = { avatarDecoration: null };
                 obj1[0] = outer1_0.pendingAvatarDecoration;
                 dependencyMap = 1;
@@ -445,7 +445,7 @@ export default function useUserProfileEditForm() {
               ok = ok.ok;
             }
             if (ok) {
-              obj = outer1_0(8450);
+              obj = outer1_0(8510);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -459,7 +459,7 @@ export default function useUserProfileEditForm() {
         }
       }
     }), items3),
-    resetPending: pendingChanges(8450).resetAllPending
+    resetPending: pendingChanges(8510).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

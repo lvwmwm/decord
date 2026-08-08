@@ -1,9 +1,9 @@
-// Module ID: 6854
-// Function ID: 6855
+// Module ID: 6914
+// Function ID: 6915
 // Name: emitChanges
-// Dependencies: [6855, 7266, 1903, 6801, 3953, 1905, 589, 7267, 3947, 709, 2]
+// Dependencies: [6915, 7326, 1903, 6861, 3953, 1905, 589, 7327, 3947, 709, 2]
 
-// Module 6854 (emitChanges)
+// Module 6914 (emitChanges)
 import emitChanges from "emitChanges";
 import createFromServer from "createFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -48,7 +48,7 @@ function handleReferralTrialStoreUpdate() {
   return false;
 }
 ({ ANNUAL_DISCOUNT_IDS: error, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: metroImportAll, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c9, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: c10, SubscriptionPlanInfo: unpackModuleId, SubscriptionTrials: closure_12, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: map1 } = GuildFeatures);
-let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "Path", userDiscountOffers: "TRANSPARENT", userDiscounts: 0, isFetching: "19.2.3", lastFetchSuccessful: "react-native-renderer" };
+let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "PX_16", userDiscountOffers: "TRANSPARENT", userDiscounts: 0, isFetching: "19.2.3", lastFetchSuccessful: "react-native-renderer" };
 obj[1] = {};
 obj[2] = {};
 class UserOfferStore extends PersistedStore {
@@ -174,8 +174,8 @@ prototype["shouldShowTrialOfferReminder"] = function shouldShowTrialOfferReminde
   const hasItem = closure_13.includes(trial_id.trial_id);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7267) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7267) /* apexExperiment */;
+    result = require(7327) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(7327) /* apexExperiment */;
   }
   return result;
 };
@@ -223,8 +223,8 @@ prototype["shouldShowDiscountOfferReminder"] = function shouldShowDiscountOfferR
   const hasItem = closure_8.includes(discountId.discountId);
   let result = !hasItem;
   if (hasItem) {
-    result = require(7267) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
-    const obj = require(7267) /* apexExperiment */;
+    result = require(7327) /* apexExperiment */.isPremiumOfferReminderExperimentEnabled({ location: "user_offer_store" });
+    const obj = require(7327) /* apexExperiment */;
   }
   return result;
 };

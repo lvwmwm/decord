@@ -1,10 +1,10 @@
-// Module ID: 4808
-// Function ID: 4809
+// Module ID: 4810
+// Function ID: 4811
 // Name: ImageWarningIcon
-// Dependencies: [19, 21, 712, 4004, 4786, 2]
+// Dependencies: [19, 21, 712, 4004, 4788, 2]
 // Exports: ImageWarningIcon
 
-// Module 4808 (ImageWarningIcon)
+// Module 4810 (ImageWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ImageWarningIcon = function ImageWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4786) /* registerAsset */;
+  obj[0] = require(4788) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

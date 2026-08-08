@@ -1,9 +1,9 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 16068
+// Function ID: 16069
 // Name: DEFAULT_STATE
 // Dependencies: [2]
 
-// Module 15993 (DEFAULT_STATE)
+// Module 16068 (DEFAULT_STATE)
 const result = require("set").fileFinishedImporting("modules/external_pip/ExternalPipEnablerState.tsx");
 
 export const DEFAULT_STATE = { externalPipEnabled: false, selectedStreamId: null, focusedStreamId: null };

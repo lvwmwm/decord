@@ -1,15 +1,15 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12332
+// Function ID: 12333
 // Name: UserProfileEditNoteModal
-// Dependencies: [19, 21, 4507, 5723, 501, 1236, 4298, 5269, 12266, 2]
+// Dependencies: [19, 21, 4509, 5783, 501, 1236, 4299, 5270, 12333, 2]
 // Exports: default
 
-// Module 12265 (UserProfileEditNoteModal)
+// Module 12332 (UserProfileEditNoteModal)
 import "noop";
 import { jsx } from "jsxProd";
 
 const require = arg1;
-const result = require("module_4507").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
+const result = require("module_4509").fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
 
 export default function UserProfileEditNoteModal(arg0) {
   let dependencyMap;
@@ -39,14 +39,14 @@ export default function UserProfileEditNoteModal(arg0) {
     const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
     const intl = callback(1236).intl;
     obj[2] = intl.string(callback(1236).t.sHHsOM);
-    return handleClose(callback(4298).Text, obj);
+    return handleClose(callback(4299).Text, obj);
   };
-  tmp2Result = tmp2(5269);
+  tmp2Result = tmp2(5270);
   obj2[2] = tmp2Result.getHeaderCloseButton(handleClose);
   obj2[3] = function render() {
     return handleClose(outer1_0(outer1_2[8]).default, { userId: closure_0, onSave: closure_1, onClose: handleClose });
   };
   obj1[0] = obj2;
   obj[3] = obj1;
-  return handleClose(require(5723) /* NavigationStack */.Navigator, obj);
+  return handleClose(require(5783) /* NavigationStack */.Navigator, obj);
 };

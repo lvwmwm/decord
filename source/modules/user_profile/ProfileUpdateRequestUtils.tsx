@@ -1,10 +1,10 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 10132
+// Function ID: 10133
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: [8216, 10067, 1930, 2]
+// Dependencies: [8276, 10133, 1930, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 10066 (getProfileChangesForUpdateRequest)
+// Module 10132 (getProfileChangesForUpdateRequest)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
 export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(outer1_0, id) {
@@ -43,7 +43,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
     }
     return obj;
   }
-  const tmp4 = importDefault(10067)(id);
+  const tmp4 = importDefault(10133)(id);
   let collectibles;
   if (tmp4 != null) {
     collectibles = tmp4.collectibles;
@@ -86,7 +86,7 @@ export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpda
     const pendingAvatar = outer1_0.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
-    } else if (pendingAvatar.assetOrigin === require(8216) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+    } else if (pendingAvatar.assetOrigin === require(8276) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
       obj.avatarId = pendingAvatar.originalAsset.id;
     } else {
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);
@@ -106,7 +106,7 @@ export const getGuildMemberChangesForUpdateRequest = function getGuildMemberChan
     pendingAvatar = pendingAvatar.pendingAvatar;
     if (null === pendingAvatar) {
       obj.avatar = null;
-    } else if (pendingAvatar.assetOrigin === require(8216) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
+    } else if (pendingAvatar.assetOrigin === require(8276) /* AssetOriginTypes */.AssetOriginTypes.ARCHIVED_ASSET) {
       obj.avatarId = pendingAvatar.originalAsset.id;
     } else {
       ({ imageUri: obj.avatar, description: obj.avatarDescription, originalMd5: obj.avatarOriginalMd5 } = pendingAvatar);

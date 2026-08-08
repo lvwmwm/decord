@@ -1,10 +1,10 @@
-// Module ID: 4646
-// Function ID: 4647
+// Module ID: 4648
+// Function ID: 4649
 // Name: wrapChildrenDefault
 // Dependencies: [32, 19, 21, 2]
 // Exports: TransitionItem
 
-// Module 4646 (wrapChildrenDefault)
+// Module 4648 (wrapChildrenDefault)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -19,11 +19,11 @@ class TransitionGroup {
     getItemKey = global.getItemKey;
     wrapChildren = global.wrapChildren;
     if (wrapChildren === undefined) {
-      wrapChildren = f75393;
+      wrapChildren = f75563;
     }
     lazyCleanUpDelay = global.lazyCleanUpDelay;
     c4 = undefined;
-    f75393 = undefined;
+    f75563 = undefined;
     useRef = undefined;
     useMemo = undefined;
     c4 = require("module_4294967295");
@@ -33,7 +33,7 @@ class TransitionGroup {
         clearTimeout(tmp.current);
       }
     }, []);
-    f75393 = items(renderItem.useState(c4), 2)[1];
+    f75563 = items(renderItem.useState(c4), 2)[1];
     useRef = renderItem.useRef(null);
     items = [, , , ];
     items[0] = items;

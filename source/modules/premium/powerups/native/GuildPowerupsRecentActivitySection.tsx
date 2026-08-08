@@ -1,10 +1,10 @@
-// Module ID: 11871
-// Function ID: 11872
+// Module ID: 11937
+// Function ID: 11938
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [17, 4294, 21, 4302, 712, 11872, 3971, 589, 8010, 7635, 11874, 11876, 1297, 4298, 11878, 1236, 2]
+// Dependencies: [17, 4295, 21, 4303, 712, 11938, 3971, 589, 8070, 7695, 11940, 11942, 1297, 4299, 11944, 1236, 2]
 // Exports: default
 
-// Module 11871 (GuildPowerupsRecentActivityRow)
+// Module 11937 (GuildPowerupsRecentActivityRow)
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ function GuildPowerupsRecentActivityRow(row) {
   row = row.row;
   ({ boost, phase, sortKey } = row);
   const tmp = callback3();
-  let obj = require(11872) /* useMaybeGetSortedBoosts */;
+  let obj = require(11938) /* useMaybeGetSortedBoosts */;
   const getBoostUserConfig = obj.useGetBoostUserConfig(boost);
   ({ roleColor, roleColorStrings, username } = getBoostUserConfig);
   let obj1 = require(3971) /* resetCache */;
@@ -35,16 +35,16 @@ function GuildPowerupsRecentActivityRow(row) {
       obj = { color: null };
       obj[0] = roleColor;
     }
-    let tmp2Result = tmp2(8010);
+    let tmp2Result = tmp2(8070);
     const processColorStringsArray = tmp2Result.useProcessColorStringsArray(roleColorStrings);
-    tmp2Result = tmp2(8010);
+    tmp2Result = tmp2(8070);
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = tmp2(7635).BoostGemIcon;
+      let BoostGemSlashIcon = tmp2(7695).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp2(11874).BoostTier1Icon;
+      BoostGemSlashIcon = tmp2(11940).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp2(11876).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp2(11942).BoostGemSlashIcon;
     }
     obj = { style: null, children: null };
     obj[0] = tmp.boostRowContainer;
@@ -78,18 +78,18 @@ function GuildPowerupsRecentActivityRow(row) {
     }
     obj5[4] = tmp22;
     obj5[5] = username;
-    items2[1] = closure_5(tmp2(4298).Text, obj5);
-    items2[2] = closure_5(tmp2(4298).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
+    items2[1] = closure_5(tmp2(4299).Text, obj5);
+    items2[2] = closure_5(tmp2(4299).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj6 = { variant: "text-md/medium", lineClamp: 1, style: null, children: null };
     obj6[2] = tmp.messageText;
-    obj6[3] = importDefault(11878)(row);
-    items2[3] = closure_5(tmp2(4298).Text, obj6);
+    obj6[3] = importDefault(11944)(row);
+    items2[3] = closure_5(tmp2(4299).Text, obj6);
     obj3[1] = items2;
     items1[1] = closure_6(View, obj3);
     const obj7 = { variant: "text-xs/semibold", style: null, children: null };
     obj7[1] = tmp.timestamp;
     obj7[2] = calendarFormatResult;
-    items1[2] = closure_5(tmp2(4298).Text, obj7);
+    items1[2] = closure_5(tmp2(4299).Text, obj7);
     obj[1] = items1;
     return closure_6(View, obj);
   }
@@ -110,7 +110,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/powerup
 
 export default function GuildPowerupsRecentActivitySection(guildId) {
   const tmp = callback3();
-  const arr = importDefault(11872)(guildId.guildId, 10);
+  const arr = importDefault(11938)(guildId.guildId, 10);
   let tmp3 = null;
   if (0 !== arr.length) {
     let obj = { style: null, children: null };
@@ -118,7 +118,7 @@ export default function GuildPowerupsRecentActivitySection(guildId) {
     obj = { variant: "heading-lg/semibold", color: "text-subtle", children: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[2] = intl.string(require(1236) /* getSystemLocale */.t.yM9Krm);
-    const items = [callback(require(4298) /* Text */.Text, obj), ];
+    const items = [callback(require(4299) /* Text */.Text, obj), ];
     obj = { style: null, children: null };
     obj[0] = tmp.boostContainer;
     obj[1] = arr.map((boost) => callback(closure_8, { row: boost }, "boost-" + boost.boost.id));

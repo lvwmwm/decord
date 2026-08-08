@@ -1,10 +1,10 @@
-// Module ID: 5147
-// Function ID: 5148
+// Module ID: 5148
+// Function ID: 5149
 // Name: useStageParticipants
-// Dependencies: [32, 5135, 589, 5148, 5141, 2]
+// Dependencies: [32, 5136, 589, 5149, 5142, 2]
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount
 
-// Module 5147 (useStageParticipants)
+// Module 5148 (useStageParticipants)
 import _slicedToArray from "_slicedToArray";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
 
@@ -19,7 +19,7 @@ export const useStageParticipants = function useStageParticipants(id, SPEAKER) {
   return callback(_require(589).useStateFromStores(items, () => {
     const items = [outer1_3.getMutableParticipants(closure_0, closure_1), outer1_3.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(5148).isVersionEqual), 1)[0];
+  }, items1, _require(5149).isVersionEqual), 1)[0];
 };
 export const useStageParticipantsCount = function useStageParticipantsCount(id, AUDIENCE) {
   const _require = id;
@@ -35,7 +35,7 @@ export const useSortedRequestToSpeakParticipants = function useSortedRequestToSp
   return callback(_require(589).useStateFromStores(items, () => {
     const items = [outer1_3.getMutableRequestToSpeakParticipants(closure_0), outer1_3.getRequestToSpeakParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(5148).isVersionEqual), 1)[0];
+  }, items1, _require(5149).isVersionEqual), 1)[0];
 };
 export const useActualStageSpeakerCount = function useActualStageSpeakerCount(id) {
   const _require = id;

@@ -1,9 +1,9 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14753
+// Function ID: 14754
 // Name: handleCacheActionPress
-// Dependencies: [5, 4992, 21, 4270, 4002, 4258, 1236, 589, 3974, 5704, 5395, 5706, 13812, 14684, 14685, 10380, 2]
+// Dependencies: [5, 4994, 21, 4271, 4002, 4259, 1236, 589, 3974, 5764, 5396, 5766, 13882, 14754, 14755, 10446, 2]
 
-// Module 14683 (handleCacheActionPress)
+// Module 14753 (handleCacheActionPress)
 import CircleInformationIcon from "CircleInformationIcon";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import jsxProd from "jsxProd";
@@ -22,17 +22,17 @@ function handleCacheActionPress(key) {
     content: key
   };
   obj.open(obj);
-  importDefault(4270).hideActionSheet(CacheActionsActionSheet);
+  importDefault(4271).hideActionSheet(CacheActionsActionSheet);
 }
 function CacheActionsActionSheet() {
   let obj = { header: null, children: null };
   obj = { title: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.ZVZVwR);
-  obj[0] = callback2(require(5395) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
+  obj[0] = callback2(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj);
   obj = { hasIcons: true, children: null };
   let obj1 = { icon: null, label: null, onPress: null };
-  obj1[0] = callback2(require(13812) /* FileUpIcon */.FileUpIcon, {});
+  obj1[0] = callback2(require(13882) /* FileUpIcon */.FileUpIcon, {});
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t["/GUaXh"]);
   obj1[2] = callback(function*() {
@@ -47,7 +47,7 @@ function CacheActionsActionSheet() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ function CacheActionsActionSheet() {
             return obj;
           } else {
             const callback = tmp2;
-            let obj1 = outer1_0(14684);
+            let obj1 = outer1_0(14754);
             c1 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
@@ -82,7 +82,7 @@ function CacheActionsActionSheet() {
           const intl = callback(1236).intl;
           callback2(intl.string(callback(1236).t.GgUIfl));
           dependencyMap = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         dependencyMap = tmp;
@@ -90,13 +90,13 @@ function CacheActionsActionSheet() {
       }
     }
   });
-  const items = [callback2(require(5706) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
+  const items = [callback2(require(5766) /* ActionSheetRowIcon */.ActionSheetRow, obj1), ];
   let obj2 = { variant: "danger", icon: null, label: null, onPress: null };
-  obj2[1] = callback2(require(14685) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
+  obj2[1] = callback2(require(14755) /* FileWarningIcon */.FileWarningIcon, { color: "text-feedback-critical" });
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.tgwiMO);
   obj2[3] = function onPress() {
-    let obj = callback(14684);
+    let obj = callback(14754);
     obj.clearCaches();
     const intl = callback(1236).intl;
     const stringResult = intl.string(callback(1236).t["23xR5w"]);
@@ -109,12 +109,12 @@ function CacheActionsActionSheet() {
     };
     callback2(4002).open(obj);
     const obj2 = callback2(4002);
-    callback2(4270).hideActionSheet(closure_7);
+    callback2(4271).hideActionSheet(closure_7);
   };
-  items[1] = callback2(require(5706) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
+  items[1] = callback2(require(5766) /* ActionSheetRowIcon */.ActionSheetRow, obj2);
   obj[1] = items;
-  obj[1] = callback3(require(5706) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
-  return callback2(require(5704) /* ActionSheet */.ActionSheet, obj);
+  obj[1] = callback3(require(5766) /* ActionSheetRowIcon */.ActionSheetRow.Group, obj);
+  return callback2(require(5764) /* ActionSheet */.ActionSheet, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 CacheActionsActionSheet = "CacheActionsActionSheet";
@@ -126,7 +126,7 @@ createToggle = {
   parent: null,
   IconComponent: require("FileWarningIcon").FileWarningIcon,
   onPress: function handleCacheActionsPress() {
-    let obj = importDefault(4270);
+    let obj = importDefault(4271);
     obj = { default: CacheActionsActionSheet };
     obj.openLazy(Promise.resolve(obj), CacheActionsActionSheet);
   },

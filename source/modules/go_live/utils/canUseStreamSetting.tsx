@@ -1,10 +1,10 @@
-// Module ID: 10764
-// Function ID: 10765
+// Module ID: 10830
+// Function ID: 10831
 // Name: canUseStreamSetting
-// Dependencies: [1905, 3947, 4194, 2]
+// Dependencies: [1905, 3947, 4195, 2]
 // Exports: default
 
-// Module 10764 (canUseStreamSetting)
+// Module 10830 (canUseStreamSetting)
 import { StreamQualities } from "GuildFeatures";
 
 let result = require("getGuildTierFromGuild").fileFinishedImporting("modules/go_live/utils/canUseStreamSetting.tsx");
@@ -29,8 +29,8 @@ export default function canUseStreamSetting(quality, user) {
     if (null != quality.guildPremiumTier) {
       let result = flag;
       if (!flag) {
-        result = require(4194) /* getGuildTierFromGuild */.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
-        const obj3 = require(4194) /* getGuildTierFromGuild */;
+        result = require(4195) /* getGuildTierFromGuild */.isGuildBoostedAtLeast(arg2, quality.guildPremiumTier);
+        const obj3 = require(4195) /* getGuildTierFromGuild */;
       }
       tmp7 = result;
     }

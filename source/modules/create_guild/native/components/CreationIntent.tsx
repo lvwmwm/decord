@@ -1,10 +1,10 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12066
+// Function ID: 12067
 // Name: CreationIntent
-// Dependencies: [19, 17, 8447, 676, 21, 4302, 5266, 712, 1480, 4698, 4708, 11971, 698, 5327, 4298, 1236, 5707, 11629, 5967, 2]
+// Dependencies: [19, 17, 8507, 676, 21, 4303, 5267, 712, 1480, 4700, 4710, 12037, 698, 5328, 4299, 1236, 5767, 11695, 6027, 2]
 // Exports: default
 
-// Module 12000 (CreationIntent)
+// Module 12066 (CreationIntent)
 import set from "set";
 import get_ActivityIndicator from "ListSelectionItem";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";
@@ -89,7 +89,7 @@ export default function CreationIntent(arg0) {
   let tmp = createCacheKey();
   let obj = require(1480) /* useNavigation */;
   dependencyMap = obj.useNavigation();
-  let obj1 = require(4698) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj1 = require(4700) /* SCREEN_READER_ENABLED_GETTER */;
   isScreenReaderEnabled = obj1.useIsScreenReaderEnabled();
   ref = isScreenReaderEnabled.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -121,18 +121,18 @@ export default function CreationIntent(arg0) {
   let obj2 = { ref, style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj2[5] = intl.string(require(1236) /* getSystemLocale */.t.f3MvGS);
-  const items2 = [callback(require(4298) /* Text */.Text, obj2), ];
+  const items2 = [callback(require(4299) /* Text */.Text, obj2), ];
   let obj3 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.string(require(1236) /* getSystemLocale */.t.nOzc7w);
-  items2[1] = callback(require(4298) /* Text */.Text, obj3);
+  items2[1] = callback(require(4299) /* Text */.Text, obj3);
   obj1[1] = items2;
   const items3 = [callback2(ref, obj1), , ];
   const obj4 = { style: tmp.sections, children: null };
   const obj5 = { hasIcons: true, children: null };
-  const tmp13 = trigger(11629);
+  const tmp13 = trigger(11695);
   const obj6 = { Icon: null, message: null, onPress: null };
-  const tmp14 = require(5967) /* AccountAgeTier10LargeBadge */;
+  const tmp14 = require(6027) /* AccountAgeTier10LargeBadge */;
   if (closure_14) {
     obj6[0] = tmp14.ChairIllocon;
     const intl5 = tmp2(1236).intl;
@@ -142,8 +142,8 @@ export default function CreationIntent(arg0) {
     };
     const items4 = [tmp8(tmp13, obj6), ];
     const obj7 = { Icon: null, message: null, onPress: null };
-    let tmp12Result = tmp12(11629);
-    obj7[0] = tmp2(5967).WorldIllocon;
+    let tmp12Result = tmp12(11695);
+    obj7[0] = tmp2(6027).WorldIllocon;
     const intl6 = tmp2(1236).intl;
     obj7[1] = intl6.string(tmp2(1236).t.h9Q1lG);
     obj7[2] = function onPress() {
@@ -161,8 +161,8 @@ export default function CreationIntent(arg0) {
     };
     const items5 = [tmp8(tmp13, obj6), ];
     const obj8 = { Icon: null, message: null, onPress: null };
-    tmp12Result = tmp12(11629);
-    obj8[0] = tmp2(5967).ChairIllocon;
+    tmp12Result = tmp12(11695);
+    obj8[0] = tmp2(6027).ChairIllocon;
     const intl4 = tmp2(1236).intl;
     obj8[1] = intl4.string(tmp2(1236).t.uE7zcu);
     obj8[2] = function onPress() {
@@ -172,7 +172,7 @@ export default function CreationIntent(arg0) {
     obj5[1] = items5;
     tmp16 = obj5;
   }
-  obj4[1] = callback2(require(5707) /* TableRowGroupTitle */.TableRowGroup, tmp16);
+  obj4[1] = callback2(require(5767) /* TableRowGroupTitle */.TableRowGroup, tmp16);
   items3[1] = callback(ref, obj4);
   const obj9 = { style: tmp.skipDescription, variant: "text-sm/medium", color: "text-default", children: null };
   const intl7 = tmp2(1236).intl;
@@ -181,8 +181,8 @@ export default function CreationIntent(arg0) {
       onPress(null);
     }
   });
-  items3[2] = callback(require(4298) /* Text */.Text, obj9);
+  items3[2] = callback(require(4299) /* Text */.Text, obj9);
   obj[1] = items3;
   obj[2] = callback2(onPress, obj);
-  return callback(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

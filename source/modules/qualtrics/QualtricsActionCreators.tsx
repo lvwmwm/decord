@@ -1,10 +1,10 @@
-// Module ID: 8499
-// Function ID: 8500
+// Module ID: 8559
+// Function ID: 8560
 // Name: fetchSurveyDetails
-// Dependencies: [32, 5, 8500, 8502, 8503, 8504, 676, 530, 709, 1208, 8505, 2]
+// Dependencies: [32, 5, 8560, 8562, 8563, 8564, 676, 530, 709, 1208, 8565, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 8499 (fetchSurveyDetails)
+// Module 8559 (fetchSurveyDetails)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "QuestionTypeEnum";
 import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";
@@ -45,7 +45,7 @@ function _fetchSurveyDetails() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ function _submitSurveyResponse() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -383,7 +383,7 @@ function _fireSurveyAction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

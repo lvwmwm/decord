@@ -1,10 +1,10 @@
-// Module ID: 8422
-// Function ID: 8423
+// Module ID: 8482
+// Function ID: 8483
 // Name: useWithPostLoginRouting
-// Dependencies: [5, 32, 19, 1218, 676, 589, 1236, 8423, 5767, 2]
+// Dependencies: [5, 32, 19, 1218, 676, 589, 1236, 8483, 5827, 2]
 // Exports: default
 
-// Module 8422 (useWithPostLoginRouting)
+// Module 8482 (useWithPostLoginRouting)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -56,10 +56,10 @@ export default function useWithPostLoginRouting(arg0, arg1) {
       obj[1] = intl2.string(arr(first[6]).t.myKyqh);
       obj[2] = outer1_6.getCredentials().login;
       obj[3] = function onPhoneTokenReceived(arg0) {
-        const replaced = closure_0.replace(outer1_8.EXTERNAL_LINK, { externalURL: outer1_1(8423)(arg0) });
+        const replaced = closure_0.replace(outer1_8.EXTERNAL_LINK, { externalURL: outer1_1(8483)(arg0) });
       };
       obj[4] = function onClose() {
-        callback(5767).loginReset();
+        callback(5827).loginReset();
       };
       let replaced = arr.replace(outer1_8.VERIFY_PHONE, obj);
     } else if (tmp2.PHONE_IP_AUTHORIZATION === tmp6) {
@@ -87,7 +87,7 @@ export default function useWithPostLoginRouting(arg0, arg1) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {

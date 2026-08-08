@@ -1,10 +1,10 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11031
+// Function ID: 11032
 // Name: setIndex
-// Dependencies: [19, 1372, 5253, 4314, 3938, 1903, 676, 1379, 6933, 4498, 5784, 5228, 4492, 5254, 6927, 10966, 5252, 1222, 4117, 1358, 589, 1236, 3883, 11, 2]
+// Dependencies: [19, 1372, 5254, 4315, 3938, 1903, 676, 1379, 6993, 4500, 5844, 5229, 4494, 5255, 6987, 11032, 5253, 1222, 4123, 1358, 589, 1236, 3883, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 10965 (setIndex)
+// Module 11031 (setIndex)
 import DismissibleContent from "DismissibleContent";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import setIndex from "setIndex";
@@ -93,7 +93,7 @@ export const useFilterCategoriesByQuery = function useFilterCategoriesByQuery(gu
 export const getFirstRouteFor = function getFirstRouteFor(getSections) {
   let channel;
   const sections = getSections.getSections(false);
-  if (sections[require(undefined, 6927) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS] > 0) {
+  if (sections[require(undefined, 6987) /* computeSubtitle */.SECTION_INDEX_GUILD_ACTIONS] > 0) {
     const guildActionSection = getSections.getGuildActionSection();
     const row = guildActionSection.getRow(0);
     if (ChannelListGuildActionRow.GUILD_HOME === row) {
@@ -104,7 +104,7 @@ export const getFirstRouteFor = function getFirstRouteFor(getSections) {
       return constants.MEMBER_SAFETY;
     }
   }
-  let SECTION_INDEX_UNCATEGORIZED_CHANNELS = require(6927) /* computeSubtitle */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+  let SECTION_INDEX_UNCATEGORIZED_CHANNELS = require(6987) /* computeSubtitle */.SECTION_INDEX_UNCATEGORIZED_CHANNELS;
   if (SECTION_INDEX_UNCATEGORIZED_CHANNELS < getSections.voiceChannelsSectionNumber) {
     while (true) {
       let tmp6 = SECTION_INDEX_UNCATEGORIZED_CHANNELS;
@@ -129,10 +129,10 @@ export const clearRecentChannels = function clearRecentChannels(closure_0, closu
   if (arg2 === undefined) {
     tmp = null;
   }
-  require(10966) /* _bulkClearRecents */.bulkClearRecents(closure_0, closure_1);
-  const obj = require(10966) /* _bulkClearRecents */;
+  require(11032) /* _bulkClearRecents */.bulkClearRecents(closure_0, closure_1);
+  const obj = require(11032) /* _bulkClearRecents */;
   const tmp2 = require;
-  require(5252) /* ack */.bulkAck(closure_1.map((channelId) => ({ channelId, readStateType: constants.CHANNEL, messageId: generateOldThreadCutoff.lastMessageId(channelId) })));
+  require(5253) /* ack */.bulkAck(closure_1.map((channelId) => ({ channelId, readStateType: constants.CHANNEL, messageId: generateOldThreadCutoff.lastMessageId(channelId) })));
   if (null != tmp) {
     tmp2(1222).transitionTo(closure_9.CHANNEL(closure_0, tmp));
     const tmp2Result = tmp2(1222);
@@ -142,7 +142,7 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
   const _require = guildId;
   let closure_1 = filterCategoriesByQuery;
   const dependencyMap = arg2;
-  let obj = _require(4117);
+  let obj = _require(4123);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.CHANNEL_BROWSER_NUX);
   const items = [ensureGuildLoaded];
   const items1 = [guildId];

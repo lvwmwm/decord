@@ -1,7 +1,7 @@
 // Module ID: 7865
 // Function ID: 7866
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7864, 7859, 7799]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7866, 7850, 7859]
 
 // Module 7865 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Polyline = importDefault;
+const ClipPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,60 +31,41 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Polyline {
+class ClipPath {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
-    items1 = [...items];
+    tmp = _isNativeReflectConstruct(this, ClipPath);
     tmp2 = __esModule;
-    obj = __esModule(apply);
+    obj = __esModule(ClipPath);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = (points) => {
-      points = points.points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        points.d = "M" + _undefined(outer1_1[7])(points);
-      }
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(points);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Polyline, require("_isNativeReflectConstruct"));
-let items = [
+require("_inherits")(ClipPath, require("_isNativeReflectConstruct"));
+const items = [
   {
     key: "render",
     value: function render() {
       const props = this.props;
-      const points = props.points;
-      const obj = { ref: this.refMethod, d: null };
-      let combined = points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        combined = "M" + Polyline(7864)(points);
-      }
-      obj[1] = combined;
-      const merged = Object.assign(props);
-      return jsx(Polyline(7859), { ref: this.refMethod, d: null });
+      const obj = { ref: this.refMethod };
+      const tmp = importDefault(7866);
+      const merged = Object.assign(ClipPath(7850).extract(this, props));
+      obj.children = props.children;
+      return <tmp ref={this.refMethod} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Polyline, items);
-importDefaultResultResult.displayName = "Polyline";
-importDefaultResultResult.defaultProps = { points: "" };
+const importDefaultResultResult = importDefaultResult(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

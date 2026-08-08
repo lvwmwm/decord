@@ -1,9 +1,9 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14088
+// Function ID: 14089
 // Name: toggle
-// Dependencies: [4996, 1903, 8022, 676, 11968, 14019, 10380, 1236, 2]
+// Dependencies: [4998, 1903, 8082, 676, 12034, 14089, 10446, 1236, 2]
 
-// Module 14018 (toggle)
+// Module 14088 (toggle)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PlatformTypes } from "ME";
@@ -17,9 +17,9 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useContactSyncSettingValue() {
-    const contactSyncAccount = require(11968) /* _uploadContacts */.useContactSyncAccount();
-    const obj = require(11968) /* _uploadContacts */;
-    return require(11968) /* _uploadContacts */.isContactSyncEnabled(contactSyncAccount);
+    const contactSyncAccount = require(12034) /* _uploadContacts */.useContactSyncAccount();
+    const obj = require(12034) /* _uploadContacts */;
+    return require(12034) /* _uploadContacts */.isContactSyncEnabled(contactSyncAccount);
   },
   onValueChange: function onContactSyncSettingValueChange(arg0) {
     localAccount = localAccount.getLocalAccount(PlatformTypes.CONTACTS);
@@ -28,7 +28,7 @@ createToggle = {
     if (currentUser != null) {
       phone = currentUser.phone;
     }
-    require(14019) /* syncContacts */.handleSyncContacts(localAccount, phone, arg0);
+    require(14089) /* syncContacts */.handleSyncContacts(localAccount, phone, arg0);
   }
 };
 createToggle = createToggle.createToggle(createToggle);

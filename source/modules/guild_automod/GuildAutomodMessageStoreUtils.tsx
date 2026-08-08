@@ -1,10 +1,10 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 13028
+// Function ID: 13029
 // Name: isNotAutomodEmbed
 // Dependencies: [693, 2]
 // Exports: isNotAutomodEmbed
 
-// Module 12958 (isNotAutomodEmbed)
+// Module 13028 (isNotAutomodEmbed)
 const result = require("set").fileFinishedImporting("modules/guild_automod/GuildAutomodMessageStoreUtils.tsx");
 
 export const isNotAutomodEmbed = function isNotAutomodEmbed(type) {

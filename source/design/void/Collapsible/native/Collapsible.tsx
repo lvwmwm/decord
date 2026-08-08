@@ -1,10 +1,10 @@
-// Module ID: 13277
-// Function ID: 13278
+// Module ID: 13347
+// Function ID: 13348
 // Name: Collapsible
-// Dependencies: [32, 19, 17, 21, 4302, 712, 4162, 4711, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4036, 4713, 2]
 // Exports: default
 
-// Module 13277 (Collapsible)
+// Module 13347 (Collapsible)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

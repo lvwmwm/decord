@@ -1,10 +1,10 @@
-// Module ID: 7035
-// Function ID: 7036
+// Module ID: 7095
+// Function ID: 7096
 // Name: getTieredTenureBadgeData
 // Dependencies: [1905, 3883, 2]
 // Exports: getEarnedOnDate, getTieredTenureBadge, getTieredTenureBadgeData
 
-// Module 7035 (getTieredTenureBadgeData)
+// Module 7095 (getTieredTenureBadgeData)
 import { TENURE_BADGES } from "GuildFeatures";
 
 const result = require("set").fileFinishedImporting("modules/user_profile/TieredTenureBadgeUtils.tsx");

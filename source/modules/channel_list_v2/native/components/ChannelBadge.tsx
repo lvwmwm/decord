@@ -1,10 +1,10 @@
-// Module ID: 11597
-// Function ID: 11598
+// Module ID: 11663
+// Function ID: 11664
 // Name: renderChannelBadge
-// Dependencies: [19, 21, 1297, 11596, 4298, 1236, 1879, 2]
+// Dependencies: [19, 21, 1297, 11662, 4299, 1236, 1879, 2]
 // Exports: renderChannelBadge
 
-// Module 11597 (renderChannelBadge)
+// Module 11663 (renderChannelBadge)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -34,7 +34,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(require(11596) /* renderChannelBadge */.NewBadge, {});
+    tmp2 = jsx(require(11662) /* renderChannelBadge */.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
@@ -43,7 +43,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
         const obj1 = { count: null };
         obj1[0] = require(1879) /* shortenAndLocalizeNumber */.humanizeValue(newPostCount, newChannel.locale);
         obj[2] = intl.format(require(1236) /* getSystemLocale */.t.GkAbqY, obj1);
-        tmp2 = jsx(require(4298) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
+        tmp2 = jsx(require(4299) /* Text */.Text, { variant: "text-xs/bold", color: "text-brand", children: null });
         const obj5 = require(1879) /* shortenAndLocalizeNumber */;
       }
     }
@@ -51,7 +51,7 @@ export const renderChannelBadge = function renderChannelBadge(newChannel) {
       if (postsWithUnreadsCount > 0) {
         const obj2 = { variant: "text-xs/bold", color: "text-muted", children: null };
         obj2[2] = postsWithUnreadsCount;
-        tmp2 = jsx(require(4298) /* Text */.Text, { variant: "text-xs/bold", color: "text-muted", children: null });
+        tmp2 = jsx(require(4299) /* Text */.Text, { variant: "text-xs/bold", color: "text-muted", children: null });
       }
     }
     tmp2 = null;

@@ -1,10 +1,10 @@
-// Module ID: 15221
-// Function ID: 15222
+// Module ID: 15294
+// Function ID: 15295
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 4195, 4190, 676, 11830, 5668, 6823, 4198, 4194, 5150, 6805, 2]
+// Dependencies: [5, 19, 4196, 4191, 676, 11896, 5728, 6883, 4199, 4195, 5151, 6865, 2]
 // Exports: default
 
-// Module 15221 (useGuildPowerupsBoostAction)
+// Module 15294 (useGuildPowerupsBoostAction)
 import useGuildBoostPurchaseHandler from "useGuildBoostPurchaseHandler";
 import noop from "noop";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
@@ -25,10 +25,10 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
   const importDefault = arg1;
   let dependencyMap = arg2;
   const callback = arg4;
-  const tmp = importDefault(11830)(arg3);
+  const tmp = importDefault(11896)(arg3);
   const shouldUseMobileWebRedirectCheckout = tmp.shouldUseMobileWebRedirectCheckout;
   const handleMobileWebRedirectCheckout = tmp.handleMobileWebRedirectCheckout;
-  const analyticsLocations = importDefault(5668)().analyticsLocations;
+  const analyticsLocations = importDefault(5728)().analyticsLocations;
   let items = [arg1, arg2, arg0, arg4, shouldUseMobileWebRedirectCheckout, handleMobileWebRedirectCheckout, analyticsLocations];
   return shouldUseMobileWebRedirectCheckout.useCallback(callback(function*() {
     if (c3 === 2) {
@@ -42,7 +42,7 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -66,9 +66,9 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               tmp15 = dependencyMap;
               if (dependencyMap > 0) {
                 if (!outer1_5.hasFetched) {
-                  let obj1 = outer1_1(6823);
+                  let obj1 = outer1_1(6883);
                   const items = [obj1.init(), ];
-                  let obj2 = outer1_0(4198);
+                  let obj2 = outer1_0(4199);
                   items[1] = obj2.fetchGuildBoostSlots();
                   dependencyMap = 1;
                   c3 = 1;
@@ -96,10 +96,10 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
           PERK = outer1_6.PERK;
         }
         outer1_0 = PERK;
-        let obj4 = outer1_0(4194);
+        let obj4 = outer1_0(4195);
         outer1_1 = obj4.getAvailableGuildBoostSlots(outer1_5.boostSlots);
         if (outer1_1.length >= dependencyMap) {
-          tmp15 = outer1_0(5150);
+          tmp15 = outer1_0(5151);
           obj2 = { guildBoostSlots: null, guildId: null, intent: null };
           obj2[0] = outer1_1.slice(0, dependencyMap);
           obj2[1] = outer1_0;
@@ -126,8 +126,8 @@ export default function useGuildPowerupsBoostAction(arg0, arg1, arg2, arg3, arg4
               const tmpResult = outer2_0(table[10]);
             }
           };
-          const result = outer1_0(6805).launchGuildBoostFlowOrAlert(obj3);
-          const obj6 = outer1_0(6805);
+          const result = outer1_0(6865).launchGuildBoostFlowOrAlert(obj3);
+          const obj6 = outer1_0(6865);
         }
       } catch (tmp50) {
         c3 = tmp;

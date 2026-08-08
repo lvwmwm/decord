@@ -1,10 +1,10 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16804
+// Function ID: 16805
 // Name: FormBigRadioBox
-// Dependencies: [19, 17, 21, 4302, 712, 4019, 8997, 1297, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4019, 9057, 1297, 4299, 2]
 // Exports: default
 
-// Module 16727 (FormBigRadioBox)
+// Module 16804 (FormBigRadioBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -73,12 +73,12 @@ export default function FormBigRadioBox(arg0) {
     selected = tmp.iconContainerSelected;
   }
   const tmp5 = closure_5;
-  const tmp6 = importDefault(8997);
+  const tmp6 = importDefault(9057);
   const tmp9 = View;
   items2[1] = selected;
   items1[1] = callback(tmp9, { style: items2, children: callback(require(1297) /* Button */.Icon, { source: icon }) });
-  items1[2] = callback(require(4298) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title });
-  items1[3] = callback(require(4298) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description });
+  items1[2] = callback(require(4299) /* Text */.Text, { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "interactive-text-default", children: title });
+  items1[3] = callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description });
   obj[4] = items1;
   return tmp5(tmp6, obj);
 };

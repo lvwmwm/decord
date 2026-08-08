@@ -1,9 +1,9 @@
-// Module ID: 9806
-// Function ID: 9807
+// Module ID: 9872
+// Function ID: 9873
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 9806 (enforcing)
+// Module 9872 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativePushNotificationMonitorModule");

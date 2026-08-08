@@ -1,10 +1,10 @@
-// Module ID: 14925
-// Function ID: 14926
+// Module ID: 14995
+// Function ID: 14996
 // Name: isValidClipboardCode
-// Dependencies: [5, 32, 19, 21, 14926, 14921, 1236, 14927, 14924, 2]
+// Dependencies: [5, 32, 19, 21, 14996, 14991, 1236, 14997, 14994, 2]
 // Exports: default
 
-// Module 14925 (isValidClipboardCode)
+// Module 14995 (isValidClipboardCode)
 import MFAOptionScreen from "MFAOptionScreen";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -12,7 +12,7 @@ import { jsx } from "jsxProd";
 
 const require = arg1;
 function isValidClipboardCode(arg0) {
-  let isMatch = arg0.length === require(14926) /* finishMFACheck */.TOTP_CODE_LENGTH;
+  let isMatch = arg0.length === require(14996) /* finishMFACheck */.TOTP_CODE_LENGTH;
   if (isMatch) {
     isMatch = /^\d+$/.test(arg0);
     const obj = /^\d+$/;
@@ -62,7 +62,7 @@ export default function TotpScreen(finish) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

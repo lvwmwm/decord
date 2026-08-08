@@ -1,10 +1,10 @@
-// Module ID: 14079
-// Function ID: 14080
+// Module ID: 14149
+// Function ID: 14150
 // Name: getGiftRowDisplayInfo
-// Dependencies: [1236, 3526, 5795, 2284, 2]
+// Dependencies: [1236, 3526, 5855, 2284, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 14079 (getGiftRowDisplayInfo)
+// Module 14149 (getGiftRowDisplayInfo)
 const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
 
 export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {
@@ -22,7 +22,7 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
   ({ price, gifterName, offeredAt, claimedAt } = claimed);
   let formatPriceResult = null;
   if (null != price) {
-    let obj = require(5795) /* formatSingleCurrencyPrice */;
+    let obj = require(5855) /* formatSingleCurrencyPrice */;
     formatPriceResult = obj.formatPrice(price.amount, price.currency);
   }
   if (null != formatPriceResult) {

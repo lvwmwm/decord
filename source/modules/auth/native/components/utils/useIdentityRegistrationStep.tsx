@@ -1,10 +1,10 @@
-// Module ID: 15021
-// Function ID: 15022
+// Module ID: 15091
+// Function ID: 15092
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15011, 15012, 676, 1480, 15009, 1236, 15022, 10396, 8415, 15019, 691, 15010, 1481, 8430, 8424, 8878, 2]
+// Dependencies: [5, 32, 19, 15081, 15082, 676, 1480, 15079, 1236, 15092, 10462, 8475, 15089, 691, 15080, 1481, 8490, 8484, 8938, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15021 (useIdentityRegistrationStep)
+// Module 15091 (useIdentityRegistrationStep)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import set from "set";
@@ -64,7 +64,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -105,7 +105,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             ref = c4;
             if (ref instanceof callback(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
               obj1 = callback(navigation[11]);
               const context = obj1.getAuthenticationErrorsFromAPIError(set);
@@ -170,7 +170,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             obj7[2] = closure_1;
             obj7[3] = callback;
             obj7[4] = function onPhoneTokenReceived(arg0) {
-              let obj = { email: "r", phone: "Path", phoneToken: "TRANSPARENT" };
+              let obj = { email: "r", phone: "PX_16", phoneToken: "TRANSPARENT" };
               obj[1] = closure_1;
               obj[2] = arg0;
               v3(obj);
@@ -189,7 +189,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             };
             outer1_2.push(callback(navigation[13]).AuthStates.VERIFY_PHONE, obj7);
             c7 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp55) {
           c4 = tmp55;

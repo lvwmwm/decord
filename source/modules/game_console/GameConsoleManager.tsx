@@ -1,9 +1,9 @@
-// Module ID: 16351
-// Function ID: 16352
+// Module ID: 16428
+// Function ID: 16429
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4349, 4373, 4317, 4318, 4316, 10439, 4362, 3, 38, 9095, 10810, 5260, 4187, 10812, 1351, 4640, 1236, 16352, 10815, 2]
+// Dependencies: [5, 1218, 4351, 4375, 4318, 4319, 4317, 10505, 4364, 3, 38, 9155, 10876, 5261, 4188, 10878, 1351, 4642, 1236, 16429, 10881, 2]
 
-// Module 16351 (syncLocalState)
+// Module 16428 (syncLocalState)
 import updateVoiceState from "updateVoiceState";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -46,7 +46,7 @@ function _syncLocalState() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ function _syncLocalState() {
             obj1.toggleSelfDeaf({ syncRemote: false });
           }
           c4 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp16) {
           c4 = tmp;
           throw tmp16;
@@ -108,9 +108,9 @@ function _syncLocalState() {
 let prototype = function GameConsoleManager() {
   let applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   const require = applyArgumentsResult;
-  const timeout = new require(4187) /* start */.Timeout();
+  const timeout = new require(4188) /* start */.Timeout();
   applyArgumentsResult.rollbackCommandTimeout = timeout;
-  const timeout1 = new require(4187) /* start */.Timeout();
+  const timeout1 = new require(4188) /* start */.Timeout();
   applyArgumentsResult.awaitRemoteTimeout = timeout1;
   applyArgumentsResult.actions = {
     WAIT_FOR_REMOTE_SESSION() {
@@ -238,14 +238,14 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(10812);
+      let obj = callback(10878);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.wGMxr3);
       const intl2 = callback(1236).intl;
       obj[1] = intl2.string(callback(1236).t.i5k8b5);
-      callback2(4640).show(obj);
+      callback2(4642).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {

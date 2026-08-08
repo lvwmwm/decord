@@ -1,8 +1,8 @@
-// Module ID: 4312
-// Function ID: 4313
-// Dependencies: [32, 5, 4313, 1376, 1372, 4314, 676, 9178, 530, 5233, 4153, 4310, 5128, 709, 8876, 698, 1222, 4147, 1236, 5878, 4539, 2]
+// Module ID: 4313
+// Function ID: 4314
+// Dependencies: [32, 5, 4314, 1376, 1372, 4315, 676, 9242, 530, 5234, 4159, 4311, 5129, 709, 8936, 698, 1222, 4153, 1236, 5938, 4541, 2]
 
-// Module 4312
+// Module 4313
 import _slicedToArray from "_slicedToArray";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
@@ -54,7 +54,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -187,7 +187,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -289,15 +289,15 @@ export default {
           c4();
         }
         if (null != obj2.getRootNavigationRef()) {
-          tmp6(4310).transitionToChannel(channel.id, { navigationReplace: true });
+          tmp6(4311).transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
-          const tmp6Result = tmp6(4310);
+          const tmp6Result = tmp6(4311);
         } else {
-          const privateChannel = importDefault(5128).selectPrivateChannel(channel.id);
+          const privateChannel = importDefault(5129).selectPrivateChannel(channel.id);
           tmp3 = channel;
-          const obj3 = importDefault(5128);
+          const obj3 = importDefault(5129);
         }
-        obj2 = require(4153) /* getRootNavigationRef */;
+        obj2 = require(4159) /* getRootNavigationRef */;
         tmp6 = require;
       }
     }
@@ -340,7 +340,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -425,11 +425,11 @@ export default {
     const tmp2 = importDefault;
     const tmp5 = require;
     if (null != obj2.getRootNavigationRef()) {
-      tmp5(4310).transitionToChannel(tmp.id, { navigationReplace: true });
-      const tmp5Result = tmp5(4310);
+      tmp5(4311).transitionToChannel(tmp.id, { navigationReplace: true });
+      const tmp5Result = tmp5(4311);
     } else {
-      const privateChannel = tmp2(5128).selectPrivateChannel(tmp.id);
-      const tmp2Result = tmp2(5128);
+      const privateChannel = tmp2(5129).selectPrivateChannel(tmp.id);
+      const tmp2Result = tmp2(5129);
     }
     return tmp;
   },
@@ -442,7 +442,7 @@ export default {
     if (arg2 === undefined) {
       flag2 = false;
     }
-    if (importDefault(8876)(id)) {
+    if (importDefault(8936)(id)) {
       let tmpResult = tmp(698);
       let obj = { last_changelog_id: null, unread_count: null };
       obj[0] = handleUserSettingsProtoStoreChange.latestChangelogId();
@@ -450,7 +450,7 @@ export default {
       tmpResult.track(constants.CHANGE_LOG_DM_REMOVED, obj);
     }
     tmpResult = tmp(709);
-    obj = { id, guild_id: "Array", parent_id: "accessible" };
+    obj = { id, guild_id: "Array", parent_id: "isArray" };
     tmpResult.dispatch({ type: "CHANNEL_DELETE", channel: obj, silent: flag2 });
     if (flag) {
       require(1222) /* transitionTo */.transitionTo(constants2.FRIENDS);
@@ -462,11 +462,11 @@ export default {
     const obj7 = require(530) /* sendRequest */;
     const delResult = HTTP.del(obj1);
     return HTTP.del(obj1).then(() => {
-      const AccessibilityAnnouncer = callback(4147).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.nRbucl));
     }).catch(() => {
-      const AccessibilityAnnouncer = callback(4147).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.ndXVI5));
     });
@@ -590,7 +590,7 @@ export default {
         tmp10 = isThreadResult;
       }
       if (!tmp10) {
-        obj1 = outer1_1(5878);
+        obj1 = outer1_1(5938);
         const result = obj1.checkGuildTemplateDirty(guildId);
       }
       return closure_1;
@@ -612,7 +612,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -758,7 +758,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -917,7 +917,7 @@ export default {
     } else {
       result = closure_11.CHANNEL_STORE_LISTING(arg0);
     }
-    const result1 = _require(4539).httpGetWithCountryCodeQuery(result);
+    const result1 = _require(4541).httpGetWithCountryCodeQuery(result);
     return result1.then((body) => {
       let obj = outer1_1(outer1_2[13]);
       obj = { type: "STORE_LISTING_FETCH_SUCCESS", channelId: closure_0, storeListing: body.body };
@@ -949,7 +949,7 @@ export default {
       const obj4 = outer1_0(530);
       obj2[3] = obj4.rejectWithMigratedError();
       closure_0 = yield HTTP.post(obj2);
-      const obj = outer1_1(5878);
+      const obj = outer1_1(5938);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -972,7 +972,7 @@ export default {
       let table = 1;
       yield outer1_1.fetchChannel(outer1_0);
       table = 0;
-      let closure_0 = yield "T";
+      let closure_0 = yield "HermesInternal";
       closure_1 = outer1_6(closure_0);
       const obj = outer1_1(table[13]);
       const obj3 = { type: "CHANNEL_CREATE", channel: null };

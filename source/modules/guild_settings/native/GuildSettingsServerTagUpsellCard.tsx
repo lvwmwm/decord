@@ -1,10 +1,10 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16664
+// Function ID: 16665
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4189, 21, 4302, 712, 589, 4193, 11814, 11782, 4723, 4710, 11817, 4298, 1236, 4712, 15261, 2]
+// Dependencies: [19, 17, 4190, 21, 4303, 712, 589, 4194, 11880, 11848, 4725, 4712, 11883, 4299, 1236, 4714, 15334, 2]
 // Exports: default
 
-// Module 16587 (GuildSettingsServerTagUpsellCard)
+// Module 16664 (GuildSettingsServerTagUpsellCard)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -49,7 +49,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     }
     return tmp2;
   }, items1);
-  const tmp6 = importDefault(11814)(stateFromStores, true);
+  const tmp6 = importDefault(11880)(stateFromStores, true);
   const items2 = [guildId];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guildId)) {
@@ -60,7 +60,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   obj = { style: tmp.card, children: null };
   obj = { style: tmp.backgroundLayer, colors: items3, locations: [0, 0.7], start: { x: 0.5, y: 0 }, end: { x: 0.5, y: 1 }, pointerEvents: "none" };
   items3 = ["rgba(41, 41, 45, 0)", c12];
-  const items4 = [callback(importDefault(4723), obj), callback(importDefault(4723), { style: tmp.backgroundLayer, colors: closure_10, start: closure_8, end: closure_9, pointerEvents: "none" }), callback(importDefault(4723), { style: tmp.backgroundLayer, colors: closure_11, start: closure_8, end: closure_9, pointerEvents: "none" }), ];
+  const items4 = [callback(importDefault(4725), obj), callback(importDefault(4725), { style: tmp.backgroundLayer, colors: closure_10, start: closure_8, end: closure_9, pointerEvents: "none" }), callback(importDefault(4725), { style: tmp.backgroundLayer, colors: closure_11, start: closure_8, end: closure_9, pointerEvents: "none" }), ];
   const obj3 = { spacing: null, children: null };
   obj3[0] = importDefault(712).space.PX_16;
   const obj4 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
@@ -69,7 +69,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     const obj5 = { imageUrl: null, style: null };
     obj5[0] = tmp6;
     obj5[1] = tmp.powerupImage;
-    tmp10Result = tmp10(tmp5(11817), obj5);
+    tmp10Result = tmp10(tmp5(11883), obj5);
   }
   obj4[3] = tmp10Result;
   const items5 = [callback(closure_4, obj4), , ];
@@ -79,23 +79,23 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj7 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: null };
   const intl = tmp2(1236).intl;
   obj7[3] = intl.string(guildId(1236).t["2QmKZ2"]);
-  const items6 = [callback(guildId(4298).Text, obj7), ];
+  const items6 = [callback(guildId(4299).Text, obj7), ];
   const obj8 = { variant: "text-sm/medium", color: "text-subtle", style: items7, children: null };
   items7 = [, ];
   ({ centerText: arr8[0], body: arr8[1] } = tmp);
   const intl2 = tmp2(1236).intl;
   obj8[3] = intl2.string(guildId(1236).t.Tg0fDm);
-  items6[1] = callback(guildId(4298).Text, obj8);
+  items6[1] = callback(guildId(4299).Text, obj8);
   obj6[2] = items6;
-  items5[1] = closure_7(guildId(4710).Stack, obj6);
+  items5[1] = closure_7(guildId(4712).Stack, obj6);
   const obj9 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start", onPress: null };
   const intl3 = tmp2(1236).intl;
   obj9[2] = intl3.string(guildId(1236).t.kMRDWs);
-  obj9[3] = callback(guildId(15261).BoostTier2Icon, { color: "white" });
+  obj9[3] = callback(guildId(15334).BoostTier2Icon, { color: "white" });
   obj9[5] = guildId.onUnlockPress;
-  items5[2] = callback(guildId(4712).Button, obj9);
+  items5[2] = callback(guildId(4714).Button, obj9);
   obj3[1] = items5;
-  items4[3] = closure_7(guildId(4710).Stack, obj3);
+  items4[3] = closure_7(guildId(4712).Stack, obj3);
   obj[1] = items4;
   return closure_7(closure_4, obj);
 };

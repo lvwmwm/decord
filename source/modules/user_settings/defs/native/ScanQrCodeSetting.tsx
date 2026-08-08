@@ -1,12 +1,12 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 14224
+// Function ID: 14225
 // Name: pressable
-// Dependencies: [5, 4514, 12, 1605, 4859, 4507, 13145, 1988, 10380, 1236, 14057, 2]
+// Dependencies: [5, 4516, 12, 1605, 4861, 4509, 13215, 1988, 10446, 1236, 14127, 2]
 
-// Module 14154 (pressable)
+// Module 14224 (pressable)
 import { NativePermissionTypes } from "NativePermissionStatus";
 import apply from "apply";
-import importDefaultResult from "module_4507";
+import importDefaultResult from "module_4509";
 import createToggle from "createToggle";
 
 const require = arg1;
@@ -17,7 +17,7 @@ apply = {
   },
   parent: null,
   IconComponent: require("QrCodeIcon").QrCodeIcon,
-  onPress: apply.debounce(require("module_4507")(function*() {
+  onPress: apply.debounce(require("module_4509")(function*() {
     if (c3 === 2) {
       c3 = 3;
       HermesBuiltin.throwTypeError();
@@ -29,7 +29,7 @@ apply = {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ apply = {
   withArrow: true
 };
 apply = createToggle.createPressable(apply);
-const debounceResult = apply.debounce(require("module_4507")(function*() {
+const debounceResult = apply.debounce(require("module_4509")(function*() {
   if (c3 === 2) {
     c3 = 3;
     HermesBuiltin.throwTypeError();
@@ -104,7 +104,7 @@ const debounceResult = apply.debounce(require("module_4507")(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "T", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

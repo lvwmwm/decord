@@ -1,10 +1,10 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10094
+// Function ID: 10095
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 6828, 1903, 676, 5799, 3, 7273, 9371, 5656, 698, 709, 6833, 3962, 1884, 7525, 514, 2]
+// Dependencies: [5, 19, 6888, 1903, 676, 5859, 3, 7333, 9436, 5716, 698, 709, 6893, 3962, 1884, 7585, 514, 2]
 // Exports: default
 
-// Module 10028 (useMobilePurchaseSKU)
+// Module 10094 (useMobilePurchaseSKU)
 import GPlayConnectionState from "GPlayConnectionState";
 import noop from "noop";
 import { useNativeCheckoutStoreOrNull as closure_5 } from "context";
@@ -101,7 +101,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -122,7 +122,7 @@ export default function useMobilePurchaseSKU(skuId) {
               if (lib.billingResult === onPurchasePending.OK) {
                 outer1_8();
                 v0 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 let obj5 = platformSkuId(analyticsLocations[11]);
                 obj5.unsubscribe("GPLAY_PURCHASE_VERIFIED", outer1_19);
@@ -238,7 +238,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -383,7 +383,7 @@ export default function useMobilePurchaseSKU(skuId) {
             c4 = 0;
             closure_16.current = false;
             v02 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
           obj9 = { productId: null, skuId: null, isOneTimePurchase: true, analyticsLoadId: null, analyticsLocations: null, analyticsData: null, isGift: null, giftInfoOptions: null, onPurchaseError: null };
           obj9[0] = closure_1;

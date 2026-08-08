@@ -1,10 +1,10 @@
-// Module ID: 5930
-// Function ID: 5931
+// Module ID: 5990
+// Function ID: 5991
 // Name: canChannelUseSoundboard
 // Dependencies: [1372, 3929, 1960, 676, 589, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default, useCanChannelUseSoundboard
 
-// Module 5930 (canChannelUseSoundboard)
+// Module 5990 (canChannelUseSoundboard)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleConnectionOpen from "handleConnectionOpen";

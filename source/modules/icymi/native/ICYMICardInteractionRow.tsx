@@ -1,13 +1,13 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 15606
+// Function ID: 15607
 // Name: AddEmojiButton
-// Dependencies: [32, 19, 17, 5862, 1372, 5130, 3929, 676, 1906, 21, 3940, 7163, 4302, 712, 500, 4145, 589, 4312, 6857, 8577, 4844, 1236, 7595, 4298, 10133, 688, 1416, 8550, 9458, 10134, 10175, 10228, 15523, 4798, 7162, 11078, 11056, 8853, 10168, 10149, 4005, 4723, 689, 5718, 2]
+// Dependencies: [32, 19, 17, 5922, 1372, 5131, 3929, 676, 1906, 21, 3940, 7223, 4303, 712, 500, 4151, 589, 4313, 6917, 8637, 4846, 1236, 7655, 4299, 10199, 688, 1416, 8610, 9523, 10200, 10241, 10294, 15598, 4800, 7222, 11144, 11122, 8913, 10234, 10215, 4005, 4725, 689, 5778, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 15531 (AddEmojiButton)
+// Module 15606 (AddEmojiButton)
 import Separator from "Separator";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
-import get_ActivityIndicator from "module_4312";
+import get_ActivityIndicator from "module_4313";
 import updateState from "updateState";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import recomputeGuild from "recomputeGuild";
@@ -225,8 +225,8 @@ function ForwardButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.xIUfJS);
-  obj[5] = closure_16(importDefault(10175), { size: "sm" });
-  return closure_16(require(4844) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = closure_16(importDefault(10241), { size: "sm" });
+  return closure_16(require(4846) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
   disabled = disabled.disabled;
@@ -243,8 +243,8 @@ function ReplyButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5NwaNY"]);
-  obj[5] = closure_16(require(10228) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
-  return closure_16(require(4844) /* PressableBase */.PressableOpacity, obj);
+  obj[5] = closure_16(require(10294) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  return closure_16(require(4846) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {
   let handleItemInteracted;
@@ -332,12 +332,12 @@ let closure_20 = createCacheKey.createStyles(() => {
   obj[12] = { alignSelf: "flex-end", paddingBottom: 4.5 };
   obj[13] = { resizeMode: "contain", width: c19, height: c19 };
   const obj1 = { borderColor: importDefault(712).unsafe_rawColors.BRAND_560, borderWidth: 1, paddingHorizontal: 7, backgroundColor: null };
-  obj1[3] = require(4145) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.BRAND_500, 0.3);
+  obj1[3] = require(4151) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.BRAND_500, 0.3);
   obj[14] = obj1;
   obj[15] = { position: "absolute", right: 0, top: 0, bottom: 0, width: 48 };
   obj[16] = { position: "absolute", right: 0 };
   const tmp4 = require;
-  const tmp4Result = require(4145) /* hexToRgba */;
+  const tmp4Result = require(4151) /* hexToRgba */;
   obj[17] = { paddingVertical: 6, paddingHorizontal: 8, backgroundColor: importDefault(712).colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, borderRadius: importDefault(712).radii.sm, display: "flex", flexDirection: "row", alignItems: "center", gap: 8 };
   obj[18] = { display: "flex", flexDirection: "row", alignItems: "center", gap: 4, justifySelf: "end" };
   obj3 = { width: 20, height: 20, tintColor: tmp(712).colors.INTERACTIVE_TEXT_DEFAULT };
@@ -674,10 +674,10 @@ export default function ICYMICardInteractionRow(message) {
 export const onAddReaction = function onAddReaction(arg0, arg1, byName) {
   if (null != byName) {
     let obj = require(3940) /* MAX_REACTIONS */;
-    const obj2 = require(7163) /* checkReactionResponse */;
+    const obj2 = require(7223) /* checkReactionResponse */;
     obj = { burst: null };
     obj[0] = arg3;
-    obj2.addReaction(arg0, arg1, obj.toReactionEmoji(byName), require(7163) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
+    obj2.addReaction(arg0, arg1, obj.toReactionEmoji(byName), require(7223) /* checkReactionResponse */.ReactionLocations.MESSAGE, obj);
     const toReactionEmojiResult = obj.toReactionEmoji(byName);
   }
 };

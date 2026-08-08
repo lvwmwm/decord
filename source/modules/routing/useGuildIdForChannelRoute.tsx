@@ -1,10 +1,10 @@
-// Module ID: 4311
-// Function ID: 4312
+// Module ID: 4312
+// Function ID: 4313
 // Name: useGuildIdForChannelRoute
-// Dependencies: [1375, 4118, 676, 589, 1894, 2]
+// Dependencies: [1375, 4124, 676, 589, 1894, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4311 (useGuildIdForChannelRoute)
+// Module 4312 (useGuildIdForChannelRoute)
 import initializeFromUserSettings from "initializeFromUserSettings";
 import handleConnectionOpen from "handleConnectionOpen";
 import { FAVORITES } from "ME";

@@ -1,8 +1,8 @@
-// Module ID: 14426
-// Function ID: 14427
-// Dependencies: [19, 4113, 1303, 1302, 14427, 8022, 676, 21, 1480, 500, 8322, 1236, 9388, 705, 3030, 1974, 4728, 14428, 647, 10380, 13816, 2]
+// Module ID: 14496
+// Function ID: 14497
+// Dependencies: [19, 4119, 1303, 1302, 14497, 8082, 676, 21, 1480, 500, 8382, 1236, 9453, 705, 3030, 1974, 4730, 14498, 647, 10446, 13886, 2]
 
-// Module 14426
+// Module 14496
 import importAllResult from "createToggle";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import initialize from "initialize";
@@ -20,10 +20,10 @@ let c3 = importAllResult;
 const memoResult = importAllResult.memo(() => {
   let gradientPresetId;
   let theme;
-  nativeStackNavigation(4728)(() => {
+  nativeStackNavigation(4730)(() => {
     if (initialize.shouldSync("appearance")) {
-      const userCustomThemes = _undefined(14428).fetchUserCustomThemes();
-      const obj = _undefined(14428);
+      const userCustomThemes = _undefined(14498).fetchUserCustomThemes();
+      const obj = _undefined(14498);
     }
   });
   let items = [handleThemeChange, isSyncedModeThemesEnabled];
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo(() => {
     if (obj.isAndroid()) {
       if (_undefined.persistedFontScale === _undefined.fontScale) {
         if (tmp3.persistedIsClassicChatFontScaleEnabled === tmp3.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "sa" });
         }
       }
       obj = { headerRight: null };
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(() => {
     callback(table[13]).batchUpdates(() => state.setState(closure_7));
   }, []);
   const node = importAllResult.useMemo(() => {
-    let obj = _undefined(10380);
+    let obj = _undefined(10446);
     obj = { sections: null };
     const items = [constants.MOBILE_VISUAL_REFRESH];
     const items1 = [{ settings: items }, , , , , , , , , ];
@@ -117,7 +117,7 @@ const memoResult = importAllResult.memo(() => {
     return obj.createList(obj);
   }, []);
   let obj2 = _require(1480);
-  return jsx(nativeStackNavigation(13816), { node }, "" + theme + "-" + gradientPresetId);
+  return jsx(nativeStackNavigation(13886), { node }, "" + theme + "-" + gradientPresetId);
 });
 const result = require("initialize").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
 

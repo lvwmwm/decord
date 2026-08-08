@@ -1,10 +1,10 @@
-// Module ID: 13861
-// Function ID: 13862
+// Module ID: 13931
+// Function ID: 13932
 // Name: HideBadgesSheet
-// Dependencies: [19, 21, 5396, 1236, 5395, 2]
+// Dependencies: [19, 21, 5397, 1236, 5396, 2]
 // Exports: default
 
-// Module 13861 (HideBadgesSheet)
+// Module 13931 (HideBadgesSheet)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,6 +18,6 @@ export default function HideBadgesSheet() {
   obj = { title: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t["9iIKHh"]);
-  obj[1] = jsx(require(5395) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
-  return jsx(require(5396) /* Background */.BottomSheet, { title: null });
+  obj[1] = jsx(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, { title: null });
+  return jsx(require(5397) /* Background */.BottomSheet, { title: null });
 };

@@ -1,9 +1,9 @@
-// Module ID: 12290
-// Function ID: 12291
+// Module ID: 12357
+// Function ID: 12358
 // Name: ApplicationWidgetFieldValueType
 // Dependencies: [2]
 
-// Module 12290 (ApplicationWidgetFieldValueType)
+// Module 12357 (ApplicationWidgetFieldValueType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetFieldValueType.tsx");
 
 export const ApplicationWidgetFieldValueType = { DATA: "data", CUSTOM_STRING: "custom_string", APPLICATION_ASSET: "application_asset", APPLICATION_LOCALIZED_STRING: "application_localized_string" };

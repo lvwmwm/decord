@@ -1,7 +1,7 @@
 // Module ID: 4030
 // Function ID: 4031
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 4031, 4020, 4077, 4078, 4079, 2]
+// Dependencies: [19, 17, 21, 4031, 4020, 4083, 4084, 4085, 2]
 // Exports: useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding
 
 // Module 4030 (BaseRive)

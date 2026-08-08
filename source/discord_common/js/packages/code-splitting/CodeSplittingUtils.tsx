@@ -49,7 +49,7 @@ export const makeLazy = function makeLazy(memo) {
   });
   class Wrapper {
     constructor(arg0) {
-      tmp = f73500;
+      tmp = f73668;
       if (null != renderLoader) {
         tmp2Result = tmp2();
       } else {
@@ -70,7 +70,7 @@ export const makeLazy = function makeLazy(memo) {
       obj1 = { fallback: tmp2Result, children: null };
       obj2 = {};
       merged = Object.assign(memo);
-      obj1[1] = tmp(f73500, obj2);
+      obj1[1] = tmp(f73668, obj2);
       return tmp(name.Suspense, obj1);
     }
   }

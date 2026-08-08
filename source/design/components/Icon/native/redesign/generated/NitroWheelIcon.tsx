@@ -1,10 +1,10 @@
-// Module ID: 7644
-// Function ID: 7645
+// Module ID: 7704
+// Function ID: 7705
 // Name: NitroWheelIcon
-// Dependencies: [19, 21, 712, 4004, 7645, 2]
+// Dependencies: [19, 21, 712, 4004, 7705, 2]
 // Exports: NitroWheelIcon
 
-// Module 7644 (NitroWheelIcon)
+// Module 7704 (NitroWheelIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const NitroWheelIcon = function NitroWheelIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7645) /* registerAsset */;
+  obj[0] = require(7705) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

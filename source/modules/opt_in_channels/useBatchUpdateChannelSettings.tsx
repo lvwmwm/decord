@@ -1,10 +1,10 @@
-// Module ID: 10963
-// Function ID: 10964
+// Module ID: 11029
+// Function ID: 11030
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 5259, 4497, 676, 709, 589, 5255, 10964, 10961, 2]
+// Dependencies: [19, 5260, 4499, 676, 709, 589, 5256, 11030, 11027, 2]
 // Exports: default
 
-// Module 10963 (useBatchUpdateChannelSettings)
+// Module 11029 (useBatchUpdateChannelSettings)
 import noop from "noop";
 import incrementVersion from "incrementVersion";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -47,13 +47,13 @@ export default function useBatchUpdateChannelSettings(arg0) {
         isCollapsedResult = null != id;
       }
       if (isCollapsedResult) {
-        let obj = callback(10964);
+        let obj = callback(11030);
         obj.categoryExpand(id);
       }
-      let obj1 = callback(10961);
+      let obj1 = callback(11027);
       if (obj1.hasNotSetUpChannelOptIn(closure_0)) {
         if (id === id) {
-          let tmp8Result = tmp8(10961);
+          let tmp8Result = tmp8(11027);
           obj = { include: null };
           const _Set2 = Set;
           const items = [id];
@@ -61,7 +61,7 @@ export default function useBatchUpdateChannelSettings(arg0) {
           obj[0] = set;
           const result = tmp8Result.optIntoAllChannelsForExistingMember(closure_0, obj);
         } else {
-          tmp8Result = tmp8(10961);
+          tmp8Result = tmp8(11027);
           obj = { exclude: null };
           const _Set = Set;
           const items1 = [id];
@@ -70,7 +70,7 @@ export default function useBatchUpdateChannelSettings(arg0) {
           const result1 = tmp8Result.optIntoAllChannelsForExistingMember(closure_0, obj);
         }
       } else {
-        const tmp8Result1 = tmp8(5255);
+        const tmp8Result1 = tmp8(5256);
         obj1 = { section: null };
         obj1[0] = constants.CHANNEL_BROWSER;
         const result2 = tmp8Result1.updateOptInChannelsImmediate(closure_0, id, !isChannelOptedInResult, obj1);

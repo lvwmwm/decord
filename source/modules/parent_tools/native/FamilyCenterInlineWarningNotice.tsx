@@ -1,10 +1,10 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14119
+// Function ID: 14120
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 4302, 712, 7902, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 7962, 4299, 2]
 // Exports: default
 
-// Module 14049 (FamilyCenterInlineWarningNotice)
+// Module 14119 (FamilyCenterInlineWarningNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,9 +31,9 @@ export default function FamilyCenterInlineWarningNotice(arg0) {
   items = [tmp.container, style];
   obj = { size: "sm", color: null };
   obj[1] = importDefault(712).colors.ICON_FEEDBACK_WARNING;
-  const items1 = [callback(require(7902) /* WarningIcon */.WarningIcon, obj), ];
+  const items1 = [callback(require(7962) /* WarningIcon */.WarningIcon, obj), ];
   obj = { variant: "text-sm/medium", color: "text-strong", style: tmp.text, children: text };
-  items1[1] = callback(require(4298) /* Text */.Text, obj);
+  items1[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items1;
   return callback2(View, obj);
 };

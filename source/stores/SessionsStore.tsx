@@ -1,9 +1,9 @@
-// Module ID: 4317
-// Function ID: 4318
+// Module ID: 4318
+// Function ID: 4319
 // Name: handleUpdate
 // Dependencies: [1218, 589, 12, 709, 2]
 
-// Module 4317 (handleUpdate)
+// Module 4318 (handleUpdate)
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
 

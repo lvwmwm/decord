@@ -1,10 +1,10 @@
-// Module ID: 7765
-// Function ID: 7766
+// Module ID: 7825
+// Function ID: 7826
 // Name: IdCardIcon
-// Dependencies: [19, 21, 712, 4004, 7766, 2]
+// Dependencies: [19, 21, 712, 4004, 7826, 2]
 // Exports: IdCardIcon
 
-// Module 7765 (IdCardIcon)
+// Module 7825 (IdCardIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const IdCardIcon = function IdCardIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7766) /* registerAsset */;
+  obj[0] = require(7826) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

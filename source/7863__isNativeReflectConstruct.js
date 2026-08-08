@@ -1,7 +1,7 @@
 // Module ID: 7863
 // Function ID: 7864
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7864, 7859, 7799]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7850, 7864, 7859]
 
 // Module 7863 (_isNativeReflectConstruct)
 import _classCallCheck from "_classCallCheck";
@@ -11,7 +11,7 @@ import importDefaultResult from "_createClass";
 import "noop";
 import { jsx } from "jsxProd";
 
-const Polygon = importDefault;
+const Circle = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,60 +31,59 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class Polygon {
+class Circle {
   constructor() {
     self = this;
-    items = [...arguments];
-    apply = undefined;
-    tmp = _isNativeReflectConstruct(this, apply);
-    items1 = [...items];
+    tmp = _isNativeReflectConstruct(this, Circle);
     tmp2 = __esModule;
-    obj = __esModule(apply);
+    obj = __esModule(Circle);
     tmp3 = __esModule;
     if (_isNativeReflectConstruct()) {
-      tmp5 = globalThis;
+      tmp7 = globalThis;
       _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
     }
-    tmp3Result = tmp3(self, constructResult);
-    apply = tmp3Result;
-    tmp3Result.setNativeProps = (points) => {
-      points = points.points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        points.d = "M" + _undefined(outer1_1[7])(points) + "z";
-      }
-      if (_undefined.root) {
-        const root = _undefined.root;
-        root.setNativeProps(points);
-      }
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-require("_inherits")(Polygon, require("_isNativeReflectConstruct"));
-let items = [
+require("_inherits")(Circle, require("_isNativeReflectConstruct"));
+const items = [
   {
     key: "render",
     value: function render() {
+      let cx;
+      let cy;
+      let r;
+      const self = this;
       const props = this.props;
-      const points = props.points;
-      const obj = { ref: this.refMethod, d: null };
-      let combined = points;
-      if (points) {
-        const _HermesInternal = HermesInternal;
-        combined = "M" + Polygon(7864)(points) + "z";
-      }
-      obj[1] = combined;
-      const merged = Object.assign(props);
-      return jsx(Polygon(7859), { ref: this.refMethod, d: null });
+      let obj = {};
+      ({ cx, cy, r } = props);
+      const merged = Object.assign(self(7850).extract(this, props));
+      obj.cx = cx;
+      obj.cy = cy;
+      obj.r = r;
+      obj = {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      };
+      const obj2 = self(7850);
+      const merged1 = Object.assign(obj);
+      return jsx(importDefault(7864), {
+        ref(arg0) {
+          return self.refMethod(arg0);
+        }
+      });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Polygon, items);
-importDefaultResultResult.displayName = "Polygon";
-importDefaultResultResult.defaultProps = { points: "" };
+const importDefaultResultResult = importDefaultResult(Circle, items);
+importDefaultResultResult.displayName = "Circle";
+importDefaultResultResult.defaultProps = { cx: 0, cy: 0, r: 0 };
 
 export default importDefaultResultResult;

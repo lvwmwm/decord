@@ -1,10 +1,10 @@
-// Module ID: 12251
-// Function ID: 12252
+// Module ID: 12318
+// Function ID: 12319
 // Name: UserVoiceSettings
-// Dependencies: [19, 17, 4747, 4349, 3929, 676, 505, 21, 4302, 8728, 589, 4486, 9168, 10786, 9095, 5715, 1236, 9126, 10805, 12252, 7649, 12254, 7654, 7733, 4298, 11910, 12143, 7907, 4270, 9153, 9149, 2]
+// Dependencies: [19, 17, 4749, 4351, 3929, 676, 505, 21, 4303, 8788, 589, 4488, 9228, 10852, 9155, 5775, 1236, 9186, 10871, 12319, 7709, 12321, 7714, 7793, 4299, 11976, 12210, 7967, 4271, 9213, 9209, 2]
 // Exports: default
 
-// Module 12251 (UserVoiceSettings)
+// Module 12318 (UserVoiceSettings)
 import "SoundboardSlashIcon";
 import { View } from "MicrophoneSlashIcon";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -194,7 +194,7 @@ function CurrentUserVoiceSettings(channel) {
   ({ user, style } = channel);
   const tmp = callback3();
   let tmp9Result = dependencyMap;
-  let obj = channel(8728);
+  let obj = channel(8788);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = channel(589);
   const items = [_detectH265HardwareDecode];
@@ -229,9 +229,9 @@ function CurrentUserVoiceSettings(channel) {
     obj = { label: null, icon: null, onPress: null };
     obj[0] = stringResult;
     if (stateFromStores) {
-      let MicrophoneIcon = tmp2(9126).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp2(9186).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(10805).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10871).MicrophoneIcon;
     }
     obj1 = { children: null };
     obj[1] = MicrophoneIcon;
@@ -239,11 +239,11 @@ function CurrentUserVoiceSettings(channel) {
       trackUserProfileAction({ action: "MUTE" });
       trackUserProfileAction(outer1_2[14]).toggleSelfMute();
     };
-    obj1[0] = closure_9(tmp2(5715).UserProfileFormRow, obj, "mute");
-    tmp9Result = tmp9(tmp2(5715).UserProfileCardRows, obj1);
+    obj1[0] = closure_9(tmp2(5775).UserProfileFormRow, obj, "mute");
+    tmp9Result = tmp9(tmp2(5775).UserProfileCardRows, obj1);
     obj[3] = tmp9Result;
-    tmp9Result = tmp9(trackUserProfileAction(5715), obj);
-    const tmp6Result = trackUserProfileAction(5715);
+    tmp9Result = tmp9(trackUserProfileAction(5775), obj);
+    const tmp6Result = trackUserProfileAction(5775);
   }
   return tmp8;
 }

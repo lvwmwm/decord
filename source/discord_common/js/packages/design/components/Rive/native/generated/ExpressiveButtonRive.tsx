@@ -1,9 +1,9 @@
-// Module ID: 4096
-// Function ID: 4097
+// Module ID: 4102
+// Function ID: 4103
 // Name: ExpressiveButtonRive
-// Dependencies: [109, 19, 21, 4030, 4097, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4103, 4087, 2]
 
-// Module 4096 (ExpressiveButtonRive)
+// Module 4102 (ExpressiveButtonRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -286,7 +286,7 @@ const forwardRefResult = importAllResult.forwardRef(function ExpressiveButtonRiv
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/ExpressiveButtonRive.tsx");
 

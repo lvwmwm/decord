@@ -1,9 +1,9 @@
-// Module ID: 4385
-// Function ID: 4386
+// Module ID: 4387
+// Function ID: 4388
 // Name: DEFAULT_FRECENCY
 // Dependencies: [12, 3883, 2]
 
-// Module 4385 (DEFAULT_FRECENCY)
+// Module 4387 (DEFAULT_FRECENCY)
 function DEFAULT_FRECENCY(arg0, arg1, numOfRecentUses) {
   return Math.ceil(arg0 * (arg1 / numOfRecentUses.numOfRecentUses));
 }

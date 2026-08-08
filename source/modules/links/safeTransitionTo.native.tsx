@@ -1,10 +1,10 @@
-// Module ID: 5805
-// Function ID: 5806
+// Module ID: 5865
+// Function ID: 5866
 // Name: _safeTransitionTo
-// Dependencies: [5, 1891, 676, 4493, 5806, 1222, 5807, 4641, 1236, 5834, 2384, 5870, 2]
+// Dependencies: [5, 1891, 676, 4495, 5866, 1222, 5867, 4643, 1236, 5894, 2384, 5930, 2]
 // Exports: default
 
-// Module 5805 (_safeTransitionTo)
+// Module 5865 (_safeTransitionTo)
 import transitionTo from "transitionTo";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { Routes } from "ME";
@@ -32,7 +32,7 @@ function _safeTransitionTo() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ function _safeTransitionTo() {
           }
           obj7 = callback2(closure_2[11]);
           if (closure_2 == null) {
-            closure_2 = { guildId: "r" };
+            closure_2 = { guildId: "sa" };
           }
           c5 = 2;
           c6 = 1;

@@ -1,10 +1,10 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 9754
+// Function ID: 9755
 // Name: setsEqual
 // Dependencies: [1921, 1236, 2284, 2]
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getShortDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
 
-// Module 9688 (setsEqual)
+// Module 9754 (setsEqual)
 import set from "messagesProxy";
 
 function setsEqual(set, set2) {

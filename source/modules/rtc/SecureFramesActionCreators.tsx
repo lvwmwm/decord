@@ -1,9 +1,9 @@
-// Module ID: 9152
-// Function ID: 9153
+// Module ID: 9212
+// Function ID: 9213
 // Name: savePersistentCodesEnabled
-// Dependencies: [5, 1218, 1372, 4318, 9151, 676, 709, 9149, 4201, 4640, 1236, 9153, 5128, 2]
+// Dependencies: [5, 1218, 1372, 4319, 9211, 676, 709, 9209, 4202, 4642, 1236, 9213, 5129, 2]
 
-// Module 9152 (savePersistentCodesEnabled)
+// Module 9212 (savePersistentCodesEnabled)
 import ME from "ME";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -42,7 +42,7 @@ function _savePersistentCodesEnabled() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -80,10 +80,10 @@ function _savePersistentCodesEnabled() {
             if (1 === tmp8) {
               c6 = 0;
               let dependencyMap = ensureGuildLoaded;
-              aPIError = new callback(4201).APIError(dependencyMap);
+              aPIError = new callback(4202).APIError(dependencyMap);
               obj1 = aPIError(709);
               obj1.dispatch({ type: "SECURE_FRAMES_SETTINGS_UPDATE", persistentCodesEnabled: false });
-              obj2 = aPIError(4640);
+              obj2 = aPIError(4642);
               const obj3 = { title: null, body: null };
               const intl = callback(1236).intl;
               obj3[0] = intl.string(callback(1236).t.R0RpRX);
@@ -150,7 +150,7 @@ function _updatePersistentCodesEnabled() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -191,7 +191,7 @@ function _updatePersistentCodesEnabled() {
               })();
               dependencyMap = tmp19;
               if (null != tmp19) {
-                let obj2 = v0(9153);
+                let obj2 = v0(9213);
                 const intl = callback(1236).intl;
                 const string = intl.string;
                 const t = callback(1236).t;
@@ -227,7 +227,7 @@ function _updatePersistentCodesEnabled() {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "T", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -262,7 +262,7 @@ function _updatePersistentCodesEnabled() {
                         return obj;
                       } else {
                         c0 = 3;
-                        return { value: "T", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp7) {
                       c0 = tmp;
@@ -294,7 +294,7 @@ function _updatePersistentCodesEnabled() {
             throw arg1;
           } else if (arg0 !== 2) {
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           } else {
             v0 = 3;
             obj = { value: null, done: true };

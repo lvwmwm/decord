@@ -1,10 +1,10 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12506
+// Function ID: 12507
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1975, 12437, 6960, 676, 687, 709, 4539, 4202, 2]
+// Dependencies: [5, 1975, 12504, 7020, 676, 687, 709, 4541, 4203, 2]
 // Exports: maybeFetchCollectionsForApplication, maybeFetchCollectionsWithProducts
 
-// Module 12439 (_maybeFetchCollectionsWithProducts)
+// Module 12506 (_maybeFetchCollectionsWithProducts)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";
@@ -33,7 +33,7 @@ function _maybeFetchCollectionsWithProducts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ function _maybeFetchCollectionsWithProducts() {
               body = undefined;
               body = 1;
               fromServer = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -202,7 +202,7 @@ function _maybeFetchCollectionsForApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ function _maybeFetchCollectionsForApplication() {
               let body;
               store = 1;
               fromServer = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -285,7 +285,7 @@ function _maybeFetchCollectionsForApplication() {
                           }
                         }
                         fromServer = 3;
-                        return { value: "T", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     }
                     locale = 1;

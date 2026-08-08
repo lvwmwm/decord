@@ -1,10 +1,10 @@
-// Module ID: 5876
-// Function ID: 5877
+// Module ID: 5936
+// Function ID: 5937
 // Name: stopLurkingAll
-// Dependencies: [5, 4373, 3930, 676, 709, 530, 1351, 2]
+// Dependencies: [5, 4375, 3930, 676, 709, 530, 1351, 2]
 // Exports: stopLurking
 
-// Module 5876 (stopLurkingAll)
+// Module 5936 (stopLurkingAll)
 import sendRequest from "sendRequest";
 import createRTCConnection from "createRTCConnection";
 import initialize from "initialize";
@@ -39,7 +39,7 @@ function _stopLurkingAll() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ function _stopLurkingAll() {
                     let c6 = 0;
                     let c7 = 0;
                     let c5 = 0;
-                    return (/* F119623 */ function*() { ... })();
+                    return (/* F119966 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;
@@ -103,7 +103,7 @@ function _stopLurkingAll() {
             return obj;
           }
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp13) {
           v0 = tmp;
           throw tmp13;
@@ -138,7 +138,7 @@ function _stopLurking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -165,7 +165,7 @@ function _stopLurking() {
               table = undefined;
               c3 = 1;
               guildId = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp4) {
@@ -199,7 +199,7 @@ function _stopLurking() {
               return obj;
             }
             guildId = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           guildId = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 11967
-// Function ID: 11968
+// Module ID: 12033
+// Function ID: 12034
 // Name: setStoredContacts
 // Dependencies: [595, 705, 709, 644, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 11967 (setStoredContacts)
+// Module 12033 (setStoredContacts)
 import { Storage } from "Storage";
 import keys from "keys";
 import { Storage as Storage2 } from "Storage";

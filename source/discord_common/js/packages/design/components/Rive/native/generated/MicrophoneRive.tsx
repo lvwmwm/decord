@@ -1,9 +1,9 @@
-// Module ID: 4100
-// Function ID: 4101
+// Module ID: 4106
+// Function ID: 4107
 // Name: MicrophoneRive
-// Dependencies: [109, 19, 21, 4030, 4101, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4107, 4087, 2]
 
-// Module 4100 (MicrophoneRive)
+// Module 4106 (MicrophoneRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -118,7 +118,7 @@ const forwardRefResult = importAllResult.forwardRef(function MicrophoneRiveWithB
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/MicrophoneRive.tsx");
 

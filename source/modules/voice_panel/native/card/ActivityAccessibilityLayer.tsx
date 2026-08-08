@@ -1,10 +1,10 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16210
+// Function ID: 16211
 // Name: FocusedActivityAccessibilityLayer
-// Dependencies: [32, 19, 17, 11579, 21, 4302, 4708, 1236, 4695, 4698, 2]
+// Dependencies: [32, 19, 17, 11645, 21, 4303, 4710, 1236, 4697, 4700, 2]
 // Exports: default
 
-// Module 16135 (FocusedActivityAccessibilityLayer)
+// Module 16210 (FocusedActivityAccessibilityLayer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -97,7 +97,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/voi
 
 export default function ActivityAccessibilityLayer(isActivityFocused) {
   const merged = Object.assign(isActivityFocused, Object.create(null));
-  let obj = require(4698) /* SCREEN_READER_ENABLED_GETTER */;
+  let obj = require(4700) /* SCREEN_READER_ENABLED_GETTER */;
   if (IS_IOS) {
     if (obj.useIsScreenReaderEnabled()) {
       if (isActivityFocused.isActivityFocused) {

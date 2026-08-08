@@ -1,10 +1,10 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12739
+// Function ID: 12740
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getBogoPromotionGateEnabled, useBogoPromotionGateEnabled
 
-// Module 12669 (apexExperiment)
+// Module 12739 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-bogo-promotion-gate-v2", kind: "user", defaultConfig: false, variations: { 1: true } });

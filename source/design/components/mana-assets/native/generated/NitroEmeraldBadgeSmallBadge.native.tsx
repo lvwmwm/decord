@@ -1,10 +1,10 @@
-// Module ID: 6482
-// Function ID: 6483
+// Module ID: 6542
+// Function ID: 6543
 // Name: NitroEmeraldBadgeSmallBadge
-// Dependencies: [21, 5267, 6483, 2]
+// Dependencies: [21, 5268, 6543, 2]
 // Exports: NitroEmeraldBadgeSmallBadge
 
-// Module 6482 (NitroEmeraldBadgeSmallBadge)
+// Module 6542 (NitroEmeraldBadgeSmallBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/NitroEmeraldBadgeSmallBadge.native.tsx");
@@ -28,7 +28,7 @@ export const NitroEmeraldBadgeSmallBadge = function NitroEmeraldBadgeSmallBadge(
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6483);
+  obj[0] = importDefault(6543);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const NitroEmeraldBadgeSmallBadge = function NitroEmeraldBadgeSmallBadge(
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

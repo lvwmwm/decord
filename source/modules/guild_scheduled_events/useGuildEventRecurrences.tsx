@@ -1,10 +1,10 @@
-// Module ID: 8988
-// Function ID: 8989
+// Module ID: 9048
+// Function ID: 9049
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 6925, 589, 8989, 8882, 12, 11, 687, 8893, 2]
+// Dependencies: [32, 19, 6985, 589, 9049, 8942, 12, 11, 687, 8953, 2]
 // Exports: default
 
-// Module 8988 (useGuildEventRecurrences)
+// Module 9048 (useGuildEventRecurrences)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import scheduledEventSort from "scheduledEventSort";
@@ -19,12 +19,12 @@ export default function useGuildEventRecurrences(arg0, arg1, byWeekday) {
   let obj = _require(589);
   let items = [first];
   const stateFromStores = obj.useStateFromStores(items, () => first.getGuildScheduledEvent(closure_0));
-  const tmp4 = importDefault(8989)(byWeekday);
+  const tmp4 = importDefault(9049)(byWeekday);
   let noop = tmp4;
   if (null != byWeekday) {
     if (null != stateFromStores) {
-      let tmpResult = tmp(8882);
-      tmpResult = tmp(8882);
+      let tmpResult = tmp(8942);
+      tmpResult = tmp(8942);
       let _Date = Date;
       let rRule = tmpResult.getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);

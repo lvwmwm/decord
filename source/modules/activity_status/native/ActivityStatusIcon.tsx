@@ -1,10 +1,10 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9643
+// Function ID: 9644
 // Name: ActivityStatusIcon
-// Dependencies: [19, 21, 4302, 2]
+// Dependencies: [19, 21, 4303, 2]
 // Exports: default
 
-// Module 9578 (ActivityStatusIcon)
+// Module 9643 (ActivityStatusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

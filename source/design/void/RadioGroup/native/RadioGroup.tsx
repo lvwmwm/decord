@@ -1,9 +1,9 @@
-// Module ID: 13276
-// Function ID: 13277
+// Module ID: 13346
+// Function ID: 13347
 // Name: RadioEmpty
-// Dependencies: [19, 17, 505, 21, 4302, 712, 4019, 5366, 13277, 2]
+// Dependencies: [19, 17, 505, 21, 4303, 712, 4019, 5367, 13347, 2]
 
-// Module 13276 (RadioEmpty)
+// Module 13346 (RadioEmpty)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { NOOP } from "sum";
@@ -124,7 +124,7 @@ function RadioBar(arg0) {
     leading = option.leading;
   }
   obj[8] = leading;
-  return callback(importDefault(5366), obj);
+  return callback(importDefault(5367), obj);
 }
 class RadioItem {
   constructor(arg0) {

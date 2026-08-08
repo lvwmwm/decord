@@ -1,10 +1,10 @@
-// Module ID: 4633
-// Function ID: 4634
+// Module ID: 4635
+// Function ID: 4636
 // Name: transformMessagePoll
 // Dependencies: [3883, 2]
 // Exports: default
 
-// Module 4633 (transformMessagePoll)
+// Module 4635 (transformMessagePoll)
 const result = require("set").fileFinishedImporting("modules/polls/transformMessagPoll.tsx");
 
 export default function transformMessagePoll(expiry) {

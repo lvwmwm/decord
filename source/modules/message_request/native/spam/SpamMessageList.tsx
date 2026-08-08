@@ -1,10 +1,10 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15955
+// Function ID: 15956
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4302, 712, 1236, 11744, 4002, 8385, 4310, 4507, 11736, 698, 4844, 15865, 1297, 9811, 14098, 7907, 1609, 15874, 15881, 15872, 4728, 7001, 7006, 15875, 500, 4298, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 11810, 4002, 8445, 4311, 4509, 11802, 698, 4846, 15940, 1297, 9877, 14168, 7967, 1609, 15949, 15956, 15947, 4730, 7061, 7066, 15950, 500, 4299, 2]
 // Exports: default
 
-// Module 15880 (PendingSpamMessageRequestRow)
+// Module 15955 (PendingSpamMessageRequestRow)
 import Form from "Form";
 import get_ActivityIndicator from "registerAsset";
 import { AnalyticEvents } from "ME";
@@ -205,23 +205,23 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = createCacheKey();
   importDefault = tmp;
   const bottom = importDefault(1609)().bottom;
-  let obj = goToMessageRequestPreview(15874);
+  let obj = goToMessageRequestPreview(15949);
   dependencyMap = obj.useSpamMessageRequestCount();
-  arr = importDefault(15881)();
-  let obj1 = goToMessageRequestPreview(15872);
+  arr = importDefault(15956)();
+  let obj1 = goToMessageRequestPreview(15947);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     let obj = _undefined(698);
     obj = { num_spam_message_requests: dependencyMap };
     obj.track(outer1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(7006).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    _undefined(7001).increment(obj);
+    obj = { name: goToMessageRequestPreview(7066).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    _undefined(7061).increment(obj);
   });
   if (0 === arr.length) {
     obj = { bodyText: null };
     let intl = tmp4(1236).intl;
     obj[0] = intl.string(tmp4(1236).t.hasFPQ);
-    return callback(tmp2(15875), obj);
+    return callback(tmp2(15950), obj);
   } else {
     const items = ["header-section"];
     HermesBuiltin.arraySpread(arr, 1);
@@ -249,7 +249,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
         obj = { count: null };
         obj[0] = arr.length;
         obj[2] = intl.format(goToMessageRequestPreview(1236).t.aNh5Kf, obj);
-        obj[1] = outer1_8(goToMessageRequestPreview(4298).Text, obj);
+        obj[1] = outer1_8(goToMessageRequestPreview(4299).Text, obj);
         let tmp11Result = outer1_8(outer1_5, obj);
       } else {
         const obj1 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };

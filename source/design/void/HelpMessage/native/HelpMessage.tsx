@@ -1,10 +1,10 @@
-// Module ID: 13273
-// Function ID: 13274
+// Module ID: 13343
+// Function ID: 13344
 // Name: HelpMessage
-// Dependencies: [19, 17, 21, 4302, 712, 688, 7733, 4258, 5936, 4263, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 688, 7793, 4259, 5996, 4264, 4299, 2]
 // Exports: default
 
-// Module 13273 (HelpMessage)
+// Module 13343 (HelpMessage)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -81,21 +81,21 @@ export default function HelpMessage(children) {
   if (int2hslRaw.WARNING === messageType) {
     obj = { color: null };
     obj[0] = importDefault(712).unsafe_rawColors.YELLOW_300;
-    let tmp7 = callback(require(7733) /* CircleErrorIcon */.CircleErrorIcon, obj);
+    let tmp7 = callback(require(7793) /* CircleErrorIcon */.CircleErrorIcon, obj);
   } else if (tmp6.INFO === messageType) {
     const obj1 = { color: null };
     obj1[0] = importDefault(712).unsafe_rawColors.BLUE_345;
-    tmp7 = callback(require(4258) /* CircleInformationIcon */.CircleInformationIcon, obj1);
+    tmp7 = callback(require(4259) /* CircleInformationIcon */.CircleInformationIcon, obj1);
   } else if (tmp6.ERROR === messageType) {
     const obj2 = { color: null };
     obj2[0] = importDefault(712).unsafe_rawColors.RED_400;
-    tmp7 = callback(require(5936) /* CircleXIcon */.CircleXIcon, obj2);
+    tmp7 = callback(require(5996) /* CircleXIcon */.CircleXIcon, obj2);
   } else if (tmp6.SUCCESS === messageType) {
     const obj3 = { color: null };
     obj3[0] = importDefault(712).unsafe_rawColors.GREEN_400;
-    tmp7 = callback(require(4263) /* CircleCheckIcon */.CircleCheckIcon, obj3);
+    tmp7 = callback(require(4264) /* CircleCheckIcon */.CircleCheckIcon, obj3);
   }
-  const items1 = [tmp7, callback(require(4298) /* Text */.Text, { style: tmp3.content, color: str, variant: textVariant, children: children.children })];
+  const items1 = [tmp7, callback(require(4299) /* Text */.Text, { style: tmp3.content, color: str, variant: textVariant, children: children.children })];
   obj[1] = items1;
   const items2 = [closure_5(View, obj), children.button];
   obj[1] = items2;

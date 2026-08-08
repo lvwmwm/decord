@@ -1,9 +1,9 @@
-// Module ID: 16818
-// Function ID: 16819
+// Module ID: 16895
+// Function ID: 16896
 // Name: syncYYTextReplacementExperiment
-// Dependencies: [17, 1975, 1218, 500, 16819, 4990, 16820, 698, 16821, 530, 5260, 2]
+// Dependencies: [17, 1975, 1218, 500, 16896, 4992, 16897, 698, 16898, 530, 5261, 2]
 
-// Module 16818 (syncYYTextReplacementExperiment)
+// Module 16895 (syncYYTextReplacementExperiment)
 import { NativeModules } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
@@ -15,8 +15,8 @@ function syncYYTextReplacementExperiment() {
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        const result = setShouldEnableYYTextReplacement(require(16819) /* shouldEnableYYTextReplacement */.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
-        const tmpResult = require(16819) /* shouldEnableYYTextReplacement */;
+        const result = setShouldEnableYYTextReplacement(require(16896) /* shouldEnableYYTextReplacement */.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
+        const tmpResult = require(16896) /* shouldEnableYYTextReplacement */;
       }
     }
   }
@@ -27,7 +27,7 @@ function updateIOSExperiments() {
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        let tmpResult = tmp(16819);
+        let tmpResult = tmp(16896);
         const result = setShouldEnableYYTextReplacement(tmpResult.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
       }
     }
@@ -36,7 +36,7 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      tmpResult = tmp(4990);
+      tmpResult = tmp(4992);
       const result1 = setShouldFixPushNotificationRawPayload(tmpResult.isIOSPushNotificationRawPayloadFixExperimentEnabled());
     }
   }
@@ -60,7 +60,7 @@ function updateAndroidExperiments() {
   obj[3] = locale.locale;
   const obj2 = importDefault(698);
   const obj3 = store;
-  const config = importDefault(16821).getConfig({ location: "NativeExperimentBridgeManager" });
+  const config = importDefault(16898).getConfig({ location: "NativeExperimentBridgeManager" });
   const NativeCacheModule = NativeModules.NativeCacheModule;
   if (NativeCacheModule != null) {
     const _JSON = JSON;

@@ -1,10 +1,10 @@
-// Module ID: 7584
-// Function ID: 7585
+// Module ID: 7644
+// Function ID: 7645
 // Name: fetchActivePromotions
-// Dependencies: [5, 1975, 7285, 7284, 1905, 676, 709, 7585, 530, 6802, 1355, 1337, 7586, 2]
+// Dependencies: [5, 1975, 7345, 7344, 1905, 676, 709, 7645, 530, 6862, 1355, 1337, 7646, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 7584 (fetchActivePromotions)
+// Module 7644 (fetchActivePromotions)
 import ME from "ME";
 import _getSystemLocale from "_getSystemLocale";
 import createFromServer from "createFromServer";
@@ -143,7 +143,7 @@ function _fetchActiveBogoPromotion() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -254,7 +254,7 @@ function _fetchClaimedOutboundPromotionCodes() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1.body;
-      callback = body.map(callback(7586).claimedOutboundPromotionCodeFromServer);
+      callback = body.map(callback(7646).claimedOutboundPromotionCodeFromServer);
       const obj = callback2(709);
       const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
       obj4[1] = callback;

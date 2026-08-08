@@ -1,10 +1,10 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14146
+// Function ID: 14147
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4302, 712, 8218, 14077, 5795, 14078, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 8278, 14147, 5855, 14148, 4299, 2]
 // Exports: default
 
-// Module 14076 (FamilyCenterActivityPurchaseRow)
+// Module 14146 (FamilyCenterActivityPurchaseRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,8 +32,8 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
   ({ skuId, subscriptionPlanId } = arg0);
   ({ total, currency } = arg0);
   const tmp = createCacheKey();
-  let product = importDefault(8218)(skuId).product;
-  let obj = require(14077) /* getCollectibleTypeName */;
+  let product = importDefault(8278)(skuId).product;
+  let obj = require(14147) /* getCollectibleTypeName */;
   let tmp6 = product;
   if (product == null) {
     tmp6 = null;
@@ -51,7 +51,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(5795);
+    const tmp5Result = tmp5(5855);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -60,22 +60,22 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj[0] = tmp.container;
     obj = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj[0] = displayName;
-    const formatPriceResult = tmp5(5795).formatPrice(total, currency);
+    const formatPriceResult = tmp5(5855).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }
     obj[1] = product;
     obj[2] = isSubscription;
     obj[3] = subscriptionPlanId;
-    const items = [closure_4(tmp2(14078), obj), ];
+    const items = [closure_4(tmp2(14148), obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.textContainer;
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     obj2[4] = combined;
-    const items1 = [closure_4(tmp5(4298).Text, obj2), ];
+    const items1 = [closure_4(tmp5(4299).Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj3[2] = formatPriceResult;
-    items1[1] = closure_4(tmp5(4298).Text, obj3);
+    items1[1] = closure_4(tmp5(4299).Text, obj3);
     obj1[1] = items1;
     items[1] = closure_5(View, obj1);
     obj[1] = items;

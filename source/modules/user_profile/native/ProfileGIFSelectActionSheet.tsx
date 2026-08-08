@@ -1,14 +1,14 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13919
+// Function ID: 13920
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4302, 712, 4877, 8215, 8208, 8205, 8207, 4270, 5396, 5395, 1236, 7644, 9866, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4303, 712, 4879, 8275, 8268, 8265, 8267, 4271, 5397, 5396, 1236, 7704, 9932, 2]
 // Exports: default
 
-// Module 13849 (ProfileGIFSelectActionSheet)
+// Module 13919 (ProfileGIFSelectActionSheet)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "createCacheKey";
 import noop from "noop";
-import { View } from "module_9866";
+import { View } from "module_9932";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
 
@@ -47,7 +47,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -199,13 +199,13 @@ export default function ProfileGIFSelectActionSheet(arg0) {
   obj = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["xsC+/y"]);
-  obj[1] = callback(require(7644) /* NitroWheelIcon */.NitroWheelIcon, {});
+  obj[1] = callback(require(7704) /* NitroWheelIcon */.NitroWheelIcon, {});
   ({ titleWrapper: obj2[2], titleContainer: obj2[3] } = tmp);
-  let items = [callback(require(5395) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
-  obj = { style: tmp.gifPicker, children: callback(importDefault(9866), obj1) };
+  let items = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
+  obj = { style: tmp.gifPicker, children: callback(importDefault(9932), obj1) };
   items[1] = callback(View, obj);
   obj[3] = items;
-  return callback2(require(5396) /* Background */.BottomSheet, obj);
+  return callback2(require(5397) /* Background */.BottomSheet, obj);
 };
 export const ProfileAssetType = obj1;
 export const GIFSelectionContext = obj2;

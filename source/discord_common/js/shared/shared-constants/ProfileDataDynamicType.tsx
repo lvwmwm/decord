@@ -1,9 +1,9 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12438
+// Function ID: 12439
 // Name: ProfileDataDynamicType
 // Dependencies: [2]
 
-// Module 12371 (ProfileDataDynamicType)
+// Module 12438 (ProfileDataDynamicType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileDataDynamicType.tsx");
 
 export const ProfileDataDynamicType = { STRING: 1, [1]: "STRING", NUMBER: 2, [2]: "NUMBER", MEDIA: 3, [3]: "MEDIA" };

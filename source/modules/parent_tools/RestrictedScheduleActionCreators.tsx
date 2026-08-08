@@ -1,10 +1,10 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 14181
+// Function ID: 14182
 // Name: _addRestrictedScheduleRule
 // Dependencies: [5, 676, 530, 709, 2]
 // Exports: addRestrictedScheduleRule, deleteRestrictedScheduleRule, updateRestrictedScheduleRule
 
-// Module 14111 (_addRestrictedScheduleRule)
+// Module 14181 (_addRestrictedScheduleRule)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -97,7 +97,7 @@ function _deleteRestrictedScheduleRule() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ function _deleteRestrictedScheduleRule() {
             obj4[2] = body;
             obj.dispatch(obj4);
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c5 = tmp;

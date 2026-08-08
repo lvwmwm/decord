@@ -1,12 +1,12 @@
-// Module ID: 16453
-// Function ID: 16454
-// Dependencies: [5, 16454, 2]
+// Module ID: 16530
+// Function ID: 16531
+// Dependencies: [5, 16531, 2]
 
-// Module 16453
+// Module 16530
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
-let obj = { [arg1(16454).AgeSignalsVerificationStatus.VERIFIED]: "VERIFIED", [arg1(16454).AgeSignalsVerificationStatus.SUPERVISED]: "SUPERVISED", [arg1(16454).AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_PENDING]: "SUPERVISED_APPROVAL_PENDING", [arg1(16454).AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_DENIED]: "SUPERVISED_APPROVAL_DENIED", [arg1(16454).AgeSignalsVerificationStatus.UNKNOWN]: "UNKNOWN", [arg1(16454).AgeSignalsVerificationStatus.DECLARED]: "DECLARED" };
+let obj = { [arg1(16531).AgeSignalsVerificationStatus.VERIFIED]: "VERIFIED", [arg1(16531).AgeSignalsVerificationStatus.SUPERVISED]: "SUPERVISED", [arg1(16531).AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_PENDING]: "SUPERVISED_APPROVAL_PENDING", [arg1(16531).AgeSignalsVerificationStatus.SUPERVISED_APPROVAL_DENIED]: "SUPERVISED_APPROVAL_DENIED", [arg1(16531).AgeSignalsVerificationStatus.UNKNOWN]: "UNKNOWN", [arg1(16531).AgeSignalsVerificationStatus.DECLARED]: "DECLARED" };
 const entries = Object.entries(obj);
 let closure_4 = Object.fromEntries(entries.map((arg0) => {
   let tmp;
@@ -47,7 +47,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

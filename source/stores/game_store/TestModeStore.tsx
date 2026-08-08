@@ -1,9 +1,9 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7590
+// Function ID: 7591
 // Name: reset
-// Dependencies: [1303, 1340, 4337, 589, 3974, 709, 2]
+// Dependencies: [1303, 1340, 4339, 589, 3974, 709, 2]
 
-// Module 7530 (reset)
+// Module 7590 (reset)
 import initialize from "initialize";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import setLibraryApplications from "setLibraryApplications";

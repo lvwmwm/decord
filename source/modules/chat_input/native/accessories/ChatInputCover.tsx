@@ -1,9 +1,9 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11623
+// Function ID: 11624
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 4698, 1607, 2]
+// Dependencies: [19, 17, 21, 4700, 1607, 2]
 
-// Module 11557 (ChatInputCover)
+// Module 11623 (ChatInputCover)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

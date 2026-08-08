@@ -1,10 +1,10 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 11057
+// Function ID: 11058
 // Name: _handleContentLinking
-// Dependencies: [5, 5343, 676, 4507, 5805, 1222, 10253, 2]
+// Dependencies: [5, 5344, 676, 4509, 5865, 1222, 10319, 2]
 // Exports: default
 
-// Module 10991 (_handleContentLinking)
+// Module 11057 (_handleContentLinking)
 import transitionTo from "transitionTo";
 import { Routes } from "ME";
 
@@ -32,7 +32,7 @@ function _handleContentLinking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ function _handleContentLinking() {
               let skipMessageFetch;
               c3 = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -144,7 +144,7 @@ function _handleContentLinking() {
                 obj4.setSelectedSummary(callback2, c4);
               }
               c4 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
             if (safe) {
               obj4 = { navigationReplace: null, openChannel: true, skipMessageFetch: null };

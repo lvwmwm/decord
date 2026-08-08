@@ -1,10 +1,10 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14271
+// Function ID: 14272
 // Name: TranscriptOutlineIcon
-// Dependencies: [19, 21, 712, 4004, 14202, 2]
+// Dependencies: [19, 21, 712, 4004, 14272, 2]
 // Exports: TranscriptOutlineIcon
 
-// Module 14201 (TranscriptOutlineIcon)
+// Module 14271 (TranscriptOutlineIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TranscriptOutlineIcon = function TranscriptOutlineIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14202) /* registerAsset */;
+  obj[0] = require(14272) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

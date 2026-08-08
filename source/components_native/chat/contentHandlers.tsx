@@ -1,9 +1,9 @@
-// Module ID: 10992
-// Function ID: 10993
+// Module ID: 11058
+// Function ID: 11059
 // Name: onTapMention
-// Dependencies: [5, 10990, 9679, 8877, 3998, 10953, 8723, 5688, 4270, 10993, 1988, 11, 3974, 1236, 5696, 4001, 4640, 8674, 2]
+// Dependencies: [5, 11056, 9745, 8937, 3998, 11019, 8783, 5748, 4271, 11059, 1988, 11, 3974, 1236, 5756, 4001, 4642, 8734, 2]
 
-// Module 10992 (onTapMention)
+// Module 11058 (onTapMention)
 import importDefaultResult from "castNativeSyntheticEventData";
 
 const require = arg1;
@@ -17,7 +17,7 @@ let obj = {
     if (tmp) {
       const obj = { urlString: null };
       obj[0] = url;
-      importDefault(10990)(obj);
+      importDefault(11056)(obj);
     }
   },
   onTapAttachmentLink: null,
@@ -34,7 +34,7 @@ let closure_4 = importDefaultResult((arg0) => {
   const iter = (function*(arg0) {
     let callback = tmp2;
     attachmentUrl = attachmentUrl.nativeEvent.data.attachmentUrl;
-    yield "PX_8";
+    yield "ct";
     if (1 === tmp5) {
       if (arg0 === 1) {
         let c4 = 3;
@@ -47,7 +47,7 @@ let closure_4 = importDefaultResult((arg0) => {
       } else {
         if (null != attachmentUrl) {
           if ("" !== attachmentUrl) {
-            const obj3 = attachmentUrl(9679);
+            const obj3 = attachmentUrl(9745);
             let c3 = 2;
             c4 = 1;
             const obj2 = { value: null, done: false };
@@ -62,7 +62,7 @@ let closure_4 = importDefaultResult((arg0) => {
       throw arg1;
     } else if (arg0 !== 2) {
       callback = arg1;
-      const obj = callback(8877);
+      const obj = callback(8937);
       obj.trackLinkClicked(callback);
       obj1 = callback(3998);
       obj1.openURL(callback);
@@ -89,7 +89,7 @@ let closure_3 = importDefaultResult((arg0) => {
   const iter = (function*(arg0) {
     let callback = tmp2;
     attachmentUrl = attachmentUrl.nativeEvent.data.attachmentUrl;
-    yield "PX_8";
+    yield "ct";
     if (1 === tmp5) {
       if (arg0 === 1) {
         let c4 = 3;
@@ -102,7 +102,7 @@ let closure_3 = importDefaultResult((arg0) => {
       } else {
         if (null != attachmentUrl) {
           if ("" !== attachmentUrl) {
-            let obj2 = attachmentUrl(9679);
+            let obj2 = attachmentUrl(9745);
             let c3 = 2;
             c4 = 1;
             obj2 = { value: null, done: false };
@@ -119,7 +119,7 @@ let closure_3 = importDefaultResult((arg0) => {
       callback = arg1;
       const obj = { urlString: null };
       obj[0] = callback;
-      callback(10990)(obj);
+      callback(11056)(obj);
     }
     return arg1;
   })();
@@ -143,7 +143,7 @@ obj[3] = function onTapMention(closure_0) {
   let roleId;
   let roleName;
   let userId;
-  let obj = parsedUserId(10953);
+  let obj = parsedUserId(11019);
   const nativeSyntheticEventData = obj.getNativeSyntheticEventData(closure_0);
   ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
   ({ roleId, guildId } = nativeSyntheticEventData);
@@ -151,10 +151,10 @@ obj[3] = function onTapMention(closure_0) {
     obj = { userId: null, channelId: null, sourceAnalyticsLocations: null };
     obj[0] = userId;
     obj[1] = channelId;
-    const items = [importDefault(5688).USER_MENTION];
+    const items = [importDefault(5748).USER_MENTION];
     obj[2] = items;
-    importDefault(8723)(obj);
-    const tmp15 = importDefault(8723);
+    importDefault(8783)(obj);
+    const tmp15 = importDefault(8783);
   } else {
     if (null != roleId) {
       if (null != guildId) {
@@ -162,16 +162,16 @@ obj[3] = function onTapMention(closure_0) {
         obj[0] = guildId;
         obj[1] = roleId;
         obj[2] = channelId;
-        importDefault(4270).openLazy(tmp(1988)(10993, tmp2.paths), "RoleMembersActionSheet", obj);
-        const obj9 = importDefault(4270);
+        importDefault(4271).openLazy(tmp(1988)(11059, tmp2.paths), "RoleMembersActionSheet", obj);
+        const obj9 = importDefault(4271);
       }
     }
     if ("@everyone" === roleName) {
       if (null != guildId) {
         const obj1 = { guildId: null, roleId: null, channelId: null };
         obj1[0] = guildId;
-        const obj6 = importDefault(4270);
-        const tmp10 = tmp(1988)(10993, tmp2.paths);
+        const obj6 = importDefault(4271);
+        const tmp10 = tmp(1988)(11059, tmp2.paths);
         obj1[1] = importDefault(11).castGuildIdAsEveryoneGuildRoleId(guildId);
         obj1[2] = channelId;
         obj6.openLazy(tmp10, "RoleMembersActionSheet", obj1);
@@ -192,7 +192,7 @@ obj[3] = function onTapMention(closure_0) {
           };
           let obj4 = obj2;
         }
-        let obj3 = importDefault(4640);
+        let obj3 = importDefault(4642);
         obj3 = { title: null, body: null, confirmText: null, isDismissable: true };
         const intl2 = tmp(1236).intl;
         obj3[0] = intl2.string(tmp(1236).t.r0DLNm);
@@ -213,14 +213,14 @@ obj[4] = function onTapTimestamp(nativeEvent) {
 obj[5] = function onTapInlineCode(nativeEvent) {
   const node = nativeEvent.nativeEvent.node;
   if (tmp) {
-    require(5696) /* _copy */.copy(node.content);
-    const obj = require(5696) /* _copy */;
+    require(5756) /* _copy */.copy(node.content);
+    const obj = require(5756) /* _copy */;
     const result = require(4001) /* presentAddedFriendToast */.presentCopiedToClipboard();
     const obj2 = require(4001) /* presentAddedFriendToast */;
   }
 };
 obj[6] = function onTapEmoji(emojiNode) {
-  importDefault(4270).openLazy(require(1988) /* asyncRequireImpl */(8674, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
+  importDefault(4271).openLazy(require(1988) /* asyncRequireImpl */(8734, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: emojiNode.nativeEvent.node });
 };
 let result = require("shouldRefreshAttachmentUrl").fileFinishedImporting("components_native/chat/contentHandlers.tsx");
 

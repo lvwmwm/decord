@@ -1,10 +1,10 @@
-// Module ID: 12685
-// Function ID: 12686
+// Module ID: 12755
+// Function ID: 12756
 // Name: BetaPill
-// Dependencies: [17, 6836, 21, 4302, 712, 4298, 1236, 12686, 1297, 4723, 4145, 8566, 2]
+// Dependencies: [17, 6896, 21, 4303, 712, 4299, 1236, 12756, 1297, 4725, 4151, 8626, 2]
 // Exports: default
 
-// Module 12685 (BetaPill)
+// Module 12755 (BetaPill)
 import { View } from "get ActivityIndicator";
 import { Gradients } from "items";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
   let subheaderString;
   ({ style, premiumGroupRole } = arg0);
   const tmp = callback3();
-  const tmp4 = importDefault(12686)(premiumGroupRole, false);
+  const tmp4 = importDefault(12756)(premiumGroupRole, false);
   if (null == tmp4) {
     return null;
   } else {
@@ -59,28 +59,28 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj = { start: null, end: null, colors: null, locations: null, style: null, children: null };
     obj[0] = { x: 0, y: 0 };
     obj[1] = { x: 1, y: 0 };
-    let obj2 = require(4145) /* hexToRgba */;
+    let obj2 = require(4151) /* hexToRgba */;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp2Result = tmp2(4723);
-    items[1] = require(4145) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
-    const obj4 = require(4145) /* hexToRgba */;
-    items[2] = require(4145) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
+    const tmp2Result = tmp2(4725);
+    items[1] = require(4151) /* hexToRgba */.hexWithOpacity("#B845C1", 0.15);
+    const obj4 = require(4151) /* hexToRgba */;
+    items[2] = require(4151) /* hexToRgba */.hexWithOpacity("#AB5D8A", 0.15);
     obj[2] = items;
     obj[3] = [0, 0.4996, 0.9593];
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(8566), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(8626), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
     const obj1 = { variant: "text-sm/normal", style: null, children: null };
     obj1[1] = tmp.title;
     obj1[2] = subheaderString;
-    items2[1] = callback(require(4298) /* Text */.Text, obj1);
+    items2[1] = callback(require(4299) /* Text */.Text, obj1);
     obj2 = { variant: "text-sm/normal", style: null, children: null };
     obj2[1] = tmp.description;
     obj2[2] = bodyString;
-    items2[2] = callback(require(4298) /* Text */.Text, obj2);
+    items2[2] = callback(require(4299) /* Text */.Text, obj2);
     obj[5] = items2;
     obj[5] = callback2(tmp2Result, obj);
     return callback(require(1297) /* Button */.GradientBorder, obj);

@@ -1,10 +1,10 @@
-// Module ID: 4161
-// Function ID: 4162
+// Module ID: 4167
+// Function ID: 4168
 // Name: set
-// Dependencies: [19, 4162, 2]
+// Dependencies: [19, 4036, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 4161 (set)
+// Module 4167 (set)
 import noop from "noop";
 import set from "set";
 

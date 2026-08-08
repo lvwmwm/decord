@@ -1,10 +1,10 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9353
+// Function ID: 9354
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1903, 8725, 21, 4302, 712, 589, 1930, 4270, 8723, 5688, 9289, 5396, 9290, 4298, 1236, 5149, 4712, 2]
+// Dependencies: [32, 19, 17, 1903, 8785, 21, 4303, 712, 589, 1930, 4271, 8783, 5748, 9354, 5397, 9355, 4299, 1236, 5150, 4714, 2]
 // Exports: default
 
-// Module 9288 (WishlistNUXAddedItemActionSheet)
+// Module 9353 (WishlistNUXAddedItemActionSheet)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import { View } from "getSystemLocale";

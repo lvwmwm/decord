@@ -1,10 +1,10 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12058
+// Function ID: 12059
 // Name: _startContactSyncForDiscoverability
-// Dependencies: [5, 11965, 4996, 1903, 11993, 676, 8447, 709, 4507, 11994, 1988, 12031, 12034, 12035, 691, 11968, 11972, 2]
+// Dependencies: [5, 12031, 4998, 1903, 12059, 676, 8507, 709, 4509, 12060, 1988, 12097, 12100, 12101, 691, 12034, 12038, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 11992 (_startContactSyncForDiscoverability)
+// Module 12058 (_startContactSyncForDiscoverability)
 import ME from "ME";
 import ContactSyncModes from "ContactSyncModes";
 import set from "set";
@@ -36,7 +36,7 @@ function _startContactSyncForDiscoverability() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,14 +58,14 @@ function _startContactSyncForDiscoverability() {
                 phone = currentUser.phone;
               }
               const localAccount = outer1_8.getLocalAccount(outer1_11.CONTACTS);
-              callback(11968);
+              callback(12034);
               if (null == phone) {
                 const _Error = Error;
                 const error = new Error("Cannot start contact sync without a phone number");
                 throw error;
               } else {
                 outer1_6(tmp31);
-                let obj4 = outer1_1(11972);
+                let obj4 = outer1_1(12038);
                 let obj1 = { enabled: null, name: null };
                 obj1[0] = tmp15;
                 obj1[1] = tmp31;
@@ -86,7 +86,7 @@ function _startContactSyncForDiscoverability() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(11968);
+              obj1 = callback(12034);
               dependencyMap = 2;
               c3 = 1;
               obj4 = { value: null, done: false };
@@ -103,7 +103,7 @@ function _startContactSyncForDiscoverability() {
             return obj;
           } else {
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           c3 = tmp;
@@ -143,7 +143,7 @@ export const previousOnboardingStep = function previousOnboardingStep() {
 };
 export const transitionToNUFGuildTemplatesModal = function transitionToNUFGuildTemplatesModal(SLIDE_IN) {
   let closure_0 = SLIDE_IN;
-  importDefault(4507).pushLazy(callback(function*() {
+  importDefault(4509).pushLazy(callback(function*() {
     let closure_1 = tmp5;
     let closure_0 = tmp2;
     yield outer1_0(paths[10])(paths[9], paths.paths);
@@ -159,12 +159,12 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(12031);
+  let obj = importDefault(12097);
   obj = {
     onCloseExtra(arg0) {
       if (arg0) {
-        const result = callback(12034).setNewUserFlowCompleted();
-        const obj2 = callback(12034);
+        const result = callback(12100).setNewUserFlowCompleted();
+        const obj2 = callback(12100);
       } else {
         callback2(709).dispatch({ type: "ONBOARDING_STEP" });
         const obj = callback2(709);
@@ -175,7 +175,7 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
   obj.open(obj, SLIDE_IN);
 };
 export const openDiscoverabilityModal = function openDiscoverabilityModal() {
-  importDefault(4507).pushLazy(callback(function*() {
+  importDefault(4509).pushLazy(callback(function*() {
     let closure_1 = tmp5;
     let callback = tmp2;
     yield outer1_0(paths[10])(paths[13], paths.paths);
@@ -187,7 +187,7 @@ export const openDiscoverabilityModal = function openDiscoverabilityModal() {
   }), {}, closure_10);
 };
 export const closeDiscoverabilityModal = function closeDiscoverabilityModal(skip) {
-  let obj = importDefault(4507);
+  let obj = importDefault(4509);
   obj.popWithKey(closure_10);
   obj = { type: "ONBOARDING_STEP", skip };
   importDefault(709).dispatch(obj);

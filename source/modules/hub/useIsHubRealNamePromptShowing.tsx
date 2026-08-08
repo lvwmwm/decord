@@ -1,10 +1,10 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 12005
+// Function ID: 12006
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: [19, 11940, 1971, 1891, 1903, 676, 11941, 589, 11942, 2]
+// Dependencies: [19, 12006, 1971, 1891, 1903, 676, 12007, 589, 12008, 2]
 // Exports: default
 
-// Module 11939 (useIsHubRealNamePromptShowing)
+// Module 12005 (useIsHubRealNamePromptShowing)
 import noop from "noop";
 import initialize from "initialize";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

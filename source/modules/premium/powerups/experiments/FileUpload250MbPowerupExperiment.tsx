@@ -1,10 +1,10 @@
-// Module ID: 4230
-// Function ID: 4231
+// Module ID: 4231
+// Function ID: 4232
 // Name: experiment
-// Dependencies: [4214, 2]
+// Dependencies: [4215, 2]
 // Exports: getFileUpload250MbPowerupEnabled, getFileUpload250MbPowerupRollbackEnabled, useFileUpload250MbPowerupEnabled, useFileUpload250MbPowerupRollbackEnabled
 
-// Module 4230 (experiment)
+// Module 4231 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable File Upload 250MB Powerup", config: { enabled: true, rollbackEnabled: false } }, { id: 2, label: "Rollback UI for File Upload 250MB Powerup", config: { enabled: true, rollbackEnabled: true } }];

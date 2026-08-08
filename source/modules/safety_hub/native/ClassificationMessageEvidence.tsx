@@ -1,10 +1,10 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 11289
+// Function ID: 11290
 // Name: ClassificationEvidence
-// Dependencies: [32, 19, 17, 1302, 1903, 11214, 7745, 676, 21, 7981, 4302, 589, 4147, 11224, 11225, 7744, 4489, 8784, 8811, 11226, 8529, 4521, 11, 2]
+// Dependencies: [32, 19, 17, 1302, 1903, 11280, 7805, 676, 21, 8041, 4303, 589, 4153, 11290, 11291, 7804, 4491, 8844, 8871, 11292, 8589, 4523, 11, 2]
 // Exports: default
 
-// Module 11223 (ClassificationEvidence)
+// Module 11289 (ClassificationEvidence)
 import _slicedToArray from "_slicedToArray";
 import DCDChatList from "DCDChatList";
 import get_ActivityIndicator from "_openMediaModal";
@@ -52,11 +52,11 @@ export default function ClassificationEvidence(arg0) {
   let obj2 = ref(589);
   const items1 = [id];
   const resolveAssetSource = first3.resolveAssetSource;
-  if (obj2.useStateFromStores(items1, () => ref(4147).isThemeLight(id.theme))) {
-    let assetSource = resolveAssetSource(tmp11(11224));
+  if (obj2.useStateFromStores(items1, () => ref(4153).isThemeLight(id.theme))) {
+    let assetSource = resolveAssetSource(tmp11(11290));
     let tmp13 = tmp11;
   } else {
-    assetSource = resolveAssetSource(tmp11(11225));
+    assetSource = resolveAssetSource(tmp11(11291));
     tmp13 = tmp11;
   }
   let first2 = arg0.flaggedContent[0];
@@ -168,7 +168,7 @@ export default function ClassificationEvidence(arg0) {
       obj[9] = uri.id;
       return obj;
     });
-    ref(8784).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
+    ref(8844).openMediaModal({ initialIndex: index, initialSources: mapped, disableDownload: true, disableMediaOverlayButton: true, shareable: false, originViewOrOriginLayout: layout });
   }, items4);
   const items6 = [first2.attachments];
   const callback1 = obj1.useCallback((arg0) => {
@@ -214,7 +214,7 @@ export default function ClassificationEvidence(arg0) {
     obj = { style: null, children: null };
     obj[0] = attachments.dummyVideoAttachments;
     attachments = first2.attachments;
-    first2 = attachments.filter((filename) => ref(4489).isVideoFile(filename.filename));
+    first2 = attachments.filter((filename) => ref(4491).isVideoFile(filename.filename));
     obj[1] = first2.map((uri) => {
       let closure_0 = uri;
       obj = {
@@ -235,7 +235,7 @@ export default function ClassificationEvidence(arg0) {
         }
       };
       obj = { uri: uri.url };
-      return outer1_18(first(8811), obj, arg1);
+      return outer1_18(first(8871), obj, arg1);
     });
     items8[1] = callback(tmp24, obj);
     obj[0] = items8;
@@ -244,11 +244,11 @@ export default function ClassificationEvidence(arg0) {
     obj1 = { ref: null, onTapImage: null, inverted: false };
     obj1[0] = ref;
     obj1[1] = callback;
-    const items9 = [callback(tmp13(11226), obj1), ];
+    const items9 = [callback(tmp13(11292), obj1), ];
     obj2 = { rowGenerator: null, message: null, modifyRow: null };
     obj2[0] = closure_20;
-    let tmp13Result = tmp13(8529);
-    tmpResult = tmp(4521);
+    let tmp13Result = tmp13(8589);
+    tmpResult = tmp(4523);
     const obj3 = { id: null, timestamp: null, channel_id: "1", type: null, author: null, content: null, attachments: null };
     obj3[0] = first2.id;
     const _Date = Date;

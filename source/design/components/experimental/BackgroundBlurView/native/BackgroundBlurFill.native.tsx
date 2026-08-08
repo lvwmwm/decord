@@ -1,10 +1,10 @@
-// Module ID: 7912
-// Function ID: 7913
+// Module ID: 7972
+// Function ID: 7973
 // Name: BlurTheme
-// Dependencies: [19, 17, 21, 712, 4145, 4013, 4005, 4702, 4701, 4162, 4711, 4715, 2]
+// Dependencies: [19, 17, 21, 712, 4151, 4013, 4005, 4704, 4703, 4036, 4713, 4717, 2]
 // Exports: BackgroundBlurFill, BackgroundBlurFillAnimated, BackgroundBlurFillWithPress
 
-// Module 7912 (BlurTheme)
+// Module 7972 (BlurTheme)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -60,7 +60,7 @@ export const BackgroundBlurFill = function BackgroundBlurFill(arg0) {
   }
   style = [StyleSheet.absoluteFill, ];
   style[1] = style;
-  return jsx(importDefault(4702), { blurTheme, blurStyle, blurAmount, tintColor, android_fallbackColor, android_blurTargetViewNativeId, style });
+  return jsx(importDefault(4704), { blurTheme, blurStyle, blurAmount, tintColor, android_fallbackColor, android_blurTargetViewNativeId, style });
 };
 export const BackgroundBlurFillAnimated = function BackgroundBlurFillAnimated(arg0) {
   let android_blurTargetViewNativeId;
@@ -108,7 +108,7 @@ export const BackgroundBlurFillAnimated = function BackgroundBlurFillAnimated(ar
     tmp6 = obj;
   }
   const merged = Object.assign(tmp6);
-  return tmp4(importDefault(4701), obj);
+  return tmp4(importDefault(4703), obj);
 };
 export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(style) {
   let blurTheme;
@@ -141,9 +141,9 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
   token = tmp2Result.useToken(importDefault(712).colors.BACKGROUND_SCRIM, blurTheme);
   tmp2Result = tmp2(4005);
   token1 = tmp2Result.useToken(importDefault(712).colors.BACKGROUND_SCRIM_LIGHTBOX, blurTheme);
-  const isBlurDisabledResult = blurTheme(4702).isBlurDisabled(merged);
+  const isBlurDisabledResult = blurTheme(4704).isBlurDisabled(merged);
   c5 = isBlurDisabledResult;
-  const tmp2Result1 = blurTheme(4702);
+  const tmp2Result1 = blurTheme(4704);
   class B {
     constructor() {
       obj = { backgroundColor: null };
@@ -157,12 +157,12 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       return obj;
     }
   }
-  obj = { withSpring: tmp2(4711).withSpring, interpolateColor: tmp2(4162).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: tmp2(4715).ON_PRESS_SPRING };
+  obj = { withSpring: tmp2(4713).withSpring, interpolateColor: tmp2(4036).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: tmp2(4717).ON_PRESS_SPRING };
   B.__closure = obj;
   B.__workletHash = 10497618157620;
   B.__initData = closure_10;
-  let animatedStyle = blurTheme(4162).useAnimatedStyle(B);
-  const tmp2Result2 = blurTheme(4162);
+  let animatedStyle = blurTheme(4036).useAnimatedStyle(B);
+  const tmp2Result2 = blurTheme(4036);
   class C {
     constructor() {
       withSpringResult = undefined;
@@ -184,15 +184,15 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       return { tintColor: withSpringResult };
     }
   }
-  obj = { shouldUseFallback: isBlurDisabledResult, withSpring: tmp2(4711).withSpring, interpolateColor: tmp2(4162).interpolateColor, pressed, restingTint: tmp6, pressedTint: tmp7, ON_PRESS_SPRING: tmp2(4715).ON_PRESS_SPRING };
+  obj = { shouldUseFallback: isBlurDisabledResult, withSpring: tmp2(4713).withSpring, interpolateColor: tmp2(4036).interpolateColor, pressed, restingTint: tmp6, pressedTint: tmp7, ON_PRESS_SPRING: tmp2(4717).ON_PRESS_SPRING };
   C.__closure = obj;
   C.__workletHash = 11987567486157;
   C.__initData = closure_11;
-  const animatedProps = blurTheme(4162).useAnimatedProps(C);
+  const animatedProps = blurTheme(4036).useAnimatedProps(C);
   const obj1 = { blurTheme, blurStyle: memo, style: null };
   const items1 = [token1.absoluteFill, style.style, ];
   const tmp12 = c5;
-  const tmp2Result3 = blurTheme(4162);
+  const tmp2Result3 = blurTheme(4036);
   if (!isBlurDisabledResult) {
     animatedStyle = {};
   }
@@ -205,5 +205,5 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
     tmp14 = obj2;
   }
   const merged1 = Object.assign(tmp14);
-  return tmp12(importDefault(4701), obj1);
+  return tmp12(importDefault(4703), obj1);
 };

@@ -1,9 +1,9 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 12003
+// Function ID: 12004
 // Name: WaveformBar
-// Dependencies: [32, 19, 17, 4294, 11300, 11301, 676, 21, 4162, 4302, 712, 500, 4711, 4303, 1348, 4005, 4888, 4298, 4013, 2]
+// Dependencies: [32, 19, 17, 4295, 11366, 11367, 676, 21, 4036, 4303, 712, 500, 4713, 4304, 1348, 4005, 4890, 4299, 4013, 2]
 
-// Module 11937 (WaveformBar)
+// Module 12003 (WaveformBar)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import get_ActivityIndicator from "Text";
@@ -13,7 +13,7 @@ import VoiceMessageAnimationState from "VoiceMessageAnimationState";
 import { ThemeTypes } from "ME";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
-import importDefaultResult from "module_4162";
+import importDefaultResult from "module_4036";
 import set from "set";
 import set from "set";
 import set from "get ActivityIndicator";
@@ -222,7 +222,7 @@ let c4 = importAllResult;
 ({ View: c5, ActivityIndicator } = get_ActivityIndicator);
 ({ VOICE_RECORDING_MAX_DURATION_MILLIS: metroImportAll, VOICE_RECORDING_MAX_DURATION_OFFSET: c9, VOICE_RECORDING_REALLY_WARN_DURATION_MILLIS: c10, VOICE_RECORDING_WARN_DURATION_MILLIS: unpackModuleId, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageAnimationState);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-let closure_16 = require("module_4162").createAnimatedComponent(ActivityIndicator);
+let closure_16 = require("module_4036").createAnimatedComponent(ActivityIndicator);
 let obj = { container: null, loading: null, dot: null, dotDismissed: null, waveformContainer: null, waveformBar: null, durationContainer: null, duration: null };
 obj = { height: "100%", flexDirection: "row", alignItems: "center", paddingVertical: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_CONTAINER_PADDING_VERTICAL, paddingHorizontal: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_PADDING_HORIZONTAL, gap: require("Themes").modules.mobile.VOICE_MESSAGE_CHAT_GAP, borderRadius: require("Themes").modules.mobile.VOICE_MESSAGE_RECORDING_PILL_BORDER_RADIUS, backgroundColor: require("Themes").colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: require("Themes").modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: require("Themes").colors.MOBILE_CHATINPUT_BORDER_ACTIVE };
 obj[0] = obj;

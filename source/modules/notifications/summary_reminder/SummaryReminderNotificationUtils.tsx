@@ -1,10 +1,10 @@
-// Module ID: 14629
-// Function ID: 14630
+// Module ID: 14699
+// Function ID: 14700
 // Name: onSummaryReminderNotificationSettingsChanged
 // Dependencies: [3941, 676, 3974, 698, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 14629 (onSummaryReminderNotificationSettingsChanged)
+// Module 14699 (onSummaryReminderNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 

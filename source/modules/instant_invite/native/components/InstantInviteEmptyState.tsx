@@ -1,10 +1,10 @@
-// Module ID: 9026
-// Function ID: 9027
+// Module ID: 9086
+// Function ID: 9087
 // Name: stateFromStores
-// Dependencies: [19, 17, 9006, 21, 4302, 712, 589, 1297, 9027, 1236, 8407, 4844, 5951, 4298, 9007, 4712, 2]
+// Dependencies: [19, 17, 9066, 21, 4303, 712, 589, 1297, 9087, 1236, 8467, 4846, 6011, 4299, 9067, 4714, 2]
 // Exports: default
 
-// Module 9026 (stateFromStores)
+// Module 9086 (stateFromStores)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -34,7 +34,7 @@ export default function _default(link) {
   stateFromStores = obj.useStateFromStores(items, () => inviteSettings.getInviteSettings());
   obj = { style: tmp.container, children: null };
   obj = { containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateArt, titleStyle: tmp.emptyStateTitle, source: null, title: null, body: null };
-  obj[3] = importDefault(9027);
+  obj[3] = importDefault(9087);
   const intl = stateFromStores(1236).intl;
   obj[4] = intl.string(stateFromStores(1236).t.tQc0l8);
   const intl2 = stateFromStores(1236).intl;
@@ -48,14 +48,14 @@ export default function _default(link) {
   obj2[3] = str;
   obj2[4] = tmp.inviteInput;
   obj2[6] = stateFromStores(1297).ClearButtonVisibility.NEVER;
-  const items2 = [callback(importDefault(8407), obj2), ];
+  const items2 = [callback(importDefault(8467), obj2), ];
   const obj3 = { accessibilityLabel: null, accessibilityRole: "button", onPress: null, style: null, children: null };
   const intl3 = tmp2(1236).intl;
   obj3[0] = intl3.string(stateFromStores(1236).t["3D5yo/"]);
   obj3[2] = onPressSettings;
   obj3[3] = tmp.settingsButton;
-  obj3[4] = callback(stateFromStores(5951).SettingsIcon, {});
-  items2[1] = callback(stateFromStores(4844).PressableOpacity, obj3);
+  obj3[4] = callback(stateFromStores(6011).SettingsIcon, {});
+  items2[1] = callback(stateFromStores(4846).PressableOpacity, obj3);
   obj1[1] = items2;
   items1[1] = closure_6(View, obj1);
   const obj4 = { style: tmp.expireCaption, variant: "text-xs/medium", color: "text-muted", children: null };
@@ -66,11 +66,11 @@ export default function _default(link) {
     const intl5 = tmp2(1236).intl;
     obj5[0] = intl5.string(tmp2(1236).t.Ej3B3Y);
     obj5[1] = onShare;
-    items1[3] = tmp7(tmp2(4712).Button, obj5);
+    items1[3] = tmp7(tmp2(4714).Button, obj5);
     obj[1] = items1;
     return tmp5(tmp6, obj);
   } else {
-    const maxAgeOptionByValue = tmp8(9007).getMaxAgeOptionByValue(stateFromStores.maxAge);
+    const maxAgeOptionByValue = tmp8(9067).getMaxAgeOptionByValue(stateFromStores.maxAge);
     let str2 = "";
     let str3 = "";
     if (null != maxAgeOptionByValue) {
@@ -80,7 +80,7 @@ export default function _default(link) {
       }
       str3 = descriptiveLabel;
     }
-    const getMaxUsesOptions = tmp8(9007).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(9067).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     if (null != found) {
       str2 = found.descriptiveLabel;
@@ -95,6 +95,6 @@ export default function _default(link) {
     obj6[0] = str3;
     obj6[1] = str2;
     intl4.format(dqPWMN, obj6);
-    const tmp8Result = tmp8(9007);
+    const tmp8Result = tmp8(9067);
   }
 };

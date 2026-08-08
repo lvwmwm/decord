@@ -1,9 +1,9 @@
-// Module ID: 4094
-// Function ID: 4095
+// Module ID: 4100
+// Function ID: 4101
 // Name: CheckpointKnickKnacksRive
-// Dependencies: [109, 19, 21, 4030, 4095, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4101, 4087, 2]
 
-// Module 4094 (CheckpointKnickKnacksRive)
+// Module 4100 (CheckpointKnickKnacksRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -305,7 +305,7 @@ const forwardRefResult = importAllResult.forwardRef(function CheckpointKnickKnac
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointKnickKnacksRive.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16765
+// Function ID: 16766
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 16689, 16690, 1236, 1974, 3992, 16691, 2]
+// Dependencies: [5, 19, 676, 16766, 16767, 1236, 1974, 3992, 16768, 2]
 // Exports: default
 
-// Module 16688 (useCreatorMonetizationEligibilityItems)
+// Module 16765 (useCreatorMonetizationEligibilityItems)
 import getSystemLocale from "getSystemLocale";
 import noop from "noop";
 import { HelpdeskArticles } from "ME";
@@ -41,7 +41,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -110,7 +110,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp13();
         }
         c2 = 3;
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c2 = tmp;
         throw tmp16;

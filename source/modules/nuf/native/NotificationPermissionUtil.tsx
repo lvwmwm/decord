@@ -1,10 +1,10 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11779
+// Function ID: 11780
 // Name: _requestPushNotificationPermission
-// Dependencies: [32, 5, 19, 17, 11711, 11712, 676, 4514, 10709, 698, 11714, 11720, 11721, 589, 2]
+// Dependencies: [32, 5, 19, 17, 11777, 11778, 676, 4516, 10775, 698, 11780, 11786, 11787, 589, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 11713 (_requestPushNotificationPermission)
+// Module 11779 (_requestPushNotificationPermission)
 import _slicedToArray from "_slicedToArray";
 import EventActionType from "EventActionType";
 import noop from "noop";
@@ -35,7 +35,7 @@ function _requestPushNotificationPermission() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ function _requestPushNotificationPermission() {
           } else {
             _slicedToArray = arg1;
             if (_slicedToArray === constants3.DENIED) {
-              callback2(10709)();
+              callback2(10775)();
               obj2 = callback2(698);
               const obj3 = { action_type: null, action_location: null };
               obj3[0] = constants.TO_SETTINGS;
@@ -80,7 +80,7 @@ function _requestPushNotificationPermission() {
               dependencyMap();
               obj = 3;
             } else if (_slicedToArray !== constants3.AUTHORIZED) {
-              obj = callback2(11720);
+              obj = callback2(11786);
               const permission = obj.requestPermission((permission_granted) => {
                 let obj = callback(698);
                 obj = { action_type: closure_0, action_location: callback, permission_granted };
@@ -88,7 +88,7 @@ function _requestPushNotificationPermission() {
                 dependencyMap();
               });
             }
-            obj1 = callback(11714);
+            obj1 = callback(11780);
             const result = obj1.updateNotificationAuthorizationStatus(_slicedToArray);
             dependencyMap();
           }
@@ -122,7 +122,7 @@ function _enableProvisionalPushNotification() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -175,7 +175,7 @@ function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -223,7 +223,7 @@ export const useShowReactivationPrompt = function useShowReactivationPrompt() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -259,7 +259,7 @@ export const useShowReactivationPrompt = function useShowReactivationPrompt() {
                 outer1_0(true);
               }
               c2 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c2 = tmp;
@@ -302,8 +302,8 @@ export const enableProvisionalPushNotification = function enableProvisionalPushN
 export const useCanSeePushNotificationNudge = function useCanSeePushNotificationNudge() {
   let require;
   let tmp4;
-  const isTeenInStrictCountry = require(11721) /* set */.useIsTeenInStrictCountry();
-  const obj = require(11721) /* set */;
+  const isTeenInStrictCountry = require(11787) /* set */.useIsTeenInStrictCountry();
+  const obj = require(11787) /* set */;
   const items = [set];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => state.authorizationStatus);
   const obj2 = require(589) /* initialize */;
@@ -335,8 +335,8 @@ export const useCanSeePushNotificationNudge = function useCanSeePushNotification
 export const useShouldShowPushNotificationNudgeByPromptType = function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   let require;
   let tmp7;
-  const isTeenInStrictCountry = require(11721) /* set */.useIsTeenInStrictCountry();
-  let obj = require(11721) /* set */;
+  const isTeenInStrictCountry = require(11787) /* set */.useIsTeenInStrictCountry();
+  let obj = require(11787) /* set */;
   const tmp = require;
   const items = [set];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => state.authorizationStatus);

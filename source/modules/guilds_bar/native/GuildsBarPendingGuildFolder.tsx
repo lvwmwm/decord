@@ -1,8 +1,8 @@
-// Module ID: 15346
-// Function ID: 15347
-// Dependencies: [19, 4118, 676, 21, 15334, 11123, 589, 15326, 4162, 4271, 5231, 1236, 15333, 12212, 2]
+// Module ID: 15421
+// Function ID: 15422
+// Dependencies: [19, 4124, 676, 21, 15409, 11189, 589, 15401, 4036, 4272, 5232, 1236, 15408, 12279, 2]
 
-// Module 15346
+// Module 15421
 import importAllResult from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME";
@@ -18,8 +18,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   id = id.id;
   let importDefault;
   ({ expanded, childNodes } = id);
-  let obj = id(15334);
-  importDefault = importDefault(11123)();
+  let obj = id(15409);
+  importDefault = importDefault(11189)();
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   const items = [handleConnectionOpen];
   const items1 = [id];
@@ -51,7 +51,7 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
   ({ accessibilityActions, onAccessibilityAction } = memo);
   const obj2 = id(589);
   const items2 = [id];
-  const sharedValue = id(4162).useSharedValue("" + id);
+  const sharedValue = id(4036).useSharedValue("" + id);
   const memo1 = importAllResult.useMemo(() => ({
     onPress() {
       const result = outer1_0(outer1_2[9]).triggerHapticFeedback(outer1_0(outer1_2[9]).HapticFeedbackTypes.IMPACT_LIGHT);
@@ -59,8 +59,8 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
       const result1 = outer1_1(outer1_2[10]).toggleGuildFolderExpand(closure_0);
     }
   }), items2);
-  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "T", overState: "a", preventClipping: "emoji", config: "frowning", externalChildren: "\u{1F626}", children: "ReferralProgramUtils" };
-  const obj3 = id(4162);
+  obj = { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: "QUICKSWITCHER_SHOW", config: "QUICKSWITCHER_SEARCH", externalChildren: "QUICKSWITCHER_SELECT", children: null };
+  const obj3 = id(4036);
   obj[0] = "" + id;
   obj[1] = accessibilityActions;
   obj[2] = onAccessibilityAction;
@@ -75,11 +75,11 @@ const memoResult = importAllResult.memo(function GuildsBarPendingGuildFolder(id)
     obj = { folderId: null, totalItems: null };
     obj[0] = id;
     obj[1] = childNodes.length;
-    tmp8Result = tmp8(tmp(15333).GuildsBarGuildFolderBG, obj);
+    tmp8Result = tmp8(tmp(15408).GuildsBarGuildFolderBG, obj);
   }
   obj[13] = tmp8Result;
-  obj[14] = jsx(id(12212).HourglassIcon, {});
-  return jsx(importDefault(15334), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "T", overState: "a", preventClipping: "emoji", config: "frowning", externalChildren: "\u{1F626}", children: "ReferralProgramUtils" });
+  obj[14] = jsx(id(12279).HourglassIcon, {});
+  return jsx(importDefault(15409), { id: null, accessibilityActions: null, onAccessibilityAction: null, selected: null, unread: false, circle: false, styles: null, label: null, sharedId: null, cutouts: "HermesInternal", overState: "a", preventClipping: "QUICKSWITCHER_SHOW", config: "QUICKSWITCHER_SEARCH", externalChildren: "QUICKSWITCHER_SELECT", children: null });
 });
 let result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

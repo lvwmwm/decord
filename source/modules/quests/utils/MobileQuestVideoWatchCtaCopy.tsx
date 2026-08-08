@@ -1,14 +1,14 @@
-// Module ID: 10521
-// Function ID: 10522
+// Module ID: 10587
+// Function ID: 10588
 // Name: formatWatchRemainingDurationShort
-// Dependencies: [7123, 1236, 2]
+// Dependencies: [7183, 1236, 2]
 // Exports: formatWatchRemainingDurationShort, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10521 (formatWatchRemainingDurationShort)
+// Module 10587 (formatWatchRemainingDurationShort)
 const result = require("set").fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
 
 export const formatWatchRemainingDurationShort = function formatWatchRemainingDurationShort(targetSeconds) {
-  let obj = require(7123) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7183) /* getApplicationIdsByTaskTypes */;
   const remainingTaskTime = obj.getRemainingTaskTime(targetSeconds);
   const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
   if (sum >= 60) {
@@ -26,7 +26,7 @@ export const formatWatchRemainingDurationShort = function formatWatchRemainingDu
   return formatToPlainStringResult;
 };
 export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(questTaskDetails) {
-  let obj = require(7123) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7183) /* getApplicationIdsByTaskTypes */;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   const sum = 60 * remainingTaskTime.minutes + remainingTaskTime.seconds;
   if (sum >= 60) {
@@ -58,7 +58,7 @@ export const getVideoQuestWatchCtaText = function getVideoQuestWatchCtaText(ques
 export const getVideoQuestWatchCtaAccessibilityLabel = function getVideoQuestWatchCtaAccessibilityLabel(questTaskDetails) {
   let minutes;
   let seconds;
-  let obj = require(7123) /* getApplicationIdsByTaskTypes */;
+  let obj = require(7183) /* getApplicationIdsByTaskTypes */;
   const remainingTaskTime = obj.getRemainingTaskTime(questTaskDetails);
   ({ minutes, seconds } = remainingTaskTime);
   if (minutes > 0) {

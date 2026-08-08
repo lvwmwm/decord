@@ -1,10 +1,10 @@
-// Module ID: 16699
-// Function ID: 16700
+// Module ID: 16776
+// Function ID: 16777
 // Name: EarningPreview
-// Dependencies: [19, 17, 14369, 21, 4302, 712, 4147, 4238, 4298, 1236, 5267, 16700, 16701, 16702, 16703, 16704, 16705, 16706, 16707, 2]
+// Dependencies: [19, 17, 14439, 21, 4303, 712, 4153, 4239, 4299, 1236, 5268, 16777, 16778, 16779, 16780, 16781, 16782, 16783, 16784, 2]
 // Exports: default
 
-// Module 16699 (EarningPreview)
+// Module 16776 (EarningPreview)
 import "set";
 import { View } from "registerAsset";
 import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS";
@@ -15,34 +15,34 @@ let c5;
 let closure_6;
 const require = arg1;
 function EarningPreview() {
-  const tmp3 = importDefault(4238)();
+  const tmp3 = importDefault(4239)();
   const tmp4 = createCacheKey();
   const items = [tmp4.earningMetricsShadowContainer, ];
-  let obj = require(4147) /* AccessibilityAnnouncer */;
+  let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = { style: items, children: null };
   items[1] = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
   const items1 = [, , ];
   ({ earningMetrics: arr2[0], horizontalContainer: arr2[1] } = tmp4);
-  let tmp7Result = tmp7(4147);
+  let tmp7Result = tmp7(4153);
   obj = { style: null, children: null };
   items1[2] = tmp7Result.isThemeDark(tmp3) ? tmp4.earningMetricsDarkMode : tmp4.earningMetricsLightMode;
   obj[0] = items1;
   const obj1 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: null };
   const intl = tmp7(1236).intl;
   obj1[2] = intl.string(require(1236) /* getSystemLocale */.t.TXPK7B);
-  const items2 = [closure_5(require(4298) /* Text */.Text, obj1), ];
-  tmp7Result = tmp7(4147);
+  const items2 = [closure_5(require(4299) /* Text */.Text, obj1), ];
+  tmp7Result = tmp7(4153);
   const obj2 = { children: null };
   const obj3 = { style: tmp7Result.isThemeDark(tmp3) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode, variant: "heading-lg/extrabold", children: null };
   const intl2 = tmp7(1236).intl;
   obj3[2] = intl2.string(require(1236) /* getSystemLocale */.t.LdjJG5);
-  items2[1] = closure_5(require(4298) /* Text */.Text, obj3);
+  items2[1] = closure_5(require(4299) /* Text */.Text, obj3);
   obj2[0] = items2;
   const items3 = [closure_6(View, obj2), ];
   const obj4 = { style: tmp4.earningMetricsAvatar, source: null };
   const tmp8 = obj.isThemeDark(tmp3) && tmp4.earningMetricsShadowContainerDarkMode;
-  obj4[1] = importDefault(16700);
-  items3[1] = closure_5(importDefault(5267), obj4);
+  obj4[1] = importDefault(16777);
+  items3[1] = closure_5(importDefault(5268), obj4);
   obj[1] = items3;
   obj[1] = closure_6(View, obj);
   return closure_5(View, obj);
@@ -53,21 +53,21 @@ function ConsistentEarningBenefit() {
   obj = { style: tmp4.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["9CdmS8"]);
-  const items = [callback(require(4298) /* Text */.Text, obj), callback(EarningPreview, {}), ];
+  const items = [callback(require(4299) /* Text */.Text, obj), callback(EarningPreview, {}), ];
   obj = { style: items1, children: null };
   items1 = [, ];
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
-  const tmp3 = importDefault(4238)();
+  const tmp3 = importDefault(4239)();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(16701);
+    let tmpResult = tmp(16778);
   } else {
-    tmpResult = tmp(16702);
+    tmpResult = tmp(16779);
   }
   const items2 = [callback(BenefitAvatar, { avatarSource: tmpResult }), , ];
-  obj4 = require(4147) /* AccessibilityAnnouncer */;
-  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16703) });
-  const obj1 = { avatarSource: importDefault(16703) };
-  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16704) });
+  obj4 = require(4153) /* AccessibilityAnnouncer */;
+  items2[1] = callback(BenefitAvatar, { avatarSource: importDefault(16780) });
+  const obj1 = { avatarSource: importDefault(16780) };
+  items2[2] = callback(BenefitAvatar, { avatarSource: importDefault(16781) });
   obj[1] = items2;
   items[2] = closure_6(View, obj);
   obj[1] = items;
@@ -79,14 +79,14 @@ function FollowerAwardBenefit() {
   obj = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.qsKRUQ);
-  const items = [callback(require(4298) /* Text */.Text, obj), , ];
+  const items = [callback(require(4299) /* Text */.Text, obj), , ];
   obj = { style: tmp.socialIllo, source: null };
-  obj[1] = importDefault(16705);
-  items[1] = callback(importDefault(5267), obj);
+  obj[1] = importDefault(16782);
+  items[1] = callback(importDefault(5268), obj);
   const obj1 = { style: tmp.lanyardIllo, source: null };
-  const tmp2 = importDefault(5267);
-  obj1[1] = importDefault(16706);
-  items[2] = callback(importDefault(5267), obj1);
+  const tmp2 = importDefault(5268);
+  obj1[1] = importDefault(16783);
+  items[2] = callback(importDefault(5268), obj1);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -96,28 +96,28 @@ function RevenueShareBenefit() {
   items = [, ];
   ({ benefitCard: arr[0], revenueShareContainer: arr[1] } = tmp4);
   const items1 = [tmp4.revenueShare, ];
-  let obj1 = require(4147) /* AccessibilityAnnouncer */;
+  let obj1 = require(4153) /* AccessibilityAnnouncer */;
   obj = { style: null, variant: "heading-xxl/extrabold", color: "status-positive", children: null };
-  items1[1] = obj1.isThemeDark(importDefault(4238)()) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
+  items1[1] = obj1.isThemeDark(importDefault(4239)()) ? tmp4.greenTextDarkMode : tmp4.greenTextLightMode;
   obj[0] = items1;
   obj[3] = `${closure_4}%`;
-  const items2 = [closure_5(require(4298) /* Text */.Text, obj), , ];
+  const items2 = [closure_5(require(4299) /* Text */.Text, obj), , ];
   obj = { style: tmp4.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: null };
   const intl = tmp8(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.AewsXD);
-  items2[1] = closure_5(require(4298) /* Text */.Text, obj);
+  items2[1] = closure_5(require(4299) /* Text */.Text, obj);
   obj1 = { style: tmp4.revenueShareIllo, source: null };
-  const tmp3 = importDefault(4238)();
+  const tmp3 = importDefault(4239)();
   const tmp5 = closure_6;
   const tmp6 = View;
-  obj1[1] = importDefault(16707);
-  items2[2] = closure_5(importDefault(5267), obj1);
+  obj1[1] = importDefault(16784);
+  items2[2] = closure_5(importDefault(5268), obj1);
   obj[1] = items2;
   return tmp5(tmp6, obj);
 }
 function BenefitAvatar(avatarSource) {
   const tmp = createCacheKey();
-  obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(5267), obj) };
+  obj = { style: tmp.benefitAvatarContainer, children: callback(importDefault(5268), obj) };
   obj = { source: avatarSource.avatarSource, style: tmp.benefitAvatar };
   return callback(View, obj);
 }

@@ -1,9 +1,9 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7098
+// Function ID: 7099
 // Name: findOrCreateMessageRecord
-// Dependencies: [3939, 1218, 1372, 4519, 4314, 3938, 4118, 4497, 1903, 676, 595, 4521, 4515, 4535, 12, 4377, 5830, 7039, 589, 709, 2]
+// Dependencies: [3939, 1218, 1372, 4521, 4315, 3938, 4124, 4499, 1903, 676, 595, 4523, 4517, 4537, 12, 4379, 5890, 7099, 589, 709, 2]
 
-// Module 7038 (findOrCreateMessageRecord)
+// Module 7098 (findOrCreateMessageRecord)
 import hasFlag from "hasFlag";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -28,8 +28,8 @@ function findOrCreateMessageRecord(channel_id) {
   } else {
     let message = store2.getMessage(channel_id.channel_id, channel_id.id);
     if (null == message) {
-      message = require(4521) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
-      const obj = require(4521) /* createMinimalMessageRecord */;
+      message = require(4523) /* createMinimalMessageRecord */.createMessageRecord(channel_id);
+      const obj = require(4523) /* createMinimalMessageRecord */;
     }
     return message;
   }
@@ -60,7 +60,7 @@ function hasMentionNotificationEnabled(channel_id) {
               obj[1] = currentUser.id;
               obj[2] = result1;
               obj[3] = result2;
-              tmp10 = importDefault(4535)(obj);
+              tmp10 = importDefault(4537)(obj);
             }
             return tmp10;
           } else {
@@ -68,7 +68,7 @@ function hasMentionNotificationEnabled(channel_id) {
             return false;
           }
         }
-        obj2 = require(4515) /* shouldShowAgeGateForVoiceChannel */;
+        obj2 = require(4517) /* shouldShowAgeGateForVoiceChannel */;
       }
     }
   }
@@ -79,7 +79,7 @@ function parseMessage(message, channelId) {
   if (channelId === undefined) {
     channel_id = null;
   }
-  if (importDefault(5830)(message)) {
+  if (importDefault(5890)(message)) {
     const SELF_MENTIONABLE_SYSTEM = constants2.SELF_MENTIONABLE_SYSTEM;
     if (!SELF_MENTIONABLE_SYSTEM.has(message.type)) {
       return null;
@@ -99,13 +99,13 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7039)(message, id)) {
+        if (!tmp2(7099)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof hasFlag)) {
             message = store2.getMessage(message.channel_id, message.id);
             if (null == message) {
-              message = require(4521) /* createMinimalMessageRecord */.createMessageRecord(message);
-              const obj2 = require(4521) /* createMinimalMessageRecord */;
+              message = require(4523) /* createMinimalMessageRecord */.createMessageRecord(message);
+              const obj2 = require(4523) /* createMinimalMessageRecord */;
             }
             tmp12 = message;
           }
@@ -115,7 +115,7 @@ function parseMessage(message, channelId) {
           obj[2] = !closure_23.everyoneFilter;
           obj[3] = !closure_23.roleFilter;
           let tmp20 = null;
-          if (tmp2(4535)(obj)) {
+          if (tmp2(4537)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = generateOldThreadCutoff.ackMessageId(channel.id) !== tmp12.id;
@@ -126,8 +126,8 @@ function parseMessage(message, channelId) {
               obj[1] = id;
               obj[2] = updateUserGuildSettingsInternal.isSuppressEveryoneEnabled(channel.getGuildId());
               obj[3] = updateUserGuildSettingsInternal.isSuppressRolesEnabled(channel.getGuildId());
-              tmp2ResultResult = tmp2(4535)(obj);
-              const tmp2Result = tmp2(4535);
+              tmp2ResultResult = tmp2(4537)(obj);
+              const tmp2Result = tmp2(4537);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {
@@ -472,7 +472,7 @@ obj = {
     });
     let c21 = false;
     const tmpResult = importDefault(12);
-    let closure_25 = require(4377) /* sleep */.now();
+    let closure_25 = require(4379) /* sleep */.now();
     let c24 = true;
   },
   LOAD_RECENT_MENTIONS_FAILURE: function handleLoadMentionsFailure() {
@@ -586,11 +586,10 @@ obj = {
     message = message.message;
     const currentUser = authStore.getCurrentUser();
     if (null != currentUser) {
-      let obj = require(4535) /* isMentioned */;
-      obj = { rawMessage: null, userId: null, suppressRoles: false, suppressEveryone: false };
+      let obj = { rawMessage: null, userId: null, suppressRoles: false, suppressEveryone: false };
       obj[0] = message;
       obj[1] = currentUser.id;
-      if (obj.isRawMessageMentioned(obj)) {
+      if (obj2.isRawMessageMentioned(obj)) {
         const tmp3 = parseMessage(message, message.channelId);
         if (null == tmp3) {
           return false;
@@ -622,6 +621,7 @@ obj = {
           }
         }
       }
+      obj2 = require(4537) /* isMentioned */;
     }
     return false;
   },
@@ -632,8 +632,8 @@ obj = {
         const findIndexResult = importDefault(12).findIndex(substr, (id) => id.id === id);
         substr = substr.slice();
         if (null != substr[findIndexResult]) {
-          substr[findIndexResult] = id(4521).updateMessageRecord(tmp7, message.message);
-          const obj2 = id(4521);
+          substr[findIndexResult] = id(4523).updateMessageRecord(tmp7, message.message);
+          const obj2 = id(4523);
         }
       }
     }

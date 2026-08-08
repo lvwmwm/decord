@@ -1,10 +1,10 @@
-// Module ID: 7976
-// Function ID: 7977
+// Module ID: 8036
+// Function ID: 8037
 // Name: useUserIsTeen
 // Dependencies: [1903, 589, 2]
 // Exports: useUserIsTeen
 
-// Module 7976 (useUserIsTeen)
+// Module 8036 (useUserIsTeen)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

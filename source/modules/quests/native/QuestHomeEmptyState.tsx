@@ -1,10 +1,10 @@
-// Module ID: 14234
-// Function ID: 14235
+// Module ID: 14304
+// Function ID: 14305
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 676, 21, 4302, 712, 1236, 4005, 4155, 5327, 500, 4298, 14235, 4723, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 4005, 4161, 5328, 500, 4299, 14305, 4725, 2]
 // Exports: default
 
-// Module 14234 (QuestHomeEmptyState)
+// Module 14304 (QuestHomeEmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -53,7 +53,7 @@ export default function QuestHomeEmptyState(subtitle) {
   obj = { style: tmp5.container, children: null };
   const obj1 = { style: tmp5.emptyStateContainer, children: null };
   obj2 = { style: tmp5.emptyStateContentContainer, children: null };
-  const items = [callback(require(4298) /* Text */.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title }), callback(require(4298) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle }), ];
+  const items = [callback(require(4299) /* Text */.Text, { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title }), callback(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle }), ];
   let tmp9Result = null != action;
   if (tmp9Result) {
     const obj5 = { style: null, children: null };
@@ -65,18 +65,18 @@ export default function QuestHomeEmptyState(subtitle) {
   obj2[1] = items;
   const items1 = [closure_7(closure_3, obj2), ];
   let tmp11Result = null;
-  if (!importDefault(4155)().isChatLockedOpen) {
+  if (!importDefault(4161)().isChatLockedOpen) {
     const obj6 = { children: null };
     const obj7 = { style: null, source: null, resizeMode: "cover" };
     obj7[0] = tmp5.emptyImage;
-    obj7[1] = tmp7(14235);
+    obj7[1] = tmp7(14305);
     const items2 = [tmp9(closure_4, obj7), ];
     const obj8 = { style: null, end: null, start: null, colors: null };
     obj8[0] = tmp5.gradient;
     ({ END: obj12[1], START: obj12[2] } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
     obj8[3] = items3;
-    items2[1] = tmp9(tmp7(4723), obj8);
+    items2[1] = tmp9(tmp7(4725), obj8);
     obj6[0] = items2;
     tmp11Result = tmp11(closure_8, obj6);
   }
@@ -84,5 +84,5 @@ export default function QuestHomeEmptyState(subtitle) {
   obj1[1] = items1;
   obj[1] = closure_7(closure_3, obj1);
   obj[2] = callback(closure_3, obj);
-  return callback(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return callback(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 6801
-// Function ID: 6802
+// Module ID: 6861
+// Function ID: 6862
 // Name: addEntitlement
-// Dependencies: [4340, 4337, 4347, 676, 1905, 589, 12, 4346, 679, 709, 2]
+// Dependencies: [4342, 4339, 4349, 676, 1905, 589, 12, 4348, 679, 709, 2]
 
-// Module 6801 (addEntitlement)
+// Module 6861 (addEntitlement)
 import createFromServer from "createFromServer";
 import setLibraryApplications from "setLibraryApplications";
 import addSku from "addSku";
@@ -205,8 +205,8 @@ prototype["isEntitledToSku"] = function isEntitledToSku(arg0, arg1, applicationI
     }
     let tmp13 = null == libraryApplication || libraryApplication.sku.id !== arg1;
     if (!tmp13) {
-      tmp13 = !require(4346) /* getComboId */.isUserEntitledToLibraryApplication(libraryApplication);
-      const obj3 = require(4346) /* getComboId */;
+      tmp13 = !require(4348) /* getComboId */.isUserEntitledToLibraryApplication(libraryApplication);
+      const obj3 = require(4348) /* getComboId */;
     }
     let tmp16 = !tmp13;
     if (tmp13) {

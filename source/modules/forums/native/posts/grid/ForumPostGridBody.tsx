@@ -1,10 +1,10 @@
-// Module ID: 11330
-// Function ID: 11331
+// Module ID: 11396
+// Function ID: 11397
 // Name: GIFIcon
-// Dependencies: [32, 19, 17, 21, 4302, 712, 1297, 11331, 11332, 10120, 4298, 1474, 1351, 11333, 5833, 8345, 11337, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 1297, 11397, 11398, 10186, 4299, 1474, 1351, 11399, 5893, 8405, 11403, 2]
 // Exports: default
 
-// Module 11330 (GIFIcon)
+// Module 11396 (GIFIcon)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -17,27 +17,27 @@ const require = arg1;
 function GIFIcon() {
   const obj = { size: null, source: null, disableColor: true, style: null };
   obj[0] = require(1297) /* Button */.Icon.Sizes.CUSTOM;
-  obj[1] = importDefault(11331);
+  obj[1] = importDefault(11397);
   obj[3] = createCacheKey().gifIcon;
   return callback(require(1297) /* Button */.Icon, obj);
 }
 function PlayIcon() {
   const obj = { size: null, source: null, disableColor: true };
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL_20;
-  obj[1] = importDefault(11332);
+  obj[1] = importDefault(11398);
   return callback(require(1297) /* Button */.Icon, obj);
 }
 function ExtraMediaIcon(extraMediaCount) {
   const tmp = createCacheKey();
   let obj = { style: tmp.extraMediaCountContainer, children: null };
   obj = { source: null, color: null, size: null };
-  obj[0] = importDefault(10120);
+  obj[0] = importDefault(10186);
   obj[1] = tmp.icon.color;
   obj[2] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: null };
   obj[4] = "+" + extraMediaCount.extraMediaCount;
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }

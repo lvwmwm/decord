@@ -1,10 +1,10 @@
-// Module ID: 9461
-// Function ID: 9462
+// Module ID: 9526
+// Function ID: 9527
 // Name: formatClearAfterValue
-// Dependencies: [9391, 3971, 1236, 687, 1351, 2]
+// Dependencies: [9456, 3971, 1236, 687, 1351, 2]
 // Exports: default
 
-// Module 9461 (formatClearAfterValue)
+// Module 9526 (formatClearAfterValue)
 import { ClearAfterValues } from "StatusTypes";
 
 let result = require("getSystemLocale").fileFinishedImporting("modules/custom_status/utils/formatClearAfterValue.tsx");

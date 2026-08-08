@@ -1,10 +1,10 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8141
+// Function ID: 8142
 // Name: isPublicSystemMessage
-// Dependencies: [8082, 676, 8083, 8084, 698, 4496, 2]
+// Dependencies: [8142, 676, 8143, 8144, 698, 4498, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 8081 (isPublicSystemMessage)
+// Module 8141 (isPublicSystemMessage)
 import PUBLIC_SUCCESS_MODAL_SEEN_KEY from "PUBLIC_SUCCESS_MODAL_SEEN_KEY";
 import { AnalyticEvents } from "ME";
 
@@ -15,7 +15,7 @@ let c5;
 const result = require("isCrosspost").fileFinishedImporting("modules/public_guilds/PublicGuildsUtils.tsx");
 
 export const isPublicSystemMessage = function isPublicSystemMessage(message) {
-  let tmp = importDefault(8083)(message);
+  let tmp = importDefault(8143)(message);
   if (tmp) {
     tmp = message.messageReference.guild_id === closure_3;
   }
@@ -29,11 +29,11 @@ export const isPublicSystemMessage = function isPublicSystemMessage(message) {
   return tmp;
 };
 export const getPublicSystemMessageAvatar = function getPublicSystemMessageAvatar() {
-  return importDefault(8084);
+  return importDefault(8144);
 };
 export const trackEnableCommunityFlow = function trackEnableCommunityFlow(fromStep) {
   let obj = importDefault(698);
   obj = { flow_type: closure_5, from_step: fromStep.fromStep, to_step: fromStep.toStep };
-  const merged = Object.assign(require(4496) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(fromStep.guildId));
+  const merged = Object.assign(require(4498) /* collectGuildAnalyticsMetadata */.collectGuildAnalyticsMetadata(fromStep.guildId));
   obj.track(AnalyticEvents.USER_FLOW_TRANSITION, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8094
+// Function ID: 8095
 // Name: reactParserFor
-// Dependencies: [8035, 2, 8036, 8037]
+// Dependencies: [8095, 2, 8096, 8097]
 
-// Module 8034 (reactParserFor)
+// Module 8094 (reactParserFor)
 const result = require("collectAst").fileFinishedImporting("../discord_common/js/packages/markup/MarkupParser.tsx");
 for (const key10026 in require("collectAst")) {
   let tmp3 = key10026;

@@ -1,10 +1,10 @@
-// Module ID: 10222
-// Function ID: 10223
+// Module ID: 10288
+// Function ID: 10289
 // Name: _submitPollVote
-// Dependencies: [5, 676, 530, 4201, 2]
+// Dependencies: [5, 676, 530, 4202, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 10222 (_submitPollVote)
+// Module 10288 (_submitPollVote)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -31,7 +31,7 @@ function _submitPollVote() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ function _submitPollVote() {
               ({ channelId: c0, messageId: c1, answerIds: c2 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -81,7 +81,7 @@ function _submitPollVote() {
             }
           } else if (2 === tmp8) {
             c4 = 0;
-            const aPIError = new callback(4201).APIError(closure_3);
+            const aPIError = new callback(4202).APIError(closure_3);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -95,7 +95,7 @@ function _submitPollVote() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           closure_3 = tmp21;
@@ -141,7 +141,7 @@ function _endPollEarly() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ function _endPollEarly() {
               ({ channelId: c0, messageId: c1 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -188,7 +188,7 @@ function _endPollEarly() {
           } else if (2 === tmp8) {
             c4 = 0;
             asyncGeneratorStep = closure_3;
-            const aPIError = new callback(4201).APIError(asyncGeneratorStep);
+            const aPIError = new callback(4202).APIError(asyncGeneratorStep);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -202,7 +202,7 @@ function _endPollEarly() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

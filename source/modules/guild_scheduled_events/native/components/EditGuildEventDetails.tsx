@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 9030
+// Function ID: 9031
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6925, 1378, 21, 4302, 1236, 3883, 8882, 1480, 4298, 4712, 1872, 8881, 4014, 8905, 8959, 8907, 2]
+// Dependencies: [32, 19, 6985, 1378, 21, 4303, 1236, 3883, 8942, 1480, 4299, 4714, 1872, 8941, 4014, 8965, 9019, 8967, 2]
 // Exports: default
 
-// Module 8970 (EditGuildEventDetails)
+// Module 9030 (EditGuildEventDetails)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { isGuildScheduledEventActive as closure_6 } from "scheduledEventSort";

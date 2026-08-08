@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16797
+// Function ID: 16798
 // Name: GuildSettingsRoleSubscriptionsGroupEditInner
-// Dependencies: [5, 32, 19, 17, 4328, 21, 1480, 14376, 16721, 16680, 5368, 16722, 12, 5269, 5948, 1236, 4001, 712, 16724, 16729, 16735, 2]
+// Dependencies: [5, 32, 19, 17, 4329, 21, 1480, 14446, 16798, 16757, 5369, 16799, 12, 5270, 6008, 1236, 4001, 712, 16801, 16806, 16812, 2]
 // Exports: default
 
-// Module 16720 (GuildSettingsRoleSubscriptionsGroupEditInner)
+// Module 16797 (GuildSettingsRoleSubscriptionsGroupEditInner)
 import closure_4 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import Content from "Content";
@@ -102,7 +102,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -223,5 +223,5 @@ export default function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
   guildId = guildId.guildId;
   const obj = { guildId, children: null };
   obj[1] = callback2(GuildSettingsRoleSubscriptionsGroupEditInner, { guildId });
-  return callback2(importDefault(16735), obj);
+  return callback2(importDefault(16812), obj);
 };

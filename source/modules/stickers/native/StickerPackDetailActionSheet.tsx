@@ -1,8 +1,8 @@
-// Module ID: 9898
-// Function ID: 9899
-// Dependencies: [32, 19, 9860, 676, 5397, 21, 4302, 1474, 1609, 12, 698, 5396, 9899, 9903, 5652, 5398, 9904, 4844, 9782, 2]
+// Module ID: 9964
+// Function ID: 9965
+// Dependencies: [32, 19, 9926, 676, 5398, 21, 4303, 1474, 1609, 12, 698, 5397, 9965, 9969, 5712, 5399, 9970, 4846, 9848, 2]
 
-// Module 9898
+// Module 9964
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "set";
 import PADDING_HORIZONTAL from "PADDING_HORIZONTAL";
@@ -20,7 +20,7 @@ const require = arg1;
 let c4 = importAllResult;
 ({ MIN_MARGIN: c5, STICKER_SIZE: closure_6 } = PADDING_HORIZONTAL);
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
-let closure_12 = createCacheKey.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "__closure" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
+let closure_12 = createCacheKey.createStyles({ focusedStickerPreviewContainer: { position: "absolute", left: 0, top: 0, height: "100%", width: "100%", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.85)" }, header: { marginHorizontal: 16, marginVertical: 8, backgroundColor: "transparent", height: "View" }, stickers: { paddingHorizontal: 16, marginBottom: 16 }, popoutContainer: { position: "absolute", bottom: 50 } });
 const memoResult = importAllResult.memo(function StickerPackDetailActionSheet(stickerPack) {
   let c3;
   let tmp5;

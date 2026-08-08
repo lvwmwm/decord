@@ -1,10 +1,10 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9438
+// Function ID: 9439
 // Name: usePreviewCollectibleProduct
-// Dependencies: [32, 19, 6946, 1928, 6947, 6948, 9309, 1930, 8205, 2]
+// Dependencies: [32, 19, 7006, 1928, 7007, 7008, 9374, 1930, 8265, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 9373 (usePreviewCollectibleProduct)
+// Module 9438 (usePreviewCollectibleProduct)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { isAvatarDecorationRecord } from "fromServer";
@@ -19,7 +19,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   const dependencyMap = arg1;
   let _slicedToArray = arg2;
-  const shopProductItems = _require(9309).useShopProductItems(product);
+  const shopProductItems = _require(9374).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
@@ -83,7 +83,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
       }
       return () => {
         if (closure_1) {
-          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "Array", profileEffect: "Promise", nameplate: "y", profileFrame: "T" });
+          outer1_0(outer1_1[8]).setPendingChanges({ avatarDecoration: "_desired", profileEffect: "call", nameplate: "paths", profileFrame: "call" });
           const obj = outer1_0(outer1_1[8]);
         }
       };

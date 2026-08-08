@@ -1,9 +1,9 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8905
+// Function ID: 8906
 // Name: PlatformType
 // Dependencies: [2]
 
-// Module 8845 (PlatformType)
+// Module 8905 (PlatformType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/PlatformType.tsx");
 
 export const PlatformType = { DESKTOP: 0, [0]: "DESKTOP", XBOX: 1, [1]: "XBOX", PLAYSTATION: 2, [2]: "PLAYSTATION", IOS: 3, [3]: "IOS", ANDROID: 4, [4]: "ANDROID", NINTENDO: 5, [5]: "NINTENDO", LINUX: 6, [6]: "LINUX", MACOS: 7, [7]: "MACOS" };

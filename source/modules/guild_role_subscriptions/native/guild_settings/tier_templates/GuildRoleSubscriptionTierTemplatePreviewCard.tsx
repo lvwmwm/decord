@@ -1,10 +1,10 @@
-// Module ID: 16784
-// Function ID: 16785
+// Module ID: 16861
+// Function ID: 16862
 // Name: ContentHeader
-// Dependencies: [19, 17, 676, 21, 4302, 712, 4298, 4270, 16785, 1988, 16789, 1297, 16788, 1236, 5658, 1480, 14391, 16790, 698, 4496, 14397, 16786, 8694, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4299, 4271, 16862, 1988, 16866, 1297, 16865, 1236, 5718, 1480, 14461, 16867, 698, 4498, 14467, 16863, 8754, 2]
 // Exports: default
 
-// Module 16784 (ContentHeader)
+// Module 16861 (ContentHeader)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import get_ActivityIndicator from "_getTemplates";
 import ME from "ME";
@@ -25,9 +25,9 @@ function ContentHeader(arg0) {
   const tmp = createCacheKey();
   let obj = { variant: "text-xs/bold", color: "text-muted", style: tmp.contentHeader, children: null };
   obj = { variant: "text-xs/bold", color: "text-default", style: tmp.contentHeader, children: count };
-  const items = [callback(require(4298) /* Text */.Text, obj), " ", title];
+  const items = [callback(require(4299) /* Text */.Text, obj), " ", title];
   obj[3] = items;
-  return callback2(require(4298) /* Text */.Text, obj);
+  return callback2(require(4299) /* Text */.Text, obj);
 }
 function Separator() {
   return callback(closure_6, { style: createCacheKey().separator });
@@ -38,10 +38,10 @@ function BenefitShowCase(children) {
   if (typeof title === "string") {
     let obj = { variant: "text-md/semibold", color: "text-default", children: null };
     obj[2] = title;
-    tmp3 = callback(require(4298) /* Text */.Text, obj);
+    tmp3 = callback(require(4299) /* Text */.Text, obj);
   }
   obj = { children: null };
-  const items = [tmp3, callback(require(1297) /* Button */.Spacer, { size: 2 }), callback(require(4298) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: children.description })];
+  const items = [tmp3, callback(require(1297) /* Button */.Spacer, { size: 2 }), callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: children.description })];
   obj[0] = items;
   return closure_10(closure_6, obj);
 }
@@ -50,9 +50,9 @@ function ChannelBenefitShowCase(channel) {
   let name;
   let type;
   ({ description, type, name } = channel.channel);
-  let obj = require(16788) /* getPrivateChannelIconComponent */;
+  let obj = require(16865) /* getPrivateChannelIconComponent */;
   obj = { style: { flexDirection: "row", alignItems: "center" }, children: null };
-  const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1297) /* Button */.Spacer, { size: 4 }), callback(require(4298) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: name })];
+  const items = [callback(obj.getPrivateChannelIconComponent(type), { size: "xs" }), callback(require(1297) /* Button */.Spacer, { size: 4 }), callback(require(4299) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: name })];
   obj[1] = items;
   obj = { title: callback2(closure_6, obj), description };
   return callback(BenefitShowCase, obj);
@@ -64,13 +64,13 @@ function ViewEntireTemplateFooter() {
   obj = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.kejaOD);
-  const items = [callback(require(4298) /* Text */.Text, obj), callback(require(1297) /* Button */.Spacer, { size: 3 }), callback(closure_6, { style: tmp.viewEntireTemplateFooterUnderline })];
+  const items = [callback(require(4299) /* Text */.Text, obj), callback(require(1297) /* Button */.Spacer, { size: 3 }), callback(closure_6, { style: tmp.viewEntireTemplateFooterUnderline })];
   obj[0] = items;
   const items1 = [callback2(closure_6, obj), ];
   const obj2 = { children: null };
   const obj3 = { size: null, source: null, style: null };
   obj3[0] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
-  obj3[1] = importDefault(5658);
+  obj3[1] = importDefault(5718);
   const items2 = [{ rotate: "180deg" }];
   obj3[2] = { transform: items2 };
   obj2[0] = callback(require(1297) /* Button */.Icon, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 7236
-// Function ID: 7237
+// Module ID: 7296
+// Function ID: 7297
 // Name: _uploadMessageAttachments
-// Dependencies: [5, 7237, 7238, 4521, 709, 2]
+// Dependencies: [5, 7297, 7298, 4523, 709, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7236 (_uploadMessageAttachments)
+// Module 7296 (_uploadMessageAttachments)
 import closure_3 from "set";
 import initialize from "initialize";
 import set from "nativeEventEmitter";
@@ -33,7 +33,7 @@ function _uploadMessageAttachments() {
           obj[0] = attachments;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ function _uploadMessageAttachments() {
               let closure_7;
               c4 = 1;
               set = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -74,13 +74,13 @@ function _uploadMessageAttachments() {
               return obj1;
             } else if (set.has(dependencyMap)) {
               set = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
-              const tmp16 = new callback2(7238)();
+              const tmp16 = new callback2(7298)();
               set = tmp16;
               const _HermesInternal = HermesInternal;
               closure_6 = "pending-upload-" + set._file.id;
-              let obj2 = callback(4521);
+              let obj2 = callback(4523);
               obj2 = {};
               const merged = Object.assign(callback2);
               obj2.key = closure_6;

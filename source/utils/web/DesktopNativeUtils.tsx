@@ -1,9 +1,9 @@
-// Module ID: 5350
-// Function ID: 5351
+// Module ID: 5351
+// Function ID: 5352
 // Name: sanitizeFilename
-// Dependencies: [32, 5, 676, 38, 4234, 500, 595, 5351, 4336, 4, 5352, 5353, 1467, 530, 4363, 2]
+// Dependencies: [32, 5, 676, 38, 4235, 500, 595, 5352, 4338, 4, 5353, 5354, 1467, 530, 4365, 2]
 
-// Module 5350 (sanitizeFilename)
+// Module 5351 (sanitizeFilename)
 import _slicedToArray from "_slicedToArray";
 import closure_4 from "set";
 import { NativeFeatures } from "ME";
@@ -14,11 +14,11 @@ function sanitizeFilename(arg0) {
   try {
     const _decodeURIComponent = decodeURIComponent;
     const str2 = decodeURIComponent(arg0);
-    const str4 = decodeURIComponent(arg0).replace(closure_19, "$1");
-    return decodeURIComponent(arg0).replace(closure_19, "$1").replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2").replace(closure_18, "_");
+    const str4 = decodeURIComponent(arg0).replace(closure_20, "$1");
+    return decodeURIComponent(arg0).replace(closure_20, "$1").replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2").replace(closure_19, "_");
   } catch (err) {
-    const str9 = str.replace(closure_20, "$1");
-    return str.replace(closure_20, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(closure_18, "_");
+    const str9 = str.replace(closure_21, "$1");
+    return str.replace(closure_21, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(closure_19, "_");
   }
 }
 function getFileData() {
@@ -60,6 +60,142 @@ function _getFileData() {
 function getImageData(arg0, arg1, width, height) {
   return getFileData(arg0);
 }
+function _transcodeImageToPng() {
+  const self = this;
+  const tmp = callback2((arg0, arg1) => {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let c6 = 0;
+    let c7 = 0;
+    let c5 = 0;
+    return (function*(arg0, arg1) {
+      if (c7 === 2) {
+        c7 = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp7 === 3) {
+        if (arg0 === 1) {
+          throw arg1;
+        } else if (arg0 === 2) {
+          let obj = { value: null, done: true };
+          obj[0] = arg1;
+          return obj;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          c7 = 2;
+          if (0 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            } else {
+              let _slicedToArray = tmp3;
+              let context = tmp5;
+              let closure_0;
+              let offscreenCanvas;
+              context = undefined;
+              _slicedToArray = undefined;
+              const _Blob = Blob;
+              const items = [closure_0];
+              const obj1 = { type: null };
+              obj1[0] = offscreenCanvas;
+              const blob = new Blob(items, obj1);
+              c6 = 1;
+              c7 = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = globalThis.createImageBitmap(blob);
+              return obj2;
+            }
+          } else if (1 === tmp8) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj3 = { value: null, done: true };
+              obj3[0] = arg1;
+              return obj3;
+            } else {
+              closure_0 = arg1;
+              let c5 = 1;
+              offscreenCanvas = new globalThis.OffscreenCanvas(closure_0.width, closure_0.height);
+              context = offscreenCanvas.getContext("2d");
+              offscreenCanvas(context[3])(null != context, "Failed to acquire 2d context for image transcode");
+              context.drawImage(closure_0, 0, 0);
+              c6 = 3;
+              c7 = 1;
+              const obj4 = { value: null, done: false };
+              obj4[0] = offscreenCanvas.convertToBlob({ type: "image/png" });
+              return obj4;
+            }
+          } else if (2 === tmp8) {
+            c5 = 0;
+            closure_0.close();
+            throw closure_4;
+          } else if (3 === tmp8) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw arg1;
+            } else if (arg0 === 2) {
+              c5 = 0;
+              closure_0.close();
+              c7 = 3;
+              const obj5 = { value: null, done: true };
+              obj5[0] = arg1;
+              return obj5;
+            } else {
+              _slicedToArray = arg1;
+              c6 = 4;
+              c7 = 1;
+              const obj6 = { value: null, done: false };
+              obj6[0] = _slicedToArray.arrayBuffer();
+              return obj6;
+            }
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            closure_0.close();
+            c7 = 3;
+            const obj7 = { value: null, done: true };
+            obj7[0] = arg1;
+            return obj7;
+          } else {
+            c5 = 0;
+            closure_0.close();
+            c7 = 3;
+            obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
+          }
+        } catch (tmp25) {
+          closure_4 = tmp25;
+          if (tmp4 === c5) {
+            c7 = tmp2;
+            throw tmp25;
+          } else {
+            c6 = tmp;
+          }
+        }
+      }
+    })();
+  });
+  const _transcodeImageToPng = tmp;
+  const apply = tmp.apply;
+  if (typeof apply === "unknown") {
+    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+  } else {
+    applyArgumentsResult = apply(self, arguments);
+  }
+  return applyArgumentsResult;
+}
 function normalizeRunningGame(id) {
   let name2;
   let pidPath;
@@ -67,7 +203,7 @@ function normalizeRunningGame(id) {
   let windowHandle;
   let tmp = arg1;
   if (arg1 === undefined) {
-    tmp = closure_12;
+    tmp = closure_13;
   }
   let str = id.id;
   if (str == null) {
@@ -106,7 +242,7 @@ function normalizeRunningGame(id) {
   obj[17] = windowHandle;
   let UNKNOWN = id.fullscreenType;
   if (UNKNOWN == null) {
-    UNKNOWN = require(4234) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
+    UNKNOWN = require(4235) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   obj[18] = UNKNOWN;
   let flag = id.isLauncher;
@@ -127,17 +263,18 @@ function backwardCompatSend(APP_ASYNC_INDEX_TSX_LOADED) {
   }
 }
 let set = new Set(["jpg", "jpeg", "jfif", "png"]);
-const set1 = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]);
-let closure_9 = null;
+const set1 = new Set(["webp", "avif"]);
+const set2 = new Set(["jpg", "jpeg", "jfif", "png", "webp", "gif", "tiff", "bmp", "avif"]);
+let closure_10 = null;
 let buildNumber = null;
 let moduleVersions = null;
-let closure_12 = {};
-let c13 = false;
-let closure_14 = {};
+let closure_13 = {};
+let c14 = false;
+let closure_15 = {};
 if (null != DiscordNative) {
   let app = DiscordNative.app;
   let parts = app.getVersion().split(".");
-  closure_9 = parts.map((joined) => parseInt(joined));
+  closure_10 = parts.map((joined) => parseInt(joined));
   const app2 = DiscordNative.app;
   moduleVersions = app2.getModuleVersions();
   const app3 = DiscordNative.app;
@@ -145,19 +282,19 @@ if (null != DiscordNative) {
   let str = app.getVersion();
 }
 new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]);
-let c15 = false;
-let c16 = null;
+let c16 = false;
+let c17 = null;
 const lastImageSaveDirectory = "lastImageSaveDirectory";
-const re18 = /[<>:"/\\|?*@]/g;
-const re19 = /(\.[a-zA-Z0-9]+):[^.]*$/;
-const re20 = /(\.[a-zA-Z0-9]+)%3A.+$/;
-const re21 = /[^a-zA-Z0-9]/g;
-const re22 = /\.[^.]*$/;
+const re19 = /[<>:"/\\|?*@]/g;
+const re20 = /(\.[a-zA-Z0-9]+):[^.]*$/;
+const re21 = /(\.[a-zA-Z0-9]+)%3A.+$/;
+const re22 = /[^a-zA-Z0-9]/g;
+const re23 = /\.[^.]*$/;
 let obj = { SAVED: "saved", CANCELED: "canceled", ERRORED: "errored" };
 obj = {
   requireModule(discord_krisp) {
-    if (c13) {
-      if (closure_14.hasOwnProperty(discord_krisp)) {
+    if (c14) {
+      if (closure_15.hasOwnProperty(discord_krisp)) {
         if (null != tmp[discord_krisp]) {
           return tmp[discord_krisp];
         }
@@ -165,8 +302,8 @@ obj = {
     }
     const nativeModules = DiscordNative.nativeModules;
     const requireModuleResult = nativeModules.requireModule(discord_krisp);
-    if (c13) {
-      closure_14[discord_krisp] = requireModuleResult;
+    if (c14) {
+      closure_15[discord_krisp] = requireModuleResult;
     }
     return requireModuleResult;
   },
@@ -225,7 +362,7 @@ obj.beforeUnload = function beforeUnload() {
     let supportsFeatureResult = window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN;
     if (supportsFeatureResult) {
       const Storage = require(595) /* Storage */.Storage;
-      supportsFeatureResult = true !== Storage.get(require(5351) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
+      supportsFeatureResult = true !== Storage.get(require(5352) /* DomainMigrationEventType */.DOMAIN_MIGRATION_SUCCESS_KEY);
     }
     if (supportsFeatureResult) {
       supportsFeatureResult = self.supportsFeature(NativeFeatures.USER_DATA_CACHE);
@@ -274,14 +411,14 @@ obj.setObservedGamesCallback = function setObservedGamesCallback(mapped, normali
   let closure_0 = arg2;
   try {
     const self = this;
-    let closure_12 = {};
+    let closure_13 = {};
     let c1 = 0;
     const discordUtils = this.getDiscordUtils();
     mapped = mapped.map((id) => {
       const sum = c1 + 1;
       c1 = sum;
       if (null != id.id) {
-        closure_12[sum] = id.id;
+        closure_13[sum] = id.id;
       }
       const obj = {};
       const merged = Object.assign(id);
@@ -289,7 +426,7 @@ obj.setObservedGamesCallback = function setObservedGamesCallback(mapped, normali
       obj.id = sum;
       return obj;
     });
-    let closure_2 = closure_12;
+    let closure_2 = closure_13;
     let tmp6 = null != arg3;
     if (tmp6) {
       tmp6 = null != discordUtils.setProcessObserverUserId;
@@ -298,7 +435,7 @@ obj.setObservedGamesCallback = function setObservedGamesCallback(mapped, normali
       const result = discordUtils.setProcessObserverUserId(arg3);
     }
     normalizeCallback = function normalizeCallback(arr) {
-      return callback(arr.map((arg0) => outer1_28(arg0, closure_2)));
+      return callback(arr.map((arg0) => outer1_30(arg0, closure_2)));
     };
     if (normalizeCallback) {
       if (null != discordUtils.setObservedGamesCallback2) {
@@ -399,7 +536,7 @@ obj.setObserverDebugCallback = function setObserverDebugCallback(arg0, NONE, arg
 };
 obj.clearObserverDebugCallback = function clearObserverDebugCallback() {
   const discordUtils = this.getDiscordUtils();
-  const result = discordUtils.setObserverDebugCallback(null, require(4336) /* GameTheme */.GameDetectionDebugLevel.NONE, 0);
+  const result = discordUtils.setObserverDebugCallback(null, require(4338) /* GameTheme */.GameDetectionDebugLevel.NONE, 0);
 };
 obj.shouldDisplayNotifications = function shouldDisplayNotifications() {
   const discordUtils = this.getDiscordUtils();
@@ -408,18 +545,18 @@ obj.shouldDisplayNotifications = function shouldDisplayNotifications() {
 obj.getVoiceEngine = function getVoiceEngine() {
   const requireModuleResult = this.requireModule("discord_voice");
   const require = requireModuleResult;
-  if (!c15) {
+  if (!c16) {
     require(4) /* log */.setNativeLogFn((arg0, arg1, arg2) => {
       closure_0.consoleLog(arg1, "[" + arg0 + "] " + arg2);
     });
     const obj = require(4) /* log */;
   }
-  c15 = true;
+  c16 = true;
   return requireModuleResult;
 };
 obj.getDiscordUtils = function getDiscordUtils() {
   const self = this;
-  if (!c15) {
+  if (!c16) {
     try {
       const voiceEngine = self.getVoiceEngine();
     } catch (err) {
@@ -486,7 +623,7 @@ obj.setBadge = function setBadge(arg0) {
     let tmpResult = tmp(500);
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(5352).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(5353).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       tmpResult = tmp(500);
       if ("linux" === tmpResult.getPlatformName()) {
@@ -503,7 +640,7 @@ obj.setBadge = function setBadge(arg0) {
 obj.setSystemTrayIcon = function setSystemTrayIcon(arg0) {
   if (require(500) /* set */.isPlatformEmbedded) {
     const self = this;
-    this.sendIPC(require(5352) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
+    this.sendIPC(require(5353) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_ICON, arg0);
   }
 };
 obj.setThumbarButtons = function setThumbarButtons(arg0, arg1) {
@@ -536,7 +673,7 @@ obj.bounceDock = function bounceDock(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -573,7 +710,7 @@ obj.bounceDock = function bounceDock(arg0) {
               dock = dock.dock;
               dock.cancelBounce(dock);
               c3 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c3 = tmp;
@@ -587,7 +724,7 @@ obj.bounceDock = function bounceDock(arg0) {
 obj.setSystemTrayApplications = function setSystemTrayApplications(arg0) {
   if (require(500) /* set */.isPlatformEmbedded) {
     const self = this;
-    this.sendIPC(require(5352) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
+    this.sendIPC(require(5353) /* IPCEvents */.IPCEvents.SYSTEM_TRAY_SET_APPLICATIONS, arg0);
   }
 };
 Object.defineProperty(obj, "architecture", {
@@ -611,9 +748,9 @@ Object.defineProperty(obj, "releaseChannel", {
   },
   set: undefined
 });
-Object.defineProperty(obj, "version", { get: () => closure_9, set: undefined });
-Object.defineProperty(obj, "buildNumber", { get: () => closure_10, set: undefined });
-Object.defineProperty(obj, "moduleVersions", { get: () => closure_11, set: undefined });
+Object.defineProperty(obj, "version", { get: () => closure_10, set: undefined });
+Object.defineProperty(obj, "buildNumber", { get: () => closure_11, set: undefined });
+Object.defineProperty(obj, "moduleVersions", { get: () => closure_12, set: undefined });
 Object.defineProperty(obj, "parsedOSRelease", {
   get: () => {
     if (require(500) /* set */.isPlatformEmbedded) {
@@ -636,8 +773,8 @@ obj.copy = function copy(arg0) {
 obj.copyImage = function copyImage(arg0, closure_1) {
   let closure_0 = arg0;
   return callback2(function*() {
-    if (c3 === 2) {
-      c3 = 3;
+    if (c4 === 2) {
+      c4 = 3;
       HermesBuiltin.throwTypeError();
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
@@ -647,59 +784,101 @@ obj.copyImage = function copyImage(arg0, closure_1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
-        c3 = 2;
-        if (0 === combined) {
+        c4 = 2;
+        if (0 === c3) {
           if (arg0 === 1) {
-            c3 = 3;
+            c4 = 3;
             throw arg1;
           } else if (arg0 === 2) {
-            c3 = 3;
+            c4 = 3;
             obj = { value: null, done: true };
             obj[0] = arg1;
             return obj;
           } else {
-            let closure_1 = tmp5;
-            let closure_0 = tmp2;
-            closure_0 = undefined;
+            let combined = tmp5;
+            let closure_1 = tmp2;
+            let closure_0;
             closure_1 = undefined;
             combined = undefined;
-            outer1_1(38)(outer1_0(500).isPlatformEmbedded, "Copy image method called outside native app");
-            outer1_1(38)(typeof outer1_6.clipboard.copyImage === "function", "Copy image not supported");
-            combined = 1;
+            outer1_1(outer1_2[3])(outer1_0(outer1_2[5]).isPlatformEmbedded, "Copy image method called outside native app");
+            outer1_1(outer1_2[3])(typeof outer1_6.clipboard.copyImage === "function", "Copy image not supported");
             c3 = 1;
+            c4 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_27(outer1_0);
+            obj1[0] = outer1_28(outer1_0);
             return obj1;
           }
+        } else if (1 === tmp5) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw arg1;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj2 = { value: null, done: true };
+            obj2[0] = arg1;
+            return obj2;
+          } else {
+            closure_0 = arg1;
+            closure_1 = outer1_0(outer1_2[11]).decideFileExtension(outer1_0, outer1_1);
+            if (null != closure_1) {
+              if (outer1_8.has(closure_1)) {
+                closure_0 = outer1_1;
+                if (outer1_1 == null) {
+                  const _HermesInternal2 = HermesInternal;
+                  closure_0 = "image/" + outer1_1;
+                }
+                c3 = 2;
+                c4 = 1;
+                const obj3 = { value: null, done: false };
+                obj3[0] = (function transcodeImageToPng(arg0, closure_0) {
+                  const self = this;
+                  const apply = closure_29.apply;
+                  if (typeof apply === "unknown") {
+                    let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+                  } else {
+                    applyArgumentsResult = apply(self, arguments);
+                  }
+                  return applyArgumentsResult;
+                })(closure_0, closure_0);
+                return obj3;
+              }
+            }
+            if (null == closure_1) {
+              combined = closure_0;
+              const clipboard2 = outer1_6.clipboard;
+              const _Buffer2 = Buffer;
+              clipboard2.copyImage(Buffer.from(closure_0), combined);
+              c4 = 3;
+            }
+            const _HermesInternal = HermesInternal;
+            combined = "image." + closure_1;
+            const obj8 = outer1_0(outer1_2[11]);
+          }
         } else if (arg0 === 1) {
-          c3 = 3;
+          c4 = 3;
           throw arg1;
         } else if (arg0 === 2) {
-          c3 = 3;
-          obj = { value: null, done: true };
-          obj[0] = arg1;
-          return obj;
+          c4 = 3;
+          const obj4 = { value: null, done: true };
+          obj4[0] = arg1;
+          return obj4;
         } else {
           closure_0 = arg1;
-          closure_1 = outer1_0(5353).decideFileExtension(closure_0, closure_1);
-          if (null == closure_1) {
-            combined = closure_0;
-            const clipboard = outer1_6.clipboard;
-            const _Buffer = Buffer;
-            clipboard.copyImage(Buffer.from(closure_0), combined);
-            c3 = 3;
-          }
-          const _HermesInternal = HermesInternal;
-          combined = "image." + closure_1;
-          const obj5 = outer1_0(5353);
+          const clipboard = outer1_6.clipboard;
+          const _Buffer = Buffer;
+          clipboard.copyImage(Buffer.from(closure_0), "image.png");
+          c4 = 3;
+          obj = { value: null, done: true };
+          obj[0] = undefined;
+          return obj;
         }
-      } catch (tmp22) {
-        c3 = tmp;
-        throw tmp22;
+      } catch (tmp42) {
+        c4 = tmp;
+        throw tmp42;
       }
     }
   })();
@@ -719,7 +898,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -757,7 +936,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
           const _Buffer = Buffer;
           clipboard.copyImage(Buffer.from(closure_0), closure_1);
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         c3 = tmp;
@@ -766,13 +945,13 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
     }
   })();
 };
-obj.canSaveImage = function canSaveImage(closure_0, contentType) {
-  if (null != closure_0) {
+obj.canSaveImage = function canSaveImage(outer1_0, contentType) {
+  if (null != outer1_0) {
     if (require(500) /* set */.isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(5353).decideFileExtension(closure_0, contentType);
+      const decideFileExtensionResult = tmp(5354).decideFileExtension(outer1_0, contentType);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
-        hasItem = set1.has(decideFileExtensionResult);
+        hasItem = set2.has(decideFileExtensionResult);
       }
       return hasItem;
     }
@@ -796,7 +975,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -826,7 +1005,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
             if (null == toURLSafeResult) {
               c10 = 3;
               const obj1 = { value: null, done: true };
-              obj1[0] = outer1_23.ERRORED;
+              obj1[0] = outer1_24.ERRORED;
               return obj1;
             } else {
               const parts = toURLSafeResult.pathname.split("/");
@@ -835,17 +1014,17 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
               if (arr == null) {
                 closure_0 = "unknown";
               }
-              const str = outer1_24(closure_0);
+              const str = outer1_25(closure_0);
               closure_0 = str;
               const searchParams = toURLSafeResult.searchParams;
               let str2 = searchParams.get("format");
               if (null != str2) {
-                str2 = str2.replace(outer1_21, "").toLowerCase();
+                str2 = str2.replace(outer1_22, "").toLowerCase();
                 if (str2.length > 0) {
                   const _HermesInternal2 = HermesInternal;
-                  closure_0 = "" + str.replace(outer1_22, "") + "." + str2;
+                  closure_0 = "" + str.replace(outer1_23, "") + "." + str2;
                 }
-                const str3 = str2.replace(outer1_21, "");
+                const str3 = str2.replace(outer1_22, "");
               } else if (!str.includes(".")) {
                 let obj8 = outer1_0(outer1_2[11]);
                 const decideFileExtensionResult = obj8.decideFileExtension(tmp54, outer1_1);
@@ -860,7 +1039,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
                 const _HermesInternal = HermesInternal;
                 closure_0 = "" + str + "." + closure_1;
               }
-              tmp54 = outer1_27(tmp54);
+              tmp54 = outer1_28(tmp54);
               c9 = 1;
               c10 = 1;
               const str12 = toURLSafeResult.pathname;
@@ -881,7 +1060,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
             const _Buffer = Buffer;
             const outer1_4 = Buffer.from(outer1_3);
             const Storage2 = outer1_0(outer1_2[6]).Storage;
-            let outer1_5 = Storage2.get(outer1_17);
+            let outer1_5 = Storage2.get(outer1_18);
             if (typeof outer1_5 !== "string") {
               outer1_5 = undefined;
             }
@@ -914,7 +1093,7 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
           c8 = 0;
           c10 = 3;
           const obj5 = { value: null, done: true };
-          obj5[0] = outer1_23.ERRORED;
+          obj5[0] = outer1_24.ERRORED;
           return obj5;
         } else {
           if (3 === tmp8) {
@@ -931,12 +1110,12 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
               if (null == arg1) {
                 c10 = 3;
                 const obj7 = { value: null, done: true };
-                obj7[0] = outer1_23.ERRORED;
+                obj7[0] = outer1_24.ERRORED;
                 return obj7;
               } else if (closure_1.canceledByUser) {
                 c10 = 3;
                 obj8 = { value: null, done: true };
-                obj8[0] = outer1_23.CANCELED;
+                obj8[0] = outer1_24.CANCELED;
                 return obj8;
               } else {
                 directory = closure_1.directory;
@@ -958,12 +1137,12 @@ obj.saveImage = function saveImage(arg0, arg1, arg2) {
           if (null != directory) {
             if ("" !== directory) {
               const Storage = outer1_0(outer1_2[6]).Storage;
-              const result = Storage.set(outer1_17, directory);
-              const SAVED = outer1_23.SAVED;
+              const result = Storage.set(outer1_18, directory);
+              const SAVED = outer1_24.SAVED;
             }
             c10 = 3;
           }
-          const ERRORED = outer1_23.ERRORED;
+          const ERRORED = outer1_24.ERRORED;
         }
       } catch (tmp56) {
         let closure_7 = tmp56;
@@ -992,7 +1171,7 @@ obj.saveFile = function saveFile(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1031,12 +1210,12 @@ obj.saveFile = function saveFile(arg0, arg1) {
                 closure_0 = "unknown";
               }
               if (null == outer1_1) {
-                closure_0 = outer1_24(tmp19);
+                closure_0 = outer1_25(tmp19);
               }
               c4 = 1;
               c5 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_25(tmp33);
+              obj1[0] = outer1_26(tmp33);
               return obj1;
             }
             const obj8 = outer1_1(outer1_2[12]);
@@ -1202,19 +1381,21 @@ obj.getOpenH264LibraryPath = function getOpenH264LibraryPath() {
     return openH264LibraryPathSync;
   }
 };
-obj.canCopyImage = function canCopyImage(closure_0) {
+obj.canCopyImage = function canCopyImage(outer1_0) {
   if (require(500) /* set */.isPlatformEmbedded) {
     if (typeof DiscordNative.clipboard.copyImage !== "function") {
       return false;
     } else {
       if (null != tmp) {
-        const decideFileExtensionResult = tmp2(5353).decideFileExtension(tmp, undefined);
+        const decideFileExtensionResult = tmp2(5354).decideFileExtension(tmp, undefined);
         if (null != decideFileExtensionResult) {
           if (!set.has(decideFileExtensionResult)) {
-            return false;
+            if (!set1.has(decideFileExtensionResult)) {
+              return false;
+            }
           }
         }
-        const tmp2Result = tmp2(5353);
+        const tmp2Result = tmp2(5354);
       }
       return true;
     }
@@ -1328,7 +1509,7 @@ obj.waitForIPCReady = function waitForIPCReady() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1451,7 +1632,7 @@ obj.close = function close(arg0) {
   _window.close(arg0);
 };
 obj.clearNavigationHistory = function clearNavigationHistory() {
-  backwardCompatSend(require(5352) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
+  backwardCompatSend(require(5353) /* IPCEvents */.IPCEvents.NAVIGATION_HISTORY_CLEAR);
 };
 obj.setAlwaysOnTop = function setAlwaysOnTop(arg0, arg1) {
   if (typeof DiscordNative.window.setAlwaysOnTop === "function") {
@@ -1473,7 +1654,7 @@ obj.isAlwaysOnTop = function isAlwaysOnTop(outer1_0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1547,7 +1728,7 @@ obj.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5352).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(5353).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }
@@ -1899,7 +2080,7 @@ obj.stopCPUProfiling = function stopCPUProfiling() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -2169,7 +2350,7 @@ obj.crash = function crash(arg0) {
   return flag;
 };
 obj.setApplicationBackgroundColor = function setApplicationBackgroundColor(arg0) {
-  this.sendIPC(require(5352) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
+  this.sendIPC(require(5353) /* IPCEvents */.IPCEvents.SETTINGS_UPDATE_BACKGROUND_COLOR, arg0);
 };
 obj.initializeExitHook = function initializeExitHook() {
   const initializeExitHook = this.getDiscordUtils().initializeExitHook;
@@ -2233,7 +2414,7 @@ obj.GetWindowFullscreenTypeByPid = function GetWindowFullscreenTypeByPid(arg0, a
     windowFullscreenTypeByPid = arg2;
   }
   if (windowFullscreenTypeByPid == null) {
-    windowFullscreenTypeByPid = require(4234) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
+    windowFullscreenTypeByPid = require(4235) /* GuildThemeSourcePreference */.RunningProcessFullscreenType.UNKNOWN;
   }
   return windowFullscreenTypeByPid;
 };
@@ -2245,7 +2426,7 @@ obj.GetWindowFullscreenTypeExtraByPid = function GetWindowFullscreenTypeExtraByP
     }
     return windowFullscreenTypeExtraByPid;
   }
-  windowFullscreenTypeExtraByPid = { quns: require(4234) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
+  windowFullscreenTypeExtraByPid = { quns: require(4235) /* GuildThemeSourcePreference */.QueryUserNotificationState.QUNS_UNKNOWN };
 };
 obj.SetGPUBoostEnabledByPid = function SetGPUBoostEnabledByPid(arg0, arg1) {
   const setGPUBoostEnabledByPid = this.getDiscordUtils().setGPUBoostEnabledByPid;
@@ -2408,8 +2589,8 @@ obj.ToolServiceSetAllowed = function ToolServiceSetAllowed(arg0) {
 obj.isModuleVersionAtLeast = function isModuleVersionAtLeast(arg0, stable) {
   let tmp7;
   let tmp9;
-  let items = closure_9;
-  if (closure_9 == null) {
+  let items = closure_10;
+  if (closure_10 == null) {
     items = [0, 0, 0];
   }
   const items1 = [...items];
@@ -2539,7 +2720,7 @@ obj.appViewed = function appViewed() {
     const self = this;
     const _performance = performance;
     performance.mark("app_viewed");
-    this.sendIPC(require(5352) /* IPCEvents */.IPCEvents.APP_VIEWED);
+    this.sendIPC(require(5353) /* IPCEvents */.IPCEvents.APP_VIEWED);
   }
 };
 obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(arg0) {
@@ -2547,17 +2728,17 @@ obj.appFirstRenderAfterReadyPayload = function appFirstRenderAfterReadyPayload(a
     const self = this;
     const _performance = performance;
     performance.mark("app_first_render_after_ready_payload");
-    this.sendIPC(require(5352) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
+    this.sendIPC(require(5353) /* IPCEvents */.IPCEvents.APP_FIRST_RENDER_AFTER_READY_PAYLOAD, arg0);
   }
 };
 obj.appLoaded = function appLoaded() {
-  backwardCompatSend(require(5352) /* IPCEvents */.IPCEvents.APP_LOADED);
+  backwardCompatSend(require(5353) /* IPCEvents */.IPCEvents.APP_LOADED);
 };
 obj.indexLoadedAsync = function indexLoadedAsync() {
-  backwardCompatSend(require(5352) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
+  backwardCompatSend(require(5353) /* IPCEvents */.IPCEvents.APP_ASYNC_INDEX_TSX_LOADED);
 };
 obj.setUseRequireModuleCache = function setUseRequireModuleCache(arg0) {
-  let closure_13 = arg0;
+  let closure_14 = arg0;
 };
 obj.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
   let closure_0 = arg0;
@@ -2574,7 +2755,7 @@ obj.GetSystemGpuStats = function GetSystemGpuStats(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

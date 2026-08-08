@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 8223
+// Module ID: 8282
+// Function ID: 8283
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [4301, 589, 8223, 2]
+// Dependencies: [4302, 589, 8283, 2]
 // Exports: default
 
-// Module 8222 (useMaybeFetchCollectiblesCategories)
+// Module 8282 (useMaybeFetchCollectiblesCategories)
 import getUserAgnosticState from "getUserAgnosticState";
 
 const require = arg1;
@@ -36,5 +36,5 @@ export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   if (paymentGateway != null) {
     noOp = paymentGateway.noOp;
   }
-  return require(8223) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
+  return require(8283) /* useMaybeFetchCollectiblesCategoriesShared */.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
 };

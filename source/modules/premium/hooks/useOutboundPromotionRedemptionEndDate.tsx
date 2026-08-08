@@ -1,10 +1,10 @@
-// Module ID: 12757
-// Function ID: 12758
+// Module ID: 12827
+// Function ID: 12828
 // Name: useOutboundPromotionRedemptionEndDate
 // Dependencies: [19, 3883, 3971, 2]
 // Exports: default
 
-// Module 12757 (useOutboundPromotionRedemptionEndDate)
+// Module 12827 (useOutboundPromotionRedemptionEndDate)
 import noop from "noop";
 import module_30 from "module_30";
 import importDefaultResult from "t";

@@ -1,10 +1,10 @@
-// Module ID: 10365
-// Function ID: 10366
+// Module ID: 10431
+// Function ID: 10432
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4302, 712, 1481, 5327, 10366, 10367, 4298, 1236, 4712, 4507, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1481, 5328, 10432, 10433, 4299, 1236, 4714, 4509, 2]
 // Exports: default
 
-// Module 10365 (GiftCodeRedeemError)
+// Module 10431 (GiftCodeRedeemError)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,16 +35,16 @@ export default function GiftCodeRedeemError(children) {
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: null };
   if (theme.dark) {
-    let tmp9Result = tmp9(10366);
+    let tmp9Result = tmp9(10432);
   } else {
-    tmp9Result = tmp9(10367);
+    tmp9Result = tmp9(10433);
   }
   const items = [closure_6(closure_3, { source: tmp9Result }), , ];
   const obj1 = { variant: "heading-xl/bold", style: tmp.header, children: null };
   const intl = tmp2(1236).intl;
   obj1[2] = intl.formatToMarkdownString(require(1236) /* getSystemLocale */.t.JUvC0s, {});
-  items[1] = closure_6(require(4298) /* Text */.Text, obj1);
-  items[2] = closure_6(require(4298) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
+  items[1] = closure_6(require(4299) /* Text */.Text, obj1);
+  items[2] = closure_6(require(4299) /* Text */.Text, { variant: "text-lg/medium", style: tmp.message, children: children.message });
   obj[2] = items;
   const items1 = [closure_7(closure_5, obj), ];
   const obj3 = { style: tmp.footer, children: null };
@@ -54,8 +54,8 @@ export default function GiftCodeRedeemError(children) {
   obj4[2] = function onPress() {
     return callback(table[12]).pop();
   };
-  obj3[1] = closure_6(require(4712) /* Button */.Button, obj4);
+  obj3[1] = closure_6(require(4714) /* Button */.Button, obj4);
   items1[1] = closure_6(closure_4, obj3);
   obj[2] = items1;
-  return closure_7(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  return closure_7(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 };

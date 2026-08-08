@@ -1,10 +1,10 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8903
+// Function ID: 8904
 // Name: WEB_OPEN
-// Dependencies: [676, 4998, 500, 2]
+// Dependencies: [676, 5000, 500, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8843 (WEB_OPEN)
+// Module 8903 (WEB_OPEN)
 import set from "set";
 import set from "set";
 

@@ -1,10 +1,10 @@
-// Module ID: 7092
-// Function ID: 7093
+// Module ID: 7152
+// Function ID: 7153
 // Name: trackAppDirectoryProfileEmbed
-// Dependencies: [1960, 4118, 676, 698, 2]
+// Dependencies: [1960, 4124, 676, 698, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7092 (trackAppDirectoryProfileEmbed)
+// Module 7152 (trackAppDirectoryProfileEmbed)
 import handleConnectionOpen from "handleConnectionOpen";
 import closure_3 from "handleConnectionOpen";
 import { AnalyticEvents } from "ME";

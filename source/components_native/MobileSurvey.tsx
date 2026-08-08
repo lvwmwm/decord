@@ -1,10 +1,10 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 15986
+// Function ID: 15987
 // Name: MobileSurvey
-// Dependencies: [5, 19, 8500, 676, 21, 4302, 589, 698, 8501, 4730, 1236, 3998, 1297, 712, 10483, 2]
+// Dependencies: [5, 19, 8560, 676, 21, 4303, 589, 698, 8561, 4732, 1236, 3998, 1297, 712, 10549, 2]
 // Exports: default
 
-// Module 15911 (MobileSurvey)
+// Module 15986 (MobileSurvey)
 import closure_3 from "createCacheKey";
 import noop from "noop";
 import fetchSurveyIfNeeded from "fetchSurveyIfNeeded";
@@ -38,7 +38,7 @@ export default function MobileSurvey() {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -70,7 +70,7 @@ export default function MobileSurvey() {
                 return obj;
               }
               c0 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } catch (tmp9) {
               c0 = tmp;
               throw tmp9;
@@ -123,8 +123,8 @@ export default function MobileSurvey() {
       obj[3] = stateFromStores(outer1_2[14]);
       return outer1_7(lib(outer1_2[12]).Icon, obj);
     };
-    tmp5 = jsx(stateFromStores(4730), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
-    const tmp8 = stateFromStores(4730);
+    tmp5 = jsx(stateFromStores(4732), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
+    const tmp8 = stateFromStores(4732);
   }
   return tmp5;
 };

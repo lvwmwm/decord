@@ -1,10 +1,10 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16528
+// Function ID: 16529
 // Name: isParentalConsentCheckEnabled
 // Dependencies: [1452, 2]
 // Exports: isParentalConsentCheckEnabled
 
-// Module 16451 (isParentalConsentCheckEnabled)
+// Module 16528 (isParentalConsentCheckEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

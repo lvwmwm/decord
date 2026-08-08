@@ -1,10 +1,10 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10718
+// Function ID: 10719
 // Name: useCurrentEmbeddedActivity
 // Dependencies: [1371, 589, 2]
 // Exports: default
 
-// Module 10652 (useCurrentEmbeddedActivity)
+// Module 10718 (useCurrentEmbeddedActivity)
 import participantFromServer from "participantFromServer";
 
 const require = arg1;

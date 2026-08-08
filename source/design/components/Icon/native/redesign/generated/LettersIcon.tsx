@@ -1,10 +1,10 @@
-// Module ID: 7664
-// Function ID: 7665
+// Module ID: 7724
+// Function ID: 7725
 // Name: LettersIcon
-// Dependencies: [19, 21, 712, 4004, 7665, 2]
+// Dependencies: [19, 21, 712, 4004, 7725, 2]
 // Exports: LettersIcon
 
-// Module 7664 (LettersIcon)
+// Module 7724 (LettersIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LettersIcon = function LettersIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7665) /* registerAsset */;
+  obj[0] = require(7725) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

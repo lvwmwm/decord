@@ -1,10 +1,10 @@
-// Module ID: 5795
-// Function ID: 5796
+// Module ID: 5855
+// Function ID: 5856
 // Name: formatSingleCurrencyPrice
-// Dependencies: [1975, 3949, 1905, 505, 500, 5796, 5798, 5800, 1236, 3947, 2]
+// Dependencies: [1975, 3949, 1905, 505, 500, 5856, 5858, 5860, 1236, 3947, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatSubscriptionPlanRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 5795 (formatSingleCurrencyPrice)
+// Module 5855 (formatSingleCurrencyPrice)
 import _getSystemLocale from "_getSystemLocale";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -46,7 +46,7 @@ function formatSingleCurrencyPrice(result, BGN, localeOverride) {
   if (tmp11) {
     obj.minimumFractionDigits = 0;
   }
-  return require(5796) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
+  return require(5856) /* CurrencyCodes */.formatPrice(result, BGN, localeOverride, obj);
 }
 function formatPrice(amount, currency, localeOverride, localeOverride) {
   const timestamp = Date.now();
@@ -54,16 +54,16 @@ function formatPrice(amount, currency, localeOverride, localeOverride) {
   if (timestamp < date.getTime()) {
     const platformName = require(500) /* set */.getPlatformName();
     if ("android" === platformName) {
-      let ipCountryCode = tmp2(5798).default.getUserCountry();
-      const _default2 = tmp2(5798).default;
+      let ipCountryCode = tmp2(5858).default.getUserCountry();
+      const _default2 = tmp2(5858).default;
     } else if ("ios" === platformName) {
-      const storeFront = tmp2(5800).default.getStoreFront();
+      const storeFront = tmp2(5860).default.getStoreFront();
       let country;
       if (storeFront != null) {
         country = storeFront.country;
       }
       ipCountryCode = country;
-      const _default = tmp2(5800).default;
+      const _default = tmp2(5860).default;
     } else {
       ipCountryCode = ipCountryCode.ipCountryCode;
     }

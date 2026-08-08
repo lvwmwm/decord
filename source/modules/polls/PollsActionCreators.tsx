@@ -1,9 +1,9 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10282
+// Function ID: 10283
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 3930, 6994, 1218, 1372, 4638, 5130, 4519, 4637, 8261, 676, 38, 4640, 1236, 5231, 10217, 8260, 4496, 12, 589, 709, 7162, 10222, 4147, 8265, 6857, 8298, 4201, 2]
+// Dependencies: [5, 3930, 7054, 1218, 1372, 4640, 5131, 4521, 4639, 8321, 676, 38, 4642, 1236, 5232, 10283, 8320, 4498, 12, 589, 709, 7222, 10288, 4153, 8325, 6917, 8358, 4202, 2]
 
-// Module 10216 (getPollVoteEventProperties)
+// Module 10282 (getPollVoteEventProperties)
 import handleChanged from "handleChanged";
 import initialize from "initialize";
 import processMessage from "processMessage";
@@ -60,7 +60,7 @@ function showLurkingAlert(guildId) {
   let title;
   guildId = guildId.guildId;
   ({ title, body } = guildId);
-  let obj = importDefault(4640);
+  let obj = importDefault(4642);
   obj = { title, body, confirmText: null, cancelText: null, onConfirm: null };
   const intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t["9VLmlZ"]);
@@ -97,8 +97,8 @@ function handleShowVotesForAnswer(messageId) {
         obj = { source: outer1_16.POLL_ALERT };
         obj.joinGuild(guild_id, obj);
       };
-      importDefault(4640).show(obj);
-      const obj3 = importDefault(4640);
+      importDefault(4642).show(obj);
+      const obj3 = importDefault(4642);
     } else {
       const message = store.getMessage(channelId, messageId.messageId);
       if (null != message) {
@@ -108,7 +108,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(10217);
+            obj = importAll(10283);
             obj = { message: null, initialAnswerId: null };
             obj[0] = message;
             obj[1] = answerId;
@@ -185,7 +185,7 @@ function _optimisticallySetAnswers() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -214,7 +214,7 @@ function _optimisticallySetAnswers() {
               let ensureGuildLoaded;
               c4 = 1;
               c5 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -260,7 +260,7 @@ function _optimisticallySetAnswers() {
                     let tmp6 = processMessage;
                     obj[4] = processMessage;
                     let tmp7 = _undefined;
-                    obj[6] = _undefined(7162).ReactionTypes.VOTE;
+                    obj[6] = _undefined(7222).ReactionTypes.VOTE;
                     dispatchResult = obj.dispatch(obj);
                     continue;
                   }
@@ -285,7 +285,7 @@ function _optimisticallySetAnswers() {
               return obj;
             }
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c5 = tmp;
@@ -328,7 +328,7 @@ function _handlePollSubmitVote() {
       let items = tmp3;
       let throwTypeErrorResult = callback;
       ({ channelId: c0, messageId: closure_1 } = callback);
-      yield "PX_8";
+      yield "ct";
       if (1 === tmp7) {
         if (arg0 === 1) {
           let c9 = 3;
@@ -535,7 +535,7 @@ function _handleClearPollVote() {
       let c1;
       c1 = 0;
       ({ channelId: c0, messageId: c1 } = callback);
-      yield "PX_8";
+      yield "ct";
       const channel2 = channel.getChannel(callback);
       if (null != channel2) {
         if (lurking.isLurking(channel2.guild_id)) {
@@ -570,7 +570,7 @@ function _handleClearPollVote() {
           return obj4;
         }
       }
-      yield "T";
+      yield "HermesInternal";
       return arg1;
     })();
     iter.next();
@@ -606,7 +606,7 @@ function _handlePollActionTapped() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -629,7 +629,7 @@ function _handlePollActionTapped() {
               ({ channelId: c0, messageId: c1, type: c2 } = c0);
               table = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -787,7 +787,7 @@ function _createPoll() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -817,7 +817,7 @@ function _createPoll() {
               let obj2;
               c5 = 1;
               v0 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -888,16 +888,16 @@ function _createPoll() {
               c5 = 3;
               v0 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = lib2(6857).sendPollMessage(lib.id, obj2, obj4);
+              obj5[0] = lib2(6917).sendPollMessage(lib.id, obj2, obj4);
               return obj5;
             }
           } else if (2 === tmp7) {
             c4 = 0;
             let recomputeGuild = dependencyMap;
-            if (recomputeGuild instanceof lib(4201).APIError) {
+            if (recomputeGuild instanceof lib(4202).APIError) {
               let aPIError = recomputeGuild;
             } else {
-              aPIError = new lib(4201).APIError(recomputeGuild);
+              aPIError = new lib(4202).APIError(recomputeGuild);
             }
             if ("poll" === aPIError.getAnyErrorMessage()) {
               if (null != recomputeGuild.text) {
@@ -925,7 +925,7 @@ function _createPoll() {
             }
             c4 = 0;
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp33) {
           dependencyMap = tmp33;
@@ -970,7 +970,7 @@ function _endPollEarly() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -992,7 +992,7 @@ function _endPollEarly() {
               ({ channelId: c0, messageId: c1 } = callback);
               dependencyMap = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1012,7 +1012,7 @@ function _endPollEarly() {
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback2(4640).confirm(obj2);
+              obj3[0] = callback2(4642).confirm(obj2);
               return obj3;
             }
           } else {
@@ -1026,7 +1026,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(10222);
+                obj1 = callback3(10288);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;
@@ -1046,7 +1046,7 @@ function _endPollEarly() {
               return obj;
             }
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c4 = tmp;

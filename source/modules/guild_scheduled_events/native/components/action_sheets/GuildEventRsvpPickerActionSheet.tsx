@@ -1,10 +1,10 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 9064
+// Function ID: 9065
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 1378, 21, 4302, 712, 8886, 1236, 5396, 5395, 5327, 7925, 7924, 4712, 8901, 4270, 2]
+// Dependencies: [32, 19, 17, 1378, 21, 4303, 712, 8946, 1236, 5397, 5396, 5328, 7985, 7984, 4714, 8961, 4271, 2]
 // Exports: default
 
-// Module 9004 (GuildEventRsvpPickerActionSheet)
+// Module 9064 (GuildEventRsvpPickerActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -33,9 +33,9 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   let first;
   let c5;
   let tmp = createCacheKey();
-  const tmp4 = callback(first.useState(event(8886).ResponseOptions.SERIES), 2);
+  const tmp4 = callback(first.useState(event(8946).ResponseOptions.SERIES), 2);
   first = tmp4[0];
-  let obj = event(8886);
+  let obj = event(8946);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (existingRsvp != null) {
@@ -51,12 +51,12 @@ export default function GuildEventRsvpPickerActionSheet(event) {
     stringResult = intl.string(tmp2(1236).t["8MPCVr"]);
   }
   obj = { header: null, children: null };
-  obj[0] = callback2(event(5395).BottomSheetTitleHeader, { title: stringResult });
+  obj[0] = callback2(event(5396).BottomSheetTitleHeader, { title: stringResult });
   obj = { bottom: true, style: tmp.container, children: null };
   const obj1 = { defaultValue: first, onChange: tmp4[1], hasIcons: false, children: null };
-  const responseOptions = event(8886).getResponseOptions();
+  const responseOptions = event(8946).getResponseOptions();
   obj1[3] = responseOptions.map((value) => callback2(event(table[13]).TableRadioRow, { value: value.value, label: value.name }, value.value));
-  const items = [callback2(event(7925).TableRadioGroup, obj1), ];
+  const items = [callback2(event(7985).TableRadioGroup, obj1), ];
   const obj2 = { style: tmp.buttonWrapper, children: null };
   const obj3 = {
     onPress() {
@@ -76,9 +76,9 @@ export default function GuildEventRsvpPickerActionSheet(event) {
   };
   const intl3 = tmp2(1236).intl;
   obj3[1] = intl3.string(event(1236).t.TyCVIq);
-  obj2[1] = callback2(event(4712).Button, obj3);
+  obj2[1] = callback2(event(4714).Button, obj3);
   items[1] = callback2(c5, obj2);
   obj[2] = items;
-  obj[1] = callback3(event(5327).SafeAreaPaddingView, obj);
-  return callback2(event(5396).BottomSheet, obj);
+  obj[1] = callback3(event(5328).SafeAreaPaddingView, obj);
+  return callback2(event(5397).BottomSheet, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 5331
-// Function ID: 5332
+// Module ID: 5332
+// Function ID: 5333
 // Name: TableRowDivider
-// Dependencies: [19, 17, 5332, 21, 4302, 712, 5157, 1348, 4005, 2]
+// Dependencies: [19, 17, 5333, 21, 4303, 712, 5158, 1348, 4005, 2]
 // Exports: TableRowDivider
 
-// Module 5331 (TableRowDivider)
+// Module 5332 (TableRowDivider)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { getTableDividerWidth } from "TABLE_ROW_HEIGHT";
@@ -28,7 +28,7 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   if (arg1) {
     let DIVIDER_BACKGROUND = importDefault(712).colors.BORDER_SUBTLE;
   } else {
-    DIVIDER_BACKGROUND = require(5157) /* result */.DIVIDER_BACKGROUND;
+    DIVIDER_BACKGROUND = require(5158) /* result */.DIVIDER_BACKGROUND;
   }
   obj[1] = DIVIDER_BACKGROUND;
   obj[1] = obj;

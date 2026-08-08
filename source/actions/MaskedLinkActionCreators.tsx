@@ -1,10 +1,10 @@
-// Module ID: 12162
-// Function ID: 12163
+// Module ID: 12229
+// Function ID: 12230
 // Name: trustDomain
 // Dependencies: [709, 2]
 // Exports: trustDomain, trustProtocol
 
-// Module 12162 (trustDomain)
+// Module 12229 (trustDomain)
 const result = require("set").fileFinishedImporting("actions/MaskedLinkActionCreators.tsx");
 
 export const trustDomain = function trustDomain(url) {

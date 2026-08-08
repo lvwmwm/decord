@@ -1,9 +1,9 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12943
+// Function ID: 12944
 // Name: guildId
-// Dependencies: [4322, 4321, 1372, 4349, 4394, 676, 12871, 3974, 1384, 4359, 2]
+// Dependencies: [4323, 4322, 1372, 4351, 4396, 676, 12941, 3974, 1384, 4361, 2]
 
-// Module 12873 (guildId)
+// Module 12943 (guildId)
 import initialize from "initialize";
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -44,7 +44,7 @@ prototype["computeVoiceFlags"] = function computeVoiceFlags() {
   const obj = require(1384) /* hasFlag */;
   const tmp4 = constants3;
   const setFlagResult = require(1384) /* hasFlag */.setFlag(0, constants3.ALLOW_VOICE_RECORDING, setting);
-  let isClipsEnabledResult = require(4359) /* isClipsEnabled */.isClipsEnabled();
+  let isClipsEnabledResult = require(4361) /* isClipsEnabled */.isClipsEnabled();
   if (isClipsEnabledResult) {
     currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
     let state;
@@ -63,7 +63,7 @@ prototype["computeVoiceFlags"] = function computeVoiceFlags() {
     isClipsEnabledResult = tmp11;
     obj3 = currentUserActiveStream;
   }
-  let tmpResult = tmp(4359);
+  let tmpResult = tmp(4361);
   let result = tmpResult.isDecoupledClipsEnabled();
   if (result) {
     visibleGame = visibleGame.getVisibleGame();

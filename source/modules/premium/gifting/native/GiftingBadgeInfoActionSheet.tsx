@@ -1,10 +1,10 @@
-// Module ID: 9973
-// Function ID: 9974
+// Module ID: 10039
+// Function ID: 10040
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4294, 8730, 676, 21, 4302, 712, 1609, 589, 8726, 698, 5396, 4298, 1236, 2380, 9974, 2]
+// Dependencies: [19, 17, 4295, 8790, 676, 21, 4303, 712, 1609, 589, 8786, 698, 5397, 4299, 1236, 2380, 10040, 2]
 // Exports: default
 
-// Module 9973 (GiftingBadgeInfoActionSheet)
+// Module 10039 (GiftingBadgeInfoActionSheet)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -41,7 +41,7 @@ export default function GiftingBadgeInfoActionSheet() {
   const require = tmp;
   let obj = require(589) /* initialize */;
   let items = [map];
-  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8726).BadgeId.GIFTING));
+  const stateFromStores = obj.useStateFromStores(items, () => badgeById.getBadgeById(tmp(8786).BadgeId.GIFTING));
   let obj1 = require(589) /* initialize */;
   const items1 = [maybeApplyNoTextColorForLightCustomTheme];
   const importDefault = obj1.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
@@ -58,11 +58,11 @@ export default function GiftingBadgeInfoActionSheet() {
   let obj2 = { style: tmp.title, variant: "heading-xl/semibold", color: "text-strong", accessibilityRole: "header", children: null };
   let intl = require(1236) /* getSystemLocale */.intl;
   obj2[4] = intl.string(importDefault(2380)["0MB2C6"]);
-  const items3 = [callback(require(4298) /* Text */.Text, obj2), ];
+  const items3 = [callback(require(4299) /* Text */.Text, obj2), ];
   let obj3 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl2.string(importDefault(2380).k9sNVH);
-  items3[1] = callback(require(4298) /* Text */.Text, obj3);
+  items3[1] = callback(require(4299) /* Text */.Text, obj3);
   obj1[1] = items3;
   const items4 = [callback2(View, obj1), ];
   const obj4 = { style: tmp.tierCards, children: null };
@@ -118,5 +118,5 @@ export default function GiftingBadgeInfoActionSheet() {
   items4[1] = callback(View, obj4);
   obj[1] = items4;
   obj5[2] = callback2(View, obj);
-  return callback(require(5396) /* Background */.BottomSheet, obj5);
+  return callback(require(5397) /* Background */.BottomSheet, obj5);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 11657
+// Function ID: 11658
 // Name: newMemberActionFromServer
 // Dependencies: [1372, 676, 1351, 3934, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 11591 (newMemberActionFromServer)
+// Module 11657 (newMemberActionFromServer)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 

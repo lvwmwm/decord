@@ -1,9 +1,9 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16587
+// Function ID: 16588
 // Name: getCountrySelectorOpened
 // Dependencies: [589, 709, 2]
 
-// Module 16510 (getCountrySelectorOpened)
+// Module 16587 (getCountrySelectorOpened)
 import { Store } from "initialize";
 
 let c0 = false;

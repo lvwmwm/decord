@@ -1,10 +1,10 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14507
+// Function ID: 14508
 // Name: GradientThemeBackground
-// Dependencies: [19, 17, 1302, 14436, 505, 21, 4302, 712, 4146, 4011, 4846, 1297, 14438, 647, 4005, 14439, 4115, 4019, 4844, 1236, 2]
+// Dependencies: [19, 17, 1302, 14506, 505, 21, 4303, 712, 4152, 4011, 4848, 1297, 14508, 647, 4005, 14509, 4121, 4019, 4846, 1236, 2]
 // Exports: default
 
-// Module 14437 (GradientThemeBackground)
+// Module 14507 (GradientThemeBackground)
 import "getSystemLocale";
 import { View } from "useCheckboxA11yNative";
 import handleThemeChange from "handleThemeChange";
@@ -37,10 +37,10 @@ function GradientThemeBackground(arg0) {
   obj1[0] = obj2;
   obj1[1] = item;
   obj1[3] = isThemeDarkResult ? closure_10 : closure_11;
-  const items1 = [closure_6(importDefault(4846), obj1), ];
+  const items1 = [closure_6(importDefault(4848), obj1), ];
   if (isThemeLocked) {
     const obj3 = { source: null, style: null };
-    obj3[0] = importDefault(14438);
+    obj3[0] = importDefault(14508);
     obj3[1] = tmp4.lock;
     isThemeLocked = tmp7(require(1297) /* Button */.Icon, obj3);
   }
@@ -73,7 +73,7 @@ function DefaultThemeBackground(item) {
     obj1[0] = { alignSelf: "center", justifyContent: "center", flex: 1 };
     const obj2 = { fill: null };
     obj2[0] = token2;
-    obj1[1] = tmp9(importDefault(14439), obj2);
+    obj1[1] = tmp9(importDefault(14509), obj2);
     tmp9Result = tmp9(tmp10, obj1);
   }
   obj[1] = tmp9Result;
@@ -99,10 +99,10 @@ function CustomThemeBackground(arg0) {
   obj1[0] = obj2;
   obj1[2] = isThemeDarkResult ? closure_10 : closure_11;
   obj1[3] = item;
-  const items1 = [closure_6(require(4846) /* getMixedGradientColor */.CustomThemedGradient, obj1), ];
+  const items1 = [closure_6(require(4848) /* getMixedGradientColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
     const obj3 = { source: null, style: null };
-    obj3[0] = importDefault(14438);
+    obj3[0] = importDefault(14508);
     obj3[1] = tmp4.lock;
     isThemeLocked = tmp7(tmp(1297).Icon, obj3);
   }
@@ -148,14 +148,14 @@ export default function ThemeSelectorItem(onPress) {
   ({ themePreset, isPreview, isSelected, isNew } = onPress);
   const tmp = createCacheKey();
   if (isPreview) {
-    isPreview = themePreset.type !== require(4115) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
+    isPreview = themePreset.type !== require(4121) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME;
   }
-  if (themePreset.type === require(4115) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
+  if (themePreset.type === require(4121) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME) {
     let obj = { item: null };
     obj[0] = themePreset;
     let tmp8 = callback(DefaultThemeBackground, obj);
     let tmp9 = callback;
-  } else if (themePreset.type === tmp4(4115).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+  } else if (themePreset.type === tmp4(4121).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     obj = { item: null, isThemeLocked: null };
     obj[0] = themePreset;
     obj[1] = isPreview;
@@ -192,5 +192,5 @@ export default function ThemeSelectorItem(onPress) {
   items[1] = isNew;
   obj2[1] = items;
   obj1[7] = closure_7(View, obj2);
-  return tmp9(require(4844) /* PressableBase */.PressableOpacity, obj1);
+  return tmp9(require(4846) /* PressableBase */.PressableOpacity, obj1);
 };

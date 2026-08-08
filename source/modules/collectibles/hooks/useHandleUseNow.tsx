@@ -1,10 +1,10 @@
-// Module ID: 10065
-// Function ID: 10066
+// Module ID: 10131
+// Function ID: 10132
 // Name: useHandleUseNow
-// Dependencies: [5, 32, 19, 678, 1930, 1236, 9309, 10066, 8208, 8450, 2]
+// Dependencies: [5, 32, 19, 678, 1930, 1236, 9374, 10132, 8268, 8510, 2]
 // Exports: useHandleUseNow
 
-// Module 10065 (useHandleUseNow)
+// Module 10131 (useHandleUseNow)
 import getSystemLocale from "getSystemLocale";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -89,7 +89,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
               let c0;
               if (!outer1_8) {
                 c7 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 outer1_3(true);
                 const obj1 = {};

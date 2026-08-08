@@ -1,9 +1,9 @@
-// Module ID: 11592
-// Function ID: 11593
+// Module ID: 11658
+// Function ID: 11659
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4294, 5175, 1372, 1971, 676, 1906, 21, 4302, 712, 647, 4492, 4298, 1236, 1297, 11136, 5267, 1416, 3942, 11593, 11591, 4162, 4303, 11594, 4844, 1222, 7693, 5784, 2]
+// Dependencies: [32, 19, 17, 4295, 5176, 1372, 1971, 676, 1906, 21, 4303, 712, 647, 4494, 4299, 1236, 1297, 11202, 5268, 1416, 3942, 11659, 11657, 4036, 4304, 11660, 4846, 1222, 7753, 5844, 2]
 
-// Module 11592 (ActionChannelInfo)
+// Module 11658 (ActionChannelInfo)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getAvatarURL";
 import { View } from "registerAsset";
@@ -40,7 +40,7 @@ function ActionChannelInfo(action) {
     obj2[0] = tmp4;
     obj1[2] = intl.format(tmp(1236).t.MkzlDL, obj2);
   }
-  return closure_12(action(4298).Text, obj1);
+  return closure_12(action(4299).Text, obj1);
 }
 function ChannelActionEmoji(emoji) {
   emoji = emoji.emoji;
@@ -49,7 +49,7 @@ function ChannelActionEmoji(emoji) {
   let obj = { style: tmp.emojiPlaceholder, children: null };
   obj = { size: null, source: null };
   obj[0] = id(1297).Icon.Sizes.REFRESH_SMALL_16;
-  obj[1] = importDefault(11136);
+  obj[1] = importDefault(11202);
   obj[1] = callback(id(1297).Icon, obj);
   const tmp6 = callback(View, obj);
   id = undefined;
@@ -72,7 +72,7 @@ function ChannelActionEmoji(emoji) {
     obj = { style: null, source: null, resizeMode: "contain" };
     obj[0] = tmp.emoji;
     const obj1 = { uri: null };
-    let tmp5Result = tmp5(5267);
+    let tmp5Result = tmp5(5268);
     tmp5Result = tmp5(1416);
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj10[0], animated: obj10[1] } = stateFromStores);
@@ -89,7 +89,7 @@ function ChannelActionEmoji(emoji) {
         const obj3 = { style: null, variant: "heading-lg/normal", children: null };
         obj3[0] = tmp.textEmoji;
         obj3[2] = name;
-        tmp2Result = tmp2(tmp3(4298).Text, obj3);
+        tmp2Result = tmp2(tmp3(4299).Text, obj3);
       }
       tmp5Result2 = tmp5(3942);
     }
@@ -376,7 +376,7 @@ let closure_18 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_19 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(5784);
+  let obj = channel(5844);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [trackCommunicationDisabled];
   const stateFromStores = channel(647).useStateFromStores(items, () => {
@@ -407,7 +407,7 @@ const memoResult1 = importAllResult.memo((channel) => {
   let channelAction;
   let completed;
   channel = channel.channel;
-  let obj = require(11593) /* useMemberActionsForChannel */;
+  let obj = require(11659) /* useMemberActionsForChannel */;
   const memberActionsForChannel = obj.useMemberActionsForChannel(channel.guild_id, channel);
   ({ channelAction, completed } = memberActionsForChannel);
   let channelId;
@@ -415,11 +415,11 @@ const memoResult1 = importAllResult.memo((channel) => {
     channelId = channelAction.channelId;
   }
   let actionType;
-  const nextMemberAction = require(11593) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
+  const nextMemberAction = require(11659) /* useMemberActionsForChannel */.useNextMemberAction(channel.guild_id, channelId);
   if (channelAction != null) {
     actionType = channelAction.actionType;
   }
-  if (actionType !== require(11591) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
+  if (actionType !== require(11657) /* newMemberActionFromServer */.NewMemberActionTypes.VIEW) {
     obj = { channel: null };
     obj[0] = channel;
     let tmp7 = callback(closure_21, obj);

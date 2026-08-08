@@ -1,10 +1,10 @@
-// Module ID: 4626
-// Function ID: 4627
+// Module ID: 4628
+// Function ID: 4629
 // Name: _createStripeSetupIntent
 // Dependencies: [5, 676, 530, 2]
 // Exports: createSetupIntentForPaymentElements, createStripeSetupIntent
 
-// Module 4626 (_createStripeSetupIntent)
+// Module 4628 (_createStripeSetupIntent)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -20,7 +20,7 @@ function _createStripeSetupIntent() {
       if (obj1 === undefined) {
         obj1 = {};
       }
-      yield "PX_8";
+      yield "ct";
       const HTTP = obj1(table[2]).HTTP;
       const obj3 = { url: null, oldFormErrors: true, rejectWithError: true };
       obj3[0] = constants.BILLING_STRIPE_SETUP_INTENT_SECRET;
@@ -51,7 +51,7 @@ function _createSetupIntentForPaymentElements() {
       if (obj1 === undefined) {
         obj1 = {};
       }
-      yield "PX_8";
+      yield "ct";
       const HTTP = obj1(table[2]).HTTP;
       const obj3 = { url: null, oldFormErrors: true, rejectWithError: true, failImmediatelyWhenRateLimited: true };
       obj3[0] = constants.BILLING_STRIPE_SETUP_INTENT_SECRET_FOR_PAYMENT_ELEMENTS;

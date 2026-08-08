@@ -1,15 +1,15 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 9625
+// Function ID: 9626
 // Name: useScaledActionHeight
-// Dependencies: [4718, 4005, 712, 2]
+// Dependencies: [4720, 4005, 712, 2]
 // Exports: default
 
-// Module 9560 (useScaledActionHeight)
+// Module 9625 (useScaledActionHeight)
 const result = require("Themes").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledActionHeight.tsx");
 
 export default function useScaledActionHeight() {
-  const fontScale = require(4718) /* getFontScale */.useFontScale();
-  const obj = require(4718) /* getFontScale */;
+  const fontScale = require(4720) /* getFontScale */.useFontScale();
+  const obj = require(4720) /* getFontScale */;
   const token = require(4005) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_HEIGHT);
   const obj2 = require(4005) /* map */;
   const token1 = require(4005) /* map */.useToken(importDefault(712).modules.mobile.TABLE_ROW_CONTENT_HEIGHT);

@@ -1,10 +1,10 @@
-// Module ID: 9277
-// Function ID: 9278
+// Module ID: 9342
+// Function ID: 9343
 // Name: _navigateToGameAnnouncement
-// Dependencies: [5, 1891, 676, 38, 5896, 7698, 1222, 2]
+// Dependencies: [5, 1891, 676, 38, 5956, 7758, 1222, 2]
 // Exports: default
 
-// Module 9277 (_navigateToGameAnnouncement)
+// Module 9342 (_navigateToGameAnnouncement)
 import generateAcceptInviteOptions from "generateAcceptInviteOptions";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";
@@ -36,7 +36,7 @@ function _navigateToGameAnnouncement() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _navigateToGameAnnouncement() {
               let guild3;
               c3 = 1;
               guild = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -103,7 +103,7 @@ function _navigateToGameAnnouncement() {
                     if (null != set) {
                       if (!set.has(constants.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj5 = id(7698);
+                          let obj5 = id(7758);
                           const obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           let obj3 = { location: null };
@@ -117,7 +117,7 @@ function _navigateToGameAnnouncement() {
                         }
                       }
                     }
-                    let obj9 = lib(5896);
+                    let obj9 = lib(5956);
                     obj5 = { shouldNavigate: true, channelId: null, messageId: null, joinSource: null };
                     obj5[1] = dependencyMap;
                     obj5[2] = c3;
@@ -130,7 +130,7 @@ function _navigateToGameAnnouncement() {
                   }
                 }
                 guild = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else if (2 === tmp5) {
               if (arg0 === 1) {

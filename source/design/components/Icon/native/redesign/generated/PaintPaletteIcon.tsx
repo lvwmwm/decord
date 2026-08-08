@@ -1,10 +1,10 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7721
+// Function ID: 7722
 // Name: PaintPaletteIcon
-// Dependencies: [19, 21, 712, 4004, 7662, 2]
+// Dependencies: [19, 21, 712, 4004, 7722, 2]
 // Exports: PaintPaletteIcon
 
-// Module 7661 (PaintPaletteIcon)
+// Module 7721 (PaintPaletteIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PaintPaletteIcon = function PaintPaletteIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7662) /* registerAsset */;
+  obj[0] = require(7722) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

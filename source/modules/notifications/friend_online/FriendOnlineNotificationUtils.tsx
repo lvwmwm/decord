@@ -1,10 +1,10 @@
-// Module ID: 14617
-// Function ID: 14618
+// Module ID: 14687
+// Function ID: 14688
 // Name: onFriendOnlineNotificationSettingsChanged
 // Dependencies: [3941, 676, 3974, 698, 2]
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 14617 (onFriendOnlineNotificationSettingsChanged)
+// Module 14687 (onFriendOnlineNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 

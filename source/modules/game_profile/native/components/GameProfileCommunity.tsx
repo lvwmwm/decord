@@ -1,10 +1,10 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9331
+// Function ID: 9332
 // Name: GameProfileCommunityServer
-// Dependencies: [5, 32, 19, 17, 1374, 21, 4302, 712, 9221, 4286, 4291, 9267, 589, 9218, 5897, 9268, 1411, 4298, 1236, 5267, 1416, 5719, 9198, 1297, 4712, 2]
+// Dependencies: [5, 32, 19, 17, 1374, 21, 4303, 712, 9286, 4287, 4292, 9332, 589, 9283, 5957, 9333, 1411, 4299, 1236, 5268, 1416, 5779, 9263, 1297, 4714, 2]
 // Exports: default
 
-// Module 9266 (GameProfileCommunityServer)
+// Module 9331 (GameProfileCommunityServer)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import preload from "preload";
@@ -101,7 +101,7 @@ export default function GameProfileCommunityServer(game) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

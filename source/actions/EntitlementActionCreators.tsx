@@ -1,10 +1,10 @@
-// Module ID: 6802
-// Function ID: 6803
+// Module ID: 6862
+// Function ID: 6863
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 676, 709, 530, 4539, 2]
+// Dependencies: [5, 676, 709, 530, 4541, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 6802 (_fetchUserEntitlements)
+// Module 6862 (_fetchUserEntitlements)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -31,7 +31,7 @@ function _fetchUserEntitlements() {
         flag3 = true;
       }
       const entitlementType = tmp41.entitlementType;
-      yield "PX_8";
+      yield "ct";
       flag2(flag3[2]).dispatch({ type: "ENTITLEMENTS_FETCH_FOR_USER_START" });
       let c4 = 1;
       const HTTP = flag(flag3[3]).HTTP;

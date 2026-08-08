@@ -1,8 +1,8 @@
-// Module ID: 8292
-// Function ID: 8293
-// Dependencies: [676, 530, 6857, 1236, 2]
+// Module ID: 8352
+// Function ID: 8353
+// Dependencies: [676, 530, 6917, 1236, 2]
 
-// Module 8292
+// Module 8352
 import { Endpoints } from "ME";
 
 let result = require("trackInvite").fileFinishedImporting("actions/ChangeNicknameActionCreators.tsx");

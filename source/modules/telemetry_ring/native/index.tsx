@@ -1,7 +1,7 @@
 // Module ID: 1210
 // Function ID: 1211
 // Name: TelemetryRingLifecycle
-// Dependencies: [2, 1211, 13385, 13392, 13393, 13386, 13389]
+// Dependencies: [2, 1211, 13455, 13462, 13463, 13456, 13459]
 
 // Module 1210 (TelemetryRingLifecycle)
 const result = require("shouldRun").fileFinishedImporting("modules/telemetry_ring/native/index.tsx");

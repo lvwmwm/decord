@@ -1,10 +1,10 @@
-// Module ID: 8709
-// Function ID: 8710
+// Module ID: 8769
+// Function ID: 8770
 // Name: FlagIcon
-// Dependencies: [19, 21, 712, 4004, 8710, 2]
+// Dependencies: [19, 21, 712, 4004, 8770, 2]
 // Exports: FlagIcon
 
-// Module 8709 (FlagIcon)
+// Module 8769 (FlagIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FlagIcon = function FlagIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8710) /* registerAsset */;
+  obj[0] = require(8770) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

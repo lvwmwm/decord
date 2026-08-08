@@ -1,10 +1,10 @@
-// Module ID: 9408
-// Function ID: 9409
+// Module ID: 9473
+// Function ID: 9474
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
-// Dependencies: [19, 1916, 2642, 9409, 1236, 1917, 2]
+// Dependencies: [19, 1916, 2642, 9474, 1236, 1917, 2]
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 9408 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+// Module 9473 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
 import noop from "noop";
 
 const require = arg1;
@@ -22,7 +22,7 @@ const result = require("messagesProxy").fileFinishedImporting("modules/display_n
 export const DISPLAY_NAME_STYLES_EFFECT_NAMES = obj;
 export const useDisplayNameStylesEffectConfig = function useDisplayNameStylesEffectConfig(effectId) {
   let closure_0 = effectId;
-  const tmp = importDefault(9409)()[effectId];
+  const tmp = importDefault(9474)()[effectId];
   importDefault = tmp;
   const items = [effectId, tmp];
   return React.useMemo(() => {

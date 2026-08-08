@@ -1,8 +1,8 @@
-// Module ID: 13129
-// Function ID: 13130
-// Dependencies: [1903, 4507, 13130, 1988, 2]
+// Module ID: 13199
+// Function ID: 13200
+// Dependencies: [1903, 4509, 13200, 1988, 2]
 
-// Module 13129
+// Module 13199
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -10,14 +10,14 @@ const result = require("AddFriendModalScene").fileFinishedImporting("components_
 
 export default {
   openAddFriendModalDeeplink() {
-    importDefault(4507).pushLazy(require(1988) /* asyncRequireImpl */(13130, dependencyMap.paths));
+    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(13200, dependencyMap.paths));
   },
   openAddFriendModal(arg0) {
     if (null != currentUser.getCurrentUser()) {
-      let obj = importDefault(4507);
+      let obj = importDefault(4509);
       obj = { sourceMetadata: null };
       obj[0] = arg0;
-      obj.pushLazy(require(1988) /* asyncRequireImpl */(13130, dependencyMap.paths), obj);
+      obj.pushLazy(require(1988) /* asyncRequireImpl */(13200, dependencyMap.paths), obj);
     }
   }
 };

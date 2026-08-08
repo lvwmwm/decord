@@ -1,10 +1,10 @@
-// Module ID: 16174
-// Function ID: 16175
+// Module ID: 16251
+// Function ID: 16252
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 4302, 712, 5721, 1297, 16175, 2]
+// Dependencies: [19, 21, 4303, 712, 5781, 1297, 16252, 2]
 // Exports: default
 
-// Module 16174 (VoicePanelLockedIcon)
+// Module 16251 (VoicePanelLockedIcon)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -21,8 +21,8 @@ export default function VoicePanelLockedIcon() {
   const tmp = createCacheKey();
   let obj = { style: tmp.container, children: null };
   obj = { style: tmp.icon, source: null, size: null };
-  obj[1] = importDefault(16175);
+  obj[1] = importDefault(16252);
   obj[2] = require(1297) /* Button */.IconSizes.LARGE;
   obj[1] = jsx(require(1297) /* Button */.Icon, { style: tmp.icon, source: null, size: null });
-  return jsx(importDefault(5721), { style: tmp.icon, source: null, size: null });
+  return jsx(importDefault(5781), { style: tmp.icon, source: null, size: null });
 };

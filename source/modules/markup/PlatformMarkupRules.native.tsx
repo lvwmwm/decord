@@ -1,10 +1,10 @@
-// Module ID: 4761
-// Function ID: 4762
+// Module ID: 4763
+// Function ID: 4764
 // Name: match
-// Dependencies: [17, 4762, 3942, 4000, 4741, 1416, 4742, 4829, 4332, 1236, 4745, 2]
+// Dependencies: [17, 4764, 3942, 4000, 4743, 1416, 4744, 4831, 4334, 1236, 4747, 2]
 // Exports: decorateWithIcon
 
-// Module 4761 (match)
+// Module 4763 (match)
 import { Image } from "get ActivityIndicator";
 
 const re4 = /^[\u200B-\u200D\uFEFF\u180E\u061C]/;
@@ -101,7 +101,7 @@ obj[4] = {
 };
 obj[5] = {
   parse(arg0, arg1, arg2) {
-    const channelMention = importDefault(4742).channelMention;
+    const channelMention = importDefault(4744).channelMention;
     const parsed = channelMention.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -170,13 +170,13 @@ obj[5] = {
 };
 obj[6] = {
   parse(closure_0, arg1, channelId) {
-    let obj = require(4829) /* getGameMentionData */;
+    let obj = require(4831) /* getGameMentionData */;
     const gameMentionData = obj.getGameMentionData(tmp);
     let gameIcon;
     if (gameMentionData != null) {
       gameIcon = gameMentionData.gameIcon;
     }
-    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: importDefault(4332)(tmp, gameIcon, { size: 32 }), displayName: null };
+    obj = { type: "gameMention", gameId: tmp, channelId: channelId.channelId, icon: importDefault(4334)(tmp, gameIcon, { size: 32 }), displayName: null };
     let gameName;
     if (gameMentionData != null) {
       gameName = gameMentionData.gameName;
@@ -191,7 +191,7 @@ obj[6] = {
 };
 obj[7] = {
   parse(arg0, arg1, arg2) {
-    const channelOrMessageUrl = importDefault(4742).channelOrMessageUrl;
+    const channelOrMessageUrl = importDefault(4744).channelOrMessageUrl;
     const parsed = channelOrMessageUrl.parse(arg0, arg1, arg2);
     const obj = {};
     const merged = Object.assign(parsed);
@@ -260,7 +260,7 @@ obj[7] = {
 };
 obj[8] = {
   parse(arg0, arg1, arg2) {
-    const mediaPostLink = importDefault(4742).mediaPostLink;
+    const mediaPostLink = importDefault(4744).mediaPostLink;
     const parsed = mediaPostLink.parse(arg0, arg1, arg2);
     let obj = {};
     let merged = Object.assign(parsed);
@@ -329,7 +329,7 @@ obj[8] = {
 };
 obj[9] = {
   parse(arg0, arg1, arg2) {
-    const attachmentLink = importDefault(4745).attachmentLink;
+    const attachmentLink = importDefault(4747).attachmentLink;
     return attachmentLink.parse(arg0, arg1, arg2);
   }
 };

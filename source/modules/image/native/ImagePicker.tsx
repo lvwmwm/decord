@@ -1,8 +1,8 @@
-// Module ID: 4870
-// Function ID: 4871
-// Dependencies: [1302, 505, 500, 4871, 4872, 712, 4874, 1236, 2]
+// Module ID: 4872
+// Function ID: 4873
+// Dependencies: [1302, 505, 500, 4873, 4874, 712, 4876, 1236, 2]
 
-// Module 4870
+// Module 4872
 import handleThemeChange from "handleThemeChange";
 import { ThemeTypes } from "sum";
 
@@ -25,10 +25,10 @@ export default {
     if (obj2.isIOS()) {
       str2 = "pageSheet";
     }
-    let tmp4Result = tmp4(4871);
+    let tmp4Result = tmp4(4873);
     obj2 = require(500) /* set */;
     const tmp3 = !mediaType.disableNewIOSPicker;
-    tmp4Result = tmp4(4872);
+    tmp4Result = tmp4(4874);
     obj = {};
     const merged = Object.assign(mediaType);
     obj.mediaType = str;
@@ -74,7 +74,7 @@ export default {
     });
   },
   launchCamera(arg0, arg1) {
-    require(4872) /* launchCamera */.launchCamera(arg0, arg1);
+    require(4874) /* launchCamera */.launchCamera(arg0, arg1);
   },
   launchCameraAsync(arg0) {
     let closure_0 = arg0;
@@ -106,7 +106,7 @@ export default {
     const semanticColor4 = internal5.resolveSemanticColor(theme, importDefault(712).colors.TEXT_BRAND);
     const internal6 = importDefault(712).internal;
     const semanticColor5 = internal6.resolveSemanticColor(theme, importDefault(712).colors.TEXT_DEFAULT);
-    let obj = importDefault(4874);
+    let obj = importDefault(4876);
     obj = { mediaType: "photo", path: uri, width, height, includeBase64, mimeType, freeStyleCropEnabled, cropperStatusBarLight: theme === ThemeTypes.LIGHT, cropperNavigationBarLight: theme === ThemeTypes.LIGHT, cropperActiveWidgetColor: semanticColor2, cropperInactiveWidgetColor: semanticColor3, cropperControlsColor: semanticColor1, cropperControlsBarColor: semanticColor, cropperChooseColor: semanticColor4, cropperChooseText: null, cropperCancelColor: null, cropperCancelText: null, cropperToolbarColor: null, cropperToolbarWidgetColor: null, cropperToolbarTitle: null, cropperRotateByAngleAccessibilityLabel: null, cropperResetRotationAccessibilityLabel: null, cropperClampButtonAccessibilityLabel: null };
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[14] = intl.string(require(1236) /* getSystemLocale */.t["1Qm822"]);

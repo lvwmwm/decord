@@ -1,10 +1,10 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12839
+// Function ID: 12840
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 3953, 5798, 21, 4717, 4298, 589, 5801, 7361, 5668, 9971, 4641, 1236, 3947, 9967, 4713, 12770, 2]
+// Dependencies: [5, 19, 17, 3953, 5858, 21, 4719, 4299, 589, 5861, 7421, 5728, 10037, 4643, 1236, 3947, 10033, 4715, 12840, 2]
 // Exports: default
 
-// Module 12769 (GiftPurchaseButton)
+// Module 12839 (GiftPurchaseButton)
 import jsxProd from "jsxProd";
 import set from "set";
 import { View } from "CollapsingText";
@@ -67,7 +67,7 @@ export default function GiftPurchaseButton(style) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = outer1_1(4641);
+          obj1 = outer1_1(4643);
           const obj3 = { title: null, body: null };
           const intl = outer1_0(1236).intl;
           obj3[0] = intl.string(outer1_0(1236).t.R0RpRX);
@@ -135,9 +135,9 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          outer1_0(9967).openGiftModal(obj5);
+          outer1_0(10033).openGiftModal(obj5);
           c4 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         if (tmp4 === premiumType) {

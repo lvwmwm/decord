@@ -1,10 +1,10 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16720
+// Function ID: 16721
 // Name: componentDidMount
-// Dependencies: [19, 17, 16644, 1891, 8962, 676, 21, 4302, 712, 5269, 5948, 1236, 16645, 7158, 4298, 16524, 7730, 16646, 1480, 589, 5654, 2]
+// Dependencies: [19, 17, 16721, 1891, 9022, 676, 21, 4303, 712, 5270, 6008, 1236, 16722, 7218, 4299, 16601, 7790, 16723, 1480, 589, 5714, 2]
 // Exports: default
 
-// Module 16643 (componentDidMount)
+// Module 16720 (componentDidMount)
 import get_ActivityIndicator from "registerAsset";
 import FormStates from "FormStates";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -95,7 +95,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
     if (submitting) {
       let fn = () => null;
     } else if (isEditing) {
-      let setOptionsResult = self(5269);
+      let setOptionsResult = self(5270);
       fn = setOptionsResult.getHeaderConditionalBackButton(this.handleCancel);
     }
     setOptionsResult = { headerLeft: null, headerRight: null };
@@ -120,7 +120,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting, isEditing) {
   }
 };
 prototype["componentWillUnmount"] = function componentWillUnmount() {
-  importDefault(16645).closeModal();
+  importDefault(16722).closeModal();
 };
 prototype["render"] = function render() {
   let errorDetails;
@@ -136,16 +136,16 @@ prototype["render"] = function render() {
       let obj = { variant: "text-sm/medium", color: "text-muted", children: null };
       const intl6 = require(1236) /* getSystemLocale */.intl;
       obj = { url: null };
-      obj[0] = importDefault(7158)(vanityURLCode);
+      obj[0] = importDefault(7218)(vanityURLCode);
       obj[2] = intl6.format(require(1236) /* getSystemLocale */.t.FcGpNU, obj);
-      const tmp24 = importDefault(7158)(vanityURLCode);
-      const tmp = callback(require(4298) /* Text */.Text, obj);
+      const tmp24 = importDefault(7218)(vanityURLCode);
+      const tmp = callback(require(4299) /* Text */.Text, obj);
     }
   }
   if (isEditing) {
     let errorMessageFromErrorCode;
     if (null != errorDetails) {
-      obj = require(16524) /* getErrorMessageFromErrorCode */;
+      obj = require(16601) /* getErrorMessageFromErrorCode */;
       errorMessageFromErrorCode = obj.getErrorMessageFromErrorCode(errorDetails.code);
     }
     let hasItem;
@@ -173,26 +173,26 @@ prototype["render"] = function render() {
     obj3[2] = self.handleChange;
     obj3[3] = isEditing;
     obj3[4] = errorMessageFromErrorCode;
-    const items1 = [callback(require(7730) /* TextInput */.TextInput, obj3), ];
+    const items1 = [callback(require(7790) /* TextInput */.TextInput, obj3), ];
     const obj4 = { style: null, children: null };
     obj4[0] = styles.hints;
     const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl2 = require(1236) /* getSystemLocale */.intl;
     obj5[2] = intl2.string(require(1236) /* getSystemLocale */.t.IhWDcu);
-    const items2 = [callback(require(4298) /* Text */.Text, obj5), , , , ];
+    const items2 = [callback(require(4299) /* Text */.Text, obj5), , , , ];
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl3 = require(1236) /* getSystemLocale */.intl;
     obj6[2] = intl3.string(require(1236) /* getSystemLocale */.t["1mRkFr"]);
-    items2[1] = callback(require(4298) /* Text */.Text, obj6);
+    items2[1] = callback(require(4299) /* Text */.Text, obj6);
     const obj7 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl4 = require(1236) /* getSystemLocale */.intl;
     obj7[2] = intl4.string(require(1236) /* getSystemLocale */.t["eH/HMz"]);
-    items2[2] = callback(require(4298) /* Text */.Text, obj7);
+    items2[2] = callback(require(4299) /* Text */.Text, obj7);
     if (tmp17Result) {
       const obj8 = { variant: "text-sm/medium", color: "text-muted", children: null };
       const intl5 = tmp18(1236).intl;
       obj8[2] = intl5.string(tmp18(1236).t.o3kmm3);
-      tmp17Result = tmp17(tmp18(4298).Text, obj8);
+      tmp17Result = tmp17(tmp18(4299).Text, obj8);
     }
     items2[3] = tmp17Result;
     items2[4] = tmp;
@@ -203,7 +203,7 @@ prototype["render"] = function render() {
     const obj9 = { style: null, children: null };
     obj9[0] = styles.center;
     const obj10 = { source: null, style: null, resizeMode: "contain" };
-    obj10[0] = importDefault(16646);
+    obj10[0] = importDefault(16723);
     obj10[1] = styles.image;
     obj9[1] = callback(closure_4, obj10);
     items3[1] = callback(closure_3, obj9);
@@ -248,7 +248,7 @@ export default function ConnectedGuildSettingsModalVanityURL(guildId) {
     obj[4] = navigation;
     obj[5] = tmp;
     obj[6] = guildId.contentContainerStyle;
-    const items3 = [callback(GuildSettingsModalVanityURL, obj), callback(tmp2(5654).NavScrim, {})];
+    const items3 = [callback(GuildSettingsModalVanityURL, obj), callback(tmp2(5714).NavScrim, {})];
     obj[0] = items3;
     tmp10 = callback2(closure_11, obj);
   }

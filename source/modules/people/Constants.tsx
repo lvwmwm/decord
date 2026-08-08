@@ -1,9 +1,9 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 9636
+// Function ID: 9637
 // Name: RELATIONSHIP_COUNT_ANIMATION_THRESHOLD
 // Dependencies: [2]
 
-// Module 9571 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
+// Module 9636 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
 const result = require("set").fileFinishedImporting("modules/people/Constants.tsx");
 
 export const RELATIONSHIP_COUNT_ANIMATION_THRESHOLD = 64;

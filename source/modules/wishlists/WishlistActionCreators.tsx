@@ -1,9 +1,9 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9363
+// Function ID: 9364
 // Name: extraWishlistParams
-// Dependencies: [5, 7020, 1903, 3949, 5789, 9293, 676, 501, 1351, 709, 5792, 530, 9291, 1208, 4201, 698, 8249, 2]
+// Dependencies: [5, 7080, 1903, 3949, 5849, 9358, 676, 501, 1351, 709, 5852, 530, 9356, 1208, 4202, 698, 8309, 2]
 
-// Module 9298 (extraWishlistParams)
+// Module 9363 (extraWishlistParams)
 import fromServer from "fromServer";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -45,9 +45,9 @@ function maybeDispatchAdditionalActions(wishlist_items) {
     obj[1] = found.map((id) => id.id);
     obj[1] = obj;
     const tmp3Result = importDefault(709);
-    obj[2] = require(5792) /* useSKUPrice */.transformStorefrontPricesServer(storefront_pricing);
+    obj[2] = require(5852) /* useSKUPrice */.transformStorefrontPricesServer(storefront_pricing);
     tmp3Result.dispatch(obj);
-    const tmpResult = require(5792) /* useSKUPrice */;
+    const tmpResult = require(5852) /* useSKUPrice */;
   }
 }
 ({ AnalyticEvents: c10, Endpoints: unpackModuleId, PaymentGateways: closure_12 } = ME);
@@ -132,7 +132,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -281,7 +281,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

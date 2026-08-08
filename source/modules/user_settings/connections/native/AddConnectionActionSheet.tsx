@@ -1,10 +1,10 @@
-// Module ID: 14132
-// Function ID: 14133
+// Module ID: 14202
+// Function ID: 14203
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [676, 4999, 21, 4302, 1297, 4238, 1609, 6902, 5674, 5396, 5395, 1236, 5398, 5373, 4270, 10425, 1416, 4147, 5671, 5668, 5688, 2]
+// Dependencies: [676, 4330, 21, 4303, 1297, 4239, 1609, 6962, 5734, 5397, 5396, 1236, 5399, 5374, 4271, 10491, 1416, 4153, 5731, 5728, 5748, 2]
 // Exports: default
 
-// Module 14132 (AddApplicationIdentityTableRow)
+// Module 14202 (AddApplicationIdentityTableRow)
 import { AnalyticsLocations } from "ME";
 import { getMigratedApplicationIdentityConnectionsScreenApplications as closure_4 } from "items1";
 import jsxProd from "set";
@@ -22,10 +22,10 @@ function AddApplicationIdentityTableRow(application) {
   let _require;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5671)(application));
-  const tmp2 = analyticsLocations(5671)(application);
-  analyticsLocations = analyticsLocations(5668)(analyticsLocations(5688).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(5668);
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5731)(application));
+  const tmp2 = analyticsLocations(5731)(application);
+  analyticsLocations = analyticsLocations(5728)(analyticsLocations(5748).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(5728);
   let obj = _require(1297);
   const iconSource = application.getIconSource(obj.getIconSize(_require(1297).IconSizes.LARGE));
   obj = {
@@ -50,9 +50,9 @@ function AddApplicationIdentityTableRow(application) {
     tmp7Result = tmp7(tmp5(1297).Icon, obj);
   }
   obj[4] = tmp7Result;
-  obj[5] = closure_5(_require(5373).TableRow.Arrow, {});
+  obj[5] = closure_5(_require(5374).TableRow.Arrow, {});
   obj[6] = !canStartAuthorization;
-  return closure_5(_require(5373).TableRow, obj, application.id);
+  return closure_5(_require(5374).TableRow, obj, application.id);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { list: { paddingHorizontal: 16 }, icon: null };

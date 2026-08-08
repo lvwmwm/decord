@@ -1,10 +1,10 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16515
+// Function ID: 16516
 // Name: _shouldSkipContactSyncStep
-// Dependencies: [5, 17, 15023, 4996, 1903, 676, 11966, 4514, 11968, 500, 9005, 709, 1481, 11971, 4152, 16439, 4507, 1222, 12034, 2]
+// Dependencies: [5, 17, 15093, 4998, 1903, 676, 12032, 4516, 12034, 500, 9065, 709, 1481, 12037, 4158, 16516, 4509, 1222, 12100, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 16438 (_shouldSkipContactSyncStep)
+// Module 16515 (_shouldSkipContactSyncStep)
 import importDefaultResult from "ME";
 import { NativeModules } from "transitionTo";
 import initialize from "initialize";
@@ -31,7 +31,7 @@ function _shouldSkipContactSyncStep() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -47,13 +47,13 @@ function _shouldSkipContactSyncStep() {
             return obj;
           } else {
             const callback = tmp4;
-            let obj2 = outer1_0(11968);
+            let obj2 = outer1_0(12034);
             const result = obj2.isContactSyncAvailable();
             if (result) {
               c1 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(11968).checkContactPermissions();
+              obj1[0] = outer1_0(12034).checkContactPermissions();
               return obj1;
             } else {
               dependencyMap = 3;
@@ -88,15 +88,15 @@ function _shouldSkipContactSyncStep() {
   return applyArgumentsResult;
 }
 function lastStepComplete(STEP_GUILD_TEMPLATE) {
-  require(11971) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
-  const obj = require(11971) /* trackNUFStep */;
-  if (obj2.isModalOpen(require(16439) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
-    importDefault(4507).popWithKey(tmp(16439).NEW_USER_MODAL_KEY);
-    const obj3 = importDefault(4507);
+  require(12037) /* trackNUFStep */.trackNUFStep(STEP_GUILD_TEMPLATE, "NUF Complete");
+  const obj = require(12037) /* trackNUFStep */;
+  if (obj2.isModalOpen(require(16516) /* NEW_USER_MODAL_KEY */.NEW_USER_MODAL_KEY)) {
+    importDefault(4509).popWithKey(tmp(16516).NEW_USER_MODAL_KEY);
+    const obj3 = importDefault(4509);
   }
   let tmpResult = tmp(1222);
   tmpResult.transitionTo(constants.ME, { navigationReplace: true });
-  tmpResult = tmp(12034);
+  tmpResult = tmp(12100);
   const result = tmpResult.setNewUserFlowCompleted();
 }
 function getNextOnboardingStep(flag, first1, first) {
@@ -129,7 +129,7 @@ function _getNextOnboardingStep() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ function _getNextOnboardingStep() {
               transitionStep2 = undefined;
               v0 = 1;
               transitionStep2 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -213,7 +213,7 @@ function _getNextOnboardingStep() {
               return obj5;
             } else if (arg1) {
               callback = dependencyMap;
-              obj3 = flag(11971);
+              obj3 = flag(12037);
               const obj6 = { skip: null };
               obj6[0] = flag;
               obj3.trackNUFStep(closure_3, key, obj6);
@@ -300,7 +300,7 @@ let closure_13 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "T", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -365,7 +365,7 @@ let closure_14 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "T", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

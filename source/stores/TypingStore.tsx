@@ -1,9 +1,9 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11371
+// Function ID: 11372
 // Name: handleTypingStart
-// Dependencies: [1218, 1372, 7086, 676, 687, 5783, 530, 709, 589, 2]
+// Dependencies: [1218, 1372, 7146, 676, 687, 5843, 530, 709, 589, 2]
 
-// Module 11305 (handleTypingStart)
+// Module 11371 (handleTypingStart)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { SlowmodeType } from "setCooldown";
@@ -139,7 +139,7 @@ const typingStore = new TypingStore(require("dispatcher"), {
     id = store.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(5783).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(5843).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let tmp3 = null != obj;

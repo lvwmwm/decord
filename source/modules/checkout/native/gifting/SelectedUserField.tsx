@@ -1,10 +1,10 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9617
+// Function ID: 9618
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4302, 712, 5940, 1236, 4140, 5946, 1297, 4298, 5936, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 6000, 1236, 4146, 6006, 1297, 4299, 5996, 2]
 // Exports: default
 
-// Module 9552 (SelectedUserField)
+// Module 9617 (SelectedUserField)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ export default function SelectedUserField(onPress) {
   items[1] = openerWithClearButton;
   if (null != selectedUser) {
     const intl3 = tmp4(1236).intl;
-    let obj3 = importDefault(4140);
+    let obj3 = importDefault(4146);
     const _HermesInternal2 = HermesInternal;
     let combined = "" + intl3.string(tmp4(1236).t.xFn72s) + ", " + obj3.getName(selectedUser);
     const stringResult = intl3.string(tmp4(1236).t.xFn72s);
@@ -62,27 +62,27 @@ export default function SelectedUserField(onPress) {
     const stringResult1 = intl.string(tmp4(1236).t.xFn72s);
   }
   obj[3] = combined;
-  const items1 = [closure_5(require(5946) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
+  const items1 = [closure_5(require(6006) /* MagnifyingGlassIcon */.MagnifyingGlassIcon, { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" }), ];
   if (null != selectedUser) {
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.userPill;
-    obj3 = { user: null, guildId: "Array", size: null };
+    obj3 = { user: null, guildId: "Array", size: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
     obj3[0] = selectedUser;
     obj3[2] = tmp4(1297).AvatarSizes.XSMALL_20;
     const items2 = [tmp2(tmp4(1297).Avatar, obj3), ];
     const obj4 = { variant: "text-md/medium", style: null, children: null };
     obj4[1] = tmp.userPillText;
-    obj4[2] = importDefault(4140).getName(selectedUser);
-    items2[1] = tmp2(tmp4(4298).Text, obj4);
+    obj4[2] = importDefault(4146).getName(selectedUser);
+    items2[1] = tmp2(tmp4(4299).Text, obj4);
     obj2[1] = items2;
     let tmp2Result = tmp6(tmp3, obj2);
-    const obj10 = importDefault(4140);
+    const obj10 = importDefault(4146);
   } else {
     const obj5 = { variant: "text-sm/semibold", color: "text-subtle", style: null, children: null };
     obj5[2] = tmp.userPillText;
     const intl4 = tmp4(1236).intl;
     obj5[3] = intl4.string(tmp4(1236).t.R0vK0N);
-    tmp2Result = tmp2(tmp4(4298).Text, obj5);
+    tmp2Result = tmp2(tmp4(4299).Text, obj5);
   }
   items1[1] = tmp2Result;
   obj[4] = items1;
@@ -96,14 +96,14 @@ export default function SelectedUserField(onPress) {
     };
     const intl5 = tmp4(1236).intl;
     const obj7 = { text: null };
-    obj7[0] = importDefault(4140).getName(selectedUser);
+    obj7[0] = importDefault(4146).getName(selectedUser);
     obj6[3] = intl5.formatToPlainString(tmp4(1236).t["0Vb9FQ"], obj7);
-    obj6[4] = tmp2(tmp4(5936).CircleXIcon, { size: "xs" });
+    obj6[4] = tmp2(tmp4(5996).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj6);
-    const obj13 = importDefault(4140);
+    const obj13 = importDefault(4146);
   }
   items3[1] = tmp2Result;
   obj[1] = items3;
-  obj[1] = closure_5(require(5940) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
+  obj[1] = closure_5(require(6000) /* useInputStyles */.InputFieldContainer, { children: closure_6(closure_4, obj) });
   return closure_5(closure_4, obj);
 };

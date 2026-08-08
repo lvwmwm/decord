@@ -1,10 +1,10 @@
-// Module ID: 5723
-// Function ID: 5724
+// Module ID: 5783
+// Function ID: 5784
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4302, 712, 5724, 5269, 4005, 5725, 1609, 1236, 12, 5758, 1481, 4238, 5765, 1209, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 5784, 5270, 4005, 5785, 1609, 1236, 12, 5818, 1481, 4239, 5825, 1209, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 5723 (NavigationStack)
+// Module 5783 (NavigationStack)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing";
@@ -236,8 +236,8 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  let obj1 = require(5765) /* useNavigationTheme */;
-  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4238)());
+  let obj1 = require(5825) /* useNavigationTheme */;
+  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4239)());
   obj = { ref: navigationContainerRef, theme: null, initialState: null, onReady: null, onStateChange: null, children: null };
   obj[1] = navigationTheme;
   if (null == initialRouteState) {
@@ -277,7 +277,7 @@ export const useNavigatorScreens = function useNavigatorScreens(getNextRenewalDa
   return React.useMemo(getNextRenewalDateLabel, items);
 };
 export const useAccessibilityNativeStackOptions = function useAccessibilityNativeStackOptions() {
-  navigatorShouldCrossfade = navigatorShouldCrossfade(5724).useNavigatorShouldCrossfade();
+  navigatorShouldCrossfade = navigatorShouldCrossfade(5784).useNavigatorShouldCrossfade();
   const items = [navigatorShouldCrossfade];
   return React.useMemo(() => {
     let obj;

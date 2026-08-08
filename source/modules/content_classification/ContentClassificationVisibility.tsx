@@ -1,10 +1,10 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 11347
+// Function ID: 11348
 // Name: ContentClassificationVisibility
-// Dependencies: [1903, 4835, 4837, 589, 2]
+// Dependencies: [1903, 4837, 4839, 589, 2]
 // Exports: getContentClassificationVisibility, useContentClassificationVisibility
 
-// Module 11281 (ContentClassificationVisibility)
+// Module 11347 (ContentClassificationVisibility)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -14,12 +14,12 @@ let result = require("AgeRestrictionStatus").fileFinishedImporting("modules/cont
 export const ContentClassificationVisibility = obj;
 export const getContentClassificationVisibility = function getContentClassificationVisibility(contentClassification, channel, nsfwAllowed) {
   if (null != contentClassification) {
-    let obj = require(4835) /* contentClassificationToAgeRestrictionConclusion */;
+    let obj = require(4837) /* contentClassificationToAgeRestrictionConclusion */;
     obj = { type: null, data: null };
-    obj[0] = require(4835) /* contentClassificationToAgeRestrictionConclusion */.ContentClassificationVariant.MINIMAL;
+    obj[0] = require(4837) /* contentClassificationToAgeRestrictionConclusion */.ContentClassificationVariant.MINIMAL;
     obj[1] = contentClassification;
     const result = obj.contentClassificationToAgeRestriction(obj);
-    if (result === require(4837) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT) {
+    if (result === require(4839) /* AgeRestrictionStatus */.AgeRestrictionStatus.ADULT) {
       if (true !== nsfwAllowed) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {
@@ -40,10 +40,10 @@ export const useContentClassificationVisibility = function useContentClassificat
   [][0] = mergeGuildAvatar;
   if (null != arg0) {
     const obj = { type: null, data: null };
-    obj[0] = tmp(4835).ContentClassificationVariant.MINIMAL;
+    obj[0] = tmp(4837).ContentClassificationVariant.MINIMAL;
     obj[1] = arg0;
-    const result = tmp(4835).contentClassificationToAgeRestriction(obj);
-    if (result === tmp(4837).AgeRestrictionStatus.ADULT) {
+    const result = tmp(4837).contentClassificationToAgeRestriction(obj);
+    if (result === tmp(4839).AgeRestrictionStatus.ADULT) {
       if (true !== tmp4) {
         let DISPLAY = obj.BLOCK_UNDERAGE;
       } else {

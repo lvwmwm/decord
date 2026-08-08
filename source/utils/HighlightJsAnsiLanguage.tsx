@@ -1,10 +1,10 @@
-// Module ID: 4297
-// Function ID: 4298
+// Module ID: 4298
+// Function ID: 4299
 // Name: regExp
 // Dependencies: [2]
 // Exports: default
 
-// Module 4297 (regExp)
+// Module 4298 (regExp)
 let closure_0 = { 1: "bold", 4: "underline" };
 let closure_1 = { 30: "black", 31: "red", 32: "green", 33: "yellow", 34: "blue", 35: "magenta", 36: "cyan", 37: "white" };
 let closure_2 = { 40: "black", 41: "red", 42: "green", 43: "yellow", 44: "blue", 45: "magenta", 46: "cyan", 47: "white" };

@@ -1,10 +1,10 @@
-// Module ID: 7696
-// Function ID: 7697
+// Module ID: 7756
+// Function ID: 7757
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1891, 5790, 676, 7697, 5788, 1222, 5896, 7698, 2]
+// Dependencies: [5, 1891, 5850, 676, 7757, 5848, 1222, 5956, 7758, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 7696 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 7756 (navigateToSocialLayerStorefrontWithGuildPreview)
 import getPrice from "getPrice";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
@@ -37,7 +37,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
       let id;
       const lib = tmp2;
       ({ guildId: id, invite: c1, pageIndex: c2, skuId: c3, slug: c4 } = id);
-      yield "PX_8";
+      yield "ct";
       if (1 === tmp5) {
         if (arg0 === 1) {
           let guild = 3;
@@ -72,7 +72,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
               if (null != set) {
                 if (!set.has(guild3.PREVIEW_ENABLED)) {
                   if (null != lib) {
-                    let obj4 = lib(7698);
+                    let obj4 = lib(7758);
                     let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                     obj2[0] = lib.code;
                     obj2[1] = { location: "game_shop" };
@@ -87,12 +87,12 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
               c3 = 2;
               guild = 1;
               obj4 = { value: null, done: false };
-              obj4[0] = id(5896).startLurking(id, {}, { shouldNavigate: false });
+              obj4[0] = id(5956).startLurking(id, {}, { shouldNavigate: false });
               return obj4;
             }
           } else {
             guild = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         }
       } else if (2 === tmp5) {
@@ -146,7 +146,7 @@ export default function navigateToSocialLayerStorefront(arg0) {
   }
   let socialLayerStorefrontGuildId = guildId;
   if (guildId == null) {
-    let obj = require(5788) /* getPrice */;
+    let obj = require(5848) /* getPrice */;
     socialLayerStorefrontGuildId = obj.getSocialLayerStorefrontGuildId(applicationId);
   }
   if (null == applicationIdFromGuildId) {
@@ -183,7 +183,7 @@ export const eagerNavigateToSocialLayerStorefront = function eagerNavigateToSoci
     guildId = id;
   }
   if (null != guildId) {
-    let obj = require(7697) /* _fetchSocialLayerStorefront */;
+    let obj = require(7757) /* _fetchSocialLayerStorefront */;
     obj = { eager: true, forceFetch: null };
     obj[1] = forceFetch.forceFetch;
     const socialLayerStorefront = obj.fetchSocialLayerStorefront(guildId, obj);
@@ -193,6 +193,6 @@ export const eagerNavigateToSocialLayerStorefrontForApplication = function eager
   let applicationId;
   let forceFetch;
   ({ applicationId, forceFetch } = arg0);
-  const socialLayerStorefrontForApplication = require(7697) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
+  const socialLayerStorefrontForApplication = require(7757) /* _fetchSocialLayerStorefront */.fetchSocialLayerStorefrontForApplication(applicationId, { eager: true, forceFetch });
 };
 export { navigateToSocialLayerStorefrontWithGuildPreview };

@@ -1,10 +1,10 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9431
+// Function ID: 9432
 // Name: useIsVariantColorLight
 // Dependencies: [19, 688, 2]
 // Exports: default
 
-// Module 9366 (useIsVariantColorLight)
+// Module 9431 (useIsVariantColorLight)
 import noop from "noop";
 
 const require = arg1;

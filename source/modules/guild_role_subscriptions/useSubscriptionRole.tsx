@@ -1,10 +1,10 @@
-// Module ID: 14393
-// Function ID: 14394
+// Module ID: 14463
+// Function ID: 14464
 // Name: useSubscriptionRole
-// Dependencies: [1964, 14376, 589, 2]
+// Dependencies: [1964, 14446, 589, 2]
 // Exports: default
 
-// Module 14393 (useSubscriptionRole)
+// Module 14463 (useSubscriptionRole)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 
 const require = arg1;
@@ -12,8 +12,8 @@ const result = require("initialize").fileFinishedImporting("modules/guild_role_s
 
 export default function useSubscriptionRole(arg0, editStateId) {
   const _require = arg0;
-  const dependencyMap = _require(14376).useSubscriptionListing(editStateId);
-  const obj = _require(14376);
+  const dependencyMap = _require(14446).useSubscriptionListing(editStateId);
+  const obj = _require(14446);
   const items = [createGuildRoleRecordFromRust];
   return _require(589).useStateFromStores(items, () => {
     let role;

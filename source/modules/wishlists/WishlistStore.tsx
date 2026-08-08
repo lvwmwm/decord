@@ -1,9 +1,9 @@
-// Module ID: 9292
-// Function ID: 9293
+// Module ID: 9357
+// Function ID: 9358
 // Name: get
-// Dependencies: [9293, 1208, 7020, 589, 709, 2]
+// Dependencies: [9358, 1208, 7080, 589, 709, 2]
 
-// Module 9292 (get)
+// Module 9357 (get)
 import fromServer from "fromServer";
 import closure_5 from "fromServer";
 import { Store } from "initialize";
@@ -214,7 +214,7 @@ const wishlistStore = new WishlistStore(require("dispatcher"), {
     let recipientId;
     let skuId;
     ({ recipientId, skuId } = arg0);
-    const firstWishlistId = require(7020) /* createUserWidgetFromServer */.default.getFirstWishlistId(recipientId);
+    const firstWishlistId = require(7080) /* createUserWidgetFromServer */.default.getFirstWishlistId(recipientId);
     let tmp2 = null != firstWishlistId;
     if (tmp2) {
       tmp2 = null != dependencyMap[firstWishlistId];

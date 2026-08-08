@@ -1,10 +1,10 @@
-// Module ID: 16768
-// Function ID: 16769
+// Module ID: 16845
+// Function ID: 16846
 // Name: MemberPreviews
-// Dependencies: [32, 19, 17, 14369, 676, 21, 4302, 712, 4005, 14402, 13175, 16742, 14391, 5693, 16725, 9000, 1236, 16731, 16769, 16734, 2]
+// Dependencies: [32, 19, 17, 14439, 676, 21, 4303, 712, 4005, 14472, 13245, 16819, 14461, 5753, 16802, 9060, 1236, 16808, 16846, 16811, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 16768 (MemberPreviews)
+// Module 16845 (MemberPreviews)
 import _slicedToArray from "_slicedToArray";
 import Header from "Header";
 import { View } from "pickImage";
@@ -31,11 +31,11 @@ function MemberPreviews(role) {
   const items = [, , ];
   ({ member: arr[0], memberLight: arr[1] } = tmp);
   items[2] = { backgroundColor: token1 };
-  const items1 = [callback2(require(14402) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { style: items, textStyle: { color: token3 }, role }), ];
+  const items1 = [callback2(require(14472) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { style: items, textStyle: { color: token3 }, role }), ];
   const items2 = [, , ];
   ({ member: arr3[0], memberDark: arr3[1] } = tmp);
   items2[2] = { backgroundColor: token };
-  items1[1] = callback2(require(14402) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { style: items2, textStyle: { color: token2 }, role });
+  items1[1] = callback2(require(14472) /* GuildRoleSubscriptionMemberPreview */.GuildRoleSubscriptionMemberPreview, { style: items2, textStyle: { color: token2 }, role });
   obj[1] = items1;
   return callback3(View, obj);
 }
@@ -44,15 +44,15 @@ function Content() {
   let guildId;
   let tmp7;
   let tmp8;
-  const tmp3 = role(13175)();
-  let obj = _require(16742);
+  const tmp3 = role(13245)();
+  let obj = _require(16819);
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
-  let obj1 = importAll(14391);
+  let obj1 = importAll(14461);
   [tmp7, tmp8] = callback(obj1.useRoleColor(editStateId, guildId), 2);
-  let obj2 = importAll(14391);
+  let obj2 = importAll(14461);
   _require = callback(obj2.useRoleIcon(editStateId, guildId), 2)[1];
-  let obj3 = importAll(14391);
+  let obj3 = importAll(14461);
   role = obj3.useRole(editStateId, guildId);
   const items = [role];
   const customIconSrc = React.useMemo(() => {
@@ -69,32 +69,32 @@ function Content() {
     tmp10 = obj;
   }
   const tmp6 = callback(obj1.useRoleColor(editStateId, guildId), 2);
-  const roleSubscriptionSettingsDisabled = _require(16725).useRoleSubscriptionSettingsDisabled();
+  const roleSubscriptionSettingsDisabled = _require(16802).useRoleSubscriptionSettingsDisabled();
   obj = { children: null };
   const items1 = [callback2(MemberPreviews, { role }), , , , ];
   obj1 = { style: tmp3.header, children: null };
-  let tmpResult = tmp(9000);
+  let tmpResult = tmp(9060);
   const intl = tmp4(1236).intl;
   obj1[1] = intl.string(_require(1236).t.sEr1zr);
   items1[1] = callback2(tmpResult, obj1);
   obj2 = { description: null, image: null, imageUploadSize: null, previewShape: null, previewResizeMode: "cover", setImage: null, disabled: null };
-  tmpResult = tmp(16731);
+  tmpResult = tmp(16808);
   const intl2 = tmp4(1236).intl;
   obj2[0] = intl2.string(_require(1236).t.Glqj9m);
   obj2[1] = tmp10;
   obj2[2] = UPLOAD_SMALL_SIZE;
-  obj2[3] = _require(16731).PreviewShape.SQUIRCLE;
+  obj2[3] = _require(16808).PreviewShape.SQUIRCLE;
   obj2[5] = function setImage(icon) {
-    return callback({ icon: icon.uri, unicodeEmoji: "a" });
+    return callback({ icon: icon.uri, unicodeEmoji: "Array" });
   };
   obj2[6] = roleSubscriptionSettingsDisabled;
   items1[2] = callback2(tmpResult, obj2);
   obj3 = { style: tmp3.header, children: null };
-  const tmp4Result = _require(16725);
+  const tmp4Result = _require(16802);
   const intl3 = tmp4(1236).intl;
   obj3[1] = intl3.string(_require(1236).t["W7hH+z"]);
-  items1[3] = callback2(role(9000), obj3);
-  items1[4] = callback2(role(16769), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
+  items1[3] = callback2(role(9060), obj3);
+  items1[4] = callback2(role(16846), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
   obj[0] = items1;
   return callback3(closure_11, obj);
 }
@@ -116,7 +116,7 @@ export default function GuildRoleSubscriptionTierDesignModal(arg0) {
   obj[3] = constants.CONFIRMATION;
   const merged = Object.assign(arg0);
   obj.children = callback2(Content, {});
-  return callback2(importDefault(16734), obj);
+  return callback2(importDefault(16811), obj);
 };
 export const GuildRoleSubscriptionTierDesignTab = function GuildRoleSubscriptionTierDesignTab() {
   return callback2(Content, {});

@@ -1,27 +1,27 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 15139
+// Function ID: 15140
 // Name: convertPortraitToLandscapeScreens
-// Dependencies: [4153, 4152, 1485, 514, 2]
+// Dependencies: [4159, 4158, 1485, 514, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 15069 (convertPortraitToLandscapeScreens)
+// Module 15139 (convertPortraitToLandscapeScreens)
 const result = require("CommonActions").fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");
 
 export const convertPortraitToLandscapeScreens = function convertPortraitToLandscapeScreens() {
-  let obj = require(4153) /* getRootNavigationRef */;
+  let obj = require(4159) /* getRootNavigationRef */;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      let tmpResult = tmp(4152);
+      let tmpResult = tmp(4158);
       const coerceMainRouteResult = tmpResult.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 !== state2.index) {
-            tmpResult = tmp(4152);
+            tmpResult = tmp(4158);
             if (null != tmpResult.coerceChannelRoute(state2.routes[1])) {
-              const coerceTabsRouteResult = tmp(4152).coerceTabsRoute(state2.routes[0]);
+              const coerceTabsRouteResult = tmp(4158).coerceTabsRoute(state2.routes[0]);
               if (null != coerceTabsRouteResult) {
                 const state3 = coerceTabsRouteResult.state;
                 let tmp4;
@@ -52,9 +52,9 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   obj.index = items1.length - 1;
                   store.dispatch(CommonActions.reset(obj));
                 }
-                tmpResult2 = tmp(4152);
+                tmpResult2 = tmp(4158);
               }
-              const tmpResult1 = tmp(4152);
+              const tmpResult1 = tmp(4158);
             }
           }
         }
@@ -63,22 +63,22 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
   }
 };
 export const convertLandscapeToPortraitScreens = function convertLandscapeToPortraitScreens() {
-  let obj = require(4153) /* getRootNavigationRef */;
+  let obj = require(4159) /* getRootNavigationRef */;
   const store = obj.getRootNavigationRef();
   if (null != store) {
     let state = store.getState();
     if (null != state) {
-      let tmpResult = tmp(4152);
+      let tmpResult = tmp(4158);
       const coerceMainRouteResult = tmpResult.coerceMainRoute(state.routes[0]);
       if (null != coerceMainRouteResult) {
         const state2 = coerceMainRouteResult.state;
         if (null != state2) {
           if (0 === state.index) {
             if (0 !== state2.index) {
-              tmpResult = tmp(4152);
+              tmpResult = tmp(4158);
             }
           }
-          const coerceTabsRouteResult = tmp(4152).coerceTabsRoute(state2.routes[0]);
+          const coerceTabsRouteResult = tmp(4158).coerceTabsRoute(state2.routes[0]);
           if (null != coerceTabsRouteResult) {
             const state3 = coerceTabsRouteResult.state;
             let tmp5;
@@ -90,7 +90,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               }
               tmp5 = state3.routes[index];
             }
-            const coerceGuildsRouteResult = tmp(4152).coerceGuildsRoute(tmp5);
+            const coerceGuildsRouteResult = tmp(4158).coerceGuildsRoute(tmp5);
             if (null != coerceGuildsRouteResult) {
               obj = {};
               const merged = Object.assign(state2);
@@ -137,9 +137,9 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               obj2.index = items1.length - 1;
               store.dispatch(CommonActions.reset(obj2));
             }
-            const tmpResult2 = tmp(4152);
+            const tmpResult2 = tmp(4158);
           }
-          const tmpResult1 = tmp(4152);
+          const tmpResult1 = tmp(4158);
         }
       }
     }

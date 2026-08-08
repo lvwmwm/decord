@@ -1,10 +1,10 @@
-// Module ID: 16790
-// Function ID: 16791
+// Module ID: 16867
+// Function ID: 16868
 // Name: _getTemplates
 // Dependencies: [5, 676, 709, 530, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 16790 (_getTemplates)
+// Module 16867 (_getTemplates)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -27,7 +27,7 @@ function _getTemplates() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ function _getTemplates() {
               obj.dispatch(obj4);
             }
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c4 = tmp;

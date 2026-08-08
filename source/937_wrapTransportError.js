@@ -143,7 +143,7 @@ export const wrapTransportSend = function wrapTransportSend(closure_0, closure_0
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -166,7 +166,7 @@ export const wrapTransportSend = function wrapTransportSend(closure_0, closure_0
                   c0 = undefined;
                   c6 = 1;
                   c7 = 1;
-                  return { value: "PX_8", done: "Array" };
+                  return { value: "ct", done: "Array" };
                 }
               } else {
                 if (1 === tmp7) {

@@ -1,10 +1,10 @@
-// Module ID: 8296
-// Function ID: 8297
+// Module ID: 8356
+// Function ID: 8357
 // Name: getAutoArchiveOptions
 // Dependencies: [1235, 687, 1236, 731, 3883, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 8296 (getAutoArchiveOptions)
+// Module 8356 (getAutoArchiveOptions)
 import { DEFAULT_AUTO_ARCHIVE_DURATION as closure_3 } from "AbortCodes";
 
 function getAutoArchiveOptions() {

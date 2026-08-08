@@ -1,10 +1,10 @@
-// Module ID: 9726
-// Function ID: 9727
+// Module ID: 9792
+// Function ID: 9793
 // Name: getOrParseMessagePreviewMarkupAST
-// Dependencies: [4733, 4734, 9727, 4000, 4292, 3979, 1386, 2]
+// Dependencies: [4735, 4736, 9793, 4000, 4293, 3979, 1386, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 9726 (getOrParseMessagePreviewMarkupAST)
+// Module 9792 (getOrParseMessagePreviewMarkupAST)
 const require = arg1;
 function getOrParseMessagePreviewMarkupAST(arg0) {
   let color;
@@ -19,10 +19,10 @@ function getOrParseMessagePreviewMarkupAST(arg0) {
   if (null != value) {
     return value;
   } else {
-    const items = [importDefault(4734).RULES, importDefault(9727)(layout, color, fontScale, maxFontSizeMultiplier)];
-    const tmp11 = importDefault(4733);
-    const tmp11Result = importDefault(4733)(items);
-    const obj3 = importDefault(4292);
+    const items = [importDefault(4736).RULES, importDefault(9793)(layout, color, fontScale, maxFontSizeMultiplier)];
+    const tmp11 = importDefault(4735);
+    const tmp11Result = importDefault(4735)(items);
+    const obj3 = importDefault(4293);
     let startsWithResult = content.startsWith("```");
     let tmp3;
     if (!startsWithResult) {
@@ -33,7 +33,7 @@ function getOrParseMessagePreviewMarkupAST(arg0) {
     if (startsWithResult) {
       tmp3 = content;
     }
-    const astParserForResultResult = importDefault(4292).astParserFor(tmp11Result)(tmp3, true, initialParserState, postProcessor);
+    const astParserForResultResult = importDefault(4293).astParserFor(tmp11Result)(tmp3, true, initialParserState, postProcessor);
     const result = obj.set(content, astParserForResultResult);
     return astParserForResultResult;
   }
@@ -50,9 +50,9 @@ export const renderASTToReact = function renderASTToReact(layout) {
   let maxFontSizeMultiplier;
   let tree;
   ({ tree, initialParserState, color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(4734).RULES, importDefault(9727)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
-  const tmp = importDefault(4733);
-  const tmpResult = importDefault(4733)(items);
+  const items = [importDefault(4736).RULES, importDefault(9793)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  const tmp = importDefault(4735);
+  const tmpResult = importDefault(4735)(items);
   const obj = importDefault(4000);
   return obj.reactFor(importDefault(4000).ruleOutput(tmpResult, "react"))(tree, initialParserState);
 };
@@ -61,10 +61,10 @@ export const getMessagePreviewASTParser = function getMessagePreviewASTParser(la
   let fontScale;
   let maxFontSizeMultiplier;
   ({ color, fontScale, maxFontSizeMultiplier } = layout);
-  const items = [importDefault(4734).RULES, importDefault(9727)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
-  const tmp = importDefault(4733);
-  const tmpResult = importDefault(4733)(items);
-  return importDefault(4292).astParserFor(tmpResult);
+  const items = [importDefault(4736).RULES, importDefault(9793)(layout.layout, color, fontScale, maxFontSizeMultiplier)];
+  const tmp = importDefault(4735);
+  const tmpResult = importDefault(4735)(items);
+  return importDefault(4293).astParserFor(tmpResult);
 };
 export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fontScale) {
   let channelId;
@@ -111,9 +111,9 @@ export const renderMessagePreviewMarkup = function renderMessagePreviewMarkup(fo
     obj[5] = maxFontSizeMultiplier;
     obj[6] = postProcessor;
     const tmp4 = getOrParseMessagePreviewMarkupAST(obj);
-    const items = [importDefault(4734).RULES, importDefault(9727)(layout, color, num, maxFontSizeMultiplier)];
-    const tmp7 = importDefault(4733);
-    const tmp7Result = importDefault(4733)(items);
+    const items = [importDefault(4736).RULES, importDefault(9793)(layout, color, num, maxFontSizeMultiplier)];
+    const tmp7 = importDefault(4735);
+    const tmp7Result = importDefault(4735)(items);
     const obj2 = importDefault(4000);
     return obj2.reactFor(importDefault(4000).ruleOutput(tmp7Result, "react"))(tmp4, obj);
   }

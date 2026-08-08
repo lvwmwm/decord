@@ -1,10 +1,10 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 13001
+// Function ID: 13002
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [6816, 12926, 12929, 691, 4270, 12932, 1988, 503, 2]
+// Dependencies: [6876, 12996, 12999, 691, 4271, 13002, 1988, 503, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 12931 (showVoiceChannelBlockedUserWarning)
+// Module 13001 (showVoiceChannelBlockedUserWarning)
 import getState from "getState";
 import useSharedSpacesWarningStore from "useSharedSpacesWarningStore";
 import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium";
@@ -19,7 +19,7 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
   state = state.getState();
   if (state === require(691) /* keys */.AppStates.ACTIVE) {
     callback2();
-    let obj = importDefault(4270);
+    let obj = importDefault(4271);
     obj = { channelId: null, blockedUserId: null, impressionName: null, impressionProperties: null };
     obj[0] = channelId;
     obj[1] = id;
@@ -30,8 +30,8 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
     obj[1] = items;
     obj[2] = constants.POST_JOIN_SHEET;
     obj[3] = obj;
-    obj.openLazy(tmp2(1988)(12932, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
-    const tmp11 = tmp2(1988)(12932, dependencyMap.paths);
+    obj.openLazy(tmp2(1988)(13002, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
+    const tmp11 = tmp2(1988)(13002, dependencyMap.paths);
   } else {
     callback();
   }

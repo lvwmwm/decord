@@ -1,9 +1,9 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12216
+// Function ID: 12217
 // Name: getAssetURL
-// Dependencies: [12150, 8181, 12147, 2]
+// Dependencies: [12217, 8241, 12214, 2]
 
-// Module 12149 (getAssetURL)
+// Module 12216 (getAssetURL)
 let result = require("fetchCustomActivityLink").fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");
 class CustomActivityLinkRecord {
   constructor(arg0) {
@@ -35,11 +35,11 @@ class CustomActivityLinkRecord {
 }
 CustomActivityLinkRecord.prototype["getAssetURL"] = function getAssetURL() {
   const self = this;
-  if (this.type === require(12150) /* CustomLinkType */.CustomLinkType.MANAGED) {
-    let tmpResult = tmp(8181);
+  if (this.type === require(12217) /* CustomLinkType */.CustomLinkType.MANAGED) {
+    let tmpResult = tmp(8241);
     let assetImage = tmpResult.getAssetImage(self.applicationId, self.assetId, 512);
-  } else if (self.type === tmp(12150).CustomLinkType.QUICK) {
-    tmpResult = tmp(12147);
+  } else if (self.type === tmp(12217).CustomLinkType.QUICK) {
+    tmpResult = tmp(12214);
     assetImage = tmpResult.getQuickLinkImage(self.assetPath);
   }
   return assetImage;

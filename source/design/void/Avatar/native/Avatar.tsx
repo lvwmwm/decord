@@ -1,9 +1,9 @@
-// Module ID: 13295
-// Function ID: 13296
+// Module ID: 13365
+// Function ID: 13366
 // Name: getStatusSize
-// Dependencies: [19, 17, 676, 1298, 21, 4302, 712, 12236, 13284, 13285, 8233, 8199, 13296, 8232, 13286, 4714, 10645, 10646, 2]
+// Dependencies: [19, 17, 676, 1298, 21, 4303, 712, 12303, 13354, 13355, 8293, 8259, 13366, 8292, 13356, 4716, 10711, 10712, 2]
 
-// Module 13295 (getStatusSize)
+// Module 13365 (getStatusSize)
 import importAllResult from "noop";
 import { View } from "registerAsset";
 import { StatusTypes } from "ME";
@@ -17,22 +17,22 @@ let error;
 let metroImportAll;
 const require = arg1;
 function getStatusSize(arg0) {
-  if (require(12236) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(12236).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(12236).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(12236).AvatarSizes.SMALL !== arg0) {
-          if (tmp(12236).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+  if (require(12303) /* StaticNativeCutoutAvatarImage */.AvatarSizes.XXSMALL !== arg0) {
+    if (tmp(12303).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(12303).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(12303).AvatarSizes.SMALL !== arg0) {
+          if (tmp(12303).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(12236).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(12236).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(12236).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(12236).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(12236).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(12236).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(12236).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(12236).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(12236).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(12303).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(12303).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(12303).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(12303).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(12303).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(12303).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(12303).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(12303).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(12303).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -63,11 +63,11 @@ let closure_10 = createCacheKey.createStyles((NORMAL) => {
   obj = { width: 24, height: 24, justifyContent: "center", alignItems: "center", backgroundColor: importDefault(712).unsafe_rawColors.RED_400, borderRadius: importDefault(712).radii.md, right: 0, bottom: 0 };
   obj[3] = obj;
   const obj1 = { position: "absolute", top: null, left: null };
-  const decorationSizeForAvatarSize = require(8199) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
-  obj1[1] = -(decorationSizeForAvatarSize - require(12236) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
-  const obj5 = require(8199) /* getDecorationSizeForAvatarSize */;
-  const decorationSizeForAvatarSize1 = require(8199) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
-  obj1[2] = -(decorationSizeForAvatarSize1 - require(12236) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  const decorationSizeForAvatarSize = require(8259) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
+  obj1[1] = -(decorationSizeForAvatarSize - require(12303) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
+  const obj5 = require(8259) /* getDecorationSizeForAvatarSize */;
+  const decorationSizeForAvatarSize1 = require(8259) /* getDecorationSizeForAvatarSize */.getDecorationSizeForAvatarSize(NORMAL);
+  obj1[2] = -(decorationSizeForAvatarSize1 - require(12303) /* StaticNativeCutoutAvatarImage */.styles[NORMAL].width) / 2;
   obj[4] = obj1;
   obj[5] = { position: "relative" };
   return obj;

@@ -1,10 +1,10 @@
-// Module ID: 9591
-// Function ID: 9592
+// Module ID: 9656
+// Function ID: 9657
 // Name: VoiceActivityStatus
-// Dependencies: [19, 21, 4302, 9592, 9581, 1236, 2]
+// Dependencies: [19, 21, 4303, 9657, 9646, 1236, 2]
 // Exports: default
 
-// Module 9591 (VoiceActivityStatus)
+// Module 9656 (VoiceActivityStatus)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -37,7 +37,7 @@ export default function VoiceActivityStatus(hideText) {
       obj[0] = channel;
       const items = [tmp.icon, hideText.iconStyle];
       obj[3] = items;
-      tmp5 = callback(importDefault(9592), obj);
+      tmp5 = callback(importDefault(9657), obj);
     }
     const items1 = [tmp5, ];
     if (flag) {
@@ -48,7 +48,7 @@ export default function VoiceActivityStatus(hideText) {
     } else {
       if (!channel.isDM()) {
         if (!channel.isGroupDM()) {
-          const tmp14 = importDefault(9581);
+          const tmp14 = importDefault(9646);
           obj = { style: null, maxFontSizeMultiplier: null, children: null };
           obj[0] = textStyle;
           obj[1] = maxFontSizeMultiplier;
@@ -71,8 +71,8 @@ export default function VoiceActivityStatus(hideText) {
       textStyle = require;
       maxFontSizeMultiplier = require(1236) /* getSystemLocale */.intl;
       obj1[2] = maxFontSizeMultiplier.string(require(1236) /* getSystemLocale */.t["9FaEzi"]);
-      tmp11Result = callback(importDefault(9581), obj1);
-      const tmp20 = importDefault(9581);
+      tmp11Result = callback(importDefault(9646), obj1);
+      const tmp20 = importDefault(9646);
     }
     tmp3 = closure_5;
     tmp4 = closure_4;

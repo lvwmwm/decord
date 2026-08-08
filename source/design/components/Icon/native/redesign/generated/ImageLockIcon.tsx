@@ -1,10 +1,10 @@
-// Module ID: 4811
-// Function ID: 4812
+// Module ID: 4813
+// Function ID: 4814
 // Name: ImageLockIcon
-// Dependencies: [19, 21, 712, 4004, 4794, 2]
+// Dependencies: [19, 21, 712, 4004, 4796, 2]
 // Exports: ImageLockIcon
 
-// Module 4811 (ImageLockIcon)
+// Module 4813 (ImageLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ImageLockIcon = function ImageLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4794) /* registerAsset */;
+  obj[0] = require(4796) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

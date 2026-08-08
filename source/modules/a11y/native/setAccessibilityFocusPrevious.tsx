@@ -1,10 +1,10 @@
-// Module ID: 4643
-// Function ID: 4644
+// Module ID: 4645
+// Function ID: 4646
 // Name: setAccessibilityFocusPrevious
 // Dependencies: [17, 500, 2]
 // Exports: default
 
-// Module 4643 (setAccessibilityFocusPrevious)
+// Module 4645 (setAccessibilityFocusPrevious)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/a11y/native/setAccessibilityFocusPrevious.tsx");

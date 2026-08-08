@@ -1,10 +1,10 @@
-// Module ID: 11553
-// Function ID: 11554
+// Module ID: 11619
+// Function ID: 11620
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4294, 21, 4302, 712, 1348, 4005, 589, 500, 4162, 4844, 5659, 2]
+// Dependencies: [19, 4295, 21, 4303, 712, 1348, 4005, 589, 500, 4036, 4846, 5719, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11553 (PremiumAnimatedGiftButton)
+// Module 11619 (PremiumAnimatedGiftButton)
 import noop from "noop";
 import { useRef } from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -73,7 +73,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   }, items1);
   let FadeOut;
   if (!stateFromStores) {
-    FadeOut = tmp(4162).FadeOut;
+    FadeOut = tmp(4036).FadeOut;
   }
   obj = { exiting: FadeOut, children: null };
   const items2 = [enabled ? tmp7.containerRefresh : tmp7.container, style, ];
@@ -95,7 +95,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj[3] = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj.children = jsx(tmp3(5659), { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
-  obj[1] = jsx(require(4844) /* PressableBase */.PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
-  return jsx(stateFromStores(4162).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  obj.children = jsx(tmp3(5719), { ref: tmp9, style: enabled ? tmp7.animationRefresh : tmp7.animation, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj[1] = jsx(require(4846) /* PressableBase */.PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  return jsx(stateFromStores(4036).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
 };

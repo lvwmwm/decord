@@ -1,10 +1,10 @@
-// Module ID: 15858
-// Function ID: 15859
+// Module ID: 15933
+// Function ID: 15934
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4302, 712, 5373, 12, 1236, 11535, 5267, 1935, 4248, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5374, 12, 1236, 11601, 5268, 1935, 4249, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 15858 (ContextMenuCommandItem)
+// Module 15933 (ContextMenuCommandItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -43,7 +43,7 @@ export default function ContextMenuCommandItem(item) {
     }
     return intl.formatToPlainString(item(outer1_2[7]).t.Pk4Mz3, { applicationName: name, commandName: item.displayName });
   }, items);
-  let obj = item(11535);
+  let obj = item(11601);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null };
   let tmp8Result = null != applicationCommandsIconSource;
@@ -51,13 +51,13 @@ export default function ContextMenuCommandItem(item) {
     obj = { style: null, source: null };
     obj[0] = tmp.commandIcon;
     obj[1] = applicationCommandsIconSource;
-    tmp8Result = tmp8(section(5267), obj);
+    tmp8Result = tmp8(section(5268), obj);
   }
   obj[3] = tmp8Result;
-  obj[4] = jsx(item(4248).SendMessageIcon, {});
+  obj[4] = jsx(item(4249).SendMessageIcon, {});
   obj[5] = start;
   obj[6] = end;
-  return jsx(item(5373).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
+  return jsx(item(5374).TableRow, { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null });
 };
 export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingItem(arg0) {
   let end;
@@ -77,7 +77,7 @@ export const ContextMenuCommandLoadingItem = function ContextMenuCommandLoadingI
   obj[1] = <View style={items1} />;
   obj[2] = start;
   obj[3] = end;
-  return jsx(require(5373) /* TableRowInner */.TableRow, { width: null });
+  return jsx(require(5374) /* TableRowInner */.TableRow, { width: null });
 };
 export const ContextMenuCommandEmptyItem = function ContextMenuCommandEmptyItem(arg0) {
   let end;
@@ -91,7 +91,7 @@ export const ContextMenuCommandEmptyItem = function ContextMenuCommandEmptyItem(
   obj[1] = <View style={items} />;
   obj[2] = start;
   obj[3] = end;
-  return jsx(require(5373) /* TableRowInner */.TableRow, { label: null, icon: null, start: null, end: null });
+  return jsx(require(5374) /* TableRowInner */.TableRow, { label: null, icon: null, start: null, end: null });
 };
 export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(section) {
   let end;
@@ -99,7 +99,7 @@ export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(sect
   let start;
   section = section.section;
   ({ onPress, start, end } = section);
-  let obj = require(11535) /* getApplicationCommandsIconSource */;
+  let obj = require(11601) /* getApplicationCommandsIconSource */;
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { onPress, label: section.name, icon: null, start: null, end: null, arrow: true };
   let tmp4Result = null != applicationCommandsIconSource;
@@ -107,10 +107,10 @@ export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(sect
     obj = { style: null, source: null };
     obj[0] = tmp.commandIcon;
     obj[1] = applicationCommandsIconSource;
-    tmp4Result = tmp4(importDefault(5267), obj);
+    tmp4Result = tmp4(importDefault(5268), obj);
   }
   obj[2] = tmp4Result;
   obj[3] = start;
   obj[4] = end;
-  return jsx(require(5373) /* TableRowInner */.TableRow, { onPress, label: section.name, icon: null, start: null, end: null, arrow: true });
+  return jsx(require(5374) /* TableRowInner */.TableRow, { onPress, label: section.name, icon: null, start: null, end: null, arrow: true });
 };

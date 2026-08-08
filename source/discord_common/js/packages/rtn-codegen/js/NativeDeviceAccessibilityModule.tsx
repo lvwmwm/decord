@@ -1,9 +1,9 @@
-// Module ID: 4699
-// Function ID: 4700
+// Module ID: 4701
+// Function ID: 4702
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 4699 (enforcing)
+// Module 4701 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeDeviceAccessibilityModule");

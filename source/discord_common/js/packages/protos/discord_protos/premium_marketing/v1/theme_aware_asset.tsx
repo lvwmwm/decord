@@ -1,9 +1,9 @@
-// Module ID: 7300
-// Function ID: 7301
+// Module ID: 7360
+// Function ID: 7361
 // Name: create
 // Dependencies: [32, 1307, 2]
 
-// Module 7300 (create)
+// Module 7360 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 

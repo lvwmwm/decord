@@ -1,10 +1,10 @@
-// Module ID: 11860
-// Function ID: 11861
+// Module ID: 11926
+// Function ID: 11927
 // Name: importDefaultResult1
-// Dependencies: [19, 17, 21, 4302, 689, 712, 5375, 2]
+// Dependencies: [19, 17, 21, 4303, 689, 712, 5376, 2]
 // Exports: default
 
-// Module 11860 (importDefaultResult1)
+// Module 11926 (importDefaultResult1)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -62,6 +62,6 @@ export default function GuildPowerupsCard(status) {
   items[3] = style;
   obj.style = items;
   obj.children = children;
-  obj[1] = jsx(require(5375) /* PressableCard */.Card, { border: "faint", radius: 16, shadow: "none" });
+  obj[1] = jsx(require(5376) /* PressableCard */.Card, { border: "faint", radius: 16, shadow: "none" });
   return <View border="faint" radius={16} shadow="none" />;
 };

@@ -1,14 +1,14 @@
-// Module ID: 16020
-// Function ID: 16021
-// Dependencies: [19, 17, 1372, 1891, 1903, 7136, 21, 4302, 712, 589, 4492, 9007, 4844, 1297, 9070, 4140, 1236, 1416, 1884, 4298, 5373, 9073, 2]
+// Module ID: 16095
+// Function ID: 16096
+// Dependencies: [19, 17, 1372, 1891, 1903, 7196, 21, 4303, 712, 589, 4494, 9067, 4846, 1297, 9130, 4146, 1236, 1416, 1884, 4299, 5374, 9133, 2]
 
-// Module 16020
+// Module 16095
 import { View } from "getAvatarURL";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { InviteSendStates } from "InviteSendStates";
-import { jsx } from "module_9073";
+import { jsx } from "module_9133";
 import createCacheKey from "createCacheKey";
 import importAllResult from "Text";
 

@@ -1,10 +1,10 @@
-// Module ID: 4119
-// Function ID: 4120
+// Module ID: 4125
+// Function ID: 4126
 // Name: handleGatewayJoinRequestUpdate
-// Dependencies: [1903, 4120, 589, 1411, 709, 2]
+// Dependencies: [1903, 4126, 589, 1411, 709, 2]
 // Exports: joinRequestFromServer
 
-// Module 4119 (handleGatewayJoinRequestUpdate)
+// Module 4125 (handleGatewayJoinRequestUpdate)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 
@@ -22,7 +22,7 @@ function handleGatewayJoinRequestUpdate(arg0) {
         return false;
       }
     }
-    obj = require(4120) /* isActionedApplicationStatus */;
+    obj = require(4126) /* isActionedApplicationStatus */;
     if (obj.isApprovedAndAcked(obj)) {
       delete tmp[tmp2];
       if (c3 === guildId) {
@@ -113,7 +113,7 @@ const userGuildJoinRequestStore = new UserGuildJoinRequestStore(require("dispatc
       } else {
         tmp8[guildId] = obj;
       }
-      obj2 = require(4120) /* isActionedApplicationStatus */;
+      obj2 = require(4126) /* isActionedApplicationStatus */;
     } else {
       delete tmp3[tmp2];
       if (c3 === guildId) {

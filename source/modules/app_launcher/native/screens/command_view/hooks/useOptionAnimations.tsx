@@ -1,10 +1,10 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11548
+// Function ID: 11549
 // Name: OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION
-// Dependencies: [32, 19, 4303, 4162, 2]
+// Dependencies: [32, 19, 4304, 4036, 2]
 // Exports: useOptionEnteringAnimation
 
-// Module 11482 (OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION)
+// Module 11548 (OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -49,7 +49,7 @@ export const OPTION_ENTRY_EXIT_LAYOUT_SHIFT_DURATION = 300;
 export { LayoutAnimation };
 export { ExitingAnimation };
 export const useOptionEnteringAnimation = function useOptionEnteringAnimation() {
-  let obj = sharedValue(4162);
+  let obj = sharedValue(4036);
   sharedValue = obj.useSharedValue(false);
   const dependencyMap = React.useRef([]);
   let items = [sharedValue];

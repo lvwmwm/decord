@@ -1,9 +1,9 @@
-// Module ID: 5942
-// Function ID: 5943
+// Module ID: 6002
+// Function ID: 6003
 // Name: BaseTextField
-// Dependencies: [19, 21, 500, 1348, 5940, 4010, 5943, 4009, 2]
+// Dependencies: [19, 21, 500, 1348, 6000, 4010, 6003, 4009, 2]
 
-// Module 5942 (BaseTextField)
+// Module 6002 (BaseTextField)
 import importAllResult from "noop";
 import jsxProd from "jsxProd";
 
@@ -18,7 +18,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   let isFocused;
   let keyboardType;
   let secureTextEntry;
-  let obj = ref(5940);
+  let obj = ref(6000);
   obj = { size: size.size, isRound: size.isRound, hasLeadingIcon: null != size.leadingIcon, isRefreshEnabled: onChangeText(1348)("InputFieldContainer") };
   const inputStyles = obj.useInputStyles(obj);
   let obj2 = ref(4010);
@@ -100,10 +100,10 @@ const forwardRefResult = importAllResult.forwardRef((size, ref2) => {
   items2[2] = size.inputStyle;
   obj2.style = items2;
   obj2.placeholderTextColor = inputStyles.placeholderText.color;
-  items1[1] = tmp12(ref(5943).NativeTextInput, obj2);
+  items1[1] = tmp12(ref(6003).NativeTextInput, obj2);
   items1[2] = size.trailing;
   obj1.children = items1;
-  return tmp10(ref(5940).InputFieldContainer, obj1);
+  return tmp10(ref(6000).InputFieldContainer, obj1);
 });
 const result = require("set").fileFinishedImporting("design/components/TextField/native/BaseTextField.native.tsx");
 

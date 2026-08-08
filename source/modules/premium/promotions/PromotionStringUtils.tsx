@@ -1,10 +1,10 @@
-// Module ID: 12606
-// Function ID: 12607
+// Module ID: 12676
+// Function ID: 12677
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [3952, 1905, 589, 3947, 5795, 1236, 1974, 2]
+// Dependencies: [3952, 1905, 589, 3947, 5855, 1236, 1974, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12606 (useFormatStringWithCommonPremiumParams)
+// Module 12676 (useFormatStringWithCommonPremiumParams)
 import addSubscriptionPlan from "addSubscriptionPlan";
 import GuildFeatures from "GuildFeatures";
 
@@ -23,8 +23,8 @@ export const useFormatStringWithCommonPremiumParams = function useFormatStringWi
       try {
         const defaultPrice = importDefault(3947).getDefaultPrice(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
         const obj2 = importDefault(3947);
-        str = require(5795) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
-        const tmpResult = require(5795) /* formatSingleCurrencyPrice */;
+        str = require(5855) /* formatSingleCurrencyPrice */.formatPrice(defaultPrice.amount, defaultPrice.currency);
+        const tmpResult = require(5855) /* formatSingleCurrencyPrice */;
       } catch (err) {
       }
     }

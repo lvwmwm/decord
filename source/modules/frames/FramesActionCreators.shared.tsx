@@ -1,10 +1,10 @@
-// Module ID: 10531
-// Function ID: 10532
+// Module ID: 10597
+// Function ID: 10598
 // Name: _launchFrame
-// Dependencies: [5, 10525, 10526, 9692, 10532, 709, 10547, 10533, 10545, 10910, 2]
+// Dependencies: [5, 10591, 10592, 9758, 10598, 709, 10613, 10599, 10611, 10976, 2]
 // Exports: attachFrameIframe, detachFrameIframe, launchFrame, promoteFrame, refreshProxyTicket, resetFrameLayoutModes, updateFramePanelMode
 
-// Module 10531 (_launchFrame)
+// Module 10597 (_launchFrame)
 import dispatcher from "dispatcher";
 import map from "map";
 import FrameLayoutModes from "FrameLayoutModes";
@@ -37,7 +37,7 @@ function _launchFrame() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _launchFrame() {
               c6 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -91,7 +91,7 @@ function _launchFrame() {
                 return obj3;
               } else {
                 if (callback4(callback2) === c5.MAIN) {
-                  let obj9 = callback(10532);
+                  let obj9 = callback(10598);
                   const result = obj9.leaveCurrentEmbeddedActivity();
                   callback6();
                 }
@@ -105,15 +105,15 @@ function _launchFrame() {
                 c5 = 4;
                 c6 = 1;
                 const obj5 = { value: null, done: false };
-                obj5[0] = callback(10547).createProxyTicket(callback, callback3(callback2));
+                obj5[0] = callback(10613).createProxyTicket(callback, callback3(callback2));
                 return obj5;
               }
             }
           } else if (2 === tmp7) {
             frame = 0;
             callback3 = intent;
-            c5 = callback2(10533)();
-            let obj7 = callback(10545);
+            c5 = callback2(10599)();
+            let obj7 = callback(10611);
             c5 = 3;
             c6 = 1;
             const obj6 = { value: null, done: false };
@@ -191,8 +191,8 @@ function clearMainFrameSlot() {
   const mainFrame = store.getMainFrame();
   if (null != mainFrame) {
     if (mainFrame.intent === constants.MAIN) {
-      importDefault(10910)().leaveFrame(mainFrame.id);
-      const obj8 = importDefault(10910)();
+      importDefault(10976)().leaveFrame(mainFrame.id);
+      const obj8 = importDefault(10976)();
     } else {
       const id = mainFrame.id;
       const frame = obj.getFrame(id);
@@ -247,7 +247,7 @@ function _refreshProxyTicket() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -299,8 +299,8 @@ function _refreshProxyTicket() {
           } else if (2 === tmp9) {
             frame = 1;
             c5 = dispatcher;
-            dispatcher = applicationId(10533)();
-            let obj8 = callback(10545);
+            dispatcher = applicationId(10599)();
+            let obj8 = callback(10611);
             c5 = 3;
             c6 = 1;
             const obj4 = { value: null, done: false };
@@ -412,9 +412,9 @@ export const promoteFrame = function promoteFrame(closure_0) {
     tmp = id !== closure_0;
   }
   if (tmp) {
-    const result = require(10532) /* leaveCurrentEmbeddedActivity */.leaveCurrentEmbeddedActivity();
+    const result = require(10598) /* leaveCurrentEmbeddedActivity */.leaveCurrentEmbeddedActivity();
     clearMainFrameSlot();
-    const obj2 = require(10532) /* leaveCurrentEmbeddedActivity */;
+    const obj2 = require(10598) /* leaveCurrentEmbeddedActivity */;
     obj = { type: "FRAME_PROMOTE", frameId: null };
     obj[1] = closure_0;
     importDefault(709).dispatch(obj);

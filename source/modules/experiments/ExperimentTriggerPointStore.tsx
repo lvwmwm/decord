@@ -1,9 +1,9 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12952
+// Function ID: 12953
 // Name: handleConnectionOpen
-// Dependencies: [4216, 1212, 12883, 12884, 589, 709, 2]
+// Dependencies: [4217, 1212, 12953, 12954, 589, 709, 2]
 
-// Module 12882 (handleConnectionOpen)
+// Module 12952 (handleConnectionOpen)
 import getHash from "getHash";
 import initialize from "initialize";
 import apexExperiment from "apexExperiment";
@@ -12,7 +12,7 @@ import importDefaultResult from "dispatcher";
 
 const require = arg1;
 function handleConnectionOpen() {
-  const ConnectionOpenTriggerPoint = require(12884) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
+  const ConnectionOpenTriggerPoint = require(12954) /* commonTriggerPointConfiguration */.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
 class ExperimentTriggerPointStore extends Store {

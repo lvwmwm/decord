@@ -1,9 +1,9 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 13888
+// Function ID: 13889
 // Name: zustandStore
-// Dependencies: [4169, 2]
+// Dependencies: [4170, 2]
 
-// Module 13818 (zustandStore)
+// Module 13888 (zustandStore)
 const zustandStore = require("defaultStatesAreEqual").createZustandStore(() => ({ query: "", isActive: false, isFocused: false, selected: null }));
 const result = require("set").fileFinishedImporting("modules/user_settings/UserSettingSearchStore.tsx");
 

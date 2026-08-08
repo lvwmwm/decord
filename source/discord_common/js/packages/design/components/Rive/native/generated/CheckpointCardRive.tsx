@@ -1,9 +1,9 @@
-// Module ID: 4088
-// Function ID: 4089
+// Module ID: 4094
+// Function ID: 4095
 // Name: CheckpointCardRive
-// Dependencies: [109, 19, 21, 4030, 4089, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4095, 4087, 2]
 
-// Module 4088 (CheckpointCardRive)
+// Module 4094 (CheckpointCardRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -1346,7 +1346,7 @@ const forwardRefResult = importAllResult.forwardRef(function CheckpointCardRiveW
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointCardRive.tsx");
 

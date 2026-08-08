@@ -1,10 +1,10 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10878
+// Function ID: 10879
 // Name: disconnectRemote
-// Dependencies: [5, 4373, 4317, 4316, 676, 698, 709, 4640, 1236, 9097, 10813, 530, 1208, 10814, 10815, 10818, 2]
+// Dependencies: [5, 4375, 4318, 4317, 676, 698, 709, 4642, 1236, 9157, 10879, 530, 1208, 10880, 10881, 10884, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 10812 (disconnectRemote)
+// Module 10878 (disconnectRemote)
 import expandEventProperties from "expandEventProperties";
 import createRTCConnection from "createRTCConnection";
 import handleUpdate from "handleUpdate";
@@ -70,7 +70,7 @@ function _disconnectRemote() {
     yield Promise.all(items);
     if (1 === tmp7) {
       c3 = 0;
-      const obj1 = v0(4640);
+      const obj1 = v0(4642);
       const obj2 = { title: null, body: null };
       const intl = callback(1236).intl;
       obj2[0] = intl.string(callback(1236).t.LNhXcL);
@@ -120,7 +120,7 @@ function _getConnectNonce() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ function _fetchDevices() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -327,7 +327,7 @@ function _sendConnectVoiceCommand() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -450,7 +450,7 @@ function _cancelCommand() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -511,7 +511,7 @@ function _cancelCommand() {
             obj6[3] = dependencyMap;
             obj.dispatch(obj6);
             c8 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           handleUpdate = tmp28;
@@ -554,7 +554,7 @@ function _transferToPlayStation() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -648,7 +648,7 @@ function _transferToPlayStation() {
           } else {
             callback(id[15])(id.id, closure_0);
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp27) {
           c6 = tmp;
@@ -713,7 +713,7 @@ export const remoteDisconnect = function remoteDisconnect(remoteSessionId) {
   disconnectRemote();
 };
 export const remoteAudioSettingsUpdate = function remoteAudioSettingsUpdate(sessionId, arg1, first) {
-  let obj = require(9097) /* snapVolumeToDefault */;
+  let obj = require(9157) /* snapVolumeToDefault */;
   const result = obj.coerceAudioContextForProto(first);
   if (null != result) {
     obj = { type: "REMOTE_COMMAND", sessionId: null, payload: null };

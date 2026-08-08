@@ -1,10 +1,10 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9585
+// Function ID: 9586
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 4294, 21, 4302, 589, 8122, 9521, 5659, 2]
+// Dependencies: [32, 19, 17, 4295, 21, 4303, 589, 8182, 9586, 5719, 2]
 // Exports: default
 
-// Module 9520 (PremiumGiftBackgroundAnimation)
+// Module 9585 (PremiumGiftBackgroundAnimation)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

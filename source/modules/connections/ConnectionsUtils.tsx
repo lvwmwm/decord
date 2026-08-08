@@ -1,10 +1,10 @@
-// Module ID: 5123
-// Function ID: 5124
+// Module ID: 5124
+// Function ID: 5125
 // Name: officialApplicationIds
-// Dependencies: [1964, 1891, 3929, 5124, 676, 1467, 38, 1236, 12, 5125, 589, 4117, 1358, 2]
+// Dependencies: [1964, 1891, 3929, 5125, 676, 1467, 38, 1236, 12, 5126, 589, 4123, 1358, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
 
-// Module 5123 (officialApplicationIds)
+// Module 5124 (officialApplicationIds)
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -365,7 +365,7 @@ export const getVisibleConnectionsRole = function getVisibleConnectionsRole(guil
         }
         return hasItem;
       });
-      const intersectionResult = importDefault(12).intersection(found, importDefault(5125)(channel));
+      const intersectionResult = importDefault(12).intersection(found, importDefault(5126)(channel));
       if (intersectionResult.length > 0) {
         let first = intersectionResult[0];
         if (first == null) {

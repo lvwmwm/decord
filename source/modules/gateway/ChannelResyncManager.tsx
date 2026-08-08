@@ -1,9 +1,9 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16391
+// Function ID: 16392
 // Name: handleGuildCreate
-// Dependencies: [5, 1218, 1372, 4639, 1891, 4992, 676, 1379, 3, 687, 5260, 698, 709, 7053, 12868, 1384, 514, 2]
+// Dependencies: [5, 1218, 1372, 4641, 1891, 4994, 676, 1379, 3, 687, 5261, 698, 709, 7113, 12938, 1384, 514, 2]
 
-// Module 16314 (handleGuildCreate)
+// Module 16391 (handleGuildCreate)
 import _handleConnectionOpen from "_handleConnectionOpen";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -284,7 +284,7 @@ function _scheduleGuildResyncs() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -432,7 +432,7 @@ function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c4 = tmp;
@@ -482,7 +482,7 @@ function _getResyncGuilds() {
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(12868);
+  let obj = _require(12938);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
     if (null != dependencyMap3[guild_id]) {
       let _clearTimeout = clearTimeout;

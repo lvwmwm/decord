@@ -1,10 +1,10 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 14481
+// Function ID: 14482
 // Name: KrispLogo
-// Dependencies: [19, 17, 4349, 8022, 676, 21, 1974, 4302, 4238, 4147, 10798, 10799, 1236, 5426, 10797, 4298, 10794, 10380, 13816, 2]
+// Dependencies: [19, 17, 4351, 8082, 676, 21, 1974, 4303, 4239, 4153, 10864, 10865, 1236, 5427, 10863, 4299, 10860, 10446, 13886, 2]
 // Exports: default
 
-// Module 14411 (KrispLogo)
+// Module 14481 (KrispLogo)
 import set from "set";
 import get_ActivityIndicator from "createToggle";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -22,11 +22,11 @@ let unpackModuleId;
 const require = arg1;
 function KrispLogo() {
   const tmp = callback3();
-  let obj = require(4147) /* AccessibilityAnnouncer */;
+  let obj = require(4153) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(tmp4)) {
-    let tmp2Result = tmp2(10798);
+    let tmp2Result = tmp2(10864);
   } else {
-    tmp2Result = tmp2(10799);
+    tmp2Result = tmp2(10865);
   }
   obj = { style: tmp.krisp, children: null };
   obj = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
@@ -36,17 +36,17 @@ function KrispLogo() {
   const obj1 = { accessibilityRole: "link", accessibilityLabel: null, onPress: null, children: null };
   const intl2 = tmp5(1236).intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[2] = require(10797) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  obj1[2] = require(10863) /* handleKrispLinkPressed */.handleKrispLinkPressed;
   const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
   const intl3 = tmp5(1236).intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[3] = callback(require(4298) /* Text */.Text, obj2);
-  items[1] = callback(require(5426) /* Directions */.Pressable, obj1);
+  obj1[3] = callback(require(4299) /* Text */.Text, obj2);
+  items[1] = callback(require(5427) /* LegacyBaseButton */.LegacyPressable, obj1);
   obj[1] = items;
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10794) /* getNoiseCancellationDeferredToSystem */;
+  let obj = require(10860) /* getNoiseCancellationDeferredToSystem */;
   let tmp3 = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     obj = { variant: "text-sm/medium", children: null };
@@ -57,7 +57,7 @@ function SystemProcessingSubLabel() {
       const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
     };
     obj[1] = intl.format(tmp(1236).t.EUNgko, obj);
-    tmp3 = callback(tmp(4298).Text, obj);
+    tmp3 = callback(tmp(4299).Text, obj);
   }
   return tmp3;
 }
@@ -69,7 +69,7 @@ let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules
 
 export default function SettingsVoiceScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(10380);
+    let obj = callback(10446);
     obj = { sections: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -133,5 +133,5 @@ export default function SettingsVoiceScreen() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13816), { node });
+  return callback(importDefault(13886), { node });
 };

@@ -1,10 +1,10 @@
-// Module ID: 8547
-// Function ID: 8548
+// Module ID: 8607
+// Function ID: 8608
 // Name: componentDidMount
-// Dependencies: [19, 17, 4294, 3994, 1372, 1903, 7982, 21, 4302, 712, 4013, 8548, 7981, 8550, 11292, 3971, 1236, 10947, 10941, 12, 4310, 11011, 10990, 10953, 4529, 1872, 11053, 11078, 8553, 7163, 10952, 10954, 10989, 10891, 11955, 11226, 500, 5327, 4844, 4298, 3974, 589, 1474, 5884, 4515, 2]
+// Dependencies: [19, 17, 4295, 3994, 1372, 1903, 8042, 21, 4303, 712, 4013, 8608, 8041, 8610, 11358, 3971, 1236, 11013, 11007, 12, 4311, 11077, 11056, 11019, 4531, 1872, 11119, 11144, 8613, 7223, 11018, 11020, 11055, 10957, 12021, 11292, 500, 5328, 4846, 4299, 3974, 589, 1474, 5944, 4517, 2]
 // Exports: ChatPreview
 
-// Module 8547 (componentDidMount)
+// Module 8607 (componentDidMount)
 import importAllResult from "apply";
 import get_ActivityIndicator from "computeScrollData";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -98,7 +98,7 @@ class ChatPreviewBase extends PureComponent {
           let arr = items;
           const first = items[0];
           if (null != first) {
-            if (messages(11292)(c0, first[first.length - 1], props)) {
+            if (messages(11358)(c0, first[first.length - 1], props)) {
               items = [props];
               arr = arr.unshift(items);
             } else {
@@ -221,7 +221,7 @@ class ChatPreviewBase extends PureComponent {
         const jumpTargetId = tmp3.jumpTargetId;
         let tmp23;
         if (!tmp7) {
-          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "Path", shouldInitialScroll: "Array", animated: 0.111, scrollPosition: 0.551, focusTargetId: "user" };
+          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: "open_hands_tone2", scrollPosition: "recomputeViewableItems", focusTargetId: null };
           obj[0] = tmp22;
           obj[1] = jumpTargetId;
           obj[2] = jumpTargetId;
@@ -276,7 +276,7 @@ class ChatPreviewBase extends PureComponent {
         }
       }
       let obj = applyArgumentsResult(outer1_3[21]);
-      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "isInRestrictedHours" };
+      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "2026-02-private-channel-hiding", selectedChannelId: "user", tapLinkData: null };
       obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
         const jumpToChatProps = props.props.jumpToChatProps;
         const onBeforeJumpToMessage = jumpToChatProps.onBeforeJumpToMessage;
@@ -400,7 +400,7 @@ class ChatPreviewBase extends PureComponent {
       if (null != message) {
         const channel = outer1_8.getChannel(message.getChannelId());
         if (null != channel) {
-          const obj = { tapImageData: null, allowWithinModal: true, message: null, messageChannel: null, selectedChannelId: "T", showContextName: null };
+          const obj = { tapImageData: null, allowWithinModal: true, message: null, messageChannel: null, selectedChannelId: "HermesInternal", showContextName: null };
           obj[0] = nativeEvent;
           obj[2] = message;
           obj[3] = channel;
@@ -483,7 +483,7 @@ prototype["render"] = function render() {
     if (null != guild_id) {
       let obj = { guildId: null, channelId: null };
       ({ guild_id: obj8[0], id: obj8[1] } = channel);
-      let tmp14 = callback(importDefault(10891), obj);
+      let tmp14 = callback(importDefault(10957), obj);
     }
     obj = { style: null, children: null };
     obj[0] = tmp.containerInner;
@@ -499,7 +499,7 @@ prototype["render"] = function render() {
     if (null != guild_id1) {
       let obj1 = { guildId: null, channelId: null };
       ({ guild_id: obj7[0], id: obj7[1] } = channel);
-      tmp14 = callback(importDefault(11955), obj1);
+      tmp14 = callback(importDefault(12021), obj1);
     }
   }
   obj = { ref: self.chatRef, style: tmp.chat, inverted: true, onTapLink: self.handleTapLink, onTapChannel: self.handleTapChannel, onLongPressChannel: self.handleLongPressChannel, onLongPressLink: self.handleLongPressLink, onLongPressMessage: self.handleLongPressMessage, onLongPressReaction: self.handleLongPressReaction, onTapReaction: self.handleTapReaction, onTapImage: self.handleTapImage, onCompleteFirstLayout: null, onFirstLayout: null };
@@ -509,7 +509,7 @@ prototype["render"] = function render() {
     prop = self.handleCompleteFirstLayout;
   }
   obj[11] = prop;
-  const tmp8 = importDefault(11226);
+  const tmp8 = importDefault(11292);
   let prop1;
   if (!tmp9Result.isIOS()) {
     prop1 = self.handleCompleteFirstLayout;
@@ -518,9 +518,9 @@ prototype["render"] = function render() {
   tmp6Result = tmp6(tmp8, obj);
   const obj2 = { bottom: true, style: tmp.jumpToChatButtonContainer, children: null };
   const obj3 = { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat, children: null };
-  obj3[3] = callback(require(4298) /* Text */.Text, { style: tmp.jumpToChatText, variant: "text-md/medium", color: "interactive-text-default", children: self.props.jumpToChatProps.jumpToChatText });
-  obj2[2] = callback(require(4844) /* PressableBase */.PressableOpacity, obj3);
-  tmp6Result = tmp6(tmp9(5327).SafeAreaPaddingView, obj2);
+  obj3[3] = callback(require(4299) /* Text */.Text, { style: tmp.jumpToChatText, variant: "text-md/medium", color: "interactive-text-default", children: self.props.jumpToChatProps.jumpToChatText });
+  obj2[2] = callback(require(4846) /* PressableBase */.PressableOpacity, obj3);
+  tmp6Result = tmp6(tmp9(5328).SafeAreaPaddingView, obj2);
   tmp14 = tmp6Result;
 };
 ChatPreviewBase.contextType = require("ManaContext").ThemeContext;
@@ -542,10 +542,10 @@ export const ChatPreview = function ChatPreview(channelId) {
   const items1 = [ensureGuildLoaded];
   const stateFromStores1 = channelId(589).useStateFromStores(items1, () => outer1_8.getChannel(channelId));
   const obj2 = channelId(589);
-  const isChannelSpoilerGated = channelId(5884).useIsChannelSpoilerGated(stateFromStores1);
-  const obj3 = channelId(5884);
-  const isChannelContentGated = channelId(4515).useIsChannelContentGated(stateFromStores1);
-  const obj4 = channelId(4515);
+  const isChannelSpoilerGated = channelId(5944).useIsChannelSpoilerGated(stateFromStores1);
+  const obj3 = channelId(5944);
+  const isChannelContentGated = channelId(4517).useIsChannelContentGated(stateFromStores1);
+  const obj4 = channelId(4517);
   const items2 = [setContent];
   obj = {};
   const stateFromStores2 = channelId(589).useStateFromStores(items2, () => null != content.getContent());

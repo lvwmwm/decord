@@ -1,10 +1,10 @@
-// Module ID: 4801
-// Function ID: 4802
+// Module ID: 4803
+// Function ID: 4804
 // Name: FolderIcon
-// Dependencies: [19, 21, 712, 4004, 4765, 2]
+// Dependencies: [19, 21, 712, 4004, 4767, 2]
 // Exports: FolderIcon
 
-// Module 4801 (FolderIcon)
+// Module 4803 (FolderIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FolderIcon = function FolderIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4765) /* registerAsset */;
+  obj[0] = require(4767) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

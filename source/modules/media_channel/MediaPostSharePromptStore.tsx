@@ -1,9 +1,9 @@
-// Module ID: 7990
-// Function ID: 7991
+// Module ID: 8050
+// Function ID: 8051
 // Name: set
-// Dependencies: [1962, 1218, 1372, 7991, 11, 589, 709, 2]
+// Dependencies: [1962, 1218, 1372, 8051, 11, 589, 709, 2]
 
-// Module 7990 (set)
+// Module 8050 (set)
 import isSubscriptionGated from "isSubscriptionGated";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -47,7 +47,7 @@ const mediaPostSharePromptStore = new MediaPostSharePromptStore(require("dispatc
             }
           }
         }
-        obj2 = require(7991) /* useIsFirstMessageInMediaPost */;
+        obj2 = require(8051) /* useIsFirstMessageInMediaPost */;
       }
     }
   },

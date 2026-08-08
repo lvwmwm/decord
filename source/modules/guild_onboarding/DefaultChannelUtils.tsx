@@ -1,10 +1,10 @@
-// Module ID: 5243
-// Function ID: 5244
+// Module ID: 5244
+// Function ID: 5245
 // Name: useCanChannelBeDefault
 // Dependencies: [1962, 1372, 676, 506, 589, 3934, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5243 (useCanChannelBeDefault)
+// Module 5244 (useCanChannelBeDefault)
 import isSubscriptionGated from "isSubscriptionGated";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";

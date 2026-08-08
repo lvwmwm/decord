@@ -1,9 +1,9 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16384
+// Function ID: 16385
 // Name: disconnect
-// Dependencies: [1371, 1372, 4318, 4374, 6857, 1236, 5128, 5260, 4187, 2]
+// Dependencies: [1371, 1372, 4319, 4376, 6917, 1236, 5129, 5261, 4188, 2]
 
-// Module 16307 (disconnect)
+// Module 16384 (disconnect)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateVoiceState from "updateVoiceState";
@@ -35,10 +35,10 @@ function disconnect() {
     const currentClientVoiceChannelId1 = currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null);
     if (null != currentClientVoiceChannelId1) {
       const intl = require(1236) /* getSystemLocale */.intl;
-      importDefault(6857).sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(require(1236) /* getSystemLocale */.t.XYof5G, { number: 3 }));
-      const obj3 = importDefault(6857);
-      const voiceChannel = importDefault(5128).selectVoiceChannel(null);
-      const obj4 = importDefault(5128);
+      importDefault(6917).sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(require(1236) /* getSystemLocale */.t.XYof5G, { number: 3 }));
+      const obj3 = importDefault(6917);
+      const voiceChannel = importDefault(5129).selectVoiceChannel(null);
+      const obj4 = importDefault(5129);
     }
   }
 }
@@ -46,7 +46,7 @@ let c7 = 180000;
 let prototype = function CallIdleManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
   const require = applyArgumentsResult;
-  const timeout = new require(4187) /* start */.Timeout();
+  const timeout = new require(4188) /* start */.Timeout();
   applyArgumentsResult.idleTimeout = timeout;
   applyArgumentsResult.handleConnectionClosed = function handleConnectionClosed() {
     const idleTimeout = applyArgumentsResult.idleTimeout;

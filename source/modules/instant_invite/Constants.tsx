@@ -1,9 +1,9 @@
-// Module ID: 7136
-// Function ID: 7137
+// Module ID: 7196
+// Function ID: 7197
 // Name: InviteSendStates
 // Dependencies: [2]
 
-// Module 7136 (InviteSendStates)
+// Module 7196 (InviteSendStates)
 import set from "set";
 
 const obj = { GUILD: 0, [0]: "GUILD", GROUP_DM: 1, [1]: "GROUP_DM", FRIEND: 2, [2]: "FRIEND" };

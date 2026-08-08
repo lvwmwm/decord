@@ -1,9 +1,9 @@
-// Module ID: 8214
-// Function ID: 8215
+// Module ID: 8274
+// Function ID: 8275
 // Name: ORIGINAL_MD5_HEADER
 // Dependencies: [2]
 
-// Module 8214 (ORIGINAL_MD5_HEADER)
+// Module 8274 (ORIGINAL_MD5_HEADER)
 const result = require("set").fileFinishedImporting("lib/uploader_inline/originalMd5Header.tsx");
 
 export const ORIGINAL_MD5_HEADER = "X-Discord-Original-MD5";

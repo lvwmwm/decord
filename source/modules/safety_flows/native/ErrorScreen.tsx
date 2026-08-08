@@ -1,10 +1,10 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 16961
+// Function ID: 16962
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4302, 712, 1480, 16866, 16870, 4298, 1236, 4710, 4712, 5767, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4303, 712, 1480, 16943, 16947, 4299, 1236, 4712, 4714, 5827, 2]
 // Exports: default
 
-// Module 16884 (ErrorScreen)
+// Module 16961 (ErrorScreen)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -39,7 +39,7 @@ export default function ErrorScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ export default function ErrorScreen() {
             c3 = 0;
             callback(false);
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp32) {
           closure_2 = tmp32;

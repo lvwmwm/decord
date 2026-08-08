@@ -1,9 +1,9 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 11766
+// Function ID: 11767
 // Name: ICON_SIZE
 // Dependencies: [2]
 
-// Module 11700 (ICON_SIZE)
+// Module 11766 (ICON_SIZE)
 const result = require("set").fileFinishedImporting("modules/application_commands/native/ApplicationCommandsCategoriesConstants.tsx");
 
 export const ICON_SIZE = 24;

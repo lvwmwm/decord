@@ -1,10 +1,10 @@
-// Module ID: 9584
-// Function ID: 9585
+// Module ID: 9649
+// Function ID: 9650
 // Name: MusicIcon
-// Dependencies: [19, 21, 712, 4004, 9585, 2]
+// Dependencies: [19, 21, 712, 4004, 9650, 2]
 // Exports: MusicIcon
 
-// Module 9584 (MusicIcon)
+// Module 9649 (MusicIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const MusicIcon = function MusicIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9585) /* registerAsset */;
+  obj[0] = require(9650) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

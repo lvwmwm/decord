@@ -1,10 +1,10 @@
-// Module ID: 8496
-// Function ID: 8497
+// Module ID: 8556
+// Function ID: 8557
 // Name: _fetchChannelConversations
-// Dependencies: [5, 6995, 8497, 6997, 676, 8494, 709, 530, 6857, 8498, 8499, 8506, 2]
+// Dependencies: [5, 7055, 8557, 7057, 676, 8554, 709, 530, 6917, 8558, 8559, 8566, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 8496 (_fetchChannelConversations)
+// Module 8556 (_fetchChannelConversations)
 import apexExperiment from "apexExperiment";
 import removePendingListFetch from "removePendingListFetch";
 import initialize from "initialize";
@@ -38,7 +38,7 @@ function _fetchChannelConversations() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ function _fetchChannelConversations() {
               let conversations;
               hydrateMessages = 1;
               c8 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -139,7 +139,7 @@ function _fetchChannelConversations() {
                     return obj5;
                   }
                 }
-                obj15 = callback(8494);
+                obj15 = callback(8554);
               }
             } else if (2 === tmp7) {
               c6 = 0;
@@ -188,7 +188,7 @@ function _fetchChannelConversations() {
               return obj;
             }
             c8 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp70) {
           if (tmp4 === c6) {
@@ -246,7 +246,7 @@ function _fetchConversationMessages() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -314,7 +314,7 @@ function _fetchConversationMessages() {
                   }
                 }
               }
-              obj14 = callback(8494);
+              obj14 = callback(8554);
               tmp52 = callback;
             }
           } else {
@@ -405,8 +405,8 @@ export const setSelectedConversation = function setSelectedConversation(channelI
     obj = { channelId: null, messageId: null, flash: false };
     obj[0] = channelId;
     obj[1] = conversationMetadata.conversation.startMessageId;
-    importDefault(6857).jumpToMessage(obj);
-    const tmpResult = importDefault(6857);
+    importDefault(6917).jumpToMessage(obj);
+    const tmpResult = importDefault(6917);
   }
 };
 export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
@@ -421,11 +421,11 @@ export const setConversationFeedbackRating = function setConversationFeedbackRat
 };
 export { fetchConversationMessages };
 export const trackTopicalNavigationEntrypointImpression = function trackTopicalNavigationEntrypointImpression(id, stateFromStores1) {
-  const ConversationsAnalytics = require(8498) /* ConversationsAnalytics */.ConversationsAnalytics;
+  const ConversationsAnalytics = require(8558) /* ConversationsAnalytics */.ConversationsAnalytics;
   const result = ConversationsAnalytics.trackEntrypointImpression({ channelId: id, conversationCount: stateFromStores1 });
   if (initialize.shouldTriggerOnNextExposure()) {
-    importDefault(8499).fireSurveyAction(require(8506) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
-    const obj2 = importDefault(8499);
+    importDefault(8559).fireSurveyAction(require(8566) /* SurveyActionTypes */.SurveyActionTypes.TOPICAL_NAVIGATION_MULTIPLE_IMPRESSIONS);
+    const obj2 = importDefault(8559);
   }
   importDefault(709).dispatch({ type: "TOPICAL_NAVIGATION_ENTRYPOINT_IMPRESSION" });
 };

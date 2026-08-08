@@ -1,9 +1,9 @@
-// Module ID: 4512
-// Function ID: 4513
+// Module ID: 4514
+// Function ID: 4515
 // Name: withEqualityFn
-// Dependencies: [1372, 700, 4513, 705, 2]
+// Dependencies: [1372, 700, 4515, 705, 2]
 
-// Module 4512 (withEqualityFn)
+// Module 4514 (withEqualityFn)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import identity from "identity";
 
@@ -27,7 +27,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   obj[6] = new Set();
   obj[7] = function openChannel(arg0) {
     const callback = arg0;
-    let result = callback(4513).isStageVoicePanelEnabled("voice_panel_store");
+    let result = callback(4515).isStageVoicePanelEnabled("voice_panel_store");
     if (!result) {
       const channel = outer1_2.getChannel(arg0);
       let isGuildStageVoiceResult;

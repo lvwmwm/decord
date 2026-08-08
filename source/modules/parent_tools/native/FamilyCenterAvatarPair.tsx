@@ -1,10 +1,10 @@
-// Module ID: 14097
-// Function ID: 14098
+// Module ID: 14167
+// Function ID: 14168
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1903, 21, 4302, 712, 647, 1297, 2]
+// Dependencies: [19, 17, 1903, 21, 4303, 712, 647, 1297, 2]
 // Exports: default
 
-// Module 14097 (FamilyCenterAvatarPair)
+// Module 14167 (FamilyCenterAvatarPair)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

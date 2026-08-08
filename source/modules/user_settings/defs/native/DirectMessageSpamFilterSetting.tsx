@@ -1,9 +1,9 @@
-// Module ID: 14011
-// Function ID: 14012
+// Module ID: 14081
+// Function ID: 14082
 // Name: radio
-// Dependencies: [19, 8022, 14012, 3974, 10380, 1236, 14014, 2]
+// Dependencies: [19, 8082, 14082, 3974, 10446, 1236, 14084, 2]
 
-// Module 14011 (radio)
+// Module 14081 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 

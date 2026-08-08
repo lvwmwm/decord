@@ -1,9 +1,9 @@
-// Module ID: 11625
-// Function ID: 11626
+// Module ID: 11691
+// Function ID: 11692
 // Name: _createGuildFromTemplate
-// Dependencies: [5, 676, 5126, 503, 4201, 2]
+// Dependencies: [5, 676, 5127, 503, 4202, 2]
 
-// Module 11625 (_createGuildFromTemplate)
+// Module 11691 (_createGuildFromTemplate)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -31,7 +31,7 @@ function _createGuildFromTemplate() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -67,13 +67,13 @@ function _createGuildFromTemplate() {
               c9 = 2;
               c10 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = callback2(5126).post(obj1);
+              obj5[0] = callback2(5127).post(obj1);
               return obj5;
             }
           } else if (1 === tmp7) {
             c8 = 0;
             callback = closure_7;
-            const aPIError = new callback(4201).APIError(callback);
+            const aPIError = new callback(4202).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c10 = 3;
@@ -112,7 +112,7 @@ function _createGuildFromTemplate() {
   }
   return applyArgumentsResult;
 }
-const result = require("module_5126").fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
+const result = require("module_5127").fileFinishedImporting("modules/create_guild/CreateGuildActionCreators.tsx");
 
 export default {
   createGuildFromTemplate(c4, c5, outer1_1, c3, outer1_9) {

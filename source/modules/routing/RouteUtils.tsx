@@ -1,10 +1,10 @@
-// Module ID: 4136
-// Function ID: 4137
+// Module ID: 4142
+// Function ID: 4143
 // Name: RouteParam
-// Dependencies: [677, 1379, 2, 4137]
+// Dependencies: [677, 1379, 2, 4143]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4136 (RouteParam)
+// Module 4142 (RouteParam)
 import { PSEUDO_GUILD_IDS } from "INVITE";
 import { isStaticChannelRoute } from "set";
 

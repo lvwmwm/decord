@@ -1,9 +1,9 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8142
+// Function ID: 8143
 // Name: PUBLIC_SUCCESS_MODAL_SEEN_KEY
 // Dependencies: [676, 506, 2]
 
-// Module 8082 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+// Module 8142 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
 import importAllResult from "fromString";
 
 const items = [, , , , , , , , , , , , , ];

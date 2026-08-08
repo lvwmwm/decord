@@ -1,9 +1,9 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15150
+// Function ID: 15151
 // Name: LeftPanelContent
-// Dependencies: [32, 19, 17, 676, 21, 15081, 5328, 4302, 712, 4155, 1609, 15082, 15083, 15084, 15165, 15320, 4162, 15087, 15400, 4158, 10936, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15151, 5329, 4303, 712, 4161, 1609, 15152, 15153, 15154, 15235, 15395, 4036, 15157, 15475, 4164, 11002, 2]
 
-// Module 15080 (LeftPanelContent)
+// Module 15150 (LeftPanelContent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "MobileHomeDrawerExperiment";
 import get_ActivityIndicator from "context";
@@ -96,14 +96,14 @@ function LeftPanelHomeDrawerContainer() {
   let gesture;
   let homeDrawerContext;
   let panelStyles;
-  let obj = require(15087) /* context */;
+  let obj = require(15157) /* context */;
   const homeGesture = obj.useHomeGesture();
   ({ gesture, panelStyles, homeDrawerContext } = homeGesture);
   obj = { value: homeDrawerContext, children: null };
   obj = { gesture, children: null };
   obj[1] = callback2(LeftPanelContent, { panelStyles });
-  obj[1] = callback2(require(15400) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
-  return callback2(require(15087) /* context */.HomeDrawerStateContext.Provider, obj);
+  obj[1] = callback2(require(15475) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
+  return callback2(require(15157) /* context */.HomeDrawerStateContext.Provider, obj);
 }
 let c4 = importAllResult;
 ({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
@@ -118,7 +118,7 @@ obj[2] = createCacheKey;
 obj[3] = { borderTopRightRadius: require("Themes").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 let closure_11 = createCacheKey.createStyles(obj);
 let closure_14 = importAllResult.memo(function LeftMenuTabsInner() {
-  const MobileHomeDrawerExperiment = require(4158) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4164) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   if (MobileHomeDrawerExperiment.useConfig({ location: "gesture" }).enableHome) {
     let tmp2Result = tmp2(LeftPanelHomeDrawerContainer, {});
   } else {
@@ -132,9 +132,9 @@ let closure_14 = importAllResult.memo(function LeftMenuTabsInner() {
 let obj2 = { borderTopRightRadius: require("Themes").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const memoResult = importAllResult.memo(function MainChannelsRedesignInner() {
   const obj = { profile: null, children: null };
-  obj[0] = require(10936) /* setLevels */.Profiles.LeftPanel;
+  obj[0] = require(11002) /* setLevels */.Profiles.LeftPanel;
   obj[1] = callback2(closure_14, {});
-  return callback2(importDefault(10936), obj);
+  return callback2(importDefault(11002), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/MainChannels.tsx");
 

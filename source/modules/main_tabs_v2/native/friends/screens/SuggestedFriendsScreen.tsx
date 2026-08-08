@@ -1,10 +1,10 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 15843
+// Function ID: 15844
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 676, 21, 4302, 712, 5668, 5688, 698, 15110, 8723, 15765, 4846, 9561, 10186, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 5728, 5748, 698, 15180, 8783, 15840, 4848, 9626, 10252, 1236, 2]
 // Exports: default
 
-// Module 15768 (SuggestedFriendsScreen)
+// Module 15843 (SuggestedFriendsScreen)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import ME from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15408
+// Function ID: 15409
 // Name: MiniGuildIcon
-// Dependencies: [19, 7037, 1891, 4118, 5154, 15323, 15329, 15324, 21, 4302, 712, 4005, 589, 5719, 1348, 4711, 4145, 688, 7949, 4162, 4646, 4765, 8168, 5267, 15334, 15336, 11909, 15343, 4271, 5231, 5721, 15326, 15344, 2]
+// Dependencies: [19, 7097, 1891, 4124, 5155, 15398, 15404, 15399, 21, 4303, 712, 4005, 589, 5779, 1348, 4713, 4151, 688, 8009, 4036, 4648, 4767, 8228, 5268, 15409, 15411, 11975, 15418, 4272, 5232, 5781, 15401, 15419, 2]
 
-// Module 15333 (MiniGuildIcon)
-import importAllResult from "module_4162";
+// Module 15408 (MiniGuildIcon)
+import importAllResult from "module_4036";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -50,10 +50,10 @@ function MiniGuildIcon(arg0) {
   if (!selected) {
     prop = tmp4.guildPreviewIconUnselected;
   }
-  obj = { style: items1, guild: stateFromStores, size: tmp(5719).GuildIconSizes.XXSMALL, selected };
+  obj = { style: items1, guild: stateFromStores, size: tmp(5779).GuildIconSizes.XXSMALL, selected };
   items1[1] = prop;
   items1[2] = guildPreview3;
-  return tmp6(importDefault(5719), obj, "" + selected);
+  return tmp6(importDefault(5779), obj, "" + selected);
 }
 function TransitionWrapper(children) {
   let flag = children.fromTop;
@@ -139,7 +139,7 @@ function GuildFolderIcon(item) {
     const obj = { source: null, style: null };
     obj[0] = tmp3;
     obj[1] = item.tintStyle;
-    tmp4 = callback2(importDefault(5267), obj);
+    tmp4 = callback2(importDefault(5268), obj);
   }
   return tmp4;
 }

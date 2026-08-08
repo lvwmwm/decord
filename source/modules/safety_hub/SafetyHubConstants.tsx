@@ -1,9 +1,9 @@
-// Module ID: 7745
-// Function ID: 7746
+// Module ID: 7805
+// Function ID: 7806
 // Name: SafetyHubView
 // Dependencies: [676, 503, 2]
 
-// Module 7745 (SafetyHubView)
+// Module 7805 (SafetyHubView)
 import { AnalyticsSections } from "ME";
 
 let obj = { SETTINGS: "SETTINGS", ACCOUNT_STANDING: "ACCOUNT_STANDING", GUILD_SETTINGS: "GUILD_SETTINGS", ENCRYPTION: "ENCRYPTION", CONTENT_AND_SOCIAL: "CONTENT_AND_SOCIAL", DATA_PRIVACY: "DATA_PRIVACY" };

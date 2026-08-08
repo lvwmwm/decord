@@ -1,10 +1,10 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15992
+// Function ID: 15993
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [19, 17, 4294, 7284, 676, 1369, 21, 4302, 712, 589, 9976, 15918, 8793, 4270, 5668, 5688, 9967, 5396, 500, 9321, 5267, 4298, 4712, 1236, 2]
+// Dependencies: [19, 17, 4295, 7344, 676, 1369, 21, 4303, 712, 589, 10042, 15993, 8853, 4271, 5728, 5748, 10033, 5397, 500, 9386, 5268, 4299, 4714, 1236, 2]
 // Exports: default
 
-// Module 15917 (GiftingPromotionCoachmarkActionSheet)
+// Module 15992 (GiftingPromotionCoachmarkActionSheet)
 import useAPNGPlayerControls from "useAPNGPlayerControls";
 import { View } from "Background";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,7 +49,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(589);
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
-  let obj1 = markAsDismissed(9976);
+  let obj1 = markAsDismissed(10042);
   let asset;
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
@@ -58,7 +58,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let tmp2Result = tmp2(589);
   const items1 = [createEmptyPromotionsByType];
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
-  tmp2Result = tmp2(15918);
+  tmp2Result = tmp2(15993);
   let endDate;
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
@@ -66,10 +66,10 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   const str = tmp2Result.useTickingFormattedLimitedOfferTimeLeft(endDate);
   importDefault = tmp9;
   let tmp10 = importDefault;
-  const tmp11 = importDefault(8793)(null != stateFromStores1);
+  const tmp11 = importDefault(8853)(null != stateFromStores1);
   dependencyMap = tmp11;
   React = tmp12;
-  const tmp13 = importDefault(8793)(null != str);
+  const tmp13 = importDefault(8853)(null != str);
   c4 = tmp13;
   const items2 = [tmp13, null != str, null != stateFromStores1, tmp11, markAsDismissed];
   const effect = React.useEffect(() => {
@@ -89,7 +89,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj2 = _undefined(_undefined2[13]);
     }
   }, items2);
-  analyticsLocations = importDefault(5668)(importDefault(5688).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
+  analyticsLocations = importDefault(5728)(importDefault(5748).GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
   let tmp18Result = null;
   if (null != coachmarkComponent) {
@@ -107,7 +107,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
         obj1[0] = tmp.countdownBadge;
         let obj2 = { variant: "text-xs/bold", color: "text-overlay-light", children: null };
         obj2[2] = str.toUpperCase();
-        obj1[1] = tmp18(tmp2(4298).Text, obj2);
+        obj1[1] = tmp18(tmp2(4299).Text, obj2);
         tmp18Result = tmp18(tmp21, obj1);
       }
       items4[1] = tmp18Result;
@@ -116,18 +116,18 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj4 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
       obj4[0] = tmp.text;
       obj4[3] = coachmarkComponent.header;
-      const items5 = [tmp18(tmp2(4298).Text, obj4), ];
+      const items5 = [tmp18(tmp2(4299).Text, obj4), ];
       const obj5 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
       obj5[0] = tmp.text;
       obj5[3] = coachmarkComponent.body;
-      items5[1] = tmp18(tmp2(4298).Text, obj5);
+      items5[1] = tmp18(tmp2(4299).Text, obj5);
       obj3[1] = items5;
       items4[2] = tmp20(tmp21, obj3);
       const obj6 = { grow: true, text: null, onPress: null };
       const intl = tmp2(1236).intl;
       obj6[1] = intl.string(tmp2(1236).t.RzWDqY);
       obj6[2] = tmp16;
-      items4[3] = tmp18(tmp2(4712).Button, obj6);
+      items4[3] = tmp18(tmp2(4714).Button, obj6);
       obj[1] = items4;
       obj[2] = tmp20(tmp21, obj);
       tmp18Result = tmp18(tmp19, obj);
@@ -141,11 +141,11 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           const obj8 = { url: null, style: null, autoplay: true };
           obj8[0] = themeAndReducedMotionAwareAssetUrl;
           obj8[1] = tmp.imageShared;
-          obj7[1] = tmp18(tmp2(9321).APNGPlayer, obj8);
+          obj7[1] = tmp18(tmp2(9386).APNGPlayer, obj8);
           let tmp18Result1 = tmp18(tmp21, obj7);
         }
       }
-      tmp10 = tmp10(5267);
+      tmp10 = tmp10(5268);
       const obj9 = { source: null, style: null };
       const obj10 = { uri: null };
       obj10[0] = themeAndReducedMotionAwareAssetUrl;

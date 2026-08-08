@@ -1,10 +1,10 @@
-// Module ID: 8971
-// Function ID: 8972
+// Module ID: 9031
+// Function ID: 9032
 // Name: PreviewBody
-// Dependencies: [19, 17, 1372, 676, 21, 4302, 712, 500, 589, 4492, 8885, 8972, 4298, 1236, 8973, 1297, 8974, 8881, 5327, 8897, 4712, 8882, 4641, 8975, 1988, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 4303, 712, 500, 589, 4494, 8945, 9032, 4299, 1236, 9033, 1297, 9034, 8941, 5328, 8957, 4714, 8942, 4643, 9035, 1988, 2]
 // Exports: default
 
-// Module 8971 (PreviewBody)
+// Module 9031 (PreviewBody)
 import usePrimaryActionButtonType from "usePrimaryActionButtonType";
 import { View } from "EditGuildEventScreens";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -31,21 +31,21 @@ function PreviewBody(event) {
   let items = [eventLocationIconSource];
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channel_id), items1);
-  const tmp6 = channel_id(4492)(stateFromStores);
+  const tmp6 = channel_id(4494)(stateFromStores);
   dependencyMap = tmp6;
-  let obj1 = _require(8885);
+  let obj1 = _require(8945);
   locationFromEvent = obj1.getLocationFromEvent(event);
   let tmp8 = tmp6;
   if (tmp6 == null) {
     tmp8 = locationFromEvent;
   }
   c4 = tmp8;
-  eventLocationIconSource = _require(8972).getEventLocationIconSource(event, stateFromStores, true);
+  eventLocationIconSource = _require(9032).getEventLocationIconSource(event, stateFromStores, true);
   obj = { style: tmp.header, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj[3] = intl.string(_require(1236).t.yBsFE3);
-  const items2 = [callback(_require(4298).Text, obj), ];
+  const items2 = [callback(_require(4299).Text, obj), ];
   obj1 = { style: tmp.headerSubtitle, accessibilityLabel: null, variant: "text-sm/medium", color: "text-default", children: null };
   let formatToPlainStringResult;
   if (null != stateFromStores) {
@@ -53,7 +53,7 @@ function PreviewBody(event) {
     const obj2 = { channelName: null };
     const obj3 = { channel: null };
     obj3[0] = stateFromStores;
-    obj2[0] = channel_id(8973)(obj3);
+    obj2[0] = channel_id(9033)(obj3);
     formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.sxcQPE, obj2);
   }
   obj1[1] = formatToPlainStringResult;
@@ -97,7 +97,7 @@ function PreviewBody(event) {
     formatResult = intl3.string(tmp2(1236).t.KDPFi9);
   }
   obj1[4] = formatResult;
-  items2[1] = callback(_require(4298).Text, obj1);
+  items2[1] = callback(_require(4299).Text, obj1);
   obj[1] = items2;
   return closure_7(c4, obj);
 }

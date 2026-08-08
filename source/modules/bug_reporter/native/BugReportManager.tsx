@@ -1,9 +1,9 @@
-// Module ID: 9828
-// Function ID: 9829
+// Module ID: 9894
+// Function ID: 9895
 // Name: showNotification
-// Dependencies: [5, 17, 706, 676, 4514, 500, 9701, 9703, 514, 5260, 9829, 2]
+// Dependencies: [5, 17, 706, 676, 4516, 500, 9767, 9769, 514, 5261, 9895, 2]
 
-// Module 9828 (showNotification)
+// Module 9894 (showNotification)
 import set from "set";
 import get_ActivityIndicator from "get ActivityIndicator";
 import refreshSourceMapCookie from "refreshSourceMapCookie";
@@ -27,7 +27,7 @@ function showNotification(uri) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ function showNotification(uri) {
               }
             }
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c3 = tmp;
@@ -107,7 +107,7 @@ function showNotification(uri) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -152,12 +152,12 @@ function showNotification(uri) {
             }
             outer1_0 = tmp7;
             outer1_1 = outer1_7.BUG_REPORTER;
-            dependencyMap = outer1_0(9701).getNotificationDuration(outer1_1);
-            const obj5 = outer1_0(9701);
+            dependencyMap = outer1_0(9767).getNotificationDuration(outer1_1);
+            const obj5 = outer1_0(9767);
             const obj3 = { type: null, duration: null, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
             obj3[0] = outer1_1;
             obj3[1] = dependencyMap;
-            const obj6 = outer1_1(9703);
+            const obj6 = outer1_1(9769);
             obj3[2] = outer1_0(514).v4();
             obj3[3] = outer1_0;
             let uri;
@@ -172,7 +172,7 @@ function showNotification(uri) {
             obj3[6] = outer1_0(514).v4();
             obj6.enqueueNotification(obj3);
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -220,7 +220,7 @@ prototype["initBugReporter"] = function initBugReporter() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -281,7 +281,7 @@ prototype["initBugReporter"] = function initBugReporter() {
             })();
           }
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;

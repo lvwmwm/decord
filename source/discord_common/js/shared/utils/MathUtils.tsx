@@ -1,10 +1,10 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9563
+// Function ID: 9564
 // Name: roundIfClose
 // Dependencies: [2]
 // Exports: roundIfClose
 
-// Module 9498 (roundIfClose)
+// Module 9563 (roundIfClose)
 function roundIfClose(result, arg1) {
   const diff = result - Math.floor(result);
   if (diff >= 1 - arg1) {

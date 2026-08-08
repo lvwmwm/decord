@@ -1,10 +1,10 @@
-// Module ID: 8003
-// Function ID: 8004
+// Module ID: 8063
+// Function ID: 8064
 // Name: getForwardInfo
-// Dependencies: [8004, 1372, 1891, 3929, 3938, 1903, 1416, 1236, 3971, 4492, 5858, 2]
+// Dependencies: [8064, 1372, 1891, 3929, 3938, 1903, 1416, 1236, 3971, 4494, 5918, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 8003 (getForwardInfo)
+// Module 8063 (getForwardInfo)
 import getGuild from "getGuild";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -93,7 +93,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
         if (obj1.can(channel1.accessPermissions, channel1)) {
           obj4 = { snapshotIndex: null, footerInfo: null };
           obj4[0] = snapshotIndex;
-          const tmp3Result = tmp3(4492);
+          const tmp3Result = tmp3(4494);
           const channelName = tmp3Result.computeChannelName(channel1, tmp, tmp2, true);
           const obj5 = { originLabel: null, timestampLabel: null, accessibilityLabel: null };
           obj5[0] = channelName;
@@ -155,7 +155,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 
 export { MessageForward };
 export const maybeCreateSingleForwardForMessage = function maybeCreateSingleForwardForMessage(message) {
-  if (importDefault(5858)(message)) {
+  if (importDefault(5918)(message)) {
     const first = message.messageSnapshots[0];
     if (null != first) {
       if (typeof MessageForward !== "function") {

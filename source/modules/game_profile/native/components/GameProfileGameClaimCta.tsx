@@ -1,10 +1,10 @@
-// Module ID: 12128
-// Function ID: 12129
+// Module ID: 12195
+// Function ID: 12196
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 676, 21, 9218, 5871, 1935, 4712, 1236, 2]
+// Dependencies: [5, 19, 676, 21, 9283, 5931, 1935, 4714, 1236, 2]
 // Exports: default
 
-// Module 12128 (GameProfileGameClaimCta)
+// Module 12195 (GameProfileGameClaimCta)
 import createHandoffTokenWithLoadingModal from "createHandoffTokenWithLoadingModal";
 import noop from "noop";
 import { RelativeMarketingURLs } from "ME";
@@ -30,7 +30,7 @@ export default function GameProfileGameClaimCta(trackAction) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ export default function GameProfileGameClaimCta(trackAction) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         v0 = tmp;
@@ -79,7 +79,7 @@ export default function GameProfileGameClaimCta(trackAction) {
     const intl = trackAction(1236).intl;
     obj[2] = intl.string(trackAction(1236).t["mqg+to"]);
     obj[3] = callback;
-    let tmp3 = jsx(trackAction(4712).Button, { variant: "secondary", size: "md", text: null, onPress: null });
+    let tmp3 = jsx(trackAction(4714).Button, { variant: "secondary", size: "md", text: null, onPress: null });
   } else {
     tmp3 = null;
   }

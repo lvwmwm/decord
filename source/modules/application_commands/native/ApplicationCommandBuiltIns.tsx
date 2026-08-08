@@ -1,9 +1,9 @@
-// Module ID: 8291
-// Function ID: 8292
+// Module ID: 8351
+// Function ID: 8352
 // Name: get untranslatedDescription
-// Dependencies: [3938, 1903, 4735, 1935, 6922, 1236, 4492, 4640, 4312, 6857, 2]
+// Dependencies: [3938, 1903, 4737, 1935, 6982, 1236, 4494, 4642, 4313, 6917, 2]
 
-// Module 8291 (get untranslatedDescription)
+// Module 8351 (get untranslatedDescription)
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
 
@@ -33,11 +33,11 @@ obj.predicate = function predicate(channel) {
 obj.execute = function execute(arg0, channel) {
   channel = channel.channel;
   if (null != channel) {
-    const channelName = channel(4492).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+    const channelName = channel(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
     const intl5 = channel(1236).intl;
     let obj = { name: null };
     obj[0] = channelName;
-    const obj5 = channel(4492);
+    const obj5 = channel(4494);
     const intl6 = channel(1236).intl;
     obj = { name: null };
     obj[0] = channelName;
@@ -53,7 +53,7 @@ obj.execute = function execute(arg0, channel) {
       obj1[0] = channelName;
       formatResult = intl2.format(tmp5(1236).t.IK1Qvs, obj1);
     }
-    let obj2 = importDefault(4640);
+    let obj2 = importDefault(4642);
     obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
     obj2[0] = formatToPlainStringResult1;
     obj2[1] = formatResult;

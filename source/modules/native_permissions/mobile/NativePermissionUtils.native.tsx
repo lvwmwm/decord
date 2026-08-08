@@ -1,9 +1,9 @@
-// Module ID: 4866
-// Function ID: 4867
+// Module ID: 4868
+// Function ID: 4869
 // Name: combineStatuses
-// Dependencies: [5, 19, 17, 4514, 21, 500, 1605, 4863, 3, 4867, 4869, 1988, 4642, 1236, 2]
+// Dependencies: [5, 19, 17, 4516, 21, 500, 1605, 4865, 3, 4869, 4871, 1988, 4644, 1236, 2]
 
-// Module 4866 (combineStatuses)
+// Module 4868 (combineStatuses)
 import closure_3 from "set";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -48,7 +48,7 @@ function _combineStatuses() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -216,13 +216,13 @@ prototype["didHavePermission"] = function didHavePermission(arg0) {
   return storage.hasPermission(arg0);
 };
 prototype["openSettings"] = function openSettings() {
-  importDefault(4867)();
+  importDefault(4869)();
 };
 prototype["openAlertModal"] = function openAlertModal(arg0) {
   let body;
   let onConfirm;
   ({ body, onConfirm } = arg0);
-  let obj = require(4642) /* useAlertStore */;
+  let obj = require(4644) /* useAlertStore */;
   obj = { title: null, body: null, onConfirm: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.sMFVrS);

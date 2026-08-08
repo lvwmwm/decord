@@ -1,10 +1,10 @@
-// Module ID: 5145
-// Function ID: 5146
+// Module ID: 5146
+// Function ID: 5147
 // Name: getHighestHoistedRole
 // Dependencies: [1971, 1891, 3934, 589, 2]
 // Exports: default
 
-// Module 5145 (getHighestHoistedRole)
+// Module 5146 (getHighestHoistedRole)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 

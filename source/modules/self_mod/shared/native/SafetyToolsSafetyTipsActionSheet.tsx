@@ -1,10 +1,10 @@
-// Module ID: 10323
-// Function ID: 10324
+// Module ID: 10389
+// Function ID: 10390
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 10272, 21, 4302, 712, 10314, 1236, 10291, 4298, 2]
+// Dependencies: [19, 17, 10338, 21, 4303, 712, 10380, 1236, 10357, 4299, 2]
 // Exports: default
 
-// Module 10323 (SafetyToolsSafetyTipsActionSheet)
+// Module 10389 (SafetyToolsSafetyTipsActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { getInappropriateConversationsSafetyTips as closure_4 } from "LOCATION_CONTEXT_MOBILE";
@@ -33,10 +33,10 @@ export default function SafetyToolsSafetyTipsActionSheet(arg0) {
   obj[6] = onClose;
   obj = { style: tmp.safetyTipsContainer, children: null };
   obj = { description: null, safetyTips: null };
-  const tmp2 = importDefault(10314);
+  const tmp2 = importDefault(10380);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.DJMZX6);
-  const tmp3 = importDefault(10291);
+  const tmp3 = importDefault(10357);
   obj[1] = callback().map((children) => callback2(callback(table[9]).Text, { variant: "text-sm/medium", children }, arg1));
   obj[1] = <tmp3 description={null} safetyTips={null} />;
   obj[7] = <View description={null} safetyTips={null} />;

@@ -1,10 +1,10 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8086
+// Function ID: 8087
 // Name: createCallSystemMessage
-// Dependencies: [4315, 1218, 4318, 676, 4320, 8027, 8028, 1236, 1419, 3971, 8012, 2]
+// Dependencies: [4316, 1218, 4319, 676, 4321, 8087, 8088, 1236, 1419, 3971, 8072, 2]
 // Exports: createCallSystemMessage
 
-// Module 8026 (createCallSystemMessage)
+// Module 8086 (createCallSystemMessage)
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
 import updateVoiceState from "updateVoiceState";
@@ -20,9 +20,9 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   const channelId = message.getChannelId();
   const call = message.call;
   userVoiceChannelId = userVoiceChannelId.getUserVoiceChannelId(ME, id);
-  const tmp6 = importDefault(8027)(message);
+  const tmp6 = importDefault(8087)(message);
   participants = participants.getParticipants(channelId);
-  let obj = require(8028) /* useIsCallActive */;
+  let obj = require(8088) /* useIsCallActive */;
   const checkIsCallActiveResult = obj.checkIsCallActive(channelId, message.id);
   let tmp9 = !checkIsCallActiveResult;
   if (!checkIsCallActiveResult) {
@@ -76,6 +76,6 @@ export const createCallSystemMessage = function createCallSystemMessage(message)
   }
   obj = { title: stringResult1, description: formatToPlainStringResult, isCallActive: checkIsCallActiveResult, missed: tmp9, avatarURLs: mapped, rawMilliseconds: timestamp.valueOf() };
   timestamp = message.timestamp;
-  const merged = Object.assign(importDefault(8012)(message));
+  const merged = Object.assign(importDefault(8072)(message));
   return obj;
 };

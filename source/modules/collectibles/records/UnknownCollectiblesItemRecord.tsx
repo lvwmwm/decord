@@ -1,10 +1,10 @@
-// Module ID: 6949
-// Function ID: 6950
+// Module ID: 7009
+// Function ID: 7010
 // Name: fromServer
 // Dependencies: [1929, 1930, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 6949 (fromServer)
+// Module 7009 (fromServer)
 import "fromServer";
 
 const require = arg1;

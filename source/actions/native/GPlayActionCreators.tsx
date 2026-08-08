@@ -1,10 +1,10 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7378
+// Function ID: 7379
 // Name: getPlanIdForProduct
-// Dependencies: [109, 5, 17, 7274, 1218, 5798, 676, 5799, 1905, 505, 3, 5801, 5817, 3984, 709, 3960, 3962, 4640, 1236, 698, 530, 2]
+// Dependencies: [109, 5, 17, 7334, 1218, 5858, 676, 5859, 1905, 505, 3, 5861, 5877, 3984, 709, 3960, 3962, 4642, 1236, 698, 530, 2]
 // Exports: downgradeSubscription, loadUserCountry, purchase, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 7318 (getPlanIdForProduct)
+// Module 7378 (getPlanIdForProduct)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importDefaultResult from "updateProduct";
 import setGPlayAnalytics from "setGPlayAnalytics";
@@ -29,13 +29,13 @@ let c1 = importDefault;
 function getPlanIdForProduct(arg0, arg1) {
   if (arg1) {
     try {
-      return callback(5801).getPlanIdForGift(arg0);
+      return callback(5861).getPlanIdForGift(arg0);
     } catch (err) {
       return null;
     }
   } else {
     let basePlanId;
-    const tmp4 = callback(5801).AppStorePremiumProductIdsToPremiumBundledItems[arg0];
+    const tmp4 = callback(5861).AppStorePremiumProductIdsToPremiumBundledItems[arg0];
     if (tmp4 != null) {
       basePlanId = tmp4.basePlanId;
     }
@@ -82,7 +82,7 @@ function _fetchDesktopSubscriptionSkus() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           while (true) {
@@ -134,7 +134,7 @@ function _fetchDesktopSubscriptionSkus() {
                 c21 = 1;
                 let num9 = 1;
                 logger = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp4) {
               if (arg0 === 1) {
@@ -517,7 +517,7 @@ function _loadUserCountry() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -556,7 +556,7 @@ function _loadUserCountry() {
           obj3[1] = closure_0;
           obj.dispatch(obj3);
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c3 = tmp;
@@ -604,7 +604,7 @@ function _subscribe() {
         obj2[1] = c5;
         obj3[0] = obj2;
         const result = obj1.captureBillingException(message, obj3);
-        let obj4 = callback2(4640);
+        let obj4 = callback2(4642);
         obj4 = { title: null, body: null };
         const intl = callback(1236).intl;
         obj4[0] = intl.string(callback(1236).t["U+H+kd"]);
@@ -658,7 +658,7 @@ function _verifyPurchase() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -829,7 +829,7 @@ closure_0 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -853,7 +853,7 @@ closure_0 = importDefaultResult(() => {
             callback2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_8", done: "Array" };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -965,7 +965,7 @@ const importDefaultResultResult = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -987,7 +987,7 @@ const importDefaultResultResult = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_8", done: "Array" };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1046,7 +1046,7 @@ const importDefaultResultResult = importDefaultResult(() => {
                 throw c4;
               } else {
                 c6 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -1102,7 +1102,7 @@ closure_0 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1126,7 +1126,7 @@ closure_0 = importDefaultResult(() => {
             callback2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_8", done: "Array" };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1257,7 +1257,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1279,7 +1279,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_8", done: "Array" };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1338,7 +1338,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
                 throw c4;
               } else {
                 c6 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -1389,7 +1389,7 @@ closure_0 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "T", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -1421,7 +1421,7 @@ closure_0 = importDefaultResult(function*() {
         return obj;
       } else {
         c0 = 3;
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp8) {
       c0 = tmp;
@@ -1497,7 +1497,7 @@ closure_0 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "T", done: null };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -1613,7 +1613,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1635,7 +1635,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_8", done: "Array" };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1694,7 +1694,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
                 throw c4;
               } else {
                 c6 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -1750,7 +1750,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1772,7 +1772,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
             let closure_3;
             c5 = 1;
             c6 = 1;
-            return { value: "PX_8", done: "Array" };
+            return { value: "ct", done: "Array" };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1831,7 +1831,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
                 throw c4;
               } else {
                 c6 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
@@ -1905,7 +1905,7 @@ export const subscribe = function subscribe() {
   }
   return applyArgumentsResult;
 };
-export const verifyPurchase = function verifyPurchase(closure_0, closure_2) {
+export const verifyPurchase = function verifyPurchase() {
   const self = this;
   const apply = _verifyPurchase.apply;
   if (typeof apply === "unknown") {
@@ -1915,8 +1915,8 @@ export const verifyPurchase = function verifyPurchase(closure_0, closure_2) {
   }
   return applyArgumentsResult;
 };
-export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytics(closure_0) {
-  const tmp = state.getState().analyticsByProductId[closure_0.productId];
+export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytics(productId) {
+  const tmp = state.getState().analyticsByProductId[productId.productId];
   if (null != tmp) {
     const succeededOnlyFields = tmp.succeededOnlyFields;
     const tmp4 = callback2(tmp, closure_4);
@@ -1926,7 +1926,7 @@ export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytic
     const merged = Object.assign(tmp4);
     const merged1 = Object.assign(succeededOnlyFields);
     _true(698).track(constants.PAYMENT_FLOW_SUCCEEDED, obj);
-    callback3(closure_0.productId);
+    callback3(productId.productId);
     const obj2 = _true(698);
   }
 };

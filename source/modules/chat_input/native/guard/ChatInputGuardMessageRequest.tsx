@@ -1,8 +1,8 @@
-// Module ID: 11733
-// Function ID: 11734
-// Dependencies: [5, 19, 1903, 21, 1480, 11734, 589, 11736, 4002, 1236, 8385, 4310, 11742, 2]
+// Module ID: 11799
+// Function ID: 11800
+// Dependencies: [5, 19, 1903, 21, 1480, 11800, 589, 11802, 4002, 1236, 8445, 4311, 11808, 2]
 
-// Module 11733
+// Module 11799
 import useIsMessageRequestRestrictedViewer from "useIsMessageRequestRestrictedViewer";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
@@ -39,7 +39,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -71,10 +71,10 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = lib(4310);
+              obj = lib(4311);
               obj.transitionToChannel(lib.id, { navigationReplace: true });
               c3 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp14) {
             c3 = tmp;
@@ -110,7 +110,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -142,7 +142,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
               return obj;
             } else {
               c1 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp9) {
             c1 = tmp;
@@ -162,8 +162,8 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
   }
   let obj = channel(1480);
   importDefault = obj.useNavigation();
-  const isMessageRequestRestrictedViewer = channel(11734).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
-  let obj2 = channel(11734);
+  const isMessageRequestRestrictedViewer = channel(11800).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(11800);
   const items = [_onAcceptClick];
   const stateFromStores = channel(589).useStateFromStores(items, () => _onAcceptClick.getUser(channel.getRecipientId()));
   const obj3 = channel(589);
@@ -181,7 +181,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
 
     }
   };
-  const messageRequestActions = channel(11736).useMessageRequestActions(obj);
+  const messageRequestActions = channel(11802).useMessageRequestActions(obj);
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   let tmp6 = isAcceptLoading;
   if (!isAcceptLoading) {
@@ -197,7 +197,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
     tmp6 = isOptimisticRejected;
   }
   obj = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(11736);
+  const obj4 = channel(11802);
   const tmp7 = _onRejectClick;
   let intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["e/eQVB"]);
@@ -242,7 +242,7 @@ const memoResult = require("noop").memo(function ChatInputGuardMessageRequest(ch
     isRejectLoading = isOptimisticRejected;
   }
   obj[10] = isRejectLoading;
-  return tmp7(importDefault(11742), obj);
+  return tmp7(importDefault(11808), obj);
 });
 const result = require("mergeGuildAvatar").fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardMessageRequest.tsx");
 

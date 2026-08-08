@@ -1,10 +1,10 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10767
+// Function ID: 10768
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [1218, 4318, 4316, 589, 2]
+// Dependencies: [1218, 4319, 4317, 589, 2]
 // Exports: default
 
-// Module 10701 (useVoiceStateForRemoteSession)
+// Module 10767 (useVoiceStateForRemoteSession)
 import fetchFingerprint from "fetchFingerprint";
 import updateVoiceState from "updateVoiceState";
 import set from "set";

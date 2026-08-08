@@ -1,9 +1,9 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7299
+// Function ID: 7300
 // Name: _fileSize
-// Dependencies: [5, 676, 4295, 3, 652, 12, 4890, 4895, 4856, 4857, 2]
+// Dependencies: [5, 676, 4296, 3, 652, 12, 4892, 4897, 4858, 4859, 2]
 
-// Module 7239 (_fileSize)
+// Module 7299 (_fileSize)
 import apply from "apply";
 import { AbortCodes } from "ME";
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING";
@@ -83,7 +83,7 @@ class UploaderBase extends EventEmitter {
     };
     obj = require("apply");
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "channelId" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "channel" };
     return tmp3;
   }
 }
@@ -112,7 +112,7 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -351,7 +351,7 @@ prototype["cancelItem"] = function cancelItem(itemId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

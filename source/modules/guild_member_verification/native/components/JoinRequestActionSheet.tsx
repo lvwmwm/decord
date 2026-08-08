@@ -1,9 +1,9 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15686
+// Function ID: 15687
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4294, 1911, 1903, 676, 21, 4302, 589, 8247, 7344, 4162, 8763, 4238, 5690, 4005, 712, 688, 8253, 7262, 1958, 8248, 5396, 1297, 8767, 1236, 4013, 5398, 15612, 5652, 2]
+// Dependencies: [19, 17, 4295, 1911, 1903, 676, 21, 4303, 589, 8307, 7404, 4036, 8823, 4239, 5750, 4005, 712, 688, 8313, 7322, 1958, 8308, 5397, 1297, 8827, 1236, 4013, 5399, 15687, 5712, 2]
 
-// Module 15611 (JoinRequestActionSheet)
+// Module 15686 (JoinRequestActionSheet)
 import importAllResult from "trackMemberApplicationViewed";
 import { View } from "int2hslRaw";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -59,7 +59,7 @@ class JoinRequestActionSheet {
     obj3 = guildId;
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
     ref = guildId.useRef(null);
-    tmp2Result1 = require("module_4162");
+    tmp2Result1 = require("module_4036");
     sharedValue = require("noop");
     useSharedValue = sharedValue;
     items2 = [];

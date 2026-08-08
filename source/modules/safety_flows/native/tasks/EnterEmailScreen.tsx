@@ -1,10 +1,10 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16949
+// Function ID: 16950
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1480, 16873, 1236, 2546, 16864, 4710, 7730, 2]
+// Dependencies: [32, 19, 21, 1480, 16950, 1236, 2546, 16941, 4712, 7790, 2]
 // Exports: default
 
-// Module 16872 (EnterEmailScreen)
+// Module 16949 (EnterEmailScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function EnterEmailScreen() {
     arr = arr.push(arr(outer1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
   obj = { children: null };
-  obj[0] = jsx(_require(7730).TextInput, { label: "Email", value: tmp2, onChange: tmp3 });
-  obj[3] = jsx(_require(4710).Stack, { children: null });
-  return jsx(importDefault(16873), { children: null });
+  obj[0] = jsx(_require(7790).TextInput, { label: "Email", value: tmp2, onChange: tmp3 });
+  obj[3] = jsx(_require(4712).Stack, { children: null });
+  return jsx(importDefault(16950), { children: null });
 };

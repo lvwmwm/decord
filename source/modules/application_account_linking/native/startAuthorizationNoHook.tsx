@@ -1,10 +1,10 @@
-// Module ID: 11096
-// Function ID: 11097
+// Module ID: 11162
+// Function ID: 11163
 // Name: _startAuthorizationNoHook
-// Dependencies: [5, 676, 5673, 3998, 698, 2]
+// Dependencies: [5, 676, 5733, 3998, 698, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11096 (_startAuthorizationNoHook)
+// Module 11162 (_startAuthorizationNoHook)
 import set from "set";
 import { AnalyticEvents } from "ME";
 
@@ -29,7 +29,7 @@ function _startAuthorizationNoHook() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

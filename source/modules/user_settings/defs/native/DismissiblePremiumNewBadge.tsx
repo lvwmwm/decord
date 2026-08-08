@@ -1,10 +1,10 @@
-// Module ID: 14519
-// Function ID: 14520
+// Module ID: 14589
+// Function ID: 14590
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 6836, 21, 4302, 712, 9934, 500, 1297, 4723, 691, 2]
+// Dependencies: [19, 6896, 21, 4303, 712, 10000, 500, 1297, 4725, 691, 2]
 // Exports: default
 
-// Module 14519 (DismissiblePremiumNewBadge)
+// Module 14589 (DismissiblePremiumNewBadge)
 import "noop";
 import { Gradients } from "items";
 import { jsx } from "jsxProd";
@@ -28,7 +28,7 @@ export default function DismissiblePremiumNewBadge(dismissibleContent) {
   let closure_6;
   closure_6 = createCacheKey();
   let items = [dismissibleContent];
-  return jsx(importDefault(9934), {
+  return jsx(importDefault(10000), {
     contentTypes: items,
     children(visibleContent) {
       if (visibleContent.visibleContent !== dismissibleContent) {

@@ -1,9 +1,9 @@
-// Module ID: 5948
-// Function ID: 5949
+// Module ID: 6008
+// Function ID: 6009
 // Name: HeaderActionButton
-// Dependencies: [19, 1301, 21, 4302, 712, 4298, 4716, 4714, 4844, 2]
+// Dependencies: [19, 1301, 21, 4303, 712, 4299, 4718, 4716, 4846, 2]
 
-// Module 5948 (HeaderActionButton)
+// Module 6008 (HeaderActionButton)
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -45,9 +45,9 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
     ({ text: arr[0], buttonFont: arr[1] } = tmp);
     items[2] = textStyle;
     obj[0] = items;
-    obj[3] = require(4716) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    obj[3] = require(4718) /* MINIMUM_HIT_AREA */.BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
     obj[4] = text;
-    let tmp2 = callback(require(4298) /* Text */.Text, obj);
+    let tmp2 = callback(require(4299) /* Text */.Text, obj);
   } else if (null != IconComponent) {
     obj = { size: null };
     obj[0] = IconComponentSize;
@@ -57,7 +57,7 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
     obj[0] = source;
     obj[1] = imageStyle;
     obj[2] = iconSize;
-    tmp2 = callback(importDefault(4714), obj);
+    tmp2 = callback(importDefault(4716), obj);
   }
   const obj1 = { ref, accessibilityLabel: null, accessibilityHint: null, accessibilityActions: null, onAccessibilityAction: null, accessibilityRole: "button", onPress: null, activeOpacity: 0.6, androidRippleConfig: null, style: null, disabled: null, children: null };
   if (accessibilityLabel == null) {
@@ -83,7 +83,7 @@ const forwardRefResult = require("noop").forwardRef((arg0, ref) => {
   obj1[10] = disabled;
   const items2 = [tmp2, icon];
   obj1[11] = items2;
-  return closure_5(require(4844) /* PressableBase */.PressableOpacity, obj1);
+  return closure_5(require(4846) /* PressableBase */.PressableOpacity, obj1);
 });
 const result = require("jsxProd").fileFinishedImporting("design/components/Navigator/native/HeaderActionButton.native.tsx");
 

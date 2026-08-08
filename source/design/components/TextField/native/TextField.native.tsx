@@ -1,9 +1,9 @@
-// Module ID: 5933
-// Function ID: 5934
+// Module ID: 5993
+// Function ID: 5994
 // Name: TextField
-// Dependencies: [19, 21, 5934, 5935, 5939, 5942, 2]
+// Dependencies: [19, 21, 5994, 5995, 5999, 6002, 2]
 
-// Module 5933 (TextField)
+// Module 5993 (TextField)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -15,18 +15,18 @@ const forwardRefResult = require("noop").forwardRef((onClear, ref) => {
   let leading;
   let state;
   let trailing;
-  let obj = require(5934) /* useTextFieldState */;
+  let obj = require(5994) /* useTextFieldState */;
   const textField = obj.useTextField(onClear, ref);
   ({ inputProps, innerRef, state } = textField);
-  const inputClearButtonConfig = require(5935) /* useInputClearButton */.useInputClearButtonConfig(onClear, state);
+  const inputClearButtonConfig = require(5995) /* useInputClearButton */.useInputClearButtonConfig(onClear, state);
   let tmp5;
   if (null != inputClearButtonConfig) {
     obj = { trailing: null, trailingPressableProps: null };
     ({ content: obj3[0], pressableProps: obj3[1] } = inputClearButtonConfig);
     tmp5 = obj;
   }
-  const obj2 = require(5935) /* useInputClearButton */;
-  const inputAttachments = require(5939) /* InputAttachmentContainer */.useInputAttachments(onClear, tmp5);
+  const obj2 = require(5995) /* useInputClearButton */;
+  const inputAttachments = require(5999) /* InputAttachmentContainer */.useInputAttachments(onClear, tmp5);
   ({ leading, trailing, inputStyle } = inputAttachments);
   obj = {};
   const merged = Object.assign(inputProps);
@@ -34,7 +34,7 @@ const forwardRefResult = require("noop").forwardRef((onClear, ref) => {
   obj.leading = leading;
   obj.trailing = trailing;
   obj.inputStyle = inputStyle;
-  return jsx(require(5942) /* BaseTextField */.BaseTextField, {});
+  return jsx(require(6002) /* BaseTextField */.BaseTextField, {});
 });
 const result = require("useTextFieldState").fileFinishedImporting("design/components/TextField/native/TextField.native.tsx");
 

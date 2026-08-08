@@ -1,10 +1,10 @@
-// Module ID: 9697
-// Function ID: 9698
+// Module ID: 9763
+// Function ID: 9764
 // Name: _setUserStatus
-// Dependencies: [5, 5257, 4994, 676, 4140, 1236, 9698, 1355, 1337, 4116, 698, 2]
+// Dependencies: [5, 5258, 4996, 676, 4146, 1236, 9764, 1355, 1337, 4122, 698, 2]
 // Exports: default
 
-// Module 9697 (_setUserStatus)
+// Module 9763 (_setUserStatus)
 import getSystemLocale from "getSystemLocale";
 import initialize from "initialize";
 import filterPlayingActivities from "filterPlayingActivities";
@@ -34,7 +34,7 @@ function _setUserStatus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _setUserStatus() {
               let obj5;
               c3 = 1;
               globalStats = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -145,7 +145,7 @@ function _setUserStatus() {
                 return formatToPlainStringResult;
               }
             })(callback, str);
-            const AccessibilityAnnouncer = callback(4116).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = callback(4122).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(constants);
             if (!globalStats) {
               obj = { next_status: null, prev_status: null };
@@ -172,7 +172,7 @@ function _setUserStatus() {
               obj3.track(constants.USER_STATUS_UPDATED, obj5);
             }
             globalStats = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp54) {
           globalStats = tmp;

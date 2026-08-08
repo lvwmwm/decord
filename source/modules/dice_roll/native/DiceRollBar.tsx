@@ -1,10 +1,10 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11756
+// Function ID: 11757
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4294, 11299, 21, 4302, 712, 589, 4162, 4303, 1297, 11691, 9340, 4298, 2]
+// Dependencies: [19, 17, 4295, 11365, 21, 4303, 712, 589, 4036, 4304, 1297, 11757, 9405, 4299, 2]
 // Exports: default
 
-// Module 11690 (DiceRollBar)
+// Module 11756 (DiceRollBar)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

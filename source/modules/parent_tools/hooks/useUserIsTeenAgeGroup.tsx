@@ -1,10 +1,10 @@
-// Module ID: 14086
-// Function ID: 14087
+// Module ID: 14156
+// Function ID: 14157
 // Name: useUserIsTeenAgeGroup
-// Dependencies: [6936, 589, 2]
+// Dependencies: [6996, 589, 2]
 // Exports: default
 
-// Module 14086 (useUserIsTeenAgeGroup)
+// Module 14156 (useUserIsTeenAgeGroup)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 
 const require = arg1;

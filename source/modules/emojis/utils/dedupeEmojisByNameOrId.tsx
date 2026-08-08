@@ -1,10 +1,10 @@
-// Module ID: 5182
-// Function ID: 5183
+// Module ID: 5183
+// Function ID: 5184
 // Name: dedupeEmojisByNameOrId
 // Dependencies: [3942, 2]
 // Exports: default
 
-// Module 5182 (dedupeEmojisByNameOrId)
+// Module 5183 (dedupeEmojisByNameOrId)
 let result = require("set").fileFinishedImporting("modules/emojis/utils/dedupeEmojisByNameOrId.tsx");
 
 export default function dedupeEmojisByNameOrId(arg0) {

@@ -1,9 +1,9 @@
-// Module ID: 7057
-// Function ID: 7058
+// Module ID: 7117
+// Function ID: 7118
 // Name: getCommittedVersions
-// Dependencies: [5, 4118, 3, 7050, 12, 1936, 687, 2]
+// Dependencies: [5, 4124, 3, 7110, 12, 1936, 687, 2]
 
-// Module 7057 (getCommittedVersions)
+// Module 7117 (getCommittedVersions)
 import items from "items";
 import importDefaultResult from "handleConnectionOpen";
 import isCacheEnabled from "isCacheEnabled";
@@ -69,7 +69,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

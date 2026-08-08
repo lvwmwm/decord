@@ -1,10 +1,10 @@
-// Module ID: 8160
-// Function ID: 8161
+// Module ID: 8220
+// Function ID: 8221
 // Name: _executeMessageComponentInteraction
-// Dependencies: [5, 1218, 7989, 676, 11, 7164, 8161, 1935, 530, 6857, 8162, 709, 4527, 2, 4525]
+// Dependencies: [5, 1218, 8049, 676, 11, 7224, 8221, 1935, 530, 6917, 8222, 709, 4529, 2, 4527]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8160 (_executeMessageComponentInteraction)
+// Module 8220 (_executeMessageComponentInteraction)
 import patchThread from "patchThread";
 import fetchFingerprint from "fetchFingerprint";
 import deleteNonce from "deleteNonce";
@@ -43,7 +43,7 @@ function _executeMessageComponentInteraction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ function _executeMessageComponentInteraction() {
               let obj6;
               sessionId = 1;
               c5 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -91,7 +91,7 @@ function _executeMessageComponentInteraction() {
                 closure_9 = callback2(11).fromTimestamp(Date.now());
                 if (c5.canQueueInteraction(callback2, closure_9)) {
                   c3 = 1;
-                  let obj8 = callback2(7164);
+                  let obj8 = callback2(7224);
                   sessionId = 3;
                   c5 = 1;
                   const obj2 = { value: null, done: false };
@@ -103,7 +103,7 @@ function _executeMessageComponentInteraction() {
             } else if (2 === tmp7) {
               c3 = 0;
               c5 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } else if (3 === tmp7) {
               if (arg0 === 1) {
                 c5 = 3;
@@ -134,9 +134,9 @@ function _executeMessageComponentInteraction() {
                     const obj = _undefined(_undefined2[9]);
                   }
                 };
-                callback(8161).addQueued(closure_9, obj4);
+                callback(8221).addQueued(closure_9, obj4);
                 if (null != c8) {
-                  obj1 = callback(8161);
+                  obj1 = callback(8221);
                   const result = obj1.queueInteractionComponentState(callback2, closure_9, c8, sessionId);
                 }
                 obj6 = { type: null, nonce: null, guild_id: null, channel_id: null, message_flags: null, message_id: null, application_id: null, session_id: null, data: null };
@@ -177,7 +177,7 @@ function _executeMessageComponentInteraction() {
               return obj;
             }
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp46) {
           if (tmp4 === c3) {
@@ -240,8 +240,8 @@ function mapMessageComponentLocalStateForAPI(type) {
 function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId) {
   if (!ok.ok) {
     if (ok.hasErr) {
-      require(8161) /* _fetchMessageInteractionData */.setFailed(nonce);
-      const obj10 = require(8161) /* _fetchMessageInteractionData */;
+      require(8221) /* _fetchMessageInteractionData */.setFailed(nonce);
+      const obj10 = require(8221) /* _fetchMessageInteractionData */;
     } else {
       if (ok.status >= 400) {
         if (ok.status < 500) {
@@ -249,7 +249,7 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
             let tmp9 = guildId;
             if (ok.body.code === constants.INVALID_FORM_BODY) {
               if (ok.body.errors) {
-                const firstSkemaError = require(8162) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
+                const firstSkemaError = require(8222) /* getFirstSkemaFieldError */.getFirstSkemaError(ok.body.errors);
                 let tmp28 = null == firstSkemaError;
                 if (!tmp28) {
                   let tmp29 = "INTERACTION_APPLICATION_COMMAND_INVALID_VERSION" !== firstSkemaError.code;
@@ -269,13 +269,13 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
                   importDefault(709).dispatch(obj);
                   const obj7 = importDefault(709);
                 }
-                const obj6 = require(8162) /* getFirstSkemaFieldError */;
+                const obj6 = require(8222) /* getFirstSkemaFieldError */;
                 const tmp24 = require;
                 let message;
                 if (firstSkemaError != null) {
                   message = firstSkemaError.message;
                 }
-                require(8161) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
+                require(8221) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, message);
               }
             }
             if (ok.body.code === constants.UNKNOWN_INTEGRATION) {
@@ -289,17 +289,17 @@ function handleInteractionResponse(nonce, ok, applicationId, channelId, guildId)
               obj[3] = tmp20;
               importDefault(709).dispatch(obj);
               const obj3 = importDefault(709);
-              require(8161) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
-              const obj5 = require(8161) /* _fetchMessageInteractionData */;
+              require(8221) /* _fetchMessageInteractionData */.setFailed(nonce, undefined, ok.body.message);
+              const obj5 = require(8221) /* _fetchMessageInteractionData */;
             } else {
-              const obj2 = require(8161) /* _fetchMessageInteractionData */;
+              const obj2 = require(8221) /* _fetchMessageInteractionData */;
               obj2.setFailed(nonce, ok.body.code, ok.body.message, ok.status);
             }
             return tmp16;
           }
         }
       }
-      obj = require(8161) /* _fetchMessageInteractionData */;
+      obj = require(8221) /* _fetchMessageInteractionData */;
       const body = ok.body;
       let code;
       if (body != null) {

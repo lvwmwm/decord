@@ -1,10 +1,10 @@
-// Module ID: 16542
-// Function ID: 16543
+// Module ID: 16619
+// Function ID: 16620
 // Name: withEqualityFn
-// Dependencies: [32, 5, 19, 11195, 676, 700, 16543, 705, 11200, 4201, 3914, 2]
+// Dependencies: [32, 5, 19, 11261, 676, 700, 16620, 705, 11266, 4202, 3914, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 16542 (withEqualityFn)
+// Module 16619 (withEqualityFn)
 import _slicedToArray from "_slicedToArray";
 import closure_3 from "identity";
 import noop from "noop";
@@ -112,7 +112,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -256,7 +256,7 @@ export const useSyncAutomodRules = function useSyncAutomodRules(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -340,7 +340,7 @@ export const useSyncAutomodRulesEffect = function useSyncAutomodRulesEffect(arg0
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -413,7 +413,7 @@ export const useSyncAutomodRulesEffect = function useSyncAutomodRulesEffect(arg0
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -444,7 +444,7 @@ export const useSyncAutomodRulesEffect = function useSyncAutomodRulesEffect(arg0
             return obj;
           } else {
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           v0 = tmp;

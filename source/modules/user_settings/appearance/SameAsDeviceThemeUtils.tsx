@@ -1,10 +1,10 @@
-// Module ID: 14348
-// Function ID: 14349
+// Module ID: 14418
+// Function ID: 14419
 // Name: enableSameAsDeviceTheme
-// Dependencies: [4113, 1302, 1305, 8638, 4147, 4143, 2]
+// Dependencies: [4119, 1302, 1305, 8698, 4153, 4149, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14348 (enableSameAsDeviceTheme)
+// Module 14418 (enableSameAsDeviceTheme)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import handleThemeChange from "handleThemeChange";
 import SystemThemeState from "SystemThemeState";
@@ -16,13 +16,13 @@ const require = arg1;
 let result = require("SystemThemeState").fileFinishedImporting("modules/user_settings/appearance/SameAsDeviceThemeUtils.tsx");
 
 export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(arg0) {
-  let obj = importDefault(8638);
+  let obj = importDefault(8698);
   const result = obj.setShouldSyncAppearanceSettings(false);
   let obj1 = syncedClientTheme;
   if (null == syncedClientTheme.getSyncedClientTheme(constants.LIGHT)) {
     if (null == obj1.getSyncedClientTheme(tmp3.DARK)) {
       const theme = obj1.theme;
-      const tmp4 = require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme) ? tmp3.DARK : tmp3.LIGHT;
+      const tmp4 = require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme) ? tmp3.DARK : tmp3.LIGHT;
       if (!isSyncedModeThemesEnabled.isPreview) {
         const gradientPreset = isSyncedModeThemesEnabled.gradientPreset;
         let id;
@@ -30,35 +30,35 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(arg0) {
           id = gradientPreset.id;
         }
       }
-      let tmp14Result = tmp14(4143);
+      let tmp14Result = tmp14(4149);
       obj = {};
       obj[tmp4] = theme;
       const result1 = tmp14Result.updateThemePreferences(obj);
       if (null != arg0) {
-        tmp14Result = tmp14(4143);
+        tmp14Result = tmp14(4149);
         obj = { customUserThemeSettings: null };
         obj[0] = arg0;
         const result2 = tmp14Result.updateSyncedClientTheme(tmp4, obj);
       } else if (null != tmp5) {
         obj1 = { backgroundGradientPresetId: null };
         obj1[0] = tmp5;
-        const result3 = tmp14(4143).updateSyncedClientTheme(tmp4, obj1);
-        const tmp14Result1 = tmp14(4143);
+        const result3 = tmp14(4149).updateSyncedClientTheme(tmp4, obj1);
+        const tmp14Result1 = tmp14(4149);
       } else {
         const obj2 = { theme: null };
         obj2[0] = theme;
-        const result4 = tmp14(4143).updateSyncedClientTheme(tmp4, obj2);
-        const tmp14Result2 = tmp14(4143);
+        const result4 = tmp14(4149).updateSyncedClientTheme(tmp4, obj2);
+        const tmp14Result2 = tmp14(4149);
       }
-      const obj13 = require(4147) /* AccessibilityAnnouncer */;
+      const obj13 = require(4153) /* AccessibilityAnnouncer */;
     }
   }
-  const result5 = require(4143) /* setSystemTheme */.setSameAsDeviceThemeEnabled(true);
-  const obj11 = require(4143) /* setSystemTheme */;
-  require(4143) /* setSystemTheme */.setUseSystemTheme(constants2.ON);
+  const result5 = require(4149) /* setSystemTheme */.setSameAsDeviceThemeEnabled(true);
+  const obj11 = require(4149) /* setSystemTheme */;
+  require(4149) /* setSystemTheme */.setUseSystemTheme(constants2.ON);
 };
 export const disableSameAsDeviceTheme = function disableSameAsDeviceTheme() {
-  require(4143) /* setSystemTheme */.setUseSystemTheme(constants2.OFF);
-  const obj = require(4143) /* setSystemTheme */;
-  const result = require(4143) /* setSystemTheme */.setSameAsDeviceThemeEnabled(false);
+  require(4149) /* setSystemTheme */.setUseSystemTheme(constants2.OFF);
+  const obj = require(4149) /* setSystemTheme */;
+  const result = require(4149) /* setSystemTheme */.setSameAsDeviceThemeEnabled(false);
 };

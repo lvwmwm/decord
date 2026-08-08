@@ -1,10 +1,10 @@
-// Module ID: 4171
-// Function ID: 4172
+// Module ID: 4172
+// Function ID: 4173
 // Name: PortalKeyboardState
-// Dependencies: [19, 21, 4152, 500, 4172, 2]
+// Dependencies: [19, 21, 4158, 500, 4173, 2]
 // Exports: PortalKeyboard, PortalKeyboardHost
 
-// Module 4171 (PortalKeyboardState)
+// Module 4172 (PortalKeyboardState)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -17,7 +17,7 @@ export const PortalKeyboardState = { EMPTY: "empty", REQUEST_OPEN: "request_open
 export const PORTAL_HOST_NAME_DEFAULT = "default";
 export const PORTAL_HOST_NAME_MODAL = "modal";
 export const PortalKeyboard = function PortalKeyboard(children) {
-  let obj = require(4152) /* navigationToRootTabHelper */;
+  let obj = require(4158) /* navigationToRootTabHelper */;
   if (obj.useIsModalOpen()) {
     if (tmpResult.isIOS()) {
       let tmp3 = modal;
@@ -25,7 +25,7 @@ export const PortalKeyboard = function PortalKeyboard(children) {
     obj = { hostName: null, children: null };
     obj[0] = tmp3;
     obj[1] = children.children;
-    return jsx(tmp(4172).Portal, { hostName: null, children: null });
+    return jsx(tmp(4173).Portal, { hostName: null, children: null });
   }
   tmp3 = c3;
 };
@@ -34,5 +34,5 @@ export const PortalKeyboardHost = function PortalKeyboardHost(name) {
   if (name === undefined) {
     name = c3;
   }
-  return jsx(require(4172) /* Portal */.PortalHost, { name });
+  return jsx(require(4173) /* Portal */.PortalHost, { name });
 };

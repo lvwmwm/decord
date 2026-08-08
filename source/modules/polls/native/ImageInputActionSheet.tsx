@@ -1,10 +1,10 @@
-// Module ID: 11531
-// Function ID: 11532
+// Module ID: 11597
+// Function ID: 11598
 // Name: ImageInputAnswerActionSheet
-// Dependencies: [19, 17, 7228, 21, 4302, 712, 11530, 4160, 4270, 5704, 4298, 1297, 5706, 1236, 11532, 2]
+// Dependencies: [19, 17, 7288, 21, 4303, 712, 11596, 4166, 4271, 5764, 4299, 1297, 5766, 1236, 11598, 2]
 // Exports: default
 
-// Module 11531 (ImageInputAnswerActionSheet)
+// Module 11597 (ImageInputAnswerActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY as closure_5 } from "POLL_ATTACHMENT_FOLDER";

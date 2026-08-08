@@ -1,10 +1,10 @@
-// Module ID: 11799
-// Function ID: 11800
+// Module ID: 11865
+// Function ID: 11866
 // Name: useCanPurchaseBoosts
-// Dependencies: [1903, 1905, 6800, 589, 2]
+// Dependencies: [1903, 1905, 6860, 589, 2]
 // Exports: default
 
-// Module 11799 (useCanPurchaseBoosts)
+// Module 11865 (useCanPurchaseBoosts)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { FractionalPremiumStates } from "GuildFeatures";
 
@@ -14,7 +14,7 @@ const result = require("calculateFractionalPremiumInfo").fileFinishedImporting("
 export default function useCanPurchaseBoosts() {
   const items = [mergeGuildAvatar];
   const obj = require(589) /* initialize */;
-  return importDefault(6800)().fractionalState === FractionalPremiumStates.NONE && !require(589) /* initialize */.useStateFromStores(items, () => {
+  return importDefault(6860)().fractionalState === FractionalPremiumStates.NONE && !require(589) /* initialize */.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let isPremiumGroupMemberResult;
     if (currentUser != null) {

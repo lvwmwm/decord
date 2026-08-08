@@ -1,10 +1,10 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15475
+// Function ID: 15476
 // Name: NonCollapsableGestureDetector
-// Dependencies: [109, 19, 17, 21, 5426, 2]
+// Dependencies: [109, 19, 17, 21, 5427, 2]
 // Exports: NonCollapsableGestureDetector
 
-// Module 15400 (NonCollapsableGestureDetector)
+// Module 15475 (NonCollapsableGestureDetector)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -20,5 +20,5 @@ export const NonCollapsableGestureDetector = function NonCollapsableGestureDetec
   const merged = Object.assign(callback(children, closure_2));
   obj = { style: closure_6, collapsable: false, children: children.children };
   obj.children = <View style={closure_6} collapsable={false}>{arg0.children}</View>;
-  return jsx(require(5426) /* Directions */.GestureDetector, { style: closure_6, collapsable: false, children: children.children });
+  return jsx(require(5427) /* LegacyBaseButton */.GestureDetector, { style: closure_6, collapsable: false, children: children.children });
 };

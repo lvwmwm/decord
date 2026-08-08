@@ -1,10 +1,10 @@
-// Module ID: 10230
-// Function ID: 10231
+// Module ID: 10296
+// Function ID: 10297
 // Name: useCanCurrentUserSpeakInChannel
-// Dependencies: [1218, 589, 4486, 2]
+// Dependencies: [1218, 589, 4488, 2]
 // Exports: default
 
-// Module 10230 (useCanCurrentUserSpeakInChannel)
+// Module 10296 (useCanCurrentUserSpeakInChannel)
 import fetchFingerprint from "fetchFingerprint";
 
 const require = arg1;
@@ -14,5 +14,5 @@ export default function useCanCurrentUserSpeakInChannel(arg0) {
   const items = [fetchFingerprint];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => id.getId());
   const obj = require(589) /* initialize */;
-  return importDefault(4486)(stateFromStores, arg0) === require(4486) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
+  return importDefault(4488)(stateFromStores, arg0) === require(4488) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.ON_STAGE;
 };

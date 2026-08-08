@@ -1,10 +1,10 @@
-// Module ID: 6828
-// Function ID: 6829
+// Module ID: 6888
+// Function ID: 6889
 // Name: context
-// Dependencies: [5, 32, 19, 6829, 6832, 3914, 700, 6833, 12, 3962, 6834, 2]
+// Dependencies: [5, 32, 19, 6889, 6892, 3914, 700, 6893, 12, 3962, 6894, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 6828 (context)
+// Module 6888 (context)
 import isIterable from "isIterable";
 import importAllResult from "noop";
 import createFromOrder from "createFromOrder";
@@ -78,7 +78,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -178,7 +178,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -319,7 +319,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -447,7 +447,7 @@ export const createNativeStore = function createNativeStore(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -526,7 +526,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               v0 = 0;
               callback({ isCreateOrderLoading: false });
               c6 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp42) {
             isIterable = tmp42;

@@ -1,10 +1,10 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 15043
+// Function ID: 15044
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3938, 1903, 10272, 21, 4302, 712, 589, 10305, 10308, 1480, 9179, 7724, 10285, 7960, 4002, 1236, 4263, 4001, 4712, 10316, 8710, 4781, 7896, 3998, 4298, 2]
+// Dependencies: [5, 32, 19, 17, 3938, 1903, 10338, 21, 4303, 712, 589, 10371, 10374, 1480, 9243, 7784, 10351, 8020, 4002, 1236, 4264, 4001, 4714, 10382, 8770, 4783, 7956, 3998, 4299, 2]
 // Exports: default
 
-// Module 14973 (TakeActionButtons)
+// Module 15043 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -96,7 +96,7 @@ export default function TakeActionButtons(senderId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ export default function TakeActionButtons(senderId) {
             let closure_0 = tmp4;
             if (null != outer1_9.getUser(outer1_0)) {
               outer1_6(true);
-              let obj2 = outer1_0(7960);
+              let obj2 = outer1_0(8020);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
@@ -124,7 +124,7 @@ export default function TakeActionButtons(senderId) {
                 obj = { key: outer1_13, content: null, IconComponent: null, iconColor: null, containerStyle: null };
                 const intl = tmp4(1236).intl;
                 obj[1] = intl.string(tmp4(1236).t.gn2c6X);
-                obj[2] = tmp4(4263).CircleCheckIcon;
+                obj[2] = tmp4(4264).CircleCheckIcon;
                 obj[3] = outer1_14;
                 obj[4] = toastContainer.toastContainer;
                 obj.open(obj);
@@ -142,9 +142,9 @@ export default function TakeActionButtons(senderId) {
           throw arg1;
         } else if (arg0 !== 2) {
           callback2(false);
-          obj = v0(7724);
+          obj = v0(7784);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10285).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10351).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

@@ -1,9 +1,9 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11622
+// Function ID: 11623
 // Name: PortalKeyboardPlaceholderInner
-// Dependencies: [19, 17, 21, 4302, 500, 712, 1607, 1609, 7581, 1474, 5371, 8331, 4167, 1875, 2]
+// Dependencies: [19, 17, 21, 4303, 500, 712, 1607, 1609, 7641, 1474, 5372, 8391, 4168, 1875, 2]
 
-// Module 11556 (PortalKeyboardPlaceholderInner)
+// Module 11622 (PortalKeyboardPlaceholderInner)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -14,11 +14,11 @@ let c4;
 const require = arg1;
 function PortalKeyboardPlaceholderInner(keyboardType) {
   const rect = importDefault(1609)();
-  const tmp = importDefault(7581)();
+  const tmp = importDefault(7641)();
   const tmp2 = importDefault(1474)();
-  let obj = require(8331) /* useGradientBottom */;
+  let obj = require(8391) /* useGradientBottom */;
   obj = { style: null };
-  const items = [callback(keyboardType.keyboardType, importDefault(1474)().width - rect.left - rect.right, importDefault(5371)(), tmp).container, obj.useGradientBottom()];
+  const items = [callback(keyboardType.keyboardType, importDefault(1474)().width - rect.left - rect.right, importDefault(5372)(), tmp).container, obj.useGradientBottom()];
   obj[0] = items;
   return <closure_3 style={null} />;
 }
@@ -68,7 +68,7 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1, arg2, arg3) => {
   return { container };
 });
 const jsxResult = jsx(function PortalKeyboardPlaceholder() {
-  const tmp2 = importDefault(4167)();
+  const tmp2 = importDefault(4168)();
   let isAndroidResult = importDefault(1875)() > 0;
   if (isAndroidResult) {
     let obj = require(500) /* set */;

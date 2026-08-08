@@ -1,10 +1,10 @@
-// Module ID: 4360
-// Function ID: 4361
+// Module ID: 4362
+// Function ID: 4363
 // Name: apexExperiment
-// Dependencies: [4349, 1903, 1905, 1452, 4361, 589, 3947, 2]
+// Dependencies: [4351, 1903, 1905, 1452, 4363, 589, 3947, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 4360 (apexExperiment)
+// Module 4362 (apexExperiment)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
@@ -18,7 +18,7 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/clips/Cli
 
 export const ClipsExperiment = apexExperiment;
 export const areClipsAvailable = function areClipsAvailable() {
-  if (importDefault(4361)(_detectH265HardwareDecode)) {
+  if (importDefault(4363)(_detectH265HardwareDecode)) {
     currentUser = currentUser.getCurrentUser();
     let premiumType;
     if (currentUser != null) {
@@ -35,7 +35,7 @@ export const areClipsAvailable = function areClipsAvailable() {
   tmp = importDefault;
 };
 export const useIsClipsAvailable = function useIsClipsAvailable() {
-  const tmp = importDefault(4361)(_detectH265HardwareDecode);
+  const tmp = importDefault(4363)(_detectH265HardwareDecode);
   const items = [mergeGuildAvatar];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();

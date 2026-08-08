@@ -1,8 +1,8 @@
-// Module ID: 15686
-// Function ID: 15687
-// Dependencies: [19, 1372, 1971, 1891, 1903, 676, 21, 5668, 589, 15687, 8463, 635, 5867, 4140, 8723, 9561, 2]
+// Module ID: 15761
+// Function ID: 15762
+// Dependencies: [19, 1372, 1971, 1891, 1903, 676, 21, 5728, 589, 15762, 8523, 635, 5927, 4146, 8783, 9626, 2]
 
-// Module 15686
+// Module 15761
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

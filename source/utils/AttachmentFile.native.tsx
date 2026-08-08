@@ -1,10 +1,10 @@
-// Module ID: 4857
-// Function ID: 4858
+// Module ID: 4859
+// Function ID: 4860
 // Name: _getAttachmentFile
-// Dependencies: [5, 3, 38, 4849, 4858, 4850, 2]
+// Dependencies: [5, 3, 38, 4851, 4860, 4852, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 4857 (_getAttachmentFile)
+// Module 4859 (_getAttachmentFile)
 import items from "items";
 
 const require = arg1;
@@ -28,7 +28,7 @@ function _getAttachmentFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -76,13 +76,13 @@ function _getAttachmentFile() {
               return obj3;
             } else {
               items = arg1;
-              logger = lib(4850).getAttachmentPayload(lib, callback, items.name);
+              logger = lib(4852).getAttachmentPayload(lib, callback, items.name);
               c6 = 2;
-              const obj10 = lib(4850);
+              const obj10 = lib(4852);
               c7 = 4;
               c8 = 1;
               const obj4 = { value: null, done: false };
-              obj4[0] = lib(4858).getFileSize(items.uri);
+              obj4[0] = lib(4860).getFileSize(items.uri);
               return obj4;
             }
           } else {
@@ -158,7 +158,7 @@ function _cancelGetAttachmentFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -190,7 +190,7 @@ function _cancelGetAttachmentFile() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c1 = tmp;
@@ -235,10 +235,10 @@ export const cancelGetAttachmentFile = function cancelGetAttachmentFile(found) {
 export const fileIsInAppDir = function fileIsInAppDir(uri) {
   const replaced = uri.replace(/^file:\/\//, "");
   try {
-    let startsWithResult = "" !== require(4858) /* openImagePickerUnhandled */.getAppDir();
+    let startsWithResult = "" !== require(4860) /* openImagePickerUnhandled */.getAppDir();
     if (startsWithResult) {
-      startsWithResult = replaced.startsWith(require(4858) /* openImagePickerUnhandled */.getAppDir());
-      const tmpResult = require(4858) /* openImagePickerUnhandled */;
+      startsWithResult = replaced.startsWith(require(4860) /* openImagePickerUnhandled */.getAppDir());
+      const tmpResult = require(4860) /* openImagePickerUnhandled */;
     }
     return startsWithResult;
   } catch (tmp4) {

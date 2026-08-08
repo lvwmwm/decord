@@ -1,10 +1,10 @@
-// Module ID: 10413
-// Function ID: 10414
+// Module ID: 10479
+// Function ID: 10480
 // Name: items
-// Dependencies: [3947, 1919, 1921, 6955, 2]
+// Dependencies: [3947, 1919, 1921, 7015, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 10413 (items)
+// Module 10479 (items)
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
 const items = [, ];
@@ -45,7 +45,7 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
             NITRO = obj.CREPE;
           }
         }
-        tmp4Result = tmp4(6955);
+        tmp4Result = tmp4(7015);
       }
       return NITRO;
     }

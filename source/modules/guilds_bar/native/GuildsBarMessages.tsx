@@ -1,8 +1,8 @@
-// Module ID: 15347
-// Function ID: 15348
-// Dependencies: [19, 4118, 676, 21, 15348, 1348, 15334, 589, 15336, 712, 1236, 15349, 4798, 2]
+// Module ID: 15422
+// Function ID: 15423
+// Dependencies: [19, 4124, 676, 21, 15423, 1348, 15409, 589, 15411, 712, 1236, 15424, 4800, 2]
 
-// Module 15347
+// Module 15422
 import handleConnectionOpen from "handleConnectionOpen";
 import { ME } from "ME";
 import { jsx } from "jsxProd";
@@ -11,14 +11,14 @@ import importAllResult from "noop";
 const require = arg1;
 let closure_6 = {
   onPress() {
-    importDefault(15348)(ME);
+    importDefault(15423)(ME);
   }
 };
 const memoResult = require("noop").memo(function GuildsBarMessages() {
   let badge;
   let cutouts;
   const tmp3 = importDefault(1348)("GuildsBarMessages");
-  let obj = require(15334) /* UnreadIndicator */;
+  let obj = require(15409) /* UnreadIndicator */;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles();
   const items = [handleConnectionOpen];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => {
@@ -30,11 +30,11 @@ const memoResult = require("noop").memo(function GuildsBarMessages() {
     return tmp2;
   });
   const obj2 = require(589) /* initialize */;
-  ({ badge, cutouts } = importDefault(15336)({ mentionCount: 0 }));
+  ({ badge, cutouts } = importDefault(15411)({ mentionCount: 0 }));
   const colors = importDefault(712).colors;
   obj = { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "Grant Channel Access", externalChildren: "Manage Channel Access", expandedChildren: "Guild Scheduled Event Invite Button Embed", children: "REMOVE_AUTOMOD_MESSAGE_NOTICE" };
   let tmp11 = !tmp3;
-  const tmp7 = importDefault(15336)({ mentionCount: 0 });
+  const tmp7 = importDefault(15411)({ mentionCount: 0 });
   const tmp8 = stateFromStores ? colors.WHITE : colors.MOBILE_GUILDBAR_ICON_DEFAULT;
   if (!tmp3) {
     tmp11 = !stateFromStores;
@@ -46,9 +46,9 @@ const memoResult = require("noop").memo(function GuildsBarMessages() {
   const intl = tmp4(1236).intl;
   obj[7] = intl.string(require(1236) /* getSystemLocale */.t.YUU0RF);
   obj[8] = badge;
-  obj[9] = jsx(importDefault(15349), {});
-  obj[10] = jsx(require(4798) /* ChatIcon */.ChatIcon, { color: tmp8 });
-  return jsx(importDefault(15334), { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "Grant Channel Access", externalChildren: "Manage Channel Access", expandedChildren: "Guild Scheduled Event Invite Button Embed", children: "REMOVE_AUTOMOD_MESSAGE_NOTICE" });
+  obj[9] = jsx(importDefault(15424), {});
+  obj[10] = jsx(require(4800) /* ChatIcon */.ChatIcon, { color: tmp8 });
+  return jsx(importDefault(15409), { selected: stateFromStores, circle: null, unread: false, styles: null, cutouts: null, config: null, overState: "y", label: "Grant Channel Access", externalChildren: "Manage Channel Access", expandedChildren: "Guild Scheduled Event Invite Button Embed", children: "REMOVE_AUTOMOD_MESSAGE_NOTICE" });
 });
 const result = require("ME").fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

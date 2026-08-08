@@ -1,10 +1,10 @@
-// Module ID: 10351
-// Function ID: 10352
+// Module ID: 10417
+// Function ID: 10418
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 6957, 10345, 589, 1236, 4536, 2]
+// Dependencies: [32, 7017, 10411, 589, 1236, 4538, 2]
 // Exports: default
 
-// Module 10351 (useGiftCodeErrorMessage)
+// Module 10417 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray";
 import map from "map";
 import updateGiftCode from "updateGiftCode";

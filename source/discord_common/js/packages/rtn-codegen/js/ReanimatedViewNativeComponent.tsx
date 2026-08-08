@@ -1,9 +1,9 @@
-// Module ID: 4164
-// Function ID: 4165
+// Module ID: 4038
+// Function ID: 4039
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 4164 (__INTERNAL_VIEW_CONFIG)
+// Module 4038 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "ReanimatedView", validAttributes: { hasEnteringAnimation: true } };

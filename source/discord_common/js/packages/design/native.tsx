@@ -1,7 +1,7 @@
 // Module ID: 4013
 // Function ID: 4014
 // Name: ManaContext
-// Dependencies: [2, 4014, 4019, 4020, 4021, 4015, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4110, 4077, 4111]
+// Dependencies: [2, 4014, 4019, 4020, 4021, 4015, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4116, 4083, 4117]
 
 // Module 4013 (ManaContext)
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD";

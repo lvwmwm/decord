@@ -1,9 +1,9 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15061
+// Function ID: 15062
 // Name: VisualEffectViewOverrideOverlay_
-// Dependencies: [19, 17, 4301, 710, 21, 4302, 712, 4162, 4711, 4715, 7907, 14992, 14994, 14995, 9593, 5325, 589, 14941, 2]
+// Dependencies: [19, 17, 4302, 710, 21, 4303, 712, 4036, 4713, 4717, 7967, 15062, 15064, 15065, 9658, 5326, 589, 15011, 2]
 
-// Module 14991 (VisualEffectViewOverrideOverlay_)
+// Module 15061 (VisualEffectViewOverrideOverlay_)
 import { ScrollView } from "toggle";
 import getUserAgnosticState from "getUserAgnosticState";
 import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES";

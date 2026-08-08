@@ -1,10 +1,10 @@
-// Module ID: 12003
-// Function ID: 12004
+// Module ID: 12069
+// Function ID: 12070
 // Name: JoinServerContainer
-// Dependencies: [32, 19, 8447, 21, 4302, 5266, 1480, 5269, 11971, 5327, 8446, 1236, 7698, 2]
+// Dependencies: [32, 19, 8507, 21, 4303, 5267, 1480, 5270, 12037, 5328, 8506, 1236, 7758, 2]
 // Exports: default
 
-// Module 12003 (JoinServerContainer)
+// Module 12069 (JoinServerContainer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics";

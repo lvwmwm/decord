@@ -1,10 +1,10 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10161
+// Function ID: 10162
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8730, 21, 4302, 712, 9974, 4298, 1236, 2380, 2]
+// Dependencies: [19, 17, 8790, 21, 4303, 712, 10040, 4299, 1236, 2380, 2]
 // Exports: default
 
-// Module 10095 (GiftingBadgeLevelUpProgress)
+// Module 10161 (GiftingBadgeLevelUpProgress)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { getSingleRequirementThreshold as closure_4 } from "map";
@@ -52,7 +52,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   if (tmp7) {
     obj = { icon: null, size: 24 };
     obj[0] = currentTier.simple_icon_url;
-    tmp7 = callback2(importDefault(9974), obj);
+    tmp7 = callback2(importDefault(10040), obj);
   }
   const items1 = [tmp7, , ];
   const obj1 = { style: tmp.progressBarTrack, children: null };
@@ -65,7 +65,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   if (tmp11Result) {
     const obj4 = { icon: null, size: 24 };
     obj4[0] = newTier.simple_icon_url;
-    tmp11Result = tmp11(importDefault(9974), obj4);
+    tmp11Result = tmp11(importDefault(10040), obj4);
   }
   items1[2] = tmp11Result;
   obj[1] = items1;
@@ -74,7 +74,7 @@ export default function GiftingBadgeLevelUpProgress(style) {
   const obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj6[2] = intl.format(importDefault(2380).iIpfQe, { count: progress, threshold: tmp2 });
-  obj5[1] = callback2(require(4298) /* Text */.Text, obj6);
+  obj5[1] = callback2(require(4299) /* Text */.Text, obj6);
   items3[1] = callback2(View, obj5);
   obj[1] = items3;
   return closure_6(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15273
+// Function ID: 15274
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 676, 9645, 1222, 1236, 3030, 2]
+// Dependencies: [19, 676, 9711, 1222, 1236, 3030, 2]
 // Exports: default
 
-// Module 15200 (useFavoritesGuildHeaderAction)
+// Module 15273 (useFavoritesGuildHeaderAction)
 import noop from "noop";
 import { Routes } from "ME";
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("useFavoritesAccess").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildHeaderAction.tsx");
 
 export default function useFavoritesGuildHeaderAction() {
-  let obj = require(9645) /* useFavoritesAccess */;
+  let obj = require(9711) /* useFavoritesAccess */;
   const hasAccess = obj.useFavoritesAccess().hasAccess;
   obj = { isPreview: !hasAccess, label: null, exitPreview: null };
   const callback = React.useCallback(() => {

@@ -1,10 +1,10 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 11639
+// Function ID: 11640
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 8551, 4992, 4519, 21, 4302, 712, 500, 4005, 1348, 589, 10702, 1236, 11574, 11575, 7691, 11576, 2]
+// Dependencies: [19, 17, 8611, 4994, 4521, 21, 4303, 712, 500, 4005, 1348, 589, 10768, 1236, 11640, 11641, 7751, 11642, 2]
 // Exports: default
 
-// Module 11573 (JumpToPresentButton)
+// Module 11639 (JumpToPresentButton)
 import "noop";
 import { View } from "memoResult1";
 import updateChatInputContainerHeight from "updateChatInputContainerHeight";
@@ -57,11 +57,11 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp;
   });
-  let obj1 = channelId(10702);
+  let obj1 = channelId(10768);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
   let tmp5 = screenIndex(1348)("JumpToPresentButton");
-  const isVoicePanelOpen = channelId(10702).useIsVoicePanelOpen(channelId);
-  const obj3 = channelId(10702);
+  const isVoicePanelOpen = channelId(10768).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(10768);
   const items1 = [reinjectEphemerals];
   const stateFromStores = channelId(589).useStateFromStores(items1, () => null != outer1_7.getMessages(channelId).jumpReturnTargetId);
   if (!tmp7) {
@@ -85,8 +85,8 @@ export default function JumpToPresentButton(channelId) {
     if (tmp5) {
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      tmp3Result = tmp3(11574);
-      tmp3Result = tmp3(11575);
+      tmp3Result = tmp3(11640);
+      tmp3Result = tmp3(11641);
       obj[1] = tmp3Result;
       obj[2] = onJumpToPresent;
       let tmp13Result = tmp13(tmp3Result, obj);
@@ -94,11 +94,11 @@ export default function JumpToPresentButton(channelId) {
       obj1 = { accessibilityLabel: null, onPress: null, icon: null, variant: "primary-overlay" };
       obj1[0] = stringResult;
       obj1[1] = onJumpToPresent;
-      obj1[2] = tmp3(11575);
-      tmp13Result = tmp13(tmp6(7691).IconButton, obj1);
+      obj1[2] = tmp3(11641);
+      tmp13Result = tmp13(tmp6(7751).IconButton, obj1);
     }
   } else {
-    obj[1] = tmp13(tmp6(11576).MemoedVoicePanelDismissChatButton, {});
+    obj[1] = tmp13(tmp6(11642).MemoedVoicePanelDismissChatButton, {});
     return tmp13(tmp14, obj);
   }
 };

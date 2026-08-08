@@ -1,10 +1,10 @@
-// Module ID: 4717
-// Function ID: 4718
+// Module ID: 4719
+// Function ID: 4720
 // Name: styleProperties
-// Dependencies: [19, 4302, 4013, 712, 4147, 4005, 4162, 4711, 4715, 4716, 4718, 4714, 4298, 500, 2]
+// Dependencies: [19, 4303, 4013, 712, 4153, 4005, 4036, 4713, 4717, 4718, 4720, 4716, 4299, 500, 2]
 // Exports: useButtonPillStyles, useButtonPressAnimationProps, useButtonScaleStyles, useButtonTextColorStyles, useForegroundColor, useGradientPillStyles, useIconSizeStyles, useIconTintStyles, useProfileThemedButtonStyles
 
-// Module 4717 (styleProperties)
+// Module 4719 (styleProperties)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
@@ -406,7 +406,7 @@ export const useButtonScaleStyles = function useButtonScaleStyles(pressed, width
   const _require = pressed;
   let closure_1 = width;
   const dependencyMap = scaleAmountInPx;
-  let obj = _require(4162);
+  let obj = _require(4036);
   const fn = function n() {
     let obj = sharedValue1;
     let num = 1;
@@ -424,7 +424,7 @@ export const useButtonScaleStyles = function useButtonScaleStyles(pressed, width
     obj[0] = items1;
     return obj;
   };
-  obj = { width, scaleAmountInPx, withSpring: _require(4711).withSpring, interpolate: _require(4162).interpolate, pressed, ON_PRESS_SPRING: _require(4715).ON_PRESS_SPRING };
+  obj = { width, scaleAmountInPx, withSpring: _require(4713).withSpring, interpolate: _require(4036).interpolate, pressed, ON_PRESS_SPRING: _require(4717).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 17256006845494;
   fn.__initData = closure_10;
@@ -440,9 +440,9 @@ export const useButtonPressAnimationProps = function useButtonPressAnimationProp
   num = onPressOut;
   sharedValue = undefined;
   sharedValue1 = undefined;
-  let obj = sharedValue(4162);
+  let obj = sharedValue(4036);
   sharedValue = obj.useSharedValue(0);
-  let tmpResult = tmp(4162);
+  let tmpResult = tmp(4036);
   sharedValue1 = tmpResult.useSharedValue(0);
   obj = {
     onPressIn: sharedValue.useCallback((arg0) => {
@@ -468,7 +468,7 @@ export const useButtonPressAnimationProps = function useButtonPressAnimationProp
   items = [sharedValue, onPressIn];
   items1 = [sharedValue, onPressOut];
   items2 = [sharedValue1, onLayout];
-  tmpResult = tmp(4162);
+  tmpResult = tmp(4036);
   const fn = function n() {
     let obj = sharedValue1;
     let num = 1;
@@ -486,7 +486,7 @@ export const useButtonPressAnimationProps = function useButtonPressAnimationProp
     obj[0] = items1;
     return obj;
   };
-  obj = { width: sharedValue1, scaleAmountInPx: num, withSpring: tmp(4711).withSpring, interpolate: tmp(4162).interpolate, pressed: sharedValue, ON_PRESS_SPRING: tmp(4715).ON_PRESS_SPRING };
+  obj = { width: sharedValue1, scaleAmountInPx: num, withSpring: tmp(4713).withSpring, interpolate: tmp(4036).interpolate, pressed: sharedValue, ON_PRESS_SPRING: tmp(4717).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 17256006845494;
   fn.__initData = closure_10;

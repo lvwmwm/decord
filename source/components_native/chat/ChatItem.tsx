@@ -1,10 +1,10 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 8589
+// Function ID: 8590
 // Name: DCDChatItem
-// Dependencies: [32, 19, 17, 4294, 676, 7982, 21, 4165, 8530, 8531, 8532, 686, 5830, 4302, 712, 500, 8170, 4005, 689, 4723, 2]
+// Dependencies: [32, 19, 17, 4295, 676, 8042, 21, 4039, 8590, 8591, 8592, 686, 5890, 4303, 712, 500, 8230, 4005, 689, 4725, 2]
 // Exports: default
 
-// Module 8529 (DCDChatItem)
+// Module 8589 (DCDChatItem)
 import _slicedToArray from "_slicedToArray";
 import LinearGradient from "LinearGradient";
 import get_ActivityIndicator from "map";
@@ -37,7 +37,7 @@ function DCDChatItem(message) {
       obj = {};
       const merged2 = Object.assign(merged);
       tmp3Result = callback(_default, obj);
-    } else if (importDefault(5830)(message)) {
+    } else if (importDefault(5890)(message)) {
       const obj1 = {};
       const merged3 = Object.assign(merged);
       tmp3Result = tmp3(_default2, obj1);

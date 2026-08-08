@@ -1,10 +1,10 @@
-// Module ID: 10334
-// Function ID: 10335
+// Module ID: 10400
+// Function ID: 10401
 // Name: updateChannelUnreadSettings
-// Dependencies: [4497, 676, 4498, 685, 5261, 9760, 5256, 2]
+// Dependencies: [4499, 676, 4500, 685, 5262, 9826, 5257, 2]
 // Exports: default
 
-// Module 10334 (updateChannelUnreadSettings)
+// Module 10400 (updateChannelUnreadSettings)
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import { AnalyticsObjects } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
@@ -14,10 +14,10 @@ const require = arg1;
 let result = require("ReadStateTypes").fileFinishedImporting("modules/notifications/settings_unread_notice/utils/updateChannelUnreadSettings.tsx");
 
 export default function updateChannelUnreadSettings(closure_0, id, UNREADS_ONLY_MENTIONS) {
-  let obj = importDefault(5261);
+  let obj = importDefault(5262);
   obj = { flags: null };
-  obj[0] = require(9760) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags.getChannelIdFlags(closure_0, id), UNREADS_ONLY_MENTIONS);
-  const NotificationLabel = require(5256) /* UserNotificationSettings */.NotificationLabel;
+  obj[0] = require(9826) /* resetGuildUnreadFlags */.withChannelUnreadFlags(channelIdFlags.getChannelIdFlags(closure_0, id), UNREADS_ONLY_MENTIONS);
+  const NotificationLabel = require(5257) /* UserNotificationSettings */.NotificationLabel;
   if (UNREADS_ONLY_MENTIONS === constants.UNREADS_ALL_MESSAGES) {
     let ONLY_MENTIONS = UnreadSetting.ALL_MESSAGES;
   } else {

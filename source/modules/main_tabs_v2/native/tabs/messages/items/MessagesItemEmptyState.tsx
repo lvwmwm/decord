@@ -1,9 +1,9 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15227
+// Function ID: 15228
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [19, 17, 21, 4302, 712, 4153, 15116, 4298, 1236, 4712, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4159, 15186, 4299, 1236, 4714, 2]
 
-// Module 15157 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 15227 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -44,23 +44,23 @@ const memoResult = importAllResult.memo(function MessagesItemEmptyState() {
       }
     }
   }, []);
-  obj[1] = importDefault(15116);
+  obj[1] = importDefault(15186);
   obj[2] = tmp.image;
   obj[1] = callback(closure_4, obj);
   const items = [callback(closure_5, obj), , , ];
   const obj1 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: tmp.title, maxFontSizeMultiplier: 2, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj1[4] = intl.string(require(1236) /* getSystemLocale */.t["8JZof8"]);
-  items[1] = callback(require(4298) /* Text */.Heading, obj1);
+  items[1] = callback(require(4299) /* Text */.Heading, obj1);
   const obj2 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2, children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj2[4] = intl2.string(require(1236) /* getSystemLocale */.t["qm+H7x"]);
-  items[2] = callback(require(4298) /* Text */.Text, obj2);
+  items[2] = callback(require(4299) /* Text */.Text, obj2);
   const obj3 = { text: null, onPress: null, size: "lg" };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj3[0] = intl3.string(require(1236) /* getSystemLocale */.t.zIJnA6);
   obj3[1] = callback;
-  items[3] = callback(require(4712) /* Button */.Button, obj3);
+  items[3] = callback(require(4714) /* Button */.Button, obj3);
   obj[2] = items;
   return callback2(closure_5, obj);
 });

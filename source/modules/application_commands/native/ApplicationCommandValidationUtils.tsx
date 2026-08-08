@@ -1,10 +1,10 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11544
+// Function ID: 11545
 // Name: getFirstInvalidOption
 // Dependencies: [2]
 // Exports: getFirstInvalidOption
 
-// Module 11478 (getFirstInvalidOption)
+// Module 11544 (getFirstInvalidOption)
 const result = require("set").fileFinishedImporting("modules/application_commands/native/ApplicationCommandValidationUtils.tsx");
 
 export const getFirstInvalidOption = function getFirstInvalidOption(activeCommand, first2) {

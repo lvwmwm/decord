@@ -1,11 +1,11 @@
-// Module ID: 14573
-// Function ID: 14574
+// Module ID: 14643
+// Function ID: 14644
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [19, 17, 1903, 3953, 8022, 676, 21, 4302, 712, 1480, 647, 3947, 4298, 1236, 5375, 1297, 9901, 7533, 10380, 13816, 2]
+// Dependencies: [19, 17, 1903, 3953, 8082, 676, 21, 4303, 712, 1480, 647, 3947, 4299, 1236, 5376, 1297, 9967, 7593, 10446, 13886, 2]
 // Exports: default
 
-// Module 14573 (VideoUploadQualityNitroUpsell)
-import module_13816 from "module_13816";
+// Module 14643 (VideoUploadQualityNitroUpsell)
+import module_13886 from "module_13886";
 import { View } from "dispatcher";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
@@ -31,7 +31,7 @@ function VideoUploadQualityNitroUpsell() {
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = _require(1236).intl;
   obj[2] = intl.format(_require(1236).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
-  const children = [callback(_require(4298).Text, obj), ];
+  const children = [callback(_require(4299).Text, obj), ];
   let tmp7Result = !stateFromStores;
   if (!stateFromStores) {
     obj = { style: null, children: null };
@@ -41,7 +41,7 @@ function VideoUploadQualityNitroUpsell() {
     obj2[0] = tmp3.cardContent;
     const obj3 = { style: null, source: null, size: null, color: null };
     obj3[0] = tmp3.cardIcon;
-    obj3[1] = importDefault(9901);
+    obj3[1] = importDefault(9967);
     obj3[2] = tmp(1297).Icon.Sizes.SMALL;
     obj3[3] = importDefault(712).unsafe_rawColors.PRIMARY_400;
     const items2 = [tmp7(tmp(1297).Icon, obj3), ];
@@ -53,10 +53,10 @@ function VideoUploadQualityNitroUpsell() {
       const obj = outer1_1(outer1_2[17]);
     };
     obj4[2] = intl2.format(tmp(1236).t.uW1zul, obj5);
-    items2[1] = tmp7(tmp(4298).Text, obj4);
+    items2[1] = tmp7(tmp(4299).Text, obj4);
     obj2[1] = items2;
     obj1[2] = tmp5(tmp6, obj2);
-    obj[1] = tmp7(tmp(5375).Card, obj1);
+    obj[1] = tmp7(tmp(5376).Card, obj1);
     tmp7Result = tmp7(tmp6, obj);
   }
   children[1] = tmp7Result;
@@ -164,5 +164,5 @@ export default function SettingsChatScreen(route) {
     obj[1] = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(importDefault(13816), { node });
+  return callback(importDefault(13886), { node });
 };

@@ -1,10 +1,10 @@
-// Module ID: 10248
-// Function ID: 10249
+// Module ID: 10314
+// Function ID: 10315
 // Name: setPushToTalkState
-// Dependencies: [4349, 4362, 709, 2]
+// Dependencies: [4351, 4364, 709, 2]
 // Exports: setPushToTalkState
 
-// Module 10248 (setPushToTalkState)
+// Module 10314 (setPushToTalkState)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { MediaEngineContextTypes } from "DesktopSources";
 

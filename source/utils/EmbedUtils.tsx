@@ -1,10 +1,10 @@
-// Module ID: 4634
-// Function ID: 4635
+// Module ID: 4636
+// Function ID: 4637
 // Name: getEffectiveVideoProvider
-// Dependencies: [676, 4635, 11, 1384, 12, 3883, 688, 4523, 2]
+// Dependencies: [676, 4637, 11, 1384, 12, 3883, 688, 4525, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4634 (getEffectiveVideoProvider)
+// Module 4636 (getEffectiveVideoProvider)
 import ME from "ME";
 import { EMBED_TYPES_WITH_PARSEABLE_FIELDS as closure_6 } from "MessageEmbedTypes";
 
@@ -250,13 +250,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = obj6(4523).transformComponents(footer.components);
+    const transformComponentsResult = obj6(4525).transformComponents(footer.components);
     let tmp40;
     if (transformComponentsResult.length > 0) {
       tmp40 = transformComponentsResult;
     }
     obj.components = tmp40;
-    const obj17 = obj6(4523);
+    const obj17 = obj6(4525);
   }
   return obj;
 };

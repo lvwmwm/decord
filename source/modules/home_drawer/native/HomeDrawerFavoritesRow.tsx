@@ -1,10 +1,10 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15427
+// Function ID: 15428
 // Name: HomeDrawerFavoritesRowExpandedChildren
-// Dependencies: [19, 21, 15345, 4298, 1236, 2]
+// Dependencies: [19, 21, 15420, 4299, 1236, 2]
 // Exports: HomeDrawerFavoritesRowExpandedChildren
 
-// Module 15352 (HomeDrawerFavoritesRowExpandedChildren)
+// Module 15427 (HomeDrawerFavoritesRowExpandedChildren)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -16,6 +16,6 @@ export const HomeDrawerFavoritesRowExpandedChildren = function HomeDrawerFavorit
   obj = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.wMWyci);
-  obj[0] = jsx(require(4298) /* Text */.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
-  return jsx(require(15345) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
+  obj[0] = jsx(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
+  return jsx(require(15420) /* HomeDrawerSharedItem */.HomeDrawerSharedItem, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: null });
 };

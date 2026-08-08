@@ -1,10 +1,10 @@
-// Module ID: 10198
-// Function ID: 10199
+// Module ID: 10264
+// Function ID: 10265
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 4302, 4162, 4020, 1609, 4711, 4715, 4723, 689, 10199, 2]
+// Dependencies: [19, 17, 21, 4303, 4036, 4020, 1609, 4713, 4717, 4725, 689, 10265, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 10198 (ModalFloatingAction)
+// Module 10264 (ModalFloatingAction)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

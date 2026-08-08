@@ -1,10 +1,10 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13978
+// Function ID: 13979
 // Name: WebAuthnDeleteActionSheet
-// Dependencies: [19, 17, 21, 4302, 712, 4270, 5396, 5395, 1236, 5705, 13909, 4298, 4712, 5771, 4002, 9958, 4263, 9003, 7902, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4271, 5397, 5396, 1236, 5765, 13979, 4299, 4714, 5831, 4002, 10024, 4264, 9063, 7962, 2]
 // Exports: default
 
-// Module 13908 (WebAuthnDeleteActionSheet)
+// Module 13978 (WebAuthnDeleteActionSheet)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import jsxProd from "jsxProd";
@@ -41,14 +41,14 @@ export default function WebAuthnDeleteActionSheet(credential) {
   let intl = credential(1236).intl;
   obj = { keyName: credential.name };
   obj[0] = intl.formatToPlainString(credential(1236).t.mI3CoL, obj);
-  obj[1] = callback(credential(5705).ActionSheetCloseButton, { onPress: handleClose });
-  const items = [callback(credential(5395).BottomSheetTitleHeader, obj), , , ];
+  obj[1] = callback(credential(5765).ActionSheetCloseButton, { onPress: handleClose });
+  const items = [callback(credential(5396).BottomSheetTitleHeader, obj), , , ];
   const obj1 = { style: tmp.content, children: null };
-  const items1 = [callback(closure_3, { source: importDefault(13909) }), ];
+  const items1 = [callback(closure_3, { source: importDefault(13979) }), ];
   const obj3 = { variant: "heading-md/normal", style: tmp.subtitle, children: null };
   const intl2 = credential(1236).intl;
   obj3[2] = intl2.string(credential(1236).t.IfTbc1);
-  items1[1] = callback(credential(4298).Text, obj3);
+  items1[1] = callback(credential(4299).Text, obj3);
   obj1[1] = items1;
   items[1] = callback2(closure_4, obj1);
   const obj4 = { children: null };
@@ -56,7 +56,7 @@ export default function WebAuthnDeleteActionSheet(credential) {
   const intl3 = credential(1236).intl;
   obj5[0] = intl3.string(credential(1236).t["lqK//z"]);
   obj5[1] = handleClose;
-  obj4[0] = callback(credential(4712).Button, obj5);
+  obj4[0] = callback(credential(4714).Button, obj5);
   items[2] = callback(closure_4, obj4);
   const obj6 = { children: null };
   const obj7 = { text: null, onPress: null, variant: "destructive", disabled: null, loading: null, grow: true };
@@ -73,8 +73,8 @@ export default function WebAuthnDeleteActionSheet(credential) {
       obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
       const intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.ZnkeXs);
-      obj[2] = callback2(9958);
-      obj[3] = callback(4263).CircleCheckIcon;
+      obj[2] = callback2(10024);
+      obj[3] = callback(4264).CircleCheckIcon;
       obj.open(obj);
     });
     result.then(() => {
@@ -82,12 +82,12 @@ export default function WebAuthnDeleteActionSheet(credential) {
       obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
       const intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.ZnkeXs);
-      obj[2] = callback2(9958);
-      obj[3] = callback(4263).CircleCheckIcon;
+      obj[2] = callback2(10024);
+      obj[3] = callback(4264).CircleCheckIcon;
       obj.open(obj);
     }).catch((content) => {
       let obj = callback2(4002);
-      obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", content: content.message, icon: callback2(9003), IconComponent: callback(7902).WarningIcon, iconColor: "icon-feedback-critical" };
+      obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", content: content.message, icon: callback2(9063), IconComponent: callback(7962).WarningIcon, iconColor: "icon-feedback-critical" };
       obj.open(obj);
     }).finally(() => {
       callback2(false);
@@ -95,8 +95,8 @@ export default function WebAuthnDeleteActionSheet(credential) {
   };
   obj7[3] = deleting;
   obj7[4] = deleting;
-  obj6[0] = callback(credential(4712).Button, obj7);
+  obj6[0] = callback(credential(4714).Button, obj7);
   items[3] = callback(closure_4, obj6);
   obj[2] = items;
-  return callback2(credential(5396).BottomSheet, obj);
+  return callback2(credential(5397).BottomSheet, obj);
 };

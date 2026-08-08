@@ -1,10 +1,10 @@
-// Module ID: 4246
-// Function ID: 4247
+// Module ID: 4247
+// Function ID: 4248
 // Name: LinkIcon
-// Dependencies: [19, 21, 712, 4004, 4247, 2]
+// Dependencies: [19, 21, 712, 4004, 4248, 2]
 // Exports: LinkIcon
 
-// Module 4246 (LinkIcon)
+// Module 4247 (LinkIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LinkIcon = function LinkIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4247) /* registerAsset */;
+  obj[0] = require(4248) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 6992
-// Function ID: 6993
+// Module ID: 7052
+// Function ID: 7053
 // Name: getEmptyActivityFormatter
-// Dependencies: [6936, 6937, 1236, 2284, 3883, 6938, 2]
+// Dependencies: [6996, 6997, 1236, 2284, 3883, 6998, 2]
 // Exports: displayTypeFromString, formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 6992 (getEmptyActivityFormatter)
+// Module 7052 (getEmptyActivityFormatter)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import items from "items";
 
@@ -167,7 +167,7 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
   if (authStore.getAreLinkedUsersProcessed()) {
     return obj.getLinkedUsers();
   } else {
-    const linkedUsers = importDefault(6938).fetchLinkedUsers();
+    const linkedUsers = importDefault(6998).fetchLinkedUsers();
   }
   obj = authStore;
 };

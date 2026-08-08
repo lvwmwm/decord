@@ -1,9 +1,9 @@
-// Module ID: 7049
-// Function ID: 7050
+// Module ID: 7109
+// Function ID: 7110
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 4992, 1376, 1218, 1372, 1964, 1891, 3929, 1373, 3, 1936, 7050, 506, 3937, 2]
+// Dependencies: [32, 5, 4994, 1376, 1218, 1372, 1964, 1891, 3929, 1373, 3, 1936, 7110, 506, 3937, 2]
 
-// Module 7049 (hasBasicChannelChanged)
+// Module 7109 (hasBasicChannelChanged)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -211,7 +211,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -261,7 +261,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                           obj[0] = arg1;
                           return obj;
                         } else {
-                          return { value: "T", done: null };
+                          return { value: "HermesInternal", done: null };
                         }
                       } else {
                         try {
@@ -309,7 +309,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                             outer2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                             c6 = 3;
                             const obj2 = { value: null, done: true };
-                            obj2[0] = { v: "r" };
+                            obj2[0] = { v: "sa" };
                             return obj2;
                           } else if (2 === tmp7) {
                             if (arg0 === 1) {
@@ -322,7 +322,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                               return obj3;
                             } else {
                               c6 = 3;
-                              return { value: "T", done: null };
+                              return { value: "HermesInternal", done: null };
                             }
                           } else if (3 === tmp7) {
                             if (arg0 === 1) {
@@ -386,7 +386,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
               }
             }
             c10 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp7) {
           c7 = 0;

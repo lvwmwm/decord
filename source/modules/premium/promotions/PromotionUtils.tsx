@@ -1,10 +1,10 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7646
+// Function ID: 7647
 // Name: claimedOutboundPromotionCodeFromServer
-// Dependencies: [5, 1340, 7285, 7284, 1905, 676, 4327, 4147, 530, 500, 698, 1384, 1358, 11, 1360, 7286, 2]
+// Dependencies: [5, 1340, 7345, 7344, 1905, 676, 4328, 4153, 530, 500, 698, 1384, 1358, 11, 1360, 7346, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 7586 (claimedOutboundPromotionCodeFromServer)
+// Module 7646 (claimedOutboundPromotionCodeFromServer)
 import closure_3 from "ME";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createFromServer from "createFromServer";
@@ -33,7 +33,7 @@ function _claimOutboundPromotion() {
       let c3;
       c3 = tmp2;
       ({ promotionId: c0, promotionTitle: c1, partnerId: c2, analyticsLocations: c3 } = callback);
-      yield "PX_8";
+      yield "ct";
       const HTTP = callback(530).HTTP;
       const obj2 = { url: null, rejectWithError: null };
       obj2[0] = closure_9.CLAIM_OUTBOUND_PROMOTION_CODE(callback);
@@ -215,7 +215,7 @@ export const shouldShowOutboundPromotionNotice = function shouldShowOutboundProm
 export const isDedicatedSurfacePromotion = function isDedicatedSurfacePromotion(promotion) {
   let hasItem = null != promotion.partnerId;
   if (hasItem) {
-    const DEDICATED_SURFACE_PARTNER_IDS = require(7286) /* CountryListMode */.DEDICATED_SURFACE_PARTNER_IDS;
+    const DEDICATED_SURFACE_PARTNER_IDS = require(7346) /* CountryListMode */.DEDICATED_SURFACE_PARTNER_IDS;
     hasItem = DEDICATED_SURFACE_PARTNER_IDS.has(promotion.partnerId);
   }
   return hasItem;
@@ -268,5 +268,5 @@ export const getClaimedEndedOutboundPromotions = function getClaimedEndedOutboun
   });
 };
 export const isRecurringPromotion = function isRecurringPromotion(promotionType) {
-  return promotionType.promotionType === require(7286) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
+  return promotionType.promotionType === require(7346) /* CountryListMode */.PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING;
 };

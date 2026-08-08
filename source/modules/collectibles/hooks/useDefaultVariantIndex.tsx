@@ -1,10 +1,10 @@
-// Module ID: 9280
-// Function ID: 9281
+// Module ID: 9345
+// Function ID: 9346
 // Name: useDefaultVariantIndex
-// Dependencies: [6957, 589, 6952, 2]
+// Dependencies: [7017, 589, 7012, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 9280 (useDefaultVariantIndex)
+// Module 9345 (useDefaultVariantIndex)
 import map from "map";
 
 const require = arg1;
@@ -21,7 +21,7 @@ export const useDefaultVariantIndex = function useDefaultVariantIndex(product) {
       const variants = product.variants;
       num = Math.max(0, variants.findIndex((skuId) => !set.has(skuId.skuId)));
     }
-    tmpResult = _require(6952);
+    tmpResult = _require(7012);
   }
   return num;
 };

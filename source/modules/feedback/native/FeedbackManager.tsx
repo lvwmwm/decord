@@ -1,9 +1,9 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16409
+// Function ID: 16410
 // Name: prototype
-// Dependencies: [4339, 1372, 4373, 4387, 11020, 16333, 4365, 16336, 1988, 5761, 4270, 3919, 16340, 16343, 16345, 2]
+// Dependencies: [4341, 1372, 4375, 4389, 11086, 16410, 4367, 16413, 1988, 5821, 4271, 3919, 16417, 16420, 16422, 2]
 
-// Module 16332 (prototype)
+// Module 16409 (prototype)
 import addApplication from "addApplication";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createRTCConnection from "createRTCConnection";

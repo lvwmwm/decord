@@ -1,10 +1,10 @@
-// Module ID: 9483
-// Function ID: 9484
+// Module ID: 9548
+// Function ID: 9549
 // Name: context
-// Dependencies: [19, 4162, 9484, 9485, 2]
+// Dependencies: [19, 4036, 9549, 9550, 2]
 // Exports: useAppLauncherChatInputRefDummy, useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 9483 (context)
+// Module 9548 (context)
 import importAllResult from "noop";
 
 const require = arg1;
@@ -54,12 +54,12 @@ export const useRequiredAppLauncherContext = function useRequiredAppLauncherCont
 export const useAppLauncherContext = function useAppLauncherContext() {
   let _require = sharedValue.useRef(sharedValue1.DISMISSED);
   const dependencyMap = sharedValue.useRef(undefined);
-  let obj = _require(4162);
+  let obj = _require(4036);
   sharedValue = obj.useSharedValue(-1);
-  sharedValue1 = _require(4162).useSharedValue(0);
-  const TEXT = _require(9484).AppLauncherEntrypoint.TEXT;
-  const obj2 = _require(4162);
-  const defaultAppLauncherWidth = _require(9485).useDefaultAppLauncherWidth(TEXT);
+  sharedValue1 = _require(4036).useSharedValue(0);
+  const TEXT = _require(9549).AppLauncherEntrypoint.TEXT;
+  const obj2 = _require(4036);
+  const defaultAppLauncherWidth = _require(9550).useDefaultAppLauncherWidth(TEXT);
   _require = false;
   obj = {
     getApplicationCommandManager() {

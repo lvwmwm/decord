@@ -1,10 +1,10 @@
-// Module ID: 15380
-// Function ID: 15381
+// Module ID: 15455
+// Function ID: 15456
 // Name: HomeDrawerDMExpandedChildren
-// Dependencies: [19, 17, 1376, 3938, 4497, 1903, 505, 21, 4302, 589, 4492, 15381, 14481, 12494, 9665, 4298, 9723, 3979, 15345, 4158, 4155, 2]
+// Dependencies: [19, 17, 1376, 3938, 4499, 1903, 505, 21, 4303, 589, 4494, 15456, 14551, 12564, 9730, 4299, 9789, 3979, 15420, 4164, 4161, 2]
 // Exports: default
 
-// Module 15380 (HomeDrawerDMExpandedChildren)
+// Module 15455 (HomeDrawerDMExpandedChildren)
 import MobileHomeDrawerExperiment from "MobileHomeDrawerExperiment";
 import { View } from "ChannelListLayoutTypes";
 import { isMultiUserDM } from "createChannelRecord";
@@ -36,8 +36,8 @@ function HomeDrawerDMExpandedChildren(channel) {
     let tmp2 = null;
     if (null != channel) {
       if (stateFromStores1(tmp.type)) {
-        let channelName = channel(4492).computeChannelName(tmp, outer1_8, memo);
-        const obj = channel(4492);
+        let channelName = channel(4494).computeChannelName(tmp, outer1_8, memo);
+        const obj = channel(4494);
       } else {
         channelName = null;
       }
@@ -46,9 +46,9 @@ function HomeDrawerDMExpandedChildren(channel) {
     return tmp2;
   });
   const obj2 = channel(589);
-  const tmp3 = importDefault(14481)(channel, { unread: channel(15381).useBaseChannelUnreadBadgeState(channel, false).unread });
+  const tmp3 = importDefault(14551)(channel, { unread: channel(15456).useBaseChannelUnreadBadgeState(channel, false).unread });
   c4 = tmp3;
-  const obj3 = channel(15381);
+  const obj3 = channel(15456);
   const items2 = [updateUserGuildSettingsInternal];
   stateFromStores1 = channel(589).useStateFromStores(items2, () => outer1_7.getChannelMuteConfig(channel.guild_id, channel.id));
   const items3 = [stateFromStores1];
@@ -85,10 +85,10 @@ function HomeDrawerDMExpandedChildren(channel) {
       }
       let tmp5Result = dependencyMap;
       if (isTemporary) {
-        tmp5Result = tmp5(12494);
+        tmp5Result = tmp5(12564);
         let BellSlashIcon = tmp5Result.BellZIcon;
       } else {
-        BellSlashIcon = tmp5(9665).BellSlashIcon;
+        BellSlashIcon = tmp5(9730).BellSlashIcon;
       }
     } else {
       let obj = { style: null, children: null };
@@ -96,7 +96,7 @@ function HomeDrawerDMExpandedChildren(channel) {
       obj = { variant: "text-md/medium", style: null, lineClamp: 1, color: "text-default", children: null };
       obj[1] = _undefined.titleText;
       obj[4] = stateFromStores;
-      const items = [outer1_10(channel(4298).Text, obj), outer1_10(outer1_9, { size: "xs" })];
+      const items = [outer1_10(channel(4299).Text, obj), outer1_10(outer1_9, { size: "xs" })];
       obj[1] = items;
       return outer1_11(c4, obj);
     }
@@ -109,18 +109,18 @@ function HomeDrawerDMExpandedChildren(channel) {
       obj[1] = tmp;
       obj[4] = channel(3979).ChannelListLayoutTypes.COZY;
       obj[5] = memo.isMuted;
-      tmp2 = outer1_10(channel(9723).ChannelRowPreview, obj);
+      tmp2 = outer1_10(channel(9789).ChannelRowPreview, obj);
     }
     return tmp2;
   }, items5);
-  return callback(channel(15345).HomeDrawerSharedItem, { title, subtitle });
+  return callback(channel(15420).HomeDrawerSharedItem, { title, subtitle });
 }
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
 let closure_12 = createCacheKey.createStyles({ title: { flexDirection: "row", alignItems: "center", gap: 4 }, titleText: { flexShrink: 1 } });
 const result = require("createChannelRecord").fileFinishedImporting("modules/home_drawer/native/HomeDrawerDM.tsx");
 
 export default function HomeDrawerDMExpandedChildrenWrapper(channel) {
-  const MobileHomeDrawerExperiment = require(4158) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = require(4164) /* MobileHomeDrawerExperiment */.MobileHomeDrawerExperiment;
   let tmp2 = null;
   if (MobileHomeDrawerExperiment.useConfig({ location: "dm-expanded-children" }).enableHome) {
     tmp2 = null;

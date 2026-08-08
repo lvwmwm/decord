@@ -1,10 +1,10 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12224
+// Function ID: 12225
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4302, 712, 12158, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 12225, 4299, 2]
 // Exports: URLCallout
 
-// Module 12157 (URLCallout)
+// Module 12224 (URLCallout)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,14 +27,14 @@ export const URLCallout = function URLCallout(url) {
   let protocol;
   let theRestOfTheUrl;
   const tmp = createCacheKey();
-  let obj = require(12158) /* useUrlParts */;
+  let obj = require(12225) /* useUrlParts */;
   const urlParts = obj.useUrlParts(url.url);
   obj = { style: tmp.linkCalloutContainer, children: null };
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
   obj = { style: tmp.linkCalloutContainerText, variant: "text-md/normal", children: null };
   const items = [protocol, "//"];
-  const items1 = [callback(require(4298) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: items }), callback2(require(4298) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: hostname }), callback2(require(4298) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl })];
+  const items1 = [callback(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: items }), callback2(require(4299) /* Text */.Text, { variant: "text-md/semibold", color: "text-default", children: hostname }), callback2(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl })];
   obj[2] = items1;
-  obj[1] = callback(require(4298) /* Text */.Text, obj);
+  obj[1] = callback(require(4299) /* Text */.Text, obj);
   return callback2(ScrollView, obj);
 };

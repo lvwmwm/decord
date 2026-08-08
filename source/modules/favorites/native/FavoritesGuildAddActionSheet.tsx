@@ -1,10 +1,10 @@
-// Module ID: 15201
-// Function ID: 15202
+// Module ID: 15274
+// Function ID: 15275
 // Name: handleCreateCategory
-// Dependencies: [19, 21, 4270, 15202, 9645, 9649, 12068, 5704, 5395, 1236, 5706, 3030, 12041, 15203, 2]
+// Dependencies: [19, 21, 4271, 15275, 9711, 9714, 12134, 5764, 5396, 1236, 5766, 3030, 12107, 15276, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15201 (handleCreateCategory)
+// Module 15274 (handleCreateCategory)
 import noop from "noop";
 import jsxProd from "jsxProd";
 
@@ -12,9 +12,9 @@ let c4;
 let c5;
 const require = arg1;
 function handleCreateCategory() {
-  importDefault(4270).hideActionSheet(FavoritesGuildAddActionSheet);
-  const obj = importDefault(4270);
-  const result = require(15202) /* AddFavoriteCategoryActionSheet */.openAddFavoriteCategoryActionSheet();
+  importDefault(4271).hideActionSheet(FavoritesGuildAddActionSheet);
+  const obj = importDefault(4271);
+  const result = require(15275) /* FavoritesGuildAddCategoryActionSheet */.openFavoritesGuildAddCategoryActionSheet();
 }
 function FavoritesGuildAddActionSheet() {
   let obj = shouldShowUpsell(favoriteLimit[4]);
@@ -30,9 +30,7 @@ function FavoritesGuildAddActionSheet() {
         tmp(tmp2[5])(favoriteLimit);
       }
     }
-    const obj = isAtLimit(favoriteLimit[2]);
-    tmp = isAtLimit;
-    const result = shouldShowUpsell(favoriteLimit[6]).openAddFavoriteChannelModal({ source: "favorites_header_add_button_context_menu" });
+    isAtLimit(favoriteLimit[6])({ source: "favorites_header_add_button_context_menu" });
   }, items);
   obj = { header: null, children: null };
   obj = { title: null };
@@ -67,7 +65,7 @@ FavoritesGuildAddActionSheet = "FavoritesGuildAddActionSheet";
 let result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/favorites/native/FavoritesGuildAddActionSheet.tsx");
 
 export const openFavoritesGuildAddActionSheet = function openFavoritesGuildAddActionSheet() {
-  let obj = require(4270) /* ACTION_SHEET_HEIGHT_HALF */;
+  let obj = require(4271) /* ACTION_SHEET_HEIGHT_HALF */;
   obj = { content: callback(FavoritesGuildAddActionSheet, {}), key: FavoritesGuildAddActionSheet };
   obj.showActionSheet(obj);
 };

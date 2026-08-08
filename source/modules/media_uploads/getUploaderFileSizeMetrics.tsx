@@ -1,10 +1,10 @@
-// Module ID: 8301
-// Function ID: 8302
+// Module ID: 8361
+// Function ID: 8362
 // Name: getUploaderChannelId
 // Dependencies: [2]
 // Exports: getUploaderChannelId, getUploaderFileSizeMetrics
 
-// Module 8301 (getUploaderChannelId)
+// Module 8361 (getUploaderChannelId)
 const result = require("set").fileFinishedImporting("modules/media_uploads/getUploaderFileSizeMetrics.tsx");
 
 export const getUploaderChannelId = function getUploaderChannelId(file) {

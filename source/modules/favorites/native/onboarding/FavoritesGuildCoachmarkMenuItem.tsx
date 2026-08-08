@@ -1,10 +1,10 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15349
+// Function ID: 15350
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [32, 19, 1375, 676, 1369, 21, 9653, 589, 9645, 15277, 1236, 3030, 15278, 8593, 2]
+// Dependencies: [32, 19, 1375, 676, 1369, 21, 9719, 589, 9711, 15350, 1236, 3030, 15351, 8653, 2]
 // Exports: default
 
-// Module 15276 (FavoritesGuildCoachmarkMenuItemContent)
+// Module 15349 (FavoritesGuildCoachmarkMenuItemContent)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -79,7 +79,7 @@ let set = new Set(items);
 const result = set.fileFinishedImporting("modules/favorites/native/onboarding/FavoritesGuildCoachmarkMenuItem.tsx");
 
 export default function FavoritesGuildCoachmarkMenuItem(arg0) {
-  let obj = require(9653) /* items1 */;
+  let obj = require(9719) /* items1 */;
   const isFavoritesMenuItemPopoverPending = obj.useIsFavoritesMenuItemPopoverPending();
   const tmp2 = callback(React.useState(isFavoritesMenuItemPopoverPending), 2);
   const first = tmp2[0];

@@ -1,12 +1,12 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 16036
+// Function ID: 16037
 // Name: SimpleGuild
-// Dependencies: [19, 17, 1415, 7037, 1891, 676, 21, 4302, 5719, 15962, 589, 15963, 15965, 1236, 15371, 4798, 712, 15964, 2]
+// Dependencies: [19, 17, 1415, 7097, 1891, 676, 21, 4303, 5779, 16037, 589, 16038, 16040, 1236, 15446, 4800, 712, 16039, 2]
 // Exports: default
 
-// Module 15961 (SimpleGuild)
+// Module 16036 (SimpleGuild)
 import noop from "noop";
-import { View } from "module_15964";
+import { View } from "module_16039";
 import { getGuildIconSource } from "GuildNSFWContentLevel";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

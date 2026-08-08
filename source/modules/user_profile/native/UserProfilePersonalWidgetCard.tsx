@@ -1,10 +1,10 @@
-// Module ID: 12386
-// Function ID: 12387
+// Module ID: 12453
+// Function ID: 12454
 // Name: PersonalWidgetText
-// Dependencies: [19, 17, 1218, 676, 21, 4302, 712, 12387, 4298, 12388, 4723, 4013, 589, 5715, 7644, 12281, 2]
+// Dependencies: [19, 17, 1218, 676, 21, 4303, 712, 12454, 4299, 12455, 4725, 4013, 589, 5775, 7704, 12348, 2]
 // Exports: default
 
-// Module 12386 (PersonalWidgetText)
+// Module 12453 (PersonalWidgetText)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import fetchFingerprint from "fetchFingerprint";
@@ -63,7 +63,7 @@ function CoverSection(arg0) {
     obj = { colors: null, style: null };
     obj[0] = closure_11;
     obj[1] = closure_5.absoluteFill;
-    tmp6 = callback(image(4723), obj);
+    tmp6 = callback(image(4725), obj);
   }
   const items2 = [tmp6, , ];
   let tmp12 = null;
@@ -196,7 +196,7 @@ export default function UserProfilePersonalWidgetCard(userId) {
   obj = { style: cardStyle, titleLeadingIcon: null, title: null, trailingAction: null, children: null };
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  obj[1] = callback(userId(7644).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+  obj[1] = callback(userId(7704).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
   obj[2] = widget.header;
   let tmp4Result = !stateFromStores;
   if (!stateFromStores) {
@@ -206,10 +206,10 @@ export default function UserProfilePersonalWidgetCard(userId) {
     obj = { userId: null, widget: null };
     obj[0] = userId;
     obj[1] = widget;
-    tmp4Result = tmp4(tmp5(12281), obj);
+    tmp4Result = tmp4(tmp5(12348), obj);
   }
   obj[3] = tmp4Result;
-  const tmp6 = importDefault(5715);
+  const tmp6 = importDefault(5775);
   const sections = widget.sections;
   obj[4] = callback(closure_6, {
     style: tmp.sectionsContainer,

@@ -1,10 +1,10 @@
-// Module ID: 5365
-// Function ID: 5366
+// Module ID: 5366
+// Function ID: 5367
 // Name: FormCheckboxRow
-// Dependencies: [19, 21, 4302, 4019, 5366, 5392, 2]
+// Dependencies: [19, 21, 4303, 4019, 5367, 5393, 2]
 // Exports: default
 
-// Module 5365 (FormCheckboxRow)
+// Module 5366 (FormCheckboxRow)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,7 +26,7 @@ export default function FormCheckboxRow(selected) {
   const merged1 = Object.assign(merged);
   obj.accessibilityRole = accessibilityRole;
   obj.accessibilityState = accessibilityState;
-  obj.trailing = jsx(importDefault(5392), { selected });
+  obj.trailing = jsx(importDefault(5393), { selected });
   obj.trailingWrapperStyle = tmp2.checkboxWrapperStyle;
-  return jsx(importDefault(5366), {});
+  return jsx(importDefault(5367), {});
 };

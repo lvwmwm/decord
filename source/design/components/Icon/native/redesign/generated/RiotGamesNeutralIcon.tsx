@@ -1,10 +1,10 @@
-// Module ID: 9234
-// Function ID: 9235
+// Module ID: 9299
+// Function ID: 9300
 // Name: RiotGamesNeutralIcon
-// Dependencies: [19, 21, 712, 4004, 9235, 2]
+// Dependencies: [19, 21, 712, 4004, 9300, 2]
 // Exports: RiotGamesNeutralIcon
 
-// Module 9234 (RiotGamesNeutralIcon)
+// Module 9299 (RiotGamesNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const RiotGamesNeutralIcon = function RiotGamesNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9235) /* registerAsset */;
+  obj[0] = require(9300) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

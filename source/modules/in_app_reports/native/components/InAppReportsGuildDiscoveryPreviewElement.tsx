@@ -1,10 +1,10 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12645
+// Function ID: 12646
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4294, 21, 4302, 712, 589, 4145, 4298, 1236, 5719, 1411, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 589, 4151, 4299, 1236, 5779, 1411, 2]
 // Exports: default
 
-// Module 12575 (GuildDiscoveryPreviewElement)
+// Module 12645 (GuildDiscoveryPreviewElement)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -34,21 +34,21 @@ export default function GuildDiscoveryPreviewElement(guild) {
   let obj = require(589) /* initialize */;
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = require(4145) /* hexToRgba */;
+  let obj1 = require(4151) /* hexToRgba */;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.nTe4HC);
-  const items1 = [callback(require(4298) /* Text */.Text, obj), ];
+  const items1 = [callback(require(4299) /* Text */.Text, obj), ];
   obj1 = { style: items2, children: null };
   items2 = [tmp.itemContainer, { borderColor: obj1.hexWithOpacity(tmp.borderColor.color, 0.08) }];
   const obj2 = { style: tmp.guildInfo, children: null };
   const obj3 = { style: tmp.guildIcon, guild: null, animate: null };
   const hexWithOpacityResult = obj1.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const tmp4 = importDefault(5719);
+  const tmp4 = importDefault(5779);
   obj3[1] = require(1411) /* fromGuildPropertiesWithAdditionalFields */.fromClientDiscoverableGuild(guild);
   obj3[2] = !stateFromStores;
-  const items3 = [callback(tmp4, obj3), callback(require(4298) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
+  const items3 = [callback(tmp4, obj3), callback(require(4299) /* Text */.Text, { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name })];
   obj2[1] = items3;
   obj1[1] = callback2(View, obj2);
   items1[1] = callback(View, obj1);

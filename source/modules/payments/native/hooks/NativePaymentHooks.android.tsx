@@ -1,10 +1,10 @@
-// Module ID: 7591
-// Function ID: 7592
+// Module ID: 7651
+// Function ID: 7652
 // Name: notSupported
-// Dependencies: [5, 32, 19, 5798, 3, 589, 12, 7318, 3962, 2]
+// Dependencies: [5, 32, 19, 5858, 3, 589, 12, 7378, 3962, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 7591 (notSupported)
+// Module 7651 (notSupported)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -46,7 +46,7 @@ function useGoogleSkuIds(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

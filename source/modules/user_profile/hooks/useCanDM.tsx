@@ -1,10 +1,10 @@
-// Module ID: 12432
-// Function ID: 12433
+// Module ID: 12499
+// Function ID: 12500
 // Name: useCanDM
-// Dependencies: [7059, 3930, 1218, 1971, 3938, 3974, 589, 2]
+// Dependencies: [7119, 3930, 1218, 1971, 3938, 3974, 589, 2]
 // Exports: canDm, default
 
-// Module 12432 (useCanDM)
+// Module 12499 (useCanDM)
 import recountRelationshipTypes from "recountRelationshipTypes";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";

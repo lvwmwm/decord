@@ -1,10 +1,10 @@
-// Module ID: 9224
-// Function ID: 9225
+// Module ID: 9289
+// Function ID: 9290
 // Name: useXboxGamePassStoreUrl
-// Dependencies: [676, 1884, 9217, 2]
+// Dependencies: [676, 1884, 9282, 2]
 // Exports: default
 
-// Module 9224 (useXboxGamePassStoreUrl)
+// Module 9289 (useXboxGamePassStoreUrl)
 import { Distributors } from "ME";
 
 const result = require("XBOX_DISCORD_OCID").fileFinishedImporting("modules/game_profile/hooks/useXboxGamePassStoreUrl.tsx");
@@ -28,8 +28,8 @@ export default function useXboxGamePassStoreUrl(thirdPartySkus) {
     }
     let xboxGamePassStoreUrl = null;
     if (null != id) {
-      xboxGamePassStoreUrl = require(9217) /* XBOX_DISCORD_OCID */.buildXboxGamePassStoreUrl(found.id);
-      let obj = require(9217) /* XBOX_DISCORD_OCID */;
+      xboxGamePassStoreUrl = require(9282) /* XBOX_DISCORD_OCID */.buildXboxGamePassStoreUrl(found.id);
+      let obj = require(9282) /* XBOX_DISCORD_OCID */;
     }
     return xboxGamePassStoreUrl;
   }

@@ -1,10 +1,10 @@
-// Module ID: 11561
-// Function ID: 11562
+// Module ID: 11627
+// Function ID: 11628
 // Name: downsampleWaveform
 // Dependencies: [38, 2]
 // Exports: default
 
-// Module 11561 (downsampleWaveform)
+// Module 11627 (downsampleWaveform)
 const result = require("set").fileFinishedImporting("modules/voice_messages/downsampleWaveform.tsx");
 
 export default function downsampleWaveform(arg0, arg1) {

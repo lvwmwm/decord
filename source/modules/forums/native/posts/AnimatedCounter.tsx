@@ -1,9 +1,9 @@
-// Module ID: 10134
-// Function ID: 10135
+// Module ID: 10200
+// Function ID: 10201
 // Name: AnimatedCount
-// Dependencies: [32, 19, 17, 21, 4302, 38, 4162, 4646, 4711, 4298, 4715, 10135, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 38, 4036, 4648, 4713, 4299, 4717, 10201, 2]
 
-// Module 10134 (AnimatedCount)
+// Module 10200 (AnimatedCount)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -196,7 +196,7 @@ function BasicCounter(arg0) {
   ({ count, textStyle, textColor, textVariant, formatter } = arg0);
   const obj = { variant: textVariant, color: textColor, style: textStyle, children: null };
   obj[3] = formatter(count);
-  return callback(require(4298) /* Text */.Text, obj);
+  return callback(require(4299) /* Text */.Text, obj);
 }
 let c4 = importAllResult;
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
@@ -226,7 +226,7 @@ const memoResult = importAllResult.memo((textColor) => {
   }
   let defaultFormatter = textColor.formatter;
   if (defaultFormatter === undefined) {
-    defaultFormatter = require(10135) /* defaultFormatter */.defaultFormatter;
+    defaultFormatter = require(10201) /* defaultFormatter */.defaultFormatter;
   }
   if (animate) {
     let obj = { count: null, formatter: null, springConfig: null, textColor: null, textVariant: null, textStyle: null };

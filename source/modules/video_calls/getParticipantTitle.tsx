@@ -1,10 +1,10 @@
-// Module ID: 10862
-// Function ID: 10863
+// Module ID: 10928
+// Function ID: 10929
 // Name: getParticipantTitle
-// Dependencies: [4320, 10863, 4491, 1236, 2]
+// Dependencies: [4321, 10929, 4493, 1236, 2]
 // Exports: default
 
-// Module 10862 (getParticipantTitle)
+// Module 10928 (getParticipantTitle)
 import { ParticipantTypes } from "ParticipantTypes";
 
 let result = require("getNickname").fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
@@ -25,10 +25,10 @@ export default function getParticipantTitle(guild_id, type, name) {
     if (user != null) {
       id = user.id;
     }
-    const result = require(10863) /* useIsGuestOrLurker */.isGuestOrLurkerInGuild(guild_id.guild_id, id);
-    const obj2 = require(10863) /* useIsGuestOrLurker */;
+    const result = require(10929) /* useIsGuestOrLurker */.isGuestOrLurkerInGuild(guild_id.guild_id, id);
+    const obj2 = require(10929) /* useIsGuestOrLurker */;
     let str = "";
-    const name1 = importDefault(4491).getName(guild_id.getGuildId(), guild_id.id, type.user);
+    const name1 = importDefault(4493).getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
       const intl = tmp10(1236).intl;
       const _HermesInternal = HermesInternal;

@@ -1,10 +1,10 @@
-// Module ID: 8220
-// Function ID: 8221
+// Module ID: 8280
+// Function ID: 8281
 // Name: useFetchPurchases
-// Dependencies: [32, 19, 4216, 6957, 647, 6940, 8221, 2]
+// Dependencies: [32, 19, 4217, 7017, 647, 7000, 8281, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 8220 (useFetchPurchases)
+// Module 8280 (useFetchPurchases)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getHash from "getHash";
@@ -101,7 +101,7 @@ function useFetchCollectiblesCategoriesAndPurchases(paymentGateway) {
     countryCode = paymentGateway.countryCode;
   }
   obj[3] = countryCode;
-  const tmp2Result = importDefault(8221)(obj, arg1);
+  const tmp2Result = importDefault(8281)(obj, arg1);
   const isFetching = tmp2Result.isFetching;
   let stalePurchasesOK;
   ({ categories, fetchCategoriesError, refreshCategories } = tmp2Result);

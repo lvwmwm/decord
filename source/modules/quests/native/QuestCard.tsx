@@ -1,9 +1,9 @@
-// Module ID: 14260
-// Function ID: 14261
+// Module ID: 14330
+// Function ID: 14331
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1903, 7100, 5160, 505, 21, 712, 4302, 4116, 4145, 5163, 7106, 11105, 10393, 1474, 10405, 14261, 7685, 7001, 7006, 7127, 589, 10410, 7123, 7098, 10415, 4238, 10047, 4005, 14288, 10422, 9451, 9452, 9456, 7128, 10424, 4270, 14290, 1988, 11106, 6951, 1236, 11099, 10521, 14294, 10395, 10412, 10413, 4718, 9387, 9218, 4165, 500, 9343, 4298, 14295, 5375, 14333, 5267, 4723, 691, 14321, 4710, 8379, 14301, 11102, 14334, 4712, 14337, 7691, 9796, 14322, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 7160, 5161, 505, 21, 712, 4303, 4122, 4151, 5164, 7166, 11171, 10459, 1474, 10471, 14331, 7745, 7061, 7066, 7187, 589, 10476, 7183, 7158, 10481, 4239, 10113, 4005, 14358, 10488, 9516, 9517, 9521, 7188, 10490, 4271, 14360, 1988, 11172, 7011, 1236, 11165, 10587, 14364, 10461, 10478, 10479, 4720, 9452, 9283, 4039, 500, 9408, 4299, 14365, 5376, 14403, 5268, 4725, 691, 14391, 4712, 8439, 14371, 11168, 14404, 4714, 14407, 7751, 9862, 14392, 2]
 
-// Module 14260 (ESTIMATED_CARD_HEIGHT)
+// Module 14330 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet";
 import importAllResult from "useDeliveredDockCreative";
@@ -31,32 +31,32 @@ let c5 = importAllResult;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
 let result = createCacheKey.experimental_createToken((theme) => {
   theme = theme.theme;
-  const obj = require(4116);
+  const obj = require(4122);
   const tmp = require;
   const internal = importDefault(712).internal;
   const colors = importDefault(712).colors;
-  const semanticColor = internal.resolveSemanticColor(theme, require(4116).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const isThemeDarkResult = require(4116).isThemeDark(theme);
-  return tmp(4145).hexOpacityToRgba(semanticColor, 0);
+  const semanticColor = internal.resolveSemanticColor(theme, require(4122).isThemeDark(theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
+  const isThemeDarkResult = require(4122).isThemeDark(theme);
+  return tmp(4151).hexOpacityToRgba(semanticColor, 0);
 });
 let result1 = createCacheKey.experimental_createToken((theme) => {
   theme = theme.theme;
-  const isThemeDarkResult = require(4116).isThemeDark(theme);
+  const isThemeDarkResult = require(4122).isThemeDark(theme);
   const internal = importDefault(712).internal;
   const colors = importDefault(712).colors;
   const semanticColor = internal.resolveSemanticColor(theme, isThemeDarkResult ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK);
-  const obj = require(4116);
+  const obj = require(4122);
   const tmp = require;
   let num = 0.5;
   if (isThemeDarkResult) {
     num = 0.8;
   }
-  return require(4145) /* hexToRgba */.hexOpacityToRgba(semanticColor, num);
+  return require(4151) /* hexToRgba */.hexOpacityToRgba(semanticColor, num);
 });
 let result2 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4116);
+  const obj = require(4122);
   const colors = importDefault(712).colors;
-  return require(4116).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
+  return require(4122).isThemeDark(theme.theme) ? colors.BACKGROUND_SURFACE_HIGH : colors.BLACK;
 });
 const PX_16 = require("Themes").space.PX_16;
 let obj = { container: null, heroContainer: null, heroImg: null, heroLinearGradientOverlay: null, previewBadge: null, previewBadgeText: null, rewardImgContainer: null, heroFooterContainer: null, heroFooterLeftContainer: null, detailsWrapper: null, detailsContainer: null, questName: null, bodyContainer: null, subtitleRow: null, orbWithAmountRow: null, detailsTextContainer: null, buttonContainers: null, equalWidthContainer: null };
@@ -501,7 +501,7 @@ const memoResult = importAllResult.memo((questContent) => {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -518,12 +518,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 let closure_0 = tmp2;
                 outer1_5.log("Enrolling in quest");
-                outer1_0(10395);
+                outer1_0(10461);
                 let obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
                   if (!outer1_14) {
-                    let START_QUEST = tmp31(7127).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7187).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = outer1_4;
@@ -531,7 +531,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7127).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7187).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -547,7 +547,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = openQuestAccessSuspendedBottomSheet;
-                  v0(14294)(obj);
+                  v0(14364)(obj);
                   dependencyMap = 3;
                 }
                 callback2();
@@ -762,7 +762,7 @@ const memoResult = importAllResult.memo((questContent) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -795,7 +795,7 @@ const memoResult = importAllResult.memo((questContent) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         v0 = tmp;

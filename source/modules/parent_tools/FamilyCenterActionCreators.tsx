@@ -1,10 +1,10 @@
-// Module ID: 6938
-// Function ID: 6939
+// Module ID: 6998
+// Function ID: 6999
 // Name: maybeFetchCollectiblesForInvoices
-// Dependencies: [5, 6939, 6937, 676, 6940, 709, 530, 698, 1356, 1306, 1342, 2]
+// Dependencies: [5, 6999, 6997, 676, 7000, 709, 530, 698, 1356, 1306, 1342, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 6938 (maybeFetchCollectiblesForInvoices)
+// Module 6998 (maybeFetchCollectiblesForInvoices)
 import dispatcher from "dispatcher";
 import getSettings from "getSettings";
 import { FamilyCenterAction } from "items";
@@ -41,7 +41,7 @@ function _maybeFetchCollectiblesForInvoices() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ function _maybeFetchCollectiblesForInvoices() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -131,7 +131,7 @@ function _maybeFetchCollectiblesForGifts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -170,7 +170,7 @@ function _maybeFetchCollectiblesForGifts() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -207,7 +207,7 @@ function _updateLinkForUserId() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -251,7 +251,7 @@ function _updateLinkForUserId() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -287,7 +287,7 @@ function _removeLinkForUserId() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -332,7 +332,7 @@ function _removeLinkForUserId() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -364,7 +364,7 @@ function _getLinkCodeForCurrentUser() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -405,7 +405,7 @@ function _getLinkCodeForCurrentUser() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         v0 = tmp;
@@ -436,7 +436,7 @@ function _shareIarWithParents() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -470,7 +470,7 @@ function _shareIarWithParents() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -504,7 +504,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -832,7 +832,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1137,7 +1137,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

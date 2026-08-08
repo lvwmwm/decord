@@ -1,10 +1,10 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15561
+// Function ID: 15562
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 19, 17, 4314, 8850, 8838, 676, 21, 4302, 712, 589, 8854, 5704, 5707, 1236, 5708, 8853, 5373, 7244, 692, 11, 5252, 4270, 8852, 4507, 15487, 1988, 15496, 2]
+// Dependencies: [5, 19, 17, 4315, 8910, 8898, 676, 21, 4303, 712, 589, 8914, 5764, 5767, 1236, 5768, 8913, 5374, 7304, 692, 11, 5253, 4271, 8912, 4509, 15562, 1988, 15571, 2]
 // Exports: default
 
-// Module 15486 (ICYMISettingsActionSheet)
+// Module 15561 (ICYMISettingsActionSheet)
 import filterStaffGuild from "filterStaffGuild";
 import "set";
 import { View } from "TableRowInner";
@@ -33,7 +33,7 @@ export default function ICYMISettingsActionSheet() {
   let obj = stateFromStoresObject(589);
   const items = [initialize];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => state.getState());
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8854).ICYMIStaffDebuggingUtilityExperiment;
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8914).ICYMIStaffDebuggingUtilityExperiment;
   obj = { title: null, hasIcons: false, children: null };
   const intl = stateFromStoresObject(1236).intl;
   obj[0] = intl.string(stateFromStoresObject(1236).t["7Si8Ul"]);
@@ -56,7 +56,7 @@ export default function ICYMISettingsActionSheet() {
       obj.setFilters(obj);
       const dehydrated = outer1_1(outer1_2[16]).fetchDehydrated();
     };
-    const items1 = [callback2(tmp(5708).TableSwitchRow, obj), , ];
+    const items1 = [callback2(tmp(5768).TableSwitchRow, obj), , ];
     let obj2 = { label: "Clear read states", onPress: null };
     obj2[1] = function onPress() {
       dehydratedItems = dehydratedItems.getDehydratedItems();
@@ -83,7 +83,7 @@ export default function ICYMISettingsActionSheet() {
       let obj = callback(paths[16]);
       callback(paths[22]).hideActionSheet();
     };
-    items1[1] = callback2(tmp(5373).TableRow, obj2);
+    items1[1] = callback2(tmp(5374).TableRow, obj2);
     let obj3 = { label: "Regenerate feed and clear read states", onPress: null };
     obj3[1] = callback(function*() {
       if (dependencyMap === 2) {
@@ -97,7 +97,7 @@ export default function ICYMISettingsActionSheet() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -113,7 +113,7 @@ export default function ICYMISettingsActionSheet() {
               return obj;
             } else {
               let closure_0 = tmp4;
-              let obj2 = outer1_0(8852);
+              let obj2 = outer1_0(8912);
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
@@ -129,10 +129,10 @@ export default function ICYMISettingsActionSheet() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(4270);
+            obj = v0(4271);
             obj.hideActionSheet();
             dependencyMap = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           dependencyMap = tmp;
@@ -140,7 +140,7 @@ export default function ICYMISettingsActionSheet() {
         }
       }
     });
-    items1[2] = callback2(tmp(5373).TableRow, obj3);
+    items1[2] = callback2(tmp(5374).TableRow, obj3);
     obj1[0] = items1;
     tmp5Result = tmp5(closure_11, obj1);
     const tmp7 = closure_11;
@@ -160,11 +160,11 @@ export default function ICYMISettingsActionSheet() {
     const tmp3 = stateFromStoresObject(paths[26])(paths[25], paths.paths);
     callback(paths[22]).hideActionSheet();
   };
-  items2[1] = callback2(stateFromStoresObject(5373).TableRow, obj5);
+  items2[1] = callback2(stateFromStoresObject(5374).TableRow, obj5);
   obj[2] = items2;
-  const items3 = [closure_12(stateFromStoresObject(5707).TableRowGroup, obj), ];
+  const items3 = [closure_12(stateFromStoresObject(5767).TableRowGroup, obj), ];
   const tmp4 = createCacheKey();
   items3[1] = callback2(View, { style: createCacheKey().padding });
   obj4[2] = items3;
-  return closure_12(stateFromStoresObject(5704).ActionSheet, obj4);
+  return closure_12(stateFromStoresObject(5764).ActionSheet, obj4);
 };

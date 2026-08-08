@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 14726
+// Module ID: 14795
+// Function ID: 14796
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4302, 712, 4298, 4005, 4145, 8896, 4710, 11906, 12047, 9497, 4712, 5708, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 4005, 4151, 8956, 4712, 11972, 12113, 9562, 4714, 5768, 2]
 // Exports: default
 
-// Module 14725 (UserSettingsDesignSystemTabs)
+// Module 14795 (UserSettingsDesignSystemTabs)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -83,7 +83,7 @@ export default function UserSettingsDesignSystemTabs() {
     }
     return items;
   }, items);
-  let obj = first(8896);
+  let obj = first(8956);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp[0], defaultIndex: 1 });
   callback = React.useCallback((nativeEvent) => {
     first(nativeEvent.nativeEvent.layout.width);
@@ -91,24 +91,24 @@ export default function UserSettingsDesignSystemTabs() {
   let obj1 = first(4005);
   const token = obj1.useToken(first(712).colors.BACKGROUND_BASE_LOW);
   let items1 = [token, ];
-  let obj2 = first(4145);
+  let obj2 = first(4151);
   items1[1] = obj2.hexWithOpacity(token, 0);
   obj = { style: createCacheKey().container, onLayout: callback, children: null };
-  const items2 = [callback2(first(11906).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  const items2 = [callback2(first(11972).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20Result = first2;
   if (first2) {
     obj = { state: null, colors: null };
     obj[0] = segmentedControlState;
     obj[1] = items1;
-    tmp20Result = tmp20(first(12047), obj);
+    tmp20Result = tmp20(first(12113), obj);
   }
   obj1 = { children: null };
   obj2 = { spacing: 24, children: null };
   items2[1] = tmp20Result;
-  const items3 = [closure_7(closure_5, { children: items2 }), callback2(first(9497).SegmentedControlPages, { state: segmentedControlState }), , ];
+  const items3 = [closure_7(closure_5, { children: items2 }), callback2(first(9562).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj3 = { spacing: 8, direction: "horizontal", children: null };
   const items4 = [
-    callback2(first(4712).Button, {
+    callback2(first(4714).Button, {
       text: "Add Tab",
       variant: "active",
       size: "sm",
@@ -117,7 +117,7 @@ export default function UserSettingsDesignSystemTabs() {
         return _undefined(first + 1);
       }
     }),
-    callback2(first(4712).Button, {
+    callback2(first(4714).Button, {
       text: "Remove Tab",
       variant: "destructive",
       size: "sm",
@@ -128,13 +128,13 @@ export default function UserSettingsDesignSystemTabs() {
     })
   ];
   obj3[2] = items4;
-  items3[2] = closure_7(first(4710).Stack, obj3);
+  items3[2] = closure_7(first(4712).Stack, obj3);
   const obj6 = { children: null };
-  const items5 = [callback2(first(5708).TableSwitchRow, { start: true, label: "Enable Grow", value: first1, onValueChange: tmp4[1] }), callback2(first(5708).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), callback2(first(5708).TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp9[1] })];
+  const items5 = [callback2(first(5768).TableSwitchRow, { start: true, label: "Enable Grow", value: first1, onValueChange: tmp4[1] }), callback2(first(5768).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), callback2(first(5768).TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp9[1] })];
   obj6[0] = items5;
   items3[3] = closure_7(closure_5, obj6);
   obj2[1] = items3;
-  obj[2] = closure_7(first(4710).Stack, obj2);
+  obj[2] = closure_7(first(4712).Stack, obj2);
   obj1[0] = callback2(closure_5, obj);
   return callback2(closure_6, obj1);
 };

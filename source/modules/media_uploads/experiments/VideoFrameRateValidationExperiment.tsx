@@ -1,10 +1,10 @@
-// Module ID: 4882
-// Function ID: 4883
+// Module ID: 4884
+// Function ID: 4885
 // Name: getVideoFrameRateValidationExperimentConfig
 // Dependencies: [1452, 2]
 // Exports: getVideoFrameRateValidationExperimentConfig
 
-// Module 4882 (getVideoFrameRateValidationExperimentConfig)
+// Module 4884 (getVideoFrameRateValidationExperimentConfig)
 import ApexExperiment from "ApexExperiment";
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-10-video-frame-rate-validation", kind: "user", defaultConfig: { enableFrameRateValidation: false }, variations: { 0: { enableFrameRateValidation: false }, 1: { enableFrameRateValidation: true } } });

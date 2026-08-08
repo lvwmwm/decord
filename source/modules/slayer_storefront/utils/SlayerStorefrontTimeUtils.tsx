@@ -1,10 +1,10 @@
-// Module ID: 15918
-// Function ID: 15919
+// Module ID: 15993
+// Function ID: 15994
 // Name: getLimitedOfferTimeLeft
-// Dependencies: [32, 19, 3883, 687, 1236, 3222, 6849, 2]
+// Dependencies: [32, 19, 3883, 687, 1236, 3222, 6909, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 15918 (getLimitedOfferTimeLeft)
+// Module 15993 (getLimitedOfferTimeLeft)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -67,7 +67,7 @@ export const useTickingFormattedLimitedOfferTimeLeft = function useTickingFormat
   let closure_0 = endDate;
   const tmp = callback(React.useState(() => outer1_6(closure_0)), 2);
   const importDefault = tmp[1];
-  importDefault(6849)(() => {
+  importDefault(6909)(() => {
     callback(outer1_6(closure_0));
   }, 1000);
   return tmp[0];

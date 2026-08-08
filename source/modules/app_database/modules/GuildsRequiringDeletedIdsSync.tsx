@@ -1,9 +1,9 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7112
+// Function ID: 7113
 // Name: getAll
 // Dependencies: [5, 1936, 2]
 
-// Module 7052 (getAll)
+// Module 7112 (getAll)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import set from "set";
 
@@ -42,7 +42,7 @@ prototype["getAll"] = function getAll() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

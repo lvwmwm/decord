@@ -1,10 +1,10 @@
-// Module ID: 7135
-// Function ID: 7136
+// Module ID: 7195
+// Function ID: 7196
 // Name: InviteTypes
-// Dependencies: [6925, 1376, 7136, 7137, 2]
+// Dependencies: [6985, 1376, 7196, 7197, 2]
 // Exports: getGuildInviteExtendedType, getInviteType, isEmbeddedApplicationInvite, isFriendInvite, isGroupDMInvite, isGuildScheduledEventInviteEmbed, isRoleSubscriptionInvite, isStreamInvite, isVoiceChannelInvite
 
-// Module 7135 (InviteTypes)
+// Module 7195 (InviteTypes)
 import { isEventUpcoming } from "scheduledEventSort";
 import createChannelRecord from "createChannelRecord";
 import InviteSendStates from "InviteSendStates";
@@ -103,7 +103,7 @@ export const getGuildInviteExtendedType = function getGuildInviteExtendedType(in
   } else if (invite.target_type === constants.EMBEDDED_APPLICATION) {
     PROFILE = obj.APPLICATION;
   } else {
-    obj = require(7137) /* getEstablishedDate */;
+    obj = require(7197) /* getEstablishedDate */;
     if (obj.guildInviteCanEmbedProfile(invite)) {
       PROFILE = obj.PROFILE;
     } else {

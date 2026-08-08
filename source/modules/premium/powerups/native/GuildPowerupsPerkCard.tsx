@@ -1,10 +1,10 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 11929
+// Function ID: 11930
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4302, 712, 4238, 4147, 11860, 11817, 4723, 4298, 11818, 1297, 1236, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4239, 4153, 11926, 11883, 4725, 4299, 11884, 1297, 1236, 2]
 // Exports: default
 
-// Module 11863 (GuildPowerupsPerkCard)
+// Module 11929 (GuildPowerupsPerkCard)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,14 +48,14 @@ export default function GuildPowerupsPerkCard(arg0) {
   ({ style, onPress } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
   const tmp2 = createCacheKey();
-  let obj = require(4147) /* AccessibilityAnnouncer */;
-  const tmp5 = importDefault(4238)();
+  let obj = require(4153) /* AccessibilityAnnouncer */;
+  const tmp5 = importDefault(4239)();
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(11860);
+  let tmp3Result = tmp3(11926);
   if (riveComponent == null) {
-    tmp3Result = tmp3(11817);
+    tmp3Result = tmp3(11883);
     if (imageUrl == null) {
       imageUrl = "";
     }
@@ -66,19 +66,19 @@ export default function GuildPowerupsPerkCard(arg0) {
     const tmp11 = callback;
   }
   const items1 = [riveComponent, ];
-  const tmp7 = obj.isThemeDark(importDefault(4238)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
-  items1[1] = callback(importDefault(4723), { colors: obj.isThemeDark(importDefault(4238)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
+  const tmp7 = obj.isThemeDark(importDefault(4239)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
+  items1[1] = callback(importDefault(4725), { colors: obj.isThemeDark(importDefault(4239)()) ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"], style: tmp2.gradient });
   obj[1] = items1;
   const items2 = [closure_5(View, obj), , , ];
   const obj3 = { style: tmp2.contentContainer, children: null };
   const obj4 = { style: tmp2.headerContainer, children: null };
-  const items3 = [callback(require(4298) /* Text */.Text, { variant: "heading-md/bold", children: title }), callback(require(4298) /* Text */.Text, { variant: "text-sm/medium", children: description })];
+  const items3 = [callback(require(4299) /* Text */.Text, { variant: "heading-md/bold", children: title }), callback(require(4299) /* Text */.Text, { variant: "text-sm/medium", children: description })];
   obj4[1] = items3;
   const items4 = [closure_5(View, obj4), ];
   const obj5 = {};
   const merged1 = Object.assign(merged);
   obj5.status = status;
-  items4[1] = callback(require(11818) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
+  items4[1] = callback(require(11884) /* GuildPowerupCardFooterActive */.GuildPowerupsCardFooter, obj5);
   obj3[1] = items4;
   items2[1] = closure_5(View, obj3);
   let tmp13Result = "new" === badge;

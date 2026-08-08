@@ -1,10 +1,10 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9640
+// Function ID: 9641
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4321, 3938, 676, 589, 2]
+// Dependencies: [4322, 3938, 676, 589, 2]
 // Exports: default
 
-// Module 9575 (getDiscoverableApplicationStream)
+// Module 9640 (getDiscoverableApplicationStream)
 import reset from "reset";
 import upsertRelationship from "upsertRelationship";
 import { RelationshipTypes } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 6762
-// Function ID: 6763
+// Module ID: 6822
+// Function ID: 6823
 // Name: TreasureChestBannerSpotIllustration
-// Dependencies: [21, 5267, 6763, 2]
+// Dependencies: [21, 5268, 6823, 2]
 // Exports: TreasureChestBannerSpotIllustration
 
-// Module 6762 (TreasureChestBannerSpotIllustration)
+// Module 6822 (TreasureChestBannerSpotIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const TreasureChestBannerSpotIllustration = function TreasureChestBannerS
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6763);
+  obj[0] = importDefault(6823);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const TreasureChestBannerSpotIllustration = function TreasureChestBannerS
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

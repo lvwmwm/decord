@@ -1,10 +1,10 @@
-// Module ID: 13279
-// Function ID: 13280
+// Module ID: 13349
+// Function ID: 13350
 // Name: ThemedIcon
-// Dependencies: [19, 21, 4005, 4714, 2]
+// Dependencies: [19, 21, 4005, 4716, 2]
 // Exports: default
 
-// Module 13279 (ThemedIcon)
+// Module 13349 (ThemedIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -17,5 +17,5 @@ export default function ThemedIcon(themedColor) {
   const token = obj.useToken(themedColor.themedColor);
   obj = { color: token };
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(4714), { color: token });
+  return jsx(importDefault(4716), { color: token });
 };

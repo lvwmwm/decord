@@ -1,9 +1,9 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 9415
+// Function ID: 9416
 // Name: PurchasedAssetOverlay
-// Dependencies: [32, 19, 17, 678, 21, 9279, 712, 4302, 9169, 4821, 6952, 1930, 9309, 9310, 5267, 9351, 679, 9352, 9322, 9312, 9330, 9332, 4145, 4005, 9280, 2]
+// Dependencies: [32, 19, 17, 678, 21, 9344, 712, 4303, 9229, 4823, 7012, 1930, 9374, 9375, 5268, 9416, 679, 9417, 9387, 9377, 9395, 9397, 4151, 4005, 9345, 2]
 
-// Module 9350 (PurchasedAssetOverlay)
+// Module 9415 (PurchasedAssetOverlay)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "ProfileEffectSample";
 import get_ActivityIndicator from "FRACTIONAL_NITRO_COIN_SIZE";
@@ -18,13 +18,13 @@ let metroImportAll;
 const require = arg1;
 function PurchasedAssetOverlay() {
   const tmp = callback3();
-  obj = { style: tmp.overlayContainer, children: callback2(require(9169) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj) };
+  obj = { style: tmp.overlayContainer, children: callback2(require(9229) /* CheckmarkLargeBoldIcon */.CheckmarkLargeBoldIcon, obj) };
   obj = { size: "lg", style: tmp.overlayIcon };
   return callback2(closure_5, obj);
 }
 function DisabledAssetOverlay() {
   const tmp = callback3();
-  obj = { style: tmp.overlayContainer, children: callback2(require(4821) /* LockIcon */.LockIcon, obj) };
+  obj = { style: tmp.overlayContainer, children: callback2(require(4823) /* LockIcon */.LockIcon, obj) };
   obj = { size: "lg", style: tmp.overlayIcon };
   return callback2(closure_5, obj);
 }
@@ -38,7 +38,7 @@ function ProductPreview(arg0) {
   ({ product, isPurchased } = arg0);
   ({ isDisabled, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth } = arg0);
   const tmp = callback3();
-  let obj = require(6952) /* getProductOrbPrice */;
+  let obj = require(7012) /* getProductOrbPrice */;
   const productType = obj.getProductType(product);
   if (productType !== require(1930) /* CollectiblesItemType */.CollectiblesItemType.PROFILE_EFFECT) {
     if (productType !== tmp2(1930).CollectiblesItemType.PROFILE_FRAME) {
@@ -78,7 +78,7 @@ function ProductPreviewInner(arg0) {
   ({ product, cardWidth } = arg0);
   ({ disableBundleStaticBackground, muteBundleStaticBackground } = arg0);
   const tmp = callback3();
-  let obj = cardWidth(9309);
+  let obj = cardWidth(9374);
   const shopProductItems = obj.useShopProductItems(product);
   const items = [cardWidth];
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
@@ -98,22 +98,22 @@ function ProductPreviewInner(arg0) {
     obj[5] = disableBundleStaticBackground;
     obj[6] = muteBundleStaticBackground;
     obj[7] = memo;
-    return callback2(importDefault(9310), obj);
+    return callback2(importDefault(9375), obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = { source: null, style: null };
     const obj1 = { uri: null };
-    obj1[0] = importDefault(9351);
+    obj1[0] = importDefault(9416);
     obj[0] = obj1;
     obj[1] = tmp.externalProductImage;
-    return callback2(importDefault(5267), obj);
+    return callback2(importDefault(5268), obj);
   } else {
     const ALL = tmp2(679).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
       const obj2 = { skuId: null, width: null, height: null };
       obj2[0] = product.skuId;
-      obj2[1] = tmp2(9352).FRACTIONAL_NITRO_COIN_SIZE.CARD;
-      obj2[2] = tmp2(9352).FRACTIONAL_NITRO_COIN_SIZE.CARD;
-      return callback2(tmp2(9352).FractionalNitroCoinIllustration, obj2);
+      obj2[1] = tmp2(9417).FRACTIONAL_NITRO_COIN_SIZE.CARD;
+      obj2[2] = tmp2(9417).FRACTIONAL_NITRO_COIN_SIZE.CARD;
+      return callback2(tmp2(9417).FractionalNitroCoinIllustration, obj2);
     } else {
       const first = callback(product.items, 1)[0];
       let type;
@@ -123,28 +123,28 @@ function ProductPreviewInner(arg0) {
       if (tmp2(1930).CollectiblesItemType.AVATAR_DECORATION === type) {
         const obj3 = { item: null, size: 100 };
         obj3[0] = first;
-        return callback2(importDefault(9322), obj3);
+        return callback2(importDefault(9387), obj3);
       } else if (tmp2(1930).CollectiblesItemType.PROFILE_EFFECT === type) {
         const obj4 = { style: null, children: null };
         obj4[0] = tmp.profileEffectContainer;
         const obj5 = { item: null, hideBackground: true };
         obj5[0] = first;
-        obj4[1] = callback2(importDefault(9312), obj5);
+        obj4[1] = callback2(importDefault(9377), obj5);
         return callback2(closure_5, obj4);
       } else if (tmp2(1930).CollectiblesItemType.PROFILE_FRAME === type) {
         const obj6 = { style: null, children: null };
         obj6[0] = tmp.profileFrameContainer;
         const obj7 = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
         obj7[0] = first;
-        obj7[1] = tmp2(9279).COLLECTIBLES_SHOP_CARD_WIDTH - importDefault(712).space.PX_32;
+        obj7[1] = tmp2(9344).COLLECTIBLES_SHOP_CARD_WIDTH - importDefault(712).space.PX_32;
         obj7[2] = closure_9;
         obj7[3] = importDefault(712).colors.BACKGROUND_BASE_LOW;
-        obj6[1] = callback2(importDefault(9330), obj7);
+        obj6[1] = callback2(importDefault(9395), obj7);
         return callback2(closure_5, obj6);
       } else if (tmp2(1930).CollectiblesItemType.NAMEPLATE === type) {
         const obj8 = { item: null };
         obj8[0] = first;
-        return callback2(importDefault(9332), obj8);
+        return callback2(importDefault(9397), obj8);
       } else {
         return null;
       }
@@ -156,9 +156,9 @@ function AssetTileInternal(solidBackground) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(4145) /* hexToRgba */;
+  let obj = require(4151) /* hexToRgba */;
   const tmp = callback3();
-  const obj2 = require(4145) /* hexToRgba */;
+  const obj2 = require(4151) /* hexToRgba */;
   let num = 0.8;
   const token = require(4005) /* map */.useToken(importDefault(712).colors.BACKGROUND_BASE_LOW);
   if (flag) {
@@ -205,10 +205,10 @@ const memoResult = importAllResult.memo(function AssetTileV2(arg0) {
   let solidBackground;
   ({ product, isPurchased, isDisabled } = arg0);
   ({ solidBackground, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth } = arg0);
-  let obj = require(9280) /* useDefaultVariantIndex */;
+  let obj = require(9345) /* useDefaultVariantIndex */;
   const defaultVariantIndex = obj.useDefaultVariantIndex(product);
   obj = { solidBackground, children: null };
-  obj = { product: require(6952) /* getProductOrbPrice */.getSelectedProduct(product, defaultVariantIndex), isPurchased, isDisabled, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth };
+  obj = { product: require(7012) /* getProductOrbPrice */.getSelectedProduct(product, defaultVariantIndex), isPurchased, isDisabled, disableBundleStaticBackground, muteBundleStaticBackground, cardWidth };
   const items = [callback2(ProductPreview, obj), , ];
   let tmp4Result = isPurchased;
   if (isPurchased) {

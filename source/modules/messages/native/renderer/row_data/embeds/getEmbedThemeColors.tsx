@@ -1,10 +1,10 @@
-// Module ID: 7993
-// Function ID: 7994
+// Module ID: 8053
+// Function ID: 8054
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4302, 4147, 712, 4145, 2]
+// Dependencies: [19, 4303, 4153, 712, 4151, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 7993 (getEmbedThemeColors)
+// Module 8053 (getEmbedThemeColors)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 import createCacheKey from "createCacheKey";
@@ -19,38 +19,38 @@ import createCacheKey from "createCacheKey";
 
 const require = arg1;
 const result = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4147) /* AccessibilityAnnouncer */;
+  const obj = require(4153) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+  return require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
 const result1 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = importDefault(712).unsafe_rawColors.PRIMARY_600;
   } else {
-    PRIMARY_600 = require(4145) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_500, 0.3);
-    const tmpResult = require(4145) /* hexToRgba */;
+    PRIMARY_600 = require(4151) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_500, 0.3);
+    const tmpResult = require(4151) /* hexToRgba */;
   }
   return PRIMARY_600;
 });
 const result2 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4147) /* AccessibilityAnnouncer */;
+  const obj = require(4153) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+  return require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
 const result3 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4147) /* AccessibilityAnnouncer */;
+  const obj = require(4153) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
+  return require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_400;
 });
 const result4 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4147) /* AccessibilityAnnouncer */;
+  const obj = require(4153) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
+  return require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_500 : unsafe_rawColors.PRIMARY_100;
 });
 const result5 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4147) /* AccessibilityAnnouncer */;
-  const isThemeDarkResult = require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
-  const hexWithOpacity = require(4145) /* hexToRgba */.hexWithOpacity;
+  const obj = require(4153) /* AccessibilityAnnouncer */;
+  const isThemeDarkResult = require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme.theme);
+  const hexWithOpacity = require(4151) /* hexToRgba */.hexWithOpacity;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (isThemeDarkResult) {
     let hexWithOpacityResult = hexWithOpacity(unsafe_rawColors.WHITE, 0.06);
@@ -60,9 +60,9 @@ const result5 = createCacheKey.experimental_createToken((theme) => {
   return hexWithOpacityResult;
 });
 const result6 = createCacheKey.experimental_createToken((theme) => {
-  const obj = require(4147) /* AccessibilityAnnouncer */;
+  const obj = require(4153) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  return require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_100;
+  return require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme.theme) ? unsafe_rawColors.PRIMARY_600 : unsafe_rawColors.PRIMARY_100;
 });
 const result7 = createCacheKey.experimental_createToken((theme) => {
   let str = "#666b73";
@@ -75,8 +75,8 @@ const result8 = createCacheKey.experimental_createToken((theme) => {
   if (obj.isThemeDark(theme.theme)) {
     let PRIMARY_600 = importDefault(712).unsafe_rawColors.PRIMARY_600;
   } else {
-    PRIMARY_600 = require(4145) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_200, 0.3);
-    const tmpResult = require(4145) /* hexToRgba */;
+    PRIMARY_600 = require(4151) /* hexToRgba */.hexWithOpacity(importDefault(712).unsafe_rawColors.PRIMARY_200, 0.3);
+    const tmpResult = require(4151) /* hexToRgba */;
   }
   return PRIMARY_600;
 });

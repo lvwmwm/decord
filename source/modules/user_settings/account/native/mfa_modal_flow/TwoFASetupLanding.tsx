@@ -1,10 +1,10 @@
-// Module ID: 13960
-// Function ID: 13961
+// Module ID: 14030
+// Function ID: 14031
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4302, 13961, 13957, 5327, 13962, 4298, 1236, 2]
+// Dependencies: [19, 17, 21, 4303, 14031, 14027, 5328, 14032, 4299, 1236, 2]
 // Exports: default
 
-// Module 13960 (TwoFASetupLanding)
+// Module 14030 (TwoFASetupLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -22,27 +22,27 @@ const result = require("jsxProd").fileFinishedImporting("modules/user_settings/a
 
 export default function TwoFASetupLanding() {
   const tmp = callback3();
-  let obj = require(13961) /* styles */;
+  let obj = require(14031) /* styles */;
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { bottom: true, style: tmp.container, children: null };
   const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(13962);
+  obj2[0] = importDefault(14032);
   obj2[1] = tmp.authIcon;
   const items = [callback(closure_3, obj2), , ];
   const obj3 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["9E74Dx"]);
-  items[1] = callback(require(4298) /* Text */.Heading, obj3);
+  items[1] = callback(require(4299) /* Text */.Heading, obj3);
   const obj4 = { variant: "text-md/normal", style: items1, children: null };
   items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" });
-  items[2] = callback(require(4298) /* Text */.Text, obj4);
+  items[2] = callback(require(4299) /* Text */.Text, obj4);
   obj1[2] = items;
-  obj[1] = callback2(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
+  obj[1] = callback2(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj1);
   obj[0] = callback(closure_4, obj);
-  return callback(require(13957) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj);
+  return callback(require(14027) /* TwoFAModalSetupSections */.TwoFASetupModalScreen, obj);
 };

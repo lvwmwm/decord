@@ -1,10 +1,10 @@
-// Module ID: 8551
-// Function ID: 8552
+// Module ID: 8611
+// Function ID: 8612
 // Name: updateChatInputContainerHeight
-// Dependencies: [595, 644, 4160, 2]
+// Dependencies: [595, 644, 4166, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 8551 (updateChatInputContainerHeight)
+// Module 8611 (updateChatInputContainerHeight)
 import keys from "keys";
 
 let chatInputContainerHeight = "chatInputContainerHeight";

@@ -1,10 +1,10 @@
-// Module ID: 16186
-// Function ID: 16187
+// Module ID: 16263
+// Function ID: 16264
 // Name: MobilePhoneShareIcon
-// Dependencies: [19, 17, 1372, 676, 21, 1605, 11824, 16187, 4302, 712, 11578, 16170, 589, 38, 10758, 698, 1348, 16171, 1236, 5721, 2]
+// Dependencies: [19, 17, 1372, 676, 21, 1605, 11890, 16264, 4303, 712, 11644, 16247, 589, 38, 10824, 698, 1348, 16248, 1236, 5781, 2]
 // Exports: default
 
-// Module 16186 (MobilePhoneShareIcon)
+// Module 16263 (MobilePhoneShareIcon)
 import set from "set";
 import { Image } from "AnimatedButtonWrapper";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,10 +1,10 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9637
+// Function ID: 9638
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 4302, 712, 4730, 1236, 4640, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4732, 1236, 4642, 4299, 2]
 // Exports: default
 
-// Module 9572 (AcceptRequestConfirmationModal)
+// Module 9637 (AcceptRequestConfirmationModal)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,12 +38,12 @@ export default function AcceptRequestConfirmationModal(onConfirm) {
   obj = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text, children: null };
   const intl3 = onConfirm(1236).intl;
   obj[3] = intl3.string(onConfirm(1236).t.eJzSDT);
-  const items = [callback(onConfirm(4298).Text, obj), ];
+  const items = [callback(onConfirm(4299).Text, obj), ];
   const obj1 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: null };
   const intl4 = onConfirm(1236).intl;
   obj1[3] = intl4.string(onConfirm(1236).t.GB4jUw);
-  items[1] = callback(onConfirm(4298).Text, obj1);
+  items[1] = callback(onConfirm(4299).Text, obj1);
   obj[1] = items;
   obj[4] = callback2(View, obj);
-  return callback(importDefault(4730), obj);
+  return callback(importDefault(4732), obj);
 };

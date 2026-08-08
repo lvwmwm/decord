@@ -1,9 +1,9 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10106
+// Function ID: 10107
 // Name: initialize
 // Dependencies: [32, 589, 709, 2]
 
-// Module 10040 (initialize)
+// Module 10106 (initialize)
 import _slicedToArray from "_slicedToArray";
 import { PersistedStore } from "initialize";
 

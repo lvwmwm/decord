@@ -1,10 +1,10 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9374
+// Function ID: 9375
 // Name: firstAvatarDecoration
 // Dependencies: [19, 1930, 1236, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 9309 (firstAvatarDecoration)
+// Module 9374 (firstAvatarDecoration)
 import noop from "noop";
 
 const require = arg1;

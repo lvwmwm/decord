@@ -1,9 +1,9 @@
-// Module ID: 16102
-// Function ID: 16103
+// Module ID: 16177
+// Function ID: 16178
 // Name: VoicePanelSettingsOverviewHeader
-// Dependencies: [19, 1371, 4315, 10591, 1218, 1372, 4349, 3929, 1903, 4374, 676, 4320, 9151, 21, 4302, 712, 589, 16103, 4492, 9168, 9130, 5721, 4298, 12143, 1236, 4821, 7, 4002, 16100, 8863, 5373, 5379, 14676, 7958, 5380, 709, 5708, 3974, 9095, 4495, 7956, 10778, 4270, 16104, 1988, 9153, 9173, 16105, 16093, 16051, 10337, 9117, 16106, 5951, 16107, 9122, 16108, 7654, 10757, 9655, 9656, 2]
+// Dependencies: [19, 1371, 4316, 10657, 1218, 1372, 4351, 3929, 1903, 4376, 676, 4321, 9211, 21, 4303, 712, 589, 16178, 4494, 9228, 9190, 5781, 4299, 12210, 1236, 4823, 7, 4002, 16175, 8923, 5374, 5380, 14746, 8018, 5381, 709, 5768, 3974, 9155, 4497, 8016, 10844, 4271, 16179, 1988, 9213, 9233, 16180, 16168, 16126, 10403, 9177, 16181, 6011, 16182, 9182, 16183, 7714, 10823, 9720, 9721, 2]
 
-// Module 16102 (VoicePanelSettingsOverviewHeader)
+// Module 16177 (VoicePanelSettingsOverviewHeader)
 import importAllResult from "useIsSecureFramesUIEnabled";
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
@@ -116,13 +116,13 @@ function ShareActivityLogsButton() {
   }, []);
   let obj = { onPress: callback, icon: null, label: null, trailing: null };
   obj = { IconComponent: null, source: null };
-  obj[0] = require(14676) /* WrenchIcon */.WrenchIcon;
-  obj[1] = importDefault(7958);
-  obj[1] = callback(require(5379) /* TableRowIcon */.TableRowIcon, obj);
+  obj[0] = require(14746) /* WrenchIcon */.WrenchIcon;
+  obj[1] = importDefault(8018);
+  obj[1] = callback(require(5380) /* TableRowIcon */.TableRowIcon, obj);
   let intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.iQzQs3);
-  obj[3] = callback(require(5380) /* TableRowArrow */.TableRowArrow, {});
-  return callback(require(5373) /* TableRowInner */.TableRow, obj);
+  obj[3] = callback(require(5381) /* TableRowArrow */.TableRowArrow, {});
+  return callback(require(5374) /* TableRowInner */.TableRow, obj);
 }
 function ActivityDebugToggle() {
   let obj = require(589) /* initialize */;
@@ -135,16 +135,16 @@ function ActivityDebugToggle() {
   }, []);
   obj = { icon: null, accessibilityHint: null, value: null, onValueChange: null, label: null };
   obj = { IconComponent: null, source: null };
-  obj[0] = require(14676) /* WrenchIcon */.WrenchIcon;
-  obj[1] = importDefault(7958);
-  obj[0] = callback(require(5379) /* TableRowIcon */.TableRowIcon, obj);
+  obj[0] = require(14746) /* WrenchIcon */.WrenchIcon;
+  obj[1] = importDefault(8018);
+  obj[0] = callback(require(5380) /* TableRowIcon */.TableRowIcon, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["qv5/SP"]);
   obj[2] = stateFromStores;
   obj[3] = callback;
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl2.string(require(1236) /* getSystemLocale */.t["qv5/SP"]);
-  return callback(require(5708) /* TableSwitchRow */.TableSwitchRow, obj);
+  return callback(require(5768) /* TableSwitchRow */.TableSwitchRow, obj);
 }
 let c3 = importAllResult;
 ({ AnalyticsSections: map1, Permissions: closure_14, RPC_APPLICATION_LOGGING_CATEGORY: closure_15 } = ME);
@@ -412,7 +412,7 @@ const memoResult = importAllResult.memo(function VoicePanelSettingsOverview(guil
     const items17 = [
       tmp26Result3,
       stateFromStores1.map((user) => {
-          const obj = { user: user.user, selfStream: user.voiceState.selfStream, nick: null, channelId: null, guildId: null, showSecureFramesUI: null };
+          const obj = { user: user.user, selfStream: user.voiceState.selfStream, nick: null, channelId: null, guildId: null, showSecureFramesUI: null, showGameActivity: true };
           const nick = user.nick;
           obj[2] = nick;
           obj[3] = channelId;

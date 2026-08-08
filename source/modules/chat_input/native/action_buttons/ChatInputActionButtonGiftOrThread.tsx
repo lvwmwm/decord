@@ -1,9 +1,9 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11615
+// Function ID: 11616
 // Name: renderChatInputActionButtonGiftAndThread
-// Dependencies: [19, 17, 11302, 21, 4302, 11550, 11543, 1236, 11541, 11552, 4005, 712, 4646, 2]
+// Dependencies: [19, 17, 11368, 21, 4303, 11616, 11609, 1236, 11607, 11618, 4005, 712, 4648, 2]
 
-// Module 11549 (renderChatInputActionButtonGiftAndThread)
+// Module 11615 (renderChatInputActionButtonGiftAndThread)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { ChatInputActionType } from "TextAreaCta";
@@ -28,13 +28,13 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     const intl = onPress(1236).intl;
     obj[1] = intl.string(onPress(1236).t["4WNcpu"]);
     obj[2] = !canStartThreads;
-    obj[3] = onPress(11541).ThreadPlusIcon;
+    obj[3] = onPress(11607).ThreadPlusIcon;
     obj[4] = function onPress(arg0) {
       return onPress(arg0, outer1_5.THREAD);
     };
     obj[5] = styleButton;
-    let tmpResult = tmp(tmp2(11543), obj);
-    const tmp2Result = tmp2(11543);
+    let tmpResult = tmp(tmp2(11609), obj);
+    const tmp2Result = tmp2(11609);
   } else {
     obj = { accessible: null, channel: null, onPress: null, style: null, styleButton: null };
     obj[0] = accessible;
@@ -42,10 +42,10 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     obj[2] = onPress;
     obj[3] = styleButtonWrapper;
     obj[4] = styleButton;
-    tmpResult = tmp(tmp2(11552), obj);
+    tmpResult = tmp(tmp2(11618), obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(11550), { cleanup, state, children: null }, arg0);
+  return jsx(importDefault(11616), { cleanup, state, children: null }, arg0);
 }
 function getChatInputActionButtonGiftAndThreadKey(shouldShowThread) {
   let str = "gift";
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo(function ChatInputActionButtonGiftOrThre
     return items;
   }, items);
   obj = { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey };
-  obj[1] = jsx(_require(4646).TransitionGroup, { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey });
+  obj[1] = jsx(_require(4648).TransitionGroup, { items: memo, renderItem: renderChatInputActionButtonGiftAndThread, getItemKey: getChatInputActionButtonGiftAndThreadKey });
   return <View items={memo} renderItem={renderChatInputActionButtonGiftAndThread} getItemKey={getChatInputActionButtonGiftAndThreadKey} />;
 });
 const result = require("TextAreaCta").fileFinishedImporting("modules/chat_input/native/action_buttons/ChatInputActionButtonGiftOrThread.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11692
+// Function ID: 11693
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: [5, 19, 21, 11621, 4641, 11627, 1988, 2]
+// Dependencies: [5, 19, 21, 11687, 4643, 11693, 1988, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 11626 (_onAddDirectoryGuildEntry)
+// Module 11692 (_onAddDirectoryGuildEntry)
 import GuildDirectoryAddAlert from "GuildDirectoryAddAlert";
 import "noop";
 import { jsx } from "jsxProd";
@@ -34,7 +34,7 @@ function _onAddDirectoryGuildEntry() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ function _onAddDirectoryGuildEntry() {
               ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = c0);
               dependencyMap = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -72,7 +72,7 @@ function _onAddDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj3 = lib(11621);
+              let obj3 = lib(11687);
               dependencyMap = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };
@@ -89,7 +89,7 @@ function _onAddDirectoryGuildEntry() {
             return obj3;
           } else {
             callback2();
-            obj = callback(4641);
+            obj = callback(4643);
             const obj4 = { importer: null };
             obj4[0] = function importer() {
               return _undefined(paths[6])(paths[5], paths.paths).then((arg0) => {
@@ -99,7 +99,7 @@ function _onAddDirectoryGuildEntry() {
             };
             obj.openLazy(obj4);
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = tmp;

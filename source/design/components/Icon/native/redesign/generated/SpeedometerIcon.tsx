@@ -1,10 +1,10 @@
-// Module ID: 10766
-// Function ID: 10767
+// Module ID: 10832
+// Function ID: 10833
 // Name: SpeedometerIcon
-// Dependencies: [19, 21, 712, 4004, 10767, 2]
+// Dependencies: [19, 21, 712, 4004, 10833, 2]
 // Exports: SpeedometerIcon
 
-// Module 10766 (SpeedometerIcon)
+// Module 10832 (SpeedometerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const SpeedometerIcon = function SpeedometerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10767) /* registerAsset */;
+  obj[0] = require(10833) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

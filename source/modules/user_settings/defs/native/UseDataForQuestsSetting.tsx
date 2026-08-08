@@ -1,9 +1,9 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14873
+// Function ID: 14874
 // Name: toggle
-// Dependencies: [8022, 14804, 13999, 3974, 10380, 1236, 2]
+// Dependencies: [8082, 14874, 14069, 3974, 10446, 1236, 2]
 
-// Module 14803 (toggle)
+// Module 14873 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -21,8 +21,8 @@ const toggle = createToggle.createToggle({
     DropsOptedOut.updateSetting(!arg0);
   },
   useIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14804) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const obj = require(14804) /* useAdPersonalizationTogglesDisabled */;
+    let adPersonalizationTogglesDisabled = require(14874) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    const obj = require(14874) /* useAdPersonalizationTogglesDisabled */;
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = obj2.useIsParentallyControlled();
     }
@@ -44,8 +44,8 @@ let obj = {
     DropsOptedOut.updateSetting(!arg0);
   },
   useIsDisabled() {
-    let adPersonalizationTogglesDisabled = require(14804) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
-    const obj = require(14804) /* useAdPersonalizationTogglesDisabled */;
+    let adPersonalizationTogglesDisabled = require(14874) /* useAdPersonalizationTogglesDisabled */.useAdPersonalizationTogglesDisabled();
+    const obj = require(14874) /* useAdPersonalizationTogglesDisabled */;
     if (!adPersonalizationTogglesDisabled) {
       adPersonalizationTogglesDisabled = obj2.useIsParentallyControlled();
     }

@@ -1,10 +1,10 @@
-// Module ID: 14719
-// Function ID: 14720
+// Module ID: 14789
+// Function ID: 14790
 // Name: DemoModal
-// Dependencies: [5, 19, 17, 21, 4645, 4642, 4302, 4712, 2]
+// Dependencies: [5, 19, 17, 21, 4647, 4644, 4303, 4714, 2]
 // Exports: default
 
-// Module 14719 (DemoModal)
+// Module 14789 (DemoModal)
 import useAlertStore from "useAlertStore";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -27,7 +27,7 @@ function DemoModal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -59,7 +59,7 @@ function DemoModal() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c0 = tmp;
@@ -68,12 +68,12 @@ function DemoModal() {
     }
   }), []);
   let obj = { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null };
-  const items = [jsx(require(4645) /* getAlertModalItemKey */.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), jsx(require(4645) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel")];
+  const items = [jsx(require(4647) /* getAlertModalItemKey */.AlertActionButton, { variant: "destructive", onPress: callback, text: "Clear" }, "clear"), jsx(require(4647) /* getAlertModalItemKey */.AlertActionButton, { variant: "secondary", onPress: callback, text: "Cancel" }, "cancel")];
   obj[2] = items;
-  return jsx(require(4645) /* getAlertModalItemKey */.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
+  return jsx(require(4647) /* getAlertModalItemKey */.AlertModal, { title: "Are you sure?", content: "This will clear 3 incoming friend requests. The users who sent them won\u2019t be informed.", actions: null });
 }
 function openDemoModal() {
-  require(4642) /* useAlertStore */.openAlert("demo-1", <DemoModal />);
+  require(4644) /* useAlertStore */.openAlert("demo-1", <DemoModal />);
 }
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
 let closure_9 = createCacheKey.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
@@ -81,7 +81,7 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/u
 
 export default function UserSettingsDesignSystemAlertModal() {
   let obj = { children: null };
-  obj = { style: callback2().container, children: jsx(require(4712) /* Button */.Button, { children: null }) };
+  obj = { style: callback2().container, children: jsx(require(4714) /* Button */.Button, { children: null }) };
   obj = { onPress: openDemoModal, text: "Show Alert" };
   obj[0] = <closure_4 onPress={openDemoModal} text="Show Alert" />;
   return <closure_5 onPress={openDemoModal} text="Show Alert" />;

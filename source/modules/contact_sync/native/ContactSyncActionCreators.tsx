@@ -1,9 +1,9 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 12038
+// Function ID: 12039
 // Name: _updateDiscoverability
-// Dependencies: [5, 4996, 676, 3974, 1384, 698, 11968, 5122, 2]
+// Dependencies: [5, 4998, 676, 3974, 1384, 698, 12034, 5123, 2]
 
-// Module 11972 (_updateDiscoverability)
+// Module 12038 (_updateDiscoverability)
 import importDefaultResult from "expandEventProperties";
 import set from "set";
 import ME from "ME";
@@ -30,7 +30,7 @@ function _updateDiscoverability() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -102,11 +102,11 @@ function _updateDiscoverability() {
               dependencyMap = obj1.hasFlag(dependencyMap, constants2.FIND_BY_EMAIL);
             }
             obj3[2] = dependencyMap;
-            obj2 = phone(11968);
+            obj2 = phone(12034);
             obj3[3] = obj2.isContactSyncEnabled(localAccount.getLocalAccount(constants3.CONTACTS));
             callback2(698).track(constants.USER_DISCOVERY_UPDATED, obj3);
             constants2 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp39) {
           constants2 = tmp;
@@ -142,7 +142,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ closure_0 = importDefaultResult((arg0) => {
             obj[1] = num4;
             outer1_1(outer1_2[5]).track(outer1_5.NAME_SUBMITTED, obj);
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp18) {
@@ -218,7 +218,7 @@ closure_0 = importDefaultResult((arg0, arg1) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

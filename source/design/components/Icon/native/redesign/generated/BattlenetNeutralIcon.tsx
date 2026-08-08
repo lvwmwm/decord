@@ -1,10 +1,10 @@
-// Module ID: 9232
-// Function ID: 9233
+// Module ID: 9297
+// Function ID: 9298
 // Name: BattlenetNeutralIcon
-// Dependencies: [19, 21, 712, 4004, 9233, 2]
+// Dependencies: [19, 21, 712, 4004, 9298, 2]
 // Exports: BattlenetNeutralIcon
 
-// Module 9232 (BattlenetNeutralIcon)
+// Module 9297 (BattlenetNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BattlenetNeutralIcon = function BattlenetNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(9233) /* registerAsset */;
+  obj[0] = require(9298) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

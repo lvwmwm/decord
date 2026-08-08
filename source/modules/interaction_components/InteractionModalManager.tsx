@@ -1,9 +1,9 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16458
+// Function ID: 16459
 // Name: _handleInteractionModalCreate
-// Dependencies: [5, 4339, 7989, 676, 1935, 16382, 1988, 698, 1895, 1208, 16393, 16396, 5260, 2]
+// Dependencies: [5, 4341, 8049, 676, 1935, 16459, 1988, 698, 1895, 1208, 16470, 16473, 5261, 2]
 
-// Module 16381 (_handleInteractionModalCreate)
+// Module 16458 (_handleInteractionModalCreate)
 import onClose from "onClose";
 import addApplication from "addApplication";
 import deleteNonce from "deleteNonce";
@@ -29,7 +29,7 @@ function _handleInteractionModalCreate() {
           obj[0] = openInteractionModal;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -117,7 +117,7 @@ function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj4);
             }
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           c4 = tmp;

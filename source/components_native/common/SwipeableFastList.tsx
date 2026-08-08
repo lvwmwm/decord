@@ -1,9 +1,9 @@
-// Module ID: 12462
-// Function ID: 12463
+// Module ID: 12529
+// Function ID: 12530
 // Name: componentWillUnmount
-// Dependencies: [19, 21, 5499, 7948, 2]
+// Dependencies: [19, 21, 12530, 8008, 2]
 
-// Module 12462 (componentWillUnmount)
+// Module 12529 (componentWillUnmount)
 import { jsx } from "jsxProd";
 import { Component } from "noop";
 import importAllResult from "noop";
@@ -27,7 +27,7 @@ class SwipeableFastList extends Component {
         c4 = true;
       }
       const obj = {
-        renderRightActions(showRightAction, transX, self) {
+        renderRightActions() {
           return renderQuickActions(closure_0, closure_1);
         },
         ref(arg0) {
@@ -42,16 +42,15 @@ class SwipeableFastList extends Component {
           }
         },
         overshootFriction: 8,
-        onSwipeableWillOpen(right) {
+        onSwipeableWillOpen(View, arg1) {
           return closure_0.handleOpen(closure_3);
         },
-        onSwipeableClose(arg0, closure_0) {
+        onSwipeableClose() {
           return closure_0.handleClose(closure_3);
         },
-        useNativeAnimations: true,
         children: null
       };
-      obj[6] = props.renderItem(arg0, arg1, arg2);
+      obj[5] = props.renderItem(arg0, arg1, arg2);
       return outer1_2(arg0(outer1_1[2]), obj);
     };
     applyArgumentsResult.handleScroll = function handleScroll(arg0) {
@@ -109,7 +108,7 @@ prototype["render"] = function render() {
   const obj = {};
   const merged = Object.assign(this.props);
   ({ handleScroll: obj.onScroll, renderRow: obj.renderItem } = this);
-  return jsx(importDefault(7948), {});
+  return jsx(importDefault(8008), {});
 };
 SwipeableFastList.defaultProps = {
   bounceFirstRowOnMount: true,
@@ -117,6 +116,6 @@ SwipeableFastList.defaultProps = {
     return null;
   }
 };
-const result = require("_isNativeReflectConstruct").fileFinishedImporting("components_native/common/SwipeableFastList.tsx");
+const result = require("SwipeDirection").fileFinishedImporting("components_native/common/SwipeableFastList.tsx");
 
 export default SwipeableFastList;

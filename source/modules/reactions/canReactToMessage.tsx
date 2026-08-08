@@ -1,10 +1,10 @@
-// Module ID: 8018
-// Function ID: 8019
+// Module ID: 8078
+// Function ID: 8079
 // Name: canReactToMessageInternal
-// Dependencies: [1971, 5130, 3929, 1903, 676, 1384, 3918, 589, 2]
+// Dependencies: [1971, 5131, 3929, 1903, 676, 1384, 3918, 589, 2]
 // Exports: canReactToMessage, useCanReactToMessage
 
-// Module 8018 (canReactToMessageInternal)
+// Module 8078 (canReactToMessageInternal)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import recomputeGuild from "recomputeGuild";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

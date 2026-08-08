@@ -1,10 +1,10 @@
-// Module ID: 8600
-// Function ID: 8601
+// Module ID: 8660
+// Function ID: 8661
 // Name: retryMeasurements
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 8600 (retryMeasurements)
+// Module 8660 (retryMeasurements)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function retryMeasurements() {
@@ -33,7 +33,7 @@ function _retryMeasurements() {
       if (num10 === undefined) {
         num10 = 0;
       }
-      yield "PX_8";
+      yield "ct";
       if (num10 > 3) {
         return callback2();
       }

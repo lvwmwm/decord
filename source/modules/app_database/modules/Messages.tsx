@@ -1,10 +1,10 @@
-// Module ID: 6876
-// Function ID: 6877
+// Module ID: 6936
+// Function ID: 6937
 // Name: computeUsersAndMembers
-// Dependencies: [5, 32, 4992, 1372, 6877, 3, 4991, 1936, 6883, 6886, 1937, 2]
+// Dependencies: [5, 32, 4994, 1372, 6937, 3, 4993, 1936, 6943, 6946, 1937, 2]
 // Exports: isLikelyNotDelta
 
-// Module 6876 (computeUsersAndMembers)
+// Module 6936 (computeUsersAndMembers)
 import timestamp from "timestamp";
 import _slicedToArray from "_slicedToArray";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -44,7 +44,7 @@ prototype = function ChannelHistory(arr) {
 }.prototype;
 prototype["computeUsersAndMembers"] = function computeUsersAndMembers(arr) {
   const self = this;
-  obj = obj(4991);
+  obj = obj(4993);
   const result = obj.requireSortedDescending(arr);
   const map = new Map();
   const map1 = new Map();
@@ -147,7 +147,7 @@ prototype2["load"] = function load(arg0, arg1, arg2) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -213,7 +213,7 @@ prototype2["handleMessageCreate"] = function handleMessageCreate(optimistic, dat
     tmp = null != optimistic.sendMessageOptions;
   }
   if (!tmp) {
-    obj = obj(6883);
+    obj = obj(6943);
     if (obj.isReadableChannelId(optimistic.channelId)) {
       const self = this;
       const self2 = this;
@@ -224,7 +224,7 @@ prototype2["handleMessageCreate"] = function handleMessageCreate(optimistic, dat
 prototype2["handleMessageUpdate"] = function handleMessageUpdate(message, database) {
   let isReadableChannelIdResult = null != message.message.id && null != message.message.channel_id;
   if (isReadableChannelIdResult) {
-    obj = obj(6883);
+    obj = obj(6943);
     isReadableChannelIdResult = obj.isReadableChannelId(message.message.channel_id);
   }
   if (isReadableChannelIdResult) {
@@ -244,7 +244,7 @@ prototype2["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded
     let tmp2 = item10009;
     let tmp3 = obj;
     let tmp4 = dependencyMap;
-    let obj = obj(6883);
+    let obj = obj(6943);
     if (obj.isReadableChannelId(item10009.channel_id)) {
       let tmp5 = item10009;
       let tmp6 = self;
@@ -258,7 +258,7 @@ prototype2["handleMessagePreviewsLoaded"] = function handleMessagePreviewsLoaded
 prototype2["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(channelId, database) {
   basicChannel = basicChannel.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
-    obj = obj(6883);
+    obj = obj(6943);
     if (obj.isReadableChannelId(channelId.channelId)) {
       const self = this;
       if (!channelId.isAfter) {
@@ -306,7 +306,7 @@ prototype2["resetInMemoryState"] = function resetInMemoryState() {
 prototype2["insertStale"] = function insertStale(guildId, channel_id, item10009, database) {
   const obj = importDefault(1936);
   const result = _handleConnectionOpen.lastTimeConnectedChanged();
-  const KvMessage = obj(6886).KvMessage;
+  const KvMessage = obj(6946).KvMessage;
   const messagesTransactionResult = obj.messagesTransaction(database);
   messagesTransactionResult.put(guildId, channel_id, KvMessage.fromMessage(guildId, channel_id, item10009, result), obj(1937).ConflictOptions.Skip);
 };
@@ -314,7 +314,7 @@ prototype2["upsertOne"] = function upsertOne(guildId, channelId, message, databa
   const obj = importDefault(1936);
   const messagesTransactionResult = obj.messagesTransaction(database);
   const result = _handleConnectionOpen.lastTimeConnectedChanged();
-  const KvMessage = obj(6886).KvMessage;
+  const KvMessage = obj(6946).KvMessage;
   messagesTransactionResult.put(guildId, channelId, KvMessage.fromMessage(guildId, channelId, message, result), obj(1937).ConflictOptions.Replace);
   messagesTransactionResult.trimChannel(guildId, channelId, handleSelectedChannelStoreChanged.saveLimit(channelId));
 };
@@ -327,7 +327,7 @@ prototype2["upsertMany"] = function upsertMany(guild_id, channelId, messages, da
   while (iter !== undefined) {
     let tmp3 = obj;
     let tmp4 = dependencyMap;
-    let KvMessage = obj(6886).KvMessage;
+    let KvMessage = obj(6946).KvMessage;
     let tmp5 = KvMessage;
     let tmp6 = guild_id;
     let tmp7 = channelId;
@@ -371,7 +371,7 @@ prototype2["updateOne"] = function updateOne(guildId, channel_id, message, datab
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,9 +1,9 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16374
+// Function ID: 16375
 // Name: _initialize
-// Dependencies: [4322, 4349, 4373, 4994, 5136, 4374, 676, 687, 5260, 4187, 4496, 15736, 4472, 2]
+// Dependencies: [4323, 4351, 4375, 4996, 5137, 4376, 676, 687, 5261, 4188, 4498, 15811, 4474, 2]
 
-// Module 16297 (_initialize)
+// Module 16374 (_initialize)
 import initialize from "initialize";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
@@ -80,7 +80,7 @@ prototype["_trackStartSpeaking"] = function _trackStartSpeaking() {
   if (this._currentUserSpeaking) {
     const channelId = store.getChannelId();
     const guildId = store.getGuildId();
-    let obj = require(4496) /* collectGuildAnalyticsMetadata */;
+    let obj = require(4498) /* collectGuildAnalyticsMetadata */;
     obj = { mode: null, priority: null, channel: null, server: null, channel_id: null, guild_id: null, rtc_connection_id: null, media_session_id: null, voice_state_count: null };
     obj[0] = _detectH265HardwareDecode.getMode();
     obj[1] = anyoneHasFlagInContext.isCurrentUserPrioritySpeaking();
@@ -114,8 +114,8 @@ prototype["_trackStartListening"] = function _trackStartListening() {
       obj[7] = store.getMediaSessionId();
       obj[8] = getVoiceStatesForGuild.countVoiceStatesForChannel(self._voiceChannelId);
       const merged = Object.assign(self.getGameMetadata());
-      require(4496) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.START_LISTENING, obj);
-      const obj2 = require(4496) /* collectGuildAnalyticsMetadata */;
+      require(4498) /* collectGuildAnalyticsMetadata */.trackWithMetadata(constants.START_LISTENING, obj);
+      const obj2 = require(4498) /* collectGuildAnalyticsMetadata */;
     }
   }
 };
@@ -127,7 +127,7 @@ prototype["_terminate"] = function _terminate() {
 prototype["getGameMetadata"] = function getGameMetadata() {
   const findActivityResult = filterPlayingActivities.findActivity((type) => type.type === constants.PLAYING);
   currentGameForAnalytics = currentGameForAnalytics.getCurrentGameForAnalytics();
-  const obj = { game_platform: importDefault(15736)(findActivityResult), game_name: null, game_exe_name: null, game_id: null, game_distributor: null, game_distributor_game_id: null, game_metadata: null };
+  const obj = { game_platform: importDefault(15811)(findActivityResult), game_name: null, game_exe_name: null, game_id: null, game_distributor: null, game_distributor_game_id: null, game_metadata: null };
   let name = null;
   if (null != findActivityResult) {
     name = findActivityResult.name;
@@ -155,8 +155,8 @@ prototype["getGameMetadata"] = function getGameMetadata() {
   obj[5] = sku;
   let subgameMetadata = null;
   if (null != currentGameForAnalytics) {
-    subgameMetadata = require(4472) /* _openRobloxURLWithRootPlaceId */.getSubgameMetadata(currentGameForAnalytics);
-    const obj2 = require(4472) /* _openRobloxURLWithRootPlaceId */;
+    subgameMetadata = require(4474) /* _openRobloxURLWithRootPlaceId */.getSubgameMetadata(currentGameForAnalytics);
+    const obj2 = require(4474) /* _openRobloxURLWithRootPlaceId */;
   }
   obj[6] = subgameMetadata;
   return obj;

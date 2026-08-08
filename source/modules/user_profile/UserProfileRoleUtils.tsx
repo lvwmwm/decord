@@ -1,10 +1,10 @@
-// Module ID: 5714
-// Function ID: 5715
+// Module ID: 5774
+// Function ID: 5775
 // Name: sortRolesByVerification
 // Dependencies: [1968, 2]
 // Exports: sortRolesByVerification
 
-// Module 5714 (sortRolesByVerification)
+// Module 5774 (sortRolesByVerification)
 const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");
 
 export const sortRolesByVerification = function sortRolesByVerification(tags, tags2) {

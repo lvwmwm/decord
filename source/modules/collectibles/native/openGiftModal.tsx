@@ -1,10 +1,10 @@
-// Module ID: 9511
-// Function ID: 9512
+// Module ID: 9576
+// Function ID: 9577
 // Name: ShopGiftModalKey
-// Dependencies: [4507, 9512, 1988, 2]
+// Dependencies: [4509, 9577, 1988, 2]
 // Exports: closeShopGiftModal, openShopGiftModal
 
-// Module 9511 (ShopGiftModalKey)
+// Module 9576 (ShopGiftModalKey)
 let c3 = "Shop Gift Modal";
 const result = require("asyncRequireImpl").fileFinishedImporting("modules/collectibles/native/openGiftModal.tsx");
 
@@ -17,10 +17,10 @@ export const openShopGiftModal = function openShopGiftModal(arg0) {
   let onGiftModalDismiss;
   let skuId;
   ({ navigationParams, skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin } = arg0);
-  let obj = importDefault(4507);
+  let obj = importDefault(4509);
   obj = { skuId, analyticsLocations, lockedRecipientUser, onGiftModalDismiss, giftingOrigin };
-  obj.pushLazy(require(1988) /* asyncRequireImpl */(9512, dependencyMap.paths), obj, c3, navigationParams);
+  obj.pushLazy(require(1988) /* asyncRequireImpl */(9577, dependencyMap.paths), obj, c3, navigationParams);
 };
 export const closeShopGiftModal = function closeShopGiftModal() {
-  importDefault(4507).popWithKey(c3);
+  importDefault(4509).popWithKey(c3);
 };

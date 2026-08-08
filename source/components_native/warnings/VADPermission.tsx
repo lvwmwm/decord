@@ -1,9 +1,9 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15985
+// Function ID: 15986
 // Name: render
-// Dependencies: [19, 21, 15907, 4730, 1236, 2]
+// Dependencies: [19, 21, 15982, 4732, 1236, 2]
 
-// Module 15910 (render)
+// Module 15985 (render)
 import { jsx } from "jsxProd";
 import { Component } from "noop";
 import importAllResult from "noop";
@@ -25,7 +25,7 @@ VADPermission.prototype["render"] = function render() {
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.EJ26Oh);
   obj[2] = this.close;
-  return jsx(importDefault(4730), { title: null, body: null, onConfirm: null });
+  return jsx(importDefault(4732), { title: null, body: null, onConfirm: null });
 };
 const result = require("dispatcher").fileFinishedImporting("components_native/warnings/VADPermission.tsx");
 

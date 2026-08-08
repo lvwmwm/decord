@@ -1,9 +1,9 @@
-// Module ID: 4469
-// Function ID: 4470
+// Module ID: 4471
+// Function ID: 4472
 // Name: Video
-// Dependencies: [4362, 4401, 4398, 2]
+// Dependencies: [4364, 4403, 4400, 2]
 
-// Module 4469 (Video)
+// Module 4471 (Video)
 import DesktopSources from "DesktopSources";
 import "on";
 
@@ -28,7 +28,7 @@ class MediaEngineDummy extends tmp3 {
 }
 const prototype = MediaEngineDummy.prototype;
 prototype["destroy"] = function destroy() {
-  this.emit(require(4398) /* BaseConnectionEvent */.MediaEngineEvent.Destroy);
+  this.emit(require(4400) /* BaseConnectionEvent */.MediaEngineEvent.Destroy);
   this.removeAllListeners();
 };
 prototype["interact"] = function interact() {

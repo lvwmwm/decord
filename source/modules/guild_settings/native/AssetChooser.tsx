@@ -1,9 +1,9 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 16609
+// Function ID: 16610
 // Name: getSource
-// Dependencies: [5, 19, 17, 676, 21, 4302, 712, 4013, 4858, 4844, 1236, 16533, 16534, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4303, 712, 4013, 4860, 4846, 1236, 16610, 16611, 1297, 2]
 
-// Module 16532 (getSource)
+// Module 16609 (getSource)
 import closure_3 from "createCacheKey";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { UPLOAD_MEDIUM_SIZE } from "ME";
@@ -48,7 +48,7 @@ class AssetChooser extends PureComponent {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c3 = tmp;
@@ -142,7 +142,7 @@ prototype["render"] = function render() {
   obj[4] = disabled;
   let tmp9 = source;
   if (null == source) {
-    tmp9 = importDefault(16533);
+    tmp9 = importDefault(16610);
   }
   obj = { source: tmp9, style: tmp.asset, children: null };
   let tmp5Result = null;
@@ -151,13 +151,13 @@ prototype["render"] = function render() {
     obj[0] = tmp.uploadIconWrapper;
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.uploadIcon;
-    obj1[1] = importDefault(16534);
+    obj1[1] = importDefault(16611);
     obj[1] = tmp5(closure_5, obj1);
     tmp5Result = tmp5(closure_4, obj);
   }
   obj[2] = tmp5Result;
   obj[5] = closure_9(closure_6, obj);
-  const children = [closure_9(require(4844) /* PressableBase */.PressableOpacity, obj), ];
+  const children = [closure_9(require(4846) /* PressableBase */.PressableOpacity, obj), ];
   tmp5Result = null;
   if (null != source) {
     tmp5Result = null;

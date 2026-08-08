@@ -1,10 +1,10 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12343
+// Function ID: 12344
 // Name: RibbonIcon
-// Dependencies: [19, 21, 712, 4004, 12277, 2]
+// Dependencies: [19, 21, 712, 4004, 12344, 2]
 // Exports: RibbonIcon
 
-// Module 12276 (RibbonIcon)
+// Module 12343 (RibbonIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const RibbonIcon = function RibbonIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12277) /* registerAsset */;
+  obj[0] = require(12344) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

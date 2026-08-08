@@ -1,14 +1,12 @@
 // Module ID: 7886
 // Function ID: 7887
 // Name: __INTERNAL_VIEW_CONFIG
-// Dependencies: [26, 65]
+// Dependencies: [65]
 
 // Module 7886 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
-let obj = { uiViewClassName: "RNSVGSvgView", validAttributes: null };
-obj = { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: require("result").colorAttribute, pointerEvents: true, hitSlop: true };
-obj[1] = obj;
+const obj = { uiViewClassName: "RNSVGFeGaussianBlur", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, stdDeviationX: true, stdDeviationY: true, edgeMode: true } };
 
-export default setRuntimeConfigProvider.get("RNSVGSvgView", () => obj);
+export default setRuntimeConfigProvider.get("RNSVGFeGaussianBlur", () => obj);
 export const __INTERNAL_VIEW_CONFIG = obj;

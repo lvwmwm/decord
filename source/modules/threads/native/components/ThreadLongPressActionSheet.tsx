@@ -1,10 +1,10 @@
-// Module ID: 15170
-// Function ID: 15171
+// Module ID: 15240
+// Function ID: 15241
 // Name: ThreadLongPressActionSheetConnected
-// Dependencies: [19, 1372, 1891, 4318, 3931, 676, 21, 1236, 8437, 5252, 9643, 4244, 7164, 9655, 8338, 4266, 4256, 9836, 4821, 9607, 7956, 4246, 9659, 9665, 4270, 9752, 1988, 9076, 9667, 10127, 589, 5829, 12, 8351, 4492, 3974, 10129, 5719, 1297, 5704, 10130, 5706, 9481, 5696, 4001, 2]
+// Dependencies: [19, 1372, 1891, 4319, 3931, 676, 21, 1236, 8497, 5253, 9708, 4245, 7224, 9720, 8398, 4267, 4257, 9902, 4823, 9672, 8016, 4247, 9724, 9730, 4271, 9818, 1988, 9136, 9732, 10193, 589, 5889, 12, 8411, 4494, 3974, 10195, 5779, 1297, 5764, 10196, 5766, 9546, 5756, 4001, 2]
 // Exports: default
 
-// Module 15170 (ThreadLongPressActionSheetConnected)
+// Module 15240 (ThreadLongPressActionSheetConnected)
 import PencilIcon from "PencilIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -37,13 +37,13 @@ function ThreadLongPressActionSheetConnected(channel) {
   const items1 = [storeThread];
   const stateFromStoresObject = obj1.useStateFromStoresObject(items1, () => ({ isMuted: outer1_7.isMuted(channel.id), hasJoined: outer1_7.hasJoined(channel.id) }));
   ({ isMuted, hasJoined } = stateFromStoresObject);
-  let obj2 = channel(5829);
+  let obj2 = channel(5889);
   const canManageThread = obj2.useCanManageThread(channel);
-  let obj3 = channel(5829);
+  let obj3 = channel(5889);
   const isThreadModerator = obj3.useIsThreadModerator(channel);
-  let obj4 = channel(5829);
+  let obj4 = channel(5889);
   const canUnarchiveThread = obj4.useCanUnarchiveThread(channel);
-  let obj5 = channel(5829);
+  let obj5 = channel(5889);
   const canJoinThreadVoice = obj5.useCanJoinThreadVoice(channel);
   let obj6 = channel(589);
   const items2 = [updateVoiceState];
@@ -51,17 +51,17 @@ function ThreadLongPressActionSheetConnected(channel) {
   let obj7 = channel(589);
   const items3 = [updateVoiceState];
   const stateFromStores2 = obj7.useStateFromStores(items3, () => !isMuted(paths[32]).isEmpty(outer1_6.getVoiceStatesForChannel(channel.id)));
-  const tmp12 = isMuted(8351)(channel);
+  const tmp12 = isMuted(8411)(channel);
   const DeveloperMode = channel(3974).DeveloperMode;
   setting = DeveloperMode.useSetting();
-  const tmp13 = isMuted(4492)(channel, true);
+  const tmp13 = isMuted(4494)(channel, true);
   if (null != stateFromStores) {
     obj = { guild: null, size: null };
     obj[0] = stateFromStores;
-    obj[1] = tmp(5719).GuildIconSizes.LARGE;
-    let tmp17 = callback(tmp11(5719), obj);
+    obj[1] = tmp(5779).GuildIconSizes.LARGE;
+    let tmp17 = callback(tmp11(5779), obj);
     let tmp16 = callback;
-    const tmp11Result = tmp11(5719);
+    const tmp11Result = tmp11(5779);
   } else {
     tmp16 = callback;
     obj = { size: null, channel: null };
@@ -82,7 +82,7 @@ function ThreadLongPressActionSheetConnected(channel) {
   obj2 = { label: null, IconComponent: null, onPress: null };
   const intl = tmp(1236).intl;
   obj2[0] = intl.string(channel(1236).t.e6RscS);
-  obj2[1] = channel(8437).EyeIcon;
+  obj2[1] = channel(8497).EyeIcon;
   obj2[2] = function onPress() {
     let obj = channel(paths[9]);
     obj = { section: outer1_10.THREAD_ACTION_SHEET, object: outer1_9.MARK_THREAD_AS_READ_BUTTON, objectType: outer1_8.ACK_MANUAL };
@@ -91,7 +91,7 @@ function ThreadLongPressActionSheetConnected(channel) {
   const items5 = [obj2];
   obj1[1] = items5;
   items4.push(obj1);
-  const tmp23 = isMuted(9643)(isMuted(10129)(channel, "ThreadLongPressActionSheet"));
+  const tmp23 = isMuted(9708)(isMuted(10195)(channel, "ThreadLongPressActionSheet"));
   if (null != tmp23) {
     obj3 = { sectionKey: "favorites", buttons: null };
     const items6 = [tmp23];
@@ -112,7 +112,7 @@ function ThreadLongPressActionSheetConnected(channel) {
     }
     obj5 = { label: null, IconComponent: null, isDestructive: true, onPress: null };
     obj5[0] = string2Result;
-    obj5[1] = tmp(4244).UserMinusIcon;
+    obj5[1] = tmp(4245).UserMinusIcon;
     obj5[3] = function onPress() {
       isMuted(paths[12]).leaveThread(channel, "Context Menu");
     };
@@ -128,7 +128,7 @@ function ThreadLongPressActionSheetConnected(channel) {
     }
     obj6 = { label: null, IconComponent: null, onPress: null };
     obj6[0] = stringResult;
-    obj6[1] = tmp(9655).GroupPlusIcon;
+    obj6[1] = tmp(9720).GroupPlusIcon;
     obj6[2] = function onPress() {
       isMuted(paths[12]).joinThread(channel, "Context Menu");
     };
@@ -152,7 +152,7 @@ function ThreadLongPressActionSheetConnected(channel) {
           }
           obj7 = { label: null, IconComponent: null, onPress: null };
           obj7[0] = string5Result;
-          obj7[1] = tmp(4266).ClockIcon;
+          obj7[1] = tmp(4267).ClockIcon;
           obj7[2] = function onPress() {
             isMuted(paths[12]).unarchiveThread(channel, false);
           };
@@ -170,7 +170,7 @@ function ThreadLongPressActionSheetConnected(channel) {
         }
         const obj8 = { label: null, IconComponent: null, onPress: null };
         obj8[0] = string4Result;
-        obj8[1] = tmp(4256).XLargeIcon;
+        obj8[1] = tmp(4257).XLargeIcon;
         obj8[2] = function onPress() {
           isMuted(paths[12]).archiveThread(channel, false);
         };
@@ -191,7 +191,7 @@ function ThreadLongPressActionSheetConnected(channel) {
             string6Result = string6(_OKSxp["jeyb/W"]);
           }
           obj9[0] = string6Result;
-          obj9[1] = tmp(9836).LockUnlockedIcon;
+          obj9[1] = tmp(9902).LockUnlockedIcon;
           obj9[2] = function onPress() {
             isMuted(paths[12]).unlockThread(channel);
           };
@@ -203,7 +203,7 @@ function ThreadLongPressActionSheetConnected(channel) {
             string6Result1 = string6(_OKSxp.HoCqm8);
           }
           obj9[0] = string6Result1;
-          obj9[1] = tmp(4821).LockIcon;
+          obj9[1] = tmp(4823).LockIcon;
           obj9[2] = function onPress() {
             isMuted(paths[12]).lockThread(channel);
           };
@@ -216,7 +216,7 @@ function ThreadLongPressActionSheetConnected(channel) {
         const obj10 = { label: null, IconComponent: null, isDestructive: false, onPress: null };
         const intl9 = tmp(1236).intl;
         obj10[0] = intl9.string(tmp(1236).t.WqhZss);
-        obj10[1] = tmp(4246).LinkIcon;
+        obj10[1] = tmp(4247).LinkIcon;
         obj10[3] = function onPress() {
           const result = channel(paths[22]).copyGuildChannelOrThreadLink(channel.guild_id, channel.id);
         };
@@ -236,7 +236,7 @@ function ThreadLongPressActionSheetConnected(channel) {
             string8Result = string8(_0JQfsP["Cq/TzF"]);
           }
           obj12[0] = string8Result;
-          obj12[1] = tmp(9076).BellIcon;
+          obj12[1] = tmp(9136).BellIcon;
           obj12[2] = function onPress() {
             let obj = isMuted(paths[12]);
             obj = { muted: !isMuted };
@@ -250,7 +250,7 @@ function ThreadLongPressActionSheetConnected(channel) {
             string8Result1 = string8(_0JQfsP.bUUd8q);
           }
           obj12[0] = string8Result1;
-          obj12[1] = tmp(9665).BellSlashIcon;
+          obj12[1] = tmp(9730).BellSlashIcon;
           obj12[2] = function onPress() {
             let obj = isMuted(paths[24]);
             obj = { guildId: null, channelId: null };
@@ -264,7 +264,7 @@ function ThreadLongPressActionSheetConnected(channel) {
           const obj13 = { label: null, IconComponent: null, onPress: null, disableColor: true };
           const intl11 = tmp(1236).intl;
           obj13[0] = intl11.string(tmp(1236).t.h850Ss);
-          obj13[1] = tmp(9667).ChannelNotificationIcon;
+          obj13[1] = tmp(9732).ChannelNotificationIcon;
           obj13[2] = function onPress() {
             const result = channel(paths[29]).showThreadNotificationsBottomSheet(channel);
           };
@@ -280,7 +280,7 @@ function ThreadLongPressActionSheetConnected(channel) {
           const obj15 = { title: null, icon: null };
           obj15[0] = tmp13;
           obj15[1] = tmp17;
-          obj14[0] = tmp16(tmp(10130).ActionSheetIconHeader, obj15);
+          obj14[0] = tmp16(tmp(10196).ActionSheetIconHeader, obj15);
           const items8 = [
             items4.map((buttons) => {
                       let obj = { hasIcons: true, children: null };
@@ -315,8 +315,8 @@ function ThreadLongPressActionSheetConnected(channel) {
             const obj16 = { hasIcons: true, children: null };
             const obj17 = { icon: null, label: null, onPress: null };
             const obj18 = { IconComponent: null };
-            obj18[0] = tmp(9481).IdIcon;
-            obj17[0] = tmp16(tmp(5706).ActionSheetRow.Icon, obj18);
+            obj18[0] = tmp(9546).IdIcon;
+            obj17[0] = tmp16(tmp(5766).ActionSheetRow.Icon, obj18);
             const intl12 = tmp(1236).intl;
             obj17[1] = intl12.string(tmp(1236).t.DQ797g);
             obj17[2] = function onPress() {
@@ -325,12 +325,12 @@ function ThreadLongPressActionSheetConnected(channel) {
               const obj = channel(paths[43]);
               channel(paths[44]).presentIdCopied();
             };
-            obj16[1] = tmp16(tmp(5706).ActionSheetRow, obj17);
-            setting = tmp16(tmp(5706).ActionSheetRow.Group, obj16, "developer-actions");
+            obj16[1] = tmp16(tmp(5766).ActionSheetRow, obj17);
+            setting = tmp16(tmp(5766).ActionSheetRow.Group, obj16, "developer-actions");
           }
           items8[1] = setting;
           obj14[1] = items8;
-          return closure_13(tmp(5704).ActionSheet, obj14);
+          return closure_13(tmp(5764).ActionSheet, obj14);
         }
       } else {
         const buttons7 = obj4.buttons;
@@ -344,7 +344,7 @@ function ThreadLongPressActionSheetConnected(channel) {
         }
         const obj19 = { label: null, IconComponent: null, onPress: null };
         obj19[0] = string7Result;
-        obj19[1] = tmp(9607).PencilIcon;
+        obj19[1] = tmp(9672).PencilIcon;
         obj19[2] = function onPress() {
           isMuted(paths[20]).setSection(outer1_11.OVERVIEW);
           const obj = isMuted(paths[20]);
@@ -364,7 +364,7 @@ function ThreadLongPressActionSheetConnected(channel) {
       }
       const obj20 = { label: null, IconComponent: null, onPress: null };
       obj20[0] = string3Result;
-      obj20[1] = tmp(8338).PhoneCallIcon;
+      obj20[1] = tmp(8398).PhoneCallIcon;
       obj20[2] = tmp21;
       t3 = buttons8.push(obj20);
     }

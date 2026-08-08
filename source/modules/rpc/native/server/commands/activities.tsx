@@ -1,9 +1,9 @@
-// Module ID: 13707
-// Function ID: 13708
+// Module ID: 13777
+// Function ID: 13778
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4205, 676, 4514, 8842, 13676, 10670, 9005, 13665, 4859, 4870, 10547, 4202, 2]
+// Dependencies: [5, 4206, 676, 4516, 8902, 13746, 10736, 9065, 13735, 4861, 4872, 10613, 4203, 2]
 
-// Module 13707 (RPC_LOCAL_SCOPE)
+// Module 13777 (RPC_LOCAL_SCOPE)
 import validateOpenInviteDialog from "validateOpenInviteDialog";
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -26,19 +26,19 @@ obj[RPC_SCOPE_CONFIG.ANY] = items;
 obj[0] = obj;
 obj[1] = function handler(socket) {
   socket = socket.socket;
-  let obj = require(13676) /* validateOpenInviteDialog */;
+  let obj = require(13746) /* validateOpenInviteDialog */;
   const result = obj.validateOpenInviteDialog(socket);
   if (null != result.frame) {
     obj = { errorCode: null };
     obj[0] = constants2.UNKNOWN_ERROR;
-    const tmp12 = new importDefault(10670)(obj, "Cannot support frames (yet)");
+    const tmp12 = new importDefault(10736)(obj, "Cannot support frames (yet)");
     throw tmp12;
   } else {
     obj = { source: null, targetApplicationId: null };
     obj[0] = constants.ACTIVITY_INVITE;
     const id = socket.application.id;
     obj[1] = id;
-    const result1 = tmp(9005).showInstantInviteActionSheet(tmp4, obj);
+    const result1 = tmp(9065).showInstantInviteActionSheet(tmp4, obj);
   }
   tmp = require;
 };
@@ -62,7 +62,7 @@ obj1[1] = function handler(socket) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

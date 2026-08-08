@@ -1,10 +1,10 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13326
+// Function ID: 13327
 // Name: _openActivityDMLauncher
-// Dependencies: [5, 1479, 5669, 4312, 12147, 10907, 5688, 6922, 4160, 1607, 2]
+// Dependencies: [5, 1479, 5729, 4313, 12214, 10973, 5748, 6982, 4166, 1607, 2]
 // Exports: default
 
-// Module 13256 (_openActivityDMLauncher)
+// Module 13326 (_openActivityDMLauncher)
 import _handleUsePrimaryEntryPointAppCommand from "_handleUsePrimaryEntryPointAppCommand";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 
@@ -24,8 +24,8 @@ function _openActivityDMLauncher() {
       if (flag === undefined) {
         flag = false;
       }
-      yield "PX_8";
-      yield callback2(5669).fetchApplication(callback);
+      yield "ct";
+      yield callback2(5729).fetchApplication(callback);
       if (2 === tmp5) {
         if (arg0 === 1) {
           customId = 3;
@@ -44,7 +44,7 @@ function _openActivityDMLauncher() {
           }
           if (null != bot) {
             if (null != id) {
-              let obj9 = callback2(4312);
+              let obj9 = callback2(4313);
               const obj4 = { recipientIds: null };
               obj4[0] = id;
               let c7 = 3;
@@ -67,7 +67,7 @@ function _openActivityDMLauncher() {
           return obj6;
         } else {
           c7 = customId;
-          obj6 = callback(12147);
+          obj6 = callback(12214);
           c7 = 4;
           customId = 1;
           const obj7 = { value: null, done: false };
@@ -81,7 +81,7 @@ function _openActivityDMLauncher() {
         } else if (arg0 !== 2) {
           customId = customId.customId;
           if (flag) {
-            obj3 = callback(4160);
+            obj3 = callback(4166);
             const bestActiveInput = obj3.getBestActiveInput();
             if (bestActiveInput != null) {
               const obj8 = { type: null, context: null };
@@ -99,15 +99,15 @@ function _openActivityDMLauncher() {
             obj10[0] = callback;
             obj10[1] = {};
             obj10[2] = c7;
-            const items = [callback2(5688).ACTIVITY_BOOKMARK];
+            const items = [callback2(5748).ACTIVITY_BOOKMARK];
             obj10[3] = items;
-            obj10[4] = callback(6922).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
+            obj10[4] = callback(6982).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
             obj10[5] = callback2;
             obj10[6] = customId;
             c7 = 5;
             customId = 1;
             const obj11 = { value: null, done: false };
-            obj11[0] = callback2(10907)(obj10);
+            obj11[0] = callback2(10973)(obj10);
             return obj11;
           }
         }

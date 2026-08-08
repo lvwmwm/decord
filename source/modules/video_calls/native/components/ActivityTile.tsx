@@ -1,10 +1,10 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10716
+// Function ID: 10717
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1371, 1903, 676, 1301, 4327, 21, 1297, 4302, 712, 589, 1351, 5674, 4491, 4140, 10651, 5668, 5688, 8671, 1236, 10581, 10582, 10653, 10580, 4844, 10654, 10682, 4298, 4713, 4013, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 1903, 676, 1301, 4328, 21, 1297, 4303, 712, 589, 1351, 5734, 4493, 4146, 10717, 5728, 5748, 8731, 1236, 10647, 10648, 10719, 10646, 4846, 10720, 10748, 4299, 4715, 4013, 2]
 // Exports: default
 
-// Module 10650 (ActivityTileInner)
+// Module 10716 (ActivityTileInner)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ManaContext from "ManaContext";
 import "context";
@@ -54,7 +54,7 @@ function ActivityTileInner(participant) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(10582)(obj1);
+                obj2[0] = v0(10648)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -94,7 +94,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = outer1_0(10653);
+            obj = outer1_0(10719);
             const result = obj.setOrientationLockState(mergeGuildAvatar);
           }
           dependencyMap = 3;

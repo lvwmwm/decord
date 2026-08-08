@@ -1,10 +1,10 @@
-// Module ID: 14926
-// Function ID: 14927
+// Module ID: 14996
+// Function ID: 14997
 // Name: finishMFACheck
 // Dependencies: [5, 530, 2]
 // Exports: trySubmit
 
-// Module 14926 (finishMFACheck)
+// Module 14996 (finishMFACheck)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -41,7 +41,7 @@ function _finishMFACheck() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ function _finishMFACheck() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

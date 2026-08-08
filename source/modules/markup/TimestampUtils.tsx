@@ -1,10 +1,10 @@
-// Module ID: 4756
-// Function ID: 4757
+// Module ID: 4758
+// Function ID: 4759
 // Name: TIMESTAMP_FORMATS
 // Dependencies: [3971, 3883, 687, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 4756 (TIMESTAMP_FORMATS)
+// Module 4758 (TIMESTAMP_FORMATS)
 let obj = {
   t(date) {
     return require(3971) /* resetCache */.dateFormat(date, "LT");

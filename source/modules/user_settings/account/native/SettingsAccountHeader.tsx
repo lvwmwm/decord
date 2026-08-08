@@ -1,9 +1,9 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13991
+// Function ID: 13992
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 3938, 1903, 676, 7719, 21, 4302, 712, 13922, 1236, 5956, 589, 8454, 8391, 5373, 4712, 2]
+// Dependencies: [19, 17, 3938, 1903, 676, 7779, 21, 4303, 712, 13992, 1236, 6016, 589, 8514, 8451, 5374, 4714, 2]
 
-// Module 13921 (RestrictedAccountRedirect)
+// Module 13991 (RestrictedAccountRedirect)
 import importAllResult from "noop";
 import { View } from "set";
 import upsertRelationship from "upsertRelationship";
@@ -25,7 +25,7 @@ function RestrictedAccountRedirect() {
     obj.openUserSettings(obj);
   };
   obj[2] = SafetySettingsNoticeType.RESTRICTED_ACCOUNTS_SETTING_NOTICE;
-  return callback(importDefault(13922), obj);
+  return callback(importDefault(13992), obj);
 }
 let c3 = importAllResult;
 ({ jsx: c9, jsxs: c10 } = jsxProd);
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(() => {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(8454) /* handleOpenEmailVerification */;
+  let obj1 = require(8514) /* handleOpenEmailVerification */;
   const bannerText = obj1.getBannerText(stateFromStores);
   const tmp = callback2();
   const items1 = [upsertRelationship];
@@ -61,8 +61,8 @@ const memoResult = importAllResult.memo(() => {
       obj1 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
-      obj[4] = callback(tmp2(4712).Button, obj1);
-      tmp14 = callback(tmp2(5373).TableRow, obj);
+      obj[4] = callback(tmp2(4714).Button, obj1);
+      tmp14 = callback(tmp2(5374).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;

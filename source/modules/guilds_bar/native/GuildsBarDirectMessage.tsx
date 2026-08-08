@@ -1,8 +1,8 @@
-// Module ID: 15379
-// Function ID: 15380
-// Dependencies: [19, 1218, 4993, 1372, 7037, 3938, 1903, 676, 21, 4302, 712, 15334, 589, 8973, 1236, 15336, 4310, 9601, 15380, 9598, 1297, 5267, 2]
+// Module ID: 15454
+// Function ID: 15455
+// Dependencies: [19, 1218, 4995, 1372, 7097, 3938, 1903, 676, 21, 4303, 712, 15409, 589, 9033, 1236, 15411, 4311, 9666, 15455, 9663, 1297, 5268, 2]
 
-// Module 15379
+// Module 15454
 import importAllResult from "FacepileGroupDMAvatar";
 import fetchFingerprint from "fetchFingerprint";
 import callConnect from "callConnect";
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
   if (channel != null) {
     isMultiUserDMResult = channel.isMultiUserDM();
   }
-  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "flowing", children: "hourglass" };
+  obj = { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: "done", externalChildren: true, expandedChildren: null, children: null };
   obj[6] = memo1;
   obj[7] = cutouts;
   obj[8] = badge;
@@ -140,7 +140,7 @@ const memoResult = importAllResult.memo(function GuildsBarDirectMessage(channelI
     }
   }
   obj[10] = tmp11Result;
-  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: false, externalChildren: "done", expandedChildren: "flowing", children: "hourglass" });
+  return jsx(stateFromStores(channel[11]), { selected: false, circle: !isMultiUserDMResult, unread: true, styles: guildsBarAnimatedWrapperStyles, label: stateFromStoresObject.label, overState: "Boolean", config: true, cutouts: "done", externalChildren: true, expandedChildren: null, children: null });
 });
 let result = require("callConnect").fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
 

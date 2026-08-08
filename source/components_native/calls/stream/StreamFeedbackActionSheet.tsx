@@ -1,10 +1,10 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16413
+// Function ID: 16414
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 1218, 676, 11020, 21, 7138, 589, 1236, 2514, 11023, 16337, 698, 16202, 16338, 4270, 16339, 1988, 4001, 2]
+// Dependencies: [19, 1218, 676, 11086, 21, 7198, 589, 1236, 2514, 11089, 16414, 698, 16279, 16415, 4271, 16416, 1988, 4001, 2]
 // Exports: default
 
-// Module 16336 (StreamFeedbackActionSheet)
+// Module 16413 (StreamFeedbackActionSheet)
 import "noop";
 import fetchFingerprint from "fetchFingerprint";
 import { AnalyticEvents } from "ME";
@@ -22,7 +22,7 @@ export default function StreamFeedbackActionSheet(stream) {
   stream = stream.stream;
   const analyticsData = stream.analyticsData;
   let dependencyMap;
-  let obj = stream(7138);
+  let obj = stream(7198);
   dependencyMap = obj.useGetStreamApplication(stream);
   let obj1 = stream(589);
   const items = [fetchFingerprint];
@@ -46,14 +46,14 @@ export default function StreamFeedbackActionSheet(stream) {
   const intl5 = tmp(1236).intl;
   obj[2] = intl5.string(stream(1236).t["6Y1t5P"]);
   const stringResult1 = intl2.string(stream(1236).t["0uxA2V"]);
-  obj[3] = stream(11023).getStreamFeedbackOptions({ isStreamer: stateFromStores });
+  obj[3] = stream(11089).getStreamFeedbackOptions({ isStreamer: stateFromStores });
   obj = { value: constants.FREEFORM, label: null };
   const intl6 = tmp(1236).intl;
   obj[1] = intl6.string(stream(1236).t.emlT91);
   obj[4] = obj;
   obj1 = { headerLabel: stringResult, showHeaderCloseButton: true, ratingBody: null, categoriesHeader: null, optionsTree: null, trackOpen: null, trackReport: null };
   const tmp11 = jsx;
-  const tmpResult = stream(11023);
+  const tmpResult = stream(11089);
   if (stateFromStores) {
     stringResult2 = stringResult1;
   }
@@ -138,5 +138,5 @@ export default function StreamFeedbackActionSheet(stream) {
       const obj4 = stream(paths[17]);
     }
   };
-  return tmp11(tmp10(16337), obj1);
+  return tmp11(tmp10(16414), obj1);
 };

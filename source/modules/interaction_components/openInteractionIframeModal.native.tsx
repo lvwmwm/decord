@@ -1,10 +1,10 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16470
+// Function ID: 16471
 // Name: _openInteractionIframeModal
-// Dependencies: [5, 16394, 4507, 16395, 1988, 2]
+// Dependencies: [5, 16471, 4509, 16472, 1988, 2]
 // Exports: default
 
-// Module 16393 (_openInteractionIframeModal)
+// Module 16470 (_openInteractionIframeModal)
 import set from "set";
 import { INTERACTION_IFRAME_MODAL_KEY as closure_4 } from "INTERACTION_IFRAME_MODAL_KEY";
 
@@ -26,7 +26,7 @@ function _openInteractionIframeModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,7 +43,7 @@ function _openInteractionIframeModal() {
             obj = v0(outer1_2[2]);
             obj.pushLazy(callback(outer1_2[4])(outer1_2[3], outer1_2.paths), callback, outer1_4);
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           v0 = tmp;
@@ -61,7 +61,7 @@ function _openInteractionIframeModal() {
   }
   return applyArgumentsResult;
 }
-const result = require("module_4507").fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
+const result = require("module_4509").fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
 
 export default function openInteractionIframeModal() {
   const self = this;

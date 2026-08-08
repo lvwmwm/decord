@@ -1,10 +1,10 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 16694
+// Function ID: 16695
 // Name: batchChannelUpdate
 // Dependencies: [676, 709, 530, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 16617 (batchChannelUpdate)
+// Module 16694 (batchChannelUpdate)
 import { Endpoints } from "ME";
 
 function batchChannelUpdate(outer1_0) {

@@ -1,10 +1,10 @@
-// Module ID: 7174
-// Function ID: 7175
+// Module ID: 7234
+// Function ID: 7235
 // Name: trackChannelOpenedClickstream
-// Dependencies: [1372, 676, 1379, 6866, 2]
+// Dependencies: [1372, 676, 1379, 6926, 2]
 // Exports: default
 
-// Module 7174 (trackChannelOpenedClickstream)
+// Module 7234 (trackChannelOpenedClickstream)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import ME from "ME";
 import { StaticChannelRoute } from "set";
@@ -28,7 +28,7 @@ export default function trackChannelOpenedClickstream(channelId) {
                   if (tmp.MEMBER_SAFETY !== channelId) {
                     if (tmp.GUILD_ONBOARDING !== channelId) {
                       if (tmp.GUILD_BOOSTS !== channelId) {
-                        let obj = require(6866) /* isClickstreamEnabled */;
+                        let obj = require(6926) /* isClickstreamEnabled */;
                         obj = { channel_id: null, channel_type: null };
                         obj[0] = channelId;
                         channel = channel.getChannel(channelId);

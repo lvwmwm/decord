@@ -1,10 +1,10 @@
-// Module ID: 9466
-// Function ID: 9467
+// Module ID: 9531
+// Function ID: 9532
 // Name: LinkButton
-// Dependencies: [19, 17, 676, 1959, 21, 4302, 3998, 698, 4298, 9467, 500, 1958, 1236, 2]
+// Dependencies: [19, 17, 676, 1959, 21, 4303, 3998, 698, 4299, 9532, 500, 1958, 1236, 2]
 // Exports: default
 
-// Module 9466 (LinkButton)
+// Module 9531 (LinkButton)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";
@@ -29,7 +29,7 @@ function LinkButton(arg0) {
       callback(698).track(constants.CHANGE_LOG_CTA_CLICKED, obj);
     },
     style: tmp.link,
-    children: callback(require(4298) /* Text */.Text, obj)
+    children: callback(require(4299) /* Text */.Text, obj)
   };
   obj = { variant: "text-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
   items = ["\n", text];

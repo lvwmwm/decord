@@ -1,10 +1,10 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 15889
+// Function ID: 15890
 // Name: ViewModerators
-// Dependencies: [5, 19, 1971, 1964, 1891, 676, 7721, 21, 698, 4270, 15815, 1988, 1480, 589, 5132, 8937, 1380, 1935, 4641, 1236, 4312, 8938, 4001, 1297, 8945, 4710, 5707, 5373, 9462, 2]
+// Dependencies: [5, 19, 1971, 1964, 1891, 676, 7781, 21, 698, 4271, 15890, 1988, 1480, 589, 5133, 8997, 1380, 1935, 4643, 1236, 4313, 8998, 4001, 1297, 9005, 4712, 5767, 5374, 9527, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 15814 (ViewModerators)
+// Module 15889 (ViewModerators)
 import ME from "ME";
 import "getSystemLocale";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -57,7 +57,7 @@ export default function ViewModerators(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ export default function ViewModerators(channel) {
             obj2 = v0(outer2_3[9]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c2 = tmp;
@@ -222,7 +222,7 @@ export const openAddModeratorsActionSheet = function openAddModeratorsActionShee
   }
   let obj = importDefault(698);
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
-  const obj2 = importDefault(4270);
+  const obj2 = importDefault(4271);
   obj = { channel, canSkip: flag };
-  obj2.openLazy(require(1988) /* asyncRequireImpl */(15815, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(require(1988) /* asyncRequireImpl */(15890, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 };

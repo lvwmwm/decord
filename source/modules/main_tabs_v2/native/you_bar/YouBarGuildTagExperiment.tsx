@@ -1,10 +1,10 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15479
+// Function ID: 15480
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsYouBarGuildTagEnabled, useIsYouBarGuildTagEnabled
 
-// Module 15404 (apexExperiment)
+// Module 15479 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-07-you-bar-guild-tag", kind: "user", defaultConfig: { showGuildTag: false }, variations: { 0: { showGuildTag: false }, 1: { showGuildTag: true } } });

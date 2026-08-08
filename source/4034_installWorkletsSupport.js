@@ -1,7 +1,7 @@
 // Module ID: 4034
 // Function ID: 4035
 // Name: installWorkletsSupport
-// Dependencies: [4035]
+// Dependencies: [4035, 4041]
 
 // Module 4034 (installWorkletsSupport)
 let require = arg1;
@@ -11,8 +11,8 @@ let closure_3 = { code: "function pack_Pnpm_installWorkletsSupportTs2(value){con
 let closure_4 = { code: "function unpack_Pnpm_installWorkletsSupportTs3(value){return value.unbox();}" };
 arg5.installWorkletsSupport = function installWorkletsSupport() {
   try {
-    const NitroModules = require(dependencyMap[1]).NitroModules;
-    const boxResult = NitroModules.box(require(dependencyMap[1]).NitroModules);
+    const NitroModules = require(4041) /* getInstalledNitro */.NitroModules;
+    const boxResult = NitroModules.box(require(4041) /* getInstalledNitro */.NitroModules);
     require = boxResult;
     let obj = { name: "nitro.HybridObject", determine: null, pack: null, unpack: null };
     const fn = function _(arg0) {
@@ -40,7 +40,7 @@ arg5.installWorkletsSupport = function installWorkletsSupport() {
     fn3.__workletHash = 16222078380838;
     fn3.__initData = closure_4;
     obj[3] = fn3;
-    const result = require(4035) /* getInstalledNitro */.registerCustomSerializable(obj);
+    const result = require(4035).registerCustomSerializable(obj);
   } catch (err) {
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 15767
-// Function ID: 15768
+// Module ID: 15842
+// Function ID: 15843
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 676, 21, 4302, 712, 698, 5368, 4698, 8331, 500, 5764, 4846, 13132, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 698, 5369, 4700, 8391, 500, 5824, 4848, 13202, 1236, 2]
 // Exports: default
 
-// Module 15767 (UsernameSearchScreen)
+// Module 15842 (UsernameSearchScreen)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -45,7 +45,7 @@ export default function UsernameSearchScreen(navigation) {
     obj = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(5368)().insets;
+  const insets = ref(5369)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -61,7 +61,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(8331);
+  let obj = navigation(8391);
   const clientThemesOverride = obj.useClientThemesOverride();
   let obj1 = navigation(500);
   let prop = null;
@@ -77,13 +77,13 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: tmp.background, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.content, clientThemesOverride];
-  let tmp3Result = tmp3(5764);
-  const items2 = [callback(ref(4846), { absolute: true }), ];
+  let tmp3Result = tmp3(5824);
+  const items2 = [callback(ref(4848), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
   const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(712).space.PX_16 }];
   obj1[2] = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  tmp3Result = tmp3(13132);
+  tmp3Result = tmp3(13202);
   const intl = tmp7(1236).intl;
   obj3[2] = intl.string(navigation(1236).t.YEOwDM);
   obj3[3] = tmp.headerText;

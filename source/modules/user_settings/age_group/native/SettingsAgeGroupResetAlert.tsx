@@ -1,10 +1,10 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 14019
+// Function ID: 14020
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1480, 12959, 4642, 4001, 1236, 4645, 2802, 4645, 2]
+// Dependencies: [5, 21, 1480, 13029, 4644, 4001, 1236, 4647, 2802, 4647, 2]
 // Exports: default
 
-// Module 13949 (SettingsAgeGroupResetAlert)
+// Module 14019 (SettingsAgeGroupResetAlert)
 import presentAddedFriendToast from "presentAddedFriendToast";
 import jsxProd from "jsxProd";
 
@@ -30,7 +30,7 @@ export default function SettingsAgeGroupResetAlert() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -50,7 +50,7 @@ export default function SettingsAgeGroupResetAlert() {
               c1 = 2;
               c3 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(12959).resetAgeVerification();
+              obj1[0] = outer1_0(13029).resetAgeVerification();
               return obj1;
             }
           } else if (1 === tmp7) {
@@ -71,12 +71,12 @@ export default function SettingsAgeGroupResetAlert() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = outer1_0(4642);
+            obj = outer1_0(4644);
             obj.dismissAlert(outer1_6);
             navigation.goBack();
             dependencyMap = 0;
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           if (tmp4 === dependencyMap) {
@@ -121,13 +121,13 @@ export default function SettingsAgeGroupResetAlert() {
   };
   const intl3 = _require(1236).intl;
   obj1[2] = intl3.string(_handleConfirm(2802).V822Mp);
-  const items = [callback(_require(4645).AlertActionButton, obj1, "confirm"), ];
+  const items = [callback(_require(4647).AlertActionButton, obj1, "confirm"), ];
   let obj2 = { variant: "secondary", text: null };
   const intl4 = _require(1236).intl;
   obj2[1] = intl4.string(_require(1236).t["ETE/oC"]);
-  items[1] = callback(_require(4645).AlertActionButton, obj2, "cancel");
+  items[1] = callback(_require(4647).AlertActionButton, obj2, "cancel");
   obj[0] = items;
-  obj[2] = callback2(_require(4645).AlertActions, obj);
-  return callback(_require(4645).AlertModal, obj);
+  obj[2] = callback2(_require(4647).AlertActions, obj);
+  return callback(_require(4647).AlertModal, obj);
 };
 export const SETTINGS_AGE_GROUP_RESET_ALERT_ID = "settings-age-group-reset";

@@ -1,10 +1,10 @@
-// Module ID: 6634
-// Function ID: 6635
+// Module ID: 6694
+// Function ID: 6695
 // Name: ServerIconBonkBonkExample
-// Dependencies: [21, 5267, 6635, 2]
+// Dependencies: [21, 5268, 6695, 2]
 // Exports: ServerIconBonkBonkExample
 
-// Module 6634 (ServerIconBonkBonkExample)
+// Module 6694 (ServerIconBonkBonkExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconBonkBonkExample.native.tsx");
@@ -28,7 +28,7 @@ export const ServerIconBonkBonkExample = function ServerIconBonkBonkExample(widt
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6635);
+  obj[0] = importDefault(6695);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const ServerIconBonkBonkExample = function ServerIconBonkBonkExample(widt
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

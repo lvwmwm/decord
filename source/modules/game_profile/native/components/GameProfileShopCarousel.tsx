@@ -1,10 +1,10 @@
-// Module ID: 9278
-// Function ID: 9279
+// Module ID: 9343
+// Function ID: 9344
 // Name: HorizontalSpacing
-// Dependencies: [19, 17, 6941, 21, 4302, 712, 9279, 12107, 12108, 647, 9218, 6940, 5688, 4298, 1236, 4712, 5718, 7685, 2]
+// Dependencies: [19, 17, 7001, 21, 4303, 712, 9344, 12174, 12175, 647, 9283, 7000, 5748, 4299, 1236, 4714, 5778, 7745, 2]
 // Exports: default
 
-// Module 9278 (HorizontalSpacing)
+// Module 9343 (HorizontalSpacing)
 import noop from "noop";
 import { View } from "noop";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -16,7 +16,7 @@ let error;
 const require = arg1;
 function HorizontalSpacing() {
   let obj = { style: null };
-  obj = { width: require(9279) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP };
+  obj = { width: require(9344) /* CollectiblesShopCardInternalV2 */.COLLECTIBLES_SHOP_CARD_GAP };
   obj[0] = obj;
   return callback(View, obj);
 }
@@ -29,9 +29,9 @@ function GameProfileShopCarouselContent(trackAction) {
   let gameProfileShopCollection;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = closeModal(12107);
+  let obj = closeModal(12174);
   gameProfileShopCollection = obj.useGameProfileShopCollection(collectionId);
-  let obj1 = closeModal(12108);
+  let obj1 = closeModal(12175);
   const fetchCollectiblesProducts = obj1.useFetchCollectiblesProducts(gameProfileShopCollection);
   let obj2 = closeModal(647);
   let items = [updateCategoriesAndProducts];
@@ -49,13 +49,13 @@ function GameProfileShopCarouselContent(trackAction) {
     obj1 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1236).intl;
     obj1[2] = intl.string(tmp2(1236).t["5DYPT8"]);
-    const items2 = [callback(tmp2(4298).Text, obj1), ];
+    const items2 = [callback(tmp2(4299).Text, obj1), ];
     obj2 = { text: null, variant: "tertiary", size: "sm", icon: null, iconPosition: "end", onPress: null };
     const intl2 = tmp2(1236).intl;
     obj2[0] = intl2.string(tmp2(1236).t.budhsM);
-    obj2[3] = callback(tmp2(5718).ChevronSmallRightIcon, { size: "sm" });
+    obj2[3] = callback(tmp2(5778).ChevronSmallRightIcon, { size: "sm" });
     obj2[5] = tmp6;
-    items2[1] = callback(tmp2(4712).Button, obj2);
+    items2[1] = callback(tmp2(4714).Button, obj2);
     obj[1] = items2;
     const items3 = [callback2(View, obj), ];
     const obj3 = { horizontal: true, data: null, renderItem: null, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: null, ListHeaderComponent: null, ListFooterComponent: null, decelerationRate: "fast", snapToInterval: null };
@@ -69,13 +69,13 @@ function GameProfileShopCarouselContent(trackAction) {
         hideWishlistButton: true,
         hidePrice: true,
         onPress() {
-          outer1_1(closeModal(9218).GameProfileTrackActionActions.DiscordCollectiblesShop);
+          outer1_1(closeModal(9283).GameProfileTrackActionActions.DiscordCollectiblesShop);
           item();
-          let obj = closeModal(6940);
+          let obj = closeModal(7000);
           obj = { analyticsLocations: null, analyticsSource: null, initialProductSkuId: null };
-          const items = [trackAction(5688).GAME_PROFILE];
+          const items = [trackAction(5748).GAME_PROFILE];
           obj[0] = items;
-          obj[1] = trackAction(5688).GAME_PROFILE;
+          obj[1] = trackAction(5748).GAME_PROFILE;
           obj[2] = item.skuId;
           obj.openCollectiblesShop(obj);
         }
@@ -84,8 +84,8 @@ function GameProfileShopCarouselContent(trackAction) {
     obj3[4] = HorizontalSpacing;
     obj3[5] = HorizontalSpacing;
     obj3[6] = HorizontalSpacing;
-    obj3[8] = tmp2(9279).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(9279).COLLECTIBLES_SHOP_CARD_GAP;
-    items3[1] = callback(tmp2(7685).FlashList, obj3, collectionId);
+    obj3[8] = tmp2(9344).COLLECTIBLES_SHOP_CARD_WIDTH + tmp2(9344).COLLECTIBLES_SHOP_CARD_GAP;
+    items3[1] = callback(tmp2(7745).FlashList, obj3, collectionId);
     obj[1] = items3;
     tmp7 = callback2(View, obj);
   }

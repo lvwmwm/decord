@@ -1,10 +1,10 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12634
+// Function ID: 12635
 // Name: createSafetyPolicyNoticeEmbed
-// Dependencies: [17, 676, 7745, 3883, 1236, 7995, 7903, 2]
+// Dependencies: [17, 676, 7805, 3883, 1236, 8055, 7963, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12564 (createSafetyPolicyNoticeEmbed)
+// Module 12634 (createSafetyPolicyNoticeEmbed)
 import { Image } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 import { SafetyHubPolicyNoticeKeys } from "SafetyHubView";
@@ -51,10 +51,10 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             let obj = { titleText: null, titleIcon: null, subtitleText: null, descriptionText: null, ctaText: null, classificationId: null };
             const intl = require(1236) /* getSystemLocale */.intl;
             obj[0] = intl.string(require(1236) /* getSystemLocale */.t["4CxGXi"]);
-            obj[1] = require(7995) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(7903)));
+            obj[1] = require(8055) /* frozen */.getAssetUriForEmbed(Image.resolveAssetSource(importDefault(7963)));
             const intl2 = require(1236) /* getSystemLocale */.intl;
             obj = { daysAgo: null };
-            const obj2 = require(7995) /* frozen */;
+            const obj2 = require(8055) /* frozen */;
             const obj4 = importDefault(3883)();
             obj[0] = obj4.diff(importDefault(3883).unix(parsed), "days");
             obj[2] = intl2.formatToPlainString(require(1236) /* getSystemLocale */.t.eevFb6, obj);

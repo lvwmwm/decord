@@ -1,10 +1,10 @@
-// Module ID: 9802
-// Function ID: 9803
+// Module ID: 9868
+// Function ID: 9869
 // Name: _fetchBugReportConfig
-// Dependencies: [5, 1302, 676, 530, 1236, 9803, 500, 5126, 503, 2]
+// Dependencies: [5, 1302, 676, 530, 1236, 9869, 500, 5127, 503, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 9802 (_fetchBugReportConfig)
+// Module 9868 (_fetchBugReportConfig)
 import _uploadDebugLogFiles from "_uploadDebugLogFiles";
 import handleThemeChange from "handleThemeChange";
 import ME from "ME";
@@ -51,7 +51,7 @@ function _submitReport() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ function _submitReport() {
                 items.push(obj17);
               }
               let obj19 = dependencyMap;
-              let obj18 = lib(9803);
+              let obj18 = lib(9869);
               let uploadDebugLogFiles = obj18.uploadDebugLogFiles;
               obj19 = lib(500);
               let BUG_REPORTS = outer1_5;
@@ -168,7 +168,7 @@ function _submitReport() {
               }
               uploadDebugLogFiles(ANDROID_APP);
               let constants = 1;
-              obj18 = lib2(5126);
+              obj18 = lib2(5127);
               obj18 = { url: null, attachments: null, fields: null, trackedActionData: null, rejectWithError: false };
               BUG_REPORTS = constants.BUG_REPORTS;
               obj18[0] = BUG_REPORTS;

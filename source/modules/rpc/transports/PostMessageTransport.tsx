@@ -1,9 +1,9 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10734
+// Function ID: 10735
 // Name: map
-// Dependencies: [5, 32, 1371, 4205, 676, 687, 10669, 652, 1231, 698, 3919, 10670, 10672, 1988, 10673, 2]
+// Dependencies: [5, 32, 1371, 4206, 676, 687, 10735, 652, 1231, 698, 3919, 10736, 10738, 1988, 10739, 2]
 
-// Module 10668 (map)
+// Module 10734 (map)
 import closure_3 from "set";
 import _slicedToArray from "_slicedToArray";
 import participantFromServer from "participantFromServer";
@@ -22,14 +22,14 @@ let closure_11 = 10 * require("set").Millis.SECOND;
 const map = new Map();
 let set = new Set();
 function postClose(source, arg1, postMessageToRPCClient) {
-  const items = [importDefault(10669).CLOSE, arg1];
+  const items = [importDefault(10735).CLOSE, arg1];
   postMessageToRPCClient(items, source.origin);
 }
 class PostMessageTransport extends EventEmitter {
   constructor(arg0, arg1, arg2, arg3) {
     tmp4 = new PostMessageTransport(tmp3, tmp2, tmp);
     // ThrowIfThisInitialized (0x7c)
-    f108106 = tmp4;
+    f108435 = tmp4;
     tmp4.disconnectSocket = function disconnectSocket(closure_0, closure_1, arg2) {
       let flag = arg2;
       if (arg2 === undefined) {
@@ -147,9 +147,9 @@ class PostMessageTransport extends EventEmitter {
         }
       }
     };
-    f108106 = undefined;
+    f108435 = undefined;
     closure_1 = tmp4;
-    f108106 = closure_3((arg0, arg1, arg2) => {
+    f108435 = closure_3((arg0, arg1, arg2) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
       let closure_2 = arg2;
@@ -174,7 +174,7 @@ class PostMessageTransport extends EventEmitter {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -374,7 +374,7 @@ class PostMessageTransport extends EventEmitter {
                   logger2.info("Socket Validated: " + user.id);
                   c7 = 0;
                   c9 = 3;
-                  return { value: "T", done: null };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   const logger = lib2.logger;
                   const _HermesInternal = HermesInternal;
@@ -416,9 +416,9 @@ class PostMessageTransport extends EventEmitter {
       }
       return applyArgumentsResult;
     };
-    f108106 = undefined;
+    f108435 = undefined;
     closure_1 = tmp4;
-    f108106 = closure_3((arg0, arg1) => {
+    f108435 = closure_3((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
       let c6 = 0;
@@ -436,7 +436,7 @@ class PostMessageTransport extends EventEmitter {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -484,7 +484,7 @@ class PostMessageTransport extends EventEmitter {
                 c5 = 0;
                 lib.disconnectSocket(callback, lib);
                 c7 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               c5 = 0;
@@ -533,29 +533,29 @@ PostMessageTransport.prototype["routeEvent"] = function routeEvent(value, iframe
   if (Array.isArray(arg2)) {
     const self = this;
     [tmp5, tmp6] = callback2(arg2, 2);
-    if (importDefault(10669).HANDSHAKE === tmp5) {
+    if (importDefault(10735).HANDSHAKE === tmp5) {
       if (null != value) {
         let obj = { closeCode: null };
         obj[0] = constants2.CLOSE_UNSUPPORTED;
-        const tmp35 = new tmp7(10670)(obj, "Already connected");
+        const tmp35 = new tmp7(10736)(obj, "Already connected");
         throw tmp35;
       } else {
         return self.handleHandshake(iframeId, tmp6, arg3);
       }
-    } else if (tmp7(10669).FRAME === tmp5) {
+    } else if (tmp7(10735).FRAME === tmp5) {
       if (null == value) {
         obj = { closeCode: null };
         obj[0] = constants2.CLOSE_UNSUPPORTED;
-        const tmp27 = new tmp7(10670)(obj, "Not connected");
+        const tmp27 = new tmp7(10736)(obj, "Not connected");
         throw tmp27;
       } else {
         return self.handleFrame(iframeId, value, tmp6);
       }
-    } else if (tmp7(10669).CLOSE === tmp5) {
+    } else if (tmp7(10735).CLOSE === tmp5) {
       if (null == value) {
         const obj1 = { closeCode: null };
         obj1[0] = constants2.CLOSE_UNSUPPORTED;
-        const tmp20 = new tmp7(10670)(obj1, "Not connected");
+        const tmp20 = new tmp7(10736)(obj1, "Not connected");
         throw tmp20;
       } else {
         return self.handleClose(value, tmp6);
@@ -563,7 +563,7 @@ PostMessageTransport.prototype["routeEvent"] = function routeEvent(value, iframe
     } else {
       obj = { closeCode: null };
       obj[0] = constants2.CLOSE_UNSUPPORTED;
-      const tmp13 = new tmp7(10670)(obj, "Invalid opcode");
+      const tmp13 = new tmp7(10736)(obj, "Invalid opcode");
       throw tmp13;
     }
     const tmp4 = callback2(arg2, 2);

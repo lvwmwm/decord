@@ -1,9 +1,9 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16559
+// Function ID: 16560
 // Name: _initialize
-// Dependencies: [1976, 5260, 11645, 2]
+// Dependencies: [1976, 5261, 11711, 2]
 
-// Module 16482 (_initialize)
+// Module 16559 (_initialize)
 import { subscribeToIntlLoadingSuccess as closure_2 } from "_setAppLocale";
 import "initialize";
 
@@ -17,7 +17,7 @@ class SearchTokensManager extends tmp2 {
 }
 const prototype = SearchTokensManager.prototype;
 prototype["_initialize"] = function _initialize() {
-  this._unsubscribeIntlLoadingStore = callback(require(11645) /* SearchTokenTypes */.refreshSearchTokens);
+  this._unsubscribeIntlLoadingStore = callback(require(11711) /* SearchTokenTypes */.refreshSearchTokens);
 };
 prototype["_terminate"] = function _terminate() {
   const _unsubscribeIntlLoadingStore = this._unsubscribeIntlLoadingStore;

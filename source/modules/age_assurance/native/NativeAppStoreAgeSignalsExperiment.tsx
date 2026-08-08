@@ -1,10 +1,10 @@
-// Module ID: 16452
-// Function ID: 16453
+// Module ID: 16529
+// Function ID: 16530
 // Name: isNativeAppStoreAgeSignalsEnabled
 // Dependencies: [1452, 2]
 // Exports: isNativeAppStoreAgeSignalsEnabled
 
-// Module 16452 (isNativeAppStoreAgeSignalsEnabled)
+// Module 16529 (isNativeAppStoreAgeSignalsEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

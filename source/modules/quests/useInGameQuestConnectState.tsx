@@ -1,10 +1,10 @@
-// Module ID: 11108
-// Function ID: 11109
+// Module ID: 11174
+// Function ID: 11175
 // Name: useInGameQuestConnectState
 // Dependencies: [2]
 // Exports: useInGameQuestConnectState
 
-// Module 11108 (useInGameQuestConnectState)
+// Module 11174 (useInGameQuestConnectState)
 const result = require("set").fileFinishedImporting("modules/quests/useInGameQuestConnectState.tsx");
 
 export function useInGameQuestConnectState(quest) {

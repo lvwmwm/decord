@@ -1,10 +1,10 @@
-// Module ID: 9361
-// Function ID: 9362
+// Module ID: 9426
+// Function ID: 9427
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 4285, 9362, 3969, 5804, 3962, 9360, 1236, 2]
+// Dependencies: [5, 32, 19, 4286, 9427, 3969, 5864, 3962, 9425, 1236, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9361 (useRedeemVirtualCurrency)
+// Module 9426 (useRedeemVirtualCurrency)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -30,7 +30,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   const isSubmitting = callback(callback2(false), 2);
   callback2 = isSubmitting[1];
   const tmp = callback(callback2(""), 2);
-  const enabled = entitlements(9362).useConfig({ location: "orb_checkout_modal" }).enabled;
+  const enabled = entitlements(9427).useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
     order = order.order;
@@ -68,7 +68,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -122,7 +122,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                   c13 = 2;
                   c14 = 1;
                   let obj3 = { value: null, done: false };
-                  obj3[0] = callback(5804).signOrder(obj2);
+                  obj3[0] = callback(5864).signOrder(obj2);
                   return obj3;
                 }
               }
@@ -130,7 +130,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               if (1 === tmp10) {
                 c11 = 0;
                 const onSignFailure = throwTypeErrorResult;
-                if (onSignFailure instanceof callback(5804).OrderSigningFailedWithConstraintsError) {
+                if (onSignFailure instanceof callback(5864).OrderSigningFailedWithConstraintsError) {
                   throwTypeErrorResult = closure_10;
                   if (outer1_8 != null) {
                     throwTypeErrorResult = closure_9;
@@ -232,7 +232,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                     const error1 = new Error("Unexpected order status: " + outer1_3.status);
                     throw error1;
                   } else {
-                    obj3 = callback(5804);
+                    obj3 = callback(5864);
                     c13 = 3;
                     c14 = 1;
                     const obj8 = { value: null, done: false };
@@ -270,7 +270,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                             obj[0] = arg1;
                             return obj;
                           } else {
-                            return { value: "T", done: null };
+                            return { value: "HermesInternal", done: null };
                           }
                         } else {
                           try {
@@ -326,7 +326,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                             } else {
                               let _slicedToArray = arg1;
                               c3 = 3;
-                              return { value: "T", done: null };
+                              return { value: "HermesInternal", done: null };
                             }
                           } catch (tmp17) {
                             c3 = tmp;
@@ -440,7 +440,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                   return iter3;
                 }
               }
-              const orderProcessingPendingError = new callback(5804).OrderProcessingPendingError();
+              const orderProcessingPendingError = new callback(5864).OrderProcessingPendingError();
               throw orderProcessingPendingError;
             }
           } catch (throwTypeErrorResult) {
@@ -475,7 +475,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   let closure_9 = tmp10;
   const tmp11 = order((skuId, loadId) => {
     const callback = arg2;
-    let obj = callback(9360);
+    let obj = callback(9425);
     obj = {
       skuId,
       loadId,

@@ -1,9 +1,9 @@
-// Module ID: 4323
-// Function ID: 4324
+// Module ID: 4324
+// Function ID: 4325
 // Name: handleLoadMessages
-// Dependencies: [4324, 589, 1467, 709, 2]
+// Dependencies: [4325, 589, 1467, 709, 2]
 
-// Module 4323 (handleLoadMessages)
+// Module 4324 (handleLoadMessages)
 import applicationId from "applicationId";
 import { Store } from "initialize";
 import set from "isDiscordProxiedAssetUrl";

@@ -1,10 +1,10 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10560
+// Function ID: 10561
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 10493, 676, 21, 4302, 1236, 4827, 8702, 1480, 1974, 10495, 10431, 2]
+// Dependencies: [19, 10559, 676, 21, 4303, 1236, 4829, 8762, 1480, 1974, 10561, 10497, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 10494 (PlayStationLinkLanding)
+// Module 10560 (PlayStationLinkLanding)
 import noop from "noop";
 import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes";
 import { HelpdeskArticles } from "ME";
@@ -30,19 +30,19 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
     obj[0] = intl.string(navigation(1236).t["+eJP7o"]);
     const intl2 = navigation(1236).intl;
     obj[1] = intl2.string(navigation(1236).t["+0VIUh"]);
-    obj[2] = navigation(4827).VoiceNormalIcon;
+    obj[2] = navigation(4829).VoiceNormalIcon;
     const items = [obj, ];
     obj = { label: null, icon: null };
     const intl3 = navigation(1236).intl;
     obj[0] = intl3.string(navigation(1236).t.ZH4QFa);
-    obj[1] = navigation(8702).GameControllerIcon;
+    obj[1] = navigation(8762).GameControllerIcon;
     items[1] = obj;
     return items;
   }, []);
   callback = React.useCallback(() => {
     navigation.push(outer1_4.PRE_CONNECT);
   }, items);
-  const memo1 = React.useMemo(() => ({ uri: callback(10495) }), []);
+  const memo1 = React.useMemo(() => ({ uri: callback(10561) }), []);
   obj = { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null };
   let intl2 = navigation(1236).intl;
   obj[3] = intl2.string(navigation(1236).t.xAWHOy);
@@ -51,5 +51,5 @@ export const PlayStationLinkLanding = function PlayStationLinkLanding(platformTy
   obj[5] = intl.format(navigation(1236).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(10431).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
+  return jsx(navigation(10497).TwoWayLinkLanding, { platformType: platformType.platformType, img: memo1, imgStyle: tmp.image, headerConnect: null, headerReconnect: null, body: null, onNext: null, valueProps: null });
 };

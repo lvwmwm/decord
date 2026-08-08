@@ -1,10 +1,10 @@
-// Module ID: 4810
-// Function ID: 4811
+// Module ID: 4812
+// Function ID: 4813
 // Name: ForumSpoilerIcon
-// Dependencies: [19, 21, 712, 4004, 4784, 2]
+// Dependencies: [19, 21, 712, 4004, 4786, 2]
 // Exports: ForumSpoilerIcon
 
-// Module 4810 (ForumSpoilerIcon)
+// Module 4812 (ForumSpoilerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ForumSpoilerIcon = function ForumSpoilerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4784) /* registerAsset */;
+  obj[0] = require(4786) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

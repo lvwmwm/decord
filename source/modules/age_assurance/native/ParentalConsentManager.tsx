@@ -1,9 +1,9 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16527
+// Function ID: 16528
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1903, 676, 1605, 4282, 500, 5260, 16451, 16452, 3980, 16453, 16456, 530, 698, 1208, 16460, 16462, 2]
+// Dependencies: [5, 1903, 676, 1605, 4283, 500, 5261, 16528, 16529, 3980, 16530, 16533, 530, 698, 1208, 16537, 16539, 2]
 
-// Module 16450 (onPostConnectionOpen)
+// Module 16527 (onPostConnectionOpen)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticEvents } from "ME";
@@ -39,7 +39,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -138,7 +138,7 @@ prototype["performAgeCheck"] = function performAgeCheck() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -167,19 +167,19 @@ prototype["performAgeCheck"] = function performAgeCheck() {
                 c4 = 3;
                 constants = 1;
                 const obj1 = { value: null, done: false };
-                obj1[0] = _default.getAgeSignals({ firstAgeGate: 18 });
+                obj1[0] = _default.getAgeSignals({ firstAgeGate: 13, secondAgeGate: 18 });
                 return obj1;
               } else {
                 should_block = 0;
                 constants = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               tmp58Result = tmp58(tmp59[11]);
               ({ setAgeRangeThresholds, getIsConsideredOlderThan } = tmp58Result);
               let obj12 = outer1_0(outer1_2[5]);
               if (obj12.isIOS()) {
-                const result = setAgeRangeThresholds([18]);
+                const result = setAgeRangeThresholds([13, 18]);
               }
               c4 = 6;
               constants = 1;

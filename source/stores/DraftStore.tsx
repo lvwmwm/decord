@@ -1,9 +1,9 @@
-// Module ID: 4638
-// Function ID: 4639
+// Module ID: 4640
+// Function ID: 4641
 // Name: handleChanged
-// Dependencies: [32, 1218, 1372, 4639, 676, 12, 11, 589, 1351, 709, 2]
+// Dependencies: [32, 1218, 1372, 4641, 676, 12, 11, 589, 1351, 709, 2]
 
-// Module 4638 (handleChanged)
+// Module 4640 (handleChanged)
 import _slicedToArray from "_slicedToArray";
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";

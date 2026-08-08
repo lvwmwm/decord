@@ -1,10 +1,10 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12087
+// Function ID: 12088
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 4302, 5396, 5395, 1236, 4298, 2]
+// Dependencies: [19, 21, 4303, 5397, 5396, 1236, 4299, 2]
 // Exports: default
 
-// Module 12021 (HubEmailConnectionDescriptionActionsheet)
+// Module 12087 (HubEmailConnectionDescriptionActionsheet)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,15 +22,15 @@ export default function HubEmailConnectionDescriptionActionsheet() {
   obj = { title: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t["48kg+O"]);
-  const items = [callback(require(5395) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), , ];
+  const items = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), , ];
   obj = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl2.string(require(1236) /* getSystemLocale */.t.O1k9XX);
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   const obj1 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl3.string(require(1236) /* getSystemLocale */.t.FV5dvh);
-  items[2] = callback(require(4298) /* Text */.Text, obj1);
+  items[2] = callback(require(4299) /* Text */.Text, obj1);
   obj[0] = items;
-  return callback2(require(5396) /* Background */.BottomSheet, obj);
+  return callback2(require(5397) /* Background */.BottomSheet, obj);
 };

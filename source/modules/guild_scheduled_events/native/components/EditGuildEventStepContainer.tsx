@@ -1,8 +1,8 @@
-// Module ID: 8905
-// Function ID: 8906
-// Dependencies: [32, 19, 17, 21, 4302, 712, 5368, 2]
+// Module ID: 8965
+// Function ID: 8966
+// Dependencies: [32, 19, 17, 21, 4303, 712, 5369, 2]
 
-// Module 8905
+// Module 8965
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -32,7 +32,7 @@ const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   const tmp = callback4();
   const tmp2 = callback(importAllResult.useState(32), 2);
   importDefault = tmp2[1];
-  const insets = importDefault(5368)().insets;
+  const insets = importDefault(5369)().insets;
   let obj = { style: tmp.container, children: null };
   obj = { ref, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", style: items, contentContainerStyle: tmp.scroller, children };
   items = [tmp.flex, { marginBottom: tmp2[0] + insets.bottom }];

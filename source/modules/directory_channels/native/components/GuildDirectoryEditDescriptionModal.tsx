@@ -1,10 +1,10 @@
-// Module ID: 11620
-// Function ID: 11621
+// Module ID: 11686
+// Function ID: 11687
 // Name: GuildDirectoryEditDescription
-// Dependencies: [5, 19, 17, 21, 4302, 5266, 11621, 11619, 5327, 4298, 1236, 11622, 5269, 5723, 2]
+// Dependencies: [5, 19, 17, 21, 4303, 5267, 11687, 11685, 5328, 4299, 1236, 11688, 5270, 5783, 2]
 // Exports: default
 
-// Module 11620 (GuildDirectoryEditDescription)
+// Module 11686 (GuildDirectoryEditDescription)
 import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -37,7 +37,7 @@ function GuildDirectoryEditDescription(entry) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -53,7 +53,7 @@ function GuildDirectoryEditDescription(entry) {
                 return obj;
               } else {
                 let closure_2 = tmp4;
-                let obj2 = outer1_2(11621);
+                let obj2 = outer1_2(11687);
                 dependencyMap = 1;
                 c4 = 1;
                 const obj1 = { value: null, done: false };
@@ -69,10 +69,10 @@ function GuildDirectoryEditDescription(entry) {
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = callback(11619);
+              obj = callback(11685);
               obj.close();
               c4 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             c4 = tmp;
@@ -97,7 +97,7 @@ function GuildDirectoryEditDescription(entry) {
   let obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = entry(1236).intl;
   obj1[4] = intl.format(entry(1236).t.w9tsNk, { guildName: entry.name });
-  obj[1] = callback(entry(4298).Text, obj1);
+  obj[1] = callback(entry(4299).Text, obj1);
   const items = [callback(closure_5, obj), ];
   const obj3 = {
     onSubmit(arg0, arg1) {
@@ -118,10 +118,10 @@ function GuildDirectoryEditDescription(entry) {
   obj3[1] = intl2.string(entry(1236).t["R3BPH+"]);
   obj3[2] = entry;
   obj3[3] = entry.channelId;
-  items[1] = callback(_onSubmit(11622), obj3);
+  items[1] = callback(_onSubmit(11688), obj3);
   obj[2] = items;
   obj[2] = callback2(closure_6, obj);
-  return callback(entry(5327).SafeAreaPaddingView, obj);
+  return callback(entry(5328).SafeAreaPaddingView, obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -140,7 +140,7 @@ export default function GuildDirectoryEditDescriptionModal(arg0) {
   const _require = arg0;
   obj = {};
   obj = { fullscreen: true, headerLeft: null, headerTitle: null, render: null };
-  obj[1] = _require(5269).getHeaderCloseButton(importDefault(11619).close);
+  obj[1] = _require(5270).getHeaderCloseButton(importDefault(11685).close);
   obj[2] = function headerTitle() {
     return null;
   };
@@ -151,5 +151,5 @@ export default function GuildDirectoryEditDescriptionModal(arg0) {
   obj[EDIT_DESCRIPTION] = obj;
   obj[0] = obj;
   obj[1] = EDIT_DESCRIPTION;
-  return callback(_require(5723).Navigator, obj);
+  return callback(_require(5783).Navigator, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 8784
-// Function ID: 8785
+// Module ID: 8844
+// Function ID: 8845
 // Name: _openMediaModal
-// Dependencies: [32, 5, 3994, 676, 1474, 8785, 1988, 8787, 8791, 38, 4270, 8800, 4507, 8801, 2]
+// Dependencies: [32, 5, 3994, 676, 1474, 8845, 1988, 8847, 8851, 38, 4271, 8860, 4509, 8861, 2]
 // Exports: openMediaModal
 
-// Module 8784 (_openMediaModal)
+// Module 8844 (_openMediaModal)
 import _slicedToArray from "_slicedToArray";
 import zustandStore from "zustandStore";
 import setContent from "setContent";
@@ -36,7 +36,7 @@ function _openMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function _openMediaModal() {
               let initVideoStateStore;
               v0 = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -173,7 +173,7 @@ function _openMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = tmp;

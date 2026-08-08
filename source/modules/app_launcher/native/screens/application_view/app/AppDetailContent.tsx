@@ -1,10 +1,10 @@
-// Module ID: 11450
-// Function ID: 11451
+// Module ID: 11516
+// Function ID: 11517
 // Name: PlaceholderCommandRow
-// Dependencies: [5, 19, 17, 8279, 1479, 676, 4735, 21, 4302, 11451, 712, 11374, 5373, 9483, 11425, 6920, 10551, 1236, 1609, 9472, 1935, 11455, 8278, 6922, 11371, 500, 11457, 4298, 11459, 11422, 11461, 10458, 1297, 11468, 11470, 4270, 4496, 10553, 2]
+// Dependencies: [5, 19, 17, 8339, 1479, 676, 4737, 21, 4303, 11517, 712, 11440, 5374, 9548, 11491, 6980, 10617, 1236, 1609, 9537, 1935, 11521, 8338, 6982, 11437, 500, 11523, 4299, 11525, 11488, 11527, 10524, 1297, 11534, 11536, 4271, 4498, 10619, 2]
 // Exports: default
 
-// Module 11450 (PlaceholderCommandRow)
+// Module 11516 (PlaceholderCommandRow)
 import ME from "ME";
 import findCommandInSection from "findCommandInSection";
 import { View } from "getSystemLocale";
@@ -31,9 +31,9 @@ function PlaceholderCommandRow(isFirstRow) {
     flag2 = false;
   }
   const tmp = createCacheKey();
-  let obj = require(11374) /* usePlaceholderWidth */;
+  let obj = require(11440) /* usePlaceholderWidth */;
   const placeholderWidth = obj.usePlaceholderWidth(10, 50);
-  let obj1 = require(11374) /* usePlaceholderWidth */;
+  let obj1 = require(11440) /* usePlaceholderWidth */;
   const placeholderWidth1 = obj1.usePlaceholderWidth(30, 90);
   obj = { label: null, subLabel: null, subLabelLineClamp: 1, start: null, end: null };
   obj = { style: null };
@@ -49,12 +49,12 @@ function PlaceholderCommandRow(isFirstRow) {
   obj[1] = callback2(View, obj2);
   obj[3] = flag;
   obj[4] = flag2;
-  return callback2(require(5373) /* TableRowInner */.TableRow, obj);
+  return callback2(require(5374) /* TableRowInner */.TableRow, obj);
 }
 class CommandRow {
   constructor(arg0) {
     command = global.command;
-    f108819 = command;
+    f109148 = command;
     ({ onPressCommand, context } = global);
     ({ section, location, sectionName } = global);
     entrypoint = undefined;
@@ -62,7 +62,7 @@ class CommandRow {
     onPressSend = undefined;
     tmp2 = section;
     ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = global);
-    tmp = f108819;
+    tmp = f109148;
     obj = require("context");
     entrypoint = obj.useAppLauncherContext().entrypoint;
     tmp3 = onPressSend(true, true);
@@ -85,7 +85,7 @@ class CommandRow {
     fn = undefined;
     if (installOnDemand) {
       tmp5 = location;
-      f108819 = location((arg0) => {
+      f109148 = location((arg0) => {
         let closure_0 = arg0;
         let c2 = 0;
         let c3 = 0;
@@ -101,7 +101,7 @@ class CommandRow {
               obj[0] = isAuthorized;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -149,7 +149,7 @@ class CommandRow {
                   lib();
                 }
                 c3 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp13) {
               c3 = tmp;

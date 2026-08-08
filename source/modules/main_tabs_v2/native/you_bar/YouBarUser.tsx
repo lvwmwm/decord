@@ -1,8 +1,8 @@
-// Module ID: 15418
-// Function ID: 15419
-// Dependencies: [19, 17, 1903, 14268, 21, 4302, 712, 589, 4162, 4711, 4140, 15419, 15420, 15421, 2]
+// Module ID: 15493
+// Function ID: 15494
+// Dependencies: [19, 17, 1903, 14338, 21, 4303, 712, 589, 4036, 4713, 4146, 15494, 15495, 15496, 2]
 
-// Module 15418
+// Module 15493
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   _require = tmp5;
-  let obj1 = _require(4162);
+  let obj1 = _require(4036);
   sharedValue = obj1.useSharedValue(isQuestRendered ? closure_8 : closure_7);
   const items1 = [!isQuestRendered, sharedValue];
   const effect = importAllResult.useEffect(() => {
@@ -51,8 +51,8 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   S.__closure = { nameMargin: sharedValue };
   S.__workletHash = 12063452832866;
   S.__initData = closure_12;
-  const animatedStyle = _require(4162).useAnimatedStyle(S);
-  let obj3 = sharedValue(4140);
+  const animatedStyle = _require(4036).useAnimatedStyle(S);
+  let obj3 = sharedValue(4146);
   const name = obj3.useName(stateFromStores);
   if (null != stateFromStores) {
     if (null != name) {
@@ -61,26 +61,26 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
       obj = { isLargeAvatar: null, onPress: null };
       obj[0] = tmp5;
       obj[1] = isQuestRendered.onAvatarPress;
-      const items2 = [callback(tmp9(15420), obj), ];
+      const items2 = [callback(tmp9(15495), obj), ];
       obj1 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj1[0] = items3;
       const obj2 = { userId: null, username: null };
       obj2[0] = stateFromStores.id;
       obj2[1] = name;
-      obj1[1] = callback(tmp9(15421), obj2);
-      items2[1] = callback(tmp9(4162).View, obj1);
+      obj1[1] = callback(tmp9(15496), obj2);
+      items2[1] = callback(tmp9(4036).View, obj1);
       obj[1] = items2;
     }
     return tmp11(tmp12, obj);
   }
   obj3 = { style: items4, children: null };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(15419), { isLarge: !isQuestRendered }), ];
+  const items5 = [callback(sharedValue(15494), { isLarge: !isQuestRendered }), ];
   const obj4 = { style: items6, children: null };
   items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj4[1] = callback(View, { style: tmp.placeholder });
-  items5[1] = callback(sharedValue(4162).View, obj4);
+  items5[1] = callback(sharedValue(4036).View, obj4);
   obj3[1] = items5;
   obj = obj3;
 });

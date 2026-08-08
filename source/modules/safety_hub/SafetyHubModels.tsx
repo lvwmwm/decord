@@ -1,9 +1,9 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7806
+// Function ID: 7807
 // Name: ContentIdType
 // Dependencies: [2]
 
-// Module 7746 (ContentIdType)
+// Module 7806 (ContentIdType)
 const result = require("set").fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");
 
 export const ContentIdType = { MESSAGE: "message" };

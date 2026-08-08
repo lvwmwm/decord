@@ -1,9 +1,9 @@
-// Module ID: 4635
-// Function ID: 4636
+// Module ID: 4637
+// Function ID: 4638
 // Name: MessageEmbedTypes
 // Dependencies: [676, 2]
 
-// Module 4635 (MessageEmbedTypes)
+// Module 4637 (MessageEmbedTypes)
 import { MessageEmbedTypes } from "ME";
 import set from "set";
 

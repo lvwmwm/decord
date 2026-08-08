@@ -1,10 +1,10 @@
-// Module ID: 8939
-// Function ID: 8940
+// Module ID: 8999
+// Function ID: 9000
 // Name: _isDefaultChannelThresholdMetAfterDelete
-// Dependencies: [5, 1891, 5241, 5242, 676, 5240, 5248, 506, 4640, 1236, 2]
+// Dependencies: [5, 1891, 5242, 5243, 676, 5241, 5249, 506, 4642, 1236, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8939 (_isDefaultChannelThresholdMetAfterDelete)
+// Module 8999 (_isDefaultChannelThresholdMetAfterDelete)
 import fetchOnboardingPrompts from "fetchOnboardingPrompts";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleUpdate from "handleUpdate";
@@ -34,7 +34,7 @@ function _isDefaultChannelThresholdMetAfterDelete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ function _isChattableChannelThresholdMetAfterChannelChange() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -281,7 +281,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -374,7 +374,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
             obj4[0] = tmp54;
             return obj4;
           } else {
-            obj = callback(4640);
+            obj = callback(4642);
             obj5 = { title: null, body: null };
             const intl = guildId(1236).intl;
             obj5[0] = intl.string(guildId(1236).t.ut7sq0);

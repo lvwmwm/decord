@@ -1,10 +1,10 @@
-// Module ID: 14624
-// Function ID: 14625
+// Module ID: 14694
+// Function ID: 14695
 // Name: onServerTrendingNotificationSettingsChanged
 // Dependencies: [3941, 676, 3974, 698, 2]
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 14624 (onServerTrendingNotificationSettingsChanged)
+// Module 14694 (onServerTrendingNotificationSettingsChanged)
 import { NotificationSettingsUpdateType as closure_3 } from "AccountNotificationFlags";
 import { AnalyticEvents } from "ME";
 

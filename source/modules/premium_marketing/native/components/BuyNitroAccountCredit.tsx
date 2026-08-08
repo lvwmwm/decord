@@ -1,8 +1,8 @@
-// Module ID: 12611
-// Function ID: 12612
-// Dependencies: [19, 1903, 3953, 6801, 1905, 21, 4302, 712, 589, 1414, 7578, 2]
+// Module ID: 12681
+// Function ID: 12682
+// Dependencies: [19, 1903, 3953, 6861, 1905, 21, 4303, 712, 589, 1414, 7638, 2]
 
-// Module 12611
+// Module 12681
 import mergeGuildAvatar from "mergeGuildAvatar";
 import reset from "reset";
 import addEntitlement from "addEntitlement";
@@ -44,7 +44,7 @@ const memoResult = require("noop").memo(function BuyNitroAccountCredit() {
     return flag;
   });
   obj = { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 };
-  return jsx(importDefault(7578), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
+  return jsx(importDefault(7638), { creditListContainerStyle: tmp.creditList, currentSubscription: stateFromStores1, entitlements: stateFromStores, hasPremiumGroup: stateFromStores2 });
 });
 const result = require("reset").fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroAccountCredit.tsx");
 

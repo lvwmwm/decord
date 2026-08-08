@@ -1,9 +1,9 @@
-// Module ID: 13658
-// Function ID: 13659
+// Module ID: 13728
+// Function ID: 13729
 // Name: readFavoriteGIFs
 // Dependencies: [685, 676, 589, 1341, 12, 1342, 595, 11, 2]
 
-// Module 13658 (readFavoriteGIFs)
+// Module 13728 (readFavoriteGIFs)
 import MAX_FAVORITES from "MAX_FAVORITES";
 import { ID_REGEX } from "ME";
 

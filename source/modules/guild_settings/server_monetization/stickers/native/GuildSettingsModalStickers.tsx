@@ -1,9 +1,9 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16651
+// Function ID: 16652
 // Name: BoostedGuildTiers
-// Dependencies: [19, 17, 1891, 3929, 1903, 676, 3977, 21, 1236, 16575, 7635, 12725, 4302, 712, 1609, 589, 8926, 16577, 5762, 4194, 4298, 4197, 4712, 16578, 7907, 4710, 5707, 5373, 4821, 9782, 1297, 4140, 5380, 16584, 2]
+// Dependencies: [19, 17, 1891, 3929, 1903, 676, 3977, 21, 1236, 16652, 7695, 12795, 4303, 712, 1609, 589, 8986, 16654, 5822, 4195, 4299, 4198, 4714, 16655, 7967, 4712, 5767, 5374, 4823, 9848, 1297, 4146, 5381, 16661, 2]
 
-// Module 16574 (BoostedGuildTiers)
+// Module 16651 (BoostedGuildTiers)
 import get_ActivityIndicator from "useLoadGuildStickersWithCreator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

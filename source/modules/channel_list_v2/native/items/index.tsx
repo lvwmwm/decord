@@ -1,9 +1,9 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15236
+// Function ID: 15237
 // Name: CategoryChannel
-// Dependencies: [2, 15167, 15168, 15183]
+// Dependencies: [2, 15237, 15238, 15256]
 
-// Module 15166 (CategoryChannel)
+// Module 15236 (CategoryChannel)
 const result = require("ThreadChannel").fileFinishedImporting("modules/channel_list_v2/native/items/index.tsx");
 
 export const CategoryChannel = require("renderCategoryItem").CategoryChannel;

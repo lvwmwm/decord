@@ -1,9 +1,9 @@
-// Module ID: 6975
-// Function ID: 6976
+// Module ID: 7035
+// Function ID: 7036
 // Name: FeaturedSubblockType
 // Dependencies: [2]
 
-// Module 6975 (FeaturedSubblockType)
+// Module 7035 (FeaturedSubblockType)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/FeaturedSubblockType.tsx");
 
 export const FeaturedSubblockType = { CATEGORY: 0, [0]: "CATEGORY" };

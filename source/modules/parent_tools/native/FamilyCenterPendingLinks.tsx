@@ -1,10 +1,10 @@
-// Module ID: 14099
-// Function ID: 14100
+// Module ID: 14169
+// Function ID: 14170
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [19, 17, 6937, 21, 4302, 712, 7277, 11260, 1236, 2284, 4298, 7278, 4844, 4507, 14100, 1988, 1297, 9811, 14101, 14098, 14102, 14093, 2]
+// Dependencies: [19, 17, 6997, 21, 4303, 712, 7337, 11326, 1236, 2284, 4299, 7338, 4846, 4509, 14170, 1988, 1297, 9877, 14171, 14168, 14172, 14163, 2]
 // Exports: default
 
-// Module 14099 (FamilyCenterPendingLinkRow)
+// Module 14169 (FamilyCenterPendingLinkRow)
 import "registerAsset";
 import { View } from "registerAsset";
 import { UserLinkStatus } from "items";
@@ -19,7 +19,7 @@ const require = arg1;
 function FamilyCenterPendingLinkRow(otherUser) {
   let str = otherUser.otherUser;
   const tmp = callback3();
-  str(7277);
+  str(7337);
   if (undefined === str) {
     return null;
   } else {
@@ -41,9 +41,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj[3] = tmp.actionButton;
       const obj1 = { size: null, disableColor: true, source: null };
       obj1[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj1[2] = tmp2(14098);
+      obj1[2] = tmp2(14168);
       obj[4] = closure_5(tmp5(1297).Icon, obj1);
-      let tmp8Result = tmp17(tmp5(4844).PressableOpacity, obj);
+      let tmp8Result = tmp17(tmp5(4846).PressableOpacity, obj);
       let tmp14 = tmp17;
     } else {
       let tmp12Result = null;
@@ -67,9 +67,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj[3] = items;
         const obj3 = { size: null, disableColor: true, source: null };
         obj3[0] = tmp5(1297).Icon.Sizes.SMALL;
-        obj3[2] = tmp2(9811);
+        obj3[2] = tmp2(9877);
         obj[4] = closure_5(tmp5(1297).Icon, obj3);
-        tmp12Result = tmp12(tmp5(4844).PressableOpacity, obj);
+        tmp12Result = tmp12(tmp5(4846).PressableOpacity, obj);
       }
       const items1 = [tmp12Result, ];
       tmp14 = closure_5;
@@ -91,9 +91,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj5[3] = tmp.actionButton;
       const obj7 = { size: null, disableColor: true, source: null };
       obj7[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj7[2] = tmp2(14098);
+      obj7[2] = tmp2(14168);
       obj5[4] = tmp14(tmp5(1297).Icon, obj7);
-      items1[1] = tmp14(tmp5(4844).PressableOpacity, obj5);
+      items1[1] = tmp14(tmp5(4846).PressableOpacity, obj5);
       obj4[0] = items1;
       tmp8Result = closure_6(closure_7, obj4);
       const tmp8 = closure_6;
@@ -102,9 +102,9 @@ function FamilyCenterPendingLinkRow(otherUser) {
     const obj8 = { otherUser: null, actions: null };
     obj8[0] = str;
     obj8[1] = tmp8Result;
-    return tmp14(tmp2(14093), obj8);
+    return tmp14(tmp2(14163), obj8);
   }
-  tmp4 = importDefault(7278)();
+  tmp4 = importDefault(7338)();
 }
 ({ jsx: c5, jsxs: closure_6, Fragment: error } = jsxProd);
 createCacheKey = { container: { marginTop: 24 }, content: null, header: null };
@@ -122,9 +122,9 @@ const result = require("items").fileFinishedImporting("modules/parent_tools/nati
 
 export default function FamilyCenterPendingLinks() {
   const tmp = createCacheKey();
-  let obj = require(7277) /* useUserIdsForLinkStatus */;
+  let obj = require(7337) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11260) /* useAgeSpecificText */;
+  require(11326) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
   intl.formatToPlainString(importDefault(2284).IkAgkG, obj);
@@ -136,7 +136,7 @@ export default function FamilyCenterPendingLinks() {
     const obj1 = { style: null, variant: "eyebrow", color: "text-default", children: null };
     obj1[0] = tmp.header;
     obj1[3] = tmp6;
-    const items = [callback(require(4298) /* Text */.Text, obj1), ];
+    const items = [callback(require(4299) /* Text */.Text, obj1), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.content;
     obj2[1] = usersForLinkStatus.map((id) => callback(closure_10, { otherUser: id }, "pending-" + id.id));

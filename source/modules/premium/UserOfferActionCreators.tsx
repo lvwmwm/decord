@@ -1,10 +1,10 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7592
+// Function ID: 7593
 // Name: _fetchUserOffer
-// Dependencies: [5, 7266, 1905, 676, 500, 709, 698, 530, 7268, 1208, 4117, 1358, 1355, 2]
+// Dependencies: [5, 7326, 1905, 676, 500, 709, 698, 530, 7328, 1208, 4123, 1358, 1355, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 7532 (_fetchUserOffer)
+// Module 7592 (_fetchUserOffer)
 import dispatcher from "dispatcher";
 import createFromServer from "createFromServer";
 import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_5 } from "GuildFeatures";
@@ -43,7 +43,7 @@ function _fetchUserOffer() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -69,7 +69,7 @@ function _fetchUserOffer() {
                   flag = true;
                 }
                 if (obj1 === undefined) {
-                  obj1 = { offerId: "Array", paymentGatewayOverride: "PX_8" };
+                  obj1 = { offerId: "r", paymentGatewayOverride: "accessibilityRole" };
                 }
                 throwTypeErrorResult = retries;
                 throwTypeErrorResult = createFromServer;
@@ -84,7 +84,7 @@ function _fetchUserOffer() {
                 let error;
                 discount_id = 1;
                 c12 = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -290,7 +290,7 @@ function _fetchExistingChurnDiscountOffer() {
     c4 = 0;
     let obj5 = fromServer(709);
     obj5.dispatch({ type: "BILLING_USER_OFFER_FETCH_FAIL" });
-    yield "T";
+    yield "HermesInternal";
     const offer = arg1.body.offer;
     let closure_0 = offer;
     if (offer == null) {

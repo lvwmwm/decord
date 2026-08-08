@@ -1,10 +1,10 @@
-// Module ID: 10312
-// Function ID: 10313
+// Module ID: 10378
+// Function ID: 10379
 // Name: getSafetyAlertsSettingOrDefault
-// Dependencies: [1340, 1903, 9603, 10285, 2]
+// Dependencies: [1340, 1903, 9668, 10351, 2]
 // Exports: getInappropriateConversationTakeoverForChannel, getSafetyAlertsSettingOrDefault, shouldShowInappropriateConversationTakeoverForChannelRecord, shouldShowTakeoverForWarnings
 
-// Module 10312 (getSafetyAlertsSettingOrDefault)
+// Module 10378 (getSafetyAlertsSettingOrDefault)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -28,7 +28,7 @@ export const getSafetyAlertsSettingOrDefault = function getSafetyAlertsSettingOr
   if (flag == null) {
     flag = true;
   }
-  let userIsTeen = require(10285) /* trackViewedEvent */.getUserIsTeen();
+  let userIsTeen = require(10351) /* trackViewedEvent */.getUserIsTeen();
   if (!userIsTeen) {
     userIsTeen = true === isStaffResult;
   }

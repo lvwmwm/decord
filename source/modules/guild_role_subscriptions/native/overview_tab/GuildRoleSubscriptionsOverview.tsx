@@ -1,10 +1,10 @@
-// Module ID: 15565
-// Function ID: 15566
+// Module ID: 15640
+// Function ID: 15641
 // Name: serverNameHook
-// Dependencies: [19, 4992, 4122, 1891, 21, 4298, 15566, 1236, 7591, 14377, 15567, 647, 5811, 5215, 4641, 1222, 2]
+// Dependencies: [19, 4994, 4128, 1891, 21, 4299, 15641, 1236, 7651, 14447, 15642, 647, 5871, 5216, 4643, 1222, 2]
 // Exports: default
 
-// Module 15565 (serverNameHook)
+// Module 15640 (serverNameHook)
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import initialize from "initialize";
@@ -13,7 +13,7 @@ import { jsx } from "jsxProd";
 
 const require = arg1;
 function serverNameHook(children) {
-  return jsx(require(4298) /* Text */.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
+  return jsx(require(4299) /* Text */.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }
 class RoleSubscriptionsUnavailableNotice {
   constructor(arg0) {
@@ -31,15 +31,15 @@ function PurchasePage(arg0) {
   let gatedChannelId;
   let guildId;
   ({ guildId, gatedChannelId } = arg0);
-  let obj = importDefault(7591);
+  let obj = importDefault(7651);
   const storeFront = obj.useNativeIAPPayments().storeFront;
   let country;
   if (storeFront != null) {
     country = storeFront.country;
   }
   obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null };
-  obj[4] = jsx(importDefault(15567), { guildId, gatedChannelId });
-  return jsx(require(14377) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null });
+  obj[4] = jsx(importDefault(15642), { guildId, gatedChannelId });
+  return jsx(require(14447) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null });
 }
 const result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
 

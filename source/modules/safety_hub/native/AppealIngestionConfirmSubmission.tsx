@@ -1,10 +1,10 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11308
+// Function ID: 11309
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 11214, 676, 21, 4302, 589, 11219, 1236, 11234, 11243, 7744, 4298, 4270, 11241, 1988, 709, 11237, 11238, 2]
+// Dependencies: [19, 17, 11280, 676, 21, 4303, 589, 11285, 1236, 11300, 11309, 7804, 4299, 4271, 11307, 1988, 709, 11303, 11304, 2]
 // Exports: default
 
-// Module 11242 (AppealIngestionConfirmSubmission)
+// Module 11308 (AppealIngestionConfirmSubmission)
 import "set";
 import { View } from "AppealIngestionActivitySummary";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";
@@ -25,7 +25,7 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   let obj = require(589) /* initialize */;
   const items = [handleSafetyHubRequestAgeVerificationResetModalAction];
   let stateFromStores = obj.useStateFromStores(items, () => store.getAppealClassificationId());
-  let obj1 = require(11219) /* useSafetyHubClassifications */;
+  let obj1 = require(11285) /* useSafetyHubClassifications */;
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
@@ -47,13 +47,13 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
   const intl = tmp2(1236).intl;
   const intl2 = tmp2(1236).intl;
   const stringResult = intl.string(require(1236) /* getSystemLocale */.t["C5q+pW"]);
-  const items3 = [callback(require(11234) /* AppealIngestionModal */.AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(require(1236) /* getSystemLocale */.t["G2g/g5"]) }), ];
+  const items3 = [callback(require(11300) /* AppealIngestionModal */.AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(require(1236) /* getSystemLocale */.t["G2g/g5"]) }), ];
   obj = { style: tmp.container, children: null };
   obj = { reasons: null };
   const stringResult1 = intl2.string(require(1236) /* getSystemLocale */.t["G2g/g5"]);
   const tmp12 = View;
-  const tmp14 = importDefault(11243);
-  const items4 = [require(7744) /* parseMessageEmbedForProps */.getAppealSignalDisplayText(stateFromStores1), stateFromStores2];
+  const tmp14 = importDefault(11309);
+  const items4 = [require(7804) /* parseMessageEmbedForProps */.getAppealSignalDisplayText(stateFromStores1), stateFromStores2];
   obj[0] = items4.filter((arg0) => arg0.length > 0);
   const items5 = [callback(tmp14, obj), , , ];
   if (!isDsaEligible) {
@@ -62,17 +62,17 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
     if (tmp11Result) {
       obj1 = { flaggedContent: null };
       obj1[0] = flagged_content;
-      tmp11Result = tmp11(tmp13(11237), obj1);
+      tmp11Result = tmp11(tmp13(11303), obj1);
     }
     const obj2 = { children: null };
     items5[2] = tmp11Result;
     const obj3 = { classification: null };
     obj3[0] = safetyHubClassification.classification;
-    items5[3] = tmp11(tmp13(11238), obj3);
+    items5[3] = tmp11(tmp13(11304), obj3);
     obj[1] = items5;
     items3[1] = tmp10(tmp12, obj);
     obj2[0] = items3;
-    return tmp10(tmp2(11234).AppealIngestionModalScreen, obj2);
+    return tmp10(tmp2(11300).AppealIngestionModalScreen, obj2);
   } else {
     const obj4 = { variant: "heading-md/normal", color: "text-link", style: null, onPress: null, children: null };
     obj4[2] = tmp.detailsAction;
@@ -83,10 +83,10 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
           let obj = callback(709);
           obj = { type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE", userInput };
           obj.dispatch(obj);
-          callback(4270).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+          callback(4271).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
         },
         onClose() {
-          return callback(4270).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+          return callback(4271).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
         }
       };
       return obj.openLazy(callback(paths[15])(paths[14], paths.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj);
@@ -99,6 +99,6 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
       stringResult2 = intl3.string(tmp2(1236).t.uoQFIp);
     }
     obj4[4] = stringResult2;
-    tmp11Result = tmp11(tmp2(4298).Text, obj4);
+    tmp11Result = tmp11(tmp2(4299).Text, obj4);
   }
 };

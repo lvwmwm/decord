@@ -1,9 +1,9 @@
-// Module ID: 4292
-// Function ID: 4293
+// Module ID: 4293
+// Function ID: 4294
 // Name: get defaultRules
-// Dependencies: [4293, 4733, 12, 4734, 8034, 2]
+// Dependencies: [4294, 4735, 12, 4736, 8094, 2]
 
-// Module 4292 (get defaultRules)
+// Module 4293 (get defaultRules)
 import importDefaultResult from "apply";
 import importDefaultResult1 from "apply";
 import importDefaultResult2 from "apply";
@@ -38,17 +38,17 @@ import importDefaultResult29 from "apply";
 let closure_3 = ["url", "autolink", "link", "mailto", "tel"];
 let obj = { enableBuildOverrides: false, enableEmojiClick: true };
 let closure_5 = require("apply").once(() => {
-  const items = [importDefault(4293)({ enableBuildOverrides: true })];
-  const items1 = [importDefault(4734).RULES, ];
+  const items = [importDefault(4294)({ enableBuildOverrides: true })];
+  const items1 = [importDefault(4736).RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_6 = require("apply").once(() => {
   const obj = importDefault(12);
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return obj.omit(importDefault(4733)(items1), "paragraph", "newline");
+  return obj.omit(importDefault(4735)(items1), "paragraph", "newline");
 });
 let closure_7 = require("apply").once(() => {
   let obj = {};
@@ -57,15 +57,15 @@ let closure_7 = require("apply").once(() => {
   obj.shouldCloseDefaultModals = true;
   obj.shouldStopPropagation = true;
   const merged1 = Object.assign({});
-  const items = [importDefault(4293)(obj), ];
+  const items = [importDefault(4294)(obj), ];
   obj = { codeBlock: null };
-  obj = { react: importDefault(4734).RULES.text.react };
+  obj = { react: importDefault(4736).RULES.text.react };
   obj[0] = obj;
   items[1] = obj;
-  const items1 = [importDefault(4734).CHANNEL_TOPIC_RULES, ];
-  const tmp = importDefault(4293);
+  const items1 = [importDefault(4736).CHANNEL_TOPIC_RULES, ];
+  const tmp = importDefault(4294);
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_8 = require("apply").once(() => {
   let obj = {};
@@ -74,98 +74,98 @@ let closure_8 = require("apply").once(() => {
   obj.shouldCloseDefaultModals = true;
   obj.shouldStopPropagation = true;
   const merged1 = Object.assign({ emojiFocusable: false });
-  const items = [importDefault(4293)(obj), ];
+  const items = [importDefault(4294)(obj), ];
   obj = { codeBlock: null };
-  obj = { react: importDefault(4734).RULES.text.react };
+  obj = { react: importDefault(4736).RULES.text.react };
   obj[0] = obj;
   items[1] = obj;
-  const items1 = [importDefault(4734).CHANNEL_TOPIC_RULES, ];
-  const tmp = importDefault(4293);
+  const items1 = [importDefault(4736).CHANNEL_TOPIC_RULES, ];
+  const tmp = importDefault(4294);
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_9 = require("apply").once(() => {
   const obj = {};
   const merged = Object.assign(obj);
   obj.enableEmojiClick = false;
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).VOICE_CHANNEL_STATUS_RULES, ];
-  const tmp = importDefault(4293);
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).VOICE_CHANNEL_STATUS_RULES, ];
+  const tmp = importDefault(4294);
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_10 = require("apply").once(() => {
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).EMBED_TITLE_RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).EMBED_TITLE_RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_11 = require("apply").once(() => {
   const obj = importDefault(12);
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).EMBED_TITLE_RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).EMBED_TITLE_RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return obj.omit(importDefault(4733)(items1), closure_3);
+  return obj.omit(importDefault(4735)(items1), closure_3);
 });
 let closure_12 = require("apply").once(() => {
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).INLINE_REPLY_RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).INLINE_REPLY_RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_13 = require("apply").once(() => {
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).GUILD_VERIFICATION_FORM_RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).GUILD_VERIFICATION_FORM_RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_14 = require("apply").once(() => {
   const obj = {};
   const merged = Object.assign(obj);
   obj.shouldStopPropagation = true;
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).GUILD_EVENT_RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).GUILD_EVENT_RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_15 = require("apply").once(() => importDefault(12).omit(callback10(), "subtext"));
 let closure_16 = require("apply").once(() => {
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).AUTO_MODERATION_SYSTEM_MESSAGE_RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).AUTO_MODERATION_SYSTEM_MESSAGE_RULES, ];
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  return importDefault(4733)(items1);
+  return importDefault(4735)(items1);
 });
 let closure_17 = require("apply").once(() => {
-  const items = [importDefault(4293)(obj)];
-  const items1 = [importDefault(4734).RULES, ];
+  const items = [importDefault(4294)(obj)];
+  const items1 = [importDefault(4736).RULES, ];
   const tmp = importDefault(12);
   items1[HermesBuiltin.arraySpread(items, 1)] = {};
-  const items2 = [importDefault(4733)(items1), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ...closure_3];
+  const items2 = [importDefault(4735)(items1), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ...closure_3];
   return tmp.omit.apply(items2);
 });
 obj = { text: require("parseLink").RULES.text };
-let closure_18 = require("apply").once(() => importAll(8034).reactParserFor(callback()));
-let closure_19 = require("apply").once(() => importAll(8034).reactParserFor(callback3()));
-let closure_20 = require("apply").once(() => importAll(8034).reactParserFor(callback4()));
-let closure_21 = require("apply").once(() => importAll(8034).reactParserFor(callback5()));
-let closure_22 = require("apply").once(() => importAll(8034).reactParserFor(callback6()));
-let closure_23 = require("apply").once(() => importAll(8034).reactParserFor(callback7()));
-let closure_24 = require("apply").once(() => importAll(8034).reactParserFor(callback8()));
-let closure_25 = require("apply").once(() => importAll(8034).reactParserFor(callback9()));
-let closure_26 = require("apply").once(() => importAll(8034).reactParserFor(callback10()));
-let closure_27 = require("apply").once(() => importAll(8034).reactParserFor(callback12()));
-let closure_28 = require("apply").once(() => importAll(8034).reactParserFor(callback2()));
-let closure_29 = require("apply").once(() => importAll(8034).astParserFor(callback()));
-let closure_30 = require("apply").once(() => importAll(8034).astParserFor(callback3()));
-let closure_31 = require("apply").once(() => importAll(8034).astParserFor(callback6()));
-let closure_32 = require("apply").once(() => importAll(8034).astParserFor(callback7()));
-let closure_33 = require("apply").once(() => importAll(8034).astParserFor(callback8()));
-let closure_34 = require("apply").once(() => importAll(8034).astParserFor(callback12()));
+let closure_18 = require("apply").once(() => importAll(8094).reactParserFor(callback()));
+let closure_19 = require("apply").once(() => importAll(8094).reactParserFor(callback3()));
+let closure_20 = require("apply").once(() => importAll(8094).reactParserFor(callback4()));
+let closure_21 = require("apply").once(() => importAll(8094).reactParserFor(callback5()));
+let closure_22 = require("apply").once(() => importAll(8094).reactParserFor(callback6()));
+let closure_23 = require("apply").once(() => importAll(8094).reactParserFor(callback7()));
+let closure_24 = require("apply").once(() => importAll(8094).reactParserFor(callback8()));
+let closure_25 = require("apply").once(() => importAll(8094).reactParserFor(callback9()));
+let closure_26 = require("apply").once(() => importAll(8094).reactParserFor(callback10()));
+let closure_27 = require("apply").once(() => importAll(8094).reactParserFor(callback12()));
+let closure_28 = require("apply").once(() => importAll(8094).reactParserFor(callback2()));
+let closure_29 = require("apply").once(() => importAll(8094).astParserFor(callback()));
+let closure_30 = require("apply").once(() => importAll(8094).astParserFor(callback3()));
+let closure_31 = require("apply").once(() => importAll(8094).astParserFor(callback6()));
+let closure_32 = require("apply").once(() => importAll(8094).astParserFor(callback7()));
+let closure_33 = require("apply").once(() => importAll(8094).astParserFor(callback8()));
+let closure_34 = require("apply").once(() => importAll(8094).astParserFor(callback12()));
 obj = {
   combineAndInjectMentionRule(arg0, arg1) {
     const items = [arg0, ];
     items[HermesBuiltin.arraySpread(arg1, 1)] = {};
-    return importDefault(4733)(items);
+    return importDefault(4735)(items);
   },
   createReactRules: require("MarkupText"),
   defaultReactRuleOptions: obj

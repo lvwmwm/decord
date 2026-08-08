@@ -1,8 +1,8 @@
-// Module ID: 9885
-// Function ID: 9886
-// Dependencies: [19, 17, 9867, 21, 4302, 9871, 712, 9864, 589, 9868, 9886, 8661, 8473, 8466, 5371, 1236, 2]
+// Module ID: 9951
+// Function ID: 9952
+// Dependencies: [19, 17, 9933, 21, 4303, 9937, 712, 9930, 589, 9934, 9952, 8721, 8533, 8526, 5372, 1236, 2]
 
-// Module 9885
+// Module 9951
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import getFormatFromUrl from "getFormatFromUrl";
@@ -13,9 +13,9 @@ const require = arg1;
 let c3 = importAllResult;
 let closure_7 = createCacheKey.createStyles((height) => {
   let obj = { item: null, placeholder: null };
-  obj = { height, flexDirection: "row", gap: require(9871) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingBottom: require(9871) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING };
+  obj = { height, flexDirection: "row", gap: require(9937) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, paddingBottom: require(9937) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING };
   obj[0] = obj;
-  obj = { backgroundColor: importDefault(712).colors.BORDER_SUBTLE, height: height - require(9871) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, borderRadius: importDefault(712).radii.xs, flex: 1 };
+  obj = { backgroundColor: importDefault(712).colors.BORDER_SUBTLE, height: height - require(9937) /* transformFavoriteGifUrl */.GIF_PICKER_GUTTER_SPACING, borderRadius: importDefault(712).radii.xs, flex: 1 };
   obj[1] = obj;
   return obj;
 });

@@ -1,9 +1,9 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10411
+// Function ID: 10412
 // Name: updateGiftCode
-// Dependencies: [9547, 676, 4187, 3883, 4536, 709, 10346, 589, 2]
+// Dependencies: [9612, 676, 4188, 3883, 4538, 709, 10412, 589, 2]
 
-// Module 10345 (updateGiftCode)
+// Module 10411 (updateGiftCode)
 import frozen from "frozen";
 import ME from "ME";
 import { Store } from "initialize";
@@ -22,7 +22,7 @@ function updateGiftCode(giftCode) {
   } else {
     const result1 = set(code, fromServer);
     if (null != fromServer.expiresAt) {
-      const timeout = new code(4187).Timeout();
+      const timeout = new code(4188).Timeout();
       closure_7[code] = timeout;
       value = obj.get(code);
       if (null != value) {
@@ -127,9 +127,9 @@ function resolveMessageGiftCodes(message, arg1) {
       return false;
     }
   }
-  let obj = require(4536) /* _resolveGiftCode */;
-  const isGiftCodeEmbedResult = require(4536) /* _resolveGiftCode */.isGiftCodeEmbed(message);
-  const findGiftCodes = require(4536) /* _resolveGiftCode */.findGiftCodes;
+  let obj = require(4538) /* _resolveGiftCode */;
+  const isGiftCodeEmbedResult = require(4538) /* _resolveGiftCode */.isGiftCodeEmbed(message);
+  const findGiftCodes = require(4538) /* _resolveGiftCode */.findGiftCodes;
   if (isGiftCodeEmbedResult) {
     let embeds;
     if (message != null) {
@@ -252,10 +252,10 @@ prototype["getIsAccepting"] = function getIsAccepting(code) {
   return closure_10.includes(code);
 };
 prototype["getUserGiftCodesFetchingForSKUAndPlan"] = function getUserGiftCodesFetchingForSKUAndPlan(skuId, subscriptionPlanId) {
-  return set.has(require(4536) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+  return set.has(require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
 };
 prototype["getUserGiftCodesLoadedAtForSKUAndPlan"] = function getUserGiftCodesLoadedAtForSKUAndPlan(skuId, subscriptionPlanId) {
-  const obj = require(4536) /* _resolveGiftCode */;
+  const obj = require(4538) /* _resolveGiftCode */;
   return table2[obj.makeComboId(obj, skuId, subscriptionPlanId)];
 };
 prototype["getResolvingCodes"] = function getResolvingCodes() {
@@ -360,7 +360,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     let skuId;
     let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.add(require(4536) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+    set.add(require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
   },
   GIFT_CODES_FETCH_SUCCESS: function handleGiftCodesFetchSuccess(giftCodes) {
     let skuId;
@@ -368,7 +368,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     giftCodes = giftCodes.giftCodes;
     ({ skuId, subscriptionPlanId } = giftCodes);
     const item = giftCodes.forEach(updateGiftCode);
-    const comboId = require(4536) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId);
+    const comboId = require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId);
     closure_13[comboId] = Date.now();
     set.delete(comboId);
   },
@@ -376,7 +376,7 @@ const giftCodeStore = new GiftCodeStore(require("dispatcher"), {
     let skuId;
     let subscriptionPlanId;
     ({ skuId, subscriptionPlanId } = arg0);
-    set.delete(require(4536) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
+    set.delete(require(4538) /* _resolveGiftCode */.makeComboId(skuId, subscriptionPlanId));
   },
   MESSAGE_CREATE: handleMessage,
   MESSAGE_UPDATE: handleMessage,

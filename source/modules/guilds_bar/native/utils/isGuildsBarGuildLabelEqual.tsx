@@ -1,10 +1,10 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15418
+// Function ID: 15419
 // Name: isGuildsBarGuildLabelEqual
 // Dependencies: [2]
 // Exports: default
 
-// Module 15343 (isGuildsBarGuildLabelEqual)
+// Module 15418 (isGuildsBarGuildLabelEqual)
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/utils/isGuildsBarGuildLabelEqual.tsx");
 
 export default function isGuildsBarGuildLabelEqual(count, count2) {

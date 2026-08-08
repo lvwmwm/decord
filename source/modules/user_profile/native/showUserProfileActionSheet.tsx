@@ -1,10 +1,10 @@
-// Module ID: 8723
-// Function ID: 8724
+// Module ID: 8783
+// Function ID: 8784
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5343, 3938, 1903, 1988, 3974, 8724, 4270, 8736, 2]
+// Dependencies: [5, 5344, 3938, 1903, 1988, 3974, 8784, 4271, 8796, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8723 (showUserProfileActionSheet)
+// Module 8783 (showUserProfileActionSheet)
 import explicitContentFromProto from "explicitContentFromProto";
 import upsertRelationship from "upsertRelationship";
 
@@ -16,7 +16,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
     const isBlockedResult = upsertRelationship.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = upsertRelationship.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      let obj = importDefault(4270);
+      let obj = importDefault(4271);
       const _HermesInternal = HermesInternal;
       obj = {};
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -27,15 +27,15 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       }
       obj.speedBumpType = str2;
       obj.openedAt = timestamp;
-      obj.openLazy(tmp2(1988)(8724, tmp3.paths), combined, obj);
+      obj.openLazy(tmp2(1988)(8784, tmp3.paths), combined, obj);
     }
   }
-  const tmp15 = require(1988) /* asyncRequireImpl */(8736, dependencyMap.paths);
+  const tmp15 = require(1988) /* asyncRequireImpl */(8796, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
   obj.openedAt = timestamp;
-  importDefault(4270).openLazy(tmp15, combined1, obj, "replaceAll");
+  importDefault(4271).openLazy(tmp15, combined1, obj, "replaceAll");
 }
 require("processCallbacks").addPostConnectionCallback;
 const result = require("upsertRelationship").fileFinishedImporting("modules/user_profile/native/showUserProfileActionSheet.tsx");
@@ -64,7 +64,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -99,7 +99,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
             outer1_6(userId);
           }
           paths = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         paths = tmp;

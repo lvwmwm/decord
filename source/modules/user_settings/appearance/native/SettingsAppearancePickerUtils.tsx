@@ -1,16 +1,16 @@
-// Module ID: 14463
-// Function ID: 14464
+// Module ID: 14533
+// Function ID: 14534
 // Name: getMaxColors
-// Dependencies: [19, 505, 4235, 4115, 4146, 4145, 712, 1339, 4005, 1236, 2]
+// Dependencies: [19, 505, 4236, 4121, 4152, 4151, 712, 1339, 4005, 1236, 2]
 // Exports: convertThemesToAnimatedThemes, useLaunchWelcomeSystemTheme
 
-// Module 14463 (getMaxColors)
+// Module 14533 (getMaxColors)
 import noop from "noop";
 import { ThemeTypes } from "sum";
 
 const require = arg1;
 function getMaxColors() {
-  const allMobileThemes = require(4235) /* getCustomThemesName */.getAllMobileThemes();
+  const allMobileThemes = require(4236) /* getCustomThemesName */.getAllMobileThemes();
   let num = 0;
   const iter = allMobileThemes[Symbol.iterator]();
   const nextResult = iter.next();
@@ -21,14 +21,14 @@ function getMaxColors() {
     let tmp5 = require;
     let tmp6 = dependencyMap;
     let tmp7 = dependencyMap;
-    if (require(4115) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+    if (require(4121) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
       let _Math3 = Math;
       let tmp14 = num;
       num = Math.max(1, num);
     } else {
       let tmp15 = tmp4;
       let tmp16 = tmp6;
-      if (tmp5(4115).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+      if (tmp5(4121).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
         let _Math2 = Math;
         let tmp12 = nextResult;
         let tmp13 = num;
@@ -36,7 +36,7 @@ function getMaxColors() {
       } else {
         let tmp8 = tmp4;
         let tmp9 = tmp6;
-        if (tmp5(4115).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+        if (tmp5(4121).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
           let _Math = Math;
           let tmp10 = nextResult;
           let tmp11 = num;
@@ -235,19 +235,19 @@ export const convertThemesToAnimatedThemes = function convertThemesToAnimatedThe
     let tmp6 = require;
     let tmp7 = dependencyMap;
     let tmp8 = dependencyMap;
-    if (require(4115) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
+    if (require(4121) /* ClientThemeType */.ClientThemeType.STANDARD_BACKGROUND_THEME === type) {
       let tmp17 = convertStandardThemeToAnimatedTheme;
       let tmp18 = nextResult;
       let arr = items1.push(convertStandardThemeToAnimatedTheme(tmp5, items, BACKGROUND_SURFACE_HIGH));
     } else {
       let tmp9 = tmp7;
-      if (tmp6(4115).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
+      if (tmp6(4121).ClientThemeType.BACKGROUND_GRADIENT_PRESET === type) {
         let tmp14 = convertBackgroundGradientToAnimatedTheme;
         let tmp15 = nextResult;
         arr = items1.push(convertBackgroundGradientToAnimatedTheme(tmp5, num, num2));
       } else {
         let tmp10 = tmp7;
-        if (tmp6(4115).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
+        if (tmp6(4121).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT === type) {
           let tmp11 = convertCustomBackgroundGradientToAnimatedTheme;
           let tmp12 = nextResult;
           let arr1 = items1.push(convertCustomBackgroundGradientToAnimatedTheme(tmp5, num, num2));

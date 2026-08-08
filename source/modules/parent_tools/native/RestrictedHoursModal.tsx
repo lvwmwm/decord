@@ -1,10 +1,10 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16355
+// Function ID: 16356
 // Name: RestrictedHoursLogoutBlockingLayer
-// Dependencies: [32, 19, 17, 1903, 21, 4302, 712, 5763, 1609, 16279, 589, 4162, 4303, 1236, 2284, 7747, 16280, 4013, 4298, 5723, 16281, 5767, 16277, 4709, 11269, 2]
+// Dependencies: [32, 19, 17, 1903, 21, 4303, 712, 5823, 1609, 16356, 589, 4036, 4304, 1236, 2284, 7807, 16357, 4013, 4299, 5783, 16358, 5827, 16354, 4711, 11335, 2]
 // Exports: default
 
-// Module 16278 (RestrictedHoursLogoutBlockingLayer)
+// Module 16355 (RestrictedHoursLogoutBlockingLayer)
 import _slicedToArray from "_slicedToArray";
 import NavigationStack from "NavigationStack";
 import get_ActivityIndicator from "ManaContext";
@@ -22,7 +22,7 @@ function RestrictedHoursLogoutBlockingLayer(visible) {
   if (visible.visible) {
     const obj = { style: null, pointerEvents: "auto", accessibilityLiveRegion: "polite", children: null };
     obj[0] = tmp.logoutBlockingLayer;
-    obj[3] = callback2(require(5763) /* ActivityIndicator */.ActivityIndicator, { size: "large" });
+    obj[3] = callback2(require(5823) /* ActivityIndicator */.ActivityIndicator, { size: "large" });
     tmp2 = callback2(closure_5, obj);
   }
   return tmp2;
@@ -205,7 +205,7 @@ let result = require("get ActivityIndicator").fileFinishedImporting("modules/par
 export default function RestrictedHoursModal() {
   let _slicedToArray;
   let tmp4;
-  const tmp = importDefault(16281)();
+  const tmp = importDefault(16358)();
   let callback = tmp;
   importDefault = React.useRef(false);
   const dependencyMap = React.useRef(true);
@@ -220,18 +220,18 @@ export default function RestrictedHoursModal() {
     if (!tmp4.current) {
       tmp.current = true;
       callback(true);
-      const obj = tmp4(5767);
-      tmp4(5767).logout("restricted_hours").finally(() => {
+      const obj = tmp4(5827);
+      tmp4(5827).logout("restricted_hours").finally(() => {
         if (ref.current) {
           closure_1.current = false;
           callback(false);
         }
       });
-      const logoutResult = tmp4(5767).logout("restricted_hours");
+      const logoutResult = tmp4(5827).logout("restricted_hours");
     }
   }, []);
   importDefault = tmp4;
-  let obj = callback(5723);
+  let obj = callback(5783);
   const items = [callback, tmp4];
   const items1 = [tmp];
   const navigatorScreens = obj.useNavigatorScreens(() => ({
@@ -249,11 +249,11 @@ export default function RestrictedHoursModal() {
       current = tmp4.current;
     }
     if (!current) {
-      const result = callback(16277).closeRestrictedHoursModal();
-      const obj = callback(16277);
+      const result = callback(16354).closeRestrictedHoursModal();
+      const obj = callback(16354);
     }
   }, items1);
-  importDefault(4709)(() => true);
+  importDefault(4711)(() => true);
   obj = { screens: navigatorScreens, initialRouteName: constants.MAIN };
-  return callback2(callback(11269).Modal, obj);
+  return callback2(callback(11335).Modal, obj);
 };

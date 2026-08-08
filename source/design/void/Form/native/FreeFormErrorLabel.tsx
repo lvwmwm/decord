@@ -1,10 +1,10 @@
-// Module ID: 8409
-// Function ID: 8410
+// Module ID: 8469
+// Function ID: 8470
 // Name: Label
-// Dependencies: [19, 21, 4007, 4147, 4298, 2]
+// Dependencies: [19, 21, 4007, 4153, 4299, 2]
 // Exports: default
 
-// Module 8409 (Label)
+// Module 8469 (Label)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -26,5 +26,5 @@ export default function Label(style) {
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  return jsx(nodeText(4298).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(4299).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

@@ -1,9 +1,9 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8095
+// Function ID: 8096
 // Name: saferParse
-// Dependencies: [8036, 4000, 2]
+// Dependencies: [8096, 4000, 2]
 
-// Module 8035 (saferParse)
+// Module 8095 (saferParse)
 function saferParse(arg0, arg1, inline) {
   let ast;
   let hasBailedAst;
@@ -19,10 +19,10 @@ function saferParse(arg0, arg1, inline) {
   `;
     }
     const tmp8 = arg0(text, inline);
-    const flattenAstResult = require(8036) /* collectAst */.flattenAst(inline, tmp8);
-    const obj = require(8036) /* collectAst */;
-    const obj2 = require(8036) /* collectAst */;
-    ({ hasBailedAst, ast } = require(8036) /* collectAst */.constrainAst(flattenAstResult));
+    const flattenAstResult = require(8096) /* collectAst */.flattenAst(inline, tmp8);
+    const obj = require(8096) /* collectAst */;
+    const obj2 = require(8096) /* collectAst */;
+    ({ hasBailedAst, ast } = require(8096) /* collectAst */.constrainAst(flattenAstResult));
     if (tmp6) {
       ast = tmp6(ast, inline.inline, hasBailedAst);
     }

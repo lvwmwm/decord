@@ -1,10 +1,10 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 7015
+// Function ID: 7016
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsCrepeEnabled, useIsCrepeEnabled
 
-// Module 6955 (apexExperiment)
+// Module 7015 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-03-crepe", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

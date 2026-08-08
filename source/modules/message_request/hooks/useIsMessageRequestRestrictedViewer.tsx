@@ -1,14 +1,14 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11800
+// Function ID: 11801
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [4517, 3980, 3987, 11735, 2]
+// Dependencies: [4519, 3980, 3987, 11801, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 11734 (useIsMessageRequestRestrictedViewer)
+// Module 11800 (useIsMessageRequestRestrictedViewer)
 const result = require("SettingsDefaultFeature").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequestRestrictedViewer.tsx");
 
 export const useIsMessageRequestRestrictedViewer = function useIsMessageRequestRestrictedViewer(ChatInputGuardMessageRequest) {
-  let obj = require(4517) /* useAgeVerificationRunner */;
+  let obj = require(4519) /* useAgeVerificationRunner */;
   const isExplicitlyVerifiedAdult = obj.useIsExplicitlyVerifiedAdult();
   const isSettingTeenByDefault = require(3980) /* isFeatureAgeGated */.useIsSettingTeenByDefault(require(3987) /* SettingsDefaultFeature */.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
   const obj2 = require(3980) /* isFeatureAgeGated */;

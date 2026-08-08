@@ -1,45 +1,45 @@
-// Module ID: 8133
-// Function ID: 8134
+// Module ID: 8193
+// Function ID: 8194
 // Name: defaultRules
-// Dependencies: [4000, 8134, 4741, 4759, 4760, 4292, 2]
+// Dependencies: [4000, 8194, 4743, 4761, 4762, 4293, 2]
 // Exports: renderChangelogMessageMarkup
 
-// Module 8133 (defaultRules)
+// Module 8193 (defaultRules)
 const require = arg1;
 function defaultRules(uri) {
   let obj = {};
-  const merged = Object.assign(_require(8134).baseRules);
+  const merged = Object.assign(_require(8194).baseRules);
   obj = {};
   const merged1 = Object.assign(image);
-  if (typeof _require(8134).customRules.image === "function") {
-    const customRules = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.image === "function") {
+    const customRules = tmp(8194).customRules;
     image = customRules.image(uri);
   } else {
-    image = tmp(8134).customRules.image;
+    image = tmp(8194).customRules.image;
   }
   const merged2 = Object.assign(image);
   obj.image = obj;
   obj = {};
   const merged3 = Object.assign(link);
-  if (typeof _require(8134).customRules.link === "function") {
-    const customRules2 = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.link === "function") {
+    const customRules2 = tmp(8194).customRules;
     link = customRules2.link(uri);
   } else {
-    link = tmp(8134).customRules.link;
+    link = tmp(8194).customRules.link;
   }
   const merged4 = Object.assign(link);
   obj.link = obj;
   const merged5 = Object.assign(list);
-  if (typeof _require(8134).customRules.list === "function") {
-    const customRules3 = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.list === "function") {
+    const customRules3 = tmp(8194).customRules;
     list = customRules3.list(uri);
   } else {
-    list = tmp(8134).customRules.list;
+    list = tmp(8194).customRules.list;
   }
   const merged6 = Object.assign(list);
   obj.list = {};
   obj.interpolation = {
-    order: importDefault(4741).order,
+    order: importDefault(4743).order,
     match(arg0) {
       return regex.exec(arg0);
     },
@@ -80,38 +80,38 @@ function defaultRules(uri) {
     obj[2] = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
     return obj;
   };
-  if (typeof _require(8134).customRules.lheading === "function") {
-    const customRules4 = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.lheading === "function") {
+    const customRules4 = tmp(8194).customRules;
     lheading = customRules4.lheading(uri);
   } else {
-    lheading = tmp(8134).customRules.lheading;
+    lheading = tmp(8194).customRules.lheading;
   }
   const merged8 = Object.assign(lheading);
   obj.lheading = obj3;
   const merged9 = Object.assign(heading);
-  if (typeof _require(8134).customRules.heading === "function") {
-    const customRules5 = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.heading === "function") {
+    const customRules5 = tmp(8194).customRules;
     heading = customRules5.heading(uri);
   } else {
-    heading = tmp(8134).customRules.heading;
+    heading = tmp(8194).customRules.heading;
   }
   const merged10 = Object.assign(heading);
   obj.heading = {};
   const merged11 = Object.assign(blockQuote);
-  if (typeof _require(8134).customRules.blockQuote === "function") {
-    const customRules6 = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.blockQuote === "function") {
+    const customRules6 = tmp(8194).customRules;
     blockQuote = customRules6.blockQuote(uri);
   } else {
-    blockQuote = tmp(8134).customRules.blockQuote;
+    blockQuote = tmp(8194).customRules.blockQuote;
   }
   const merged12 = Object.assign(blockQuote);
   obj.blockQuote = {};
   const merged13 = Object.assign(paragraph);
-  if (typeof _require(8134).customRules.paragraph === "function") {
-    const customRules7 = tmp(8134).customRules;
+  if (typeof _require(8194).customRules.paragraph === "function") {
+    const customRules7 = tmp(8194).customRules;
     paragraph = customRules7.paragraph(uri);
   } else {
-    paragraph = tmp(8134).customRules.paragraph;
+    paragraph = tmp(8194).customRules.paragraph;
   }
   const merged14 = Object.assign(paragraph);
   obj.paragraph = {};
@@ -159,11 +159,11 @@ export default {
       obj[2] = outer1_1(outer1_2[0]).parseInline(arg1, formatted, inline);
       return obj;
     };
-    if (typeof _require(8134).customRules.lheading === "function") {
-      const customRules = tmp3(8134).customRules;
+    if (typeof _require(8194).customRules.lheading === "function") {
+      const customRules = tmp3(8194).customRules;
       lheading = customRules.lheading(uri);
     } else {
-      lheading = tmp3(8134).customRules.lheading;
+      lheading = tmp3(8194).customRules.lheading;
     }
     obj = { lheading: null };
     const merged2 = Object.assign(lheading);
@@ -178,15 +178,15 @@ export default {
     obj = {};
     const merged1 = Object.assign(importDefault(4000).defaultRules.newline);
     obj.newline = obj;
-    obj.text = importDefault(4741);
-    obj.list = importDefault(4759);
-    obj.subtext = importDefault(4760);
+    obj.text = importDefault(4743);
+    obj.list = importDefault(4761);
+    obj.subtext = importDefault(4762);
     const merged2 = Object.assign(obj);
     return obj;
   }
 };
 export const renderChangelogMessageMarkup = function renderChangelogMessageMarkup(content, uri) {
-  let obj = importDefault(4292);
+  let obj = importDefault(4293);
   obj = {};
   const merged = Object.assign(defaultRules(uri));
   if (null != arg2) {

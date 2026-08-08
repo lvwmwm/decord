@@ -1,10 +1,10 @@
-// Module ID: 10612
-// Function ID: 10613
+// Module ID: 10678
+// Function ID: 10679
 // Name: isWatchTogetherApplication
-// Dependencies: [4327, 2]
+// Dependencies: [4328, 2]
 // Exports: default
 
-// Module 10612 (isWatchTogetherApplication)
+// Module 10678 (isWatchTogetherApplication)
 import items3 from "items3";
 
 let c0;

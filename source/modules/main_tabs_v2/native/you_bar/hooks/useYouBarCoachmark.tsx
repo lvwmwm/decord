@@ -1,10 +1,10 @@
-// Module ID: 15402
-// Function ID: 15403
+// Module ID: 15477
+// Function ID: 15478
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4118, 1369, 1236, 1358, 4162, 12401, 1481, 589, 12892, 4377, 5962, 15403, 8593, 2]
+// Dependencies: [32, 19, 4124, 1369, 1236, 1358, 4036, 12468, 1481, 589, 12962, 4379, 6022, 15478, 8653, 2]
 // Exports: useYouBarCoachmark
 
-// Module 15402 (useYouBarCoachmark)
+// Module 15477 (useYouBarCoachmark)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";

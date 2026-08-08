@@ -1,10 +1,10 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 8870
+// Function ID: 8871
 // Name: VideoComponent
-// Dependencies: [32, 19, 17, 21, 4302, 712, 8811, 4013, 8784, 5761, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 8871, 4013, 8844, 5821, 1236, 2]
 // Exports: createVideoControls
 
-// Module 8810 (VideoComponent)
+// Module 8870 (VideoComponent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -148,7 +148,7 @@ class Video extends PureComponent {
 const prototype = Video.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
-  this._renderTask = self(5761).runAfterInteractions(() => {
+  this._renderTask = self(5821).runAfterInteractions(() => {
     self.setState({ postponeRender: false });
   });
 };

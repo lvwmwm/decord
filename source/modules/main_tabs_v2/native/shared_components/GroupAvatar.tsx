@@ -1,10 +1,10 @@
-// Module ID: 12247
-// Function ID: 12248
+// Module ID: 12314
+// Function ID: 12315
 // Name: AnimatedContainer
-// Dependencies: [19, 17, 4294, 21, 4302, 712, 5157, 1348, 4147, 5328, 647, 4162, 4303, 4711, 4298, 5267, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 712, 5158, 1348, 4153, 5329, 647, 4036, 4304, 4713, 4299, 5268, 2]
 // Exports: default
 
-// Module 12247 (AnimatedContainer)
+// Module 12314 (AnimatedContainer)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -123,7 +123,7 @@ function AnimatedContainer(scale) {
 function GroupMemberCount(count) {
   const tmp = callback3(importDefault(1348)("GroupAvatar"));
   let obj = { style: tmp.avatarWrapper, children: null };
-  obj = { style: tmp.overflowCount, children: callback2(require(4298) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
+  obj = { style: tmp.overflowCount, children: callback2(require(4299) /* Text */.Text, { variant: "text-sm/semibold", children: items }) };
   items = ["+", count.count];
   obj[1] = callback(View, obj);
   return callback(View, obj);
@@ -147,7 +147,7 @@ function GroupMemberAvatar(guildId) {
     obj = { style: null, source: null };
     obj[0] = tmp3.avatar;
     obj[1] = memo;
-    obj[1] = callback(user(5267), obj);
+    obj[1] = callback(user(5268), obj);
     tmp5 = callback(View, obj);
   }
   return tmp5;
@@ -216,7 +216,7 @@ let closure_12 = createCacheKey.createStyles((arg0) => {
   const obj4 = { shadowColor: BLACK1, shadowOpacity: null, shadowOffset: null, shadowRadius: null };
   let DARK_03_LIGHT_02;
   if (!arg0) {
-    DARK_03_LIGHT_02 = require(5157) /* result */.DARK_03_LIGHT_02;
+    DARK_03_LIGHT_02 = require(5158) /* result */.DARK_03_LIGHT_02;
   }
   obj4[1] = DARK_03_LIGHT_02;
   let obj5;

@@ -1,9 +1,9 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9471
+// Function ID: 9472
 // Name: DisplayNameStyleColorPreset
 // Dependencies: [2]
 
-// Module 9406 (DisplayNameStyleColorPreset)
+// Module 9471 (DisplayNameStyleColorPreset)
 const result = require("set").fileFinishedImporting("modules/display_name_styles/types.tsx");
 
 export const DisplayNameStyleColorPreset = { TEAL: "#18b491", CYAN: "#3598db", VIOLET: "#995ab8", PINK: "#e91d63", YELLOW: "#f1c410", ORANGE: "#e74c3c" };

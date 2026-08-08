@@ -1,10 +1,10 @@
-// Module ID: 7358
-// Function ID: 7359
+// Module ID: 7418
+// Function ID: 7419
 // Name: useCancelSubscriptionParams
-// Dependencies: [19, 7357, 514, 2]
+// Dependencies: [19, 7417, 514, 2]
 // Exports: default
 
-// Module 7358 (useCancelSubscriptionParams)
+// Module 7418 (useCancelSubscriptionParams)
 import noop from "noop";
 
 const require = arg1;
@@ -12,7 +12,7 @@ const result = require("v1").fileFinishedImporting("modules/billing/native/subsc
 
 export default function useCancelSubscriptionParams(arg0) {
   let closure_0 = arg0;
-  const tmp = importDefault(7357)();
+  const tmp = importDefault(7417)();
   importDefault = tmp;
   const items = [arg0, tmp];
   return React.useMemo(() => {

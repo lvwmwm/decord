@@ -1,9 +1,9 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 11034
+// Function ID: 11035
 // Name: PlatformIcon
-// Dependencies: [5, 32, 19, 17, 5249, 1975, 1911, 1218, 1372, 4996, 1971, 3929, 5124, 676, 21, 4302, 712, 4238, 4998, 1416, 4147, 1297, 4762, 4492, 4298, 1236, 5123, 10969, 5671, 9071, 10970, 10971, 12, 4005, 10972, 38, 4002, 8552, 4728, 7907, 5122, 589, 5125, 5231, 698, 4496, 4270, 5956, 10975, 10425, 709, 4507, 10558, 1988, 9476, 10979, 5396, 10980, 5712, 4712, 2]
+// Dependencies: [5, 32, 19, 17, 5250, 1975, 1911, 1218, 1372, 4998, 1971, 3929, 5125, 676, 21, 4303, 712, 4239, 5000, 1416, 4153, 1297, 4764, 4494, 4299, 1236, 5124, 11035, 5731, 9131, 11036, 11037, 12, 4005, 11038, 38, 4002, 8612, 4730, 7967, 5123, 589, 5126, 5232, 698, 4498, 4271, 6016, 11041, 10491, 709, 4509, 10624, 1988, 9541, 11045, 5397, 11046, 5772, 4714, 2]
 
-// Module 10968 (PlatformIcon)
+// Module 11034 (PlatformIcon)
 import _getSystemLocale from "_getSystemLocale";
 import apply from "apply";
 import getAvatarURL from "getAvatarURL";
@@ -42,20 +42,20 @@ let metroImportAll;
 const require = arg1;
 function PlatformIcon(platformType) {
   const tmp = createCacheKey();
-  let obj = importDefault(4998);
+  let obj = importDefault(5000);
   const value = obj.get(platformType.platformType);
-  const tmp3 = importDefault(4238)();
+  const tmp3 = importDefault(4239)();
   const tmp5 = require;
   const obj2 = require(1416) /* getAvatarURL */;
   const icon = value.icon;
-  const source = obj2.makeSource(require(4147) /* AccessibilityAnnouncer */.isThemeLight(tmp3) ? icon.lightPNG : icon.darkPNG);
+  const source = obj2.makeSource(require(4153) /* AccessibilityAnnouncer */.isThemeLight(tmp3) ? icon.lightPNG : icon.darkPNG);
   obj = { source, style: tmp.platformIcon, disableColor: true };
   return callback2(tmp5(1297).Icon, obj);
 }
 function ChannelName(channel) {
   channel = channel.channel;
   const tmp = createCacheKey();
-  let obj = require(4762) /* getChannelIcon */;
+  let obj = require(4764) /* getChannelIcon */;
   const channelIcon = obj.getChannelIcon(channel);
   obj = { style: items, children: null };
   items = [tmp.channelName, channel.style];
@@ -67,10 +67,10 @@ function ChannelName(channel) {
     tmp8 = callback2(tmp2(1297).Icon, obj);
   }
   const items1 = [tmp8, ];
-  const tmp5 = importDefault(4492)(channel);
+  const tmp5 = importDefault(4494)(channel);
   const tmp6 = closure_30;
   const tmp7 = closure_8;
-  items1[1] = callback2(require(4298) /* Text */.Text, { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4492)(channel) });
+  items1[1] = callback2(require(4299) /* Text */.Text, { variant: "heading-lg/semibold", color: "text-default", style: tmp.channelNameText, lineClamp: 1, children: importDefault(4494)(channel) });
   obj[1] = items1;
   return tmp6(tmp7, obj);
 }
@@ -120,7 +120,7 @@ function ConnectionsCheck(result) {
       } else {
         return null;
       }
-      obj = require(5123) /* officialApplicationIds */;
+      obj = require(5124) /* officialApplicationIds */;
       const obj1 = { connectionType: null, connectionMetadataField: null, operator: null, operatorText: null, value: null };
       obj1[0] = connectionType;
       obj1[1] = connectionMetadataField;
@@ -139,7 +139,7 @@ function ConnectionsCheck(result) {
       obj2[1] = str;
       obj2[2] = tmp.connectionsCheck;
       obj2[3] = formatResult;
-      tmp21Result = closure_29(require(4298) /* Text */.Text, obj2);
+      tmp21Result = closure_29(require(4299) /* Text */.Text, obj2);
       const tmp21 = closure_29;
     }
     return tmp21Result;
@@ -715,11 +715,11 @@ function ConnectedUserAccountOptions(account) {
   const tmp7 = callback(first.useState(1 === account.visibility), 2);
   first1 = tmp7[0];
   closure_8 = tmp7[1];
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     callback(!first1);
     callback2(first);
   });
-  let obj = importDefault(4998);
+  let obj = importDefault(5000);
   const value = obj.get(account.type);
   let tmp12;
   if (set.has(account.type)) {
@@ -731,7 +731,7 @@ function ConnectedUserAccountOptions(account) {
       _undefined(closure_0);
       outer1_1(outer1_2[40]).setFriendSync(account.type, account.id, closure_0);
     };
-    tmp12 = callback2(account(7907).FormSwitchRow, obj);
+    tmp12 = callback2(account(7967).FormSwitchRow, obj);
   }
   let tmp15;
   if (set2.has(account.type)) {
@@ -745,7 +745,7 @@ function ConnectedUserAccountOptions(account) {
       callback3(closure_0);
       outer1_1(outer1_2[40]).setShowActivity(account.type, account.id, closure_0);
     };
-    tmp15 = callback2(account(7907).FormSwitchRow, obj);
+    tmp15 = callback2(account(7967).FormSwitchRow, obj);
   }
   let tmp18;
   if (true === value.hasMetadata) {
@@ -766,7 +766,7 @@ function ConnectedUserAccountOptions(account) {
       }
       const result = outer1_1(outer1_2[40]).setMetadataVisibility(type, id, num);
     };
-    tmp18 = callback2(account(7907).FormSwitchRow, obj2);
+    tmp18 = callback2(account(7967).FormSwitchRow, obj2);
   }
   const obj3 = { style: tmp.accountConnectedPrivacyOptionsContainer, children: null };
   const obj4 = { label: null, value: null, onValueChange: null };
@@ -785,7 +785,7 @@ function ConnectedUserAccountOptions(account) {
     }
     outer1_1(outer1_2[40]).setVisibility(type, id, num);
   };
-  const items = [callback2(account(7907).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
+  const items = [callback2(account(7967).FormSwitchRow, obj4), tmp18, tmp15, tmp12];
   obj3[1] = items;
   return callback3(closure_8, obj3);
 }
@@ -857,9 +857,9 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     c14 = undefined;
     useState = undefined;
-    f86399 = undefined;
+    f86687 = undefined;
     useState = undefined;
-    f86400 = undefined;
+    f86688 = undefined;
     c19 = undefined;
     _handleAssignRole = function _handleAssignRole() {
       const self = this;
@@ -875,7 +875,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -908,7 +908,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
               return obj;
             } else {
               c0 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c0 = tmp;
@@ -980,7 +980,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp2;
     }), 2);
-    [tmp26, f86399] = tmp25;
+    [tmp26, f86687] = tmp25;
     tmp27 = onCloseModal(CHECKS_REQUIRED.useState(null), 2);
     [arr6, useState] = tmp27;
     tmp28 = role;
@@ -989,7 +989,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores3 = obj4.useStateFromStores(items3, () => member.getMember(guildId, stateFromStores2));
-    f86400 = stateFromStores3;
+    f86688 = stateFromStores3;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;

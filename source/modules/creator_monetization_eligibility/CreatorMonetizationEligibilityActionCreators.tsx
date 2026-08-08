@@ -1,10 +1,10 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16763
+// Function ID: 16764
 // Name: _createCreatorMonetizationEnableRequest
-// Dependencies: [5, 676, 4328, 530, 709, 5669, 2]
+// Dependencies: [5, 676, 4329, 530, 709, 5729, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 16686 (_createCreatorMonetizationEnableRequest)
+// Module 16763 (_createCreatorMonetizationEnableRequest)
 import fetchApplication from "fetchApplication";
 import { Endpoints } from "ME";
 import { ApplicationTypes } from "ApplicationTypes";
@@ -28,7 +28,7 @@ function _createCreatorMonetizationEnableRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ function _createCreatorMonetizationEnableRequest() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -125,7 +125,7 @@ function _acceptCreatorMonetizationTerms() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -160,7 +160,7 @@ function _acceptCreatorMonetizationTerms() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -196,7 +196,7 @@ function _acceptCreatorMonetizationTermsV() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ function _acceptCreatorMonetizationTermsV() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -329,7 +329,7 @@ function _requestRemoveMonetization() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -365,7 +365,7 @@ function _requestRemoveMonetization() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;

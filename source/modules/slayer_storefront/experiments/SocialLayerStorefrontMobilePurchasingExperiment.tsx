@@ -1,10 +1,10 @@
-// Module ID: 8153
-// Function ID: 8154
+// Module ID: 8213
+// Function ID: 8214
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobilePurchasing, useIsEligibleForSocialLayerStorefrontMobilePurchasing
 
-// Module 8153 (apexExperiment)
+// Module 8213 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-social-layer-storefront-mobile-purchasing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

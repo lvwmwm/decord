@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 64 (sizesDiffer)
-let closure_0 = { width: "Array", height: "PX_8" };
+let closure_0 = { width: "r", height: "accessibilityRole" };
 arg5.default = function sizesDiffer(arg0, arg1) {
   let size = arg0;
   if (!arg0) {

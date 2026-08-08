@@ -1,9 +1,9 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16580
+// Function ID: 16581
 // Name: _fetchGameCommunities
-// Dependencies: [12901, 14871, 5260, 14872, 15313, 12904, 12902, 2]
+// Dependencies: [12971, 14941, 5261, 14942, 15385, 12974, 12972, 2]
 
-// Module 16503 (_fetchGameCommunities)
+// Module 16580 (_fetchGameCommunities)
 import initialize from "initialize";
 import set from "set";
 import "initialize";
@@ -26,18 +26,18 @@ class MobileGameCommunitiesManager extends tmp2 {
 }
 const prototype = MobileGameCommunitiesManager.prototype;
 prototype["_fetchGameCommunities"] = function _fetchGameCommunities(result) {
-  const gameIdsForDetectedGames = require(14872) /* DETECTABLE_GAME_TO_APPLICATION_ID_MAP */.getGameIdsForDetectedGames(result);
+  const gameIdsForDetectedGames = require(14942) /* DETECTABLE_GAME_TO_APPLICATION_ID_MAP */.getGameIdsForDetectedGames(result);
   const timestamp = Date.now();
   const diff = timestamp - store.getLastFetchedAt();
   if (diff >= 86400000) {
     const dismissedGuildIds = store.getDismissedGuildIds();
     const _Array = Array;
-    const mobileGameCommunities = importAll(15313).fetchMobileGameCommunities(gameIdsForDetectedGames, Array.from(dismissedGuildIds), 6);
-    const obj3 = importAll(15313);
+    const mobileGameCommunities = importAll(15385).fetchMobileGameCommunities(gameIdsForDetectedGames, Array.from(dismissedGuildIds), 6);
+    const obj3 = importAll(15385);
   }
 };
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
-  const GameCommunityUpsellMultiExperiment = require(12904) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
+  const GameCommunityUpsellMultiExperiment = require(12974) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
   if (GameCommunityUpsellMultiExperiment.getConfig({ location: "MobileGameCommunitiesManager" }).enabled) {
     if (0 === store.getLastFetchedAt()) {
       const _Object = Object;
@@ -50,7 +50,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         return null != lastScannedAt;
       })) {
         const obj = {};
-        const ALL_DETECTABLE_APP_NAMES = require(12902) /* DetectableAppNames */.ALL_DETECTABLE_APP_NAMES;
+        const ALL_DETECTABLE_APP_NAMES = require(12972) /* DetectableAppNames */.ALL_DETECTABLE_APP_NAMES;
         for (const item10021 of ALL_DETECTABLE_APP_NAMES) {
           let tmp6 = initialize;
           obj[item10021] = initialize.isAppInstalled(item10021);
@@ -63,7 +63,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   }
 };
 prototype["handleLocalAppDetectionComplete"] = function handleLocalAppDetectionComplete(result) {
-  const GameCommunityUpsellMultiExperiment = require(12904) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
+  const GameCommunityUpsellMultiExperiment = require(12974) /* GAME_COMMUNITY_UPSELL_MULTI_EXPERIMENT */.GameCommunityUpsellMultiExperiment;
   if (GameCommunityUpsellMultiExperiment.getConfig({ location: "MobileGameCommunitiesManager" }).enabled) {
     const self = this;
     result = this._fetchGameCommunities(result.result);

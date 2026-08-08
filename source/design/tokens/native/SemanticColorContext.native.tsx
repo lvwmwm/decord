@@ -1,7 +1,7 @@
 // Module ID: 4006
 // Function ID: 4007
 // Name: getSemanticColorContextFromThemeContext
-// Dependencies: [688, 689, 4007, 4012, 4112, 2]
+// Dependencies: [688, 689, 4007, 4012, 4118, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
 // Module 4006 (getSemanticColorContextFromThemeContext)
@@ -17,7 +17,7 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
   const primaryColor = themeContext.primaryColor;
   const gradientThemeFromFlags = obj.getGradientThemeFromFlags(themeContext);
   ({ contrast, saturation, enabledExperiments } = themeContext);
-  let obj1 = require(4112) /* getGradientColorByPercentage */;
+  let obj1 = require(4118) /* getGradientColorByPercentage */;
   let gradientThemeMetadata = obj1.getGradientThemeMetadata(gradientThemeFromFlags, themeContext.gradient);
   if (null != primaryColor) {
     ({ primaryColor: primaryColor2, secondaryColor } = themeContext);

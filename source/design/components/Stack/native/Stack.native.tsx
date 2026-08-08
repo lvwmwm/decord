@@ -1,10 +1,10 @@
-// Module ID: 4710
-// Function ID: 4711
+// Module ID: 4712
+// Function ID: 4713
 // Name: Stack
-// Dependencies: [19, 17, 21, 4302, 2]
+// Dependencies: [19, 17, 21, 4303, 2]
 // Exports: Stack
 
-// Module 4710 (Stack)
+// Module 4712 (Stack)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

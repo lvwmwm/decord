@@ -1,10 +1,10 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 11346
+// Function ID: 11347
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1903, 8182, 4339, 1479, 10526, 10925, 5669, 11281, 7993, 1236, 11282, 8278, 8181, 10528, 11283, 11284, 1416, 1467, 11285, 5688, 10913, 6922, 10529, 4160, 1607, 10553, 5696, 4001, 1351, 2]
+// Dependencies: [32, 1903, 8242, 4341, 1479, 10592, 10991, 5729, 11347, 8053, 1236, 11348, 8338, 8241, 10594, 11349, 11350, 1416, 1467, 11351, 5748, 10979, 6982, 10595, 4166, 1607, 10619, 5756, 4001, 1351, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 11280 (createAppMessageEmbed)
+// Module 11346 (createAppMessageEmbed)
 import _slicedToArray from "_slicedToArray";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleFetchEmbeddedActivityShelfSuccess from "handleFetchEmbeddedActivityShelfSuccess";
@@ -30,8 +30,8 @@ export const getAppLinkGateResult = function getAppLinkGateResult(arg0) {
   const application = store.getApplication(appId);
   if (null == application) {
     if (false === obj.isFetchingApplication(appId)) {
-      const application1 = require(5669) /* fetchApplication */.fetchApplication(appId);
-      const obj6 = require(5669) /* fetchApplication */;
+      const application1 = require(5729) /* fetchApplication */.fetchApplication(appId);
+      const obj6 = require(5729) /* fetchApplication */;
     }
     return { state: "unavailable" };
   } else {
@@ -41,11 +41,11 @@ export const getAppLinkGateResult = function getAppLinkGateResult(arg0) {
       nsfwAllowed = currentUser.nsfwAllowed;
     }
     let messageResult = dependencyMap;
-    let obj1 = require(11281) /* ContentClassificationVisibility */;
+    let obj1 = require(11347) /* ContentClassificationVisibility */;
     const contentClassificationVisibility = obj1.getContentClassificationVisibility(application.contentClassification, channel, nsfwAllowed);
-    if (contentClassificationVisibility !== require(11281) /* ContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY) {
-      let intl = importDefault(7993)(theme).baseColors;
-      if (contentClassificationVisibility === tmp3(11281).ContentClassificationVisibility.BLOCK_UNDERAGE) {
+    if (contentClassificationVisibility !== require(11347) /* ContentClassificationVisibility */.ContentClassificationVisibility.DISPLAY) {
+      let intl = importDefault(8053)(theme).baseColors;
+      if (contentClassificationVisibility === tmp3(11347).ContentClassificationVisibility.BLOCK_UNDERAGE) {
         const intl3 = tmp3(1236).intl;
         let stringResult = intl3.string(tmp3(1236).t.LPOzxB);
       } else {
@@ -55,7 +55,7 @@ export const getAppLinkGateResult = function getAppLinkGateResult(arg0) {
       obj = { state: "blocked", model: null };
       obj = {};
       const merged = Object.assign(intl);
-      obj.displayType = tmp3(11282).AppMessageEmbedDisplayType.BLOCKED;
+      obj.displayType = tmp3(11348).AppMessageEmbedDisplayType.BLOCKED;
       obj.appId = "";
       obj.messageId = message.id;
       obj.title = null;
@@ -97,15 +97,15 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
   let theme;
   ({ message, app } = arg0);
   ({ theme, embedUrl } = arg0);
-  const baseColors = importDefault(7993)(theme).baseColors;
+  const baseColors = importDefault(8053)(theme).baseColors;
   ({ id, tags, maxParticipants, icon } = app);
   ({ name, bot } = app);
-  let obj = require(8278) /* getShelfBadgeTypeIfActive */;
+  let obj = require(8338) /* getShelfBadgeTypeIfActive */;
   const isEmbeddedAppResult = obj.isEmbeddedApp(app);
   if (isEmbeddedAppResult) {
     applicationAssetFetchState = applicationAssetFetchState.getApplicationAssetFetchState(id);
     if (applicationAssetFetchState === FetchState.NOT_FETCHED) {
-      let tmp2Result = tmp2(8181);
+      let tmp2Result = tmp2(8241);
       const assetIds = tmp2Result.fetchAssetIds(id, closure_11);
       return null;
     } else if (applicationAssetFetchState === tmp6.FETCHING) {
@@ -121,14 +121,14 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
     }
     const items = [];
     if (isEmbeddedAppResult) {
-      tmp2Result = tmp2(10528);
+      tmp2Result = tmp2(10594);
       if (tmp2Result.canLaunchFrame(app)) {
         obj = { id: "play_frame", label: null };
         const intl6 = tmp2(1236).intl;
         obj[1] = intl6.string(tmp2(1236).t.RscU7I);
         items.push(obj);
       } else {
-        const playInContext = tmp2(11283).getPlayInContext(id, message.channel_id);
+        const playInContext = tmp2(11349).getPlayInContext(id, message.channel_id);
         const isCurrentlyInInstance = playInContext.isCurrentlyInInstance;
         if (playInContext.canLaunchInChannel) {
           const string = tmp2(1236).intl.string;
@@ -152,21 +152,21 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
           obj2[1] = intl3.string(tmp2(1236).t.JeK1Wg);
           items.push(obj2);
         }
-        const tmp2Result1 = tmp2(11283);
+        const tmp2Result1 = tmp2(11349);
       }
     }
     ({ id: id2, bot: bot2 } = app);
     const joined = tags.join(" \u2219 ");
     if (tmp2Result2.isEmbeddedApp(app)) {
-      let assetIds1 = tmp2(8181).getAssetIds(id2, closure_11);
+      let assetIds1 = tmp2(8241).getAssetIds(id2, closure_11);
       if (assetIds1 == null) {
         assetIds1 = [];
       }
       const first = callback(assetIds1, 1)[0];
       let assetImage = null;
       if (null != first) {
-        assetImage = tmp2(8181).getAssetImage(id2, first, c12);
-        const tmp2Result4 = tmp2(8181);
+        assetImage = tmp2(8241).getAssetImage(id2, first, c12);
+        const tmp2Result4 = tmp2(8241);
       }
       if (null != assetImage) {
         const obj3 = { bannerRatio: "activity", staticBannerSrc: null };
@@ -175,19 +175,19 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
       }
       let appIconSrc = null;
       if (null != icon) {
-        appIconSrc = tmp2(11284).getAppIconSrc(id, icon, bot);
-        const tmp2Result5 = tmp2(11284);
+        appIconSrc = tmp2(11350).getAppIconSrc(id, icon, bot);
+        const tmp2Result5 = tmp2(11350);
       }
       let staticBannerSrc = appIconSrc;
       if (appIconSrc == null) {
         staticBannerSrc = obj7.staticBannerSrc;
       }
-      const tmp2Result3 = tmp2(8181);
+      const tmp2Result3 = tmp2(8241);
       const obj4 = {};
-      const appGradientColors = tmp2(11284).getAppGradientColors(staticBannerSrc);
+      const appGradientColors = tmp2(11350).getAppGradientColors(staticBannerSrc);
       const merged = Object.assign(baseColors);
       const merged1 = Object.assign(obj7);
-      obj4.displayType = tmp2(11282).AppMessageEmbedDisplayType.DISPLAY;
+      obj4.displayType = tmp2(11348).AppMessageEmbedDisplayType.DISPLAY;
       obj4.appId = app.id;
       obj4.messageId = message.id;
       obj4.title = null;
@@ -215,7 +215,7 @@ export const createAppMessageEmbed = function createAppMessageEmbed(arg0) {
       const tmp2Result7 = tmp2(1416);
     }
     obj7 = { bannerRatio: "bot", staticBannerSrc: null };
-    tmp2Result2 = tmp2(8278);
+    tmp2Result2 = tmp2(8338);
   }
   const intl = tmp2(1236).intl;
   formatToPlainStringResult = intl.string(tmp2(1236).t.RjceQU);
@@ -242,12 +242,12 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
     obj = { appId: null, channelId: null, analyticsLocations: null, referrerId: null, customId: null };
     obj[0] = appId.appId;
     obj[1] = appId.message.channel_id;
-    const items = [tmp2(5688).APP_MESSAGE_EMBED];
+    const items = [tmp2(5748).APP_MESSAGE_EMBED];
     obj[2] = items;
     obj[3] = id;
     obj[4] = value;
-    const result = require(11285) /* _joinOrStartActivityInChannel */.joinOrStartActivityInChannel(obj);
-    const obj11 = require(11285) /* _joinOrStartActivityInChannel */;
+    const result = require(11351) /* _joinOrStartActivityInChannel */.joinOrStartActivityInChannel(obj);
+    const obj11 = require(11351) /* _joinOrStartActivityInChannel */;
   } else if ("play_in_dm" === actionId) {
     let bot;
     if (application != null) {
@@ -257,22 +257,22 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
       obj = { appId: null, botId: null, analyticsLocations: null, commandOrigin: null, referrerId: null, customId: null };
       obj[0] = appId.appId;
       obj[1] = application.bot.id;
-      const items1 = [tmp2(5688).APP_MESSAGE_EMBED];
+      const items1 = [tmp2(5748).APP_MESSAGE_EMBED];
       obj[2] = items1;
-      obj[3] = require(6922) /* ApplicationCommandSectionType */.CommandOrigin.APP_MESSAGE_EMBED;
+      obj[3] = require(6982) /* ApplicationCommandSectionType */.CommandOrigin.APP_MESSAGE_EMBED;
       obj[4] = id;
       obj[5] = value;
-      const result1 = require(10913) /* _launchActivityInBotDM */.launchActivityInBotDM(obj);
-      const obj15 = require(10913) /* _launchActivityInBotDM */;
+      const result1 = require(10979) /* _launchActivityInBotDM */.launchActivityInBotDM(obj);
+      const obj15 = require(10979) /* _launchActivityInBotDM */;
     }
   } else if ("play_frame" === actionId) {
     let obj1 = { applicationId: null, surface: null };
     obj1[0] = appId.appId;
     obj1[1] = MAIN_SURFACE;
-    tmp2(10529).launchFrame(obj1);
-    const tmp2Result = tmp2(10529);
+    tmp2(10595).launchFrame(obj1);
+    const tmp2Result = tmp2(10595);
   } else if ("view_in_app_launcher" === actionId) {
-    const bestActiveInput = require(4160) /* getBestActiveInput */.getBestActiveInput();
+    const bestActiveInput = require(4166) /* getBestActiveInput */.getBestActiveInput();
     if (bestActiveInput != null) {
       let obj2 = { type: null, context: null };
       obj2[0] = tmp14(1607).KeyboardTypes.APP_LAUNCHER;
@@ -284,17 +284,17 @@ export const handleTapAppMessageEmbed = function handleTapAppMessageEmbed(appId)
       obj2[1] = obj3;
       bestActiveInput.openCustomKeyboard(obj2);
     }
-    const obj7 = require(4160) /* getBestActiveInput */;
+    const obj7 = require(4166) /* getBestActiveInput */;
     tmp14 = require;
   } else if ("add_app" === actionId) {
     if (null != application) {
-      let obj4 = require(10553) /* installApplication */;
+      let obj4 = require(10619) /* installApplication */;
       obj4 = { applicationId: null, customInstallUrl: null, installParams: null, integrationTypesConfig: null, source: "app_message_embed" };
       ({ id: obj6[0], customInstallUrl: obj6[1], installParams: obj6[2], integrationTypesConfig: obj6[3] } = application);
       obj4.installApplication(obj4);
     }
   } else if ("link_copied" === actionId) {
-    obj2 = require(5696) /* _copy */;
+    obj2 = require(5756) /* _copy */;
     obj2.copy(appId.embedUrl);
     obj3 = require(4001) /* presentAddedFriendToast */;
     obj3.presentLinkCopied();

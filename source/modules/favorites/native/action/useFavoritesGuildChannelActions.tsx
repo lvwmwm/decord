@@ -1,10 +1,10 @@
-// Module ID: 10129
-// Function ID: 10130
+// Module ID: 10195
+// Function ID: 10196
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [1218, 1971, 1375, 9645, 1894, 589, 9653, 2]
+// Dependencies: [1218, 1971, 1375, 9711, 1894, 589, 9719, 2]
 // Exports: default
 
-// Module 10129 (useFavoritesGuildChannelActions)
+// Module 10195 (useFavoritesGuildChannelActions)
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -16,7 +16,7 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   let hasAccess;
   let hasHigherPrivileges;
   const _require = channelId;
-  let obj = _require(9645);
+  let obj = _require(9711);
   const favoritesAccess = obj.useFavoritesAccess(FavoritesGuildActionSheet);
   ({ hasAccess, hasHigherPrivileges } = favoritesAccess);
   let result = _require(1894).canFavoriteChannelType(channelId, hasHigherPrivileges);
@@ -25,8 +25,8 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   const items = [initializeFromUserSettings];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_4.isFavorite(channelId.id));
   const obj3 = _require(589);
-  const isFavoritesGuildSelected = _require(9645).useIsFavoritesGuildSelected();
-  const obj4 = _require(9645);
+  const isFavoritesGuildSelected = _require(9711).useIsFavoritesGuildSelected();
+  const obj4 = _require(9711);
   const items1 = [trackCommunicationDisabled, fetchFingerprint];
   if (result) {
     result = obj5.useStateFromStores(items1, () => {
@@ -48,7 +48,7 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   if (tmp7) {
     tmp7 = !isFavoritesGuildSelected;
   }
-  const favoritesBetaTagDismissibleContent = tmp(9653).useFavoritesBetaTagDismissibleContent(tmp7);
+  const favoritesBetaTagDismissibleContent = tmp(9719).useFavoritesBetaTagDismissibleContent(tmp7);
   obj = { hasFavoritesAccess: hasAccess, canFavoriteChannel: result, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id, shouldShowBetaTag: favoritesBetaTagDismissibleContent.shouldShowBetaTag, dismissBetaTag: favoritesBetaTagDismissibleContent.dismissBetaTag };
   return obj;
 };

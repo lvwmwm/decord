@@ -1,10 +1,10 @@
-// Module ID: 14476
-// Function ID: 14477
+// Module ID: 14546
+// Function ID: 14547
 // Name: CircleMinusIcon
-// Dependencies: [19, 17, 21, 712, 4004, 14477, 14478, 2]
+// Dependencies: [19, 17, 21, 712, 4004, 14547, 14548, 2]
 // Exports: CircleMinusIcon
 
-// Module 14476 (CircleMinusIcon)
+// Module 14546 (CircleMinusIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,13 +29,13 @@ export const CircleMinusIcon = function CircleMinusIcon(color) {
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(14477) /* registerAsset */;
+  obj[0] = require(14547) /* registerAsset */;
   obj[1] = secondaryColor;
   obj[2] = style;
   const merged1 = Object.assign(merged);
   const items = [callback(require(4004) /* BaseIconImage */.BaseIconImage, obj), ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(14478) /* registerAsset */;
+  obj[0] = require(14548) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
   const items2 = [];

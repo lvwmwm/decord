@@ -1,10 +1,10 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10789
+// Function ID: 10790
 // Name: DoorExitIcon
-// Dependencies: [19, 21, 712, 4004, 10724, 2]
+// Dependencies: [19, 21, 712, 4004, 10790, 2]
 // Exports: DoorExitIcon
 
-// Module 10723 (DoorExitIcon)
+// Module 10789 (DoorExitIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const DoorExitIcon = function DoorExitIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10724) /* registerAsset */;
+  obj[0] = require(10790) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

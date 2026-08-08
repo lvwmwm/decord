@@ -1,10 +1,10 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 10728
+// Function ID: 10729
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1477, 500, 1621, 1609, 10263, 2]
+// Dependencies: [32, 19, 1477, 500, 1621, 1609, 10329, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 10662 (useStableSafeAreaInsets)
+// Module 10728 (useStableSafeAreaInsets)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

@@ -1,10 +1,10 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10388
+// Function ID: 10389
 // Name: EducationIcon
-// Dependencies: [19, 21, 712, 4004, 10321, 2]
+// Dependencies: [19, 21, 712, 4004, 10387, 2]
 // Exports: EducationIcon
 
-// Module 10322 (EducationIcon)
+// Module 10388 (EducationIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const EducationIcon = function EducationIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(10321) /* registerAsset */;
+  obj[0] = require(10387) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

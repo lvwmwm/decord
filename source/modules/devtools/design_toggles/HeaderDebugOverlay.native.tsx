@@ -1,10 +1,10 @@
-// Module ID: 5270
-// Function ID: 5271
+// Module ID: 5271
+// Function ID: 5272
 // Name: useHeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4302, 712, 5271, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5272, 4299, 2]
 // Exports: default
 
-// Module 5270 (useHeaderDebugOverlay)
+// Module 5271 (useHeaderDebugOverlay)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -53,7 +53,7 @@ export default function useHeaderDebugOverlay(arg0, arg1) {
     obj1[0] = items2;
     const obj2 = { variant: "text-xs/bold", color: "text-overlay-light", children: null };
     obj2[2] = tmp6;
-    obj1[1] = callback(require(4298) /* Text */.Text, obj2);
+    obj1[1] = callback(require(4299) /* Text */.Text, obj2);
     obj[1] = callback(View, obj1);
     items1[1] = callback(View, obj);
     obj[0] = items1;
@@ -61,5 +61,5 @@ export default function useHeaderDebugOverlay(arg0, arg1) {
   } else {
     return null;
   }
-  tmp2 = importDefault(5271)("show_header_debug_info");
+  tmp2 = importDefault(5272)("show_header_debug_info");
 };

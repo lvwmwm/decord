@@ -1,9 +1,9 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 16904
+// Function ID: 16905
 // Name: handleAuthenticatorDelete
-// Dependencies: [5, 1218, 5260, 5772, 2]
+// Dependencies: [5, 1218, 5261, 5832, 2]
 
-// Module 16827 (handleAuthenticatorDelete)
+// Module 16904 (handleAuthenticatorDelete)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import fetchFingerprint from "fetchFingerprint";
 import "initialize";
@@ -30,7 +30,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -85,7 +85,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;
@@ -141,7 +141,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -173,7 +173,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;

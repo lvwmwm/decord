@@ -1,9 +1,9 @@
-// Module ID: 4108
-// Function ID: 4109
+// Module ID: 4114
+// Function ID: 4115
 // Name: ThemeAwareNitroWishlistingWumpusRive
-// Dependencies: [109, 19, 21, 4030, 4109, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4115, 4087, 2]
 
-// Module 4108 (ThemeAwareNitroWishlistingWumpusRive)
+// Module 4114 (ThemeAwareNitroWishlistingWumpusRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -77,7 +77,7 @@ const forwardRefResult = importAllResult.forwardRef(function ThemeAwareNitroWish
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/ThemeAwareNitroWishlistingWumpusRive.tsx");
 

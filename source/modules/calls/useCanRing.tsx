@@ -1,10 +1,10 @@
-// Module ID: 9174
-// Function ID: 9175
+// Module ID: 9234
+// Function ID: 9235
 // Name: useCanRingToGuildVoiceChannel
-// Dependencies: [1218, 4993, 1372, 1971, 5130, 3929, 4388, 3938, 4318, 676, 589, 9175, 5133, 4743, 2]
+// Dependencies: [1218, 4995, 1372, 1971, 5131, 3929, 4390, 3938, 4319, 676, 589, 9235, 5134, 4745, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 9174 (useCanRingToGuildVoiceChannel)
+// Module 9234 (useCanRingToGuildVoiceChannel)
 import fetchFingerprint from "fetchFingerprint";
 import callConnect from "callConnect";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -58,12 +58,12 @@ function useCanRingToGuildVoiceChannel(user, DisconnectedUserRow, stateFromStore
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const tmp5 = importDefault(4743);
+  const tmp5 = importDefault(4745);
   let guild_id;
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  let enabled = tmp4(9175).useExperiment({ guildId: guild_id, location: str }).enabled;
+  let enabled = tmp4(9235).useExperiment({ guildId: guild_id, location: str }).enabled;
   if (stateFromStores != null) {
     const type = stateFromStores.type;
   }
@@ -152,7 +152,7 @@ export const canRingUsersInChannel = function canRingUsersInChannel(channel) {
     call = call.getCall(channel.id);
     return null != call && null != call.messageId && !call.isCallUnavailable(channel.id);
   } else if (tmp === tmp2) {
-    let obj = importDefault(9175);
+    let obj = importDefault(9235);
     obj = { guildId: null, location: "ring" };
     obj[0] = channel.guild_id;
     let enabled = obj.getCurrentConfig(obj).enabled;

@@ -1,10 +1,10 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9271
+// Function ID: 9272
 // Name: ClickableGameIcon
-// Dependencies: [19, 17, 21, 4302, 712, 9207, 9218, 12132, 4298, 12136, 12137, 4002, 4270, 12138, 1988, 4844, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 9272, 9283, 12199, 4299, 12203, 12204, 4002, 4271, 12205, 1988, 4846, 2]
 // Exports: default
 
-// Module 9206 (ClickableGameIcon)
+// Module 9271 (ClickableGameIcon)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -24,9 +24,9 @@ function ClickableGameIcon(game) {
   enabled = undefined;
   ({ style, activityLevel } = game);
   const obj = { gameId: game.id, source: null, trackEntryPointImpression: null };
-  obj[1] = game(9218).GameProfileSources.GuildProfileGames;
+  obj[1] = game(9283).GameProfileSources.GuildProfileGames;
   obj[2] = enabled;
-  const tmp3Result = onPressFallback(9207)(obj);
+  const tmp3Result = onPressFallback(9272)(obj);
   dependencyMap = tmp3Result;
   if (enabled) {
     enabled = null != tmp3Result;
@@ -41,7 +41,7 @@ function ClickableGameIcon(game) {
       }
     }, items);
   }
-  return callback(onPressFallback(12132), { style, game, activityLevel, onPress });
+  return callback(onPressFallback(12199), { style, game, activityLevel, onPress });
 }
 function FavoriteGame(game) {
   let activityLevel;
@@ -51,7 +51,7 @@ function FavoriteGame(game) {
   let obj = { style: createCacheKey().favoriteGame, children: null };
   const items = [callback(ClickableGameIcon, { game, activityLevel, enabled: clickable }), ];
   obj = { variant: "text-sm/medium", color: "text-subtle", children: game.name };
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(View, obj);
 }
@@ -156,7 +156,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/n
 
 export default function GuildProfileGames(profile) {
   profile = profile.profile;
-  const gamesToDisplay = importDefault(12136)(profile).gamesToDisplay;
+  const gamesToDisplay = importDefault(12203)(profile).gamesToDisplay;
   let tmp4 = null;
   if (null != gamesToDisplay) {
     tmp4 = null;

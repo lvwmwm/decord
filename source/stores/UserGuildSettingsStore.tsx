@@ -1,10 +1,10 @@
-// Module ID: 4497
-// Function ID: 4498
+// Module ID: 4499
+// Function ID: 4500
 // Name: updateUserGuildSettingsInternal
-// Dependencies: [1963, 3931, 1376, 1372, 1891, 1903, 676, 3941, 4498, 685, 3932, 12, 1384, 709, 11, 589, 2]
+// Dependencies: [1963, 3931, 1376, 1372, 1891, 1903, 676, 3941, 4500, 685, 3932, 12, 1384, 709, 11, 589, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
-// Module 4497 (updateUserGuildSettingsInternal)
+// Module 4499 (updateUserGuildSettingsInternal)
 import initialize from "initialize";
 import storeThread from "storeThread";
 import createChannelRecord from "createChannelRecord";

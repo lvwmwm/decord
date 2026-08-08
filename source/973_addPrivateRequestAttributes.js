@@ -240,7 +240,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "T", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -572,7 +572,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                               obj1[2] = obj;
                               closure_0 = undefined;
-                              closure_0 = callback(/* F114410 */ function() { ... });
+                              closure_0 = callback(/* F114744 */ function() { ... });
                               let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                               const tmp4Result2 = tmp4(tmp5[3]);
                             } else {
@@ -743,7 +743,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                               obj1[2] = obj;
                               closure_0 = undefined;
-                              closure_0 = callback(/* F114410 */ function() { ... });
+                              closure_0 = callback(/* F114744 */ function() { ... });
                               let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                               const tmp4Result2 = tmp4(tmp5[3]);
                             } else {
@@ -991,7 +991,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "T", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -1330,7 +1330,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           let c5 = 0;
                           let c6 = 0;
                           let c4 = 0;
-                          return (/* F118451 */ function*() { ... })();
+                          return (/* F118793 */ function*() { ... })();
                         });
                         let startSpanManualResult = tmp4Result1.startSpanManual(obj1, function(arg0) {
                           const self = this;
@@ -1359,7 +1359,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (tmp) {
                             callback(arg0, first);
                           }
-                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F114414 */ function() { ... }, () => { ... });
+                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F114748 */ function() { ... }, () => { ... });
                         });
                         const tmp4Result3 = tmp4(tmp5[3]);
                       }
@@ -1573,7 +1573,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           let c5 = 0;
                           let c6 = 0;
                           let c4 = 0;
-                          return (/* F118451 */ function*() { ... })();
+                          return (/* F118793 */ function*() { ... })();
                         });
                         let startSpanManualResult = tmp4Result1.startSpanManual(obj1, function(arg0) {
                           const self = this;
@@ -1602,7 +1602,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (tmp) {
                             callback(arg0, first);
                           }
-                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F114414 */ function() { ... }, () => { ... });
+                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F114748 */ function() { ... }, () => { ... });
                         });
                         const tmp4Result3 = tmp4(tmp5[3]);
                       }
@@ -1761,7 +1761,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                                 obj1[2] = obj;
                                 closure_0 = undefined;
-                                closure_0 = callback(/* F114410 */ function() { ... });
+                                closure_0 = callback(/* F114744 */ function() { ... });
                                 let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                                 const tmp4Result2 = tmp4(tmp5[3]);
                               } else {
@@ -1932,7 +1932,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                                 obj1[2] = obj;
                                 closure_0 = undefined;
-                                closure_0 = callback(/* F114410 */ function() { ... });
+                                closure_0 = callback(/* F114744 */ function() { ... });
                                 let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                                 const tmp4Result2 = tmp4(tmp5[3]);
                               } else {

@@ -1,9 +1,9 @@
-// Module ID: 4098
-// Function ID: 4099
+// Module ID: 4104
+// Function ID: 4105
 // Name: GameServerHostingRive
-// Dependencies: [109, 19, 21, 4030, 4099, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4105, 4087, 2]
 
-// Module 4098 (GameServerHostingRive)
+// Module 4104 (GameServerHostingRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -74,7 +74,7 @@ const forwardRefResult = importAllResult.forwardRef(function GameServerHostingRi
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/GameServerHostingRive.tsx");
 

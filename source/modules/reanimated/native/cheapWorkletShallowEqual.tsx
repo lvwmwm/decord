@@ -1,10 +1,10 @@
-// Module ID: 8716
-// Function ID: 8717
+// Module ID: 8776
+// Function ID: 8777
 // Name: cheapWorkletShallowEqual
 // Dependencies: [2]
 // Exports: cheapWorkletArrayShallowEqual, cheapWorkletShallowEqual
 
-// Module 8716 (cheapWorkletShallowEqual)
+// Module 8776 (cheapWorkletShallowEqual)
 function cheapWorkletShallowEqual(safeAreaState, current) {
   if (safeAreaState === current) {
     return true;

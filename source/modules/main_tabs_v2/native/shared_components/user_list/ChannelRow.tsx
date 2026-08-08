@@ -1,8 +1,8 @@
-// Module ID: 9600
-// Function ID: 9601
-// Dependencies: [19, 17, 1372, 1891, 4314, 3938, 1903, 9555, 4498, 21, 4302, 712, 589, 4492, 9601, 10202, 4814, 4807, 4298, 3971, 3883, 8388, 5373, 2]
+// Module ID: 9665
+// Function ID: 9666
+// Dependencies: [19, 17, 1372, 1891, 4315, 3938, 1903, 9620, 4500, 21, 4303, 712, 589, 4494, 9666, 10268, 4816, 4809, 4299, 3971, 3883, 8448, 5374, 2]
 
-// Module 9600
+// Module 9665
 import importAllResult from "resetCache";
 import { View } from "TextIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";

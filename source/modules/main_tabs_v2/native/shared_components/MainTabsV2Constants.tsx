@@ -1,10 +1,10 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8383
+// Function ID: 8384
 // Name: MIN_HEADER_HEIGHT
 // Dependencies: [17, 1348, 2]
 // Exports: getMinHeaderHeight
 
-// Module 8323 (MIN_HEADER_HEIGHT)
+// Module 8383 (MIN_HEADER_HEIGHT)
 const result = 2 * require("get ActivityIndicator").StyleSheet.hairlineWidth;
 const result1 = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MainTabsV2Constants.tsx");
 

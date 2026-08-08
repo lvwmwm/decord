@@ -1,17 +1,17 @@
-// Module ID: 8608
-// Function ID: 8609
+// Module ID: 8668
+// Function ID: 8669
 // Name: PressableScale
-// Dependencies: [109, 19, 17, 21, 4162, 4717, 2]
+// Dependencies: [109, 19, 17, 21, 4036, 4719, 2]
 
-// Module 8608 (PressableScale)
+// Module 8668 (PressableScale)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
-import importDefaultResult from "module_4162";
+import importDefaultResult from "module_4036";
 
 const require = arg1;
 let closure_2 = ["style"];
-let closure_5 = require("module_4162").createAnimatedComponent(require("get ActivityIndicator").Pressable);
+let closure_5 = require("module_4036").createAnimatedComponent(require("get ActivityIndicator").Pressable);
 const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx, ref) => {
   let onPressIn;
   let onPressOut;
@@ -21,9 +21,9 @@ const forwardRefResult = importAllResult.forwardRef((scaleAmountInPx, ref) => {
   }
   ({ onPressIn, onPressOut } = scaleAmountInPx);
   const merged = Object.assign(scaleAmountInPx, Object.create(null));
-  let obj = require(4162);
+  let obj = require(4036);
   const sharedValue = obj.useSharedValue(0);
-  const buttonPressAnimationProps = require(4717) /* styleProperties */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
+  const buttonPressAnimationProps = require(4719) /* styleProperties */.useButtonPressAnimationProps(sharedValue, num, scaleAmountInPx.onLayout, onPressIn, onPressOut);
   obj = {};
   const merged1 = Object.assign(callback(buttonPressAnimationProps, closure_2));
   const merged2 = Object.assign(merged);

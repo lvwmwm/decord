@@ -1,10 +1,10 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12289
+// Function ID: 12290
 // Name: getActivityHeader
-// Dependencies: [676, 12223, 12224, 1236, 12226, 12227, 9590, 2]
+// Dependencies: [676, 12290, 12291, 1236, 12293, 12294, 9655, 2]
 // Exports: default
 
-// Module 12222 (getActivityHeader)
+// Module 12289 (getActivityHeader)
 import ME from "ME";
 
 let c3;
@@ -13,8 +13,8 @@ let c4;
 const result = require("PlatformTypes").fileFinishedImporting("modules/user_profile/utils/getActivityHeader.tsx");
 
 export default function getActivityHeader(session_id) {
-  const tmp3 = importDefault(12223)(session_id.session_id);
-  const tmp4 = importDefault(12224)(session_id);
+  const tmp3 = importDefault(12290)(session_id.session_id);
+  const tmp4 = importDefault(12291)(session_id);
   if (tmp4 != null) {
     const icon = tmp4.icon;
   }
@@ -164,7 +164,7 @@ export default function getActivityHeader(session_id) {
       obj11[2] = str;
       return obj11;
     }
-    tmp35 = tmp(12227)(tmp3, session_id);
+    tmp35 = tmp(12294)(tmp3, session_id);
   }
   if (session_id.type === constants.PLAYING) {
     const obj13 = { text: null, platformIcon: null, platformLabel: null };
@@ -249,14 +249,14 @@ export default function getActivityHeader(session_id) {
             obj25[2] = str;
             obj = obj25;
           } else {
-            obj = { text: "r", platformIcon: "Path", platformLabel: "TRANSPARENT" };
+            obj = { text: "r", platformIcon: "PX_16", platformLabel: "TRANSPARENT" };
             obj[1] = icon;
             obj[2] = str;
           }
         }
       }
     }
-    obj29 = require(9590) /* unpackStageChannelParty */;
+    obj29 = require(9655) /* unpackStageChannelParty */;
   }
   return obj;
 };

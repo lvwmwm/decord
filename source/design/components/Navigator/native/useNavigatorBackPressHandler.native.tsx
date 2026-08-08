@@ -1,10 +1,10 @@
-// Module ID: 5275
-// Function ID: 5276
+// Module ID: 5276
+// Function ID: 5277
 // Name: useNavigatorBackPressHandler
 // Dependencies: [19, 17, 1481, 500, 2]
 // Exports: useNavigatorBackPressHandler
 
-// Module 5275 (useNavigatorBackPressHandler)
+// Module 5276 (useNavigatorBackPressHandler)
 import noop from "noop";
 
 const require = arg1;

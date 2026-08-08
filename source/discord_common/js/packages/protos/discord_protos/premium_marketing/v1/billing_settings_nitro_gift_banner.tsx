@@ -1,9 +1,9 @@
-// Module ID: 7303
-// Function ID: 7304
+// Module ID: 7363
+// Function ID: 7364
 // Name: create
-// Dependencies: [32, 1307, 7298, 7300, 7290, 2]
+// Dependencies: [32, 1307, 7358, 7360, 7350, 2]
 
-// Module 7303 (create)
+// Module 7363 (create)
 import _slicedToArray from "_slicedToArray";
 import { MessageType } from "module_1307";
 
@@ -20,7 +20,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "gradient",
       kind: "message",
       T() {
-            return callback(7298).Gradient;
+            return callback(7358).Gradient;
           }
     };
     items[5] = { no: 6, name: "text_color", kind: "scalar", T: 9 };
@@ -30,7 +30,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(7300).ThemeAwareAsset;
+            return callback(7360).ThemeAwareAsset;
           }
     };
     items[8] = {
@@ -38,7 +38,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "background_asset",
       kind: "message",
       T() {
-            return callback(7300).ThemeAwareAsset;
+            return callback(7360).ThemeAwareAsset;
           }
     };
     items[9] = {
@@ -46,7 +46,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(7290).LocalizedString;
+            return callback(7350).LocalizedString;
           }
     };
     obj = { no: 11, name: "body_localized", kind: "message", T: null };
@@ -62,7 +62,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "additional_terms_localized",
       kind: "message",
       T() {
-            return callback(7290).LocalizedString;
+            return callback(7350).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, T);
@@ -88,9 +88,10 @@ prototype["internalBinaryRead"] = function internalBinaryRead(pos) {
   if (arg3 == null) {
     obj = self.create();
   }
-  if (pos.pos < pos.pos + arg1) {
-    [r10019, r10020] = callback(pos.tag(), 2);
-    const tmp3 = callback(pos.tag(), 2);
+  const sum = pos.pos + arg1;
+  if (pos.pos < sum) {
+    const LocalizedString = require(7350) /* create */.LocalizedString;
+    obj.additionalTermsLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), arg2, obj.additionalTermsLocalized);
   }
   return obj;
 };
@@ -112,7 +113,7 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(assetUrl, tag, w
     const tagResult3 = tag.tag(4, require(1307).WireType.LengthDelimited);
   }
   if (assetUrl.gradient) {
-    const Gradient = require(7298) /* create */.Gradient;
+    const Gradient = require(7358) /* create */.Gradient;
     const tagResult4 = tag.tag(5, require(1307).WireType.LengthDelimited);
     const joined = Gradient.internalBinaryWrite(assetUrl.gradient, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult = Gradient.internalBinaryWrite(assetUrl.gradient, tag.tag(5, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -126,31 +127,31 @@ prototype["internalBinaryWrite"] = function internalBinaryWrite(assetUrl, tag, w
     const tagResult6 = tag.tag(7, require(1307).WireType.LengthDelimited);
   }
   if (assetUrl.asset) {
-    const ThemeAwareAsset = require(7300) /* create */.ThemeAwareAsset;
+    const ThemeAwareAsset = require(7360) /* create */.ThemeAwareAsset;
     const tagResult7 = tag.tag(8, require(1307).WireType.LengthDelimited);
     const joined1 = ThemeAwareAsset.internalBinaryWrite(assetUrl.asset, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult1 = ThemeAwareAsset.internalBinaryWrite(assetUrl.asset, tag.tag(8, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (assetUrl.backgroundAsset) {
-    const ThemeAwareAsset2 = require(7300) /* create */.ThemeAwareAsset;
+    const ThemeAwareAsset2 = require(7360) /* create */.ThemeAwareAsset;
     const tagResult8 = tag.tag(9, require(1307).WireType.LengthDelimited);
     const joined2 = ThemeAwareAsset2.internalBinaryWrite(assetUrl.backgroundAsset, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult2 = ThemeAwareAsset2.internalBinaryWrite(assetUrl.backgroundAsset, tag.tag(9, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (assetUrl.headerLocalized) {
-    const LocalizedString = require(7290) /* create */.LocalizedString;
+    const LocalizedString = require(7350) /* create */.LocalizedString;
     const tagResult9 = tag.tag(10, require(1307).WireType.LengthDelimited);
     const joined3 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(10, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult3 = LocalizedString.internalBinaryWrite(assetUrl.headerLocalized, tag.tag(10, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (assetUrl.bodyLocalized) {
-    const LocalizedString2 = require(7290) /* create */.LocalizedString;
+    const LocalizedString2 = require(7350) /* create */.LocalizedString;
     const tagResult10 = tag.tag(11, require(1307).WireType.LengthDelimited);
     const joined4 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(11, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult4 = LocalizedString2.internalBinaryWrite(assetUrl.bodyLocalized, tag.tag(11, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
   }
   if (assetUrl.additionalTermsLocalized) {
-    const LocalizedString3 = require(7290) /* create */.LocalizedString;
+    const LocalizedString3 = require(7350) /* create */.LocalizedString;
     const tagResult11 = tag.tag(12, require(1307).WireType.LengthDelimited);
     const joined5 = LocalizedString3.internalBinaryWrite(assetUrl.additionalTermsLocalized, tag.tag(12, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields).join();
     const internalBinaryWriteResult5 = LocalizedString3.internalBinaryWrite(assetUrl.additionalTermsLocalized, tag.tag(12, require(1307).WireType.LengthDelimited).fork(), writeUnknownFields);
@@ -175,7 +176,7 @@ let items = [
     name: "gradient",
     kind: "message",
     T() {
-      return callback(7298).Gradient;
+      return callback(7358).Gradient;
     }
   },
   { no: 6, name: "text_color", kind: "scalar", T: 9 },
@@ -185,7 +186,7 @@ let items = [
     name: "asset",
     kind: "message",
     T() {
-      return callback(7300).ThemeAwareAsset;
+      return callback(7360).ThemeAwareAsset;
     }
   },
   {
@@ -193,7 +194,7 @@ let items = [
     name: "background_asset",
     kind: "message",
     T() {
-      return callback(7300).ThemeAwareAsset;
+      return callback(7360).ThemeAwareAsset;
     }
   },
   {
@@ -201,7 +202,7 @@ let items = [
     name: "header_localized",
     kind: "message",
     T() {
-      return callback(7290).LocalizedString;
+      return callback(7350).LocalizedString;
     }
   },
 ,
@@ -220,7 +221,7 @@ items[11] = {
   name: "additional_terms_localized",
   kind: "message",
   T() {
-    return callback(7290).LocalizedString;
+    return callback(7350).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, tmp, T, BillingSettingsNitroGiftBanner$Type, prototype, items);

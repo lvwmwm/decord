@@ -1,10 +1,10 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15215
+// Function ID: 15216
 // Name: TypingIndicator
-// Dependencies: [19, 17, 21, 4302, 712, 4238, 4147, 1297, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4239, 4153, 1297, 2]
 // Exports: TypingIndicator
 
-// Module 15145 (TypingIndicator)
+// Module 15215 (TypingIndicator)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -24,8 +24,8 @@ let closure_5 = createCacheKey.createStyles((arg0) => {
 const result = require("jsxProd").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/typing_indicators/TypingIndicator.tsx");
 
 export const TypingIndicator = function TypingIndicator(style) {
-  let obj = require(4147) /* AccessibilityAnnouncer */;
-  const tmp2 = callback(obj.isThemeLight(importDefault(4238)()));
+  let obj = require(4153) /* AccessibilityAnnouncer */;
+  const tmp2 = callback(obj.isThemeLight(importDefault(4239)()));
   obj = { style: items, children: jsx(require(1297) /* Button */.Ellipsis, obj) };
   items = [tmp2.ellipsisWrapper, style.style];
   obj = { style: items1, dotStyle: tmp2.ellipsisDot, disableScale: true };

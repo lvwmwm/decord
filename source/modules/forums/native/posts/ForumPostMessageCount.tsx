@@ -1,10 +1,10 @@
-// Module ID: 11342
-// Function ID: 11343
+// Module ID: 11408
+// Function ID: 11409
 // Name: num2
-// Dependencies: [19, 17, 21, 4302, 712, 500, 8343, 1236, 4798, 4298, 10134, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 500, 8403, 1236, 4800, 4299, 10200, 2]
 // Exports: default
 
-// Module 11342 (num2)
+// Module 11408 (num2)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,7 +46,7 @@ export default function ForumPostMessageCount(hasUnreads) {
   hasUnreads = hasUnreads.hasUnreads;
   ({ thread, containerStyle } = hasUnreads);
   const tmp = createCacheKey();
-  let obj = require(8343) /* useLoadForumUnreadCounts */;
+  let obj = require(8403) /* useLoadForumUnreadCounts */;
   messageCount = obj.useMessageCount(thread);
   ({ messageCountText, unreadCount } = messageCount);
   let str = "text-muted";
@@ -64,17 +64,17 @@ export default function ForumPostMessageCount(hasUnreads) {
     str2 = "interactive-text-default";
   }
   obj[2] = str2;
-  const items1 = [closure_4(require(4798) /* ChatIcon */.ChatIcon, obj), , ];
+  const items1 = [closure_4(require(4800) /* ChatIcon */.ChatIcon, obj), , ];
   if (isMaxMessageCount) {
     const obj1 = { variant: "text-sm/semibold", color: null, children: null };
     obj1[1] = str;
     obj1[2] = messageCountText;
-    let tmp7Result = tmp7(tmp2(4298).Text, obj1);
+    let tmp7Result = tmp7(tmp2(4299).Text, obj1);
   } else {
     const obj2 = { count: null, textVariant: "text-sm/semibold", textColor: null, animate: false };
     obj2[0] = messageCount;
     obj2[2] = str;
-    tmp7Result = tmp7(importDefault(10134), obj2);
+    tmp7Result = tmp7(importDefault(10200), obj2);
   }
   items1[1] = tmp7Result;
   let tmp5Result = null != unreadCount;
@@ -86,7 +86,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     obj4[0] = unreadCount;
     const items2 = ["(", intl2.format(tmp2(1236).t.z3PEth, obj4), ")"];
     obj3[3] = items2;
-    tmp5Result = tmp5(tmp2(4298).Text, obj3);
+    tmp5Result = tmp5(tmp2(4299).Text, obj3);
   }
   items1[2] = tmp5Result;
   obj[2] = items1;

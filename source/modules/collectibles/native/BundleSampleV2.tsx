@@ -1,10 +1,10 @@
-// Module ID: 9310
-// Function ID: 9311
+// Module ID: 9375
+// Function ID: 9376
 // Name: BundleStaticPreviewContent
-// Dependencies: [19, 17, 9311, 21, 5267, 4302, 712, 38, 1930, 1927, 9312, 9322, 9324, 1297, 9329, 2]
+// Dependencies: [19, 17, 9376, 21, 5268, 4303, 712, 38, 1930, 1927, 9377, 9387, 9389, 1297, 9394, 2]
 // Exports: default
 
-// Module 9310 (BundleStaticPreviewContent)
+// Module 9375 (BundleStaticPreviewContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO";
@@ -50,9 +50,9 @@ function BundleStaticPreviewContent(mutedBackground) {
     obj[0] = combined;
     obj[0] = obj;
     obj[1] = closure_9.bgImage;
-    tmp = closure_6(importDefault(5267), obj);
+    tmp = closure_6(importDefault(5268), obj);
     const tmp2 = closure_6;
-    const tmp5 = importDefault(5267);
+    const tmp5 = importDefault(5268);
   }
   obj = { style: closure_9.container, children: null };
   let tmp21Result = !disableBackground;
@@ -100,9 +100,9 @@ function BundleStaticPreviewContent(mutedBackground) {
     obj5[0] = combined1;
     obj4[0] = obj5;
     obj4[1] = tmp19.fgImage;
-    obj3[2] = closure_6(importDefault(5267), obj4);
+    obj3[2] = closure_6(importDefault(5268), obj4);
     tmp24Result = tmp24(tmp18, obj3);
-    const tmp27 = importDefault(5267);
+    const tmp27 = importDefault(5268);
   }
   items[1] = tmp24Result;
   obj[1] = items;
@@ -132,7 +132,7 @@ function BundleSampleV2Composed(arg0) {
     obj[0] = tmp.pfx;
     const obj1 = { item: null };
     obj1[0] = pfx;
-    obj[1] = callback(importDefault(9312), obj1);
+    obj[1] = callback(importDefault(9377), obj1);
     tmp12 = callback(tmp11, obj);
   }
   const items = [tmp12, , ];
@@ -156,7 +156,7 @@ function BundleSampleV2Composed(arg0) {
       }
       obj3[1] = XSMALL_20;
       obj3[2] = nameplateData;
-      obj3 = tmp22(require(9324) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
+      obj3 = tmp22(require(9389) /* NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG */.NameplateDummyUserPreview, obj3);
       obj2[1] = obj3;
       callback(tmp11, obj2);
     }
@@ -168,7 +168,7 @@ function BundleSampleV2Composed(arg0) {
     obj5[0] = deco;
     obj5[1] = tmp9;
     obj5[2] = null != nameplateData;
-    obj4[1] = callback(importDefault(9322), obj5);
+    obj4[1] = callback(importDefault(9387), obj5);
     callback(tmp11, obj4);
   }
 }
@@ -180,7 +180,7 @@ function BundleSampleV2StaticPreview(composedFallbackProps) {
   let targetSize;
   composedFallbackProps = composedFallbackProps.composedFallbackProps;
   ({ previewAssets, disableStaticBackground, mutedStaticBackground, targetSize, exposureLocation } = composedFallbackProps);
-  let obj = require(9329) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(9394) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   if (obj.useCollectiblesMobileFlexibleBundlesExperiment(exposureLocation).enabled) {
     obj = { previewAssets: null, disableBackground: null, mutedBackground: null, targetSize: null };
     obj[0] = previewAssets;

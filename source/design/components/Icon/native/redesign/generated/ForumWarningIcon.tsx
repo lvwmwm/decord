@@ -1,10 +1,10 @@
-// Module ID: 4809
-// Function ID: 4810
+// Module ID: 4811
+// Function ID: 4812
 // Name: ForumWarningIcon
-// Dependencies: [19, 21, 712, 4004, 4783, 2]
+// Dependencies: [19, 21, 712, 4004, 4785, 2]
 // Exports: ForumWarningIcon
 
-// Module 4809 (ForumWarningIcon)
+// Module 4811 (ForumWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ForumWarningIcon = function ForumWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4783) /* registerAsset */;
+  obj[0] = require(4785) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

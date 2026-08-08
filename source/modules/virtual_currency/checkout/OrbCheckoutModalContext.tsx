@@ -1,10 +1,10 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12157
+// Function ID: 12158
 // Name: useOrbCheckoutModalContextProvider
-// Dependencies: [19, 1903, 4347, 21, 514, 589, 3947, 10399, 5792, 10047, 6952, 3962, 9361, 2]
+// Dependencies: [19, 1903, 4349, 21, 514, 589, 3947, 10465, 5852, 10113, 7012, 3962, 9426, 2]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext
 
-// Module 12090 (useOrbCheckoutModalContextProvider)
+// Module 12157 (useOrbCheckoutModalContextProvider)
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import addSku from "addSku";
@@ -115,7 +115,7 @@ function useOrbCheckoutModalContextProvider(value) {
   return obj1;
 }
 ({ useContext: c3, useCallback: c4, useMemo: c5, createContext } = noop);
-let obj = { skuId: "123", skuProductLine: null, skuApplicationId: "r", loadId: "PX_8", analyticsLocations: null, analyticsSourceLocation: null, isRedeeming: null, orbRedemptionError: "lg", orbProductContext: null, onRedeemVirtualCurrency: true };
+let obj = { skuId: "123", skuProductLine: null, skuApplicationId: "r", loadId: "ct", analyticsLocations: null, analyticsSourceLocation: null, isRedeeming: null, orbRedemptionError: 112, orbProductContext: "center", onRedeemVirtualCurrency: "center" };
 obj[3] = v1.v4();
 obj[4] = [];
 obj[9] = function onRedeemVirtualCurrency() {

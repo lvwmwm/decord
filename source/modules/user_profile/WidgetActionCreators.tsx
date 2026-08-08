@@ -1,8 +1,8 @@
-// Module ID: 7026
-// Function ID: 7027
-// Dependencies: [5, 1903, 676, 709, 530, 7027, 1208, 2]
+// Module ID: 7087
+// Function ID: 7088
+// Dependencies: [5, 1903, 676, 709, 530, 7088, 1208, 2]
 
-// Module 7026
+// Module 7087
 import convertClip from "convertClip";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -72,7 +72,7 @@ export default {
                 return obj3;
               } else {
                 constants = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (1 === tmp8) {
@@ -131,7 +131,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -247,7 +247,7 @@ export default {
       obj5[0] = upload_url;
       obj5[1] = body;
       const obj6 = { "Content-Type": null };
-      obj6[0] = outer1_0(7027).WIDGET_CLIP_CONTENT_TYPE;
+      obj6[0] = outer1_0(7088).WIDGET_CLIP_CONTENT_TYPE;
       obj5[2] = obj6;
       obj5[3] = function onRequestProgress(direction) {
         let tmp = "upload" === direction.direction;
@@ -278,7 +278,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -368,7 +368,7 @@ export default {
             obj1.dispatch(obj4);
             constants = 0;
             c7 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp41) {
           mergeGuildAvatar = tmp41;

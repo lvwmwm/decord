@@ -1,0 +1,13 @@
+// Module ID: 5621
+// Function ID: 5622
+// Name: BottomSheetScrollView
+// Dependencies: [19, 17, 1634, 5612, 5400]
+
+// Module 5621 (BottomSheetScrollView)
+import createBottomSheetScrollableComponent from "createBottomSheetScrollableComponent";
+
+const animatedComponent = require("cancelAnimation").createAnimatedComponent(require("get ActivityIndicator").ScrollView);
+const memoResult = require("noop").memo(createBottomSheetScrollableComponent.createBottomSheetScrollableComponent(require("GESTURE_SOURCE").SCROLLABLE_TYPE.SCROLLVIEW, animatedComponent));
+memoResult.displayName = "BottomSheetScrollView";
+
+export default memoResult;

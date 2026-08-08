@@ -1,9 +1,9 @@
-// Module ID: 5885
-// Function ID: 5886
+// Module ID: 5945
+// Function ID: 5946
 // Name: initialize
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 5885 (initialize)
+// Module 5945 (initialize)
 import fetchFingerprint from "fetchFingerprint";
 import { DeviceSettingsStore } from "initialize";
 

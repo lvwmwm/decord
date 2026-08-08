@@ -1,9 +1,9 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 8048
+// Function ID: 8049
 // Name: createThreadEmbed
-// Dependencies: [17, 4294, 4339, 4113, 5175, 7987, 7989, 3930, 7990, 6994, 3931, 5862, 1302, 1218, 1372, 1971, 1891, 3938, 7237, 1903, 4295, 7982, 676, 7992, 4492, 7993, 11, 7994, 5884, 1236, 7995, 7996, 7997, 4636, 1384, 7160, 8002, 4740, 8003, 8005, 5830, 8007, 8128, 8129, 8148, 5849, 6999, 3974, 8149, 8154, 8080, 8196, 4530, 1419, 1416, 8199, 1297, 5692, 8255, 1351, 8256, 3918, 5123, 8257, 8258, 3971, 8260, 8268, 8206, 5827, 712, 8269, 8010, 8271, 8272, 8125, 8275, 12508, 12525, 12544, 12546, 12560, 8013, 8014, 12561, 12564, 12565, 12566, 8015, 12567, 2]
+// Dependencies: [17, 4295, 4341, 4119, 5176, 8047, 8049, 3930, 8050, 7054, 3931, 5922, 1302, 1218, 1372, 1971, 1891, 3938, 7297, 1903, 4296, 8042, 676, 8052, 4494, 8053, 11, 8054, 5944, 1236, 8055, 8056, 8057, 4638, 1384, 7220, 8062, 4742, 8063, 8065, 5890, 8067, 8188, 8189, 8208, 5909, 7059, 3974, 8209, 8214, 8140, 8256, 4532, 1419, 1416, 8259, 1297, 5752, 8315, 1351, 8316, 3918, 5124, 8317, 8318, 3971, 8320, 8328, 8266, 5887, 712, 8329, 8070, 8331, 8332, 8185, 8335, 12578, 12595, 12614, 12616, 12630, 8073, 8074, 12631, 12634, 12635, 12636, 8075, 12637, 2]
 
-// Module 7988 (createThreadEmbed)
+// Module 8048 (createThreadEmbed)
 import { processColor } from "upsertRelationship";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import addApplication from "addApplication";
@@ -42,20 +42,20 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
     if (message.hasFlag(constants3.HAS_THREAD)) {
       if (null != channel1) {
         let string2Result = dependencyMap;
-        const channelName = require(4492) /* computeChannelName */.computeChannelName(channel1, mergeGuildAvatar, upsertRelationship);
-        const backgroundColor = importDefault(7993)(arg5).baseColors.backgroundColor;
-        const obj11 = require(4492) /* computeChannelName */;
+        const channelName = require(4494) /* computeChannelName */.computeChannelName(channel1, mergeGuildAvatar, upsertRelationship);
+        const backgroundColor = importDefault(8053)(arg5).baseColors.backgroundColor;
+        const obj11 = require(4494) /* computeChannelName */;
         const tmp19 = importDefault;
         const mostRecentMessage = store3.getMostRecentMessage(importDefault(11).castMessageIdAsChannelId(message.id));
         const obj12 = importDefault(11);
         const count = store3.getCount(importDefault(11).castMessageIdAsChannelId(message.id));
         const obj13 = importDefault(11);
-        let intl5 = require(7994) /* _formatMessageCountLabel */.formatMobileMessageCountLabel(count, channel1.id);
-        const obj14 = require(7994) /* _formatMessageCountLabel */;
-        let string2 = require(7994) /* _formatMessageCountLabel */.formatMessageCountLabel(count, channel1.id);
+        let intl5 = require(8054) /* _formatMessageCountLabel */.formatMobileMessageCountLabel(count, channel1.id);
+        const obj14 = require(8054) /* _formatMessageCountLabel */;
+        let string2 = require(8054) /* _formatMessageCountLabel */.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let tmp15Result = tmp15(5884);
+            let tmp15Result = tmp15(5944);
             if (tmp15Result.isChannelSpoilerGated(channel1)) {
               let obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
               obj[0] = channelName;
@@ -80,8 +80,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 obj[2] = string2;
                 const intl4 = tmp15(1236).intl;
                 obj[3] = intl4.string(tmp15(1236).t.ZTo4HS);
-                tmp15Result = tmp15(7995);
-                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(7996));
+                tmp15Result = tmp15(8055);
+                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(8056));
                 obj[6] = backgroundColor;
                 obj1 = obj;
               } else {
@@ -1289,7 +1289,7 @@ function createMessageContent(message) {
       applicationIconSource = author.getAvatarSource(undefined);
       tmp13Result7 = tmp13(tmp3[53]);
     }
-    parseMessageMarkupResult = { content: "Path", hasSpoilerEmbeds: "TRANSPARENT", hasBailedAst: 0 };
+    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "TRANSPARENT", hasBailedAst: 0 };
     const tmp13Result1 = tmp13(tmp3[42]);
   }
 }

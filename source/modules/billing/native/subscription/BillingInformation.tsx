@@ -1,10 +1,10 @@
-// Module ID: 7577
-// Function ID: 7578
+// Module ID: 7637
+// Function ID: 7638
 // Name: getBillingInformationStringNative
-// Dependencies: [5, 676, 3947, 501, 1236, 7361, 2]
+// Dependencies: [5, 676, 3947, 501, 1236, 7421, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 7577 (getBillingInformationStringNative)
+// Module 7637 (getBillingInformationStringNative)
 import serializePurchaseResponse from "serializePurchaseResponse";
 import { SubscriptionStatusTypes } from "ME";
 
@@ -42,7 +42,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
             return obj;
           } else {
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           v0 = tmp;

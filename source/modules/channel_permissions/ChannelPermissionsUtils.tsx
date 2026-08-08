@@ -1,10 +1,10 @@
-// Module ID: 8937
-// Function ID: 8938
+// Module ID: 8997
+// Function ID: 8998
 // Name: getRoleRowData
-// Dependencies: [1376, 1415, 1965, 1971, 1903, 7721, 676, 1968, 1236, 506, 11, 4140, 1351, 3934, 8938, 1935, 4484, 2]
+// Dependencies: [1376, 1415, 1965, 1971, 1903, 7781, 676, 1968, 1236, 506, 11, 4146, 1351, 3934, 8998, 1935, 4486, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8937 (getRoleRowData)
+// Module 8997 (getRoleRowData)
 import { isGuildVocalChannelType } from "createChannelRecord";
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag";
@@ -58,11 +58,11 @@ function getMemberRowData(id, id2) {
   const obj = { rowType: tmp3, name: null, username: null, id: null, avatarURL: null, bot: null, verifiedBot: null, disabled: null, key: null };
   nick = nick.getNick(id2.id, id.id);
   if (nick == null) {
-    nick = importDefault(4140).getName(id);
-    const obj2 = importDefault(4140);
+    nick = importDefault(4146).getName(id);
+    const obj2 = importDefault(4146);
   }
   obj[1] = nick;
-  obj[2] = importDefault(4140).getUserTag(id);
+  obj[2] = importDefault(4146).getUserTag(id);
   obj[3] = id.id;
   obj[4] = id.getAvatarURL(id2.id, 24);
   obj[5] = id.bot;
@@ -604,7 +604,7 @@ export const toggleChannelEveryonePermission = function toggleChannelEveryonePer
     const tmp5Result = tmp5(506);
   }
   const obj4 = importAll(506);
-  require(8938) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
+  require(8998) /* _updatePermission */.updatePermission(guild_id, obj.id, obj.allow, obj.deny);
 };
 export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, accessPermissions) {
   let allow;
@@ -619,11 +619,11 @@ export const grantUserChannelAccess = function grantUserChannelAccess(outer1_0, 
       obj[3] = importAll(3934).NONE;
       const obj4 = importAll(506);
       const items = [obj];
-      return require(8938) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
+      return require(8998) /* _updatePermission */.savePermissionUpdates(outer1_0.id, items, true);
     } else {
       ({ allow, deny } = tmp4);
       obj = importAll(506);
-      const obj2 = require(8938) /* _updatePermission */;
+      const obj2 = require(8998) /* _updatePermission */;
       return obj2.updatePermission(outer1_0, tmp4.id, obj.add(allow, accessPermissions), deny);
     }
   }

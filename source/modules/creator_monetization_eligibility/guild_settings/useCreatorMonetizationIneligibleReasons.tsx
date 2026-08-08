@@ -1,14 +1,14 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16793
+// Function ID: 16794
 // Name: useCreatorMonetizationIneligibleReasons
-// Dependencies: [16688, 2]
+// Dependencies: [16765, 2]
 // Exports: useCreatorMonetizationIneligibleReasons
 
-// Module 16716 (useCreatorMonetizationIneligibleReasons)
+// Module 16793 (useCreatorMonetizationIneligibleReasons)
 const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationIneligibleReasons.tsx");
 
 export const useCreatorMonetizationIneligibleReasons = function useCreatorMonetizationIneligibleReasons(eligibility) {
-  const obj = importDefault(16688)(eligibility);
+  const obj = importDefault(16765)(eligibility);
   let flatMapResult;
   if (obj != null) {
     flatMapResult = obj.flatMap((checked) => {

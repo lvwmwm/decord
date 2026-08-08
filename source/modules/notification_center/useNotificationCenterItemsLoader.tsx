@@ -1,10 +1,10 @@
-// Module ID: 15445
-// Function ID: 15446
+// Module ID: 15520
+// Function ID: 15521
 // Name: PAGE_SIZE_WITH_MENTIONS
-// Dependencies: [5, 32, 19, 7038, 7040, 15444, 4498, 589, 15446, 5252, 8245, 2]
+// Dependencies: [5, 32, 19, 7098, 7100, 15519, 4500, 589, 15521, 5253, 8305, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 15445 (PAGE_SIZE_WITH_MENTIONS)
+// Module 15520 (PAGE_SIZE_WITH_MENTIONS)
 import handleLoadFinished from "handleLoadFinished";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -148,7 +148,7 @@ export const useNotificationCenterItemsLoader = function useNotificationCenterIt
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

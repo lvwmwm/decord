@@ -1,8 +1,8 @@
-// Module ID: 9880
-// Function ID: 9881
-// Dependencies: [19, 17, 676, 21, 4302, 712, 9864, 8656, 1236, 8660, 5398, 1297, 2]
+// Module ID: 9946
+// Function ID: 9947
+// Dependencies: [19, 17, 676, 21, 4303, 712, 9930, 8716, 1236, 8720, 5399, 1297, 2]
 
-// Module 9880
+// Module 9946
 import importAllResult from "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -21,10 +21,10 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
   inActionSheet = inActionSheet.inActionSheet;
   let safeAreaBottomKeyboardAware;
   const tmp = callback();
-  safeAreaBottomKeyboardAware = importDefault(9864)({ hasCategories: false }).safeAreaBottomKeyboardAware;
+  safeAreaBottomKeyboardAware = importDefault(9930)({ hasCategories: false }).safeAreaBottomKeyboardAware;
   const items = [safeAreaBottomKeyboardAware];
   const memo = importAllResult.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
-  let obj = safeAreaBottomKeyboardAware(8656);
+  let obj = safeAreaBottomKeyboardAware(8716);
   const searchEmptySource = obj.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
     const intl2 = tmp4(1236).intl;
@@ -33,9 +33,9 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
     const intl = tmp4(1236).intl;
     stringResult = intl.string(tmp4(1236).t["5dX4UM"]);
   }
-  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(8660).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(8720).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5398).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5399).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

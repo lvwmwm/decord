@@ -1,10 +1,10 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16364
+// Function ID: 16365
 // Name: DEFAULT_EXPIRATION_DAYS
-// Dependencies: [1372, 3938, 7698, 4002, 1236, 9811, 709, 9486, 2]
+// Dependencies: [1372, 3938, 7758, 4002, 1236, 9877, 709, 9551, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16287 (DEFAULT_EXPIRATION_DAYS)
+// Module 16364 (DEFAULT_EXPIRATION_DAYS)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 
@@ -14,13 +14,13 @@ let result = require("generateAcceptInviteOptions").fileFinishedImporting("modul
 export const DEFAULT_EXPIRATION_DAYS = 7;
 export const DEFAULT_EXPIRATION_USES = 5;
 export const revokeAllFriendInvites = function revokeAllFriendInvites() {
-  let obj = importDefault(7698);
-  importDefault(7698).revokeFriendInvites().then(() => {
+  let obj = importDefault(7758);
+  importDefault(7758).revokeFriendInvites().then(() => {
     let obj = callback2(4002);
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED", content: null, icon: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.jSHEOQ);
-    obj[2] = callback2(9811);
+    obj[2] = callback2(9877);
     obj.open(obj);
   });
 };
@@ -32,12 +32,12 @@ export const acceptFriendInvite = function acceptFriendInvite(invite, arg1) {
       dMFromUserId = dMFromUserId.getDMFromUserId(invite.inviter.id);
     }
     if (null != dMFromUserId) {
-      importDefault(7698).transitionToInvite(invite, { forceTransition: true });
-      const obj3 = importDefault(7698);
+      importDefault(7758).transitionToInvite(invite, { forceTransition: true });
+      const obj3 = importDefault(7758);
       importDefault(709).wait(() => callback(table[7])());
       const obj4 = importDefault(709);
     } else {
-      let obj = importDefault(7698);
+      let obj = importDefault(7758);
       obj = { inviteKey: null, context: null, callback: null };
       obj[0] = invite.code;
       obj[1] = arg1;

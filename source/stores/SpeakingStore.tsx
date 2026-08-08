@@ -1,9 +1,9 @@
-// Module ID: 5136
-// Function ID: 5137
+// Module ID: 5137
+// Function ID: 5138
 // Name: anyoneHasFlagInContext
-// Dependencies: [32, 1372, 4349, 4373, 1960, 676, 4362, 3934, 589, 5137, 709, 2]
+// Dependencies: [32, 1372, 4351, 4375, 1960, 676, 4364, 3934, 589, 5138, 709, 2]
 
-// Module 5136 (anyoneHasFlagInContext)
+// Module 5137 (anyoneHasFlagInContext)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -230,7 +230,7 @@ prototype["getVoiceVolume"] = function getVoiceVolume(arg0) {
   if (arg1 === undefined) {
     DEFAULT = constants2.DEFAULT;
   }
-  const config = importDefault(5137).getConfig({ location: "SpeakingStore" });
+  const config = importDefault(5138).getConfig({ location: "SpeakingStore" });
   let num = -Infinity;
   if (config.enabled) {
     num = -Infinity;

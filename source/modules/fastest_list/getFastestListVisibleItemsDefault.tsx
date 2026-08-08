@@ -1,10 +1,10 @@
-// Module ID: 8479
-// Function ID: 8480
+// Module ID: 8539
+// Function ID: 8540
 // Name: getFastestListVisibleItemsDefault
 // Dependencies: [2]
 // Exports: default
 
-// Module 8479 (getFastestListVisibleItemsDefault)
+// Module 8539 (getFastestListVisibleItemsDefault)
 const result = require("set").fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");
 
 export default function getFastestListVisibleItemsDefault(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 15886
-// Function ID: 15887
+// Module ID: 15961
+// Function ID: 15962
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 3938, 676, 10297, 21, 4302, 712, 11884, 589, 9179, 9567, 11910, 4140, 4270, 10298, 1988, 7960, 4312, 4712, 1236, 4298, 2]
+// Dependencies: [19, 17, 3938, 676, 10363, 21, 4303, 712, 11950, 589, 9243, 9632, 11976, 4146, 4271, 10364, 1988, 8020, 4313, 4714, 1236, 4299, 2]
 // Exports: default
 
-// Module 15886 (RestrictedMessagePreviewActions)
+// Module 15961 (RestrictedMessagePreviewActions)
 import Button from "Button";
 import { View } from "_submitHamReportForFirstDM";
 import upsertRelationship from "upsertRelationship";
@@ -154,7 +154,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     tmp18 = null;
     formatResult = null;
   } else if (tmp13.PENDING_OUTGOING === stateFromStores) {
-    const obj6 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "Boolean" };
+    const obj6 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "accessibilityRole" };
     const intl3 = tmp2(tmp3[20]).intl;
     obj6[2] = intl3.string(tmp2(tmp3[20]).t.xMH6vD);
     tmp19 = callback(tmp2(tmp3[19]).Button, obj6);

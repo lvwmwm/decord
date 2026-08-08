@@ -1,12 +1,12 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12547
+// Function ID: 12548
 // Name: openLoadingIndicatorDebugBody
-// Dependencies: [32, 19, 17, 4294, 4992, 4519, 1960, 1903, 6816, 676, 21, 4302, 712, 4641, 4730, 1988, 589, 4298, 12478, 4162, 4303, 1236, 4844, 2]
+// Dependencies: [32, 19, 17, 4295, 4994, 4521, 1960, 1903, 6876, 676, 21, 4303, 712, 4643, 4732, 1988, 589, 4299, 12548, 4036, 4304, 1236, 4846, 2]
 // Exports: ChannelHeaderLoadingIndicator, useShouldChannelShowLoadingIndicator
 
-// Module 12477 (openLoadingIndicatorDebugBody)
+// Module 12547 (openLoadingIndicatorDebugBody)
 import _slicedToArray from "_slicedToArray";
-import importAllResult from "module_4162";
+import importAllResult from "module_4036";
 import { View } from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -49,8 +49,8 @@ function openLoadingIndicatorDebugBody() {
         };
       });
     };
-    importDefault(4641).openLazy(obj);
-    const obj2 = importDefault(4641);
+    importDefault(4643).openLazy(obj);
+    const obj2 = importDefault(4643);
   }
 }
 let c4 = importAllResult;
@@ -94,13 +94,13 @@ let closure_18 = importAllResult.memo(() => {
     str4 = "true";
   }
   obj[2] = str4;
-  items1[3] = closure_13(require(4298) /* Text */.Text, obj);
+  items1[3] = closure_13(require(4299) /* Text */.Text, obj);
   let tmp4Result = null;
   if (messagesCached !== false) {
     obj = { variant: "text-md/normal", color: "text-muted", children: null };
     const items2 = [" ", "(should be ", str3, " to hide loading indicator)"];
     obj[2] = items2;
-    tmp4Result = tmp4(tmp(4298).Text, obj);
+    tmp4Result = tmp4(tmp(4299).Text, obj);
   }
   items1[4] = tmp4Result;
   const items3 = [closure_14(closure_15, { children: items1 }), "\n", , , , , ];
@@ -115,13 +115,13 @@ let closure_18 = importAllResult.memo(() => {
     str7 = "true";
   }
   obj1[2] = str7;
-  items4[3] = closure_13(require(4298) /* Text */.Text, obj1);
+  items4[3] = closure_13(require(4299) /* Text */.Text, obj1);
   tmp4Result = null;
   if (messagesReady !== true) {
     const obj2 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items5 = [" ", "(should be ", "true", " to hide loading indicator)"];
     obj2[2] = items5;
-    tmp4Result = tmp4(tmp(4298).Text, obj2);
+    tmp4Result = tmp4(tmp(4299).Text, obj2);
   }
   items4[4] = tmp4Result;
   items3[2] = closure_14(closure_15, { children: items4 });
@@ -137,13 +137,13 @@ let closure_18 = importAllResult.memo(() => {
     str11 = "true";
   }
   obj3[2] = str11;
-  items6[3] = closure_13(require(4298) /* Text */.Text, obj3);
+  items6[3] = closure_13(require(4299) /* Text */.Text, obj3);
   let tmp4Result1 = null;
   if (connected !== true) {
     const obj4 = { variant: "text-md/normal", color: "text-muted", children: null };
     const items7 = [" ", "(should be ", "true", " to hide loading indicator)"];
     obj4[2] = items7;
-    tmp4Result1 = tmp4(tmp(4298).Text, obj4);
+    tmp4Result1 = tmp4(tmp(4299).Text, obj4);
   }
   items6[4] = tmp4Result1;
   items3[4] = closure_14(closure_15, { children: items6 });
@@ -163,12 +163,12 @@ let closure_18 = importAllResult.memo(() => {
     str3 = "true";
   }
   obj5[2] = str3;
-  items8[3] = closure_13(require(4298) /* Text */.Text, obj5);
+  items8[3] = closure_13(require(4299) /* Text */.Text, obj5);
   const obj6 = { variant: "text-md/normal", color: "text-default", children: null };
   items8[4] = null;
   items3[6] = closure_14(closure_15, { children: items8 });
   obj6[2] = items3;
-  return closure_14(require(4298) /* Text */.Text, obj6);
+  return closure_14(require(4299) /* Text */.Text, obj6);
 });
 let closure_19 = { code: "function ChatLoadingIndicatorTsx1(){const{useReducedMotion,withRepeat,withSequence,withTiming,Easing}=this.__closure;if(useReducedMotion){return{transform:[]};}return{transform:[{scale:withRepeat(withSequence(withTiming(1,{duration:0}),withTiming(0.5,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)}),withTiming(1,{duration:1500,easing:Easing.bezier(0.4,0,0.2,1)})),-1)}]};}" };
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/chat/native/ChatLoadingIndicator.tsx");
@@ -239,7 +239,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return isStaffResult;
   });
-  let obj2 = stateFromStores(4162);
+  let obj2 = stateFromStores(4036);
   const fn = function t() {
     let obj = { transform: null };
     if (stateFromStores) {
@@ -267,18 +267,18 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     }
     return tmp7;
   };
-  obj = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4162).withRepeat, withSequence: stateFromStores(4162).withSequence, withTiming: stateFromStores(4303).withTiming, Easing: stateFromStores(4162).Easing };
+  obj = { useReducedMotion: stateFromStores, withRepeat: stateFromStores(4036).withRepeat, withSequence: stateFromStores(4036).withSequence, withTiming: stateFromStores(4304).withTiming, Easing: stateFromStores(4036).Easing };
   fn.__closure = obj;
   fn.__workletHash = 17454673879926;
   fn.__initData = closure_19;
   obj = { style: tmp.container, children: null };
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.pulse, animatedStyle];
-  const items3 = [callback2(importDefault(4162).View, { style: items2 }), ];
+  const items3 = [callback2(importDefault(4036).View, { style: items2 }), ];
   obj1 = { variant: "text-xs/medium", color: "text-muted", children: null };
   const intl = stateFromStores(1236).intl;
   obj1[2] = intl.string(stateFromStores(1236).t.JwIJMV);
-  items3[1] = callback2(stateFromStores(4298).Text, obj1);
+  items3[1] = callback2(stateFromStores(4299).Text, obj1);
   obj[1] = items3;
   const tmp8 = callback3(View, obj);
   let tmp7Result = tmp8;
@@ -286,7 +286,7 @@ export const ChannelHeaderLoadingIndicator = function ChannelHeaderLoadingIndica
     obj2 = { onPress: null, children: null };
     obj2[0] = openLoadingIndicatorDebugBody;
     obj2[1] = tmp8;
-    tmp7Result = callback2(stateFromStores(4844).PressableOpacity, obj2);
+    tmp7Result = callback2(stateFromStores(4846).PressableOpacity, obj2);
   }
   return tmp7Result;
 };

@@ -1,10 +1,10 @@
-// Module ID: 9747
-// Function ID: 9748
+// Module ID: 9813
+// Function ID: 9814
 // Name: usePreviewableMediaText
-// Dependencies: [19, 9739, 1236, 2]
+// Dependencies: [19, 9805, 1236, 2]
 // Exports: usePreviewableMediaText
 
-// Module 9747 (usePreviewableMediaText)
+// Module 9813 (usePreviewableMediaText)
 import noop from "noop";
 
 const require = arg1;

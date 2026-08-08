@@ -1,10 +1,10 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8973
+// Function ID: 8974
 // Name: LocationIcon
-// Dependencies: [19, 21, 712, 4004, 8914, 2]
+// Dependencies: [19, 21, 712, 4004, 8974, 2]
 // Exports: LocationIcon
 
-// Module 8913 (LocationIcon)
+// Module 8973 (LocationIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LocationIcon = function LocationIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8914) /* registerAsset */;
+  obj[0] = require(8974) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 5241
-// Function ID: 5242
+// Module ID: 5242
+// Function ID: 5243
 // Name: handleUpdate
-// Dependencies: [1963, 1372, 5237, 5242, 5243, 12, 589, 687, 11, 709, 2]
+// Dependencies: [1963, 1372, 5238, 5243, 5244, 12, 589, 687, 11, 709, 2]
 
-// Module 5241 (handleUpdate)
+// Module 5242 (handleUpdate)
 import initialize from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import shouldShowOnboarding from "shouldShowOnboarding";

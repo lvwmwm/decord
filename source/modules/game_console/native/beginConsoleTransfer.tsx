@@ -1,10 +1,10 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10877
+// Function ID: 10878
 // Name: _beginConsoleTransfer
-// Dependencies: [5, 676, 10812, 10819, 4270, 10820, 1988, 503, 10823, 2]
+// Dependencies: [5, 676, 10878, 10885, 4271, 10886, 1988, 503, 10889, 2]
 // Exports: beginConsoleTransfer
 
-// Module 10811 (_beginConsoleTransfer)
+// Module 10877 (_beginConsoleTransfer)
 import TransferFooter from "TransferFooter";
 import set from "disconnectRemote";
 
@@ -28,7 +28,7 @@ function _beginConsoleTransfer() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ function _beginConsoleTransfer() {
             return obj;
           }
           c5 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp35) {
           c5 = tmp;
           throw tmp35;

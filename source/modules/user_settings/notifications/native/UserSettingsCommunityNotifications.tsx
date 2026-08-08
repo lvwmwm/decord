@@ -1,10 +1,10 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14704
+// Function ID: 14705
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 9685, 21, 4302, 589, 11, 7907, 4710, 5707, 5708, 1236, 1355, 2]
+// Dependencies: [19, 9751, 21, 4303, 589, 11, 7967, 4712, 5767, 5768, 1236, 1355, 2]
 // Exports: default
 
-// Module 14634 (UserSettingsCommunityNotifications)
+// Module 14704 (UserSettingsCommunityNotifications)
 import "noop";
 import computeAlertSettings from "computeAlertSettings";
 import jsxProd from "jsxProd";
@@ -54,8 +54,8 @@ export default function UserSettingsCommunityNotifications() {
       obj[2] = items;
       return outer1_5(stateFromStores(outer1_2[8]).TableRowGroup, obj, arg0);
     });
-    obj[0] = callback(tmp2(4710).Stack, obj);
-    tmp5 = callback(tmp2(7907).Form, obj);
+    obj[0] = callback(tmp2(4712).Stack, obj);
+    tmp5 = callback(tmp2(7967).Form, obj);
   }
   return tmp5;
 };

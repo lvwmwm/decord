@@ -1,10 +1,10 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9937
+// Function ID: 9938
 // Name: transformFavoriteGifUrl
-// Dependencies: [19, 676, 1467, 9679, 9872, 1236, 2]
+// Dependencies: [19, 676, 1467, 9745, 9938, 1236, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 9871 (transformFavoriteGifUrl)
+// Module 9937 (transformFavoriteGifUrl)
 import noop from "noop";
 
 const require = arg1;
@@ -29,9 +29,9 @@ function transformFavoriteGifUrl(url) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      const tmp14Result = tmp14(9679);
+      const tmp14Result = tmp14(9745);
     }
-    obj6 = require(9679) /* shouldRefreshAttachmentUrl */;
+    obj6 = require(9745) /* shouldRefreshAttachmentUrl */;
     tmp14 = require;
   }
   if (regex.test(arg1)) {
@@ -62,7 +62,7 @@ let result = require("isDiscordProxiedAssetUrl").fileFinishedImporting("modules/
 
 export const GIF_HEADER_HEIGHT = 56;
 export const useFavoriteGIFsMobile = function useFavoriteGIFsMobile() {
-  let obj = sortedFavoriteGIFs(9872);
+  let obj = sortedFavoriteGIFs(9938);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   obj = {

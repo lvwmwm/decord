@@ -1,10 +1,10 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15351
+// Function ID: 15352
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4302, 712, 5967, 1297, 2]
+// Dependencies: [17, 21, 4303, 712, 6027, 1297, 2]
 // Exports: default
 
-// Module 15278 (FavoritesGuildCoachmarkGraphic)
+// Module 15351 (FavoritesGuildCoachmarkGraphic)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -22,7 +22,7 @@ const result = require("createCacheKey").fileFinishedImporting("modules/favorite
 export default function FavoritesGuildCoachmarkGraphic() {
   const tmp = callback3();
   let obj = { style: tmp.container, children: null };
-  const items = [callback(require(5967) /* AccountAgeTier10LargeBadge */.FavoritesSpotIllustration, { width: 160, height: 90 }), ];
+  const items = [callback(require(6027) /* AccountAgeTier10LargeBadge */.FavoritesSpotIllustration, { width: 160, height: 90 }), ];
   obj = { style: tmp.betaTag };
   items[1] = callback(require(1297) /* Button */.BetaTag, obj);
   obj[1] = items;

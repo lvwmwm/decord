@@ -1,10 +1,10 @@
-// Module ID: 9499
-// Function ID: 9500
+// Module ID: 9564
+// Function ID: 9565
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4302, 712, 9500, 4298, 6953, 9348, 1236, 9501, 9329, 1930, 2]
+// Dependencies: [17, 21, 4303, 712, 9565, 4299, 7013, 9413, 1236, 9566, 9394, 1930, 2]
 // Exports: default
 
-// Module 9499 (ProductNameAndDescription)
+// Module 9564 (ProductNameAndDescription)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -14,37 +14,37 @@ let c5;
 function ProductNameAndDescription(product) {
   product = product.product;
   const tmp = callback3();
-  let obj = require(9500) /* getBundleDescription */;
+  let obj = require(9565) /* getBundleDescription */;
   obj = { style: tmp.description, children: null };
   const productDescription = obj.useProductDescription(product);
   obj = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: product.name };
-  const items = [callback(require(4298) /* Text */.Text, obj), callback(require(4298) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: productDescription })];
+  const items = [callback(require(4299) /* Text */.Text, obj), callback(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-default", children: productDescription })];
   obj[1] = items;
   return callback2(View, obj);
 }
 function ProductPurchaseStatus(product) {
   product = product.product;
-  let obj = require(6953) /* getItemRecordsFromPurchases */;
+  let obj = require(7013) /* getItemRecordsFromPurchases */;
   const result = obj.isPremiumCollectiblesProduct(product);
-  let obj1 = require(9348) /* getProductPurchaseState */;
+  let obj1 = require(9413) /* getProductPurchaseState */;
   const productPurchaseState = obj1.useProductPurchaseState(product);
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
     const intl2 = tmp(1236).intl;
     obj[2] = intl2.string(tmp(1236).t["6cfuDj"]);
-    let children = tmp6(tmp(4298).Text, obj);
+    let children = tmp6(tmp(4299).Text, obj);
   } else if (tmp5) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t.BEjTij);
-    children = tmp6(tmp(4298).Text, obj);
+    children = tmp6(tmp(4299).Text, obj);
   } else {
     children = !result;
     if (!result) {
       obj1 = { product: null, onTrackPress: null };
       obj1[0] = product;
       obj1[1] = product.onTrackPress;
-      children = tmp6(importDefault(9501), obj1);
+      children = tmp6(importDefault(9566), obj1);
     }
   }
   return closure_4(View, { children });
@@ -52,7 +52,7 @@ function ProductPurchaseStatus(product) {
 function BundleProductDetailsActionSheetInfo(onTrackPress) {
   const product = onTrackPress.product;
   const tmp = callback3();
-  let obj = require(9329) /* useCollectiblesMobileFlexibleBundlesExperiment */;
+  let obj = require(9394) /* useCollectiblesMobileFlexibleBundlesExperiment */;
   const enabled = obj.useCollectiblesMobileFlexibleBundlesExperiment("BundleProductDetailsActionSheetInfo").enabled;
   const items = [tmp.body, ];
   let bundleBody = enabled;

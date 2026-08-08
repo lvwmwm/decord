@@ -1,10 +1,10 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11481
+// Function ID: 11482
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 676, 21, 4302, 712, 3998, 1974, 1236, 11416, 9484, 4298, 4844, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 3998, 1974, 1236, 11482, 9549, 4299, 4846, 2]
 // Exports: default
 
-// Module 11415 (LearnMoreAboutAppsSection)
+// Module 11481 (LearnMoreAboutAppsSection)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";
@@ -40,19 +40,19 @@ export default function LearnMoreAboutAppsSection(visible) {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   let obj = { sectionName: null, numItems: 1, numVisibleItems: 1, viewed: null, children: null };
   const formatToPlainStringResult = intl3.formatToPlainString(require(1236) /* getSystemLocale */.t.xx5Sug, { sectionTitle: stringResult, sectionBody: stringResult1 });
-  obj[0] = require(9484) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
+  obj[0] = require(9549) /* AppLauncherEntrypoint */.AppLauncherSectionName.NEW_TO_APPS;
   obj[3] = visible.visible;
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.divider };
-  const items = [callback(View, obj), callback(require(4298) /* Text */.Text, { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: stringResult }), callback(require(4298) /* Text */.Text, { variant: "text-xs/normal", color: "text-default", style: tmp.body, children: stringResult1 }), callback(View, { style: tmp.divider }), , ];
+  const items = [callback(View, obj), callback(require(4299) /* Text */.Text, { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: stringResult }), callback(require(4299) /* Text */.Text, { variant: "text-xs/normal", color: "text-default", style: tmp.body, children: stringResult1 }), callback(View, { style: tmp.divider }), , ];
   const obj3 = { style: tmp.linkButton, onPress: callback, accessibilityRole: "link", accessibilityLabel: formatToPlainStringResult, children: null };
   const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj4[2] = intl4.string(require(1236) /* getSystemLocale */.t.Ye51oT);
-  obj3[4] = callback(require(4298) /* Text */.Text, obj4);
-  items[4] = callback(require(4844) /* PressableBase */.PressableHighlight, obj3);
+  obj3[4] = callback(require(4299) /* Text */.Text, obj4);
+  items[4] = callback(require(4846) /* PressableBase */.PressableHighlight, obj3);
   items[5] = callback(View, { style: tmp.divider });
   obj[1] = items;
   obj[4] = callback2(View, obj);
-  return callback(importDefault(11416), obj);
+  return callback(importDefault(11482), obj);
 };

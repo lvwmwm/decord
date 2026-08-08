@@ -1,10 +1,10 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10129
+// Function ID: 10130
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: [32, 6941, 8221, 647, 2]
+// Dependencies: [32, 7001, 8281, 647, 2]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 10063 (useFetchCollectiblesProductCategory)
+// Module 10129 (useFetchCollectiblesProductCategory)
 import _slicedToArray from "_slicedToArray";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/collectibles/hooks/
 
 export const useFetchCollectiblesProductCategory = function useFetchCollectiblesProductCategory(skuId) {
   const _require = skuId;
-  importDefault(8221)();
+  importDefault(8281)();
   let obj = _require(647);
   let items = [updateCategoriesAndProducts];
   const tmp2 = callback(obj.useStateFromStoresArray(items, () => {

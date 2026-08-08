@@ -1,9 +1,9 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 9011
+// Function ID: 9012
 // Name: VoidTextInput
-// Dependencies: [19, 17, 676, 21, 4302, 712, 4147, 500, 4145, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4153, 500, 4151, 2]
 
-// Module 8951 (VoidTextInput)
+// Module 9011 (VoidTextInput)
 import { TextInput } from "get ActivityIndicator";
 import ME from "ME";
 import { jsx } from "jsxProd";
@@ -23,21 +23,21 @@ let closure_6 = createCacheKey.createStyles(obj);
 const forwardRefResult = require("noop").forwardRef((style, ref) => {
   const merged = Object.assign(style, Object.create(null));
   const tmp2 = callback();
-  let obj = require(4147) /* AccessibilityAnnouncer */;
+  let obj = require(4153) /* AccessibilityAnnouncer */;
   const theme = obj.useThemeContext().theme;
-  const obj2 = require(4147) /* AccessibilityAnnouncer */;
+  const obj2 = require(4153) /* AccessibilityAnnouncer */;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  const tmp6 = require(4147) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
+  const tmp6 = require(4153) /* AccessibilityAnnouncer */.isThemeDark(theme) ? unsafe_rawColors.PRIMARY_100 : unsafe_rawColors.PRIMARY_500;
   obj = { ref, style: items, keyboardAppearance: null, placeholderTextColor: null, selectionColor: null };
   items = [tmp2.input, style.style];
-  let tmp3Result = tmp3(4147);
+  let tmp3Result = tmp3(4153);
   obj[2] = tmp3Result.isThemeDark(theme) ? closure_4.DARK : closure_4.LIGHT;
   obj[3] = tmp2.placeholderTextColor.color;
   tmp3Result = tmp3(500);
   let hexWithOpacityResult = tmp6;
   if (tmp3Result.isAndroid()) {
-    hexWithOpacityResult = tmp3(4145).hexWithOpacity(tmp6, 0.5);
-    const tmp3Result1 = tmp3(4145);
+    hexWithOpacityResult = tmp3(4151).hexWithOpacity(tmp6, 0.5);
+    const tmp3Result1 = tmp3(4151);
   }
   obj[4] = hexWithOpacityResult;
   const merged1 = Object.assign(merged);

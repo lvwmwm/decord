@@ -1,10 +1,10 @@
-// Module ID: 6244
-// Function ID: 6245
+// Module ID: 6304
+// Function ID: 6305
 // Name: GameDepthTier3LargeBadge
-// Dependencies: [21, 5267, 6245, 2]
+// Dependencies: [21, 5268, 6305, 2]
 // Exports: GameDepthTier3LargeBadge
 
-// Module 6244 (GameDepthTier3LargeBadge)
+// Module 6304 (GameDepthTier3LargeBadge)
 import { jsx } from "jsxProd";
 
 const result = require("vanityUrl").fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier3LargeBadge.native.tsx");
@@ -28,7 +28,7 @@ export const GameDepthTier3LargeBadge = function GameDepthTier3LargeBadge(width)
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6245);
+  obj[0] = importDefault(6305);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GameDepthTier3LargeBadge = function GameDepthTier3LargeBadge(width)
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

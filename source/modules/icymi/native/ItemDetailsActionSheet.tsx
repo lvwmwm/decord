@@ -1,10 +1,10 @@
-// Module ID: 15490
-// Function ID: 15491
+// Module ID: 15565
+// Function ID: 15566
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 1372, 1891, 8838, 21, 4302, 712, 589, 4492, 5271, 5719, 1297, 8852, 5704, 10130, 15491, 5707, 5373, 2]
+// Dependencies: [19, 17, 1372, 1891, 8898, 21, 4303, 712, 589, 4494, 5272, 5779, 1297, 8912, 5764, 10196, 15566, 5767, 5374, 2]
 // Exports: default
 
-// Module 15490 (ItemDetailsActionSheet)
+// Module 15565 (ItemDetailsActionSheet)
 import "set";
 import { View } from "TableRowGroupTitle";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -45,13 +45,13 @@ export default function ItemDetailsActionSheet(arg0) {
     return dehydratedItem;
   });
   const tmp5 = importDefault;
-  const tmp6 = importDefault(4492)(stateFromStores, true);
+  const tmp6 = importDefault(4494)(stateFromStores, true);
   if (null != stateFromStores1) {
     obj = { guild: null, size: null };
     obj[0] = stateFromStores1;
-    obj[1] = tmp(5719).GuildIconSizes.LARGE;
-    let tmp9 = callback(tmp5(5719), obj);
-    const tmp5Result = tmp5(5719);
+    obj[1] = tmp(5779).GuildIconSizes.LARGE;
+    let tmp9 = callback(tmp5(5779), obj);
+    const tmp5Result = tmp5(5779);
   } else if (null != stateFromStores) {
     obj = { size: null, channel: null };
     obj[0] = tmp(1297).AvatarSizes.LARGE;
@@ -59,13 +59,13 @@ export default function ItemDetailsActionSheet(arg0) {
     tmp9 = callback(tmp(1297).Avatar, obj);
   }
   let result = null != stateFromStores;
-  const tmp8 = importDefault(5271)("show_icymi_debug_scores");
+  const tmp8 = importDefault(5272)("show_icymi_debug_scores");
   if (result) {
     result = null != stateFromStores1;
   }
   if (result) {
-    result = tmp(8852).isChannelCustomScoreEligible(stateFromStores);
-    const tmpResult = tmp(8852);
+    result = tmp(8912).isChannelCustomScoreEligible(stateFromStores);
+    const tmpResult = tmp(8912);
   }
   obj1 = { icon: tmp9, title: tmp6, subtitle: null };
   let str;
@@ -75,14 +75,14 @@ export default function ItemDetailsActionSheet(arg0) {
   if (str == null) {
     str = "";
   }
-  obj2 = { showGradient: true, startExpanded: true, header: tmp16(tmp(10130).ActionSheetIconHeader, obj1), children: null };
+  obj2 = { showGradient: true, startExpanded: true, header: tmp16(tmp(10196).ActionSheetIconHeader, obj1), children: null };
   obj1[2] = str;
   let tmp16Result = result;
   if (result) {
     const obj3 = { channel: null, guild: null };
     obj3[0] = stateFromStores;
     obj3[1] = stateFromStores1;
-    tmp16Result = tmp16(tmp(15491).ChannelScoreSettings, obj3);
+    tmp16Result = tmp16(tmp(15566).ChannelScoreSettings, obj3);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -96,7 +96,7 @@ export default function ItemDetailsActionSheet(arg0) {
     const items4 = [result, ];
     const obj6 = { guild: null };
     obj6[0] = stateFromStores1;
-    items4[1] = tmp16(tmp(15491).GuildScoreSettings, obj6);
+    items4[1] = tmp16(tmp(15566).GuildScoreSettings, obj6);
     obj5[0] = items4;
     tmp15Result = tmp15(closure_8, obj5);
     const tmp19 = closure_8;
@@ -111,11 +111,11 @@ export default function ItemDetailsActionSheet(arg0) {
       obj8[0] = `Total Score: ${tmp7.score}`;
       const _JSON = JSON;
       obj8[1] = JSON.stringify(stateFromStores2.score_components);
-      obj7[2] = tmp16(tmp(5373).TableRow, obj8);
-      tmp16Result = tmp16(tmp(5707).TableRowGroup, obj7);
+      obj7[2] = tmp16(tmp(5374).TableRow, obj8);
+      tmp16Result = tmp16(tmp(5767).TableRowGroup, obj7);
     }
   }
   items3[2] = tmp16Result;
   obj2[3] = items3;
-  return closure_9(require(5704) /* ActionSheet */.ActionSheet, obj2);
+  return closure_9(require(5764) /* ActionSheet */.ActionSheet, obj2);
 };

@@ -1,10 +1,10 @@
-// Module ID: 11884
-// Function ID: 11885
+// Module ID: 11950
+// Function ID: 11951
 // Name: useDMMessageToReport
-// Dependencies: [11885, 11744, 11886, 2]
+// Dependencies: [11951, 11810, 11952, 2]
 // Exports: useDMMessageToReport
 
-// Module 11884 (useDMMessageToReport)
+// Module 11950 (useDMMessageToReport)
 const result = require("loadMessageRequestData").fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
 
 export const useDMMessageToReport = function useDMMessageToReport(channel, id, arg2) {
@@ -14,9 +14,9 @@ export const useDMMessageToReport = function useDMMessageToReport(channel, id, a
   if (!arg2) {
     isReportable = obj.useIsRelationshipTypeSpamReportable(id);
   }
-  let tmp2Result = tmp2(11744);
+  let tmp2Result = tmp2(11810);
   const longestChannelMessageBeforeReply = tmp2Result.useLongestChannelMessageBeforeReply(channel.id, id);
-  tmp2Result = tmp2(11886);
+  tmp2Result = tmp2(11952);
   const messageRequestPreview = tmp2Result.useMessageRequestPreview(channel, { enabled: isReportable });
   let message = messageRequestPreview.message;
   message = longestChannelMessageBeforeReply;

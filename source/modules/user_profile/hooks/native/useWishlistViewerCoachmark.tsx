@@ -1,10 +1,10 @@
-// Module ID: 12397
-// Function ID: 12398
+// Module ID: 12464
+// Function ID: 12465
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 1358, 5962, 2]
+// Dependencies: [32, 19, 1358, 6022, 2]
 // Exports: useWishlistViewerCoachmark
 
-// Module 12397 (useWishlistViewerCoachmark)
+// Module 12464 (useWishlistViewerCoachmark)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

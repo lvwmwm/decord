@@ -1,10 +1,10 @@
-// Module ID: 13761
-// Function ID: 13762
+// Module ID: 13831
+// Function ID: 13832
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4294, 1302, 505, 21, 589, 4148, 1348, 13762, 4013, 10890, 2]
+// Dependencies: [19, 4295, 1302, 505, 21, 589, 4154, 1348, 13832, 4013, 10956, 2]
 // Exports: RootThemeContextProvider
 
-// Module 13761 (RootThemeContextProvider)
+// Module 13831 (RootThemeContextProvider)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import handleThemeChange from "handleThemeChange";

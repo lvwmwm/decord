@@ -1,10 +1,10 @@
-// Module ID: 8092
-// Function ID: 8093
+// Module ID: 8152
+// Function ID: 8153
 // Name: createJoinRequestNotificationSystemMessage
-// Dependencies: [6858, 4119, 1891, 1903, 676, 1236, 11, 8012, 2]
+// Dependencies: [6918, 4125, 1891, 1903, 676, 1236, 11, 8072, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 8092 (createJoinRequestNotificationSystemMessage)
+// Module 8152 (createJoinRequestNotificationSystemMessage)
 import updateSubmittedGuildJoinRequestTotal from "updateSubmittedGuildJoinRequestTotal";
 import handleGatewayJoinRequestUpdate from "handleGatewayJoinRequestUpdate";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -92,7 +92,7 @@ export const createJoinRequestNotificationSystemMessage = function createJoinReq
     }
     const obj2 = { content: null };
     obj2[0] = str;
-    const merged = Object.assign(importDefault(8012)(message));
+    const merged = Object.assign(importDefault(8072)(message));
     return obj2;
   }
 };

@@ -1,17 +1,17 @@
-// Module ID: 12020
-// Function ID: 12021
-// Dependencies: [5, 676, 5126, 503, 1385, 530, 709, 2]
+// Module ID: 12086
+// Function ID: 12087
+// Dependencies: [5, 676, 5127, 503, 1385, 530, 709, 2]
 
-// Module 12020
+// Module 12086
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 
 const require = arg1;
-const result = require("module_5126").fileFinishedImporting("actions/HubActionCreators.tsx");
+const result = require("module_5127").fileFinishedImporting("actions/HubActionCreators.tsx");
 
 export default {
   signup(email, school) {
-    let obj = importDefault(5126);
+    let obj = importDefault(5127);
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj, trackedActionData: null, rejectWithError: null };
     obj = { email, school };
     obj[2] = {
@@ -98,7 +98,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -193,7 +193,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -233,7 +233,7 @@ export default {
                 return obj4;
               } else {
                 c5 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (1 === tmp7) {

@@ -1,10 +1,10 @@
-// Module ID: 10824
-// Function ID: 10825
+// Module ID: 10890
+// Function ID: 10891
 // Name: getXboxURIForChannel
-// Dependencies: [1891, 4349, 3938, 1903, 10439, 676, 4492, 1236, 530, 2]
+// Dependencies: [1891, 4351, 3938, 1903, 10505, 676, 4494, 1236, 530, 2]
 // Exports: default
 
-// Module 10824 (getXboxURIForChannel)
+// Module 10890 (getXboxURIForChannel)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import upsertRelationship from "upsertRelationship";
@@ -32,7 +32,7 @@ export default function getXboxURIForChannel(channelId) {
     tmp4 = closure_9;
   }
   const obj = { guildId: tmp4, channelId: channelId.id, channelName: null, guildName: null, muted: null, deafened: null, nonce: null };
-  obj[2] = require(4492) /* computeChannelName */.computeChannelName(channelId, mergeGuildAvatar, upsertRelationship);
+  obj[2] = require(4494) /* computeChannelName */.computeChannelName(channelId, mergeGuildAvatar, upsertRelationship);
   let name;
   if (guild != null) {
     name = guild.name;

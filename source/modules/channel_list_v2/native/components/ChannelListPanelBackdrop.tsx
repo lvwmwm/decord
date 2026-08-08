@@ -1,10 +1,10 @@
-// Module ID: 15286
-// Function ID: 15287
+// Module ID: 15359
+// Function ID: 15360
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 676, 21, 4302, 712, 15087, 1609, 14261, 15287, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 15157, 1609, 14331, 15360, 2]
 // Exports: default
 
-// Module 15286 (ChannelListPanelBackdrop)
+// Module 15359 (ChannelListPanelBackdrop)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { DM_WIDTH } from "ME";
@@ -34,9 +34,9 @@ export default function ChannelListPanelBackdrop(children) {
   let mobileQuestDockHeight;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = style(15087);
+  let obj = style(15157);
   const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
-  let obj1 = style(14261);
+  let obj1 = style(14331);
   mobileQuestDockHeight = obj1.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {

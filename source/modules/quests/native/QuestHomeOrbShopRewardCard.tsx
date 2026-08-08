@@ -1,10 +1,10 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 14323
+// Function ID: 14324
 // Name: QuestHomeOrbShopRewardCard
-// Dependencies: [19, 17, 1903, 21, 4302, 9279, 712, 589, 3947, 6952, 9364, 9350, 9353, 2]
+// Dependencies: [19, 17, 1903, 21, 4303, 9344, 712, 589, 3947, 7012, 9429, 9415, 9418, 2]
 // Exports: default
 
-// Module 14253 (QuestHomeOrbShopRewardCard)
+// Module 14323 (QuestHomeOrbShopRewardCard)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,7 +34,7 @@ export default function QuestHomeOrbShopRewardCard(product) {
     obj = { product: closure_0, hasShopDiscount: stateFromStores };
     return obj.getProductOrbPrice(obj);
   }, items1);
-  require(9364) /* getProductName */;
+  require(9429) /* getProductName */;
   let tmp7 = null;
   if (null != memo) {
     obj = { style: null, accessible: true, accessibilityRole: "text", accessibilityLabel: null, children: null };
@@ -42,10 +42,10 @@ export default function QuestHomeOrbShopRewardCard(product) {
     obj[3] = tmp6;
     obj = { product: null, isPurchased: false, solidBackground: true };
     obj[0] = product;
-    const items2 = [callback(stateFromStores(9350), obj), ];
+    const items2 = [callback(stateFromStores(9415), obj), ];
     const obj1 = { product: null, collectibleProductState: null, hidePrice: true };
     obj1[0] = product;
-    items2[1] = callback(stateFromStores(9353), obj1);
+    items2[1] = callback(stateFromStores(9418), obj1);
     obj[4] = items2;
     tmp7 = callback2(View, obj);
   }

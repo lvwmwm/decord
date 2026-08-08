@@ -1,10 +1,10 @@
-// Module ID: 9300
-// Function ID: 9301
+// Module ID: 9365
+// Function ID: 9366
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 3949, 5793, 7526, 9301, 9302, 676, 687, 709, 530, 5792, 2]
+// Dependencies: [5, 3949, 5853, 7586, 9366, 9367, 676, 687, 709, 530, 5852, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9300 (shouldFetchStorefrontPromotions)
+// Module 9365 (shouldFetchStorefrontPromotions)
 import parseSkuIds from "parseSkuIds";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
 import "resetStoreState";
@@ -49,7 +49,7 @@ function _maybeFetchStorefrontPromotions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ function _maybeFetchStorefrontPromotions() {
             return obj;
           }
           c1 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c1 = tmp;
           throw tmp8;
@@ -129,7 +129,7 @@ function _fetchStorefrontPromotions() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -239,7 +239,7 @@ function _fetchStorefrontPricesForApplicationId() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -260,7 +260,7 @@ function _fetchStorefrontPricesForApplicationId() {
               applicationId = applicationId.applicationId;
               c3 = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -290,7 +290,7 @@ function _fetchStorefrontPricesForApplicationId() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = tmp;
@@ -328,7 +328,7 @@ function _fetchStorefrontPricesForSkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -349,7 +349,7 @@ function _fetchStorefrontPricesForSkuIds() {
               skuIds = skuIds.skuIds;
               c3 = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -379,7 +379,7 @@ function _fetchStorefrontPricesForSkuIds() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = tmp;
@@ -423,7 +423,7 @@ function _fetchStorefrontPrices() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -458,7 +458,7 @@ function _fetchStorefrontPrices() {
             obj = body(709);
             let obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
             obj2[1] = callback;
-            obj2 = callback(5792);
+            obj2 = callback(5852);
             obj2[2] = obj2.transformStorefrontPricesServer(body);
             obj.dispatch(obj2);
             dependencyMap = 0;

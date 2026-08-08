@@ -1,10 +1,10 @@
-// Module ID: 7697
-// Function ID: 7698
+// Module ID: 7757
+// Function ID: 7758
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 7526, 5790, 676, 687, 709, 5788, 7527, 530, 1884, 584, 2]
+// Dependencies: [5, 7586, 5850, 676, 687, 709, 5848, 7587, 530, 1884, 584, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 7697 (_fetchSocialLayerStorefront)
+// Module 7757 (_fetchSocialLayerStorefront)
 import dispatcher from "dispatcher";
 import getPromotionIdOverride from "getPromotionIdOverride";
 import handleUserSettingsStoreUpdate from "handleUserSettingsStoreUpdate";
@@ -48,7 +48,7 @@ function _fetchSocialLayerStorefront2() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -88,7 +88,7 @@ function _fetchSocialLayerStorefront2() {
                 let closure_17;
                 c8 = 1;
                 c9 = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp7) {
@@ -363,7 +363,7 @@ function _fetchSocialLayerStorefrontSkuWithUrl2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ function _fetchSocialLayerStorefrontSkuWithUrl2() {
               let storefront_metadata;
               c7 = 1;
               promotionIdOverride2 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -549,7 +549,7 @@ function _fetchSocialLayerStorefrontEntries() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -675,7 +675,7 @@ function _fetchSocialLayerStorefrontById() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -912,7 +912,7 @@ function _fetchSocialLayerStorefrontConfig() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 4194
-// Function ID: 4195
+// Module ID: 4195
+// Function ID: 4196
 // Name: getGuildTierFromGuild
-// Dependencies: [1891, 1903, 4195, 3953, 676, 1906, 1905, 3961, 4196, 1236, 1351, 4197, 1974, 12, 3883, 4198, 2866, 3947, 1208, 4209, 4228, 2]
+// Dependencies: [1891, 1903, 4196, 3953, 676, 1906, 1905, 3961, 4197, 1236, 1351, 4198, 1974, 12, 3883, 4199, 2866, 3947, 1208, 4210, 4229, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
-// Module 4194 (getGuildTierFromGuild)
+// Module 4195 (getGuildTierFromGuild)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";
@@ -81,7 +81,7 @@ export const getTotalStickerCountForTier = function getTotalStickerCountForTier(
     const features = guild.features;
     if (features.has(closure_11.MORE_STICKERS)) {
       if (premiumTier === BoostedGuildTiers.TIER_3) {
-        let MAX_STICKER_SLOTS = require(4196) /* PremiumGuildOverrides */.PremiumGuildOverrides.MAX_STICKER_SLOTS;
+        let MAX_STICKER_SLOTS = require(4197) /* PremiumGuildOverrides */.PremiumGuildOverrides.MAX_STICKER_SLOTS;
       }
       return MAX_STICKER_SLOTS;
     }
@@ -218,7 +218,7 @@ export const getTiers = (arg0) => {
   const obj20 = { title: null, description: null, icon: null };
   const intl27 = tmp2(1236).intl;
   const obj21 = { fileSize: null };
-  let tmp2Result = tmp2(4197);
+  let tmp2Result = tmp2(4198);
   obj21[0] = tmp2Result.formatSize(dependencyMap[BoostedGuildTiers.TIER_2].limits.fileSize / 1024, { useKibibytes: true });
   obj20[0] = intl27.formatToPlainString(tmp2(1236).t.t95LnM, obj21);
   const intl28 = tmp2(1236).intl;
@@ -305,7 +305,7 @@ export const getTiers = (arg0) => {
   const obj38 = { title: null, description: null, icon: null };
   const intl46 = tmp2(1236).intl;
   const obj39 = { fileSize: null };
-  tmp2Result = tmp2(4197);
+  tmp2Result = tmp2(4198);
   obj39[0] = tmp2Result.formatSize(dependencyMap[BoostedGuildTiers.TIER_3].limits.fileSize / 1024, { useKibibytes: true });
   obj38[0] = intl46.formatToPlainString(tmp2(1236).t.t95LnM, obj39);
   const intl47 = tmp2(1236).intl;
@@ -478,8 +478,8 @@ export const generateBlockGuildSubscriptionPurchasesNode = function generateBloc
   premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
   currentUser = currentUser.getCurrentUser();
   if (!tmp3) {
-    const guildBoostSlots = require(4198) /* _fetchAppliedGuildBoostsForGuild */.fetchGuildBoostSlots();
-    const obj2 = require(4198) /* _fetchAppliedGuildBoostsForGuild */;
+    const guildBoostSlots = require(4199) /* _fetchAppliedGuildBoostsForGuild */.fetchGuildBoostSlots();
+    const obj2 = require(4199) /* _fetchAppliedGuildBoostsForGuild */;
   }
   let values = importDefault(12).values(tmp2.boostSlots);
   let prop;
@@ -750,7 +750,7 @@ export const getMaxEmojiSlots = function getMaxEmojiSlots(stateFromStores) {
   return Math.max(tmp, sum);
 };
 export const getNumberOfAppliedBoostsNeededForTier = function getNumberOfAppliedBoostsNeededForTier(id) {
-  return Math.max(0, AppliedGuildBoostsRequiredForBoostedGuildTier[arg1] - require(4209) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id.id).available);
+  return Math.max(0, AppliedGuildBoostsRequiredForBoostedGuildTier[arg1] - require(4210) /* useGuildAppliedBoostCount */.getGuildPowerupsBoostCount(id.id).available);
 };
 export const isGuildBoostSlotCanceled = function isGuildBoostSlotCanceled(subscription) {
   subscription = subscription.subscription;
@@ -778,7 +778,7 @@ export const getNextPremiumTierForSubscriberCount = function getNextPremiumTierF
 };
 export const TierMarkerPositions = obj1;
 export const getGuildBoostingProgressBarFillFactor = function getGuildBoostingProgressBarFillFactor(guild) {
-  totalAvailableBoostsCount = totalAvailableBoostsCount(4228).getGuildPowerupBoostLevelProgress(guild.id);
+  totalAvailableBoostsCount = totalAvailableBoostsCount(4229).getGuildPowerupBoostLevelProgress(guild.id);
   let NONE = reversed.find((arg0) => totalAvailableBoostsCount >= outer1_9[arg0]);
   if (NONE == null) {
     NONE = BoostedGuildTiers.NONE;

@@ -1,10 +1,10 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 9028
+// Function ID: 9029
 // Name: _fetchGuildIntegrationsApplications
-// Dependencies: [5, 4325, 1911, 676, 530, 709, 2]
+// Dependencies: [5, 4326, 1911, 676, 530, 709, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 8968 (_fetchGuildIntegrationsApplications)
+// Module 9028 (_fetchGuildIntegrationsApplications)
 import dispatcher from "dispatcher";
 import { BasicApplicationRecord } from "createExecutable";
 import createdAt from "createdAt";

@@ -1,9 +1,9 @@
-// Module ID: 4926
-// Function ID: 4927
+// Module ID: 4928
+// Function ID: 4929
 // Name: create
-// Dependencies: [5, 1933, 4927, 2]
+// Dependencies: [5, 1933, 4929, 2]
 
-// Module 4926 (create)
+// Module 4928 (create)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;
@@ -64,7 +64,7 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {

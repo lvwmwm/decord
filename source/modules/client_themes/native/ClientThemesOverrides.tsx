@@ -1,10 +1,10 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8391
+// Function ID: 8392
 // Name: useGradientBottom
-// Dependencies: [19, 4302, 4112, 8332, 2]
+// Dependencies: [19, 4303, 4118, 8392, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8331 (useGradientBottom)
+// Module 8391 (useGradientBottom)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 
@@ -13,7 +13,7 @@ let closure_4 = createCacheKey.createStyles({ none: { backgroundColor: "transpar
 const result = require("getGradientColorByPercentage").fileFinishedImporting("modules/client_themes/native/ClientThemesOverrides.tsx");
 
 export const useGradientBottom = function useGradientBottom() {
-  gradientValue = gradientValue(4112).useGradientValue(gradientValue(4112).GradientPercentage.END);
+  gradientValue = gradientValue(4118).useGradientValue(gradientValue(4118).GradientPercentage.END);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp2;
@@ -26,7 +26,7 @@ export const useGradientBottom = function useGradientBottom() {
   }, items);
 };
 export const useGradientTop = function useGradientTop() {
-  gradientValue = gradientValue(4112).useGradientValue(gradientValue(4112).GradientPercentage.START);
+  gradientValue = gradientValue(4118).useGradientValue(gradientValue(4118).GradientPercentage.START);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp2;
@@ -39,7 +39,7 @@ export const useGradientTop = function useGradientTop() {
   }, items);
 };
 export const useGradientMidpoint = function useGradientMidpoint() {
-  gradientValue = gradientValue(4112).useGradientValue(gradientValue(4112).GradientPercentage.MID);
+  gradientValue = gradientValue(4118).useGradientValue(gradientValue(4118).GradientPercentage.MID);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp2;
@@ -53,7 +53,7 @@ export const useGradientMidpoint = function useGradientMidpoint() {
 };
 export const useClientThemesOverride = function useClientThemesOverride(themedChatInput) {
   let tmp2;
-  if (importDefault(8332)()) {
+  if (importDefault(8392)()) {
     let none = themedChatInput;
     if (themedChatInput == null) {
       none = tmp.none;

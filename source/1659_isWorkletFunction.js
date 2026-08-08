@@ -4,10 +4,10 @@
 // Dependencies: []
 
 // Module 1659 (isWorkletFunction)
-function isWorkletFunction(fn) {
-  let __workletHash = typeof fn === "function";
-  if (typeof fn === "function") {
-    __workletHash = fn.__workletHash;
+function isWorkletFunction(onUpdate) {
+  let __workletHash = typeof onUpdate === "function";
+  if (typeof onUpdate === "function") {
+    __workletHash = onUpdate.__workletHash;
   }
   return __workletHash;
 }

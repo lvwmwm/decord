@@ -1,10 +1,10 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11372
+// Function ID: 11373
 // Name: getChatInputMaxHeight
-// Dependencies: [32, 19, 1476, 11302, 1875, 5371, 4167, 1607, 1474, 11307, 4303, 4306, 4162, 2]
+// Dependencies: [32, 19, 1476, 11368, 1875, 5372, 4168, 1607, 1474, 11373, 4304, 4307, 4036, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputMinHeight
 
-// Module 11306 (getChatInputMaxHeight)
+// Module 11372 (getChatInputMaxHeight)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
@@ -15,13 +15,13 @@ function getChatInputMaxHeight() {
   let systemKeyboardHeight = require(1875) /* useSystemKeyboardHeight */.getSystemKeyboardHeight();
   const obj = require(1875) /* useSystemKeyboardHeight */;
   const tmp = require;
-  const customKeyboardHeight = require(5371) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-  const obj2 = require(5371) /* useCustomKeyboardHeight */;
-  const keyboardType = require(4167) /* useKeyboardType */.getKeyboardType();
+  const customKeyboardHeight = require(5372) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+  const obj2 = require(5372) /* useCustomKeyboardHeight */;
+  const keyboardType = require(4168) /* useKeyboardType */.getKeyboardType();
   if (keyboardType !== require(1607) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     systemKeyboardHeight = customKeyboardHeight;
   }
-  const obj3 = require(4167) /* useKeyboardType */;
+  const obj3 = require(4168) /* useKeyboardType */;
   return Math.min(200, Math.max(2 * closure_6, tmp(1474).getWindowDimensions({ ignoreKeyboard: true }).height - systemKeyboardHeight - 200));
 }
 const result = require("subscribeToKeyboardUIStore").fileFinishedImporting("modules/chat_input/native/useChatInputMaxHeight.tsx");
@@ -73,15 +73,15 @@ export { getChatInputMaxHeight };
 export const getChatInputHeightAnimationTiming = function getChatInputHeightAnimationTiming(height) {
   let obj = require(1875) /* useSystemKeyboardHeight */;
   let systemKeyboardHeight = obj.getSystemKeyboardHeight();
-  const customKeyboardHeight = require(5371) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
-  const obj2 = require(5371) /* useCustomKeyboardHeight */;
-  const keyboardType = require(4167) /* useKeyboardType */.getKeyboardType();
+  const customKeyboardHeight = require(5372) /* useCustomKeyboardHeight */.getCustomKeyboardHeight();
+  const obj2 = require(5372) /* useCustomKeyboardHeight */;
+  const keyboardType = require(4168) /* useKeyboardType */.getKeyboardType();
   if (keyboardType !== require(1607) /* KeyboardTypes */.KeyboardTypes.SYSTEM) {
     systemKeyboardHeight = customKeyboardHeight;
   }
   let tmpResult = tmp(1474);
   const bound = Math.min(height, Math.min(200, Math.max(2 * closure_6, tmpResult.getWindowDimensions({ ignoreKeyboard: true }).height - systemKeyboardHeight - 200)));
-  tmpResult = tmp(4303);
-  obj = { duration: tmp(4306).timingFastDuration, easing: tmp(4162).Easing.linear };
+  tmpResult = tmp(4304);
+  obj = { duration: tmp(4307).timingFastDuration, easing: tmp(4036).Easing.linear };
   return tmpResult.withTiming(bound, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 6919
-// Function ID: 6920
+// Module ID: 6979
+// Function ID: 6980
 // Name: splitQuery
-// Dependencies: [6920, 2]
+// Dependencies: [6980, 2]
 // Exports: splitQuery
 
-// Module 6919 (splitQuery)
+// Module 6979 (splitQuery)
 const result = require("set").fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");
 
 export const splitQuery = function splitQuery(query) {

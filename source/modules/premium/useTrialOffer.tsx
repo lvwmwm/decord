@@ -1,10 +1,10 @@
-// Module ID: 6853
-// Function ID: 6854
+// Module ID: 6913
+// Function ID: 6914
 // Name: hasUserTrialOfferExpired
-// Dependencies: [32, 19, 1903, 6854, 589, 3947, 4187, 2]
+// Dependencies: [32, 19, 1903, 6914, 589, 3947, 4188, 2]
 // Exports: hasUserTrialOfferExpired, useTrialOffer
 
-// Module 6853 (hasUserTrialOfferExpired)
+// Module 6913 (hasUserTrialOfferExpired)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";

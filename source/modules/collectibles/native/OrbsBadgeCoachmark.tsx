@@ -1,10 +1,10 @@
-// Module ID: 9448
-// Function ID: 9449
+// Module ID: 9513
+// Function ID: 9514
 // Name: OrbsBadgeCoachmarkImg
-// Dependencies: [19, 17, 21, 4302, 9449, 1236, 4153, 8593, 2]
+// Dependencies: [19, 17, 21, 4303, 9514, 1236, 4159, 8653, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 9448 (OrbsBadgeCoachmarkImg)
+// Module 9513 (OrbsBadgeCoachmarkImg)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -17,11 +17,11 @@ function OrbsBadgeCoachmarkImg() {
   const tmp = callback();
   let obj = { style: tmp.coachmarkImageContainer, children: null };
   obj = { source: null, style: null };
-  obj = { uri: importDefault(9449) };
+  obj = { uri: importDefault(9514) };
   obj[0] = obj;
   obj[1] = tmp.coachmarkImage;
-  obj[1] = <closure_5 uri={importDefault(9449)} />;
-  return <closure_4 uri={importDefault(9449)} />;
+  obj[1] = <closure_5 uri={importDefault(9514)} />;
+  return <closure_4 uri={importDefault(9514)} />;
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 let closure_7 = createCacheKey.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 80, height: 80 }, coachmarkDescription: { marginBottom: -10 } });
@@ -29,7 +29,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/collectibles/na
 
 export default function OrbsBadgeCoachmark(badgeRef) {
   const merged = Object.assign(badgeRef, Object.create(null));
-  const coachmark = require(8593) /* useCoachmark */.useCoachmark(badgeRef.badgeRef, merged);
+  const coachmark = require(8653) /* useCoachmark */.useCoachmark(badgeRef.badgeRef, merged);
   return null;
 };
 export const useOrbsBadgeCoachmark = function useOrbsBadgeCoachmark(disabled) {

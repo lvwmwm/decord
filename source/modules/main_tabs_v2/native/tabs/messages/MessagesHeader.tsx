@@ -1,10 +1,10 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15156
+// Function ID: 15157
 // Name: PX_16
-// Dependencies: [19, 17, 676, 21, 712, 1348, 9387, 4716, 4302, 4162, 4711, 15087, 4153, 11643, 5270, 7691, 9641, 1236, 4298, 5947, 5946, 15092, 4712, 4241, 4240, 2]
+// Dependencies: [19, 17, 676, 21, 712, 1348, 9452, 4718, 4303, 4036, 4713, 15157, 4159, 11709, 5271, 7751, 9706, 1236, 4299, 6007, 6006, 15162, 4714, 4242, 4241, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 15086 (PX_16)
+// Module 15156 (PX_16)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "getSystemLocale";
 import { SearchTypes } from "ME";
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     const items = [_undefined.headerPanel, { height }];
     return items;
   }, items);
-  let obj = height(4162);
+  let obj = height(4036);
   const fn = function c() {
     let obj = height(_undefined[10]);
     let num = 0;
@@ -58,12 +58,12 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     obj = { opacity: obj.withSpring(num) };
     return obj;
   };
-  obj = { withSpring: height(4711).withSpring, scrollPosition };
+  obj = { withSpring: height(4713).withSpring, scrollPosition };
   fn.__closure = obj;
   fn.__workletHash = 17233409273245;
   fn.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = height(15087);
+  let obj2 = height(15157);
   const isHomeDrawerEnabled = obj2.useIsHomeDrawerEnabled();
   const callback = importAllResult.useCallback(() => {
     const rootNavigationRef = height(_undefined[12]).getRootNavigationRef();
@@ -105,13 +105,13 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   obj = { variant: "primary", icon: null, size: "sm", accessibilityLabel: null, onPress: null };
   const obj1 = { size: "sm", color: null };
   obj1[1] = scrollPosition(712).colors.WHITE;
-  obj[1] = callback(height(9641).PlusLargeIcon, obj1);
+  obj[1] = callback(height(9706).PlusLargeIcon, obj1);
   const intl = height(1236).intl;
   obj[3] = intl.string(height(1236).t.jD1qzM);
   obj[4] = callback3;
   obj2 = { style: memo, children: null };
   const obj3 = { style: tmp.headerPanelTitle, children: null };
-  const tmp13 = scrollPosition(5270)("bespoke");
+  const tmp13 = scrollPosition(5271)("bespoke");
   let str = "redesign/heading-18/bold";
   if (tmp4) {
     str = "heading-lg/semibold";
@@ -126,33 +126,33 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
     stringResult = string(t.OIgYlQ);
   }
   obj4[4] = stringResult;
-  obj3[1] = callback(height(4298).Text, obj4);
+  obj3[1] = callback(height(4299).Text, obj4);
   const items1 = [callback(closure_4, obj3), , , ];
   const obj5 = { style: tmp.headerPanelButtons, children: null };
   const obj6 = { onPress: callback2, variant: "secondary", size: "sm", icon: null, accessibilityLabel: null };
   if (tmp4) {
-    let tmp14Result = tmp2(5947);
+    let tmp14Result = tmp2(6007);
   } else {
-    tmp14Result = tmp14(tmp6(5946).MagnifyingGlassIcon, { size: "sm" });
+    tmp14Result = tmp14(tmp6(6006).MagnifyingGlassIcon, { size: "sm" });
   }
   obj6[3] = tmp14Result;
   const intl3 = tmp6(1236).intl;
   obj6[4] = intl3.string(height(1236).t["5h0QOP"]);
-  const items2 = [callback(height(7691).IconButton, obj6), callback(scrollPosition(15092), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  const items2 = [callback(height(7751).IconButton, obj6), callback(scrollPosition(15162), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   if (tmp4) {
-    let tmp2Result = tmp2(4241);
+    let tmp2Result = tmp2(4242);
   } else {
-    tmp2Result = tmp14(tmp6(4240).UserPlusIcon, { size: "sm" });
+    tmp2Result = tmp14(tmp6(4241).UserPlusIcon, { size: "sm" });
   }
   const obj7 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: tmp2Result, onPress: callback1, maxFontSizeMultiplier: 1, text: null };
   const intl4 = tmp6(1236).intl;
   obj7[7] = intl4.string(height(1236).t.zIJnA6);
-  items2[2] = callback(height(4712).Button, obj7);
-  items2[3] = callback(height(7691).IconButton, obj);
+  items2[2] = callback(height(4714).Button, obj7);
+  items2[3] = callback(height(7751).IconButton, obj);
   obj5[1] = items2;
   items1[1] = closure_7(closure_4, obj5);
   const items3 = [tmp.headerBorder, animatedStyle];
-  items1[2] = callback(scrollPosition(4162).View, { style: items3 });
+  items1[2] = callback(scrollPosition(4036).View, { style: items3 });
   items1[3] = tmp13;
   obj2[1] = items1;
   return closure_7(closure_4, obj2);
@@ -164,6 +164,6 @@ export const getMessagesHeaderHeight = function getMessagesHeaderHeight(fontScal
   const bound = Math.min(fontScale, 1.75);
   const refreshToken = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */.resolveRefreshToken(importDefault(712).modules.mobile.MESSAGES_HEADER_PADDING_BOTTOM, closure_2);
   const obj = require(1348) /* useIsMobileVisualRefreshExperimentEnabled */;
-  const sum = require(9387) /* map */.scaleTextLineHeight("redesign/heading-18/bold", bound) + PX_8;
-  return sum + require(4716) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_16 + refreshToken;
+  const sum = require(9452) /* map */.scaleTextLineHeight("redesign/heading-18/bold", bound) + PX_8;
+  return sum + require(4718) /* MINIMUM_HIT_AREA */.SMALL_BUTTON_HEIGHT + PX_16 + refreshToken;
 };

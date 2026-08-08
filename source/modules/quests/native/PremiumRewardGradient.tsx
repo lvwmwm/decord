@@ -1,10 +1,10 @@
-// Module ID: 14333
-// Function ID: 14334
+// Module ID: 14403
+// Function ID: 14404
 // Name: PremiumRewardFillGradient
-// Dependencies: [19, 17, 21, 4302, 4145, 712, 4005, 4238, 4116, 4723, 5309, 2]
+// Dependencies: [19, 17, 21, 4303, 4151, 712, 4005, 4239, 4122, 4725, 5310, 2]
 // Exports: default
 
-// Module 14333 (PremiumRewardFillGradient)
+// Module 14403 (PremiumRewardFillGradient)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -85,23 +85,23 @@ function PremiumRewardGlowGradient(arg0) {
     const items = [token, token1];
     return items;
   }, items);
-  let obj2 = token(4116);
-  const isThemeDarkResult = obj2.isThemeDark(token1(4238)());
+  let obj2 = token(4122);
+  const isThemeDarkResult = obj2.isThemeDark(token1(4239)());
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, style];
   const items2 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
   const tmp10 = closure_5;
-  const tmp7 = token1(4238)();
+  const tmp7 = token1(4239)();
   const tmp9 = closure_7;
   if (!isThemeDarkResult) {
     glowLight = tmp.glowLight;
   }
-  obj = { style: items2, maskElement: tmp11(tmp3(4723), obj1), children: tmp11(tmp3(4723), obj2) };
+  obj = { style: items2, maskElement: tmp11(tmp3(4725), obj1), children: tmp11(tmp3(4725), obj2) };
   items2[1] = glowLight;
   obj1 = { style: closure_4.absoluteFill, colors: ["transparent", "black"], start: closure_11, end: closure_12 };
   obj2 = { style: closure_4.absoluteFill, colors: memo, start: closure_9, end: closure_10 };
-  const items3 = [closure_6(token1(5309), obj), children];
+  const items3 = [closure_6(token1(5310), obj), children];
   obj[1] = items3;
   return tmp9(tmp10, obj);
 }

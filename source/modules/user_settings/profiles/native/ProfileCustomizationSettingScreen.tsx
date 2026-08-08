@@ -1,9 +1,9 @@
-// Module ID: 13825
-// Function ID: 13826
+// Module ID: 13895
+// Function ID: 13896
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 10069, 8202, 685, 676, 21, 4302, 1236, 13826, 13884, 4005, 712, 1480, 6818, 8896, 9399, 8450, 4160, 13842, 13885, 647, 4496, 10071, 5269, 8322, 4187, 1481, 11906, 9497, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10135, 8262, 685, 676, 21, 4303, 1236, 13896, 13954, 4005, 712, 1480, 6878, 8956, 9464, 8510, 4166, 13912, 13955, 647, 4498, 10137, 5270, 8382, 4188, 1481, 11972, 9562, 2]
 
-// Module 13825 (ProfileCustomizationSubsection)
+// Module 13895 (ProfileCustomizationSubsection)
 import zustandStore from "zustandStore";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import SegmentedControlPage from "SegmentedControlPage";
@@ -35,7 +35,7 @@ let items = [
     },
     id: "edit-user-profile",
     renderPage(autoFocusElement) {
-      return callback(importDefault(13826), { autoFocusElement: autoFocusElement.autoFocusElement });
+      return callback(importDefault(13896), { autoFocusElement: autoFocusElement.autoFocusElement });
     },
     subSection: ProfileCustomizationSubsection.USER_PROFILE
   },
@@ -46,7 +46,7 @@ let items = [
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return callback(importDefault(13884), {});
+      return callback(importDefault(13954), {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(() => {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -200,7 +200,7 @@ const memoResult = importAllResult.memo(() => {
                   delayedCall.delay();
                 }
                 navigation = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp14) {
               navigation = tmp;
@@ -244,7 +244,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return callback(importDefault(13826), { autoFocusElement: autoFocusElement.autoFocusElement });
+    return callback(importDefault(13896), { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };

@@ -1,9 +1,9 @@
-// Module ID: 15009
-// Function ID: 15010
+// Module ID: 15079
+// Function ID: 15080
 // Name: NavigatorWithCaptchaHook
-// Dependencies: [32, 19, 17, 676, 21, 15010, 5269, 15019, 5725, 8418, 4302, 712, 15060, 8412, 1623, 8442, 15061, 8440, 5723, 501, 1236, 15062, 6874, 15066, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15080, 5270, 15089, 5785, 8478, 4303, 712, 15130, 8472, 1623, 8502, 15131, 8500, 5783, 501, 1236, 15132, 6934, 15136, 2]
 
-// Module 15009 (NavigatorWithCaptchaHook)
+// Module 15079 (NavigatorWithCaptchaHook)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "PlatformTypes";
 import get_ActivityIndicator from "context";
@@ -22,10 +22,10 @@ const require = arg1;
 function NavigatorWithCaptchaHook() {
   let require;
   let tmp9;
-  let obj = require(15060) /* useIsHCaptchaModalOpenTracking */;
+  let obj = require(15130) /* useIsHCaptchaModalOpenTracking */;
   const isHCaptchaModalOpenTracking = obj.useIsHCaptchaModalOpenTracking();
   const tmp6 = callback3();
-  const tmp5 = importDefault(8412)();
+  const tmp5 = importDefault(8472)();
   [tmp9, require] = callback(importAllResult.useState(AuthStates.WELCOME), 2);
   const tmp10 = callback(importAllResult.useState(false), 2);
   importDefault = tmp11;
@@ -48,8 +48,8 @@ function NavigatorWithCaptchaHook() {
   const tmp15 = closure_10;
   const tmp16 = closure_9;
   const tmp8 = callback(importAllResult.useState(AuthStates.WELCOME), 2);
-  obj[0] = require(15061) /* registerAsset */;
-  const children = [callback2(importDefault(8442), obj), ];
+  obj[0] = require(15131) /* registerAsset */;
+  const children = [callback2(importDefault(8502), obj), ];
   if (tmp5) {
     obj = { value: null, children: null };
     obj[0] = tmp11;
@@ -103,10 +103,10 @@ function NavigatorWithCaptchaHook() {
     obj7[1] = tmp4(712).space.PX_24;
     obj7[2] = tmp4(712).space.PX_16;
     obj6[10] = obj7;
-    obj5[1] = tmp17(tmp(5723).Navigator, obj6);
+    obj5[1] = tmp17(tmp(5783).Navigator, obj6);
     obj2[1] = tmp17(closure_6, obj5);
     obj[1] = tmp17(closure_6, obj2);
-    let tmp17Result = tmp17(tmp(8440).WideAuthScrollContext.Provider, obj);
+    let tmp17Result = tmp17(tmp(8500).WideAuthScrollContext.Provider, obj);
     tmpResult = tmp(501);
   } else {
     const obj8 = { screens: null, viewStyle: null, containerStyle: null, headerBackTitle: null, initialRouteName: null, onWillFocus: null, headerStyle: null };
@@ -117,7 +117,7 @@ function NavigatorWithCaptchaHook() {
     obj8[4] = tmp7.WELCOME;
     obj8[5] = closure_5.dismiss;
     obj8[6] = { borderBottomWidth: 0 };
-    tmp17Result = tmp17(tmp(5723).Navigator, obj8);
+    tmp17Result = tmp17(tmp(5783).Navigator, obj8);
   }
   children[1] = tmp17Result;
   return tmp15(tmp16, { children });
@@ -171,7 +171,7 @@ let closure_12 = Object.fromEntries(headerTitle.map((arg0) => {
   let tmp8 = null;
   if (set.has(tmp)) {
     const obj1 = { cardStyleInterpolator: null };
-    obj1[0] = require(5725) /* createStackNavigator */.CardStyleInterpolators.forFadeFromCenter;
+    obj1[0] = require(5785) /* createStackNavigator */.CardStyleInterpolators.forFadeFromCenter;
     tmp8 = obj1;
   }
   const merged3 = Object.assign(tmp8);
@@ -198,11 +198,11 @@ const context = importAllResult.createContext(() => {
 let obj2 = { borderBottomWidth: 0, backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 const memoResult = importAllResult.memo(function Auth() {
   const effect = importAllResult.useEffect(() => {
-    callback2(15062).initialize();
+    callback2(15132).initialize();
     return () => callback(table[21]).terminate();
   }, []);
-  const layoutEffect = importAllResult.useLayoutEffect(() => callback(6874).trackAppUIViewed(), []);
-  importDefault(15066)();
+  const layoutEffect = importAllResult.useLayoutEffect(() => callback(6934).trackAppUIViewed(), []);
+  importDefault(15136)();
   let closure_0 = importAllResult.useRef(undefined);
   return callback2(context.Provider, { value: importAllResult.useCallback(() => callback(outer1_2[7]).getTrackRegTransition(callback), [])(), children: callback2(NavigatorWithCaptchaHook, {}) });
 });

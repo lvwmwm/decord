@@ -1,9 +1,9 @@
-// Module ID: 13376
-// Function ID: 13377
+// Module ID: 13446
+// Function ID: 13447
 // Name: _defaultMessages
-// Dependencies: [1274, 1238, 13377, 2]
+// Dependencies: [1274, 1238, 13447, 2]
 
-// Module 13376 (_defaultMessages)
+// Module 13446 (_defaultMessages)
 import module_1274 from "module_1274";
 import importDefaultResult from "messagesProxy";
 import chainMessagesObjectsResult from "messagesProxy";

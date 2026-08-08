@@ -1,10 +1,10 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9897
+// Function ID: 9898
 // Name: ReactionNotificationBody
-// Dependencies: [19, 17, 4294, 9702, 676, 21, 4302, 501, 712, 3974, 9739, 4298, 1416, 9832, 5359, 1236, 5858, 9701, 9722, 9723, 9748, 9598, 1297, 5719, 12, 4530, 589, 4507, 4310, 9703, 9750, 1988, 9785, 9780, 2]
+// Dependencies: [19, 17, 4295, 9768, 676, 21, 4303, 501, 712, 3974, 9805, 4299, 1416, 9898, 5360, 1236, 5918, 9767, 9788, 9789, 9814, 9663, 1297, 5779, 12, 4532, 589, 4509, 4311, 9769, 9816, 1988, 9851, 9846, 2]
 // Exports: default
 
-// Module 9831 (ReactionNotificationBody)
+// Module 9897 (ReactionNotificationBody)
 import PreviewIcon from "PreviewIcon";
 import { View } from "extractMetadataFromNotification";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,18 +33,18 @@ function ReactionNotificationBody(arg0) {
   let text;
   ({ secondaryText, messagePreview } = arg0);
   ({ text, hasMessageContent } = arg0);
-  let obj = require(9701) /* extractMetadataFromNotification */;
+  let obj = require(9767) /* extractMetadataFromNotification */;
   const messagePreviewTextVariant = obj.getMessagePreviewTextVariant();
   const tmp = createCacheKey();
-  ({ gradientColors, gradientStyles } = importDefault(9722)());
+  ({ gradientColors, gradientStyles } = importDefault(9788)());
   obj = { variant: messagePreviewTextVariant, color: "text-default", style: tmp.italic, children: text };
-  const children = [callback(require(4298) /* Text */.Text, obj), , ];
+  const children = [callback(require(4299) /* Text */.Text, obj), , ];
   let tmp8Result = null;
   if (null != secondaryText) {
     obj = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: null, children: null };
     obj[2] = closure_7;
     obj[3] = secondaryText;
-    tmp8Result = tmp8(tmp2(4298).Text, obj);
+    tmp8Result = tmp8(tmp2(4299).Text, obj);
   }
   children[1] = tmp8Result;
   tmp8Result = null;
@@ -56,7 +56,7 @@ function ReactionNotificationBody(arg0) {
       obj1[2] = closure_6;
       obj1[4] = gradientStyles;
       obj1[5] = gradientColors;
-      tmp8Result = tmp8(tmp2(9723).NativeChannelRowPreview, obj1);
+      tmp8Result = tmp8(tmp2(9789).NativeChannelRowPreview, obj1);
     }
   }
   children[2] = tmp8Result;
@@ -89,7 +89,7 @@ function ReactionNotificationBodyWrapper(arg0) {
   const React = tmp4;
   const AnimateEmoji = message(3974).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
-  let obj = message(9739);
+  let obj = message(9805);
   const previewableMedia = obj.usePreviewableMedia(message);
   const items = [setting, reaction, , , ];
   ({ imageEmoji: arr[2], textEmoji: arr[3], italic: arr[4] } = tmp4);
@@ -249,9 +249,9 @@ function ReactionNotificationBodyWrapper(arg0) {
     return { text, secondaryText: null };
   }, items1);
   ({ secondaryText, text } = memo);
-  let obj1 = message(9701);
+  let obj1 = message(9767);
   const hasPreviewableMedia = obj1.useHasPreviewableMedia(message);
-  let obj2 = message(9748);
+  let obj2 = message(9814);
   if (hasPreviewableMedia) {
     message = obj2.useGetInitialMessagePreview({ message });
   }
@@ -300,8 +300,8 @@ function ReactorNotificationIcon(notification) {
       let obj = { channel: null, size: null };
       obj[0] = channel;
       obj[1] = require(1297) /* Button */.AvatarSizes.NORMAL;
-      let tmp8Result = callback(importDefault(9598), obj);
-      const tmp15 = importDefault(9598);
+      let tmp8Result = callback(importDefault(9663), obj);
+      const tmp15 = importDefault(9663);
     }
     return tmp8Result;
   }
@@ -320,10 +320,10 @@ function ReactorNotificationIcon(notification) {
   } else {
     obj = { guild: null, size: null, style: null };
     obj[0] = guild;
-    obj[1] = require(5719) /* GuildIconSizes */.GuildIconSizes.NORMAL;
+    obj[1] = require(5779) /* GuildIconSizes */.GuildIconSizes.NORMAL;
     obj[2] = tmp.guildIcon;
-    tmp8Result = callback(importDefault(5719), obj);
-    const tmp5 = importDefault(5719);
+    tmp8Result = callback(importDefault(5779), obj);
+    const tmp5 = importDefault(5779);
   }
 }
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: closure_6, NOTIFICATION_PREVIEW_LINE_CLAMP: error } = set);

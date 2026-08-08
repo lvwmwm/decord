@@ -1,8 +1,8 @@
-// Module ID: 13664
-// Function ID: 13665
-// Dependencies: [4339, 4205, 676, 10673, 10675, 13665, 7529, 10670, 10537, 698, 530, 7527, 2]
+// Module ID: 13734
+// Function ID: 13735
+// Dependencies: [4341, 4206, 676, 10739, 10741, 13735, 7589, 10736, 10603, 698, 530, 7587, 2]
 
-// Module 13664
+// Module 13734
 import addApplication from "addApplication";
 import ME from "ME";
 
@@ -14,12 +14,12 @@ const require = arg1;
 ({ ApplicationFlags: c4, Endpoints: c5, RPCCommands, RPCErrors: closure_6 } = ME);
 let obj = {
   validation(string) {
-    let obj = importDefault(10673)(string);
+    let obj = importDefault(10739)(string);
     obj = { event_name: null, event_properties: null };
     const requiredResult = obj.required();
     obj[0] = string.string().required();
     const stringResult = string.string();
-    obj[1] = importDefault(10673)(string).required();
+    obj[1] = importDefault(10739)(string).required();
     return requiredResult.keys(obj);
   },
   handler(arg0) {
@@ -27,19 +27,19 @@ let obj = {
     let socket;
     ({ socket, args } = arg0);
     const event_properties = args.event_properties;
-    let obj = require(10675) /* recurseReplaceContentTree */;
+    let obj = require(10741) /* recurseReplaceContentTree */;
     const result = obj.validatePostMessageTransport(socket.transport);
-    let obj1 = require(10675) /* recurseReplaceContentTree */;
+    let obj1 = require(10741) /* recurseReplaceContentTree */;
     obj1.validateApplication(socket.application);
     const id = socket.application.id;
-    const obj3 = importDefault(13665)();
+    const obj3 = importDefault(13735)();
     if (obj3 != null) {
       const guildId = obj3.getGuildId();
     }
     application = application.getApplication(id);
-    let tmpResult = tmp(7529);
+    let tmpResult = tmp(7589);
     if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      tmpResult = tmp(10537);
+      tmpResult = tmp(10603);
       const activeAnalyticsSessionIDs = tmpResult.getActiveAnalyticsSessionIDs(id);
       obj = { activity_application_id: null, activity_channel_type: null, activity_guild_id: null, activity_user_session_id: null };
       obj[0] = id;
@@ -61,7 +61,7 @@ let obj = {
     } else {
       obj1 = { errorCode: null };
       obj1[0] = constants2.INVALID_COMMAND;
-      const tmp12 = new tmp5(10670)(obj1, "This application cannot access this API");
+      const tmp12 = new tmp5(10736)(obj1, "This application cannot access this API");
       throw tmp12;
     }
   }
@@ -73,16 +73,16 @@ obj = {
     if (null == id) {
       let obj = { errorCode: null };
       obj[0] = constants2.INVALID_COMMAND;
-      const tmp7 = new importDefault(10670)(obj, "No application.");
-      throw tmp7;
+      const tmp10 = new importDefault(10736)(obj, "No application.");
+      throw tmp10;
     } else {
       const HTTP = require(530) /* sendRequest */.HTTP;
       obj = { url: null, body: null, retries: 3, oldFormErrors: true, rejectWithError: false };
       obj[0] = closure_5.APPLICATION_TICKET(id);
       obj = { test_mode: null };
-      obj[0] = require(7527) /* isTestModeForApplication */.isTestModeForApplication(id);
+      obj[0] = require(7587) /* isTestModeForApplication */.isTestModeForApplication(id);
       obj[1] = obj;
-      const obj4 = require(7527) /* isTestModeForApplication */;
+      const obj3 = require(7587) /* isTestModeForApplication */;
       return HTTP.post(obj).then((body) => body.body);
     }
   }

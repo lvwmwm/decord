@@ -1,11 +1,11 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11668
+// Function ID: 11669
 // Name: handleInviteDisabledPress
-// Dependencies: [19, 17, 1372, 1961, 1891, 1960, 9728, 676, 21, 4302, 712, 11603, 1988, 4642, 1480, 11604, 8431, 11605, 11643, 5378, 7691, 9656, 1236, 8985, 4712, 5947, 4162, 11677, 589, 9008, 9005, 11678, 11679, 11681, 2]
+// Dependencies: [19, 17, 1372, 1961, 1891, 1960, 9794, 676, 21, 4303, 712, 11669, 1988, 4644, 1480, 11670, 8491, 11671, 11709, 5379, 7751, 9721, 1236, 9045, 4714, 6007, 4036, 11743, 589, 9068, 9065, 11744, 11745, 11747, 2]
 
-// Module 11602 (handleInviteDisabledPress)
+// Module 11668 (handleInviteDisabledPress)
 import importAllResult from "SPRING_CONFIG";
-import { View } from "module_11605";
+import { View } from "module_11671";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -22,7 +22,7 @@ let unpackModuleId;
 const require = arg1;
 function handleInviteDisabledPress() {
   const lazyResult = importAllResult.lazy(() => callback(paths[12])(paths[11], paths.paths));
-  require(4642) /* useAlertStore */.openAlert("invites-disabled", callback(lazyResult, {}));
+  require(4644) /* useAlertStore */.openAlert("invites-disabled", callback(lazyResult, {}));
 }
 function GuildSearchAndInvite(guildId) {
   let onPressIn;
@@ -159,14 +159,14 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = outer1_6.getChannels(guild.id);
     return guild(outer1_2[29]).shouldRenderInvite(channels, guild);
   }, items1);
-  const tmp2 = importDefault(8431)(() => {
+  const tmp2 = importDefault(8491)(() => {
     const channelId = outer1_8.getChannelId(guild.id);
     const channels = outer1_6.getChannels(guild.id);
     const result = guild(outer1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, outer1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11678).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11678);
-  const tmp5 = importDefault(11681)(guild);
+  const shouldShowInvitesDisabledNotif = guild(11744).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(11744);
+  const tmp5 = importDefault(11747)(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {
     flag2 = tmp4;

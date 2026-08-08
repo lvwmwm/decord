@@ -1,10 +1,10 @@
-// Module ID: 16063
-// Function ID: 16064
+// Module ID: 16138
+// Function ID: 16139
 // Name: useSoundButtonStyleConfig
-// Dependencies: [5, 19, 4294, 1302, 16056, 5397, 1474, 589, 4147, 1355, 5893, 2]
+// Dependencies: [5, 19, 4295, 1302, 16131, 5398, 1474, 589, 4153, 1355, 5953, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16063 (useSoundButtonStyleConfig)
+// Module 16138 (useSoundButtonStyleConfig)
 import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO";
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -43,7 +43,7 @@ export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSou
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -77,7 +77,7 @@ export const useMaybeFetchSoundboardSounds = function useMaybeFetchSoundboardSou
               return obj;
             }
             c0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           } catch (tmp9) {
             c0 = tmp;
             throw tmp9;

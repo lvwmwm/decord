@@ -1,17 +1,17 @@
-// Module ID: 11952
-// Function ID: 11953
+// Module ID: 12018
+// Function ID: 12019
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 32, 19, 17, 1891, 11941, 21, 4302, 5266, 712, 589, 5368, 5262, 4201, 5719, 4298, 1236, 8405, 1297, 4712, 11942, 11951, 5269, 5723, 5656, 2]
+// Dependencies: [5, 32, 19, 17, 1891, 12007, 21, 4303, 5267, 712, 589, 5369, 5263, 4202, 5779, 4299, 1236, 8465, 1297, 4714, 12008, 12017, 5270, 5783, 5716, 2]
 // Exports: default
 
-// Module 11952 (GuildDirectoryNicknameUpsell)
+// Module 12018 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
-import get_ActivityIndicator from "module_8405";
+import get_ActivityIndicator from "module_8465";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildPrompts } from "GuildPrompts";
-import jsxProd from "module_11951";
+import jsxProd from "module_12017";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -67,7 +67,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
   let obj = require(589) /* initialize */;
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_8.getGuild(closure_0));
-  const insets = importDefault(5368)().insets;
+  const insets = importDefault(5369)().insets;
   [obj2, c2] = ref(_handleSubmit.useState(null), 2);
   const tmp7 = ref(_handleSubmit.useState(""), 2);
   first = tmp7[0];
@@ -81,8 +81,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
   const tmp11 = closure_7;
   const tmp5 = importDefault;
   const tmp6 = ref(_handleSubmit.useState(null), 2);
-  obj1[2] = require(5719) /* GuildIconSizes */.GuildIconSizes.XLARGE;
-  const items2 = [callback(importDefault(5719), obj1), , , , ];
+  obj1[2] = require(5779) /* GuildIconSizes */.GuildIconSizes.XLARGE;
+  const items2 = [callback(importDefault(5779), obj1), , , , ];
   obj2 = { style: tmp.header, children: null };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -91,15 +91,15 @@ function GuildDirectoryNicknameUpsell(arg0) {
     name = stateFromStores.name;
   }
   obj3[4] = intl.format(require(1236) /* getSystemLocale */.t["d+6kzl"], { guildName: name });
-  const items3 = [callback(require(4298) /* Text */.Text, obj3), ];
+  const items3 = [callback(require(4299) /* Text */.Text, obj3), ];
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = tmp2(1236).intl;
   obj4[3] = intl2.string(require(1236) /* getSystemLocale */.t.b3L8yx);
-  items3[1] = callback(require(4298) /* Text */.Text, obj4);
+  items3[1] = callback(require(4299) /* Text */.Text, obj4);
   obj2[1] = items3;
   items2[1] = closure_11(closure_6, obj2);
   const obj5 = { label: null, placeholder: null, value: null, onChangeText: null, style: null, textStyle: null, clearButtonVisibility: null, error: null, onFocus: null, onBlur: null };
-  const tmp13 = importDefault(5719);
+  const tmp13 = importDefault(5779);
   const intl3 = tmp2(1236).intl;
   obj5[0] = intl3.string(require(1236) /* getSystemLocale */.t.ilDlmW);
   const intl4 = tmp2(1236).intl;
@@ -129,7 +129,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = callback(tmp5(8405), obj5);
+  items2[2] = callback(tmp5(8465), obj5);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj7 = { style: tmp.redesignButtonContainer, children: null };
   const obj8 = { size: "lg", text: null, onPress: null };
@@ -145,7 +145,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
     }
     return applyArgumentsResult;
   };
-  obj7[1] = callback(require(4712) /* Button */.Button, obj8);
+  obj7[1] = callback(require(4714) /* Button */.Button, obj8);
   items2[4] = callback(closure_6, obj7);
   obj[2] = items2;
   return closure_11(tmp11, obj);
@@ -173,7 +173,7 @@ const result = require("noop").fileFinishedImporting("modules/directory_channels
 export default function GuildDirectoryNicknameUpsellModal(arg0) {
   const _require = arg0;
   let obj = { screens: null, initialRouteName: null };
-  obj[0] = importDefault(5656)(() => {
+  obj[0] = importDefault(5716)(() => {
     let closure_0;
     let closure_1;
     ({ guildId: closure_0, onHide: closure_1 } = callback);
@@ -196,5 +196,5 @@ export default function GuildDirectoryNicknameUpsellModal(arg0) {
     return obj;
   });
   obj[1] = UPSELL_SCREEN_KEY;
-  return callback(_require(5723).Navigator, obj);
+  return callback(_require(5783).Navigator, obj);
 };

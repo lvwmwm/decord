@@ -1,9 +1,9 @@
-// Module ID: 7179
-// Function ID: 7180
+// Module ID: 7239
+// Function ID: 7240
 // Name: handleInit
-// Dependencies: [32, 5838, 1960, 6920, 589, 709, 2]
+// Dependencies: [32, 5898, 1960, 6980, 589, 709, 2]
 
-// Module 7179 (handleInit)
+// Module 7239 (handleInit)
 import _slicedToArray from "_slicedToArray";
 import handlePermissionsChange from "handlePermissionsChange";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -92,8 +92,8 @@ function handleSetActiveCommand(arg0) {
       obj[5] = query;
       obj[6] = searchResultsPosition;
       obj[7] = source;
-      obj(6920).trackCommandSelected(obj);
-      const obj3 = obj(6920);
+      obj(6980).trackCommandSelected(obj);
+      const obj3 = obj(6980);
     }
     return true;
   }
@@ -188,7 +188,7 @@ function handleUpdateOptionStates(channelId) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "T" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "accessibilityRole", length: "rejectWithError" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }

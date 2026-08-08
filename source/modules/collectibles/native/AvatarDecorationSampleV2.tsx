@@ -1,10 +1,10 @@
-// Module ID: 9322
-// Function ID: 9323
+// Module ID: 9387
+// Function ID: 9388
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4302, 712, 38, 1930, 9323, 8232, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 38, 1930, 9388, 8292, 2]
 // Exports: default
 
-// Module 9322 (AvatarDecorationSampleV2)
+// Module 9387 (AvatarDecorationSampleV2)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,12 +50,12 @@ export default function AvatarDecorationSampleV2(arg0) {
   let obj = { style: items, resizeMode: "contain", source: null, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(9323);
+    avatarSource = tmp2(9388);
   }
   obj = { children: null };
   obj[2] = avatarSource;
   const items1 = [closure_5(closure_3, obj), ];
-  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: tmp8(tmp2(8232), { avatarDecoration: item, size, animate }) };
+  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: tmp8(tmp2(8292), { avatarDecoration: item, size, animate }) };
   items1[1] = closure_5(closure_4, obj);
   obj[0] = items1;
   return closure_7(closure_6, obj);

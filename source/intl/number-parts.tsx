@@ -1,9 +1,9 @@
-// Module ID: 9930
-// Function ID: 9931
+// Module ID: 9996
+// Function ID: 9997
 // Name: numberParts
 // Dependencies: [2]
 
-// Module 9930 (numberParts)
+// Module 9996 (numberParts)
 const result = require("set").fileFinishedImporting("intl/number-parts.tsx");
 const obj = Object.create(null);
 obj[0] = { group: " ", decimal: "," };

@@ -1,10 +1,10 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9745
+// Function ID: 9746
 // Name: shouldRefreshAttachmentUrl
-// Dependencies: [5, 676, 687, 4333, 1467, 530, 2]
+// Dependencies: [5, 676, 687, 4335, 1467, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9679 (shouldRefreshAttachmentUrl)
+// Module 9745 (shouldRefreshAttachmentUrl)
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 import set from "set";
@@ -160,7 +160,7 @@ function _maybeRefreshAttachmentUrl() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -282,7 +282,7 @@ let result = set.fileFinishedImporting("modules/messages/SignedAttachmentLinkUti
 
 export { isAttachmentUrl };
 export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachmentUrl(toURLSafeResult) {
-  return require(4333) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
+  return require(4335) /* isImageProxyURL */.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
   toURLSafeResult = importDefault(1467).toURLSafe(toURLSafeResult);

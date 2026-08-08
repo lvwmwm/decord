@@ -1,10 +1,10 @@
-// Module ID: 4282
-// Function ID: 4283
+// Module ID: 4283
+// Function ID: 4284
 // Name: DCDDeviceManager
 // Dependencies: [17, 500, 671, 595, 2]
-// Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS
+// Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 4282 (DCDDeviceManager)
+// Module 4283 (DCDDeviceManager)
 import set from "set";
 import set from "enforcing";
 
@@ -111,6 +111,13 @@ export const getDeviceManufacturer = function getDeviceManufacturer() {
 };
 export const getSmallestScreenWidthDp = function getSmallestScreenWidthDp() {
   return DCDDeviceManager.smallestScreenWidth;
+};
+export const isOrientationLockSupported = function isOrientationLockSupported() {
+  let flag = DCDDeviceManager.isOrientationLockSupported;
+  if (flag == null) {
+    flag = true;
+  }
+  return flag;
 };
 export const getSocName = function getSocName() {
   return DCDDeviceManager.socName;

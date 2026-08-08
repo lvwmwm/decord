@@ -1,10 +1,10 @@
-// Module ID: 4881
-// Function ID: 4882
+// Module ID: 4883
+// Function ID: 4884
 // Name: toString
 // Dependencies: [1304, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 4881 (toString)
+// Module 4883 (toString)
 import { VideoCompressionQuality } from "CHANNEL_SIDEBAR_WIDTH";
 
 let closure_1 = new require("timestamp")("VideoUploadUtils.tsx");

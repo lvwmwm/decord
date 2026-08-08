@@ -1,10 +1,10 @@
-// Module ID: 10742
-// Function ID: 10743
+// Module ID: 10808
+// Function ID: 10809
 // Name: useLocalStorageState
-// Dependencies: [32, 19, 595, 4728, 2]
+// Dependencies: [32, 19, 595, 4730, 2]
 // Exports: useLocalStorageState
 
-// Module 10742 (useLocalStorageState)
+// Module 10808 (useLocalStorageState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
@@ -23,7 +23,7 @@ export const useLocalStorageState = function useLocalStorageState(c2, arg1) {
     return value;
   }), 2);
   const dependencyMap = tmp[1];
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     const Storage = c2(595).Storage;
     if (null == Storage.get(c2)) {
       const Storage2 = c2(595).Storage;

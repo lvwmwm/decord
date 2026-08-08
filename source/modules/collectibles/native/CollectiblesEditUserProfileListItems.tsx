@@ -1,10 +1,10 @@
-// Module ID: 8227
-// Function ID: 8228
+// Module ID: 8287
+// Function ID: 8288
 // Name: EditCollectibleListItem
-// Dependencies: [19, 17, 1903, 678, 21, 4302, 712, 4844, 4271, 4272, 1297, 8228, 4298, 1236, 5668, 6940, 4270, 8229, 8230, 589, 3947, 8218, 6953, 2]
+// Dependencies: [19, 17, 1903, 678, 21, 4303, 712, 4846, 4272, 4273, 1297, 8288, 4299, 1236, 5728, 7000, 4271, 8289, 8290, 589, 3947, 8278, 7013, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 8227 (EditCollectibleListItem)
+// Module 8287 (EditCollectibleListItem)
 import initialize from "initialize";
 import { View } from "registerAsset";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -72,7 +72,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
   let obj = { style: tmp.optionCell };
   const merged = Object.assign(asDefault);
   obj = { source: null, size: null };
-  obj[0] = importDefault(8228);
+  obj[0] = importDefault(8288);
   obj[1] = require(1297) /* Button */.IconSizes.LARGE;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.optionCellText, children: null };
@@ -85,7 +85,7 @@ export const EditCollectiblesListItemNone = function EditCollectiblesListItemNon
     stringResult = string(t.PoWNfe);
   }
   obj[3] = stringResult;
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   obj.children = items;
   return closure_8(EditCollectibleListItem, obj);
 };
@@ -94,7 +94,7 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   const merged = Object.assign(analyticsSource, Object.create(null));
   let analyticsLocations;
   const tmp2 = createCacheKey();
-  analyticsLocations = analyticsLocations(5668)(analyticsSource).analyticsLocations;
+  analyticsLocations = analyticsLocations(5728)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   let obj = {
     style: tmp2.optionCell,
@@ -108,14 +108,14 @@ export const EditCollectiblesListItemShop = function EditCollectiblesListItemSho
   };
   const merged1 = Object.assign(merged);
   obj = { source: null, size: null };
-  obj[0] = analyticsLocations(8229);
+  obj[0] = analyticsLocations(8289);
   obj[1] = analyticsSource(1297).IconSizes.LARGE;
   const items1 = [callback(analyticsSource(1297).Icon, obj), , ];
   obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: null };
   const intl = analyticsSource(1236).intl;
   obj[3] = intl.string(analyticsSource(1236).t.pWG4ze);
-  items1[1] = callback(analyticsSource(4298).Text, obj);
-  items1[2] = callback(analyticsSource(8230).NewBadge, { style: tmp2.newIcon });
+  items1[1] = callback(analyticsSource(4299).Text, obj);
+  items1[2] = callback(analyticsSource(8290).NewBadge, { style: tmp2.newIcon });
   obj.children = items1;
   return callback2(EditCollectibleListItem, obj);
 };
@@ -134,14 +134,14 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj1 = importDefault(3947);
   const canUseCollectiblesResult = obj1.canUseCollectibles(stateFromStores);
-  ({ purchase, product } = importDefault(8218)(skuId));
-  const tmp7 = importDefault(8218)(skuId);
-  const isProductNewResult = require(6953) /* getItemRecordsFromPurchases */.isProductNew(skuId);
-  const obj3 = require(6953) /* getItemRecordsFromPurchases */;
-  let result = require(6953) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
+  ({ purchase, product } = importDefault(8278)(skuId));
+  const tmp7 = importDefault(8278)(skuId);
+  const isProductNewResult = require(7013) /* getItemRecordsFromPurchases */.isProductNew(skuId);
+  const obj3 = require(7013) /* getItemRecordsFromPurchases */;
+  let result = require(7013) /* getItemRecordsFromPurchases */.isPremiumCollectiblesProduct(product);
   if (!result) {
-    result = tmp3(6953).isPremiumCollectiblesPurchase(purchase);
-    const tmp3Result = tmp3(6953);
+    result = tmp3(7013).isPremiumCollectiblesPurchase(purchase);
+    const tmp3Result = tmp3(7013);
   }
   obj = { isSelected };
   const merged1 = Object.assign(merged);
@@ -151,7 +151,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
       obj = { style: null, isNew: null };
       obj[0] = tmp2.lockIcon;
       obj[1] = isProductNewResult;
-      let tmp14 = callback(tmp3(8230).LockBadge, obj);
+      let tmp14 = callback(tmp3(8290).LockBadge, obj);
     }
     items1[1] = tmp14;
     obj.children = items1;
@@ -165,7 +165,7 @@ export const EditCollectiblesListItemProduct = function EditCollectiblesListItem
         obj1 = { style: null, isNew: null };
         obj1[0] = tmp2.lockIcon;
         obj1[1] = isProductNewResult;
-        tmp15 = callback(tmp3(8230).PremiumBadge, obj1);
+        tmp15 = callback(tmp3(8290).PremiumBadge, obj1);
       } else {
         tmp15 = null;
       }

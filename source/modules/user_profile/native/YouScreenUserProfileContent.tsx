@@ -1,10 +1,10 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 15868
+// Function ID: 15869
 // Name: YouAvatar
-// Dependencies: [32, 19, 17, 1364, 4994, 7020, 8725, 5716, 1369, 21, 15786, 15405, 500, 8782, 8775, 12272, 12273, 8728, 9177, 1358, 5962, 12202, 4712, 9607, 712, 1236, 15794, 1481, 8247, 9383, 8776, 589, 1348, 8763, 8772, 12152, 15795, 12389, 12395, 12396, 9392, 15796, 12399, 14946, 12204, 9465, 7349, 12405, 15798, 12259, 12410, 12417, 8896, 4162, 5655, 9385, 9404, 8973, 11906, 9497, 2]
+// Dependencies: [32, 19, 17, 1364, 4996, 7080, 8785, 5776, 1369, 21, 15861, 15480, 500, 8842, 8835, 12339, 12340, 8788, 9237, 1358, 6022, 12269, 4714, 9672, 712, 1236, 15869, 1481, 8307, 9448, 8836, 589, 1348, 8823, 8832, 12219, 15870, 12456, 12462, 12463, 9457, 15871, 12466, 15016, 12271, 9530, 7409, 12472, 15873, 12326, 12477, 12484, 8956, 4036, 5715, 9450, 9469, 9033, 11972, 9562, 2]
 // Exports: default
 
-// Module 15793 (YouAvatar)
+// Module 15868 (YouAvatar)
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled";
 import DismissibleContent from "DismissibleContent";
 import get_ActivityIndicator from "UserProfileAnalyticsProvider";
@@ -24,9 +24,9 @@ let map1;
 const require = arg1;
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
-    const result = callback(15786).trackYouTabAvatarPress();
-    const obj = callback(15786);
-    const result1 = callback(15405).showYouAccountActionSheet();
+    const result = callback(15861).trackYouTabAvatarPress();
+    const obj = callback(15861);
+    const result1 = callback(15480).showYouAccountActionSheet();
   }, []);
   let obj = require(500) /* set */;
   const isAndroidResult = obj.isAndroid();
@@ -36,7 +36,7 @@ function YouAvatar(arg0) {
   obj.importantForAccessibility = "no-hide-descendants";
   obj.accessibilityElementsHidden = isAndroidResult;
   obj.accessible = !isAndroidResult;
-  return closure_13(importDefault(8782), obj);
+  return closure_13(importDefault(8842), obj);
 }
 function YouScreenWidgetsBoardContainer(containerBackground) {
   let activeSection;
@@ -45,7 +45,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
   let userId;
   containerBackground = containerBackground.containerBackground;
   ({ userId, activeSection, isRefreshEnabled, containerBorderColor } = containerBackground);
-  const tmp3 = importDefault(8775)();
+  const tmp3 = importDefault(8835)();
   const items = [tmp3.card, ];
   if (isRefreshEnabled) {
     let obj = { backgroundColor: null, borderColor: null, borderWidth: 1 };
@@ -60,7 +60,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
     tmp4 = items;
   }
   obj = { style: tmp3.profileContent, children: null };
-  const items1 = [callback2(importDefault(12272), {}), callback2(importDefault(12273), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
+  const items1 = [callback2(importDefault(12339), {}), callback2(importDefault(12340), { userId, isVisible: activeSection === UserProfileSections.WIDGETS, cardStyle: tmp4 })];
   obj[1] = items1;
   return callback3(closure_6, obj);
 }
@@ -69,14 +69,14 @@ function EditSection(navigateToProfileCustomization) {
   let trackUserProfileAction;
   let dependencyMap;
   let callback;
-  let obj = navigateToProfileCustomization(8728);
+  let obj = navigateToProfileCustomization(8788);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   let obj1 = React;
   const ref = React.useRef(null);
-  let obj2 = navigateToProfileCustomization(9177);
+  let obj2 = navigateToProfileCustomization(9237);
   const isDisplayNameStylesFlywheelSettersEnabled = obj2.useIsDisplayNameStylesFlywheelSettersEnabled("YouScreenUserProfileContent");
-  const tmp3 = trackUserProfileAction(8775)();
-  navigateToProfileCustomization(5962);
+  const tmp3 = trackUserProfileAction(8835)();
+  navigateToProfileCustomization(6022);
   if (isDisplayNameStylesFlywheelSettersEnabled) {
     if (!tmp7) {
       let items = [tmp4(1358).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK];
@@ -101,17 +101,17 @@ function EditSection(navigateToProfileCustomization) {
     obj1[0] = ref;
     obj2 = { size: "sm", color: null };
     obj2[1] = tmp(712).colors.WHITE;
-    obj1[2] = callback2(tmp4(9607).PencilIcon, obj2);
+    obj1[2] = callback2(tmp4(9672).PencilIcon, obj2);
     const intl = tmp4(1236).intl;
     obj1[3] = intl.string(tmp4(1236).t.AAjhgi);
     obj1[4] = callback;
-    obj[1] = callback2(tmp4(4712).Button, obj1);
-    const items2 = [callback2(tmp(12202), obj), ];
+    obj[1] = callback2(tmp4(4714).Button, obj1);
+    const items2 = [callback2(tmp(12269), obj), ];
     const obj3 = { targetRef: null, visible: null, markAsDismissed: null };
     obj3[0] = ref;
     obj3[1] = tmp13;
     obj3[2] = tmp11[1];
-    items2[1] = callback2(tmp(15794), obj3);
+    items2[1] = callback2(tmp(15869), obj3);
     obj[0] = items2;
     return callback3(closure_15, obj);
   }
@@ -442,7 +442,7 @@ export default function YouScreenUserProfileContent(user) {
       const timeout = setTimeout(() => {
         outer1_25(outer1_4 === constants.WISHLIST ? constants.WISHLIST : constants.MAIN);
         outer1_32.current(num, false, true);
-        outer1_6.setParams({ initialTab: "r" });
+        outer1_6.setParams({ initialTab: "sa" });
       }, 80);
     }
     return () => {

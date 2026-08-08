@@ -1,10 +1,10 @@
-// Module ID: 6324
-// Function ID: 6325
+// Module ID: 6384
+// Function ID: 6385
 // Name: GemLeftForward3dIllustration
-// Dependencies: [21, 5267, 6325, 2]
+// Dependencies: [21, 5268, 6385, 2]
 // Exports: GemLeftForward3dIllustration
 
-// Module 6324 (GemLeftForward3dIllustration)
+// Module 6384 (GemLeftForward3dIllustration)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftForward3dIllustration.native.tsx");
@@ -28,7 +28,7 @@ export const GemLeftForward3dIllustration = function GemLeftForward3dIllustratio
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6325);
+  obj[0] = importDefault(6385);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const GemLeftForward3dIllustration = function GemLeftForward3dIllustratio
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

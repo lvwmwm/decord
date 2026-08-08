@@ -1,10 +1,10 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16669
+// Function ID: 16670
 // Name: GuildSettingsServerTagPickerCell
-// Dependencies: [19, 17, 21, 4302, 712, 4019, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4019, 2]
 // Exports: default
 
-// Module 16592 (GuildSettingsServerTagPickerCell)
+// Module 16669 (GuildSettingsServerTagPickerCell)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

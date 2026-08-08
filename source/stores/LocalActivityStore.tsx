@@ -1,9 +1,9 @@
-// Module ID: 10369
-// Function ID: 10370
+// Module ID: 10435
+// Function ID: 10436
 // Name: updateActivities
-// Dependencies: [32, 1371, 4339, 4322, 10370, 4995, 1340, 4321, 1372, 4334, 10372, 1960, 4317, 676, 3974, 9383, 12, 10373, 4472, 659, 10374, 1384, 589, 709, 2]
+// Dependencies: [32, 1371, 4341, 4323, 10436, 4997, 1340, 4322, 1372, 4336, 10438, 1960, 4318, 676, 3974, 9448, 12, 10439, 4474, 659, 10440, 1384, 589, 709, 2]
 
-// Module 10369 (updateActivities)
+// Module 10435 (updateActivities)
 import _slicedToArray from "_slicedToArray";
 import participantFromServer from "participantFromServer";
 import addApplication from "addApplication";
@@ -280,7 +280,7 @@ const localActivityStore = new LocalActivityStore(require("dispatcher"), {
         let tmp12 = num;
         let tmp13 = callback;
         let tmp14 = dependencyMap;
-        let obj2 = callback(10374);
+        let obj2 = callback(10440);
         let tmp15 = tmp9;
         let obj3 = callback(1384);
         let num2;
@@ -294,7 +294,7 @@ const localActivityStore = new LocalActivityStore(require("dispatcher"), {
         let tmp18 = tmp9;
         let tmp19 = constants2;
         let hasFlagResult = obj3.hasFlag(num2, constants.INSTANCE);
-        let tmp13Result = tmp13(10374);
+        let tmp13Result = tmp13(10440);
         let tmp20 = tmp11;
         let tmp21 = obj2;
         let tmp22 = tmp10;

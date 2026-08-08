@@ -1,10 +1,10 @@
-// Module ID: 5724
-// Function ID: 5725
+// Module ID: 5784
+// Function ID: 5785
 // Name: useNavigatorShouldCrossfade
 // Dependencies: [19, 500, 4020, 2]
 // Exports: useNavigatorShouldCrossfade
 
-// Module 5724 (useNavigatorShouldCrossfade)
+// Module 5784 (useNavigatorShouldCrossfade)
 import noop from "noop";
 
 const require = arg1;

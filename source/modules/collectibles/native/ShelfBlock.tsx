@@ -1,10 +1,10 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 14854
+// Function ID: 14855
 // Name: ListEdgeSpacer
-// Dependencies: [19, 17, 6941, 678, 676, 21, 4302, 712, 1480, 9282, 14767, 5668, 5688, 589, 14244, 14246, 6940, 9279, 4298, 4712, 1236, 5655, 7685, 2]
+// Dependencies: [19, 17, 7001, 678, 676, 21, 4303, 712, 1480, 9347, 14837, 5728, 5748, 589, 14314, 14316, 7000, 9344, 4299, 4714, 1236, 5715, 7745, 2]
 // Exports: default
 
-// Module 14784 (ListEdgeSpacer)
+// Module 14854 (ListEdgeSpacer)
 import Button from "Button";
 import get_ActivityIndicator from "CollectiblesShopCardInternalV2";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";

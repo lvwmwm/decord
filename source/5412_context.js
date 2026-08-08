@@ -6,5 +6,5 @@
 // Module 5412 (context)
 const context = require("noop").createContext(null);
 
-export const BottomSheetModalInternalContext = context;
-export const BottomSheetModalInternalProvider = context.Provider;
+export const BottomSheetModalContext = context;
+export const BottomSheetModalProvider = context.Provider;

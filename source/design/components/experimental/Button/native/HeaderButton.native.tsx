@@ -1,9 +1,9 @@
-// Module ID: 8606
-// Function ID: 8607
+// Module ID: 8666
+// Function ID: 8667
 // Name: HeaderButton
-// Dependencies: [19, 21, 4716, 4298, 4302, 4713, 2]
+// Dependencies: [19, 21, 4718, 4299, 4303, 4715, 2]
 
-// Module 8606 (HeaderButton)
+// Module 8666 (HeaderButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

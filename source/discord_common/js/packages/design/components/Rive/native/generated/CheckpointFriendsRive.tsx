@@ -1,9 +1,9 @@
-// Module ID: 4090
-// Function ID: 4091
+// Module ID: 4096
+// Function ID: 4097
 // Name: CheckpointFriendsRive
-// Dependencies: [109, 19, 21, 4030, 4091, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4097, 4087, 2]
 
-// Module 4090 (CheckpointFriendsRive)
+// Module 4096 (CheckpointFriendsRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -1382,7 +1382,7 @@ const forwardRefResult = importAllResult.forwardRef(function CheckpointFriendsRi
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_10 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/CheckpointFriendsRive.tsx");
 

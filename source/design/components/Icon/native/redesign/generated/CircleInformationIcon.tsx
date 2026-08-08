@@ -1,10 +1,10 @@
-// Module ID: 4258
-// Function ID: 4259
+// Module ID: 4259
+// Function ID: 4260
 // Name: CircleInformationIcon
-// Dependencies: [19, 17, 21, 712, 4004, 4259, 4260, 2]
+// Dependencies: [19, 17, 21, 712, 4004, 4260, 4261, 2]
 // Exports: CircleInformationIcon
 
-// Module 4258 (CircleInformationIcon)
+// Module 4259 (CircleInformationIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,13 +29,13 @@ export const CircleInformationIcon = function CircleInformationIcon(color) {
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(4259) /* registerAsset */;
+  obj[0] = require(4260) /* registerAsset */;
   obj[1] = secondaryColor;
   obj[2] = style;
   const merged1 = Object.assign(merged);
   const items = [callback(require(4004) /* BaseIconImage */.BaseIconImage, obj), ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(4260) /* registerAsset */;
+  obj[0] = require(4261) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
   const items2 = [];

@@ -1,10 +1,10 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12522
+// Function ID: 12523
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1369, 21, 4302, 12456, 1236, 8593, 2]
+// Dependencies: [19, 17, 1369, 21, 4303, 12523, 1236, 8653, 2]
 // Exports: default
 
-// Module 12455 (CoachmarkImage)
+// Module 12522 (CoachmarkImage)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -18,11 +18,11 @@ function CoachmarkImage() {
   const tmp = callback();
   let obj = { style: tmp.imageContainer, children: null };
   obj = { source: null, style: null };
-  obj = { uri: importDefault(12456) };
+  obj = { uri: importDefault(12523) };
   obj[0] = obj;
   obj[1] = tmp.image;
-  obj[1] = <closure_5 uri={importDefault(12456)} />;
-  return <closure_4 uri={importDefault(12456)} />;
+  obj[1] = <closure_5 uri={importDefault(12523)} />;
+  return <closure_4 uri={importDefault(12523)} />;
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 let closure_8 = createCacheKey.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" }, image: { width: 160, height: 106 } });

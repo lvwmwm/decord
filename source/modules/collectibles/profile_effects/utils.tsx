@@ -1,10 +1,10 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9380
+// Function ID: 9381
 // Name: sortEffectLayers
 // Dependencies: [32, 19, 12, 2]
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
 
-// Module 9315 (sortEffectLayers)
+// Module 9380 (sortEffectLayers)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

@@ -1,10 +1,10 @@
-// Module ID: 4286
-// Function ID: 4287
+// Module ID: 4287
+// Function ID: 4288
 // Name: getPathsFromURL
-// Dependencies: [4287, 676, 678, 4290, 1469, 4291, 4292, 8036, 4732, 4218, 8143, 4288, 7135, 10443, 8842, 7090, 5172, 2]
+// Dependencies: [4288, 676, 678, 4291, 1469, 4292, 4293, 8096, 4734, 4219, 8203, 4289, 7195, 10509, 8902, 7150, 5173, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, remainingPathFromDiscordHostMatch
 
-// Module 4286 (getPathsFromURL)
+// Module 4287 (getPathsFromURL)
 import updateInvite from "updateInvite";
 import { PRIMARY_DOMAIN } from "ME";
 import { CollectibleShopTab } from "items";
@@ -354,9 +354,9 @@ function findCodedLinks(str) {
     });
     const items = [];
     let combined = items;
-    const _default = combined(4292).default;
-    const parseToASTResult = combined(4292).default.parseToAST(str, true, { allowLinks: true });
-    combined(8036).walkAst(parseToASTResult, (type) => {
+    const _default = combined(4293).default;
+    const parseToASTResult = combined(4293).default.parseToAST(str, true, { allowLinks: true });
+    combined(8096).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -1059,7 +1059,7 @@ export const isSuspiciousCodedLink = function isSuspiciousCodedLink(arr) {
           let flag;
           if (url.pathname != null) {
             const formatted = str2.toUpperCase();
-            flag = formatted.includes(url(4291).CodedLinkType.INVITE);
+            flag = formatted.includes(url(4292).CodedLinkType.INVITE);
           }
           if (flag == null) {
             flag = false;
@@ -1103,9 +1103,9 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     });
     const items1 = [];
     let combined = items1;
-    const _default = combined(4292).default;
-    const parseToASTResult = combined(4292).default.parseToAST(str, true, { allowLinks: true });
-    combined(8036).walkAst(parseToASTResult, (type) => {
+    const _default = combined(4293).default;
+    const parseToASTResult = combined(4293).default.parseToAST(str, true, { allowLinks: true });
+    combined(8096).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === combined(outer1_1[8]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -1624,7 +1624,7 @@ export const findCodedLink = function findCodedLink(sanitizeUrlResult) {
     combined = items1.concat(match);
     const result = coerceLinksToCodedLinks(combined);
     items = result.slice(0, 10);
-    let obj = combined(8036);
+    let obj = combined(8096);
   }
   return items[0];
 };

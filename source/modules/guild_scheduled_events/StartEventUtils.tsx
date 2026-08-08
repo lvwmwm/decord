@@ -1,10 +1,10 @@
-// Module ID: 8994
-// Function ID: 8995
+// Module ID: 9054
+// Function ID: 9055
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1376, 1372, 1891, 1378, 676, 8935, 38, 7726, 8880, 2]
+// Dependencies: [5, 1376, 1372, 1891, 1378, 676, 8995, 38, 7786, 8940, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8994 (createStageChannelForEvent)
+// Module 9054 (createStageChannelForEvent)
 import ME from "ME";
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -45,7 +45,7 @@ function _createStageChannelForEvent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ function _createStageChannelForEvent() {
               lib2 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -171,7 +171,7 @@ function _preStartEventActions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -245,7 +245,7 @@ function _setEventAsActive() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ function _setEventAsActive() {
               let guild_id;
               name = 1;
               id = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp5) {
@@ -346,7 +346,7 @@ function _setEventAsActive() {
               return obj;
             }
             id = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp41) {
           id = tmp;

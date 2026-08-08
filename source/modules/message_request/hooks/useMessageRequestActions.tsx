@@ -1,10 +1,10 @@
-// Module ID: 11736
-// Function ID: 11737
+// Module ID: 11802
+// Function ID: 11803
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7020, 11737, 676, 11738, 9663, 4201, 8692, 8248, 698, 11740, 3974, 7960, 2]
+// Dependencies: [5, 32, 19, 7080, 11803, 676, 11804, 9728, 4202, 8752, 8308, 698, 11806, 3974, 8020, 2]
 // Exports: useMessageRequestActions
 
-// Module 11736 (useMessageRequestActions)
+// Module 11802 (useMessageRequestActions)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -75,7 +75,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -312,7 +312,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
               if (outer1_9) {
                 let num5 = 3;
                 v0 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 let tmp29 = outer1_5;
                 let tmp30 = outer1_5(true);
@@ -445,7 +445,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -476,7 +476,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "T", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -532,7 +532,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                         return obj;
                       } else {
                         c1 = 3;
-                        return { value: "T", done: null };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp16) {
                       c1 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 8690
-// Function ID: 8691
+// Module ID: 8750
+// Function ID: 8751
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 5720, 21, 4302, 712, 5719, 1416, 5267, 4298, 1236, 4844, 8689, 8378, 1297, 2]
+// Dependencies: [19, 17, 5780, 21, 4303, 712, 5779, 1416, 5268, 4299, 1236, 4846, 8749, 8438, 1297, 2]
 
-// Module 8690 (ExpressionGuildDetails)
+// Module 8750 (ExpressionGuildDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ExpressionSourceGuildRecord as closure_4 } from "getEmojiSourceData";

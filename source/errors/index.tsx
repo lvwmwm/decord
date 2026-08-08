@@ -1,9 +1,9 @@
-// Module ID: 4201
-// Function ID: 4202
+// Module ID: 4202
+// Function ID: 4203
 // Name: V6OrEarlierAPIError
-// Dependencies: [2, 3970, 4202, 3969, 4203, 4204, 4206, 4207, 4208]
+// Dependencies: [2, 3970, 4203, 3969, 4204, 4205, 4207, 4208, 4209]
 
-// Module 4201 (V6OrEarlierAPIError)
+// Module 4202 (V6OrEarlierAPIError)
 const result = require("prototype").fileFinishedImporting("errors/index.tsx");
 
 export const V6OrEarlierAPIError = require("prototype");

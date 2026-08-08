@@ -1,10 +1,10 @@
-// Module ID: 12141
-// Function ID: 12142
+// Module ID: 12208
+// Function ID: 12209
 // Name: GuildProfileCTA
-// Dependencies: [19, 676, 685, 21, 11122, 10068, 4270, 5897, 7698, 12142, 4121, 8359, 5336, 8352, 5896, 4712, 1236, 2]
+// Dependencies: [19, 676, 685, 21, 11188, 10134, 4271, 5957, 7758, 12209, 4127, 8419, 5337, 8412, 5956, 4714, 1236, 2]
 // Exports: default
 
-// Module 12141 (GuildProfileCTA)
+// Module 12208 (GuildProfileCTA)
 import noop from "noop";
 import { AnalyticsObjects } from "ME";
 import { ProfileCustomizationScrollPositions as closure_5 } from "MAX_FAVORITES";

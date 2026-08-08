@@ -1,10 +1,10 @@
-// Module ID: 5761
-// Function ID: 5762
+// Module ID: 5821
+// Function ID: 5822
 // Name: runAfterInteractions
-// Dependencies: [17, 4187, 2]
+// Dependencies: [17, 4188, 2]
 // Exports: runAfterInteractions
 
-// Module 5761 (runAfterInteractions)
+// Module 5821 (runAfterInteractions)
 import { InteractionManager } from "get ActivityIndicator";
 
 function runAfterInteractions(arg0, MINUTE) {
@@ -19,7 +19,7 @@ function runAfterInteractions(arg0, MINUTE) {
     delayedCall.cancel();
     callback();
   });
-  delayedCall = new _require(4187).DelayedCall(num, () => {
+  delayedCall = new _require(4188).DelayedCall(num, () => {
     closure_1.cancel();
     callback();
   });

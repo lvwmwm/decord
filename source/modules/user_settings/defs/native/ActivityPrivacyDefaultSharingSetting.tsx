@@ -1,9 +1,9 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14919
+// Function ID: 14920
 // Name: radio
-// Dependencies: [19, 8022, 1306, 1236, 3974, 14850, 14026, 4270, 14851, 1988, 10380, 2]
+// Dependencies: [19, 8082, 1306, 1236, 3974, 14920, 14096, 4271, 14921, 1988, 10446, 2]
 
-// Module 14849 (radio)
+// Module 14919 (radio)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -15,7 +15,7 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.CONTENT_AND_SOCIAL_DISCORD,
   usePredicate() {
-    return require(14850) /* useIsInActivityPrivacyCopyExperiment */.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
+    return require(14920) /* useIsInActivityPrivacyCopyExperiment */.useIsInActivityPrivacyCopyExperiment("ActivityPrivacyDefaultSharingSetting");
   },
   useOptions() {
     return React.useMemo(() => {
@@ -48,18 +48,18 @@ createToggle = {
     const setting = DefaultGuildsActivityRestrictedV2.getSetting();
     const DefaultGuildsActivityRestrictedV22 = require(3974) /* explicitContentFromProto */.DefaultGuildsActivityRestrictedV2;
     DefaultGuildsActivityRestrictedV22.updateSetting(NumberResult);
-    let obj = require(14850) /* useIsInActivityPrivacyCopyExperiment */;
+    let obj = require(14920) /* useIsInActivityPrivacyCopyExperiment */;
     if (obj.getIsInActivityPrivacyUpsellExperiment("ActivityPrivacyDefaultSharingSetting")) {
-      let tmp2Result = tmp2(14026);
+      let tmp2Result = tmp2(14096);
       const affectedGuilds = tmp2Result.computeAffectedGuilds(setting, NumberResult);
       if (null != affectedGuilds) {
-        tmp2Result = tmp2(14026);
+        tmp2Result = tmp2(14096);
         const activityRestrictionSettingName = tmp2Result.getActivityRestrictionSettingName(NumberResult);
         obj = { direction: null, affectedGuildIds: null, settingName: null };
         ({ direction: obj5[0], affectedGuildIds: obj5[1] } = affectedGuilds);
         obj[2] = activityRestrictionSettingName;
-        importDefault(4270).openLazy(tmp2(1988)(14851, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj);
-        const obj4 = importDefault(4270);
+        importDefault(4271).openLazy(tmp2(1988)(14921, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj);
+        const obj4 = importDefault(4271);
       }
     }
   }

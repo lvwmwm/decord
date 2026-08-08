@@ -1,9 +1,9 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9639
+// Function ID: 9640
 // Name: TOOLTIP_DELAY_MS
 // Dependencies: [2]
 
-// Module 9574 (TOOLTIP_DELAY_MS)
+// Module 9639 (TOOLTIP_DELAY_MS)
 const result = require("set").fileFinishedImporting("modules/activity_status/ActivityStatusConstants.tsx");
 
 export const TOOLTIP_DELAY_MS = 150;

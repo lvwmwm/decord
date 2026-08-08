@@ -1,8 +1,8 @@
-// Module ID: 11175
-// Function ID: 11176
-// Dependencies: [5, 3883, 5231, 2]
+// Module ID: 11241
+// Function ID: 11242
+// Dependencies: [5, 3883, 5232, 2]
 
-// Module 11175
+// Module 11241
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const result = require("showTooManyUserGuildsAlert").fileFinishedImporting("actions/CommunicationDisabledActionCreators.tsx");
@@ -27,7 +27,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ export default {
               dependencyMap = 1;
               v0 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = v0(5231).setCommunicationDisabledUntil(obj1);
+              obj2[0] = v0(5232).setCommunicationDisabledUntil(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -72,7 +72,7 @@ export default {
             return obj;
           } else {
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           v0 = tmp;

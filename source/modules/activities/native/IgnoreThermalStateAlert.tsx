@@ -1,10 +1,10 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10675
+// Function ID: 10676
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 4302, 4730, 1236, 10547, 4298, 2]
+// Dependencies: [19, 21, 4303, 4732, 1236, 10613, 4299, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 10609 (IgnoreThermalStateAlert)
+// Module 10675 (IgnoreThermalStateAlert)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -35,11 +35,11 @@ export const IgnoreThermalStateAlert = function IgnoreThermalStateAlert(onConfir
   obj = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = onConfirm(1236).intl;
   obj[3] = intl3.string(onConfirm(1236).t.v5X4fZ);
-  const items = [callback(onConfirm(4298).Text, obj), ];
+  const items = [callback(onConfirm(4299).Text, obj), ];
   obj = { style: tmp2.text, variant: "text-md/medium", children: null };
   const intl4 = onConfirm(1236).intl;
   obj[2] = intl4.string(onConfirm(1236).t.VOgTjy);
-  items[1] = callback(onConfirm(4298).Text, obj);
+  items[1] = callback(onConfirm(4299).Text, obj);
   obj.children = items;
-  return callback2(importDefault(4730), obj);
+  return callback2(importDefault(4732), obj);
 };

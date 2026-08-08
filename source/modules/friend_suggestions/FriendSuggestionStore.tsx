@@ -1,10 +1,10 @@
-// Module ID: 7063
-// Function ID: 7064
+// Module ID: 7123
+// Function ID: 7124
 // Name: initialize
-// Dependencies: [1911, 1903, 12, 7064, 7065, 589, 709, 2]
+// Dependencies: [1911, 1903, 12, 7124, 7125, 589, 709, 2]
 // Exports: transformFriendSuggestions
 
-// Module 7063 (initialize)
+// Module 7123 (initialize)
 import createdAt from "createdAt";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
@@ -47,11 +47,11 @@ const friendSuggestionStore = new FriendSuggestionStore(require("dispatcher"), {
       if (flag2) {
         c6 = true;
         c7 = false;
-        const response = importDefault(7064).fetch();
-        const obj = importDefault(7064);
+        const response = importDefault(7124).fetch();
+        const obj = importDefault(7124);
       }
     } else {
-      importDefault(7065)();
+      importDefault(7125)();
     }
   },
   FRIEND_SUGGESTION_CREATE: function handleFriendSuggestionCreate(suggestion) {

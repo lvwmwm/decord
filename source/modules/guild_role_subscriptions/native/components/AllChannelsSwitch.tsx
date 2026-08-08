@@ -1,10 +1,10 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 16839
+// Function ID: 16840
 // Name: Row
-// Dependencies: [19, 17, 14392, 676, 21, 4302, 712, 5235, 4019, 8997, 1297, 16763, 1236, 16764, 2]
+// Dependencies: [19, 17, 14462, 676, 21, 4303, 712, 5236, 4019, 9057, 1297, 16840, 1236, 16841, 2]
 // Exports: default
 
-// Module 16762 (Row)
+// Module 16839 (Row)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { AllChannelAccessOptions } from "AllChannelAccessOptions";
@@ -54,7 +54,7 @@ function Row(arg0) {
   items[1] = callback(require(1297) /* Button */.LegacyText, { style: items1, numberOfLines: 1, ellipsizeMode: "tail", children: label });
   items[2] = callback(require(1297) /* Button */.RadioIndicator, { style: tmp.rowIndicator, active: selected });
   obj[5] = items;
-  return closure_6(importDefault(8997), obj);
+  return closure_6(importDefault(9057), obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 createCacheKey = { container: null, row: null, rowLabel: null, rowLabelSelected: null, rowIndicator: null, separator: null };
@@ -86,7 +86,7 @@ export default function AllChannelsSwitch(style) {
   const tmp = createCacheKey();
   let obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   items = [tmp.container, style.style];
-  obj = { icon: importDefault(16763), label: null, selected: null, onPress: null, disabled: null };
+  obj = { icon: importDefault(16840), label: null, selected: null, onPress: null, disabled: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vs2T+B"]);
   obj[2] = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -97,7 +97,7 @@ export default function AllChannelsSwitch(style) {
   const items1 = [callback(Row, obj), , ];
   obj = { style: tmp.separator };
   items1[1] = callback(View, obj);
-  const obj1 = { icon: importDefault(16764), label: null, selected: null, onPress: null, disabled: null };
+  const obj1 = { icon: importDefault(16841), label: null, selected: null, onPress: null, disabled: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.l4Tr7X);
   obj1[2] = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;

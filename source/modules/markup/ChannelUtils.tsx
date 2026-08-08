@@ -1,10 +1,10 @@
-// Module ID: 4744
-// Function ID: 4745
+// Module ID: 4746
+// Function ID: 4747
 // Name: isChannelTypeMentionable
 // Dependencies: [1376, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 4744 (isChannelTypeMentionable)
+// Module 4746 (isChannelTypeMentionable)
 import createChannelRecord from "createChannelRecord";
 
 let c0;

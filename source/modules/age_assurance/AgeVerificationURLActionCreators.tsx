@@ -1,10 +1,10 @@
-// Module ID: 7743
-// Function ID: 7744
+// Module ID: 7803
+// Function ID: 7804
 // Name: requestAgeVerification
-// Dependencies: [5, 1218, 7738, 676, 7744, 530, 709, 2]
+// Dependencies: [5, 1218, 7798, 676, 7804, 530, 709, 2]
 // Exports: getAgeVerificationMethods, initiateAgeVerificationV2, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7743 (requestAgeVerification)
+// Module 7803 (requestAgeVerification)
 import sendRequest from "sendRequest";
 import fetchFingerprint from "fetchFingerprint";
 import { VerificationVendorName } from "set";
@@ -42,7 +42,7 @@ function _requestAgeVerification() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -65,7 +65,7 @@ function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = callback);
               c3 = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -275,7 +275,7 @@ function _initiateSuspendedUserAgeVerification() {
       let c1;
       c1 = tmp2;
       ({ classificationId: c0, method: c1 } = callback);
-      yield "PX_8";
+      yield "ct";
       const table = suspendedUserToken.getSuspendedUserToken();
       const HTTP = callback(table[5]).HTTP;
       const obj2 = { url: null, body: null, rejectWithError: true };
@@ -318,7 +318,7 @@ function _registerIncodeInterview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -355,7 +355,7 @@ function _registerIncodeInterview() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c1 = tmp;
@@ -384,7 +384,7 @@ function _requestIncodeSessionBootstrap() {
       if (obj1 === undefined) {
         obj1 = {};
       }
-      yield "PX_8";
+      yield "ct";
       const HTTP = obj1(table[5]).HTTP;
       const obj3 = { url: null, body: null, rejectWithError: true };
       obj3[0] = constants.CREATE_INCODE_SESSION;

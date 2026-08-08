@@ -1,10 +1,10 @@
-// Module ID: 4256
-// Function ID: 4257
+// Module ID: 4257
+// Function ID: 4258
 // Name: XLargeIcon
-// Dependencies: [19, 21, 712, 4004, 4257, 2]
+// Dependencies: [19, 21, 712, 4004, 4258, 2]
 // Exports: XLargeIcon
 
-// Module 4256 (XLargeIcon)
+// Module 4257 (XLargeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const XLargeIcon = function XLargeIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4257) /* registerAsset */;
+  obj[0] = require(4258) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

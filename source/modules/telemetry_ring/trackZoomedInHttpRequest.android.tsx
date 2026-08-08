@@ -1,17 +1,17 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16346
+// Function ID: 16347
 // Name: trackZoomedInHttpRequest
-// Dependencies: [676, 13385, 2]
+// Dependencies: [676, 13455, 2]
 // Exports: default
 
-// Module 16269 (trackZoomedInHttpRequest)
+// Module 16346 (trackZoomedInHttpRequest)
 import { AnalyticEvents } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/telemetry_ring/trackZoomedInHttpRequest.android.tsx");
 
 export default function trackZoomedInHttpRequest(arg0) {
   try {
-    let obj = importDefault(13385);
+    let obj = importDefault(13455);
     obj = {};
     const merged = Object.assign(arg0);
     obj.source = "zoomed_in";

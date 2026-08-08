@@ -1,10 +1,10 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15769
+// Function ID: 15770
 // Name: HistoricalIndexingHeader
-// Dependencies: [19, 1975, 8337, 21, 4302, 11665, 5375, 4298, 1236, 2]
+// Dependencies: [19, 1975, 8397, 21, 4303, 11731, 5376, 4299, 1236, 2]
 // Exports: default
 
-// Module 15694 (HistoricalIndexingHeader)
+// Module 15769 (HistoricalIndexingHeader)
 import noop from "noop";
 import _getSystemLocale from "_getSystemLocale";
 import MessageEmbedTypes from "MessageEmbedTypes";

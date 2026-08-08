@@ -1,8 +1,8 @@
-// Module ID: 15680
-// Function ID: 15681
-// Dependencies: [5, 19, 17, 21, 4302, 4298, 15652, 2]
+// Module ID: 15755
+// Function ID: 15756
+// Dependencies: [5, 19, 17, 21, 4303, 4299, 15727, 2]
 
-// Module 15680
+// Module 15755
 import Text from "Text";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -37,7 +37,7 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;

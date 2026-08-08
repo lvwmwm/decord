@@ -1,10 +1,10 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 14845
+// Function ID: 14846
 // Name: Subblocks
-// Dependencies: [19, 17, 21, 712, 4302, 9282, 14776, 5668, 5688, 2]
+// Dependencies: [19, 17, 21, 712, 4303, 9347, 14846, 5728, 5748, 2]
 // Exports: default
 
-// Module 14775 (Subblocks)
+// Module 14845 (Subblocks)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -28,10 +28,10 @@ const result = require("jsxProd").fileFinishedImporting("modules/collectibles/na
 
 export default function FeaturedBlock(featuredBlock) {
   const tmp = callback();
-  let obj = { value: importDefault(5668)(importDefault(5688).COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null };
+  let obj = { value: importDefault(5728)(importDefault(5748).COLLECTIBLES_SHOP_FEATURED_BLOCK).analyticsLocations, children: null };
   obj = { style: tmp.container, children: null };
   obj = { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock };
   obj[1] = <Subblocks featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
   obj[1] = <View featuredBlock={arg0.featuredBlock} style={tmp.featuredSubblock} />;
-  return jsx(require(5668) /* context */.AnalyticsLocationProvider, { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock });
+  return jsx(require(5728) /* context */.AnalyticsLocationProvider, { featuredBlock: featuredBlock.featuredBlock, style: tmp.featuredSubblock });
 };

@@ -1,9 +1,9 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16494
+// Function ID: 16495
 // Name: push
-// Dependencies: [11716, 676, 3, 687, 4507, 16418, 1988, 4153, 1231, 16419, 15, 11719, 1222, 4158, 4152, 4002, 1236, 16420, 2]
+// Dependencies: [11782, 676, 3, 687, 4509, 16495, 1988, 4159, 1231, 16496, 15, 11785, 1222, 4164, 4158, 4002, 1236, 16497, 2]
 
-// Module 16417 (push)
+// Module 16494 (push)
 import { SWITCH_ACCOUNTS_MODAL_KEY } from "MAX_ACCOUNTS";
 import ME from "ME";
 import "_initialize";
@@ -88,7 +88,7 @@ class MultiAccountManagerNative extends tmp5 {
 }
 const prototype = MultiAccountManagerNative.prototype;
 prototype["onSwitchStart"] = function onSwitchStart() {
-  const obj = importDefault(4507);
+  const obj = importDefault(4509);
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   tmp3.info("Closing fast-connect socket because of account switch logout");
   let result = obj(15).closeFastConnectSocket();
@@ -107,10 +107,10 @@ prototype["onSwitchSuccess"] = function onSwitchSuccess(currentUser, navigateHom
   if (navigateHome) {
     obj = obj(1222);
     obj.transitionTo(constants.ME, { navigationReplace: true });
-    const MobileHomeDrawerExperiment = obj(4158).MobileHomeDrawerExperiment;
+    const MobileHomeDrawerExperiment = obj(4164).MobileHomeDrawerExperiment;
     if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
-      tmp(4152).setHomeDrawerState(false);
-      const tmpResult = tmp(4152);
+      tmp(4158).setHomeDrawerState(false);
+      const tmpResult = tmp(4158);
     }
     tmp = obj;
   }
@@ -129,11 +129,11 @@ prototype["onSwitchError"] = function onSwitchError(currentUser) {
   obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", content: null, icon: null };
   const intl = obj(1236).intl;
   obj[1] = intl.string(obj(1236).t.pqvKWA);
-  obj[2] = importDefault(16420);
+  obj[2] = importDefault(16497);
   obj.open(obj);
 };
 prototype["onSwitchComplete"] = function onSwitchComplete() {
-  const obj = importDefault(4507);
+  const obj = importDefault(4509);
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   obj.pop();
   if (null !== c9) {

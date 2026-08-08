@@ -1,9 +1,9 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8906
+// Function ID: 8907
 // Name: ContentInventoryListenedMediaProvider
 // Dependencies: [2]
 
-// Module 8846 (ContentInventoryListenedMediaProvider)
+// Module 8906 (ContentInventoryListenedMediaProvider)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryListenedMediaProvider.tsx");
 
 export const ContentInventoryListenedMediaProvider = { PROVIDER_UNSPECIFIED: 0, [0]: "PROVIDER_UNSPECIFIED", SPOTIFY: 1, [1]: "SPOTIFY" };

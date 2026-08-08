@@ -1,9 +1,9 @@
-// Module ID: 7161
-// Function ID: 7162
+// Module ID: 7221
+// Function ID: 7222
 // Name: reactionKey
-// Dependencies: [3930, 1911, 1372, 1903, 7162, 589, 7163, 709, 2]
+// Dependencies: [3930, 1911, 1372, 1903, 7222, 589, 7223, 709, 2]
 
-// Module 7161 (reactionKey)
+// Module 7221 (reactionKey)
 import initialize from "initialize";
 import createdAt from "createdAt";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -114,9 +114,9 @@ prototype2["getReactions"] = function getReactions(channelId, messageId, emoji, 
     obj[2] = emoji;
     obj[3] = closure_9;
     obj[4] = VOTE;
-    const reactors = importAll(7163).getReactors(obj);
+    const reactors = importAll(7223).getReactors(obj);
     ensureResult.fetched = true;
-    const obj2 = importAll(7163);
+    const obj2 = importAll(7223);
   }
   return ensureResult.users;
 };

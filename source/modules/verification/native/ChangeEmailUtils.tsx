@@ -1,10 +1,10 @@
-// Module ID: 8449
-// Function ID: 8450
+// Module ID: 8509
+// Function ID: 8510
 // Name: _saveEmail
-// Dependencies: [5, 8393, 8450, 8452, 691, 2]
+// Dependencies: [5, 8453, 8510, 8512, 691, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 8449 (_saveEmail)
+// Module 8509 (_saveEmail)
 import set from "set";
 import ChangeEmailFields from "ChangeEmailFields";
 
@@ -31,7 +31,7 @@ function _saveEmail() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

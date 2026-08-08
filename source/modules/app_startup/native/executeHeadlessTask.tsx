@@ -1,10 +1,10 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 17001
+// Function ID: 17002
 // Name: _executeHeadlessTask
-// Dependencies: [5, 17, 1218, 16212, 676, 3, 1208, 675, 15, 9, 12866, 698, 503, 4187, 2]
+// Dependencies: [5, 17, 1218, 16289, 676, 3, 1208, 675, 15, 9, 12936, 698, 503, 4188, 2]
 // Exports: default
 
-// Module 16926 (_executeHeadlessTask)
+// Module 17001 (_executeHeadlessTask)
 import timestamp from "timestamp";
 import { AppState } from "get ActivityIndicator";
 import fetchFingerprint from "fetchFingerprint";
@@ -35,7 +35,7 @@ function _executeHeadlessTask() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

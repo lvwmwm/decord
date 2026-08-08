@@ -1,10 +1,10 @@
-// Module ID: 5252
-// Function ID: 5253
+// Module ID: 5253
+// Function ID: 5254
 // Name: ack
-// Dependencies: [5222, 1376, 1372, 5253, 1903, 676, 709, 11, 2]
+// Dependencies: [5223, 1376, 1372, 5254, 1903, 676, 709, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck
 
-// Module 5252 (ack)
+// Module 5253 (ack)
 import rebuild from "rebuild";
 import { isReadableType } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -94,7 +94,7 @@ export const ackChannel = function ackChannel(channel, arg1) {
       tmpResult.dispatch(obj);
       const fromTimestampResult = tmpResult.fromTimestamp(Date.now());
     } else {
-      obj = { type: "CHANNEL_ACK", channelId: null, messageId: "y", immediate: 0.8, force: null, context: 0.3, location: null };
+      obj = { type: "CHANNEL_ACK", channelId: null, messageId: "y", immediate: 512, force: null, context: "Label", location: true };
       obj[1] = id;
       obj[3] = true;
       obj[4] = true;

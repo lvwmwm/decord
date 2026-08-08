@@ -1,9 +1,9 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9131
+// Function ID: 9132
 // Name: getBotLabel
-// Dependencies: [19, 17, 4328, 21, 4302, 712, 1236, 9072, 4298, 2]
+// Dependencies: [19, 17, 4329, 21, 4303, 712, 1236, 9132, 4299, 2]
 
-// Module 9071 (getBotLabel)
+// Module 9131 (getBotLabel)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { BotTagTypes } from "ApplicationTypes";

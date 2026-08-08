@@ -1,10 +1,10 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8376
+// Function ID: 8377
 // Name: hasForLaterPremiumType
 // Dependencies: [1903, 1905, 1926, 589, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 8316 (hasForLaterPremiumType)
+// Module 8376 (hasForLaterPremiumType)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { PremiumTypes } from "GuildFeatures";
 

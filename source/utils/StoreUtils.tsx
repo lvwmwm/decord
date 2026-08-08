@@ -1,10 +1,10 @@
-// Module ID: 4539
-// Function ID: 4540
+// Module ID: 4541
+// Function ID: 4542
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1218, 3949, 3950, 3953, 676, 4540, 4538, 4619, 1450, 4621, 530, 500, 1236, 2]
+// Dependencies: [5, 1218, 3949, 3950, 3953, 676, 4542, 4540, 4621, 1450, 4623, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4539 (_httpGetWithCountryCodeQuery)
+// Module 4541 (_httpGetWithCountryCodeQuery)
 import closure_2 from "ME";
 import fetchFingerprint from "fetchFingerprint";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
@@ -29,7 +29,7 @@ function _httpGetWithCountryCodeQuery() {
       if (flag === undefined) {
         flag = true;
       }
-      yield "PX_8";
+      yield "ct";
       if (1 === tmp5) {
         if (arg0 === 1) {
           let merged = 3;
@@ -63,7 +63,7 @@ function _httpGetWithCountryCodeQuery() {
                   let closure_0 = arg0;
                   let c2 = 0;
                   let c3 = 0;
-                  return (/* F119907 */ function*() { ... })();
+                  return (/* F120250 */ function*() { ... })();
                 });
                 return new Promise(function() {
                   const self = this;

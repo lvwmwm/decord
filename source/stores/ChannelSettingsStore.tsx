@@ -1,9 +1,9 @@
-// Module ID: 7957
-// Function ID: 7958
+// Module ID: 8017
+// Function ID: 8018
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1376, 7700, 1911, 1372, 676, 1235, 3940, 3942, 1381, 1382, 530, 709, 12, 1411, 3883, 589, 2]
+// Dependencies: [1376, 7760, 1911, 1372, 676, 1235, 3940, 3942, 1381, 1382, 530, 709, 12, 1411, 3883, 589, 2]
 
-// Module 7957 (normalizeChannelPropertyForCompare)
+// Module 8017 (normalizeChannelPropertyForCompare)
 import { createChannelRecordFromInvite as closure_9 } from "createChannelRecord";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";

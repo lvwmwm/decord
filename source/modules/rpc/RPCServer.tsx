@@ -1,9 +1,9 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13789
+// Function ID: 13790
 // Name: registerTransport
-// Dependencies: [5, 4205, 676, 12, 10676, 10670, 13697, 698, 38, 687, 2]
+// Dependencies: [5, 4206, 676, 12, 10742, 10736, 13767, 698, 38, 687, 2]
 
-// Module 13719 (registerTransport)
+// Module 13789 (registerTransport)
 import prototype from "prototype";
 import { TransportTypes } from "RPC_SCOPE_CONFIG";
 import ME from "ME";
@@ -59,7 +59,7 @@ prototype["handleConnect"] = function handleConnect(v) {
     if (null == currentUser) {
       v.close(constants2.CLOSE_NORMAL, "User logged out");
     } else {
-      obj.user = importDefault(10676)(currentUser);
+      obj.user = importDefault(10742)(currentUser);
     }
   }
   self.dispatch(v, null, constants3.DISPATCH, constants5.READY, obj);
@@ -166,7 +166,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -289,7 +289,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -425,7 +425,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

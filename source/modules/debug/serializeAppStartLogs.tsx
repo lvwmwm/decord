@@ -1,10 +1,10 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 9874
+// Function ID: 9875
 // Name: getDisplayName
-// Dependencies: [10, 12, 7180, 2]
+// Dependencies: [10, 12, 7240, 2]
 // Exports: default
 
-// Module 9808 (getDisplayName)
+// Module 9874 (getDisplayName)
 function getDisplayName(tag) {
   if (null == tag.tag) {
     let str3 = tag.label;

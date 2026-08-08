@@ -1,10 +1,10 @@
-// Module ID: 15316
-// Function ID: 15317
+// Module ID: 15388
+// Function ID: 15389
 // Name: OneColumnGuildUpsellList
-// Dependencies: [19, 17, 14871, 676, 8323, 21, 4302, 712, 9284, 503, 1481, 589, 5668, 5688, 15317, 7685, 1609, 8331, 12904, 4298, 1236, 15313, 698, 8322, 8330, 2]
+// Dependencies: [19, 17, 14941, 676, 8383, 21, 4303, 712, 9349, 503, 1481, 589, 5728, 5748, 15389, 7745, 1609, 8391, 12974, 4299, 1236, 15385, 698, 8382, 8390, 2]
 // Exports: default
 
-// Module 15316 (OneColumnGuildUpsellList)
+// Module 15388 (OneColumnGuildUpsellList)
 import Text from "Text";
 import { View } from "useGradientBottom";
 import set from "set";
@@ -126,7 +126,7 @@ class OneColumnGuildUpsellList {
         }
       });
     }, items2);
-    obj = { onViewableItemsChanged: callback2, viewabilityConfig: f61457, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
+    obj = { onViewableItemsChanged: callback2, viewabilityConfig: f61617, contentContainerStyle, keyExtractor: callback, data: suggestedGuilds, ListHeaderComponent: subheader, renderItem: callback1 };
     return jsx(require("noop").FlashList, obj);
   }
 }
@@ -321,7 +321,7 @@ class TwoColumnGuildUpsellList {
       obj[1] = items;
       return outer1_10(outer1_5, obj);
     }, items3);
-    obj = { onViewableItemsChanged: callback1, viewabilityConfig: f61457, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback2 };
+    obj = { onViewableItemsChanged: callback1, viewabilityConfig: f61617, contentContainerStyle, keyExtractor: callback, data: memo, ListHeaderComponent: subheader, renderItem: callback2 };
     return jsx(require("noop").FlashList, obj);
   }
 }
@@ -350,11 +350,11 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
   let importDefault;
   let visualVariant;
   ({ top, bottom } = importDefault(1609)());
-  let obj = gradientTop(8331);
+  let obj = gradientTop(8391);
   gradientTop = obj.useGradientTop();
   const tmp3 = callback3(bottom, top);
   importDefault = tmp3;
-  const GameCommunityUpsellMultiExperiment = gradientTop(12904).GameCommunityUpsellMultiExperiment;
+  const GameCommunityUpsellMultiExperiment = gradientTop(12974).GameCommunityUpsellMultiExperiment;
   visualVariant = GameCommunityUpsellMultiExperiment.useConfig({ location: "GameCommunityMultiGuildUpsellModal" }).visualVariant;
   let obj1 = gradientTop(589);
   let items = [set];
@@ -381,16 +381,16 @@ export default function GameCommunityMultiGuildUpsellModal(onClose) {
   obj = { style: tmp3.container, children: null };
   obj = { style: memo, children: null };
   obj1 = { source: null, onPress: null, accessibilityLabel: null };
-  obj1[0] = importDefault(8330);
+  obj1[0] = importDefault(8390);
   obj1[1] = onClose.onClose;
   let intl = gradientTop(1236).intl;
   obj1[2] = intl.string(gradientTop(1236).t.cpT0Cq);
-  const items4 = [callback(gradientTop(8322).HeaderIconButton, obj1), , ];
+  const items4 = [callback(gradientTop(8382).HeaderIconButton, obj1), , ];
   const obj2 = { style: tmp3.headerTitle, children: null };
   const obj3 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", lineClamp: 1, children: null };
   const intl2 = gradientTop(1236).intl;
   obj3[3] = intl2.string(gradientTop(1236).t["fs+2Kn"]);
-  obj2[1] = callback(gradientTop(4298).Text, obj3);
+  obj2[1] = callback(gradientTop(4299).Text, obj3);
   items4[1] = callback(View, obj2);
   items4[2] = callback(View, { style: { width: 40 } });
   obj[1] = items4;

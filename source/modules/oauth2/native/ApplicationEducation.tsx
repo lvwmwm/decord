@@ -1,10 +1,10 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10525
+// Function ID: 10526
 // Name: ApplicationEducationEntry
-// Dependencies: [19, 17, 676, 21, 4302, 712, 10449, 8842, 1236, 4003, 10460, 8702, 5951, 4298, 10462, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 10515, 8902, 1236, 4003, 10526, 8762, 6011, 4299, 10528, 2]
 // Exports: default
 
-// Module 10459 (ApplicationEducationEntry)
+// Module 10525 (ApplicationEducationEntry)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_FRIENDS } from "ME";
@@ -27,7 +27,7 @@ function ApplicationEducationEntry(children) {
   }
   const items = [iconComponentResult, ];
   obj = { variant: "text-md/normal", style: tmp.entryText, children: children.text };
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items;
   return closure_6(View, obj);
 }
@@ -43,8 +43,8 @@ export default function ApplicationEducation(arg0) {
   let application;
   ({ application, accountScopes } = arg0);
   const items = [];
-  const tmp3 = importDefault(10449)(application);
-  if (accountScopes.includes(require(8842) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
+  const tmp3 = importDefault(10515)(application);
+  if (accountScopes.includes(require(8902) /* set */.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
     const intl5 = tmp4(1236).intl;
     if (tmp3) {
       let obj = { applicationName: null };
@@ -69,7 +69,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj[1] = formatToPlainString2Result;
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp4(10460).ChatSmileIcon;
+    obj3[0] = tmp4(10526).ChatSmileIcon;
     const intl7 = tmp4(1236).intl;
     const string3 = intl7.string;
     const t5 = tmp4(1236).t;
@@ -80,7 +80,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj3[1] = string3Result;
     const obj4 = { iconComponent: null, text: null };
-    obj4[0] = tmp4(8702).GameControllerIcon;
+    obj4[0] = tmp4(8762).GameControllerIcon;
     const intl8 = tmp4(1236).intl;
     const string4 = intl8.string;
     const t6 = tmp4(1236).t;
@@ -91,7 +91,7 @@ export default function ApplicationEducation(arg0) {
     }
     obj4[1] = string4Result;
     let obj5 = { iconComponent: null, text: null };
-    obj5[0] = tmp4(5951).SettingsIcon;
+    obj5[0] = tmp4(6011).SettingsIcon;
     const intl9 = tmp4(1236).intl;
     const string5 = intl9.string;
     let mSqazC = tmp4(1236).t;
@@ -104,7 +104,7 @@ export default function ApplicationEducation(arg0) {
     obj5[1] = string5Result;
     obj5 = items.push(obj, obj3, obj4, obj5);
   } else {
-    if (accountScopes.includes(tmp4(8842).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
+    if (accountScopes.includes(tmp4(8902).OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
       const intl = tmp4(1236).intl;
       if (tmp3) {
         obj = { applicationName: null };
@@ -129,7 +129,7 @@ export default function ApplicationEducation(arg0) {
       }
       obj6[1] = formatToPlainStringResult2;
       const obj9 = { iconComponent: null, text: null };
-      obj9[0] = tmp4(8702).GameControllerIcon;
+      obj9[0] = tmp4(8762).GameControllerIcon;
       const intl3 = tmp4(1236).intl;
       const string = intl3.string;
       const t2 = tmp4(1236).t;
@@ -140,7 +140,7 @@ export default function ApplicationEducation(arg0) {
       }
       obj9[1] = stringResult;
       const obj10 = { iconComponent: null, text: null };
-      obj10[0] = tmp4(5951).SettingsIcon;
+      obj10[0] = tmp4(6011).SettingsIcon;
       const intl4 = tmp4(1236).intl;
       const string2 = intl4.string;
       const t3 = tmp4(1236).t;
@@ -162,13 +162,13 @@ export default function ApplicationEducation(arg0) {
         if (arr2.length > 0) {
           const obj12 = { variant: "text-sm/normal", color: "text-default", children: null };
           obj12[2] = arr2;
-          tmp27 = callback(tmp4(4298).Text, obj12);
+          tmp27 = callback(tmp4(4299).Text, obj12);
         }
       }
       const obj13 = { children: null };
       const items1 = [tmp27, items.map((iconComponent) => callback(closure_9, { iconComponent: iconComponent.iconComponent, text: iconComponent.text }, arg1))];
       obj11[1] = items1;
-      const items2 = [closure_6(View, obj11), callback(tmp4(10462).AuthorizeFormSeparator, {})];
+      const items2 = [closure_6(View, obj11), callback(tmp4(10528).AuthorizeFormSeparator, {})];
       obj13[0] = items2;
       tmp30Result = tmp30(closure_7, obj13);
       const tmp31 = closure_7;

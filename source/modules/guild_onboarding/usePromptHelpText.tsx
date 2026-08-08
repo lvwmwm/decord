@@ -1,10 +1,10 @@
-// Module ID: 5354
-// Function ID: 5355
+// Module ID: 5355
+// Function ID: 5356
 // Name: usePromptHelpText
-// Dependencies: [1372, 1964, 3929, 3938, 1903, 676, 1236, 589, 4492, 2]
+// Dependencies: [1372, 1964, 3929, 3938, 1903, 676, 1236, 589, 4494, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 5354 (usePromptHelpText)
+// Module 5355 (usePromptHelpText)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

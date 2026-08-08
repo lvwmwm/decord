@@ -1,10 +1,10 @@
-// Module ID: 4114
-// Function ID: 4115
+// Module ID: 4120
+// Function ID: 4121
 // Name: ThemeTypes
-// Dependencies: [505, 1306, 4115, 1236, 12, 2]
+// Dependencies: [505, 1306, 4121, 1236, 12, 2]
 // Exports: isSelectableGradientPreset
 
-// Module 4114 (ThemeTypes)
+// Module 4120 (ThemeTypes)
 import { ThemeTypes } from "sum";
 import apply from "apply";
 

@@ -1,9 +1,9 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14380
+// Function ID: 14381
 // Name: mapDiscordToMuxMetadata
 // Dependencies: [2]
 
-// Module 14310 (mapDiscordToMuxMetadata)
+// Module 14380 (mapDiscordToMuxMetadata)
 let result = require("set").fileFinishedImporting("modules/video-qoe/integrations/MuxIntegration.tsx");
 const prototype = function MuxIntegration() {
   return Object.create(new.target.prototype);
@@ -45,7 +45,7 @@ prototype["mapDiscordToMuxMetadata"] = function mapDiscordToMuxMetadata(config, 
   return obj;
 };
 prototype["getAppVersion"] = function getAppVersion() {
-  return "6175";
+  return "6187";
 };
 prototype["getBuildChannel"] = function getBuildChannel() {
   try {

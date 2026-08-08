@@ -1,10 +1,10 @@
-// Module ID: 11272
-// Function ID: 11273
+// Module ID: 11338
+// Function ID: 11339
 // Name: getInlineForwardOptions
-// Dependencies: [676, 4489, 2]
+// Dependencies: [676, 4491, 2]
 // Exports: getInlineForwardOptions
 
-// Module 11272 (getInlineForwardOptions)
+// Module 11338 (getInlineForwardOptions)
 import { MessageReferenceTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");

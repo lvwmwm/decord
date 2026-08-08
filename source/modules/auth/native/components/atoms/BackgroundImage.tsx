@@ -1,10 +1,10 @@
-// Module ID: 8442
-// Function ID: 8443
+// Module ID: 8502
+// Function ID: 8503
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 4238, 4147, 8443, 8444, 2]
+// Dependencies: [19, 17, 21, 4239, 4153, 8503, 8504, 2]
 // Exports: default
 
-// Module 8442 (BackgroundImage)
+// Module 8502 (BackgroundImage)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ export default function BackgroundImage(backgroundImageSource) {
     flag = false;
   }
   let dependencyMap;
-  const tmp = flag(4238)();
+  const tmp = flag(4239)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   let obj = { style: absoluteFill.absoluteFill, children: null };

@@ -1,16 +1,16 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 16042
+// Function ID: 16043
 // Name: renderItemJSX
-// Dependencies: [19, 17, 1975, 7037, 1891, 4498, 21, 4302, 712, 15968, 5897, 589, 4718, 15969, 4844, 15970, 15972, 5719, 15973, 15975, 7248, 15976, 15982, 15983, 15985, 15167, 4298, 1348, 1236, 1474, 15971, 7948, 2]
+// Dependencies: [19, 17, 1975, 7097, 1891, 4500, 21, 4303, 712, 16043, 5957, 589, 4720, 16044, 4846, 16045, 16047, 5779, 16048, 16050, 7308, 16051, 16057, 16058, 16060, 15237, 4299, 1348, 1236, 1474, 16046, 8008, 2]
 
-// Module 15967 (renderItemJSX)
+// Module 16042 (renderItemJSX)
 import importAllResult from "renderChannelBadge";
 import { View } from "GuildIconSizes";
 import _getSystemLocale from "_getSystemLocale";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { UnreadSetting } from "ReadStateTypes";
-import jsxProd from "module_15976";
+import jsxProd from "module_16051";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -23,35 +23,35 @@ function renderItemJSX(result) {
     return null;
   } else {
     const type = result.type;
-    if (require(7248) /* sortByMatchScore */.AutocompleterResultTypes.GUILD === type) {
+    if (require(7308) /* sortByMatchScore */.AutocompleterResultTypes.GUILD === type) {
       let obj = { guild: null };
       obj[0] = result.record;
       return callback(closure_14, obj);
-    } else if (tmp14(7248).AutocompleterResultTypes.TEXT_CHANNEL === type) {
+    } else if (tmp14(7308).AutocompleterResultTypes.TEXT_CHANNEL === type) {
       obj = { channel: null, navigationReplace: true, showGuildBadgeIcon: true };
       obj[0] = result.record;
-      return callback(importDefault(15976), obj);
-    } else if (tmp14(7248).AutocompleterResultTypes.GROUP_DM === type) {
+      return callback(importDefault(16051), obj);
+    } else if (tmp14(7308).AutocompleterResultTypes.GROUP_DM === type) {
       const obj1 = { channel: null, navigationReplace: true };
       obj1[0] = result.record;
-      return callback(importDefault(15982), obj1);
-    } else if (tmp14(7248).AutocompleterResultTypes.VOICE_CHANNEL === type) {
+      return callback(importDefault(16057), obj1);
+    } else if (tmp14(7308).AutocompleterResultTypes.VOICE_CHANNEL === type) {
       const obj2 = { channel: null };
       obj2[0] = result.record;
-      return callback(importDefault(15983), obj2);
-    } else if (tmp14(7248).AutocompleterResultTypes.USER === type) {
+      return callback(importDefault(16058), obj2);
+    } else if (tmp14(7308).AutocompleterResultTypes.USER === type) {
       ({ record: obj4[0], comparator: obj4[1] } = result);
-      return callback(importDefault(15985), { user: null, comparator: null });
-    } else if (tmp14(7248).AutocompleterResultTypes.HEADER === type) {
+      return callback(importDefault(16060), { user: null, comparator: null });
+    } else if (tmp14(7308).AutocompleterResultTypes.HEADER === type) {
       const obj4 = { name: null, styles: null, isRefreshEnabled: null };
       obj4[0] = result.record.text;
       obj4[1] = tmp;
       obj4[2] = tmp2;
-      return tmp14(15167).renderCategoryItem(obj4);
+      return tmp14(15237).renderCategoryItem(obj4);
     } else {
       obj = { variant: "text-sm/semibold", children: null };
       obj[1] = result.type;
-      return callback(tmp14(4298).Text, obj);
+      return callback(tmp14(4299).Text, obj);
     }
   }
 }
@@ -78,7 +78,7 @@ let closure_14 = importAllResult.memo((guild) => {
   let unread;
   guild = guild.guild;
   const tmp = callback3();
-  const tmp2 = importDefault(15968)();
+  const tmp2 = importDefault(16043)();
   const items = [guild.id];
   const callback = importAllResult.useCallback(() => {
     guild(outer1_2[10]).transitionToGuild(guild.id);
@@ -87,7 +87,7 @@ let closure_14 = importAllResult.memo((guild) => {
   const items1 = [updateGuildUnreadSentinel];
   const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => ({ unread: outer1_6.hasUnread(guild.id), mentionCount: outer1_6.getMentionCount(guild.id), isMentionLowImportance: outer1_6.getIsMentionLowImportance(guild.id) }));
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  let obj1 = guild(4718);
+  let obj1 = guild(4720);
   const fontScale = obj1.useFontScale();
   let obj2 = guild(589);
   const items2 = [_getSystemLocale];
@@ -95,30 +95,30 @@ let closure_14 = importAllResult.memo((guild) => {
   obj = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items3, children: null };
   items3 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   obj = { children: null };
-  const tmp7 = importDefault(15969);
+  const tmp7 = importDefault(16044);
   obj1 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
-  const items4 = [callback(importDefault(15972), obj1), , ];
+  const items4 = [callback(importDefault(16047), obj1), , ];
   obj2 = { size: tmp2.icon.guildIconSize, guild, style: items5 };
   items5 = [tmp.guildIcon, tmp2.icon.margin];
-  items4[1] = callback(importDefault(5719), obj2);
+  items4[1] = callback(importDefault(5779), obj2);
   const obj3 = { name: guild.name, mentionBadge: null };
-  const tmp8 = importDefault(15970);
-  obj3[1] = importDefault(15975)({ mentionCount, locale: stateFromStores, isMentionLowImportance });
-  items4[2] = importDefault(15973)(obj3);
+  const tmp8 = importDefault(16045);
+  obj3[1] = importDefault(16050)({ mentionCount, locale: stateFromStores, isMentionLowImportance });
+  items4[2] = importDefault(16048)(obj3);
   obj[0] = items4;
   obj[3] = tmp8(callback2(closure_10, obj), { fontScale });
-  return tmp7(callback(guild(4844).PressableHighlight, obj));
+  return tmp7(callback(guild(4846).PressableHighlight, obj));
 });
 let closure_16 = importAllResult.memo((arg0) => {
   let name;
   let note;
   let onPress;
   ({ name, onPress, note } = arg0);
-  let obj = require(15167) /* renderCategoryItem */;
+  let obj = require(15237) /* renderCategoryItem */;
   const categoryStyles = obj.useCategoryStyles();
   const tmp = callback3();
   const tmp3 = importDefault(1348)("WrappedCategoryItem");
-  obj = { style: tmp.categoryWrapper, children: require(15167) /* renderCategoryItem */.renderCategoryItem({ name, onPress, note, styles: categoryStyles, isRefreshEnabled: tmp3 }) };
+  obj = { style: tmp.categoryWrapper, children: require(15237) /* renderCategoryItem */.renderCategoryItem({ name, onPress, note, styles: categoryStyles, isRefreshEnabled: tmp3 }) };
   return callback(View, obj);
 });
 let obj2 = { backgroundColor: require("Themes").colors.INTERACTIVE_BACKGROUND_ACTIVE };
@@ -256,7 +256,7 @@ const memoResult1 = importAllResult.memo(function SearchResultsInner(results) {
   let c4;
   let fontScale;
   const tmp = callback3();
-  let obj = results(15167);
+  let obj = results(15237);
   categoryStyles = obj.useCategoryStyles();
   const tmp5 = categoryStyles(1348)("SearchResults");
   dependencyMap = tmp5;
@@ -273,9 +273,9 @@ const memoResult1 = importAllResult.memo(function SearchResultsInner(results) {
       }
     }
   }, items1);
-  const tmp9 = categoryStyles(15968)();
+  const tmp9 = categoryStyles(16043)();
   c4 = tmp9;
-  fontScale = results(4718).useFontScale();
+  fontScale = results(4720).useFontScale();
   const items2 = [fontScale, results, tmp9];
   obj = { style: tmp.listContainer, children: null };
   let tmp12Result = null;
@@ -291,7 +291,7 @@ const memoResult1 = importAllResult.memo(function SearchResultsInner(results) {
     obj[8] = items3;
     obj[10] = closure_12;
     obj[11] = categoryStyles(1474)().height;
-    tmp12Result = tmp12(categoryStyles(7948), obj);
+    tmp12Result = tmp12(categoryStyles(8008), obj);
   }
   obj[1] = tmp12Result;
   return closure_9(c4, obj);

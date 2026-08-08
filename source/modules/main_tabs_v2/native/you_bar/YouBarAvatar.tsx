@@ -1,9 +1,9 @@
-// Module ID: 15420
-// Function ID: 15421
+// Module ID: 15495
+// Function ID: 15496
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4994, 1903, 14268, 676, 21, 4302, 712, 589, 1297, 4646, 4162, 8753, 8233, 4711, 4005, 8232, 8199, 4271, 5956, 1988, 5426, 2]
+// Dependencies: [5, 32, 19, 17, 4996, 1903, 14338, 676, 21, 4303, 712, 589, 1297, 4648, 4036, 8813, 8293, 4713, 4005, 8292, 8259, 4272, 6016, 1988, 5427, 2]
 
-// Module 15420 (YouBarAvatarLarge)
+// Module 15495 (YouBarAvatarLarge)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "CutoutableAvatarDecoration";
@@ -192,7 +192,7 @@ function YouBarAvatarLarge(transitionState) {
     obj4[0] = obj5;
     obj2[2] = closure_21(sharedValue1, obj4);
     const items5 = [closure_21(tmp22Result, obj2), , , ];
-    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: 0 };
+    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "MULTI_ACCOUNT_INVALIDATE_PUSH_SYNC_TOKENS" };
     obj6[0] = stateFromStores;
     obj6[2] = closure_10;
     if (OFFLINE === StatusTypes.UNKNOWN) {
@@ -401,7 +401,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -437,7 +437,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
           arg1.openUserSettings();
           callback(false);
           paths = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         paths = tmp;

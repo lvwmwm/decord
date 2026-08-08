@@ -1,10 +1,10 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6084
+// Function ID: 6085
 // Name: AvatarCapExample
-// Dependencies: [21, 5267, 6025, 2]
+// Dependencies: [21, 5268, 6085, 2]
 // Exports: AvatarCapExample
 
-// Module 6024 (AvatarCapExample)
+// Module 6084 (AvatarCapExample)
 import { jsx } from "jsxProd";
 
 const result = require("metadata").fileFinishedImporting("design/components/mana-assets/native/generated/AvatarCapExample.native.tsx");
@@ -28,7 +28,7 @@ export const AvatarCapExample = function AvatarCapExample(width) {
   }
   let obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
   obj = { uri: null };
-  obj[0] = importDefault(6025);
+  obj[0] = importDefault(6085);
   obj[1] = obj;
   obj = { width: num * num3, height: num2 * num3 };
   const items = [obj];
@@ -36,5 +36,5 @@ export const AvatarCapExample = function AvatarCapExample(width) {
   obj[3] = accessible;
   obj[4] = accessibilityLabel;
   obj[5] = resizeMode;
-  return jsx(importDefault(5267), { width: num * num3, height: num2 * num3 });
+  return jsx(importDefault(5268), { width: num * num3, height: num2 * num3 });
 };

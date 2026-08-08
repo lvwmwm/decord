@@ -1,10 +1,10 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12270
+// Function ID: 12271
 // Name: AddAppButton
-// Dependencies: [5, 32, 19, 8279, 676, 1479, 21, 11466, 10553, 4270, 5696, 11453, 4001, 1467, 7895, 9367, 1236, 4712, 712, 5669, 4312, 4160, 1607, 698, 2]
+// Dependencies: [5, 32, 19, 8339, 676, 1479, 21, 11532, 10619, 4271, 5756, 11519, 4001, 1467, 7955, 9432, 1236, 4714, 712, 5729, 4313, 4166, 1607, 698, 2]
 // Exports: default
 
-// Module 12203 (AddAppButton)
+// Module 12270 (AddAppButton)
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import _slicedToArray from "_slicedToArray";
 import fetchApplication from "fetchApplication";
@@ -31,7 +31,7 @@ function AddAppButton(application) {
   const customInstallUrl = application.customInstallUrl;
   if (null != customInstallUrl) {
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(7895).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(7955).LinkExternalSmallIcon;
       let tmp6 = application;
     }
     const items1 = [application];
@@ -61,9 +61,9 @@ function AddAppButton(application) {
     obj = { size: "sm", color: null };
     obj[1] = guildId(712).colors.WHITE;
     obj[5] = <PlusSmallIcon size="sm" color={null} />;
-    return jsx(tmp6(4712).Button, { size: "sm", color: null });
+    return jsx(tmp6(4714).Button, { size: "sm", color: null });
   }
-  PlusSmallIcon = application(9367).PlusSmallIcon;
+  PlusSmallIcon = application(9432).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {
@@ -86,7 +86,7 @@ function OpenAppButton(profileApplication) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -216,7 +216,7 @@ export default function AddOrOpenAppButton(arg0) {
   let guildId;
   ({ application, channel } = arg0);
   ({ botUserId, guildId } = arg0);
-  if (importDefault(11466)(channel)) {
+  if (importDefault(11532)(channel)) {
     if (null != channel) {
       const obj = { profileApplication: null, botUserId: null, channel: null };
       obj[0] = application;

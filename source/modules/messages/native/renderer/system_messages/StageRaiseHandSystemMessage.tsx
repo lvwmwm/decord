@@ -1,10 +1,10 @@
-// Module ID: 8076
-// Function ID: 8077
+// Module ID: 8136
+// Function ID: 8137
 // Name: createStageRaiseHandSystemMessage
-// Dependencies: [5135, 1372, 3929, 676, 1236, 1974, 8009, 11, 4486, 8011, 8012, 2]
+// Dependencies: [5136, 1372, 3929, 676, 1236, 1974, 8069, 11, 4488, 8071, 8072, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8076 (createStageRaiseHandSystemMessage)
+// Module 8136 (createStageRaiseHandSystemMessage)
 import getActiveStageChannelIds from "getActiveStageChannelIds";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -20,7 +20,7 @@ const result = require("getUncachedChannelPermissions").fileFinishedImporting("m
 
 export const createStageRaiseHandSystemMessage = function createStageRaiseHandSystemMessage(roleStyle) {
   const message = roleStyle.message;
-  let obj = require(8009) /* getMessageAuthorWithProcessedColor */;
+  let obj = require(8069) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   let canResult = getUncachedChannelPermissions.can(constants4.MUTE_MEMBERS, channel.getChannel(message.channel_id));
   participant = participant.getParticipant(message.channel_id, message.author.id);
@@ -43,7 +43,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(4486).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(4488).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -51,7 +51,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
   obj = { content: null, showInviteToSpeakButton: null, buttonLabel: null, ephemeralIndication: null };
   const intl = tmp(1236).intl;
   obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null };
-  obj[1] = importDefault(8011)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
+  obj[1] = importDefault(8071)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle });
   obj[0] = intl.formatToParts(require(1236) /* getSystemLocale */.t.M87x7Y, obj);
   obj[1] = canResult;
   const intl2 = tmp(1236).intl;
@@ -74,6 +74,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     }
   }
   obj[3] = tmp10;
-  const merged = Object.assign(tmp6(8012)(roleStyle));
+  const merged = Object.assign(tmp6(8072)(roleStyle));
   return obj;
 };

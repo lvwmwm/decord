@@ -1,10 +1,10 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 9998
+// Function ID: 9999
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5175, 5222, 1372, 1961, 1971, 1964, 1891, 3929, 3938, 1903, 676, 1906, 7085, 4492, 11, 5158, 3942, 3946, 2]
+// Dependencies: [32, 5176, 5223, 1372, 1961, 1971, 1964, 1891, 3929, 3938, 1903, 676, 1906, 7145, 4494, 11, 5159, 3942, 3946, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9932 (resolvePlaintextInlineVoid)
+// Module 9998 (resolvePlaintextInlineVoid)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import rebuild from "rebuild";
@@ -166,8 +166,8 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention) {
             num[Symbol.iterator]();
             const obj2 = callback2(11);
           }
-          callback(4492).unescapeChannelName(arr.slice(2, arr.length - num));
-          const obj = callback(4492);
+          callback(4494).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4494);
         }
         const substr = arr.slice(1);
       }
@@ -207,8 +207,8 @@ export const resolveApplicationCommandOption = function resolveApplicationComman
   const tmp = resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, intention);
   let voidToOptionValueResult = null;
   if (null != tmp) {
-    voidToOptionValueResult = require(7085) /* createEmptyState */.voidToOptionValue(tmp);
-    const obj = require(7085) /* createEmptyState */;
+    voidToOptionValueResult = require(7145) /* createEmptyState */.voidToOptionValue(tmp);
+    const obj = require(7145) /* createEmptyState */;
   }
   return voidToOptionValueResult;
 };

@@ -1,10 +1,10 @@
-// Module ID: 4825
-// Function ID: 4826
+// Module ID: 4827
+// Function ID: 4828
 // Name: VoiceWarningIcon
-// Dependencies: [19, 21, 712, 4004, 4774, 2]
+// Dependencies: [19, 21, 712, 4004, 4776, 2]
 // Exports: VoiceWarningIcon
 
-// Module 4825 (VoiceWarningIcon)
+// Module 4827 (VoiceWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const VoiceWarningIcon = function VoiceWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4774) /* registerAsset */;
+  obj[0] = require(4776) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

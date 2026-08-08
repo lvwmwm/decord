@@ -1,8 +1,8 @@
-// Module ID: 11720
-// Function ID: 11721
-// Dependencies: [5, 17, 11711, 676, 11714, 698, 10707, 9712, 2]
+// Module ID: 11786
+// Function ID: 11787
+// Dependencies: [5, 17, 11777, 676, 11780, 698, 10773, 9778, 2]
 
-// Module 11720
+// Module 11786
 import expandEventProperties from "expandEventProperties";
 import { NativeModules } from "get ActivityIndicator";
 import { PermissionStateType } from "set";
@@ -13,7 +13,7 @@ let result = require("set").fileFinishedImporting("utils/native/NotificationUtil
 
 export default {
   hasPermission() {
-    return importDefault(10707).requestPermissions((badge) => {
+    return importDefault(10773).requestPermissions((badge) => {
       let _alert;
       let sound;
       ({ alert: _alert, sound } = badge);
@@ -28,11 +28,11 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(11714).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(11714);
+    let result = _require(11780).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11780);
     importDefault(698).track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
     const obj2 = importDefault(698);
-    const permissions = importDefault(10707).requestPermissions();
+    const permissions = importDefault(10773).requestPermissions();
     permissions.then((sound) => {
       let _alert;
       let badge;
@@ -76,7 +76,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ export default {
             return obj;
           } else {
             c0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = tmp;
@@ -106,6 +106,6 @@ export default {
     if (arg1 === undefined) {
       num = 1;
     }
-    require(9712) /* createSoundForPack */.playSound(arg0, num, undefined, arg2);
+    require(9778) /* createSoundForPack */.playSound(arg0, num, undefined, arg2);
   }
 };

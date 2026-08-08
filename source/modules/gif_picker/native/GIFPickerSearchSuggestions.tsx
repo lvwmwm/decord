@@ -1,8 +1,8 @@
-// Module ID: 9876
-// Function ID: 9877
-// Dependencies: [19, 17, 9867, 21, 4302, 712, 589, 4298, 1236, 4712, 2]
+// Module ID: 9942
+// Function ID: 9943
+// Dependencies: [19, 17, 9933, 21, 4303, 712, 589, 4299, 1236, 4714, 2]
 
-// Module 9876
+// Module 9942
 import { View } from "get ActivityIndicator";
 import getFormatFromUrl from "getFormatFromUrl";
 import jsxProd from "jsxProd";
@@ -35,7 +35,7 @@ const memoResult = importAllResult.memo(function GIFPickerSearchSuggestions(onCl
     obj[0] = tmp.footerSuggestionsTitle;
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t["3JGJo2"]);
-    const items1 = [callback(tmp2(4298).Text, obj), ];
+    const items1 = [callback(tmp2(4299).Text, obj), ];
     const obj1 = { style: null, children: null };
     obj1[0] = tmp.suggestionsContainer;
     obj1[1] = stateFromStoresArray.map((arg0) => {

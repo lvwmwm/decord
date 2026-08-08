@@ -1,10 +1,10 @@
-// Module ID: 9696
-// Function ID: 9697
+// Module ID: 9762
+// Function ID: 9763
 // Name: useFocusModeEnabled
-// Dependencies: [4994, 3941, 676, 3974, 1355, 1337, 698, 4640, 1236, 9697, 2]
+// Dependencies: [4996, 3941, 676, 3974, 1355, 1337, 698, 4642, 1236, 9763, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 9696 (useFocusModeEnabled)
+// Module 9762 (useFocusModeEnabled)
 import filterPlayingActivities from "filterPlayingActivities";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 import ME from "ME";
@@ -94,7 +94,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
     obj[4] = function onConfirm() {
       callback(table[9])({ nextStatus: constants.ONLINE });
     };
-    importDefault(4640).show(obj);
-    const tmp5Result = importDefault(4640);
+    importDefault(4642).show(obj);
+    const tmp5Result = importDefault(4642);
   }
 };

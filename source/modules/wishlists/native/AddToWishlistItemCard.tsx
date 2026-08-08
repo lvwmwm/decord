@@ -1,10 +1,10 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12490
+// Function ID: 12491
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 676, 21, 4302, 712, 12421, 9289, 9346, 698, 9298, 4002, 1236, 9290, 9285, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4303, 712, 12488, 9354, 9411, 698, 9363, 4002, 1236, 9355, 9350, 2]
 // Exports: default
 
-// Module 12423 (AddToWishlistItemCard)
+// Module 12490 (AddToWishlistItemCard)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -69,7 +69,7 @@ export default function AddToWishlistItemCard(sku) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

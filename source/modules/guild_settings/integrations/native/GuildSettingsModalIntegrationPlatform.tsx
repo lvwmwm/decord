@@ -1,11 +1,11 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16677
+// Function ID: 16678
 // Name: getDerivedStateFromProps
-// Dependencies: [19, 17, 8962, 676, 21, 4302, 712, 16561, 16601, 4998, 1416, 4147, 5707, 5373, 5708, 1236, 8961, 4641, 4730, 4005, 1480, 589, 4238, 5269, 5948, 5956, 1974, 7907, 4710, 4298, 5654, 2]
+// Dependencies: [19, 17, 9022, 676, 21, 4303, 712, 16638, 16678, 5000, 1416, 4153, 5767, 5374, 5768, 1236, 9021, 4643, 4732, 4005, 1480, 589, 4239, 5270, 6008, 6016, 1974, 7967, 4712, 4299, 5714, 2]
 // Exports: default
 
-// Module 16600 (getDerivedStateFromProps)
-import get_ActivityIndicator from "module_4641";
+// Module 16677 (getDerivedStateFromProps)
+import get_ActivityIndicator from "module_4643";
 import handleFormInit from "handleFormInit";
 import ME from "ME";
 import jsxProd from "initialize";
@@ -104,22 +104,22 @@ IntegrationItem.prototype["render"] = function render() {
   const props = this.props;
   const integration = props.integration;
   ({ onPress: importDefault, styles } = props);
-  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16561).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
+  const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = integration(16638).SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS;
   if (SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS.includes(integration.type)) {
     const type = integration.type;
-    if (tmp(16601).IntegrationTypes.YOUTUBE === type) {
+    if (tmp(16678).IntegrationTypes.YOUTUBE === type) {
       const account = integration.account;
       let name;
       if (account != null) {
         name = account.name;
       }
       let combined = name;
-    } else if (tmp(16601).IntegrationTypes.TWITCH === type) {
+    } else if (tmp(16678).IntegrationTypes.TWITCH === type) {
       const _HermesInternal = HermesInternal;
       let str = "twitch.tv/";
       combined = "twitch.tv/" + integration.name;
     }
-    let obj = importDefault(4998);
+    let obj = importDefault(5000);
     const value = obj.get(integration.type);
     if (null == value) {
       str = undefined;
@@ -153,7 +153,7 @@ IntegrationItem.prototype["render"] = function render() {
         }
         return enabled;
       };
-      const items = [closure_11(tmp(5373).TableRow, obj), ];
+      const items = [closure_11(tmp(5374).TableRow, obj), ];
       const obj2 = { value: null, disabled: null, onValueChange: null, label: null };
       const _Boolean = Boolean;
       obj2[0] = Boolean(self.state.enabled);
@@ -161,12 +161,12 @@ IntegrationItem.prototype["render"] = function render() {
       obj2[2] = self.handleToggleEnabled;
       const intl = tmp(1236).intl;
       obj2[3] = intl.string(tmp(1236).t.vQC6vR);
-      items[1] = closure_11(tmp(5708).TableSwitchRow, obj2);
+      items[1] = closure_11(tmp(5768).TableSwitchRow, obj2);
       obj1[1] = items;
-      return closure_12(tmp(5707).TableRowGroup, obj1);
+      return closure_12(tmp(5767).TableRowGroup, obj1);
     } else {
       let tmpResult = tmp(1416);
-      tmpResult = tmp(4147);
+      tmpResult = tmp(4153);
       let icon = value.icon;
       icon = { source: null, style: null };
       icon[0] = tmpResult.makeSource(tmpResult.isThemeDark(props.theme) ? icon.darkPNG : icon.lightPNG);
@@ -212,7 +212,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
   const stateFromStoresObject = obj3.useStateFromStoresObject(items, () => ({ guild: guild.getGuild(), submitting: guild.isSubmitting(), hasChanges: guild.hasChanges() }));
   submitting = stateFromStoresObject.submitting;
   ({ hasChanges: c5, guild } = stateFromStoresObject);
-  closure_7 = closeGuildSettings(4238)();
+  closure_7 = closeGuildSettings(4239)();
   let obj4 = platformType(589);
   const items1 = [guild];
   const stateFromStores = obj4.useStateFromStores(items1, () => guild.getProps().integrations);
@@ -228,7 +228,7 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     }
     obj = { headerLeft: null, title: null, headerRight: null };
     obj[0] = fn;
-    let tmp3Result = tmp3(4998);
+    let tmp3Result = tmp3(5000);
     const value = tmp3Result.get(platformType);
     let name;
     if (value != null) {
@@ -299,10 +299,10 @@ export default function GuildSettingsModalIntegrationPlatform(platformType) {
     const items2 = [mapped, ];
     const obj6 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj6[2] = formatResult;
-    items2[1] = closure_11(tmp(4298).Text, obj6);
+    items2[1] = closure_11(tmp(4299).Text, obj6);
     obj3[2] = items2;
-    obj2[2] = closure_12(tmp(4710).Stack, obj3);
-    const items3 = [closure_11(tmp(7907).Form, obj2), closure_11(tmp(5654).NavScrim, {})];
+    obj2[2] = closure_12(tmp(4712).Stack, obj3);
+    const items3 = [closure_11(tmp(7967).Form, obj2), closure_11(tmp(5714).NavScrim, {})];
     obj5[0] = items3;
     return closure_12(closure_13, obj5);
   }

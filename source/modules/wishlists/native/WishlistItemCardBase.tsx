@@ -1,10 +1,10 @@
-// Module ID: 9290
-// Function ID: 9291
+// Module ID: 9355
+// Function ID: 9356
 // Name: SourceIcon
-// Dependencies: [19, 17, 21, 4302, 712, 4002, 8707, 4013, 8772, 4005, 9291, 1236, 1351, 9169, 4821, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4002, 8767, 4013, 8832, 4005, 9356, 1236, 1351, 9229, 4823, 2]
 // Exports: default
 
-// Module 9290 (SourceIcon)
+// Module 9355 (SourceIcon)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ function SourceIcon(toastText) {
   };
   obj = { color: null, size: "md" };
   obj[0] = importDefault(712).colors.INTERACTIVE_ICON_DEFAULT;
-  obj[5] = callback(toastText(8707).HeartIcon, obj);
+  obj[5] = callback(toastText(8767).HeartIcon, obj);
   return callback(closure_3, obj);
 }
 ({ Pressable: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -81,7 +81,7 @@ export default function WishlistItemCardBase(username) {
   let obj = require(4013) /* ManaContext */;
   const themeContext = obj.useThemeContext();
   ({ primaryColor, theme, secondaryColor } = themeContext);
-  let obj1 = require(8772) /* useUserProfileColors */;
+  let obj1 = require(8832) /* useUserProfileColors */;
   let obj2 = require(4005) /* map */;
   let containerBackground = obj2.useToken(importDefault(712).colors.BG_SURFACE_RAISED);
   if (null != primaryColor) {
@@ -109,7 +109,7 @@ export default function WishlistItemCardBase(username) {
       stringResult = intl2.string(tmp2(1236).t.wu4gyV);
     }
   }
-  let tmp14Result1 = source === tmp2(9291).WishlistItemSource.WISHLIST;
+  let tmp14Result1 = source === tmp2(9356).WishlistItemSource.WISHLIST;
   items1[1] = stringResult;
   let tmp10 = null;
   if (tmp14Result1) {
@@ -133,7 +133,7 @@ export default function WishlistItemCardBase(username) {
     const obj3 = { color: null, size: "custom", style: null };
     obj3[0] = tmp5(712).colors.WHITE;
     obj3[2] = { width: 40, height: 40 };
-    obj2[4] = tmp14(tmp2(9169).CheckmarkLargeBoldIcon, obj3);
+    obj2[4] = tmp14(tmp2(9229).CheckmarkLargeBoldIcon, obj3);
     tmp14Result = tmp14(tmp15, obj2);
   }
   items3[1] = tmp14Result;
@@ -144,7 +144,7 @@ export default function WishlistItemCardBase(username) {
     const obj5 = { color: null, size: "custom", style: null };
     obj5[0] = tmp5(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
     obj5[2] = { width: 18, height: 18 };
-    obj4[4] = tmp14(tmp2(4821).LockIcon, obj5);
+    obj4[4] = tmp14(tmp2(4823).LockIcon, obj5);
     tmp14Result = tmp14(tmp15, obj4);
   }
   items3[2] = tmp14Result;

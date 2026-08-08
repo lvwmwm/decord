@@ -1,10 +1,10 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14096
+// Function ID: 14097
 // Name: computeAffectedGuilds
-// Dependencies: [5225, 4223, 1891, 5154, 1306, 5953, 1236, 3974, 2]
+// Dependencies: [5226, 4224, 1891, 5155, 1306, 6013, 1236, 3974, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 14026 (computeAffectedGuilds)
+// Module 14096 (computeAffectedGuilds)
 import handleChannelSelect from "handleChannelSelect";
 import handleInviteData from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -42,7 +42,7 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
         } else {
           EXPANDING = obj.EXPANDING;
         }
-        const dependencyMap = tmp8(5953).getSanitizedActivityRestrictedGuilds();
+        const dependencyMap = tmp8(6013).getSanitizedActivityRestrictedGuilds();
         flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
         if (setting !== tmp8(1306).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
           if (setting !== tmp8(1306).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
@@ -312,7 +312,7 @@ export const sortGuildIdsByFrecency = function sortGuildIdsByFrecency(guildIds) 
   });
 };
 export const applyBulkGuildRestrictionChange = function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
-  const obj = set(5953);
+  const obj = set(6013);
   const sanitizedActivityRestrictedGuilds = obj.getSanitizedActivityRestrictedGuilds();
   set = new Set(affectedGuildIds);
   if (direction === obj.RESTRICTING) {

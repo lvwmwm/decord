@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15348
+// Function ID: 15349
 // Name: useStartTime
-// Dependencies: [19, 4992, 4639, 10342, 676, 589, 10387, 2]
+// Dependencies: [19, 4994, 4641, 10408, 676, 589, 10453, 2]
 // Exports: useStartTime
 
-// Module 15275 (useStartTime)
+// Module 15348 (useStartTime)
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import handleConnectionOpen from "handleConnectionOpen";

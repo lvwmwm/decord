@@ -1,10 +1,10 @@
-// Module ID: 9312
-// Function ID: 9313
+// Module ID: 9377
+// Function ID: 9378
 // Name: ProfileEffectSample
-// Dependencies: [17, 9311, 21, 4302, 712, 5267, 9313, 9314, 2]
+// Dependencies: [17, 9376, 21, 4303, 712, 5268, 9378, 9379, 2]
 // Exports: default
 
-// Module 9312 (ProfileEffectSample)
+// Module 9377 (ProfileEffectSample)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -37,9 +37,9 @@ export default function ProfileEffectSample(hideBackground) {
   obj = { style: items1, source: null, accessible: false, resizeMode: "cover" };
   items1 = [tmp.sampleProfileImage];
   obj = { uri: null };
-  obj[0] = importDefault(9313);
+  obj[0] = importDefault(9378);
   obj[1] = obj;
-  const items2 = [callback(importDefault(5267), obj), , ];
+  const items2 = [callback(importDefault(5268), obj), , ];
   let tmp4Result = !flag;
   if (!flag) {
     const obj1 = { style: null };
@@ -47,7 +47,7 @@ export default function ProfileEffectSample(hideBackground) {
     tmp4Result = tmp4(tmp3, obj1);
   }
   items2[1] = tmp4Result;
-  items2[2] = callback(importDefault(9314), { skuId: hideBackground.item.skuId, bannerAdjustment: 0, useThumbnail: true });
+  items2[2] = callback(importDefault(9379), { skuId: hideBackground.item.skuId, bannerAdjustment: 0, useThumbnail: true });
   obj[1] = items2;
   return closure_4(View, obj);
 };

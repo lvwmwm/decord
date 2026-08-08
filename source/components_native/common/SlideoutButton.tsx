@@ -1,9 +1,9 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12525
+// Function ID: 12526
 // Name: SlideoutButton
-// Dependencies: [19, 17, 676, 21, 4302, 4145, 712, 4844, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 4151, 712, 4846, 1297, 2]
 
-// Module 12458 (SlideoutButton)
+// Module 12525 (SlideoutButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

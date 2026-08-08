@@ -1,8 +1,8 @@
-// Module ID: 16101
-// Function ID: 16102
-// Dependencies: [19, 21, 4302, 5396, 5398, 5327, 16102, 2]
+// Module ID: 16176
+// Function ID: 16177
+// Dependencies: [19, 21, 4303, 5397, 5399, 5328, 16177, 2]
 
-// Module 16101
+// Module 16176
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -16,10 +16,10 @@ const memoResult = require("noop").memo(function VoicePanelSettingsActionSheet(a
   let obj = { startExpanded: true, scrollable: true, children: null };
   obj = { children: null };
   obj = { bottom: true, style: callback().wrapper, children: null };
-  obj[2] = jsx(importDefault(16102), { guildId, channelId });
-  obj[0] = jsx(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: callback().wrapper, children: null });
-  obj[2] = jsx(require(5398) /* BottomSheetModal */.BottomSheetScrollView, { bottom: true, style: callback().wrapper, children: null });
-  return jsx(require(5396) /* Background */.BottomSheet, { bottom: true, style: callback().wrapper, children: null });
+  obj[2] = jsx(importDefault(16177), { guildId, channelId });
+  obj[0] = jsx(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: callback().wrapper, children: null });
+  obj[2] = jsx(require(5399) /* BottomSheetModal */.BottomSheetScrollView, { bottom: true, style: callback().wrapper, children: null });
+  return jsx(require(5397) /* Background */.BottomSheet, { bottom: true, style: callback().wrapper, children: null });
 });
 const result = require("createCacheKey").fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionSheet.tsx");
 

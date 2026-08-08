@@ -1,9 +1,9 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11379
+// Function ID: 11380
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 11313 (apexExperiment)
+// Module 11379 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-ios-chat-input-fabric", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

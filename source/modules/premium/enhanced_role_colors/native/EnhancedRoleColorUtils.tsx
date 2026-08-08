@@ -1,10 +1,10 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8070
+// Function ID: 8071
 // Name: processColorStrings
-// Dependencies: [32, 19, 17, 1302, 505, 689, 1351, 4740, 2]
+// Dependencies: [32, 19, 17, 1302, 505, 689, 1351, 4742, 2]
 // Exports: isNativeMessageEligibleForEnhancedRoleColors, processColorStringsArray, useIsRoleStyleAndRoleColorsEligibleForERC, useProcessColorStringsArray
 
-// Module 8010 (processColorStrings)
+// Module 8070 (processColorStrings)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { processColor } from "get ActivityIndicator";
@@ -110,10 +110,10 @@ export const useProcessColorStringsArray = function useProcessColorStringsArray(
   }, items);
 };
 export const isNativeMessageEligibleForEnhancedRoleColors = function isNativeMessageEligibleForEnhancedRoleColors(guildId, id) {
-  return require(4740) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColors(guildId, id);
+  return require(4742) /* useHasEnhancedRoleColors */.getHasEnhancedRoleColors(guildId, id);
 };
 export const useIsRoleStyleAndRoleColorsEligibleForERC = function useIsRoleStyleAndRoleColorsEligibleForERC(guildId, id, stateFromStores, processColorStringsArray) {
-  let tmp = importDefault(4740)(guildId, id);
+  let tmp = importDefault(4742)(guildId, id);
   if (tmp) {
     tmp = "username" === stateFromStores;
   }

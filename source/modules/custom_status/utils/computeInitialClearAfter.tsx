@@ -1,10 +1,10 @@
-// Module ID: 9393
-// Function ID: 9394
+// Module ID: 9458
+// Function ID: 9459
 // Name: ClearAfterValues
-// Dependencies: [9391, 3974, 2]
+// Dependencies: [9456, 3974, 2]
 // Exports: default
 
-// Module 9393 (ClearAfterValues)
+// Module 9458 (ClearAfterValues)
 import { ClearAfterValues } from "StatusTypes";
 
 const items = [, , ];

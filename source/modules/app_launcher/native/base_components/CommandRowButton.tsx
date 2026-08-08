@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11491
+// Function ID: 11492
 // Name: CommandRowIcon
-// Dependencies: [5, 32, 19, 21, 11352, 8278, 11318, 6922, 5380, 4712, 1236, 4248, 2]
+// Dependencies: [5, 32, 19, 21, 11418, 8338, 11384, 6982, 5381, 4714, 1236, 4249, 2]
 // Exports: default, useCommandRowSend
 
-// Module 11425 (CommandRowIcon)
+// Module 11491 (CommandRowIcon)
 import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -15,15 +15,15 @@ const result = require("noop").fileFinishedImporting("modules/app_launcher/nativ
 
 export default function CommandRowIcon(hasOptions) {
   if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(5380).TableRowArrow, {});
+    let tmp3Result = tmp3(tmp4(5381).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
     const intl = tmp4(1236).intl;
     obj[1] = intl.string(tmp4(1236).t.TXNS7S);
     obj[2] = tmp2;
-    obj[3] = tmp3(tmp4(4248).SendMessageIcon, { size: "sm" });
+    obj[3] = tmp3(tmp4(4249).SendMessageIcon, { size: "sm" });
     obj[7] = tmp;
-    tmp3Result = tmp3(tmp4(4712).Button, obj);
+    tmp3Result = tmp3(tmp4(4714).Button, obj);
   }
   return tmp3Result;
 };
@@ -57,7 +57,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -78,13 +78,13 @@ export const useCommandRowSend = function useCommandRowSend(command) {
               dependencyMap();
             }
             let c3 = 1;
-            let obj1 = outer1_0(8278);
+            let obj1 = outer1_0(8338);
             obj1 = { command: null, optionValues: null, context: null, sectionName: null, commandOrigin: null };
             obj1[0] = outer1_0;
-            obj1[1] = outer1_0(11318).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
+            obj1[1] = outer1_0(11384).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
             obj1[2] = outer1_6;
             obj1[3] = c4;
-            obj1[4] = outer1_0(6922).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
+            obj1[4] = outer1_0(6982).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
             dependencyMap = 2;
             c4 = 1;
             const obj2 = { value: null, done: false };
@@ -112,7 +112,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           callback2(false);
           c4 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         callback = tmp27;

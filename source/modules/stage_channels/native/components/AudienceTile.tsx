@@ -1,10 +1,10 @@
-// Module ID: 10884
-// Function ID: 10885
+// Module ID: 10950
+// Function ID: 10951
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1971, 21, 4302, 712, 4486, 1297, 7943, 1474, 589, 5141, 4491, 5426, 1236, 7713, 10864, 4147, 10885, 2]
+// Dependencies: [19, 17, 1971, 21, 4303, 712, 4488, 1297, 8003, 1474, 589, 5142, 4493, 5427, 1236, 7773, 10930, 4153, 10951, 2]
 // Exports: getTileWidthStyle
 
-// Module 10884 (RaisedHandIcon)
+// Module 10950 (RaisedHandIcon)
 import { View } from "AccessibilityAnnouncer";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ let closure_6;
 const require = arg1;
 function RaisedHandIcon(rtsState) {
   const tmp = styles();
-  let activeBackground = rtsState.rtsState === require(4486) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+  let activeBackground = rtsState.rtsState === require(4488) /* useAudienceRequestToSpeakState */.RequestToSpeakStates.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
   if (activeBackground) {
     let PRIMARY_800 = unsafe_rawColors.WHITE;
@@ -32,7 +32,7 @@ function RaisedHandIcon(rtsState) {
   let obj = { style: items, children: null };
   items[1] = activeBackground;
   obj = { style: tmp.raisedHand, source: null, color: null };
-  obj[1] = tmp5(7943);
+  obj[1] = tmp5(8003);
   obj[2] = PRIMARY_800;
   obj[1] = closure_5(require(1297) /* Button */.Icon, obj);
   return closure_5(View, obj);
@@ -161,7 +161,7 @@ const memoResult = importAllResult.memo((channel) => {
     obj3[1] = items6;
     items4[1] = tmp12(tmp13, obj3);
     obj[4] = items4;
-    return tmp12(tmp6(tmp3[13]).Pressable, obj);
+    return tmp12(tmp6(tmp3[13]).LegacyPressable, obj);
   } else {
     const tmp6Result = tmp6(tmp3[17]);
     let unsafe_rawColors = tmp2(tmp3[5]).unsafe_rawColors;

@@ -1,9 +1,9 @@
-// Module ID: 10079
-// Function ID: 10080
+// Module ID: 10145
+// Function ID: 10146
 // Name: items
-// Dependencies: [19, 21, 10077, 10080, 2]
+// Dependencies: [19, 21, 10143, 10146, 2]
 
-// Module 10079 (items)
+// Module 10145 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -12,12 +12,12 @@ let closure_3 = ["Orbs-Spend_DarkTheme", "Orbs-Earn_DarkTheme"];
 const items = [{ name: "earn", start: 0, duration: 180 }, { name: "spend", start: 240, duration: 180 }];
 const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
   const obj = { dotLottie: null, ref: null, layers: null, markers: null };
-  obj[0] = require(10080) /* registerAsset */;
+  obj[0] = require(10146) /* registerAsset */;
   obj[1] = arg1;
   obj[2] = closure_3;
   obj[3] = items;
   const merged = Object.assign(arg0);
-  return jsx(require(10077) /* LottieIcon */.LottieIcon, { dotLottie: null, ref: null, layers: null, markers: null });
+  return jsx(require(10143) /* LottieIcon */.LottieIcon, { dotLottie: null, ref: null, layers: null, markers: null });
 });
 const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/SpendEarnOrbsLottie.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 12766
-// Function ID: 12767
+// Module ID: 12836
+// Function ID: 12837
 // Name: textLogoTier2
-// Dependencies: [19, 17, 6836, 1905, 21, 4302, 712, 5157, 1348, 4723, 691, 3947, 12767, 12768, 7330, 7269, 7270, 7325, 5375, 2]
+// Dependencies: [19, 17, 6896, 1905, 21, 4303, 712, 5158, 1348, 4725, 691, 3947, 12837, 12838, 7390, 7329, 7330, 7385, 5376, 2]
 // Exports: default
 
-// Module 12766 (textLogoTier2)
+// Module 12836 (textLogoTier2)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import { getPremiumGradientColor } from "items";
@@ -50,15 +50,15 @@ export default function _default(children) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp2Result = tmp2(12767);
+    let tmp2Result = tmp2(12837);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(12768);
+    tmp2Result = tmp2(12838);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7330);
+    tmp2Result = tmp2(7390);
   }
   obj[4] = tmp2Result;
   obj[4] = closure_7(closure_4, obj);
-  const items = [closure_7(importDefault(4723), obj), , ];
+  const items = [closure_7(importDefault(4725), obj), , ];
   const items1 = [tmp.wumpusLogo, ];
   if (PremiumTypes.TIER_0 === premiumType) {
     let wumpusLogoTier2 = tmp.wumpusLogoTier0;
@@ -70,11 +70,11 @@ export default function _default(children) {
   obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp2Result = tmp2(7269);
+    tmp2Result = tmp2(7329);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(7270);
+    tmp2Result = tmp2(7330);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7325);
+    tmp2Result = tmp2(7385);
   }
   obj[3] = tmp2Result;
   items[1] = closure_7(closure_4, obj);
@@ -92,7 +92,7 @@ export default function _default(children) {
     obj2 = { variant: "surface-high", style: null, children: null };
     obj2[1] = style;
     obj2[2] = tmp5Result;
-    let tmp7Result = tmp7(require(5375) /* PressableCard */.Card, obj2);
+    let tmp7Result = tmp7(require(5376) /* PressableCard */.Card, obj2);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = style;

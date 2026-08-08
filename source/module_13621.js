@@ -1,14 +1,15 @@
 // Module ID: 13621
 // Function ID: 13622
-// Dependencies: []
+// Dependencies: [13619]
 
 // Module 13621
-arg5.default = () => (arg0) => {
-  let closure_0 = arg0;
-  const features = {
-    image(uri) {
-      return closure_0.send("image", { uri: uri.uri, preview: uri.preview, filename: uri.filename, width: uri.width, height: uri.height, caption: uri.caption });
-    }
-  };
-  return { features };
+
+export default (arg0, arg1) => {
+  const tmp = require(13619)(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
 };

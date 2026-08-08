@@ -1,10 +1,10 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10516
+// Function ID: 10517
 // Name: getLocationContextServer
-// Dependencies: [5, 1372, 1960, 676, 530, 5767, 507, 2]
+// Dependencies: [5, 1372, 1960, 676, 530, 5827, 507, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 10450 (getLocationContextServer)
+// Module 10516 (getLocationContextServer)
 import handleLogout from "handleLogout";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -64,7 +64,7 @@ function _authorize() {
       let c9;
       c1 = tmp2;
       ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = callback);
-      yield "PX_8";
+      yield "ct";
       const HTTP = callback(c2[4]).HTTP;
       let obj2 = { url: null, query: null, body: null, oldFormErrors: true, rejectWithError: null };
       obj2[0] = OAUTH2_AUTHORIZE.OAUTH2_AUTHORIZE;
@@ -135,7 +135,7 @@ function _fetchAuthorization() {
       let c9;
       c1 = tmp2;
       ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = callback);
-      yield "PX_8";
+      yield "ct";
       const HTTP = callback(530).HTTP;
       const obj2 = { url: null, query: null, signal: null, retries: 3, oldFormErrors: true, rejectWithError: null };
       obj2[0] = OAUTH2_AUTHORIZE.OAUTH2_AUTHORIZE;
@@ -190,7 +190,7 @@ function _startSamsungAuthorization() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -232,7 +232,7 @@ function _startSamsungAuthorization() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c5 = tmp;
@@ -416,7 +416,7 @@ export const fetchChannels = function fetchChannels(closure_0) {
   return applyArgumentsResult;
 };
 export const logoutWithRedirect = function logoutWithRedirect(pathname, login_required_account_manager) {
-  const obj = importDefault(5767);
+  const obj = importDefault(5827);
   obj.logout(login_required_account_manager, require(507) /* getAuthenticationPath */.getLoginPath(pathname.pathname + pathname.search, false));
 };
 export const verifyUserCode = function verifyUserCode(outer1_0) {

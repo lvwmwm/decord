@@ -1,10 +1,10 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11382
+// Function ID: 11383
 // Name: findGameMentionTokens
-// Dependencies: [17, 4294, 5175, 1964, 3929, 676, 4736, 1906, 11317, 3946, 11318, 4332, 1884, 7888, 5889, 3974, 9849, 712, 4492, 2]
+// Dependencies: [17, 4295, 5176, 1964, 3929, 676, 4738, 1906, 11383, 3946, 11384, 4334, 1884, 7948, 5949, 3974, 9915, 712, 4494, 2]
 // Exports: getChannelHighlightNodes, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptions, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getUsernameHighlightNodes, serializeComposerGameMentions
 
-// Module 11316 (findGameMentionTokens)
+// Module 11382 (findGameMentionTokens)
 import { Image } from "Themes";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -52,10 +52,10 @@ function findGameMentionTokens(text, name, items) {
   return obj;
 }
 function buildGameMentionResult(id) {
-  let uri = importDefault(4332)(id.id, id.icon, { size: 32 });
+  let uri = importDefault(4334)(id.id, id.icon, { size: 32 });
   const obj = { location: 0, length: callback(id.name).length, icon: null, iconSize: 16, iconCornerRadius: 4, iconSpacing: 4 };
   if (obj2.isNullOrEmpty(uri)) {
-    uri = Image.resolveAssetSource(importDefault(7888)).uri;
+    uri = Image.resolveAssetSource(importDefault(7948)).uri;
   }
   obj[2] = uri;
   return obj;
@@ -144,7 +144,7 @@ export const getMatchedOptionsWithValue = (length2, activeCommand) => {
                 let obj1 = { type: null, option: null };
                 let tmp13 = require;
                 let tmp14 = dependencyMap;
-                obj1[0] = require(11317) /* addRule */.ChatInputParseResultDataType.COMMAND_OPTION;
+                obj1[0] = require(11383) /* addRule */.ChatInputParseResultDataType.COMMAND_OPTION;
                 obj1[1] = options[num];
                 obj[2] = obj1;
                 let addResult = set.add(num);
@@ -224,7 +224,7 @@ export const getMatchedOptions = (arg0, activeCommand) => {
                 obj = { type: null, option: null };
                 let tmp5 = require;
                 let tmp6 = dependencyMap;
-                obj[0] = require(11317) /* addRule */.ChatInputParseResultDataType.COMMAND_OPTION;
+                obj[0] = require(11383) /* addRule */.ChatInputParseResultDataType.COMMAND_OPTION;
                 obj[1] = options[num];
                 obj[2] = obj;
                 let arr = items.push(obj);
@@ -298,16 +298,16 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
 };
 export const getUsernameHighlightNodes = function getUsernameHighlightNodes(channel, arg1) {
   const items = [];
-  let obj = f87156(11318);
+  let obj = f87444(11384);
   const users = obj.getUsers(channel);
-  f87156 = (arg0) => arg0;
+  f87444 = (arg0) => arg0;
   let match = regex2.exec(arg1);
   if (null != match) {
     do {
       let str = match[1];
-      f87156 = str.trim();
+      f87444 = str.trim();
       let tmp2 = match;
-      if (null != users.find((text) => f87156(text.text) === f87156)) {
+      if (null != users.find((text) => f87444(text.text) === f87444)) {
         obj = { location: null, length: null };
         obj[0] = match.index;
         obj[1] = match[0].length;
@@ -316,14 +316,14 @@ export const getUsernameHighlightNodes = function getUsernameHighlightNodes(chan
       match = obj2.exec(arg1);
     } while (null != match);
   }
-  f87156 = (arg0) => arg0.split("#")[0];
+  f87444 = (arg0) => arg0.split("#")[0];
   let match1 = regex3.exec(arg1);
   if (null != match1) {
     do {
       let str2 = match1[1];
-      f87156 = str2.trim();
+      f87444 = str2.trim();
       let tmp5 = match1;
-      if (null != users.find((text) => f87156(text.text) === f87156)) {
+      if (null != users.find((text) => f87444(text.text) === f87444)) {
         obj = { location: null, length: null };
         obj[0] = match1.index;
         obj[1] = match1[0].length;
@@ -437,7 +437,7 @@ export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames
   return items1;
 };
 export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
-  const GameMentionsMobileExperiment = _require(5889).GameMentionsMobileExperiment;
+  const GameMentionsMobileExperiment = _require(5949).GameMentionsMobileExperiment;
   const config = GameMentionsMobileExperiment.getConfig({ location: "game mention input highlight" });
   if (config.enabled) {
     const IncludeGameMentionsInAutocomplete = _require(3974).IncludeGameMentionsInAutocomplete;
@@ -451,7 +451,7 @@ export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
           do {
             let tmp7 = _require;
             let tmp8 = dependencyMap;
-            let obj = _require(9849);
+            let obj = _require(9915);
             let tmp9 = index;
             if (obj.isWhitespaceSeparatingBoundary(arr, index)) {
               arr = items.push(index);
@@ -495,7 +495,7 @@ export const getChannelHighlightNodes = function getChannelHighlightNodes(channe
   let _loop4Result;
   const _require = arg1;
   let items = [];
-  const dependencyMap = _require(11318).getChannels(channel);
+  const dependencyMap = _require(11384).getChannels(channel);
   let c3 = 0;
   function _loop4() {
     let arr = lib;

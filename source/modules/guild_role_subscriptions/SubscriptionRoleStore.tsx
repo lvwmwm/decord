@@ -1,9 +1,9 @@
-// Module ID: 5176
-// Function ID: 5177
+// Module ID: 5177
+// Function ID: 5178
 // Name: computeRolesForGuild
 // Dependencies: [1415, 1965, 1971, 1964, 1891, 1903, 676, 3920, 589, 709, 2]
 
-// Module 5176 (computeRolesForGuild)
+// Module 5177 (computeRolesForGuild)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import { hasPermission } from "GuildRoleRecordTypeTag";
 import trackCommunicationDisabled from "trackCommunicationDisabled";

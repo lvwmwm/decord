@@ -1,10 +1,10 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10868
+// Function ID: 10869
 // Name: ChannelCallMicButton
-// Dependencies: [19, 4316, 21, 5900, 589, 10803, 10804, 10601, 1236, 10807, 10808, 712, 2]
+// Dependencies: [19, 4317, 21, 5960, 589, 10869, 10870, 10667, 1236, 10873, 10874, 712, 2]
 // Exports: ChannelCallMicButton
 
-// Module 10802 (ChannelCallMicButton)
+// Module 10868 (ChannelCallMicButton)
 import noop from "noop";
 import set from "set";
 import { jsx } from "jsxProd";
@@ -24,8 +24,8 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   let obj = mute(589);
   const items = [set];
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
-  const tmp3 = importDefault(5900)(channel);
-  const muteHandler = mute(10803).createMuteHandler(tmp3, stateFromStores);
+  const tmp3 = importDefault(5960)(channel);
+  const muteHandler = mute(10869).createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const memo = React.useMemo(() => outer1_6(mute(outer1_3[6]).VoicePanelRiveMicButton, { muted: mute }), items1);
@@ -33,7 +33,7 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   const intl = mute(1236).intl;
   obj[1] = intl.string(mute(1236).t.B3zz0G);
   obj[2] = muteHandler.onPress;
-  obj[3] = importDefault(mute ? 10807 : 10808);
+  obj[3] = importDefault(mute ? 10873 : 10874);
   if (!flag) {
     flag = mute;
   }
@@ -45,5 +45,5 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
     RED_400 = tmp(712).unsafe_rawColors.RED_400;
   }
   obj[7] = RED_400;
-  return jsx(importAll(10601).ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null });
+  return jsx(importAll(10667).ToggledActionButton, { appearsDisabled: stateFromStores, accessibilityLabel: null, onPress: null, source: null, isActive: null, isSmallSize: null, lottieComponent: null, tintColor: null });
 };

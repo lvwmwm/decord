@@ -1,10 +1,10 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9311
+// Function ID: 9312
 // Name: GameProfileView
-// Dependencies: [19, 17, 21, 4302, 712, 5668, 5688, 9247, 9250, 9251, 9252, 9262, 9263, 9266, 9269, 9278, 12109, 12111, 12128, 12129, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5728, 5748, 9312, 9315, 9316, 9317, 9327, 9328, 9331, 9334, 9343, 12176, 12178, 12195, 12196, 2]
 // Exports: default
 
-// Module 9246 (GameProfileView)
+// Module 9311 (GameProfileView)
 import GameProfileReportButton from "GameProfileReportButton";
 import { View } from "GameProfileWebsiteButton";
 import jsxProd from "jsxProd";
@@ -45,7 +45,7 @@ export default function GameProfileView(arg0) {
   const tmp = createCacheKey();
   importDefault = React.useRef(null);
   dependencyMap = React.useRef(null);
-  const analyticsLocations = importDefault(5668)(importDefault(5688).GAME_PROFILE).analyticsLocations;
+  const analyticsLocations = importDefault(5728)(importDefault(5748).GAME_PROFILE).analyticsLocations;
   const items = [onStoreLinksMeasured];
   React = React.useCallback(() => {
     const current = ref.current;
@@ -58,7 +58,7 @@ export default function GameProfileView(arg0) {
   }, items);
   let obj = { value: analyticsLocations, children: null };
   obj = { style: tmp.container, children: null };
-  const items1 = [callback(importDefault(9247), { game, scrollY, onHeightMeasured: onHeaderHeightMeasured }), ];
+  const items1 = [callback(importDefault(9312), { game, scrollY, onHeightMeasured: onHeaderHeightMeasured }), ];
   obj = {
     style: tmp.body,
     onLayout(nativeEvent) {
@@ -67,7 +67,7 @@ export default function GameProfileView(arg0) {
     },
     children: null
   };
-  const items2 = [callback(importDefault(9250), { game, viewId, source, trackAction }), , , , , , , , , , ];
+  const items2 = [callback(importDefault(9315), { game, viewId, source, trackAction }), , , , , , , , , , ];
   let tmp5Result = websiteButtons.length > 0;
   if (tmp5Result) {
     const obj1 = { onLayout: null, children: null };
@@ -80,25 +80,25 @@ export default function GameProfileView(arg0) {
     obj2[0] = game;
     obj2[1] = websiteButtons;
     obj2[2] = trackAction;
-    obj1[1] = tmp5(tmp2(9251), obj2);
+    obj1[1] = tmp5(tmp2(9316), obj2);
     tmp5Result = tmp5(tmp7, obj1);
   }
   items2[1] = tmp5Result;
-  items2[2] = callback(importDefault(9252), { game, trackAction });
-  items2[3] = callback(importDefault(9262), { game, viewId, source, trackAction });
-  items2[4] = callback(importDefault(9263), { game, analyticsLocations, trackAction });
-  items2[5] = callback(importDefault(9266), { closeModal, game, onInviteResolved: onGuildInviteResolved, trackAction });
-  items2[6] = callback(importDefault(9269), { gameId: game.id, invite, closeModal, trackAction, scrollOffsetRef });
-  items2[7] = callback(importDefault(9278), { game, closeModal, trackAction });
-  items2[8] = callback(importDefault(12109), { gameId: game.id, trackAction });
-  items2[9] = callback(importDefault(12111), { game, viewId, source, trackAction });
+  items2[2] = callback(importDefault(9317), { game, trackAction });
+  items2[3] = callback(importDefault(9327), { game, viewId, source, trackAction });
+  items2[4] = callback(importDefault(9328), { game, analyticsLocations, trackAction });
+  items2[5] = callback(importDefault(9331), { closeModal, game, onInviteResolved: onGuildInviteResolved, trackAction });
+  items2[6] = callback(importDefault(9334), { gameId: game.id, invite, closeModal, trackAction, scrollOffsetRef });
+  items2[7] = callback(importDefault(9343), { game, closeModal, trackAction });
+  items2[8] = callback(importDefault(12176), { gameId: game.id, trackAction });
+  items2[9] = callback(importDefault(12178), { game, viewId, source, trackAction });
   const obj5 = { style: tmp.buttonsContainer, children: null };
-  const items3 = [callback(importDefault(12128), { game, trackAction }), callback(importDefault(12129), { applicationId: game.id, trackAction })];
+  const items3 = [callback(importDefault(12195), { game, trackAction }), callback(importDefault(12196), { applicationId: game.id, trackAction })];
   obj5[1] = items3;
   items2[10] = closure_6(View, obj5);
   obj[2] = items2;
   items1[1] = closure_6(View, obj);
   obj[1] = items1;
   obj[1] = closure_6(View, obj);
-  return callback(onStoreLinksMeasured(5668).AnalyticsLocationProvider, obj);
+  return callback(onStoreLinksMeasured(5728).AnalyticsLocationProvider, obj);
 };

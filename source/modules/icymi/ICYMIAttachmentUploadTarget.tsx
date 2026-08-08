@@ -1,9 +1,9 @@
-// Module ID: 4893
-// Function ID: 4894
+// Module ID: 4895
+// Function ID: 4896
 // Name: getCreateAttachmentURL
-// Dependencies: [676, 4850, 2]
+// Dependencies: [676, 4852, 2]
 
-// Module 4893 (getCreateAttachmentURL)
+// Module 4895 (getCreateAttachmentURL)
 import ME from "ME";
 
 let c3;
@@ -27,7 +27,7 @@ prototype["getMaxAttachmentsCount"] = function getMaxAttachmentsCount() {
   return closure_4;
 };
 prototype["getMaxTotalAttachmentSize"] = function getMaxTotalAttachmentSize() {
-  return require(4850) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
+  return require(4852) /* items */.MAX_TOTAL_ATTACHMENT_SIZE;
 };
 Object.defineProperty(prototype, "shouldReactNativeCompressUploads", {
   get: function shouldReactNativeCompressUploads() {

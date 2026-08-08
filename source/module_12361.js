@@ -1,213 +1,127 @@
 // Module ID: 12361
 // Function ID: 12362
-// Dependencies: [12294]
+// Dependencies: [12362, 12363, 12364, 12366, 12367, 12369, 12365, 12368, 12371, 12421, 12370, 12422, 12423, 12424, 12425, 12426]
 
 // Module 12361
-const require = arg1;
-const dependencyMap = arg6;
-arg5.lt = undefined;
-arg5.lte = undefined;
-arg5.gt = undefined;
-arg5.gte = undefined;
-arg5.positive = undefined;
-arg5.negative = undefined;
-arg5.nonpositive = undefined;
-arg5.nonnegative = undefined;
-arg5.multipleOf = undefined;
-arg5.maxSize = undefined;
-arg5.minSize = undefined;
-arg5.size = undefined;
-arg5.maxLength = undefined;
-arg5.minLength = undefined;
-arg5.length = undefined;
-arg5.regex = undefined;
-arg5.lowercase = undefined;
-arg5.uppercase = undefined;
-arg5.includes = undefined;
-arg5.startsWith = undefined;
-arg5.endsWith = undefined;
-arg5.property = undefined;
-arg5.mime = undefined;
-arg5.overwrite = undefined;
-arg5.normalize = undefined;
-arg5.trim = undefined;
-arg5.toLowerCase = undefined;
-arg5.toUpperCase = undefined;
-arg5.slugify = undefined;
-let obj = {
-  enumerable: true,
-  get() {
-    return require(12294)._lt;
+const self = this;
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (self2) {
+  let __setModuleDefault = self;
+  if (self) {
+    __setModuleDefault = self.__setModuleDefault;
   }
-};
-Object.defineProperty(arg5, "lt", obj);
-obj = {
-  enumerable: true,
-  get() {
-    return require(12294)._lte;
+  if (__setModuleDefault) {
+    let fn = self;
+    if (self) {
+      fn = self.__exportStar;
+    }
+    if (!fn) {
+      fn = (obj, exports) => {
+        for (const key10007 in arg0) {
+          let tmp5 = key10007;
+          let tmp6 = "default" === key10007;
+          if (tmp6) {
+            if (tmp6) {
+              continue;
+            } else {
+              let tmp3 = self2;
+              let tmp4 = self2(arg1, arg0, key10007);
+              continue;
+            }
+            continue;
+          } else {
+            let _Object = Object;
+            let call = hasOwnProperty.call;
+            if (typeof call === "unknown") {
+              let hasOwnPropertyResult = hasOwnProperty(key10007);
+            } else {
+              hasOwnPropertyResult = call(arg1, key10007);
+            }
+            let tmp2 = hasOwnPropertyResult;
+          }
+        }
+      };
+    }
+    let fn2 = self;
+    if (self) {
+      fn2 = self.__importStar;
+    }
+    if (!fn2) {
+      fn2 = (__esModule) => {
+        if (__esModule) {
+          if (__esModule.__esModule) {
+            return __esModule;
+          }
+        }
+        const obj = {};
+        if (null != __esModule) {
+          for (const key10009 in arg0) {
+            let tmp8 = key10009;
+            let tmp9 = "default" !== key10009;
+            if (!tmp9) {
+              if (!tmp9) {
+                continue;
+              } else {
+                let tmp5 = self2;
+                let tmp6 = self2(obj, arg0, key10009);
+                continue;
+              }
+              continue;
+            } else {
+              let _Object = Object;
+              let call = hasOwnProperty.call;
+              if (typeof call === "unknown") {
+                let hasOwnPropertyResult = hasOwnProperty(key10009);
+              } else {
+                hasOwnPropertyResult = call(arg0, key10009);
+              }
+              let tmp4 = hasOwnPropertyResult;
+            }
+          }
+        }
+        __setModuleDefault(obj, __esModule);
+        return obj;
+      };
+    }
+    const _Object3 = Object;
+    exports.util = undefined;
+    exports.regexes = undefined;
+    exports.locales = undefined;
+    exports.toJSONSchema = undefined;
+    exports.JSONSchemaGenerator = undefined;
+    exports.JSONSchema = undefined;
+    fn(require("_isNativeReflectConstruct"), exports);
+    fn(require("module_12363"), exports);
+    fn(require("toDotPath"), exports);
+    fn(require("isValidBase64"), exports);
+    fn(require("module_12367"), exports);
+    fn(require("module_12369"), exports);
+    exports.util = fn2(require("mergeDefs"));
+    exports.regexes = fn2(require("mergeDefs"));
+    exports.locales = fn2(require("module_12371"));
+    fn(require("$output"), exports);
+    fn(require("Doc"), exports);
+    fn(require("module_12422"), exports);
+    fn(require("initializeContext"), exports);
+    const _Object4 = Object;
+    let obj = { enumerable: true, get: null };
+    obj[1] = function get() {
+      return require(12424) /* stringProcessor */.toJSONSchema;
+    };
+    Object.defineProperty(exports, "toJSONSchema", obj);
+    const _Object5 = Object;
+    obj = { enumerable: true, get: null };
+    obj[1] = function get() {
+      return require(12425) /* JSONSchemaGenerator */.JSONSchemaGenerator;
+    };
+    Object.defineProperty(exports, "JSONSchemaGenerator", obj);
+    exports.JSONSchema = fn2(require("module_12426"));
+  } else {
+    const _Object2 = Object;
   }
-};
-Object.defineProperty(arg5, "lte", obj);
-obj = {
-  enumerable: true,
-  get() {
-    return require(12294)._gt;
-  }
-};
-Object.defineProperty(arg5, "gt", obj);
-Object.defineProperty(arg5, "gte", {
-  enumerable: true,
-  get() {
-    return require(12294)._gte;
-  }
-});
-Object.defineProperty(arg5, "positive", {
-  enumerable: true,
-  get() {
-    return require(12294)._positive;
-  }
-});
-Object.defineProperty(arg5, "negative", {
-  enumerable: true,
-  get() {
-    return require(12294)._negative;
-  }
-});
-Object.defineProperty(arg5, "nonpositive", {
-  enumerable: true,
-  get() {
-    return require(12294)._nonpositive;
-  }
-});
-Object.defineProperty(arg5, "nonnegative", {
-  enumerable: true,
-  get() {
-    return require(12294)._nonnegative;
-  }
-});
-Object.defineProperty(arg5, "multipleOf", {
-  enumerable: true,
-  get() {
-    return require(12294)._multipleOf;
-  }
-});
-Object.defineProperty(arg5, "maxSize", {
-  enumerable: true,
-  get() {
-    return require(12294)._maxSize;
-  }
-});
-Object.defineProperty(arg5, "minSize", {
-  enumerable: true,
-  get() {
-    return require(12294)._minSize;
-  }
-});
-Object.defineProperty(arg5, "size", {
-  enumerable: true,
-  get() {
-    return require(12294)._size;
-  }
-});
-Object.defineProperty(arg5, "maxLength", {
-  enumerable: true,
-  get() {
-    return require(12294)._maxLength;
-  }
-});
-Object.defineProperty(arg5, "minLength", {
-  enumerable: true,
-  get() {
-    return require(12294)._minLength;
-  }
-});
-Object.defineProperty(arg5, "length", {
-  enumerable: true,
-  get() {
-    return require(12294)._length;
-  }
-});
-Object.defineProperty(arg5, "regex", {
-  enumerable: true,
-  get() {
-    return require(12294)._regex;
-  }
-});
-Object.defineProperty(arg5, "lowercase", {
-  enumerable: true,
-  get() {
-    return require(12294)._lowercase;
-  }
-});
-Object.defineProperty(arg5, "uppercase", {
-  enumerable: true,
-  get() {
-    return require(12294)._uppercase;
-  }
-});
-Object.defineProperty(arg5, "includes", {
-  enumerable: true,
-  get() {
-    return require(12294)._includes;
-  }
-});
-Object.defineProperty(arg5, "startsWith", {
-  enumerable: true,
-  get() {
-    return require(12294)._startsWith;
-  }
-});
-Object.defineProperty(arg5, "endsWith", {
-  enumerable: true,
-  get() {
-    return require(12294)._endsWith;
-  }
-});
-Object.defineProperty(arg5, "property", {
-  enumerable: true,
-  get() {
-    return require(12294)._property;
-  }
-});
-Object.defineProperty(arg5, "mime", {
-  enumerable: true,
-  get() {
-    return require(12294)._mime;
-  }
-});
-Object.defineProperty(arg5, "overwrite", {
-  enumerable: true,
-  get() {
-    return require(12294)._overwrite;
-  }
-});
-Object.defineProperty(arg5, "normalize", {
-  enumerable: true,
-  get() {
-    return require(12294)._normalize;
-  }
-});
-Object.defineProperty(arg5, "trim", {
-  enumerable: true,
-  get() {
-    return require(12294)._trim;
-  }
-});
-Object.defineProperty(arg5, "toLowerCase", {
-  enumerable: true,
-  get() {
-    return require(12294)._toLowerCase;
-  }
-});
-Object.defineProperty(arg5, "toUpperCase", {
-  enumerable: true,
-  get() {
-    return require(12294)._toUpperCase;
-  }
-});
-Object.defineProperty(arg5, "slugify", {
-  enumerable: true,
-  get() {
-    return require(12294)._slugify;
-  }
-});
+} else {
+  let _Object = Object;
+}

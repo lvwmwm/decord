@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15510
+// Function ID: 15511
 // Name: IconWithBadge
-// Dependencies: [19, 17, 7037, 21, 4302, 712, 589, 15426, 1297, 8233, 501, 5273, 5325, 4256, 2]
+// Dependencies: [19, 17, 7097, 21, 4303, 712, 589, 15501, 1297, 8293, 501, 5274, 5326, 4257, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 15435 (IconWithBadge)
+// Module 15510 (IconWithBadge)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
@@ -31,7 +31,7 @@ function IconWithBadge(includeNotificationsCount) {
   }
   let num2 = 0;
   if (flag) {
-    num2 = memo(15426)().value;
+    num2 = memo(15501)().value;
   }
   const sum = num + num2;
   _require = sum;
@@ -73,7 +73,7 @@ function IconWithBadge(includeNotificationsCount) {
   } else {
     items4 = [];
   }
-  const tmp5Result = memo(8233);
+  const tmp5Result = memo(8293);
   const items5 = [closure_6(tmp5Result, { cutouts: items4, children: closure_6(includeNotificationsCount.Icon, obj3) }), ];
   let tmp9Result = null;
   if (sum > 0) {
@@ -106,10 +106,10 @@ export const SettingsLeftIconWithBadge = function SettingsLeftIconWithBadge(navi
   const items = [navigation];
   const obj = { includeNotificationsCount: flag, Icon: null };
   if (React.useMemo(() => navigation.getState().index > 0, items)) {
-    obj[1] = tmp3(5273).ArrowLargeLeftIcon;
+    obj[1] = tmp3(5274).ArrowLargeLeftIcon;
     let tmp5 = obj;
   } else {
-    obj[1] = tmp3(5325).XSmallIcon;
+    obj[1] = tmp3(5326).XSmallIcon;
     tmp5 = obj;
   }
   return closure_6(IconWithBadge, tmp5);
@@ -119,12 +119,12 @@ export const LeftBackIconWithBadge = function LeftBackIconWithBadge(includeNotif
   if (flag === undefined) {
     flag = false;
   }
-  return callback(IconWithBadge, { includeNotificationsCount: flag, Icon: require(5273) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon });
+  return callback(IconWithBadge, { includeNotificationsCount: flag, Icon: require(5274) /* ArrowLargeLeftIcon */.ArrowLargeLeftIcon });
 };
 export const CloseIconWithBadgeOnSide = function CloseIconWithBadgeOnSide(count) {
   count = count.count;
   let obj = { style: createCacheKey().iconWithBadge, children: null };
-  const items = [callback(require(4256) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
+  const items = [callback(require(4257) /* XLargeIcon */.XLargeIcon, { size: "sm", color: "white" }), ];
   let tmp3Result = null;
   if (count > 0) {
     obj = { value: null };

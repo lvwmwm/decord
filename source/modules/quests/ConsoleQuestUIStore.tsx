@@ -1,9 +1,9 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7161
+// Function ID: 7162
 // Name: useConsoleQuestUIStore
 // Dependencies: [644, 2]
 
-// Module 7101 (useConsoleQuestUIStore)
+// Module 7161 (useConsoleQuestUIStore)
 import keys from "keys";
 
 let closure_0 = [];

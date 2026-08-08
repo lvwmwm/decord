@@ -1,10 +1,10 @@
-// Module ID: 5823
-// Function ID: 5824
+// Module ID: 5883
+// Function ID: 5884
 // Name: useGuildShopPreviewVisible
-// Dependencies: [3929, 676, 4117, 1358, 647, 5818, 2]
+// Dependencies: [3929, 676, 4123, 1358, 647, 5878, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 5823 (useGuildShopPreviewVisible)
+// Module 5883 (useGuildShopPreviewVisible)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 
@@ -16,8 +16,8 @@ let result = require("UNSAFE_isDismissibleContentDismissed").fileFinishedImporti
 
 export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(features) {
   const _require = features;
-  const result = _require(4117).useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
-  const obj = _require(4117);
+  const result = _require(4123).useIsDismissibleContentDismissed_UNSAFE(_require(1358).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
+  const obj = _require(4123);
   const tmp = _require;
   const items = [getUncachedChannelPermissions];
   let flag;
@@ -42,9 +42,9 @@ export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(fe
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants);
-  const guildEligibleForGuildProducts = tmp(5818).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = tmp(5878).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const tmpResult = tmp(5818);
+  const tmpResult = tmp(5878);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

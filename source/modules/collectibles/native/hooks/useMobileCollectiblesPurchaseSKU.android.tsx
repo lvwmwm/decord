@@ -1,10 +1,10 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12142
+// Function ID: 12143
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1903, 589, 9354, 10028, 2]
+// Dependencies: [1903, 589, 9419, 10094, 2]
 // Exports: default
 
-// Module 12075 (useMobileCollectiblesPurchaseSKU)
+// Module 12142 (useMobileCollectiblesPurchaseSKU)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -16,12 +16,12 @@ export default function useMobileCollectiblesPurchaseSKU(product) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const collectibleGoogleSkuId = require(9354) /* hasAtLeastOneGPlaySynced */.getCollectibleGoogleSkuId(product, stateFromStores);
+  const collectibleGoogleSkuId = require(9419) /* hasAtLeastOneGPlaySynced */.getCollectibleGoogleSkuId(product, stateFromStores);
   obj = {};
-  const obj2 = require(9354) /* hasAtLeastOneGPlaySynced */;
+  const obj2 = require(9419) /* hasAtLeastOneGPlaySynced */;
   const merged1 = Object.assign(merged);
   obj.skuId = product.skuId;
   obj.platformSkuId = collectibleGoogleSkuId;
   obj.isFreeForStaffSelfPurchase = true;
-  return importDefault(10028)(obj);
+  return importDefault(10094)(obj);
 };

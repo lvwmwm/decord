@@ -1,10 +1,10 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15673
+// Function ID: 15674
 // Name: useFirstMessageOrEmbedContent
 // Dependencies: [2]
 // Exports: default
 
-// Module 15598 (useFirstMessageOrEmbedContent)
+// Module 15673 (useFirstMessageOrEmbedContent)
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/useFirstMessageOrEmbedContent.tsx");
 
 export default function useFirstMessageOrEmbedContent(content) {

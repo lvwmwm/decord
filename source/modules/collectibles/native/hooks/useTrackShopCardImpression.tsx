@@ -1,10 +1,10 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 9346
+// Function ID: 9347
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 676, 9282, 5668, 1474, 9283, 3947, 6953, 698, 9284, 503, 6952, 2]
+// Dependencies: [19, 676, 9347, 5728, 1474, 9348, 3947, 7013, 698, 9349, 503, 7012, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 9281 (useTrackShopCardImpression)
+// Module 9346 (useTrackShopCardImpression)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 
@@ -15,18 +15,18 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const _require = product;
   const importDefault = selectedProduct;
   const dependencyMap = flag2;
-  const collectiblesAnalyticsContext = _require(9282).useCollectiblesAnalyticsContext();
-  const analyticsLocations = importDefault(5668)().analyticsLocations;
+  const collectiblesAnalyticsContext = _require(9347).useCollectiblesAnalyticsContext();
+  const analyticsLocations = importDefault(5728)().analyticsLocations;
   const size = importDefault(1474)();
   const width = size.width;
   const height = size.height;
-  let obj = _require(9282);
-  const currentUser = _require(9283).useCurrentUser();
-  let obj2 = _require(9283);
+  let obj = _require(9347);
+  const currentUser = _require(9348).useCurrentUser();
+  let obj2 = _require(9348);
   const canUseCollectiblesResult = importDefault(3947).canUseCollectibles(currentUser);
   let closure_7 = canUseCollectiblesResult;
   const obj3 = importDefault(3947);
-  const shopDiscountSource = _require(6953).getShopDiscountSource(currentUser);
+  const shopDiscountSource = _require(7013).getShopDiscountSource(currentUser);
   const ref = collectiblesAnalyticsContext.useRef(null);
   let closure_10 = collectiblesAnalyticsContext.useRef(null);
   let closure_11 = collectiblesAnalyticsContext.useRef({ windowWidth: width, windowHeight: height });
@@ -68,13 +68,13 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const callback = collectiblesAnalyticsContext.useCallback(() => {
     let priceForCollectiblesProduct = null;
     if (null != product) {
-      let obj = product(6953);
+      let obj = product(7013);
       priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(tmp, closure_7, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
     if (null != product) {
-      strikeThroughPriceAmountForCollectiblesProduct = product(6953).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_7, true);
-      const obj2 = product(6953);
+      strikeThroughPriceAmountForCollectiblesProduct = product(7013).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_7, true);
+      const obj2 = product(7013);
     }
     let sessionId;
     if (collectiblesAnalyticsContext != null) {
@@ -134,7 +134,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
   const callback1 = obj5.useCallback(() => {
-    let obj = product(9284);
+    let obj = product(9349);
     obj = { name: product(503).ImpressionNames.SHOP_CARD, type: product(503).ImpressionTypes.VIEW, properties: null };
     obj = { sku_id: selectedProduct.skuId, card_id: null, shop_session_id: null, position_in_section: null, product_sku_ids: null, location_stack: null, discount_source: null };
     let cardId;
@@ -152,10 +152,10 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
       tilePosition = tmp3.tilePosition;
     }
     obj[3] = tilePosition;
-    let tmpResult = tmp(6952);
+    let tmpResult = tmp(7012);
     obj[4] = tmpResult.getProductSkuIds(product);
     obj[5] = analyticsLocations;
-    tmpResult = tmp(6953);
+    tmpResult = tmp(7013);
     obj[6] = tmpResult.getAnalyticsShopDiscountSource(shopDiscountSource);
     obj[2] = obj;
     obj.trackImpression(obj, false, true);

@@ -1,10 +1,10 @@
-// Module ID: 11256
-// Function ID: 11257
+// Module ID: 11322
+// Function ID: 11323
 // Name: getConnectionPrereqTarget
-// Dependencies: [5, 6937, 6938, 2]
+// Dependencies: [5, 6997, 6998, 2]
 // Exports: resolveConnectionPrereqTarget
 
-// Module 11256 (getConnectionPrereqTarget)
+// Module 11322 (getConnectionPrereqTarget)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function getConnectionPrereqTarget(teen_identity) {
@@ -55,7 +55,7 @@ function _resolveConnectionPrereqTarget() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15707
+// Function ID: 15708
 // Name: CalendarPlusIcon
-// Dependencies: [19, 21, 712, 4004, 15633, 2]
+// Dependencies: [19, 21, 712, 4004, 15708, 2]
 // Exports: CalendarPlusIcon
 
-// Module 15632 (CalendarPlusIcon)
+// Module 15707 (CalendarPlusIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const CalendarPlusIcon = function CalendarPlusIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15633) /* registerAsset */;
+  obj[0] = require(15708) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,33 +1,33 @@
-// Module ID: 10412
-// Function ID: 10413
+// Module ID: 10478
+// Function ID: 10479
 // Name: getQuestOrbMultiplierEligibilityForUser
-// Dependencies: [1903, 589, 10413, 3947, 2]
+// Dependencies: [1903, 589, 10479, 3947, 2]
 // Exports: useQuestOrbMultiplierEligibility
 
-// Module 10412 (getQuestOrbMultiplierEligibilityForUser)
+// Module 10478 (getQuestOrbMultiplierEligibilityForUser)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
 function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub) {
   if (null == isFractionalPremiumWithNoStandardSub) {
-    let INELIGIBLE = require(10413) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE;
+    let INELIGIBLE = require(10479) /* items */.QuestOrbMultiplierEligibilityType.INELIGIBLE;
   } else {
     let QuestOrbMultiplierEligibilityType2 = dependencyMap;
     if (obj2.canUseMoreQuestOrbs(isFractionalPremiumWithNoStandardSub)) {
-      const questOrbMultiplierSource = require(10413) /* items */.getQuestOrbMultiplierSource(isFractionalPremiumWithNoStandardSub);
-      if (questOrbMultiplierSource === require(10413) /* items */.QuestOrbMultiplierSource.CREPE) {
-        QuestOrbMultiplierEligibilityType2 = tmp3(10413).QuestOrbMultiplierEligibilityType;
+      const questOrbMultiplierSource = require(10479) /* items */.getQuestOrbMultiplierSource(isFractionalPremiumWithNoStandardSub);
+      if (questOrbMultiplierSource === require(10479) /* items */.QuestOrbMultiplierSource.CREPE) {
+        QuestOrbMultiplierEligibilityType2 = tmp3(10479).QuestOrbMultiplierEligibilityType;
         let NITRO = QuestOrbMultiplierEligibilityType2.CREPE;
       } else {
-        NITRO = tmp3(10413).QuestOrbMultiplierEligibilityType.NITRO;
+        NITRO = tmp3(10479).QuestOrbMultiplierEligibilityType.NITRO;
       }
-      const obj = require(10413) /* items */;
+      const obj = require(10479) /* items */;
     } else {
       let result;
       if (isFractionalPremiumWithNoStandardSub != null) {
         result = isFractionalPremiumWithNoStandardSub.isFractionalPremiumWithNoStandardSub();
       }
-      const QuestOrbMultiplierEligibilityType = require(10413) /* items */.QuestOrbMultiplierEligibilityType;
+      const QuestOrbMultiplierEligibilityType = require(10479) /* items */.QuestOrbMultiplierEligibilityType;
       INELIGIBLE = result ? QuestOrbMultiplierEligibilityType.INELIGIBLE : QuestOrbMultiplierEligibilityType.UPSELL;
     }
     obj2 = importDefault(3947);

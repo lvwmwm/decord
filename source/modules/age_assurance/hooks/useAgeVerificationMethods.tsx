@@ -1,10 +1,10 @@
-// Module ID: 7899
-// Function ID: 7900
+// Module ID: 7959
+// Function ID: 7960
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 7770, 7738, 589, 4517, 7739, 7772, 7001, 7006, 7900, 7743, 1236, 2]
+// Dependencies: [5, 32, 19, 7830, 7798, 589, 4519, 7799, 7832, 7061, 7066, 7960, 7803, 1236, 2]
 // Exports: default
 
-// Module 7899 (useAgeVerificationMethods)
+// Module 7959 (useAgeVerificationMethods)
 import initialize from "initialize";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -106,7 +106,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "T", done: null };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -139,7 +139,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                       return obj;
                     } else {
                       c1 = 3;
-                      return { value: "T", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp5) {
                     c1 = tmp;

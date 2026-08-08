@@ -1,10 +1,10 @@
-// Module ID: 8284
-// Function ID: 8285
+// Module ID: 8344
+// Function ID: 8345
 // Name: computePermissions
-// Dependencies: [19, 1963, 1376, 1415, 1218, 1372, 1971, 1891, 3929, 1903, 676, 8285, 589, 506, 1935, 2]
+// Dependencies: [19, 1963, 1376, 1415, 1218, 1372, 1971, 1891, 3929, 1903, 676, 8345, 589, 506, 1935, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 8284 (computePermissions)
+// Module 8344 (computePermissions)
 import noop from "noop";
 import initialize from "initialize";
 import { ChannelRecordBase } from "createChannelRecord";
@@ -74,7 +74,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
     }
   }
   if (null == obj) {
-    let viewNsfwCommandsOrDefault = require(8285) /* resolveNsfwTogglesWithDefaults */.getViewNsfwCommandsOrDefault();
+    let viewNsfwCommandsOrDefault = require(8345) /* resolveNsfwTogglesWithDefaults */.getViewNsfwCommandsOrDefault();
     id = id.getId();
     currentUser = currentUser.getCurrentUser();
     let flag;
@@ -98,7 +98,7 @@ export const buildPermissionContext = function buildPermissionContext(channel, i
       items = [];
     }
     let isThreadResult = channel instanceof tmp;
-    const obj2 = require(8285) /* resolveNsfwTogglesWithDefaults */;
+    const obj2 = require(8345) /* resolveNsfwTogglesWithDefaults */;
     if (isThreadResult) {
       isThreadResult = channel.isThread();
     }

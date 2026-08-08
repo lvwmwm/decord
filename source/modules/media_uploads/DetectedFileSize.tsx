@@ -1,10 +1,10 @@
-// Module ID: 4894
-// Function ID: 4895
+// Module ID: 4896
+// Function ID: 4897
 // Name: _getDetectedFileSize
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 4894 (_getDetectedFileSize)
+// Module 4896 (_getDetectedFileSize)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 function _getDetectedFileSize() {
@@ -26,7 +26,7 @@ function _getDetectedFileSize() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,8 +1,8 @@
-// Module ID: 15608
-// Function ID: 15609
+// Module ID: 15683
+// Function ID: 15684
 // Dependencies: [5, 676, 530, 2]
 
-// Module 15608
+// Module 15683
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -49,7 +49,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ export default {
             return obj;
           } else {
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           v0 = tmp;

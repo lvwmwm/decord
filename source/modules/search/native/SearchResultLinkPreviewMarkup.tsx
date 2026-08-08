@@ -1,9 +1,9 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15750
+// Function ID: 15751
 // Name: NativeSearchResultLinkPreviewParser
-// Dependencies: [4733, 4734, 15676, 8034, 2]
+// Dependencies: [4735, 4736, 15751, 8094, 2]
 
-// Module 15675 (NativeSearchResultLinkPreviewParser)
+// Module 15750 (NativeSearchResultLinkPreviewParser)
 import importDefaultResult from "combineMarkupRules";
 import createSearchResultLinkPreviewReactRules from "createSearchResultLinkPreviewReactRules";
 import importAllResult from "reactParserFor";

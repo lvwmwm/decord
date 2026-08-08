@@ -1,8 +1,8 @@
-// Module ID: 11351
-// Function ID: 11352
-// Dependencies: [32, 19, 4294, 21, 4302, 712, 589, 4162, 4303, 5375, 2]
+// Module ID: 11417
+// Function ID: 11418
+// Dependencies: [32, 19, 4295, 21, 4303, 712, 589, 4036, 4304, 5376, 2]
 
-// Module 11351
+// Module 11417
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -24,12 +24,12 @@ const memoResult = importAllResult.memo(() => {
   const timingConfig = callback(importAllResult.useState(() => {
     let obj = { timingConfig: null };
     obj = { duration: 1000 + 500 * Math.random(), easing: null };
-    const Easing = stateFromStores(4162).Easing;
-    obj[1] = Easing.inOut(stateFromStores(4162).Easing.sin);
+    const Easing = stateFromStores(4036).Easing;
+    obj[1] = Easing.inOut(stateFromStores(4036).Easing.sin);
     obj[0] = obj;
     return obj;
   }), 1)[0].timingConfig;
-  let obj1 = stateFromStores(4162);
+  let obj1 = stateFromStores(4036);
   const fn = function _() {
     const obj = { opacity: null };
     if (stateFromStores) {
@@ -47,15 +47,15 @@ const memoResult = importAllResult.memo(() => {
     }
     return tmp6;
   };
-  obj = { reducedMotion: stateFromStores, ROW_OPACITY_END: c8, withDelay: stateFromStores(4162).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4162).withRepeat, withSequence: stateFromStores(4162).withSequence, withTiming: stateFromStores(4303).withTiming, timingConfig };
+  obj = { reducedMotion: stateFromStores, ROW_OPACITY_END: c8, withDelay: stateFromStores(4036).withDelay, INITIAL_DELAY_MS: 1000, withRepeat: stateFromStores(4036).withRepeat, withSequence: stateFromStores(4036).withSequence, withTiming: stateFromStores(4304).withTiming, timingConfig };
   fn.__closure = obj;
   fn.__workletHash = 9488742940898;
   fn.__initData = closure_9;
   const animatedStyle = obj1.useAnimatedStyle(fn);
   obj = { style: animatedStyle, pointerEvents: "none", children: null };
   obj1 = { variant: "secondary", style: callback2().postPlaceholder };
-  obj[2] = jsx(stateFromStores(5375).Card, { variant: "secondary", style: callback2().postPlaceholder });
-  return jsx(timingConfig(4162).View, { style: animatedStyle, pointerEvents: "none", children: null });
+  obj[2] = jsx(stateFromStores(5376).Card, { variant: "secondary", style: callback2().postPlaceholder });
+  return jsx(timingConfig(4036).View, { style: animatedStyle, pointerEvents: "none", children: null });
 });
 const result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");
 

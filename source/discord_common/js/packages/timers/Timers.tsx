@@ -1,10 +1,10 @@
-// Module ID: 4187
-// Function ID: 4188
+// Module ID: 4188
+// Function ID: 4189
 // Name: start
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 4187 (start)
+// Module 4188 (start)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 class Timeout {
@@ -223,7 +223,7 @@ prototype5["_flush"] = function _flush() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

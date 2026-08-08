@@ -1,9 +1,9 @@
-// Module ID: 4340
-// Function ID: 4341
+// Module ID: 4342
+// Function ID: 4343
 // Name: createFromServer
-// Dependencies: [1912, 4341, 1911, 676, 3947, 4345, 2]
+// Dependencies: [1912, 4343, 1911, 676, 3947, 4347, 2]
 
-// Module 4340 (createFromServer)
+// Module 4342 (createFromServer)
 import "toJS";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -167,7 +167,7 @@ prototype["isValid"] = function isValid(isPremiumWithFractionalPremiumOnly, get)
   return false;
 };
 prototype["isFulfilled"] = function isFulfilled() {
-  return this.fulfillmentStatus === require(4345) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
+  return this.fulfillmentStatus === require(4347) /* set */.EntitlementTenantFulfillmentStatus.FULFILLED;
 };
 const result = require("createdAt").fileFinishedImporting("records/EntitlementRecord.tsx");
 

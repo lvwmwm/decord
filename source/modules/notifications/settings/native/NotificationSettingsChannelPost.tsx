@@ -1,10 +1,10 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9845
+// Function ID: 9846
 // Name: NotificationSettingsChannelPost
-// Dependencies: [19, 17, 4497, 21, 589, 5707, 1236, 8388, 5261, 2]
+// Dependencies: [19, 17, 4499, 21, 589, 5767, 1236, 8448, 5262, 2]
 // Exports: NotificationSettingsChannelPost
 
-// Module 9779 (NotificationSettingsChannelPost)
+// Module 9845 (NotificationSettingsChannelPost)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -39,7 +39,7 @@ export const NotificationSettingsChannelPost = function NotificationSettingsChan
   obj1[3] = function onPress() {
     const result = outer1_1(outer1_2[8]).setForumThreadsCreated(channel.channel, !newForumThreadsCreated);
   };
-  obj[2] = jsx(_require(8388).TableCheckboxRow, { label: null, checked: null, disabled: null, onPress: null });
-  obj[1] = jsx(_require(5707).TableRowGroup, { title: null, hasIcons: false, children: null });
+  obj[2] = jsx(_require(8448).TableCheckboxRow, { label: null, checked: null, disabled: null, onPress: null });
+  obj[1] = jsx(_require(5767).TableRowGroup, { title: null, hasIcons: false, children: null });
   return <newForumThreadsCreated title={null} hasIcons={false}>{null}</newForumThreadsCreated>;
 };

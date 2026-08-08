@@ -1,9 +1,9 @@
-// Module ID: 7250
-// Function ID: 7251
+// Module ID: 7310
+// Function ID: 7311
 // Name: handleUserUpdate
-// Dependencies: [32, 1372, 1971, 5836, 4388, 4994, 1903, 676, 12, 11, 3934, 4140, 1351, 589, 709, 2]
+// Dependencies: [32, 1372, 1971, 5896, 4390, 4996, 1903, 676, 12, 11, 3934, 4146, 1351, 589, 709, 2]
 
-// Module 7250 (handleUserUpdate)
+// Module 7310 (handleUserUpdate)
 import _slicedToArray from "_slicedToArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -306,8 +306,8 @@ prototype["calculateNewState"] = function calculateNewState(userId, channel) {
     nick = member.nick;
   }
   if (nick == null) {
-    nick = importDefault(4140).getName(user);
-    const obj3 = importDefault(4140);
+    nick = importDefault(4146).getName(user);
+    const obj3 = importDefault(4146);
   }
   const items = [str, , ];
   let formatted;

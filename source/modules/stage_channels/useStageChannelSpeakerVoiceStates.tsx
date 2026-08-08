@@ -1,10 +1,10 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15355
+// Function ID: 15356
 // Name: transformParticipantToSortedVoiceState
-// Dependencies: [32, 1375, 1372, 4374, 5135, 589, 1894, 11, 1351, 5141, 5148, 2]
+// Dependencies: [32, 1375, 1372, 4376, 5136, 589, 1894, 11, 1351, 5142, 5149, 2]
 // Exports: default
 
-// Module 15282 (transformParticipantToSortedVoiceState)
+// Module 15355 (transformParticipantToSortedVoiceState)
 import _slicedToArray from "_slicedToArray";
 import initializeFromUserSettings from "initializeFromUserSettings";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -44,6 +44,6 @@ export default function useStageChannelSpeakerVoiceStates(arg0) {
       found1.reduce((arg0, id) => arg0 + store.getParticipantsVersion(id.id), 0)
     ];
     return items;
-  }, items1, _require(5148).isVersionEqual), 1)[0];
+  }, items1, _require(5149).isVersionEqual), 1)[0];
 };
 export { transformParticipantToSortedVoiceState };

@@ -1,10 +1,10 @@
-// Module ID: 4077
-// Function ID: 4078
+// Module ID: 4083
+// Function ID: 4084
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: ManaContextProvider, useManaContext
 
-// Module 4077 (context)
+// Module 4083 (context)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 

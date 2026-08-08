@@ -1,10 +1,10 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 13188
+// Function ID: 13189
 // Name: trackAckMessages
-// Dependencies: [1372, 7037, 1891, 4497, 676, 4496, 2]
+// Dependencies: [1372, 7097, 1891, 4499, 676, 4498, 2]
 // Exports: default
 
-// Module 13118 (trackAckMessages)
+// Module 13188 (trackAckMessages)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateGuildUnreadSentinel from "updateGuildUnreadSentinel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -29,5 +29,5 @@ export default function trackAckMessages(channel_id) {
     const hasUnreadResult = updateGuildUnreadSentinel.hasUnread(id.id);
     return "" + id.id + "," + hasUnreadResult + "," + mentionCount + "," + updateUserGuildSettingsInternal.isMuted(id.id) + "," + updateUserGuildSettingsInternal.resolveGuildUnreadSetting(id);
   });
-  require(4496) /* collectGuildAnalyticsMetadata */.trackWithMetadata(AnalyticEvents.ACK_MESSAGES, obj);
+  require(4498) /* collectGuildAnalyticsMetadata */.trackWithMetadata(AnalyticEvents.ACK_MESSAGES, obj);
 };

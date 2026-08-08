@@ -1,10 +1,10 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8740
+// Function ID: 8741
 // Name: _updateEmoji
-// Dependencies: [5, 5175, 4992, 4639, 676, 685, 1355, 1337, 709, 530, 8213, 4147, 1236, 4202, 3942, 1351, 5182, 12, 4640, 2]
+// Dependencies: [5, 5176, 4994, 4641, 676, 685, 1355, 1337, 709, 530, 8273, 4153, 1236, 4203, 3942, 1351, 5183, 12, 4642, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 8680 (_updateEmoji)
+// Module 8740 (_updateEmoji)
 import closure_3 from "MAX_FAVORITES";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -38,7 +38,7 @@ function _updateEmoji() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ function _updateEmoji() {
               ({ guildId: c0, emojiId: c1, name: c2, roles: c3 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -91,7 +91,7 @@ function _updateEmoji() {
           } else if (2 === tmp8) {
             c4 = 0;
             c4 = c3;
-            const tmp18 = new callback2(4202)(c4);
+            const tmp18 = new callback2(4203)(c4);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -174,13 +174,13 @@ export const uploadEmoji = function uploadEmoji(guildId) {
   obj.dispatch({ type: "EMOJI_UPLOAD_START", guildId });
   const HTTP = guildId(530).HTTP;
   obj = { url: Endpoints.GUILD_EMOJIS(guildId), body: { image, name, roles }, headers: null, context: null, oldFormErrors: true, rejectWithError: null };
-  obj[2] = importDefault(8213).buildHeadersForMd5(originalMd5);
+  obj[2] = importDefault(8273).buildHeadersForMd5(originalMd5);
   let page;
   if (analyticsLocation != null) {
     page = analyticsLocation.page;
   }
   obj[3] = { client_event_source: page };
-  const obj3 = importDefault(8213);
+  const obj3 = importDefault(8273);
   const tmp3 = guildId;
   obj[5] = guildId(530).rejectWithMigratedError();
   const tmp3Result = guildId(530);
@@ -213,7 +213,7 @@ export const deleteEmoji = function deleteEmoji(c0, id) {
   const tmp3 = require;
   const tmp3Result = require(530) /* sendRequest */;
   return HTTP.del(obj).then(() => {
-    const AccessibilityAnnouncer = callback(4147).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = callback(4153).AccessibilityAnnouncer;
     const intl = callback(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t.L3UUha));
   });

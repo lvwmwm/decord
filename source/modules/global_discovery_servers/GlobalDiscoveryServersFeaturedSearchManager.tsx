@@ -1,9 +1,9 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 16905
+// Function ID: 16906
 // Name: prototype
-// Dependencies: [5, 12897, 8963, 676, 5260, 16829, 709, 530, 1464, 16830, 5896, 2]
+// Dependencies: [5, 12967, 9023, 676, 5261, 16906, 709, 530, 1464, 16907, 5956, 2]
 
-// Module 16828 (prototype)
+// Module 16905 (prototype)
 import _navigateToGuild from "_navigateToGuild";
 import map from "map";
 import { DISCOVERY_ALL_CATEGORIES_ID as closure_6 } from "DEFAULT_DISCOVERY_CATEGORY_ID";
@@ -53,7 +53,7 @@ let prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -189,7 +189,7 @@ let prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -218,7 +218,7 @@ let prototype = function GlobalDiscoveryServersFeaturedSearchManager() {
               lastFetchTimestamp = undefined;
               lastFetchTimestamp = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

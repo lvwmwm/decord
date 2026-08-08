@@ -1,10 +1,10 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12600
+// Function ID: 12601
 // Name: createGroupDMInvite
-// Dependencies: [1372, 3938, 1903, 7136, 7993, 10926, 1236, 12238, 1419, 4492, 2]
+// Dependencies: [1372, 3938, 1903, 7196, 8053, 10992, 1236, 12305, 1419, 4494, 2]
 // Exports: createGroupDMInvite
 
-// Module 12530 (createGroupDMInvite)
+// Module 12600 (createGroupDMInvite)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -20,9 +20,9 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   let channel;
   let colors;
   let recipients_;
-  ({ colors, baseColors } = importDefault(7993)(closure_2));
-  const tmp2 = importDefault(7993)(closure_2);
-  ({ channel, recipients_ } = importDefault(10926)(invite));
+  ({ colors, baseColors } = importDefault(8053)(closure_2));
+  const tmp2 = importDefault(8053)(closure_2);
+  ({ channel, recipients_ } = importDefault(10992)(invite));
   let id;
   if (channel != null) {
     id = channel.id;
@@ -59,7 +59,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   }
   let channelIconSource = null;
   if (null != channel) {
-    let tmp8Result = tmp8(12238);
+    let tmp8Result = tmp8(12305);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;
@@ -71,8 +71,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName = null;
     if (null != channel) {
-      channelName = tmp8(4492).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-      const tmp8Result1 = tmp8(4492);
+      channelName = tmp8(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+      const tmp8Result1 = tmp8(4494);
     }
   }
   if (!channelName) {
@@ -131,8 +131,8 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, cl
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      channelName1 = tmp8(4492).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
-      const tmp8Result2 = tmp8(4492);
+      channelName1 = tmp8(4494).computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
+      const tmp8Result2 = tmp8(4494);
     }
   }
   obj.channelName = channelName1;

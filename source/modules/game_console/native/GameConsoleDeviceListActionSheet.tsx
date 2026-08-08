@@ -1,10 +1,10 @@
-// Module ID: 10820
-// Function ID: 10821
+// Module ID: 10886
+// Function ID: 10887
 // Name: TransferFooter
-// Dependencies: [5, 32, 19, 17, 4316, 676, 21, 4302, 712, 5327, 4712, 1236, 10821, 4298, 10822, 589, 10812, 38, 10819, 4270, 1231, 1297, 10359, 5396, 5395, 5398, 2]
+// Dependencies: [5, 32, 19, 17, 4317, 676, 21, 4303, 712, 5328, 4714, 1236, 10887, 4299, 10888, 589, 10878, 38, 10885, 4271, 1231, 1297, 10425, 5397, 5396, 5399, 2]
 // Exports: default
 
-// Module 10820 (TransferFooter)
+// Module 10886 (TransferFooter)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
@@ -35,32 +35,32 @@ function TransferFooter(arg0) {
   obj[2] = onPress;
   const intl = tmp3(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.FYi3ry);
-  obj[2] = closure_12(require(4712) /* Button */.Button, obj);
-  return closure_12(require(5327) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
+  obj[2] = closure_12(require(4714) /* Button */.Button, obj);
+  return closure_12(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);
 }
 function DeviceOption(children) {
   const tmp = createCacheKey();
   let obj = { style: tmp.deviceOption, children: null };
-  obj = { style: tmp.deviceIcon, source: importDefault(10821) };
+  obj = { style: tmp.deviceIcon, source: importDefault(10887) };
   const items = [callback(closure_8, obj), ];
   obj = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: children.name };
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   obj[1] = items;
   return callback2(closure_7, obj);
 }
 function EmptyState() {
   const tmp = createCacheKey();
   let obj = { style: tmp.emptyContainer, children: null };
-  obj = { source: importDefault(10822), style: tmp.emptyArt };
+  obj = { source: importDefault(10888), style: tmp.emptyArt };
   const items = [callback(closure_8, obj), , ];
   obj = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.OkJf1e);
-  items[1] = callback(require(4298) /* Text */.Text, obj);
+  items[1] = callback(require(4299) /* Text */.Text, obj);
   const obj1 = { style: tmp.emptyBody, variant: "text-md/normal", color: "text-default", children: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[3] = intl2.string(require(1236) /* getSystemLocale */.t["of/l5Z"]);
-  items[2] = callback(require(4298) /* Text */.Text, obj1);
+  items[2] = callback(require(4299) /* Text */.Text, obj1);
   obj[1] = items;
   return callback2(closure_7, obj);
 }
@@ -108,7 +108,7 @@ export default function GameConsoleListActionSheet(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -129,7 +129,7 @@ export default function GameConsoleListActionSheet(arg0) {
               v0 = 1;
               dependencyMap = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_0(10819).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
+              obj1[0] = outer1_0(10885).transferToPlaystationWithAlert(outer1_0, dependencyMap[outer1_4], v0);
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -141,12 +141,12 @@ export default function GameConsoleListActionSheet(arg0) {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(4270);
+            obj = v0(4271);
             obj.hideActionSheet();
             const ComponentDispatch = outer1_0(1231).ComponentDispatch;
             ComponentDispatch.dispatch(outer1_11.TOGGLE_CALL_CONTROL_DRAWER);
             dependencyMap = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           dependencyMap = tmp;

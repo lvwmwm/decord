@@ -1,9 +1,9 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14220
+// Function ID: 14221
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 8022, 3974, 709, 10380, 1236, 2]
+// Dependencies: [5, 8082, 3974, 709, 10446, 1236, 2]
 
-// Module 14150 (_updateClipsAllowVoiceRecording)
+// Module 14220 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale";
 import createToggle from "createToggle";
 
@@ -26,7 +26,7 @@ function _updateClipsAllowVoiceRecording() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ function _updateClipsAllowVoiceRecording() {
             obj = callback2(709);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

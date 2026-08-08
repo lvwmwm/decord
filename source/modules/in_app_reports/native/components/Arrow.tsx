@@ -1,10 +1,10 @@
-// Module ID: 7970
-// Function ID: 7971
+// Module ID: 8030
+// Function ID: 8031
 // Name: Arrow
-// Dependencies: [19, 21, 4302, 712, 1297, 7971, 2]
+// Dependencies: [19, 21, 4303, 712, 1297, 8031, 2]
 // Exports: default
 
-// Module 7970 (Arrow)
+// Module 8030 (Arrow)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -18,7 +18,7 @@ const result = require("createCacheKey").fileFinishedImporting("modules/in_app_r
 
 export default function Arrow() {
   const obj = { source: null, size: null, style: null };
-  obj[0] = importDefault(7971);
+  obj[0] = importDefault(8031);
   obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   obj[2] = createCacheKey().tintColor;
   return jsx(require(1297) /* Button */.Icon, { source: null, size: null, style: null });

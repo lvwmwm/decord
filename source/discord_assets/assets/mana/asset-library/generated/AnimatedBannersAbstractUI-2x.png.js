@@ -1,9 +1,9 @@
-// Module ID: 6017
-// Function ID: 6018
+// Module ID: 6077
+// Function ID: 6078
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6017 (metadata)
+// Module 6077 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnimatedBannersAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/d94e1831cc7a15b71a160129300afdb5b45c065b5f33cce2ae69ef599c825a78.png";

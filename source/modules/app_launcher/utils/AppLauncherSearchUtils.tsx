@@ -1,10 +1,10 @@
-// Module ID: 11387
-// Function ID: 11388
+// Module ID: 11453
+// Function ID: 11454
 // Name: useApplicationsInContext
-// Dependencies: [32, 19, 8281, 8279, 8280, 11388, 4735, 4736, 8284, 1935, 8278, 9473, 11359, 11390, 12, 9484, 589, 9476, 11389, 11391, 2]
+// Dependencies: [32, 19, 8341, 8339, 8340, 11454, 4737, 4738, 8344, 1935, 8338, 9538, 11425, 11456, 12, 9549, 589, 9541, 11455, 11457, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11387 (useApplicationsInContext)
+// Module 11453 (useApplicationsInContext)
 import _slicedToArray from "_slicedToArray";
 import _getEmbedApplication from "_getEmbedApplication";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
@@ -34,7 +34,7 @@ function useApplicationsInContext(allowFetch) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let obj = onlyWithCommands(8284);
+  let obj = onlyWithCommands(8344);
   const items = [onlyWithCommands(1935).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = obj.usePermissionContext(channel, items).hasBaseAccessPermissions;
   const tmp2 = callback2(context, hasBaseAccessPermissions, flag);
@@ -118,7 +118,7 @@ function useApplicationsInContext(allowFetch) {
     includeBuiltIn = allowFetch.includeBuiltIn;
   }
   if (includeBuiltIn) {
-    items2.push(onlyWithCommands(8278).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(8338).FAKE_BUILT_IN_APP);
   }
   obj = { apps: items2, loading: null };
   let fetching;
@@ -141,9 +141,9 @@ function sortApplicationFreceny(id, id2) {
   return store.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
 }
 function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP) {
-  const sectionName = require(8278) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP);
-  const obj = require(8278) /* getShelfBadgeTypeIfActive */;
-  return callback(sectionName, require(8278) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP));
+  const sectionName = require(8338) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP);
+  const obj = require(8338) /* getShelfBadgeTypeIfActive */;
+  return callback(sectionName, require(8338) /* getShelfBadgeTypeIfActive */.getSectionName(FAKE_BUILT_IN_APP));
 }
 function sortCommandsAlpha(displayName, displayName2) {
   return callback(displayName.displayName, displayName2.displayName);
@@ -229,7 +229,7 @@ export const filterApplicationAllowed = function filterApplicationAllowed(type) 
     channel = type.channel;
   }
   const items = [_require(1935).ApplicationCommandType.CHAT, _require(1935).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-  let closure_1 = _require(8284).buildPermissionContext(channel, items);
+  let closure_1 = _require(8344).buildPermissionContext(channel, items);
   return (id) => {
     let closure_1;
     let closure_2;
@@ -403,7 +403,7 @@ export const filterCommandAllowed = function filterCommandAllowed(type) {
     channel = type.channel;
   }
   const items = [_require(1935).ApplicationCommandType.CHAT];
-  let closure_1 = _require(8284).buildPermissionContext(channel, items);
+  let closure_1 = _require(8344).buildPermissionContext(channel, items);
   let closure_2 = {};
   return (applicationId) => {
     let applicationAllowedForChannel;
@@ -906,7 +906,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  const tmp8Result = flag4(11359)({ guildId: guild_id });
+  const tmp8Result = flag4(11425)({ guildId: guild_id });
   callback3 = tmp8Result;
   let items1 = [flag, commands, commandLimit, context, tmp];
   memo1 = obj2.useMemo(() => {
@@ -1361,7 +1361,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     substr = query.substring(1);
     tmp = substr;
   }
-  const tmp5 = fetches.entrypoint === substr(9484).AppLauncherEntrypoint.VOICE;
+  const tmp5 = fetches.entrypoint === substr(9549).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {

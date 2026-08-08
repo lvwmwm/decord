@@ -1,10 +1,10 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15209
+// Function ID: 15210
 // Name: _getEmojiSource
 // Dependencies: [5, 17, 3946, 1416, 2]
 // Exports: getEmojiSource
 
-// Module 15139 (_getEmojiSource)
+// Module 15209 (_getEmojiSource)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -28,7 +28,7 @@ function _getEmojiSource() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ function _getEmojiSource() {
               let ImageManager;
               c6 = 1;
               c7 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 9841
-// Function ID: 9842
+// Module ID: 9907
+// Function ID: 9908
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4294, 1302, 4638, 1971, 3929, 1960, 7086, 4637, 1903, 676, 1379, 1369, 1338, 1235, 505, 21, 4302, 712, 5668, 589, 4147, 4167, 8293, 4492, 8343, 7082, 5833, 4140, 5368, 4162, 7176, 4310, 6857, 12, 8346, 7956, 9842, 9843, 4641, 1236, 9844, 9846, 500, 9847, 9848, 9851, 1358, 9852, 1988, 9853, 9854, 7907, 1297, 8295, 1607, 1478, 8409, 8723, 9857, 4298, 9858, 9924, 9934, 9935, 7670, 9936, 9938, 5948, 10121, 4813, 9942, 7166, 4270, 10123, 7595, 4712, 4798, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 1302, 4640, 1971, 3929, 1960, 7146, 4639, 1903, 676, 1379, 1369, 1338, 1235, 505, 21, 4303, 712, 5728, 589, 4153, 4168, 8353, 4494, 8403, 7142, 5893, 4146, 5369, 4036, 7236, 4311, 6917, 12, 8406, 8016, 9908, 9909, 4643, 1236, 9910, 9912, 500, 9913, 9914, 9917, 1358, 9918, 1988, 9919, 9920, 7967, 1297, 8355, 1607, 1478, 8469, 8783, 9923, 4299, 9924, 9990, 10000, 10001, 7730, 10002, 10004, 6008, 10187, 4815, 10008, 7226, 4271, 10189, 7655, 4714, 4800, 2]
 // Exports: default
 
-// Module 9841 (Tags)
+// Module 9907 (Tags)
 import handleThemeChange from "handleThemeChange";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
 import closure_5 from "jsxProd";
@@ -53,7 +53,7 @@ function Tags(tags) {
     obj = { size: "sm", style: null };
     obj[1] = tmp.tagIcon;
     let items = [
-      callback(require(7670) /* TagIcon */.TagIcon, obj),
+      callback(require(7730) /* TagIcon */.TagIcon, obj),
       tags.map((id) => {
           let tmp2 = 0 !== arg1;
           if (tmp2) {
@@ -104,7 +104,7 @@ function ActionBar(channel) {
     }
     return canResult;
   });
-  const tmp6 = importDefault(4167)();
+  const tmp6 = importDefault(4168)();
   c7 = tmp6;
   let isMediaChannelResult = channel.isMediaChannel();
   const tmp8 = tmp6 === channel(1607).KeyboardTypes.MEDIA;
@@ -126,12 +126,12 @@ function ActionBar(channel) {
     tmp10 = length > 0;
   }
   obj = { onLayout, style: items2, children: null };
-  items2 = [tmp.actionsContainer, { marginBottom: importDefault(5368)({ includeKeyboardHeight: true }).insets.bottom }];
+  items2 = [tmp.actionsContainer, { marginBottom: importDefault(5369)({ includeKeyboardHeight: true }).insets.bottom }];
   if (isMediaChannelResult) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(9938), obj);
+    isMediaChannelResult = callback(tmp5(10004), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -144,7 +144,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2[1] = items5;
-      obj2[2] = tmp2(7670).TagIcon;
+      obj2[2] = tmp2(7730).TagIcon;
       obj2[3] = function onPress() {
         isEdit.dismiss();
         let obj = outer1_1(outer1_2[76]);
@@ -170,18 +170,18 @@ function ActionBar(channel) {
         };
         obj.openLazy(channel(outer1_2[52])(outer1_2[77], outer1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      tmp10 = callback(tmp2(5948).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(6008).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(9846).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(9912).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
       const intl3 = tmp2(1236).intl;
       obj3[0] = intl3.string(tmp2(1236).t.iZ7Mz9);
       obj3[1] = tmp.actionButton;
-      obj3[2] = tmp2(7595).ReactionIcon;
+      obj3[2] = tmp2(7655).ReactionIcon;
       obj3[3] = onShowExpressionPicker;
-      tmp18 = callback(tmp2(5948).HeaderActionButton, obj3);
+      tmp18 = callback(tmp2(6008).HeaderActionButton, obj3);
     }
     items4[2] = tmp18;
     const obj4 = { style: null, children: null };
@@ -203,13 +203,13 @@ function ActionBar(channel) {
     obj5[2] = submitting;
     const obj6 = { size: "sm", color: null };
     obj6[1] = tmp5(712).colors.WHITE;
-    obj5[3] = callback(tmp2(4798).ChatIcon, obj6);
+    obj5[3] = callback(tmp2(4800).ChatIcon, obj6);
     obj5[4] = function onPress() {
       if (canPost) {
         callback({});
       }
     };
-    obj4[1] = callback(tmp2(4712).Button, obj5);
+    obj4[1] = callback(tmp2(4714).Button, obj5);
     items4[3] = callback(tmp13, obj4);
     obj1[1] = items4;
     items3[1] = tmp12(tmp13, obj1);
@@ -223,9 +223,9 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(10121).KeyboardIcon;
+      let ImageIcon = tmp2(10187).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(4813).ImageIcon;
+      ImageIcon = tmp2(4815).ImageIcon;
     }
     obj7[2] = ImageIcon;
     obj7[3] = function onPress() {
@@ -238,7 +238,7 @@ function ActionBar(channel) {
       }
       const result1 = channel(outer1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    callback(tmp2(5948).HeaderActionButton, obj7);
+    callback(tmp2(6008).HeaderActionButton, obj7);
     const tmp15 = callback;
   }
 }
@@ -554,7 +554,7 @@ export default function ForumComposer(parentChannel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -719,7 +719,7 @@ export default function ForumComposer(parentChannel) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -742,7 +742,7 @@ export default function ForumComposer(parentChannel) {
                 c1 = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp8) {

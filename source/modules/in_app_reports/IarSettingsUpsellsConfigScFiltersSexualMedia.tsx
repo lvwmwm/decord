@@ -1,9 +1,9 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 8034
+// Function ID: 8035
 // Name: items
-// Dependencies: [5855, 1306, 1236, 7961, 2]
+// Dependencies: [5915, 1306, 1236, 8021, 2]
 
-// Module 7974 (items)
+// Module 8034 (items)
 let obj = {
   getTitle() {
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -27,8 +27,8 @@ obj[4] = function onApply() {
   let explicitContentFriendDm;
   let explicitContentGuilds;
   let explicitContentNonFriendDm;
-  let obj = require(5855) /* resolveExplicitContentSettingWithDefaults */;
-  const explicitContentSettingOrDefault = require(5855) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
+  let obj = require(5915) /* resolveExplicitContentSettingWithDefaults */;
+  const explicitContentSettingOrDefault = require(5915) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
   obj = {};
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
   if (explicitContentGuilds === require(1306) /* create */.ExplicitContentRedaction.SHOW) {
@@ -46,9 +46,9 @@ obj[5] = function predicate() {
   let explicitContentFriendDm;
   let explicitContentGuilds;
   let explicitContentNonFriendDm;
-  const explicitContentSettingOrDefault = require(5855) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
+  const explicitContentSettingOrDefault = require(5915) /* resolveExplicitContentSettingWithDefaults */.getExplicitContentSettingOrDefault();
   ({ explicitContentGuilds, explicitContentFriendDm, explicitContentNonFriendDm } = explicitContentSettingOrDefault);
-  const obj = require(5855) /* resolveExplicitContentSettingWithDefaults */;
+  const obj = require(5915) /* resolveExplicitContentSettingWithDefaults */;
   return explicitContentGuilds === require(1306) /* create */.ExplicitContentRedaction.SHOW || explicitContentFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW || explicitContentNonFriendDm === require(1306) /* create */.ExplicitContentRedaction.SHOW;
 };
 const result = require("getSystemLocale").fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigScFiltersSexualMedia.tsx");

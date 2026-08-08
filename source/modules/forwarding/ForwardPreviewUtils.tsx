@@ -1,10 +1,10 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10257
+// Function ID: 10258
 // Name: useForwardPreviewContent
-// Dependencies: [3929, 589, 4634, 2]
+// Dependencies: [3929, 589, 4636, 2]
 // Exports: useForwardPreviewContent
 
-// Module 10191 (useForwardPreviewContent)
+// Module 10257 (useForwardPreviewContent)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 
 const require = arg1;

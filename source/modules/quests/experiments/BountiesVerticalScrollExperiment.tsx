@@ -1,10 +1,10 @@
-// Module ID: 10915
-// Function ID: 10916
+// Module ID: 10981
+// Function ID: 10982
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: shouldUseScrollIndicatorOverlay, useIsBountiesVerticalScrollExperimentActive, useIsBountiesVerticalScrollExperimentEnabled, useIsScrollIndicatorOverlayVariant
 
-// Module 10915 (apexExperiment)
+// Module 10981 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, verticalScrollEnabled: false, scrollAffordanceVariant: "none", autoScrollLeadMs: 3000, autoScrollEndCardMs: 3000, peekFraction: 0, ctaTimerMilliSeconds: 0 }, 3: { enabled: true, verticalScrollEnabled: true, scrollAffordanceVariant: "none", autoScrollLeadMs: 3000, autoScrollEndCardMs: 3000, peekFraction: 0, ctaTimerMilliSeconds: 0 }, 4: { enabled: true, verticalScrollEnabled: true, scrollAffordanceVariant: "indicator", autoScrollLeadMs: 3000, autoScrollEndCardMs: 3000, peekFraction: 0, ctaTimerMilliSeconds: 0 }, 5: { enabled: true, verticalScrollEnabled: true, scrollAffordanceVariant: "auto", autoScrollLeadMs: 3000, autoScrollEndCardMs: 3000, peekFraction: 0, ctaTimerMilliSeconds: 0 } };

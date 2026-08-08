@@ -1,10 +1,10 @@
-// Module ID: 14277
-// Function ID: 14278
+// Module ID: 14347
+// Function ID: 14348
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 676, 21, 4302, 712, 3974, 9639, 1236, 10469, 11157, 8702, 5967, 4298, 10415, 5375, 1974, 4712, 2]
+// Dependencies: [17, 676, 21, 4303, 712, 3974, 9704, 1236, 10535, 11223, 8762, 6027, 4299, 10481, 5376, 1974, 4714, 2]
 // Exports: default
 
-// Module 14277 (QuestDisclosureModalInner)
+// Module 14347 (QuestDisclosureModalInner)
 import { View } from "set";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";
@@ -45,36 +45,36 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   const setting = DropsOptedOut.useSetting();
   let obj = { icon: null, text: null };
   if (setting) {
-    obj[0] = tmp5(tmp2(9639).ServerIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(9704).ServerIcon, { size: "xs" });
     const intl4 = tmp2(1236).intl;
     obj[1] = intl4.string(tmp2(1236).t["2bL0wT"]);
     let items = [obj];
     let tmp6 = tmp5;
     items1 = items;
   } else {
-    obj[0] = tmp5(tmp2(10469).GlobeEarthIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(10535).GlobeEarthIcon, { size: "xs" });
     const intl = tmp2(1236).intl;
     obj[1] = intl.string(tmp2(1236).t.xQSdPv);
     items1 = [obj, , ];
     obj = { icon: null, text: null };
-    obj[0] = tmp5(tmp2(11157).UserIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(11223).UserIcon, { size: "xs" });
     const intl2 = tmp2(1236).intl;
     obj[1] = intl2.string(tmp2(1236).t.mYt7hQ);
     items1[1] = obj;
     obj = { icon: null, text: null };
-    obj[0] = tmp5(tmp2(8702).GameControllerIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(8762).GameControllerIcon, { size: "xs" });
     const intl3 = tmp2(1236).intl;
     obj[1] = intl3.string(tmp2(1236).t.XAsWxQ);
     items1[2] = obj;
     tmp6 = tmp5;
   }
   const obj1 = { style: tmp.container, children: null };
-  const items2 = [tmp6(View, { style: tmp.illustration, children: tmp6(_require(5967).WumpusCouchSpotIllustration, {}) }), , , , ];
+  const items2 = [tmp6(View, { style: tmp.illustration, children: tmp6(_require(6027).WumpusCouchSpotIllustration, {}) }), , , , ];
   const obj3 = { variant: "text-md/normal", color: "mobile-text-heading-primary", children: null };
-  const obj2 = { style: tmp.illustration, children: tmp6(_require(5967).WumpusCouchSpotIllustration, {}) };
+  const obj2 = { style: tmp.illustration, children: tmp6(_require(6027).WumpusCouchSpotIllustration, {}) };
   const tmp7 = closure_6;
-  obj3[2] = _require(10415).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
-  items2[1] = tmp6(_require(4298).Text, obj3);
+  obj3[2] = _require(10481).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
+  items2[1] = tmp6(_require(4299).Text, obj3);
   if (isTargetedDisclosure) {
     const obj4 = { radius: 16, style: null, children: null };
     obj4[1] = tmp.targetList;
@@ -92,22 +92,22 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
       obj[1] = items;
       return outer1_6(outer1_3, obj, arg1);
     });
-    isTargetedDisclosure = tmp6(tmp2(5375).Card, obj4);
+    isTargetedDisclosure = tmp6(tmp2(5376).Card, obj4);
   }
   items2[2] = isTargetedDisclosure;
   const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl5 = tmp2(1236).intl;
   const obj6 = { privacySettingsUrl: null };
-  const tmp2Result = _require(10415);
+  const tmp2Result = _require(10481);
   obj6[0] = items1(1974).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
   obj5[2] = intl5.format(_require(1236).t.tzq9Wa, obj6);
-  items2[3] = tmp6(_require(4298).Text, obj5);
+  items2[3] = tmp6(_require(4299).Text, obj5);
   const obj7 = { style: tmp.closeButton, children: null };
   const obj8 = { variant: "primary", grow: true, size: "lg", text: null, onPress: null };
   const intl6 = tmp2(1236).intl;
   obj8[3] = intl6.string(_require(1236).t.cpT0Cq);
   obj8[4] = onClose;
-  obj7[1] = tmp6(_require(4712).Button, obj8);
+  obj7[1] = tmp6(_require(4714).Button, obj8);
   items2[4] = tmp6(View, obj7);
   obj1[1] = items2;
   return tmp7(View, obj1);

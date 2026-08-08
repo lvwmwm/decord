@@ -1,10 +1,10 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 10226
+// Function ID: 10227
 // Name: _markUnread
-// Dependencies: [5, 3931, 1372, 4519, 4314, 1903, 676, 3, 11, 7164, 530, 2]
+// Dependencies: [5, 3931, 1372, 4521, 4315, 1903, 676, 3, 11, 7224, 530, 2]
 // Exports: default
 
-// Module 10160 (_markUnread)
+// Module 10226 (_markUnread)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -33,7 +33,7 @@ function _markUnread() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ function _markUnread() {
                 const toArrayResult = messages.toArray();
               }
               channel = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

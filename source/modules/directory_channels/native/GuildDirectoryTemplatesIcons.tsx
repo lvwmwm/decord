@@ -1,9 +1,9 @@
-// Module ID: 11630
-// Function ID: 11631
+// Module ID: 11696
+// Function ID: 11697
 // Name: GUILD_TEMPLATE_ICONS
-// Dependencies: [11631, 11632, 11633, 11634, 11635, 11636, 11637, 2]
+// Dependencies: [11697, 11698, 11699, 11700, 11701, 11702, 11703, 2]
 
-// Module 11630 (GUILD_TEMPLATE_ICONS)
+// Module 11696 (GUILD_TEMPLATE_ICONS)
 const obj = { CREATE: require("registerAsset"), HUB_SCHOOL_CLUB: require("registerAsset"), HUB_STUDY: require("registerAsset"), HUB_CLASS: require("registerAsset"), HUB_SOCIAL: require("registerAsset"), HUB_MAJOR: require("registerAsset"), HUB_DORM: require("registerAsset") };
 const result = require("registerAsset").fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");
 

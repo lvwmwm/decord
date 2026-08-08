@@ -1,10 +1,10 @@
-// Module ID: 5358
-// Function ID: 5359
+// Module ID: 5359
+// Function ID: 5360
 // Name: _fetchMemberCountsFromBackend
-// Dependencies: [5, 5357, 676, 709, 530, 1386, 5231, 2]
+// Dependencies: [5, 5358, 676, 709, 530, 1386, 5232, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 5358 (_fetchMemberCountsFromBackend)
+// Module 5359 (_fetchMemberCountsFromBackend)
 import priv from "priv";
 import getRoleMemberCount from "getRoleMemberCount";
 import { Endpoints } from "ME";
@@ -77,7 +77,7 @@ function _fetchMemberCounts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -120,7 +120,7 @@ function _fetchMemberCounts() {
             return obj;
           }
           c1 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;

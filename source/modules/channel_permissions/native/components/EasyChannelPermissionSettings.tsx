@@ -1,10 +1,10 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 15887
+// Function ID: 15888
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [32, 5, 19, 17, 15813, 1372, 1971, 1964, 1891, 3929, 3938, 1903, 7721, 676, 21, 4302, 712, 1480, 589, 8937, 8938, 8939, 1236, 4492, 4640, 8945, 3934, 4710, 5707, 5708, 1297, 5373, 9462, 11005, 5275, 4496, 8896, 9081, 15814, 15816, 2]
+// Dependencies: [32, 5, 19, 17, 15888, 1372, 1971, 1964, 1891, 3929, 3938, 1903, 7781, 676, 21, 4303, 712, 1480, 589, 8997, 8998, 8999, 1236, 4494, 4642, 9005, 3934, 4712, 5767, 5768, 1297, 5374, 9527, 11071, 5276, 4498, 8956, 9141, 15889, 15891, 2]
 // Exports: default
 
-// Module 15812 (ChannelPermissionSettingsBasicView)
+// Module 15887 (ChannelPermissionSettingsBasicView)
 import CirclePlusIcon from "CirclePlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getRoleRowData from "getRoleRowData";
@@ -64,7 +64,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,13 +83,13 @@ function ChannelPermissionSettingsBasicView(channel) {
               let closure_0 = tmp2;
               closure_0 = undefined;
               const accessPermissions = outer1_0.accessPermissions;
-              const result = v0(8937).isPrivateGuildChannel(outer1_0);
-              const obj9 = v0(8937);
+              const result = v0(8997).isPrivateGuildChannel(outer1_0);
+              const obj9 = v0(8997);
               const tmp22 = v0;
-              closure_0 = v0(8937).flipEveryonePermission(outer1_0, accessPermissions, result);
+              closure_0 = v0(8997).flipEveryonePermission(outer1_0, accessPermissions, result);
               const currentUser = outer1_16.getCurrentUser();
               let tmp7 = outer1_9;
-              const obj10 = v0(8937);
+              const obj10 = v0(8997);
               if (!outer1_9) {
                 tmp7 = null == currentUser;
               }
@@ -100,7 +100,7 @@ function ChannelPermissionSettingsBasicView(channel) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj1 = { value: null, done: false };
-                obj1[0] = tmp22(8937).grantUserChannelAccess(outer1_0, accessPermissions);
+                obj1[0] = tmp22(8997).grantUserChannelAccess(outer1_0, accessPermissions);
                 return obj1;
               }
               canResult = outer1_14.can(outer1_19.ADMINISTRATOR, outer1_4);
@@ -125,13 +125,13 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
           const items = [closure_0];
           v0 = 2;
           dependencyMap = 1;
           const obj3 = { value: null, done: false };
-          obj3[0] = outer1_0(8938).savePermissionUpdates(outer1_0.id, items);
+          obj3[0] = outer1_0(8998).savePermissionUpdates(outer1_0.id, items);
           return obj3;
         } catch (tmp16) {
           dependencyMap = tmp;
@@ -162,7 +162,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ function ChannelPermissionSettingsBasicView(channel) {
               v0 = undefined;
               if (null != outer1_0.guild_id) {
                 if (!outer1_1) {
-                  let obj1 = outer1_0(8939);
+                  let obj1 = outer1_0(8999);
                   v0 = 1;
                   dependencyMap = 1;
                   obj1 = { value: null, done: false };
@@ -203,7 +203,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             return obj;
           } else if (!arg1) {
             dependencyMap = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
           const intl = outer1_0(1236).intl;
           const string = intl.string;
@@ -214,7 +214,7 @@ function ChannelPermissionSettingsBasicView(channel) {
             stringResult = string(t["47gQYL"]);
           }
           outer1_0 = stringResult;
-          let obj3 = outer1_0(4492);
+          let obj3 = outer1_0(4494);
           outer1_1 = obj3.computeChannelName(outer1_0, outer1_16, outer1_15);
           let intl2 = outer1_0(1236).intl;
           let onCancel = intl2.format;
@@ -230,7 +230,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           }
           v0 = onCancelResult;
           v0(!c1);
-          show = outer1_1(4640).show;
+          show = outer1_1(4642).show;
           const obj4 = { title: null, body: null, cancelText: null, confirmText: null, onConfirm: null, hideActionSheet: false, onCancel: null };
           obj4[0] = c0;
           obj4[1] = v0;
@@ -246,7 +246,7 @@ function ChannelPermissionSettingsBasicView(channel) {
           obj4[6] = onCancel;
           show(obj4);
           dependencyMap = 3;
-          const tmp42 = outer1_1(4640);
+          const tmp42 = outer1_1(4642);
         } catch (tmp54) {
           dependencyMap = tmp;
           throw tmp54;
@@ -281,7 +281,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "sa" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {
@@ -409,7 +409,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   return null;
 }
 function onBack() {
-  importDefault(4640).close();
+  importDefault(4642).close();
   return false;
 }
 ({ View: error, ScrollView: metroImportAll } = get_ActivityIndicator);

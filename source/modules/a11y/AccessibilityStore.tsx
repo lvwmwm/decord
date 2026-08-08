@@ -1,9 +1,9 @@
-// Module ID: 4294
-// Function ID: 4295
+// Module ID: 4295
+// Function ID: 4296
 // Name: maybeApplyNoTextColorForLightCustomTheme
-// Dependencies: [109, 1303, 1302, 1340, 676, 4295, 4296, 3974, 589, 595, 4147, 709, 2]
+// Dependencies: [109, 1303, 1302, 1340, 676, 4296, 4297, 3974, 589, 595, 4153, 709, 2]
 
-// Module 4294 (maybeApplyNoTextColorForLightCustomTheme)
+// Module 4295 (maybeApplyNoTextColorForLightCustomTheme)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
@@ -447,7 +447,7 @@ let items = [
   (saturation) => {
     const obj = {};
     const merged = Object.assign(saturation);
-    obj.alwaysShowLinkDecorations = saturation.saturation <= require(4147) /* AccessibilityAnnouncer */.LOW_SATURATION_THRESHOLD;
+    obj.alwaysShowLinkDecorations = saturation.saturation <= require(4153) /* AccessibilityAnnouncer */.LOW_SATURATION_THRESHOLD;
     return obj;
   },
   (arg0) => {
@@ -514,7 +514,7 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
           obj = {};
           const merged = Object.assign(obj);
           obj.zoom = zoom.zoom;
-          importDefault(4296).setZoomFactor(obj.zoom);
+          importDefault(4297).setZoomFactor(obj.zoom);
         }
       }
     }
@@ -533,8 +533,8 @@ const accessibilityStore = new AccessibilityStore(require("dispatcher"), {
     }
     if (obj.zoom !== Accessibility.ZOOM_DEFAULT) {
       obj.zoom = tmp.ZOOM_DEFAULT;
-      importDefault(4296).setZoomFactor(obj.zoom);
-      const obj2 = importDefault(4296);
+      importDefault(4297).setZoomFactor(obj.zoom);
+      const obj2 = importDefault(4297);
     }
   },
   ACCESSIBILITY_KEYBOARD_MODE_ENABLE: function handleEnableKeyboardMode() {

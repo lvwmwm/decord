@@ -1,9 +1,9 @@
-// Module ID: 5337
-// Function ID: 5338
+// Module ID: 5338
+// Function ID: 5339
 // Name: set
 // Dependencies: [2]
 
-// Module 5337 (set)
+// Module 5338 (set)
 import set from "set";
 
 const obj = { VISIBLE: null };

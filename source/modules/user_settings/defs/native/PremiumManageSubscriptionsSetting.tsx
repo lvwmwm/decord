@@ -1,9 +1,9 @@
-// Module ID: 14161
-// Function ID: 14162
+// Module ID: 14231
+// Function ID: 14232
 // Name: route
-// Dependencies: [19, 676, 6821, 7385, 3947, 12618, 10380, 1236, 14162, 14160, 2]
+// Dependencies: [19, 676, 6881, 7445, 3947, 12688, 10446, 1236, 14232, 14230, 2]
 
-// Module 14161 (route)
+// Module 14231 (route)
 import noop from "noop";
 import createToggle from "createToggle";
 
@@ -39,7 +39,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14160) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14230) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

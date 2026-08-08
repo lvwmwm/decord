@@ -1,9 +1,9 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 15013
+// Function ID: 15014
 // Name: TestView
-// Dependencies: [32, 19, 17, 1903, 21, 4302, 712, 647, 4710, 4298, 5375, 7730, 4712, 4270, 14944, 1988, 5368, 9506, 2]
+// Dependencies: [32, 19, 17, 1903, 21, 4303, 712, 647, 4712, 4299, 5376, 7790, 4714, 4271, 15014, 1988, 5369, 9571, 2]
 
-// Module 14943 (TestView)
+// Module 15013 (TestView)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { ScrollView } from "NativePaymentContextProvider";
@@ -89,13 +89,13 @@ obj[2] = { marginBottom: 16 };
 obj[3] = { marginBottom: 8 };
 let closure_9 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function PaymentFlowTest() {
-  const insets = importDefault(5368)({ includeKeyboardHeight: true }).insets;
+  const insets = importDefault(5369)({ includeKeyboardHeight: true }).insets;
   let obj = { skuIDs: [], activeSubscription: null, children: null };
   obj = { style: callback2().wrap, contentContainerStyle: obj, children: null };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
   obj[2] = callback(TestView, {});
   obj[2] = callback(ScrollView, obj);
-  return callback(require(9506) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
+  return callback(require(9571) /* NativePaymentContextProvider */.NativePaymentContextProvider, obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/user_settings/billing/native/PaymentFlowTest.android.tsx");
 

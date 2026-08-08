@@ -1,10 +1,10 @@
-// Module ID: 4513
-// Function ID: 4514
+// Module ID: 4515
+// Function ID: 4516
 // Name: useIsStageVoicePanelEnabled
 // Dependencies: [1452, 2]
 // Exports: isStageVoicePanelEnabled, useIsStageVoicePanelEnabled
 
-// Module 4513 (useIsStageVoicePanelEnabled)
+// Module 4515 (useIsStageVoicePanelEnabled)
 import ApexExperiment from "ApexExperiment";
 
 let closure_0 = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-03-stage-voice-panel", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

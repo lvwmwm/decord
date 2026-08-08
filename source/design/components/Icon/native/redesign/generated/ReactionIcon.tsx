@@ -1,10 +1,10 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7655
+// Function ID: 7656
 // Name: ReactionIcon
-// Dependencies: [19, 21, 712, 4004, 7596, 2]
+// Dependencies: [19, 21, 712, 4004, 7656, 2]
 // Exports: ReactionIcon
 
-// Module 7595 (ReactionIcon)
+// Module 7655 (ReactionIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ReactionIcon = function ReactionIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(7596) /* registerAsset */;
+  obj[0] = require(7656) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

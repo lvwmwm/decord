@@ -1,10 +1,10 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12746
+// Function ID: 12747
 // Name: CheckIcon
-// Dependencies: [32, 19, 17, 676, 1905, 21, 4302, 712, 5157, 4238, 4147, 1297, 12677, 12678, 4298, 1236, 4723, 7590, 3947, 12679, 12680, 5267, 12681, 12682, 12683, 12684, 12685, 2]
+// Dependencies: [32, 19, 17, 676, 1905, 21, 4303, 712, 5158, 4239, 4153, 1297, 12747, 12748, 4299, 1236, 4725, 7650, 3947, 12749, 12750, 5268, 12751, 12752, 12753, 12754, 12755, 2]
 // Exports: default
 
-// Module 12676 (CheckIcon)
+// Module 12746 (CheckIcon)
 import _slicedToArray from "_slicedToArray";
 import PremiumTier0LogoSmall from "PremiumTier0LogoSmall";
 import { View } from "usePremiumPlanPrice";
@@ -22,26 +22,26 @@ let metroImportAll;
 let unpackModuleId;
 const require = arg1;
 function CheckIcon() {
-  let obj = require(4147) /* AccessibilityAnnouncer */;
+  let obj = require(4153) /* AccessibilityAnnouncer */;
   const tmp = importDefault;
-  const tmp3 = importDefault(4238)();
+  const tmp3 = importDefault(4239)();
   const unsafe_rawColors = importDefault(712).unsafe_rawColors;
-  const isThemeDarkResult = obj.isThemeDark(importDefault(4238)());
+  const isThemeDarkResult = obj.isThemeDark(importDefault(4239)());
   obj = { source: null, color: null, size: null };
-  obj[0] = tmp(12677);
-  obj[1] = obj.isThemeDark(importDefault(4238)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
+  obj[0] = tmp(12747);
+  obj[1] = obj.isThemeDark(importDefault(4239)()) ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
   obj[2] = require(1297) /* Button */.IconSizes.SMALL;
   return callback2(require(1297) /* Button */.Icon, obj);
 }
 function CloseIcon() {
   const obj = { source: null, style: null, size: null };
-  obj[0] = importDefault(12678);
+  obj[0] = importDefault(12748);
   obj[1] = callback3().icon;
   obj[2] = require(1297) /* Button */.IconSizes.SMALL;
   return callback2(require(1297) /* Button */.Icon, obj);
 }
 function CellText(children) {
-  return callback2(require(4298) /* Text */.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.text });
+  return callback2(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.text });
 }
 function Row(withTopBorderRadius) {
   let column1;
@@ -200,7 +200,7 @@ function Row(withTopBorderRadius) {
         ({ START: obj9[1], END: obj9[2] } = HorizontalGradient);
         obj6[3] = ["rgba(133, 71, 198, 0.10)", "rgba(184, 69, 193, 0.10)", "rgba(171, 93, 138, 0.10)"];
         obj6[4] = column2;
-        obj4[3] = tmp5(importDefault(4723), obj6);
+        obj4[3] = tmp5(importDefault(4725), obj6);
       }
       items2[2] = tmp5(tmp4, obj4);
       obj[2] = items2;

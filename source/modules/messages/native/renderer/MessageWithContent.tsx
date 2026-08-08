@@ -1,10 +1,10 @@
-// Module ID: 7986
-// Function ID: 7987
+// Module ID: 8046
+// Function ID: 8047
 // Name: generateMessageRowData
-// Dependencies: [7987, 7982, 7988, 1236, 8151, 2]
+// Dependencies: [8047, 8042, 8048, 1236, 8211, 2]
 // Exports: generateMessageRowData
 
-// Module 7986 (generateMessageRowData)
+// Module 8046 (generateMessageRowData)
 import handleMessageSendFailedAutomod from "handleMessageSendFailedAutomod";
 import { RowType } from "Changeset";
 
@@ -39,7 +39,7 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     tmp3 = alwaysShowAddReaction;
   }
   let overrideBackgroundHighlight = canShowImages.overrideBackgroundHighlight;
-  obj = { type: RowType.MESSAGE, message: importDefault(7988)(obj), canAddNewReactions, addNewReactionAccessibilityLabel: null, reactionsTheme: null, highlightLabel: null, renderContentOnly: null, separatorBefore: null, changeType: null, truncation: null, alwaysShowAddReaction: null, backgroundHighlight: null, swipeActions: null, replyAccessibilityLabel: null, forwardAccessibilityLabel: null, threadAccessibilityLabel: null, forcedTheme: null };
+  obj = { type: RowType.MESSAGE, message: importDefault(8048)(obj), canAddNewReactions, addNewReactionAccessibilityLabel: null, reactionsTheme: null, highlightLabel: null, renderContentOnly: null, separatorBefore: null, changeType: null, truncation: null, alwaysShowAddReaction: null, backgroundHighlight: null, swipeActions: null, replyAccessibilityLabel: null, forwardAccessibilityLabel: null, threadAccessibilityLabel: null, forcedTheme: null };
   obj = { options, message, roleStyle, isFirst, isEditing, canShowImages: undefined === canShowImages || canShowImages, isSystemDM: tmp, isInlineReplyPreview: false, pushFeedbackType, renderContentOnly, showContentInventoryEntryFallbackEmbed: canShowImages.showContentInventoryEntryFallbackEmbed };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.lfIHs4);
@@ -52,7 +52,7 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   obj[9] = truncation;
   obj[10] = tmp3;
   if (overrideBackgroundHighlight == null) {
-    let tmp4Result = tmp4(8151);
+    let tmp4Result = tmp4(8211);
     obj = { message: null, theme: null, isEditing: null, isAutomodBlockedMessage: null };
     obj[0] = message;
     obj[1] = theme;
@@ -61,7 +61,7 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
     overrideBackgroundHighlight = tmp4Result.createBackgroundHighlight(obj);
   }
   obj[11] = overrideBackgroundHighlight;
-  tmp4Result = tmp4(8151);
+  tmp4Result = tmp4(8211);
   let canReply = options.enableSwipeActions;
   if (canReply) {
     canReply = canShowImages.canReply;

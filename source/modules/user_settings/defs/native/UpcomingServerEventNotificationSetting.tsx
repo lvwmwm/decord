@@ -1,9 +1,9 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 14695
+// Function ID: 14696
 // Name: toggle
-// Dependencies: [8022, 14626, 10380, 1236, 3974, 14627, 2]
+// Dependencies: [8082, 14696, 10446, 1236, 3974, 14697, 2]
 
-// Module 14625 (toggle)
+// Module 14695 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -19,7 +19,7 @@ const toggle = createToggle.createToggle({
   useValue: require("explicitContentFromProto").EnableUpcomingServerEventNotifications.useSetting,
   onValueChange: require("onUpcomingServerEventNotificationSettingsChanged").onUpcomingServerEventNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14626) /* apexExperiment */.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
+    return require(14696) /* apexExperiment */.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }
 });
 const obj = {
@@ -35,7 +35,7 @@ const obj = {
   useValue: require("explicitContentFromProto").EnableUpcomingServerEventNotifications.useSetting,
   onValueChange: require("onUpcomingServerEventNotificationSettingsChanged").onUpcomingServerEventNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14626) /* apexExperiment */.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
+    return require(14696) /* apexExperiment */.useUpcomingServerEventExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
 const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");

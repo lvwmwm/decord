@@ -1,10 +1,10 @@
-// Module ID: 4117
-// Function ID: 4118
+// Module ID: 4123
+// Function ID: 4124
 // Name: UNSAFE_isDismissibleContentDismissed
-// Dependencies: [5, 1340, 4118, 687, 4139, 1359, 1360, 11, 1357, 589, 1355, 2]
+// Dependencies: [5, 1340, 4124, 687, 4145, 1359, 1360, 11, 1357, 589, 1355, 2]
 // Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 4117 (UNSAFE_isDismissibleContentDismissed)
+// Module 4123 (UNSAFE_isDismissibleContentDismissed)
 import isSingleUseDismissibleContent from "isSingleUseDismissibleContent";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -131,7 +131,7 @@ function _UNSAFE_markDismissibleContentAsDismissed() {
       if (obj1 === undefined) {
         obj1 = {};
       }
-      yield "PX_8";
+      yield "ct";
       if (1 === tmp5) {
         if (arg0 === 1) {
           let c5 = 3;
@@ -194,7 +194,7 @@ function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -217,7 +217,7 @@ function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
               }
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -250,7 +250,7 @@ function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             obj = callback(obj1[6]);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(callback, obj1);
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp26) {
           c6 = tmp;
@@ -290,7 +290,7 @@ function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -330,7 +330,7 @@ function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
             obj = callback(1360);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(callback, closure_1);
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c6 = tmp;
@@ -369,7 +369,7 @@ function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -412,7 +412,7 @@ function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
             obj = callback(1360);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(callback, closure_1);
             c7 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c7 = tmp;
@@ -453,7 +453,7 @@ export const UNSAFE_markDismissibleContentAsDismissed = function UNSAFE_markDism
   return applyArgumentsResult;
 };
 export const UNSAFE_isSnowflakeBoundDismissibleContentDismissed = function UNSAFE_isSnowflakeBoundDismissibleContentDismissed(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, promotionId) {
-  let obj = require(4139) /* useNewUserDismissibleContent */;
+  let obj = require(4145) /* useNewUserDismissibleContent */;
   if (obj.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE)) {
     return { isDismissed: true, lastDismissedSnowflakeId: null };
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 15210
-// Function ID: 15211
+// Module ID: 15283
+// Function ID: 15284
 // Name: _saveGuildThemeNuxPreference
-// Dependencies: [5, 1340, 4234, 1355, 2]
+// Dependencies: [5, 1340, 4235, 1355, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 15210 (_saveGuildThemeNuxPreference)
+// Module 15283 (_saveGuildThemeNuxPreference)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 
@@ -28,7 +28,7 @@ function _saveGuildThemeNuxPreference() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -45,7 +45,7 @@ function _saveGuildThemeNuxPreference() {
             } else {
               let handleConnectionClosedOrResumed = tmp5;
               let asyncGeneratorStep = tmp2;
-              let GuildThemeSourcePreference = callback(4234).GuildThemeSourcePreference;
+              let GuildThemeSourcePreference = callback(4235).GuildThemeSourcePreference;
               if (dependencyMap) {
                 let GUILD = GuildThemeSourcePreference.PERSONAL;
               } else {
@@ -83,7 +83,7 @@ function _saveGuildThemeNuxPreference() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c5 = tmp;
@@ -105,10 +105,10 @@ let result = require("GuildThemeSourcePreference").fileFinishedImporting("module
 
 export const getInitialGuildThemeNuxSelection = function getInitialGuildThemeNuxSelection() {
   defaultGuildThemePreference = defaultGuildThemePreference.getDefaultGuildThemePreference();
-  if (defaultGuildThemePreference === require(4234) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
-    let GUILD = tmp2(4234).GuildThemeSourcePreference.PERSONAL;
+  if (defaultGuildThemePreference === require(4235) /* GuildThemeSourcePreference */.GuildThemeSourcePreference.PERSONAL) {
+    let GUILD = tmp2(4235).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(4234).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(4235).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 };

@@ -1,10 +1,10 @@
-// Module ID: 11002
-// Function ID: 11003
+// Module ID: 11068
+// Function ID: 11069
 // Name: TimerIcon
-// Dependencies: [19, 21, 712, 4004, 11003, 2]
+// Dependencies: [19, 21, 712, 4004, 11069, 2]
 // Exports: TimerIcon
 
-// Module 11002 (TimerIcon)
+// Module 11068 (TimerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const TimerIcon = function TimerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(11003) /* registerAsset */;
+  obj[0] = require(11069) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

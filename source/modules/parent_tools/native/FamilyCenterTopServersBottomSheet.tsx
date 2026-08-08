@@ -1,10 +1,10 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14143
+// Function ID: 14144
 // Name: GuildRow
-// Dependencies: [6936, 21, 4302, 712, 589, 6992, 5373, 5719, 5704, 4298, 1236, 2284, 5707, 2]
+// Dependencies: [6996, 21, 4303, 712, 589, 7052, 5374, 5779, 5764, 4299, 1236, 2284, 5767, 2]
 // Exports: default
 
-// Module 14073 (GuildRow)
+// Module 14143 (GuildRow)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -20,15 +20,15 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = tmp2(6992).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    const topUserOrGuildDescription = tmp2(7052).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = stateFromStores.name;
     obj[1] = topUserOrGuildDescription;
     obj = { guild: null, style: null };
     obj[0] = stateFromStores;
     obj[1] = tmp.guildIcon;
-    obj[2] = callback(importDefault(5719), obj);
-    return callback(tmp2(5373).TableRow, obj);
+    obj[2] = callback(importDefault(5779), obj);
+    return callback(tmp2(5374).TableRow, obj);
   }
   tmp = createCacheKey();
 }
@@ -45,10 +45,10 @@ export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
   obj = { variant: "text-md/bold", style: createCacheKey().header, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(importDefault(2284).Lq9Set);
-  const items = [callback(require(4298) /* Text */.Text, obj), ];
+  const items = [callback(require(4299) /* Text */.Text, obj), ];
   obj = { hasIcons: true, children: null };
   obj[1] = topGuildActivities.map((guildActivity) => callback(closure_7, { guildActivity }, guildActivity.guild_id));
-  items[1] = callback(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+  items[1] = callback(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
   obj[0] = items;
-  return callback2(require(5704) /* ActionSheet */.ActionSheet, obj);
+  return callback2(require(5764) /* ActionSheet */.ActionSheet, obj);
 };

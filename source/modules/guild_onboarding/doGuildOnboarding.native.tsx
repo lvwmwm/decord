@@ -1,10 +1,10 @@
-// Module ID: 5236
-// Function ID: 5237
+// Module ID: 5237
+// Function ID: 5238
 // Name: getBaseAnimationData
-// Dependencies: [5, 17, 4118, 5237, 5238, 676, 5239, 4270, 4507, 5231, 5240, 1416, 1877, 5244, 5245, 5246, 5263, 1988, 1222, 2]
+// Dependencies: [5, 17, 4124, 5238, 5239, 676, 5240, 4271, 4509, 5232, 5241, 1416, 1877, 5245, 5246, 5247, 5264, 1988, 1222, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 5236 (getBaseAnimationData)
+// Module 5237 (getBaseAnimationData)
 import closure_3 from "ME";
 import { NativeModules } from "asyncRequireImpl";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -16,7 +16,7 @@ let c9;
 let metroImportAll;
 const require = arg1;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(require(5239)));
+  return JSON.parse(JSON.stringify(require(5240)));
 }
 function _doGuildOnboarding() {
   let self = this;
@@ -36,7 +36,7 @@ function _doGuildOnboarding() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ function _doGuildOnboarding() {
               let lib;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -70,14 +70,14 @@ function _doGuildOnboarding() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj8 = lib(4270);
+              let obj8 = lib(4271);
               obj8.hideActionSheet();
-              lib(4507).popAll();
-              const obj10 = lib(4507);
+              lib(4509).popAll();
+              const obj10 = lib(4509);
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = guildId(5231).waitForGuild(closure_0);
+              obj2[0] = guildId(5232).waitForGuild(closure_0);
               return obj2;
             }
           } else {
@@ -99,7 +99,7 @@ function _doGuildOnboarding() {
                   hasItem = features.has(constants.COMMUNITY);
                 }
                 if (hasItem) {
-                  let obj5 = guildId(5240);
+                  let obj5 = guildId(5241);
                   c5 = 3;
                   c6 = 1;
                   const obj4 = { value: null, done: false };
@@ -161,7 +161,7 @@ function _doGuildOnboarding() {
               return obj;
             }
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp42) {
           c6 = tmp;
@@ -200,7 +200,7 @@ function _fetchLandingAsset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -269,7 +269,7 @@ function _fetchLandingAsset() {
           } else {
             dependencyMap = arg1;
             const _HermesInternal = HermesInternal;
-            const tmp12 = callback(5244);
+            const tmp12 = callback(5245);
             c3 = 0;
             c5 = 3;
             obj = { value: null, done: true };
@@ -298,7 +298,7 @@ function _fetchLandingAsset() {
 }
 function openAndWaitForOnboarding(arg0) {
   const _require = arg0;
-  const result = _require(5245).waitForOnboardingCompletion(arg0);
+  const result = _require(5246).waitForOnboardingCompletion(arg0);
   result.then(() => {
     if (null != outer1_11[closure_0]) {
       tmp4();
@@ -306,7 +306,7 @@ function openAndWaitForOnboarding(arg0) {
     delete tmp[tmp2];
     outer1_1(outer1_2[15]).finishOnboarding(closure_0);
   });
-  let obj = _require(5245);
+  let obj = _require(5246);
   return new Promise((arg0) => {
     if (null == outer1_11[callback]) {
       tmp[tmp2] = arg0;

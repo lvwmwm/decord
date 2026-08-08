@@ -1,10 +1,10 @@
-// Module ID: 11624
-// Function ID: 11625
+// Module ID: 11690
+// Function ID: 11691
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4302, 11625, 1411, 11626, 11613, 11614, 4298, 1236, 11622, 2]
+// Dependencies: [5, 19, 17, 21, 4303, 11691, 1411, 11692, 11679, 11680, 4299, 1236, 11688, 2]
 // Exports: default
 
-// Module 11624 (GuildDirectoryCreateOrAddDescription)
+// Module 11690 (GuildDirectoryCreateOrAddDescription)
 import _createGuildFromTemplate from "_createGuildFromTemplate";
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -46,7 +46,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -68,7 +68,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
                   const template = tmp37.template;
                   if (null == template) {
                     c5 = 3;
-                    return { value: "T", done: null };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     c4 = 1;
                     c5 = 1;
@@ -117,7 +117,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
               return obj;
             }
             c5 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           } catch (tmp29) {
             c5 = tmp;
             throw tmp29;
@@ -141,11 +141,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   let obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = directoryChannelId(1236).intl;
   obj1[4] = intl.string(directoryChannelId(1236).t["5bQcoa"]);
-  const items = [callback(directoryChannelId(4298).Text, obj1), ];
+  const items = [callback(directoryChannelId(4299).Text, obj1), ];
   let obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = directoryChannelId(1236).intl;
   obj2[3] = intl2.string(directoryChannelId(1236).t.Ie60Wc);
-  items[1] = callback(directoryChannelId(4298).Text, obj2);
+  items[1] = callback(directoryChannelId(4299).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(_onSubmit, obj), ];
   let obj3 = {
@@ -165,8 +165,8 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   const intl3 = directoryChannelId(1236).intl;
   obj3[1] = intl3.string(directoryChannelId(1236).t.H9jxS1);
   obj3[2] = directoryChannelId;
-  items1[1] = callback(importDefault(11622), obj3);
+  items1[1] = callback(importDefault(11688), obj3);
   obj[2] = items1;
   obj[0] = callback2(closure_5, obj);
-  return callback(directoryChannelId(11614).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(11680).GuildDirectoryAddModalScreen, obj);
 };

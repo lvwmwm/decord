@@ -1,10 +1,10 @@
-// Module ID: 5818
-// Function ID: 5819
+// Module ID: 5878
+// Function ID: 5879
 // Name: useGuildEligibleForGuildProducts
 // Dependencies: [1891, 676, 589, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 5818 (useGuildEligibleForGuildProducts)
+// Module 5878 (useGuildEligibleForGuildProducts)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 

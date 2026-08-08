@@ -1,10 +1,10 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8090
+// Function ID: 8091
 // Name: createChangeChannelIconSystemMessage
-// Dependencies: [1372, 8002, 8009, 8011, 8012, 1236, 8015, 2]
+// Dependencies: [1372, 8062, 8069, 8071, 8072, 1236, 8075, 2]
 // Exports: createChangeChannelIconSystemMessage
 
-// Module 8030 (createChangeChannelIconSystemMessage)
+// Module 8090 (createChangeChannelIconSystemMessage)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;
@@ -15,10 +15,10 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
   let theme;
   message = message.message;
   ({ theme, roleStyle } = message);
-  const tmp3 = importDefault(8002)(theme);
-  let obj = require(8009) /* getMessageAuthorWithProcessedColor */;
+  const tmp3 = importDefault(8062)(theme);
+  let obj = require(8069) /* getMessageAuthorWithProcessedColor */;
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
-  const tmp6 = importDefault(8011)({ message, author: messageAuthorWithProcessedColor, roleStyle });
+  const tmp6 = importDefault(8071)({ message, author: messageAuthorWithProcessedColor, roleStyle });
   channel = channel.getChannel(message.channel_id);
   let flag;
   if (channel != null) {
@@ -30,7 +30,7 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
   if (flag == null) {
     flag = false;
   }
-  const tmp8 = importDefault(8012)(message);
+  const tmp8 = importDefault(8072)(message);
   const intl = tmp4(1236).intl;
   const formatToParts = intl.formatToParts;
   const t = tmp4(1236).t;
@@ -65,7 +65,7 @@ export const createChangeChannelIconSystemMessage = function createChangeChannel
     const obj4 = { label: null, name: null };
     const intl2 = tmp4(1236).intl;
     obj4[0] = intl2.string(tmp4(1236).t["5Q9+/L"]);
-    obj4[1] = tmp4(8015).MessageAccessibilityAction.EDIT_GDM;
+    obj4[1] = tmp4(8075).MessageAccessibilityAction.EDIT_GDM;
     items[HermesBuiltin.arraySpread(accessibilityActions, 0)] = obj4;
     obj3[0] = items;
     tmp12 = obj3;

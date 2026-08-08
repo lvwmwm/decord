@@ -1,10 +1,10 @@
-// Module ID: 10516
-// Function ID: 10517
+// Module ID: 10582
+// Function ID: 10583
 // Name: validateHandle
 // Dependencies: [676, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 10516 (validateHandle)
+// Module 10582 (validateHandle)
 import { PlatformTypes } from "ME";
 
 const result = require("set").fileFinishedImporting("modules/connections/FederatedSocialUtils.tsx");

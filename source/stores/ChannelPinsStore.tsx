@@ -1,9 +1,9 @@
-// Module ID: 10158
-// Function ID: 10159
+// Module ID: 10224
+// Function ID: 10225
 // Name: handleChannelDelete
-// Dependencies: [1975, 1372, 1971, 1891, 4519, 3938, 1903, 4521, 12, 6999, 589, 709, 2]
+// Dependencies: [1975, 1372, 1971, 1891, 4521, 3938, 1903, 4523, 12, 7059, 589, 709, 2]
 
-// Module 10158 (handleChannelDelete)
+// Module 10224 (handleChannelDelete)
 import _getSystemLocale from "_getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -134,15 +134,15 @@ obj = {
         if (-1 === findIndexResult) {
           const items1 = tmp20.items;
           let obj = { message: null, pinnedAt: null };
-          obj[0] = id(4521).createMessageRecord(message.message);
+          obj[0] = id(4523).createMessageRecord(message.message);
           const _Date = Date;
           const date = new Date();
           obj[1] = date;
           items1.unshift(obj);
-          const obj6 = id(4521);
+          const obj6 = id(4523);
         } else {
-          tmp20.items[findIndexResult].message = id(4521).updateMessageRecord(tmp20.items[findIndexResult].message, message.message);
-          const obj4 = id(4521);
+          tmp20.items[findIndexResult].message = id(4523).updateMessageRecord(tmp20.items[findIndexResult].message, message.message);
+          const obj4 = id(4523);
         }
         const obj3 = importDefault(12);
       } else {
@@ -161,7 +161,7 @@ obj = {
       const findIndexResult2 = importDefault(12).findIndex(tmp20.items, (message) => message.message.id === id);
       if (-1 !== findIndexResult2) {
         message = tmp.message;
-        obj = id(4521);
+        obj = id(4523);
         const updateMessageRecordResult = obj.updateMessageRecord(message, message.message);
         if (updateMessageRecordResult !== message) {
           const items4 = tmp20.items;
@@ -190,7 +190,7 @@ obj = {
       } else {
         const items = tmp.items;
         tmp.items = items.slice();
-        tmp.items[findIndexResult].message = messageId(6999).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
+        tmp.items[findIndexResult].message = messageId(7059).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
       }
       const obj2 = importDefault(12);
     }

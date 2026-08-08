@@ -1,10 +1,10 @@
-// Module ID: 8141
-// Function ID: 8142
+// Module ID: 8201
+// Function ID: 8202
 // Name: getInitialParserState
-// Dependencies: [8142, 4292, 2]
+// Dependencies: [8202, 4293, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 8141 (getInitialParserState)
+// Module 8201 (getInitialParserState)
 function getInitialParserState(channelId) {
   const renderOptions = channelId.renderOptions;
   return { channelId: channelId.channelId, messageId: channelId.messageId, authorId: channelId.authorId, allowLinks: Boolean(renderOptions.allowLinks), allowDevLinks: Boolean(renderOptions.allowDevLinks), allowGameMentions: Boolean(renderOptions.allowGameMentions), allowTimeMentionInput: Boolean(renderOptions.allowTimeMentionInput), formatInline: Boolean(renderOptions.formatInline), noStyleAndInteraction: Boolean(renderOptions.noStyleAndInteraction), allowHeading: Boolean(renderOptions.allowHeading), allowList: Boolean(renderOptions.allowList), previewLinkTarget: Boolean(renderOptions.previewLinkTarget), disableAnimatedEmoji: Boolean(renderOptions.disableAnimatedEmoji), allowEmojiLinks: false, disableAutoBlockNewlines: true, mentionChannels: [], soundboardSounds: [], muted: false, unknownUserMentionPlaceholder: true, viewingChannelId: renderOptions.viewingChannelId, forceWhite: Boolean(renderOptions.forceWhite), textColor: renderOptions.textColor, disablePressableChannelMention: Boolean(renderOptions.disablePressableChannelMention) };
@@ -78,7 +78,7 @@ export default function renderMessageMarkup(arg0) {
   if (arg1 === undefined) {
     obj = {};
   }
-  const tmp2 = importDefault(4292);
+  const tmp2 = importDefault(4293);
   return render(obj.formatInline ? tmp2.parseInlineReply : tmp2.parse, arg0, obj);
 };
 export const getInitialParserStateFromMessage = function getInitialParserStateFromMessage(message, closure_7) {
@@ -120,7 +120,7 @@ export const renderMessageMarkupToAST = function renderMessageMarkupToAST(messag
   if (result === undefined) {
     obj = {};
   }
-  const tmp2 = importDefault(4292);
+  const tmp2 = importDefault(4293);
   obj = {};
   const merged = Object.assign(obj);
   obj.toAST = true;
@@ -145,7 +145,7 @@ export const renderMessageContentMarkup = function renderMessageContentMarkup(no
   });
 };
 export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(arg0, highlightWord, channelId) {
-  return importDefault(4292).parseAutoModerationSystemMessage(arg0, true, { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false }, (arg0) => {
+  return importDefault(4293).parseAutoModerationSystemMessage(arg0, true, { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false }, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
       const items = [arg0];
@@ -155,7 +155,7 @@ export const renderAutomodMessageMarkup = function renderAutomodMessageMarkup(ar
   });
 };
 export const renderAutomodMessageMarkupToAST = function renderAutomodMessageMarkupToAST(arg0, highlightWord, channelId) {
-  return importDefault(4292).parseAutoModerationSystemMessageToAST(arg0, true, { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false }, (arg0) => {
+  return importDefault(4293).parseAutoModerationSystemMessageToAST(arg0, true, { allowLinks: false, allowDevLinks: false, allowEmojiLinks: false, allowGameMentions: false, mentionChannels: [], soundboardSounds: [], formatInline: false, noStyleAndInteraction: false, allowHeading: false, allowList: false, disableAutoBlockNewlines: true, highlightWord, disableAnimatedEmoji: false, channelId, muted: false }, (arg0) => {
     let tmp = arg0;
     if (!Array.isArray(arg0)) {
       const items = [arg0];

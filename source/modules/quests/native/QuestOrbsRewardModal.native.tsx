@@ -1,10 +1,10 @@
-// Module ID: 11110
-// Function ID: 11111
+// Module ID: 11176
+// Function ID: 11177
 // Name: OrbsBalance
-// Dependencies: [32, 5, 19, 17, 4294, 1903, 6816, 5160, 676, 21, 4507, 11110, 1988, 4302, 712, 9343, 5276, 5325, 1236, 5267, 9321, 501, 11111, 8810, 11112, 11113, 11114, 11115, 589, 9357, 691, 10410, 8835, 11099, 5163, 5327, 4298, 4712, 2]
+// Dependencies: [32, 5, 19, 17, 4295, 1903, 6876, 5161, 676, 21, 4509, 11176, 1988, 4303, 712, 9408, 5277, 5326, 1236, 5268, 9386, 501, 11177, 8870, 11178, 11179, 11180, 11181, 589, 9422, 691, 10476, 8895, 11165, 5164, 5328, 4299, 4714, 2]
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 11110 (OrbsBalance)
+// Module 11176 (OrbsBalance)
 import handleOrientationChange from "handleOrientationChange";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importAllResult from "preload";
@@ -33,7 +33,7 @@ function OrbsBalance(balance) {
   obj = { size: "xs", color: null, style: null };
   obj[1] = importDefault(712).colors.WHITE;
   obj[2] = tmp.orbsIcon;
-  const items = [callback3(require(9343) /* OrbsIcon */.OrbsIcon, obj), , ];
+  const items = [callback3(require(9408) /* OrbsIcon */.OrbsIcon, obj), , ];
   obj = { style: tmp.spacer };
   items[1] = callback3(closure_8, obj);
   items[2] = balance.balance;
@@ -58,17 +58,17 @@ function CancelButton() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.string(require(1236) /* getSystemLocale */.t.cpT0Cq);
   obj[4] = tmp.closeButton;
-  return callback3(require(5276) /* Background */.HeaderBackButton, obj);
+  return callback3(require(5277) /* Background */.HeaderBackButton, obj);
 }
 function StaticOrb() {
   let obj = { style: { width: "100%", height: "100%" }, children: null };
   obj = { source: null, style: null, fade: false };
   obj = { uri: null };
   const tmp = callback8();
-  obj[0] = importDefault(11113);
+  obj[0] = importDefault(11179);
   obj[0] = obj;
   obj[1] = tmp.animatedOrb;
-  obj[1] = callback3(importDefault(5267), obj);
+  obj[1] = callback3(importDefault(5268), obj);
   return callback3(closure_8, obj);
 }
 function AnimatedOrbContainer(isAppActive) {
@@ -188,7 +188,7 @@ let closure_23 = importAllResult.memo((onLoad) => {
   const effect = importAllResult.useEffect(() => {
     outer1_1(outer1_2[19]).preload(uri);
   }, items);
-  return callback3(importDefault(5267), { source: { uri }, style: { width: "100%", height: "100%" }, resizeMode: "cover", enableAnimation, onLoad: onLoad.onLoad, usesSmallCache: false, fade: false }, "orb-animate-" + enableAnimation);
+  return callback3(importDefault(5268), { source: { uri }, style: { width: "100%", height: "100%" }, resizeMode: "cover", enableAnimation, onLoad: onLoad.onLoad, usesSmallCache: false, fade: false }, "orb-animate-" + enableAnimation);
 });
 let closure_24 = importAllResult.memo((animate) => {
   let onLoad;
@@ -200,7 +200,7 @@ let closure_24 = importAllResult.memo((animate) => {
   }
   let aPNGPlayerControls;
   const ref = importAllResult.useRef(null);
-  aPNGPlayerControls = flag(9321).useAPNGPlayerControls(ref);
+  aPNGPlayerControls = flag(9386).useAPNGPlayerControls(ref);
   const items = [flag, aPNGPlayerControls];
   const effect = importAllResult.useEffect(() => {
     if (flag) {
@@ -209,7 +209,7 @@ let closure_24 = importAllResult.memo((animate) => {
       obj.stop();
     }
   }, items);
-  return callback3(flag(9321).APNGPlayer, { ref, url, autoplay: false, style: { width: "100%", height: "100%" }, onLoad });
+  return callback3(flag(9386).APNGPlayer, { ref, url, autoplay: false, style: { width: "100%", height: "100%" }, onLoad });
 });
 let closure_25 = importAllResult.memo((animate) => {
   let onLoad;
@@ -234,11 +234,11 @@ let closure_26 = importAllResult.memo((arg0) => {
   ({ onStaticBgLoad, onAnimatedBgLoad, isAppActive } = arg0);
   let obj = { source: null, style: null, resizeMode: "cover", onLoad: null };
   obj = { uri: null };
-  obj[0] = importDefault(11111);
+  obj[0] = importDefault(11177);
   obj[0] = obj;
   obj[1] = style;
   obj[3] = onStaticBgLoad;
-  const children = [callback3(importDefault(5267), obj), ];
+  const children = [callback3(importDefault(5268), obj), ];
   let tmp2Result = !useReducedMotion;
   if (!useReducedMotion) {
     tmp2Result = isAppActive;
@@ -246,11 +246,11 @@ let closure_26 = importAllResult.memo((arg0) => {
   if (tmp2Result) {
     obj = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
     const obj1 = { uri: null };
-    obj1[0] = importDefault(11112);
+    obj1[0] = importDefault(11178);
     obj[0] = obj1;
     obj[1] = style;
     obj[3] = onAnimatedBgLoad;
-    tmp2Result = callback3(require(8810) /* VideoComponent */.VideoComponent, obj);
+    tmp2Result = callback3(require(8870) /* VideoComponent */.VideoComponent, obj);
   }
   children[1] = tmp2Result;
   return closure_16(importAllResult.Fragment, { children });
@@ -272,7 +272,7 @@ export default function QuestOrbsRewardModal(quest) {
   let obj = num(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj1 = num(9357);
+  let obj1 = num(9422);
   num = obj1.useFetchVirtualCurrencyBalance().balance;
   let obj2 = importAllResult;
   [tmp6, c1] = callback(importAllResult.useState(false), 2);
@@ -290,8 +290,8 @@ export default function QuestOrbsRewardModal(quest) {
     num2 = userStatus.orbQuantityClaimed;
   }
   if (num2 == null) {
-    num2 = tmp2(10410).getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
-    const tmp2Result = tmp2(10410);
+    num2 = tmp2(10476).getQuestOrbRewardQuantityForUser(quest.config, stateFromStores2);
+    const tmp2Result = tmp2(10476);
   }
   const tmp11 = stateFromStores1 === num(691).AppStates.ACTIVE;
   const effect = obj2.useEffect(() => {
@@ -371,7 +371,7 @@ export default function QuestOrbsRewardModal(quest) {
     const obj9 = { count: null };
     obj9[0] = num2;
     obj8[3] = intl.format(tmp2(1236).t.FIilK5, obj9);
-    let items6 = [tmp17(tmp2(4298).Heading, obj8), ];
+    let items6 = [tmp17(tmp2(4299).Heading, obj8), ];
     let obj10 = { variant: "text-md/normal", color: "text-overlay-light", style: null, children: null };
     obj10[2] = tmp.title;
     if (num == null) {
@@ -399,12 +399,12 @@ export default function QuestOrbsRewardModal(quest) {
       formatResult = intl2.format(tmp2(1236).t.rKHvlX, obj12);
     }
     obj10[3] = formatResult;
-    items6[1] = tmp17(tmp2(4298).Text, obj10);
+    items6[1] = tmp17(tmp2(4299).Text, obj10);
     obj7[1] = items6;
     items5[2] = tmp15(tmp16, obj7);
     const obj13 = { style: null, children: null };
     obj13[0] = tmp.buttonsContainer;
-    items6 = tmp2(4712).Button;
+    items6 = tmp2(4714).Button;
     const obj14 = { onPress: null, variant: "primary", size: "lg", text: null };
     obj14[0] = string;
     obj10 = tmp2(1236).intl;
@@ -416,11 +416,11 @@ export default function QuestOrbsRewardModal(quest) {
     obj7 = tmp17(tmp16, obj13);
     items5[3] = obj7;
     obj3[5] = items5;
-    tmp15(tmp2(5327).SafeAreaPaddingView, obj3);
+    tmp15(tmp2(5328).SafeAreaPaddingView, obj3);
   }
 };
 export const openQuestOrbsRewardModal = function openQuestOrbsRewardModal(quest) {
-  importDefault(4507).pushLazy(callback2(function*() {
+  importDefault(4509).pushLazy(callback2(function*() {
     yield v0(outer1_2[12])(outer1_2[11], outer1_2.paths);
     return arg1.default;
   }), { quest: quest.quest }, QuestOrbsRewardModal);

@@ -1,10 +1,10 @@
-// Module ID: 4738
-// Function ID: 4739
+// Module ID: 4740
+// Function ID: 4741
 // Name: safelyPartiallyDecodeURIComponent
 // Dependencies: [1467, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 4738 (safelyPartiallyDecodeURIComponent)
+// Module 4740 (safelyPartiallyDecodeURIComponent)
 function safelyPartiallyDecodeURIComponent(hash) {
   let substr;
   const result = importDefault(1467).safeDecodeURIComponent(hash);

@@ -1,10 +1,10 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10215
+// Function ID: 10216
 // Name: createPendingReply
 // Dependencies: [709, 2]
 // Exports: createPendingReply, createShallowPendingReply, deletePendingReply, setPendingReplyShouldMention
 
-// Module 10149 (createPendingReply)
+// Module 10215 (createPendingReply)
 const result = require("set").fileFinishedImporting("modules/replies/PendingReplyActionCreators.tsx");
 
 export const createPendingReply = function createPendingReply(arg0) {

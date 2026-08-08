@@ -1,10 +1,10 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11654
+// Function ID: 11655
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 4302, 712, 1481, 11589, 11590, 4712, 1297, 10985, 7693, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 1481, 11655, 11656, 4714, 1297, 11051, 7753, 2]
 // Exports: default
 
-// Module 11588 (ResourceChannelButtons)
+// Module 11654 (ResourceChannelButtons)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

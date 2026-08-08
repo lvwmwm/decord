@@ -1,9 +1,9 @@
-// Module ID: 14016
-// Function ID: 14017
+// Module ID: 14086
+// Function ID: 14087
 // Name: setFindYourFriendsDeletionIsLoading
-// Dependencies: [5, 17, 8022, 21, 700, 705, 3914, 11968, 585, 4002, 10380, 14017, 2]
+// Dependencies: [5, 17, 8082, 21, 700, 705, 3914, 12034, 585, 4002, 10446, 14087, 2]
 
-// Module 14016 (setFindYourFriendsDeletionIsLoading)
+// Module 14086 (setFindYourFriendsDeletionIsLoading)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -29,7 +29,7 @@ function _onFindYourFriendsDeletionPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

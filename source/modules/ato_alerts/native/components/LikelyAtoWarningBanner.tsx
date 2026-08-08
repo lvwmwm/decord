@@ -1,9 +1,9 @@
-// Module ID: 10283
-// Function ID: 10284
+// Module ID: 10349
+// Function ID: 10350
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 9603, 10284, 676, 685, 21, 4302, 712, 10285, 10286, 4507, 9753, 7724, 3998, 10287, 1236, 10290, 1988, 4298, 10295, 2]
+// Dependencies: [19, 9668, 10350, 676, 685, 21, 4303, 712, 10351, 10352, 4509, 9819, 7784, 3998, 10353, 1236, 10356, 1988, 4299, 10361, 2]
 
-// Module 10283 (LikelyAtoWarningBanner)
+// Module 10349 (LikelyAtoWarningBanner)
 import LikelyAtoMoreTipsModalActionItems from "LikelyAtoMoreTipsModalActionItems";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 import LIKELY_ATO_MORE_TIPS_MODAL_KEY from "LIKELY_ATO_MORE_TIPS_MODAL_KEY";
@@ -26,7 +26,7 @@ class LikelyAtoWarningBanner {
     senderId = global.senderId;
     handleLearnMore = undefined;
     c4 = undefined;
-    f84677 = undefined;
+    f84965 = undefined;
     handleLearnMore = function handleLearnMore() {
       let obj = channelId(senderId[8]);
       obj = { channelId, warningId, senderId, warningType: callback.LIKELY_ATO, cta: channelId(senderId[8]).CtaEventTypes.USER_MODAL_LEARN_MORE };
@@ -58,7 +58,7 @@ class LikelyAtoWarningBanner {
     items2[1] = senderId;
     items2[2] = warningId;
     items2[3] = callback;
-    f84677 = handleLearnMore.useCallback((cta) => {
+    f84965 = handleLearnMore.useCallback((cta) => {
       let obj = channelId(senderId[11]);
       obj = { channelId, guildId: null, muteDurationSeconds: outer1_9.ALWAYS };
       const result = obj.handleMuteSettingPress(obj);
@@ -87,9 +87,9 @@ class LikelyAtoWarningBanner {
       obj[6] = callback().map((children) => {
         let obj = { children: null };
         obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.title };
-        const items = [callback3(callback(4298).Text, obj, arg1), ];
+        const items = [callback3(callback(4299).Text, obj, arg1), ];
         obj = { variant: "text-xs/medium", color: "text-subtle", children: children.description };
-        items[1] = callback3(callback(4298).Text, obj, arg1);
+        items[1] = callback3(callback(4299).Text, obj, arg1);
         obj[0] = items;
         return callback4(closure_11, obj);
       });

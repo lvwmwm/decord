@@ -1,10 +1,10 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 13959
+// Function ID: 13960
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 1891, 5154, 21, 4302, 4529, 1236, 4270, 11154, 5719, 4491, 1297, 4298, 5158, 2]
+// Dependencies: [32, 19, 17, 1891, 5155, 21, 4303, 4531, 1236, 4271, 11220, 5779, 4493, 1297, 4299, 5159, 2]
 // Exports: default
 
-// Module 13889 (GuildSelectComponentActionSheet)
+// Module 13959 (GuildSelectComponentActionSheet)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -35,7 +35,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   let obj = first1;
   const tmp2 = first(first1.useState(""), 2);
   first = tmp2[0];
-  obj = { type: require(4529) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
+  obj = { type: require(4531) /* ActionComponentState */.SelectOptionType.GUILD, value: selectedGuild.id, label: selectedGuild.name, guild: selectedGuild };
   const tmp6 = first(first1.useState(obj), 2);
   first1 = tmp6[0];
   closure_5 = tmp6[1];
@@ -60,7 +60,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
         guild = guild.getGuild(arg1);
         if (null != guild) {
           const obj = { type: null, value: null, label: null, guild: null };
-          obj[0] = callback(4529).SelectOptionType.GUILD;
+          obj[0] = callback(4531).SelectOptionType.GUILD;
           ({ id: obj[1], name: obj[2] } = guild);
           obj[3] = guild;
           arr.push(obj);
@@ -73,7 +73,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
       obj[0] = arg0;
       reduced = obj.queryGuilds(obj).map((record) => {
         record = record.record;
-        return { type: callback(4529).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
+        return { type: callback(4531).SelectOptionType.GUILD, value: record.id, label: record.name, guild: record };
       });
       const queryGuildsResult = obj.queryGuilds(obj);
     }
@@ -81,7 +81,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   }, []);
   const items2 = [first, callback];
   const memo = obj.useMemo(() => callback(first), items2);
-  return callback(importDefault(11154), {
+  return callback(importDefault(11220), {
     onPressOptionItem(arg0, guild) {
       callback(guild.guild);
       callback2(guild);

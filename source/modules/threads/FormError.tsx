@@ -1,10 +1,10 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15694
+// Function ID: 15695
 // Name: FormSubmitErrorType
-// Dependencies: [1236, 7263, 2]
+// Dependencies: [1236, 7323, 2]
 // Exports: makeApiNameRequiredError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTitleError, renderError
 
-// Module 15619 (FormSubmitErrorType)
+// Module 15694 (FormSubmitErrorType)
 let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", ApiValidation: 2, [2]: "ApiValidation" };
 const result = require("set").fileFinishedImporting("modules/threads/FormError.tsx");
 
@@ -40,7 +40,7 @@ export const makeApiNameRequiredError = function makeApiNameRequiredError() {
   return obj;
 };
 export const makeAutomodViolationError = function makeAutomodViolationError(errorResponseBody, id) {
-  let obj = require(7263) /* getAutomodErrorMessageFromErrorResponse */;
+  let obj = require(7323) /* getAutomodErrorMessageFromErrorResponse */;
   id = undefined;
   if (id != null) {
     id = id.id;

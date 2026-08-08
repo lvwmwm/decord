@@ -1,9 +1,9 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16476
+// Function ID: 16477
 // Name: _initialize
-// Dependencies: [5260, 2]
+// Dependencies: [5261, 2]
 
-// Module 16399 (_initialize)
+// Module 16476 (_initialize)
 import "initialize";
 
 class DiskUsageManager extends tmp2 {

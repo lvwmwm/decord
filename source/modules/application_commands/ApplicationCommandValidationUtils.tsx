@@ -1,10 +1,10 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11542
+// Function ID: 11543
 // Name: validateOptionContent
-// Dependencies: [4735, 6922, 9929, 1236, 11477, 2]
+// Dependencies: [4737, 6982, 9995, 1236, 11543, 2]
 // Exports: getValidationResults
 
-// Module 11476 (validateOptionContent)
+// Module 11542 (validateOptionContent)
 import { getValidationErrorText } from "TRUE_OPTION_NAME";
 
 function validateOptionContent(allowEmptyValues) {
@@ -15,11 +15,11 @@ function validateOptionContent(allowEmptyValues) {
   let option;
   ({ option, content, guildId, channelId, commandOrigin } = allowEmptyValues);
   if (commandOrigin === undefined) {
-    commandOrigin = require(6922) /* ApplicationCommandSectionType */.CommandOrigin.CHAT;
+    commandOrigin = require(6982) /* ApplicationCommandSectionType */.CommandOrigin.CHAT;
   }
   let str = "";
   if (null != content) {
-    let obj = require(9929) /* getString */;
+    let obj = require(9995) /* getString */;
     obj = { content: null };
     obj[0] = content;
     str = obj.getString(obj, "content").trim();
@@ -59,7 +59,7 @@ function validateOptionContent(allowEmptyValues) {
     } else {
       first = content[0];
     }
-    const tmp8 = importDefault(11477);
+    const tmp8 = importDefault(11543);
     const tmp15 = tmp8[option.type](first, option, channelId, guildId, commandOrigin);
     if (!tmp16) {
       tmp15.error = getValidationErrorText(option);

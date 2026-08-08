@@ -1,10 +1,10 @@
-// Module ID: 4531
-// Function ID: 4532
+// Module ID: 4533
+// Function ID: 4534
 // Name: useDisplayNameStyles
-// Dependencies: [19, 1971, 1903, 4532, 589, 4534, 2]
+// Dependencies: [19, 1971, 1903, 4534, 589, 4536, 2]
 // Exports: default
 
-// Module 4531 (useDisplayNameStyles)
+// Module 4533 (useDisplayNameStyles)
 import { useContext } from "noop";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import mergeGuildAvatar from "mergeGuildAvatar";

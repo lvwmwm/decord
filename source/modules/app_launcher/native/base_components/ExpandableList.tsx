@@ -1,10 +1,10 @@
-// Module ID: 11428
-// Function ID: 11429
+// Module ID: 11494
+// Function ID: 11495
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4302, 8793, 4162, 4303, 4306, 5373, 1236, 4298, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 8853, 4036, 4304, 4307, 5374, 1236, 4299, 2]
 // Exports: default
 
-// Module 11428 (ExpandableList)
+// Module 11494 (ExpandableList)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";
@@ -50,7 +50,7 @@ export default function ExpandableList(items) {
   first = tmp2[0];
   closure_6 = tmp2[1];
   let obj7 = dependencyMap;
-  let tmp5 = importDefault(8793)(first);
+  let tmp5 = importDefault(8853)(first);
   if (tmp5 == null) {
     tmp5 = first;
   }
@@ -73,11 +73,11 @@ export default function ExpandableList(items) {
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  let obj2 = memo1(4162);
+  let obj2 = memo1(4036);
   sharedValue = obj2.useSharedValue(0);
-  let obj3 = memo1(4162);
+  let obj3 = memo1(4036);
   sharedValue1 = obj3.useSharedValue(0);
-  let obj4 = memo1(4162);
+  let obj4 = memo1(4036);
   class C {
     constructor() {
       if (c5) {
@@ -104,7 +104,7 @@ export default function ExpandableList(items) {
   const memo = obj.useMemo(() => memo1.slice(0, bound), items3);
   const items4 = [items, bound];
   memo1 = obj.useMemo(() => memo1.slice(bound, memo1.length), items4);
-  let obj5 = memo1(4162);
+  let obj5 = memo1(4036);
   class A {
     constructor() {
       if (0 !== onExpand.get()) {
@@ -121,7 +121,7 @@ export default function ExpandableList(items) {
       return obj;
     }
   }
-  obj = { collapsedListHeight: sharedValue, withTiming: memo1(4303).withTiming, containerHeight: derivedValue, timingStandard: memo1(4306).timingStandard };
+  obj = { collapsedListHeight: sharedValue, withTiming: memo1(4304).withTiming, containerHeight: derivedValue, timingStandard: memo1(4307).timingStandard };
   A.__closure = obj;
   A.__workletHash = 2086836441465;
   A.__initData = derivedValue;
@@ -168,7 +168,7 @@ export default function ExpandableList(items) {
   }
   items6[1] = tmp16Result;
   obj[1] = items6;
-  const items7 = [c7(importDefault(4162).View, obj), ];
+  const items7 = [c7(importDefault(4036).View, obj), ];
   if (!showsExpandCTAOverride) {
     obj3 = { children: null };
     items7[1] = showsExpandCTAOverride;
@@ -197,7 +197,7 @@ export default function ExpandableList(items) {
     obj7 = { children: null };
     const obj8 = { color: "text-brand", variant: "text-md/semibold", children: null };
     obj8[2] = stringResult1;
-    obj6[1] = tmp16(tmp9(4298).Text, obj8);
+    obj6[1] = tmp16(tmp9(4299).Text, obj8);
     obj6 = tmp16(tmp17, obj6);
     obj5[1] = obj6;
     obj5[2] = function onPress() {
@@ -212,7 +212,7 @@ export default function ExpandableList(items) {
         tmp4(obj);
       }
     };
-    obj5 = tmp16(tmp9(5373).TableRow, obj5);
+    obj5 = tmp16(tmp9(5374).TableRow, obj5);
     obj7[0] = obj5;
     tmp16Result = tmp16(tmp17, obj7);
   }

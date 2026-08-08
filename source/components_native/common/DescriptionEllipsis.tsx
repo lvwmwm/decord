@@ -1,10 +1,10 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11775
+// Function ID: 11776
 // Name: DescriptionEllipsis
-// Dependencies: [19, 17, 21, 4302, 712, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 2]
 // Exports: default
 
-// Module 11709 (DescriptionEllipsis)
+// Module 11775 (DescriptionEllipsis)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

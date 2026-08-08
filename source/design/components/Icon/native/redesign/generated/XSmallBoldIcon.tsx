@@ -1,10 +1,10 @@
-// Module ID: 8020
-// Function ID: 8021
+// Module ID: 8080
+// Function ID: 8081
 // Name: XSmallBoldIcon
-// Dependencies: [19, 21, 712, 4004, 5711, 2]
+// Dependencies: [19, 21, 712, 4004, 5771, 2]
 // Exports: XSmallBoldIcon
 
-// Module 8020 (XSmallBoldIcon)
+// Module 8080 (XSmallBoldIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const XSmallBoldIcon = function XSmallBoldIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(5711) /* registerAsset */;
+  obj[0] = require(5771) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

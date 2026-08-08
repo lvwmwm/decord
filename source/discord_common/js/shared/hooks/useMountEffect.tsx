@@ -1,10 +1,10 @@
-// Module ID: 4729
-// Function ID: 4730
+// Module ID: 4731
+// Function ID: 4732
 // Name: useMountEffect
 // Dependencies: [19, 2]
 // Exports: default, useMountLayoutEffect, useUnmountEffect
 
-// Module 4729 (useMountEffect)
+// Module 4731 (useMountEffect)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useMountEffect.tsx");

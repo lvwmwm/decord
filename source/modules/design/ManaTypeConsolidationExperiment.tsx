@@ -1,10 +1,10 @@
-// Module ID: 13762
-// Function ID: 13763
+// Module ID: 13832
+// Function ID: 13833
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 13762 (apexExperiment)
+// Module 13832 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

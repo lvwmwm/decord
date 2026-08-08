@@ -1,9 +1,9 @@
-// Module ID: 4355
-// Function ID: 4356
+// Module ID: 4357
+// Function ID: 4358
 // Name: _migrateDefaultStorage
-// Dependencies: [5, 4322, 1218, 4356, 676, 4357, 3912, 4358, 38, 4359, 4365, 1384, 4368, 4369, 589, 4349, 709, 2]
+// Dependencies: [5, 4323, 1218, 4358, 676, 4359, 3912, 4360, 38, 4361, 4367, 1384, 4370, 4371, 589, 4351, 709, 2]
 
-// Module 4355 (_migrateDefaultStorage)
+// Module 4357 (_migrateDefaultStorage)
 import closure_3 from "RESOLUTION_720";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -41,7 +41,7 @@ function _migrateDefaultStorage() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -103,7 +103,7 @@ function _migrateDefaultStorage() {
             return obj3;
           } else {
             callback2 = arg1;
-            obj = callback(4358);
+            obj = callback(4360);
             callback = obj.pathJoin(callback2, closure_15);
             c3 = 0;
           }
@@ -168,7 +168,7 @@ function trackSharedRemoteClipId(arg0, arg1, arg2) {
   } else {
     return false;
   }
-  obj = importDefault(4368);
+  obj = importDefault(4370);
 }
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_6, ClipSaveTypes: error, ClipsUserEducationType: metroImportAll, ClipsLogger: c9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: unpackModuleId, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, ClipsViewerConnectivitySettings, DEFAULT_MAX_AUTO_CLIPS, DEFAULT_CLIPS_BITRATE_PERCENT } = result);
 let c14 = "default";
@@ -188,7 +188,7 @@ let c26 = null;
 let set = new Set();
 let c28 = false;
 const map = new Map();
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: obj, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, viewerClipsEnabled: true, viewerConnectivity: ClipsViewerConnectivitySettings.ALL, maxAutoClips: DEFAULT_MAX_AUTO_CLIPS, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "PX_8", showPovClipsInGallery: "Array" };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: obj, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, viewerClipsEnabled: true, viewerConnectivity: ClipsViewerConnectivitySettings.ALL, maxAutoClips: DEFAULT_MAX_AUTO_CLIPS, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "ct", showPovClipsInGallery: "Array" };
 obj = { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT };
 let closure_31 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 class ClipsStoreClass extends DeviceSettingsStore {
@@ -236,7 +236,7 @@ prototype["getSettings"] = function getSettings() {
 prototype["getEnableAutoclipping"] = function getEnableAutoclipping() {
   let enabled = closure_31.clipsSettings.enableAutoclipping;
   if (enabled == null) {
-    const AutoclippingDefaultOverrideExperiment = require(4369) /* apexExperiment */.AutoclippingDefaultOverrideExperiment;
+    const AutoclippingDefaultOverrideExperiment = require(4371) /* apexExperiment */.AutoclippingDefaultOverrideExperiment;
     enabled = AutoclippingDefaultOverrideExperiment.getConfig({ location: "getAutoclippingDefault" }).enabled;
   }
   return enabled;
@@ -411,7 +411,7 @@ let items = [
     return obj;
   },
   (clipsSettings) => {
-    const _default = require(4349) /* _detectH265HardwareDecode */.default;
+    const _default = require(4351) /* _detectH265HardwareDecode */.default;
     let hardwareEncoding;
     if (_default != null) {
       hardwareEncoding = _default.getHardwareEncoding();
@@ -661,7 +661,7 @@ obj = {
     let pid;
     let sourceName;
     ({ sourceName, pid } = arg0);
-    let obj = require(4359) /* isClipsEnabled */;
+    let obj = require(4361) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       let tmp2 = sourceName;
       if (null != pid) {
@@ -690,7 +690,7 @@ obj = {
   STREAM_STOP: function handleStreamStop(arg0) {
     let tmp2 = null != _null;
     if (tmp2) {
-      let obj = require(4365) /* isStreamKey */;
+      let obj = require(4367) /* isStreamKey */;
       const tmp6 = obj.decodeStreamKey(tmp).ownerId === store.getId();
       if (tmp6) {
         let tmp8 = null;
@@ -825,7 +825,7 @@ obj = {
   },
   CLIPS_INIT: function handleClipsInit(applicationName) {
     let c26 = null;
-    let obj = require(4359) /* isClipsEnabled */;
+    let obj = require(4361) /* isClipsEnabled */;
     if (obj.isClipsEnabled()) {
       obj = { applicationName: null, newClipIds: null, ended: false };
       obj[0] = applicationName.applicationName;

@@ -1,10 +1,10 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8179
+// Function ID: 8180
 // Name: FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS
 // Dependencies: [3526, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 8119 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
+// Module 8179 (FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS)
 const result = require("set").fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
 
 export const FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS = 7;

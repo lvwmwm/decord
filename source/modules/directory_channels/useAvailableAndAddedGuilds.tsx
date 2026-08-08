@@ -1,10 +1,10 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11689
+// Function ID: 11690
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 1891, 3929, 5154, 11617, 676, 589, 4728, 11621, 2]
+// Dependencies: [5, 32, 19, 1891, 3929, 5155, 11683, 676, 589, 4730, 11687, 2]
 // Exports: default
 
-// Module 11623 (useAvailableAndAddedGuilds)
+// Module 11689 (useAvailableAndAddedGuilds)
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -58,7 +58,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -93,7 +93,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           } else {
             v0(false);
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           v0 = tmp;

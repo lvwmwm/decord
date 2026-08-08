@@ -1,9 +1,9 @@
-// Module ID: 6789
-// Function ID: 6790
+// Module ID: 6849
+// Function ID: 6850
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6789 (metadata)
+// Module 6849 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WizardHatAndBookSpotIllustration-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/cd6668bb8e6778eb7d1a7bd4fc3ad717105e1053952f3c68b68ae92c00bd7ccd.png";

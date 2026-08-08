@@ -1,10 +1,10 @@
-// Module ID: 10300
-// Function ID: 10301
+// Module ID: 10366
+// Function ID: 10367
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 3938, 1903, 9603, 21, 589, 4140, 10285, 9179, 1236, 8437, 8435, 8526, 5707, 10301, 2]
+// Dependencies: [32, 19, 3938, 1903, 9668, 21, 589, 4146, 10351, 9243, 1236, 8497, 8495, 8586, 5767, 10367, 2]
 // Exports: default
 
-// Module 10300 (StrangerDangerMoreTipsModalActionItems)
+// Module 10366 (StrangerDangerMoreTipsModalActionItems)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import upsertRelationship from "upsertRelationship";

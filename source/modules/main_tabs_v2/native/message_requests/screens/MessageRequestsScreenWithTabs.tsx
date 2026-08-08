@@ -1,8 +1,8 @@
-// Module ID: 15863
-// Function ID: 15864
-// Dependencies: [32, 19, 17, 21, 4302, 712, 8896, 1236, 15864, 15880, 9081, 9497, 11228, 2]
+// Module ID: 15938
+// Function ID: 15939
+// Dependencies: [32, 19, 17, 21, 4303, 712, 8956, 1236, 15939, 15955, 9141, 9562, 11294, 2]
 
-// Module 15863
+// Module 15938
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -33,28 +33,28 @@ const memoResult = importAllResult.memo((navigation) => {
   const callback1 = importAllResult.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = navigation(8896);
+  let obj = navigation(8956);
   obj = { items: null, pageWidth: null, defaultIndex: 0 };
   obj = { label: null, id: null, page: null };
   const intl = navigation(1236).intl;
   obj[0] = intl.string(navigation(1236).t["7RFcXZ"]);
   obj[1] = constants.REQUEST;
-  obj[2] = callback2(importDefault(15864), { goToMessageRequestPreview: callback });
+  obj[2] = callback2(importDefault(15939), { goToMessageRequestPreview: callback });
   const items1 = [obj, ];
   const obj1 = { label: null, id: null, page: null };
   const intl2 = navigation(1236).intl;
   obj1[0] = intl2.string(navigation(1236).t.ulKXHp);
   obj1[1] = constants.SPAM;
-  obj1[2] = callback2(importDefault(15880), { goToMessageRequestPreview: callback });
+  obj1[2] = callback2(importDefault(15955), { goToMessageRequestPreview: callback });
   items1[1] = obj1;
   obj[0] = items1;
   obj[1] = tmp2[0];
   const segmentedControlState = obj.useSegmentedControlState(obj);
   const obj2 = { style: tmp.container, children: null };
-  const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9081).SegmentedControl, { state: segmentedControlState }) }), , ];
-  const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9081).SegmentedControl, { state: segmentedControlState }) };
-  items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(9497).SegmentedControlPages, { state: segmentedControlState }) });
-  items2[2] = callback2(navigation(11228).TTIFirstContentfulPaint, { label: "message_requests" });
+  const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9141).SegmentedControl, { state: segmentedControlState }) }), , ];
+  const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9141).SegmentedControl, { state: segmentedControlState }) };
+  items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(9562).SegmentedControlPages, { state: segmentedControlState }) });
+  items2[2] = callback2(navigation(11294).TTIFirstContentfulPaint, { label: "message_requests" });
   obj2[1] = items2;
   return callback3(View, obj2);
 });

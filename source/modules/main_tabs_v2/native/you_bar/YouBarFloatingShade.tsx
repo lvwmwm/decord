@@ -1,8 +1,8 @@
-// Module ID: 15427
-// Function ID: 15428
-// Dependencies: [19, 17, 4113, 14268, 15324, 21, 4302, 589, 4005, 712, 14270, 1474, 4155, 15082, 4162, 4112, 688, 4723, 2]
+// Module ID: 15502
+// Function ID: 15503
+// Dependencies: [19, 17, 4119, 14338, 15399, 21, 4303, 589, 4005, 712, 14340, 1474, 4161, 15152, 4036, 4118, 688, 4725, 2]
 
-// Module 15427
+// Module 15502
 import { View } from "LinearGradient";
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import { YOU_BAR_GRADIENT_EXTRA_HEIGHT as closure_5 } from "CONNECTION_BANNER_HEIGHT";
@@ -20,15 +20,15 @@ let closure_10 = createCacheKey.createStyles({ container: { position: "absolute"
 let closure_11 = { code: "function YouBarFloatingShadeTsx1(){const{gradientHeight,drawerWidth}=this.__closure;return{height:gradientHeight,opacity:1,width:drawerWidth};}" };
 const memoResult = require("noop").memo(function YouBarFloatingShade() {
   const tmp = callback3();
-  let obj = require(14270) /* useYouBarTotalHeight */;
+  let obj = require(14340) /* useYouBarTotalHeight */;
   const youBarTotalHeight = obj.useYouBarTotalHeight();
   const sum = youBarTotalHeight + closure_5;
   require = sum;
   width = width(1474)().width;
-  if (width(4155)().isChatBesideChannelList) {
+  if (width(4161)().isChatBesideChannelList) {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
-  let tmp2Result = tmp2(4162);
+  let tmp2Result = tmp2(4036);
   const fn = function t() {
     return { height: closure_0, opacity: 1, width };
   };
@@ -36,8 +36,8 @@ const memoResult = require("noop").memo(function YouBarFloatingShade() {
   fn.__workletHash = 7609004216185;
   fn.__initData = closure_11;
   const animatedStyle = tmp2Result.useAnimatedStyle(fn);
-  tmp2Result = tmp2(4112);
-  const gradientValue = tmp2Result.useGradientValue(tmp2(4112).GradientPercentage.END);
+  tmp2Result = tmp2(4118);
+  const gradientValue = tmp2Result.useGradientValue(tmp2(4118).GradientPercentage.END);
   const token = require(4005) /* map */.useToken(tmp6(712).colors.BACKGROUND_BASE_LOWER);
   const tmp2Result1 = require(4005) /* map */;
   const items = [isSyncedModeThemesEnabled];
@@ -70,7 +70,7 @@ const memoResult = require("noop").memo(function YouBarFloatingShade() {
   obj = { bottom: sum / 2, height: sum / 2, width };
   items3[1] = obj;
   const items4 = [str2, str];
-  items2[1] = callback(width(4723), { style: items3, colors: items4, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1], pointerEvents: "none" });
+  items2[1] = callback(width(4725), { style: items3, colors: items4, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: [0, 1], pointerEvents: "none" });
   const items5 = [tmp.container, { width, height: sum / 2, backgroundColor: str }];
   items2[2] = callback(View, { style: items5 });
   obj[0] = items2;

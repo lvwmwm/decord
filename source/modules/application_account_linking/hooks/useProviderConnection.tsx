@@ -1,10 +1,10 @@
-// Module ID: 5687
-// Function ID: 5688
+// Module ID: 5747
+// Function ID: 5748
 // Name: useProviderConnection
-// Dependencies: [5, 19, 4996, 589, 5122, 2]
+// Dependencies: [5, 19, 4998, 589, 5123, 2]
 // Exports: useProviderConnection
 
-// Module 5687 (useProviderConnection)
+// Module 5747 (useProviderConnection)
 import set from "set";
 import noop from "noop";
 import closure_5 from "set";
@@ -47,7 +47,7 @@ export const useProviderConnection = function useProviderConnection(provider_id)
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

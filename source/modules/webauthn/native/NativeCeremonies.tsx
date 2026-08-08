@@ -1,9 +1,9 @@
-// Module ID: 8416
-// Function ID: 8417
+// Module ID: 8476
+// Function ID: 8477
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5771, 1236, 500, 8417, 8418, 1605, 2]
+// Dependencies: [5, 17, 3, 5831, 1236, 500, 8477, 8478, 1605, 2]
 
-// Module 8416 (_promptForRegisterCredential)
+// Module 8476 (_promptForRegisterCredential)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -20,7 +20,7 @@ function _promptForRegisterCredential() {
       if (register === undefined) {
         register = outer1_3.DCDSecurityKeyManager.register;
       }
-      yield "PX_8";
+      yield "ct";
       const obj5 = register(obj4[3]);
       obj4 = yield obj5.startRegisterWebAuthnCredential();
       ticket = obj4.ticket;
@@ -100,7 +100,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
               let code = tmp5;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

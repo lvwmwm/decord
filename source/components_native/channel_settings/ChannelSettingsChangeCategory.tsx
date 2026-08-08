@@ -1,10 +1,10 @@
-// Module ID: 15842
-// Function ID: 15843
+// Module ID: 15917
+// Function ID: 15918
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1372, 5253, 1891, 3929, 3938, 1903, 676, 21, 4302, 712, 4013, 5254, 11718, 3934, 5231, 4640, 1236, 4492, 5373, 5707, 7907, 4710, 4298, 589, 1480, 38, 2]
+// Dependencies: [32, 853, 19, 1372, 5254, 1891, 3929, 3938, 1903, 676, 21, 4303, 712, 4013, 5255, 11784, 3934, 5232, 4642, 1236, 4494, 5374, 5767, 7967, 4712, 4299, 589, 1480, 38, 2]
 // Exports: default
 
-// Module 15842 (shouldComponentUpdate)
+// Module 15917 (shouldComponentUpdate)
 import _slicedToArray from "_slicedToArray";
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -206,7 +206,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
 prototype["renderCategory"] = function renderCategory(label) {
   const self = this;
   const _require = label;
-  return callback3(_require(5373).TableRow, {
+  return callback3(_require(5374).TableRow, {
     label: label.name,
     onPress() {
       return self.handleSetCategory(label.id);
@@ -233,7 +233,7 @@ prototype["renderCategories"] = function renderCategories() {
   if (mapped.length > 0) {
     const obj = { hasIcons: false, children: null };
     obj[1] = mapped;
-    tmp4 = callback3(require(5707) /* TableRowGroupTitle */.TableRowGroup, obj);
+    tmp4 = callback3(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
   }
   return tmp4;
 };
@@ -254,7 +254,7 @@ prototype["render"] = function render() {
     name = intl2.string(tmp4(1236).t.GSfOoo);
   }
   obj = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(first(1236).t.OqccVl, { categoryName: name }) };
-  const items = [closure_13(first(4298).Text, obj), , ];
+  const items = [closure_13(first(4299).Text, obj), , ];
   let tmp3Result = null;
   if (null != first) {
     tmp3Result = null;
@@ -267,16 +267,16 @@ prototype["render"] = function render() {
         obj2[1] = function onPress() {
           return self.handleSetCategory(first.id);
         };
-        obj1[1] = tmp3(tmp4(5373).TableRow, obj2, first.id);
-        tmp3Result = tmp3(tmp4(5707).TableRowGroup, obj1);
+        obj1[1] = tmp3(tmp4(5374).TableRow, obj2, first.id);
+        tmp3Result = tmp3(tmp4(5767).TableRowGroup, obj1);
       }
     }
   }
   items[1] = tmp3Result;
   items[2] = self.renderCategories();
   obj[2] = items;
-  obj[1] = closure_14(first(4710).Stack, obj);
-  return closure_13(first(7907).Form, obj);
+  obj[1] = closure_14(first(4712).Stack, obj);
+  return closure_13(first(7967).Form, obj);
 };
 ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
 let obj1 = { paddingHorizontal: require("Themes").modules.mobile.TABLE_ROW_PADDING };

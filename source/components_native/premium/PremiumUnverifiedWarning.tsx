@@ -1,9 +1,9 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 12841
+// Function ID: 12842
 // Name: render
-// Dependencies: [19, 1903, 21, 4302, 712, 4013, 1297, 1236, 589, 2]
+// Dependencies: [19, 1903, 21, 4303, 712, 4013, 1297, 1236, 589, 2]
 
-// Module 12771 (render)
+// Module 12841 (render)
 import importDefaultResult from "mergeGuildAvatar";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

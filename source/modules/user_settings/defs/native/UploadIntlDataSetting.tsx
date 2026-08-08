@@ -1,9 +1,9 @@
-// Module ID: 14653
-// Function ID: 14654
+// Module ID: 14723
+// Function ID: 14724
 // Name: _serializeIntlData
-// Dependencies: [5, 17, 676, 21, 644, 705, 1606, 1239, 1273, 1236, 500, 530, 4002, 4258, 10380, 13812, 14017, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 1606, 1239, 1273, 1236, 500, 530, 4002, 4259, 10446, 13882, 14087, 2]
 
-// Module 14653 (_serializeIntlData)
+// Module 14723 (_serializeIntlData)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "set";
 import ME from "ME";
@@ -28,7 +28,7 @@ function _serializeIntlData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ function _handleUploadIntlDataSettingPress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -222,7 +222,7 @@ function _handleUploadIntlDataSettingPress() {
             dependencyMap = 1;
             let obj5 = callback(4002);
             const obj1 = { key: "USER_SETTINGS_INTL_DATA_UPLOAD_FAILED", IconComponent: null, content: "Failed to upload internationalization data." };
-            obj1[1] = ANDROID_APP(4258).CircleInformationIcon;
+            obj1[1] = ANDROID_APP(4259).CircleInformationIcon;
             obj5.open(obj1);
             dependencyMap = 0;
             (function onUploadIntlDataRequestFinish() {
@@ -264,7 +264,7 @@ function _handleUploadIntlDataSettingPress() {
           } else if (arg0 !== 2) {
             obj = callback(4002);
             obj5 = { key: "USER_SETTINGS_INTL_DATA_UPLOADED", IconComponent: null, content: "Internationalization data uploaded successfully." };
-            obj5[1] = ANDROID_APP(4258).CircleInformationIcon;
+            obj5[1] = ANDROID_APP(4259).CircleInformationIcon;
             obj.open(obj5);
             dependencyMap = 1;
           }

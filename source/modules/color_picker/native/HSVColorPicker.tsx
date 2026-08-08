@@ -1,10 +1,10 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 13907
+// Function ID: 13908
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 4302, 4162, 13838, 13839, 2]
+// Dependencies: [19, 17, 21, 4303, 4036, 13908, 13909, 2]
 // Exports: default
 
-// Module 13837 (HSVColorPicker)
+// Module 13907 (HSVColorPicker)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -32,15 +32,15 @@ export default function HSVColorPicker(arg0) {
   let value;
   ({ hue, saturation, value, onPanUpdate, onPanFinalize } = arg0);
   ({ saturationValuePickerStyle, saturationValueColorBoxStyle, saturationValueColorBoxInnerStyle, saturationValueSelectorStyle, huePickerStyle, hueColorBarInnerStyle, hueSliderStyle } = arg0);
-  let obj = require(4162);
+  let obj = require(4036);
   const sharedValue = obj.useSharedValue(0);
   const tmp = callback();
-  const sharedValue1 = require(4162).useSharedValue(1);
-  const obj2 = require(4162);
+  const sharedValue1 = require(4036).useSharedValue(1);
+  const obj2 = require(4036);
   obj = { style: tmp.hsvColorPicker, children: null };
-  const sharedValue2 = require(4162).useSharedValue(1);
+  const sharedValue2 = require(4036).useSharedValue(1);
   let tmp11 = hue;
-  const obj3 = require(4162);
+  const obj3 = require(4036);
   const tmp6 = closure_5;
   const tmp7 = View;
   const tmp9 = importDefault;
@@ -62,12 +62,12 @@ export default function HSVColorPicker(arg0) {
   obj[6] = saturationValueSelectorStyle;
   obj[7] = onPanUpdate;
   obj[8] = onPanFinalize;
-  const items = [closure_4(importDefault(13838), obj), ];
-  const tmp10 = importDefault(13838);
+  const items = [closure_4(importDefault(13908), obj), ];
+  const tmp10 = importDefault(13908);
   if (hue == null) {
     hue = sharedValue;
   }
-  items[1] = closure_4(tmp9(13839), { hue, style: huePickerStyle, colorBarInnerStyle: hueColorBarInnerStyle, sliderStyle: hueSliderStyle, onPanUpdate, onPanFinalize });
+  items[1] = closure_4(tmp9(13909), { hue, style: huePickerStyle, colorBarInnerStyle: hueColorBarInnerStyle, sliderStyle: hueSliderStyle, onPanUpdate, onPanFinalize });
   obj[1] = items;
   return tmp6(tmp7, obj);
 };

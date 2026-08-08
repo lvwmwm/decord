@@ -1,10 +1,10 @@
-// Module ID: 8384
-// Function ID: 8385
+// Module ID: 8444
+// Function ID: 8445
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5264, 676, 21, 4302, 4002, 1236, 8385, 8356, 5656, 4121, 589, 4789, 5333, 8386, 8409, 4712, 2]
+// Dependencies: [5, 32, 19, 17, 5265, 676, 21, 4303, 4002, 1236, 8445, 8416, 5716, 4127, 589, 4791, 5334, 8446, 8469, 4714, 2]
 // Exports: default
 
-// Module 8384 (MemberVerificationForm)
+// Module 8444 (MemberVerificationForm)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
@@ -54,7 +54,7 @@ export default function MemberVerificationForm(guild) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ export default function MemberVerificationForm(guild) {
                     obj.open(obj);
                   })();
                   c6 = 3;
-                  return { value: "T", done: null };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   outer1_9(null);
                   outer1_8(true);

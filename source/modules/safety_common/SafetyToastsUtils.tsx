@@ -1,10 +1,10 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7785
+// Function ID: 7786
 // Name: getSafetyToastTypeContent
-// Dependencies: [1372, 1903, 7719, 4491, 4140, 1236, 2802, 2384, 2]
+// Dependencies: [1372, 1903, 7779, 4493, 4146, 1236, 2802, 2384, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7725 (getSafetyToastTypeContent)
+// Module 7785 (getSafetyToastTypeContent)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyToastType } from "SafetyToastType";
@@ -15,7 +15,7 @@ const result = require("SafetyToastType").fileFinishedImporting("modules/safety_
 export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOCK_SUCCESS, closure_0, c1) {
   user = user.getUser(closure_0);
   channel = channel.getChannel(c1);
-  let obj = importDefault(4491);
+  let obj = importDefault(4493);
   let guild_id;
   if (channel != null) {
     guild_id = channel.guild_id;
@@ -26,8 +26,8 @@ export const getSafetyToastTypeContent = function getSafetyToastTypeContent(BLOC
   }
   let name = obj.getName(guild_id, id, user);
   if (name == null) {
-    name = tmp3(4140).getGlobalName(user);
-    const tmp3Result = tmp3(4140);
+    name = tmp3(4146).getGlobalName(user);
+    const tmp3Result = tmp3(4146);
   }
   if (SafetyToastType.IGNORE_SUCCESS === BLOCK_SUCCESS) {
     const intl18 = require(1236) /* getSystemLocale */.intl;

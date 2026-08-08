@@ -1,10 +1,10 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16789
+// Function ID: 16790
 // Name: useCreateCreatorMonetizationEnableRequest
-// Dependencies: [5, 32, 19, 16686, 4202, 2]
+// Dependencies: [5, 32, 19, 16763, 4203, 2]
 // Exports: default
 
-// Module 16712 (useCreateCreatorMonetizationEnableRequest)
+// Module 16789 (useCreateCreatorMonetizationEnableRequest)
 import set from "set";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -37,7 +37,7 @@ export default function useCreateCreatorMonetizationEnableRequest(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

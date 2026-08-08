@@ -1,10 +1,10 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 10984
+// Function ID: 10985
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4393, 7099, 676, 709, 7128, 10919, 7116, 4202, 6863, 7120, 530, 7098, 2]
+// Dependencies: [5, 4395, 7159, 676, 709, 7188, 10985, 7176, 4203, 6923, 7180, 530, 7158, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10918 (fetchBountiesAndDispatch)
+// Module 10984 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import set from "set";
@@ -112,7 +112,7 @@ function _fetchQuestHomeBounties() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -132,9 +132,9 @@ function _fetchQuestHomeBounties() {
               const obj1 = { value: null, done: false };
               obj1[0] = outer1_7(tmp5, outer1_3(function*() {
                 let uuid = tmp2;
-                let obj5 = outer1_0(6863);
+                let obj5 = outer1_0(6923);
                 uuid = yield obj5.getSession();
-                const uuid2 = outer1_0(7120).getOrRefreshAdSession();
+                const uuid2 = outer1_0(7180).getOrRefreshAdSession();
                 const HTTP = outer1_0(530).HTTP;
                 const obj3 = { url: null, query: null, rejectWithError: false, context: null };
                 obj3[0] = outer1_6.QUESTS_GET_DECISIONS;
@@ -164,7 +164,7 @@ function _fetchQuestHomeBounties() {
             return obj;
           }
           c1 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c1 = tmp;
           throw tmp9;
@@ -200,7 +200,7 @@ function _fetchBountyPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -250,7 +250,7 @@ function _fetchBountyPreview() {
             return obj;
           }
           c2 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c2 = tmp;
           throw tmp10;
@@ -287,7 +287,7 @@ function _claimBountyReward() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -439,10 +439,10 @@ export const fetchBountyPreview = function fetchBountyPreview(arr, c3) {
   return applyArgumentsResult;
 };
 export const setBountyVideoProgress = function setBountyVideoProgress(bountyId, arg1) {
-  let obj = require(7120) /* getOrRefreshAdSession */;
+  let obj = require(7180) /* getOrRefreshAdSession */;
   if (null != obj.getCurrentAdSession()) {
-    const orRefreshAdSession = require(7120) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
-    const tmpResult = require(7120) /* getOrRefreshAdSession */;
+    const orRefreshAdSession = require(7180) /* getOrRefreshAdSession */.getOrRefreshAdSession(true);
+    const tmpResult = require(7180) /* getOrRefreshAdSession */;
     obj = { type: "BOUNTIES_VIDEO_PROGRESS_UPDATE", bountyId: null, timestampSec: null, maxTimestampSec: null, duration: null };
     obj[1] = bountyId;
     ({ timestampSec: obj4[2], maxTimestampSec: obj4[3], duration: obj4[4] } = arg1);

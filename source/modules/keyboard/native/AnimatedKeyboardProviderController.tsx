@@ -1,20 +1,20 @@
-// Module ID: 10144
-// Function ID: 10145
+// Module ID: 10210
+// Function ID: 10211
 // Name: mutable
-// Dependencies: [19, 21, 4162, 1623, 2]
+// Dependencies: [19, 21, 4036, 1623, 2]
 
-// Module 10144 (mutable)
+// Module 10210 (mutable)
 import jsxProd from "jsxProd";
-import module_4162 from "module_4162";
+import module_4036 from "module_4036";
 import mutable from "noop";
-import module_4162 from "module_4162";
+import module_4036 from "module_4036";
 import importAllResult from "noop";
 
 let c3;
 let obj1;
 const require = arg1;
 ({ jsx: obj1, jsxs: c3 } = jsxProd);
-const mutable1 = module_4162.makeMutable(require("module_4162").KeyboardState.UNKNOWN);
+const mutable1 = module_4036.makeMutable(require("module_4036").KeyboardState.UNKNOWN);
 let closure_6 = { code: "function AnimatedKeyboardProviderControllerTsx1(e){const{animatedKeyboardState,KeyboardState}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);}" };
 let closure_7 = { code: "function AnimatedKeyboardProviderControllerTsx2(e){const{animatedKeyboardHeight}=this.__closure;animatedKeyboardHeight.set(e.height);}" };
 let closure_8 = { code: "function AnimatedKeyboardProviderControllerTsx3(e){const{animatedKeyboardState,KeyboardState,animatedKeyboardHeight}=this.__closure;animatedKeyboardState.set(e.height===0?KeyboardState.CLOSED:KeyboardState.OPEN);animatedKeyboardHeight.set(e.height);}" };
@@ -23,13 +23,13 @@ let closure_9 = require("noop").memo(() => {
   obj = { onStart: null, onMove: null, onEnd: null };
   const fn = function o(height) {
     if (0 === height.height) {
-      let OPEN = callback(4162).KeyboardState.CLOSED;
+      let OPEN = callback(4036).KeyboardState.CLOSED;
     } else {
-      OPEN = callback(4162).KeyboardState.OPEN;
+      OPEN = callback(4036).KeyboardState.OPEN;
     }
     const result = store2.set(OPEN);
   };
-  obj = { animatedKeyboardState: mutable1, KeyboardState: require(4162).KeyboardState };
+  obj = { animatedKeyboardState: mutable1, KeyboardState: require(4036).KeyboardState };
   fn.__closure = obj;
   fn.__workletHash = 12130162639136;
   fn.__initData = closure_6;
@@ -43,14 +43,14 @@ let closure_9 = require("noop").memo(() => {
   obj[1] = fn2;
   const fn3 = function e(height) {
     if (0 === height.height) {
-      let OPEN = callback(4162).KeyboardState.CLOSED;
+      let OPEN = callback(4036).KeyboardState.CLOSED;
     } else {
-      OPEN = callback(4162).KeyboardState.OPEN;
+      OPEN = callback(4036).KeyboardState.OPEN;
     }
     const result = store2.set(OPEN);
     const result1 = store.set(height.height);
   };
-  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: require(4162).KeyboardState, animatedKeyboardHeight: mutable };
+  fn3.__closure = { animatedKeyboardState: mutable1, KeyboardState: require(4036).KeyboardState, animatedKeyboardHeight: mutable };
   fn3.__workletHash = 10688534401196;
   fn3.__initData = closure_8;
   obj[2] = fn3;
@@ -67,6 +67,6 @@ let obj = {
   animatedKeyboardHeight: mutable,
   animatedKeyboardState: mutable1
 };
-let result = require("module_4162").fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProviderController.tsx");
+let result = require("module_4036").fileFinishedImporting("modules/keyboard/native/AnimatedKeyboardProviderController.tsx");
 
 export default obj;

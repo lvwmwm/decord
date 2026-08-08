@@ -1,9 +1,9 @@
-// Module ID: 9933
-// Function ID: 9934
+// Module ID: 9999
+// Function ID: 10000
 // Name: HorizontalAutocompleteOption
-// Dependencies: [19, 17, 4294, 1964, 1891, 3938, 1903, 676, 21, 4302, 5235, 712, 4162, 4728, 4303, 589, 1297, 4298, 4140, 5693, 5694, 8168, 4762, 4492, 5267, 2]
+// Dependencies: [19, 17, 4295, 1964, 1891, 3938, 1903, 676, 21, 4303, 5236, 712, 4036, 4730, 4304, 589, 1297, 4299, 4146, 5753, 5754, 8228, 4764, 4494, 5268, 2]
 
-// Module 9933 (HorizontalAutocompleteOption)
+// Module 9999 (HorizontalAutocompleteOption)
 import "getRoleIconData";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -29,9 +29,9 @@ function HorizontalAutocompleteOption(arg0) {
   let onPress;
   let sharedValue;
   ({ children, onPress } = arg0);
-  let obj = sharedValue(4162);
+  let obj = sharedValue(4036);
   sharedValue = obj.useSharedValue(0);
-  importDefault(4728)(() => {
+  importDefault(4730)(() => {
     const result = sharedValue.set(sharedValue(outer1_2[14]).withTiming(1));
   });
   const tmp = createCacheKey();
@@ -42,9 +42,9 @@ function HorizontalAutocompleteOption(arg0) {
   fn.__workletHash = 14159604656069;
   fn.__initData = closure_14;
   obj = { onPress, children: null };
-  const animatedStyle = sharedValue(4162).useAnimatedStyle(fn);
+  const animatedStyle = sharedValue(4036).useAnimatedStyle(fn);
   const items = [tmp.horizontalAutocompleteOption, animatedStyle];
-  obj[1] = callback(importDefault(4162).View, { style: items, children });
+  obj[1] = callback(importDefault(4036).View, { style: items, children });
   return callback(closure_3, obj);
 }
 ({ TouchableOpacity: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -85,15 +85,15 @@ let obj3 = {
     const obj2 = { style: items2, variant: "text-sm/semibold", children: null };
     items2 = [tmp.nickname];
     if (nick == null) {
-      nick = importDefault(4140).getName(user);
-      const obj6 = importDefault(4140);
+      nick = importDefault(4146).getName(user);
+      const obj6 = importDefault(4146);
     }
     obj2[2] = nick;
-    const items3 = [callback(require(4298) /* Text */.Text, obj2), ];
+    const items3 = [callback(require(4299) /* Text */.Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
-    const items4 = ["@", importDefault(4140).getUserTag(user, { decoration: "never" })];
+    const items4 = ["@", importDefault(4146).getUserTag(user, { decoration: "never" })];
     obj3[2] = items4;
-    items3[1] = closure_12(require(4298) /* Text */.Text, obj3);
+    items3[1] = closure_12(require(4299) /* Text */.Text, obj3);
     obj1[1] = items3;
     items1[1] = closure_12(closure_4, obj1);
     obj[1] = items1;
@@ -111,8 +111,8 @@ let obj3 = {
     const stateFromStores = obj.useStateFromStores(items, () => outer1_6.getRole(closure_0, closure_1));
     let roleIconData = null;
     if (null != stateFromStores) {
-      roleIconData = tmp2(5693).getRoleIconData(stateFromStores, 30);
-      const tmp2Result = tmp2(5693);
+      roleIconData = tmp2(5753).getRoleIconData(stateFromStores, 30);
+      const tmp2Result = tmp2(5753);
     }
     obj = { onPress: onPress.onPress, children: null };
     let tmp9Result = null;
@@ -129,10 +129,10 @@ let obj3 = {
       }
       obj1[1] = tmp13;
       obj1[2] = roleIconData.unicodeEmoji;
-      obj[1] = closure_11(importDefault(5694), obj1);
+      obj[1] = closure_11(importDefault(5754), obj1);
       tmp9Result = tmp9(closure_4, obj);
       const tmp10 = closure_4;
-      const tmp12 = importDefault(5694);
+      const tmp12 = importDefault(5754);
     }
     const items1 = [tmp9Result, ];
     const items2 = [tmp.nickname, ];
@@ -152,18 +152,18 @@ let obj3 = {
     channel(589);
     [][0] = channel;
     if (channel.type === constants.GUILD_CATEGORY) {
-      let channelIconWithGuild = importDefault(8168);
+      let channelIconWithGuild = importDefault(8228);
     } else {
-      let tmp2Result = tmp2(4762);
+      let tmp2Result = tmp2(4764);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const tmp = createCacheKey();
-    tmp2Result = tmp2(4492);
+    tmp2Result = tmp2(4494);
     let obj = { onPress: channel.onPress, children: null };
     const items = [callback(channel(1297).Icon, { source: channelIconWithGuild }), ];
     const channelName = tmp2Result.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
     obj = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = callback(channel(4298).Text, obj);
+    items[1] = callback(channel(4299).Text, obj);
     obj[1] = items;
     return callback2(HorizontalAutocompleteOption, obj);
   },
@@ -182,7 +182,7 @@ let obj3 = {
       obj = { uri: null };
       obj[0] = url;
       obj[1] = obj;
-      let tmp5 = callback(importDefault(5267), obj);
+      let tmp5 = callback(importDefault(5268), obj);
       let tmp6 = callback;
     } else {
       obj = { style: null, allowFontScaling: false, children: null };
@@ -197,7 +197,7 @@ let obj3 = {
     const items2 = [tmp6(closure_4, { children: tmp5 }), ];
     const obj2 = { style: tmp.emojiName, variant: "text-sm/semibold", children: null };
     obj2[2] = ":" + name + ":";
-    items2[1] = tmp6(require(4298) /* Text */.Text, obj2);
+    items2[1] = tmp6(require(4299) /* Text */.Text, obj2);
     obj1[1] = items2;
     return callback2(HorizontalAutocompleteOption, obj1);
   }

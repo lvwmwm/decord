@@ -1,10 +1,10 @@
-// Module ID: 16549
-// Function ID: 16550
+// Module ID: 16626
+// Function ID: 16627
 // Name: ListBulletsIcon
-// Dependencies: [19, 21, 712, 4004, 16550, 2]
+// Dependencies: [19, 21, 712, 4004, 16627, 2]
 // Exports: ListBulletsIcon
 
-// Module 16549 (ListBulletsIcon)
+// Module 16626 (ListBulletsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ListBulletsIcon = function ListBulletsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(16550) /* registerAsset */;
+  obj[0] = require(16627) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

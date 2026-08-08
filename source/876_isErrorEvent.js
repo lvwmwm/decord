@@ -133,15 +133,15 @@ _classCallCheck = undefined;
 class Client {
   constructor(arg0) {
     self = this;
-    tmp = f67749(this, c4);
+    tmp = f67916(this, c4);
     this._options = global;
     this._integrations = {};
     this._numProcessing = 0;
     this._outcomes = {};
     this._hooks = {};
     this._eventProcessors = [];
-    tmp2 = f67767;
-    tmp3 = f67763;
+    tmp2 = f67934;
+    tmp3 = f67930;
     obj = require("makePromiseBuffer");
     transportOptions = global.transportOptions;
     bufferSize = undefined;
@@ -678,7 +678,7 @@ closure_1 = asyncGeneratorStep(function(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -856,7 +856,7 @@ closure_0 = asyncGeneratorStep(function(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,9 +1,9 @@
-// Module ID: 13742
-// Function ID: 13743
+// Module ID: 13812
+// Function ID: 13813
 // Name: _getKeyForFileId
-// Dependencies: [5, 32, 3939, 1218, 1372, 4519, 676, 13743, 3, 687, 595, 3883, 3971, 7152, 6857, 709, 11079, 10159, 1988, 4480, 4987, 9678, 2]
+// Dependencies: [5, 32, 3939, 1218, 1372, 4521, 676, 13813, 3, 687, 595, 3883, 3971, 7212, 6917, 709, 11145, 10225, 1988, 4482, 4989, 9744, 2]
 
-// Module 13742 (_getKeyForFileId)
+// Module 13812 (_getKeyForFileId)
 import reinjectEphemerals from "reinjectEphemerals";
 import _slicedToArray from "_slicedToArray";
 import hasFlag from "hasFlag";
@@ -57,11 +57,11 @@ function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
   let obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp3 = file(7152)(obj);
+  const tmp3 = file(7212)(obj);
   const require = tmp3;
   ({ timestamp: tmp3.timestamp, file } = channel_id);
   obj = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  file(6857).receiveMessage(channel_id, tmp3, true, obj);
+  file(6917).receiveMessage(channel_id, tmp3, true, obj);
   if (null != file) {
     file(709).wait(() => file(outer1_2[16]).restoreFailedUpload(tmp3.id, file));
     const tmpResult = file(709);
@@ -136,7 +136,7 @@ function _rehydrateFailedMessages() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -382,7 +382,7 @@ function _writeMessage(arg0, id) {
 class LocalMessageCacheManager extends tmp3 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f110262 = applyArgumentsResult;
+    f110594 = applyArgumentsResult;
     // PrivateIsIn (0x32)
     if (tmp) {
       str = "Cannot initialize private field twice.";
@@ -404,7 +404,7 @@ class LocalMessageCacheManager extends tmp3 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -458,7 +458,7 @@ class LocalMessageCacheManager extends tmp3 {
                           obj[0] = arg1;
                           return obj;
                         } else {
-                          return { value: "T", done: null };
+                          return { value: "HermesInternal", done: null };
                         }
                       } else {
                         try {
@@ -481,7 +481,7 @@ class LocalMessageCacheManager extends tmp3 {
                               }, 0);
                             }
                             c1 = 3;
-                            return { value: "T", done: null };
+                            return { value: "HermesInternal", done: null };
                           }
                         } catch (tmp9) {
                           c1 = tmp;
@@ -495,7 +495,7 @@ class LocalMessageCacheManager extends tmp3 {
                   closure_0 = values[Symbol.iterator]();
                   if (closure_0 === undefined) {
                     c10 = 3;
-                    return { value: "T", done: null };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     let c7 = 1;
                     closure_2 = tmp35;
@@ -746,9 +746,9 @@ class LocalMessageCacheManager extends tmp3 {
           continue;
         }
       };
-      f110262 = undefined;
+      f110594 = undefined;
       closure_1 = applyArgumentsResult;
-      f110262 = _rehydrateFailedMessages((arg0) => {
+      f110594 = _rehydrateFailedMessages((arg0) => {
         let closure_0 = arg0;
         let c2 = 0;
         let c1 = 0;
@@ -764,7 +764,7 @@ class LocalMessageCacheManager extends tmp3 {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -809,7 +809,7 @@ class LocalMessageCacheManager extends tmp3 {
                 return obj;
               }
               set = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } catch (tmp8) {
               set = tmp;
               throw tmp8;
@@ -1062,7 +1062,7 @@ prototype["_initialize"] = function _initialize() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -1139,7 +1139,7 @@ prototype["_initialize"] = function _initialize() {
                 let subscription1 = obj3.subscribe("CACHE_LOADED", closure_0.handleCacheLoaded);
                 let num4 = 3;
                 c8 = 3;
-                return { value: "T", done: null };
+                return { value: "HermesInternal", done: null };
               } else {
                 let tmp53 = reinjectEphemerals;
                 let tmp54 = ready;

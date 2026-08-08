@@ -1,9 +1,9 @@
-// Module ID: 14831
-// Function ID: 14832
+// Module ID: 14901
+// Function ID: 14902
 // Name: SettingsEmoji
-// Dependencies: [5, 19, 8022, 676, 1906, 21, 4302, 712, 3974, 8016, 1416, 5359, 8577, 698, 5688, 8590, 10380, 1236, 2]
+// Dependencies: [5, 19, 8082, 676, 1906, 21, 4303, 712, 3974, 8076, 1416, 5360, 8637, 698, 5748, 8650, 10446, 1236, 2]
 
-// Module 14831 (SettingsEmoji)
+// Module 14901 (SettingsEmoji)
 import jsxProd from "jsxProd";
 import "noop";
 import { AnalyticEvents } from "ME";
@@ -32,7 +32,7 @@ function SettingsEmoji(emoji) {
   }
   obj[2] = str;
   obj[4] = tmp.textEmoji;
-  return tmp4(importDefault(5359), obj);
+  return tmp4(importDefault(5360), obj);
 }
 createCacheKey = { textEmoji: null };
 createCacheKey = { color: require("Themes").colors.INTERACTIVE_TEXT_DEFAULT };
@@ -47,9 +47,9 @@ const pressable = createToggle.createPressable({
   useTrailing: function useDoubleTapEmojiSettingTrailing() {
     const DoubleTapReactionEmoji = require(3974) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    let obj = require(8016) /* getFallbackDoubleTapDisambiguatedEmoji */;
+    let obj = require(8076) /* getFallbackDoubleTapDisambiguatedEmoji */;
     const result = obj.disambiguatedEmojiFromSettingsValue(setting);
-    const fallbackDoubleTapDisambiguatedEmoji = require(8016) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = require(8076) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
     if (null == result) {
       if (null != fallbackDoubleTapDisambiguatedEmoji) {
         obj = { emoji: null };
@@ -66,7 +66,7 @@ const pressable = createToggle.createPressable({
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(8577);
+    let obj = _require(8637);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
       let closure_0 = arg0;
@@ -84,7 +84,7 @@ const pressable = createToggle.createPressable({
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -127,7 +127,7 @@ const pressable = createToggle.createPressable({
               obj5[0] = callback;
               const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
               constants = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             constants = tmp;
@@ -152,7 +152,7 @@ const pressable = createToggle.createPressable({
   useDescription: function useDoubleTapEmojiDescription() {
     const DoubleTapReactionEmoji = require(3974) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    const result = require(8016) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
+    const result = require(8076) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
     let combined = null;
     if (null != result) {
       const _HermesInternal = HermesInternal;
@@ -186,9 +186,9 @@ let obj1 = {
   useTrailing: function useDoubleTapEmojiSettingTrailing() {
     const DoubleTapReactionEmoji = require(3974) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    let obj = require(8016) /* getFallbackDoubleTapDisambiguatedEmoji */;
+    let obj = require(8076) /* getFallbackDoubleTapDisambiguatedEmoji */;
     const result = obj.disambiguatedEmojiFromSettingsValue(setting);
-    const fallbackDoubleTapDisambiguatedEmoji = require(8016) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
+    const fallbackDoubleTapDisambiguatedEmoji = require(8076) /* getFallbackDoubleTapDisambiguatedEmoji */.getFallbackDoubleTapDisambiguatedEmoji();
     if (null == result) {
       if (null != fallbackDoubleTapDisambiguatedEmoji) {
         obj = { emoji: null };
@@ -205,7 +205,7 @@ let obj1 = {
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(8577);
+    let obj = _require(8637);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
       let closure_0 = arg0;
@@ -223,7 +223,7 @@ let obj1 = {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -266,7 +266,7 @@ let obj1 = {
               obj5[0] = callback;
               const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
               constants = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             constants = tmp;
@@ -291,7 +291,7 @@ let obj1 = {
   useDescription: function useDoubleTapEmojiDescription() {
     const DoubleTapReactionEmoji = require(3974) /* explicitContentFromProto */.DoubleTapReactionEmoji;
     const setting = DoubleTapReactionEmoji.useSetting();
-    const result = require(8016) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
+    const result = require(8076) /* getFallbackDoubleTapDisambiguatedEmoji */.disambiguatedEmojiFromSettingsValue(setting);
     let combined = null;
     if (null != result) {
       const _HermesInternal = HermesInternal;

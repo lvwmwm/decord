@@ -1,10 +1,10 @@
-// Module ID: 7991
-// Function ID: 7992
+// Module ID: 8051
+// Function ID: 8052
 // Name: useIsFirstMessageInMediaPost
 // Dependencies: [1372, 647, 11, 2]
 // Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost, useIsFirstMessageInMediaPost
 
-// Module 7991 (useIsFirstMessageInMediaPost)
+// Module 8051 (useIsFirstMessageInMediaPost)
 import ensureGuildLoaded from "ensureGuildLoaded";
 
 const require = arg1;

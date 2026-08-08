@@ -1,16 +1,16 @@
-// Module ID: 6987
-// Function ID: 6988
+// Module ID: 7047
+// Function ID: 7048
 // Name: constructGoLiveSource
-// Dependencies: [4357, 4398, 6988, 6800, 3971, 2]
+// Dependencies: [4359, 4400, 7048, 6860, 3971, 2]
 // Exports: buildFetchCollectiblesOptionsQuery, constructGoLiveSource, getOptimizedProfileEffectThumbnailUrl, useFetchFractionalPremiumInfo
 
-// Module 6987 (constructGoLiveSource)
+// Module 7047 (constructGoLiveSource)
 import { ApplicationStreamPresets } from "RESOLUTION_720";
 
 const result = require("ShopVariantsReturnStyle").fileFinishedImporting("modules/collectibles/utils/CollectiblesUtils.tsx");
 
 export const constructGoLiveSource = function constructGoLiveSource(resolution, frameRate, desktopSource) {
-  obj = { qualityOptions: obj, context: require(4398) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM };
+  obj = { qualityOptions: obj, context: require(4400) /* BaseConnectionEvent */.MediaEngineContextTypes.STREAM };
   obj = { preset: ApplicationStreamPresets.PRESET_CUSTOM, resolution, frameRate };
   if (null != desktopSource) {
     if (null != desktopSource.desktopSource) {
@@ -55,8 +55,8 @@ export const buildFetchCollectiblesOptionsQuery = function buildFetchCollectible
     if (null !== noCache.paymentGateway) {
       obj.payment_gateway = noCache.paymentGateway;
     }
-    if (noCache.variantsReturnStyle === require(6988) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
-      obj.variants_return_style = tmp2(6988).ShopVariantsReturnStyle.VARIANTS_GROUP;
+    if (noCache.variantsReturnStyle === require(7048) /* ShopVariantsReturnStyle */.ShopVariantsReturnStyle.VARIANTS_GROUP) {
+      obj.variants_return_style = tmp2(7048).ShopVariantsReturnStyle.VARIANTS_GROUP;
     }
     if (null != noCache.shopHomeConfig) {
       obj.shop_home_config = noCache.shopHomeConfig;
@@ -75,7 +75,7 @@ export const getOptimizedProfileEffectThumbnailUrl = function getOptimizedProfil
   }
 };
 export const useFetchFractionalPremiumInfo = function useFetchFractionalPremiumInfo() {
-  const tmp = importDefault(6800)({ forceFetch: true });
+  const tmp = importDefault(6860)({ forceFetch: true });
   let obj = require(3971) /* resetCache */;
   obj = { isLoading: !tmp.fetched, isFractionalPremiumActive: tmp.isFractionalPremiumActive, expiresAt: obj.dateFormat(tmp.endsAt, "L") };
   return obj;

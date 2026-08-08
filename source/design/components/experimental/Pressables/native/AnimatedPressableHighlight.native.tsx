@@ -1,18 +1,18 @@
-// Module ID: 5377
-// Function ID: 5378
+// Module ID: 5378
+// Function ID: 5379
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 4162, 4844, 5378, 4005, 712, 500, 2]
+// Dependencies: [19, 17, 21, 4036, 4846, 5379, 4005, 712, 500, 2]
 
-// Module 5377 (AnimatedPressableHighlight)
+// Module 5378 (AnimatedPressableHighlight)
 import noop from "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import set from "set";
-import importDefaultResult from "module_4162";
+import importDefaultResult from "module_4036";
 import set from "jsxProd";
 
 const require = arg1;
-let closure_6 = require("module_4162").createAnimatedComponent(require("PressableBase").PressableHighlight);
+let closure_6 = require("module_4036").createAnimatedComponent(require("PressableBase").PressableHighlight);
 const result = set.fileFinishedImporting("design/components/experimental/Pressables/native/AnimatedPressableHighlight.native.tsx");
 
 export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
@@ -59,7 +59,7 @@ export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPr
   }, items)} />;
 }) : (function AnimatedPressableHighlightiOS(children) {
   const merged = Object.assign(children, Object.create(null));
-  let obj = require(5378) /* SPRING_CONFIG */;
+  let obj = require(5379) /* SPRING_CONFIG */;
   const iOSPressEffects = obj.useIOSPressEffects(4);
   obj = { accessibilityRole: "button", onPressIn: iOSPressEffects.onPressIn, onPressOut: iOSPressEffects.onPressOut };
   const merged1 = Object.assign(merged);

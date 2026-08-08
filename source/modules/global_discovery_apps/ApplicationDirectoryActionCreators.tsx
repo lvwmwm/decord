@@ -1,10 +1,10 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 11457
+// Function ID: 11458
 // Name: _getEmbedApplication
-// Dependencies: [5, 4301, 1975, 706, 5670, 11392, 11393, 11388, 11394, 11395, 676, 709, 584, 530, 11389, 500, 11396, 11397, 11398, 2]
+// Dependencies: [5, 4302, 1975, 706, 5730, 11458, 11459, 11454, 11460, 11461, 676, 709, 584, 530, 11455, 500, 11462, 11463, 11464, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11391 (_getEmbedApplication)
+// Module 11457 (_getEmbedApplication)
 import getLastFetchTimeMs from "getLastFetchTimeMs";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -42,7 +42,7 @@ function _getEmbedApplication() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -178,7 +178,7 @@ function _getApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -207,7 +207,7 @@ function _getApplication() {
               closure_7 = undefined;
               closure_7 = 1;
               c8 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -316,7 +316,7 @@ function _getCategories() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -407,7 +407,7 @@ function _getSimilarApplications() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -435,7 +435,7 @@ function _getSimilarApplications() {
               closure_7 = undefined;
               closure_7 = 1;
               c8 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -576,7 +576,7 @@ function _search() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -616,7 +616,7 @@ function _search() {
                 let closure_18;
                 categoryId = 1;
                 integrationType = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else {
               if (1 === tmp7) {
@@ -841,7 +841,7 @@ function _fetchCollections() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -880,7 +880,7 @@ function _fetchCollections() {
               let body;
               locale = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -907,7 +907,7 @@ function _fetchCollections() {
                 if (fetchState !== constants.FETCHING) {
                   let tmp29 = !dependencyMap;
                   if (!dependencyMap) {
-                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11398).ApplicationCollectionActiveState.ACTIVE;
+                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11464).ApplicationCollectionActiveState.ACTIVE;
                   }
                   c6 = tmp29;
                   let obj5 = ACTIVE(709);
@@ -926,10 +926,10 @@ function _fetchCollections() {
                   let obj9 = APPLICATION_DIRECTORY(500);
                   locale = APPLICATION_DIRECTORY;
                   if (obj9.isAndroid()) {
-                    let WEB = locale(11396).ApplicationCollectionPlatforms.ANDROID;
+                    let WEB = locale(11462).ApplicationCollectionPlatforms.ANDROID;
                   } else {
                     const localeResult = locale(500);
-                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11396).ApplicationCollectionPlatforms;
+                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11462).ApplicationCollectionPlatforms;
                     if (isIOSResult) {
                       WEB = ApplicationCollectionPlatforms.IOS;
                     } else {
@@ -1013,7 +1013,7 @@ function _fetchIntegrationApplicationIdsForMyGuilds() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

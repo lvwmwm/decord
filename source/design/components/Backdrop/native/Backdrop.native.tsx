@@ -1,10 +1,10 @@
-// Module ID: 4700
-// Function ID: 4701
+// Module ID: 4702
+// Function ID: 4703
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 4302, 712, 1236, 4013, 1609, 4162, 4701, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 1236, 4013, 1609, 4036, 4703, 2]
 // Exports: Backdrop
 
-// Module 4700 (Backdrop)
+// Module 4702 (Backdrop)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -95,6 +95,6 @@ export const Backdrop = function Backdrop(animatedProps) {
     obj5.style = items3;
     items2[1] = tmp7(tmp8, obj5);
     obj[3] = items2;
-    return closure_5(importDefault(4162).View, obj);
+    return closure_5(importDefault(4036).View, obj);
   }
 };

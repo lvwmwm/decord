@@ -1,10 +1,10 @@
-// Module ID: 12605
-// Function ID: 12606
+// Module ID: 12675
+// Function ID: 12676
 // Name: _showMarketingMomentRewardScreen
-// Dependencies: [5, 6941, 6940, 10058, 2]
+// Dependencies: [5, 7001, 7000, 10124, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 12605 (_showMarketingMomentRewardScreen)
+// Module 12675 (_showMarketingMomentRewardScreen)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 
@@ -27,7 +27,7 @@ function _showMarketingMomentRewardScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ function _showMarketingMomentRewardScreen() {
               obj.open(obj3);
             }
             product = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           product = tmp;

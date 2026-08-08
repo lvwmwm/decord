@@ -1,10 +1,10 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15199
+// Function ID: 15200
 // Name: cardSize
-// Dependencies: [3938, 4318, 14458, 1351, 12, 2]
+// Dependencies: [3938, 4319, 14528, 1351, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 15129 (cardSize)
+// Module 15199 (cardSize)
 import upsertRelationship from "upsertRelationship";
 import updateVoiceState from "updateVoiceState";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";
@@ -70,52 +70,70 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
   const items = [
     (kind) => {
       switch (kind.kind) {
-        case "Date":
-        break;
         case "TypeError":
+        break;
+        case "Error":
           let tmp = closure_5;
           let num = 1;
           if (tmp === closure_5) {
             num = 0;
           }
           return num;
-        case "Error":
-        break;
         case "HTTP":
-          tmp = closure_5;
-          num = 1;
-          if (tmp === closure_5) {
-            num = 0;
-          }
-          return num;
+        break;
         case "T":
-        break;
+          tmp = closure_5;
+          num = 1;
+          if (tmp === closure_5) {
+            num = 0;
+          }
+          return num;
         case "HermesInternal":
-          tmp = closure_5;
-          num = 1;
-          if (tmp === closure_5) {
-            num = 0;
-          }
-          return num;
+        break;
         case "Icon":
-        break;
+          tmp = closure_5;
+          num = 1;
+          if (tmp === closure_5) {
+            num = 0;
+          }
+          return num;
         case "IconComponent":
-          tmp = closure_5;
-          num = 1;
-          if (tmp === closure_5) {
-            num = 0;
-          }
-          return num;
-        case "c":
         break;
-        case "p":
+        case "c":
           tmp = closure_5;
           num = 1;
           if (tmp === closure_5) {
             num = 0;
           }
           return num;
+        case "p":
+        break;
         case "LIGHT":
+          tmp = closure_5;
+          num = 1;
+          if (tmp === closure_5) {
+            num = 0;
+          }
+          return num;
+        case "LengthDelimited":
+        break;
+        case "limit":
+          tmp = closure_5;
+          num = 1;
+          if (tmp === closure_5) {
+            num = 0;
+          }
+          return num;
+        case "i":
+        break;
+        case "it":
+          tmp = closure_5;
+          num = 1;
+          if (tmp === closure_5) {
+            num = 0;
+          }
+          return num;
+        case "d":
         break;
         case "Map":
           tmp = closure_5;
@@ -127,25 +145,17 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         case "Math":
         break;
         case "h":
-          tmp = closure_5;
-          num = 1;
-          if (tmp === closure_5) {
-            num = 0;
-          }
-          return num;
+          tmp = closure_7;
+        break;
         case "Number":
         break;
         case "Object":
-          tmp = closure_5;
-          num = 1;
-          if (tmp === closure_5) {
-            num = 0;
-          }
-          return num;
+          tmp = closure_6;
+        break;
         case "ct":
         break;
         case "PX_16":
-          tmp = closure_7;
+          tmp = closure_6;
         break;
         case "flex":
         break;
@@ -159,13 +169,9 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         break;
         case "Promise":
         break;
-        case "i":
-          tmp = closure_6;
-        break;
         case "s":
         break;
         case "Reflect":
-          tmp = closure_6;
         break;
         case "Set":
         break;
@@ -191,8 +197,6 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         break;
         case "__d":
         break;
-        case "d":
-        break;
         case "__esModule":
         break;
         case "__initData":
@@ -214,8 +218,6 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         case "st":
         break;
         case "accessibilityLabel":
-        break;
-        case "it":
         break;
         case "accessibilityRole":
         break;
@@ -278,8 +280,6 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         case "constructor":
         break;
         case "container":
-        break;
-        case "content":
         break;
         default:
           callback(table[3]).assertNever(kind);

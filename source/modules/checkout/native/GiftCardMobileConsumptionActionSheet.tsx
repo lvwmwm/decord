@@ -1,10 +1,10 @@
-// Module ID: 5966
-// Function ID: 5967
+// Module ID: 6026
+// Function ID: 6027
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 1369, 21, 4302, 712, 1609, 4270, 5396, 4710, 5967, 4298, 1236, 2056, 4712, 2]
+// Dependencies: [19, 17, 1369, 21, 4303, 712, 1609, 4271, 5397, 4712, 6027, 4299, 1236, 2056, 4714, 2]
 // Exports: default
 
-// Module 5966 (GiftCardMobileConsumptionActionSheet)
+// Module 6026 (GiftCardMobileConsumptionActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";
@@ -64,20 +64,20 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   items2 = [tmp.container, { paddingBottom: importDefault(1609)().bottom }];
   obj = { spacing: null, children: null };
   obj[0] = importDefault(712).space.PX_16;
-  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(5967).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6027).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
   const intl = markAsDismissed(1236).intl;
   obj2[3] = intl.string(importDefault(2056).V3DI1E);
-  items3[1] = callback(markAsDismissed(4298).Text, obj2);
+  items3[1] = callback(markAsDismissed(4299).Text, obj2);
   const obj3 = { size: "lg", variant: "secondary", grow: true, text: null, onPress: null };
   const intl2 = markAsDismissed(1236).intl;
   obj3[3] = intl2.string(importDefault(2056).YZePWx);
   obj3[4] = function onPress() {
     return callback(outer1_5.USER_DISMISS);
   };
-  items3[2] = callback(markAsDismissed(4712).Button, obj3);
+  items3[2] = callback(markAsDismissed(4714).Button, obj3);
   obj[1] = items3;
-  obj[1] = callback2(markAsDismissed(4710).Stack, obj);
+  obj[1] = callback2(markAsDismissed(4712).Stack, obj);
   obj[3] = callback(View, obj);
-  return callback(markAsDismissed(5396).BottomSheet, obj);
+  return callback(markAsDismissed(5397).BottomSheet, obj);
 };

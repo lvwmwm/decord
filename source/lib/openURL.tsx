@@ -1,7 +1,7 @@
 // Module ID: 3992
 // Function ID: 3993
 // Name: _openURL
-// Dependencies: [5, 3993, 8879, 1988, 2]
+// Dependencies: [5, 3993, 8939, 1988, 2]
 // Exports: default
 
 // Module 3992 (_openURL)
@@ -27,7 +27,7 @@ function _openURL() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _openURL() {
             obj[1] = [];
             arg1.default(callback, obj);
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c4 = tmp;

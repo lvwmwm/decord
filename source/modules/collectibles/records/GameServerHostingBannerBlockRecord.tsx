@@ -1,13 +1,13 @@
-// Module ID: 6977
-// Function ID: 6978
+// Module ID: 7037
+// Function ID: 7038
 // Name: fromServer
-// Dependencies: [6972, 2]
+// Dependencies: [7032, 2]
 
-// Module 6977 (fromServer)
+// Module 7037 (fromServer)
 let prototype;
 prototype = function GameServerHostingBannerBlockRecord(is_dismissible) {
   const obj = Object.create(new.target.prototype);
-  obj.type = require(6972) /* ShopBlockType */.ShopBlockType.GAME_SERVER_HOSTING_BANNER;
+  obj.type = require(7032) /* ShopBlockType */.ShopBlockType.GAME_SERVER_HOSTING_BANNER;
   obj.isDismissible = is_dismissible.is_dismissible;
   return obj;
 }.prototype;
@@ -16,7 +16,7 @@ prototype["fromServer"] = function fromServer(is_dismissible) {
     HermesBuiltin.throwTypeError();
   }
   const obj = Object.create(prototype.prototype);
-  obj.type = require(6972) /* ShopBlockType */.ShopBlockType.GAME_SERVER_HOSTING_BANNER;
+  obj.type = require(7032) /* ShopBlockType */.ShopBlockType.GAME_SERVER_HOSTING_BANNER;
   obj.isDismissible = is_dismissible.is_dismissible;
   return obj;
 };

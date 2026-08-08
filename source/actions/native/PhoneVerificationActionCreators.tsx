@@ -1,9 +1,9 @@
-// Module ID: 8483
-// Function ID: 8484
+// Module ID: 8543
+// Function ID: 8544
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 8483 (dispatcher)
+// Module 8543 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/native/PhoneVerificationActionCreators.tsx");
 
 export default {

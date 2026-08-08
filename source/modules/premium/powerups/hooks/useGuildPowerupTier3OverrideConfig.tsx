@@ -1,10 +1,10 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11914
+// Function ID: 11915
 // Name: useGuildPowerupTier3OverrideConfig
 // Dependencies: [1891, 676, 589, 1236, 2316, 2]
 // Exports: default
 
-// Module 11848 (useGuildPowerupTier3OverrideConfig)
+// Module 11914 (useGuildPowerupTier3OverrideConfig)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 

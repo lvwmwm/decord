@@ -1,16 +1,16 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14646
+// Function ID: 14647
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1304, 8022, 3974, 14577, 10380, 1236, 2]
+// Dependencies: [1304, 8082, 3974, 14647, 10446, 1236, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14576 (onImageDescriptionSettingValueChange)
+// Module 14646 (onImageDescriptionSettingValueChange)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import createToggle from "createToggle";
 
 const require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {
-  let obj = require(14577) /* UserSettingsText */;
+  let obj = require(14647) /* UserSettingsText */;
   obj = { videoUploadQuality: CHANNEL_SIDEBAR_WIDTH.videoUploadQuality, viewImageDescriptions, lowQualityImageMode: CHANNEL_SIDEBAR_WIDTH.lowQualityImageMode, dataSavingMode: CHANNEL_SIDEBAR_WIDTH.dataSavingMode };
   obj.setImageDescriptions(obj);
 }

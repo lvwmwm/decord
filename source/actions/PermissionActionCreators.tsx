@@ -1,9 +1,9 @@
-// Module ID: 15907
-// Function ID: 15908
+// Module ID: 15982
+// Function ID: 15983
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 15907 (dispatcher)
+// Module 15982 (dispatcher)
 const result = require("set").fileFinishedImporting("actions/PermissionActionCreators.tsx");
 
 export default {

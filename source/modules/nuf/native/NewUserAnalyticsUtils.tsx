@@ -1,10 +1,10 @@
-// Module ID: 11971
-// Function ID: 11972
+// Module ID: 12037
+// Function ID: 12038
 // Name: trackNUFStep
 // Dependencies: [676, 698, 2]
 // Exports: trackNUFStep
 
-// Module 11971 (trackNUFStep)
+// Module 12037 (trackNUFStep)
 import { AnalyticEvents } from "ME";
 
 let c3 = 0;

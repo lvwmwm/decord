@@ -1,9 +1,9 @@
-// Module ID: 4113
-// Function ID: 4114
+// Module ID: 4119
+// Function ID: 4120
 // Name: isSyncedModeThemesEnabled
-// Dependencies: [1303, 1302, 1304, 1340, 1376, 1372, 1903, 4114, 1305, 1348, 4117, 1358, 4140, 3947, 3974, 1347, 4143, 589, 4144, 709, 2]
+// Dependencies: [1303, 1302, 1304, 1340, 1376, 1372, 1903, 4120, 1305, 1348, 4123, 1358, 4146, 3947, 3974, 1347, 4149, 589, 4150, 709, 2]
 
-// Module 4113 (isSyncedModeThemesEnabled)
+// Module 4119 (isSyncedModeThemesEnabled)
 import initialize from "initialize";
 import handleThemeChange from "handleThemeChange";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
@@ -69,7 +69,7 @@ function handleUserSettingsProtoStoreUpdate() {
     result = tmpResult.isPerModeThemingActive(isSyncedModeThemesEnabled);
   }
   if (!result) {
-    tmpResult = tmp(4143);
+    tmpResult = tmp(4149);
     tmpResult.setUseSystemTheme(SystemThemeState.OFF);
   }
   if (null != backgroundGradientPresetId) {
@@ -174,8 +174,8 @@ Object.defineProperty(prototype, "gradientPreset", {
 prototype["getLinearGradient"] = function getLinearGradient() {
   let linearGradientForBackgroundGradient = null;
   if (null != this.gradientPreset) {
-    linearGradientForBackgroundGradient = require(4144) /* getThemeForColor */.getLinearGradientForBackgroundGradient(tmp.gradientPreset);
-    const obj = require(4144) /* getThemeForColor */;
+    linearGradientForBackgroundGradient = require(4150) /* getThemeForColor */.getLinearGradientForBackgroundGradient(tmp.gradientPreset);
+    const obj = require(4150) /* getThemeForColor */;
   }
   return linearGradientForBackgroundGradient;
 };
@@ -237,9 +237,9 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(require("dis
               let c15 = true;
             }
           }
-          tmp6Result = tmp6(4140);
+          tmp6Result = tmp6(4146);
         }
-        obj2 = require(4117) /* UNSAFE_isDismissibleContentDismissed */;
+        obj2 = require(4123) /* UNSAFE_isDismissibleContentDismissed */;
         tmp6 = require;
       }
     }

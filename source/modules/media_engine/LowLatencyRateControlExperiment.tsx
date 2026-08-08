@@ -1,10 +1,10 @@
-// Module ID: 13041
-// Function ID: 13042
+// Module ID: 13111
+// Function ID: 13112
 // Name: getLowLatencyRateControlExperimentConfig
 // Dependencies: [1349, 2]
 // Exports: getLowLatencyRateControlExperimentConfig
 
-// Module 13041 (getLowLatencyRateControlExperimentConfig)
+// Module 13111 (getLowLatencyRateControlExperimentConfig)
 let obj = { 1: null };
 obj[1] = { enabled: true };
 let closure_0 = require("getUnitId")({ kind: "user", name: "2025-10-low-latency-rate-control", defaultConfig: { enabled: false }, variations: obj });

@@ -1,10 +1,10 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11514
+// Function ID: 11515
 // Name: AppLauncherApplicationViewScreenInner
-// Dependencies: [19, 17, 8279, 1479, 4735, 21, 4302, 9483, 11449, 8278, 1607, 11450, 5674, 4162, 11451, 2]
+// Dependencies: [19, 17, 8339, 1479, 4737, 21, 4303, 9548, 11515, 8338, 1607, 11516, 5734, 4036, 11517, 2]
 // Exports: default
 
-// Module 11448 (AppLauncherApplicationViewScreenInner)
+// Module 11514 (AppLauncherApplicationViewScreenInner)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import getIndexKey from "getIndexKey";

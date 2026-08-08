@@ -1,9 +1,9 @@
-// Module ID: 15416
-// Function ID: 15417
+// Module ID: 15491
+// Function ID: 15492
 // Name: YouBarMaskedBackground
-// Dependencies: [19, 17, 14268, 21, 4302, 712, 5309, 4723, 689, 4005, 14353, 4162, 4711, 2]
+// Dependencies: [19, 17, 14338, 21, 4303, 712, 5310, 4725, 689, 4005, 14423, 4036, 4713, 2]
 
-// Module 15416 (YouBarMaskedBackground)
+// Module 15491 (YouBarMaskedBackground)
 import { View } from "get ActivityIndicator";
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 import jsxProd from "jsxProd";
@@ -28,8 +28,8 @@ function YouBarMaskedBackground(barWidth) {
   const obj3 = { style: obj4, colors: null, start: null, end: null, locations: null, pointerEvents: "none" };
   const obj2 = { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" };
   obj4 = { position: "absolute", top: YOU_BAR_HEIGHT / 2, width: 8, left: diff - 8, height: YOU_BAR_HEIGHT / 2 };
-  const tmp3 = importDefault(5309);
-  const tmp4 = importDefault(4723);
+  const tmp3 = importDefault(5310);
+  const tmp4 = importDefault(4725);
   const obj8 = importDefault(689)("#000000");
   const items1 = [importDefault(689)("#000000").alpha(0).hex(), "#000000"];
   obj3[1] = items1;
@@ -51,9 +51,9 @@ function YouBarAnimatedBackground(arg0) {
   ({ barWidth, backgroundColor } = arg0);
   let obj = _require(4005);
   const token = obj.useToken(importDefault(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp3 = importDefault(14353)(token);
+  const tmp3 = importDefault(14423)(token);
   _require = tmp3;
-  const tmp4 = importDefault(14353)(token, YOU_BAR_HEIGHT / 2);
+  const tmp4 = importDefault(14423)(token, YOU_BAR_HEIGHT / 2);
   importDefault = tmp4;
   const tmp = callback3();
   const fn = function u() {
@@ -65,13 +65,13 @@ function YouBarAnimatedBackground(arg0) {
     obj[2] = _undefined(outer1_2[12]).withSpring(_undefined2.get(), outer1_5);
     return obj;
   };
-  obj = { withSpring: _require(4711).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
+  obj = { withSpring: _require(4713).withSpring, questDockAnimatedBorderRadius: tmp3, YOU_BAR_SPRING_CONFIG, questDockAnimatedBottomLeftRadius: tmp4 };
   fn.__closure = obj;
   fn.__workletHash = 14606701040012;
   fn.__initData = closure_10;
-  const animatedStyle = _require(4162).useAnimatedStyle(fn);
+  const animatedStyle = _require(4036).useAnimatedStyle(fn);
   const style = [{ position: "absolute" }, tmp.youRowFloating, { width: barWidth, height: YOU_BAR_HEIGHT, backgroundColor }, { borderTopRightRadius: 0, borderTopLeftRadius: 0 }, animatedStyle];
-  return callback(importDefault(4162).View, { style });
+  return callback(importDefault(4036).View, { style });
 }
 const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
 const YOU_BAR_SPRING_CONFIG = CONNECTION_BANNER_HEIGHT.YOU_BAR_SPRING_CONFIG;

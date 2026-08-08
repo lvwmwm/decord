@@ -1,10 +1,10 @@
-// Module ID: 8135
-// Function ID: 8136
+// Module ID: 8195
+// Function ID: 8196
 // Name: XNeutralIcon
-// Dependencies: [19, 21, 4004, 8136, 2]
+// Dependencies: [19, 21, 4004, 8196, 2]
 // Exports: XNeutralIcon
 
-// Module 8135 (XNeutralIcon)
+// Module 8195 (XNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const XNeutralIcon = function XNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8136) /* registerAsset */;
+  obj[0] = require(8196) /* registerAsset */;
   obj[1] = str;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

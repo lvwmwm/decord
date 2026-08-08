@@ -1,10 +1,10 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 10979
+// Function ID: 10980
 // Name: _launchActivityInBotDM
-// Dependencies: [5, 10543, 10544, 4312, 10907, 2]
+// Dependencies: [5, 10609, 10610, 4313, 10973, 2]
 // Exports: launchActivityInBotDM
 
-// Module 10913 (_launchActivityInBotDM)
+// Module 10979 (_launchActivityInBotDM)
 import set from "set";
 
 const require = arg1;
@@ -32,7 +32,7 @@ function _launchActivityInBotDM() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ function _launchActivityInBotDM() {
               let closure_6;
               c3 = 1;
               c4 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -74,14 +74,14 @@ function _launchActivityInBotDM() {
               const obj2 = { applicationId: null };
               obj2[0] = callback;
               if (obj14.tryLaunchAsFrame(obj2)) {
-                let obj7 = callback(10544);
+                let obj7 = callback(10610);
                 const result = obj7.stashPendingFrameLaunch(callback, { isStart: true });
                 c4 = 3;
                 const obj3 = { value: null, done: true };
                 obj3[0] = Promise.resolve(true);
                 return obj3;
               } else {
-                let obj4 = callback2(4312);
+                let obj4 = callback2(4313);
                 obj4 = { recipientIds: null };
                 obj4[0] = callback2;
                 c3 = 2;
@@ -90,7 +90,7 @@ function _launchActivityInBotDM() {
                 obj5[0] = obj4.openPrivateChannel(obj4);
                 return obj5;
               }
-              obj14 = callback(10543);
+              obj14 = callback(10609);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {
@@ -113,7 +113,7 @@ function _launchActivityInBotDM() {
               c3 = 3;
               c4 = 1;
               const obj8 = { value: null, done: false };
-              obj8[0] = callback2(10907)(obj7);
+              obj8[0] = callback2(10973)(obj7);
               return obj8;
             }
           } else if (arg0 === 1) {

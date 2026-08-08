@@ -1,10 +1,10 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 9455
+// Function ID: 9456
 // Name: ClearInputButton
-// Dependencies: [32, 19, 17, 1903, 9391, 676, 1906, 21, 4302, 712, 4844, 1236, 1297, 8408, 9392, 698, 9383, 589, 9393, 9394, 4147, 9396, 4708, 8577, 5368, 9397, 9399, 4160, 9400, 8322, 5269, 4298, 9458, 7915, 5707, 5373, 4270, 9459, 1988, 9461, 4261, 501, 1623, 4507, 5723, 2]
+// Dependencies: [32, 19, 17, 1903, 9456, 676, 1906, 21, 4303, 712, 4846, 1236, 1297, 8468, 9457, 698, 9448, 589, 9458, 9459, 4153, 9461, 4710, 8637, 5369, 9462, 9464, 4166, 9465, 8382, 5270, 4299, 9523, 7975, 5767, 5374, 4271, 9524, 1988, 9526, 4262, 501, 1623, 4509, 5783, 2]
 // Exports: default
 
-// Module 9390 (ClearInputButton)
+// Module 9455 (ClearInputButton)
 import ActivityEmoji from "ActivityEmoji";
 import setCustomStatus from "setCustomStatus";
 import get_ActivityIndicator from "initialize";
@@ -31,11 +31,11 @@ function ClearInputButton(onPress) {
   obj[3] = onPress.onPress;
   obj[4] = { top: 8, bottom: 8, right: 8 };
   obj = { source: null, style: null, size: null };
-  obj[0] = importDefault(8408);
+  obj[0] = importDefault(8468);
   obj[1] = createCacheKey().closeIcon;
   obj[2] = require(1297) /* Button */.Icon.Sizes.SMALL;
   obj[5] = callback(require(1297) /* Button */.Icon, obj);
-  return callback(require(4844) /* PressableBase */.PressableOpacity, obj);
+  return callback(require(4846) /* PressableBase */.PressableOpacity, obj);
 }
 function EditCustomStatusWithPreview(navigation) {
   navigation = navigation.navigation;
@@ -374,7 +374,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
       const obj = { title: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.Iuzg8R);
-      return callback3(callback(8322).GenericHeaderTitle, obj);
+      return callback3(callback(8382).GenericHeaderTitle, obj);
     };
     obj[2] = analyticsLocations(outer1_2[30]).getHeaderCloseButton(_prompt(outer1_2[43]).pop);
     obj[4] = function render(arg0, navigation) {
@@ -393,5 +393,5 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     obj = { height: 56 };
   }
   obj[3] = obj;
-  return tmp2(analyticsLocations(5723).Navigator, obj);
+  return tmp2(analyticsLocations(5783).Navigator, obj);
 };

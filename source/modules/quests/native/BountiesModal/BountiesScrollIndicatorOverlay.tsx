@@ -1,10 +1,10 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14279
+// Function ID: 14280
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4306, 4302, 712, 4162, 4303, 4723, 14210, 4298, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4307, 4303, 712, 4036, 4304, 4725, 14280, 4299, 1236, 2]
 // Exports: default
 
-// Module 14209 (BountiesScrollIndicatorOverlay)
+// Module 14279 (BountiesScrollIndicatorOverlay)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";

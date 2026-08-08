@@ -1,16 +1,16 @@
-// Module ID: 8112
-// Function ID: 8113
+// Module ID: 8172
+// Function ID: 8173
 // Name: maybeSortByProbability
-// Dependencies: [8113, 2]
+// Dependencies: [8173, 2]
 // Exports: maybeSortByProbability
 
-// Module 8112 (maybeSortByProbability)
+// Module 8172 (maybeSortByProbability)
 const result = require("set").fileFinishedImporting("modules/user_affinities/maybeSortByProbability.tsx");
 
 export const maybeSortByProbability = function maybeSortByProbability(reduced, userAffinitiesMap, location) {
   let sort = reduced;
   const _require = userAffinitiesMap;
-  const voiceUserAffinitySortType = _require(8113).getVoiceUserAffinitySortType(location);
+  const voiceUserAffinitySortType = _require(8173).getVoiceUserAffinitySortType(location);
   if (null == voiceUserAffinitySortType) {
     return sort;
   } else if ("vc_probability" === voiceUserAffinitySortType) {

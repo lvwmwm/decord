@@ -1,10 +1,10 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 15508
+// Function ID: 15509
 // Name: goBack
-// Dependencies: [19, 17, 9509, 1369, 21, 4302, 712, 4153, 7581, 8315, 15434, 5327, 4844, 1236, 15435, 4298, 15436, 8321, 15438, 5668, 5688, 6874, 5275, 5655, 15442, 15443, 11228, 4148, 1609, 15079, 4846, 4013, 2]
+// Dependencies: [19, 17, 9574, 1369, 21, 4303, 712, 4159, 7641, 8375, 15509, 5328, 4846, 1236, 15510, 4299, 15511, 8381, 15513, 5728, 5748, 6934, 5276, 5715, 15517, 15518, 11294, 4154, 1609, 15149, 4848, 4013, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 15433 (goBack)
+// Module 15508 (goBack)
 import importAllResult from "context";
 import { View } from "SavedMessageSortTypes";
 import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS";
@@ -17,7 +17,7 @@ let error;
 let metroImportAll;
 const require = arg1;
 function goBack() {
-  const navigation = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
+  const navigation = require(4159) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != navigation) {
     if (navigation.canGoBack()) {
       navigation.goBack();
@@ -38,9 +38,9 @@ class Notifications {
     }
     tmp = jsxs();
     tmp2 = require("context");
-    layoutEffect = defineProperty.useLayoutEffect(() => callback(6874).trackAppUIViewed(), []);
+    layoutEffect = defineProperty.useLayoutEffect(() => callback(6934).trackAppUIViewed(), []);
     callback = defineProperty.useCallback(() => {
-      const navigation = callback(4153).getRootNavigationRef();
+      const navigation = callback(4159).getRootNavigationRef();
       if (null != navigation) {
         if (navigation.canGoBack()) {
           navigation.goBack();
@@ -138,10 +138,10 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   nestedInLaunchPad = nestedInLaunchPad.nestedInLaunchPad;
   let _require;
   const tmp = callback3();
-  let obj = _require(8315);
+  let obj = _require(8375);
   const isForLaterExperimentOn = obj.useIsForLaterExperimentOn("NativeNotifications");
   const ref = importAllResult.useRef(null);
-  const tmp8 = importDefault(15434)(ref);
+  const tmp8 = importDefault(15509)(ref);
   _require = tmp8;
   const items = [tmp8];
   const callback = importAllResult.useCallback(() => _undefined(outer1_6.TAKE_ACTION), items);
@@ -159,13 +159,13 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
     const intl = tmp5(1236).intl;
     obj1[1] = intl.string(tmp5(1236).t["13/7kX"]);
     obj1[2] = goBack;
-    obj1[3] = tmp12(tmp5(15435).LeftBackIconWithBadge, {});
-    const items1 = [tmp12(tmp5(4844).PressableOpacity, obj1), , ];
+    obj1[3] = tmp12(tmp5(15510).LeftBackIconWithBadge, {});
+    const items1 = [tmp12(tmp5(4846).PressableOpacity, obj1), , ];
     const obj2 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", style: null, maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     obj2[2] = tmp.headerText;
     const intl2 = tmp5(1236).intl;
     obj2[5] = intl2.string(tmp5(1236).t.HcoRu0);
-    items1[1] = tmp12(tmp5(4298).Text, obj2);
+    items1[1] = tmp12(tmp5(4299).Text, obj2);
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.actionButtons;
     tmp10Result = null;
@@ -173,19 +173,19 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
       const obj4 = { children: null };
       const obj5 = { ref: null, type: null, onOpen: null };
       obj5[0] = ref;
-      let tmp2Result = tmp2(15436);
-      obj5[1] = tmp5(8321).SavedMessageSortTypes.BOOKMARK;
+      let tmp2Result = tmp2(15511);
+      obj5[1] = tmp5(8381).SavedMessageSortTypes.BOOKMARK;
       obj5[2] = callback;
       const items2 = [tmp12(tmp2Result, obj5), ];
       const obj6 = { type: null, onOpen: null };
-      tmp2Result = tmp2(15436);
-      obj6[0] = tmp5(8321).SavedMessageSortTypes.REMINDER;
+      tmp2Result = tmp2(15511);
+      obj6[0] = tmp5(8381).SavedMessageSortTypes.REMINDER;
       obj6[1] = callback;
       items2[1] = tmp12(tmp2Result, obj6);
       obj4[0] = items2;
       tmp10Result = tmp10(closure_8, obj4);
     }
-    const items3 = [tmp10Result, tmp12(tmp2(15438), {})];
+    const items3 = [tmp10Result, tmp12(tmp2(15513), {})];
     obj3[1] = items3;
     items1[2] = tmp10(tmp11, obj3);
     obj[1] = items1;
@@ -193,7 +193,7 @@ let closure_12 = importAllResult.memo(function HeaderInner(nestedInLaunchPad) {
   }
   const obj7 = { children: null };
   obj[1] = tmp10Result;
-  const items4 = [closure_7(_require(5327).SafeAreaPaddingView, obj), ];
+  const items4 = [closure_7(_require(5328).SafeAreaPaddingView, obj), ];
   const items5 = [tmp.headerBorder];
   items4[1] = closure_7(View, { style: items5 });
   obj7[0] = items4;

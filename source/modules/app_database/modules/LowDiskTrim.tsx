@@ -1,9 +1,9 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7116
+// Function ID: 7117
 // Name: handlePostConnectionOpen
-// Dependencies: [6878, 1936, 2]
+// Dependencies: [6938, 1936, 2]
 
-// Module 7056 (handlePostConnectionOpen)
+// Module 7116 (handlePostConnectionOpen)
 import importDefaultResult from "result";
 
 let obj = importDefault;

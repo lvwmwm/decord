@@ -1,7 +1,7 @@
 // Module ID: 4003
 // Function ID: 4004
 // Name: FriendsIcon
-// Dependencies: [19, 21, 712, 4004, 4239, 2]
+// Dependencies: [19, 21, 712, 4004, 4240, 2]
 // Exports: FriendsIcon
 
 // Module 4003 (FriendsIcon)
@@ -18,7 +18,7 @@ export const FriendsIcon = function FriendsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4239) /* registerAsset */;
+  obj[0] = require(4240) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

@@ -1,10 +1,10 @@
-// Module ID: 8137
-// Function ID: 8138
+// Module ID: 8197
+// Function ID: 8198
 // Name: FacebookNeutralIcon
-// Dependencies: [19, 21, 712, 4004, 8138, 2]
+// Dependencies: [19, 21, 712, 4004, 8198, 2]
 // Exports: FacebookNeutralIcon
 
-// Module 8137 (FacebookNeutralIcon)
+// Module 8197 (FacebookNeutralIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FacebookNeutralIcon = function FacebookNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(8138) /* registerAsset */;
+  obj[0] = require(8198) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

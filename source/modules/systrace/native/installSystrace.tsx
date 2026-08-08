@@ -1,10 +1,10 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 13664
+// Function ID: 13665
 // Name: installSystrace
-// Dependencies: [17, 500, 13595, 2]
+// Dependencies: [17, 500, 13665, 2]
 // Exports: installSystrace
 
-// Module 13594 (installSystrace)
+// Module 13664 (installSystrace)
 import { Systrace } from "get ActivityIndicator";
 
 const result = require("enforcing").fileFinishedImporting("modules/systrace/native/installSystrace.tsx");
@@ -12,7 +12,7 @@ const result = require("enforcing").fileFinishedImporting("modules/systrace/nati
 export const installSystrace = function installSystrace() {
   if (obj.isAndroid()) {
     Systrace.isEnabled = () => {
-      const _default = callback(13595).default;
+      const _default = callback(13665).default;
       let flag;
       if (_default != null) {
         flag = _default.isEnabled();
@@ -23,7 +23,7 @@ export const installSystrace = function installSystrace() {
       return flag;
     };
     Systrace.beginEvent = (fn) => {
-      const _default = callback(13595).default;
+      const _default = callback(13665).default;
       if (_default != null) {
         let tmp2 = fn;
         if (typeof fn !== "string") {
@@ -33,13 +33,13 @@ export const installSystrace = function installSystrace() {
       }
     };
     Systrace.endEvent = () => {
-      const _default = callback(13595).default;
+      const _default = callback(13665).default;
       if (_default != null) {
         _default.endEvent();
       }
     };
     Systrace.beginAsyncEvent = (fn) => {
-      const _default = callback(13595).default;
+      const _default = callback(13665).default;
       let num;
       if (_default != null) {
         let tmp2 = fn;
@@ -54,7 +54,7 @@ export const installSystrace = function installSystrace() {
       return num;
     };
     Systrace.endAsyncEvent = (fn) => {
-      const _default = callback(13595).default;
+      const _default = callback(13665).default;
       if (_default != null) {
         let tmp2 = fn;
         if (typeof fn !== "string") {
@@ -64,7 +64,7 @@ export const installSystrace = function installSystrace() {
       }
     };
     Systrace.counterEvent = (pending_js_to_native_queue, length) => {
-      const _default = callback(13595).default;
+      const _default = callback(13665).default;
       if (_default != null) {
         let tmp2 = pending_js_to_native_queue;
         if (typeof pending_js_to_native_queue !== "string") {

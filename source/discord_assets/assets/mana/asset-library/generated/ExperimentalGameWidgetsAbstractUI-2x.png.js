@@ -1,9 +1,9 @@
-// Module ID: 6203
-// Function ID: 6204
+// Module ID: 6263
+// Function ID: 6264
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6203 (metadata)
+// Module 6263 (metadata)
 const result = require("set").fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalGameWidgetsAbstractUI-2x.png.js");
 
 export default "https://cdn.discordapp.com/assets/content/abc2fd612fd1c184588b1a43947c04e4df115b09db9935b2a129229d46e9656a.png";

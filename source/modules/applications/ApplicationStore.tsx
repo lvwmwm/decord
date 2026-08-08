@@ -1,9 +1,9 @@
-// Module ID: 4339
-// Function ID: 4340
+// Module ID: 4341
+// Function ID: 4342
 // Name: addApplication
-// Dependencies: [32, 4325, 589, 709, 2]
+// Dependencies: [32, 4326, 589, 709, 2]
 
-// Module 4339 (addApplication)
+// Module 4341 (addApplication)
 import _slicedToArray from "_slicedToArray";
 import createExecutable from "createExecutable";
 import { PersistedStore } from "initialize";

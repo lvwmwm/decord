@@ -1,10 +1,10 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8291
+// Function ID: 8292
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 6836, 1905, 21, 4302, 712, 689, 4723, 691, 2]
+// Dependencies: [19, 6896, 1905, 21, 4303, 712, 689, 4725, 691, 2]
 // Exports: default
 
-// Module 8231 (PremiumFeaturesBackground)
+// Module 8291 (PremiumFeaturesBackground)
 import "noop";
 import { Gradients } from "items";
 import { PremiumTypes } from "GuildFeatures";
@@ -46,5 +46,5 @@ export default function PremiumFeaturesBackground(opacity) {
   obj[3] = num(691).HorizontalGradient.END;
   const merged1 = Object.assign(merged);
   obj.children = children;
-  return jsx(importDefault(4723), { style: items, colors: mapped, start: null, end: null });
+  return jsx(importDefault(4725), { style: items, colors: mapped, start: null, end: null });
 };

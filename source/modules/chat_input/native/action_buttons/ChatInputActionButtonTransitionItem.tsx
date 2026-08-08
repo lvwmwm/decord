@@ -1,10 +1,10 @@
-// Module ID: 11550
-// Function ID: 11551
+// Module ID: 11616
+// Function ID: 11617
 // Name: FadeTransitionItem
-// Dependencies: [19, 17, 11302, 21, 4646, 4162, 4303, 11551, 2]
+// Dependencies: [19, 17, 11368, 21, 4648, 4036, 4304, 11617, 2]
 // Exports: default, interactivityProps
 
-// Module 11550 (FadeTransitionItem)
+// Module 11616 (FadeTransitionItem)
 import noop from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta";
@@ -79,12 +79,12 @@ function BounceTransitionItem(state) {
   state = state.state;
   ({ cleanup, bounceEnterDelayMs, children } = state);
   let obj = { visible: null, initiallyVisible: null, enterDelayMs: null, onExitComplete: null, interactiveDuringEnter: true };
-  obj[0] = state !== require(4646) /* wrapChildrenDefault */.TransitionStates.YEETED;
-  obj[1] = state !== require(4646) /* wrapChildrenDefault */.TransitionStates.ENTERED;
+  obj[0] = state !== require(4648) /* wrapChildrenDefault */.TransitionStates.YEETED;
+  obj[1] = state !== require(4648) /* wrapChildrenDefault */.TransitionStates.ENTERED;
   obj[2] = bounceEnterDelayMs;
   obj[3] = cleanup;
-  const tmp = importDefault(11551);
-  ({ isInteractive, animatedStyle } = importDefault(11551)(obj));
+  const tmp = importDefault(11617);
+  ({ isInteractive, animatedStyle } = importDefault(11617)(obj));
   obj = { style: items };
   items = [closure_6.transitionItemCentered, animatedStyle];
   let str = "none";
@@ -99,7 +99,7 @@ function BounceTransitionItem(state) {
   obj[2] = str2;
   const merged = Object.assign(obj);
   obj.children = children;
-  return jsx(importDefault(4162).View, { pointerEvents: str, accessibilityElementsHidden: !isInteractive, importantForAccessibility: null });
+  return jsx(importDefault(4036).View, { pointerEvents: str, accessibilityElementsHidden: !isInteractive, importantForAccessibility: null });
 }
 const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };

@@ -1,10 +1,10 @@
-// Module ID: 8458
-// Function ID: 8459
+// Module ID: 8518
+// Function ID: 8519
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 8411, 1366, 1903, 676, 505, 21, 4302, 712, 589, 8399, 8459, 4201, 4298, 1236, 8460, 8430, 4507, 8461, 1988, 4712, 4641, 8484, 2]
+// Dependencies: [5, 32, 19, 17, 8471, 1366, 1903, 676, 505, 21, 4303, 712, 589, 8459, 8519, 4202, 4299, 1236, 8520, 8490, 4509, 8521, 1988, 4714, 4643, 8544, 2]
 // Exports: default
 
-// Module 8458 (AddPhone)
+// Module 8518 (AddPhone)
 import handleRequiredAction from "handleRequiredAction";
 import _slicedToArray from "_slicedToArray";
 import PhoneOrEmailSelectorForceMode from "PhoneOrEmailSelectorForceMode";
@@ -68,7 +68,7 @@ export default function AddPhone(reason) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 16767
-// Function ID: 16768
+// Module ID: 16844
+// Function ID: 16845
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4302, 8626, 1236, 2]
+// Dependencies: [19, 21, 4303, 8686, 1236, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 16767 (GuildPremiumRoleSubscribeButton)
+// Module 16844 (GuildPremiumRoleSubscribeButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,5 +19,5 @@ export const GuildPremiumRoleSubscribeButton = function GuildPremiumRoleSubscrib
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.BEeXib);
   obj[1] = onPress.onPress;
   obj[2] = callback().crButton;
-  return jsx(require(8626) /* CreatorRevenueButton */.CreatorRevenueButton, { text: null, onPress: null, style: null, disabled: true });
+  return jsx(require(8686) /* CreatorRevenueButton */.CreatorRevenueButton, { text: null, onPress: null, style: null, disabled: true });
 };

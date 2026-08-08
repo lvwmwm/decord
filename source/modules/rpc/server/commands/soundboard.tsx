@@ -1,9 +1,9 @@
-// Module ID: 13702
-// Function ID: 13703
+// Module ID: 13772
+// Function ID: 13773
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4747, 1903, 4205, 505, 8842, 5893, 4754, 10673, 5928, 5899, 10670, 5930, 5688, 2]
+// Dependencies: [5, 4749, 1903, 4206, 505, 8902, 5953, 4756, 10739, 5988, 5959, 10736, 5990, 5748, 2]
 
-// Module 13702 (RPC_LOCAL_SCOPE)
+// Module 13772 (RPC_LOCAL_SCOPE)
 import set from "set";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -42,7 +42,7 @@ const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj2[RPC_SCOPE_CONFIG.ALL] = items1;
 obj1[0] = obj2;
 obj1[1] = function validation(string) {
-  let obj = importDefault(10673)(string);
+  let obj = importDefault(10739)(string);
   obj = { guild_id: string.string(), sound_id: string.string() };
   return obj.required().keys(obj);
 };
@@ -62,7 +62,7 @@ obj1[2] = function handler(args) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -123,7 +123,7 @@ obj1[2] = function handler(args) {
                 obj3.playSound(outer1_1, id.id, items);
               }
               c3 = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             } else {
               const obj4 = { errorCode: null };
               obj4[0] = outer1_6.INVALID_PERMISSIONS;

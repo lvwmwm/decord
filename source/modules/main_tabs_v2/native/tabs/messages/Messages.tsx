@@ -1,8 +1,8 @@
-// Module ID: 15084
-// Function ID: 15085
-// Dependencies: [19, 17, 4294, 4992, 21, 4302, 712, 5668, 5688, 4162, 14270, 14261, 15085, 15109, 15111, 15112, 15113, 12614, 15114, 1348, 500, 4153, 4152, 5370, 6874, 9, 14269, 1236, 8234, 15086, 15115, 15117, 15163, 15164, 11228, 2]
+// Module ID: 15154
+// Function ID: 15155
+// Dependencies: [19, 17, 4295, 4994, 21, 4303, 712, 5728, 5748, 4036, 14340, 14331, 15155, 15179, 15181, 15182, 15183, 12684, 15184, 1348, 500, 4159, 4158, 5371, 6934, 9, 14339, 1236, 8294, 15156, 15185, 15187, 15233, 15234, 11294, 2]
 
-// Module 15084
+// Module 15154
 import importAllResult from "useIsMobileVisualRefreshExperimentEnabled";
 import { View } from "useCommonTriggerPoint";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

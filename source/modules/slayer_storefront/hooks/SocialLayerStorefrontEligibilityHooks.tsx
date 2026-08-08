@@ -1,10 +1,10 @@
-// Module ID: 9304
-// Function ID: 9305
+// Module ID: 9369
+// Function ID: 9370
 // Name: useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
-// Dependencies: [9305, 4322, 7020, 1891, 4388, 5790, 589, 8844, 9306, 2]
+// Dependencies: [9370, 4323, 7080, 1891, 4390, 5850, 589, 8904, 9371, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 9304 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
+// Module 9369 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
 import map from "map";
 import initialize from "initialize";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
@@ -117,7 +117,7 @@ export const useUsersPlayingStorefrontEnabledGamesApplicationIds = function useU
     return items;
   }, items1);
   const obj = userIds(589);
-  const slayerStorefrontDevApplicationIdOverride = userIds(9306).useSlayerStorefrontDevApplicationIdOverride();
+  const slayerStorefrontDevApplicationIdOverride = userIds(9371).useSlayerStorefrontDevApplicationIdOverride();
   let tmp3 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {
     const items2 = [];
@@ -154,7 +154,7 @@ export const useAreUsersPlayingStorefrontEnabledGames = function useAreUsersPlay
     return items;
   }, items1);
   const obj = userIds(589);
-  const slayerStorefrontDevApplicationIdOverride = userIds(9306).useSlayerStorefrontDevApplicationIdOverride();
+  const slayerStorefrontDevApplicationIdOverride = userIds(9371).useSlayerStorefrontDevApplicationIdOverride();
   let arr3 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {
     const items2 = [];

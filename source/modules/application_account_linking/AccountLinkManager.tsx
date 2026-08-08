@@ -1,10 +1,10 @@
-// Module ID: 15931
-// Function ID: 15932
+// Module ID: 16006
+// Function ID: 16007
 // Name: _claimIncentivizedAccountLinkingReward
-// Dependencies: [32, 5, 5249, 15932, 676, 687, 530, 5260, 2]
+// Dependencies: [32, 5, 5250, 16007, 676, 687, 530, 5261, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 15931 (_claimIncentivizedAccountLinkingReward)
+// Module 16006 (_claimIncentivizedAccountLinkingReward)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
@@ -29,7 +29,7 @@ function _claimIncentivizedAccountLinkingReward() {
       c2 = tmp3;
       const dependencyMap = tmp5;
       ({ applicationId: c0, onSuccess: c1, onError: c2 } = callback);
-      yield "PX_8";
+      yield "ct";
       let c4 = 1;
       const HTTP = callback(530).HTTP;
       const obj2 = { url: null, body: null, rejectWithError: true };

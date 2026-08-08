@@ -1,10 +1,10 @@
-// Module ID: 7348
-// Function ID: 7349
+// Module ID: 7408
+// Function ID: 7409
 // Name: FormSection
-// Dependencies: [19, 17, 1301, 21, 4302, 712, 5372, 5366, 7349, 5707, 7350, 500, 2]
+// Dependencies: [19, 17, 1301, 21, 4303, 712, 5373, 5367, 7409, 5767, 7410, 500, 2]
 // Exports: default
 
-// Module 7348 (FormSection)
+// Module 7408 (FormSection)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { TitleStyleType } from "semanticColor";
@@ -61,13 +61,13 @@ export default function FormSection(arg0) {
   ({ titleViewStyle, titleTextStyle, sectionBodyStyle, wrapperStyle } = arg0);
   const tmp2 = createCacheKey();
   let obj = React;
-  if (React.useContext(require(5372) /* context */.RedesignCompatContext)) {
+  if (React.useContext(require(5373) /* context */.RedesignCompatContext)) {
     const Children = obj.Children;
     const toArrayResult = Children.toArray(children);
     const found = toArrayResult.filter((type) => {
       let isValidElementResult = noop.isValidElement(type);
       if (isValidElementResult) {
-        isValidElementResult = type.type !== callback(7349);
+        isValidElementResult = type.type !== callback(7409);
       }
       return isValidElementResult;
     });
@@ -85,7 +85,7 @@ export default function FormSection(arg0) {
     let flag = false;
     if (obj.isValidElement(element)) {
       flag = false;
-      if (element.type !== importDefault(7349)) {
+      if (element.type !== importDefault(7409)) {
         flag = false;
         if (null != element.props) {
           const props = element.props;
@@ -96,7 +96,7 @@ export default function FormSection(arg0) {
     }
     obj1[2] = flag;
     obj1[3] = found;
-    obj[1] = callback(tmp3(5707).TableRowGroup, obj1);
+    obj[1] = callback(tmp3(5767).TableRowGroup, obj1);
     const items = [callback(closure_4, obj), ];
     let tmp20Result = null;
     if (null != hint) {
@@ -126,8 +126,8 @@ export default function FormSection(arg0) {
       obj3[5] = thinTitle;
       obj3[6] = uppercaseTitle;
       obj3[7] = inset;
-      tmp6 = callback(importDefault(7350), obj3);
-      const tmp10 = importDefault(7350);
+      tmp6 = callback(importDefault(7410), obj3);
+      const tmp10 = importDefault(7410);
     }
     const emptySectionHeader = tmp2.emptySectionHeader;
     let titledSectionNoBorderOrMargin = emptySectionHeader;

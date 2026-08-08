@@ -1,16 +1,16 @@
-// Module ID: 12951
-// Function ID: 12952
+// Module ID: 13021
+// Function ID: 13022
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 4153, 2]
+// Dependencies: [32, 19, 4159, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 12951 (isUserSettingsOpen)
+// Module 13021 (isUserSettingsOpen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 
 const require = arg1;
 function isUserSettingsOpen() {
-  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4159) /* getRootNavigationRef */.getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {

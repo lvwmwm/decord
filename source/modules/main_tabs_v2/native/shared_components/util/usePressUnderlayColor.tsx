@@ -1,16 +1,16 @@
-// Module ID: 15977
-// Function ID: 15978
+// Module ID: 16052
+// Function ID: 16053
 // Name: usePressUnderlayColor
-// Dependencies: [15978, 4238, 4005, 712, 4145, 2]
+// Dependencies: [16053, 4239, 4005, 712, 4151, 2]
 // Exports: default
 
-// Module 15977 (usePressUnderlayColor)
+// Module 16052 (usePressUnderlayColor)
 import { DEFAULT_CHANNEL_EMOJI_BACKGROUND_COLOR as closure_3 } from "CHANNEL_THEME_COLOR_PALETTE";
 
 const result = require("map").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/usePressUnderlayColor.tsx");
 
 export default function usePressUnderlayColor(arr) {
-  const tmp2 = importDefault(4238)();
+  const tmp2 = importDefault(4239)();
   const tmp3 = require;
   const token = require(4005) /* map */.useToken(importDefault(712).colors.INTERACTIVE_BACKGROUND_ACTIVE);
   let substr;
@@ -25,8 +25,8 @@ export default function usePressUnderlayColor(arr) {
       if ("dark" === tmp2) {
         num3 = 0.12;
       }
-      hexWithOpacityResult = tmp3(4145).hexWithOpacity(substr, num3);
-      const tmp3Result = tmp3(4145);
+      hexWithOpacityResult = tmp3(4151).hexWithOpacity(substr, num3);
+      const tmp3Result = tmp3(4151);
     }
   }
   return hexWithOpacityResult;

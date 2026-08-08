@@ -1,10 +1,10 @@
-// Module ID: 16273
-// Function ID: 16274
+// Module ID: 16350
+// Function ID: 16351
 // Name: CaptchaManager
-// Dependencies: [19, 17, 1975, 1302, 676, 21, 698, 7001, 7006, 589, 514, 585, 16274, 10396, 4507, 16275, 1988, 2]
+// Dependencies: [19, 17, 1975, 1302, 676, 21, 698, 7061, 7066, 589, 514, 585, 16351, 10462, 4509, 16352, 1988, 2]
 // Exports: InlineHcaptcha
 
-// Module 16273 (CaptchaManager)
+// Module 16350 (CaptchaManager)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import _getSystemLocale from "_getSystemLocale";
@@ -253,7 +253,7 @@ export const InlineHcaptcha = function InlineHcaptcha(siteKey) {
   };
   let obj2 = siteKey(514);
   const merged1 = Object.assign(merged);
-  return jsx(importDefault(16274), {
+  return jsx(importDefault(16351), {
     siteKey,
     onMessage(nativeEvent) {
       if (null != nativeEvent.nativeEvent.data) {

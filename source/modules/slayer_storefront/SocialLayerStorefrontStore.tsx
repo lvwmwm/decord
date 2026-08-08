@@ -1,9 +1,9 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5850
+// Function ID: 5851
 // Name: handleUserSettingsStoreUpdate
 // Dependencies: [1975, 1218, 589, 709, 2]
 
-// Module 5790 (handleUserSettingsStoreUpdate)
+// Module 5850 (handleUserSettingsStoreUpdate)
 import _getSystemLocale from "_getSystemLocale";
 import fetchFingerprint from "fetchFingerprint";
 import { Store } from "initialize";
@@ -397,7 +397,7 @@ const socialLayerStorefrontStore = new SocialLayerStorefrontStore(require("dispa
       const merged7 = Object.assign(obj9);
       obj9 = obj5;
     } else {
-      obj = { state: "error", fetchedAt: null, storefront: "r" };
+      obj = { state: "error", fetchedAt: null, storefront: "Array" };
       const _Date = Date;
       obj[1] = Date.now();
       if (null != guildId) {

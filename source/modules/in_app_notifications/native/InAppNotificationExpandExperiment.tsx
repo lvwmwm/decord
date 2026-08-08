@@ -1,10 +1,10 @@
-// Module ID: 9719
-// Function ID: 9720
+// Module ID: 9785
+// Function ID: 9786
 // Name: useCanExpandInAppNotification
 // Dependencies: [1452, 2]
 // Exports: useCanExpandInAppNotification
 
-// Module 9719 (useCanExpandInAppNotification)
+// Module 9785 (useCanExpandInAppNotification)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { canExpand: true, canReact: true } };

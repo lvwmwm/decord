@@ -1,9 +1,9 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8217
+// Function ID: 8218
 // Name: getInteractionComponentStates
-// Dependencies: [8158, 589, 709, 2]
+// Dependencies: [8218, 589, 709, 2]
 
-// Module 8157 (getInteractionComponentStates)
+// Module 8217 (getInteractionComponentStates)
 import { Store } from "initialize";
 
 let c0 = new require("LimitedMap")(196606);

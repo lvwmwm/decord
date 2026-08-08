@@ -1,10 +1,10 @@
-// Module ID: 12271
-// Function ID: 12272
+// Module ID: 12338
+// Function ID: 12339
 // Name: useGameRelationshipsByType
-// Dependencies: [32, 7059, 676, 589, 5148, 2]
+// Dependencies: [32, 7119, 676, 589, 5149, 2]
 // Exports: useGameFriendsForUser, useGameRelationshipsByType, useHasGameRelationshipsForUser, useHasGameRelationshipsForUserByType, useIncomingGameRelationshipsForUser
 
-// Module 12271 (useGameRelationshipsByType)
+// Module 12338 (useGameRelationshipsByType)
 import _slicedToArray from "_slicedToArray";
 import recountRelationshipTypes from "recountRelationshipTypes";
 import { RelationshipTypes } from "ME";
@@ -19,7 +19,7 @@ export const useGameRelationshipsByType = function useGameRelationshipsByType(FR
   return callback(_require(589).useStateFromStores(items, () => {
     const items = [outer1_3.getGameRelationshipsByType(closure_0), outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5148).isVersionEqual), 1)[0];
+  }, items1, _require(5149).isVersionEqual), 1)[0];
 };
 export const useGameFriendsForUser = function useGameFriendsForUser(id) {
   const FRIEND = RelationshipTypes.FRIEND;
@@ -49,7 +49,7 @@ export const useHasGameRelationshipsForUser = function useHasGameRelationshipsFo
     const gameRelationshipsForUser = outer1_3.getGameRelationshipsForUser(closure_0);
     const items = [gameRelationshipsForUser.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5148).isVersionEqual), 1)[0];
+  }, items1, _require(5149).isVersionEqual), 1)[0];
 };
 export const useHasGameRelationshipsForUserByType = function useHasGameRelationshipsForUserByType(arg0, arg1) {
   const _require = arg0;
@@ -60,5 +60,5 @@ export const useHasGameRelationshipsForUserByType = function useHasGameRelations
     const gameRelationshipsForUserByType = outer1_3.getGameRelationshipsForUserByType(closure_0, closure_1);
     const items = [gameRelationshipsForUserByType.length > 0, outer1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5148).isVersionEqual), 1)[0];
+  }, items1, _require(5149).isVersionEqual), 1)[0];
 };

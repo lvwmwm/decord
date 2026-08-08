@@ -1,9 +1,9 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13091
+// Function ID: 13092
 // Name: updateVoiceStates
-// Dependencies: [4349, 4318, 4374, 4362, 12, 2]
+// Dependencies: [4351, 4319, 4376, 4364, 12, 2]
 
-// Module 13021 (updateVoiceStates)
+// Module 13091 (updateVoiceStates)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import updateVoiceState from "updateVoiceState";
 import getVoiceStatesForGuild from "getVoiceStatesForGuild";

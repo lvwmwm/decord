@@ -1,10 +1,10 @@
-// Module ID: 15844
-// Function ID: 15845
+// Module ID: 15919
+// Function ID: 15920
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5175, 1372, 1906, 21, 4302, 712, 1480, 589, 4298, 1236, 8346, 5948, 4710, 5707, 5373, 4844, 8577, 5359, 1416, 7595, 1297, 5936, 5708, 4641, 2]
+// Dependencies: [32, 19, 17, 5176, 1372, 1906, 21, 4303, 712, 1480, 589, 4299, 1236, 8406, 6008, 4712, 5767, 5374, 4846, 8637, 5360, 1416, 7655, 1297, 5996, 5768, 4643, 2]
 // Exports: default
 
-// Module 15844 (ChannelSettingsEditForumTag)
+// Module 15919 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { View } from "TableRowInner";
@@ -235,7 +235,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "r" });
+      setOptions({ headerRight: "sa" });
     }
   }, items5);
   obj = { style: tmp.container, children: null };
@@ -270,22 +270,22 @@ export default function ChannelSettingsEditForumTag(channelId) {
           usableCustomEmojiById(null);
           callback("");
         };
-        obj5[2] = tmp27(tmp3(5936).CircleXIcon, { size: "xs" });
-        let tmp27Result = tmp27(tmp3(4844).PressableOpacity, obj5);
+        obj5[2] = tmp27(tmp3(5996).CircleXIcon, { size: "xs" });
+        let tmp27Result = tmp27(tmp3(4846).PressableOpacity, obj5);
       } else {
         tmp27Result = null;
       }
       const obj6 = { children: null };
       const obj7 = { hasIcons: true, children: null };
       obj3[2] = tmp27Result;
-      obj7[1] = tmp27(tmp3(5373).TableRow, obj3);
-      const items6 = [tmp27(tmp3(5707).TableRowGroup, obj7), ];
+      obj7[1] = tmp27(tmp3(5374).TableRow, obj3);
+      const items6 = [tmp27(tmp3(5767).TableRowGroup, obj7), ];
       const obj8 = { style: null, children: null };
       obj8[0] = tmp.hint;
       const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
       let intl2 = tmp3(1236).intl;
       obj9[2] = intl2.string(tmp3(1236).t["3v8kZH"]);
-      obj8[1] = tmp27(tmp3(4298).Text, obj9);
+      obj8[1] = tmp27(tmp3(4299).Text, obj9);
       items6[1] = tmp27(tmp28, obj8);
       obj6[0] = items6;
       const items7 = [tmp29(tmp28, obj6), , ];
@@ -309,8 +309,8 @@ export default function ChannelSettingsEditForumTag(channelId) {
         }
         closure_10(tmp2);
       };
-      obj11[1] = tmp27(tmp3(5708).TableSwitchRow, obj10);
-      items7[1] = tmp27(tmp3(5707).TableRowGroup, obj11);
+      obj11[1] = tmp27(tmp3(5768).TableSwitchRow, obj10);
+      items7[1] = tmp27(tmp3(5767).TableRowGroup, obj11);
       tmp27Result = null;
       if (!tmp2) {
         const obj12 = { hasIcons: false, children: null };
@@ -337,12 +337,12 @@ export default function ChannelSettingsEditForumTag(channelId) {
           };
           obj.show(obj);
         };
-        obj12[1] = tmp27(tmp3(5373).TableRow, obj13);
-        tmp27Result = tmp27(tmp3(5707).TableRowGroup, obj12);
+        obj12[1] = tmp27(tmp3(5374).TableRow, obj13);
+        tmp27Result = tmp27(tmp3(5767).TableRowGroup, obj12);
       }
       items7[2] = tmp27Result;
       obj1[2] = items7;
-      obj[1] = tmp29(tmp3(4710).Stack, obj1);
+      obj[1] = tmp29(tmp3(4712).Stack, obj1);
       return tmp27(tmp28, obj);
     }
     const obj14 = { textEmojiStyle: null, fastImageStyle: null, src: null, name: null };
@@ -364,9 +364,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
       str2 = "";
     }
     obj14[3] = str2;
-    tmp27Result1 = tmp27(tag(5359), obj14);
+    tmp27Result1 = tmp27(tag(5360), obj14);
     tmp31 = tag;
-    const tmp32 = tag(5359);
+    const tmp32 = tag(5360);
   }
-  tmp27Result1 = tmp27(tmp3(7595).ReactionIcon, {});
+  tmp27Result1 = tmp27(tmp3(7655).ReactionIcon, {});
 };

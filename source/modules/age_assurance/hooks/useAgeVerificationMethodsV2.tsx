@@ -1,10 +1,10 @@
-// Module ID: 7769
-// Function ID: 7770
+// Module ID: 7829
+// Function ID: 7830
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 7770, 7771, 709, 2]
+// Dependencies: [5, 32, 19, 7830, 7831, 709, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 7769 (useAgeVerificationMethodsV2)
+// Module 7829 (useAgeVerificationMethodsV2)
 import dispatcher from "dispatcher";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -46,7 +46,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               outer1_1(true);
               outer1_2(false);
               let c4 = 2;
-              let obj4 = callback(7771);
+              let obj4 = callback(7831);
               c5 = 3;
               c6 = 1;
               const obj2 = { value: null, done: false };
@@ -126,7 +126,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               outer1_1(false);
             }
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp56) {
           dispatcher = tmp56;

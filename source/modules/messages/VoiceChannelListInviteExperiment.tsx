@@ -1,10 +1,10 @@
-// Module ID: 10923
-// Function ID: 10924
+// Module ID: 10989
+// Function ID: 10990
 // Name: getVoiceChannelListInviteExperiment
-// Dependencies: [4214, 2]
+// Dependencies: [4215, 2]
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment
 
-// Module 10923 (getVoiceChannelListInviteExperiment)
+// Module 10989 (getVoiceChannelListInviteExperiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Enable channel-list-style voice invite embed", config: { enabled: true } }];

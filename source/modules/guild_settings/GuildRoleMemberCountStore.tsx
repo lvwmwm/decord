@@ -1,9 +1,9 @@
-// Module ID: 5357
-// Function ID: 5358
+// Module ID: 5358
+// Function ID: 5359
 // Name: getRoleMemberCount
 // Dependencies: [589, 709, 2]
 
-// Module 5357 (getRoleMemberCount)
+// Module 5358 (getRoleMemberCount)
 import { Store } from "initialize";
 
 let closure_0 = {};

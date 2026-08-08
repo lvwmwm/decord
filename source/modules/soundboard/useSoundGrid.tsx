@@ -1,10 +1,10 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16132
+// Function ID: 16133
 // Name: createSoundItems
-// Dependencies: [32, 19, 1891, 3929, 1903, 4747, 4748, 1905, 4754, 4194, 16058, 589, 3947, 16059, 8926, 16060, 2]
+// Dependencies: [32, 19, 1891, 3929, 1903, 4749, 4750, 1905, 4756, 4195, 16133, 589, 3947, 16134, 8986, 16135, 2]
 // Exports: default, useSearchCategories
 
-// Module 16057 (createSoundItems)
+// Module 16132 (createSoundItems)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -102,7 +102,7 @@ export default function useSoundGrid(guild_id) {
   let stateFromStores1;
   let stateFromStores2;
   let memo;
-  let enabled;
+  let c15;
   let items = [c7];
   const stateFromStores = _require(flag2[11]).useStateFromStores(items, () => _undefined3.getCurrentUser());
   let obj2 = _require(flag2[11]);
@@ -161,8 +161,9 @@ export default function useSoundGrid(guild_id) {
   if (memo.length > 0) {
     str = "useSoundGrid";
   }
-  enabled = flag(flag2[15]).useConfig({ location: str }).enabled;
-  const items7 = [sortedGuildIdsForSoundboard, first, tmp3[1], enabled, stateFromStores1, stateFromStores2, flag, result, stateFromStoresArray, flag2, tmp3[3], isPremiumResult, soundOrganizer, memo];
+  const tmp14 = flag(flag2[15]).useConfig({ location: str }).enabled || false;
+  c15 = tmp14;
+  const items7 = [sortedGuildIdsForSoundboard, first, tmp3[1], tmp14, stateFromStores1, stateFromStores2, flag, result, stateFromStoresArray, flag2, tmp3[3], isPremiumResult, soundOrganizer, memo];
   return obj11.useMemo(() => {
     let c0 = 0;
     let c1 = 0;
@@ -207,8 +208,8 @@ export default function useSoundGrid(guild_id) {
       obj[4] = guild_id(flag2[8]).SoundboardSoundGridSectionType.FAVORITES;
       obj[5] = guild_id(flag2[10]).sortSoundsOldestToNewestCreationDate;
       stateFromStores2(obj);
-      let tmp8 = enabled;
-      if (enabled) {
+      let tmp8 = c15;
+      if (c15) {
         tmp8 = memo.length > 0;
       }
       if (tmp8) {

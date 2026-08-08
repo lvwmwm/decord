@@ -1,9 +1,9 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 13072
+// Function ID: 13073
 // Name: setUserID
-// Dependencies: [4401, 3, 4187, 2]
+// Dependencies: [4403, 3, 4188, 2]
 
-// Module 13002 (setUserID)
+// Module 13072 (setUserID)
 import "on";
 
 const require = arg1;

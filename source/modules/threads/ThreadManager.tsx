@@ -1,9 +1,9 @@
-// Module ID: 16495
-// Function ID: 16496
+// Module ID: 16572
+// Function ID: 16573
 // Name: handleChannelDelete
-// Dependencies: [1218, 1372, 5260, 589, 709, 8346, 2]
+// Dependencies: [1218, 1372, 5261, 589, 709, 8406, 2]
 
-// Module 16495 (handleChannelDelete)
+// Module 16572 (handleChannelDelete)
 import fetchFingerprint from "fetchFingerprint";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import "initialize";
@@ -62,8 +62,8 @@ prototype["handleMessageCreate"] = function handleMessageCreate(channelId) {
       const _Date = Date;
       const time = date.getTime();
       if (Date.now() - time < 5000) {
-        importDefault(8346).resort(channel.parent_id);
-        const obj3 = importDefault(8346);
+        importDefault(8406).resort(channel.parent_id);
+        const obj3 = importDefault(8406);
       }
     }
   }

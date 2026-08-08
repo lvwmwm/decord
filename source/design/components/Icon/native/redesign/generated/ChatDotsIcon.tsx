@@ -1,10 +1,10 @@
-// Module ID: 14520
-// Function ID: 14521
+// Module ID: 14590
+// Function ID: 14591
 // Name: ChatDotsIcon
-// Dependencies: [19, 21, 712, 4004, 14521, 2]
+// Dependencies: [19, 21, 712, 4004, 14591, 2]
 // Exports: ChatDotsIcon
 
-// Module 14520 (ChatDotsIcon)
+// Module 14590 (ChatDotsIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChatDotsIcon = function ChatDotsIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14521) /* registerAsset */;
+  obj[0] = require(14591) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

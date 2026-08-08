@@ -1,10 +1,10 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 16903
+// Function ID: 16904
 // Name: _fetchBasicGuild
-// Dependencies: [5, 1891, 8004, 676, 709, 530, 2]
+// Dependencies: [5, 1891, 8064, 676, 709, 530, 2]
 // Exports: fetchBasicGuild
 
-// Module 16826 (_fetchBasicGuild)
+// Module 16903 (_fetchBasicGuild)
 import sendRequest from "sendRequest";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getGuild from "getGuild";
@@ -31,7 +31,7 @@ function _fetchBasicGuild() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

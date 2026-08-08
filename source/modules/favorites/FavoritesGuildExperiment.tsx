@@ -1,10 +1,10 @@
-// Module ID: 9648
-// Function ID: 9649
+// Module ID: 9713
+// Function ID: 9714
 // Name: useFavoritesGuildConfig
 // Dependencies: [1452, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 9648 (useFavoritesGuildConfig)
+// Module 9713 (useFavoritesGuildConfig)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, hasHigherPrivileges: true }, 3: { enabled: true, hasHigherPrivileges: false } };

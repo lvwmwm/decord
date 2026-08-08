@@ -1,10 +1,10 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15626
+// Function ID: 15627
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 1372, 1891, 21, 15484, 712, 589, 5231, 8853, 15523, 9601, 8852, 4492, 15525, 1236, 11, 4844, 4298, 4292, 15529, 15531, 2]
+// Dependencies: [19, 17, 1372, 1891, 21, 15559, 712, 589, 5232, 8913, 15598, 9666, 8912, 4494, 15600, 1236, 11, 4846, 4299, 4293, 15604, 15606, 2]
 // Exports: default
 
-// Module 15551 (ICYMIForumThreadRow)
+// Module 15626 (ICYMIForumThreadRow)
 import getDefaultRules from "get defaultRules";
 import { View } from "PressableBase";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -21,7 +21,7 @@ class ICYMIForumThreadRow {
     message = global.message;
     c2 = undefined;
     author = undefined;
-    tmp = f62082();
+    tmp = f62247();
     tmp2 = channel;
     tmp3 = c2;
     obj = require("initialize");

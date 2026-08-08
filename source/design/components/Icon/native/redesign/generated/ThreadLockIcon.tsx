@@ -1,10 +1,10 @@
-// Module ID: 4799
-// Function ID: 4800
+// Module ID: 4801
+// Function ID: 4802
 // Name: ThreadLockIcon
-// Dependencies: [19, 21, 712, 4004, 4763, 2]
+// Dependencies: [19, 21, 712, 4004, 4765, 2]
 // Exports: ThreadLockIcon
 
-// Module 4799 (ThreadLockIcon)
+// Module 4801 (ThreadLockIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ThreadLockIcon = function ThreadLockIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(4763) /* registerAsset */;
+  obj[0] = require(4765) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

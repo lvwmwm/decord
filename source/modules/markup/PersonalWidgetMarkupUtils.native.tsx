@@ -1,9 +1,9 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12454
+// Function ID: 12455
 // Name: parsePersonalWidgetReact
-// Dependencies: [4733, 12, 4734, 4293, 8034, 2]
+// Dependencies: [4735, 12, 4736, 4294, 8094, 2]
 
-// Module 12387 (parsePersonalWidgetReact)
+// Module 12454 (parsePersonalWidgetReact)
 import importDefaultResult from "combineMarkupRules";
 import importDefaultResult1 from "apply";
 import importAllResult from "reactParserFor";

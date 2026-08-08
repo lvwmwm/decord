@@ -1,8 +1,8 @@
-// Module ID: 14640
-// Function ID: 14641
-// Dependencies: [5, 19, 17, 1903, 676, 7602, 21, 4302, 589, 7601, 1926, 5668, 7603, 8302, 7907, 14641, 9447, 8562, 8563, 1236, 2]
+// Module ID: 14710
+// Function ID: 14711
+// Dependencies: [5, 19, 17, 1903, 676, 7662, 21, 4303, 589, 7661, 1926, 5728, 7663, 8362, 7967, 14711, 9512, 8622, 8623, 1236, 2]
 
-// Module 14640
+// Module 14710
 import items from "items";
 import { View } from "openPremiumModal";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -40,7 +40,7 @@ const memoResult = require("getSystemLocale").memo(() => {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -62,7 +62,7 @@ const memoResult = require("getSystemLocale").memo(() => {
                     if (v0 !== id) {
                       if (tmp27) {
                         if (!dependencyMap) {
-                          let obj4 = v0(8302);
+                          let obj4 = v0(8362);
                           const obj1 = { initialUpsellKey: null, imageSource: null };
                           obj1[0] = outer1_6.APP_ICONS;
                           obj1[1] = tmp28;
@@ -76,11 +76,11 @@ const memoResult = require("getSystemLocale").memo(() => {
                       dependencyMap = 1;
                       v0 = 1;
                       let obj2 = { value: null, done: false };
-                      obj2[0] = lib(7601).setAppIcon(id, premiumType);
+                      obj2[0] = lib(7661).setAppIcon(id, premiumType);
                       return obj2;
                     }
                   } else {
-                    obj2 = lib(7601);
+                    obj2 = lib(7661);
                     let premiumType1;
                     if (lib != null) {
                       premiumType1 = lib.premiumType;
@@ -88,7 +88,7 @@ const memoResult = require("getSystemLocale").memo(() => {
                     dependencyMap = 2;
                     v0 = 1;
                     const obj3 = { value: null, done: false };
-                    obj3[0] = obj2.setAppIcon(lib(7603).FreemiumAppIconIds.DEFAULT, premiumType1);
+                    obj3[0] = obj2.setAppIcon(lib(7663).FreemiumAppIconIds.DEFAULT, premiumType1);
                     return obj3;
                   }
                 }
@@ -114,7 +114,7 @@ const memoResult = require("getSystemLocale").memo(() => {
               return obj;
             }
             v0 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           } catch (tmp17) {
             v0 = tmp;
             throw tmp17;
@@ -134,12 +134,12 @@ const memoResult = require("getSystemLocale").memo(() => {
   let obj = stateFromStores(589);
   const items = [_onSelect];
   stateFromStores = obj.useStateFromStores(items, () => _onSelect.getCurrentUser());
-  let obj1 = stateFromStores(7601);
+  let obj1 = stateFromStores(7661);
   const importDefault = obj1.useCurrentAppIcon();
   let obj2 = stateFromStores(1926);
   const isPremiumResult = obj2.isPremium(stateFromStores);
   let dependencyMap = isPremiumResult;
-  const analyticsLocations = importDefault(5668)().analyticsLocations;
+  const analyticsLocations = importDefault(5728)().analyticsLocations;
   obj = { page: constants.APP_ICONS };
   obj = { children: null };
   obj1 = { accessibilityRole: "radiogroup", children: null };
@@ -155,9 +155,9 @@ const memoResult = require("getSystemLocale").memo(() => {
       return applyArgumentsResult;
     }
   };
-  obj1[1] = callback(importDefault(14641), obj2);
+  obj1[1] = callback(importDefault(14711), obj2);
   obj[0] = callback(obj, obj1);
-  const children = [callback(stateFromStores(7907).Form, obj), ];
+  const children = [callback(stateFromStores(7967).Form, obj), ];
   let tmp9Result = !isPremiumResult;
   if (!isPremiumResult) {
     let obj3 = { style: null, children: null };
@@ -170,9 +170,9 @@ const memoResult = require("getSystemLocale").memo(() => {
     };
     const intl = tmp2(1236).intl;
     obj4[1] = intl.string(tmp2(1236).t.M0rDSO);
-    obj3[1] = tmp9(importDefault(9447), obj4);
+    obj3[1] = tmp9(importDefault(9512), obj4);
     tmp9Result = tmp9(obj, obj3);
-    const tmp6Result = importDefault(9447);
+    const tmp6Result = importDefault(9512);
   }
   children[1] = tmp9Result;
   return closure_11(closure_10, { children });

@@ -1,10 +1,10 @@
-// Module ID: 10352
-// Function ID: 10353
+// Module ID: 10418
+// Function ID: 10419
 // Name: getSubscriptionPlans
-// Dependencies: [32, 19, 3952, 676, 1905, 38, 10353, 3947, 5817, 589, 10355, 3883, 2]
+// Dependencies: [32, 19, 3952, 676, 1905, 38, 10419, 3947, 5877, 589, 10421, 3883, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 10352 (getSubscriptionPlans)
+// Module 10418 (getSubscriptionPlans)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import addSubscriptionPlan from "addSubscriptionPlan";
@@ -48,14 +48,14 @@ export const subscriptionCanSwitchImmediately = function subscriptionCanSwitchIm
   if (null == currentSubscriptionPlanIdForGroup) {
     obj = { message: "Current subscription has no plan in group", extraSentryInformation: null };
     obj[1] = obj;
-    const checkoutError = new require(10353) /* prototype */.CheckoutError(obj);
+    const checkoutError = new require(10419) /* prototype */.CheckoutError(obj);
     throw checkoutError;
   } else {
     if (currentSubscriptionPlanIdForGroup === closure_8.PREMIUM_YEAR_TIER_1) {
       if (newPlanId === closure_8.PREMIUM_MONTH_TIER_2) {
         obj = { message: "Unexpected plan switch", extraSentryInformation: null };
         obj[1] = obj;
-        const checkoutError1 = new require(10353) /* prototype */.CheckoutError(obj);
+        const checkoutError1 = new require(10419) /* prototype */.CheckoutError(obj);
         throw checkoutError1;
       }
     }
@@ -72,14 +72,14 @@ export const subscriptionCanDowngrade = function subscriptionCanDowngrade(getCur
     if (null == currentSubscriptionPlanIdForGroup) {
       obj = { message: "Current subscription has no plan in group", extraSentryInformation: null };
       obj[1] = obj;
-      const checkoutError = new require(10353) /* prototype */.CheckoutError(obj);
+      const checkoutError = new require(10419) /* prototype */.CheckoutError(obj);
       throw checkoutError;
     } else {
       if (currentSubscriptionPlanIdForGroup === closure_8.PREMIUM_YEAR_TIER_1) {
         if (arg1 === closure_8.PREMIUM_MONTH_TIER_2) {
           obj = { message: "Unexpected plan switch", extraSentryInformation: null };
           obj[1] = obj;
-          const checkoutError1 = new require(10353) /* prototype */.CheckoutError(obj);
+          const checkoutError1 = new require(10419) /* prototype */.CheckoutError(obj);
           throw checkoutError1;
         }
       }
@@ -101,8 +101,8 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const tmp9 = null != table[subscriptionPlanId];
     const result = require(3947) /* getPremiumPlanItem */.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     if (!addSubscriptionPlan.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = tmp12(5817).fetchSubscriptionPlansForSKU(result, closure_1);
-      const tmp12Result = tmp12(5817);
+      const subscriptionPlansForSKU = tmp12(5877).fetchSubscriptionPlansForSKU(result, closure_1);
+      const tmp12Result = tmp12(5877);
     }
     const obj3 = require(3947) /* getPremiumPlanItem */;
   }
@@ -146,7 +146,7 @@ export const useGetOrFetchSubscriptionPlan = function useGetOrFetchSubscriptionP
   return first;
 };
 export const getSubscriptionPauseDurations = function getSubscriptionPauseDurations(status) {
-  const keys = Object.keys(require(10355) /* PauseDuration */.PauseDuration);
+  const keys = Object.keys(require(10421) /* PauseDuration */.PauseDuration);
   const found = keys.filter((arg0) => isNaN(Number(arg0)));
   if (status.status !== constants.PAUSED) {
     let obj = { durations: null, currentDaysPaused: 0 };
@@ -162,7 +162,7 @@ export const getSubscriptionPauseDurations = function getSubscriptionPauseDurati
       let tmp12 = dependencyMap;
       let tmp13 = dependencyMap;
       let tmp10 = item10042;
-      if (require(10355) /* PauseDuration */.PauseDuration[item10042] > rounded) {
+      if (require(10421) /* PauseDuration */.PauseDuration[item10042] > rounded) {
         let tmp14 = item10042;
         let arr = items.push(tmp10);
       }

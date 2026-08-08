@@ -1,10 +1,10 @@
-// Module ID: 15542
-// Function ID: 15543
+// Module ID: 15617
+// Function ID: 15618
 // Name: CustomStatusEntryRow
-// Dependencies: [19, 21, 15538, 15543, 2]
+// Dependencies: [19, 21, 15613, 15618, 2]
 // Exports: default
 
-// Module 15542 (CustomStatusEntryRow)
+// Module 15617 (CustomStatusEntryRow)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,9 +18,9 @@ export default function CustomStatusEntryRow(content) {
   let visible;
   content = content.content;
   ({ renderForScreenshot, visible } = content);
-  let obj = require(15538) /* useReplyActions */;
+  let obj = require(15613) /* useReplyActions */;
   const replyActions = obj.useReplyActions({ content });
   ({ openEmojiPicker, openReplyActionSheet } = replyActions);
   obj = { id: content.id, userId: content.author_id, customStatusExtra: content.extra, renderForScreenshot, visible, variant: { kind: "otherUserStatus", handlePressPrimary: openReplyActionSheet, handlePressSecondary: openEmojiPicker } };
-  return jsx(importDefault(15543), { id: content.id, userId: content.author_id, customStatusExtra: content.extra, renderForScreenshot, visible, variant: { kind: "otherUserStatus", handlePressPrimary: openReplyActionSheet, handlePressSecondary: openEmojiPicker } });
+  return jsx(importDefault(15618), { id: content.id, userId: content.author_id, customStatusExtra: content.extra, renderForScreenshot, visible, variant: { kind: "otherUserStatus", handlePressPrimary: openReplyActionSheet, handlePressSecondary: openEmojiPicker } });
 };

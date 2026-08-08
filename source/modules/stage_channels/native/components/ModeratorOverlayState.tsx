@@ -1,10 +1,10 @@
-// Module ID: 10691
-// Function ID: 10692
+// Module ID: 10757
+// Function ID: 10758
 // Name: useModeratorOverlayChannelState
 // Dependencies: [700, 705, 3914, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 10691 (useModeratorOverlayChannelState)
+// Module 10757 (useModeratorOverlayChannelState)
 import identity from "identity";
 
 let closure_2 = identity.createWithEqualityFn((arg0, arg1) => {

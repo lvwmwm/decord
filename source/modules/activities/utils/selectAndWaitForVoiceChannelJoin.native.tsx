@@ -1,10 +1,10 @@
-// Module ID: 10573
-// Function ID: 10574
+// Module ID: 10639
+// Function ID: 10640
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1960, 5128, 2]
+// Dependencies: [5, 1960, 5129, 2]
 // Exports: default
 
-// Module 10573 (_selectAndWaitForVoiceChannelJoin)
+// Module 10639 (_selectAndWaitForVoiceChannelJoin)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionOpen from "handleConnectionOpen";
 
@@ -29,7 +29,7 @@ function _selectAndWaitForVoiceChannelJoin() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -55,7 +55,7 @@ function _selectAndWaitForVoiceChannelJoin() {
               promise = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -143,7 +143,7 @@ const prototype = function JoinTimeoutError() {
 }.prototype;
 class prototype extends Error {
 }
-let result = require("module_5128").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
+let result = require("module_5129").fileFinishedImporting("modules/activities/utils/selectAndWaitForVoiceChannelJoin.native.tsx");
 
 export default function selectAndWaitForVoiceChannelJoin() {
   const self = this;

@@ -1,9 +1,9 @@
-// Module ID: 4325
-// Function ID: 4326
+// Module ID: 4326
+// Function ID: 4327
 // Name: createExecutable
-// Dependencies: [1912, 4326, 1911, 4327, 4328, 4329, 4330, 1416, 4331, 506, 11, 2]
+// Dependencies: [1912, 4327, 1911, 4328, 4329, 4330, 1416, 4333, 506, 11, 2]
 
-// Module 4325 (createExecutable)
+// Module 4326 (createExecutable)
 import "toJS";
 import createFromServer from "createFromServer";
 import createdAt from "createdAt";
@@ -83,14 +83,18 @@ BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
 };
 Object.defineProperty(prototype, "connectionEntrypointUrl", {
   get: function connectionEntrypointUrl(arg0) {
-    const self = this;
-    const items = ["1443349464290168976", "1443350165678198935", "1443033465766281327"];
-    if (!items.includes(this.id)) {
-      let str2 = self._connectionEntrypointUrl;
-    } else if ("1443350165678198935" !== self.id) {
-      str2 = "https://aes.sgp.pvp.net/providers/discord/link/v1?origin=Discord";
+    const obj = require(4330) /* items1 */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
+    let prop;
+    if (obj != null) {
+      prop = obj.connectionEntrypointUrlOverride;
     }
-    return str2;
+    if (null != prop) {
+      if (obj.getMigrationExperimentEnabled("ApplicationRecord")) {
+        let _connectionEntrypointUrl = obj.connectionEntrypointUrlOverride;
+      }
+      return _connectionEntrypointUrl;
+    }
+    _connectionEntrypointUrl = this._connectionEntrypointUrl;
   },
   set: undefined
 });
@@ -285,7 +289,7 @@ ApplicationRecord["createFromServer"] = function createFromServer(bot) {
   obj.bot = tmp3;
   ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
   if (overlay_methods == null) {
-    overlay_methods = require(4331) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
+    overlay_methods = require(4333) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.DEFAULT;
   }
   obj.overlayMethods = overlay_methods;
   ({ hook: obj.hook, store_listing_sku_id: obj.storeListingSkuId, guild_id: obj.guildId, guild: obj.guild } = bot);
@@ -681,7 +685,7 @@ Object.defineProperty(prototype2, "supportsOutOfProcessOverlay", {
   set: undefined
 });
 ApplicationRecord["supportsOutOfProcessOverlay"] = function supportsOutOfProcessOverlay(arg0) {
-  const OUT_OF_PROCESS = require(4331) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
+  const OUT_OF_PROCESS = require(4333) /* ApplicationOverlayMethodFlags */.ApplicationOverlayMethodFlags.OUT_OF_PROCESS;
   return null != arg0 && (arg0 & OUT_OF_PROCESS) === OUT_OF_PROCESS;
 };
 const result = require("createdAt").fileFinishedImporting("records/ApplicationRecord.tsx");

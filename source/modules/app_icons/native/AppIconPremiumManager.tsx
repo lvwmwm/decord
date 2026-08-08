@@ -1,9 +1,9 @@
-// Module ID: 16298
-// Function ID: 16299
+// Module ID: 16375
+// Function ID: 16376
 // Name: handleAppStateUpdate
-// Dependencies: [5, 1903, 7602, 676, 3, 7603, 5260, 500, 7601, 3947, 698, 2]
+// Dependencies: [5, 1903, 7662, 676, 3, 7663, 5261, 500, 7661, 3947, 698, 2]
 
-// Module 16298 (handleAppStateUpdate)
+// Module 16375 (handleAppStateUpdate)
 import FreemiumAppIconIds from "FreemiumAppIconIds";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { getIconById } from "items";
@@ -53,7 +53,7 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
             }
           }
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         v0 = tmp;
@@ -144,9 +144,9 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
 prototype["resetIcon"] = function resetIcon(arg0, c0, ORPHANED) {
   const _require = arg0;
   let closure_1 = ORPHANED;
-  let obj = _require(7601);
-  const setAppIconResult = _require(7601).setAppIcon(DEFAULT, c0);
-  _require(7601).setAppIcon(DEFAULT, c0).then(() => {
+  let obj = _require(7661);
+  const setAppIconResult = _require(7661).setAppIcon(DEFAULT, c0);
+  _require(7661).setAppIcon(DEFAULT, c0).then(() => {
     let obj = ORPHANED(outer1_2[10]);
     obj = { previous_icon_id: closure_0, reset_to_icon_id: outer1_8, reset_reason: ORPHANED };
     obj.track(outer1_6.APP_ICON_AUTO_RESET, obj);

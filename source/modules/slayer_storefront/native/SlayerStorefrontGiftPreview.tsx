@@ -1,10 +1,10 @@
-// Module ID: 10358
-// Function ID: 10359
+// Module ID: 10424
+// Function ID: 10425
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4302, 9333, 4298, 1236, 10359, 3222, 2]
+// Dependencies: [19, 17, 21, 4303, 9398, 4299, 1236, 10425, 3222, 2]
 // Exports: default
 
-// Module 10358 (WarningBox)
+// Module 10424 (WarningBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ function WarningBox(application) {
     let name = importDefault;
     let BMMo2K = dependencyMap;
     let obj = { look: null, style: null, children: null };
-    obj[0] = require(10359) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj[0] = require(10425) /* InfoBox */.InfoBoxLooks.WARNING;
     obj[1] = tmp.warningBox;
     const intl = require(1236) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
@@ -56,9 +56,9 @@ function WarningBox(application) {
       obj[2] = intl.format(tmp6(1236).t["3T0cpx"], {});
       tmp7 = obj;
     }
-    closure_4(importDefault(10359), tmp7);
+    closure_4(importDefault(10425), tmp7);
     const tmp3 = closure_4;
-    const tmp5 = importDefault(10359);
+    const tmp5 = importDefault(10425);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -84,7 +84,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     obj[0] = tmp.container;
     obj = { sku: null };
     obj[0] = sku;
-    const items = [callback(importDefault(9333), obj), , ];
+    const items = [callback(importDefault(9398), obj), , ];
     obj = { variant: "heading-md/normal", color: "mobile-text-heading-primary", style: null, children: null };
     obj[2] = tmp.text;
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -97,7 +97,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     }
     obj1[2] = name;
     obj[3] = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["2tBYtA"], obj1);
-    items[1] = callback(require(4298) /* Text */.Text, obj);
+    items[1] = callback(require(4299) /* Text */.Text, obj);
     const obj2 = { canStartAuthorization: null, hasAccountLinked: null, mobileAccountLinkingDisabled: null, sku: null, application: null };
     obj2[0] = canStartAuthorization;
     obj2[1] = hasAccountLinked;

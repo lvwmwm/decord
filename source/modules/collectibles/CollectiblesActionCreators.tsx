@@ -1,10 +1,10 @@
-// Module ID: 6940
-// Function ID: 6941
+// Module ID: 7000
+// Function ID: 7001
 // Name: openCollectiblesShop
-// Dependencies: [5, 4301, 1975, 6941, 6956, 6957, 6958, 6959, 6963, 6943, 6969, 6970, 678, 676, 6984, 6985, 4153, 709, 6986, 6987, 6989, 530, 4201, 5894, 6988, 6953, 6990, 6991, 2]
+// Dependencies: [5, 4302, 1975, 7001, 7016, 7017, 7018, 7019, 7023, 7003, 7029, 7030, 678, 676, 7044, 7045, 4159, 709, 7046, 7047, 7049, 530, 4202, 5954, 7048, 7013, 7050, 7051, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 6940 (openCollectiblesShop)
+// Module 7000 (openCollectiblesShop)
 import map from "map";
 import getUserAgnosticState from "getUserAgnosticState";
 import _getSystemLocale from "_getSystemLocale";
@@ -34,7 +34,7 @@ function openCollectiblesShopMobile(screen) {
   obj = { type: "COLLECTIBLES_SHOP_OPEN" };
   const merged = Object.assign(screen);
   obj.dispatch(obj);
-  const rootNavigationRef = require(4153) /* getRootNavigationRef */.getRootNavigationRef();
+  const rootNavigationRef = require(4159) /* getRootNavigationRef */.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
       screen = screen.screen;
@@ -68,7 +68,7 @@ function openCollectiblesShopMobile(screen) {
 function closeCollectiblesShop() {
   importDefault(709).dispatch({ type: "COLLECTIBLES_SHOP_CLOSE" });
   const obj = importDefault(709);
-  require(6986) /* pushLayer */.popLayer();
+  require(7046) /* pushLayer */.popLayer();
 }
 function _fetchCollectiblesCategories() {
   const self = this;
@@ -232,7 +232,7 @@ function _fetchCollectiblesPurchases() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -460,7 +460,7 @@ function _maybeFetchCollectiblesProduct() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -499,7 +499,7 @@ function _maybeFetchCollectiblesProduct() {
             return obj;
           }
           c2 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c2 = tmp;
           throw tmp9;
@@ -545,7 +545,7 @@ function _claimPremiumCollectiblesProduct() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -612,7 +612,7 @@ function _claimPremiumCollectiblesProduct() {
             obj6.dispatch(obj6);
             c4 = 0;
             c6 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           map = tmp29;
@@ -655,7 +655,7 @@ function _validateCollectiblesRecipient() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -689,8 +689,8 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5894);
-            const aPIError = new callback(4201).APIError(callback);
+            obj2 = callback(5954);
+            const aPIError = new callback(4202).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
@@ -751,7 +751,7 @@ function _validateCollectiblesRecipientsBatch() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -785,8 +785,8 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = getUserAgnosticState;
-            obj2 = callback(5894);
-            const aPIError = new callback(4201).APIError(callback);
+            obj2 = callback(5954);
+            const aPIError = new callback(4202).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             const obj4 = { value: null, done: true };
@@ -842,7 +842,7 @@ function _fetchCollectiblesMarketings() {
       if (PROD === undefined) {
         PROD = callback(outer1_2[26]).CollectiblesMarketingReleaseType.PROD;
       }
-      yield "PX_8";
+      yield "ct";
       obj2(body[17]).dispatch({ type: "COLLECTIBLES_MARKETING_FETCH" });
       obj2 = { platform: null };
       obj2[0] = PROD(body[27]).CollectiblesMarketingPlatform.MOBILE;
@@ -1032,7 +1032,7 @@ function _claimCollectiblesCategoryReward() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1101,7 +1101,7 @@ function _claimCollectiblesCategoryReward() {
             obj6.dispatch(obj6);
             c5 = 0;
             c7 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           getUserAgnosticState = tmp29;
@@ -1136,7 +1136,7 @@ function _maybeFetchCollectiblesShopTabLayout() {
       let c1;
       let layoutFetchError = tmp3;
       ({ tab: c0, abortSignal: c1 } = callback);
-      yield "PX_8";
+      yield "ct";
       if (1 === tmp7) {
         if (arg0 === 1) {
           let c6 = 3;
@@ -1222,7 +1222,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4153).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4159).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {
@@ -1421,7 +1421,7 @@ export const maybeFetchCollectiblesProduct = function maybeFetchCollectiblesProd
 };
 export const seedCollectiblesProductFromStandaloneLoad = function seedCollectiblesProductFromStandaloneLoad(memo) {
   const timestamp = Date.now();
-  let obj = require(6953) /* getItemRecordsFromPurchases */;
+  let obj = require(7013) /* getItemRecordsFromPurchases */;
   const items = [memo];
   const result = obj.extendVariantsProducts(items);
   const iter = result[Symbol.iterator]();

@@ -1,10 +1,10 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14855
+// Function ID: 14856
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1903, 678, 676, 5160, 8725, 21, 4302, 712, 11459, 4298, 1236, 589, 9358, 10394, 6940, 5688, 5362, 4270, 10084, 1988, 698, 11099, 5163, 4507, 8723, 10072, 7691, 8707, 8538, 14786, 1480, 2]
+// Dependencies: [19, 17, 1903, 678, 676, 5161, 8785, 21, 4303, 712, 11525, 4299, 1236, 589, 9423, 10460, 7000, 5748, 5363, 4271, 10150, 1988, 698, 11165, 5164, 4509, 8783, 10138, 7751, 8767, 8598, 14856, 1480, 2]
 // Exports: default
 
-// Module 14785 (CollectiblesShopHeaderTitle)
+// Module 14855 (CollectiblesShopHeaderTitle)
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,7 +21,7 @@ const require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(11459) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(11525) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = tmp5(1236).intl;
@@ -31,7 +31,7 @@ function CollectiblesShopHeaderTitle(currentScreen) {
     stringResult = intl.string(tmp5(1236).t.pWG4ze);
   }
   obj[5] = stringResult;
-  items[1] = callback(require(4298) /* Text */.Heading, obj);
+  items[1] = callback(require(4299) /* Text */.Heading, obj);
   obj[1] = items;
   return closure_11(View, obj);
 }
@@ -53,11 +53,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl = currentScreen(balance[12]).intl;
     obj[0] = intl.string(currentScreen(balance[12]).t["xNiB/O"]);
     obj[1] = function action() {
-      let obj = callback(6940);
+      let obj = callback(7000);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5688).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
+      const items = [callback2(5748).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5688).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
+      obj[1] = callback2(5748).COLLECTIBLES_SHOP_MOBILE_FEATURED_PAGE_MENU_ITEM;
       obj[2] = constants.FEATURED_PAGE;
       const result = obj.openCollectiblesShopMobile(obj);
     };
@@ -71,11 +71,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl2 = tmp(tmp2[12]).intl;
     obj[0] = intl2.string(currentScreen(balance[12]).t.RSyoZu);
     obj[1] = function action() {
-      let obj = callback(6940);
+      let obj = callback(7000);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5688).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
+      const items = [callback2(5748).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5688).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
+      obj[1] = callback2(5748).COLLECTIBLES_SHOP_MOBILE_SHOP_ALL_MENU_ITEM;
       obj[2] = constants.SHOP_ALL;
       const result = obj.openCollectiblesShopMobile(obj);
     };
@@ -89,11 +89,11 @@ function CollectiblesShopHeaderRight(currentScreen) {
     const intl3 = tmp(tmp2[12]).intl;
     obj[0] = intl3.string(currentScreen(balance[12]).t.EBYkzk);
     obj[1] = function action() {
-      let obj = callback(6940);
+      let obj = callback(7000);
       obj = { analyticsLocations: null, analyticsSource: null, screen: null };
-      const items = [callback2(5688).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
+      const items = [callback2(5748).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM];
       obj[0] = items;
-      obj[1] = callback2(5688).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
+      obj[1] = callback2(5748).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM;
       obj[2] = constants.ORBS;
       const result = obj.openCollectiblesShopMobile(obj);
     };

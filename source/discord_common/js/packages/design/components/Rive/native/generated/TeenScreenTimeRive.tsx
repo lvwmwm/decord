@@ -1,9 +1,9 @@
-// Module ID: 4106
-// Function ID: 4107
+// Module ID: 4112
+// Function ID: 4113
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 4030, 4107, 4081, 2]
+// Dependencies: [109, 19, 21, 4030, 4113, 4087, 2]
 
-// Module 4106 (TeenScreenTimeRive)
+// Module 4112 (TeenScreenTimeRive)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
@@ -26,7 +26,7 @@ let closure_8 = importAllResult.forwardRef(function TeenScreenTimeRiveInner(defa
     tmp = defaultViewModelInstance;
   }
   const obj = { ref, src: null, artboard: null, artboardProperties: null, artboardViewModelInstances: null, defaultViewModelInstance: null, stateMachine: null };
-  obj[1] = importDefault(4107);
+  obj[1] = importDefault(4113);
   obj[2] = str;
   obj[3] = closure_6;
   obj[4] = closure_7;
@@ -40,7 +40,7 @@ const forwardRefResult = importAllResult.forwardRef(function TeenScreenTimeRiveW
   obj = { ref };
   const merged = Object.assign(fallback);
   obj[1] = <closure_8 ref={arg1} />;
-  return jsx(require(4081) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
+  return jsx(require(4087) /* getDerivedStateFromError */.RiveErrorBoundary, { ref });
 });
 const result = require("jsxProd").fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/TeenScreenTimeRive.tsx");
 

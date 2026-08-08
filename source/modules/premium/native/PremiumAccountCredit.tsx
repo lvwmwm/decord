@@ -1,10 +1,10 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7638
+// Function ID: 7639
 // Name: AccountCreditTier
-// Dependencies: [19, 17, 6801, 676, 21, 4302, 712, 3947, 1236, 2866, 5678, 4298, 589, 12, 2]
+// Dependencies: [19, 17, 6861, 676, 21, 4303, 712, 3947, 1236, 2866, 5738, 4299, 589, 12, 2]
 // Exports: default
 
-// Module 7578 (AccountCreditTier)
+// Module 7638 (AccountCreditTier)
 import "noop";
 import { View } from "get ActivityIndicator";
 import addEntitlement from "addEntitlement";
@@ -68,20 +68,20 @@ function AccountCreditTier(arg0) {
   obj1 = { style: items, children: null };
   items[1] = divider;
   obj2 = { size: null, skuId: null };
-  obj2[0] = require(5678) /* GameIcon */.GameIconSizes.SMALL;
+  obj2[0] = require(5738) /* GameIcon */.GameIconSizes.SMALL;
   obj2[1] = result;
-  const items1 = [callback(importDefault(5678), obj2), , ];
+  const items1 = [callback(importDefault(5738), obj2), , ];
   const obj3 = { style: tmp.textContainer, children: null };
   const obj4 = { style: tmp.headerText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl4 = tmp2(1236).intl;
   obj4[3] = intl4.format(require(1236) /* getSystemLocale */.t.LzobT9, { planName: tierDisplayNameByPlanId });
-  const items2 = [callback(require(4298) /* Text */.Text, obj4), ];
+  const items2 = [callback(require(4299) /* Text */.Text, obj4), ];
   let tmp21Result = !tmp17;
   if (!(null != currentSubscription && currentSubscription.isPurchasedExternally)) {
     const obj5 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
     obj5[0] = tmp.subText;
     obj5[3] = stringResult;
-    tmp21Result = tmp21(tmp2(4298).Text, obj5);
+    tmp21Result = tmp21(tmp2(4299).Text, obj5);
   }
   items2[1] = tmp21Result;
   obj3[1] = items2;
@@ -89,7 +89,7 @@ function AccountCreditTier(arg0) {
   const obj6 = { style: tmp.timeText, variant: "text-md/medium", color: "text-default", children: null };
   const intl5 = tmp2(1236).intl;
   obj6[3] = intl5.format(require(1236) /* getSystemLocale */.t["ess/xl"], { count: months });
-  items1[2] = callback(require(4298) /* Text */.Text, obj6);
+  items1[2] = callback(require(4299) /* Text */.Text, obj6);
   obj1[1] = items1;
   return closure_7(View, obj1);
 }
@@ -145,7 +145,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       obj[0] = tmp.title;
       const intl = tmp2(1236).intl;
       obj[4] = intl.string(tmp2(1236).t.YugZY0);
-      const items1 = [callback(tmp2(4298).Text, obj), , , ];
+      const items1 = [callback(tmp2(4299).Text, obj), , , ];
       const obj1 = { style: null, children: null };
       const items2 = [tmp.creditList, creditListContainerStyle];
       obj1[0] = items2;
@@ -160,7 +160,7 @@ export default function PremiumAccountCredit(currentSubscription) {
       obj2[0] = tmp.creditDescription;
       const intl2 = tmp2(1236).intl;
       obj2[2] = intl2.string(tmp2(1236).t.kNEjGm);
-      items1[2] = callback(tmp2(4298).Text, obj2);
+      items1[2] = callback(tmp2(4299).Text, obj2);
       let tmp9Result = null;
       if (null != currentSubscription) {
         tmp9Result = null;
@@ -169,7 +169,7 @@ export default function PremiumAccountCredit(currentSubscription) {
           obj3[0] = tmp.creditDescription;
           const intl3 = tmp2(1236).intl;
           obj3[2] = intl3.string(tmp2(1236).t.azRP0E);
-          tmp9Result = callback(tmp2(4298).Text, obj3);
+          tmp9Result = callback(tmp2(4299).Text, obj3);
         }
       }
       items1[3] = tmp9Result;

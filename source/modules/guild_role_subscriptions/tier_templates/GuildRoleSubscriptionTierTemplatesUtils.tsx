@@ -1,10 +1,10 @@
-// Module ID: 14397
-// Function ID: 14398
+// Module ID: 14467
+// Function ID: 14468
 // Name: getUsedTemplateChannelsForGuild
-// Dependencies: [5, 19, 1372, 3923, 14392, 14398, 676, 1379, 4540, 647, 1384, 709, 8935, 5820, 13170, 2]
+// Dependencies: [5, 19, 1372, 3923, 14462, 14468, 676, 1379, 4542, 647, 1384, 709, 8995, 5880, 13240, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14397 (getUsedTemplateChannelsForGuild)
+// Module 14467 (getUsedTemplateChannelsForGuild)
 import initialize from "initialize";
 import { useMemo } from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -67,7 +67,7 @@ function _createChannelsFromTemplateTierBenefits() {
           obj[0] = arr;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -394,14 +394,14 @@ export const getTemplateTierCreationAnalyticsContext = function getTemplateTierC
   }
 };
 export const isEligibleForNewBadge = function isEligibleForNewBadge(features) {
-  let result = require(5820) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(features);
+  let result = require(5880) /* computeGuildRoleSubscriptionSettingsVisibility */.canManageGuildRoleSubscriptions(features);
   if (result) {
     features = features.features;
     result = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   }
   if (result) {
-    result = require(13170) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
-    const tmpResult = require(13170) /* GuildFeatures */;
+    result = require(13240) /* GuildFeatures */.isGuildEligibleForTierTemplates(features.id);
+    const tmpResult = require(13240) /* GuildFeatures */;
   }
   return result;
 };

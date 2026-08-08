@@ -1,10 +1,10 @@
-// Module ID: 13767
-// Function ID: 13768
+// Module ID: 13837
+// Function ID: 13838
 // Name: ThemedStatusBar
-// Dependencies: [19, 1302, 1218, 21, 589, 4152, 4147, 10699, 7688, 2]
+// Dependencies: [19, 1302, 1218, 21, 589, 4158, 4153, 10765, 7748, 2]
 // Exports: default
 
-// Module 13767 (ThemedStatusBar)
+// Module 13837 (ThemedStatusBar)
 import "noop";
 import handleThemeChange from "handleThemeChange";
 import fetchFingerprint from "fetchFingerprint";
@@ -17,16 +17,16 @@ export default function ThemedStatusBar() {
   let obj = require(589) /* initialize */;
   const items = [fetchFingerprint];
   const stateFromStores = obj.useStateFromStores(items, () => authenticated.isAuthenticated());
-  const isModalOpen = require(4152) /* navigationToRootTabHelper */.useIsModalOpen();
-  const obj2 = require(4152) /* navigationToRootTabHelper */;
+  const isModalOpen = require(4158) /* navigationToRootTabHelper */.useIsModalOpen();
+  const obj2 = require(4158) /* navigationToRootTabHelper */;
   const items1 = [handleThemeChange];
   const stateFromStores1 = require(589) /* initialize */.useStateFromStores(items1, () => callback(table[6]).isThemeDark(theme.theme));
   const obj3 = require(589) /* initialize */;
-  const globalStatusIndicatorState = require(10699) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
+  const globalStatusIndicatorState = require(10765) /* useGlobalStatusIndicatorState */.useGlobalStatusIndicatorState();
   if (!stateFromStores) {
     obj = { barStyle: null };
     obj[0] = "light-content";
-    return jsx(importDefault(7688), { barStyle: null });
+    return jsx(importDefault(7748), { barStyle: null });
   } else if (isModalOpen) {
     let str2 = "dark-content";
     if (stateFromStores1) {

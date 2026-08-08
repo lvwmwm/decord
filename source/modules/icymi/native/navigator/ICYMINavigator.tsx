@@ -1,10 +1,10 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15556
+// Function ID: 15557
 // Name: ICYMINavigator
-// Dependencies: [21, 8510, 5723, 15482, 15433, 2]
+// Dependencies: [21, 8570, 5783, 15557, 15508, 2]
 // Exports: default
 
-// Module 15481 (ICYMINavigator)
+// Module 15556 (ICYMINavigator)
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 
@@ -15,7 +15,7 @@ createNativeStackNavigator = createNativeStackNavigator.createNativeStackNavigat
 const result = require("NavigationStack").fileFinishedImporting("modules/icymi/native/navigator/ICYMINavigator.tsx");
 
 export default function ICYMINavigator() {
-  let obj = _require(5723);
+  let obj = _require(5783);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions() {
@@ -28,7 +28,7 @@ export default function ICYMINavigator() {
   obj = {
     name: "icymi-screen",
     getComponent() {
-      return callback(15482).ICYMITab;
+      return callback(15557).ICYMITab;
     }
   };
   const items = [
@@ -36,7 +36,7 @@ export default function ICYMINavigator() {
     callback(createNativeStackNavigator.Screen, {
       name: "notifications-screen",
       getComponent() {
-        return callback(15433).ThemedNotificationsModal;
+        return callback(15508).ThemedNotificationsModal;
       }
     })
   ];

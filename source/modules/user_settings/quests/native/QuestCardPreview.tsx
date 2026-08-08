@@ -1,10 +1,10 @@
-// Module ID: 14341
-// Function ID: 14342
+// Module ID: 14411
+// Function ID: 14412
 // Name: QuestCardPreview
-// Dependencies: [21, 11109, 5163, 14342, 1236, 14260, 712, 2]
+// Dependencies: [21, 11175, 5164, 14412, 1236, 14330, 712, 2]
 // Exports: QuestCardPreview
 
-// Module 14341 (QuestCardPreview)
+// Module 14411 (QuestCardPreview)
 import { jsx } from "jsxProd";
 
 const result = require("QuestsVisibleMessagesChangedSource").fileFinishedImporting("modules/user_settings/quests/native/QuestCardPreview.tsx");
@@ -12,8 +12,8 @@ const result = require("QuestsVisibleMessagesChangedSource").fileFinishedImporti
 export const QuestCardPreview = function QuestCardPreview(quest) {
   quest = quest.quest;
   let obj = { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null };
-  obj[1] = quest(5163).QuestContent.INTERNAL_PREVIEW_TOOL;
-  obj[2] = quest(5163).QuestContent.INTERNAL_PREVIEW_TOOL;
+  obj[1] = quest(5164).QuestContent.INTERNAL_PREVIEW_TOOL;
+  obj[2] = quest(5164).QuestContent.INTERNAL_PREVIEW_TOOL;
   obj[4] = function children() {
     let obj = { title: null, children: null };
     const intl = quest(outer1_2[4]).intl;
@@ -24,5 +24,5 @@ export const QuestCardPreview = function QuestCardPreview(quest) {
     obj[1] = outer1_3(quest(outer1_2[5]).QuestCard, obj);
     return outer1_3(outer1_1(outer1_2[3]), obj);
   };
-  return jsx(quest(11109).QuestContentImpressionTrackerNative, { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null });
+  return jsx(quest(11175).QuestContentImpressionTrackerNative, { questOrQuests: quest, questContent: null, sourceQuestContent: null, trackGuildAndChannelMetadata: false, children: null });
 };

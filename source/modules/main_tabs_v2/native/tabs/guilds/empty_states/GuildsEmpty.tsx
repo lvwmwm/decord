@@ -1,9 +1,9 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15386
+// Function ID: 15387
 // Name: handleJoinGuild
-// Dependencies: [32, 19, 17, 1218, 1891, 4118, 676, 21, 4302, 712, 4298, 11996, 15315, 1236, 4710, 4712, 1481, 647, 9284, 503, 1894, 4154, 4847, 14270, 2]
+// Dependencies: [32, 19, 17, 1218, 1891, 4124, 676, 21, 4303, 712, 4299, 12062, 15387, 1236, 4712, 4714, 1481, 647, 9349, 503, 1894, 4160, 4849, 14340, 2]
 
-// Module 15314 (handleJoinGuild)
+// Module 15386 (handleJoinGuild)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "encodeProperties";
 import get_ActivityIndicator from "defaultAreStatesEqual";
@@ -23,10 +23,10 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(11996).openGuildJoinServerScreen();
+  const result = importDefault(12062).openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(11996).openCreateGuildModal();
+  importDefault(12062).openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -127,7 +127,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   obj = { type: null, name: null };
   obj[0] = navigation(503).ImpressionTypes.VIEW;
   obj[1] = navigation(503).ImpressionNames.GUILDS_EMPTY_NUX;
-  importDefault(9284)(obj);
+  importDefault(9349)(obj);
   const items1 = [tmp6, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != c1) {
@@ -164,9 +164,9 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
       obj2 = closure_0;
     }
   }, items1);
-  let tmp2Result = tmp2(4847);
+  let tmp2Result = tmp2(4849);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  tmp2Result = tmp2(14270);
+  tmp2Result = tmp2(14340);
   let tmp14Result = null;
   if (stateFromStores) {
     obj = { style: null, children: null };
@@ -179,7 +179,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
     let obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl = tmp2(1236).intl;
     obj3[4] = intl.string(tmp2(1236).t["7hB4kg"]);
-    obj2[1] = callback(tmp2(4298).Text, obj3);
+    obj2[1] = callback(tmp2(4299).Text, obj3);
     obj1[1] = callback(closure_6, obj2);
     const items3 = [callback(closure_6, obj1), ];
     let tmp18;

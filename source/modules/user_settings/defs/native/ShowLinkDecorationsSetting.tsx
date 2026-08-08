@@ -1,10 +1,10 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14594
+// Function ID: 14595
 // Name: useShowLinkDecorationsSettingValue
-// Dependencies: [4294, 8022, 589, 13640, 10380, 1236, 2]
+// Dependencies: [4295, 8082, 589, 13710, 10446, 1236, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 14524 (useShowLinkDecorationsSettingValue)
+// Module 14594 (useShowLinkDecorationsSettingValue)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import createToggle from "createToggle";
 
@@ -14,7 +14,7 @@ function useShowLinkDecorationsSettingValue() {
   return require(589) /* initialize */.useStateFromStores(items, () => obj.alwaysShowLinkDecorations);
 }
 function onShowLinkDecorationsValueChange(alwaysShowLinkDecorations) {
-  const result = require(13640) /* setFontSize */.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
+  const result = require(13710) /* setFontSize */.setAlwaysShowLinkDecorations(alwaysShowLinkDecorations);
 }
 createToggle = {
   useTitle() {

@@ -1,10 +1,10 @@
-// Module ID: 8036
-// Function ID: 8037
+// Module ID: 8096
+// Function ID: 8097
 // Name: collectAst
 // Dependencies: [2]
 // Exports: astToString, getIndexedAST
 
-// Module 8036 (collectAst)
+// Module 8096 (collectAst)
 function collectAst(arr) {
   let items = arg1;
   if (arg1 === undefined) {

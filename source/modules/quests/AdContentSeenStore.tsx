@@ -1,9 +1,9 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14325
+// Function ID: 14326
 // Name: getOrCreateSet
-// Dependencies: [32, 7100, 7128, 7098, 589, 709, 2]
+// Dependencies: [32, 7160, 7188, 7158, 589, 709, 2]
 
-// Module 14255 (getOrCreateSet)
+// Module 14325 (getOrCreateSet)
 import _slicedToArray from "_slicedToArray";
 import initializeState from "initializeState";
 import { PersistedStore } from "initialize";
@@ -23,7 +23,7 @@ function syncWithQuestStore() {
   let tmp5;
   let tmp7;
   const quests = lastFetchedQuestHomeHero.quests;
-  const obj = getOrCreateSet(require(7128) /* AdCreativeType */.AdCreativeType.QUEST);
+  const obj = getOrCreateSet(require(7188) /* AdCreativeType */.AdCreativeType.QUEST);
   let flag = false;
   while (tmp !== undefined) {
     let tmp3 = callback;
@@ -34,7 +34,7 @@ function syncWithQuestStore() {
     if (!hasItem) {
       let tmp9 = require;
       let tmp10 = dependencyMap;
-      let obj2 = require(7098) /* getQuestDeliveryDataForPlacement */;
+      let obj2 = require(7158) /* getQuestDeliveryDataForPlacement */;
       let tmp11 = tmp7;
       hasItem = obj2.isQuestExpired(tmp7);
     }
@@ -78,7 +78,7 @@ function syncWithQuestStore() {
         if (!isQuestExpiredResult) {
           let tmp28 = require;
           let tmp29 = dependencyMap;
-          let obj3 = require(7098) /* getQuestDeliveryDataForPlacement */;
+          let obj3 = require(7158) /* getQuestDeliveryDataForPlacement */;
           let tmp30 = value;
           isQuestExpiredResult = obj3.isQuestExpired(tmp26);
         }
@@ -91,7 +91,7 @@ function syncWithQuestStore() {
       }
     }
   }
-  const obj4 = getOrCreateSet(require(7128) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
+  const obj4 = getOrCreateSet(require(7188) /* AdCreativeType */.AdCreativeType.QUEST_HOME_HERO);
   if (null != lastFetchedQuestHomeHero.getLastFetchedQuestHomeHero()) {
     if (obj4.size > 0) {
       const questHomeHero = lastFetchedQuestHomeHero.getQuestHomeHero();

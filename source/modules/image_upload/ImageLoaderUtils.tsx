@@ -199,7 +199,7 @@ export const loadImage = function loadImage(arg0, bind) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ export const loadImage = function loadImage(arg0, bind) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "T", done: null };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -295,7 +295,7 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = outer1_4(/* F102953 */ function() { ... });
+                            image.onerror = outer1_4(/* F103270 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });

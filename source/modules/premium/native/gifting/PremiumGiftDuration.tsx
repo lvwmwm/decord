@@ -1,10 +1,10 @@
-// Module ID: 10050
-// Function ID: 10051
+// Module ID: 10116
+// Function ID: 10117
 // Name: PremiumGiftDurationButton
-// Dependencies: [19, 17, 1905, 21, 4302, 712, 9546, 5373, 7910, 9977, 4019, 4298, 1236, 2]
+// Dependencies: [19, 17, 1905, 21, 4303, 712, 9611, 5374, 7970, 10043, 4019, 4299, 1236, 2]
 // Exports: default
 
-// Module 10050 (PremiumGiftDurationButton)
+// Module 10116 (PremiumGiftDurationButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -24,14 +24,14 @@ function PremiumGiftDurationButton(arg0) {
   let selected;
   ({ selected, planInterval } = arg0);
   let setPlanInterval;
-  let obj = planInterval(9546);
+  let obj = planInterval(9611);
   const nativeGiftContext = obj.useNativeGiftContext();
   setPlanInterval = nativeGiftContext.setPlanInterval;
   const tmp4 = createCacheKey();
   if (selected) {
-    let RowButton = tmp(5373).TableRow;
+    let RowButton = tmp(5374).TableRow;
   } else {
-    RowButton = tmp(7910).RowButton;
+    RowButton = tmp(7970).RowButton;
   }
   let combined = null;
   if (planInterval === SubscriptionIntervalTypes.YEAR) {
@@ -39,7 +39,7 @@ function PremiumGiftDurationButton(arg0) {
     combined = "" + closure_4 + "%";
   }
   const tmp5 = SubscriptionIntervalTypes;
-  const tmp9 = setPlanInterval(9977)(nativeGiftContext.premiumType, planInterval);
+  const tmp9 = setPlanInterval(10043)(nativeGiftContext.premiumType, planInterval);
   const radioA11yNative = planInterval(4019).useRadioA11yNative({ selected });
   const items = [tmp4.container, ];
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
@@ -56,7 +56,7 @@ function PremiumGiftDurationButton(arg0) {
     const intl = tmp(1236).intl;
     stringResult = intl.string(tmp(1236).t.DRgqMo);
   }
-  const items1 = [closure_6(planInterval(4298).Text, { variant: "text-md/semibold", children: stringResult }), ];
+  const items1 = [closure_6(planInterval(4299).Text, { variant: "text-md/semibold", children: stringResult }), ];
   let tmp11Result = null != combined;
   if (tmp11Result) {
     const obj1 = { style: null, children: null };
@@ -66,7 +66,7 @@ function PremiumGiftDurationButton(arg0) {
     const obj3 = { discount: null };
     obj3[0] = combined;
     obj2[2] = intl3.formatToPlainString(tmp(1236).t.IAybsG, obj3).toUpperCase();
-    obj1[1] = tmp11(tmp(4298).Text, obj2);
+    obj1[1] = tmp11(tmp(4299).Text, obj2);
     tmp11Result = tmp11(tmp12, obj1);
     const str3 = intl3.formatToPlainString(tmp(1236).t.IAybsG, obj3);
   }
@@ -76,7 +76,7 @@ function PremiumGiftDurationButton(arg0) {
   obj[1] = items1;
   obj[1] = closure_6(RowButton, {
     label: closure_7(View, obj),
-    trailing: closure_6(planInterval(4298).Text, { variant: "text-md/semibold", children: tmp9 }),
+    trailing: closure_6(planInterval(4299).Text, { variant: "text-md/semibold", children: tmp9 }),
     onPress() {
       setPlanInterval(planInterval);
     },
@@ -111,13 +111,13 @@ const result = require("GuildFeatures").fileFinishedImporting("modules/premium/n
 
 export default function PremiumGiftDuration() {
   const tmp = callback3();
-  let obj = planInterval(9546);
+  let obj = planInterval(9611);
   planInterval = obj.useNativeGiftContext().planInterval;
   obj = { style: tmp.durationContainer, children: null };
   obj = { style: tmp.durationTitle, variant: "text-sm/semibold", children: null };
   const intl = planInterval(1236).intl;
   obj[2] = intl.string(planInterval(1236).t["8XT6Nf"]);
-  const items = [callback(planInterval(4298).Text, obj), ];
+  const items = [callback(planInterval(4299).Text, obj), ];
   items[1] = items.map((planInterval) => outer1_6(outer1_10, { selected: planInterval === planInterval, planInterval }, arg1));
   obj[1] = items;
   return callback2(View, obj);

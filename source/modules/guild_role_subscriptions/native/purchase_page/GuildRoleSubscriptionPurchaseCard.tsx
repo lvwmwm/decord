@@ -1,10 +1,10 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15653
+// Function ID: 15654
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4302, 712, 1609, 14391, 15573, 5396, 4298, 1297, 15579, 5398, 1236, 14401, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 1609, 14461, 15648, 5397, 4299, 1297, 15654, 5399, 1236, 14471, 2]
 // Exports: default
 
-// Module 15578 (GuildRoleSubscriptionPurchaseCard)
+// Module 15653 (GuildRoleSubscriptionPurchaseCard)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";
@@ -32,27 +32,27 @@ const result = require("get ActivityIndicator").fileFinishedImporting("modules/g
 export default function GuildRoleSubscriptionPurchaseCard(guildId) {
   const listingId = guildId.listingId;
   const tmp = createCacheKey();
-  let obj = importAll(14391);
-  let obj1 = importAll(14391);
-  let obj2 = require(15573) /* TruncatedText */;
+  let obj = importAll(14461);
+  let obj1 = importAll(14461);
+  let obj2 = require(15648) /* TruncatedText */;
   const formattedSubscriptionPlan = obj2.useFormattedSubscriptionPlan(listingId);
   obj = { scrollable: true, startExpanded: true, children: null };
   obj = { style: tmp.container, children: null };
   obj1 = { style: tmp.header, children: null };
   obj2 = { style: tmp.headerText, children: null };
-  const items = [callback2(require(4298) /* Text */.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] }), callback2(View, { style: tmp.headerDot }), callback2(require(4298) /* Text */.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan })];
+  const items = [callback2(require(4299) /* Text */.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: callback(obj1.useName(listingId), 1)[0] }), callback2(View, { style: tmp.headerDot }), callback2(require(4299) /* Text */.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: formattedSubscriptionPlan })];
   obj2[1] = items;
-  const items1 = [callback3(View, obj2), callback2(require(1297) /* Button */.Spacer, { size: 16 }), callback2(require(15573) /* TruncatedText */.TruncatedText, { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: callback(obj.useDescription(listingId), 1)[0] }), callback2(require(1297) /* Button */.Spacer, { size: 24 }), callback2(importDefault(15579), { listingId })];
+  const items1 = [callback3(View, obj2), callback2(require(1297) /* Button */.Spacer, { size: 16 }), callback2(require(15648) /* TruncatedText */.TruncatedText, { variant: "text-sm/normal", color: "text-default", lineClamp: 2, children: callback(obj.useDescription(listingId), 1)[0] }), callback2(require(1297) /* Button */.Spacer, { size: 24 }), callback2(importDefault(15654), { listingId })];
   obj1[1] = items1;
   const items2 = [callback3(View, obj1), callback2(View, { style: tmp.seperator }), ];
   const obj5 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: obj6, children: null };
   const obj7 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" }, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj7[3] = intl.string(require(1236) /* getSystemLocale */.t.UdEvUi);
-  const items3 = [callback2(require(4298) /* Text */.Text, obj7), callback2(require(1297) /* Button */.Spacer, { size: 24 }), callback2(require(14401) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
+  const items3 = [callback2(require(4299) /* Text */.Text, obj7), callback2(require(1297) /* Button */.Spacer, { size: 24 }), callback2(require(14471) /* SectionTitle */.Content, { listingId, guildId: guildId.guildId })];
   obj5[3] = items3;
-  items2[2] = callback3(require(5398) /* BottomSheetModal */.BottomSheetScrollView, obj5);
+  items2[2] = callback3(require(5399) /* BottomSheetModal */.BottomSheetScrollView, obj5);
   obj[1] = items2;
   obj[2] = callback3(View, obj);
-  return callback2(require(5396) /* Background */.BottomSheet, obj);
+  return callback2(require(5397) /* Background */.BottomSheet, obj);
 };

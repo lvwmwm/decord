@@ -1,9 +1,9 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16340
+// Function ID: 16341
 // Name: isAnalyticsEndpoint
-// Dependencies: [5, 4216, 676, 531, 16264, 1467, 1452, 709, 530, 1218, 706, 1975, 1903, 698, 500, 16265, 17, 666, 16266, 16267, 7, 1208, 16270, 1988, 10396, 14915, 9182, 5233, 16276, 13110, 16277, 1454, 2]
+// Dependencies: [5, 4217, 676, 531, 16341, 1467, 1452, 709, 530, 1218, 706, 1975, 1903, 698, 500, 16342, 17, 666, 16343, 16344, 7, 1208, 16347, 1988, 10462, 14985, 9246, 5234, 16353, 13180, 16354, 1454, 2]
 
-// Module 16263 (isAnalyticsEndpoint)
+// Module 16340 (isAnalyticsEndpoint)
 import getHash from "getHash";
 import { AbortCodes } from "ME";
 import ApexExperiment from "ApexExperiment";
@@ -65,7 +65,7 @@ ApexExperiment = {
       if (!tmp3) {
         const result = promise.set("Authorization", _default.getToken());
       }
-      tmpResult = tmp(16265);
+      tmpResult = tmp(16342);
       const result1 = tmpResult.updateDynamicSuperProperties();
       const superPropertiesBase64 = _default4.getSuperPropertiesBase64();
       if (null != superPropertiesBase64) {
@@ -119,7 +119,7 @@ ApexExperiment = {
         tmpResult2 = tmp(500);
       }
       const result6 = promise.set("X-Discord-Locale", callback(1975).default.locale);
-      const tmp19 = importDefault(16266)();
+      const tmp19 = importDefault(16343)();
       if (null != tmp19) {
         const result7 = promise.set("X-Discord-Timezone", tmp19);
       }
@@ -281,7 +281,7 @@ ApexExperiment = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [callback(1988)(16270, dependencyMap.paths), callback(1988)(10396, dependencyMap.paths)];
+        const items = [callback(1988)(16347, dependencyMap.paths), callback(1988)(10462, dependencyMap.paths)];
         const allPromises = Promise.all(items);
         const nextPromise = Promise.all(items).then((arg0) => {
           const iter = arg0[Symbol.iterator]();
@@ -384,12 +384,12 @@ ApexExperiment = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = callback(1988)(14915, dependencyMap.paths);
-          callback(1988)(14915, dependencyMap.paths).then((openMFAModal) => {
+          const promise4 = callback(1988)(14985, dependencyMap.paths);
+          callback(1988)(14985, dependencyMap.paths).then((openMFAModal) => {
             openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
           }).catch(arg2);
           flag = true;
-          const nextPromise2 = callback(1988)(14915, dependencyMap.paths).then((openMFAModal) => {
+          const nextPromise2 = callback(1988)(14985, dependencyMap.paths).then((openMFAModal) => {
             openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
           });
         }
@@ -401,11 +401,11 @@ ApexExperiment = {
       code1 = body4.code;
     }
     if (obj.isLimitedAccessErrorCode(statusCode.statusCode, code1)) {
-      tmp7(1988)(5233, tmp8.paths).then((arg0) => {
+      tmp7(1988)(5234, tmp8.paths).then((arg0) => {
         arg0.default();
       });
       flag = false;
-      const promise3 = tmp7(1988)(5233, tmp8.paths);
+      const promise3 = tmp7(1988)(5234, tmp8.paths);
     } else {
       const body5 = statusCode.body;
       let code2;
@@ -413,7 +413,7 @@ ApexExperiment = {
         code2 = body5.code;
       }
       if (tmp7Result.isLimitedAccessErrorCode(statusCode.statusCode, code2)) {
-        tmp7(1988)(13110, tmp8.paths).then((arg0) => {
+        tmp7(1988)(13180, tmp8.paths).then((arg0) => {
           const body = statusCode.body;
           let guild_id;
           if (body != null) {
@@ -422,7 +422,7 @@ ApexExperiment = {
           arg0.default(guild_id);
         });
         flag = false;
-        const promise2 = tmp7(1988)(13110, tmp8.paths);
+        const promise2 = tmp7(1988)(13180, tmp8.paths);
       } else {
         flag = 403 === statusCode.statusCode;
         if (flag) {
@@ -434,14 +434,14 @@ ApexExperiment = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          tmp7(1988)(16277, tmp8.paths).then((openRestrictedHoursModal) => {
+          tmp7(1988)(16354, tmp8.paths).then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });
           flag = false;
-          const promise = tmp7(1988)(16277, tmp8.paths);
+          const promise = tmp7(1988)(16354, tmp8.paths);
         }
       }
-      tmp7Result = tmp7(16276);
+      tmp7Result = tmp7(16353);
     }
   }
 };
@@ -463,7 +463,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

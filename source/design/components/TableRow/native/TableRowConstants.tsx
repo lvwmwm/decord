@@ -1,10 +1,10 @@
-// Module ID: 5332
-// Function ID: 5333
+// Module ID: 5333
+// Function ID: 5334
 // Name: TABLE_ROW_HEIGHT
 // Dependencies: [17, 2]
 // Exports: getTableDividerWidth
 
-// Module 5332 (TABLE_ROW_HEIGHT)
+// Module 5333 (TABLE_ROW_HEIGHT)
 import get_ActivityIndicator from "get ActivityIndicator";
 
 let Platform;

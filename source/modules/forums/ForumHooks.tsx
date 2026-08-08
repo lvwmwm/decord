@@ -1,10 +1,10 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8403
+// Function ID: 8404
 // Name: useLoadForumUnreadCounts
-// Dependencies: [5, 19, 5175, 5222, 5223, 5862, 1372, 5142, 1891, 3929, 4314, 1903, 5861, 5835, 8344, 7167, 5864, 676, 1379, 1235, 589, 5863, 709, 12, 1351, 4728, 11, 7180, 1381, 7994, 4530, 8141, 8345, 8346, 5252, 2]
+// Dependencies: [5, 19, 5176, 5223, 5224, 5922, 1372, 5143, 1891, 3929, 4315, 1903, 5921, 5895, 8404, 7227, 5924, 676, 1379, 1235, 589, 5923, 709, 12, 1351, 4730, 11, 7240, 1381, 8054, 4532, 8201, 8405, 8406, 5253, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanSearchForumPosts, useCanViewArchivedPosts, useChannelTemplate, useDefaultReactionEmoji, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumSearchState, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions, useUnreadThreadsCountForParent
 
-// Module 8343 (useLoadForumUnreadCounts)
+// Module 8403 (useLoadForumUnreadCounts)
 import updateState from "updateState";
 import AbortCodes from "AbortCodes";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -392,8 +392,8 @@ export const useMessageCount = function useMessageCount(thread) {
     }
     return num;
   });
-  const messageCountText = _require(7994).getMessageCountText(stateFromStores, thread.id);
-  const obj2 = _require(7994);
+  const messageCountText = _require(8054).getMessageCountText(stateFromStores, thread.id);
+  const obj2 = _require(8054);
   const items1 = [generateOldThreadCutoff];
   const dependencyMap = _require(589).useStateFromStores(items1, () => {
     const items = [outer1_13];
@@ -443,7 +443,7 @@ export const useForumPostMessageAuthor = function useForumPostMessageAuthor(mess
   let obj = id(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_14.getUser(id));
-  const nullableMessageAuthor = id(4530).useNullableMessageAuthor(message);
+  const nullableMessageAuthor = id(4532).useNullableMessageAuthor(message);
   const items1 = [guildId, id];
   const effect = React.useEffect(() => {
     let tmp2 = null != id;
@@ -509,7 +509,7 @@ export const useForumPostAuthor = function useForumPostAuthor(thread) {
   }
   const items2 = [, ];
   ({ guild_id: arr3[0], ownerId: arr3[1] } = thread);
-  author = _require(4530).useNullableUserAuthor(author, thread);
+  author = _require(4532).useNullableUserAuthor(author, thread);
   const effect = React.useEffect(() => {
     if (null != thread.ownerId) {
       const member = outer1_10.requestMember(tmp.guild_id, tmp.ownerId);
@@ -532,7 +532,7 @@ export const getForumPostAuthor = function getForumPostAuthor(ownerId) {
   if (author == null) {
     author = user;
   }
-  obj[1] = require(4530) /* useNullableMessageAuthor */.getUserAuthor(author, ownerId);
+  obj[1] = require(4532) /* useNullableMessageAuthor */.getUserAuthor(author, ownerId);
   return obj;
 };
 export const useForumPostFirstMessageMarkup = function useForumPostFirstMessageMarkup(firstMessage) {

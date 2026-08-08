@@ -1,10 +1,10 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10730
+// Function ID: 10731
 // Name: _createWebviewHtmlFile
 // Dependencies: [5, 17, 500, 1271, 1208, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 10664 (_createWebviewHtmlFile)
+// Module 10730 (_createWebviewHtmlFile)
 import set from "set";
 import { NativeModules } from "get ActivityIndicator";
 
@@ -33,7 +33,7 @@ function _createWebviewHtmlFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ function _createWebviewHtmlFile() {
               c6 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

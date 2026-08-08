@@ -1,10 +1,10 @@
-// Module ID: 15190
-// Function ID: 15191
+// Module ID: 15263
+// Function ID: 15264
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 4118, 676, 3974, 9645, 1894, 1222, 9644, 1236, 3030, 2]
+// Dependencies: [19, 4124, 676, 3974, 9711, 1894, 1222, 9710, 1236, 3030, 2]
 // Exports: default
 
-// Module 15190 (useFavoritesGuildResetAction)
+// Module 15263 (useFavoritesGuildResetAction)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { Routes } from "ME";
@@ -15,7 +15,7 @@ const result = require("ME").fileFinishedImporting("modules/favorites/hooks/useF
 export default function useFavoritesGuildResetAction() {
   const DeveloperMode = require(3974) /* explicitContentFromProto */.DeveloperMode;
   let hasAccess = DeveloperMode.useSetting();
-  let obj = require(9645) /* useFavoritesAccess */;
+  let obj = require(9711) /* useFavoritesAccess */;
   const callback = React.useCallback(() => {
     if (obj.isFavoritesGuildId(guildId.getGuildId())) {
       let tmpResult = tmp(tmp2[6]);

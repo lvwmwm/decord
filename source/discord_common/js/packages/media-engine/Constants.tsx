@@ -1,9 +1,9 @@
-// Module ID: 4362
-// Function ID: 4363
+// Module ID: 4364
+// Function ID: 4365
 // Name: DesktopSources
-// Dependencies: [2, 4363]
+// Dependencies: [2, 4365]
 
-// Module 4362 (DesktopSources)
+// Module 4364 (DesktopSources)
 const result = require("set").fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
 
 export const DesktopSources = require("SystemServiceNotAvailableError").DesktopSources;

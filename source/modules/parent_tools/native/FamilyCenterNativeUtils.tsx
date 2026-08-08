@@ -1,10 +1,10 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11320
+// Function ID: 11321
 // Name: FAMILY_CENTER_REQUEST_MODAL_KEY
-// Dependencies: [4518, 6937, 676, 698, 6938, 4507, 11255, 1988, 2]
+// Dependencies: [4520, 6997, 676, 698, 6998, 4509, 11321, 1988, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 11254 (FAMILY_CENTER_REQUEST_MODAL_KEY)
+// Module 11320 (FAMILY_CENTER_REQUEST_MODAL_KEY)
 import initialize from "initialize";
 import items from "items";
 import { AnalyticEvents } from "ME";
@@ -28,25 +28,25 @@ export const handleFamilyCenterQRCodeScan = function handleFamilyCenterQRCodeSca
     obj[1] = match[1];
     obj[2] = FamilyCenterQRCodeScan;
     obj.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj);
-    importDefault(6938).setPendingConnection(match[1], match[2]);
-    const obj3 = importDefault(6938);
+    importDefault(6998).setPendingConnection(match[1], match[2]);
+    const obj3 = importDefault(6998);
     obj = { userId: null, linkCode: null };
     obj[0] = match[1];
     obj[1] = match[2];
-    importDefault(4507).pushLazy(require(1988) /* asyncRequireImpl */(11255, dependencyMap.paths), obj, c7);
+    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(11321, dependencyMap.paths), obj, c7);
   }
 };
 export const resumeFamilyCenterConnection = function resumeFamilyCenterConnection() {
   pendingConnection = pendingConnection.getPendingConnection();
   let flag = null != pendingConnection;
   if (flag) {
-    let obj = importDefault(4507);
+    let obj = importDefault(4509);
     obj.popWithKey(c7);
     obj = { userId: null, linkCode: null };
     ({ teenId: obj3[0], linkCode: obj3[1] } = pendingConnection);
-    importDefault(4507).pushLazy(require(1988) /* asyncRequireImpl */(11255, dependencyMap.paths), obj, c7);
+    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(11321, dependencyMap.paths), obj, c7);
     flag = true;
-    const obj2 = importDefault(4507);
+    const obj2 = importDefault(4509);
   }
   return flag;
 };

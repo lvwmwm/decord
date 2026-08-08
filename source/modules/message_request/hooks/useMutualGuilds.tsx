@@ -1,10 +1,10 @@
-// Module ID: 15869
-// Function ID: 15870
+// Module ID: 15944
+// Function ID: 15945
 // Name: useMutualGuildsForMessageRequests
-// Dependencies: [19, 7020, 1903, 589, 709, 8248, 2]
+// Dependencies: [19, 7080, 1903, 589, 709, 8308, 2]
 // Exports: useMutualGuildsForMessageRequests
 
-// Module 15869 (useMutualGuildsForMessageRequests)
+// Module 15944 (useMutualGuildsForMessageRequests)
 import noop from "noop";
 import createUserWidgetFromServer from "createUserWidgetFromServer";
 import mergeGuildAvatar from "mergeGuildAvatar";

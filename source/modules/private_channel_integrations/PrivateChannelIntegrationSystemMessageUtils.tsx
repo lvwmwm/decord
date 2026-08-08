@@ -1,10 +1,10 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8103
+// Function ID: 8104
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
 // Dependencies: [676, 1236, 1974, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 8043 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 8103 (getPrivateChannelIntegrationAddedSystemMessageContent)
 import ME from "ME";
 
 let c3;

@@ -1,10 +1,10 @@
-// Module ID: 8611
-// Function ID: 8612
+// Module ID: 8671
+// Function ID: 8672
 // Name: useCollapsibleFloatingActionButtonState
-// Dependencies: [19, 4162, 2]
+// Dependencies: [19, 4036, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 8611 (useCollapsibleFloatingActionButtonState)
+// Module 8671 (useCollapsibleFloatingActionButtonState)
 import noop from "noop";
 
 const require = arg1;
@@ -13,7 +13,7 @@ let result = require("set").fileFinishedImporting("design/components/experimenta
 
 export const useCollapsibleFloatingActionButtonState = function useCollapsibleFloatingActionButtonState() {
   const obj = { collapseText: null };
-  obj[0] = require(4162).useSharedValue(0);
+  obj[0] = require(4036).useSharedValue(0);
   return obj;
 };
 export const useCollapsibleFloatingActionButtonScroll = function useCollapsibleFloatingActionButtonScroll(collapsibleFloatingActionButtonState, UNDETERMINED) {

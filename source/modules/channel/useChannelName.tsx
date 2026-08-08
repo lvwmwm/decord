@@ -1,10 +1,10 @@
-// Module ID: 4492
-// Function ID: 4493
+// Module ID: 4494
+// Function ID: 4495
 // Name: computeChannelName
-// Dependencies: [32, 4216, 3938, 1903, 676, 1351, 4140, 1236, 589, 2]
+// Dependencies: [32, 4217, 3938, 1903, 676, 1351, 4146, 1236, 589, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 4492 (computeChannelName)
+// Module 4494 (computeChannelName)
 import _slicedToArray from "_slicedToArray";
 import getHash from "getHash";
 import upsertRelationship from "upsertRelationship";
@@ -46,8 +46,8 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
           if (!first.isProvisional) {
             let str17 = closure_7.getNickname(first.id);
             if (str17 == null) {
-              str17 = importDefault(4140).getName(first);
-              const obj3 = importDefault(4140);
+              str17 = importDefault(4146).getName(first);
+              const obj3 = importDefault(4146);
             }
             if (str17 == null) {
               str17 = "???";
@@ -82,9 +82,9 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
         } else {
           const intl2 = tmp25(1236).intl;
           const obj = { name: null };
-          obj[0] = importDefault(4140).getName(closure_9.getCurrentUser());
+          obj[0] = importDefault(4146).getName(closure_9.getCurrentUser());
           joined = intl2.formatToPlainString(tmp25(1236).t["9Uk8PF"], obj);
-          const obj2 = importDefault(4140);
+          const obj2 = importDefault(4146);
         }
       }
     } else {
@@ -181,9 +181,9 @@ export const computeDefaultGroupDmNameFromUserIds = function computeDefaultGroup
   } else {
     const intl = tmp(1236).intl;
     const obj = { name: null };
-    obj[0] = importDefault(4140).getName(getUser.getCurrentUser());
+    obj[0] = importDefault(4146).getName(getUser.getCurrentUser());
     joined = intl.formatToPlainString(tmp(1236).t["9Uk8PF"], obj);
-    const obj2 = importDefault(4140);
+    const obj2 = importDefault(4146);
   }
   return joined;
 };
@@ -205,9 +205,9 @@ export const computeDefaultGroupDmName = function computeDefaultGroupDmName(reci
   } else {
     const intl = tmp(1236).intl;
     const obj = { name: null };
-    obj[0] = importDefault(4140).getName(getUser.getCurrentUser());
+    obj[0] = importDefault(4146).getName(getUser.getCurrentUser());
     joined = intl.formatToPlainString(tmp(1236).t["9Uk8PF"], obj);
-    const obj2 = importDefault(4140);
+    const obj2 = importDefault(4146);
   }
   return joined;
 };

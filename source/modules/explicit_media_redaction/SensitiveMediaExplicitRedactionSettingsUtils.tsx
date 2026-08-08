@@ -1,10 +1,10 @@
-// Module ID: 5855
-// Function ID: 5856
+// Module ID: 5915
+// Function ID: 5916
 // Name: resolveExplicitContentSettingWithDefaults
-// Dependencies: [1903, 3976, 1306, 3980, 3987, 3974, 5856, 2]
+// Dependencies: [1903, 3976, 1306, 3980, 3987, 3974, 5916, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 5855 (resolveExplicitContentSettingWithDefaults)
+// Module 5915 (resolveExplicitContentSettingWithDefaults)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExplicitContentFilterTypes } from "items";
 
@@ -231,6 +231,6 @@ export const shouldRedactMessageMediaForForum = function shouldRedactMessageMedi
     obj = { setting: null, isDm: true, isFriend: true };
     obj[0] = prop2;
     resolveExplicitContentSettingWithDefaults(obj);
-    return require(5856) /* getShouldObscureForSetting */.getShouldObscureForSetting(tmp10Result);
+    return require(5916) /* getShouldObscureForSetting */.getShouldObscureForSetting(tmp10Result);
   }
 };

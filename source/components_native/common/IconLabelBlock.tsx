@@ -1,9 +1,9 @@
-// Module ID: 15840
-// Function ID: 15841
+// Module ID: 15915
+// Function ID: 15916
 // Name: renderLabel
-// Dependencies: [109, 19, 17, 21, 4302, 712, 4013, 1297, 4298, 9616, 4147, 2]
+// Dependencies: [109, 19, 17, 21, 4303, 712, 4013, 1297, 4299, 9681, 4153, 2]
 
-// Module 15840 (renderLabel)
+// Module 15915 (renderLabel)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -50,7 +50,7 @@ prototype["renderText"] = function renderText() {
     obj[2] = items;
     obj[3] = tmp3;
     obj[4] = text;
-    tmp4 = callback2(require(4298) /* Text */.Text, obj);
+    tmp4 = callback2(require(4299) /* Text */.Text, obj);
   }
   return tmp4;
 };
@@ -71,7 +71,7 @@ prototype["renderIcon"] = function renderIcon() {
     const tmp13 = closure_5;
     const tmp14 = callback2;
     const merged = Object.assign(tmp11);
-    const items = [callback2(importDefault(9616), obj), ];
+    const items = [callback2(importDefault(9681), obj), ];
     let tmp14Result = null;
     if (null != error) {
       const obj1 = { style: null };
@@ -86,7 +86,7 @@ prototype["renderIcon"] = function renderIcon() {
     return tmp12(tmp13, obj);
   } else {
     if (null == source) {
-      obj = require(4147) /* AccessibilityAnnouncer */;
+      obj = require(4153) /* AccessibilityAnnouncer */;
       if (obj.isThemeLight(this.context.theme)) {
         darkSource = tmp2;
       }

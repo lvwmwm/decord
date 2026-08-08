@@ -1,10 +1,10 @@
-// Module ID: 14936
-// Function ID: 14937
+// Module ID: 15006
+// Function ID: 15007
 // Name: _testCaptcha
 // Dependencies: [5, 676, 530, 2]
 // Exports: testCaptcha
 
-// Module 14936 (_testCaptcha)
+// Module 15006 (_testCaptcha)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import { Endpoints } from "ME";
 
@@ -28,7 +28,7 @@ function _testCaptcha() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _testCaptcha() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = tmp;

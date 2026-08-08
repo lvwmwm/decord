@@ -1,10 +1,10 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10322
+// Function ID: 10323
 // Name: canSeeChannelSummaries
 // Dependencies: [1415, 1891, 676, 1379, 1894, 647, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 10256 (canSeeChannelSummaries)
+// Module 10322 (canSeeChannelSummaries)
 import { isGuildNSFW } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import ME from "ME";

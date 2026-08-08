@@ -1,9 +1,9 @@
-// Module ID: 7054
-// Function ID: 7055
+// Module ID: 7114
+// Function ID: 7115
 // Name: getCommittedVersions
 // Dependencies: [32, 5, 1891, 3, 1936, 1351, 2]
 
-// Module 7054 (getCommittedVersions)
+// Module 7114 (getCommittedVersions)
 import _slicedToArray from "_slicedToArray";
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -76,7 +76,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

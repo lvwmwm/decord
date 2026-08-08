@@ -1,10 +1,10 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 11911
+// Function ID: 11912
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4190, 21, 4302, 712, 11846, 7635, 4298, 2]
+// Dependencies: [17, 4191, 21, 4303, 712, 11912, 7695, 4299, 2]
 // Exports: default
 
-// Module 11845 (GuildPowerupsBoostInfo)
+// Module 11911 (GuildPowerupsBoostInfo)
 import { View } from "get ActivityIndicator";
 import { BoostInfoType } from "BoostedGuildTiers";
 import jsxProd from "jsxProd";
@@ -25,7 +25,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   let type;
   ({ count, type } = arg0);
   const tmp = callback();
-  let obj = require(11846) /* getGuildPowerupsBoostInfoText */;
+  let obj = require(11912) /* getGuildPowerupsBoostInfoText */;
   const guildPowerupsBoostInfoText = obj.getGuildPowerupsBoostInfoText(count, type);
   obj = { style: tmp.container, accessible: true, accessibilityLabel: "" + count + ", " + guildPowerupsBoostInfoText, children: null };
   obj = { style: tmp.headerContainer, importantForAccessibility: "no-hide-descendants", accessible: false, children: null };
@@ -34,14 +34,14 @@ export default function GuildPowerupsBoostInfo(arg0) {
   } else {
     TEXT_MUTED = importDefault(712).colors.TEXT_MUTED;
   }
-  const items = [closure_5(require(7635) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
+  const items = [closure_5(require(7695) /* BoostGemIcon */.BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-subtle";
   if (type === BoostInfoType.AVAILABLE) {
     str = "text-strong";
   }
-  items[1] = closure_5(require(4298) /* Text */.Text, { variant: "text-lg/medium", color: str, importantForAccessibility: "no-hide-descendants", children: count });
+  items[1] = closure_5(require(4299) /* Text */.Text, { variant: "text-lg/medium", color: str, importantForAccessibility: "no-hide-descendants", children: count });
   obj[3] = items;
-  const items1 = [closure_6(View, obj), closure_5(require(4298) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
+  const items1 = [closure_6(View, obj), closure_5(require(4299) /* Text */.Text, { variant: "text-md/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
   obj[3] = items1;
   return closure_6(View, obj);
 };

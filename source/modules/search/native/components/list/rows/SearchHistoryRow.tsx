@@ -1,9 +1,9 @@
-// Module ID: 15654
-// Function ID: 15655
+// Module ID: 15729
+// Function ID: 15730
 // Name: SearchHistoryRemoveIcon
-// Dependencies: [5, 19, 17, 1372, 4314, 1903, 8337, 21, 4302, 712, 11668, 4844, 5325, 15642, 11665, 15652, 4298, 5946, 647, 15653, 8249, 4312, 15651, 15655, 15663, 1236, 2]
+// Dependencies: [5, 19, 17, 1372, 4315, 1903, 8397, 21, 4303, 712, 11734, 4846, 5326, 15717, 11731, 15727, 4299, 6006, 647, 15728, 8309, 4313, 15726, 15730, 15738, 1236, 2]
 
-// Module 15654 (SearchHistoryRemoveIcon)
+// Module 15729 (SearchHistoryRemoveIcon)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import importAllResult from "GroupDMRow";
 import { View } from "MagnifyingGlassIcon";
@@ -11,7 +11,7 @@ import ensureGuildLoaded from "ensureGuildLoaded";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import closure_8 from "mergeGuildAvatar";
 import { SearchHistoryItemTypes } from "MessageEmbedTypes";
-import jsxProd from "module_4312";
+import jsxProd from "module_4313";
 import createCacheKey from "createCacheKey";
 
 let c10;
@@ -25,8 +25,8 @@ function SearchHistoryRemoveIcon(searchContext) {
     const result = searchHistoryItem(outer1_2[10]).removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
   const obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: null };
-  obj[5] = callback2(searchContext(5325).XSmallIcon, { size: "sm", color: "interactive-text-default" });
-  return callback2(searchContext(4844).PressableHighlight, obj);
+  obj[5] = callback2(searchContext(5326).XSmallIcon, { size: "sm", color: "interactive-text-default" });
+  return callback2(searchContext(4846).PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
   searchContext = searchContext.searchContext;
@@ -35,7 +35,7 @@ function SearchHistoryTextRow(searchContext) {
   let onPressSearchHistoryText;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = searchContext(15642);
+  let obj = searchContext(15717);
   onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -56,14 +56,14 @@ function SearchHistoryTextRow(searchContext) {
     });
   }
   obj = { label: null, onPress: null, trailing: null, iconContainerStyle: null, icon: null };
-  const items1 = [mapped, closure_10(searchContext(4298).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text })];
+  const items1 = [mapped, closure_10(searchContext(4299).Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text })];
   obj[1] = items1;
   obj[0] = closure_11(View, obj);
   obj[1] = callback;
   obj[2] = closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem });
   obj[3] = tmp.textIconContainer;
-  obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(5946).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
-  return closure_10(searchContext(15652).SearchListRow, obj);
+  obj[4] = closure_10(View, { style: tmp.iconContainer, children: closure_10(searchContext(6006).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) });
+  return closure_10(searchContext(15727).SearchListRow, obj);
 }
 function SearchHistoryGroupDMRow(searchContext) {
   searchContext = searchContext.searchContext;
@@ -143,7 +143,7 @@ function SearchHistoryDMRow(searchContext) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -185,7 +185,7 @@ function SearchHistoryDMRow(searchContext) {
             const result = searchHistoryItem(onPressDMItem[14]).trackSearchHistoryClicked(obj2);
             outer1_2(closure_0, closure_1);
             c4 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c4 = tmp;

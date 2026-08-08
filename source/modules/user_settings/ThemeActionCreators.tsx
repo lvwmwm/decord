@@ -1,10 +1,10 @@
-// Module ID: 4143
-// Function ID: 4144
+// Module ID: 4149
+// Function ID: 4150
 // Name: setSystemTheme
 // Dependencies: [1304, 1305, 709, 1339, 2]
 // Exports: clearSyncedClientThemes, clearThemeOverride, refreshTheme, setSameAsDeviceThemeEnabled, setSystemTheme, setSystemThemeIfNeeded, setThemeOverride, setUseSystemTheme, updateSyncedClientTheme, updateThemePreferences
 
-// Module 4143 (setSystemTheme)
+// Module 4149 (setSystemTheme)
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import { SystemThemeState } from "SystemThemeState";
 

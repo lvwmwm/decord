@@ -1,10 +1,10 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11274
+// Function ID: 11275
 // Name: _fetchMediaPostEmbed
-// Dependencies: [5, 676, 709, 530, 4201, 2]
+// Dependencies: [5, 676, 709, 530, 4202, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11208 (_fetchMediaPostEmbed)
+// Module 11274 (_fetchMediaPostEmbed)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -77,7 +77,7 @@ function _unfurlEmbedUrl() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -128,11 +128,11 @@ function _unfurlEmbedUrl() {
             obj[0] = body.body;
             return obj;
           }
-        } catch (tmp19) {
-          set = tmp19;
+        } catch (tmp23) {
+          set = tmp23;
           if (tmp4 === constants) {
             c6 = tmp2;
-            throw tmp19;
+            throw tmp23;
           } else {
             c5 = tmp;
           }

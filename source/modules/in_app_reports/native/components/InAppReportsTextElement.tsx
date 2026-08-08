@@ -1,10 +1,10 @@
-// Module ID: 7979
-// Function ID: 7980
+// Module ID: 8039
+// Function ID: 8040
 // Name: TextElement
-// Dependencies: [19, 17, 21, 4302, 4731, 4298, 2]
+// Dependencies: [19, 17, 21, 4303, 4733, 4299, 2]
 // Exports: default
 
-// Module 7979 (TextElement)
+// Module 8039 (TextElement)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -23,7 +23,7 @@ export default function TextElement(element) {
   const data = element.element.data;
   ({ header, body } = data);
   const tmp = callback2();
-  let obj = importAll(4731);
+  let obj = importAll(4733);
   let tmp3 = null;
   if (data.is_localized) {
     if (null != header) {
@@ -34,7 +34,7 @@ export default function TextElement(element) {
         obj = { style: null, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: null };
         obj[0] = tmp.header;
         obj[3] = header;
-        tmp7 = callback(require(4298) /* Text */.Text, obj);
+        tmp7 = callback(require(4299) /* Text */.Text, obj);
       }
       const items = [tmp7, ];
       let tmp10 = null != body;
@@ -42,7 +42,7 @@ export default function TextElement(element) {
         const obj1 = { style: null, variant: "text-md/medium", children: null };
         obj1[0] = tmp.body;
         obj1[2] = ref.current(body);
-        tmp10 = callback(require(4298) /* Text */.Text, obj1);
+        tmp10 = callback(require(4299) /* Text */.Text, obj1);
       }
       items[1] = tmp10;
       obj[1] = items;

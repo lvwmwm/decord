@@ -1,10 +1,10 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12726
+// Function ID: 12727
 // Name: ProgressWheel
-// Dependencies: [17, 21, 4302, 4005, 712, 12648, 5267, 12657, 7775, 12658, 2]
+// Dependencies: [17, 21, 4303, 4005, 712, 12718, 5268, 12727, 7835, 12728, 2]
 // Exports: default
 
-// Module 12656 (ProgressWheel)
+// Module 12726 (ProgressWheel)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -25,26 +25,26 @@ export default function ProgressWheel(nReferralsSent) {
   let obj1 = require(4005) /* map */;
   obj = { style: tmp.progressCircleContainer, children: null };
   const token1 = obj1.useToken(importDefault(712).colors.BACKGROUND_SURFACE_HIGH);
-  let tmp9 = nReferralsSent === require(12648) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
+  let tmp9 = nReferralsSent === require(12718) /* MAX_REFERRALS_SENT */.MAX_REFERRALS_SENT;
   if (tmp9) {
     obj = { source: null, style: null };
-    let tmp4Result = tmp4(5267);
-    obj[0] = tmp4(12657);
+    let tmp4Result = tmp4(5268);
+    obj[0] = tmp4(12727);
     obj[1] = tmp.glowImage;
     tmp9 = callback(tmp4Result, obj);
   }
   const items = [tmp9, , ];
   obj1 = { width: c6, height: c6, children: null };
-  tmp4Result = tmp4(7775);
-  const items1 = [callback(require(7775) /* inlineStyles */.Circle, { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 }), callback(require(7775) /* inlineStyles */.Circle, { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_7, strokeDashoffset: closure_7 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" })];
+  tmp4Result = tmp4(7835);
+  const items1 = [callback(require(7835) /* inlineStyles */.Circle, { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 }), callback(require(7835) /* inlineStyles */.Circle, { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_7, strokeDashoffset: closure_7 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" })];
   obj1[2] = items1;
   items[1] = closure_5(tmp4Result, obj1);
   const obj3 = { source: null, style: null };
   const obj4 = { uri: null };
-  obj4[0] = importDefault(12658);
+  obj4[0] = importDefault(12728);
   obj3[0] = obj4;
   obj3[1] = tmp.progressCircleImage;
-  items[2] = callback(importDefault(5267), obj3);
+  items[2] = callback(importDefault(5268), obj3);
   obj[1] = items;
   return closure_5(View, obj);
 };

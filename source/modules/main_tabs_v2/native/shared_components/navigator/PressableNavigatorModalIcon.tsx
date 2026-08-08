@@ -1,10 +1,10 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8389
+// Function ID: 8390
 // Name: PressableNavigatorModalIcon
-// Dependencies: [21, 8325, 8322, 8326, 8330, 1236, 2]
+// Dependencies: [21, 8385, 8382, 8386, 8390, 1236, 2]
 // Exports: default
 
-// Module 8329 (PressableNavigatorModalIcon)
+// Module 8389 (PressableNavigatorModalIcon)
 import { jsx } from "jsxProd";
 
 const result = require("GenericHeaderTitle").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx");
@@ -19,7 +19,7 @@ export default function PressableNavigatorModalIcon(onPress) {
     str = "back";
   }
   let obj = { source: null, onPress: null, accessibilityLabel: null };
-  obj[0] = importDefault("back" === str ? 8326 : 8330);
+  obj[0] = importDefault("back" === str ? 8386 : 8390);
   obj[1] = goBack;
   const intl = tmp5(1236).intl;
   const string = intl.string;
@@ -29,7 +29,7 @@ export default function PressableNavigatorModalIcon(onPress) {
   } else {
     stringResult = string(t.cpT0Cq);
   }
-  obj = { isModal: true, children: tmp(require(8322) /* GenericHeaderTitle */.HeaderIconButton, obj) };
+  obj = { isModal: true, children: tmp(require(8382) /* GenericHeaderTitle */.HeaderIconButton, obj) };
   obj[2] = stringResult;
-  return jsx(importDefault(8325), { isModal: true, children: tmp(require(8322) /* GenericHeaderTitle */.HeaderIconButton, obj) });
+  return jsx(importDefault(8385), { isModal: true, children: tmp(require(8382) /* GenericHeaderTitle */.HeaderIconButton, obj) });
 };

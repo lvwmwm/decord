@@ -1,9 +1,9 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11792
+// Function ID: 11793
 // Name: LeftSlot
-// Dependencies: [32, 19, 17, 11302, 21, 4302, 712, 4005, 4646, 11495, 1607, 11551, 4162, 11550, 11549, 2]
+// Dependencies: [32, 19, 17, 11368, 21, 4303, 712, 4005, 4648, 11561, 1607, 11617, 4036, 11616, 11615, 2]
 
-// Module 11726 (LeftSlot)
+// Module 11792 (LeftSlot)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -24,14 +24,14 @@ function LeftSlot(state) {
   let wrapperStyle;
   state = state.state;
   ({ cleanup, channel, onPress, slotWidth, wrapperStyle } = state);
-  let obj = { visible: state !== require(4646) /* wrapChildrenDefault */.TransitionStates.YEETED, initiallyVisible: state !== require(4646) /* wrapChildrenDefault */.TransitionStates.ENTERED, enterDelayMs: closure_6, onExitComplete: cleanup };
-  ({ animatedStyle, isInteractive } = importDefault(11551)(obj));
+  let obj = { visible: state !== require(4648) /* wrapChildrenDefault */.TransitionStates.YEETED, initiallyVisible: state !== require(4648) /* wrapChildrenDefault */.TransitionStates.ENTERED, enterDelayMs: closure_6, onExitComplete: cleanup };
+  ({ animatedStyle, isInteractive } = importDefault(11617)(obj));
   obj = { style: items };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
-  const tmp = importDefault(11551)(obj);
-  const merged = Object.assign(require(11550) /* FadeTransitionItem */.interactivityProps(isInteractive));
-  obj.children = callback2(importDefault(11549), { canStartThreads: false, channel, onPress, styleButton: "PX_8", shouldShowThread: 16 });
-  return callback2(importDefault(4162).View, obj);
+  const tmp = importDefault(11617)(obj);
+  const merged = Object.assign(require(11616) /* FadeTransitionItem */.interactivityProps(isInteractive));
+  obj.children = callback2(importDefault(11615), { canStartThreads: false, channel, onPress, styleButton: "ct", shouldShowThread: "simple-action" });
+  return callback2(importDefault(4036).View, obj);
 }
 let c4 = importAllResult;
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
@@ -82,7 +82,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
     obj = { item: null, renderItem: null };
     obj[0] = tmp15;
     obj[1] = tmp10;
-    tmp14Result = callback2(tmp(4646).TransitionItem, obj);
+    tmp14Result = callback2(tmp(4648).TransitionItem, obj);
     const tmp14 = callback2;
   }
   const items1 = [tmp14Result, ];
@@ -90,7 +90,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   obj1[0] = keyboardType === channel(1607).KeyboardTypes.EXPRESSION;
   obj1[1] = showKeyboardIcon;
   obj1[2] = onPressExpression;
-  items1[1] = callback2(onPressAction(11495), obj1);
+  items1[1] = callback2(onPressAction(11561), obj1);
   obj[1] = items1;
   return closure_8(View, obj);
 });

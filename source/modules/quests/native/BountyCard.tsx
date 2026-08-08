@@ -1,9 +1,9 @@
-// Module ID: 14239
-// Function ID: 14240
+// Module ID: 14309
+// Function ID: 14310
 // Name: CARD_WIDTH
-// Dependencies: [32, 19, 17, 4294, 7099, 21, 4302, 712, 501, 589, 10405, 4005, 5375, 8811, 5267, 9072, 4298, 1236, 4712, 4263, 2]
+// Dependencies: [32, 19, 17, 4295, 7159, 21, 4303, 712, 501, 589, 10471, 4005, 5376, 8871, 5268, 9132, 4299, 1236, 4714, 4264, 2]
 
-// Module 14239 (CARD_WIDTH)
+// Module 14309 (CARD_WIDTH)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "CircleCheckIcon";
 import get_ActivityIndicator from "getSystemLocale";

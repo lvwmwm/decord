@@ -1,10 +1,10 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15319
+// Function ID: 15320
 // Name: handlePress
-// Dependencies: [5, 19, 17, 676, 21, 4302, 712, 9387, 1974, 1988, 3998, 4844, 15247, 4298, 1236, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4303, 712, 9452, 1974, 1988, 3998, 4846, 15320, 4299, 1236, 1297, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15246 (handlePress)
+// Module 15319 (handlePress)
 import closure_3 from "createCacheKey";
 import "noop";
 import { Image } from "get ActivityIndicator";
@@ -41,7 +41,7 @@ function _handlePress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -78,7 +78,7 @@ function _handlePress() {
           obj = callback(paths[10]);
           obj.openURL(articleURL.getArticleURL(constants.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         c3 = tmp;
@@ -110,7 +110,7 @@ export default function GuildMFAWarning() {
   const tmp = createCacheKey();
   let obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: null };
   obj = { style: tmp.MFAWarningIcon, source: null };
-  obj[1] = importDefault(15247);
+  obj[1] = importDefault(15320);
   const items = [callback2(Image, obj), ];
   obj = { variant: "text-xs/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -121,10 +121,10 @@ export default function GuildMFAWarning() {
   obj1[1] = items2;
   items1[1] = callback3(require(1297) /* Button */.LegacyText, obj1);
   obj[2] = items1;
-  items[1] = callback3(require(4298) /* Text */.Text, obj);
+  items[1] = callback3(require(4299) /* Text */.Text, obj);
   obj[3] = items;
-  return callback3(require(4844) /* PressableBase */.PressableOpacity, obj);
+  return callback3(require(4846) /* PressableBase */.PressableOpacity, obj);
 };
 export const getScaledGuildMFAWarningHeight = function getScaledGuildMFAWarningHeight(fontScale) {
-  return 83 + 5 * require(9387) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * require(9452) /* map */.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
 };

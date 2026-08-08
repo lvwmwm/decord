@@ -1,10 +1,10 @@
-// Module ID: 14702
-// Function ID: 14703
+// Module ID: 14772
+// Function ID: 14773
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 4005, 712, 4710, 5707, 4299, 5373, 4298, 2]
+// Dependencies: [19, 17, 21, 4005, 712, 4712, 5767, 4300, 5374, 4299, 2]
 // Exports: default
 
-// Module 14702 (UserSettingsDesignSystemText)
+// Module 14772 (UserSettingsDesignSystemText)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -20,7 +20,7 @@ export default function UserSettingsDesignSystemText() {
   obj[0] = importDefault(712).space.PX_24;
   obj[1] = { paddingHorizontal: token };
   const obj1 = { title: "Text Variants", hasIcons: false, children: null };
-  const TEXT_VARIANT = require(4299) /* TEXT_VARIANT */.TEXT_VARIANT;
+  const TEXT_VARIANT = require(4300) /* TEXT_VARIANT */.TEXT_VARIANT;
   obj1[2] = TEXT_VARIANT.map((arg0) => {
     let tmp = null;
     if ("code" !== arg0) {
@@ -28,12 +28,12 @@ export default function UserSettingsDesignSystemText() {
       obj = { variant: null, children: null };
       obj[0] = arg0;
       obj[1] = arg0;
-      obj[0] = callback2(callback(4298).Text, obj, arg0);
-      tmp = callback2(callback(5373).TableRow, obj, arg0);
+      obj[0] = callback2(callback(4299).Text, obj, arg0);
+      tmp = callback2(callback(5374).TableRow, obj, arg0);
     }
     return tmp;
   });
-  obj[2] = jsx(require(5707) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false, children: null });
-  obj[0] = jsx(require(4710) /* Stack */.Stack, { spacing: null, style: null, children: null });
+  obj[2] = jsx(require(5767) /* TableRowGroupTitle */.TableRowGroup, { title: "Text Variants", hasIcons: false, children: null });
+  obj[0] = jsx(require(4712) /* Stack */.Stack, { spacing: null, style: null, children: null });
   return <ScrollView spacing={null} style={null}>{null}</ScrollView>;
 };

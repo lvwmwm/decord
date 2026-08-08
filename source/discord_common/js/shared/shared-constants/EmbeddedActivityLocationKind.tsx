@@ -1,9 +1,9 @@
-// Module ID: 10548
-// Function ID: 10549
+// Module ID: 10614
+// Function ID: 10615
 // Name: EmbeddedActivityLocationKind
 // Dependencies: [2]
 
-// Module 10548 (EmbeddedActivityLocationKind)
+// Module 10614 (EmbeddedActivityLocationKind)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivityLocationKind.tsx");
 
 export const EmbeddedActivityLocationKind = { GUILD_CHANNEL: "gc", GUILD_CHANNEL_MESSAGE: "gcm", PRIVATE_CHANNEL: "pc", PRIVATE_CHANNEL_MESSAGE: "pcm", PARTY: "party" };

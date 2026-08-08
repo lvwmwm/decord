@@ -1,10 +1,10 @@
-// Module ID: 8281
-// Function ID: 8282
+// Module ID: 8341
+// Function ID: 8342
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1340, 4735, 4328, 685, 4385, 12, 589, 709, 2]
+// Dependencies: [1340, 4737, 4329, 685, 4387, 12, 589, 709, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 8281 (handleUserSettingsProtoStoreChange)
+// Module 8341 (handleUserSettingsProtoStoreChange)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import TRUE_OPTION_NAME from "TRUE_OPTION_NAME";
 import { UserSettingsTypes } from "MAX_FAVORITES";

@@ -1,10 +1,10 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12161
+// Function ID: 12162
 // Name: NitroAcquiredHeader
-// Dependencies: [19, 17, 676, 1905, 21, 4302, 712, 9352, 5267, 12095, 4238, 6987, 4147, 7334, 7335, 4298, 1236, 1974, 3998, 5396, 6835, 4844, 10088, 4712, 4270, 5652, 2]
+// Dependencies: [19, 17, 676, 1905, 21, 4303, 712, 9417, 5268, 12162, 4239, 7047, 4153, 7394, 7395, 4299, 1236, 1974, 3998, 5397, 6895, 4846, 10154, 4714, 4271, 5712, 2]
 // Exports: default
 
-// Module 12094 (NitroAcquiredHeader)
+// Module 12161 (NitroAcquiredHeader)
 import Background from "Background";
 import get_ActivityIndicator from "combined";
 import { HelpdeskArticles } from "ME";
@@ -24,13 +24,13 @@ function NitroAcquiredHeader(skuId) {
   const tmp = createCacheKey();
   let obj = { style: tmp.header, children: null };
   obj = { source: null };
-  obj[0] = importDefault(12095);
-  const items = [callback(importDefault(5267), obj), ];
+  obj[0] = importDefault(12162);
+  const items = [callback(importDefault(5268), obj), ];
   obj = { style: tmp.fractionNitroIcon, children: null };
   const obj1 = { skuId: skuId.skuId, width: null, height: null };
-  obj1[1] = require(9352) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET;
-  obj1[2] = require(9352) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET;
-  obj[1] = callback(require(9352) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj1);
+  obj1[1] = require(9417) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET;
+  obj1[2] = require(9417) /* FRACTIONAL_NITRO_COIN_SIZE */.FRACTIONAL_NITRO_COIN_SIZE.COLLECTED_SHEET;
+  obj[1] = callback(require(9417) /* FRACTIONAL_NITRO_COIN_SIZE */.FractionalNitroCoinIllustration, obj1);
   items[1] = callback(closure_5, obj);
   obj[1] = items;
   return callback2(closure_5, obj);
@@ -72,9 +72,9 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   ({ onPressExplorePerks, onPressViewCredits } = skuId);
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  const tmp4 = consumed(4238)();
+  const tmp4 = consumed(4239)();
   React = tmp4;
-  let obj = skuId(6987);
+  let obj = skuId(7047);
   const fetchFractionalPremiumInfo = obj.useFetchFractionalPremiumInfo();
   isFractionalPremiumActive = fetchFractionalPremiumInfo.isFractionalPremiumActive;
   expiresAt = fetchFractionalPremiumInfo.expiresAt;
@@ -140,7 +140,7 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   if (consumed) {
     obj = { premiumType: null };
     obj[0] = TIER_2.TIER_2;
-    let tmp12Result = tmp12(tmp2(6835), obj);
+    let tmp12Result = tmp12(tmp2(6895), obj);
     let tmp15 = tmp12;
   } else {
     obj = { skuId: null };
@@ -153,8 +153,8 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   let obj2 = { style: tmp.questionIconContainer, onPress: callback, children: null };
   const obj3 = { style: tmp.questionIcon, color: null };
   obj3[1] = consumed(712).colors.WHITE;
-  obj2[2] = tmp15(skuId(10088).CircleQuestionIcon, obj3);
-  items2[1] = tmp15(skuId(4844).PressableOpacity, obj2);
+  obj2[2] = tmp15(skuId(10154).CircleQuestionIcon, obj3);
+  items2[1] = tmp15(skuId(4846).PressableOpacity, obj2);
   obj1[0] = items2;
   const items3 = [closure_10(closure_11, obj1), , ];
   const obj4 = { style: tmp.body, children: null };
@@ -179,14 +179,14 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
       obj7[2] = onPressViewCredits;
       tmp18 = obj7;
     }
-    const items5 = [tmp15(tmp5(4712).Button, tmp18), ];
+    const items5 = [tmp15(tmp5(4714).Button, tmp18), ];
     const obj8 = { size: "lg", variant: "secondary", text: null, onPress: null };
     let intl2 = tmp5(1236).intl;
     obj8[2] = intl2.string(tmp5(1236).t.TkTvBz);
     obj8[3] = function onPress() {
       return consumed(_undefined[24]).hideActionSheet();
     };
-    items5[1] = tmp15(tmp5(4712).Button, obj8);
+    items5[1] = tmp15(tmp5(4714).Button, obj8);
     obj6[1] = items5;
     items4[2] = tmp10(tmp17, obj6);
     obj5[1] = items4;
@@ -195,7 +195,7 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   const obj9 = { handleDisabled: true, children: null };
   obj4[1] = tmp10Result;
   items3[1] = tmp15(expiresAt, obj4);
-  items3[2] = tmp15(skuId(5652).ActionSheetHeaderBar, { variant: "floating" });
+  items3[2] = tmp15(skuId(5712).ActionSheetHeaderBar, { variant: "floating" });
   obj9[1] = items3;
-  return closure_10(skuId(5396).BottomSheet, obj9);
+  return closure_10(skuId(5397).BottomSheet, obj9);
 };

@@ -1,9 +1,9 @@
-// Module ID: 4185
-// Function ID: 4186
+// Module ID: 4186
+// Function ID: 4187
 // Name: handleEnd
-// Dependencies: [1218, 4186, 4187, 709, 1890, 12, 589, 2]
+// Dependencies: [1218, 4187, 4188, 709, 1890, 12, 589, 2]
 
-// Module 4185 (handleEnd)
+// Module 4186 (handleEnd)
 import fetchFingerprint from "fetchFingerprint";
 import GuildThemePreviewOrigin from "GuildThemePreviewOrigin";
 import { Store } from "initialize";
@@ -139,7 +139,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(require("dispatcher"),
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: null, customUserThemeSettings: "a" };
+      obj = { presetId: null, customUserThemeSettings: "Array" };
       obj[0] = tmp;
       const isEqualResult = require(12) /* apply */.isEqual(obj.draft, obj);
       let flag = !isEqualResult;

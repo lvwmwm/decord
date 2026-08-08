@@ -1,9 +1,9 @@
-// Module ID: 14589
-// Function ID: 14590
+// Module ID: 14659
+// Function ID: 14660
 // Name: route
-// Dependencies: [676, 10380, 1236, 14590, 10469, 14591, 2]
+// Dependencies: [676, 10446, 1236, 14660, 10535, 14661, 2]
 
-// Module 14589 (route)
+// Module 14659 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -12,7 +12,7 @@ obj = {
     return intl.string(require(1236) /* getSystemLocale */.t["C+DkPu"]);
   },
   usePredicate() {
-    return require(14590) /* useWebBrowserSettingOptions */.useWebBrowserSettingOptions().length > 1;
+    return require(14660) /* useWebBrowserSettingOptions */.useWebBrowserSettingOptions().length > 1;
   },
   parent: null,
   IconComponent: require("GlobeEarthIcon").GlobeEarthIcon,
@@ -21,7 +21,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.BROWSER,
   getComponent() {
-    return require(14591).default;
+    return require(14661).default;
   }
 };
 const route = createToggle.createRoute(obj);

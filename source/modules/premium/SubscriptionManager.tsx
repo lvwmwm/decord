@@ -1,9 +1,9 @@
-// Module ID: 16492
-// Function ID: 16493
+// Module ID: 16569
+// Function ID: 16570
 // Name: prototype
-// Dependencies: [5, 1903, 3949, 3953, 6801, 1905, 5260, 1926, 4621, 6802, 2]
+// Dependencies: [5, 1903, 3949, 3953, 6861, 1905, 5261, 1926, 4623, 6862, 2]
 
-// Module 16492 (prototype)
+// Module 16569 (prototype)
 import closure_2 from "GuildFeatures";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";
@@ -38,7 +38,7 @@ let prototype = function SubscriptionManager() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -72,7 +72,7 @@ let prototype = function SubscriptionManager() {
               }
             }
             currentUser = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp5) {
           if (arg0 === 1) {
@@ -157,7 +157,7 @@ let prototype = function SubscriptionManager() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -196,7 +196,7 @@ let prototype = function SubscriptionManager() {
           return obj;
         }
         v0 = 3;
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       } catch (tmp8) {
         v0 = tmp;
         throw tmp8;
@@ -215,7 +215,7 @@ let prototype = function SubscriptionManager() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -234,7 +234,7 @@ let prototype = function SubscriptionManager() {
             dependencyMap = 1;
             c2 = 1;
             let obj1 = { value: null, done: false };
-            obj1[0] = outer1_0(4621).fetchIpCountryCode();
+            obj1[0] = outer1_0(4623).fetchIpCountryCode();
             return obj1;
           }
         } else {
@@ -248,7 +248,7 @@ let prototype = function SubscriptionManager() {
               obj2[0] = arg1;
               return obj2;
             } else if (null != outer1_4.ipCountryCode) {
-              obj1 = outer1_0(4621);
+              obj1 = outer1_0(4623);
               dependencyMap = 2;
               c2 = 1;
               const obj3 = { value: null, done: false };
@@ -265,7 +265,7 @@ let prototype = function SubscriptionManager() {
             return obj;
           }
           c2 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c2 = tmp;

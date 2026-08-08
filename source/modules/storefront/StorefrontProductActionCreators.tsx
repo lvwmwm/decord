@@ -1,10 +1,10 @@
-// Module ID: 8755
-// Function ID: 8756
+// Module ID: 8815
+// Function ID: 8816
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1975, 8756, 6962, 676, 687, 709, 4539, 4202, 2]
+// Dependencies: [5, 1975, 8816, 7022, 676, 687, 709, 4541, 4203, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8755 (_maybeFetchProductsWithSkus)
+// Module 8815 (_maybeFetchProductsWithSkus)
 import set from "set";
 import _getSystemLocale from "_getSystemLocale";
 import getFetchState from "getFetchState";
@@ -33,7 +33,7 @@ function _maybeFetchProductsWithSkus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ function _maybeFetchProductsWithSkus() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {
@@ -207,7 +207,7 @@ function _maybeFetchProductsBySkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -234,7 +234,7 @@ function _maybeFetchProductsBySkuIds() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "PX_8", done: "Array" };
+              return { value: "ct", done: "Array" };
             }
           } else {
             if (1 === tmp7) {

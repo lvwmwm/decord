@@ -1,10 +1,10 @@
-// Module ID: 8993
-// Function ID: 8994
+// Module ID: 9053
+// Function ID: 9054
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 8994, 8995, 4201, 2]
+// Dependencies: [5, 32, 19, 9054, 9055, 4202, 2]
 // Exports: default
 
-// Module 8993 (useStartEvent)
+// Module 9053 (useStartEvent)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -42,14 +42,14 @@ export default function useStartEvent() {
         if (permissionOverwrites === undefined) {
           permissionOverwrites = c6.permissionOverwrites;
         }
-        yield "PX_8";
+        yield "ct";
         callback(true);
         c6 = 1;
-        yield callback2(8994).preStartEventActions(callback, permissionOverwrites);
+        yield callback2(9054).preStartEventActions(callback, permissionOverwrites);
         if (2 === tmp7) {
           c6 = 0;
           const outer1_5 = noop;
-          const aPIError = new callback(4201).APIError(outer1_5);
+          const aPIError = new callback(4202).APIError(outer1_5);
           const outer1_4 = aPIError;
           callback2(outer1_4);
           callback(false);
@@ -66,7 +66,7 @@ export default function useStartEvent() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            let obj7 = callback2(8994);
+            let obj7 = callback2(9054);
             let c7 = 4;
             c8 = 1;
             let obj4 = { value: null, done: false };
@@ -84,7 +84,7 @@ export default function useStartEvent() {
             obj5[0] = arg1;
             return obj5;
           } else {
-            obj4 = callback(8995);
+            obj4 = callback(9055);
             c7 = 5;
             c8 = 1;
             const obj6 = { value: null, done: false };
@@ -102,7 +102,7 @@ export default function useStartEvent() {
             obj7[0] = arg1;
             return obj7;
           } else {
-            const obj1 = callback(8995);
+            const obj1 = callback(9055);
             c7 = 6;
             c8 = 1;
             const obj8 = { value: null, done: false };

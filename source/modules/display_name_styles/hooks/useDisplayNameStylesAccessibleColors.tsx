@@ -1,10 +1,10 @@
-// Module ID: 9407
-// Function ID: 9408
+// Module ID: 9472
+// Function ID: 9473
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4294, 589, 1916, 9408, 4145, 689, 2]
+// Dependencies: [19, 4295, 589, 1916, 9473, 4151, 689, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 9407 (useDisplayNameStylesAccessibleColors)
+// Module 9472 (useDisplayNameStylesAccessibleColors)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 

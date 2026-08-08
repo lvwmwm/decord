@@ -1,10 +1,10 @@
-// Module ID: 7033
-// Function ID: 7034
+// Module ID: 7093
+// Function ID: 7094
 // Name: requestGames
-// Dependencies: [5, 4323, 676, 530, 709, 4187, 12, 2]
+// Dependencies: [5, 4324, 676, 530, 709, 4188, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7033 (requestGames)
+// Module 7093 (requestGames)
 import importDefaultResult from "start";
 import handleLoadMessages from "handleLoadMessages";
 import { Endpoints } from "ME";
@@ -87,7 +87,7 @@ function _fetchGamesWithSupplementalData() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ function _fetchGamesWithSupplementalData() {
             return obj;
           }
           c1 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -153,7 +153,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -185,7 +185,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;

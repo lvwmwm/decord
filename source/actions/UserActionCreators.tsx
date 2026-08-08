@@ -1,10 +1,10 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8309
+// Function ID: 8310
 // Name: _fetchProfile
-// Dependencies: [5, 1911, 1903, 676, 677, 3, 530, 709, 5126, 663, 38, 4201, 2]
+// Dependencies: [5, 1911, 1903, 676, 677, 3, 530, 709, 5127, 663, 38, 4202, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8249 (_fetchProfile)
+// Module 8309 (_fetchProfile)
 import timestamp from "timestamp";
 import createdAt from "createdAt";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -43,7 +43,7 @@ function _fetchProfile() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -81,7 +81,7 @@ function _fetchProfile() {
                 let closure_12;
                 c7 = 1;
                 logger = 1;
-                return { value: "PX_8", done: "Array" };
+                return { value: "ct", done: "Array" };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -161,7 +161,7 @@ function _fetchProfile() {
               }
               let obj7 = callback2(709);
               obj7 = { type: "USER_PROFILE_FETCH_FAILURE", apiError: null, fetchStartedAt: null, userId: null, guildId: null };
-              const aPIError = new callback(4201).APIError(closure_13);
+              const aPIError = new callback(4202).APIError(closure_13);
               obj7[1] = aPIError;
               obj7[2] = closure_10;
               obj7[3] = callback;
@@ -206,7 +206,7 @@ function _fetchProfile() {
               }
               c6 = 0;
               logger = 3;
-              return { value: "T", done: null };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp91) {
             c5 = tmp91;
@@ -252,7 +252,7 @@ function _fetchMutualFriends() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -320,7 +320,7 @@ function _fetchMutualFriends() {
             obj.dispatch(obj6);
             c5 = 0;
             c7 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp32) {
           createdAt = tmp32;
@@ -380,7 +380,7 @@ export const acceptAgreements = function acceptAgreements() {
   if (arg1 === undefined) {
     flag2 = true;
   }
-  let obj = importDefault(5126);
+  let obj = importDefault(5127);
   obj = { url: Endpoints.USER_AGREEMENTS, trackedActionData: null, body: null, oldFormErrors: true, rejectWithError: null };
   obj = { event: require(663) /* ImpressionNames */.NetworkActionNames.USER_ACCEPT_AGREEMENTS };
   obj[1] = obj;

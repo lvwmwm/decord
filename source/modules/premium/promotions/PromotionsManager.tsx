@@ -1,9 +1,9 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16548
+// Function ID: 16549
 // Name: _terminate
-// Dependencies: [5, 1975, 1903, 3953, 7284, 1905, 676, 5260, 7584, 3947, 12667, 2]
+// Dependencies: [5, 1975, 1903, 3953, 7344, 1905, 676, 5261, 7644, 3947, 12737, 2]
 
-// Module 16471 (_terminate)
+// Module 16548 (_terminate)
 import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -41,7 +41,7 @@ class PromotionsManager extends tmp2 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ class PromotionsManager extends tmp2 {
             return obj;
           }
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         } catch (tmp6) {
           v0 = tmp;
           throw tmp6;
@@ -99,8 +99,8 @@ prototype["onLocaleChanged"] = function onLocaleChanged() {
     tmp = createEmptyPromotionsByType.lastFetchedActivePromotionsLocale !== locale.locale;
   }
   if (tmp) {
-    const result = require(7584) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-    const obj = require(7584) /* fetchActivePromotions */;
+    const result = require(7644) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+    const obj = require(7644) /* fetchActivePromotions */;
   }
 };
 prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
@@ -117,7 +117,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "T", done: null };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -150,7 +150,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         v0 = tmp;
@@ -181,8 +181,8 @@ prototype["onSubscriptionStateChanged"] = function onSubscriptionStateChanged() 
       if (createEmptyPromotionsByType.isFetchingActivePromotions) {
         self.hasPendingSubscriptionRefetch = true;
       } else {
-        const result = require(7584) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-        const obj3 = require(7584) /* fetchActivePromotions */;
+        const result = require(7644) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+        const obj3 = require(7644) /* fetchActivePromotions */;
       }
     }
   }
@@ -191,22 +191,22 @@ prototype["onPromotionsFetchSettled"] = function onPromotionsFetchSettled() {
   if (this.hasPendingSubscriptionRefetch) {
     if (!createEmptyPromotionsByType.isFetchingActivePromotions) {
       tmp.hasPendingSubscriptionRefetch = false;
-      const result = require(7584) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-      const obj = require(7584) /* fetchActivePromotions */;
+      const result = require(7644) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+      const obj = require(7644) /* fetchActivePromotions */;
     }
   }
 };
 prototype["onMobilePurchaseSuccess"] = function onMobilePurchaseSuccess() {
-  const result = require(7584) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+  const result = require(7644) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
 };
 prototype["onOfferUpdated"] = function onOfferUpdated() {
-  const result = require(7584) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+  const result = require(7644) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
 };
 prototype["onVCRedeemed"] = function onVCRedeemed(entitlements) {
   entitlements = entitlements.entitlements;
   if (entitlements.some((type) => type.type === constants.FRACTIONAL_REDEMPTION)) {
-    const result = require(7584) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
-    const obj = require(7584) /* fetchActivePromotions */;
+    const result = require(7644) /* fetchActivePromotions */.maybeFetchActivePromotions(false);
+    const obj = require(7644) /* fetchActivePromotions */;
   }
 };
 const promotionsManager = new PromotionsManager();

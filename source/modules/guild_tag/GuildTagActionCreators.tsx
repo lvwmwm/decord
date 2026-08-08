@@ -1,10 +1,10 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13261
+// Function ID: 13262
 // Name: _adoptGuildIdentity
 // Dependencies: [5, 1903, 676, 530, 709, 2]
 // Exports: adoptGuildIdentity
 
-// Module 13191 (_adoptGuildIdentity)
+// Module 13261 (_adoptGuildIdentity)
 import set from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Endpoints } from "ME";
@@ -30,7 +30,7 @@ function _adoptGuildIdentity() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 15805
-// Function ID: 15806
+// Module ID: 15880
+// Function ID: 15881
 // Name: getSecondsSliderLabel
 // Dependencies: [1236, 3883, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 15805 (getSecondsSliderLabel)
+// Module 15880 (getSecondsSliderLabel)
 const result = require("set").fileFinishedImporting("utils/SecondsSliderUtils.tsx");
 
 export const getSecondsSliderLabel = function getSecondsSliderLabel(rateLimitPerUser, arg1, intl) {

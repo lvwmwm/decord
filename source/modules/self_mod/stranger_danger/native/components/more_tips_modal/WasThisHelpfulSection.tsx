@@ -1,10 +1,10 @@
-// Module ID: 10292
-// Function ID: 10293
+// Module ID: 10358
+// Function ID: 10359
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 9603, 10272, 21, 4302, 712, 647, 10286, 4002, 1236, 10165, 10166, 10285, 4298, 1297, 10293, 10294, 2]
+// Dependencies: [19, 17, 9668, 10338, 21, 4303, 712, 647, 10352, 4002, 1236, 10231, 10232, 10351, 4299, 1297, 10359, 10360, 2]
 // Exports: default
 
-// Module 10292 (WasThisHelpfulSection)
+// Module 10358 (WasThisHelpfulSection)
 import noop from "noop";
 import get_ActivityIndicator from "registerAsset";
 import handleConnectionOpen from "handleConnectionOpen";

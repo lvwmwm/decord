@@ -1,14 +1,13 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9711
+// Function ID: 9712
 // Name: useFavoritesAccess
-// Dependencies: [4118, 1903, 1375, 9646, 1410, 1905, 9647, 9648, 589, 1926, 11, 1306, 1894, 2]
-// Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoriteAdded, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
+// Dependencies: [4124, 1903, 1375, 1410, 1905, 9712, 9713, 589, 1926, 11, 1306, 1894, 2]
+// Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 9645 (useFavoritesAccess)
+// Module 9711 (useFavoritesAccess)
 import handleConnectionOpen from "handleConnectionOpen";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import initializeFromUserSettings from "initializeFromUserSettings";
-import { useFavoritesNotificationStore as closure_6 } from "useFavoritesNotificationStore";
 import { MAX_FAVORITE_CHANNELS } from "date";
 import { PremiumTypes } from "GuildFeatures";
 
@@ -20,7 +19,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   if (FavoritesGuildActionSheet === undefined) {
     str = "useFavoritesAccess";
   }
-  let obj = require(9648) /* useFavoritesGuildConfig */;
+  let obj = require(9713) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.useFavoritesGuildConfig({ location: str });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -59,7 +58,7 @@ function useFavoritesAccess(FavoritesGuildActionSheet) {
   } else {
     num = 0;
     if (tmp4) {
-      num = tmp(9647).FREE_FAVORITE_LIMIT;
+      num = tmp(9712).FREE_FAVORITE_LIMIT;
     }
   }
 }
@@ -69,7 +68,7 @@ export { useFavoritesAccess };
 export const getFavoritesAccess = function getFavoritesAccess() {
   let enabled;
   let isFreemium;
-  let obj = require(9648) /* useFavoritesGuildConfig */;
+  let obj = require(9713) /* useFavoritesGuildConfig */;
   const favoritesGuildConfig = obj.getFavoritesGuildConfig({ location: "getFavoritesAccess" });
   ({ enabled, isFreemium } = favoritesGuildConfig);
   let tmp4 = undefined !== isFreemium;
@@ -105,7 +104,7 @@ export const getFavoritesAccess = function getFavoritesAccess() {
   } else {
     num = 0;
     if (tmp4) {
-      num = require(9647) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
+      num = require(9712) /* FREE_FAVORITE_LIMIT */.FREE_FAVORITE_LIMIT;
     }
   }
 };
@@ -215,7 +214,4 @@ export const useFavoritesAwareChannel = function useFavoritesAwareChannel(arg0, 
     }
   }
   return tmp7;
-};
-export const useFavoriteAdded = function useFavoriteAdded() {
-  return { favoriteAdded: callback((favoriteAdded) => favoriteAdded.favoriteAdded), notifyFavoriteAdded: callback((notifyFavoriteAdded) => notifyFavoriteAdded.notifyFavoriteAdded), clearFavoriteAdded: callback((clearFavoriteAdded) => clearFavoriteAdded.clearFavoriteAdded) };
 };

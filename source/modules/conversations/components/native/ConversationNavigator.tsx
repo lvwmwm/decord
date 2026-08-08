@@ -1,10 +1,10 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 8569
+// Function ID: 8570
 // Name: HeaderWithBorder
-// Dependencies: [19, 21, 4005, 712, 8322, 500, 8510, 5723, 8520, 8521, 1236, 8522, 8533, 8546, 4153, 2]
+// Dependencies: [19, 21, 4005, 712, 8382, 500, 8570, 5783, 8580, 8581, 1236, 8582, 8593, 8606, 4159, 2]
 // Exports: default, openConversationNavigator
 
-// Module 8509 (HeaderWithBorder)
+// Module 8569 (HeaderWithBorder)
 import "noop";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -17,7 +17,7 @@ function HeaderWithBorder(arg0) {
   const token = obj.useToken(importDefault(712).colors.BORDER_SUBTLE);
   obj = {};
   const merged = Object.assign(arg0);
-  const obj2 = require(8322) /* GenericHeaderTitle */;
+  const obj2 = require(8382) /* GenericHeaderTitle */;
   obj.shouldHandleSafeArea = require(500) /* set */.isAndroid();
   obj.style = { borderColor: token };
   return obj2.renderHeader(obj);
@@ -31,11 +31,11 @@ export default function ConversationNavigator(route) {
   let Screen;
   const params = route.route.params;
   const channelId = params.channelId;
-  let obj = channelId(5723);
+  let obj = channelId(5783);
   obj = { id: "conversation-navigator", screenOptions: obj.useAccessibilityNativeStackOptions(), children: null };
   obj = {
     initialParams: { channelId, guildId: params.guildId },
-    name: channelId(8520).ConversationNavigatorScreens.LIST,
+    name: channelId(8580).ConversationNavigatorScreens.LIST,
     options(navigation) {
       let obj = {
         header(arg0) {
@@ -55,14 +55,14 @@ export default function ConversationNavigator(route) {
       return obj;
     },
     getComponent() {
-      return channelId(8522).default;
+      return channelId(8582).default;
     }
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   const items = [
     callback(Screen, obj),
     callback(createNativeStackNavigator.Screen, {
-      name: channelId(8520).ConversationNavigatorScreens.FOCUS,
+      name: channelId(8580).ConversationNavigatorScreens.FOCUS,
       options(route) {
         route = route.route;
         const obj = {
@@ -74,7 +74,7 @@ export default function ConversationNavigator(route) {
           headerTitle: null,
           headerRight: null
         };
-        obj[1] = route(8322).getRenderBackImage(route.navigation);
+        obj[1] = route(8382).getRenderBackImage(route.navigation);
         obj[2] = function headerTitle() {
           return outer1_3(outer1_1(outer1_2[9]), { channelId: route.params.channelId, title: route.params.title, hasRightAction: true });
         };
@@ -84,7 +84,7 @@ export default function ConversationNavigator(route) {
         return obj;
       },
       getComponent() {
-        return channelId(8546).default;
+        return channelId(8606).default;
       }
     })
   ];
@@ -95,7 +95,7 @@ export const openConversationNavigator = function openConversationNavigator(arg0
   let channelId;
   let guildId;
   ({ channelId, guildId } = arg0);
-  let obj = require(4153) /* getRootNavigationRef */;
+  let obj = require(4159) /* getRootNavigationRef */;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (tmp) {
     obj = { channelId: null, guildId: null };

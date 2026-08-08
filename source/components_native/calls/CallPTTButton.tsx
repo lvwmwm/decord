@@ -1,9 +1,9 @@
-// Module ID: 10247
-// Function ID: 10248
+// Module ID: 10313
+// Function ID: 10314
 // Name: CallPTTButtonLooks
-// Dependencies: [32, 19, 1372, 4349, 4373, 676, 21, 4302, 712, 4145, 589, 10230, 9681, 10248, 5426, 4162, 1297, 1236, 2]
+// Dependencies: [32, 19, 1372, 4351, 4375, 676, 21, 4303, 712, 4151, 589, 10296, 9747, 10314, 5427, 4036, 1297, 1236, 2]
 
-// Module 10247 (CallPTTButtonLooks)
+// Module 10313 (CallPTTButtonLooks)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -105,10 +105,10 @@ const memoResult = importAllResult.memo((look) => {
   class F {
     constructor() {
       tmp = sendCallback;
-      tmp2 = f84589;
-      obj = sendCallback(f84589[15]);
+      tmp2 = f84877;
+      obj = sendCallback(f84877[15]);
       tmp3 = obj.runOnJS(c6)(true);
-      obj2 = sendCallback(f84589[15]);
+      obj2 = sendCallback(f84877[15]);
       tmp4 = obj2.runOnJS(c4)(false);
       if (null != setIsSwipeToChatDisabled) {
         tmpResult = tmp(tmp2[15]);
@@ -124,7 +124,7 @@ const memoResult = importAllResult.memo((look) => {
   const PanResult = Gesture.Pan();
   class N {
     constructor() {
-      obj = sendCallback(f84589[15]);
+      obj = sendCallback(f84877[15]);
       tmp = obj.runOnJS(c6)(false);
       return;
     }

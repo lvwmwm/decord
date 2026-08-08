@@ -1,10 +1,10 @@
-// Module ID: 10423
-// Function ID: 10424
+// Module ID: 10489
+// Function ID: 10490
 // Name: set
-// Dependencies: [5, 19, 7100, 9455, 676, 21, 514, 9451, 7098, 7128, 7129, 7127, 500, 7077, 9453, 10395, 9452, 9456, 7106, 7117, 7134, 7001, 7006, 10422, 589, 4728, 2]
+// Dependencies: [5, 19, 7160, 9520, 676, 21, 514, 9516, 7158, 7188, 7189, 7187, 500, 7137, 9518, 10461, 9517, 9521, 7166, 7177, 7194, 7061, 7066, 10488, 589, 4730, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 10423 (set)
+// Module 10489 (set)
 import jsxProd from "jsxProd";
 import importAllResult from "trackQuestEvent";
 import initializeState from "initializeState";
@@ -66,7 +66,7 @@ class QuestContentImpression {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "T", done: null };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -86,11 +86,11 @@ class QuestContentImpression {
               closure_0 = undefined;
               obj3 = undefined;
               obj4 = undefined;
-              const obj10 = outer1_0(7129);
+              const obj10 = outer1_0(7189);
               obj4 = 1;
               c3 = 1;
               let obj1 = { value: null, done: false };
-              obj1[0] = obj10.getAdUser(outer1_0(7127).getQuestContentName(outer1_0.questContent));
+              obj1[0] = obj10.getAdUser(outer1_0(7187).getQuestContentName(outer1_0.questContent));
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -128,8 +128,8 @@ class QuestContentImpression {
               }
             }
             obj4[4] = advertisingId1;
-            let merged = Object.assign(outer1_1(7077)());
-            obj2 = outer1_0(9453);
+            let merged = Object.assign(outer1_1(7137)());
+            obj2 = outer1_0(9518);
             let merged1 = Object.assign(obj2.getBrandSafetyContext(outer1_0.questContent));
             const adContentIds = outer1_0.entity.adContentIds;
             const item = adContentIds.forEach((adCreativeId) => {
@@ -264,7 +264,7 @@ class QuestContentImpression {
               onImpressionCallback();
             }
             c3 = 3;
-            return { value: "T", done: null };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp34) {
           c3 = tmp;
