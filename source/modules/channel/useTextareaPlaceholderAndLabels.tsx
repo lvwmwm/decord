@@ -1,10 +1,10 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 11375
+// Function ID: 11376
 // Name: useTextareaPlaceholderAndLabels
 // Dependencies: [676, 4494, 1236, 2]
 // Exports: default
 
-// Module 11374 (useTextareaPlaceholderAndLabels)
+// Module 11375 (useTextareaPlaceholderAndLabels)
 import ME from "ME";
 
 let c3;

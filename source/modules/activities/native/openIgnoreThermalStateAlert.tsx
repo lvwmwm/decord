@@ -1,10 +1,10 @@
-// Module ID: 10674
-// Function ID: 10675
+// Module ID: 10675
+// Function ID: 10676
 // Name: openIgnoreThermalStateAlert
-// Dependencies: [19, 21, 4643, 10675, 1988, 2]
+// Dependencies: [19, 21, 4643, 10676, 1988, 2]
 // Exports: openIgnoreThermalStateAlert
 
-// Module 10674 (openIgnoreThermalStateAlert)
+// Module 10675 (openIgnoreThermalStateAlert)
 import "noop";
 import { jsx } from "jsxProd";
 

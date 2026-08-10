@@ -1,9 +1,9 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13851
+// Function ID: 13852
 // Name: jsx
-// Dependencies: [32, 19, 17, 10407, 21, 4303, 712, 7730, 13850, 5369, 589, 11185, 4712, 5767, 5374, 4251, 5756, 4001, 13847, 4262, 7985, 7984, 7790, 4714, 1351, 2]
+// Dependencies: [32, 19, 17, 10408, 21, 4303, 712, 7730, 13852, 5369, 589, 11186, 4712, 5767, 5374, 4251, 5756, 4001, 13849, 4262, 7985, 7984, 7790, 4714, 1351, 2]
 
-// Module 13849 (jsx)
+// Module 13851 (jsx)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "TrashIcon";
 import { ScrollView } from "presentAddedFriendToast";
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(() => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
     let tmp;
     if (overrides != null) {
-      tmp = overrides[first(undefined, 11185).DEVICE_FIELD];
+      tmp = overrides[first(undefined, 11186).DEVICE_FIELD];
     }
     return tmp;
   });
@@ -66,12 +66,12 @@ const memoResult = importAllResult.memo(() => {
     };
     const items1 = [tmp7(tmp3(5374).TableRow, obj1), , ];
     let obj3 = { icon: null, label: "Refresh Override", onPress: null, arrow: true };
-    obj3[0] = tmp7(tmp3(13847).RefreshIcon, {});
-    obj3[2] = tmp3(11185).refreshBuildOverride;
+    obj3[0] = tmp7(tmp3(13849).RefreshIcon, {});
+    obj3[2] = tmp3(11186).refreshBuildOverride;
     items1[1] = tmp7(tmp3(5374).TableRow, obj3);
     const obj4 = { icon: null, label: "Clear Override", variant: "danger", onPress: null, arrow: true };
     obj4[0] = tmp7(tmp3(4262).TrashIcon, { color: "text-feedback-critical" });
-    obj4[3] = tmp3(11185).clearBuildOverride;
+    obj4[3] = tmp3(11186).clearBuildOverride;
     items1[2] = tmp7(tmp3(5374).TableRow, obj4);
     obj2[2] = items1;
     tmp10Result = tmp10(tmp3(5767).TableRowGroup, obj2);
@@ -152,11 +152,11 @@ const memoResult = importAllResult.memo(() => {
     onPress() {
       const type = first.type;
       if ("branch" === type) {
-        const result = first(11185).setBuildOverrideForBranch(tmp.id);
-        const obj3 = first(11185);
+        const result = first(11186).setBuildOverrideForBranch(tmp.id);
+        const obj3 = first(11186);
       } else if ("id" === type) {
-        const result1 = first(11185).setBuildOverrideForId(tmp.id);
-        const obj2 = first(11185);
+        const result1 = first(11186).setBuildOverrideForId(tmp.id);
+        const obj2 = first(11186);
       } else {
         first(1351).assertNever(tmp.type);
         const obj = first(1351);

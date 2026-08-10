@@ -1,7 +1,7 @@
 // Module ID: 7754
 // Function ID: 7755
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4303, 712, 5728, 7755, 9349, 503, 7647, 12676, 4299, 3998, 9512, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5728, 7755, 9349, 503, 7647, 12678, 4299, 3998, 9512, 2]
 // Exports: default
 
 // Module 7754 (MarketingPageBannerTile)
@@ -66,9 +66,9 @@ export default function MarketingPageBannerTile(bannerFields) {
   const tmp2Result = importDefault(9349);
   obj[2] = { component_type: helpArticleLinkProps(7647).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId };
   tmp2Result(obj);
-  let tmp4Result = tmp4(12676);
+  let tmp4Result = tmp4(12678);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  tmp4Result = tmp4(12676);
+  tmp4Result = tmp4(12678);
   helpArticleLinkProps = tmp4Result.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj2 = { style: items, children: null };
   items = [tmp.container, style];

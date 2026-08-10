@@ -1,10 +1,10 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 11006
+// Function ID: 11007
 // Name: MediaViewerAltTextSheet
-// Dependencies: [19, 21, 4303, 712, 11006, 4849, 5397, 5396, 1236, 4299, 2]
+// Dependencies: [19, 21, 4303, 712, 11007, 4849, 5397, 5396, 1236, 4299, 2]
 // Exports: default
 
-// Module 11005 (MediaViewerAltTextSheet)
+// Module 11006 (MediaViewerAltTextSheet)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -17,7 +17,7 @@ createCacheKey = createCacheKey.createStyles(createCacheKey);
 const result = require("createCacheKey").fileFinishedImporting("modules/media_viewer/native/components/overlay/MediaModalOverlayAltTextSheet.tsx");
 
 export default function MediaViewerAltTextSheet(children) {
-  let obj = require(11006) /* useMessagePreviewHeightStore */;
+  let obj = require(11007) /* useMessagePreviewHeightStore */;
   const messagePreviewCollapsedheight = obj.useMessagePreviewCollapsedheight();
   const tmp = createCacheKey();
   let num = 70;

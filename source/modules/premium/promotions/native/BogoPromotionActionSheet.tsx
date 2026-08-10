@@ -1,10 +1,10 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16004
+// Function ID: 16005
 // Name: BogoPromotionActionSheet
 // Dependencies: [19, 17, 1905, 676, 1369, 21, 4303, 712, 5728, 6886, 5397, 5268, 4299, 1236, 1974, 9512, 2]
 // Exports: default
 
-// Module 15995 (BogoPromotionActionSheet)
+// Module 16004 (BogoPromotionActionSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { PremiumTypes } from "GuildFeatures";

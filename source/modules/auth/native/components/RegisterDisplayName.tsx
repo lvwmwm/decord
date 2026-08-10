@@ -1,13 +1,13 @@
-// Module ID: 15102
-// Function ID: 15103
+// Module ID: 15104
+// Function ID: 15105
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14007, 15081, 15082, 21, 4303, 712, 1236, 8472, 1480, 15079, 15097, 15080, 691, 15096, 15099, 14008, 6008, 8484, 8499, 7790, 4714, 5824, 2]
+// Dependencies: [5, 32, 19, 17, 14009, 15083, 15084, 21, 4303, 712, 1236, 8472, 1480, 15081, 15099, 15082, 691, 15098, 15101, 14010, 6008, 8484, 8499, 7790, 4714, 5824, 2]
 // Exports: default
 
-// Module 15102 (RegisterDisplayName)
+// Module 15104 (RegisterDisplayName)
 import closure_3 from "useRegistrationUIStore";
 import _slicedToArray from "_slicedToArray";
-import module_14008 from "module_14008";
+import module_14010 from "module_14010";
 import { View } from "useInitialRegistrationStep";
 import isRateLimited from "isRateLimited";
 import useRegistrationUIStore from "useRegistrationUIStore";

@@ -1,10 +1,10 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14776
+// Function ID: 14777
 // Name: ExampleButton
-// Dependencies: [32, 19, 17, 4120, 21, 14775, 4714, 14776, 7751, 6012, 9124, 13416, 9731, 8058, 9187, 4303, 712, 1480, 4271, 14777, 1988, 4712, 4299, 10024, 9114, 9120, 9122, 9121, 9119, 9118, 5150, 4013, 688, 4725, 5376, 4848, 8670, 2]
+// Dependencies: [32, 19, 17, 4120, 21, 14777, 4714, 14778, 7751, 6012, 9124, 13418, 9732, 8058, 9187, 4303, 712, 1480, 4271, 14779, 1988, 4712, 4299, 10025, 9114, 9120, 9122, 9121, 9119, 9118, 5150, 4013, 688, 4725, 5376, 4848, 8670, 2]
 // Exports: default
 
-// Module 14774 (ExampleButton)
+// Module 14776 (ExampleButton)
 import int2hslRaw from "int2hslRaw";
 import items from "items";
 import get_ActivityIndicator from "useNavigation";
@@ -33,7 +33,7 @@ function ExampleButton(arg0) {
   let enableLoadingState;
   let importDefault;
   let dependencyMap;
-  const tmp3 = importDefault(14775)();
+  const tmp3 = importDefault(14777)();
   enableLoadingState = tmp3.enableLoadingState;
   ({ buttonScale, buttonSize, iconPosition, showIcon, showDisabled } = tmp3);
   importDefault = React.useRef(null);
@@ -74,7 +74,7 @@ function ExampleButton(arg0) {
   obj[7] = buttonSize;
   let tmpResult;
   if (showIcon) {
-    tmpResult = importDefault(14776);
+    tmpResult = importDefault(14778);
   }
   obj[8] = tmpResult;
   obj[9] = iconPosition;
@@ -94,7 +94,7 @@ function ExampleIconButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp3 = importDefault(14775)();
+  const tmp3 = importDefault(14777)();
   enableLoadingState = tmp3.enableLoadingState;
   const showDisabled = tmp3.showDisabled;
   importDefault = React.useRef(null);
@@ -159,7 +159,7 @@ function ExampleImageButton(arg0) {
   let importDefault;
   let dependencyMap;
   let callback;
-  const tmp = importDefault(14775)();
+  const tmp = importDefault(14777)();
   enableLoadingState = tmp.enableLoadingState;
   const showDisabled = tmp.showDisabled;
   importDefault = React.useRef(null);
@@ -204,9 +204,9 @@ function ExampleToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13416);
+  let obj = first(13418);
   obj = { on: null, off: null };
-  obj = { text: "Unfollow", icon: importDefault(9731) };
+  obj = { text: "Unfollow", icon: importDefault(9732) };
   obj[0] = obj;
   obj[1] = { text: "Follow", icon: importDefault(8058) };
   const toggleButtonProps = obj.useToggleButtonProps(obj, first);
@@ -223,7 +223,7 @@ function ExampleIconToggleButton() {
   const tmp = callback(React.useState(false), 2);
   const first = tmp[0];
   const importDefault = tmp[1];
-  let obj = first(13416);
+  let obj = first(13418);
   obj = { on: null, off: null };
   obj = { variant: "destructive", accessibilityLabel: "Mute", icon: importDefault(9187) };
   obj[0] = obj;
@@ -389,7 +389,7 @@ export default function UserSettingsDesignSystemButton() {
     icon: null
   };
   const obj23 = { source: null };
-  obj23[0] = importDefault(10024);
+  obj23[0] = importDefault(10025);
   obj22[4] = callback2(require(4714) /* Button */.Button.Icon, obj23);
   obj21[1] = callback2(require(4714) /* Button */.Button, obj22);
   const items9 = [callback2(closure_5, obj21), ];
@@ -427,7 +427,7 @@ export default function UserSettingsDesignSystemButton() {
     size: "md",
     icon: null
   };
-  obj31[4] = importDefault(10024);
+  obj31[4] = importDefault(10025);
   obj30[1] = callback2(require(4714) /* Button */.Button, obj31);
   const items11 = [callback2(closure_5, obj30), , , ];
   const obj32 = { style: tmp.buttonContainer, children: null };
@@ -441,7 +441,7 @@ export default function UserSettingsDesignSystemButton() {
     icon: null,
     iconPosition: "end"
   };
-  obj33[4] = importDefault(10024);
+  obj33[4] = importDefault(10025);
   obj32[1] = callback2(require(4714) /* Button */.Button, obj33);
   items11[1] = callback2(closure_5, obj32);
   const obj17 = {

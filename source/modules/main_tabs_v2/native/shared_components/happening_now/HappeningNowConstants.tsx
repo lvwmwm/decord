@@ -1,9 +1,9 @@
-// Module ID: 14528
-// Function ID: 14529
+// Module ID: 14530
+// Function ID: 14531
 // Name: HAPPENING_NOW_PANELS_CONTAINER_PADDING
 // Dependencies: [1297, 2]
 
-// Module 14528 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
+// Module 14530 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
 const obj = { padding: require("Button").STATUS_PADDING - 1 };
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowConstants.tsx");
 

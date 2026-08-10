@@ -1,10 +1,10 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 14306
+// Function ID: 14307
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 4005, 4161, 5328, 500, 4299, 14305, 4725, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 4005, 4161, 5328, 500, 4299, 14307, 4725, 2]
 // Exports: default
 
-// Module 14304 (QuestHomeEmptyState)
+// Module 14306 (QuestHomeEmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { VerticalGradient } from "ME";
@@ -69,7 +69,7 @@ export default function QuestHomeEmptyState(subtitle) {
     const obj6 = { children: null };
     const obj7 = { style: null, source: null, resizeMode: "cover" };
     obj7[0] = tmp5.emptyImage;
-    obj7[1] = tmp7(14305);
+    obj7[1] = tmp7(14307);
     const items2 = [tmp9(closure_4, obj7), ];
     const obj8 = { style: null, end: null, start: null, colors: null };
     obj8[0] = tmp5.gradient;

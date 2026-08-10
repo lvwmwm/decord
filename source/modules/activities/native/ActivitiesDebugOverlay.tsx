@@ -1,10 +1,10 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16220
+// Function ID: 16221
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4303, 4151, 712, 10975, 1609, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 4151, 712, 10976, 1609, 4299, 2]
 // Exports: default
 
-// Module 16211 (ActivitiesDebugOverlay)
+// Module 16220 (ActivitiesDebugOverlay)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -25,20 +25,20 @@ const result = require("jsxProd").fileFinishedImporting("modules/activities/nati
 
 export default function ActivitiesDebugOverlay() {
   const tmp = createCacheKey();
-  const tmp4 = importDefault(10975)();
+  const tmp4 = importDefault(10976)();
   let str = "text-overlay-light";
   let str2 = "";
-  if (require(10975) /* useThermalState */.ThermalStates.UNHANDLED !== tmp4) {
+  if (require(10976) /* useThermalState */.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(10975).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(10976).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(10975).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(10976).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(10975).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(10975).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(10976).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(10976).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

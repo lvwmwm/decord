@@ -4,13 +4,4 @@
 
 // Module 13619
 
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== tmp) {
-      num = require(13620)(tmp);
-    }
-  }
-  return num;
-};
+export default (arg0) => require(13620)(arg0.length);

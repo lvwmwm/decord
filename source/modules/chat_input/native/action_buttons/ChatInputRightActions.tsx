@@ -1,9 +1,9 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 11793
+// Function ID: 11794
 // Name: LeftSlot
-// Dependencies: [32, 19, 17, 11368, 21, 4303, 712, 4005, 4648, 11561, 1607, 11617, 4036, 11616, 11615, 2]
+// Dependencies: [32, 19, 17, 11369, 21, 4303, 712, 4005, 4648, 11562, 1607, 11618, 4036, 11617, 11616, 2]
 
-// Module 11792 (LeftSlot)
+// Module 11793 (LeftSlot)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -25,12 +25,12 @@ function LeftSlot(state) {
   state = state.state;
   ({ cleanup, channel, onPress, slotWidth, wrapperStyle } = state);
   let obj = { visible: state !== require(4648) /* wrapChildrenDefault */.TransitionStates.YEETED, initiallyVisible: state !== require(4648) /* wrapChildrenDefault */.TransitionStates.ENTERED, enterDelayMs: closure_6, onExitComplete: cleanup };
-  ({ animatedStyle, isInteractive } = importDefault(11617)(obj));
+  ({ animatedStyle, isInteractive } = importDefault(11618)(obj));
   obj = { style: items };
   items = [wrapperStyle, { width: slotWidth }, animatedStyle];
-  const tmp = importDefault(11617)(obj);
-  const merged = Object.assign(require(11616) /* FadeTransitionItem */.interactivityProps(isInteractive));
-  obj.children = callback2(importDefault(11615), { canStartThreads: false, channel, onPress, styleButton: "ct", shouldShowThread: "simple-action" });
+  const tmp = importDefault(11618)(obj);
+  const merged = Object.assign(require(11617) /* FadeTransitionItem */.interactivityProps(isInteractive));
+  obj.children = callback2(importDefault(11616), { canStartThreads: false, channel, onPress, styleButton: "ct", shouldShowThread: "onPressHeaderBarButtonMenuItem" });
   return callback2(importDefault(4036).View, obj);
 }
 let c4 = importAllResult;
@@ -90,7 +90,7 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
   obj1[0] = keyboardType === channel(1607).KeyboardTypes.EXPRESSION;
   obj1[1] = showKeyboardIcon;
   obj1[2] = onPressExpression;
-  items1[1] = callback2(onPressAction(11561), obj1);
+  items1[1] = callback2(onPressAction(11562), obj1);
   obj[1] = items1;
   return closure_8(View, obj);
 });

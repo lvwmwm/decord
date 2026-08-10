@@ -1,10 +1,10 @@
-// Module ID: 9845
-// Function ID: 9846
+// Module ID: 9846
+// Function ID: 9847
 // Name: NotificationSettingsChannelPost
 // Dependencies: [19, 17, 4499, 21, 589, 5767, 1236, 8448, 5262, 2]
 // Exports: NotificationSettingsChannelPost
 
-// Module 9845 (NotificationSettingsChannelPost)
+// Module 9846 (NotificationSettingsChannelPost)
 import "noop";
 import { View } from "get ActivityIndicator";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";

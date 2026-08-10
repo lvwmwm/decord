@@ -1,9 +1,9 @@
-// Module ID: 13005
-// Function ID: 13006
+// Module ID: 13007
+// Function ID: 13008
 // Name: stopActivity
-// Dependencies: [4323, 1340, 1218, 4336, 4339, 4375, 1960, 676, 687, 595, 4348, 10450, 4188, 4473, 589, 709, 2]
+// Dependencies: [4323, 1340, 1218, 4336, 4339, 4375, 1960, 676, 687, 595, 4348, 10451, 4188, 4473, 589, 709, 2]
 
-// Module 13005 (stopActivity)
+// Module 13007 (stopActivity)
 import initialize from "initialize";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import fetchFingerprint from "fetchFingerprint";
@@ -66,7 +66,7 @@ function updateActivity(applicationId) {
   obj[7] = voiceChannelId;
   obj[8] = sessionId;
   obj[9] = mediaSessionId;
-  importDefault(10450).updateActivity(obj);
+  importDefault(10451).updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
     const interval = new tmp3(4188).Interval();

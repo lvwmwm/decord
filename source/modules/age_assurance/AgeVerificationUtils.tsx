@@ -1,7 +1,7 @@
 // Module ID: 4519
 // Function ID: 4520
 // Name: useAgeVerificationRunner
-// Dependencies: [5, 32, 19, 4520, 3981, 1218, 4521, 1903, 7830, 7798, 676, 1221, 7779, 7799, 5141, 3980, 1935, 589, 11334, 709, 7797, 7784, 7803, 8853, 1236, 2802, 13029, 2]
+// Dependencies: [5, 32, 19, 4520, 3981, 1218, 4521, 1903, 7830, 7798, 676, 1221, 7779, 7799, 5141, 3980, 1935, 589, 11335, 709, 7797, 7784, 7803, 8853, 1236, 2802, 13031, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useInitiateAgeVerificationV2, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
 // Module 4519 (useAgeVerificationRunner)
@@ -500,7 +500,7 @@ export const isAgeVerificationMessageWithConnectToTeenCta = function isAgeVerifi
               }
               let enabled = true === hasItem;
               if (enabled) {
-                const FamilyCenterConnectionPrereqExperiment = require(11334) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
+                const FamilyCenterConnectionPrereqExperiment = require(11335) /* apexExperiment */.FamilyCenterConnectionPrereqExperiment;
                 enabled = FamilyCenterConnectionPrereqExperiment.getConfig({ location: "isAgeVerificationMessageWithConnectToTeenCta" }).enabled;
               }
               return enabled;

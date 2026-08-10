@@ -1,9 +1,9 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10125
+// Function ID: 10126
 // Name: MODAL_KEY
-// Dependencies: [5, 4509, 10125, 1988, 2]
+// Dependencies: [5, 4509, 10126, 1988, 2]
 
-// Module 10124 (MODAL_KEY)
+// Module 10125 (MODAL_KEY)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

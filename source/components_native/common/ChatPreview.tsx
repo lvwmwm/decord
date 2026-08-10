@@ -1,7 +1,7 @@
 // Module ID: 8607
 // Function ID: 8608
 // Name: componentDidMount
-// Dependencies: [19, 17, 4295, 3994, 1372, 1903, 8042, 21, 4303, 712, 4013, 8608, 8041, 8610, 11358, 3971, 1236, 11013, 11007, 12, 4311, 11077, 11056, 11019, 4531, 1872, 11119, 11144, 8613, 7223, 11018, 11020, 11055, 10957, 12021, 11292, 500, 5328, 4846, 4299, 3974, 589, 1474, 5944, 4517, 2]
+// Dependencies: [19, 17, 4295, 3994, 1372, 1903, 8042, 21, 4303, 712, 4013, 8608, 8041, 8610, 11359, 3971, 1236, 11014, 11008, 12, 4311, 11078, 11057, 11020, 4531, 1872, 11120, 11145, 8613, 7223, 11019, 11021, 11056, 10958, 12022, 11293, 500, 5328, 4846, 4299, 3974, 589, 1474, 5944, 4517, 2]
 // Exports: ChatPreview
 
 // Module 8607 (componentDidMount)
@@ -98,7 +98,7 @@ class ChatPreviewBase extends PureComponent {
           let arr = items;
           const first = items[0];
           if (null != first) {
-            if (messages(11358)(c0, first[first.length - 1], props)) {
+            if (messages(11359)(c0, first[first.length - 1], props)) {
               items = [props];
               arr = arr.unshift(items);
             } else {
@@ -221,7 +221,7 @@ class ChatPreviewBase extends PureComponent {
         const jumpTargetId = tmp3.jumpTargetId;
         let tmp23;
         if (!tmp7) {
-          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: "open_hands_tone2", scrollPosition: "recomputeViewableItems", focusTargetId: null };
+          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: "ResponderEventPlugin", scrollPosition: "ReactNativeBridgeEventPlugin", focusTargetId: "EMOJI_UPLOAD_START" };
           obj[0] = tmp22;
           obj[1] = jumpTargetId;
           obj[2] = jumpTargetId;
@@ -276,7 +276,7 @@ class ChatPreviewBase extends PureComponent {
         }
       }
       let obj = applyArgumentsResult(outer1_3[21]);
-      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "2026-02-private-channel-hiding", selectedChannelId: "user", tapLinkData: null };
+      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "absolute", selectedChannelId: 0, tapLinkData: 0 };
       obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
         const jumpToChatProps = props.props.jumpToChatProps;
         const onBeforeJumpToMessage = jumpToChatProps.onBeforeJumpToMessage;
@@ -483,7 +483,7 @@ prototype["render"] = function render() {
     if (null != guild_id) {
       let obj = { guildId: null, channelId: null };
       ({ guild_id: obj8[0], id: obj8[1] } = channel);
-      let tmp14 = callback(importDefault(10957), obj);
+      let tmp14 = callback(importDefault(10958), obj);
     }
     obj = { style: null, children: null };
     obj[0] = tmp.containerInner;
@@ -499,7 +499,7 @@ prototype["render"] = function render() {
     if (null != guild_id1) {
       let obj1 = { guildId: null, channelId: null };
       ({ guild_id: obj7[0], id: obj7[1] } = channel);
-      tmp14 = callback(importDefault(12021), obj1);
+      tmp14 = callback(importDefault(12022), obj1);
     }
   }
   obj = { ref: self.chatRef, style: tmp.chat, inverted: true, onTapLink: self.handleTapLink, onTapChannel: self.handleTapChannel, onLongPressChannel: self.handleLongPressChannel, onLongPressLink: self.handleLongPressLink, onLongPressMessage: self.handleLongPressMessage, onLongPressReaction: self.handleLongPressReaction, onTapReaction: self.handleTapReaction, onTapImage: self.handleTapImage, onCompleteFirstLayout: null, onFirstLayout: null };
@@ -509,7 +509,7 @@ prototype["render"] = function render() {
     prop = self.handleCompleteFirstLayout;
   }
   obj[11] = prop;
-  const tmp8 = importDefault(11292);
+  const tmp8 = importDefault(11293);
   let prop1;
   if (!tmp9Result.isIOS()) {
     prop1 = self.handleCompleteFirstLayout;

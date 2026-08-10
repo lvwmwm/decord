@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15119
+// Function ID: 15120
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 5829, 15081, 15082, 676, 21, 4303, 712, 3883, 15118, 4013, 1480, 15079, 589, 8484, 15097, 15080, 38, 8499, 1236, 7791, 8663, 15119, 4714, 8469, 8977, 4153, 2]
+// Dependencies: [32, 19, 17, 5829, 15083, 15084, 676, 21, 4303, 712, 3883, 15120, 4013, 1480, 15081, 589, 8484, 15099, 15082, 38, 8499, 1236, 7791, 8663, 15121, 4714, 8469, 8977, 4153, 2]
 // Exports: default
 
-// Module 15117 (RegisterAgeGate)
+// Module 15119 (RegisterAgeGate)
 import _slicedToArray from "_slicedToArray";
 import module_38 from "module_38";
 import { View } from "useAuthFlowBackHandler";

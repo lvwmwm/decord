@@ -1,10 +1,10 @@
-// Module ID: 11831
-// Function ID: 11832
+// Module ID: 11832
+// Function ID: 11833
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 1415, 1971, 1964, 21, 4303, 712, 1236, 589, 8997, 1351, 4299, 4846, 11071, 1297, 11830, 4817, 9008, 9006, 10816, 2]
+// Dependencies: [19, 17, 1415, 1971, 1964, 21, 4303, 712, 1236, 589, 8997, 1351, 4299, 4846, 11072, 1297, 11831, 4817, 9008, 9006, 10817, 2]
 // Exports: default
 
-// Module 11831 (ChannelAccessInfo)
+// Module 11832 (ChannelAccessInfo)
 import ShieldUserIcon from "ShieldUserIcon";
 import { View } from "GroupIcon";
 import { isGuildOwner } from "GuildNSFWContentLevel";
@@ -150,7 +150,7 @@ export default function ChannelAccessInfo(guild) {
     }
     obj6 = { children: null };
     const MEMBERS = constants.MEMBERS;
-    channel(11830);
+    channel(11831);
     const items5 = [renderCounts(MEMBERS, existingMembers.length, 0, tmp2(4817).GroupIcon), ];
     const ROLES = constants.ROLES;
     channel(9008);
@@ -161,7 +161,7 @@ export default function ChannelAccessInfo(guild) {
   obj[1] = closure_9(closure_10, obj6);
   const items6 = [callback(View, obj), ];
   const obj8 = { source: null, size: null };
-  obj8[0] = channel(10816);
+  obj8[0] = channel(10817);
   obj8[1] = guild(1297).Icon.Sizes.SMALL;
   items6[1] = callback(guild(1297).Icon, obj8);
   obj[4] = items6;

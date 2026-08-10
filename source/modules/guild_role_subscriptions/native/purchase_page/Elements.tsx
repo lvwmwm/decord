@@ -1,10 +1,10 @@
-// Module ID: 15648
-// Function ID: 15649
+// Module ID: 15656
+// Function ID: 15657
 // Name: TruncatedText
-// Dependencies: [32, 19, 17, 3952, 21, 4303, 712, 4299, 1236, 4846, 1297, 15649, 7651, 14461, 647, 7652, 5855, 2]
+// Dependencies: [32, 19, 17, 3952, 21, 4303, 712, 4299, 1236, 4846, 1297, 15657, 7651, 14463, 647, 7652, 5855, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 15648 (TruncatedText)
+// Module 15656 (TruncatedText)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "set";
@@ -109,7 +109,7 @@ export const ArrowButton = function ArrowButton(arg0) {
   const items = [callback2(require(4299) /* Text */.Text, obj), ];
   obj = { size: null, source: null, style: null };
   obj[0] = require(1297) /* Button */.Icon.Sizes.SMALL;
-  obj[1] = importDefault(15649);
+  obj[1] = importDefault(15657);
   obj[2] = tmp.arrowButtonIcon;
   items[1] = callback2(require(1297) /* Button */.Icon, obj);
   obj[3] = items;
@@ -117,8 +117,8 @@ export const ArrowButton = function ArrowButton(arg0) {
 };
 export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPlan(listingId) {
   const obj = importDefault(7651);
-  const _require = callback(importAll(14461).useSubscriptionPlan(listingId), 1)[0];
-  const obj2 = importAll(14461);
+  const _require = callback(importAll(14463).useSubscriptionPlan(listingId), 1)[0];
+  const obj2 = importAll(14463);
   const tmp2 = _require;
   const items = [addSubscriptionPlan];
   const stateFromStores = _require(647).useStateFromStores(items, () => outer1_8.get(id.id));

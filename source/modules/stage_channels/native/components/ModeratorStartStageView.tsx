@@ -1,10 +1,10 @@
-// Module ID: 10758
-// Function ID: 10759
+// Module ID: 10759
+// Function ID: 10760
 // Name: ModeratorStartStageView
-// Dependencies: [32, 19, 1891, 21, 589, 9038, 10759, 8986, 9037, 10760, 8942, 10761, 1236, 10779, 10780, 2]
+// Dependencies: [32, 19, 1891, 21, 589, 9038, 10760, 8986, 9037, 10761, 8942, 10762, 1236, 10780, 10781, 2]
 // Exports: default
 
-// Module 10758 (ModeratorStartStageView)
+// Module 10759 (ModeratorStartStageView)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -30,7 +30,7 @@ export default function ModeratorStartStageView(channel) {
   let obj2 = guild_id(8986);
   const canManageGuildEventResult = obj2.useManageResourcePermissions(channel).canManageGuildEvent(first);
   const tmp5 = importDefault;
-  let obj3 = guild_id(10760);
+  let obj3 = guild_id(10761);
   const isLive = obj3.useStageChannelStartEvent(channel.id).isLive;
   let obj4 = guild_id(8942);
   const nextRecurrenceIdInEvent = obj4.getNextRecurrenceIdInEvent(first);
@@ -51,16 +51,16 @@ export default function ModeratorStartStageView(channel) {
         obj[2] = isLive;
         obj[3] = stateFromStores;
         obj[4] = nextRecurrenceIdInEvent;
-        tmp10Result = tmp10(tmp(10779).StartEventPrompt, obj);
+        tmp10Result = tmp10(tmp(10780).StartEventPrompt, obj);
       }
     }
     const items2 = [tmp10Result, , , ];
     tmp10Result = null;
-    if (importDefault(10759)(channel.id, true).moderator) {
+    if (importDefault(10760)(channel.id, true).moderator) {
       obj1 = { channel: null, isLive: null };
       obj1[0] = channel;
       obj1[1] = isLive;
-      tmp10Result = tmp10(tmp(10780).StartStagePrompt, obj1);
+      tmp10Result = tmp10(tmp(10781).StartStagePrompt, obj1);
     }
     items2[1] = tmp10Result;
     let tmp10Result1 = null;
@@ -69,19 +69,19 @@ export default function ModeratorStartStageView(channel) {
       obj2[0] = channel;
       obj2[1] = isLive;
       obj2[2] = stateFromStores;
-      tmp10Result1 = tmp10(tmp(10779).ScheduleEventPrompt, obj2);
+      tmp10Result1 = tmp10(tmp(10780).ScheduleEventPrompt, obj2);
     }
     obj3 = { children: null };
     items2[2] = tmp10Result1;
     obj4 = { onContinue: null };
     obj4[0] = channel.onSkip;
-    items2[3] = closure_5(tmp(10780).ContinueToStagePrompt, obj4);
+    items2[3] = closure_5(tmp(10781).ContinueToStagePrompt, obj4);
     obj3[0] = items2;
     obj[2] = closure_7(closure_6, obj3);
-    tmp10Result2 = tmp10(tmp5(10761), obj);
+    tmp10Result2 = tmp10(tmp5(10762), obj);
     const tmp12 = closure_7;
     const tmp13 = closure_6;
-    const tmp5Result = tmp5(10761);
+    const tmp5Result = tmp5(10762);
   }
   return tmp10Result2;
 };

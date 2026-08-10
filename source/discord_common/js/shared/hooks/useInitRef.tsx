@@ -1,10 +1,10 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15260
+// Function ID: 15261
 // Name: useInitRef
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 15253 (useInitRef)
+// Module 15260 (useInitRef)
 import { useRef } from "noop";
 
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/hooks/useInitRef.tsx");

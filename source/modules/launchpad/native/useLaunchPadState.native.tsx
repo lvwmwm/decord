@@ -1,10 +1,10 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16036
+// Function ID: 16037
 // Name: useLaunchPadState
-// Dependencies: [19, 10442, 16028, 4036, 15060, 10328, 10330, 2]
+// Dependencies: [19, 10443, 16037, 4036, 15062, 10329, 10331, 2]
 // Exports: default
 
-// Module 16027 (useLaunchPadState)
+// Module 16036 (useLaunchPadState)
 import noop from "noop";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
 import setLaunchPadPullTabExclusionRect from "setLaunchPadPullTabExclusionRect";

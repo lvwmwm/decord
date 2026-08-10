@@ -1,10 +1,10 @@
-// Module ID: 14394
-// Function ID: 14395
+// Module ID: 14396
+// Function ID: 14397
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 7162, 21, 4303, 712, 14366, 10459, 7183, 3914, 10586, 4299, 1236, 14389, 2]
+// Dependencies: [19, 17, 7162, 21, 4303, 712, 14368, 10460, 7183, 3914, 10587, 4299, 1236, 14391, 2]
 // Exports: default
 
-// Module 14394 (VideoQuestModalHeader)
+// Module 14396 (VideoQuestModalHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useVideoQuestUIStore } from "_toPropertyKey";
@@ -37,9 +37,9 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = createCacheKey();
-  let obj = quest(14366);
+  let obj = quest(14368);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj1 = quest(10459);
+  let obj1 = quest(10460);
   const questTaskDetails = obj1.useQuestTaskDetails(quest);
   const tmp6 = useVideoQuestUIStore((arg0) => {
     let tmp = arg0.videoProgress[quest.id];
@@ -58,8 +58,8 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    const videoQuestProgressRemainingAccessibilityLabel = tmp3(10586).getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp8);
-    const tmp3Result = tmp3(10586);
+    const videoQuestProgressRemainingAccessibilityLabel = tmp3(10587).getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp8);
+    const tmp3Result = tmp3(10587);
   }
   obj = { style: items, children: null };
   items = [tmp2.videoContentHeaderWrapper, style];
@@ -89,7 +89,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   obj3[4] = gamePublisher;
   items1[1] = closure_5(quest(4299).Text, obj3);
   obj[1] = items1;
-  const items3 = [closure_6(View, obj), closure_5(questTaskDetails(14389), { iconColor: closeButtonIconColor, onClose })];
+  const items3 = [closure_6(View, obj), closure_5(questTaskDetails(14391), { iconColor: closeButtonIconColor, onClose })];
   obj[1] = items3;
   return closure_6(View, obj);
 };

@@ -1,10 +1,10 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14710
+// Function ID: 14711
 // Name: SettingsItemAppIcon
-// Dependencies: [19, 7662, 21, 4303, 712, 7661, 7663, 9533, 14709, 2]
+// Dependencies: [19, 7662, 21, 4303, 712, 7661, 7663, 9533, 14711, 2]
 // Exports: default
 
-// Module 14708 (SettingsItemAppIcon)
+// Module 14710 (SettingsItemAppIcon)
 import "noop";
 import { getIconById } from "items";
 import { jsx } from "jsxProd";
@@ -31,7 +31,7 @@ export default function SettingsItemAppIcon(color) {
       obj = { style: null, id: null, size: 32 };
       obj[0] = tmp3.icon;
       obj[1] = currentAppIcon;
-      let tmp11 = jsx(importDefault(14709), { style: null, id: null, size: 32 });
+      let tmp11 = jsx(importDefault(14711), { style: null, id: null, size: 32 });
     }
     return tmp11;
   }

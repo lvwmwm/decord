@@ -1,8 +1,8 @@
-// Module ID: 16176
-// Function ID: 16177
-// Dependencies: [19, 21, 4303, 5397, 5399, 5328, 16177, 2]
+// Module ID: 16185
+// Function ID: 16186
+// Dependencies: [19, 21, 4303, 5397, 5399, 5328, 16186, 2]
 
-// Module 16176
+// Module 16185
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -16,7 +16,7 @@ const memoResult = require("noop").memo(function VoicePanelSettingsActionSheet(a
   let obj = { startExpanded: true, scrollable: true, children: null };
   obj = { children: null };
   obj = { bottom: true, style: callback().wrapper, children: null };
-  obj[2] = jsx(importDefault(16177), { guildId, channelId });
+  obj[2] = jsx(importDefault(16186), { guildId, channelId });
   obj[0] = jsx(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, { bottom: true, style: callback().wrapper, children: null });
   obj[2] = jsx(require(5399) /* BottomSheetModal */.BottomSheetScrollView, { bottom: true, style: callback().wrapper, children: null });
   return jsx(require(5397) /* Background */.BottomSheet, { bottom: true, style: callback().wrapper, children: null });

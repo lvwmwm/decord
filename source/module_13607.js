@@ -1,7 +1,17 @@
 // Module ID: 13607
 // Function ID: 13608
-// Dependencies: []
+// Dependencies: [13575, 13576, 13608]
 
 // Module 13607
+import getOwnPropertyDescriptor from "getOwnPropertyDescriptor";
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+let tmp2 = !getOwnPropertyDescriptor;
+if (!getOwnPropertyDescriptor) {
+  tmp2 = !require("module_13576")(() => 7 !== Object.defineProperty(require(13608) /* element */("div"), "a", {
+    get() {
+      return 7;
+    }
+  }).a);
+}
+
+export default tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 14757
+// Function ID: 14758
 // Name: FileWarningIcon
-// Dependencies: [19, 21, 712, 4004, 14756, 2]
+// Dependencies: [19, 21, 712, 4004, 14758, 2]
 // Exports: FileWarningIcon
 
-// Module 14755 (FileWarningIcon)
+// Module 14757 (FileWarningIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FileWarningIcon = function FileWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14756) /* registerAsset */;
+  obj[0] = require(14758) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

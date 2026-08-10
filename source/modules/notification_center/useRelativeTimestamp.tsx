@@ -1,10 +1,10 @@
-// Module ID: 15170
-// Function ID: 15171
+// Module ID: 15172
+// Function ID: 15173
 // Name: useRelativeTimestamp
 // Dependencies: [32, 19, 7102, 687, 2]
 // Exports: useRelativeTimestamp
 
-// Module 15170 (useRelativeTimestamp)
+// Module 15172 (useRelativeTimestamp)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

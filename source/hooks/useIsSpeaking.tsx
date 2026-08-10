@@ -1,10 +1,10 @@
-// Module ID: 10642
-// Function ID: 10643
+// Module ID: 10643
+// Function ID: 10644
 // Name: useIsSpeaking
 // Dependencies: [4749, 1960, 5137, 4319, 589, 2]
 // Exports: default, getIsSpeaking
 
-// Module 10642 (useIsSpeaking)
+// Module 10643 (useIsSpeaking)
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import handleConnectionOpen from "handleConnectionOpen";
 import anyoneHasFlagInContext from "anyoneHasFlagInContext";

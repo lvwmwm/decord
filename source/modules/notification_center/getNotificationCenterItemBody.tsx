@@ -1,10 +1,10 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 15539
+// Function ID: 15540
 // Name: getNotificationCenterItemBody
 // Dependencies: [6985, 1891, 3938, 1903, 676, 1236, 4146, 7101, 1884, 38, 2]
 // Exports: default
 
-// Module 15531 (getNotificationCenterItemBody)
+// Module 15539 (getNotificationCenterItemBody)
 import scheduledEventSort from "scheduledEventSort";
 import { isGuildEventEnded } from "scheduledEventSort";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

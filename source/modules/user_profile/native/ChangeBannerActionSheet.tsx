@@ -1,10 +1,10 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 13903
+// Function ID: 13904
 // Name: ChangeBannerColorRow
-// Dependencies: [5, 19, 17, 8262, 676, 21, 4303, 712, 5728, 3947, 4271, 4860, 5764, 5396, 1236, 7704, 5767, 5374, 7967, 13902, 589, 8275, 8307, 8304, 688, 8265, 13903, 13905, 4299, 1297, 13910, 2]
+// Dependencies: [5, 19, 17, 8262, 676, 21, 4303, 712, 5728, 3947, 4271, 4860, 5764, 5396, 1236, 7704, 5767, 5374, 7967, 13904, 589, 8275, 8307, 8304, 688, 8265, 13905, 13907, 4299, 1297, 13912, 2]
 // Exports: default
 
-// Module 13901 (ChangeBannerColorRow)
+// Module 13903 (ChangeBannerColorRow)
 import closure_3 from "jsxProd";
 import UserProfileUpsellButton from "UserProfileUpsellButton";
 import { View } from "TableRowInner";
@@ -70,7 +70,7 @@ function ChangeBannerColorRow(user) {
   obj1[1] = intl.string(_require(1236).t.xzNfPz);
   obj[0] = callback(_require(7967).FormLabel, obj1);
   const obj2 = { style: tmp.selectedColor, children: null };
-  const items2 = [callback(pendingAccentColor(13905), { style: tmp.bannerColor, color: pendingAccentColor }), , ];
+  const items2 = [callback(pendingAccentColor(13907), { style: tmp.bannerColor, color: pendingAccentColor }), , ];
   const obj4 = { style: tmp.selectedColorHex, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const obj3 = { style: tmp.bannerColor, color: pendingAccentColor };
   const tmp2Result1 = _require(8304);
@@ -78,12 +78,12 @@ function ChangeBannerColorRow(user) {
   items2[1] = callback(_require(4299).Text, obj4);
   const obj5 = { style: tmp.rowArrow, size: null, source: null };
   obj5[1] = _require(1297).Icon.Sizes.CUSTOM;
-  obj5[2] = pendingAccentColor(13910);
+  obj5[2] = pendingAccentColor(13912);
   items2[2] = callback(_require(1297).Icon, obj5);
   obj2[1] = items2;
   obj[1] = callback2(View, obj2);
   obj[2] = function handleChangeColor() {
-    pendingAccentColor(13903)({ color: pendingAccentColor, onSelect: dependencyMap });
+    pendingAccentColor(13905)({ color: pendingAccentColor, onSelect: dependencyMap });
   };
   return callback(_require(5374).TableRow, obj);
 }
@@ -257,7 +257,7 @@ export default function ChangeBannerActionSheet(isTryItOut) {
     obj6[0] = tmp.upsellButton;
     const obj7 = { analyticsObject: null };
     obj7[0] = constants.EDIT_PROFILE_BANNER;
-    obj6[1] = tmp4(tmp2(13902), obj7);
+    obj6[1] = tmp4(tmp2(13904), obj7);
     tmp4Result2 = tmp4(tmp10, obj6);
   }
   items3[1] = tmp4Result2;

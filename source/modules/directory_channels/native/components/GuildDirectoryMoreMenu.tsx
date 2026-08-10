@@ -1,10 +1,10 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11685
+// Function ID: 11686
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [19, 21, 11678, 11685, 4643, 1236, 11687, 1297, 8020, 9672, 4262, 8769, 8598, 7751, 8604, 712, 2]
+// Dependencies: [19, 21, 11679, 11686, 4643, 1236, 11688, 1297, 8020, 9672, 4262, 8769, 8598, 7751, 8604, 712, 2]
 // Exports: default
 
-// Module 11684 (GuildDirectoryMoreMenu)
+// Module 11685 (GuildDirectoryMoreMenu)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -15,7 +15,7 @@ export default function GuildDirectoryMoreMenu(entry) {
   let canRemove;
   let isEntryAdmin;
   entry = entry.entry;
-  const tmp2 = importDefault(11678)(entry);
+  const tmp2 = importDefault(11679)(entry);
   const items = [];
   ({ isEntryAdmin, canRemove } = tmp2);
   if (tmp2.canEdit) {

@@ -1,10 +1,10 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15636
+// Function ID: 15637
 // Name: CutoutGuildIcon
-// Dependencies: [32, 19, 17, 1891, 8898, 21, 4303, 712, 8293, 5779, 589, 4239, 7304, 8912, 4036, 4713, 1483, 4846, 14297, 4299, 1236, 4153, 2]
+// Dependencies: [32, 19, 17, 1891, 8898, 21, 4303, 712, 8293, 5779, 589, 4239, 7304, 8912, 4036, 4713, 1483, 4846, 14299, 4299, 1236, 4153, 2]
 // Exports: default
 
-// Module 15628 (CutoutGuildIcon)
+// Module 15636 (CutoutGuildIcon)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import get_ActivityIndicator from "PressableBase";

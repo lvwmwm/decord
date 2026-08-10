@@ -1,10 +1,10 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16621
+// Function ID: 16622
 // Name: GuildSettingsOwnerConfiguredContentLevel
-// Dependencies: [19, 3929, 9022, 676, 21, 4303, 712, 8036, 9021, 5767, 1236, 1974, 5768, 4013, 5270, 6008, 7985, 14082, 7984, 4299, 7967, 4712, 5714, 1480, 589, 2]
+// Dependencies: [19, 3929, 9022, 676, 21, 4303, 712, 8036, 9021, 5767, 1236, 1974, 5768, 4013, 5270, 6008, 7985, 14084, 7984, 4299, 7967, 4712, 5714, 1480, 589, 2]
 // Exports: default
 
-// Module 16612 (GuildSettingsOwnerConfiguredContentLevel)
+// Module 16621 (GuildSettingsOwnerConfiguredContentLevel)
 import importAllResult from "Text";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import handleFormInit from "handleFormInit";
@@ -124,7 +124,7 @@ prototype["renderVerificationLevelSection"] = function renderVerificationLevelSe
     return self.handleVerificationLevelChange(verificationLevel);
   };
   const features = guild.features;
-  const verificationLevelOptions = self(14082).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
+  const verificationLevelOptions = self(14084).generateVerificationLevelOptions(features.has(constants.COMMUNITY));
   obj[5] = verificationLevelOptions.map((arg0) => {
     let color;
     let desc;
@@ -171,7 +171,7 @@ prototype["renderExplicitContentFilter"] = function renderExplicitContentFilter(
   };
   const obj3 = importDefault(1974);
   const features = guild.features;
-  const contentFilterOptions = self(14082).generateContentFilterOptions(features.has(constants.COMMUNITY));
+  const contentFilterOptions = self(14084).generateContentFilterOptions(features.has(constants.COMMUNITY));
   obj[5] = contentFilterOptions.map((value) => {
     let desc;
     let disabled;

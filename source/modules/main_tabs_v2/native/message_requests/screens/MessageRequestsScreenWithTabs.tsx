@@ -1,8 +1,8 @@
-// Module ID: 15938
-// Function ID: 15939
-// Dependencies: [32, 19, 17, 21, 4303, 712, 8956, 1236, 15939, 15955, 9141, 9562, 11294, 2]
+// Module ID: 15947
+// Function ID: 15948
+// Dependencies: [32, 19, 17, 21, 4303, 712, 8956, 1236, 15948, 15964, 9141, 9562, 11295, 2]
 
-// Module 15938
+// Module 15947
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
@@ -39,13 +39,13 @@ const memoResult = importAllResult.memo((navigation) => {
   const intl = navigation(1236).intl;
   obj[0] = intl.string(navigation(1236).t["7RFcXZ"]);
   obj[1] = constants.REQUEST;
-  obj[2] = callback2(importDefault(15939), { goToMessageRequestPreview: callback });
+  obj[2] = callback2(importDefault(15948), { goToMessageRequestPreview: callback });
   const items1 = [obj, ];
   const obj1 = { label: null, id: null, page: null };
   const intl2 = navigation(1236).intl;
   obj1[0] = intl2.string(navigation(1236).t.ulKXHp);
   obj1[1] = constants.SPAM;
-  obj1[2] = callback2(importDefault(15955), { goToMessageRequestPreview: callback });
+  obj1[2] = callback2(importDefault(15964), { goToMessageRequestPreview: callback });
   items1[1] = obj1;
   obj[0] = items1;
   obj[1] = tmp2[0];
@@ -54,7 +54,7 @@ const memoResult = importAllResult.memo((navigation) => {
   const items2 = [callback2(View, { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9141).SegmentedControl, { state: segmentedControlState }) }), , ];
   const obj3 = { style: tmp.tabContainer, onLayout: callback1, children: callback2(navigation(9141).SegmentedControl, { state: segmentedControlState }) };
   items2[1] = callback2(View, { style: tmp.messageRequestContent, children: callback2(navigation(9562).SegmentedControlPages, { state: segmentedControlState }) });
-  items2[2] = callback2(navigation(11294).TTIFirstContentfulPaint, { label: "message_requests" });
+  items2[2] = callback2(navigation(11295).TTIFirstContentfulPaint, { label: "message_requests" });
   obj2[1] = items2;
   return callback3(View, obj2);
 });

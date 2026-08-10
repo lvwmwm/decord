@@ -1,10 +1,10 @@
-// Module ID: 10104
-// Function ID: 10105
+// Module ID: 10105
+// Function ID: 10106
 // Name: WishlistItemCard
-// Dependencies: [19, 676, 21, 8213, 10105, 10107, 10108, 2]
+// Dependencies: [19, 676, 21, 8213, 10106, 10108, 10109, 2]
 // Exports: default
 
-// Module 10104 (WishlistItemCard)
+// Module 10105 (WishlistItemCard)
 import "noop";
 import { SKUProductLines } from "ME";
 import { jsx } from "jsxProd";
@@ -28,13 +28,13 @@ export default function WishlistItemCard(arg0) {
     obj[2] = source;
     obj[3] = wishlistOwnerId;
     const merged1 = Object.assign(merged);
-    return jsx(importDefault(10105), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
+    return jsx(importDefault(10106), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
   } else if (tmp5.PREMIUM === productLine) {
     obj = { sku: null, source: null };
     obj[0] = sku;
     obj[1] = source;
     const merged2 = Object.assign(merged);
-    return jsx(importDefault(10107), { sku: null, source: null });
+    return jsx(importDefault(10108), { sku: null, source: null });
   } else if (tmp5.SOCIAL_LAYER_GAME_ITEM === productLine) {
     let tmp6 = null;
     if (tmp4) {
@@ -44,8 +44,8 @@ export default function WishlistItemCard(arg0) {
       obj[2] = source;
       obj[3] = wishlistOwnerId;
       const merged3 = Object.assign(merged);
-      tmp6 = jsx(importDefault(10108), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
-      const tmp9 = importDefault(10108);
+      tmp6 = jsx(importDefault(10109), { sku: null, isOwned: null, source: null, wishlistOwnerId: null });
+      const tmp9 = importDefault(10109);
     }
     return tmp6;
   } else {

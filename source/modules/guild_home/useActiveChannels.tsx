@@ -1,10 +1,10 @@
-// Module ID: 15198
-// Function ID: 15199
+// Module ID: 15200
+// Function ID: 15201
 // Name: getActiveTextChannels
-// Dependencies: [1376, 1372, 3929, 4499, 12968, 676, 1379, 1351, 2]
+// Dependencies: [1376, 1372, 3929, 4499, 12970, 676, 1379, 1351, 2]
 // Exports: getActiveTextChannels
 
-// Module 15198 (getActiveTextChannels)
+// Module 15200 (getActiveTextChannels)
 import { isTextChannel } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

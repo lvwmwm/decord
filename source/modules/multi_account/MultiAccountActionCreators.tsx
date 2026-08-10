@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11786
+// Function ID: 11787
 // Name: validateMultiAccountTokens
-// Dependencies: [5, 1218, 11781, 676, 3, 707, 709, 530, 698, 5827, 2]
+// Dependencies: [5, 1218, 11782, 676, 3, 707, 709, 530, 698, 5827, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11785 (validateMultiAccountTokens)
+// Module 11786 (validateMultiAccountTokens)
 import setSecondaryToken from "setSecondaryToken";
 import fetchFingerprint from "fetchFingerprint";
 import initialize from "initialize";

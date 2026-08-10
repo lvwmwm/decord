@@ -1,10 +1,10 @@
-// Module ID: 15737
-// Function ID: 15738
+// Module ID: 15745
+// Function ID: 15746
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1891, 3938, 1903, 4500, 21, 9033, 1236, 4303, 712, 9795, 589, 5779, 11575, 7102, 15548, 9663, 15735, 4494, 2]
+// Dependencies: [19, 17, 1891, 3938, 1903, 4500, 21, 9033, 1236, 4303, 712, 9796, 589, 5779, 11576, 7102, 15556, 9663, 15743, 4494, 2]
 // Exports: getChannelAccessibilityProps, renderChannelItem
 
-// Module 15737 (LaunchpadChannelIcon)
+// Module 15745 (LaunchpadChannelIcon)
 import "computeChannelName";
 import { View } from "FacepileGroupDMAvatar";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -21,7 +21,7 @@ const require = arg1;
 function LaunchpadChannelIcon(channel) {
   channel = channel.channel;
   const layout = channel.layout;
-  let obj = channel(9795);
+  let obj = channel(9796);
   const layoutStyles = obj.getLayoutStyles(layout);
   let obj1 = channel(589);
   const items = [createGuildRecordFromRust];
@@ -41,14 +41,14 @@ function LaunchpadChannelIcon(channel) {
     str = "md";
   }
   obj1[1] = str;
-  obj6 = channel(9795);
+  obj6 = channel(9796);
   let num = 32;
   if (tmp2Result.isLayoutCozy(layout)) {
     num = 48;
   }
   const obj2 = { children: null };
   obj1[2] = num;
-  items1[1] = tmp8(channel(11575).ChannelIcon, obj1);
+  items1[1] = tmp8(channel(11576).ChannelIcon, obj1);
   obj2[0] = items1;
   return tmp6(tmp7, obj2);
 }
@@ -137,13 +137,13 @@ export const renderChannelItem = function renderChannelItem(unread) {
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  let obj1 = require(9795) /* getLayoutStyles */;
+  let obj1 = require(9796) /* getLayoutStyles */;
   const layoutStyles = obj1.getLayoutStyles(layout);
-  let obj2 = require(15548) /* renderChannelWrapper */;
+  let obj2 = require(15556) /* renderChannelWrapper */;
   const children = [unreadBadge, , , ];
   obj = { style: null, children: null };
   obj = { position: "relative", borderRadius: importDefault(712).radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0 };
-  const merged = Object.assign(require(9795) /* getLayoutStyles */.makeSizeStyle(layoutStyles.icon.wrapper.size));
+  const merged = Object.assign(require(9796) /* getLayoutStyles */.makeSizeStyle(layoutStyles.icon.wrapper.size));
   const merged1 = Object.assign(layoutStyles.icon.margin);
   obj[0] = obj;
   if (channel.isGroupDM()) {
@@ -159,7 +159,7 @@ export const renderChannelItem = function renderChannelItem(unread) {
   }
   obj[1] = tmp10Result;
   children[1] = closure_8(View, obj);
-  let tmp5Result = tmp5(15735);
+  let tmp5Result = tmp5(15743);
   const obj3 = { layout, name: null, subtitle: null, unread: null, resolvedUnreadSetting: null, muted: null, lastMessageTimestampString: null, channel: null, locked: null, connected: null, live: null, mentionCount: null, mentionBadge: null, isSubscriptionGated: null, needSubscriptionToAccess: null };
   if (channelName == null) {
     tmp5Result = tmp5(4494);

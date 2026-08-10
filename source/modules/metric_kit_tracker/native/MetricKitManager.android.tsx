@@ -1,9 +1,9 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16502
+// Function ID: 16503
 // Name: _initialize
 // Dependencies: [5261, 2]
 
-// Module 16493 (_initialize)
+// Module 16502 (_initialize)
 import "initialize";
 
 class MetricKitManager extends tmp2 {

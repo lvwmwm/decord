@@ -1,9 +1,9 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14724
+// Function ID: 14725
 // Name: _handleUploadDebugLogSettingPress
-// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9869, 4002, 4259, 1236, 10446, 2]
+// Dependencies: [5, 17, 676, 21, 644, 705, 500, 9870, 4002, 4259, 1236, 10447, 2]
 
-// Module 14722 (_handleUploadDebugLogSettingPress)
+// Module 14724 (_handleUploadDebugLogSettingPress)
 import batchUpdates from "batchUpdates";
 import { ActivityIndicator } from "get ActivityIndicator";
 import { DebugLogCategory } from "ME";

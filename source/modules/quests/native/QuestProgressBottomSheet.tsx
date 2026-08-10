@@ -1,10 +1,10 @@
-// Module ID: 16100
-// Function ID: 16101
+// Module ID: 16109
+// Function ID: 16110
 // Name: contextMenuButton
-// Dependencies: [5, 19, 17, 10591, 7160, 5161, 9758, 21, 4303, 712, 589, 11175, 5164, 7751, 8605, 1236, 4849, 5734, 7183, 10749, 10459, 11172, 14362, 10595, 4271, 11165, 8923, 10481, 5397, 5268, 4725, 691, 11168, 9093, 14392, 4712, 4299, 4714, 14358, 2]
+// Dependencies: [5, 19, 17, 10592, 7160, 5161, 9759, 21, 4303, 712, 589, 11176, 5164, 7751, 8605, 1236, 4849, 5734, 7183, 10750, 10460, 11173, 14364, 10596, 4271, 11166, 8923, 10482, 5397, 5268, 4725, 691, 11169, 9093, 14394, 4712, 4299, 4714, 14360, 2]
 // Exports: default
 
-// Module 16100 (contextMenuButton)
+// Module 16109 (contextMenuButton)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import useEmbeddedActivityBackground from "useEmbeddedActivityBackground";
 import get_ActivityIndicator from "useGetOrFetchApplications";
@@ -46,13 +46,13 @@ function QuestProgressBottomSheet(quest) {
   if (getOrFetchApplication != null) {
     id = getOrFetchApplication.id;
   }
-  const url = claim(10749)({ applicationId: id, size: 600, names: ["embedded_cover"] }).url;
-  let tmpResult = tmp(10459);
+  const url = claim(10750)({ applicationId: id, size: 600, names: ["embedded_cover"] }).url;
+  let tmpResult = tmp(10460);
   const questTaskDetails = tmpResult.useQuestTaskDetails(quest);
   const intl = tmp(1236).intl;
   obj = { questName: quest.config.messages.questName };
-  const tmp7 = claim(10749);
-  tmpResult = tmp(11172);
+  const tmp7 = claim(10750);
+  tmpResult = tmp(11173);
   obj = { quest, taskDetails: questTaskDetails, location: QuestsExperimentLocations.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(5164).QuestContent.RUNNING_ACTIVITY };
   const userStatus = quest.userStatus;
   let completedAt;
@@ -71,10 +71,10 @@ function QuestProgressBottomSheet(quest) {
   }
   const formatToPlainStringResult = intl.formatToPlainString(quest(1236).t.EAYZAr, obj);
   const tmp11 = QuestsExperimentLocations;
-  const isQuestAccessSuspended = quest(10459).useIsQuestAccessSuspended();
-  const tmpResult1 = quest(10459);
+  const isQuestAccessSuspended = quest(10460).useIsQuestAccessSuspended();
+  const tmpResult1 = quest(10460);
   obj1 = { quest, questContent: tmp(5164).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(5164).QuestContent.RUNNING_ACTIVITY };
-  const questRewardClaimHandler = quest(14362).useQuestRewardClaimHandler(obj1);
+  const questRewardClaimHandler = quest(14364).useQuestRewardClaimHandler(obj1);
   ({ isClaiming, claim } = questRewardClaimHandler);
   const items = [claim];
   const items1 = [quest.id];
@@ -184,7 +184,7 @@ function QuestProgressBottomSheet(quest) {
   const obj7 = { quest, height: null, width: null };
   let num = 80;
   let num2 = 80;
-  tmp6Result = tmp6(11168);
+  tmp6Result = tmp6(11169);
   if (isScreenLandscape) {
     num2 = 56;
   }
@@ -203,10 +203,10 @@ function QuestProgressBottomSheet(quest) {
   obj9[4] = intl2.string(quest(1236).t.RDE0Sc);
   const items5 = [callback2(quest(7751).IconButton, obj9), ];
   const obj10 = { quest, showShareLink: true, location: tmp11.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: null, children: null };
-  const tmpResult2 = quest(14362);
+  const tmpResult2 = quest(14364);
   obj10[3] = quest(5164).QuestContent.RUNNING_ACTIVITY;
   obj10[4] = contextMenuButton;
-  items5[1] = callback2(claim(14392), obj10);
+  items5[1] = callback2(claim(14394), obj10);
   obj8[1] = items5;
   items3[3] = closure_12(closure_5, obj8);
   obj2[1] = items3;
@@ -252,7 +252,7 @@ function QuestProgressBottomSheet(quest) {
   let tmp6Result2;
   if (isQuestAccessSuspended) {
     if (tmp14) {
-      tmp6Result2 = tmp6(14358);
+      tmp6Result2 = tmp6(14360);
     }
   }
   const obj16 = { handleDisabled: true, startExpanded: true, children: null };
@@ -335,7 +335,7 @@ export default function QuestProgressBottomSheetConnected(questId) {
     obj[4] = function children() {
       return outer1_11(outer1_16, { quest: stateFromStores });
     };
-    tmp4 = callback2(tmp(11175).QuestContentImpressionTrackerNative, obj);
+    tmp4 = callback2(tmp(11176).QuestContentImpressionTrackerNative, obj);
   }
   return tmp4;
 };

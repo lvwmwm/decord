@@ -1,10 +1,10 @@
-// Module ID: 12598
-// Function ID: 12599
+// Module ID: 12600
+// Function ID: 12601
 // Name: createResolvingGuildInvite
-// Dependencies: [17, 1415, 4322, 1372, 1971, 1891, 4288, 3938, 1903, 10991, 676, 7196, 8053, 1236, 8045, 712, 4146, 4153, 11206, 11207, 1411, 1974, 8055, 12079, 12078, 10993, 10992, 12599, 1384, 7772, 1416, 1877, 4764, 9264, 4494, 2]
+// Dependencies: [17, 1415, 4322, 1372, 1971, 1891, 4288, 3938, 1903, 10992, 676, 7196, 8053, 1236, 8045, 712, 4146, 4153, 11207, 11208, 1411, 1974, 8055, 12080, 12079, 10994, 10993, 12601, 1384, 7772, 1416, 1877, 4764, 9264, 4494, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 12598 (createResolvingGuildInvite)
+// Module 12600 (createResolvingGuildInvite)
 import { Image } from "AccessibilityAnnouncer";
 import GuildNSFWContentLevel from "GuildNSFWContentLevel";
 import reset from "reset";
@@ -82,9 +82,9 @@ export const createExpiredGuildInvite = function createExpiredGuildInvite(author
   obj.titleText = intl5.string(tmp6(1236).t["Jhx/ud"]);
   tmp6Result = tmp6(4153);
   if (tmp6Result.isThemeDark(closure_2)) {
-    tmpResult = tmp(11206);
-  } else {
     tmpResult = tmp(11207);
+  } else {
+    tmpResult = tmp(11208);
   }
   obj.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   ({ thumbnailBackgroundColor: obj.thumbnailBackgroundColor, subtitleColor: obj.subtitleColor } = tmp3.colors);
@@ -140,7 +140,7 @@ export const createDisabledGuildInvite = function createDisabledGuildInvite(invi
   obj.guildIcon = tmp11;
   const tmp16 = tmp11;
   const tmpResult = importDefault(1974);
-  obj.thumbnailUrl = require(8055) /* frozen */.getAssetUriForEmbed(importDefault(12079));
+  obj.thumbnailUrl = require(8055) /* frozen */.getAssetUriForEmbed(importDefault(12080));
   let tmp17;
   if (null == tmp11) {
     let tmp18;
@@ -159,7 +159,7 @@ export const createErroredGuildInvite = function createErroredGuildInvite(code, 
   let colors;
   ({ colors, baseColors } = importDefault(8053)(closure_2));
   inviteError = inviteError.getInviteError(code);
-  let obj = require(12078) /* getDescriptiveInviteError */;
+  let obj = require(12079) /* getDescriptiveInviteError */;
   code = undefined;
   if (inviteError != null) {
     code = inviteError.code;
@@ -201,9 +201,9 @@ export const createErroredGuildInvite = function createErroredGuildInvite(code, 
   obj.titleText = title;
   tmp5Result = tmp5(4153);
   if (tmp5Result.isThemeDark(closure_2)) {
-    let tmpResult = tmp(11206);
+    let tmpResult = tmp(11207);
   } else {
-    tmpResult = tmp(11207);
+    tmpResult = tmp(11208);
   }
   obj.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   ({ thumbnailBackgroundColor: obj2.thumbnailBackgroundColor, subtitleColor: obj2.subtitleColor } = colors);
@@ -225,10 +225,10 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
   if (null != invite.guild) {
     guild = store.getGuild(invite.guild.id);
   }
-  let tmpResult = tmp(10993);
+  let tmpResult = tmp(10994);
   const items = [trackCommunicationDisabled];
   const tmp3 = importDefault(8053)(closure_2);
-  const channel = tmp(10992)(invite).channel;
+  const channel = tmp(10993)(invite).channel;
   const tmp7 = null != channel && channel.isGuildVocal();
   let flag;
   if (channel != null) {
@@ -248,7 +248,7 @@ export const createGuildInvite = function createGuildInvite(invite, isOwnInvite,
     guild = obj1.fromInviteGuild(invite.guild);
     flag2 = false;
   }
-  let obj2 = require(12599) /* getHeaderTextForInvite */;
+  let obj2 = require(12601) /* getHeaderTextForInvite */;
   let obj = { isVoiceChannel: tmp7, isOwnInvite, isHubGuild: null, isStream: null, isStage: null, isGuest: null };
   let flag3;
   if (guild != null) {

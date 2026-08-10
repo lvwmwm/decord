@@ -1,7 +1,7 @@
 // Module ID: 4287
 // Function ID: 4288
 // Name: getPathsFromURL
-// Dependencies: [4288, 676, 678, 4291, 1469, 4292, 4293, 8096, 4734, 4219, 8203, 4289, 7195, 10509, 8902, 7150, 5173, 2]
+// Dependencies: [4288, 676, 678, 4291, 1469, 4292, 4293, 8096, 4734, 4219, 8203, 4289, 7195, 10510, 8902, 7150, 5173, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, remainingPathFromDiscordHostMatch
 
 // Module 4287 (getPathsFromURL)

@@ -1,10 +1,10 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10910
+// Function ID: 10911
 // Name: HideStageChannelCallIcon
-// Dependencies: [19, 17, 4316, 1372, 7097, 1891, 1377, 10781, 676, 21, 4303, 5267, 4151, 712, 698, 4498, 7748, 4509, 4513, 589, 10801, 10910, 1236, 4497, 1297, 4494, 5148, 5142, 4725, 4299, 8013, 8006, 10911, 10912, 7774, 9038, 9721, 9720, 9065, 10783, 10784, 10785, 10788, 10913, 10914, 2]
+// Dependencies: [19, 17, 4316, 1372, 7097, 1891, 1377, 10782, 676, 21, 4303, 5267, 4151, 712, 698, 4498, 7748, 4509, 4513, 589, 10802, 10911, 1236, 4497, 1297, 4494, 5148, 5142, 4725, 4299, 8013, 8006, 10912, 10913, 7774, 9038, 9722, 9721, 9065, 10784, 10785, 10786, 10789, 10914, 10915, 2]
 // Exports: HideChannelCallButton, closeStageModal
 
-// Module 10909 (HideStageChannelCallIcon)
+// Module 10910 (HideStageChannelCallIcon)
 import { View } from "module_4509";
 import getParticipants from "getParticipants";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -162,11 +162,11 @@ class StageSettingsButton {
 class StageInviteButton {
   constructor(arg0) {
     channelId = global.channelId;
-    f86252 = undefined;
-    f86253 = undefined;
+    f86269 = undefined;
+    f86270 = undefined;
     useActiveEvent = undefined;
     tmp2 = channelId;
-    tmp3 = f86253;
+    tmp3 = f86270;
     tmp = jsxs();
     obj = require("initialize");
     items = [];
@@ -174,7 +174,7 @@ class StageInviteButton {
     items1 = [];
     items1[0] = channelId;
     stateFromStores = obj.useStateFromStores(items, () => outer1_5.getChannel(channelId), items1);
-    f86252 = stateFromStores;
+    f86269 = stateFromStores;
     obj2 = require("initialize");
     items2 = [];
     items2[0] = View;
@@ -190,7 +190,7 @@ class StageInviteButton {
       }
       return outer1_7.getGuild(guild_id);
     }, items3);
-    f86253 = stateFromStores1;
+    f86270 = stateFromStores1;
     obj3 = require("useGuildEvents");
     useActiveEvent = obj3.useActiveEvent(channelId);
     tmp6 = null;
@@ -198,7 +198,7 @@ class StageInviteButton {
       tmp6 = null;
       if (null != stateFromStores1) {
         tmp7 = jsx;
-        tmp8 = f86252;
+        tmp8 = f86269;
         obj = { accessibilityLabel: null, containerStyle: null, source: null, IconComponent: null, onPress: null, disableBackground: true };
         tmp9 = require("ChannelCallNavigatorIcon");
         intl = require("getSystemLocale").intl;
@@ -292,7 +292,7 @@ const memoResult = importAllResult.memo((onOpenRTCDebugOverlay) => {
   let channel;
   let fullscreenStream;
   ({ channel, fullscreenStream } = onOpenRTCDebugOverlay);
-  const tmp3 = importDefault(10913)(channel.id);
+  const tmp3 = importDefault(10914)(channel.id);
   let speaker;
   if (tmp3 != null) {
     speaker = tmp3.speaker;
@@ -308,10 +308,10 @@ const memoResult = importAllResult.memo((onOpenRTCDebugOverlay) => {
   if (fullscreenStream) {
     obj = { channel: null };
     obj[0] = channel;
-    fullscreenStream = tmp7(require(10914) /* CameraButton */.GridButton, obj);
+    fullscreenStream = tmp7(require(10915) /* CameraButton */.GridButton, obj);
   }
   items[3] = fullscreenStream;
-  items[4] = callback(require(10914) /* CameraButton */.CameraButton, {});
+  items[4] = callback(require(10915) /* CameraButton */.CameraButton, {});
   items[5] = callback(StageInviteButton, { channelId: channel.id });
   items[6] = callback(StageSettingsButton, { channelId: channel.id, onOpenRTCDebugOverlay: onOpenRTCDebugOverlay.onOpenRTCDebugOverlay });
   obj[2] = items;
@@ -340,7 +340,7 @@ export const HideChannelCallButton = function HideChannelCallButton(channel) {
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   obj = { source: null, accessibilityLabel: null, onPress: null, containerStyle: null, disableBackground: true, children: null };
   const tmp = callback2();
-  obj[0] = importDefault(10910);
+  obj[0] = importDefault(10911);
   const intl = channel(1236).intl;
   obj[1] = intl.string(channel(1236).t.cpT0Cq);
   obj[2] = function onPress() {
@@ -358,7 +358,7 @@ export const HideChannelCallButton = function HideChannelCallButton(channel) {
   };
   obj[3] = tmp.iconContainer;
   obj[5] = callback(channel(1297).MaskedBadge, { value: stateFromStores, maskStyle: {} });
-  return callback(importDefault(10801), obj);
+  return callback(importDefault(10802), obj);
 };
 export { StageSettingsButton };
 export { StageInviteButton };

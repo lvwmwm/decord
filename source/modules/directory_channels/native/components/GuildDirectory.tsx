@@ -1,10 +1,10 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12023
+// Function ID: 12024
 // Name: keyExtractor
-// Dependencies: [19, 17, 1891, 4315, 11683, 11676, 11681, 676, 21, 4303, 712, 12023, 12024, 11706, 11707, 4299, 12025, 1236, 4714, 6006, 11294, 12026, 11678, 4846, 11679, 12107, 589, 1609, 6934, 9, 5253, 4135, 11687, 698, 12108, 11671, 12112, 2]
+// Dependencies: [19, 17, 1891, 4315, 11684, 11677, 11682, 676, 21, 4303, 712, 12024, 12025, 11707, 11708, 4299, 12026, 1236, 4714, 6006, 11295, 12027, 11679, 4846, 11680, 12108, 589, 1609, 6934, 9, 5253, 4135, 11688, 698, 12109, 11672, 12113, 2]
 // Exports: default
 
-// Module 12022 (keyExtractor)
+// Module 12023 (keyExtractor)
 import MagnifyingGlassIcon from "MagnifyingGlassIcon";
 import get_ActivityIndicator from "getSystemLocale";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -36,7 +36,7 @@ function keyExtractor(type) {
   if (type != null) {
     type = type.type;
   }
-  if (type === require(12024) /* RowType */.RowType.ENTRY) {
+  if (type === require(12025) /* RowType */.RowType.ENTRY) {
     let guildId = type.entry.guildId;
   } else {
     let type1;
@@ -54,16 +54,16 @@ function renderItem(item) {
   if (item != null) {
     type = item.type;
   }
-  if (require(12024) /* RowType */.RowType.HEADER === type) {
+  if (require(12025) /* RowType */.RowType.HEADER === type) {
     let obj = { children: null };
     obj[0] = item.header;
     return callback(GuildDirectoryHeaderRowItem, obj);
-  } else if (tmp2(12024).RowType.ENTRY === type) {
+  } else if (tmp2(12025).RowType.ENTRY === type) {
     obj = { entry: null };
     obj[0] = item.entry;
-    return callback(importDefault(11706), obj);
+    return callback(importDefault(11707), obj);
   } else {
-    return callback(importDefault(11707), {});
+    return callback(importDefault(11708), {});
   }
   tmp2 = require;
 }
@@ -78,7 +78,7 @@ function GuildDirectoryHeader(guild) {
   let obj = { style: tmp.headerWrapper, children: null };
   obj = { source: null, style: null };
   const hasItem = features.has(constants.HUB);
-  obj[0] = require(12025) /* registerAsset */;
+  obj[0] = require(12026) /* registerAsset */;
   obj[1] = tmp.backgroundImage;
   const items = [callback(closure_6, obj), ];
   obj = { style: tmp.textWrapper, children: null };
@@ -97,7 +97,7 @@ function GuildDirectoryHeader(guild) {
   obj3[2] = intl3.string(require(1236) /* getSystemLocale */.t.nL2wKD);
   obj3[3] = guild.onPressSearch;
   items1[2] = callback(require(4714) /* Button */.Button, obj3);
-  items1[3] = callback(require(11294) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "hub_directory" });
+  items1[3] = callback(require(11295) /* TTIFirstContentfulPaint */.TTIFirstContentfulPaint, { label: "hub_directory" });
   obj[1] = items1;
   items[1] = callback2(closure_5, obj);
   obj[1] = items;
@@ -106,7 +106,7 @@ function GuildDirectoryHeader(guild) {
   if (hasItem) {
     const obj4 = { guild: null, onDirectoryPage: true };
     obj4[0] = guild;
-    tmp5Result = callback(importDefault(12026), obj4);
+    tmp5Result = callback(importDefault(12027), obj4);
   }
   children[1] = tmp5Result;
   return callback2(closure_21, { children });
@@ -116,7 +116,7 @@ function GuildDirectoryFooter(hideFooter) {
   let require;
   ({ guild: require, channel } = hideFooter);
   const tmp = callback3();
-  let obj = require(11678) /* useCanManageGuildDirectoryEntry */;
+  let obj = require(11679) /* useCanManageGuildDirectoryEntry */;
   let tmp4 = null;
   if (obj.useCanCreateOrAddGuildInDirectory(channel)) {
     tmp4 = null;
@@ -133,7 +133,7 @@ function GuildDirectoryFooter(hideFooter) {
       obj[0] = tmp.footer;
       const obj1 = { style: null, children: null };
       obj1[0] = tmp.addIcon;
-      obj1[1] = callback(tmp2(12107).PlusMediumIcon, {});
+      obj1[1] = callback(tmp2(12108).PlusMediumIcon, {});
       const items = [callback(closure_5, obj1), ];
       const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
       const intl2 = tmp2(1236).intl;
@@ -196,9 +196,9 @@ export default function GuildDirectory(channel) {
   let obj1 = React;
   dependencyMap = React.useRef(null);
   let bottom = guildId(1609)().bottom;
-  let obj2 = channel(12023);
+  let obj2 = channel(12024);
   const hubProgressBarCompletedSteps = obj2.useHubProgressBarCompletedSteps(onPressSearch);
-  let obj3 = channel(12023);
+  let obj3 = channel(12024);
   if (null == obj3.getNextHubProgressStep(hubProgressBarCompletedSteps)) {
     let sum = _location;
   } else {
@@ -336,8 +336,8 @@ export default function GuildDirectory(channel) {
         obj2 = { guild: null, channel: null };
         obj2[0] = onPressSearch;
         obj2[1] = channel;
-        items9[1] = callback(guildId(12108), obj2);
-        items9[2] = callback(tmp2(11294).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
+        items9[1] = callback(guildId(12109), obj2);
+        items9[2] = callback(tmp2(11295).TTIFirstContentfulPaint, { label: "guild_directory_empty" });
         obj[1] = items9;
         let tmp23 = callback2(currentCategoryId, obj);
       }

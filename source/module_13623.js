@@ -1,6 +1,15 @@
 // Module ID: 13623
 // Function ID: 13624
-// Dependencies: []
+// Dependencies: [13621]
 
 // Module 13623
-arg5.f = Object.getOwnPropertySymbols;
+
+export default (arg0, arg1) => {
+  const tmp = require(13621)(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
+};

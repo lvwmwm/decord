@@ -1,10 +1,10 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15805
+// Function ID: 15806
 // Name: getSearchQueryChannelIds
-// Dependencies: [1971, 3938, 1903, 11710, 8397, 676, 1236, 10241, 4247, 10537, 10011, 9790, 7714, 4815, 7709, 7706, 11223, 10541, 15798, 11711, 4146, 2]
+// Dependencies: [1971, 3938, 1903, 11711, 8397, 676, 1236, 10242, 4247, 10538, 10012, 9791, 7714, 4815, 7709, 7706, 11224, 10542, 15806, 11712, 4146, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 15797 (getSearchQueryChannelIds)
+// Module 15805 (getSearchQueryChannelIds)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -34,7 +34,7 @@ export const getSearchQueryUserIds = function getSearchQueryUserIds(items) {
 export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.nrpA5E) === text) {
-    return importDefault(10241);
+    return importDefault(10242);
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.ZNR2fi) === text) {
@@ -42,15 +42,15 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
     } else {
       const intl4 = tmp(1236).intl;
       if (intl4.string(tmp(1236).t["20uQR3"]) === text) {
-        return tmp(10537).EmbedIcon;
+        return tmp(10538).EmbedIcon;
       } else {
         const intl5 = tmp(1236).intl;
         if (intl5.string(tmp(1236).t.L4lxyE) === text) {
-          return tmp(10011).PollsIcon;
+          return tmp(10012).PollsIcon;
         } else {
           const intl6 = tmp(1236).intl;
           if (intl6.string(tmp(1236).t["AV/v6i"]) === text) {
-            return tmp(9790).AttachmentIcon;
+            return tmp(9791).AttachmentIcon;
           } else {
             const intl7 = tmp(1236).intl;
             if (intl7.string(tmp(1236).t.XM9XGP) === text) {
@@ -80,21 +80,21 @@ export const getSearchFilterHasIcon = function getSearchFilterHasIcon(text) {
 export const getSearchFilterAuthorTypeIcon = function getSearchFilterAuthorTypeIcon(text) {
   const intl = require(1236) /* getSystemLocale */.intl;
   if (intl.string(require(1236) /* getSystemLocale */.t.tPZo4p) === text) {
-    return tmp(11223).UserIcon;
+    return tmp(11224).UserIcon;
   } else {
     const intl3 = tmp(1236).intl;
     if (intl3.string(tmp(1236).t.JL7sRS) === text) {
-      return tmp(10541).RobotIcon;
+      return tmp(10542).RobotIcon;
     } else {
       const intl2 = tmp(1236).intl;
       if (intl2.string(tmp(1236).t.WjkIKU) === text) {
-        return tmp(15798).WebhookIcon;
+        return tmp(15806).WebhookIcon;
       }
     }
   }
 };
 export const toSearchListUserItem = function toSearchListUserItem(items, user, callback2) {
-  let obj = require(11711) /* SearchTokenTypes */;
+  let obj = require(11712) /* SearchTokenTypes */;
   const guildIdFromSearchContext = obj.getGuildIdFromSearchContext(items);
   if (null == user) {
     return null;

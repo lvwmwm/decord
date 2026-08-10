@@ -1,9 +1,9 @@
-// Module ID: 12984
-// Function ID: 12985
+// Module ID: 12986
+// Function ID: 12987
 // Name: resetStates
 // Dependencies: [589, 5232, 709, 2]
 
-// Module 12984 (resetStates)
+// Module 12986 (resetStates)
 import { Store } from "initialize";
 
 function resetStates() {

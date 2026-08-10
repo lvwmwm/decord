@@ -1,10 +1,10 @@
-// Module ID: 16397
-// Function ID: 16398
+// Module ID: 16406
+// Function ID: 16407
 // Name: experiment
 // Dependencies: [4218, 4215, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 16397 (experiment)
+// Module 16406 (experiment)
 import createExperiment from "createExperiment";
 
 const items = [{ id: 1, label: "Show past VC activity messages in system channel", config: { enabled: true } }];

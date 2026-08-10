@@ -1,7 +1,7 @@
 // Module ID: 1211
 // Function ID: 1212
 // Name: _updateZoomedInExport
-// Dependencies: [1212, 1903, 6876, 676, 4482, 13455, 7135, 709, 13459, 2]
+// Dependencies: [1212, 1903, 6876, 676, 4482, 13457, 7135, 709, 13461, 2]
 
 // Module 1211 (_updateZoomedInExport)
 import initialize from "initialize";
@@ -20,9 +20,9 @@ class TelemetryRingLifecycleImpl extends tmp2 {
       const result = applyArgumentsResult._updateZoomedInExport();
     };
     applyArgumentsResult._handleLogout = function _handleLogout() {
-      applyArgumentsResult(13459).clear();
-      const obj = applyArgumentsResult(13459);
-      applyArgumentsResult(13455).reset();
+      applyArgumentsResult(13461).clear();
+      const obj = applyArgumentsResult(13461);
+      applyArgumentsResult(13457).reset();
     };
     return applyArgumentsResult;
   }
@@ -32,15 +32,15 @@ prototype["_updateZoomedInExport"] = function _updateZoomedInExport() {
   const state = getState.getState();
   let shouldRunResult = state === AppStates.ACTIVE;
   if (shouldRunResult) {
-    shouldRunResult = importDefault(13455).shouldRun();
-    const obj = importDefault(13455);
+    shouldRunResult = importDefault(13457).shouldRun();
+    const obj = importDefault(13457);
   }
   const result = importDefault(7135).setShouldCollectHermesInstrumentedStats(shouldRunResult);
   if (state === AppStates.ACTIVE) {
-    let tmp6Result = tmp6(13455);
+    let tmp6Result = tmp6(13457);
     tmp6Result.start();
   } else {
-    tmp6Result = tmp6(13455);
+    tmp6Result = tmp6(13457);
     tmp6Result.stop();
   }
 };
@@ -57,9 +57,9 @@ prototype["_initialize"] = function _initialize() {
       outer1_2.removeChangeListener(self._handleEligibilityChange);
     };
     const obj = self(709);
-    self(13455).initialize();
+    self(13457).initialize();
     const result = self._updateZoomedInExport();
-    const obj2 = self(13455);
+    const obj2 = self(13457);
   }
 };
 prototype["_terminate"] = function _terminate() {
@@ -71,7 +71,7 @@ prototype["_terminate"] = function _terminate() {
     const result = self._experimentUnsubscribe();
     self._experimentUnsubscribe = null;
   }
-  let tmpResult = tmp(13455);
+  let tmpResult = tmp(13457);
   tmpResult.stop();
   tmpResult = tmp(7135);
   const result1 = tmpResult.setShouldCollectHermesInstrumentedStats(false);

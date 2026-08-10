@@ -1,10 +1,10 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 9757
+// Function ID: 9758
 // Name: shouldNotifyBase
-// Dependencies: [1371, 3930, 5841, 3931, 4514, 1376, 1372, 1891, 4375, 3938, 1960, 4124, 4996, 4499, 1366, 1903, 9757, 676, 9758, 1235, 4517, 3974, 1384, 9759, 9760, 4537, 4159, 9761, 7144, 4494, 1236, 8319, 4493, 5890, 8093, 3, 5918, 4146, 1935, 7142, 9762, 589, 2]
+// Dependencies: [1371, 3930, 5841, 3931, 4514, 1376, 1372, 1891, 4375, 3938, 1960, 4124, 4996, 4499, 1366, 1903, 9758, 676, 9759, 1235, 4517, 3974, 1384, 9760, 9761, 4537, 4159, 9762, 7144, 4494, 1236, 8319, 4493, 5890, 8093, 3, 5918, 4146, 1935, 7142, 9763, 589, 2]
 // Exports: allowInAppNotifications, makeTextChatNotification, shouldIncludeSelectedChannel, shouldNotify, shouldNotifyForForumThreadCreation, shouldNotifyForReaction, shouldNotifyForSelectedChannel, useAllowInAppNotifications
 
-// Module 9756 (shouldNotifyBase)
+// Module 9757 (shouldNotifyBase)
 import participantFromServer from "participantFromServer";
 import initialize from "initialize";
 import processChannel from "processChannel";
@@ -190,7 +190,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
               if (obj5.isChannelCurrentlyVisible(channel1.id)) {
                 return false;
               }
-              obj5 = require(9759) /* isChannelCurrentlyVisible */;
+              obj5 = require(9760) /* isChannelCurrentlyVisible */;
             }
             if (upsertRelationship.isBlockedOrIgnoredForMessage(message)) {
               return false;
@@ -218,7 +218,7 @@ export const shouldNotify = function shouldNotify(message, channel_id, result) {
                 if (muted.isMuted(channel1.id)) {
                   return false;
                 } else {
-                  const threadNotificationSetting = require(9760) /* computeThreadNotificationSetting */.computeThreadNotificationSetting(channel1);
+                  const threadNotificationSetting = require(9761) /* computeThreadNotificationSetting */.computeThreadNotificationSetting(channel1);
                   let tmp39 = threadNotificationSetting !== ThreadMemberFlags.NO_MESSAGES;
                   if (tmp39) {
                     result = threadNotificationSetting === ThreadMemberFlags.ALL_MESSAGES;
@@ -342,8 +342,8 @@ export const shouldNotifyForForumThreadCreation = function shouldNotifyForForumT
       if (!result) {
         let result1 = !flag;
         if (!flag) {
-          result1 = require(9759) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel2.id);
-          const obj3 = require(9759) /* isChannelCurrentlyVisible */;
+          result1 = require(9760) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel2.id);
+          const obj3 = require(9760) /* isChannelCurrentlyVisible */;
         }
         let newForumThreadsCreated = !result1;
         if (!result1) {
@@ -382,8 +382,8 @@ export const shouldNotifyForReaction = function shouldNotifyForReaction(arg0) {
       if (tmp11) {
         let result = !includeSelectedChannel;
         if (!includeSelectedChannel) {
-          result = require(9759) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel.id);
-          const obj = require(9759) /* isChannelCurrentlyVisible */;
+          result = require(9760) /* isChannelCurrentlyVisible */.isChannelCurrentlyVisible(channel.id);
+          const obj = require(9760) /* isChannelCurrentlyVisible */;
         }
         tmp11 = !result;
       }
@@ -401,8 +401,8 @@ export const shouldIncludeSelectedChannel = function shouldIncludeSelectedChanne
       const rootNavigationRef = require(4159) /* getRootNavigationRef */.getRootNavigationRef();
       let tmp5 = null == rootNavigationRef || !rootNavigationRef.isReady();
       if (!tmp5) {
-        tmp5 = !tmp3(9761).isChannelFocused();
-        const tmp3Result = tmp3(9761);
+        tmp5 = !tmp3(9762).isChannelFocused();
+        const tmp3Result = tmp3(9762);
       }
       flag = tmp5;
       const obj3 = require(4159) /* getRootNavigationRef */;
@@ -671,8 +671,8 @@ export const allowInAppNotifications = function allowInAppNotifications() {
 export const useAllowInAppNotifications = function useAllowInAppNotifications() {
   const ShowInAppNotifications = require(3974) /* explicitContentFromProto */.ShowInAppNotifications;
   const setting = ShowInAppNotifications.useSetting();
-  const focusModeEnabled = require(9762) /* useFocusModeEnabled */.useFocusModeEnabled();
-  const obj = require(9762) /* useFocusModeEnabled */;
+  const focusModeEnabled = require(9763) /* useFocusModeEnabled */.useFocusModeEnabled();
+  const obj = require(9763) /* useFocusModeEnabled */;
   const items = [handleRequiredAction];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => handleRequiredAction.hasAction());
   let tmp4 = !stateFromStores;

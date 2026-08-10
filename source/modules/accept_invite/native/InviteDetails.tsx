@@ -1,10 +1,10 @@
-// Module ID: 12072
-// Function ID: 12073
+// Module ID: 12073
+// Function ID: 12074
 // Name: shouldShowInviter
-// Dependencies: [32, 19, 17, 11781, 1911, 1903, 676, 12073, 21, 4303, 712, 5158, 7195, 1297, 12015, 4146, 1236, 8438, 4299, 1416, 5268, 698, 589, 12074, 8957, 4714, 5150, 2]
+// Dependencies: [32, 19, 17, 11782, 1911, 1903, 676, 12074, 21, 4303, 712, 5158, 7195, 1297, 12016, 4146, 1236, 8438, 4299, 1416, 5268, 698, 589, 12075, 8957, 4714, 5150, 2]
 // Exports: default
 
-// Module 12072 (shouldShowInviter)
+// Module 12073 (shouldShowInviter)
 import _slicedToArray from "_slicedToArray";
 import getAvatarURL from "getAvatarURL";
 import { View } from "getGuildBadgeSource";
@@ -67,7 +67,7 @@ function InviteDestinationIcon(invite) {
     if (null != invite.inviter) {
       let tmp2Result = null;
       if (null != invite.inviter) {
-        obj = { avatarStyle: null, user: null, guildId: "Array", size: false };
+        obj = { avatarStyle: null, user: null, guildId: "Array", size: 0.3 };
         obj[0] = tmp.avatar;
         const tmp14 = new createdAt(invite.inviter);
         obj[1] = tmp14;
@@ -83,9 +83,9 @@ function InviteDestinationIcon(invite) {
     obj = { style: null, guild: null, size: null, textScale: 2 };
     obj[0] = tmp.avatar;
     obj[1] = invite.guild;
-    obj[2] = importDefault(12015).Sizes.LARGE;
-    tmp2Result = tmp2(importDefault(12015), obj);
-    const tmp9 = importDefault(12015);
+    obj[2] = importDefault(12016).Sizes.LARGE;
+    tmp2Result = tmp2(importDefault(12016), obj);
+    const tmp9 = importDefault(12016);
   }
 }
 function InviteHeader(invite) {
@@ -371,7 +371,7 @@ export default function InviteDetails(invite) {
   obj2 = {};
   const merged3 = Object.assign(obj);
   items2[3] = callback2(InviteMemberCounts, obj2);
-  items2[4] = callback2(importDefault(12074), { invite, style: tmp.rolesList });
+  items2[4] = callback2(importDefault(12075), { invite, style: tmp.rolesList });
   let tmp8Result = null != guild_scheduled_event;
   if (tmp8Result) {
     const obj4 = { style: null, children: null };

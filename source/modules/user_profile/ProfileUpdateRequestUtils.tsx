@@ -1,10 +1,10 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10133
+// Function ID: 10134
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: [8276, 10133, 1930, 2]
+// Dependencies: [8276, 10134, 1930, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 10132 (getProfileChangesForUpdateRequest)
+// Module 10133 (getProfileChangesForUpdateRequest)
 const result = require("CollectiblesItemType").fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
 export const getProfileChangesForUpdateRequest = function getProfileChangesForUpdateRequest(outer1_0, id) {
@@ -43,7 +43,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
     }
     return obj;
   }
-  const tmp4 = importDefault(10133)(id);
+  const tmp4 = importDefault(10134)(id);
   let collectibles;
   if (tmp4 != null) {
     collectibles = tmp4.collectibles;

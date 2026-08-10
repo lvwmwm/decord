@@ -1,8 +1,8 @@
-// Module ID: 15036
-// Function ID: 15037
-// Dependencies: [32, 19, 17, 4295, 1960, 8215, 21, 500, 4039, 15037, 8216, 38, 4293, 8201, 589, 3974, 11077, 11058, 2]
+// Module ID: 15038
+// Function ID: 15039
+// Dependencies: [32, 19, 17, 4295, 1960, 8215, 21, 500, 4039, 15039, 8216, 38, 4293, 8201, 589, 3974, 11078, 11059, 2]
 
-// Module 15036
+// Module 15038
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,13 +49,13 @@ if (!set.isAndroid()) {
     obj[2] = function onTapLink(nativeEvent) {
       const result = channelId(outer1_2[16]).handleMessagesTapURLLink(nativeEvent.nativeEvent.data, channelId);
     };
-    obj[3] = channelId(11058).contentHandlers.onLongPressLink;
-    obj[4] = channelId(11058).contentHandlers.onTapAttachmentLink;
-    obj[5] = channelId(11058).contentHandlers.onLongPressAttachmentLink;
-    obj[6] = channelId(11058).contentHandlers.onTapMention;
-    obj[7] = channelId(11058).contentHandlers.onTapTimestamp;
-    obj[8] = channelId(11058).contentHandlers.onTapInlineCode;
-    obj[9] = channelId(11058).contentHandlers.onTapEmoji;
+    obj[3] = channelId(11059).contentHandlers.onLongPressLink;
+    obj[4] = channelId(11059).contentHandlers.onTapAttachmentLink;
+    obj[5] = channelId(11059).contentHandlers.onLongPressAttachmentLink;
+    obj[6] = channelId(11059).contentHandlers.onTapMention;
+    obj[7] = channelId(11059).contentHandlers.onTapTimestamp;
+    obj[8] = channelId(11059).contentHandlers.onTapInlineCode;
+    obj[9] = channelId(11059).contentHandlers.onTapEmoji;
     obj[10] = { width: "100%" };
     return <closure_8 model={null} markdownTextRenderOptions={null} onTapLink={null} onLongPressLink={null} onTapAttachmentLink={null} onLongPressAttachmentLink={null} onTapMention={null} onTapTimestamp={null} onTapInlineCode={null} onTapEmoji={null} style={null} />;
   };

@@ -1,9 +1,9 @@
-// Module ID: 15205
-// Function ID: 15206
+// Module ID: 15207
+// Function ID: 15208
 // Name: IconOrPreview
-// Dependencies: [19, 17, 1377, 1903, 14528, 676, 505, 21, 15206, 15207, 4303, 712, 5728, 589, 5734, 698, 10971, 1988, 8783, 15201, 4493, 15208, 14529, 15202, 1297, 15211, 9654, 15212, 9649, 12275, 9305, 4825, 8762, 1236, 4151, 10939, 5268, 15203, 15214, 10942, 8241, 15216, 8304, 2]
+// Dependencies: [19, 17, 1377, 1903, 14530, 676, 505, 21, 15208, 15209, 4303, 712, 5728, 589, 5734, 698, 10972, 1988, 8783, 15203, 4493, 15210, 14531, 15204, 1297, 15213, 9654, 15214, 9649, 12277, 9305, 4825, 8762, 1236, 4151, 10940, 5268, 15205, 15216, 10943, 8241, 15218, 8304, 2]
 
-// Module 15205 (IconOrPreview)
+// Module 15207 (IconOrPreview)
 import importAllResult from "HappeningNowCardPlaceholder";
 import get_ActivityIndicator from "asyncRequireImpl";
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
@@ -51,7 +51,7 @@ function IconOrPreview(arg0) {
   if (stream != null) {
     ownerId = stream.ownerId;
   }
-  const previewUrl = importDefault(10942)(guildId, channelId, ownerId).previewUrl;
+  const previewUrl = importDefault(10943)(guildId, channelId, ownerId).previewUrl;
   let assetImage;
   if (null != previewUrl) {
     assetImage = previewUrl;
@@ -133,7 +133,7 @@ function IconOrPreview(arg0) {
       obj[0] = memo;
       obj = { stream: null, children: null, style: null, ctaText: null, disabled: true };
       obj[0] = stream;
-      let tmp2Result = tmp2(10939);
+      let tmp2Result = tmp2(10940);
       obj1 = { style: null, textStyle: null, allowFontScaling: false };
       ({ cardImageStreamLive: obj13[0], stageStreamLiveText: obj13[1] } = tmp);
       obj[1] = callback(tmp28(1297).LiveTag, obj1);
@@ -154,7 +154,7 @@ function IconOrPreview(arg0) {
         if (type === constants.LISTENING) {
           const intl3 = tmp28(1236).intl;
           stringResult = intl3.string(tmp28(1236).t.kUEnxN);
-        } else if (tmp2(12275)(activity)) {
+        } else if (tmp2(12277)(activity)) {
           const intl2 = tmp28(1236).intl;
           stringResult = intl2.string(tmp28(1236).t.T0uYK9);
         } else {
@@ -191,7 +191,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       tmp2Result = items[userId % items.length];
     } else {
-      tmp2Result = tmp2(15216);
+      tmp2Result = tmp2(15218);
     }
   }
 }
@@ -199,7 +199,7 @@ function StageStreamAvatars(stage) {
   let audienceCount;
   let audienceFriends;
   stage = stage.stage;
-  let obj = require(15203) /* useLiveStageData */;
+  let obj = require(15205) /* useLiveStageData */;
   const liveStageData = obj.useLiveStageData(stage);
   obj = { style: callback2().avatarStackContainer, children: null };
   ({ audienceCount, audienceFriends } = liveStageData);
@@ -210,7 +210,7 @@ function StageStreamAvatars(stage) {
   obj[1] = stage.guild_id;
   obj[2] = audienceCount + 1;
   obj[4] = require(1297) /* Button */.AvatarSizes.SIZE_16;
-  obj[1] = callback(require(15214) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
+  obj[1] = callback(require(15216) /* HappeningNowAvatarStack */.HappeningNowAvatarStack, obj);
   return callback(closure_4, obj);
 }
 let c3 = importAllResult;

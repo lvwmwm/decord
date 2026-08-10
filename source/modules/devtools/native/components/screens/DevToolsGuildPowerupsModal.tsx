@@ -1,8 +1,8 @@
-// Module ID: 15021
-// Function ID: 15022
-// Dependencies: [19, 21, 8570, 5783, 8382, 9678, 15022, 2]
+// Module ID: 15023
+// Function ID: 15024
+// Dependencies: [19, 21, 8570, 5783, 8382, 9678, 15024, 2]
 
-// Module 15021
+// Module 15023
 import { jsx } from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
 import importAllResult from "noop";
@@ -37,15 +37,15 @@ const memoResult = require("noop").memo(function DevToolsGuildPowerupsModal() {
     options() {
       return { title: "Guild Powerups" };
     },
-    component: importDefault(15022)
+    component: importDefault(15024)
   };
   ({ Navigator, Screen } = createNativeStackNavigator);
   obj[1] = <Screen name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(15022)} />;
+  }} component={importDefault(15024)} />;
   return <Navigator name="DevToolsGuildPowerups" options={function options() {
     return { title: "Guild Powerups" };
-  }} component={importDefault(15022)} />;
+  }} component={importDefault(15024)} />;
 });
 const result = require("createNativeStackNavigator").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsGuildPowerupsModal.tsx");
 

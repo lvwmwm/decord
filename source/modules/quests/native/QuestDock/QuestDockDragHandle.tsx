@@ -1,9 +1,9 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 14429
+// Function ID: 14430
 // Name: QuestDockMode
-// Dependencies: [19, 17, 5161, 14335, 21, 4303, 14336, 14337, 4036, 1348, 4713, 8009, 14334, 5712, 1236, 2]
+// Dependencies: [19, 17, 5161, 14337, 21, 4303, 14338, 14339, 4036, 1348, 4713, 8009, 14336, 5712, 1236, 2]
 
-// Module 14427 (QuestDockMode)
+// Module 14429 (QuestDockMode)
 import importAllResult from "noop";
 import { StyleSheet } from "get ActivityIndicator";
 import { QuestDockMode } from "QuestsExperimentLocations";
@@ -50,11 +50,11 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(arg0) {
   let variant;
   ({ isExpanded, variant } = arg0);
   const tmp = callback();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14336).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(14338).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   const dependencyMap = tmp5;
-  let obj = activeQuestDockMode(14337);
+  let obj = activeQuestDockMode(14339);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
   let obj1 = activeQuestDockMode(4036);
   const fn = function n() {
@@ -151,7 +151,7 @@ const memoResult = importAllResult.memo(function QuestDockDragHandle(arg0) {
   obj4 = { style: animatedStyle1, layout: null, children: null };
   const tmp13 = windowDimensions(8009);
   const tmp14 = closure_8;
-  obj4[1] = activeQuestDockMode(14334).dimensionsLayoutTransition;
+  obj4[1] = activeQuestDockMode(14336).dimensionsLayoutTransition;
   const obj5 = { style: items1, children: null };
   items1 = [tmp.dragHandleOverlay, animatedStyle3];
   const tmp15 = windowDimensions(8009);

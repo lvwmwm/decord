@@ -1,9 +1,9 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 10331
+// Function ID: 10332
 // Name: u
 // Dependencies: [4036, 2]
 
-// Module 10330 (u)
+// Module 10331 (u)
 let fn2 = require;
 const fn = function u(get) {
   if (globalThis._WORKLET) {

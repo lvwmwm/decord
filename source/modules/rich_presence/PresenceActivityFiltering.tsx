@@ -1,10 +1,10 @@
-// Module ID: 10439
-// Function ID: 10440
+// Module ID: 10440
+// Function ID: 10441
 // Name: doesGameHaveRichPresence
 // Dependencies: [4341, 1935, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 10439 (doesGameHaveRichPresence)
+// Module 10440 (doesGameHaveRichPresence)
 import addApplication from "addApplication";
 
 const require = arg1;

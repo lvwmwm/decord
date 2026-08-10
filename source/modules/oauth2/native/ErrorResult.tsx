@@ -1,10 +1,10 @@
-// Module ID: 10520
-// Function ID: 10521
+// Module ID: 10521
+// Function ID: 10522
 // Name: error
-// Dependencies: [19, 17, 21, 4303, 712, 5328, 10521, 4299, 1236, 4714, 4509, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5328, 10522, 4299, 1236, 4714, 4509, 2]
 // Exports: default
 
-// Module 10520 (error)
+// Module 10521 (error)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -33,7 +33,7 @@ export default function ErrorResult(error) {
   let obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: tmp.inner, children: null };
   obj = { source: null, style: null };
-  obj[0] = importDefault(10521);
+  obj[0] = importDefault(10522);
   obj[1] = tmp.image;
   const items = [callback(closure_3, obj), ];
   const obj1 = { style: tmp.text, variant: "text-md/medium", children: null };

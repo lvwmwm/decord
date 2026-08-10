@@ -1,10 +1,10 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16363
+// Function ID: 16364
 // Name: closeRestrictedHoursModal
-// Dependencies: [5, 4509, 16355, 1988, 2]
+// Dependencies: [5, 4509, 16364, 1988, 2]
 // Exports: openRestrictedHoursModal
 
-// Module 16354 (closeRestrictedHoursModal)
+// Module 16363 (closeRestrictedHoursModal)
 import asyncGeneratorStep from "asyncGeneratorStep";
 
 const require = arg1;

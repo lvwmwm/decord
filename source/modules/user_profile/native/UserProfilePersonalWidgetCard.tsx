@@ -1,10 +1,10 @@
-// Module ID: 12453
-// Function ID: 12454
+// Module ID: 12455
+// Function ID: 12456
 // Name: PersonalWidgetText
-// Dependencies: [19, 17, 1218, 676, 21, 4303, 712, 12454, 4299, 12455, 4725, 4013, 589, 5775, 7704, 12348, 2]
+// Dependencies: [19, 17, 1218, 676, 21, 4303, 712, 12456, 4299, 12457, 4725, 4013, 589, 5775, 7704, 12350, 2]
 // Exports: default
 
-// Module 12453 (PersonalWidgetText)
+// Module 12455 (PersonalWidgetText)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import fetchFingerprint from "fetchFingerprint";
@@ -206,7 +206,7 @@ export default function UserProfilePersonalWidgetCard(userId) {
     obj = { userId: null, widget: null };
     obj[0] = userId;
     obj[1] = widget;
-    tmp4Result = tmp4(tmp5(12348), obj);
+    tmp4Result = tmp4(tmp5(12350), obj);
   }
   obj[3] = tmp4Result;
   const tmp6 = importDefault(5775);

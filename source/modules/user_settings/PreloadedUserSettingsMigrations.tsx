@@ -1,9 +1,9 @@
-// Module ID: 13727
-// Function ID: 13728
+// Module ID: 13729
+// Function ID: 13730
 // Name: migrateHotspotLocation
-// Dependencies: [1372, 676, 11782, 1306, 1357, 5835, 595, 1342, 589, 1337, 1358, 6980, 2]
+// Dependencies: [1372, 676, 11783, 1306, 1357, 5835, 595, 1342, 589, 1337, 1358, 6980, 2]
 
-// Module 13727 (migrateHotspotLocation)
+// Module 13729 (migrateHotspotLocation)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChannelNoticeTypes } from "ME";
 import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS";

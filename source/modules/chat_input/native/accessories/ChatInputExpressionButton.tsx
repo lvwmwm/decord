@@ -1,8 +1,8 @@
-// Module ID: 11561
-// Function ID: 11562
-// Dependencies: [19, 21, 4303, 712, 1348, 4005, 4846, 1236, 1297, 10188, 7656, 2]
+// Module ID: 11562
+// Function ID: 11563
+// Dependencies: [19, 21, 4303, 712, 1348, 4005, 4846, 1236, 1297, 10189, 7656, 2]
 
-// Module 11561
+// Module 11562
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo((active) => {
   }
   const items2 = [expressionButtonIconPosition, tmp11.expressionButtonIconTint];
   obj[1] = items2;
-  obj[2] = tmp4(showKeyboardIcon ? 10188 : 7656);
+  obj[2] = tmp4(showKeyboardIcon ? 10189 : 7656);
   obj[7] = jsx(onPress(1297).Icon, { size: token3, style: null, source: null });
   return jsx(onPress(4846).PressableOpacity, { size: token3, style: null, source: null });
 });

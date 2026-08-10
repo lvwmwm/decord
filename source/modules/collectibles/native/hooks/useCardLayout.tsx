@@ -1,10 +1,10 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 14845
+// Function ID: 14846
 // Name: useCardLayout
 // Dependencies: [9344, 1474, 2]
 // Exports: useCardLayout
 
-// Module 14843 (useCardLayout)
+// Module 14845 (useCardLayout)
 let result = require("set").fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
 
 export const useCardLayout = function useCardLayout() {
@@ -14,7 +14,7 @@ export const useCardLayout = function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    let obj = { columns: null, cardWidth: "Array", rowWidth: "isArray" };
+    let obj = { columns: null, cardWidth: "Array", rowWidth: "call" };
     obj[0] = num;
     return obj;
   } else {

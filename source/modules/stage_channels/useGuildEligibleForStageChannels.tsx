@@ -1,10 +1,10 @@
-// Module ID: 15895
-// Function ID: 15896
+// Module ID: 15904
+// Function ID: 15905
 // Name: isGuildEligibleForStageChannels
 // Dependencies: [1891, 676, 589, 2]
 // Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 15895 (isGuildEligibleForStageChannels)
+// Module 15904 (isGuildEligibleForStageChannels)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildFeatures } from "ME";
 

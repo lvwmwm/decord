@@ -1,10 +1,10 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12199
+// Function ID: 12200
 // Name: ReportContent
 // Dependencies: [32, 19, 17, 21, 4303, 712, 1480, 9283, 7315, 4509, 1236, 6008, 5326, 5270, 4299, 7985, 7984, 7790, 4714, 7976, 5783, 2]
 // Exports: default
 
-// Module 12197 (ReportContent)
+// Module 12199 (ReportContent)
 import _slicedToArray from "_slicedToArray";
 import TextArea from "TextArea";
 import get_ActivityIndicator from "TextInput";

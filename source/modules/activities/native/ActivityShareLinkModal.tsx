@@ -1,10 +1,10 @@
-// Module ID: 13751
-// Function ID: 13752
+// Module ID: 13753
+// Function ID: 13754
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 1372, 1903, 1371, 9620, 4296, 21, 4303, 712, 589, 7306, 11519, 13750, 5734, 1351, 13752, 6917, 7142, 4002, 1236, 5756, 4001, 1474, 1609, 500, 5277, 8382, 5270, 6008, 4247, 4848, 10245, 10264, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1903, 1371, 9620, 4296, 21, 4303, 712, 589, 7306, 11520, 13752, 5734, 1351, 13754, 6917, 7142, 4002, 1236, 5756, 4001, 1474, 1609, 500, 5277, 8382, 5270, 6008, 4247, 4848, 10246, 10265, 2]
 // Exports: default
 
-// Module 13751 (ActivityShareLinkModal)
+// Module 13753 (ActivityShareLinkModal)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import LinkIcon from "LinkIcon";
 import trackInvite from "trackInvite";
@@ -150,7 +150,7 @@ export default function ActivityShareLinkModal(applicationId) {
           throw arg1;
         } else if (arg0 !== 2) {
           closure_0 = arg1.filter(outer1_0(1351).isNotNullish);
-          closure_1 = outer1_0(13752).resolveActivityShareMessageContent(c3, name, closure_12);
+          closure_1 = outer1_0(13754).resolveActivityShareMessageContent(c3, name, closure_12);
           callback2(true);
           const item = closure_0.forEach((() => {
             let closure_0 = v3((arg0) => {
@@ -226,7 +226,7 @@ export default function ActivityShareLinkModal(applicationId) {
               return applyArgumentsResult;
             };
           })());
-          const obj5 = outer1_0(13752);
+          const obj5 = outer1_0(13754);
           let obj2 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: null };
           const intl = outer1_0(1236).intl;
           const obj3 = { applicationName: null };
@@ -235,8 +235,8 @@ export default function ActivityShareLinkModal(applicationId) {
           outer1_1(4002).open(obj2);
           callback(true, ensureGuildLoaded);
           const obj6 = outer1_1(4002);
-          const result = outer1_0(13750).closeActivityShareLinkModal();
-          const obj9 = outer1_0(13750);
+          const result = outer1_0(13752).closeActivityShareLinkModal();
+          const obj9 = outer1_0(13752);
         }
         c3 = 3;
         obj = { value: null, done: true };

@@ -1,10 +1,10 @@
-// Module ID: 11071
-// Function ID: 11072
+// Module ID: 11072
+// Function ID: 11073
 // Name: openAddMembersActionSheet
-// Dependencies: [676, 698, 4271, 9004, 1988, 11072, 2]
+// Dependencies: [676, 698, 4271, 9004, 1988, 11073, 2]
 // Exports: openAddMembersActionSheet, openChannelMembersActionSheet
 
-// Module 11071 (openAddMembersActionSheet)
+// Module 11072 (openAddMembersActionSheet)
 import { AnalyticEvents } from "ME";
 
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/channel_permissions/native/ChannelPermissionsUtils.tsx");
@@ -25,5 +25,5 @@ export const openChannelMembersActionSheet = function openChannelMembersActionSh
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Manage Channel Access" });
   const obj2 = importDefault(4271);
   obj = { channelId: id, guildId: guild_id };
-  obj2.openLazy(require(1988) /* asyncRequireImpl */(11072, dependencyMap.paths), "channel-members-" + id, obj);
+  obj2.openLazy(require(1988) /* asyncRequireImpl */(11073, dependencyMap.paths), "channel-members-" + id, obj);
 };

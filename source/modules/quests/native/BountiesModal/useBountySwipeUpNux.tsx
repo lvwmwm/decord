@@ -1,10 +1,10 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14256
+// Function ID: 14257
 // Name: useBountySwipeUpNux
-// Dependencies: [32, 10981, 14255, 1358, 6022, 2]
+// Dependencies: [32, 10982, 14257, 1358, 6022, 2]
 // Exports: useBountySwipeUpNux
 
-// Module 14254 (useBountySwipeUpNux)
+// Module 14256 (useBountySwipeUpNux)
 import _slicedToArray from "_slicedToArray";
 
 const require = arg1;
@@ -12,9 +12,9 @@ const result = require("FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY").fileFinishedIm
 
 export const useBountySwipeUpNux = function useBountySwipeUpNux(location) {
   let isEligible = location.isEligible;
-  const BountiesVerticalScrollExperiment = require(10981) /* apexExperiment */.BountiesVerticalScrollExperiment;
+  const BountiesVerticalScrollExperiment = require(10982) /* apexExperiment */.BountiesVerticalScrollExperiment;
   const tmp3 = "none" === BountiesVerticalScrollExperiment.useConfig({ location: location.location }).scrollAffordanceVariant;
-  let obj = require(14255) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
+  let obj = require(14257) /* FORCE_BOUNTIES_SWIPE_UP_NUX_STORAGE_KEY */;
   const first = callback(obj.useForceBountiesSwipeUpNux(), 1)[0];
   if (isEligible) {
     if (tmp3) {

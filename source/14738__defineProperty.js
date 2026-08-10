@@ -1,0 +1,19 @@
+// Module ID: 14738
+// Function ID: 14739
+// Name: _defineProperty
+// Dependencies: [43]
+
+// Module 14738 (_defineProperty)
+
+export default function _defineProperty(arg0, arg1, arg2) {
+  const tmp = require(43) /* toPropertyKey */(arg1);
+  if (tmp in arg0) {
+    const _Object = Object;
+    const obj = { value: null, enumerable: true, configurable: true, writable: true };
+    obj[0] = arg2;
+    Object.defineProperty(arg0, tmp, obj);
+  } else {
+    arg0[tmp] = arg2;
+  }
+  return arg0;
+};

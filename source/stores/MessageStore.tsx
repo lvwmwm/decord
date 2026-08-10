@@ -1,7 +1,7 @@
 // Module ID: 4521
 // Function ID: 4522
 // Name: reinjectEphemerals
-// Dependencies: [32, 5, 1963, 4522, 1975, 1218, 1372, 4988, 1961, 1971, 1891, 3929, 3938, 1960, 4124, 1903, 676, 3, 11, 4989, 4994, 1936, 4992, 4523, 1384, 12, 7059, 4532, 3940, 7293, 13028, 589, 11143, 1935, 709, 2]
+// Dependencies: [32, 5, 1963, 4522, 1975, 1218, 1372, 4988, 1961, 1971, 1891, 3929, 3938, 1960, 4124, 1903, 676, 3, 11, 4989, 4994, 1936, 4992, 4523, 1384, 12, 7059, 4532, 3940, 7293, 13030, 589, 11144, 1935, 709, 2]
 
 // Module 4521 (reinjectEphemerals)
 import canEditMessage from "canEditMessage";
@@ -947,10 +947,10 @@ const messageStore = new MessageStore(require("dispatcher"), {
       if (orCreate === removeManyResult) {
         return false;
       } else {
-        let tmp3 = removeManyResult;
+        let tmp8 = removeManyResult;
         if (null != removeManyResult.revealedMessageId) {
           let tmpResult = tmp(12);
-          tmp3 = removeManyResult;
+          tmp8 = removeManyResult;
           if (tmpResult.some(ids, (arg0) => mutation.revealedMessageId === arg0)) {
             let id = removeManyResult.getAfter(removeManyResult.revealedMessageId);
             if (null == id) {
@@ -963,7 +963,7 @@ const messageStore = new MessageStore(require("dispatcher"), {
           }
         }
         tmpResult = tmp(4989);
-        tmpResult.commit(tmp3);
+        tmpResult.commit(tmp8);
         const item1 = ids.forEach((arg0) => {
           set.delete(arg0);
         });

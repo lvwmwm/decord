@@ -1,10 +1,10 @@
-// Module ID: 14114
-// Function ID: 14115
+// Module ID: 14116
+// Function ID: 14117
 // Name: FamilyCenterLoading
-// Dependencies: [32, 19, 17, 6996, 1903, 676, 1221, 1369, 6997, 21, 4712, 4303, 712, 5728, 5748, 7337, 14115, 14116, 7339, 647, 8956, 1236, 2284, 14117, 14157, 6998, 698, 7061, 7066, 4730, 4123, 1358, 5826, 9141, 9562, 2]
+// Dependencies: [32, 19, 17, 6996, 1903, 676, 1221, 1369, 6997, 21, 4712, 4303, 712, 5728, 5748, 7337, 14117, 14118, 7339, 647, 8956, 1236, 2284, 14119, 14159, 6998, 698, 7061, 7066, 4730, 4123, 1358, 5826, 9141, 9562, 2]
 // Exports: default
 
-// Module 14114 (FamilyCenterLoading)
+// Module 14116 (FamilyCenterLoading)
 import openAgeGateModal from "openAgeGateModal";
 import defaultAreStatesEqual from "defaultAreStatesEqual";
 import get_ActivityIndicator from "useSelectedMyFamilyTab";
@@ -36,8 +36,8 @@ function FamilyCenter() {
   const tmp = createCacheKey();
   let obj = familyCenterInitialized(7337);
   const acceptedRequestsCount = obj.useAcceptedRequestsCount();
-  const tmp6 = isLoading(14115)();
-  const selectedTab = isLoading(14116)().selectedTab;
+  const tmp6 = isLoading(14117)();
+  const selectedTab = isLoading(14118)().selectedTab;
   let obj1 = familyCenterInitialized(7339);
   const selectedTeenId = obj1.useSelectedTeenId();
   let obj2 = familyCenterInitialized(647);
@@ -58,13 +58,13 @@ function FamilyCenter() {
   const intl = familyCenterInitialized(1236).intl;
   obj[0] = intl.string(isLoading(2284).bdBmqy);
   obj[1] = FamilyCenterSubPages.ACTIVITY;
-  obj[2] = callback2(isLoading(14117), {});
+  obj[2] = callback2(isLoading(14119), {});
   const items1 = [obj, ];
   obj1 = { label: null, id: null, page: null };
   const intl2 = familyCenterInitialized(1236).intl;
   obj1[0] = intl2.string(isLoading(2284)["gVWG+6"]);
   obj1[1] = FamilyCenterSubPages.REQUESTS;
-  obj1[2] = callback2(isLoading(14157), {});
+  obj1[2] = callback2(isLoading(14159), {});
   items1[1] = obj1;
   obj[0] = items1;
   obj[1] = function onPageChange(arg0) {

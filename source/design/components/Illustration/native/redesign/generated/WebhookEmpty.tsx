@@ -1,10 +1,10 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15919
+// Function ID: 15920
 // Name: getWebhookEmptySource
-// Dependencies: [19, 17, 21, 7623, 15911, 15912, 15913, 4153, 2]
+// Dependencies: [19, 17, 21, 7623, 15920, 15921, 15922, 4153, 2]
 // Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 15910 (getWebhookEmptySource)
+// Module 15919 (getWebhookEmptySource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getWebhookEmptySource = function getWebhookEmptySource(theme) {
   let obj = require(7623) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(15911);
+      return callback(15920);
     },
     darker() {
-      return callback(15912);
+      return callback(15921);
     },
     light() {
-      return callback(15913);
+      return callback(15922);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useWebhookEmptySource = function useWebhookEmptySource() {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(15911);
+      return callback(15920);
     },
     darker() {
-      return callback(15912);
+      return callback(15921);
     },
     light() {
-      return callback(15913);
+      return callback(15922);
     }
   };
   return require(7623) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const WebhookEmpty = function WebhookEmpty(arg0) {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(15911);
+      return callback(15920);
     },
     darker() {
-      return callback(15912);
+      return callback(15921);
     },
     light() {
-      return callback(15913);
+      return callback(15922);
     }
   };
   obj = {};

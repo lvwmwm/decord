@@ -1,10 +1,10 @@
-// Module ID: 10984
-// Function ID: 10985
+// Module ID: 10985
+// Function ID: 10986
 // Name: fetchBountiesAndDispatch
-// Dependencies: [5, 4395, 7159, 676, 709, 7188, 10985, 7176, 4203, 6923, 7180, 530, 7158, 2]
+// Dependencies: [5, 4395, 7159, 676, 709, 7188, 10986, 7176, 4203, 6923, 7180, 530, 7158, 2]
 // Exports: claimBountyReward, fetchBountyPreview, fetchQuestHomeBounties, setBountyVideoProgress
 
-// Module 10984 (fetchBountiesAndDispatch)
+// Module 10985 (fetchBountiesAndDispatch)
 import AdCreativeType from "AdCreativeType";
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import set from "set";

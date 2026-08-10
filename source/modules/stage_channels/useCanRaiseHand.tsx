@@ -1,10 +1,10 @@
-// Module ID: 10809
-// Function ID: 10810
+// Module ID: 10810
+// Function ID: 10811
 // Name: useCanRaiseHand
 // Dependencies: [3929, 505, 589, 2]
 // Exports: useCanRaiseHand
 
-// Module 10809 (useCanRaiseHand)
+// Module 10810 (useCanRaiseHand)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import { Permissions } from "sum";
 

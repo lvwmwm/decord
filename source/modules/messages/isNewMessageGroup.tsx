@@ -1,10 +1,10 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11359
+// Function ID: 11360
 // Name: isNewMessageGroup
 // Dependencies: [676, 687, 5890, 11, 3971, 2]
 // Exports: isNewGroupItem
 
-// Module 11358 (isNewMessageGroup)
+// Module 11359 (isNewMessageGroup)
 import ME from "ME";
 
 let c3;

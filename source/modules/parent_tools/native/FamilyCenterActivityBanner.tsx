@@ -1,10 +1,10 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14122
+// Function ID: 14123
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [19, 17, 21, 4303, 7337, 7338, 14121, 712, 11326, 1236, 2284, 14128, 14129, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 7337, 7338, 14123, 712, 11327, 1236, 2284, 14130, 14131, 4299, 2]
 // Exports: default
 
-// Module 14120 (FamilyCenterActivityBannerButton)
+// Module 14122 (FamilyCenterActivityBannerButton)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,7 +29,7 @@ function FamilyCenterActivityBannerButton() {
     }
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    let tmp7Result = tmp2(14121);
+    let tmp7Result = tmp2(14123);
     tmp7Result = tmp7(tmp5 ? tmp7Result.FamilyCenterParentQRCodeButton : tmp7Result.FamilyCenterTeenQRCodeButton, {});
     obj[1] = tmp7Result;
     tmp7Result = tmp7(closure_3, obj);
@@ -55,20 +55,20 @@ export default function FamilyCenterActivityBanner() {
   const tmp4 = createCacheKey();
   let obj = require(7337) /* useUserIdsForLinkStatus */;
   const hasMaxConnections = obj.useHasMaxConnections();
-  let obj1 = require(11326) /* useAgeSpecificText */;
+  let obj1 = require(11327) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const tmp = importDefault;
   const tmp3 = importDefault(7338)();
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const ageSpecificText = obj1.useAgeSpecificText(intl.string(importDefault(2284)["T7GyW+"]), intl2.string(importDefault(2284).goKE2b));
-  let obj2 = require(11326) /* useAgeSpecificText */;
+  let obj2 = require(11327) /* useAgeSpecificText */;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2284)["T7GyW+"]);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj = { style: tmp4.container, children: null };
   obj = { source: null, style: null };
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(importDefault(2284).MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(importDefault(2284).EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj[0] = tmp(tmp3 ? 14128 : 14129);
+  obj[0] = tmp(tmp3 ? 14130 : 14131);
   obj[1] = tmp4.art;
   const items = [closure_5(closure_4, obj), , , ];
   obj1 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

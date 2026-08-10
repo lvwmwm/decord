@@ -1,10 +1,10 @@
-// Module ID: 10669
-// Function ID: 10670
+// Module ID: 10670
+// Function ID: 10671
 // Name: CircleWithCutout
 // Dependencies: [19, 21, 7835, 2]
 // Exports: default, getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 10669 (CircleWithCutout)
+// Module 10670 (CircleWithCutout)
 import "noop";
 import jsxProd from "jsxProd";
 

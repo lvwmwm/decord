@@ -1,10 +1,10 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14309
+// Function ID: 14310
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4303, 712, 4271, 14306, 7733, 1236, 6132, 4714, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4271, 14308, 7733, 1236, 6132, 4714, 2]
 // Exports: default
 
-// Module 14307 (BountiesNuxPromoSheet)
+// Module 14309 (BountiesNuxPromoSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/quests/native/B
 
 export default function BountiesNuxPromoSheet() {
   const callback = React.useCallback(() => {
-    callback2(4271).hideActionSheet(callback(14306).PROMO_SHEET_KEY);
+    callback2(4271).hideActionSheet(callback(14308).PROMO_SHEET_KEY);
   }, []);
   let obj = { gradientColor: "purple", title: null, description: null, illustration: null, actions: null };
   const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10462
+// Function ID: 10463
 // Name: _manuallyStartConsoleQuest
-// Dependencies: [5, 9519, 5156, 4395, 5155, 7160, 7162, 5161, 676, 530, 709, 4203, 5164, 1236, 7167, 1208, 5127, 503, 10462, 9516, 9517, 9521, 7188, 7177, 10465, 7158, 10466, 6923, 7180, 10467, 4142, 10468, 698, 7137, 10470, 10471, 687, 10485, 2]
+// Dependencies: [5, 9519, 5156, 4395, 5155, 7160, 7162, 5161, 676, 530, 709, 4203, 5164, 1236, 7167, 1208, 5127, 503, 10463, 9516, 9517, 9521, 7188, 7177, 10466, 7158, 10467, 6923, 7180, 10468, 4142, 10469, 698, 7137, 10471, 10472, 687, 10486, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 10461 (_manuallyStartConsoleQuest)
+// Module 10462 (_manuallyStartConsoleQuest)
 import initializeState from "initializeState";
 import { getVisibleGuildIdsMethod } from "SidebarVisibilityMethodStore";
 import set from "set";
@@ -1469,10 +1469,10 @@ function _fetchQuestToDeliver() {
                 const obj3 = { wasSuccessful: false, currentFetchedAt: null };
                 throwTypeErrorResult = dependencyMap;
                 obj3[1] = dependencyMap;
-                throwTypeErrorResult = callback2(10466).recordQuestRequestApiResponse("/quests/decision", obj3);
+                throwTypeErrorResult = callback2(10467).recordQuestRequestApiResponse("/quests/decision", obj3);
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                const obj20 = callback2(10466);
+                const obj20 = callback2(10467);
                 throwTypeErrorResult = result;
                 const obj4 = {};
                 throwTypeErrorResult = callback2;
@@ -1557,7 +1557,7 @@ function _fetchQuestToDeliver() {
                   lib = body;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  const LessPersonalizedAdsExperiment = callback(10467).LessPersonalizedAdsExperiment;
+                  const LessPersonalizedAdsExperiment = callback(10468).LessPersonalizedAdsExperiment;
                   enabled = LessPersonalizedAdsExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" });
                   throwTypeErrorResult = lib;
                   throwTypeErrorResult = lib();
@@ -1723,7 +1723,7 @@ function _fetchQuestToDeliver() {
                 obj14[7] = callback;
                 obj14[8] = dependencyMap;
                 obj2.dispatch(obj14);
-                obj5 = callback2(10466);
+                obj5 = callback2(10467);
                 obj16 = { wasSuccessful: true, adRequestId: null, currentQuestId: null, currentFetchedAt: null };
                 const _String = String;
                 obj16[1] = String(body.request_id);
@@ -1745,7 +1745,7 @@ function _fetchQuestToDeliver() {
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
                   if (callback === callback(5164).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                    obj7 = callback2(10468);
+                    obj7 = callback2(10469);
                     obj7.startTracking(result.id);
                   }
                   obj8 = callback2(698);
@@ -1851,8 +1851,8 @@ function _fetchEarnedQuestToDeliver() {
                 if (0 !== found.length) {
                   const _Date = Date;
                   c3 = Date.now();
-                  const result = callback2(10470).recordEarnedRequestAttempt(tmp74, tmp75);
-                  const obj16 = callback2(10470);
+                  const result = callback2(10471).recordEarnedRequestAttempt(tmp74, tmp75);
+                  const obj16 = callback2(10471);
                   const obj1 = { type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN", content: null };
                   obj1[1] = tmp74;
                   callback2(709).dispatch(obj1);

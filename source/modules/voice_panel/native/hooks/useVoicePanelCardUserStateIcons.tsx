@@ -1,10 +1,10 @@
-// Module ID: 16172
-// Function ID: 16173
+// Module ID: 16181
+// Function ID: 16182
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 4375, 4319, 4321, 21, 11644, 9179, 647, 10899, 4400, 10848, 15353, 16123, 4002, 7793, 712, 1236, 2]
+// Dependencies: [19, 4375, 4319, 4321, 21, 11645, 9179, 647, 10900, 4400, 10849, 15361, 16132, 4002, 7793, 712, 1236, 2]
 // Exports: default
 
-// Module 16172 (useVoicePanelCardUserStateIcons)
+// Module 16181 (useVoicePanelCardUserStateIcons)
 import noop from "noop";
 import createRTCConnection from "createRTCConnection";
 import updateVoiceState from "updateVoiceState";
@@ -32,7 +32,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   let isRTCDisconnectedUIVisible;
   let callback;
   let callback1;
-  setShowFloatingCTA = setShowFloatingCTA.useContext(importDefault(11644)).setShowFloatingCTA;
+  setShowFloatingCTA = setShowFloatingCTA.useContext(importDefault(11645)).setShowFloatingCTA;
   let tmp6;
   if (arg0 === stateFromStores.USER) {
     tmp6 = id;
@@ -61,11 +61,11 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
     return voicePlatformForChannel;
   }, items2);
   let tmp13;
-  let tmp2Result = tmp2(10899);
+  let tmp2Result = tmp2(10900);
   if (arg0 === stateFromStores.STREAM) {
     tmp13 = id;
   }
-  tmp2Result = tmp2(10848);
+  tmp2Result = tmp2(10849);
   showTileVolumeIndicator = tmp2Result.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = 0 === tmp2Result(tmp13, tmp4(4400).MediaEngineContextTypes.STREAM).effectiveVolume;
@@ -74,7 +74,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
     showTileVolumeIndicator = arg0 === tmp5.STREAM;
   }
   const tmp4Result1 = _require(647);
-  isRTCDisconnectedUIVisible = _require(15353).useIsRTCDisconnectedUIVisible(tmp, id);
+  isRTCDisconnectedUIVisible = _require(15361).useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {
 

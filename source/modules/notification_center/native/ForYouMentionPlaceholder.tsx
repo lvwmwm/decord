@@ -1,10 +1,10 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15532
+// Function ID: 15533
 // Name: ForYouMentionPlaceholder
 // Dependencies: [19, 17, 4295, 21, 4303, 712, 589, 4036, 4304, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 15524 (ForYouMentionPlaceholder)
+// Module 15532 (ForYouMentionPlaceholder)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

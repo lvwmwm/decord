@@ -1,8 +1,8 @@
-// Module ID: 15009
-// Function ID: 15010
-// Dependencies: [19, 17, 21, 4303, 712, 11223, 1236, 10526, 4803, 6027, 4299, 3947, 15010, 4714, 7704, 2]
+// Module ID: 15011
+// Function ID: 15012
+// Dependencies: [19, 17, 21, 4303, 712, 11224, 1236, 10527, 4803, 6027, 4299, 3947, 15012, 4714, 7704, 2]
 
-// Module 15009
+// Module 15011
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -28,13 +28,13 @@ const memoResult = require("noop").memo(function PremiumTrialOfferActionSheetCon
   if (trialOffer != null) {
     subscription_trial = trialOffer.subscription_trial;
   }
-  let obj = { IconComponent: require(11223) /* UserIcon */.UserIcon, label: null, description: null };
+  let obj = { IconComponent: require(11224) /* UserIcon */.UserIcon, label: null, description: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.kpMomJ);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl2.string(require(1236) /* getSystemLocale */.t.uVUtPw);
   const items = [obj, , ];
-  obj = { IconComponent: require(10526) /* ChatSmileIcon */.ChatSmileIcon, label: null, description: null };
+  obj = { IconComponent: require(10527) /* ChatSmileIcon */.ChatSmileIcon, label: null, description: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t["R2IV/Q"]);
   const intl4 = require(1236) /* getSystemLocale */.intl;
@@ -65,7 +65,7 @@ const memoResult = require("noop").memo(function PremiumTrialOfferActionSheetCon
   }
   obj3[3] = intl7.formatToPlainString(require(1236) /* getSystemLocale */.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = callback(require(4299) /* Text */.Text, obj3);
-  items1[2] = callback(importDefault(15010), { perks: items });
+  items1[2] = callback(importDefault(15012), { perks: items });
   const obj4 = { style: tmp.buttonContainer, children: null };
   const obj5 = { size: "lg", text: null, onPress: null, grow: true, icon: null };
   const intl8 = tmp3(1236).intl;

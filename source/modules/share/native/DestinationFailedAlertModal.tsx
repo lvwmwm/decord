@@ -1,10 +1,10 @@
-// Module ID: 10267
-// Function ID: 10268
+// Module ID: 10268
+// Function ID: 10269
 // Name: FailedGroupDMRow
-// Dependencies: [19, 17, 1372, 1891, 4390, 3938, 1903, 505, 21, 4303, 712, 4494, 9663, 1297, 4299, 589, 4146, 10268, 4647, 4647, 1236, 2]
+// Dependencies: [19, 17, 1372, 1891, 4390, 3938, 1903, 505, 21, 4303, 712, 4494, 9663, 1297, 4299, 589, 4146, 10269, 4647, 4647, 1236, 2]
 // Exports: default
 
-// Module 10267 (FailedGroupDMRow)
+// Module 10268 (FailedGroupDMRow)
 import "getAlertModalItemKey";
 import { View } from "GuildIconWithChannelTypeSizes";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -89,8 +89,8 @@ function FailedChannelRow(channel) {
   });
   obj = { style: tmp.row, children: null };
   obj = { "aria-label": "", guild: stateFromStores, channel, size: null };
-  obj[3] = channel(10268).GuildIconWithChannelTypeSizes.SMALL_32;
-  const items1 = [callback(channel(10268).GuildIconWithChannelType, obj), ];
+  obj[3] = channel(10269).GuildIconWithChannelTypeSizes.SMALL_32;
+  const items1 = [callback(channel(10269).GuildIconWithChannelType, obj), ];
   const tmp3 = importDefault(4494)(channel);
   items1[1] = callback(channel(4299).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: importDefault(4494)(channel) });
   obj[1] = items1;

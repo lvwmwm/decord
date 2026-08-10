@@ -1,10 +1,10 @@
-// Module ID: 11075
-// Function ID: 11076
+// Module ID: 11076
+// Function ID: 11077
 // Name: isLinkTrusted
 // Dependencies: [8932, 8094, 2]
 // Exports: isLinkTrusted
 
-// Module 11075 (isLinkTrusted)
+// Module 11076 (isLinkTrusted)
 const result = require("set").fileFinishedImporting("modules/markup/MarkupReactLinkUtils.tsx");
 
 export const isLinkTrusted = function isLinkTrusted(target) {

@@ -1,10 +1,10 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 14807
+// Function ID: 14808
 // Name: Content
 // Dependencies: [32, 19, 17, 21, 4303, 8895, 8654, 4714, 5768, 4299, 5328, 5715, 2]
 // Exports: default, useCanRotate
 
-// Module 14805 (Content)
+// Module 14807 (Content)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

@@ -1,9 +1,9 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 10412
+// Function ID: 10413
 // Name: updateGiftCode
-// Dependencies: [9612, 676, 4188, 3883, 4538, 709, 10412, 589, 2]
+// Dependencies: [9612, 676, 4188, 3883, 4538, 709, 10413, 589, 2]
 
-// Module 10411 (updateGiftCode)
+// Module 10412 (updateGiftCode)
 import frozen from "frozen";
 import ME from "ME";
 import { Store } from "initialize";

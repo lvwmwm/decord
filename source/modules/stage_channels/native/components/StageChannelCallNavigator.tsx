@@ -1,13 +1,13 @@
-// Module ID: 10756
-// Function ID: 10757
+// Module ID: 10757
+// Function ID: 10758
 // Name: ModeratorViewOverlay
-// Dependencies: [32, 19, 17, 505, 21, 10757, 4036, 4713, 712, 10758, 10817, 10760, 9742, 9741, 9744, 10708, 4497, 10818, 10895, 4013, 10653, 10903, 10904, 10763, 10909, 10917, 10921, 10954, 10955, 4303, 10956, 10780, 2]
+// Dependencies: [32, 19, 17, 505, 21, 10758, 4036, 4713, 712, 10759, 10818, 10761, 9743, 9742, 9745, 10709, 4497, 10819, 10896, 4013, 10654, 10904, 10905, 10764, 10910, 10918, 10922, 10955, 10956, 4303, 10957, 10781, 2]
 // Exports: default
 
-// Module 10756 (ModeratorViewOverlay)
+// Module 10757 (ModeratorViewOverlay)
 import set from "set";
 import ManaContext from "ManaContext";
-import get_ActivityIndicator from "module_10818";
+import get_ActivityIndicator from "module_10819";
 import { ThemeTypes } from "sum";
 import jsxProd from "GestureContainer";
 import createCacheKey from "createCacheKey";
@@ -111,17 +111,17 @@ function JoinStageOverlay(channel) {
   items[1] = obj1;
   items[2] = animatedStyle;
   obj[0] = items;
-  obj[1] = callback2(importDefault(10817), { channel: channel.channel });
+  obj[1] = callback2(importDefault(10818), { channel: channel.channel });
   return callback2(importDefault(4036).View, obj);
 }
 function StagePromptWrapper(channel) {
   const obj = { children: null };
   obj[0] = callback2(StagePromptInner, { channel: channel.channel });
-  return callback2(require(10956) /* RootThemeContextProvider */.DisableCustomTheme, obj);
+  return callback2(require(10957) /* RootThemeContextProvider */.DisableCustomTheme, obj);
 }
 function StagePromptInner(channel) {
   const tmp = createCacheKey();
-  return callback2(require(10780) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
+  return callback2(require(10781) /* AgeVerificationSpeakerActionSheet */.AnimatedStartStagePrompt, { channel: channel.channel, style: createCacheKey().startStagePrompt });
 }
 ({ StyleSheet: c5, View: closure_6 } = get_ActivityIndicator);
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = jsxProd);

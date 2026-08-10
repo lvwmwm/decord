@@ -1,10 +1,10 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16625
+// Function ID: 16626
 // Name: getPermissionChanges
-// Dependencies: [5176, 5242, 4505, 1377, 5219, 16615, 1372, 1964, 3938, 1903, 16614, 676, 1379, 11261, 1378, 3, 4379, 1236, 7772, 11, 16617, 506, 1384, 4494, 1935, 14, 688, 9067, 16618, 3971, 3883, 2]
+// Dependencies: [5176, 5242, 4505, 1377, 5219, 16624, 1372, 1964, 3938, 1903, 16623, 676, 1379, 11262, 1378, 3, 4379, 1236, 7772, 11, 16626, 506, 1384, 4494, 1935, 14, 688, 9067, 16627, 3971, 3883, 2]
 // Exports: checkChangesToRender, findChangeByKey, getChangeStrings, getChangeTitle, getSimpleAuditLogChangeDetails, getSimpleAuditLogTitleContextFromChange, getSimpleAuditLogTitleFromChange, getStringForAddedChannelFlag, getStringForPermission, getStringForRemovedChannelFlag, shouldNotRenderChangeDetail, transformLogs
 
-// Module 16616 (getPermissionChanges)
+// Module 16625 (getPermissionChanges)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import handleUpdate from "handleUpdate";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
@@ -1713,9 +1713,9 @@ export const getChangeTitle = function getChangeTitle(log) {
             const newValue = found2.newValue;
             found = require;
             found = dependencyMap;
-            if (require(16617) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
+            if (require(16626) /* set */.GuildFeedItemTypes.MESSAGE === newValue) {
               return found(1236).t["PyEa+J"];
-            } else if (found(16617).GuildFeedItemTypes.FORUM_POST === newValue) {
+            } else if (found(16626).GuildFeedItemTypes.FORUM_POST === newValue) {
               return found(1236).t.hCuAb1;
             } else {
               return found(1236).t["UZ+U3A"];

@@ -1,18 +1,9 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16301
+// Function ID: 16302
 // Name: getMessages
-// Dependencies: [16293, 16302, 16303, 16304, 16305, 16306, 16307, 16308, 16309, 16310, 16311, 16312, 16313, 16314, 16315, 16316, 16317, 16318, 16319, 16320, 16321, 16322, 16323, 16324, 16325, 16326, 16327, 16328, 16329, 16330, 652, 16334, 16335, 665, 2]
+// Dependencies: [16302, 16311, 16312, 16313, 16314, 16315, 16316, 16317, 16318, 16319, 16320, 16321, 16322, 16323, 16324, 16325, 16326, 16327, 16328, 16329, 16330, 16331, 16332, 16333, 16334, 16335, 16336, 16337, 16338, 16339, 652, 16343, 16344, 665, 2]
 
-// Module 16292 (getMessages)
-import module_16302 from "module_16302";
-import module_16303 from "module_16303";
-import module_16304 from "module_16304";
-import module_16305 from "module_16305";
-import module_16306 from "module_16306";
-import module_16307 from "module_16307";
-import module_16308 from "module_16308";
-import module_16309 from "module_16309";
-import module_16310 from "module_16310";
+// Module 16301 (getMessages)
 import module_16311 from "module_16311";
 import module_16312 from "module_16312";
 import module_16313 from "module_16313";
@@ -32,10 +23,19 @@ import module_16326 from "module_16326";
 import module_16327 from "module_16327";
 import module_16328 from "module_16328";
 import module_16329 from "module_16329";
+import module_16330 from "module_16330";
+import module_16331 from "module_16331";
+import module_16332 from "module_16332";
+import module_16333 from "module_16333";
+import module_16334 from "module_16334";
+import module_16335 from "module_16335";
+import module_16336 from "module_16336";
+import module_16337 from "module_16337";
+import module_16338 from "module_16338";
 import { EventEmitter } from "EventEmitter";
 
 let require = arg1;
-global.IntlMessageFormat = require("module_16293");
+global.IntlMessageFormat = require("module_16302");
 delete tmp2[tmp];
 if (typeof Intl === "undefined") {
   require("_default2");
@@ -141,11 +141,11 @@ _instance_members_initializer_I18N_ = function() {
       return _createProxy(obj);
     } else {
       try {
-        obj = self(16335);
+        obj = self(16344);
         return obj.getMessage(tmp4, locale);
       } catch (err) {
         if (typeof tmp3[tmp2] === "string") {
-          return self(16335).getMessage(tmp7, tmp);
+          return self(16344).getMessage(tmp7, tmp);
         } else {
           return "";
         }
@@ -174,7 +174,7 @@ class I18N extends EventEmitter {
       _Intl = Intl;
       tmp9 = closure_0;
       tmp10 = closure_1;
-      __addLocaleDataResult = Intl.__addLocaleData(require("module_16334"));
+      __addLocaleDataResult = Intl.__addLocaleData(require("module_16343"));
     }
     tmp6._languages = getLanguages();
     if (null != window.Proxy) {
@@ -218,7 +218,7 @@ prototype["setLocale"] = function setLocale(_requestedLocale) {
   }
 };
 prototype["setUpdateRules"] = function setUpdateRules(arg0) {
-  require(16335) /* format */.setUpdateRules(arg0);
+  require(16344) /* format */.setUpdateRules(arg0);
 };
 prototype["getLanguages"] = function getLanguages() {
   return this._languages;
@@ -352,7 +352,7 @@ prototype["_fetchMessages"] = function _fetchMessages(outer1_2) {
     return tmp();
   }
 };
-let result = require("module_16303").fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
+let result = require("module_16312").fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
 
 export const getSystemLocale = require("getSystemLocale").getSystemLocale;
 export { I18N };

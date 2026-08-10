@@ -1,10 +1,10 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11862
+// Function ID: 11863
 // Name: usePerksCoachmarkDCF
-// Dependencies: [6022, 1358, 11855, 11862, 2]
+// Dependencies: [6022, 1358, 11856, 11863, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 11861 (usePerksCoachmarkDCF)
+// Module 11862 (usePerksCoachmarkDCF)
 const result = require("GUILD_POWERUP_NOTIFICATION_COOLDOWN").fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
 
 export const usePerksCoachmarkDCF = function usePerksCoachmarkDCF(arg0) {
@@ -32,7 +32,7 @@ export const useGuildPowerupNotificationDCF = function useGuildPowerupNotificati
   if (arg0) {
     prop = tmp(1358).DismissibleContent.GUILD_POWERUP_NOTIFICATION;
   }
-  obj = { cooldownDurationMs: tmp(11855).GUILD_POWERUP_NOTIFICATION_COOLDOWN };
+  obj = { cooldownDurationMs: tmp(11856).GUILD_POWERUP_NOTIFICATION_COOLDOWN };
   return obj.useSelectedTimeRecurringDismissibleContent(prop, obj);
 };
 export function useNewGamesCoachmarkDC(arg0) {
@@ -54,7 +54,7 @@ export function useGameServerPricingCoachmarkDCF(arg0) {
   return items;
 }
 export const useBoostToUnlockCoachmarkDCF = function useBoostToUnlockCoachmarkDCF(arg0, id, GUILD_HEADER_TOOLTIPS) {
-  let obj = importDefault(11862);
+  let obj = importDefault(11863);
   let prop = null;
   if (arg0) {
     prop = null;
@@ -62,7 +62,7 @@ export const useBoostToUnlockCoachmarkDCF = function useBoostToUnlockCoachmarkDC
       prop = tmp2(1358).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }
-  obj = { cooldownDurationMs: tmp2(11855).BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: tmp2(11855).BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };
+  obj = { cooldownDurationMs: tmp2(11856).BOOST_TO_UNLOCK_COACHMARK_COOLDOWN, numTimesToRecur: tmp2(11856).BOOST_TO_UNLOCK_COACHMARK_MAX_TIMES_TO_RECUR };
   return require(6022) /* useSelectedDismissibleContent */.useSelectedTimeRecurringGuildDismissibleContent(prop, id, obj, GUILD_HEADER_TOOLTIPS);
 };
 export function useExpiringPowerupCoachmarkDCF(arg0, c0) {

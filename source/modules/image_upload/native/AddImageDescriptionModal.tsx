@@ -1,10 +1,10 @@
-// Module ID: 10181
-// Function ID: 10182
+// Module ID: 10182
+// Function ID: 10183
 // Name: AddDescription
-// Dependencies: [32, 19, 17, 4640, 4639, 21, 4303, 712, 589, 1474, 1480, 5369, 9462, 8382, 1236, 8357, 10180, 7976, 9677, 2]
+// Dependencies: [32, 19, 17, 4640, 4639, 21, 4303, 712, 589, 1474, 1480, 5369, 9462, 8382, 1236, 8357, 10181, 7976, 9677, 2]
 // Exports: default
 
-// Module 10181 (AddDescription)
+// Module 10182 (AddDescription)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "TextArea";
@@ -117,7 +117,7 @@ createCacheKey = { contentContainer: null, imageContainer: null, image: null, pl
 createCacheKey = { backgroundColor: require("Themes").colors.BACKGROUND_BASE_LOW };
 createCacheKey[0] = createCacheKey;
 createCacheKey[1] = { alignItems: "center", borderRadius: require("Themes").radii.sm };
-let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: false };
+let obj2 = { width: "100%", resizeMode: "contain", height: "Array", borderRadius: true };
 obj2[3] = require("Themes").radii.sm;
 createCacheKey[2] = obj2;
 let obj1 = { alignItems: "center", borderRadius: require("Themes").radii.sm };

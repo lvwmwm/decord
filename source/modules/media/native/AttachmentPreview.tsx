@@ -1,10 +1,10 @@
-// Module ID: 9878
-// Function ID: 9879
+// Module ID: 9879
+// Function ID: 9880
 // Name: AttachmentIcon
-// Dependencies: [19, 17, 21, 4303, 712, 9879, 9880, 9881, 9882, 9883, 9884, 9885, 9886, 9887, 9888, 9889, 9890, 9891, 9892, 4856, 4299, 500, 5268, 1297, 9806, 8870, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 9880, 9881, 9882, 9883, 9884, 9885, 9886, 9887, 9888, 9889, 9890, 9891, 9892, 9893, 4856, 4299, 500, 5268, 1297, 9807, 8870, 2]
 // Exports: default
 
-// Module 9878 (AttachmentIcon)
+// Module 9879 (AttachmentIcon)
 import importAllResult from "getUploadFileSizeSum";
 import get_ActivityIndicator from "registerAsset";
 import jsxProd from "set";
@@ -241,7 +241,7 @@ export default function AttachmentPreview(height) {
       const obj6 = { style: null, children: null };
       videoIcon = videoIcon.videoIcon;
       obj6[0] = videoIcon;
-      CirclePlayIcon = CirclePlayIcon(9806).CirclePlayIcon;
+      CirclePlayIcon = CirclePlayIcon(9807).CirclePlayIcon;
       tmp6 = callback(CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj6[1] = tmp6;
       items[1] = callback(closure_5, obj6);

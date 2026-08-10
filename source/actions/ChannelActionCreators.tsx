@@ -450,7 +450,7 @@ export default {
       tmpResult.track(constants.CHANGE_LOG_DM_REMOVED, obj);
     }
     tmpResult = tmp(709);
-    obj = { id, guild_id: "Array", parent_id: "isArray" };
+    obj = { id, guild_id: "Array", parent_id: "call" };
     tmpResult.dispatch({ type: "CHANNEL_DELETE", channel: obj, silent: flag2 });
     if (flag) {
       require(1222) /* transitionTo */.transitionTo(constants2.FRIENDS);

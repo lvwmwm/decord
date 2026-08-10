@@ -1,10 +1,10 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 14536
+// Function ID: 14537
 // Name: getHorizontalOrVerticalStartPoint
 // Dependencies: [2]
 // Exports: default
 
-// Module 14534 (getHorizontalOrVerticalStartPoint)
+// Module 14536 (getHorizontalOrVerticalStartPoint)
 function getHorizontalOrVerticalStartPoint(arg0, arg1, arg2) {
   if (0 === arg0) {
     const items = [-arg1 / 2, 0];

@@ -1,10 +1,10 @@
-// Module ID: 11083
-// Function ID: 11084
+// Module ID: 11084
+// Function ID: 11085
 // Name: openGuildHighlightNotificationForPush
-// Dependencies: [11084, 676, 4271, 11085, 1988, 1236, 698, 2]
+// Dependencies: [11085, 676, 4271, 11086, 1988, 1236, 698, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 11083 (openGuildHighlightNotificationForPush)
+// Module 11084 (openGuildHighlightNotificationForPush)
 import { NotificationUserFeedbackReasons as closure_3 } from "NotificationUserFeedbackReasons";
 import { AnalyticEvents } from "ME";
 
@@ -60,5 +60,5 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
     obj.track(constants.FEEDBACK_FORM_SUBMITTED, obj);
   };
   obj[1] = obj;
-  obj.openLazy(_require(1988)(11085, dependencyMap.paths), "GuildHighlightsNotifications", obj);
+  obj.openLazy(_require(1988)(11086, dependencyMap.paths), "GuildHighlightsNotifications", obj);
 };

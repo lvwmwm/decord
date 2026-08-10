@@ -1,10 +1,10 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10096
+// Function ID: 10097
 // Name: ExclusiveBadge
 // Dependencies: [19, 17, 21, 4303, 712, 500, 9533, 4299, 1236, 2]
 // Exports: ExclusiveBadge
 
-// Module 10095 (ExclusiveBadge)
+// Module 10096 (ExclusiveBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11492
+// Function ID: 11493
 // Name: CommandRowIcon
-// Dependencies: [5, 32, 19, 21, 11418, 8338, 11384, 6982, 5381, 4714, 1236, 4249, 2]
+// Dependencies: [5, 32, 19, 21, 11419, 8338, 11385, 6982, 5381, 4714, 1236, 4249, 2]
 // Exports: default, useCommandRowSend
 
-// Module 11491 (CommandRowIcon)
+// Module 11492 (CommandRowIcon)
 import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -81,7 +81,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
             let obj1 = outer1_0(8338);
             obj1 = { command: null, optionValues: null, context: null, sectionName: null, commandOrigin: null };
             obj1[0] = outer1_0;
-            obj1[1] = outer1_0(11384).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
+            obj1[1] = outer1_0(11385).parseOptionValuesForSend(outer1_6.channel, outer1_0, {});
             obj1[2] = outer1_6;
             obj1[3] = c4;
             obj1[4] = outer1_0(6982).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;

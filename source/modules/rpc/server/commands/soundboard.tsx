@@ -1,9 +1,9 @@
-// Module ID: 13772
-// Function ID: 13773
+// Module ID: 13774
+// Function ID: 13775
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4749, 1903, 4206, 505, 8902, 5953, 4756, 10739, 5988, 5959, 10736, 5990, 5748, 2]
+// Dependencies: [5, 4749, 1903, 4206, 505, 8902, 5953, 4756, 10740, 5988, 5959, 10737, 5990, 5748, 2]
 
-// Module 13772 (RPC_LOCAL_SCOPE)
+// Module 13774 (RPC_LOCAL_SCOPE)
 import set from "set";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -42,7 +42,7 @@ const items1 = [require("set").OAuth2Scopes.RPC, require("set").OAuth2Scopes.RPC
 obj2[RPC_SCOPE_CONFIG.ALL] = items1;
 obj1[0] = obj2;
 obj1[1] = function validation(string) {
-  let obj = importDefault(10739)(string);
+  let obj = importDefault(10740)(string);
   obj = { guild_id: string.string(), sound_id: string.string() };
   return obj.required().keys(obj);
 };

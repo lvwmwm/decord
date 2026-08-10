@@ -1,10 +1,10 @@
-// Module ID: 11453
-// Function ID: 11454
+// Module ID: 11454
+// Function ID: 11455
 // Name: useApplicationsInContext
-// Dependencies: [32, 19, 8341, 8339, 8340, 11454, 4737, 4738, 8344, 1935, 8338, 9538, 11425, 11456, 12, 9549, 589, 9541, 11455, 11457, 2]
+// Dependencies: [32, 19, 8341, 8339, 8340, 11455, 4737, 4738, 8344, 1935, 8338, 9538, 11426, 11457, 12, 9549, 589, 9541, 11456, 11458, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11453 (useApplicationsInContext)
+// Module 11454 (useApplicationsInContext)
 import _slicedToArray from "_slicedToArray";
 import _getEmbedApplication from "_getEmbedApplication";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
@@ -906,7 +906,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  const tmp8Result = flag4(11425)({ guildId: guild_id });
+  const tmp8Result = flag4(11426)({ guildId: guild_id });
   callback3 = tmp8Result;
   let items1 = [flag, commands, commandLimit, context, tmp];
   memo1 = obj2.useMemo(() => {

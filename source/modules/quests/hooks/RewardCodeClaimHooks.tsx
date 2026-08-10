@@ -1,10 +1,10 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11171
+// Function ID: 11172
 // Name: useClaimOrFetchRewardCode
-// Dependencies: [5, 32, 19, 10461, 5164, 11171, 10488, 9516, 9517, 9521, 7188, 7187, 3992, 2]
+// Dependencies: [5, 32, 19, 10462, 5164, 11172, 10489, 9516, 9517, 9521, 7188, 7187, 3992, 2]
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler, useHandleRedemptionLinkClick
 
-// Module 11170 (useClaimOrFetchRewardCode)
+// Module 11171 (useClaimOrFetchRewardCode)
 import useTrackQuestEventWithImpression from "useTrackQuestEventWithImpression";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

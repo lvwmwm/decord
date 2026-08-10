@@ -1,10 +1,10 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12216
+// Function ID: 12217
 // Name: fetchCustomActivityLink
-// Dependencies: [5, 12215, 676, 12217, 530, 709, 2]
+// Dependencies: [5, 12217, 676, 12219, 530, 709, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12214 (fetchCustomActivityLink)
+// Module 12216 (fetchCustomActivityLink)
 import dispatcher from "dispatcher";
 import getOne from "getOne";
 import { Endpoints } from "ME";
@@ -208,7 +208,7 @@ function _getCustomActivityLinkParams() {
             v0 = 0;
             c7 = 3;
             const obj6 = { value: null, done: true };
-            obj6[0] = { customId: "sa" };
+            obj6[0] = { customId: "Promise" };
             return obj6;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -222,7 +222,7 @@ function _getCustomActivityLinkParams() {
           } else {
             custom_id = arg1;
             if (null == custom_id) {
-              obj = { customId: "sa" };
+              obj = { customId: "Promise" };
             } else {
               { customId: null }[0] = custom_id.custom_id;
             }

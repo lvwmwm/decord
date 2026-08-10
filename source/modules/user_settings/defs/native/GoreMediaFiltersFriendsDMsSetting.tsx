@@ -1,9 +1,9 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14078
+// Function ID: 14079
 // Name: pressable
-// Dependencies: [8082, 14065, 7059, 5917, 14066, 1236, 10446, 14068, 2]
+// Dependencies: [8082, 14067, 7059, 5917, 14068, 1236, 10447, 14070, 2]
 
-// Module 14076 (pressable)
+// Module 14078 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,7 +13,7 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const obj = require(14065) /* useExplicitContentSettingOrDefault */;
+    const obj = require(14067) /* useExplicitContentSettingOrDefault */;
     return require(7059) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
   },
   onPress: function onGoreContentFriendsDmOnPress() {
@@ -29,7 +29,7 @@ const pressable = createToggle.createPressable({
       return obj.updateGoreContentSetting(obj);
     };
     obj[3] = obj.getGoreContentSettingOrDefault().goreContentFriendDm;
-    const result = require(14066) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14068) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;
@@ -49,7 +49,7 @@ let obj = {
   },
   parent: require("MobileSetting").MobileSetting.SENSITIVE_CONTENT_FILTERS,
   useTrailing: function useGoreContentFriendsDmSettingValue() {
-    const obj = require(14065) /* useExplicitContentSettingOrDefault */;
+    const obj = require(14067) /* useExplicitContentSettingOrDefault */;
     return require(7059) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useGoreContentSettingOrDefault().goreContentFriendDm)();
   },
   onPress: function onGoreContentFriendsDmOnPress() {
@@ -65,7 +65,7 @@ let obj = {
       return obj.updateGoreContentSetting(obj);
     };
     obj[3] = obj.getGoreContentSettingOrDefault().goreContentFriendDm;
-    const result = require(14066) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14068) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;

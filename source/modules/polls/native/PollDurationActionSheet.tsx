@@ -1,10 +1,10 @@
-// Module ID: 11585
-// Function ID: 11586
+// Module ID: 11586
+// Function ID: 11587
 // Name: PollDurationRadioGroup
-// Dependencies: [19, 21, 11584, 4014, 4271, 7985, 1236, 7984, 5764, 2]
+// Dependencies: [19, 21, 11585, 4014, 4271, 7985, 1236, 7984, 5764, 2]
 // Exports: default
 
-// Module 11585 (PollDurationRadioGroup)
+// Module 11586 (PollDurationRadioGroup)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -12,7 +12,7 @@ const require = arg1;
 function PollDurationRadioGroup(onChange) {
   onChange = onChange.onChange;
   let importDefault;
-  const tmp = importDefault(11584)();
+  const tmp = importDefault(11585)();
   importDefault = tmp;
   const items = [tmp, onChange];
   const callback = React.useCallback((arg0) => {

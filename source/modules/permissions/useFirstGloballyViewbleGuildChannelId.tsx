@@ -1,10 +1,10 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15196
+// Function ID: 15197
 // Name: useFirstGloballyViewbleGuildChannelId
 // Dependencies: [1961, 505, 589, 3934, 2]
 // Exports: useFirstGloballyViewbleGuildChannelId
 
-// Module 15194 (useFirstGloballyViewbleGuildChannelId)
+// Module 15196 (useFirstGloballyViewbleGuildChannelId)
 import comparator from "comparator";
 import { Permissions } from "sum";
 

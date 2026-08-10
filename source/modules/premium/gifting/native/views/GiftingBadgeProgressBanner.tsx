@@ -1,10 +1,10 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10048
+// Function ID: 10049
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4303, 712, 5728, 9349, 503, 10040, 4299, 1236, 2380, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5728, 9349, 503, 10041, 4299, 1236, 2380, 2]
 // Exports: default
 
-// Module 10047 (GiftingBadgeProgressBanner)
+// Module 10048 (GiftingBadgeProgressBanner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -48,7 +48,7 @@ export default function GiftingBadgeProgressBanner(arg0) {
   if (tmp10Result) {
     const obj1 = { icon: null, size: 24 };
     obj1[0] = nextTierIcon;
-    tmp10Result = tmp10(tmp2(10040), obj1);
+    tmp10Result = tmp10(tmp2(10041), obj1);
   }
   obj[1] = tmp10Result;
   const items2 = [closure_4(View, obj), ];

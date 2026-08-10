@@ -1,10 +1,10 @@
-// Module ID: 14204
-// Function ID: 14205
+// Module ID: 14206
+// Function ID: 14207
 // Name: EmptyStateCard
-// Dependencies: [19, 17, 676, 21, 4303, 712, 4239, 10491, 14205, 14206, 1416, 4153, 5376, 1297, 4271, 14202, 1988, 4299, 6962, 1609, 4712, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 4239, 10492, 14207, 14208, 1416, 4153, 5376, 1297, 4271, 14204, 1988, 4299, 6962, 1609, 4712, 1236, 2]
 // Exports: default
 
-// Module 14204 (EmptyStateCard)
+// Module 14206 (EmptyStateCard)
 import useSafeAreaInsets from "useSafeAreaInsets";
 import { View } from "Text";
 import { AnalyticsLocations } from "ME";

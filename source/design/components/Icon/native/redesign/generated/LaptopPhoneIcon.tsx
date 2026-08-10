@@ -1,10 +1,10 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14193
+// Function ID: 14194
 // Name: LaptopPhoneIcon
-// Dependencies: [19, 21, 712, 4004, 14192, 2]
+// Dependencies: [19, 21, 712, 4004, 14194, 2]
 // Exports: LaptopPhoneIcon
 
-// Module 14191 (LaptopPhoneIcon)
+// Module 14193 (LaptopPhoneIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LaptopPhoneIcon = function LaptopPhoneIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14192) /* registerAsset */;
+  obj[0] = require(14194) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

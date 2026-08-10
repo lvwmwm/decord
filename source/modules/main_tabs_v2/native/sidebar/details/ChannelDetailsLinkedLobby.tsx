@@ -1,10 +1,10 @@
-// Module ID: 15803
-// Function ID: 15804
+// Module ID: 15811
+// Function ID: 15812
 // Name: ChannelDetailsLinkedLobby
 // Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 4299, 1236, 1974, 2]
 // Exports: default
 
-// Module 15803 (ChannelDetailsLinkedLobby)
+// Module 15811 (ChannelDetailsLinkedLobby)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { HelpdeskArticles } from "ME";

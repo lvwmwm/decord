@@ -1,10 +1,10 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15180
+// Function ID: 15181
 // Name: _sendWave
-// Dependencies: [5, 1372, 676, 4296, 9632, 4313, 4001, 1236, 11635, 6917, 9243, 2]
+// Dependencies: [5, 1372, 676, 4296, 9632, 4313, 4001, 1236, 11636, 6917, 9243, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 15178 (_sendWave)
+// Module 15180 (_sendWave)
 import module_4313 from "module_4313";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticsSections } from "ME";
@@ -47,7 +47,7 @@ function _sendWave() {
           } else {
             constants = 2;
             if (null != dMFromUserId2) {
-              let obj7 = callback(11635);
+              let obj7 = callback(11636);
               const obj3 = { channelId: null, source: null };
               obj3[0] = dMFromUserId2;
               obj3[1] = dependencyMap;

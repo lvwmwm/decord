@@ -1,10 +1,10 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11377
+// Function ID: 11378
 // Name: useChatInputRefs
-// Dependencies: [19, 5219, 4640, 7141, 7146, 1903, 8611, 676, 4738, 4296, 5716, 4166, 12, 11377, 11381, 11382, 11385, 8353, 7236, 4168, 1607, 1478, 500, 4169, 1872, 698, 10216, 6917, 10215, 11386, 7142, 11387, 4638, 11419, 6004, 2]
+// Dependencies: [19, 5219, 4640, 7141, 7146, 1903, 8611, 676, 4738, 4296, 5716, 4166, 12, 11378, 11382, 11383, 11386, 8353, 7236, 4168, 1607, 1478, 500, 4169, 1872, 698, 10217, 6917, 10216, 11387, 7142, 11388, 4638, 11420, 6004, 2]
 // Exports: default
 
-// Module 11376 (useChatInputRefs)
+// Module 11377 (useChatInputRefs)
 import useKeyboardType from "useKeyboardType";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import { DraftType } from "handleChanged";
@@ -313,7 +313,7 @@ export default function useChatInputRefs(chatInputProps) {
           threadCreationCallback = outer1_13.current.threadCreationCallback;
           if (null != threadCreationCallback) {
             const text = chatInputTextFieldHeight(ref[13]).getText(outer1_8.current, outer1_10.current, (text) => {
-              let obj = chatInputProps(11387);
+              let obj = chatInputProps(11388);
               obj = { text, params: null };
               obj = {};
               const merged = Object.assign(outer2_13.current);
@@ -324,8 +324,8 @@ export default function useChatInputRefs(chatInputProps) {
                 const obj1 = { text: null, threadCreationCallback: null };
                 obj1[0] = result.content;
                 obj1[1] = threadCreationCallback;
-                const result1 = chatInputProps(11387).chatInputCreateThread(obj1);
-                const tmpResult = chatInputProps(11387);
+                const result1 = chatInputProps(11388).chatInputCreateThread(obj1);
+                const tmpResult = chatInputProps(11388);
               }
             });
             tmp.current.sending = false;
@@ -357,7 +357,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                 } else {
                   closure_1.cancel();
-                  let obj = threadCreationCallback(11387);
+                  let obj = threadCreationCallback(11388);
                   obj = { text: null, params: null };
                   obj[0] = arg0;
                   obj = {};
@@ -480,7 +480,7 @@ export default function useChatInputRefs(chatInputProps) {
       handleTextChanged(text) {
         lib(text);
       },
-      insertText(focused, tokenStart, arg2, arg3, arg4) {
+      insertText(focused, tokenStart, flag, arg3, arg4) {
         let selectionStart = tokenStart;
         if (null == tokenStart) {
           selectionStart = closure_14.current.selectionStart;
@@ -492,7 +492,7 @@ export default function useChatInputRefs(chatInputProps) {
         const current = closure_16.current;
         const obj = { location: selectionStart, length: Math.max(0, selectionEnd - selectionStart), text: null, nodes: null, editId: null };
         let text = focused;
-        if (arg2) {
+        if (flag) {
           text = `${focused} `;
         }
         obj[2] = text;

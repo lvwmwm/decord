@@ -1,10 +1,10 @@
-// Module ID: 10346
-// Function ID: 10347
+// Module ID: 10347
+// Function ID: 10348
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1340, 1903, 589, 8036, 10347, 2]
+// Dependencies: [1340, 1903, 589, 8036, 10348, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10346 (useSafetyAlertsSettingOrDefault)
+// Module 10347 (useSafetyAlertsSettingOrDefault)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

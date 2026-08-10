@@ -1,10 +1,10 @@
-// Module ID: 14981
-// Function ID: 14982
+// Module ID: 14983
+// Function ID: 14984
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 9875, 4712, 5767, 5374, 4299, 14982, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 9876, 4712, 5767, 5374, 4299, 14984, 2]
 // Exports: default
 
-// Module 14981 (DevToolsProfilingScreen)
+// Module 14983 (DevToolsProfilingScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -38,7 +38,7 @@ export default function DevToolsProfilingScreen() {
   }, []);
   const tmp3 = createCacheKey();
   const dependencyMap = tmp3;
-  let obj = require(9875) /* addValue */;
+  let obj = require(9876) /* addValue */;
   componentRenderStats = obj.getComponentRenderStats();
   obj = { style: tmp3.container, children: null };
   const tmp = componentRenderStats(React.useState(false), 2);
@@ -91,7 +91,7 @@ export default function DevToolsProfilingScreen() {
     tmp8Result = tmp8(tmp4(5767).TableRowGroup, obj3);
   }
   const obj7 = { spacing: 16, children: null };
-  const items2 = [tmp8Result, closure_5(require(14982) /* DevToolsProfilingUseStateFromStores */.DevToolsProfilingUseStateFromStores, {})];
+  const items2 = [tmp8Result, closure_5(require(14984) /* DevToolsProfilingUseStateFromStores */.DevToolsProfilingUseStateFromStores, {})];
   obj7[1] = items2;
   obj[1] = closure_7(require(4712) /* Stack */.Stack, obj7);
   return closure_5(closure_4, obj);

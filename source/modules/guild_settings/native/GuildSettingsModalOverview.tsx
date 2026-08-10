@@ -1,10 +1,10 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16617
+// Function ID: 16618
 // Name: componentDidMount
-// Dependencies: [19, 1415, 1372, 1961, 4224, 3929, 3938, 1903, 9022, 676, 21, 4303, 712, 1236, 4013, 4001, 5270, 6008, 9021, 10303, 1384, 5761, 4643, 4732, 7790, 4494, 5767, 5374, 8099, 16397, 5768, 7985, 7984, 15278, 1974, 16609, 1416, 10322, 1297, 7976, 5336, 7967, 4712, 5714, 1480, 589, 2]
+// Dependencies: [19, 1415, 1372, 1961, 4224, 3929, 3938, 1903, 9022, 676, 21, 4303, 712, 1236, 4013, 4001, 5270, 6008, 9021, 10304, 1384, 5761, 4643, 4732, 7790, 4494, 5767, 5374, 8099, 16406, 5768, 7985, 7984, 15286, 1974, 16618, 1416, 10323, 1297, 7976, 5336, 7967, 4712, 5714, 1480, 589, 2]
 // Exports: default
 
-// Module 16608 (componentDidMount)
+// Module 16617 (componentDidMount)
 import { isGuildOwnerWithRequiredMfaLevel as closure_3 } from "GuildNSFWContentLevel";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -402,7 +402,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
     hasFlagResult1 = tmp(1384).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     const tmpResult1 = tmp(1384);
   }
-  let result1 = tmp(16397).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
+  let result1 = tmp(16406).isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
   if (!result1) {
     result1 = tmp(1384).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_VOICE_SESSION_NOTIFICATIONS);
     const tmpResult3 = tmp(1384);
@@ -424,7 +424,7 @@ prototype["renderSystemMessageSettings"] = function renderSystemMessageSettings(
   obj1[0] = intl5.string(tmp(1236).t["+f0bXQ"]);
   obj1[1] = !canManage;
   const tmp15 = closure_20;
-  const tmpResult2 = tmp(16397);
+  const tmpResult2 = tmp(16406);
   obj1[2] = !tmp(1384).hasFlag(guild.systemChannelFlags, constants4.SUPPRESS_JOIN_NOTIFICATIONS);
   obj1[3] = self.handleSystemJoinMessages;
   items[1] = callback2(tmp(5768).TableSwitchRow, obj1);
@@ -528,7 +528,7 @@ prototype["renderBoostProgressBar"] = function renderBoostProgressBar() {
   let canManage;
   let guild;
   ({ guild, canManage } = this.props);
-  let obj = require(15278) /* apexExperiment */;
+  let obj = require(15286) /* apexExperiment */;
   let tmp3 = null;
   if (obj.getMobileBoostProgressBarEnabled("GuildSettingsModalOverview")) {
     obj = { title: null, description: null, hasIcons: false, children: null };
@@ -575,7 +575,7 @@ prototype["renderSplash"] = function renderSplash() {
     };
     obj[4] = this.handleSplashChange;
     obj[5] = { width: 1920, height: 1080 };
-    obj[5] = closure_19(importDefault(16609), obj);
+    obj[5] = closure_19(importDefault(16618), obj);
     tmp = tmp2(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
     const obj3 = importDefault(1974);
     const tmp5 = importDefault;
@@ -585,7 +585,7 @@ prototype["renderSplash"] = function renderSplash() {
 prototype["renderSummaries"] = function renderSummaries() {
   const props = this.props;
   const guild = props.guild;
-  let obj = require(10322) /* canSeeChannelSummaries */;
+  let obj = require(10323) /* canSeeChannelSummaries */;
   if (obj.canGuildUseConversationSummaries(guild, false)) {
     const intl = tmp(1236).intl;
     obj = { helpdeskArticle: null };
@@ -657,7 +657,7 @@ prototype["renderBanner"] = function renderBanner() {
     };
     obj[4] = this.handleBannerChange;
     obj[5] = { width: 960, height: 540 };
-    obj[5] = closure_19(importDefault(16609), obj);
+    obj[5] = closure_19(importDefault(16618), obj);
     return closure_19(require(5767) /* TableRowGroupTitle */.TableRowGroup, obj);
   } else {
     return null;

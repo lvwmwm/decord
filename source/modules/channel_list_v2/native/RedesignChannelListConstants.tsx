@@ -1,10 +1,10 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9795
+// Function ID: 9796
 // Name: hairlineWidth
 // Dependencies: [17, 501, 9452, 2]
 // Exports: getScaledCategoryRowHeight, getScaledChannelRowHeight, getScaledChannelSubtitleHeight, getScaledSearchBarHeight
 
-// Module 9794 (hairlineWidth)
+// Module 9795 (hairlineWidth)
 import PlatformTypes from "PlatformTypes";
 
 let c2 = "text-xs/medium";

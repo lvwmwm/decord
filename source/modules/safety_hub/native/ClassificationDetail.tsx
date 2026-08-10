@@ -1,10 +1,10 @@
-// Module ID: 11279
-// Function ID: 11280
+// Module ID: 11280
+// Function ID: 11281
 // Name: ClassificationHeader
-// Dependencies: [19, 17, 1975, 11280, 7805, 676, 21, 4303, 712, 4299, 7806, 1236, 589, 9057, 3998, 10232, 4714, 11285, 11287, 698, 5328, 11288, 7804, 11297, 7061, 7066, 11299, 2]
+// Dependencies: [19, 17, 1975, 11281, 7805, 676, 21, 4303, 712, 4299, 7806, 1236, 589, 9057, 3998, 10233, 4714, 11286, 11288, 698, 5328, 11289, 7804, 11298, 7061, 7066, 11300, 2]
 // Exports: default
 
-// Module 11279 (ClassificationHeader)
+// Module 11280 (ClassificationHeader)
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "useSafetyHubClassifications";
 import _getSystemLocale from "_getSystemLocale";
@@ -174,7 +174,7 @@ function ClassificationPolicyCard(classificationDescription) {
   obj = { style: tmp.classificationPolicyCardIcon, children: null };
   const obj1 = { size: "sm", color: null };
   obj1[1] = importDefault(712).colors.TEXT_LINK;
-  obj[1] = callback(policyExplainerLink(10232).ShieldIcon, obj1);
+  obj[1] = callback(policyExplainerLink(10233).ShieldIcon, obj1);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = { style: tmp.classificationPolicyCardContent, children: null };
   const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };

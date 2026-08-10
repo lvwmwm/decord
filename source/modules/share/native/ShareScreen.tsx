@@ -1,10 +1,10 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13249
+// Function ID: 13250
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1376, 1372, 3929, 676, 10238, 9620, 21, 4303, 712, 500, 1236, 13248, 7306, 1351, 13249, 4542, 698, 9744, 4311, 8924, 10267, 1988, 4644, 13250, 13251, 5277, 8382, 1605, 5270, 10245, 13252, 2]
+// Dependencies: [5, 32, 19, 17, 1376, 1372, 3929, 676, 10239, 9620, 21, 4303, 712, 500, 1236, 13250, 7306, 1351, 13251, 4542, 698, 9745, 4311, 8924, 10268, 1988, 4644, 13252, 13253, 5277, 8382, 1605, 5270, 10246, 13254, 2]
 // Exports: default
 
-// Module 13247 (getAttachmentsRestriction)
+// Module 13249 (getAttachmentsRestriction)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import HeaderBackImage from "HeaderBackImage";
 import allSettled from "allSettled";
@@ -272,7 +272,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              let obj1 = callback(13249);
+                              let obj1 = callback(13251);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = outer1_1;
                               obj1[1] = channel;

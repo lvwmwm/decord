@@ -1,8 +1,8 @@
-// Module ID: 16116
-// Function ID: 16117
-// Dependencies: [19, 21, 16107, 16104, 2]
+// Module ID: 16125
+// Function ID: 16126
+// Dependencies: [19, 21, 16116, 16113, 2]
 
-// Module 16116
+// Module 16125
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 
@@ -11,9 +11,9 @@ let c3 = importAllResult;
 const memoResult = importAllResult.memo(() => {
   let mode;
   let wrapperDimensions;
-  const context = importAllResult.useContext(importDefault(16107));
+  const context = importAllResult.useContext(importDefault(16116));
   ({ mode, wrapperDimensions } = context);
-  return jsx(require(16104) /* BaseActivityPanelSystemUIManager */.BaseActivityPanelSystemUIManager, { mode, isWindowLandscape: wrapperDimensions.isWindowLandscape });
+  return jsx(require(16113) /* BaseActivityPanelSystemUIManager */.BaseActivityPanelSystemUIManager, { mode, isWindowLandscape: wrapperDimensions.isWindowLandscape });
 });
 const result = require("context").fileFinishedImporting("modules/frames/panel/native/FramePanelSystemUIManager.tsx");
 

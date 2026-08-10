@@ -1,9 +1,9 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 12337
+// Function ID: 12338
 // Name: CustomStatusBubble
-// Dependencies: [32, 19, 17, 9357, 1891, 3938, 1903, 8262, 7080, 8785, 5776, 676, 5398, 1369, 21, 8835, 589, 4271, 9466, 1988, 9457, 9450, 8788, 5728, 9243, 4146, 7751, 12336, 1236, 11976, 12337, 4243, 8836, 4493, 5756, 4001, 9469, 10134, 12269, 4714, 9672, 712, 10596, 12339, 12340, 8825, 8837, 1609, 12338, 12459, 12460, 5926, 9467, 8275, 8823, 8832, 1348, 9356, 8213, 12461, 12456, 12462, 12463, 12464, 12465, 11983, 12466, 12271, 12471, 9530, 5751, 12323, 12472, 12326, 12477, 12484, 8956, 8842, 8838, 12491, 4036, 12492, 12511, 12512, 12516, 12517, 5715, 11972, 9562, 12522, 2]
+// Dependencies: [32, 19, 17, 9357, 1891, 3938, 1903, 8262, 7080, 8785, 5776, 676, 5398, 1369, 21, 8835, 589, 4271, 9466, 1988, 9457, 9450, 8788, 5728, 9243, 4146, 7751, 12338, 1236, 11977, 12339, 4243, 8836, 4493, 5756, 4001, 9469, 10135, 12271, 4714, 9672, 712, 10597, 12341, 12342, 8825, 8837, 1609, 12340, 12461, 12462, 5926, 9467, 8275, 8823, 8832, 1348, 9356, 8213, 12463, 12458, 12464, 12465, 12466, 12467, 11984, 12468, 12273, 12473, 9530, 5751, 12325, 12474, 12328, 12479, 12486, 8956, 8842, 8838, 12493, 4036, 12494, 12513, 12514, 12518, 12519, 5715, 11973, 9562, 12524, 2]
 
-// Module 12335 (CustomStatusBubble)
+// Module 12337 (CustomStatusBubble)
 import useBadges from "useBadges";
 import importAllResult from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";
@@ -229,8 +229,8 @@ function EditSection(guildId) {
   let obj1 = guildId(589);
   const items = [createGuildRecordFromRust];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_8.getGuild(guildId));
-  dependencyMap = trackUserProfileAction(10134)();
-  useBadges = trackUserProfileAction(10134)({ guild: stateFromStores });
+  dependencyMap = trackUserProfileAction(10135)();
+  useBadges = trackUserProfileAction(10135)({ guild: stateFromStores });
   obj = { style: trackUserProfileAction(8835)().primaryButtons, maxWidth: ACTION_SHEET_MAX_WIDTH, primaryButton: null, secondaryButton: null };
   const tmp = trackUserProfileAction;
   const tmp3 = trackUserProfileAction(8835)();
@@ -249,7 +249,7 @@ function EditSection(guildId) {
   obj[3] = function onPress() {
     trackUserProfileAction({ action: "EDIT_PROFILE" });
     trackUserProfileAction(4271).hideActionSheet();
-    trackUserProfileAction(10596)();
+    trackUserProfileAction(10597)();
     dependencyMap();
   };
   obj[2] = callback(guildId(4714).Button, obj);
@@ -264,13 +264,13 @@ function EditSection(guildId) {
     obj2[3] = function onPress() {
       trackUserProfileAction({ action: "EDIT_GUILD_PROFILE" });
       trackUserProfileAction(4271).hideActionSheet();
-      trackUserProfileAction(10596)();
+      trackUserProfileAction(10597)();
       callback();
     };
     tmp6Result = tmp6(tmp4(4714).Button, obj2);
   }
   obj[3] = tmp6Result;
-  return callback(trackUserProfileAction(12269), obj);
+  return callback(trackUserProfileAction(12271), obj);
 }
 function UserProfileWidgetsBoardContainer(isCurrentUser) {
   let containerBackground;
@@ -282,9 +282,9 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   const items = [tmp3.card, { backgroundColor: containerBackground }];
   const obj = { style: tmp3.profileContent, children: null };
   if (isCurrentUser) {
-    isCurrentUser = callback(tmp(12339), {});
+    isCurrentUser = callback(tmp(12341), {});
   }
-  const items1 = [isCurrentUser, callback(importDefault(12340), { userId, isVisible, cardStyle: items })];
+  const items1 = [isCurrentUser, callback(importDefault(12342), { userId, isVisible, cardStyle: items })];
   obj[1] = items1;
   return closure_20(closure_6, obj);
 }

@@ -1,9 +1,9 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12541
+// Function ID: 12542
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [19, 17, 7227, 21, 4303, 1481, 12540, 8382, 4714, 1236, 8406, 589, 5992, 7226, 2]
+// Dependencies: [19, 17, 7227, 21, 4303, 1481, 12542, 8382, 4714, 1236, 8406, 589, 5992, 7226, 2]
 
-// Module 12539 (ForumChannelCloseSearchButton)
+// Module 12541 (ForumChannelCloseSearchButton)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import initialize from "initialize";
@@ -53,7 +53,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
   let placeholder;
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(12540);
+  let obj = channelId(12542);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   const tmp = callback();
   const items = [initialize];

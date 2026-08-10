@@ -1,10 +1,10 @@
-// Module ID: 15042
-// Function ID: 15043
+// Module ID: 15044
+// Function ID: 15045
 // Name: IntroScreen
-// Dependencies: [32, 19, 17, 1903, 10338, 21, 4303, 712, 589, 4146, 1480, 6027, 4299, 1236, 4714, 10351, 15043, 10357, 5270, 10375, 4509, 10352, 5783, 2]
+// Dependencies: [32, 19, 17, 1903, 10339, 21, 4303, 712, 589, 4146, 1480, 6027, 4299, 1236, 4714, 10352, 15045, 10358, 5270, 10376, 4509, 10353, 5783, 2]
 // Exports: default
 
-// Module 15042 (IntroScreen)
+// Module 15044 (IntroScreen)
 import _slicedToArray from "_slicedToArray";
 import useSafetyToolsButtonTooltipForChannel from "useSafetyToolsButtonTooltipForChannel";
 import { useState } from "useSafetyToolsButtonTooltipForChannel";
@@ -89,7 +89,7 @@ function TakeActionScreen(arg0) {
   obj1[2] = intl2.string(require(1236) /* getSystemLocale */.t.S0XtKF);
   items[1] = callback2(require(4299) /* Text */.Text, obj1);
   obj[1] = items;
-  const items1 = [callback3(closure_7, obj), callback2(importDefault(15043), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
+  const items1 = [callback3(closure_7, obj), callback2(importDefault(15045), { senderId, channelId, isReported, setReported, trackAnalyticsEvent })];
   obj[1] = items1;
   return callback3(closure_7, obj);
 }
@@ -100,7 +100,7 @@ function SafetyTipsScreen() {
   obj = { showHeader: true, description: null, safetyTips: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.DJMZX6);
-  const tmp2 = importDefault(10357);
+  const tmp2 = importDefault(10358);
   obj[2] = callback().map((children) => callback2(callback(table[12]).Text, { variant: "text-sm/medium", children }, arg1));
   obj[1] = callback2(tmp2, obj);
   obj[1] = callback2(closure_7, obj);

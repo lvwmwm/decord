@@ -1,10 +1,10 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14253
+// Function ID: 14254
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsBountiesModalTransitionsRefactorEnabled
 
-// Module 14251 (apexExperiment)
+// Module 14253 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

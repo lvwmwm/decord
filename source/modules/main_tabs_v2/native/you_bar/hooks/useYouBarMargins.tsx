@@ -1,10 +1,10 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14339
+// Function ID: 14340
 // Name: useYouBarHorizontalMargin
-// Dependencies: [14338, 1609, 501, 1348, 4005, 712, 2]
+// Dependencies: [14340, 1609, 501, 1348, 4005, 712, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 14337 (useYouBarHorizontalMargin)
+// Module 14339 (useYouBarHorizontalMargin)
 import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT";
 
 let c3;

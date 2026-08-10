@@ -1,10 +1,10 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 15914
+// Function ID: 15915
 // Name: WebhookItem
-// Dependencies: [5, 19, 1372, 1961, 1891, 3929, 1903, 15906, 676, 21, 4303, 712, 1480, 1416, 5374, 1297, 1236, 11, 4146, 589, 15907, 7970, 15908, 4013, 1974, 4299, 15910, 5767, 7967, 4712, 5714, 2]
+// Dependencies: [5, 19, 1372, 1961, 1891, 3929, 1903, 15915, 676, 21, 4303, 712, 1480, 1416, 5374, 1297, 1236, 11, 4146, 589, 15916, 7970, 15917, 4013, 1974, 4299, 15919, 5767, 7967, 4712, 5714, 2]
 // Exports: default
 
-// Module 15905 (WebhookItem)
+// Module 15914 (WebhookItem)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import importAllResult from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -256,7 +256,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(15910).WebhookEmpty;
+    obj[0] = tmp5(15919).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;

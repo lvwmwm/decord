@@ -1,10 +1,10 @@
-// Module ID: 14001
-// Function ID: 14002
+// Module ID: 14003
+// Function ID: 14004
 // Name: useIsNewClassification
 // Dependencies: [11, 2]
 // Exports: useIsNewClassification
 
-// Module 14001 (useIsNewClassification)
+// Module 14003 (useIsNewClassification)
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useIsNewClassification.tsx");
 
 export const useIsNewClassification = function useIsNewClassification(classification) {

@@ -1,10 +1,10 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10925
+// Function ID: 10926
 // Name: StageChannelCallList
-// Dependencies: [32, 19, 10925, 5132, 21, 1297, 10926, 5142, 4730, 5148, 38, 10933, 1236, 10934, 10935, 10948, 8008, 10952, 1474, 4849, 2]
+// Dependencies: [32, 19, 10926, 5132, 21, 1297, 10927, 5142, 4730, 5148, 38, 10934, 1236, 10935, 10936, 10949, 8008, 10953, 1474, 4849, 2]
 // Exports: default
 
-// Module 10924 (StageChannelCallList)
+// Module 10925 (StageChannelCallList)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getIsScreenLandscape";
 import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH";
@@ -314,7 +314,7 @@ export default function StageChannelCallList(channel) {
   channel = channel.channel;
   let width;
   let isScreenLandscape;
-  let obj = width(10952);
+  let obj = width(10953);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
   width = isScreenLandscape(1474)().width;
   isScreenLandscape = width(4849).useIsScreenLandscape();
@@ -332,7 +332,7 @@ export default function StageChannelCallList(channel) {
     return obj;
   }, items);
   const obj2 = width(4849);
-  const tmp4 = callback(width(10952).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
+  const tmp4 = callback(width(10953).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   obj = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return callback3(closure_12, obj);
 };

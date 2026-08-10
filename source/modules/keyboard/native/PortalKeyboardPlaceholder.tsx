@@ -1,9 +1,9 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11623
+// Function ID: 11624
 // Name: PortalKeyboardPlaceholderInner
 // Dependencies: [19, 17, 21, 4303, 500, 712, 1607, 1609, 7641, 1474, 5372, 8391, 4168, 1875, 2]
 
-// Module 11622 (PortalKeyboardPlaceholderInner)
+// Module 11623 (PortalKeyboardPlaceholderInner)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";

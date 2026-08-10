@@ -1,10 +1,10 @@
-// Module ID: 10896
-// Function ID: 10897
+// Module ID: 10897
+// Function ID: 10898
 // Name: ExpandedControlItemIcon
-// Dependencies: [19, 17, 4322, 1218, 4364, 21, 4303, 712, 1297, 10897, 10898, 7967, 589, 10899, 1236, 10852, 500, 9148, 9173, 10824, 10900, 10869, 10901, 10902, 2]
+// Dependencies: [19, 17, 4322, 1218, 4364, 21, 4303, 712, 1297, 10898, 10899, 7967, 589, 10900, 1236, 10853, 500, 9148, 9173, 10825, 10901, 10870, 10902, 10903, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 10896 (ExpandedControlItemIcon)
+// Module 10897 (ExpandedControlItemIcon)
 import "stopScreenshare";
 import get_ActivityIndicator from "_handleToggleVideo";
 import reset from "reset";
@@ -36,11 +36,11 @@ function ExpandedControlItemIcon(iconSource) {
       const items = [tmp10, , ];
       obj = { style: null, source: null };
       obj[0] = tmp.sparkle2;
-      obj[1] = importDefault(10897);
+      obj[1] = importDefault(10898);
       items[1] = tmp7(closure_4, obj);
       const obj1 = { style: null, source: null };
       obj1[0] = tmp.sparkle;
-      obj1[1] = importDefault(10898);
+      obj1[1] = importDefault(10899);
       items[2] = tmp7(closure_4, obj1);
       obj[0] = items;
       tmp6 = callback2(closure_3, obj);
@@ -115,16 +115,16 @@ export const StreamVolumeItem = function StreamVolumeItem() {
   if (stateFromStores != null) {
     ownerId = stateFromStores.ownerId;
   }
-  const tmp6 = importDefault(10899);
-  ({ effectiveVolume, handleVolumeChange } = importDefault(10899)(ownerId, MediaEngineContextTypes.STREAM));
+  const tmp6 = importDefault(10900);
+  ({ effectiveVolume, handleVolumeChange } = importDefault(10900)(ownerId, MediaEngineContextTypes.STREAM));
   obj = { text: null, style: null };
   const intl = tmp2(1236).intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.pEAl4b);
   const items1 = [tmp.formColor, { marginBottom: 16 }];
   obj[1] = items1;
   const items2 = [callback(require(7967) /* Form */.FormLabel, obj), ];
-  const tmp6Result = importDefault(10899)(ownerId, MediaEngineContextTypes.STREAM);
-  const tmp5Result = importDefault(10852);
+  const tmp6Result = importDefault(10900)(ownerId, MediaEngineContextTypes.STREAM);
+  const tmp5Result = importDefault(10853);
   let fn;
   if (tmp2Result.isAndroid()) {
     fn = () => true;
@@ -163,7 +163,7 @@ export const ScreenshareButton = function ScreenshareButton(arg0) {
   let onPress;
   let text;
   ({ channel, disabled } = arg0);
-  const tmp = importDefault(10824)(channel);
+  const tmp = importDefault(10825)(channel);
   const isFeatureEnabled = tmp.isFeatureEnabled;
   disabled = !isFeatureEnabled;
   ({ onPress, imgSource, text } = tmp);
@@ -174,9 +174,9 @@ export const DeafenButton = function DeafenButton(disabled) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = require(10869) /* NOOP */;
-  const deafHandler = obj.createDeafHandler(importDefault(10900)(disabled.channel));
-  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10901 : 10902), label: null };
+  let obj = require(10870) /* NOOP */;
+  const deafHandler = obj.createDeafHandler(importDefault(10901)(disabled.channel));
+  obj = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 10902 : 10903), label: null };
   const intl = tmp4(1236).intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t.wjcRFX);
   return callback(ExpandedControlItem, obj);

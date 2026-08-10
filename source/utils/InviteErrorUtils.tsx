@@ -1,10 +1,10 @@
-// Module ID: 12078
-// Function ID: 12079
+// Module ID: 12079
+// Function ID: 12080
 // Name: getDescriptiveInviteError
 // Dependencies: [1903, 676, 3947, 1236, 1974, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 12078 (getDescriptiveInviteError)
+// Module 12079 (getDescriptiveInviteError)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";
 

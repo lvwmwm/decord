@@ -1,10 +1,10 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 16968
+// Function ID: 16969
 // Name: PendingRequestRow
-// Dependencies: [19, 17, 1903, 21, 4303, 712, 1297, 589, 16957, 16960, 1416, 4299, 1236, 2546, 4846, 2284, 9229, 14168, 14122, 4002, 4712, 6027, 12230, 14127, 2]
+// Dependencies: [19, 17, 1903, 21, 4303, 712, 1297, 589, 16966, 16969, 1416, 4299, 1236, 2546, 4846, 2284, 9229, 14170, 14124, 4002, 4712, 6027, 12232, 14129, 2]
 // Exports: default
 
-// Module 16959 (PendingRequestRow)
+// Module 16968 (PendingRequestRow)
 import dispatcher from "dispatcher";
 import get_ActivityIndicator from "registerAsset";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -228,8 +228,8 @@ export default function PendingRequestList(arg0) {
   ({ pendingRequests, linkedUsersProcessed, expiresAt, onRefreshLinkCode, onInviteAnotherGuardian, onShare } = arg0);
   const tmp = createCacheKey();
   _require = tmp;
-  importDefault(14122)(expiresAt, onRefreshLinkCode);
-  let obj = _require(16957);
+  importDefault(14124)(expiresAt, onRefreshLinkCode);
+  let obj = _require(16966);
   obj = {
     pendingRequests,
     linkedUsersProcessed,
@@ -311,7 +311,7 @@ export default function PendingRequestList(arg0) {
   const items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj12[3] = items5;
-  obj12[4] = callback(_require(12230).ShareIcon, { size: "sm", color: tmp.declineIcon.color });
+  obj12[4] = callback(_require(12232).ShareIcon, { size: "sm", color: tmp.declineIcon.color });
   const items6 = [callback(_require(4846).PressableOpacity, obj12), ];
   const obj14 = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
   const intl5 = tmp5(1236).intl;
@@ -320,7 +320,7 @@ export default function PendingRequestList(arg0) {
   const items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);
   obj14[3] = items7;
-  obj14[4] = callback(_require(14127).QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
+  obj14[4] = callback(_require(14129).QrCodeIcon, { size: "sm", color: tmp.declineIcon.color });
   items6[1] = callback(_require(4846).PressableOpacity, obj14);
   obj11[1] = items6;
   items3[2] = closure_8(c5, obj11);

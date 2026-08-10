@@ -1,9 +1,9 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 15808
+// Function ID: 15809
 // Name: MuteButton
-// Dependencies: [19, 17, 3930, 3931, 1372, 4499, 8395, 9669, 676, 8396, 21, 4303, 11743, 712, 4005, 589, 1480, 7751, 1236, 9731, 8058, 11670, 11731, 4517, 6007, 9666, 8016, 6012, 15801, 4648, 4036, 4304, 15699, 4307, 11073, 4846, 5274, 2]
+// Dependencies: [19, 17, 3930, 3931, 1372, 4499, 8395, 9669, 676, 8396, 21, 4303, 11744, 712, 4005, 589, 1480, 7751, 1236, 9732, 8058, 11671, 11732, 4517, 6007, 9666, 8016, 6012, 15809, 4648, 4036, 4304, 15707, 4307, 11074, 4846, 5274, 2]
 
-// Module 15800 (MuteButton)
+// Module 15808 (MuteButton)
 import importAllResult from "registerAsset";
 import { View } from "IconButton";
 import initialize from "initialize";
@@ -56,7 +56,7 @@ function MuteButton(channelId) {
   obj[1] = callback;
   obj[2] = token1;
   obj[3] = token;
-  obj[4] = tmp5(stateFromStores ? 9731 : 8058);
+  obj[4] = tmp5(stateFromStores ? 9732 : 8058);
   return closure_15(channelId(7751).IconButton, obj, constants.MUTE);
 }
 function SearchButton(channelId) {
@@ -299,7 +299,7 @@ let closure_24 = importAllResult.forwardRef((cleanUp, ref) => {
   const animatedStyle = obj.useAnimatedStyle(S);
   obj = { style: items, children: null };
   items = [callback4().searchHeader, animatedStyle];
-  obj[1] = callback2(cleanUp(15699), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
+  obj[1] = callback2(cleanUp(15707), { ref, channelId: channel.id, guildId: channel.guild_id, onSuggestionsLayoutMesure: onSuggestionsLayoutMeasure, suggestionsDismissed, setSuggestionsDismissed, showBackButton: true });
   return callback2(cleanUp(4036).View, obj);
 });
 let closure_25 = { code: "function ChannelDetailsNavigationBarTsx3(){const{isActive,withTiming,timingFast,runOnJS,cleanUp,width}=this.__closure;return{pointerEvents:isActive?'auto':'none',opacity:withTiming(isActive?1:0,timingFast,'animate-always',function(finished){if(finished)runOnJS(cleanUp)();}),width:width};}" };

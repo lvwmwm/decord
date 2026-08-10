@@ -1,10 +1,10 @@
-// Module ID: 15140
-// Function ID: 15141
+// Module ID: 15142
+// Function ID: 15143
 // Name: getActiveTabsRoute
 // Dependencies: [32, 19, 1372, 1960, 4124, 676, 1379, 4159, 4158, 4161, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 15140 (getActiveTabsRoute)
+// Module 15142 (getActiveTabsRoute)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

@@ -1,9 +1,9 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11723
+// Function ID: 11724
 // Name: create
-// Dependencies: [11720, 11721, 2]
+// Dependencies: [11721, 11722, 2]
 
-// Module 11722 (create)
+// Module 11723 (create)
 import { AbstractSearchFetchManager } from "cleanUp";
 
 class SearchFetchManager extends AbstractSearchFetchManager {
@@ -14,7 +14,7 @@ SearchFetchManager.prototype["create"] = function create(arg0) {
   let searchType;
   ({ id, searchType, searchQuery } = arg0);
   this.cancel(id);
-  const searchFetcherImpl = new require(11721) /* fetch */.SearchFetcherImpl(id, searchType, searchQuery);
+  const searchFetcherImpl = new require(11722) /* fetch */.SearchFetcherImpl(id, searchType, searchQuery);
   const result = this.set(id, searchFetcherImpl);
   return searchFetcherImpl;
 };

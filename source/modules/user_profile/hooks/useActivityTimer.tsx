@@ -1,10 +1,10 @@
-// Module ID: 12298
-// Function ID: 12299
+// Module ID: 12300
+// Function ID: 12301
 // Name: useActivityTimer
 // Dependencies: [32, 19, 687, 8238, 4188, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 12298 (useActivityTimer)
+// Module 12300 (useActivityTimer)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

@@ -1,10 +1,10 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 12565
+// Function ID: 12566
 // Name: ForLaterCardActionButtons
-// Dependencies: [19, 17, 21, 4303, 4271, 10278, 1988, 10271, 10277, 1236, 11131, 5326, 12564, 9672, 8598, 7751, 8605, 2]
+// Dependencies: [19, 17, 21, 4303, 4271, 10279, 1988, 10272, 10278, 1236, 11132, 5326, 12566, 9672, 8598, 7751, 8605, 2]
 // Exports: default
 
-// Module 12563 (ForLaterCardActionButtons)
+// Module 12565 (ForLaterCardActionButtons)
 import noop from "noop";
 import { View } from "set";
 import { jsx } from "jsxProd";
@@ -42,7 +42,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
   }, items);
   let intl = savedMessage(1236).intl;
   obj[0] = intl.string(savedMessage(1236).t["+TSRGD"]);
-  obj[1] = savedMessage(11131).ChatArrowRightIcon;
+  obj[1] = savedMessage(11132).ChatArrowRightIcon;
   obj[2] = function action() {
     return jumpToMessage();
   };
@@ -86,7 +86,7 @@ export default function ForLaterCardActionButtons(savedMessage) {
     let obj2 = { label: null, IconComponent: null, action: null };
     obj2[0] = intl3.string(savedMessage.throttledNow > savedMessage.saveData.dueAt ? t.GtBCnz : t.vrbqs1);
     if (savedMessage.throttledNow > savedMessage.saveData.dueAt) {
-      let PencilIcon = tmp3(12564).BellZIcon;
+      let PencilIcon = tmp3(12566).BellZIcon;
     } else {
       PencilIcon = tmp3(9672).PencilIcon;
     }

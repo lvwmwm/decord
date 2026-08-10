@@ -1,10 +1,10 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12857
+// Function ID: 12858
 // Name: ProgressBarMarkerInnerContent
-// Dependencies: [19, 17, 676, 21, 12856, 12857, 12858, 4303, 712, 4239, 4036, 4713, 11942, 4151, 4153, 11036, 4299, 4195, 2]
+// Dependencies: [19, 17, 676, 21, 12858, 12859, 12860, 4303, 712, 4239, 4036, 4713, 11943, 4151, 4153, 11037, 4299, 4195, 2]
 // Exports: default
 
-// Module 12855 (ProgressBarMarkerInnerContent)
+// Module 12857 (ProgressBarMarkerInnerContent)
 import noop from "noop";
 import get_ActivityIndicator from "getGuildTierFromGuild";
 import { BoostedGuildTiers } from "ME";
@@ -101,7 +101,7 @@ function ProgressBarMarkerInnerContent(arg0) {
     const tmp14 = closure_4;
     const tmp15 = closure_7;
   } else if (isDisabled) {
-    let tmp18Result = tmp18(tmp3(11942).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+    let tmp18Result = tmp18(tmp3(11943).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
   } else {
     obj1 = { source: null, style: null };
     obj1[0] = obj[tier];
@@ -235,7 +235,7 @@ export default function ProgressBarMarker(arg0) {
     }
     if (tmp15Result) {
       const obj5 = { source: null, style: null };
-      obj5[0] = tmp2(11036);
+      obj5[0] = tmp2(11037);
       obj5[1] = tmp.progressBarMarkerUnlockedIcon;
       tmp15Result = tmp15(closure_5, obj5);
     }

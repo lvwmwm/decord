@@ -1,10 +1,10 @@
-// Module ID: 11000
-// Function ID: 11001
+// Module ID: 11001
+// Function ID: 11002
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4341, 4349, 676, 7196, 8053, 1236, 11001, 5852, 5848, 3222, 8213, 7651, 4292, 7757, 501, 589, 1351, 5734, 2]
+// Dependencies: [32, 19, 4341, 4349, 676, 7196, 8053, 1236, 11002, 5852, 5848, 3222, 8213, 7651, 4292, 7757, 501, 589, 1351, 5734, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 11000 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11001 (createSocialLayerStorefrontProductDetailsEmbed)
 import _slicedToArray from "_slicedToArray";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import addApplication from "addApplication";
@@ -50,7 +50,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11001)(application)) {
+        if (tmp(11002)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = require(5852) /* useSKUPrice */.isSlayerSkuAvailableOnThisPlatform(value);
             const obj4 = require(5852) /* useSKUPrice */;

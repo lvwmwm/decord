@@ -1,10 +1,10 @@
-// Module ID: 9998
-// Function ID: 9999
+// Module ID: 9999
+// Function ID: 10000
 // Name: resolvePlaintextInlineVoid
 // Dependencies: [32, 5176, 5223, 1372, 1961, 1971, 1964, 1891, 3929, 3938, 1903, 676, 1906, 7145, 4494, 11, 5159, 3942, 3946, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9998 (resolvePlaintextInlineVoid)
+// Module 9999 (resolvePlaintextInlineVoid)
 import _slicedToArray from "_slicedToArray";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import rebuild from "rebuild";

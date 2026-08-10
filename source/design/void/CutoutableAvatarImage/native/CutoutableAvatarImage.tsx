@@ -1,9 +1,9 @@
-// Module ID: 12303
-// Function ID: 12304
+// Module ID: 12305
+// Function ID: 12306
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [19, 17, 12304, 21, 3, 1416, 12305, 12306, 8293, 5268, 4036, 4713, 514, 7835, 643, 2]
+// Dependencies: [19, 17, 12306, 21, 3, 1416, 12307, 12308, 8293, 5268, 4036, 4713, 514, 7835, 643, 2]
 
-// Module 12303 (StaticNativeCutoutAvatarImage)
+// Module 12305 (StaticNativeCutoutAvatarImage)
 import importAllResult from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_SPRING_CONFIG } from "n";
@@ -26,7 +26,7 @@ function StaticNativeCutoutAvatarImage(cutout) {
     return items;
   }, items);
   const obj = { style, cutouts: memo, children: null };
-  const tmp2 = importDefault(12306)(source);
+  const tmp2 = importDefault(12308)(source);
   const items1 = [obj.image, imageStyle];
   obj[2] = callback(importDefault(5268), { style: items1, source: tmp2, usesSmallCache: true });
   return callback(importDefault(8293), obj);
@@ -73,7 +73,7 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
   const animatedProps = obj.useAnimatedProps(fn);
   obj = { style, animatedProps, children: null };
   const items = [obj.image, imageStyle];
-  obj[2] = callback(importDefault(5268), { style: items, source: importDefault(12306)(source), usesSmallCache: true });
+  obj[2] = callback(importDefault(5268), { style: items, source: importDefault(12308)(source), usesSmallCache: true });
   return callback(cutout(8293).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
@@ -134,7 +134,7 @@ function CutoutAvatarImage(arg0) {
       obj1 = { tintColor: null };
       obj1[0] = tintColor;
       obj[0] = obj1;
-      obj[1] = importDefault(12306)(source);
+      obj[1] = importDefault(12308)(source);
       obj[5] = callback(importDefault(5268), obj);
       let tmp8 = callback(Circle(7835).ForeignObject, obj);
       let tmp9 = importDefault;
@@ -201,7 +201,7 @@ function CutoutAvatarImage(arg0) {
     tmp9Result = tmp9(7835);
   }
   const obj10 = { x: "0", y: "0", height: "100%", width: "100%", href: null, mask: null };
-  obj10[4] = importDefault(12306)(source);
+  obj10[4] = importDefault(12308)(source);
   obj10[5] = "url(#" + v4Result + ")";
   tmp8 = callback(Circle(7835).Image, obj10);
   tmp9 = importDefault;
@@ -285,7 +285,7 @@ const memoResult = importAllResult.memo((style) => {
   } else if (null != user) {
     avatarSource = user.getAvatarSource(tmp6, animate2, size2);
   } else if (null != channel) {
-    let obj1 = require(12305) /* getChannelIconURL */;
+    let obj1 = require(12307) /* getChannelIconURL */;
     const channelIconURL = obj1.getChannelIconURL(channel, size2);
     let tmp13 = channelIconURL;
     if (typeof channelIconURL !== "number") {

@@ -1,10 +1,10 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15310
+// Function ID: 15311
 // Name: isFavoritesSection
 // Dependencies: [676, 6987, 4498, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 15302 (isFavoritesSection)
+// Module 15310 (isFavoritesSection)
 import { AnalyticEvents } from "ME";
 
 const result = require("collectGuildAnalyticsMetadata").fileFinishedImporting("modules/channel_list_v2/native/ChannelListUtils.tsx");

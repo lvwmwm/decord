@@ -1,8 +1,8 @@
-// Module ID: 15168
-// Function ID: 15169
-// Dependencies: [19, 4295, 1218, 4390, 11371, 1903, 9794, 21, 4303, 712, 1297, 589, 9663, 2]
+// Module ID: 15170
+// Function ID: 15171
+// Dependencies: [19, 4295, 1218, 4390, 11372, 1903, 9795, 21, 4303, 712, 1297, 589, 9663, 2]
 
-// Module 15168
+// Module 15170
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";
@@ -116,7 +116,7 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
   } else {
     tmp11Result = null;
     if (null != stateFromStores2) {
-      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: null, size: null, animate: null, typing: null, autoStatusCutout: null };
+      obj = { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "none", size: ",", animate: false, typing: false, autoStatusCutout: null };
       obj[0] = stateFromStores2;
       obj[1] = stateFromStores2.avatarDecoration;
       obj[3] = stateFromStores3;
@@ -131,7 +131,7 @@ const memoResult = require("noop").memo(function MessagesItemChannelAvatar(chann
       obj[8] = REFRESH_MEDIUM_32;
       obj[9] = stateFromStores1;
       obj[10] = stateFromStores;
-      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: null, size: null, animate: null, typing: null, autoStatusCutout: null });
+      tmp11Result = jsx(tmp3(1297).Avatar, { user: null, avatarDecoration: null, guildId: "e", isMobileOnline: true, isVROnline: false, status: true, streaming: true, style: "none", size: ",", animate: false, typing: false, autoStatusCutout: null });
       const tmp11 = jsx;
     }
   }

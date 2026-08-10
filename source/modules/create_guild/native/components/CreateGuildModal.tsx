@@ -1,10 +1,10 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12064
+// Function ID: 12065
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 1961, 8507, 676, 21, 11834, 9072, 698, 5232, 12062, 503, 5270, 12064, 12066, 11704, 1236, 12067, 8382, 12069, 12070, 12081, 8410, 5783, 2]
+// Dependencies: [19, 17, 1961, 8507, 676, 21, 11835, 9072, 698, 5232, 12063, 503, 5270, 12065, 12067, 11705, 1236, 12068, 8382, 12070, 12071, 12082, 8410, 5783, 2]
 // Exports: default
 
-// Module 12063 (CreateGuildModal)
+// Module 12064 (CreateGuildModal)
 import JoinServerContainer from "JoinServerContainer";
 import { Keyboard } from "SeeMoreFooter";
 import comparator from "comparator";
@@ -74,7 +74,7 @@ export default function CreateGuildModal(channel) {
     let obj2 = channel(onSuccess[12]);
     obj[4] = obj2.getHeaderCloseButton(initialState(onSuccess[10]).closeCreateGuildModal);
     obj[5] = function render() {
-      return callback3(callback2(12064), { trigger: constants.IN_APP });
+      return callback3(callback2(12065), { trigger: constants.IN_APP });
     };
     obj[outer1_6.GUILD_TEMPLATES] = obj;
     obj = {
@@ -85,7 +85,7 @@ export default function CreateGuildModal(channel) {
         return null;
       },
       render(guildTemplate) {
-        return callback3(callback2(12066), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
+        return callback3(callback2(12067), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
       }
     };
     obj[outer1_6.CREATION_INTENT] = obj;
@@ -121,7 +121,7 @@ export default function CreateGuildModal(channel) {
         };
         const intl = callback(1236).intl;
         obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-        return callback3(callback2(11704), obj);
+        return callback3(callback2(11705), obj);
       }
     };
     obj2 = {
@@ -181,7 +181,7 @@ export default function CreateGuildModal(channel) {
         };
         const intl = callback(1236).intl;
         obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-        return callback3(callback2(11704), obj);
+        return callback3(callback2(11705), obj);
       }
     };
     let tmp2 = channel;
@@ -232,8 +232,8 @@ export default function CreateGuildModal(channel) {
       },
       render(code) {
         const obj = { code: code.code, onPressClose: null };
-        obj[1] = callback2(12062).closeCreateGuildModal;
-        return callback3(callback2(12070), obj);
+        obj[1] = callback2(12063).closeCreateGuildModal;
+        return callback3(callback2(12071), obj);
       }
     };
     const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: true };
@@ -245,7 +245,7 @@ export default function CreateGuildModal(channel) {
       return null;
     };
     obj5[6] = function render() {
-      return callback3(callback2(12081), { isNestedNavigator: true });
+      return callback3(callback2(12082), { isNestedNavigator: true });
     };
     obj[outer1_6.JOIN_STUDENT_HUB] = obj5;
     return obj;

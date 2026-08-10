@@ -1,9 +1,9 @@
-// Module ID: 16224
-// Function ID: 16225
+// Module ID: 16233
+// Function ID: 16234
 // Name: StreamPreview
-// Dependencies: [5, 32, 19, 17, 1371, 4317, 12994, 4322, 1218, 1372, 3929, 4318, 1903, 4319, 4376, 11645, 11648, 676, 12999, 21, 4303, 11649, 712, 11644, 5129, 4483, 4367, 589, 5781, 4299, 1236, 12313, 5734, 3919, 16215, 1474, 4036, 10647, 10646, 10749, 4846, 16213, 4714, 9349, 503, 7793, 9177, 4493, 5374, 10251, 10403, 5728, 5748, 698, 16181, 16225, 4713, 4648, 8009, 16103, 16227, 2]
+// Dependencies: [5, 32, 19, 17, 1371, 4317, 12996, 4322, 1218, 1372, 3929, 4318, 1903, 4319, 4376, 11646, 11649, 676, 13001, 21, 4303, 11650, 712, 11645, 5129, 4483, 4367, 589, 5781, 4299, 1236, 12315, 5734, 3919, 16224, 1474, 4036, 10648, 10647, 10750, 4846, 16222, 4714, 9349, 503, 7793, 9177, 4493, 5374, 10252, 10404, 5728, 5748, 698, 16190, 16234, 4713, 4648, 8009, 16112, 16236, 2]
 
-// Module 16224 (StreamPreview)
+// Module 16233 (StreamPreview)
 import set from "set";
 import useGetOrFetchApplications from "useGetOrFetchApplications";
 import importAllResult from "jsxProd";
@@ -707,10 +707,10 @@ let closure_37 = { code: "function VoicePanelPreJoinContentTsx3(){const{windowDi
 let closure_38 = { code: "function VoicePanelPreJoinContentTsx4(finished=false){const{transitionState,TransitionStates,runOnJS,transitionCleanUp}=this.__closure;finished&&transitionState===TransitionStates.YEETED&&runOnJS(transitionCleanUp)();}" };
 let obj4 = { display: "flex", flexDirection: "row", alignItems: "center", gap: require("Themes").space.PX_8, padding: require("Themes").space.PX_8, borderRadius: require("Themes").radii.xs, borderColor: require("Themes").colors.ICON_FEEDBACK_WARNING, borderWidth: 1, backgroundColor: require("Themes").colors.BACKGROUND_FEEDBACK_WARNING, marginHorizontal: require("Themes").space.PX_16 };
 const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
-  const context = importAllResult.useContext(guildId(11644));
+  const context = importAllResult.useContext(guildId(11645));
   const channelId = context.channelId;
   guildId = context.guildId;
-  const tmp2 = guildId(16103)(channelId);
+  const tmp2 = guildId(16112)(channelId);
   const dependencyMap = tmp2;
   let obj = channelId(589);
   let items = [getVoiceStatesForGuild, init, participantFromServer, reset];
@@ -751,7 +751,7 @@ const memoResult = importAllResult.memo(function VoicePanelPreJoinWrapper() {
       obj[4] = ignoredUsersForVoiceChannel;
       return obj;
     }
-  }, items1, channelId(16227).areVoicePanelPreJoinContentPropsEqual);
+  }, items1, channelId(16236).areVoicePanelPreJoinContentPropsEqual);
   obj = { item: stateFromStores, renderItem };
   return callback(channelId(4648).TransitionItem, obj);
 });

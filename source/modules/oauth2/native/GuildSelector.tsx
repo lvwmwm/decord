@@ -1,10 +1,10 @@
-// Module ID: 10530
-// Function ID: 10531
+// Module ID: 10531
+// Function ID: 10532
 // Name: styles
 // Dependencies: [19, 17, 676, 21, 4303, 712, 4271, 8968, 1988, 1236, 506, 4299, 1297, 7967, 2]
 // Exports: default
 
-// Module 10530 (styles)
+// Module 10531 (styles)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { Permissions } from "ME";

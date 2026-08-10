@@ -1,10 +1,10 @@
-// Module ID: 9893
-// Function ID: 9894
+// Module ID: 9894
+// Function ID: 9895
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 9868, 5374, 4271, 7986, 5369, 12, 5229, 8523, 9629, 5397, 5396, 1236, 5992, 8526, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 9869, 5374, 4271, 7986, 5369, 12, 5229, 8523, 9629, 5397, 5396, 1236, 5992, 8526, 2]
 // Exports: default
 
-// Module 9893 (BugReporterFeatureActionSheet)
+// Module 9894 (BugReporterFeatureActionSheet)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "SearchField";
 import { View } from "RedesignBottomSheetTitleHeaderBase";
@@ -40,9 +40,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(9868);
+  let obj = item(9869);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(9868).getFeatureId(feature);
+  const featureId1 = item(9869).getFeatureId(feature);
   obj = {
     start,
     end,

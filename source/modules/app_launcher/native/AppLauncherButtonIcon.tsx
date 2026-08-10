@@ -1,10 +1,10 @@
-// Module ID: 11614
-// Function ID: 11615
+// Module ID: 11615
+// Function ID: 11616
 // Name: AppLauncherButtonIcon
 // Dependencies: [19, 17, 21, 4168, 1607, 9706, 7690, 2]
 // Exports: AppLauncherButtonIcon
 
-// Module 11614 (AppLauncherButtonIcon)
+// Module 11615 (AppLauncherButtonIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

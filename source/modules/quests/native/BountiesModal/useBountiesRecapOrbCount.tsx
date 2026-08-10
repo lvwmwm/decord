@@ -1,10 +1,10 @@
-// Module ID: 14257
-// Function ID: 14258
+// Module ID: 14259
+// Function ID: 14260
 // Name: getRecapOrbCountFromPullProgress
-// Dependencies: [32, 19, 4036, 14253, 2]
+// Dependencies: [32, 19, 4036, 14255, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 14257 (getRecapOrbCountFromPullProgress)
+// Module 14259 (getRecapOrbCountFromPullProgress)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

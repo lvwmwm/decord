@@ -1,10 +1,10 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15528
+// Function ID: 15529
 // Name: PAGE_SIZE_WITH_MENTIONS
-// Dependencies: [5, 32, 19, 7098, 7100, 15519, 4500, 589, 15521, 5253, 8305, 2]
+// Dependencies: [5, 32, 19, 7098, 7100, 15527, 4500, 589, 15529, 5253, 8305, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 15520 (PAGE_SIZE_WITH_MENTIONS)
+// Module 15528 (PAGE_SIZE_WITH_MENTIONS)
 import handleLoadFinished from "handleLoadFinished";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

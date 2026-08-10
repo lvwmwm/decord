@@ -1,10 +1,10 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12459
+// Function ID: 12460
 // Name: useIsMobileGameCollectionExperimentEnabled
 // Dependencies: [1452, 2]
 // Exports: useIsMobileGameCollectionExperimentEnabled
 
-// Module 12457 (useIsMobileGameCollectionExperimentEnabled)
+// Module 12459 (useIsMobileGameCollectionExperimentEnabled)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null };

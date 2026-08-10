@@ -1,10 +1,10 @@
-// Module ID: 10843
-// Function ID: 10844
+// Module ID: 10844
+// Function ID: 10845
 // Name: useIsVideoMode
 // Dependencies: [4322, 1372, 4351, 1960, 4319, 589, 2]
 // Exports: default, isVideoMode
 
-// Module 10843 (useIsVideoMode)
+// Module 10844 (useIsVideoMode)
 import reset from "reset";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";

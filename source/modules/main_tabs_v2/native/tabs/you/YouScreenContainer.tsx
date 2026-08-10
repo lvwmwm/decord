@@ -1,8 +1,8 @@
-// Module ID: 15851
-// Function ID: 15852
-// Dependencies: [19, 17, 9574, 21, 4303, 712, 1609, 15149, 1474, 4161, 15852, 501, 2]
+// Module ID: 15860
+// Function ID: 15861
+// Dependencies: [19, 17, 9574, 21, 4303, 712, 1609, 15151, 1474, 4161, 15861, 501, 2]
 
-// Module 15851
+// Module 15860
 import { View } from "get ActivityIndicator";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 import { jsx } from "jsxProd";
@@ -23,7 +23,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
   let items1 = callback();
   let tmp = importDefault;
   let tmp5Result = dependencyMap;
-  let obj = require(15149) /* trackTabPressed */;
+  let obj = require(15151) /* trackTabPressed */;
   const trackTabPerformance = obj.useTrackTabPerformance(RootNavigatorScreen.YOU);
   if (route != null) {
     const params = route.params;
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
       obj2[0] = 0.6 * tmp(1474)().width;
       items1[1] = obj2;
       obj1[0] = items1;
-      tmp = tmp(15852);
+      tmp = tmp(15861);
       const obj3 = { initialTab: null };
       obj3[0] = initialTab;
       tmp5Result = tmp5(tmp, obj3);
@@ -62,14 +62,14 @@ const memoResult = importAllResult.memo(function YouScreenContainer(route) {
     } else {
       const obj4 = { initialTab: null };
       obj4[0] = initialTab;
-      tmp5Result = tmp5(tmp(15852), obj4);
+      tmp5Result = tmp5(tmp(15861), obj4);
     }
     obj[1] = tmp5Result;
     tmp5(View, obj);
   } else {
     const obj5 = { initialTab: null };
     obj5[0] = initialTab;
-    return tmp5(tmp(15852), obj5);
+    return tmp5(tmp(15861), obj5);
   }
 });
 const result = require("MODE_CHANGE_PHYSICS").fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");

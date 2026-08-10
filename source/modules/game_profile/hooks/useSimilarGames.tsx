@@ -1,10 +1,10 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12179
+// Function ID: 12180
 // Name: useSimilarGames
 // Dependencies: [4324, 1903, 9341, 9340, 7092, 589, 9273, 4835, 2]
 // Exports: default
 
-// Module 12177 (useSimilarGames)
+// Module 12179 (useSimilarGames)
 import handleLoadMessages from "handleLoadMessages";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set";

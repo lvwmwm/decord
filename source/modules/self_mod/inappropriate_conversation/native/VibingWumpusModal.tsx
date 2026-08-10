@@ -1,10 +1,10 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 10384
+// Function ID: 10385
 // Name: VibingWumpusScreen
-// Dependencies: [32, 19, 17, 4295, 10338, 10384, 676, 21, 4303, 712, 647, 9725, 698, 10385, 5719, 10386, 4299, 1236, 4714, 4509, 8855, 8857, 5783, 2]
+// Dependencies: [32, 19, 17, 4295, 10339, 10385, 676, 21, 4303, 712, 647, 9726, 698, 10386, 5719, 10387, 4299, 1236, 4714, 4509, 8855, 8857, 5783, 2]
 // Exports: default
 
-// Module 10383 (VibingWumpusScreen)
+// Module 10384 (VibingWumpusScreen)
 import _slicedToArray from "_slicedToArray";
 import module_4509 from "module_4509";
 import get_ActivityIndicator from "getSystemLocale";
@@ -67,7 +67,7 @@ class VibingWumpusScreen {
     obj1 = { style: tmp.container, children: null };
     obj2 = { source: null, ref: null, autoPlay: null, loop: true, style: null, progress: null };
     tmp14 = require("play");
-    obj2[0] = require("module_10386");
+    obj2[0] = require("module_10387");
     obj2[1] = ref;
     obj2[2] = !stateFromStores;
     obj2[4] = tmp.wumpus;

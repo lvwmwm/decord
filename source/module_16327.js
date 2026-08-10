@@ -4,15 +4,16 @@
 
 // Module 16327
 globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "vi",
+  locale: "no",
   pluralRuleFunction(arg0, arg1) {
     let str = "other";
-    if (arg1) {
-      str = "other";
+    let str2 = "other";
+    if (!arg1) {
       if (1 == arg0) {
         str = "one";
       }
+      str2 = str;
     }
-    return str;
+    return str2;
   }
 });

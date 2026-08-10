@@ -1,10 +1,10 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11247
+// Function ID: 11248
 // Name: TransferOwnership
-// Dependencies: [5, 32, 19, 17, 1903, 11245, 676, 21, 4303, 712, 4005, 1480, 589, 38, 9021, 11243, 4001, 4493, 5779, 4299, 11247, 1297, 1236, 4146, 5767, 8448, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 11246, 676, 21, 4303, 712, 4005, 1480, 589, 38, 9021, 11244, 4001, 4493, 5779, 4299, 11248, 1297, 1236, 4146, 5767, 8448, 4714, 2]
 // Exports: default
 
-// Module 11246 (TransferOwnership)
+// Module 11247 (TransferOwnership)
 import closure_3 from "TransferOwnershipModalScenes";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -99,8 +99,8 @@ export default function TransferOwnership(guild) {
               }
               const obj4 = v0(arr[14]);
               v0(arr[14]).transferOwnership(outer1_0.id, v0.id, MFA).then(() => {
-                v1(11243).close();
-                const obj = v1(11243);
+                v1(11244).close();
+                const obj = v1(11244);
                 v1(9021).close();
                 const obj2 = v1(9021);
                 const result = tmp2(4001).showTransferOwnershipSuccess();
@@ -185,7 +185,7 @@ export default function TransferOwnership(guild) {
   obj1 = { paddingTop: toUser(712).space.PX_16, paddingHorizontal: token };
   obj[0] = obj1;
   obj2 = { style: tmp5.header, children: null };
-  obj3 = { source: toUser(11247), style: tmp5.arrow };
+  obj3 = { source: toUser(11248), style: tmp5.arrow };
   const items1 = [callback2(c7, obj3), , , ];
   let obj4 = { style: tmp5.avatarsWrapper, children: null };
   const obj5 = { user: stateFromStores, guildId: guild.id, size: null };

@@ -1,10 +1,10 @@
-// Module ID: 14397
-// Function ID: 14398
+// Module ID: 14399
+// Function ID: 14400
 // Name: useVideoExternallyPaused
-// Dependencies: [3994, 8599, 4158, 10586, 589, 4644, 500, 2]
+// Dependencies: [3994, 8599, 4158, 10587, 589, 4644, 500, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 14397 (useVideoExternallyPaused)
+// Module 14399 (useVideoExternallyPaused)
 import setContent from "setContent";
 
 const require = arg1;
@@ -15,8 +15,8 @@ export const useVideoExternallyPaused = function useVideoExternallyPaused(id, ar
   const obj = require(8599) /* updateContextMenuState */;
   const openModalKey = require(4158) /* navigationToRootTabHelper */.useOpenModalKey();
   const obj2 = require(4158) /* navigationToRootTabHelper */;
-  const videoQuestModalKey = require(10586) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
-  const obj3 = require(10586) /* getVideoQuestWatchCtaText */;
+  const videoQuestModalKey = require(10587) /* getVideoQuestWatchCtaText */.getVideoQuestModalKey(id);
+  const obj3 = require(10587) /* getVideoQuestWatchCtaText */;
   const items = [setContent];
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => key.getKey());
   const obj4 = require(589) /* initialize */;

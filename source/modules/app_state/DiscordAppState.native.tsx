@@ -1,8 +1,8 @@
-// Module ID: 10469
-// Function ID: 10470
+// Module ID: 10470
+// Function ID: 10471
 // Dependencies: [6876, 589, 2]
 
-// Module 10469
+// Module 10470
 import getState from "getState";
 
 const require = arg1;

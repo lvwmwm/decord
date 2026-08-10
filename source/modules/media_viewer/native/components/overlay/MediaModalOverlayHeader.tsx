@@ -1,10 +1,10 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12242
+// Function ID: 12243
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 8926, 21, 4303, 12237, 8897, 11123, 4158, 4036, 4304, 8930, 8931, 1236, 5326, 1297, 712, 4299, 12241, 8598, 500, 12242, 8604, 2]
+// Dependencies: [19, 17, 8926, 21, 4303, 12239, 8897, 11124, 4158, 4036, 4304, 8930, 8931, 1236, 5326, 1297, 712, 4299, 12243, 8598, 500, 12244, 8604, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 12240 (MediaModalOverlayHeader)
+// Module 12242 (MediaModalOverlayHeader)
 import "ContextMenu";
 import get_ActivityIndicator from "Text";
 import { SHARE_PREPARING_MODAL_KEY } from "SHARE_PREPARING_MODAL_KEY";
@@ -36,11 +36,11 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   let isModalOpen;
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = callback();
-  let obj = isModalOpen(12237);
+  let obj = isModalOpen(12239);
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
   let obj1 = isModalOpen(8897);
   const mediaShareActions = obj1.useMediaShareActions({ source, disableDownload, shareable });
-  const tmp7 = importDefault(11123)(channelId);
+  const tmp7 = importDefault(11124)(channelId);
   let obj2 = isModalOpen(4158);
   isModalOpen = obj2.useIsModalOpen(SHARE_PREPARING_MODAL_KEY);
   let obj3 = isModalOpen(4036);
@@ -113,7 +113,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     obj11[0] = tmp.navbarRight;
     const obj12 = { source: null };
     obj12[0] = source;
-    const items4 = [tmp10(tmp6(12241), obj12), ];
+    const items4 = [tmp10(tmp6(12243), obj12), ];
     let tmp10Result1 = null;
     if (!disableMediaOverlayButton) {
       const obj13 = { items: null, children: null };
@@ -125,7 +125,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
         obj[0] = intl.string(isModalOpen(1236).t.PdRCRg);
         const tmp4 = callback(8931);
         if (obj2.isAndroid()) {
-          let tmp2Result = tmp2(tmp5(12242).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
+          let tmp2Result = tmp2(tmp5(12244).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
         } else {
           tmp2Result = tmp2(tmp5(8604).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
         }

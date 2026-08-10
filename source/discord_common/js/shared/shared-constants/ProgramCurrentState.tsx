@@ -1,9 +1,9 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 12992
+// Function ID: 12993
 // Name: ProgramCurrentState
 // Dependencies: [2]
 
-// Module 12990 (ProgramCurrentState)
+// Module 12992 (ProgramCurrentState)
 const result = require("set").fileFinishedImporting("../discord_common/js/shared/shared-constants/ProgramCurrentState.tsx");
 
 export const ProgramCurrentState = { ACTIVE: "active", PAYMENT_PROCESSING: "payment_processing", PAYMENT_ERROR: "payment_error", PROGRAM_ROLLBACK: "program_rollback", PREMIUM_CHURNING: "premium_churning" };

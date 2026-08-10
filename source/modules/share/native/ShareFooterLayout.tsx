@@ -1,10 +1,10 @@
-// Module ID: 10255
-// Function ID: 10256
+// Module ID: 10256
+// Function ID: 10257
 // Name: ShareFooterLayout
 // Dependencies: [19, 17, 21, 4303, 712, 5369, 4036, 4713, 4717, 4299, 2]
 // Exports: default
 
-// Module 10255 (ShareFooterLayout)
+// Module 10256 (ShareFooterLayout)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

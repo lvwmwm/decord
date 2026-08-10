@@ -1,9 +1,9 @@
-// Module ID: 13378
-// Function ID: 13379
+// Module ID: 13380
+// Function ID: 13381
 // Name: RNTextInput
-// Dependencies: [17, 2, 7999, 13379]
+// Dependencies: [17, 2, 7999, 13381]
 
-// Module 13378 (RNTextInput)
+// Module 13380 (RNTextInput)
 const result = require("module_7999").fileFinishedImporting("design/void/Atoms/native/Atoms.tsx");
 
 export const RNTextInput = require("get ActivityIndicator").TextInput;

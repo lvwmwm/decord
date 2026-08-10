@@ -1,10 +1,10 @@
-// Module ID: 12034
-// Function ID: 12035
+// Module ID: 12035
+// Function ID: 12036
 // Name: _uploadContacts
-// Dependencies: [5, 17, 4998, 12033, 12032, 676, 501, 5127, 503, 709, 12035, 3974, 1208, 589, 1384, 1974, 3998, 4509, 2]
+// Dependencies: [5, 17, 4998, 12034, 12033, 676, 501, 5127, 503, 709, 12036, 3974, 1208, 589, 1384, 1974, 3998, 4509, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12034 (_uploadContacts)
+// Module 12035 (_uploadContacts)
 import closure_3 from "ME";
 import { NativeModules } from "module_4509";
 import set from "set";
@@ -139,7 +139,7 @@ export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
 export const adminDeleteContactSync = function adminDeleteContactSync() {
   callback2();
   callback3();
-  let obj = require(12035) /* _requestAndSyncContacts */;
+  let obj = require(12036) /* _requestAndSyncContacts */;
   const result = obj.removeLastUserContactsUpload();
   const ContactSyncEnabled = require(3974) /* explicitContentFromProto */.ContactSyncEnabled;
   ContactSyncEnabled.updateSetting(false);

@@ -1,10 +1,10 @@
-// Module ID: 14127
-// Function ID: 14128
+// Module ID: 14129
+// Function ID: 14130
 // Name: QrCodeIcon
 // Dependencies: [19, 21, 712, 4004, 9096, 2]
 // Exports: QrCodeIcon
 
-// Module 14127 (QrCodeIcon)
+// Module 14129 (QrCodeIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

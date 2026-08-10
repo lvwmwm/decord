@@ -1,9 +1,9 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15471
+// Function ID: 15472
 // Name: handlePress
-// Dependencies: [19, 17, 4124, 15399, 676, 9574, 21, 4303, 712, 5957, 4005, 589, 4036, 4713, 15157, 15410, 1236, 15464, 15409, 5781, 8009, 15420, 4299, 2]
+// Dependencies: [19, 17, 4124, 15407, 676, 9574, 21, 4303, 712, 5957, 4005, 589, 4036, 4713, 15159, 15418, 1236, 15472, 15417, 5781, 8009, 15428, 4299, 2]
 
-// Module 15463 (handlePress)
+// Module 15471 (handlePress)
 import importAllResult from "set";
 import get_ActivityIndicator from "registerAsset";
 import handleConnectionOpen from "handleConnectionOpen";

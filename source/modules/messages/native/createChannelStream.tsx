@@ -1,10 +1,10 @@
-// Module ID: 11357
-// Function ID: 11358
+// Module ID: 11358
+// Function ID: 11359
 // Name: createChannelStream
-// Dependencies: [10410, 7141, 7297, 8042, 676, 11, 11358, 11359, 1236, 3971, 8083, 11143, 5889, 2]
+// Dependencies: [10411, 7141, 7297, 8042, 676, 11, 11359, 11360, 1236, 3971, 8083, 11144, 5889, 2]
 // Exports: default
 
-// Module 11357 (createChannelStream)
+// Module 11358 (createChannelStream)
 import initialize from "initialize";
 import closure_4 from "initialize";
 import closure_5 from "initialize";

@@ -1,10 +1,10 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9905
+// Function ID: 9906
 // Name: openCreateForumPostModal
-// Dependencies: [7226, 4509, 9905, 1988, 2]
+// Dependencies: [7226, 4509, 9906, 1988, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 9904 (openCreateForumPostModal)
+// Module 9905 (openCreateForumPostModal)
 let c3 = "create-forum-post";
 let result = require("ForumComposerModal").fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
 
@@ -18,7 +18,7 @@ export const openCreateForumPostModal = function openCreateForumPostModal(guildI
     const result1 = tmp(7226).trackForumCreateNewPostStarted(obj);
     const tmpResult = tmp(7226);
   }
-  importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(9905, dependencyMap.paths), guildId, c3);
+  importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(9906, dependencyMap.paths), guildId, c3);
 };
 export const closeCreateForumPostModal = function closeCreateForumPostModal() {
   let flag = arg0;

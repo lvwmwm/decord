@@ -1,9 +1,9 @@
-// Module ID: 16547
-// Function ID: 16548
+// Module ID: 16556
+// Function ID: 16557
 // Name: onPostConnectionOpen
 // Dependencies: [4522, 1340, 1372, 8178, 676, 687, 5261, 584, 7325, 7324, 709, 6917, 2]
 
-// Module 16547 (onPostConnectionOpen)
+// Module 16556 (onPostConnectionOpen)
 import dropChannelIfEmpty from "dropChannelIfEmpty";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";

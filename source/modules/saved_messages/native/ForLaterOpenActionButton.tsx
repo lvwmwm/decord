@@ -1,9 +1,9 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15519
+// Function ID: 15520
 // Name: BadgedIcon
-// Dependencies: [19, 17, 10272, 21, 8293, 15512, 4303, 712, 4239, 4005, 4719, 8381, 4267, 10275, 589, 8375, 8370, 8373, 5748, 8379, 7751, 1236, 2]
+// Dependencies: [19, 17, 10273, 21, 8293, 15520, 4303, 712, 4239, 4005, 4719, 8381, 4267, 10276, 589, 8375, 8370, 8373, 5748, 8379, 7751, 1236, 2]
 
-// Module 15511 (BadgedIcon)
+// Module 15519 (BadgedIcon)
 import importAllResult from "showForLaterModal";
 import { View } from "EntitlementFeatureNames";
 import getTimeSafe from "getTimeSafe";
@@ -25,7 +25,7 @@ function BadgedIcon(arg0) {
   if (type === require(8381) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER) {
     let BookmarkIcon = tmp4(4267).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(10275).BookmarkIcon;
+    BookmarkIcon = tmp4(10276).BookmarkIcon;
   }
   obj = { style: items, children: null };
   items = [tmp6.container, iconSizeStyles];

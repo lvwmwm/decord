@@ -1,10 +1,10 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12636
+// Function ID: 12637
 // Name: createSafetyPolicyNoticeEmbed
 // Dependencies: [17, 676, 7805, 3883, 1236, 8055, 7963, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12634 (createSafetyPolicyNoticeEmbed)
+// Module 12636 (createSafetyPolicyNoticeEmbed)
 import { Image } from "get ActivityIndicator";
 import { MessageEmbedTypes } from "ME";
 import { SafetyHubPolicyNoticeKeys } from "SafetyHubView";

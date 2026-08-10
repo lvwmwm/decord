@@ -1,10 +1,10 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10951
+// Function ID: 10952
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1971, 21, 4303, 712, 4488, 1297, 8003, 1474, 589, 5142, 4493, 5427, 1236, 7773, 10930, 4153, 10951, 2]
+// Dependencies: [19, 17, 1971, 21, 4303, 712, 4488, 1297, 8003, 1474, 589, 5142, 4493, 5427, 1236, 7773, 10931, 4153, 10952, 2]
 // Exports: getTileWidthStyle
 
-// Module 10950 (RaisedHandIcon)
+// Module 10951 (RaisedHandIcon)
 import { View } from "AccessibilityAnnouncer";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import jsxProd from "jsxProd";

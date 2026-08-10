@@ -1,10 +1,10 @@
-// Module ID: 9766
-// Function ID: 9767
+// Module ID: 9767
+// Function ID: 9768
 // Name: formatMessagePreview
 // Dependencies: [1218, 3938, 1903, 676, 686, 589, 8088, 4532, 1236, 4491, 5918, 12, 8093, 8171, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 9766 (formatMessagePreview)
+// Module 9767 (formatMessagePreview)
 import fetchFingerprint from "fetchFingerprint";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";

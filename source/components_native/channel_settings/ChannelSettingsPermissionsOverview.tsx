@@ -1,10 +1,10 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 15900
+// Function ID: 15901
 // Name: ChannelPermissionSyncModule
-// Dependencies: [32, 5, 19, 17, 1965, 1372, 1964, 1891, 3938, 1903, 676, 21, 4303, 712, 4642, 1236, 4494, 3934, 8999, 8016, 12, 5767, 5374, 13847, 1480, 12107, 9923, 14546, 589, 1935, 9695, 1351, 5371, 8382, 4313, 2]
+// Dependencies: [32, 5, 19, 17, 1965, 1372, 1964, 1891, 3938, 1903, 676, 21, 4303, 712, 4642, 1236, 4494, 3934, 8999, 8016, 12, 5767, 5374, 13849, 1480, 12108, 9924, 14548, 589, 1935, 9695, 1351, 5371, 8382, 4313, 2]
 // Exports: default
 
-// Module 15891 (ChannelPermissionSyncModule)
+// Module 15900 (ChannelPermissionSyncModule)
 import LayoutAnimation from "LayoutAnimation";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import init from "init";
@@ -144,7 +144,7 @@ function ChannelPermissionSyncModule(channel) {
   }
   let obj2 = { title: formatToPlainStringResult, hasIcons: true, children: null };
   let obj3 = { icon: null, label: null, onPress: null };
-  obj3[0] = closure_16(channel(13847).RefreshIcon, {});
+  obj3[0] = closure_16(channel(13849).RefreshIcon, {});
   let intl2 = tmp3(1236).intl;
   obj3[1] = intl2.string(channel(1236).t.NVwuHq);
   obj3[2] = callback;
@@ -180,7 +180,7 @@ function AddPermission(isEditing) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t.vPHdP5);
     const obj1 = { icon: null, label: null, onPress: null };
-    obj1[0] = callback(tmp2(12107).PlusMediumIcon, {});
+    obj1[0] = callback(tmp2(12108).PlusMediumIcon, {});
     const intl2 = tmp2(1236).intl;
     obj1[1] = intl2.string(tmp2(1236).t.fVWxvT);
     obj1[2] = function onPress() {
@@ -188,7 +188,7 @@ function AddPermission(isEditing) {
     };
     const items = [callback(tmp2(5374).TableRow, obj1), ];
     const obj2 = { icon: null, label: null, onPress: null };
-    obj2[0] = callback(tmp2(12107).PlusMediumIcon, {});
+    obj2[0] = callback(tmp2(12108).PlusMediumIcon, {});
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t.riesLt);
     obj2[2] = function onPress() {
@@ -212,7 +212,7 @@ function RoleRow(onDelete) {
   ({ name, colorString, colorStrings } = role);
   const tmp = isEveryoneRole(role);
   let obj = { label: null, arrow: null, icon: null, onPress: null };
-  obj[0] = callback(require(9923) /* RoleLabel */.RoleLabel, { name, color: colorString, colors: colorStrings });
+  obj[0] = callback(require(9924) /* RoleLabel */.RoleLabel, { name, color: colorString, colors: colorStrings });
   obj[1] = !isEditing;
   let tmp2Result = null;
   if (isEditing) {
@@ -222,7 +222,7 @@ function RoleRow(onDelete) {
       obj[0] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
       const intl = tmp3(1236).intl;
       obj[1] = intl.string(tmp3(1236).t.N86XcP);
-      tmp2Result = tmp2(tmp3(14546).CircleMinusIcon, obj);
+      tmp2Result = tmp2(tmp3(14548).CircleMinusIcon, obj);
     }
   }
   obj[2] = tmp2Result;
@@ -299,7 +299,7 @@ function MemberRow(arg0) {
     obj[0] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.N86XcP);
-    tmpResult = tmp(require(14546) /* CircleMinusIcon */.CircleMinusIcon, obj);
+    tmpResult = tmp(require(14548) /* CircleMinusIcon */.CircleMinusIcon, obj);
   }
   obj[4] = tmpResult;
   return closure_16(importDefault(9695), obj);

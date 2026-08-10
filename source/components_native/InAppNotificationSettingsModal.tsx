@@ -1,9 +1,9 @@
-// Module ID: 9816
-// Function ID: 9817
+// Module ID: 9817
+// Function ID: 9818
 // Name: ConnectedInAppNotificationSettingsScreen
-// Dependencies: [19, 1376, 1372, 3938, 4499, 1903, 676, 21, 5262, 5257, 4494, 7967, 1236, 9817, 6016, 589, 5270, 5783, 2]
+// Dependencies: [19, 1376, 1372, 3938, 4499, 1903, 676, 21, 5262, 5257, 4494, 7967, 1236, 9818, 6016, 589, 5270, 5783, 2]
 
-// Module 9816 (ConnectedInAppNotificationSettingsScreen)
+// Module 9817 (ConnectedInAppNotificationSettingsScreen)
 import importAllResult from "noop";
 import { isMultiUserDM } from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -91,7 +91,7 @@ prototype["renderTextChannelNotificationSettings"] = function renderTextChannelN
   if (null != channel) {
     const obj = { channelId: null };
     obj[0] = channel.id;
-    tmp = callback(importDefault(9817), obj);
+    tmp = callback(importDefault(9818), obj);
   }
   return tmp;
 };

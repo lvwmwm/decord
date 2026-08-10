@@ -1,10 +1,10 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14198
+// Function ID: 14199
 // Name: VrHeadsetIcon
-// Dependencies: [19, 21, 712, 4004, 14197, 2]
+// Dependencies: [19, 21, 712, 4004, 14199, 2]
 // Exports: VrHeadsetIcon
 
-// Module 14196 (VrHeadsetIcon)
+// Module 14198 (VrHeadsetIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const VrHeadsetIcon = function VrHeadsetIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14197) /* registerAsset */;
+  obj[0] = require(14199) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

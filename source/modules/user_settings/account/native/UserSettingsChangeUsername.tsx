@@ -1,10 +1,10 @@
-// Module ID: 14003
-// Function ID: 14004
+// Module ID: 14005
+// Function ID: 14006
 // Name: UsernameStatusMessage
-// Dependencies: [5, 32, 19, 17, 1903, 676, 21, 4303, 712, 4503, 14004, 4299, 1236, 1480, 589, 3947, 14005, 7593, 8510, 530, 1481, 8382, 7790, 8514, 8466, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 676, 21, 4303, 712, 4503, 14006, 4299, 1236, 1480, 589, 3947, 14007, 7593, 8510, 530, 1481, 8382, 7790, 8514, 8466, 2]
 // Exports: default
 
-// Module 14003 (UsernameStatusMessage)
+// Module 14005 (UsernameStatusMessage)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import sendRequest from "sendRequest";
@@ -22,11 +22,11 @@ const require = arg1;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
   const match = showHint(4503).match(showHint.usernameStatus);
-  let obj = { type: showHint(14004).NameValidationState.ERROR, message: null };
+  let obj = { type: showHint(14006).NameValidationState.ERROR, message: null };
   const P = showHint(4503).P;
   obj[1] = P.select();
   const str = showHint(4503);
-  obj = { type: showHint(14004).NameValidationState.AVAILABLE, message: null };
+  obj = { type: showHint(14006).NameValidationState.AVAILABLE, message: null };
   const P2 = showHint(4503).P;
   obj[1] = P2.select();
   const withResult = match.with(obj, (children) => callback(showHint(4299).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));

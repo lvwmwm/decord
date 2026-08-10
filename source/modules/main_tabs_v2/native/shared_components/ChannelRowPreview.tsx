@@ -1,9 +1,9 @@
-// Module ID: 9789
-// Function ID: 9790
+// Module ID: 9790
+// Function ID: 9791
 // Name: PreviewIcon
-// Dependencies: [19, 17, 3938, 21, 4815, 7714, 9649, 9790, 4247, 7706, 8398, 8400, 4720, 9792, 1348, 9766, 9795, 9452, 4299, 4239, 4303, 712, 4005, 3974, 8041, 8589, 8230, 8045, 589, 2]
+// Dependencies: [19, 17, 3938, 21, 4815, 7714, 9649, 9791, 4247, 7706, 8398, 8400, 4720, 9793, 1348, 9767, 9796, 9452, 4299, 4239, 4303, 712, 4005, 3974, 8041, 8589, 8230, 8045, 589, 2]
 
-// Module 9789 (PreviewIcon)
+// Module 9790 (PreviewIcon)
 import importAllResult from "useTheme";
 import { View } from "map";
 import upsertRelationship from "upsertRelationship";
@@ -30,7 +30,7 @@ function PreviewIcon(icon) {
   } else if ("attachment" === icon) {
     const obj2 = {};
     const merged4 = Object.assign(merged);
-    return callback(require(9790) /* AttachmentIcon */.AttachmentIcon, obj2);
+    return callback(require(9791) /* AttachmentIcon */.AttachmentIcon, obj2);
   } else if ("link" === icon) {
     const obj3 = {};
     const merged5 = Object.assign(merged);
@@ -81,7 +81,7 @@ class ChannelRowPreview {
         str2 = "markup";
         if ("markup" === type) {
           tmp9 = jsx;
-          tmp10 = f47485;
+          tmp10 = f47494;
           if ("markup" === formattedMessagePreview.type) {
             content = formattedMessagePreview.markup;
           } else {
@@ -236,7 +236,7 @@ let closure_9 = importAllResult.memo((arg0) => {
   ({ markup, channelId, guildId, muted, layout, color } = arg0);
   const fontScale = require(4720) /* getFontScale */.useFontScale();
   const obj = require(4720) /* getFontScale */;
-  return require(9792) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
+  return require(9793) /* getOrParseMessagePreviewMarkupAST */.renderMessagePreviewMarkup({ content, muted, guildId, channelId, layout, color, fontScale });
 });
 const memoResult = importAllResult.memo((message) => {
   const _require = message;

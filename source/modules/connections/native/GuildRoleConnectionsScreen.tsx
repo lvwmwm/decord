@@ -1,10 +1,10 @@
-// Module ID: 11043
-// Function ID: 11044
+// Module ID: 11044
+// Function ID: 11045
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [32, 19, 17, 1911, 1218, 1971, 1964, 676, 21, 4303, 712, 1297, 4239, 589, 698, 4498, 5232, 4271, 11044, 1988, 11034, 11041, 5000, 1416, 4153, 4299, 1236, 1974, 11040, 5772, 10934, 2]
+// Dependencies: [32, 19, 17, 1911, 1218, 1971, 1964, 676, 21, 4303, 712, 1297, 4239, 589, 698, 4498, 5232, 4271, 11045, 1988, 11035, 11042, 5000, 1416, 4153, 4299, 1236, 1974, 11041, 5772, 10935, 2]
 // Exports: default
 
-// Module 11043 (GuildRoleConnectionsScreen)
+// Module 11044 (GuildRoleConnectionsScreen)
 import _slicedToArray from "_slicedToArray";
 import asyncRequireImpl from "asyncRequireImpl";
 import get_ActivityIndicator from "ACTION_SHEET_HEIGHT_HALF";

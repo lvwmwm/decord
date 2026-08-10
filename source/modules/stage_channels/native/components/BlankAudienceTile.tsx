@@ -1,22 +1,22 @@
-// Module ID: 10949
-// Function ID: 10950
-// Dependencies: [19, 17, 21, 1474, 10950, 2]
+// Module ID: 10950
+// Function ID: 10951
+// Dependencies: [19, 17, 21, 1474, 10951, 2]
 
-// Module 10949
+// Module 10950
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
 const require = arg1;
 const memoResult = require("noop").memo(() => {
-  let obj = require(10950) /* RaisedHandIcon */;
+  let obj = require(10951) /* RaisedHandIcon */;
   const audienceTileStyles = obj.useAudienceTileStyles();
   obj = { style: null };
   const items = [audienceTileStyles.container, ];
-  obj = { width: require(10950) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1474)().width) };
+  obj = { width: require(10951) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1474)().width) };
   items[1] = obj;
   obj[0] = items;
-  return <View width={require(10950) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1474)().width)} />;
+  return <View width={require(10951) /* RaisedHandIcon */.getTileWidthStyle(importDefault(1474)().width)} />;
 });
 const result = require("jsxProd").fileFinishedImporting("modules/stage_channels/native/components/BlankAudienceTile.tsx");
 

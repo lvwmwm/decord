@@ -1,9 +1,9 @@
-// Module ID: 14057
-// Function ID: 14058
+// Module ID: 14059
+// Function ID: 14060
 // Name: pressable
-// Dependencies: [8082, 14056, 10446, 1236, 2]
+// Dependencies: [8082, 14058, 10447, 1236, 2]
 
-// Module 14057 (pressable)
+// Module 14059 (pressable)
 import createToggle from "createToggle";
 
 const pressable = createToggle.createPressable({
@@ -13,7 +13,7 @@ const pressable = createToggle.createPressable({
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function onAccountDisablePress() {
-    importDefault(14056)(false);
+    importDefault(14058)(false);
   }
 });
 const obj = {
@@ -23,7 +23,7 @@ const obj = {
   },
   parent: require("MobileSetting").MobileSetting.ACCOUNT,
   onPress: function onAccountDisablePress() {
-    importDefault(14056)(false);
+    importDefault(14058)(false);
   }
 };
 const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/AccountDisableSetting.tsx");

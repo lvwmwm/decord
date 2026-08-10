@@ -1,10 +1,10 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16098
+// Function ID: 16099
 // Name: BaseActivityPanelFocusedView
-// Dependencies: [19, 17, 4295, 1372, 1371, 4328, 9758, 16084, 676, 11645, 21, 4303, 712, 1609, 589, 1474, 16079, 10208, 4036, 4648, 4304, 4713, 4013, 4697, 3919, 16081, 16090, 10613, 10720, 2]
+// Dependencies: [19, 17, 4295, 1372, 1371, 4328, 9759, 16093, 676, 11646, 21, 4303, 712, 1609, 589, 1474, 16088, 10209, 4036, 4648, 4304, 4713, 4013, 4697, 3919, 16090, 16099, 10614, 10721, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 16089 (BaseActivityPanelFocusedView)
+// Module 16098 (BaseActivityPanelFocusedView)
 import importAllResult from "wrapChildrenDefault";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import ensureGuildLoaded from "ensureGuildLoaded";

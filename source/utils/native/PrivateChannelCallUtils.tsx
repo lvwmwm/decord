@@ -1,7 +1,7 @@
 // Module ID: 4513
 // Function ID: 4514
 // Name: openChannelCallModal
-// Dependencies: [5, 19, 3994, 4514, 1372, 3938, 1960, 1903, 676, 1221, 4516, 21, 4517, 4497, 10768, 1231, 4509, 10651, 1988, 5821, 5826, 4271, 13030, 5129, 4643, 1236, 4861, 4166, 13065, 4644, 9242, 4158, 7774, 2]
+// Dependencies: [5, 19, 3994, 4514, 1372, 3938, 1960, 1903, 676, 1221, 4516, 21, 4517, 4497, 10769, 1231, 4509, 10652, 1988, 5821, 5826, 4271, 13032, 5129, 4643, 1236, 4861, 4166, 13067, 4644, 9242, 4158, 7774, 2]
 // Exports: dismissVoiceChannelScreens, getVoiceChannelKey, getVoiceChannelKeyByChannelId, handleJoinCall, handleRedesignGroupDMCall, handleRedesignJoinCall, handleStartCall, hideVoiceChannelActionSheet, isVoiceChannelModalKey, maybeShowAgeGateModal, navigateToVoiceChannel, openGuildVoiceModal, openVoiceChannelActionSheet, showGuardCallAlert
 
 // Module 4513 (openChannelCallModal)
@@ -40,10 +40,10 @@ function openChannelCallModal(channel) {
       obj[0] = channel;
       const _HermesInternal = HermesInternal;
       const tmp3Result = tmp3(4509);
-      tmp3Result.pushLazy(tmp(1988)(10651, dependencyMap.paths), obj, "" + c17 + "-" + channel.id);
-      const tmp5 = tmp(1988)(10651, dependencyMap.paths);
+      tmp3Result.pushLazy(tmp(1988)(10652, dependencyMap.paths), obj, "" + c17 + "-" + channel.id);
+      const tmp5 = tmp(1988)(10652, dependencyMap.paths);
     }
-    tmpResult = tmp(10768);
+    tmpResult = tmp(10769);
   }
 }
 function monkeyPatchCall() {
@@ -168,7 +168,7 @@ export const maybeShowAgeGateModal = function maybeShowAgeGateModal(width) {
 export const openVoiceChannelActionSheet = function openVoiceChannelActionSheet(closure_0) {
   let obj = importDefault(4271);
   obj = { channel: closure_0 };
-  obj.openLazy(require(1988) /* asyncRequireImpl */(13030, dependencyMap.paths), "" + c17 + "-" + closure_0.id, obj);
+  obj.openLazy(require(1988) /* asyncRequireImpl */(13032, dependencyMap.paths), "" + c17 + "-" + closure_0.id, obj);
 };
 export const hideVoiceChannelActionSheet = function hideVoiceChannelActionSheet(closure_0) {
   importDefault(4271).hideActionSheet("" + c17 + "-" + closure_0.id);

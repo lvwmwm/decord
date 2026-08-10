@@ -1,9 +1,9 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 13672
+// Function ID: 13673
 // Name: getModalState
 // Dependencies: [1935, 38, 8221, 687, 6917, 589, 709, 2]
 
-// Module 13670 (getModalState)
+// Module 13672 (getModalState)
 import { Store } from "initialize";
 
 const require = arg1;

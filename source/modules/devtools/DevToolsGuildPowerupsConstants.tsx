@@ -1,10 +1,10 @@
-// Module ID: 15023
-// Function ID: 15024
+// Module ID: 15025
+// Function ID: 15026
 // Name: items
 // Dependencies: [1358, 2]
 // Exports: getGuildDCString, getUserDCString
 
-// Module 15023 (items)
+// Module 15025 (items)
 const items = [require("DismissibleContent").DismissibleContent.GUILD_POWERUP_PERKS_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NOTIFICATION, require("DismissibleContent").DismissibleContent.GUILD_TAG_AVAILABLE_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, require("DismissibleContent").DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE];
 const items1 = [require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_1_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_2_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_LEVEL_3_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, require("DismissibleContent").DismissibleGuildContent.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK];
 const items2 = [require("DismissibleContent").DismissibleGuildContent.ADOPT_CLAN_IDENTITY_NOTICE];

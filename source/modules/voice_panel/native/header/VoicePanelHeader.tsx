@@ -1,9 +1,9 @@
-// Module ID: 16166
-// Function ID: 16167
+// Module ID: 16175
+// Function ID: 16176
 // Name: MusicMuteButton
-// Dependencies: [32, 19, 17, 4316, 4217, 10781, 1218, 1372, 4351, 3938, 5137, 1903, 11645, 11648, 11643, 4321, 505, 21, 4303, 712, 4036, 4713, 8009, 4703, 5781, 11644, 10913, 589, 10783, 16101, 1236, 10787, 9650, 10788, 4700, 16103, 16167, 4494, 4005, 11649, 4304, 16168, 16126, 16169, 5276, 16170, 9155, 9228, 9190, 4013, 15635, 16171, 9479, 16173, 12210, 692, 16184, 9721, 16194, 16195, 2]
+// Dependencies: [32, 19, 17, 4316, 4217, 10782, 1218, 1372, 4351, 3938, 5137, 1903, 11646, 11649, 11644, 4321, 505, 21, 4303, 712, 4036, 4713, 8009, 4703, 5781, 11645, 10914, 589, 10784, 16110, 1236, 10788, 9650, 10789, 4700, 16112, 16176, 4494, 4005, 11650, 4304, 16177, 16135, 16178, 5276, 16179, 9155, 9228, 9190, 4013, 15643, 16180, 9479, 16182, 12212, 692, 16193, 9722, 16203, 16204, 2]
 
-// Module 16166 (MusicMuteButton)
+// Module 16175 (MusicMuteButton)
 import registerAsset from "registerAsset";
 import importAllResult from "Themes";
 import get_ActivityIndicator from "jsxProd";
@@ -33,7 +33,7 @@ const require = arg1;
 function MusicMuteButton(channelId) {
   channelId = channelId.channelId;
   let stateFromStores;
-  const tmp3 = importDefault(10913)(channelId);
+  const tmp3 = importDefault(10914)(channelId);
   if (tmp3 != null) {
     const speaker = tmp3.speaker;
   }
@@ -54,13 +54,13 @@ function MusicMuteButton(channelId) {
       }
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      obj[1] = tmp(stateFromStores ? 10787 : 9650);
+      obj[1] = tmp(stateFromStores ? 10788 : 9650);
       obj[2] = function onPress() {
         return stateFromStores(outer1_2[33]).updateStageMusicMuted(!stateFromStores);
       };
-      closure_23(tmp(16101), obj);
+      closure_23(tmp(16110), obj);
       const tmp7 = closure_23;
-      const tmpResult = tmp(16101);
+      const tmpResult = tmp(16110);
     }
   }
   return tmp6;

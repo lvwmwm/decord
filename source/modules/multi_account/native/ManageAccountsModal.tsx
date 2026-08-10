@@ -1,9 +1,9 @@
-// Module ID: 15486
-// Function ID: 15487
+// Module ID: 15494
+// Function ID: 15495
 // Name: RemoveMultiAccountUserButton
-// Dependencies: [32, 5, 19, 17, 1218, 4147, 1903, 11781, 11782, 15487, 676, 21, 8570, 4303, 712, 589, 1297, 4643, 1236, 11785, 4846, 14546, 15086, 4036, 4304, 8853, 698, 5328, 15488, 15087, 10291, 15489, 5385, 7967, 9527, 5783, 8382, 9678, 15112, 5827, 8470, 15111, 2]
+// Dependencies: [32, 5, 19, 17, 1218, 4147, 1903, 11782, 11783, 15495, 676, 21, 8570, 4303, 712, 589, 1297, 4643, 1236, 11786, 4846, 14548, 15088, 4036, 4304, 8853, 698, 5328, 15496, 15089, 10292, 15497, 5385, 7967, 9527, 5783, 8382, 9678, 15114, 5827, 8470, 15113, 2]
 
-// Module 15486 (RemoveMultiAccountUserButton)
+// Module 15494 (RemoveMultiAccountUserButton)
 import DragIcon from "DragIcon";
 import initialize from "initialize";
 import importAllResult from "validateMultiAccountTokens";
@@ -145,7 +145,7 @@ function RemoveMultiAccountUserButton(user) {
     };
     obj = { color: null };
     obj[0] = importDefault(712).colors.ICON_FEEDBACK_CRITICAL;
-    obj[3] = callback2(tmp(14546).CircleMinusIcon, obj);
+    obj[3] = callback2(tmp(14548).CircleMinusIcon, obj);
     return callback2(tmp(4846).PressableOpacity, obj);
   }
   let obj2 = user(589);
@@ -392,7 +392,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return obj;
       },
       children() {
-        return callback2(_undefined(15112), {
+        return callback2(_undefined(15114), {
           handleLogin(login, password, undelete) {
             let obj = callback(5827);
             obj = { login, password, undelete };
@@ -419,7 +419,7 @@ const memoResult = importAllResult.memo(function ManageAccountsModal(initialRout
         return { headerShown: false };
       },
       children() {
-        return callback2(_undefined(15111), { isMultiAccount: true });
+        return callback2(_undefined(15113), { isMultiAccount: true });
       }
     })
   ];

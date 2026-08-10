@@ -1,7 +1,7 @@
 // Module ID: 1300
 // Function ID: 1301
 // Name: getTextStyles
-// Dependencies: [19, 17, 676, 1301, 21, 4303, 712, 4151, 5158, 500, 12016, 7999, 4153, 5373, 4714, 2]
+// Dependencies: [19, 17, 676, 1301, 21, 4303, 712, 4151, 5158, 500, 12017, 7999, 4153, 5373, 4714, 2]
 // Exports: getRedesignSize, getRedesignVariant
 
 // Module 1300 (getTextStyles)
@@ -84,13 +84,13 @@ function getButtonStyles(shrink, button) {
     buttonShrink = button.buttonShrink;
   }
   items[1] = buttonShrink;
-  items[2] = require(12016) /* getClass */.getClass(button, "button", combined, disabled ? closure_14.DISABLED : closure_14.DEFAULT);
-  const obj2 = require(12016) /* getClass */;
+  items[2] = require(12017) /* getClass */.getClass(button, "button", combined, disabled ? closure_14.DISABLED : closure_14.DEFAULT);
+  const obj2 = require(12017) /* getClass */;
   const tmp2 = disabled ? closure_14.DISABLED : closure_14.DEFAULT;
   const tmp8 = require;
-  items[3] = require(12016) /* getClass */.getClass(button, "button", size);
-  const obj3 = require(12016) /* getClass */;
-  items[4] = require(12016) /* getClass */.getClass(button, "button", look);
+  items[3] = require(12017) /* getClass */.getClass(button, "button", size);
+  const obj3 = require(12017) /* getClass */;
+  items[4] = require(12017) /* getClass */.getClass(button, "button", look);
   let faded;
   if (!flag3) {
     if (!tmp8Result.isAndroid()) {

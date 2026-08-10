@@ -1,10 +1,10 @@
-// Module ID: 12602
-// Function ID: 12603
+// Module ID: 12604
+// Function ID: 12605
 // Name: createGuildScheduledEventEmbed
-// Dependencies: [32, 17, 6985, 1415, 1372, 1891, 3938, 1903, 10991, 1378, 7196, 8053, 8055, 8958, 8948, 8942, 9139, 1236, 8058, 9090, 8045, 712, 9877, 4293, 8945, 4494, 9032, 8953, 12603, 8940, 1411, 2]
+// Dependencies: [32, 17, 6985, 1415, 1372, 1891, 3938, 1903, 10992, 1378, 7196, 8053, 8055, 8958, 8948, 8942, 9139, 1236, 8058, 9090, 8045, 712, 9878, 4293, 8945, 4494, 9032, 8953, 12605, 8940, 1411, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 12602 (createGuildScheduledEventEmbed)
+// Module 12604 (createGuildScheduledEventEmbed)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import scheduledEventSort from "scheduledEventSort";
@@ -90,7 +90,7 @@ function createGuildScheduledEventEmbed(type) {
       const acceptLabelActiveBackgroundColor2 = colors.acceptLabelActiveBackgroundColor;
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
-      let assetUriForEmbed3 = tmp7(8055).getAssetUriForEmbed(tmp(9877));
+      let assetUriForEmbed3 = tmp7(8055).getAssetUriForEmbed(tmp(9878));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       let tmp21 = assetUriForEmbed2;
       let stringResult2 = stringResult;
@@ -159,7 +159,7 @@ function createGuildScheduledEventEmbed(type) {
   }
   obj1.badgeCount = toLocaleStringResult;
   const tmpResult1 = importDefault(8953);
-  obj1.badgeIcon = require(8055) /* frozen */.getAssetUriForEmbed(importDefault(12603));
+  obj1.badgeIcon = require(8055) /* frozen */.getAssetUriForEmbed(importDefault(12605));
   let assetUriForEmbed4;
   if (null != eventLocationIconSource) {
     assetUriForEmbed4 = tmp7(8055).getAssetUriForEmbed(eventLocationIconSource);

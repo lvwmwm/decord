@@ -1,10 +1,10 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13251
+// Function ID: 13252
 // Name: _sendShareMessage
 // Dependencies: [5, 4640, 4296, 4002, 8612, 8357, 7236, 4851, 4850, 7142, 8342, 6917, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13249 (_sendShareMessage)
+// Module 13251 (_sendShareMessage)
 import dispatcher from "dispatcher";
 import { DraftType } from "handleChanged";
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";

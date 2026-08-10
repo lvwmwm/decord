@@ -1,10 +1,10 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15626
+// Function ID: 15627
 // Name: UploadPlaceholder
-// Dependencies: [32, 19, 17, 1903, 8898, 21, 712, 4303, 15559, 1297, 10186, 4299, 1236, 8391, 4151, 589, 4533, 9236, 9451, 9523, 500, 4846, 4262, 9672, 10294, 7655, 11, 687, 15615, 4146, 7102, 15619, 8293, 2]
+// Dependencies: [32, 19, 17, 1903, 8898, 21, 712, 4303, 15567, 1297, 10187, 4299, 1236, 8391, 4151, 589, 4533, 9236, 9451, 9523, 500, 4846, 4262, 9672, 10295, 7655, 11, 687, 15623, 4146, 7102, 15627, 8293, 2]
 // Exports: default
 
-// Module 15618 (UploadPlaceholder)
+// Module 15626 (UploadPlaceholder)
 import SolidCutout from "SolidCutout";
 import ActivityEmoji from "ActivityEmoji";
 import { View } from "DISPLAY_NAME_STYLES_FONT_FAMILY_MAP";
@@ -21,7 +21,7 @@ const require = arg1;
 function UploadPlaceholder() {
   let obj = { style: callback3(false).uploadContainer, children: null };
   obj = { source: null, size: null };
-  obj[0] = importDefault(10186);
+  obj[0] = importDefault(10187);
   obj[1] = require(1297) /* Button */.IconSizes.SMALL;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "text-md/normal", color: "text-strong", children: null };

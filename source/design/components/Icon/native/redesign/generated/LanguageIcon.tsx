@@ -1,10 +1,10 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14607
+// Function ID: 14608
 // Name: LanguageIcon
-// Dependencies: [19, 21, 712, 4004, 14606, 2]
+// Dependencies: [19, 21, 712, 4004, 14608, 2]
 // Exports: LanguageIcon
 
-// Module 14605 (LanguageIcon)
+// Module 14607 (LanguageIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const LanguageIcon = function LanguageIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14606) /* registerAsset */;
+  obj[0] = require(14608) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

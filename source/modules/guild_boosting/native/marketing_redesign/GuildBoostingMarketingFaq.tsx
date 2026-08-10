@@ -1,10 +1,10 @@
-// Module ID: 12876
-// Function ID: 12877
+// Module ID: 12878
+// Function ID: 12879
 // Name: items1
-// Dependencies: [32, 19, 17, 676, 21, 4303, 6863, 712, 1236, 1974, 4299, 4846, 1297, 12877, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 6863, 712, 1236, 1974, 4299, 4846, 1297, 12879, 2]
 // Exports: default
 
-// Module 12876 (items1)
+// Module 12878 (items1)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

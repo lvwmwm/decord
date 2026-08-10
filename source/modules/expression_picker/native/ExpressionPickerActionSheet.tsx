@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 9926
+// Function ID: 9927
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 1372, 5398, 9926, 21, 4036, 4168, 1607, 589, 9927, 4271, 1474, 1609, 5267, 500, 8673, 5397, 9928, 2]
+// Dependencies: [19, 1372, 5398, 9927, 21, 4036, 4168, 1607, 589, 9928, 4271, 1474, 1609, 5267, 500, 8673, 5397, 9929, 2]
 // Exports: default
 
-// Module 9925 (ExpressionPickerActionSheet)
+// Module 9926 (ExpressionPickerActionSheet)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO";
@@ -81,7 +81,7 @@ export default function ExpressionPickerActionSheet(arg0) {
     obj2[9] = initialGifQuery;
     obj2[10] = STICKER_FORMATS;
     obj2[11] = diff;
-    obj1[5] = callback(tmp7(9928), obj2);
+    obj1[5] = callback(tmp7(9929), obj2);
     items1[1] = callback(tmp2(5397).BottomSheet, obj1);
     obj[0] = items1;
     tmp15Result = closure_9(closure_8, obj);

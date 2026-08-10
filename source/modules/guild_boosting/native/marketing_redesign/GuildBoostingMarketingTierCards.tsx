@@ -1,10 +1,10 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12861
+// Function ID: 12862
 // Name: TierFeatures
-// Dependencies: [32, 19, 17, 676, 1905, 21, 7655, 1236, 7706, 11890, 4829, 4825, 9950, 7718, 7658, 4247, 12860, 4303, 712, 12854, 5158, 4036, 4304, 4299, 4239, 4153, 4725, 4846, 4195, 12861, 12863, 4151, 1297, 12865, 12866, 5371, 11922, 2]
+// Dependencies: [32, 19, 17, 676, 1905, 21, 7655, 1236, 7706, 11891, 4829, 4825, 9951, 7718, 7658, 4247, 12862, 4303, 712, 12856, 5158, 4036, 4304, 4299, 4239, 4153, 4725, 4846, 4195, 12863, 12865, 4151, 1297, 12867, 12868, 5371, 11923, 2]
 // Exports: default
 
-// Module 12859 (TierFeatures)
+// Module 12861 (TierFeatures)
 import Button from "Button";
 import importAllResult from "BoostedGuildTiers";
 import { View } from "createCacheKey";
@@ -341,7 +341,7 @@ items2[2] = {
   getCopy() {
     const intl = require(1236) /* getSystemLocale */.intl;
     const obj = { resolution: null };
-    obj[0] = require(12860) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
+    obj[0] = require(12862) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -352,7 +352,7 @@ let obj14 = {
   getCopy() {
     const intl = require(1236) /* getSystemLocale */.intl;
     const obj = { resolution: null };
-    obj[0] = require(12860) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
+    obj[0] = require(12862) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -559,7 +559,7 @@ items3[2] = {
   getCopy() {
     const intl = require(1236) /* getSystemLocale */.intl;
     const obj = { resolution: null };
-    obj[0] = require(12860) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
+    obj[0] = require(12862) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -569,7 +569,7 @@ const obj26 = {
   getCopy() {
     const intl = require(1236) /* getSystemLocale */.intl;
     const obj = { resolution: null };
-    obj[0] = require(12860) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
+    obj[0] = require(12862) /* CONTROL_RESOLUTION */.getServerBoostStreamQualityMarketingResolution("GuildBoostingMarketingTierCards");
     return intl.formatToPlainString(require(1236) /* getSystemLocale */.t.Jbg8oY, obj);
   }
 };
@@ -835,9 +835,9 @@ let closure_16 = importAllResult.forwardRef((onCardPress, ref) => {
   const obj9 = { style: tmp.cardFooter, children: null };
   const items5 = [callback2(features(4299).Text, { color: "text-overlay-light", variant: "text-md/semibold", children: stringResult }), ];
   if (isExpanded) {
-    let ChevronLargeDownIcon = tmp7(12861).ChevronLargeUpIcon;
+    let ChevronLargeDownIcon = tmp7(12863).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp7(12863).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp7(12865).ChevronLargeDownIcon;
   }
   const isThemeDarkResult = obj.isThemeDark(importDefault(4239)());
   const obj6 = { numSubscriptions: table[tier] };
@@ -893,25 +893,25 @@ let closure_16 = importAllResult.forwardRef((onCardPress, ref) => {
       obj13[4] = items11;
       items9[1] = tmp13(tmp2Result1, obj13);
       const obj14 = { source: null, style: null };
-      obj14[0] = tmp2(12865);
+      obj14[0] = tmp2(12867);
       const items12 = [, , ];
       ({ sparkleStar: arr14[0], sparkleStarPointed: arr14[1], sparkleStarPointed1: arr14[2] } = tmp);
       obj14[1] = items12;
       items9[2] = tmp13(tmp7(1297).Icon, obj14);
       const obj15 = { source: null, style: null };
-      obj15[0] = tmp2(12865);
+      obj15[0] = tmp2(12867);
       const items13 = [, , ];
       ({ sparkleStar: arr15[0], sparkleStarPointed: arr15[1], sparkleStarPointed2: arr15[2] } = tmp);
       obj15[1] = items13;
       items9[3] = tmp13(tmp7(1297).Icon, obj15);
       const obj16 = { source: null, style: null };
-      obj16[0] = tmp2(12865);
+      obj16[0] = tmp2(12867);
       const items14 = [, , ];
       ({ sparkleStar: arr16[0], sparkleStarPointed: arr16[1], sparkleStarPointed3: arr16[2] } = tmp);
       obj16[1] = items14;
       items9[4] = tmp13(tmp7(1297).Icon, obj16);
       const obj17 = { source: null, style: null };
-      obj17[0] = tmp2(12866);
+      obj17[0] = tmp2(12868);
       const items15 = [, , ];
       ({ sparkleStar: arr17[0], sparkleStarElongated: arr17[1], sparkleStarElongated1: arr17[2] } = tmp);
       obj17[1] = items15;
@@ -995,5 +995,5 @@ export default function GuildBoostingMarketingTierCards(guild) {
     const tier = features.tier;
     return outer1_9(outer1_16, { features: features.features, guild: closure_0, isExpanded: closure_2, onCardPress: handleCardPress, tier }, tier);
   });
-  return closure_9(_require(11922).MarketingCardsScroller, obj);
+  return closure_9(_require(11923).MarketingCardsScroller, obj);
 };

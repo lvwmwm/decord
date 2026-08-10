@@ -1,10 +1,10 @@
-// Module ID: 13862
-// Function ID: 13863
+// Module ID: 13864
+// Function ID: 13865
 // Name: CompassIcon
-// Dependencies: [19, 21, 712, 4004, 13863, 2]
+// Dependencies: [19, 21, 712, 4004, 13865, 2]
 // Exports: CompassIcon
 
-// Module 13862 (CompassIcon)
+// Module 13864 (CompassIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const CompassIcon = function CompassIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13863) /* registerAsset */;
+  obj[0] = require(13865) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

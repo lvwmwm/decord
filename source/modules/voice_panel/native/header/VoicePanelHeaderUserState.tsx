@@ -1,9 +1,9 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 16180
+// Function ID: 16181
 // Name: useVoicePanelHeaderUserStateIcons
-// Dependencies: [19, 4316, 21, 4036, 8663, 4303, 712, 16172, 16170, 9178, 5781, 11644, 589, 4304, 2]
+// Dependencies: [19, 4316, 21, 4036, 8663, 4303, 712, 16181, 16179, 9178, 5781, 11645, 589, 4304, 2]
 
-// Module 16171 (useVoicePanelHeaderUserStateIcons)
+// Module 16180 (useVoicePanelHeaderUserStateIcons)
 import importAllResult from "noop";
 import getParticipants from "getParticipants";
 import { jsx } from "jsxProd";
@@ -17,14 +17,14 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
   if (participant != null) {
     type = participant.type;
   }
-  let obj = require(16170) /* areStableParticipantsEqual */;
+  let obj = require(16179) /* areStableParticipantsEqual */;
   let id;
   if (obj.isStableParticipantWithUser(participant)) {
     id = participant.user.id;
   }
-  const tmp4 = importDefault(16172);
+  const tmp4 = importDefault(16181);
   const items = [];
-  const iter = importDefault(16172)(type, id, guildId)[Symbol.iterator]();
+  const iter = importDefault(16181)(type, id, guildId)[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp9 = nextResult;
@@ -32,7 +32,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     let tmp11 = require;
     let tmp12 = dependencyMap;
     let tmp13 = dependencyMap;
-    if (nextResult.type === require(16172) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
+    if (nextResult.type === require(16181) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let tmp29 = jsx;
       let tmp30 = jsx;
       let tmp31 = tmp10;
@@ -49,7 +49,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     let tmp14 = nextResult;
     let tmp15 = tmp10;
     let tmp16 = tmp12;
-    if (tmp9.type === tmp11(16172).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(16181).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let tmp37 = tmp10;
       let tmp38 = tmp12;
@@ -82,7 +82,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     obj3[1] = items;
     return jsx(importDefault(5781), { style: null, children: null });
   }
-  const tmp4Result = importDefault(16172)(type, id, guildId);
+  const tmp4Result = importDefault(16181)(type, id, guildId);
 }
 let c3 = importAllResult;
 let closure_6 = require("module_4036").createAnimatedComponent(require("TwinButtons").BackgroundBlurView);
@@ -101,7 +101,7 @@ let obj1 = { width: 20, height: 20, borderRadius: require("Themes").radii.round,
 const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = importAllResult.useContext(channelId(11644));
+  const context = importAllResult.useContext(channelId(11645));
   channelId = context.channelId;
   const guildId = context.guildId;
   let obj = isHeaderHidden(589);
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function VoicePanelHeaderUserState(isHea
     }
     return id;
   });
-  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16170)(stateFromStores, channelId, guildId), guildId);
+  const tmp4 = useVoicePanelHeaderUserStateIcons(channelId(16179)(stateFromStores, channelId, guildId), guildId);
   isHeaderHidden(4036);
   const fn = function h() {
     let obj = isHeaderHidden(outer1_2[13]);

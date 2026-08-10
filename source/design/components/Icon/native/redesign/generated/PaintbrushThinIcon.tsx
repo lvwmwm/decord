@@ -1,10 +1,10 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 15596
+// Function ID: 15597
 // Name: PaintbrushThinIcon
-// Dependencies: [19, 21, 712, 4004, 15589, 2]
+// Dependencies: [19, 21, 712, 4004, 15597, 2]
 // Exports: PaintbrushThinIcon
 
-// Module 15588 (PaintbrushThinIcon)
+// Module 15596 (PaintbrushThinIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PaintbrushThinIcon = function PaintbrushThinIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(15589) /* registerAsset */;
+  obj[0] = require(15597) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

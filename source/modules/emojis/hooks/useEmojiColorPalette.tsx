@@ -1,10 +1,10 @@
-// Module ID: 10199
-// Function ID: 10200
+// Module ID: 10200
+// Function ID: 10201
 // Name: useEmojiColorPalette
 // Dependencies: [4295, 1302, 589, 4153, 8066, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10199 (useEmojiColorPalette)
+// Module 10200 (useEmojiColorPalette)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import handleThemeChange from "handleThemeChange";
 

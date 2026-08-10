@@ -1,9 +1,9 @@
-// Module ID: 10147
-// Function ID: 10148
+// Module ID: 10148
+// Function ID: 10149
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4036, 4020, 4713, 10148, 4299, 2]
+// Dependencies: [32, 19, 21, 4036, 4020, 4713, 10149, 4299, 2]
 
-// Module 10147 (BalanceCounter)
+// Module 10148 (BalanceCounter)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import closure_8 from "noop";

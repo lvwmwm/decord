@@ -1,10 +1,10 @@
-// Module ID: 14935
-// Function ID: 14936
+// Module ID: 14937
+// Function ID: 14938
 // Name: SettingSegmentedControl
-// Dependencies: [32, 19, 17, 13888, 10447, 21, 4303, 712, 14926, 13893, 38, 13891, 8956, 9141, 9562, 2]
+// Dependencies: [32, 19, 17, 13890, 10448, 21, 4303, 712, 14928, 13895, 38, 13893, 8956, 9141, 9562, 2]
 // Exports: default
 
-// Module 14935 (SettingSegmentedControl)
+// Module 14937 (SettingSegmentedControl)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

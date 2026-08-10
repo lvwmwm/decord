@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11809
+// Function ID: 11810
 // Name: ChatInputGuard
-// Dependencies: [19, 17, 8611, 21, 4303, 712, 806, 8392, 1348, 11631, 11630, 4848, 500, 11639, 5374, 7751, 9688, 9683, 4299, 4714, 5150, 8663, 2]
+// Dependencies: [19, 17, 8611, 21, 4303, 712, 806, 8392, 1348, 11632, 11631, 4848, 500, 11640, 5374, 7751, 9688, 9683, 4299, 4714, 5150, 8663, 2]
 // Exports: ChatInputGuardContainer, default
 
-// Module 11808 (ChatInputGuard)
+// Module 11809 (ChatInputGuard)
 import Button from "Button";
 import get_ActivityIndicator from "componentDidMount";
 import { updateChatInputContainerHeight as closure_6 } from "updateChatInputContainerHeight";
@@ -182,14 +182,14 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   const tmp3 = importDefault(8392)();
   let obj = screenIndex(1348);
   const chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "ChatInputGuardContainer" }).chatInputFloating;
-  let obj1 = screenIndex(11631);
+  let obj1 = screenIndex(11632);
   const chatInputFloatingOverlayStyle = obj1.useChatInputFloatingOverlayStyle();
   const tmp6 = callback2(tmp3);
   const items = [screenIndex];
   const callback = React.useCallback((nativeEvent) => {
     outer1_6(screenIndex, nativeEvent.nativeEvent.layout.height);
   }, items);
-  const items1 = [importDefault(11630)({ isCreatingThread: false }), ];
+  const items1 = [importDefault(11631)({ isCreatingThread: false }), ];
   let tmp10 = chatInputFloating;
   if (chatInputFloating) {
     tmp10 = chatInputFloatingOverlayStyle;
@@ -198,7 +198,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
   items1[1] = tmp10;
   let tmp11 = null;
   if (chatInputFloating) {
-    tmp11 = callback(tmp4(11631).ChatInputScrimGradient, {});
+    tmp11 = callback(tmp4(11632).ChatInputScrimGradient, {});
   }
   const items2 = [tmp11, ];
   obj = { style: tmp6.container, children: null };
@@ -225,7 +225,7 @@ export const ChatInputGuardContainer = function ChatInputGuardContainer(screenIn
       obj3[0] = channelId;
       obj3[1] = screenIndex;
       obj3[2] = onJumpToPresent;
-      tmp17 = callback(tmp(11639), obj3);
+      tmp17 = callback(tmp(11640), obj3);
     }
   }
   items3[2] = tmp17;

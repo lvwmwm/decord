@@ -1,9 +1,9 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 11035
+// Function ID: 11036
 // Name: PlatformIcon
-// Dependencies: [5, 32, 19, 17, 5250, 1975, 1911, 1218, 1372, 4998, 1971, 3929, 5125, 676, 21, 4303, 712, 4239, 5000, 1416, 4153, 1297, 4764, 4494, 4299, 1236, 5124, 11035, 5731, 9131, 11036, 11037, 12, 4005, 11038, 38, 4002, 8612, 4730, 7967, 5123, 589, 5126, 5232, 698, 4498, 4271, 6016, 11041, 10491, 709, 4509, 10624, 1988, 9541, 11045, 5397, 11046, 5772, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 5250, 1975, 1911, 1218, 1372, 4998, 1971, 3929, 5125, 676, 21, 4303, 712, 4239, 5000, 1416, 4153, 1297, 4764, 4494, 4299, 1236, 5124, 11036, 5731, 9131, 11037, 11038, 12, 4005, 11039, 38, 4002, 8612, 4730, 7967, 5123, 589, 5126, 5232, 698, 4498, 4271, 6016, 11042, 10492, 709, 4509, 10625, 1988, 9541, 11046, 5397, 11047, 5772, 4714, 2]
 
-// Module 11034 (PlatformIcon)
+// Module 11035 (PlatformIcon)
 import _getSystemLocale from "_getSystemLocale";
 import apply from "apply";
 import getAvatarURL from "getAvatarURL";
@@ -857,9 +857,9 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     useState = undefined;
     c14 = undefined;
     useState = undefined;
-    f86687 = undefined;
+    f86704 = undefined;
     useState = undefined;
-    f86688 = undefined;
+    f86705 = undefined;
     c19 = undefined;
     _handleAssignRole = function _handleAssignRole() {
       const self = this;
@@ -980,7 +980,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
       }
       return tmp2;
     }), 2);
-    [tmp26, f86687] = tmp25;
+    [tmp26, f86704] = tmp25;
     tmp27 = onCloseModal(CHECKS_REQUIRED.useState(null), 2);
     [arr6, useState] = tmp27;
     tmp28 = role;
@@ -989,7 +989,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     items3 = [];
     items3[0] = useState;
     stateFromStores3 = obj4.useStateFromStores(items3, () => member.getMember(guildId, stateFromStores2));
-    f86688 = stateFromStores3;
+    f86705 = stateFromStores3;
     obj5 = require("initialize");
     items4 = [];
     items4[0] = useState;

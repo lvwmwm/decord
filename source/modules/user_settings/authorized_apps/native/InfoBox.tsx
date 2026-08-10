@@ -1,10 +1,10 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10426
+// Function ID: 10427
 // Name: InfoBox
 // Dependencies: [19, 17, 21, 4303, 712, 4259, 7793, 4299, 2]
 // Exports: default
 
-// Module 10425 (InfoBox)
+// Module 10426 (InfoBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

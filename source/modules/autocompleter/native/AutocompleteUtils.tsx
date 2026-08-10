@@ -1,10 +1,10 @@
-// Module ID: 9915
-// Function ID: 9916
+// Module ID: 9916
+// Function ID: 9917
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1376, 1961, 3938, 1903, 676, 9916, 4738, 21, 4303, 712, 4494, 5159, 4146, 7409, 2]
+// Dependencies: [19, 17, 1376, 1961, 3938, 1903, 676, 9917, 4738, 21, 4303, 712, 4494, 5159, 4146, 7409, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9915 (AutocompleteFormDivider)
+// Module 9916 (AutocompleteFormDivider)
 import "noop";
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord";
 import comparator from "comparator";

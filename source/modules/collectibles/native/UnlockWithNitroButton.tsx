@@ -1,10 +1,10 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12170
+// Function ID: 12171
 // Name: UnlockWithNitroButton
 // Dependencies: [19, 5858, 7017, 678, 21, 589, 5861, 9567, 1236, 4715, 4299, 7704, 2]
 // Exports: UnlockWithNitroButton
 
-// Module 12168 (UnlockWithNitroButton)
+// Module 12170 (UnlockWithNitroButton)
 import "noop";
 import updateProduct from "updateProduct";
 import map from "map";

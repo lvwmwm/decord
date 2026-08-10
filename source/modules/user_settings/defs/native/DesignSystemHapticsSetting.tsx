@@ -1,9 +1,9 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14822
+// Function ID: 14823
 // Name: route
-// Dependencies: [8082, 676, 10446, 14821, 2]
+// Dependencies: [8082, 676, 10447, 14823, 2]
 
-// Module 14820 (route)
+// Module 14822 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -16,7 +16,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.DESIGN_SYSTEM_HAPTICS,
   getComponent() {
-    return require(14821) /* HapticButton */.default;
+    return require(14823) /* HapticButton */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,10 +1,10 @@
-// Module ID: 14157
-// Function ID: 14158
+// Module ID: 14159
+// Function ID: 14160
 // Name: FamilyCenterMaxConnectionsBlurb
-// Dependencies: [19, 17, 6997, 10338, 21, 4303, 712, 7337, 7338, 11326, 1236, 2284, 4299, 10374, 5328, 14118, 14158, 14160, 14169, 2]
+// Dependencies: [19, 17, 6997, 10339, 21, 4303, 712, 7337, 7338, 11327, 1236, 2284, 4299, 10375, 5328, 14120, 14160, 14162, 14171, 2]
 // Exports: default
 
-// Module 14157 (FamilyCenterMaxConnectionsBlurb)
+// Module 14159 (FamilyCenterMaxConnectionsBlurb)
 import "set";
 import get_ActivityIndicator from "FamilyCenterAcceptedLinkRow";
 import items from "items";
@@ -26,7 +26,7 @@ function FamilyCenterMaxConnectionsBlurb() {
   const hasMaxConnections = obj.useHasMaxConnections();
   const tmp = createCacheKey();
   const tmp5 = importDefault;
-  require(11326) /* useAgeSpecificText */;
+  require(11327) /* useAgeSpecificText */;
   const intl = tmp2(1236).intl;
   intl.formatToPlainString(tmp5(2284)["1/PzIj"], { maxConnections: importDefault(7338)() ? closure_5 : closure_6 });
   const intl2 = tmp2(1236).intl;
@@ -43,9 +43,9 @@ function FamilyCenterMaxConnectionsBlurb() {
 }
 function FamilyCenterHelpLineInfo() {
   const tmp = callback3();
-  let obj = require(10374) /* set */;
+  let obj = require(10375) /* set */;
   const shouldShowHelplineLink = obj.useShouldShowHelplineLink();
-  require(10374) /* set */;
+  require(10375) /* set */;
   if (shouldShowHelplineLink) {
     const intl2 = tmp2(1236).intl;
     let formatResult = intl2.format(importDefault(2284)["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
@@ -99,7 +99,7 @@ export default function FamilyCenterRequestsPage() {
   let obj = { style: tmp.scrollView, children: null };
   obj = { bottom: true, children: null };
   obj = { style: tmp.container, children: null };
-  const items = [callback(importDefault(14118), {}), callback(importDefault(14158), {}), callback(importDefault(14160), {}), callback(importDefault(14169), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
+  const items = [callback(importDefault(14120), {}), callback(importDefault(14160), {}), callback(importDefault(14162), {}), callback(importDefault(14171), {}), callback(FamilyCenterMaxConnectionsBlurb, {}), callback(FamilyCenterHelpLineInfo, {})];
   obj[1] = items;
   obj[1] = callback2(closure_3, obj);
   obj[1] = callback(require(5328) /* SafeAreaPaddingView */.SafeAreaPaddingView, obj);

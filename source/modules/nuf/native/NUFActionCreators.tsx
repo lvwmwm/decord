@@ -1,10 +1,10 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12059
+// Function ID: 12060
 // Name: _startContactSyncForDiscoverability
-// Dependencies: [5, 12031, 4998, 1903, 12059, 676, 8507, 709, 4509, 12060, 1988, 12097, 12100, 12101, 691, 12034, 12038, 2]
+// Dependencies: [5, 12032, 4998, 1903, 12060, 676, 8507, 709, 4509, 12061, 1988, 12098, 12101, 12102, 691, 12035, 12039, 2]
 // Exports: closeDiscoverabilityModal, nextOnboardingStep, openDiscoverabilityModal, previousOnboardingStep, startContactSyncForDiscoverability, startOnboarding, toggleDiscoverabilityForUser, transitionToHubEmailConnectionModal, transitionToNUFGuildTemplatesModal
 
-// Module 12058 (_startContactSyncForDiscoverability)
+// Module 12059 (_startContactSyncForDiscoverability)
 import ME from "ME";
 import ContactSyncModes from "ContactSyncModes";
 import set from "set";
@@ -58,14 +58,14 @@ function _startContactSyncForDiscoverability() {
                 phone = currentUser.phone;
               }
               const localAccount = outer1_8.getLocalAccount(outer1_11.CONTACTS);
-              callback(12034);
+              callback(12035);
               if (null == phone) {
                 const _Error = Error;
                 const error = new Error("Cannot start contact sync without a phone number");
                 throw error;
               } else {
                 outer1_6(tmp31);
-                let obj4 = outer1_1(12038);
+                let obj4 = outer1_1(12039);
                 let obj1 = { enabled: null, name: null };
                 obj1[0] = tmp15;
                 obj1[1] = tmp31;
@@ -86,7 +86,7 @@ function _startContactSyncForDiscoverability() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(12034);
+              obj1 = callback(12035);
               dependencyMap = 2;
               c3 = 1;
               obj4 = { value: null, done: false };
@@ -159,12 +159,12 @@ export const transitionToHubEmailConnectionModal = function transitionToHubEmail
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = importDefault(12097);
+  let obj = importDefault(12098);
   obj = {
     onCloseExtra(arg0) {
       if (arg0) {
-        const result = callback(12100).setNewUserFlowCompleted();
-        const obj2 = callback(12100);
+        const result = callback(12101).setNewUserFlowCompleted();
+        const obj2 = callback(12101);
       } else {
         callback2(709).dispatch({ type: "ONBOARDING_STEP" });
         const obj = callback2(709);

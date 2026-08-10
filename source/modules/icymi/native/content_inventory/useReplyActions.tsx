@@ -1,10 +1,10 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15621
+// Function ID: 15622
 // Name: useReplyActions
-// Dependencies: [5, 19, 1372, 4640, 1903, 1906, 4296, 21, 589, 8234, 8357, 4313, 15614, 4146, 7142, 6917, 15610, 4271, 4002, 1236, 14132, 8913, 8637, 7222, 15614, 1988, 2]
+// Dependencies: [5, 19, 1372, 4640, 1903, 1906, 4296, 21, 589, 8234, 8357, 4313, 15622, 4146, 7142, 6917, 15618, 4271, 4002, 1236, 14134, 8913, 8637, 7222, 15622, 1988, 2]
 // Exports: useReplyActions
 
-// Module 15613 (useReplyActions)
+// Module 15621 (useReplyActions)
 import set from "set";
 import getSystemLocale from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";

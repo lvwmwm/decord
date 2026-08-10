@@ -1,9 +1,9 @@
-// Module ID: 10437
-// Function ID: 10438
+// Module ID: 10438
+// Function ID: 10439
 // Name: handleUpdateActivity
 // Dependencies: [1372, 1891, 4375, 3938, 1960, 1903, 5136, 1377, 5132, 676, 3934, 9655, 5142, 4494, 5135, 659, 589, 709, 2]
 
-// Module 10437 (handleUpdateActivity)
+// Module 10438 (handleUpdateActivity)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import createRTCConnection from "createRTCConnection";

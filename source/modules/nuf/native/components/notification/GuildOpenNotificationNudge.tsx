@@ -1,10 +1,10 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15639
+// Function ID: 15640
 // Name: GuildOpenNotificationNudge
-// Dependencies: [32, 19, 1971, 1891, 4124, 4499, 11777, 11778, 676, 21, 589, 15632, 1236, 14665, 11779, 5249, 4142, 6022, 1358, 11780, 4271, 15631, 1988, 2]
+// Dependencies: [32, 19, 1971, 1891, 4124, 4499, 11778, 11779, 676, 21, 589, 15640, 1236, 14667, 11780, 5249, 4142, 6022, 1358, 11781, 4271, 15639, 1988, 2]
 // Exports: default, useGuildOpenNudge
 
-// Module 15631 (GuildOpenNotificationNudge)
+// Module 15639 (GuildOpenNotificationNudge)
 import _slicedToArray from "_slicedToArray";
 import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -55,7 +55,7 @@ export default function GuildOpenNotificationNudge(guildId) {
   obj[3] = constants2.GUILD_OPEN_BOTTOM_SHEET;
   obj[4] = markAsDismissed;
   obj[5] = onHide;
-  return jsx(importDefault(15632), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
+  return jsx(importDefault(15640), { title: null, body: null, actionLocation: null, surface: null, markAsDismissed: null, onHide: null });
 };
 export const GUILD_OPEN_NOTIFICATION_NUDGE_KEY = "guild-open-notification-nudge-key";
 export const useGuildOpenNudge = function useGuildOpenNudge() {
@@ -68,9 +68,9 @@ export const useGuildOpenNudge = function useGuildOpenNudge() {
     return guildId;
   });
   let obj = stateFromStores(589);
-  let obj2 = stateFromStores3(14665);
-  const canSeePushNotificationNudge = stateFromStores(11779).useCanSeePushNotificationNudge();
-  const obj3 = stateFromStores(11779);
+  let obj2 = stateFromStores3(14667);
+  const canSeePushNotificationNudge = stateFromStores(11780).useCanSeePushNotificationNudge();
+  const obj3 = stateFromStores(11780);
   const items1 = [updateUserGuildSettingsInternal];
   const stateFromStores1 = stateFromStores(589).useStateFromStores(items1, () => {
     let isMutedResult = null == stateFromStores;

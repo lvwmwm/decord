@@ -1,8 +1,8 @@
-// Module ID: 12250
-// Function ID: 12251
-// Dependencies: [32, 19, 676, 21, 8868, 8853, 8847, 8846, 12251, 500, 2]
+// Module ID: 12252
+// Function ID: 12253
+// Dependencies: [32, 19, 676, 21, 8868, 8853, 8847, 8846, 12253, 500, 2]
 
-// Module 12250
+// Module 12252
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import { YOUTUBE_EMBED_PAGE_TYPE } from "ME";
@@ -141,7 +141,7 @@ const memoResult = importAllResult.memo((visible) => {
       if ("embed_not_allowed" === tmp6[0]) {
         obj = { videoId: null };
         obj[0] = youtubeVideoIdFromURI.videoId;
-        return ref(tmp7(12251), obj);
+        return ref(tmp7(12253), obj);
       }
     }
     tmp2Result = tmp2(500);

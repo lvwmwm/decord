@@ -1,9 +1,9 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11739
+// Function ID: 11740
 // Name: teardown
-// Dependencies: [1372, 5226, 12, 11739, 9622, 1236, 589, 709, 2]
+// Dependencies: [1372, 5226, 12, 11740, 9622, 1236, 589, 709, 2]
 
-// Module 11738 (teardown)
+// Module 11739 (teardown)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleChannelSelect from "handleChannelSelect";
 import { Store } from "initialize";
@@ -49,7 +49,7 @@ prototype["search"] = function search(str) {
     } else {
       const obj2 = importDefault(12);
       const values = importDefault(12).chain(mutablePrivateChannels.getMutablePrivateChannels()).values();
-      const found = values.filter(trimmed1(11739).filterGroupDMs);
+      const found = values.filter(trimmed1(11740).filterGroupDMs);
       const mapped = found.map((id) => {
         const items = [id, trimmed1(outer1_2[3]).matchGroupDM(id, trimmed1), outer1_4.getScoreWithoutFetchingLatest(id.id)];
         return items;

@@ -1,10 +1,10 @@
-// Module ID: 11748
-// Function ID: 11749
+// Module ID: 11749
+// Function ID: 11750
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 1891, 4499, 4500, 21, 4303, 589, 5764, 5396, 5779, 1236, 7967, 1297, 11749, 5253, 4271, 11750, 11751, 5262, 5257, 2]
+// Dependencies: [19, 17, 1891, 4499, 4500, 21, 4303, 589, 5764, 5396, 5779, 1236, 7967, 1297, 11750, 5253, 4271, 11751, 11752, 5262, 5257, 2]
 // Exports: default
 
-// Module 11748 (UpcomingEventsLongPressActionSheet)
+// Module 11749 (UpcomingEventsLongPressActionSheet)
 import "module_5262";
 import { View } from "registerAsset";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -43,7 +43,7 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   const items2 = [callback(guildId(5396).BottomSheetTitleHeader, obj), , ];
   const obj2 = { leading: null, label: null, onPress: null };
   const obj3 = { source: null };
-  obj3[0] = stateFromStores1(11749);
+  obj3[0] = stateFromStores1(11750);
   obj2[0] = callback(guildId(1297).Icon, obj3);
   const obj4 = { text: null };
   const intl2 = guildId(1236).intl;
@@ -57,7 +57,7 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   items2[1] = callback(guildId(7967).FormRow, obj2);
   const obj5 = { leading: null, label: null, onPress: null };
   const obj6 = { source: null };
-  obj6[0] = tmp8(stateFromStores1 ? 11750 : 11751);
+  obj6[0] = tmp8(stateFromStores1 ? 11751 : 11752);
   obj5[0] = callback(guildId(1297).Icon, obj6);
   const intl3 = tmp2(1236).intl;
   const string = intl3.string;

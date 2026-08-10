@@ -1,10 +1,10 @@
-// Module ID: 9848
-// Function ID: 9849
+// Module ID: 9849
+// Function ID: 9850
 // Name: Sticker
-// Dependencies: [19, 17, 1302, 21, 4985, 4638, 1236, 8106, 9849, 5268, 4153, 5361, 5362, 2]
+// Dependencies: [19, 17, 1302, 21, 4985, 4638, 1236, 8106, 9850, 5268, 4153, 5361, 5362, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 9848 (Sticker)
+// Module 9849 (Sticker)
 import "noop";
 import { PixelRatio } from "get ActivityIndicator";
 import handleThemeChange from "handleThemeChange";
@@ -83,7 +83,7 @@ export default function Sticker(opaque) {
       const obj5 = {};
       const tmpResult3 = tmp(4638);
       const merged = Object.assign(obj3);
-      return jsx(importDefault(9849), {});
+      return jsx(importDefault(9850), {});
     }
     const obj6 = { resizeMode: "contain", style: null, placeholder: null, source: null, accessible: true, accessibilityLabel: null };
     const obj7 = { height: null, width: null, opacity: null };

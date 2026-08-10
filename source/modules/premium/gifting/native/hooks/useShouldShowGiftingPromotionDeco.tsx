@@ -1,10 +1,10 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10045
+// Function ID: 10046
 // Name: useShouldShowGiftingPromotionDeco
 // Dependencies: [1905, 9611, 2]
 // Exports: default
 
-// Module 10044 (useShouldShowGiftingPromotionDeco)
+// Module 10045 (useShouldShowGiftingPromotionDeco)
 import { PremiumTypes } from "GuildFeatures";
 
 const result = require("set").fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");

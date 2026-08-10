@@ -1,10 +1,10 @@
-// Module ID: 15162
-// Function ID: 15163
+// Module ID: 15164
+// Function ID: 15165
 // Name: MessageRequestAnimation
-// Dependencies: [19, 17, 5841, 5842, 21, 4303, 589, 15163, 4714, 1236, 7751, 12538, 9117, 2]
+// Dependencies: [19, 17, 5841, 5842, 21, 4303, 589, 15165, 4714, 1236, 7751, 12540, 9117, 2]
 // Exports: default
 
-// Module 15162 (MessageRequestAnimation)
+// Module 15164 (MessageRequestAnimation)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import processChannel from "processChannel";
@@ -35,7 +35,7 @@ function MessageRequestAnimation(color) {
       }
     }
   }, items2);
-  return callback(ref(15163).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
+  return callback(ref(15165).MessageRequestLottie, { ref, color: color.color, size: "sm", autoPlay: true });
 }
 ({ jsx: error, jsxs: metroImportAll } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ buttonContainer: { position: "relative" } });
@@ -82,7 +82,7 @@ export default function MessageRequestsButton(alternateVariant) {
       const merged2 = Object.assign(merged);
       tmp21 = callback(tmp3(7751).IconButton, obj1);
     }
-    const items2 = [tmp21, str > 0 && tmp16(tmp3(12538).ButtonBadge, { badgePosition: "right" })];
+    const items2 = [tmp21, str > 0 && tmp16(tmp3(12540).ButtonBadge, { badgePosition: "right" })];
     obj[2] = items2;
     return closure_8(View, obj);
   } else {
@@ -98,7 +98,7 @@ export default function MessageRequestsButton(alternateVariant) {
     obj2[3] = str1;
     obj2[4] = str > 0;
     const merged3 = Object.assign(merged);
-    return callback(importDefault(12538), obj2);
+    return callback(importDefault(12540), obj2);
   }
   tmp2 = callback2();
 };

@@ -1,10 +1,10 @@
-// Module ID: 10265
-// Function ID: 10266
+// Module ID: 10266
+// Function ID: 10267
 // Name: ModalActionButton
 // Dependencies: [19, 17, 21, 4303, 4714, 2]
 // Exports: ModalActionButton
 
-// Module 10265 (ModalActionButton)
+// Module 10266 (ModalActionButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

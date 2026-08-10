@@ -1,10 +1,10 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14098
+// Function ID: 14099
 // Name: computeAffectedGuilds
 // Dependencies: [5226, 4224, 1891, 5155, 1306, 6013, 1236, 3974, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 14096 (computeAffectedGuilds)
+// Module 14098 (computeAffectedGuilds)
 import handleChannelSelect from "handleChannelSelect";
 import handleInviteData from "handleInviteData";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

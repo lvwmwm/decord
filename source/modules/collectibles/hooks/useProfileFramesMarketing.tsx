@@ -1,10 +1,10 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16020
+// Function ID: 16021
 // Name: deriveProfileFramesMarketing
-// Dependencies: [1903, 9403, 16012, 9351, 589, 8808, 9404, 2]
+// Dependencies: [1903, 9403, 16021, 9351, 589, 8808, 9404, 2]
 // Exports: deriveProfileFramesMarketing, getProfileFramesMarketing, useProfileFramesMarketing
 
-// Module 16011 (deriveProfileFramesMarketing)
+// Module 16020 (deriveProfileFramesMarketing)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -55,8 +55,8 @@ export const useProfileFramesMarketing = function useProfileFramesMarketing(Coll
   const canViewProfileFramesInCollectiblesShop = obj.useCanViewProfileFramesInCollectiblesShop(CollectiblesMobileAnnouncementActionSheet);
   let isProfileFramesEarlyAccessPhase = require(9403) /* useCanPurchaseFrames */.useIsProfileFramesEarlyAccessPhase(CollectiblesMobileAnnouncementActionSheet);
   const obj2 = require(9403) /* useCanPurchaseFrames */;
-  const isProfileFramesEAMarketingEnabled = require(16012) /* apexExperiment */.useIsProfileFramesEAMarketingEnabled(CollectiblesMobileAnnouncementActionSheet);
-  const obj3 = require(16012) /* apexExperiment */;
+  const isProfileFramesEAMarketingEnabled = require(16021) /* apexExperiment */.useIsProfileFramesEAMarketingEnabled(CollectiblesMobileAnnouncementActionSheet);
+  const obj3 = require(16021) /* apexExperiment */;
   const isProfileFrameGiftingEnabled = require(9351) /* apexExperiment */.useIsProfileFrameGiftingEnabled(CollectiblesMobileAnnouncementActionSheet);
   const obj4 = require(9351) /* apexExperiment */;
   const items = [mergeGuildAvatar];
@@ -109,8 +109,8 @@ export const getProfileFramesMarketing = function getProfileFramesMarketing(loca
     enableProfileFrames = bucket === require(9404) /* apexExperiment */.ProfileFramesPurchaseBucket.PAID_PREMIUM_SUBSCRIBERS_ONLY;
   }
   const obj3 = importDefault(9404);
-  const isProfileFramesEAMarketingEnabled = require(16012) /* apexExperiment */.getIsProfileFramesEAMarketingEnabled(location);
-  const obj5 = require(16012) /* apexExperiment */;
+  const isProfileFramesEAMarketingEnabled = require(16021) /* apexExperiment */.getIsProfileFramesEAMarketingEnabled(location);
+  const obj5 = require(16021) /* apexExperiment */;
   const isProfileFrameGiftingEnabled = require(9351) /* apexExperiment */.getIsProfileFrameGiftingEnabled(location);
   const obj6 = require(9351) /* apexExperiment */;
   const isUserPaidTier2Result = require(9403) /* useCanPurchaseFrames */.isUserPaidTier2(currentUser.getCurrentUser());

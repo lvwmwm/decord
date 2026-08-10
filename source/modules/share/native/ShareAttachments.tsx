@@ -1,10 +1,10 @@
-// Module ID: 13250
-// Function ID: 13251
+// Module ID: 13252
+// Function ID: 13253
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 4036, 4725, 1297, 4303, 712, 4304, 4151, 1236, 9878, 4860, 2]
+// Dependencies: [19, 17, 21, 4036, 4725, 1297, 4303, 712, 4304, 4151, 1236, 9879, 4860, 2]
 // Exports: default
 
-// Module 13250 (ShareAttachments)
+// Module 13252 (ShareAttachments)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

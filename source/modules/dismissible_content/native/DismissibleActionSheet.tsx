@@ -1,10 +1,10 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10002
+// Function ID: 10003
 // Name: DismissibleActionSheet
 // Dependencies: [19, 4730, 4271, 2]
 // Exports: DismissibleActionSheet
 
-// Module 10001 (DismissibleActionSheet)
+// Module 10002 (DismissibleActionSheet)
 import noop from "noop";
 
 const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("modules/dismissible_content/native/DismissibleActionSheet.tsx");

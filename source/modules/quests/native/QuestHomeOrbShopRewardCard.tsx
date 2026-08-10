@@ -1,10 +1,10 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14325
+// Function ID: 14326
 // Name: QuestHomeOrbShopRewardCard
 // Dependencies: [19, 17, 1903, 21, 4303, 9344, 712, 589, 3947, 7012, 9429, 9415, 9418, 2]
 // Exports: default
 
-// Module 14323 (QuestHomeOrbShopRewardCard)
+// Module 14325 (QuestHomeOrbShopRewardCard)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

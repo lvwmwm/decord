@@ -1,10 +1,10 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16848
+// Function ID: 16849
 // Name: Row
-// Dependencies: [19, 17, 14462, 676, 21, 4303, 712, 5236, 4019, 9057, 1297, 16840, 1236, 16841, 2]
+// Dependencies: [19, 17, 14464, 676, 21, 4303, 712, 5236, 4019, 9057, 1297, 16849, 1236, 16850, 2]
 // Exports: default
 
-// Module 16839 (Row)
+// Module 16848 (Row)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { AllChannelAccessOptions } from "AllChannelAccessOptions";
@@ -86,7 +86,7 @@ export default function AllChannelsSwitch(style) {
   const tmp = createCacheKey();
   let obj = { style: items, accessibilityRole: "radiogroup", accessibilityState: { disabled }, children: null };
   items = [tmp.container, style.style];
-  obj = { icon: importDefault(16840), label: null, selected: null, onPress: null, disabled: null };
+  obj = { icon: importDefault(16849), label: null, selected: null, onPress: null, disabled: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t["vs2T+B"]);
   obj[2] = channelAccessFormat === AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
@@ -97,7 +97,7 @@ export default function AllChannelsSwitch(style) {
   const items1 = [callback(Row, obj), , ];
   obj = { style: tmp.separator };
   items1[1] = callback(View, obj);
-  const obj1 = { icon: importDefault(16841), label: null, selected: null, onPress: null, disabled: null };
+  const obj1 = { icon: importDefault(16850), label: null, selected: null, onPress: null, disabled: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.l4Tr7X);
   obj1[2] = channelAccessFormat === AllChannelAccessOptions.ALL_CHANNELS_ACCESS;

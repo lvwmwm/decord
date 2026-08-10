@@ -1,10 +1,10 @@
-// Module ID: 11125
-// Function ID: 11126
+// Module ID: 11126
+// Function ID: 11127
 // Name: isMessagePinnable
 // Dependencies: [3929, 676, 5890, 5889, 2]
 // Exports: default
 
-// Module 11125 (isMessagePinnable)
+// Module 11126 (isMessagePinnable)
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 import ME from "ME";
 

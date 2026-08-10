@@ -1,10 +1,10 @@
-// Module ID: 14150
-// Function ID: 14151
+// Module ID: 14152
+// Function ID: 14153
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4303, 712, 8278, 14138, 14147, 14149, 4146, 14148, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 8278, 14140, 14149, 14151, 4146, 14150, 4299, 2]
 // Exports: default
 
-// Module 14150 (FamilyCenterActivityGiftRow)
+// Module 14152 (FamilyCenterActivityGiftRow)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -35,9 +35,9 @@ export default function FamilyCenterActivityGiftRow(arg0) {
   ({ price, gifterUserId, claimed, offeredAt, claimedAt } = arg0);
   const tmp = createCacheKey();
   let product = importDefault(8278)(skuId).product;
-  let obj = require(14138) /* useSelectedTeenUser */;
+  let obj = require(14140) /* useSelectedTeenUser */;
   const teenUserForId = obj.useTeenUserForId(gifterUserId);
-  let obj1 = require(14147) /* getCollectibleTypeName */;
+  let obj1 = require(14149) /* getCollectibleTypeName */;
   let tmp7 = product;
   if (product == null) {
     tmp7 = null;
@@ -67,10 +67,10 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj[4] = claimedAt;
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const giftSubtext = tmp5(14149).getGiftSubtext(obj);
+    const giftSubtext = tmp5(14151).getGiftSubtext(obj);
     obj1 = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj1[0] = displayName;
-    tmp2Result = tmp2(14148);
+    tmp2Result = tmp2(14150);
     if (product == null) {
       product = null;
     }

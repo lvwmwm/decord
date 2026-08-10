@@ -1,9 +1,9 @@
-// Module ID: 12505
-// Function ID: 12506
+// Module ID: 12507
+// Function ID: 12508
 // Name: chunk
-// Dependencies: [12504, 8816, 8815, 12506, 709, 2]
+// Dependencies: [12506, 8816, 8815, 12508, 709, 2]
 
-// Module 12505 (chunk)
+// Module 12507 (chunk)
 import getFetchState from "getFetchState";
 import closure_3 from "getFetchState";
 import set from "_maybeFetchProductsWithSkus";
@@ -45,7 +45,7 @@ function flushCollections() {
   for (const item10016 of tmp2) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
-    let obj = require(12506) /* _maybeFetchCollectionsWithProducts */;
+    let obj = require(12508) /* _maybeFetchCollectionsWithProducts */;
     obj = { collectionIds: null };
     obj[0] = item10016;
     let result = obj.maybeFetchCollectionsWithProducts(obj);

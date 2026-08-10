@@ -1,10 +1,10 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14580
+// Function ID: 14581
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1915, 676, 21, 1914, 4303, 712, 9473, 1916, 643, 4272, 14579, 698, 4271, 5397, 5396, 4714, 1236, 13925, 9672, 2]
+// Dependencies: [32, 19, 17, 1915, 676, 21, 1914, 4303, 712, 9473, 1916, 643, 4272, 14581, 698, 4271, 5397, 5396, 4714, 1236, 13927, 9672, 2]
 // Exports: default
 
-// Module 14578 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14580 (DisplayNameStylesGummyColorPickerSheet)
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "RedesignBottomSheetTitleHeaderBase";
@@ -150,7 +150,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   } else {
     const obj7 = { colors: null };
     obj7[0] = first1;
-    tmp16Result = tmp16(onSelectColors(13925), obj7);
+    tmp16Result = tmp16(onSelectColors(13927), obj7);
   }
   const items4 = [tmp16Result, ];
   const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: null };

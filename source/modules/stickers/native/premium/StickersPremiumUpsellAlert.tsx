@@ -1,10 +1,10 @@
-// Module ID: 9977
-// Function ID: 9978
+// Module ID: 9978
+// Function ID: 9979
 // Name: PerkRow
-// Dependencies: [19, 17, 5858, 676, 1905, 21, 9978, 1236, 712, 9979, 9980, 4303, 1297, 4299, 709, 6883, 7650, 1474, 5728, 4732, 698, 8622, 4846, 8027, 9981, 2]
+// Dependencies: [19, 17, 5858, 676, 1905, 21, 9979, 1236, 712, 9980, 9981, 4303, 1297, 4299, 709, 6883, 7650, 1474, 5728, 4732, 698, 8622, 4846, 8027, 9982, 2]
 // Exports: default
 
-// Module 9977 (PerkRow)
+// Module 9978 (PerkRow)
 import componentDidMount from "componentDidMount";
 import get_ActivityIndicator from "useWindowDimensions";
 import updateProduct from "updateProduct";
@@ -144,7 +144,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     children: null
   };
   const tmp3Result = analyticsLocations(4732);
-  const items2 = [callback(closure_5, { source: analyticsLocations(9981), style: tmp.imageHeader }), , ];
+  const items2 = [callback(closure_5, { source: analyticsLocations(9982), style: tmp.imageHeader }), , ];
   const obj4 = { style: tmp.description, variant: "text-md/medium", children: null };
   const intl3 = tmp9(1236).intl;
   if (priceString == null) {
@@ -153,7 +153,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
   const obj5 = { children: null };
   obj4[2] = intl3.format(require(1236) /* getSystemLocale */.t.TBsJfQ, { monthlyPrice: priceString });
   items2[1] = callback(require(4299) /* Text */.Text, obj4);
-  const obj3 = { source: analyticsLocations(9981), style: tmp.imageHeader };
+  const obj3 = { source: analyticsLocations(9982), style: tmp.imageHeader };
   const tmp13 = closure_6;
   items2[2] = callback(closure_4, { style: tmp.perks, children: items.map((perk) => callback(closure_18, { perk, isLastPerk: arg1 === length.length - 1 }, arg1)) });
   obj2[2] = items2;

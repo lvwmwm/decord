@@ -1,10 +1,10 @@
-// Module ID: 11769
-// Function ID: 11770
+// Module ID: 11770
+// Function ID: 11771
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 1302, 1971, 11766, 21, 4303, 712, 589, 11601, 5268, 4846, 1236, 1348, 4272, 4273, 4704, 4153, 2]
+// Dependencies: [19, 17, 1302, 1971, 11767, 21, 4303, 712, 589, 11602, 5268, 4846, 1236, 1348, 4272, 4273, 4704, 4153, 2]
 // Exports: default
 
-// Module 11769 (ApplicationCommandsCategories)
+// Module 11770 (ApplicationCommandsCategories)
 import importAllResult from "noop";
 import get_ActivityIndicator from "AccessibilityAnnouncer";
 import handleThemeChange from "handleThemeChange";

@@ -1,10 +1,10 @@
-// Module ID: 9907
-// Function ID: 9908
+// Module ID: 9908
+// Function ID: 9909
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4295, 1302, 4640, 1971, 3929, 1960, 7146, 4639, 1903, 676, 1379, 1369, 1338, 1235, 505, 21, 4303, 712, 5728, 589, 4153, 4168, 8353, 4494, 8403, 7142, 5893, 4146, 5369, 4036, 7236, 4311, 6917, 12, 8406, 8016, 9908, 9909, 4643, 1236, 9910, 9912, 500, 9913, 9914, 9917, 1358, 9918, 1988, 9919, 9920, 7967, 1297, 8355, 1607, 1478, 8469, 8783, 9923, 4299, 9924, 9990, 10000, 10001, 7730, 10002, 10004, 6008, 10187, 4815, 10008, 7226, 4271, 10189, 7655, 4714, 4800, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 1302, 4640, 1971, 3929, 1960, 7146, 4639, 1903, 676, 1379, 1369, 1338, 1235, 505, 21, 4303, 712, 5728, 589, 4153, 4168, 8353, 4494, 8403, 7142, 5893, 4146, 5369, 4036, 7236, 4311, 6917, 12, 8406, 8016, 9909, 9910, 4643, 1236, 9911, 9913, 500, 9914, 9915, 9918, 1358, 9919, 1988, 9920, 9921, 7967, 1297, 8355, 1607, 1478, 8469, 8783, 9924, 4299, 9925, 9991, 10001, 10002, 7730, 10003, 10005, 6008, 10188, 4815, 10009, 7226, 4271, 10190, 7655, 4714, 4800, 2]
 // Exports: default
 
-// Module 9907 (Tags)
+// Module 9908 (Tags)
 import handleThemeChange from "handleThemeChange";
 import useSafeAreaInsetsKeyboardAware from "useSafeAreaInsetsKeyboardAware";
 import closure_5 from "jsxProd";
@@ -131,7 +131,7 @@ function ActionBar(channel) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(10004), obj);
+    isMediaChannelResult = callback(tmp5(10005), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -173,7 +173,7 @@ function ActionBar(channel) {
       tmp10 = callback(tmp2(6008).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(9912).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(9913).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
       const intl3 = tmp2(1236).intl;
@@ -223,7 +223,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(10187).KeyboardIcon;
+      let ImageIcon = tmp2(10188).KeyboardIcon;
     } else {
       ImageIcon = tmp2(4815).ImageIcon;
     }

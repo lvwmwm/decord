@@ -1,10 +1,10 @@
-// Module ID: 13942
-// Function ID: 13943
+// Module ID: 13944
+// Function ID: 13945
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 1971, 5776, 505, 21, 4303, 712, 589, 8267, 13943, 4271, 13944, 1988, 13926, 1236, 9390, 1297, 8288, 2]
+// Dependencies: [19, 17, 1971, 5776, 505, 21, 4303, 712, 589, 8267, 13945, 4271, 13946, 1988, 13928, 1236, 9390, 1297, 8288, 2]
 // Exports: default
 
-// Module 13942 (UserProfileNameplateEditButton)
+// Module 13944 (UserProfileNameplateEditButton)
 import set from "set";
 import get_ActivityIndicator from "Button";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -69,7 +69,7 @@ export default function UserProfileNameplateEditButton(user) {
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const fetchNameplate = user(13943).useFetchNameplate(skuId);
+  const fetchNameplate = user(13945).useFetchNameplate(skuId);
   ({ nameplateProduct, nameplateData, nameplateRecord, isFetching } = fetchNameplate);
   if (null != guildId) {
     let nameplate2;
@@ -98,7 +98,7 @@ export default function UserProfileNameplateEditButton(user) {
     obj[1] = intl5.string(tmp3(1236).t.MKDeyL);
     obj[2] = NOOP;
     obj[3] = <closure_4 animating size="large" />;
-    return jsx(tmp3(13926).UserProfileEditFormButton, { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true });
+    return jsx(tmp3(13928).UserProfileEditFormButton, { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true });
   } else {
     let name;
     if (nameplateProduct != null) {
@@ -137,7 +137,7 @@ export default function UserProfileNameplateEditButton(user) {
           let tmp15Result = tmp15(closure_5, obj4);
         }
         obj2[4] = tmp15Result;
-        return tmp15(tmp3(13926).UserProfileEditFormButton, obj2);
+        return tmp15(tmp3(13928).UserProfileEditFormButton, obj2);
       }
     }
     const obj6 = { source: null, style: null };

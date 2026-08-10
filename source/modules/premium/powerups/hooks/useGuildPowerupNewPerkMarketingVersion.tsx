@@ -1,10 +1,10 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 11864
+// Function ID: 11865
 // Name: useGuildPowerupNewPerkMarketingVersion
 // Dependencies: [19, 1891, 3929, 4191, 676, 4214, 589, 4233, 4232, 4194, 9024, 2]
 // Exports: default
 
-// Module 11863 (useGuildPowerupNewPerkMarketingVersion)
+// Module 11864 (useGuildPowerupNewPerkMarketingVersion)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

@@ -1,10 +1,10 @@
-// Module ID: 13353
-// Function ID: 13354
+// Module ID: 13355
+// Function ID: 13356
 // Name: WarningCircle
 // Dependencies: [19, 21, 7835, 2]
 // Exports: default
 
-// Module 13353 (WarningCircle)
+// Module 13355 (WarningCircle)
 import "noop";
 import { jsx } from "jsxProd";
 

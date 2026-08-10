@@ -1,9 +1,9 @@
-// Module ID: 15202
-// Function ID: 15203
+// Module ID: 15204
+// Function ID: 15205
 // Name: HappeningNowLiveStageContent
-// Dependencies: [19, 17, 14528, 676, 21, 4303, 712, 698, 10971, 1988, 15203, 15204, 15205, 14529, 4825, 1297, 15214, 4494, 1236, 4493, 2]
+// Dependencies: [19, 17, 14530, 676, 21, 4303, 712, 698, 10972, 1988, 15205, 15206, 15207, 14531, 4825, 1297, 15216, 4494, 1236, 4493, 2]
 
-// Module 15202 (HappeningNowLiveStageContent)
+// Module 15204 (HappeningNowLiveStageContent)
 import importAllResult from "getNickname";
 import { View } from "computeChannelName";
 import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING";

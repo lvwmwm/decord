@@ -1,10 +1,10 @@
-// Module ID: 10116
-// Function ID: 10117
+// Module ID: 10117
+// Function ID: 10118
 // Name: PremiumGiftDurationButton
-// Dependencies: [19, 17, 1905, 21, 4303, 712, 9611, 5374, 7970, 10043, 4019, 4299, 1236, 2]
+// Dependencies: [19, 17, 1905, 21, 4303, 712, 9611, 5374, 7970, 10044, 4019, 4299, 1236, 2]
 // Exports: default
 
-// Module 10116 (PremiumGiftDurationButton)
+// Module 10117 (PremiumGiftDurationButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import GuildFeatures from "GuildFeatures";
@@ -39,7 +39,7 @@ function PremiumGiftDurationButton(arg0) {
     combined = "" + closure_4 + "%";
   }
   const tmp5 = SubscriptionIntervalTypes;
-  const tmp9 = setPlanInterval(10043)(nativeGiftContext.premiumType, planInterval);
+  const tmp9 = setPlanInterval(10044)(nativeGiftContext.premiumType, planInterval);
   const radioA11yNative = planInterval(4019).useRadioA11yNative({ selected });
   const items = [tmp4.container, ];
   ({ accessibilityRole, accessibilityState } = radioA11yNative);

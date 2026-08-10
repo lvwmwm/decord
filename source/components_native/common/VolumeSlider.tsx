@@ -1,10 +1,10 @@
-// Module ID: 10852
-// Function ID: 10853
+// Module ID: 10853
+// Function ID: 10854
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4364, 21, 500, 4303, 712, 4005, 10853, 7989, 4751, 1236, 4829, 2]
+// Dependencies: [19, 17, 4364, 21, 500, 4303, 712, 4005, 10854, 7989, 4751, 1236, 4829, 2]
 // Exports: default
 
-// Module 10852 (VolumeSlider)
+// Module 10853 (VolumeSlider)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources";
@@ -48,7 +48,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: items, children: null };
   items = [tmp4.volumerSlider, maxTrackTintColor.style];
   obj = { style: tmp4.leftIcon };
-  const items1 = [callback(require(10853) /* VoiceXIcon */.VoiceXIcon, obj), , ];
+  const items1 = [callback(require(10854) /* VoiceXIcon */.VoiceXIcon, obj), , ];
   const obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
   let tmp5Result = tmp5(4751);
   obj1[1] = tmp5Result.amplitudeToPerceptual(value);

@@ -1,9 +1,9 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 16940
+// Function ID: 16941
 // Name: platformShowStreamFull
-// Dependencies: [19, 4393, 4359, 4364, 21, 3, 16932, 4643, 16933, 1988, 10831, 9155, 2]
+// Dependencies: [19, 4393, 4359, 4364, 21, 3, 16941, 4643, 16942, 1988, 10832, 9155, 2]
 
-// Module 16931 (platformShowStreamFull)
+// Module 16940 (platformShowStreamFull)
 import "noop";
 import ApplicationStreamPresets from "ApplicationStreamPresets";
 import { ApplicationStreamPresets } from "RESOLUTION_720";
@@ -40,7 +40,7 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
   sourceId = sourceId.sourceId;
   if (null != sourceId) {
     let setGoLiveSource = importDefault;
-    let obj = importDefault(10831);
+    let obj = importDefault(10832);
     if (obj.getConfig({ location: "platformHandleStreamStart" }).showMobileGoLiveUpsell) {
       state = state.getState();
     } else {

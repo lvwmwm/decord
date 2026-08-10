@@ -1,10 +1,10 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16773
+// Function ID: 16774
 // Name: EligibilityActionSheet
-// Dependencies: [19, 676, 21, 4303, 4271, 9021, 6016, 16765, 5397, 4299, 1236, 16769, 2]
+// Dependencies: [19, 676, 21, 4303, 4271, 9021, 6016, 16774, 5397, 4299, 1236, 16778, 2]
 // Exports: default
 
-// Module 16764 (EligibilityActionSheet)
+// Module 16773 (EligibilityActionSheet)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -44,8 +44,8 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   const intl = onRequireModeratorMFAClick(1236).intl;
   obj[3] = intl.string(onRequireModeratorMFAClick(1236).t["3s47iN"]);
   const items1 = [callback(onRequireModeratorMFAClick(4299).Heading, obj), ];
-  obj = { style: tmp.container, items: importDefault(16765)(onRequireModeratorMFAClick.eligibility, memo) };
-  items1[1] = callback(importDefault(16769), obj);
+  obj = { style: tmp.container, items: importDefault(16774)(onRequireModeratorMFAClick.eligibility, memo) };
+  items1[1] = callback(importDefault(16778), obj);
   obj[1] = items1;
   return callback2(onRequireModeratorMFAClick(5397).BottomSheet, obj);
 };

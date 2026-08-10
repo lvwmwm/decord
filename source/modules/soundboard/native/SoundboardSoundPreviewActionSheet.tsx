@@ -1,10 +1,10 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16151
+// Function ID: 16152
 // Name: SoundboardSoundPreviewActionSheet
-// Dependencies: [19, 17, 1903, 4749, 676, 21, 4303, 712, 500, 589, 5728, 5953, 5959, 4756, 5764, 5360, 11341, 4299, 4714, 8744, 8746, 1236, 9809, 8014, 2]
+// Dependencies: [19, 17, 1903, 4749, 676, 21, 4303, 712, 500, 589, 5728, 5953, 5959, 4756, 5764, 5360, 11342, 4299, 4714, 8744, 8746, 1236, 9810, 8014, 2]
 // Exports: default
 
-// Module 16142 (SoundboardSoundPreviewActionSheet)
+// Module 16151 (SoundboardSoundPreviewActionSheet)
 import StarIcon from "StarIcon";
 import get_ActivityIndicator from "Text";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -99,7 +99,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   ({ emoji: arr5[0], emojiFastImage: arr5[1] } = tmp);
   items5 = [, ];
   ({ emoji: arr6[0], emojiText: arr6[1] } = tmp);
-  obj[2] = sound(11341)(sound, 64);
+  obj[2] = sound(11342)(sound, 64);
   let str = sound.emojiName;
   if (str == null) {
     str = "";
@@ -129,7 +129,7 @@ export default function SoundboardSoundPreviewActionSheet(channelId) {
   if (isPlayingSound) {
     let obj4 = { style: null };
     obj4[0] = tmp.star;
-    let tmp8Result = tmp8(tmp2(9809).WaveformIcon, obj4);
+    let tmp8Result = tmp8(tmp2(9810).WaveformIcon, obj4);
   } else {
     const obj5 = { style: null, source: null };
     obj5[0] = tmp.star;

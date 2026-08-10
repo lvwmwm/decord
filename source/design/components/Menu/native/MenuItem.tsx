@@ -1,9 +1,9 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 13385
+// Function ID: 13386
 // Name: MenuItem
-// Dependencies: [19, 21, 4303, 13381, 4716, 5367, 5387, 2]
+// Dependencies: [19, 21, 4303, 13383, 4716, 5367, 5387, 2]
 
-// Module 13383 (MenuItem)
+// Module 13385 (MenuItem)
 import importAllResult from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -29,7 +29,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13381).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13383).MenuContext).menuClose;
   if (null != IconComponent) {
     let tmp3 = <IconComponent size="sm" />;
   } else {

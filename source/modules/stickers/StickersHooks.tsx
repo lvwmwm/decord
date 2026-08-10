@@ -1,10 +1,10 @@
-// Module ID: 9956
-// Function ID: 9957
+// Module ID: 9957
+// Function ID: 9958
 // Name: useStickerPackCategories
-// Dependencies: [5, 32, 19, 1891, 4124, 5155, 1903, 5218, 5219, 676, 589, 9957, 3974, 4638, 8986, 4985, 4195, 1236, 3934, 9939, 5952, 2]
+// Dependencies: [5, 32, 19, 1891, 4124, 5155, 1903, 5218, 5219, 676, 589, 9958, 3974, 4638, 8986, 4985, 4195, 1236, 3934, 9940, 5952, 2]
 // Exports: useFavoriteStickerIds, useFavoriteStickers, useFetchStickerPack, useFetchStickerPacks, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickerIds, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 9956 (useStickerPackCategories)
+// Module 9957 (useStickerPackCategories)
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import _slicedToArray from "_slicedToArray";
 import useFrecencySettings from "useFrecencySettings";
@@ -404,7 +404,7 @@ export const useFetchStickerPacks = function useFetchStickerPacks() {
   }, []);
 };
 export const useFavoriteStickerIds = function useFavoriteStickerIds() {
-  const favoriteStickers = require(9939) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
+  const favoriteStickers = require(9940) /* useFrecencySettings */.useFrecencySettings().favoriteStickers;
   let stickerIds;
   if (favoriteStickers != null) {
     stickerIds = favoriteStickers.stickerIds;
@@ -415,7 +415,7 @@ export const useFavoriteStickerIds = function useFavoriteStickerIds() {
   return stickerIds;
 };
 export const useFavoriteStickers = function useFavoriteStickers() {
-  const favoriteStickers = stickerIds(9939).useFrecencySettings().favoriteStickers;
+  const favoriteStickers = stickerIds(9940).useFrecencySettings().favoriteStickers;
   stickerIds = undefined;
   if (favoriteStickers != null) {
     stickerIds = favoriteStickers.stickerIds;
@@ -423,7 +423,7 @@ export const useFavoriteStickers = function useFavoriteStickers() {
   if (stickerIds == null) {
     stickerIds = closure_13;
   }
-  const obj = stickerIds(9939);
+  const obj = stickerIds(9940);
   const tmp = stickerIds;
   const items = [loadSavedGuildStickers];
   const items1 = [stickerIds];
@@ -448,7 +448,7 @@ export const useFavoriteStickers = function useFavoriteStickers() {
   }, items1);
 };
 export const useLatestFrecentStickerIds = function useLatestFrecentStickerIds() {
-  const frecencySettings = require(9939) /* useFrecencySettings */.useFrecencySettings();
+  const frecencySettings = require(9940) /* useFrecencySettings */.useFrecencySettings();
   let keys = closure_13;
   let stickers;
   if (frecencySettings != null) {
@@ -470,7 +470,7 @@ export const useLatestFrecentStickerIds = function useLatestFrecentStickerIds() 
   return keys;
 };
 export const useLatestFrecentStickers = function useLatestFrecentStickers() {
-  const frecencySettings = keys(9939).useFrecencySettings();
+  const frecencySettings = keys(9940).useFrecencySettings();
   keys = closure_13;
   let stickers;
   if (frecencySettings != null) {
@@ -489,7 +489,7 @@ export const useLatestFrecentStickers = function useLatestFrecentStickers() {
     }
     keys = Object.keys(stickers1);
   }
-  const obj = keys(9939);
+  const obj = keys(9940);
   const tmp = keys;
   const items = [loadSavedGuildStickers];
   const items1 = [keys];
@@ -567,7 +567,7 @@ export const useStickerForRenderableSticker = function useStickerForRenderableSt
                       if (!current.hasFetched) {
                         dependencyMap(false);
                         dependencyMap = 1;
-                        let obj1 = outer1_0(9957);
+                        let obj1 = outer1_0(9958);
                         c1 = 2;
                         v0 = 1;
                         obj1 = { value: null, done: false };

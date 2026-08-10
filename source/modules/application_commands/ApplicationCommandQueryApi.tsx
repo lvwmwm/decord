@@ -67,7 +67,7 @@ let result = require("createGuildRecordFromRust").fileFinishedImporting("modules
 export const getCachedCommand = function getCachedCommand(type, commandKey) {
   let closure_0 = arg2;
   if (null == commandKey) {
-    return { application: "r", command: "accessibilityRole" };
+    return { application: "Array", command: "ct" };
   } else {
     const userState = authStore.getUserState();
     const result2 = userState.result;
@@ -122,7 +122,7 @@ export const getCachedCommand = function getCachedCommand(type, commandKey) {
         }
       }
     }
-    return { application: "r", command: "accessibilityRole" };
+    return { application: "Array", command: "ct" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -460,7 +460,7 @@ export const useCommand = function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "r", application: "accessibilityRole" };
+    return { command: "Array", application: "ct" };
   }, items);
 };
 export const useCommandsForApplication = function useCommandsForApplication(arg0, arg1, arg2) {

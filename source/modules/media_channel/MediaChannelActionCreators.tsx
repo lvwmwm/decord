@@ -1,10 +1,10 @@
-// Module ID: 11274
-// Function ID: 11275
+// Module ID: 11275
+// Function ID: 11276
 // Name: _fetchMediaPostEmbed
 // Dependencies: [5, 676, 709, 530, 4202, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 11274 (_fetchMediaPostEmbed)
+// Module 11275 (_fetchMediaPostEmbed)
 import set from "set";
 import { Endpoints } from "ME";
 
@@ -128,11 +128,11 @@ function _unfurlEmbedUrl() {
             obj[0] = body.body;
             return obj;
           }
-        } catch (tmp23) {
-          set = tmp23;
+        } catch (tmp19) {
+          set = tmp19;
           if (tmp4 === constants) {
             c6 = tmp2;
-            throw tmp23;
+            throw tmp19;
           } else {
             c5 = tmp;
           }

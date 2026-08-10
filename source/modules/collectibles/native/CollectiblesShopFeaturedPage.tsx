@@ -1,9 +1,9 @@
-// Module ID: 14834
-// Function ID: 14835
-// Dependencies: [19, 17, 678, 21, 4303, 1297, 8827, 1236, 14835, 2]
+// Module ID: 14836
+// Function ID: 14837
+// Dependencies: [19, 17, 678, 21, 4303, 1297, 8827, 1236, 14837, 2]
 // Exports: default
 
-// Module 14834
+// Module 14836
 import "noop";
 import { View } from "get ActivityIndicator";
 import { CollectiblesMobileShopScreen as closure_4 } from "items";
@@ -21,7 +21,7 @@ export default function _default(shopBlock) {
       let obj = { block: null, screen: null };
       obj[0] = shopBlock;
       obj[1] = constants.FEATURED_PAGE;
-      let tmp6 = jsx(importDefault(14835), { block: null, screen: null });
+      let tmp6 = jsx(importDefault(14837), { block: null, screen: null });
     }
     return tmp6;
   }

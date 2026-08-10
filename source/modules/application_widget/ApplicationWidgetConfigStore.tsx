@@ -1,9 +1,9 @@
-// Module ID: 12450
-// Function ID: 12451
+// Module ID: 12452
+// Function ID: 12453
 // Name: updateApplicationConfigs
 // Dependencies: [32, 589, 709, 2]
 
-// Module 12450 (updateApplicationConfigs)
+// Module 12452 (updateApplicationConfigs)
 import _slicedToArray from "_slicedToArray";
 import { Store } from "initialize";
 

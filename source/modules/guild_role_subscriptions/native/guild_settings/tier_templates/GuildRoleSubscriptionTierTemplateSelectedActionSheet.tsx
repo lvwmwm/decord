@@ -1,10 +1,10 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16864
+// Function ID: 16865
 // Name: GuildRoleSubscriptionTierTemplateSelectedActionSheet
 // Dependencies: [19, 17, 1369, 21, 4303, 712, 1609, 5397, 5399, 4299, 1236, 1297, 4715, 2]
 // Exports: default
 
-// Module 16855 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
+// Module 16864 (GuildRoleSubscriptionTierTemplateSelectedActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

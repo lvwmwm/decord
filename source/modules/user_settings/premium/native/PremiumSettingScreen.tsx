@@ -1,10 +1,10 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14230
+// Function ID: 14231
 // Name: PremiumScreen
 // Dependencies: [19, 21, 6878, 1480, 7593, 6875, 2]
 // Exports: default
 
-// Module 14228 (PremiumScreen)
+// Module 14230 (PremiumScreen)
 import "noop";
 import { jsx } from "jsxProd";
 

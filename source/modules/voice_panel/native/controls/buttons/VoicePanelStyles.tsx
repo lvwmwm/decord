@@ -1,10 +1,10 @@
-// Module ID: 16247
-// Function ID: 16248
+// Module ID: 16256
+// Function ID: 16257
 // Name: useVoicePanelButtonStyles
 // Dependencies: [4303, 712, 8732, 1348, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 16247 (useVoicePanelButtonStyles)
+// Module 16256 (useVoicePanelButtonStyles)
 import createCacheKey from "createCacheKey";
 
 let closure_3 = createCacheKey.createStyles((arg0, arg1) => {

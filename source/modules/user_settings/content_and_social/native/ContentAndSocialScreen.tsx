@@ -1,10 +1,10 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14882
+// Function ID: 14883
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 8082, 676, 21, 4303, 712, 1236, 1974, 14881, 12034, 14884, 5917, 10446, 14060, 13886, 14885, 4299, 2]
+// Dependencies: [32, 19, 17, 8082, 676, 21, 4303, 712, 1236, 1974, 14883, 12035, 14886, 5917, 10447, 14062, 13888, 14887, 4299, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 14880 (ContentAndSocialSettings)
+// Module 14882 (ContentAndSocialSettings)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import get_ActivityIndicator from "useAuthorizedSlayerApplications";
@@ -191,7 +191,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   let showLoadingIndicator;
   let slayerSdkApplications;
   const tmp = createCacheKey();
-  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14885)());
+  ({ showLoadingIndicator, slayerSdkApplications } = importDefault(14887)());
   if (showLoadingIndicator) {
     let obj = { style: null };
     obj[0] = tmp.loadingIndicator;
@@ -215,7 +215,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(13886), obj);
+    tmp7 = callback2(tmp2(13888), obj);
   }
   return tmp7;
 };

@@ -1,9 +1,9 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 14438
+// Function ID: 14439
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: [5, 19, 17, 7160, 14333, 5161, 14335, 21, 4303, 712, 14357, 14421, 647, 14331, 10459, 1609, 10478, 10479, 14339, 14358, 10461, 7187, 5164, 14364, 11172, 14403, 14400, 11168, 14404, 4299, 1236, 1297, 11165, 2]
+// Dependencies: [5, 19, 17, 7160, 14335, 5161, 14337, 21, 4303, 712, 14359, 14423, 647, 14333, 10460, 1609, 10479, 10480, 14341, 14360, 10462, 7187, 5164, 14366, 11173, 14405, 14402, 11169, 14406, 4299, 1236, 1297, 11166, 2]
 
-// Module 14436 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 14438 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 import closure_3 from "QuestsExperimentLocations";
 import importAllResult from "openQuestAccessSuspendedBottomSheet";
 import { View } from "items";
@@ -101,10 +101,10 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
           } else {
             let closure_0 = tmp2;
             if (outer1_5) {
-              v0(14358)();
+              v0(14360)();
               dependencyMap = 3;
             } else {
-              let obj4 = outer1_0(10461);
+              let obj4 = outer1_0(10462);
               const obj1 = { questContentCTA: null, questContent: null, sourceQuestContent: null };
               obj1[0] = outer1_0(7187).QuestContentCTA.ACCEPT_QUEST;
               obj1[1] = outer1_0(5164).QuestContent.QUEST_BAR_MOBILE;
@@ -135,9 +135,9 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
             const obj5 = { questId: null, sourceQuestContent: null };
             obj5[0] = outer1_0.id;
             obj5[1] = outer1_0(5164).QuestContent.QUEST_BAR_MOBILE;
-            v0(14364)(obj5);
+            v0(14366)(obj5);
             outer1_4(outer1_8.COLLAPSED);
-            const tmp13 = v0(14364);
+            const tmp13 = v0(14366);
           }
         } else if (arg0 === 1) {
           dependencyMap = 3;

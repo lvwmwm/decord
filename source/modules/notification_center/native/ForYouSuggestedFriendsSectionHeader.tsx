@@ -1,10 +1,10 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 15553
+// Function ID: 15554
 // Name: ForYouSuggestedFriendsSectionHeader
 // Dependencies: [19, 17, 21, 4303, 712, 4299, 1236, 2]
 // Exports: default
 
-// Module 15545 (ForYouSuggestedFriendsSectionHeader)
+// Module 15553 (ForYouSuggestedFriendsSectionHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

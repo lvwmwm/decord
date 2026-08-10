@@ -1,9 +1,9 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 11466
+// Function ID: 11467
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [32, 19, 17, 9784, 21, 500, 4303, 712, 8663, 4700, 4036, 1348, 11466, 4648, 5711, 589, 5399, 4272, 9761, 1872, 4730, 4005, 1609, 1474, 4173, 4154, 4013, 4697, 8673, 5714, 2]
+// Dependencies: [32, 19, 17, 9785, 21, 500, 4303, 712, 8663, 4700, 4036, 1348, 11467, 4648, 5711, 589, 5399, 4272, 9762, 1872, 4730, 4005, 1609, 1474, 4173, 4154, 4013, 4697, 8673, 5714, 2]
 
-// Module 11465 (PortalKeyboardBottomSheetHeader)
+// Module 11466 (PortalKeyboardBottomSheetHeader)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "dismissGlobalKeyboard";
 import get_ActivityIndicator from "HapticFeedbackTypes";

@@ -1,10 +1,10 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 12824
+// Function ID: 12825
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 1975, 5858, 12813, 1905, 505, 21, 4303, 5236, 5158, 6871, 589, 1879, 4732, 12823, 1297, 1236, 3947, 4714, 2]
+// Dependencies: [32, 19, 17, 1975, 5858, 12815, 1905, 505, 21, 4303, 5236, 5158, 6871, 589, 1879, 4732, 12825, 1297, 1236, 3947, 4714, 2]
 // Exports: default
 
-// Module 12822 (PremiumPlanSelectYearlyUpsellModal)
+// Module 12824 (PremiumPlanSelectYearlyUpsellModal)
 import _slicedToArray from "_slicedToArray";
 import getPremiumPlanItem from "getPremiumPlanItem";
 import get_ActivityIndicator from "Button";
@@ -95,7 +95,7 @@ export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
     obj[0] = tmp.container;
     obj1 = { style: null, source: null };
     obj1[0] = tmp.image;
-    obj1[1] = importDefault(12823);
+    obj1[1] = importDefault(12825);
     const items2 = [callback2(closure_5, obj1), , , , , ];
     obj2 = { style: null, accessibilityRole: "header", children: null };
     obj2[0] = tmp.header;

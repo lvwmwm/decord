@@ -1,8 +1,8 @@
-// Module ID: 16059
-// Function ID: 16060
-// Dependencies: [19, 17, 21, 4303, 712, 16043, 4299, 1297, 15733, 2]
+// Module ID: 16068
+// Function ID: 16069
+// Dependencies: [19, 17, 21, 4303, 712, 16052, 4299, 1297, 15741, 2]
 
-// Module 16059
+// Module 16068
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -36,7 +36,7 @@ const memoResult = require("noop").memo(function VoiceOrStageSummaryRow(arg0) {
   let dependencyMap;
   let closure_3;
   let c4;
-  let tmp3 = importDefault(16043)();
+  let tmp3 = importDefault(16052)();
   dependencyMap = tmp3;
   const size = tmp3.voiceOrStageSummaryRow.size;
   closure_3 = Math.max(users.length - max, 0);
@@ -106,7 +106,7 @@ const memoResult = require("noop").memo(function VoiceOrStageSummaryRow(arg0) {
     let obj2 = { size: null, style: null, source: null };
     obj2[0] = max(1297).Icon.Sizes.CUSTOM;
     obj2[1] = { height: 14, width: 14 };
-    obj2[2] = importDefault(15733);
+    obj2[2] = importDefault(15741);
     const items4 = [c4(max(1297).Icon, obj2), ];
     let obj3 = { variant: "text-sm/bold", style: null, children: null };
     obj3[1] = { marginLeft: 4 };

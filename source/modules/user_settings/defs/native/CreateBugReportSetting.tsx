@@ -1,9 +1,9 @@
-// Module ID: 14768
-// Function ID: 14769
+// Module ID: 14770
+// Function ID: 14771
 // Name: toggle
-// Dependencies: [706, 708, 9894, 589, 500, 10446, 1236, 14746, 14761, 2]
+// Dependencies: [706, 708, 9895, 589, 500, 10447, 1236, 14748, 14763, 2]
 
-// Module 14768 (toggle)
+// Module 14770 (toggle)
 import refreshSourceMapCookie from "refreshSourceMapCookie";
 import createToggle from "createToggle";
 
@@ -19,12 +19,12 @@ createToggle = {
     const setDeveloperOptionSettings = require(708) /* setDeveloperOptionSettings */.setDeveloperOptionSettings;
     if (arg0) {
       const result = setDeveloperOptionSettings({ bugReporterEnabled: true });
-      importDefault(9894).initialize();
-      const obj2 = importDefault(9894);
+      importDefault(9895).initialize();
+      const obj2 = importDefault(9895);
     } else {
       const result1 = setDeveloperOptionSettings({ bugReporterEnabled: false });
-      importDefault(9894).terminate(true);
-      const obj = importDefault(9894);
+      importDefault(9895).terminate(true);
+      const obj = importDefault(9895);
     }
   },
   useValue: function useCreateBugReportSettingToggleValue() {

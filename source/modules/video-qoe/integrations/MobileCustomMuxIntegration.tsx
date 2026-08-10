@@ -1,9 +1,9 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14385
+// Function ID: 14386
 // Name: logger
-// Dependencies: [4, 14379, 14381, 2]
+// Dependencies: [4, 14381, 14383, 2]
 
-// Module 14383 (logger)
+// Module 14385 (logger)
 const logger = new require("log").Logger("MobileCustomMuxIntegration");
 let c4 = "1.0.0";
 const Cloudflare = "Cloudflare";
@@ -48,7 +48,7 @@ prototype["initialize"] = function initialize() {
   if (null != muxEnvKey) {
     if (0 !== muxEnvKey.length) {
       try {
-        let obj = importDefault(14381);
+        let obj = importDefault(14383);
         let flag = self.config.debug;
         if (flag == null) {
           flag = false;
@@ -101,9 +101,9 @@ prototype["emitPlayerReady"] = function emitPlayerReady() {
   if (this.isInitialized) {
     if (!self.playerReadyEmitted) {
       try {
-        importDefault(14381).emit(self.playerId, "playerready");
+        importDefault(14383).emit(self.playerId, "playerready");
         self.playerReadyEmitted = true;
-        const obj = importDefault(14381);
+        const obj = importDefault(14383);
       } catch (tmp4) {
         logger.error("Error emitting playerready event", tmp4);
       }
@@ -115,9 +115,9 @@ prototype["emitViewInit"] = function emitViewInit() {
   if (this.isInitialized) {
     if (!self.viewInitEmitted) {
       try {
-        importDefault(14381).emit(self.playerId, "viewinit");
+        importDefault(14383).emit(self.playerId, "viewinit");
         self.viewInitEmitted = true;
-        const obj = importDefault(14381);
+        const obj = importDefault(14383);
       } catch (tmp4) {
         logger.error("Error emitting viewinit event", tmp4);
       }
@@ -152,10 +152,10 @@ prototype["emitPlay"] = function emitPlay() {
         self.emitViewInit();
       }
       self.updatePlayerState(false);
-      importDefault(14381).emit(self.playerId, "play");
+      importDefault(14383).emit(self.playerId, "play");
       self.playStarted = true;
       self.playingEmitted = false;
-      const obj = importDefault(14381);
+      const obj = importDefault(14383);
     } catch (tmp6) {
       logger.error("Error emitting play event", tmp6);
     }
@@ -166,8 +166,8 @@ prototype["emitPause"] = function emitPause() {
   if (this.isInitialized) {
     try {
       self.updatePlayerState(true);
-      importDefault(14381).emit(self.playerId, "pause");
-      const obj = importDefault(14381);
+      importDefault(14383).emit(self.playerId, "pause");
+      const obj = importDefault(14383);
     } catch (tmp5) {
       logger.error("Error emitting pause event", tmp5);
     }
@@ -182,13 +182,13 @@ prototype["emitPlaying"] = function emitPlaying() {
           self.emitViewInit();
         }
         if (!self.playStarted) {
-          importDefault(14381).emit(self.playerId, "play");
+          importDefault(14383).emit(self.playerId, "play");
           self.playStarted = true;
-          const obj = importDefault(14381);
+          const obj = importDefault(14383);
         }
-        importDefault(14381).emit(self.playerId, "playing");
+        importDefault(14383).emit(self.playerId, "playing");
         self.playingEmitted = true;
-        const obj2 = importDefault(14381);
+        const obj2 = importDefault(14383);
       } catch (tmp8) {
         logger.error("Error emitting playing event", tmp8);
       }
@@ -198,8 +198,8 @@ prototype["emitPlaying"] = function emitPlaying() {
 prototype["emitWaiting"] = function emitWaiting() {
   if (this.isInitialized) {
     try {
-      importDefault(14381).emit(tmp.playerId, "waiting");
-      const obj = importDefault(14381);
+      importDefault(14383).emit(tmp.playerId, "waiting");
+      const obj = importDefault(14383);
     } catch (tmp5) {
       logger.error("Error emitting waiting event", tmp5);
     }
@@ -211,8 +211,8 @@ prototype["emitCanPlay"] = function emitCanPlay() {
 prototype["emitSeeking"] = function emitSeeking() {
   if (this.isInitialized) {
     try {
-      importDefault(14381).emit(tmp.playerId, "seeking");
-      const obj = importDefault(14381);
+      importDefault(14383).emit(tmp.playerId, "seeking");
+      const obj = importDefault(14383);
     } catch (tmp5) {
       logger.error("Error emitting seeking event", tmp5);
     }
@@ -221,8 +221,8 @@ prototype["emitSeeking"] = function emitSeeking() {
 prototype["emitSeeked"] = function emitSeeked() {
   if (this.isInitialized) {
     try {
-      importDefault(14381).emit(tmp.playerId, "seeked");
-      const obj = importDefault(14381);
+      importDefault(14383).emit(tmp.playerId, "seeked");
+      const obj = importDefault(14383);
     } catch (tmp5) {
       logger.error("Error emitting seeked event", tmp5);
     }
@@ -232,9 +232,9 @@ prototype["emitEnded"] = function emitEnded() {
   const self = this;
   if (this.isInitialized) {
     try {
-      importDefault(14381).emit(self.playerId, "ended");
+      importDefault(14383).emit(self.playerId, "ended");
       self.emitViewEnd();
-      const obj = importDefault(14381);
+      const obj = importDefault(14383);
     } catch (tmp5) {
       logger.error("Error emitting ended event", tmp5);
     }
@@ -243,8 +243,8 @@ prototype["emitEnded"] = function emitEnded() {
 prototype["emitError"] = function emitError(arg0) {
   if (this.isInitialized) {
     try {
-      importDefault(14381).emit(tmp.playerId, "error", arg0);
-      const obj = importDefault(14381);
+      importDefault(14383).emit(tmp.playerId, "error", arg0);
+      const obj = importDefault(14383);
     } catch (tmp6) {
       logger.error("Error emitting error event", tmp6);
     }
@@ -261,7 +261,7 @@ prototype["emitTimeUpdate"] = function emitTimeUpdate() {
       if (playStarted) {
         self.emitPlaying();
       }
-      let obj = importDefault(14381);
+      let obj = importDefault(14383);
       obj = { player_playhead_time: null };
       obj[0] = self.currentPlayheadTime * c6;
       obj.emit(self.playerId, "timeupdate", obj);
@@ -284,8 +284,8 @@ prototype["emitRenditionChange"] = function emitRenditionChange(width, height, b
       obj[0] = width;
       obj[1] = height;
       obj[2] = bitrate;
-      importDefault(14381).emit(self.playerId, "renditionchange", obj);
-      const obj2 = importDefault(14381);
+      importDefault(14383).emit(self.playerId, "renditionchange", obj);
+      const obj2 = importDefault(14383);
     } catch (tmp9) {
       logger.error("Error emitting renditionchange event", tmp9);
     }
@@ -296,7 +296,7 @@ prototype["destroy"] = function destroy() {
   if (this.isInitialized) {
     try {
       self.emitViewEnd();
-      let obj = importDefault(14381);
+      let obj = importDefault(14383);
       obj.emit(self.playerId, "destroy");
       self.isInitialized = false;
       obj = { playerId: null };
@@ -310,8 +310,8 @@ prototype["destroy"] = function destroy() {
 prototype["emitViewEnd"] = function emitViewEnd() {
   if (this.isInitialized) {
     try {
-      importDefault(14381).emit(tmp.playerId, "viewend");
-      const obj = importDefault(14381);
+      importDefault(14383).emit(tmp.playerId, "viewend");
+      const obj = importDefault(14383);
     } catch (tmp5) {
       logger.error("Error emitting viewend event", tmp5);
     }

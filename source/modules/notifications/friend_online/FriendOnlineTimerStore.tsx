@@ -1,9 +1,9 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 16895
+// Function ID: 16896
 // Name: initialize
 // Dependencies: [687, 589, 709, 2]
 
-// Module 16886 (initialize)
+// Module 16895 (initialize)
 import { PersistedStore } from "initialize";
 
 const HOUR = require("set").Millis.HOUR;

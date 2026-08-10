@@ -1,7 +1,7 @@
 // Module ID: 8939
 // Function ID: 8940
 // Name: openInviteModal
-// Dependencies: [32, 5, 4341, 6985, 5850, 1218, 1971, 1891, 4288, 4521, 1960, 4124, 5155, 676, 678, 5851, 709, 4289, 7758, 8940, 1988, 5232, 5865, 8949, 4287, 4292, 7150, 3992, 698, 10599, 11349, 12214, 10613, 4313, 10973, 12218, 10088, 10460, 1467, 11165, 5166, 12219, 7000, 4498, 4495, 8231, 12220, 2]
+// Dependencies: [32, 5, 4341, 6985, 5850, 1218, 1971, 1891, 4288, 4521, 1960, 4124, 5155, 676, 678, 5851, 709, 4289, 7758, 8940, 1988, 5232, 5865, 8949, 4287, 4292, 7150, 3992, 698, 10600, 11350, 12216, 10614, 4313, 10974, 12220, 10089, 10461, 1467, 11166, 5166, 12221, 7000, 4498, 4495, 8231, 12222, 2]
 // Exports: default
 
 // Module 8939 (openInviteModal)
@@ -76,7 +76,7 @@ function _openInviteModal() {
               return obj;
             } else {
               let obj1 = callback(table[16]);
-              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "accessibilityRole", invite_instance_id: "ct" };
+              obj1 = { type: "DISPLAYED_INVITE_SHOW", code: null, username: "Array", deeplinkAttemptId: "call", invite_instance_id: 1112605751 };
               obj1[1] = closure_0;
               obj1[4] = callback;
               c3 = 1;
@@ -345,7 +345,7 @@ export default function getOnClick(url) {
         if (_undefined.type !== tmp3(tmp4[25]).CodedLinkType.APP_DIRECTORY_STOREFRONT) {
           let result = tmp3(tmp4[26]).parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "r", skuId: "accessibilityRole" };
+            result = { applicationId: "Array", skuId: "ct" };
           }
           const tmp3Result = tmp3(tmp4[26]);
         }
@@ -668,7 +668,7 @@ export default function getOnClick(url) {
   }
   if (null != findCodedLinkResult) {
     if (findCodedLinkResult.type === tmp2(4292).CodedLinkType.QUESTS_EMBED) {
-      let tmp2Result = tmp2(10460);
+      let tmp2Result = tmp2(10461);
       if (tmp2Result.getIsEligibleForQuests()) {
         return (preventDefault) => {
           if (preventDefault != null) {

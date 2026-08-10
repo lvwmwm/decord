@@ -1,10 +1,10 @@
-// Module ID: 9950
-// Function ID: 9951
+// Module ID: 9951
+// Function ID: 9952
 // Name: GifIcon
 // Dependencies: [19, 21, 712, 4004, 8184, 2]
 // Exports: GifIcon
 
-// Module 9950 (GifIcon)
+// Module 9951 (GifIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

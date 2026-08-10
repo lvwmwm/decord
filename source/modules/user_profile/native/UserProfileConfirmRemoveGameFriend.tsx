@@ -1,10 +1,10 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 11980
+// Function ID: 11981
 // Name: UserProfileConfirmRemoveGameFriend
 // Dependencies: [19, 21, 8789, 9632, 4647, 1236, 4647, 2]
 // Exports: default
 
-// Module 11979 (UserProfileConfirmRemoveGameFriend)
+// Module 11980 (UserProfileConfirmRemoveGameFriend)
 import noop from "noop";
 import jsxProd from "jsxProd";
 

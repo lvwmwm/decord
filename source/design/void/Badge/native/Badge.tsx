@@ -1,10 +1,10 @@
-// Module ID: 13430
-// Function ID: 13431
+// Module ID: 13432
+// Function ID: 13433
 // Name: Badge
 // Dependencies: [19, 17, 1975, 676, 1299, 21, 4303, 712, 500, 589, 7999, 1879, 2]
 // Exports: MaskedBadge
 
-// Module 13430 (Badge)
+// Module 13432 (Badge)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import _getSystemLocale from "_getSystemLocale";

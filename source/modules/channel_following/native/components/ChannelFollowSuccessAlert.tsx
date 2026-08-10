@@ -1,10 +1,10 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10307
+// Function ID: 10308
 // Name: items
-// Dependencies: [19, 17, 21, 10307, 10308, 10309, 10310, 10311, 10312, 1236, 4303, 4239, 4153, 6904, 12, 4732, 4299, 2]
+// Dependencies: [19, 17, 21, 10308, 10309, 10310, 10311, 10312, 10313, 1236, 4303, 4239, 4153, 6904, 12, 4732, 4299, 2]
 // Exports: default
 
-// Module 10306 (items)
+// Module 10307 (items)
 import "noop";
 import { Image } from "set";
 import jsxProd from "jsxProd";

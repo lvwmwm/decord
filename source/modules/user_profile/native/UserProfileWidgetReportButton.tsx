@@ -1,10 +1,10 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12350
+// Function ID: 12351
 // Name: UserProfileWidgetReportButton
 // Dependencies: [19, 17, 21, 1236, 8769, 8020, 8598, 8604, 712, 2]
 // Exports: default
 
-// Module 12348 (UserProfileWidgetReportButton)
+// Module 12350 (UserProfileWidgetReportButton)
 import "noop";
 import { Pressable } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

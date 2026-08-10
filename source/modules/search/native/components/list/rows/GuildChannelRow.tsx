@@ -1,9 +1,9 @@
-// Module ID: 15734
-// Function ID: 15735
+// Module ID: 15742
+// Function ID: 15743
 // Name: GuildChannelLabel
-// Dependencies: [19, 17, 8397, 21, 4303, 712, 4494, 15735, 4764, 15737, 15727, 2]
+// Dependencies: [19, 17, 8397, 21, 4303, 712, 4494, 15743, 4764, 15745, 15735, 2]
 
-// Module 15734 (GuildChannelLabel)
+// Module 15742 (GuildChannelLabel)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "MessageEmbedTypes";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ function GuildChannelLabel(channel) {
   const tmp = callback();
   const tmp2 = importDefault(4494)(channel);
   obj = { channel, layout: closure_5, name: tmp2 };
-  obj[1] = require(15735) /* ChannelContentComponent */.renderChannelContent(obj);
+  obj[1] = require(15743) /* ChannelContentComponent */.renderChannelContent(obj);
   return <closure_4 channel={channel} layout={closure_5} name={tmp2} />;
 }
 ({ Image: c3, View: c4 } = get_ActivityIndicator);
@@ -37,7 +37,7 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   const merged = Object.assign(channel, Object.create(null));
   const tmp2 = callback();
-  let obj = require(15737) /* LaunchpadChannelIcon */;
+  let obj = require(15745) /* LaunchpadChannelIcon */;
   const channelAccessibilityProps = obj.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
   obj = { style: tmp2.simpleIcon, source: null };
   obj[1] = require(4764) /* getChannelIcon */.getSimpleChannelIcon(channel);
@@ -53,7 +53,7 @@ const memoResult = require("noop").memo(function GuildChannelRow(channel) {
   obj.onPress = onPress;
   obj.trailing = trailing;
   obj.extras = extras;
-  return jsx(require(15727) /* SearchListRow */.SearchListRow, {});
+  return jsx(require(15735) /* SearchListRow */.SearchListRow, {});
 });
 const result = require("MessageEmbedTypes").fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16578
+// Function ID: 16579
 // Name: prototype
 // Dependencies: [5, 1903, 3949, 3953, 6861, 1905, 5261, 1926, 4623, 6862, 2]
 
-// Module 16569 (prototype)
+// Module 16578 (prototype)
 import closure_2 from "GuildFeatures";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handlePaymentSourceCreateEnd from "handlePaymentSourceCreateEnd";

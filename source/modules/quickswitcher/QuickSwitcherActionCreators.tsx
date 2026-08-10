@@ -1,10 +1,10 @@
-// Module ID: 10247
-// Function ID: 10248
+// Module ID: 10248
+// Function ID: 10249
 // Name: trackClose
-// Dependencies: [5, 32, 5160, 1376, 1372, 4339, 1960, 4124, 7307, 676, 1379, 678, 7308, 698, 8938, 709, 5957, 4311, 4497, 5129, 4313, 10248, 9277, 9283, 5865, 10249, 7000, 5748, 7758, 2]
+// Dependencies: [5, 32, 5160, 1376, 1372, 4339, 1960, 4124, 7307, 676, 1379, 678, 7308, 698, 8938, 709, 5957, 4311, 4497, 5129, 4313, 10249, 9277, 9283, 5865, 10250, 7000, 5748, 7758, 2]
 // Exports: getQuickSwitcherOptions, hide, search, selectResult, switchToResult, toggle, trackOpen
 
-// Module 10247 (trackClose)
+// Module 10248 (trackClose)
 import setLibraryApplications from "setLibraryApplications";
 import _slicedToArray from "_slicedToArray";
 import { InAppNavigationType } from "fromType";
@@ -389,13 +389,13 @@ export const switchToResult = function switchToResult(record) {
     obj4[0] = items;
     tmp(4313).openPrivateChannel(obj4);
     const tmpResult1 = tmp(4313);
-    tmp(10248).channelListScrollTo(closure_12, authStore.getDMFromUserId(record.id));
-    const tmpResult2 = tmp(10248);
+    tmp(10249).channelListScrollTo(closure_12, authStore.getDMFromUserId(record.id));
+    const tmpResult2 = tmp(10249);
   } else if (tmp5(7308).AutocompleterResultTypes.GROUP_DM === type) {
     tmp5(4311).transitionToChannel(record.id, { navigationReplace: true });
     const tmp5Result2 = tmp5(4311);
-    tmp(10248).channelListScrollTo(closure_12, record.id);
-    const tmpResult3 = tmp(10248);
+    tmp(10249).channelListScrollTo(closure_12, record.id);
+    const tmpResult3 = tmp(10249);
   } else if (tmp5(7308).AutocompleterResultTypes.APPLICATION === type) {
     activeLibraryApplication = activeLibraryApplication.getActiveLibraryApplication(record.id);
     const id = record.id;
@@ -428,7 +428,7 @@ export const switchToResult = function switchToResult(record) {
   } else if (tmp5(7308).AutocompleterResultTypes.IN_APP_NAVIGATION === type) {
     if (record.record.type !== InAppNavigationType.SETTINGS) {
       if (record.record.type === tmp37.PLAYGROUND) {
-        const tmp5Result3 = tmp5(10249);
+        const tmp5Result3 = tmp5(10250);
       } else if (record.record.type === tmp37.SHOP_ORBS_TAB) {
         const obj7 = { tab: null, analyticsLocations: null, analyticsSource: null };
         obj7[0] = CollectibleShopTab.ORBS;

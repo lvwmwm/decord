@@ -1,10 +1,10 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 11497
+// Function ID: 11498
 // Name: AppInThisServer
-// Dependencies: [19, 17, 21, 4303, 712, 11474, 1351, 4299, 1236, 4846, 1348, 11437, 8663, 9549, 11442, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 11475, 1351, 4299, 1236, 4846, 1348, 11438, 8663, 9549, 11443, 2]
 // Exports: default
 
-// Module 11496 (AppInThisServer)
+// Module 11497 (AppInThisServer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function AppInThisServer(onAppSelected) {
   const tmp3 = application(1348)("AppLauncherInThisServer-native");
   const tmp4 = createCacheKey();
   application = onAppSelected.appItem.application;
-  let obj = onAppSelected(11437);
+  let obj = onAppSelected(11438);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   obj = {
     accessible: true,
@@ -54,7 +54,7 @@ function AppInThisServer(onAppSelected) {
     obj = { iconSource: null, wrapperStyle: null, iconSize: 36 };
     obj[0] = appLauncherIconSource;
     obj[1] = tmp4.iconContainer;
-    tmp8 = callback(application(11442), obj);
+    tmp8 = callback(application(11443), obj);
   }
   const items1 = [tmp8, callback(onAppSelected(4299).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name })];
   obj[5] = items1;

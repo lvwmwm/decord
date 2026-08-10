@@ -1,10 +1,10 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15610
+// Function ID: 15611
 // Name: MessageRowContent
-// Dependencies: [19, 17, 1372, 1971, 1891, 3938, 4499, 1903, 15597, 676, 21, 712, 15559, 500, 15560, 8846, 7304, 589, 15603, 15604, 4299, 1236, 1297, 4493, 5232, 8912, 8913, 9666, 11119, 15598, 15600, 11, 4846, 9033, 15606, 2]
+// Dependencies: [19, 17, 1372, 1971, 1891, 3938, 4499, 1903, 15605, 676, 21, 712, 15567, 500, 15568, 8846, 7304, 589, 15611, 15612, 4299, 1236, 1297, 4493, 5232, 8912, 8913, 9666, 11120, 15606, 15608, 11, 4846, 9033, 15614, 2]
 // Exports: default
 
-// Module 15602 (MessageRowContent)
+// Module 15610 (MessageRowContent)
 import importAllResult from "MediaMosaicVideo";
 import { View } from "initialize";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -39,7 +39,7 @@ class MessageRowContent {
     if (flag2 === undefined) {
       flag2 = false;
     }
-    tmp = f62163();
+    tmp = f62181();
     tmp2 = message;
     tmp3 = closure_2;
     context = __esModule.useContext(require("context").ICYMIContext);
@@ -147,7 +147,7 @@ function ReplyMessageContent(message) {
   ({ channel, guild } = message);
   const tmp = callback3();
   let obj = importAllResult;
-  const context = importAllResult.useContext(message(15560).ICYMIContext);
+  const context = importAllResult.useContext(message(15568).ICYMIContext);
   let obj1 = message(589);
   const items = [mergeGuildAvatar];
   const stateFromStores = obj1.useStateFromStores(items, () => outer1_10.getUser(message.author.id));
@@ -161,7 +161,7 @@ function ReplyMessageContent(message) {
   if (colorString == null) {
     colorString = closure_12;
   }
-  const width = obj.useContext(tmp2(15560).ICYMIContext).width;
+  const width = obj.useContext(tmp2(15568).ICYMIContext).width;
   let tmp8 = null;
   if (null != stateFromStores) {
     obj = { style: null, children: null };
@@ -198,7 +198,7 @@ function ReplyMessageContent(message) {
     obj9[1] = channel;
     obj9[2] = guild;
     obj7[1] = callback(MessageRowContent, obj9);
-    items4[1] = callback(tmp2(15560).ICYMIContext.Provider, obj7);
+    items4[1] = callback(tmp2(15568).ICYMIContext.Provider, obj7);
     obj3[1] = items4;
     items3[1] = callback2(View, obj3);
     obj1[1] = items3;

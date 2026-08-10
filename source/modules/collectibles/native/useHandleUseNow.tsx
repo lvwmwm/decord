@@ -1,10 +1,10 @@
-// Module ID: 10130
-// Function ID: 10131
+// Module ID: 10131
+// Function ID: 10132
 // Name: useHandleUseNow
-// Dependencies: [19, 9574, 4271, 4509, 4159, 4002, 1236, 10131, 10134, 2]
+// Dependencies: [19, 9574, 4271, 4509, 4159, 4002, 1236, 10132, 10135, 2]
 // Exports: useHandleUseNow
 
-// Module 10130 (useHandleUseNow)
+// Module 10131 (useHandleUseNow)
 import noop from "noop";
 import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS";
 
@@ -44,10 +44,10 @@ export const useHandleUseNow = function useHandleUseNow(onSuccess) {
     obj[1] = intl.string(onSuccess(1236).t.CKsXk3);
     obj.open(obj);
   }, []);
-  let obj = onSuccess(10131);
+  let obj = onSuccess(10132);
   handleUseNow = obj.useHandleUseNow({ product, onSuccess: callback, onError: callback1 });
   ({ handleUseNow, isApplying, canUseNow } = handleUseNow);
-  const tmp4 = importDefault(10134)({ analyticsLocations });
+  const tmp4 = importDefault(10135)({ analyticsLocations });
   importDefault = tmp4;
   obj = {
     handleUseNow,

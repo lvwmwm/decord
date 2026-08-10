@@ -1,10 +1,10 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11894
+// Function ID: 11895
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 1891, 4196, 4191, 11894, 589, 11895, 5728, 11896, 4195, 4271, 11877, 5151, 6865, 4509, 6874, 2]
+// Dependencies: [19, 1891, 4196, 4191, 11895, 589, 11896, 5728, 11897, 4195, 4271, 11878, 5151, 6865, 4509, 6874, 2]
 // Exports: default
 
-// Module 11893 (useGuildPowerupOnActivate)
+// Module 11894 (useGuildPowerupOnActivate)
 import noop from "noop";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import handleGuildBoostsUpdate from "handleGuildBoostsUpdate";

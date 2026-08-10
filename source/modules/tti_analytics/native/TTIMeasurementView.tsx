@@ -1,9 +1,9 @@
-// Module ID: 11295
-// Function ID: 11296
+// Module ID: 11296
+// Function ID: 11297
 // Name: TTIMeasurementView
-// Dependencies: [4707, 11296, 2]
+// Dependencies: [4707, 11297, 2]
 
-// Module 11295 (TTIMeasurementView)
+// Module 11296 (TTIMeasurementView)
 import importDefaultResult from "map";
 
 const obj = { componentName: "DCDTTIMeasurementView", componentFoundInstance: null };

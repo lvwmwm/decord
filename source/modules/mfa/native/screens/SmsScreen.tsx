@@ -1,10 +1,10 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15001
+// Function ID: 15002
 // Name: SmsScreen
-// Dependencies: [5, 32, 19, 17, 676, 21, 8472, 14992, 1236, 530, 14996, 14991, 7790, 4714, 14994, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 8472, 14994, 1236, 530, 14998, 14993, 7790, 4714, 14996, 2]
 // Exports: default
 
-// Module 14999 (SmsScreen)
+// Module 15001 (SmsScreen)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -259,7 +259,7 @@ export default function SmsScreen(mfaChallenge) {
     }
     return applyArgumentsResult;
   }
-  let obj = finish(14992);
+  let obj = finish(14994);
   const screenStyles = obj.useScreenStyles(finish(8472)());
   const tmp4 = first(React.useState(null), 2);
   dependencyMap = tmp4[1];
@@ -304,7 +304,7 @@ export default function SmsScreen(mfaChallenge) {
   obj[1] = tmp10;
   obj = { style: screenStyles.inputContainer, children: null };
   let obj1 = { autoFocus: true, autoCapitalize: "characters", maxLength: null, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: null, label: null, accessibilityLabel: null, placeholder: null, errorMessage: null };
-  obj1[2] = mfaChallenge(14996).SMS_CODE_LENGTH;
+  obj1[2] = mfaChallenge(14998).SMS_CODE_LENGTH;
   obj1[6] = handleChange;
   const intl3 = mfaChallenge(1236).intl;
   obj1[7] = intl3.string(mfaChallenge(1236).t["/sHnXc"]);
@@ -331,7 +331,7 @@ export default function SmsScreen(mfaChallenge) {
   obj[1] = items1;
   obj[2] = _handleChange(c6, obj);
   let obj3 = { variant: "primary", text: null, loading: null, onPress: null, disabled: null };
-  const tmp15 = finish(14991);
+  const tmp15 = finish(14993);
   const intl7 = mfaChallenge(1236).intl;
   obj3[1] = intl7.string(mfaChallenge(1236).t.geKm7t);
   let tmp17 = tmp6;
@@ -346,10 +346,10 @@ export default function SmsScreen(mfaChallenge) {
     tmp6 = tmp12;
   }
   if (!tmp6) {
-    tmp6 = first.length !== tmp8(14996).SMS_CODE_LENGTH;
+    tmp6 = first.length !== tmp8(14998).SMS_CODE_LENGTH;
   }
   obj3[4] = tmp6;
-  obj[3] = handleChange(finish(14994), obj3);
+  obj[3] = handleChange(finish(14996), obj3);
   obj[4] = { mfaChallenge, finish };
   return handleChange(tmp15, obj);
 };

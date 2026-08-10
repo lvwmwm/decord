@@ -1,10 +1,10 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15018
+// Function ID: 15019
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1369, 5161, 21, 1348, 4846, 4299, 1236, 10000, 1358, 698, 11165, 5164, 15017, 9422, 4271, 10150, 1988, 5748, 7000, 10149, 4123, 4729, 4303, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1369, 5161, 21, 1348, 4846, 4299, 1236, 10001, 1358, 698, 11166, 5164, 15019, 9422, 4271, 10151, 1988, 5748, 7000, 10150, 4123, 4729, 4303, 712, 2]
 // Exports: default
 
-// Module 15016 (BalanceWidget)
+// Module 15018 (BalanceWidget)
 import ref from "ref";
 import { View } from "module_9422";
 import { AnalyticEvents } from "ME";
@@ -126,7 +126,7 @@ function BalanceWidgetMenu(style) {
     str2 = "";
   }
   obj[2] = intl.formatToPlainString(str(1236).t.zPaLL9, { balance: str2 });
-  obj[3] = closure_10(importDefault(10149), { balance: str, onPress: callback, accessible: false });
+  obj[3] = closure_10(importDefault(10150), { balance: str, onPress: callback, accessible: false });
   return closure_10(BalanceWidget, obj);
 }
 ({ ContentDismissActionType: error, DismissibleContentGroupName: metroImportAll } = ContentDismissActionType);

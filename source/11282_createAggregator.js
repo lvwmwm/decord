@@ -1,19 +1,12 @@
 // Module ID: 11282
 // Function ID: 11283
 // Name: createAggregator
-// Dependencies: [599, 11283, 11284, 720]
+// Dependencies: [11283, 804]
 
 // Module 11282 (createAggregator)
+import createAggregator from "createAggregator";
 
-export default function createAggregator(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  return (arg0, arg1) => {
-    if (callback(599)(arg0)) {
-      let tmpResult = tmp(11283);
-    } else {
-      tmpResult = tmp(11284);
-    }
-    return tmpResult(arg0, callback, callback(720)(arg1, 2), dependencyMap ? dependencyMap() : {});
-  };
-};
+
+export default createAggregator((arg0, arg1, arg2) => {
+  require(804) /* baseAssignValue */(arg0, arg2, arg1);
+});

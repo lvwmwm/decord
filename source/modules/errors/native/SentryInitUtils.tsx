@@ -1,7 +1,7 @@
 // Module ID: 1209
 // Function ID: 1210
 // Name: _maybeBackfillMissingBreadcrumbsFromTelemetryRing
-// Dependencies: [5, 17, 676, 505, 810, 3, 1210, 1222, 698, 13464, 7061, 7066, 13465, 1208, 1606, 7062, 500, 4283, 1605, 7135, 673, 4039, 2]
+// Dependencies: [5, 17, 676, 505, 810, 3, 1210, 1222, 698, 13466, 7061, 7066, 13467, 1208, 1606, 7062, 500, 4283, 1605, 7135, 673, 4039, 2]
 // Exports: initSentry
 
 // Module 1209 (_maybeBackfillMissingBreadcrumbsFromTelemetryRing)
@@ -564,7 +564,7 @@ function trackCrash(event, hint, arg2) {
     tmp25(1208).markCrashHandled(event_id2);
     const tmp25Result = tmp25(1208);
   }
-  const AppCrashedReasons = tmp11(13464).AppCrashedReasons;
+  const AppCrashedReasons = tmp11(13466).AppCrashedReasons;
   const tmp19 = importDefault(698);
   const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
   obj1 = { name: tmp11(7066).MetricEvents.APP_CRASHED, tags: null };
@@ -653,7 +653,7 @@ export const initSentry = function initSentry() {
           if (tmp16Result2.isAndroid()) {
             str2 = "android";
           }
-          obj = { tunnel: null, autoInitializeNativeSdk: false, beforeSend: null, dist: "6187", dsn: null, environment: null, tracesSampleRate: 0, sampleRate: 1, ignoreErrors: null, release: "discord_android@342.6.0-2+342206", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          obj = { tunnel: null, autoInitializeNativeSdk: false, beforeSend: null, dist: "6193", dsn: null, environment: null, tracesSampleRate: 0, sampleRate: 1, ignoreErrors: null, release: "discord_android@343.0.0-2+343200", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           obj[0] = `/error-reporting-proxy/${str2}`;
           obj[2] = closure_16;
           obj[4] = SentryStaffDsn;
@@ -691,7 +691,7 @@ export const initSentry = function initSentry() {
           };
           tmp16Result1.init(obj);
           const tmp16Result4 = callback(tmp[4]);
-          callback(tmp[4]).setTag("buildNumber", "6187");
+          callback(tmp[4]).setTag("buildNumber", "6193");
           const tmp16Result5 = callback(tmp[4]);
           callback(tmp[4]).setTag("appVersion", constants.Version);
           const tmp16Result6 = callback(tmp[4]);

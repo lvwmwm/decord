@@ -1,9 +1,9 @@
-// Module ID: 10365
-// Function ID: 10366
+// Module ID: 10366
+// Function ID: 10367
 // Name: IgnoredInformationTable
-// Dependencies: [32, 19, 17, 1372, 1903, 9244, 10363, 676, 21, 4303, 712, 8787, 1236, 4261, 5767, 5374, 1297, 1609, 5728, 5748, 589, 698, 8309, 5397, 5399, 8496, 4299, 4493, 8587, 4271, 10364, 1988, 503, 4714, 9243, 1974, 3998, 2]
+// Dependencies: [32, 19, 17, 1372, 1903, 9244, 10364, 676, 21, 4303, 712, 8787, 1236, 4261, 5767, 5374, 1297, 1609, 5728, 5748, 589, 698, 8309, 5397, 5399, 8496, 4299, 4493, 8587, 4271, 10365, 1988, 503, 4714, 9243, 1974, 3998, 2]
 
-// Module 10365 (IgnoredInformationTable)
+// Module 10366 (IgnoredInformationTable)
 import encodeProperties from "encodeProperties";
 import importAllResult from "QUICK_SWITCHER";
 import { View } from "useSafeAreaInsets";

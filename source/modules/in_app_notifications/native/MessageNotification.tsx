@@ -1,8 +1,8 @@
-// Module ID: 9786
-// Function ID: 9787
-// Dependencies: [19, 17, 4295, 9768, 676, 21, 500, 712, 4303, 9787, 9788, 589, 9767, 1474, 4036, 9789, 1297, 9815, 4272, 7223, 3940, 1236, 4532, 4700, 7142, 4014, 4509, 4311, 9816, 1988, 9846, 4304, 9851, 9856, 2]
+// Module ID: 9787
+// Function ID: 9788
+// Dependencies: [19, 17, 4295, 9769, 676, 21, 500, 712, 4303, 9788, 9789, 589, 9768, 1474, 4036, 9790, 1297, 9816, 4272, 7223, 3940, 1236, 4532, 4700, 7142, 4014, 4509, 4311, 9817, 1988, 9847, 4304, 9852, 9857, 2]
 
-// Module 9786
+// Module 9787
 import importAllResult from "checkReactionResponse";
 import { View } from "context";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -28,7 +28,7 @@ set = set.isAndroid();
 const PX_12 = require("Themes").space.PX_12;
 const PX_8 = require("Themes").space.PX_8;
 let closure_17 = createCacheKey.createStyles({ newContainerRoleDot: { paddingRight: 4, paddingTop: 0 }, initialPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0, overflow: "hidden" }, expandedPreviewOverlay: { position: "absolute", top: 0, left: 0, right: 0 } });
-let closure_18 = importAllResult.memo((message) => callback(importDefault(9787), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
+let closure_18 = importAllResult.memo((message) => callback(importDefault(9788), { message: message.message, lineClamp: closure_8, maxHeight: closure_7 }));
 let closure_19 = { code: "function MessageNotificationTsx1(){const{contentHeight,EXPANDED_MAX_HEIGHT,TRUNCATED_MESSAGE_HEIGHT_OFFSET,EXPANDED_SHORT_PREVIEW_PADDING}=this.__closure;const isGradientShown=contentHeight.get()>=EXPANDED_MAX_HEIGHT-TRUNCATED_MESSAGE_HEIGHT_OFFSET;const isShortPreview=contentHeight.get()>0&&!isGradientShown;return{paddingBottom:isShortPreview?EXPANDED_SHORT_PREVIEW_PADDING:0};}" };
 let closure_20 = { code: "function MessageNotificationTsx2(){const{IS_ANDROID,hasPreviewableMedia,hasTextContent,hasEmbedMedia,fadeProgress,ACCESSORY_EXIT_THRESHOLD}=this.__closure;if(IS_ANDROID&&hasPreviewableMedia&&hasTextContent&&!hasEmbedMedia){return{opacity:fadeProgress.get()};}if(!hasTextContent||hasEmbedMedia){return{opacity:fadeProgress.get(),transform:[{translateY:(1-fadeProgress.get())*ACCESSORY_EXIT_THRESHOLD}]};}return{opacity:1};}" };
 let closure_21 = importAllResult.memo((message) => {

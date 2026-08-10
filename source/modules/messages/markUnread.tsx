@@ -1,10 +1,10 @@
-// Module ID: 10226
-// Function ID: 10227
+// Module ID: 10227
+// Function ID: 10228
 // Name: _markUnread
 // Dependencies: [5, 3931, 1372, 4521, 4315, 1903, 676, 3, 11, 7224, 530, 2]
 // Exports: default
 
-// Module 10226 (_markUnread)
+// Module 10227 (_markUnread)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";

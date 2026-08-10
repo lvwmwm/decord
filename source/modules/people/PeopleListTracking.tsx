@@ -1,10 +1,10 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12517
+// Function ID: 12518
 // Name: FriendsListItemActionType
 // Dependencies: [676, 698, 2]
 // Exports: trackFriendsListItemClicked, trackFriendsListItemContextMenuInteracted, trackFriendsListItemMessageClicked, trackFriendsListItemRemoveFriendClicked, trackFriendsListItemVideoCallClicked, trackFriendsListItemVoiceCallClicked, trackViewFriendRequestNote
 
-// Module 12515 (FriendsListItemActionType)
+// Module 12517 (FriendsListItemActionType)
 import { AnalyticEvents } from "ME";
 
 let obj = { ROW_CLICKED: "row_clicked", MESSAGE_CLICKED: "message_clicked", VIDEO_CALL_CLICKED: "video_call_clicked", VOICE_CALL_CLICKED: "voice_call_clicked", REMOVE_FRIEND_CLICKED: "remove_friend_clicked", CONTEXT_MENU_INTERACTED: "context_menu_interacted" };

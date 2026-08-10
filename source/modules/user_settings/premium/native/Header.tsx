@@ -1,10 +1,10 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12744
+// Function ID: 12745
 // Name: Header
-// Dependencies: [19, 17, 21, 4303, 4239, 5268, 1236, 4153, 7750, 12743, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 4239, 5268, 1236, 4153, 7750, 12745, 4299, 2]
 // Exports: default
 
-// Module 12742 (Header)
+// Module 12744 (Header)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -31,7 +31,7 @@ export default function Header(style) {
   if (obj3.isThemeDark(tmp4)) {
     let tmp2Result = tmp2(7750);
   } else {
-    tmp2Result = tmp2(12743);
+    tmp2Result = tmp2(12745);
   }
   obj[3] = tmp2Result;
   const items1 = [closure_4(tmp8, obj), ];

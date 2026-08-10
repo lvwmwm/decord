@@ -1,10 +1,10 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14728
+// Function ID: 14729
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 676, 1959, 21, 4303, 712, 4013, 698, 8844, 14727, 5268, 8870, 1236, 4846, 9057, 9966, 1297, 8190, 1474, 8191, 1481, 5270, 3883, 8192, 4299, 4509, 5783, 2]
+// Dependencies: [19, 17, 676, 1959, 21, 4303, 712, 4013, 698, 8844, 14729, 5268, 8870, 1236, 4846, 9057, 9967, 1297, 8190, 1474, 8191, 1481, 5270, 3883, 8192, 4299, 4509, 5783, 2]
 // Exports: default
 
-// Module 14726 (ChangeLogScreen)
+// Module 14728 (ChangeLogScreen)
 import importAllResult from "useWindowDimensions";
 import { View } from "Button";
 import { AnalyticEvents } from "ME";
@@ -287,7 +287,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(importDefault(14727), obj1), ];
+      const items = [callback(importDefault(14729), obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };
@@ -327,7 +327,7 @@ prototype["renderVideo"] = function renderVideo() {
     obj7[2] = tmp.videoOverlay;
     obj7[3] = self.playVideo;
     const obj8 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: null, onPress: null, style: null, iconSize: null, iconStyle: null };
-    obj8[2] = tmp15(9966);
+    obj8[2] = tmp15(9967);
     obj8[3] = self.playVideo;
     obj8[4] = tmp.playButton;
     obj8[5] = tmp18(1297).IconSizes.CUSTOM;

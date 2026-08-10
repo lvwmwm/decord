@@ -1,10 +1,10 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14150
+// Function ID: 14151
 // Name: AvatarDecorationPreviewImage
-// Dependencies: [19, 17, 8818, 21, 4303, 14147, 712, 9391, 8797, 9395, 11525, 7695, 7704, 1930, 1927, 2]
+// Dependencies: [19, 17, 8818, 21, 4303, 14149, 712, 9391, 8797, 9395, 11526, 7695, 7704, 1930, 1927, 2]
 // Exports: default
 
-// Module 14148 (AvatarDecorationPreviewImage)
+// Module 14150 (AvatarDecorationPreviewImage)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PROFILE_FRAME_ASPECT_RATIO as closure_5 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO";
@@ -18,7 +18,7 @@ function AvatarDecorationPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = require(14147) /* getCollectibleTypeName */;
+  let obj = require(14149) /* getCollectibleTypeName */;
   const avatarDecorationPreviewUrl = obj.getAvatarDecorationPreviewUrl(product);
   let tmp2 = null;
   if (null != avatarDecorationPreviewUrl) {
@@ -53,7 +53,7 @@ function ProfileEffectPreviewImage(arg0) {
   let product;
   let styles;
   ({ product, styles } = arg0);
-  let obj = require(14147) /* getCollectibleTypeName */;
+  let obj = require(14149) /* getCollectibleTypeName */;
   const profileEffectPreviewUrl = obj.getProfileEffectPreviewUrl(product);
   let tmp2 = null;
   if (null != profileEffectPreviewUrl) {
@@ -77,8 +77,8 @@ function ProfileFramePreviewImage(arg0) {
     obj[0] = styles.profileFrameContainer;
     obj = { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null };
     obj[0] = tmp3;
-    obj[1] = require(14147) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5;
-    obj[2] = require(14147) /* getCollectibleTypeName */.PREVIEW_SIZE;
+    obj[1] = require(14149) /* getCollectibleTypeName */.PREVIEW_SIZE * closure_5;
+    obj[2] = require(14149) /* getCollectibleTypeName */.PREVIEW_SIZE;
     obj[3] = tmp(712).colors.BACKGROUND_BASE_LOW;
     obj[1] = jsx(tmp(9395), { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null });
     tmp4 = <closure_3 profileFrame={null} previewWidth={null} previewHeight={null} profileBackgroundColor={null} />;
@@ -95,7 +95,7 @@ function SubscriptionPreview(arg0) {
     obj[0] = styles.purchasePlaceholder;
     obj = { size: "custom", style: null };
     obj[1] = { width: 20, height: 20 };
-    obj[1] = jsx(require(11525) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
+    obj[1] = jsx(require(11526) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
     return <closure_3 size="custom" style={null} />;
   } else {
     const obj1 = { style: null, children: null };
@@ -120,7 +120,7 @@ function CollectiblePreview(arg0) {
     obj[0] = styles.purchasePlaceholder;
     obj = { size: "custom", style: null };
     obj[1] = { width: 20, height: 20 };
-    obj[1] = jsx(require(11525) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
+    obj[1] = jsx(require(11526) /* ShopIcon */.ShopIcon, { size: "custom", style: null });
     return <closure_3 size="custom" style={null} />;
   } else {
     const type = product.type;
@@ -154,7 +154,7 @@ function CollectiblePreview(arg0) {
       obj[0] = styles.purchasePlaceholder;
       const obj5 = { size: "custom", style: null };
       obj5[1] = { width: 20, height: 20 };
-      obj[1] = jsx(tmp17(11525).ShopIcon, { size: "custom", style: null });
+      obj[1] = jsx(tmp17(11526).ShopIcon, { size: "custom", style: null });
       return <closure_3 style={null}>{null}</closure_3>;
     }
   }

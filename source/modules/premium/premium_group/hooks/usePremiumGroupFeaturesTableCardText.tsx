@@ -1,10 +1,10 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 12758
+// Function ID: 12759
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [3953, 3961, 1236, 2866, 1921, 8156, 12757, 589, 2]
+// Dependencies: [3953, 3961, 1236, 2866, 1921, 8156, 12759, 589, 2]
 // Exports: default
 
-// Module 12756 (usePremiumGroupFeaturesTableCardText)
+// Module 12758 (usePremiumGroupFeaturesTableCardText)
 import reset from "reset";
 import SubscriptionStatusTypes from "SubscriptionStatusTypes";
 
@@ -16,7 +16,7 @@ const result = require("getSystemLocale").fileFinishedImporting("modules/premium
 
 export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
   let obj = { useCachedData: true, fetch: arg0 === require(1921) /* create */.PremiumSubscriptionGroupRole.MEMBER };
-  const tmp4 = importDefault(12757)(obj);
+  const tmp4 = importDefault(12759)(obj);
   let obj1 = require(589) /* initialize */;
   const items = [reset];
   const stateFromStores = obj1.useStateFromStores(items, () => premiumGroupSubscription.getPremiumGroupSubscription());

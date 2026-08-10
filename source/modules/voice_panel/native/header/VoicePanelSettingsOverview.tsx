@@ -1,9 +1,9 @@
-// Module ID: 16177
-// Function ID: 16178
+// Module ID: 16186
+// Function ID: 16187
 // Name: VoicePanelSettingsOverviewHeader
-// Dependencies: [19, 1371, 4316, 10657, 1218, 1372, 4351, 3929, 1903, 4376, 676, 4321, 9211, 21, 4303, 712, 589, 16178, 4494, 9228, 9190, 5781, 4299, 12210, 1236, 4823, 7, 4002, 16175, 8923, 5374, 5380, 14746, 8018, 5381, 709, 5768, 3974, 9155, 4497, 8016, 10844, 4271, 16179, 1988, 9213, 9233, 16180, 16168, 16126, 10403, 9177, 16181, 6011, 16182, 9182, 16183, 7714, 10823, 9720, 9721, 2]
+// Dependencies: [19, 1371, 4316, 10658, 1218, 1372, 4351, 3929, 1903, 4376, 676, 4321, 9211, 21, 4303, 712, 589, 16187, 4494, 9228, 9190, 5781, 4299, 12212, 1236, 4823, 7, 4002, 16184, 8923, 5374, 5380, 14748, 8018, 5381, 709, 5768, 3974, 9155, 4497, 8016, 10845, 4271, 16188, 1988, 9213, 9233, 16189, 16177, 16135, 10404, 9177, 16190, 6011, 16191, 9182, 16192, 7714, 10824, 9721, 9722, 2]
 
-// Module 16177 (VoicePanelSettingsOverviewHeader)
+// Module 16186 (VoicePanelSettingsOverviewHeader)
 import importAllResult from "useIsSecureFramesUIEnabled";
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
@@ -116,7 +116,7 @@ function ShareActivityLogsButton() {
   }, []);
   let obj = { onPress: callback, icon: null, label: null, trailing: null };
   obj = { IconComponent: null, source: null };
-  obj[0] = require(14746) /* WrenchIcon */.WrenchIcon;
+  obj[0] = require(14748) /* WrenchIcon */.WrenchIcon;
   obj[1] = importDefault(8018);
   obj[1] = callback(require(5380) /* TableRowIcon */.TableRowIcon, obj);
   let intl = require(1236) /* getSystemLocale */.intl;
@@ -135,7 +135,7 @@ function ActivityDebugToggle() {
   }, []);
   obj = { icon: null, accessibilityHint: null, value: null, onValueChange: null, label: null };
   obj = { IconComponent: null, source: null };
-  obj[0] = require(14746) /* WrenchIcon */.WrenchIcon;
+  obj[0] = require(14748) /* WrenchIcon */.WrenchIcon;
   obj[1] = importDefault(8018);
   obj[0] = callback(require(5380) /* TableRowIcon */.TableRowIcon, obj);
   const intl = require(1236) /* getSystemLocale */.intl;

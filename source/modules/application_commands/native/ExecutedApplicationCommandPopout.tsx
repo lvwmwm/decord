@@ -1,10 +1,10 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11082
+// Function ID: 11083
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1372, 1964, 1891, 4521, 3938, 1903, 8339, 4737, 676, 1479, 4738, 21, 4303, 712, 1935, 1297, 4271, 8783, 4146, 4299, 4494, 1236, 5728, 589, 5268, 1419, 5376, 500, 11082, 4001, 5374, 1607, 6982, 4712, 5767, 5748, 8221, 5397, 2]
+// Dependencies: [19, 17, 1372, 1964, 1891, 4521, 3938, 1903, 8339, 4737, 676, 1479, 4738, 21, 4303, 712, 1935, 1297, 4271, 8783, 4146, 4299, 4494, 1236, 5728, 589, 5268, 1419, 5376, 500, 11083, 4001, 5374, 1607, 6982, 4712, 5767, 5748, 8221, 5397, 2]
 // Exports: default
 
-// Module 11081 (getCommandOptionComponents)
+// Module 11082 (getCommandOptionComponents)
 import showUserProfileActionSheet from "showUserProfileActionSheet";
 import get_ActivityIndicator from "Button";
 import ensureGuildLoaded from "ensureGuildLoaded";

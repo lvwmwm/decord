@@ -1,9 +1,9 @@
-// Module ID: 13809
-// Function ID: 13810
+// Module ID: 13811
+// Function ID: 13812
 // Name: _initialize
 // Dependencies: [1218, 676, 4482, 6924, 4188, 709, 687, 1208, 7180, 698, 2]
 
-// Module 13809 (_initialize)
+// Module 13811 (_initialize)
 import importDefaultResult from "fetchFingerprint";
 import ME from "ME";
 import "initialize";

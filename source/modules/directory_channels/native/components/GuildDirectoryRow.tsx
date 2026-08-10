@@ -1,8 +1,8 @@
-// Module ID: 11706
-// Function ID: 11707
-// Dependencies: [5, 32, 19, 17, 1372, 1891, 676, 21, 4303, 712, 589, 5957, 5232, 9076, 1306, 1416, 1236, 5376, 5779, 1411, 4299, 11684, 4714, 2]
+// Module ID: 11707
+// Function ID: 11708
+// Dependencies: [5, 32, 19, 17, 1372, 1891, 676, 21, 4303, 712, 589, 5957, 5232, 9076, 1306, 1416, 1236, 5376, 5779, 1411, 4299, 11685, 4714, 2]
 
-// Module 11706
+// Module 11707
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "fromGuildPropertiesWithAdditionalFields";
@@ -217,7 +217,7 @@ const memoResult = importAllResult.memo(function GuildDirectoryRow(entry) {
   obj3[1] = items1;
   const items6 = [closure_12(View, obj3), ];
   const tmp6Result = importDefault(5779);
-  items6[1] = closure_10(View, { children: closure_10(importDefault(11684), { entry }) });
+  items6[1] = closure_10(View, { children: closure_10(importDefault(11685), { entry }) });
   obj2[1] = items6;
   const items7 = [closure_12(View, obj2), , , ];
   let tmp9Result = null != description;

@@ -1,10 +1,10 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12678
+// Function ID: 12679
 // Name: useFormatStringWithCommonPremiumParams
 // Dependencies: [3952, 1905, 589, 3947, 5855, 1236, 1974, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12676 (useFormatStringWithCommonPremiumParams)
+// Module 12678 (useFormatStringWithCommonPremiumParams)
 import addSubscriptionPlan from "addSubscriptionPlan";
 import GuildFeatures from "GuildFeatures";
 

@@ -1,10 +1,10 @@
-// Module ID: 10820
-// Function ID: 10821
+// Module ID: 10821
+// Function ID: 10822
 // Name: useHasVideoPermission
 // Dependencies: [1891, 3929, 589, 7185, 2]
 // Exports: default, getVideoPermission
 
-// Module 10820 (useHasVideoPermission)
+// Module 10821 (useHasVideoPermission)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
 

@@ -1,10 +1,10 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14179
+// Function ID: 14180
 // Name: ScheduleRuleRow
-// Dependencies: [17, 676, 21, 4303, 712, 9754, 5374, 4299, 1236, 2284, 14138, 1480, 5767, 2]
+// Dependencies: [17, 676, 21, 4303, 712, 9755, 5374, 4299, 1236, 2284, 14140, 1480, 5767, 2]
 // Exports: default
 
-// Module 14177 (ScheduleRuleRow)
+// Module 14179 (ScheduleRuleRow)
 import { View } from "get ActivityIndicator";
 import { UserSettingsSections } from "ME";
 import jsxProd from "jsxProd";
@@ -21,10 +21,10 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(9754);
+  let obj = rule(9755);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  const obj2 = rule(9754);
-  obj = { label: scheduleRuleDateRange, subLabel: rule(9754).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
+  const obj2 = rule(9755);
+  obj = { label: scheduleRuleDateRange, subLabel: rule(9755).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
   const intl = rule(1236).intl;
   const string = intl.string;
   const tmp4 = importDefault(2284);

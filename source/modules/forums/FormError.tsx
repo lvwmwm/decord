@@ -1,10 +1,10 @@
-// Module ID: 9909
-// Function ID: 9910
+// Module ID: 9910
+// Function ID: 9911
 // Name: FormSubmitErrorType
 // Dependencies: [1236, 7323, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 9909 (FormSubmitErrorType)
+// Module 9910 (FormSubmitErrorType)
 let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
 const result = require("set").fileFinishedImporting("modules/forums/FormError.tsx");
 

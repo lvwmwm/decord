@@ -1,10 +1,10 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14151
+// Function ID: 14152
 // Name: getGiftRowDisplayInfo
 // Dependencies: [1236, 3526, 5855, 2284, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 14149 (getGiftRowDisplayInfo)
+// Module 14151 (getGiftRowDisplayInfo)
 const result = require("formatSingleCurrencyPrice").fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
 
 export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {

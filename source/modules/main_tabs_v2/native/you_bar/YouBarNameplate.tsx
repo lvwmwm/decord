@@ -1,8 +1,8 @@
-// Module ID: 15492
-// Function ID: 15493
-// Dependencies: [19, 14338, 21, 4005, 712, 14423, 4036, 4713, 9390, 2]
+// Module ID: 15500
+// Function ID: 15501
+// Dependencies: [19, 14340, 21, 4005, 712, 14425, 4036, 4713, 9390, 2]
 
-// Module 15492
+// Module 15500
 import { YOU_BAR_SPRING_CONFIG } from "CONNECTION_BANNER_HEIGHT";
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
@@ -19,7 +19,7 @@ const memoResult = require("noop").memo(function YouBarNameplate(isQuestRendered
   ({ nameplate, barWidth } = isQuestRendered);
   let obj = isQuestRendered(4005);
   token = obj.useToken(token(712).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(14423)(token);
+  const tmp4 = token(14425)(token);
   dependencyMap = tmp4;
   let obj1 = isQuestRendered(4036);
   const fn = function l() {

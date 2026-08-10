@@ -1,10 +1,10 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 16964
+// Function ID: 16965
 // Name: ParentalConsentConnectionNavbar
 // Dependencies: [19, 17, 1903, 21, 4303, 5267, 712, 1609, 589, 4299, 5827, 1236, 2546, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 16955 (ParentalConsentConnectionNavbar)
+// Module 16964 (ParentalConsentConnectionNavbar)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

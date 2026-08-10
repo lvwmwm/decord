@@ -1,10 +1,10 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15954
+// Function ID: 15955
 // Name: useSortedMessageRequests
-// Dependencies: [19, 1372, 1903, 5841, 589, 15946, 2]
+// Dependencies: [19, 1372, 1903, 5841, 589, 15955, 2]
 // Exports: default
 
-// Module 15945 (useSortedMessageRequests)
+// Module 15954 (useSortedMessageRequests)
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import mergeGuildAvatar from "mergeGuildAvatar";

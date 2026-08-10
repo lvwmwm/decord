@@ -1,10 +1,10 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15400
+// Function ID: 15401
 // Name: useFavoritesGuildHideOnLeave
 // Dependencies: [19, 4124, 1375, 1894, 9711, 9710, 2]
 // Exports: default
 
-// Module 15392 (useFavoritesGuildHideOnLeave)
+// Module 15400 (useFavoritesGuildHideOnLeave)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -24,7 +24,7 @@ export default function useFavoritesGuildHideOnLeave() {
         }
         if (!hasStoredFavoritesResult) {
           tmpResult = tmp(tmp2[5]);
-          const result = tmpResult.setFavoritesGuildVisibility(false, "auto_hide_empty_guild");
+          const result = tmpResult.setFavoritesGuildVisibility(false, "auto");
         }
         tmp5 = initializeFromUserSettings;
       }

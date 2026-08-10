@@ -1,10 +1,10 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 15730
+// Function ID: 15731
 // Name: MediaGridPlaceholderItem
-// Dependencies: [19, 17, 8397, 21, 4303, 712, 15721, 4036, 15723, 12, 4299, 1236, 11709, 15724, 2]
+// Dependencies: [19, 17, 8397, 21, 4303, 712, 15729, 4036, 15731, 12, 4299, 1236, 11710, 15732, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 15722 (MediaGridPlaceholderItem)
+// Module 15730 (MediaGridPlaceholderItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import MessageEmbedTypes from "MessageEmbedTypes";
@@ -31,11 +31,11 @@ export default function MediaGridPlaceholderItem(arg0) {
   let containerStyle;
   let size;
   ({ size, containerStyle } = arg0);
-  let obj = require(15721) /* useFullscreenPlaceholderCount */;
+  let obj = require(15729) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
   obj = { style: items, pointerEvents: "none", children: null };
   items = [containerStyle, placeholderAnimatedStyle];
-  obj[2] = callback(importDefault(15723), { height: size, width: size, style: containerStyle });
+  obj[2] = callback(importDefault(15731), { height: size, width: size, style: containerStyle });
   return callback(importDefault(4036).View, obj);
 };
 export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(visible) {
@@ -51,7 +51,7 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
   memo = memo.useMemo(() => outer1_0(_undefined[9]).range(0, numRows * outer1_5), items);
   const items1 = [memo];
   memo1 = memo.useMemo(() => outer1_0(_undefined[9]).chunk(memo, outer1_5), items1);
-  let obj = require(15721) /* useFullscreenPlaceholderCount */;
+  let obj = require(15729) /* useFullscreenPlaceholderCount */;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(visible.visible);
   obj = { style: items2, pointerEvents: "none", children: null };
   items2 = [, , ];
@@ -80,9 +80,9 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
           style: _undefined.row,
           children: arr.map((arg0, arg1) => {
             let obj = { height: closure_0, width: closure_0, style: null };
-            const tmp = numRows(15723);
+            const tmp = numRows(15731);
             obj = { itemIndex: closure_0 * outer2_5 + arg1, numItems: outer1_3.length, numColumns: outer2_5, spacing: outer2_6 };
-            obj[2] = outer2_0(11709).getMediaGridItemStyles(obj);
+            obj[2] = outer2_0(11710).getMediaGridItemStyles(obj);
             return outer2_7(tmp, obj, arg1);
           })
         }),

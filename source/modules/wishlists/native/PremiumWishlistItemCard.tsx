@@ -1,10 +1,10 @@
-// Module ID: 10107
-// Function ID: 10108
+// Module ID: 10108
+// Function ID: 10109
 // Name: PremiumWishlistItemCard
 // Dependencies: [19, 21, 9354, 9355, 2]
 // Exports: default
 
-// Module 10107 (PremiumWishlistItemCard)
+// Module 10108 (PremiumWishlistItemCard)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

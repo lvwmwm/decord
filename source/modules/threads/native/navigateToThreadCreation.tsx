@@ -1,10 +1,10 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 10164
+// Function ID: 10165
 // Name: navigateToThreadCreation
 // Dependencies: [7224, 4158, 4311, 2]
 // Exports: navigateToThreadCreation
 
-// Module 10163 (navigateToThreadCreation)
+// Module 10164 (navigateToThreadCreation)
 let result = require("transitionToChannel").fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
 
 export const navigateToThreadCreation = function navigateToThreadCreation(channel, Message) {

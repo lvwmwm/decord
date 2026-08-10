@@ -6,11 +6,5 @@
 // Module 13441 (get ActivityIndicator)
 import { StyleSheet } from "get ActivityIndicator";
 
-let obj = { container: { overflow: "hidden", alignItems: "center", justifyContent: "center" }, image: { position: "relative", resizeMode: "cover", width: null, height: null }, loaderContainer: null };
-obj = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj.alignItems = "center";
-obj.justifyContent = "center";
-obj[2] = obj;
 
-export default StyleSheet.create(obj);
+export default StyleSheet.create({ sliderPagination: { alignItems: "center", justifyContent: "center", paddingHorizontal: 20, paddingVertical: 30 }, sliderPaginationDotContainer: { alignItems: "center", justifyContent: "center", marginHorizontal: 8 }, sliderPaginationDot: { width: 7, height: 7, borderRadius: 3.5, backgroundColor: "rgba(0, 0, 0, 0.75)" } });

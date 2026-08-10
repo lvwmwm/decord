@@ -1,10 +1,10 @@
-// Module ID: 10914
-// Function ID: 10915
+// Module ID: 10915
+// Function ID: 10916
 // Name: CameraButton
-// Dependencies: [19, 4351, 21, 589, 10801, 1236, 10915, 9155, 9740, 9741, 10916, 4497, 2]
+// Dependencies: [19, 4351, 21, 589, 10802, 1236, 10916, 9155, 9741, 9742, 10917, 4497, 2]
 // Exports: CameraButton, GridButton
 
-// Module 10914 (CameraButton)
+// Module 10915 (CameraButton)
 import "noop";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ export const CameraButton = function CameraButton() {
     obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
     const intl = tmp(1236).intl;
     obj[0] = intl.string(tmp(1236).t["t9eQ/g"]);
-    obj[1] = importDefault(10915);
+    obj[1] = importDefault(10916);
     obj[2] = function onPress() {
       const keys = Object.keys(closure_1);
       const found = keys.find((arg0) => arg0 !== closure_0);
@@ -33,26 +33,26 @@ export const CameraButton = function CameraButton() {
         const obj = outer1_1(outer1_2[7]);
       }
     };
-    tmp4 = jsx(importDefault(10801), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-    const tmp7 = importDefault(10801);
+    tmp4 = jsx(importDefault(10802), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+    const tmp7 = importDefault(10802);
   }
   return tmp4;
 };
 export const GridButton = function GridButton(channel) {
   channel = channel.channel;
   let tmp4 = null;
-  if (null != importDefault(9741)(channel)) {
+  if (null != importDefault(9742)(channel)) {
     tmp4 = null;
     if (!tmp3) {
       const obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
       const intl = channel(1236).intl;
       obj[0] = intl.string(channel(1236).t.HK4JIu);
-      obj[1] = tmp(10916);
+      obj[1] = tmp(10917);
       obj[2] = function onPress() {
         return outer1_1(outer1_2[11]).selectParticipant(channel.id, null);
       };
-      tmp4 = jsx(tmp(10801), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-      const tmpResult = tmp(10801);
+      tmp4 = jsx(tmp(10802), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+      const tmpResult = tmp(10802);
     }
   }
   return tmp4;

@@ -1,9 +1,9 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 15821
+// Function ID: 15822
 // Name: Loading
-// Dependencies: [19, 17, 1961, 1891, 4125, 676, 21, 4303, 712, 5823, 8414, 589, 5716, 4127, 8419, 1222, 4158, 1609, 5824, 15813, 2]
+// Dependencies: [19, 17, 1961, 1891, 4125, 676, 21, 4303, 712, 5823, 8414, 589, 5716, 4127, 8419, 1222, 4158, 1609, 5824, 15822, 2]
 
-// Module 15812 (Loading)
+// Module 15821 (Loading)
 import closure_4 from "makeAuthenticated";
 import { View } from "useSafeAreaInsets";
 import comparator from "comparator";

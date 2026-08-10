@@ -1,10 +1,10 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12009
+// Function ID: 12010
 // Name: viewPrompt
 // Dependencies: [709, 2]
 // Exports: viewPrompt
 
-// Module 12008 (viewPrompt)
+// Module 12009 (viewPrompt)
 function viewPrompt(REAL_NAME_PROMPT, closure_0) {
   const importDefault = REAL_NAME_PROMPT;
   const dependencyMap = closure_0;

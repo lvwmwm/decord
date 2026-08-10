@@ -1,10 +1,10 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13311
+// Function ID: 13312
 // Name: LeaveServerAlert
 // Dependencies: [676, 21, 4647, 1236, 4647, 9021, 2]
 // Exports: default
 
-// Module 13309 (LeaveServerAlert)
+// Module 13311 (LeaveServerAlert)
 import { GuildFeatures } from "ME";
 import jsxProd from "jsxProd";
 

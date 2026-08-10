@@ -1,8 +1,8 @@
-// Module ID: 12253
-// Function ID: 12254
-// Dependencies: [32, 19, 17, 21, 4303, 712, 500, 4005, 12239, 4036, 4704, 4810, 4299, 1236, 2]
+// Module ID: 12255
+// Function ID: 12256
+// Dependencies: [32, 19, 17, 21, 4303, 712, 500, 4005, 12241, 4036, 4704, 4810, 4299, 1236, 2]
 
-// Module 12253
+// Module 12255
 import _slicedToArray from "_slicedToArray";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,7 +38,7 @@ export default require("noop").memo(function MediaModalSpoilerOverlay(source) {
   let stringResult = dependencyMap;
   let obj = require(4005) /* map */;
   const token = obj.useToken(importDefault(712).colors.SPOILER_HIDDEN_BACKGROUND);
-  let obj1 = require(12239) /* useMediaItemSpoilerState */;
+  let obj1 = require(12241) /* useMediaItemSpoilerState */;
   if (!tmp5[0]) {
     return null;
   } else {

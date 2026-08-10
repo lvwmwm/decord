@@ -1,10 +1,10 @@
-// Module ID: 10394
-// Function ID: 10395
+// Module ID: 10395
+// Function ID: 10396
 // Name: ForumPostActionBar
-// Dependencies: [32, 19, 17, 3930, 3931, 1372, 676, 21, 4303, 712, 589, 5920, 1474, 8610, 8391, 10395, 4846, 1236, 4255, 4299, 9136, 4247, 6917, 11, 4235, 10396, 2]
+// Dependencies: [32, 19, 17, 3930, 3931, 1372, 676, 21, 4303, 712, 589, 5920, 1474, 8610, 8391, 10396, 4846, 1236, 4255, 4299, 9136, 4247, 6917, 11, 4235, 10397, 2]
 // Exports: default
 
-// Module 10394 (ForumPostActionBar)
+// Module 10395 (ForumPostActionBar)
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
 import { View } from "getSystemLocale";
@@ -77,7 +77,7 @@ export default function ForumPostActionBar(channel) {
     obj1[1] = stateFromStores;
     obj1[2] = firstMessage;
     obj1[3] = tmp7[0];
-    obj[1] = callback(tmp2(10395).ForumPostActionBarReactions, obj1);
+    obj[1] = callback(tmp2(10396).ForumPostActionBarReactions, obj1);
     tmp11 = callback(tmp10, obj);
   }
   const items5 = [tmp11, ];
@@ -114,7 +114,7 @@ export default function ForumPostActionBar(channel) {
       obj[3] = channel(4235).JumpType.ANIMATED;
       obj.jumpToMessage(obj);
     };
-    obj4[4] = callback(tmp2(10396).ArrowLargeUpIcon, { size: "xs" });
+    obj4[4] = callback(tmp2(10397).ArrowLargeUpIcon, { size: "xs" });
     items7[2] = callback(tmp2(4846).PressableOpacity, obj4);
     obj2[2] = items7;
     items5[1] = tmp9(tmp10, obj2);

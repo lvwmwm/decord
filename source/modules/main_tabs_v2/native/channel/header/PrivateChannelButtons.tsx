@@ -1,8 +1,8 @@
-// Module ID: 12541
-// Function ID: 12542
-// Dependencies: [19, 17, 4316, 1372, 3938, 1903, 4319, 8395, 676, 4321, 1959, 8396, 21, 1297, 4303, 712, 1348, 589, 10376, 8088, 12542, 9631, 12521, 12543, 11670, 11731, 4498, 4271, 12556, 1988, 4846, 1236, 6006, 12557, 8936, 3998, 698, 12231, 6011, 4513, 4829, 8400, 8398, 4299, 7714, 2]
+// Module ID: 12543
+// Function ID: 12544
+// Dependencies: [19, 17, 4316, 1372, 3938, 1903, 4319, 8395, 676, 4321, 1959, 8396, 21, 1297, 4303, 712, 1348, 589, 10377, 8088, 12544, 9631, 12523, 12545, 11671, 11732, 4498, 4271, 12558, 1988, 4846, 1236, 6006, 12559, 8936, 3998, 698, 12233, 6011, 4513, 4829, 8400, 8398, 4299, 7714, 2]
 
-// Module 12541
+// Module 12543
 import importAllResult from "useIsCallActive";
 import { View } from "initialize";
 import getParticipants from "getParticipants";
@@ -79,7 +79,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     return isInChannelResult;
   }, items2);
-  tmp4Result = tmp4(10376);
+  tmp4Result = tmp4(10377);
   inappropriateConversationSafetyToolsWarningForChannel = tmp4Result.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
   c6 = tmp8;
   const items3 = [visibleParticipants, totalParticipantCount];
@@ -155,7 +155,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     tmp14 = callParticipants.length > 0;
   }
   c10 = tmp14;
-  const tmp15 = screenIndex(12542)({ context: { type: "channel", channel: stateFromStores } });
+  const tmp15 = screenIndex(12544)({ context: { type: "channel", channel: stateFromStores } });
   application = tmp15.application;
   const items6 = [stateFromStores];
   callback = obj7.useCallback(() => {
@@ -264,7 +264,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     };
     const intl5 = tmp4(1236).intl;
     obj[2] = intl5.string(tmp4(1236).t["+KSnWX"]);
-    obj[3] = callback(tmp4(12231).WindowLaunchIcon, { size: "sm" });
+    obj[3] = callback(tmp4(12233).WindowLaunchIcon, { size: "sm" });
     let tmp23Result = callback(tmp4(4846).PressableOpacity, obj);
   } else if (tmp15.isAppDM) {
     let tmp39 = null;

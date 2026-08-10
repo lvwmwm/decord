@@ -1,10 +1,10 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 10857
+// Function ID: 10858
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 10846, 21, 647, 10845, 1236, 5768, 10857, 2]
+// Dependencies: [19, 10847, 21, 647, 10846, 1236, 5768, 10858, 2]
 // Exports: default
 
-// Module 10856 (UserSettingsVoiceOverlay)
+// Module 10857 (UserSettingsVoiceOverlay)
 import "noop";
 import getUserAgnosticState from "getUserAgnosticState";
 import { jsx } from "jsxProd";
@@ -25,7 +25,7 @@ export default function UserSettingsVoiceOverlay() {
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.Wfoivk);
   obj[2] = stateFromStores;
-  obj[3] = importDefault(10857).setEnabled;
+  obj[3] = importDefault(10858).setEnabled;
   obj[2] = jsx(require(5768) /* TableSwitchRow */.TableSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null });
-  return jsx(require(10845) /* UserSettingsVoice */.UserSettingsTableRowGroup, { label: null, subLabel: null, value: null, onValueChange: null });
+  return jsx(require(10846) /* UserSettingsVoice */.UserSettingsTableRowGroup, { label: null, subLabel: null, value: null, onValueChange: null });
 };

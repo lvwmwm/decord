@@ -1,10 +1,10 @@
-// Module ID: 10509
-// Function ID: 10510
+// Module ID: 10510
+// Function ID: 10511
 // Name: filterScopes
-// Dependencies: [1372, 4124, 676, 10510, 8902, 5173, 3934, 506, 2]
+// Dependencies: [1372, 4124, 676, 10511, 8902, 5173, 3934, 506, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 10509 (filterScopes)
+// Module 10510 (filterScopes)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import handleConnectionOpen from "handleConnectionOpen";
 import ME from "ME";

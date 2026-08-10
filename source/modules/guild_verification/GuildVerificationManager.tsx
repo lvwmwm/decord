@@ -1,9 +1,9 @@
-// Module ID: 16447
-// Function ID: 16448
+// Module ID: 16456
+// Function ID: 16457
 // Name: handleInviteData
-// Dependencies: [676, 12669, 1384, 7772, 12670, 5261, 2]
+// Dependencies: [676, 12671, 1384, 7772, 12672, 5261, 2]
 
-// Module 16447 (handleInviteData)
+// Module 16456 (handleInviteData)
 import { GuildFeatures } from "ME";
 import "initialize";
 
@@ -22,8 +22,8 @@ function handleInviteData(invite) {
       }
     }
     if (hasItem) {
-      importDefault(12669).onOpenHubInvite(invite.invite);
-      const obj5 = importDefault(12669);
+      importDefault(12671).onOpenHubInvite(invite.invite);
+      const obj5 = importDefault(12671);
     }
   }
   let new_member = invite.invite.new_member;
@@ -40,12 +40,12 @@ function handleInviteData(invite) {
     new_member = null != guild;
   }
   if (new_member) {
-    new_member = require(12670) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
-    const obj3 = require(12670) /* inviteGuildHasPendingMemberDisabledVerification */;
+    new_member = require(12672) /* inviteGuildHasPendingMemberDisabledVerification */.inviteGuildHasPendingMemberDisabledVerification(guild);
+    const obj3 = require(12672) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
   if (new_member) {
-    const result = require(12670) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
-    const obj4 = require(12670) /* inviteGuildHasPendingMemberDisabledVerification */;
+    const result = require(12672) /* inviteGuildHasPendingMemberDisabledVerification */.openVerificationModalOrTransitionToApplication(guild.id);
+    const obj4 = require(12672) /* inviteGuildHasPendingMemberDisabledVerification */;
   }
 }
 let prototype = function GuildVerificationManager() {

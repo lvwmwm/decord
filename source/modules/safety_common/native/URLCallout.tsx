@@ -1,10 +1,10 @@
-// Module ID: 12224
-// Function ID: 12225
+// Module ID: 12226
+// Function ID: 12227
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4303, 712, 12225, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 12227, 4299, 2]
 // Exports: URLCallout
 
-// Module 12224 (URLCallout)
+// Module 12226 (URLCallout)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ export const URLCallout = function URLCallout(url) {
   let protocol;
   let theRestOfTheUrl;
   const tmp = createCacheKey();
-  let obj = require(12225) /* useUrlParts */;
+  let obj = require(12227) /* useUrlParts */;
   const urlParts = obj.useUrlParts(url.url);
   obj = { style: tmp.linkCalloutContainer, children: null };
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);

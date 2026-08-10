@@ -1,10 +1,10 @@
-// Module ID: 14151
-// Function ID: 14152
+// Module ID: 14153
+// Function ID: 14154
 // Name: SpendingLimitRow
-// Dependencies: [19, 17, 6997, 676, 21, 4303, 712, 4299, 1236, 2284, 4509, 14152, 1988, 14154, 5374, 7337, 14138, 7053, 1480, 14155, 4712, 5767, 4714, 7046, 4313, 14070, 6998, 14156, 2]
+// Dependencies: [19, 17, 6997, 676, 21, 4303, 712, 4299, 1236, 2284, 4509, 14154, 1988, 14156, 5374, 7337, 14140, 7053, 1480, 14157, 4712, 5767, 4714, 7046, 4313, 14072, 6998, 14158, 2]
 // Exports: default
 
-// Module 14151 (SpendingLimitRow)
+// Module 14153 (SpendingLimitRow)
 import useScheduleTimeControlsRowProps from "useScheduleTimeControlsRowProps";
 import { View } from "apexExperiment";
 import { FamilyCenterSubPages } from "items";
@@ -20,7 +20,7 @@ function SpendingLimitRow(teenId) {
   let trailing;
   teenId = teenId.teenId;
   const tmp = createCacheKey();
-  let obj = teenId(14154);
+  let obj = teenId(14156);
   const spendingLimitDisplayState = obj.useSpendingLimitDisplayState(teenId.cap);
   const kind = spendingLimitDisplayState.kind;
   if ("off" === kind) {
@@ -182,9 +182,9 @@ function FamilyCenterSettingsParentalControls() {
   let subLabel;
   let trailing;
   const tmp = createCacheKey();
-  let obj = selectedTeenUser(14138);
+  let obj = selectedTeenUser(14140);
   selectedTeenUser = obj.useSelectedTeenUser();
-  let obj1 = selectedTeenUser(14138);
+  let obj1 = selectedTeenUser(14140);
   const shouldLoadSettingsForSelectedTeenUser = obj1.useShouldLoadSettingsForSelectedTeenUser();
   let obj2 = selectedTeenUser(7053);
   const isFamilyCenterV3Enabled = obj2.useIsFamilyCenterV3Enabled({ location: "FamilyCenterSettingsControls" });
@@ -200,7 +200,7 @@ function FamilyCenterSettingsParentalControls() {
   if (rules == null) {
     rules = [];
   }
-  const ParentalControlledSpendingLimit = tmp2(14070).ParentalControlledSpendingLimit;
+  const ParentalControlledSpendingLimit = tmp2(14072).ParentalControlledSpendingLimit;
   let id;
   if (selectedTeenUser != null) {
     id = selectedTeenUser.id;
@@ -221,7 +221,7 @@ function FamilyCenterSettingsParentalControls() {
       const obj = shouldLoadSettingsForSelectedTeenUser(navigation[26]);
     }
   }, items);
-  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(14155)(rules));
+  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(14157)(rules));
   obj = { style: tmp.parentalControlsContainer, children: null };
   obj = { variant: "text-sm/semibold", children: null };
   const intl = tmp2(1236).intl;

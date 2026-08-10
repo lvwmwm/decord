@@ -1,9 +1,9 @@
-// Module ID: 14099
-// Function ID: 14100
+// Module ID: 14101
+// Function ID: 14102
 // Name: toggle
-// Dependencies: [5829, 8082, 676, 14069, 4642, 1236, 4732, 14100, 14101, 589, 10446, 2]
+// Dependencies: [5829, 8082, 676, 14071, 4642, 1236, 4732, 14102, 14103, 589, 10447, 2]
 
-// Module 14099 (toggle)
+// Module 14101 (toggle)
 import hasConsented from "hasConsented";
 import { Consents } from "ME";
 import createToggle from "createToggle";
@@ -22,9 +22,9 @@ createToggle = {
   onValueChange: function handleUsageStatisticsChange(arg0) {
     if (arg0) {
       let items = [Consents.USAGE_STATISTICS];
-      const obj3 = require(14100) /* handleRequestSuccess */;
-      require(14100) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14101).showDataPrivacyRateLimitAlert(message.message));
-      const setConsentsResult = require(14100) /* handleRequestSuccess */.setConsents(items, []);
+      const obj3 = require(14102) /* handleRequestSuccess */;
+      require(14102) /* handleRequestSuccess */.setConsents(items, []).catch((message) => callback(14103).showDataPrivacyRateLimitAlert(message.message));
+      const setConsentsResult = require(14102) /* handleRequestSuccess */.setConsents(items, []);
     } else {
       let obj = importDefault(4642);
       obj = { title: null, body: null, confirmText: null, cancelText: null, confirmColor: null, onConfirm: null };
@@ -39,13 +39,13 @@ createToggle = {
       obj[4] = importDefault(4732).Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.USAGE_STATISTICS];
-        return callback(14100).setConsents([], items);
+        return callback(14102).setConsents([], items);
       };
       obj.show(obj);
     }
   },
   useIsDisabled() {
-    return require(14069) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
+    return require(14071) /* useParentalControlledExplicitContentSettings */.useIsParentallyControlled();
   }
 };
 createToggle = createToggle.createToggle(createToggle);

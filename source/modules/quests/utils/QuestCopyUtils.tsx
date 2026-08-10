@@ -1,10 +1,10 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10482
+// Function ID: 10483
 // Name: getContextualEntrypointHeading
 // Dependencies: [5161, 1236, 9516, 9517, 9521, 7188, 7177, 5756, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 10481 (getContextualEntrypointHeading)
+// Module 10482 (getContextualEntrypointHeading)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 
 let c3;

@@ -1,10 +1,10 @@
-// Module ID: 9745
-// Function ID: 9746
+// Module ID: 9746
+// Function ID: 9747
 // Name: shouldRefreshAttachmentUrl
 // Dependencies: [5, 676, 687, 4335, 1467, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9745 (shouldRefreshAttachmentUrl)
+// Module 9746 (shouldRefreshAttachmentUrl)
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 import set from "set";

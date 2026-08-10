@@ -1,10 +1,10 @@
-// Module ID: 14858
-// Function ID: 14859
+// Module ID: 14860
+// Function ID: 14861
 // Name: ShopEmptyState
-// Dependencies: [19, 21, 4303, 712, 14833, 7745, 1297, 8827, 1236, 2]
+// Dependencies: [19, 21, 4303, 712, 14835, 7745, 1297, 8827, 1236, 2]
 // Exports: default
 
-// Module 14858 (ShopEmptyState)
+// Module 14860 (ShopEmptyState)
 import noop from "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -30,12 +30,12 @@ export default function ShopFlashList(initialScrollIndex) {
   initialScrollIndex = initialScrollIndex.initialScrollIndex;
   ({ data, renderItem, getItemType } = initialScrollIndex);
   const ref = React.useRef(null);
-  let obj = require(14833) /* INITIAL_SCROLL_DELAY_MS */;
+  let obj = require(14835) /* INITIAL_SCROLL_DELAY_MS */;
   let tmp5 = null != initialScrollIndex;
   if (tmp5) {
     tmp5 = initialScrollIndex > 0;
   }
-  obj = { shouldScroll: tmp5, initialScrollIndex, flashListRef: ref, afterMs: tmp3(14833).INITIAL_SCROLL_DELAY_MS };
+  obj = { shouldScroll: tmp5, initialScrollIndex, flashListRef: ref, afterMs: tmp3(14835).INITIAL_SCROLL_DELAY_MS };
   const scrollToInitialIndexOnce = obj.useScrollToInitialIndexOnce(obj);
   obj = { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: createCacheKey().contentContainer };
   return jsx(require(7745) /* noop */.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: createCacheKey().contentContainer });

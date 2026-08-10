@@ -1,10 +1,10 @@
-// Module ID: 10154
-// Function ID: 10155
+// Module ID: 10155
+// Function ID: 10156
 // Name: CircleQuestionIcon
-// Dependencies: [19, 17, 21, 712, 4004, 10155, 10156, 2]
+// Dependencies: [19, 17, 21, 712, 4004, 10156, 10157, 2]
 // Exports: CircleQuestionIcon
 
-// Module 10154 (CircleQuestionIcon)
+// Module 10155 (CircleQuestionIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,13 +29,13 @@ export const CircleQuestionIcon = function CircleQuestionIcon(color) {
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(10155) /* registerAsset */;
+  obj[0] = require(10156) /* registerAsset */;
   obj[1] = secondaryColor;
   obj[2] = style;
   const merged1 = Object.assign(merged);
   const items = [callback(require(4004) /* BaseIconImage */.BaseIconImage, obj), ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(10156) /* registerAsset */;
+  obj[0] = require(10157) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
   const items2 = [];

@@ -1,10 +1,10 @@
-// Module ID: 11442
-// Function ID: 11443
+// Module ID: 11443
+// Function ID: 11444
 // Name: EntityBorderAppIcon
 // Dependencies: [17, 21, 712, 4303, 5268, 2]
 // Exports: default
 
-// Module 11442 (EntityBorderAppIcon)
+// Module 11443 (EntityBorderAppIcon)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

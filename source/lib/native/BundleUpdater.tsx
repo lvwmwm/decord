@@ -1,9 +1,9 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11188
+// Function ID: 11189
 // Name: BundleUpdaterManager
 // Dependencies: [5, 17, 676, 3, 500, 81, 1988, 4503, 698, 7061, 2]
 
-// Module 11187 (BundleUpdaterManager)
+// Module 11188 (BundleUpdaterManager)
 import resolveAssetSource from "resolveAssetSource";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { AnalyticEvents } from "ME";

@@ -1,10 +1,10 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15405
+// Function ID: 15406
 // Name: getDropIndex
-// Dependencies: [5, 19, 17, 1891, 5155, 15398, 15399, 4036, 636, 4272, 4153, 12, 1208, 1236, 8008, 15157, 4005, 712, 3914, 10251, 705, 5232, 8698, 8599, 500, 1609, 4700, 15400, 15401, 14339, 5427, 2]
+// Dependencies: [5, 19, 17, 1891, 5155, 15406, 15407, 4036, 636, 4272, 4153, 12, 1208, 1236, 8008, 15159, 4005, 712, 3914, 10252, 705, 5232, 8698, 8599, 500, 1609, 4700, 15408, 15409, 14341, 5427, 2]
 // Exports: default
 
-// Module 15397 (getDropIndex)
+// Module 15405 (getDropIndex)
 import withEqualityFn from "withEqualityFn";
 import closure_4 from "t";
 import { Dimensions } from "Themes";
@@ -648,7 +648,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    state.setStateShallow({ dragSpecs: "r", overSpecs: "accessibilityRole" });
+    state.setStateShallow({ dragSpecs: "Array", overSpecs: "ct" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj5 = {};
@@ -782,7 +782,7 @@ export default function useGuildsBarGesture() {
             }
           }
         }
-        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
+        const obj5 = { dragSpecs: null, overSpecs: "Array", windowSize: "Array" };
         obj5[0] = obj;
         obj5[2] = sum;
         setStateShallow(obj5);

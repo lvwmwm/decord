@@ -1,7 +1,7 @@
 // Module ID: 4315
 // Function ID: 4316
 // Name: generateOldThreadCutoff
-// Dependencies: [5, 32, 1371, 4316, 1962, 4217, 6985, 5841, 5842, 7100, 5224, 3931, 1340, 1376, 1218, 5898, 1372, 4988, 4641, 1891, 5128, 4521, 3929, 3938, 1960, 4499, 1903, 13183, 676, 9758, 1379, 1378, 4500, 1235, 3, 13184, 13185, 11, 687, 709, 4537, 13186, 530, 4188, 10469, 9761, 3937, 13187, 6994, 7097, 13188, 1988, 1384, 3883, 12, 1351, 4992, 4159, 9760, 3936, 1385, 589, 6876, 8936, 2]
+// Dependencies: [5, 32, 1371, 4316, 1962, 4217, 6985, 5841, 5842, 7100, 5224, 3931, 1340, 1376, 1218, 5898, 1372, 4988, 4641, 1891, 5128, 4521, 3929, 3938, 1960, 4499, 1903, 13185, 676, 9759, 1379, 1378, 4500, 1235, 3, 13186, 13187, 11, 687, 709, 4537, 13188, 530, 4188, 10470, 9762, 3937, 13189, 6994, 7097, 13190, 1988, 1384, 3883, 12, 1351, 4992, 4159, 9761, 3936, 1385, 589, 6876, 8936, 2]
 
 // Module 4315 (generateOldThreadCutoff)
 import getHash from "getHash";
@@ -316,7 +316,7 @@ function shouldAutomaticallyAck(value, arg1) {
           }
           return false;
         }
-        obj5 = importDefault(10469);
+        obj5 = importDefault(10470);
       }
       if (tmp4) {
         if (!value._persisted) {
@@ -376,7 +376,7 @@ function shouldAutomaticallyAck(value, arg1) {
           if (null != messages) {
             if (messages.ready) {
               if (!messages.loadingMore) {
-                const result = require(9761) /* getFocusedChannelId */.isChannelFocusedForReadStateAck(value.channelId, arg1);
+                const result = require(9762) /* getFocusedChannelId */.isChannelFocusedForReadStateAck(value.channelId, arg1);
                 const currentUser9 = obj.getCurrentUser();
                 if (result) {
                   let hasAnyStaffLevelResult9;
@@ -399,7 +399,7 @@ function shouldAutomaticallyAck(value, arg1) {
                     flag6 = false;
                   }
                 }
-                const obj10 = require(9761) /* getFocusedChannelId */;
+                const obj10 = require(9762) /* getFocusedChannelId */;
               }
               return flag6;
             }
@@ -1755,7 +1755,7 @@ prototype2["canBeUnread"] = function canBeUnread() {
     }
     return self.canTrackUnreads();
   }
-  obj = require(13187) /* filterOutMessageRequestsAndSpam */;
+  obj = require(13189) /* filterOutMessageRequestsAndSpam */;
   tmp = require;
 };
 prototype2["canHaveMentions"] = function canHaveMentions() {
@@ -1765,7 +1765,7 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
     let tmp3 = !tmp2;
     if (!(self._isThread && !self._isJoinedThread)) {
       const items = [processChannel, closure_12];
-      const result = require(13187) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
+      const result = require(13189) /* filterOutMessageRequestsAndSpam */.isMessageRequestOrSpamRequest(self.channelId, items);
       let tmp9 = !result;
       if (!result) {
         let result1 = tmp4(6994).isOptInEnabledForGuild(self._guildId);
@@ -1780,7 +1780,7 @@ prototype2["canHaveMentions"] = function canHaveMentions() {
         const tmp4Result = tmp4(6994);
       }
       tmp3 = tmp9;
-      const obj = require(13187) /* filterOutMessageRequestsAndSpam */;
+      const obj = require(13189) /* filterOutMessageRequestsAndSpam */;
       tmp4 = require;
     }
     tmp = tmp3;
@@ -1868,7 +1868,7 @@ prototype2["ackPins"] = function ackPins() {
         return false;
       } else {
         self._persisted = true;
-        importDefault(13186)(() => {
+        importDefault(13188)(() => {
           const HTTP = self(outer1_2[42]).HTTP;
           return HTTP.post({ url: outer1_39.PINS_ACK(self.channelId), oldFormErrors: true, rejectWithError: true });
         });
@@ -2083,7 +2083,7 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
       tmp4 = recalculateFlagsResult;
     }
     const require = tmp4;
-    importDefault(13186)(() => {
+    importDefault(13188)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2099,20 +2099,20 @@ prototype2["_ack"] = function _ack(closure_1, c0) {
         }
         callback(709).dispatch({ type: "MESSAGE_ACKED" });
         if (dependencyMap) {
-          tmp4(1988)(13188, tmp5.paths).then((arg0) => {
+          tmp4(1988)(13190, tmp5.paths).then((arg0) => {
             let obj = closure_1;
             if (closure_1 == null) {
               obj = {};
             }
             arg0.default(channelId.channelId, obj);
           });
-          const promise = tmp4(1988)(13188, tmp5.paths);
+          const promise = tmp4(1988)(13190, tmp5.paths);
         }
         let obj = callback(709);
         tmp5 = dependencyMap;
       }
     });
-    let promise = importDefault(13186)(() => {
+    let promise = importDefault(13188)(() => {
       const HTTP = tmp4(530).HTTP;
       obj = { url: outer1_39.MESSAGE_ACK(self.channelId, outgoingAck), body: obj, oldFormErrors: true, rejectWithError: true };
       obj = { token: outer1_63, last_viewed: self.lastViewed, flags: tmp4 };
@@ -2149,7 +2149,7 @@ prototype2["_nonChannelAck"] = function _nonChannelAck() {
         }
         self._persisted = true;
         self = importDefault;
-        importDefault(13186)(() => {
+        importDefault(13188)(() => {
           const HTTP = callback(outer1_2[42]).HTTP;
           return HTTP.post({ url: callback, body: {}, oldFormErrors: true, rejectWithError: true });
         });
@@ -3282,7 +3282,7 @@ obj = {
       if (null != value.oldestUnreadMessageId) {
         if (!value.oldestUnreadMessageIdStale) {
           if (!hasUnreadResult) {
-            let tmp8Result = tmp8(9761);
+            let tmp8Result = tmp8(9762);
             hasUnreadResult = tmp8Result.getFocusedChannelId() === channelId;
           }
           if (!hasUnreadResult) {
@@ -3348,7 +3348,7 @@ obj = {
                     if (tmp8Result1.computeThreadNotificationSetting(channel) === ThreadMemberFlags.ALL_MESSAGES) {
                       obj6 = { shouldMention: true, isMentionLowImportance: true };
                     }
-                    tmp8Result1 = tmp8(9760);
+                    tmp8Result1 = tmp8(9761);
                   } else if (!channel.isVocal()) {
                     if (!obj15.isChannelMuted(channel.guild_id, channel.id)) {
                       if (obj15.resolvedMessageNotifications(channel) === constants10.ALL_MESSAGES) {

@@ -1,7 +1,7 @@
 // Module ID: 9271
 // Function ID: 9272
 // Name: ClickableGameIcon
-// Dependencies: [19, 17, 21, 4303, 712, 9272, 9283, 12199, 4299, 12203, 12204, 4002, 4271, 12205, 1988, 4846, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 9272, 9283, 12201, 4299, 12205, 12206, 4002, 4271, 12207, 1988, 4846, 2]
 // Exports: default
 
 // Module 9271 (ClickableGameIcon)
@@ -41,7 +41,7 @@ function ClickableGameIcon(game) {
       }
     }, items);
   }
-  return callback(onPressFallback(12199), { style, game, activityLevel, onPress });
+  return callback(onPressFallback(12201), { style, game, activityLevel, onPress });
 }
 function FavoriteGame(game) {
   let activityLevel;
@@ -156,7 +156,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/guild_profile/n
 
 export default function GuildProfileGames(profile) {
   profile = profile.profile;
-  const gamesToDisplay = importDefault(12203)(profile).gamesToDisplay;
+  const gamesToDisplay = importDefault(12205)(profile).gamesToDisplay;
   let tmp4 = null;
   if (null != gamesToDisplay) {
     tmp4 = null;

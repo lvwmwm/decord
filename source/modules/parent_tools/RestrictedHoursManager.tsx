@@ -1,10 +1,10 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16368
+// Function ID: 16369
 // Name: scheduleUpcomingWarning
-// Dependencies: [9752, 1903, 6996, 1236, 2284, 1924, 9754, 709, 7053, 16354, 5261, 2]
+// Dependencies: [9753, 1903, 6996, 1236, 2284, 1924, 9755, 709, 7053, 16363, 5261, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 16359 (scheduleUpcomingWarning)
+// Module 16368 (scheduleUpcomingWarning)
 import DesktopNotificationTypes from "DesktopNotificationTypes";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -57,10 +57,10 @@ function scheduleUpcomingWarning() {
         const intl = tmp5(1236).intl;
         const _Date2 = Date;
         const date2 = new Date(startAtMs);
-        let tmp5Result = tmp5(9754);
+        let tmp5Result = tmp5(9755);
         const items = [tmp5(1924).JS_DAY_TO_DAY_OF_WEEK[date2.getDay(date2)]];
         const stringResult = intl.string(importDefault(2284)["0JlDg0"]);
-        tmp5Result = tmp5(9754);
+        tmp5Result = tmp5(9755);
         const _HermesInternal2 = HermesInternal;
         const formatDaysResult = tmp5Result.formatDays(items);
         const trimmed = "" + tmp5Result.formatDays(items) + " " + tmp5Result.getScheduleRuleDateRange(rule).trim();
@@ -94,7 +94,7 @@ function checkAndUpdateModal() {
     obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: null };
     obj[1] = c6;
     obj.dispatch(obj);
-    const obj3 = require(16354) /* closeRestrictedHoursModal */;
+    const obj3 = require(16363) /* closeRestrictedHoursModal */;
     if (c6) {
       const result1 = obj3.openRestrictedHoursModal();
     } else {
@@ -123,7 +123,7 @@ function handleScheduleUpdate() {
     obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: null };
     obj[1] = c6;
     obj.dispatch(obj);
-    const obj3 = require(16354) /* closeRestrictedHoursModal */;
+    const obj3 = require(16363) /* closeRestrictedHoursModal */;
     if (c6) {
       const result1 = obj3.openRestrictedHoursModal();
     } else {
@@ -157,8 +157,8 @@ prototype["_initialize"] = function _initialize() {
   obj = { type: "RESTRICTED_HOURS_STATE_CHANGE", isInRestrictedHours: closure_6 };
   obj.dispatch(obj);
   if (closure_6) {
-    const result = require(16354) /* closeRestrictedHoursModal */.openRestrictedHoursModal();
-    const obj3 = require(16354) /* closeRestrictedHoursModal */;
+    const result = require(16363) /* closeRestrictedHoursModal */.openRestrictedHoursModal();
+    const obj3 = require(16363) /* closeRestrictedHoursModal */;
   }
   const interval = setInterval(checkAndUpdateModal, 60000);
   scheduleUpcomingWarning();
@@ -175,7 +175,7 @@ prototype["_terminate"] = function _terminate() {
     c8 = null;
   }
   let c9 = null;
-  const result = require(16354) /* closeRestrictedHoursModal */.closeRestrictedHoursModal();
+  const result = require(16363) /* closeRestrictedHoursModal */.closeRestrictedHoursModal();
   let c6 = false;
 };
 const restrictedHoursManager = new RestrictedHoursManager();

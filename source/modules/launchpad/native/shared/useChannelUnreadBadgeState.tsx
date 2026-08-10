@@ -1,10 +1,10 @@
-// Module ID: 15456
-// Function ID: 15457
+// Module ID: 15464
+// Function ID: 15465
 // Name: useChannelUnreadBadgeState
 // Dependencies: [6991, 4315, 4499, 589, 6994, 2]
 // Exports: useBaseChannelUnreadBadgeState, useChannelUnreadBadgeState
 
-// Module 15456 (useChannelUnreadBadgeState)
+// Module 15464 (useChannelUnreadBadgeState)
 import guildHasCommunity from "guildHasCommunity";
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";

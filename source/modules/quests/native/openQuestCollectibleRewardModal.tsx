@@ -1,10 +1,10 @@
-// Module ID: 11182
-// Function ID: 11183
+// Module ID: 11183
+// Function ID: 11184
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1903, 5161, 21, 4303, 712, 589, 10476, 10459, 4299, 1236, 7166, 10124, 2]
+// Dependencies: [1903, 5161, 21, 4303, 712, 589, 10477, 10460, 4299, 1236, 7166, 10125, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 11182 (QuestCollectibleRewardModalMessages)
+// Module 11183 (QuestCollectibleRewardModalMessages)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { QuestsExperimentLocations } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -20,10 +20,10 @@ function QuestCollectibleRewardModalMessages(quest) {
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(10476) /* _getDefaultRewardName */;
+  let obj1 = require(10477) /* _getDefaultRewardName */;
   const defaultRewardNameWithArticle = obj1.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
   obj = { children: null };
-  const claimedCollectibleRewardMessage = require(10459) /* useQuests */.useClaimedCollectibleRewardMessage(quest.config);
+  const claimedCollectibleRewardMessage = require(10460) /* useQuests */.useClaimedCollectibleRewardMessage(quest.config);
   obj = { variant: "heading-xl/bold", style: tmp.title, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t.YNaxMp, { itemName: defaultRewardNameWithArticle });
@@ -54,8 +54,8 @@ export const openQuestCollectibleRewardModal = function openQuestCollectibleRewa
       return outer1_5(outer1_9, { quest: closure_0 });
     };
     obj[2] = onSuccess.onSuccess;
-    importDefault(10124).open(obj);
-    const obj4 = importDefault(10124);
+    importDefault(10125).open(obj);
+    const obj4 = importDefault(10125);
   } else {
     questLogger.warn("Product is null");
   }

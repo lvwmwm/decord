@@ -1,9 +1,9 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12902
+// Function ID: 12903
 // Name: handleIdentify
-// Dependencies: [1218, 3, 12901, 12940, 12943, 10469, 698, 675, 500, 3912, 1454, 709, 2]
+// Dependencies: [1218, 3, 12903, 12942, 12945, 10470, 698, 675, 500, 3912, 1454, 709, 2]
 
-// Module 12900 (handleIdentify)
+// Module 12902 (handleIdentify)
 import fetchFingerprint from "fetchFingerprint";
 import set from "set";
 import importDefaultResult from "awaitOnline";
@@ -22,12 +22,12 @@ obj.handleIdentify = () => {
   if (null == token) {
     return null;
   } else {
-    const state = importDefault(10469).getState();
+    const state = importDefault(10470).getState();
     const installationForTracking = obj.getInstallationForTracking();
     obj = { token: null, properties: null, presence: null };
     obj[0] = token;
     const obj1 = {};
-    const obj5 = importDefault(10469);
+    const obj5 = importDefault(10470);
     const merged = Object.assign(importDefault(698).getSuperProperties());
     obj1.client_app_state = state;
     obj1.is_fast_connect = false;

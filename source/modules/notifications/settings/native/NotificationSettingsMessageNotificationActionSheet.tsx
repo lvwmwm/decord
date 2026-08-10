@@ -1,10 +1,10 @@
-// Module ID: 9837
-// Function ID: 9838
+// Module ID: 9838
+// Function ID: 9839
 // Name: NotificationSettingsMessageNotificationActionSheet
-// Dependencies: [19, 17, 676, 21, 4303, 712, 5397, 9834, 4299, 1236, 7985, 7984, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 5397, 9835, 4299, 1236, 7985, 7984, 2]
 // Exports: default
 
-// Module 9837 (NotificationSettingsMessageNotificationActionSheet)
+// Module 9838 (NotificationSettingsMessageNotificationActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { UserNotificationSettings } from "ME";
@@ -30,7 +30,7 @@ export default function NotificationSettingsMessageNotificationActionSheet(defau
   let obj = { startExpanded: true, backgroundStyles: tmp.sheet, children: null };
   obj = { style: tmp.header, children: null };
   obj = { notificationSetting: defaultValue.value };
-  obj[1] = callback(importDefault(9834), obj);
+  obj[1] = callback(importDefault(9835), obj);
   const items = [callback(View, obj), ];
   const obj1 = { style: tmp.content, children: null };
   const obj2 = { variant: "text-sm/semibold", children: null };

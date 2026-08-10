@@ -1,10 +1,10 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10358
+// Function ID: 10359
 // Name: SafetyTipsContainer
 // Dependencies: [19, 17, 21, 4303, 712, 4712, 6027, 4299, 1236, 7954, 2]
 // Exports: default
 
-// Module 10357 (SafetyTipsContainer)
+// Module 10358 (SafetyTipsContainer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 10498
+// Function ID: 10499
 // Name: TwoWayLinkLanding
-// Dependencies: [19, 17, 4998, 21, 4303, 10498, 589, 4299, 5374, 1236, 5328, 4712, 4714, 2]
+// Dependencies: [19, 17, 4998, 21, 4303, 10499, 589, 4299, 5374, 1236, 5328, 4712, 4714, 2]
 // Exports: TwoWayLinkLanding
 
-// Module 10497 (TwoWayLinkLanding)
+// Module 10498 (TwoWayLinkLanding)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import set from "set";

@@ -1,10 +1,10 @@
-// Module ID: 9847
-// Function ID: 9848
+// Module ID: 9848
+// Function ID: 9849
 // Name: useEnabledHarmTypesBitmaskForChannelAndAuthorId
 // Dependencies: [19, 1340, 1372, 3938, 1903, 5909, 589, 5916, 5912, 2]
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 9847 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
+// Module 9848 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
 import noop from "noop";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import ensureGuildLoaded from "ensureGuildLoaded";

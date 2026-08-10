@@ -1,10 +1,10 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 10008
+// Function ID: 10009
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 4640, 5398, 21, 4303, 712, 38, 4851, 1474, 1609, 4730, 4271, 4872, 10008, 4002, 7793, 4860, 10176, 10177, 5397, 5399, 4712, 4299, 500, 8870, 8841, 5767, 5374, 10178, 10180, 1236, 8448, 10182, 8357, 4815, 10184, 4714, 4262, 2]
+// Dependencies: [32, 19, 17, 4640, 5398, 21, 4303, 712, 38, 4851, 1474, 1609, 4730, 4271, 4872, 10009, 4002, 7793, 4860, 10177, 10178, 5397, 5399, 4712, 4299, 500, 8870, 8841, 5767, 5374, 10179, 10181, 1236, 8448, 10183, 8357, 4815, 10185, 4714, 4262, 2]
 // Exports: default
 
-// Module 10007 (UploadPreviewActionSheet)
+// Module 10008 (UploadPreviewActionSheet)
 import getSystemLocale from "getSystemLocale";
 import useCanSetThumbnail from "useCanSetThumbnail";
 import get_ActivityIndicator from "CircleErrorIcon";

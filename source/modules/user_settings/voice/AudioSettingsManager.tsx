@@ -1,9 +1,9 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16389
+// Function ID: 16390
 // Name: handleConnectionOpen
-// Dependencies: [32, 4317, 4749, 1218, 4351, 4364, 9158, 11, 1306, 595, 1355, 9157, 12, 13169, 10878, 5261, 2]
+// Dependencies: [32, 4317, 4749, 1218, 4351, 4364, 9158, 11, 1306, 595, 1355, 9157, 12, 13171, 10879, 5261, 2]
 
-// Module 16380 (handleConnectionOpen)
+// Module 16389 (handleConnectionOpen)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -144,9 +144,9 @@ function handleSetLocalVolume(arg0) {
     }
     obj = { volume: null };
     obj[0] = volume;
-    const result = require(13169) /* getPendingAudioSettings */.updatePendingSettings(context, userId, obj);
+    const result = require(13171) /* getPendingAudioSettings */.updatePendingSettings(context, userId, obj);
     lib();
-    const obj2 = require(13169) /* getPendingAudioSettings */;
+    const obj2 = require(13171) /* getPendingAudioSettings */;
   }
 }
 function handleSetLocalMute(arg0) {
@@ -154,7 +154,7 @@ function handleSetLocalMute(arg0) {
   let userId;
   ({ context, userId } = arg0);
   if (userId !== store.getId()) {
-    let obj = require(13169) /* getPendingAudioSettings */;
+    let obj = require(13171) /* getPendingAudioSettings */;
     obj = { muted: null };
     obj[0] = _detectH265HardwareDecode.isLocalMute(userId, context);
     const result = obj.updatePendingSettings(context, userId, obj);
@@ -235,7 +235,7 @@ function handleSetLocalSoundboardMute(userId) {
   userId = userId.userId;
   if (userId !== store.getId()) {
     const result = localSoundboardMuted.isLocalSoundboardMuted(userId);
-    let obj = require(13169) /* getPendingAudioSettings */;
+    let obj = require(13171) /* getPendingAudioSettings */;
     obj = { soundboardMuted: null };
     obj[0] = result;
     const result1 = obj.updatePendingSettings(userId.context, userId, obj);

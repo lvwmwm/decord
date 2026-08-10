@@ -1,10 +1,10 @@
-// Module ID: 15004
-// Function ID: 15005
+// Module ID: 15006
+// Function ID: 15007
 // Name: CaptchaTestScreen
-// Dependencies: [5, 32, 19, 17, 21, 4303, 712, 15005, 15006, 4002, 4299, 1297, 5328, 4714, 4509, 5270, 5783, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4303, 712, 15007, 15008, 4002, 4299, 1297, 5328, 4714, 4509, 5270, 5783, 1236, 2]
 // Exports: default
 
-// Module 15004 (CaptchaTestScreen)
+// Module 15006 (CaptchaTestScreen)
 import closure_3 from "createCacheKey";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";

@@ -1,8 +1,8 @@
-// Module ID: 16361
-// Function ID: 16362
-// Dependencies: [16362, 16365, 16373, 16374, 16375, 10583, 16376, 16377, 16380, 16381, 16383, 9894, 16384, 16385, 16386, 16390, 16391, 16392, 16394, 11823, 12035, 16399, 16400, 16401, 16406, 16407, 7067, 16408, 16409, 16426, 9922, 7232, 10977, 16427, 16428, 16430, 16432, 16433, 16434, 16445, 8953, 16447, 16448, 16449, 16450, 16457, 16458, 16474, 16476, 16477, 16478, 16480, 16482, 16483, 9744, 16492, 14553, 16493, 16494, 16498, 16500, 16514, 16524, 13032, 16527, 16540, 16545, 16546, 16548, 16549, 16551, 16552, 16555, 16557, 16558, 16559, 16560, 16561, 16562, 12995, 16563, 16564, 10783, 16566, 16569, 16570, 16572, 16573, 16577, 5259, 7312, 16578, 16579, 16580, 8306, 16581, 16378, 16582, 16583, 16878, 16879, 16880, 16882, 16883, 16885, 16887, 16888, 16891, 16893, 16894, 16895, 16899, 16900, 16901, 16902, 13971, 16904, 16905, 16908, 16909, 16931, 16935, 16936, 16939, 16962, 16963, 16359, 16964, 16965, 16966, 16967, 2]
+// Module ID: 16370
+// Function ID: 16371
+// Dependencies: [16371, 16374, 16382, 16383, 16384, 10584, 16385, 16386, 16389, 16390, 16392, 9895, 16393, 16394, 16395, 16399, 16400, 16401, 16403, 11824, 12036, 16408, 16409, 16410, 16415, 16416, 7067, 16417, 16418, 16435, 9923, 7232, 10978, 16436, 16437, 16439, 16441, 16442, 16443, 16454, 8953, 16456, 16457, 16458, 16459, 16466, 16467, 16483, 16485, 16486, 16487, 16489, 16491, 16492, 9745, 16501, 14555, 16502, 16503, 16507, 16509, 16523, 16533, 13034, 16536, 16549, 16554, 16555, 16557, 16558, 16560, 16561, 16564, 16566, 16567, 16568, 16569, 16570, 16571, 12997, 16572, 16573, 10784, 16575, 16578, 16579, 16581, 16582, 16586, 5259, 7312, 16587, 16588, 16589, 8306, 16590, 16387, 16591, 16592, 16887, 16888, 16889, 16891, 16892, 16894, 16896, 16897, 16900, 16902, 16903, 16904, 16908, 16909, 16910, 16911, 13973, 16913, 16914, 16917, 16918, 16940, 16944, 16945, 16948, 16971, 16972, 16368, 16973, 16974, 16975, 16976, 2]
 
-// Module 16361
+// Module 16370
 import set from "populateMap";
 import set from "handleMessageCreate";
 
@@ -10,88 +10,88 @@ set = { AcceptInviteManager: obj, AgeGateManager: obj, AgeVerificationManager: o
 obj = {
   actions: ["DISPLAYED_INVITE_SHOW", "DISPLAYED_INVITE_CLEAR", "DEFERRED_INVITE_SHOW", "REGISTER_SUCCESS"],
   inlineRequire() {
-    return require(16362) /* prototype */.default;
+    return require(16371) /* prototype */.default;
   }
 };
 obj = {
   actions: ["POST_CONNECTION_OPEN", "CHANNEL_SELECT", "AGE_GATE_MODAL_OPEN", "AGE_GATE_MODAL_CLOSE", "GUILD_UPDATE"],
   inlineRequire() {
-    return require(16365) /* handlePostConnectionOpen */.default;
+    return require(16374) /* handlePostConnectionOpen */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["CONNECTION_OPEN_SUPPLEMENTAL", "GUILD_SETTINGS_CLOSE", "NOTIFICATION_SETTINGS_MODAL_CLOSE", "PREMIUM_PAYMENT_MODAL_CLOSE", "EMAIL_VERIFICATION_MODAL_CLOSE", "IFE_EXPERIMENT_SEARCH_MODAL_CLOSE", "CREATE_INVITE_MODAL_CLOSE", "QUICKSWITCHER_HIDE", "EMAIL_VERIFICATION_MODAL_OPEN", "USER_REQUIRED_ACTION_UPDATE", "GUILD_SETTINGS_OPEN", "NOTIFICATION_SETTINGS_MODAL_OPEN", "CREATE_INVITE_MODAL_OPEN"],
   inlineRequire() {
-    return require(16583) /* handlePushedModal */.default;
+    return require(16592) /* handlePushedModal */.default;
   }
 };
 set = {
   actions: ["VOICE_CHANNEL_SELECT", "RTC_CONNECTION_STATE"],
   inlineRequire() {
-    return require(16878) /* prototype */.default;
+    return require(16887) /* prototype */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS", "LOAD_THREADS_SUCCESS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_FORUM_POSTS"],
   inlineRequire() {
-    return require(16879) /* resolveMediaPostEmbeds */.default;
+    return require(16888) /* resolveMediaPostEmbeds */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["RTC_CONNECTION_FLAGS", "RTC_CONNECTION_STATE", "POST_CONNECTION_OPEN", "RTC_CONNECTION_USERS_MERGED", "CLIPS_ALLOW_VOICE_RECORDING_UPDATE", "CLIPS_SETTINGS_UPDATE", "CLIPS_INIT_FAILURE", "STREAM_START", "STREAM_DELETE", "STREAM_CLOSE", "RUNNING_GAMES_CHANGE", "RUNNING_GAME_TOGGLE_DETECTION", "CLIPS_RESTART", "RTC_CONNECTION_VIDEO"],
   inlineRequire() {
-    return require(16880) /* showClipsToast */.default;
+    return require(16889) /* showClipsToast */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["CHANNEL_CREATE"],
   inlineRequire() {
-    return require(16882) /* handleChannelCreate */.default;
+    return require(16891) /* handleChannelCreate */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["MESSAGE_ACK", "CHANNEL_SELECT", "POST_CONNECTION_OPEN", "EXPERIMENT_OVERRIDE_BUCKET", "EXPERIMENTS_FETCH_SUCCESS", "APP_STATE_UPDATE"],
   inlineRequire() {
-    return require(16883) /* getDeliveredNotifications */.default;
+    return require(16892) /* getDeliveredNotifications */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "CONNECTION_INTERRUPTED", "SELF_PRESENCE_STORE_UPDATE"],
   inlineRequire() {
-    return require(16885) /* _reportSessionMeaningfullyOnline */.default;
+    return require(16894) /* _reportSessionMeaningfullyOnline */.default;
   },
   loadRightBeforeConnectionOpen: true
 };
 set = {
   actions: ["VIBING_WUMPUS_PLAY_MUSIC", "VIBING_WUMPUS_STOP_MUSIC", "VIBING_WUMPUS_PAUSE_MUSIC"],
   inlineRequire() {
-    return require(16887) /* fadeIn */.default;
+    return require(16896) /* fadeIn */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "CONNECTION_CLOSED", "IDLE", "WINDOW_FOCUS", "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN", "CONTENT_INVENTORY_MANUAL_REFRESH", "CONTENT_INVENTORY_INBOX_STALE", "SPOTIFY_NEW_TRACK", "GAME_PROFILE_OPEN"],
   inlineRequire() {
-    return require(16888) /* getBackoffJitter */.default;
+    return require(16897) /* getBackoffJitter */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["QUESTS_FETCH_CURRENT_QUESTS_BEGIN", "POST_CONNECTION_OPEN", "RUNNING_GAMES_CHANGE", "RUNNING_NON_GAMES_CHANGE", "USER_SETTINGS_PROTO_UPDATE", "START_SESSION", "LOGOUT"],
   inlineRequire() {
-    return require(16891) /* _fetch */.default;
+    return require(16900) /* _fetch */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["QUESTS_VISIBLE_MOBILE_MESSAGES_CHANGED"],
   inlineRequire() {
-    return require(16893) /* log */.default;
+    return require(16902) /* log */.default;
   },
   hasStoreChangeListeners: true,
   neverLoadBeforeConnectionOpen: true
@@ -99,44 +99,44 @@ set = {
 set = {
   actions: ["MESSAGE_CREATE", "MESSAGE_SEND_FAILED"],
   inlineRequire() {
-    return require(16894) /* handleMessageSendFailure */.default;
+    return require(16903) /* handleMessageSendFailure */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["APP_STATE_UPDATE", "POST_CONNECTION_OPEN"],
   inlineRequire() {
-    return require(16895) /* syncYYTextReplacementExperiment */.default;
+    return require(16904) /* syncYYTextReplacementExperiment */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN"],
   inlineRequire() {
-    return require(16899) /* updateSocialRpcNetworkConfig */.default;
+    return require(16908) /* updateSocialRpcNetworkConfig */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "APP_STATE_UPDATE"],
   inlineRequire() {
-    return require(16900) /* updateApiRequestConfig */.default;
+    return require(16909) /* updateApiRequestConfig */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "USER_SETTINGS_PROTO_UPDATE"],
   inlineRequire() {
-    return require(16901) /* prototype */.default;
+    return require(16910) /* prototype */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS"],
   inlineRequire() {
-    return require(16902) /* fetchForwardReferencedGuilds */.default;
+    return require(16911) /* fetchForwardReferencedGuilds */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "LOGIN_SUCCESS", "LOGIN_RESET", "LOGOUT"],
   inlineRequire() {
-    return require(13971) /* handlePasskeyUpsellShow */.default;
+    return require(13973) /* handlePasskeyUpsellShow */.default;
   },
   neverLoadBeforeConnectionOpen: true,
   hasStoreChangeListeners: true
@@ -144,73 +144,73 @@ set = {
 set = {
   actions: ["AUTHENTICATOR_DELETE", "CURRENT_USER_UPDATE", "MFA_WEBAUTHN_CREDENTIALS_LOADED"],
   inlineRequire() {
-    return require(16904) /* handleAuthenticatorDelete */.default;
+    return require(16913) /* handleAuthenticatorDelete */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN"],
   inlineRequire() {
-    return require(16905) /* prototype */.default;
+    return require(16914) /* prototype */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "MESSAGE_UPDATE", "LOAD_MESSAGES_SUCCESS", "LOAD_MESSAGES_AROUND_SUCCESS", "LOAD_RECENT_MENTIONS_SUCCESS", "LOAD_PINNED_MESSAGES_SUCCESS", "SEARCH_MESSAGES_SUCCESS", "MOD_VIEW_SEARCH_MESSAGES_SUCCESS"],
   inlineRequire() {
-    return require(16908) /* handleReferralMessages */.default;
+    return require(16917) /* handleReferralMessages */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["MEDIA_ENGINE_SET_AUDIO_ENABLED", "AUDIO_INPUT_DETECTED", "AUDIO_SET_DISPLAY_SILENCE_WARNING", "CERTIFIED_DEVICES_SET", "AUDIO_SET_INPUT_DEVICE", "AUDIO_SET_OUTPUT_DEVICE", "MEDIA_ENGINE_DEVICES", "RTC_CONNECTION_STATE", "VOICE_STATE_UPDATES", "MEDIA_ENGINE_SET_GO_LIVE_SOURCE", "MEDIA_ENGINE_SOUNDSHARE_FAILED", "MEDIA_ENGINE_NOISE_CANCELLATION_ERROR", "MEDIA_ENGINE_VOICE_ACTIVITY_DETECTION_ERROR", "MEDIA_ENGINE_VIDEO_FILTER_ERROR", "MEDIA_ENGINE_VIDEO_STATE_CHANGED", "NATIVE_SCREEN_SHARE_PICKER_UPDATE", "NATIVE_SCREEN_SHARE_PICKER_ERROR", "MEDIA_SESSION_JOINED", "RTC_CONNECTION_UPDATE_ID", "RTC_CONNECTION_REMOTE_VIDEO_SINK_WANTS", "REPORT_AV_ERROR", "VIDEO_STREAM_READY_TIMEOUT", "CLEAR_VIDEO_STREAM_READY_TIMEOUT", "RTC_CONNECTION_VIDEO", "STREAM_CLOSE"],
   inlineRequire() {
-    return require(16909) /* setDifference */.default;
+    return require(16918) /* setDifference */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["STREAM_WATCH", "STREAM_START", "STREAM_CREATE", "STREAM_UPDATE", "STREAM_DELETE", "STREAM_CLOSE", "CALL_UPDATE", "CHANNEL_UPDATES", "VOICE_CHANNEL_SELECT", "VOICE_STATE_UPDATES", "CONNECTION_CLOSED", "LOGOUT"],
   inlineRequire() {
-    return require(16931) /* platformShowStreamFull */.default;
+    return require(16940) /* platformShowStreamFull */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: [],
   inlineRequire() {
-    return require(16935) /* experimentStoreUpdateHandler */.default;
+    return require(16944) /* experimentStoreUpdateHandler */.default;
   },
   hasStoreChangeListeners: true
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "CHANNEL_SELECT", "CHANNEL_CREATE", "CHANNEL_DELETE", "CHANNEL_UPDATES", "GUILD_CREATE", "GUILD_UPDATE", "GUILD_DELETE", "LOGOUT", "RELATIONSHIP_ADD", "RELATIONSHIP_REMOVE", "RELATIONSHIP_UPDATE", "THREAD_CREATE", "THREAD_DELETE", "THREAD_UPDATE", "USER_UPDATE"],
   inlineRequire() {
-    return require(16936) /* indexingEnabled */.default;
+    return require(16945) /* indexingEnabled */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["CONNECTION_OPEN_SUPPLEMENTAL", "SAFETY_FLOWS_MODAL_OPEN", "USER_REQUIRED_ACTION_UPDATE"],
   inlineRequire() {
-    return require(16939) /* handleConnectionOpenSupplemental */.default;
+    return require(16948) /* handleConnectionOpenSupplemental */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["USER_APPLICATION_IDENTITY_UPDATE", "USER_APPLICATION_IDENTITY_REMOVE"],
   inlineRequire() {
-    return require(16962) /* handleUserApplicationIdentityGatewayEvent */.default;
+    return require(16971) /* handleUserApplicationIdentityGatewayEvent */.default;
   }
 };
 set = {
   actions: ["APP_STATE_UPDATE"],
   inlineRequire() {
-    return require(16963) /* makeLogLine */.default;
+    return require(16972) /* makeLogLine */.default;
   }
 };
 set = {
   actions: ["POST_CONNECTION_OPEN", "CURRENT_USER_UPDATE", "LOGOUT", "NOTIFICATIONS_SET_SCREEN_DOWNTIME_REMINDER"],
   inlineRequire() {
-    return require(16359) /* scheduleUpcomingWarning */.default;
+    return require(16368) /* scheduleUpcomingWarning */.default;
   },
   hasStoreChangeListeners: true,
   neverLoadBeforeConnectionOpen: true
@@ -218,7 +218,7 @@ set = {
 set = {
   actions: [],
   inlineRequire() {
-    return require(16964) /* isLikelyControl */.default;
+    return require(16973) /* isLikelyControl */.default;
   },
   hasStoreChangeListeners: true,
   loadRightBeforeConnectionOpen: true
@@ -226,14 +226,14 @@ set = {
 set = {
   actions: ["QUESTS_SEND_HEARTBEAT_SUCCESS", "QUESTS_SEND_HEARTBEAT_FAILURE", "QUESTS_ENROLL_SUCCESS", "RUNNING_GAMES_CHANGE", "RUNNING_NON_GAMES_CHANGE", "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS", "STREAM_START", "STREAM_CREATE", "STREAM_CLOSE", "PASSIVE_UPDATE_V2", "VOICE_STATE_UPDATES", "EMBEDDED_ACTIVITY_LAUNCH_SUCCESS", "FRAME_LAUNCH", "FRAME_STOP", "EMBEDDED_ACTIVITY_UPDATE_V2", "QUESTS_PREVIEW_UPDATE_SUCCESS", "QUEST_APPLICATION_START_TIMER"],
   inlineRequire() {
-    return require(16965) /* isQuestProgressable */.default;
+    return require(16974) /* isQuestProgressable */.default;
   },
   neverLoadBeforeConnectionOpen: true
 };
 set = {
   actions: ["ACCOUNT_LINK_AUTHORIZATION_COMPLETED", "OAUTH2_TOKEN_CREATE", "USER_AUTHORIZED_APPS_UPDATE", "APP_STATE_UPDATE"],
   inlineRequire() {
-    return require(16966) /* AccountLinkManagerNative */.default;
+    return require(16975) /* AccountLinkManagerNative */.default;
   },
   loadRightBeforeConnectionOpen: true
 };

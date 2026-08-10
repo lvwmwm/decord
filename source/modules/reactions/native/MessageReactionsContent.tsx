@@ -1,7 +1,7 @@
 // Module ID: 8781
 // Function ID: 8782
 // Name: useReactors
-// Dependencies: [32, 19, 17, 4295, 1372, 1971, 7221, 3929, 676, 21, 4036, 4299, 4303, 712, 589, 3940, 659, 7222, 7223, 5716, 12, 5728, 8782, 4493, 4146, 8783, 5367, 1297, 1416, 9130, 500, 5326, 7409, 12525, 1236, 10199, 4151, 3974, 5360, 12526, 4304, 1474, 4262, 4271, 12527, 1988, 5778, 5755, 12528, 4272, 4273, 1609, 8827, 5397, 5399, 595, 5889, 7243, 7284, 12529, 8008, 2]
+// Dependencies: [32, 19, 17, 4295, 1372, 1971, 7221, 3929, 676, 21, 4036, 4299, 4303, 712, 589, 3940, 659, 7222, 7223, 5716, 12, 5728, 8782, 4493, 4146, 8783, 5367, 1297, 1416, 9130, 500, 5326, 7409, 12527, 1236, 10200, 4151, 3974, 5360, 12528, 4304, 1474, 4262, 4271, 12529, 1988, 5778, 5755, 12530, 4272, 4273, 1609, 8827, 5397, 5399, 595, 5889, 7243, 7284, 12531, 8008, 2]
 // Exports: MessageReactionsContent, MessageReactionsEmpty
 
 // Module 8781 (useReactors)
@@ -121,7 +121,7 @@ function ReactionTab(arg0) {
   let selected;
   ({ reaction, selected } = arg0);
   const tmp = callback4();
-  let obj = require(10199) /* useEmojiColorPalette */;
+  let obj = require(10200) /* useEmojiColorPalette */;
   let burst_colors = reaction.burst_colors;
   if (burst_colors == null) {
     burst_colors = [];
@@ -324,7 +324,7 @@ function EmojiOptionsButton(channelId) {
   const items = [ensureGuildLoaded];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_10.getChannel(channelId), items1);
-  const tmp3 = messageId(12526)(stateFromStores);
+  const tmp3 = messageId(12528)(stateFromStores);
   c2 = tmp3;
   dependencyMap = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3];
@@ -370,11 +370,11 @@ function ReactionTabs(setReactionSelectedIndex) {
     setReactionSelectedIndex(arg0);
   };
   obj[6] = reactionSelectedIndex(3940).MAX_REACTIONS;
-  const items = [callback2(setReactionSelectedIndex(12528), obj), callback2(setReactionSelectedIndex(7409), { outer: true }), ];
+  const items = [callback2(setReactionSelectedIndex(12530), obj), callback2(setReactionSelectedIndex(7409), { outer: true }), ];
   const obj1 = { style: tmp.removeButtonContainer, children: null };
   const obj2 = { style: tmp.emojiTextIdentifier, variant: "eyebrow", color: "text-default", children: null };
   const tmp4 = callback2;
-  const tmp5 = setReactionSelectedIndex(12528);
+  const tmp5 = setReactionSelectedIndex(12530);
   obj2[3] = reactionSelectedIndex(3940).getReactionEmojiName(reactions[reactionSelectedIndex].emoji);
   const items1 = [callback2(reactionSelectedIndex(4299).Text, obj2), ];
   const obj3 = {};

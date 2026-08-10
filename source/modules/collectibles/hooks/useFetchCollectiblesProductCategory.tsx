@@ -1,10 +1,10 @@
-// Module ID: 10129
-// Function ID: 10130
+// Module ID: 10130
+// Function ID: 10131
 // Name: useFetchCollectiblesProductCategory
 // Dependencies: [32, 7001, 8281, 647, 2]
 // Exports: useFetchCollectiblesProductCategory
 
-// Module 10129 (useFetchCollectiblesProductCategory)
+// Module 10130 (useFetchCollectiblesProductCategory)
 import _slicedToArray from "_slicedToArray";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 

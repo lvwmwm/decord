@@ -1,10 +1,10 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 15570
+// Function ID: 15571
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 8570, 4303, 712, 5783, 8382, 1236, 9678, 15563, 15564, 2]
+// Dependencies: [19, 21, 8570, 4303, 712, 5783, 8382, 1236, 9678, 15571, 15572, 2]
 // Exports: default
 
-// Module 15562 (ICYMICustomScoresModal)
+// Module 15570 (ICYMICustomScoresModal)
 import "noop";
 import jsxProd from "jsxProd";
 import createNativeStackNavigator from "createNativeStackNavigator";
@@ -52,7 +52,7 @@ export default function ICYMICustomScoresModal() {
       return obj;
     },
     getComponent() {
-      return lib(15563).default;
+      return lib(15571).default;
     }
   };
   const items = [
@@ -65,7 +65,7 @@ export default function ICYMICustomScoresModal() {
         return obj;
       },
       getComponent() {
-        return lib(15564).default;
+        return lib(15572).default;
       }
     })
   ];

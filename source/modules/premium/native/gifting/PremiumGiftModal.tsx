@@ -1,10 +1,10 @@
-// Module ID: 10034
-// Function ID: 10035
+// Module ID: 10035
+// Function ID: 10036
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1903, 21, 7374, 4303, 712, 589, 9356, 1236, 5270, 10035, 10111, 10114, 10119, 2380, 10158, 10033, 5748, 5728, 5716, 514, 4509, 3960, 9579, 9611, 10162, 5783, 2]
+// Dependencies: [32, 19, 1903, 21, 7374, 4303, 712, 589, 9356, 1236, 5270, 10036, 10112, 10115, 10120, 2380, 10159, 10034, 5748, 5728, 5716, 514, 4509, 3960, 9579, 9611, 10163, 5783, 2]
 // Exports: default
 
-// Module 10034 (PremiumGiftModal)
+// Module 10035 (PremiumGiftModal)
 import _slicedToArray from "_slicedToArray";
 import context from "context";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -169,7 +169,7 @@ export default function PremiumGiftModal(analyticsLocations) {
       return callback(_undefined(_undefined2[16]), {
         currentProgress: currentProgress.currentProgress,
         onSendGift(arg0) {
-          let obj = callback(10033);
+          let obj = callback(10034);
           obj = { analyticsLocations: null };
           const items = [callback2(5748).GIFTING_BADGE_POST_PURCHASE];
           obj[0] = items;
@@ -194,7 +194,7 @@ export default function PremiumGiftModal(analyticsLocations) {
       obj8[6] = order;
       const obj9 = { currentStep: null, children: null };
       obj9[0] = tmp21[0];
-      let tmpResult = tmp(10162);
+      let tmpResult = tmp(10163);
       const obj10 = { initialRouteName: null, screens: null, onStateChange: null };
       obj10[0] = initialRoute;
       obj10[1] = obj2;

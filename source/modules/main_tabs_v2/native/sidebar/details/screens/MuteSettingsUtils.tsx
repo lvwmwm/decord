@@ -1,10 +1,10 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9820
+// Function ID: 9821
 // Name: getMuteSettingLabel
-// Dependencies: [3931, 1372, 1891, 3938, 4499, 1903, 676, 685, 1236, 4494, 7224, 5262, 5257, 9820, 2]
+// Dependencies: [3931, 1372, 1891, 3938, 4499, 1903, 676, 685, 1236, 4494, 7224, 5262, 5257, 9821, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 9819 (getMuteSettingLabel)
+// Module 9820 (getMuteSettingLabel)
 import storeThread from "storeThread";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -79,7 +79,7 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
   let onOptionPress;
   ({ guildId, onOptionPress } = arg0);
   ({ channelId, muteDurationSeconds } = arg0);
-  const muteSettings = importAll(9820).getMuteSettings(muteDurationSeconds);
+  const muteSettings = importAll(9821).getMuteSettings(muteDurationSeconds);
   const channel = store.getChannel(channelId);
   guild = guild.getGuild(guildId);
   if (null != onOptionPress) {

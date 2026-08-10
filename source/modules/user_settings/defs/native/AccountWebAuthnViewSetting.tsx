@@ -1,9 +1,9 @@
-// Module ID: 14044
-// Function ID: 14045
+// Module ID: 14046
+// Function ID: 14047
 // Name: route
-// Dependencies: [19, 13965, 1903, 8082, 676, 4642, 1236, 5831, 589, 10446, 13968, 2]
+// Dependencies: [19, 13967, 1903, 8082, 676, 4642, 1236, 5831, 589, 10447, 13970, 2]
 
-// Module 14044 (route)
+// Module 14046 (route)
 import noop from "noop";
 import hasFetchedCredentials from "hasFetchedCredentials";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -57,7 +57,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(13968) /* UserSettingsWebAuthn */.default;
+    return require(13970) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

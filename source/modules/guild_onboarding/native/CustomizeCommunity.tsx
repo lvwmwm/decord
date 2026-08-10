@@ -1,10 +1,10 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11023
+// Function ID: 11024
 // Name: EmptyCustomizeCommunity
-// Dependencies: [19, 17, 5176, 1891, 4315, 4124, 5242, 5243, 676, 1906, 4500, 21, 4303, 712, 5236, 4011, 4239, 589, 11023, 11024, 1297, 1236, 4299, 5249, 5355, 5726, 5748, 1609, 11025, 5241, 5253, 5247, 5360, 1416, 1351, 4005, 4036, 4304, 11026, 4271, 5365, 1988, 4846, 5718, 5356, 2]
+// Dependencies: [19, 17, 5176, 1891, 4315, 4124, 5242, 5243, 676, 1906, 4500, 21, 4303, 712, 5236, 4011, 4239, 589, 11024, 11025, 1297, 1236, 4299, 5249, 5355, 5726, 5748, 1609, 11026, 5241, 5253, 5247, 5360, 1416, 1351, 4005, 4036, 4304, 11027, 4271, 5365, 1988, 4846, 5718, 5356, 2]
 // Exports: default
 
-// Module 11022 (EmptyCustomizeCommunity)
+// Module 11023 (EmptyCustomizeCommunity)
 import registerAsset from "registerAsset";
 import get_ActivityIndicator from "initialize";
 import getEmojiToGroupId from "getEmojiToGroupId";
@@ -37,7 +37,7 @@ function EmptyCustomizeCommunity(setTab) {
   const items = [handleConnectionOpen];
   importDefault = obj1.useStateFromStores(items, () => guildId.getGuildId());
   obj = { style: tmp.emptyContainer, children: null };
-  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4239)()) ? 11023 : 11024) };
+  obj = { style: tmp.emptyContainerImage, source: importDefault(obj.isThemeDark(importDefault(4239)()) ? 11024 : 11025) };
   const items1 = [closure_16(closure_5, obj), , ];
   obj1 = { style: tmp.emptyContainerHeader, children: null };
   const intl = tmp2(1236).intl;
@@ -500,7 +500,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11025)(guildId);
+  const tmp7 = stateFromStores(11026)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);

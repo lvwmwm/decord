@@ -1,10 +1,10 @@
-// Module ID: 15098
-// Function ID: 15099
+// Module ID: 15100
+// Function ID: 15101
 // Name: RegisterPhoneOrEmailInput
-// Dependencies: [19, 8471, 15081, 21, 1480, 15099, 589, 8490, 691, 1236, 8489, 2]
+// Dependencies: [19, 8471, 15083, 21, 1480, 15101, 589, 8490, 691, 1236, 8489, 2]
 // Exports: RegisterPhoneOrEmailInput
 
-// Module 15098 (RegisterPhoneOrEmailInput)
+// Module 15100 (RegisterPhoneOrEmailInput)
 import noop from "noop";
 import handleSetLocationMetadata from "handleSetLocationMetadata";
 import useRegistrationUIStore from "useRegistrationUIStore";

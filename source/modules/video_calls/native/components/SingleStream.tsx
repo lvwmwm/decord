@@ -1,10 +1,10 @@
-// Module ID: 10907
-// Function ID: 10908
+// Module ID: 10908
+// Function ID: 10909
 // Name: SingleStream
-// Dependencies: [19, 9738, 21, 10682, 10692, 4497, 2]
+// Dependencies: [19, 9739, 21, 10683, 10693, 4497, 2]
 // Exports: default
 
-// Module 10907 (SingleStream)
+// Module 10908 (SingleStream)
 import "noop";
 import VoiceChatDrawerState from "VoiceChatDrawerState";
 import { jsx } from "jsxProd";
@@ -18,7 +18,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/video_calls/nat
 export default function SingleStream(channel) {
   channel = channel.channel;
   const obj = { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null };
-  obj[1] = channel(10692).ResizeMode.CONTAIN;
+  obj[1] = channel(10693).ResizeMode.CONTAIN;
   obj[2] = function onSingleTap() {
     callback();
   };
@@ -28,5 +28,5 @@ export default function SingleStream(channel) {
   };
   obj[4] = channel.participant;
   obj[5] = { flex: 1 };
-  return jsx(importDefault(10682), { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null });
+  return jsx(importDefault(10683), { gestureEnabled: true, resizeMode: null, onSingleTap: null, onDoubleTap: null, participant: null, style: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 14855
-// Function ID: 14856
+// Module ID: 14857
+// Function ID: 14858
 // Name: CollectiblesShopHeaderTitle
-// Dependencies: [19, 17, 1903, 678, 676, 5161, 8785, 21, 4303, 712, 11525, 4299, 1236, 589, 9423, 10460, 7000, 5748, 5363, 4271, 10150, 1988, 698, 11165, 5164, 4509, 8783, 10138, 7751, 8767, 8598, 14856, 1480, 2]
+// Dependencies: [19, 17, 1903, 678, 676, 5161, 8785, 21, 4303, 712, 11526, 4299, 1236, 589, 9423, 10461, 7000, 5748, 5363, 4271, 10151, 1988, 698, 11166, 5164, 4509, 8783, 10139, 7751, 8767, 8598, 14858, 1480, 2]
 // Exports: default
 
-// Module 14855 (CollectiblesShopHeaderTitle)
+// Module 14857 (CollectiblesShopHeaderTitle)
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "QUICK_SWITCHER";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -21,7 +21,7 @@ const require = arg1;
 function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(11525) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(11526) /* ShopIcon */.ShopIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   if (currentScreen.currentScreen === constants.ORBS) {
     const intl2 = tmp5(1236).intl;

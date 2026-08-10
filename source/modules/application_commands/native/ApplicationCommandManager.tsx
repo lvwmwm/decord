@@ -1,9 +1,9 @@
-// Module ID: 11790
-// Function ID: 11791
+// Module ID: 11791
+// Function ID: 11792
 // Name: addGameMention
-// Dependencies: [32, 4640, 7239, 676, 4738, 1604, 11383, 11382, 7237, 6980, 9537, 6982, 9995, 1935, 8357, 4168, 1607, 11542, 12, 11418, 4291, 11544, 11384, 4272, 4498, 9915, 2]
+// Dependencies: [32, 4640, 7239, 676, 4738, 1604, 11384, 11383, 7237, 6980, 9537, 6982, 9996, 1935, 8357, 4168, 1607, 11543, 12, 11419, 4291, 11545, 11385, 4272, 4498, 9916, 2]
 
-// Module 11790 (addGameMention)
+// Module 11791 (addGameMention)
 import _slicedToArray from "_slicedToArray";
 import { DraftType } from "handleChanged";
 import handleInit from "handleInit";
@@ -343,7 +343,7 @@ class ApplicationCommandManager {
         ruleId: "commandOptionParserRuleId",
         type: obj(outer1_3[6]).ChatInputNodeType.COMMAND_OPTION,
         matchFunction(arg0, arg1) {
-          return lib(11382).getMatchedOptions(arg0, arg1);
+          return lib(11383).getMatchedOptions(arg0, arg1);
         },
         style() {
           const styles = lib.styles;
@@ -358,7 +358,7 @@ class ApplicationCommandManager {
         ruleId: "commandOptionValueParserRuleId",
         type: obj(outer1_3[6]).ChatInputNodeType.COMMAND_OPTION_WITH_VALUE,
         matchFunction(arg0, arg1) {
-          return lib(11382).getMatchedOptionsWithValue(arg0, arg1);
+          return lib(11383).getMatchedOptionsWithValue(arg0, arg1);
         },
         style() {
           const styles = lib.styles;
@@ -492,7 +492,7 @@ class ApplicationCommandManager {
         ruleId: "silentHighlightRuleId",
         type: obj(outer1_3[6]).ChatInputNodeType.SILENT_HIGHLIGHT,
         matchFunction(arg0) {
-          return lib(11382).getSilentHighlightNodes(arg0);
+          return lib(11383).getSilentHighlightNodes(arg0);
         },
         style() {
           const styles = lib.styles;
@@ -507,7 +507,7 @@ class ApplicationCommandManager {
         ruleId: "silentHighlightRuleId",
         type: obj(outer1_3[6]).ChatInputNodeType.SILENT_HIGHLIGHT,
         matchFunction(arg0) {
-          return lib(11382).getSilentHighlightNodes(arg0);
+          return lib(11383).getSilentHighlightNodes(arg0);
         },
         style() {
           const styles = lib.styles;
@@ -552,7 +552,7 @@ class ApplicationCommandManager {
         ruleId: "gameMentionInputRuleId",
         type: obj(outer1_3[6]).ChatInputNodeType.GAME_MENTION_INPUT,
         matchFunction(arr) {
-          return lib(11382).getGameMentionInputNodes(arr);
+          return lib(11383).getGameMentionInputNodes(arr);
         },
         style() {
           const styles = lib.styles;
@@ -1122,8 +1122,8 @@ prototype["getMentionGames"] = function getMentionGames() {
 };
 prototype["buildGameMentionNode"] = function buildGameMentionNode(game) {
   const styles = this.styles;
-  const obj = { type: require(11383) /* addRule */.ChatInputNodeType.GAME_HIGHLIGHT, style: styles.gameMention(), deleteNodeOnBackspace: true, editDisabled: true };
-  const merged = Object.assign(require(11382) /* findGameMentionTokens */.buildGameMentionResult(game));
+  const obj = { type: require(11384) /* addRule */.ChatInputNodeType.GAME_HIGHLIGHT, style: styles.gameMention(), deleteNodeOnBackspace: true, editDisabled: true };
+  const merged = Object.assign(require(11383) /* findGameMentionTokens */.buildGameMentionResult(game));
   return obj;
 };
 prototype["setPreferredOptionValue"] = function setPreferredOptionValue(id, name, displayText) {
@@ -1236,7 +1236,7 @@ prototype["mergePropsAndUpdate"] = function mergePropsAndUpdate(editId) {
       preferredCommandType = obj1;
       preferredCommandType = dependencyMap;
       preferredCommandType = dependencyMap;
-      const obj8 = obj1(11542);
+      const obj8 = obj1(11543);
       preferredCommandType = obj8;
       preferredCommandType = activeCommand;
       self.optionValidationResults = obj8.getValidationResults(activeCommand, self.optionValues, editId.channel.guild_id, editId.channel.id, false);
@@ -1654,7 +1654,7 @@ prototype["mergePropsAndUpdate"] = function mergePropsAndUpdate(editId) {
       let tmp39 = obj1;
       let tmp40 = dependencyMap;
       let tmp41 = dependencyMap;
-      obj3 = obj1(11382);
+      obj3 = obj1(11383);
       let hasItem = 0 !== obj3.findGameMentionTokens(editId.text, tmp36[1].name, mapped).locations.length;
       if (!hasItem) {
         let text2 = editId.text;

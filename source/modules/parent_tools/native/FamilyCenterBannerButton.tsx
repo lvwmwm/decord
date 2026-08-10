@@ -1,10 +1,10 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14123
+// Function ID: 14124
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [19, 17, 1903, 6996, 6997, 676, 4516, 21, 4303, 712, 7337, 4001, 1236, 11323, 647, 14122, 698, 14123, 4271, 14124, 1988, 4712, 4714, 12230, 2284, 14127, 4509, 1467, 11320, 1605, 4861, 13215, 2]
+// Dependencies: [19, 17, 1903, 6996, 6997, 676, 4516, 21, 4303, 712, 7337, 4001, 1236, 11324, 647, 14124, 698, 14125, 4271, 14126, 1988, 4712, 4714, 12232, 2284, 14129, 4509, 1467, 11321, 1605, 4861, 13217, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 14121 (FamilyCenterTeenQRCodeButtonInner)
+// Module 14123 (FamilyCenterTeenQRCodeButtonInner)
 import ConnectGuardianBottomSheet from "ConnectGuardianBottomSheet";
 import { View } from "shareGuardianConnectLink";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -148,8 +148,8 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
         tmp4 = null;
         if (tmpResult.isDiscordHostname(hostname)) {
           if (null !== pathname.match(closure_8)) {
-            const result = handleQrCodeScanSucess(11320).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
-            const obj4 = handleQrCodeScanSucess(11320);
+            const result = handleQrCodeScanSucess(11321).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
+            const obj4 = handleQrCodeScanSucess(11321);
           }
           tmp4 = tmp6;
         }

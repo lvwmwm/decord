@@ -1,10 +1,10 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12096
+// Function ID: 12097
 // Name: EmptyState
-// Dependencies: [5, 32, 19, 17, 12073, 21, 4303, 712, 12096, 4299, 1236, 1480, 5229, 1609, 12086, 4202, 5270, 5991, 1297, 12091, 2]
+// Dependencies: [5, 32, 19, 17, 12074, 21, 4303, 712, 12097, 4299, 1236, 1480, 5229, 1609, 12087, 4202, 5270, 5991, 1297, 12092, 2]
 // Exports: default
 
-// Module 12095 (EmptyState)
+// Module 12096 (EmptyState)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import HubEmailConnectionGuildSelectRow from "HubEmailConnectionGuildSelectRow";
@@ -23,7 +23,7 @@ const require = arg1;
 function EmptyState() {
   const tmp = createCacheKey();
   let obj = { style: tmp.emptyWrapper, children: null };
-  obj = { style: tmp.emptyStateImage, source: importDefault(12096) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(12097) };
   const items = [callback2(closure_7, obj), ];
   obj = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

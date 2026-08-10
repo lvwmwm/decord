@@ -1,10 +1,10 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 15928
+// Function ID: 15929
 // Name: ChannelSettingsEditForumTag
 // Dependencies: [32, 19, 17, 5176, 1372, 1906, 21, 4303, 712, 1480, 589, 4299, 1236, 8406, 6008, 4712, 5767, 5374, 4846, 8637, 5360, 1416, 7655, 1297, 5996, 5768, 4643, 2]
 // Exports: default
 
-// Module 15919 (ChannelSettingsEditForumTag)
+// Module 15928 (ChannelSettingsEditForumTag)
 import _slicedToArray from "_slicedToArray";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import { View } from "TableRowInner";
@@ -235,7 +235,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "sa" });
+      setOptions({ headerRight: "Promise" });
     }
   }, items5);
   obj = { style: tmp.container, children: null };

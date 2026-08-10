@@ -1,10 +1,10 @@
-// Module ID: 12108
-// Function ID: 12109
+// Module ID: 12109
+// Function ID: 12110
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 1961, 676, 21, 4303, 712, 1609, 589, 11678, 12109, 1297, 1236, 4299, 7967, 11679, 12110, 9065, 12111, 2]
+// Dependencies: [19, 17, 1961, 676, 21, 4303, 712, 1609, 589, 11679, 12110, 1297, 1236, 4299, 7967, 11680, 12111, 9065, 12112, 2]
 // Exports: default
 
-// Module 12108 (GuildDirectoryEmpty)
+// Module 12109 (GuildDirectoryEmpty)
 import "set";
 import get_ActivityIndicator from "showInstantInviteActionSheet";
 import comparator from "comparator";
@@ -41,14 +41,14 @@ export default function GuildDirectoryEmpty(guild) {
   let obj = guild(589);
   const items = [comparator];
   dependencyMap = obj.useStateFromStores(items, () => outer1_5.getChannels(guild.id));
-  let obj1 = guild(11678);
+  let obj1 = guild(11679);
   obj = { contentContainerStyle: items1, children: null };
   items1 = [tmp.container, ];
   obj = { paddingBottom: channel(1609)().bottom + 16 };
   items1[1] = obj;
   obj1 = { source: null, style: null };
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
-  obj1[0] = channel(12109);
+  obj1[0] = channel(12110);
   obj1[1] = tmp.header;
   const items2 = [callback(closure_3, obj1), , , , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", children: null };
@@ -64,11 +64,11 @@ export default function GuildDirectoryEmpty(guild) {
     const obj5 = { style: null, onPress: null, iconSource: null, title: null };
     obj5[0] = tmp.ctaContainer;
     obj5[1] = function onPress() {
-      let obj = channel(11679);
+      let obj = channel(11680);
       obj = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
       return obj.open(obj);
     };
-    obj5[2] = tmp2(12110);
+    obj5[2] = tmp2(12111);
     const intl3 = tmp4(1236).intl;
     obj5[3] = intl3.string(tmp4(1236).t.hyK15i);
     tmp8Result = tmp8(tmp4(7967).FormCTA, obj5);
@@ -82,7 +82,7 @@ export default function GuildDirectoryEmpty(guild) {
     iconSource: null,
     title: null
   };
-  obj6[2] = channel(12111);
+  obj6[2] = channel(12112);
   const intl4 = tmp4(1236).intl;
   obj6[3] = intl4.string(guild(1236).t.L4bwJ9);
   items2[4] = callback(guild(7967).FormCTA, obj6);

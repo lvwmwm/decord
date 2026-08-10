@@ -1,10 +1,10 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14797
+// Function ID: 14798
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 4005, 4151, 8956, 4712, 11972, 12113, 9562, 4714, 5768, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 4299, 4005, 4151, 8956, 4712, 11973, 12114, 9562, 4714, 5768, 2]
 // Exports: default
 
-// Module 14795 (UserSettingsDesignSystemTabs)
+// Module 14797 (UserSettingsDesignSystemTabs)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
@@ -94,13 +94,13 @@ export default function UserSettingsDesignSystemTabs() {
   let obj2 = first(4151);
   items1[1] = obj2.hexWithOpacity(token, 0);
   obj = { style: createCacheKey().container, onLayout: callback, children: null };
-  const items2 = [callback2(first(11972).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  const items2 = [callback2(first(11973).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20Result = first2;
   if (first2) {
     obj = { state: null, colors: null };
     obj[0] = segmentedControlState;
     obj[1] = items1;
-    tmp20Result = tmp20(first(12113), obj);
+    tmp20Result = tmp20(first(12114), obj);
   }
   obj1 = { children: null };
   obj2 = { spacing: 24, children: null };

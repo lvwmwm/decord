@@ -1,10 +1,10 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16969
+// Function ID: 16970
 // Name: SENT_TIMESTAMP_FORMATTER
 // Dependencies: [1236, 2546, 7052, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 16960 (SENT_TIMESTAMP_FORMATTER)
+// Module 16969 (SENT_TIMESTAMP_FORMATTER)
 function SENT_TIMESTAMP_FORMATTER() {
   const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };
   const intl = require(1236) /* getSystemLocale */.intl;

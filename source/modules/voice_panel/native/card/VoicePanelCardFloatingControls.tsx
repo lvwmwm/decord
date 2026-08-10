@@ -1,9 +1,9 @@
-// Module ID: 16218
-// Function ID: 16219
+// Module ID: 16227
+// Function ID: 16228
 // Name: StreamIcon
-// Dependencies: [19, 17, 4295, 1371, 4322, 4375, 11645, 11643, 11648, 676, 4321, 21, 4036, 1297, 4303, 712, 1348, 11644, 16174, 16219, 10944, 16220, 16172, 10853, 9178, 5781, 7793, 1236, 9179, 4713, 16170, 4483, 4367, 10600, 16101, 16221, 16222, 589, 16204, 8009, 16223, 4013, 4700, 5728, 8783, 9190, 4533, 9236, 4299, 9252, 12210, 16147, 2]
+// Dependencies: [19, 17, 4295, 1371, 4322, 4375, 11646, 11644, 11649, 676, 4321, 21, 4036, 1297, 4303, 712, 1348, 11645, 16183, 16228, 10945, 16229, 16181, 10854, 9178, 5781, 7793, 1236, 9179, 4713, 16179, 4483, 4367, 10601, 16110, 16230, 16231, 589, 16213, 8009, 16232, 4013, 4700, 5728, 8783, 9190, 4533, 9236, 4299, 9252, 12212, 16156, 2]
 
-// Module 16218 (StreamIcon)
+// Module 16227 (StreamIcon)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "dismissPanel";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,7 +33,7 @@ const require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
   let controlsSpecs;
-  controlsSpecs = importAllResult.useContext(importDefault(11644)).controlsSpecs;
+  controlsSpecs = importAllResult.useContext(importDefault(11645)).controlsSpecs;
   let obj = controlsSpecs(4036);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === outer1_11.HIDDEN;
@@ -54,13 +54,13 @@ function StreamIcon(voicePlatform) {
   fn.__workletHash = 3270040588948;
   fn.__initData = closure_23;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let source = importDefault(16174);
+  let source = importDefault(16183);
   if (voicePlatform === constants2.XBOX) {
-    source = tmp(16219);
+    source = tmp(16228);
   } else if (voicePlatform === tmp6.MOBILE) {
-    source = tmp(10944);
+    source = tmp(10945);
   } else if (voicePlatform === tmp6.QUEST) {
-    source = tmp(16220);
+    source = tmp(16229);
   }
   const style = [callback2(importDefault(1348)("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
   return callback(closure_19, { source, style });
@@ -69,19 +69,19 @@ function AnimatedLabelIcon(icon) {
   icon = icon.icon;
   const tmp3 = callback2(importDefault(1348)("VoicePanelCardFloatingControls"));
   const type = icon.type;
-  if (require(16172) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
+  if (require(16181) /* useVoicePanelCardUserStateIcons */.VoicePanelCardUserStateIconType.STREAM_ICON === type) {
     let obj = { voicePlatform: null };
     obj[0] = icon.voicePlatform;
     return callback(StreamIcon, obj);
-  } else if (tmp4(16172).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp4(16181).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: null, hitSlop: 12, onPress: null, children: null };
     obj[0] = tmp3.speakerMuteIcon;
     obj[2] = icon.onPress;
     const obj1 = { style: null };
     obj1[0] = tmp3.iconWithoutBackground;
-    obj[3] = callback(tmp4(10853).VoiceXIcon, obj1);
+    obj[3] = callback(tmp4(10854).VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (tmp4(16172).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp4(16181).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: null, onPress: null, children: null };
     obj2[0] = tmp3.iconContainer;
     obj2[1] = icon.onPress;
@@ -90,7 +90,7 @@ function AnimatedLabelIcon(icon) {
     obj3[1] = icon.videoIconState;
     obj2[2] = callback(tmp4(9178).VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (tmp4(16172).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp4(16181).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.iconContainer;
     const obj5 = { onPress: null, hitSlop: 12, children: null };
@@ -101,7 +101,7 @@ function AnimatedLabelIcon(icon) {
     obj5[2] = callback(tmp4(9178).MuteDeafenIcon, obj6);
     obj4[1] = callback(Pressable, obj5);
     return callback(tmp(5781), obj4);
-  } else if (tmp4(16172).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+  } else if (tmp4(16181).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: null, onPress: null, children: null };
     obj[0] = tmp3.iconContainer;
     obj[1] = icon.onPress;
@@ -157,7 +157,7 @@ let closure_27 = importAllResult.memo((participant) => {
   controlsHidden = participant.controlsHidden;
   let guildId;
   ({ isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(11644)).guildId;
+  guildId = importAllResult.useContext(guildId(11645)).guildId;
   let obj = controlsHidden(4036);
   const fn = function n() {
     const value = controlsHidden.get();
@@ -204,13 +204,13 @@ let closure_27 = importAllResult.memo((participant) => {
     }
   }, items);
   obj = { icon: null, onPress: null, style: null, layout: null, accessibilityLabel: null };
-  obj[0] = guildId(16221);
+  obj[0] = guildId(16230);
   obj[1] = callback;
   obj[2] = animatedStyle;
   obj[3] = layout;
   const tmp3 = closure_16;
-  const tmp4 = guildId(16101);
-  const result = controlsHidden(16170).isStableActivityParticipant(participant);
+  const tmp4 = guildId(16110);
+  const result = controlsHidden(16179).isStableActivityParticipant(participant);
   const intl = controlsHidden(1236).intl;
   const string = intl.string;
   const t = controlsHidden(1236).t;

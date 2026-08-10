@@ -1,10 +1,10 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16373
+// Function ID: 16374
 // Name: DEFAULT_EXPIRATION_DAYS
-// Dependencies: [1372, 3938, 7758, 4002, 1236, 9877, 709, 9551, 2]
+// Dependencies: [1372, 3938, 7758, 4002, 1236, 9878, 709, 9551, 2]
 // Exports: acceptFriendInvite, revokeAllFriendInvites
 
-// Module 16364 (DEFAULT_EXPIRATION_DAYS)
+// Module 16373 (DEFAULT_EXPIRATION_DAYS)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 
@@ -20,7 +20,7 @@ export const revokeAllFriendInvites = function revokeAllFriendInvites() {
     obj = { key: "TOAST_FRIEND_INVITES_REVOKED", content: null, icon: null };
     const intl = callback(1236).intl;
     obj[1] = intl.string(callback(1236).t.jSHEOQ);
-    obj[2] = callback2(9877);
+    obj[2] = callback2(9878);
     obj.open(obj);
   });
 };

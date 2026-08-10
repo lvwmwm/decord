@@ -1,10 +1,10 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9919
+// Function ID: 9920
 // Name: MediaPostThumbnailActionSheet
 // Dependencies: [19, 17, 1369, 21, 4303, 712, 1609, 5397, 5399, 4299, 1236, 1297, 4714, 2]
 // Exports: default
 
-// Module 9918 (MediaPostThumbnailActionSheet)
+// Module 9919 (MediaPostThumbnailActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

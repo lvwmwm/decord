@@ -1,8 +1,8 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 12087
+// Function ID: 12088
 // Dependencies: [5, 676, 5127, 503, 1385, 530, 709, 2]
 
-// Module 12086
+// Module 12087
 import sendRequest from "sendRequest";
 import { Endpoints } from "ME";
 

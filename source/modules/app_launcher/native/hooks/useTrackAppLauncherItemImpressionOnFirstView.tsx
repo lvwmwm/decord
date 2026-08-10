@@ -1,10 +1,10 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11488
+// Function ID: 11489
 // Name: useTrackAppLauncherItemImpressionOnFirstView
 // Dependencies: [19, 9548, 1481, 9349, 503, 2]
 // Exports: useTrackAppLauncherItemImpressionOnFirstView
 
-// Module 11487 (useTrackAppLauncherItemImpressionOnFirstView)
+// Module 11488 (useTrackAppLauncherItemImpressionOnFirstView)
 import noop from "noop";
 
 const require = arg1;

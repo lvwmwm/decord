@@ -1,10 +1,10 @@
-// Module ID: 16456
-// Function ID: 16457
+// Module ID: 16465
+// Function ID: 16466
 // Name: setIncomingRingtone
 // Dependencies: [17, 2]
 // Exports: setIncomingRingtone
 
-// Module 16456 (setIncomingRingtone)
+// Module 16465 (setIncomingRingtone)
 import { NativeModules } from "get ActivityIndicator";
 
 const result = require("set").fileFinishedImporting("modules/holidays/setIncomingRingtone.android.tsx");

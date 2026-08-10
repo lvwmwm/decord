@@ -1,10 +1,10 @@
-// Module ID: 10225
-// Function ID: 10226
+// Module ID: 10226
+// Function ID: 10227
 // Name: retrySendMessage
-// Dependencies: [4296, 6917, 9994, 4850, 8358, 2]
+// Dependencies: [4296, 6917, 9995, 4850, 8358, 2]
 // Exports: default
 
-// Module 10225 (retrySendMessage)
+// Module 10226 (retrySendMessage)
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING";
 
 let result = require("_executeCommand").fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
@@ -22,8 +22,8 @@ export default function retrySendMessage(id, id2, arr) {
   importDefault(6917).deleteMessage(id.id, id2.id, true);
   if (id2.isCommandType()) {
     if (tmp17) {
-      _require(9994).retryCommandMessage(id2, id, obj);
-      const obj6 = _require(9994);
+      _require(9995).retryCommandMessage(id2, id, obj);
+      const obj6 = _require(9995);
     }
     tmp17 = null != id2.interactionData && null != obj.applicationId;
   } else {

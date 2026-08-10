@@ -1,8 +1,8 @@
-// Module ID: 15710
-// Function ID: 15711
-// Dependencies: [19, 8396, 21, 15709, 15704, 1348, 8598, 1236, 7751, 14244, 2]
+// Module ID: 15718
+// Function ID: 15719
+// Dependencies: [19, 8396, 21, 15717, 15712, 1348, 8598, 1236, 7751, 14246, 2]
 
-// Module 15710
+// Module 15718
 import importAllResult from "noop";
 import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations";
 import { jsx } from "jsxProd";
@@ -13,7 +13,7 @@ const memoResult = importAllResult.memo((searchContext) => {
   searchContext = searchContext.searchContext;
   let validOrderedFilterTokens;
   let dependencyMap;
-  let obj = searchContext(15709);
+  let obj = searchContext(15717);
   validOrderedFilterTokens = obj.useValidOrderedFilterTokens(searchContext);
   const items = [searchContext, validOrderedFilterTokens];
   const memo = importAllResult.useMemo(() => validOrderedFilterTokens.map((searchTokenType) => {
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo((searchContext) => {
       str = "md";
     }
     obj.size = str;
-    obj.icon = outer1_5(searchContext(14244).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
+    obj.icon = outer1_5(searchContext(14246).FiltersHorizontalIcon, { size: "sm", color: "redesign-button-tertiary-text" });
     return outer1_5(searchContext(7751).IconButton, obj);
   };
   return jsx(searchContext(8598).ContextMenu, { items: memo, align: "below", title: null, keyboardShouldPersistTaps: "handled", children: null });

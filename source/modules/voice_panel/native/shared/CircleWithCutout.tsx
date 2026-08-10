@@ -1,9 +1,9 @@
-// Module ID: 16256
-// Function ID: 16257
+// Module ID: 16265
+// Function ID: 16266
 // Name: getBadgeLeft
-// Dependencies: [19, 17, 21, 10669, 7835, 2]
+// Dependencies: [19, 17, 21, 10670, 7835, 2]
 
-// Module 16256 (getBadgeLeft)
+// Module 16265 (getBadgeLeft)
 import { PixelRatio } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import importAllResult from "noop";
@@ -40,9 +40,9 @@ const memoResult = require("noop").memo(function CircleWithCutout(arg0) {
     const result1 = badgeRadius * num;
   }
   const result2 = 2 * result;
-  let obj = require(10669) /* CircleWithCutout */;
+  let obj = require(10670) /* CircleWithCutout */;
   const cutoutCenterX = obj.getCutoutCenterX(result, cutoutPositionInDegrees);
-  let obj1 = require(10669) /* CircleWithCutout */;
+  let obj1 = require(10670) /* CircleWithCutout */;
   const cutoutCenterY = obj1.getCutoutCenterY(result, cutoutPositionInDegrees);
   if (alignBadgeEdgeWithCircleEdge) {
     alignBadgeEdgeWithCircleEdge = null != result1;

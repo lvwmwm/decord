@@ -1,10 +1,10 @@
-// Module ID: 16009
-// Function ID: 16010
+// Module ID: 16018
+// Function ID: 16019
 // Name: CatEarsBackdrop
-// Dependencies: [19, 17, 678, 5398, 1369, 21, 4303, 712, 1474, 5399, 1609, 4036, 16010, 4299, 1236, 16011, 7000, 5748, 5397, 16013, 6027, 4714, 2]
+// Dependencies: [19, 17, 678, 5398, 1369, 21, 4303, 712, 1474, 5399, 1609, 4036, 16019, 4299, 1236, 16020, 7000, 5748, 5397, 16022, 6027, 4714, 2]
 // Exports: default
 
-// Module 16009 (CatEarsBackdrop)
+// Module 16018 (CatEarsBackdrop)
 import metadata from "metadata";
 import get_ActivityIndicator from "QUICK_SWITCHER";
 import { CollectiblesMobileShopScreen as closure_6 } from "items";
@@ -48,7 +48,7 @@ function CatEarsBackdrop() {
   items1[1] = obj1;
   const obj2 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const obj3 = { uri: null };
-  obj3[0] = top(16010);
+  obj3[0] = top(16019);
   obj2[0] = obj3;
   obj2[1] = tmp.mascotImage;
   obj[1] = callback(closure_4, obj2);
@@ -99,7 +99,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   let importDefault;
   let dependencyMap;
   const tmp = createCacheKey();
-  let obj = markAsDismissed(16011);
+  let obj = markAsDismissed(16020);
   const profileFramesMarketing = obj.useProfileFramesMarketing("CollectiblesMobileAnnouncementActionSheet");
   const intl = markAsDismissed(1236).intl;
   const string = intl.string;
@@ -151,7 +151,7 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   obj = { style: tmp.container, children: null };
   const obj1 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(16013);
+  obj2[0] = importDefault(16022);
   obj1[0] = obj2;
   obj1[1] = tmp.framePreviewImage;
   const items3 = [callback(closure_4, obj1), , , ];

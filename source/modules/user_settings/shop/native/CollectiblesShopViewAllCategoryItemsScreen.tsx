@@ -1,10 +1,10 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14864
+// Function ID: 14865
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [19, 21, 6878, 1480, 14863, 2]
+// Dependencies: [19, 21, 6878, 1480, 14865, 2]
 // Exports: default
 
-// Module 14862 (CollectiblesShopViewAllCategoryItemsScreen)
+// Module 14864 (CollectiblesShopViewAllCategoryItemsScreen)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -22,5 +22,5 @@ export default function CollectiblesShopViewAllCategoryItemsScreen() {
   obj = {};
   const obj2 = stackNavigation(1480);
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(importDefault(14863), {});
+  return jsx(importDefault(14865), {});
 };

@@ -1,10 +1,10 @@
-// Module ID: 11535
-// Function ID: 11536
+// Module ID: 11536
+// Function ID: 11537
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 8341, 11418, 8348, 2]
+// Dependencies: [19, 8341, 11419, 8348, 2]
 // Exports: default
 
-// Module 11535 (useFilterAndSortToOnlyFrecentCommands)
+// Module 11536 (useFilterAndSortToOnlyFrecentCommands)
 import noop from "noop";
 import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange";
 

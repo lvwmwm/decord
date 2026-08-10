@@ -1,9 +1,9 @@
-// Module ID: 15532
-// Function ID: 15533
+// Module ID: 15540
+// Function ID: 15541
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 1415, 1891, 1903, 15533, 21, 4303, 712, 7101, 9115, 15534, 15535, 15536, 15537, 5268, 15538, 1297, 15539, 15540, 5728, 589, 4846, 8783, 8303, 15541, 4299, 2]
+// Dependencies: [19, 17, 1415, 1891, 1903, 15541, 21, 4303, 712, 7101, 9115, 15542, 15543, 15544, 15545, 5268, 15546, 1297, 15547, 15548, 5728, 589, 4846, 8783, 8303, 15549, 4299, 2]
 
-// Module 15532 (ForYouItemImage)
+// Module 15540 (ForYouItemImage)
 import importAllResult from "registerAsset";
 import { View } from "Button";
 import { getGuildAcronym } from "GuildNSFWContentLevel";

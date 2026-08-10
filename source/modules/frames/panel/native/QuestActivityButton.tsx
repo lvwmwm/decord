@@ -1,16 +1,16 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 16106
+// Function ID: 16107
 // Name: QuestActivityButtonInner
-// Dependencies: [19, 17, 4295, 7160, 16098, 5161, 21, 4036, 7835, 4303, 712, 10459, 589, 4509, 16099, 1988, 4271, 16100, 4304, 5719, 14372, 16101, 14240, 1236, 10588, 2]
+// Dependencies: [19, 17, 4295, 7160, 16107, 5161, 21, 4036, 7835, 4303, 712, 10460, 589, 4509, 16108, 1988, 4271, 16109, 4304, 5719, 14374, 16110, 14242, 1236, 10589, 2]
 
-// Module 16097 (QuestActivityButtonInner)
+// Module 16106 (QuestActivityButtonInner)
 import importAllResult from "play";
 import { View } from "contextMenuButton";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import initializeState from "initializeState";
 import set from "set";
 import { QuestVariants } from "QuestsExperimentLocations";
-import jsxProd from "module_16101";
+import jsxProd from "module_16110";
 import createCacheKey from "createCacheKey";
 import importDefaultResult from "module_4036";
 
@@ -28,7 +28,7 @@ function QuestActivityButtonInner(quest) {
   let sharedValue1;
   let ref;
   let c8;
-  let obj = quest(10459);
+  let obj = quest(10460);
   let obj1 = quest(589);
   let items = [sharedValue];
   stateFromStores = obj1.useStateFromStores(items, () => sharedValue.useReducedMotion);
@@ -162,17 +162,17 @@ function QuestActivityButtonInner(quest) {
   obj = { style: memo, pointerEvents: "none", children: null };
   obj1 = { ref, source: null, autoPlay: false, loop: false };
   const tmpResult2 = quest(4036);
-  obj1[1] = quest(14372);
+  obj1[1] = quest(14374);
   obj[2] = callback(stateFromStores(5719), obj1);
   const items6 = [callback(c4, obj), , , ];
   obj2 = { style: tmp14.buttonWrapper, children: null };
   let obj3 = { icon: null, onPress: null, accessibilityLabel: null };
   const tmp20 = stateFromStores(5719);
-  obj3[0] = stateFromStores(14240);
+  obj3[0] = stateFromStores(14242);
   obj3[1] = callback;
   const intl = tmp(1236).intl;
   obj3[2] = intl.string(quest(1236).t.JALI2K);
-  obj2[1] = callback(stateFromStores(16101), obj3);
+  obj2[1] = callback(stateFromStores(16110), obj3);
   items6[1] = callback(c4, obj2);
   const obj4 = { pointerEvents: "none", style: tmp14.canvas, children: null };
   const obj5 = { height: c11, width: c11, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 13187
-// Function ID: 13188
+// Module ID: 13189
+// Function ID: 13190
 // Name: filterOutMessageRequestsAndSpam
 // Dependencies: [5841, 5842, 11, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 13187 (filterOutMessageRequestsAndSpam)
+// Module 13189 (filterOutMessageRequestsAndSpam)
 import processChannel from "processChannel";
 import closure_3 from "processChannel";
 

@@ -1,10 +1,10 @@
-// Module ID: 10586
-// Function ID: 10587
+// Module ID: 10587
+// Function ID: 10588
 // Name: getVideoQuestWatchCtaText
-// Dependencies: [4395, 7160, 7162, 676, 7158, 10461, 7183, 1236, 7177, 4158, 2, 10587]
+// Dependencies: [4395, 7160, 7162, 676, 7158, 10462, 7183, 1236, 7177, 4158, 2, 10588]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing, sendVideoProgress
 
-// Module 10586 (getVideoQuestWatchCtaText)
+// Module 10587 (getVideoQuestWatchCtaText)
 import handleConnectionInfoChange from "handleConnectionInfoChange";
 import initializeState from "initializeState";
 import _toPropertyKey from "_toPropertyKey";
@@ -34,8 +34,8 @@ export const sendVideoProgress = function sendVideoProgress(quest, currentTime) 
     isQuestExpiredResult = null != completedAt;
   }
   if (!isQuestExpiredResult) {
-    require(10461) /* _manuallyStartConsoleQuest */.updateVideoProgress(quest.id, currentTime);
-    const tmpResult = require(10461) /* _manuallyStartConsoleQuest */;
+    require(10462) /* _manuallyStartConsoleQuest */.updateVideoProgress(quest.id, currentTime);
+    const tmpResult = require(10462) /* _manuallyStartConsoleQuest */;
   }
 };
 export const getVideoOrientation = function getVideoOrientation(assets) {
@@ -163,8 +163,8 @@ export const handleVideoQuestModalClose = function handleVideoQuestModalClose(ar
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        tmp6(10461).updateVideoProgress(quest.id, videoProgress.maxTimestampSec);
-        const tmp6Result = tmp6(10461);
+        tmp6(10462).updateVideoProgress(quest.id, videoProgress.maxTimestampSec);
+        const tmp6Result = tmp6(10462);
       }
       tmp6 = require;
     }

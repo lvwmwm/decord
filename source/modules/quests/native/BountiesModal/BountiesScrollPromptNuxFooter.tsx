@@ -1,10 +1,10 @@
-// Module ID: 14288
-// Function ID: 14289
+// Module ID: 14290
+// Function ID: 14291
 // Name: BountiesScrollPromptFooter
 // Dependencies: [17, 21, 4303, 4299, 1236, 2]
 // Exports: default
 
-// Module 14288 (BountiesScrollPromptFooter)
+// Module 14290 (BountiesScrollPromptFooter)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

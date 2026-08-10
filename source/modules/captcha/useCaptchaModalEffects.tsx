@@ -1,10 +1,10 @@
-// Module ID: 16349
-// Function ID: 16350
+// Module ID: 16358
+// Function ID: 16359
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 676, 4730, 10462, 698, 2]
+// Dependencies: [19, 676, 4730, 10463, 698, 2]
 // Exports: default
 
-// Module 16349 (useCaptchaModalEffects)
+// Module 16358 (useCaptchaModalEffects)
 import noop from "noop";
 import { AnalyticEvents } from "ME";
 

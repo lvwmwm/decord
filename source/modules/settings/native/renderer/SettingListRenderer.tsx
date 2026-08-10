@@ -1,9 +1,9 @@
-// Module ID: 13887
-// Function ID: 13888
+// Module ID: 13889
+// Function ID: 13890
 // Name: SearchListSectionLabel
-// Dependencies: [19, 17, 13888, 13889, 10447, 21, 4303, 712, 5767, 4299, 13890, 1609, 13891, 14929, 7745, 14930, 14933, 14934, 1872, 2]
+// Dependencies: [19, 17, 13890, 13891, 10448, 21, 4303, 712, 5767, 4299, 13892, 1609, 13893, 14931, 7745, 14932, 14935, 14936, 1872, 2]
 
-// Module 13887 (SearchListSectionLabel)
+// Module 13889 (SearchListSectionLabel)
 import importAllResult from "set";
 import { View } from "SettingSearchBar";
 import zustandStore from "zustandStore";
@@ -66,11 +66,11 @@ function renderItem(item) {
     obj[0] = item.label;
     return <SearchListSectionSubLabel subLabel={null} />;
   } else if (tmp.SETTING_SEARCH_RESULT === type) {
-    return require(13890) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
+    return require(13892) /* GuildSelectDefaultIcon */.renderSettingSearchResultItem(item);
   } else if (tmp.SECTION_ROW === type) {
-    return require(13890) /* GuildSelectDefaultIcon */.renderSettingItem(item);
+    return require(13892) /* GuildSelectDefaultIcon */.renderSettingItem(item);
   } else if (tmp.SECTION_ROW_PLACEHOLDER === type) {
-    obj = require(13890) /* GuildSelectDefaultIcon */;
+    obj = require(13892) /* GuildSelectDefaultIcon */;
     return obj.renderSettingSearchResultPlaceholderItem(item);
   }
 }
@@ -113,7 +113,7 @@ const memoResult = importAllResult.memo((node) => {
   const items = [field, node];
   const memo = importAllResult.useMemo(() => node(outer1_2[12]).toSettingListItems(node, field), items);
   const ref = importAllResult.useRef(null);
-  let obj = node(14929);
+  let obj = node(14931);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   obj = { style: tmp.container, children: null };
   obj = { ref, ListHeaderComponent: node.ListHeaderComponent, contentContainerStyle: null, scrollIndicatorInsets: null, keyExtractor: null, renderItem: null, data: null, getItemType: null };

@@ -1,10 +1,10 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14509
+// Function ID: 14510
 // Name: GradientThemeBackground
-// Dependencies: [19, 17, 1302, 14506, 505, 21, 4303, 712, 4152, 4011, 4848, 1297, 14508, 647, 4005, 14509, 4121, 4019, 4846, 1236, 2]
+// Dependencies: [19, 17, 1302, 14508, 505, 21, 4303, 712, 4152, 4011, 4848, 1297, 14510, 647, 4005, 14511, 4121, 4019, 4846, 1236, 2]
 // Exports: default
 
-// Module 14507 (GradientThemeBackground)
+// Module 14509 (GradientThemeBackground)
 import "getSystemLocale";
 import { View } from "useCheckboxA11yNative";
 import handleThemeChange from "handleThemeChange";
@@ -40,7 +40,7 @@ function GradientThemeBackground(arg0) {
   const items1 = [closure_6(importDefault(4848), obj1), ];
   if (isThemeLocked) {
     const obj3 = { source: null, style: null };
-    obj3[0] = importDefault(14508);
+    obj3[0] = importDefault(14510);
     obj3[1] = tmp4.lock;
     isThemeLocked = tmp7(require(1297) /* Button */.Icon, obj3);
   }
@@ -73,7 +73,7 @@ function DefaultThemeBackground(item) {
     obj1[0] = { alignSelf: "center", justifyContent: "center", flex: 1 };
     const obj2 = { fill: null };
     obj2[0] = token2;
-    obj1[1] = tmp9(importDefault(14509), obj2);
+    obj1[1] = tmp9(importDefault(14511), obj2);
     tmp9Result = tmp9(tmp10, obj1);
   }
   obj[1] = tmp9Result;
@@ -102,7 +102,7 @@ function CustomThemeBackground(arg0) {
   const items1 = [closure_6(require(4848) /* getMixedGradientColor */.CustomThemedGradient, obj1), ];
   if (isThemeLocked) {
     const obj3 = { source: null, style: null };
-    obj3[0] = importDefault(14508);
+    obj3[0] = importDefault(14510);
     obj3[1] = tmp4.lock;
     isThemeLocked = tmp7(tmp(1297).Icon, obj3);
   }

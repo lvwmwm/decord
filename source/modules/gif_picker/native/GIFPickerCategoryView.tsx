@@ -1,10 +1,10 @@
-// Module ID: 9952
-// Function ID: 9953
+// Module ID: 9953
+// Function ID: 9954
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 9013, 5268, 9953, 8744, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 1236, 9013, 5268, 9954, 8744, 4299, 2]
 // Exports: default
 
-// Module 9952 (GIFPickerCategoryView)
+// Module 9953 (GIFPickerCategoryView)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -62,7 +62,7 @@ export default function GIFPickerCategoryView(onSelectCategory) {
     const obj4 = { size: "sm", style: null, color: null };
     obj4[1] = tmp.categoryNameIcon;
     obj4[2] = tmp6(712).colors.WHITE;
-    let tmp10Result = tmp10(tmp3(9953).AnalyticsIcon, obj4);
+    let tmp10Result = tmp10(tmp3(9954).AnalyticsIcon, obj4);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {

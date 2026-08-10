@@ -1,10 +1,10 @@
-// Module ID: 11375
-// Function ID: 11376
+// Module ID: 11376
+// Function ID: 11377
 // Name: RefreshChatInputCoachmark
 // Dependencies: [32, 19, 1369, 1348, 6022, 1358, 1236, 4013, 8653, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 11375 (RefreshChatInputCoachmark)
+// Module 11376 (RefreshChatInputCoachmark)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";

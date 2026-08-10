@@ -1,10 +1,10 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10038
+// Function ID: 10039
 // Name: useCreateOrReuseGiftOrder
 // Dependencies: [5, 19, 4286, 1905, 505, 3, 9436, 6893, 500, 3883, 3962, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10037 (useCreateOrReuseGiftOrder)
+// Module 10038 (useCreateOrReuseGiftOrder)
 import timestamp from "timestamp";
 import noop from "noop";
 import { ItemPurchaseType } from "CustomCheckoutFlow";

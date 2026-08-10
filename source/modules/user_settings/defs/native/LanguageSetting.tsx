@@ -1,9 +1,9 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14606
+// Function ID: 14607
 // Name: route
-// Dependencies: [1975, 676, 589, 1236, 10446, 14605, 14607, 2]
+// Dependencies: [1975, 676, 589, 1236, 10447, 14607, 14609, 2]
 
-// Module 14604 (route)
+// Module 14606 (route)
 import _getSystemLocale from "_getSystemLocale";
 import createToggle from "createToggle";
 
@@ -34,7 +34,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.LANGUAGE,
   getComponent() {
-    return require(14607) /* handleLanguageChange */.default;
+    return require(14609) /* handleLanguageChange */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

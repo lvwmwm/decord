@@ -1,10 +1,10 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10031
+// Function ID: 10032
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 4516, 21, 4303, 712, 4299, 4714, 6011, 1236, 10031, 10025, 10032, 2]
+// Dependencies: [19, 17, 4516, 21, 4303, 712, 4299, 4714, 6011, 1236, 10032, 10026, 10033, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10030 (MediaKeyboardEmptyState)
+// Module 10031 (MediaKeyboardEmptyState)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { NativePermissionStatus } from "NativePermissionStatus";
@@ -57,17 +57,17 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl3 = require(1236) /* getSystemLocale */.intl;
           obj[1] = intl3.string(require(1236) /* getSystemLocale */.t.JuXTi6);
           obj[2] = tmp2;
-          obj[3] = importDefault(10031);
+          obj[3] = importDefault(10032);
           const intl4 = require(1236) /* getSystemLocale */.intl;
           obj[4] = intl4.string(require(1236) /* getSystemLocale */.t["5g7NcN"]);
           return callback(MediaKeyboardEmptyState, obj);
         } else if (showCameraButton) {
           obj = { actionIcon: null, actionLabel: null, actionPress: null, imageSource: null, label: null };
-          obj[0] = callback(require(10025) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" });
+          obj[0] = callback(require(10026) /* CameraIcon */.CameraIcon, { color: "white", size: "sm" });
           const intl = require(1236) /* getSystemLocale */.intl;
           obj[1] = intl.string(require(1236) /* getSystemLocale */.t.tpoWUd);
           obj[2] = tmp;
-          obj[3] = importDefault(10032);
+          obj[3] = importDefault(10033);
           const intl2 = require(1236) /* getSystemLocale */.intl;
           obj[4] = intl2.string(require(1236) /* getSystemLocale */.t.YOvRBZ);
           return callback(MediaKeyboardEmptyState, obj);
@@ -79,7 +79,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl5.string(require(1236) /* getSystemLocale */.t["457oeG"]);
   obj[2] = photosEmpty.onPressPrivacySettings;
-  obj[3] = importDefault(10031);
+  obj[3] = importDefault(10032);
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj[4] = intl6.string(require(1236) /* getSystemLocale */.t["8p9jGu"]);
   return callback(MediaKeyboardEmptyState, obj);

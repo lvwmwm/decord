@@ -1,10 +1,10 @@
-// Module ID: 10284
-// Function ID: 10285
+// Module ID: 10285
+// Function ID: 10286
 // Name: PollEmoji
-// Dependencies: [32, 5, 19, 17, 4295, 5176, 1372, 4521, 1903, 21, 4303, 712, 589, 1416, 5360, 1236, 4846, 4299, 7220, 5427, 8320, 5728, 10285, 8781, 7222, 4493, 4146, 5374, 1297, 9130, 8783, 4036, 4304, 7745, 4239, 4153, 10286, 10287, 5748, 4271, 5397, 2]
+// Dependencies: [32, 5, 19, 17, 4295, 5176, 1372, 4521, 1903, 21, 4303, 712, 589, 1416, 5360, 1236, 4846, 4299, 7220, 5427, 8320, 5728, 10286, 8781, 7222, 4493, 4146, 5374, 1297, 9130, 8783, 4036, 4304, 7745, 4239, 4153, 10287, 10288, 5748, 4271, 5397, 2]
 // Exports: default
 
-// Module 10284 (PollEmoji)
+// Module 10285 (PollEmoji)
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import importAllResult from "LegacyBaseButton";
@@ -340,9 +340,9 @@ function NoResults() {
   const tmp6 = closure_7;
   const tmp8 = closure_6;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(10286);
+    let tmp2Result = tmp2(10287);
   } else {
-    tmp2Result = tmp2(10287);
+    tmp2Result = tmp2(10288);
   }
   obj[1] = tmp2Result;
   const items = [closure_14(tmp8, obj), , ];

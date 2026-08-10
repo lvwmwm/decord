@@ -1,10 +1,10 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11533
+// Function ID: 11534
 // Name: useIsAppDM
 // Dependencies: [1903, 647, 2]
 // Exports: default
 
-// Module 11532 (useIsAppDM)
+// Module 11533 (useIsAppDM)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;

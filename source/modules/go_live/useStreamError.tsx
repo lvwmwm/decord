@@ -1,10 +1,10 @@
-// Module ID: 10706
-// Function ID: 10707
+// Module ID: 10707
+// Function ID: 10708
 // Name: useStreamError
-// Dependencies: [10684, 9169, 589, 2]
+// Dependencies: [10685, 9169, 589, 2]
 // Exports: default
 
-// Module 10706 (useStreamError)
+// Module 10707 (useStreamError)
 import isAVErrorContextOfType from "isAVErrorContextOfType";
 
 const require = arg1;

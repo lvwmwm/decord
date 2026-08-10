@@ -1,9 +1,9 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10410
+// Function ID: 10411
 // Name: getMediaPostEmbed
 // Dependencies: [589, 709, 2]
 
-// Module 10409 (getMediaPostEmbed)
+// Module 10410 (getMediaPostEmbed)
 import { Store } from "initialize";
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", FAILED: 3, [3]: "FAILED" };

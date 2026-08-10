@@ -1,10 +1,10 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16643
+// Function ID: 16644
 // Name: getEmptyServerSettingsAuditLogSource
-// Dependencies: [19, 17, 21, 7623, 16635, 16636, 16637, 4153, 2]
+// Dependencies: [19, 17, 21, 7623, 16644, 16645, 16646, 4153, 2]
 // Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 16634 (getEmptyServerSettingsAuditLogSource)
+// Module 16643 (getEmptyServerSettingsAuditLogSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getEmptyServerSettingsAuditLogSource = function getEmptyServerSetti
   let obj = require(7623) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(16635);
+      return callback(16644);
     },
     darker() {
-      return callback(16636);
+      return callback(16645);
     },
     light() {
-      return callback(16637);
+      return callback(16646);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useEmptyServerSettingsAuditLogSource = function useEmptyServerSetti
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16635);
+      return callback(16644);
     },
     darker() {
-      return callback(16636);
+      return callback(16645);
     },
     light() {
-      return callback(16637);
+      return callback(16646);
     }
   };
   return require(7623) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const EmptyServerSettingsAuditLog = function EmptyServerSettingsAuditLog(
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16635);
+      return callback(16644);
     },
     darker() {
-      return callback(16636);
+      return callback(16645);
     },
     light() {
-      return callback(16637);
+      return callback(16646);
     }
   };
   obj = {};

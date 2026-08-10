@@ -1,10 +1,10 @@
-// Module ID: 15735
-// Function ID: 15736
+// Module ID: 15743
+// Function ID: 15744
 // Name: ChannelContentComponent
-// Dependencies: [19, 17, 9794, 4500, 21, 4303, 500, 9795, 4794, 15736, 4823, 7962, 15243, 4299, 2]
+// Dependencies: [19, 17, 9795, 4500, 21, 4303, 500, 9796, 4794, 15744, 4823, 7962, 15250, 4299, 2]
 // Exports: renderChannelContent
 
-// Module 15735 (ChannelContentComponent)
+// Module 15743 (ChannelContentComponent)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { UnreadSetting } from "ReadStateTypes";
@@ -35,7 +35,7 @@ function ChannelContentComponent(arg0) {
   ({ subtitle, resolvedUnreadSetting, locked, lastMessageTimestampString, channel, layout, mentionCount, mentionBadge, isSubscriptionGated } = arg0);
   ({ name, unread, muted, connected, needSubscriptionToAccess } = arg0);
   const tmp = createCacheKey();
-  let obj = require(9795) /* getLayoutStyles */;
+  let obj = require(9796) /* getLayoutStyles */;
   let tmp10Result = null != channel;
   const layoutStyles = obj.getLayoutStyles(layout);
   if (tmp10Result) {
@@ -74,7 +74,7 @@ function ChannelContentComponent(arg0) {
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
   obj3[5] = layout;
-  const items1 = [closure_6(importDefault(15736), obj3), ];
+  const items1 = [closure_6(importDefault(15744), obj3), ];
   let tmp12Result = tmp10Result;
   if (!tmp10Result) {
     tmp12Result = isNSFWResult;
@@ -108,7 +108,7 @@ function ChannelContentComponent(arg0) {
     if (isSubscriptionGated) {
       const obj8 = { locked: null, isInMainTabsExperiment: true };
       obj8[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp10(importDefault(15243), obj8);
+      isSubscriptionGated = tmp10(importDefault(15250), obj8);
     }
     items3[2] = isSubscriptionGated;
     obj4[1] = items3;

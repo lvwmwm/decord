@@ -1,10 +1,10 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 10711
+// Function ID: 10712
 // Name: recentlyUsedEmojis
 // Dependencies: [4321, 709, 687, 12, 5964, 4153, 589, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 10710 (recentlyUsedEmojis)
+// Module 10711 (recentlyUsedEmojis)
 import { EMOJI_PICKER_EMOJI_TO_SHOW_COUNT as closure_4 } from "ParticipantTypes";
 import apply from "apply";
 import { Store } from "initialize";

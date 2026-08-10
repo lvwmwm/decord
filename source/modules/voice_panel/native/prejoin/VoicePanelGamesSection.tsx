@@ -1,9 +1,9 @@
-// Module ID: 16225
-// Function ID: 16226
+// Module ID: 16234
+// Function ID: 16235
 // Name: GameRow
-// Dependencies: [19, 21, 7092, 9272, 9283, 1236, 9251, 5374, 9238, 16226, 9177, 2]
+// Dependencies: [19, 21, 7092, 9272, 9283, 1236, 9251, 5374, 9238, 16235, 9177, 2]
 
-// Module 16225 (GameRow)
+// Module 16234 (GameRow)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -56,7 +56,7 @@ const memoResult = require("noop").memo(function VoicePanelGamesSection(arg0) {
   let members;
   ({ members, guildId } = arg0);
   const tmp2 = importDefault(9238)("voice_pre_join_games_section");
-  const arr = importDefault(16226)(members, guildId, tmp2);
+  const arr = importDefault(16235)(members, guildId, tmp2);
   let tmp3 = null;
   if (tmp2) {
     tmp3 = null;

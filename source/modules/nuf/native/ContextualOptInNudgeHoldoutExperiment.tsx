@@ -1,9 +1,9 @@
-// Module ID: 14665
-// Function ID: 14666
+// Module ID: 14667
+// Function ID: 14668
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 
-// Module 14665 (apexExperiment)
+// Module 14667 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-06-contextual-opt-in-nudge-holdout", kind: "user", defaultConfig: { inHoldout: false }, variations: { 0: { inHoldout: false }, 1: { inHoldout: true } } });

@@ -1,9 +1,9 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 12912
+// Function ID: 12913
 // Name: DISPATCHER_STANDARD_TIMEOUT_MS
 // Dependencies: [2]
 
-// Module 12910 (DISPATCHER_STANDARD_TIMEOUT_MS)
+// Module 12912 (DISPATCHER_STANDARD_TIMEOUT_MS)
 let c0 = 2.0833333333333335;
 const result = require("set").fileFinishedImporting("modules/gateway/DispatcherWorkConstants.tsx");
 class WorkIdleDeadline {

@@ -1,10 +1,10 @@
-// Module ID: 14320
-// Function ID: 14321
+// Module ID: 14322
+// Function ID: 14323
 // Name: useIsCarouselInView
 // Dependencies: [32, 19, 1474, 2]
 // Exports: default
 
-// Module 14320 (useIsCarouselInView)
+// Module 14322 (useIsCarouselInView)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

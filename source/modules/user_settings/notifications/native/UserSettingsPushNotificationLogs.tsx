@@ -1,10 +1,10 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14754
+// Function ID: 14755
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 676, 21, 4303, 712, 6001, 595, 9871, 1609, 5992, 4846, 1236, 8923, 9873, 12230, 7745, 4299, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4303, 712, 6001, 595, 9872, 1609, 5992, 4846, 1236, 8923, 9874, 12232, 7745, 4299, 2]
 // Exports: default
 
-// Module 14752 (UserSettingsPushNotificationLogs)
+// Module 14754 (UserSettingsPushNotificationLogs)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import Text from "Text";
@@ -202,7 +202,7 @@ export default function UserSettingsPushNotificationLogs() {
             dependencyMap = 1;
             c3 = 1;
             const obj1 = { value: null, done: false };
-            obj1[0] = outer1_1(9871)();
+            obj1[0] = outer1_1(9872)();
             return obj1;
           }
         } else if (arg0 === 1) {
@@ -217,7 +217,7 @@ export default function UserSettingsPushNotificationLogs() {
           closure_0 = arg1;
           obj = outer1_0(8923);
           const obj3 = { message: null };
-          obj3[0] = outer1_1(9873)(closure_0, false);
+          obj3[0] = outer1_1(9874)(closure_0, false);
           obj.showShareActionSheet(obj3, "push-notification-logs");
           c3 = 3;
           return { value: "HermesInternal", done: null };
@@ -228,7 +228,7 @@ export default function UserSettingsPushNotificationLogs() {
       }
     }
   });
-  obj[3] = callback3(first(12230).ShareIcon, {});
+  obj[3] = callback3(first(12232).ShareIcon, {});
   items1[1] = callback3(first(4846).PressableOpacity, obj);
   obj[1] = items1;
   let items2 = [callback4(View, obj), ];

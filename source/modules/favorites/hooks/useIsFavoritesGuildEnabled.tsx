@@ -1,10 +1,10 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 9718
+// Function ID: 9719
 // Name: computeIsFavoritesGuildEnabled
 // Dependencies: [1375, 9711, 589, 2]
 // Exports: computeIsFavoritesGuildEnabled, getIsFavoritesGuildEnabled, useIsFavoritesGuildEnabled
 
-// Module 9717 (computeIsFavoritesGuildEnabled)
+// Module 9718 (computeIsFavoritesGuildEnabled)
 import initializeFromUserSettings from "initializeFromUserSettings";
 
 const require = arg1;

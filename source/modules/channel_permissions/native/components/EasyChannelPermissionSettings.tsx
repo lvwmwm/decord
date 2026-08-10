@@ -1,10 +1,10 @@
-// Module ID: 15887
-// Function ID: 15888
+// Module ID: 15896
+// Function ID: 15897
 // Name: ChannelPermissionSettingsBasicView
-// Dependencies: [32, 5, 19, 17, 15888, 1372, 1971, 1964, 1891, 3929, 3938, 1903, 7781, 676, 21, 4303, 712, 1480, 589, 8997, 8998, 8999, 1236, 4494, 4642, 9005, 3934, 4712, 5767, 5768, 1297, 5374, 9527, 11071, 5276, 4498, 8956, 9141, 15889, 15891, 2]
+// Dependencies: [32, 5, 19, 17, 15897, 1372, 1971, 1964, 1891, 3929, 3938, 1903, 7781, 676, 21, 4303, 712, 1480, 589, 8997, 8998, 8999, 1236, 4494, 4642, 9005, 3934, 4712, 5767, 5768, 1297, 5374, 9527, 11072, 5276, 4498, 8956, 9141, 15898, 15900, 2]
 // Exports: default
 
-// Module 15887 (ChannelPermissionSettingsBasicView)
+// Module 15896 (ChannelPermissionSettingsBasicView)
 import CirclePlusIcon from "CirclePlusIcon";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import getRoleRowData from "getRoleRowData";
@@ -281,7 +281,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "sa" });
+    navigation.setOptions({ headerRight: "Promise" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

@@ -1,8 +1,8 @@
-// Module ID: 16657
-// Function ID: 16658
-// Dependencies: [5, 32, 19, 17, 5176, 5219, 676, 1906, 3977, 21, 4303, 712, 5369, 9462, 5716, 3942, 4860, 16658, 9957, 4638, 4299, 1236, 4198, 1974, 4714, 4712, 4846, 9848, 16659, 8637, 5360, 1416, 7655, 7790, 7976, 2]
+// Module ID: 16666
+// Function ID: 16667
+// Dependencies: [5, 32, 19, 17, 5176, 5219, 676, 1906, 3977, 21, 4303, 712, 5369, 9462, 5716, 3942, 4860, 16667, 9958, 4638, 4299, 1236, 4198, 1974, 4714, 4712, 4846, 9849, 16668, 8637, 5360, 1416, 7655, 7790, 7976, 2]
 
-// Module 16657
+// Module 16666
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import ReactionIcon from "ReactionIcon";
 import importAllResult from "getStickerExtensionFromFormatType";
@@ -532,7 +532,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
   if (null != tmp16Result) {
     const obj11 = { sticker: null, size: null, animated: true };
     obj11[0] = tmp16Result;
-    tmp14Result = tmp14(9848);
+    tmp14Result = tmp14(9849);
     obj11[1] = tmp14(712).space.PX_96;
     let tmp32Result = tmp32(tmp14Result, obj11);
   } else if (null != first) {
@@ -543,7 +543,7 @@ export default importAllResult.forwardRef((stickerId, ref) => {
     obj12[1] = tmp.stickerPreviewImage;
     tmp32Result = tmp32(c6, obj12);
   } else {
-    tmp32Result = tmp32(tmp31(16659).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(16668).StickerPlusIcon, { size: "lg" });
   }
   obj10[5] = tmp32Result;
   items4[1] = callback(stickerId(4846).PressableHighlight, obj10);

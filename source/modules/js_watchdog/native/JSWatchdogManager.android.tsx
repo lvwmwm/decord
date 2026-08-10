@@ -1,9 +1,9 @@
-// Module ID: 16480
-// Function ID: 16481
+// Module ID: 16489
+// Function ID: 16490
 // Name: handleAppStateUpdate
-// Dependencies: [5, 676, 3, 687, 5261, 16481, 1208, 698, 6934, 6931, 6923, 2]
+// Dependencies: [5, 676, 3, 687, 5261, 16490, 1208, 698, 6934, 6931, 6923, 2]
 
-// Module 16480 (handleAppStateUpdate)
+// Module 16489 (handleAppStateUpdate)
 import enforcing from "enforcing";
 import ME from "ME";
 import "initialize";
@@ -237,7 +237,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_0 = undefined;
             c1 = undefined;
             if (null == outer1_0._timeoutId) {
-              if (null != outer1_1(16481)) {
+              if (null != outer1_1(16490)) {
                 dependencyMap = 1;
                 c3 = 1;
                 const obj1 = { value: null, done: false };
@@ -258,7 +258,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_0._enabled = true;
               if (closure_0._pingCompleted) {
                 let checkForStallReportResult;
-                obj = outer1_1(16481);
+                obj = outer1_1(16490);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }

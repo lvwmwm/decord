@@ -1,10 +1,10 @@
-// Module ID: 9923
-// Function ID: 9924
+// Module ID: 9924
+// Function ID: 9925
 // Name: RoleLabel
 // Dependencies: [19, 17, 4295, 21, 4303, 589, 1297, 7967, 2]
 // Exports: RoleLabel
 
-// Module 9923 (RoleLabel)
+// Module 9924 (RoleLabel)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

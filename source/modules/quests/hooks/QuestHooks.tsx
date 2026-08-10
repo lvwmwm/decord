@@ -1,10 +1,10 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10460
+// Function ID: 10461
 // Name: useQuests
-// Dependencies: [5, 32, 19, 1975, 1372, 4998, 1903, 7159, 7161, 7160, 5161, 676, 1905, 589, 10460, 10461, 500, 10469, 7175, 5164, 7158, 687, 7181, 7183, 7186, 10476, 12, 1217, 10487, 10479, 10488, 1974, 10490, 5168, 10586, 7187, 5734, 10588, 10481, 10113, 7188, 10589, 1236, 1879, 4503, 7177, 4239, 4153, 10471, 3947, 10590, 698, 1351, 10980, 10584, 10984, 3974, 8566, 8559, 2]
+// Dependencies: [5, 32, 19, 1975, 1372, 4998, 1903, 7159, 7161, 7160, 5161, 676, 1905, 589, 10461, 10462, 500, 10470, 7175, 5164, 7158, 687, 7181, 7183, 7186, 10477, 12, 1217, 10488, 10480, 10489, 1974, 10491, 5168, 10587, 7187, 5734, 10589, 10482, 10114, 7188, 10590, 1236, 1879, 4503, 7177, 4239, 4153, 10472, 3947, 10591, 698, 1351, 10981, 10585, 10985, 3974, 8566, 8559, 2]
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedAccounts, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useExpiredQuestsMap, useFetchQuestHomeBounties, useFilteredQuests, useGetOrFetchApplicationForConsoleQuests, useIsPreviewerOnAnyQuest, useIsQuestAccessSuspended, useIsQuestEligibleForMembersListPopout, useIsQuestExpired, useIsQuestProgressingOnConsole, useIsQuestProgressingOnDesktop, useIsQuestProgressingVideoQuest, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCollectibles, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeHeroShelf, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useSelectedTaskPlatform, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem, useThirdPartyTaskDetails, useWaitingForConsoleConnection
 
-// Module 10459 (useQuests)
+// Module 10460 (useQuests)
 import set from "set";
 import supportedConsoles from "supportedConsoles";
 import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource";
@@ -66,7 +66,7 @@ function useQuests(arg0) {
   isFetchingCurrentQuests = stateFromStoresObject.isFetchingCurrentQuests;
   lastFetchedCurrentQuests = stateFromStoresObject.lastFetchedCurrentQuests;
   let obj4 = obj(589);
-  isEligibleForQuests = obj(10460).getIsEligibleForQuests();
+  isEligibleForQuests = obj(10461).getIsEligibleForQuests();
   const items3 = [obj.fetchPolicy, isEligibleForQuests, hasFetched, isFetchingCurrentQuests, lastFetchedCurrentQuests, obj.callerSource];
   const effect = isEligibleForQuests.useEffect(() => {
     const fetchPolicy = obj.fetchPolicy;
@@ -84,16 +84,16 @@ function useQuests(arg0) {
           if (!hasFetched) {
             if (!isFetchingCurrentQuests) {
               dependencyMap(true);
-              obj = obj(10461);
+              obj = obj(10462);
               const currentQuests = obj.fetchCurrentQuests();
               if (obj2.isMac()) {
-                const obj3 = hasFetched(10469);
+                const obj3 = hasFetched(10470);
               }
               obj2 = obj(500);
               if (!obj4.getConfig({ location: "QuestHookUseQuests" }).enableNewRequestBehavior) {
                 const _HermesInternal = HermesInternal;
-                const questToDeliver = tmp8(10461).fetchQuestToDeliver(tmp8(5164).AdPlacement.MOBILE_HOME_DOCK_AREA, "use_quests_" + tmp.callerSource);
-                const tmp8Result = tmp8(10461);
+                const questToDeliver = tmp8(10462).fetchQuestToDeliver(tmp8(5164).AdPlacement.MOBILE_HOME_DOCK_AREA, "use_quests_" + tmp.callerSource);
+                const tmp8Result = tmp8(10462);
               }
               obj4 = hasFetched(7175);
             }
@@ -400,14 +400,14 @@ function doesQuestPassTaskFilter(quest) {
 }
 function doesQuestPassRewardFilter(config) {
   if (constants5.VIRTUAL_CURRENCY === arg1) {
-    return require(10476) /* _getDefaultRewardName */.hasVirtualCurrencyReward(config.config);
+    return require(10477) /* _getDefaultRewardName */.hasVirtualCurrencyReward(config.config);
   } else if (tmp.COLLECTIBLE === arg1) {
-    return require(10476) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config.config);
+    return require(10477) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config.config);
   } else if (tmp.IN_GAME === arg1) {
-    let hasInGameQuestRewardResult = require(10476) /* _getDefaultRewardName */.hasInGameQuestReward(config.config);
+    let hasInGameQuestRewardResult = require(10477) /* _getDefaultRewardName */.hasInGameQuestReward(config.config);
     if (!hasInGameQuestRewardResult) {
-      hasInGameQuestRewardResult = require(10476) /* _getDefaultRewardName */.hasQuestRewardCode(config.config);
-      const tmp2Result = require(10476) /* _getDefaultRewardName */;
+      hasInGameQuestRewardResult = require(10477) /* _getDefaultRewardName */.hasQuestRewardCode(config.config);
+      const tmp2Result = require(10477) /* _getDefaultRewardName */;
     }
     return hasInGameQuestRewardResult;
   } else {
@@ -927,9 +927,9 @@ export const useShouldShowBonusOrbsUX = function useShouldShowBonusOrbsUX(quest,
     return isQuestExpiredResult;
   }, items1);
   const obj = _require(589);
-  const result = _require(10476).hasVirtualCurrencyReward(quest.config);
-  const obj2 = _require(10476);
-  const result1 = _require(10476).hasPremiumOrbQuantity(quest.config);
+  const result = _require(10477).hasVirtualCurrencyReward(quest.config);
+  const obj2 = _require(10477);
+  const result1 = _require(10477).hasPremiumOrbQuantity(quest.config);
   let tmp4 = !stateFromStores;
   if (!stateFromStores) {
     tmp4 = result;
@@ -938,7 +938,7 @@ export const useShouldShowBonusOrbsUX = function useShouldShowBonusOrbsUX(quest,
     tmp4 = result1;
   }
   if (tmp4) {
-    tmp4 = questOrbMultiplierEligibility !== _require(10479).QuestOrbMultiplierEligibilityType.INELIGIBLE;
+    tmp4 = questOrbMultiplierEligibility !== _require(10480).QuestOrbMultiplierEligibilityType.INELIGIBLE;
   }
   return tmp4;
 };
@@ -1133,7 +1133,7 @@ export const useConnectedConsoleLinkOnClick = function useConnectedConsoleLinkOn
   }
   c3 = isConsoleQuestResult;
   let obj2 = accounts(7183);
-  supportedConsoles = tmp(10488).useGetQuestImpressionId();
+  supportedConsoles = tmp(10489).useGetQuestImpressionId();
   return () => {
     let obj = accounts(outer1_2[32]);
     if (c3) {
@@ -1221,11 +1221,11 @@ export const useQuestForMemberListSocialEntryPoint = function useQuestForMemberL
   return tmp4;
 };
 export const useQuestCollectibles = function useQuestCollectibles(config) {
-  const hasQuestCollectibles = require(10476) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config);
-  const obj = require(10476) /* _getDefaultRewardName */;
-  const defaultReward = require(10481) /* getContextualEntrypointHeading */.getDefaultReward(config);
-  const obj2 = require(10481) /* getContextualEntrypointHeading */;
-  const isFetching = require(10113) /* useFetchCollectiblesProduct */.useFetchCollectiblesProduct(defaultReward.skuId);
+  const hasQuestCollectibles = require(10477) /* _getDefaultRewardName */.hasCollectiblesQuestReward(config);
+  const obj = require(10477) /* _getDefaultRewardName */;
+  const defaultReward = require(10482) /* getContextualEntrypointHeading */.getDefaultReward(config);
+  const obj2 = require(10482) /* getContextualEntrypointHeading */;
+  const isFetching = require(10114) /* useFetchCollectiblesProduct */.useFetchCollectiblesProduct(defaultReward.skuId);
   const product = isFetching.product;
   let avatarDecoration;
   if (product != null) {
@@ -1726,7 +1726,7 @@ export const useQuestWarningTips = function useQuestWarningTips(userStatus) {
   let tmp8Result = tmp8(500);
   let tmp17 = tmp8Result.isWeb() && tmp12;
   if (tmp17) {
-    tmp8Result = tmp8(10490);
+    tmp8Result = tmp8(10491);
     tmp17 = !tmp8Result.isQuestSupportedOnWeb(userStatus);
   }
   const obj2 = _require(589);
@@ -1849,16 +1849,16 @@ export const useClaimedCollectibleRewardMessage = function useClaimedCollectible
   let obj = require(589) /* initialize */;
   const items = [mergeGuildAvatar];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj1 = require(10476) /* _getDefaultRewardName */;
+  let obj1 = require(10477) /* _getDefaultRewardName */;
   const defaultRewardName = obj1.getDefaultRewardName(config, stateFromStores);
-  let obj2 = require(10476) /* _getDefaultRewardName */;
+  let obj2 = require(10477) /* _getDefaultRewardName */;
   const collectibleQuestRewardDuration = obj2.getCollectibleQuestRewardDuration(config);
-  let obj3 = require(10476) /* _getDefaultRewardName */;
+  let obj3 = require(10477) /* _getDefaultRewardName */;
   const collectibleQuestRewardExtendableExpirationDate = obj3.getCollectibleQuestRewardExtendableExpirationDate(config);
-  let obj4 = require(10476) /* _getDefaultRewardName */;
+  let obj4 = require(10477) /* _getDefaultRewardName */;
   const result = obj4.isCollectibleQuestRewardPermanentWithPremiumSubscription(config);
-  const result1 = require(10476) /* _getDefaultRewardName */.isCollectibleQuestRewardPremiumExtendable(config);
-  const obj6 = require(10476) /* _getDefaultRewardName */;
+  const result1 = require(10477) /* _getDefaultRewardName */.isCollectibleQuestRewardPremiumExtendable(config);
+  const obj6 = require(10477) /* _getDefaultRewardName */;
   const isPremiumResult = require(3947) /* getPremiumPlanItem */.isPremium(stateFromStores, PremiumTypes.TIER_2);
   if (null == collectibleQuestRewardDuration) {
     const intl2 = tmp(1236).intl;
@@ -1907,7 +1907,7 @@ export const useLaunchInGameActivityQuest = function useLaunchInGameActivityQues
   let obj = require(7183) /* getApplicationIdsByTaskTypes */;
   obj = { launchInGameActivity: null };
   const activityApplicationId = obj.getActivityApplicationId(quest);
-  obj[0] = importDefault(10590)({ applicationId: activityApplicationId });
+  obj[0] = importDefault(10591)({ applicationId: activityApplicationId });
   return obj;
 };
 export const useIsPreviewerOnAnyQuest = function useIsPreviewerOnAnyQuest() {

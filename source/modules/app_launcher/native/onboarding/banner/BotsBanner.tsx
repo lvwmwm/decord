@@ -1,10 +1,10 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11452
+// Function ID: 11453
 // Name: BotsBanner
-// Dependencies: [19, 21, 11452, 11436, 11447, 1236, 2]
+// Dependencies: [19, 21, 11453, 11437, 11448, 1236, 2]
 // Exports: default
 
-// Module 11451 (BotsBanner)
+// Module 11452 (BotsBanner)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -14,7 +14,7 @@ const result = require("useBannerBots").fileFinishedImporting("modules/app_launc
 export default function BotsBanner(context) {
   let firstBotApplication;
   let secondBotApplication;
-  let obj = require(11452) /* useBannerBots */;
+  let obj = require(11453) /* useBannerBots */;
   const bannerBots = obj.useBannerBots({ context: context.context });
   ({ firstBotApplication, secondBotApplication } = bannerBots);
   let tmp4Result = null;
@@ -28,8 +28,8 @@ export default function BotsBanner(context) {
       obj[0] = firstBotApplication.name;
       obj[1] = secondBotApplication.name;
       obj[1] = intl.formatToPlainString(tmp(1236).t["9SN0xw"], obj);
-      tmp4Result = jsx(importDefault(11447), { firstApplicationName: null, secondApplicationName: null });
-      const tmp5Result = importDefault(11447);
+      tmp4Result = jsx(importDefault(11448), { firstApplicationName: null, secondApplicationName: null });
+      const tmp5Result = importDefault(11448);
     }
   }
   return tmp4Result;

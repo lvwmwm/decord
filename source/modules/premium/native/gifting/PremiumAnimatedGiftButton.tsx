@@ -1,10 +1,10 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11620
+// Function ID: 11621
 // Name: PremiumAnimatedGiftButton
 // Dependencies: [19, 4295, 21, 4303, 712, 1348, 4005, 589, 500, 4036, 4846, 5719, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11619 (PremiumAnimatedGiftButton)
+// Module 11620 (PremiumAnimatedGiftButton)
 import noop from "noop";
 import { useRef } from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

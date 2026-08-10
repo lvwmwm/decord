@@ -1,9 +1,9 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 14542
+// Function ID: 14543
 // Name: route
-// Dependencies: [1302, 1305, 8082, 676, 1348, 589, 10446, 1236, 14538, 14541, 2]
+// Dependencies: [1302, 1305, 8082, 676, 1348, 589, 10447, 1236, 14540, 14543, 2]
 
-// Module 14540 (route)
+// Module 14542 (route)
 import handleThemeChange from "handleThemeChange";
 import { SystemTheme } from "SystemThemeState";
 import createToggle from "createToggle";
@@ -24,14 +24,14 @@ createToggle = {
     return stateFromStores;
   },
   useTrailing() {
-    return require(14538) /* useSyncedModeThemeName */.useSyncedModeThemeName(SystemTheme.DARK);
+    return require(14540) /* useSyncedModeThemeName */.useSyncedModeThemeName(SystemTheme.DARK);
   },
   screen: createToggle
 };
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_DARK_MODE_THEME_PICKER,
   getComponent() {
-    return require(14541) /* SettingsAppearanceDarkModeThemePickerScreen */.default;
+    return require(14543) /* SettingsAppearanceDarkModeThemePickerScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

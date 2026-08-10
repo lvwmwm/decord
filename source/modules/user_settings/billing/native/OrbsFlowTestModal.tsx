@@ -1,9 +1,9 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15017
+// Function ID: 15018
 // Name: BalanceWidgetMenuSection
-// Dependencies: [32, 19, 17, 21, 8570, 5783, 8382, 9678, 4303, 712, 4712, 4299, 15016, 4271, 10150, 1988, 1236, 7790, 4714, 10139, 10149, 5369, 5715, 15018, 2]
+// Dependencies: [32, 19, 17, 21, 8570, 5783, 8382, 9678, 4303, 712, 4712, 4299, 15018, 4271, 10151, 1988, 1236, 7790, 4714, 10140, 10150, 5369, 5715, 15020, 2]
 
-// Module 15015 (BalanceWidgetMenuSection)
+// Module 15017 (BalanceWidgetMenuSection)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "BalanceWidgetPill";
 import get_ActivityIndicator from "TextInput";
@@ -20,7 +20,7 @@ function BalanceWidgetMenuSection() {
   const tmp = callback4();
   let obj = { spacing: 16, style: tmp.container, children: null };
   obj = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
-  const items = [callback2(require(4299) /* Text */.Text, obj), callback2(importDefault(15016), {})];
+  const items = [callback2(require(4299) /* Text */.Text, obj), callback2(importDefault(15018), {})];
   obj[2] = items;
   return callback3(require(4712) /* Stack */.Stack, obj);
 }
@@ -82,7 +82,7 @@ function OrbsFlowTest() {
   let obj = { children: null };
   obj = { style: callback4().wrap, contentContainerStyle: obj, children: null };
   obj = { paddingBottom: insets.bottom, paddingTop: insets.top, paddingLeft: insets.left, paddingRight: insets.right };
-  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(15018), {})];
+  const items = [callback2(BalanceWidgetMenuSection, {}), callback2(BalanceWidgetPillSection, {}), callback2(importDefault(15020), {})];
   obj[2] = items;
   obj[0] = callback3(closure_5, obj);
   return callback2(require(5715) /* Layer */.LayerScope, obj);

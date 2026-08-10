@@ -1,10 +1,10 @@
-// Module ID: 9988
-// Function ID: 9989
+// Module ID: 9989
+// Function ID: 9990
 // Name: CATEGORY_ICON_SIZE
-// Dependencies: [32, 19, 17, 1891, 9959, 676, 1338, 21, 4303, 712, 3974, 4638, 4985, 698, 4846, 1297, 1416, 5779, 9848, 4272, 4273, 8771, 8772, 8526, 1236, 9989, 2]
+// Dependencies: [32, 19, 17, 1891, 9960, 676, 1338, 21, 4303, 712, 3974, 4638, 4985, 698, 4846, 1297, 1416, 5779, 9849, 4272, 4273, 8771, 8772, 8526, 1236, 9990, 2]
 // Exports: default
 
-// Module 9988 (CATEGORY_ICON_SIZE)
+// Module 9989 (CATEGORY_ICON_SIZE)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "HapticFeedbackTypes";
 import { View } from "GuildIconSizes";
@@ -240,7 +240,7 @@ export default function _default(categories) {
     obj1[0] = items10;
     const obj2 = { style: null, source: null };
     obj2[0] = tmp.guildIcon;
-    obj2[1] = tmp17(9989);
+    obj2[1] = tmp17(9990);
     obj1[1] = tmp22(categories(1297).Icon, obj2);
     obj[3] = tmp22(closure_5, obj1);
     tmp22Result = tmp22(categories(4846).PressableOpacity, obj);

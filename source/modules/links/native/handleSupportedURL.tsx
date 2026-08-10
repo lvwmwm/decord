@@ -1,10 +1,10 @@
-// Module ID: 13197
-// Function ID: 13198
+// Module ID: 13199
+// Function ID: 13200
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5344, 6985, 6885, 12687, 1218, 676, 1379, 4368, 4516, 10620, 6997, 4286, 13198, 11278, 8082, 12030, 4509, 4159, 13199, 8783, 6016, 9333, 11190, 1872, 10412, 698, 10414, 5866, 11057, 11320, 13206, 12062, 10624, 1988, 10621, 10619, 13208, 13210, 1605, 4861, 13215, 3998, 13217, 1891, 5957, 8940, 8949, 5931, 4508, 10878, 4158, 5173, 1222, 709, 5123, 1467, 9021, 13220, 13235, 500, 13246, 9065, 13253, 4623, 13254, 7000, 5748, 9213, 7177, 5166, 11165, 10033, 13326, 5151, 10596, 9283, 9277, 4269, 2]
+// Dependencies: [109, 5, 5344, 6985, 6885, 12689, 1218, 676, 1379, 4368, 4516, 10621, 6997, 4286, 13200, 11279, 8082, 12031, 4509, 4159, 13201, 8783, 6016, 9333, 11191, 1872, 10413, 698, 10415, 5866, 11058, 11321, 13208, 12063, 10625, 1988, 10622, 10620, 13210, 13212, 1605, 4861, 13217, 3998, 13219, 1891, 5957, 8940, 8949, 5931, 4508, 10879, 4158, 5173, 1222, 709, 5123, 1467, 9021, 13222, 13237, 500, 13248, 9065, 13255, 4623, 13256, 7000, 5748, 9213, 7177, 5166, 11166, 10034, 13328, 5151, 10597, 9283, 9277, 4269, 2]
 // Exports: default
 
-// Module 13197 (handleSupportedURL)
+// Module 13199 (handleSupportedURL)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import zustandStore from "zustandStore";
 import scheduledEventSort from "scheduledEventSort";
@@ -225,7 +225,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: false };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: 0.3 };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };
@@ -889,15 +889,15 @@ export default function handleSupportedURL(payload) {
               } else if (result.QUESTS === type) {
                 addPostConnectionCallback(() => {
                   if (null != payload.questId) {
-                    let obj = payload(inviteCode[70]);
-                    obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
+                    let obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
                     obj[0] = arr.questId;
                     obj[1] = outer1_12.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT;
                     obj[2] = payload(inviteCode[71]).QuestContent.QUEST_EMBED_MOBILE;
                     obj = { referrer_id: null };
                     obj[0] = arr.referrerId;
                     obj[3] = obj;
-                    obj.trackQuestEvent(obj);
+                    payload(inviteCode[70]).trackQuestEvent(obj);
+                    const obj3 = payload(inviteCode[70]);
                   }
                   let sort;
                   if (payload != null) {
@@ -907,25 +907,26 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
+                  obj = payload(inviteCode[72]);
                   const obj1 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp9 = null;
+                  let tmp3 = null;
                   if (null != sort) {
-                    tmp9 = null;
+                    tmp3 = null;
                     if ("" !== sort) {
-                      tmp9 = sort;
+                      tmp3 = sort;
                     }
                   }
-                  obj1[1] = tmp9;
-                  let tmp10 = null;
+                  obj1[1] = tmp3;
+                  let tmp4 = null;
                   if (null != filter) {
-                    tmp10 = null;
+                    tmp4 = null;
                     if ("" !== filter) {
-                      tmp10 = filter;
+                      tmp4 = filter;
                     }
                   }
-                  obj1[2] = tmp10;
+                  obj1[2] = tmp4;
                   obj1[3] = payload(inviteCode[71]).QuestContent.QUEST_SHARE_LINK;
-                  payload(inviteCode[72]).openQuestHome(obj1);
+                  obj.openQuestHome(obj1);
                 });
                 flag = true;
               } else if (result.QUEST_HOME_PREVIEW === type) {

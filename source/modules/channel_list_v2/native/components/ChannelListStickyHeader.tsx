@@ -1,10 +1,10 @@
-// Module ID: 15260
-// Function ID: 15261
+// Module ID: 15267
+// Function ID: 15268
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 21, 4036, 4303, 712, 1348, 1894, 1236, 15261, 13254, 15259, 5379, 4005, 8744, 4299, 9263, 1297, 5778, 15272, 11668, 15277, 2]
+// Dependencies: [19, 17, 21, 4036, 4303, 712, 1348, 1894, 1236, 15268, 13256, 15266, 5379, 4005, 8744, 4299, 9263, 1297, 5778, 15280, 11669, 15285, 2]
 // Exports: default
 
-// Module 15260 (ChannelListStickyHeader)
+// Module 15267 (ChannelListStickyHeader)
 import FavoritesGuildHeaderActionButton from "FavoritesGuildHeaderActionButton";
 import get_ActivityIndicator from "Button";
 import jsxProd from "GuildHeaderCoachmarks";
@@ -104,7 +104,7 @@ export default function ChannelListStickyHeader(guild) {
       _undefined(outer1_2[10])(guild);
     }
   }, items);
-  const tmp10 = importDefault(15259)(guild);
+  const tmp10 = importDefault(15266)(guild);
   let tmp6Result = tmp6(5379);
   const iOSPressEffects = tmp6Result.useIOSPressEffects(4);
   ({ onPressIn, onPressOut, pressableStyles } = iOSPressEffects);
@@ -208,7 +208,7 @@ export default function ChannelListStickyHeader(guild) {
   const items6 = [tmp15Result, ];
   tmp24Result = null;
   if (isFavoritesGuildIdResult) {
-    tmp24Result = tmp24(tmp6(15272).FavoritesGuildHeaderActionButton, {});
+    tmp24Result = tmp24(tmp6(15280).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp24Result;
   obj11[1] = items6;
@@ -217,7 +217,7 @@ export default function ChannelListStickyHeader(guild) {
   if (flag) {
     const obj12 = { guild: null, useButtonComponent: true, useEventsButton: true };
     obj12[0] = guild;
-    tmp24Result1 = tmp24(tmp(11668), obj12);
+    tmp24Result1 = tmp24(tmp(11669), obj12);
   }
   items7[1] = tmp24Result1;
   let tmp24Result2 = null;
@@ -232,7 +232,7 @@ export default function ChannelListStickyHeader(guild) {
     const obj14 = { targetRef: null, guild: null };
     obj14[0] = ref;
     obj14[1] = guild;
-    tmp24Result3 = tmp24(tmp(15277), obj14);
+    tmp24Result3 = tmp24(tmp(15285), obj14);
   }
   items7[3] = tmp24Result3;
   obj10[1] = items7;

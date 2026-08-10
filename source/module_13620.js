@@ -1,9 +1,14 @@
 // Module ID: 13620
 // Function ID: 13621
-// Dependencies: []
+// Dependencies: [13621]
 
 // Module 13620
 
-export default Math.trunc || (function trunc(arg0) {
-  return 0 < +arg0 ? floor : ceil(+arg0);
-});
+export default (arg0) => {
+  const tmp = require(13621)(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
+};

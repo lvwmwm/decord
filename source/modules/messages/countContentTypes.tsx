@@ -1,10 +1,10 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 11127
+// Function ID: 11128
 // Name: countContentTypes
 // Dependencies: [2]
 // Exports: default
 
-// Module 11126 (countContentTypes)
+// Module 11127 (countContentTypes)
 const result = require("set").fileFinishedImporting("modules/messages/countContentTypes.tsx");
 
 export default function countContentTypes(content) {

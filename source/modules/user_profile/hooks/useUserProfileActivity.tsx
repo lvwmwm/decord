@@ -1,10 +1,10 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12317
+// Function ID: 12318
 // Name: useUserProfileActivity
-// Dependencies: [19, 9370, 4390, 9640, 589, 12316, 8238, 8904, 8900, 2]
+// Dependencies: [19, 9370, 4390, 9640, 589, 12318, 8238, 8904, 8900, 2]
 // Exports: default
 
-// Module 12315 (useUserProfileActivity)
+// Module 12317 (useUserProfileActivity)
 import { useMemo } from "noop";
 import map from "map";
 import sortActivity from "sortActivity";

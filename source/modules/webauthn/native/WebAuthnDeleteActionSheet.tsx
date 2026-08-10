@@ -1,10 +1,10 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13980
+// Function ID: 13981
 // Name: WebAuthnDeleteActionSheet
-// Dependencies: [19, 17, 21, 4303, 712, 4271, 5397, 5396, 1236, 5765, 13979, 4299, 4714, 5831, 4002, 10024, 4264, 9063, 7962, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4271, 5397, 5396, 1236, 5765, 13981, 4299, 4714, 5831, 4002, 10025, 4264, 9063, 7962, 2]
 // Exports: default
 
-// Module 13978 (WebAuthnDeleteActionSheet)
+// Module 13980 (WebAuthnDeleteActionSheet)
 import "set";
 import get_ActivityIndicator from "registerAsset";
 import jsxProd from "jsxProd";
@@ -44,7 +44,7 @@ export default function WebAuthnDeleteActionSheet(credential) {
   obj[1] = callback(credential(5765).ActionSheetCloseButton, { onPress: handleClose });
   const items = [callback(credential(5396).BottomSheetTitleHeader, obj), , , ];
   const obj1 = { style: tmp.content, children: null };
-  const items1 = [callback(closure_3, { source: importDefault(13979) }), ];
+  const items1 = [callback(closure_3, { source: importDefault(13981) }), ];
   const obj3 = { variant: "heading-md/normal", style: tmp.subtitle, children: null };
   const intl2 = credential(1236).intl;
   obj3[2] = intl2.string(credential(1236).t.IfTbc1);
@@ -73,7 +73,7 @@ export default function WebAuthnDeleteActionSheet(credential) {
       obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
       const intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.ZnkeXs);
-      obj[2] = callback2(10024);
+      obj[2] = callback2(10025);
       obj[3] = callback(4264).CircleCheckIcon;
       obj.open(obj);
     });
@@ -82,7 +82,7 @@ export default function WebAuthnDeleteActionSheet(credential) {
       obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: null, icon: null, IconComponent: null, iconColor: "status-positive" };
       const intl = callback(1236).intl;
       obj[1] = intl.string(callback(1236).t.ZnkeXs);
-      obj[2] = callback2(10024);
+      obj[2] = callback2(10025);
       obj[3] = callback(4264).CircleCheckIcon;
       obj.open(obj);
     }).catch((content) => {

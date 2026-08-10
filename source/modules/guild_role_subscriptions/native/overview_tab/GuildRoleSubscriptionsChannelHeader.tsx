@@ -1,8 +1,8 @@
-// Module ID: 12544
-// Function ID: 12545
-// Dependencies: [19, 17, 21, 4303, 712, 1297, 12129, 4299, 1236, 2]
+// Module ID: 12546
+// Function ID: 12547
+// Dependencies: [19, 17, 21, 4303, 712, 1297, 12130, 4299, 1236, 2]
 
-// Module 12544
+// Module 12546
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -19,7 +19,7 @@ let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = require("noop").memo(function GuildRoleSubscriptionsChannelHeader() {
   let obj = { style: callback3().header, children: null };
   obj = { source: null, size: null, disableColor: true };
-  obj[0] = importDefault(12129);
+  obj[0] = importDefault(12130);
   obj[1] = require(1297) /* Button */.Icon.Sizes.MEDIUM;
   const items = [callback(require(1297) /* Button */.Icon, obj), ];
   obj = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: null };

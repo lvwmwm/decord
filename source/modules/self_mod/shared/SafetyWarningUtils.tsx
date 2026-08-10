@@ -1,10 +1,10 @@
-// Module ID: 10351
-// Function ID: 10352
+// Module ID: 10352
+// Function ID: 10353
 // Name: trackViewedEvent
 // Dependencies: [1903, 676, 698, 2]
 // Exports: getUserIsTeen, trackCtaEvent, trackNamedViewEvent, trackViewedEvent
 
-// Module 10351 (trackViewedEvent)
+// Module 10352 (trackViewedEvent)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { AnalyticEvents } from "ME";
 

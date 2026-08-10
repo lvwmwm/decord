@@ -1,10 +1,10 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14017
+// Function ID: 14018
 // Name: SettingsAgeGroupHeader
-// Dependencies: [19, 17, 8082, 676, 21, 4303, 712, 7797, 1974, 4299, 1236, 2802, 10446, 13886, 2]
+// Dependencies: [19, 17, 8082, 676, 21, 4303, 712, 7797, 1974, 4299, 1236, 2802, 10447, 13888, 2]
 // Exports: default
 
-// Module 14015 (SettingsAgeGroupHeader)
+// Module 14017 (SettingsAgeGroupHeader)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { MobileSetting } from "MobileSetting";
@@ -41,7 +41,7 @@ const result = require("MobileSetting").fileFinishedImporting("modules/user_sett
 
 export default function SettingsAgeGroupScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(10446);
+    let obj = callback(10447);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -54,5 +54,5 @@ export default function SettingsAgeGroupScreen() {
     obj[1] = closure_10;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13886), { node });
+  return callback(importDefault(13888), { node });
 };

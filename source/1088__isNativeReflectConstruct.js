@@ -4953,7 +4953,7 @@ function initObservers(doc) {
                     } catch (tmp7) {
                       if (outer1_79) {
                         if (true === tmp8(tmp7)) {
-                          return /* F102856 */ function() { ... };
+                          return /* F102891 */ function() { ... };
                         }
                       }
                       throw tmp7;
@@ -6738,7 +6738,7 @@ function mergeWarning(_meta) {
     _meta._meta = obj;
     return _meta;
   } else {
-    obj = { headers: null, size: "Array", _meta: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
+    obj = { headers: null, size: "Array", _meta: "Array" };
     obj[0] = obj;
     obj = { warnings: null };
     const items1 = [arg1];
@@ -7210,7 +7210,7 @@ function _prepareFetchData2() {
                           tmp23._meta = obj8;
                           let obj9 = tmp23;
                         } else {
-                          obj9 = { headers: null, size: "Array", _meta: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
+                          obj9 = { headers: null, size: "Array", _meta: "Array" };
                           obj9[0] = obj8;
                           const obj10 = { warnings: null };
                           const items1 = [tmp21];
@@ -8008,7 +8008,7 @@ function _captureXhrBreadcrumbToReplay() {
                               tmp22._meta = obj6;
                               let obj7 = tmp22;
                             } else {
-                              obj7 = { headers: null, size: "Array", _meta: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
+                              obj7 = { headers: null, size: "Array", _meta: "Array" };
                               obj7[0] = obj6;
                               const obj8 = { warnings: null };
                               let items2 = [tmp17];
@@ -8027,7 +8027,7 @@ function _captureXhrBreadcrumbToReplay() {
                             tmp18._meta = obj9;
                             let obj10 = tmp18;
                           } else {
-                            obj10 = { headers: null, size: "Array", _meta: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
+                            obj10 = { headers: null, size: "Array", _meta: "Array" };
                             obj10[0] = obj9;
                             const obj11 = { warnings: null };
                             let items4 = [tmp14];

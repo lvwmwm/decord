@@ -1,10 +1,10 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9909
+// Function ID: 9910
 // Name: useCreateThread
 // Dependencies: [5, 19, 4640, 4296, 5728, 8354, 6917, 7142, 8358, 8357, 7298, 4897, 4856, 8359, 2]
 // Exports: default, useCreateForumPost
 
-// Module 9908 (useCreateThread)
+// Module 9909 (useCreateThread)
 import getIsPrivate from "getIsPrivate";
 import noop from "noop";
 import { DraftType } from "handleChanged";

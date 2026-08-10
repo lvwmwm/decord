@@ -1,10 +1,10 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12505
+// Function ID: 12506
 // Name: computeEntryState
-// Dependencies: [32, 19, 12504, 8816, 7002, 7003, 12505, 589, 7000, 8815, 12506, 2]
+// Dependencies: [32, 19, 12506, 8816, 7002, 7003, 12507, 589, 7000, 8815, 12508, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts
 
-// Module 12503 (computeEntryState)
+// Module 12505 (computeEntryState)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getFetchState from "getFetchState";

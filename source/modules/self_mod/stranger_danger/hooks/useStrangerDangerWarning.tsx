@@ -1,10 +1,10 @@
-// Module ID: 10339
-// Function ID: 10340
+// Module ID: 10340
+// Function ID: 10341
 // Name: useStrangerDangerWarning
-// Dependencies: [1903, 9668, 589, 10340, 10341, 10342, 8036, 10343, 2]
+// Dependencies: [1903, 9668, 589, 10341, 10342, 10343, 8036, 10344, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 10339 (useStrangerDangerWarning)
+// Module 10340 (useStrangerDangerWarning)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { SafetyWarningTypes } from "handleConnectionOpen";
 
@@ -16,12 +16,12 @@ export const useStrangerDangerWarning = function useStrangerDangerWarning(id) {
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = require(589) /* initialize */;
   const tmp = require;
-  const isSpamMessageRequest = require(10340) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
-  const obj3 = require(10340) /* useIsSpamMessageRequest */;
-  const isMessageRequest = require(10341) /* useIsMessageRequest */.useIsMessageRequest(id);
-  const obj4 = require(10341) /* useIsMessageRequest */;
-  const channelSafetyWarning = require(10342) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
-  const obj5 = require(10342) /* useChannelSafetyWarning */;
+  const isSpamMessageRequest = require(10341) /* useIsSpamMessageRequest */.useIsSpamMessageRequest(id);
+  const obj3 = require(10341) /* useIsSpamMessageRequest */;
+  const isMessageRequest = require(10342) /* useIsMessageRequest */.useIsMessageRequest(id);
+  const obj4 = require(10342) /* useIsMessageRequest */;
+  const channelSafetyWarning = require(10343) /* useChannelSafetyWarning */.useChannelSafetyWarning(id, SafetyWarningTypes.STRANGER_DANGER);
+  const obj5 = require(10343) /* useChannelSafetyWarning */;
   const userIsTeen = require(8036) /* useUserIsTeen */.useUserIsTeen();
   if (stateFromStores != null) {
     const isStaffResult = stateFromStores.isStaff();

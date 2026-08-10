@@ -1,9 +1,9 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11760
+// Function ID: 11761
 // Name: AutocompleteLabel
-// Dependencies: [19, 17, 1891, 3938, 1903, 676, 9916, 21, 4303, 712, 7967, 589, 4146, 1297, 9130, 5374, 5384, 1236, 8228, 4764, 4494, 4299, 5268, 11760, 9956, 4846, 9848, 12, 4334, 1884, 7947, 2]
+// Dependencies: [19, 17, 1891, 3938, 1903, 676, 9917, 21, 4303, 712, 7967, 589, 4146, 1297, 9130, 5374, 5384, 1236, 8228, 4764, 4494, 4299, 5268, 11761, 9957, 4846, 9849, 12, 4334, 1884, 7947, 2]
 
-// Module 11759 (AutocompleteLabel)
+// Module 11760 (AutocompleteLabel)
 import getChannelIcon from "getChannelIcon";
 import { View } from "getSystemLocale";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -197,7 +197,7 @@ const obj9 = {
     let results;
     ({ results, onPress } = arg0);
     const obj = { onPress, accessibilityRole: "menuitem", label: null };
-    obj[2] = callback(importDefault(11760), { results });
+    obj[2] = callback(importDefault(11761), { results });
     return callback(require(7967) /* Form */.FormRow, obj);
   },
   Choice(arg0) {
@@ -225,10 +225,10 @@ const obj9 = {
     let onPress;
     let sticker;
     ({ sticker, onPress, onLongPress, isInteracting } = arg0);
-    let obj = require(9956) /* useStickerPackCategories */;
+    let obj = require(9957) /* useStickerPackCategories */;
     const shouldAnimateSticker = obj.useShouldAnimateSticker(isInteracting);
     obj = { accessibilityRole: "menuitem", style: createCacheKey().stickerContainer, onPress, onLongPress, pointerEvents: "box-only", children: null };
-    obj[5] = callback(importDefault(9848), { sticker, size: 40, animated: shouldAnimateSticker });
+    obj[5] = callback(importDefault(9849), { sticker, size: 40, animated: shouldAnimateSticker });
     return callback(require(4846) /* PressableBase */.PressableOpacity, obj);
   },
   Label(text) {

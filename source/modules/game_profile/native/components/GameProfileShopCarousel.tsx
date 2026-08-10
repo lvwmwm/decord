@@ -1,7 +1,7 @@
 // Module ID: 9343
 // Function ID: 9344
 // Name: HorizontalSpacing
-// Dependencies: [19, 17, 7001, 21, 4303, 712, 9344, 12174, 12175, 647, 9283, 7000, 5748, 4299, 1236, 4714, 5778, 7745, 2]
+// Dependencies: [19, 17, 7001, 21, 4303, 712, 9344, 12176, 12177, 647, 9283, 7000, 5748, 4299, 1236, 4714, 5778, 7745, 2]
 // Exports: default
 
 // Module 9343 (HorizontalSpacing)
@@ -29,9 +29,9 @@ function GameProfileShopCarouselContent(trackAction) {
   let gameProfileShopCollection;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = closeModal(12174);
+  let obj = closeModal(12176);
   gameProfileShopCollection = obj.useGameProfileShopCollection(collectionId);
-  let obj1 = closeModal(12175);
+  let obj1 = closeModal(12177);
   const fetchCollectiblesProducts = obj1.useFetchCollectiblesProducts(gameProfileShopCollection);
   let obj2 = closeModal(647);
   let items = [updateCategoriesAndProducts];

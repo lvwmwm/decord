@@ -1,10 +1,10 @@
-// Module ID: 12336
-// Function ID: 12337
+// Module ID: 12338
+// Function ID: 12339
 // Name: UserCheckIcon
 // Dependencies: [19, 21, 712, 4004, 8175, 2]
 // Exports: UserCheckIcon
 
-// Module 12336 (UserCheckIcon)
+// Module 12338 (UserCheckIcon)
 import "noop";
 import { jsx } from "jsxProd";
 

@@ -1,10 +1,10 @@
-// Module ID: 15969
-// Function ID: 15970
+// Module ID: 15978
+// Function ID: 15979
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 6876, 13888, 589, 691, 8853, 4730, 6014, 2]
+// Dependencies: [19, 6876, 13890, 589, 691, 8853, 4730, 6014, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 15969 (useAutoSettingsSearchSessionAnalytics)
+// Module 15978 (useAutoSettingsSearchSessionAnalytics)
 import noop from "noop";
 import getState from "getState";
 import zustandStore from "zustandStore";

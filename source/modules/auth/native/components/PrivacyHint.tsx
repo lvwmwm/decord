@@ -1,10 +1,10 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15121
+// Function ID: 15122
 // Name: PrivacyPolicyDescription
-// Dependencies: [19, 17, 5828, 15081, 676, 21, 4303, 4299, 1236, 4019, 7969, 7967, 15120, 2]
+// Dependencies: [19, 17, 5828, 15083, 676, 21, 4303, 4299, 1236, 4019, 7969, 7967, 15122, 2]
 // Exports: default
 
-// Module 15119 (PrivacyPolicyDescription)
+// Module 15121 (PrivacyPolicyDescription)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { usePromoEmailConsentStore } from "setPromoEmailConsentState";
@@ -75,7 +75,7 @@ export default function PrivacyHint(arg0) {
     if (tmp2) {
       let obj = { style: null, children: null };
       obj[0] = items1.multiItem;
-      const items = [callback(importDefault(15120), {}), callback(PrivacyPolicyDescription, {})];
+      const items = [callback(importDefault(15122), {}), callback(PrivacyPolicyDescription, {})];
       obj[1] = items;
       return callback2(closure_3, obj);
     }
@@ -91,7 +91,7 @@ export default function PrivacyHint(arg0) {
     }
   }
   obj = { style: items1.multiItem, children: null };
-  items1 = [callback(importDefault(15120), {}), callback(PrivacyPolicyCheckbox, { consent, onToggleConsent, asCheckbox: true })];
+  items1 = [callback(importDefault(15122), {}), callback(PrivacyPolicyCheckbox, { consent, onToggleConsent, asCheckbox: true })];
   obj[1] = items1;
   tmp9Result = callback2(closure_3, obj);
 };

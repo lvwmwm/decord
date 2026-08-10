@@ -1,10 +1,10 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 10405
+// Function ID: 10406
 // Name: ChatOverlays
-// Dependencies: [1371, 1372, 10402, 9758, 647, 3919, 10405, 2]
+// Dependencies: [1371, 1372, 10403, 9759, 647, 3919, 10406, 2]
 // Exports: default
 
-// Module 10404 (ChatOverlays)
+// Module 10405 (ChatOverlays)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { ChatOverlays } from "ChatOverlays";
@@ -41,7 +41,7 @@ export default function useAllowedChatOverlays() {
     const _location = stateFromStores.location;
   }
   if (undefined !== stateFromStores) {
-    if (!importDefault(10405)(tmp5, ensureGuildLoaded)) {
+    if (!importDefault(10406)(tmp5, ensureGuildLoaded)) {
       let tmp9 = obj[stateFromStores1];
     }
     return tmp9;

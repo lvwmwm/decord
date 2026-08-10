@@ -1,10 +1,10 @@
-// Module ID: 10772
-// Function ID: 10773
+// Module ID: 10773
+// Function ID: 10774
 // Name: StageChannelRaiseHandAck
-// Dependencies: [5, 32, 19, 17, 3994, 1377, 676, 21, 1236, 4303, 712, 4494, 589, 4730, 10773, 8007, 10762, 5140, 7797, 7799, 7778, 7774, 1297, 4299, 4715, 4714, 10764, 10296, 4239, 4011, 7748, 4764, 2]
+// Dependencies: [5, 32, 19, 17, 3994, 1377, 676, 21, 1236, 4303, 712, 4494, 589, 4730, 10774, 8007, 10763, 5140, 7797, 7799, 7778, 7774, 1297, 4299, 4715, 4714, 10765, 10297, 4239, 4011, 7748, 4764, 2]
 // Exports: default
 
-// Module 10772 (StageChannelRaiseHandAck)
+// Module 10773 (StageChannelRaiseHandAck)
 import handleStageInstanceCreateOrUpdate from "handleStageInstanceCreateOrUpdate";
 import set from "set";
 import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint";
@@ -22,7 +22,7 @@ class StageChannelRaiseHandAck {
   constructor(arg0) {
     channel = global.channel;
     _handleAcceptInvite = undefined;
-    f85999 = undefined;
+    f86016 = undefined;
     useState = undefined;
     _handleAcceptInvite = function _handleAcceptInvite(arg0) {
       const self = this;
@@ -132,7 +132,7 @@ class StageChannelRaiseHandAck {
     items1 = [];
     items1[0] = channel.id;
     stateFromStores = obj.useStateFromStores(items, () => outer1_9.getStageInstanceByChannel(channel.id), items1);
-    f85999 = stateFromStores;
+    f86016 = stateFromStores;
     tmp8 = require("useMountLayoutEffect")(() => {
       let obj = _undefined(_undefined2[14]);
       const intl = channel(_undefined2[8]).intl;
@@ -301,8 +301,8 @@ export default function GlobalStageChannelStatus(arg0) {
     const intl = id(1236).intl;
     stringResult = intl.string(id(1236).t["/YzI63"]);
   }
-  const tmp7 = importDefault(10764)();
-  let invitedHeaderText = tmp3(10296)(id);
+  const tmp7 = importDefault(10765)();
+  let invitedHeaderText = tmp3(10297)(id);
   let obj = id(589);
   const items = [closure_9];
   const items1 = [id];

@@ -1,10 +1,10 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 10441
+// Function ID: 10442
 // Name: computeActivityFlags
 // Dependencies: [676, 3974, 595, 1384, 7199, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 10440 (computeActivityFlags)
+// Module 10441 (computeActivityFlags)
 import ME from "ME";
 
 let c3;

@@ -1,9 +1,9 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11616
+// Function ID: 11617
 // Name: renderChatInputActionButtonGiftAndThread
-// Dependencies: [19, 17, 11368, 21, 4303, 11616, 11609, 1236, 11607, 11618, 4005, 712, 4648, 2]
+// Dependencies: [19, 17, 11369, 21, 4303, 11617, 11610, 1236, 11608, 11619, 4005, 712, 4648, 2]
 
-// Module 11615 (renderChatInputActionButtonGiftAndThread)
+// Module 11616 (renderChatInputActionButtonGiftAndThread)
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import { ChatInputActionType } from "TextAreaCta";
@@ -28,13 +28,13 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     const intl = onPress(1236).intl;
     obj[1] = intl.string(onPress(1236).t["4WNcpu"]);
     obj[2] = !canStartThreads;
-    obj[3] = onPress(11607).ThreadPlusIcon;
+    obj[3] = onPress(11608).ThreadPlusIcon;
     obj[4] = function onPress(arg0) {
       return onPress(arg0, outer1_5.THREAD);
     };
     obj[5] = styleButton;
-    let tmpResult = tmp(tmp2(11609), obj);
-    const tmp2Result = tmp2(11609);
+    let tmpResult = tmp(tmp2(11610), obj);
+    const tmp2Result = tmp2(11610);
   } else {
     obj = { accessible: null, channel: null, onPress: null, style: null, styleButton: null };
     obj[0] = accessible;
@@ -42,10 +42,10 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     obj[2] = onPress;
     obj[3] = styleButtonWrapper;
     obj[4] = styleButton;
-    tmpResult = tmp(tmp2(11618), obj);
+    tmpResult = tmp(tmp2(11619), obj);
   }
   obj[2] = tmpResult;
-  return jsx(importDefault(11616), { cleanup, state, children: null }, arg0);
+  return jsx(importDefault(11617), { cleanup, state, children: null }, arg0);
 }
 function getChatInputActionButtonGiftAndThreadKey(shouldShowThread) {
   let str = "gift";

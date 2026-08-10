@@ -1,7 +1,7 @@
 // Module ID: 4997
 // Function ID: 4998
 // Name: upsertAccount
-// Dependencies: [4323, 1218, 4998, 5128, 4390, 5137, 4319, 8903, 676, 5000, 687, 3, 4188, 709, 584, 11149, 12, 698, 643, 12899, 10642, 1351, 589, 8241, 2]
+// Dependencies: [4323, 1218, 4998, 5128, 4390, 5137, 4319, 8903, 676, 5000, 687, 3, 4188, 709, 584, 11150, 12, 698, 643, 12901, 10643, 1351, 589, 8241, 2]
 
 // Module 4997 (upsertAccount)
 import initialize from "initialize";
@@ -177,7 +177,7 @@ function activitySync(userId, activity, arg2) {
               }
               const tmp14Result = closure_13(type);
               if (null != tmp14Result) {
-                const obj4 = require(11149) /* apiRequest */;
+                const obj4 = require(11150) /* apiRequest */;
                 obj = { position: null, deviceId: null, repeat: null };
                 obj[0] = +bound;
                 obj[1] = device.id;
@@ -264,8 +264,8 @@ function handleUserActivitySyncStop() {
   if (null != tmp11) {
     const socket = tmp11.socket;
     if (tmp18) {
-      require(11149) /* apiRequest */.pause(socket.accountId, socket.accessToken);
-      const obj4 = require(11149) /* apiRequest */;
+      require(11150) /* apiRequest */.pause(socket.accountId, socket.accessToken);
+      const obj4 = require(11150) /* apiRequest */;
     }
     tmp18 = null != dependencyMap3[socket.accountId] && dependencyMap3[socket.accountId].track.id === trackId;
   }
@@ -311,7 +311,7 @@ function handleUserConnectionsUpdate() {
         if (null == tmp10.accessToken) {
           let tmp22 = require;
           let tmp23 = dependencyMap;
-          let obj2 = require(11149) /* apiRequest */;
+          let obj2 = require(11150) /* apiRequest */;
           let tmp24 = item10030;
           let accessToken = obj2.getAccessToken(tmp10.id);
         } else {
@@ -361,8 +361,8 @@ function autoPause() {
     if (null != tmp2) {
       const socket = tmp2.socket;
       let c43 = true;
-      require(11149) /* apiRequest */.pause(socket.accountId, socket.accessToken);
-      const obj2 = require(11149) /* apiRequest */;
+      require(11150) /* apiRequest */.pause(socket.accountId, socket.accessToken);
+      const obj2 = require(11150) /* apiRequest */;
       importDefault(698).track(constants4.SPOTIFY_AUTO_PAUSED);
       tmp4.info("Playback auto paused");
       const obj3 = importDefault(698);
@@ -465,7 +465,7 @@ function updatePlayerState(arg0, arg1, device) {
         if (context.type === tmp12.ALBUM) {
           resolved = Promise.resolve(context);
         } else {
-          const SpotifyAPI = _require(11149).SpotifyAPI;
+          const SpotifyAPI = _require(11150).SpotifyAPI;
           const obj2 = { url: null };
           obj2[0] = context.href;
           const value = SpotifyAPI.get(arg0, arg1, obj2);
@@ -650,7 +650,7 @@ prototype["connect"] = function connect() {
     self._requestedDisconnect = false;
     self._requestedConnect = true;
     ({ accountId, accessToken } = self);
-    const SpotifyAPI = accountId(11149).SpotifyAPI;
+    const SpotifyAPI = accountId(11150).SpotifyAPI;
     let obj = { url: null, query: null, onlyRetryOnAuthorizationErrors: true };
     obj[0] = constants.PLAYER;
     obj = { additional_types: null };
@@ -796,9 +796,9 @@ prototype["handleOpen"] = function handleOpen() {
   backoff.succeed();
   const pingInterval = this.pingInterval;
   pingInterval.start(closure_23, () => self.ping());
-  const profile = self(11149).getProfile(this.accountId, this.accessToken);
-  const obj = self(11149);
-  const devices = self(11149).getDevices(this.accountId, this.accessToken);
+  const profile = self(11150).getProfile(this.accountId, this.accessToken);
+  const obj = self(11150);
+  const devices = self(11150).getDevices(this.accountId, this.accessToken);
 };
 prototype["handleMessage"] = function handleMessage(data) {
   let payloads;
@@ -814,8 +814,8 @@ prototype["handleMessage"] = function handleMessage(data) {
         if (uri.startsWith(c22)) {
           const _decodeURIComponent = decodeURIComponent;
           self.connectionId = decodeURIComponent(uri.split(tmp15)[1]);
-          const result = require(11149) /* apiRequest */.subscribePlayerStateNotifications(self.accountId, self.accessToken, self.connectionId);
-          const obj = require(11149) /* apiRequest */;
+          const result = require(11150) /* apiRequest */.subscribePlayerStateNotifications(self.accountId, self.accessToken, self.connectionId);
+          const obj = require(11150) /* apiRequest */;
         }
         tmp15 = c22;
       }
@@ -964,7 +964,7 @@ prototype2["initialize"] = function initialize() {
     }
     return flag;
   });
-  const isSpotifyProtocolRegistered = require(11149) /* apiRequest */.fetchIsSpotifyProtocolRegistered();
+  const isSpotifyProtocolRegistered = require(11150) /* apiRequest */.fetchIsSpotifyProtocolRegistered();
 };
 prototype2["hasConnectedAccount"] = function hasConnectedAccount() {
   return Object.keys(closure_40).length > 0;
@@ -1341,7 +1341,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
           }
         }
         timeout1.start(100, () => closure_35.stop(), false);
-        obj9 = device(10642);
+        obj9 = device(10643);
       }
       if (null != tmp10) {
         if (!tmp22) {
@@ -1465,7 +1465,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
           handleUserActivitySyncStop();
         }
         if (null != metadata) {
-          const obj2 = require(11149) /* apiRequest */;
+          const obj2 = require(11150) /* apiRequest */;
           ({ accountId, accessToken } = socket);
           let TRACK = metadata.type;
           if (TRACK == null) {
@@ -1501,7 +1501,7 @@ const spotifyStore = new SpotifyStore(require("dispatcher"), {
     userId = userId.userId;
     if (userId === store.getId()) {
       const result = updateVoiceState.isCurrentClientInVoiceChannel();
-      let obj = require(10642) /* useIsSpeaking */;
+      let obj = require(10643) /* useIsSpeaking */;
       obj = { userId: null, checkSoundSharing: true, checkSoundboardSounds: false };
       obj[0] = userId;
       if (result) {

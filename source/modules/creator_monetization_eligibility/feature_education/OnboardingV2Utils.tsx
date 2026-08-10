@@ -1,10 +1,10 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 15379
+// Function ID: 15380
 // Name: items
 // Dependencies: [1415, 1891, 1903, 676, 589, 5880, 2]
 // Exports: canSeeCreatorMonetizationOnboardingV2Upsell, useCanSeeCreatorMonetizationOnboardingV2Upsell
 
-// Module 15371 (items)
+// Module 15379 (items)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";

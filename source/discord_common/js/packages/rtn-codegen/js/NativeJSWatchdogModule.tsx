@@ -1,9 +1,9 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16490
+// Function ID: 16491
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 16481 (enforcing)
+// Module 16490 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeJSWatchdogModule");

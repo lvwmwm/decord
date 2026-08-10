@@ -1,10 +1,10 @@
-// Module ID: 11968
-// Function ID: 11969
+// Module ID: 11969
+// Function ID: 11970
 // Name: getNoMutualFriendsSource
-// Dependencies: [19, 17, 21, 7623, 11969, 11970, 11971, 4153, 2]
+// Dependencies: [19, 17, 21, 7623, 11970, 11971, 11972, 4153, 2]
 // Exports: NoMutualFriends, getNoMutualFriendsSource, useNoMutualFriendsSource
 
-// Module 11968 (getNoMutualFriendsSource)
+// Module 11969 (getNoMutualFriendsSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getNoMutualFriendsSource = function getNoMutualFriendsSource(theme)
   let obj = require(7623) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(11969);
-    },
-    darker() {
       return callback(11970);
     },
-    light() {
+    darker() {
       return callback(11971);
+    },
+    light() {
+      return callback(11972);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useNoMutualFriendsSource = function useNoMutualFriendsSource() {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(11969);
-    },
-    darker() {
       return callback(11970);
     },
-    light() {
+    darker() {
       return callback(11971);
+    },
+    light() {
+      return callback(11972);
     }
   };
   return require(7623) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const NoMutualFriends = function NoMutualFriends(arg0) {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(11969);
-    },
-    darker() {
       return callback(11970);
     },
-    light() {
+    darker() {
       return callback(11971);
+    },
+    light() {
+      return callback(11972);
     }
   };
   obj = {};

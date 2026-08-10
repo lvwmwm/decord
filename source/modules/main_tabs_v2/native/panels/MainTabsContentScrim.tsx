@@ -1,10 +1,10 @@
-// Module ID: 15634
-// Function ID: 15635
+// Module ID: 15642
+// Function ID: 15643
 // Name: MainTabsContentScrim
 // Dependencies: [17, 21, 4303, 712, 4036, 2]
 // Exports: MainTabsContentScrim
 
-// Module 15634 (MainTabsContentScrim)
+// Module 15642 (MainTabsContentScrim)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 

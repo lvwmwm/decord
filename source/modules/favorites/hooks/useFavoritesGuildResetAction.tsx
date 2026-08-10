@@ -1,10 +1,10 @@
-// Module ID: 15263
-// Function ID: 15264
+// Module ID: 15270
+// Function ID: 15271
 // Name: useFavoritesGuildResetAction
 // Dependencies: [19, 4124, 676, 3974, 9711, 1894, 1222, 9710, 1236, 3030, 2]
 // Exports: default
 
-// Module 15263 (useFavoritesGuildResetAction)
+// Module 15270 (useFavoritesGuildResetAction)
 import noop from "noop";
 import handleConnectionOpen from "handleConnectionOpen";
 import { Routes } from "ME";

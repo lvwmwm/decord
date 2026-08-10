@@ -1,10 +1,10 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16681
+// Function ID: 16682
 // Name: getGuildTagPalettePresetColorLabel
 // Dependencies: [8052, 1236, 1351, 2]
 // Exports: default
 
-// Module 16672 (getGuildTagPalettePresetColorLabel)
+// Module 16681 (getGuildTagPalettePresetColorLabel)
 import { GuildTagPalettePresetColor as closure_2 } from "items";
 
 function getGuildTagPalettePresetColorLabel(primary) {

@@ -1,8 +1,8 @@
-// Module ID: 15374
-// Function ID: 15375
-// Dependencies: [19, 17, 3929, 676, 21, 4303, 4299, 712, 647, 9021, 8996, 14340, 7970, 1297, 15375, 1236, 15376, 4715, 2]
+// Module ID: 15382
+// Function ID: 15383
+// Dependencies: [19, 17, 3929, 676, 21, 4303, 4299, 712, 647, 9021, 8996, 14342, 7970, 1297, 15383, 1236, 15384, 4715, 2]
 
-// Module 15374
+// Module 15382
 import importAllResult from "noop";
 import get_ActivityIndicator from "CollapsingText";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";
@@ -49,7 +49,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     outer1_1(outer1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  let obj1 = guild(14340);
+  let obj1 = guild(14342);
   obj = { style: null, children: null };
   const items4 = [tmp.wrapper, ];
   obj = { paddingBottom: obj1.useYouBarTotalHeight(16) };
@@ -60,7 +60,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     obj1[0] = tmp.personalizeButtonWrapper;
     const obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
-    obj3[0] = importDefault(15375);
+    obj3[0] = importDefault(15383);
     obj2[0] = callback(tmp2(1297).Icon, obj3);
     const intl = tmp2(1236).intl;
     obj2[1] = intl.string(tmp2(1236).t["Yhi9/N"]);
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   }
   const items5 = [canCustomizeGuild, ];
   const obj4 = { style: tmp.content, children: null };
-  const items6 = [callback(closure_5, { source: importDefault(15376) }), , , ];
+  const items6 = [callback(closure_5, { source: importDefault(15384) }), , , ];
   const obj6 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: null };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);

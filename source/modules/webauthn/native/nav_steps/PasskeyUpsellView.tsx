@@ -1,10 +1,10 @@
-// Module ID: 13970
-// Function ID: 13971
+// Module ID: 13972
+// Function ID: 13973
 // Name: PasskeyUpsellView
-// Dependencies: [32, 19, 17, 13966, 676, 1369, 21, 4303, 712, 1480, 1236, 13971, 13972, 5270, 1974, 5328, 13975, 4299, 500, 4714, 8476, 2]
+// Dependencies: [32, 19, 17, 13968, 676, 1369, 21, 4303, 712, 1480, 1236, 13973, 13974, 5270, 1974, 5328, 13977, 4299, 500, 4714, 8476, 2]
 // Exports: default
 
-// Module 13970 (PasskeyUpsellView)
+// Module 13972 (PasskeyUpsellView)
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "Text";
@@ -55,9 +55,9 @@ export default function PasskeyUpsellView() {
     navigation.push(outer1_8.NAME, obj);
   }
   function onCancel() {
-    callback(13971).markDismissed(constants.USER_DISMISS);
-    const obj = callback(13971);
-    const result = callback(13972).closePasskeyUpsellModal();
+    callback(13973).markDismissed(constants.USER_DISMISS);
+    const obj = callback(13973);
+    const result = callback(13974).closePasskeyUpsellModal();
   }
   let obj = navigation(1480);
   navigation = obj.useNavigation();
@@ -77,7 +77,7 @@ export default function PasskeyUpsellView() {
   obj = { contentContainerStyle: tmp4.scrollViewContainer, children: null };
   obj1 = { style: tmp4.headerContainer, children: null };
   const obj2 = { source: null, style: null };
-  obj2[0] = importDefault(13975);
+  obj2[0] = importDefault(13977);
   obj2[1] = tmp4.headerImage;
   const items1 = [callback(closure_6, obj2), , ];
   const obj3 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp4.headerText, children: null };

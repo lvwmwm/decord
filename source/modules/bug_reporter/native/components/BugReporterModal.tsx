@@ -1,10 +1,10 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9867
+// Function ID: 9868
 // Name: handleClose
-// Dependencies: [5, 32, 19, 17, 1903, 9865, 21, 4303, 712, 689, 687, 4509, 1480, 589, 1236, 5270, 4851, 4002, 8027, 9867, 584, 9868, 9877, 6008, 7984, 5268, 1416, 4872, 4712, 4299, 5376, 9878, 4846, 1297, 4714, 7790, 5767, 5374, 4271, 9893, 1988, 7985, 7976, 708, 9894, 9848, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 9866, 21, 4303, 712, 689, 687, 4509, 1480, 589, 1236, 5270, 4851, 4002, 8027, 9868, 584, 9869, 9878, 6008, 7984, 5268, 1416, 4872, 4712, 4299, 5376, 9879, 4846, 1297, 4714, 7790, 5767, 5374, 4271, 9894, 1988, 7985, 7976, 708, 9895, 9849, 5783, 2]
 // Exports: default
 
-// Module 9866 (handleClose)
+// Module 9867 (handleClose)
 import zustandStore from "zustandStore";
 import PressableBase from "PressableBase";
 import uriScheme from "uriScheme";
@@ -40,7 +40,7 @@ class BugCreateScreen {
     useRef = undefined;
     c10 = undefined;
     useState = undefined;
-    f83874 = undefined;
+    f83891 = undefined;
     c13 = undefined;
     useState = undefined;
     useCallback = undefined;
@@ -52,7 +52,7 @@ class BugCreateScreen {
     c21 = undefined;
     c22 = undefined;
     useRef = undefined;
-    f83875 = undefined;
+    f83892 = undefined;
     _handleAttachmentSelect = function _handleAttachmentSelect() {
       const self = this;
       const tmp = first(function*() {
@@ -168,7 +168,7 @@ class BugCreateScreen {
       closure_9.current = current;
       callback(current);
     }, []);
-    f83874 = callback;
+    f83891 = callback;
     tmp13 = c4(c5.useState(false), 2);
     first5 = tmp13[0];
     c13 = first5;
@@ -211,7 +211,7 @@ class BugCreateScreen {
       }
       return isStaffResult;
     });
-    f83875 = stateFromStores;
+    f83892 = stateFromStores;
     items1 = [];
     items1[0] = navigation;
     effect = c5.useEffect(() => {
@@ -305,7 +305,7 @@ class BugCreateScreen {
                       let closure_2 = arg2;
                       let c5 = 0;
                       let c6 = 0;
-                      return (/* F120327 */ function*() { ... })();
+                      return (/* F120368 */ function*() { ... })();
                     });
                     v0 = tmp;
                     const apply = tmp.apply;
@@ -579,7 +579,7 @@ class BugCreateScreen {
     }, items5);
     tmp31 = useState;
     tmp33 = c10;
-    tmp32 = f83874;
+    tmp32 = f83891;
     tmp34 = c7;
     obj = { spacing: 24, style: tmp.container, children: null };
     obj1 = { spacing: 8, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 15949
+// Function ID: 15950
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 3938, 21, 4303, 1297, 712, 589, 4146, 15941, 1419, 4299, 1236, 15942, 15943, 2]
+// Dependencies: [19, 17, 3938, 21, 4303, 1297, 712, 589, 4146, 15950, 1419, 4299, 1236, 15951, 15952, 2]
 // Exports: default
 
-// Module 15940 (MessageRequestRowSenderDetails)
+// Module 15949 (MessageRequestRowSenderDetails)
 import "noop";
 import { View } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -55,7 +55,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     return tmp2;
   });
-  let obj1 = otherUser(15941);
+  let obj1 = otherUser(15950);
   const messageRequestRelativeTimestampText = obj1.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const rounded = Math.floor(random * importDefault(1419).DEFAULT_AVATARS.length);
@@ -113,7 +113,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const obj8 = { style: null, channel: null };
     obj8[0] = tmp.messagePreview;
     obj8[1] = channel;
-    tmp11Result = tmp11(tmp7(15942), obj8);
+    tmp11Result = tmp11(tmp7(15951), obj8);
   }
   items5[1] = tmp11Result;
   if (flag) {
@@ -125,8 +125,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     obj9[1] = otherUser.id;
     const intl2 = tmp2(1236).intl;
     obj9[2] = intl2.string(tmp2(1236).t.hTltPn);
-    flag = tmp11(tmp7(15943), obj9);
-    const tmp7Result = tmp7(15943);
+    flag = tmp11(tmp7(15952), obj9);
+    const tmp7Result = tmp7(15952);
   }
   const obj10 = { children: null };
   items5[2] = flag;

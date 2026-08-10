@@ -1,14 +1,14 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13024
+// Function ID: 13025
 // Name: serverGuildRoomObjectToClient
-// Dependencies: [13023, 2]
+// Dependencies: [13025, 2]
 // Exports: serverGuildRoomToClient
 
-// Module 13022 (serverGuildRoomObjectToClient)
+// Module 13024 (serverGuildRoomObjectToClient)
 function serverGuildRoomObjectToClient(object_type) {
-  if (object_type.object_type === require(13023) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
+  if (object_type.object_type === require(13025) /* GuildRoomObjectTypes */.GuildRoomObjectTypes.PLANT) {
     let obj = { objectType: null };
-    obj[0] = tmp(13023).GuildRoomObjectTypes.PLANT;
+    obj[0] = tmp(13025).GuildRoomObjectTypes.PLANT;
     obj = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
     ({ object_id: obj2[0], created_by: obj2[1] } = object_type);
     let date;
@@ -21,7 +21,7 @@ function serverGuildRoomObjectToClient(object_type) {
     const merged = Object.assign(obj);
   } else {
     obj = { objectType: null };
-    obj[0] = tmp(13023).GuildRoomObjectTypes.NOTE;
+    obj[0] = tmp(13025).GuildRoomObjectTypes.NOTE;
     const obj1 = { objectId: null, createdBy: null, updatedAt: null, updatedBy: null };
     ({ object_id: obj4[0], created_by: obj4[1] } = object_type);
     let date1;

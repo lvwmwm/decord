@@ -1,10 +1,10 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9870
+// Function ID: 9871
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1372, 676, 3, 17, 4202, 9169, 9870, 7, 9871, 9873, 1898, 4165, 9874, 9875, 9876, 530, 2]
+// Dependencies: [5, 1372, 676, 3, 17, 4202, 9169, 9871, 7, 9872, 9874, 1898, 4165, 9875, 9876, 9877, 530, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 9869 (_uploadDebugLogFiles)
+// Module 9870 (_uploadDebugLogFiles)
 import V6OrEarlierAPIError from "V6OrEarlierAPIError";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { Endpoints } from "ME";
@@ -93,7 +93,7 @@ function _uploadDebugLogFiles() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(9870);
+              obj1 = callback(9871);
               c6 = 3;
               c7 = 1;
               obj4 = { value: null, done: false };

@@ -1,9 +1,9 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16416
+// Function ID: 16417
 // Name: handleDeletedEntityIds
 // Dependencies: [5176, 5219, 1372, 1964, 1891, 4994, 3, 5261, 709, 589, 7112, 1217, 11, 2]
 
-// Module 16407 (handleDeletedEntityIds)
+// Module 16416 (handleDeletedEntityIds)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import ensureGuildLoaded from "ensureGuildLoaded";

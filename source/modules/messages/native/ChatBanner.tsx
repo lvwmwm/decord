@@ -1,10 +1,10 @@
-// Module ID: 10401
-// Function ID: 10402
+// Module ID: 10402
+// Function ID: 10403
 // Name: OptInChannelBanner
-// Dependencies: [19, 17, 4994, 4315, 10402, 676, 21, 4303, 712, 10403, 10404, 589, 11, 1348, 698, 4498, 5256, 4299, 1236, 4714, 5889, 7224, 4846, 5253, 8080, 2]
+// Dependencies: [19, 17, 4994, 4315, 10403, 676, 21, 4303, 712, 10404, 10405, 589, 11, 1348, 698, 4498, 5256, 4299, 1236, 4714, 5889, 7224, 4846, 5253, 8080, 2]
 // Exports: default
 
-// Module 10401 (OptInChannelBanner)
+// Module 10402 (OptInChannelBanner)
 import Button from "Button";
 import get_ActivityIndicator from "Text";
 import _handleConnectionOpen from "_handleConnectionOpen";
@@ -273,7 +273,7 @@ export default function ChatBanner(channel) {
   let oldestUnreadTimestamp;
   let unreadCount;
   channel = channel.channel;
-  let obj = importDefault(10404)();
+  let obj = importDefault(10405)();
   let obj1 = channel(589);
   const items = [generateOldThreadCutoff];
   const items1 = [channel.id];

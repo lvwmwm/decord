@@ -1,10 +1,10 @@
-// Module ID: 12626
-// Function ID: 12627
+// Module ID: 12628
+// Function ID: 12629
 // Name: _getPresenceActivityInviteCoverImageURL
-// Dependencies: [19, 12627, 1877, 8241, 589, 12628, 2]
+// Dependencies: [19, 12629, 1877, 8241, 589, 12630, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 12626 (_getPresenceActivityInviteCoverImageURL)
+// Module 12628 (_getPresenceActivityInviteCoverImageURL)
 import noop from "noop";
 import getCoverImageURL from "getCoverImageURL";
 
@@ -80,8 +80,8 @@ export const getPresenceActivityInviteCoverImageURL = function getPresenceActivi
     obj = { messageId: null, coverImageURL: null };
     obj[0] = messageId;
     obj[1] = imageURL;
-    importAll(12628).setCoverImageURL(obj);
-    const obj2 = importAll(12628);
+    importAll(12630).setCoverImageURL(obj);
+    const obj2 = importAll(12630);
   }
   return imageURL;
 };

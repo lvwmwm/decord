@@ -1,10 +1,10 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16035
+// Function ID: 16036
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 10442, 21, 4303, 10443, 16027, 16029, 15060, 4036, 4713, 4164, 15143, 5427, 16030, 2]
+// Dependencies: [19, 17, 10443, 21, 4303, 10444, 16036, 16038, 15062, 4036, 4713, 4164, 15145, 5427, 16039, 2]
 // Exports: default
 
-// Module 16026 (LaunchPadContainer)
+// Module 16035 (LaunchPadContainer)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG";
@@ -47,12 +47,12 @@ export default function LaunchPadContainer(children) {
   updaters = undefined;
   let dependencyMap;
   const tmp = createCacheKey();
-  const tmp4 = updaters(10443)();
-  const tmp5 = updaters(16027)();
+  const tmp4 = updaters(10444)();
+  const tmp5 = updaters(16036)();
   launchPadSharedState = tmp5.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp5);
-  ({ gesture, gestureRef } = updaters(16029)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
-  const tmp7 = updaters(15060)();
+  ({ gesture, gestureRef } = updaters(16038)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
+  const tmp7 = updaters(15062)();
   dependencyMap = tmp7;
   let obj = launchPadSharedState(4036);
   const fn = function o() {
@@ -111,11 +111,11 @@ export default function LaunchPadContainer(children) {
     obj3[3] = launchPadSharedState;
     obj3[4] = launchPadPullTabState;
     obj3[5] = updaters;
-    const tmp10Result = tmp10(updaters(16030), obj3);
+    const tmp10Result = tmp10(updaters(16039), obj3);
   }
   items1[1] = tmp10Result;
   obj2[1] = items1;
   obj1[1] = closure_7(closure_3, obj2);
   obj[1] = callback(launchPadSharedState(5427).GestureDetector, obj1);
-  return callback(updaters(15143).Provider, obj);
+  return callback(updaters(15145).Provider, obj);
 };

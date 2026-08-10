@@ -1,10 +1,10 @@
-// Module ID: 15672
-// Function ID: 15673
+// Module ID: 15680
+// Function ID: 15681
 // Name: ResourceChannelRow
-// Dependencies: [19, 17, 1372, 1961, 4521, 3929, 676, 21, 4303, 712, 589, 8405, 11399, 15673, 6917, 11656, 1416, 4846, 4299, 4293, 15666, 1222, 1236, 15674, 4714, 2]
+// Dependencies: [19, 17, 1372, 1961, 4521, 3929, 676, 21, 4303, 712, 589, 8405, 11400, 15681, 6917, 11657, 1416, 4846, 4299, 4293, 15674, 1222, 1236, 15682, 4714, 2]
 // Exports: default
 
-// Module 15672 (ResourceChannelRow)
+// Module 15680 (ResourceChannelRow)
 import getDefaultRules from "get defaultRules";
 import get_ActivityIndicator from "PressableBase";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -52,9 +52,9 @@ function ResourceChannelRow(channelId) {
   if (length > 0) {
     first = forumPostMediaProperties[0];
   }
-  let tmp2Result = tmp2(11399);
+  let tmp2Result = tmp2(11400);
   let flag = tmp2Result.useSharedMediaProps({ channel: stateFromStores, media: first }).shouldObscure;
-  const tmp11 = stateFromStores(15673)(firstResult);
+  const tmp11 = stateFromStores(15681)(firstResult);
   const tmp12 = null != stateFromStores && null == stateFromStores2.first() && !stateFromStores2.loadingMore && !stateFromStores2.ready && !stateFromStores2.hasFetched;
   dependencyMap = tmp12;
   const items3 = [channelId, tmp12];
@@ -150,7 +150,7 @@ function ResourceChannelRow(channelId) {
               }
               obj9[4] = id;
               obj9[5] = tmp.thumbnail;
-              tmp19Result2 = tmp19(tmp2(11399).ForumPostMediaThumbnail, obj9);
+              tmp19Result2 = tmp19(tmp2(11400).ForumPostMediaThumbnail, obj9);
             }
           }
         }
@@ -179,7 +179,7 @@ const result = require("ensureGuildLoaded").fileFinishedImporting("modules/guild
 export default function GuildHomeResources(guildId) {
   guildId = guildId.guildId;
   const tmp = createCacheKey();
-  const arr = importDefault(15666)(guildId);
+  const arr = importDefault(15674)(guildId);
   if (0 === arr.length) {
     let obj = { style: null, children: null };
     obj[0] = tmp.emptyStateContainer;
@@ -189,7 +189,7 @@ export default function GuildHomeResources(guildId) {
     const items = [callback(guildId(4299).Text, obj), , ];
     const obj1 = { style: null, source: null };
     obj1[0] = tmp.emptyStateImage;
-    obj1[1] = importDefault(15674);
+    obj1[1] = importDefault(15682);
     items[1] = callback(closure_5, obj1);
     const obj2 = { onPress: null, text: null };
     obj2[0] = function onPress() {

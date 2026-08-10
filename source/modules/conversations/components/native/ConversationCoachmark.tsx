@@ -1,10 +1,10 @@
-// Module ID: 12537
-// Function ID: 12538
+// Module ID: 12539
+// Function ID: 12540
 // Name: NewBadge
 // Dependencies: [32, 19, 17, 1369, 21, 1358, 4303, 712, 4299, 1236, 6022, 8653, 2]
 // Exports: ConversationCoachmark
 
-// Module 12537 (NewBadge)
+// Module 12539 (NewBadge)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

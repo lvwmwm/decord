@@ -1,10 +1,10 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10632
+// Function ID: 10633
 // Name: confirmActivityChangeModal
 // Dependencies: [3938, 1903, 4494, 4642, 1236, 1884, 2]
 // Exports: default
 
-// Module 10631 (confirmActivityChangeModal)
+// Module 10632 (confirmActivityChangeModal)
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
 

@@ -1,9 +1,9 @@
-// Module ID: 16909
-// Function ID: 16910
+// Module ID: 16918
+// Function ID: 16919
 // Name: setDifference
-// Dependencies: [109, 4322, 1960, 4319, 10684, 3, 16910, 5261, 9169, 709, 16930, 2]
+// Dependencies: [109, 4322, 1960, 4319, 10685, 3, 16919, 5261, 9169, 709, 16939, 2]
 
-// Module 16909 (setDifference)
+// Module 16918 (setDifference)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import reset from "reset";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -27,7 +27,7 @@ function setDifference(set, set2) {
   return set;
 }
 function makeErrorKey(item10044) {
-  const obj = require(16910) /* ErrorDefinitions */.ErrorDefinitions[item10044.type];
+  const obj = require(16919) /* ErrorDefinitions */.ErrorDefinitions[item10044.type];
   let errorContextKey;
   if (obj != null) {
     errorContextKey = obj.makeErrorContextKey(item10044);
@@ -60,7 +60,7 @@ prototype["updateActiveErrors"] = function updateActiveErrors() {
   }
   allActiveStreams = allActiveStreams.getAllActiveStreams();
   const map = new Map();
-  const values = Object.values(require(16910) /* ErrorDefinitions */.ErrorDefinitions);
+  const values = Object.values(require(16919) /* ErrorDefinitions */.ErrorDefinitions);
   const iter = values[Symbol.iterator]();
   while (iter !== undefined) {
     let obj = { voiceChannelId: null, voiceState: null, activeStreams: null };
@@ -134,7 +134,7 @@ prototype["handleReportAVError"] = function handleReportAVError(arg0) {
   let context;
   let error;
   ({ error, context } = arg0);
-  const result = require(16930) /* getCurrentScreenshareCaptureMethod */.sendAVErrorAnalyticsEvent(error, context);
+  const result = require(16939) /* getCurrentScreenshareCaptureMethod */.sendAVErrorAnalyticsEvent(error, context);
 };
 const aVErrorManager = new AVErrorManager();
 let tmp2 = new require("updateVoiceState")("AVErrorManager");

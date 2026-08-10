@@ -1,10 +1,10 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11595
+// Function ID: 11596
 // Name: MessageBlock
 // Dependencies: [19, 17, 21, 712, 4303, 1297, 2]
 // Exports: default
 
-// Module 11594 (MessageBlock)
+// Module 11595 (MessageBlock)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

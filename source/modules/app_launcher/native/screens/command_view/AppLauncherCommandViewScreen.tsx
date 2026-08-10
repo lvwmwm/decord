@@ -1,10 +1,10 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11541
+// Function ID: 11542
 // Name: AppLauncherCommandViewFooter
-// Dependencies: [5, 32, 19, 17, 4295, 8339, 1964, 1479, 676, 1604, 21, 4303, 712, 11541, 589, 4036, 4304, 4307, 4272, 4725, 4151, 4715, 1236, 4249, 9548, 4498, 5369, 11542, 6982, 8853, 11437, 705, 11418, 11544, 1935, 8338, 11384, 10617, 1474, 11422, 10008, 11545, 10009, 4860, 1872, 4851, 11546, 9549, 5399, 4299, 11547, 11548, 11576, 1297, 38, 11515, 9537, 6980, 8344, 9538, 11577, 11578, 11500, 11501, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 8339, 1964, 1479, 676, 1604, 21, 4303, 712, 11542, 589, 4036, 4304, 4307, 4272, 4725, 4151, 4715, 1236, 4249, 9548, 4498, 5369, 11543, 6982, 8853, 11438, 705, 11419, 11545, 1935, 8338, 11385, 10618, 1474, 11423, 10009, 11546, 10010, 4860, 1872, 4851, 11547, 9549, 5399, 4299, 11548, 11549, 11577, 1297, 38, 11516, 9537, 6980, 8344, 9538, 11578, 11579, 11501, 11502, 2]
 // Exports: default
 
-// Module 11540 (AppLauncherCommandViewFooter)
+// Module 11541 (AppLauncherCommandViewFooter)
 import closure_4 from "getIndexKey";
 import getCommandContext from "getCommandContext";
 import LinearGradient from "LinearGradient";
@@ -1345,12 +1345,12 @@ function LoadingState() {
 }
 function NotFoundState(onPress) {
   const tmp = createCacheKey();
-  let obj = require(11437) /* handleApplicationSelected */;
+  let obj = require(11438) /* handleApplicationSelected */;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(9549) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
   obj = { style: tmp.emptyStateContainer, children: null };
   obj = { style: tmp.emptyState, lightSource: null, darkSource: null, title: null, body: null, children: null };
-  obj[1] = importDefault(11577);
-  obj[2] = importDefault(11578);
+  obj[1] = importDefault(11578);
+  obj[2] = importDefault(11579);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[3] = intl.string(require(1236) /* getSystemLocale */.t["pX/qb9"]);
   const intl2 = require(1236) /* getSystemLocale */.intl;
@@ -1365,7 +1365,7 @@ function NotFoundState(onPress) {
 function NoPermsState(command) {
   command = command.command;
   const tmp = createCacheKey();
-  let obj = require(11437) /* handleApplicationSelected */;
+  let obj = require(11438) /* handleApplicationSelected */;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(require(9549) /* AppLauncherEntrypoint */.AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
   obj = { style: tmp.emptyStateContainer, children: null };
   obj = { style: tmp.commandNameContainer, children: null };
@@ -1373,8 +1373,8 @@ function NoPermsState(command) {
   obj[1] = items;
   const items1 = [callback6(closure_7, obj), ];
   const obj3 = { style: tmp.emptyState, lightSource: null, darkSource: null, title: null, body: null, children: null };
-  obj3[1] = importDefault(11500);
-  obj3[2] = importDefault(11501);
+  obj3[1] = importDefault(11501);
+  obj3[2] = importDefault(11502);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj3[3] = intl.string(require(1236) /* getSystemLocale */.t.TzufcR);
   const intl2 = require(1236) /* getSystemLocale */.intl;

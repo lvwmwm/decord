@@ -1,9 +1,9 @@
-// Module ID: 10364
-// Function ID: 10365
+// Module ID: 10365
+// Function ID: 10366
 // Name: BlockedInformationTable
-// Dependencies: [32, 19, 17, 1372, 3938, 1903, 9244, 10363, 676, 21, 4303, 712, 8787, 1236, 4261, 5767, 5374, 1297, 1609, 5728, 5748, 589, 8309, 5397, 698, 5399, 8587, 4299, 4493, 8496, 4271, 10365, 1988, 503, 4714, 9243, 7784, 1974, 3998, 2]
+// Dependencies: [32, 19, 17, 1372, 3938, 1903, 9244, 10364, 676, 21, 4303, 712, 8787, 1236, 4261, 5767, 5374, 1297, 1609, 5728, 5748, 589, 8309, 5397, 698, 5399, 8587, 4299, 4493, 8496, 4271, 10366, 1988, 503, 4714, 9243, 7784, 1974, 3998, 2]
 
-// Module 10364 (BlockedInformationTable)
+// Module 10365 (BlockedInformationTable)
 import asyncRequireImpl from "asyncRequireImpl";
 import importAllResult from "context";
 import { View } from "Button";

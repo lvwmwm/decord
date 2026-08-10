@@ -1,8 +1,8 @@
-// Module ID: 11467
-// Function ID: 11468
-// Dependencies: [109, 19, 1479, 676, 21, 8570, 4303, 712, 5728, 5748, 4168, 1607, 5783, 4498, 1481, 11468, 11514, 11540, 11579, 9548, 2]
+// Module ID: 11468
+// Function ID: 11469
+// Dependencies: [109, 19, 1479, 676, 21, 8570, 4303, 712, 5728, 5748, 4168, 1607, 5783, 4498, 1481, 11469, 11515, 11541, 11580, 9548, 2]
 
-// Module 11467
+// Module 11468
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "context";
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
@@ -58,7 +58,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   const items1 = [tmp4.navigator, contentStyle];
   const merged = Object.assign(accessibilityNativeStackOptions);
   obj[1] = { contentStyle: items1, headerShown: false, fullScreenGestureEnabled: true };
-  const obj2 = { name: AppLauncherRouteName.HOME, component: importDefault(11468), initialParams: null };
+  const obj2 = { name: AppLauncherRouteName.HOME, component: importDefault(11469), initialParams: null };
   const obj3 = { context, initialSearchQuery: null };
   let initialSearchQuery;
   if (overrideParams.initialRouteName === AppLauncherRouteName.HOME) {
@@ -67,7 +67,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj3[1] = initialSearchQuery;
   obj2[2] = obj3;
   const items2 = [closure_8(createNativeStackNavigator.Screen, obj2), , , ];
-  const obj4 = { name: AppLauncherRouteName.APPLICATION_VIEW, component: importDefault(11514), initialParams: null };
+  const obj4 = { name: AppLauncherRouteName.APPLICATION_VIEW, component: importDefault(11515), initialParams: null };
   const obj5 = { context };
   let obj6 = obj12;
   if (initialRouteName !== AppLauncherRouteName.APPLICATION_VIEW) {
@@ -77,7 +77,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj5.expandBottomSheet = expandBottomSheet;
   obj4[2] = obj5;
   items2[1] = closure_8(createNativeStackNavigator.Screen, obj4);
-  const obj7 = { name: AppLauncherRouteName.COMMAND_VIEW, component: importDefault(11540), initialParams: null };
+  const obj7 = { name: AppLauncherRouteName.COMMAND_VIEW, component: importDefault(11541), initialParams: null };
   let tmp15;
   if ("channel" === context.type) {
     tmp15 = context;
@@ -91,7 +91,7 @@ const memoResult = importAllResult.memo(function AppLauncherNavigator(arg0) {
   obj8.expandBottomSheet = expandBottomSheet;
   obj7[2] = obj8;
   items2[2] = closure_8(createNativeStackNavigator.Screen, obj7);
-  const obj10 = { name: AppLauncherRouteName.APP_LIST_VIEW, component: importDefault(11579), initialParams: null };
+  const obj10 = { name: AppLauncherRouteName.APP_LIST_VIEW, component: importDefault(11580), initialParams: null };
   if (overrideParams.initialRouteName !== AppLauncherRouteName.APP_LIST_VIEW) {
     obj12 = {};
   }

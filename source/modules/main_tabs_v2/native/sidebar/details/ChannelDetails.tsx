@@ -1,16 +1,16 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15705
+// Function ID: 15706
 // Name: PX_8
-// Dependencies: [19, 17, 11710, 1372, 8395, 9669, 21, 712, 4303, 589, 11670, 15698, 5728, 5748, 15696, 4700, 7641, 1609, 500, 4283, 6934, 11734, 11709, 4036, 4304, 4307, 4713, 11718, 4166, 5427, 15699, 15711, 15800, 15802, 15803, 15804, 4661, 2]
+// Dependencies: [19, 17, 11711, 1372, 8395, 9669, 21, 712, 4303, 589, 11671, 15706, 5728, 5748, 15704, 4700, 7641, 1609, 500, 4283, 6934, 11735, 11710, 4036, 4304, 4307, 4713, 11719, 4166, 5427, 15707, 15719, 15808, 15810, 15811, 15812, 4661, 2]
 
-// Module 15697 (PX_8)
+// Module 15705 (PX_8)
 import importAllResult from "DCDDeviceManager";
 import get_ActivityIndicator from "useSafeAreaInsets";
 import prototype from "prototype";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import useChannelDetailsStore from "useChannelDetailsStore";
 import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens";
-import jsxProd from "module_11734";
+import jsxProd from "module_11735";
 import createCacheKey from "createCacheKey";
 
 let CHANNEL_DETAILS_TOP_MARGIN;

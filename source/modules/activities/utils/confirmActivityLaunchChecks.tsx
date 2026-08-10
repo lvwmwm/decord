@@ -1,10 +1,10 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10629
+// Function ID: 10630
 // Name: getOrFetchApplicationForLaunch
-// Dependencies: [5, 1372, 1371, 676, 10629, 10614, 709, 4202, 3919, 10631, 10599, 10632, 7589, 10634, 2]
+// Dependencies: [5, 1372, 1371, 676, 10630, 10615, 709, 4202, 3919, 10632, 10600, 10633, 7589, 10635, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10628 (getOrFetchApplicationForLaunch)
+// Module 10629 (getOrFetchApplicationForLaunch)
 import EmbeddedActivityLocationKind from "EmbeddedActivityLocationKind";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import participantFromServer from "participantFromServer";
@@ -36,13 +36,13 @@ function _getOrFetchApplicationForLaunch() {
       ({ applicationId: c0, channelId: c1, guildId: c2 } = callback);
       yield "ct";
       let c6 = 1;
-      yield callback2(10629)(callback, callback2);
+      yield callback2(10630)(callback, callback2);
       c6 = 0;
       ensureGuildLoaded = participantFromServer;
       if (null != dependencyMap) {
-        let PRIVATE_CHANNEL = callback(10614).EmbeddedActivityLocationKind.GUILD_CHANNEL;
+        let PRIVATE_CHANNEL = callback(10615).EmbeddedActivityLocationKind.GUILD_CHANNEL;
       } else {
-        PRIVATE_CHANNEL = callback(10614).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
+        PRIVATE_CHANNEL = callback(10615).EmbeddedActivityLocationKind.PRIVATE_CHANNEL;
       }
       const obj2 = callback2(709);
       const obj3 = { type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL", nonce: "", applicationId: null, channelId: null, guildId: null, error: null, locationKind: null };
@@ -113,7 +113,7 @@ function _confirmActivityChange() {
                 if (dependencyMap != null) {
                   dependencyMap();
                 }
-                _undefined2(10631)(tmp, channel, () => {
+                _undefined2(10632)(tmp, channel, () => {
                   let obj = value(table[10])();
                   obj = { location: value.location, applicationId: lib.id, shouldClosePopout: value };
                   obj.leaveActivity(obj);

@@ -1,10 +1,10 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15368
+// Function ID: 15369
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4303, 10251, 8393, 4848, 15157, 4036, 2]
+// Dependencies: [17, 21, 4303, 10252, 8393, 4848, 15159, 4036, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 15360 (ScreenAlignedThemedGradient)
+// Module 15368 (ScreenAlignedThemedGradient)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -16,8 +16,8 @@ let closure_6 = createCacheKey.createStyles((arg0, arg1) => {
   let obj = { container: null };
   obj = {};
   const merged = Object.assign(closure_3.absoluteFillObject);
-  obj = { translateX: importDefault(10251)(-arg0) };
-  const items = [obj, { translateY: importDefault(10251)(-arg1) }];
+  obj = { translateX: importDefault(10252)(-arg0) };
+  const items = [obj, { translateY: importDefault(10252)(-arg1) }];
   obj.transform = items;
   obj[0] = obj;
   return obj;

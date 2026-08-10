@@ -1,10 +1,10 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15315
+// Function ID: 15316
 // Name: UserSummaryRow
-// Dependencies: [19, 17, 5136, 1377, 4322, 3929, 4376, 1378, 505, 21, 712, 1297, 4293, 9802, 9553, 9452, 500, 4718, 4303, 4299, 11888, 9795, 1872, 4513, 7773, 4239, 8392, 4714, 4153, 4494, 589, 1236, 4764, 9044, 8945, 8973, 8949, 5148, 5142, 5135, 9038, 4825, 15306, 9666, 5376, 2]
+// Dependencies: [19, 17, 5136, 1377, 4322, 3929, 4376, 1378, 505, 21, 712, 1297, 4293, 9803, 9553, 9452, 500, 4718, 4303, 4299, 11889, 9796, 1872, 4513, 7773, 4239, 8392, 4714, 4153, 4494, 589, 1236, 4764, 9044, 8945, 8973, 8949, 5148, 5142, 5135, 9038, 4825, 15314, 9666, 5376, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 15307 (UserSummaryRow)
+// Module 15315 (UserSummaryRow)
 import importAllResult from "Text";
 import { View } from "MINIMUM_HIT_AREA";
 import getActiveStageChannelIds from "getActiveStageChannelIds";
@@ -104,8 +104,8 @@ function UserSummaryRow(arg0) {
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       obj[0] = items2;
       let obj1 = { size: "custom", style: null };
-      obj1[1] = max(9795).makeSizeStyle(14);
-      const items3 = [callback(max(11888).HeadphonesIcon, obj1), ];
+      obj1[1] = max(9796).makeSizeStyle(14);
+      const items3 = [callback(max(11889).HeadphonesIcon, obj1), ];
       let obj2 = { variant: "text-xs/semibold", style: null, maxFontSizeMultiplier: 1, children: null };
       obj2[1] = { marginLeft: 4 };
       obj2[3] = audienceCount;
@@ -113,7 +113,7 @@ function UserSummaryRow(arg0) {
       obj[1] = items3;
       obj[1] = tmp4(tmp5, obj);
       tmp8Result = tmp8(tmp5, obj);
-      const obj5 = max(9795);
+      const obj5 = max(9796);
       const tmp9 = users.length > 0 && { marginLeft: 4 };
     }
     items[1] = tmp8Result;
@@ -426,7 +426,7 @@ export default importAllResult.memo((guild) => {
   guild = guild.guild;
   let activeEventOrStageInstanceChannel;
   let guildActiveEvent;
-  let obj = activeEventOrStageInstanceChannel(15306);
+  let obj = activeEventOrStageInstanceChannel(15314);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj1 = activeEventOrStageInstanceChannel(9038);
   guildActiveEvent = obj1.useGuildActiveEvent(guild.id);

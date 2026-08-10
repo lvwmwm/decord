@@ -33,19 +33,18 @@ arg5.gestureActivationCriteria = (direction) => {
     return obj1;
   } else {
     const sum = -layout.width + gestureResponseDistance;
-    obj = require(5803) /* getInvertedMultiplier */;
-    if (1 === obj.getInvertedMultiplier(gestureDirection, "rtl" === direction.direction)) {
+    if (1 === obj9.getInvertedMultiplier(gestureDirection, "rtl" === direction.direction)) {
       const obj3 = { minOffsetX: 5, maxDeltaY: 20, hitSlop: null, enableTrackpadTwoFingerGesture: true };
       const obj4 = { right: null };
       obj4[0] = sum;
       obj3[2] = obj4;
-      let obj5 = obj3;
+      obj = obj3;
     } else {
-      obj5 = { minOffsetX: -5, maxDeltaY: 20, hitSlop: null, enableTrackpadTwoFingerGesture: true };
-      const obj6 = { left: null };
-      obj6[0] = sum;
-      obj5[2] = obj6;
+      obj = { minOffsetX: -5, maxDeltaY: 20, hitSlop: null, enableTrackpadTwoFingerGesture: true };
+      const obj5 = { left: null };
+      obj5[0] = sum;
+      obj[2] = obj5;
     }
-    return obj5;
+    return obj;
   }
 };

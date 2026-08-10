@@ -1,10 +1,10 @@
-// Module ID: 15092
-// Function ID: 15093
+// Module ID: 15094
+// Function ID: 15095
 // Name: _scorePassword
-// Dependencies: [5, 15093, 1218, 676, 1221, 3883, 698, 5127, 503, 4203, 10462, 709, 15094, 15095, 2]
+// Dependencies: [5, 15095, 1218, 676, 1221, 3883, 698, 5127, 503, 4203, 10463, 709, 15096, 15097, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 15092 (_scorePassword)
+// Module 15094 (_scorePassword)
 import closure_4 from "t";
 import initialize from "initialize";
 import fetchFingerprint from "fetchFingerprint";
@@ -182,7 +182,7 @@ function _registerPhone() {
           } else if (2 === tmp8) {
             c4 = 0;
             callback = dependencyMap;
-            if (callback instanceof phone(10462).CaptchaCancelError) {
+            if (callback instanceof phone(10463).CaptchaCancelError) {
               throw callback;
             } else {
               const tmp23 = new callback(4203)(callback);
@@ -257,7 +257,7 @@ function registerFull(giftCodeSKUId) {
   let obj = importDefault(709);
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    tmp4(15094)(birthday, constants2.REGISTER);
+    tmp4(15096)(birthday, constants2.REGISTER);
     let tmp4Result = tmp4(698);
     obj = { source: null, action: null };
     obj[0] = constants5.REGISTER;
@@ -324,13 +324,13 @@ function registerFull(giftCodeSKUId) {
     const obj3 = callback2(709);
     callback2(698).track(constants.AGE_GATE_ACTION, { source: constants3.REGISTER, action: constants2.AGE_GATE_SUCCESS });
   }, (arg0) => {
-    if (arg0 instanceof callback(10462).CaptchaCancelError) {
+    if (arg0 instanceof callback(10463).CaptchaCancelError) {
       throw arg0;
     } else {
       let obj = new callback2(4203)(arg0);
       if (null != obj.getFieldErrors("date_of_birth")) {
-        const result = callback3(15095).preventUnderageRegistration(constants3.REGISTER);
-        const obj2 = callback3(15095);
+        const result = callback3(15097).preventUnderageRegistration(constants3.REGISTER);
+        const obj2 = callback3(15097);
       }
       obj = { is_unique_username_registration: true, email_error_reason: null, phone_error_reason: null, password_error_reason: null, username_error_reason: null, global_name_error_reason: null, date_of_birth_error_reason: null, promotional_email_opt_in_error_reason: null, fingerprint_error_reason: null, invite_error_reason: null, gift_code_sku_id_error_reason: null, guild_template_code_error_reason: null, consent_error_reason: null, generic_error_reason: null };
       obj[1] = obj.getFirstFieldErrorMessage("email");

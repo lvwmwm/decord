@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16595
+// Function ID: 16596
 // Name: PhoneThenEmailInterstitial
-// Dependencies: [5, 19, 17, 16587, 1366, 1903, 676, 21, 4303, 1297, 16588, 1236, 4714, 1481, 503, 5270, 6008, 9051, 5761, 5827, 16592, 8458, 8463, 8460, 8508, 8518, 8519, 8459, 16593, 8545, 8513, 589, 4271, 4166, 5783, 2]
+// Dependencies: [5, 19, 17, 16596, 1366, 1903, 676, 21, 4303, 1297, 16597, 1236, 4714, 1481, 503, 5270, 6008, 9051, 5761, 5827, 16601, 8458, 8463, 8460, 8508, 8518, 8519, 8459, 16602, 8545, 8513, 589, 4271, 4166, 5783, 2]
 // Exports: default
 
-// Module 16586 (PhoneThenEmailInterstitial)
+// Module 16595 (PhoneThenEmailInterstitial)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleLogout from "handleLogout";
 import { View } from "registerAsset";
@@ -21,7 +21,7 @@ const require = arg1;
 function PhoneThenEmailInterstitial(navigation) {
   navigation = navigation.navigation;
   let obj = { Illustration: null, title: null, body: null, children: null };
-  obj[0] = navigation(16588).VerifyPhone;
+  obj[0] = navigation(16597).VerifyPhone;
   const intl = navigation(1236).intl;
   obj[1] = intl.string(navigation(1236).t.KLnLIP);
   const intl2 = navigation(1236).intl;
@@ -121,7 +121,7 @@ export default function VerificationModal() {
       return callback3(callback(6008).HeaderActionButton, obj);
     };
     obj3[6] = function render() {
-      return callback3(callback2(16592), {});
+      return callback3(callback2(16601), {});
     };
     obj[constants.OVERVIEW] = obj3;
     let obj5 = { impressionName: stateFromStores(503).ImpressionNames.USER_VERIFICATION_MODAL, impressionProperties: null, headerTitle: null, render: null };
@@ -185,9 +185,9 @@ export default function VerificationModal() {
           onVerified(arg0) {
             let arr = arg0;
             let obj = { hideUnverifiedBanner: true, onSubmit: null, onSuccess: null };
-            let closure_2 = outer1_3(/* F120295 */ function() { ... });
+            let closure_2 = outer1_3(/* F120336 */ function() { ... });
             obj[1] = () => { ... };
-            let closure_1 = outer1_3(/* F120297 */ function() { ... });
+            let closure_1 = outer1_3(/* F120338 */ function() { ... });
             obj[2] = () => { ... };
             arr = arr.push(outer1_10.VERIFY_PASSWORD, obj);
           }

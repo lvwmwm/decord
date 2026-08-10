@@ -1,10 +1,10 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11311
+// Function ID: 11312
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7805, 21, 4303, 11302, 1236, 11300, 11311, 4299, 11305, 2]
+// Dependencies: [19, 17, 7805, 21, 4303, 11303, 1236, 11301, 11312, 4299, 11306, 2]
 // Exports: default
 
-// Module 11310 (AppealIngestionRequestSent)
+// Module 11311 (AppealIngestionRequestSent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import SafetyHubView from "SafetyHubView";
@@ -25,7 +25,7 @@ let closure_9 = createCacheKey.createStyles({ container: { flex: 1, padding: 8 }
 const result = require("SafetyHubView").fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 
 export default function AppealIngestionRequestSent() {
-  let obj = _require(11302);
+  let obj = _require(11303);
   _require = obj.useEmitAppealIngestionEvent();
   const tmp = callback3();
   const intl = _require(1236).intl;
@@ -34,9 +34,9 @@ export default function AppealIngestionRequestSent() {
   obj = { children: null };
   obj = { style: tmp.container, children: null };
   const obj1 = { source: null, style: null };
-  obj1[0] = importDefault(11311);
+  obj1[0] = importDefault(11312);
   obj1[1] = tmp.checkboxPng;
-  const items = [callback(closure_4, obj1), callback(_require(11300).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.Qdx8AP) }), , , ];
+  const items = [callback(closure_4, obj1), callback(_require(11301).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(_require(1236).t.Qdx8AP) }), , , ];
   const obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: null };
   const intl3 = _require(1236).intl;
   obj2[3] = intl3.string(_require(1236).t["9BRc1N"]);
@@ -49,17 +49,17 @@ export default function AppealIngestionRequestSent() {
   obj3[2] = function onPress() {
     return callback(outer1_5.ClickCommunityGuidelinesLink);
   };
-  items[3] = callback(importDefault(11305), obj3);
+  items[3] = callback(importDefault(11306), obj3);
   const obj4 = { text: null, url: null, onPress: null };
-  const tmp4 = importDefault(11305);
+  const tmp4 = importDefault(11306);
   const intl5 = _require(1236).intl;
   obj4[0] = intl5.string(_require(1236).t.qC3XKa);
   obj4[1] = constants.WARNING_SYSTEM_HELPCENTER_LINK;
   obj4[2] = function onPress() {
     return callback(outer1_5.ClickWarningSystemHelpcenterLink);
   };
-  items[4] = callback(importDefault(11305), obj4);
+  items[4] = callback(importDefault(11306), obj4);
   obj[1] = items;
   obj[0] = callback2(closure_3, obj);
-  return callback(_require(11300).AppealIngestionModalScreen, obj);
+  return callback(_require(11301).AppealIngestionModalScreen, obj);
 };

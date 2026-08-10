@@ -1,8 +1,8 @@
-// Module ID: 15693
-// Function ID: 15694
-// Dependencies: [19, 1372, 676, 21, 15694, 7236, 8355, 589, 8354, 1236, 7790, 5329, 2]
+// Module ID: 15701
+// Function ID: 15702
+// Dependencies: [19, 1372, 676, 21, 15702, 7236, 8355, 589, 8354, 1236, 7790, 5329, 2]
 
-// Module 15693
+// Module 15701
 import importAllResult from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { MAX_CHANNEL_NAME_LENGTH } from "ME";
@@ -16,7 +16,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((chatInputRef
   const optional = chatInputRef.optional;
   let ref;
   const dependencyMap = arg1;
-  let obj = chatInputRef(15694);
+  let obj = chatInputRef(15702);
   obj = { content: threadSettingsDraft.name };
   ref = ref.useRef(threadSettingsDraft.name);
   const items = [threadSettingsDraft.parentChannelId];

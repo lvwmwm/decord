@@ -1,10 +1,10 @@
-// Module ID: 16226
-// Function ID: 16227
+// Module ID: 16235
+// Function ID: 16236
 // Name: useVoiceChannelGames
 // Dependencies: [19, 1218, 4390, 4996, 1903, 589, 9240, 9241, 4835, 2]
 // Exports: default
 
-// Module 16226 (useVoiceChannelGames)
+// Module 16235 (useVoiceChannelGames)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import sortActivity from "sortActivity";

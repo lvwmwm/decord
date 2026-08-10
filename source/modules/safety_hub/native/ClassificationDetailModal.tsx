@@ -1,10 +1,10 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11278
+// Function ID: 11279
 // Name: ClassificationDetailModal
-// Dependencies: [19, 676, 11278, 21, 4303, 712, 4509, 5270, 11279, 6016, 11314, 11286, 1481, 5783, 1236, 2]
+// Dependencies: [19, 676, 11279, 21, 4303, 712, 4509, 5270, 11280, 6016, 11315, 11287, 1481, 5783, 1236, 2]
 // Exports: default
 
-// Module 11277 (ClassificationDetailModal)
+// Module 11278 (ClassificationDetailModal)
 import noop from "noop";
 import { UserSettingsSections } from "ME";
 import { AccountSettingsTabs } from "AccountSettingsTabs";
@@ -30,7 +30,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = createCacheKey();
   dependencyMap = tmp;
-  let obj = classificationId(11314);
+  let obj = classificationId(11315);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {

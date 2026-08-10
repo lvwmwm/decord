@@ -1,9 +1,9 @@
-// Module ID: 16923
-// Function ID: 16924
+// Module ID: 16932
+// Function ID: 16933
 // Name: AVErrorScreenshareOSErrorDefinition
-// Dependencies: [500, 9169, 16912, 4367, 2]
+// Dependencies: [500, 9169, 16921, 4367, 2]
 
-// Module 16923 (AVErrorScreenshareOSErrorDefinition)
+// Module 16932 (AVErrorScreenshareOSErrorDefinition)
 import module_4294963475 from "module_4294963475";
 
 const result = require("getVoiceChannelErrorContext").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorScreenshareOSError.tsx");
@@ -20,7 +20,7 @@ export const AVErrorScreenshareOSErrorDefinition = {
           let combined = "" + str + " - your Mac may be low on disk space";
         }
         obj[1] = combined;
-        let tmpResult = tmp(16912);
+        let tmpResult = tmp(16921);
         tmpResult = tmp(4367);
         const merged = Object.assign(tmpResult.getStreamErrorContext(tmpResult.encodeStreamKey(errorCode)));
         return obj;

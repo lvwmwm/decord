@@ -1,10 +1,10 @@
-// Module ID: 10128
-// Function ID: 10129
+// Module ID: 10129
+// Function ID: 10130
 // Name: useAvatarDecorationPreviewSizes
 // Dependencies: [1474, 9387, 2]
 // Exports: useAvatarDecorationPreviewSizes
 
-// Module 10128 (useAvatarDecorationPreviewSizes)
+// Module 10129 (useAvatarDecorationPreviewSizes)
 let result = require("set").fileFinishedImporting("modules/collectibles/native/useAvatarDecorationPreviewSizes.tsx");
 
 export const useAvatarDecorationPreviewSizes = function useAvatarDecorationPreviewSizes() {

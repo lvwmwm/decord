@@ -1,10 +1,10 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10907
+// Function ID: 10908
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4303, 712, 10680, 5427, 10681, 4299, 1236, 4714, 10824, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 10681, 5427, 10682, 4299, 1236, 4714, 10825, 2]
 // Exports: default
 
-// Module 10906 (ScreenshareParticipant)
+// Module 10907 (ScreenshareParticipant)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

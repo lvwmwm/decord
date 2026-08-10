@@ -1,9 +1,9 @@
-// Module ID: 10595
-// Function ID: 10596
+// Module ID: 10596
+// Function ID: 10597
 // Name: _launchFrameOnNative
-// Dependencies: [5, 4319, 10596, 10597, 2]
+// Dependencies: [5, 4319, 10597, 10598, 2]
 
-// Module 10595 (_launchFrameOnNative)
+// Module 10596 (_launchFrameOnNative)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import updateVoiceState from "updateVoiceState";
 import merged from "_launchFrame";

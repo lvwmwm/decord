@@ -1,10 +1,10 @@
-// Module ID: 14351
-// Function ID: 14352
+// Module ID: 14353
+// Function ID: 14354
 // Name: UndoIcon
-// Dependencies: [19, 21, 712, 4004, 14352, 2]
+// Dependencies: [19, 21, 712, 4004, 14354, 2]
 // Exports: UndoIcon
 
-// Module 14351 (UndoIcon)
+// Module 14353 (UndoIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const UndoIcon = function UndoIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14352) /* registerAsset */;
+  obj[0] = require(14354) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

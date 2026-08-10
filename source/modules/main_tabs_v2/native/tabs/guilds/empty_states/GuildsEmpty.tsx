@@ -1,9 +1,9 @@
-// Module ID: 15386
-// Function ID: 15387
+// Module ID: 15394
+// Function ID: 15395
 // Name: handleJoinGuild
-// Dependencies: [32, 19, 17, 1218, 1891, 4124, 676, 21, 4303, 712, 4299, 12062, 15387, 1236, 4712, 4714, 1481, 647, 9349, 503, 1894, 4160, 4849, 14340, 2]
+// Dependencies: [32, 19, 17, 1218, 1891, 4124, 676, 21, 4303, 712, 4299, 12063, 15395, 1236, 4712, 4714, 1481, 647, 9349, 503, 1894, 4160, 4849, 14342, 2]
 
-// Module 15386 (handleJoinGuild)
+// Module 15394 (handleJoinGuild)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "encodeProperties";
 import get_ActivityIndicator from "defaultAreStatesEqual";
@@ -23,10 +23,10 @@ let map1;
 let unpackModuleId;
 const require = arg1;
 function handleJoinGuild() {
-  const result = importDefault(12062).openGuildJoinServerScreen();
+  const result = importDefault(12063).openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  importDefault(12062).openCreateGuildModal();
+  importDefault(12063).openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }, items1);
   let tmp2Result = tmp2(4849);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  tmp2Result = tmp2(14340);
+  tmp2Result = tmp2(14342);
   let tmp14Result = null;
   if (stateFromStores) {
     obj = { style: null, children: null };

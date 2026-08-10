@@ -1,10 +1,10 @@
-// Module ID: 15893
-// Function ID: 15894
+// Module ID: 15902
+// Function ID: 15903
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 1415, 1372, 1964, 1891, 3929, 3938, 1903, 676, 21, 4303, 712, 1480, 1609, 589, 3934, 506, 8999, 4313, 1935, 4146, 4642, 1236, 3998, 1974, 1380, 15894, 8382, 4299, 4494, 9695, 5374, 5767, 15898, 500, 15899, 2]
+// Dependencies: [32, 5, 19, 17, 1415, 1372, 1964, 1891, 3929, 3938, 1903, 676, 21, 4303, 712, 1480, 1609, 589, 3934, 506, 8999, 4313, 1935, 4146, 4642, 1236, 3998, 1974, 1380, 15903, 8382, 4299, 4494, 9695, 5374, 5767, 15907, 500, 15908, 2]
 // Exports: default
 
-// Module 15893 (ChannelSettingsPermissionsOverrides)
+// Module 15902 (ChannelSettingsPermissionsOverrides)
 import computeChannelName from "computeChannelName";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import fromString from "fromString";

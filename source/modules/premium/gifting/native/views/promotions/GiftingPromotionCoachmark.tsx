@@ -1,10 +1,10 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16001
+// Function ID: 16002
 // Name: GiftingPromotionCoachmarkActionSheet
-// Dependencies: [19, 17, 4295, 7344, 676, 1369, 21, 4303, 712, 589, 10042, 15993, 8853, 4271, 5728, 5748, 10033, 5397, 500, 9386, 5268, 4299, 4714, 1236, 2]
+// Dependencies: [19, 17, 4295, 7344, 676, 1369, 21, 4303, 712, 589, 10043, 16002, 8853, 4271, 5728, 5748, 10034, 5397, 500, 9386, 5268, 4299, 4714, 1236, 2]
 // Exports: default
 
-// Module 15992 (GiftingPromotionCoachmarkActionSheet)
+// Module 16001 (GiftingPromotionCoachmarkActionSheet)
 import useAPNGPlayerControls from "useAPNGPlayerControls";
 import { View } from "Background";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -49,7 +49,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(589);
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
-  let obj1 = markAsDismissed(10042);
+  let obj1 = markAsDismissed(10043);
   let asset;
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
@@ -58,7 +58,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let tmp2Result = tmp2(589);
   const items1 = [createEmptyPromotionsByType];
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
-  tmp2Result = tmp2(15993);
+  tmp2Result = tmp2(16002);
   let endDate;
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;

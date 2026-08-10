@@ -1,10 +1,10 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 15016
+// Function ID: 15017
 // Name: GiftPurchaseSKUView
-// Dependencies: [5, 32, 19, 17, 1903, 4349, 676, 1905, 21, 3, 1609, 9611, 589, 10113, 7000, 1926, 7378, 12142, 4271, 4643, 7013, 4712, 4299, 5376, 4714, 9584, 514, 7374, 5397, 9571, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 4349, 676, 1905, 21, 3, 1609, 9611, 589, 10114, 7000, 1926, 7378, 12144, 4271, 4643, 7013, 4712, 4299, 5376, 4714, 9584, 514, 7374, 5397, 9571, 2]
 // Exports: default
 
-// Module 15014 (GiftPurchaseSKUView)
+// Module 15016 (GiftPurchaseSKUView)
 import addSku from "addSku";
 import _slicedToArray from "_slicedToArray";
 import module_4643 from "module_4643";
@@ -157,7 +157,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj2 = selectedSkuId(589);
   let items = [closure_8];
   const stateFromStores = obj2.useStateFromStores(items, () => closure_8.get(selectedSkuId));
-  let obj3 = selectedSkuId(10113);
+  let obj3 = selectedSkuId(10114);
   const fetchCollectiblesProduct = obj3.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   React = product;
@@ -319,7 +319,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
     },
     giftParams: { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } }
   };
-  closure_8 = tmp(12142)(obj);
+  closure_8 = tmp(12144)(obj);
   const items5 = [product];
   [tmp16, tmp17] = callback(obj.useMemo(() => {
     if (null == c5) {

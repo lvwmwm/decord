@@ -1,10 +1,10 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15408
+// Function ID: 15409
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 1891, 4499, 676, 9823, 8548, 1236, 13307, 1988, 9136, 5262, 6011, 13254, 11750, 4271, 9818, 11751, 5257, 2]
+// Dependencies: [5, 1891, 4499, 676, 9824, 8548, 1236, 13309, 1988, 9136, 5262, 6011, 13256, 11751, 4271, 9819, 11752, 5257, 2]
 // Exports: default
 
-// Module 15400 (getGuildsBarGuildMenuItems)
+// Module 15408 (getGuildsBarGuildMenuItems)
 import EnvelopeIcon from "EnvelopeIcon";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
@@ -15,7 +15,7 @@ let result = require("updateUserGuildSettingsInternal").fileFinishedImporting("m
 
 export default function getGuildsBarGuildMenuItems(arg0) {
   const _require = arg0;
-  let obj = _require(9823);
+  let obj = _require(9824);
   let result = obj.shouldShowUseNewNotificationSystem("GuildPopoutMenu");
   obj = { IconComponent: null, label: null, action: null };
   obj[0] = _require(8548).EnvelopeIcon;
@@ -99,7 +99,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
     const splice = items.splice;
     const obj2 = { iconSource: null, label: null, action: null };
     if (isMutedResult) {
-      obj2[0] = tmp5(11751);
+      obj2[0] = tmp5(11752);
       const intl5 = tmp(1236).intl;
       obj2[1] = intl5.string(tmp(1236).t.De0BTC);
       obj2[2] = function action() {
@@ -110,7 +110,7 @@ export default function getGuildsBarGuildMenuItems(arg0) {
       };
       splice(1, 0, obj2);
     } else {
-      obj2[0] = tmp5(11750);
+      obj2[0] = tmp5(11751);
       const intl4 = tmp(1236).intl;
       obj2[1] = intl4.string(tmp(1236).t.vRzp7P);
       obj2[2] = function action() {

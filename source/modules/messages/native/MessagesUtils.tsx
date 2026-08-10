@@ -1,7 +1,7 @@
 // Module ID: 8610
 // Function ID: 8611
 // Name: getVisibleMessages
-// Dependencies: [32, 5, 8611, 7054, 1372, 1971, 5131, 4521, 4395, 3929, 4315, 1903, 8042, 676, 4491, 4525, 1935, 5914, 7223, 4790, 3918, 4002, 1236, 8612, 8613, 1926, 7222, 3940, 4272, 4273, 8412, 7224, 7226, 4498, 5756, 4486, 11, 4001, 11013, 9, 12, 500, 1607, 698, 11007, 6917, 5164, 4235, 10461, 10987, 2]
+// Dependencies: [32, 5, 8611, 7054, 1372, 1971, 5131, 4521, 4395, 3929, 4315, 1903, 8042, 676, 4491, 4525, 1935, 5914, 7223, 4790, 3918, 4002, 1236, 8612, 8613, 1926, 7222, 3940, 4272, 4273, 8412, 7224, 7226, 4498, 5756, 4486, 11, 4001, 11014, 9, 12, 500, 1607, 698, 11008, 6917, 5164, 4235, 10462, 10988, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
 // Module 8610 (getVisibleMessages)
@@ -547,7 +547,7 @@ export const handleCopyLinkForumPost = function handleCopyLinkForumPost(guildId,
 };
 export const findMessageIndex = function findMessageIndex(previousRows, ChatTTITracker) {
   if (null != ChatTTITracker) {
-    return require(11013) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
+    return require(11014) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
   }
 };
 export { getVisibleMessages };
@@ -587,7 +587,7 @@ export const recordTimings = function recordTimings(channelId, closure_0) {
 };
 export const findMessageIndexInRows = function findMessageIndexInRows(ChatTTITracker, previousRows) {
   if (null != ChatTTITracker) {
-    return require(11013) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
+    return require(11014) /* computeScrollData */.findMessageRowIndex(previousRows, ChatTTITracker);
   }
 };
 export { getMessage };
@@ -650,7 +650,7 @@ export const scrollToBottom = function scrollToBottom(current) {
   if (flag) {
     flag = !arg1;
   }
-  importDefault(11007).scrollToBottom(current.current, flag);
+  importDefault(11008).scrollToBottom(current.current, flag);
 };
 export const scrollToTop = function scrollToTop(current) {
   let flag = arg2;
@@ -660,7 +660,7 @@ export const scrollToTop = function scrollToTop(current) {
   if (flag) {
     flag = !arg1;
   }
-  importDefault(11007).scrollToTop(current.current, flag);
+  importDefault(11008).scrollToTop(current.current, flag);
 };
 export const scrollToRelativeOffset = function scrollToRelativeOffset(current) {
   let flag = arg3;
@@ -670,13 +670,13 @@ export const scrollToRelativeOffset = function scrollToRelativeOffset(current) {
   if (flag) {
     flag = !arg1;
   }
-  const result = importDefault(11007).scrollToRelativeOffset(current.current, arg2, flag);
+  const result = importDefault(11008).scrollToRelativeOffset(current.current, arg2, flag);
 };
 export const scrollToTopMessage = function scrollToTopMessage(current, getPreviousRows) {
   const previousRows = getPreviousRows.getPreviousRows();
   if (previousRows.length > 0) {
-    importDefault(11007).scrollTo(current.current, previousRows.length - 1);
-    const obj = importDefault(11007);
+    importDefault(11008).scrollTo(current.current, previousRows.length - 1);
+    const obj = importDefault(11008);
   }
 };
 export const canAddNewReactions = function canAddNewReactions(isPrivate) {
@@ -725,7 +725,7 @@ export const clearRows = function clearRows(current, clear) {
   arg4({ animated: false, hasHandledScroll: false, isNearBottom: false, isAtBottom: false, isNearTop: false, decelerating: false, dragging: false, hasMoreMessagesAfterForLastUpdate: false, pendingUpdatesQueue: [], _loaded: false, animatingStickerMessageId: null });
   clear.clear();
   callback3(arg2, arg3, false);
-  importDefault(11007).clearRows(current.current);
+  importDefault(11008).clearRows(current.current);
 };
 export const handleFirstLayout = function handleFirstLayout(arg0, firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible) {
   arg0({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source: require(5164) /* QuestsVisibleMessagesChangedSource */.QuestsVisibleMessagesChangedSource.FIRST_LAYOUT });
@@ -982,16 +982,16 @@ export const handleVisibleMessagesChange = function handleVisibleMessagesChange(
             obj = { visibleMessages: null, source: null };
             obj[0] = arr;
             obj[1] = tmp;
-            const result = require(10461) /* _manuallyStartConsoleQuest */.questsVisibleMobileMessagesChanged(obj);
-            const obj4 = require(10987) /* getVoiceInviteEmbedRenderInfo */;
+            const result = require(10462) /* _manuallyStartConsoleQuest */.questsVisibleMobileMessagesChanged(obj);
+            const obj4 = require(10988) /* getVoiceInviteEmbedRenderInfo */;
             const result1 = obj4.handleAnnouncementMessageViewTracking(arr, shouldTrackAnnouncementMessageViews, guildId, channel);
-            const obj5 = require(10987) /* getVoiceInviteEmbedRenderInfo */;
+            const obj5 = require(10988) /* getVoiceInviteEmbedRenderInfo */;
             const result2 = obj5.handleOfficialMessageViewTracking(arr, shouldTrackOfficialMessageViews, guildId, channel);
-            const obj6 = require(10987) /* getVoiceInviteEmbedRenderInfo */;
+            const obj6 = require(10988) /* getVoiceInviteEmbedRenderInfo */;
             const result3 = obj6.handleRichPresenceInviteEmbedViewTracking(arr, shouldTrackRichPresenceInviteEmbedViews, guildId, channel);
-            const obj7 = require(10987) /* getVoiceInviteEmbedRenderInfo */;
+            const obj7 = require(10988) /* getVoiceInviteEmbedRenderInfo */;
             const result4 = obj7.handleVoiceInviteEmbedViewTracking(arr, shouldTrackVoiceInviteEmbedViews, guildId, channel);
-            const obj2 = require(10461) /* _manuallyStartConsoleQuest */;
+            const obj2 = require(10462) /* _manuallyStartConsoleQuest */;
           }
         }
       }

@@ -1,10 +1,10 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15329
+// Function ID: 15330
 // Name: EmptyBody
-// Dependencies: [19, 17, 1410, 1905, 21, 4303, 712, 9452, 9711, 12134, 4271, 9715, 1988, 9714, 4299, 1236, 3030, 5728, 5748, 8622, 4712, 3947, 1297, 4809, 4829, 4800, 2]
+// Dependencies: [19, 17, 1410, 1905, 21, 4303, 712, 9452, 9711, 12135, 4271, 9715, 1988, 9714, 4299, 1236, 3030, 5728, 5748, 8622, 4712, 3947, 1297, 4809, 4829, 4800, 2]
 // Exports: default, getScaledFavoritesUpsellNoticeHeight
 
-// Module 15321 (EmptyBody)
+// Module 15329 (EmptyBody)
 import openPremiumModal from "openPremiumModal";
 import { View } from "context";
 import { MAX_FAVORITE_CHANNELS } from "date";

@@ -1,9 +1,9 @@
-// Module ID: 11620
-// Function ID: 11621
+// Module ID: 11621
+// Function ID: 11622
 // Name: GiftIconTrinketsAnimation
 // Dependencies: [19, 17, 4295, 21, 4303, 4718, 1348, 4005, 712, 589, 1884, 500, 9386, 5268, 2]
 
-// Module 11620 (GiftIconTrinketsAnimation)
+// Module 11621 (GiftIconTrinketsAnimation)
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { jsx } from "jsxProd";

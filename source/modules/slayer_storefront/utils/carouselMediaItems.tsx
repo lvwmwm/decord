@@ -1,10 +1,10 @@
-// Module ID: 10091
-// Function ID: 10092
+// Module ID: 10092
+// Function ID: 10093
 // Name: WEB_HERO_WIDTH_PX
 // Dependencies: [4541, 5848, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 10091 (WEB_HERO_WIDTH_PX)
+// Module 10092 (WEB_HERO_WIDTH_PX)
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/utils/carouselMediaItems.tsx");
 
 export const WEB_HERO_WIDTH_PX = 747;

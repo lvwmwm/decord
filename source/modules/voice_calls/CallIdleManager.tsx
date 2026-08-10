@@ -1,9 +1,9 @@
-// Module ID: 16384
-// Function ID: 16385
+// Module ID: 16393
+// Function ID: 16394
 // Name: disconnect
 // Dependencies: [1371, 1372, 4319, 4376, 6917, 1236, 5129, 5261, 4188, 2]
 
-// Module 16384 (disconnect)
+// Module 16393 (disconnect)
 import participantFromServer from "participantFromServer";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import updateVoiceState from "updateVoiceState";

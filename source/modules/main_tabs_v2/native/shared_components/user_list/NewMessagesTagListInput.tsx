@@ -1,8 +1,8 @@
-// Module ID: 11740
-// Function ID: 11741
-// Dependencies: [19, 17, 1903, 21, 4303, 712, 500, 1348, 1351, 9623, 9009, 4846, 1236, 11741, 9527, 4299, 4014, 2]
+// Module ID: 11741
+// Function ID: 11742
+// Dependencies: [19, 17, 1903, 21, 4303, 712, 500, 1348, 1351, 9623, 9009, 4846, 1236, 11742, 9527, 4299, 4014, 2]
 
-// Module 11740
+// Module 11741
 import importAllResult from "noop";
 import { View } from "set";
 import mergeGuildAvatar from "mergeGuildAvatar";

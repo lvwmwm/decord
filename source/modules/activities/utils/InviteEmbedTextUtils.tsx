@@ -1,10 +1,10 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 12623
+// Function ID: 12624
 // Name: getAskToJoinText
 // Dependencies: [1903, 676, 1236, 2738, 4493, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12621 (getAskToJoinText)
+// Module 12623 (getAskToJoinText)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ActivityActionTypes } from "ME";
 

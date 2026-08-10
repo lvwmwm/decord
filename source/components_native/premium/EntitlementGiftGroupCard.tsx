@@ -1,9 +1,9 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12834
+// Function ID: 12835
 // Name: importDefaultResult1
-// Dependencies: [19, 17, 4341, 1218, 10411, 3952, 4349, 676, 1905, 21, 4303, 712, 4013, 10412, 4299, 1236, 4714, 5848, 9398, 1297, 5738, 9478, 5778, 12833, 12834, 12582, 12584, 12585, 12583, 12586, 12587, 12588, 12589, 12150, 12590, 12593, 12594, 12835, 589, 10418, 2]
+// Dependencies: [19, 17, 4341, 1218, 10412, 3952, 4349, 676, 1905, 21, 4303, 712, 4013, 10413, 4299, 1236, 4714, 5848, 9398, 1297, 5738, 9478, 5778, 12835, 12836, 12584, 12586, 12587, 12585, 12588, 12589, 12590, 12591, 12152, 12592, 12595, 12596, 12837, 589, 10419, 2]
 
-// Module 12832 (importDefaultResult1)
+// Module 12834 (importDefaultResult1)
 import importAllResult from "Button";
 import get_ActivityIndicator from "getPrice";
 import importDefaultResult from "addApplication";
@@ -218,7 +218,7 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
     const obj10 = { style: null, size: null, source: null, color: null };
     obj10[0] = tmp.rowArrow;
     obj10[1] = tmp2(1297).Icon.Sizes.LARGE;
-    obj10[2] = importDefault(isOpen ? 12833 : 12834);
+    obj10[2] = importDefault(isOpen ? 12835 : 12836);
     obj10[3] = tmp.arrow.color;
     items1[2] = tmp6(tmp2(1297).Icon, obj10);
     obj[1] = items1;
@@ -228,36 +228,36 @@ prototype["renderHeader"] = function renderHeader(arg0, children) {
 };
 prototype["getCardHeaderThumbnail"] = function getCardHeaderThumbnail(id, giftStyle) {
   if (constants2.STANDARD_BOX === giftStyle) {
-    return importDefault(12582);
-  } else if (tmp.CAKE === giftStyle) {
     return importDefault(12584);
-  } else if (tmp.CHEST === giftStyle) {
-    return importDefault(12585);
-  } else if (tmp.COFFEE === giftStyle) {
-    return importDefault(12583);
-  } else if (tmp.SEASONAL_STANDARD_BOX === giftStyle) {
+  } else if (tmp.CAKE === giftStyle) {
     return importDefault(12586);
-  } else if (tmp.SEASONAL_CAKE === giftStyle) {
+  } else if (tmp.CHEST === giftStyle) {
     return importDefault(12587);
-  } else if (tmp.SEASONAL_CHEST === giftStyle) {
+  } else if (tmp.COFFEE === giftStyle) {
+    return importDefault(12585);
+  } else if (tmp.SEASONAL_STANDARD_BOX === giftStyle) {
     return importDefault(12588);
-  } else if (tmp.SEASONAL_COFFEE === giftStyle) {
+  } else if (tmp.SEASONAL_CAKE === giftStyle) {
     return importDefault(12589);
+  } else if (tmp.SEASONAL_CHEST === giftStyle) {
+    return importDefault(12590);
+  } else if (tmp.SEASONAL_COFFEE === giftStyle) {
+    return importDefault(12591);
   } else if (tmp.NITROWEEN_STANDARD === giftStyle) {
     const obj = { uri: null };
-    obj[0] = importDefault(12150);
+    obj[0] = importDefault(12152);
     return obj;
   } else if (TIER_0.TIER_0 === id) {
-    return importDefault(12590);
+    return importDefault(12592);
   } else if (tmp3.TIER_1 === id) {
-    return importDefault(12593);
+    return importDefault(12595);
   } else {
     if (tmp3.TIER_2 !== id) {
       if (tmp3.LEGACY !== id) {
         return null;
       }
     }
-    return importDefault(12594);
+    return importDefault(12596);
   }
 };
 prototype["renderCardHeader"] = function renderCardHeader(sku) {
@@ -363,7 +363,7 @@ let tmp11 = require("initialize").connectStores(items, (arg0) => {
     obj[3] = importDefaultResult.getApplication(value.applicationId);
     let orFetchSubscriptionPlan = null;
     if (null != subscriptionPlanId) {
-      obj = require(10418) /* getSubscriptionPlans */;
+      obj = require(10419) /* getSubscriptionPlans */;
       orFetchSubscriptionPlan = obj.getOrFetchSubscriptionPlan(subscriptionPlanId);
     }
     obj[4] = orFetchSubscriptionPlan;

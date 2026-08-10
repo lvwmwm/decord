@@ -1,10 +1,10 @@
-// Module ID: 11072
-// Function ID: 11073
+// Module ID: 11073
+// Function ID: 11074
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1372, 1971, 1964, 1891, 3929, 676, 21, 4303, 712, 1609, 589, 1480, 4494, 8997, 1236, 5397, 5396, 4846, 4271, 8016, 11073, 6011, 7970, 11071, 9720, 1297, 5399, 9005, 4299, 2]
+// Dependencies: [19, 17, 1372, 1971, 1964, 1891, 3929, 676, 21, 4303, 712, 1609, 589, 1480, 4494, 8997, 1236, 5397, 5396, 4846, 4271, 8016, 11074, 6011, 7970, 11072, 9721, 1297, 5399, 9005, 4299, 2]
 // Exports: default
 
-// Module 11072 (ChannelMembersActionSheet)
+// Module 11073 (ChannelMembersActionSheet)
 import "PressableBase";
 import { View } from "Background";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -128,7 +128,7 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5[1] = function onPress() {
             return outer1_0(_undefined[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5[2] = tmp29(tmp5(9720).GroupPlusIcon, {});
+          obj5[2] = tmp29(tmp5(9721).GroupPlusIcon, {});
           tmp29Result = tmp29(tmp5(7970).RowButton, obj5);
         } else {
           const obj6 = { style: null, children: null };

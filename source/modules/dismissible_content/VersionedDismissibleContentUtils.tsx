@@ -1,7 +1,7 @@
 // Module ID: 1370
 // Function ID: 1371
 // Name: getVersionedDismissibleContentCurrentVersion
-// Dependencies: [1371, 7044, 1358, 13333, 13334, 1935, 13335, 1385, 2]
+// Dependencies: [1371, 7044, 1358, 13335, 13336, 1935, 13337, 1385, 2]
 // Exports: getVersionedDismissibleContentCurrentVersion
 
 // Module 1370 (getVersionedDismissibleContentCurrentVersion)
@@ -13,7 +13,7 @@ const result = require("DismissibleContent").fileFinishedImporting("modules/dism
 
 export const getVersionedDismissibleContentCurrentVersion = function getVersionedDismissibleContentCurrentVersion(closure_0) {
   if (require(1358) /* DismissibleContent */.DismissibleContent.COLLECTIBLES_SHOP_ENTRY_MARKETING === closure_0) {
-    marketingBySurface = marketingBySurface.getMarketingBySurface(tmp(13333).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
+    marketingBySurface = marketingBySurface.getMarketingBySurface(tmp(13335).CollectiblesMarketingSurface.MOBILE_SHOP_BUTTON);
     let num5;
     if (marketingBySurface != null) {
       num5 = marketingBySurface.version;
@@ -23,7 +23,7 @@ export const getVersionedDismissibleContentCurrentVersion = function getVersione
     }
     return num5;
   } else if (tmp(1358).DismissibleContent.ACTIVITIES_VOICE_LAUNCHER_BADGE === closure_0) {
-    let tmpResult = tmp(13334);
+    let tmpResult = tmp(13336);
     const obj = { storeState: null, surface: null };
     obj[0] = state.getState();
     obj[1] = tmp(1935).EmbeddedActivitySurfaces.VOICE_LAUNCHER;
@@ -32,7 +32,7 @@ export const getVersionedDismissibleContentCurrentVersion = function getVersione
     if (tmp(1358).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK !== closure_0) {
       if (tmp(1358).DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE !== closure_0) {
         if (tmp(1358).DismissibleContent.COLLECTIBLES_SHOP_WIDE_BANNER === closure_0) {
-          tmpResult = tmp(13335);
+          tmpResult = tmp(13337);
           return tmpResult.getWideBannerDismissibleContentVersion();
         } else {
           if (tmp(1358).DismissibleContent.GAME_SHOP_ANNOUNCEMENT_MODAL !== closure_0) {

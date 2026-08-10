@@ -1,9 +1,9 @@
-// Module ID: 11218
-// Function ID: 11219
+// Module ID: 11219
+// Function ID: 11220
 // Name: map
 // Dependencies: [589, 709, 2]
 
-// Module 11218 (map)
+// Module 11219 (map)
 import { Store } from "initialize";
 
 const map = new Map();

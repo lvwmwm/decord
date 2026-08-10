@@ -1,10 +1,10 @@
-// Module ID: 12723
-// Function ID: 12724
+// Module ID: 12725
+// Function ID: 12726
 // Name: SharedUser
 // Dependencies: [17, 676, 21, 4303, 712, 4146, 6916, 1297, 4299, 1236, 4714, 4800, 4271, 4313, 1974, 5397, 5396, 4712, 6027, 2]
 // Exports: default
 
-// Module 12723 (SharedUser)
+// Module 12725 (SharedUser)
 import { View } from "Stack";
 import { HelpdeskArticles } from "ME";
 import jsxProd from "jsxProd";

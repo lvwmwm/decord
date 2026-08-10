@@ -1,10 +1,10 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11506
+// Function ID: 11507
 // Name: useFrecentApps
-// Dependencies: [19, 5250, 1903, 11506, 4328, 4737, 1935, 9537, 589, 5736, 8902, 11507, 9539, 8338, 10616, 2]
+// Dependencies: [19, 5250, 1903, 11507, 4328, 4737, 1935, 9537, 589, 5736, 8902, 11508, 9539, 8338, 10617, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 11505 (useFrecentApps)
+// Module 11506 (useFrecentApps)
 import noop from "noop";
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";

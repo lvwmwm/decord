@@ -1,10 +1,10 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12274
+// Function ID: 12275
 // Name: useComputedImagesForActivity
-// Dependencies: [19, 4341, 676, 4328, 8904, 8241, 1236, 12273, 7092, 9655, 1416, 12275, 5000, 12276, 5734, 589, 698, 8907, 2]
+// Dependencies: [19, 4341, 676, 4328, 8904, 8241, 1236, 12275, 7092, 9655, 1416, 12277, 5000, 12278, 5734, 589, 698, 8907, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 12272 (useComputedImagesForActivity)
+// Module 12274 (useComputedImagesForActivity)
 import { useEffect } from "noop";
 import addApplication from "addApplication";
 import ME from "ME";
@@ -50,7 +50,7 @@ function useComputedImagesForActivity(activity, getIconURL) {
       obj2[0] = tmp14;
       obj8 = obj2;
       const tmp15Result = tmp15(9655);
-    } else if (importDefault(12275)(activity)) {
+    } else if (importDefault(12277)(activity)) {
       const obj3 = { largeImage: null, smallImage: "Array" };
       const obj4 = { src: null, alt: null };
       let tmp2Result = tmp2(5000);
@@ -61,7 +61,7 @@ function useComputedImagesForActivity(activity, getIconURL) {
       obj8 = obj3;
     } else {
       if (null == smallImage) {
-        if (tmp2(12276)(activity)) {
+        if (tmp2(12278)(activity)) {
           const obj5 = { largeImage: null, smallImage: "Array" };
           const obj6 = { src: null, alt: null };
           tmp2Result = tmp2(5000);
@@ -209,7 +209,7 @@ function useRichImageForActivity(activity, activityApplication) {
     const application_id = activity.application_id;
   }
   if (null == activity) {
-    return { largeImage: "r", smallImage: "accessibilityRole" };
+    return { largeImage: "Array", smallImage: "ct" };
   } else {
     let large_image;
     if (activity != null) {
@@ -345,7 +345,7 @@ export const useImageForContentEntry = function useImageForContentEntry(tracking
   if (showCoverImage === undefined) {
     showCoverImage = true;
   }
-  ({ activity, activityApplication, fallbackApplication } = importDefault(12273)(entry));
+  ({ activity, activityApplication, fallbackApplication } = importDefault(12275)(entry));
   let obj = fallbackApplication;
   if (fallbackApplication == null) {
     obj = activityApplication;

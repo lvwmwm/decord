@@ -1,10 +1,10 @@
-// Module ID: 11188
-// Function ID: 11189
+// Module ID: 11189
+// Function ID: 11190
 // Name: useGuildProfileCTA
-// Dependencies: [19, 1218, 1971, 1891, 4288, 1903, 676, 589, 1384, 7772, 11189, 8266, 5337, 2]
+// Dependencies: [19, 1218, 1971, 1891, 4288, 1903, 676, 589, 1384, 7772, 11190, 8266, 5337, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 11188 (useGuildProfileCTA)
+// Module 11189 (useGuildProfileCTA)
 import noop from "noop";
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -84,7 +84,7 @@ export default function useGuildProfileCTA(id) {
   const validInviteKey = stateFromStoresObject.validInviteKey;
   const isBypassInvite = stateFromStoresObject.isBypassInvite;
   const inviteRoles = stateFromStoresObject.inviteRoles;
-  let tmp6 = importDefault(11189)();
+  let tmp6 = importDefault(11190)();
   obj = tmp6;
   const items8 = [stateFromStores3, tmp6, id, features, validInviteKey, , , , , , , ];
   ({ visibility: arr9[5], tag: arr9[6] } = id);
@@ -233,7 +233,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
       }
     }
   }
-  const pendingFolderGuildIds = set(11189).getPendingFolderGuildIds();
+  const pendingFolderGuildIds = set(11190).getPendingFolderGuildIds();
   if (tmp7) {
     let roles;
     if (invite != null) {
@@ -295,7 +295,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
     }
     return APPLY_TO_JOIN;
   }
-  const obj2 = set(11189);
+  const obj2 = set(11190);
   const tmp15 = set;
   tmp7 = null != joinedAt;
 };

@@ -1,10 +1,10 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15739
+// Function ID: 15740
 // Name: ChannelSubtitle
-// Dependencies: [19, 21, 9795, 4299, 15341, 9792, 2]
+// Dependencies: [19, 21, 9796, 4299, 15349, 9793, 2]
 // Exports: renderChannelSubtitle
 
-// Module 15731 (ChannelSubtitle)
+// Module 15739 (ChannelSubtitle)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -19,7 +19,7 @@ function ChannelSubtitle(arg0) {
   let textProps;
   ({ muted, textProps } = arg0);
   ({ connected, channelId, guildId, layout, subtitle } = arg0);
-  let obj = require(15341) /* getChannelSubtitleData */;
+  let obj = require(15349) /* getChannelSubtitleData */;
   const channelSubtitleData = obj.getChannelSubtitleData(subtitle);
   if (null == channelSubtitleData) {
     return null;
@@ -36,7 +36,7 @@ function ChannelSubtitle(arg0) {
     obj[3] = guildId;
     obj[4] = layout;
     obj[6] = !("voice" === channelSubtitleData.type && connected);
-    obj.children = tmp(9792).renderMessagePreviewMarkup(obj);
+    obj.children = tmp(9793).renderMessagePreviewMarkup(obj);
     return jsx(tmp(4299).Text, { content: null, muted: null, channelId: null, guildId: null, layout: null, color: "text-muted", disableAnimatedEmoji: null });
   }
 }
@@ -50,7 +50,7 @@ export const renderChannelSubtitle = function renderChannelSubtitle(arg0) {
     return null;
   } else {
     let obj = { variant: null, color: "text-muted", lineClamp: 1, maxFontSizeMultiplier: 1.75 };
-    obj[0] = require(9795) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant;
+    obj[0] = require(9796) /* getLayoutStyles */.getLayoutStyles(layout).messagePreview.text.variant;
     if (typeof subtitle === "string") {
       obj = {};
       const merged = Object.assign(obj);

@@ -1,10 +1,10 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12788
+// Function ID: 12789
 // Name: PremiumGroupEducationActionSheet
 // Dependencies: [17, 3961, 21, 4303, 712, 5397, 7793, 4299, 1236, 2866, 2]
 // Exports: default
 
-// Module 12786 (PremiumGroupEducationActionSheet)
+// Module 12788 (PremiumGroupEducationActionSheet)
 import { View } from "get ActivityIndicator";
 import { HELP_CENTER_LINK } from "SubscriptionStatusTypes";
 import jsxProd from "jsxProd";

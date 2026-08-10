@@ -1,8 +1,8 @@
-// Module ID: 13319
-// Function ID: 13320
-// Dependencies: [19, 17, 21, 4303, 712, 1609, 7404, 5397, 5399, 500, 13314, 13320, 13257, 13321, 13324, 5712, 2]
+// Module ID: 13321
+// Function ID: 13322
+// Dependencies: [19, 17, 21, 4303, 712, 1609, 7404, 5397, 5399, 500, 13316, 13322, 13259, 13323, 13326, 5712, 2]
 
-// Module 13319
+// Module 13321
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -37,9 +37,9 @@ const memoResult = require("noop").memo(function GuildActionSheet(arg0) {
     num = 16;
   }
   obj[2] = { paddingBottom: importDefault(1609)().bottom + num };
-  const items = [closure_4(importDefault(13314), { guild }), closure_4(importDefault(13320), { guild }), , ];
+  const items = [closure_4(importDefault(13316), { guild }), closure_4(importDefault(13322), { guild }), , ];
   const obj1 = { style: tmp.actions, children: null };
-  const items1 = [closure_4(require(13257) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), closure_4(importDefault(13321), { guild }), closure_4(require(13257) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), closure_4(require(13257) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), closure_4(require(13257) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), closure_4(importDefault(13324), { guildId: guild.id })];
+  const items1 = [closure_4(require(13259) /* HideMutedChannelsOption */.GuildUnreadAction, { guild }), closure_4(importDefault(13323), { guild }), closure_4(require(13259) /* HideMutedChannelsOption */.GuildActionSheetPrimaryActions, { guild }), closure_4(require(13259) /* HideMutedChannelsOption */.GuildActionSheetSecondaryActions, { guild }), closure_4(require(13259) /* HideMutedChannelsOption */.GuildDeveloperOptionAction, { guild }), closure_4(importDefault(13326), { guildId: guild.id })];
   obj1[1] = items1;
   items[2] = closure_5(View, obj1);
   items[3] = closure_4(require(5712) /* ActionSheetHeaderBar */.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });

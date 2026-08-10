@@ -1,10 +1,10 @@
-// Module ID: 14847
-// Function ID: 14848
+// Module ID: 14849
+// Function ID: 14850
 // Name: feedBlock
-// Dependencies: [19, 17, 4295, 1302, 5829, 678, 676, 21, 4303, 712, 589, 4153, 14314, 14848, 14316, 7000, 5748, 5728, 1236, 4299, 4846, 4271, 14849, 1988, 4259, 4714, 14842, 14850, 500, 8297, 14851, 5268, 14852, 14853, 2]
+// Dependencies: [19, 17, 4295, 1302, 5829, 678, 676, 21, 4303, 712, 589, 4153, 14316, 14850, 14318, 7000, 5748, 5728, 1236, 4299, 4846, 4271, 14851, 1988, 4259, 4714, 14844, 14852, 500, 8297, 14853, 5268, 14854, 14855, 2]
 // Exports: default
 
-// Module 14847 (feedBlock)
+// Module 14849 (feedBlock)
 import Text from "Text";
 import get_ActivityIndicator from "context";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -54,7 +54,7 @@ export default function _default(feedBlock) {
   let obj1 = feedBlock(589);
   let items1 = [hasConsented];
   stateFromStores1 = obj1.useStateFromStores(items1, () => hasConsented.hasConsented(constants2.PERSONALIZATION));
-  let tmp6 = stateFromStores1(14314)();
+  let tmp6 = stateFromStores1(14316)();
   dependencyMap = tmp6;
   const items2 = [feedBlock.sortedSkuIds, tmp6, stateFromStores1];
   const memo = React.useMemo(() => {
@@ -84,7 +84,7 @@ export default function _default(feedBlock) {
     return { feedProducts: _undefined(items1), isPersonalized: tmp6 };
   }, items2);
   ({ isPersonalized, feedProducts } = memo);
-  let obj2 = feedBlock(14316);
+  let obj2 = feedBlock(14318);
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts({ products: feedProducts, maxProducts: 36, screen });
   let obj3 = feedBlock(589);
   const items3 = [maybeApplyNoTextColorForLightCustomTheme];
@@ -134,7 +134,7 @@ export default function _default(feedBlock) {
   }
   items5[1] = tmp12Result;
   obj1[1] = items5;
-  const items6 = [closure_12(closure_5, obj1), callback(stateFromStores1(14842), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
+  const items6 = [closure_12(closure_5, obj1), callback(stateFromStores1(14844), { products: filteredAndSortedProducts, loadingCardsNum: 36, preferVCPrice, accessibilityLabel: stringResult, disableBundleStaticBackground }), ];
   const obj5 = { style: feedFooterOrbImage.feedFooter, children: null };
   const obj6 = { variant: "heading-lg/bold", accessibilityRole: "header", children: null };
   const intl4 = tmp(1236).intl;
@@ -148,7 +148,7 @@ export default function _default(feedBlock) {
     if (stateFromStores2) {
       const obj8 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
       const obj9 = { uri: null };
-      tmp5Result = tmp5(14850);
+      tmp5Result = tmp5(14852);
       obj9[0] = tmp5Result;
       obj8[0] = obj9;
       feedFooterOrbImage = feedFooterOrbImage.feedFooterOrbImage;
@@ -158,13 +158,13 @@ export default function _default(feedBlock) {
       if (tmpResult.isAndroid()) {
         const obj10 = { url: null, autoplay: true, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         tmp5Result = tmp5(8297);
-        obj10[0] = tmp5(14851);
+        obj10[0] = tmp5(14853);
         obj10[2] = feedFooterOrbImage.feedFooterOrbImage;
         tmp12Result = tmp12(tmp5Result, obj10);
       } else {
         const obj11 = { source: null, enableAnimation: true, resizeMode: "contain", style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
         const obj12 = { uri: null };
-        obj12[0] = tmp5(14851);
+        obj12[0] = tmp5(14853);
         obj11[0] = obj12;
         obj11[3] = feedFooterOrbImage.feedFooterOrbImage;
         tmp12Result = tmp12(tmp5(5268), obj11);
@@ -175,11 +175,11 @@ export default function _default(feedBlock) {
   } else {
     const obj13 = { source: null, style: null, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     if (stateFromStores) {
-      obj13[0] = tmp(14852);
+      obj13[0] = tmp(14854);
       obj13[1] = feedFooterOrbImage.feedFooterImage;
       let tmp18 = obj13;
     } else {
-      obj13[0] = tmp(14853);
+      obj13[0] = tmp(14855);
       obj13[1] = feedFooterOrbImage.feedFooterImage;
       tmp18 = obj13;
     }

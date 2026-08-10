@@ -1,10 +1,10 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16878
+// Function ID: 16879
 // Name: ConnectedNotificationSettings
-// Dependencies: [109, 19, 17, 1376, 1372, 5254, 4224, 1891, 16584, 3938, 4499, 1903, 676, 21, 4303, 712, 4013, 4498, 4271, 9818, 1988, 5262, 5257, 9828, 9832, 9839, 7985, 1236, 7984, 5767, 5768, 4299, 1297, 3998, 1974, 9827, 5374, 9822, 5380, 12107, 3932, 4502, 4764, 4494, 7967, 4712, 9823, 1480, 589, 5255, 5714, 5270, 16870, 9817, 5783, 2]
+// Dependencies: [109, 19, 17, 1376, 1372, 5254, 4224, 1891, 16593, 3938, 4499, 1903, 676, 21, 4303, 712, 4013, 4498, 4271, 9819, 1988, 5262, 5257, 9829, 9833, 9840, 7985, 1236, 7984, 5767, 5768, 4299, 1297, 3998, 1974, 9828, 5374, 9823, 5380, 12108, 3932, 4502, 4764, 4494, 7967, 4712, 9824, 1480, 589, 5255, 5714, 5270, 16879, 9818, 5783, 2]
 // Exports: default
 
-// Module 16869 (ConnectedNotificationSettings)
+// Module 16878 (ConnectedNotificationSettings)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import importAllResult from "MuteSettings";
 import { View } from "collectGuildAnalyticsMetadata";
@@ -55,7 +55,7 @@ function ConnectedNotificationSettings(guildId) {
   }), items1);
   const tmp3 = callback(stateFromStoresObject, closure_3);
   obj = { children: null };
-  obj = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: guildId(9823).useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
+  obj = { guildId, channels: memo, navigation, shouldUseNewNotificationSystem: guildId(9824).useShouldUseNewNotificationSystem("NotificationSettingsModalNative") };
   const merged = Object.assign(tmp3);
   const items2 = [callback2(NotificationSettings, obj), callback2(guildId(5714).NavScrim, {})];
   obj[0] = items2;
@@ -139,15 +139,15 @@ prototype["renderServerSettings"] = function renderServerSettings() {
     obj = { children: null };
     const obj1 = { guildId: null };
     obj1[0] = self.props.guildId;
-    const items = [callback2(require(9828) /* NotificationSettingsPresets */.NotificationSettingsGuildPresets, obj1), , ];
+    const items = [callback2(require(9829) /* NotificationSettingsPresets */.NotificationSettingsGuildPresets, obj1), , ];
     const obj2 = { style: null, guildId: null };
     obj2[0] = { marginTop: 24 };
     obj2[1] = self.props.guildId;
-    items[1] = callback2(require(9832) /* NotificationSettingsMessageNotification */.NotificationSettingsGuildMessageNotification, obj2);
+    items[1] = callback2(require(9833) /* NotificationSettingsMessageNotification */.NotificationSettingsGuildMessageNotification, obj2);
     const obj3 = { style: null, guildId: null };
     obj3[0] = { marginTop: 24 };
     obj3[1] = self.props.guildId;
-    items[2] = callback2(require(9839) /* NotificationSettingsMessageUnread */.NotificationSettingsGuildMessageUnread, obj3);
+    items[2] = callback2(require(9840) /* NotificationSettingsMessageUnread */.NotificationSettingsGuildMessageUnread, obj3);
     obj[0] = items;
     const items1 = [tmp2(View, obj), ];
     const obj4 = { style: null };
@@ -312,11 +312,11 @@ prototype["renderMuteSection"] = function renderMuteSection() {
       let obj = { title: null, subtitle: null, style: null, onPressUnmute: null };
       const intl3 = require(1236) /* getSystemLocale */.intl;
       obj[0] = intl3.string(require(1236) /* getSystemLocale */.t.ZSkXJY);
-      obj[1] = require(9827) /* NotificationSettingsMuteBanner */.getMuteBannerSubtitleFromConfig(muteConfig);
+      obj[1] = require(9828) /* NotificationSettingsMuteBanner */.getMuteBannerSubtitleFromConfig(muteConfig);
       obj[2] = { marginBottom: 16 };
       obj[3] = self.handleMutePress;
-      tmp15 = callback2(require(9827) /* NotificationSettingsMuteBanner */.NotificationSettingsMuteBanner, obj);
-      const obj7 = require(9827) /* NotificationSettingsMuteBanner */;
+      tmp15 = callback2(require(9828) /* NotificationSettingsMuteBanner */.NotificationSettingsMuteBanner, obj);
+      const obj7 = require(9828) /* NotificationSettingsMuteBanner */;
     }
     return tmp15;
   } else {
@@ -355,9 +355,9 @@ prototype["renderMuteSection"] = function renderMuteSection() {
     if (muted) {
       const obj3 = { muteConfig: null, type: null };
       obj3[0] = muteConfig;
-      obj3[1] = tmp7(9822).MuteSettingType.SERVER;
-      tmp10Result = callback2(importDefault(9822), obj3, "muted-until");
-      const tmp14 = importDefault(9822);
+      obj3[1] = tmp7(9823).MuteSettingType.SERVER;
+      tmp10Result = callback2(importDefault(9823), obj3, "muted-until");
+      const tmp14 = importDefault(9823);
     }
     items[1] = tmp10Result;
     return items;
@@ -370,7 +370,7 @@ prototype["renderChannels"] = function renderChannels() {
   obj[0] = intl.string(self(1236).t.O4TIvi);
   obj = { icon: null, label: null, onPress: null };
   obj = { IconComponent: null };
-  obj[0] = self(12107).PlusMediumIcon;
+  obj[0] = self(12108).PlusMediumIcon;
   obj[0] = callback2(self(5380).TableRowIcon, obj);
   const intl2 = self(1236).intl;
   obj[1] = intl2.string(self(1236).t.quib7R);
@@ -472,7 +472,7 @@ prototype["render"] = function render() {
 prototype["getOverriddenChannels"] = function getOverriddenChannels() {
   const props = this.props;
   const channels = props.channels;
-  let obj = set(9823);
+  let obj = set(9824);
   obj = { ignoreNotificationSetting: false, ignoreMute: this.props.shouldUseNewNotificationSystem, ignoreUnreadSetting: !this.props.shouldUseNewNotificationSystem };
   set = new Set(obj.filterOverrides(props.channelOverrides, obj));
   const mapped = channels.map((channel) => {
@@ -509,7 +509,7 @@ export default function NotificationSettingsModal() {
     const obj3 = callback(5270);
     obj[1] = callback(5270).getHeaderBackButton();
     obj[2] = function render(guildId, navigation) {
-      return callback2(callback(16870), { guildId: guildId.guildId, navigation });
+      return callback2(callback(16879), { guildId: guildId.guildId, navigation });
     };
     obj[constants.ADD_OVERRIDE] = obj;
     const obj1 = { headerLeft: null, title: null, render: null };
@@ -518,7 +518,7 @@ export default function NotificationSettingsModal() {
     const intl3 = callback(1236).intl;
     obj1[1] = intl3.string(callback(1236).t.h850Ss);
     obj1[2] = function render(channelId) {
-      return callback2(callback(9817), { channelId: channelId.channelId, inGuildContext: true });
+      return callback2(callback(9818), { channelId: channelId.channelId, inGuildContext: true });
     };
     obj[constants.CHANNEL_OVERRIDE] = obj1;
     return obj;

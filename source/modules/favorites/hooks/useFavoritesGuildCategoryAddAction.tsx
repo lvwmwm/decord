@@ -1,10 +1,10 @@
-// Module ID: 12133
-// Function ID: 12134
+// Module ID: 12134
+// Function ID: 12135
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 676, 12134, 1894, 1236, 3030, 2]
+// Dependencies: [19, 676, 12135, 1894, 1236, 3030, 2]
 // Exports: default
 
-// Module 12133 (useFavoritesGuildCategoryAddAction)
+// Module 12134 (useFavoritesGuildCategoryAddAction)
 import noop from "noop";
 import { ChannelTypes } from "ME";
 

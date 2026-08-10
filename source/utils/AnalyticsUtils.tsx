@@ -1,7 +1,7 @@
 // Module ID: 698
 // Function ID: 699
 // Name: expandEventProperties
-// Dependencies: [109, 19, 699, 706, 676, 13467, 4329, 1898, 697, 503, 13465, 1208, 709, 7135, 1236, 7, 514, 2, 13468]
+// Dependencies: [109, 19, 699, 706, 676, 13469, 4329, 1898, 697, 503, 13467, 1208, 709, 7135, 1236, 7, 514, 2, 13470]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
 // Module 698 (expandEventProperties)
@@ -122,7 +122,7 @@ if (isBlockedDomain.isLibdiscoreInitialized()) {
   launchSignature = obj2.generateLaunchSignature(obj3.getGlobalObject());
 }
 function addBreadcrumb(arg0) {
-  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13465) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
+  const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = require(13467) /* IGNORE_ANALYTICS_BREADCRUMB_EVENTS */.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
   if (!IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(arg0)) {
     let obj = importDefault(1208);
     obj = { category: "analytics", message: null };

@@ -1,9 +1,9 @@
-// Module ID: 16548
-// Function ID: 16549
+// Module ID: 16557
+// Function ID: 16558
 // Name: _terminate
-// Dependencies: [5, 1975, 1903, 3953, 7344, 1905, 676, 5261, 7644, 3947, 12737, 2]
+// Dependencies: [5, 1975, 1903, 3953, 7344, 1905, 676, 5261, 7644, 3947, 12739, 2]
 
-// Module 16548 (_terminate)
+// Module 16557 (_terminate)
 import GuildFeatures from "GuildFeatures";
 import _getSystemLocale from "_getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";

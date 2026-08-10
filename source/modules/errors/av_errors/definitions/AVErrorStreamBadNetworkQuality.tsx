@@ -1,9 +1,9 @@
-// Module ID: 16919
-// Function ID: 16920
+// Module ID: 16928
+// Function ID: 16929
 // Name: AVErrorStreamBadNetworkQualityDefinition
-// Dependencies: [4389, 676, 9169, 16912, 1351, 2]
+// Dependencies: [4389, 676, 9169, 16921, 1351, 2]
 
-// Module 16919 (AVErrorStreamBadNetworkQualityDefinition)
+// Module 16928 (AVErrorStreamBadNetworkQualityDefinition)
 import initialize from "initialize";
 import { RTCConnectionQuality } from "ME";
 
@@ -18,9 +18,9 @@ export const AVErrorStreamBadNetworkQualityDefinition = {
       if (quality.getQuality(streamKey) === constants.BAD) {
         const obj = { type: null };
         obj[0] = callback(9169).AVError.STREAM_BAD_NETWORK_QUALITY;
-        const merged = Object.assign(callback(16912).getStreamErrorContext(streamKey));
+        const merged = Object.assign(callback(16921).getStreamErrorContext(streamKey));
         tmp = obj;
-        const obj2 = callback(16912);
+        const obj2 = callback(16921);
       }
       return tmp;
     });

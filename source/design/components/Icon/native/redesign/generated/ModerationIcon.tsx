@@ -1,10 +1,10 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16606
+// Function ID: 16607
 // Name: ModerationIcon
-// Dependencies: [19, 21, 712, 4004, 16598, 2]
+// Dependencies: [19, 21, 712, 4004, 16607, 2]
 // Exports: ModerationIcon
 
-// Module 16597 (ModerationIcon)
+// Module 16606 (ModerationIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ModerationIcon = function ModerationIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(16598) /* registerAsset */;
+  obj[0] = require(16607) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

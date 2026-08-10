@@ -1,10 +1,10 @@
-// Module ID: 10476
-// Function ID: 10477
+// Module ID: 10477
+// Function ID: 10478
 // Name: _getDefaultRewardName
-// Dependencies: [7001, 10477, 7165, 7158, 3526, 1236, 10478, 10479, 10480, 10481, 10482, 5164, 2]
+// Dependencies: [7001, 10478, 7165, 7158, 3526, 1236, 10479, 10480, 10481, 10482, 10483, 5164, 2]
 // Exports: getCollectibleQuestRewardDuration, getCollectibleQuestRewardExtendableExpirationDate, getCollectiblesQuestReward, getCollectiblesQuestRewardItem, getDefaultPlatform, getDefaultRewardName, getDefaultRewardNameWithArticle, getInGameQuestReward, getPlatformString, getQuestOrbMultiplier, getQuestOrbMultiplierForUser, getQuestOrbRewardQuantityForUser, getQuestPrimaryReward, getRewardCodeQuestReward, getVirtualCurrencyRewardOrbQuantity, getVirtualCurrencyRewardPremiumOrbQuantity, hasCollectiblesQuestReward, hasFractionalPremiumQuestReward, hasInGameQuestReward, hasPremiumOrbQuantity, hasQuestRewardCode, hasVirtualCurrencyReward, isCollectibleQuestRewardPermanentWithPremiumSubscription, isCollectibleQuestRewardPremiumExtendable, isTieredRewardCodeQuest
 
-// Module 10476 (_getDefaultRewardName)
+// Module 10477 (_getDefaultRewardName)
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
 import set from "QuestRewardTypes";
 
@@ -12,7 +12,7 @@ const require = arg1;
 function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
   let rewards = rewardsConfig.rewardsConfig.rewards;
   if (rewards.some((type) => type.type === callback(table[2]).QuestRewardTypes.FRACTIONAL_PREMIUM)) {
-    return require(10480) /* getDurationStringOfFractionalPremium */.getFractionalPremiumQuestRewardName(rewardsConfig);
+    return require(10481) /* getDurationStringOfFractionalPremium */.getFractionalPremiumQuestRewardName(rewardsConfig);
   } else {
     let rewards2 = rewardsConfig.rewardsConfig.rewards;
     if (rewards2.some((type) => type.type === callback(table[2]).QuestRewardTypes.VIRTUAL_CURRENCY)) {
@@ -24,7 +24,7 @@ function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
           num = found.orbQuantity;
         } else {
           const rewards1 = rewardsConfig.rewardsConfig.rewards;
-          const questOrbMultiplierEligibilityForUser = require(10478) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(stateFromStores);
+          const questOrbMultiplierEligibilityForUser = require(10479) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(stateFromStores);
           const found1 = rewards1.find((type) => type.type === callback(7165).QuestRewardTypes.VIRTUAL_CURRENCY);
           let premiumOrbQuantity;
           if (found1 != null) {
@@ -43,10 +43,10 @@ function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
               let orbQuantity = orbQuantity2;
             }
             num = orbQuantity;
-            tmp15Result = tmp15(10479);
+            tmp15Result = tmp15(10480);
           }
           orbQuantity = found.orbQuantity;
-          const obj5 = require(10478) /* getQuestOrbMultiplierEligibilityForUser */;
+          const obj5 = require(10479) /* getQuestOrbMultiplierEligibilityForUser */;
           tmp15 = require;
         }
       }
@@ -67,7 +67,7 @@ function _getDefaultRewardName(rewardsConfig, stateFromStores, arg2) {
       obj[0] = num;
       return intl.formatToPlainString(require(1236) /* getSystemLocale */.t["nLXlh+"], obj);
     } else {
-      obj = require(10481) /* getContextualEntrypointHeading */;
+      obj = require(10482) /* getContextualEntrypointHeading */;
       const messages = obj.getDefaultReward(rewardsConfig).messages;
       return arg2 ? messages.nameWithArticle : messages.name;
     }
@@ -328,7 +328,7 @@ export const isCollectibleQuestRewardPermanentWithPremiumSubscription = function
     if (tmp11 != null) {
       expirationMode1 = tmp11.expirationMode;
     }
-    hasItem = expirationMode1 === tmp3(10477).QuestRewardExpirationMode.PREMIUM_PERMANENT;
+    hasItem = expirationMode1 === tmp3(10478).QuestRewardExpirationMode.PREMIUM_PERMANENT;
   }
   return hasItem;
 };
@@ -401,7 +401,7 @@ export const getQuestOrbMultiplierForUser = function getQuestOrbMultiplierForUse
     if (num == null) {
       num = 1;
     }
-    let tmp2Result = tmp2(10478);
+    let tmp2Result = tmp2(10479);
     const rewards1 = rewardsConfig.rewardsConfig.rewards;
     const questOrbMultiplierEligibilityForUser = tmp2Result.getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStandardSub);
     const found1 = rewards1.find((type) => type.type === callback(7165).QuestRewardTypes.VIRTUAL_CURRENCY);
@@ -415,7 +415,7 @@ export const getQuestOrbMultiplierForUser = function getQuestOrbMultiplierForUse
     }
     let num6 = 1;
     if (tmp9) {
-      tmp2Result = tmp2(10479);
+      tmp2Result = tmp2(10480);
       num6 = 1;
       if (tmp2Result.shouldReceiveQuestOrbMultiplier(questOrbMultiplierEligibilityForUser)) {
         num6 = num;
@@ -433,7 +433,7 @@ export const getQuestOrbRewardQuantityForUser = function getQuestOrbRewardQuanti
     return found.orbQuantity;
   } else {
     const rewards1 = config.rewardsConfig.rewards;
-    const questOrbMultiplierEligibilityForUser = require(10478) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(stateFromStores);
+    const questOrbMultiplierEligibilityForUser = require(10479) /* getQuestOrbMultiplierEligibilityForUser */.getQuestOrbMultiplierEligibilityForUser(stateFromStores);
     const found1 = rewards1.find((type) => type.type === callback(7165).QuestRewardTypes.VIRTUAL_CURRENCY);
     let premiumOrbQuantity;
     if (found1 != null) {
@@ -454,7 +454,7 @@ export const getQuestOrbRewardQuantityForUser = function getQuestOrbRewardQuanti
       return orbQuantity;
     }
     orbQuantity = found.orbQuantity;
-    const obj2 = require(10478) /* getQuestOrbMultiplierEligibilityForUser */;
+    const obj2 = require(10479) /* getQuestOrbMultiplierEligibilityForUser */;
     const tmp5 = require;
   }
 };
@@ -477,7 +477,7 @@ export const getRewardCodeQuestReward = function getRewardCodeQuestReward(idx) {
 };
 export const isTieredRewardCodeQuest = function isTieredRewardCodeQuest(quest) {
   const rewardsConfig = quest.quest.config.rewardsConfig;
-  let everyResult = rewardsConfig.assignmentMethod === require(10482) /* QuestRewardAssignmentMethods */.QuestRewardAssignmentMethods.TIERED;
+  let everyResult = rewardsConfig.assignmentMethod === require(10483) /* QuestRewardAssignmentMethods */.QuestRewardAssignmentMethods.TIERED;
   if (everyResult) {
     everyResult = rewardsConfig.rewards.length > 0;
   }

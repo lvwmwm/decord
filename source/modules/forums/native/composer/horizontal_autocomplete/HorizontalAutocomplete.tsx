@@ -1,9 +1,9 @@
-// Module ID: 9999
-// Function ID: 10000
+// Module ID: 10000
+// Function ID: 10001
 // Name: HorizontalAutocompleteOption
 // Dependencies: [19, 17, 4295, 1964, 1891, 3938, 1903, 676, 21, 4303, 5236, 712, 4036, 4730, 4304, 589, 1297, 4299, 4146, 5753, 5754, 8228, 4764, 4494, 5268, 2]
 
-// Module 9999 (HorizontalAutocompleteOption)
+// Module 10000 (HorizontalAutocompleteOption)
 import "getRoleIconData";
 import get_ActivityIndicator from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

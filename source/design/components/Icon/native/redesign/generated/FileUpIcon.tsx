@@ -1,10 +1,10 @@
-// Module ID: 13882
-// Function ID: 13883
+// Module ID: 13884
+// Function ID: 13885
 // Name: FileUpIcon
-// Dependencies: [19, 21, 712, 4004, 13883, 2]
+// Dependencies: [19, 21, 712, 4004, 13885, 2]
 // Exports: FileUpIcon
 
-// Module 13882 (FileUpIcon)
+// Module 13884 (FileUpIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const FileUpIcon = function FileUpIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13883) /* registerAsset */;
+  obj[0] = require(13885) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

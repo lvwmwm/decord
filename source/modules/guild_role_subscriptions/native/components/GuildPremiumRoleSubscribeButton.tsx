@@ -1,10 +1,10 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16853
+// Function ID: 16854
 // Name: GuildPremiumRoleSubscribeButton
 // Dependencies: [19, 21, 4303, 8686, 1236, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 16844 (GuildPremiumRoleSubscribeButton)
+// Module 16853 (GuildPremiumRoleSubscribeButton)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";

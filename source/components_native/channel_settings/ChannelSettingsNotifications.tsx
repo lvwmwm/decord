@@ -1,10 +1,10 @@
-// Module ID: 9817
-// Function ID: 9818
+// Module ID: 9818
+// Function ID: 9819
 // Name: ChannelSettingsNotificationsGuard
-// Dependencies: [19, 1376, 1372, 4224, 3938, 4499, 1903, 676, 21, 1236, 4303, 712, 4013, 4498, 5262, 4271, 9818, 1988, 5257, 4494, 5767, 5374, 9822, 5768, 7985, 7984, 4299, 7967, 4712, 589, 9823, 9824, 2]
+// Dependencies: [19, 1376, 1372, 4224, 3938, 4499, 1903, 676, 21, 1236, 4303, 712, 4013, 4498, 5262, 4271, 9819, 1988, 5257, 4494, 5767, 5374, 9823, 5768, 7985, 7984, 4299, 7967, 4712, 589, 9824, 9825, 2]
 // Exports: default
 
-// Module 9817 (ChannelSettingsNotificationsGuard)
+// Module 9818 (ChannelSettingsNotificationsGuard)
 import importAllResult from "computeChannelName";
 import createChannelRecord from "createChannelRecord";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -217,14 +217,14 @@ prototype["renderMuteSection"] = function renderMuteSection() {
     const obj4 = { muteConfig: null, type: null };
     obj4[0] = props.muteConfig;
     if (channel.type === constants3.GUILD_CATEGORY) {
-      MuteSettingType = tmp(9822).MuteSettingType;
+      MuteSettingType = tmp(9823).MuteSettingType;
       let CHANNEL = MuteSettingType.CATEGORY;
     } else {
-      CHANNEL = tmp(9822).MuteSettingType.CHANNEL;
+      CHANNEL = tmp(9823).MuteSettingType.CHANNEL;
     }
     obj4[1] = CHANNEL;
-    tmp5(importDefault(9822), obj4);
-    const tmp8 = importDefault(9822);
+    tmp5(importDefault(9823), obj4);
+    const tmp8 = importDefault(9823);
   }
 };
 prototype["renderForumSettings"] = function renderForumSettings() {
@@ -444,7 +444,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
   let obj = dependencyMap;
   const items = [ensureGuildLoaded];
   const stateFromStores = _require(589).useStateFromStores(items, () => outer1_6.getChannel(channelId.channelId));
-  _require(9823);
+  _require(9824);
   if (null == stateFromStores) {
     return null;
   } else {
@@ -456,7 +456,7 @@ export default function ChannelSettingsNotificationsSplit(arg0) {
     obj = { channel: null };
     obj[0] = stateFromStores;
     merged1 = Object.assign(merged1);
-    tmp11 = callback2(importDefault(9824), obj);
-    const tmp14 = importDefault(9824);
+    tmp11 = callback2(importDefault(9825), obj);
+    const tmp14 = importDefault(9825);
   }
 };

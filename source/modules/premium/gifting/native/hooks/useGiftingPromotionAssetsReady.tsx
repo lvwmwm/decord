@@ -1,26 +1,26 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16026
+// Function ID: 16027
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [10042, 16018, 2]
+// Dependencies: [10043, 16027, 2]
 // Exports: default
 
-// Module 16017 (useGiftingPromotionAssetsReady)
+// Module 16026 (useGiftingPromotionAssetsReady)
 const result = require("set").fileFinishedImporting("modules/premium/gifting/native/hooks/useGiftingPromotionAssetsReady.tsx");
 
 export default function useGiftingPromotionAssetsReady(asset, asset2) {
-  let obj = require(10042) /* useThemeAndReducedMotionAwareAssetUrl */;
+  let obj = require(10043) /* useThemeAndReducedMotionAwareAssetUrl */;
   asset = undefined;
   if (asset != null) {
     asset = asset.asset;
   }
   const themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(asset);
-  const status = importDefault(16018)(themeAndReducedMotionAwareAssetUrl).status;
+  const status = importDefault(16027)(themeAndReducedMotionAwareAssetUrl).status;
   let asset1;
   if (asset2 != null) {
     asset1 = asset2.asset;
   }
-  const themeAndReducedMotionAwareAssetUrl1 = require(10042) /* useThemeAndReducedMotionAwareAssetUrl */.useThemeAndReducedMotionAwareAssetUrl(asset1);
-  const status2 = importDefault(16018)(themeAndReducedMotionAwareAssetUrl1).status;
+  const themeAndReducedMotionAwareAssetUrl1 = require(10043) /* useThemeAndReducedMotionAwareAssetUrl */.useThemeAndReducedMotionAwareAssetUrl(asset1);
+  const status2 = importDefault(16027)(themeAndReducedMotionAwareAssetUrl1).status;
   let tmp8 = "skipped" === status;
   if (!tmp8) {
     tmp8 = "preloaded" === status;

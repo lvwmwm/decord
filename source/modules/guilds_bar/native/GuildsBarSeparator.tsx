@@ -1,9 +1,9 @@
-// Module ID: 15457
-// Function ID: 15458
+// Module ID: 15465
+// Function ID: 15466
 // Name: GuildsBarHomeDrawerSeparator
-// Dependencies: [19, 21, 4303, 712, 15157, 4036, 4713, 8009, 4005, 5781, 2]
+// Dependencies: [19, 21, 4303, 712, 15159, 4036, 4713, 8009, 4005, 5781, 2]
 
-// Module 15457 (GuildsBarHomeDrawerSeparator)
+// Module 15465 (GuildsBarHomeDrawerSeparator)
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
 import importAllResult from "noop";
@@ -12,7 +12,7 @@ const require = arg1;
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
   let panelX;
-  let obj = guildItemSize(15157);
+  let obj = guildItemSize(15159);
   panelX = obj.useHomeDrawerState().panelX;
   const tmp = callback(guildItemSize);
   const fn = function n() {
@@ -21,7 +21,7 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
     obj[0] = guildItemSize(outer1_2[6]).withSpring(bound, guildItemSize(outer1_2[4]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: guildItemSize(4713).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15157).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: guildItemSize(4713).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15159).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_5;

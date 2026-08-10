@@ -1,9 +1,9 @@
-// Module ID: 15150
-// Function ID: 15151
+// Module ID: 15152
+// Function ID: 15153
 // Name: LeftPanelContent
-// Dependencies: [32, 19, 17, 676, 21, 15151, 5329, 4303, 712, 4161, 1609, 15152, 15153, 15154, 15235, 15395, 4036, 15157, 15475, 4164, 11002, 2]
+// Dependencies: [32, 19, 17, 676, 21, 15153, 5329, 4303, 712, 4161, 1609, 15154, 15155, 15156, 15237, 15403, 4036, 15159, 15483, 4164, 11003, 2]
 
-// Module 15150 (LeftPanelContent)
+// Module 15152 (LeftPanelContent)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "MobileHomeDrawerExperiment";
 import get_ActivityIndicator from "context";
@@ -96,14 +96,14 @@ function LeftPanelHomeDrawerContainer() {
   let gesture;
   let homeDrawerContext;
   let panelStyles;
-  let obj = require(15157) /* context */;
+  let obj = require(15159) /* context */;
   const homeGesture = obj.useHomeGesture();
   ({ gesture, panelStyles, homeDrawerContext } = homeGesture);
   obj = { value: homeDrawerContext, children: null };
   obj = { gesture, children: null };
   obj[1] = callback2(LeftPanelContent, { panelStyles });
-  obj[1] = callback2(require(15475) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
-  return callback2(require(15157) /* context */.HomeDrawerStateContext.Provider, obj);
+  obj[1] = callback2(require(15483) /* NonCollapsableGestureDetector */.NonCollapsableGestureDetector, obj);
+  return callback2(require(15159) /* context */.HomeDrawerStateContext.Provider, obj);
 }
 let c4 = importAllResult;
 ({ View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
@@ -132,9 +132,9 @@ let closure_14 = importAllResult.memo(function LeftMenuTabsInner() {
 let obj2 = { borderTopRightRadius: require("Themes").modules.mobile.CHANNEL_DRAWER_CORNER_RADIUS };
 const memoResult = importAllResult.memo(function MainChannelsRedesignInner() {
   const obj = { profile: null, children: null };
-  obj[0] = require(11002) /* setLevels */.Profiles.LeftPanel;
+  obj[0] = require(11003) /* setLevels */.Profiles.LeftPanel;
   obj[1] = callback2(closure_14, {});
-  return callback2(importDefault(11002), obj);
+  return callback2(importDefault(11003), obj);
 });
 const result = require("get ActivityIndicator").fileFinishedImporting("components_native/MainChannels.tsx");
 

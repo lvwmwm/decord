@@ -1,10 +1,10 @@
-// Module ID: 10020
-// Function ID: 10021
+// Module ID: 10021
+// Function ID: 10022
 // Name: useMediaKeyboardItemsPerRow
 // Dependencies: [19, 4162, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 10020 (useMediaKeyboardItemsPerRow)
+// Module 10021 (useMediaKeyboardItemsPerRow)
 import noop from "noop";
 
 const require = arg1;

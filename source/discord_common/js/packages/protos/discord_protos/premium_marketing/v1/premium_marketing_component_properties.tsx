@@ -191,7 +191,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
 }
 const prototype = PremiumMarketingComponentProperties$Type.prototype;
 prototype["create"] = function create(arr) {
-  let obj = { properties: { oneofKind: "sa" }, contentIdentifier: "", isDefaultBase: false };
+  let obj = { properties: { oneofKind: "Promise" }, contentIdentifier: "", isDefaultBase: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);

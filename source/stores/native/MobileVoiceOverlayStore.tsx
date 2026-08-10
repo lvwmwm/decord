@@ -1,10 +1,10 @@
-// Module ID: 10846
-// Function ID: 10847
+// Module ID: 10847
+// Function ID: 10848
 // Name: getUserAgnosticState
 // Dependencies: [676, 698, 500, 1605, 589, 709, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 10846 (getUserAgnosticState)
+// Module 10847 (getUserAgnosticState)
 import { AnalyticEvents } from "ME";
 import { DeviceSettingsStore } from "initialize";
 

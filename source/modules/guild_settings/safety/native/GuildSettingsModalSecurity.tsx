@@ -1,10 +1,10 @@
-// Module ID: 16680
-// Function ID: 16681
+// Module ID: 16689
+// Function ID: 16690
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 1415, 1891, 1903, 9022, 676, 21, 4303, 712, 589, 9021, 4299, 1236, 4714, 14037, 5714, 2]
+// Dependencies: [19, 17, 1415, 1891, 1903, 9022, 676, 21, 4303, 712, 589, 9021, 4299, 1236, 4714, 14039, 5714, 2]
 // Exports: default
 
-// Module 16680 (GuildSettingsModalSecurity)
+// Module 16689 (GuildSettingsModalSecurity)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import { isGuildOwnerWithRequiredMfaLevel as closure_6 } from "GuildNSFWContentLevel";
@@ -117,7 +117,7 @@ export default function GuildSettingsModalSecurity(guildId) {
   obj[1] = items4;
   const items5 = [closure_13(closure_4, obj), ];
   const obj6 = { style: tmp.center, children: null };
-  const items6 = [callback2(closure_5, { source: stateFromStores(14037), style: tmp.image, resizeMode: "contain" }), ];
+  const items6 = [callback2(closure_5, { source: stateFromStores(14039), style: tmp.image, resizeMode: "contain" }), ];
   const obj8 = { style: tmp.infoWrapper, children: null };
   const obj9 = { variant: "text-sm/medium", color: "text-muted", children: null };
   const intl4 = tmp2(1236).intl;

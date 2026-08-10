@@ -1,10 +1,10 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11938
+// Function ID: 11939
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [17, 4295, 21, 4303, 712, 11938, 3971, 589, 8070, 7695, 11940, 11942, 1297, 4299, 11944, 1236, 2]
+// Dependencies: [17, 4295, 21, 4303, 712, 11939, 3971, 589, 8070, 7695, 11941, 11943, 1297, 4299, 11945, 1236, 2]
 // Exports: default
 
-// Module 11937 (GuildPowerupsRecentActivityRow)
+// Module 11938 (GuildPowerupsRecentActivityRow)
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import jsxProd from "jsxProd";
@@ -22,7 +22,7 @@ function GuildPowerupsRecentActivityRow(row) {
   row = row.row;
   ({ boost, phase, sortKey } = row);
   const tmp = callback3();
-  let obj = require(11938) /* useMaybeGetSortedBoosts */;
+  let obj = require(11939) /* useMaybeGetSortedBoosts */;
   const getBoostUserConfig = obj.useGetBoostUserConfig(boost);
   ({ roleColor, roleColorStrings, username } = getBoostUserConfig);
   let obj1 = require(3971) /* resetCache */;
@@ -42,9 +42,9 @@ function GuildPowerupsRecentActivityRow(row) {
     if ("gave" === phase) {
       let BoostGemSlashIcon = tmp2(7695).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp2(11940).BoostTier1Icon;
+      BoostGemSlashIcon = tmp2(11941).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp2(11942).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp2(11943).BoostGemSlashIcon;
     }
     obj = { style: null, children: null };
     obj[0] = tmp.boostRowContainer;
@@ -82,7 +82,7 @@ function GuildPowerupsRecentActivityRow(row) {
     items2[2] = closure_5(tmp2(4299).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj6 = { variant: "text-md/medium", lineClamp: 1, style: null, children: null };
     obj6[2] = tmp.messageText;
-    obj6[3] = importDefault(11944)(row);
+    obj6[3] = importDefault(11945)(row);
     items2[3] = closure_5(tmp2(4299).Text, obj6);
     obj3[1] = items2;
     items1[1] = closure_6(View, obj3);
@@ -110,7 +110,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/premium/powerup
 
 export default function GuildPowerupsRecentActivitySection(guildId) {
   const tmp = callback3();
-  const arr = importDefault(11938)(guildId.guildId, 10);
+  const arr = importDefault(11939)(guildId.guildId, 10);
   let tmp3 = null;
   if (0 !== arr.length) {
     let obj = { style: null, children: null };

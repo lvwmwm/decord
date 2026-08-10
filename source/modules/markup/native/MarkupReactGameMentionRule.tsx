@@ -1,10 +1,10 @@
-// Module ID: 13194
-// Function ID: 13195
+// Module ID: 13196
+// Function ID: 13197
 // Name: MarkupGameMention
 // Dependencies: [19, 21, 4303, 712, 4831, 1236, 4334, 4294, 7947, 5268, 9277, 9283, 4299, 2]
 // Exports: default
 
-// Module 13194 (MarkupGameMention)
+// Module 13196 (MarkupGameMention)
 import "noop";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

@@ -1,8 +1,11 @@
 // Module ID: 13135
 // Function ID: 13136
 // Name: SemVer
-// Dependencies: [13128]
+// Dependencies: [13133]
 
 // Module 13135 (SemVer)
 
-export default (arg0, arg1, arg2) => require(13128) /* SemVer */(arg0, arg1, arg2) < 0;
+export default (arr) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => callback(outer1_1[0])(arg1, arg0, callback));
+};

@@ -1,9 +1,9 @@
-// Module ID: 11245
-// Function ID: 11246
+// Module ID: 11246
+// Function ID: 11247
 // Name: TransferOwnershipModalScenes
 // Dependencies: [2]
 
-// Module 11245 (TransferOwnershipModalScenes)
+// Module 11246 (TransferOwnershipModalScenes)
 const result = require("set").fileFinishedImporting("modules/guild_settings/safety/TransferOwnershipConstants.tsx");
 
 export const TransferOwnershipModalScenes = { TRANFSER_OWNERSHIP: "TRANFSER_OWNERSHIP", CONFIRM_EMAIL_CODE: "CONFIRM_EMAIL_CODE" };

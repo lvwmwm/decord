@@ -1,9 +1,9 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16168
+// Function ID: 16169
 // Name: NOOP
-// Dependencies: [32, 19, 17, 4316, 8862, 4514, 11645, 11643, 4321, 11646, 21, 3, 4713, 4303, 712, 4036, 1605, 11644, 1609, 5427, 8776, 10330, 16160, 4272, 16153, 4005, 11649, 10765, 16158, 16146, 10251, 9765, 7062, 8009, 5728, 5748, 705, 16161, 5715, 16162, 16163, 10596, 16164, 16166, 16197, 16224, 16228, 16233, 2]
+// Dependencies: [32, 19, 17, 4316, 8862, 4514, 11646, 11644, 4321, 11647, 21, 3, 4713, 4303, 712, 4036, 1605, 11645, 1609, 5427, 8776, 10331, 16169, 4272, 16162, 4005, 11650, 10766, 16167, 16155, 10252, 9766, 7062, 8009, 5728, 5748, 705, 16170, 5715, 16171, 16172, 10597, 16173, 16175, 16206, 16233, 16237, 16242, 2]
 
-// Module 16159 (NOOP)
+// Module 16168 (NOOP)
 import isStable from "isStable";
 import importAllResult from "LegacyBaseButton";
 import get_ActivityIndicator from "dismissPanel";
@@ -57,12 +57,12 @@ function AnimatedWrapper(children) {
   let pIPState;
   let animatedStyle;
   let animatedStyle1;
-  let obj = wrapperOffset(10765);
+  let obj = wrapperOffset(10766);
   height = obj.useGlobalStatusIndicatorState().height;
   const tmp3 = callback2();
   dependencyMap = tmp3;
   let obj1 = connected;
-  const context = connected.useContext(height(11644));
+  const context = connected.useContext(height(11645));
   wrapperDimensions = context.wrapperDimensions;
   connected = context.connected;
   controlsSpecs = context.controlsSpecs;
@@ -80,7 +80,7 @@ function AnimatedWrapper(children) {
   fn.__workletHash = 6243014585347;
   fn.__initData = closure_55;
   derivedValue = obj2.useDerivedValue(fn);
-  let obj3 = wrapperOffset(16158);
+  let obj3 = wrapperOffset(16167);
   pIPState = obj3.usePIPState();
   let obj4 = wrapperOffset(4036);
   const fn2 = function l() {
@@ -154,7 +154,7 @@ function AnimatedWrapper(children) {
       }
     }
   };
-  obj = { cheapWorkletShallowEqual: wrapperOffset(8776).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10330), wrapperOffset, getMaxPanelWidth: wrapperOffset(16146).getMaxPanelWidth, getPanelX: wrapperOffset(16146).getPanelX, roundToNearestPixel: height(10251), windowDimensions };
+  obj = { cheapWorkletShallowEqual: wrapperOffset(8776).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10331), wrapperOffset, getMaxPanelWidth: wrapperOffset(16155).getMaxPanelWidth, getPanelX: wrapperOffset(16155).getPanelX, roundToNearestPixel: height(10252), windowDimensions };
   fn3.__closure = obj;
   fn3.__workletHash = 3683279660781;
   fn3.__initData = closure_57;
@@ -235,7 +235,7 @@ function AnimatedWrapper(children) {
       return obj2;
     }
   }
-  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4036).runOnJS, updateSourceTrackingView: height(9765).updateSourceTrackingView, withSpring: wrapperOffset(4713).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
+  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4036).runOnJS, updateSourceTrackingView: height(9766).updateSourceTrackingView, withSpring: wrapperOffset(4713).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
   C.__closure = obj;
   C.__workletHash = 16361132737159;
   C.__initData = closure_58;

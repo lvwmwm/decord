@@ -1,9 +1,9 @@
-// Module ID: 14690
-// Function ID: 14691
+// Module ID: 14692
+// Function ID: 14693
 // Name: toggle
-// Dependencies: [8082, 14691, 10446, 1236, 3974, 14692, 2]
+// Dependencies: [8082, 14693, 10447, 1236, 3974, 14694, 2]
 
-// Module 14690 (toggle)
+// Module 14692 (toggle)
 import createToggle from "createToggle";
 
 const toggle = createToggle.createToggle({
@@ -19,7 +19,7 @@ const toggle = createToggle.createToggle({
   useValue: require("explicitContentFromProto").EnableProfileUpdatesNotifications.useSetting,
   onValueChange: require("onProfileUpdatesNotificationSettingsChanged").onProfileUpdatesNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14691) /* apexExperiment */.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return require(14693) /* apexExperiment */.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 });
 const obj = {
@@ -35,7 +35,7 @@ const obj = {
   useValue: require("explicitContentFromProto").EnableProfileUpdatesNotifications.useSetting,
   onValueChange: require("onProfileUpdatesNotificationSettingsChanged").onProfileUpdatesNotificationSettingsChanged,
   usePredicate: function useExperiment() {
-    return require(14691) /* apexExperiment */.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
+    return require(14693) /* apexExperiment */.useProfileUpdatesNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }
 };
 const result = require("createToggle").fileFinishedImporting("modules/user_settings/defs/native/ProfileUpdatesNotificationSetting.tsx");

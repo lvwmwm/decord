@@ -1,10 +1,10 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10640
+// Function ID: 10641
 // Name: _selectAndWaitForVoiceChannelJoin
 // Dependencies: [5, 1960, 5129, 2]
 // Exports: default
 
-// Module 10639 (_selectAndWaitForVoiceChannelJoin)
+// Module 10640 (_selectAndWaitForVoiceChannelJoin)
 import asyncGeneratorStep from "asyncGeneratorStep";
 import handleConnectionOpen from "handleConnectionOpen";
 

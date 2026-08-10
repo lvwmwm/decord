@@ -1,10 +1,10 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 15736
+// Function ID: 15737
 // Name: GroupDMRow
-// Dependencies: [19, 21, 4494, 9663, 1297, 9664, 4299, 15727, 2]
+// Dependencies: [19, 21, 4494, 9663, 1297, 9664, 4299, 15735, 2]
 // Exports: default
 
-// Module 15728 (GroupDMRow)
+// Module 15736 (GroupDMRow)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -48,5 +48,5 @@ export default function GroupDMRow(channel) {
   obj[5] = trailing;
   obj[6] = accessibilityActions;
   obj[7] = onAccessibilityAction;
-  return jsx(channel(15727).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
+  return jsx(channel(15735).SearchListRow, { label: str2, icon: tmp6, onPress: callback, accessibilityLabel: null, subLabel: null, trailing: null, accessibilityActions: null, onAccessibilityAction: null });
 };

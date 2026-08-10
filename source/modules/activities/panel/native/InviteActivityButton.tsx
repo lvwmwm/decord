@@ -1,8 +1,8 @@
-// Module ID: 16092
-// Function ID: 16093
-// Dependencies: [19, 10435, 4996, 21, 4271, 16093, 1988, 589, 11159, 4714, 9721, 1236, 2]
+// Module ID: 16101
+// Function ID: 16102
+// Dependencies: [19, 10436, 4996, 21, 4271, 16102, 1988, 589, 11160, 4714, 9722, 1236, 2]
 
-// Module 16092
+// Module 16101
 import updateActivities from "updateActivities";
 import filterPlayingActivities from "filterPlayingActivities";
 import { jsx } from "jsxProd";
@@ -24,7 +24,7 @@ const memoResult = require("noop").memo(function InviteActivityButton(applicatio
       obj = { activity: stateFromStores };
       obj.openLazy(applicationId(outer1_2[6])(outer1_2[5], outer1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
     };
-    obj[1] = stateFromStores(9721);
+    obj[1] = stateFromStores(9722);
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t["OzOM/q"]);
     const intl2 = tmp(1236).intl;

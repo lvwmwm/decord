@@ -1,9 +1,9 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 12960
+// Function ID: 12961
 // Name: showReviewRequestModal
-// Dependencies: [4217, 1212, 1960, 676, 12959, 4379, 12960, 4159, 4158, 6004, 12962, 691, 595, 698, 589, 709, 2]
+// Dependencies: [4217, 1212, 1960, 676, 12961, 4379, 12962, 4159, 4158, 6004, 12964, 691, 595, 698, 589, 709, 2]
 
-// Module 12958 (showReviewRequestModal)
+// Module 12960 (showReviewRequestModal)
 import getHash from "getHash";
 import initialize from "initialize";
 import handleConnectionOpen from "handleConnectionOpen";
@@ -28,7 +28,7 @@ function showReviewRequestModal() {
         closure_9.revision = 1;
         const Storage = tmp(595).Storage;
         const result = Storage.set(RequestReviewStore, closure_9);
-        importDefault(12960)();
+        importDefault(12962)();
         let c10 = false;
         const obj5 = importDefault(698);
       }
@@ -41,7 +41,7 @@ function showReviewRequestModal() {
     clearTimeout(timeout);
     timeout = -1;
   }
-  const RequestReviewNoTTIExperiment = tmp(12959).RequestReviewNoTTIExperiment;
+  const RequestReviewNoTTIExperiment = tmp(12961).RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
   let tmp18 = c10;
   if (c10) {
@@ -84,7 +84,7 @@ RequestReviewStore.displayName = "RequestReviewStore";
 const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
   CONNECTION_OPEN: function handleConnectionOpen(guilds) {
     guilds = guilds.guilds;
-    let obj = require(12962) /* getFirstInstallTimeMillis */;
+    let obj = require(12964) /* getFirstInstallTimeMillis */;
     obj = { from: "authed", unit: require(4379) /* sleep */.TimeUnits.DAYS };
     let tmp3 = obj.getFirstInstallTimeElapsed(obj) >= 10;
     const someResult = guilds.some((member_count) => member_count.member_count >= 5);
@@ -111,7 +111,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
       clearTimeout(timeout);
       timeout = -1;
     }
-    const RequestReviewNoTTIExperiment = tmp(12959).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp(12961).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp13 = c10;
     if (c10) {
@@ -135,7 +135,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
       clearTimeout(timeout);
       timeout = -1;
     }
-    const RequestReviewNoTTIExperiment = require(12959) /* apexExperiment */.RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = require(12961) /* apexExperiment */.RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = c10;
     if (c10) {
@@ -162,7 +162,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
       clearTimeout(timeout);
       timeout = -1;
     }
-    const RequestReviewNoTTIExperiment = require(12959) /* apexExperiment */.RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = require(12961) /* apexExperiment */.RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = c10;
     if (c10) {
@@ -187,7 +187,7 @@ const requestReviewStore = new RequestReviewStore(require("dispatcher"), {
         clearTimeout(timeout);
         timeout = -1;
       }
-      const RequestReviewNoTTIExperiment = tmp(12959).RequestReviewNoTTIExperiment;
+      const RequestReviewNoTTIExperiment = tmp(12961).RequestReviewNoTTIExperiment;
       let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
       let tmp8 = c10;
       if (c10) {

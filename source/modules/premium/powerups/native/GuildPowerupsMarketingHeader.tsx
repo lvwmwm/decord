@@ -1,10 +1,10 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 12850
+// Function ID: 12851
 // Name: PerkText
-// Dependencies: [19, 17, 4190, 21, 4303, 712, 689, 4299, 12849, 11848, 11873, 1236, 2316, 12850, 2]
+// Dependencies: [19, 17, 4190, 21, 4303, 712, 689, 4299, 12851, 11849, 11874, 1236, 2316, 12852, 2]
 // Exports: default
 
-// Module 12848 (PerkText)
+// Module 12850 (PerkText)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import calculateAppliedBoosts from "calculateAppliedBoosts";
@@ -32,7 +32,7 @@ const result = require("calculateAppliedBoosts").fileFinishedImporting("modules/
 export default function GuildPowerupsMarketingHeader(guild) {
   guild = guild.guild;
   const tmp = createCacheKey();
-  const arr = importDefault(12849)(guild.id);
+  const arr = importDefault(12851)(guild.id);
   const items = [guild.id];
   const effect = React.useEffect(() => {
     if (outer1_5.shouldFetchCatalogForGuild(guild.id)) {
@@ -40,7 +40,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj = guild(outer1_2[9]);
     }
   }, items);
-  if (importDefault(11873)(guild.id)) {
+  if (importDefault(11874)(guild.id)) {
     let num;
     if (arr != null) {
       num = arr.length;
@@ -58,7 +58,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(12850)(arr);
+          let first = tmp2(12852)(arr);
           if (1 === first.length) {
             obj = { powerup: null };
             first = first[0];

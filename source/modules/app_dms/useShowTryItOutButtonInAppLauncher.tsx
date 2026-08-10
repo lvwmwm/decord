@@ -1,10 +1,10 @@
-// Module ID: 11531
-// Function ID: 11532
+// Module ID: 11532
+// Function ID: 11533
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [10616, 11532, 10594, 2]
+// Dependencies: [10617, 11533, 10595, 2]
 // Exports: default
 
-// Module 11531 (useShowTryItOutButtonInAppLauncher)
+// Module 11532 (useShowTryItOutButtonInAppLauncher)
 const result = require("canLaunchFrame").fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
 
 export default function useShowTryItOutButtonInAppLauncher(arg0) {
@@ -12,7 +12,7 @@ export default function useShowTryItOutButtonInAppLauncher(arg0) {
   let botUserId;
   let context;
   ({ context, application, botUserId } = arg0);
-  let obj = require(10616) /* _getPrimaryAppCommand */;
+  let obj = require(10617) /* _getPrimaryAppCommand */;
   obj = { context, applicationId: application.id, botUserId };
   let isPrimaryAppCommandUsableInAppDM = obj.useIsPrimaryAppCommandUsableInAppDM(obj);
   let channel;
@@ -20,9 +20,9 @@ export default function useShowTryItOutButtonInAppLauncher(arg0) {
     channel = context.channel;
   }
   const tmp = require;
-  const tmp4 = importDefault(11532);
-  const tmp4Result = importDefault(11532)(channel);
-  const canLaunchFrameResult = tmp(10594).canLaunchFrame(application);
+  const tmp4 = importDefault(11533);
+  const tmp4Result = importDefault(11533)(channel);
+  const canLaunchFrameResult = tmp(10595).canLaunchFrame(application);
   let tmp8 = !canLaunchFrameResult;
   if (!canLaunchFrameResult) {
     if (isPrimaryAppCommandUsableInAppDM) {

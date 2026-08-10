@@ -1,10 +1,10 @@
-// Module ID: 10925
-// Function ID: 10926
+// Module ID: 10926
+// Function ID: 10927
 // Name: useActiveSpeakerPillScrollHandler
 // Dependencies: [32, 19, 700, 705, 3914, 2]
 // Exports: useActiveSpeakerPillScrollHandler, useActiveSpeakerPillState
 
-// Module 10925 (useActiveSpeakerPillScrollHandler)
+// Module 10926 (useActiveSpeakerPillScrollHandler)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import identity from "identity";

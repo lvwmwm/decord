@@ -1,10 +1,10 @@
-// Module ID: 9994
-// Function ID: 9995
+// Module ID: 9995
+// Function ID: 9996
 // Name: _executeCommand
-// Dependencies: [5, 5176, 1975, 1891, 4639, 1903, 7239, 676, 4296, 6982, 709, 7224, 6980, 1935, 9995, 9997, 38, 9998, 4498, 7237, 8357, 3942, 1351, 7213, 8221, 7293, 8220, 9537, 8309, 7212, 6917, 4856, 1236, 4852, 7301, 2]
+// Dependencies: [5, 5176, 1975, 1891, 4639, 1903, 7239, 676, 4296, 6982, 709, 7224, 6980, 1935, 9996, 9998, 38, 9999, 4498, 7237, 8357, 3942, 1351, 7213, 8221, 7293, 8220, 9537, 8309, 7212, 6917, 4856, 1236, 4852, 7301, 2]
 // Exports: default, retryCommandMessage
 
-// Module 9994 (_executeCommand)
+// Module 9995 (_executeCommand)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getEmojiToGroupId from "getEmojiToGroupId";
 import _getSystemLocale from "_getSystemLocale";

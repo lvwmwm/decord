@@ -1,10 +1,10 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14507
+// Function ID: 14508
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 14506, 21, 4036, 1297, 4303, 712, 4700, 12, 14507, 4304, 4307, 4121, 8700, 4299, 1605, 10048, 4272, 1236, 14510, 2]
+// Dependencies: [19, 17, 14508, 21, 4036, 1297, 4303, 712, 4700, 12, 14509, 4304, 4307, 4121, 8700, 4299, 1605, 10049, 4272, 1236, 14512, 2]
 // Exports: default
 
-// Module 14505 (SettingsAppearanceThemeCarousel)
+// Module 14507 (SettingsAppearanceThemeCarousel)
 import getSystemLocale from "getSystemLocale";
 import get_ActivityIndicator from "Pagination";
 import importDefaultResult from "THEME_ITEM_WIDTH";

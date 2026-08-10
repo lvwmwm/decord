@@ -1,10 +1,10 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11450
+// Function ID: 11451
 // Name: AppsBaner
-// Dependencies: [19, 17, 21, 4303, 11450, 11447, 1236, 2]
+// Dependencies: [19, 17, 21, 4303, 11451, 11448, 1236, 2]
 // Exports: default
 
-// Module 11449 (AppsBaner)
+// Module 11450 (AppsBaner)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,11 +16,11 @@ const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/na
 
 export default function AppsBaner() {
   const tmp = callback();
-  obj = { style: tmp.rocketIconContainer, children: jsx(importDefault(11450), obj) };
+  obj = { style: tmp.rocketIconContainer, children: jsx(importDefault(11451), obj) };
   obj = { style: tmp.rocketIcon };
   obj = { image: <View style={tmp.rocketIcon} />, text: null };
   const tmp2 = <View image={<View style={tmp.rocketIcon} />} text={null} />;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.sjRwMJ);
-  return jsx(importDefault(11447), { image: <View style={tmp.rocketIcon} />, text: null });
+  return jsx(importDefault(11448), { image: <View style={tmp.rocketIcon} />, text: null });
 };

@@ -1,10 +1,10 @@
-// Module ID: 11536
-// Function ID: 11537
+// Module ID: 11537
+// Function ID: 11538
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 11522, 1301, 21, 4303, 712, 1236, 4846, 4271, 11537, 1988, 4299, 9478, 2]
+// Dependencies: [19, 17, 11523, 1301, 21, 4303, 712, 1236, 4846, 4271, 11538, 1988, 4299, 9478, 2]
 // Exports: default
 
-// Module 11536 (CommandListSortButton)
+// Module 11537 (CommandListSortButton)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { CommandListSortOrder } from "CommandListSortOrder";

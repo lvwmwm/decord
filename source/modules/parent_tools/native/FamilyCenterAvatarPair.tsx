@@ -1,10 +1,10 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14169
+// Function ID: 14170
 // Name: FamilyCenterAvatarPair
 // Dependencies: [19, 17, 1903, 21, 4303, 712, 647, 1297, 2]
 // Exports: default
 
-// Module 14167 (FamilyCenterAvatarPair)
+// Module 14169 (FamilyCenterAvatarPair)
 import "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -37,7 +37,7 @@ export default function FamilyCenterAvatarPair(otherUser) {
     if (undefined !== otherUser) {
       obj = { style: null, children: null };
       obj[0] = tmp.avatars;
-      obj = { size: null, user: null, guildId: "Array", avatarDecoration: false };
+      obj = { size: null, user: null, guildId: "Array", avatarDecoration: 0.3 };
       obj[0] = tmp2(1297).AvatarSizes.LARGE_48;
       obj[1] = stateFromStores;
       obj[3] = stateFromStores.avatarDecoration;
@@ -48,7 +48,7 @@ export default function FamilyCenterAvatarPair(otherUser) {
       obj1[1] = tmp2(1297).Icon.Sizes.EXTRA_SMALL;
       obj1[2] = iconSrc;
       items1[1] = callback(tmp2(1297).Icon, obj1);
-      const obj2 = { size: null, user: null, guildId: "Array", avatarDecoration: false };
+      const obj2 = { size: null, user: null, guildId: "Array", avatarDecoration: 0.3 };
       obj2[0] = tmp2(1297).AvatarSizes.LARGE_48;
       obj2[1] = otherUser;
       obj2[3] = otherUser.avatarDecoration;

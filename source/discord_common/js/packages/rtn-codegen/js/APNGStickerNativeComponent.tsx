@@ -1,9 +1,9 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 9851
+// Function ID: 9852
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 9850 (__INTERNAL_VIEW_CONFIG)
+// Module 9851 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "APNGStickerView", validAttributes: { url: true } };

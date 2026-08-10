@@ -1,9 +1,9 @@
-// Module ID: 14308
-// Function ID: 14309
+// Module ID: 14310
+// Function ID: 14311
 // Name: EmptyState
-// Dependencies: [32, 19, 17, 7159, 5161, 1369, 21, 712, 14309, 4303, 11171, 1236, 6027, 4299, 14306, 1358, 6022, 709, 14310, 4272, 7177, 7187, 5164, 14247, 5821, 9516, 9517, 9521, 7188, 14320, 11175, 7745, 14321, 10459, 589, 14324, 2]
+// Dependencies: [32, 19, 17, 7159, 5161, 1369, 21, 712, 14311, 4303, 11172, 1236, 6027, 4299, 14308, 1358, 6022, 709, 14312, 4272, 7177, 7187, 5164, 14249, 5821, 9516, 9517, 9521, 7188, 14322, 11176, 7745, 14323, 10460, 589, 14326, 2]
 
-// Module 14308 (EmptyState)
+// Module 14310 (EmptyState)
 import ListEdgeSpacer from "ListEdgeSpacer";
 import importAllResult from "HapticFeedbackTypes";
 import { View } from "dispatcher";
@@ -19,7 +19,7 @@ const require = arg1;
 function EmptyState(reason) {
   reason = reason.reason;
   const tmp = callback4();
-  let obj = require(11171) /* useTrackQuestEventWithImpression */;
+  let obj = require(11172) /* useTrackQuestEventWithImpression */;
   const bountyCarouselEmptyStateAnalytics = obj.useBountyCarouselEmptyStateAnalytics(reason);
   if (reason === constants.COMPLETED) {
     const intl2 = tmp2(1236).intl;
@@ -385,7 +385,7 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
     showOrbShopPlaceholderCarousel = false;
   }
   let obj = dependencyMap;
-  let obj1 = first(10459);
+  let obj1 = first(10460);
   const questHomeBounties = obj1.useQuestHomeBounties().questHomeBounties;
   const tmp2 = callback4();
   first = undefined;
@@ -440,8 +440,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
     tmp10 = obtainableOrbRewards > 0;
   }
   if (tmp10) {
-    tmp10 = orbShopProducts.length >= tmp(14310).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-    const tmp11 = orbShopProducts.length >= tmp(14310).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    tmp10 = orbShopProducts.length >= tmp(14312).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+    const tmp11 = orbShopProducts.length >= tmp(14312).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
   }
   if (!tmp8) {
     if (!stateFromStores) {
@@ -450,14 +450,14 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
         obj[0] = tmp2.container;
         obj = { bounties: null };
         obj[0] = questHomeBounties;
-        const items5 = [callback2(importDefault(14324), obj), ];
+        const items5 = [callback2(importDefault(14326), obj), ];
         let tmp17Result = null;
         if (tmp10) {
           obj1 = { orbShopProducts: null, obtainableOrbRewards: null, showOrbShopPlaceholderCarousel: null };
           obj1[0] = orbShopProducts;
           obj1[1] = obtainableOrbRewards;
           obj1[2] = showOrbShopPlaceholderCarousel;
-          tmp17Result = tmp17(tmp18(14321), obj1);
+          tmp17Result = tmp17(tmp18(14323), obj1);
         }
         items5[1] = tmp17Result;
         obj[1] = items5;
@@ -485,8 +485,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(arg0) {
       tmp8 = stateFromStores;
     }
     obj[1] = tmp8;
-    let tmp20Result = tmp20(importDefault(14324), obj);
-    const tmp25 = importDefault(14324);
+    let tmp20Result = tmp20(importDefault(14326), obj);
+    const tmp25 = importDefault(14326);
   } else {
     const obj4 = { reason: null };
     obj4[0] = tmp8 ? closure_7.EMPTY : closure_7.COMPLETED;

@@ -1,10 +1,10 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12576
+// Function ID: 12577
 // Name: getAttachmentUploadAbortAlertContent
 // Dependencies: [676, 1236, 4852, 2]
 // Exports: getAttachmentUploadAbortAlertContent
 
-// Module 12574 (getAttachmentUploadAbortAlertContent)
+// Module 12576 (getAttachmentUploadAbortAlertContent)
 import { AbortCodes } from "ME";
 
 const result = require("items").fileFinishedImporting("modules/media_uploads/getAttachmentUploadAbortAlert.tsx");

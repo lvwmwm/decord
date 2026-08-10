@@ -1,9 +1,9 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 15976
+// Function ID: 15977
 // Name: LeftAlignedHeaderTitle
-// Dependencies: [32, 19, 17, 1975, 13888, 676, 21, 8570, 4303, 712, 4299, 1481, 12684, 15968, 6013, 647, 5728, 5748, 13891, 6934, 14926, 5783, 13423, 4005, 4846, 1236, 15510, 15969, 13892, 15970, 38, 2]
+// Dependencies: [32, 19, 17, 1975, 13890, 676, 21, 8570, 4303, 712, 4299, 1481, 12686, 15977, 6013, 647, 5728, 5748, 13893, 6934, 14928, 5783, 13425, 4005, 4846, 1236, 15518, 15978, 13894, 15979, 38, 2]
 
-// Module 15967 (LeftAlignedHeaderTitle)
+// Module 15976 (LeftAlignedHeaderTitle)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getDeviceMetadata";
 import { View } from "QUICK_SWITCHER";

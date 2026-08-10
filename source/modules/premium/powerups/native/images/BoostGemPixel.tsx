@@ -1,10 +1,10 @@
-// Module ID: 12821
-// Function ID: 12822
+// Module ID: 12823
+// Function ID: 12824
 // Name: BoostGemPixel
 // Dependencies: [19, 21, 7835, 2]
 // Exports: default
 
-// Module 12821 (BoostGemPixel)
+// Module 12823 (BoostGemPixel)
 import "noop";
 import jsxProd from "jsxProd";
 

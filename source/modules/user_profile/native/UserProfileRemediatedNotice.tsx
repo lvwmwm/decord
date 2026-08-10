@@ -1,10 +1,10 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 12518
+// Function ID: 12519
 // Name: RemediatedUserNotice
 // Dependencies: [19, 17, 3938, 676, 21, 4303, 712, 8835, 647, 4299, 1236, 9243, 2]
 // Exports: default
 
-// Module 12516 (RemediatedUserNotice)
+// Module 12518 (RemediatedUserNotice)
 import "noop";
 import { View } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";

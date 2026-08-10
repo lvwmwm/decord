@@ -1,10 +1,10 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12679
+// Function ID: 12680
 // Name: BuyNitroPlanSelector
-// Dependencies: [19, 17, 5858, 4286, 505, 21, 4303, 712, 5158, 589, 7648, 12678, 12679, 7742, 1236, 12680, 7985, 7984, 7411, 5855, 500, 2]
+// Dependencies: [19, 17, 5858, 4286, 505, 21, 4303, 712, 5158, 589, 7648, 12680, 12681, 7742, 1236, 12682, 7985, 7984, 7411, 5855, 500, 2]
 // Exports: default
 
-// Module 12677 (BuyNitroPlanSelector)
+// Module 12679 (BuyNitroPlanSelector)
 import "formatSingleCurrencyPrice";
 import { View } from "TableRadioRow";
 import updateProduct from "updateProduct";
@@ -48,9 +48,9 @@ export default function BuyNitroPlanSelector(planSelection) {
   });
   let obj1 = planSelection(7648);
   isBuyNitroPurchaseBlocked = obj1.useIsBuyNitroPurchaseBlocked();
-  let obj2 = planSelection(12678);
+  let obj2 = planSelection(12680);
   updateProduct = obj2.useBuyNitroPlanLabelRenderer();
-  let obj3 = planSelection(12679);
+  let obj3 = planSelection(12681);
   closure_5 = obj3.useBuyNitroPlanSubLabelRenderer();
   obj = { style: tmp.header, children: null };
   obj = { title: null };
@@ -58,7 +58,7 @@ export default function BuyNitroPlanSelector(planSelection) {
   obj[0] = intl.string(planSelection(1236).t.u95Dt4);
   const items1 = [callback(selection(7742), obj), ];
   obj1 = { selectedTier: selection.tier, setSelectedTier: selection.setTier, disabled: isBuyNitroPurchaseBlocked };
-  items1[1] = callback(selection(12680), obj1);
+  items1[1] = callback(selection(12682), obj1);
   obj[1] = items1;
   const children = [callback2(isBuyNitroPurchaseBlocked, obj), , ];
   let tmp8Result = null != selection.productId;

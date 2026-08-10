@@ -1,10 +1,10 @@
-// Module ID: 15323
-// Function ID: 15324
+// Module ID: 15331
+// Function ID: 15332
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 1379, 21, 4303, 712, 5764, 5396, 1297, 12129, 1236, 7967, 15231, 9724, 2]
+// Dependencies: [19, 17, 1379, 21, 4303, 712, 5764, 5396, 1297, 12130, 1236, 7967, 15233, 9725, 2]
 // Exports: default
 
-// Module 15323 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15331 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { StaticChannelRoute } from "set";
@@ -29,7 +29,7 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   obj = { leading: null, title: null };
   obj = { style: createCacheKey().headerIcon, children: null };
   const obj1 = { disableColor: true, source: null };
-  obj1[1] = importDefault(12129);
+  obj1[1] = importDefault(12130);
   obj[1] = callback(require(1297) /* Button */.Icon, obj1);
   obj[0] = callback(View, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -37,7 +37,7 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
   const items = [callback(require(5396) /* RedesignBottomSheetTitleHeaderBase */.BottomSheetTitleHeader, obj), ];
   const obj2 = { leading: null, label: null, onPress: null };
   const obj3 = { source: null };
-  obj3[0] = importDefault(15231);
+  obj3[0] = importDefault(15233);
   obj2[0] = callback(require(1297) /* Button */.Icon, obj3);
   const obj4 = { text: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;

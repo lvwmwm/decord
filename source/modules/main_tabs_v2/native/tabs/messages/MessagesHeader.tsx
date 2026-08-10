@@ -1,10 +1,10 @@
-// Module ID: 15156
-// Function ID: 15157
+// Module ID: 15158
+// Function ID: 15159
 // Name: PX_16
-// Dependencies: [19, 17, 676, 21, 712, 1348, 9452, 4718, 4303, 4036, 4713, 15157, 4159, 11709, 5271, 7751, 9706, 1236, 4299, 6007, 6006, 15162, 4714, 4242, 4241, 2]
+// Dependencies: [19, 17, 676, 21, 712, 1348, 9452, 4718, 4303, 4036, 4713, 15159, 4159, 11710, 5271, 7751, 9706, 1236, 4299, 6007, 6006, 15164, 4714, 4242, 4241, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 15156 (PX_16)
+// Module 15158 (PX_16)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "getSystemLocale";
 import { SearchTypes } from "ME";
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   fn.__workletHash = 17233409273245;
   fn.__initData = closure_11;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj2 = height(15157);
+  let obj2 = height(15159);
   const isHomeDrawerEnabled = obj2.useIsHomeDrawerEnabled();
   const callback = importAllResult.useCallback(() => {
     const rootNavigationRef = height(_undefined[12]).getRootNavigationRef();
@@ -138,7 +138,7 @@ const memoResult = importAllResult.memo(function MessagesHeader(height) {
   obj6[3] = tmp14Result;
   const intl3 = tmp6(1236).intl;
   obj6[4] = intl3.string(height(1236).t["5h0QOP"]);
-  const items2 = [callback(height(7751).IconButton, obj6), callback(scrollPosition(15162), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  const items2 = [callback(height(7751).IconButton, obj6), callback(scrollPosition(15164), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   if (tmp4) {
     let tmp2Result = tmp2(4242);
   } else {

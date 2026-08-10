@@ -251,8 +251,8 @@ function exp(constructor) {
       let sum1 = num8 + 1;
       let timesResult2 = obj7.times(sum1);
       let tmp30 = digitsToString;
-      let tmp31 = f105805;
-      let plusResult = obj5.plus(f105805(timesResult1, timesResult2, sum));
+      let tmp31 = f105840;
+      let plusResult = obj5.plus(f105840(timesResult1, timesResult2, sum));
       let arr = digitsToString(plusResult.d);
       substr = arr.slice(0, sum);
       let arr2 = digitsToString(obj5.d);
@@ -368,7 +368,7 @@ function ln(s) {
             const text = `${tmp16}.`;
             constructor2 = new constructor(`${tmp16}.` + times.slice(num));
           }
-          const tmp36 = f105805(constructor2.minus(Decimal), constructor2.plus(Decimal), sum);
+          const tmp36 = f105840(constructor2.minus(Decimal), constructor2.plus(Decimal), sum);
           times = tmp36.times;
           round(times(tmp36), sum);
           num = 3;
@@ -1184,14 +1184,14 @@ obj.dp = fn3;
 obj.decimalPlaces = fn3;
 const fn4 = function(arg0) {
   const constructor = new this.constructor(arg0);
-  return f105805(this, constructor);
+  return f105840(this, constructor);
 };
 obj.div = fn4;
 obj.dividedBy = fn4;
 const fn5 = function(arg0) {
   let constructor = this.constructor;
   constructor = new constructor(arg0);
-  const tmp2 = f105805(this, constructor, 0, 1);
+  const tmp2 = f105840(this, constructor, 0, 1);
   round(tmp2, constructor.precision);
   return tmp2;
 };
@@ -1279,7 +1279,7 @@ const fn14 = function(arg0) {
       let constructor2 = new constructor(0);
     } else {
       let c2 = false;
-      constructor2 = f105805(ln(self, sum), ln(constructor, sum), sum);
+      constructor2 = f105840(ln(self, sum), ln(constructor, sum), sum);
       c2 = true;
       round(constructor2, precision);
       const tmp14 = ln(self, sum);
@@ -1310,8 +1310,8 @@ const fn16 = function(arg0) {
     if (self.s) {
       let c2 = false;
       c2 = true;
-      let minusResult = self.minus(f105805(self, tmp2, 0, 1).times(constructor));
-      const obj = f105805(self, tmp2, 0, 1);
+      let minusResult = self.minus(f105840(self, tmp2, 0, 1).times(constructor));
+      const obj = f105840(self, tmp2, 0, 1);
     } else {
       const constructor1 = new constructor(self);
       minusResult = constructor1;
@@ -1940,7 +1940,7 @@ obj.toJSON = fn28;
 obj.val = fn28;
 obj.valueOf = fn28;
 obj.toString = fn28;
-const f105805 = (s, s2) => {
+const f105840 = (s, s2) => {
   let num7;
   let sum;
   let tmp26;

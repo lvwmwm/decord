@@ -1,9 +1,9 @@
-// Module ID: 13067
-// Function ID: 13068
+// Module ID: 13069
+// Function ID: 13070
 // Name: parsed
 // Dependencies: [669, 2]
 
-// Module 13067 (parsed)
+// Module 13069 (parsed)
 import { version as str } from "format";
 
 if (str == null) {

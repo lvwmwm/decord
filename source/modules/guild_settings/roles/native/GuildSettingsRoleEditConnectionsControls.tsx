@@ -1,10 +1,10 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16722
+// Function ID: 16723
 // Name: HeaderSection
-// Dependencies: [19, 17, 5358, 16688, 676, 5125, 21, 4303, 712, 5124, 12, 7793, 4299, 1236, 4712, 4846, 1974, 7985, 7984, 16714, 4714, 9527, 4271, 16716, 1988, 16717, 16719, 589, 7967, 16702, 2]
+// Dependencies: [19, 17, 5358, 16697, 676, 5125, 21, 4303, 712, 5124, 12, 7793, 4299, 1236, 4712, 4846, 1974, 7985, 7984, 16723, 4714, 9527, 4271, 16725, 1988, 16726, 16728, 589, 7967, 16711, 2]
 // Exports: default
 
-// Module 16713 (HeaderSection)
+// Module 16722 (HeaderSection)
 import Header from "Header";
 import { View } from "context";
 import getRoleMemberCount from "getRoleMemberCount";
@@ -390,7 +390,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
   obj3 = {
     handleConnectionTapped(connectionType) {
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessible", operator: "getGuild", value: 17047296 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessibilityRole", operator: "sr", value: "r" };
       obj[2] = arg1;
       items.push(obj);
       if (AND === guild(stateFromStoresArray[9]).ConnectionConfigurationRuleOperator.AND) {

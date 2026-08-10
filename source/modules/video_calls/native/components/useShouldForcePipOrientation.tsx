@@ -1,10 +1,10 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 10661
+// Function ID: 10662
 // Name: useShouldForcePipOrientation
-// Dependencies: [1371, 4316, 1218, 4328, 4321, 10661, 589, 10640, 8895, 2]
+// Dependencies: [1371, 4316, 1218, 4328, 4321, 10662, 589, 10641, 8895, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10660 (useShouldForcePipOrientation)
+// Module 10661 (useShouldForcePipOrientation)
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
 import fetchFingerprint from "fetchFingerprint";
@@ -22,7 +22,7 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   let focusedEmbeddedActivityParticipant;
   channel = channel.channel;
   let OrientationType = dependencyMap;
-  const tmp = importDefault(10661)(channel.id);
+  const tmp = importDefault(10662)(channel.id);
   const items = [getParticipants, fetchFingerprint];
   const stateFromStores = channel(589).useStateFromStores(items, () => {
     const participant = outer1_4.getParticipant(channel.id, outer1_5.getId());

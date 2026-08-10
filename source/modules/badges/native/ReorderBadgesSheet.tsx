@@ -1,10 +1,10 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 13934
+// Function ID: 13935
 // Name: ReorderBadgesSheet
 // Dependencies: [19, 21, 5397, 1236, 5396, 2]
 // Exports: default
 
-// Module 13932 (ReorderBadgesSheet)
+// Module 13934 (ReorderBadgesSheet)
 import "noop";
 import { jsx } from "jsxProd";
 

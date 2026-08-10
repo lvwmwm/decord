@@ -1,10 +1,10 @@
-// Module ID: 16012
-// Function ID: 16013
+// Module ID: 16021
+// Function ID: 16022
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: getIsProfileFramesEAMarketingEnabled, useIsProfileFramesEAMarketingEnabled
 
-// Module 16012 (apexExperiment)
+// Module 16021 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-profile-frames-ea-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

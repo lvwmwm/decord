@@ -1,10 +1,10 @@
-// Module ID: 10423
-// Function ID: 10424
+// Module ID: 10424
+// Function ID: 10425
 // Name: items
 // Dependencies: [32, 19, 17, 21, 4303, 3946, 5360, 2]
 // Exports: default
 
-// Module 10423 (items)
+// Module 10424 (items)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { View } from "get ActivityIndicator";

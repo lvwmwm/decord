@@ -1,10 +1,10 @@
-// Module ID: 15873
-// Function ID: 15874
+// Module ID: 15882
+// Function ID: 15883
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7120, 3938, 1903, 676, 21, 1297, 4303, 712, 589, 12338, 9081, 12, 1351, 4846, 1236, 4299, 5778, 2]
+// Dependencies: [32, 19, 17, 7120, 3938, 1903, 676, 21, 1297, 4303, 712, 589, 12340, 9081, 12, 1351, 4846, 1236, 4299, 5778, 2]
 // Exports: default
 
-// Module 15873 (UserProfileYourFriendsCard)
+// Module 15882 (UserProfileYourFriendsCard)
 import _slicedToArray from "_slicedToArray";
 import ChevronSmallRightIcon from "ChevronSmallRightIcon";
 import { View } from "getSystemLocale";
@@ -54,7 +54,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [upsertRelationship];
   stateFromStoresArray1 = _require(589).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(589);
-  gameRelationshipsByType = _require(12338).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12340).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
     const userAffinitiesV2 = _undefined(9081).fetchUserAffinitiesV2();
   }, []);

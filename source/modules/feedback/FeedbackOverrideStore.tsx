@@ -1,9 +1,9 @@
-// Module ID: 16411
-// Function ID: 16412
+// Module ID: 16420
+// Function ID: 16421
 // Name: initialize
-// Dependencies: [16410, 589, 709, 2]
+// Dependencies: [16419, 589, 709, 2]
 
-// Module 16411 (initialize)
+// Module 16420 (initialize)
 import { Store } from "initialize";
 
 const require = arg1;
@@ -26,7 +26,7 @@ const hotspotStore = new HotspotStore(require("dispatcher"), {
     feedbackType = feedbackType.feedbackType;
     const obj = {};
     ({ cooldown, chance } = feedbackType);
-    const merged = Object.assign(require(16410) /* optOutEligibilityCheck */.FeedbackConfig[feedbackType]);
+    const merged = Object.assign(require(16419) /* optOutEligibilityCheck */.FeedbackConfig[feedbackType]);
     obj.cooldown = cooldown;
     obj.chance = chance;
     closure_2[feedbackType] = obj;

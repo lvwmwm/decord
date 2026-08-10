@@ -1,10 +1,10 @@
-// Module ID: 12630
-// Function ID: 12631
+// Module ID: 12632
+// Function ID: 12633
 // Name: transformStickers
 // Dependencies: [8061, 4638, 8106, 1236, 2]
 // Exports: default
 
-// Module 12630 (transformStickers)
+// Module 12632 (transformStickers)
 const result = require("NativeLottieView").fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
 
 export default function transformStickers(message) {

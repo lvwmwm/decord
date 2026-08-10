@@ -1,10 +1,10 @@
-// Module ID: 14844
-// Function ID: 14845
+// Module ID: 14846
+// Function ID: 14847
 // Name: ShopCardGridItem
-// Dependencies: [19, 17, 7001, 21, 4303, 9344, 9347, 14843, 12, 2]
+// Dependencies: [19, 17, 7001, 21, 4303, 9344, 9347, 14845, 12, 2]
 // Exports: default
 
-// Module 14844 (ShopCardGridItem)
+// Module 14846 (ShopCardGridItem)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import updateCategoriesAndProducts from "updateCategoriesAndProducts";
@@ -56,7 +56,7 @@ export default function CollectiblesShopCardsGrid(accessibilityLabel) {
   let cardWidth;
   ({ onScroll, paddingTop, paddingBottom } = accessibilityLabel);
   closure_5 = createCacheKey();
-  let obj = products(14843);
+  let obj = products(14845);
   const cardLayout = obj.useCardLayout();
   columns = cardLayout.columns;
   cardWidth = cardLayout.cardWidth;

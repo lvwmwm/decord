@@ -1,10 +1,10 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 15251
+// Function ID: 15252
 // Name: ConnectedUserLimit
-// Dependencies: [19, 21, 9154, 15245, 2]
+// Dependencies: [19, 21, 9154, 15252, 2]
 // Exports: ConnectedUserLimit
 
-// Module 15244 (ConnectedUserLimit)
+// Module 15251 (ConnectedUserLimit)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -34,5 +34,5 @@ export const ConnectedUserLimit = function ConnectedUserLimit(users) {
     videoLimit = num < 0 || limit < num;
     const tmp4 = num < 0 || limit < num;
   }
-  return jsx(importDefault(15245), { users: users.userCount, total, videoLimit });
+  return jsx(importDefault(15252), { users: users.userCount, total, videoLimit });
 };

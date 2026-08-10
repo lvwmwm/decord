@@ -1,12 +1,12 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12551
+// Function ID: 12552
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 3938, 1903, 8383, 21, 4303, 712, 1348, 4846, 500, 9470, 4299, 1297, 12550, 9663, 4005, 4764, 12551, 1236, 4494, 2]
+// Dependencies: [32, 19, 17, 3938, 1903, 8383, 21, 4303, 712, 1348, 4846, 500, 9470, 4299, 1297, 12552, 9663, 4005, 4764, 12553, 1236, 4494, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12549 (TitleWrapper)
+// Module 12551 (TitleWrapper)
 import _slicedToArray from "_slicedToArray";
-import module_12551 from "module_12551";
+import module_12553 from "module_12553";
 import { View } from "map";
 import upsertRelationship from "upsertRelationship";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -112,7 +112,7 @@ function ChannelTitle(guildId) {
   tmp8Result = !disableArrow;
   if (!disableArrow) {
     const obj2 = { source: null, size: null, style: null };
-    obj2[0] = tmp(12550);
+    obj2[0] = tmp(12552);
     obj2[1] = require(1297) /* Button */.Icon.Sizes.REFRESH_SMALL_16;
     obj2[2] = tmp4.arrowIcon;
     tmp8Result = tmp8(require(1297) /* Button */.Icon, obj2);
@@ -145,7 +145,7 @@ function UserAvatar(user) {
   let status;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, style: null, autoStatusCutout: 33.904 };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, style: null, autoStatusCutout: 189.518 };
   obj[3] = require(1297) /* Button */.AvatarSizes.REFRESH_MEDIUM_32;
   let tmp3 = null;
   if (!user.isSystemUser()) {
@@ -216,7 +216,7 @@ function MemberCountText(arg0) {
     tmp9 = leadingAccessoryWidth;
   }
   obj[3] = tmp9;
-  const children = [closure_9(importDefault(12551), obj), ];
+  const children = [closure_9(importDefault(12553), obj), ];
   let tmp7Result = null;
   if (withSeparator) {
     let str3 = "text-xs/medium";

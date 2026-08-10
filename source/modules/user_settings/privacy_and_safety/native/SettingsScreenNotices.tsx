@@ -1,10 +1,10 @@
-// Module ID: 14060
-// Function ID: 14061
+// Module ID: 14062
+// Function ID: 14063
 // Name: items
-// Dependencies: [19, 17, 1903, 21, 4303, 712, 7052, 14061, 14062, 3980, 5141, 4519, 14063, 2]
+// Dependencies: [19, 17, 1903, 21, 4303, 712, 7052, 14063, 14064, 3980, 5141, 4519, 14065, 2]
 // Exports: default
 
-// Module 14060 (items)
+// Module 14062 (items)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import mergeGuildAvatar from "mergeGuildAvatar";

@@ -1,10 +1,10 @@
-// Module ID: 10430
-// Function ID: 10431
+// Module ID: 10431
+// Function ID: 10432
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 4349, 21, 4303, 712, 589, 10418, 5734, 10113, 7013, 1930, 9374, 10130, 5328, 5848, 9398, 5738, 9375, 4503, 1297, 9446, 9554, 10157, 10426, 4299, 1236, 4538, 4714, 4509, 2]
+// Dependencies: [32, 19, 17, 4349, 21, 4303, 712, 589, 10419, 5734, 10114, 7013, 1930, 9374, 10131, 5328, 5848, 9398, 5738, 9375, 4503, 1297, 9446, 9554, 10158, 10427, 4299, 1236, 4538, 4714, 4509, 2]
 // Exports: default
 
-// Module 10430 (GiftCodeRedeemSuccess)
+// Module 10431 (GiftCodeRedeemSuccess)
 import _slicedToArray from "_slicedToArray";
 import BundleStaticPreviewContent from "BundleStaticPreviewContent";
 import get_ActivityIndicator from "SlayerStorefrontItemCard";
@@ -52,11 +52,11 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   let obj = giftCode(589);
   const items = [addSku];
   const stateFromStores = obj.useStateFromStores(items, () => outer1_7.get(giftCode.skuId));
-  let obj1 = giftCode(10418);
+  let obj1 = giftCode(10419);
   const getOrFetchSubscriptionPlan = obj1.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   let obj2 = giftCode(5734);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(giftCode.applicationId);
-  let obj3 = giftCode(10113);
+  let obj3 = giftCode(10114);
   let obj4 = giftCode(7013);
   let skuId = null;
   if (obj4.isCollectiblesGiftCode(giftCode)) {
@@ -80,7 +80,7 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   }
   const shopProductItems = tmp2Result.useShopProductItems(tmp10);
   ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
-  tmp2Result = tmp2(10130);
+  tmp2Result = tmp2(10131);
   let tmp12 = product;
   if (product == null) {
     obj = { skuId: "", type: null, items: null };

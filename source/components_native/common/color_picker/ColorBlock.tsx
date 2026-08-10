@@ -1,9 +1,9 @@
-// Module ID: 13905
-// Function ID: 13906
+// Module ID: 13907
+// Function ID: 13908
 // Name: styles
-// Dependencies: [19, 17, 21, 4303, 712, 688, 4846, 4151, 1297, 11036, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 688, 4846, 4151, 1297, 11037, 2]
 
-// Module 13905 (styles)
+// Module 13907 (styles)
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -48,7 +48,7 @@ const memoResult = require("noop").memo((color) => {
       let tmp10Result = tmp6(tmp2(4846).PressableOpacity, obj);
     } else {
       const obj2 = { source: null, color: null };
-      obj2[0] = onSelect(11036);
+      obj2[0] = onSelect(11037);
       if (v < 0.5) {
         unsafe_rawColors = tmp8(712).unsafe_rawColors;
         let BLACK2 = unsafe_rawColors.WHITE;
@@ -71,7 +71,7 @@ const memoResult = require("noop").memo((color) => {
       tmp10Result = tmp10(tmp11, obj3);
     } else {
       const obj5 = { source: null, color: null };
-      obj5[0] = onSelect(11036);
+      obj5[0] = onSelect(11037);
       if (v < 0.5) {
         let BLACK = tmp3(712).unsafe_rawColors.WHITE;
       } else {

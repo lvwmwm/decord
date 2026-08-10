@@ -1,9 +1,9 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9912
+// Function ID: 9913
 // Name: parsedItemUsesEveryoneRole
 // Dependencies: [32, 5897, 3929, 676, 38, 7142, 2]
 
-// Module 9911 (parsedItemUsesEveryoneRole)
+// Module 9912 (parsedItemUsesEveryoneRole)
 import _slicedToArray from "_slicedToArray";
 import getMemberListId from "getMemberListId";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

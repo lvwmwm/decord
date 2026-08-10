@@ -1,10 +1,10 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11409
+// Function ID: 11410
 // Name: num2
-// Dependencies: [19, 17, 21, 4303, 712, 500, 8403, 1236, 4800, 4299, 10200, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 500, 8403, 1236, 4800, 4299, 10201, 2]
 // Exports: default
 
-// Module 11408 (num2)
+// Module 11409 (num2)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -74,7 +74,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     const obj2 = { count: null, textVariant: "text-sm/semibold", textColor: null, animate: false };
     obj2[0] = messageCount;
     obj2[2] = str;
-    tmp7Result = tmp7(importDefault(10200), obj2);
+    tmp7Result = tmp7(importDefault(10201), obj2);
   }
   items1[1] = tmp7Result;
   let tmp5Result = null != unreadCount;

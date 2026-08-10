@@ -1,10 +1,10 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9784
+// Function ID: 9785
 // Name: NotificationWrapper
-// Dependencies: [32, 19, 17, 9784, 4315, 9768, 676, 21, 4036, 4303, 9785, 8078, 8083, 9786, 9860, 9863, 9864, 9896, 9897, 10202, 10203, 10206, 10207, 9767, 8732, 589, 4123, 1358, 4271, 4498, 4711, 1474, 11, 5253, 4304, 4730, 698, 5427, 4713, 1297, 4702, 1236, 5328, 9815, 2]
+// Dependencies: [32, 19, 17, 9785, 4315, 9769, 676, 21, 4036, 4303, 9786, 8078, 8083, 9787, 9861, 9864, 9865, 9897, 9898, 10203, 10204, 10207, 10208, 9768, 8732, 589, 4123, 1358, 4271, 4498, 4711, 1474, 11, 5253, 4304, 4730, 698, 5427, 4713, 1297, 4702, 1236, 5328, 9816, 2]
 // Exports: default
 
-// Module 9783 (NotificationWrapper)
+// Module 9784 (NotificationWrapper)
 import DISCORD_EPOCH from "DISCORD_EPOCH";
 import NotificationAvatar from "NotificationAvatar";
 import get_ActivityIndicator from "AlertNotification";
@@ -42,38 +42,38 @@ function NotificationWrapper(notification) {
   if (constants.MESSAGE === type) {
     let obj = { notification: null };
     obj[0] = notification;
-    return callback(importDefault(9786), obj);
+    return callback(importDefault(9787), obj);
   } else if (tmp.MESSAGE_FAILED_TO_SEND === type) {
     obj = { notification: null };
     obj[0] = notification;
-    return callback(importDefault(9860), obj);
+    return callback(importDefault(9861), obj);
   } else if (tmp.FORUM_THREAD_CREATED === type) {
     const obj1 = { notification: null };
     obj1[0] = notification;
-    return callback(importDefault(9863), obj1);
+    return callback(importDefault(9864), obj1);
   } else if (tmp.BUG_REPORTER === type) {
     const obj2 = { notification: null };
     obj2[0] = notification;
-    return callback(require(9864) /* BugReporterNotification */.BugReporterNotification, obj2);
+    return callback(require(9865) /* BugReporterNotification */.BugReporterNotification, obj2);
   } else if (tmp.ALERT === type) {
     const obj3 = { notification: null };
     obj3[0] = notification;
-    return callback(importDefault(9896), obj3);
+    return callback(importDefault(9897), obj3);
   } else if (tmp.REACTION === type) {
     const obj4 = { notification: null };
     obj4[0] = notification;
-    return callback(importDefault(9897), obj4);
+    return callback(importDefault(9898), obj4);
   } else if (tmp.MESSAGE_REMINDER === type) {
     const obj5 = { notification: null };
     obj5[0] = notification;
-    return callback(importDefault(10202), obj5);
+    return callback(importDefault(10203), obj5);
   } else {
     if (tmp.RESTRICTED_HOURS_WARNING !== type) {
       if (tmp.RESTRICTED_SCHEDULE_UPDATED !== type) {
         if (tmp.MESSAGE_REQUEST === type) {
           obj = { notification: null };
           obj[0] = notification;
-          return callback(importDefault(10206), obj);
+          return callback(importDefault(10207), obj);
         } else {
           return null;
         }
@@ -81,7 +81,7 @@ function NotificationWrapper(notification) {
     }
     const obj6 = { notification: null };
     obj6[0] = notification;
-    return callback(importDefault(10203), obj6);
+    return callback(importDefault(10204), obj6);
   }
 }
 function DetachedNotificationContent(notification) {
@@ -90,7 +90,7 @@ function DetachedNotificationContent(notification) {
   if (notification.type === constants.MESSAGE) {
     const obj = { notification: null };
     obj[0] = notification;
-    tmp = callback(require(10207) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
+    tmp = callback(require(10208) /* MessageNotificationDetachedContent */.MessageNotificationDetachedContent, obj);
   }
   return tmp;
 }

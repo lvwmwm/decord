@@ -1,10 +1,10 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10446
+// Function ID: 10447
 // Name: useSwipeToReplySettingValue
-// Dependencies: [8082, 676, 1306, 1236, 698, 3974, 10446, 2]
+// Dependencies: [8082, 676, 1306, 1236, 698, 3974, 10447, 2]
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 10445 (useSwipeToReplySettingValue)
+// Module 10446 (useSwipeToReplySettingValue)
 import ME from "ME";
 import createToggle from "createToggle";
 

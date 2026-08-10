@@ -1,10 +1,10 @@
-// Module ID: 11676
-// Function ID: 11677
+// Module ID: 11677
+// Function ID: 11678
 // Name: DirectoryEntryTypes
 // Dependencies: [676, 1236, 3934, 506, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 11676 (DirectoryEntryTypes)
+// Module 11677 (DirectoryEntryTypes)
 import ME from "ME";
 
 let c3;

@@ -1,10 +1,10 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10687
+// Function ID: 10688
 // Name: getStreamEndedSource
-// Dependencies: [19, 17, 21, 7623, 10687, 10688, 4153, 2]
+// Dependencies: [19, 17, 21, 7623, 10688, 10689, 4153, 2]
 // Exports: StreamEnded, getStreamEndedSource, useStreamEndedSource
 
-// Module 10686 (getStreamEndedSource)
+// Module 10687 (getStreamEndedSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,10 +16,10 @@ export const getStreamEndedSource = function getStreamEndedSource(theme) {
   let obj = require(7623) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(10687);
+      return callback(10688);
     },
     darker() {
-      return callback(10688);
+      return callback(10689);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -28,10 +28,10 @@ export const useStreamEndedSource = function useStreamEndedSource() {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(10687);
+      return callback(10688);
     },
     darker() {
-      return callback(10688);
+      return callback(10689);
     }
   };
   return require(7623) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -40,10 +40,10 @@ export const StreamEnded = function StreamEnded(arg0) {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(10687);
+      return callback(10688);
     },
     darker() {
-      return callback(10688);
+      return callback(10689);
     }
   };
   obj = {};

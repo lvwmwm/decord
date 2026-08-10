@@ -1,10 +1,10 @@
-// Module ID: 10661
-// Function ID: 10662
+// Module ID: 10662
+// Function ID: 10663
 // Name: usePipVideoOrStream
-// Dependencies: [1371, 4316, 10662, 4322, 1218, 1372, 4351, 4375, 4321, 589, 4367, 4158, 10651, 2]
+// Dependencies: [1371, 4316, 10663, 4322, 1218, 1372, 4351, 4375, 4321, 589, 4367, 4158, 10652, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 10661 (usePipVideoOrStream)
+// Module 10662 (usePipVideoOrStream)
 import participantFromServer from "participantFromServer";
 import getParticipants from "getParticipants";
 import updateSpeaker from "updateSpeaker";

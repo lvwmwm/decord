@@ -1,10 +1,10 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 13985
+// Function ID: 13986
 // Name: AndroidPasskeyRadioGroup
-// Dependencies: [32, 19, 17, 13966, 21, 4303, 712, 8476, 1236, 1297, 1480, 500, 5328, 13984, 4299, 5150, 4714, 2]
+// Dependencies: [32, 19, 17, 13968, 21, 4303, 712, 8476, 1236, 1297, 1480, 500, 5328, 13986, 4299, 5150, 4714, 2]
 // Exports: default
 
-// Module 13983 (AndroidPasskeyRadioGroup)
+// Module 13985 (AndroidPasskeyRadioGroup)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "set";
@@ -87,7 +87,7 @@ export default function WebAuthnRegisterStep() {
   let closure_6 = obj1.useMemo(() => ({ onRegisterSuccess: callback, setError: closure_2, setRegistering: closure_1 }), items2);
   obj = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: null };
   obj = { style: tmp4.centerFlex, children: null };
-  const items3 = [callback(navigation(13984).KeyImage, {}), , ];
+  const items3 = [callback(navigation(13986).KeyImage, {}), , ];
   obj1 = { style: tmp4.margin, variant: "text-md/normal", children: null };
   const intl = tmp(1236).intl;
   const string = intl.string;

@@ -1,10 +1,10 @@
-// Module ID: 10121
-// Function ID: 10122
+// Module ID: 10122
+// Function ID: 10123
 // Name: PremiumGiftSuccessBody
-// Dependencies: [19, 17, 4349, 1905, 676, 21, 4303, 712, 9611, 1480, 9578, 4538, 10034, 8923, 4714, 1236, 3947, 5756, 4001, 9585, 4299, 8663, 4252, 2]
+// Dependencies: [19, 17, 4349, 1905, 676, 21, 4303, 712, 9611, 1480, 9578, 4538, 10035, 8923, 4714, 1236, 3947, 5756, 4001, 9585, 4299, 8663, 4252, 2]
 // Exports: PremiumGiftSuccessActions, default
 
-// Module 10121 (PremiumGiftSuccessBody)
+// Module 10122 (PremiumGiftSuccessBody)
 import PremiumGiftBackgroundAnimation from "PremiumGiftBackgroundAnimation";
 import { View } from "_copy";
 import addSku from "addSku";

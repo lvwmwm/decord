@@ -1,8 +1,8 @@
-// Module ID: 16856
-// Function ID: 16857
-// Dependencies: [19, 21, 15641, 1236, 2]
+// Module ID: 16865
+// Function ID: 16866
+// Dependencies: [19, 21, 15649, 1236, 2]
 
-// Module 16856
+// Module 16865
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -13,7 +13,7 @@ const forwardRefResult = require("noop").forwardRef(() => {
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.qAMb9K);
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl2.string(require(1236) /* getSystemLocale */.t.pRuzXJ);
-  return jsx(importDefault(15641), { title: null, description: null, brightTitle: true });
+  return jsx(importDefault(15649), { title: null, description: null, brightTitle: true });
 });
 const result = require("UnavailableNotice").fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
 

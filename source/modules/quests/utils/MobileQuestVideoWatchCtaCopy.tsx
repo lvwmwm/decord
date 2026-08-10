@@ -1,10 +1,10 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10588
+// Function ID: 10589
 // Name: formatWatchRemainingDurationShort
 // Dependencies: [7183, 1236, 2]
 // Exports: formatWatchRemainingDurationShort, getVideoQuestWatchCtaAccessibilityLabel, getVideoQuestWatchCtaText
 
-// Module 10587 (formatWatchRemainingDurationShort)
+// Module 10588 (formatWatchRemainingDurationShort)
 const result = require("set").fileFinishedImporting("modules/quests/utils/MobileQuestVideoWatchCtaCopy.tsx");
 
 export const formatWatchRemainingDurationShort = function formatWatchRemainingDurationShort(targetSeconds) {

@@ -1,9 +1,9 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14908
+// Function ID: 14909
 // Name: toggle
-// Dependencies: [6996, 8082, 7339, 14070, 14892, 7797, 7799, 14069, 10446, 1236, 2284, 2]
+// Dependencies: [6996, 8082, 7339, 14072, 14894, 7797, 7799, 14071, 10447, 1236, 2284, 2]
 
-// Module 14906 (toggle)
+// Module 14908 (toggle)
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import createToggle from "createToggle";
 
@@ -19,10 +19,10 @@ createToggle = {
   },
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue() {
-    const defaultGuildsRestricted = require(14069) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
-    const obj = require(14069) /* useParentalControlledExplicitContentSettings */;
+    const defaultGuildsRestricted = require(14071) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
+    const obj = require(14071) /* useParentalControlledExplicitContentSettings */;
     const selectedTeenId = require(7339) /* useSelectedTeen */.useSelectedTeenId();
-    const ParentalControlledDefaultMessageRequestRestricted = require(14070) /* result */.ParentalControlledDefaultMessageRequestRestricted;
+    const ParentalControlledDefaultMessageRequestRestricted = require(14072) /* result */.ParentalControlledDefaultMessageRequestRestricted;
     let tmp3 = !defaultGuildsRestricted;
     if (!defaultGuildsRestricted) {
       tmp3 = !ParentalControlledDefaultMessageRequestRestricted.useControlledSetting(selectedTeenId);
@@ -30,13 +30,13 @@ createToggle = {
     return tmp3;
   },
   useIsDisabled() {
-    return require(14069) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
+    return require(14071) /* useParentalControlledExplicitContentSettings */.useDefaultGuildsRestricted();
   },
   onValueChange: function onAllowMessageRequestsFromServerMembersValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
       if (!arg0) {
-        let obj = require(14892) /* shouldAgeVerifyForDMDefaultOff */;
+        let obj = require(14894) /* shouldAgeVerifyForDMDefaultOff */;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
           obj = { entryPoint: null };
           obj[0] = tmp2(7799).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
@@ -45,7 +45,7 @@ createToggle = {
         }
         tmp2 = require;
       }
-      const ParentalControlledDefaultMessageRequestRestricted = require(14070) /* result */.ParentalControlledDefaultMessageRequestRestricted;
+      const ParentalControlledDefaultMessageRequestRestricted = require(14072) /* result */.ParentalControlledDefaultMessageRequestRestricted;
       const result1 = ParentalControlledDefaultMessageRequestRestricted.updateControlledSetting(selectedTeenId, !arg0);
     }
   },

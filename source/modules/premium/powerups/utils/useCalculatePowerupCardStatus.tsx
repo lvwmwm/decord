@@ -1,10 +1,10 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11880
+// Function ID: 11881
 // Name: useCalculatePowerupCardStatus
 // Dependencies: [19, 4191, 1236, 2316, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 11879 (useCalculatePowerupCardStatus)
+// Module 11880 (useCalculatePowerupCardStatus)
 import noop from "noop";
 import { PowerupActiveStatusType } from "BoostedGuildTiers";
 

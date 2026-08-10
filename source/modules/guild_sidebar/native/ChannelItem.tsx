@@ -1,9 +1,9 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15248
+// Function ID: 15249
 // Name: getChannelMode
-// Dependencies: [109, 19, 17, 4390, 3938, 1903, 676, 1379, 4500, 21, 4303, 712, 5158, 11752, 1416, 5268, 15242, 4804, 4764, 589, 1297, 4745, 15243, 4494, 1222, 2]
+// Dependencies: [109, 19, 17, 4390, 3938, 1903, 676, 1379, 4500, 21, 4303, 712, 5158, 11753, 1416, 5268, 15249, 4804, 4764, 589, 1297, 4745, 15250, 4494, 1222, 2]
 
-// Module 15241 (getChannelMode)
+// Module 15248 (getChannelMode)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import { View } from "BookCheckIcon";
 import sortActivity from "sortActivity";
@@ -25,24 +25,24 @@ function getChannelMode(selected) {
   let unread;
   ({ unread, channel } = selected);
   if (selected.selected) {
-    const ChannelModes = require(11752) /* BaseChannelSubtitle */.ChannelModes;
+    const ChannelModes = require(11753) /* BaseChannelSubtitle */.ChannelModes;
     if (!isGuildVocalResult) {
       const SELECTED = ChannelModes.SELECTED;
     }
     isGuildVocalResult = channel.isGuildVocal();
   } else {
     if (tmp2) {
-      let DEFAULT = require(11752) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
+      let DEFAULT = require(11753) /* BaseChannelSubtitle */.ChannelModes.LOCKED;
     } else if (tmp) {
-      DEFAULT = require(11752) /* BaseChannelSubtitle */.ChannelModes.MUTED;
+      DEFAULT = require(11753) /* BaseChannelSubtitle */.ChannelModes.MUTED;
     } else if (unread) {
       if (selected.resolvedUnreadSetting === UnreadSetting.ALL_MESSAGES) {
-        let UNREAD_LESS_IMPORTANT = require(11752) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
+        let UNREAD_LESS_IMPORTANT = require(11753) /* BaseChannelSubtitle */.ChannelModes.UNREAD_IMPORTANT;
       } else {
-        UNREAD_LESS_IMPORTANT = require(11752) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
+        UNREAD_LESS_IMPORTANT = require(11753) /* BaseChannelSubtitle */.ChannelModes.UNREAD_LESS_IMPORTANT;
       }
     } else {
-      DEFAULT = require(11752) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
+      DEFAULT = require(11753) /* BaseChannelSubtitle */.ChannelModes.DEFAULT;
     }
     return DEFAULT;
   }
@@ -78,7 +78,7 @@ function ChannelIcon(arg0) {
       tmp5 = importDefault;
     }
     if (tmp2) {
-      let tmp12 = importDefault(15242);
+      let tmp12 = importDefault(15249);
       let BookCheckIcon = require(4804) /* BookCheckIcon */.BookCheckIcon;
       let tmp9 = require;
     } else {
@@ -110,7 +110,7 @@ function ChannelIcon(arg0) {
       obj6 = {};
     }
     const merged = Object.assign(obj6);
-    return callback2(tmp9(11752).BaseChannelIcon, obj4);
+    return callback2(tmp9(11753).BaseChannelIcon, obj4);
   }
 }
 function DMChannelIcon(userId) {
@@ -128,7 +128,7 @@ function DMChannelIcon(userId) {
   const items3 = [userId];
   const stateFromStoresObject = userId(589).useStateFromStoresObject(items2, () => ({ status: outer1_6.getStatus(userId), isMobileOnline: outer1_6.isMobileOnline(userId), isVROnline: outer1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: "o", size: "AUDIO_SET_ACTIVE_INPUT_PROFILE", style: null, status: 180, isMobileOnline: "#f0f8ff", isVROnline: "#faebd7", statusStyle: "#00ffff" };
+  obj = { user: stateFromStores, guildId: "o", size: "APP_LAUNCHER_ONBOARDING_SET_TRIGGERED_ONBOARDING_CONTENT_METADATA", style: null, status: "FAVORITES_GUILD_CHANNEL_SORT", isMobileOnline: 113, isVROnline: 124, statusStyle: "none" };
   obj[2] = userId(1297).AvatarSizes.XSMALL_20;
   obj[3] = tmp.dmAvatar;
   obj[4] = status;

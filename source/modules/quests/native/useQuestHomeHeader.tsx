@@ -1,10 +1,10 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14244
+// Function ID: 14245
 // Name: QuestHomeHeaderTitle
-// Dependencies: [19, 17, 5161, 676, 678, 21, 4303, 712, 14239, 4299, 1236, 9423, 4271, 10150, 1988, 698, 5748, 7000, 10138, 14243, 7752, 14244, 1480, 12219, 2]
+// Dependencies: [19, 17, 5161, 676, 678, 21, 4303, 712, 14241, 4299, 1236, 9423, 4271, 10151, 1988, 698, 5748, 7000, 10139, 14245, 7752, 14246, 1480, 12221, 2]
 // Exports: default
 
-// Module 14242 (QuestHomeHeaderTitle)
+// Module 14244 (QuestHomeHeaderTitle)
 import FilterFooter from "FilterFooter";
 import { View } from "openCollectiblesShop";
 import { QuestHomeSortMethods } from "QuestsExperimentLocations";
@@ -19,7 +19,7 @@ const require = arg1;
 function QuestHomeHeaderTitle() {
   const tmp = createCacheKey();
   let obj = { style: tmp.headerTitleContainer, children: null };
-  const items = [callback(require(14239) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  const items = [callback(require(14241) /* QuestsIcon */.QuestsIcon, { size: "md", color: "icon-strong" }), ];
   obj = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[5] = intl.string(require(1236) /* getSystemLocale */.t.JALI2K);
@@ -39,7 +39,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
     obj = { balance: null, onPress: null };
     obj[0] = balance;
     obj[1] = tmp5;
-    isVirtualCurrencyEnabled = callback(balance(10138).BalanceWidgetPillButton, obj);
+    isVirtualCurrencyEnabled = callback(balance(10139).BalanceWidgetPillButton, obj);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);

@@ -1,9 +1,9 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16028
+// Function ID: 16029
 // Name: NativeAPNGPreloadModule
 // Dependencies: [17, 2]
 
-// Module 16019 (NativeAPNGPreloadModule)
+// Module 16028 (NativeAPNGPreloadModule)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const value = TurboModuleRegistry.get("NativeAPNGPreloadModule");

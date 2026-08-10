@@ -1,9 +1,9 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 10091
+// Function ID: 10092
 // Name: SlayerShopCardCTAType
 // Dependencies: [2]
 
-// Module 10090 (SlayerShopCardCTAType)
+// Module 10091 (SlayerShopCardCTAType)
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontAnalyticsConstants.tsx");
 
 export const SlayerShopCardCTAType = { CARD: "card", BUY_BUTTON: "buy_button", GIFT_BUTTON: "gift_button", WISHLIST_BUTTON: "wishlist_button", FORWARD_BUTTON: "forward_button", VIEW_DETAILS_BUTTON: "view_details_button", BUY_WITH_ORBS_BUTTON: "buy_with_orbs_button" };

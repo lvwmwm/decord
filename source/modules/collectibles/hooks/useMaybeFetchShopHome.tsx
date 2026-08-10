@@ -1,10 +1,10 @@
-// Module ID: 14829
-// Function ID: 14830
+// Module ID: 14831
+// Function ID: 14832
 // Name: useMaybeFetchCollectiblesShopHome
-// Dependencies: [32, 19, 4217, 7001, 7045, 678, 589, 7048, 7000, 14830, 2]
+// Dependencies: [32, 19, 4217, 7001, 7045, 678, 589, 7048, 7000, 14832, 2]
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 14829 (useMaybeFetchCollectiblesShopHome)
+// Module 14831 (useMaybeFetchCollectiblesShopHome)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getHash from "getHash";
@@ -100,7 +100,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   if (tmp3[5] == null) {
     flag2 = false;
   }
-  hasExpiredShopBlocks = _require(14830).useHasExpiredShopBlocks(tmp4, flag2, flag);
+  hasExpiredShopBlocks = _require(14832).useHasExpiredShopBlocks(tmp4, flag2, flag);
   const items5 = [tmp5, hasExpiredShopBlocks];
   const tmp12Result = tmp12(() => {
     let tmp = !hasExpiredShopBlocks;

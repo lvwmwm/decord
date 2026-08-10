@@ -1,10 +1,10 @@
-// Module ID: 14158
-// Function ID: 14159
+// Module ID: 14160
+// Function ID: 14161
 // Name: FamilyCenterLinkingBannerParentContent
-// Dependencies: [19, 17, 21, 4303, 712, 7338, 11326, 1236, 2284, 14159, 4299, 14121, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 7338, 11327, 1236, 2284, 14161, 4299, 14123, 2]
 // Exports: default
 
-// Module 14158 (FamilyCenterLinkingBannerParentContent)
+// Module 14160 (FamilyCenterLinkingBannerParentContent)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -38,12 +38,12 @@ function FamilyCenterLinkingBannerParentContent() {
   const intl6 = require(1236) /* getSystemLocale */.intl;
   obj1[2] = intl6.string(importDefault(2284)["8rLBxD"]);
   items[2] = callback(FamilyCenterLinkingInstructionsRow, obj1);
-  items[3] = callback(require(14121) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
+  items[3] = callback(require(14123) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterParentQRCodeButton, {});
   obj[1] = items;
   return callback2(closure_3, obj);
 }
 function FamilyCenterLinkingBannerTeenContent() {
-  return callback(closure_3, { style: createCacheKey().container, children: callback(require(14121) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
+  return callback(closure_3, { style: createCacheKey().container, children: callback(require(14123) /* FamilyCenterTeenQRCodeButtonInner */.FamilyCenterTeenQRCodeButton, {}) });
 }
 function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
@@ -97,19 +97,19 @@ const result = require("jsxProd").fileFinishedImporting("modules/parent_tools/na
 
 export default function FamilyCenterLinkingBanner() {
   const tmp = createCacheKey();
-  let obj = require(11326) /* useAgeSpecificText */;
+  let obj = require(11327) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   const tmp2 = importDefault(7338)();
   const intl2 = require(1236) /* getSystemLocale */.intl;
   const ageSpecificText = obj.useAgeSpecificText(intl.string(importDefault(2284).zUCWEL), intl2.string(importDefault(2284).B0NPbp));
-  let obj1 = require(11326) /* useAgeSpecificText */;
+  let obj1 = require(11327) /* useAgeSpecificText */;
   const intl3 = require(1236) /* getSystemLocale */.intl;
   const stringResult = intl.string(importDefault(2284).zUCWEL);
   const intl4 = require(1236) /* getSystemLocale */.intl;
   obj = { style: tmp.container, children: null };
   obj = { source: null, style: null, resizeMethod: "resize" };
   const ageSpecificText1 = obj1.useAgeSpecificText(intl3.format(importDefault(2284).yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(importDefault(2284).JsAEDi));
-  obj[0] = importDefault(14159);
+  obj[0] = importDefault(14161);
   obj[1] = tmp.art;
   const items = [callback(closure_4, obj), , ];
   obj1 = { style: tmp.content, children: null };

@@ -1,9 +1,9 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15504
+// Function ID: 15505
 // Name: Username
-// Dependencies: [19, 17, 4996, 21, 4303, 712, 15479, 9470, 9252, 9478, 589, 9448, 9451, 9523, 4299, 4146, 2]
+// Dependencies: [19, 17, 4996, 21, 4303, 712, 15487, 9470, 9252, 9478, 589, 9448, 9451, 9523, 4299, 4146, 2]
 
-// Module 15496 (Username)
+// Module 15504 (Username)
 import { View } from "get ActivityIndicator";
 import filterPlayingActivities from "filterPlayingActivities";
 import jsxProd from "jsxProd";
@@ -16,7 +16,7 @@ const require = arg1;
 function Username(userId) {
   userId = userId.userId;
   const tmp = callback2();
-  let obj = require(15479) /* apexExperiment */;
+  let obj = require(15487) /* apexExperiment */;
   obj = { style: items, children: null };
   items = [tmp.usernameRow];
   const isYouBarGuildTagEnabled = obj.useIsYouBarGuildTagEnabled("YouBarName");

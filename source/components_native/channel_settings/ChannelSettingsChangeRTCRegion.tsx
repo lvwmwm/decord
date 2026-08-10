@@ -1,10 +1,10 @@
-// Module ID: 15918
-// Function ID: 15919
+// Module ID: 15927
+// Function ID: 15928
 // Name: handleSetRegion
-// Dependencies: [853, 19, 1372, 15877, 21, 4303, 712, 4013, 1236, 8016, 7984, 7985, 7967, 589, 38, 2]
+// Dependencies: [853, 19, 1372, 15886, 21, 4303, 712, 4013, 1236, 8016, 7984, 7985, 7967, 589, 38, 2]
 // Exports: default
 
-// Module 15918 (handleSetRegion)
+// Module 15927 (handleSetRegion)
 import _toArray from "_toArray";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import initialize from "initialize";

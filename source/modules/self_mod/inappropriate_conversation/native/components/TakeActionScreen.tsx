@@ -1,10 +1,10 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15045
+// Function ID: 15046
 // Name: TakeActionButtons
-// Dependencies: [5, 32, 19, 17, 3938, 1903, 10338, 21, 4303, 712, 589, 10371, 10374, 1480, 9243, 7784, 10351, 8020, 4002, 1236, 4264, 4001, 4714, 10382, 8770, 4783, 7956, 3998, 4299, 2]
+// Dependencies: [5, 32, 19, 17, 3938, 1903, 10339, 21, 4303, 712, 589, 10372, 10375, 1480, 9243, 7784, 10352, 8020, 4002, 1236, 4264, 4001, 4714, 10383, 8770, 4783, 7956, 3998, 4299, 2]
 // Exports: default
 
-// Module 15043 (TakeActionButtons)
+// Module 15045 (TakeActionButtons)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import _slicedToArray from "_slicedToArray";
 import getSystemLocale from "getSystemLocale";
@@ -144,7 +144,7 @@ export default function TakeActionButtons(senderId) {
           callback2(false);
           obj = v0(7784);
           const result = obj.showReportSuccessToast(closure_0, v0);
-          callback(outer1_0(10351).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
+          callback(outer1_0(10352).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         dependencyMap = 3;
         obj2 = { value: null, done: true };

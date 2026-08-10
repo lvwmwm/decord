@@ -1,10 +1,10 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16413
+// Function ID: 16414
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 1891, 21, 4303, 712, 589, 16401, 16405, 5764, 10355, 4299, 1236, 5779, 4714, 6013, 3974, 4002, 9877, 4271, 13254, 2]
+// Dependencies: [19, 17, 1891, 21, 4303, 712, 589, 16410, 16414, 5764, 10356, 4299, 1236, 5779, 4714, 6013, 3974, 4002, 9878, 4271, 13256, 2]
 // Exports: default
 
-// Module 16404 (DmSettingsUpsellActionSheet)
+// Module 16413 (DmSettingsUpsellActionSheet)
 import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF";
 import get_ActivityIndicator from "dispatcher";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -52,7 +52,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
     obj = { style: null, children: null };
     obj[0] = tmp.container;
     const obj1 = { source: null, style: null };
-    obj1[0] = stateFromStores(10355);
+    obj1[0] = stateFromStores(10356);
     obj1[1] = tmp.headerImage;
     const items2 = [callback(closure_5, obj1), , , , , , ];
     let obj2 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: null, children: null };
@@ -94,7 +94,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
       let obj = guildId(outer1_2[15]);
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds)).then(() => {
         let obj = callback2(4002);
-        obj = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: callback2(9877), content: null };
+        obj = { key: "DM_SETTINGS_UPSELL_SUCCESS_TOAST", icon: callback2(9878), content: null };
         const intl = callback(1236).intl;
         obj[2] = intl.string(callback(1236).t.rlYD1W);
         obj.open(obj);

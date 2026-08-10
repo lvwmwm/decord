@@ -1,10 +1,10 @@
-// Module ID: 14027
-// Function ID: 14028
+// Module ID: 14029
+// Function ID: 14030
 // Name: TwoFAModalSetupSections
-// Dependencies: [19, 17, 14028, 21, 4303, 712, 1480, 14026, 5328, 4714, 1236, 14029, 5270, 14030, 14033, 14034, 14036, 5716, 8478, 5783, 2]
+// Dependencies: [19, 17, 14030, 21, 4303, 712, 1480, 14028, 5328, 4714, 1236, 14031, 5270, 14032, 14035, 14036, 14038, 5716, 8478, 5783, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 14027 (TwoFAModalSetupSections)
+// Module 14029 (TwoFAModalSetupSections)
 import NavigationStack from "NavigationStack";
 import { View } from "useInitialValue";
 import { TwoFAModalSetupSections } from "frozen";
@@ -35,17 +35,17 @@ export default function TwoFASetupModal(initialRouteName) {
       callback = obj.generateTotpSecret();
       obj = {};
       obj = { headerLeft: null, headerTitle: null, render: null };
-      obj[0] = callback(5270).getHeaderCloseButton(callback2(14026).close);
+      obj[0] = callback(5270).getHeaderCloseButton(callback2(14028).close);
       obj[1] = function headerTitle() {
-        return callback3(callback(14029).PageMarker, { currentPage: dependencyMap2[constants.LANDING], numMarkers: Object.keys(dependencyMap2).length - 1 });
+        return callback3(callback(14031).PageMarker, { currentPage: dependencyMap2[constants.LANDING], numMarkers: Object.keys(dependencyMap2).length - 1 });
       };
       obj[2] = function render() {
-        return callback3(callback2(14030), {});
+        return callback3(callback2(14032), {});
       };
       obj[constants.LANDING] = obj;
       obj[constants.SCAN] = {
         headerTitle() {
-          return callback3(callback(14029).PageMarker, { currentPage: dependencyMap2[constants.SCAN], numMarkers: Object.keys(dependencyMap2).length - 1 });
+          return callback3(callback(14031).PageMarker, { currentPage: dependencyMap2[constants.SCAN], numMarkers: Object.keys(dependencyMap2).length - 1 });
         },
         render() {
           return outer1_6(outer1_1(outer1_2[14]), { totpSecret: closure_0 });
@@ -53,7 +53,7 @@ export default function TwoFASetupModal(initialRouteName) {
       };
       obj[constants.ENTER_CODE] = {
         headerTitle() {
-          return callback3(callback(14029).PageMarker, { currentPage: dependencyMap2[constants.ENTER_CODE], numMarkers: Object.keys(dependencyMap2).length - 1 });
+          return callback3(callback(14031).PageMarker, { currentPage: dependencyMap2[constants.ENTER_CODE], numMarkers: Object.keys(dependencyMap2).length - 1 });
         },
         render() {
           return outer1_6(outer1_1(outer1_2[15]), { totpSecret: closure_0 });
@@ -61,12 +61,12 @@ export default function TwoFASetupModal(initialRouteName) {
       };
       const obj1 = { headerLeft: null, headerTitle: null, render: null };
       const obj4 = callback(5270);
-      obj1[0] = callback(5270).getHeaderCloseButton(callback2(14026).close);
+      obj1[0] = callback(5270).getHeaderCloseButton(callback2(14028).close);
       obj1[1] = function headerTitle() {
         return null;
       };
       obj1[2] = function render() {
-        return callback3(callback2(14036), {});
+        return callback3(callback2(14038), {});
       };
       obj[constants.SUCCESS] = obj1;
       return obj;

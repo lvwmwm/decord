@@ -1,10 +1,10 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11441
+// Function ID: 11442
 // Name: usePlaceholderWidth
 // Dependencies: [19, 2]
 // Exports: usePlaceholderWidth
 
-// Module 11440 (usePlaceholderWidth)
+// Module 11441 (usePlaceholderWidth)
 import noop from "noop";
 
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/usePlaceholderSize.tsx");

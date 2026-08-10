@@ -1,10 +1,10 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 16723
+// Function ID: 16724
 // Name: Header
-// Dependencies: [32, 19, 17, 676, 5125, 21, 4303, 712, 4239, 11035, 1297, 1416, 4153, 5374, 1236, 4846, 5326, 5768, 16715, 500, 4299, 5000, 5767, 2]
+// Dependencies: [32, 19, 17, 676, 5125, 21, 4303, 712, 4239, 11036, 1297, 1416, 4153, 5374, 1236, 4846, 5326, 5768, 16724, 500, 4299, 5000, 5767, 2]
 // Exports: default
 
-// Module 16714 (Header)
+// Module 16723 (Header)
 import _slicedToArray from "_slicedToArray";
 import set from "set";
 import { View } from "TableSwitchRow";
@@ -30,7 +30,7 @@ function Header(arg0) {
   let platform;
   ({ platform, integration, applicationId } = arg0);
   ({ onRemove, locked } = arg0);
-  let obj = require(11035) /* request */;
+  let obj = require(11036) /* request */;
   let application;
   if (integration != null) {
     application = integration.application;
@@ -214,7 +214,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
   if (num == null) {
     num = -1;
   }
-  let obj = metadataField(16715);
+  let obj = metadataField(16724);
   const realizedOperatorForResult = obj.realizedOperatorFor(existingPendingConfiguration.operator);
   c7 = realizedOperatorForResult;
   let value;
@@ -223,7 +223,7 @@ function NumericalConfigRule(existingPendingConfiguration) {
       value = iter.value;
     }
   }
-  let tmpResult = tmp(16715);
+  let tmpResult = tmp(16724);
   str = tmpResult.displayedValueFor(value, realizedOperatorForResult);
   str = str.toString();
   let mapped = React;
@@ -645,7 +645,7 @@ export default function GuildSettingsRoleEditConnectionConfiguration(configurati
     }
     if (configurationItems[0].configuration.connectionType === closure_11) {
       let obj = { hasIcons: true, children: null };
-      obj = { platform: null, integration: "a", applicationId: "<string:1144520707>", onRemove: "<string:1239547907>", locked: "<string:1239613443>" };
+      obj = { platform: null, integration: "a", applicationId: "_desired", onRemove: "a", locked: "isArray" };
       obj[2] = applicationId;
       obj[3] = function onRemove() {
         return onConfigurationChange(null, configurationItems[0].index);

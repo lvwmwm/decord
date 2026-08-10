@@ -1,10 +1,10 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11391
+// Function ID: 11392
 // Name: ForumPostGrid
-// Dependencies: [19, 1372, 3938, 11391, 21, 11392, 11396, 11407, 589, 38, 5920, 8403, 11411, 11412, 8405, 11417, 1382, 2]
+// Dependencies: [19, 1372, 3938, 11392, 21, 11393, 11397, 11408, 589, 38, 5920, 8403, 11412, 11413, 8405, 11418, 1382, 2]
 // Exports: ForumPostListDisabled
 
-// Module 11390 (ForumPostGrid)
+// Module 11391 (ForumPostGrid)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import upsertRelationship from "upsertRelationship";
 import { useForumChannelStore } from "set";
@@ -25,7 +25,7 @@ function ForumPostGrid(arg0) {
   ({ hasUnreads, thread } = arg0);
   const obj = { children: null };
   ({ firstMessage, isNew, media, parentChannel } = arg0);
-  const items = [callback(importDefault(11392), { thread, hasUnreads, isNew }), callback(importDefault(11396), { thread, hasUnreads, media }), callback(importDefault(11407), { thread, firstMessage, hasUnreads, parentChannel })];
+  const items = [callback(importDefault(11393), { thread, hasUnreads, isNew }), callback(importDefault(11397), { thread, hasUnreads, media }), callback(importDefault(11408), { thread, firstMessage, hasUnreads, parentChannel })];
   obj[0] = items;
   return callback2(closure_7, obj);
 }
@@ -186,8 +186,8 @@ export const ForumPostListDisabled = function ForumPostListDisabled(threadId) {
     obj[3] = tmp10;
     obj[4] = localDeviceMedia;
     obj[7] = loaded;
-    obj[1] = callback(tmp4(11412), obj);
-    tmp5 = callback(tmp(11411).ForumPostDisabledContainer, obj);
+    obj[1] = callback(tmp4(11413), obj);
+    tmp5 = callback(tmp(11412).ForumPostDisabledContainer, obj);
   }
   return tmp5;
 };

@@ -1,10 +1,10 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14685
+// Function ID: 14686
 // Name: onFriendAnniversaryNotificationSettingsChanged
 // Dependencies: [676, 3941, 3974, 698, 2]
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 14683 (onFriendAnniversaryNotificationSettingsChanged)
+// Module 14685 (onFriendAnniversaryNotificationSettingsChanged)
 import { AnalyticEvents } from "ME";
 import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags";
 

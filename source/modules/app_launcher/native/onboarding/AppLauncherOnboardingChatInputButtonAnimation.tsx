@@ -1,10 +1,10 @@
-// Module ID: 11612
-// Function ID: 11613
+// Module ID: 11613
+// Function ID: 11614
 // Name: EnteringAnimation
-// Dependencies: [19, 17, 4295, 21, 4303, 4718, 712, 4304, 4307, 589, 8391, 11423, 4036, 5719, 11613, 11448, 2]
+// Dependencies: [19, 17, 4295, 21, 4303, 4718, 712, 4304, 4307, 589, 8391, 11424, 4036, 5719, 11614, 11449, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 11612 (EnteringAnimation)
+// Module 11613 (EnteringAnimation)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -69,12 +69,12 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let obj1 = require(8391) /* useGradientBottom */;
   const gradientBottom = obj1.useGradientBottom();
-  importDefault(11423)({ channelId: channelId.channelId });
+  importDefault(11424)({ channelId: channelId.channelId });
   obj = { children: null };
   obj = { entering: EnteringAnimation, exiting: ExitingAnimation, style: items1, collapsable: false, children: null };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
   obj1 = { collapsable: false, style: tmp.glowLottie, source: null, autoPlay: null };
-  obj1[2] = require(11613);
+  obj1[2] = require(11614);
   obj1[3] = !stateFromStores;
   const items2 = [callback(importDefault(5719), obj1), , ];
   const items3 = [tmp.glowMask, gradientBottom];
@@ -85,7 +85,7 @@ export const AppLauncherOnboardingChatInputButtonAnimation = function AppLaunche
   const obj3 = { collapsable: false, style: tmp.trinketsLottie, source: null, autoPlay: null };
   const obj2 = { collapsable: false, style: tmp.fakeButton };
   const tmp5 = importDefault(5719);
-  obj3[2] = require(11448);
+  obj3[2] = require(11449);
   obj3[3] = !stateFromStores;
   items4[1] = callback(importDefault(5719), obj3);
   obj[0] = items4;

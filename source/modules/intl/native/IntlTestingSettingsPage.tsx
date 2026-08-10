@@ -1,10 +1,10 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14945
+// Function ID: 14946
 // Name: TestLocaleSelector
-// Dependencies: [32, 5, 19, 17, 1976, 1975, 21, 4303, 712, 7985, 1236, 8698, 7984, 589, 3883, 5767, 5374, 1274, 4712, 4299, 14944, 14976, 2]
+// Dependencies: [32, 5, 19, 17, 1976, 1975, 21, 4303, 712, 7985, 1236, 8698, 7984, 589, 3883, 5767, 5374, 1274, 4712, 4299, 14946, 14978, 2]
 // Exports: default
 
-// Module 14943 (TestLocaleSelector)
+// Module 14945 (TestLocaleSelector)
 import _slicedToArray from "_slicedToArray";
 import _getSystemLocale from "_getSystemLocale";
 import Text from "Text";
@@ -166,19 +166,19 @@ export default function IntlTestingSettingsPage() {
   const items = [callback3(LocaleInfo, {}), callback3(TestLocaleSelector, {}), , , , , , ];
   obj = { variant: "text-md/normal", children: null };
   const intl = _require(1236).intl;
-  obj[1] = intl.format(importDefault(14944).HMvEC5, {});
+  obj[1] = intl.format(importDefault(14946).HMvEC5, {});
   items[2] = callback3(_require(4299).Text, obj);
   const obj1 = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
-  obj1[1] = intl2.format(importDefault(14976).swfLzV, {});
+  obj1[1] = intl2.format(importDefault(14978).swfLzV, {});
   items[3] = callback3(_require(4299).Text, obj1);
   const obj2 = { variant: "text-md/normal", children: null };
   const intl3 = _require(1236).intl;
-  obj2[1] = intl3.format(importDefault(14944).rmps8y, {});
+  obj2[1] = intl3.format(importDefault(14946).rmps8y, {});
   items[4] = callback3(_require(4299).Text, obj2);
   const obj3 = { variant: "text-md/normal", children: null };
   const intl4 = _require(1236).intl;
-  obj3[1] = intl4.format(importDefault(14944).uczI4g, {
+  obj3[1] = intl4.format(importDefault(14946).uczI4g, {
     linkTarget() {
 
     }
@@ -186,11 +186,11 @@ export default function IntlTestingSettingsPage() {
   items[5] = callback3(_require(4299).Text, obj3);
   const obj5 = { variant: "text-md/normal", children: null };
   const intl5 = _require(1236).intl;
-  obj5[1] = intl5.format(importDefault(14944).rdfRyh, {});
+  obj5[1] = intl5.format(importDefault(14946).rdfRyh, {});
   items[6] = callback3(_require(4299).Text, obj5);
   const obj6 = { variant: "text-md/normal", children: null };
   const intl6 = _require(1236).intl;
-  obj6[1] = intl6.format(importDefault(14944).XOdbAy, {
+  obj6[1] = intl6.format(importDefault(14946).XOdbAy, {
     username: "some user",
     usernameHook(children) {
       obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: callback2(callback(4299).Text, obj) };

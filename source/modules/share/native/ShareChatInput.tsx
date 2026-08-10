@@ -1,10 +1,10 @@
-// Module ID: 10263
-// Function ID: 10264
+// Module ID: 10264
+// Function ID: 10265
 // Name: ShareChatInput
 // Dependencies: [32, 19, 17, 676, 21, 4303, 712, 500, 8353, 7975, 1236, 4846, 7655, 2]
 // Exports: default
 
-// Module 10263 (ShareChatInput)
+// Module 10264 (ShareChatInput)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

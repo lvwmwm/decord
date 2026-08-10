@@ -1,10 +1,10 @@
-// Module ID: 11175
-// Function ID: 11176
+// Module ID: 11176
+// Function ID: 11177
 // Name: AdContentImpressionTrackerBaseNative
-// Dependencies: [32, 19, 6876, 9520, 676, 21, 7745, 8853, 589, 10488, 10489, 7188, 2]
+// Dependencies: [32, 19, 6876, 9520, 676, 21, 7745, 8853, 589, 10489, 10490, 7188, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 11175 (AdContentImpressionTrackerBaseNative)
+// Module 11176 (AdContentImpressionTrackerBaseNative)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getState from "getState";
@@ -20,7 +20,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let tmp3 = obj.useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
   const ref = React.useRef(null);
   const tmp5 = visibilityRef;
-  let obj1 = adContentIds2(10488);
+  let obj1 = adContentIds2(10489);
   const adContentImpressionTrackerProps = obj1.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   obj = {};
@@ -166,7 +166,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
     obj2.adCreativeType = skipRemountKey.adCreativeType;
     tmp19 = obj2;
   }
-  return createElement(adContentIds2(10489).QuestContentImpressionTracker, tmp19);
+  return createElement(adContentIds2(10490).QuestContentImpressionTracker, tmp19);
 }
 const result = require("getState").fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
 

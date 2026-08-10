@@ -1,10 +1,10 @@
-// Module ID: 9846
-// Function ID: 9847
+// Module ID: 9847
+// Function ID: 9848
 // Name: VideoBadge
-// Dependencies: [19, 17, 4295, 9768, 21, 4303, 712, 8855, 4299, 4005, 500, 4704, 4810, 8497, 647, 7059, 9847, 9805, 8229, 8846, 1473, 5268, 5909, 5914, 8870, 9848, 1297, 8293, 4036, 2]
+// Dependencies: [19, 17, 4295, 9769, 21, 4303, 712, 8855, 4299, 4005, 500, 4704, 4810, 8497, 647, 7059, 9848, 9806, 8229, 8846, 1473, 5268, 5909, 5914, 8870, 9849, 1297, 8293, 4036, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 9846 (VideoBadge)
+// Module 9847 (VideoBadge)
 import isValidImageAttachment from "isValidImageAttachment";
 import get_ActivityIndicator from "VoiceMessageIcon";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -95,9 +95,9 @@ function SinglePreviewableMedia(arg0) {
   ({ type, media, icon } = previewableMedia);
   let obj1 = require(7059) /* redactionSettingToRenderedString */;
   const shouldAgeVerifyForExplicitMedia = obj1.useShouldAgeVerifyForExplicitMedia();
-  let obj2 = require(9847) /* useEnabledHarmTypesBitmaskForChannelAndAuthorId */;
+  let obj2 = require(9848) /* useEnabledHarmTypesBitmaskForChannelAndAuthorId */;
   const enabledHarmTypesBitmaskForMessage = obj2.useEnabledHarmTypesBitmaskForMessage(message);
-  if (require(9805) /* VoiceMessageIcon */.PreviewableMediaTypes.VOICE_MESSAGE === type) {
+  if (require(9806) /* VoiceMessageIcon */.PreviewableMediaTypes.VOICE_MESSAGE === type) {
     obj = { style: null, children: null };
     obj = { width: null, height: null };
     obj[0] = size;
@@ -106,11 +106,11 @@ function SinglePreviewableMedia(arg0) {
     obj[1] = icon;
     return callback(View, obj);
   } else {
-    if (tmp2(9805).PreviewableMediaTypes.AUDIO !== type) {
-      if (tmp2(9805).PreviewableMediaTypes.FILE !== type) {
-        if (tmp2(9805).PreviewableMediaTypes.IMAGE !== type) {
-          if (tmp2(9805).PreviewableMediaTypes.VIDEO !== type) {
-            if (tmp2(9805).PreviewableMediaTypes.GIF === type) {
+    if (tmp2(9806).PreviewableMediaTypes.AUDIO !== type) {
+      if (tmp2(9806).PreviewableMediaTypes.FILE !== type) {
+        if (tmp2(9806).PreviewableMediaTypes.IMAGE !== type) {
+          if (tmp2(9806).PreviewableMediaTypes.VIDEO !== type) {
+            if (tmp2(9806).PreviewableMediaTypes.GIF === type) {
               const video = media.video;
               if (video != null) {
                 const url = video.url;
@@ -170,7 +170,7 @@ function SinglePreviewableMedia(arg0) {
                 }
                 url2 = thumbnail.url;
               }
-            } else if (tmp2(9805).PreviewableMediaTypes.STICKER === type) {
+            } else if (tmp2(9806).PreviewableMediaTypes.STICKER === type) {
               const obj9 = { style: null, children: null };
               const items2 = [tmp.mediaThumbnailContainer, ];
               const obj10 = { width: null, height: null };
@@ -182,7 +182,7 @@ function SinglePreviewableMedia(arg0) {
               obj11[0] = media;
               obj11[1] = size;
               obj11[2] = !stateFromStores;
-              obj9[1] = callback(importDefault(9848), obj11);
+              obj9[1] = callback(importDefault(9849), obj11);
               return callback(View, obj9);
             } else {
               return null;
@@ -209,7 +209,7 @@ function SinglePreviewableMedia(arg0) {
                 obj13[3] = 2 * size;
                 obj13[4] = 2 * size;
                 let str3;
-                if (type === tmp2(9805).PreviewableMediaTypes.VIDEO) {
+                if (type === tmp2(9806).PreviewableMediaTypes.VIDEO) {
                   str3 = "png";
                 }
                 obj13[6] = str3;
@@ -230,7 +230,7 @@ function SinglePreviewableMedia(arg0) {
                 obj17[1] = tmp.mediaThumbnail;
                 const items4 = [callback(importDefault(5268), obj17), ];
                 let tmp24Result = null;
-                if (type === tmp2(9805).PreviewableMediaTypes.VIDEO) {
+                if (type === tmp2(9806).PreviewableMediaTypes.VIDEO) {
                   tmp24Result = tmp24(VideoBadge, {});
                 }
                 items4[1] = tmp24Result;
@@ -374,7 +374,7 @@ export const MediaPreviewRightAccessory = function MediaPreviewRightAccessory(ar
   let accessoryExitProgressSV;
   let message;
   ({ message, accessoryExitProgressSV } = arg0);
-  let obj = require(9805) /* VoiceMessageIcon */;
+  let obj = require(9806) /* VoiceMessageIcon */;
   const previewableMedia = obj.usePreviewableMedia(message);
   if (0 === previewableMedia.length) {
     return null;

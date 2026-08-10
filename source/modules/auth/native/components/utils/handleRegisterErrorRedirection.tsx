@@ -1,10 +1,10 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15131
+// Function ID: 15132
 // Name: getRedirectStepForErrorKey
-// Dependencies: [15082, 676, 691, 8484, 15080, 15089, 2]
+// Dependencies: [15084, 676, 691, 8484, 15082, 15091, 2]
 // Exports: default
 
-// Module 15129 (getRedirectStepForErrorKey)
+// Module 15131 (getRedirectStepForErrorKey)
 import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes";
 import { AbortCodes } from "ME";
 
@@ -36,7 +36,7 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code) {
   if (null == importDefault(8484)("date_of_birth", code)) {
     const _Number = Number;
     if (Number(code.code) !== AbortCodes.UNDER_MINIMUM_AGE) {
-      const registrationSteps = require(15080) /* headerTitle */.getRegistrationSteps();
+      const registrationSteps = require(15082) /* headerTitle */.getRegistrationSteps();
       const obj8 = registrationSteps[Symbol.iterator]();
       while (obj8 !== undefined) {
         let tmp6 = table;
@@ -68,7 +68,7 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code) {
               let items1 = [tmp14, ];
               let tmp23 = require;
               let tmp24 = tmp11;
-              let obj3 = require(15089) /* trackRegTransition */;
+              let obj3 = require(15091) /* trackRegTransition */;
               items1[1] = obj3.getCommonErrorDetails(arg2.error_code);
               obj[2] = items1;
               let tmp25 = arg1(obj);
@@ -87,10 +87,10 @@ export default function handleRegisterErrorRedirection(navigate, arg1, code) {
         obj = { step: null, actionType: null, details: null };
         obj[0] = arg3;
         obj[1] = constants2.RESPONSE_ERROR;
-        const items2 = [require(15089) /* trackRegTransition */.getCommonErrorDetails(code.error_code)];
+        const items2 = [require(15091) /* trackRegTransition */.getCommonErrorDetails(code.error_code)];
         obj[2] = items2;
         arg1(obj);
-        const obj5 = require(15089) /* trackRegTransition */;
+        const obj5 = require(15091) /* trackRegTransition */;
       }
     }
   }

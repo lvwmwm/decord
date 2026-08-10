@@ -1,10 +1,10 @@
-// Module ID: 12517
-// Function ID: 12518
+// Module ID: 12519
+// Function ID: 12520
 // Name: FlatFriendButton
-// Dependencies: [19, 17, 3938, 676, 21, 4303, 712, 4714, 5728, 8788, 12338, 589, 4146, 12518, 4241, 1236, 11976, 9243, 9551, 4271, 4509, 4313, 12520, 7751, 4800, 8398, 12521, 2]
+// Dependencies: [19, 17, 3938, 676, 21, 4303, 712, 4714, 5728, 8788, 12340, 589, 4146, 12520, 4241, 1236, 11977, 9243, 9551, 4271, 4509, 4313, 12522, 7751, 4800, 8398, 12523, 2]
 // Exports: default
 
-// Module 12517 (FlatFriendButton)
+// Module 12519 (FlatFriendButton)
 import "ACTION_SHEET_HEIGHT_HALF";
 import { View } from "handleRelationshipAddError";
 import upsertRelationship from "upsertRelationship";
@@ -55,7 +55,7 @@ function FriendRequestButton(user) {
     newestAnalyticsLocation = trackUserProfileAction(5728)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let tmp3Result = tmp3(12338);
+  let tmp3Result = tmp3(12340);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   tmp3Result = tmp3(589);
   const items = [upsertRelationship];
@@ -69,7 +69,7 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(12518).UserClockIcon;
+          let UserPlusIcon = tmp3(12520).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4241).UserPlusIcon;
         }
@@ -101,8 +101,8 @@ function FriendRequestButton(user) {
               callback({ action: "CANCEL_FRIEND_REQUEST" });
               outer1_1(outer1_2[17]).cancelFriendRequest(id.id, closure_2);
             };
-            const result = user(11976).confirmCancelFriendRequest(obj);
-            const obj3 = user(11976);
+            const result = user(11977).confirmCancelFriendRequest(obj);
+            const obj3 = user(11977);
           } else {
             trackUserProfileAction({ action: "SEND_FRIEND_REQUEST" });
             obj = trackUserProfileAction(9243);

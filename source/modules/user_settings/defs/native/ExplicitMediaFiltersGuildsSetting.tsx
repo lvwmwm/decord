@@ -1,9 +1,9 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14077
+// Function ID: 14078
 // Name: pressable
-// Dependencies: [8082, 8036, 14069, 14065, 7059, 5915, 1236, 14066, 1306, 10446, 2]
+// Dependencies: [8082, 8036, 14071, 14067, 7059, 5915, 1236, 14068, 1306, 10447, 2]
 
-// Module 14075 (pressable)
+// Module 14077 (pressable)
 import { MobileSetting } from "MobileSetting";
 import createToggle from "createToggle";
 
@@ -16,7 +16,7 @@ const pressable = createToggle.createPressable({
     return MobileSetting.SENSITIVE_CONTENT_FILTERS;
   },
   useTrailing: function useObscuredContentGuildsSettingValue() {
-    const obj = require(14065) /* useExplicitContentSettingOrDefault */;
+    const obj = require(14067) /* useExplicitContentSettingOrDefault */;
     return require(7059) /* redactionSettingToRenderedString */.redactionSettingToRenderedString(obj.useExplicitContentSettingOrDefault().explicitContentGuilds)();
   },
   onPress: function onObscuredContentGuildsOnPress() {
@@ -34,7 +34,7 @@ const pressable = createToggle.createPressable({
     const items = [require(1306) /* create */.ExplicitContentRedaction.BLOCK];
     obj[3] = items;
     obj[4] = obj.getExplicitContentSettingOrDefault().explicitContentGuilds;
-    const result = require(14066) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
+    const result = require(14068) /* handleSensitiveMediaFilterPress */.handleSensitiveMediaFilterPress(obj);
   },
   useSearchTerms: function getSearchTerms() {
     const intl = require(1236) /* getSystemLocale */.intl;

@@ -1,10 +1,10 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15950
+// Function ID: 15951
 // Name: useMessageRequestTimestampText
-// Dependencies: [4315, 11, 11952, 589, 3883, 7240, 2]
+// Dependencies: [4315, 11, 11953, 589, 3883, 7240, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 15941 (useMessageRequestTimestampText)
+// Module 15950 (useMessageRequestTimestampText)
 import generateOldThreadCutoff from "generateOldThreadCutoff";
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
   let lastMessageId;
   let message;
   const _require = channel;
-  let obj = _require(11952);
+  let obj = _require(11953);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: null };
   const items = [generateOldThreadCutoff];
@@ -43,7 +43,7 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
   let lastMessageId;
   let message;
   const _require = channel;
-  let obj = _require(11952);
+  let obj = _require(11953);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: null };
   const items = [generateOldThreadCutoff];

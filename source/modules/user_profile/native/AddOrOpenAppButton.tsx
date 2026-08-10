@@ -1,10 +1,10 @@
-// Module ID: 12270
-// Function ID: 12271
+// Module ID: 12272
+// Function ID: 12273
 // Name: AddAppButton
-// Dependencies: [5, 32, 19, 8339, 676, 1479, 21, 11532, 10619, 4271, 5756, 11519, 4001, 1467, 7955, 9432, 1236, 4714, 712, 5729, 4313, 4166, 1607, 698, 2]
+// Dependencies: [5, 32, 19, 8339, 676, 1479, 21, 11533, 10620, 4271, 5756, 11520, 4001, 1467, 7955, 9432, 1236, 4714, 712, 5729, 4313, 4166, 1607, 698, 2]
 // Exports: default
 
-// Module 12270 (AddAppButton)
+// Module 12272 (AddAppButton)
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON";
 import _slicedToArray from "_slicedToArray";
 import fetchApplication from "fetchApplication";
@@ -216,7 +216,7 @@ export default function AddOrOpenAppButton(arg0) {
   let guildId;
   ({ application, channel } = arg0);
   ({ botUserId, guildId } = arg0);
-  if (importDefault(11532)(channel)) {
+  if (importDefault(11533)(channel)) {
     if (null != channel) {
       const obj = { profileApplication: null, botUserId: null, channel: null };
       obj[0] = application;

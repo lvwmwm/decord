@@ -1,10 +1,10 @@
-// Module ID: 15765
-// Function ID: 15766
+// Module ID: 15773
+// Function ID: 15774
 // Name: useSearchMessages
-// Dependencies: [5899, 11710, 589, 11711, 2]
+// Dependencies: [5899, 11711, 589, 11712, 2]
 // Exports: useSearchMessages
 
-// Module 15765 (useSearchMessages)
+// Module 15773 (useSearchMessages)
 import handleReaction from "handleReaction";
 import prototype from "prototype";
 

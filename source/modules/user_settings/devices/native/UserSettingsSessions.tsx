@@ -1,10 +1,10 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14195
+// Function ID: 14196
 // Name: UserSettingsSessions
-// Dependencies: [32, 19, 17, 1903, 676, 21, 4303, 5236, 712, 13980, 589, 14194, 4712, 5767, 1236, 5374, 5328, 4299, 1351, 4846, 1297, 8027, 1480, 11634, 7593, 14195, 12180, 10944, 8487, 14196, 2]
+// Dependencies: [32, 19, 17, 1903, 676, 21, 4303, 5236, 712, 13982, 589, 14196, 4712, 5767, 1236, 5374, 5328, 4299, 1351, 4846, 1297, 8027, 1480, 11635, 7593, 14197, 12182, 10945, 8487, 14198, 2]
 // Exports: default
 
-// Module 14193 (UserSettingsSessions)
+// Module 14195 (UserSettingsSessions)
 import _slicedToArray from "_slicedToArray";
 import PressableBase from "PressableBase";
 import get_ActivityIndicator from "Text";
@@ -29,7 +29,7 @@ function UserSettingsSessions() {
   let otherSessions;
   let tmp7;
   const tmp = createCacheKey();
-  let obj = otherSessions(13980);
+  let obj = otherSessions(13982);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   let obj1 = otherSessions(589);
@@ -150,15 +150,15 @@ function SessionInfo(session) {
             if ("horizon os" === trimmed) {
               let obj = { text: null, iconSource: null, IconComponent: null };
               obj[0] = os;
-              obj[1] = importDefault(10944);
-              obj[2] = session(14196).VrHeadsetIcon;
+              obj[1] = importDefault(10945);
+              obj[2] = session(14198).VrHeadsetIcon;
               let tmp9 = session;
               let tmp10 = importDefault;
             } else {
               obj = { text: null, iconSource: null, IconComponent: null };
               obj[0] = os;
-              obj[1] = importDefault(14195);
-              obj[2] = session(12180).ScreenIcon;
+              obj[1] = importDefault(14197);
+              obj[2] = session(12182).ScreenIcon;
               tmp9 = session;
               tmp10 = importDefault;
             }
@@ -166,7 +166,7 @@ function SessionInfo(session) {
         }
         obj = { text: null, iconSource: null, IconComponent: null };
         obj[0] = os;
-        obj[1] = importDefault(10944);
+        obj[1] = importDefault(10945);
         obj[2] = session(8487).MobilePhoneIcon;
         tmp9 = session;
         tmp10 = importDefault;
@@ -174,8 +174,8 @@ function SessionInfo(session) {
       let formatDateResult = null;
       ({ text, iconSource, IconComponent } = obj);
       if (!current) {
-        formatDateResult = tmp9(13980).formatDate(session.approx_last_used_time);
-        const tmp9Result = tmp9(13980);
+        formatDateResult = tmp9(13982).formatDate(session.approx_last_used_time);
+        const tmp9Result = tmp9(13982);
       }
       const items = [text, platform];
       const found = items.filter(tmp9(1351).isNotNullish);
@@ -255,8 +255,8 @@ function SessionInfo(session) {
   const obj16 = { text: null, iconSource: null, IconComponent: null };
   const intl = session(1236).intl;
   obj16[0] = intl.string(session(1236).t.cDHCNY);
-  obj16[1] = importDefault(14195);
-  obj16[2] = session(12180).ScreenIcon;
+  obj16[1] = importDefault(14197);
+  obj16[2] = session(12182).ScreenIcon;
   tmp9 = session;
   tmp10 = importDefault;
   obj = obj16;
@@ -266,7 +266,7 @@ function UnknownLegacySessionsInfo() {
   _require = obj.useNavigation();
   obj = { icon: null, label: null, subLabel: null };
   obj = { variant: "translucent", source: null };
-  obj[1] = importDefault(11634);
+  obj[1] = importDefault(11635);
   obj[0] = callback2(_require(5374).TableRow.Icon, obj);
   const intl = _require(1236).intl;
   obj[1] = intl.string(_require(1236).t.iUa0sn);

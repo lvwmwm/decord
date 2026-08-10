@@ -1,9 +1,9 @@
-// Module ID: 10138
-// Function ID: 10139
+// Module ID: 10139
+// Function ID: 10140
 // Name: BalanceWidgetPill
-// Dependencies: [2, 10139, 10149, 10147, 10150]
+// Dependencies: [2, 10140, 10150, 10148, 10151]
 
-// Module 10138 (BalanceWidgetPill)
+// Module 10139 (BalanceWidgetPill)
 const result = require("BalanceWidgetPillButton").fileFinishedImporting("modules/virtual_currency/native/index.tsx");
 
 export const BalanceWidgetPill = require("BalanceWidgetPill").BalanceWidgetPill;

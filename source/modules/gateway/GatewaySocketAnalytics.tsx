@@ -1,10 +1,10 @@
-// Module ID: 12914
-// Function ID: 12915
+// Module ID: 12916
+// Function ID: 12917
 // Name: prettyPrintTrace_
 // Dependencies: [109, 1903, 676, 10, 9, 698, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 12914 (prettyPrintTrace_)
+// Module 12916 (prettyPrintTrace_)
 import _objectWithoutProperties from "_objectWithoutProperties";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";

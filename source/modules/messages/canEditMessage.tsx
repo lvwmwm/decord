@@ -1,10 +1,10 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 11144
+// Function ID: 11145
 // Name: canEditMessage
 // Dependencies: [676, 5890, 4523, 5918, 2]
 // Exports: default
 
-// Module 11143 (canEditMessage)
+// Module 11144 (canEditMessage)
 import ME from "ME";
 
 let c3;

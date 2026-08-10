@@ -1,10 +1,10 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14171
+// Function ID: 14172
 // Name: FamilyCenterPendingLinkRow
-// Dependencies: [19, 17, 6997, 21, 4303, 712, 7337, 11326, 1236, 2284, 4299, 7338, 4846, 4509, 14170, 1988, 1297, 9877, 14171, 14168, 14172, 14163, 2]
+// Dependencies: [19, 17, 6997, 21, 4303, 712, 7337, 11327, 1236, 2284, 4299, 7338, 4846, 4509, 14172, 1988, 1297, 9878, 14173, 14170, 14174, 14165, 2]
 // Exports: default
 
-// Module 14169 (FamilyCenterPendingLinkRow)
+// Module 14171 (FamilyCenterPendingLinkRow)
 import "registerAsset";
 import { View } from "registerAsset";
 import { UserLinkStatus } from "items";
@@ -41,7 +41,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj[3] = tmp.actionButton;
       const obj1 = { size: null, disableColor: true, source: null };
       obj1[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj1[2] = tmp2(14168);
+      obj1[2] = tmp2(14170);
       obj[4] = closure_5(tmp5(1297).Icon, obj1);
       let tmp8Result = tmp17(tmp5(4846).PressableOpacity, obj);
       let tmp14 = tmp17;
@@ -67,7 +67,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         obj[3] = items;
         const obj3 = { size: null, disableColor: true, source: null };
         obj3[0] = tmp5(1297).Icon.Sizes.SMALL;
-        obj3[2] = tmp2(9877);
+        obj3[2] = tmp2(9878);
         obj[4] = closure_5(tmp5(1297).Icon, obj3);
         tmp12Result = tmp12(tmp5(4846).PressableOpacity, obj);
       }
@@ -91,7 +91,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       obj5[3] = tmp.actionButton;
       const obj7 = { size: null, disableColor: true, source: null };
       obj7[0] = tmp5(1297).Icon.Sizes.SMALL;
-      obj7[2] = tmp2(14168);
+      obj7[2] = tmp2(14170);
       obj5[4] = tmp14(tmp5(1297).Icon, obj7);
       items1[1] = tmp14(tmp5(4846).PressableOpacity, obj5);
       obj4[0] = items1;
@@ -102,7 +102,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
     const obj8 = { otherUser: null, actions: null };
     obj8[0] = str;
     obj8[1] = tmp8Result;
-    return tmp14(tmp2(14163), obj8);
+    return tmp14(tmp2(14165), obj8);
   }
   tmp4 = importDefault(7338)();
 }
@@ -124,7 +124,7 @@ export default function FamilyCenterPendingLinks() {
   const tmp = createCacheKey();
   let obj = require(7337) /* useUserIdsForLinkStatus */;
   const usersForLinkStatus = obj.useUsersForLinkStatus(UserLinkStatus.PENDING);
-  require(11326) /* useAgeSpecificText */;
+  require(11327) /* useAgeSpecificText */;
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { count: usersForLinkStatus.length };
   intl.formatToPlainString(importDefault(2284).IkAgkG, obj);

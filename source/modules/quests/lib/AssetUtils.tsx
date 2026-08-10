@@ -1,10 +1,10 @@
-// Module ID: 10471
-// Function ID: 10472
+// Module ID: 10472
+// Function ID: 10473
 // Name: resolveAsset
-// Dependencies: [5161, 676, 10472, 10473, 10474, 10475, 10476, 7165, 10483, 10484, 5168, 1467, 1877, 2]
+// Dependencies: [5161, 676, 10473, 10474, 10475, 10476, 10477, 7165, 10484, 10485, 5168, 1467, 1877, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 10471 (resolveAsset)
+// Module 10472 (resolveAsset)
 import QuestsExperimentLocations from "QuestsExperimentLocations";
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_5 } from "ME";
 
@@ -200,7 +200,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
     flag = false;
     flag2 = false;
   } else if (tmp.REWARD === VIDEO_PLAYER_TRANSCRIPT) {
-    let obj1 = require(10476) /* _getDefaultRewardName */;
+    let obj1 = require(10477) /* _getDefaultRewardName */;
     const questPrimaryReward = obj1.getQuestPrimaryReward(quest);
     if (questPrimaryReward.type === require(7165) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       let tmp25;
@@ -213,11 +213,11 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
         obj1 = obj;
       } else if (flag) {
         obj = { url: null, mimetype: "video/mp4", isAnimated: true };
-        obj[0] = importDefault(10483);
+        obj[0] = importDefault(10484);
         obj1 = obj;
       } else {
         obj1 = { url: null, mimetype: "video/webm", isAnimated: true };
-        obj1[0] = importDefault(10484);
+        obj1[0] = importDefault(10485);
       }
       return obj1;
     } else {
@@ -226,7 +226,7 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_TRANSCRI
       flag2 = false;
     }
   } else if (tmp.REWARD_IMAGE === VIDEO_PLAYER_TRANSCRIPT) {
-    obj = require(10476) /* _getDefaultRewardName */;
+    obj = require(10477) /* _getDefaultRewardName */;
     const questPrimaryReward1 = obj.getQuestPrimaryReward(quest);
     if (questPrimaryReward1.type === require(7165) /* QuestRewardTypes */.QuestRewardTypes.VIRTUAL_CURRENCY) {
       return null;

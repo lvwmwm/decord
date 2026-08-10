@@ -1,10 +1,10 @@
-// Module ID: 12936
-// Function ID: 12937
+// Module ID: 12938
+// Function ID: 12939
 // Name: getIsPaused
 // Dependencies: [2]
 // Exports: getIsPaused, setIsPaused
 
-// Module 12936 (getIsPaused)
+// Module 12938 (getIsPaused)
 let c0 = false;
 const result = require("set").fileFinishedImporting("modules/gateway/PauseGatewaySocket.tsx");
 

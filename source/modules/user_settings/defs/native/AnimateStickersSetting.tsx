@@ -1,9 +1,9 @@
-// Module ID: 14603
-// Function ID: 14604
+// Module ID: 14605
+// Function ID: 14606
 // Name: radio
-// Dependencies: [19, 8082, 3977, 3974, 1236, 10446, 2]
+// Dependencies: [19, 8082, 3977, 3974, 1236, 10447, 2]
 
-// Module 14603 (radio)
+// Module 14605 (radio)
 import noop from "noop";
 import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID";
 import createToggle from "createToggle";

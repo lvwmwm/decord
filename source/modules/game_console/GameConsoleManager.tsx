@@ -1,9 +1,9 @@
-// Module ID: 16428
-// Function ID: 16429
+// Module ID: 16437
+// Function ID: 16438
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4351, 4375, 4318, 4319, 4317, 10505, 4364, 3, 38, 9155, 10876, 5261, 4188, 10878, 1351, 4642, 1236, 16429, 10881, 2]
+// Dependencies: [5, 1218, 4351, 4375, 4318, 4319, 4317, 10506, 4364, 3, 38, 9155, 10877, 5261, 4188, 10879, 1351, 4642, 1236, 16438, 10882, 2]
 
-// Module 16428 (syncLocalState)
+// Module 16437 (syncLocalState)
 import updateVoiceState from "updateVoiceState";
 import fetchFingerprint from "fetchFingerprint";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -238,7 +238,7 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(10878);
+      let obj = callback(10879);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;

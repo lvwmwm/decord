@@ -1,10 +1,10 @@
-// Module ID: 12559
-// Function ID: 12560
+// Module ID: 12561
+// Function ID: 12562
 // Name: getSavedMessagesForType
-// Dependencies: [32, 19, 10272, 8381, 12560, 589, 1351, 2]
+// Dependencies: [32, 19, 10273, 8381, 12562, 589, 1351, 2]
 // Exports: default
 
-// Module 12559 (getSavedMessagesForType)
+// Module 12561 (getSavedMessagesForType)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getTimeSafe from "getTimeSafe";
@@ -95,7 +95,7 @@ export default function useSavedMessagesForPage() {
       outer2_5.removeChangeListener(handleChange);
     };
   }, items);
-  importDefault(12560)();
+  importDefault(12562)();
   let tmp3 = callback(React.useState(() => {
     if (ALL(_undefined2[3]).SavedMessageSortTypes.BOOKMARK === ALL) {
       let messageBookmarks = outer1_5.getMessageBookmarks();

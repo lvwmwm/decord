@@ -1,10 +1,10 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 12828
+// Function ID: 12829
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 5158, 5397, 5396, 1236, 4299, 4293, 4239, 7646, 12827, 4643, 12828, 1988, 7644, 4714, 4271, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 5158, 5397, 5396, 1236, 4299, 4293, 4239, 7646, 12829, 4643, 12830, 1988, 7644, 4714, 4271, 2]
 // Exports: default
 
-// Module 12826 (TermsAndConditionsActionSheet)
+// Module 12828 (TermsAndConditionsActionSheet)
 import _slicedToArray from "_slicedToArray";
 import fetchActivePromotions from "fetchActivePromotions";
 import get_ActivityIndicator from "OutboundPromotionClaimAlert";

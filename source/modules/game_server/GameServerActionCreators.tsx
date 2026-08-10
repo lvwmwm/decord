@@ -1,10 +1,10 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11843
+// Function ID: 11844
 // Name: fetchGameServerCatalog
-// Dependencies: [1975, 1903, 11843, 4192, 676, 709, 11844, 4541, 530, 11846, 4213, 698, 11847, 11845, 2]
+// Dependencies: [1975, 1903, 11844, 4192, 676, 709, 11845, 4541, 530, 11847, 4213, 698, 11848, 11846, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer
 
-// Module 11842 (fetchGameServerCatalog)
+// Module 11843 (fetchGameServerCatalog)
 import _getSystemLocale from "_getSystemLocale";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import handleGameServerUpsert from "handleGameServerUpsert";
@@ -213,7 +213,7 @@ export const fetchGameServerRegions = function fetchGameServerRegions(arg0) {
     let obj = callback(709);
     obj = { type: "GAME_SERVER_FETCH_REGIONS_SUCCESS", regions: null };
     body = body.body;
-    const mapped = body.map(callback(11847));
+    const mapped = body.map(callback(11848));
     obj[1] = mapped.sort((name, name2) => {
       name = name.name;
       return name.localeCompare(name2.name);
@@ -228,7 +228,7 @@ export const fetchMyGameServerRegions = function fetchMyGameServerRegions() {
     let obj = callback(709);
     obj = { type: "GAME_SERVER_FETCH_REGIONS_SUCCESS", regions: null, creationDisabled: null };
     const regions = body.body.regions;
-    const mapped = regions.map(callback(11847));
+    const mapped = regions.map(callback(11848));
     obj[1] = mapped.sort((name, name2) => {
       name = name.name;
       return name.localeCompare(name2.name);
@@ -257,10 +257,10 @@ export const optimisticallyMarkGameServerResizing = function optimisticallyMarkG
   const found = gameServers.find((subscription_id) => subscription_id.subscription_id === closure_0);
   if (null != found) {
     let obj = importDefault(709);
-    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "relative" };
+    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: 600 };
     obj = {};
     const merged = Object.assign(found);
-    obj.status = _require(11845).GameServerStatus.STARTING;
+    obj.status = _require(11846).GameServerStatus.STARTING;
     obj[2] = obj;
     obj.dispatch(obj);
   }
@@ -273,7 +273,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
     let resolved = Promise.resolve();
   } else {
     let obj = importDefault(709);
-    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: "relative" };
+    obj = { type: "GAME_SERVER_UPDATE", guildId: "Array", gameServer: 600 };
     obj = {};
     const merged = Object.assign(found);
     obj.name = name;

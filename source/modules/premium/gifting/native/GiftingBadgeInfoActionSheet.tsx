@@ -1,10 +1,10 @@
-// Module ID: 10039
-// Function ID: 10040
+// Module ID: 10040
+// Function ID: 10041
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 4295, 8790, 676, 21, 4303, 712, 1609, 589, 8786, 698, 5397, 4299, 1236, 2380, 10040, 2]
+// Dependencies: [19, 17, 4295, 8790, 676, 21, 4303, 712, 1609, 589, 8786, 698, 5397, 4299, 1236, 2380, 10041, 2]
 // Exports: default
 
-// Module 10039 (GiftingBadgeInfoActionSheet)
+// Module 10040 (GiftingBadgeInfoActionSheet)
 import noop from "noop";
 import { View } from "set";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

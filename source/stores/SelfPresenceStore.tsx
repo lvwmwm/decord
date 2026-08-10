@@ -1,7 +1,7 @@
 // Module ID: 4996
 // Function ID: 4997
 // Name: filterPlayingActivities
-// Dependencies: [4997, 1340, 4336, 5128, 4339, 10435, 4390, 4318, 676, 4348, 3974, 1384, 9654, 659, 12, 589, 709, 2]
+// Dependencies: [4997, 1340, 4336, 5128, 4339, 10436, 4390, 4318, 676, 4348, 3974, 1384, 9654, 659, 12, 589, 709, 2]
 
 // Module 4996 (filterPlayingActivities)
 import upsertAccount from "upsertAccount";

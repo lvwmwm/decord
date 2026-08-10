@@ -1,10 +1,10 @@
-// Module ID: 14142
-// Function ID: 14143
+// Module ID: 14144
+// Function ID: 14145
 // Name: UserRow
 // Dependencies: [19, 1903, 21, 4303, 7052, 5374, 4146, 1297, 5764, 4299, 1236, 2284, 5767, 2]
 // Exports: default
 
-// Module 14142 (UserRow)
+// Module 14144 (UserRow)
 import "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14086
+// Function ID: 14087
 // Name: useDerivedDmSpamFilterSettingValue
 // Dependencies: [1903, 3976, 3974, 589, 3980, 3987, 1306, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 14084 (useDerivedDmSpamFilterSettingValue)
+// Module 14086 (useDerivedDmSpamFilterSettingValue)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items";
 

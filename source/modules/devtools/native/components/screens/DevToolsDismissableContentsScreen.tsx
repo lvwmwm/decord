@@ -1,10 +1,10 @@
-// Module ID: 14936
-// Function ID: 14937
+// Module ID: 14938
+// Function ID: 14939
 // Name: DismissableContentsEmpty
-// Dependencies: [32, 19, 17, 1362, 21, 4303, 712, 1358, 14937, 5768, 5767, 9718, 5374, 1355, 4262, 5381, 14938, 5992, 4299, 8716, 5229, 1609, 10808, 589, 14255, 14256, 7745, 2]
+// Dependencies: [32, 19, 17, 1362, 21, 4303, 712, 1358, 14939, 5768, 5767, 9719, 5374, 1355, 4262, 5381, 14940, 5992, 4299, 8716, 5229, 1609, 10809, 589, 14257, 14258, 7745, 2]
 // Exports: default
 
-// Module 14936 (DismissableContentsEmpty)
+// Module 14938 (DismissableContentsEmpty)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "getSearchEmptySource";
 import { View } from "SearchField";
@@ -48,7 +48,7 @@ let closure_11 = importAllResult.memo((content) => {
   let start;
   const label = content.content;
   ({ start, end } = content);
-  ({ isDismissed, handleToggleDismissState } = importDefault(14937)(require(1358) /* DismissibleContent */.DismissibleContent[label]));
+  ({ isDismissed, handleToggleDismissState } = importDefault(14939)(require(1358) /* DismissibleContent */.DismissibleContent[label]));
   return callback2(require(5768) /* TableSwitchRow */.TableSwitchRow, { start, end, onValueChange, value, label });
 });
 let closure_12 = importAllResult.memo((arg0) => {
@@ -64,11 +64,11 @@ let closure_12 = importAllResult.memo((arg0) => {
   obj = { style: tmp.headerSection, children: null };
   obj = { title: "Global Overrides", hasIcons: false, children: null };
   const obj1 = { onValueChange: null, value: null, label: "Daily limit", subLabel: "When enabled, bypass the daily limit of dismissible content shown" };
-  obj1[0] = require(9718) /* handleDCShownToUser */.overrideDismissibleContentFramework;
+  obj1[0] = require(9719) /* handleDCShownToUser */.overrideDismissibleContentFramework;
   obj1[1] = dailyCapOverridden;
   const items = [callback2(require(5768) /* TableSwitchRow */.TableSwitchRow, obj1), , ];
   const obj2 = { onValueChange: null, value: null, label: "New user account minimum age", subLabel: "When enabled, bypass the minimum age requirement for new user accounts" };
-  obj2[0] = require(9718) /* handleDCShownToUser */.overrideNewUserMinAgeRequired;
+  obj2[0] = require(9719) /* handleDCShownToUser */.overrideNewUserMinAgeRequired;
   obj2[1] = newUserMinAgeRequiredOverridden;
   items[1] = callback2(require(5768) /* TableSwitchRow */.TableSwitchRow, obj2);
   items[2] = callback2(require(5768) /* TableSwitchRow */.TableSwitchRow, { onValueChange: onForceBountiesSwipeUpNuxChange, value: forceBountiesSwipeUpNux, label: "Force bounties swipe-up NUX", subLabel: "When enabled, treat bounties swipe-up NUX as shown so scroll affordances always appear. Reopen the bounties modal after toggling." });
@@ -89,7 +89,7 @@ let closure_12 = importAllResult.memo((arg0) => {
   items2[1] = callback2(require(5374) /* TableRowInner */.TableRow, obj6);
   const obj7 = { label: "Dismiss all dismissible contents", onPress: null, icon: null, trailing: null };
   obj7[1] = require(1355) /* updateUserGuildSettings */.checkAllDismissedContents;
-  obj7[2] = callback2(require(14938) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
+  obj7[2] = callback2(require(14940) /* DoubleCheckmarkIcon */.DoubleCheckmarkIcon, {});
   obj7[3] = callback2(require(5381) /* TableRowArrow */.TableRowArrow, {});
   items2[2] = callback2(require(5374) /* TableRowInner */.TableRow, obj7);
   obj4[2] = items2;
@@ -109,7 +109,7 @@ export default function DevToolsDismissableContentsScreen() {
   const tmp = callback4();
   const ref = first.useRef(null);
   const importDefault = first.useRef(0);
-  let obj = ref(10808);
+  let obj = ref(10809);
   let tmp2 = importDefault(1609)();
   [dependencyMap, tmp5] = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
   callback = tmp5;
@@ -160,7 +160,7 @@ export default function DevToolsDismissableContentsScreen() {
   const dailyCapOverridden = stateFromStoresObject.dailyCapOverridden;
   const newUserMinAgeRequiredOverridden = stateFromStoresObject.newUserMinAgeRequiredOverridden;
   let tmp4 = callback(obj.useLocalStorageState("devtools-dc-search", ""), 2);
-  let tmp9 = callback(ref(14255).useForceBountiesSwipeUpNux(), 2);
+  let tmp9 = callback(ref(14257).useForceBountiesSwipeUpNux(), 2);
   const first2 = tmp9[0];
   callback4 = tmp11;
   const items1 = [tmp9[1]];

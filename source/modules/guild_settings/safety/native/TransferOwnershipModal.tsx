@@ -1,10 +1,10 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11245
+// Function ID: 11246
 // Name: closeModal
-// Dependencies: [5, 19, 11245, 21, 11243, 503, 1236, 5270, 11246, 8464, 9021, 4001, 5783, 2]
+// Dependencies: [5, 19, 11246, 21, 11244, 503, 1236, 5270, 11247, 8464, 9021, 4001, 5783, 2]
 // Exports: default
 
-// Module 11244 (closeModal)
+// Module 11245 (closeModal)
 import encodeProperties from "encodeProperties";
 import noop from "noop";
 import TransferOwnershipModalScenes from "TransferOwnershipModalScenes";
@@ -14,7 +14,7 @@ let c5;
 let closure_6;
 const require = arg1;
 function closeModal() {
-  importDefault(11243).close();
+  importDefault(11244).close();
 }
 ({ TransferOwnershipModalScenes: c5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
 let result = require("TransferOwnershipModalScenes").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");
@@ -67,8 +67,8 @@ export default function TransferOwnershipModal(guild) {
         return applyArgumentsResult;
       };
       obj[1] = function onSuccess() {
-        callback2(11243).close();
-        const obj = callback2(11243);
+        callback2(11244).close();
+        const obj = callback2(11244);
         callback2(9021).close();
         const obj2 = callback2(9021);
         const result = callback(4001).showTransferOwnershipSuccess();

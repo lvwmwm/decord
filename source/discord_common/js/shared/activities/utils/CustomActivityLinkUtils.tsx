@@ -1,10 +1,10 @@
-// Module ID: 12217
-// Function ID: 12218
+// Module ID: 12219
+// Function ID: 12220
 // Name: CustomLinkType
 // Dependencies: [32, 2]
 // Exports: decodeCustomActivityLink
 
-// Module 12217 (CustomLinkType)
+// Module 12219 (CustomLinkType)
 import _slicedToArray from "_slicedToArray";
 
 let obj = { MANAGED: 0, [0]: "MANAGED", QUICK: 1, [1]: "QUICK" };

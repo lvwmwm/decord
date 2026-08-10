@@ -1,7 +1,7 @@
 // Module ID: 8354
 // Function ID: 8355
 // Name: getIsPrivate
-// Dependencies: [32, 5, 19, 5921, 1218, 1372, 4640, 4521, 7146, 1235, 676, 4296, 5889, 7142, 8355, 1236, 8356, 11, 530, 7236, 8357, 7143, 1384, 4852, 8358, 7226, 4498, 6917, 4642, 709, 4153, 687, 7213, 12575, 2]
+// Dependencies: [32, 5, 19, 5921, 1218, 1372, 4640, 4521, 7146, 1235, 676, 4296, 5889, 7142, 8355, 1236, 8356, 11, 530, 7236, 8357, 7143, 1384, 4852, 8358, 7226, 4498, 6917, 4642, 709, 4153, 687, 7213, 12577, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
 // Module 8354 (getIsPrivate)
@@ -426,7 +426,7 @@ function _createThread_() {
                       throwTypeErrorResult = dependencyMap;
                       throwTypeErrorResult = lib;
                       throwTypeErrorResult = maybeRebuildState;
-                      throwTypeErrorResult = callback(12575)(lib.id, maybeRebuildState);
+                      throwTypeErrorResult = callback(12577)(lib.id, maybeRebuildState);
                     }
                   } else {
                     let obj8 = callback(4642);

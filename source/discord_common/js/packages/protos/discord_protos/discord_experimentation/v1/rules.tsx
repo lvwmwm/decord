@@ -622,7 +622,7 @@ class Filter$Type extends MessageType3 {
 }
 const prototype3 = Filter$Type.prototype;
 prototype3["create"] = function create(arr) {
-  let obj = { filter: { oneofKind: "sa" }, negate: false };
+  let obj = { filter: { oneofKind: "Promise" }, negate: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);
@@ -1802,7 +1802,7 @@ class ClientLocation_Location$Type extends MessageType13 {
 }
 const prototype13 = ClientLocation_Location$Type.prototype;
 prototype13["create"] = function create(arr) {
-  let obj = { location: { oneofKind: "sa" } };
+  let obj = { location: { oneofKind: "Promise" } };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, require(1307).MESSAGE_TYPE, obj);

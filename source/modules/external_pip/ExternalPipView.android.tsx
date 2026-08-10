@@ -1,10 +1,10 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16075
+// Function ID: 16076
 // Name: FreezeAfterLayoutPipView
-// Dependencies: [32, 19, 8862, 21, 16067, 9765, 16069, 2]
+// Dependencies: [32, 19, 8862, 21, 16076, 9766, 16078, 2]
 // Exports: default
 
-// Module 16066 (FreezeAfterLayoutPipView)
+// Module 16075 (FreezeAfterLayoutPipView)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import module_8862 from "module_8862";
@@ -25,7 +25,7 @@ function FreezeAfterLayoutPipView() {
       const freezeLock = state.requestFreezeLock({ lockEnabled: false, key: "external-pip" });
     }
   }, []);
-  return jsx(importDefault(16069), { onLayout });
+  return jsx(importDefault(16078), { onLayout });
 }
 const result = require("module_8862").fileFinishedImporting("modules/external_pip/ExternalPipView.android.tsx");
 

@@ -1,17 +1,17 @@
-// Module ID: 12018
-// Function ID: 12019
+// Module ID: 12019
+// Function ID: 12020
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 32, 19, 17, 1891, 12007, 21, 4303, 5267, 712, 589, 5369, 5263, 4202, 5779, 4299, 1236, 8465, 1297, 4714, 12008, 12017, 5270, 5783, 5716, 2]
+// Dependencies: [5, 32, 19, 17, 1891, 12008, 21, 4303, 5267, 712, 589, 5369, 5263, 4202, 5779, 4299, 1236, 8465, 1297, 4714, 12009, 12018, 5270, 5783, 5716, 2]
 // Exports: default
 
-// Module 12018 (GuildDirectoryNicknameUpsell)
+// Module 12019 (GuildDirectoryNicknameUpsell)
 import GuildPrompts from "GuildPrompts";
 import _slicedToArray from "_slicedToArray";
 import Button from "Button";
 import get_ActivityIndicator from "module_8465";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { GuildPrompts } from "GuildPrompts";
-import jsxProd from "module_12017";
+import jsxProd from "module_12018";
 import createCacheKey from "createCacheKey";
 
 let c10;

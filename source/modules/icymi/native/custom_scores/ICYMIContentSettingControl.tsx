@@ -1,13 +1,13 @@
-// Module ID: 15566
-// Function ID: 15567
+// Module ID: 15574
+// Function ID: 15575
 // Name: ContentSettingsControl
-// Dependencies: [32, 19, 17, 4499, 8898, 21, 4303, 712, 8912, 1236, 1297, 15567, 15568, 15569, 8956, 9141, 589, 15570, 4299, 5768, 4494, 2]
+// Dependencies: [32, 19, 17, 4499, 8898, 21, 4303, 712, 8912, 1236, 1297, 15575, 15576, 15577, 8956, 9141, 589, 15578, 4299, 5768, 4494, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 15566 (ContentSettingsControl)
+// Module 15574 (ContentSettingsControl)
 import _slicedToArray from "_slicedToArray";
 import TableSwitchRow from "TableSwitchRow";
-import { View } from "module_15570";
+import { View } from "module_15578";
 import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal";
 import filterStaffGuild from "filterStaffGuild";
 import jsxProd from "set";
@@ -29,7 +29,7 @@ function ContentSettingsControl(initialValue) {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[0] = intl.string(require(1236) /* getSystemLocale */.t.rdt65I);
   obj = { source: null, style: null };
-  obj[0] = importDefault(15567);
+  obj[0] = importDefault(15575);
   const items = [tmp.icon, ];
   let iconSelected = null;
   if (tmp3 === require(8912) /* generateHydrationId */.ICYMICustomScore.LESS) {
@@ -43,7 +43,7 @@ function ContentSettingsControl(initialValue) {
   const intl2 = tmp4(1236).intl;
   obj[0] = intl2.string(require(1236) /* getSystemLocale */.t.SnrG00);
   const obj1 = { source: null, style: null };
-  obj1[0] = importDefault(15568);
+  obj1[0] = importDefault(15576);
   const items2 = [tmp.icon, ];
   let iconSelected1 = null;
   if (tmp3 === require(8912) /* generateHydrationId */.ICYMICustomScore.DEFAULT) {
@@ -57,7 +57,7 @@ function ContentSettingsControl(initialValue) {
   const intl3 = tmp4(1236).intl;
   obj2[0] = intl3.string(require(1236) /* getSystemLocale */.t.Rxe3jF);
   const obj3 = { source: null, style: null };
-  obj3[0] = importDefault(15569);
+  obj3[0] = importDefault(15577);
   const items3 = [tmp.icon, ];
   let iconSelected2 = null;
   if (tmp3 === require(8912) /* generateHydrationId */.ICYMICustomScore.MORE) {

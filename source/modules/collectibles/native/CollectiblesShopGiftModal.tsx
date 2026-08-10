@@ -1,7 +1,7 @@
 // Module ID: 9577
 // Function ID: 9578
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7001, 676, 21, 9578, 8793, 8786, 589, 5728, 5748, 1884, 7000, 3960, 9579, 1236, 9580, 12138, 12141, 2]
+// Dependencies: [19, 7001, 676, 21, 9578, 8793, 8786, 589, 5728, 5748, 1884, 7000, 3960, 9579, 1236, 9580, 12140, 12143, 2]
 // Exports: default
 
 // Module 9577 (CollectiblesShopGiftModal)

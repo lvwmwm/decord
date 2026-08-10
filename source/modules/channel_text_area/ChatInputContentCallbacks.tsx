@@ -1,10 +1,10 @@
-// Module ID: 11385
-// Function ID: 11386
+// Module ID: 11386
+// Function ID: 11387
 // Name: tryUpdateSubscriptionForHereMention
 // Dependencies: [32, 19, 5897, 5927, 5903, 8353, 12, 2]
 // Exports: tryUpdateSubscriptionForHereMention, useHereMentionCallback
 
-// Module 11385 (tryUpdateSubscriptionForHereMention)
+// Module 11386 (tryUpdateSubscriptionForHereMention)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import getMemberListId from "getMemberListId";

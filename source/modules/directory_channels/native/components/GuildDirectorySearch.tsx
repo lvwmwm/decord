@@ -1,13 +1,13 @@
-// Module ID: 11673
-// Function ID: 11674
+// Module ID: 11674
+// Function ID: 11675
 // Name: DefaultState
-// Dependencies: [32, 19, 17, 1891, 11674, 676, 21, 4303, 712, 11677, 4299, 1236, 1297, 589, 11678, 11679, 1609, 11706, 11707, 5270, 5991, 11687, 11671, 698, 2]
+// Dependencies: [32, 19, 17, 1891, 11675, 676, 21, 4303, 712, 11678, 4299, 1236, 1297, 589, 11679, 11680, 1609, 11707, 11708, 5270, 5991, 11688, 11672, 698, 2]
 // Exports: default
 
-// Module 11673 (DefaultState)
+// Module 11674 (DefaultState)
 import _slicedToArray from "_slicedToArray";
 import HeaderBackImage from "HeaderBackImage";
-import get_ActivityIndicator from "module_11706";
+import get_ActivityIndicator from "module_11707";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getSearchState from "getSearchState";
 import ME from "ME";
@@ -27,7 +27,7 @@ function DefaultState() {
   const tmp = createCacheKey();
   const require = tmp;
   let obj = { style: tmp.emptyWrapper, children: null };
-  obj = { style: tmp.emptyStateImage, source: importDefault(11677) };
+  obj = { style: tmp.emptyStateImage, source: importDefault(11678) };
   const items = [callback(closure_7, obj), ];
   obj = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: null };
   const intl = require(1236) /* getSystemLocale */.intl;
@@ -47,7 +47,7 @@ function EmptyState(channel) {
   let obj = channel(589);
   const items = [createGuildRecordFromRust];
   importDefault = obj.useStateFromStores(items, () => outer1_9.getGuild(channel.getGuildId()));
-  let obj1 = channel(11678);
+  let obj1 = channel(11679);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1236).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -62,7 +62,7 @@ function EmptyState(channel) {
     formatResult = intl.string(tmp2(1236).t.vYyEnv);
   }
   obj = { style: tmp.emptyWrapper, children: null };
-  obj1 = { style: tmp.emptyStateImage, source: importDefault(11677) };
+  obj1 = { style: tmp.emptyStateImage, source: importDefault(11678) };
   const items1 = [callback(closure_7, obj1), , ];
   const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp2(1236).intl;

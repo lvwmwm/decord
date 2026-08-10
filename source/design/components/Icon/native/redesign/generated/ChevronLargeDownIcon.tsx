@@ -1,10 +1,10 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12865
+// Function ID: 12866
 // Name: ChevronLargeDownIcon
-// Dependencies: [19, 21, 712, 4004, 12864, 2]
+// Dependencies: [19, 21, 712, 4004, 12866, 2]
 // Exports: ChevronLargeDownIcon
 
-// Module 12863 (ChevronLargeDownIcon)
+// Module 12865 (ChevronLargeDownIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const ChevronLargeDownIcon = function ChevronLargeDownIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(12864) /* registerAsset */;
+  obj[0] = require(12866) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

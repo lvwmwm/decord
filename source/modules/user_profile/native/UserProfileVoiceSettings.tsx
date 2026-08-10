@@ -1,10 +1,10 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12320
+// Function ID: 12321
 // Name: UserVoiceSettings
-// Dependencies: [19, 17, 4749, 4351, 3929, 676, 505, 21, 4303, 8788, 589, 4488, 9228, 10852, 9155, 5775, 1236, 9186, 10871, 12319, 7709, 12321, 7714, 7793, 4299, 11976, 12210, 7967, 4271, 9213, 9209, 2]
+// Dependencies: [19, 17, 4749, 4351, 3929, 676, 505, 21, 4303, 8788, 589, 4488, 9228, 10853, 9155, 5775, 1236, 9186, 10872, 12321, 7709, 12323, 7714, 7793, 4299, 11977, 12212, 7967, 4271, 9213, 9209, 2]
 // Exports: default
 
-// Module 12318 (UserVoiceSettings)
+// Module 12320 (UserVoiceSettings)
 import "SoundboardSlashIcon";
 import { View } from "MicrophoneSlashIcon";
 import handleSoundCreateOrUpdate from "handleSoundCreateOrUpdate";
@@ -231,7 +231,7 @@ function CurrentUserVoiceSettings(channel) {
     if (stateFromStores) {
       let MicrophoneIcon = tmp2(9186).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(10871).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10872).MicrophoneIcon;
     }
     obj1 = { children: null };
     obj[1] = MicrophoneIcon;

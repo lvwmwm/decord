@@ -1,10 +1,10 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 10425
+// Function ID: 10426
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4303, 9398, 4299, 1236, 10425, 3222, 2]
+// Dependencies: [19, 17, 21, 4303, 9398, 4299, 1236, 10426, 3222, 2]
 // Exports: default
 
-// Module 10424 (WarningBox)
+// Module 10425 (WarningBox)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -27,7 +27,7 @@ function WarningBox(application) {
     let name = importDefault;
     let BMMo2K = dependencyMap;
     let obj = { look: null, style: null, children: null };
-    obj[0] = require(10425) /* InfoBox */.InfoBoxLooks.WARNING;
+    obj[0] = require(10426) /* InfoBox */.InfoBoxLooks.WARNING;
     obj[1] = tmp.warningBox;
     const intl = require(1236) /* getSystemLocale */.intl;
     if (mobileAccountLinkingDisabled) {
@@ -56,9 +56,9 @@ function WarningBox(application) {
       obj[2] = intl.format(tmp6(1236).t["3T0cpx"], {});
       tmp7 = obj;
     }
-    closure_4(importDefault(10425), tmp7);
+    closure_4(importDefault(10426), tmp7);
     const tmp3 = closure_4;
-    const tmp5 = importDefault(10425);
+    const tmp5 = importDefault(10426);
   }
 }
 ({ jsx: c4, jsxs: c5 } = jsxProd);

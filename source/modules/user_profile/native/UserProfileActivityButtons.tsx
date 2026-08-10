@@ -1,10 +1,10 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12309
+// Function ID: 12310
 // Name: JoinActivityButton
-// Dependencies: [5, 19, 1371, 1372, 4998, 4224, 1891, 10435, 3929, 3938, 1960, 4996, 4319, 676, 8903, 21, 4303, 712, 5728, 3919, 647, 12308, 12309, 7199, 4714, 1236, 7690, 10648, 4271, 11163, 9654, 1297, 8244, 11146, 3998, 12311, 8302, 4509, 4159, 7773, 4513, 5000, 1416, 10491, 6016, 8907, 11150, 1467, 8932, 2]
+// Dependencies: [5, 19, 1371, 1372, 4998, 4224, 1891, 10436, 3929, 3938, 1960, 4996, 4319, 676, 8903, 21, 4303, 712, 5728, 3919, 647, 12310, 12311, 7199, 4714, 1236, 7690, 10649, 4271, 11164, 9654, 1297, 8244, 11147, 3998, 12313, 8302, 4509, 4159, 7773, 4513, 5000, 1416, 10492, 6016, 8907, 11151, 1467, 8932, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 12307 (JoinActivityButton)
+// Module 12309 (JoinActivityButton)
 import handleInviteData from "handleInviteData";
 import "getEmbeddedActivityLocationChannelId";
 import participantFromServer from "participantFromServer";
@@ -111,8 +111,8 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let tmp3 = null;
   if (null != application) {
     tmp3 = null;
-    if (stateFromStores !== tmp(12309).ActivityJoinability.CANNOT_JOIN) {
-      if (stateFromStores === tmp(12309).ActivityJoinability.JOINED) {
+    if (stateFromStores !== tmp(12311).ActivityJoinability.CANNOT_JOIN) {
+      if (stateFromStores === tmp(12311).ActivityJoinability.JOINED) {
         const intl2 = tmp(1236).intl;
         let stringResult = intl2.string(tmp(1236).t.DPfdsq);
       } else {
@@ -121,7 +121,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
       }
       obj = { text: null, variant: "active", disabled: null, onPress: null };
       obj[0] = stringResult;
-      JOINED = tmp(12309).ActivityJoinability.JOINED;
+      JOINED = tmp(12311).ActivityJoinability.JOINED;
       obj[2] = stateFromStores === JOINED;
       obj[3] = function onPress() {
         onAction({ action: "PRESS_JOIN_BUTTON" });
@@ -242,7 +242,7 @@ export const WatchActivityButton = function WatchActivityButton(arg0) {
   let require;
   ({ activity, onAction: require } = arg0);
   let importDefault;
-  const tmp2 = importDefault(12311)(activity);
+  const tmp2 = importDefault(12313)(activity);
   importDefault = tmp2;
   let tmp3 = null;
   if (importDefault(8302)(activity)) {

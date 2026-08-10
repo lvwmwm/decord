@@ -1,10 +1,10 @@
-// Module ID: 10195
-// Function ID: 10196
+// Module ID: 10196
+// Function ID: 10197
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [1218, 1971, 1375, 9711, 1894, 589, 9719, 2]
+// Dependencies: [1218, 1971, 1375, 9711, 1894, 589, 9720, 2]
 // Exports: default
 
-// Module 10195 (useFavoritesGuildChannelActions)
+// Module 10196 (useFavoritesGuildChannelActions)
 import fetchFingerprint from "fetchFingerprint";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import initializeFromUserSettings from "initializeFromUserSettings";
@@ -48,7 +48,7 @@ export default function useFavoritesGuildChannelActions(channelId, FavoritesGuil
   if (tmp7) {
     tmp7 = !isFavoritesGuildSelected;
   }
-  const favoritesBetaTagDismissibleContent = tmp(9719).useFavoritesBetaTagDismissibleContent(tmp7);
+  const favoritesBetaTagDismissibleContent = tmp(9720).useFavoritesBetaTagDismissibleContent(tmp7);
   obj = { hasFavoritesAccess: hasAccess, canFavoriteChannel: result, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id, shouldShowBetaTag: favoritesBetaTagDismissibleContent.shouldShowBetaTag, dismissBetaTag: favoritesBetaTagDismissibleContent.dismissBetaTag };
   return obj;
 };

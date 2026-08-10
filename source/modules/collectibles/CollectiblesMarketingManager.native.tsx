@@ -1,9 +1,9 @@
-// Module ID: 13808
-// Function ID: 13809
+// Module ID: 13810
+// Function ID: 13811
 // Name: _initialize
 // Dependencies: [4302, 4482, 709, 7000, 7050, 2]
 
-// Module 13808 (_initialize)
+// Module 13810 (_initialize)
 import getUserAgnosticState from "getUserAgnosticState";
 import "initialize";
 

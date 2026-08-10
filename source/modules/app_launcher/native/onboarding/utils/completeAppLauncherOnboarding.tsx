@@ -1,10 +1,10 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 11433
+// Function ID: 11434
 // Name: completeAppLauncherOnboarding
 // Dependencies: [4123, 1358, 2]
 // Exports: default
 
-// Module 11432 (completeAppLauncherOnboarding)
+// Module 11433 (completeAppLauncherOnboarding)
 let result = require("set").fileFinishedImporting("modules/app_launcher/native/onboarding/utils/completeAppLauncherOnboarding.tsx");
 
 export default function completeAppLauncherOnboarding(dismissAction) {

@@ -1,10 +1,10 @@
-// Module ID: 9806
-// Function ID: 9807
+// Module ID: 9807
+// Function ID: 9808
 // Name: CirclePlayIcon
-// Dependencies: [19, 17, 21, 712, 4004, 9807, 9808, 2]
+// Dependencies: [19, 17, 21, 712, 4004, 9808, 9809, 2]
 // Exports: CirclePlayIcon
 
-// Module 9806 (CirclePlayIcon)
+// Module 9807 (CirclePlayIcon)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -29,13 +29,13 @@ export const CirclePlayIcon = function CirclePlayIcon(color) {
   const merged = Object.assign(color, Object.create(null));
   let obj = { children: null };
   obj = { source: null, color: null, style: null };
-  obj[0] = require(9807) /* registerAsset */;
+  obj[0] = require(9808) /* registerAsset */;
   obj[1] = secondaryColor;
   obj[2] = style;
   const merged1 = Object.assign(merged);
   const items = [callback(require(4004) /* BaseIconImage */.BaseIconImage, obj), ];
   obj = { source: null, color: null, style: null };
-  obj[0] = require(9808) /* registerAsset */;
+  obj[0] = require(9809) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   const items1 = [style];
   const items2 = [];

@@ -1,10 +1,10 @@
-// Module ID: 9957
-// Function ID: 9958
+// Module ID: 9958
+// Function ID: 9959
 // Name: _fetchStickerPack
 // Dependencies: [5, 4994, 1975, 4641, 1903, 5219, 676, 685, 4541, 530, 709, 4638, 8273, 1355, 12, 4642, 1236, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 9957 (_fetchStickerPack)
+// Module 9958 (_fetchStickerPack)
 import loadSavedGuildStickers from "loadSavedGuildStickers";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import _getSystemLocale from "_getSystemLocale";

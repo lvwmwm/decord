@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "_desired", left: "call", right: "paths", bottom: "call" };
+let closure_0 = { top: "HermesInternal", left: "accessibilityRole", right: "onPress", bottom: "keys" };
 arg5.default = function insetsDiffer(arg0, arg1) {
   let rect = arg0;
   if (!arg0) {

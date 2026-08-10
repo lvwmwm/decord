@@ -1,9 +1,9 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 13897
+// Function ID: 13898
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 10135, 8262, 685, 676, 21, 4303, 1236, 13896, 13954, 4005, 712, 1480, 6878, 8956, 9464, 8510, 4166, 13912, 13955, 647, 4498, 10137, 5270, 8382, 4188, 1481, 11972, 9562, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10136, 8262, 685, 676, 21, 4303, 1236, 13898, 13956, 4005, 712, 1480, 6878, 8956, 9464, 8510, 4166, 13914, 13957, 647, 4498, 10138, 5270, 8382, 4188, 1481, 11973, 9562, 2]
 
-// Module 13895 (ProfileCustomizationSubsection)
+// Module 13897 (ProfileCustomizationSubsection)
 import zustandStore from "zustandStore";
 import _objectWithoutProperties from "_objectWithoutProperties";
 import SegmentedControlPage from "SegmentedControlPage";
@@ -35,7 +35,7 @@ let items = [
     },
     id: "edit-user-profile",
     renderPage(autoFocusElement) {
-      return callback(importDefault(13896), { autoFocusElement: autoFocusElement.autoFocusElement });
+      return callback(importDefault(13898), { autoFocusElement: autoFocusElement.autoFocusElement });
     },
     subSection: ProfileCustomizationSubsection.USER_PROFILE
   },
@@ -46,7 +46,7 @@ let items = [
     },
     id: "edit-user-profiles-guilds",
     renderPage() {
-      return callback(importDefault(13954), {});
+      return callback(importDefault(13956), {});
     },
     subSection: ProfileCustomizationSubsection.GUILD
   }
@@ -244,7 +244,7 @@ let obj = {
   },
   id: "edit-user-profile",
   renderPage(autoFocusElement) {
-    return callback(importDefault(13896), { autoFocusElement: autoFocusElement.autoFocusElement });
+    return callback(importDefault(13898), { autoFocusElement: autoFocusElement.autoFocusElement });
   },
   subSection: ProfileCustomizationSubsection.USER_PROFILE
 };

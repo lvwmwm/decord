@@ -1,8 +1,8 @@
-// Module ID: 15942
-// Function ID: 15943
-// Dependencies: [19, 17, 3938, 676, 21, 4303, 5236, 712, 11952, 589, 698, 1236, 8201, 4638, 1297, 2]
+// Module ID: 15951
+// Function ID: 15952
+// Dependencies: [19, 17, 3938, 676, 21, 4303, 5236, 712, 11953, 589, 698, 1236, 8201, 4638, 1297, 2]
 
-// Module 15942
+// Module 15951
 import importAllResult from "noop";
 import { View } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   channel = channel.channel;
   let message;
   const tmp = callback();
-  let obj = channel(11952);
+  let obj = channel(11953);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);

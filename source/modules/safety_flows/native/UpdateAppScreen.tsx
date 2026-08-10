@@ -1,10 +1,10 @@
-// Module ID: 16953
-// Function ID: 16954
+// Module ID: 16962
+// Function ID: 16963
 // Name: UpdateAppScreen
 // Dependencies: [17, 21, 4303, 712, 4299, 1236, 2546, 4714, 2]
 // Exports: default
 
-// Module 16953 (UpdateAppScreen)
+// Module 16962 (UpdateAppScreen)
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

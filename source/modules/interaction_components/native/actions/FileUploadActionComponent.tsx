@@ -1,10 +1,10 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16474
+// Function ID: 16475
 // Name: MainAreaCanUpload
-// Dependencies: [5, 19, 17, 1372, 4640, 676, 21, 4303, 4198, 5374, 13882, 1236, 4525, 4264, 9878, 7751, 5326, 8216, 38, 589, 11545, 4897, 4856, 16466, 1935, 4642, 4860, 11387, 8357, 10009, 1872, 10008, 4858, 4712, 712, 5767, 2]
+// Dependencies: [5, 19, 17, 1372, 4640, 676, 21, 4303, 4198, 5374, 13884, 1236, 4525, 4264, 9879, 7751, 5326, 8216, 38, 589, 11546, 4897, 4856, 16475, 1935, 4642, 4860, 11388, 8357, 10010, 1872, 10009, 4858, 4712, 712, 5767, 2]
 // Exports: default
 
-// Module 16465 (MainAreaCanUpload)
+// Module 16474 (MainAreaCanUpload)
 import ME from "ME";
 import initialize from "initialize";
 import { View } from "isInteractionComponent";
@@ -28,7 +28,7 @@ function MainAreaCanUpload(arg0) {
   let obj = require(4198) /* formatSize */;
   obj = { onPress: openFilePicker, icon: null, label: null, subLabel: null, start: true, end: true, arrow: true };
   obj = { IconComponent: null };
-  obj[0] = require(13882) /* FileUpIcon */.FileUpIcon;
+  obj[0] = require(13884) /* FileUpIcon */.FileUpIcon;
   obj[1] = callback(require(5374) /* TableRowInner */.TableRow.Icon, obj);
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[2] = intl.format(require(1236) /* getSystemLocale */.t["/2JwTv"], { maxValues });
@@ -54,9 +54,9 @@ function File(upload) {
   obj = { uri: upload.item.uri, isImage: upload.isImage, isVideo: upload.isVideo, width: 32, height: 32, defaultPreview: null };
   obj = { style: callback2().defaultAttachmentIconWrapper, children: null };
   const tmp = callback2();
-  obj[1] = callback(upload(9878).AttachmentIcon, { fileName: upload.filename });
+  obj[1] = callback(upload(9879).AttachmentIcon, { fileName: upload.filename });
   obj[5] = callback(View, obj);
-  obj[0] = callback(handleRemoveFile(9878), obj);
+  obj[0] = callback(handleRemoveFile(9879), obj);
   let filename = upload.filename;
   if (filename == null) {
     const intl = tmp3(1236).intl;
@@ -334,7 +334,7 @@ export default function FileUploadActionComponent(maxValues) {
       extensions: allowedExtensions,
       uploadLimit: InteractionModal,
       onDismissKeyboard() {
-        return InteractionModal(10009).hideMediaKeyboardActionSheet();
+        return InteractionModal(10010).hideMediaKeyboardActionSheet();
       },
       onRestoreKeyboard: effectiveKestrelLimit,
       onSelectFiles(arg0) {
@@ -386,8 +386,8 @@ export default function FileUploadActionComponent(maxValues) {
         obj.handleViewAllDialog(obj);
       };
       obj[10] = function onManageLimited() {
-        let obj = InteractionModal(10008);
-        obj = { onDismissKeyboard: InteractionModal(10009).hideMediaKeyboardActionSheet, onRestoreKeyboard: closure_8 };
+        let obj = InteractionModal(10009);
+        obj = { onDismissKeyboard: InteractionModal(10010).hideMediaKeyboardActionSheet, onRestoreKeyboard: closure_8 };
         const result = obj.handleLimitedPickerDialog(obj);
       };
       obj[11] = tmp4(tmp5[29]).hideMediaKeyboardActionSheet;

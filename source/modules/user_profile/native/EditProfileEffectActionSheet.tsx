@@ -1,10 +1,10 @@
-// Module ID: 13935
-// Function ID: 13936
+// Module ID: 13937
+// Function ID: 13938
 // Name: EditProfileEffectInner
-// Dependencies: [32, 19, 17, 7017, 7007, 676, 21, 4303, 712, 8307, 7404, 5728, 5748, 698, 8268, 8265, 5397, 4299, 1236, 8277, 8280, 589, 13936, 8267, 8308, 13937, 8298, 8299, 8278, 9446, 4725, 2]
+// Dependencies: [32, 19, 17, 7017, 7007, 676, 21, 4303, 712, 8307, 7404, 5728, 5748, 698, 8268, 8265, 5397, 4299, 1236, 8277, 8280, 589, 13938, 8267, 8308, 13939, 8298, 8299, 8278, 9446, 4725, 2]
 // Exports: default
 
-// Module 13935 (EditProfileEffectInner)
+// Module 13937 (EditProfileEffectInner)
 import _slicedToArray from "_slicedToArray";
 import module_8277 from "module_8277";
 import get_ActivityIndicator from "Text";

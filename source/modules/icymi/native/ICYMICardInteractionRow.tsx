@@ -1,10 +1,10 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15614
+// Function ID: 15615
 // Name: AddEmojiButton
-// Dependencies: [32, 19, 17, 5922, 1372, 5131, 3929, 676, 1906, 21, 3940, 7223, 4303, 712, 500, 4151, 589, 4313, 6917, 8637, 4846, 1236, 7655, 4299, 10199, 688, 1416, 8610, 9523, 10200, 10241, 10294, 15598, 4800, 7222, 11144, 11122, 8913, 10234, 10215, 4005, 4725, 689, 5778, 2]
+// Dependencies: [32, 19, 17, 5922, 1372, 5131, 3929, 676, 1906, 21, 3940, 7223, 4303, 712, 500, 4151, 589, 4313, 6917, 8637, 4846, 1236, 7655, 4299, 10200, 688, 1416, 8610, 9523, 10201, 10242, 10295, 15606, 4800, 7222, 11145, 11123, 8913, 10235, 10216, 4005, 4725, 689, 5778, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 15606 (AddEmojiButton)
+// Module 15614 (AddEmojiButton)
 import Separator from "Separator";
 import EMOJI_PICKER_ACTION_SHEET_KEY from "EMOJI_PICKER_ACTION_SHEET_KEY";
 import get_ActivityIndicator from "module_4313";
@@ -225,7 +225,7 @@ function ForwardButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t.xIUfJS);
-  obj[5] = closure_16(importDefault(10241), { size: "sm" });
+  obj[5] = closure_16(importDefault(10242), { size: "sm" });
   return closure_16(require(4846) /* PressableBase */.PressableOpacity, obj);
 }
 function ReplyButton(disabled) {
@@ -243,7 +243,7 @@ function ReplyButton(disabled) {
   obj[3] = disabled;
   const intl = tmp3(1236).intl;
   obj[4] = intl.string(require(1236) /* getSystemLocale */.t["5NwaNY"]);
-  obj[5] = closure_16(require(10294) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
+  obj[5] = closure_16(require(10295) /* ArrowAngleLeftUpIcon */.ArrowAngleLeftUpIcon, { size: "sm" });
   return closure_16(require(4846) /* PressableBase */.PressableOpacity, obj);
 }
 function ThreadAsCommentsButton(parentMessage) {

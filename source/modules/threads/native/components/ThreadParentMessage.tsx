@@ -1,10 +1,10 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15703
+// Function ID: 15704
 // Name: ThreadChannelStarterMessage
 // Dependencies: [19, 7054, 4521, 21, 8041, 589, 4846, 1222, 8589, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 15695 (ThreadChannelStarterMessage)
+// Module 15703 (ThreadChannelStarterMessage)
 import "noop";
 import processMessage from "processMessage";
 import { ReferencedMessageState } from "processMessage";

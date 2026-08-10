@@ -1,9 +1,9 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14016
+// Function ID: 14017
 // Name: route
-// Dependencies: [8082, 676, 10446, 1236, 2802, 4519, 14015, 2]
+// Dependencies: [8082, 676, 10447, 1236, 2802, 4519, 14017, 2]
 
-// Module 14014 (route)
+// Module 14016 (route)
 import createToggle from "createToggle";
 
 obj = {
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: require("ME").UserSettingsSections.AGE_GROUP,
   getComponent() {
-    return require(14015) /* SettingsAgeGroupHeader */.default;
+    return require(14017) /* SettingsAgeGroupHeader */.default;
   }
 };
 const route = createToggle.createRoute(obj);

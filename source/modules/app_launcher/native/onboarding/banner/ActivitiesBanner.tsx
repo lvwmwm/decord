@@ -1,10 +1,10 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 11436
+// Function ID: 11437
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 11424, 11436, 11447, 1236, 2]
+// Dependencies: [32, 19, 21, 11425, 11437, 11448, 1236, 2]
 // Exports: default
 
-// Module 11435 (ActivitiesBanner)
+// Module 11436 (ActivitiesBanner)
 import _slicedToArray from "_slicedToArray";
 import "noop";
 import { jsx } from "jsxProd";
@@ -15,7 +15,7 @@ const result = require("jsxProd").fileFinishedImporting("modules/app_launcher/na
 export default function ActivitiesBanner(context) {
   let tmp4;
   let tmp5;
-  let obj = require(11424) /* useActivityApplications */;
+  let obj = require(11425) /* useActivityApplications */;
   obj = { guildId: context.context.channel.guild_id, fetchesShelf: false };
   [tmp4, tmp5] = callback(obj.useActivityApplications(obj), 2);
   let tmp6Result = null;
@@ -28,8 +28,8 @@ export default function ActivitiesBanner(context) {
       const obj1 = { activityName: null };
       obj1[0] = tmp4.name;
       obj[1] = intl.formatToPlainString(tmp(1236).t.zHMWuV, obj1);
-      tmp6Result = jsx(importDefault(11447), { image: null, text: null });
-      const tmp7Result = importDefault(11447);
+      tmp6Result = jsx(importDefault(11448), { image: null, text: null });
+      const tmp7Result = importDefault(11448);
     }
   }
   return tmp6Result;

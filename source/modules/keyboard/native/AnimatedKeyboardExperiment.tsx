@@ -1,10 +1,10 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10326
+// Function ID: 10327
 // Name: apexExperiment
 // Dependencies: [1452, 500, 2]
 // Exports: isAnimatedAndroidKeyboard
 
-// Module 10325 (apexExperiment)
+// Module 10326 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 let obj = { 1: null };

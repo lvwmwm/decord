@@ -1,10 +1,10 @@
-// Module ID: 10579
-// Function ID: 10580
+// Module ID: 10580
+// Function ID: 10581
 // Name: DomainScreen
-// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 1480, 530, 5328, 4299, 1236, 8465, 10580, 4714, 4509, 5270, 5783, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4303, 712, 1480, 530, 5328, 4299, 1236, 8465, 10581, 4714, 4509, 5270, 5783, 2]
 // Exports: default
 
-// Module 10579 (DomainScreen)
+// Module 10580 (DomainScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "NavigationStack";
@@ -254,7 +254,7 @@ function HTTPProofScreen(children) {
   obj2[1] = intl2.string(require(1236) /* getSystemLocale */.t.GL3q7k);
   const items1 = [callback2(require(4299) /* Text */.Text, obj2), , , ];
   const obj3 = { variant: "text-md/normal", selectable: true, style: tmp.code, children: null };
-  let obj6 = require(10580) /* EXAMPLE_DOMAIN */;
+  let obj6 = require(10581) /* EXAMPLE_DOMAIN */;
   obj3[3] = obj6.getHttpName(domain);
   items1[1] = callback2(require(4299) /* Text */.Text, obj3);
   const obj4 = { variant: "text-md/normal", children: null };

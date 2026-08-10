@@ -1,10 +1,10 @@
-// Module ID: 9995
-// Function ID: 9996
+// Module ID: 9996
+// Function ID: 9997
 // Name: getString
-// Dependencies: [4737, 38, 9996, 4291, 1935, 2]
+// Dependencies: [4737, 38, 9997, 4291, 1935, 2]
 // Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 9995 (getString)
+// Module 9996 (getString)
 import { TRUE_OPTION_NAME } from "TRUE_OPTION_NAME";
 
 function getString(arg0, arg1) {
@@ -341,9 +341,9 @@ export const normalizeNumericString = function normalizeNumericString(locale, tr
   let group;
   if (locale !== closure_5) {
     closure_5 = locale;
-    en_US = require(9996) /* numberParts */.numberParts[locale];
+    en_US = require(9997) /* numberParts */.numberParts[locale];
     if (en_US == null) {
-      en_US = tmp11(9996).numberParts["en-US"];
+      en_US = tmp11(9997).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = en_US);

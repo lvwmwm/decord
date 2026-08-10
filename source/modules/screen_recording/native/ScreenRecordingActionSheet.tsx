@@ -1,10 +1,10 @@
-// Module ID: 15071
-// Function ID: 15072
+// Module ID: 15073
+// Function ID: 15074
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 15067, 21, 4303, 712, 4299, 4714, 4271, 4846, 5326, 4293, 5764, 2]
+// Dependencies: [19, 17, 15069, 21, 4303, 712, 4299, 4714, 4271, 4846, 5326, 4293, 5764, 2]
 // Exports: default
 
-// Module 15071 (ScreenRecordingActionSheet)
+// Module 15073 (ScreenRecordingActionSheet)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { useScreenRecordingStore } from "useScreenRecordingStore";

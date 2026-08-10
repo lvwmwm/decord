@@ -1,10 +1,10 @@
-// Module ID: 16491
-// Function ID: 16492
+// Module ID: 16500
+// Function ID: 16501
 // Name: setupLoadFromMessageManagerHandlers
 // Dependencies: [2]
 // Exports: default
 
-// Module 16491 (setupLoadFromMessageManagerHandlers)
+// Module 16500 (setupLoadFromMessageManagerHandlers)
 const result = require("set").fileFinishedImporting("modules/messages/setupLoadFromMessageManagerHandlers.tsx");
 
 export default function setupLoadFromMessageManagerHandlers(actions) {

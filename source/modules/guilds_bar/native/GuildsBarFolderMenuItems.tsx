@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15409
+// Function ID: 15410
 // Name: getGuildFolderMenuItems
-// Dependencies: [5, 5155, 676, 8548, 1236, 13307, 1988, 6011, 15402, 2]
+// Dependencies: [5, 5155, 676, 8548, 1236, 13309, 1988, 6011, 15410, 2]
 // Exports: getGuildFolderMenuItems
 
-// Module 15401 (getGuildFolderMenuItems)
+// Module 15409 (getGuildFolderMenuItems)
 import markGuildsAsRead from "markGuildsAsRead";
 import insertUnsortedGuilds from "insertUnsortedGuilds";
 import { AnalyticsSections } from "ME";

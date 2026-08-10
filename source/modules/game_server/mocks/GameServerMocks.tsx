@@ -1,9 +1,9 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11845
+// Function ID: 11846
 // Name: items5
-// Dependencies: [4193, 11845, 2]
+// Dependencies: [4193, 11846, 2]
 
-// Module 11844 (items5)
+// Module 11845 (items5)
 const items = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];
 const items1 = [{ id: "1", name: "GameServer #1", cost: 3, specifications: items }, , ];
 const items2 = [{ title: "2", description: "GB" }, { title: "1", description: "vCPU" }, { title: "25", description: "GB" }];

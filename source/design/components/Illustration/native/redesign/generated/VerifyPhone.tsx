@@ -1,10 +1,10 @@
-// Module ID: 16588
-// Function ID: 16589
+// Module ID: 16597
+// Function ID: 16598
 // Name: getVerifyPhoneSource
-// Dependencies: [19, 17, 21, 7623, 16589, 16590, 16591, 4153, 2]
+// Dependencies: [19, 17, 21, 7623, 16598, 16599, 16600, 4153, 2]
 // Exports: VerifyPhone, getVerifyPhoneSource, useVerifyPhoneSource
 
-// Module 16588 (getVerifyPhoneSource)
+// Module 16597 (getVerifyPhoneSource)
 import "noop";
 import { Image } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -16,13 +16,13 @@ export const getVerifyPhoneSource = function getVerifyPhoneSource(theme) {
   let obj = require(7623) /* getIllustrationSource */;
   obj = {
     dark() {
-      return callback(16589);
+      return callback(16598);
     },
     darker() {
-      return callback(16590);
+      return callback(16599);
     },
     light() {
-      return callback(16591);
+      return callback(16600);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,13 +31,13 @@ export const useVerifyPhoneSource = function useVerifyPhoneSource() {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16589);
+      return callback(16598);
     },
     darker() {
-      return callback(16590);
+      return callback(16599);
     },
     light() {
-      return callback(16591);
+      return callback(16600);
     }
   };
   return require(7623) /* getIllustrationSource */.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -46,13 +46,13 @@ export const VerifyPhone = function VerifyPhone(arg0) {
   let obj = require(4153) /* AccessibilityAnnouncer */;
   obj = {
     dark() {
-      return callback(16589);
+      return callback(16598);
     },
     darker() {
-      return callback(16590);
+      return callback(16599);
     },
     light() {
-      return callback(16591);
+      return callback(16600);
     }
   };
   obj = {};

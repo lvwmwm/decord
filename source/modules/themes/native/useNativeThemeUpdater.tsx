@@ -1,10 +1,10 @@
-// Module ID: 16023
-// Function ID: 16024
+// Module ID: 16032
+// Function ID: 16033
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1302, 1348, 16024, 16025, 2]
+// Dependencies: [19, 1302, 1348, 16033, 16034, 2]
 // Exports: default
 
-// Module 16023 (useNativeThemeUpdater)
+// Module 16032 (useNativeThemeUpdater)
 import noop from "noop";
 import handleThemeChange from "handleThemeChange";
 

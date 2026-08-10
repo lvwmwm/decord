@@ -1,10 +1,10 @@
-// Module ID: 14124
-// Function ID: 14125
+// Module ID: 14126
+// Function ID: 14127
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 6996, 6997, 21, 4303, 712, 647, 4271, 14125, 5397, 4299, 1236, 2284, 14126, 4714, 2]
+// Dependencies: [19, 17, 6996, 6997, 21, 4303, 712, 647, 4271, 14127, 5397, 4299, 1236, 2284, 14128, 4714, 2]
 // Exports: default
 
-// Module 14124 (ConnectGuardianBottomSheet)
+// Module 14126 (ConnectGuardianBottomSheet)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
@@ -44,7 +44,7 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const callback = React.useCallback(() => {
     callback(table[8]).hideActionSheet(closure_6);
   }, []);
-  importDefault(14125)(callback);
+  importDefault(14127)(callback);
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.info, children: null };
   obj1 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
@@ -74,7 +74,7 @@ export default function ConnectGuardianBottomSheet(arg0) {
   const obj5 = { startExpanded: true, children: null };
   obj4[1] = stateFromStores1;
   obj4[2] = onRefresh;
-  obj3[1] = closure_7(require(14126) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
+  obj3[1] = closure_7(require(14128) /* ConnectGuardianCard */.ConnectGuardianCard, obj4);
   items3[1] = closure_7(View, obj3);
   const obj6 = { variant: "secondary", size: "md", text: null, onPress: null };
   const intl3 = tmp2(1236).intl;

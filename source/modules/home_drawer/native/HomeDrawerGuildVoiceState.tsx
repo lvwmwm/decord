@@ -1,10 +1,10 @@
-// Module ID: 15433
-// Function ID: 15434
+// Module ID: 15441
+// Function ID: 15442
 // Name: VoiceUsers
-// Dependencies: [19, 17, 1961, 3938, 4499, 4376, 676, 21, 4303, 712, 12302, 1297, 4299, 1236, 10942, 5268, 4725, 15432, 589, 12, 15434, 2]
+// Dependencies: [19, 17, 1961, 3938, 4499, 4376, 676, 21, 4303, 712, 12304, 1297, 4299, 1236, 10943, 5268, 4725, 15440, 589, 12, 15442, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 15433 (VoiceUsers)
+// Module 15441 (VoiceUsers)
 import apply from "apply";
 import { View } from "useIsHomeDrawerChannelInChannelList";
 import comparator from "comparator";
@@ -43,7 +43,7 @@ function VoiceUsers(arg0) {
       obj[2] = closure_0;
       return outer1_11(outer1_0(outer1_2[11]).Avatar, obj, id.id);
     });
-    obj[1] = callback(require(12302) /* AvatarPile */.AvatarPile, obj);
+    obj[1] = callback(require(12304) /* AvatarPile */.AvatarPile, obj);
     tmp = callback(View, obj);
   }
   return tmp;
@@ -88,7 +88,7 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
   if (streamingUser != null) {
     id = streamingUser.id;
   }
-  const previewUrl = importDefault(10942)(guildId, streamingChannelId, id).previewUrl;
+  const previewUrl = importDefault(10943)(guildId, streamingChannelId, id).previewUrl;
   if (!tmp2) {
     return null;
   } else {

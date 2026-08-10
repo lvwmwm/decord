@@ -1,10 +1,10 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 10161
+// Function ID: 10162
 // Name: GiftingBadgeProgressBar
-// Dependencies: [19, 17, 8790, 21, 4303, 712, 10040, 4299, 1236, 2380, 2]
+// Dependencies: [19, 17, 8790, 21, 4303, 712, 10041, 4299, 1236, 2380, 2]
 // Exports: default
 
-// Module 10160 (GiftingBadgeProgressBar)
+// Module 10161 (GiftingBadgeProgressBar)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { getSingleRequirementThreshold as closure_4 } from "map";
@@ -72,7 +72,7 @@ export default function GiftingBadgeProgress(title) {
     obj = { icon: null, size: null };
     obj[0] = currentTier.simple_icon_url;
     obj[1] = iconSize;
-    tmp8 = callback2(importDefault(10040), obj);
+    tmp8 = callback2(importDefault(10041), obj);
   }
   const items = [tmp8, , ];
   obj = { style: tmp.content, children: null };
@@ -107,7 +107,7 @@ export default function GiftingBadgeProgress(title) {
     const obj5 = { icon: null, size: null };
     obj5[0] = nextTier.simple_icon_url;
     obj5[1] = iconSize;
-    tmp16Result = tmp16(importDefault(10040), obj5);
+    tmp16Result = tmp16(importDefault(10041), obj5);
   }
   items[2] = tmp16Result;
   obj[1] = items;

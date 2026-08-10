@@ -1,10 +1,10 @@
-// Module ID: 11286
-// Function ID: 11287
+// Module ID: 11287
+// Function ID: 11288
 // Name: _getSafetyHubData
-// Dependencies: [5, 1218, 11280, 7805, 676, 709, 530, 4491, 7804, 2]
+// Dependencies: [5, 1218, 11281, 7805, 676, 709, 530, 4491, 7804, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11286 (_getSafetyHubData)
+// Module 11287 (_getSafetyHubData)
 import dispatcher from "dispatcher";
 import fetchFingerprint from "fetchFingerprint";
 import handleSafetyHubRequestAgeVerificationResetModalAction from "handleSafetyHubRequestAgeVerificationResetModalAction";

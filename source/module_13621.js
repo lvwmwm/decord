@@ -1,15 +1,16 @@
 // Module ID: 13621
 // Function ID: 13622
-// Dependencies: [13619]
+// Dependencies: [13622]
 
 // Module 13621
 
-export default (arg0, arg1) => {
-  const tmp = require(13619)(arg0);
-  if (tmp < 0) {
-    let tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
+export default (arg0) => {
+  let num = 0;
+  {
+    num = 0;
+    if (0 !== tmp) {
+      num = require(13622)(tmp);
+    }
   }
-  return tmp3;
+  return num;
 };

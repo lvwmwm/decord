@@ -1,10 +1,10 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 13932
+// Function ID: 13933
 // Name: apexExperiment
 // Dependencies: [1452, 2]
 // Exports: useIsBadgeManagementEnabled
 
-// Module 13930 (apexExperiment)
+// Module 13932 (apexExperiment)
 import ApexExperiment from "ApexExperiment";
 
 const obj = { 1: null, 2: { enabled: true, tenureBadgeHideable: true } };

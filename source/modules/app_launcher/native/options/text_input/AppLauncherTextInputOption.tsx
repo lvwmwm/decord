@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11560
+// Function ID: 11561
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1906, 21, 4303, 712, 9548, 1935, 8643, 11556, 9549, 1297, 11560, 500, 11561, 1872, 8637, 2]
+// Dependencies: [32, 19, 17, 1906, 21, 4303, 712, 9548, 1935, 8643, 11557, 9549, 1297, 11561, 500, 11562, 1872, 8637, 2]
 // Exports: default
 
-// Module 11559 (AppLauncherTextInputOption)
+// Module 11560 (AppLauncherTextInputOption)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "EMOJI_PICKER_ACTION_SHEET_KEY";
@@ -117,7 +117,7 @@ export default function AppLauncherTextInputOption(guildId) {
       const obj = onChangeText(outer1_2[9]);
     }
   }, items2);
-  let obj1 = onChangeText(11556);
+  let obj1 = onChangeText(11557);
   const animationDelayedAutoFocus = obj1.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
@@ -127,7 +127,7 @@ export default function AppLauncherTextInputOption(guildId) {
   if (obj.useAppLauncherContext().entrypoint === onChangeText(9549).AppLauncherEntrypoint.VOICE) {
     let TextInput = tmp4(1297).TextInput;
   } else {
-    TextInput = guildId(11560);
+    TextInput = guildId(11561);
   }
   const items3 = [tmp.container, , ];
   if (hasError) {
@@ -170,7 +170,7 @@ export default function AppLauncherTextInputOption(guildId) {
       obj = { pickerIntention: ref.CHAT, autoFocus: false, startExpanded: false, onPressEmoji: closure_9, guildId, onClose: closure_10 };
       const result1 = onChangeText(outer1_2[17]).openEmojiPickerActionSheet(obj);
     };
-    tmp14Result = tmp14(guildId(11561), obj1);
+    tmp14Result = tmp14(guildId(11562), obj1);
   }
   items4[1] = tmp14Result;
   obj[1] = items4;

@@ -1,10 +1,10 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16216
+// Function ID: 16217
 // Name: UserVideoFailed
-// Dependencies: [17, 676, 21, 4303, 712, 9169, 10689, 4299, 1236, 4714, 10699, 4400, 9155, 2]
+// Dependencies: [17, 676, 21, 4303, 712, 9169, 10690, 4299, 1236, 4714, 10700, 4400, 9155, 2]
 // Exports: default
 
-// Module 16207 (UserVideoFailed)
+// Module 16216 (UserVideoFailed)
 import { View } from "get ActivityIndicator";
 import { VideoToggleState } from "ME";
 import jsxProd from "jsxProd";
@@ -41,7 +41,7 @@ export default function UserVideoFailed(arg0) {
   if (!removeSplashImage) {
     obj = { style: null };
     obj[0] = tmp2.placeholderImage;
-    tmp9 = callback(tmp3(10689).StreamFailed, obj);
+    tmp9 = callback(tmp3(10690).StreamFailed, obj);
   }
   const obj1 = { children: null };
   const items1 = [tmp9, ];

@@ -1,10 +1,10 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15392
+// Function ID: 15393
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 14941, 676, 21, 4303, 712, 12974, 15385, 589, 698, 12062, 5376, 4299, 1236, 4714, 14340, 15386, 15388, 2]
+// Dependencies: [19, 17, 14943, 676, 21, 4303, 712, 12976, 15393, 589, 698, 12063, 5376, 4299, 1236, 4714, 14342, 15394, 15396, 2]
 // Exports: default
 
-// Module 15384 (GuildUpsellChannelList)
+// Module 15392 (GuildUpsellChannelList)
 import set from "set";
 import { View } from "handleJoinGuild";
 import closure_6 from "set";

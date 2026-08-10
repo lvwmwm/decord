@@ -1,7 +1,7 @@
 // Module ID: 9573
 // Function ID: 9574
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 6888, 7017, 678, 676, 9574, 1905, 21, 4303, 712, 7751, 9575, 4271, 9434, 9576, 1236, 9569, 9568, 9413, 1480, 5728, 4509, 12156, 1988, 7000, 12160, 679, 12161, 10124, 9408, 4299, 4715, 1930, 4239, 4153, 4005, 9348, 589, 9482, 3947, 7013, 7012, 9422, 10130, 12163, 12164, 12165, 7343, 12167, 1609, 501, 4725, 7835, 4714, 5748, 1974, 12168, 2]
+// Dependencies: [32, 19, 17, 6888, 7017, 678, 676, 9574, 1905, 21, 4303, 712, 7751, 9575, 4271, 9434, 9576, 1236, 9569, 9568, 9413, 1480, 5728, 4509, 12158, 1988, 7000, 12162, 679, 12163, 10125, 9408, 4299, 4715, 1930, 4239, 4153, 4005, 9348, 589, 9482, 3947, 7013, 7012, 9422, 10131, 12165, 12166, 12167, 7343, 12169, 1609, 501, 4725, 7835, 4714, 5748, 1974, 12170, 2]
 // Exports: default
 
 // Module 9573 (GiftButton)
@@ -296,7 +296,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
   const balance = obj10.useFetchVirtualCurrencyBalance().balance;
   let obj11 = require(9569) /* useVirtualCurrencyData */;
   const canAfford = obj11.useVirtualCurrencyData(product, canUseShopDiscountsResult).canAfford;
-  let obj12 = require(10130) /* useHandleUseNow */;
+  let obj12 = require(10131) /* useHandleUseNow */;
   const handleUseNow = obj12.useHandleUseNow({ product, analyticsLocations });
   ({ handleUseNow: c2, handleEditProfile: c3 } = handleUseNow);
   ({ isApplying, canUseNow } = handleUseNow);
@@ -308,19 +308,19 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     id = tmp16.id;
   }
   obj[3] = id;
-  const tmp17 = onTrackPress(12163);
-  ({ handleBuyNow: c4, isBuying } = onTrackPress(12163)(obj));
-  let tmp5Result = tmp5(12164);
+  const tmp17 = onTrackPress(12165);
+  ({ handleBuyNow: c4, isBuying } = onTrackPress(12165)(obj));
+  let tmp5Result = tmp5(12166);
   handleClaim = tmp5Result.useHandleClaim({ product }).handleClaim;
-  const tmp20 = onTrackPress(12165)({ location: "ProductDetailsActionSheetPurchaseSection", product });
+  const tmp20 = onTrackPress(12167)({ location: "ProductDetailsActionSheetPurchaseSection", product });
   let tmp25Result = tmp20;
   if (tmp20) {
     tmp25Result = !isPurchased;
   }
   tmp5Result = tmp5(7343);
-  const tmp17Result = onTrackPress(12163)(obj);
+  const tmp17Result = onTrackPress(12165)(obj);
   const tmp23 = tmp5Result.useIsEligibleForBogoOffer() ? closure_15.MONTH : closure_15.YEAR;
-  let canGiftProduct = tmp5(12167).useCanGiftProduct(product);
+  let canGiftProduct = tmp5(12169).useCanGiftProduct(product);
   let PX_16 = tmp2(1609)().bottom;
   const items2 = [tmp.container, , ];
   let containerFramesEA = tmp25Result;
@@ -437,7 +437,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
     obj17[0] = onTrackPress;
     const intl9 = tmp5(1236).intl;
     obj17[1] = intl9.string(tmp5(1236).t["9wfL34"]);
-    items10[1] = callback2(tmp5(12168).UnlockWithNitroButton, obj17);
+    items10[1] = callback2(tmp5(12170).UnlockWithNitroButton, obj17);
     const obj18 = { variant: "text-xxs/normal", children: null };
     const intl10 = tmp5(1236).intl;
     const obj19 = { paidURL: null, interval: null, ctaText: null };
@@ -458,7 +458,7 @@ export default function ProductDetailsActionSheetPurchaseSection(onBuy) {
         if (!result1) {
           const obj20 = { onTrackPress: null };
           obj20[0] = onTrackPress;
-          tmp25Result2 = callback2(tmp5(12168).UnlockWithNitroButton, obj20);
+          tmp25Result2 = callback2(tmp5(12170).UnlockWithNitroButton, obj20);
         }
       }
     }

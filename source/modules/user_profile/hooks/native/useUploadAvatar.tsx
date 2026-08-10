@@ -1,10 +1,10 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 13919
+// Function ID: 13920
 // Name: useUploadAvatar
 // Dependencies: [5, 19, 1903, 676, 1905, 647, 8362, 4271, 4860, 3947, 8275, 8268, 8265, 8267, 2]
 // Exports: default
 
-// Module 13917 (useUploadAvatar)
+// Module 13919 (useUploadAvatar)
 import defaultAreStatesEqual from "defaultAreStatesEqual";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import ME from "ME";

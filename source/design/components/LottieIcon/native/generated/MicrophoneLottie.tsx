@@ -1,9 +1,9 @@
-// Module ID: 13394
-// Function ID: 13395
+// Module ID: 13396
+// Function ID: 13397
 // Name: items
-// Dependencies: [19, 21, 10143, 13395, 2]
+// Dependencies: [19, 21, 10144, 13397, 2]
 
-// Module 13394 (items)
+// Module 13396 (items)
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -12,12 +12,12 @@ let closure_3 = ["I"];
 const items = [{ name: "mute", start: 0, duration: 70 }, { name: "unmute", start: 100, duration: 70 }];
 const forwardRefResult = require("noop").forwardRef((arg0, arg1) => {
   const obj = { dotLottie: null, ref: null, layers: null, markers: null };
-  obj[0] = require(13395) /* registerAsset */;
+  obj[0] = require(13397) /* registerAsset */;
   obj[1] = arg1;
   obj[2] = closure_3;
   obj[3] = items;
   const merged = Object.assign(arg0);
-  return jsx(require(10143) /* LottieIcon */.LottieIcon, { dotLottie: null, ref: null, layers: null, markers: null });
+  return jsx(require(10144) /* LottieIcon */.LottieIcon, { dotLottie: null, ref: null, layers: null, markers: null });
 });
 const result = require("LottieIcon").fileFinishedImporting("design/components/LottieIcon/native/generated/MicrophoneLottie.tsx");
 

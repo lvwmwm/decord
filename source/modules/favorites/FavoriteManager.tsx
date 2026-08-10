@@ -1,9 +1,9 @@
-// Module ID: 16577
-// Function ID: 16578
+// Module ID: 16586
+// Function ID: 16587
 // Name: handleChannelDelete
 // Dependencies: [9710, 1894, 5261, 2]
 
-// Module 16577 (handleChannelDelete)
+// Module 16586 (handleChannelDelete)
 import "initialize";
 
 const require = arg1;
@@ -11,20 +11,20 @@ function handleChannelDelete(channel) {
   const result = require(9710) /* getNextPositionFromChannels */.removeFavoriteChannel(channel.channel.id, { trackAnalytics: false });
 }
 function handleCategoryCollapse(id) {
-  const result = require(9710) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, true);
+  const result = require(9710) /* getNextPositionFromChannels */.setFavoriteCategoriesCollapsed(true, id.id);
 }
 function handleCategoryExpand(id) {
-  const result = require(9710) /* getNextPositionFromChannels */.setFavoriteCategoryCollapsed(id.id, false);
+  const result = require(9710) /* getNextPositionFromChannels */.setFavoriteCategoriesCollapsed(false, id.id);
 }
 function handleCategoryCollapseAll(guildId) {
   if (obj.isFavoritesGuildId(guildId.guildId)) {
-    const result = require(9710) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(true);
+    const result = require(9710) /* getNextPositionFromChannels */.setFavoriteCategoriesCollapsed(true);
     const tmpResult = require(9710) /* getNextPositionFromChannels */;
   }
 }
 function handleCategoryExpandAll(guildId) {
   if (obj.isFavoritesGuildId(guildId.guildId)) {
-    const result = require(9710) /* getNextPositionFromChannels */.setAllFavoriteCategoriesCollapsed(false);
+    const result = require(9710) /* getNextPositionFromChannels */.setFavoriteCategoriesCollapsed(false);
     const tmpResult = require(9710) /* getNextPositionFromChannels */;
   }
 }

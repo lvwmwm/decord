@@ -1,9 +1,9 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 16920
+// Function ID: 16921
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: [1372, 4351, 4375, 676, 9169, 16912, 2]
+// Dependencies: [1372, 4351, 4375, 676, 9169, 16921, 2]
 
-// Module 16911 (AVErrorNoAudioInputDetectedDefinition)
+// Module 16920 (AVErrorNoAudioInputDetectedDefinition)
 import ensureGuildLoaded from "ensureGuildLoaded";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import createRTCConnection from "createRTCConnection";
@@ -41,7 +41,7 @@ export const AVErrorNoAudioInputDetectedDefinition = {
                     if (!obj5.isSelfMute()) {
                       const obj = { type: null };
                       obj[0] = require(9169) /* mapped */.AVError.NO_AUDIO_INPUT_DETECTED;
-                      const merged = Object.assign(require(16912) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
+                      const merged = Object.assign(require(16921) /* getVoiceChannelErrorContext */.getVoiceChannelErrorContext());
                       const items = [obj];
                       return items;
                     }

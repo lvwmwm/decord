@@ -1,10 +1,10 @@
-// Module ID: 16056
-// Function ID: 16057
+// Module ID: 16065
+// Function ID: 16066
 // Name: LaunchpadChannelIcon
-// Dependencies: [19, 17, 1891, 3938, 1903, 4500, 21, 9033, 4303, 712, 16043, 589, 5779, 11575, 7102, 16045, 9663, 16048, 4494, 2]
+// Dependencies: [19, 17, 1891, 3938, 1903, 4500, 21, 9033, 4303, 712, 16052, 589, 5779, 11576, 7102, 16054, 9663, 16057, 4494, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 16056 (LaunchpadChannelIcon)
+// Module 16065 (LaunchpadChannelIcon)
 import "set";
 import { View } from "ChannelContent";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
@@ -26,9 +26,9 @@ function LaunchpadChannelIcon(channel) {
   obj = { children: null };
   obj = { style: tmp.guildBadgeIcon, children: null };
   const stateFromStores = obj.useStateFromStores(items, () => outer1_4.getGuild(channel.guild_id));
-  const tmp2 = importDefault(16043)();
-  obj[1] = callback(importDefault(5779), { guild: stateFromStores, size: importDefault(16043)().icon.guildBadgeIconSize });
-  const items1 = [callback(View, obj), callback(channel(11575).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
+  const tmp2 = importDefault(16052)();
+  obj[1] = callback(importDefault(5779), { guild: stateFromStores, size: importDefault(16052)().icon.guildBadgeIconSize });
+  const items1 = [callback(View, obj), callback(channel(11576).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
   obj[0] = items1;
   return callback2(closure_9, obj);
 }
@@ -92,7 +92,7 @@ export default function renderChannelItem(unread) {
       relativeTimestamp = obj.getRelativeTimestamp(latestMessageTimestamp);
     }
   }
-  const tmp7 = importDefault(16043)();
+  const tmp7 = importDefault(16052)();
   const children = [unreadBadge, , , ];
   obj = { style: null, children: null };
   obj = { position: "relative", borderRadius: null, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0, width: null, height: null };
@@ -114,13 +114,13 @@ export default function renderChannelItem(unread) {
   obj[1] = tmp11Result;
   children[1] = closure_8(View, obj);
   const tmp10 = closure_9;
-  const tmp8 = importDefault(16045);
+  const tmp8 = importDefault(16054);
   const tmp9 = closure_10;
   if (channelName == null) {
     channelName = require(4494) /* computeChannelName */.computeChannelName(channel, mergeGuildAvatar, upsertRelationship);
     const obj6 = require(4494) /* computeChannelName */;
   }
-  children[2] = importDefault(16048)({ name: channelName, subtitle, unread: flag, resolvedUnreadSetting: ONLY_MENTIONS, muted: flag3, lastMessageTimestampString: relativeTimestamp, channel, channelCategoryName, locked, connected, live: flag2, mentionCount, mentionBadge, isSubscriptionGated, needSubscriptionToAccess: flag4 });
+  children[2] = importDefault(16057)({ name: channelName, subtitle, unread: flag, resolvedUnreadSetting: ONLY_MENTIONS, muted: flag3, lastMessageTimestampString: relativeTimestamp, channel, channelCategoryName, locked, connected, live: flag2, mentionCount, mentionBadge, isSubscriptionGated, needSubscriptionToAccess: flag4 });
   tmp11Result = null;
   if (null != end) {
     const obj3 = { style: null, children: null };

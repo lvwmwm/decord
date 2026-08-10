@@ -1,10 +1,10 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16725
+// Function ID: 16726
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 11035, 5374, 1297, 4239, 5396, 1236, 6962, 1416, 4153, 4271, 8956, 5764, 9141, 5399, 5328, 5767, 2]
+// Dependencies: [32, 19, 17, 21, 11036, 5374, 1297, 4239, 5396, 1236, 6962, 1416, 4153, 4271, 8956, 5764, 9141, 5399, 5328, 5767, 2]
 // Exports: default
 
-// Module 16716 (IdentityApplicationRow)
+// Module 16725 (IdentityApplicationRow)
 import _slicedToArray from "_slicedToArray";
 import TableRowGroupTitle from "TableRowGroupTitle";
 import { View } from "BottomSheetModal";
@@ -17,7 +17,7 @@ function IdentityApplicationRow(arg0) {
   let applicationId;
   let onPress;
   ({ applicationId, onPress } = arg0);
-  let obj = require(11035) /* request */;
+  let obj = require(11036) /* request */;
   const getOrFetchApplicationBatched = obj.useGetOrFetchApplicationBatched(applicationId);
   if (null == getOrFetchApplicationBatched) {
     return null;

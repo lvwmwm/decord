@@ -1,10 +1,10 @@
-// Module ID: 14206
-// Function ID: 14207
+// Module ID: 14208
+// Function ID: 14209
 // Name: getConnectionBackgroundColor
 // Dependencies: [676, 712, 2]
 // Exports: getConnectionBackgroundColor
 
-// Module 14206 (getConnectionBackgroundColor)
+// Module 14208 (getConnectionBackgroundColor)
 let BATTLENET;
 let BUNGIE;
 let CRUNCHYROLL;

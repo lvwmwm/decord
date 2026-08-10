@@ -1,10 +1,10 @@
-// Module ID: 11865
-// Function ID: 11866
+// Module ID: 11866
+// Function ID: 11867
 // Name: useCanPurchaseBoosts
 // Dependencies: [1903, 1905, 6860, 589, 2]
 // Exports: default
 
-// Module 11865 (useCanPurchaseBoosts)
+// Module 11866 (useCanPurchaseBoosts)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { FractionalPremiumStates } from "GuildFeatures";
 

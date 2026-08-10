@@ -1,10 +1,10 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11022
+// Function ID: 11023
 // Name: ChannelsAndRolesScreen
-// Dependencies: [32, 19, 17, 1891, 5243, 21, 4303, 712, 647, 5950, 8956, 1236, 9141, 11022, 11028, 9677, 2]
+// Dependencies: [32, 19, 17, 1891, 5243, 21, 4303, 712, 647, 5950, 8956, 1236, 9141, 11023, 11029, 9677, 2]
 // Exports: default
 
-// Module 11021 (ChannelsAndRolesScreen)
+// Module 11022 (ChannelsAndRolesScreen)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { View } from "get ActivityIndicator";

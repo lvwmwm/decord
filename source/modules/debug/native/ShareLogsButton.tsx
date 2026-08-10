@@ -1,8 +1,8 @@
-// Module ID: 14750
-// Function ID: 14751
-// Dependencies: [19, 21, 4846, 1236, 8923, 7, 12230, 2]
+// Module ID: 14752
+// Function ID: 14753
+// Dependencies: [19, 21, 4846, 1236, 8923, 7, 12232, 2]
 
-// Module 14750
+// Module 14752
 import { jsx } from "jsxProd";
 import importAllResult from "noop";
 
@@ -17,7 +17,7 @@ const memoResult = require("noop").memo(function ShareLogsButton() {
     obj[0] = callback(7).stringify();
     return obj.showShareActionSheet(obj, "Debug Logs");
   };
-  obj[2] = jsx(require(12230) /* ShareIcon */.ShareIcon, {});
+  obj[2] = jsx(require(12232) /* ShareIcon */.ShareIcon, {});
   return jsx(require(4846) /* PressableBase */.PressableOpacity, { accessibilityLabel: null, onPress: null, children: null });
 });
 const result = require("PressableBase").fileFinishedImporting("modules/debug/native/ShareLogsButton.tsx");

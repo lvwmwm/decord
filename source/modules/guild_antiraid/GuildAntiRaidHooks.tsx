@@ -1,10 +1,10 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 9772
+// Function ID: 9773
 // Name: getFirstGuildIncidentId
-// Dependencies: [1340, 1891, 3929, 4124, 1903, 9751, 8123, 676, 647, 11, 8122, 506, 3934, 9772, 2]
+// Dependencies: [1340, 1891, 3929, 4124, 1903, 9752, 8123, 676, 647, 11, 8122, 506, 3934, 9773, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 9771 (getFirstGuildIncidentId)
+// Module 9772 (getFirstGuildIncidentId)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import getUncachedChannelPermissions from "getUncachedChannelPermissions";

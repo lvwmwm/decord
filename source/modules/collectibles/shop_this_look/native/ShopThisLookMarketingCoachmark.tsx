@@ -1,10 +1,10 @@
-// Module ID: 12510
-// Function ID: 12511
+// Module ID: 12512
+// Function ID: 12513
 // Name: ShopThisLookMarketingCoachmarkImage
 // Dependencies: [19, 17, 1369, 21, 4303, 6142, 1236, 8653, 2]
 // Exports: default
 
-// Module 12510 (ShopThisLookMarketingCoachmarkImage)
+// Module 12512 (ShopThisLookMarketingCoachmarkImage)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { ContentDismissActionType } from "ContentDismissActionType";

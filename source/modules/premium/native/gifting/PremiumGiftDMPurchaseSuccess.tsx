@@ -1,10 +1,10 @@
-// Module ID: 10122
-// Function ID: 10123
+// Module ID: 10123
+// Function ID: 10124
 // Name: PremiumGiftDMSuccessBody
-// Dependencies: [19, 17, 21, 4303, 712, 9611, 1480, 9578, 10034, 4714, 1236, 2348, 9585, 4299, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 9611, 1480, 9578, 10035, 4714, 1236, 2348, 9585, 4299, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 10122 (PremiumGiftDMSuccessBody)
+// Module 10123 (PremiumGiftDMSuccessBody)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12100
+// Function ID: 12101
 // Name: ChannelPrompt
 // Dependencies: [5, 32, 19, 17, 1961, 1891, 21, 4303, 5267, 589, 1480, 5270, 1236, 4313, 4202, 5328, 5779, 1416, 4299, 8465, 4714, 8469, 2]
 // Exports: default
 
-// Module 12099 (ChannelPrompt)
+// Module 12100 (ChannelPrompt)
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import _slicedToArray from "_slicedToArray";
 import module_8465 from "module_8465";

@@ -1,10 +1,10 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11162
+// Function ID: 11163
 // Name: getShouldShowAppAuthPrompt
 // Dependencies: [5250, 5733, 5736, 2]
 // Exports: getShouldShowAppAuthPrompt
 
-// Module 11161 (getShouldShowAppAuthPrompt)
+// Module 11162 (getShouldShowAppAuthPrompt)
 import recomputeFromAppTokens from "recomputeFromAppTokens";
 import { FetchState } from "recomputeFromAppTokens";
 

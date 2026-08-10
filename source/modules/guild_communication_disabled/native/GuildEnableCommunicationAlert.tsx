@@ -1,10 +1,10 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11243
+// Function ID: 11244
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1903, 1973, 676, 21, 4303, 8084, 4730, 698, 11241, 4002, 1236, 9877, 4732, 4299, 4493, 9683, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 1973, 676, 21, 4303, 8084, 4730, 698, 11242, 4002, 1236, 9878, 4732, 4299, 4493, 9683, 2]
 // Exports: default
 
-// Module 11242 (GuildEnableCommunicationAlert)
+// Module 11243 (GuildEnableCommunicationAlert)
 import closure_3 from "getFriendlyDurationString";
 import _slicedToArray from "_slicedToArray";
 import "componentDidMount";
@@ -65,7 +65,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
               return obj;
             } else {
               let closure_0 = tmp4;
-              let obj1 = v0(11241);
+              let obj1 = v0(11242);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -84,7 +84,7 @@ export default function GuildEnableCommunicationAlert(guildId) {
             const obj2 = { key: "GUILD_ENABLE_COMMUNICATION_SUCCESS", content: null, icon: null };
             const intl = outer1_0(1236).intl;
             obj2[1] = intl.string(outer1_0(1236).t["/Mmbfv"]);
-            obj2[2] = v0(9877);
+            obj2[2] = v0(9878);
             v0(4002).open(obj2);
             dependencyMap = 3;
             return { value: "HermesInternal", done: null };

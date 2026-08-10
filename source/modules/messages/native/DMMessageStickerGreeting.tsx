@@ -1,10 +1,10 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11634
+// Function ID: 11635
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 5219, 4521, 1903, 21, 4303, 712, 4118, 4005, 4151, 4002, 11634, 11635, 6917, 1236, 589, 686, 4146, 11636, 9957, 4036, 4304, 1297, 9956, 4725, 4846, 9848, 4299, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 5219, 4521, 1903, 21, 4303, 712, 4118, 4005, 4151, 4002, 11635, 11636, 6917, 1236, 589, 686, 4146, 11637, 9958, 4036, 4304, 1297, 9957, 4725, 4846, 9849, 4299, 4714, 2]
 // Exports: default
 
-// Module 11633 (DMMessageStickerGreeting)
+// Module 11634 (DMMessageStickerGreeting)
 import reinjectEphemerals from "reinjectEphemerals";
 import set from "set";
 import closure_5 from "set";
@@ -72,9 +72,9 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = Text(1236).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(Text(1236).t.m0zYbV, { username: name });
-  const showConvoStarterInDM = Text(11636).useShowConvoStarterInDM(channel);
+  const showConvoStarterInDM = Text(11637).useShowConvoStarterInDM(channel);
   callback = showConvoStarterInDM;
-  const TextResult = Text(11636);
+  const TextResult = Text(11637);
   const tmp2 = END;
   const items2 = [loadSavedGuildStickers];
   const items3 = [showConvoStarterInDM];
@@ -259,7 +259,7 @@ export default function DMMessageStickerGreeting(channel) {
   const TextResult4 = Text(4005);
   const items8 = [Text(4151).hexWithOpacity(token, 0), token];
   const TextResult5 = Text(4151);
-  const shouldAnimateSticker = Text(9956).useShouldAnimateSticker(false);
+  const shouldAnimateSticker = Text(9957).useShouldAnimateSticker(false);
   if (!showConvoStarterInDM) {
     return null;
   } else {
@@ -280,7 +280,7 @@ export default function DMMessageStickerGreeting(channel) {
       obj3[3] = callback;
       let tmp24Result = null;
       if (null != stateFromStores2) {
-        tmp5 = tmp5(9848);
+        tmp5 = tmp5(9849);
         const obj4 = { sticker: null, size: 24, animated: null };
         obj4[0] = stateFromStores2;
         obj4[2] = shouldAnimateSticker;
@@ -304,7 +304,7 @@ export default function DMMessageStickerGreeting(channel) {
         const obj7 = { sticker: null, size: 100, animated: null };
         obj7[0] = stateFromStores2;
         obj7[2] = shouldAnimateSticker;
-        obj6[1] = tmp24(tmp5(9848), obj7);
+        obj6[1] = tmp24(tmp5(9849), obj7);
         tmp24Result = tmp24(tmp25, obj6);
       }
       const obj8 = { children: null };

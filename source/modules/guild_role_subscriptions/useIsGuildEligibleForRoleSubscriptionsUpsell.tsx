@@ -1,10 +1,10 @@
-// Module ID: 15372
-// Function ID: 15373
+// Module ID: 15380
+// Function ID: 15381
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
 // Dependencies: [1415, 1891, 1903, 676, 589, 5881, 2]
 // Exports: default
 
-// Module 15372 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 15380 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import { isGuildOwner } from "GuildNSFWContentLevel";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import mergeGuildAvatar from "mergeGuildAvatar";

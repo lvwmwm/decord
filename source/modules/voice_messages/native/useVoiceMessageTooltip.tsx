@@ -1,10 +1,10 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11629
+// Function ID: 11630
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1476, 11366, 1236, 6004, 8654, 2]
+// Dependencies: [19, 1476, 11367, 1236, 6004, 8654, 2]
 // Exports: default
 
-// Module 11628 (useVoiceMessageTooltip)
+// Module 11629 (useVoiceMessageTooltip)
 import noop from "noop";
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";

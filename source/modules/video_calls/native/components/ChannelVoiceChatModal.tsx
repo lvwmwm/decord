@@ -1,10 +1,10 @@
-// Module ID: 9736
-// Function ID: 9737
+// Module ID: 9737
+// Function ID: 9738
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 4494, 4497, 9677, 4825, 4184, 9737, 2]
+// Dependencies: [19, 21, 4494, 4497, 9677, 4825, 4184, 9738, 2]
 // Exports: default
 
-// Module 9736 (ChannelVoiceChatModal)
+// Module 9737 (ChannelVoiceChatModal)
 import noop from "noop";
 import { jsx } from "jsxProd";
 

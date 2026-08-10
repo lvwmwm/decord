@@ -1,10 +1,10 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 10089
+// Function ID: 10090
 // Name: SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY
-// Dependencies: [21, 4643, 1236, 3222, 8213, 7757, 4509, 10089, 1988, 10098, 10102, 2]
+// Dependencies: [21, 4643, 1236, 3222, 8213, 7757, 4509, 10090, 1988, 10099, 10103, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert
 
-// Module 10088 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
+// Module 10089 (SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY)
 import { jsx } from "jsxProd";
 
 let c4 = "social-layer-storefront-product-details-native-modal";
@@ -29,7 +29,7 @@ export const openSocialLayerStorefrontProductDetailsModal = function openSocialL
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_product_details_modal" })) {
     const socialLayerStorefrontConfig = tmp(7757).fetchSocialLayerStorefrontConfig();
     const obj5 = importDefault(4509);
-    obj5.pushLazy(tmp(1988)(10089, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
+    obj5.pushLazy(tmp(1988)(10090, dependencyMap.paths), closure_0, c4, { presentation: "modal" });
     const tmpResult = tmp(7757);
   } else {
     obj = { title: null, body: null };
@@ -46,7 +46,7 @@ export const closeSocialLayerStorefrontProductDetailsModal = function closeSocia
 };
 export const openSocialLayerStorefrontGiftModal = function openSocialLayerStorefrontGiftModal(closure_0) {
   if (obj.getIsEligibleForSocialLayerStorefrontMobilePurchasing({ location: "social_layer_storefront_gift_modal" })) {
-    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(10098, dependencyMap.paths), closure_0, c5);
+    importDefault(4509).pushLazy(require(1988) /* asyncRequireImpl */(10099, dependencyMap.paths), closure_0, c5);
     const obj2 = importDefault(4509);
   }
 };

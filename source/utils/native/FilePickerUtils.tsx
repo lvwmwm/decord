@@ -1,10 +1,10 @@
-// Module ID: 10164
-// Function ID: 10165
+// Module ID: 10165
+// Function ID: 10166
 // Name: _handleDocumentSelection
-// Dependencies: [5, 676, 10165, 500, 4643, 1236, 4498, 2]
+// Dependencies: [5, 676, 10166, 500, 4643, 1236, 4498, 2]
 // Exports: handleDocumentSelection
 
-// Module 10164 (_handleDocumentSelection)
+// Module 10165 (_handleDocumentSelection)
 import getSystemLocale from "getSystemLocale";
 import { AnalyticEvents } from "ME";
 
@@ -134,9 +134,9 @@ function _handleDocumentSelection() {
           } else if (2 === tmp7) {
             c4 = 0;
             c4 = getSystemLocale;
-            obj3 = flag(10165);
+            obj3 = flag(10166);
             if (obj3.isErrorWithCode(c4)) {
-              if (c4.code === flag(10165).errorCodes.OPERATION_CANCELED) {
+              if (c4.code === flag(10166).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
                 return { value: "HermesInternal", done: null };
               }

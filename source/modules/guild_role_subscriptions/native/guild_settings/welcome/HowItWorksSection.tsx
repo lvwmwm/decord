@@ -1,10 +1,10 @@
-// Module ID: 16772
-// Function ID: 16773
+// Module ID: 16781
+// Function ID: 16782
 // Name: HowItWorksCard
-// Dependencies: [19, 17, 21, 4303, 712, 4299, 5268, 1236, 16773, 1297, 16774, 16775, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4299, 5268, 1236, 16782, 1297, 16783, 16784, 2]
 // Exports: default
 
-// Module 16772 (HowItWorksCard)
+// Module 16781 (HowItWorksCard)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -46,19 +46,19 @@ export default function HowItWorksSection() {
   obj = { cardNumber: 1, description: null, iconSource: null };
   const intl = require(1236) /* getSystemLocale */.intl;
   obj[1] = intl.string(require(1236) /* getSystemLocale */.t.lT0ZNS);
-  obj[2] = importDefault(16773);
+  obj[2] = importDefault(16782);
   const items = [callback(HowItWorksCard, obj), callback(require(1297) /* Button */.Spacer, { size: 12 }), ];
   const obj1 = { cardNumber: 2, description: null, iconSource: null };
   const intl2 = require(1236) /* getSystemLocale */.intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.ihN2Wb);
-  obj1[2] = importDefault(16774);
+  obj1[2] = importDefault(16783);
   items[2] = callback(HowItWorksCard, obj1);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj2 = { cardNumber: 3, description: null, iconSource: null };
   const intl3 = require(1236) /* getSystemLocale */.intl;
   obj2[1] = intl3.string(require(1236) /* getSystemLocale */.t.c8krDQ);
-  obj2[2] = importDefault(16775);
+  obj2[2] = importDefault(16784);
   items1[1] = callback(HowItWorksCard, obj2);
   obj[1] = items1;
   return callback2(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15290
+// Function ID: 15291
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 4124, 4189, 1369, 21, 3, 4303, 712, 15283, 4235, 589, 4271, 1236, 5397, 15284, 4299, 7985, 7984, 1297, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 4124, 4189, 1369, 21, 3, 4303, 712, 15291, 4235, 589, 4271, 1236, 5397, 15292, 4299, 7985, 7984, 1297, 4714, 2]
 // Exports: default
 
-// Module 15282 (GuildThemeNuxActionSheet)
+// Module 15290 (GuildThemeNuxActionSheet)
 import snapshotSelectedGuildId from "snapshotSelectedGuildId";
 import _slicedToArray from "_slicedToArray";
 import context from "context";
@@ -54,8 +54,8 @@ export default function GuildThemeNuxActionSheet(guildId) {
   let stateFromStores;
   let callback1;
   const tmp = createCacheKey();
-  [tmp5, c2] = callback2(React.useState(guildId(15283).getInitialGuildThemeNuxSelection), 2);
-  const tmp4 = callback2(React.useState(guildId(15283).getInitialGuildThemeNuxSelection), 2);
+  [tmp5, c2] = callback2(React.useState(guildId(15291).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = callback2(React.useState(guildId(15291).getInitialGuildThemeNuxSelection), 2);
   [tmp7, c3] = callback2(React.useState(null), 2);
   const tmp6 = callback2(React.useState(null), 2);
   [tmp9, c4] = callback2(React.useState(false), 2);
@@ -199,7 +199,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   obj[1] = intl2.string(guildId(1236).t.cpT0Cq);
   obj[2] = callback3;
   obj[3] = tmp.container;
-  const items7 = [callback3(markAsDismissed(15284), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  const items7 = [callback3(markAsDismissed(15292), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   obj = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   const intl3 = tmp2(1236).intl;
   obj[4] = intl3.string(guildId(1236).t.Q9zFy9);

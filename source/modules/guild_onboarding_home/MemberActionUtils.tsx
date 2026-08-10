@@ -1,10 +1,10 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11660
+// Function ID: 11661
 // Name: useMemberActionsForChannel
 // Dependencies: [1971, 4505, 4506, 3917, 5845, 647, 1384, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11659 (useMemberActionsForChannel)
+// Module 11660 (useMemberActionsForChannel)
 import trackCommunicationDisabled from "trackCommunicationDisabled";
 import handleSettingsLoadSuccess from "handleSettingsLoadSuccess";
 import set from "set";

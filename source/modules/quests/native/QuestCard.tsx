@@ -1,9 +1,9 @@
-// Module ID: 14330
-// Function ID: 14331
+// Module ID: 14332
+// Function ID: 14333
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1903, 7160, 5161, 505, 21, 712, 4303, 4122, 4151, 5164, 7166, 11171, 10459, 1474, 10471, 14331, 7745, 7061, 7066, 7187, 589, 10476, 7183, 7158, 10481, 4239, 10113, 4005, 14358, 10488, 9516, 9517, 9521, 7188, 10490, 4271, 14360, 1988, 11172, 7011, 1236, 11165, 10587, 14364, 10461, 10478, 10479, 4720, 9452, 9283, 4039, 500, 9408, 4299, 14365, 5376, 14403, 5268, 4725, 691, 14391, 4712, 8439, 14371, 11168, 14404, 4714, 14407, 7751, 9862, 14392, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 7160, 5161, 505, 21, 712, 4303, 4122, 4151, 5164, 7166, 11172, 10460, 1474, 10472, 14333, 7745, 7061, 7066, 7187, 589, 10477, 7183, 7158, 10482, 4239, 10114, 4005, 14360, 10489, 9516, 9517, 9521, 7188, 10491, 4271, 14362, 1988, 11173, 7011, 1236, 11166, 10588, 14366, 10462, 10479, 10480, 4720, 9452, 9283, 4039, 500, 9408, 4299, 14367, 5376, 14405, 5268, 4725, 691, 14393, 4712, 8439, 14373, 11169, 14406, 4714, 14409, 7751, 9863, 14394, 2]
 
-// Module 14330 (ESTIMATED_CARD_HEIGHT)
+// Module 14332 (ESTIMATED_CARD_HEIGHT)
 import initializeState from "initializeState";
 import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet";
 import importAllResult from "useDeliveredDockCreative";
@@ -518,7 +518,7 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 let closure_0 = tmp2;
                 outer1_5.log("Enrolling in quest");
-                outer1_0(10461);
+                outer1_0(10462);
                 let obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!outer1_20) {
@@ -547,7 +547,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = openQuestAccessSuspendedBottomSheet;
-                  v0(14364)(obj);
+                  v0(14366)(obj);
                   dependencyMap = 3;
                 }
                 callback2();

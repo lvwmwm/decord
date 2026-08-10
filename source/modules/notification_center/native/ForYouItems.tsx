@@ -1,9 +1,9 @@
-// Module ID: 15525
-// Function ID: 15526
+// Module ID: 15533
+// Function ID: 15534
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4295, 4341, 1372, 1891, 1903, 15519, 676, 5830, 21, 4303, 4299, 712, 4733, 15524, 1236, 1384, 8149, 7220, 10186, 9989, 8006, 589, 8201, 1297, 11984, 15526, 1480, 4284, 13197, 7101, 698, 8334, 15527, 11083, 4002, 11106, 1988, 4271, 15529, 4262, 15521, 5761, 15530, 15531, 11, 4846, 15532, 7102, 12514, 1481, 3974, 3979, 15542, 15543, 15544, 15545, 15546, 15552, 810, 15553, 15554, 1351, 15523, 7745, 15555, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 4341, 1372, 1891, 1903, 15527, 676, 5830, 21, 4303, 4299, 712, 4733, 15532, 1236, 1384, 8149, 7220, 10187, 9990, 8006, 589, 8201, 1297, 11985, 15534, 1480, 4284, 13199, 7101, 698, 8334, 15535, 11084, 4002, 11107, 1988, 4271, 15537, 4262, 15529, 5761, 15538, 15539, 11, 4846, 15540, 7102, 12516, 1481, 3974, 3979, 15550, 15551, 15552, 15553, 15554, 15560, 810, 15561, 15562, 1351, 15531, 7745, 15563, 2]
 
-// Module 15525 (ForYouFooter)
+// Module 15533 (ForYouFooter)
 import addApplication from "addApplication";
 import handleSupportedURL from "handleSupportedURL";
 import importAllResult from "hasFlag";
@@ -37,7 +37,7 @@ const require = arg1;
 function ForYouFooter(loading) {
   let tmp = null;
   if (loading.loading) {
-    tmp = callback(require(15524) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
+    tmp = callback(require(15532) /* ForYouMentionPlaceholder */.ForYouMentionPlaceholder, {});
   }
   return tmp;
 }
@@ -251,7 +251,7 @@ function ForYouMessagePreviewV2(item) {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(10186);
+      let tmp29 = guild_id(10187);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1297).IconSizes.SMALL;
@@ -266,7 +266,7 @@ function ForYouMessagePreviewV2(item) {
         tmp29 = guild_id(8006);
       }
     }
-    tmp29 = guild_id(9989);
+    tmp29 = guild_id(9990);
   }
 }
 function ApplicationName(applicationId) {
@@ -280,7 +280,7 @@ function ApplicationName(applicationId) {
     obj = { application: null, textVariant: null, iconSize: 16 };
     obj[0] = stateFromStores;
     obj[1] = applicationId.textVariant;
-    tmp5 = callback(importDefault(11984), obj, stateFromStores.id);
+    tmp5 = callback(importDefault(11985), obj, stateFromStores.id);
   }
   return tmp5;
 }

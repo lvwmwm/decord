@@ -1,9 +1,9 @@
-// Module ID: 11240
-// Function ID: 11241
+// Module ID: 11241
+// Function ID: 11242
 // Name: items
-// Dependencies: [5, 32, 19, 17, 1973, 676, 21, 1236, 4303, 712, 5369, 9462, 4730, 698, 11241, 4002, 4493, 9877, 4299, 7985, 7984, 7976, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 1973, 676, 21, 1236, 4303, 712, 5369, 9462, 4730, 698, 11242, 4002, 4493, 9878, 4299, 7985, 7984, 7976, 4714, 2]
 
-// Module 11240 (items)
+// Module 11241 (items)
 import ME from "ME";
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "context";
@@ -119,7 +119,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
               return obj;
             } else {
               let closure_1 = tmp4;
-              let obj3 = outer1_1(11241);
+              let obj3 = outer1_1(11242);
               dependencyMap = 1;
               c3 = 1;
               const obj1 = { value: null, done: false };
@@ -146,7 +146,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             obj3 = { user: null };
             obj3[0] = c0;
             obj[1] = intl.formatToPlainString(outer1_0(1236).t.O9C3Nt, obj3);
-            obj[2] = outer1_1(9877);
+            obj[2] = outer1_1(9878);
             obj8.open(obj);
             dependencyMap();
             c3 = 3;

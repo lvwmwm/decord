@@ -1,10 +1,10 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12040
+// Function ID: 12041
 // Name: headerTitle
-// Dependencies: [5, 32, 19, 17, 1903, 6876, 12031, 12032, 676, 4516, 21, 4303, 712, 5267, 12030, 4299, 1236, 12034, 12040, 1609, 1480, 589, 12038, 500, 691, 698, 4271, 12041, 1988, 4861, 4848, 12042, 12043, 12046, 12049, 12050, 12051, 12052, 12054, 503, 5270, 12056, 12057, 5783, 2]
+// Dependencies: [5, 32, 19, 17, 1903, 6876, 12032, 12033, 676, 4516, 21, 4303, 712, 5267, 12031, 4299, 1236, 12035, 12041, 1609, 1480, 589, 12039, 500, 691, 698, 4271, 12042, 1988, 4861, 4848, 12043, 12044, 12047, 12050, 12051, 12052, 12053, 12055, 503, 5270, 12057, 12058, 5783, 2]
 // Exports: ContactSyncOnboardingModal
 
-// Module 12039 (headerTitle)
+// Module 12040 (headerTitle)
 import getState from "getState";
 import ContactSyncLandingImage from "ContactSyncLandingImage";
 import useSafeAreaInsets from "useSafeAreaInsets";
@@ -38,7 +38,7 @@ function OnboardingTrailingLanding() {
   const intl = require(1236) /* getSystemLocale */.intl;
   obj = { learnMoreUrl: null };
   const tmp = createCacheKey();
-  obj[0] = require(12034) /* _uploadContacts */.getOpenLearnMoreUrl();
+  obj[0] = require(12035) /* _uploadContacts */.getOpenLearnMoreUrl();
   obj[3] = intl.format(require(1236) /* getSystemLocale */.t["84S6+Z"], obj);
   return callback4(require(4299) /* Text */.Text, obj);
 }
@@ -49,7 +49,7 @@ function OnboardingTrailing(isOnboarding) {
     const obj = { discoverabilityEnabled: null, onValueChanged: null };
     obj[0] = tmp;
     obj[1] = tmp2;
-    tmp3Result = tmp3(importDefault(12040), obj);
+    tmp3Result = tmp3(importDefault(12041), obj);
   }
   return tmp3Result;
 }
@@ -122,7 +122,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
               let closure_1 = tmp2;
               let closure_0 = tmp2;
               if (!outer1_7) {
-                let obj2 = outer1_1(12038);
+                let obj2 = outer1_1(12039);
                 let tmp12 = outer1_6;
                 if (tmp12) {
                   let email;
@@ -172,7 +172,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           dependencyMap = 1;
           c3 = 1;
           const obj4 = { value: null, done: false };
-          obj4[0] = outer1_0(12030).startContactSync(c3);
+          obj4[0] = outer1_0(12031).startContactSync(c3);
           return obj4;
         } catch (tmp22) {
           c3 = tmp;
@@ -254,7 +254,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
           if (arg1) {
             callback();
           } else {
-            obj = outer1_0(12030);
+            obj = outer1_0(12031);
             obj3 = { onComplete: null, skip: true };
             obj3[0] = dependencyMap;
             const result = obj.closeContactSyncModal(obj3);
@@ -328,7 +328,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
   const tmp5 = callback2();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  first(12049)(navigation, navigateToLandingPage.navigateToLandingPage);
+  first(12050)(navigation, navigateToLandingPage.navigateToLandingPage);
   _require = undefined;
   _require = callback((arg0) => {
     let closure_0 = arg0;
@@ -364,7 +364,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
               let closure_1 = tmp2;
               dependencyMap(true);
               outer2_9(callback);
-              let obj1 = callback(12030);
+              let obj1 = callback(12031);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -434,7 +434,7 @@ function ContactSyncNameInputScreen(navigateToLandingPage) {
     tmp12 = isNameFromContactBook;
   }
   obj[4] = tmp12;
-  obj[1] = closure_16(first(12051), obj);
+  obj[1] = closure_16(first(12052), obj);
   return closure_16(tmp10, obj);
 }
 function ContactSyncSuggestionScreen(onComplete) {
@@ -488,8 +488,8 @@ class ContactSyncModal {
     c2 = undefined;
     useState = undefined;
     c4 = undefined;
-    f89181 = undefined;
-    tmp = c4(f89181.useState(false), 2);
+    f89198 = undefined;
+    tmp = c4(f89198.useState(false), 2);
     first = tmp[0];
     c2 = first;
     useState = tmp[1];
@@ -497,7 +497,7 @@ class ContactSyncModal {
     c4 = tmp3;
     items = [];
     items[0] = tmp3;
-    effect = f89181.useEffect(() => {
+    effect = f89198.useEffect(() => {
       if (c4) {
         const result = onComplete(first[14]).refreshContactSyncPermissionStatus();
         const obj = onComplete(first[14]);
@@ -505,7 +505,7 @@ class ContactSyncModal {
     }, items);
     items1 = [];
     items1[0] = onComplete;
-    memo = f89181.useMemo(() => {
+    memo = f89198.useMemo(() => {
       let fn = onComplete;
       if (onComplete == null) {
         fn = () => {
@@ -514,7 +514,7 @@ class ContactSyncModal {
       }
       return fn;
     }, items1);
-    f89181 = memo;
+    f89198 = memo;
     items2 = [, , , ];
     items2[0] = tmp3;
     items2[1] = first;
@@ -523,7 +523,7 @@ class ContactSyncModal {
     items3 = [, ];
     items3[0] = tmp3;
     items3[1] = memo;
-    memo1 = f89181.useMemo(() => {
+    memo1 = f89198.useMemo(() => {
       let c4;
       let getState;
       let first;
@@ -578,7 +578,7 @@ class ContactSyncModal {
         return outer1_16(outer1_1(outer1_2[41]), obj);
       };
       obj6[5] = function render() {
-        return callback2(callback(12057).AddPhoneScreen, {});
+        return callback2(callback(12058).AddPhoneScreen, {});
       };
       obj1[outer1_13.ADD_PHONE] = obj6;
       const obj8 = { impressionName: onComplete(first[39]).ImpressionNames.USER_VERIFY_PHONE, impressionProperties: null, fullscreen: true, headerTitle: null, headerLeft: null, render: null };
@@ -592,7 +592,7 @@ class ContactSyncModal {
         return outer1_16(outer1_1(outer1_2[41]), obj);
       };
       obj8[5] = function render() {
-        return callback2(callback(12057).VerifyPhoneScreen, {});
+        return callback2(callback(12058).VerifyPhoneScreen, {});
       };
       obj1[outer1_13.VERIFY_PHONE] = obj8;
       const obj10 = { impressionName: onComplete(first[39]).ImpressionNames.USER_VERIFY_PASSWORD, impressionProperties: null, fullscreen: true, headerLeft: null, headerTitle: null, render: null };
@@ -606,12 +606,12 @@ class ContactSyncModal {
       };
       obj10[4] = outer1_20;
       obj10[5] = function render() {
-        return callback2(callback(12057).VerifyPasswordScreen, {});
+        return callback2(callback(12058).VerifyPasswordScreen, {});
       };
       obj1[outer1_13.VERIFY_PASSWORD] = obj10;
       return obj1;
     }, items2);
-    effect1 = f89181.useEffect(() => () => {
+    effect1 = f89198.useEffect(() => () => {
       if (!ContactSyncLandingImage) {
         let obj = outer1_0(outer1_2[14]);
         obj = { onComplete: null };

@@ -1,10 +1,10 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13322
+// Function ID: 13323
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 1372, 1961, 1960, 676, 21, 13308, 4210, 589, 9068, 9065, 5150, 7751, 1236, 7695, 712, 4498, 4271, 5151, 9721, 8058, 5262, 6012, 9021, 2]
+// Dependencies: [19, 1372, 1961, 1960, 676, 21, 13310, 4210, 589, 9068, 9065, 5150, 7751, 1236, 7695, 712, 4498, 4271, 5151, 9722, 8058, 5262, 6012, 9021, 2]
 // Exports: default
 
-// Module 13320 (GuildActionSheetTabItems)
+// Module 13322 (GuildActionSheetTabItems)
 import registerAsset from "registerAsset";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import comparator from "comparator";
@@ -27,7 +27,7 @@ export default function GuildActionSheetTabItems(guild) {
   guild = guild.guild;
   let stateFromStores;
   let closure_2;
-  let obj = guild(13308);
+  let obj = guild(13310);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   const total = stateFromStores(4210)(guild.id).total;
   let obj1 = guild(589);
@@ -74,7 +74,7 @@ export default function GuildActionSheetTabItems(guild) {
     let obj3 = { variant: "secondary", label: null, icon: null, grow: true, onPress: null };
     const intl3 = tmp(1236).intl;
     obj3[1] = intl3.string(tmp(1236).t.VINpSK);
-    obj3[2] = tmp3(9721);
+    obj3[2] = tmp3(9722);
     obj3[4] = function onPress() {
       stateFromStores(outer1_3[17]).hideActionSheet();
       callback();

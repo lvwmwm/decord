@@ -1,10 +1,10 @@
-// Module ID: 14291
-// Function ID: 14292
+// Module ID: 14293
+// Function ID: 14294
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [19, 17, 4295, 21, 712, 4303, 500, 9386, 14292, 8870, 14293, 1609, 589, 14294, 4299, 1236, 9408, 4714, 2]
+// Dependencies: [19, 17, 4295, 21, 712, 4303, 500, 9386, 14294, 8870, 14295, 1609, 589, 14296, 4299, 1236, 9408, 4714, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14291 (BountiesRecapOrbsBackground)
+// Module 14293 (BountiesRecapOrbsBackground)
 import "noop";
 import get_ActivityIndicator from "Button";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -25,7 +25,7 @@ function BountiesRecapOrbsBackground(arg0) {
     obj = { style: null, needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, pointerEvents: "none", children: null };
     obj[0] = style;
     obj = { url: null, style: null, autoplay: null };
-    obj[0] = importDefault(14292);
+    obj[0] = importDefault(14294);
     obj[1] = closure_3.absoluteFillObject;
     obj[2] = !reducedMotion;
     obj[4] = tmp3(tmp(9386).APNGPlayer, obj);
@@ -33,7 +33,7 @@ function BountiesRecapOrbsBackground(arg0) {
   } else {
     const obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
     const obj2 = { uri: null };
-    obj2[0] = importDefault(14293);
+    obj2[0] = importDefault(14295);
     obj1[0] = obj2;
     obj1[1] = style;
     obj1[3] = reducedMotion;
@@ -81,7 +81,7 @@ export const BountiesScrollRecapPage = function BountiesScrollRecapPage(orbAmoun
   obj = { style: closure_3.absoluteFillObject, pointerEvents: "none", children: null };
   const obj1 = { source: null, style: null, resizeMode: "cover", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(14294);
+  obj2[0] = importDefault(14296);
   obj1[0] = obj2;
   obj1[1] = closure_3.absoluteFillObject;
   obj1[3] = stateFromStores;

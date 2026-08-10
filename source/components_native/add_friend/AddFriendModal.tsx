@@ -1,10 +1,10 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13202
+// Function ID: 13203
 // Name: AddFriendModalScene
-// Dependencies: [32, 19, 17, 1903, 676, 12032, 21, 4303, 5236, 712, 12034, 4730, 698, 500, 1483, 4509, 4146, 1236, 8923, 6008, 13201, 5270, 4299, 13202, 13204, 1609, 5783, 2]
+// Dependencies: [32, 19, 17, 1903, 676, 12033, 21, 4303, 5236, 712, 12035, 4730, 698, 500, 1483, 4509, 4146, 1236, 8923, 6008, 13203, 5270, 4299, 13204, 13206, 1609, 5783, 2]
 // Exports: default
 
-// Module 13200 (AddFriendModalScene)
+// Module 13202 (AddFriendModalScene)
 import _slicedToArray from "_slicedToArray";
 import HeaderActionButton from "HeaderActionButton";
 import get_ActivityIndicator from "getSystemLocale";

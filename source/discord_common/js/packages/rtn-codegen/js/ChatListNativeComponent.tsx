@@ -1,9 +1,9 @@
-// Module ID: 11293
-// Function ID: 11294
+// Module ID: 11294
+// Function ID: 11295
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 11293 (__INTERNAL_VIEW_CONFIG)
+// Module 11294 (__INTERNAL_VIEW_CONFIG)
 import setRuntimeConfigProvider from "setRuntimeConfigProvider";
 
 const obj = { uiViewClassName: "DCDChatList", validAttributes: { floatingChatInputEnabled: true } };

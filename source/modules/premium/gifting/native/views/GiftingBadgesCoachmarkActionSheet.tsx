@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16012
+// Function ID: 16013
 // Name: HasBadgeCoachmark
-// Dependencies: [19, 17, 8790, 1369, 21, 4303, 712, 4271, 4159, 5397, 10040, 4299, 1236, 2380, 4714, 10033, 5748, 16004, 9575, 589, 8786, 2]
+// Dependencies: [19, 17, 8790, 1369, 21, 4303, 712, 4271, 4159, 5397, 10041, 4299, 1236, 2380, 4714, 10034, 5748, 16013, 9575, 589, 8786, 2]
 // Exports: default
 
-// Module 16003 (HasBadgeCoachmark)
+// Module 16012 (HasBadgeCoachmark)
 import initialize from "initialize";
 import get_ActivityIndicator from "metadata";
 import map from "map";
@@ -44,7 +44,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   if (tmp4Result) {
     const obj1 = { icon: null, size: 120 };
     obj1[0] = currentTier.simple_icon_url;
-    tmp4Result = tmp4(importDefault(10040), obj1);
+    tmp4Result = tmp4(importDefault(10041), obj1);
   }
   obj[1] = tmp4Result;
   const items2 = [closure_8(closure_5, obj), , ];
@@ -99,7 +99,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   obj = { style: tmp.graphicContainer, children: null };
   const obj1 = { source: null, style: null };
   const obj2 = { uri: null };
-  obj2[0] = importDefault(16004);
+  obj2[0] = importDefault(16013);
   obj1[0] = obj2;
   obj1[1] = tmp.newBadgeImage;
   obj[1] = callback(closure_4, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11396
+// Function ID: 11397
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 4295, 11391, 21, 4303, 8403, 1382, 10995, 11396, 589, 8070, 1297, 4299, 2]
+// Dependencies: [19, 17, 4295, 11392, 21, 4303, 8403, 1382, 10996, 11397, 589, 8070, 1297, 4299, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 11395 (ForumPostUsername)
+// Module 11396 (ForumPostUsername)
 import "noop";
 import { View } from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -33,7 +33,7 @@ function ForumPostUsername(arg0) {
   if (useForumChannelStore(thread.parent_id).layoutType === require(1382) /* set */.ForumLayout.GRID) {
     num = 72;
   }
-  const diff = importDefault(10995)() - tmp2(11396).GRID_HORIZONTAL_PADDING - num;
+  const diff = importDefault(10996)() - tmp2(11397).GRID_HORIZONTAL_PADDING - num;
   let tmp2Result = tmp2(589);
   const items = [maybeApplyNoTextColorForLightCustomTheme];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);

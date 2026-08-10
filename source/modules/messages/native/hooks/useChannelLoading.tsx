@@ -1,10 +1,10 @@
-// Module ID: 11011
-// Function ID: 11012
+// Module ID: 11012
+// Function ID: 11013
 // Name: useChannelLoading
-// Dependencies: [32, 19, 11012, 8610, 4731, 2]
+// Dependencies: [32, 19, 11013, 8610, 4731, 2]
 // Exports: default
 
-// Module 11011 (useChannelLoading)
+// Module 11012 (useChannelLoading)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

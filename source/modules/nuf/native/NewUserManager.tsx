@@ -1,9 +1,9 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16509
+// Function ID: 16510
 // Name: items
-// Dependencies: [5, 8471, 4998, 1903, 5345, 12059, 676, 12073, 16501, 12030, 12058, 691, 9065, 709, 5261, 12037, 12100, 2]
+// Dependencies: [5, 8471, 4998, 1903, 5345, 12060, 676, 12074, 16510, 12031, 12059, 691, 9065, 709, 5261, 12038, 12101, 2]
 
-// Module 16500 (items)
+// Module 16509 (items)
 import NewUserTypes from "NewUserTypes";
 import handleSetLocationMetadata from "handleSetLocationMetadata";
 import set from "set";
@@ -74,7 +74,7 @@ const items = [
       }
     },
     transitionToStep() {
-      const result = require(12058) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(691) /* keys */.ModalAnimation.SLIDE_IN, true);
+      const result = require(12059) /* _startContactSyncForDiscoverability */.transitionToHubEmailConnectionModal(require(691) /* keys */.ModalAnimation.SLIDE_IN, true);
     }
   },
   {
@@ -83,7 +83,7 @@ const items = [
       return store2.getType() === NewUserTypes.ORGANIC_REGISTERED;
     },
     transitionToStep() {
-      return require(12058) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(691) /* keys */.ModalAnimation.SLIDE_IN);
+      return require(12059) /* _startContactSyncForDiscoverability */.transitionToNUFGuildTemplatesModal(require(691) /* keys */.ModalAnimation.SLIDE_IN);
     }
   },
 

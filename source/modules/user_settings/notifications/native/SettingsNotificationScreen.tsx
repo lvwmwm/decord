@@ -1,9 +1,9 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14665
+// Function ID: 14666
 // Name: SystemNotificationsSubLabel
-// Dependencies: [19, 17, 14664, 8082, 21, 4303, 712, 11779, 14665, 14666, 4299, 1236, 5376, 7793, 7053, 10446, 14667, 14668, 13886, 2]
+// Dependencies: [19, 17, 14666, 8082, 21, 4303, 712, 11780, 14667, 14668, 4299, 1236, 5376, 7793, 7053, 10447, 14669, 14670, 13888, 2]
 
-// Module 14663 (SystemNotificationsSubLabel)
+// Module 14665 (SystemNotificationsSubLabel)
 import importAllResult from "set";
 import { View } from "prefetchFamilyCenterAgeGroupWhen";
 import { initializeAndroidNotificationSettingsStore as closure_5 } from "_initializeAndroidNotificationSettingsStore";
@@ -17,10 +17,10 @@ let metroImportAll;
 const require = arg1;
 function SystemNotificationsSubLabel() {
   const tmp = callback2();
-  let obj = require(11779) /* _requestPushNotificationPermission */;
+  let obj = require(11780) /* _requestPushNotificationPermission */;
   let showReactivationPrompt = obj.useShowReactivationPrompt();
-  let obj1 = importDefault(14665);
-  let obj2 = require(14666) /* hasAndroidNotificationChannels */;
+  let obj1 = importDefault(14667);
+  let obj2 = require(14668) /* hasAndroidNotificationChannels */;
   let result = obj2.hasAndroidNotificationChannels();
   if (result) {
     obj = { variant: "text-sm/medium", color: "text-muted", children: null };
@@ -67,7 +67,7 @@ let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
   isFamilyCenterV3Enabled = isFamilyCenterV3Enabled(7053).useIsFamilyCenterV3Enabled({ location: "SettingsNotificationsScreen" });
   let obj = isFamilyCenterV3Enabled(7053);
-  let tmp2 = !importDefault(14665).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
+  let tmp2 = !importDefault(14667).useConfig({ location: "SettingsNotificationsScreen" }).inHoldout;
   importDefault = tmp2;
   let items = [tmp2];
   const node = importAllResult.useMemo(() => {
@@ -153,7 +153,7 @@ const memoResult = importAllResult.memo(() => {
   const effect1 = importAllResult.useEffect(() => {
     const result = isFamilyCenterV3Enabled(outer1_2[17]).prefetchFamilyCenterAgeGroupWhen(isFamilyCenterV3Enabled);
   }, items1);
-  return callback(importDefault(13886), { node });
+  return callback(importDefault(13888), { node });
 });
 let result = require("_initializeAndroidNotificationSettingsStore").fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationScreen.tsx");
 

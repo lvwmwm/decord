@@ -1,10 +1,10 @@
-// Module ID: 12604
-// Function ID: 12605
+// Module ID: 12606
+// Function ID: 12607
 // Name: createEmbeddedActivityInviteEmbed
-// Dependencies: [32, 17, 1371, 8242, 4341, 1218, 1372, 4288, 3938, 1903, 10991, 7196, 709, 8241, 8053, 4764, 1236, 4494, 12605, 2]
+// Dependencies: [32, 17, 1371, 8242, 4341, 1218, 1372, 4288, 3938, 1903, 10992, 7196, 709, 8241, 8053, 4764, 1236, 4494, 12607, 2]
 // Exports: createEmbeddedActivityInviteEmbed
 
-// Module 12604 (createEmbeddedActivityInviteEmbed)
+// Module 12606 (createEmbeddedActivityInviteEmbed)
 import _slicedToArray from "_slicedToArray";
 import { Image } from "computeChannelName";
 import participantFromServer from "participantFromServer";
@@ -108,7 +108,7 @@ export const createEmbeddedActivityInviteEmbed = function createEmbeddedActivity
           }
           if (null != id) {
             if (null != id2) {
-              tmp25Result = tmp25(12605);
+              tmp25Result = tmp25(12607);
               const obj1 = { channelId: null, guildId: null, applicationId: null };
               obj1[0] = id;
               obj1[1] = id2;

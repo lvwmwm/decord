@@ -1,10 +1,10 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11768
+// Function ID: 11769
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 1971, 21, 4303, 712, 589, 11601, 1236, 5268, 4299, 2]
+// Dependencies: [19, 17, 1971, 21, 4303, 712, 589, 11602, 1236, 5268, 4299, 2]
 // Exports: default
 
-// Module 11767 (ApplicationSectionHeader)
+// Module 11768 (ApplicationSectionHeader)
 import "noop";
 import { View } from "get ActivityIndicator";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -40,7 +40,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  const applicationCommandsIconSource = section(11601).getApplicationCommandsIconSource(section, stateFromStores);
+  const applicationCommandsIconSource = section(11602).getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
     nick = stateFromStores.nick;

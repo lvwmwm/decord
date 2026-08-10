@@ -1,10 +1,10 @@
-// Module ID: 11304
-// Function ID: 11305
+// Module ID: 11305
+// Function ID: 11306
 // Name: AppealIngestionPolicySummary
 // Dependencies: [19, 17, 21, 4303, 712, 7804, 4151, 4299, 1236, 2]
 // Exports: default
 
-// Module 11304 (AppealIngestionPolicySummary)
+// Module 11305 (AppealIngestionPolicySummary)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

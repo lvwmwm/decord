@@ -1,10 +1,10 @@
-// Module ID: 14053
-// Function ID: 14054
+// Module ID: 14055
+// Function ID: 14056
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 3938, 21, 4303, 712, 5728, 5748, 1297, 14047, 1236, 5328, 4299, 5767, 14054, 589, 2]
+// Dependencies: [19, 17, 3938, 21, 4303, 712, 5728, 5748, 1297, 14049, 1236, 5328, 4299, 5767, 14056, 589, 2]
 // Exports: default
 
-// Module 14053 (IgnoredUsersList)
+// Module 14055 (IgnoredUsersList)
 import "noop";
 import { ScrollView } from "get ActivityIndicator";
 import upsertRelationship from "upsertRelationship";
@@ -20,7 +20,7 @@ function IgnoredUsersList(userIds) {
   importDefault(5728);
   if (0 === userIds.length) {
     let obj = { Illustration: null, body: null };
-    obj[0] = require(14047) /* getBlockedSource */.Blocked;
+    obj[0] = require(14049) /* getBlockedSource */.Blocked;
     const intl = require(1236) /* getSystemLocale */.intl;
     obj[1] = intl.string(require(1236) /* getSystemLocale */.t.PYrWFW);
     let tmp7 = callback(require(1297) /* Button */.EmptyState, obj);

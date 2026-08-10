@@ -1,10 +1,10 @@
-// Module ID: 12167
-// Function ID: 12168
+// Module ID: 12169
+// Function ID: 12170
 // Name: useCanGiftProduct
 // Dependencies: [9348, 9351, 7013, 7012, 1930, 3947, 3960, 2]
 // Exports: useCanGiftProduct
 
-// Module 12167 (useCanGiftProduct)
+// Module 12169 (useCanGiftProduct)
 let result = require("getItemRecordsFromPurchases").fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
 
 export const useCanGiftProduct = function useCanGiftProduct(product) {

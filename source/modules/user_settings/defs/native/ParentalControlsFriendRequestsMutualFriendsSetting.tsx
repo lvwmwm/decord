@@ -1,9 +1,9 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14910
+// Function ID: 14911
 // Name: toggle
-// Dependencies: [19, 6996, 8082, 676, 7339, 14070, 6013, 1384, 10446, 1236, 2]
+// Dependencies: [19, 6996, 8082, 676, 7339, 14072, 6013, 1384, 10447, 1236, 2]
 
-// Module 14908 (toggle)
+// Module 14910 (toggle)
 import noop from "noop";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { FriendSourceFlags } from "ME";
@@ -18,7 +18,7 @@ createToggle = {
   parent: require("MobileSetting").MobileSetting.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsMutualFriendsSettingValue() {
     const selectedTeenId = controlledSetting(7339).useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(14070).ParentalControlledFriendSourceFlags;
+    const ParentalControlledFriendSourceFlags = controlledSetting(14072).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return React.useMemo(() => controlledSetting(outer1_2[6]).computeFlags(controlledSetting), items).mutualFriends;
@@ -26,9 +26,9 @@ createToggle = {
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      const ParentalControlledFriendSourceFlags = require(14070) /* result */.ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags = require(14072) /* result */.ParentalControlledFriendSourceFlags;
       const controlledSetting = ParentalControlledFriendSourceFlags.getControlledSetting(selectedTeenId);
-      const ParentalControlledFriendSourceFlags2 = require(14070) /* result */.ParentalControlledFriendSourceFlags;
+      const ParentalControlledFriendSourceFlags2 = require(14072) /* result */.ParentalControlledFriendSourceFlags;
       const obj = importAll(1384);
       if (arg0) {
         let addFlagResult = obj.addFlag(controlledSetting, FriendSourceFlags.MUTUAL_FRIENDS);

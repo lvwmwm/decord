@@ -1,8 +1,8 @@
-// Module ID: 15167
-// Function ID: 15168
-// Dependencies: [19, 17, 9794, 4500, 21, 4303, 9795, 4720, 8388, 2]
+// Module ID: 15169
+// Function ID: 15170
+// Dependencies: [19, 17, 9795, 4500, 21, 4303, 9796, 4720, 8388, 2]
 
-// Module 15167
+// Module 15169
 import { View } from "get ActivityIndicator";
 import { MUTED_OPACITY_CONTENT } from "hairlineWidth";
 import { UnreadSetting } from "ReadStateTypes";
@@ -25,7 +25,7 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     flag = false;
   }
   const tmp = callback();
-  let obj = require(9795) /* getLayoutStyles */;
+  let obj = require(9796) /* getLayoutStyles */;
   const layoutStyles = obj.getLayoutStyles(layout, launchpad);
   require(4720) /* getFontScale */;
   let tmp8Result = null;
@@ -39,11 +39,11 @@ const memoResult = require("noop").memo(function ChannelUnreadBadge(panelVariant
     const unreadBadge = layoutStyles.unreadBadge;
     obj = { style: null, children: null };
     items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    items[3] = tmp2(9795).makeSizeStyle(layoutStyles.unreadBadge.size);
+    items[3] = tmp2(9796).makeSizeStyle(layoutStyles.unreadBadge.size);
     obj[0] = items;
     obj = { classic: null, size: null, badgeStyle: null };
     obj[0] = flag;
-    const tmp2Result = tmp2(9795);
+    const tmp2Result = tmp2(9796);
     const tmp9 = View;
     const _Math = Math;
     obj[1] = tmp2(8388).CHANNEL_BADGE_SIZE * Math.max(tmp6, 1);

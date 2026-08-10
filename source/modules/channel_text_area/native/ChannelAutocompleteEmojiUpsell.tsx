@@ -1,10 +1,10 @@
-// Module ID: 11760
-// Function ID: 11761
+// Module ID: 11761
+// Function ID: 11762
 // Name: ChannelAutocompleteEmojiUpsell
 // Dependencies: [19, 17, 1906, 21, 4303, 712, 5268, 1416, 4299, 1236, 2]
 // Exports: default
 
-// Module 11760 (ChannelAutocompleteEmojiUpsell)
+// Module 11761 (ChannelAutocompleteEmojiUpsell)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { EMOJI_URL_BASE_SIZE } from "set";

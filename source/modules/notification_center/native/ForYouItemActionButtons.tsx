@@ -1,10 +1,10 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15538
+// Function ID: 15539
 // Name: focusChatInput
-// Dependencies: [5, 19, 17, 1372, 1903, 676, 21, 4303, 1231, 4036, 4304, 4712, 4714, 1236, 4299, 647, 8083, 15178, 4284, 13197, 9632, 7101, 4313, 9243, 4002, 10215, 698, 2]
+// Dependencies: [5, 19, 17, 1372, 1903, 676, 21, 4303, 1231, 4036, 4304, 4712, 4714, 1236, 4299, 647, 8083, 15180, 4284, 13199, 9632, 7101, 4313, 9243, 4002, 10216, 698, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 15530 (focusChatInput)
+// Module 15538 (focusChatInput)
 import closure_3 from "ME";
 import handleSupportedURL from "handleSupportedURL";
 import { View } from "_sendWave";
@@ -336,7 +336,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
         const _HermesInternal = HermesInternal;
         obj[0] = "**" + username + "**";
         closure_5(intl.formatToPlainString(outer1_0(outer1_2[13]).t["5Uzkdp"], obj));
-        const tmp2 = closure_5;
+        const tmp6 = closure_5;
       }
       const result = closure_10.set(true);
       closure_0.enableBadge = false;
@@ -368,7 +368,7 @@ export const useItemActionButtonPropsV2 = function useItemActionButtonPropsV2(it
   const callback4 = React.useCallback(() => {
     const dMChannel = callback(navigation[22]).getDMChannel(id);
     dMChannel.then((arg0) => {
-      callback(13197)({ payload: callback(4284)("https://discord.com/channels/@me/" + arg0).payload, safe: true, navigationReplace: false });
+      callback(13199)({ payload: callback(4284)("https://discord.com/channels/@me/" + arg0).payload, safe: true, navigationReplace: false });
       let c0;
       let tmp3;
       if (null != arg0) {

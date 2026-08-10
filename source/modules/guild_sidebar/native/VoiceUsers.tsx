@@ -1,10 +1,10 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15253
+// Function ID: 15254
 // Name: AudienceItem
-// Dependencies: [19, 17, 1971, 21, 4303, 712, 9795, 8392, 589, 15247, 9452, 1236, 11888, 4299, 9238, 15251, 5926, 15254, 2]
+// Dependencies: [19, 17, 1971, 21, 4303, 712, 9796, 8392, 589, 15254, 9452, 1236, 11889, 4299, 9238, 15258, 5926, 15261, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15246 (AudienceItem)
+// Module 15253 (AudienceItem)
 import importAllResult from "noop";
 import { View } from "VoiceUsersItem";
 import trackCommunicationDisabled from "trackCommunicationDisabled";
@@ -27,7 +27,7 @@ function AudienceItem(arg0) {
     formatToPlainStringResult = intl.formatToPlainString(require(1236) /* getSystemLocale */.t["+v2pN2"], obj);
   }
   obj = { style: collapsed ? tmp2.listenersCollapsed : tmp2.listeners, children: null };
-  obj = { style: tmp2.listenersIconWrapper, children: callback(require(11888) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
+  obj = { style: tmp2.listenersIconWrapper, children: callback(require(11889) /* HeadphonesIcon */.HeadphonesIcon, obj1) };
   const items = [callback(View, obj), callback(require(4299) /* Text */.Text, { style: tmp2.listenersText, variant: c10, color: "redesign-channel-name-muted-text", children: formatToPlainStringResult })];
   obj[1] = items;
   return closure_7(View, obj);
@@ -49,12 +49,12 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   const round = tmp4(712).radii.round;
   let obj = { listeners: { display: "flex", flexDirection: "row", alignItems: "center", padding: 4, marginTop: 4, marginLeft: -8 }, listenersCollapsed: { flexDirection: "row", alignItems: "center", backgroundColor: BACKGROUND_BASE_LOWEST, borderRadius: round, marginLeft: -16, marginTop: 4, paddingLeft: 2, paddingRight: 6 }, listenersIconWrapper: null, listenersText: null, userCollapsedOverlap: null, headphonesIcon: null };
   obj = { alignItems: "center", justifyContent: "center", backgroundColor: BACKGROUND_BASE_LOWEST, marginRight: 8, marginLeft: 4, borderRadius: round };
-  const merged = Object.assign(require(9795) /* getLayoutStyles */.makeSizeStyle(20));
+  const merged = Object.assign(require(9796) /* getLayoutStyles */.makeSizeStyle(20));
   obj[2] = obj;
   obj[3] = { marginRight: 4 };
   obj[4] = { marginLeft: -20 };
-  const obj3 = require(9795) /* getLayoutStyles */;
-  obj[5] = require(9795) /* getLayoutStyles */.makeSizeStyle(14);
+  const obj3 = require(9796) /* getLayoutStyles */;
+  obj[5] = require(9796) /* getLayoutStyles */.makeSizeStyle(14);
   return obj;
 });
 let closure_12 = importAllResult.memo((voiceState) => {
@@ -93,7 +93,7 @@ let closure_12 = importAllResult.memo((voiceState) => {
   obj[9] = voiceState2.sessionId;
   obj[10] = channel;
   obj[11] = isGuest;
-  obj[1] = closure_6(channel(15247), obj, user.id);
+  obj[1] = closure_6(channel(15254), obj, user.id);
   return closure_6(tmp6, obj);
 });
 const result = require("trackCommunicationDisabled").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");

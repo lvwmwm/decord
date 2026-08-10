@@ -1,9 +1,9 @@
-// Module ID: 12446
-// Function ID: 12447
+// Module ID: 12448
+// Function ID: 12449
 // Name: handleFeaturedOrDeveloperFetchSuccess
 // Dependencies: [12, 589, 709, 2]
 
-// Module 12446 (handleFeaturedOrDeveloperFetchSuccess)
+// Module 12448 (handleFeaturedOrDeveloperFetchSuccess)
 import { Store } from "initialize";
 
 const require = arg1;

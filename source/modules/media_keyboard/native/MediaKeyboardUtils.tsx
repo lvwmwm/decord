@@ -1,10 +1,10 @@
-// Module ID: 10008
-// Function ID: 10009
+// Module ID: 10009
+// Function ID: 10010
 // Name: handleLimitedPickerDialog
-// Dependencies: [5, 1304, 1372, 4640, 1960, 4639, 1604, 676, 4516, 4851, 8357, 4858, 4860, 4861, 698, 4872, 500, 4283, 10009, 1231, 10033, 4710, 10163, 10164, 12, 2]
+// Dependencies: [5, 1304, 1372, 4640, 1960, 4639, 1604, 676, 4516, 4851, 8357, 4858, 4860, 4861, 698, 4872, 500, 4283, 10010, 1231, 10034, 4710, 10164, 10165, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
-// Module 10008 (handleLimitedPickerDialog)
+// Module 10009 (handleLimitedPickerDialog)
 import map from "map";
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH";
 import ensureGuildLoaded from "ensureGuildLoaded";
@@ -165,7 +165,7 @@ function _handleAttachFile() {
       let obj3 = { pickMultiple: null, extensions: null };
       obj3[0] = callback > 1;
       obj3[1] = dependencyMap;
-      yield lib(10164).handleDocumentSelection(obj3);
+      yield lib(10165).handleDocumentSelection(obj3);
       if (2 === tmp5) {
         if (arg0 === 1) {
           let v02 = 3;
@@ -189,7 +189,7 @@ function _handleAttachFile() {
                   let closure_0 = arg0;
                   let c6 = 0;
                   let c7 = 0;
-                  return (/* F120052 */ function*() { ... })();
+                  return (/* F120093 */ function*() { ... })();
                 });
                 return function() {
                   const self = this;
@@ -289,7 +289,7 @@ function showSimpleMediaKeyboard(channel) {
   } else if (tmp.INTERACTION_MODAL === CHAT) {
     InteractionModal = DraftType.InteractionModal;
   }
-  let obj = _require(10009);
+  let obj = _require(10010);
   obj = {
     channel,
     draftType: InteractionModal,
@@ -669,8 +669,8 @@ function showSimpleMediaKeyboard(channel) {
         }
       });
     },
-    onClose: _require(10009).hideMediaKeyboardActionSheet,
-    onBack: _require(10009).hideMediaKeyboardActionSheet
+    onClose: _require(10010).hideMediaKeyboardActionSheet,
+    onBack: _require(10010).hideMediaKeyboardActionSheet
   };
   let result = obj.showMediaKeyboardActionSheet(obj);
 }
@@ -988,7 +988,7 @@ export const handleSelectGift = function handleSelectGift(analyticsLocations, ch
     };
   }
   obj1[4] = fn;
-  _require(10033).openGiftModal(obj1);
+  _require(10034).openGiftModal(obj1);
 };
 export const handleSelectThread = function handleSelectThread(channel, chatInput) {
   let obj = importDefault(698);
@@ -1008,8 +1008,8 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
     }
     obj3 = require(500) /* set */;
     const tmp6 = require;
-    const result = require(10163) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
-    const tmp6Result = require(10163) /* navigateToThreadCreation */;
+    const result = require(10164) /* navigateToThreadCreation */.navigateToThreadCreation(channel, "Plus Button");
+    const tmp6Result = require(10164) /* navigateToThreadCreation */;
   }
 };
 export { handleAttachFile };

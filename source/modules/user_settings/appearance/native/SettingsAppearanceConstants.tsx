@@ -1,9 +1,9 @@
-// Module ID: 14506
-// Function ID: 14507
+// Module ID: 14508
+// Function ID: 14509
 // Name: THEME_ITEM_WIDTH
 // Dependencies: [2]
 
-// Module 14506 (THEME_ITEM_WIDTH)
+// Module 14508 (THEME_ITEM_WIDTH)
 const result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceConstants.tsx");
 
 export default { THEME_ITEM_WIDTH: 56, THEME_ITEM_HEIGHT: 72, THEME_ITEM_PADDING: 4, THEME_ITEM_HORIZONTAL_MARGIN: 8, BACKGROUND_GRADIENT_DARK_OPACITY: 0.85, BACKGROUND_GRADIENT_LIGHT_OPACITY: 0.7 };

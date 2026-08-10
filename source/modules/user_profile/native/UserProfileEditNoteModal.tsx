@@ -1,10 +1,10 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12334
+// Function ID: 12335
 // Name: UserProfileEditNoteModal
-// Dependencies: [19, 21, 4509, 5783, 501, 1236, 4299, 5270, 12333, 2]
+// Dependencies: [19, 21, 4509, 5783, 501, 1236, 4299, 5270, 12335, 2]
 // Exports: default
 
-// Module 12332 (UserProfileEditNoteModal)
+// Module 12334 (UserProfileEditNoteModal)
 import "noop";
 import { jsx } from "jsxProd";
 

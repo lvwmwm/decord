@@ -1,10 +1,10 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11755
+// Function ID: 11756
 // Name: EmojiConfetti
-// Dependencies: [5, 32, 19, 17, 4295, 5176, 676, 1906, 21, 4303, 500, 712, 4036, 4304, 4730, 589, 4713, 3974, 3942, 8076, 1416, 5360, 698, 5748, 8650, 4271, 5764, 4299, 1236, 11662, 11755, 4714, 2]
+// Dependencies: [5, 32, 19, 17, 4295, 5176, 676, 1906, 21, 4303, 500, 712, 4036, 4304, 4730, 589, 4713, 3974, 3942, 8076, 1416, 5360, 698, 5748, 8650, 4271, 5764, 4299, 1236, 11663, 11756, 4714, 2]
 // Exports: default
 
-// Module 11754 (EmojiConfetti)
+// Module 11755 (EmojiConfetti)
 import getEmojiToGroupId from "getEmojiToGroupId";
 import closure_4 from "set";
 import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji";

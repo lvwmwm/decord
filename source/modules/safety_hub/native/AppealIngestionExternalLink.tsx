@@ -1,10 +1,10 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11306
+// Function ID: 11307
 // Name: AppealIngestionExternalLink
 // Dependencies: [19, 17, 21, 4303, 712, 4846, 3998, 4299, 1297, 8031, 2]
 // Exports: default
 
-// Module 11305 (AppealIngestionExternalLink)
+// Module 11306 (AppealIngestionExternalLink)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

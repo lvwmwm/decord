@@ -1,10 +1,10 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14870
+// Function ID: 14871
 // Name: UserListItem
-// Dependencies: [19, 17, 1903, 676, 21, 4303, 712, 589, 14869, 4146, 8309, 5728, 8783, 5374, 1297, 1236, 5381, 4005, 1480, 14867, 4299, 7745, 9209, 2]
+// Dependencies: [19, 17, 1903, 676, 21, 4303, 712, 589, 14871, 4146, 8309, 5728, 8783, 5374, 1297, 1236, 5381, 4005, 1480, 14869, 4299, 7745, 9209, 2]
 // Exports: default
 
-// Module 14868 (UserListItem)
+// Module 14870 (UserListItem)
 import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds";
 import { View } from "map";
 import mergeGuildAvatar from "mergeGuildAvatar";
@@ -43,7 +43,7 @@ function UserListItem(userId) {
   }, items3);
   let tmp8Result = null != stateFromStores;
   if (tmp8Result) {
-    obj = { user: null, guildId: "Array", size: "function pnpm_presetsTs1(event){return{transform:[{translateX:event.translationX}]};}" };
+    obj = { user: null, guildId: "Array", size: "Array" };
     obj[0] = stateFromStores;
     obj[2] = tmp(tmp2[14]).AvatarSizes.REFRESH_MEDIUM_32;
     tmp8Result = tmp8(tmp(tmp2[14]).Avatar, obj);

@@ -1,10 +1,10 @@
-// Module ID: 10725
-// Function ID: 10726
+// Module ID: 10726
+// Function ID: 10727
 // Name: getSafeArea
-// Dependencies: [5, 32, 19, 17, 7588, 4328, 676, 4206, 21, 4303, 3, 500, 10726, 514, 7810, 10727, 10728, 1606, 10729, 10730, 698, 1231, 647, 4642, 1236, 530, 10731, 1467, 10602, 10732, 8853, 4497, 10600, 2]
+// Dependencies: [5, 32, 19, 17, 7588, 4328, 676, 4206, 21, 4303, 3, 500, 10727, 514, 7810, 10728, 10729, 1606, 10730, 10731, 698, 1231, 647, 4642, 1236, 530, 10732, 1467, 10603, 10733, 8853, 4497, 10601, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 10725 (getSafeArea)
+// Module 10726 (getSafeArea)
 import closure_4 from "items3";
 import postMessageToWebView from "postMessageToWebView";
 import _createWebviewHtmlFile from "_createWebviewHtmlFile";

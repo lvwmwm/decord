@@ -1,10 +1,10 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11260
+// Function ID: 11261
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 676, 7779, 21, 4303, 712, 1236, 6977, 4271, 5764, 5824, 4299, 7967, 1297, 4714, 4498, 11229, 7784, 2]
+// Dependencies: [32, 19, 17, 676, 7779, 21, 4303, 712, 1236, 6977, 4271, 5764, 5824, 4299, 7967, 1297, 4714, 4498, 11230, 7784, 2]
 // Exports: default
 
-// Module 11259 (GuildRaidResolveActionSheet)
+// Module 11260 (GuildRaidResolveActionSheet)
 import _slicedToArray from "_slicedToArray";
 import module_7784 from "module_7784";
 import { View } from "collectGuildAnalyticsMetadata";

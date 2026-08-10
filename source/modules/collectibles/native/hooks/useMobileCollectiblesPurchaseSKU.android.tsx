@@ -1,10 +1,10 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12144
+// Function ID: 12145
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1903, 589, 9419, 10094, 2]
+// Dependencies: [1903, 589, 9419, 10095, 2]
 // Exports: default
 
-// Module 12142 (useMobileCollectiblesPurchaseSKU)
+// Module 12144 (useMobileCollectiblesPurchaseSKU)
 import mergeGuildAvatar from "mergeGuildAvatar";
 
 const require = arg1;
@@ -23,5 +23,5 @@ export default function useMobileCollectiblesPurchaseSKU(product) {
   obj.skuId = product.skuId;
   obj.platformSkuId = collectibleGoogleSkuId;
   obj.isFreeForStaffSelfPurchase = true;
-  return importDefault(10094)(obj);
+  return importDefault(10095)(obj);
 };

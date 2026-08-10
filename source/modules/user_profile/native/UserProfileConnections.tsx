@@ -1,10 +1,10 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12474
+// Function ID: 12475
 // Name: VerifiedIcon
-// Dependencies: [19, 17, 1975, 4147, 5776, 676, 5125, 21, 1297, 4303, 712, 11047, 4005, 4153, 11052, 11053, 8788, 1348, 5124, 5000, 1416, 8932, 4498, 3998, 4272, 5756, 4001, 1236, 4299, 5374, 4004, 7955, 4846, 4013, 589, 12473, 5775, 5767, 12476, 2]
+// Dependencies: [19, 17, 1975, 4147, 5776, 676, 5125, 21, 1297, 4303, 712, 11048, 4005, 4153, 11053, 11054, 8788, 1348, 5124, 5000, 1416, 8932, 4498, 3998, 4272, 5756, 4001, 1236, 4299, 5374, 4004, 7955, 4846, 4013, 589, 12475, 5775, 5767, 12478, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 12472 (VerifiedIcon)
+// Module 12474 (VerifiedIcon)
 import importAllResult from "getPlatformUserUrl";
 import get_ActivityIndicator from "useIsMobileVisualRefreshExperimentEnabled";
 import _getSystemLocale from "_getSystemLocale";
@@ -50,12 +50,12 @@ function VerifiedIcon(arg0) {
     obj = { style: null, children: null };
     obj[0] = tmp.verifiedIconContainer;
     obj = { source: null, color: null };
-    obj[0] = tmp4(11052);
+    obj[0] = tmp4(11053);
     obj[1] = PLATFORM_TWITTER;
     const merged = Object.assign(obj);
     const items = [callback(tmp2(1297).Icon, obj), ];
     obj1 = { source: null, color: null };
-    obj1[0] = tmp4(11053);
+    obj1[0] = tmp4(11054);
     obj1[1] = WHITE;
     const merged1 = Object.assign(obj);
     items[1] = callback(tmp2(1297).Icon, obj1);
@@ -464,7 +464,7 @@ let closure_20 = importAllResult.memo((application) => {
 const memoResult = importAllResult.memo((applicationRoleConnection) => {
   applicationRoleConnection = applicationRoleConnection.applicationRoleConnection;
   const tmp = callback3();
-  let obj = applicationRoleConnection(11047);
+  let obj = applicationRoleConnection(11048);
   const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
   let obj1 = importDefault(1416);
   obj = { id: applicationRoleConnection.application.id, icon: applicationRoleConnection.application.icon };
@@ -591,7 +591,7 @@ export const UserProfileAccountConnectionsCard = function UserProfileAccountConn
   const stateFromStores = userId(589).useStateFromStores(items1, () => obj.hidePersonalInformation);
   const obj3 = userId(589);
   const tmp2 = theme;
-  ({ connections, appIdentities } = theme(12473)(userId));
+  ({ connections, appIdentities } = theme(12475)(userId));
   if (!stateFromStores) {
     const items2 = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(connections.map((account) => outer1_13(outer1_19, { account, theme, locale: closure_2, userId }, account.id)), 0);
@@ -631,7 +631,7 @@ export const UserProfileApplicationRoleConnectionsCard = function UserProfileApp
   ({ userId, style } = arg0);
   const tmp = callback3();
   const tmp4 = importDefault(1348)("UserProfileConnections");
-  const arr = importDefault(12476)(userId);
+  const arr = importDefault(12478)(userId);
   let obj = require(589) /* initialize */;
   const items = [initialize];
   if (!obj.useStateFromStores(items, () => obj.hidePersonalInformation)) {

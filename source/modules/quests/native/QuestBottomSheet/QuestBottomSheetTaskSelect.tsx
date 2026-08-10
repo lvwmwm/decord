@@ -1,10 +1,10 @@
-// Module ID: 14401
-// Function ID: 14402
+// Module ID: 14403
+// Function ID: 14404
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 5161, 21, 5767, 5374, 12180, 1236, 8762, 2]
+// Dependencies: [19, 5161, 21, 5767, 5374, 12182, 1236, 8762, 2]
 // Exports: default
 
-// Module 14401 (QuestBottomSheetTaskSelect)
+// Module 14403 (QuestBottomSheetTaskSelect)
 import "noop";
 import { QuestTaskPlatform } from "QuestsExperimentLocations";
 import jsxProd from "jsxProd";
@@ -19,7 +19,7 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   onTaskSelect = onTaskSelect.onTaskSelect;
   let obj = { hasIcons: true, children: null };
   obj = { arrow: true, icon: null, label: null, onPress: null };
-  obj[1] = callback(onTaskSelect(12180).ScreenIcon, {});
+  obj[1] = callback(onTaskSelect(12182).ScreenIcon, {});
   const intl = onTaskSelect(1236).intl;
   obj[2] = intl.string(onTaskSelect(1236).t["QXc01+"]);
   obj[3] = function onPress() {

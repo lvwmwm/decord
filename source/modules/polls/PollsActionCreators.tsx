@@ -1,9 +1,9 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10283
+// Function ID: 10284
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 3930, 7054, 1218, 1372, 4640, 5131, 4521, 4639, 8321, 676, 38, 4642, 1236, 5232, 10283, 8320, 4498, 12, 589, 709, 7222, 10288, 4153, 8325, 6917, 8358, 4202, 2]
+// Dependencies: [5, 3930, 7054, 1218, 1372, 4640, 5131, 4521, 4639, 8321, 676, 38, 4642, 1236, 5232, 10284, 8320, 4498, 12, 589, 709, 7222, 10289, 4153, 8325, 6917, 8358, 4202, 2]
 
-// Module 10282 (getPollVoteEventProperties)
+// Module 10283 (getPollVoteEventProperties)
 import handleChanged from "handleChanged";
 import initialize from "initialize";
 import processMessage from "processMessage";
@@ -108,7 +108,7 @@ function handleShowVotesForAnswer(messageId) {
               const _String = String;
               answerId = String(message.poll.answers[0].answer_id);
             }
-            obj = importAll(10283);
+            obj = importAll(10284);
             obj = { message: null, initialAnswerId: null };
             obj[0] = message;
             obj[1] = answerId;
@@ -1026,7 +1026,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(10288);
+                obj1 = callback3(10289);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;

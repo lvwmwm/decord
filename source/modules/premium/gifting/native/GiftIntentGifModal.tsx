@@ -1,13 +1,13 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11215
+// Function ID: 11216
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1372, 676, 4296, 21, 4303, 712, 6917, 7142, 698, 5748, 5369, 589, 7976, 1236, 11215, 9932, 4714, 4509, 5716, 5270, 5783, 2]
+// Dependencies: [32, 5, 19, 17, 1372, 676, 4296, 21, 4303, 712, 6917, 7142, 698, 5748, 5369, 589, 7976, 1236, 11216, 9933, 4714, 4509, 5716, 5270, 5783, 2]
 // Exports: default
 
-// Module 11214 (_sendGiftIntentGif)
+// Module 11215 (_sendGiftIntentGif)
 import _slicedToArray from "_slicedToArray";
 import ME from "ME";
-import module_9932 from "module_9932";
+import module_9933 from "module_9933";
 import { View } from "getSystemLocale";
 import ensureGuildLoaded from "ensureGuildLoaded";
 import { AnalyticEvents } from "ME";

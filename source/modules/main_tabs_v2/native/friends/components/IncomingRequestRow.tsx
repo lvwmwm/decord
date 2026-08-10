@@ -1,10 +1,10 @@
-// Module ID: 15838
-// Function ID: 15839
+// Module ID: 15847
+// Function ID: 15848
 // Name: IncomingRequestRow
-// Dependencies: [19, 4295, 4341, 9620, 676, 21, 4036, 647, 1236, 4146, 15178, 11984, 9630, 15549, 15839, 2]
+// Dependencies: [19, 4295, 4341, 9620, 676, 21, 4036, 647, 1236, 4146, 15180, 11985, 9630, 15557, 15848, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 15838 (IncomingRequestRow)
+// Module 15847 (IncomingRequestRow)
 import noop from "noop";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import addApplication from "addApplication";

@@ -1,10 +1,10 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11632
+// Function ID: 11633
 // Name: ChatInputScrimGradient
 // Dependencies: [19, 17, 21, 4118, 4005, 712, 688, 4725, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 11631 (ChatInputScrimGradient)
+// Module 11632 (ChatInputScrimGradient)
 import "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";

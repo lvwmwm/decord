@@ -1,10 +1,10 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16297
+// Function ID: 16298
 // Name: executeRunnable
-// Dependencies: [5, 16289, 3, 12936, 675, 15, 9, 10, 589, 2]
+// Dependencies: [5, 16298, 3, 12938, 675, 15, 9, 10, 589, 2]
 // Exports: default
 
-// Module 16288 (executeRunnable)
+// Module 16297 (executeRunnable)
 import createFastConnectSocket from "createFastConnectSocket";
 import linkFromAppsFlyer from "linkFromAppsFlyer";
 
@@ -19,8 +19,8 @@ export default function executeRunnable(arg0, arg1) {
   const importDefault = arg1;
   new importDefault(3)(arg0).log("Loading the " + arg0 + " Discord runnable");
   const obj = new importDefault(3)(arg0);
-  importAll(12936).setIsPaused(false);
-  const obj2 = importAll(12936);
+  importAll(12938).setIsPaused(false);
+  const obj2 = importAll(12938);
   const combined = "executeRunnable:" + arg0;
   return importAll(675).withRequest(combined, callback(function*() {
     const obj4 = outer1_0(15);

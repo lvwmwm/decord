@@ -1,10 +1,10 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12125
+// Function ID: 12126
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 4994, 1376, 1372, 1891, 4390, 3938, 1903, 676, 1379, 1369, 21, 4303, 5236, 712, 589, 1236, 4764, 4494, 9638, 12125, 12126, 1297, 12127, 12128, 5268, 12129, 8679, 4846, 4299, 4146, 8302, 9057, 4123, 1358, 10000, 12130, 2]
+// Dependencies: [19, 17, 4994, 1376, 1372, 1891, 4390, 3938, 1903, 676, 1379, 1369, 21, 4303, 5236, 712, 589, 1236, 4764, 4494, 9638, 12126, 12127, 1297, 12128, 12129, 5268, 12130, 8679, 4846, 4299, 4146, 8302, 9057, 4123, 1358, 10001, 12131, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 12124 (ChannelTitleContent)
+// Module 12125 (ChannelTitleContent)
 import importAllResult from "computeChannelName";
 import { View } from "getSystemLocale";
 import _handleConnectionOpen from "_handleConnectionOpen";

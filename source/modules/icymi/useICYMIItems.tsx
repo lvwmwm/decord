@@ -1,10 +1,10 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15601
+// Function ID: 15602
 // Name: createItem
 // Dependencies: [19, 8898, 7304, 589, 8913, 2]
 // Exports: default
 
-// Module 15593 (createItem)
+// Module 15601 (createItem)
 import noop from "noop";
 import filterStaffGuild from "filterStaffGuild";
 

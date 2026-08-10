@@ -1,10 +1,10 @@
-// Module ID: 15721
-// Function ID: 15722
+// Module ID: 15729
+// Function ID: 15730
 // Name: useFullscreenPlaceholderCount
 // Dependencies: [4295, 8397, 1474, 589, 4036, 4304, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 15721 (useFullscreenPlaceholderCount)
+// Module 15729 (useFullscreenPlaceholderCount)
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
 import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes";
 

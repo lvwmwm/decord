@@ -1,9 +1,9 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11792
+// Function ID: 11793
 // Name: ChatInputCharCounter
 // Dependencies: [32, 19, 1903, 676, 1905, 21, 4303, 589, 3947, 8353, 8362, 4002, 1236, 4846, 4299, 7704, 2]
 
-// Module 11791 (ChatInputCharCounter)
+// Module 11792 (ChatInputCharCounter)
 import _slicedToArray from "_slicedToArray";
 import importAllResult from "noop";
 import mergeGuildAvatar from "mergeGuildAvatar";

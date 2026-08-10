@@ -1,10 +1,10 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10234
+// Function ID: 10235
 // Name: longPressMessageHandleReply
-// Dependencies: [7141, 1903, 7140, 676, 698, 10216, 6917, 10215, 4498, 2]
+// Dependencies: [7141, 1903, 7140, 676, 698, 10217, 6917, 10216, 4498, 2]
 // Exports: default
 
-// Module 10233 (longPressMessageHandleReply)
+// Module 10234 (longPressMessageHandleReply)
 import initialize from "initialize";
 import mergeGuildAvatar from "mergeGuildAvatar";
 import getState from "getState";
@@ -30,10 +30,10 @@ export default function longPressMessageHandleReply(arg0) {
     obj[0] = message.id;
     ({ id: obj11[1], guild_id: obj11[2] } = channel);
     const obj10 = importDefault(698);
-    obj[4] = require(10216) /* handleEdit */.getContextBarCancelReason("edit", actionSource);
+    obj[4] = require(10217) /* handleEdit */.getContextBarCancelReason("edit", actionSource);
     obj[5] = null != currentUser && currentUser.id === editingMessage.author.id;
     obj10.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-    const obj12 = require(10216) /* handleEdit */;
+    const obj12 = require(10217) /* handleEdit */;
   }
   obj = importDefault(6917);
   obj.endEditMessage(channel.id);
@@ -53,7 +53,7 @@ export default function longPressMessageHandleReply(arg0) {
           }
           obj[5] = tmp18;
           tmp3Result.track(AnalyticEvents.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-          require(10215) /* createPendingReply */.deletePendingReply(channel.id);
+          require(10216) /* createPendingReply */.deletePendingReply(channel.id);
           let text;
           if (chatInputRef != null) {
             const current = chatInputRef.current;
@@ -69,7 +69,7 @@ export default function longPressMessageHandleReply(arg0) {
               }
             }
           }
-          const obj9 = require(10215) /* createPendingReply */;
+          const obj9 = require(10216) /* createPendingReply */;
         }
       }
     }
@@ -91,7 +91,7 @@ export default function longPressMessageHandleReply(arg0) {
     tmp13 = message.author.id !== currentUser2.id;
   }
   const obj5 = require(4498) /* collectGuildAnalyticsMetadata */;
-  const pendingReply1 = tmp7(10215).createPendingReply({ message, channel, shouldMention: tmp13, source: actionSource });
+  const pendingReply1 = tmp7(10216).createPendingReply({ message, channel, shouldMention: tmp13, source: actionSource });
   if (chatInputRef != null) {
     const current3 = chatInputRef.current;
     if (current3 != null) {

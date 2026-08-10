@@ -1,8 +1,8 @@
-// Module ID: 13707
-// Function ID: 13708
-// Dependencies: [5, 17, 4295, 676, 1305, 13708, 709, 698, 13711, 10330, 13709, 4149, 4153, 2]
+// Module ID: 13709
+// Function ID: 13710
+// Dependencies: [5, 17, 4295, 676, 1305, 13710, 709, 698, 13713, 10331, 13711, 4149, 4153, 2]
 
-// Module 13707
+// Module 13709
 import AccessibilityFeatureFlags from "AccessibilityFeatureFlags";
 import get_ActivityIndicator from "get ActivityIndicator";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";
@@ -18,12 +18,12 @@ let result = require("maybeApplyNoTextColorForLightCustomTheme").fileFinishedImp
 export default {
   init() {
     const self = this;
-    importDefault(13708).init();
+    importDefault(13710).init();
     this.updateNativeColors();
     this.updateMotionSettings();
     maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.updateNativeColors);
     maybeApplyNoTextColorForLightCustomTheme.addChangeListener(this.updateMotionSettings);
-    let obj = importDefault(13708);
+    let obj = importDefault(13710);
     const subscription = importDefault(709).subscribe("CONNECTION_OPEN", this.updateMotionSettings);
     closure_5.addChangeListener(this.updateSystemAppearance);
     const listener = closure_4.addEventListener("screenReaderChanged", (arg0) => {
@@ -38,10 +38,10 @@ export default {
     let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    require(13711) /* updateSaturation */.updateSaturation(maybeApplyNoTextColorForLightCustomTheme.saturation);
+    require(13713) /* updateSaturation */.updateSaturation(maybeApplyNoTextColorForLightCustomTheme.saturation);
   },
   updateMotionSettings() {
-    importDefault(10330)(require(13709) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: maybeApplyNoTextColorForLightCustomTheme.useReducedMotion, prefersCrossfades: maybeApplyNoTextColorForLightCustomTheme.systemPrefersCrossfades });
+    importDefault(10331)(require(13711) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { reduceMotion: maybeApplyNoTextColorForLightCustomTheme.useReducedMotion, prefersCrossfades: maybeApplyNoTextColorForLightCustomTheme.systemPrefersCrossfades });
   },
   checkScreenreaderEnabled() {
     const self = this;
@@ -103,7 +103,7 @@ export default {
     })();
   },
   updateScreenReaderEnabled(screenReaderEnabled) {
-    importDefault(10330)(require(13709) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
+    importDefault(10331)(require(13711) /* A11Y_FEATURE_MAP */.accessibilityPreferencesSharedValue, { screenReaderEnabled });
   },
   updateSystemAppearance(colorScheme) {
     let DARK = SystemTheme.NO_PREFERENCE;

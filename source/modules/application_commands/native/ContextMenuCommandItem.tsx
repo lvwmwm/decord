@@ -1,10 +1,10 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 15942
+// Function ID: 15943
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4303, 712, 5374, 12, 1236, 11601, 5268, 1935, 4249, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 5374, 12, 1236, 11602, 5268, 1935, 4249, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 15933 (ContextMenuCommandItem)
+// Module 15942 (ContextMenuCommandItem)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";
@@ -43,7 +43,7 @@ export default function ContextMenuCommandItem(item) {
     }
     return intl.formatToPlainString(item(outer1_2[7]).t.Pk4Mz3, { applicationName: name, commandName: item.displayName });
   }, items);
-  let obj = item(11601);
+  let obj = item(11602);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { accessibilityLabel: memo, onPress, label: item.displayName, icon: null, trailing: null, start: null, end: null };
   let tmp8Result = null != applicationCommandsIconSource;
@@ -99,7 +99,7 @@ export const ContextMenuCommandAppItem = function ContextMenuCommandAppItem(sect
   let start;
   section = section.section;
   ({ onPress, start, end } = section);
-  let obj = require(11601) /* getApplicationCommandsIconSource */;
+  let obj = require(11602) /* getApplicationCommandsIconSource */;
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   obj = { onPress, label: section.name, icon: null, start: null, end: null, arrow: true };
   let tmp4Result = null != applicationCommandsIconSource;

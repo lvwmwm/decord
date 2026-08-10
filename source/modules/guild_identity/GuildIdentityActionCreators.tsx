@@ -1,10 +1,10 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10138
+// Function ID: 10139
 // Name: _saveGuildIdentityChanges
 // Dependencies: [5, 676, 709, 530, 8273, 8270, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 10137 (_saveGuildIdentityChanges)
+// Module 10138 (_saveGuildIdentityChanges)
 import SafetyScannedUploadSurface from "SafetyScannedUploadSurface";
 import { Endpoints } from "ME";
 

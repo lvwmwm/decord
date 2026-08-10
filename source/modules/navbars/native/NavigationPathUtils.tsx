@@ -1,10 +1,10 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12126
+// Function ID: 12127
 // Name: SpecialNavigationPath
 // Dependencies: [676, 4135, 2]
 // Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 12125 (SpecialNavigationPath)
+// Module 12126 (SpecialNavigationPath)
 import { Routes } from "ME";
 
 let obj = { FRIENDS: 0, [0]: "FRIENDS" };

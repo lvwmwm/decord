@@ -1,10 +1,10 @@
-// Module ID: 14418
-// Function ID: 14419
+// Module ID: 14420
+// Function ID: 14421
 // Name: enableSameAsDeviceTheme
 // Dependencies: [4119, 1302, 1305, 8698, 4153, 4149, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14418 (enableSameAsDeviceTheme)
+// Module 14420 (enableSameAsDeviceTheme)
 import isSyncedModeThemesEnabled from "isSyncedModeThemesEnabled";
 import handleThemeChange from "handleThemeChange";
 import SystemThemeState from "SystemThemeState";

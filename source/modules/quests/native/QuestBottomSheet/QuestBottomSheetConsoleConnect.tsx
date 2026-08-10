@@ -1,10 +1,10 @@
-// Module ID: 14402
-// Function ID: 14403
+// Module ID: 14404
+// Function ID: 14405
 // Name: NonInlineConsoleConnection
-// Dependencies: [19, 17, 676, 21, 712, 4303, 10459, 11171, 10488, 10490, 4271, 6016, 14360, 1988, 9516, 9517, 9521, 7188, 7187, 5164, 10491, 5767, 5374, 12182, 1236, 9305, 2]
+// Dependencies: [19, 17, 676, 21, 712, 4303, 10460, 11172, 10489, 10491, 4271, 6016, 14362, 1988, 9516, 9517, 9521, 7188, 7187, 5164, 10492, 5767, 5374, 12184, 1236, 9305, 2]
 // Exports: default
 
-// Module 14402 (NonInlineConsoleConnection)
+// Module 14404 (NonInlineConsoleConnection)
 import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource";
 import { View } from "AdCreativeType";
 import ME from "ME";
@@ -36,7 +36,7 @@ function ConsoleRow(onPress) {
   const type = merged.type;
   if (constants.PLAYSTATION === type) {
     let obj = { arrow: true, icon: null, label: null, subLabel: null, onPress: null };
-    obj[1] = callback(onPress(12182).PlaystationNeutralIcon, {});
+    obj[1] = callback(onPress(12184).PlaystationNeutralIcon, {});
     const intl3 = onPress(1236).intl;
     obj[2] = intl3.string(onPress(1236).t.JafL6p);
     let stringResult;
@@ -92,11 +92,11 @@ export default function QuestBottomSheetConsoleConnect(quest) {
     obj = { questId: quest.id, initialStep: closure_1, sourceQuestContent: closure_2 };
     obj.openLazy(quest(outer1_2[13])(outer1_2[12], outer1_2.paths), "QuestBottomSheet", obj);
   }
-  let obj = quest(10459);
+  let obj = quest(10460);
   xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  closure_4 = quest(11171).useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(11171);
-  closure_5 = quest(10488).useQuestImpressionId();
+  closure_4 = quest(11172).useTrackQuestContentClickedWithImpression();
+  let obj2 = quest(11172);
+  closure_5 = quest(10489).useQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   obj = {
     consoles: xboxAndPlaystationAccounts.useMemo(() => {

@@ -1,10 +1,10 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 9765
+// Function ID: 9766
 // Name: getStatusExpiryParts
 // Dependencies: [1236, 2]
 // Exports: getStatusExpiryParts
 
-// Module 9764 (getStatusExpiryParts)
+// Module 9765 (getStatusExpiryParts)
 const result = require("set").fileFinishedImporting("modules/multi_account/StatusUtils.tsx");
 
 export const getStatusExpiryParts = function getStatusExpiryParts(arg0) {

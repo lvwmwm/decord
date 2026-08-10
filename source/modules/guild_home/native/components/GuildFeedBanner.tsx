@@ -1,9 +1,9 @@
-// Module ID: 15659
-// Function ID: 15660
+// Module ID: 15667
+// Function ID: 15668
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 13315, 1891, 15660, 676, 21, 4303, 712, 4036, 1474, 4239, 13316, 500, 1416, 8438, 4304, 4307, 589, 7641, 10996, 4153, 15661, 15662, 5779, 4299, 1297, 4846, 4002, 1236, 15663, 2]
+// Dependencies: [19, 17, 13317, 1891, 15668, 676, 21, 4303, 712, 4036, 1474, 4239, 13318, 500, 1416, 8438, 4304, 4307, 589, 7641, 10997, 4153, 15669, 15670, 5779, 4299, 1297, 4846, 4002, 1236, 15671, 2]
 
-// Module 15659 (GuildFeedBanner)
+// Module 15667 (GuildFeedBanner)
 import importAllResult from "useIsWindowLarge";
 import get_ActivityIndicator from "timingNone";
 import initialize from "initialize";
@@ -94,7 +94,7 @@ function GuildFeedBanner(guild) {
   width = size.width;
   height = size.height;
   const tmp8 = sharedValue(4239)();
-  drawerWidth = guild(10996).useDrawerWidth();
+  drawerWidth = guild(10997).useDrawerWidth();
   const items4 = [width, height, tmp12, drawerWidth];
   obj = { style: tmp.container, children: null };
   const memo1 = obj2.useMemo(() => {
@@ -125,9 +125,9 @@ function GuildFeedBanner(guild) {
     const items6 = [obj3, animatedStyle];
     obj2[0] = items6;
     if (tmp2Result2.isThemeDark(tmp8)) {
-      let tmp6Result = tmp6(15661);
+      let tmp6Result = tmp6(15669);
     } else {
-      tmp6Result = tmp6(15662);
+      tmp6Result = tmp6(15670);
     }
     obj2[1] = tmp6Result;
     obj2[2] = handleLoad;
@@ -183,7 +183,7 @@ function GuildFeedBanner(guild) {
       };
       const obj14 = { style: null, source: null };
       obj14[0] = tmp.publicIcon;
-      obj14[1] = tmp6(15663);
+      obj14[1] = tmp6(15671);
       const items12 = [tmp17(tmp2(1297).Icon, obj14), ];
       const obj15 = { variant: "text-xs/medium", color: "text-default", children: null };
       let intl = tmp2(1236).intl;

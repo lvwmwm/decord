@@ -1,10 +1,10 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 12571
+// Function ID: 12572
 // Name: IntroDemo
-// Dependencies: [17, 5398, 21, 4303, 712, 8381, 12570, 4299, 1236, 12571, 10275, 4267, 5778, 2]
+// Dependencies: [17, 5398, 21, 4303, 712, 8381, 12572, 4299, 1236, 12573, 10276, 4267, 5778, 2]
 // Exports: default
 
-// Module 12569 (IntroDemo)
+// Module 12571 (IntroDemo)
 import get_ActivityIndicator from "get ActivityIndicator";
 import { ACTION_SHEET_BORDER_RADIUS } from "ACTION_SHEET_START_HEIGHT_RATIO";
 import jsxProd from "jsxProd";
@@ -21,7 +21,7 @@ function IntroDemo(isReminder) {
   let obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   obj = { style: tmp.messages, children: null };
   obj = { source: null, style: null };
-  obj[0] = { uri: importDefault(12571) };
+  obj[0] = { uri: importDefault(12573) };
   obj[1] = tmp.avatar;
   const items = [callback(closure_3, obj), ];
   const obj2 = { style: tmp.messageLines, children: null };
@@ -47,7 +47,7 @@ function IntroDemo(isReminder) {
   const items2 = [callback2(closure_5, obj), ];
   const obj7 = { style: tmp.sheet, children: null };
   const items3 = [callback(closure_5, { style: tmp.grabber }), , ];
-  const obj9 = { icon: require(10275) /* BookmarkIcon */.BookmarkIcon, label: null, highlighted: null };
+  const obj9 = { icon: require(10276) /* BookmarkIcon */.BookmarkIcon, label: null, highlighted: null };
   const intl5 = require(1236) /* getSystemLocale */.intl;
   obj9[1] = intl5.string(require(1236) /* getSystemLocale */.t.tpxJto);
   obj9[2] = !isReminder;
@@ -129,7 +129,7 @@ export default function ForLaterIntro(type) {
   const tmp4 = type.type === require(8381) /* SavedMessageSortTypes */.SavedMessageSortTypes.REMINDER;
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   obj = { style: tmp.container, children: null };
-  obj = { source: importDefault(12570), style: tmp.upsellImage };
+  obj = { source: importDefault(12572), style: tmp.upsellImage };
   const items = [callback(closure_3, obj), , ];
   const obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };

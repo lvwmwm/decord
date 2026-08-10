@@ -1,9 +1,9 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 16569
+// Function ID: 16570
 // Name: handleGuildCreate
 // Dependencies: [4351, 1960, 4124, 676, 5261, 5957, 5129, 1222, 709, 2]
 
-// Module 16560 (handleGuildCreate)
+// Module 16569 (handleGuildCreate)
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import handleConnectionOpen from "handleConnectionOpen";
 import { findFirstVoiceChannelId } from "handleConnectionOpen";

@@ -1,10 +1,10 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10273
+// Function ID: 10274
 // Name: getTimeSafe
 // Dependencies: [1903, 3925, 8381, 4523, 589, 709, 2]
 // Exports: getComparator
 
-// Module 10272 (getTimeSafe)
+// Module 10273 (getTimeSafe)
 import mergeGuildAvatar from "mergeGuildAvatar";
 import { Store } from "initialize";
 import set from "SavedMessageSortTypes";

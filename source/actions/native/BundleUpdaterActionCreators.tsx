@@ -1,8 +1,8 @@
-// Module ID: 16972
-// Function ID: 16973
+// Module ID: 16981
+// Function ID: 16982
 // Dependencies: [17, 4642, 1236, 2]
 
-// Module 16972
+// Module 16981
 import { NativeModules } from "get ActivityIndicator";
 
 let c4 = false;

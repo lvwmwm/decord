@@ -1,10 +1,10 @@
-// Module ID: 10268
-// Function ID: 10269
+// Module ID: 10269
+// Function ID: 10270
 // Name: GuildIconWithChannelTypeSizes
-// Dependencies: [19, 17, 21, 5779, 4303, 712, 4764, 10269, 8293, 1297, 2]
+// Dependencies: [19, 17, 21, 5779, 4303, 712, 4764, 10270, 8293, 1297, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 10268 (GuildIconWithChannelTypeSizes)
+// Module 10269 (GuildIconWithChannelTypeSizes)
 import noop from "noop";
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
@@ -72,5 +72,5 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   const items5 = [memo2];
   items3[1] = callback(View, { style: items4, children: callback(typeIconSize(1297).Icon, { style: items5, source: channelIcon }) });
   obj[6] = items3;
-  return callback2(typeIconSize(10269).Pile, obj);
+  return callback2(typeIconSize(10270).Pile, obj);
 };

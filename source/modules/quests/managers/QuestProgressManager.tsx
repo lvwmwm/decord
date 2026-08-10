@@ -1,9 +1,9 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 16974
+// Function ID: 16975
 // Name: isQuestProgressable
-// Dependencies: [5, 32, 1371, 10591, 4323, 4322, 4336, 4376, 7160, 16098, 5161, 10592, 687, 7166, 7158, 10588, 5162, 10461, 5164, 7187, 4475, 4474, 5261, 5168, 7183, 4367, 1351, 4473, 7181, 2]
+// Dependencies: [5, 32, 1371, 10592, 4323, 4322, 4336, 4376, 7160, 16107, 5161, 10593, 687, 7166, 7158, 10589, 5162, 10462, 5164, 7187, 4475, 4474, 5261, 5168, 7183, 4367, 1351, 4473, 7181, 2]
 
-// Module 16965 (isQuestProgressable)
+// Module 16974 (isQuestProgressable)
 import reset from "reset";
 import "_slicedToArray";
 import participantFromServer from "participantFromServer";
@@ -37,7 +37,7 @@ function isQuestProgressable(item10047) {
   return tmp2;
 }
 function handleEmbeddedActivityLaunchSuccess(applicationId) {
-  let obj = require(10588) /* questMatchesActivity */;
+  let obj = require(10589) /* questMatchesActivity */;
   const eligibleQuestsForApplicationId = obj.getEligibleQuestsForApplicationId(initializeState.quests, applicationId);
   for (const item10020 of eligibleQuestsForApplicationId) {
     if (tmp) {
@@ -50,7 +50,7 @@ function handleEmbeddedActivityLaunchSuccess(applicationId) {
       if (features.includes(require(5162) /* QuestVariants */.QuestVariants.MOBILE_ACTIVITY_QUEST)) {
         let tmp9 = tmp5;
         let tmp10 = tmp7;
-        let tmp6Result = tmp6(10461);
+        let tmp6Result = tmp6(10462);
         obj = { questContent: null, questContentCTA: null, sourceQuestContent: null };
         obj[0] = tmp6(5164).QuestContent.RUNNING_ACTIVITY;
         obj[1] = tmp6(7187).QuestContentCTA.START_QUEST;
@@ -84,7 +84,7 @@ getQuestLogger = getQuestLogger.getQuestLogger(getQuestLogger);
 class QuestProgressManager extends tmp4 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-    f114403 = applyArgumentsResult;
+    f114443 = applyArgumentsResult;
     obj = {};
     map = new Map();
     obj[require("set").FirstPartyQuestTaskTypes.PLAY_ON_DESKTOP] = map;
@@ -316,9 +316,9 @@ class QuestProgressManager extends tmp4 {
       EMBEDDED_ACTIVITY_UPDATE_V2: null,
       QUEST_APPLICATION_START_TIMER: null
     };
-    f114403 = undefined;
+    f114443 = undefined;
     closure_1 = applyArgumentsResult;
-    f114403 = isQuestRobloxRelated((arg0) => {
+    f114443 = isQuestRobloxRelated((arg0) => {
       let closure_0 = arg0;
       let c3 = 0;
       let c4 = 0;

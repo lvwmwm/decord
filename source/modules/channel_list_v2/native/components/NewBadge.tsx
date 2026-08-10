@@ -1,10 +1,10 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11668
+// Function ID: 11669
 // Name: NewBadge
 // Dependencies: [19, 17, 21, 4303, 500, 712, 4153, 8392, 4239, 4299, 1236, 2]
 // Exports: default
 
-// Module 11667 (NewBadge)
+// Module 11668 (NewBadge)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,10 +1,10 @@
-// Module ID: 15273
-// Function ID: 15274
+// Module ID: 15281
+// Function ID: 15282
 // Name: useFavoritesGuildHeaderAction
 // Dependencies: [19, 676, 9711, 1222, 1236, 3030, 2]
 // Exports: default
 
-// Module 15273 (useFavoritesGuildHeaderAction)
+// Module 15281 (useFavoritesGuildHeaderAction)
 import noop from "noop";
 import { Routes } from "ME";
 

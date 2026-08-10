@@ -1,10 +1,10 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 16825
+// Function ID: 16826
 // Name: pushTierEditScene
-// Dependencies: [16807, 676, 9021, 2]
+// Dependencies: [16816, 676, 9021, 2]
 // Exports: pushTierEditScene, pushTierTemplateSelectionScene
 
-// Module 16816 (pushTierEditScene)
+// Module 16825 (pushTierEditScene)
 import usePriceTiers from "usePriceTiers";
 import { GuildSettingsSections } from "ME";
 

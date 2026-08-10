@@ -1,9 +1,9 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16592
+// Function ID: 16593
 // Name: handlePushedModal
-// Dependencies: [9022, 1218, 9066, 16584, 1366, 676, 4159, 4158, 4511, 8459, 16585, 16586, 16594, 5261, 16595, 16869, 16871, 2]
+// Dependencies: [9022, 1218, 9066, 16593, 1366, 676, 4159, 4158, 4511, 8459, 16594, 16595, 16603, 5261, 16604, 16878, 16880, 2]
 
-// Module 16583 (handlePushedModal)
+// Module 16592 (handlePushedModal)
 import handleFormInit from "handleFormInit";
 import fetchFingerprint from "fetchFingerprint";
 import updateWithLatestInvite from "updateWithLatestInvite";
@@ -87,13 +87,13 @@ let closure_15 = {
       result = null != token.getToken();
     }
     if (result) {
-      result = !require(16585) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
-      const obj2 = require(16585) /* isEligibleForSafetyFlowsExperiment */;
+      result = !require(16594) /* isEligibleForSafetyFlowsExperiment */.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
+      const obj2 = require(16594) /* isEligibleForSafetyFlowsExperiment */;
     }
     return result;
   },
   getComponent() {
-    return require(16586) /* PhoneThenEmailInterstitial */.default;
+    return require(16595) /* PhoneThenEmailInterstitial */.default;
   }
 };
 const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
@@ -109,7 +109,7 @@ let closure_17 = {
     return action === UserRequiredActions.AGREEMENTS;
   },
   getComponent() {
-    return require(16594) /* handleTouch */.default;
+    return require(16603) /* handleTouch */.default;
   }
 };
 let prototype = function DeprecatedModalManager() {
@@ -152,7 +152,7 @@ let prototype = function DeprecatedModalManager() {
     store: handleFormInit,
     closable: false,
     getComponent() {
-      return callback(16595).default;
+      return callback(16604).default;
     }
   };
   obj = {
@@ -160,7 +160,7 @@ let prototype = function DeprecatedModalManager() {
     store: FormStates,
     closable: false,
     getComponent() {
-      return callback(16869).default;
+      return callback(16878).default;
     }
   };
   applyArgumentsResult.actions = obj;

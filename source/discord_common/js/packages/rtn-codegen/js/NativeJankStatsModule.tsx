@@ -1,9 +1,9 @@
-// Module ID: 16479
-// Function ID: 16480
+// Module ID: 16488
+// Function ID: 16489
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 16479 (enforcing)
+// Module 16488 (enforcing)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const enforcing = TurboModuleRegistry.getEnforcing("NativeJankStatsModule");

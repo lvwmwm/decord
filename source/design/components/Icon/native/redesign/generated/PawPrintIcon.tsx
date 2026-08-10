@@ -1,10 +1,10 @@
-// Module ID: 13876
-// Function ID: 13877
+// Module ID: 13878
+// Function ID: 13879
 // Name: PawPrintIcon
-// Dependencies: [19, 21, 712, 4004, 13877, 2]
+// Dependencies: [19, 21, 712, 4004, 13879, 2]
 // Exports: PawPrintIcon
 
-// Module 13876 (PawPrintIcon)
+// Module 13878 (PawPrintIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const PawPrintIcon = function PawPrintIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13877) /* registerAsset */;
+  obj[0] = require(13879) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

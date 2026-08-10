@@ -1,9 +1,9 @@
-// Module ID: 13051
-// Function ID: 13052
+// Module ID: 13053
+// Function ID: 13054
 // Name: StreamingUserRow
-// Dependencies: [19, 17, 1302, 1218, 4995, 1372, 1971, 4351, 4390, 676, 21, 4303, 712, 10642, 589, 4153, 13052, 13053, 1297, 13054, 13055, 13056, 13057, 9063, 4299, 1236, 7967, 7198, 10938, 4158, 4513, 4271, 4846, 9242, 4493, 9234, 4146, 2]
+// Dependencies: [19, 17, 1302, 1218, 4995, 1372, 1971, 4351, 4390, 676, 21, 4303, 712, 10643, 589, 4153, 13054, 13055, 1297, 13056, 13057, 13058, 13059, 9063, 4299, 1236, 7967, 7198, 10939, 4158, 4513, 4271, 4846, 9242, 4493, 9234, 4146, 2]
 
-// Module 13051 (StreamingUserRow)
+// Module 13053 (StreamingUserRow)
 import importAllResult from "registerAsset";
 import get_ActivityIndicator from "registerAsset";
 import handleThemeChange from "handleThemeChange";
@@ -76,10 +76,10 @@ function StreamingUserRow(user) {
           const obj4 = user(outer1_2[30]);
         }
       };
-      obj1[1] = tmp10(channel(10938), obj2);
+      obj1[1] = tmp10(channel(10939), obj2);
       tmp10Result = tmp10(closure_3, obj1);
       const tmp18 = closure_3;
-      const tmp20 = channel(10938);
+      const tmp20 = channel(10939);
     }
     let obj3 = { children: null };
     items1[1] = tmp10Result;
@@ -286,7 +286,7 @@ let closure_16 = importAllResult.memo((user) => {
   }
   obj1[1] = guild_id;
   obj1[2] = user(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj1[3] = channel(10642)(obj);
+  obj1[3] = channel(10643)(obj);
   obj[2] = closure_11(user(1297).Avatar, obj1);
   let tmp23Result = null;
   if (flag3) {
@@ -298,7 +298,7 @@ let closure_16 = importAllResult.memo((user) => {
       if (user.isSpectating) {
         obj3 = { size: null, source: null, style: null };
         obj3[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-        obj3[1] = tmp5(13057);
+        obj3[1] = tmp5(13059);
         obj3[2] = tmp19;
         tmp20Result = tmp20(tmp8(1297).Icon, obj3);
       }
@@ -309,7 +309,7 @@ let closure_16 = importAllResult.memo((user) => {
         if (tmp14) {
           obj4 = { size: null, source: null, style: null };
           obj4[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-          obj4[1] = tmp5(13054);
+          obj4[1] = tmp5(13056);
           obj4[2] = tmp19;
           tmp20Result = tmp20(tmp8(1297).Icon, obj4);
         }
@@ -329,22 +329,22 @@ let closure_16 = importAllResult.memo((user) => {
           if (localVideoDisabled) {
             const obj6 = { size: null, source: null, style: null, disableColor: true };
             obj6[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj6[1] = tmp5(13055);
+            obj6[1] = tmp5(13057);
             obj6[2] = tmp2.voiceStatusIconMargin;
             let obj7 = obj6;
           } else {
             obj7 = { size: null, source: null, style: null };
             obj7[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-            obj7[1] = tmp5(13056);
+            obj7[1] = tmp5(13058);
             obj7[2] = tmp19;
           }
           tmp20(tmp8(1297).Icon, obj7);
         }
       } else {
         if (tmp8Result.isThemeDark(stateFromStores)) {
-          let tmp5Result = tmp5(13052);
+          let tmp5Result = tmp5(13054);
         } else {
-          tmp5Result = tmp5(13053);
+          tmp5Result = tmp5(13055);
         }
         const obj8 = { size: null, source: null, style: null, color: null, disableColor: null };
         obj8[0] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;

@@ -1,10 +1,10 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 14156
+// Function ID: 14157
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1340, 6996, 1905, 589, 14072, 5855, 5856, 1236, 2284, 2]
+// Dependencies: [1340, 6996, 1905, 589, 14074, 5855, 5856, 1236, 2284, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 14154 (getSpendingLimitDisplayState)
+// Module 14156 (getSpendingLimitDisplayState)
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import freshTeenActivityWithMap from "freshTeenActivityWithMap";
 import { SubscriptionIntervalTypes } from "GuildFeatures";
@@ -68,7 +68,7 @@ export const useSpendingLimitFromUserSettings = function useSpendingLimitFromUse
       tmp2 = obj;
     }
     return tmp2;
-  }, undefined, require(14072) /* spendingLimitEqual */.spendingLimitEqual);
+  }, undefined, require(14074) /* spendingLimitEqual */.spendingLimitEqual);
 };
 export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
 export { getSpendingLimitDisplayState };

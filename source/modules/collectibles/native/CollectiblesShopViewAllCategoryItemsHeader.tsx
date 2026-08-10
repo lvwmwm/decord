@@ -1,10 +1,10 @@
-// Module ID: 14865
-// Function ID: 14866
+// Module ID: 14867
+// Function ID: 14868
 // Name: CollectiblesShopViewAllCategoryItemsHeader
 // Dependencies: [19, 17, 21, 4303, 1480, 7640, 8382, 8386, 1236, 2]
 // Exports: default
 
-// Module 14865 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 14867 (CollectiblesShopViewAllCategoryItemsHeader)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import jsxProd from "jsxProd";

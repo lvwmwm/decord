@@ -1,10 +1,10 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15646
+// Function ID: 15647
 // Name: useMainTabsChannelScreenStyles
 // Dependencies: [19, 17, 4303, 712, 4036, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 15638 (useMainTabsChannelScreenStyles)
+// Module 15646 (useMainTabsChannelScreenStyles)
 import noop from "noop";
 import createCacheKey from "createCacheKey";
 

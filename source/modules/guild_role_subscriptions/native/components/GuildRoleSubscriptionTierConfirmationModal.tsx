@@ -1,10 +1,10 @@
-// Module ID: 16842
-// Function ID: 16843
+// Module ID: 16851
+// Function ID: 16852
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 16807, 21, 4303, 712, 13245, 16819, 16811, 1236, 9060, 5268, 4299, 16843, 2]
+// Dependencies: [5, 32, 19, 17, 16816, 21, 4303, 712, 13247, 16828, 16820, 1236, 9060, 5268, 4299, 16852, 2]
 // Exports: default
 
-// Module 16842 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 16851 (GuildRoleSubscriptionTierConfirmationModal)
 import closure_3 from "jsxProd";
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
@@ -37,8 +37,8 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
   const merged = Object.assign(onDone, Object.create(null));
   let importDefault;
   const tmp2 = createCacheKey();
-  const tmp5 = importDefault(13245)();
-  let obj = onDone(16819);
+  const tmp5 = importDefault(13247)();
+  let obj = onDone(16828);
   const editStateContext = obj.useEditStateContext();
   ({ guildId, editStateId } = editStateContext);
   [tmp9, tmp10] = callback2(React.useState(false), 2);
@@ -157,7 +157,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     obj4[0] = items2;
     flag = tmp13(tmp16, obj4);
   }
-  const items3 = [flag, callback3(onDone(16843).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  const items3 = [flag, callback3(onDone(16852).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   obj.children = items3;
-  return closure_10(importDefault(16811), obj);
+  return closure_10(importDefault(16820), obj);
 };

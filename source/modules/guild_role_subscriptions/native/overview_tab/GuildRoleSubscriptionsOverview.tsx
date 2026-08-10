@@ -1,10 +1,10 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 15648
+// Function ID: 15649
 // Name: serverNameHook
-// Dependencies: [19, 4994, 4128, 1891, 21, 4299, 15641, 1236, 7651, 14447, 15642, 647, 5871, 5216, 4643, 1222, 2]
+// Dependencies: [19, 4994, 4128, 1891, 21, 4299, 15649, 1236, 7651, 14449, 15650, 647, 5871, 5216, 4643, 1222, 2]
 // Exports: default
 
-// Module 15640 (serverNameHook)
+// Module 15648 (serverNameHook)
 import noop from "noop";
 import _handleConnectionOpen from "_handleConnectionOpen";
 import initialize from "initialize";
@@ -38,8 +38,8 @@ function PurchasePage(arg0) {
     country = storeFront.country;
   }
   obj = { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null };
-  obj[4] = jsx(importDefault(15642), { guildId, gatedChannelId });
-  return jsx(require(14447) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null });
+  obj[4] = jsx(importDefault(15650), { guildId, gatedChannelId });
+  return jsx(require(14449) /* useGroupListingsFetchContext */.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: null });
 }
 const result = require("initialize").fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsOverview.tsx");
 

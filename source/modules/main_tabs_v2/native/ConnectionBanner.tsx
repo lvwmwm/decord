@@ -1,10 +1,10 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 15511
+// Function ID: 15512
 // Name: ConnectionBannerIcon
-// Dependencies: [32, 19, 17, 12949, 14338, 676, 21, 4303, 712, 1236, 4005, 15504, 15506, 4299, 689, 4036, 5310, 4725, 589, 698, 14337, 4713, 12950, 2]
+// Dependencies: [32, 19, 17, 12951, 14340, 676, 21, 4303, 712, 1236, 4005, 15512, 15514, 4299, 689, 4036, 5310, 4725, 589, 698, 14339, 4713, 12952, 2]
 // Exports: default
 
-// Module 15503 (ConnectionBannerIcon)
+// Module 15511 (ConnectionBannerIcon)
 import _slicedToArray from "_slicedToArray";
 import expandEventProperties from "expandEventProperties";
 import get_ActivityIndicator from "LinearGradient";
@@ -37,14 +37,14 @@ function ConnectionBannerIcon(state) {
     obj1[0] = tmp.leadingSlot;
     const obj2 = { size: "xs", color: null };
     obj2[1] = tmp5(712).colors.INTERACTIVE_ICON_DEFAULT;
-    obj1[1] = callback2(tmp2(15504).ConnectionUnknownIcon, obj2);
+    obj1[1] = callback2(tmp2(15512).ConnectionUnknownIcon, obj2);
     return callback2(closure_6, obj1);
   } else if (tmp7.BACK_ONLINE === state) {
     obj = { style: null, children: null };
     obj[0] = tmp.leadingSlot;
     const obj3 = { size: "xs", color: null };
     obj3[1] = tmp5(712).colors.ICON_FEEDBACK_POSITIVE;
-    obj[1] = callback2(tmp2(15506).ConnectionFineIcon, obj3);
+    obj[1] = callback2(tmp2(15514).ConnectionFineIcon, obj3);
     return callback2(closure_6, obj);
   }
 }
@@ -209,11 +209,11 @@ let closure_26 = { code: "function ConnectionBannerTsx2(){const{progress,CONNECT
 let result = require("get ActivityIndicator").fileFinishedImporting("modules/main_tabs_v2/native/ConnectionBanner.tsx");
 
 export default function ConnectionBanner() {
-  const config = stateFromStores(12950).useConfig({ location: "ConnectionBanner" });
+  const config = stateFromStores(12952).useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   stateFromStores = undefined;
   let dependencyMap;
-  let obj = stateFromStores(12950);
+  let obj = stateFromStores(12952);
   const items = [updateState];
   stateFromStores = hidden(589).useStateFromStores(items, () => state.getState());
   dependencyMap = React.useRef(null);

@@ -1,10 +1,10 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9834
+// Function ID: 9835
 // Name: getPushNotificationSelectOptions
 // Dependencies: [676, 4500, 1236, 2]
 // Exports: getPushNotificationSelectOptions, getUnreadSelectOptions
 
-// Module 9833 (getPushNotificationSelectOptions)
+// Module 9834 (getPushNotificationSelectOptions)
 import { UserNotificationSettings } from "ME";
 import { UnreadSetting } from "ReadStateTypes";
 

@@ -1,10 +1,10 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11077
+// Function ID: 11078
 // Name: handleAcceptEventInstantInvite
 // Dependencies: [6985, 8679, 7195, 7758, 8961, 2]
 // Exports: default
 
-// Module 11076 (handleAcceptEventInstantInvite)
+// Module 11077 (handleAcceptEventInstantInvite)
 import scheduledEventSort from "scheduledEventSort";
 
 const require = arg1;

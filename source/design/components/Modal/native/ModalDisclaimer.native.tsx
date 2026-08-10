@@ -1,10 +1,10 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13429
+// Function ID: 13430
 // Name: ModalDisclaimer
 // Dependencies: [19, 17, 21, 4303, 4299, 2]
 // Exports: ModalDisclaimer
 
-// Module 13427 (ModalDisclaimer)
+// Module 13429 (ModalDisclaimer)
 import "noop";
 import { View } from "get ActivityIndicator";
 import { jsx } from "jsxProd";

@@ -1,9 +1,9 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13727
+// Function ID: 13728
 // Name: processColor
-// Dependencies: [32, 17, 1371, 4341, 4322, 1372, 4351, 4375, 3938, 1903, 676, 712, 7217, 7216, 10920, 9653, 4494, 1236, 4482, 2]
+// Dependencies: [32, 17, 1371, 4341, 4322, 1372, 4351, 4375, 3938, 1903, 676, 712, 7217, 7216, 10921, 9653, 4494, 1236, 4482, 2]
 
-// Module 13725 (processColor)
+// Module 13727 (processColor)
 import _slicedToArray from "_slicedToArray";
 import { processColor } from "getSystemLocale";
 import participantFromServer from "participantFromServer";

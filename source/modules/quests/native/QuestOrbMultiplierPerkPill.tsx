@@ -1,10 +1,10 @@
-// Module ID: 14404
-// Function ID: 14405
+// Module ID: 14406
+// Function ID: 14407
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 21, 4303, 712, 4239, 4011, 4005, 4151, 10459, 10479, 1236, 7704, 4299, 4846, 14405, 4725, 2]
+// Dependencies: [19, 17, 21, 4303, 712, 4239, 4011, 4005, 4151, 10460, 10480, 1236, 7704, 4299, 4846, 14407, 4725, 2]
 // Exports: QuestOrbMultiplierPerkPill
 
-// Module 14404 (QuestOrbMultiplierPerkPill)
+// Module 14406 (QuestOrbMultiplierPerkPill)
 import noop from "noop";
 import get_ActivityIndicator from "set";
 import jsxProd from "jsxProd";
@@ -59,11 +59,11 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
   items[1] = obj6.hexOpacityToRgba(token1, 0.5);
   let obj7 = require(4005) /* map */;
   token3 = obj7.useToken(orbMultiplierEligibility(712).colors.BACKGROUND_BRAND);
-  questOrbRewardMultiplier = require(10459) /* useQuests */.useQuestOrbRewardMultiplier(questId.questId);
-  const obj9 = require(10459) /* useQuests */;
+  questOrbRewardMultiplier = require(10460) /* useQuests */.useQuestOrbRewardMultiplier(questId.questId);
+  const obj9 = require(10460) /* useQuests */;
   const tmp6 = orbMultiplierEligibility;
-  const result = require(10479) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
-  const tmp13 = orbMultiplierEligibility === require(10479) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
+  const result = require(10480) /* items */.shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility);
+  const tmp13 = orbMultiplierEligibility === require(10480) /* items */.QuestOrbMultiplierEligibilityType.CREPE;
   c6 = tmp13;
   const items1 = [tmp13, token2, token3, isThemeDarkResult];
   if (null == questOrbRewardMultiplier) {
@@ -125,5 +125,5 @@ export const QuestOrbMultiplierPerkPill = function QuestOrbMultiplierPerkPill(qu
     obj3[4] = closure_7(token3, obj4);
     return questOrbRewardMultiplier(tmp2(4846).PressableOpacity, obj3);
   }
-  const obj10 = require(10479) /* items */;
+  const obj10 = require(10480) /* items */;
 };

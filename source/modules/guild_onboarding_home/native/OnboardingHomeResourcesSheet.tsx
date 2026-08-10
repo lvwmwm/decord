@@ -1,10 +1,10 @@
-// Module ID: 15667
-// Function ID: 15668
+// Module ID: 15675
+// Function ID: 15676
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 15665, 21, 4005, 712, 15666, 11656, 4271, 5764, 5766, 1416, 5268, 2]
+// Dependencies: [19, 15673, 21, 4005, 712, 15674, 11657, 4271, 5764, 5766, 1416, 5268, 2]
 // Exports: default
 
-// Module 15667 (OnboardingHomeResourcesSheet)
+// Module 15675 (OnboardingHomeResourcesSheet)
 import "noop";
 import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_3 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY";
 import { jsx } from "jsxProd";
@@ -19,7 +19,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
   importDefault = obj.useToken(importDefault(712).modules.mobile.TABLE_ROW_ICON_SIZE);
   obj = { children: null };
   obj = { hasIcons: true, children: null };
-  obj[1] = importDefault(15666)(guildId).map((label) => {
+  obj[1] = importDefault(15674)(guildId).map((label) => {
     let closure_0 = label;
     let obj = callback(outer1_2[10]);
     const resourceChannelIconURL = obj.getResourceChannelIconURL(label);

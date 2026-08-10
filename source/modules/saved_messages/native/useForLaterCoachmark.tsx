@@ -1,10 +1,10 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15517
+// Function ID: 15518
 // Name: CoachmarkImg
-// Dependencies: [32, 19, 17, 1369, 21, 1358, 4303, 12570, 8375, 6022, 1236, 8653, 2]
+// Dependencies: [32, 19, 17, 1369, 21, 1358, 4303, 12572, 8375, 6022, 1236, 8653, 2]
 // Exports: default
 
-// Module 15509 (CoachmarkImg)
+// Module 15517 (CoachmarkImg)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { Image } from "get ActivityIndicator";
@@ -15,7 +15,7 @@ import createCacheKey from "createCacheKey";
 const require = arg1;
 function CoachmarkImg() {
   const obj = { source: null, style: null };
-  obj[0] = importDefault(12570);
+  obj[0] = importDefault(12572);
   obj[1] = callback2().imageContainer;
   return <Image source={null} style={null} />;
 }

@@ -1,10 +1,10 @@
-// Module ID: 14588
-// Function ID: 14589
+// Module ID: 14590
+// Function ID: 14591
 // Name: createDismissiblePremiumNewBadgeRouteProps
-// Dependencies: [32, 19, 1369, 21, 14589, 6022, 2]
+// Dependencies: [32, 19, 1369, 21, 14591, 6022, 2]
 // Exports: createDismissiblePremiumNewBadgeRouteProps
 
-// Module 14588 (createDismissiblePremiumNewBadgeRouteProps)
+// Module 14590 (createDismissiblePremiumNewBadgeRouteProps)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import { ContentDismissActionType } from "ContentDismissActionType";

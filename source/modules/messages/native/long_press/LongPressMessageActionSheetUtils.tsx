@@ -1,10 +1,10 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10217
+// Function ID: 10218
 // Name: handleEdit
-// Dependencies: [19, 7140, 3939, 7141, 7297, 1903, 10217, 676, 1379, 7060, 21, 4146, 11, 10215, 9904, 5748, 698, 6917, 4642, 1236, 10218, 10222, 10223, 4014, 7293, 10225, 7224, 4158, 1222, 4525, 5756, 4001, 4486, 4313, 10226, 4491, 1467, 9745, 8846, 8932, 8935, 5909, 4271, 10227, 1988, 5906, 8020, 2384, 5894, 4311, 8783, 4498, 8613, 10233, 1231, 10234, 1935, 10271, 10277, 10278, 10282, 10289, 2]
+// Dependencies: [19, 7140, 3939, 7141, 7297, 1903, 10218, 676, 1379, 7060, 21, 4146, 11, 10216, 9905, 5748, 698, 6917, 4642, 1236, 10219, 10223, 10224, 4014, 7293, 10226, 7224, 4158, 1222, 4525, 5756, 4001, 4486, 4313, 10227, 4491, 1467, 9746, 8846, 8932, 8935, 5909, 4271, 10228, 1988, 5906, 8020, 2384, 5894, 4311, 8783, 4498, 8613, 10234, 1231, 10235, 1935, 10272, 10278, 10279, 10283, 10290, 2]
 // Exports: getContextBarCancelReason, handleCopyId, handleCopyMessageLink, handleCreateThread, longPressMessageOptionHandler
 
-// Module 10216 (handleEdit)
+// Module 10217 (handleEdit)
 import "getSystemLocale";
 import getState from "getState";
 import { isMessageComponentsV2 } from "hasFlag";
@@ -36,8 +36,8 @@ function handleEdit(id, isForumPost, current, source) {
     let obj = importDefault(11);
     if (isForumPost.id === obj.castMessageIdAsChannelId(id.id)) {
       if (null != isForumPost.parent_id) {
-        require(10215) /* createPendingReply */.deletePendingReply(isForumPost.id);
-        const obj7 = require(10215) /* createPendingReply */;
+        require(10216) /* createPendingReply */.deletePendingReply(isForumPost.id);
+        const obj7 = require(10216) /* createPendingReply */;
         obj = { guildId: null, parentChannelId: null, threadId: null, messageId: null, isEdit: true, analyticsLocations: null, analyticsLocationObject: null };
         ({ guild_id: obj9[0], parent_id: obj9[1], id: obj9[2] } = isForumPost);
         obj[3] = id.id;
@@ -48,8 +48,8 @@ function handleEdit(id, isForumPost, current, source) {
         obj[1] = constants4.FORUM_POST_HEADER;
         obj[2] = constants2.CONTEXT_MENU;
         obj[6] = obj;
-        const result = require(9904) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
-        const obj8 = require(9904) /* openCreateForumPostModal */;
+        const result = require(9905) /* openCreateForumPostModal */.openCreateForumPostModal(obj);
+        const obj8 = require(9905) /* openCreateForumPostModal */;
       }
     }
   }
@@ -97,7 +97,7 @@ function handleEdit(id, isForumPost, current, source) {
     importDefault(698).track(constants.CHAT_CONTEXT_BAR_ACTION_CANCELED, obj2);
     const obj11 = importDefault(698);
   }
-  obj1 = require(10215) /* createPendingReply */;
+  obj1 = require(10216) /* createPendingReply */;
   obj1.deletePendingReply(isForumPost.id);
   obj2 = importDefault(6917);
   const result1 = obj2.startEditMessageRecord(isForumPost.id, id, source);

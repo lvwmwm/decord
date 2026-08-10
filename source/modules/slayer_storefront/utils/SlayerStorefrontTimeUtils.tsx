@@ -1,10 +1,10 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 16002
+// Function ID: 16003
 // Name: getLimitedOfferTimeLeft
 // Dependencies: [32, 19, 3883, 687, 1236, 3222, 6909, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 15993 (getLimitedOfferTimeLeft)
+// Module 16002 (getLimitedOfferTimeLeft)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 

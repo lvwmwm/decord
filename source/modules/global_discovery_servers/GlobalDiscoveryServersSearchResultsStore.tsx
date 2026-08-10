@@ -1,9 +1,9 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12969
+// Function ID: 12970
 // Name: map
 // Dependencies: [9023, 4202, 589, 709, 2]
 
-// Module 12967 (map)
+// Module 12969 (map)
 import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID";
 import { Store } from "initialize";
 

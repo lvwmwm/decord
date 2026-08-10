@@ -1,10 +1,10 @@
-// Module ID: 16245
-// Function ID: 16246
+// Module ID: 16254
+// Function ID: 16255
 // Name: useControlsButtons
-// Dependencies: [19, 4351, 11643, 676, 21, 16246, 16249, 16255, 16257, 16259, 16261, 16263, 16266, 16167, 1605, 11644, 16103, 589, 4036, 11651, 8732, 2]
+// Dependencies: [19, 4351, 11644, 676, 21, 16255, 16258, 16264, 16266, 16268, 16270, 16272, 16275, 16176, 1605, 11645, 16112, 589, 4036, 11652, 8732, 2]
 // Exports: default
 
-// Module 16245 (useControlsButtons)
+// Module 16254 (useControlsButtons)
 import VOICE_PANEL_DRAWER_MAX_WIDTH from "VOICE_PANEL_DRAWER_MAX_WIDTH";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import VoicePanelControlsModes from "VoicePanelControlsModes";
@@ -18,55 +18,55 @@ const require = arg1;
 let closure_9 = {
   mic(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(16246) /* PTTButton */.MicButton, {}, arg0);
+    return jsx(require(16255) /* PTTButton */.MicButton, {}, arg0);
   },
   ptt(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(16246) /* PTTButton */.PTTButton, {}, arg0);
+    return jsx(require(16255) /* PTTButton */.PTTButton, {}, arg0);
   },
   micConnected(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(require(16246) /* PTTButton */.MicButton, {}, arg0);
+    return jsx(require(16255) /* PTTButton */.MicButton, {}, arg0);
   },
   connect(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16249), {}, arg0);
+    return jsx(importDefault(16258), {}, arg0);
   },
   chat(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16255), {}, arg0);
+    return jsx(importDefault(16264), {}, arg0);
   },
   disconnectCancel(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16257), {}, arg0);
+    return jsx(importDefault(16266), {}, arg0);
   },
   video(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16259), {}, arg0);
+    return jsx(importDefault(16268), {}, arg0);
   },
   soundboard(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16261), {}, arg0);
+    return jsx(importDefault(16270), {}, arg0);
   },
   screenshare(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16263), {}, arg0);
+    return jsx(importDefault(16272), {}, arg0);
   },
   drawerToggle(arg0, arg1) {
     const merged = Object.assign(arg1);
-    return jsx(importDefault(16266), {}, arg0);
+    return jsx(importDefault(16275), {}, arg0);
   }
 };
 let closure_10 = { code: "function useControlsButtonsTsx1(){const{getControlsDefaultWidth,windowDimensions,safeArea}=this.__closure;return getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);}" };
 const result = require("VoicePanelControlsModes").fileFinishedImporting("modules/voice_panel/native/controls/useControlsButtons.tsx");
 
 export default function useControlsButtons() {
-  const context = treatment.useContext(safeArea(11644));
+  const context = treatment.useContext(safeArea(11645));
   const windowDimensions = context.windowDimensions;
   safeArea = context.safeArea;
-  const tmp2 = safeArea(16103)(context.channelId);
+  const tmp2 = safeArea(16112)(context.channelId);
   const dependencyMap = tmp2;
-  let obj = safeArea(16167);
+  let obj = safeArea(16176);
   treatment = obj.useConfig({ location: "VoicePanelControlButtons" }).treatment;
   let items = [stateFromStores];
   stateFromStores = windowDimensions(589).useStateFromStores(items, () => stateFromStores.getMode() === constants.PUSH_TO_TALK);
@@ -74,7 +74,7 @@ export default function useControlsButtons() {
   const fn = function o() {
     return windowDimensions(tmp2[19]).getControlsDefaultWidth(windowDimensions.get().width, safeArea.get().left, safeArea.get().right);
   };
-  obj = { getControlsDefaultWidth: windowDimensions(11651).getControlsDefaultWidth, windowDimensions, safeArea };
+  obj = { getControlsDefaultWidth: windowDimensions(11652).getControlsDefaultWidth, windowDimensions, safeArea };
   fn.__closure = obj;
   fn.__workletHash = 16456936876254;
   fn.__initData = closure_10;
@@ -97,7 +97,7 @@ export default function useControlsButtons() {
           obj[2] = tmp6.micConnected;
           items.push(obj);
         }
-        if (treatment === callback(16167).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
+        if (treatment === callback(16176).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
           const obj1 = { type: "icon-normal", key: "connected-screenshare", render: null };
           obj1[2] = tmp6.screenshare;
           items.push(obj1);
@@ -111,7 +111,7 @@ export default function useControlsButtons() {
           obj3[2] = tmp6.ptt;
           items.push(obj3);
         }
-        if (treatment === tmp10(16167).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
+        if (treatment === tmp10(16176).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
           const obj4 = { type: "icon-normal", key: "connected-screenshare", render: null };
           obj4[2] = tmp6.screenshare;
           items.push(obj4);

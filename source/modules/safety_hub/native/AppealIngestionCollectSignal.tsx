@@ -1,10 +1,10 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11307
+// Function ID: 11308
 // Name: AppealSignalRadioRow
-// Dependencies: [19, 17, 7805, 21, 4303, 712, 4019, 7967, 7804, 11285, 709, 4271, 11307, 1988, 1236, 11300, 4299, 2]
+// Dependencies: [19, 17, 7805, 21, 4303, 712, 4019, 7967, 7804, 11286, 709, 4271, 11308, 1988, 1236, 11301, 4299, 2]
 // Exports: default
 
-// Module 11306 (AppealSignalRadioRow)
+// Module 11307 (AppealSignalRadioRow)
 import "noop";
 import { View } from "set";
 import SafetyHubView from "SafetyHubView";
@@ -79,13 +79,13 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
   }
   const tmp = createCacheKey();
   c1 = tmp;
-  let obj = isDsaEligible(11285);
+  let obj = isDsaEligible(11286);
   dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1236).intl;
   const intl2 = isDsaEligible(1236).intl;
   const stringResult = intl.string(isDsaEligible(1236).t["C5q+pW"]);
   obj = { children: null };
-  const items = [callback(isDsaEligible(11300).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(isDsaEligible(1236).t.VEcRhw) }), ];
+  const items = [callback(isDsaEligible(11301).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: intl2.string(isDsaEligible(1236).t.VEcRhw) }), ];
   obj = { style: tmp.container, children: null };
   const obj1 = { style: tmp.form, children: null };
   const obj2 = { sectionBodyStyle: tmp.formSection, accessibilityRole: "radiogroup", children: null };
@@ -101,5 +101,5 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
   obj[1] = callback2(isDsaEligible(7967).Form, obj1);
   items[1] = callback(handleAppealSignalSelect, obj);
   obj[0] = items;
-  return callback2(isDsaEligible(11300).AppealIngestionModalScreen, obj);
+  return callback2(isDsaEligible(11301).AppealIngestionModalScreen, obj);
 };

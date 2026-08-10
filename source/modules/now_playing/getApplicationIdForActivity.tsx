@@ -1,10 +1,10 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13012
+// Function ID: 13013
 // Name: getApplicationIdForActivity
-// Dependencies: [12617, 13011, 13012, 4328, 9654, 8302, 12275, 2]
+// Dependencies: [12619, 13013, 13014, 4328, 9654, 8302, 12277, 2]
 // Exports: default
 
-// Module 13010 (getApplicationIdForActivity)
+// Module 13012 (getApplicationIdForActivity)
 import { SpotifyApplication } from "getIconURL";
 import { TWITCH_APPLICATION_ID_PREFIX as closure_3 } from "getIconURL";
 import { XBOX_APPLICATION_ID_PREFIX as closure_4 } from "getIconURL";
@@ -32,7 +32,7 @@ export default function getApplicationIdForActivity(party) {
     }
   }
   id = null;
-  if (importDefault(12275)(party)) {
+  if (importDefault(12277)(party)) {
     id = closure_4 + party.name;
   }
 };

@@ -1,9 +1,9 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 11281
+// Function ID: 11282
 // Name: handleSafetyHubRequestAgeVerificationResetModalAction
-// Dependencies: [7805, 7806, 11281, 589, 709, 2]
+// Dependencies: [7805, 7806, 11282, 589, 709, 2]
 
-// Module 11280 (handleSafetyHubRequestAgeVerificationResetModalAction)
+// Module 11281 (handleSafetyHubRequestAgeVerificationResetModalAction)
 import SafetyHubView from "SafetyHubView";
 import { Store } from "initialize";
 
@@ -122,7 +122,7 @@ obj = {
     let isDsaEligible;
     let username;
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility } = arg0);
-    let closure_6 = importDefault(11281)(classifications, "id");
+    let closure_6 = importDefault(11282)(classifications, "id");
     let c9 = false;
     let c10 = true;
     let c11 = null;
@@ -212,18 +212,18 @@ obj = {
       HermesBuiltin.throwTypeError();
     } else {
       const LOADING = AgeCheckStatus.LOADING;
-      for (const key10007 in closure_6) {
-        let tmp7 = key10007;
+      for (const key10002 in closure_6) {
+        let tmp7 = key10002;
         let tmp8 = dependencyMap;
-        if (!dependencyMap[key10007].is_coppa) {
+        if (!dependencyMap[key10002].is_coppa) {
           continue;
         } else {
-          let tmp3 = dependencyMap;
+          let tmp = dependencyMap;
           let obj = { status: null };
-          let tmp4 = require;
-          let tmp5 = dependencyMap;
+          let tmp2 = require;
+          let tmp3 = dependencyMap;
           obj[0] = require(7806) /* ContentIdType */.AppealStatusType.REVIEW_PENDING;
-          dependencyMap[key10007].appeal_status = obj;
+          dependencyMap[key10002].appeal_status = obj;
           continue;
         }
         continue;

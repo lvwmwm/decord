@@ -1,10 +1,10 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11230
+// Function ID: 11231
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1891, 8123, 676, 698, 4498, 9021, 3883, 530, 9775, 2]
+// Dependencies: [5, 1891, 8123, 676, 698, 4498, 9021, 3883, 530, 9776, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11229 (_setGuildRaidAlerts)
+// Module 11230 (_setGuildRaidAlerts)
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata";
 import createGuildRecordFromRust from "createGuildRecordFromRust";
 import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY";
@@ -195,7 +195,7 @@ function _handleResolveRaid() {
               guild = guild.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = callback2(9775)(guild);
+                tmp8 = callback2(9776)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -286,7 +286,7 @@ function _handleReportRaid() {
               const guild = outer1_4.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = v0(9775)(guild);
+                tmp8 = v0(9776)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {

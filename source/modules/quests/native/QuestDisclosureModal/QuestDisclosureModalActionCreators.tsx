@@ -1,8 +1,8 @@
-// Module ID: 14345
-// Function ID: 14346
-// Dependencies: [7183, 9516, 9517, 9521, 7188, 7177, 4509, 14346, 1988, 2]
+// Module ID: 14347
+// Function ID: 14348
+// Dependencies: [7183, 9516, 9517, 9521, 7188, 7177, 4509, 14348, 1988, 2]
 
-// Module 14345
+// Module 14347
 const QUEST_DISCLOSURE_MODAL = "QUEST_DISCLOSURE_MODAL";
 let result = require("emitClickEventWithCreative").fileFinishedImporting("modules/quests/native/QuestDisclosureModal/QuestDisclosureModalActionCreators.tsx");
 
@@ -42,7 +42,7 @@ export default {
     }
     obj1[3] = name;
     obj1[4] = hasWatchVideoTasksResult;
-    obj7.pushLazy(require(1988) /* asyncRequireImpl */(14346, tmp2.paths), obj1, QUEST_DISCLOSURE_MODAL);
+    obj7.pushLazy(require(1988) /* asyncRequireImpl */(14348, tmp2.paths), obj1, QUEST_DISCLOSURE_MODAL);
   },
   hideModal() {
     importDefault(4509).popWithKey(QUEST_DISCLOSURE_MODAL);

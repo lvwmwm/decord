@@ -1,10 +1,10 @@
-// Module ID: 14509
-// Function ID: 14510
+// Module ID: 14511
+// Function ID: 14512
 // Name: SynchronizeIcon
 // Dependencies: [19, 21, 7835, 2]
 // Exports: default
 
-// Module 14509 (SynchronizeIcon)
+// Module 14511 (SynchronizeIcon)
 import "noop";
 import jsxProd from "jsxProd";
 

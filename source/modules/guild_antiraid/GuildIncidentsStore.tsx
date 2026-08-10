@@ -1,9 +1,9 @@
-// Module ID: 9751
-// Function ID: 9752
+// Module ID: 9752
+// Function ID: 9753
 // Name: computeAlertSettings
 // Dependencies: [4217, 1340, 1891, 3929, 8122, 589, 709, 2]
 
-// Module 9751 (computeAlertSettings)
+// Module 9752 (computeAlertSettings)
 import getHash from "getHash";
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed";
 import createGuildRecordFromRust from "createGuildRecordFromRust";

@@ -1,10 +1,10 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14483
+// Function ID: 14484
 // Name: KrispLogo
-// Dependencies: [19, 17, 4351, 8082, 676, 21, 1974, 4303, 4239, 4153, 10864, 10865, 1236, 5427, 10863, 4299, 10860, 10446, 13886, 2]
+// Dependencies: [19, 17, 4351, 8082, 676, 21, 1974, 4303, 4239, 4153, 10865, 10866, 1236, 5427, 10864, 4299, 10861, 10447, 13888, 2]
 // Exports: default
 
-// Module 14481 (KrispLogo)
+// Module 14483 (KrispLogo)
 import set from "set";
 import get_ActivityIndicator from "createToggle";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
@@ -24,9 +24,9 @@ function KrispLogo() {
   const tmp = callback3();
   let obj = require(4153) /* AccessibilityAnnouncer */;
   if (obj.isThemeLight(tmp4)) {
-    let tmp2Result = tmp2(10864);
+    let tmp2Result = tmp2(10865);
   } else {
-    tmp2Result = tmp2(10865);
+    tmp2Result = tmp2(10866);
   }
   obj = { style: tmp.krisp, children: null };
   obj = { style: tmp.logo, source: tmp2Result, accessibilityLabel: null };
@@ -36,7 +36,7 @@ function KrispLogo() {
   const obj1 = { accessibilityRole: "link", accessibilityLabel: null, onPress: null, children: null };
   const intl2 = tmp5(1236).intl;
   obj1[1] = intl2.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
-  obj1[2] = require(10863) /* handleKrispLinkPressed */.handleKrispLinkPressed;
+  obj1[2] = require(10864) /* handleKrispLinkPressed */.handleKrispLinkPressed;
   const obj2 = { variant: "text-sm/medium", color: "text-link", children: null };
   const intl3 = tmp5(1236).intl;
   obj2[2] = intl3.string(require(1236) /* getSystemLocale */.t.hvVgAZ);
@@ -46,7 +46,7 @@ function KrispLogo() {
   return callback2(closure_4, obj);
 }
 function SystemProcessingSubLabel() {
-  let obj = require(10860) /* getNoiseCancellationDeferredToSystem */;
+  let obj = require(10861) /* getNoiseCancellationDeferredToSystem */;
   let tmp3 = null;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     obj = { variant: "text-sm/medium", children: null };
@@ -69,7 +69,7 @@ let result = require("_detectH265HardwareDecode").fileFinishedImporting("modules
 
 export default function SettingsVoiceScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(10446);
+    let obj = callback(10447);
     obj = { sections: null };
     obj = { label: null, settings: null };
     const intl = callback(1236).intl;
@@ -133,5 +133,5 @@ export default function SettingsVoiceScreen() {
     obj[0] = items1;
     return obj.createList(obj);
   }, []);
-  return callback(importDefault(13886), { node });
+  return callback(importDefault(13888), { node });
 };

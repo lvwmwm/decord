@@ -1,9 +1,9 @@
-// Module ID: 13722
-// Function ID: 13723
+// Module ID: 13724
+// Function ID: 13725
 // Name: NativeNotifSettingsModule
 // Dependencies: [17, 2]
 
-// Module 13722 (NativeNotifSettingsModule)
+// Module 13724 (NativeNotifSettingsModule)
 import { TurboModuleRegistry } from "get ActivityIndicator";
 
 const value = TurboModuleRegistry.get("NativeNotifSettingsModule");

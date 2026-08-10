@@ -1,10 +1,10 @@
-// Module ID: 10157
-// Function ID: 10158
+// Module ID: 10158
+// Function ID: 10159
 // Name: NameplatePreview
 // Dependencies: [19, 17, 4295, 1971, 21, 4303, 712, 1927, 8813, 8261, 589, 4146, 4533, 1297, 9390, 9470, 9471, 4299, 2]
 // Exports: NameplatePreview
 
-// Module 10157 (NameplatePreview)
+// Module 10158 (NameplatePreview)
 import noop from "noop";
 import { View } from "Text";
 import maybeApplyNoTextColorForLightCustomTheme from "maybeApplyNoTextColorForLightCustomTheme";

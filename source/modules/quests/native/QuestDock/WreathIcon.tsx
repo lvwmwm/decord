@@ -1,10 +1,10 @@
-// Module ID: 14343
-// Function ID: 14344
+// Module ID: 14345
+// Function ID: 14346
 // Name: WreathIcon
-// Dependencies: [19, 21, 712, 4004, 14344, 2]
+// Dependencies: [19, 21, 712, 4004, 14346, 2]
 // Exports: default
 
-// Module 14343 (WreathIcon)
+// Module 14345 (WreathIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export default function WreathIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(14344) /* registerAsset */;
+  obj[0] = require(14346) /* registerAsset */;
   obj[1] = INTERACTIVE_TEXT_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

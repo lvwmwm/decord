@@ -1,10 +1,10 @@
-// Module ID: 12291
-// Function ID: 12292
+// Module ID: 12293
+// Function ID: 12294
 // Name: PlatformTypes
-// Dependencies: [676, 12290, 9654, 5000, 8907, 12275, 12276, 12292, 12293, 2]
+// Dependencies: [676, 12292, 9654, 5000, 8907, 12277, 12278, 12294, 12295, 2]
 // Exports: default
 
-// Module 12291 (PlatformTypes)
+// Module 12293 (PlatformTypes)
 import { PlatformTypes } from "ME";
 import set from "isListeningOnSpotify";
 
@@ -15,7 +15,7 @@ const result = set.fileFinishedImporting("modules/user_profile/utils/getActivity
 
 export default function getActivityPlatform(session_id) {
   const importDefault = session_id;
-  const tmp3 = importDefault(12290)(session_id.session_id);
+  const tmp3 = importDefault(12292)(session_id.session_id);
   if (null != tmp3) {
     return tmp3;
   } else if (tmp(9654)(session_id)) {
@@ -24,13 +24,13 @@ export default function getActivityPlatform(session_id) {
   } else if (tmp(8907)(session_id)) {
     tmpResult = tmp(5000);
     return tmpResult.get(PlatformTypes.CRUNCHYROLL);
-  } else if (tmp(12275)(session_id)) {
+  } else if (tmp(12277)(session_id)) {
     return tmp(5000).get(PlatformTypes.XBOX);
-  } else if (tmp(12276)(session_id)) {
+  } else if (tmp(12278)(session_id)) {
     return tmp(5000).get(PlatformTypes.PLAYSTATION);
   } else {
-    if (!tmp(12292)(session_id)) {
-      if (!tmp(12293)(session_id)) {
+    if (!tmp(12294)(session_id)) {
+      if (!tmp(12295)(session_id)) {
         const found = tmp(5000).find((name) => name.name === session_id.name);
         let tmp5 = null;
         if (null != found) {

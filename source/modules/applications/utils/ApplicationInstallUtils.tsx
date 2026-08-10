@@ -1,10 +1,10 @@
-// Module ID: 10618
-// Function ID: 10619
+// Module ID: 10619
+// Function ID: 10620
 // Name: canInstallApplication
 // Dependencies: [8339, 4737, 9541, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 10618 (canInstallApplication)
+// Module 10619 (canInstallApplication)
 import getIndexKey from "getIndexKey";
 import { BuiltInSectionId } from "TRUE_OPTION_NAME";
 

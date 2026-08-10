@@ -1,10 +1,10 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 10004
+// Function ID: 10005
 // Name: ForumTagContextMenu
 // Dependencies: [21, 3974, 1236, 9546, 5756, 4001, 8598, 2]
 // Exports: default
 
-// Module 10003 (ForumTagContextMenu)
+// Module 10004 (ForumTagContextMenu)
 import { jsx } from "jsxProd";
 
 const result = require("getSystemLocale").fileFinishedImporting("modules/forums/native/ForumTagContextMenu.tsx");

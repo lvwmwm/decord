@@ -1,10 +1,10 @@
-// Module ID: 11563
-// Function ID: 11564
+// Module ID: 11564
+// Function ID: 11565
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 4303, 712, 11556, 7967, 4299, 1297, 5383, 2]
+// Dependencies: [19, 21, 4303, 712, 11557, 7967, 4299, 1297, 5383, 2]
 // Exports: default
 
-// Module 11563 (AppLauncherSelectOptionFormRow)
+// Module 11564 (AppLauncherSelectOptionFormRow)
 import "noop";
 import { jsx } from "jsxProd";
 import createCacheKey from "createCacheKey";
@@ -26,7 +26,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   ({ selected, selectedItemName: require, unselectedSubLabel } = arg0);
   ({ style, option, autoFocus } = arg0);
   const merged = Object.assign(arg0, Object.create(null));
-  let obj = require(11556) /* useAnimationDelayedAutoFocus */;
+  let obj = require(11557) /* useAnimationDelayedAutoFocus */;
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, merged.onPress);
   obj = { start: true, end: true, style: items, label: null, subLabel: null, trailing: null };
   items = [createCacheKey().formRow, style];

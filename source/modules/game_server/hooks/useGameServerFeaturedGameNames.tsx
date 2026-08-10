@@ -1,10 +1,10 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11936
+// Function ID: 11937
 // Name: useGameServerFeaturedGameNames
 // Dependencies: [4192, 7092, 2]
 // Exports: default
 
-// Module 11935 (useGameServerFeaturedGameNames)
+// Module 11936 (useGameServerFeaturedGameNames)
 import str11 from "str11";
 
 let c3;

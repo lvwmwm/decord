@@ -1,10 +1,10 @@
-// Module ID: 10919
-// Function ID: 10920
+// Module ID: 10920
+// Function ID: 10921
 // Name: open
-// Dependencies: [10918, 709, 9159, 3912, 2]
+// Dependencies: [10919, 709, 9159, 3912, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setShouldRecordNextConnection, setSimulcastDebugOverride
 
-// Module 10919 (open)
+// Module 10920 (open)
 import updateStats from "updateStats";
 
 const result = require("trackVoiceAndVideoDebuggingSettingsUpdated").fileFinishedImporting("actions/RTCDebugActionCreators.tsx");

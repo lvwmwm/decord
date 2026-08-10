@@ -1,10 +1,10 @@
-// Module ID: 11903
-// Function ID: 11904
+// Module ID: 11904
+// Function ID: 11905
 // Name: GuildPowerupsDisabledWarning
 // Dependencies: [17, 21, 4303, 712, 7962, 4299, 2]
 // Exports: default
 
-// Module 11903 (GuildPowerupsDisabledWarning)
+// Module 11904 (GuildPowerupsDisabledWarning)
 import { View } from "get ActivityIndicator";
 import jsxProd from "jsxProd";
 import createCacheKey from "createCacheKey";

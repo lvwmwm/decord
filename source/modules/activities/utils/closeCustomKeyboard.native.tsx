@@ -1,10 +1,10 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 10973
+// Function ID: 10974
 // Name: closeCustomKeyboard
 // Dependencies: [4166, 2]
 // Exports: default
 
-// Module 10972 (closeCustomKeyboard)
+// Module 10973 (closeCustomKeyboard)
 const result = require("set").fileFinishedImporting("modules/activities/utils/closeCustomKeyboard.native.tsx");
 
 export default function closeCustomKeyboard(channelId) {

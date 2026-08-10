@@ -1,10 +1,10 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14333
+// Function ID: 14334
 // Name: useDeliveredDockCreative
-// Dependencies: [5, 19, 3994, 4341, 7160, 5161, 10464, 10592, 505, 14332, 7175, 589, 5164, 7158, 14355, 7188, 9761, 4158, 14357, 7641, 10459, 10460, 10471, 7183, 10594, 7181, 10645, 5729, 10595, 10979, 2]
+// Dependencies: [5, 19, 3994, 4341, 7160, 5161, 10465, 10593, 505, 14334, 7175, 589, 5164, 7158, 14357, 7188, 9762, 4158, 14359, 7641, 10460, 10461, 10472, 7183, 10595, 7181, 10646, 5729, 10596, 10980, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 14331 (useDeliveredDockCreative)
+// Module 14333 (useDeliveredDockCreative)
 import closure_3 from "QuestsExperimentLocations";
 import useIsWindowLarge from "useIsWindowLarge";
 import setContent from "setContent";
@@ -36,8 +36,8 @@ function useDeliveredDockCreative() {
     return questForPlacement;
   });
   const obj3 = adDecisionForPlacement(589);
-  adDecisionForPlacement = adDecisionForPlacement(14355).useAdDecisionForPlacement(adDecisionForPlacement(5164).AdPlacement.MOBILE_HOME_DOCK_AREA);
-  const obj4 = adDecisionForPlacement(14355);
+  adDecisionForPlacement = adDecisionForPlacement(14357).useAdDecisionForPlacement(adDecisionForPlacement(5164).AdPlacement.MOBILE_HOME_DOCK_AREA);
+  const obj4 = adDecisionForPlacement(14357);
   const items2 = [initializeState];
   const items3 = [adDecisionForPlacement];
   if (obj.useConfig({ location: "QuestMobileDock" }).enableNewRequestBehavior) {
@@ -85,9 +85,9 @@ function useDeliveredDockCreative() {
   }, items4);
 }
 function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
-  const deliveredQuest = require(14357) /* getDeliveredQuest */.getDeliveredQuest(mobileQuestDock);
+  const deliveredQuest = require(14359) /* getDeliveredQuest */.getDeliveredQuest(mobileQuestDock);
   const tmp4 = importDefault(7641)();
-  const obj = require(14357) /* getDeliveredQuest */;
+  const obj = require(14359) /* getDeliveredQuest */;
   const items = [initializeState];
   let userStatus;
   const stateFromStores = require(589) /* initialize */.useStateFromStores(items, () => null != questPreviewOverride.getQuestPreviewOverride(callback(table[12]).QuestContent.QUEST_BAR_MOBILE), []);
@@ -106,11 +106,11 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
       claimedAt = userStatus.claimedAt;
     }
   }
-  tmpResult = tmp(10459);
+  tmpResult = tmp(10460);
   const isQuestExpired = tmpResult.useIsQuestExpired(deliveredQuest);
   const obj2 = require(589) /* initialize */;
   const type = mobileQuestDock.type;
-  const isEligibleForQuests = require(10460) /* getIsEligibleForQuests */.getIsEligibleForQuests();
+  const isEligibleForQuests = require(10461) /* getIsEligibleForQuests */.getIsEligibleForQuests();
   if (require(7188) /* AdCreativeType */.AdCreativeType.NO_FILL !== type) {
     if (tmp(7188).AdCreativeType.BOUNTY !== type) {
       if (tmp(7188).AdCreativeType.QUEST === type) {
@@ -139,14 +139,14 @@ export const useMobileQuestDockHeight = function useMobileQuestDockHeight() {
   return num;
 };
 export const useMobileQuestDock = function useMobileQuestDock() {
-  const adRefreshLoop = require(14355) /* maybeRefreshAd */.useAdRefreshLoop(require(5164) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA);
+  const adRefreshLoop = require(14357) /* maybeRefreshAd */.useAdRefreshLoop(require(5164) /* QuestsVisibleMessagesChangedSource */.AdPlacement.MOBILE_HOME_DOCK_AREA);
   return useDeliveredDockCreative();
 };
 export const useIsMobileQuestDockVisibleToUser = function useIsMobileQuestDockVisibleToUser(mobileQuestDock, isMobileQuestDockRenderedBase) {
   const _require = mobileQuestDock;
   let tmp = isMobileQuestDockRenderedBase;
-  const isChannelFocused = _require(9761).useIsChannelFocused();
-  const obj = _require(9761);
+  const isChannelFocused = _require(9762).useIsChannelFocused();
+  const obj = _require(9762);
   const currentNavigationRouteName = _require(4158).useCurrentNavigationRouteName();
   const obj2 = _require(4158);
   let tmp4 = null != _require(4158).coerceGuildsRoute({ name: currentNavigationRouteName });

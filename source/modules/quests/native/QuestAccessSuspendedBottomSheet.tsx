@@ -1,10 +1,10 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14361
+// Function ID: 14362
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 4271, 14358, 7733, 1236, 4714, 2]
+// Dependencies: [19, 21, 4271, 14360, 7733, 1236, 4714, 2]
 // Exports: default
 
-// Module 14359 (QuestAccessSuspendedBottomSheet)
+// Module 14361 (QuestAccessSuspendedBottomSheet)
 import noop from "noop";
 import { jsx } from "jsxProd";
 
@@ -13,7 +13,7 @@ const result = require("ACTION_SHEET_HEIGHT_HALF").fileFinishedImporting("module
 
 export default function QuestAccessSuspendedBottomSheet() {
   const callback = React.useCallback(() => {
-    callback2(4271).hideActionSheet(callback(14358).ACTION_SHEET_KEY);
+    callback2(4271).hideActionSheet(callback(14360).ACTION_SHEET_KEY);
   }, []);
   let obj = { title: null, description: null, actions: null };
   const intl = require(1236) /* getSystemLocale */.intl;

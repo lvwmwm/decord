@@ -1,10 +1,10 @@
-// Module ID: 15652
-// Function ID: 15653
+// Module ID: 15660
+// Function ID: 15661
 // Name: ContentHeader
-// Dependencies: [32, 19, 17, 1372, 21, 4303, 712, 4299, 4271, 15653, 1988, 8754, 14474, 1297, 589, 4494, 1236, 4764, 14461, 15648, 5268, 15654, 2]
+// Dependencies: [32, 19, 17, 1372, 21, 4303, 712, 4299, 4271, 15661, 1988, 8754, 14476, 1297, 589, 4494, 1236, 4764, 14463, 15656, 5268, 15662, 2]
 // Exports: default
 
-// Module 15652 (ContentHeader)
+// Module 15660 (ContentHeader)
 import _slicedToArray from "_slicedToArray";
 import "TruncatedText";
 import get_ActivityIndicator from "getChannelIcon";
@@ -143,16 +143,16 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   listingId = listingId.listingId;
   const guildId = listingId.guildId;
   const tmp = createCacheKey();
-  let obj = importAll(14461);
+  let obj = importAll(14463);
   let str = callback(obj.useImage(listingId), 1)[0];
-  let obj1 = importAll(14461);
-  let obj2 = importAll(14461);
+  let obj1 = importAll(14463);
+  let obj2 = importAll(14463);
   const first = callback(obj2.useTierEmojiIds(listingId, guildId), 1)[0];
-  let obj3 = importAll(14461);
+  let obj3 = importAll(14463);
   const first1 = callback(obj3.useChannelBenefits(listingId), 1)[0];
-  let obj4 = importAll(14461);
+  let obj4 = importAll(14463);
   const first2 = callback(obj4.useIntangibleBenefits(listingId), 1)[0];
-  let obj5 = listingId(15648);
+  let obj5 = listingId(15656);
   const first3 = first1[0];
   const first4 = first2[0];
   const size = first.size;
@@ -169,7 +169,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   obj2[0] = items1;
   items[2] = closure_9(closure_6, obj2);
   obj[1] = items;
-  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15654), { listingId }), ];
+  const items2 = [closure_9(closure_6, obj), closure_8(listingId(1297).Spacer, { size: 16 }), closure_8(guildId(15662), { listingId }), ];
   let tmp8Result2 = length > 0 || size > 0 || length2 > 0;
   if (tmp8Result2) {
     const items3 = [tmp10(tmp4(1297).Spacer, { size: 24 }), , ];

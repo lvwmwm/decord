@@ -1,10 +1,10 @@
-// Module ID: 13852
-// Function ID: 13853
+// Module ID: 13854
+// Function ID: 13855
 // Name: BeakerIcon
-// Dependencies: [19, 21, 712, 4004, 13853, 2]
+// Dependencies: [19, 21, 712, 4004, 13855, 2]
 // Exports: BeakerIcon
 
-// Module 13852 (BeakerIcon)
+// Module 13854 (BeakerIcon)
 import "noop";
 import { jsx } from "jsxProd";
 
@@ -18,7 +18,7 @@ export const BeakerIcon = function BeakerIcon(color) {
   }
   const merged = Object.assign(color, Object.create(null));
   const obj = { source: null, color: null, style: null };
-  obj[0] = require(13853) /* registerAsset */;
+  obj[0] = require(13855) /* registerAsset */;
   obj[1] = INTERACTIVE_ICON_DEFAULT;
   obj[2] = color.style;
   const merged1 = Object.assign(merged);

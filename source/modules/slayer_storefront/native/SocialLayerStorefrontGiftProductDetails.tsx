@@ -1,10 +1,10 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10100
+// Function ID: 10101
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 10092, 1416, 9398, 4299, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 712, 5734, 10093, 1416, 9398, 4299, 2]
 // Exports: default
 
-// Module 10099 (SocialLayerStorefrontGiftProductDetails)
+// Module 10100 (SocialLayerStorefrontGiftProductDetails)
 import noop from "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME";
@@ -36,7 +36,7 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   const tmp = createCacheKey();
   let obj = getOrFetchApplication(5734);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  let obj1 = getOrFetchApplication(10092);
+  let obj1 = getOrFetchApplication(10093);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];

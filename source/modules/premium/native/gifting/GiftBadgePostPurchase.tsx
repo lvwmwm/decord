@@ -1,10 +1,10 @@
-// Module ID: 10158
-// Function ID: 10159
+// Module ID: 10159
+// Function ID: 10160
 // Name: PostPurchaseFooter
-// Dependencies: [19, 17, 8790, 10159, 1369, 21, 4303, 712, 1609, 4509, 4159, 4714, 9575, 1236, 2380, 10160, 4299, 4272, 4273, 10040, 10161, 4123, 1358, 589, 8786, 2]
+// Dependencies: [19, 17, 8790, 10160, 1369, 21, 4303, 712, 1609, 4509, 4159, 4714, 9575, 1236, 2380, 10161, 4299, 4272, 4273, 10041, 10162, 4123, 1358, 589, 8786, 2]
 // Exports: default
 
-// Module 10158 (PostPurchaseFooter)
+// Module 10159 (PostPurchaseFooter)
 import GiftingBadgeIcon from "GiftingBadgeIcon";
 import { View } from "HapticFeedbackTypes";
 import map from "map";
@@ -64,7 +64,7 @@ function InProgressScreen(arg0) {
   const tmp = callback6(importDefault(1609)().bottom);
   let obj = { style: tmp.screenContainer, children: null };
   obj = { style: tmp.content, children: null };
-  obj = { style: tmp.progressWrapper, children: callback4(importDefault(10160), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
+  obj = { style: tmp.progressWrapper, children: callback4(importDefault(10161), { progress, currentTier, nextTier, iconSize: 48, title: progressBarTitle }) };
   const items = [callback4(View, obj), ];
   const obj1 = { style: tmp.messageSection, children: null };
   const items1 = [callback4(require(4299) /* Text */.Text, { variant: "heading-xxl/bold", style: tmp.centerText, children: title }), callback4(require(4299) /* Text */.Text, { variant: "text-md/medium", color: "text-subtle", style: tmp.centerText, children: description })];
@@ -95,12 +95,12 @@ function LevelUpScreen(arg0) {
   if (tmp7Result) {
     const obj1 = { icon: null, size: 140 };
     obj1[0] = newTier.simple_icon_url;
-    tmp7Result = tmp7(tmp(10040), obj1);
+    tmp7Result = tmp7(tmp(10041), obj1);
   }
   obj[1] = tmp7Result;
   const items = [closure_10(View, obj), ];
   const obj2 = { style: tmp3.levelUpBody, children: null };
-  const items1 = [closure_10(importDefault(10161), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
+  const items1 = [closure_10(importDefault(10162), { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress }), ];
   const obj4 = { style: tmp3.messageSection, children: null };
   const obj5 = { variant: "heading-xxl/bold", style: tmp3.centerText, children: null };
   const intl = require(1236) /* getSystemLocale */.intl;

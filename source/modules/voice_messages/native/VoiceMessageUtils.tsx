@@ -1,10 +1,10 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11627
+// Function ID: 11628
 // Name: _startAudioRecording
-// Dependencies: [5, 4351, 11366, 11367, 676, 3, 11627, 206, 12, 4400, 698, 4272, 500, 2]
+// Dependencies: [5, 4351, 11367, 11368, 676, 3, 11628, 206, 12, 4400, 698, 4272, 500, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11626 (_startAudioRecording)
+// Module 11627 (_startAudioRecording)
 import timestamp from "timestamp";
 import _detectH265HardwareDecode from "_detectH265HardwareDecode";
 import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus";
@@ -153,7 +153,7 @@ function stopAndGetAudioRecording() {
   });
   let arr3 = mapped;
   if (mapped.length > closure_16) {
-    arr3 = importDefault(11627)(mapped, tmp3);
+    arr3 = importDefault(11628)(mapped, tmp3);
   }
   const mapped1 = arr3.map((arg0) => Math.min(arg0, closure_13));
   const uint8Array = new Uint8Array(mapped1);
@@ -353,7 +353,7 @@ let result = require("VoiceMessageRecordingStatus").fileFinishedImporting("modul
 export const generateBase64EncodedWaveform = function generateBase64EncodedWaveform(arg0) {
   let arr = arg0;
   if (arg0.length > closure_16) {
-    arr = importDefault(11627)(arg0, tmp);
+    arr = importDefault(11628)(arg0, tmp);
   }
   const mapped = arr.map((arg0) => Math.min(arg0, closure_13));
   const uint8Array = new Uint8Array(mapped);

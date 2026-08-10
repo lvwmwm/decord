@@ -1,9 +1,9 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 16902
+// Function ID: 16903
 // Name: log
-// Dependencies: [32, 3994, 4316, 8395, 4514, 1376, 1372, 1960, 11017, 6876, 7160, 9520, 676, 7166, 5261, 1386, 4292, 5164, 7188, 10489, 9761, 4158, 691, 692, 4644, 7187, 4159, 2]
+// Dependencies: [32, 3994, 4316, 8395, 4514, 1376, 1372, 1960, 11018, 6876, 7160, 9520, 676, 7166, 5261, 1386, 4292, 5164, 7188, 10490, 9762, 4158, 691, 692, 4644, 7187, 4159, 2]
 
-// Module 16893 (log)
+// Module 16902 (log)
 import _slicedToArray from "_slicedToArray";
 import setContent from "setContent";
 import getParticipants from "getParticipants";
@@ -239,7 +239,7 @@ class QuestMobileEmbedVisibilityManager extends tmp3 {
       return { channelId: tmp[0], messageId: tmp[1], questId: tmp[2] };
     };
     applyArgumentsResult.isOnChannelNavigationRoute = function isOnChannelNavigationRoute() {
-      let isChannelFocusedResult = applyArgumentsResult(9761).isChannelFocused();
+      let isChannelFocusedResult = applyArgumentsResult(9762).isChannelFocused();
       applyArgumentsResult(4158);
       if (isChannelFocusedResult) {
         isChannelFocusedResult = "channel" === tmp3;

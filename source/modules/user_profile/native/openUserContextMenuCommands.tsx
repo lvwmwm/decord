@@ -1,10 +1,10 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12267
+// Function ID: 12268
 // Name: openUserContextMenuCommands
 // Dependencies: [8789, 4271, 4158, 1935, 2]
 // Exports: default
 
-// Module 12265 (openUserContextMenuCommands)
+// Module 12267 (openUserContextMenuCommands)
 let result = require("navigationToRootTabHelper").fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
 
 export default function openUserContextMenuCommands(analyticsLocations) {

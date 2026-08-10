@@ -1,10 +1,10 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 12654
+// Function ID: 12655
 // Name: MuteUserElement
-// Dependencies: [32, 19, 1372, 676, 685, 21, 589, 4493, 9819, 4498, 7784, 12649, 1236, 9730, 2]
+// Dependencies: [32, 19, 1372, 676, 685, 21, 589, 4493, 9820, 4498, 7784, 12651, 1236, 9731, 2]
 // Exports: default
 
-// Module 12652 (MuteUserElement)
+// Module 12654 (MuteUserElement)
 import _slicedToArray from "_slicedToArray";
 import noop from "noop";
 import ensureGuildLoaded from "ensureGuildLoaded";

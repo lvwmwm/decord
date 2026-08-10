@@ -1,10 +1,10 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 15525
+// Function ID: 15526
 // Name: NotificationCenterBannerImpl
-// Dependencies: [32, 19, 17, 676, 1369, 11778, 21, 4303, 712, 698, 9730, 4299, 1236, 4714, 11779, 4846, 5326, 14665, 6022, 1358, 2]
+// Dependencies: [32, 19, 17, 676, 1369, 11779, 21, 4303, 712, 698, 9731, 4299, 1236, 4714, 11780, 4846, 5326, 14667, 6022, 1358, 2]
 // Exports: default
 
-// Module 15517 (NotificationCenterBannerImpl)
+// Module 15525 (NotificationCenterBannerImpl)
 import _slicedToArray from "_slicedToArray";
 import noop from "DismissibleContent";
 import { View } from "apexExperiment";
@@ -37,7 +37,7 @@ function NotificationCenterBannerImpl(onDismiss) {
   obj = { style: tmp.iconContainer, children: null };
   obj = { size: "md", color: null };
   obj[1] = importDefault(712).colors.ICON_STRONG;
-  obj[1] = callback4(onDismiss(9730).BellSlashIcon, obj);
+  obj[1] = callback4(onDismiss(9731).BellSlashIcon, obj);
   const items = [callback4(View, obj), , ];
   const obj1 = { style: tmp.contentContainer, children: null };
   const obj2 = { variant: "text-md/semibold", color: "text-default", children: null };
@@ -56,7 +56,7 @@ function NotificationCenterBannerImpl(onDismiss) {
   const intl3 = onDismiss(1236).intl;
   obj6[2] = intl3.string(onDismiss(1236).t.a4bgO0);
   obj6[3] = function onPress() {
-    let obj = onDismiss(11779);
+    let obj = onDismiss(11780);
     const pushNotificationPermission = obj.requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants3.NOTIFICATION_CENTER, closure_8);
     obj = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_CENTER_BANNER };
     callback(698).track(constants.CONTEXTUAL_REMINDER_ACTION, obj);
@@ -100,9 +100,9 @@ let obj2 = { alignSelf: "flex-start", marginTop: require("Themes").space.PX_12 }
 const result = require("get ActivityIndicator").fileFinishedImporting("modules/notification_center/native/NotificationCenterPermissionNudge.tsx");
 
 export default function NotificationCenterPermissionNudge() {
-  let obj = importDefault(14665);
-  const canSeePushNotificationNudge = require(11779) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
-  const obj2 = require(11779) /* _requestPushNotificationPermission */;
+  let obj = importDefault(14667);
+  const canSeePushNotificationNudge = require(11780) /* _requestPushNotificationPermission */.useCanSeePushNotificationNudge();
+  const obj2 = require(11780) /* _requestPushNotificationPermission */;
   let prop = null;
   if (!obj.useConfig({ location: "NotificationCenterPermissionNudge" }).inHoldout) {
     prop = null;

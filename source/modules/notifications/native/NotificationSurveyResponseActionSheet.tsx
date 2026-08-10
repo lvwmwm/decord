@@ -1,10 +1,10 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 11110
+// Function ID: 11111
 // Name: onClose
-// Dependencies: [19, 17, 676, 21, 4303, 5236, 712, 4271, 5397, 5396, 5765, 11110, 4299, 1236, 1974, 2]
+// Dependencies: [19, 17, 676, 21, 4303, 5236, 712, 4271, 5397, 5396, 5765, 11111, 4299, 1236, 1974, 2]
 // Exports: default
 
-// Module 11109 (onClose)
+// Module 11110 (onClose)
 import "noop";
 import get_ActivityIndicator from "get ActivityIndicator";
 import ME from "ME";
@@ -53,7 +53,7 @@ export default function NotificationSurveyResponseActionSheet(header) {
   obj = { children: null };
   const items = [tmp5, ];
   const obj1 = { style: tmp.view, children: null };
-  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(11110) }), , ];
+  const items1 = [callback(closure_4, { style: tmp.rating, source: importDefault(11111) }), , ];
   const obj3 = { style: tmp.title, variant: "heading-md/bold", children: null };
   const intl = tmp3(1236).intl;
   obj3[2] = intl.string(require(1236) /* getSystemLocale */.t["d9+vQ8"]);
@@ -61,7 +61,7 @@ export default function NotificationSurveyResponseActionSheet(header) {
   const obj4 = { style: tmp.subtitle, variant: "text-md/normal", children: null };
   const intl2 = tmp3(1236).intl;
   const obj5 = { helpUrl: null };
-  const obj2 = { style: tmp.rating, source: importDefault(11110) };
+  const obj2 = { style: tmp.rating, source: importDefault(11111) };
   obj5[0] = importDefault(1974).getArticleURL(constants.HIGHLIGHTS_NOTIFICATIONS);
   obj4[2] = intl2.format(require(1236) /* getSystemLocale */.t.WxD5QY, obj5);
   items1[2] = callback(require(4299) /* Text */.Text, obj4);

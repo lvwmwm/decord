@@ -1,10 +1,10 @@
-// Module ID: 10683
-// Function ID: 10684
+// Module ID: 10684
+// Function ID: 10685
 // Name: useVideoStreamError
-// Dependencies: [1218, 10684, 4364, 589, 9169, 2]
+// Dependencies: [1218, 10685, 4364, 589, 9169, 2]
 // Exports: default, useVideoStreamErrorContext
 
-// Module 10683 (useVideoStreamError)
+// Module 10684 (useVideoStreamError)
 import fetchFingerprint from "fetchFingerprint";
 import isAVErrorContextOfType from "isAVErrorContextOfType";
 import { MediaEngineContextTypes } from "DesktopSources";

@@ -1,10 +1,10 @@
-// Module ID: 14813
-// Function ID: 14814
+// Module ID: 14815
+// Function ID: 14816
 // Name: DemoModal
-// Dependencies: [32, 19, 17, 21, 4303, 712, 5783, 5270, 4509, 6008, 1236, 7790, 3998, 11335, 13425, 7807, 7808, 4299, 11333, 13427, 10265, 10264, 5767, 5768, 4714, 2]
+// Dependencies: [32, 19, 17, 21, 4303, 712, 5783, 5270, 4509, 6008, 1236, 7790, 3998, 11336, 13427, 7807, 7808, 4299, 11334, 13429, 10266, 10265, 5767, 5768, 4714, 2]
 // Exports: default
 
-// Module 14813 (DemoModal)
+// Module 14815 (DemoModal)
 import _slicedToArray from "_slicedToArray";
 import ModalDisclaimer from "ModalDisclaimer";
 import get_ActivityIndicator from "Text";
@@ -132,7 +132,7 @@ function DemoModal() {
     return obj;
   }, []);
   obj = { screens: navigatorScreens, initialRouteName: constants.START };
-  return callback2(require(11335) /* Modal */.Modal, obj);
+  return callback2(require(11336) /* Modal */.Modal, obj);
 }
 function DemoStepModal() {
   let obj = require(5783) /* NavigationStack */;
@@ -255,7 +255,7 @@ function DemoStepModal() {
     return items;
   }, []);
   obj = { screens: navigatorScreens, steps: memo, initialRouteName: constants.START };
-  return callback2(require(13425) /* StepModal */.StepModal, obj);
+  return callback2(require(13427) /* StepModal */.StepModal, obj);
 }
 function DemoScreen(arg0) {
   let action;
@@ -289,7 +289,7 @@ function DemoScreen(arg0) {
     if (tmp8Result) {
       const obj2 = { children: null };
       obj2[0] = disclaimer;
-      tmp8Result = tmp8(tmp3(13427).ModalDisclaimer, obj2);
+      tmp8Result = tmp8(tmp3(13429).ModalDisclaimer, obj2);
     }
     const items2 = [tmp8Result, , ];
     tmp8Result = null != action;
@@ -297,7 +297,7 @@ function DemoScreen(arg0) {
       const obj3 = { variant: "primary", text: null, onPress: null };
       obj3[1] = action;
       obj3[2] = onAction;
-      tmp8Result = tmp8(tmp3(10265).ModalActionButton, obj3);
+      tmp8Result = tmp8(tmp3(10266).ModalActionButton, obj3);
     }
     items2[1] = tmp8Result;
     let tmp8Result1 = null != secondaryAction;
@@ -305,12 +305,12 @@ function DemoScreen(arg0) {
       const obj4 = { variant: "secondary", text: null, onPress: null };
       obj4[1] = secondaryAction;
       obj4[2] = onSecondaryAction;
-      tmp8Result1 = tmp8(tmp3(10265).ModalActionButton, obj4);
+      tmp8Result1 = tmp8(tmp3(10266).ModalActionButton, obj4);
     }
     const obj5 = { children: null };
     items2[2] = tmp8Result1;
     obj5[0] = items2;
-    footer = tmp2(tmp3(11333).ModalFooter, obj5);
+    footer = tmp2(tmp3(11334).ModalFooter, obj5);
   }
   children[1] = footer;
   return closure_8(require(7807) /* ModalScreen */.ModalScreen, { children });
@@ -328,7 +328,7 @@ function SwitchesScreen(onAction) {
   obj[0] = arr2.some((arg0) => arg0);
   obj[1] = tmp.screen.backgroundColor;
   obj[3] = onAction.onAction;
-  obj[2] = callback2(parts(10264).ModalFloatingAction, obj);
+  obj[2] = callback2(parts(10265).ModalFloatingAction, obj);
   obj = { style: tmp.tableRows, children: null };
   const obj1 = { hasIcons: false, children: null };
   obj1[1] = arr2.map((value) => {
@@ -349,7 +349,7 @@ function SwitchesScreen(onAction) {
     }, arg1);
   });
   obj[1] = callback2(parts(5767).TableRowGroup, obj1);
-  const items = [callback2(closure_5, obj), callback2(parts(10264).ModalFloatingActionSpacer, {})];
+  const items = [callback2(closure_5, obj), callback2(parts(10265).ModalFloatingActionSpacer, {})];
   obj[3] = items;
   return callback3(DemoScreen, obj);
 }

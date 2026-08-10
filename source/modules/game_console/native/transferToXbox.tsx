@@ -1,10 +1,10 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 10890
+// Function ID: 10891
 // Name: _transferToXbox
-// Dependencies: [5, 19, 17, 676, 21, 10881, 10878, 10890, 4643, 10891, 1988, 10884, 4483, 2]
+// Dependencies: [5, 19, 17, 676, 21, 10882, 10879, 10891, 4643, 10892, 1988, 10885, 4483, 2]
 // Exports: default
 
-// Module 10889 (_transferToXbox)
+// Module 10890 (_transferToXbox)
 import set from "set";
 import "noop";
 import { Linking } from "get ActivityIndicator";
@@ -52,7 +52,7 @@ function _transferToXbox() {
               dependencyMap = 1;
               c4 = 1;
               const obj1 = { value: null, done: false };
-              obj1[0] = outer1_1(10881).maybeShowPTTAlert(outer1_6.XBOX);
+              obj1[0] = outer1_1(10882).maybeShowPTTAlert(outer1_6.XBOX);
               return obj1;
             }
           } else if (1 === tmp5) {
@@ -68,7 +68,7 @@ function _transferToXbox() {
               dependencyMap = 2;
               c4 = 1;
               let obj3 = { value: null, done: false };
-              obj3[0] = callback2(10878).disconnectRemote();
+              obj3[0] = callback2(10879).disconnectRemote();
               return obj3;
             }
           } else if (2 === tmp5) {
@@ -81,7 +81,7 @@ function _transferToXbox() {
               obj4[0] = arg1;
               return obj4;
             } else {
-              let obj9 = callback2(10878);
+              let obj9 = callback2(10879);
               dependencyMap = 3;
               c4 = 1;
               const obj5 = { value: null, done: false };
@@ -101,7 +101,7 @@ function _transferToXbox() {
               callback = arg1;
               const obj7 = { nonce: null, forQRCode: false };
               obj7[0] = callback;
-              callback2 = callback(10890)(user, obj7);
+              callback2 = callback(10891)(user, obj7);
               dependencyMap = 4;
               c4 = 1;
               const obj8 = { value: null, done: false };
@@ -117,8 +117,8 @@ function _transferToXbox() {
             obj9[0] = arg1;
             return obj9;
           } else if (arg1) {
-            tmp47(10884)(user.id, constants.XBOX);
-            obj3 = callback2(10878);
+            tmp47(10885)(user.id, constants.XBOX);
+            obj3 = callback2(10879);
             obj3.waitForSession(constants.XBOX, user.id, callback);
             obj4 = callback2(4483);
             obj4.stopOwnStream(false);

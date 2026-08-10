@@ -1,10 +1,10 @@
-// Module ID: 10105
-// Function ID: 10106
+// Module ID: 10106
+// Function ID: 10107
 // Name: CollectiblesWishlistItemCard
-// Dependencies: [19, 7005, 10106, 21, 9351, 589, 9350, 9354, 1930, 9355, 2]
+// Dependencies: [19, 7005, 10107, 21, 9351, 589, 9350, 9354, 1930, 9355, 2]
 // Exports: default
 
-// Module 10105 (CollectiblesWishlistItemCard)
+// Module 10106 (CollectiblesWishlistItemCard)
 import noop from "noop";
 import { transformSKUToCollectiblesItem as closure_4 } from "createCollectiblesItemsFromServerResponse";
 import initialize from "initialize";

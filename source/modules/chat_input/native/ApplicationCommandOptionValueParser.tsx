@@ -1,10 +1,10 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11385
+// Function ID: 11386
 // Name: getUsers
 // Dependencies: [19, 5223, 1376, 1961, 1971, 1964, 3938, 1903, 4738, 12, 1351, 4494, 5159, 1935, 7142, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 11384 (getUsers)
+// Module 11385 (getUsers)
 import noop from "noop";
 import rebuild from "rebuild";
 import { isGuildSelectableChannelType as closure_5 } from "createChannelRecord";

@@ -618,11 +618,11 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
   if (minutes === type) {
     const intl4 = require(1236) /* getSystemLocale */.intl;
     if (tmp2) {
-      let stringResult = intl4.string(tmp13(1236).t["/WbTXD"]);
+      let stringResult = intl4.string(tmp12(1236).t["/WbTXD"]);
     } else {
       let obj = { numUses: null };
       obj[0] = parsed;
-      stringResult = intl4.formatToPlainString(tmp13(1236).t.eDRWJK, obj);
+      stringResult = intl4.formatToPlainString(tmp12(1236).t.eDRWJK, obj);
     }
     return stringResult;
   } else if (hours === type) {
@@ -658,11 +658,11 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
   } else if (never === type) {
     const intl = require(1236) /* getSystemLocale */.intl;
     if (tmp2) {
-      let stringResult1 = intl.string(tmp4(1236).t.QrHBnC);
+      let stringResult1 = intl.string(tmp3(1236).t.QrHBnC);
     } else {
       obj = { numUses: null };
       obj[0] = parsed;
-      stringResult1 = intl.formatToPlainString(tmp4(1236).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp3(1236).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {
